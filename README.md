@@ -4,17 +4,17 @@ Added bulk_extractor extracted information which you can find interesting inform
 
 v1: 
 ```
-	Here is the tweet this was shared: https://twitter.com/ContiLeaks/status/1498030708736073734
+Here is the tweet this was shared: https://twitter.com/ContiLeaks/status/1498030708736073734
 
-	And here is the anonfiles link: https://anonfiles.com/VeP6K6K5xc/1_tgz
+And here is the anonfiles link: https://anonfiles.com/VeP6K6K5xc/1_tgz
 ```
 v2:
 ```
-	Here is the tweet this was shared: https://twitter.com/ContiLeaks/status/1498434108275494912
+Here is the tweet this was shared: https://twitter.com/ContiLeaks/status/1498434108275494912
 
-	And here is the anonfiles links: https://anonfiles.com/T6vad0L7x5/185.25.51.173-20220226_json
-									 https://anonfiles.com/Vev6dbLbx6/185.25.51.173-20220227_json
-									 https://anonfiles.com/X0vcd8L7x8/185.25.51.173-20220228_json
+And here is the anonfiles links: https://anonfiles.com/T6vad0L7x5/185.25.51.173-20220226_json
+								 https://anonfiles.com/Vev6dbLbx6/185.25.51.173-20220227_json
+							     https://anonfiles.com/X0vcd8L7x8/185.25.51.173-20220228_json
 ```
 
 ~~Some strings are not properly translated by google so I will upload the original splitted pdfs too if you want to translate them with a better translator or with a better format.~~
