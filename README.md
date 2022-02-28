@@ -1,5 +1,6 @@
 # conti-leaks-englished
 Google and deepl translated conti leaks, which is shared by a member of the conti ransomware group.
+Added bulk_extractor extracted information which you can find interesting information much easily.
 
 Here is the tweet this was shared: https://twitter.com/ContiLeaks/status/1498030708736073734
 
