@@ -1,0 +1,1920 @@
+{
+  "ts": "2021-09-03T05:03:51.311772",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "green@q3mcco35auwcstmt.onion",
+  "body": "по анкору, сколько комплектов, кто их юзает, как живучесть?"
+}
+{
+  "ts": "2021-09-03T06:55:18.545429",
+  "from": "mentos@q3mcco35auwcstmt.onion",
+  "to": "green@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2021-09-03T06:55:29.143085",
+  "from": "mentos@q3mcco35auwcstmt.onion",
+  "to": "green@q3mcco35auwcstmt.onion",
+  "body": "рчат фурычит?"
+}
+{
+  "ts": "2021-09-03T07:06:38.233373",
+  "from": "derekson@q3mcco35auwcstmt.onion",
+  "to": "begemot@q3mcco35auwcstmt.onion",
+  "body": "Привет"
+}
+{
+  "ts": "2021-09-03T07:06:45.269546",
+  "from": "derekson@q3mcco35auwcstmt.onion",
+  "to": "begemot@q3mcco35auwcstmt.onion",
+  "body": "рокет лежит пока"
+}
+{
+  "ts": "2021-09-03T07:06:49.378099",
+  "from": "derekson@q3mcco35auwcstmt.onion",
+  "to": "begemot@q3mcco35auwcstmt.onion",
+  "body": "сделай 4 впс прото2"
+}
+{
+  "ts": "2021-09-03T07:08:55.165928",
+  "from": "steller@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "Привет. Ракета не работает."
+}
+{
+  "ts": "2021-09-03T07:23:12.980938",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "@driver давай конкретно что тебе надо и куда ... ок ?"
+}
+{
+  "ts": "2021-09-03T07:23:12.981885",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "Нужно в 84 команду внести 2 поля.\nsecure, httponly в конец приема, получается 9 и 10 поле должно быть."
+}
+{
+  "ts": "2021-09-03T07:23:12.982726",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "На запрос вида \ncurl -X POST -F 'data=dXNlcg==|IE||||1240428288|1240428288|dXNlcg==|IE|demdex.net|ZGVtZGV4|NTczODQzMjMyMTAwNDg1MDEyMDI3NjIxMTIxODA0ODI1OTMyMjQ=|1240428358|1240428358|Lw==|1|1' http://(IP)/TAG/TEST_W639600.1234A242341C6D1A25B3F315D688968E/84/\nДолжно ответить /1/"
+}
+{
+  "ts": "2021-09-03T07:23:12.983789",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "ок .. сейчас в базе поля уже есть ?"
+}
+{
+  "ts": "2021-09-03T07:23:12.984230",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "Да"
+}
+{
+  "ts": "2021-09-03T07:23:12.985196",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "а старые клиенты еще работают ?"
+}
+{
+  "ts": "2021-09-03T07:23:12.985809",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "т.е. надо поддерживать и старый формат и новый ?"
+}
+{
+  "ts": "2021-09-03T07:23:12.986793",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "Нет, просто только новый должен начать работать."
+}
+{
+  "ts": "2021-09-03T07:23:12.987449",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "Уже внесли нужные изменения для клиентов. Ждем именно чтобы подхватило эти изменения часть по бэку"
+}
+{
+  "ts": "2021-09-03T07:23:12.988502",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "zulas: очень прошу поторопиться, так как сейчас от тебя зависит работа многих, без правок бекенда не можем дальше двинуться"
+}
+{
+  "ts": "2021-09-03T07:23:12.988947",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "хорошо сделаю"
+}
+{
+  "ts": "2021-09-03T07:23:12.989927",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "[ Username, Browser, Domain, Cookie_name, Cookie_value, Created, Expires, Path, Secure, HttpOnly ]"
+}
+{
+  "ts": "2021-09-03T07:23:12.990465",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "такая последовательность ?"
+}
+{
+  "ts": "2021-09-03T07:23:12.991282",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "@driver"
+}
+{
+  "ts": "2021-09-03T07:23:12.991842",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "@defender как мне запушить изменения ?"
+}
+{
+  "ts": "2021-09-03T07:23:12.992439",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "Да все верно."
+}
+{
+  "ts": "2021-09-03T07:23:12.993031",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "zulas: а я тебе вроде выдавал доступ, разве нет?"
+}
+{
+  "ts": "2021-09-03T07:23:12.994069",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "я его 100 раз забыл"
+}
+{
+  "ts": "2021-09-03T07:23:12.994773",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "~/erl/dero> git -c credential.helper=/usr/share/smartgit/lib/credentials.sh push --porcelain --progress --recurse-submodules=check origin refs/heads/master:refs/heads/master\nunable to access 'https://179.43.147.243/begemot/dero.git/': gnutls_handshake() failed: Internal error"
+}
+{
+  "ts": "2021-09-03T07:23:12.995650",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "ок, щас в личку кину"
+}
+{
+  "ts": "2021-09-03T07:23:47.647966",
+  "from": "ghost@q3mcco35auwcstmt.onion",
+  "to": "azot@q3mcco35auwcstmt.onion",
+  "body": "Привет! Брателло!"
+}
+{
+  "ts": "2021-09-03T07:31:27.312571",
+  "from": "begemot@q3mcco35auwcstmt.onion",
+  "to": "derekson@q3mcco35auwcstmt.onion",
+  "body": "Привет"
+}
+{
+  "ts": "2021-09-03T07:31:33.273880",
+  "from": "begemot@q3mcco35auwcstmt.onion",
+  "to": "derekson@q3mcco35auwcstmt.onion",
+  "body": "Делаю"
+}
+{
+  "ts": "2021-09-03T08:24:37.146828",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "@driver давай конкретно что тебе надо и куда ... ок ?"
+}
+{
+  "ts": "2021-09-03T08:24:37.148108",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "Нужно в 84 команду внести 2 поля.\nsecure, httponly в конец приема, получается 9 и 10 поле должно быть."
+}
+{
+  "ts": "2021-09-03T08:24:37.149057",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "На запрос вида \ncurl -X POST -F 'data=dXNlcg==|IE||||1240428288|1240428288|dXNlcg==|IE|demdex.net|ZGVtZGV4|NTczODQzMjMyMTAwNDg1MDEyMDI3NjIxMTIxODA0ODI1OTMyMjQ=|1240428358|1240428358|Lw==|1|1' http://(IP)/TAG/TEST_W639600.1234A242341C6D1A25B3F315D688968E/84/\nДолжно ответить /1/"
+}
+{
+  "ts": "2021-09-03T08:24:37.149760",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "ок .. сейчас в базе поля уже есть ?"
+}
+{
+  "ts": "2021-09-03T08:24:37.149988",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "Да"
+}
+{
+  "ts": "2021-09-03T08:24:37.150611",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "а старые клиенты еще работают ?"
+}
+{
+  "ts": "2021-09-03T08:24:37.150851",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "т.е. надо поддерживать и старый формат и новый ?"
+}
+{
+  "ts": "2021-09-03T08:24:37.151520",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "Нет, просто только новый должен начать работать."
+}
+{
+  "ts": "2021-09-03T08:24:37.151935",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "Уже внесли нужные изменения для клиентов. Ждем именно чтобы подхватило эти изменения часть по бэку"
+}
+{
+  "ts": "2021-09-03T08:24:37.152203",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "zulas: очень прошу поторопиться, так как сейчас от тебя зависит работа многих, без правок бекенда не можем дальше двинуться"
+}
+{
+  "ts": "2021-09-03T08:24:37.152755",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "хорошо сделаю"
+}
+{
+  "ts": "2021-09-03T08:24:37.153634",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "[ Username, Browser, Domain, Cookie_name, Cookie_value, Created, Expires, Path, Secure, HttpOnly ]"
+}
+{
+  "ts": "2021-09-03T08:24:37.154187",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "@driver"
+}
+{
+  "ts": "2021-09-03T08:24:37.153912",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "такая последовательность ?"
+}
+{
+  "ts": "2021-09-03T08:24:37.154982",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "@defender как мне запушить изменения ?"
+}
+{
+  "ts": "2021-09-03T08:24:37.156179",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "Да все верно."
+}
+{
+  "ts": "2021-09-03T08:24:37.156739",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "zulas: а я тебе вроде выдавал доступ, разве нет?"
+}
+{
+  "ts": "2021-09-03T08:24:37.157189",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "я его 100 раз забыл"
+}
+{
+  "ts": "2021-09-03T08:24:37.157829",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "~/erl/dero> git -c credential.helper=/usr/share/smartgit/lib/credentials.sh push --porcelain --progress --recurse-submodules=check origin refs/heads/master:refs/heads/master\nunable to access 'https://179.43.147.243/begemot/dero.git/': gnutls_handshake() failed: Internal error"
+}
+{
+  "ts": "2021-09-03T08:24:37.158288",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "ок, щас в личку кину"
+}
+{
+  "ts": "2021-09-03T08:35:45.614234",
+  "from": "zulas@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "пинг"
+}
+{
+  "ts": "2021-09-03T09:18:47.597200",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "@driver давай конкретно что тебе надо и куда ... ок ?"
+}
+{
+  "ts": "2021-09-03T09:18:47.597585",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "Нужно в 84 команду внести 2 поля.\nsecure, httponly в конец приема, получается 9 и 10 поле должно быть."
+}
+{
+  "ts": "2021-09-03T09:18:47.598480",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "На запрос вида \ncurl -X POST -F 'data=dXNlcg==|IE||||1240428288|1240428288|dXNlcg==|IE|demdex.net|ZGVtZGV4|NTczODQzMjMyMTAwNDg1MDEyMDI3NjIxMTIxODA0ODI1OTMyMjQ=|1240428358|1240428358|Lw==|1|1' http://(IP)/TAG/TEST_W639600.1234A242341C6D1A25B3F315D688968E/84/\nДолжно ответить /1/"
+}
+{
+  "ts": "2021-09-03T09:18:47.599221",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "ок .. сейчас в базе поля уже есть ?"
+}
+{
+  "ts": "2021-09-03T09:18:47.599786",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "Да"
+}
+{
+  "ts": "2021-09-03T09:18:47.600330",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "а старые клиенты еще работают ?"
+}
+{
+  "ts": "2021-09-03T09:18:47.600843",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "т.е. надо поддерживать и старый формат и новый ?"
+}
+{
+  "ts": "2021-09-03T09:18:47.601401",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "Нет, просто только новый должен начать работать."
+}
+{
+  "ts": "2021-09-03T09:18:47.602309",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "Уже внесли нужные изменения для клиентов. Ждем именно чтобы подхватило эти изменения часть по бэку"
+}
+{
+  "ts": "2021-09-03T09:18:47.603137",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "zulas: очень прошу поторопиться, так как сейчас от тебя зависит работа многих, без правок бекенда не можем дальше двинуться"
+}
+{
+  "ts": "2021-09-03T09:18:47.603607",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "хорошо сделаю"
+}
+{
+  "ts": "2021-09-03T09:18:47.604028",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "[ Username, Browser, Domain, Cookie_name, Cookie_value, Created, Expires, Path, Secure, HttpOnly ]"
+}
+{
+  "ts": "2021-09-03T09:18:47.604676",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "такая последовательность ?"
+}
+{
+  "ts": "2021-09-03T09:18:47.605453",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "@driver"
+}
+{
+  "ts": "2021-09-03T09:18:47.605873",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "@defender как мне запушить изменения ?"
+}
+{
+  "ts": "2021-09-03T09:18:47.606472",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "Да все верно."
+}
+{
+  "ts": "2021-09-03T09:18:47.607160",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "zulas: а я тебе вроде выдавал доступ, разве нет?"
+}
+{
+  "ts": "2021-09-03T09:18:47.607797",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "я его 100 раз забыл"
+}
+{
+  "ts": "2021-09-03T09:18:47.608264",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "~/erl/dero> git -c credential.helper=/usr/share/smartgit/lib/credentials.sh push --porcelain --progress --recurse-submodules=check origin refs/heads/master:refs/heads/master\nunable to access 'https://179.43.147.243/begemot/dero.git/': gnutls_handshake() failed: Internal error"
+}
+{
+  "ts": "2021-09-03T09:18:47.608949",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "ок, щас в личку кину"
+}
+{
+  "ts": "2021-09-03T09:27:34.708615",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "Добрый день! Как успехи по пушу кода?"
+}
+{
+  "ts": "2021-09-03T09:27:34.709846",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "Добрый день! Как успехи по пушу кода?"
+}
+{
+  "ts": "2021-09-03T09:27:34.710180",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "Добрый день! Как успехи по пушу кода?"
+}
+{
+  "ts": "2021-09-03T09:27:34.710710",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "Добрый день! Как успехи по пушу кода?"
+}
+{
+  "ts": "2021-09-03T09:27:34.711263",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "Добрый день! Как успехи по пушу кода?"
+}
+{
+  "ts": "2021-09-03T09:27:34.711830",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "Добрый день! Как успехи по пушу кода?"
+}
+{
+  "ts": "2021-09-03T09:28:03.394948",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "@zulas @defender"
+}
+{
+  "ts": "2021-09-03T09:28:03.395986",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "@zulas @defender"
+}
+{
+  "ts": "2021-09-03T09:28:03.396856",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "@zulas @defender"
+}
+{
+  "ts": "2021-09-03T09:28:03.406719",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "@zulas @defender"
+}
+{
+  "ts": "2021-09-03T09:28:03.407013",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "@zulas @defender"
+}
+{
+  "ts": "2021-09-03T09:28:03.407511",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "@zulas @defender"
+}
+{
+  "ts": "2021-09-03T09:28:22.263104",
+  "from": "zulas@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "надо запушить . жду дефа"
+}
+{
+  "ts": "2021-09-03T09:28:22.264709",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "надо запушить . жду дефа"
+}
+{
+  "ts": "2021-09-03T09:28:22.265510",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "надо запушить . жду дефа"
+}
+{
+  "ts": "2021-09-03T09:28:22.265787",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "надо запушить . жду дефа"
+}
+{
+  "ts": "2021-09-03T09:28:22.266032",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "надо запушить . жду дефа"
+}
+{
+  "ts": "2021-09-03T09:28:22.267375",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "надо запушить . жду дефа"
+}
+{
+  "ts": "2021-09-03T09:31:17.965503",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "Ок"
+}
+{
+  "ts": "2021-09-03T09:31:17.966911",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "Ок"
+}
+{
+  "ts": "2021-09-03T09:31:17.968126",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "Ок"
+}
+{
+  "ts": "2021-09-03T09:31:17.968910",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "Ок"
+}
+{
+  "ts": "2021-09-03T09:31:17.969983",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "Ок"
+}
+{
+  "ts": "2021-09-03T09:31:17.971027",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "Ок"
+}
+{
+  "ts": "2021-09-03T09:40:23.964379",
+  "from": "buza@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "меня завтра не будет"
+}
+{
+  "ts": "2021-09-03T09:40:23.966847",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "тут?"
+}
+{
+  "ts": "2021-09-03T09:40:23.969142",
+  "from": "bentley@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "Готов отчет по криптам за 01.09"
+}
+{
+  "ts": "2021-09-03T09:40:23.980314",
+  "from": "bentley@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "БК\n\n19 группа - 30 криптов\n20 группа - 1 крипт\n30 группа - 20 криптов\nvnc-модуль - 1 крипт\n\nТрик:\n9 длл - невил\n1 ехе - невил\n\nТройка: невил\n\nШелкод: билд машина"
+}
+{
+  "ts": "2021-09-03T09:40:51.694077",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "bentley@q3mcco35auwcstmt.onion",
+  "body": "+++"
+}
+{
+  "ts": "2021-09-03T09:40:53.368158",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "bentley@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2021-09-03T09:40:55.572297",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "bentley@q3mcco35auwcstmt.onion",
+  "body": "пока ждем("
+}
+{
+  "ts": "2021-09-03T09:41:06.749341",
+  "from": "bentley@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "Привет. Ждем"
+}
+{
+  "ts": "2021-09-03T09:51:42.822841",
+  "from": "zulas@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[core]\n\trepositoryformatversion = 0\n\tfilemode = true\n\tbare = false\n\tlogallrefupdates = true\n[branch \"master\"]\n\trebase = true\n\tremote = origin\n\tmerge = refs/heads/master\n[branch]\n\tautosetuprebase = always\n[remote \"origin\"]\n\turl = https://mb5fbvx72fbod2hkirfecc5nh7lwq6ke7xocn7j2u7raiwbytvevpbad.onion/begemot/dero.git\n\tfetch = +refs/heads/*:refs/remotes/origin/*\n[http]\n\tproxy = socks5://localhost:9050\n[https]\n\tproxy = socks5://localhost:9050\n\n\nпрописал прокси в гитконфиг .. но он не может отресолвить домен .. ЧДНТ ? \nбраузер на 9050 порту работает ок"
+}
+{
+  "ts": "2021-09-03T09:57:24.889049",
+  "from": "zulas@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "(base) begemot@big-comp:~/erl/dero/.git$ git push\nfatal: «https://mb5fbvx72fbod2hkirfecc5nh7lwq6ke7xocn7j2u7raiwbytvevpbad.onion/begemot/dero.git/» недоступно: Could not resolve host: mb5fbvx72fbod2hkirfecc5nh7lwq6ke7xocn7j2u7raiwbytvevpbad.onion"
+}
+{
+  "ts": "2021-09-03T09:59:27.427364",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "привет сек"
+}
+{
+  "ts": "2021-09-03T09:59:44.765858",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "git config --global http.proxy 'socks5://127.0.0.1:9050'\ngit config --global http.proxy 'socks5h://127.0.0.1:9050'\ngit config --global http.sslverify false\nexport GIT_SSL_NO_VERIFY=1"
+}
+{
+  "ts": "2021-09-03T09:59:47.741288",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "вот это выполни"
+}
+{
+  "ts": "2021-09-03T10:02:01.196963",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T10:03:00.030800",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T10:03:15.370004",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T10:03:31.242195",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "veron@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T10:05:09.122759",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T10:06:36.592337",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "veron@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T10:07:03.526629",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T10:07:08.869004",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "veron@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T10:07:18.898949",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T10:07:28.623345",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "veron@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T10:07:51.730119",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T10:08:30.900961",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "в общем у него проблема живучести, ему надо крепить его сети, вчера говорит 40 профукал, его лоадер живет несколько минут, хватит только если что то прогрузить через него"
+}
+{
+  "ts": "2021-09-03T10:08:32.852573",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T10:08:44.636594",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "можно ему трик дать + закреп"
+}
+{
+  "ts": "2021-09-03T10:08:54.164121",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "veron@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T10:11:20.095828",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T10:26:09.703534",
+  "from": "zulas@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "запушил"
+}
+{
+  "ts": "2021-09-03T10:29:48.184990",
+  "from": "elvira@q3mcco35auwcstmt.onion",
+  "to": "kagas@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2021-09-03T10:46:07.361275",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "veron@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T10:46:39.779377",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "ага"
+}
+{
+  "ts": "2021-09-03T10:46:42.656181",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "отпиши в конфу"
+}
+{
+  "ts": "2021-09-03T10:46:51.477718",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "на сервер тоже выгрузи плиз"
+}
+{
+  "ts": "2021-09-03T10:56:40.718799",
+  "from": "hof@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T10:58:13.387386",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T11:49:17.685502",
+  "from": "steller@q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "Привет.\nФормат куков когда приблизительно будет исправлен?"
+}
+{
+  "ts": "2021-09-03T11:49:56.193051",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "А есть вариант просто на сервер залить этот код пока что?"
+}
+{
+  "ts": "2021-09-03T11:49:56.197033",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "А есть вариант просто на сервер залить этот код пока что?"
+}
+{
+  "ts": "2021-09-03T11:49:56.197928",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "А есть вариант просто на сервер залить этот код пока что?"
+}
+{
+  "ts": "2021-09-03T11:49:56.199137",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "А есть вариант просто на сервер залить этот код пока что?"
+}
+{
+  "ts": "2021-09-03T11:49:56.200310",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "А есть вариант просто на сервер залить этот код пока что?"
+}
+{
+  "ts": "2021-09-03T11:49:56.201664",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "А есть вариант просто на сервер залить этот код пока что?"
+}
+{
+  "ts": "2021-09-03T11:50:22.702063",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "Чтобы мы потестили, а с гитом позже разобраться7"
+}
+{
+  "ts": "2021-09-03T11:50:22.704406",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "Чтобы мы потестили, а с гитом позже разобраться7"
+}
+{
+  "ts": "2021-09-03T11:50:22.705601",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "Чтобы мы потестили, а с гитом позже разобраться7"
+}
+{
+  "ts": "2021-09-03T11:50:22.706420",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "Чтобы мы потестили, а с гитом позже разобраться7"
+}
+{
+  "ts": "2021-09-03T11:50:22.706884",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "Чтобы мы потестили, а с гитом позже разобраться7"
+}
+{
+  "ts": "2021-09-03T11:50:22.707347",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "Чтобы мы потестили, а с гитом позже разобраться7"
+}
+{
+  "ts": "2021-09-03T11:57:50.001700",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "зулас запушил"
+}
+{
+  "ts": "2021-09-03T11:57:50.003280",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "зулас запушил"
+}
+{
+  "ts": "2021-09-03T11:57:50.003568",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "зулас запушил"
+}
+{
+  "ts": "2021-09-03T11:57:50.003859",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "зулас запушил"
+}
+{
+  "ts": "2021-09-03T11:57:50.004477",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "зулас запушил"
+}
+{
+  "ts": "2021-09-03T11:57:50.005207",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "зулас запушил"
+}
+{
+  "ts": "2021-09-03T11:57:56.216523",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "я его попросил выгрузить на сервер"
+}
+{
+  "ts": "2021-09-03T11:57:56.217507",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "я его попросил выгрузить на сервер"
+}
+{
+  "ts": "2021-09-03T11:57:56.218152",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "я его попросил выгрузить на сервер"
+}
+{
+  "ts": "2021-09-03T11:57:56.218562",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "я его попросил выгрузить на сервер"
+}
+{
+  "ts": "2021-09-03T11:57:56.219674",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "я его попросил выгрузить на сервер"
+}
+{
+  "ts": "2021-09-03T11:57:56.219383",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "я его попросил выгрузить на сервер"
+}
+{
+  "ts": "2021-09-03T11:58:32.834690",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": " driver или ты выгрузи сам"
+}
+{
+  "ts": "2021-09-03T11:58:32.836363",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": " driver или ты выгрузи сам"
+}
+{
+  "ts": "2021-09-03T11:58:32.836659",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": " driver или ты выгрузи сам"
+}
+{
+  "ts": "2021-09-03T11:58:32.837272",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": " driver или ты выгрузи сам"
+}
+{
+  "ts": "2021-09-03T11:58:32.838558",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": " driver или ты выгрузи сам"
+}
+{
+  "ts": "2021-09-03T11:58:32.839035",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": " driver или ты выгрузи сам"
+}
+{
+  "ts": "2021-09-03T12:06:12.242963",
+  "from": "pin@q3mcco35auwcstmt.onion",
+  "to": "dylon@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2021-09-03T12:13:46.498938",
+  "from": "pin@q3mcco35auwcstmt.onion",
+  "to": "professor@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2021-09-03T12:15:59.418309",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T12:17:17.908463",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "Ок"
+}
+{
+  "ts": "2021-09-03T12:17:17.909945",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "Ок"
+}
+{
+  "ts": "2021-09-03T12:17:17.910874",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "Ок"
+}
+{
+  "ts": "2021-09-03T12:17:17.911828",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "Ок"
+}
+{
+  "ts": "2021-09-03T12:17:17.912828",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "Ок"
+}
+{
+  "ts": "2021-09-03T12:17:17.913374",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "Ок"
+}
+{
+  "ts": "2021-09-03T12:17:26.281640",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "Выгружу."
+}
+{
+  "ts": "2021-09-03T12:17:26.284856",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "Выгружу."
+}
+{
+  "ts": "2021-09-03T12:17:26.285571",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "Выгружу."
+}
+{
+  "ts": "2021-09-03T12:17:26.285817",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "Выгружу."
+}
+{
+  "ts": "2021-09-03T12:17:26.286310",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "Выгружу."
+}
+{
+  "ts": "2021-09-03T12:17:26.286983",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "Выгружу."
+}
+{
+  "ts": "2021-09-03T12:24:20.985834",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T12:45:20.660064",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "veron@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T12:49:23.431378",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T12:54:25.743372",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "SQL = \"INSERT INTO data84 (created_at, \\\"group\\\", id_low, id_high, username, browser, \\\"domain\\\", cookie_name, cookie_value, created, expires, path ) VALUES ( NOW(), $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13 )\","
+}
+{
+  "ts": "2021-09-03T12:54:25.744793",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "SQL = \"INSERT INTO data84 (created_at, \\\"group\\\", id_low, id_high, username, browser, \\\"domain\\\", cookie_name, cookie_value, created, expires, path ) VALUES ( NOW(), $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13 )\","
+}
+{
+  "ts": "2021-09-03T12:54:25.745267",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "SQL = \"INSERT INTO data84 (created_at, \\\"group\\\", id_low, id_high, username, browser, \\\"domain\\\", cookie_name, cookie_value, created, expires, path ) VALUES ( NOW(), $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13 )\","
+}
+{
+  "ts": "2021-09-03T12:54:25.745758",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "SQL = \"INSERT INTO data84 (created_at, \\\"group\\\", id_low, id_high, username, browser, \\\"domain\\\", cookie_name, cookie_value, created, expires, path ) VALUES ( NOW(), $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13 )\","
+}
+{
+  "ts": "2021-09-03T12:54:25.746247",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "SQL = \"INSERT INTO data84 (created_at, \\\"group\\\", id_low, id_high, username, browser, \\\"domain\\\", cookie_name, cookie_value, created, expires, path ) VALUES ( NOW(), $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13 )\","
+}
+{
+  "ts": "2021-09-03T12:54:25.746759",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "SQL = \"INSERT INTO data84 (created_at, \\\"group\\\", id_low, id_high, username, browser, \\\"domain\\\", cookie_name, cookie_value, created, expires, path ) VALUES ( NOW(), $1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13 )\","
+}
+{
+  "ts": "2021-09-03T12:55:03.218948",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "@zulas не вставил 2 поля в запрос в базу."
+}
+{
+  "ts": "2021-09-03T12:55:03.220705",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "@zulas не вставил 2 поля в запрос в базу."
+}
+{
+  "ts": "2021-09-03T12:55:03.222441",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "@zulas не вставил 2 поля в запрос в базу."
+}
+{
+  "ts": "2021-09-03T12:55:03.222718",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "@zulas не вставил 2 поля в запрос в базу."
+}
+{
+  "ts": "2021-09-03T12:55:03.223894",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "@zulas не вставил 2 поля в запрос в базу."
+}
+{
+  "ts": "2021-09-03T12:55:03.224171",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "@zulas не вставил 2 поля в запрос в базу."
+}
+{
+  "ts": "2021-09-03T12:55:17.836119",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "Поправь пожалуйста."
+}
+{
+  "ts": "2021-09-03T12:55:17.837123",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "Поправь пожалуйста."
+}
+{
+  "ts": "2021-09-03T12:55:17.837474",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "Поправь пожалуйста."
+}
+{
+  "ts": "2021-09-03T12:55:17.837652",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "Поправь пожалуйста."
+}
+{
+  "ts": "2021-09-03T12:55:17.837913",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "Поправь пожалуйста."
+}
+{
+  "ts": "2021-09-03T12:55:17.838265",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "Поправь пожалуйста."
+}
+{
+  "ts": "2021-09-03T12:55:52.851299",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T12:56:49.433850",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T12:57:14.762201",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T12:59:47.137757",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T13:01:19.006043",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T13:01:30.956455",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T13:02:44.307528",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "И таблицу архива куков, там тоже эти 2 поля нужны будут."
+}
+{
+  "ts": "2021-09-03T13:02:44.309362",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "И таблицу архива куков, там тоже эти 2 поля нужны будут."
+}
+{
+  "ts": "2021-09-03T13:02:44.309663",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "И таблицу архива куков, там тоже эти 2 поля нужны будут."
+}
+{
+  "ts": "2021-09-03T13:02:44.310172",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "И таблицу архива куков, там тоже эти 2 поля нужны будут."
+}
+{
+  "ts": "2021-09-03T13:02:44.310804",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "И таблицу архива куков, там тоже эти 2 поля нужны будут."
+}
+{
+  "ts": "2021-09-03T13:02:44.311709",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "И таблицу архива куков, там тоже эти 2 поля нужны будут."
+}
+{
+  "ts": "2021-09-03T13:03:34.025182",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "По остальному посмотрел, вижу схему нормальную сделал, все ок. Это у нас недавно было актуальной проблемой."
+}
+{
+  "ts": "2021-09-03T13:03:34.026567",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "По остальному посмотрел, вижу схему нормальную сделал, все ок. Это у нас недавно было актуальной проблемой."
+}
+{
+  "ts": "2021-09-03T13:03:34.027532",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "По остальному посмотрел, вижу схему нормальную сделал, все ок. Это у нас недавно было актуальной проблемой."
+}
+{
+  "ts": "2021-09-03T13:03:34.028188",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "По остальному посмотрел, вижу схему нормальную сделал, все ок. Это у нас недавно было актуальной проблемой."
+}
+{
+  "ts": "2021-09-03T13:03:34.029973",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "По остальному посмотрел, вижу схему нормальную сделал, все ок. Это у нас недавно было актуальной проблемой."
+}
+{
+  "ts": "2021-09-03T13:03:34.031083",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "По остальному посмотрел, вижу схему нормальную сделал, все ок. Это у нас недавно было актуальной проблемой."
+}
+{
+  "ts": "2021-09-03T13:04:05.725357",
+  "from": "hof@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T13:04:19.042251",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "cookies_archive*"
+}
+{
+  "ts": "2021-09-03T13:04:19.044728",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "cookies_archive*"
+}
+{
+  "ts": "2021-09-03T13:04:19.045875",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "cookies_archive*"
+}
+{
+  "ts": "2021-09-03T13:04:19.046997",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "cookies_archive*"
+}
+{
+  "ts": "2021-09-03T13:04:19.048670",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "cookies_archive*"
+}
+{
+  "ts": "2021-09-03T13:04:19.050514",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "cookies_archive*"
+}
+{
+  "ts": "2021-09-03T13:20:47.421196",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T13:21:11.105192",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T13:23:45.180280",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "zulas отпиши по времени, когда сможешь сделать фиксы"
+}
+{
+  "ts": "2021-09-03T13:23:45.181934",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "zulas отпиши по времени, когда сможешь сделать фиксы"
+}
+{
+  "ts": "2021-09-03T13:23:45.182944",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "zulas отпиши по времени, когда сможешь сделать фиксы"
+}
+{
+  "ts": "2021-09-03T13:23:45.183858",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "zulas отпиши по времени, когда сможешь сделать фиксы"
+}
+{
+  "ts": "2021-09-03T13:23:45.184379",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "zulas отпиши по времени, когда сможешь сделать фиксы"
+}
+{
+  "ts": "2021-09-03T13:23:45.184958",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "zulas отпиши по времени, когда сможешь сделать фиксы"
+}
+{
+  "ts": "2021-09-03T13:43:52.088017",
+  "from": "zulas@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "на сервер сами как то уж .."
+}
+{
+  "ts": "2021-09-03T13:44:34.793860",
+  "from": "zulas@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "щас посмотрю"
+}
+{
+  "ts": "2021-09-03T13:44:34.795816",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "щас посмотрю"
+}
+{
+  "ts": "2021-09-03T13:44:34.796607",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "щас посмотрю"
+}
+{
+  "ts": "2021-09-03T13:44:34.797211",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "щас посмотрю"
+}
+{
+  "ts": "2021-09-03T13:44:34.797769",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "щас посмотрю"
+}
+{
+  "ts": "2021-09-03T13:44:34.798653",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "щас посмотрю"
+}
+{
+  "ts": "2021-09-03T13:45:22.428327",
+  "from": "green@q3mcco35auwcstmt.onion",
+  "to": "strix@q3mcco35auwcstmt.onion",
+  "body": "стрикс привет"
+}
+{
+  "ts": "2021-09-03T13:46:05.455827",
+  "from": "zulas@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "@driver cookies_archive* .. я такой таблицей не пользуюсь"
+}
+{
+  "ts": "2021-09-03T13:46:05.458181",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "@driver cookies_archive* .. я такой таблицей не пользуюсь"
+}
+{
+  "ts": "2021-09-03T13:46:05.459613",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "@driver cookies_archive* .. я такой таблицей не пользуюсь"
+}
+{
+  "ts": "2021-09-03T13:46:05.460223",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "@driver cookies_archive* .. я такой таблицей не пользуюсь"
+}
+{
+  "ts": "2021-09-03T13:46:05.461942",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "@driver cookies_archive* .. я такой таблицей не пользуюсь"
+}
+{
+  "ts": "2021-09-03T13:46:05.462879",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "@driver cookies_archive* .. я такой таблицей не пользуюсь"
+}
+{
+  "ts": "2021-09-03T13:56:14.443289",
+  "from": "zulas@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "пофиксил запрос"
+}
+{
+  "ts": "2021-09-03T13:56:14.444667",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "пофиксил запрос"
+}
+{
+  "ts": "2021-09-03T13:56:14.445281",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "пофиксил запрос"
+}
+{
+  "ts": "2021-09-03T13:56:14.445082",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "пофиксил запрос"
+}
+{
+  "ts": "2021-09-03T13:56:14.445503",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "пофиксил запрос"
+}
+{
+  "ts": "2021-09-03T13:56:14.445800",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "пофиксил запрос"
+}
+{
+  "ts": "2021-09-03T13:56:17.182225",
+  "from": "zulas@q3mcco35auwcstmt.onion",
+  "to": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "body": "не тестировал"
+}
+{
+  "ts": "2021-09-03T13:56:17.183368",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "не тестировал"
+}
+{
+  "ts": "2021-09-03T13:56:17.184880",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "не тестировал"
+}
+{
+  "ts": "2021-09-03T13:56:17.185278",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "не тестировал"
+}
+{
+  "ts": "2021-09-03T13:56:17.185701",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "flip@q3mcco35auwcstmt.onion",
+  "body": "не тестировал"
+}
+{
+  "ts": "2021-09-03T13:56:17.186475",
+  "from": "ttrr@conference.q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "не тестировал"
+}
+{
+  "ts": "2021-09-03T14:00:25.842618",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "ты отвечай оперативно"
+}
+{
+  "ts": "2021-09-03T14:00:31.211511",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "zulas@q3mcco35auwcstmt.onion",
+  "body": "драйвер будет выгружать"
+}
+{
+  "ts": "2021-09-03T14:01:28.815943",
+  "from": "zulas@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "я отсутствовал"
+}
+{
+  "ts": "2021-09-03T14:07:31.479744",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T14:12:51.622808",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T14:13:53.721066",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T14:20:12.619065",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T14:20:39.043749",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T14:20:47.538833",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T14:21:05.461311",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T14:31:06.164875",
+  "from": "derekson@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "Привет"
+}
+{
+  "ts": "2021-09-03T14:35:01.457924",
+  "from": "derekson@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "оплатишь бк админки?"
+}
+{
+  "ts": "2021-09-03T14:35:13.744527",
+  "from": "derekson@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "мне на все не хватило, две осталось"
+}
+{
+  "ts": "2021-09-03T14:35:45.299791",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "derekson@q3mcco35auwcstmt.onion",
+  "body": "привет давай"
+}
+{
+  "ts": "2021-09-03T15:11:43.751976",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "в общем решили, делаем ему свой комплект закрепа + акк в бк"
+}
+{
+  "ts": "2021-09-03T15:12:21.129039",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "сегодня опять изза файла профукал сетки, у него не рездентный лоадер, грузит файл и удалется, а файл битый был на кобу"
+}
+{
+  "ts": "2021-09-03T15:12:45.039233",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "надо машины закреплять, чтобы можно было потом спокойно файлы кобы прогружать"
+}
+{
+  "ts": "2021-09-03T15:43:33.331342",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "ghost@q3mcco35auwcstmt.onion",
+  "body": "?"
+}
+{
+  "ts": "2021-09-03T16:05:12.337502",
+  "from": "wertu@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "привет) так себе конечно, но я расчитывал на деньги, потому что за жильё платить надо было позавчера ещё $300, поэтому если можешь помочь было бы хорошо кнечно"
+}
+{
+  "ts": "2021-09-03T16:32:26.927711",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "https://privnote.com/cJ1egRUJ#3XwCpk9ny"
+}
+{
+  "ts": "2021-09-03T16:32:26.940305",
+  "from": "tom@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "спасибо"
+}
+{
+  "ts": "2021-09-03T16:32:26.947685",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2021-09-03T16:32:26.950170",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "том хочет в трик грузить с лоадера, даем досутп?"
+}
+{
+  "ts": "2021-09-03T16:32:26.956327",
+  "from": "tom@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "Сегодня отгрузил много сеток"
+}
+{
+  "ts": "2021-09-03T16:32:26.957345",
+  "from": "tom@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "половина отмерла еслине больше"
+}
+{
+  "ts": "2021-09-03T16:32:26.958934",
+  "from": "tom@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "не понятно из-за чего"
+}
+{
+  "ts": "2021-09-03T16:32:26.959803",
+  "from": "tom@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "крипт \nсервак не понятно"
+}
+{
+  "ts": "2021-09-03T16:32:26.960713",
+  "from": "tom@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "пока паузу сделаем"
+}
+{
+  "ts": "2021-09-03T16:32:26.961701",
+  "from": "tom@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "так смысла нет работать"
+}
+{
+  "ts": "2021-09-03T16:32:26.962680",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "в общем у него проблема живучести, ему надо крепить его сети, вчера говорит 40 профукал, его лоадер живет несколько минут, хватит только если что то прогрузить через него"
+}
+{
+  "ts": "2021-09-03T16:32:26.963685",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "можно ему трик дать + закреп"
+}
+{
+  "ts": "2021-09-03T16:32:26.965053",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "в общем решили, делаем ему свой комплект закрепа + акк в бк"
+}
+{
+  "ts": "2021-09-03T16:32:26.966010",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "сегодня опять изза файла профукал сетки, у него не рездентный лоадер, грузит файл и удалется, а файл битый был на кобу"
+}
+{
+  "ts": "2021-09-03T16:32:26.975093",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "надо машины закреплять, чтобы можно было потом спокойно файлы кобы прогружать"
+}
+{
+  "ts": "2021-09-03T16:37:13.375757",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "hors@q3mcco35auwcstmt.onion",
+  "body": "\n[18:45:34] <tom> Сегодня отгрузил много сеток\n[18:45:51] <tom> половина отмерла еслине больше \n[18:45:54] <tom> не понятно из-за чего \n[18:45:59] <tom> крипт \nсервак не понятно \n[18:46:07] <tom> пока паузу сделаем\n[18:46:12] <tom> так смысла нет работать"
+}
+{
+  "ts": "2021-09-03T16:54:27.043636",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "reshaev@q3mcco35auwcstmt.onion",
+  "body": "прив"
+}
+{
+  "ts": "2021-09-03T16:54:28.280638",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "reshaev@q3mcco35auwcstmt.onion",
+  "body": "дай кош"
+}
+{
+  "ts": "2021-09-03T17:00:15.188052",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "beta@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2021-09-03T17:00:21.343622",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "beta@q3mcco35auwcstmt.onion",
+  "body": "а атлас когда появится ?"
+}
+{
+  "ts": "2021-09-03T17:01:47.956967",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "bentley@q3mcco35auwcstmt.onion",
+  "body": "зп :)"
+}
+{
+  "ts": "2021-09-03T17:03:49.668707",
+  "from": "mentos@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "какие вы асинхронные)))"
+}
+{
+  "ts": "2021-09-03T17:04:56.217102",
+  "from": "tom@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2021-09-03T17:05:33.236565",
+  "from": "tom@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "привет спасибо за монетки ....."
+}
+{
+  "ts": "2021-09-03T17:05:39.545376",
+  "from": "tom@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "ну надеюсь"
+}
+{
+  "ts": "2021-09-03T17:07:29.932611",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "kagas@q3mcco35auwcstmt.onion",
+  "body": "бро"
+}
+{
+  "ts": "2021-09-03T17:07:32.519695",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "kagas@q3mcco35auwcstmt.onion",
+  "body": "давай кош"
+}
+{
+  "ts": "2021-09-03T17:10:29.232700",
+  "from": "grant@q3mcco35auwcstmt.onion",
+  "to": "hash@q3mcco35auwcstmt.onion",
+  "body": "тут?"
+}
+{
+  "ts": "2021-09-03T17:11:55.869645",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "неуловимый Джо) я вернулся с Крыма, полностью в работе, есть куча новых мыслей - как будет время свободное пиши, потрещим"
+}
+{
+  "ts": "2021-09-03T17:26:47.268369",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "bentley@q3mcco35auwcstmt.onion",
+  "body": "бро порезало отр все нафиг, давай еще разок"
+}
+{
+  "ts": "2021-09-03T17:28:35.662871",
+  "from": "bentley@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "Кошелек для оплаты:\n\nbc1qktkx0jynsfgmvlnern4zpnk8hy6u9h2zdtgtfz\n\nСумма: 0.02577001\nBTC"
+}
+{
+  "ts": "2021-09-03T17:28:41.014771",
+  "from": "bentley@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "Видно?"
+}
+{
+  "ts": "2021-09-03T18:42:42.894429",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "mentos@q3mcco35auwcstmt.onion",
+  "body": "[21:42:38] <mango> доброй ночи бро)"
+}
+{
+  "ts": "2021-09-03T18:46:20.737692",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "buza@q3mcco35auwcstmt.onion",
+  "body": "carrol че делает у нас бро?"
+}
+{
+  "ts": "2021-09-03T19:07:53.137319",
+  "from": "ghost@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "hello I am Ned"
+}
+{
+  "ts": "2021-09-03T19:18:35.997255",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "ghost@q3mcco35auwcstmt.onion",
+  "body": ":)"
+}
+{
+  "ts": "2021-09-03T19:34:59.228675",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "buza@q3mcco35auwcstmt.onion",
+  "body": "orval - тимлидит вместо коляна? а он чем занимается?"
+}
+{
+  "ts": "2021-09-03T19:58:34.322433",
+  "from": "bentley@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "Бро, Готов отчет по криптам за 02.09"
+}
+{
+  "ts": "2021-09-03T19:58:36.674960",
+  "from": "bentley@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "Проект лео - 1 крипт билдмашина\n\nБК\n5 группа - 5 криптов билд машина\n25 группа - 93 крипта билд машина\n30 группа - 10 криптов\n\nТрик:\n4 длл - невил\n1 ехе - невил\n\nТройка: невил\n\nШелкод: билд машина, невил"
+}
+{
+  "ts": "2021-09-03T21:12:10.447470",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "alexsilence не отвечает"
+}
+{
+  "ts": "2021-09-03T21:12:15.918648",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "писал несколько раз"
+}
+{
+  "ts": "2021-09-03T21:38:26.032873",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "grom@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-09-03T21:38:31.954597",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "grom@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
