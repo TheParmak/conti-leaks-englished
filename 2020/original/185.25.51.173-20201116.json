@@ -1,0 +1,264 @@
+{
+  "ts": "2020-11-16T06:21:54.899352",
+  "from": "stakan@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "привет , я насчет зп"
+}
+{
+  "ts": "2020-11-16T07:11:56.108686",
+  "from": "green@q3mcco35auwcstmt.onion",
+  "to": "ghost@q3mcco35auwcstmt.onion",
+  "body": "привет\n\nhttps://qaz.im/zaq/EH2YFG5z#YKrHb6Hf"
+}
+{
+  "ts": "2020-11-16T08:54:28.029216",
+  "from": "ghost@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2020-11-16T08:54:29.056906",
+  "from": "ghost@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[18:10:42] <defender> скину чуть позже"
+}
+{
+  "ts": "2020-11-16T09:32:27.978875",
+  "from": "hlor@q3mcco35auwcstmt.onion",
+  "to": "hlor@q3mcco35auwcstmt.onion",
+  "body": "зштп"
+}
+{
+  "ts": "2020-11-16T09:40:25.350909",
+  "from": "casper@q3mcco35auwcstmt.onion",
+  "to": "viper@q3mcco35auwcstmt.onion",
+  "body": "Привет."
+}
+{
+  "ts": "2020-11-16T09:47:12.037114",
+  "from": "viper@q3mcco35auwcstmt.onion",
+  "to": "casper@q3mcco35auwcstmt.onion",
+  "body": "привет!"
+}
+{
+  "ts": "2020-11-16T09:47:51.831492",
+  "from": "viper@q3mcco35auwcstmt.onion",
+  "to": "casper@q3mcco35auwcstmt.onion",
+  "body": "давайте ваш номер карты для оплаты ТЗ"
+}
+{
+  "ts": "2020-11-16T09:48:38.634962",
+  "from": "casper@q3mcco35auwcstmt.onion",
+  "to": "viper@q3mcco35auwcstmt.onion",
+  "body": "5336 6902 8679 5127"
+}
+{
+  "ts": "2020-11-16T09:48:55.985059",
+  "from": "viper@q3mcco35auwcstmt.onion",
+  "to": "casper@q3mcco35auwcstmt.onion",
+  "body": "какой банк?"
+}
+{
+  "ts": "2020-11-16T09:49:01.006417",
+  "from": "casper@q3mcco35auwcstmt.onion",
+  "to": "viper@q3mcco35auwcstmt.onion",
+  "body": "сбер"
+}
+{
+  "ts": "2020-11-16T09:56:48.521931",
+  "from": "viper@q3mcco35auwcstmt.onion",
+  "to": "casper@q3mcco35auwcstmt.onion",
+  "body": "в течении 30 мин деньги поступят"
+}
+{
+  "ts": "2020-11-16T10:58:47.966001",
+  "from": "dick@q3mcco35auwcstmt.onion",
+  "to": "tiktak@q3mcco35auwcstmt.onion",
+  "body": "отр?"
+}
+{
+  "ts": "2020-11-16T11:50:10.699211",
+  "from": "frog@q3mcco35auwcstmt.onion",
+  "to": "buza@q3mcco35auwcstmt.onion",
+  "body": "Добрый день!\nKaktus передал, что конкурс проводится, можно предлагать идеи.\nНе знаю, нужно это или нет, за то время, пока работаю, придумал несколько методов.\n1. Метод обнаружения песочниц Avast как для 64-разрядной версии, так и для 32-разрядной.\n2. С помощью митигаций можно избежать внедрения dll, которые загружают АВ в процесс и, следовательно, установки ловушек. Проверил на том же Avast (он внедряет aswhook.dll). Приём работает на Windows 10, а на Windows 7 не работает. Это сделал в виде отдельного модуля.\n3. Модуль GetApi упростил, убрал из него лишнее. Сделал, чтобы хэш-функция была легко изменяемая и находилась в одном месте. Есть проверка, что нет одинаковых хэш-значений. В модуль можно легко и быстро добавлять новые dll-библиотеки и функции. Код только немного запутал, так как возникали статические детекты.\n4. Ещё получилось поставить собственную ловушку в 64-разрядной версии на BaseThreadInitThunk, чтобы отсеять потоки. Но в этом направлении не тестировал программы. Есть подозрение, что закриптованная версия может перестать работать. Во-вторых, потоки могут быть запущены до установки хука. Да и потом, скорее всего, то же самое можно сделать (отсеять потоки) с помощью митигаций.\nГде-то может велосипед изобрёл, но информации почти нет нигде (по митигациям только немного нашёл в интернете).\n\nПо условиям конкурса, нужны новые методы запуска нагрузки. В этом направлении пытался что-то делать, но ничего не придумал, слишком мало информации. Пробовал для интереса смещать образ exe-файла в адресном пространстве процесса (т.е. модифицировать process hollowing), записывать по произвольному адресу, но не получилось. И непонятно, нужно ли это вообще."
+}
+{
+  "ts": "2020-11-16T13:07:58.465669",
+  "from": "mors@q3mcco35auwcstmt.onion",
+  "to": "marsel@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2020-11-16T13:08:15.659851",
+  "from": "marsel@q3mcco35auwcstmt.onion",
+  "to": "mors@q3mcco35auwcstmt.onion",
+  "body": "Привет"
+}
+{
+  "ts": "2020-11-16T13:08:23.054420",
+  "from": "mors@q3mcco35auwcstmt.onion",
+  "to": "marsel@q3mcco35auwcstmt.onion",
+  "body": "криптани, плиз. новые файлы на ссылках"
+}
+{
+  "ts": "2020-11-16T13:08:43.344297",
+  "from": "marsel@q3mcco35auwcstmt.onion",
+  "to": "mors@q3mcco35auwcstmt.onion",
+  "body": "Вчера файлы получил?"
+}
+{
+  "ts": "2020-11-16T13:08:46.973732",
+  "from": "mors@q3mcco35auwcstmt.onion",
+  "to": "marsel@q3mcco35auwcstmt.onion",
+  "body": "да"
+}
+{
+  "ts": "2020-11-16T13:13:38.805872",
+  "from": "baget@q3mcco35auwcstmt.onion",
+  "to": "braun@q3mcco35auwcstmt.onion",
+  "body": "Ау!"
+}
+{
+  "ts": "2020-11-16T13:23:56.791021",
+  "from": "modnik@q3mcco35auwcstmt.onion",
+  "to": "grajdanin@q3mcco35auwcstmt.onion",
+  "body": "https://privnote.com/3z2UN84t#1j6rQb3rc"
+}
+{
+  "ts": "2020-11-16T13:26:48.664289",
+  "from": "steller@q3mcco35auwcstmt.onion",
+  "to": "talar@q3mcco35auwcstmt.onion",
+  "body": "Привет у тебя botleggers работает?"
+}
+{
+  "ts": "2020-11-16T13:28:22.516089",
+  "from": "baget@q3mcco35auwcstmt.onion",
+  "to": "braun@q3mcco35auwcstmt.onion",
+  "body": "Ау?"
+}
+{
+  "ts": "2020-11-16T13:37:45.940077",
+  "from": "braun@q3mcco35auwcstmt.onion",
+  "to": "baget@q3mcco35auwcstmt.onion",
+  "body": "да да"
+}
+{
+  "ts": "2020-11-16T13:43:27.109450",
+  "from": "baget@q3mcco35auwcstmt.onion",
+  "to": "braun@q3mcco35auwcstmt.onion",
+  "body": "О!"
+}
+{
+  "ts": "2020-11-16T13:43:32.531746",
+  "from": "baget@q3mcco35auwcstmt.onion",
+  "to": "braun@q3mcco35auwcstmt.onion",
+  "body": "Привет еще раз."
+}
+{
+  "ts": "2020-11-16T13:43:36.937881",
+  "from": "baget@q3mcco35auwcstmt.onion",
+  "to": "braun@q3mcco35auwcstmt.onion",
+  "body": "Не убегай."
+}
+{
+  "ts": "2020-11-16T13:44:13.107171",
+  "from": "baget@q3mcco35auwcstmt.onion",
+  "to": "braun@q3mcco35auwcstmt.onion",
+  "body": "Так, где мы с тобой ведем беседу?"
+}
+{
+  "ts": "2020-11-16T13:45:40.736084",
+  "from": "baget@q3mcco35auwcstmt.onion",
+  "to": "braun@q3mcco35auwcstmt.onion",
+  "body": "Ау?"
+}
+{
+  "ts": "2020-11-16T14:16:46.071858",
+  "from": "marsel@q3mcco35auwcstmt.onion",
+  "to": "mors@q3mcco35auwcstmt.onion",
+  "body": "Download: https://qaz.im/load/4DZG3E/TKB9tk\nDelete: https://qaz.im/index.php?a=delete&q=1031846766"
+}
+{
+  "ts": "2020-11-16T14:16:49.726109",
+  "from": "marsel@q3mcco35auwcstmt.onion",
+  "to": "mors@q3mcco35auwcstmt.onion",
+  "body": "Пас 123"
+}
+{
+  "ts": "2020-11-16T14:27:23.052174",
+  "from": "dick@q3mcco35auwcstmt.onion",
+  "to": "tiktak@q3mcco35auwcstmt.onion",
+  "body": "сейчас видно отошел"
+}
+{
+  "ts": "2020-11-16T14:29:20.227291",
+  "from": "dominik@q3mcco35auwcstmt.onion",
+  "to": "mavelek@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2020-11-16T14:29:24.612088",
+  "from": "dominik@q3mcco35auwcstmt.onion",
+  "to": "mavelek@q3mcco35auwcstmt.onion",
+  "body": "скинешь доступ нормальный бро*"
+}
+{
+  "ts": "2020-11-16T14:29:25.893700",
+  "from": "dominik@q3mcco35auwcstmt.onion",
+  "to": "mavelek@q3mcco35auwcstmt.onion",
+  "body": "?"
+}
+{
+  "ts": "2020-11-16T14:29:35.022350",
+  "from": "dominik@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2020-11-16T14:29:41.405707",
+  "from": "dominik@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "никто не скинул доступ бро"
+}
+{
+  "ts": "2020-11-16T14:53:46.701359",
+  "from": "hlor@q3mcco35auwcstmt.onion",
+  "to": "hlor@q3mcco35auwcstmt.onion",
+  "body": "h"
+}
+{
+  "ts": "2020-11-16T15:27:37.254608",
+  "from": "hlor@q3mcco35auwcstmt.onion",
+  "to": "hlor@q3mcco35auwcstmt.onion",
+  "body": "f"
+}
+{
+  "ts": "2020-11-16T15:35:52.074610",
+  "from": "modnik@q3mcco35auwcstmt.onion",
+  "to": "grajdanin@q3mcco35auwcstmt.onion",
+  "body": "https://privnote.com/3z2UN84t#1j6rQb3rc"
+}
+{
+  "ts": "2020-11-16T15:58:21.937706",
+  "from": "braun@q3mcco35auwcstmt.onion",
+  "to": "miguel@q3mcco35auwcstmt.onion",
+  "body": "Привет, бро!"
+}
+{
+  "ts": "2020-11-16T16:04:15.618960",
+  "from": "frog@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "Привет"
+}
+{
+  "ts": "2020-11-16T17:18:50.572022",
+  "from": "cany@q3mcco35auwcstmt.onion",
+  "to": "kaktus@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2020-11-16T17:38:31.590878",
+  "from": "kaktus@q3mcco35auwcstmt.onion",
+  "to": "cany@q3mcco35auwcstmt.onion",
+  "body": "привет, я тебе в новом рабочем чате инфу скинул. Прими там и подтверди"
+}

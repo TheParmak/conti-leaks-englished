@@ -1,0 +1,2898 @@
+{
+  "ts": "2020-10-03T05:32:29.634678",
+  "from": "bentley@q3mcco35auwcstmt.onion",
+  "to": "van@q3mcco35auwcstmt.onion",
+  "body": "[02.10.2020 19:47:29] <bentley> По итогу. Вана не стучит а Машрума и катуса даже не брали в работу.\n[02.10.2020 20:09:28] <buza> ясно\n[02.10.2020 20:17:12] <buza> это уже с новыми доменами?\n[02.10.2020 20:17:30] <bentley> Да\n[02.10.2020 20:17:59] <bentley> Похоже Таргету надо писать совершенно новый БК раз у нас не работает а Буер стучит\n[02.10.2020 20:47:46] <bentley> https://twitter.com/malwrhunterteam/status/1310843235229671424\n[02.10.2020 20:48:04] <bentley> про наш базар лоадер\n[02.10.2020 20:50:48] <buza> реклама)\n[02.10.2020 20:50:55] <buza> Of those, 7 started as FUD. The other 4 started at either 1 or 2 detections.\n[02.10.2020 20:51:15] <bentley> https://twitter.com/search?q=MUSTER%20PLUS%20SP%20Z%20O%20O&src=typed_query\n[02.10.2020 20:51:24] <bentley> Это которым сегодня подписывали сертом\n[02.10.2020 20:52:00] <buza> ну и раз фуд, то получается что качество тестирования у нас отличное\n[02.10.2020 20:52:02] <buza> и стелс\n[02.10.2020 20:52:06] <buza> но почему сука отстука нету)\n[02.10.2020 20:52:13] <bentley> вот хз ))\n[02.10.2020 20:52:34] <buza> я с буером говорю, у него все проще\n[02.10.2020 20:52:46] <buza> особых ухищрений с прокладками и протоколами нету\n[02.10.2020 20:53:30] <buza> там кстати наш любимый Виталий Кремез)\n[02.10.2020 20:53:39] <buza> это наш персональный аналитик\n[02.10.2020 20:53:46] <bentley> Ааа )))\n[02.10.2020 20:53:49] <bentley> Спец по нам\n[02.10.2020 20:54:11] <buza> ты видишь как они оперативно работают\n[02.10.2020 20:54:16] <buza> утром в газете, вечером в куплете\n[02.10.2020 20:54:21] <buza> а по буеру найди\n[02.10.2020 20:54:36] <bentley> Хз как искать )\n[02.10.2020 20:54:41] <buza> а это как нашел?\n[02.10.2020 20:54:55] <bentley> Я искал по фирме сертификата \n[02.10.2020 20:55:10] <buza> но серт же тот же самый для них\n[02.10.2020 20:55:27] <bentley> Он не палится значит\n[02.10.2020 20:55:57] <bentley> или ка-то по другому палится\n[02.10.2020 20:56:00] <buza> согласно таргету, он палится сильнее\n[02.10.2020 20:59:20] <bentley> По ходу мы гораздо опаснее и за нами след большой потому нас сразу рубят\n[02.10.2020 20:59:36] <buza> в общем есть мысли почему так\n[02.10.2020 20:59:45] <buza> просто не верится что техника дошла до такого прогресса)\n[02.10.2020 20:59:49] <buza> я про то почему нас рубят\n[02.10.2020 21:00:08] <bentley> Почему?\n[02.10.2020 21:00:16] <buza> в протоколе некоторые сигнатуры\n[02.10.2020 21:00:23] <buza> по ури\n[02.10.2020 21:01:08] <bentley> Можем исправить?\n[02.10.2020 21:01:34] <buza> у нас в ури всегда есть /api/vчтототам\n[02.10.2020 21:01:42] <buza> если только это то да\n[02.10.2020 21:01:44] <buza> и даже легко\n[02.10.2020 21:01:58] <buza> и даже в принципе сегодня если у машрума с кактусом\n[02.10.2020 21:02:07] <bentley> аа про адрес откуда идет закачка\n[02.10.2020 21:02:20] <bentley> можно сделать 1 сборк для теста\n[02.10.2020 21:02:33] <buza> ну url выглядит примерно так\nhttps://11.22.33.44/api/version\n[02.10.2020 21:02:57] <bentley> апи версион\n[02.10.2020 21:03:11] <buza> я предполагаю что файрволлы могут зацепитсья за этот урл - мы уже давно в работе, его с самого старта не меняли, т.е. почитай полгода\n\n[02.10.2020 21:03:18] <buza> и он мог попасть уже во все базы\n[02.10.2020 21:03:25] <bentley> да \n[02.10.2020 21:03:30] <buza> но чтобы такое сделать, надо раскрутить ссл-трафик\n[02.10.2020 21:03:42] <buza> а это нетривиальная задача даже для DPI-устройств\n[02.10.2020 21:04:10] <bentley> Видимо ресурсы позволяют\n[02.10.2020 21:04:55] <buza> командуй машруму с кактусом\n[02.10.2020 21:05:11] <buza> зайти в свои группы и сменить префиксы на что-то случайное, но короткое\n[02.10.2020 21:05:21] <bentley> ага\n[02.10.2020 21:05:26] <buza> менять их каждый день\n[02.10.2020 21:05:35] <buza> попробуй продать это таргету\n[02.10.2020 21:05:44] <bentley> Ок\n[02.10.2020 21:06:37] <bentley> плучается не будет /api/version  да?\n[02.10.2020 21:06:42] <buza> нет\n[02.10.2020 21:06:46] <buza> от этих строк надо избавиться\n[02.10.2020 21:06:54] <buza> но они реально ни на что не влияют, они были выбраны для маскировки\n[02.10.2020 21:25:00] <buza> ладно, все на след неделю переходит\n[02.10.2020 21:25:06] <buza> там не так просто сменить этот префикс\n[02.10.2020 21:25:30] <buza> точнее, там надо придумывать как не потерять совместимость со старыми ботами, в которых старый префикс зашит\n[02.10.2020 21:25:32] <buza> но я уже придумал )\n[02.10.2020 21:26:22] <bentley> Замечательно!\n[02.10.2020 21:26:47] <bentley> Тогда наш любимый Виталий Кремез не сразу нас выследит? ))\n[02.10.2020 21:27:02] <buza> хз\n[02.10.2020 21:27:49] <buza> ну после общения с буером, получается что у него софт намного слабее в части защиты от ав - он не применяет ничего из кучи наших техник, которые показали эффективность от АВ\n[02.10.2020 21:27:58] <buza> и у него нету скрытного запуска нагрузки\n[02.10.2020 21:28:16] <buza> т.е. отсюда мы исключаем то что нас рубит банальный АВ по динамике\n[02.10.2020 21:28:34] <buza> но у него тройной слой шифрования трафика и нету префиксов\n[02.10.2020 21:28:44] <buza> т.е. так он обходит файрволлы\n[02.10.2020 21:29:12] <bentley> Понятно"
+}
+{
+  "ts": "2020-10-03T07:49:57.864799",
+  "from": "strix@q3mcco35auwcstmt.onion",
+  "to": "kaktus@q3mcco35auwcstmt.onion",
+  "body": "Привет. Говорят, ты пароли к панелям поменял. Не могу зайти, впн-ы почти все легли, чинить надо, а в панели попасть не могу..."
+}
+{
+  "ts": "2020-10-03T07:49:57.865856",
+  "from": "strix@q3mcco35auwcstmt.onion",
+  "to": "kaktus@q3mcco35auwcstmt.onion",
+  "body": "Упс, не туда"
+}
+{
+  "ts": "2020-10-03T11:05:28.714202",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "voron@q3mcco35auwcstmt.onion",
+  "body": "11"
+}
+{
+  "ts": "2020-10-03T11:05:28.870273",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "voron@q3mcco35auwcstmt.onion",
+  "body": "1"
+}
+{
+  "ts": "2020-10-03T11:05:56.679833",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "все ок?"
+}
+{
+  "ts": "2020-10-03T11:07:35.586533",
+  "from": "dandis@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "Привет да"
+}
+{
+  "ts": "2020-10-03T11:07:41.303111",
+  "from": "dandis@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "Сталина не вижу правда"
+}
+{
+  "ts": "2020-10-03T11:07:43.780867",
+  "from": "dandis@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "Остальные на месте"
+}
+{
+  "ts": "2020-10-03T11:11:44.189858",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "он вчера сказал, что сможет только вечером"
+}
+{
+  "ts": "2020-10-03T11:19:41.472336",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "voron@q3mcco35auwcstmt.onion",
+  "body": "fx6\ncetitobelt1970@protonmail.com\nN63vBMVXFp265x1\n\nfx8\nepacbesett1975@protonmail.com\nUhXmz0gSRMgx1"
+}
+{
+  "ts": "2020-10-03T11:19:43.836229",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "voron@q3mcco35auwcstmt.onion",
+  "body": "тут новые пароли"
+}
+{
+  "ts": "2020-10-03T11:19:45.850681",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "voron@q3mcco35auwcstmt.onion",
+  "body": "х1 в конце"
+}
+{
+  "ts": "2020-10-03T11:19:53.997067",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "voron@q3mcco35auwcstmt.onion",
+  "body": "мой безопасник сказал через тор лучше не заохдить на почты"
+}
+{
+  "ts": "2020-10-03T11:19:57.142429",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "voron@q3mcco35auwcstmt.onion",
+  "body": "не безопасно"
+}
+{
+  "ts": "2020-10-03T11:20:01.770723",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "voron@q3mcco35auwcstmt.onion",
+  "body": "поэтому где заходил через тор"
+}
+{
+  "ts": "2020-10-03T11:20:10.595088",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "voron@q3mcco35auwcstmt.onion",
+  "body": "поменял пассы"
+}
+{
+  "ts": "2020-10-03T11:20:11.591277",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "voron@q3mcco35auwcstmt.onion",
+  "body": "добавив х1"
+}
+{
+  "ts": "2020-10-03T11:20:14.033578",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "voron@q3mcco35auwcstmt.onion",
+  "body": "отпиши что принял"
+}
+{
+  "ts": "2020-10-03T11:49:38.798954",
+  "from": "professor@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "Angelica.com\nhttps://www.zoominfo.com/c/angelica-corporation/2228937\n1 пдк, 5 дк, 92 сервера, ~330 воркстанций.\nФинансовые документы(чеки, ревенью, бюджеты, прогнозы, проекты, контракты), персональные данные, архивы мыльников, ssn. По-моему ещё где то там дампы лежат.\n\ngikrum@protonmail.com\nkoolum@protonmail.com\n\nстащили КРЕДИТКИ \\ дампы . по прикидке около 2000 линий. их надо привести в читабельный вид. Стоит упомянуть об этом в переписке мб)"
+}
+{
+  "ts": "2020-10-03T11:55:22.799341",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "boby@q3mcco35auwcstmt.onion",
+  "body": "\n[14:53:48] <defender> privet periodicheski\n[14:53:57] <defender> pishi esli chto"
+}
+{
+  "ts": "2020-10-03T12:06:38.135079",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "нагонит"
+}
+{
+  "ts": "2020-10-03T12:06:39.937802",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "ему можно"
+}
+{
+  "ts": "2020-10-03T12:06:41.535369",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "не переживай"
+}
+{
+  "ts": "2020-10-03T12:06:52.102310",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "завтра дольше всех будет"
+}
+{
+  "ts": "2020-10-03T12:06:52.935973",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "так"
+}
+{
+  "ts": "2020-10-03T12:06:55.014490",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "я буду к вечеру"
+}
+{
+  "ts": "2020-10-03T12:06:57.232106",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "расскажешь что и как"
+}
+{
+  "ts": "2020-10-03T12:06:58.477582",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "и сделай мне"
+}
+{
+  "ts": "2020-10-03T12:06:59.440121",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "доступ"
+}
+{
+  "ts": "2020-10-03T12:07:00.872297",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "в рокетчат"
+}
+{
+  "ts": "2020-10-03T12:07:01.666449",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "плз"
+}
+{
+  "ts": "2020-10-03T12:07:06.413928",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "посмотрю там тоже что проихсодит"
+}
+{
+  "ts": "2020-10-03T12:08:39.455185",
+  "from": "dandis@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "А возьми плиз у своего офис тим"
+}
+{
+  "ts": "2020-10-03T12:08:48.478664",
+  "from": "dandis@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "Там в каждую конфу добавлять надо будет"
+}
+{
+  "ts": "2020-10-03T12:15:13.753592",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "boby@q3mcco35auwcstmt.onion",
+  "body": "\n[14:53:48] <defender> privet periodicheski\n[14:53:57] <defender> pishi esli chto"
+}
+{
+  "ts": "2020-10-03T13:31:25.696020",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2020-10-03T13:31:25.988511",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "1"
+}
+{
+  "ts": "2020-10-03T13:31:28.427734",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "тут?"
+}
+{
+  "ts": "2020-10-03T13:31:29.510101",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "??"
+}
+{
+  "ts": "2020-10-03T13:32:01.014640",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "hi"
+}
+{
+  "ts": "2020-10-03T13:32:02.698066",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "da"
+}
+{
+  "ts": "2020-10-03T13:32:04.150178",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "хай"
+}
+{
+  "ts": "2020-10-03T13:32:05.664974",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "передай игле"
+}
+{
+  "ts": "2020-10-03T13:32:10.419885",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "что на 2х почтах пасс сменен"
+}
+{
+  "ts": "2020-10-03T13:32:11.166077",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "мной"
+}
+{
+  "ts": "2020-10-03T13:32:13.727718",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ему в жабу скинул"
+}
+{
+  "ts": "2020-10-03T13:32:15.583847",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "пусть потвредит"
+}
+{
+  "ts": "2020-10-03T13:32:22.812703",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "из за того что черзе тор зашел наних"
+}
+{
+  "ts": "2020-10-03T13:32:29.807182",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "а мне мой безопасник сказал не стоит черзе тор заходить куда то"
+}
+{
+  "ts": "2020-10-03T13:32:35.811857",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "так"
+}
+{
+  "ts": "2020-10-03T13:32:37.006135",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "теперь"
+}
+{
+  "ts": "2020-10-03T13:32:38.467103",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "по делу"
+}
+{
+  "ts": "2020-10-03T13:32:40.073637",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "как дела"
+}
+{
+  "ts": "2020-10-03T13:32:46.424017",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "norma"
+}
+{
+  "ts": "2020-10-03T13:32:48.780943",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "ti kak?"
+}
+{
+  "ts": "2020-10-03T13:32:54.776937",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "вот пришел"
+}
+{
+  "ts": "2020-10-03T13:32:55.638776",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "хочу узнать"
+}
+{
+  "ts": "2020-10-03T13:32:56.546156",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "как дела"
+}
+{
+  "ts": "2020-10-03T13:32:59.340130",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "что нового"
+}
+{
+  "ts": "2020-10-03T13:33:04.812270",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "если скажешь"
+}
+{
+  "ts": "2020-10-03T13:33:06.671905",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "будет супер"
+}
+{
+  "ts": "2020-10-03T13:33:19.015177",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "prostavili tu vchera"
+}
+{
+  "ts": "2020-10-03T13:33:21.395043",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "bolshuu"
+}
+{
+  "ts": "2020-10-03T13:33:26.711088",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "i esche chtoto"
+}
+{
+  "ts": "2020-10-03T13:33:31.541775",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "s melkih"
+}
+{
+  "ts": "2020-10-03T13:33:37.325414",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "из"
+}
+{
+  "ts": "2020-10-03T13:33:38.092576",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "того"
+}
+{
+  "ts": "2020-10-03T13:33:40.972881",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "что получили вчера 11+"
+}
+{
+  "ts": "2020-10-03T13:33:41.426136",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "po suti i vse)"
+}
+{
+  "ts": "2020-10-03T13:33:47.672554",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "их еще раз перекинуть?)"
+}
+{
+  "ts": "2020-10-03T13:33:54.400934",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "вы же вроде ток их взяли разбирать"
+}
+{
+  "ts": "2020-10-03T13:34:06.542764",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "nu tam bro"
+}
+{
+  "ts": "2020-10-03T13:34:18.884538",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "kak bi pizdec a ne boti"
+}
+{
+  "ts": "2020-10-03T13:34:29.087414",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "tam vipolnenie komand na cmd"
+}
+{
+  "ts": "2020-10-03T13:34:34.504894",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "otklucheni adminom"
+}
+{
+  "ts": "2020-10-03T13:34:42.467548",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "na 3 vrode"
+}
+{
+  "ts": "2020-10-03T13:34:52.596589",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "2 ili 3 workgroup"
+}
+{
+  "ts": "2020-10-03T13:35:12.712052",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "1 povisil prava srazu"
+}
+{
+  "ts": "2020-10-03T13:35:15.912795",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "4 domena"
+}
+{
+  "ts": "2020-10-03T13:35:27.458068",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "otdal na prostavu rabotniku"
+}
+{
+  "ts": "2020-10-03T13:35:37.554908",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "v itoge po 2-3 serva na kagdom domene"
+}
+{
+  "ts": "2020-10-03T13:35:42.649375",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "koroche ne ochen"
+}
+{
+  "ts": "2020-10-03T13:35:46.571574",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "+"
+}
+{
+  "ts": "2020-10-03T13:35:52.732263",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "davay posmotrim chto u tebya givoe est"
+}
+{
+  "ts": "2020-10-03T13:36:04.643680",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "mb ktoto iz teh kto mne nugen"
+}
+{
+  "ts": "2020-10-03T13:36:05.231404",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "?"
+}
+{
+  "ts": "2020-10-03T13:38:23.733703",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "EC2AMAZ-J734FIE"
+}
+{
+  "ts": "2020-10-03T13:38:25.940160",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "INTUNETEST"
+}
+{
+  "ts": "2020-10-03T13:38:30.312025",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "CLAIBORNE-AM"
+}
+{
+  "ts": "2020-10-03T13:38:33.388995",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "PA-19"
+}
+{
+  "ts": "2020-10-03T13:38:35.953941",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "DESKTOP-CEQD30T"
+}
+{
+  "ts": "2020-10-03T13:38:38.634068",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "secws2"
+}
+{
+  "ts": "2020-10-03T13:38:41.708049",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "8010-4CG47X2"
+}
+{
+  "ts": "2020-10-03T13:38:57.316092",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "bro 5 min"
+}
+{
+  "ts": "2020-10-03T13:39:03.874506",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "zagrugau virtualki"
+}
+{
+  "ts": "2020-10-03T13:39:07.648028",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "gde cobalti"
+}
+{
+  "ts": "2020-10-03T13:39:10.061925",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "i info vse"
+}
+{
+  "ts": "2020-10-03T13:39:24.287269",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "tolko vot prosnulsya nedavno"
+}
+{
+  "ts": "2020-10-03T13:39:59.181868",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "EXEC-218,"
+}
+{
+  "ts": "2020-10-03T13:40:03.510667",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "DESKTOP-5FGTJC1"
+}
+{
+  "ts": "2020-10-03T13:40:24.097267",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "трой"
+}
+{
+  "ts": "2020-10-03T13:40:27.472140",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "а где ад_юсер"
+}
+{
+  "ts": "2020-10-03T13:40:29.190533",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "по тем что нужны"
+}
+{
+  "ts": "2020-10-03T13:40:58.536706",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "vzyal s soboy arhiv"
+}
+{
+  "ts": "2020-10-03T13:41:02.948746",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "я не могу дождаться ни от тебя ни от других команд их\nнеделями жду\nстранно, если вы там подняли права и уже вот лок\nпочему никто не дает ад_юсер\nлогика в этом есть?"
+}
+{
+  "ts": "2020-10-03T13:41:06.419708",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "это вопрос в общем"
+}
+{
+  "ts": "2020-10-03T13:41:08.321432",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "seychas budem delat tebe spisok"
+}
+{
+  "ts": "2020-10-03T13:41:10.369169",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "чем руководствуются хакеры"
+}
+{
+  "ts": "2020-10-03T13:41:21.888194",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "u menya baza vsya est"
+}
+{
+  "ts": "2020-10-03T13:41:22.840224",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": ")"
+}
+{
+  "ts": "2020-10-03T13:41:35.133584",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "esli tebe eto tak vagno mogu vse otdat"
+}
+{
+  "ts": "2020-10-03T13:41:45.488296",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "конечно важно)"
+}
+{
+  "ts": "2020-10-03T13:41:48.964146",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ты же там"
+}
+{
+  "ts": "2020-10-03T13:41:50.880381",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "лок поставишь"
+}
+{
+  "ts": "2020-10-03T13:42:02.028276",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "логично же?)"
+}
+{
+  "ts": "2020-10-03T13:42:04.424647",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "я не пойму правда"
+}
+{
+  "ts": "2020-10-03T13:42:05.508128",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "da"
+}
+{
+  "ts": "2020-10-03T13:42:06.795740",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "я спршаиваю не тебя"
+}
+{
+  "ts": "2020-10-03T13:42:09.086456",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "а в целом"
+}
+{
+  "ts": "2020-10-03T13:42:12.353145",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "6 команд"
+}
+{
+  "ts": "2020-10-03T13:42:16.258559",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "у всех одна и та же ситуация"
+}
+{
+  "ts": "2020-10-03T13:42:24.523163",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "ya zashel v set"
+}
+{
+  "ts": "2020-10-03T13:42:29.759235",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "zabral adfind"
+}
+{
+  "ts": "2020-10-03T13:42:37.861648",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "potom uge nachinau chtoto delat"
+}
+{
+  "ts": "2020-10-03T13:42:42.287323",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "vse kak ti skazal"
+}
+{
+  "ts": "2020-10-03T13:42:42.465923",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "вот"
+}
+{
+  "ts": "2020-10-03T13:42:43.381928",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "я знаю"
+}
+{
+  "ts": "2020-10-03T13:42:50.866964",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "спс"
+}
+{
+  "ts": "2020-10-03T13:42:55.420186",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "вопрос не к тебе"
+}
+{
+  "ts": "2020-10-03T13:42:56.813316",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "а в целом"
+}
+{
+  "ts": "2020-10-03T13:43:05.941758",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "что блядь сложного выгрузить ад_.сер и дать нам тчбы вернуть вам сетки"
+}
+{
+  "ts": "2020-10-03T13:43:09.643487",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "я не понимаю"
+}
+{
+  "ts": "2020-10-03T13:43:11.207102",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "не вас"
+}
+{
+  "ts": "2020-10-03T13:43:12.191958",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "а хакеров"
+}
+{
+  "ts": "2020-10-03T13:43:13.017405",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "в целом"
+}
+{
+  "ts": "2020-10-03T13:43:18.572463",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ну хуй с ними"
+}
+{
+  "ts": "2020-10-03T13:43:20.706839",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "))"
+}
+{
+  "ts": "2020-10-03T13:44:44.163483",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "seychas dostanu arhiv"
+}
+{
+  "ts": "2020-10-03T13:44:48.334734",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "i skinu tebe vse"
+}
+{
+  "ts": "2020-10-03T13:44:54.186893",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "все - ток то"
+}
+{
+  "ts": "2020-10-03T13:44:55.769138",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "krome 3 poslednih dney"
+}
+{
+  "ts": "2020-10-03T13:44:55.894642",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "что вернуть надо"
+}
+{
+  "ts": "2020-10-03T13:44:59.468234",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "oni na servake"
+}
+{
+  "ts": "2020-10-03T13:45:00.408622",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "где вы въебете их"
+}
+{
+  "ts": "2020-10-03T13:45:03.228423",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "за нас"
+}
+{
+  "ts": "2020-10-03T13:45:03.427201",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "popozge dam"
+}
+{
+  "ts": "2020-10-03T13:45:04.551370",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "за родину"
+}
+{
+  "ts": "2020-10-03T13:45:11.707796",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "за херасимы"
+}
+{
+  "ts": "2020-10-03T13:45:13.576954",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "за нагасаки"
+}
+{
+  "ts": "2020-10-03T13:45:23.439687",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "soglasen"
+}
+{
+  "ts": "2020-10-03T13:45:32.845496",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "софт"
+}
+{
+  "ts": "2020-10-03T13:45:33.603491",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ты"
+}
+{
+  "ts": "2020-10-03T13:45:34.565206",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "решил"
+}
+{
+  "ts": "2020-10-03T13:45:37.082244",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "не давать как я поянл"
+}
+{
+  "ts": "2020-10-03T13:45:40.440943",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "мы без софта вообщем"
+}
+{
+  "ts": "2020-10-03T13:45:43.772610",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "остались)"
+}
+{
+  "ts": "2020-10-03T13:45:46.733931",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "ta ya ne spal 3 sutik"
+}
+{
+  "ts": "2020-10-03T13:45:48.007751",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "кодеров дохуя"
+}
+{
+  "ts": "2020-10-03T13:45:49.145099",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "а толку 0"
+}
+{
+  "ts": "2020-10-03T13:46:01.280637",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "ti gruzish tak rabotoy chto nekogda pospat"
+}
+{
+  "ts": "2020-10-03T13:46:04.424028",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "давай высыпайся тогда"
+}
+{
+  "ts": "2020-10-03T13:46:09.645750",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "настроим в пн-вт"
+}
+{
+  "ts": "2020-10-03T13:46:11.973863",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "и в среду начнем работу"
+}
+{
+  "ts": "2020-10-03T13:46:20.730271",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "я????????"
+}
+{
+  "ts": "2020-10-03T13:46:22.487714",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "это гурзишь?"
+}
+{
+  "ts": "2020-10-03T13:46:25.414255",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "ta ne davay poka ya svoboden"
+}
+{
+  "ts": "2020-10-03T13:46:26.267660",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "это хуйня полная"
+}
+{
+  "ts": "2020-10-03T13:46:28.842950",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "sdelaem soft"
+}
+{
+  "ts": "2020-10-03T13:46:29.397354",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "по 200-300 сеток в день"
+}
+{
+  "ts": "2020-10-03T13:46:31.579365",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "от 80 мл"
+}
+{
+  "ts": "2020-10-03T13:46:34.277368",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "i pobistree v rabotu"
+}
+{
+  "ts": "2020-10-03T13:46:35.775719",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "можно делать"
+}
+{
+  "ts": "2020-10-03T13:46:42.883977",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "грузишь блядь"
+}
+{
+  "ts": "2020-10-03T13:46:43.721029",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "это хуета"
+}
+{
+  "ts": "2020-10-03T13:46:45.795534",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "а не погрузы"
+}
+{
+  "ts": "2020-10-03T13:46:54.154983",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "я ебал такое кол-во"
+}
+{
+  "ts": "2020-10-03T13:46:56.849242",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "по 20-30 ботов"
+}
+{
+  "ts": "2020-10-03T13:46:59.977179",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "vot davay tebe sdelaem soft pod spam"
+}
+{
+  "ts": "2020-10-03T13:47:03.397288",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "100-200 вот это да норм в день"
+}
+{
+  "ts": "2020-10-03T13:47:05.829193",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "i poleteli s ponedelnika"
+}
+{
+  "ts": "2020-10-03T13:47:18.069761",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "nachinat v sredu a zakanchivat v pyatnicu"
+}
+{
+  "ts": "2020-10-03T13:47:19.932851",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "у нас не спам"
+}
+{
+  "ts": "2020-10-03T13:47:22.671301",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "я и спамеров ебал"
+}
+{
+  "ts": "2020-10-03T13:47:24.605850",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "eto ne pravilno"
+}
+{
+  "ts": "2020-10-03T13:47:26.284423",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "с их загрузками"
+}
+{
+  "ts": "2020-10-03T13:47:38.404706",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "почему"
+}
+{
+  "ts": "2020-10-03T13:47:45.216608",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "да мы бы в пн начали))) софта нет))))"
+}
+{
+  "ts": "2020-10-03T13:47:50.917208",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "vot"
+}
+{
+  "ts": "2020-10-03T13:47:56.758663",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "poka ya svoboden seychas"
+}
+{
+  "ts": "2020-10-03T13:48:05.853099",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "sdelaem tebe soft pod zagruzki"
+}
+{
+  "ts": "2020-10-03T13:48:08.481641",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "i poleteli"
+}
+{
+  "ts": "2020-10-03T13:48:26.301832",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "u tebya budet odin soft"
+}
+{
+  "ts": "2020-10-03T13:48:29.106075",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "leginkiy"
+}
+{
+  "ts": "2020-10-03T13:48:35.191236",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "я вчера спрашиваб команду\nкого ебать\nофисы мне говорят\nшеф - ебите кодеров\nв пн 0, во вторник 5-10 и крипты и софт весь сдох\nебите их\nвыебал\nтолку 0\nтак же все и осталось"
+}
+{
+  "ts": "2020-10-03T13:48:35.612827",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "chtisto pod perekidku"
+}
+{
+  "ts": "2020-10-03T13:48:44.148340",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "a sebe ya cobalt pochischu"
+}
+{
+  "ts": "2020-10-03T13:48:52.952747",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ну давай)"
+}
+{
+  "ts": "2020-10-03T13:48:55.942861",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "я что против"
+}
+{
+  "ts": "2020-10-03T13:48:59.239091",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "ok"
+}
+{
+  "ts": "2020-10-03T13:49:04.045596",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "togda ya pohavat"
+}
+{
+  "ts": "2020-10-03T13:49:06.563951",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "i k delu"
+}
+{
+  "ts": "2020-10-03T13:49:10.572546",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "не будет софта - не будет загрузок\nтогда ждем софт твой"
+}
+{
+  "ts": "2020-10-03T13:49:14.091809",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "+"
+}
+{
+  "ts": "2020-10-03T13:49:15.243899",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "ili ti segodnya zanyat?"
+}
+{
+  "ts": "2020-10-03T13:49:18.998965",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "я?)"
+}
+{
+  "ts": "2020-10-03T13:49:21.537460",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "я свободен"
+}
+{
+  "ts": "2020-10-03T13:49:21.779899",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "da"
+}
+{
+  "ts": "2020-10-03T13:49:23.095900",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": ")"
+}
+{
+  "ts": "2020-10-03T13:49:23.820998",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "ok"
+}
+{
+  "ts": "2020-10-03T13:49:24.283347",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "как Гагарин и Титов"
+}
+{
+  "ts": "2020-10-03T13:49:27.263767",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "я всегда готов"
+}
+{
+  "ts": "2020-10-03T13:49:35.153985",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "togda segodnya gotovimsya"
+}
+{
+  "ts": "2020-10-03T13:49:37.689802",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "все что касается выебать сша и командной игры)"
+}
+{
+  "ts": "2020-10-03T13:49:39.773477",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "zavtra otsipaemsya"
+}
+{
+  "ts": "2020-10-03T13:49:44.731123",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "v ponedelnik v boy"
+}
+{
+  "ts": "2020-10-03T13:49:47.009210",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "ok?"
+}
+{
+  "ts": "2020-10-03T13:49:51.807712",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "типо сегодня софт готов будет?)"
+}
+{
+  "ts": "2020-10-03T13:49:54.724602",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "da"
+}
+{
+  "ts": "2020-10-03T13:49:57.918157",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "хм"
+}
+{
+  "ts": "2020-10-03T13:49:58.890906",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ну ок)"
+}
+{
+  "ts": "2020-10-03T13:50:06.889919",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "от меня то что)"
+}
+{
+  "ts": "2020-10-03T13:50:07.789589",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "нужно"
+}
+{
+  "ts": "2020-10-03T13:50:09.005795",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "vse poshel havat"
+}
+{
+  "ts": "2020-10-03T13:50:19.620707",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "but vozle menya"
+}
+{
+  "ts": "2020-10-03T13:50:25.906490",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "chtobi ponyal kak on rabotaet"
+}
+{
+  "ts": "2020-10-03T13:50:26.530725",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "у меня 5 тестировщиков, 40 серверов для тестирования, \nони хоть к ночи будут в офисе и тестировать все)"
+}
+{
+  "ts": "2020-10-03T13:50:29.802631",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "ya vse nastrou"
+}
+{
+  "ts": "2020-10-03T13:50:33.808126",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "понял"
+}
+{
+  "ts": "2020-10-03T13:50:39.167062",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "давай пробовать"
+}
+{
+  "ts": "2020-10-03T13:50:57.306879",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "приятного"
+}
+{
+  "ts": "2020-10-03T13:51:07.555717",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "sps"
+}
+{
+  "ts": "2020-10-03T14:33:49.677894",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "я тут если что)"
+}
+{
+  "ts": "2020-10-03T14:34:08.987231",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "ok"
+}
+{
+  "ts": "2020-10-03T14:34:14.346697",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "ya uge servaki pokupau"
+}
+{
+  "ts": "2020-10-03T14:34:25.443682",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "могу тебе дать много их\nпокупали на 1к"
+}
+{
+  "ts": "2020-10-03T14:34:26.791274",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "тебе под кобы"
+}
+{
+  "ts": "2020-10-03T14:34:28.568565",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "и кобы туда ставили"
+}
+{
+  "ts": "2020-10-03T14:34:50.199420",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "davay"
+}
+{
+  "ts": "2020-10-03T14:34:56.584337",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "davay ubuntu 1"
+}
+{
+  "ts": "2020-10-03T14:34:59.377034",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "i debian 1"
+}
+{
+  "ts": "2020-10-03T14:35:07.834768",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "hz kuda lutshe stanet"
+}
+{
+  "ts": "2020-10-03T14:39:08.975070",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "IP: 107.173.58.186\nUser: root\nPass: l29qOHG5WG5Lwazv40\n\nIP: 96.9.225.147\nUser: root\nPass: Ni9UFltn4t5M480EmC\n\nIP: 96.9.225.146\nUser: root\nPass: fA17i1O2S5eysJB4Gs\n\nIP: 64.44.131.106\nUser: root\nPass: CnS5ieO47F5MC61rka\n\nIP: 64.44.131.107\nUser: root\nPass: krKoB3O078F43dUzMd\n\nCOBA\n\nPort: 12072\nPass: XBfQ23R2ra9rCZWK"
+}
+{
+  "ts": "2020-10-03T14:39:11.143115",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "это все вам покпалось"
+}
+{
+  "ts": "2020-10-03T14:39:12.448815",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "когда сапы"
+}
+{
+  "ts": "2020-10-03T14:39:13.545512",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "учитилсь"
+}
+{
+  "ts": "2020-10-03T14:39:14.363322",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ставить"
+}
+{
+  "ts": "2020-10-03T14:39:15.259073",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "кобы"
+}
+{
+  "ts": "2020-10-03T14:39:18.255887",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "но так и не доделали"
+}
+{
+  "ts": "2020-10-03T14:39:22.474790",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "вроде как вам стало не актуально"
+}
+{
+  "ts": "2020-10-03T14:39:26.562581",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "сюда кобы ставились"
+}
+{
+  "ts": "2020-10-03T14:39:28.742098",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "вроде как джаеж поставили"
+}
+{
+  "ts": "2020-10-03T14:39:31.393178",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "это серваки"
+}
+{
+  "ts": "2020-10-03T14:39:34.469891",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "по 150-200 баксов"
+}
+{
+  "ts": "2020-10-03T14:39:34.943064",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "ok"
+}
+{
+  "ts": "2020-10-03T14:39:36.848370",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "sps"
+}
+{
+  "ts": "2020-10-03T14:39:38.149422",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "то что нинзя просил"
+}
+{
+  "ts": "2020-10-03T14:39:40.588120",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "rozberus"
+}
+{
+  "ts": "2020-10-03T14:39:41.129079",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "они ваши если что"
+}
+{
+  "ts": "2020-10-03T14:47:50.830774",
+  "from": "professor@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "чуть позже мегу скину"
+}
+{
+  "ts": "2020-10-03T15:09:08.434959",
+  "from": "poll@q3mcco35auwcstmt.onion",
+  "to": "tnt@q3mcco35auwcstmt.onion",
+  "body": "bro ny eto ne serezno... ti ehe govorish tebe kidat)"
+}
+{
+  "ts": "2020-10-03T15:25:17.315015",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "professor@q3mcco35auwcstmt.onion",
+  "body": "суки ебаные"
+}
+{
+  "ts": "2020-10-03T15:25:19.066104",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "professor@q3mcco35auwcstmt.onion",
+  "body": "ебать их проф"
+}
+{
+  "ts": "2020-10-03T15:25:22.225035",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "professor@q3mcco35auwcstmt.onion",
+  "body": "ебаааааааааааааать"
+}
+{
+  "ts": "2020-10-03T15:55:11.118790",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ты как"
+}
+{
+  "ts": "2020-10-03T15:55:11.672800",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "трой"
+}
+{
+  "ts": "2020-10-03T15:55:13.828576",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "жив там?"
+}
+{
+  "ts": "2020-10-03T15:55:30.108181",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "da"
+}
+{
+  "ts": "2020-10-03T15:55:37.847109",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "чем помочь"
+}
+{
+  "ts": "2020-10-03T15:55:39.444018",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "что купить"
+}
+{
+  "ts": "2020-10-03T15:55:42.604862",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "seychas odnu setku pomogu kovirnut"
+}
+{
+  "ts": "2020-10-03T15:55:45.763621",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "кого купить"
+}
+{
+  "ts": "2020-10-03T15:55:46.487492",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "pust stavyat"
+}
+{
+  "ts": "2020-10-03T15:55:50.079730",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ок"
+}
+{
+  "ts": "2020-10-03T15:55:50.546997",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "+"
+}
+{
+  "ts": "2020-10-03T15:55:52.753634",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "нашу?"
+}
+{
+  "ts": "2020-10-03T15:55:59.273128",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "i nachnu servai stavit"
+}
+{
+  "ts": "2020-10-03T15:56:03.842617",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "a chu ge)"
+}
+{
+  "ts": "2020-10-03T15:56:06.530560",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "+"
+}
+{
+  "ts": "2020-10-03T15:56:09.234495",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "drugih u menyya netu"
+}
+{
+  "ts": "2020-10-03T15:56:13.707599",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "da i ne nugnu"
+}
+{
+  "ts": "2020-10-03T15:56:15.764199",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "да +"
+}
+{
+  "ts": "2020-10-03T15:56:20.351477",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "мы так и решили с иглой"
+}
+{
+  "ts": "2020-10-03T15:56:21.951385",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "tyt ohuennie targeti"
+}
+{
+  "ts": "2020-10-03T15:56:24.519454",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "я вот и удивился"
+}
+{
+  "ts": "2020-10-03T15:56:29.382001",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ну епта"
+}
+{
+  "ts": "2020-10-03T15:56:31.663543",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "охуенные таргеты"
+}
+{
+  "ts": "2020-10-03T15:56:34.668741",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "охуенные хакеры"
+}
+{
+  "ts": "2020-10-03T15:56:36.645637",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "что еще блядь надо"
+}
+{
+  "ts": "2020-10-03T15:56:42.851425",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "100%"
+}
+{
+  "ts": "2020-10-03T15:56:44.312083",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": ")"
+}
+{
+  "ts": "2020-10-03T16:45:43.623101",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "трой"
+}
+{
+  "ts": "2020-10-03T16:45:46.987681",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "нужно ад_юсер"
+}
+{
+  "ts": "2020-10-03T16:45:47.810996",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "от"
+}
+{
+  "ts": "2020-10-03T16:45:48.946426",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ухс"
+}
+{
+  "ts": "2020-10-03T16:45:50.311562",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "крупняка"
+}
+{
+  "ts": "2020-10-03T16:45:55.972690",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "и от банка"
+}
+{
+  "ts": "2020-10-03T16:45:58.327634",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "будем звонить им"
+}
+{
+  "ts": "2020-10-03T16:46:00.411759",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "и ебать их сфо"
+}
+{
+  "ts": "2020-10-03T16:46:03.874396",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "чтобы принимали решение"
+}
+{
+  "ts": "2020-10-03T16:46:07.098624",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "по выплате"
+}
+{
+  "ts": "2020-10-03T16:46:11.634281",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "seychas vse zakinu"
+}
+{
+  "ts": "2020-10-03T16:46:12.922694",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "и всех ей верхушке"
+}
+{
+  "ts": "2020-10-03T16:46:27.244602",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "a tam posmotrish"
+}
+{
+  "ts": "2020-10-03T16:46:37.688723",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "krome posl 3 dney"
+}
+{
+  "ts": "2020-10-03T16:46:41.459372",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "oni na servake"
+}
+{
+  "ts": "2020-10-03T16:46:44.568871",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "да да"
+}
+{
+  "ts": "2020-10-03T16:46:47.907211",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "а то"
+}
+{
+  "ts": "2020-10-03T16:46:49.155025",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "dostup ostalsya v ofice"
+}
+{
+  "ts": "2020-10-03T16:46:51.274637",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "они одни с 24 думюат"
+}
+{
+  "ts": "2020-10-03T16:46:54.359189",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "другие уже неделю"
+}
+{
+  "ts": "2020-10-03T16:46:55.509983",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "не порядок"
+}
+{
+  "ts": "2020-10-03T16:47:02.683821",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "))"
+}
+{
+  "ts": "2020-10-03T16:47:04.578329",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ну можно завтра"
+}
+{
+  "ts": "2020-10-03T16:47:10.869498",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "надо со всей верхушкой говорить"
+}
+{
+  "ts": "2020-10-03T16:47:13.794372",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "а то до нас дошло"
+}
+{
+  "ts": "2020-10-03T16:47:14.519515",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "что в хус"
+}
+{
+  "ts": "2020-10-03T16:47:16.534650",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ухс"
+}
+{
+  "ts": "2020-10-03T16:47:18.885028",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "клиниках"
+}
+{
+  "ts": "2020-10-03T16:47:20.299293",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "там все ок"
+}
+{
+  "ts": "2020-10-03T16:47:24.103444",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "типо все рады счастливы"
+}
+{
+  "ts": "2020-10-03T16:47:25.203528",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "все лежит"
+}
+{
+  "ts": "2020-10-03T16:47:27.823319",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "но всем гвоорят все збс"
+}
+{
+  "ts": "2020-10-03T16:47:31.503885",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "данные не утекли"
+}
+{
+  "ts": "2020-10-03T16:47:32.557851",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "все хорошо"
+}
+{
+  "ts": "2020-10-03T16:47:42.909239",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "улыбаемся и общаемся через бумаги и голубей"
+}
+{
+  "ts": "2020-10-03T16:47:48.333827",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "вот щас поможем им голвоу включить"
+}
+{
+  "ts": "2020-10-03T16:48:18.692118",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "это дело в менеджменте"
+}
+{
+  "ts": "2020-10-03T16:48:20.192860",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "походу до них"
+}
+{
+  "ts": "2020-10-03T16:48:22.810437",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "не донесли понимание"
+}
+{
+  "ts": "2020-10-03T16:48:24.275800",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "что им пизда"
+}
+{
+  "ts": "2020-10-03T16:51:18.413256",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "asd324fdsDSF"
+}
+{
+  "ts": "2020-10-03T16:55:46.323907",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "Download: https://qaz.im/load/Sa2fQn/y5d2H3\nDelete: https://qaz.im/index.php?a=delete&q=1414499568"
+}
+{
+  "ts": "2020-10-03T16:55:50.024703",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "1 chast"
+}
+{
+  "ts": "2020-10-03T16:55:59.821768",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "seychas ostalmie pakuut"
+}
+{
+  "ts": "2020-10-03T16:56:06.966498",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "skinem vse chto est"
+}
+{
+  "ts": "2020-10-03T16:56:15.576544",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ок найдем"
+}
+{
+  "ts": "2020-10-03T16:56:17.305425",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "пизда им"
+}
+{
+  "ts": "2020-10-03T16:56:19.237280",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "этому банку сша"
+}
+{
+  "ts": "2020-10-03T16:56:21.289749",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "и ухс"
+}
+{
+  "ts": "2020-10-03T16:56:23.217152",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": ")))"
+}
+{
+  "ts": "2020-10-03T16:56:26.895438",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "не"
+}
+{
+  "ts": "2020-10-03T16:56:28.727451",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "не лок опять"
+}
+{
+  "ts": "2020-10-03T16:56:29.590443",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "нахуй"
+}
+{
+  "ts": "2020-10-03T16:56:31.438970",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "а выплата"
+}
+{
+  "ts": "2020-10-03T16:56:33.502292",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "а не выплатят"
+}
+{
+  "ts": "2020-10-03T16:56:34.050721",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ок"
+}
+{
+  "ts": "2020-10-03T16:56:35.834020",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "въебете еще раз"
+}
+{
+  "ts": "2020-10-03T16:56:38.677523",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "и так пдо посинения"
+}
+{
+  "ts": "2020-10-03T16:56:39.864054",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "пока не скажту"
+}
+{
+  "ts": "2020-10-03T16:56:41.727704",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "i dam spisok kogo vernut"
+}
+{
+  "ts": "2020-10-03T16:56:43.192569",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": ")))"
+}
+{
+  "ts": "2020-10-03T16:56:46.310721",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "ponyal"
+}
+{
+  "ts": "2020-10-03T16:56:50.893429",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "\"СИР ПЛЗ ТЕЙК МОНЕЙ СИР\""
+}
+{
+  "ts": "2020-10-03T16:57:02.421088",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "😊"
+}
+{
+  "ts": "2020-10-03T17:06:47.795178",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "I’m a contingent employee at a UHS facility and I’ve been told basically nothing. I came into work Sunday and they were down but no one knew why. I came in today and found out they’re still down but I’ve had no communication from management. Everything I’ve heard I’ve heard from other employees."
+}
+{
+  "ts": "2020-10-03T17:06:49.636574",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ххахахахаа"
+}
+{
+  "ts": "2020-10-03T17:06:50.764725",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ну окей"
+}
+{
+  "ts": "2020-10-03T17:06:57.319349",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "в пн кажды сотрудник будет знать что им пизда"
+}
+{
+  "ts": "2020-10-03T17:07:04.380513",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "раз у них такие спокойные"
+}
+{
+  "ts": "2020-10-03T17:07:05.500817",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "менеджеры"
+}
+{
+  "ts": "2020-10-03T17:07:08.924080",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ходят"
+}
+{
+  "ts": "2020-10-03T17:07:25.951383",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "😊"
+}
+{
+  "ts": "2020-10-03T17:07:38.301471",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": " It’s been chaos in intake and on the units... admission wait times have been about 5 hours. Only word I heard from “leadership” is how UHS is a wonderful company and no patient or employee information was compromised"
+}
+{
+  "ts": "2020-10-03T17:07:39.334411",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "суки"
+}
+{
+  "ts": "2020-10-03T17:07:54.969642",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "окей\nбудет им еще один черный понедельник"
+}
+{
+  "ts": "2020-10-03T17:13:10.100685",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "sdfg45tgdghfgh"
+}
+{
+  "ts": "2020-10-03T17:15:50.422861",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "Download: https://qaz.im/load/KSn5F4/RzFknH\nDelete: https://qaz.im/index.php?a=delete&q=1406989722"
+}
+{
+  "ts": "2020-10-03T17:50:27.995230",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "gdu ostalnoe"
+}
+{
+  "ts": "2020-10-03T17:50:31.890606",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "skinu skoro"
+}
+{
+  "ts": "2020-10-03T17:55:01.250063",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "++++++++++++++++"
+}
+{
+  "ts": "2020-10-03T17:55:03.544203",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "пизда им"
+}
+{
+  "ts": "2020-10-03T17:55:05.982994",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "пизда"
+}
+{
+  "ts": "2020-10-03T17:55:08.873852",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "будем лочить"
+}
+{
+  "ts": "2020-10-03T17:55:10.461201",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "лочить"
+}
+{
+  "ts": "2020-10-03T17:55:13.534419",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "звонить"
+}
+{
+  "ts": "2020-10-03T17:55:15.732298",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "они будут кричать"
+}
+{
+  "ts": "2020-10-03T17:55:16.310386",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "сир"
+}
+{
+  "ts": "2020-10-03T17:55:17.387794",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "сэр"
+}
+{
+  "ts": "2020-10-03T17:55:18.540478",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "бро"
+}
+{
+  "ts": "2020-10-03T17:55:21.944133",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "диар"
+}
+{
+  "ts": "2020-10-03T17:55:23.052038",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "стоп"
+}
+{
+  "ts": "2020-10-03T17:55:24.309893",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "плз стоп"
+}
+{
+  "ts": "2020-10-03T17:55:26.807216",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ви кант"
+}
+{
+  "ts": "2020-10-03T17:55:33.803971",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "кант ду энисинк"
+}
+{
+  "ts": "2020-10-03T17:55:37.067829",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "надо"
+}
+{
+  "ts": "2020-10-03T17:55:41.000663",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "залочим и их ебаных голубей"
+}
+{
+  "ts": "2020-10-03T17:55:44.983287",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "которые щас им почту носят"
+}
+{
+  "ts": "2020-10-03T17:55:48.905293",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "вместо имейлов"
+}
+{
+  "ts": "2020-10-03T17:55:49.013664",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "https://github.com/zerosum0x0/koadic"
+}
+{
+  "ts": "2020-10-03T17:55:53.026196",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "тебе же похуй что там лочить"
+}
+{
+  "ts": "2020-10-03T17:55:58.411501",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "голубятни"
+}
+{
+  "ts": "2020-10-03T17:56:00.657874",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "или банки"
+}
+{
+  "ts": "2020-10-03T17:56:00.953752",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "vot etu hren mi tebe postavim"
+}
+{
+  "ts": "2020-10-03T17:56:12.853303",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "voobsche pofig"
+}
+{
+  "ts": "2020-10-03T17:56:23.697865",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "sokro zakanchuu s setkoy i stavim"
+}
+{
+  "ts": "2020-10-03T17:56:34.545180",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "+++"
+}
+{
+  "ts": "2020-10-03T17:56:36.855577",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "он же в фомрате"
+}
+{
+  "ts": "2020-10-03T17:56:37.645954",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ехе"
+}
+{
+  "ts": "2020-10-03T17:56:39.339496",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "билд"
+}
+{
+  "ts": "2020-10-03T17:56:41.141314",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "соберется"
+}
+{
+  "ts": "2020-10-03T17:56:41.833684",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "если да"
+}
+{
+  "ts": "2020-10-03T17:56:42.933606",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "то збс"
+}
+{
+  "ts": "2020-10-03T17:56:48.619124",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "я прямо щас вызвоню криптера"
+}
+{
+  "ts": "2020-10-03T17:56:49.323146",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "tam raznie est"
+}
+{
+  "ts": "2020-10-03T17:56:53.224851",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "no"
+}
+{
+  "ts": "2020-10-03T17:57:00.987887",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "tam est format"
+}
+{
+  "ts": "2020-10-03T17:57:02.064093",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": ",js"
+}
+{
+  "ts": "2020-10-03T17:57:09.348636",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "ego ya sam kriptonut mogu"
+}
+{
+  "ts": "2020-10-03T17:57:13.179317",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "не не"
+}
+{
+  "ts": "2020-10-03T17:57:14.292024",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "джс"
+}
+{
+  "ts": "2020-10-03T17:57:15.328957",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "не подходит"
+}
+{
+  "ts": "2020-10-03T17:57:16.317442",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ехе ток"
+}
+{
+  "ts": "2020-10-03T17:57:19.446785",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "i on nichem palitssy ne budet"
+}
+{
+  "ts": "2020-10-03T17:57:31.129527",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "nu sdelaem .exe"
+}
+{
+  "ts": "2020-10-03T17:57:46.575404",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "no za palevnost .exe eto vopros"
+}
+{
+  "ts": "2020-10-03T17:57:52.629395",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "ego ya kriptovat ne umeu"
+}
+{
+  "ts": "2020-10-03T17:58:03.726308",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "lan pognal ya dalshe rozberat potom otpishus"
+}
+{
+  "ts": "2020-10-03T17:58:15.678413",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "+"
+}
+{
+  "ts": "2020-10-03T17:58:20.309189",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "щас вызвоню деплоя"
+}
+{
+  "ts": "2020-10-03T17:58:22.873695",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "он приедет"
+}
+{
+  "ts": "2020-10-03T17:58:34.226771",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "nene ne seychas"
+}
+{
+  "ts": "2020-10-03T17:58:38.100211",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "seychas ne nugno"
+}
+{
+  "ts": "2020-10-03T18:11:36.456609",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "мы с тобй сделаем его\nи пряомо на живых ботов погруим\nи посмотрим как что там стучит пашет\nесли ок все - крипт и вбой"
+}
+{
+  "ts": "2020-10-03T18:18:15.408886",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "ok"
+}
+{
+  "ts": "2020-10-03T18:18:28.209693",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "uge pochti dobralsya do adminov"
+}
+{
+  "ts": "2020-10-03T18:18:35.297403",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ну ебать ты лучший"
+}
+{
+  "ts": "2020-10-03T18:18:36.417235",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "трой"
+}
+{
+  "ts": "2020-10-03T18:18:39.079496",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "что я могу сказтаь"
+}
+{
+  "ts": "2020-10-03T18:18:42.088204",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "я уже это сказал"
+}
+{
+  "ts": "2020-10-03T18:18:44.852248",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "не заставляй меня"
+}
+{
+  "ts": "2020-10-03T18:18:45.945013",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "повторяться"
+}
+{
+  "ts": "2020-10-03T18:18:48.607836",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "nashel dvoih no oni suka passi smenili"
+}
+{
+  "ts": "2020-10-03T18:18:49.891255",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "))"
+}
+{
+  "ts": "2020-10-03T18:18:49.941342",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "я вообще обычно молчалив"
+}
+{
+  "ts": "2020-10-03T19:11:37.067830",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "CgbNsF3oKb64ZyUJEaO42KC7UCpdwoSh \n\nPart1: \nDownload: https://qaz.im/load/KyyRaG/T5AYNR \nDelete: https://qaz.im/index.php?a=delete&q=544879118 \n\nPart2: \nDownload: https://qaz.im/load/8RAnzf/8bEAED \nDelete: https://qaz.im/index.php?a=delete&q=1882309374 \n\nPart3: \nDownload: https://qaz.im/load/ta88hr/8eZdYH \nDelete: https://qaz.im/index.php?a=delete&q=786225442"
+}
+{
+  "ts": "2020-10-03T19:11:41.725716",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "esche adfind"
+}
+{
+  "ts": "2020-10-03T19:11:49.335627",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "mogut povtoryatsya"
+}
+{
+  "ts": "2020-10-03T19:19:14.001241",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ага"
+}
+{
+  "ts": "2020-10-03T19:19:16.135053",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "все передал"
+}
+{
+  "ts": "2020-10-03T19:19:17.733789",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "в офис"
+}
+{
+  "ts": "2020-10-03T19:19:20.805356",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "щас будут разбирать"
+}
+{
+  "ts": "2020-10-03T19:19:21.716193",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "с утра"
+}
+{
+  "ts": "2020-10-03T19:19:26.980922",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "не жалеете вы их"
+}
+{
+  "ts": "2020-10-03T19:19:30.532692",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "дали бы людям выходной"
+}
+{
+  "ts": "2020-10-03T19:19:31.624283",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "но нет"
+}
+{
+  "ts": "2020-10-03T19:19:41.749367",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "u nas netu vihodnih)"
+}
+{
+  "ts": "2020-10-03T19:19:45.135350",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "vse ebashat"
+}
+{
+  "ts": "2020-10-03T19:19:45.830417",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "нет"
+}
+{
+  "ts": "2020-10-03T19:19:51.803496",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "uznali chto ya prosnulsya"
+}
+{
+  "ts": "2020-10-03T19:19:59.561891",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "esche 3 setki poprosili pomoch)"
+}
+{
+  "ts": "2020-10-03T19:20:01.439161",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "и пошли"
+}
+{
+  "ts": "2020-10-03T19:20:02.591514",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "спать?"
+}
+{
+  "ts": "2020-10-03T19:20:05.591225",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "аа"
+}
+{
+  "ts": "2020-10-03T19:20:07.991650",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ну блядь"
+}
+{
+  "ts": "2020-10-03T19:20:11.792763",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "круто"
+}
+{
+  "ts": "2020-10-03T19:20:16.628792",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "😊"
+}
+{
+  "ts": "2020-10-03T19:21:10.634795",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "davay na utro otlogim soft a seychas zaymus setkami"
+}
+{
+  "ts": "2020-10-03T19:21:17.116569",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "pust s utra stavyat"
+}
+{
+  "ts": "2020-10-03T19:21:17.420577",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "окей"
+}
+{
+  "ts": "2020-10-03T19:21:21.916917",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "да"
+}
+{
+  "ts": "2020-10-03T19:21:27.311917",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "a mi kak raz v eto vremya postavim soft"
+}
+{
+  "ts": "2020-10-03T19:21:30.457382",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ну я это"
+}
+{
+  "ts": "2020-10-03T19:21:32.581058",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "все дела отложил"
+}
+{
+  "ts": "2020-10-03T19:21:34.871054",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "оффлайн"
+}
+{
+  "ts": "2020-10-03T19:21:35.987287",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "на сегдня"
+}
+{
+  "ts": "2020-10-03T19:21:38.754494",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "так что если что я тут"
+}
+{
+  "ts": "2020-10-03T19:21:39.581562",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "и завтра"
+}
+{
+  "ts": "2020-10-03T19:21:41.815556",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "тоже все перенес"
+}
+{
+  "ts": "2020-10-03T19:21:46.982828",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "под софт там что будем делать"
+}
+{
+  "ts": "2020-10-03T19:21:48.152654",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "поэтому"
+}
+{
+  "ts": "2020-10-03T19:21:49.714712",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "тут если тчо"
+}
+{
+  "ts": "2020-10-03T19:21:56.168649",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "ну макс в другую машиню на час отойду"
+}
+{
+  "ts": "2020-10-03T19:22:00.470220",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "башню"
+}
+{
+  "ts": "2020-10-03T19:22:02.112476",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "и обратно"
+}
+{
+  "ts": "2020-10-03T19:22:02.654899",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "ok"
+}
+{
+  "ts": "2020-10-03T19:22:07.524623",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "na svyazi"
+}
+{
+  "ts": "2020-10-03T20:11:14.093474",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "https://www.uhsinc.com/statement-from-universal-health-services/"
+}
+{
+  "ts": "2020-10-03T20:11:19.061041",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "а они востановились походу"
+}
+{
+  "ts": "2020-10-03T20:12:24.246288",
+  "from": "troy@q3mcco35auwcstmt.onion",
+  "to": "target@q3mcco35auwcstmt.onion",
+  "body": "pizdyat"
+}
+{
+  "ts": "2020-10-03T20:12:33.247735",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "елси точно пиздят"
+}
+{
+  "ts": "2020-10-03T20:12:34.542164",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "то ок"
+}
+{
+  "ts": "2020-10-03T20:12:36.602401",
+  "from": "target@q3mcco35auwcstmt.onion",
+  "to": "troy@q3mcco35auwcstmt.onion",
+  "body": "с пн дожимаем их"
+}

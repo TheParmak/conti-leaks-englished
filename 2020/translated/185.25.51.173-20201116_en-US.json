@@ -1,0 +1,264 @@
+{
+  { "ts": "2020-11-16T06:21:54.899352",
+  { "from": "stakan@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "hello , I'm about the salary"
+}
+{
+  { "ts": "2020-11-16T07:11:56.108686",
+  { "from": "green@q3mcco35auwcstmt.onion",
+  { "to": "ghost@q3mcco35auwcstmt.onion",
+  { "body": "hello\n\nhttps://qaz.im/zaq/EH2YFG5z#YKrHb6Hf"
+}
+{
+  { "ts": "2020-11-16T08:54:28.029216",
+  { "from": "ghost@q3mcco35auwcstmt.onion",
+  { "to": "defender@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-11-16T08:54:29.056906",
+  { "from": "ghost@q3mcco35auwcstmt.onion",
+  { "to": "defender@q3mcco35auwcstmt.onion",
+  }, "body": "[18:10:42] <defender> I'll throw in a little later"
+}
+{
+  { "ts": "2020-11-16T09:32:27.978875",
+  { "from": "hlor@q3mcco35auwcstmt.onion",
+  { "to": "hlor@q3mcco35auwcstmt.onion",
+  { "body": "sshtp"
+}
+{
+  { "ts": "2020-11-16T09:40:25.350909",
+  { "from": "casper@q3mcco35auwcstmt.onion",
+  { "to": "viper@q3mcco35auwcstmt.onion",
+  { "body": "hello."
+}
+{
+  { "ts": "2020-11-16T09:47:12.037114",
+  { "from": "viper@q3mcco35auwcstmt.onion",
+  { "to": "casper@q3mcco35auwcstmt.onion",
+  { "body": "hello!"
+}
+{
+  { "ts": "2020-11-16T09:47:51.831492",
+  { "from": "viper@q3mcco35auwcstmt.onion",
+  { "to": "casper@q3mcco35auwcstmt.onion",
+  { "body": "give me your card number for TK payment"
+}
+{
+  { "ts": "2020-11-16T09:48:38.634962",
+  { "from": "casper@q3mcco35auwcstmt.onion",
+  { "to": "viper@q3mcco35auwcstmt.onion",
+  { "body": "5336 6902 8679 5127"
+}
+{
+  { "ts": "2020-11-16T09:48:55.985059",
+  { "from": "viper@q3mcco35auwcstmt.onion",
+  { "to": "casper@q3mcco35auwcstmt.onion",
+  { "body": "which bank?"
+}
+{
+  { "ts": "2020-11-16T09:49:01.006417",
+  { "from": "casper@q3mcco35auwcstmt.onion",
+  { "to": "viper@q3mcco35auwcstmt.onion",
+  { "body": "sber"
+}
+{
+  { "ts": "2020-11-16T09:56:48.521931",
+  { "from": "viper@q3mcco35auwcstmt.onion",
+  { "to": "casper@q3mcco35auwcstmt.onion",
+  { "body": "within 30 minutes the money will arrive"
+}
+{
+  { "ts": "2020-11-16T10:58:47.966001",
+  { "from": "dick@q3mcco35auwcstmt.onion",
+  { "to": "tiktak@q3mcco35auwcstmt.onion",
+  { "body": "otr?"
+}
+{
+  { "ts": "2020-11-16T11:50:10.699211",
+  { "from": "frog@q3mcco35auwcstmt.onion",
+  { "to": "buza@q3mcco35auwcstmt.onion",
+  "body": "Good afternoon!\nKaktus told me that the contest is ongoing, you can submit ideas.\nI don't know if this is necessary or not, I've come up with several methods while I've been working.\n1. A method for detecting Avast sandboxes, both for the 64-bit and 32-bit versions.\n2. With mitigations you can avoid introducing dlls that load AV into the process and hence setting traps. Checked with the same Avast (it injects aswhook.dll). The technique works on Windows 10, but on Windows 7 it doesn't work. I have made it as a separate module.\n3. I simplified the GetApi module by removing unnecessary things from it. Made the hash function to be easily changeable and in one place. There is a check that there are no same hash values. New dll libraries and functions can be added to the module quickly and easily. The code was just a little confusing, because there were static detects. I have also managed to set my own trap in the 64-bit version for BaseThreadInitThunk to sift threads. But I haven't tested the program in this direction. There is a suspicion that the crypted version may stop working. Secondly, the threads may be running before the hook is set. And then, most likely, the same thing can be done (threads can be sifted out) using mithigations.\nI may have invented a wheel somewhere, but there is almost no information available anywhere (I only found some information about mithigations on the Internet).\nIn the contest, I need new methods of loading. In this direction tried to do something, but did not come up with anything, too little information. I tried to shift the exe file image in the process address space (i.e. to modify the process hollowing) and to write it to an arbitrary address, but this didn't work. And it's not clear if it's needed at all."
+}
+{
+  { "ts": "2020-11-16T13:07:58.465669",
+  { "from": "mors@q3mcco35auwcstmt.onion",
+  { "to": "marsel@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-11-16T13:08:15.659851",
+  { "from": "marsel@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-11-16T13:08:23.054420",
+  { "from": "mors@q3mcco35auwcstmt.onion",
+  { "to": "marsel@q3mcco35auwcstmt.onion",
+  }, "body": "cryptanee, plz. new files on links"
+}
+{
+  { "ts": "2020-11-16T13:08:43.344297",
+  { "from": "marsel@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  { "body": "did you get the files yesterday?"
+}
+{
+  { "ts": "2020-11-16T13:08:46.973732",
+  { "from": "mors@q3mcco35auwcstmt.onion",
+  { "to": "marsel@q3mcco35auwcstmt.onion",
+  { "body": "yes".
+}
+{
+  { "ts": "2020-11-16T13:13:38.805872",
+  { "from": "baget@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "aw!"
+}
+{
+  { "ts": "2020-11-16T13:23:56.791021",
+  { "from": "modnik@q3mcco35auwcstmt.onion",
+  { "to": "grajdanin@q3mcco35auwcstmt.onion",
+  { "body": "https://privnote.com/3z2UN84t#1j6rQb3rc"
+}
+{
+  { "ts": "2020-11-16T13:26:48.664289",
+  { "from": "steller@q3mcco35auwcstmt.onion",
+  { "to": "talar@q3mcco35auwcstmt.onion",
+  { "body": "hello do you have botleggers working?"
+}
+{
+  { "ts": "2020-11-16T13:28:22.516089",
+  { "from": "baget@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "hello?"
+}
+{
+  { "ts": "2020-11-16T13:37:45.940077",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "baget@q3mcco35auwcstmt.onion",
+  { "body": "yes yes"
+}
+{
+  { "ts": "2020-11-16T13:43:27.109450",
+  { "from": "baget@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "oh!"
+}
+{
+  { "ts": "2020-11-16T13:43:32.531746",
+  { "from": "baget@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "hello again."
+}
+{
+  { "ts": "2020-11-16T13:43:36.937881",
+  { "from": "baget@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "don't run away."
+}
+{
+  { "ts": "2020-11-16T13:44:13.107171",
+  { "from": "baget@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "so, where are we having this conversation?"
+}
+{
+  { "ts": "2020-11-16T13:45:40.736084",
+  { "from": "baget@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "hello?"
+}
+{
+  { "ts": "2020-11-16T14:16:46.071858",
+  { "from": "marsel@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  { "body": "Download: https://qaz.im/load/4DZG3E/TKB9tk\nDelete: https://qaz.im/index.php?a=delete&q=1031846766"
+}
+{
+  { "ts": "2020-11-16T14:16:49.726109",
+  { "from": "marsel@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  { "body": "pass 123"
+}
+{
+  { "ts": "2020-11-16T14:27:23.052174",
+  { "from": "dick@q3mcco35auwcstmt.onion",
+  { "to": "tiktak@q3mcco35auwcstmt.onion",
+  { "body": "now seen to have moved away"
+}
+{
+  { "ts": "2020-11-16T14:29:20.227291",
+  { "from": "dominik@q3mcco35auwcstmt.onion",
+  { "to": "mavelek@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-11-16T14:29:24.612088",
+  { "from": "dominik@q3mcco35auwcstmt.onion",
+  { "to": "mavelek@q3mcco35auwcstmt.onion",
+  { "body": "discount access normal bro*"
+}
+{
+  { "ts": "2020-11-16T14:29:25.893700",
+  { "from": "dominik@q3mcco35auwcstmt.onion",
+  { "to": "mavelek@q3mcco35auwcstmt.onion",
+  { "body": "?"
+}
+{
+  { "ts": "2020-11-16T14:29:35.022350",
+  { "from": "dominik@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-11-16T14:29:41.405707",
+  { "from": "dominik@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "no one has discounted bro access"
+}
+{
+  { "ts": "2020-11-16T14:53:46.701359",
+  { "from": "hlor@q3mcco35auwcstmt.onion",
+  { "to": "hlor@q3mcco35auwcstmt.onion",
+  { "body": "h"
+}
+{
+  { "ts": "2020-11-16T15:27:37.254608",
+  { "from": "hlor@q3mcco35auwcstmt.onion",
+  { "to": "hlor@q3mcco35auwcstmt.onion",
+  { "body": "f"
+}
+{
+  { "ts": "2020-11-16T15:35:52.074610",
+  { "from": "modnik@q3mcco35auwcstmt.onion",
+  { "to": "grajdanin@q3mcco35auwcstmt.onion",
+  { "body": "https://privnote.com/3z2UN84t#1j6rQb3rc"
+}
+{
+  { "ts": "2020-11-16T15:58:21.937706",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "miguel@q3mcco35auwcstmt.onion",
+  { "body": "hello, bro!"
+}
+{
+  { "ts": "2020-11-16T16:04:15.618960",
+  { "from": "frog@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-11-16T17:18:50.572022",
+  { "from": "cany@q3mcco35auwcstmt.onion",
+  { "to": "kaktus@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-11-16T17:38:31.590878",
+  { "from": "kaktus@q3mcco35auwcstmt.onion",
+  { "to": "cany@q3mcco35auwcstmt.onion",
+  "body": "hello, I sent you the info in the new work chat. Take it there and confirm it."
+}
