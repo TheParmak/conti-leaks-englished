@@ -1,5 +1,5 @@
 #!/bin/bash
-FILES='file_path'
+FILES='folder_path'
 
 for f in $FILES
 do
