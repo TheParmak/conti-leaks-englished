@@ -1,0 +1,187 @@
+{
+  "messages": [
+    {
+      "_id": "jmoEY5peyvWDSy6zu",
+      "t": "au",
+      "rid": "Fg4yGgPwBrnpyuvSu",
+      "ts": "2021-03-12T20:50:18.278Z",
+      "msg": "Grimnir",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-12T20:50:18.296Z"
+    },
+    {
+      "_id": "AEQ9Hhapf93woTneA",
+      "t": "au",
+      "rid": "Fg4yGgPwBrnpyuvSu",
+      "ts": "2021-03-11T03:02:19.834Z",
+      "msg": "Code",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-11T03:02:19.866Z"
+    },
+    {
+      "_id": "dGZnHRr5m3Cfu92Bt",
+      "t": "au",
+      "rid": "Fg4yGgPwBrnpyuvSu",
+      "ts": "2021-03-11T02:56:19.894Z",
+      "msg": "octa",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-11T02:56:19.932Z"
+    },
+    {
+      "_id": "nFKCSGWEukdRfuXdG",
+      "t": "au",
+      "rid": "Fg4yGgPwBrnpyuvSu",
+      "ts": "2021-03-11T02:56:19.858Z",
+      "msg": "0dayinbiz",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-11T02:56:19.872Z"
+    },
+    {
+      "_id": "xYs9ECLPqaXnSodYD",
+      "t": "au",
+      "rid": "Fg4yGgPwBrnpyuvSu",
+      "ts": "2021-03-09T19:30:54.027Z",
+      "msg": "Chuck",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-09T19:30:54.040Z"
+    },
+    {
+      "_id": "EAMXi3688ze4uyMKD",
+      "rid": "Fg4yGgPwBrnpyuvSu",
+      "msg": "тут",
+      "ts": "2021-03-06T13:35:21.844Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-06T13:35:21.872Z"
+    },
+    {
+      "_id": "kGSmCdqgwm3bSPhKW",
+      "rid": "Fg4yGgPwBrnpyuvSu",
+      "msg": "@tony",
+      "ts": "2021-03-06T13:35:19.606Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [
+        {
+          "_id": "A6r8SLKom3nni3GGN",
+          "username": "tony",
+          "name": "tony"
+        }
+      ],
+      "channels": [],
+      "_updatedAt": "2021-03-06T13:35:19.623Z"
+    },
+    {
+      "_id": "oyLmfttnZAES2scpp",
+      "rid": "Fg4yGgPwBrnpyuvSu",
+      "msg": "и пишите пожалуйста фидбек по тулчейну\nчто не работает\nчто непонятно как работает\nчто добавить\nчто убрать",
+      "ts": "2021-03-05T06:42:10.536Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-05T06:42:10.557Z"
+    },
+    {
+      "_id": "CsfqohuGoyL9MuwTq",
+      "rid": "Fg4yGgPwBrnpyuvSu",
+      "msg": "```\nпри нажатии spread открывается окно с 5 полями\n1 В первом поле необходимо выбрать путь до артифактного файла для создания сессий или exe/bat/dll файл для полезной нагрузки\n2 Вкомбобоксе выбирается метод wmi/plsexec\n3 В третьем поле прописывается путь загрузки файла по дефолту он \"C:\\ProgramData\"\n4 В четвертом поле выбирается путь до списка ip/host\n5 В стартовой строке вводится аргументы, если аргументов нет нужно просто нажать Run Spread\n6 По нажатию кнопки Run SpreadФормируется запрос домен контроллеру ip/host из списка в ответ приходят адреса до таргетхостов\n7 Формирует UNC путь до заданной директории\n8 Пути отправляются в функцию загрузки и циклом загружает выбранный файл.\n9 Через паузу в 10 секунд(ее можно скорректировать) что бы быть точно уверенными, что файл оказался в выбранной директории, отправляется команда запуска с аргументами(если они указывались)\n```",
+      "ts": "2021-03-05T05:22:14.036Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-05T05:22:14.070Z"
+    },
+    {
+      "_id": "jSiXcKvq2tFSFXAZQ",
+      "rid": "Fg4yGgPwBrnpyuvSu",
+      "msg": "@all ВСЕ дружно обновляемся кто пользуется\nenhancement_chain.cna\nmain.cna\nИмпортим\n\nОтдельно обратите внимание на Other->Lateral\nэто средство распространения и запуска ехе/длл файлов по списку хостов/ипаков",
+      "ts": "2021-03-05T05:21:36.322Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [
+        {
+          "_id": "all",
+          "username": "all"
+        }
+      ],
+      "channels": [],
+      "_updatedAt": "2021-03-05T05:21:36.351Z"
+    },
+    {
+      "_id": "uE9vQpPicBLQqpnWs",
+      "rid": "Fg4yGgPwBrnpyuvSu",
+      "ts": "2021-03-05T05:20:34.815Z",
+      "msg": "",
+      "file": {
+        "_id": "TN3tHQH7Xmze6o3Sm",
+        "name": "ToolChain04Mar.7z",
+        "type": "application/x-7z-compressed"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "title": "ToolChain04Mar.7z",
+          "type": "file",
+          "description": "обновление",
+          "title_link": "/file-upload/TN3tHQH7Xmze6o3Sm/ToolChain04Mar.7z",
+          "title_link_download": true
+        }
+      ],
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-05T05:20:34.983Z"
+    },
+    {
+      "_id": "hmJ7iRTyg3paWvhqm",
+      "t": "au",
+      "rid": "Fg4yGgPwBrnpyuvSu",
+      "ts": "2021-03-04T19:42:10.616Z",
+      "msg": "nimbus2000",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-04T19:42:10.633Z"
+    }
+  ],
+  "success": true
+}

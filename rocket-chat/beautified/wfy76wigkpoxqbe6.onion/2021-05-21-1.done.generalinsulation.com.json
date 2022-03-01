@@ -1,0 +1,51 @@
+{
+  "messages": [
+    {
+      "_id": "XStqbhBmYr8oDg7xo",
+      "rid": "Em2yZfWjQGseBQ4N8",
+      "ts": "2021-05-26T13:17:10.259Z",
+      "msg": "",
+      "file": {
+        "_id": "pkqTCdQYnkNbiojGB",
+        "name": "ad.7z",
+        "type": "application/octet-stream"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "title": "ad.7z",
+          "type": "file",
+          "title_link": "/file-upload/pkqTCdQYnkNbiojGB/ad.7z",
+          "title_link_download": true
+        }
+      ],
+      "u": {
+        "_id": "ysgdK3aBfBJ9w6EzQ",
+        "username": "Air"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-05-26T13:17:10.287Z"
+    },
+    {
+      "_id": "R95CjLTQaGB4S7Ype",
+      "rid": "Em2yZfWjQGseBQ4N8",
+      "msg": "@Air  дай ад сюда",
+      "ts": "2021-05-25T20:32:26.918Z",
+      "u": {
+        "_id": "ruKCGNn9nzoQaDfiK",
+        "username": "steven"
+      },
+      "mentions": [
+        {
+          "_id": "ysgdK3aBfBJ9w6EzQ",
+          "username": "Air",
+          "name": "Air"
+        }
+      ],
+      "channels": [],
+      "_updatedAt": "2021-05-25T20:32:26.934Z"
+    }
+  ],
+  "success": true
+}

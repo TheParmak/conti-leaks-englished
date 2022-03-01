@@ -1,0 +1,75 @@
+{
+  "update": [
+    {
+      "_id": "GENERAL",
+      "ts": "2021-10-25T10:04:22.050Z",
+      "t": "c",
+      "name": "general",
+      "usernames": [],
+      "usersCount": 28,
+      "default": true,
+      "_updatedAt": "2021-10-25T19:14:35.819Z",
+      "lastMessage": {
+        "_id": "M3kBd3BEG4GaxeLTw",
+        "rid": "GENERAL",
+        "msg": "@dildoso +",
+        "ts": "2021-10-25T19:14:35.801Z",
+        "u": {
+          "_id": "wDmyidv6t47pN9AXi",
+          "username": "gall",
+          "name": "gall"
+        },
+        "urls": [],
+        "mentions": [
+          {
+            "_id": "PD6uG8WCBg8pmvZq5",
+            "username": "dildoso",
+            "name": "dildoso",
+            "type": "user"
+          }
+        ],
+        "channels": [],
+        "md": [
+          {
+            "type": "PARAGRAPH",
+            "value": [
+              {
+                "type": "MENTION_USER",
+                "value": {
+                  "type": "PLAIN_TEXT",
+                  "value": "dildoso"
+                }
+              },
+              {
+                "type": "PLAIN_TEXT",
+                "value": " +"
+              }
+            ]
+          }
+        ],
+        "_updatedAt": "2021-10-25T19:14:35.811Z"
+      },
+      "lm": "2021-10-25T19:14:35.801Z"
+    },
+    {
+      "_id": "WfwbkrXqKKmkM8qmG",
+      "fname": "Team_Targets",
+      "customFields": {},
+      "description": "",
+      "broadcast": false,
+      "encrypted": false,
+      "name": "team_targets",
+      "t": "p",
+      "usersCount": 10,
+      "u": {
+        "_id": "PD6uG8WCBg8pmvZq5",
+        "username": "dildoso"
+      },
+      "ts": "2021-10-25T17:30:31.068Z",
+      "ro": false,
+      "_updatedAt": "2021-10-25T17:35:51.609Z"
+    }
+  ],
+  "remove": [],
+  "success": true
+}

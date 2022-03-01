@@ -1,0 +1,660 @@
+{
+  "messages": [
+    {
+      "_id": "SEndMQes2jdJndCjG",
+      "rid": "GENERAL",
+      "msg": "shell adfind.exe -b dc=standards,dc=com,dc=au -f \"(objectcategory=organizationalUnit)\" > C:\\Programdata\\standards_ad_ous.txt",
+      "ts": "2020-10-05T20:47:55.154Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-05T20:47:55.186Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "bi4YX2QGWFTBHE9KZ",
+      "rid": "GENERAL",
+      "msg": "shell nltest /dclist:c360.local",
+      "ts": "2020-10-05T20:37:36.946Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-05T20:37:36.974Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "yMLeg8bhuCoJ8xbex",
+      "rid": "GENERAL",
+      "msg": "есть",
+      "ts": "2020-10-05T13:03:52.741Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-05T13:03:52.767Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "dbmW8zsGWudHDRkYk",
+      "rid": "GENERAL",
+      "msg": "@user1 @user3 ловите",
+      "ts": "2020-10-05T13:03:43.481Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T13:03:43.509Z",
+      "mentions": [
+        {
+          "_id": "68GKoLCJKg5tQPT5m",
+          "username": "user1",
+          "name": "user1"
+        },
+        {
+          "_id": "5nrWYoszLFsnLuMcN",
+          "username": "user3",
+          "name": "stalin"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "XotcTscTwfB7wuLCE",
+      "rid": "GENERAL",
+      "msg": "с ним надо аккуратно т к он достаточно сильно флудит",
+      "ts": "2020-10-05T13:01:49.898Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T13:01:49.935Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "AQaDeZ3tbgbe7oZN3",
+      "rid": "GENERAL",
+      "msg": "скажу так, 3 раза подряд запустите, админы спалят нагрузку в сети и выкинут всех)",
+      "ts": "2020-10-05T13:01:38.732Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T13:01:38.762Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "mDXqYBYNQRk4wWCi9",
+      "rid": "GENERAL",
+      "msg": "серверные и пользовательские ОС",
+      "ts": "2020-10-05T13:01:20.705Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T13:01:20.729Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "fj3Kgm8wR3rNrjofc",
+      "rid": "GENERAL",
+      "msg": "он проверяет шары на каждом пк в домене",
+      "ts": "2020-10-05T13:01:19.117Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T13:01:19.142Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "S2n47vY3fT88DNLxk",
+      "rid": "GENERAL",
+      "msg": "ну я более про сам алгоритм спрашивал",
+      "ts": "2020-10-05T13:01:04.112Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T13:01:04.143Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "49PkewxrqFJD9WH5F",
+      "rid": "GENERAL",
+      "msg": "```\nвыполняет сразу две функции, если мы запускаем его от контекста пользователя и видим сразу доступные ADMIN$ шары - значит мы там локал админ и можем туда уже двигаться\nесли таких машин в сети не находится - мы как минимум получаем для анализа список доступных для чтения шар где может содержаться релевантная к повышению привелегий информация\n```",
+      "ts": "2020-10-05T12:58:23.905Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-05T12:58:23.948Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "LsZsmvHBWWRgyPqK4",
+      "rid": "GENERAL",
+      "msg": "вы же понимаете как работает шарфайндер?",
+      "ts": "2020-10-05T12:57:21.446Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T12:57:21.481Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "bfGcqmE4QFH4sXdRP",
+      "rid": "GENERAL",
+      "msg": "и именно серверные подсети",
+      "ts": "2020-10-05T12:57:02.918Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T12:57:02.949Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "QvbCcje9RwdFJLXQi",
+      "rid": "GENERAL",
+      "msg": "при таких масштабах лучше сканить /24",
+      "ts": "2020-10-05T12:56:58.217Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T12:56:58.238Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Z6JrK5cLAKJDZFhhJ",
+      "rid": "GENERAL",
+      "msg": "получается нужно в 20 доменах снять ад_комп, отпинговать серваки и подрубить портскан?",
+      "ts": "2020-10-05T12:56:12.142Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-05T12:56:12.164Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "PcCXW7icaxmNAFBZd",
+      "rid": "GENERAL",
+      "msg": "нет, в 1 домене)",
+      "ts": "2020-10-05T12:55:18.997Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T12:55:19.015Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3CZfdiAMotRh3mSJE",
+      "rid": "GENERAL",
+      "msg": "в каждой?",
+      "ts": "2020-10-05T12:55:06.670Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-05T12:55:06.690Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "evn46TWeLiXBSwCg8",
+      "rid": "GENERAL",
+      "msg": "из плюсов, там уже есть ДА, из минусов там еще 19 трастов",
+      "ts": "2020-10-05T12:54:55.839Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T12:54:55.866Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qRoRZowpkScWB6Qpf",
+      "rid": "GENERAL",
+      "msg": "нет, я скажу как запущу",
+      "ts": "2020-10-05T12:54:30.218Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T12:54:30.245Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "tfzDJzQxsboH9aYcM",
+      "rid": "GENERAL",
+      "msg": "У нас автоматическое наведение порчи на таких плодотворов",
+      "ts": "2020-10-05T12:53:22.320Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-05T12:53:22.354Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "n8uARjzMXDMrxqoZK",
+      "rid": "GENERAL",
+      "msg": "они передают вам и смотрят, чтобы вы по 10 сессий в кобах не плодили",
+      "ts": "2020-10-05T12:53:00.585Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T12:53:00.620Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "RYmNriWiahw8ZWe45",
+      "rid": "GENERAL",
+      "msg": "ладно, я передаю @user1 @user3 сессии",
+      "ts": "2020-10-05T12:52:41.902Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T12:52:41.942Z",
+      "mentions": [
+        {
+          "_id": "68GKoLCJKg5tQPT5m",
+          "username": "user1",
+          "name": "user1"
+        },
+        {
+          "_id": "5nrWYoszLFsnLuMcN",
+          "username": "user3",
+          "name": "stalin"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "aHhYtMRA8x5Z9S6G5",
+      "rid": "GENERAL",
+      "msg": "го по делу",
+      "ts": "2020-10-05T12:52:31.502Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-05T12:52:31.521Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6xcpoMEFBDtpD2Hc3",
+      "rid": "GENERAL",
+      "msg": "xD",
+      "ts": "2020-10-05T12:52:26.361Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T12:52:26.399Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "B2tdHcjdzWiRJHkcQ",
+      "rid": "GENERAL",
+      "tmid": "NmFAk2STx2n3zvuCx",
+      "msg": "искать пути к облаку, искать креды",
+      "ts": "2020-10-05T12:52:17.714Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-05T12:52:17.736Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "nnPpofD952SFL8w6F",
+      "rid": "GENERAL",
+      "msg": "http://arhangel.ru/fortune/online/taro/",
+      "ts": "2020-10-05T12:52:07.385Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-05T12:52:07.413Z",
+      "urls": [
+        {
+          "url": "http://arhangel.ru/fortune/online/taro/"
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "DxSsvCvfLzTLozQh9",
+      "rid": "GENERAL",
+      "tshow": true,
+      "tmid": "NmFAk2STx2n3zvuCx",
+      "msg": "Карты подскажут верный путь",
+      "ts": "2020-10-05T12:51:32.138Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-05T12:51:32.179Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "NmFAk2STx2n3zvuCx",
+      "rid": "GENERAL",
+      "msg": "алгоритм то ясен, а если АВ будет облачным и его сервер не находится в сети?)",
+      "ts": "2020-10-05T12:51:02.323Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T12:52:17.759Z",
+      "mentions": [],
+      "channels": [],
+      "replies": [
+        "yJcaRFnKQqepiffHq",
+        "5nrWYoszLFsnLuMcN",
+        "E7X3BDe2dXFsAHSz7"
+      ],
+      "tcount": 2,
+      "tlm": "2020-10-05T12:52:17.714Z"
+    },
+    {
+      "_id": "SZTp6cfQzMhfMpgpe",
+      "rid": "GENERAL",
+      "tmid": "j2wyLwFRodQkC6F5c",
+      "msg": "ад конечно снимать не обязаьельно, но можно)",
+      "ts": "2020-10-05T12:50:11.400Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T12:50:11.432Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vxhfHmbRpCbSbK8FQ",
+      "rid": "GENERAL",
+      "msg": "ну алгоритм ясен, гоу закреплять",
+      "ts": "2020-10-05T12:49:59.915Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-05T12:49:59.955Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Qb6HECCWnwHy3vzYi",
+      "rid": "GENERAL",
+      "msg": "этим же, но разве вам этого достаточно?)",
+      "ts": "2020-10-05T12:49:42.252Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T12:49:42.287Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "myrGBzxCwsy7eAv3P",
+      "rid": "GENERAL",
+      "msg": "портсканы сортировки вот это вот всё",
+      "ts": "2020-10-05T12:49:41.836Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-05T12:49:41.864Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vM6TRgDS58ywnxTWb",
+      "rid": "GENERAL",
+      "tshow": true,
+      "tmid": "j2wyLwFRodQkC6F5c",
+      "msg": "снимаем ад",
+      "ts": "2020-10-05T12:49:40.494Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-05T12:49:40.513Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "j2wyLwFRodQkC6F5c",
+      "rid": "GENERAL",
+      "msg": "Запрягаем коней",
+      "ts": "2020-10-05T12:49:26.813Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-05T12:50:11.453Z",
+      "mentions": [],
+      "channels": [],
+      "replies": [
+        "5nrWYoszLFsnLuMcN",
+        "E7X3BDe2dXFsAHSz7",
+        "yJcaRFnKQqepiffHq"
+      ],
+      "tcount": 2,
+      "tlm": "2020-10-05T12:50:11.400Z"
+    },
+    {
+      "_id": "XWHLp3XQr35gL3nQj",
+      "rid": "GENERAL",
+      "msg": "так а в субботу мы чем занимались",
+      "ts": "2020-10-05T12:49:24.386Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-05T12:49:24.419Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Q4W8bYfYe9KG95Err",
+      "rid": "GENERAL",
+      "msg": "так, переходим к практике нетворка",
+      "ts": "2020-10-05T12:48:52.706Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T12:48:52.742Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "PNgcY2bZQsQNb97yk",
+      "rid": "GENERAL",
+      "msg": "ошибочка вышла, проехали )",
+      "ts": "2020-10-05T09:01:59.059Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-05T09:01:59.093Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "YdjKRiB3AepEqvk3c",
+      "rid": "GENERAL",
+      "msg": "кого и куда?",
+      "ts": "2020-10-05T09:01:15.719Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T09:01:15.753Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6SFTjXxuN7oSQ2oEf",
+      "rid": "GENERAL",
+      "msg": "@tl1 добавь нас к ним в чат",
+      "ts": "2020-10-05T08:57:29.066Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-05T08:57:29.092Z",
+      "mentions": [
+        {
+          "_id": "yJcaRFnKQqepiffHq",
+          "username": "tl1",
+          "name": "Team Lead 1"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "fz76tpIF49hePwTvc",
+      "rid": "GENERAL",
+      "msg": "Доброе",
+      "ts": "2020-10-05T08:20:56.973Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-05T08:20:57.001Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "mApuqwiDgWhpkb7zX",
+      "rid": "GENERAL",
+      "msg": "Доброе",
+      "ts": "2020-10-05T08:13:10.829Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-05T08:13:10.855Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ct725Eo3P9k7qiCuw",
+      "rid": "GENERAL",
+      "msg": "Добра по утру",
+      "ts": "2020-10-05T08:11:24.060Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-05T08:11:24.090Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "bXAHHrorIzhb143uV",
+      "rid": "GENERAL",
+      "msg": ":space_invader: ",
+      "ts": "2020-10-05T08:06:06.615Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-05T08:06:06.645Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "wjdjoqLu6Eburywqg",
+      "rid": "GENERAL",
+      "msg": "Всем доброе утро",
+      "ts": "2020-10-05T08:01:55.885Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-05T08:01:55.916Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

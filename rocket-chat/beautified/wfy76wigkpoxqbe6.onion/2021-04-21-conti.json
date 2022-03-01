@@ -1,0 +1,96 @@
+{
+  "messages": [
+    {
+      "_id": "KeNKh6KhDN9jxEXdK",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "msg": "сессия после джампа, процесс который он же и создаёт",
+      "ts": "2021-04-28T11:56:35.491Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-28T11:56:35.525Z"
+    },
+    {
+      "_id": "AE5mN2qto8KQDSB9d",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "msg": "а из под какого процесса была сессия?",
+      "ts": "2021-04-28T11:54:56.389Z",
+      "u": {
+        "_id": "4AL9SfM3hHF5SxJfD",
+        "username": "slice"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-28T11:54:56.409Z"
+    },
+    {
+      "_id": "SR3r3ayLnPsTKwsLa",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "msg": "не в нём дело\nмаунтились насы и нетапп филеры, с трёх разных серверов, на одном не было АВ, на двух был",
+      "ts": "2021-04-28T02:51:42.046Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-28T02:51:42.072Z"
+    },
+    {
+      "_id": "x6kqFY252xwgyZyq8",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "msg": "а был ав какой то?",
+      "ts": "2021-04-28T02:46:34.484Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-28T02:46:34.502Z"
+    },
+    {
+      "_id": "DdJ7Hjo9rJwqdCmvY",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "msg": "аргументов не было\nподразумевалось что после лока локальных дисков он перейдёт к сетевым, но он их тупа отключил",
+      "ts": "2021-04-28T02:35:44.705Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-28T02:35:44.726Z"
+    },
+    {
+      "_id": "tPycGWm6pkysxmTTe",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "msg": "я даже не уверен что это баг, просто вот такой \"нюанс\"",
+      "ts": "2021-04-28T02:34:26.553Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-28T02:34:26.576Z"
+    },
+    {
+      "_id": "kpQQ4WFHkLD5pdNsu",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "msg": "инжект локера через сессию на сервере какого-то хрена отключил все примаунченные диски\nмаунт был через токен\nпочему это произошло хз",
+      "ts": "2021-04-28T02:33:58.845Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-28T02:33:58.872Z"
+    }
+  ],
+  "success": true
+}

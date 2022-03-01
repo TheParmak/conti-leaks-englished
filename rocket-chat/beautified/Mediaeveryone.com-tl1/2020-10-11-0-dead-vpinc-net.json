@@ -1,0 +1,213 @@
+{
+  "messages": [
+    {
+      "_id": "thWiqHYqW6sRHXEXD",
+      "rid": "L9uDSJutTF8AwCxGo",
+      "ts": "2020-10-11T21:11:04.144Z",
+      "msg": "",
+      "file": {
+        "_id": "ZdrjFaWj5dBcncZWs",
+        "name": "firefox_creds.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "firefox_creds.txt",
+          "title_link": "/file-upload/ZdrjFaWj5dBcncZWs/firefox_creds.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-11T21:11:04.194Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "mNbZWYewPrDew5fNA",
+      "rid": "L9uDSJutTF8AwCxGo",
+      "msg": "можно коненчо логин с рокю пустить...",
+      "ts": "2020-10-11T21:06:47.377Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-11T21:06:47.422Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "BqwMtaGmTjpbo3myh",
+      "rid": "L9uDSJutTF8AwCxGo",
+      "msg": "какие еще эксплойты можно попробовать под фтп?\nанономус и логин с паролями что нашли не проходит",
+      "ts": "2020-10-11T21:05:44.216Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-11T21:05:44.252Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "DeeXcmHmNHu7HmhRJ",
+      "rid": "L9uDSJutTF8AwCxGo",
+      "msg": "```\n10.103.1.13:21 (220 AP9630 Network Management Card AOS v6.2.0 FTP server ready.)\n\n10.103.1.19:21 (220 NET+ARM FTP Server 1.0 ready.)\n\n10.100.1.107:21 (220 Microsoft FTP Service)\n\n10.100.1.25:21 (220 Microsoft FTP Service)\n\n10.100.1.11:21 (220 Microsoft FTP Service)\n\n10.100.1.4:21 (220 Microsoft FTP Service)\n\n10.109.1.51:21 (220 ET0021B73B05EA Lexmark M3150 FTP Server NH63.CY.N640 ready.)\n\n10.100.20.15:21 (220-FileZilla Server version 0.9.44 beta)\n\n10.104.1.13:21 (220 AP9630 Network Management Card AOS v6.0.6 FTP server ready.)\n\n10.101.1.6:21 (220 AP9630 Network Management Card AOS v6.2.0 FTP server ready.)\n\n10.101.1.13:21 (220 AP9630 Network Management Card AOS v6.2.0 FTP server ready.)\n\n10.106.1.54:21 (220 POSOfficeInvoice Lexmark M3150 FTP Server NH63.CY.N640 ready.)\n\n10.106.1.15:21 (220 AP9630 Network Management Card AOS v6.2.0 FTP server ready.)\n\n10.106.1.9:21 (220 AP9630 Network Management Card AOS v6.2.0 FTP server ready.)\n\n10.122.1.47:21 (220 ZBR-79071 Version V75.19.10Z ready.)\n\n10.122.1.50:21 (220 EFI FTP Print server ready.)\n```",
+      "ts": "2020-10-11T20:52:38.826Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-11T20:53:05.655Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-11T20:53:05.652Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "i9K9XXXuyBrQszHaE",
+      "rid": "L9uDSJutTF8AwCxGo",
+      "msg": "```\n[-] 10.103.1.108:445      - Host does NOT appear vulnerable.\n```",
+      "ts": "2020-10-11T20:09:10.417Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-11T20:09:10.555Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6vL7zXkpW3HGtfqxb",
+      "rid": "L9uDSJutTF8AwCxGo",
+      "msg": "```\n10.103.1.108:445 (platform: 500 version: 6.1 name: BL19 domain: ORANGE_FACT)\n10.250.1.41:445 (platform: 500 version: 6.3 name: CFD01 domain: ORANGE_FACT)\n10.109.1.21:445 (platform: 500 version: 6.3 name: TL02 domain: ORANGE_FACT)\n10.100.20.15:445 (platform: 500 version: 6.3 name: OC40 domain: ORANGE_FACT)\n```",
+      "ts": "2020-10-11T20:04:59.168Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-11T20:04:59.298Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "aahefuHXiDhYGvuXN",
+      "t": "au",
+      "rid": "L9uDSJutTF8AwCxGo",
+      "ts": "2020-10-11T19:37:41.336Z",
+      "msg": "user8",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "groupable": false,
+      "_updatedAt": "2020-10-11T19:37:41.361Z"
+    },
+    {
+      "_id": "KTo8keYe6MRZcsf7X",
+      "rid": "L9uDSJutTF8AwCxGo",
+      "msg": "добавьте @user8",
+      "ts": "2020-10-11T15:56:13.606Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-11T15:56:13.640Z",
+      "mentions": [
+        {
+          "_id": "aLgWcQx7CGaqXfqkN",
+          "username": "user8",
+          "name": "wevvewe"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "nEAPibtdAKjwqvcj2",
+      "rid": "L9uDSJutTF8AwCxGo",
+      "tshow": true,
+      "tmid": "BgpcccrMk4555pnCe",
+      "msg": "в чате",
+      "ts": "2020-10-11T15:18:20.743Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-11T15:18:20.785Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "BgpcccrMk4555pnCe",
+      "rid": "L9uDSJutTF8AwCxGo",
+      "msg": "ну я тут пока один)\nможно мне\nslypad.com:443",
+      "ts": "2020-10-11T15:17:51.340Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-11T15:18:20.820Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-11T15:18:05.024Z",
+      "editedBy": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9"
+      },
+      "urls": [],
+      "replies": [
+        "E7X3BDe2dXFsAHSz7"
+      ],
+      "tcount": 1,
+      "tlm": "2020-10-11T15:18:20.743Z"
+    },
+    {
+      "_id": "kQFXn6a4JuEJP8j3H",
+      "rid": "L9uDSJutTF8AwCxGo",
+      "msg": "кому пасснуть?",
+      "ts": "2020-10-11T15:16:53.720Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-11T15:16:53.747Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Xis8drcJq3y2oRCay",
+      "rid": "L9uDSJutTF8AwCxGo",
+      "msg": "есть сессия тут",
+      "ts": "2020-10-11T15:16:52.036Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-11T15:16:52.086Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

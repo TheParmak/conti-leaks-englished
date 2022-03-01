@@ -1,0 +1,545 @@
+{
+  "messages": [
+    {
+      "_id": "JZ2NC9ZJ9TFgnbMoo",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "ts": "2020-12-02T12:54:10.297Z",
+      "msg": "",
+      "file": {
+        "_id": "Rn2WmAhJWiB7JCPCB",
+        "name": "ad_users.txt.zip",
+        "type": "application/zip"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_users.txt.zip",
+          "title_link": "/file-upload/Rn2WmAhJWiB7JCPCB/ad_users.txt.zip",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-02T12:54:10.371Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qnizEiGkhjNx8SeTF",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "ts": "2020-12-02T12:34:29.748Z",
+      "msg": "",
+      "file": {
+        "_id": "6HkaB9Wg9oMcuKjxg",
+        "name": "Clipboard - 2 декабря 2020 г., 15:34",
+        "type": "image/png"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "Clipboard - 2 декабря 2020 г., 15:34",
+          "title_link": "/file-upload/6HkaB9Wg9oMcuKjxg/Clipboard%20-%202%20%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F%202020%20%D0%B3.,%2015:34",
+          "title_link_download": true,
+          "image_dimensions": {
+            "width": 1541,
+            "height": 71
+          },
+          "image_preview": "/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABACADASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAMECP/EABoQAQABBQAAAAAAAAAAAAAAAAACAwQzQnH/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/xAAWEQEBAQAAAAAAAAAAAAAAAAAAATH/2gAMAwEAAhEDEQA/ANH2G3VwCujBHXxSBTWv/9k=",
+          "image_url": "/file-upload/6HkaB9Wg9oMcuKjxg/Clipboard%20-%202%20%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F%202020%20%D0%B3.,%2015:34",
+          "image_type": "image/png",
+          "image_size": 10104,
+          "type": "file",
+          "description": "он до сих пор грузится, сейчас перезалью"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-02T12:34:29.783Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "QkPmFLTE2heBDGdyv",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "ts": "2020-12-02T12:33:55.377Z",
+      "msg": "",
+      "file": {
+        "_id": "dXcMsqeZStEMzLcpt",
+        "name": "Clipboard - 2 декабря 2020 г., 15:33",
+        "type": "image/png"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "Clipboard - 2 декабря 2020 г., 15:33",
+          "title_link": "/file-upload/dXcMsqeZStEMzLcpt/Clipboard%20-%202%20%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F%202020%20%D0%B3.,%2015:33",
+          "title_link_download": true,
+          "image_dimensions": {
+            "width": 543,
+            "height": 343
+          },
+          "image_preview": "/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUACADASIAAhEBAxEB/8QAGgAAAgMBAQAAAAAAAAAAAAAAAAIBAwUECP/EACIQAAEEAgEEAwAAAAAAAAAAAAEAAgMRBBIxEyEjYVFxcv/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIRAxEAPwD05kA9Q+YM9Wohc6O/M11/KrzY95r2jH6PdTj4sg7np0g7YnON7Fp+lYkY3Unik6DLysOGfLuQEn0VoxMEbAxvA4QhWsw6EIUaf//Z",
+          "image_url": "/file-upload/dXcMsqeZStEMzLcpt/Clipboard%20-%202%20%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F%202020%20%D0%B3.,%2015:33",
+          "image_type": "image/png",
+          "image_size": 47992,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-02T12:33:55.404Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "iwEB8fPreL4bkgR8b",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "msg": "не вижу среди файликов ad_users",
+      "ts": "2020-12-02T12:33:54.654Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-02T12:33:54.701Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "y8FaTiociaFsiDzLQ",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "msg": "не туда не туда",
+      "ts": "2020-12-02T12:33:41.863Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-02T12:33:41.911Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "54uqQCi5KP3zyQdzH",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "msg": "журнал виндэфа всётаки подчистил, и ещё попробовал через PS но ничего не отработало из скриптов",
+      "ts": "2020-12-02T12:33:29.245Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-02T12:33:29.276Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "HZJKoE4S2RCR7q8Wy",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "msg": "а в арму?",
+      "ts": "2020-12-02T12:33:22.597Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-02T12:33:22.640Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "a9E4cBPeS3iRbqF7t",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "msg": "в кобу не притягивается?",
+      "ts": "2020-12-02T12:33:10.842Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-02T12:33:10.883Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "gwoXHCD2xL6qSw6Ey",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "msg": "[ ](https://mediaeveryone.com/group/oasispetroleum-com?msg=WjC8jA9pp3cGTSPik) вот",
+      "ts": "2020-12-02T12:32:18.932Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-02T12:32:18.988Z",
+      "attachments": [
+        {
+          "text": "что то я в тупик зашёл, не могу я права поднять, пробовал по всякому притянуть в кобу что бы в ней раскручиваться, не вышло, а по поводу элевейт кита ничего из этого не отрабатывает (незнаюкакзакриптовать)",
+          "author_name": "user7",
+          "author_icon": "/avatar/user7",
+          "message_link": "https://mediaeveryone.com/group/oasispetroleum-com?msg=WjC8jA9pp3cGTSPik",
+          "attachments": [],
+          "ts": "2020-12-02T10:56:27.615Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/oasispetroleum-com?msg=WjC8jA9pp3cGTSPik",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "mT5ZBBBfyXnoe58i6",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "msg": "отпиши сюда последним сообщением что было сделано на данный момент и в чем проблема",
+      "ts": "2020-12-02T12:31:30.694Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-02T12:31:30.724Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "pMTQhFobNbzgRrYCu",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "msg": "забыл)",
+      "ts": "2020-12-02T12:31:17.292Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-02T12:31:17.333Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "sqc74TBvWKnay6vs4",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "msg": "аа",
+      "ts": "2020-12-02T12:31:14.210Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-02T12:31:14.279Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "BRrFnnWkFrhP7J4rd",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "ts": "2020-12-02T11:29:20.880Z",
+      "msg": "",
+      "file": {
+        "_id": "uaqkvTBXo4ki26jHG",
+        "name": "ad_group.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_group.txt",
+          "title_link": "/file-upload/uaqkvTBXo4ki26jHG/ad_group.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-02T11:29:20.912Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "FGig5CSeWauENCdYJ",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "ts": "2020-12-02T11:29:18.692Z",
+      "msg": "",
+      "file": {
+        "_id": "FZroAhjTyC5QvCcML",
+        "name": "ad_computers.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_computers.txt",
+          "title_link": "/file-upload/FZroAhjTyC5QvCcML/ad_computers.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-02T11:29:18.726Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "bcuyhZGmw6aPHWHFk",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "ts": "2020-12-02T11:28:57.138Z",
+      "msg": "",
+      "file": {
+        "_id": "nf6M8YpNBCv6mnkQc",
+        "name": "ad_ous.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_ous.txt",
+          "title_link": "/file-upload/nf6M8YpNBCv6mnkQc/ad_ous.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-02T11:28:57.159Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ttyFZ5xekpnxd8q2L",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "ts": "2020-12-02T11:28:56.388Z",
+      "msg": "",
+      "file": {
+        "_id": "QzFg5RrDAQjv5akg8",
+        "name": "ad_subnets.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_subnets.txt",
+          "title_link": "/file-upload/QzFg5RrDAQjv5akg8/ad_subnets.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-02T11:28:56.411Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "buBTy4yg2mZSCb7Sx",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "ts": "2020-12-02T11:28:55.447Z",
+      "msg": "",
+      "file": {
+        "_id": "CqavX3eBZYuofLJtZ",
+        "name": "ad_trust.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_trust.txt",
+          "title_link": "/file-upload/CqavX3eBZYuofLJtZ/ad_trust.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-02T11:28:55.515Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "p8fg8BDgJ6P5wMQoG",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "msg": "залей файлики",
+      "ts": "2020-12-02T11:15:08.820Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-02T11:15:08.880Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "TwbEaKrYscCrg5roS",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "msg": "ты кстати вчера АД не залил сюда когда забрал",
+      "ts": "2020-12-02T11:15:05.022Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-02T11:15:05.066Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "9CdEuhbkzWh6dSjo7",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "msg": "))",
+      "ts": "2020-12-02T11:01:09.524Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-02T11:01:09.560Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "wTZwPu9EEm8HYneGx",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "ts": "2020-12-02T11:00:40.503Z",
+      "msg": "",
+      "file": {
+        "_id": "FgmwgMDXn7k6HDkiN",
+        "name": "Clipboard - 2 декабря 2020 г., 14:00",
+        "type": "image/png"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "Clipboard - 2 декабря 2020 г., 14:00",
+          "title_link": "/file-upload/FgmwgMDXn7k6HDkiN/Clipboard%20-%202%20%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F%202020%20%D0%B3.,%2014:00",
+          "title_link_download": true,
+          "image_dimensions": {
+            "width": 543,
+            "height": 343
+          },
+          "image_preview": "/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAUACADASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAIBBQMECP/EACIQAAEDAwMFAAAAAAAAAAAAAAEAAgMEERIjMWETIVFxcv/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABURAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIRAxEAPwDpupB6h1g3i6iFxivqh1/KStjymvlEPo91NPSybnC3CDchc5xORB9LKkYwtcdrJ0FVV0cM9XeQEngqzijbGwNbsEIVrMMhCFGn/9k=",
+          "image_url": "/file-upload/FgmwgMDXn7k6HDkiN/Clipboard%20-%202%20%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D1%8F%202020%20%D0%B3.,%2014:00",
+          "image_type": "image/png",
+          "image_size": 43033,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-02T11:00:40.530Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "mJZeYjHJ2ZhMZzM4D",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "msg": "виндэф и я походу уже нашумал там",
+      "ts": "2020-12-02T11:00:38.510Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-02T11:00:38.549Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6BR49apX3x4JdqjE5",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "msg": "какой едр продукт?",
+      "ts": "2020-12-02T11:00:08.345Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-02T11:00:08.383Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jxdcwxXnfyMcGMgdQ",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "msg": "пока поставим в приостановленные я дам новый доступ",
+      "ts": "2020-12-02T11:00:01.676Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-02T11:00:01.715Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "aHu7F78ghZmgbfokt",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "msg": "ок",
+      "ts": "2020-12-02T10:59:46.998Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-02T10:59:47.036Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WjC8jA9pp3cGTSPik",
+      "rid": "wyCc8yzKaQCPiX4Ts",
+      "msg": "что то я в тупик зашёл, не могу я права поднять, пробовал по всякому притянуть в кобу что бы в ней раскручиваться, не вышло, а по поводу элевейт кита ничего из этого не отрабатывает (незнаюкакзакриптовать)",
+      "ts": "2020-12-02T10:56:27.615Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-02T10:56:27.656Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

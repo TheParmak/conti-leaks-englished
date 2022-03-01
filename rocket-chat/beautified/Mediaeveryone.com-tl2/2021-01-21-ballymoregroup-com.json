@@ -1,0 +1,580 @@
+{
+  "messages": [
+    {
+      "_id": "Sy2QXQLvbKXmSfZSB",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "```\nhttps://login.veeam.com/,https://login.veeam.com/auth/realms/veeamsso/protocol/openid-connect/auth,21/12/2020 15:27:42,13253038062778136,londonit@ballymoregroup.com,I ?$??c\u0019$C?\u001d\n```",
+      "ts": "2021-01-21T23:39:56.854Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2021-01-21T23:39:56.940Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "PNi3KA5CgXQQpRSRj",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "км-нетпринтерс вообще не было",
+      "ts": "2021-01-21T23:39:06.464Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-01-22T00:13:09.020Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2021-01-22T00:13:09.017Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "2nQP6QoTgeNBZZkjt",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "```\n192.0.2.117:445 (platform: 500 version: 4.9 name: PREMIERNEW domain: WORKGROUP)\n192.0.2.214:445 (platform: 500 version: 6.1 name: TV-BALLY-S4P10 domain: WORKGROUP)\n \n192.168.3.206:445 (platform: 500 version: 2.0 name: KM89B642 domain: KM-NetPrinters)\n192.168.3.202:445 (platform: 500 version: 2.0 name: KM8FD05B domain: KM-NetPrinters)\n192.168.3.204:445 (platform: 500 version: 2.0 name: KM892613 domain: KM-NetPrinters)\n```",
+      "ts": "2021-01-21T23:38:43.134Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-01-22T00:12:54.792Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2021-01-22T00:12:54.787Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "TTgfctfQieAHcjk2H",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "https://login.veeam.com/",
+      "ts": "2021-01-21T23:32:34.391Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2021-01-21T23:32:34.436Z",
+      "urls": [
+        {
+          "url": "https://login.veeam.com/"
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ggA9DPB4Bo5ZAdCey",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "tarnold Canary5500",
+      "ts": "2021-01-21T23:23:40.965Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-01-21T23:23:41.021Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2mijABHDyaGDBxiMv",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "```\n192.0.2.3:443\n192.0.2.3:80\n- нас\nUsername : admin\nPassword : -6&`J{*n]e73e]Mm\n\n192.0.2.1:443\n192.0.2.1:80\n- VMWare ESXi\nпопробовал креды от наса\nсначала - Connection to ESXi host timed out\nпотом - Cannot complete login due to an incorrect user name or password.\n\n\n\n\n192.0.2.213:443\n192.0.2.213:80\n192.0.2.213:22 (SSH-2.0-OpenSSH_7.9)\n- ASRockRack IPMI\nвеб гуй мониторинг системы\nUsername : admin\nPassword : admin\n\n\n\n\n192.0.2.248:443\n192.0.2.248:80\n192.0.2.248:22 (SSH-2.0-mpSSH_0.2.1)\n- iLO 4 ProLiant HP, вкладка \"iLO: Bally44Backup-iLO.ballymoregroup.local\" \nоднако Ping request could not find host Bally44Backup-iLO.ballymoregroup.local. Please check the name and try again.\n\n192.168.3.162:443\n192.168.3.162:22 (SSH-2.0-mpSSH_0.2.1)\n- iLO 5 ProLiant хост указан ILOCZ292107HT.ballymoregroup.local\nPing request could not find host ILOCZ292107HT.ballymoregroup.local. Please check the name and try again.\n\n\n\n192.168.15.158:80\n- IIS Windows Server\n\n192.0.2.99:80\n- IIS Windows Server\n\n192.0.2.246:80\n- IIS7\n\n\n\n192.168.3.202:443\n- принтерсканер kyocera\n\n192.168.3.207:443\n- принтер HP DesignJet T1600 Printer\n\n192.0.2.243:8080\n192.0.2.243:443\n192.0.2.243:80\n- принтер HP DesignJet T2530 PostScript\n\n192.168.3.201:443\n- принтер\nhp LaserJet 4200 \n\n\n\n192.0.2.214:443\n192.0.2.214:80\n- вкладка \"TV-BALLY-S4P10 - Control Page\", ссылка \"https://7bj6wypy6p.dattolocal.net/login\", \nPortal based login is enabled for this device. In order to access this device, you must have a Datto Partner Portal account. \nКнопка Portal-Login редиректит на \"https://auth.datto.com/login\"\nЧекнул ДА с доменом через @, не прошли\n\n\n\n\n192.0.2.27:80\n- Schneider Electric is a European multinational company providing energy and automation digital solutions for efficiency and sustainability. \nIt addresses homes, buildings, data centers, infrastructure and industries, by combining energy technologies, real-time automation, software and services.\nКредов нет\n\n\n\n\n192.168.3.161:443\n- сходу просит логин-пароль\n\n\n\n10.0.180.254:8080\n10.0.180.254:443\n- WatchGuard\nhttps://10.0.180.254/sslvpn_logon.shtml\n\n\n\n\n192.168.3.21:443\n- VIA Collaboration Hub\nWith any laptop or mobile device, VIA wireless presentation and collaboration solutions let meeting participants share any size file, \nedit documents together in real time, turn the main display into a digital whiteboard, chat with other users, and stream full uninterrupted HD video (up to 1080p60).\nДве кнопки, Run и Install, обе предлагают скачать софтину\n\n\n\n\n\n\n\n\n\n\n\n192.0.2.117:22 (SSH-2.0-OpenSSH_5.3)\n192.0.2.105:22 (SSH-2.0-dropbear)\n192.0.2.71:22 (SSH-2.0-dropbear)\n192.0.2.59:22 (SSH-2.0-dropbear)\n192.0.2.50:22 (SSH-2.0-dropbear)\n192.0.2.48:22 (SSH-2.0-dropbear)\n192.0.2.39:22 (SSH-2.0-dropbear)\n192.0.2.24:22 (SSH-2.0-dropbear)\n192.0.2.15:22 (SSH-2.0-OpenSSH_4.3)\n192.0.2.9:22 (SSH-2.0-dropbear)\n192.0.2.4:22 (SSH-2.0-dropbear)\n192.168.72.100:22 (SSH-2.0-dropbear)\n192.168.72.77:22 (SSH-2.0-dropbear)\n192.168.72.55:22 (SSH-2.0-dropbear)\n\n\n\n\n\n\n\n192.0.2.250:443\n192.0.2.250:80\n192.0.2.250:22 (SSH-2.0-OpenSSH_6.2 PKIX)\n- не открылся, вкладка в браузере называется \"Document Moved\"\n\n192.0.2.242:443\n192.0.2.242:80\n- не открылся\n\n192.0.2.237:80\n- не открылся, вкладка \"TDSi Ethernet to Serial Module\"\n\n192.0.2.235:443\n192.0.2.235:80\n- не открылся\n\n192.0.2.234:443\n192.0.2.234:80\n- не открылся\n--- Chromium Credential (User: nreid) ---\nURL      : http://192.0.2.234/wcd/login.cgi\nUsername : \nPassword : 1234567812345678\n\n192.0.2.233:443\n192.0.2.233:80\n- не открылся\n\n192.0.2.232:80\n- не открылся, вкладка \"TDSi Ethernet to Serial Module\"\n\n192.0.2.230:443\n192.0.2.230:80\n- не открылся\n\n192.0.2.222:443\n192.0.2.222:80\n- не открылся\n\n192.0.2.219:80\n- не открывается до конца, вкладка \"Hewlett Packard\", слева синяя панель с лого hp\n\n192.0.2.191:80\n- вкладка \"Hewlett Packard\"\nне открылось\n\n192.0.2.190:443\n192.0.2.190:80\n- не открылось\n\n192.0.2.95:8080\n- не открылось\n\n192.168.3.206:443\n- не открылся\n\n192.168.3.204:443\n- не открылся\n\n192.168.3.130:443\n- не открылся\n\n192.168.15.252:80\n- не открылось, вкладка \"NETGEAR\"\n\n192.168.15.251:80\n- не открылось, вкладка \"NETGEAR\"\n\n192.168.15.206:443\n192.168.15.206:80\n- не открылось\n\n192.168.15.106:80\n- не открылось\n\n192.168.72.200:443\n192.168.72.200:80\n- не открылось\n\n192.168.72.158:80\n- не открылось\n\n192.0.3.10:80\n- не открылось\n\n10.0.180.4:443\n10.0.180.4:80\n- не открылось\n```",
+      "ts": "2021-01-21T23:14:38.568Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-01-21T23:14:39.009Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2B7qKQmALBz2ixQE2",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "Entry                          : g84.p4.webrootcloudav.com",
+      "ts": "2021-01-21T23:10:48.174Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2021-01-21T23:10:48.213Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "fvfuyG26shyZB2Tvc",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "https://www.webroot.com/us/en",
+      "ts": "2021-01-21T23:10:32.525Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2021-01-21T23:10:32.568Z",
+      "urls": [
+        {
+          "url": "https://www.webroot.com/us/en"
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "m7yhgY7aLqGEBTMS4",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "```\nBALLYMOREGROUP\\Administrator K33p1ngIT53cur3!?!?\n```",
+      "ts": "2021-01-21T21:52:08.938Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-01-21T21:52:08.998Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vWg4mzRfArkcjgF5Y",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "не сталкивался с этим сьютом",
+      "ts": "2021-01-21T19:09:03.932Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2021-01-21T19:09:03.968Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "L7qrcArXZ8SNCwmjB",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "тогда в целом пофиг",
+      "ts": "2021-01-21T18:51:37.709Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-01-21T18:51:37.735Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "sD2RrfRwRRtoRHmRW",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "не, нету",
+      "ts": "2021-01-21T18:51:19.047Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-01-21T18:51:19.090Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "c8cwH9LtahnxGyQjB",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "если есть то видимо с доп авером",
+      "ts": "2021-01-21T18:49:51.449Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-01-21T18:49:51.484Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "fyuoBy9usEAiZhrLM",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "есть ли такие в фильтре",
+      "ts": "2021-01-21T18:49:43.348Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-01-21T18:49:43.389Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "GjQsTq8LwCKexbgFN",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "чек малварь алерты",
+      "ts": "2021-01-21T18:49:40.296Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-01-21T18:49:40.332Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "szuryqZns5gMx2odC",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "в видео логах пусто",
+      "ts": "2021-01-21T18:47:24.030Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-01-21T18:47:24.058Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "7nGfsyFmDqowZDfFz",
+      "rid": "N2acKduH7SQJAGygn",
+      "ts": "2021-01-21T18:47:18.793Z",
+      "msg": "",
+      "file": {
+        "_id": "hobYPn3sPqKKgLAdh",
+        "name": "Clipboard - 21 января 2021 г., 21:47",
+        "type": "image/png"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "Clipboard - 21 января 2021 г., 21:47",
+          "title_link": "/file-upload/hobYPn3sPqKKgLAdh/Clipboard%20-%2021%20%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F%202021%20%D0%B3.,%2021:47",
+          "title_link_download": true,
+          "image_dimensions": {
+            "width": 1920,
+            "height": 1055
+          },
+          "image_preview": "/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAASACADASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAcEBgMFCP/EACgQAAEDAwMDAwUAAAAAAAAAAAECAwQABREGEiEHQdEIE2ExUYGDk//EABcBAQEBAQAAAAAAAAAAAAAAAAEAAgP/xAAaEQEAAgMBAAAAAAAAAAAAAAAAAREDITFB/9oADAMBAAIRAxEAPwCb0Qt8HUUqc3eYrTqGk5ScU6oekNNRkLSzbmsLGDxSb9MB3Trtkce33/FdEsbAhvJQPv8ASm0qR0HpQ5JtzXzxWNzQmlQnKba2fnFWp4oSw9koAzxyKGn2DDKS6zuxwNwqsagmumSEs9OpTrKUtumMSVoGD270o7pdbiHxifLHHZ5XmiismONdKu1xLRzcJf8AZXmo9rulwMtOZ0o/uV5ooo9c8vIf/9k=",
+          "image_url": "/file-upload/hobYPn3sPqKKgLAdh/Clipboard%20-%2021%20%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F%202021%20%D0%B3.,%2021:47",
+          "image_type": "image/png",
+          "image_size": 130209,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-01-21T18:47:18.842Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "sjKtLc7B7hp49XxXa",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "на что алертит",
+      "ts": "2021-01-21T18:45:05.275Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-01-21T18:45:05.315Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "u5hzhdAo2TiqZki7o",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "посмотри логи",
+      "ts": "2021-01-21T18:45:03.400Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-01-21T18:45:03.440Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "NwTprPEa5cMrFmmef",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "веб гуй мониторинг системы",
+      "ts": "2021-01-21T18:44:59.965Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-01-21T18:45:00.017Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "yNafuPxWaEvYodYaB",
+      "rid": "N2acKduH7SQJAGygn",
+      "ts": "2021-01-21T18:40:26.166Z",
+      "msg": "",
+      "file": {
+        "_id": "yoKwWjT8LnnhF8XCz",
+        "name": "Clipboard - 21 января 2021 г., 21:40",
+        "type": "image/png"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "Clipboard - 21 января 2021 г., 21:40",
+          "title_link": "/file-upload/yoKwWjT8LnnhF8XCz/Clipboard%20-%2021%20%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F%202021%20%D0%B3.,%2021:40",
+          "title_link_download": true,
+          "image_dimensions": {
+            "width": 1920,
+            "height": 1055
+          },
+          "image_preview": "/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAASACADASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAQHBgUI/8QALRAAAQMDAQYDCQAAAAAAAAAAAQIDBAAFEQYHEhUhQdEIFDETMjVRgYORk6H/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgD/xAAZEQEBAAMBAAAAAAAAAAAAAAAAARExQVH/2gAMAwEAAhEDEQA/AH9hdug6nlzm7rEaeSykbv8AKt0XRGnoqFpatrQCxg1F/C6SqddSRgbo9fpXosKTzypP5pzQyp2c6ZJJ4Y1k86572i9Iol+V4c2Hq3wcRn3k+nzpF2LFVJ8wQj2o65pl9Fl4jOzJCWdnMp1lIbdMYkrQMHp1qSXS63EPjE+WOXR5XeiioVNE+L3LPxCZ+5XemIF2uJf5z5Z+8rvRRSz/2Q==",
+          "image_url": "/file-upload/yoKwWjT8LnnhF8XCz/Clipboard%20-%2021%20%D1%8F%D0%BD%D0%B2%D0%B0%D1%80%D1%8F%202021%20%D0%B3.,%2021:40",
+          "image_type": "image/png",
+          "image_size": 121693,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-01-21T18:40:26.207Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Bf4JDYCwXDAovXNWB",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "а всё",
+      "ts": "2021-01-21T18:39:49.676Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-01-21T18:39:49.715Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Mh5Hcb9RmvzirFpBw",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "бл не открывается теперь",
+      "ts": "2021-01-21T18:39:44.205Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-01-21T18:39:44.250Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "dL842q7d7XcdTP74q",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "сокс уберите",
+      "ts": "2021-01-21T18:37:59.119Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-01-21T18:37:59.172Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Y9c5osm6njKR6FJNH",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "неа, дайте скрин",
+      "ts": "2021-01-21T18:37:57.306Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-01-21T18:37:57.355Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "btdwrimbPv9k88RGE",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "```\nhttps://en.wikipedia.org/wiki/Intelligent_Platform_Management_Interface\n```",
+      "ts": "2021-01-21T18:36:49.213Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2021-01-21T18:36:49.275Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "fzkJQ4YrAWt4Apwbh",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "дай ссылку",
+      "ts": "2021-01-21T18:35:03.773Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-01-21T18:35:03.817Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "LrnGWA8qvSQdN96A3",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "@tl1 @tl2 \nНе сталкивались с IPMI? Что это за штуковина такая?",
+      "ts": "2021-01-21T18:27:06.111Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-01-21T18:27:06.148Z",
+      "mentions": [
+        {
+          "_id": "yJcaRFnKQqepiffHq",
+          "username": "tl1",
+          "name": "Team Lead 1"
+        },
+        {
+          "_id": "Rmne8eAkiu37dhm5z",
+          "username": "tl2",
+          "name": "Team Lead 2"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "iQqqXixyjnPLQS7Pn",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "`Scanner module is complete`",
+      "ts": "2021-01-21T16:09:30.719Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-01-21T16:09:30.751Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "C8mMg542rG2xoejoX",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "```\n10.0.180.254:8080\n10.0.180.254:443\n10.0.180.4:443\n10.0.180.4:80\n```",
+      "ts": "2021-01-21T16:09:23.080Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-01-21T16:09:23.171Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "92YfwWDFZkiXpwHRA",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "```\n192.0.3.10:80\n```",
+      "ts": "2021-01-21T16:08:16.219Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-01-21T16:08:16.330Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "YZnHqNXQvnPLB98RY",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "```\n192.168.72.200:443\n192.168.72.200:80\n192.168.72.158:80\n192.168.72.100:22 (SSH-2.0-dropbear)\n192.168.72.77:22 (SSH-2.0-dropbear)\n192.168.72.55:22 (SSH-2.0-dropbear)\n```",
+      "ts": "2021-01-21T16:06:45.455Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-01-21T16:06:45.591Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "BZBbz9mpn2z2vkhB3",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "```\n192.168.15.252:80\n192.168.15.251:80\n192.168.15.206:443\n192.168.15.206:80\n192.168.15.158:80\n192.168.15.106:80\n```",
+      "ts": "2021-01-21T16:05:42.846Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-01-21T16:05:42.966Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "we6SdF5uawh5TjEFk",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "```\n192.168.3.207:443\n192.168.3.206:443\n192.168.3.204:443\n192.168.3.202:443\n192.168.3.201:443\n192.168.3.162:443\n192.168.3.161:443\n192.168.3.130:443\n192.168.3.21:443\n192.168.3.162:22 (SSH-2.0-mpSSH_0.2.1)\n```",
+      "ts": "2021-01-21T01:50:53.660Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-01-21T01:50:53.787Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hmJ53crnzWktnxNmp",
+      "rid": "N2acKduH7SQJAGygn",
+      "msg": "```\n192.0.2.250:443\n192.0.2.250:80\n192.0.2.248:443\n192.0.2.248:80\n192.0.2.246:80\n192.0.2.243:8080\n192.0.2.243:443\n192.0.2.243:80\n192.0.2.242:443\n192.0.2.242:80\n192.0.2.237:80\n192.0.2.235:443\n192.0.2.235:80\n192.0.2.234:443\n192.0.2.234:80\n192.0.2.233:443\n192.0.2.233:80\n192.0.2.232:80\n192.0.2.230:443\n192.0.2.230:80\n192.0.2.222:443\n192.0.2.222:80\n192.0.2.219:80\n192.0.2.214:443\n192.0.2.214:80\n192.0.2.213:443\n192.0.2.213:80\n192.0.2.191:80\n192.0.2.190:443\n192.0.2.190:80\n192.0.2.99:80\n192.0.2.95:8080\n192.0.2.27:80\n192.0.2.3:443\n192.0.2.3:80\n192.0.2.1:443\n192.0.2.1:80\n192.0.2.250:22 (SSH-2.0-OpenSSH_6.2 PKIX)\n192.0.2.248:22 (SSH-2.0-mpSSH_0.2.1)\n192.0.2.213:22 (SSH-2.0-OpenSSH_7.9)\n192.0.2.117:22 (SSH-2.0-OpenSSH_5.3)\n192.0.2.105:22 (SSH-2.0-dropbear)\n192.0.2.71:22 (SSH-2.0-dropbear)\n192.0.2.59:22 (SSH-2.0-dropbear)\n192.0.2.50:22 (SSH-2.0-dropbear)\n192.0.2.48:22 (SSH-2.0-dropbear)\n192.0.2.39:22 (SSH-2.0-dropbear)\n192.0.2.24:22 (SSH-2.0-dropbear)\n192.0.2.15:22 (SSH-2.0-OpenSSH_4.3)\n192.0.2.9:22 (SSH-2.0-dropbear)\n192.0.2.4:22 (SSH-2.0-dropbear)\n```",
+      "ts": "2021-01-21T01:44:06.239Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-01-21T16:31:04.437Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2021-01-21T16:31:04.433Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    }
+  ],
+  "success": true
+}

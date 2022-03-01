@@ -1,0 +1,421 @@
+{
+  "messages": [
+    {
+      "_id": "oEarBz2a7f5gCF6r7",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "кароч бля я ща объяснять если начну сильнее запутаю, проще реально прочитать)",
+      "ts": "2020-10-01T02:12:56.503Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-01T02:12:56.539Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "7ctMsr9rNmQzMa6z3",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "trustDirection это не доверенность, прочитай что я скинул",
+      "ts": "2020-10-01T02:12:20.616Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-01T02:12:20.655Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "kTMxoHAKrxEDiHK8k",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "http://www.harmj0y.net/blog/redteaming/the-trustpocalypse/",
+      "ts": "2020-10-01T02:12:08.775Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-01T02:12:08.801Z",
+      "urls": [
+        {
+          "url": "http://www.harmj0y.net/blog/redteaming/the-trustpocalypse/"
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "txPL4QTtPrm5nc8mL",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "так по сути доверенность двусторонняя?",
+      "ts": "2020-10-01T02:10:30.635Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-01T02:10:30.666Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "476JzBZyTPzqLqK5H",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "http://www.harmj0y.net/blog/redteaming/a-guide-to-attacking-domain-trusts/",
+      "ts": "2020-10-01T02:10:30.421Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-01T02:10:30.464Z",
+      "urls": [
+        {
+          "url": "http://www.harmj0y.net/blog/redteaming/a-guide-to-attacking-domain-trusts/"
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "DYdhNHQj5NuzGuaAg",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "почему это должно влиять на trustAttributes?",
+      "ts": "2020-10-01T02:10:04.770Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-01T02:10:04.808Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "P7Bhvp6nNJzhALevi",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "как на это влияет trustAttributes?",
+      "ts": "2020-10-01T02:04:19.591Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-01T02:04:19.630Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jstg4exQ9xzbTHzkR",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "его запросы доверены как входные так и выходные",
+      "ts": "2020-10-01T02:04:06.240Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-01T02:04:06.282Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3yQvX7eXuQFxKcciz",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "`>trustDirection: 3 [Inbound(1);Outbound(2)]`",
+      "ts": "2020-10-01T02:03:38.956Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-01T02:03:38.987Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZM9QKCRGMr4445SJM",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "```\ndn:CN=PANAVISION,CN=System,DC=panavision,DC=com\n>whenCreated: 2005/09/14-16:51:44 Pacific Daylight Time\n>name: PANAVISION\n>securityIdentifier: S-1-5-21-202912000-196093339-1136263860\n>trustDirection: 3 [Inbound(1);Outbound(2)]\n>trustPartner: PANAVISION\n>trustType: 1 [Downlevel(1)]\n>trustAttributes: 4 [Quarantined-Domain(4)]\n```",
+      "ts": "2020-10-01T02:03:32.463Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-01T02:03:32.543Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "aE6ZqLDX2FMFBwzzi",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "а можешь объяснить этот момент?",
+      "ts": "2020-10-01T02:03:25.552Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-01T02:03:25.587Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "QEBhDyfeCBHZejgdZ",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "слушай",
+      "ts": "2020-10-01T02:03:22.941Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-01T02:03:22.968Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jwJ8gMYF9n7D9LY5g",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "attacking quarantined domain",
+      "ts": "2020-10-01T01:24:18.922Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-01T01:24:18.954Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "BNzNMWz4MKkbdwDoL",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "```\nbeacon> shell ping -n 1 sa.panavision.com\n[*] Tasked beacon to run: ping -n 1 sa.panavision.com\n[+] host called home, sent: 58 bytes\n[+] received output:\n\nPinging sa.panavision.com [192.168.64.50] with 32 bytes of data:\nRequest timed out.\n\nPing statistics for 192.168.64.50:\n    Packets: Sent = 1, Received = 0, Lost = 1 (100% loss),\n\n```",
+      "ts": "2020-10-01T01:24:03.708Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-01T01:24:03.791Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "dcpsSgnwGu3tnifQ3",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "а еще я понял, что у нас нет sa домена",
+      "ts": "2020-10-01T01:23:20.402Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-01T01:23:20.439Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "BD2jDTpsSnoT2Q5AB",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "redteam migrate to quarantine domain?",
+      "ts": "2020-10-01T01:22:46.533Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-01T01:22:46.567Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6bqcnB9zj3pWmTbo8",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "как гуглить такие вопросы?",
+      "ts": "2020-10-01T01:22:28.776Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-01T01:22:28.808Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "uNknSnHybwfw3fX2S",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "в 2 потока",
+      "ts": "2020-10-01T01:21:36.772Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-01T01:21:36.812Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "wc6Hx79YXLStP8xva",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "да",
+      "ts": "2020-10-01T01:21:32.746Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-01T01:21:32.785Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "CZMKS2fNziiTw92kf",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "а что ты сканил? просто диапазон /24 ?",
+      "ts": "2020-10-01T01:21:29.249Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-01T01:21:29.272Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "n9rTnCfdTaG3gTtRD",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "тоже поработать хочу)",
+      "ts": "2020-10-01T01:21:12.030Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-01T01:21:12.054Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "bfoBsJmoGdWSLNKTH",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "в самое сердце...",
+      "ts": "2020-10-01T01:20:52.839Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-01T01:20:52.872Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vMRze3ZTNoHsJQk2t",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "работаю, но мне завтра не вставать с офисниками)))",
+      "ts": "2020-10-01T01:20:43.968Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-01T01:20:43.997Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "miKeaG9di72woQbte",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "а ты?",
+      "ts": "2020-10-01T01:20:30.576Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-01T01:20:30.613Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "sch2xBZwMTQyyrmzG",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": ")",
+      "ts": "2020-10-01T01:20:28.624Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-01T01:20:28.652Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "SW2nFohDsGxtx5mkN",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "да я обычно тут до утра",
+      "ts": "2020-10-01T01:20:26.398Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-01T01:20:26.429Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "bpYnCkGdzgknfzLnd",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "а ты чего не спишь то?",
+      "ts": "2020-10-01T01:20:14.938Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-01T01:20:14.961Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "i5GPWaDYsn8CqRaqX",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "не густо, 2 шт",
+      "ts": "2020-10-01T01:17:35.246Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-01T01:17:35.274Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "KvNthT8QqzeJTSEe6",
+      "rid": "sjuAWADcBvYjaYjBz",
+      "msg": "```\n[*] 10.100.7.15:445       - SMB Detected (versions:1, 2, 3) (preferred dialect:SMB 3.1.1) (compression capabilities:LZNT1) (encryption capabilities:AES-128-CCM) (signatures:required) (uptime:3w 0d 14h 29m 10s) (guid:{ce3aadf5-49db-4506-983e-b24acd38dfd6}) (authentication domain:PVRT)\n[+] 10.100.7.15:445       -   Host is running Windows 2016 Standard (build:14393) (name:GBL-DCON-01) (domain:PVRT)\n[*] 10.100.7.16:445       - Force SMB1 since SMB fingerprint needs native_lm/native_os information\n[*] 10.100.7.14:139       - Force SMB1 since SMB fingerprint needs native_lm/native_os information\n[*] 10.100.7.16:445       - SMB Detected (versions:1, 2, 3) (preferred dialect:SMB 3.1.1) (compression capabilities:LZNT1) (encryption capabilities:AES-128-CCM) (signatures:required) (uptime:3d 12h 33m 11s) (guid:{1466eec3-53c0-4eb4-af7e-1dabe2584051}) (authentication domain:PVRT)\n[+] 10.100.7.16:445       -   Host is running Windows 2016 Standard (build:14393) (name:GBL-DCON-02) (domain:PVRT)\n```",
+      "ts": "2020-10-01T01:17:25.930Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-01T01:17:26.109Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

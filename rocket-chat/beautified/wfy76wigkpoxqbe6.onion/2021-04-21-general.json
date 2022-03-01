@@ -1,0 +1,673 @@
+{
+  "messages": [
+    {
+      "_id": "dQWwjFDF2JwMSNf7s",
+      "rid": "GENERAL",
+      "msg": "ага спасибо)",
+      "ts": "2021-04-30T12:51:22.060Z",
+      "u": {
+        "_id": "GyGjEpYHCoaFvkjRp",
+        "username": "Tyr"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-30T12:51:22.081Z"
+    },
+    {
+      "_id": "gYRFzjRyk6sHGZQqd",
+      "rid": "GENERAL",
+      "tmid": "7D2qAhXP2jQBQqLXw",
+      "msg": "-rtt значит рекурсия(r),и команда для того чтобы паковать по дате изменения(tt)\nобычно все пакуется с рекурсией, чтобы нормально заархивировать папку\nопять же, `-tt` это ОТ заданной даты, `-t` это ДО заданной даты",
+      "ts": "2021-04-30T12:43:35.183Z",
+      "u": {
+        "_id": "gi2R3hPbtzGavMEAR",
+        "username": "kalinka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-30T12:44:26.467Z",
+      "editedAt": "2021-04-30T12:44:26.463Z",
+      "editedBy": {
+        "_id": "gi2R3hPbtzGavMEAR",
+        "username": "kalinka"
+      },
+      "tshow": false,
+      "urls": []
+    },
+    {
+      "_id": "dyub3rTh6zm6yPYFb",
+      "rid": "GENERAL",
+      "tshow": true,
+      "tmid": "7D2qAhXP2jQBQqLXw",
+      "msg": "комманда -rt рекурсивно, но что бы было без рекурсии надо писать без r в -rtt тоесть -rt. понятно что каша не понятно, где ошибка в комманде или описании?",
+      "ts": "2021-04-30T12:41:06.019Z",
+      "u": {
+        "_id": "GyGjEpYHCoaFvkjRp",
+        "username": "Tyr"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-30T12:41:06.075Z"
+    },
+    {
+      "_id": "7D2qAhXP2jQBQqLXw",
+      "rid": "GENERAL",
+      "msg": "```\nПАКУЕМ В ZIP ФАЙЛЫ ПО ДАТЕ ИЗМЕНЕНИЯ\nzip -rt 2018-01-01 C:\\Programdata\\zip.zip C:\\users\\admin\\Documents\\ - пакует РЕКУРСИВНО (без рекурсии убираем r в -rt) все файлы в папке Documents в архив zip.zip до указанной даты,т.е выкачивает все доки до 2018 года,старее не берет\nЕсли по какой-то причине нужно от 2018 года,то пишем -rtt (если без рекурсии то просто -tt)\n```",
+      "ts": "2021-04-30T12:38:57.498Z",
+      "u": {
+        "_id": "gi2R3hPbtzGavMEAR",
+        "username": "kalinka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-30T13:02:57.223Z",
+      "replies": [
+        "gi2R3hPbtzGavMEAR",
+        "GyGjEpYHCoaFvkjRp"
+      ],
+      "tcount": 2,
+      "tlm": "2021-04-30T12:43:35.183Z",
+      "editedAt": "2021-04-30T13:02:57.219Z",
+      "editedBy": {
+        "_id": "gi2R3hPbtzGavMEAR",
+        "username": "kalinka"
+      },
+      "urls": []
+    },
+    {
+      "_id": "eGJdFskTxEQEn3uTR",
+      "rid": "GENERAL",
+      "msg": "+",
+      "ts": "2021-04-29T23:22:06.816Z",
+      "u": {
+        "_id": "7qCe7q4MyokWoDo8H",
+        "username": "terner"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-29T23:22:06.828Z"
+    },
+    {
+      "_id": "J2hNaKL7E9cZAfD6F",
+      "rid": "GENERAL",
+      "msg": "хз, может все это уже знали кроме меня но все же:\nзадача была запустить шейрфайндер с нон-домен тачки(дедика) по впну, решили тем что вызвали павершел через ран эс,\n```\nrunas /netonly /user:domain.local\\user powershell\n``` \nи оттуда шейрфайндер, вывод есть, пользуйтесь на здоровье\nby octa",
+      "ts": "2021-04-29T23:14:49.072Z",
+      "u": {
+        "_id": "wXBaDBpsLNXdtgNTd",
+        "username": "cybercat"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-30T08:06:25.461Z",
+      "reactions": {
+        ":eyes:": {
+          "usernames": [
+            "giovanni"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "LtxmKoMf5yLrshdXZ",
+      "rid": "GENERAL",
+      "msg": "Парни, у кого то есть проблемные кейсы - взят ДА, но нет возможности пролочить из за АВ ? В частности софос. Черканите в личку, есть мысля как решить",
+      "ts": "2021-04-29T23:12:51.831Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-29T23:12:51.860Z"
+    },
+    {
+      "_id": "MZPgtj5zjj4QmvW8S",
+      "rid": "GENERAL",
+      "msg": "внутри скрипта видимо надо домен вбить вместо None",
+      "ts": "2021-04-29T04:08:40.130Z",
+      "u": {
+        "_id": "gi2R3hPbtzGavMEAR",
+        "username": "kalinka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-29T04:08:40.174Z"
+    },
+    {
+      "_id": "KfCnRhHhPgdX3H6qv",
+      "rid": "GENERAL",
+      "ts": "2021-04-28T21:55:07.978Z",
+      "msg": "",
+      "file": {
+        "_id": "C6v7Nyg5FCX449x9D",
+        "name": "Clipboard - April 28, 2021 9:55 PM",
+        "type": "image/png"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "title": "Clipboard - April 28, 2021 9:55 PM",
+          "type": "file",
+          "title_link": "/file-upload/C6v7Nyg5FCX449x9D/Clipboard%20-%20April%2028,%202021%209:55%20PM",
+          "title_link_download": true,
+          "image_url": "/file-upload/C6v7Nyg5FCX449x9D/Clipboard%20-%20April%2028,%202021%209:55%20PM",
+          "image_type": "image/png",
+          "image_size": 33961,
+          "image_dimensions": {
+            "width": 1033,
+            "height": 271
+          },
+          "image_preview": "/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQFCP/EACAQAAICAQMFAAAAAAAAAAAAAAACAREDBQYSFiEyM1H/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A5tyZsbLXKp+wRZLabh5oACdmavOzW2g7dS6f3n2QAB//2Q=="
+        }
+      ],
+      "u": {
+        "_id": "wXBaDBpsLNXdtgNTd",
+        "username": "cybercat"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-28T21:55:07.995Z"
+    },
+    {
+      "_id": "ntxeCRH965vfjQCzE",
+      "rid": "GENERAL",
+      "msg": "кто юзал https://github.com/Yt1g3r/CVE-2020-0688_EXP\nесть проблема с выполнением, авторизацию выдает корректную, а вот далее ошибка, кто сталкивался? пм",
+      "ts": "2021-04-28T21:54:47.873Z",
+      "u": {
+        "_id": "wXBaDBpsLNXdtgNTd",
+        "username": "cybercat"
+      },
+      "urls": [
+        {
+          "url": "https://github.com/Yt1g3r/CVE-2020-0688_EXP"
+        }
+      ],
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-28T21:54:47.887Z"
+    },
+    {
+      "_id": "a92CvCoDhoyq9ykrD",
+      "rid": "GENERAL",
+      "msg": "@kalinka пофиксили софос вроде как этот вариант, не сработало в крайних кейсах",
+      "ts": "2021-04-28T19:15:58.551Z",
+      "u": {
+        "_id": "rXQzrcjK8vNANfp9t",
+        "username": "sargon"
+      },
+      "mentions": [
+        {
+          "_id": "gi2R3hPbtzGavMEAR",
+          "username": "kalinka",
+          "name": "kalinka"
+        }
+      ],
+      "channels": [],
+      "_updatedAt": "2021-04-28T19:15:58.574Z"
+    },
+    {
+      "_id": "jvwjjundoJNFNyguL",
+      "rid": "GENERAL",
+      "msg": "[ ](https://stylebrooks.com/group/general?msg=2MNvAuFf3HxmhQ6iZ) пробовал? в 2х кейсах тестили - не воркало",
+      "ts": "2021-04-28T19:13:00.535Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "urls": [
+        {
+          "url": "https://stylebrooks.com/group/general?msg=2MNvAuFf3HxmhQ6iZ",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": [],
+      "attachments": [
+        {
+          "text": "софос ендпоинт можно вырубить пвш скриптом,но требуется ребут",
+          "author_name": "kalinka",
+          "author_icon": "/avatar/kalinka",
+          "message_link": "https://stylebrooks.com/group/general?msg=2MNvAuFf3HxmhQ6iZ",
+          "attachments": [],
+          "ts": "2021-04-28T18:10:52.990Z"
+        }
+      ],
+      "_updatedAt": "2021-04-28T19:13:00.588Z"
+    },
+    {
+      "_id": "jxfgyf4r5j2rzq2eE",
+      "rid": "GENERAL",
+      "msg": "и нафиг ему не страшны ав",
+      "ts": "2021-04-28T18:12:56.673Z",
+      "u": {
+        "_id": "GukQx3fszjwzDdu56",
+        "username": "Bug"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-28T18:12:56.686Z"
+    },
+    {
+      "_id": "8TDfirLPtzNsxeSyF",
+      "rid": "GENERAL",
+      "msg": "сам ребутает пк",
+      "ts": "2021-04-28T18:12:36.621Z",
+      "u": {
+        "_id": "GukQx3fszjwzDdu56",
+        "username": "Bug"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-28T18:12:36.636Z"
+    },
+    {
+      "_id": "McuTqf7MSB4mHWz58",
+      "rid": "GENERAL",
+      "msg": "надо локеру функционал как у ревилов слышал есть, он прописывается в ребут, в безопасный режим и локает",
+      "ts": "2021-04-28T18:12:18.157Z",
+      "u": {
+        "_id": "GukQx3fszjwzDdu56",
+        "username": "Bug"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-28T18:12:18.168Z"
+    },
+    {
+      "_id": "2MNvAuFf3HxmhQ6iZ",
+      "rid": "GENERAL",
+      "msg": "софос ендпоинт можно вырубить пвш скриптом,но требуется ребут",
+      "ts": "2021-04-28T18:10:52.990Z",
+      "u": {
+        "_id": "gi2R3hPbtzGavMEAR",
+        "username": "kalinka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-28T18:10:53.017Z"
+    },
+    {
+      "_id": "GB6whNkmBztAXwohx",
+      "rid": "GENERAL",
+      "msg": "у меня щас есть тут сетка италии, и тут софос на пароле тоже, я вот нашел панель, но в ней нихуя не понимаю. и хз вообще она ли это или нет. подумал что можно пайлоадом прогрузиться и залокать.",
+      "ts": "2021-04-28T18:07:27.121Z",
+      "u": {
+        "_id": "GukQx3fszjwzDdu56",
+        "username": "Bug"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-28T18:07:27.143Z"
+    },
+    {
+      "_id": "Ynsty8xzT6RQKuYzG",
+      "rid": "GENERAL",
+      "msg": "@Shved а если кобу криптануть и раскинуть пайлоад а потом длл лока проинжектить, почему не вариант?",
+      "ts": "2021-04-28T18:03:34.189Z",
+      "u": {
+        "_id": "GukQx3fszjwzDdu56",
+        "username": "Bug"
+      },
+      "mentions": [
+        {
+          "_id": "HaMWjjRMALAojGGTq",
+          "username": "Shved",
+          "name": "Shved"
+        }
+      ],
+      "channels": [],
+      "_updatedAt": "2021-04-28T18:03:34.215Z"
+    },
+    {
+      "_id": "jSMjLEtzMcQhbQJoG",
+      "rid": "GENERAL",
+      "msg": ":muscle:",
+      "ts": "2021-04-28T13:52:07.537Z",
+      "u": {
+        "_id": "AFnPFpKAXmAA36Rx5",
+        "username": "sarm"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-28T13:52:07.564Z"
+    },
+    {
+      "_id": "NKWrCmzdYe6cBL2Qi",
+      "rid": "GENERAL",
+      "msg": "спасибо, так и сделаю)",
+      "ts": "2021-04-28T13:51:59.729Z",
+      "u": {
+        "_id": "PHFjy9riB2PEg2bCZ",
+        "username": "hitech"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-28T13:51:59.742Z"
+    },
+    {
+      "_id": "x8rY6t77GkyoQM2Gj",
+      "rid": "GENERAL",
+      "msg": "найди тихие сервы и сливай с них",
+      "ts": "2021-04-28T13:51:10.217Z",
+      "u": {
+        "_id": "AFnPFpKAXmAA36Rx5",
+        "username": "sarm"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-28T13:51:10.238Z"
+    },
+    {
+      "_id": "yHo9EjEekfymzoe9J",
+      "rid": "GENERAL",
+      "msg": "Всем привет. Кто может помочь с локом сетки? Права подняты, данные выкачаны. Основной домен(175серв онлайн) + 2 траста(~40 серв онлайн). Проблема в том, что везде софос с паролем. Найти пасс от софоса не получается. Любые изменения в настройках софоса ограничены, маунтом локнуть не получится, хотя тачки без АВ есть. Нужен человек, который сможешь вырезать\\стопнуть софос. Отпишите в пм, кто умеет бороться с софосом.",
+      "ts": "2021-04-28T13:40:45.934Z",
+      "u": {
+        "_id": "HaMWjjRMALAojGGTq",
+        "username": "Shved"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-28T13:40:45.951Z"
+    },
+    {
+      "_id": "Q8wSMsvq26fc8iD3z",
+      "rid": "GENERAL",
+      "msg": "я в любое время, но рекомендуется ночью. на свой страх и риск",
+      "ts": "2021-04-28T13:30:59.107Z",
+      "u": {
+        "_id": "HaMWjjRMALAojGGTq",
+        "username": "Shved"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-28T13:30:59.116Z"
+    },
+    {
+      "_id": "wpGYNDFCyFkLM7QZp",
+      "rid": "GENERAL",
+      "msg": "всем привет! подскажите, дату обычно ставят сливать в рабочее время по сетке или ночью?",
+      "ts": "2021-04-28T13:29:59.672Z",
+      "u": {
+        "_id": "PHFjy9riB2PEg2bCZ",
+        "username": "hitech"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-28T13:29:59.704Z"
+    },
+    {
+      "_id": "6AEzCErBXvANwsKvv",
+      "rid": "GENERAL",
+      "msg": "если там просто активировать чето надо то без проблем",
+      "ts": "2021-04-27T22:02:18.168Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-27T22:02:18.200Z"
+    },
+    {
+      "_id": "C3XTJraGKsnwveQ7W",
+      "rid": "GENERAL",
+      "msg": "шопы, банки точно палят",
+      "ts": "2021-04-27T22:02:16.062Z",
+      "u": {
+        "_id": "Q8SseBxEstz68LKyN",
+        "username": "samuel"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-27T22:02:16.071Z"
+    },
+    {
+      "_id": "K7oXPGid46GfNQG2F",
+      "rid": "GENERAL",
+      "msg": "смотря кто",
+      "ts": "2021-04-27T22:01:55.348Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-27T22:01:55.367Z"
+    },
+    {
+      "_id": "mmHRSPM5Prov5F7ub",
+      "rid": "GENERAL",
+      "msg": "палят*",
+      "ts": "2021-04-27T22:01:43.469Z",
+      "u": {
+        "_id": "Q8SseBxEstz68LKyN",
+        "username": "samuel"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-27T22:01:43.479Z"
+    },
+    {
+      "_id": "SHvJW8BijmNgj2v97",
+      "rid": "GENERAL",
+      "msg": "гугл войс же вроде палям",
+      "ts": "2021-04-27T22:01:39.255Z",
+      "u": {
+        "_id": "Q8SseBxEstz68LKyN",
+        "username": "samuel"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-27T22:01:39.278Z"
+    },
+    {
+      "_id": "QxAKzDaxxhwD2hjGx",
+      "rid": "GENERAL",
+      "msg": "там прям под штат сможешь номер выбрать",
+      "ts": "2021-04-27T22:00:51.110Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-27T22:00:51.130Z"
+    },
+    {
+      "_id": "GGnmGsSnACYTuiXJF",
+      "rid": "GENERAL",
+      "msg": "могу шоп дать с гугл войсами",
+      "ts": "2021-04-27T22:00:36.481Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-27T22:00:36.508Z"
+    },
+    {
+      "_id": "8KqPM7kZJmJNux7nY",
+      "rid": "GENERAL",
+      "msg": "google voice",
+      "ts": "2021-04-27T21:59:48.153Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-27T21:59:48.177Z"
+    },
+    {
+      "_id": "Db9jsqdbjMXSMWmSp",
+      "rid": "GENERAL",
+      "msg": "Очень надо",
+      "ts": "2021-04-27T21:12:08.020Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-27T21:12:08.171Z"
+    },
+    {
+      "_id": "DxcSpNHEWWosCLJKK",
+      "rid": "GENERAL",
+      "msg": "Привет\nУ кого то есть вариант на постоянную симку в ЮС принять несколько смс? Активатор мб в контактах",
+      "ts": "2021-04-27T21:11:58.940Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-27T21:11:58.958Z"
+    },
+    {
+      "_id": "JPqoQeBZa6WDCx8dM",
+      "rid": "GENERAL",
+      "msg": "+",
+      "ts": "2021-04-26T22:56:56.767Z",
+      "u": {
+        "_id": "fFbCqTRzkTSxNjcJf",
+        "username": "fly"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-26T22:56:56.786Z"
+    },
+    {
+      "_id": "6SoATxdzFaJ3nb73i",
+      "rid": "GENERAL",
+      "msg": "это ОЧЕНЬ важно в плане получения доступов",
+      "ts": "2021-04-26T22:56:35.351Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-26T22:56:35.373Z"
+    },
+    {
+      "_id": "6Qc8JSTCF2S48gTj7",
+      "rid": "GENERAL",
+      "msg": "@all КО ВСЕМ, срочно.\nВ течении двух суток в сетях где работаете с правами и где есть эксчендж проверьте запущен ли виндеф на этих эксч серверах",
+      "ts": "2021-04-26T22:56:28.932Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [
+        {
+          "_id": "all",
+          "username": "all"
+        }
+      ],
+      "channels": [],
+      "_updatedAt": "2021-04-26T22:56:28.952Z"
+    },
+    {
+      "_id": "DvfWGtwSoCQ5yjniZ",
+      "rid": "GENERAL",
+      "msg": "@all вызовите меня в конфу пожалуйста где нужны билды локеров",
+      "ts": "2021-04-26T17:40:00.367Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [
+        {
+          "_id": "all",
+          "username": "all"
+        }
+      ],
+      "channels": [],
+      "_updatedAt": "2021-04-26T17:40:00.384Z"
+    },
+    {
+      "_id": "QGe3YGPbvptQfuJZQ",
+      "rid": "GENERAL",
+      "msg": "https://rmusser.net/docs/Active_Directory.html",
+      "ts": "2021-04-26T04:55:05.897Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "urls": [
+        {
+          "url": "https://rmusser.net/docs/Active_Directory.html"
+        }
+      ],
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-26T04:55:05.956Z"
+    },
+    {
+      "_id": "Muqb7n9H2GTWjxG4n",
+      "rid": "GENERAL",
+      "msg": "@all 209.222.97.78 - чей дед? не коннектит к нему",
+      "ts": "2021-04-22T12:48:39.421Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [
+        {
+          "_id": "all",
+          "username": "all"
+        }
+      ],
+      "channels": [],
+      "_updatedAt": "2021-04-22T12:48:39.449Z"
+    },
+    {
+      "_id": "bv5YHM45jqbsJwBmg",
+      "rid": "GENERAL",
+      "msg": "добавьте в конфу",
+      "ts": "2021-04-22T11:37:49.971Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-04-22T11:37:49.989Z"
+    },
+    {
+      "_id": "eZfnXsrTuHd5eePjt",
+      "rid": "GENERAL",
+      "msg": "@all laurent-perrier.fr не вижу кейса этого",
+      "ts": "2021-04-22T11:37:46.168Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [
+        {
+          "_id": "all",
+          "username": "all"
+        }
+      ],
+      "channels": [],
+      "_updatedAt": "2021-04-22T11:37:46.199Z"
+    },
+    {
+      "_id": "ewPvEfsZDAzTtpsga",
+      "t": "au",
+      "rid": "GENERAL",
+      "ts": "2021-04-21T00:36:48.164Z",
+      "msg": "jack",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-04-21T00:36:48.216Z"
+    }
+  ],
+  "success": true
+}

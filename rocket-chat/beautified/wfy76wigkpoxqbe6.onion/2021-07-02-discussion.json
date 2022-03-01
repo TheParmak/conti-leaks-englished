@@ -1,0 +1,654 @@
+{
+  "messages": [
+    {
+      "_id": "5hXmKHGPM3tX9eyB6",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "спасибо",
+      "ts": "2021-07-07T21:19:57.394Z",
+      "u": {
+        "_id": "inecFooFZ5sRCtvfZ",
+        "username": "lexman"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-07T21:19:57.420Z"
+    },
+    {
+      "_id": "SpRvtGqAyGctCqqF3",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "так редсокс и заворачивает через iptables",
+      "ts": "2021-07-07T13:22:22.408Z",
+      "u": {
+        "_id": "4AL9SfM3hHF5SxJfD",
+        "username": "slice"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-07T13:22:22.440Z"
+    },
+    {
+      "_id": "BBiz5Eds8fv6N5Yaq",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "```\nнадо чтото другое, которое позволяет Весь трафф заворачивать\n``` \niptables? : - )",
+      "ts": "2021-07-07T06:02:36.950Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-07T06:02:36.984Z"
+    },
+    {
+      "_id": "2pEtPoajoPZCdEdcs",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "tmid": "XLQgYY4HiR74MW6wq",
+      "msg": "@lexman мб полезно будет\n```\nhttps://github.com/darkk/redsocks\nhttps://habr.com/en/post/116360/\n```",
+      "ts": "2021-07-07T01:17:20.569Z",
+      "u": {
+        "_id": "wXBaDBpsLNXdtgNTd",
+        "username": "cybercat"
+      },
+      "mentions": [
+        {
+          "_id": "inecFooFZ5sRCtvfZ",
+          "username": "lexman",
+          "name": "lexman"
+        }
+      ],
+      "channels": [],
+      "_updatedAt": "2021-07-07T01:17:20.593Z"
+    },
+    {
+      "_id": "8gm5Jf3JsNxwpbPXz",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "Понял, спасибо, надо чтото другое, которое позволяет Весь трафф заворачивать, а не отдельную прогу",
+      "ts": "2021-07-06T23:05:45.867Z",
+      "u": {
+        "_id": "inecFooFZ5sRCtvfZ",
+        "username": "lexman"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-06T23:06:49.971Z",
+      "editedAt": "2021-07-06T23:06:49.969Z",
+      "editedBy": {
+        "_id": "inecFooFZ5sRCtvfZ",
+        "username": "lexman"
+      },
+      "urls": []
+    },
+    {
+      "_id": "cKNq4AGWbuZvf5MJm",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "tshow": true,
+      "tmid": "XLQgYY4HiR74MW6wq",
+      "msg": "по поводу всего трафа не знаю, если обернуть в тор, то есть torghost https://github.com/GitHackTools/TorghostNG\nно вообще проксичейнз должно хватить если ты его для кобы юзаешь, просто запусти нужный софт через проксичейнз",
+      "ts": "2021-07-06T23:03:14.350Z",
+      "u": {
+        "_id": "wXBaDBpsLNXdtgNTd",
+        "username": "cybercat"
+      },
+      "urls": [
+        {
+          "url": "https://github.com/GitHackTools/TorghostNG"
+        }
+      ],
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-06T23:03:14.389Z"
+    },
+    {
+      "_id": "BbfvvCE5uLoDseGTu",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "запускаешь через терминал:\nproxychains4 software_name ..atributes\ngithub:\n```\nhttps://github.com/rofl0r/proxychains-ng\n``` \nguide installation\n```\nhttps://en.kali.tools/?p=290\n```",
+      "ts": "2021-07-06T23:01:31.567Z",
+      "u": {
+        "_id": "wXBaDBpsLNXdtgNTd",
+        "username": "cybercat"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-06T23:01:31.603Z"
+    },
+    {
+      "_id": "XLQgYY4HiR74MW6wq",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "а как в нем весь трафф завернуть на сокс/тунель?",
+      "ts": "2021-07-06T22:49:31.530Z",
+      "u": {
+        "_id": "inecFooFZ5sRCtvfZ",
+        "username": "lexman"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-07T01:17:20.651Z",
+      "editedAt": "2021-07-06T22:49:47.790Z",
+      "editedBy": {
+        "_id": "inecFooFZ5sRCtvfZ",
+        "username": "lexman"
+      },
+      "urls": [],
+      "replies": [
+        "inecFooFZ5sRCtvfZ",
+        "wXBaDBpsLNXdtgNTd"
+      ],
+      "tcount": 2,
+      "tlm": "2021-07-07T01:17:20.569Z"
+    },
+    {
+      "_id": "zZJfeMzZLhFG3yui3",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "```\nproxychains4 (proxychains-ng)\n```",
+      "ts": "2021-07-06T22:48:31.023Z",
+      "u": {
+        "_id": "wXBaDBpsLNXdtgNTd",
+        "username": "cybercat"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-06T22:48:31.049Z"
+    },
+    {
+      "_id": "L9Awu89fpQJaxPi8L",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "Привет всем. Подскажите аналог Proxifier для линукса",
+      "ts": "2021-07-06T22:41:50.168Z",
+      "u": {
+        "_id": "inecFooFZ5sRCtvfZ",
+        "username": "lexman"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-06T22:43:22.182Z",
+      "editedAt": "2021-07-06T22:43:22.178Z",
+      "editedBy": {
+        "_id": "inecFooFZ5sRCtvfZ",
+        "username": "lexman"
+      },
+      "urls": []
+    },
+    {
+      "_id": "m7JH3QSCJvuewxqcd",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "я добавил виртуалбоксвм но хуникс не может соединиться с тор сетью если не дать брендмауэру разрешение по всем исходящим подключениям общего профиля, я пробовал включать все правила вручную, добавленные в брэндмауэр, все основы сетей, прописывал порты 9002 и 9030 и все равно без общего разрешения не соединяется",
+      "ts": "2021-07-04T06:29:20.153Z",
+      "u": {
+        "_id": "iz9ES5hWAMmTLJSz9",
+        "username": "alex"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-04T06:29:20.188Z"
+    },
+    {
+      "_id": "nrBhLJ9wA5gnoGCko",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "я хочу запретить в брэндмауэере все исходящие подключения кроме виртуалбокса и хрома, чтобы ни одна прога не могла отправить ни одного байта",
+      "ts": "2021-07-04T06:26:05.199Z",
+      "u": {
+        "_id": "iz9ES5hWAMmTLJSz9",
+        "username": "alex"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-04T06:26:05.239Z"
+    },
+    {
+      "_id": "NhrosBN3cEius4Jx5",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "https://www.whonix.org/wiki/Other_Operating_Systems",
+      "ts": "2021-07-03T20:16:49.846Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "urls": [
+        {
+          "url": "https://www.whonix.org/wiki/Other_Operating_Systems"
+        }
+      ],
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-03T20:16:49.860Z"
+    },
+    {
+      "_id": "8iM4kCDbyhPaGjiFM",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "поясни в чем проблема",
+      "ts": "2021-07-03T20:16:38.385Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-03T20:16:38.432Z"
+    },
+    {
+      "_id": "68YLCJxptTph4zHmv",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "есть спецы по хуниксу?) Не могу настроить нужное правило брэндмауэра для хуникса, что б подключался к сети с отключенными соединениями без правил. Добавил Виртуалбокс вм в разрешения и включал все уже имеющиеся правила, явно разрешил порты 9001 и 9030, но без разрешения всех исходящих подключений для общего профиля - не хочет подрубаться! Подскажите может кто знает что нужно добавить в правила что б эта шняга заработала",
+      "ts": "2021-07-03T16:01:08.869Z",
+      "u": {
+        "_id": "iz9ES5hWAMmTLJSz9",
+        "username": "alex"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-03T17:07:55.579Z",
+      "editedAt": "2021-07-03T17:07:55.575Z",
+      "editedBy": {
+        "_id": "iz9ES5hWAMmTLJSz9",
+        "username": "alex"
+      },
+      "urls": []
+    },
+    {
+      "_id": "PzQrpfzZKGjRz5bd3",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "вполне интересно",
+      "ts": "2021-07-02T14:58:45.236Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T14:58:45.259Z"
+    },
+    {
+      "_id": "kotcmtQ7gejr4BooY",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "а вот если без мсфа - да...",
+      "ts": "2021-07-02T14:58:43.365Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T14:58:43.385Z"
+    },
+    {
+      "_id": "tay5z3NbJYmrSYpXG",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "у тебя и так шифрованный стейджинг канал открыт )",
+      "ts": "2021-07-02T14:58:37.801Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T14:58:37.815Z"
+    },
+    {
+      "_id": "CGFBnZYBJ5FqtreEH",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "нтдс ты можешь выгрузить и метасплойтом )",
+      "ts": "2021-07-02T14:58:28.988Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T14:58:29.012Z"
+    },
+    {
+      "_id": "G6j7FeH8QntP3cBzD",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "нтдс там какой-нибудь выгрузить например)",
+      "ts": "2021-07-02T14:32:51.365Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T14:32:51.389Z"
+    },
+    {
+      "_id": "dq2ikTAEkdGFDo35b",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "энивей, мне кажется когда нужно слить немного и беспалева то этот инструмент может выручить",
+      "ts": "2021-07-02T14:32:32.623Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T14:32:32.656Z"
+    },
+    {
+      "_id": "58jX9k3cv6ANwPQpp",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "трафик можно будет заснять на изи",
+      "ts": "2021-07-02T14:32:01.605Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T14:32:01.644Z"
+    },
+    {
+      "_id": "BdY85uD9xtfZfxG5w",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "плюс днс это по умолчанию открытый протокол, не шифрованный",
+      "ts": "2021-07-02T14:31:55.928Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T14:31:55.970Z"
+    },
+    {
+      "_id": "RHRY4NsLcHMsKjyaC",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "про скорость интересный момент)",
+      "ts": "2021-07-02T14:31:42.802Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T14:31:42.844Z"
+    },
+    {
+      "_id": "WPTGjJ5WyC8cfdojE",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "это пиздец скорее всего)",
+      "ts": "2021-07-02T13:53:56.867Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:53:56.884Z"
+    },
+    {
+      "_id": "FGT5D5tCBGjFFMgio",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "скорость тестаните",
+      "ts": "2021-07-02T13:53:54.089Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:53:54.134Z"
+    },
+    {
+      "_id": "HjWHztnZJBN3zN5wk",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "плюс на никсы встанет, питон только нужен",
+      "ts": "2021-07-02T13:29:56.748Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:29:56.781Z"
+    },
+    {
+      "_id": "6JfQ7jFH4ugCiwqC5",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "может быть полезно как замена рклону, и на серверах где нет интернета, но при этом внешние адреса по днсу резолвятся",
+      "ts": "2021-07-02T13:29:26.132Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:29:26.153Z"
+    },
+    {
+      "_id": "mp8DADp8PYnxLJCAT",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "https://darkbyte.net/exfiltrando-informacion-por-dns-con-invoke-dnsteal/\nмануал",
+      "ts": "2021-07-02T13:28:55.437Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "urls": [
+        {
+          "url": "https://darkbyte.net/exfiltrando-informacion-por-dns-con-invoke-dnsteal/"
+        }
+      ],
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:28:55.458Z"
+    },
+    {
+      "_id": "SeqYn6g2DbWb79z6d",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "https://github.com/JoelGMSec/Invoke-DNSteal\nаналог рклона реализованный через днс транспорт",
+      "ts": "2021-07-02T13:28:38.108Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "urls": [
+        {
+          "url": "https://github.com/JoelGMSec/Invoke-DNSteal"
+        }
+      ],
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:28:38.139Z"
+    },
+    {
+      "_id": "Ee5XSY3NN5RpYsXca",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "если шо - напишем ТЗ кодерам, попробуют допилить",
+      "ts": "2021-07-02T13:14:57.568Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:14:57.578Z"
+    },
+    {
+      "_id": "wTHMggYKFn37Cxgmm",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "потестите на мелких сетях\nесли чё не будет работать - пишите мне или прям сюда, разберёмся",
+      "ts": "2021-07-02T13:14:48.548Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:14:48.579Z"
+    },
+    {
+      "_id": "TgKjbifG3JF3m8cWu",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "прикольно",
+      "ts": "2021-07-02T13:14:18.031Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:14:18.075Z"
+    },
+    {
+      "_id": "jJBZPjoF7hx7jGkK8",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "я по номерам не помню, но в этой сборке все полезные",
+      "ts": "2021-07-02T13:13:32.321Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:13:32.348Z"
+    },
+    {
+      "_id": "WFzvkMFxWvsN7brpv",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "некоторые из этого лпе",
+      "ts": "2021-07-02T13:13:14.852Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:13:14.882Z"
+    },
+    {
+      "_id": "PP5MKXwYvTMhkWAwc",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "```\nkernelexploits ->\nMS15-077 - (XP/Vista/Win7/Win8/2000/2003/2008/2012) x86 only!\nMS16-032 - (2008/7/8/10/2012)!\nMS16-135 - (WS2k16 only)!\nCVE-2018-8120 - May 2018, Windows 7 SP1/2008 SP2,2008 R2 SP1!\nCVE-2019-0841 - April 2019!\nCVE-2019-1069 - Polarbear Hardlink, Credentials needed - June 2019!\nCVE-2019-1129/1130 - Race Condition, multiples cores needed - July 2019!\nCVE-2019-1215 - September 2019 - x64 only!\nCVE-2020-0638 - February 2020 - x64 only!\nCVE-2020-0796 - SMBGhost\nCVE-2020-0787 - March 2020 - all windows versions\nCVE-2021-34527 - July 2021 - PrintNightmare\nJuicy-Potato Exploit\nitm4ns Printspoofer\n```",
+      "ts": "2021-07-02T13:13:09.863Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:13:09.903Z"
+    },
+    {
+      "_id": "bt8HyQuEJkHytKBzH",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "https://github.com/S3cur3Th1sSh1t/WinPwn",
+      "ts": "2021-07-02T13:12:59.183Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "urls": [
+        {
+          "url": "https://github.com/S3cur3Th1sSh1t/WinPwn"
+        }
+      ],
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:12:59.212Z"
+    },
+    {
+      "_id": "7heghCDzNGHt6PN4Y",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "я тебя понял)",
+      "ts": "2021-07-02T13:12:50.469Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:12:50.503Z"
+    },
+    {
+      "_id": "f6HgqQSZF8hmkKAQc",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "мелкие сетки",
+      "ts": "2021-07-02T13:12:33.686Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:12:33.718Z"
+    },
+    {
+      "_id": "E5oacRPn7YryEapiw",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "за неделю пару раз из 5",
+      "ts": "2021-07-02T13:12:30.072Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:12:30.084Z"
+    },
+    {
+      "_id": "N5dpYtjiEbn39Qx6z",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "окей\nмне нужна статистика (ну приблизительная, понятное дело), насколько часто срабатывает зерологон допустим, если ты видишь что на мс17 всё запатчено",
+      "ts": "2021-07-02T13:12:19.541Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:12:19.573Z"
+    },
+    {
+      "_id": "RWfeWvQZssbrSo9ET",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "клевая штука",
+      "ts": "2021-07-02T13:11:47.011Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:11:47.041Z"
+    },
+    {
+      "_id": "cNB9rhQZR6jTLWcTh",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "а конкретно рце / лпе 2020 и 21 годов",
+      "ts": "2021-07-02T13:11:41.619Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:11:41.631Z"
+    },
+    {
+      "_id": "QcN32uFWegdGTrvr3",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "zerologon",
+      "ts": "2021-07-02T13:11:40.232Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:11:40.266Z"
+    },
+    {
+      "_id": "WMafYujfxgn9dBL9J",
+      "rid": "fpRNTcoCaeBefKPD4",
+      "msg": "кто-нибудь в работе пользуется какими-то сплойтами помимо мс17?",
+      "ts": "2021-07-02T13:11:23.930Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-07-02T13:11:23.970Z"
+    }
+  ],
+  "success": true
+}

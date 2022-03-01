@@ -1,0 +1,64 @@
+{
+  "messages": [
+    {
+      "_id": "zRQwYZmCagjLMyCkk",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "msg": "ОБНОВЛЕНИЕ добавлен функционал варианта запуска локера, что снимает часть АВ детектов при дропе на диск\nЗапуск через regsvr32\n\n```\nregsvr32.exe /s locker.dll - без аргументов\nregsvr32.exe /s /n /i:\"тут аргументы\" - с аргументами\n``` \n\nЭто обновление принесло за собой необходимость смены точки входа, потому все билды которые выданы до 8 февраля с новыми свежими версиями БОФов работать НЕ БУДУТ! \nпросьба при подготовке новых кейсов брать НОВЫЕ билды с НОВЫМИ БОФ файлами инжектора",
+      "ts": "2021-02-10T20:19:54.215Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-02-10T20:19:54.238Z"
+    },
+    {
+      "_id": "pYhDdT9YfABkHH3KM",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "msg": "@all download and update",
+      "ts": "2021-02-03T18:45:30.913Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [
+        {
+          "_id": "all",
+          "username": "all"
+        }
+      ],
+      "channels": [],
+      "_updatedAt": "2021-02-03T18:45:30.925Z"
+    },
+    {
+      "_id": "fDgHf73oR6nw9Cf7G",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "ts": "2021-02-03T18:45:24.679Z",
+      "msg": "",
+      "file": {
+        "_id": "9SYhDQmWxwXFqDcPB",
+        "name": "BOF_injector.7z",
+        "type": "application/x-7z-compressed"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "title": "BOF_injector.7z",
+          "type": "file",
+          "description": "обновленная версия BOF файлов инжектора",
+          "title_link": "/file-upload/9SYhDQmWxwXFqDcPB/BOF_injector.7z",
+          "title_link_download": true
+        }
+      ],
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-02-03T18:45:24.690Z"
+    }
+  ],
+  "success": true
+}

