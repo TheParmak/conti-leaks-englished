@@ -1,0 +1,396 @@
+BACKDOOR
+OPERATOR'S MANUAL
+
+Backdoor is a bot with an emphasis on stealth and lightweight:
+- lightweight: nothing superfluous, only the bare minimum of functionality
+- two step loading: the loader (1st step), the functionality in the main bot (2nd step)
+- Possibility of automatic and manual fixation in the system
+- only the loader is saved on the hard disk, all AB detects are downloaded to it
+- redundant communication with C&C servers:
+  - hardwired pad list
+  - Emercoin reserve domains
+  - Emercoin domains generation by date
+- server validation by crypto-key (protection against hijacking by domain hijacking)
+- ability to automatically load needed bit depth (x86->x64)
+- incremental upgrade of individual bots only
+- stealth: minimize writing to disk during any operation
+- bypassing of anti-viruses by removal of hooks
+- regular cleaning
+
+The functionality of the bot is minimal, but sufficient to run third-party tools.
+You can:
+- get information about the system
+- run an .exe
+- run .dll through rundll32
+- run .bat-files and run individual commands through cmd.exe
+- run .ps1 files and run individual PowerShell commands
+- run shell code
+- Download an arbitrary file (limit size 10M)
+- kill the process
+- delete from disk
+
+The bot does NOT contain any password stylers, injectors, robbers, scanners, horizontal propagation, slots, or any other tools.
+You either use third-party vendors, or if necessary, we provide our own, executed as a PERSONAL SOFTWARE.
+For the emphasis on lightweighting.
+
+It is controlled from the operator panel.
+
+RECOMMENDED TACTICS
+
+The backdoor is intended to be used as a command shell.
+It is not just a launcher for your Cobalt Strike session (although that is how the backdoor is mostly used).
+You can do the most important of what the post-exploitation frameworks allow - execute ANY commands.
+Both the commands you already have on your target machine (the "living off the land" tactic),
+as well as your private tools loaded via the admin panel on the target.
+In cases where the framework session fails to pick up, it is still possible to work the target using your skill.
+
+Any third-party tools must be designed as .exe or .dll with a compatible entry point.
+The authors are willing to help in every way possible to test tools for backdoor compatibility, but the initiative for this must come from the pen tester.
+
+By default, after the first launch, the bot performs a minimum of activity - it does not try to get information about the system, does not try to latch on (if built as a non-resident).
+All of these actions are dangerous. To reduce the probability of detection, enough time must pass between the bot's start and these actions.
+Nevertheless, you can order the resident loader (with automatic anchoring),
+or you can use auto-run commands to automate these actions (see relevant section).
+For example, it is possible to prescribe in autorun a pause after start in 1 hour, execution of SysInfo command, pause, execution of Anchor command (anchoring).
+Uniqueness of pauses/sequences at each load will complicate behavioral analysis for AB/Yara.
+
+A new set of binary should be created for each new upload, changing the traffic profile and encryption keys (see the relevant section),
+thereby ensuring the uniqueness of the format of network requests and responses to the command server.
+
+You need to pay attention to cloaking (filtering out research queries) - see the relevant section.
+Bots that get into the Honeypots section get 500 responses to any query.
+
+The bot tries to minimize disk activity as much as possible by implementing stateless behavior.
+That is, it does not store any config somewhere on the disk (C&C and group addresses are written into it itself),
+does not store its identifier (it is always generated the same for the same computer).
+As a consequence, its lifetime is limited to the lifetime of the pads (reverse proxies protecting the C&C server).
+As a rule it is weeks, sometimes months, in the worst case - a day.
+In case the pads die off, there is a cold start procedure in which the bot uses the DGA algorithm (domain name generation) to find C&C addresses.
+If it is necessary to raise bots that have died out because of the pads, the system administrators should be notified to register backup domains.
+
+There is a function to update the bot, to:
+- replacing the pad list in the bot;
+- cleaning from AB detects.
+
+To update it you need:
+- order a set of binary with the changed version from the coder
+- give the update command "Force update now" on the desired bots, specifying the new binary of the loader
+
+Choose the right timeout parameter when executing commands/launching files.
+If you are bringing up another framework session, unloading a bot, in a word - running a process that will run for a long time (forever), choose "Background run".
+If you choose any other timeout, your command must finish before it expires.
+Otherwise the command will be forcibly terminated by the bot - for you it will look like "I start the session, it runs for 5 minutes and rips",
+or "I unloaded another bot, it worked for 5 minutes and it got nailed".
+
+If your load does not start, but the bot survives, do an analysis of the causes.
+Check AV reaction, read logs.
+You can read the Windows Defender log like this (powershell):
+
+    Get-WinEvent -LogName "Microsoft-Windows-Windows Defender/Operational" |
+        Where-Object {
+        $_.TimeCreated -ge '2021-01-01 00:00:00' -and
+        $_.Id -in 1006,1015,1116,1117 }
+
+
+
+****************
+OPERATOR PANEL
+****************
+
+Login via tor domain.
+In the menu there are 4 registers of bots:
+- Bots - important bots (true bots).
+- Unimportant - true bots with no special value (Workgroups, etc.)
+- Honeypots - Honeypots, Cloud AVs, Explorers machines
+- Test Bots - bots on which testing takes place.
+On the right there is an icon |> - this is the transition to the information to the card of the bot.
+Bots registries have a mechanism for group execution of commands and transferring bots between registries.
+
+The bot page has sections:
+- command builder
+- bot info
+- team history
+
+
+INSTRUCTION EXECUTION
+
+The bot loops around waiting for the command.
+There is an interval between requests to the server "give the command".
+The default is a random interval of 30 seconds to 2 minutes - when there is no command from the operator - this is the sleep mode.
+After the operator enters a command, the bot comes out of hibernation mode.
+The maximum interval of requests in this case is equal to the timeout value in the command builder for the selected command.
+It should be understood that the result of the command may come before the command timeout expires - and then the actual reaction time of the bot will be less.
+
+This is done so that inactive bots are less visible in network traffic. The price for this is that sometimes you have to wait.
+
+Once again, in simple terms:
+- while there are no commands, we are spinning in a 5-minute command request cycle;
+- When there are commands, the bounce rate depends on the timeout in the last command.
+
+Most commands are locking: that is, you can not execute the next command without waiting for a response from the previous one.
+In case the bot hangs up and there is no response, you can reset the command - Reset (see below).
+
+Further details about the command settings.
+
+
+NO OPERATION
+
+This is a way to change the command request interval, by a specified amount of time. The bot chooses a random interval before the next timeout, ranging from single to double the timeout specified in the command.
+It is also a way to ping the bot.
+Doesn't do anything else.
+
+SYSTEM INFO
+
+Obtains information about the system and sends it to the server.
+By default, the bot does not do this when it enters the system, so as not to glow
+(requests for such information can be triggers by behavior).
+The composition and format of information about the system is set hard at bot level.
+
+SYSINFO.BAT
+
+It also gets information about the system. In contrast to the "System Info" command, the data is obtained using an external bat-script. The composition and format of such information is determined by the operator's preferences.
+The text of the script is given in the appendix.
+
+RUN .EXE
+
+Launch the .exe file for execution.
+Load the file through the admin panel (or select a previously downloaded one from the history).
+
+Then there are the nuances:
+
+* To be successful, the file must be statically linked (i.e., it must not drag a bunch of .dlls along with it)
+for most hacker tools this is the case
+
+* choose the startup type:
+- Process Hollowing - fileless startup #1 (preferred option, we choose when we don't know what we're doing)
+- Process Doppelganging - fileless startup #2 (does not work in latest versions of Windows 10)
+- CreateProcess - startup with dumping the startup file to disk. Use when there is nothing else, or it is safe (no AB, etc.)
+The file is naturally cleaned up after execution
+
+For fileless startup, the RUNNING FILE MUST BE OF THE SIZE OF THE BOT itself (or as the size of the target OS for the mode where automatic loading of the correct size is used).
+In future versions, this restriction will be removed.
+
+* timeout
+- background run - runs a command in the background and immediately switches to waiting for the next command.
+This is how we run background services, daemons, etc.
+The output of the command is not registered, the bot is not interested in its fate.
+- Other timeout values - if the command is not finished during this time, we record the error and pass to the next command request.
+No other commands (except Reset) are accepted until the command is finished.
+Here and below, for all interactive run commands, command output is logged (stdout and stderr).
+If the command completes by timeout, the
+- the process is forcibly terminated and marked as terminated
+- the process output (stdout/stderr) will be transferred to the admins on a "as long as it took" basis.
+
+All files of tracked processes are deleted after the process is terminated (either normally or by timeout).
+For untracked processes (background run) the files are not touched.
+
+* Host Process
+For fileless startup (Process Hollowing/Process Doppelganging), we have to choose a zombie process, under the guise of which we are going to work.
+Select the process so that for console applications, the host process should also be console (cmd.exe),
+For windows applications (those built with /SUBSYSTEM Windows switch), it does not matter (there is no such limitation).
+
+This field is irrelevant for starting CreateProcess.
+
+* Select/Upload execution file
+Everything is clear here. Uploaded files are saved in the history.
+
+* Script params/PID/File name
+Command Line.
+
+RUN .DLL
+
+Run the function from the selected .dll with the utility rundll32.exe.
+All parameters are the same as for Run .exe; in the field "Script params/PID/File name" enter the name and arguments of the function to be executed from the .dll.
+Well, for example, if you enter
+
+  Start 1 2 3 4
+
+then the Start() function in the .dll will be executed and parameters 1, 2, 3, 4 will be passed to it
+
+The function must be designed as
+
+void CALLBACK NameFuction(HWND hwnd, HINSTANCE hinst, LPSTR lpszCmdLine, int nCmdShow);
+
+From wikipedia:
+
+Typical error sources
+It is assumed that the function called by Rundll32.exe has the following signature[6]:
+
+void CALLBACK NameFuction(HWND hwnd, HINSTANCE hinst, LPSTR lpszCmdLine, int nCmdShow);
+This, however, is often neglected[7] (similar examples on this page).
+This often leads to stack corruption[8] and unpredictable behavior, such as looping.
+
+
+RUN .BAT
+
+All parameters are as described above, except;
+* Run Type
+- Run From Memory - run fileless (from memory)
+- Dump And Run - running the script by dumping it on the disk and deleting it after execution
+* Script params/PID/File name - you can fill the script as a file
+or
+* Script - you can fill the script by hand (the field is resized, grab it with the mouse on the right below)
+
+When running from memory, each line of the script must end with \r\n.
+When running from disk, this is not critical.
+
+RUN POWERSHELL
+
+Everything is as in Run .bat
+The script runs like this:
+powershell -executionpolicy bypass -file tmpscript.ps1 %cmdline%
+
+
+RESET
+
+Intended to reset the hung command.
+Tells the bot to cancel the previous command, if there was one.
+
+
+FORCE UPDATE NOW
+
+Updating the boot loader.
+In the command select a new file - the bot downloads and drops it on the disk instead of the old boot loader file, then starts it.
+
+RUN SHELL CODE
+
+Execution of a given shell-code within the current process.
+RUN WITH EXTREME CAUTION!
+
+Shell-code is specified in 16-character representation, in any of the possible formats, i.e:
+
+aa bb cc dd ee ff .
+aa bbcc dd eeff .
+aabbccddeeff .
+\xAA, \xBB, \xCC, \xDD, .
+
+Character case is not taken into account.
+
+Shell-code is NEVER checked BEFORE starting!
+The probability of crashing the bot is high!
+This is a last resort. You have to be sure of what you are doing.
+It is recommended to test on a test bot first.
+
+
+TERMINATE PROCESS
+
+Kill an arbitrary process (if you have enough rights).
+In Script params/PID/File name enter the PID of the process.
+
+
+ANCHOR
+
+Command the bot to "anchor in the system". Used for assemblies with manual anchoring mode.
+If necessary, you can use manual anchoring mode instead of automatic and anchor only the desired bots in the system.
+
+
+DOWNLOAD FILE
+
+Request to download an arbitrary file from disk.
+In the Script params/PID/File name field enter the FULL PATH to the file.
+The size limit is 10M (for now).
+Needed for stealth, mainly, and also because it requires significant hard disk resources on the server.
+
+
+SUICIDE
+
+Deletes the boot loader and all traces of activity from the disk.
+The bot itself is not saved to the disk in any form.
+
+
+DASHBOARD
+
+The dashboard displays statistics on bots, broken down by groups and sections (rosters) of bots.
+
+
+GROUPS
+
+Groups are needed to separate botnets of different clients, as well as to logically organize bots.
+A group is hardwired into the bot and cannot be changed under any circumstances.
+The group is fixed in the database the first time the bot is tapped and then attached to the bot's ID.
+
+BOT TRAFFIC PROFILES
+
+To complicate bot detection by its traffic, it is possible to change the type of HTTP requests to communicate with C&C:
+- add false Cookies to add uniqueness to requests
+- Change URI suffixes for C&C communications
+- Set RSA encryption keys to encrypt communications.
+Profiles are changed on a group basis.
+
+AUTOLOAD COMMANDS
+
+You can automate the processing of new bots - form a sequence of commands that will be added to the command queue of the bots that first knocked.
+For this purpose, the "autoload packages" functionality is implemented. Groups can be divided by the way the incoming bots are processed, and a different sequence of commands can be set for each one.
+
+CLOAKING
+
+It is possible to automatically filter bots by country and/or address range in the context of groups.
+On the basis of the filtering rules, the necessary bots are determined, the rest will automatically fall into the Honeypots section.
+
+
+GUEST ACCESS
+
+It is possible to differentiate access for pen-testers: they will not be able to see all the bots in the group, but only those that they need to work with.
+To do this, it is possible to create guest accounts.
+These accounts have access to certain bots, which are assigned manually by the operator.
+
+
+MASS COMMAND EXECUTION
+
+There is a mechanism for performing group actions for several bots simultaneously:
+Several bots allocated in the registry can be given the same command or moved to another registry.
+This reduces the number of manual actions required when executing the same kind of commands.
+
+
+REPORTS
+
+VALUE REPORT
+
+Summary of useful bots, used to evaluate activity by selected groups and dates.
+There is an unloading in text format.
+
+
+APPENDIX
+RECOMMENDED SCRIPT FOR THE SYSINFO.BAT COMMAND
+
+@echo off
+
+echo General Info:
+systeminfo
+
+echo.
+echo My Username:
+whoami
+
+echo.
+echo Network Neighbourghoud:
+net view /all
+
+echo.
+echo Domain Neighbourghoud:
+net view /all /domain
+
+echo.
+echo Domain Trust:
+nltest /domain_trusts /all_trusts
+
+echo.
+echo Installed Programs:
+reg query hklm\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall /v "DisplayName" /s
+
+echo.
+echo Installed Programs (wow64):
+reg query hklm\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall /v "DisplayName" /s
+
+echo.
+echo Installed Programs (current user):
+reg query hkcu\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall /v "DisplayName" /s
+
+echo.
+echo Installed Programs (current user, wow64):
+reg query hkcu\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall /v "DisplayName" /s
+
+echo.
+echo Process List:
+tasklist
+

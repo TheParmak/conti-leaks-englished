@@ -1,0 +1,41 @@
+ACCOUNTING FOR TASKS IN THE BUG TRACKER
+
+There must be at least one task assigned to you at any given moment in the "In Progress" status.
+
+If you are working on a project alone, you create the tasks and keep the records yourself.
+For a project in development, this means you need to present the work plan in the form of tasks,
+break down a large task into subtasks, give time estimates for them.
+For a support project, these are ongoing routine tasks.
+
+Otherwise, the tasks are created by your technical supervisor.
+
+Give the task a runtime estimate, when created.
+
+Change the status of the task when you take it to work, send it for a test or review.
+
+The task must have a performer!
+
+The statuses "Test" and "Review" are assigned to the task only if it is relevant to this project.
+
+IN OPERATION -> TESTING When a task is put to testing, a tester becomes the executor.
+TEST -> IN OPERATION When a task is returned for revision, the developer becomes the executor.
+When a task is placed in "ready" status, the task is assigned to a project manager.
+
+For testing tasks, there must always be a primary task:
+- for development (something the developer has been working on and now needs to test it)
+- or a regular daily test (builds to be checked daily/regularly).
+In the first case, the developer transfers the task to the tester, the task is closed after acceptance.
+In the second case, the task can be open forever (with the assignment to the tester), in it goes the time and notes.
+
+Note the progress of the task.
+
+Make a note of the time you spend every day.
+
+If you want to attach a file (log, screenshot, etc.), you physically attach the file to the task.
+It is FORBIDDEN to provide links to file sharing sites.
+
+Keep work notes in the comments to the task.
+If there is a difficult problem on the way to the goal,
+or you've found a solution to a problem,
+or if you have a question, write a comment.
+Don't forget to link to the source of the solution.

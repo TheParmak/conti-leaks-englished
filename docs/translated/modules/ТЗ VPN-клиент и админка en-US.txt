@@ -1,0 +1,202 @@
+VPN CLIENT AND ADMIN
+TERMS OF REFERENCE
+
+PURPOSE
+To develop a VPN client for Windows with a user interface,
+auto-update function, and a control panel (admin panel).
+
+CLIENT
+The client has a simple windowed interface, with the following
+controls:
+* list of countries - checkboxes and names of the countries on whose behalf
+the client can operate on behalf of.
+We get from the VPN gateway.
+There is also meta-information next to each country:
+best, worst, and average bandwidth and ping values for
+gateways in a given country.
+* Connect/Disconnect button.
+
+The state machine is as follows:
+- Disconnected: not connected.
+The list of countries and the Connect button are available.
+- Connecting: Connecting.
+The button says Connecting. The button is available,
+but it can only be switched to Disconnected.
+The list of countries is blocked (gray, disabled).
+- Connected: Connected.
+The button shows Connected. The button is available,
+Button is available, but can only be switched to Disconnected.
+The list of countries is blocked (gray, disabled).
+
+The Connected state should display the ping time,
+channel bandwidth and the IP address of the gateway.
+
+The client is a wrapper over OpenVPN, which is able to accept from the master server
+necessary settings to form an openvpn config (or even a ready-made config)
+and start the openvpn process with the start of the connection.
+
+INSTALLER
+The program should have a simple installer on NSIS.
+The installer should be able to:
+- check the presence of the program in the system
+- work in update mode if the program is installed.
+In this case, you must stop the process before updating.
+
+The client itself should have an update checker function.
+Also, there should be an automatic update checker (Windows service).
+
+The installer must have extension points to run arbitrary
+.exe and command line scripts.
+For example, there could be scripts
+pre_update.bat
+post_update_success.bat
+post_update_error.bat
+which are executed before and after the installation process (in case of success and failure, respectively).
+The scripts must be present and run even if their contents are empty.
+
+
+CLIENT SETTINGS
+- address of the control server (it is set during installation, later on it can be corrected by
+can be updated by automatic updates)
+- login (issued by purchasing a subscription)
+- password
+
+HTTP API
+The client connects to the control server (its address is one of the client settings
+The client connects to the control server (its address is one of the client settings) with an HTTP request (more precisely, HTTPS - all exchange is through an encrypted channel)
+Apparently, in the variant of implementation using our off-the-shelf VPN-bridge,
+this API will be combined with the API of the VPN Bridge.
+
+POST /api/login HTTP/1.1
+
+request body - two fields packaged in application/x-www-form-urlencoded
+login
+password
+
+with the corresponding values
+
+Response code 200 is a success; all other codes are treated as an error.
+If an error is received in the HTTP response, further work is not possible.
+
+The body of the HTTP response contains the session identifier; all further requests
+requires it to be specified in the uri path. From the session identifier the server recognizes
+who we are.
+
+GET /api/<session_id>/countries HTTP/1.1
+
+Gives the list of available countries for connection in the format:
+country_code|ping_min|ping_max|bandwidth_min|bandwidth_max\r\n
+country_code - two-letter international country code
+ping_min - minimum ping
+ping_max - maximum ping
+bandwidth_min - minimum bandwidth
+bandwidth_max - maximum bandwidth
+All values except country are displayed in the interface as is.
+The country is displayed with a flag and full name.
+
+GET /api/<session_id>/config/<country_code>
+
+Gives a ready-made config for openvpn in a usable form.
+The connection is selected with a minimum number of users, at random, for the selected country.
+On the bridge side, the bridge must increment the user count for the selected connection.
+
+DELETE /api/<session_id>/config
+
+The bridge reduces by one the number of users for the last connection issued within the specified session.
+The connection is closed.
+The client sends this command when closing the VPN connection.
+
+The bridge must handle situations with hanging VPN connections by forcing completion and correcting
+The bridge must handle hung-up VPN connections by forcing them to end and correcting the usage sign (number of active users) on the connection.
+
+
+SUBSCRIPTION MANAGEMENT AND ADMIN
+To manage subscriptions, you need a site that has:
+- tariff plans
+- plan purchase
+
+On payment, there is no specifics.
+Let it be for example payment via bitcoin.
+Upon successful completion of the payment, the system should add the subscriber to the database,
+generate login/password and send it by mail/issue it on the page.
+
+When purchasing a tariff plan, the user gets the login-password required for the VPN-client.
+Also, it is necessary to collect maximum information about the user by minimally intrusive means:
+- IP address (you need to save two values: from the variable $REMOTE_ADDR, and the received js)
+- name
+- email
+- OS version (this version and the following data can be pulled out by advanced js, there are examples online - similar to fingerprinting)
+- browser
+- computer name (there are some problems with getting this from js)
+- username (also)
+In general, it's better to assemble more fields with contact info, and make them all optional (except email).
+
+With a system-issued login, the subscriber can log in to his personal cabinet.
+The main purpose of the Personal Cabinet is to have a payment form to renew the subscription.
+All sorts of extras like usage statistics, etc. can also be added there.
+
+
+ADMINK
+In the admin panel should be the following sections:
+* list of subscribers, with the ability to see detailed information about them
++ add
+List:
+- name
+- last activity
+- IP Address
+- expiration date
+- edit (button)
+- block
+
+When you open it for editing, you can see all the extended information that was collected
+when registering the user.
+
+The block button only blocks the user (puts the current end time of the subscription).
+The entry is NOT DELETE!
+
+* List of VPN sessions
+- Source IP Address
+- VPN endpoint IP address
+- started
+- last activity
+- disconnect
+
+
+AUTO-UPDATES
+There is a temptation to add in the admin panel for each subscriber "update software" button :)
+ BUT!
+Launching updates personally for any client or group of clients - quite a noticeable action,
+which is highly likely to block AV and attract attention.
+It is recommended to run third-party code in bulk, for all clients.
+I.e., the next version of the program is released and everyone is updated to it.
+Code execution is done in installer, with extension points (the same scripts
+pre_update.bat
+post_update_success.bat
+post_update_error.bat
+which are always empty - but they will have code in them at the right moment)
+If you need to exclude someone from updates, and perform a load on a particular client,
+then the cutting off is done directly in the load.
+We have data about the client - his address, OS version - collected when registering him when subscribing.
+This should be enough to put a condition in the load: "if the address is not this one, terminate and do nothing".
+
+Installers on the NSIS engine (as well as installers in general) usually get a bunch of detections
+on virustotal, even if they are completely harmless. This is historically the case - and there is an official note on the NSIS page
+has an official note and explanation about this
+https://nsis.sourceforge.io/NSIS_False_Positives
+Therefore, you'll have to mention it in your user manual and recommend to add the program
+to the antivirus exceptions.
+That is - it is quite common practice when the installer of normal legitimate software glows with detections,
+so both the installer and the software are added to AV exceptions. This will not attract attention.
+
+That's why we take such an intricate way - to maximize the life of software, at the cost of the convenience of our work.
+
+
+REFINING THE VPN BRIDGE
+
+You can use a VPN bridge to work with the following enhancements:
+1. The VPN bridge must check client B against the subscription database.
+The original bridge did not do this and accepted any connections from trusted IP addresses
+2. You must add to the bridge's webAPI a request for a listing of available connections
+
+In addition, it is required to make a terminal module on the A side, to initialize the far end of the VPN tunnel (analog of module A
+for the classical bridge scheme). Considering that it will be mostly Linux servers.

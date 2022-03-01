@@ -1,0 +1,52 @@
+TERMS OF REFERENCE
+PREPROCESSOR FOR ASSEMBLY CODE POLYMORPHING
+
+PURPOSE
+
+Develop a preprocessor that receives an Asm listing for input and outputs an Asm listing as well,
+in which the code is equivalent to the original one, but differs in instructions and possibly other criteria as well.
+
+REQUIREMENTS
+
+The preprocessor must be implemented as a command line utility.
+I/O is at developer's discretion:
+- read from stdin and write the result to stdout
+- command line switches where to take the file from and put the answer in
+- combination of 1 and 2
+
+There should be a brief help from the utility itself, and a detailed readme in Russian with a description of the program and its modes.
+
+Any heuristic can be turned on and off with command line switches.
+Any heuristic must have boundary conditions for its use, i.e. recommendations,
+when it is safe and when it is not.
+Only safe heuristics should be enabled by default.
+
+The preprocessor must understand the Microsoft Visual Studio 2010 assembler dialect.
+It must work with both 32-bit and 64-bit instructions.
+
+If you need to use compilers, translators and other tools, you need to provide detachment
+to specific vendors and versions. If you need to run a translator, this should be done by extension points.
+
+But in general, the preprocessor itself is expected to be included in one of the Visual Studio build events.
+
+
+REALIZATION
+
+The task is largely exploratory, and there are no ready recipes.
+The following substitutions can be suggested:
+- augmenting and diluting the code with noise (by doing nothing with meaningful instructions)
+- Relocation of addresses which do not need to be relocated (or introducing an additional offset in the addressing
+by adding parasite bytes to the code)
+- a sub-option is to change the order of allocation of variables on the stack
+- moving globals on the stack and stack variables to globals
+- moving static data to the .text code section
+- xor al, al to mov al, 0 and the like
+- reordering functions and independent code sections (you may need to split one file into several ones)
+- reordering of data-independent instructions within one function (if there are no memory barriers)
+- reordering of data definition
+- function encryption with dynamic decryption: searching for the prologue and epilogue of functions, encryption of the body, replacement of the body with a heap of db <byte>, substitution of the decryption code in the function prologue
+
+Probably on the methods of making the code polymorphic should use the achievements of the 90's.
+
+Use the getopt.c implementation to parse the command line.
+
