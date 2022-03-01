@@ -158,7 +158,7 @@
   "ts": "2021-02-16T16:04:53.685718",
   "from": "taker@q3mcco35auwcstmt.onion",
   "to": "zulas@q3mcco35auwcstmt.onion",
-  "body": "what does lero and dero mean? I'm already scratching my head, I can't think of anything that \"lero\" and \"l.e.r.o.\") def doesn't know either))"
+  "body": "what does lero and dero mean? I'm already scratching my head, I can't think of anything that {backslash}"lero{backslash}" and {backslash}"l.e.r.o.{backslash}") def doesn't know either))"
 }
 {
   "ts": "2021-02-16T16:11:36.063307",
@@ -440,7 +440,7 @@
   "ts": "2021-02-16T16:29:26.448272",
   "from": "taker@q3mcco35auwcstmt.onion",
   "to": "zulas@q3mcco35auwcstmt.onion",
-  "body": "src/filter/filter_parser.yrl\n3:%%@Author: Sergey Loguntsov <loguntsov@gmail.com>"
+  "body": "src/filter/filter_parser.yrl{backslash}n3:%%@Author: Sergey Loguntsov <loguntsov@gmail.com>"
 }
 {
   "ts": "2021-02-16T16:29:29.067147",
@@ -488,7 +488,7 @@
   "ts": "2021-02-16T16:32:57.662360",
   "from": "zulas@q3mcco35auwcstmt.onion",
   "to": "taker@q3mcco35auwcstmt.onion",
-  "body": "2 years ago .. also met an Erlangist .. he was like ... \"OO . I'll maintain your code after you\" .. it was nice )"
+  "body": "2 years ago .. also met an Erlangist .. he was like ... {backslash}"OO . I'll maintain your code after you{backslash}" .. it was nice )"
 }
 {
   "ts": "2021-02-16T16:33:12.644267",
@@ -554,7 +554,7 @@
   "ts": "2021-02-16T16:34:42.420118",
   "from": "zulas@q3mcco35auwcstmt.onion",
   "to": "taker@q3mcco35auwcstmt.onion",
-  "body": "> like with a trick you've surely run half the world through servers))\pi what do you mean by that ?"
+  "body": "> like with a trick you've surely run half the world through servers)){backslash}pi what do you mean by that ?"
 }
 {
   "ts": "2021-02-16T16:35:03.860657",
@@ -782,7 +782,7 @@
   "ts": "2021-02-16T16:52:53.592980",
   "from": "zulas@q3mcco35auwcstmt.onion",
   "to": "taker@q3mcco35auwcstmt.onion",
-  "body":"\n<<"true\">> => true,\n<"false\">> => false,\n<"id\">> => Client#client.client_id,\n<"client_ver\">> => Client#client.client_ver,\n<"name\">> => Client#client.name,\n<"group\">> => Client#client.group,\n<"ip\">> => Client#client.ip_parsed,\n<<"country\">> => Client#client.country,\n<"sys_ver\">> => Client#client.sys_ver,\n<"importance\">> => Client#client.importance,\n<"userdefined\">> => Client#client.userdefined\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
+  "body":"{backslash}n<<"true{backslash}">> => true,{backslash}n<"false{backslash}">> => false,{backslash}n<"id{backslash}">> => Client#client.client_id,{backslash}n<"client_ver{backslash}">> => Client#client.client_ver,{backslash}n<"name{backslash}">> => Client#client.name,{backslash}n<"group{backslash}">> => Client#client.group,{backslash}n<"ip{backslash}">> => Client#client.ip_parsed,{backslash}n<<"country{backslash}">> => Client#client.country,{backslash}n<"sys_ver{backslash}">> => Client#client.sys_ver,{backslash}n<"importance{backslash}">> => Client#client.importance,{backslash}n<"userdefined{backslash}">> => Client#client.userdefined{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n{backslash}n
 }
 {
   "ts": "2021-02-16T16:52:54.091283",
@@ -908,7 +908,7 @@
   "ts": "2021-02-16T17:09:16.136665",
   "from": "taker@q3mcco35auwcstmt.onion",
   "to": "zulas@q3mcco35auwcstmt.onion",
-  "body": ".PHONY: update_filters\nupdate_filters:\n\terl +pc uni"
+  "body": "PHONY: update_filters{backslash}nupdate_filters:{backslash}n{backslash}terl +pc uni"
 }
 {
   "ts": "2021-02-16T17:09:18.338350",
@@ -938,7 +938,7 @@
   "ts": "2021-02-16T17:26:15.423802",
   "from": "taker@q3mcco35auwcstmt.onion",
   "to": "zulas@q3mcco35auwcstmt.onion",
-  "body": "example".
+  "body": "example"
 }
 {
   "ts": "2021-02-16T17:26:27.524016",
@@ -950,7 +950,7 @@
   "ts": "2021-02-16T17:26:51.071463",
   "from": "taker@q3mcco35auwcstmt.onion",
   "to": "zulas@q3mcco35auwcstmt.onion",
-  "body": "17:25:29.239 [info] HTTP command <<\"1\">>, [<<\"Hello_token\">>], {client,undefined,<<\"asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDD\">>,undefined,undefined,<<"group1\">>,undefined,undefined,undefined,undefined,undefined,undefined,undefined,1613496329,undefined,false,undefined,false,undefined,undefined} \n17:25:29.240 [info] equery <<"SELECT id, logged_at, importance, userdefined, sys_ver, devhash_1, devhash_2, devhash_3, devhash_4, country, is_manual_importance, created_at, last_activity FROM clients WHERE id_high = $1 AND id_low = $2">> [-6144092014192636707,-6144092014192636707]\n17:25:29.241 [info] Time path /group1/asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDD/1/Hello_token:2449\n17:25:49.061 [info] HTTP command <<\"10\">>, [<<\"1\">>,<<\"asd\">>,<<\"hello\">>], {client,undefined,<<\"asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDD\">>,undefined,undefined,<<"group1\">>,undefined,undefined,undefined,undefined,undefined,undefined,1613496349,undefined,false,undefined,false,undefined,undefined} \n17:25:49.061 [info] Time path /group1/asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDD/10/1/asd/hello:201"
+  "body": "17:25:29.239 [info] HTTP command <<{backslash}"1{backslash}">>, [<<{backslash}"Hello_token{backslash}">>], {client,undefined,<<{backslash}"asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDD{backslash}">>,undefined,undefined,<<"group1{backslash}">>,undefined,undefined,undefined,undefined,undefined,undefined,undefined,1613496329,undefined,false,undefined,false,undefined,undefined} {backslash}n17:25:29.240 [info] equery <<"SELECT id, logged_at, importance, userdefined, sys_ver, devhash_1, devhash_2, devhash_3, devhash_4, country, is_manual_importance, created_at, last_activity FROM clients WHERE id_high = $1 AND id_low = $2">> [-6144092014192636707,-6144092014192636707]{backslash}n17:25:29.241 [info] Time path /group1/asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDD/1/Hello_token:2449{backslash}n17:25:49.061 [info] HTTP command <<{backslash}"10{backslash}">>, [<<{backslash}"1{backslash}">>,<<{backslash}"asd{backslash}">>,<<{backslash}"hello{backslash}">>], {client,undefined,<<{backslash}"asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDD{backslash}">>,undefined,undefined,<<"group1{backslash}">>,undefined,undefined,undefined,undefined,undefined,undefined,1613496349,undefined,false,undefined,false,undefined,undefined} {backslash}n17:25:49.061 [info] Time path /group1/asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDD/10/1/asd/hello:201"
 }
 {
   "ts": "2021-02-16T17:27:01.829232",
@@ -974,7 +974,7 @@
   "ts": "2021-02-16T17:31:24.627207",
   "from": "taker@q3mcco35auwcstmt.onion",
   "to": "zulas@q3mcco35auwcstmt.onion",
-  "body": "wget --progress=dot --server-response -O - http://localhost:8083/test2/TRICKSOF-E5FA2F_W512600.9DE50B4F9A7211787402A39844CE7D79/0/Windows%20XP%20SP3/1001/5.139.220.204/97923686594599b400f716fa558d4d347f56c6e3230d65f752c43b3287fc3bea/9clDtgGG9/\nэта?"
+  "body": "wget --progress=dot --server-response -O - http://localhost:8083/test2/TRICKSOF-E5FA2F_W512600.9DE50B4F9A7211787402A39844CE7D79/0/Windows%20XP%20SP3/1001/5.139.220.204/97923686594599b400f716fa558d4d347f56c6e3230d65f752c43b3287fc3bea/9clDtgGG9/{backslash}nэта?"
 }
 {
   "ts": "2021-02-16T17:31:26.553859",
@@ -986,19 +986,19 @@
   "ts": "2021-02-16T17:32:37.320133",
   "from": "taker@q3mcco35auwcstmt.onion",
   "to": "zulas@q3mcco35auwcstmt.onion",
-  "body": "7:31:59.770 [critical] Error {badmatch,{error,einval}} [{http_handler,command,4,[{file,{"/root/lero_new/_build/default/lib/cmd_server/src/http_handler.erl"},{line,91}]},{http_handler,handle,2,[{file,{"/root/lero_new/_build/default/lib/cmd_server/src/http_handler.erl"},{line,46}]},{cowboy_handler,handler_handle,4,[{file,{"/root/lero/_build/default/lib/cowboy/src/cowboy_handler.erl"},{line,111}]},{cowboy_protocol,execute,4,[{file,{"/root/lero/_build/default/lib/cowboy/src/cowboy_protocol.erl"},{line,442}]}]"
+  "body": "7:31:59.770 [critical] Error {badmatch,{error,einval}} [{http_handler,command,4,[{file,{"/root/lero_new/_build/default/lib/cmd_server/src/http_handler.erl"{line,91}]{http_handler,handle,2,[{file,{"/root/lero_new/_build/default/lib/cmd_server/src/http_handler.erl"{line,46}]{cowboy_handler,handler_handle,4,[{file,{"/root/lero/_build/default/lib/cowboy/src/cowboy_handler.erl"{line,111}]{cowboy_protocol,execute,4,[{file,{"/root/lero/_build/default/lib/cowboy/src/cowboy_protocol.erl"{line,442}]}]"
 }
 {
   "ts": "2021-02-16T17:33:02.984355",
   "from": "zulas@q3mcco35auwcstmt.onion",
   "to": "taker@q3mcco35auwcstmt.onion",
-  "body": "{ ok, IpParsed } = inet:parse_address(ClientIp),\ip some curve"
+  "body": "{ ok, IpParsed } = inet:parse_address(ClientIp),{backslash}ip some curve"
 }
 {
   "ts": "2021-02-16T17:33:03.247032",
   "from": "taker@q3mcco35auwcstmt.onion",
   "to": "zulas@q3mcco35auwcstmt.onion",
-  "body": "but the command he understood: HTTP command <<\"0\">>, [<<\"Windows XP SP3\">>,<<\"1001\">>,<<\"5.139.220.204\">>,<<\"97923686594599b400f716fa558d4d347f56c6e3230d65f752c43b3287fc3bea\">>,<<\"9clDtgGG9\">>,<<>>], {client,undefined,<<\"TRICKSOF-E5FA2F_W512600.9DE50B4F9A7211787402A39844CE7D79\">>,undefined,undefined,<<"test2\">>,undefined,undefined,undefined,undefined,undefined,undefined,1613496719,undefined,false,false,undefined,undefined}"
+  "body": "but the command he understood: HTTP command <<{backslash}"0{backslash}">>, [<<{backslash}"Windows XP SP3{backslash}">>,<<{backslash}"1001{backslash}">>,<<{backslash}"5.139.220.204{backslash}">>,<<{backslash}"97923686594599b400f716fa558d4d347f56c6e3230d65f752c43b3287fc3bea{backslash}">>,<<{backslash}"9clDtgGG9{backslash}">>,<<>>], {client,undefined,<<{backslash}"TRICKSOF-E5FA2F_W512600.9DE50B4F9A7211787402A39844CE7D79{backslash}">>,undefined,undefined,<<"test2{backslash}">>,undefined,undefined,undefined,undefined,undefined,undefined,1613496719,undefined,false,false,undefined,undefined}"
 }
 {
   "ts": "2021-02-16T17:33:12.982730",
@@ -1022,7 +1022,7 @@
   "ts": "2021-02-16T17:35:53.958093",
   "from": "zulas@q3mcco35auwcstmt.onion"
   "to": "taker@q3mcco35auwcstmt.onion",
-  "body": "command(<<\"0\">>, [ SystemVersion, ClientVersion, ClientIp, BinDevHash, Token | _ ], Client, Req) ->\position in URL"
+  "body": "command(<<{backslash}"0{backslash}">>, [ SystemVersion, ClientVersion, ClientIp, BinDevHash, Token | _ ], Client, Req) ->{backslash}position in URL"
 }
 {
   "ts": "2021-02-16T17:36:49.126368",
