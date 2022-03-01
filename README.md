@@ -13,8 +13,8 @@ v2:
 Here is the tweet this was shared: https://twitter.com/ContiLeaks/status/1498434108275494912
 
 And here is the anonfiles links: https://anonfiles.com/T6vad0L7x5/185.25.51.173-20220226_json
-								 https://anonfiles.com/Vev6dbLbx6/185.25.51.173-20220227_json
-							     https://anonfiles.com/X0vcd8L7x8/185.25.51.173-20220228_json
+				 https://anonfiles.com/Vev6dbLbx6/185.25.51.173-20220227_json
+				 https://anonfiles.com/X0vcd8L7x8/185.25.51.173-20220228_json
 ```
 
 prox.sh:
