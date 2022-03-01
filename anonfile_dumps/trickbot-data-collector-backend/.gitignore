@@ -1,0 +1,9 @@
+ebin
+deps
+log
+.rebar
+.idea
+*.iml
+erl_crash.dump
+*.pid
+!include/secure.hrl

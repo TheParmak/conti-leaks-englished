@@ -1,0 +1,28 @@
+{application, cmd_server, [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+    kernel,
+    stdlib,
+    lager,
+    cowboy
+  ]},
+  {mod, {cmd_server_app, []}},
+  {env, [
+    { port, 8083 }, %% Порт на котором сидит HTTP-сервер
+    { api_port, 8090 }, %% Порт API
+    { auth_timeout, 86400 }, %% Таймаут авторизации после которого клиент считается оффлайн
+    { db, [ %% Настройки базы данных
+      { server, "localhost" },
+      { port, 5432 },
+      { user, "postgres" },
+      { password, "1qazxsw2"},
+      { database, "lero_6" },
+      { connections, 10 } %% Количество соединений в пуле
+    ]},
+    { importance_cache_update_interval, 1800 }, %% Время обновления кеша importance-правил, секунды
+    { commands_event_cache_update_interval, 1800}, %% Время обновления комманд для событий, секунды,
+    { db_timeout, infinity } %% Таймаут для выполения запросов к БД.
+  ]}
+]}.

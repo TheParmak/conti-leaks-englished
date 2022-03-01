@@ -1,0 +1,155 @@
+.caret {
+    margin-left: 4px;
+}
+
+.text-muted {
+    color: #bbb;
+}
+
+.navbar .divider-vertical {
+    height: 50px;
+    margin: 0 9px;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #f2f2f2;
+    margin-left: 30px;
+}
+
+.wrap-word{
+    word-break: break-all;
+}
+
+
+.modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    padding-top: 100px;
+    padding-bottom: 100px; }
+
+.modal-bg .dialog {
+    border: 1px solid #eee;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    -khtml-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+    background: white;
+    border-radius: 5px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.modal-dialog {
+    width: 800px !important;
+}
+
+.modal-bg .comments-modal{
+  width:600px;
+}
+
+.modal .modal-body {
+    max-height: 420px;
+    overflow-y: auto;
+}
+
+body.modal-open .datepicker {
+    z-index: 1051 !important;
+}
+
+.has-ajax-loader {
+    position: relative;
+}
+
+.has-ajax-loader .ajax-loader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.has-ajax-loader .ajax-loader:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    margin-left: -8px;
+    background: url("../img/ajax-loader.gif");
+}
+
+.user-row {
+    margin-bottom: 14px;
+}
+
+.user-row:last-child {
+    margin-bottom: 0;
+}
+
+.table-user-information > tbody > tr {
+    border-top: 1px solid rgb(221, 221, 221);
+}
+
+.table-user-information > tbody > tr:first-child {
+    border-top: 0;
+}
+
+
+.table-user-information > tbody > tr > td {
+    border-top: 0;
+}
+
+.submit-link {
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+    color: #337ab7;
+    cursor: pointer;
+}
+
+.submit-link:focus {
+    outline: none;
+}
+
+.submit-link:focus, .submit-link:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+.submit-link::-moz-focus-inner {
+    border:0;
+    padding:0;
+}
+
+#clientFilterTable tbody tr td .bootstrap-select{
+    margin-bottom: 0px;
+}
+
+input[type="search"]{
+    height: auto;
+}
+
+.input-title { display: table-cell; width: 120px; }
+input.commentField  { display: table-cell; width:100%;}
+
+.form-control{
+    height: auto !important;
+}
+
+.well-sm .panel-body{
+    padding: 0px;
+}
+
+.total{
+    margin-left:10px;
+    margin-top: 5px;
+}
+
+.navbar-fixed-side .navbar-nav{
+    margin: 0;
+}

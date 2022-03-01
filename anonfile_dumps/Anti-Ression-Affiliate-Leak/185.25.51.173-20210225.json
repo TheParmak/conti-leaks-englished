@@ -1,0 +1,810 @@
+{
+  "ts": "2021-02-25T01:08:26.386807",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "bonen@q3mcco35auwcstmt.onion",
+  "body": "Кто сможет разобраться по уязвимости sonicwall\nИ сделать рабочий сканер"
+}
+{
+  "ts": "2021-02-25T04:06:47.519826",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "van@q3mcco35auwcstmt.onion",
+  "body": "Кто сможет разобраться по уязвимости sonicwall\nИ сделать рабочий сканер"
+}
+{
+  "ts": "2021-02-25T04:06:47.521563",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "van@q3mcco35auwcstmt.onion",
+  "body": "смотри дальше, нужен крипт"
+}
+{
+  "ts": "2021-02-25T04:13:25.022752",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "ghost@q3mcco35auwcstmt.onion",
+  "body": "Кто сможет разобраться по уязвимости sonicwall\nИ сделать рабочий сканер"
+}
+{
+  "ts": "2021-02-25T04:19:09.863125",
+  "from": "ghost@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "Вот это, \nCVE-2020-5135: Critical SonicWall VPN Portal Stack-based Buffer Overflow Vulnerability\nда?"
+}
+{
+  "ts": "2021-02-25T06:46:20.009356",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "naned@q3mcco35auwcstmt.onion",
+  "body": "Кто сможет разобраться по уязвимости sonicwall\nИ сделать рабочий сканер"
+}
+{
+  "ts": "2021-02-25T06:52:19.949229",
+  "from": "many@q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "так блиг тоже не работает(( создаю ехе работает"
+}
+{
+  "ts": "2021-02-25T06:52:19.951729",
+  "from": "many@q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "Function TestFunc() As Boolean\n    \n    hInstance = GetModuleHandle(ByVal 0&)\n    \n    tLenght = mHCP(AddressOf tshellStart) - mHCP(AddressOf tShellEnd)\n    \n    tDis = VirtualAlloc(ByVal 0&, tLenght, MEM_COMMIT, &H40)\n    \n    CopyMemory ByVal tDis, ByVal mHCP(AddressOf tShellEnd), tLenght\n    \n    tSpliceFromRes AddressOf BexToPointer, tDis + mHCP(AddressOf fContent) - mHCP(AddressOf tShellEnd)\n    \n    InitMyShellCode (tDis)\n\n    Dim hResource       As Long:                Dim hMememory       As Long\n    Dim lResSize        As Long:                Dim pRawData        As Long\n\n    hResource = FindResource(hInstance, GetString(PROJECT), RT_RCDATA)\n    \n    hMememory = LoadResource(hInstance, hResource)\n    \n    lResSize = SizeofResource(hInstance, hResource)\n    \n    pRawData = LockResource(hMememory)\n    \n    Dim ret As Variant\n    ret = MessageBox(0, \"0\", \"0\", 0)\n\n    BexToPointer pRawData\n        \n    \nEnd Function"
+}
+{
+  "ts": "2021-02-25T06:52:19.953182",
+  "from": "many@q3mcco35auwcstmt.onion",
+  "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "создаю длл (может неправельно создаю или что то еще надо) не работает доходит до    ret = MessageBox(0, \"0\", \"0\", 0) и все.. но ошибки нет типо ресурс не найден"
+}
+{
+  "ts": "2021-02-25T07:09:34.422869",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "mushroom@q3mcco35auwcstmt.onion",
+  "body": "Кто сможет разобраться по уязвимости sonicwall\nИ сделать рабочий сканер"
+}
+{
+  "ts": "2021-02-25T07:14:37.161172",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "kingston@q3mcco35auwcstmt.onion",
+  "body": "Кто сможет разобраться по уязвимости sonicwall\nИ сделать рабочий сканер"
+}
+{
+  "ts": "2021-02-25T07:29:35.451449",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "clipper@q3mcco35auwcstmt.onion",
+  "body": "Кто сможет разобраться по уязвимости sonicwall\nИ сделать рабочий сканер"
+}
+{
+  "ts": "2021-02-25T08:05:35.075213",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "licor@q3mcco35auwcstmt.onion",
+  "body": "Кто сможет разобраться по уязвимости sonicwall\nИ сделать рабочий сканер"
+}
+{
+  "ts": "2021-02-25T08:18:04.801765",
+  "from": "johnyboy77@q3mcco35auwcstmt.onion",
+  "to": "buza@q3mcco35auwcstmt.onion",
+  "body": "прив"
+}
+{
+  "ts": "2021-02-25T08:18:04.804369",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "buza@q3mcco35auwcstmt.onion",
+  "body": "https://bit-ly.ru/f9d4h"
+}
+{
+  "ts": "2021-02-25T08:49:26.304805",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "kaktus@q3mcco35auwcstmt.onion",
+  "body": "Кто сможет разобраться по уязвимости sonicwall\nИ сделать рабочий сканер"
+}
+{
+  "ts": "2021-02-25T09:52:50.468709",
+  "from": "baget@q3mcco35auwcstmt.onion",
+  "to": "globus@q3mcco35auwcstmt.onion",
+  "body": "Привет, дорогой."
+}
+{
+  "ts": "2021-02-25T10:38:54.209322",
+  "from": "ramon@q3mcco35auwcstmt.onion",
+  "to": "tatarin@q3mcco35auwcstmt.onion",
+  "body": "otpsihi"
+}
+{
+  "ts": "2021-02-25T11:04:49.212042",
+  "from": "love@q3mcco35auwcstmt.onion",
+  "to": "void@q3mcco35auwcstmt.onion",
+  "body": "123"
+}
+{
+  "ts": "2021-02-25T11:23:30.202189",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "ку"
+}
+{
+  "ts": "2021-02-25T12:02:25.586542",
+  "from": "ghost@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "Вот это, \nCVE-2020-5135: Critical SonicWall VPN Portal Stack-based Buffer Overflow Vulnerability\nда?"
+}
+{
+  "ts": "2021-02-25T12:08:49.586627",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "reshaev@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2021-02-25T12:08:53.117433",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "reshaev@q3mcco35auwcstmt.onion",
+  "body": "скинул от боба"
+}
+{
+  "ts": "2021-02-25T12:13:13.989685",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "надо сандею дать доступ к определенному ботнету во вторую админку, ботнет rob* и чтобы именно там был внц"
+}
+{
+  "ts": "2021-02-25T12:14:15.185543",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "kevin@q3mcco35auwcstmt.onion",
+  "body": "Пирвет"
+}
+{
+  "ts": "2021-02-25T12:14:24.473614",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "kevin@q3mcco35auwcstmt.onion",
+  "body": "давно не общались"
+}
+{
+  "ts": "2021-02-25T12:14:24.856689",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "kevin@q3mcco35auwcstmt.onion",
+  "body": ")"
+}
+{
+  "ts": "2021-02-25T12:55:43.564849",
+  "from": "ramon@q3mcco35auwcstmt.onion",
+  "to": "tatarin@q3mcco35auwcstmt.onion",
+  "body": "otpsihi"
+}
+{
+  "ts": "2021-02-25T13:14:10.869025",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "Здарова. ну ты не охотно общаешься, я не дергаю."
+}
+{
+  "ts": "2021-02-25T13:19:26.937307",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "стоун тут кстати пару дней назад активизировался"
+}
+{
+  "ts": "2021-02-25T13:19:31.547355",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "какого-то хуя"
+}
+{
+  "ts": "2021-02-25T13:19:36.942124",
+  "from": "reshaev@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "Приветок"
+}
+{
+  "ts": "2021-02-25T13:19:44.016573",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "еле удержался чтобы на хуй не послать"
+}
+{
+  "ts": "2021-02-25T13:19:54.173181",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "у нас и с поллом все хорошо."
+}
+{
+  "ts": "2021-02-25T13:20:16.450550",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "если ты спросить по делам как идет, идет норм. спамим. полл при деле. все как обычно."
+}
+{
+  "ts": "2021-02-25T13:32:48.236938",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "а я кстати тебе писал)"
+}
+{
+  "ts": "2021-02-25T13:33:10.923225",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "[09.02.2021 20:12:05] <Kevin> привет.\n[09.02.2021 20:12:09] <Kevin> как оно?\n[09.02.2021 20:12:19] <Kevin> полл поднял немного настроение?\n[09.02.2021 20:46:03] <Stern> привет да"
+}
+{
+  "ts": "2021-02-25T13:33:21.190552",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "не очень то похоже что ты говоришь желанием общаться."
+}
+{
+  "ts": "2021-02-25T13:33:22.125937",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": ")"
+}
+{
+  "ts": "2021-02-25T13:33:26.226075",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "горишь*"
+}
+{
+  "ts": "2021-02-25T13:35:36.361978",
+  "from": "stern@q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "Кто сможет разобраться по уязвимости sonicwall\nИ сделать рабочий сканер"
+}
+{
+  "ts": "2021-02-25T13:39:00.138795",
+  "from": "hlor@q3mcco35auwcstmt.onion",
+  "to": "hlor@q3mcco35auwcstmt.onion",
+  "body": "asd"
+}
+{
+  "ts": "2021-02-25T14:05:50.502977",
+  "from": "grant@q3mcco35auwcstmt.onion",
+  "to": "sunday@q3mcco35auwcstmt.onion",
+  "body": "ку"
+}
+{
+  "ts": "2021-02-25T14:07:51.906236",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "как дела"
+}
+{
+  "ts": "2021-02-25T14:08:01.839660",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "стерна поймал сегодня"
+}
+{
+  "ts": "2021-02-25T14:08:16.052587",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "дефендер уже делают внц на твой ботнет во второй панельки"
+}
+{
+  "ts": "2021-02-25T14:08:21.233130",
+  "from": "grant@q3mcco35auwcstmt.onion",
+  "to": "sunday@q3mcco35auwcstmt.onion",
+  "body": "работать ща буду"
+}
+{
+  "ts": "2021-02-25T14:08:31.020361",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "док сделали?"
+}
+{
+  "ts": "2021-02-25T14:08:40.618008",
+  "from": "grant@q3mcco35auwcstmt.onion",
+  "to": "sunday@q3mcco35auwcstmt.onion",
+  "body": "я сегодня на первую"
+}
+{
+  "ts": "2021-02-25T14:08:54.655290",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "давай"
+}
+{
+  "ts": "2021-02-25T14:08:56.441848",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "прикол хочешь"
+}
+{
+  "ts": "2021-02-25T14:09:10.577874",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "[04:14:06] <track> тут?\n\n[04:14:17] <track> срочно\n[04:14:18] <track> срочно\n[04:14:25] <Yellow> да\n[04:14:55] <track> что делать, вчера буханул телефон разбил, там 2фа от биржи\n[04:15:03] <track> пиздааааааааааааа\n[04:15:28] <Yellow> какая биржа\n[04:15:36] <track> битфинекс"
+}
+{
+  "ts": "2021-02-25T14:09:43.071053",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "😊"
+}
+{
+  "ts": "2021-02-25T14:09:54.223815",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "может пить перстанет теперь"
+}
+{
+  "ts": "2021-02-25T14:21:33.753792",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "скинь кош еще"
+}
+{
+  "ts": "2021-02-25T14:22:00.654483",
+  "from": "grant@q3mcco35auwcstmt.onion",
+  "to": "sunday@q3mcco35auwcstmt.onion",
+  "body": "15gjb8F5Zd8XRKBCgVxsr8ZuVzr7yBtnCN"
+}
+{
+  "ts": "2021-02-25T14:37:19.882682",
+  "from": "grant@q3mcco35auwcstmt.onion",
+  "to": "sunday@q3mcco35auwcstmt.onion",
+  "body": "запустил"
+}
+{
+  "ts": "2021-02-25T14:42:51.068043",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "cча"
+}
+{
+  "ts": "2021-02-25T14:42:52.632610",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "его нету"
+}
+{
+  "ts": "2021-02-25T14:43:00.917148",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "телефон побежал чинить"
+}
+{
+  "ts": "2021-02-25T14:43:13.763904",
+  "from": "grant@q3mcco35auwcstmt.onion",
+  "to": "sunday@q3mcco35auwcstmt.onion",
+  "body": "ага"
+}
+{
+  "ts": "2021-02-25T14:43:15.101323",
+  "from": "grant@q3mcco35auwcstmt.onion",
+  "to": "sunday@q3mcco35auwcstmt.onion",
+  "body": "много там?"
+}
+{
+  "ts": "2021-02-25T14:43:19.043360",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "неа"
+}
+{
+  "ts": "2021-02-25T14:43:20.328656",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "мало"
+}
+{
+  "ts": "2021-02-25T14:43:24.688900",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "вчера тупа не шло"
+}
+{
+  "ts": "2021-02-25T14:43:30.930127",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "палка кривая или денег не хватало"
+}
+{
+  "ts": "2021-02-25T14:43:36.551229",
+  "from": "grant@q3mcco35auwcstmt.onion",
+  "to": "sunday@q3mcco35auwcstmt.onion",
+  "body": "по к будет?"
+}
+{
+  "ts": "2021-02-25T14:43:39.171100",
+  "from": "grant@q3mcco35auwcstmt.onion",
+  "to": "sunday@q3mcco35auwcstmt.onion",
+  "body": "1"
+}
+{
+  "ts": "2021-02-25T14:43:48.879854",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "кстати панелька внц опять лежит"
+}
+{
+  "ts": "2021-02-25T14:43:53.929704",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "подчти по 2к"
+}
+{
+  "ts": "2021-02-25T14:43:55.033834",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "1"
+}
+{
+  "ts": "2021-02-25T14:45:15.618733",
+  "from": "grant@q3mcco35auwcstmt.onion",
+  "to": "sunday@q3mcco35auwcstmt.onion",
+  "body": "о ну норм"
+}
+{
+  "ts": "2021-02-25T14:45:15.619909",
+  "from": "grant@q3mcco35auwcstmt.onion",
+  "to": "sunday@q3mcco35auwcstmt.onion",
+  "body": "тоже"
+}
+{
+  "ts": "2021-02-25T14:46:10.013108",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "где то по 1200 вышло"
+}
+{
+  "ts": "2021-02-25T14:46:11.620063",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "скинул"
+}
+{
+  "ts": "2021-02-25T14:46:21.027583",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "вчера рельно можно было больше сделать"
+}
+{
+  "ts": "2021-02-25T14:46:25.770348",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "он крупных дропов давал"
+}
+{
+  "ts": "2021-02-25T14:46:33.047850",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "по 3-5к евро"
+}
+{
+  "ts": "2021-02-25T14:46:38.263552",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "можно было нахуячить"
+}
+{
+  "ts": "2021-02-25T14:47:21.178524",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "еще раз попроси стерна что бы он сказал чувакам не трогать ботов rob*"
+}
+{
+  "ts": "2021-02-25T14:47:21.184010",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "они уебут все за 2 часа"
+}
+{
+  "ts": "2021-02-25T14:47:21.727181",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "пока нальщик телефон чинит"
+}
+{
+  "ts": "2021-02-25T14:47:22.661773",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "может блять пить бросит"
+}
+{
+  "ts": "2021-02-25T14:47:29.097075",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "там бабла пиздец у него"
+}
+{
+  "ts": "2021-02-25T14:47:31.784666",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "он хвастался бухой"
+}
+{
+  "ts": "2021-02-25T14:47:43.712239",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "типа что в деньгах не нуждаеться уже и тп"
+}
+{
+  "ts": "2021-02-25T15:15:39.311336",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2021-02-25T15:15:39.430202",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "тут?"
+}
+{
+  "ts": "2021-02-25T16:25:37.248069",
+  "from": "revers@q3mcco35auwcstmt.onion",
+  "to": "johnyboy77@q3mcco35auwcstmt.onion",
+  "body": "ага"
+}
+{
+  "ts": "2021-02-25T16:34:27.303023",
+  "from": "love@q3mcco35auwcstmt.onion",
+  "to": "kramer@q3mcco35auwcstmt.onion",
+  "body": "отр лагает"
+}
+{
+  "ts": "2021-02-25T16:36:45.604672",
+  "from": "love@q3mcco35auwcstmt.onion",
+  "to": "kramer@q3mcco35auwcstmt.onion",
+  "body": "re"
+}
+{
+  "ts": "2021-02-25T17:11:42.419024",
+  "from": "love@q3mcco35auwcstmt.onion",
+  "to": "kramer@q3mcco35auwcstmt.onion",
+  "body": "а по поводу темы письма такие заголовки как \"важно\" или \"обязательно к прочтению\" нельзя юзать? на eng только"
+}
+{
+  "ts": "2021-02-25T17:25:18.140479",
+  "from": "terry@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "https://privnote.com/2GmggqHb#WINDN0sHl"
+}
+{
+  "ts": "2021-02-25T17:25:21.497990",
+  "from": "terry@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "Привет"
+}
+{
+  "ts": "2021-02-25T17:32:15.499880",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "все боты в офе  rob64"
+}
+{
+  "ts": "2021-02-25T17:32:23.437159",
+  "from": "sunday@q3mcco35auwcstmt.onion",
+  "to": "grant@q3mcco35auwcstmt.onion",
+  "body": "и чет там глюк скорее всего"
+}
+{
+  "ts": "2021-02-25T18:02:01.506256",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "Здарова. ну ты не охотно общаешься, я не дергаю."
+}
+{
+  "ts": "2021-02-25T18:02:01.507007",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "стоун тут кстати пару дней назад активизировался"
+}
+{
+  "ts": "2021-02-25T18:02:01.507305",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "какого-то хуя"
+}
+{
+  "ts": "2021-02-25T18:02:01.508193",
+  "from": "reshaev@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "Приветок"
+}
+{
+  "ts": "2021-02-25T18:02:01.508962",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "еле удержался чтобы на хуй не послать"
+}
+{
+  "ts": "2021-02-25T18:02:01.509632",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "у нас и с поллом все хорошо."
+}
+{
+  "ts": "2021-02-25T18:02:01.510107",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "если ты спросить по делам как идет, идет норм. спамим. полл при деле. все как обычно."
+}
+{
+  "ts": "2021-02-25T18:02:01.510641",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "а я кстати тебе писал)"
+}
+{
+  "ts": "2021-02-25T18:02:01.511394",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "[09.02.2021 20:12:05] <Kevin> привет.\n[09.02.2021 20:12:09] <Kevin> как оно?\n[09.02.2021 20:12:19] <Kevin> полл поднял немного настроение?\n[09.02.2021 20:46:03] <Stern> привет да"
+}
+{
+  "ts": "2021-02-25T18:02:01.512041",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "не очень то похоже что ты говоришь желанием общаться."
+}
+{
+  "ts": "2021-02-25T18:02:01.513575",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": ")"
+}
+{
+  "ts": "2021-02-25T18:02:01.514363",
+  "from": "kevin@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "горишь*"
+}
+{
+  "ts": "2021-02-25T18:02:01.515350",
+  "from": "terry@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "https://privnote.com/2GmggqHb#WINDN0sHl"
+}
+{
+  "ts": "2021-02-25T18:02:01.516262",
+  "from": "terry@q3mcco35auwcstmt.onion",
+  "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "Привет"
+}
+{
+  "ts": "2021-02-25T19:30:42.003778",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2021-02-25T19:30:42.004067",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "тут?"
+}
+{
+  "ts": "2021-02-25T19:30:52.342850",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "Тут"
+}
+{
+  "ts": "2021-02-25T19:33:53.186297",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "нужно срочно решить вопрос"
+}
+{
+  "ts": "2021-02-25T19:34:27.819671",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "Какой, в чем суть."
+}
+{
+  "ts": "2021-02-25T19:35:10.055984",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "для начала объясни как ты работаешь, чтобы я понял могу я на тебя рассчитывать или с другим договариваться"
+}
+{
+  "ts": "2021-02-25T19:39:10.569310",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "Я обычно проверяю в 2-3 часа мск рокет. Потом если нет никаких просьб и сообщений иду делать основной таск по пакетам, сегодня пробую вот режим восстановить, чтобы раньше начинать. У меня выписано 4 отработанных часа за сегодня. \nВчера, позавчера, я был на связи весь день почти заходил ничего особо не было\nУ меня завершение задачи по пакетаМ, по обьему ещё 2 дня по 8 часов работы нужно.\nЗатем планирую перейти на поддержку кода, а не заниматься этими пакетами."
+}
+{
+  "ts": "2021-02-25T19:39:50.919374",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "Меня торопят с пакетами я приоритет на них ставлю."
+}
+{
+  "ts": "2021-02-25T19:40:42.837900",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "Последние дни я стараюсь быть в сети и отвечать тебе в частности ели что то нужно.\nСо Стерном и ботлистом я оперативно решил именно сегодня пропал, т.к. хочу с режимом справиться и вставать не в 2 мск а раньше."
+}
+{
+  "ts": "2021-02-25T19:41:43.917182",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "Приоритет на пакеты в том числе значит, что ночью сижу.\nУ меня пошли только вчера ночью данные из импорта в розову и я понял как дебажить супервизор с германом, в это вложил много сил очень."
+}
+{
+  "ts": "2021-02-25T19:43:07.821415",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "мне нужно чтобы ты был днем и вечером, хотя бы с час или с двух дня, так как нужно оперативно решать вопросы"
+}
+{
+  "ts": "2021-02-25T19:43:13.386892",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "Как бы сам решай как тебе быть. У меня такая ситуация вот. \nЕсть 8 часов времени. Мне обьяснили 50 на пакеты 50 на тебя, если нет тебя с утра, я не сижу не жду просто делаю пакеты и ухожу в этот процесс"
+}
+{
+  "ts": "2021-02-25T19:43:26.316838",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "50%"
+}
+{
+  "ts": "2021-02-25T19:43:36.774718",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "мои задачи это приоритет, потом все остальное"
+}
+{
+  "ts": "2021-02-25T19:43:46.374138",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "можешь это с сильвером и стерном обсудить"
+}
+{
+  "ts": "2021-02-25T19:43:56.313889",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "так как админки сырые и бывает отваливается что то"
+}
+{
+  "ts": "2021-02-25T19:44:20.049221",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "сейчас надо срочно понять доходят ли данные в розовую по модулю нетворк и акцесс"
+}
+{
+  "ts": "2021-02-25T19:44:24.656856",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "Кк. Завтра уточню этот момент."
+}
+{
+  "ts": "2021-02-25T19:44:34.581904",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "[22:43:36] <defender> мои задачи это приоритет, потом все остальное \n[22:43:45] <defender> можешь это с сильвером и стерном обсудить \n[22:43:55] <defender> так как админки сырые и бывает отваливается что то \n[22:44:06] *** Попытка начать личную переписку\n[22:44:19] <defender> сейчас надо срочно понять доходят ли данные в розовую по модулю нетворк и акцесс"
+}
+{
+  "ts": "2021-02-25T19:44:38.708033",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "идут сообщения?"
+}
+{
+  "ts": "2021-02-25T19:44:48.637670",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "driver@q3mcco35auwcstmt.onion",
+  "body": "давай в рокет напишу"
+}
+{
+  "ts": "2021-02-25T19:44:50.264448",
+  "from": "driver@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "Пойдем может в рокет?"
+}
+{
+  "ts": "2021-02-25T20:52:18.239156",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "taker@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-02-25T21:07:15.565873",
+  "from": "taker@q3mcco35auwcstmt.onion",
+  "to": "veron@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-02-25T21:07:18.967990",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "taker@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}

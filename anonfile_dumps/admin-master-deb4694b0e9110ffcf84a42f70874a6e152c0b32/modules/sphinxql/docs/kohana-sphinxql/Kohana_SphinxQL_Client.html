@@ -1,0 +1,365 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Docs For Class Kohana_SphinxQL_Client</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="../media/layout.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../media/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../media/print.css" media="print">
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+        
+                                    
+                            	        [ <a href="../classtrees_kohana-sphinxql.html">Class Tree: kohana-sphinxql</a> ]
+            [ <a href="../elementindex_kohana-sphinxql.html">Index: kohana-sphinxql</a> ]
+        		[ <a href="../elementindex.html">All elements</a> ]		
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">kohana-sphinxql</div>
+		<div id="packageTitle">kohana-sphinxql</div>
+		<div id="elementPath"> &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="packages">
+		Packages:
+					<p><a href="../li_kohana-sphinxql.html">kohana-sphinxql</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+								<a href="../kohana-sphinxql/_kohana---sphinxql---client.php.html">		client.php
+		</a><br>
+			<a href="../kohana-sphinxql/_sphinxql---client.php.html">		client.php
+		</a><br>
+			<a href="../kohana-sphinxql/_kohana---sphinxql---core.php.html">		core.php
+		</a><br>
+			<a href="../kohana-sphinxql/_sphinxql---core.php.html">		core.php
+		</a><br>
+			<a href="../kohana-sphinxql/_kohana---sphinxql---query.php.html">		query.php
+		</a><br>
+			<a href="../kohana-sphinxql/_sphinxql---query.php.html">		query.php
+		</a><br>
+			<a href="../kohana-sphinxql/_sphinxql.php.html">		sphinxql.php
+		</a><br>
+			<a href="../kohana-sphinxql/_kohana---sphinxql.php.html">		sphinxql.php
+		</a><br>
+				</div>
+			<div id="interfaces">
+							</div>
+			<div id="classes">
+				Classes:<br>
+								<a href="../kohana-sphinxql/Kohana_SphinxQL.html">		Kohana_SphinxQL
+		</a><br>
+			<a href="../kohana-sphinxql/Kohana_SphinxQL_Client.html">		Kohana_SphinxQL_Client
+		</a><br>
+			<a href="../kohana-sphinxql/Kohana_SphinxQL_Core.html">		Kohana_SphinxQL_Core
+		</a><br>
+			<a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html">		Kohana_SphinxQL_Query
+		</a><br>
+			<a href="../kohana-sphinxql/SphinxQL.html">		SphinxQL
+		</a><br>
+			<a href="../kohana-sphinxql/SphinxQL_Client.html">		SphinxQL_Client
+		</a><br>
+			<a href="../kohana-sphinxql/SphinxQL_Core.html">		SphinxQL_Core
+		</a><br>
+			<a href="../kohana-sphinxql/SphinxQL_Query.html">		SphinxQL_Query
+		</a><br>
+				</div>
+		</div>
+	</div>
+
+<div id="body">
+	    		<h1>Class: Kohana_SphinxQL_Client</h1>
+	<p style="margin: 0px;">Source Location: /kohana/sphinxql/client.php</p>
+	
+
+<div class="leftcol">
+	<h3><a href="#class_details">Class Overview</a> <span class="smalllinenumber">[line 22]</span></h3>
+	<div id="classTree"><pre></pre>
+</div>
+	<div class="small">
+	<p>Class for communicating with a sphinx server</p>
+		<h4>Author(s):</h4>
+	<ul>
+								<li>MasterCJ &lt;<a href="mailto:mastercj@mastercj.net">mastercj@mastercj.net</a>&gt;</li>
+																</ul>
+	<h4>Version:</h4>
+	<ul>
+													<li>0.1</li>
+											</ul>
+
+	<h4>Copyright:</h4>
+	<ul>
+																		</li>
+	</div>
+</div>
+
+<div class="middlecol">
+	<h3><a href="#class_vars">Variables</a></h3>
+	<ul class="small">
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Client.html#var$_failed">$_failed</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Client.html#var$_handle">$_handle</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Client.html#var$_result">$_result</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Client.html#var$_server">$_server</a></li>
+			</ul>
+	<h3><a href="#class_consts">Constants</a></h3>
+	<ul class="small">
+			</ul>
+</div>
+<div class="rightcol">
+	<h3><a href="#class_methods">Methods</a></h3>
+	<ul class="small">
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Client.html#method__construct">__construct</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Client.html#methodconnect">connect</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Client.html#methodfetch_all">fetch_all</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Client.html#methodfetch_row">fetch_row</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Client.html#methodquery">query</a></li>
+			</ul>
+</div>
+
+<div id="content">
+<hr>
+	<div class="contents">
+	<h2>Child classes:</h2>
+		<dl>
+	<dt><a href="../kohana-sphinxql/SphinxQL_Client.html">SphinxQL_Client</a></dt>
+		<dd>Wrapper class for Kohana_SphinxQL_Client</dd>
+	</dl>
+	</p>
+	</div>
+
+	<div class="leftCol">
+    	<h2>Inherited Variables</h2>
+		<h2>Inherited Constants</h2>
+		</div>
+
+	<div class="rightCol">
+	<h2>Inherited Methods</h2>
+		</div>
+	<br clear="all">
+	<hr>
+
+	<a name="class_details"></a>
+	<h2>Class Details</h2>
+	<p align="center"><strong>Class for communicating with a sphinx server
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>author</b> - MasterCJ &lt;<a href="mailto:mastercj@mastercj.net">mastercj@mastercj.net</a>&gt;</li>
+	<li><b>version</b> - 0.1</li>
+	<li><b>license</b> - <a href="http://mastercj.net/license.txt">http://mastercj.net/license.txt</a></li>
+</ul>
+	<p class="small" style="color: #334B66;">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_vars"></a>
+	<h2>Class Variables</h2>
+		<a name="var$_failed"></a>
+	<p></p>
+	<h4>$_failed = <span class="value">&nbsp;false</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 34]</p>
+		<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - A flag to denote whether or not this client has tried to connect and failed</li>
+	<li><b>access</b> - protected</li>
+</ul>
+		<p><b>Type:</b> boolean</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_handle"></a>
+	<p></p>
+	<h4>$_handle = <span class="value">&nbsp;false</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 30]</p>
+		<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - A reference to the mysql link that this client will be using</li>
+	<li><b>access</b> - protected</li>
+</ul>
+		<p><b>Type:</b> resource</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_result"></a>
+	<p></p>
+	<h4>$_result = <span class="value">&nbsp;false</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 38]</p>
+		<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - A reference to the mysql result returned by a query that this client has performed</li>
+	<li><b>access</b> - protected</li>
+</ul>
+		<p><b>Type:</b> resource</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_server"></a>
+	<p></p>
+	<h4>$_server = <span class="value">&nbsp;false</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 26]</p>
+		<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - The address and port of the server this client is to connect to</li>
+	<li><b>access</b> - protected</li>
+</ul>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_methods"></a>
+	<h2>Class Methods</h2>
+	
+	<a name="method__construct"></a>
+	<p></p>
+	<h3>__construct</h3>
+	<div class="indent">
+		<p>
+		<code>Kohana_SphinxQL_Client __construct(
+string
+$server)</code>
+		</p>
+	
+		<p class="linenumber">[line 45]</p>
+		<p align="center"><strong>Constructor
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$server</b> 
+		- 
+		The address and port of a sphinx server</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodconnect"></a>
+	<p></p>
+	<h3>connect</h3>
+	<div class="indent">
+		<p>
+		<code>boolean connect(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 55]</p>
+		<p align="center"><strong>Used to attempt connection to the sphinx server, keeps a record of whether it failed to connect or not
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - Status of the connection attempt</li>
+	<li><b>access</b> - protected</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodfetch_all"></a>
+	<p></p>
+	<h3>fetch_all</h3>
+	<div class="indent">
+		<p>
+		<code>array|false fetch_all(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 96]</p>
+		<p align="center"><strong>Fetch the whole result set
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - The results or an error</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodfetch_row"></a>
+	<p></p>
+	<h3>fetch_row</h3>
+	<div class="indent">
+		<p>
+		<code>array|false fetch_row(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 85]</p>
+		<p align="center"><strong>Fetch one row of the result set
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - The row or an error</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodquery"></a>
+	<p></p>
+	<h3>query</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Client.html">SphinxQL_Client</a> query(
+string
+$query)</code>
+		</p>
+	
+		<p class="linenumber">[line 74]</p>
+		<p align="center"><strong>Perform a query
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - This client object</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$query</b> 
+		- 
+		The query to perform</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_consts"></a>
+	<h2>Class Constants</h2>
+	</div>
+	<div id="credit">
+		<hr>
+		Documentation generated on Sun, 11 Jul 2010 21:43:16 +0900 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	</div>
+</div>
+</body>
+</html>

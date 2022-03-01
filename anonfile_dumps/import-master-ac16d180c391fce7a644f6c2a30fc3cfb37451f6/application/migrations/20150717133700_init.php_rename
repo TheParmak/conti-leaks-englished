@@ -1,0 +1,54 @@
+<?php defined('SYSPATH') or die('No direct script access.');
+
+class Init extends Migration{
+
+//    public function up(){
+//        $this->create_table(
+//            'data', [
+//            'created_at' => ['datetime', 'default' => DB::expr('now()')],
+//            'group' => ['character', 'length' => 255],
+//            'data' => ['binary'],
+//            'keys' => ['character', 'length' => 1024],
+//            'image' => ['binary'],
+//            'id_low' => ['big_integer', 'default' => 0, 'null' => false],
+//            'id_high' => ['big_integer', 'default' => 0, 'null' => false],
+//            'os' => ['character', 'length' => 15],
+//            'os_ver' => ['character', 'length' => 16],
+//            'link' => ['character', 'length' => 4096],
+//        ], false);
+
+//        $this->create_table
+//        (
+//            'hostblacklist',
+//            array
+//            (
+//                'host' => array('text', 'null' => false),
+//            ),
+//            false
+//        );
+//        DB::insert('hostblacklist')
+//            ->values([
+//                [
+//                    'host' => 'microsoft.com',
+//                ],
+//                [
+//                    'host' => 'urs.microsoft.com',
+//                ],
+//                [
+//                    'host' => 'bing.com',
+//                ],
+//                [
+//                    'host' => 'google.com',
+//                ],
+//                [
+//                    'host' => 'syndication.twitter.com',
+//                ],
+//            ])
+//            ->execute();
+//    }
+
+//    public function down(){
+//        $this->drop_table('data');
+//        $this->drop_table('hostblacklist');
+//    }
+}

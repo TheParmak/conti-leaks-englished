@@ -1,0 +1,5 @@
+#!/bin/bash
+make && make daemon && \
+sleep 7 && \
+curl -v "http://188.138.1.53:8083/group1/asdgahjsdgajsdgjh_W617600.AABBCCDDEEFF11223344556677889900/0/Win16/1/8.8.8.8/00112233445566778899AABBCCDDEEFF00112233445566778899AABBCCDDEEFF/Hello_token" && \
+curl -v "http://188.138.1.53:8083/group1/asdgahjsdgajsdgjh_W617600.AABBCCDDEEFF11223344556677889900/25/conedfcdrfftest1/"

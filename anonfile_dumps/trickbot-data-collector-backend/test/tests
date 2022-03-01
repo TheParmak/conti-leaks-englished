@@ -1,0 +1,54 @@
+curl -k -v --form "data=data_less_32kb.txt" --form "keys=data_less_32kb.txt" --form "link=data_less_32kb.txt" --form "image=data_less_32kb.txt" "http://localhost:8082/group_tag/QWERTY_W617600.11223344556677889900AABBCCDDEEFF/60"
+
+* Hostname was NOT found in DNS cache
+*   Trying ::1...
+* connect to ::1 port 8081 failed: В соединении отказано
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 8081 (#0)
+> POST /group_tag/QWERTY_W617600.11223344556677889900AABBCCDDEEFF/60 HTTP/1.1
+> User-Agent: curl/7.38.0
+> Host: localhost:8081
+> Accept: */*
+> Content-Length: 491
+> Expect: 100-continue
+> Content-Type: multipart/form-data; boundary=------------------------51d98b42df08697b
+>
+< HTTP/1.1 100 Continue
+< HTTP/1.1 200 OK
+* Server Cowboy is not blacklisted
+< server: Cowboy
+< date: Sun, 07 Aug 2016 19:27:24 GMT
+< content-length: 3
+< Content-Type: text/plain
+<
+* Connection #0 to host localhost left intact
+
+
+curl -k -v --form "data=data_less_32kb.txt" --form "link=data_less_32kb.txt" --form "image=data_less_32kb.txt" "http://localhost:8082/group_tag/QWERTY_W617600.11223344556677889900AABBCCDDEEFF/60"
+
+* Hostname was NOT found in DNS cache
+*   Trying ::1...
+* connect to ::1 port 8081 failed: В соединении отказано
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 8081 (#0)
+> POST /group_tag/QWERTY_W617600.11223344556677889900AABBCCDDEEFF/60 HTTP/1.1
+> User-Agent: curl/7.38.0
+> Host: localhost:8081
+> Accept: */*
+> Content-Length: 380
+> Expect: 100-continue
+> Content-Type: multipart/form-data; boundary=------------------------1e8f927922302e09
+>
+< HTTP/1.1 100 Continue
+< HTTP/1.1 403 Forbidden
+* Server Cowboy is not blacklisted
+< server: Cowboy
+< date: Sun, 07 Aug 2016 19:28:42 GMT
+< content-length: 9
+* HTTP error before end of send, stop sending
+<
+* Closing connection 0
+
+
+
+curl -k -v --form "proclist=hello" --form "sysinfo=yes" "http://localhost:8082/group_tag/QWERTY_W617600.11223344556677889900AABBCCDDEEFF/90"

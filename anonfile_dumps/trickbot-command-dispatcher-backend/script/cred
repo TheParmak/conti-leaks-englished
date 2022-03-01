@@ -1,0 +1,12 @@
+#!/usr/local/bin/escript
+
+main([What]) ->
+	{ ok, [{application, _, Config}] } = file:consult("ebin/cmd_server.app"),
+	Data = proplists:get_value(env, Config),
+	Db = proplists:get_value(db, Data),
+	Value = case proplists:get_value(list_to_atom(What), Db, "") of
+		Int when is_integer(Int) -> integer_to_list(Int);
+		V -> V
+	end,
+	io:format("~s", [ Value ]),
+	halt(0).

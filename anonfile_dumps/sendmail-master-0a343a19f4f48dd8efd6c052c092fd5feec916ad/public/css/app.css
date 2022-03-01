@@ -1,0 +1,64 @@
+/*============================TASKs PAGE=============================*/
+
+.progress-actions {
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	position: absolute;
+	line-height: 64px;
+	text-align: center;
+	color: white;
+	font-weight: 600;
+	border: 3px solid white;
+	margin-left: -70px;
+	margin-top: -10px;
+}
+
+.progress-actions ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.progress-actions ul li:not(:first-child) {
+	display: none;
+	border-radius: 50%;
+}
+
+.progress-actions > ul:hover > .active_element {
+	display: block;
+	cursor: pointer;
+}
+
+.progress-actions > ul > .active_element > i {
+	font-size: 16px;
+}
+.progress-actions > ul:hover > li:first-child:not(.active_element) {
+	display: none;
+}
+
+
+.task-line {
+	background: rgba(0,0,0,.03);
+	height: 50px;
+	line-height: 50px;
+	margin-left: 35px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+}
+
+.task-active { background-color: #9ce130; }
+.task-stopped { background-color: #ffb749; }
+.task-deleted { background-color: #696969; }
+
+.bad_emails { color: #ff3e50; font-size: 12px; padding: 0 20px 0 20px; }
+.emails-status { text-align: center; color: rgba(0,0,0,0.1); }
+.good_emails { color: #80c000; font-size: 12px; padding: 0 20px 0 20px; }
+
+
+.emails-status-total { text-align: center; color: rgba(0,0,0,0.1); }
+.emails-total { font-size: 12px; color: #3dc1cc; padding: 0 20px 0 20px; }
+.emails-total > i { font-size: 12px; }
+
+/*============================TASKs PAGE=============================*/

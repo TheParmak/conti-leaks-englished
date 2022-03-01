@@ -1,0 +1,31 @@
+{application, dero_server, [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+    kernel,
+    stdlib,
+    lager,
+    cowboy
+  ]},
+  {mod, {dero_server_app, []}},
+  {env, [
+    { port, 8082 }, %% Порт на котором сидит HTTP-сервер
+    { db, [ %% Настройки базы данных
+      { server, "localhost" },
+      { port, 5432 },
+      { user, "postgres" },
+      { password, "1qazxsw2"},
+      { database, "dero" },
+      { connections, 10 } %% Количество соединений в пуле
+    ]},
+    { limits, [
+      { data_size, 32768 }, %% 32 Kb
+      { keys_size, 1024 },
+      { link_size, 4096 },
+      { image_size, 102400 }, %% 100 Kb
+      { data8, 8388608 }, %% 8 Mb
+      { source8, 1024 } %% 1 Kb
+    ]}
+  ]}
+]}.
