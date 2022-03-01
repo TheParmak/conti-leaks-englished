@@ -1,0 +1,286 @@
+RDP ACCESS SCANNER
+TERMS OF REFERENCE
+
+PURPOSE
+
+You need to write a scanner module and brute-force RDP access form. The module must be designed according to the rules given in the document modules_HOWTO.
+
+
+REALIZATION
+
+The module consists of a scanner, a name detector, and a brute-force submodule.
+
+The scanner has two modes:
+1) brute force mode
+2) test mode
+
+In brute-force mode, the scanner searches for servers with open RDP ports, detects user names and picks up passwords to them.
+The result is a list of addresses, names and passwords.
+In test mode, the scanner works with a known list of server addresses, names and passwords. In this mode, it checks
+the actuality of the list, as well as the environment and the capabilities of the server.
+
+In brute-force mode:
+The scanner does a brute-force enumeration of domains and ports, using an externally obtained list of domains to work with.
+The result of the scanner is a list of addresses and ports that are accurately identified as an RDP service.
+The name detector gets address:port of the RDP service. The result is a list of usernames of the specified RDP service in text form.
+The Brute Force module receives address:port, a list of usernames for the given address, and dictionaries. The result of the brute-force module is a list of matching passwords.
+
+In try-brute mode:
+Same as brute, but uses a user name dictionary.
+
+In NOP (idle) mode, the scanner does nothing but wait for new settings.
+The purpose of the idle mode is:
+- Emergency stop of the network, e.g. if wrong settings are detected or if the scanner is behaving incorrectly
+- pause so that settings can be adjusted without having to run them immediately.
+
+The scanner communicates with the control server to get settings, dictionaries, domains to check, etc. from it.
+
+You can get the operating mode by sending an HTTP request to the server
+
+GET /<group>/<clientid>/rdp/mode HTTP/1.1
+
+In the body of the HTTP response, the module expects the string brute, check, trybrute or nop.
+Any other value is incorrect - in that case, the module makes repeated requests
+every 5 minutes; module does not start working until it gets a correct answer.
+Changing the mode is only possible from NOP to NOP. Switching, for example, brute -> check is impossible.
+In this case, the scanner goes to NOP mode and sends an error message to the server.
+
+If operating in NOP mode, the scanner prompts for mode and settings every 10 minutes.
+
+Admin scanners automatically switches mode to NOP when all bots work 100% chunks (and only in this case - when there is no doubt about the completion of the work).
+
+
+SCANNER
+
+The scanner receives a list of domains to check with an HTTP request to the server
+
+GET /<group>/<clientid>/rdp/domains HTTP/1.1
+The group and clientid values are struct ParentInfo fields
+ CHAR ParentID[256];
+ CHAR ParentGroup[64];
+(see module_HOWTO)
+
+In brute-force mode, the response format:
+address1:port[\r]\n
+address2:port[\r]\n
+...
+(one or many entries)
+
+In test mode, the response format is
+ip:port@username:password[\r]\n
+...
+(one or many entries)
+
+You should not do a full port scan, just take the standard RDP ports +-10 ports up and down.
+
+Address:port is given to the output of the scanner only if it manages to connect to this port and there is an indication that it is an RDP connection.
+
+We let the server know when we complete the enumeration of the given list:
+
+GET /<group>/<clientid>/rdp/over HTTP/1.1
+
+The server's response is the same as to the request /domains - a new list of domains to work with.
+If an unexpected response (empty list, error code, etc.) module goes to idle (scanning is stopped)
+and makes the same request once every 10 minutes (time is a constant).
+
+Older versions of the scanner did not support dictionary rules. To distinguish the old version of the scanner from the new one,
+The new scanner version adds an HTTP header to all GET requests
+
+fmode: 1
+
+
+DEFINING THE RDP USER NAME
+
+When the connection is successful, the module takes a screenshot of the list of RDP users.
+Then the software recognizes the screenshot and formats it into text.
+The formatted text is edited to the format ip:port@username.
+If several users on one ip, it shows a list like:
+	147.126.54.43:3900@username1
+	147.126.54.43:3900@username2
+	147.126.54.43:3900@username3
+	147.126.54.43:3900@username4
+and passes it to bruteforcer input.
+
+
+RDP BRUTH
+
+The dictionary for the enumeration is obtained by an HTTP request to the control server:
+GET /<group>/<clientid>/rdp/dict HTTP/1.1
+
+In response we get the dictionary either as text/plain or application/gzip (look at the Content-Type response header)
+If the packaging is in gzip, then after unpacking we expect the same dictionary format, as for plain text:
+- one word per line, the line separator can be \n or \r\n.
+
+The password dictionary supports password templates (i.e. the ability to substitute a macro from the current work context).
+Examples of macros and rules:
+%EmptyPass% // empty password.
+%GetHost% // get host name from dns server. Slow speed!
+%IP% // get ip (example: 192.168.0.1 = 192.168.0.1)
+%Port% // get port (example: 192.168.0.1:3389 = 3389)
+and so on - there are dozens of rules altogether. A detailed description of the pattern rules can be found in the module's documentation.
+
+When designing the brute force, the following compromise must be respected:
+- the number of brute-force threads should be maximal for the given computer (see thread_concurrency in STL)
+- threads must not interfere with interactive tasks, i.e. must at least have a reduced priority (see SetThreadPriority())
+- threads must not constantly hit the same address. Instead of going through the dictionary with one combination of address:port:user,
+it's better to take a list of 100 addresses and search through them one by one, to have a balance between requests to the same host,
+and the efficiency of the software.
+- at the same time, the size of the list of hosts to search for each thread should not be too large, so that you won't miss any network traffic
+to unconnected hosts
+- at the same time, the higher the randomness, the better - never repeating the same host can be more profitable than working on the same
+same host.
+
+All dimensions of intervals, timeouts, address pack sizes for enumeration, etc. must be put in the global file config.h as constants.
+
+This balance must be found out experimentally; we start from the most naive realization and complicate it further.
+
+In scanning mode, only addresses with the password are sent to the server as a result.
+In checking mode, all addresses from the input list are sent, which are assigned a tag and additional fields.
+The sending is done via the DPOST protocol (see "TOR of DPOST password grab" for a description of the protocol) with the request
+
+ POST /<group>/<clientid>/rdp/81 HTTP/1.1
+
+Data is sent in multipart/form-data container with source and data fields.
+The value of source field is "RDP Passwords".
+Value of data field: plain text, string delimiter \r\n
+Record format:
+
+rdp|<address>:<port>|<username>|<password>|<tag>|<field1=value>|<field2=value>|...\r\n
+...
+(one or many entries)
+
+Here the fields address:port, username, password are determined by scanning,
+and tag and field1... - as a result of post-validation (see below).
+Fields field1=value are written as key=value, e.g.
+...|subnet=192.168.1.255|netmask=255.255.255.0|итд...
+This format allows you to pass arbitrary fields without too much change in parser and backward compatibility.
+
+You can retrieve the frequency of namain data from the control server with an HTTP request
+GET /<group>/<clientid>/rdp/freq HTTP/1.1
+
+In the body of the response we expect a number - this is the number of seconds, not more often than that the data should be sent.
+If it is 0 - sending immediately when ready (for scan mode - as soon as the new password is found;
+for scan mode - as soon as the next address from the list is found.)
+If it's a positive number - we accumulate entries in the buffer and send it every X seconds,
+clearing the buffer on successful sending.
+
+
+EVENTS
+
+The module should send the following events via callback (see "module_HOWTO"):
+- RDP scanner build %date% %time% started
+- %d addresses tried, %d RDP hosts detected, %d passwords found - periodically every half hour (timeout is specified by constant in config.h)
+- RDP password found: %addr%:%port%:%username%:%password% - when password is found
+
+
+CONFIGURES
+
+The configs are passed to the module through a Control() call. The name of the config is the string in the Ctl argument, the body of the config is the CtlArg argument,
+the length of the config is CtlArgLen (see "module_HOWTO")
+
+The module receives a single config named srv, which contains a list of addresses of the control server,
+separated by \r\n or \n, in address:port format.
+If the port is even, it is HTTP, if it is odd - HTTPS.
+If a protocol prefix (http/https) is specified, the prefix takes precedence over the specified port.
+The module works with the control server that was reached first, for each request.
+
+
+GETTING HOST INFORMATION
+
+It is necessary to provide for automatic acquisition of host information, both in brute-force mode after password matching,
+as well as in verification mode.
+For each selected password, the software establishes a connection, determines location, usage rights,
+operating system.
+
+<OBSOLETE>.
+//opens CMD, enters a command: 1 - net view, if the answer is
+//about the system error, the given host is marked as no network, if the answer is a list of
+//computers, then enters command 2 - net group "Domain Computers" /DOMAIN,
+//if the answer is a system error, this host is marked as not in domain,
+//if the answer is positive, then command 3 - nltest /domain_trusts /all_trusts,
+//if there is information with domains, then download https://www.sendspace.com/file/172iky,
+//unpack it, start the file with the format .bat, bp the result will appear
+//finds the file subnet in the same folder, copies the information from it and inserts
+//into the comment of this host, marking it as in domain.
+//All these marks and additional information should be passed in extended fields when transmitting data via DPOST.
+</OVERLAY>.
+
+The following is a quote of the customer's requirements, unchanged - below are my comments and explanations:
+
+  1) The ip:port@username:password list is loaded automatically from the brute force result
+
+  2) The software establishes the connection.
+
+  Those with which you could not establish a connection determines the reason (denied access or just the server is off).
+  If the server is closed for access, the password or username does not match, it is removed to the BAD RDP section.
+  If the server is just off, it goes under OFF RDP.
+  If the connection is established, determines the location, usage rights, operating system, computer name, and enters the ONLINE RDP section.
+  The ONLINE RDP section is divided into two tabs, IN DOMAIN and NOT DOMAIN
+  The IN DOMAIN section has the following cells: subnets, ad_users, ad_computers, ad_ous, ad_group, trustdmp, domainlist
+
+  3) In cmd, enter the command whoami/upn.
+
+  If the answer is "username"/"domain" - then the rdp goes to the ON DOMAIN tab. "domain" writes in the domainlist cell
+  if the answer is "error", then the rdp is placed in the tab NOT DOMAIN
+
+  4) take the rdp from the section ON DOMAIN and there download files adf.bat, adfind.exe and XXX.exe in the archive, then unpack
+
+  5) runs the adf.bat file.
+
+  create text files with the following names: subnets, ad_users, ad_computers, ad_ous, ad_group, trustdmp, domainlist
+  from the text files subnets, ad_users, ad_computers, ad_ous, ad_group, trustdmp we take the last line with the number of objects (Objects returned) and their number is written according to the "txt file name = cell name" correspondence
+  from the txt file domainlist all domains are written in the cell domainlist
+
+  6) Run XXX.exe as administrator.
+
+  If the file does not work as an administrator, you can run it using a simple method.
+  in the admin panel it is marked from which rights XXX.exe is launched
+  if the file cannot be launched because it is blocked or AV cuts or AV deleted XXX.exe when unpacking it, all this is indicated by a comment in the admin panel
+
+  7) Next, take the rds from the NOT DOMAIN section
+
+  download the archive with the file XXX.exe, unzip it
+  run XXX.exe as administrator
+  if it does not work as administrator, you can run it with simple method.
+  you mark in the admin panel what rights you have to run XXX.exe
+  if it is impossible to start file because it is blocked or AV cuts or AV deleted XXX.exe when unpacking it, it is commented in the admin panel
+
+That is, we run commands (some built into the OS, some must be downloaded from the network - the command adfind), analyze the responses,
+and put the tag fields (they are currently 4: bad rdp, off rdp, online rdp in domain, online rdp not in domain) and additional fields,
+derived from the launched commands.
+In brute-force mode, for each brute-force password.
+In scan mode - for each host from the scan list.
+
+
+ORDER
+
+You should carefully read "module_HOWTO" and pay attention to the requirements on the use of libraries specified there,
+prohibitions, string obfuscation measures, system calls, logging, build format, etc.
+
+
+USER INTERFACE
+
+The same module will be used both as a .dll and as an interactive software with GUI.
+In this case all the logic should be hidden inside rdp.dll, and the interface should be an external (separate) program,
+which uses the functions of rdp.dll.
+Let me remind you that rpp.dll is a module that exports the 4 functions Start, Control, FreeBuffer, Release, and all interactions
+with the outside world happens only through them.
+Accordingly, the module gets configurations through Control calls, settings, dictionaries, scan list
+The module receives the configuration data from the HTTP-server (which must be arranged in the GUI);
+The GUI receives feedback from the module (event messages) through callbacks (see the description of the Start function).
+
+The GUI should provide for:
+- setting each config
+- mode switching (check/brute)
+- start and stop operation in the current mode.
+
+We allow both non-interactive mode (console program with command line control - but then the control must be exhaustive),
+and windowed - both WinAPI and QT are acceptable. The program can be written in C# for easy development.
+
+You can organize GUI interaction with the module as follows:
+- set the address of the control server - 127.0.0.1:GUI port
+- launch the control server in GUI, which can answer requests for configurations and accept found passwords
+- send the address of your callback to the module to receive events from the module
+- further all user input and actions shall be converted into configs, which shall be sent to the module
+- configs must be generated before issuing Start(); during operation all GUI settings must be disabled, except for the STOP button
+- The checked entries should be sorted into lists (bad rdp, off rdp, etc.) based on the tag field.
