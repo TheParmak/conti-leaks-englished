@@ -1,0 +1,2969 @@
+{
+  "messages": [
+    {
+      "_id": "RTnH6fD5g72GnocW4",
+      "rid": "GENERAL",
+      "msg": "так TEST_DIRS += [\"jsapi-tests\", \"tests\", \"gdb\"]  во втром случае снаружи условия",
+      "ts": "2022-01-12T16:16:39.650Z",
+      "u": {
+        "_id": "ZsdbJdLXRmnCfchik",
+        "username": "diego",
+        "name": "diego"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "так TEST_DIRS += [\"jsapi-tests\", \"tests\", \"gdb\"]  во втром случае снаружи условия"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T16:16:39.680Z"
+    },
+    {
+      "_id": "WDJYwd6Rude7xgSgZ",
+      "rid": "GENERAL",
+      "msg": "ясно, спасибо",
+      "ts": "2022-01-12T16:15:13.147Z",
+      "u": {
+        "_id": "R2ecGKjyBntC6Rv8K",
+        "username": "weldon",
+        "name": "Mr.Covid"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "ясно, спасибо"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T16:15:13.187Z"
+    },
+    {
+      "_id": "TCWDrv2trWWkdZhkt",
+      "rid": "GENERAL",
+      "msg": "или как так",
+      "ts": "2022-01-12T16:14:10.267Z",
+      "u": {
+        "_id": "sDk8FqRNwsaKJWRmA",
+        "username": "kermit",
+        "name": "kermit"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "или как так"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T16:14:10.280Z"
+    },
+    {
+      "_id": "JDMmoykZztbrapW77",
+      "rid": "GENERAL",
+      "msg": "indention нарушена",
+      "ts": "2022-01-12T16:14:07.520Z",
+      "u": {
+        "_id": "sDk8FqRNwsaKJWRmA",
+        "username": "kermit",
+        "name": "kermit"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "indention нарушена"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T16:14:07.532Z"
+    },
+    {
+      "_id": "h7nFdfWmhQML7QPnb",
+      "rid": "GENERAL",
+      "msg": "ага",
+      "ts": "2022-01-12T16:13:47.803Z",
+      "u": {
+        "_id": "sDk8FqRNwsaKJWRmA",
+        "username": "kermit",
+        "name": "kermit"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "ага"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T16:13:47.831Z"
+    },
+    {
+      "_id": "SPzdi4zADh2jiabQA",
+      "rid": "GENERAL",
+      "msg": "пробелы только в начале считаются",
+      "ts": "2022-01-12T16:10:49.089Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "пробелы только в начале считаются"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T16:10:49.106Z"
+    },
+    {
+      "_id": "wDmMsWpfyjvcRSa42",
+      "rid": "GENERAL",
+      "msg": "нет не должно",
+      "ts": "2022-01-12T16:10:35.143Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "нет не должно"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T16:10:35.176Z"
+    },
+    {
+      "_id": "4iKhyZRF9tzS2J7cJ",
+      "rid": "GENERAL",
+      "msg": "обычный питон чувствителен к кол-ву пробелов? т.е. есть условие внутни него присвоение, если пробелами двигать присвоение это будет как-то влиять?",
+      "ts": "2022-01-12T16:06:52.335Z",
+      "u": {
+        "_id": "R2ecGKjyBntC6Rv8K",
+        "username": "weldon",
+        "name": "Mr.Covid"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "обычный питон чувствителен к кол-ву пробелов? т.е. есть условие внутни него присвоение, если пробелами двигать присвоение это будет как-то влиять?"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T16:06:52.356Z"
+    },
+    {
+      "_id": "vBNaZaWhdZXXdGjMj",
+      "rid": "GENERAL",
+      "msg": "я про питон",
+      "ts": "2022-01-12T16:05:27.449Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "я про питон"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T16:05:27.481Z"
+    },
+    {
+      "_id": "ZTpbanp5vg97xJcpj",
+      "rid": "GENERAL",
+      "msg": "ну только чуток",
+      "ts": "2022-01-12T16:05:04.608Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "ну только чуток"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T16:05:04.625Z"
+    },
+    {
+      "_id": "YZeATvcx3qoHMZtNz",
+      "rid": "GENERAL",
+      "msg": "кто с питоном дружит?",
+      "ts": "2022-01-12T16:00:17.149Z",
+      "u": {
+        "_id": "R2ecGKjyBntC6Rv8K",
+        "username": "weldon",
+        "name": "Mr.Covid"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "кто с питоном дружит?"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T16:00:17.164Z"
+    },
+    {
+      "_id": "W3Pw6RwxPEKx2hDpT",
+      "rid": "GENERAL",
+      "msg": "да я помню)",
+      "ts": "2022-01-12T15:12:54.778Z",
+      "u": {
+        "_id": "sDk8FqRNwsaKJWRmA",
+        "username": "kermit",
+        "name": "kermit"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "да я помню)"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T15:12:54.790Z"
+    },
+    {
+      "_id": "Y6oNHp36vaam3CAJo",
+      "rid": "GENERAL",
+      "msg": "ок, если что стучи",
+      "ts": "2022-01-12T15:12:43.177Z",
+      "u": {
+        "_id": "oLL9G2PDCHeZz3nco",
+        "username": "ruby",
+        "name": "ruby"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "ок, если что стучи"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T15:12:43.200Z"
+    },
+    {
+      "_id": "Rsewu9rjYLmCPdAzM",
+      "rid": "GENERAL",
+      "msg": "если появится, то понадобится",
+      "ts": "2022-01-12T15:12:35.657Z",
+      "u": {
+        "_id": "sDk8FqRNwsaKJWRmA",
+        "username": "kermit",
+        "name": "kermit"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "если появится, то понадобится"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T15:12:35.668Z"
+    },
+    {
+      "_id": "FYab5vTmvN2cPexeQ",
+      "rid": "GENERAL",
+      "msg": "пока нет. человек пропал",
+      "ts": "2022-01-12T15:12:19.045Z",
+      "u": {
+        "_id": "sDk8FqRNwsaKJWRmA",
+        "username": "kermit",
+        "name": "kermit"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "пока нет. человек пропал"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T15:12:19.061Z"
+    },
+    {
+      "_id": "f5zGkCHndP7HJ2RCx",
+      "rid": "GENERAL",
+      "msg": "kermit шодан не нужен в итоге?",
+      "ts": "2022-01-12T15:11:39.456Z",
+      "u": {
+        "_id": "oLL9G2PDCHeZz3nco",
+        "username": "ruby",
+        "name": "ruby"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "kermit шодан не нужен в итоге?"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T15:11:39.484Z"
+    },
+    {
+      "_id": "PHQK3NJSyduunEJ7K",
+      "rid": "GENERAL",
+      "msg": "@jaime ответть в жабе",
+      "ts": "2022-01-12T15:09:37.503Z",
+      "u": {
+        "_id": "sDk8FqRNwsaKJWRmA",
+        "username": "kermit",
+        "name": "kermit"
+      },
+      "urls": [],
+      "mentions": [
+        {
+          "_id": "Mvt4KwSxtNSNga6NW",
+          "username": "jaime",
+          "name": "jaime",
+          "type": "user"
+        }
+      ],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "MENTION_USER",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "jaime"
+              }
+            },
+            {
+              "type": "PLAIN_TEXT",
+              "value": " ответть в жабе"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T15:09:37.531Z"
+    },
+    {
+      "_id": "CWFaJFPNSo45Bydh7",
+      "rid": "GENERAL",
+      "msg": "ок, тоже прошлый в2 знаю. недавно перешли на в3. как обычно по закону подлости",
+      "ts": "2022-01-12T15:09:00.410Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "ок, тоже прошлый в2 знаю. недавно перешли на в3. как обычно по закону подлости"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T15:09:00.467Z"
+    },
+    {
+      "_id": "pggTjLzvkBtyJQZgH",
+      "rid": "GENERAL",
+      "msg": "если узнаешь напиши мне плиз тоже",
+      "ts": "2022-01-12T15:07:39.450Z",
+      "u": {
+        "_id": "oLL9G2PDCHeZz3nco",
+        "username": "ruby",
+        "name": "ruby"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "если узнаешь напиши мне плиз тоже"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T15:07:39.464Z"
+    },
+    {
+      "_id": "Qsoxdux5mpj8izAxK",
+      "rid": "GENERAL",
+      "msg": "пару месяцев назаж был жив, но не могу найти тор3 линк(( только прошлый линк есть",
+      "ts": "2022-01-12T15:07:26.344Z",
+      "u": {
+        "_id": "oLL9G2PDCHeZz3nco",
+        "username": "ruby",
+        "name": "ruby"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "пару месяцев назаж был жив, но не могу найти тор3 линк(( только прошлый линк есть"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T15:07:26.383Z"
+    },
+    {
+      "_id": "8Q5rcWK5DoYMQ22Tq",
+      "rid": "GENERAL",
+      "msg": "@all verified жив? есть у кого адрес актуальный форума? в личку плиз, если кто знает",
+      "ts": "2022-01-12T14:54:19.303Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [
+        {
+          "_id": "all",
+          "username": "all"
+        }
+      ],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "MENTION_USER",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "all"
+              }
+            },
+            {
+              "type": "PLAIN_TEXT",
+              "value": " verified жив? есть у кого адрес актуальный форума? в личку плиз, если кто знает"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T14:54:19.340Z"
+    },
+    {
+      "_id": "jEMTamAppEQpuaJSQ",
+      "rid": "GENERAL",
+      "msg": "Алоха !",
+      "ts": "2022-01-12T13:57:58.575Z",
+      "u": {
+        "_id": "qHkSuNAj6CsTKNeug",
+        "username": "angelo",
+        "name": "angelo"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Алоха !"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T13:57:58.588Z"
+    },
+    {
+      "_id": "YHoWGNXotvzGHAyvk",
+      "rid": "GENERAL",
+      "msg": "Привет.",
+      "ts": "2022-01-12T13:28:56.687Z",
+      "u": {
+        "_id": "JPQEkct5QpF9fHJJf",
+        "username": "chad",
+        "name": "chad"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Привет."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T13:28:56.700Z"
+    },
+    {
+      "_id": "9PGe7aRtAyBLTffgj",
+      "rid": "GENERAL",
+      "msg": "приветствую!",
+      "ts": "2022-01-12T13:20:47.272Z",
+      "u": {
+        "_id": "xG9LtftkDuopdGZfc",
+        "username": "wild",
+        "name": "wild"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "приветствую!"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T13:20:47.287Z"
+    },
+    {
+      "_id": "TXnksR2jorYmokRbR",
+      "rid": "GENERAL",
+      "msg": ":vulcan:",
+      "ts": "2022-01-12T13:20:25.455Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "BIG_EMOJI",
+          "value": [
+            {
+              "type": "EMOJI",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "vulcan"
+              }
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T13:20:25.486Z"
+    },
+    {
+      "_id": "w9mR6okzyAQYJ5baf",
+      "rid": "GENERAL",
+      "msg": "Привет всем !",
+      "ts": "2022-01-12T13:19:13.093Z",
+      "u": {
+        "_id": "5ttWia9DhZD47FEuY",
+        "username": "kai",
+        "name": "kai"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Привет всем !"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T13:19:13.123Z"
+    },
+    {
+      "_id": "znS9Di3te2ocvTN5x",
+      "rid": "GENERAL",
+      "msg": "китайцы сделали шаг к новому поколению аэс, чтобы без сотен тонн отходов радиоактивных. аэс вряд ли что сможет перплюнуть",
+      "ts": "2022-01-12T13:17:50.345Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "китайцы сделали шаг к новому поколению аэс, чтобы без сотен тонн отходов радиоактивных. аэс вряд ли что сможет перплюнуть"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T14:32:27.854Z",
+      "reactions": {
+        ":thumbsup:": {
+          "usernames": [
+            "esteban"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "2ynejmkWFHWT4bCLn",
+      "rid": "GENERAL",
+      "msg": "сказать то он сказал. только гейропа вентиляторов еругом наставила, что все червяки передохли. и топят",
+      "ts": "2022-01-12T12:40:54.269Z",
+      "u": {
+        "_id": "tuuAwm8QNRy9Dumij",
+        "username": "alphonse",
+        "name": "alphonse"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "сказать то он сказал. только гейропа вентиляторов еругом наставила, что все червяки передохли. и топят"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T12:40:54.296Z"
+    },
+    {
+      "_id": "dXv4MoZfEARA96DW8",
+      "rid": "GENERAL",
+      "msg": "это управляемый термоядерный синтез уже.",
+      "ts": "2022-01-12T12:37:41.937Z",
+      "u": {
+        "_id": "tuuAwm8QNRy9Dumij",
+        "username": "alphonse",
+        "name": "alphonse"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "это управляемый термоядерный синтез уже."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T12:37:41.954Z"
+    },
+    {
+      "_id": "D2zcoXgtFZzNW9Hgt",
+      "rid": "GENERAL",
+      "msg": "Скоро на Али будут продавать...",
+      "ts": "2022-01-12T12:36:08.241Z",
+      "u": {
+        "_id": "LcSmTknPEhLY3pJkz",
+        "username": "elroy",
+        "name": "elroy"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Скоро на Али будут продавать..."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T12:36:08.260Z"
+    },
+    {
+      "_id": "Gu5pBAQHNShKJNFkG",
+      "rid": "GENERAL",
+      "msg": "АЭС для чего нужна? это уже супер АЭС",
+      "ts": "2022-01-12T12:36:02.953Z",
+      "u": {
+        "_id": "R2ecGKjyBntC6Rv8K",
+        "username": "weldon",
+        "name": "Mr.Covid"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "АЭС для чего нужна? это уже супер АЭС"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T12:36:02.985Z"
+    },
+    {
+      "_id": "sCXYoru2nDnnoGSAK",
+      "rid": "GENERAL",
+      "msg": "вот прям из китая",
+      "ts": "2022-01-12T12:35:18.187Z",
+      "u": {
+        "_id": "tuuAwm8QNRy9Dumij",
+        "username": "alphonse",
+        "name": "alphonse"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "вот прям из китая"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T12:35:18.209Z"
+    },
+    {
+      "_id": "WRG5Ns3qaSpYBxTis",
+      "rid": "GENERAL",
+      "msg": "попу геям из европы греть",
+      "ts": "2022-01-12T12:34:52.666Z",
+      "u": {
+        "_id": "R2ecGKjyBntC6Rv8K",
+        "username": "weldon",
+        "name": "Mr.Covid"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "попу геям из европы греть"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T12:34:52.683Z"
+    },
+    {
+      "_id": "7fnNSrYaD6JBKrWiy",
+      "rid": "GENERAL",
+      "msg": "что делать, что делать? кипятить на ней воду и разгонять турбины генераторов",
+      "ts": "2022-01-12T12:34:04.389Z",
+      "u": {
+        "_id": "tuuAwm8QNRy9Dumij",
+        "username": "alphonse",
+        "name": "alphonse"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "что делать, что делать? кипятить на ней воду и разгонять турбины генераторов"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T12:34:04.411Z"
+    },
+    {
+      "_id": "eeCuTceHLmA2A3i9p",
+      "rid": "GENERAL",
+      "msg": "звездные войны какие то)) осталось это солнце приручить, летать оно и так умеет",
+      "ts": "2022-01-12T11:46:03.126Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "звездные войны какие то)) осталось это солнце приручить, летать оно и так умеет"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T11:46:03.145Z"
+    },
+    {
+      "_id": "iJfHZDfdonaT76o7n",
+      "rid": "GENERAL",
+      "msg": "энергии конечно просто нереально дохера, ещё и поддерживают всё это пекло каким то китайским чудом",
+      "ts": "2022-01-12T11:38:30.376Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "энергии конечно просто нереально дохера, ещё и поддерживают всё это пекло каким то китайским чудом"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T11:38:30.410Z"
+    },
+    {
+      "_id": "RzhdCqi45RNNHKKjE",
+      "rid": "GENERAL",
+      "msg": "главное, чтобы весь остальной шарик не зацепило, если что-то не так пойдет)",
+      "ts": "2022-01-12T11:34:44.238Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "главное, чтобы весь остальной шарик не зацепило, если что-то не так пойдет)"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T11:34:44.270Z"
+    },
+    {
+      "_id": "wqd9MEaZ7xfhXQwC5",
+      "rid": "GENERAL",
+      "msg": "теперь осталось разобраться что с этим делать. для гуманных казней вполне уже можно задействовать - херак и нет.. вообще ничего, даже дыма",
+      "ts": "2022-01-12T11:33:30.532Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "теперь осталось разобраться что с этим делать. для гуманных казней вполне уже можно задействовать - херак и нет.. вообще ничего, даже дыма"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T11:33:30.570Z"
+    },
+    {
+      "_id": "jBayCxPnWHJKX8TNd",
+      "rid": "GENERAL",
+      "msg": "@Garfield хы, вот она - страна восходящего солнца - Китай, а не Япония `https://infosmi.net/society/276375-v-kitae-zapustili-iskusstvennoe-solntse/` 70 млн градусов по цельсию это жесть",
+      "ts": "2022-01-12T11:27:46.025Z",
+      "u": {
+        "_id": "R2ecGKjyBntC6Rv8K",
+        "username": "weldon",
+        "name": "Mr.Covid"
+      },
+      "urls": [],
+      "mentions": [
+        {
+          "_id": "AL9ksMKDQG3Tg4g9B",
+          "username": "Garfield",
+          "name": "Garfield",
+          "type": "user"
+        }
+      ],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "MENTION_USER",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "Garfield"
+              }
+            },
+            {
+              "type": "PLAIN_TEXT",
+              "value": " хы, вот она - страна восходящего солнца - Китай, а не Япония "
+            },
+            {
+              "type": "INLINE_CODE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "https://infosmi.net/society/276375-v-kitae-zapustili-iskusstvennoe-solntse/"
+              }
+            },
+            {
+              "type": "PLAIN_TEXT",
+              "value": " 70 млн градусов по цельсию это жесть"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T11:27:46.058Z"
+    },
+    {
+      "_id": "huaoSYMur9EsJh5a5",
+      "rid": "GENERAL",
+      "msg": ":sun_with_face:",
+      "ts": "2022-01-12T11:01:02.622Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "BIG_EMOJI",
+          "value": [
+            {
+              "type": "EMOJI",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "sun_with_face"
+              }
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T11:01:02.647Z"
+    },
+    {
+      "_id": "bHy4DszBzkGzqcXJE",
+      "rid": "GENERAL",
+      "msg": "```  он нам не демон ```",
+      "ts": "2022-01-12T10:37:13.136Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "``"
+            },
+            {
+              "type": "INLINE_CODE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "  он нам не демон "
+              }
+            },
+            {
+              "type": "PLAIN_TEXT",
+              "value": "``"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T10:37:13.159Z"
+    },
+    {
+      "_id": "rk5ExhdQd9Ng8WN8G",
+      "rid": "GENERAL",
+      "msg": "демоны, одним словом",
+      "ts": "2022-01-12T10:22:26.975Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "демоны, одним словом"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T10:22:27.003Z"
+    },
+    {
+      "_id": "avddgKL7sCgF42yAD",
+      "rid": "GENERAL",
+      "msg": "```\nговорят царь, не настоящий\n```",
+      "ts": "2022-01-12T10:21:22.662Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "CODE",
+          "language": "none",
+          "value": [
+            {
+              "type": "CODE_LINE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "говорят царь, не настоящий"
+              }
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T10:21:22.677Z"
+    },
+    {
+      "_id": "QhuQnFJBAsas7ZPfo",
+      "rid": "GENERAL",
+      "msg": "`не позволю про царя такие песни петь`",
+      "ts": "2022-01-12T10:20:52.979Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "INLINE_CODE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "не позволю про царя такие песни петь"
+              }
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T10:20:53.008Z"
+    },
+    {
+      "_id": "doQ4kooe2J6TFembZ",
+      "rid": "GENERAL",
+      "msg": "кто посмел?",
+      "ts": "2022-01-12T10:20:15.753Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "кто посмел?"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T10:20:15.771Z"
+    },
+    {
+      "_id": "gzQEu42AbNDxspChj",
+      "rid": "GENERAL",
+      "msg": "кто?",
+      "ts": "2022-01-12T10:19:23.242Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "кто?"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T10:19:23.264Z"
+    },
+    {
+      "_id": "jkRdgHGCNS9b486wR",
+      "rid": "GENERAL",
+      "msg": "да там уже все связи экранируют, как от свинцового купола",
+      "ts": "2022-01-12T10:11:40.296Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "да там уже все связи экранируют, как от свинцового купола"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T10:11:40.328Z"
+    },
+    {
+      "_id": "zNEBj6fxSuaAGouwF",
+      "rid": "GENERAL",
+      "msg": "так лучше связь с космосом",
+      "ts": "2022-01-12T10:08:13.561Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "так лучше связь с космосом"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T10:08:13.593Z"
+    },
+    {
+      "_id": "BJSuJT4uCsBqwyA4b",
+      "rid": "GENERAL",
+      "msg": "облысел вообще",
+      "ts": "2022-01-12T10:07:41.965Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "облысел вообще"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T10:07:41.988Z"
+    },
+    {
+      "_id": "rSAfPqbgkA2fQnZHZ",
+      "rid": "GENERAL",
+      "msg": "один уже обнулился у нас",
+      "ts": "2022-01-12T10:06:47.160Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "один уже обнулился у нас"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T10:06:47.181Z"
+    },
+    {
+      "_id": "uFwrjAP3Fb4ywLdGo",
+      "rid": "GENERAL",
+      "msg": "да все обнуляется периодически, способы и масштабы только разные",
+      "ts": "2022-01-12T10:05:35.308Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "да все обнуляется периодически, способы и масштабы только разные"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T10:05:35.336Z"
+    },
+    {
+      "_id": "WBruEpCWB9hwtYyc6",
+      "rid": "GENERAL",
+      "msg": "нация \"exceptions\" походу как раз хочет тотальный сброс сделать...",
+      "ts": "2022-01-12T10:01:18.862Z",
+      "u": {
+        "_id": "R2ecGKjyBntC6Rv8K",
+        "username": "weldon",
+        "name": "Mr.Covid"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "нация \"exceptions\" походу как раз хочет тотальный сброс сделать..."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T10:01:18.894Z"
+    },
+    {
+      "_id": "e6EzAfDcfweCW6xcZ",
+      "rid": "GENERAL",
+      "msg": "лови багу !!!!",
+      "ts": "2022-01-12T10:00:35.027Z",
+      "u": {
+        "_id": "qHkSuNAj6CsTKNeug",
+        "username": "angelo",
+        "name": "angelo"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "лови багу !!!!"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T10:00:35.068Z"
+    },
+    {
+      "_id": "ABk7pxCfN33WoRpSp",
+      "rid": "GENERAL",
+      "msg": "пойду чая попью, пока его не признали сверху багом и не пофиксили0",
+      "ts": "2022-01-12T10:00:06.944Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "пойду чая попью, пока его не признали сверху багом и не пофиксили0"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T10:00:06.982Z"
+    },
+    {
+      "_id": "6LYw27yZo4DZ8QSif",
+      "rid": "GENERAL",
+      "msg": "ну пока кого-то не заебет из вне что все по циклу ходит",
+      "ts": "2022-01-12T09:58:52.757Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "ну пока кого-то не заебет из вне что все по циклу ходит"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:58:52.781Z"
+    },
+    {
+      "_id": "iERKuHCezykJkWNFA",
+      "rid": "GENERAL",
+      "msg": "и будет счастье, можно будет жить вечно",
+      "ts": "2022-01-12T09:58:40.218Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "и будет счастье, можно будет жить вечно"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:58:40.234Z"
+    },
+    {
+      "_id": "xHHntGh2ThuSDxxNe",
+      "rid": "GENERAL",
+      "msg": "можно 0дей придумать, который пропишет пару длл в ядро",
+      "ts": "2022-01-12T09:58:22.893Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "можно 0дей придумать, который пропишет пару длл в ядро"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:58:22.906Z"
+    },
+    {
+      "_id": "jbRynHW8Cj3unHyok",
+      "rid": "GENERAL",
+      "msg": "времени нет",
+      "ts": "2022-01-12T09:57:56.361Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "времени нет"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:57:56.391Z"
+    },
+    {
+      "_id": "y7qiucHJZAiFpAWs2",
+      "rid": "GENERAL",
+      "msg": "Не ломайте мир, в нем и так куча багов...",
+      "ts": "2022-01-12T09:57:05.943Z",
+      "u": {
+        "_id": "LcSmTknPEhLY3pJkz",
+        "username": "elroy",
+        "name": "elroy"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Не ломайте мир, в нем и так куча багов..."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:57:05.958Z"
+    },
+    {
+      "_id": "EmMzBivbMCu2nEeGf",
+      "rid": "GENERAL",
+      "msg": "много можно предположить, даже вот - нас научили думать, что время течет только таким образом, каким мы его можем понять не словив \"синий экран\". время тоже часть матрицы, если уж на то пошло и об этом",
+      "ts": "2022-01-12T09:56:53.789Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "много можно предположить, даже вот - нас научили думать, что время течет только таким образом, каким мы его можем понять не словив \"синий экран\". время тоже часть матрицы, если уж на то пошло и об этом"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:56:53.831Z"
+    },
+    {
+      "_id": "8hxWZoQy2axcWdqJv",
+      "rid": "GENERAL",
+      "msg": "и модуля что я придумал не будет",
+      "ts": "2022-01-12T09:54:27.046Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "и модуля что я придумал не будет"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:54:27.070Z"
+    },
+    {
+      "_id": "Fgtik4KPTDcFuQ9XP",
+      "rid": "GENERAL",
+      "msg": "коллективный разум же есть такое понятие",
+      "ts": "2022-01-12T09:54:21.440Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "коллективный разум же есть такое понятие"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:54:21.466Z"
+    },
+    {
+      "_id": "F5g8xDmpaFQBpcm7F",
+      "rid": "GENERAL",
+      "msg": "ну типа до последнего бакапа",
+      "ts": "2022-01-12T09:54:18.290Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "ну типа до последнего бакапа"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:54:18.303Z"
+    },
+    {
+      "_id": "B7t7FKf9dnTo4gcM2",
+      "rid": "GENERAL",
+      "msg": "дак там же откат будет",
+      "ts": "2022-01-12T09:54:10.026Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "дак там же откат будет"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:54:10.039Z"
+    },
+    {
+      "_id": "Ahzi2bmcLxyEDhBWR",
+      "rid": "GENERAL",
+      "msg": "значит надо свою память раскидать по другим \"модулям\".. вообще на всех, мистер Смит преуспел в той другой матрице, но что-то пошло не так",
+      "ts": "2022-01-12T09:53:46.670Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "значит надо свою память раскидать по другим \"модулям\".. вообще на всех, мистер Смит преуспел в той другой матрице, но что-то пошло не так"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:53:46.705Z"
+    },
+    {
+      "_id": "zqySS887ro6G7LmRm",
+      "rid": "GENERAL",
+      "msg": "осталось понять как при этом сохранить еще память)",
+      "ts": "2022-01-12T09:51:24.946Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "осталось понять как при этом сохранить еще память)"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:51:24.965Z"
+    },
+    {
+      "_id": "A62YwEmHzBkrTSTRH",
+      "rid": "GENERAL",
+      "msg": "вчера пересматривал фильм \"эффект манделы\", правда не в первый раз и тут до меня вчера реально дошла идея. ведь если мы все живем в матрице, время от времени нам же заливают апдейти и синхронизирую. реально же можно сбросить систему до заводских) полной загрузкой)",
+      "ts": "2022-01-12T09:50:35.820Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "вчера пересматривал фильм \"эффект манделы\", правда не в первый раз и тут до меня вчера реально дошла идея. ведь если мы все живем в матрице, время от времени нам же заливают апдейти и синхронизирую. реально же можно сбросить систему до заводских) полной загрузкой)"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:50:35.849Z"
+    },
+    {
+      "_id": "sizdSCcxDunDvjqdB",
+      "rid": "GENERAL",
+      "msg": "эстонский piiiiinggg",
+      "ts": "2022-01-12T09:49:40.289Z",
+      "u": {
+        "_id": "R2ecGKjyBntC6Rv8K",
+        "username": "weldon",
+        "name": "Mr.Covid"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "эстонский piiiiinggg"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:49:40.307Z"
+    },
+    {
+      "_id": "eDo7imMEdRKdtAsyr",
+      "rid": "GENERAL",
+      "msg": "меня роскомнадхор замедлил",
+      "ts": "2022-01-12T09:48:16.306Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "меня роскомнадхор замедлил"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:48:16.322Z"
+    },
+    {
+      "_id": "EM2qEBGQjDp2fSNh4",
+      "rid": "GENERAL",
+      "msg": "Т.е. он написал 55 минут назад. а к тебе только пришло? Ну и пинг, однако...",
+      "ts": "2022-01-12T09:47:39.741Z",
+      "u": {
+        "_id": "LcSmTknPEhLY3pJkz",
+        "username": "elroy",
+        "name": "elroy"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Т.е. он написал 55 минут назад. а к тебе только пришло? Ну и пинг, однако..."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:47:39.756Z"
+    },
+    {
+      "_id": "qp2td3p7gCS7tjs8H",
+      "rid": "GENERAL",
+      "msg": "физика",
+      "ts": "2022-01-12T09:47:24.495Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "физика"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:47:24.519Z"
+    },
+    {
+      "_id": "7x7q8YK4PjQidyJbp",
+      "rid": "GENERAL",
+      "msg": "все в мире относительно",
+      "ts": "2022-01-12T09:46:00.659Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "все в мире относительно"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:46:00.683Z"
+    },
+    {
+      "_id": "TMXSZbcxHLhE7dftF",
+      "rid": "GENERAL",
+      "msg": "\"сразу\" - через 55 мин",
+      "ts": "2022-01-12T09:45:34.458Z",
+      "u": {
+        "_id": "R2ecGKjyBntC6Rv8K",
+        "username": "weldon",
+        "name": "Mr.Covid"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "\"сразу\" - через 55 мин"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:45:34.486Z"
+    },
+    {
+      "_id": "dyDazn36MX2wPMLTX",
+      "rid": "GENERAL",
+      "msg": "да это просто первая ступень отделилась, полет же нормальный дальше)",
+      "ts": "2022-01-12T09:44:16.696Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "да это просто первая ступень отделилась, полет же нормальный дальше)"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:44:16.725Z"
+    },
+    {
+      "_id": "R4nu42XDKa6geowLG",
+      "rid": "GENERAL",
+      "msg": "зачем ты сказал про рокет, он у меня тут сразу упал",
+      "ts": "2022-01-12T09:42:25.352Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "зачем ты сказал про рокет, он у меня тут сразу упал"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:42:25.368Z"
+    },
+    {
+      "_id": "59X6KQNjHwhupKQkN",
+      "rid": "GENERAL",
+      "msg": "`сейчас его будут бить, может быть, даже ногами` )))",
+      "ts": "2022-01-12T08:53:41.435Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "INLINE_CODE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "сейчас его будут бить, может быть, даже ногами"
+              }
+            },
+            {
+              "type": "PLAIN_TEXT",
+              "value": " )))"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:53:41.462Z"
+    },
+    {
+      "_id": "kL9dJxjH998FyHH6x",
+      "rid": "GENERAL",
+      "msg": "`Я, дорогие, вам травмы сейчас нанесу...`",
+      "ts": "2022-01-12T08:50:50.352Z",
+      "u": {
+        "_id": "qHkSuNAj6CsTKNeug",
+        "username": "angelo",
+        "name": "angelo"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "INLINE_CODE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "Я, дорогие, вам травмы сейчас нанесу..."
+              }
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T09:03:18.526Z",
+      "editedAt": "2022-01-12T08:51:00.410Z",
+      "editedBy": {
+        "_id": "qHkSuNAj6CsTKNeug",
+        "username": "angelo"
+      },
+      "reactions": {
+        ":smiling_imp:": {
+          "usernames": [
+            "demetrius"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "AJncTvyEMCNTHL4dy",
+      "rid": "GENERAL",
+      "msg": "потом Дима злой придёт и скажет:",
+      "ts": "2022-01-12T08:50:36.169Z",
+      "u": {
+        "_id": "qHkSuNAj6CsTKNeug",
+        "username": "angelo",
+        "name": "angelo"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "потом Дима злой придёт и скажет:"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:50:36.200Z"
+    },
+    {
+      "_id": "8rpCz3ropmKNLSGrH",
+      "rid": "GENERAL",
+      "msg": "и всё, хана Рокету, поломаем",
+      "ts": "2022-01-12T08:47:20.576Z",
+      "u": {
+        "_id": "qHkSuNAj6CsTKNeug",
+        "username": "angelo",
+        "name": "angelo"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "и всё, хана Рокету, поломаем"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:47:20.591Z"
+    },
+    {
+      "_id": "YJLpNWmNnGTbaAqcM",
+      "rid": "GENERAL",
+      "msg": "щас счетчик сообщений заглючил? сообщение с собакой отредактировал, промахнулся сначала (велдон, энжи)",
+      "ts": "2022-01-12T08:36:51.421Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "щас счетчик сообщений заглючил? сообщение с собакой отредактировал, промахнулся сначала (велдон, энжи)"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:39:52.456Z",
+      "editedAt": "2022-01-12T08:39:52.441Z",
+      "editedBy": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield"
+      }
+    },
+    {
+      "_id": "BY2sYGW25imYJQfSX",
+      "rid": "GENERAL",
+      "msg": "энж не тебе))",
+      "ts": "2022-01-12T08:34:25.095Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "энж не тебе))"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:34:25.124Z"
+    },
+    {
+      "_id": "bEYAb9DXM6bhsJHvX",
+      "rid": "GENERAL",
+      "msg": "Не могу не процитировать фразу \"Воны работають, а вона працюе\".",
+      "ts": "2022-01-12T08:34:22.545Z",
+      "u": {
+        "_id": "LcSmTknPEhLY3pJkz",
+        "username": "elroy",
+        "name": "elroy"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Не могу не процитировать фразу \"Воны работають, а вона працюе\"."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:34:22.559Z"
+    },
+    {
+      "_id": "ExXNHyr9QPe6Ddge8",
+      "rid": "GENERAL",
+      "msg": "@weldon ну рано ему ещё серьезным становиться, считаю всю жизнь на алтарь шуток-юмора положил, профдеформация",
+      "ts": "2022-01-12T08:34:10.336Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [
+        {
+          "_id": "R2ecGKjyBntC6Rv8K",
+          "username": "weldon",
+          "name": "Mr.Covid",
+          "type": "user"
+        }
+      ],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "MENTION_USER",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "weldon"
+              }
+            },
+            {
+              "type": "PLAIN_TEXT",
+              "value": " ну рано ему ещё серьезным становиться, считаю всю жизнь на алтарь шуток-юмора положил, профдеформация"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:35:42.095Z",
+      "editedAt": "2022-01-12T08:35:42.079Z",
+      "editedBy": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield"
+      }
+    },
+    {
+      "_id": "YXkt6eQgChJps2Kb6",
+      "rid": "GENERAL",
+      "msg": "Я готов слушать вас всю свою биографию...",
+      "ts": "2022-01-12T08:31:40.702Z",
+      "u": {
+        "_id": "qHkSuNAj6CsTKNeug",
+        "username": "angelo",
+        "name": "angelo"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Я готов слушать вас всю свою биографию..."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:31:40.731Z"
+    },
+    {
+      "_id": "CFHaqxPqnnZ399gTc",
+      "rid": "GENERAL",
+      "msg": "думал он положил на все, а у него стоит",
+      "ts": "2022-01-12T08:31:02.856Z",
+      "u": {
+        "_id": "R2ecGKjyBntC6Rv8K",
+        "username": "weldon",
+        "name": "Mr.Covid"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "думал он положил на все, а у него стоит"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:31:02.873Z"
+    },
+    {
+      "_id": "CavoX479EfDHXoYRd",
+      "rid": "GENERAL",
+      "msg": "Стоит хоть не лежит...",
+      "ts": "2022-01-12T08:30:05.708Z",
+      "u": {
+        "_id": "LcSmTknPEhLY3pJkz",
+        "username": "elroy",
+        "name": "elroy"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Стоит хоть не лежит..."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:30:05.728Z"
+    },
+    {
+      "_id": "RMAuFCQEKXQrrTSyE",
+      "rid": "GENERAL",
+      "msg": "Товарищи, мы тут говорим, а там всё стоит!",
+      "ts": "2022-01-12T08:28:10.543Z",
+      "u": {
+        "_id": "qHkSuNAj6CsTKNeug",
+        "username": "angelo",
+        "name": "angelo"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Товарищи, мы тут говорим, а там всё стоит!"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:28:10.562Z"
+    },
+    {
+      "_id": "BGB7NMWfcDrdN9gSx",
+      "rid": "GENERAL",
+      "msg": "@Garfield - \"Я не думаю, я мечтаю. Мечтать не вредно. Значит, я ничего вредного и не делаю.\" :grin:",
+      "ts": "2022-01-12T08:27:04.505Z",
+      "u": {
+        "_id": "R2ecGKjyBntC6Rv8K",
+        "username": "weldon",
+        "name": "Mr.Covid"
+      },
+      "urls": [],
+      "mentions": [
+        {
+          "_id": "AL9ksMKDQG3Tg4g9B",
+          "username": "Garfield",
+          "name": "Garfield",
+          "type": "user"
+        }
+      ],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "MENTION_USER",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "Garfield"
+              }
+            },
+            {
+              "type": "PLAIN_TEXT",
+              "value": " - \"Я не думаю, я мечтаю. Мечтать не вредно. Значит, я ничего вредного и не делаю.\" "
+            },
+            {
+              "type": "EMOJI",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "grin"
+              }
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:27:04.528Z"
+    },
+    {
+      "_id": "r4EL2Wjm2SaRsro4h",
+      "rid": "GENERAL",
+      "msg": "Глубокая мысль, но такая пустая...",
+      "ts": "2022-01-12T08:26:45.784Z",
+      "u": {
+        "_id": "LcSmTknPEhLY3pJkz",
+        "username": "elroy",
+        "name": "elroy"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Глубокая мысль, но такая пустая..."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:26:45.801Z"
+    },
+    {
+      "_id": "De3DFndWAFaQA9JbZ",
+      "rid": "GENERAL",
+      "msg": "читая Кота, чёт вспомнился Даун Хаус )",
+      "ts": "2022-01-12T08:14:40.293Z",
+      "u": {
+        "_id": "qHkSuNAj6CsTKNeug",
+        "username": "angelo",
+        "name": "angelo"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "читая Кота, чёт вспомнился Даун Хаус )"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:15:19.235Z",
+      "editedAt": "2022-01-12T08:15:19.228Z",
+      "editedBy": {
+        "_id": "qHkSuNAj6CsTKNeug",
+        "username": "angelo"
+      }
+    },
+    {
+      "_id": "EL9wZeTvRkKKCrY9d",
+      "rid": "GENERAL",
+      "msg": "`Нет, я таблетки не люблю. Я ими давлюсь. Мне больше нравится рыбок разводить. Так что я в наркотиках совсем не нуждаюсь. Я и без них вижу жизнь живописной. У меня и справка есть.`",
+      "ts": "2022-01-12T08:14:02.408Z",
+      "u": {
+        "_id": "qHkSuNAj6CsTKNeug",
+        "username": "angelo",
+        "name": "angelo"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "INLINE_CODE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "Нет, я таблетки не люблю. Я ими давлюсь. Мне больше нравится рыбок разводить. Так что я в наркотиках совсем не нуждаюсь. Я и без них вижу жизнь живописной. У меня и справка есть."
+              }
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:14:02.431Z"
+    },
+    {
+      "_id": "ux4qbuCzY7ZvXuRHN",
+      "rid": "GENERAL",
+      "msg": "у клоуна-президента, еще поострее крылатые фразы были, чем у боксера-мэра)",
+      "ts": "2022-01-12T08:13:32.788Z",
+      "u": {
+        "_id": "R2ecGKjyBntC6Rv8K",
+        "username": "weldon",
+        "name": "Mr.Covid"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "у клоуна-президента, еще поострее крылатые фразы были, чем у боксера-мэра)"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:13:32.820Z"
+    },
+    {
+      "_id": "auLqy8EXtN3oHPLFz",
+      "rid": "GENERAL",
+      "msg": "А сегодня в завтрашний день не все могут смотреть. Вернее смотреть могут не только лишь все, мало кто может это делать",
+      "ts": "2022-01-12T08:07:57.475Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "А сегодня в завтрашний день не все могут смотреть. Вернее смотреть могут не только лишь все, мало кто может это делать"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:20:39.370Z",
+      "reactions": {
+        ":rofl:": {
+          "usernames": [
+            "weldon",
+            "manuel",
+            "elroy"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "mdmjspLiXxpZK2zeL",
+      "rid": "GENERAL",
+      "msg": "Кот я не понимаю твою речь :woozy_face:",
+      "ts": "2022-01-12T08:07:06.913Z",
+      "u": {
+        "_id": "qHkSuNAj6CsTKNeug",
+        "username": "angelo",
+        "name": "angelo"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Кот я не понимаю твою речь "
+            },
+            {
+              "type": "EMOJI",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "woozy_face"
+              }
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:07:06.927Z"
+    },
+    {
+      "_id": "dH3MBf3TyFdaNhQRt",
+      "rid": "GENERAL",
+      "msg": "в оригинале пока кать, пока лена. троллинг с улиц",
+      "ts": "2022-01-12T08:06:15.932Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "в оригинале пока кать, пока лена. троллинг с улиц"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:06:15.955Z"
+    },
+    {
+      "_id": "pRtygxDAoLRDqKkZz",
+      "rid": "GENERAL",
+      "msg": "мы же просто общительные :pleading_face:",
+      "ts": "2022-01-12T08:05:17.831Z",
+      "u": {
+        "_id": "qHkSuNAj6CsTKNeug",
+        "username": "angelo",
+        "name": "angelo"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "мы же просто общительные "
+            },
+            {
+              "type": "EMOJI",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "pleading_face"
+              }
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:05:17.888Z"
+    },
+    {
+      "_id": "xWGETAx7SHeLoyhav",
+      "rid": "GENERAL",
+      "msg": "пока кай. пока лена",
+      "ts": "2022-01-12T08:04:51.384Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "пока кай. пока лена"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:04:51.416Z"
+    },
+    {
+      "_id": "TwZzpoBAj66pxkCyS",
+      "rid": "GENERAL",
+      "msg": "не, главтролль у нас только один))",
+      "ts": "2022-01-12T08:04:04.892Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "не, главтролль у нас только один))"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:04:04.938Z"
+    },
+    {
+      "_id": "YAc3GJhBFsacpFcHW",
+      "rid": "GENERAL",
+      "msg": "Вы как два брата Тролля )",
+      "ts": "2022-01-12T08:03:27.960Z",
+      "u": {
+        "_id": "qHkSuNAj6CsTKNeug",
+        "username": "angelo",
+        "name": "angelo"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Вы как два брата Тролля )"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:03:27.983Z"
+    },
+    {
+      "_id": "aXHDt6XEJ2fH9Dd2N",
+      "rid": "GENERAL",
+      "msg": "мы кстати прям как тролли одномоментно",
+      "ts": "2022-01-12T08:03:04.308Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "мы кстати прям как тролли одномоментно"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:03:04.344Z"
+    },
+    {
+      "_id": "axC67JhfJoHqJEGtZ",
+      "rid": "GENERAL",
+      "msg": "Если бы Кай не присоединился к чату, я бы так и знал дальше, что рассказ \"Снежная королева\" может начинаться с такой движухи:\nРассказ первый. Зеркало и его осколки\nТролли, несущие зеркало....",
+      "ts": "2022-01-12T08:02:16.797Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Если бы Кай не присоединился к чату, я бы так и знал дальше, что рассказ \"Снежная королева\" может начинаться с такой движухи:"
+            }
+          ]
+        },
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Рассказ первый. Зеркало и его осколки"
+            }
+          ]
+        },
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Тролли, несущие зеркало...."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:02:33.099Z",
+      "editedAt": "2022-01-12T08:02:33.088Z",
+      "editedBy": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield"
+      }
+    },
+    {
+      "_id": "jrw36TWHicRYfz2th",
+      "rid": "GENERAL",
+      "msg": "от Герды)",
+      "ts": "2022-01-12T08:02:13.572Z",
+      "u": {
+        "_id": "R2ecGKjyBntC6Rv8K",
+        "username": "weldon",
+        "name": "Mr.Covid"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "от Герды)"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:02:13.583Z"
+    },
+    {
+      "_id": "WgJ55tRQjNLCFoak3",
+      "rid": "GENERAL",
+      "msg": "Привет @kai !",
+      "ts": "2022-01-12T08:01:51.628Z",
+      "u": {
+        "_id": "qHkSuNAj6CsTKNeug",
+        "username": "angelo",
+        "name": "angelo"
+      },
+      "urls": [],
+      "mentions": [
+        {
+          "_id": "5ttWia9DhZD47FEuY",
+          "username": "kai",
+          "name": "kai",
+          "type": "user"
+        }
+      ],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Привет "
+            },
+            {
+              "type": "MENTION_USER",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "kai"
+              }
+            },
+            {
+              "type": "PLAIN_TEXT",
+              "value": " !"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T08:01:51.684Z"
+    },
+    {
+      "_id": "sjthazeE46BnYQ7g4",
+      "t": "uj",
+      "rid": "GENERAL",
+      "ts": "2022-01-12T07:50:11.032Z",
+      "msg": "kai",
+      "u": {
+        "_id": "5ttWia9DhZD47FEuY",
+        "username": "kai"
+      },
+      "groupable": false,
+      "_updatedAt": "2022-01-12T07:50:11.033Z"
+    },
+    {
+      "_id": "wH3x3H4eRXeq7hLnh",
+      "rid": "GENERAL",
+      "msg": "\"Кнопка, кнопка\" так то название подгадал автор. Звучит по разному даже - от восторга до отчаяния",
+      "ts": "2022-01-12T06:47:42.678Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "\"Кнопка, кнопка\" так то название подгадал автор. Звучит по разному даже - от восторга до отчаяния"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T06:47:42.713Z"
+    },
+    {
+      "_id": "Q2fsfzHeA6J2uKjL5",
+      "rid": "GENERAL",
+      "msg": "фильм \"посылка\", по рассказу \"кнопка, кнопка\" )) можно даже пересмотреть, наверное. в свое время показался вполне на уровне",
+      "ts": "2022-01-12T06:43:04.064Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "фильм \"посылка\", по рассказу \"кнопка, кнопка\" )) можно даже пересмотреть, наверное. в свое время показался вполне на уровне"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-12T06:43:04.128Z"
+    }
+  ],
+  "success": true
+}

@@ -1,0 +1,402 @@
+{
+  "messages": [
+    {
+      "_id": "DAwFaj2ej6gxTbSs8",
+      "rid": "GENERAL",
+      "msg": "И распишите себе mindmap по поднятию прав от ЛП до ДА",
+      "ts": "2020-09-30T15:45:20.935Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-30T16:04:00.367Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-09-30T16:04:00.363Z",
+      "editedBy": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1"
+      },
+      "urls": []
+    },
+    {
+      "_id": "HcsMh3cvut7CPtR9m",
+      "rid": "GENERAL",
+      "msg": "Напишите в ЛС подробные отчеты о проделанной работе за последние 2-3 дня. Пока можете заняться организацией записей по модулям и прочему, так же написать себе мануал по всем векторам которые были и в каком порядке лучше действовать. Заканчиваем в 20:00 сегодня",
+      "ts": "2020-09-30T15:42:04.949Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-30T15:42:04.973Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "pSB3tXmkcAHt8Zf2s",
+      "rid": "GENERAL",
+      "msg": "https://fixmypc.ru/post/kak-naiti-zaloginenykh-polzovatelei-i-aktivnye-sessii-s-powershell/",
+      "ts": "2020-09-30T14:50:34.478Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-30T14:50:34.501Z",
+      "urls": [
+        {
+          "url": "https://fixmypc.ru/post/kak-naiti-zaloginenykh-polzovatelei-i-aktivnye-sessii-s-powershell/"
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "eCDkyDbLn6BNTi9vf",
+      "rid": "GENERAL",
+      "msg": "если работает нагрузка `beacon_reverse_tcp` в `Windows Executable (S)` который прошел через `shellConcatenation.1.0.0`, но при этом не работает через `rportfwd` скорее всего дело в самом `rportfwd`",
+      "ts": "2020-09-30T08:47:32.703Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-30T08:47:32.732Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "godK6DZ62cme5eTYM",
+      "rid": "GENERAL",
+      "msg": "[ ](https://mediaeveryone.com/channel/general?msg=mQY8BtgM65Eh6Tpz6) а проверяли на обычном https листе? или уже на rportfwd?",
+      "ts": "2020-09-30T08:41:37.230Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-30T08:41:37.254Z",
+      "attachments": [
+        {
+          "text": "Ну оно вроде отрабатывает, только потом полученная библиотека не даёт требуемую сессию)",
+          "author_name": "user1",
+          "author_icon": "/avatar/user1",
+          "message_link": "https://mediaeveryone.com/channel/general?msg=mQY8BtgM65Eh6Tpz6",
+          "attachments": [],
+          "ts": "2020-09-30T08:39:02.025Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/channel/general?msg=mQY8BtgM65Eh6Tpz6",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "4pnR7Fusm6mWbww3y",
+      "rid": "GENERAL",
+      "msg": "а чем не нравится `Attack -> Packages -> Payload Generator`?",
+      "ts": "2020-09-30T08:39:33.938Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-30T08:39:33.968Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "wXvT6q52Ny7JvqQjR",
+      "rid": "GENERAL",
+      "msg": "он в 255 раз больше",
+      "ts": "2020-09-30T08:38:48.356Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-30T08:38:48.391Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "eWJB3CSW3We4iGAhr",
+      "rid": "GENERAL",
+      "msg": "Да, но не уверен, что сам `shellConcatenation.1.0.0` поддерживает такой размер файла RAW)",
+      "ts": "2020-09-30T08:38:14.479Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-30T08:38:14.522Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "wfnrv56KLwayuTvwu",
+      "rid": "GENERAL",
+      "msg": "а по поводу `rportfwd` не совсем понял\n```\nbeacon> help rportfwd\nUse: rportfwd [bind port] [forward host] [forward port]\n     rportfwd stop [bind port]\n\nBinds the specified port on the target host. When a connection comes in,\nCobalt Strike will make a connection to the forwarded host/port and use Beacon\nto relay traffic between the two connections.\n```",
+      "ts": "2020-09-30T08:35:33.766Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-30T08:35:33.843Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "tge3Foyf5CscYKiWf",
+      "rid": "GENERAL",
+      "msg": "`Windows Executable (S) - RAW` - это stageless вариант, а именно когда вы делаете RAW через `Attack -> Packages -> Payload Generator` вы делаете промежуточный файл, который после запуска докачивает рабочий код самой кобы, в `Windows Executable` сразу этот рабочий код идет, без дополнительной подкачки",
+      "ts": "2020-09-30T08:31:25.150Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-30T08:32:15.822Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-09-30T08:32:15.818Z",
+      "editedBy": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1"
+      },
+      "urls": []
+    },
+    {
+      "_id": "zyfZvMcETJDdKSxFa",
+      "rid": "GENERAL",
+      "msg": "hi",
+      "ts": "2020-09-30T08:13:04.190Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-30T08:13:04.230Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "cqgC6BrgacQkdDmqZ",
+      "rid": "GENERAL",
+      "msg": "тогда до обеда работаем с ним все вместе",
+      "ts": "2020-09-30T08:13:00.621Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-30T08:13:00.658Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3NvQNNtLZJX2sKERG",
+      "rid": "GENERAL",
+      "msg": "+",
+      "ts": "2020-09-30T08:12:41.554Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-09-30T08:12:41.575Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "tXWPZapXfRDNoDgo6",
+      "rid": "GENERAL",
+      "msg": "из сессий только MATCHES?",
+      "ts": "2020-09-30T08:12:32.553Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-30T08:12:32.622Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jCfXweeg4gABQj2Ef",
+      "rid": "GENERAL",
+      "msg": "Доброе утро",
+      "ts": "2020-09-30T08:07:43.233Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-09-30T08:07:43.253Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "d9YwLDzgerEodzm9b",
+      "rid": "GENERAL",
+      "msg": "Всем доброе утро",
+      "ts": "2020-09-30T08:06:51.430Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-30T08:06:51.474Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "CodjEPKcqSKqE8QgX",
+      "rid": "GENERAL",
+      "msg": "сейчас спущусь",
+      "ts": "2020-09-30T08:03:18.120Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-30T08:03:18.139Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "eFvAtSbpZu8oscgGq",
+      "rid": "GENERAL",
+      "msg": "Взглядом",
+      "ts": "2020-09-30T08:03:08.234Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-09-30T08:03:08.258Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "p5UiJDo7u2t12sUu4",
+      "rid": "GENERAL",
+      "msg": "Телепатически? ",
+      "ts": "2020-09-30T08:03:00.418Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-30T08:03:00.443Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "bBLfW9sGc8LiJaEee",
+      "rid": "GENERAL",
+      "msg": "не испачкайте",
+      "ts": "2020-09-30T08:02:51.870Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-30T08:02:51.891Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "o9d6fzz7h28dKqazz",
+      "rid": "GENERAL",
+      "msg": "только аккуратно, она покрашена",
+      "ts": "2020-09-30T08:02:43.211Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-30T08:02:43.240Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Bx2MdRNGKyMkJBBjn",
+      "rid": "GENERAL",
+      "msg": "Бейте в дверь мощьно",
+      "ts": "2020-09-30T08:02:23.059Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-09-30T08:02:23.098Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3R1pT5omyOjTNOutf",
+      "rid": "GENERAL",
+      "msg": "🗿",
+      "ts": "2020-09-30T08:02:02.924Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-30T08:02:02.952Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "CciGJkgF8ZoeRy6ZA",
+      "rid": "GENERAL",
+      "msg": "Там забулдыга",
+      "ts": "2020-09-30T08:01:40.328Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-09-30T08:01:40.357Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "whwuALeFv9LRDPbh2",
+      "rid": "GENERAL",
+      "msg": "Добра по утру",
+      "ts": "2020-09-30T08:00:57.605Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-30T08:00:57.637Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "KiJtKKtLmuKdGMgmr",
+      "rid": "GENERAL",
+      "msg": "Бодрое утро",
+      "ts": "2020-09-30T08:00:18.032Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-09-30T08:00:18.061Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

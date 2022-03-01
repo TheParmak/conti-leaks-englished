@@ -1,0 +1,56 @@
+{
+  "messages": [
+    {
+      "_id": "sQ8KBNkeGjGmNq5ip",
+      "rid": "5nrWYoszLFsnLuMcNyJcaRFnKQqepiffHq",
+      "tmid": "dKP7aMbJT89REzJbn",
+      "msg": "да",
+      "ts": "2020-09-23T18:37:29.571Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-23T18:37:29.601Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "JY6eQskyikNgdf5ak",
+      "rid": "5nrWYoszLFsnLuMcNyJcaRFnKQqepiffHq",
+      "tshow": true,
+      "tmid": "dKP7aMbJT89REzJbn",
+      "msg": "это ssh ?",
+      "ts": "2020-09-23T18:35:09.731Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-09-23T18:35:09.771Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "dKP7aMbJT89REzJbn",
+      "rid": "5nrWYoszLFsnLuMcNyJcaRFnKQqepiffHq",
+      "msg": "```\nroot:glp151yQA92Abu7WIAYw@23.106.160.212:35985\n```",
+      "ts": "2020-09-23T16:02:07.915Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-23T18:37:29.635Z",
+      "mentions": [],
+      "channels": [],
+      "replies": [
+        "yJcaRFnKQqepiffHq",
+        "5nrWYoszLFsnLuMcN"
+      ],
+      "tcount": 2,
+      "tlm": "2020-09-23T18:37:29.571Z"
+    }
+  ],
+  "success": true
+}

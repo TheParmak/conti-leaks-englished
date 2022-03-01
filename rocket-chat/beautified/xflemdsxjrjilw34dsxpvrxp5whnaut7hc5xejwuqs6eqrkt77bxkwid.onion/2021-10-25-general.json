@@ -1,0 +1,147 @@
+{
+  "messages": [
+    {
+      "_id": "JBCZumS6Tnf4aZavT",
+      "rid": "GENERAL",
+      "msg": "@all Ув. пользователи фермы ВМ. У кого есть рабочая\\личная тачка - обратитесь к @gator для переноса на новую ферму ВМ (на базе proxmox).\nНа phpvirtualbox'e останутся только ВМ АВ-тесты.",
+      "ts": "2021-10-25T11:40:49.580Z",
+      "u": {
+        "_id": "5JgpXux9tPavnZ97Y",
+        "username": "demetrius",
+        "name": "demetrius"
+      },
+      "urls": [],
+      "mentions": [
+        {
+          "_id": "all",
+          "username": "all"
+        },
+        {
+          "_id": "svN8juueQuJMfeHjs",
+          "username": "gator",
+          "name": "gator",
+          "type": "user"
+        }
+      ],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "MENTION_USER",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "all"
+              }
+            },
+            {
+              "type": "PLAIN_TEXT",
+              "value": " Ув. пользователи фермы ВМ. У кого есть рабочаяличная тачка - обратитесь к "
+            },
+            {
+              "type": "MENTION_USER",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "gator"
+              }
+            },
+            {
+              "type": "PLAIN_TEXT",
+              "value": " для переноса на новую ферму ВМ (на базе proxmox)."
+            }
+          ]
+        },
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "На phpvirtualbox'e останутся только ВМ АВ-тесты."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-10-25T11:40:49.611Z"
+    },
+    {
+      "_id": "iN27J34XWk847CMwi",
+      "rid": "GENERAL",
+      "msg": "еще и рокет прикладывается отдохнуть раз в 10 мин",
+      "ts": "2021-10-25T08:30:35.611Z",
+      "u": {
+        "_id": "NuyvBGFzk68fjeQS5",
+        "username": "silver",
+        "name": "Silver"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "еще и рокет прикладывается отдохнуть раз в 10 мин"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-10-25T08:30:35.629Z"
+    },
+    {
+      "_id": "oCzFWo7dv4oABAufW",
+      "rid": "GENERAL",
+      "msg": "да",
+      "ts": "2021-10-25T08:24:06.112Z",
+      "u": {
+        "_id": "NuyvBGFzk68fjeQS5",
+        "username": "silver",
+        "name": "Silver"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "да"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-10-25T08:24:06.129Z"
+    },
+    {
+      "_id": "YEashHjXeqXHuipR8",
+      "rid": "GENERAL",
+      "msg": "Гит прилег поспать?",
+      "ts": "2021-10-25T08:22:19.594Z",
+      "u": {
+        "_id": "XDbuuMtBeYyf8g7bz",
+        "username": "martin",
+        "name": "martin"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Гит прилег поспать?"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-10-25T08:22:19.614Z"
+    }
+  ],
+  "success": true
+}

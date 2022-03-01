@@ -1,0 +1,133 @@
+{
+  "messages": [
+    {
+      "_id": "PDJyZe7W9DXHsMBis",
+      "rid": "Rmne8eAkiu37dhm5zhjejta5RxgeJ37xnE",
+      "msg": "я в гуе и смотрю, там куда вставить место есть а вот где взять? Может как то не очевидно называется пункт?",
+      "ts": "2021-01-19T14:02:25.458Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2021-01-19T14:02:25.503Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "B7CAbu5GD7oQnPPgo",
+      "rid": "Rmne8eAkiu37dhm5zhjejta5RxgeJ37xnE",
+      "msg": "ну посмотри прям через гуевую реализацию шарпвью там \nя не помню на память передачу параметра((\nчерез гуевый комманд билдер по итогу ток...",
+      "ts": "2021-01-19T13:58:00.912Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2021-01-19T13:58:00.962Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "xCShdZjd8ng4G65tn",
+      "rid": "Rmne8eAkiu37dhm5zhjejta5RxgeJ37xnE",
+      "msg": "[ ](https://mediaeveryone.com/direct/Rmne8eAkiu37dhm5zhjejta5RxgeJ37xnE?msg=6KQLTRAjjP6STB9m5) мы ж не в домене, а через впн..",
+      "ts": "2021-01-19T13:57:07.603Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2021-01-19T13:57:07.626Z",
+      "attachments": [
+        {
+          "text": "а зачем? токен не одевается?",
+          "author_name": "tl2",
+          "author_icon": "/avatar/tl2",
+          "message_link": "https://mediaeveryone.com/direct/Rmne8eAkiu37dhm5zhjejta5RxgeJ37xnE?msg=6KQLTRAjjP6STB9m5",
+          "attachments": [],
+          "ts": "2021-01-19T13:56:04.493Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/direct/Rmne8eAkiu37dhm5zhjejta5RxgeJ37xnE?msg=6KQLTRAjjP6STB9m5",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "d9hZC9Benx4QQ4TFA",
+      "rid": "Rmne8eAkiu37dhm5zhjejta5RxgeJ37xnE",
+      "msg": "прямо в .cna гуе",
+      "ts": "2021-01-19T13:56:28.451Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2021-01-19T13:56:28.486Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "YiWHJhrtPFZFqMzTK",
+      "rid": "Rmne8eAkiu37dhm5zhjejta5RxgeJ37xnE",
+      "msg": "там где их указать можно",
+      "ts": "2021-01-19T13:56:24.777Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2021-01-19T13:56:24.844Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "yX8x3nyWzMHxYE3Nm",
+      "rid": "Rmne8eAkiu37dhm5zhjejta5RxgeJ37xnE",
+      "msg": "там просто в менюшках потыкай в гуе шарпвью и он сбилдит стрингу верную с кредами",
+      "ts": "2021-01-19T13:56:21.724Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2021-01-19T13:56:21.757Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6KQLTRAjjP6STB9m5",
+      "rid": "Rmne8eAkiu37dhm5zhjejta5RxgeJ37xnE",
+      "msg": "а зачем? токен не одевается?",
+      "ts": "2021-01-19T13:56:04.493Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2021-01-19T13:56:04.568Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "JYDsziZWufLds8XQB",
+      "rid": "Rmne8eAkiu37dhm5zhjejta5RxgeJ37xnE",
+      "msg": "Подскажи пожалуйста, как в шарпвью задать креды. Для повервью нашел\n```\n$SecPassword = ConvertTo-SecureString 'BurgerBurgerBurger!' -AsPlainText -Force\n$Cred = New-Object System.Management.Automation.PSCredential('TESTLAB\\dfm.a', $SecPassword)\nGet-DomainUser -Credential $Cred\n``` \nно как это использовать из кобы нифига не понятно...",
+      "ts": "2021-01-19T13:52:52.808Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2021-01-19T13:52:52.908Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

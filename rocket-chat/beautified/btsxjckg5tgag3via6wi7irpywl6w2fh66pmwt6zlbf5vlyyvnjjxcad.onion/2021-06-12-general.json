@@ -1,0 +1,125 @@
+{
+  "messages": [
+    {
+      "_id": "9dKjWFEMEqhoouqwT",
+      "t": "uj",
+      "rid": "GENERAL",
+      "ts": "2021-06-21T13:54:19.502Z",
+      "msg": "john",
+      "u": {
+        "_id": "dGmTNB8AkAHxucHje",
+        "username": "john"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-06-21T13:54:19.502Z"
+    },
+    {
+      "_id": "yCQXfvarj2ffYAFf6",
+      "t": "uj",
+      "rid": "GENERAL",
+      "ts": "2021-06-17T16:56:07.100Z",
+      "msg": "nuggets",
+      "u": {
+        "_id": "wesEQFwd83bfRj6iJ",
+        "username": "nuggets"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-06-17T16:56:07.101Z"
+    },
+    {
+      "_id": "Q5vmzx9vEadnkAhxj",
+      "t": "discussion-created",
+      "rid": "GENERAL",
+      "ts": "2021-06-17T07:40:36.334Z",
+      "msg": "привет дональд, отпиши пм как будешь",
+      "u": {
+        "_id": "6cXWXDmWJb2CGzRWv",
+        "username": "donald"
+      },
+      "groupable": false,
+      "drid": "uxrkZt4dcec8yHXzz",
+      "attachments": [
+        {
+          "text": "привет дональд, отпиши пм как будешь",
+          "author_name": "mango",
+          "author_icon": "/avatar/mango",
+          "message_link": "/channel/general?msg=3YRji8ftiyfCTe3JD",
+          "ts": "2021-06-17T05:46:54.699Z"
+        }
+      ],
+      "_updatedAt": "2021-06-17T07:40:36.381Z",
+      "dcount": 1,
+      "dlm": "2021-06-17T07:40:36.339Z"
+    },
+    {
+      "_id": "3YRji8ftiyfCTe3JD",
+      "rid": "GENERAL",
+      "msg": "привет дональд, отпиши пм как будешь",
+      "ts": "2021-06-17T05:46:54.699Z",
+      "u": {
+        "_id": "jPx6TKsX4jD6YiKnT",
+        "username": "mango"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-06-17T05:46:54.725Z"
+    },
+    {
+      "_id": "d8QjksEvuJtGbxk4m",
+      "t": "uj",
+      "rid": "GENERAL",
+      "ts": "2021-06-16T15:23:20.263Z",
+      "msg": "donald",
+      "u": {
+        "_id": "6cXWXDmWJb2CGzRWv",
+        "username": "donald"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-06-16T15:23:20.263Z"
+    },
+    {
+      "_id": "xdErAnxjREerHhjmA",
+      "rid": "GENERAL",
+      "msg": "Всем привет! Можно присылать в пм кошелек и сумму в бтц на оплату :)",
+      "ts": "2021-06-15T13:23:59.504Z",
+      "u": {
+        "_id": "jPx6TKsX4jD6YiKnT",
+        "username": "mango"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-06-15T13:23:59.534Z"
+    },
+    {
+      "_id": "sxMiBGtmNAwWz2yQr",
+      "rid": "GENERAL",
+      "msg": "и ваши обязанности (кодер, админ какой проект и тд в кратце)",
+      "ts": "2021-06-14T05:07:37.364Z",
+      "u": {
+        "_id": "jPx6TKsX4jD6YiKnT",
+        "username": "mango"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-06-14T05:07:37.388Z"
+    },
+    {
+      "_id": "eQdi6T4FbdhJYEEfE",
+      "rid": "GENERAL",
+      "msg": "Всем привет! Ребят, сегодня\\завтра ЗП, поэтому, кто недавно устроился - пришлите в личку дату, с которой работаете, внешний резервный жаббер и кто ваш тим лид. Кого в списки не внесу - ЗП не получат :) Всех с понедельником :)",
+      "ts": "2021-06-14T05:01:43.353Z",
+      "u": {
+        "_id": "jPx6TKsX4jD6YiKnT",
+        "username": "mango"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-06-14T05:01:43.373Z"
+    }
+  ],
+  "success": true
+}

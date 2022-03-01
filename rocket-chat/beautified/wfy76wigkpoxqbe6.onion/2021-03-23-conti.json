@@ -1,0 +1,55 @@
+{
+  "messages": [
+    {
+      "_id": "G4Y4Q4KQWECbAQaXc",
+      "t": "au",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "ts": "2021-04-01T08:28:38.039Z",
+      "msg": "piperperry",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-04-01T08:28:38.054Z"
+    },
+    {
+      "_id": "EBBiKpsHTcLNWGmDM",
+      "t": "au",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "ts": "2021-03-30T19:53:59.814Z",
+      "msg": "jack",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-30T19:53:59.842Z"
+    },
+    {
+      "_id": "Mu5F2nu6oDwkwAXke",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "msg": "@alter add please @jack",
+      "ts": "2021-03-30T16:24:05.771Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "mentions": [
+        {
+          "_id": "7JTqsEQgD5iRCZkZz",
+          "username": "alter",
+          "name": "alter"
+        },
+        {
+          "_id": "98n3ZyeCnyC9Y5D3m",
+          "username": "jack",
+          "name": "jack"
+        }
+      ],
+      "channels": [],
+      "_updatedAt": "2021-03-30T16:24:05.795Z"
+    }
+  ],
+  "success": true
+}

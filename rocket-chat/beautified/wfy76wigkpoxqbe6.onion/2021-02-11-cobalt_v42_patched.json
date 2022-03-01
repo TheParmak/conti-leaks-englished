@@ -1,0 +1,63 @@
+{
+  "messages": [
+    {
+      "_id": "cG8RTZXhfS7QvRjBM",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "ts": "2021-02-13T12:52:55.856Z",
+      "msg": "",
+      "file": {
+        "_id": "jtrbhxSa4JCJbXaRG",
+        "name": "brooks-artifact-kit-13-02.7z",
+        "type": "application/x-7z-compressed"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "title": "brooks-artifact-kit-13-02.7z",
+          "type": "file",
+          "title_link": "/file-upload/jtrbhxSa4JCJbXaRG/brooks-artifact-kit-13-02.7z",
+          "title_link_download": true
+        }
+      ],
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-02-13T12:52:55.866Z"
+    },
+    {
+      "_id": "m8EKQpCFiYxwaXEdF",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "@all содержимым из папки LLVM перезаписываем содержимое папки brooks-artifact-kit\nточки входа для rundll32.exe для генерируемых дллок\n\n```\nDllRegisterServer\nDllInstall\nDllUnregisterServer\nControl_RunDLL\n```",
+      "ts": "2021-02-13T12:52:34.782Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [
+        {
+          "_id": "all",
+          "username": "all"
+        }
+      ],
+      "channels": [],
+      "_updatedAt": "2021-02-13T12:52:34.803Z"
+    },
+    {
+      "_id": "WW2ss5k6RQbctZhHR",
+      "t": "au",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "ts": "2021-02-12T20:50:51.043Z",
+      "msg": "Bug",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-02-12T20:50:51.066Z"
+    }
+  ],
+  "success": true
+}

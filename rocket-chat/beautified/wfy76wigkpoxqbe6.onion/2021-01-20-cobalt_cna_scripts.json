@@ -1,0 +1,95 @@
+{
+  "messages": [
+    {
+      "_id": "Juth3okpqM6vb8rNY",
+      "rid": "MXpJAXxAMdre5zHBe",
+      "msg": "@all",
+      "ts": "2021-01-26T18:44:59.973Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [
+        {
+          "_id": "all",
+          "username": "all"
+        }
+      ],
+      "channels": [],
+      "_updatedAt": "2021-01-26T18:44:59.990Z"
+    },
+    {
+      "_id": "6gJYv6BTf58kvxYSB",
+      "rid": "MXpJAXxAMdre5zHBe",
+      "msg": "все перечисленное объединено в один скрипт, просьба проверять функционал по возможности и вносить правки",
+      "ts": "2021-01-26T18:43:55.761Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-01-26T18:43:55.771Z"
+    },
+    {
+      "_id": "X34BgkSGqHCyfx2d7",
+      "rid": "MXpJAXxAMdre5zHBe",
+      "ts": "2021-01-26T18:43:35.061Z",
+      "msg": "",
+      "file": {
+        "_id": "LtZgFTHESBm8J9NJo",
+        "name": "enhancement-chain.7z",
+        "type": "application/x-7z-compressed"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "title": "enhancement-chain.7z",
+          "type": "file",
+          "title_link": "/file-upload/LtZgFTHESBm8J9NJo/enhancement-chain.7z",
+          "title_link_download": true
+        }
+      ],
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-01-26T18:43:35.077Z"
+    },
+    {
+      "_id": "jzf8q4pmmNWyNhyfS",
+      "t": "au",
+      "rid": "MXpJAXxAMdre5zHBe",
+      "ts": "2021-01-22T01:59:44.794Z",
+      "msg": "slice",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-01-22T01:59:44.809Z"
+    },
+    {
+      "_id": "Y7QMDnYNEGR7iCMJZ",
+      "rid": "MXpJAXxAMdre5zHBe",
+      "msg": "Если найдете или наткнетесь на еще что интересное - добавляйте, закину в общую подборку.\nно ТОЛЬКО то что использует родной функционал кобальта, исключительно .CNA файлы без доп скриптов каких-либо, иначе захламим сильно тут все.\n\n```\n## AV_Query\nКоманда AV_Query Сканирует реестр на наличие установленных антивирусов\n## upload\nАльтернативная версия команды upload.  \nЗагружает локальный файл (первый аргумент) на удаленный хост (второй аргумент, необязательный).  \nКак использовать: __upload </локальный/путь/к/файлу> [/удаленный/путь/к/файлу]__.  \nПример использования: __beacon> upload implant.exe \\\\DC1\\c$\\windows\\temp\\implant.exe__.  \n## Blacklist\nБлэклист для беконов. Удаляет бекон, если он запустился на компьютере, где имя пользователя и компьютера содержатся в блэклисте.  \n__blacklist-add__ - добавить в блэклист  \n__blacklist-remove__ - удалить из блэклиста  \n__blacklist-show__ - показать блэклист  \n## Credpocalypse\nОтслеживает беконы и собирает учетные данные  \nИспользование в беконе:  \n    __begin_credpocalypse__\t\t\t- отслеживать текущий бекон  \n\t__end_credpocalypse [all]__ \t\t- остановить отслеживание текущего/всех беконов  \n\t__credpocalypse_interval [time]__\t- интервал опроса бекона 1m, 5m (по умолчанию), 10m, 30m, 60m  \nИспользование в скрипт консоли или другом скрипте:  \n    __begin_credpocalypse__\t\t\t- отслеживать все беконы  \n\t__end_credpocalypse [all]__ \t\t- остановить отслеживание всех беконов  \n\t__credpocalypse_interval [time]__\t- интервал опроса бекона 1m, 5m (по умолчанию), 10m, 30m, 60m  \nКликните правой кнопкой мыши на беконе, чтобы открыть меню Credpocalypse  \n## powershell2\nАльтернативная версия команды powershell c повышенной операционной безопасностью  \n## Simple Beacon console status bar\nПоказывает рабочую директорию, менят ширину индикатора последнего появления бекона в правом нижнем углу на фиксированную  \nДобваляет опцию к команде cd для возврата в предыдущую директорию.  \nИспользование: __cd -__  \n## dcom_shellexecute\nБоковое перемещение с DCOM (ShellExecute)  \nИспользование: __dcom_shellexecute [target] [listener]__ - создать новый бекон на цели через объект DCOM ShellExecute  \n## DebugKit\nДополнительные средства отладки в pop-up меню DebugKit, скрипт консоли и в беконе.  \nКоманды в скрипт консоли:  \n__!beaconinfo__ - получить информацию о беконах  \n__!loaded_powershell__ - показать загруженные командлеты powershell для каждого бекона  \n__!c2_sample_server__ - показать как выглядят ответы с C2 сервера  \n__!c2_sample_client__ - показать как выглядят запросы клиента  \n__!who__ - показать всех, кто подключен к тимсерверу  \n__!pwn3d_hosts__ - показать список имен хостов, на которых когда-либо были созданы сессии  \n__!show_data_keys__ - показать ключи в модели данных Cobalt Strike  \n__!query_data_key <key_name>__ - получить значения по ключу из модели данных Cobalt Strike  \n__!sync_all_downloads__ - синхронизирует загруженные файлы с сервера Cobalt Strike в указанную папку и рекурсивно воссоздает пути к файлам, которые были у файлов на целевых хостах  \nИспользование: __!sync_all_downloads [/path/on/client/machine/to/save/downloads/to] <IP address of host to download files for>__  \nКоманды в консоли бекона:  \n__!iscsadmin__ - проверить текущий бекон через функцию -isadmin  \n## csfm\nОпрашивает базу данных для получения известных команд, выводит полезные советы для оператора.  \nСинтаксис:  __csfm [List]__ - перечисление всех опций csfm  \nПример: __search computer, tip ntlm__  \n## EDR\nУдаленно опрашивает систему на наличие EDR продуктов  \nСинтаксис: __edr_query [hostname] [arch]__  \n## Color Coded Files Listing\nСкрипт раскрашивает вывод команды ls и позволяет отслеживать загруженные файлы подсвечивая их  \n## Forwarded_Ports\nОтслеживает настроенные переадресации удаленных портов на всех беконах и позволяет легко удалить их  \nИспользование 'rportfwd' быстро потребляет пул доступных локальных портов, из которых переадресовывается исходящий трафик, и их отслеживание вручную становится утомительным на длительных проектах. Этот сценарий призван заполнить этот пробел, собрав эти команды и представив их в красивой панели визуализации.  \n## HighLight_Beacons\nПодсвечивает новые beacons зеленым цветом, неактивные - красным.\n## LogVis\nПродвинутая визуализация вывода beacon-консоли.\n## MASS-DCSYNC\nАтака DCSync, применяемая к списку пользователей домена.\nФайл со списком пользователей должен содержать одного пользователя в каждой строке.\n\n## MIMIKATZ_ADDONS\nВыполняет изменение пароля, которое позволяет вам изменить пароль NTLM для данной учетной записи.\nИспользует функцию смены пароля Mimikatz, которая позволяет изменять пароль NTLM для данной учетной записи без регистрации событий setpassword.\n\n**Использование:** password_change [Username] [Known old hash or password] [New hash or password] [SERVER/DC/localhost]  \n\n## PING_ALIASES\n1. alias **qping** посылает пакет для пинга с помощью командной строки.\n**Использование**: qping [target]. Параметр **target** опционален.\n2. alias **smbscan** сканирует порт 445.\n\n## PORTSCAN_RESULTS\nПункт меню в разделе View. При запуске открывается вкладка с результатами выполнения smbscan. \n\n## PROCESSCOLOR\nПодсветка категорий процессов (антивирусы, проводник, браузеры, текущий процесс) в менеджере процессов beacon (Explore => ProcessList).\n\n## PS_WINDOW_ALIASES\nalias **pspane** открывает менеджер процессов.\n**Использование:** pspane\n\n## SLEEP_DOWN_WHEN_NO_OPERATORS\nУвеличивает интервал sleep для beacon, у которых нет активных (залогиненных) пользователей.\n\n## SMART_AUTOPPID\nПереназначает исполнение команд beacon и всех beacon jobs в назначенный процесс (svchost.exe).\nВсе команды будут выполняться в зависимости от контекста/привилегий (user или system).\n**Использование:** autoppid\n\n## WIN2012MIMIKATZ\nДобавляет в реестр ключ для работы mimikatz.\n``",
+      "ts": "2021-01-20T08:45:07.950Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-01-26T18:44:42.019Z",
+      "editedAt": "2021-01-26T18:44:42.017Z",
+      "editedBy": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "urls": []
+    }
+  ],
+  "success": true
+}

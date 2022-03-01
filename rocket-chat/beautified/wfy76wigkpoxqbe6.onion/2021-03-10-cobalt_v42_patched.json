@@ -1,0 +1,762 @@
+{
+  "messages": [
+    {
+      "_id": "TZtkGqonJM2G42Jeh",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "дллки бы ваще тереть...",
+      "ts": "2021-03-19T12:40:07.452Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-19T12:40:07.480Z"
+    },
+    {
+      "_id": "cETTxN8z7tbsBeiR3",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "а не надо плиз на дллке оставлять если есть врзможность этого не делать кстати",
+      "ts": "2021-03-19T12:40:02.882Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-19T12:40:02.903Z"
+    },
+    {
+      "_id": "cCo97ASopPing8tQ2",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "принято.",
+      "ts": "2021-03-19T12:39:48.817Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-19T12:39:48.838Z"
+    },
+    {
+      "_id": "d83mxZRkyj9XP7kM9",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "если сессию инжектить в процесс - она не падает\nесли оставить на дллке - падает через несколько часов с крашем рандлл32\nпока вот такие наблюдения)",
+      "ts": "2021-03-19T11:45:47.463Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-19T11:45:47.482Z"
+    },
+    {
+      "_id": "JC6877psweHNXGcfw",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "я проверял на паре серверов - ребута не было, а сессия падала",
+      "ts": "2021-03-17T16:05:04.177Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-17T16:05:04.194Z"
+    },
+    {
+      "_id": "26PSsc9W5svDrTRZp",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "tshow": false,
+      "tmid": "qXJimZB7XYZHFwNPg",
+      "msg": "попробуй в следующий раз, как восстановишь сессию, посмотреть сколько времени комп работает, что-то типа:\n```(Get-Date (Get-Process explorer).StartTime).ToString('yyyyMMdd')",
+      "ts": "2021-03-17T16:03:05.659Z",
+      "u": {
+        "_id": "bbuuyrxuDE8py9HGC",
+        "username": "Code"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-17T16:03:13.118Z",
+      "editedAt": "2021-03-17T16:03:13.115Z",
+      "editedBy": {
+        "_id": "bbuuyrxuDE8py9HGC",
+        "username": "Code"
+      },
+      "urls": []
+    },
+    {
+      "_id": "qXJimZB7XYZHFwNPg",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "[ ](http://wfy76wigkpoxqbe6.onion/group/cobalt_v42_patched?msg=xu2Q4qYAAed7PbQ7S) Как я понял это отдельно в каких-то сетях, видимо что-то на уровне железа у меня 2 раза было, на нескольких тачках в 2-ух сетях...",
+      "ts": "2021-03-17T15:55:03.824Z",
+      "u": {
+        "_id": "oSFTRunARJ7aj5BqJ",
+        "username": "barabulka"
+      },
+      "urls": [
+        {
+          "url": "http://wfy76wigkpoxqbe6.onion/group/cobalt_v42_patched?msg=xu2Q4qYAAed7PbQ7S"
+        }
+      ],
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-17T16:03:05.778Z",
+      "replies": [
+        "oSFTRunARJ7aj5BqJ",
+        "bbuuyrxuDE8py9HGC"
+      ],
+      "tcount": 1,
+      "tlm": "2021-03-17T16:03:05.659Z"
+    },
+    {
+      "_id": "Rwseca7iSSBs35qmv",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "но возможно, как подметили - был рестарт сервов, я не смотрел время жизни компа",
+      "ts": "2021-03-17T10:53:43.815Z",
+      "u": {
+        "_id": "bbuuyrxuDE8py9HGC",
+        "username": "Code"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-17T10:53:43.831Z"
+    },
+    {
+      "_id": "nnnzG9yE83nZ9JuK9",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "[ ](https://stylebrooks.com/group/cobalt_v42_patched?msg=3Fe4AGJ8mLf4nfGnm) было такое, когда большой слип ставишь минут на 10",
+      "ts": "2021-03-17T10:51:13.771Z",
+      "u": {
+        "_id": "bbuuyrxuDE8py9HGC",
+        "username": "Code"
+      },
+      "urls": [
+        {
+          "url": "https://stylebrooks.com/group/cobalt_v42_patched?msg=3Fe4AGJ8mLf4nfGnm",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": [],
+      "attachments": [
+        {
+          "text": "кто-нибудь ещё сталкивается с массовым крашем сессий по ночам без причины?",
+          "author_name": "t3chnolog",
+          "author_icon": "/avatar/t3chnolog",
+          "message_link": "https://stylebrooks.com/group/cobalt_v42_patched?msg=3Fe4AGJ8mLf4nfGnm",
+          "attachments": [],
+          "ts": "2021-03-17T10:22:52.207Z"
+        }
+      ],
+      "_updatedAt": "2021-03-17T10:51:13.789Z"
+    },
+    {
+      "_id": "zxe6B5WqNeMq2BqdN",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "из под спящего режима возвращается. на воркстанциях встретить можно, серваки обычно ресетят",
+      "ts": "2021-03-17T10:42:45.854Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-17T10:42:45.883Z"
+    },
+    {
+      "_id": "Wdo98qTjGAb5oJ5v9",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "умирает, она же в в памяти но технолог про другое спрашивает",
+      "ts": "2021-03-17T10:41:51.206Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-17T10:41:51.220Z"
+    },
+    {
+      "_id": "zsPwvMADt4LfQQwYp",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "разве после рестарта компа сессия должна умирать?)",
+      "ts": "2021-03-17T10:41:32.180Z",
+      "u": {
+        "_id": "gi2R3hPbtzGavMEAR",
+        "username": "kalinka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-17T10:41:32.193Z"
+    },
+    {
+      "_id": "xu2Q4qYAAed7PbQ7S",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "в догонку вопрос - как убрать jitter 300 секунд? заебал рандомно на слип уводить сессии",
+      "ts": "2021-03-17T10:24:00.060Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-17T10:24:00.072Z"
+    },
+    {
+      "_id": "dXLdLqd8tD7Hd4a8B",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "в слип кидаешь - через 3-4 часа сессия падает",
+      "ts": "2021-03-17T10:23:36.078Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-17T10:23:36.094Z"
+    },
+    {
+      "_id": "3Fe4AGJ8mLf4nfGnm",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "кто-нибудь ещё сталкивается с массовым крашем сессий по ночам без причины?",
+      "ts": "2021-03-17T10:22:52.207Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-17T10:22:52.224Z"
+    },
+    {
+      "_id": "XpiroNs5cnSittQSt",
+      "t": "au",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "ts": "2021-03-17T00:18:37.946Z",
+      "msg": "zvh",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-17T00:18:37.969Z"
+    },
+    {
+      "_id": "HDKqxpwStEptDemob",
+      "t": "au",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "ts": "2021-03-17T00:18:37.896Z",
+      "msg": "hitech",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-17T00:18:37.925Z"
+    },
+    {
+      "_id": "5vujwrNjmRt7KmDqK",
+      "t": "au",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "ts": "2021-03-15T16:45:46.445Z",
+      "msg": "Tyr",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-15T16:45:46.465Z"
+    },
+    {
+      "_id": "A6hNruC6A9tcfHa8q",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "ага сенк",
+      "ts": "2021-03-15T15:06:09.841Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-15T15:06:09.886Z"
+    },
+    {
+      "_id": "TpwGxQD6NmSvwv2oN",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "eset file security, sugnature - win64/rozena.IC",
+      "ts": "2021-03-15T14:56:03.260Z",
+      "u": {
+        "_id": "gi2R3hPbtzGavMEAR",
+        "username": "kalinka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-15T14:56:03.268Z"
+    },
+    {
+      "_id": "LgvoQW486QdraLYWy",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "ts": "2021-03-15T14:55:44.788Z",
+      "msg": "",
+      "file": {
+        "_id": "6NCdFaP384MymjN6M",
+        "name": "Clipboard - 15 марта 2021 г., 14:55",
+        "type": "image/png"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "title": "Clipboard - 15 марта 2021 г., 14:55",
+          "type": "file",
+          "title_link": "/file-upload/6NCdFaP384MymjN6M/Clipboard%20-%2015%20%D0%BC%D0%B0%D1%80%D1%82%D0%B0%202021%20%D0%B3.,%2014:55",
+          "title_link_download": true,
+          "image_url": "/file-upload/6NCdFaP384MymjN6M/Clipboard%20-%2015%20%D0%BC%D0%B0%D1%80%D1%82%D0%B0%202021%20%D0%B3.,%2014:55",
+          "image_type": "image/png",
+          "image_size": 3280,
+          "image_dimensions": {
+            "width": 797,
+            "height": 75
+          },
+          "image_preview": "/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAADACADASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDB//EAB0QAAICAgMBAAAAAAAAAAAAAAABAwQFEQIhkVH/xAAWAQEBAQAAAAAAAAAAAAAAAAAEAwX/xAAcEQACAgIDAAAAAAAAAAAAAAABAgADERIhMVH/2gAMAwEAAhEDEQA/AOpSZe+ubStSa39NFlbyj6syADqlBJ4mdczADBkrLX2nu1J6VLlryj6syegF9F8h92x3P//Z"
+        }
+      ],
+      "u": {
+        "_id": "gi2R3hPbtzGavMEAR",
+        "username": "kalinka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-15T14:55:44.803Z"
+    },
+    {
+      "_id": "72ys4TM97F88khNzc",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "вот только то что тут",
+      "ts": "2021-03-15T12:48:45.915Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-15T12:48:45.956Z"
+    },
+    {
+      "_id": "HWGs3R4tdZvddhrtK",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "@barabulka",
+      "ts": "2021-03-15T12:48:39.151Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [
+        {
+          "_id": "oSFTRunARJ7aj5BqJ",
+          "username": "barabulka",
+          "name": "barabulka"
+        }
+      ],
+      "channels": [],
+      "_updatedAt": "2021-03-15T12:48:39.168Z"
+    },
+    {
+      "_id": "LhH4seZdmiJ9MYNK4",
+      "t": "au",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "ts": "2021-03-15T10:27:43.148Z",
+      "msg": "Vano",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-15T10:27:43.163Z"
+    },
+    {
+      "_id": "ZSQLtAd6Avw82SHMN",
+      "t": "au",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "ts": "2021-03-12T21:01:11.558Z",
+      "msg": "ATX",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-12T21:01:11.572Z"
+    },
+    {
+      "_id": "mKHbDy6LkDoiwmD9p",
+      "t": "au",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "ts": "2021-03-12T20:49:49.967Z",
+      "msg": "Grimnir",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-12T20:49:49.982Z"
+    },
+    {
+      "_id": "mbc7YqLeNiot6Bs88",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "на 2016 сервере дллка запустилась, всё ок",
+      "ts": "2021-03-11T18:22:24.598Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-11T18:22:24.613Z"
+    },
+    {
+      "_id": "JHJTxH3NvXvGn8LQF",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "https://dyncheck.com/scan/id/0e85df67f128617619f46255d62b1a1e\n1/23\nAhnLab V3 Light какой-то даёт динамик детект",
+      "ts": "2021-03-11T18:18:31.595Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "urls": [
+        {
+          "url": "https://dyncheck.com/scan/id/0e85df67f128617619f46255d62b1a1e"
+        }
+      ],
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-11T18:18:31.618Z"
+    },
+    {
+      "_id": "nWxTDdnBNcRwnYbnE",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "я проверил на динчеке дллку х64",
+      "ts": "2021-03-11T18:17:51.684Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-11T18:17:51.739Z"
+    },
+    {
+      "_id": "rCF4i89aMsEBXrYfa",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "ts": "2021-03-11T14:30:11.913Z",
+      "msg": "",
+      "file": {
+        "_id": "5oMpGb8dJNTWvKNW8",
+        "name": "2021-03-11_145651.png",
+        "type": "image/png"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "title": "2021-03-11_145651.png",
+          "type": "file",
+          "title_link": "/file-upload/5oMpGb8dJNTWvKNW8/2021-03-11_145651.png",
+          "title_link_download": true,
+          "image_url": "/file-upload/5oMpGb8dJNTWvKNW8/2021-03-11_145651.png",
+          "image_type": "image/png",
+          "image_size": 17224,
+          "image_dimensions": {
+            "width": 763,
+            "height": 494
+          },
+          "image_preview": "/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAVACADASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAUDBAYI/8QAJBAAAgICAQMEAwAAAAAAAAAAAQIAAwQRBRIxUQYTFCEiQZL/xAAVAQEBAAAAAAAAAAAAAAAAAAABAP/EABcRAQEBAQAAAAAAAAAAAAAAAAABERL/2gAMAwEAAhEDEQA/AOmsUlVuYb2NmZXkecy/ka9tPxOozd+epe0JiUNUf2SN6/qKaOLsz8pjbpW7mHNki3UuF6gy1UqFqBJmk4XOtzEc3KoI8RHj8EbdlCB0nUb8Fjti2X1P9kHvKaTewdSMPI1EVeAarGZL3BJ8QhEJace2kEJkv9nfaXMCko7u1hdm8whBP//Z"
+        }
+      ],
+      "u": {
+        "_id": "ruKCGNn9nzoQaDfiK",
+        "username": "steven"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-11T14:30:11.934Z"
+    },
+    {
+      "_id": "EFegGa4mqoskPXT34",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "на 2008 крашится ехе",
+      "ts": "2021-03-11T14:29:26.210Z",
+      "u": {
+        "_id": "ruKCGNn9nzoQaDfiK",
+        "username": "steven"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-11T14:29:26.227Z"
+    },
+    {
+      "_id": "umWAetsBQaHszgtSC",
+      "t": "au",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "ts": "2021-03-11T03:01:52.977Z",
+      "msg": "Code",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-11T03:01:52.997Z"
+    },
+    {
+      "_id": "aRmjeN5es9ekwHY3x",
+      "t": "au",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "ts": "2021-03-11T02:55:51.481Z",
+      "msg": "octa",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-11T02:55:51.499Z"
+    },
+    {
+      "_id": "fL3qfLMpfSDADwJya",
+      "t": "au",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "ts": "2021-03-11T02:55:51.410Z",
+      "msg": "0dayinbiz",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-11T02:55:51.425Z"
+    },
+    {
+      "_id": "wg9P8veXjGaGceTCe",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "https://dyncheck.com/scan/id/5b13716a94a301b0faef2dd60ef09b07#collapse_info",
+      "ts": "2021-03-10T22:33:24.629Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "urls": [
+        {
+          "url": "https://dyncheck.com/scan/id/5b13716a94a301b0faef2dd60ef09b07#collapse_info"
+        }
+      ],
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-10T22:33:24.652Z"
+    },
+    {
+      "_id": "mf9C4zTc4Q6joFwzp",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "ок",
+      "ts": "2021-03-10T22:33:11.616Z",
+      "u": {
+        "_id": "ruKCGNn9nzoQaDfiK",
+        "username": "steven"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-10T22:33:11.633Z"
+    },
+    {
+      "_id": "Ewwqno6umeJAn3meh",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "точки входа для длл\n\n```\nDllRegisterServer\nDllInstall\nDllUnregisterServer\nControl_RunDLL\n```",
+      "ts": "2021-03-10T22:32:57.124Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-22T16:57:50.105Z",
+      "editedAt": "2021-03-22T16:57:50.101Z",
+      "editedBy": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "urls": []
+    },
+    {
+      "_id": "EdHHf8iBCQyFNyYpc",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "@all рабочее обновление\nНЕ ЗАБУДЬТЕ ЦНА СКРИПТ ОБНОВИТЬ",
+      "ts": "2021-03-10T22:01:36.466Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [
+        {
+          "_id": "all",
+          "username": "all"
+        }
+      ],
+      "channels": [],
+      "_updatedAt": "2021-03-10T22:01:36.482Z"
+    },
+    {
+      "_id": "n4h9CWedrQrss47en",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "ts": "2021-03-10T22:01:25.822Z",
+      "msg": "",
+      "file": {
+        "_id": "CZcdLEoJkCygQNGxx",
+        "name": "artkit11mar.7z",
+        "type": "application/x-7z-compressed"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "title": "artkit11mar.7z",
+          "type": "file",
+          "title_link": "/file-upload/CZcdLEoJkCygQNGxx/artkit11mar.7z",
+          "title_link_download": true
+        }
+      ],
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-10T22:01:25.834Z"
+    },
+    {
+      "_id": "8mLTYArfoMJPmu6vR",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "отправлено в фикс",
+      "ts": "2021-03-10T19:26:06.738Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-10T19:26:06.777Z"
+    },
+    {
+      "_id": "HPwChHAdbPWEfu75t",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "12 и вин 10 такая же история 64 бит такая же история",
+      "ts": "2021-03-10T13:10:54.778Z",
+      "u": {
+        "_id": "ruKCGNn9nzoQaDfiK",
+        "username": "steven"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-10T13:10:54.820Z"
+    },
+    {
+      "_id": "B2vjHGD7PmgdnEH5Y",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "я думаю надо на 7ке тестануть",
+      "ts": "2021-03-10T13:09:33.151Z",
+      "u": {
+        "_id": "ruKCGNn9nzoQaDfiK",
+        "username": "steven"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-10T13:09:33.165Z"
+    },
+    {
+      "_id": "gamACrFKnNzP7S2aA",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "на 12 такая же история причем с обоих папках",
+      "ts": "2021-03-10T13:09:27.588Z",
+      "u": {
+        "_id": "ruKCGNn9nzoQaDfiK",
+        "username": "steven"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-10T13:09:27.622Z"
+    },
+    {
+      "_id": "pwsE7Jbby7BPPJEim",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "тестили на 2016 сервере х64 без АВ\nпомимо этого заметил что размер самой дллки увеличился раза в 4 по сравнению с дллками из предыдущего артефакта",
+      "ts": "2021-03-10T13:08:30.246Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-10T13:08:30.279Z"
+    },
+    {
+      "_id": "2dS8ghNKaxBKNb9Zv",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "ждем фикса",
+      "ts": "2021-03-10T13:06:29.139Z",
+      "u": {
+        "_id": "ruKCGNn9nzoQaDfiK",
+        "username": "steven"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-10T13:06:29.153Z"
+    },
+    {
+      "_id": "ufsqhMEr7Fe8HY8aR",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "ехе 64 и 86 тоже крашится",
+      "ts": "2021-03-10T13:06:25.811Z",
+      "u": {
+        "_id": "ruKCGNn9nzoQaDfiK",
+        "username": "steven"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-10T13:06:25.832Z"
+    },
+    {
+      "_id": "6zWwycEpZyyQAaDi7",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "вот только дллки крашатся с ошибкой что это вообще не является исполняемым файлом\nчто х64, что х86",
+      "ts": "2021-03-10T13:03:11.962Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-10T13:03:11.982Z"
+    },
+    {
+      "_id": "tgxRMXdZvCsJRAYi5",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "это куда лучше чем с предыдущего артефакта",
+      "ts": "2021-03-10T12:33:10.533Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-10T12:33:10.549Z"
+    },
+    {
+      "_id": "LtQK8oFjwkKYp7Pcy",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "динчек дал 1/23\n360 Total Security Essential палит",
+      "ts": "2021-03-10T12:32:57.049Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-10T12:32:57.071Z"
+    }
+  ],
+  "success": true
+}

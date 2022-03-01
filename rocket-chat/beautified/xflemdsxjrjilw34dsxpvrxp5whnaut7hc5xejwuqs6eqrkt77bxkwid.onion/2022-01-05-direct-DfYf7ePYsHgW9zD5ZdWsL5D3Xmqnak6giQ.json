@@ -1,0 +1,93 @@
+{
+  "messages": [
+    {
+      "_id": "buTYrwp3A2BnbPngj",
+      "rid": "DfYf7ePYsHgW9zD5ZdWsL5D3Xmqnak6giQ",
+      "msg": "eyJhbGciOiJBtTze9SwJ5li6t14roeUk6BWchN6TDQv6DVHW9/j5uFmUQSoQXyfm7sGOhsA7ikKp58D4YyE4rA3KO5hfPlNyDXvsxHmYDV3oVY2jOCLPiTIRo7Z/Wg+BH7idngoWnS6zXaswhVIwm78ClJEIrnJ4iQOeksdwTmzQh6HJSFTaHXspmL89rAx0zHBH5fvgCf/r",
+      "t": "e2e",
+      "e2e": "pending",
+      "tsAck": "{\"$binary\":\"E4NUnXOqlpXK6yK6uAAluKpegbHjlqO8sRfHgPrSNuevgWfChzI=\"}",
+      "ts": "2022-01-05T14:21:28.428Z",
+      "u": {
+        "_id": "dWsL5D3Xmqnak6giQ",
+        "username": "benny",
+        "name": "benny"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "eyJhbGciOiJBtTze9SwJ5li6t14roeUk6BWchN6TDQv6DVHW9/j5uFmUQSoQXyfm7sGOhsA7ikKp58D4YyE4rA3KO5hfPlNyDXvsxHmYDV3oVY2jOCLPiTIRo7Z/Wg+BH7idngoWnS6zXaswhVIwm78ClJEIrnJ4iQOeksdwTmzQh6HJSFTaHXspmL89rAx0zHBH5fvgCf/r"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-05T14:21:28.466Z"
+    },
+    {
+      "_id": "Wtkog54sJdT6b5dgv",
+      "rid": "DfYf7ePYsHgW9zD5ZdWsL5D3Xmqnak6giQ",
+      "msg": "eyJhbGciOiJBMUU2pFwbtC9+EiH5l27y4BVuLf89jC1Iy836otQnJ/w0doJYipoPp0g9Rfel321cvwd/VDC8t/0jod9VcfYgoDmgcD2qezl/em4v+YAud/90HL7QfpYid1xLE0gpVTCKzWgLtQw5ZGY3BPH77ddIIDpmuKm+1lkKykj0BOLpCgI=",
+      "t": "e2e",
+      "e2e": "pending",
+      "tsAck": "{\"$binary\":\"pgPhBdd7NVy+SjpBJVDrBQzMqrLY3uQC\"}",
+      "ts": "2022-01-05T14:21:06.896Z",
+      "u": {
+        "_id": "dWsL5D3Xmqnak6giQ",
+        "username": "benny",
+        "name": "benny"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "eyJhbGciOiJBMUU2pFwbtC9+EiH5l27y4BVuLf89jC1Iy836otQnJ/w0doJYipoPp0g9Rfel321cvwd/VDC8t/0jod9VcfYgoDmgcD2qezl/em4v+YAud/90HL7QfpYid1xLE0gpVTCKzWgLtQw5ZGY3BPH77ddIIDpmuKm"
+            },
+            {
+              "type": "LINK",
+              "value": {
+                "src": {
+                  "type": "PLAIN_TEXT",
+                  "value": "tel:1"
+                },
+                "label": {
+                  "type": "PLAIN_TEXT",
+                  "value": "+1"
+                }
+              }
+            },
+            {
+              "type": "PLAIN_TEXT",
+              "value": "lkKykj0BOLpCgI="
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-05T14:21:06.924Z"
+    },
+    {
+      "_id": "gzNR2XzeyywHsJTwH",
+      "t": "room_e2e_enabled",
+      "rid": "DfYf7ePYsHgW9zD5ZdWsL5D3Xmqnak6giQ",
+      "ts": "2022-01-05T14:20:55.311Z",
+      "msg": "benny",
+      "u": {
+        "_id": "dWsL5D3Xmqnak6giQ",
+        "username": "benny"
+      },
+      "groupable": false,
+      "_updatedAt": "2022-01-05T14:20:55.311Z"
+    }
+  ],
+  "success": true
+}

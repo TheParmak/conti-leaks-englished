@@ -1,0 +1,1409 @@
+{
+  "messages": [
+    {
+      "_id": "DyXPLMx35iAaRmNbD",
+      "rid": "GENERAL",
+      "msg": "Диск помер, бедами порос, а с такой же геометрией нет.",
+      "ts": "2021-12-20T15:20:59.527Z",
+      "u": {
+        "_id": "Mvt4KwSxtNSNga6NW",
+        "username": "jaime",
+        "name": "jaime"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Диск помер, бедами порос, а с такой же геометрией нет."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T15:20:59.542Z"
+    },
+    {
+      "_id": "ijar447W7TxqRu72z",
+      "rid": "GENERAL",
+      "msg": "ок щас посчитаем",
+      "ts": "2021-12-20T15:18:10.093Z",
+      "u": {
+        "_id": "vMdad76XMGEzwhuZ4",
+        "username": "mitzi",
+        "name": "mitzi"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "ок щас посчитаем"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T15:18:10.111Z"
+    },
+    {
+      "_id": "Qni2TYMB8fXZtX5JH",
+      "rid": "GENERAL",
+      "msg": "```\ndisk -l theimage.img \nДиск theimage.img: 111,79 GiB, 120034123776 байт, 234441648 секторов\nЕдиницы: секторов по 1 * 512 = 512 байт\nРазмер сектора (логический/физический): 512 байт / 512 байт\nРазмер I/O (минимальный/оптимальный): 512 байт / 512 байт\nТип метки диска: dos\nИдентификатор диска: 0xb6b6f687\n\nУстр-во       Загрузочный    начало     Конец   Секторы Размер Идентификатор Тип\ntheimage.img1 *                2048  78125055  78123008  37,3G            83 Linux\ntheimage.img2              78125056 195311615 117186560  55,9G            83 Linux\ntheimage.img3             195311616 205076479   9764864   4,7G            82 Linux своп / Solaris\ntheimage.img4             205076480 234440703  29364224    14G            83 Linux\n\n```",
+      "ts": "2021-12-20T15:17:52.042Z",
+      "u": {
+        "_id": "Mvt4KwSxtNSNga6NW",
+        "username": "jaime",
+        "name": "jaime"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "CODE",
+          "language": "none",
+          "value": [
+            {
+              "type": "CODE_LINE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "disk -l theimage.img "
+              }
+            },
+            {
+              "type": "CODE_LINE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "Диск theimage.img: 111,79 GiB, 120034123776 байт, 234441648 секторов"
+              }
+            },
+            {
+              "type": "CODE_LINE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "Единицы: секторов по 1 * 512 = 512 байт"
+              }
+            },
+            {
+              "type": "CODE_LINE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "Размер сектора (логический/физический): 512 байт / 512 байт"
+              }
+            },
+            {
+              "type": "CODE_LINE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "Размер I/O (минимальный/оптимальный): 512 байт / 512 байт"
+              }
+            },
+            {
+              "type": "CODE_LINE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "Тип метки диска: dos"
+              }
+            },
+            {
+              "type": "CODE_LINE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "Идентификатор диска: 0xb6b6f687"
+              }
+            },
+            {
+              "type": "CODE_LINE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": ""
+              }
+            },
+            {
+              "type": "CODE_LINE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "Устр-во       Загрузочный    начало     Конец   Секторы Размер Идентификатор Тип"
+              }
+            },
+            {
+              "type": "CODE_LINE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "theimage.img1 *                2048  78125055  78123008  37,3G            83 Linux"
+              }
+            },
+            {
+              "type": "CODE_LINE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "theimage.img2              78125056 195311615 117186560  55,9G            83 Linux"
+              }
+            },
+            {
+              "type": "CODE_LINE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "theimage.img3             195311616 205076479   9764864   4,7G            82 Linux своп / Solaris"
+              }
+            },
+            {
+              "type": "CODE_LINE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "theimage.img4             205076480 234440703  29364224    14G            83 Linux"
+              }
+            },
+            {
+              "type": "CODE_LINE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": ""
+              }
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T15:17:52.068Z"
+    },
+    {
+      "_id": "mcF9mdxCFTWdLkonn",
+      "rid": "GENERAL",
+      "msg": "табличу нам сктнь щас решим",
+      "ts": "2021-12-20T15:17:12.239Z",
+      "u": {
+        "_id": "vMdad76XMGEzwhuZ4",
+        "username": "mitzi",
+        "name": "mitzi"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "табличу нам сктнь щас решим"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T15:17:12.248Z"
+    },
+    {
+      "_id": "4xkREiRGmu27DgmBs",
+      "rid": "GENERAL",
+      "msg": ":)",
+      "ts": "2021-12-20T15:16:51.620Z",
+      "u": {
+        "_id": "Mvt4KwSxtNSNga6NW",
+        "username": "jaime",
+        "name": "jaime"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": ":)"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T15:16:51.635Z"
+    },
+    {
+      "_id": "EKGDEKJC8JySYDwTA",
+      "rid": "GENERAL",
+      "msg": "Было 2048  78125055  78123008  37,3G стало 2048  78125055  78123008   298G",
+      "ts": "2021-12-20T15:16:44.870Z",
+      "u": {
+        "_id": "Mvt4KwSxtNSNga6NW",
+        "username": "jaime",
+        "name": "jaime"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Было 2048  78125055  78123008  37,3G стало 2048  78125055  78123008   298G"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T15:16:44.881Z"
+    },
+    {
+      "_id": "gAFvCixzmuETJ86Sw",
+      "rid": "GENERAL",
+      "msg": "ну и",
+      "ts": "2021-12-20T15:16:26.428Z",
+      "u": {
+        "_id": "vMdad76XMGEzwhuZ4",
+        "username": "mitzi",
+        "name": "mitzi"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "ну и"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T15:16:26.438Z"
+    },
+    {
+      "_id": "nFFDc3maqeAv9vzwp",
+      "rid": "GENERAL",
+      "msg": "через dd и скопировал :)",
+      "ts": "2021-12-20T15:16:06.657Z",
+      "u": {
+        "_id": "Mvt4KwSxtNSNga6NW",
+        "username": "jaime",
+        "name": "jaime"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "через dd и скопировал :)"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T15:16:06.666Z"
+    },
+    {
+      "_id": "3e22BkueRqfn2JfvE",
+      "rid": "GENERAL",
+      "msg": "dd",
+      "ts": "2021-12-20T15:15:44.910Z",
+      "u": {
+        "_id": "vMdad76XMGEzwhuZ4",
+        "username": "mitzi",
+        "name": "mitzi"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "dd"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T15:15:44.930Z"
+    },
+    {
+      "_id": "2jB9i6K3MTL6WPfJg",
+      "rid": "GENERAL",
+      "msg": "Или разделы нужно пересоздавать?",
+      "ts": "2021-12-20T15:15:43.871Z",
+      "u": {
+        "_id": "Mvt4KwSxtNSNga6NW",
+        "username": "jaime",
+        "name": "jaime"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Или разделы нужно пересоздавать?"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T15:15:43.885Z"
+    },
+    {
+      "_id": "h4BATzCsRvvB7RgDs",
+      "rid": "GENERAL",
+      "msg": "как склонировать диски с разным размером сектора? 512 и 4096?",
+      "ts": "2021-12-20T15:14:45.349Z",
+      "u": {
+        "_id": "Mvt4KwSxtNSNga6NW",
+        "username": "jaime",
+        "name": "jaime"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "как склонировать диски с разным размером сектора? 512 и 4096?"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T15:14:45.379Z"
+    },
+    {
+      "_id": "zCBzMptjGDJzutJTP",
+      "rid": "GENERAL",
+      "msg": "на часик отошёл",
+      "ts": "2021-12-20T13:07:56.634Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "на часик отошёл"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T13:07:56.655Z"
+    },
+    {
+      "_id": "00007D7CC94BFFFF",
+      "rid": "GENERAL",
+      "msg": "спс",
+      "ts": "2021-12-20T12:21:19.377Z",
+      "u": {
+        "_id": "dWsL5D3Xmqnak6giQ",
+        "username": "benny",
+        "name": "benny"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "спс"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T12:21:19.386Z"
+    },
+    {
+      "_id": "9DdaxEdXGsHX8c9EJ",
+      "rid": "GENERAL",
+      "msg": "+",
+      "ts": "2021-12-20T12:21:09.240Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "+"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T12:21:09.250Z"
+    },
+    {
+      "_id": "0000437BF826FFFF",
+      "rid": "GENERAL",
+      "msg": "тест",
+      "ts": "2021-12-20T12:20:43.670Z",
+      "u": {
+        "_id": "dWsL5D3Xmqnak6giQ",
+        "username": "benny",
+        "name": "benny"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "тест"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T12:20:43.687Z"
+    },
+    {
+      "_id": "0000E8763BD7FFFF",
+      "rid": "GENERAL",
+      "msg": "типо plati_ru, карженные акки?",
+      "ts": "2021-12-20T12:20:11.826Z",
+      "u": {
+        "_id": "dWsL5D3Xmqnak6giQ",
+        "username": "benny",
+        "name": "benny"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "типо plati_ru, карженные акки?"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T12:20:11.849Z"
+    },
+    {
+      "_id": "2KtCNHSaQKvhnW5gf",
+      "rid": "GENERAL",
+      "msg": "я с официалки качал, создал акк, сотовый не нужен, с левой почты",
+      "ts": "2021-12-20T11:29:33.937Z",
+      "u": {
+        "_id": "R2ecGKjyBntC6Rv8K",
+        "username": "weldon",
+        "name": "Mr.Covid"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "я с официалки качал, создал акк, сотовый не нужен, с левой почты"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:29:33.961Z"
+    },
+    {
+      "_id": "AwNhW92szkpJ7N7qW",
+      "rid": "GENERAL",
+      "msg": "чтоб без закладок от китайцев",
+      "ts": "2021-12-20T11:27:27.439Z",
+      "u": {
+        "_id": "sDk8FqRNwsaKJWRmA",
+        "username": "kermit",
+        "name": "kermit"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "чтоб без закладок от китайцев"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:27:27.456Z"
+    },
+    {
+      "_id": "J5ZiqFZzpnsTBBYza",
+      "rid": "GENERAL",
+      "msg": "так скачай с левого сайта, зачем тебе МС?)",
+      "ts": "2021-12-20T11:22:10.832Z",
+      "u": {
+        "_id": "R2ecGKjyBntC6Rv8K",
+        "username": "weldon",
+        "name": "Mr.Covid"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "так скачай с левого сайта, зачем тебе МС?)"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:22:10.853Z"
+    },
+    {
+      "_id": "uTdXHtxaKCwpZHAKx",
+      "rid": "GENERAL",
+      "msg": "а нет так скачай с рутрекера ломаную",
+      "ts": "2021-12-20T11:19:22.782Z",
+      "u": {
+        "_id": "EMwgxw2qSCi7eRkBt",
+        "username": "elliott",
+        "name": "elliott"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "а нет так скачай с рутрекера ломаную"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:19:22.803Z"
+    },
+    {
+      "_id": "zWL83g6cBhG5gEq2k",
+      "rid": "GENERAL",
+      "msg": "или с ебея, там тоже продают",
+      "ts": "2021-12-20T11:19:08.689Z",
+      "u": {
+        "_id": "EMwgxw2qSCi7eRkBt",
+        "username": "elliott",
+        "name": "elliott"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "или с ебея, там тоже продают"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:19:08.712Z"
+    },
+    {
+      "_id": "rtTwvhEsZWP2eqac3",
+      "rid": "GENERAL",
+      "tshow": true,
+      "tmid": "p27Y2xJQLW6ThZAsv",
+      "msg": ":rofl:",
+      "ts": "2021-12-20T11:18:52.532Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "BIG_EMOJI",
+          "value": [
+            {
+              "type": "EMOJI",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "rofl"
+              }
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:18:52.587Z"
+    },
+    {
+      "_id": "Cwrciv9kbB59dJecA",
+      "rid": "GENERAL",
+      "msg": "не, я названия не знаю, знаю, что есть, особо популярны акки к еа геймс всякие, но и на софт должны быть",
+      "ts": "2021-12-20T11:18:51.448Z",
+      "u": {
+        "_id": "EMwgxw2qSCi7eRkBt",
+        "username": "elliott",
+        "name": "elliott"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "не, я названия не знаю, знаю, что есть, особо популярны акки к еа геймс всякие, но и на софт должны быть"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:18:51.459Z"
+    },
+    {
+      "_id": "de3fYr8qqpTM3LSbk",
+      "rid": "GENERAL",
+      "msg": "Образ с торрента, ключ с ебея",
+      "ts": "2021-12-20T11:18:50.813Z",
+      "u": {
+        "_id": "9aXFP7TCH8Ti2dYgd",
+        "username": "alik",
+        "name": "alik"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Образ с торрента, ключ с ебея"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:18:50.824Z"
+    },
+    {
+      "_id": "p27Y2xJQLW6ThZAsv",
+      "rid": "GENERAL",
+      "msg": "авито что ли?",
+      "ts": "2021-12-20T11:18:26.351Z",
+      "u": {
+        "_id": "sDk8FqRNwsaKJWRmA",
+        "username": "kermit",
+        "name": "kermit"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "авито что ли?"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:18:52.741Z",
+      "replies": [
+        "sDk8FqRNwsaKJWRmA",
+        "NKrXj9edAPWNrYv5r"
+      ],
+      "tcount": 1,
+      "tlm": "2021-12-20T11:18:52.532Z"
+    },
+    {
+      "_id": "84HxG9vPZxDwuSHgH",
+      "rid": "GENERAL",
+      "msg": "я помню парни мне как-то несколько лет назад показвали этот магаз, там можно было ключи на винду, акки к студии, че хочешь и как-то дешево, баксов по пять, что ли.",
+      "ts": "2021-12-20T11:18:09.710Z",
+      "u": {
+        "_id": "EMwgxw2qSCi7eRkBt",
+        "username": "elliott",
+        "name": "elliott"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "я помню парни мне как-то несколько лет назад показвали этот магаз, там можно было ключи на винду, акки к студии, че хочешь и как-то дешево, баксов по пять, что ли."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:18:09.722Z"
+    },
+    {
+      "_id": "L7yFg8wA2tAQSh3fQ",
+      "rid": "GENERAL",
+      "msg": "есть же целый саайт где это все говно продают занедорого",
+      "ts": "2021-12-20T11:17:26.522Z",
+      "u": {
+        "_id": "EMwgxw2qSCi7eRkBt",
+        "username": "elliott",
+        "name": "elliott"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "есть же целый саайт где это все говно продают занедорого"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:17:26.532Z"
+    },
+    {
+      "_id": "iwy2QtCcJrxNikRRC",
+      "rid": "GENERAL",
+      "msg": "е",
+      "ts": "2021-12-20T11:17:12.802Z",
+      "u": {
+        "_id": "sDk8FqRNwsaKJWRmA",
+        "username": "kermit",
+        "name": "kermit"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "е"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:17:12.976Z"
+    },
+    {
+      "_id": "ARHv332vt6LiMNWc2",
+      "rid": "GENERAL",
+      "msg": "но всегда можно купить акк",
+      "ts": "2021-12-20T11:17:12.756Z",
+      "u": {
+        "_id": "EMwgxw2qSCi7eRkBt",
+        "username": "elliott",
+        "name": "elliott"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "но всегда можно купить акк"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:17:12.778Z"
+    },
+    {
+      "_id": "66oPcto2hQYF9qzHt",
+      "rid": "GENERAL",
+      "msg": "я о том ж",
+      "ts": "2021-12-20T11:17:11.289Z",
+      "u": {
+        "_id": "sDk8FqRNwsaKJWRmA",
+        "username": "kermit",
+        "name": "kermit"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "я о том ж"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:17:11.299Z"
+    },
+    {
+      "_id": "gezLs3ai7Mc9XrWcd",
+      "rid": "GENERAL",
+      "msg": "а вот для учетки могут и телефон спросить...",
+      "ts": "2021-12-20T11:17:02.559Z",
+      "u": {
+        "_id": "EMwgxw2qSCi7eRkBt",
+        "username": "elliott",
+        "name": "elliott"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "а вот для учетки могут и телефон спросить..."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:17:02.587Z"
+    },
+    {
+      "_id": "ykSB22oLHkhJRhtod",
+      "rid": "GENERAL",
+      "msg": "не помню точно, но вроде просто учетка микрософта нужна",
+      "ts": "2021-12-20T11:16:43.418Z",
+      "u": {
+        "_id": "EMwgxw2qSCi7eRkBt",
+        "username": "elliott",
+        "name": "elliott"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "не помню точно, но вроде просто учетка микрософта нужна"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:16:43.433Z"
+    },
+    {
+      "_id": "i9jaDtxLg5cennwJJ",
+      "rid": "GENERAL",
+      "msg": "еще и телефон попросят, наверн",
+      "ts": "2021-12-20T11:16:16.158Z",
+      "u": {
+        "_id": "sDk8FqRNwsaKJWRmA",
+        "username": "kermit",
+        "name": "kermit"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "еще и телефон попросят, наверн"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:16:16.180Z"
+    },
+    {
+      "_id": "7fs9FjTyZBeALDvGQ",
+      "rid": "GENERAL",
+      "msg": "да накаляют эти постоянные реги",
+      "ts": "2021-12-20T11:16:09.759Z",
+      "u": {
+        "_id": "sDk8FqRNwsaKJWRmA",
+        "username": "kermit",
+        "name": "kermit"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "да накаляют эти постоянные реги"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:16:09.768Z"
+    },
+    {
+      "_id": "ksKE66sY7yYZWm2Y8",
+      "rid": "GENERAL",
+      "msg": "киосков с компак-дисками \"все для веб-дизайна\" уже нету))",
+      "ts": "2021-12-20T11:15:45.793Z",
+      "u": {
+        "_id": "EMwgxw2qSCi7eRkBt",
+        "username": "elliott",
+        "name": "elliott"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "киосков с компак-дисками \"все для веб-дизайна\" уже нету))"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:15:45.807Z"
+    },
+    {
+      "_id": "ojLCFdCLSgdTB6L8n",
+      "rid": "GENERAL",
+      "msg": "там коммьюнити на шару раздавали всегда, абы почту какую ввел",
+      "ts": "2021-12-20T11:15:01.247Z",
+      "u": {
+        "_id": "EMwgxw2qSCi7eRkBt",
+        "username": "elliott",
+        "name": "elliott"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "там коммьюнити на шару раздавали всегда, абы почту какую ввел"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:15:01.258Z"
+    },
+    {
+      "_id": "bb4Lus7Yt5FJH9uHv",
+      "rid": "GENERAL",
+      "msg": "так зарегайся, в чем проблема?",
+      "ts": "2021-12-20T11:14:47.427Z",
+      "u": {
+        "_id": "EMwgxw2qSCi7eRkBt",
+        "username": "elliott",
+        "name": "elliott"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "так зарегайся, в чем проблема?"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:14:47.439Z"
+    },
+    {
+      "_id": "LZA3uPLHarkJewF6H",
+      "rid": "GENERAL",
+      "msg": "```\nhttps://visualstudio.microsoft.com/vs/older-downloads/\n```",
+      "ts": "2021-12-20T11:08:17.347Z",
+      "u": {
+        "_id": "sDk8FqRNwsaKJWRmA",
+        "username": "kermit",
+        "name": "kermit"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "CODE",
+          "language": "none",
+          "value": [
+            {
+              "type": "CODE_LINE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "https://visualstudio.microsoft.com/vs/older-downloads/"
+              }
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:08:17.367Z"
+    },
+    {
+      "_id": "FMh3HydKZtBxoHzpk",
+      "rid": "GENERAL",
+      "msg": "без реги никак?",
+      "ts": "2021-12-20T11:08:10.374Z",
+      "u": {
+        "_id": "sDk8FqRNwsaKJWRmA",
+        "username": "kermit",
+        "name": "kermit"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "без реги никак?"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:08:10.391Z"
+    },
+    {
+      "_id": "bfLyGvRD6AiQtndfX",
+      "rid": "GENERAL",
+      "msg": "@all парни, а как скачать старые версии студий от мс (2012, например)?",
+      "ts": "2021-12-20T11:07:39.727Z",
+      "u": {
+        "_id": "sDk8FqRNwsaKJWRmA",
+        "username": "kermit",
+        "name": "kermit"
+      },
+      "urls": [],
+      "mentions": [
+        {
+          "_id": "all",
+          "username": "all"
+        }
+      ],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "MENTION_USER",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "all"
+              }
+            },
+            {
+              "type": "PLAIN_TEXT",
+              "value": " парни, а как скачать старые версии студий от мс (2012, например)?"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T11:07:39.742Z"
+    },
+    {
+      "_id": "bMuRryGBTGqyrqsPr",
+      "rid": "GENERAL",
+      "msg": "гитлаб мне 422 показвает вообще",
+      "ts": "2021-12-20T10:56:21.624Z",
+      "u": {
+        "_id": "EMwgxw2qSCi7eRkBt",
+        "username": "elliott",
+        "name": "elliott"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "гитлаб мне 422 показвает вообще"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T10:56:21.651Z"
+    },
+    {
+      "_id": "BqrEktg45kZ8kYqLe",
+      "rid": "GENERAL",
+      "msg": "а bundle-tor вот сегодня перстал запускаться на windows.",
+      "ts": "2021-12-20T10:56:19.696Z",
+      "u": {
+        "_id": "KL4pMX4siKgvjiCGq",
+        "username": "eugene",
+        "name": "eugene"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "а bundle-tor вот сегодня перстал запускаться на windows."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T10:56:19.709Z"
+    },
+    {
+      "_id": "i9f6KhC6Da3qdZXsG",
+      "rid": "GENERAL",
+      "msg": "угу",
+      "ts": "2021-12-20T10:55:16.004Z",
+      "u": {
+        "_id": "NBrcbsQRoozfaXeNd",
+        "username": "patrick",
+        "name": "patrick"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "угу"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T10:55:16.014Z"
+    },
+    {
+      "_id": "ZFd9FQrodmgqdWC5F",
+      "rid": "GENERAL",
+      "msg": "это у меня только так отвалилось, что страница рокета не загружалась?",
+      "ts": "2021-12-20T10:54:39.067Z",
+      "u": {
+        "_id": "KL4pMX4siKgvjiCGq",
+        "username": "eugene",
+        "name": "eugene"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "это у меня только так отвалилось, что страница рокета не загружалась?"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T10:54:39.079Z"
+    },
+    {
+      "_id": "pznMa6tiEWc2DAS6N",
+      "rid": "GENERAL",
+      "msg": "гитлаб ток у меня 500 показывает?",
+      "ts": "2021-12-20T08:08:07.335Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "гитлаб ток у меня 500 показывает?"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T08:08:07.354Z"
+    },
+    {
+      "_id": "FTpdTm5CzkiXfZwXu",
+      "rid": "GENERAL",
+      "tshow": true,
+      "tmid": "8KHojrxDDziK9oas7",
+      "msg": "с мостами все работает",
+      "ts": "2021-12-20T07:56:45.768Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "с мостами все работает"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T07:56:45.785Z"
+    },
+    {
+      "_id": "oJy8oh3kE7XgpCs8Z",
+      "rid": "GENERAL",
+      "msg": "у меня работает",
+      "ts": "2021-12-20T07:56:19.323Z",
+      "u": {
+        "_id": "Mvt4KwSxtNSNga6NW",
+        "username": "jaime",
+        "name": "jaime"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "у меня работает"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T07:56:19.334Z"
+    },
+    {
+      "_id": "oiRJskfNaaY7qSbmQ",
+      "rid": "GENERAL",
+      "msg": "Привет",
+      "ts": "2021-12-20T07:56:10.456Z",
+      "u": {
+        "_id": "Mvt4KwSxtNSNga6NW",
+        "username": "jaime",
+        "name": "jaime"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Привет"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T07:56:10.466Z"
+    },
+    {
+      "_id": "8KHojrxDDziK9oas7",
+      "rid": "GENERAL",
+      "msg": "hi all, чо щас без впн тор вообще не работает?",
+      "ts": "2021-12-20T07:55:12.610Z",
+      "u": {
+        "_id": "R2ecGKjyBntC6Rv8K",
+        "username": "weldon",
+        "name": "Mr.Covid"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "hi all, чо щас без впн тор вообще не работает?"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2021-12-20T07:56:45.858Z",
+      "replies": [
+        "R2ecGKjyBntC6Rv8K",
+        "NKrXj9edAPWNrYv5r"
+      ],
+      "tcount": 1,
+      "tlm": "2021-12-20T07:56:45.768Z"
+    }
+  ],
+  "success": true
+}

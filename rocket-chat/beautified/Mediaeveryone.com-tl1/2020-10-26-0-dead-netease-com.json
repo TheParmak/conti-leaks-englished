@@ -1,0 +1,191 @@
+{
+  "messages": [
+    {
+      "_id": "NgJtka7Fy5seTKLSN",
+      "rid": "GS97uEYe9MYezuoBN",
+      "msg": "Висит",
+      "ts": "2020-10-26T23:59:46.053Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-26T23:59:46.102Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vWxRGREu8RTKTnZ3u",
+      "rid": "GS97uEYe9MYezuoBN",
+      "msg": "`wb.zhangna:Zhangna123`",
+      "ts": "2020-10-26T23:54:10.053Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-26T23:54:10.105Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hmLM3xLNCrq3MpQd7",
+      "rid": "GS97uEYe9MYezuoBN",
+      "ts": "2020-10-26T23:51:54.872Z",
+      "msg": "",
+      "file": {
+        "_id": "sP7rp2c5Tcm3C43e6",
+        "name": "18s19a413af045db88dfbd29609eb877.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "18s19a413af045db88dfbd29609eb877.txt",
+          "title_link": "/file-upload/sP7rp2c5Tcm3C43e6/18s19a413af045db88dfbd29609eb877.txt",
+          "title_link_download": true,
+          "type": "file",
+          "description": "winPEAS"
+        }
+      ],
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-26T23:51:54.913Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "SezPxwFzcb6quRvR4",
+      "rid": "GS97uEYe9MYezuoBN",
+      "msg": "net accounts))\n```\n强制用户在时间到期之后多久必须注销?:     从不\n密码最短使用期限(天):                    0\n密码最长使用期限(天):                    42\n密码长度最小值:                          0\n保持的密码历史记录长度:                  None\n锁定阈值:                                从不\n锁定持续时间(分):                        2\n锁定观测窗口(分):                        2\n计算机角色:                              WORKSTATION\n命令成功完成。\n\n```",
+      "ts": "2020-10-26T23:51:22.093Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-26T23:51:22.172Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "dydeX6nwidqy4Ak5c",
+      "rid": "GS97uEYe9MYezuoBN",
+      "msg": "DC\n```\nDomain Controllers:\n\n Server Name             IP Address                      \n -----------             ----------                      \n HZ-DC03                 10.246.3.33\n HZ-DC04                 10.246.3.34\n BJ-DC03                 10.238.8.100\n BJ-DC04                 10.238.0.100\n HZ-EQDC08               10.246.101.34\n HZ-EQDC07               10.246.101.33\n```",
+      "ts": "2020-10-26T23:33:19.341Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-26T23:33:19.444Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "78TNyZjuoecuapptP",
+      "rid": "GS97uEYe9MYezuoBN",
+      "msg": "```\n\nAuthentication Id : 0 ; 554893 (00000000:0008778d)\nSession           : Interactive from 1\nUser Name         : wb.zhangna\nDomain            : CN\nLogon Server      : HZ-EQDC08\nLogon Time        : 2020/10/26 23:27:44\nSID               : S-1-5-21-1380817616-3362833225-652976467-106526\n\tmsv :\t\n\t [00000003] Primary\n\t * Username : wb.zhangna\n\t * Domain   : CN\n\t * NTLM     : 985de1088d5d619c783802e87d1dfea1\n\t * SHA1     : 89d60fa07d36dc39fbf2f516b74514db08e25b38\n\t * DPAPI    : c5af9cdc18387afefdc1024f86b99ed1\n\ttspkg :\t\n\twdigest :\t\n\t * Username : wb.zhangna\n\t * Domain   : CN\n\t * Password : (null)\n\tkerberos :\t\n\t * Username : wb.zhangna\n\t * Domain   : CN.NET.NTES\n\t * Password : (null)\n\tssp :\t\n\tcredman :\t\n\nAuthentication Id : 0 ; 553900 (00000000:000873ac)\nSession           : Interactive from 1\nUser Name         : wb.zhangna\nDomain            : CN\nLogon Server      : HZ-EQDC08\nLogon Time        : 2020/10/26 23:27:44\nSID               : S-1-5-21-1380817616-3362833225-652976467-106526\n\tmsv :\t\n\t [00000003] Primary\n\t * Username : wb.zhangna\n\t * Domain   : CN\n\t * NTLM     : 985de1088d5d619c783802e87d1dfea1\n\t * SHA1     : 89d60fa07d36dc39fbf2f516b74514db08e25b38\n\t * DPAPI    : c5af9cdc18387afefdc1024f86b99ed1\n\ttspkg :\t\n\twdigest :\t\n\t * Username : wb.zhangna\n\t * Domain   : CN\n\t * Password : (null)\n\tkerberos :\t\n\t * Username : wb.zhangna\n\t * Domain   : CN.NET.NTES\n\t * Password : (null)\n\tssp :\t\n\tcredman :\t\n\nAuthentication Id : 0 ; 92375 (00000000:000168d7)\nSession           : Interactive from 1\nUser Name         : DWM-1\nDomain            : Window Manager\nLogon Server      : (null)\nLogon Time        : 2020/10/26 23:27:37\nSID               : S-1-5-90-0-1\n\tmsv :\t\n\t [00000003] Primary\n\t * Username : HIH-D-22925$\n\t * Domain   : CN\n\t * NTLM     : 3909fbffc2df0e29ce348893f4a18b95\n\t * SHA1     : 9d1bc75d9c64519e6a1d925aa105bad3633e6d0a\n\ttspkg :\t\n\twdigest :\t\n\t * Username : HIH-D-22925$\n\t * Domain   : CN\n\t * Password : (null)\n\tkerberos :\t\n\t * Username : HIH-D-22925$\n\t * Domain   : cn.net.ntes\n\t * Password : 54 61 54 9d f0 e4 49 b0 67 2d 94 27 d7 d3 6e 8a 7f 52 05 c7 e7 c6 e3 76 68 02 b4 7e e7 37 65 34 a7 c6 8f 0f c6 44 05 40 9d 48 0a a6 89 d4 c8 48 ca 3e 99 95 e4 ad dc 2b c8 7d 15 29 83 20 68 5e f5 d6 39 76 bd 7e c1 97 65 55 a9 b1 73 59 37 e1 53 e5 35 17 2a 1f 2e 74 05 6b 57 96 ac 61 ce 76 74 c8 f0 53 ca 26 8c 7e 30 1e 70 03 5e a0 0f a4 7c 31 4c e7 4e c7 54 8c d6 4b 35 52 e7 6e ea eb 80 a4 9d 16 36 50 26 c2 a3 40 d5 9f 0b 6b b0 41 42 d8 41 0c aa c2 d7 78 32 60 79 04 82 ce 7e 5e 53 e2 89 68 d3 37 0e 53 9b 9d 4a 59 c8 c6 32 c3 34 49 72 3c 8c 5e 63 0c cc 88 65 eb 2c c0 6f e1 51 b3 01 20 ab 33 9c 0a 97 b3 be b8 c2 76 21 cd 3a 4d 63 0e 3f 6d 64 9f 00 69 33 54 b0 4f a7 ca 2e dc 17 34 23 81 db c0 ae 52 94 b0 5f b5 e9 21 \n\tssp :\t\n\tcredman :\t\n\nAuthentication Id : 0 ; 92331 (00000000:000168ab)\nSession           : Interactive from 1\nUser Name         : DWM-1\nDomain            : Window Manager\nLogon Server      : (null)\nLogon Time        : 2020/10/26 23:27:37\nSID               : S-1-5-90-0-1\n\tmsv :\t\n\t [00000003] Primary\n\t * Username : HIH-D-22925$\n\t * Domain   : CN\n\t * NTLM     : 3909fbffc2df0e29ce348893f4a18b95\n\t * SHA1     : 9d1bc75d9c64519e6a1d925aa105bad3633e6d0a\n\ttspkg :\t\n\twdigest :\t\n\t * Username : HIH-D-22925$\n\t * Domain   : CN\n\t * Password : (null)\n\tkerberos :\t\n\t * Username : HIH-D-22925$\n\t * Domain   : cn.net.ntes\n\t * Password : 54 61 54 9d f0 e4 49 b0 67 2d 94 27 d7 d3 6e 8a 7f 52 05 c7 e7 c6 e3 76 68 02 b4 7e e7 37 65 34 a7 c6 8f 0f c6 44 05 40 9d 48 0a a6 89 d4 c8 48 ca 3e 99 95 e4 ad dc 2b c8 7d 15 29 83 20 68 5e f5 d6 39 76 bd 7e c1 97 65 55 a9 b1 73 59 37 e1 53 e5 35 17 2a 1f 2e 74 05 6b 57 96 ac 61 ce 76 74 c8 f0 53 ca 26 8c 7e 30 1e 70 03 5e a0 0f a4 7c 31 4c e7 4e c7 54 8c d6 4b 35 52 e7 6e ea eb 80 a4 9d 16 36 50 26 c2 a3 40 d5 9f 0b 6b b0 41 42 d8 41 0c aa c2 d7 78 32 60 79 04 82 ce 7e 5e 53 e2 89 68 d3 37 0e 53 9b 9d 4a 59 c8 c6 32 c3 34 49 72 3c 8c 5e 63 0c cc 88 65 eb 2c c0 6f e1 51 b3 01 20 ab 33 9c 0a 97 b3 be b8 c2 76 21 cd 3a 4d 63 0e 3f 6d 64 9f 00 69 33 54 b0 4f a7 ca 2e dc 17 34 23 81 db c0 ae 52 94 b0 5f b5 e9 21 \n\tssp :\t\n\tcredman :\t\n\nAuthentication Id : 0 ; 996 (00000000:000003e4)\nSession           : Service from 0\nUser Name         : HIH-D-22925$\nDomain            : CN\nLogon Server      : (null)\nLogon Time        : 2020/10/26 23:27:36\nSID               : S-1-5-20\n\tmsv :\t\n\t [00000003] Primary\n\t * Username : HIH-D-22925$\n\t * Domain   : CN\n\t * NTLM     : 3909fbffc2df0e29ce348893f4a18b95\n\t * SHA1     : 9d1bc75d9c64519e6a1d925aa105bad3633e6d0a\n\ttspkg :\t\n\twdigest :\t\n\t * Username : HIH-D-22925$\n\t * Domain   : CN\n\t * Password : (null)\n\tkerberos :\t\n\t * Username : hih-d-22925$\n\t * Domain   : CN.NET.NTES\n\t * Password : (null)\n\tssp :\t\n\tcredman :\t\n\nAuthentication Id : 0 ; 997 (00000000:000003e5)\nSession           : Service from 0\nUser Name         : LOCAL SERVICE\nDomain            : NT AUTHORITY\nLogon Server      : (null)\nLogon Time        : 2020/10/26 23:27:36\nSID               : S-1-5-19\n\tmsv :\t\n\ttspkg :\t\n\twdigest :\t\n\t * Username : (null)\n\t * Domain   : (null)\n\t * Password : (null)\n\tkerberos :\t\n\t * Username : (null)\n\t * Domain   : (null)\n\t * Password : (null)\n\tssp :\t\n\tcredman :\t\n\nAuthentication Id : 0 ; 63722 (00000000:0000f8ea)\nSession           : Interactive from 1\nUser Name         : UMFD-1\nDomain            : Font Driver Host\nLogon Server      : (null)\nLogon Time        : 2020/10/26 23:27:36\nSID               : S-1-5-96-0-1\n\tmsv :\t\n\t [00000003] Primary\n\t * Username : HIH-D-22925$\n\t * Domain   : CN\n\t * NTLM     : 3909fbffc2df0e29ce348893f4a18b95\n\t * SHA1     : 9d1bc75d9c64519e6a1d925aa105bad3633e6d0a\n\ttspkg :\t\n\twdigest :\t\n\t * Username : HIH-D-22925$\n\t * Domain   : CN\n\t * Password : (null)\n\tkerberos :\t\n\t * Username : HIH-D-22925$\n\t * Domain   : cn.net.ntes\n\t * Password : 54 61 54 9d f0 e4 49 b0 67 2d 94 27 d7 d3 6e 8a 7f 52 05 c7 e7 c6 e3 76 68 02 b4 7e e7 37 65 34 a7 c6 8f 0f c6 44 05 40 9d 48 0a a6 89 d4 c8 48 ca 3e 99 95 e4 ad dc 2b c8 7d 15 29 83 20 68 5e f5 d6 39 76 bd 7e c1 97 65 55 a9 b1 73 59 37 e1 53 e5 35 17 2a 1f 2e 74 05 6b 57 96 ac 61 ce 76 74 c8 f0 53 ca 26 8c 7e 30 1e 70 03 5e a0 0f a4 7c 31 4c e7 4e c7 54 8c d6 4b 35 52 e7 6e ea eb 80 a4 9d 16 36 50 26 c2 a3 40 d5 9f 0b 6b b0 41 42 d8 41 0c aa c2 d7 78 32 60 79 04 82 ce 7e 5e 53 e2 89 68 d3 37 0e 53 9b 9d 4a 59 c8 c6 32 c3 34 49 72 3c 8c 5e 63 0c cc 88 65 eb 2c c0 6f e1 51 b3 01 20 ab 33 9c 0a 97 b3 be b8 c2 76 21 cd 3a 4d 63 0e 3f 6d 64 9f 00 69 33 54 b0 4f a7 ca 2e dc 17 34 23 81 db c0 ae 52 94 b0 5f b5 e9 21 \n\tssp :\t\n\tcredman :\t\n\nAuthentication Id : 0 ; 63689 (00000000:0000f8c9)\nSession           : Interactive from 0\nUser Name         : UMFD-0\nDomain            : Font Driver Host\nLogon Server      : (null)\nLogon Time        : 2020/10/26 23:27:36\nSID               : S-1-5-96-0-0\n\tmsv :\t\n\t [00000003] Primary\n\t * Username : HIH-D-22925$\n\t * Domain   : CN\n\t * NTLM     : 3909fbffc2df0e29ce348893f4a18b95\n\t * SHA1     : 9d1bc75d9c64519e6a1d925aa105bad3633e6d0a\n\ttspkg :\t\n\twdigest :\t\n\t * Username : HIH-D-22925$\n\t * Domain   : CN\n\t * Password : (null)\n\tkerberos :\t\n\t * Username : HIH-D-22925$\n\t * Domain   : cn.net.ntes\n\t * Password : 54 61 54 9d f0 e4 49 b0 67 2d 94 27 d7 d3 6e 8a 7f 52 05 c7 e7 c6 e3 76 68 02 b4 7e e7 37 65 34 a7 c6 8f 0f c6 44 05 40 9d 48 0a a6 89 d4 c8 48 ca 3e 99 95 e4 ad dc 2b c8 7d 15 29 83 20 68 5e f5 d6 39 76 bd 7e c1 97 65 55 a9 b1 73 59 37 e1 53 e5 35 17 2a 1f 2e 74 05 6b 57 96 ac 61 ce 76 74 c8 f0 53 ca 26 8c 7e 30 1e 70 03 5e a0 0f a4 7c 31 4c e7 4e c7 54 8c d6 4b 35 52 e7 6e ea eb 80 a4 9d 16 36 50 26 c2 a3 40 d5 9f 0b 6b b0 41 42 d8 41 0c aa c2 d7 78 32 60 79 04 82 ce 7e 5e 53 e2 89 68 d3 37 0e 53 9b 9d 4a 59 c8 c6 32 c3 34 49 72 3c 8c 5e 63 0c cc 88 65 eb 2c c0 6f e1 51 b3 01 20 ab 33 9c 0a 97 b3 be b8 c2 76 21 cd 3a 4d 63 0e 3f 6d 64 9f 00 69 33 54 b0 4f a7 ca 2e dc 17 34 23 81 db c0 ae 52 94 b0 5f b5 e9 21 \n\tssp :\t\n\tcredman :\t\n\nAuthentication Id : 0 ; 62665 (00000000:0000f4c9)\nSession           : UndefinedLogonType from 0\nUser Name         : (null)\nDomain            : (null)\nLogon Server      : (null)\nLogon Time        : 2020/10/26 23:27:36\nSID               : \n\tmsv :\t\n\t [00000003] Primary\n\t * Username : HIH-D-22925$\n\t * Domain   : CN\n\t * NTLM     : 3909fbffc2df0e29ce348893f4a18b95\n\t * SHA1     : 9d1bc75d9c64519e6a1d925aa105bad3633e6d0a\n\ttspkg :\t\n\twdigest :\t\n\tkerberos :\t\n\tssp :\t\n\tcredman :\t\n\nAuthentication Id : 0 ; 999 (00000000:000003e7)\nSession           : UndefinedLogonType from 0\nUser Name         : HIH-D-22925$\nDomain            : CN\nLogon Server      : (null)\nLogon Time        : 2020/10/26 23:27:36\nSID               : S-1-5-18\n\tmsv :\t\n\ttspkg :\t\n\twdigest :\t\n\t * Username : HIH-D-22925$\n\t * Domain   : CN\n\t * Password : (null)\n\tkerberos :\t\n\t * Username : hih-d-22925$\n\t * Domain   : CN.NET.NTES\n\t * Password : (null)\n\tssp :\t\n\tcredman :\t\n\n```",
+      "ts": "2020-10-26T23:28:58.898Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-26T23:28:59.861Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "nSKQijzPmty6ysRpq",
+      "rid": "GS97uEYe9MYezuoBN",
+      "msg": "```\nAdministrator:500:aad3b435b51404eeaad3b435b51404ee:ab374db304924054507dd9a9a5b513fd:::\nDefaultAccount:503:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::\nGuest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::\nWDAGUtilityAccount:504:aad3b435b51404eeaad3b435b51404ee:cab016c9f1758dc8dc18600415e33576:::\n\n```",
+      "ts": "2020-10-26T23:28:31.860Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-26T23:28:31.947Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "j5C3kc9rg7qqKEpaS",
+      "rid": "GS97uEYe9MYezuoBN",
+      "msg": "ДА\n```\n这项请求将在域 cn.net.ntes 的域控制器处理。\n\n组名     Domain Admins\n注释     指定的域管理员\n\n成员\n\n-------------------------------------------------------------------------------\nB6823                    cnadmin                  H10151                   \nluot                     ntes.cn                  sileiy                   \nwinbjplan                winplan                  \n命令成功完成。\n\n\n```",
+      "ts": "2020-10-26T23:22:29.670Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-26T23:22:29.763Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "dnmHhMN7ji9NwHu4t",
+      "rid": "GS97uEYe9MYezuoBN",
+      "ts": "2020-10-26T23:14:33.426Z",
+      "msg": "",
+      "file": {
+        "_id": "6nK5eK2FnYC6yRLeW",
+        "name": "ADFind.zip",
+        "type": "application/zip"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ADFind.zip",
+          "title_link": "/file-upload/6nK5eK2FnYC6yRLeW/ADFind.zip",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-26T23:14:33.462Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "79RXiSBsBoKas4TvD",
+      "rid": "GS97uEYe9MYezuoBN",
+      "ts": "2020-10-26T23:12:49.530Z",
+      "msg": "",
+      "file": {
+        "_id": "27EXKoPD9bmfrwcnc",
+        "name": "ad_computers.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_computers.txt",
+          "title_link": "/file-upload/27EXKoPD9bmfrwcnc/ad_computers.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-26T23:12:49.557Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

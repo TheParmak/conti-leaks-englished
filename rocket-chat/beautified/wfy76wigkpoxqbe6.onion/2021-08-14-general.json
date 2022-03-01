@@ -1,0 +1,216 @@
+{
+  "messages": [
+    {
+      "_id": "ovdDfDH9EZdcyEHF6",
+      "rid": "GENERAL",
+      "ts": "2021-08-14T01:52:37.826Z",
+      "msg": "",
+      "file": {
+        "_id": "5qBztyZLLgQHegvKS",
+        "name": "123.png",
+        "type": "image/png"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "title": "123.png",
+          "type": "file",
+          "title_link": "/file-upload/5qBztyZLLgQHegvKS/123.png",
+          "title_link_download": true,
+          "image_url": "/file-upload/5qBztyZLLgQHegvKS/123.png",
+          "image_type": "image/png",
+          "image_size": 252250,
+          "image_dimensions": {
+            "width": 980,
+            "height": 746
+          },
+          "image_preview": "/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAYACADASIAAhEBAxEB/8QAGwAAAgEFAAAAAAAAAAAAAAAAAAIEAQMFBgj/xAAnEAACAgIBAgQHAAAAAAAAAAABAgADBBESMXEFIUHwExQVIlFhof/EABYBAQEBAAAAAAAAAAAAAAAAAAIDBP/EABoRAAIDAQEAAAAAAAAAAAAAAAABAgMREiH/2gAMAwEAAhEDEQA/AOjLsWw2sTZrZ6bjfJ3nQ5jj3EnZKKzj71XuIqVl20loOvSPlZoOnouNiPSwcXDeuhIk6rlo82DfjUoKl15j+x1UKNDpD4I1/wCv4tmj8Bj+/YkrA8TpyLilFDBwN+/KEJCNkniNs6IRTaMpU7MDyQr3lmzNpruFTNpz6QhLGM//2Q=="
+        }
+      ],
+      "u": {
+        "_id": "PHFjy9riB2PEg2bCZ",
+        "username": "hitech"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-08-14T01:52:37.840Z"
+    },
+    {
+      "_id": "zEYcSWgTyP4qXdvQA",
+      "rid": "GENERAL",
+      "msg": "[ ](https://stylebrooks.com/group/general?msg=6hvXr8S7ES64vC8qH) на гите в мануале написано что может быть проще \npython -m pip install\nа проще можно быть \npython -m pip install impacket из папки именно скаченого релиза, а не мастер ветки\n\nдальше может ругаться что нет модуля readline\npip install pyreadline\n\nи в целом чтоб обращаться к питону не через путь, а через переменную, при установке питона, надо добавить питон как системную переменную (просто галочку при установке)\nэто все если на винду ставить, на линь говорят просто с гита стянул и все работает",
+      "ts": "2021-08-14T01:52:31.723Z",
+      "u": {
+        "_id": "PHFjy9riB2PEg2bCZ",
+        "username": "hitech"
+      },
+      "urls": [
+        {
+          "url": "https://stylebrooks.com/group/general?msg=6hvXr8S7ES64vC8qH",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": [],
+      "attachments": [
+        {
+          "text": "импакет не инсталиться",
+          "author_name": "brad",
+          "author_icon": "/avatar/brad",
+          "message_link": "https://stylebrooks.com/group/general?msg=6hvXr8S7ES64vC8qH",
+          "attachments": [],
+          "ts": "2021-08-14T00:41:33.596Z"
+        }
+      ],
+      "_updatedAt": "2021-08-14T10:14:27.320Z",
+      "reactions": {
+        ":thumbsup:": {
+          "usernames": [
+            "Tyr"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "fhpTEyRdBC2Yiktuj",
+      "rid": "GENERAL",
+      "msg": "(на диск внутри сети не дропай, только из-под сокса или впн со своей впски)",
+      "ts": "2021-08-14T00:42:19.381Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-08-14T00:42:19.399Z"
+    },
+    {
+      "_id": "piZPKtEzZJoBSkSdF",
+      "rid": "GENERAL",
+      "msg": "https://github.com/maaaaz/impacket-examples-windows",
+      "ts": "2021-08-14T00:41:58.185Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "urls": [
+        {
+          "url": "https://github.com/maaaaz/impacket-examples-windows"
+        }
+      ],
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-08-14T00:41:58.221Z"
+    },
+    {
+      "_id": "6hvXr8S7ES64vC8qH",
+      "rid": "GENERAL",
+      "msg": "импакет не инсталиться",
+      "ts": "2021-08-14T00:41:33.596Z",
+      "u": {
+        "_id": "2wZZHj9R2pz9mu9qj",
+        "username": "brad"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-08-14T00:41:33.608Z"
+    },
+    {
+      "_id": "tQAysRKyE4FKJ8BjJ",
+      "rid": "GENERAL",
+      "msg": "слух",
+      "ts": "2021-08-14T00:41:25.498Z",
+      "u": {
+        "_id": "2wZZHj9R2pz9mu9qj",
+        "username": "brad"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-08-14T00:41:25.514Z"
+    },
+    {
+      "_id": "hZobtYAAaP5EcPLAZ",
+      "rid": "GENERAL",
+      "msg": "а в чём у тебя затруднение?",
+      "ts": "2021-08-14T00:41:24.137Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-08-14T00:41:24.156Z"
+    },
+    {
+      "_id": "wDQBpikE8Lno8D5oe",
+      "rid": "GENERAL",
+      "msg": "да",
+      "ts": "2021-08-14T00:41:21.676Z",
+      "u": {
+        "_id": "2wZZHj9R2pz9mu9qj",
+        "username": "brad"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-08-14T00:41:21.688Z"
+    },
+    {
+      "_id": "D43YbW5EYitT43NEz",
+      "rid": "GENERAL",
+      "msg": "secretsdump чтоли? ну да, пускали)",
+      "ts": "2021-08-14T00:40:55.648Z",
+      "u": {
+        "_id": "scGz5qfgnoAepBEws",
+        "username": "t3chnolog"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-08-14T00:40:55.674Z"
+    },
+    {
+      "_id": "jDw4c4xXdQTtrwmvs",
+      "rid": "GENERAL",
+      "msg": "вот линк на первоисходник, как я понял, на базе которого расписано про ms chach",
+      "ts": "2021-08-14T00:36:38.020Z",
+      "u": {
+        "_id": "2wZZHj9R2pz9mu9qj",
+        "username": "brad"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-08-14T00:36:38.032Z"
+    },
+    {
+      "_id": "ghPRdjHzZaEnsoKRP",
+      "rid": "GENERAL",
+      "msg": "https://www.ired.team/offensive-security/credential-access-and-credential-dumping/dumping-and-cracking-mscash-cached-domain-credentials",
+      "ts": "2021-08-14T00:35:41.195Z",
+      "u": {
+        "_id": "2wZZHj9R2pz9mu9qj",
+        "username": "brad"
+      },
+      "urls": [
+        {
+          "url": "https://www.ired.team/offensive-security/credential-access-and-credential-dumping/dumping-and-cracking-mscash-cached-domain-credentials"
+        }
+      ],
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-08-14T00:35:41.215Z"
+    },
+    {
+      "_id": "WNbWZyzGmi4yro7Xe",
+      "rid": "GENERAL",
+      "msg": "господа, бродил тут по форуму нашему и наткнулся на штуку под названием ms chach, кому-нибудь удавалось запустить питоновский скрипт, что вытаскивает нужную инфу ? или может у кого есть возможно по быстрому снять инфу ?",
+      "ts": "2021-08-14T00:34:42.405Z",
+      "u": {
+        "_id": "2wZZHj9R2pz9mu9qj",
+        "username": "brad"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-08-14T00:34:42.431Z"
+    }
+  ],
+  "success": true
+}

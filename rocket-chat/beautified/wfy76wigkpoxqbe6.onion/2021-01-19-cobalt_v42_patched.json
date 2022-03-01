@@ -1,0 +1,174 @@
+{
+  "messages": [
+    {
+      "_id": "HZ7N2HmRhYipiq54W",
+      "t": "au",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "ts": "2021-01-26T14:13:24.121Z",
+      "msg": "asdf7f814vycfas",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-01-26T14:13:24.139Z"
+    },
+    {
+      "_id": "Mscjjc8ja6Hz5avvz",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "UPDATE: добавлены новые паттерны для stageless нагрузок",
+      "ts": "2021-01-22T21:15:48.540Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-01-22T21:15:48.556Z"
+    },
+    {
+      "_id": "jouDkHKeFER8RtS3K",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "ts": "2021-01-22T21:15:31.330Z",
+      "msg": "",
+      "file": {
+        "_id": "wWmDqYzutxPhPjFya",
+        "name": "brooks-artifact-kit.7z",
+        "type": "application/x-7z-compressed"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "title": "brooks-artifact-kit.7z",
+          "type": "file",
+          "title_link": "/file-upload/wWmDqYzutxPhPjFya/brooks-artifact-kit.7z",
+          "title_link_download": true
+        }
+      ],
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-01-22T21:15:31.343Z"
+    },
+    {
+      "_id": "qimYZFDNpL75yGsoq",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "@all ВАЖНО\nОБНОВЛЕНИЕ ARTIFACT KIT\nВсем скачать архив и заменить файлы в папке \"поверх\", все файлы!",
+      "ts": "2021-01-22T21:15:19.263Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [
+        {
+          "_id": "all",
+          "username": "all"
+        }
+      ],
+      "channels": [],
+      "_updatedAt": "2021-01-22T21:15:19.294Z"
+    },
+    {
+      "_id": "xM7BYtmQo34bepSrB",
+      "t": "au",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "ts": "2021-01-22T01:59:54.318Z",
+      "msg": "slice",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-01-22T01:59:54.332Z"
+    },
+    {
+      "_id": "8LEwujvdr8XhLe9qR",
+      "t": "r",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "ts": "2021-01-20T08:51:03.653Z",
+      "msg": "cobalt_v42_patched",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-01-20T08:51:03.653Z"
+    },
+    {
+      "_id": "82YGAJijwyRKqNxQQ",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "*все тестирвания проводились только на х64 осях(!!!)*",
+      "ts": "2021-01-19T14:02:02.011Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-01-19T14:02:02.072Z"
+    },
+    {
+      "_id": "tSFzBBwNnPLY8B9W9",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "ts": "2021-01-19T13:16:11.081Z",
+      "msg": "",
+      "file": {
+        "_id": "gANW5WgpQsXnQN7T7",
+        "name": "Cobalt42_v2.7z",
+        "type": "application/x-7z-compressed"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "title": "Cobalt42_v2.7z",
+          "type": "file",
+          "title_link": "/file-upload/gANW5WgpQsXnQN7T7/Cobalt42_v2.7z",
+          "title_link_download": true
+        }
+      ],
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-01-19T13:16:11.174Z"
+    },
+    {
+      "_id": "PhNsS6dWPkBGfXFqN",
+      "rid": "GMpdAQHLhpxhdk8cE",
+      "msg": "```\nТекущая версия кобальта пропатчена Java хуком где снят триальный EICAR отпечаток.\nДля запуска требует jdk13 на винде :\nДобавляем вот это в батник \n\t@echo off\n\tpushd %~dp0\n\tset PATH=\"C:\\Program Files\\Java\\jdk-13.0.2\\bin\\\"\n\t\nДля запуска на убунте :\nстрока запуска\n\tjava -XX:ParallelGCThreads=4 -XX:+AggressiveHeap -XX:+UseParallelGC -Xms512M -Xmx1024M -javaagent:hook.jar -jar cobaltstrike.jar $*\n\nустановка нужной Java :\n\tsudo add-apt-repository ppa:linuxuprising/java\n\tsudo apt install oracle-java15-installer\n\t\n\tjava -version\n\tjava version \"15.0.1\" 2020-10-20\n\tJava(TM) SE Runtime Environment (build 15.0.1+9-18)\n\tJava HotSpot(TM) 64-Bit Server VM (build 15.0.1+9-18, mixed mode, sharing)\n\nДля тех у кого Kali (Debian) :\nhttps://www.linuxuprising.com/2020/09/how-to-install-oracle-java-15-on-ubuntu.html\n\nтам ниже будет раздел \nInstall Oracle Java 15 on Ubuntu, Debian, Linux Mint, Pop!_OS, Zorin OS and others using an APT PPA repository\n\nВ комплекте в папке \n\tCobalt42_v2/Toolkits/artifact/brooks-artifact-kit/\nлежит artifact.cna который надо импортировать в кобальт для генерации внутренних нативных нагрузок и staged нагрузок для запуска.\n\nНа текущий момент ситуация по детектам следующая :\nhttps://dyncheck.com/scan/id/eeab696158db737d90da83a0ebf7bc53 - длл x64\nhttps://dyncheck.com/scan/id/f656a34930eb682d6cab252798234f7c - service-exe-x64\nhttps://dyncheck.com/scan/id/32c29f3ba498be4915bb72d4bae824ce - staged payload x64\n\nВсе эти нагрузки используются не только для ручного запуска файлов но и для jump функционала. \nНаслаждайтесь, давайте фидбеки, ждите апдейтов и патчноутов.\nВсем спасибо.\n\nАртифакт Кит используется в слудующих случаях :\n\t* Attacks -> Packages -> Windows Executable\n\t* Attacks -> Packages -> Windows Executable (S)\n\t* Attacks -> Web Drive-by -> Scripted Web Delivery (bitsadmin and exe)\n\t* Beacon's 'elevate svc-exe' command\n\t* Beacon's 'jump psexec' and 'jump psexec64' commands \n```",
+      "ts": "2021-01-19T13:15:12.583Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-01-22T21:13:25.965Z",
+      "editedAt": "2021-01-22T21:13:25.942Z",
+      "editedBy": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "urls": [
+        {
+          "url": "https://www.linuxuprising.com/2020/09/how-to-install-oracle-java-15-on-ubuntu.html"
+        },
+        {
+          "url": "https://dyncheck.com/scan/id/eeab696158db737d90da83a0ebf7bc53"
+        },
+        {
+          "url": "https://dyncheck.com/scan/id/f656a34930eb682d6cab252798234f7c"
+        },
+        {
+          "url": "https://dyncheck.com/scan/id/32c29f3ba498be4915bb72d4bae824ce"
+        }
+      ]
+    }
+  ],
+  "success": true
+}

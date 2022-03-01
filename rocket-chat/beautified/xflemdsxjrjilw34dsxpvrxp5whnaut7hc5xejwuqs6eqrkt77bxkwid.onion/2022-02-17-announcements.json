@@ -1,0 +1,82 @@
+{
+  "messages": [
+    {
+      "_id": "xBySjPwX3jvzqrSKn",
+      "t": "uj",
+      "rid": "YuB5KS4zvKiHiYgRw",
+      "ts": "2022-02-17T19:56:51.445Z",
+      "msg": "dorlan",
+      "u": {
+        "_id": "hdNfjn7WWSxEY8G9D",
+        "username": "dorlan"
+      },
+      "groupable": false,
+      "_updatedAt": "2022-02-17T19:56:51.471Z"
+    },
+    {
+      "_id": "yJ68E9qXMSvbw7Rgp",
+      "t": "uj",
+      "rid": "YuB5KS4zvKiHiYgRw",
+      "ts": "2022-02-17T16:36:28.786Z",
+      "msg": "ruby",
+      "u": {
+        "_id": "oLL9G2PDCHeZz3nco",
+        "username": "ruby"
+      },
+      "groupable": false,
+      "_updatedAt": "2022-02-17T16:36:28.802Z"
+    },
+    {
+      "_id": "MKkgfoGPJAgjRhBM2",
+      "t": "uj",
+      "rid": "YuB5KS4zvKiHiYgRw",
+      "ts": "2022-02-17T16:28:12.701Z",
+      "msg": "kventin",
+      "u": {
+        "_id": "nkqdWxozMPSmDwQNH",
+        "username": "kventin"
+      },
+      "groupable": false,
+      "_updatedAt": "2022-02-17T16:28:12.715Z"
+    },
+    {
+      "_id": "5L6cKvzFcZiss83iH",
+      "rid": "YuB5KS4zvKiHiYgRw",
+      "msg": "@all [from Garfield] -> всем привет. народ, кто пользуется проксмокс для тестов, всё норм там отрабывает у вас?",
+      "ts": "2022-02-17T16:16:00.278Z",
+      "u": {
+        "_id": "5JgpXux9tPavnZ97Y",
+        "username": "demetrius",
+        "name": "demetrius"
+      },
+      "urls": [],
+      "mentions": [
+        {
+          "_id": "all",
+          "username": "all"
+        }
+      ],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "MENTION_USER",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "all"
+              }
+            },
+            {
+              "type": "PLAIN_TEXT",
+              "value": " [from Garfield] -> всем привет. народ, кто пользуется проксмокс для тестов, всё норм там отрабывает у вас?"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-02-17T16:16:00.297Z"
+    }
+  ],
+  "success": true
+}

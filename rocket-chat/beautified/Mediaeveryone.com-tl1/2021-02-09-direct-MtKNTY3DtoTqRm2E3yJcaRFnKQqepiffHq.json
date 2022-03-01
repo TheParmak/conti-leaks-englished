@@ -1,0 +1,39 @@
+{
+  "messages": [
+    {
+      "_id": "nEhWKv7i8TEPd7XXm",
+      "rid": "MtKNTY3DtoTqRm2E3yJcaRFnKQqepiffHq",
+      "msg": "тут он",
+      "ts": "2021-02-09T21:32:57.979Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2021-02-09T21:32:58.032Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "oJcLDbb982rbHMgHA",
+      "rid": "MtKNTY3DtoTqRm2E3yJcaRFnKQqepiffHq",
+      "msg": "где @user3 ?",
+      "ts": "2021-02-09T21:28:20.488Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-09T21:28:20.543Z",
+      "mentions": [
+        {
+          "_id": "5nrWYoszLFsnLuMcN",
+          "username": "user3",
+          "name": "stalin"
+        }
+      ],
+      "channels": []
+    }
+  ],
+  "success": true
+}

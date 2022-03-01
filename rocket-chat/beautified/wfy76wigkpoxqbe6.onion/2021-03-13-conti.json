@@ -1,0 +1,178 @@
+{
+  "messages": [
+    {
+      "_id": "rbKkM8W6RnX2F7Joa",
+      "t": "au",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "ts": "2021-03-20T09:58:04.479Z",
+      "msg": "mason",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-20T09:58:04.506Z"
+    },
+    {
+      "_id": "5J8Ak7yyG8AMiJRzb",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "msg": "я в курсе проблемы, над ней работают, когда будет устранение оповещу отдельно и попрошу почекать фикс",
+      "ts": "2021-03-19T12:46:22.276Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-19T12:46:22.297Z"
+    },
+    {
+      "_id": "KovSbnjJb567o52pe",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "msg": "в #all_manuals есть мануал как снимать массово тасклист. Ищите sqlserv и на этих серверах смотрите локал диски и ищите .mdf ки",
+      "ts": "2021-03-19T12:46:10.931Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "mentions": [],
+      "channels": [
+        {
+          "_id": "FDFpSSLXWxoWYezHk",
+          "name": "all_manuals"
+        }
+      ],
+      "_updatedAt": "2021-03-19T12:46:10.951Z"
+    },
+    {
+      "_id": "ib8JWERu3KekPkrc4",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "msg": "да да , , есть такое,. БД на особом контроле всегда",
+      "ts": "2021-03-19T12:45:57.076Z",
+      "u": {
+        "_id": "fFbCqTRzkTSxNjcJf",
+        "username": "fly"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-19T12:46:01.055Z",
+      "editedAt": "2021-03-19T12:46:01.052Z",
+      "editedBy": {
+        "_id": "fFbCqTRzkTSxNjcJf",
+        "username": "fly"
+      },
+      "urls": []
+    },
+    {
+      "_id": "SHirfzWaptT7Yd8rZ",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "msg": "Заметили следуюущю багу\nЛокаем, например сервера через маунт предварительно остановив БД и сервисы через батник handler.bat \nЛокаем так\nlocker.exe -nomutex -m net - size 20 -p \\\\host\\c$\nПолучаем на выходе такую ситуацию:\nлокер проходит по всему диску но в 90 % случаев(вроде так) пропускает диру с .mdf\nC:\\Program Files\\Microsoft SQL Server\\MSSQL12345\\Data\\database.mdf\n\nНа данный  момент настоятельно рекомендую всем предварительно снимать массово тасклист и смотреть где находятся .mdf и локать дирой выше всю папку\n\nЛокать вот так:\n```locker.exe -nomutex -m net -size 20 -p \"\\\\host\\c$\\Program Files\\Microsoft SQL Server\\MSSQL12345\"\n```\nПуть удаленный ОБЯЗАТЕЛЬНО в кавычки ибо без кавычек будет ошибкой синтаксиса. Если всё ок то локер почти сразу берет файлы в обработку и по дате изменения это видно сразу",
+      "ts": "2021-03-19T12:45:12.691Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-03-19T12:46:17.389Z",
+      "editedAt": "2021-03-19T12:46:17.386Z",
+      "editedBy": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "urls": []
+    },
+    {
+      "_id": "Jd2Rp8uBEw7fiQe7u",
+      "t": "au",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "ts": "2021-03-18T09:33:31.075Z",
+      "msg": "prince",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-18T09:33:31.094Z"
+    },
+    {
+      "_id": "q7rFM5LyYhPwWXnnr",
+      "t": "au",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "ts": "2021-03-17T00:18:48.427Z",
+      "msg": "zvh",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-17T00:18:48.438Z"
+    },
+    {
+      "_id": "uMSbN3YKLZGfa4qgm",
+      "t": "au",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "ts": "2021-03-17T00:18:48.382Z",
+      "msg": "hitech",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-17T00:18:48.400Z"
+    },
+    {
+      "_id": "JZ66teyiH64DC5Z4M",
+      "t": "au",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "ts": "2021-03-15T16:45:52.868Z",
+      "msg": "Tyr",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-15T16:45:52.883Z"
+    },
+    {
+      "_id": "gT3durGKbsasWvap3",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "msg": "@all \nновостной домен https://continews.pro улетел в бан\nзамена https://continews.icu",
+      "ts": "2021-03-15T13:24:23.121Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "urls": [
+        {
+          "url": "https://continews.pro"
+        },
+        {
+          "url": "https://continews.icu"
+        }
+      ],
+      "mentions": [
+        {
+          "_id": "all",
+          "username": "all"
+        }
+      ],
+      "channels": [],
+      "_updatedAt": "2021-03-15T13:24:23.149Z"
+    },
+    {
+      "_id": "W5DPrw3cPJwMArbWR",
+      "t": "au",
+      "rid": "PW4BhHQvTrsCSuht2",
+      "ts": "2021-03-15T10:27:49.389Z",
+      "msg": "Vano",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "groupable": false,
+      "_updatedAt": "2021-03-15T10:27:49.402Z"
+    }
+  ],
+  "success": true
+}

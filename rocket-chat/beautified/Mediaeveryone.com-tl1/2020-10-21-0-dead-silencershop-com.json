@@ -1,0 +1,176 @@
+{
+  "messages": [
+    {
+      "_id": "Atfs8pG3exdXcpSgM",
+      "rid": "jSbSheD57egaPgxZr",
+      "msg": "кстати\nочень интересная штука....",
+      "ts": "2020-10-21T19:43:43.314Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-21T19:43:43.361Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "bYCTW7namJpNKhx4A",
+      "rid": "jSbSheD57egaPgxZr",
+      "msg": "но чет не компилится\nроюсь к коде",
+      "ts": "2020-10-21T18:48:08.190Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-21T18:48:08.240Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Z3Am3JoKArnoRiFy8",
+      "rid": "jSbSheD57egaPgxZr",
+      "msg": "есть вот эта штука  в теории должна работать  - https://github.com/amitwaisel/Malproxy/tree/master/src",
+      "ts": "2020-10-21T18:47:53.506Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-21T18:47:53.536Z",
+      "urls": [
+        {
+          "url": "https://github.com/amitwaisel/Malproxy/tree/master/src"
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "MpkYfQ46YimR6bDbe",
+      "rid": "jSbSheD57egaPgxZr",
+      "msg": "в лабе патченый)\nпопробовал мимик через сокс и он ожидаемо не сработал\nвпн не развернуть - кобальтовский не деплоится т.к. вин 10 не поддерживается. \nЛюбой другой впн клиент они не используют.",
+      "ts": "2020-10-21T18:47:12.659Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-21T18:47:12.708Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "r2FGQHh9H4zjLL3xA",
+      "rid": "jSbSheD57egaPgxZr",
+      "msg": "так что попробовать да имеет смысл",
+      "ts": "2020-10-21T17:39:29.686Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-21T17:39:29.719Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "QFnmCLbuzPsAZjZHP",
+      "rid": "jSbSheD57egaPgxZr",
+      "msg": "кстати на лабе насколько я помню ДК не патченный",
+      "ts": "2020-10-21T17:39:26.048Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-21T17:39:26.094Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "LXQ8k6DdCHm4ryrwA",
+      "rid": "jSbSheD57egaPgxZr",
+      "msg": "но надо быть полностью увереным что сработает)",
+      "ts": "2020-10-21T15:41:42.886Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-21T15:42:25.191Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-21T15:42:25.189Z",
+      "editedBy": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9"
+      },
+      "urls": []
+    },
+    {
+      "_id": "4ntmaRRD57sdD7iAj",
+      "rid": "jSbSheD57egaPgxZr",
+      "msg": "в принципе можно  попробовать это на лабе",
+      "ts": "2020-10-21T15:41:25.511Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-21T15:42:03.629Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-21T15:42:03.624Z",
+      "editedBy": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9"
+      },
+      "urls": []
+    },
+    {
+      "_id": "NHZiSGTJRqacyiqYF",
+      "rid": "jSbSheD57egaPgxZr",
+      "msg": "неа, не пробовал\nесли сейчас попробую, то будет большой шанс что уже почистят сеть, т.к. если сейчас это не выйдет и второй раз сломается дк - админы что нибудь да заподозрят)",
+      "ts": "2020-10-21T15:41:07.693Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-21T15:41:07.734Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "m25geEmvTsbarkhMb",
+      "rid": "jSbSheD57egaPgxZr",
+      "msg": "```\nвот эта строка не работает походу потому что в CS старый мимик\n``` \nа через сокс или впн не пробоват ак завести?",
+      "ts": "2020-10-21T15:38:13.863Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-21T15:38:13.922Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "HPZro9yYmcF9BCnTQ",
+      "rid": "jSbSheD57egaPgxZr",
+      "msg": "по смбгост по сети - пусто",
+      "ts": "2020-10-21T15:08:52.495Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2020-10-21T15:08:52.526Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

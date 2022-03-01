@@ -1,0 +1,61 @@
+{
+  "messages": [
+    {
+      "_id": "6SFBPEKBRwvGWQvNA",
+      "rid": "mYvb3eKbqQhMmfxD7",
+      "msg": "8 не пингуются",
+      "ts": "2020-10-24T00:46:03.111Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-24T00:46:03.138Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "NX2GKj5YbtGPykzzw",
+      "rid": "mYvb3eKbqQhMmfxD7",
+      "msg": "из них 12 - ДК",
+      "ts": "2020-10-24T00:45:57.162Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-24T00:45:57.190Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "B8o8Kn56EBoRMpWgp",
+      "rid": "mYvb3eKbqQhMmfxD7",
+      "msg": "тачки, у которых светится как-либо эксч в ад_окмп\n```\nJdodc50.jdossn.local\nJdodc51.jdossn.local\nJDOdc65.jdossn.local\nJDODC12.jdossn.local\nJDODC64.jdossn.local\nJDODC61.jdossn.local\nJDODC63.jdossn.local\njdodc66.jdossn.local\nJDODC62.jdossn.local\nJDOEXVS01.jdossn.local\nJDOEXVS03.jdossn.local\nJDOEXHYBRID02.jdossn.local\nJDOEXCH03.jdossn.local\nJDOEXHYBRID01.jdossn.local\njdoexhybrid03.jdossn.local\nJDOEXVS02.jdossn.local\nJDOINFADMIN01.jdossn.local\nJDODC67.jdossn.local\nJDODC68.jdossn.local\nJDODC69.jdossn.local\n```",
+      "ts": "2020-10-24T00:45:44.480Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-24T00:45:44.576Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "oKBfLdZn3rdz4KpDK",
+      "rid": "mYvb3eKbqQhMmfxD7",
+      "msg": "```\nUser 7[W08872611194]nddeviowlbo/3856|2020Oct24 03:24:41> shell ping JDOEXVS01 -n 1\n[*] Tasked beacon to run: ping JDOEXVS01 -n 1\n[+] host called home, sent: 50 bytes\n[+] received output:\nPing request could not find host JDOEXVS01. Please check the name and try again.\n\nUser 7[W08872611194]nddeviowlbo/3856|2020Oct24 03:25:28> shell ping JDOEXVS03 -n 1\n[*] Tasked beacon to run: ping JDOEXVS03 -n 1\n[+] host called home, sent: 50 bytes\n[+] received output:\nPing request could not find host JDOEXVS03. Please check the name and try again.\n\nUser 7[W08872611194]nddeviowlbo/3856|2020Oct24 03:26:02> shell ping JDOEXHYBRID02 -n 1\n[*] Tasked beacon to run: ping JDOEXHYBRID02 -n 1\n[+] host called home, sent: 54 bytes\n[+] received output:\n\nPinging JDOEXHYBRID02.jdossn.local [172.31.190.92] with 32 bytes of data:\nRequest timed out.\n\nPing statistics for 172.31.190.92:\n    Packets: Sent = 1, Received = 0, Lost = 1 (100% loss),\n\nUser 7[W08872611194]nddeviowlbo/3856|2020Oct24 03:26:51> shell ping JDOEXCH03 -n 1\n[*] Tasked beacon to run: ping JDOEXCH03 -n 1\n[+] host called home, sent: 50 bytes\n[+] received output:\nPing request could not find host JDOEXCH03. Please check the name and try again.\n\nUser 7[W08872611194]nddeviowlbo/3856|2020Oct24 03:27:18> shell ping JDOEXHYBRID01 -n 1\n[*] Tasked beacon to run: ping JDOEXHYBRID01 -n 1\n[+] host called home, sent: 54 bytes\n[+] received output:\nPing request could not find host JDOEXHYBRID01. Please check the name and try again.\n\nUser 7[W08872611194]nddeviowlbo/3856|2020Oct24 03:27:49> shell ping JDOEXHYBRID03 -n 1\n[*] Tasked beacon to run: ping JDOEXHYBRID03 -n 1\n[+] host called home, sent: 54 bytes\n[+] received output:\n\nPinging JDOEXHYBRID03.jdossn.local [172.31.190.93] with 32 bytes of data:\nRequest timed out.\n\nPing statistics for 172.31.190.93:\n    Packets: Sent = 1, Received = 0, Lost = 1 (100% loss),\n\nUser 7[W08872611194]nddeviowlbo/3856|2020Oct24 03:28:24> shell ping JDOEXVS02 -n 1\n[*] Tasked beacon to run: ping JDOEXVS02 -n 1\n[+] host called home, sent: 50 bytes\n[+] received output:\nPing request could not find host JDOEXVS02. Please check the name and try again.\n\n```",
+      "ts": "2020-10-24T00:32:52.648Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-10-24T00:32:52.976Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

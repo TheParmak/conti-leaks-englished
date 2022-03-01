@@ -1,0 +1,944 @@
+{
+  "messages": [
+    {
+      "_id": "3TAs3zFqwPYFbT8Ln",
+      "rid": "GENERAL",
+      "msg": "@lawerence стукни manuel подскажет",
+      "ts": "2022-01-24T22:48:56.548Z",
+      "u": {
+        "_id": "AL9ksMKDQG3Tg4g9B",
+        "username": "Garfield",
+        "name": "Garfield"
+      },
+      "urls": [],
+      "mentions": [
+        {
+          "_id": "cmGpL4GP7iAcMv3at",
+          "username": "lawerence",
+          "name": "lawerence",
+          "type": "user"
+        }
+      ],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "MENTION_USER",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "lawerence"
+              }
+            },
+            {
+              "type": "PLAIN_TEXT",
+              "value": " стукни manuel подскажет"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T22:48:56.579Z"
+    },
+    {
+      "_id": "BseoRMhNGYyqPBC8t",
+      "rid": "GENERAL",
+      "msg": "кто криптует bk ?",
+      "ts": "2022-01-24T21:26:28.494Z",
+      "u": {
+        "_id": "cmGpL4GP7iAcMv3at",
+        "username": "lawerence",
+        "name": "lawerence"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "кто криптует bk ?"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T21:26:28.520Z"
+    },
+    {
+      "_id": "79tNLiJ2iKGcGNQQE",
+      "rid": "GENERAL",
+      "msg": "гит скоро поднимется",
+      "ts": "2022-01-24T17:44:45.540Z",
+      "u": {
+        "_id": "kDu4GZYhWGKYM9f8k",
+        "username": "adam",
+        "name": "adam"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "гит скоро поднимется"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T17:44:45.553Z"
+    },
+    {
+      "_id": "QLYbDTh3YmHRkBHmv",
+      "rid": "GENERAL",
+      "msg": "Новый стишок про \"маленького мальчика\":\nhttps://siasky.net/LAACqddmKm3hW_S0ESz9Htw3SAflYbNjMDtPVsmcrx8GmQ",
+      "ts": "2022-01-24T17:40:56.108Z",
+      "u": {
+        "_id": "sxDdBxZm6seZQAGjb",
+        "username": "ruben",
+        "name": "ruben"
+      },
+      "urls": [
+        {
+          "url": "https://siasky.net/LAACqddmKm3hW_S0ESz9Htw3SAflYbNjMDtPVsmcrx8GmQ"
+        }
+      ],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Новый стишок про \"маленького мальчика\":"
+            }
+          ]
+        },
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "LINK",
+              "value": {
+                "src": {
+                  "type": "PLAIN_TEXT",
+                  "value": "https://siasky.net/LAACqddmKm3hW_S0ESz9Htw3SAflYbNjMDtPVsmcrx8GmQ"
+                },
+                "label": {
+                  "type": "PLAIN_TEXT",
+                  "value": "https://siasky.net/LAACqddmKm3hW_S0ESz9Htw3SAflYbNjMDtPVsmcrx8GmQ"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T23:31:15.286Z",
+      "reactions": {
+        ":biohazard:": {
+          "usernames": [
+            "Garfield"
+          ]
+        }
+      }
+    },
+    {
+      "_id": "3qtkhF3WHXNFneGRC",
+      "rid": "GENERAL",
+      "msg": "@adam  Основной гит лежит. Подними пожалуйста",
+      "ts": "2022-01-24T16:06:25.302Z",
+      "u": {
+        "_id": "LcSmTknPEhLY3pJkz",
+        "username": "elroy",
+        "name": "elroy"
+      },
+      "urls": [],
+      "mentions": [
+        {
+          "_id": "kDu4GZYhWGKYM9f8k",
+          "username": "adam",
+          "name": "adam",
+          "type": "user"
+        }
+      ],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "MENTION_USER",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "adam"
+              }
+            },
+            {
+              "type": "PLAIN_TEXT",
+              "value": "  Основной гит лежит. Подними пожалуйста"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T16:06:25.325Z"
+    },
+    {
+      "_id": "EZJJ3qywSAe4A6drJ",
+      "rid": "GENERAL",
+      "msg": "```\nhttps://0xthreatintel.medium.com/internals-of-ta428-operation-lagtime-it-3fd342404360\n``` \nмб кому интересно будет",
+      "ts": "2022-01-24T12:57:18.120Z",
+      "u": {
+        "_id": "sDk8FqRNwsaKJWRmA",
+        "username": "kermit",
+        "name": "kermit"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "CODE",
+          "language": "none",
+          "value": [
+            {
+              "type": "CODE_LINE",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "https://0xthreatintel.medium.com/internals-of-ta428-operation-lagtime-it-3fd342404360"
+              }
+            }
+          ]
+        },
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": " "
+            }
+          ]
+        },
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "мб кому интересно будет"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T12:57:18.152Z"
+    },
+    {
+      "_id": "yqpyHmfygyScQhEAk",
+      "rid": "GENERAL",
+      "msg": "Или dlsym, но не суть",
+      "ts": "2022-01-24T12:22:42.092Z",
+      "u": {
+        "_id": "Bi7FbAwpkGrDRHv96",
+        "username": "grem",
+        "name": "grem"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Или dlsym, но не суть"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T12:22:42.108Z"
+    },
+    {
+      "_id": "7cJW5k73b7JwH4eiM",
+      "rid": "GENERAL",
+      "msg": "> помню на серваках кс какойто эксплоит был, посылаешь пакет и сервак падает\n\nДа там просто с линуксовыми серверами есть проблема связаная с реализацией dlopen\nТам есть команда для спауна монстров и она ищет символ в модуле сервера с названием сущности нужного монстра и вызывает как функцию.\nА dlopen ищет символы во всех загруженных модулях включая libc.\nМожно printf на серваке вызывать и срать в консоль.",
+      "ts": "2022-01-24T12:15:20.195Z",
+      "u": {
+        "_id": "Bi7FbAwpkGrDRHv96",
+        "username": "grem",
+        "name": "grem"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "QUOTE",
+          "value": [
+            {
+              "type": "PARAGRAPH",
+              "value": [
+                {
+                  "type": "PLAIN_TEXT",
+                  "value": "помню на серваках кс какойто эксплоит был, посылаешь пакет и сервак падает"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": ""
+            }
+          ]
+        },
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Да там просто с линуксовыми серверами есть проблема связаная с реализацией dlopen"
+            }
+          ]
+        },
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Там есть команда для спауна монстров и она ищет символ в модуле сервера с названием сущности нужного монстра и вызывает как функцию."
+            }
+          ]
+        },
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "А dlopen ищет символы во всех загруженных модулях включая libc."
+            }
+          ]
+        },
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Можно printf на серваке вызывать и срать в консоль."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T12:29:05.796Z",
+      "editedAt": "2022-01-24T12:29:05.783Z",
+      "editedBy": {
+        "_id": "Bi7FbAwpkGrDRHv96",
+        "username": "grem"
+      }
+    },
+    {
+      "_id": "EczoPFmrufWJkY7eM",
+      "rid": "GENERAL",
+      "msg": "немного)",
+      "ts": "2022-01-24T10:22:09.065Z",
+      "u": {
+        "_id": "MDRffkudPRJfLHtke",
+        "username": "homer",
+        "name": "homer"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "немного)"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T10:22:09.079Z"
+    },
+    {
+      "_id": "aLsf8gL4KptNeSHcT",
+      "rid": "GENERAL",
+      "msg": "олдскулы не свело?",
+      "ts": "2022-01-24T10:21:58.196Z",
+      "u": {
+        "_id": "LcSmTknPEhLY3pJkz",
+        "username": "elroy",
+        "name": "elroy"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "олдскулы не свело?"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T10:21:58.223Z"
+    },
+    {
+      "_id": "eYkuXzhB3Am8wL35o",
+      "rid": "GENERAL",
+      "msg": "аж прослезился",
+      "ts": "2022-01-24T10:20:31.848Z",
+      "u": {
+        "_id": "MDRffkudPRJfLHtke",
+        "username": "homer",
+        "name": "homer"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "аж прослезился"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T10:20:31.864Z"
+    },
+    {
+      "_id": "hMgqWMmpWLJaBNpXs",
+      "rid": "GENERAL",
+      "msg": "ууу, плагины",
+      "ts": "2022-01-24T10:20:23.995Z",
+      "u": {
+        "_id": "MDRffkudPRJfLHtke",
+        "username": "homer",
+        "name": "homer"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "ууу, плагины"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T10:20:24.013Z"
+    },
+    {
+      "_id": "g5aaG2mKFWiDDvSQi",
+      "rid": "GENERAL",
+      "msg": "Я в свое врея из amxx вычищал эту гадость, чтобы так не делали))",
+      "ts": "2022-01-24T10:20:10.670Z",
+      "u": {
+        "_id": "LcSmTknPEhLY3pJkz",
+        "username": "elroy",
+        "name": "elroy"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Я в свое врея из amxx вычищал эту гадость, чтобы так не делали))"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T10:20:10.696Z"
+    },
+    {
+      "_id": "3KvcdoWzXQaDyoLv3",
+      "rid": "GENERAL",
+      "msg": "и снова играешь на даст2",
+      "ts": "2022-01-24T10:19:26.917Z",
+      "u": {
+        "_id": "MDRffkudPRJfLHtke",
+        "username": "homer",
+        "name": "homer"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "и снова играешь на даст2"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T10:19:26.961Z"
+    },
+    {
+      "_id": "hwjcjj5oQemt5eFxH",
+      "rid": "GENERAL",
+      "msg": "Если видите в торе такие порты, то пробуйте ставить заново браузер или ставить в соседнюю папку Expert boundle и коннектится снова. Знаете, проблема решается мгновенно. Они походу как-то научились портить цепочки",
+      "ts": "2022-01-24T10:19:26.592Z",
+      "u": {
+        "_id": "LcSmTknPEhLY3pJkz",
+        "username": "elroy",
+        "name": "elroy"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Если видите в торе такие порты, то пробуйте ставить заново браузер или ставить в соседнюю папку Expert boundle и коннектится снова. Знаете, проблема решается мгновенно. Они походу как-то научились портить цепочки"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T10:19:26.612Z"
+    },
+    {
+      "_id": "M6ACLHCKwBkc3pK5Y",
+      "rid": "GENERAL",
+      "msg": "прикольно было, карту не ту выбрали, взял положил нахрен",
+      "ts": "2022-01-24T10:19:19.649Z",
+      "u": {
+        "_id": "MDRffkudPRJfLHtke",
+        "username": "homer",
+        "name": "homer"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "прикольно было, карту не ту выбрали, взял положил нахрен"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T10:19:19.680Z"
+    },
+    {
+      "_id": "XQiG9AhzmBPtgkBSp",
+      "rid": "GENERAL",
+      "msg": "помню на серваках кс какойто эксплоит был, посылаешь пакет и сервак падает",
+      "ts": "2022-01-24T10:19:04.342Z",
+      "u": {
+        "_id": "MDRffkudPRJfLHtke",
+        "username": "homer",
+        "name": "homer"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "помню на серваках кс какойто эксплоит был, посылаешь пакет и сервак падает"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T10:19:04.358Z"
+    },
+    {
+      "_id": "kB2w4DuHRr9PS4hT5",
+      "rid": "GENERAL",
+      "msg": "А вот по тору ктстати интересно. Обратил внимание, когда в адресах порты берутся типа 27015, 27020, то коннекта нет, всегда ошибка к ним. Это наверное школьник развлекаются, КС серваки ддосят)) Где-то в торе бага есть значит.",
+      "ts": "2022-01-24T10:18:16.003Z",
+      "u": {
+        "_id": "LcSmTknPEhLY3pJkz",
+        "username": "elroy",
+        "name": "elroy"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "А вот по тору ктстати интересно. Обратил внимание, когда в адресах порты берутся типа 27015, 27020, то коннекта нет, всегда ошибка к ним. Это наверное школьник развлекаются, КС серваки ддосят)) Где-то в торе бага есть значит."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T10:18:16.017Z"
+    },
+    {
+      "_id": "XCGR8WGmzWjzPfLiJ",
+      "rid": "GENERAL",
+      "msg": "всем привет",
+      "ts": "2022-01-24T07:05:23.759Z",
+      "u": {
+        "_id": "NKrXj9edAPWNrYv5r",
+        "username": "thomas",
+        "name": "thomas"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "всем привет"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T07:05:23.772Z"
+    },
+    {
+      "_id": "AmR8mq8MT2wTEtpyd",
+      "rid": "GENERAL",
+      "msg": "@adam",
+      "ts": "2022-01-24T06:56:14.410Z",
+      "u": {
+        "_id": "RwnLKWjS8oFypD8zX",
+        "username": "frances",
+        "name": "frances"
+      },
+      "urls": [],
+      "mentions": [
+        {
+          "_id": "kDu4GZYhWGKYM9f8k",
+          "username": "adam",
+          "name": "adam",
+          "type": "user"
+        }
+      ],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "MENTION_USER",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "adam"
+              }
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T06:56:14.421Z"
+    },
+    {
+      "_id": "FTzoBcaNYzhCEkd3v",
+      "rid": "GENERAL",
+      "msg": "адам поправит как проснется",
+      "ts": "2022-01-24T06:56:09.401Z",
+      "u": {
+        "_id": "RwnLKWjS8oFypD8zX",
+        "username": "frances",
+        "name": "frances"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "адам поправит как проснется"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T06:56:09.423Z"
+    },
+    {
+      "_id": "kvLjpXZ6RPDS4eudA",
+      "rid": "GENERAL",
+      "msg": "мда, есть такое\nПодробности: 0xF0 – запрошенный дескриптор onion-ресурса не найден в хэше. Сервис недоступен для клиента.",
+      "ts": "2022-01-24T06:49:59.269Z",
+      "u": {
+        "_id": "R2ecGKjyBntC6Rv8K",
+        "username": "weldon",
+        "name": "Mr.Covid"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "мда, есть такое"
+            }
+          ]
+        },
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Подробности: 0xF0 – запрошенный дескриптор onion-ресурса не найден в хэше. Сервис недоступен для клиента."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T06:49:59.285Z"
+    },
+    {
+      "_id": "we6AYJha3AxX9Wabe",
+      "rid": "GENERAL",
+      "msg": "Can't complete SOCKS5 connection to",
+      "ts": "2022-01-24T06:48:06.713Z",
+      "u": {
+        "_id": "F9cPHZCintWvwRMTQ",
+        "username": "allen",
+        "name": "allen"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Can't complete SOCKS5 connection to"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T06:48:06.727Z"
+    },
+    {
+      "_id": "TRjT8rcCFMHJ2DZKG",
+      "rid": "GENERAL",
+      "msg": "А гит не работает;",
+      "ts": "2022-01-24T06:47:45.230Z",
+      "u": {
+        "_id": "F9cPHZCintWvwRMTQ",
+        "username": "allen",
+        "name": "allen"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "А гит не работает;"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T06:47:45.241Z"
+    },
+    {
+      "_id": "C9PjEPgs9ikCZZzFY",
+      "rid": "GENERAL",
+      "msg": "Привет всем.",
+      "ts": "2022-01-24T06:47:28.813Z",
+      "u": {
+        "_id": "F9cPHZCintWvwRMTQ",
+        "username": "allen",
+        "name": "allen"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Привет всем."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T06:47:28.826Z"
+    },
+    {
+      "_id": "tMJ27AwhYKPjaBnRr",
+      "rid": "GENERAL",
+      "msg": "@frances :thumbsup:",
+      "ts": "2022-01-24T06:47:08.347Z",
+      "u": {
+        "_id": "F9cPHZCintWvwRMTQ",
+        "username": "allen",
+        "name": "allen"
+      },
+      "urls": [],
+      "mentions": [
+        {
+          "_id": "RwnLKWjS8oFypD8zX",
+          "username": "frances",
+          "name": "frances",
+          "type": "user"
+        }
+      ],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "MENTION_USER",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "frances"
+              }
+            },
+            {
+              "type": "PLAIN_TEXT",
+              "value": " "
+            },
+            {
+              "type": "EMOJI",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "thumbsup"
+              }
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T06:47:08.361Z"
+    },
+    {
+      "_id": "upvWXQ7cFbjYb42fn",
+      "rid": "GENERAL",
+      "msg": "Привет.",
+      "ts": "2022-01-24T06:11:31.687Z",
+      "u": {
+        "_id": "JPQEkct5QpF9fHJJf",
+        "username": "chad",
+        "name": "chad"
+      },
+      "urls": [],
+      "mentions": [],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "PLAIN_TEXT",
+              "value": "Привет."
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T06:11:31.705Z"
+    },
+    {
+      "_id": "frXDCf55XZaBiDDQm",
+      "rid": "GENERAL",
+      "msg": "@all Всем привет! Друзья! Я заметил в последнее время грустную тенденцию у некоторых наших коллег - появляться только к ЗП. Так вот. Следущая ваша ЗП зависит от моего хорошего настроения и вашего онлайна. Если я кому то пишу и в течении 3х часов не получаю ответа в рабочее время - я ставлю себе заметочку. 2 заметочки и мы прощаемся. Разьебаям тут места нет, не хотите работать и двигаться с командой в одном направлении - ВСЕГО ХОРОШЕГО. Кому что то если не нравится и он с чем то не согласен - пишите в личку. Всем хорошей трудовой недели!",
+      "ts": "2022-01-24T05:33:21.729Z",
+      "u": {
+        "_id": "RwnLKWjS8oFypD8zX",
+        "username": "frances",
+        "name": "frances"
+      },
+      "urls": [],
+      "mentions": [
+        {
+          "_id": "all",
+          "username": "all"
+        }
+      ],
+      "channels": [],
+      "md": [
+        {
+          "type": "PARAGRAPH",
+          "value": [
+            {
+              "type": "MENTION_USER",
+              "value": {
+                "type": "PLAIN_TEXT",
+                "value": "all"
+              }
+            },
+            {
+              "type": "PLAIN_TEXT",
+              "value": " Всем привет! Друзья! Я заметил в последнее время грустную тенденцию у некоторых наших коллег - появляться только к ЗП. Так вот. Следущая ваша ЗП зависит от моего хорошего настроения и вашего онлайна. Если я кому то пишу и в течении 3х часов не получаю ответа в рабочее время - я ставлю себе заметочку. 2 заметочки и мы прощаемся. Разьебаям тут места нет, не хотите работать и двигаться с командой в одном направлении - ВСЕГО ХОРОШЕГО. Кому что то если не нравится и он с чем то не согласен - пишите в личку. Всем хорошей трудовой недели!"
+            }
+          ]
+        }
+      ],
+      "_updatedAt": "2022-01-24T11:45:11.976Z",
+      "reactions": {
+        ":vulcan:": {
+          "usernames": [
+            "patrick",
+            "homer",
+            "Garfield",
+            "basil"
+          ]
+        },
+        ":ok_hand:": {
+          "usernames": [
+            "weldon",
+            "chad",
+            "jaime",
+            "esteban",
+            "wild",
+            "demetrius",
+            "mitzi",
+            "angelo",
+            "elroy",
+            "Garfield",
+            "basil"
+          ]
+        }
+      }
+    }
+  ],
+  "success": true
+}

@@ -1,0 +1,50 @@
+{
+  "messages": [
+    {
+      "_id": "E35q6MXsCjHTvDHej",
+      "rid": "GENERAL",
+      "msg": "Привет, кто по крипто холдерам имел опыт? маякнитесь в личку пожалуйста, партнер ищет \"коллег\"",
+      "ts": "2021-08-30T22:57:37.992Z",
+      "u": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-08-30T22:58:06.224Z",
+      "editedAt": "2021-08-30T22:58:06.221Z",
+      "editedBy": {
+        "_id": "9DLt48iA7ePC6pzqw",
+        "username": "rozetka"
+      },
+      "urls": []
+    },
+    {
+      "_id": "E8CgaFz5nHKxKhze5",
+      "rid": "GENERAL",
+      "msg": "```\nhttps://github.com/djhohnstein/SharpChromium\n```",
+      "ts": "2021-08-30T18:13:34.492Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-08-30T18:13:34.528Z"
+    },
+    {
+      "_id": "tuLmtjX4znoqnWxx6",
+      "rid": "GENERAL",
+      "msg": "```\nUsage:\n    .\\SharpChromium.exe arg0 [arg1 arg2 ...]\n\nArguments:\n    all       - Retrieve all Chromium Cookies, History and Logins.\n    full      - The same as 'all'\n    logins    - Retrieve all saved credentials that have non-empty passwords.\n    history   - Retrieve user's history with a count of each time the URL was\n                visited, along with cookies matching those items.\n    cookies [domain1.com domain2.com] - Retrieve the user's cookies in JSON format.\n                                        If domains are passed, then return only\n                                        cookies matching those domains. Otherwise,\n                                        all cookies are saved into a temp file of\n                                        the format \"\"%TEMP%\\$browser-cookies.json\"\"\n```",
+      "ts": "2021-08-30T18:13:16.735Z",
+      "u": {
+        "_id": "7JTqsEQgD5iRCZkZz",
+        "username": "alter"
+      },
+      "mentions": [],
+      "channels": [],
+      "_updatedAt": "2021-08-30T18:13:16.784Z"
+    }
+  ],
+  "success": true
+}

