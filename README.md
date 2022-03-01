@@ -32,6 +32,7 @@ prox.sh but recursive.
 
 Big thanks to @Nathannaelc for providing deepl translated pdf documents and json files.
 
+Also big thanks to @offsecginger for providing json conversions of google translated pdf documents.
+
 Discord server if you want to help or follow changes: https://discord.gg/YwzTFVMy
 
-Also big thanks to @offsecginger for providing json conversions of google translated pdf documents.
