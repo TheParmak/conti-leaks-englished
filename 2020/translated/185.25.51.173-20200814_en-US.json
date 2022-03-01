@@ -1,0 +1,3768 @@
+{
+  { "ts": "2020-08-14T01:03:49.042002",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "still awake?"
+}
+{
+  { "ts": "2020-08-14T01:04:08.309200",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "almost, why?"
+}
+{
+  { "ts": "2020-08-14T01:05:32.803925",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "I don't understand how to make the \"laravel-echo-server start\" command work? It's not supposed to be on the path?"
+}
+{
+  { "ts": "2020-08-14T01:06:33.913221",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "installed nodejs and npm, said \"npm install laravel-echo-server\" but nothing starts"
+}
+{
+  { "ts": "2020-08-14T01:07:59.056848",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "do just npm install for now - you'll get a bunch of stuff up there"
+}
+{
+  { "ts": "2020-08-14T01:08:46.592774",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "you still need to do composer install, composer dump-autoload"
+}
+{
+  { "ts": "2020-08-14T01:09:07.002490",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "Then you can laravel-echo-server start doing"
+}
+{
+  { "ts": "2020-08-14T01:10:31.615911",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "is it necessary to do? I copied the entire htdocs dir with all the modules as is"
+}
+{
+  { "ts": "2020-08-14T01:13:03.483115",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  "body": "Well then just in the directory run laravel-echo-server start"
+}
+{
+  { "ts": "2020-08-14T01:13:32.824430",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "is radish standing up to you?"
+}
+{
+  { "ts": "2020-08-14T01:19:16.713941",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  "body": "aha put redis-server. I also understand you need php-redis and node-node-redis?"
+}
+{
+  { "ts": "2020-08-14T01:19:39.677026",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "or is it just laravel-echo-server needed?"
+}
+{
+  { "ts": "2020-08-14T01:22:37.015518",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "php composer.phar install"
+}
+{
+  { "ts": "2020-08-14T01:22:57.809219",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "\"./composer.lock\" does not contain valid JSON"
+}
+{
+  { "ts": "2020-08-14T01:23:23.206880",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "and composer.json yadom lies"
+}
+{
+  { "ts": "2020-08-14T01:23:59.673558",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "*adjacent"
+}
+{
+  { "ts": "2020-08-14T01:24:18.893843",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": ":)"
+}
+{
+  }, "ts": "2020-08-14T01:24:21.851486",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  "body": "[20:13:03] <AllaWitte> Well then just in the directory run laravel-echo-server start"
+}
+{
+  { "ts": "2020-08-14T01:24:32.641640",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  }, "body": "dk, it's not running."
+}
+{
+  }, "ts": "2020-08-14T01:25:21.225308",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "bash: laravel-echo-server: command not found"
+}
+{
+  { "ts": "2020-08-14T01:25:49.531043",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  "body": "Do you know what JSON is supposed to look like? Look in there and see. I don't know what you did there exactly. Maybe something got messed up in there."
+}
+{
+  { "ts": "2020-08-14T01:27:31.841641",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "[Seld\\\JsonLint\\\ParsingException] \n \"./composer.lock\" does not contain valid JSON \n Parse error on line 203:                                          \n ... \"clue/buzz-react\",<<<<<<< HEAD \n ---------------------^ \n Expected: 'STRING' - It appears you have an extra trailing comma"
+}
+{
+  { "ts": "2020-08-14T01:28:11.118482",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "well, this needs to go away."
+}
+{
+  { "ts": "2020-08-14T01:29:20.392760",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "And npm install -g laravel-echo-server - it needs to be globally installed"
+}
+{
+  { "ts": "2020-08-14T01:29:51.981098",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "looks like normal JSON there, one comma"
+}
+{
+  { "ts": "2020-08-14T01:30:10.122639",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "and so globally"
+}
+{
+  { "ts": "2020-08-14T01:30:16.901083",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "and I tried locally"
+}
+{
+  { "ts": "2020-08-14T01:33:35.045468",
+  { "from": "poll@q3mcco35auwcstmt.onion",
+  { "to": "kerasid@q3mcco35auwcstmt.onion",
+  { "body": "hi man"
+}
+{
+  { "ts": "2020-08-14T01:33:35.048078",
+  { "from": "dick@q3mcco35auwcstmt.onion",
+  { "to": "kerasid@q3mcco35auwcstmt.onion",
+  { "body": "fuck it."
+}
+{
+  { "ts": "2020-08-14T01:33:35.048965",
+  { "from": "dick@q3mcco35auwcstmt.onion",
+  { "to": "kerasid@q3mcco35auwcstmt.onion",
+  { "body": "as so"
+}
+{
+  { "ts": "2020-08-14T01:33:35.049984",
+  { "from": "dick@q3mcco35auwcstmt.onion",
+  { "to": "kerasid@q3mcco35auwcstmt.onion",
+  { "body": ")"
+}
+{
+  }, "ts": "2020-08-14T01:33:35.050678",
+  { "from": "dick@q3mcco35auwcstmt.onion",
+  { "to": "kerasid@q3mcco35auwcstmt.onion",
+  { "body": "figured out how"
+}
+{
+  { "ts": "2020-08-14T01:33:35.051391",
+  { "from": "dick@q3mcco35auwcstmt.onion",
+  { "to": "kerasid@q3mcco35auwcstmt.onion",
+  { "body": "fuck"
+}
+{
+  { "ts": "2020-08-14T01:33:35.052098",
+  { "from": "dick@q3mcco35auwcstmt.onion",
+  { "to": "kerasid@q3mcco35auwcstmt.onion",
+  { "body": "full"
+}
+{
+  { "ts": "2020-08-14T01:37:34.463804",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "This is not normal JSON: . \"clue/buzz-react\",<<<<<<< HEAD all those <<<<<<< HEADs should be removed, \"clue/buzz-react\", not needed."
+}
+{
+  { "ts": "2020-08-14T01:46:55.569041",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "http://46.249.32.16/login is already running"
+}
+{
+  { "ts": "2020-08-14T01:47:18.904701",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "only errors about CORS and port 447 dpzkcz from somewhere"
+}
+{
+  }, "ts": "2020-08-14T01:47:22.875456",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "taken"
+}
+{
+  { "ts": "2020-08-14T01:48:03.561989",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "there's no <<<<<<< HEAD"
+}
+{
+  }, "ts": "2020-08-14T01:55:46.613531",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "kagas@q3mcco35auwcstmt.onion",
+  { "body": "there floor hosting is coming to an end"
+}
+{
+  { "ts": "2020-08-14T01:55:54.870499",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "kagas@q3mcco35auwcstmt.onion",
+  { "body": "until August 31 paid"
+}
+{
+  { "ts": "2020-08-14T01:56:10.309405",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "here I don't know anymore"
+}
+{
+  { "ts": "2020-08-14T02:18:05.080371",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  "body": "https://46.249.32.16:447/chat/b3e3cea9cfb8e31bf7882ea054236ac1"
+}
+{
+  { "ts": "2020-08-14T02:18:19.664939",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "seems to be, no errors"
+}
+{
+  { "ts": "2020-08-14T02:18:56.511220",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "wrote code 101: Switching protocols and ffs"
+}
+{
+  { "ts": "2020-08-14T02:19:03.942557",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "are you asleep yet?"
+}
+{
+  { "ts": "2020-08-14T02:31:06.351763",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  "body": "https://92.38.184.220:12000/admin"
+}
+{
+  { "ts": "2020-08-14T02:31:12.429654",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "admin"
+}
+{
+  { "ts": "2020-08-14T02:31:21.226475",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "^n2u3aSCTZL&kPMzxJ_9"
+}
+{
+  { "ts": "2020-08-14T02:31:29.474783",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "this is the admin login"
+}
+{
+  { "ts": "2020-08-14T02:31:43.443359",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "next, we're going to get smart on the spot."
+}
+{
+  { "ts": "2020-08-14T02:31:53.388011",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  "body": "сделал onion-имя: http://3hikhkjb4y4tq5r7.onion/chat/b3e3cea9cfb8e31bf7882ea054236ac1/chat/b3e3cea9cfb8e31bf7882ea054236ac1"
+}
+{
+  { "ts": "2020-08-14T02:32:22.075642",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  "body": "you can't test directly from the links, because as soon as we open a port on the server, the ISP immediately fixes it."
+}
+{
+  { "ts": "2020-08-14T02:32:32.096673",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "and the bitches get to check the port and there's a bank."
+}
+{
+  { "ts": "2020-08-14T02:32:44.904912",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "we've had a couple of servers crash like that, so we're going to make a bot."
+}
+{
+  { "ts": "2020-08-14T02:32:50.988519",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "you're going to need a virtual machine with a vindu."
+}
+{
+  { "ts": "2020-08-14T02:33:00.450737",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "you will put a bot on it and open the desired bank there"
+}
+{
+  { "ts": "2020-08-14T02:33:13.646903",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "and I need to order a bot and generate a config for it"
+}
+{
+  }, "ts": "2020-08-14T02:35:09.606480",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "ah, also need a gasket"
+}
+{
+  { "ts": "2020-08-14T02:35:22.039534",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  "body": "and the country is fucked up, it's been a fucking war for days."
+}
+{
+  { "ts": "2020-08-14T02:35:24.445182",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "especially in minsk"
+}
+{
+  { "ts": "2020-08-14T02:35:52.489134",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  "body": "take the pad, it doesn't give a fuck about the server, it'll just work as a proxy"
+}
+{
+  { "ts": "2020-08-14T02:35:57.578418",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "to which the bot is directed."
+}
+{
+  { "ts": "2020-08-14T02:36:10.136249",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "the pads when used as intended were drying out every couple of days)"
+}
+{
+  { "ts": "2020-08-14T02:36:14.552257",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "so it would be expendable"
+}
+{
+  { "ts": "2020-08-14T02:43:21.746716",
+  { "from": "stern@q3mcco35auwcstmt.onion",
+  { "to": "bonen@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-08-14T02:43:21.748057",
+  { "from": "stern@q3mcco35auwcstmt.onion",
+  { "to": "bonen@q3mcco35auwcstmt.onion",
+  { "body": "on payroll to me"
+}
+{
+  { "ts": "2020-08-14T02:43:21.749513",
+  { "from": "stern@q3mcco35auwcstmt.onion",
+  { "to": "bonen@q3mcco35auwcstmt.onion",
+  { "body": "what do you have with faster >"
+}
+{
+  { "ts": "2020-08-14T02:43:21.750672",
+  { "from": "stern@q3mcco35auwcstmt.onion",
+  { "to": "bonen@q3mcco35auwcstmt.onion",
+  { "body": "?"
+}
+{
+  { "ts": "2020-08-14T03:12:31.271276",
+  { "from": "rozetka@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "1. mondigmbh.de\n2. 1 pdc, 1 dc, 26 comps\n3. stamvermigo1981@protonmail.com\nmemdehate1988@protonmail.com\n4. rozetka / twin / shved"
+}
+{
+  { "ts": "2020-08-14T03:12:44.031675",
+  { "from": "rozetka@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "``\n1. mondigmbh.de\n2. FIXED: 35-40 servers\n3. stamvermigo1981@protonmail.com\nmemdehate1988@protonmail.com\n4. rozetka / twin / shved"
+}
+{
+  { "ts": "2020-08-14T03:19:31.883874",
+  { "from": "rozetka@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "``wfd-gmbh.de\nmondigmbh.de\ninpaflex.de\nbbm-holding.de\nbrillant-holding.de\nmondi-worx.de\nmondi-professionals.de\nimmo-bsw.de\nbildungskonzepte-gmbh.de\nbaumann-cie.de\nvinzenz-humancare.de\nmrk-kitas.de\npagus-logistik.de\npflege-werk.de\nlittmann-gmbh.de\nmondi-polska.pl\nenteco-dienstleistung.de\nfrankenmedpersonal.de\nsiwomed.de\nddsb.de\nab-arbeitsschutz.de\ntaxway.de\np-werk.de\nsw-personal.de\npflegewerkesslingen.onmicrosoft.com\nsps-gmbh.org"
+}
+{
+  { "ts": "2020-08-14T05:21:34.855590",
+  { "from": "defender@q3mcco35auwcstmt.onion",
+  { "to": "green@q3mcco35auwcstmt.onion",
+  { "body": "yes, that."
+}
+{
+  { "ts": "2020-08-14T05:21:34.857261",
+  { "from": "defender@q3mcco35auwcstmt.onion",
+  { "to": "green@q3mcco35auwcstmt.onion",
+  { "body": "where did you go?"
+}
+{
+  { "ts": "2020-08-14T05:21:34.858275",
+  { "from": "defender@q3mcco35auwcstmt.onion",
+  { "to": "green@q3mcco35auwcstmt.onion",
+  { "body": "come out and knock right away."
+}
+{
+  { "ts": "2020-08-14T05:35:07.218548",
+  { "from": "bekeeper@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-08-14T05:35:29.820184",
+  { "from": "bekeeper@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "learning normally with a tween"
+}
+{
+  { "ts": "2020-08-14T06:05:41.791426",
+  { "from": "stern@q3mcco35auwcstmt.onion",
+  { "to": "mavemat@q3mcco35auwcstmt.onion",
+  { "body": "this is a C++ spam coder reaching out to you".
+}
+{
+  { "ts": "2020-08-14T06:05:41.803896",
+  { "from": "stern@q3mcco35auwcstmt.onion",
+  { "to": "mavemat@q3mcco35auwcstmt.onion",
+  { "body": "from".
+}
+{
+  { "ts": "2020-08-14T06:06:22.363678",
+  { "from": "mavemat@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "took"
+}
+{
+  { "ts": "2020-08-14T06:47:33.768634",
+  { "from": "bekeeper@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  "I wanted to ask about wages and salaries, I have been working since the 20th and I got 30t as you told me. I figured if I got 100t, you should have given me 40t if I am not mistaken.
+}
+{
+  { "ts": "2020-08-14T06:59:14.855924",
+  { "from": "marsel@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "see you tomorrow))"
+}
+{
+  }, "ts": "2020-08-14T07:13:59.723115",
+  { "from": "salamandra@q3mcco35auwcstmt.onion",
+  { "to": "defender@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-08-14T07:44:44.274047",
+  { "from": "stern@q3mcco35auwcstmt.onion",
+  { "to": "viper@q3mcco35auwcstmt.onion",
+  { "body": "don't know who bonen is?"
+}
+{
+  { "ts": "2020-08-14T07:45:55.171786",
+  { "from": "viper@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "no definitely not my man"
+}
+{
+  { "ts": "2020-08-14T07:46:22.484996",
+  { "from": "viper@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "my yesterday is bourbon@q3mcco35auwcstmt.onion new C++ coder"
+}
+{
+  { "ts": "2020-08-14T07:51:41.235531",
+  { "from": "bourbon@q3mcco35auwcstmt.onion",
+  { "to": "van@q3mcco35auwcstmt.onion",
+  { "body": "Hi. I've read the document. Interesting information)"
+}
+{
+  { "ts": "2020-08-14T07:51:49.151872",
+  { "from": "bourbon@q3mcco35auwcstmt.onion",
+  { "to": "van@q3mcco35auwcstmt.onion",
+  { "body": "ready to move on."
+}
+{
+  { "ts": "2020-08-14T07:52:03.479336",
+  { "from": "van@q3mcco35auwcstmt.onion",
+  { "to": "bourbon@q3mcco35auwcstmt.onion",
+  { "body": "hello!"
+}
+{
+  { "ts": "2020-08-14T07:53:05.626392",
+  { "from": "van@q3mcco35auwcstmt.onion",
+  { "to": "bourbon@q3mcco35auwcstmt.onion",
+  { "body": "I'll send you the backdoor TK for an example, read it."
+}
+{
+  { "ts": "2020-08-14T07:53:19.964189",
+  { "from": "bourbon@q3mcco35auwcstmt.onion",
+  { "to": "van@q3mcco35auwcstmt.onion",
+  { "body": "interesting)"
+}
+{
+  { "ts": "2020-08-14T07:57:19.623124",
+  { "from": "mushroom@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "Hello.\nbd2:\nDownload: https://qaz.im/load/aSb4bk/tYn784 \nDelete: https://qaz.im/index.php?a=delete&q=2104771786\nPassword: >,oCvAkX);A2m.0N%"
+}
+{
+  { "ts": "2020-08-14T07:57:33.681905",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "mushroom@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-08-14T08:04:55.455924",
+  { "from": "van@q3mcco35auwcstmt.onion",
+  { "to": "bourbon@q3mcco35auwcstmt.onion",
+  { "body": "do you write on Windows?"
+}
+{
+  { "ts": "2020-08-14T08:09:39.355647",
+  { "from": "bourbon@q3mcco35auwcstmt.onion",
+  { "to": "van@q3mcco35auwcstmt.onion",
+  { "body": "yes".
+}
+{
+  { "ts": "2020-08-14T08:09:47.615843",
+  { "from": "van@q3mcco35auwcstmt.onion",
+  { "to": "bourbon@q3mcco35auwcstmt.onion",
+  { "body": "okay"
+}
+{
+  { "ts": "2020-08-14T08:10:40.543275",
+  { "from": "salamandra@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-08-14T08:11:14.088055",
+  { "from": "mushroom@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "dl2:\nDownload: https://qaz.im/load/nARGYs/n89fzh \nDelete: https://qaz.im/index.php?a=delete&q=29086498\nPassword: V[/9sx>cMtZyGVcI~"
+}
+{
+  { "ts": "2020-08-14T08:11:40.377105",
+  { "from": "salamandra@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "bonen is the proger that bouza wanted for line manager. he approved him. i sent you that new coder bonen"
+}
+{
+  { "ts": "2020-08-14T08:18:27.569678",
+  { "from": "hof@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "hello, threw in chiles for the floor"
+}
+{
+  { "ts": "2020-08-14T08:18:42.402792",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  { "body": "hi. ok )"
+}
+{
+  { "ts": "2020-08-14T08:21:40.082140",
+  { "from": "van@q3mcco35auwcstmt.onion",
+  { "to": "bourbon@q3mcco35auwcstmt.onion",
+  { "body": "Dfnc(fdsw32bh\nDownload: https://qaz.im/load/f7Ez24/DH34Q9\nThis is not for implementation, just see how and what for now.\nInstead, let me say some requirements.\n1. Visual Studio with at least 2017.2. We should write programs of minimum size. We won't use STL or even CRT. Instead of the usual CRT functions, we use their WinApi analogues. Allocate/release memory through VirtualAlloc. There are some ready made libraries (in sources) suitable for us. I'll let you know later.   \n6. Obfuscation of all strings. I'll give you the library. If I may say so, I will obfuscate the whole import. You can't see the import functions in the exe. I'll also give you the library. It's better not to use classes. Although you can. If there is no CRT, then there will be some problems with classes, for example, global instances of classes will not compile, because there is no one to call the constructor.nnThe manager is on vacation, and I do not know what tasks you will be assigned. So for now a general understanding of our life )))."
+}
+{
+  { "ts": "2020-08-14T08:22:45.222017",
+  { "from": "van@q3mcco35auwcstmt.onion",
+  { "to": "bourbon@q3mcco35auwcstmt.onion",
+  "body": "Or maybe you already know everything and I'm writing so many letters for nothing? )))"
+}
+{
+  { "ts": "2020-08-14T08:23:41.723760",
+  { "from": "bourbon@q3mcco35auwcstmt.onion",
+  { "to": "van@q3mcco35auwcstmt.onion",
+  { "body": ")))) no, I've never encountered anything this close before."
+}
+{
+  { "ts": "2020-08-14T08:24:17.052693",
+  { "from": "van@q3mcco35auwcstmt.onion",
+  { "to": "bourbon@q3mcco35auwcstmt.onion",
+  { "body": "well, then you'll find out gradually."
+}
+{
+  { "ts": "2020-08-14T08:24:32.702493",
+  { "from": "van@q3mcco35auwcstmt.onion",
+  { "to": "bourbon@q3mcco35auwcstmt.onion",
+  { "body": "how long have you been writing in C++?"
+}
+{
+  { "ts": "2020-08-14T08:25:33.245340",
+  { "from": "bourbon@q3mcco35auwcstmt.onion",
+  { "to": "van@q3mcco35auwcstmt.onion",
+  { "body": "at first glance it seems - how many requirements. Although, I guess, do one project and everything will be clear."
+}
+{
+  { "ts": "2020-08-14T08:25:48.999036",
+  { "from": "van@q3mcco35auwcstmt.onion",
+  { "to": "bourbon@q3mcco35auwcstmt.onion",
+  { "body": "yes of course."
+}
+{
+  { "ts": "2020-08-14T08:26:02.815528",
+  { "from": "bourbon@q3mcco35auwcstmt.onion",
+  { "to": "van@q3mcco35auwcstmt.onion",
+  { "body": "10 years"
+}
+{
+  { "ts": "2020-08-14T08:26:48.523114",
+  { "from": "bourbon@q3mcco35auwcstmt.onion",
+  { "to": "van@q3mcco35auwcstmt.onion",
+  { "body": "I mostly wrote c++ and stl. That was almost always enough for the backend."
+}
+{
+  { "ts": "2020-08-14T08:27:15.693387",
+  { "from": "van@q3mcco35auwcstmt.onion",
+  { "to": "bourbon@q3mcco35auwcstmt.onion",
+  { "body": "great! Let's use minimalistic c++, let's put all the modern gimmicks aside for now. )))"
+}
+{
+  { "ts": "2020-08-14T08:27:36.850806",
+  { "from": "bourbon@q3mcco35auwcstmt.onion",
+  { "to": "van@q3mcco35auwcstmt.onion",
+  { "body": "that's nice)"
+}
+{
+  { "ts": "2020-08-14T08:27:51.878089",
+  { "from": "van@q3mcco35auwcstmt.onion",
+  { "to": "bourbon@q3mcco35auwcstmt.onion",
+  { "body": "do you already have access to the git, redmine?"
+}
+{
+  { "ts": "2020-08-14T08:28:12.833312",
+  { "from": "bourbon@q3mcco35auwcstmt.onion",
+  { "to": "van@q3mcco35auwcstmt.onion",
+  { "body": "no".
+}
+{
+  { "ts": "2020-08-14T08:30:04.672940",
+  { "from": "van@q3mcco35auwcstmt.onion",
+  { "to": "bourbon@q3mcco35auwcstmt.onion",
+  "body": "Okay, we'll talk to the warden when he shows up. You and I have a boss - Buza. He is a great programmer and a smart man. It is pleasant to communicate with him."
+}
+{
+  { "ts": "2020-08-14T08:31:15.253335",
+  { "from": "bourbon@q3mcco35auwcstmt.onion",
+  { "to": "van@q3mcco35auwcstmt.onion",
+  { "body": "))"
+}
+{
+  }, "ts": "2020-08-14T08:31:37.105301",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "hello))"
+}
+{
+  }, "ts": "2020-08-14T08:31:58.725883",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "hello ))"
+}
+{
+  { "ts": "2020-08-14T08:33:26.038703",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  "body": "Please make 1 crypt chil97.dll and chil96.exe each with a free string for Paul."
+}
+{
+  { "ts": "2020-08-14T08:33:39.774552",
+  { "from": "van@q3mcco35auwcstmt.onion",
+  { "to": "bourbon@q3mcco35auwcstmt.onion",
+  { "body": "for now, read. I won't bother you any more today. I'll see what Buza says. We'll continue next week."
+}
+{
+  { "ts": "2020-08-14T08:33:39.976169",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T08:34:00.764481",
+  { "from": "van@q3mcco35auwcstmt.onion",
+  { "to": "bourbon@q3mcco35auwcstmt.onion",
+  "body": "What time zone are you in? MSC?"
+}
+{
+  { "ts": "2020-08-14T08:34:09.559772",
+  { "from": "bourbon@q3mcco35auwcstmt.onion",
+  { "to": "van@q3mcco35auwcstmt.onion",
+  { "body": "msg"
+}
+{
+  { "ts": "2020-08-14T08:34:45.902444",
+  { "from": "bourbon@q3mcco35auwcstmt.onion",
+  { "to": "van@q3mcco35auwcstmt.onion",
+  "body": "okay, I'll read it, study it, get into it. So far everything seems very interesting)"
+}
+{
+  { "ts": "2020-08-14T08:34:54.234749",
+  { "from": "van@q3mcco35auwcstmt.onion",
+  { "to": "bourbon@q3mcco35auwcstmt.onion",
+  { "body": "ok)"
+}
+{
+  { "ts": "2020-08-14T08:44:51.233139",
+  { "from": "van@q3mcco35auwcstmt.onion",
+  { "to": "buza@q3mcco35auwcstmt.onion",
+  { "body": "hello!}{n1} I had a workout with Bourbon today. So far all I've gotten out of it is a good thing. I should give him a concrete assignment next week. I don't know what. I finished writing the modboat loider. It's working. I'll try to get Dore to test it. I wanted to write you my opinion on this loafer. I'll do it today or over the weekend. I'll write it on the off line. Bill and I have been working on dns transport since Monday. He says we're going to test it out while we're at it. Swift and Cactus are great. Cactus has built a looper backdoor with another compiler. I gave it to him for work.
+}
+{
+  { "ts": "2020-08-14T08:51:43.578509",
+  { "from": "mors@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-08-14T08:51:48.522011",
+  { "from": "mors@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "crypto pls at once"
+}
+{
+  { "ts": "2020-08-14T08:51:54.071925",
+  { "from": "mors@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "didn't reach stub"
+}
+{
+  { "ts": "2020-08-14T08:51:58.756174",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-08-14T08:52:05.323495",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T08:52:47.799683",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "uploaded chil97.dll"
+}
+{
+  { "ts": "2020-08-14T08:53:26.456766",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "watching"
+}
+{
+  { "ts": "2020-08-14T09:13:29.520623",
+  { "from": "stern@q3mcco35auwcstmt.onion",
+  { "to": "tilar@q3mcco35auwcstmt.onion",
+  { "body": "cmtp?"
+}
+{
+  { "ts": "2020-08-14T09:13:53.602324",
+  { "from": "tilar@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "da"
+}
+{
+  { "ts": "2020-08-14T09:14:36.557788",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  "body": "Download: https://qaz.im/load/bde97H/zid5AN\nDelete: https://qaz.im/index.php?a=delete&q=1468358195\nPass: FDASADFQWEADFASDAFS"
+}
+{
+  { "ts": "2020-08-14T09:14:43.301432",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  { "body": "chekni"
+}
+{
+  { "ts": "2020-08-14T09:14:46.326047",
+  { "from": "marsel@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "hello))"
+}
+{
+  { "ts": "2020-08-14T09:14:59.146959",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "marsel@q3mcco35auwcstmt.onion",
+  { "body": "hello ))"
+}
+{
+  { "ts": "2020-08-14T09:15:19.748224",
+  { "from": "mors@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "aha"
+}
+{
+  { "ts": "2020-08-14T09:17:51.583615",
+  { "from": "tilar@q3mcco35auwcstmt.onion",
+  { "to": "ponetre@q3mcco35auwcstmt.onion",
+  { "body": "hey"
+}
+{
+  { "ts": "2020-08-14T09:17:51.793251",
+  { "from": "tilar@q3mcco35auwcstmt.onion",
+  { "to": "ponetre@q3mcco35auwcstmt.onion",
+  { "body": "yo"
+}
+{
+  { "ts": "2020-08-14T09:17:51.996457",
+  { "from": "tilar@q3mcco35auwcstmt.onion",
+  { "to": "ponetre@q3mcco35auwcstmt.onion",
+  { "body": "kak del?"
+}
+{
+  { "ts": "2020-08-14T09:29:00.983702",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  { "body": "CHIL97.dll from Deploy for Paul"
+}
+{
+  { "ts": "2020-08-14T09:29:10.951911",
+  { "from": "hof@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T09:29:44.149681",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "CHIL97.dll - ok"
+}
+{
+  { "ts": "2020-08-14T09:30:07.601555",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "good"
+}
+{
+  { "ts": "2020-08-14T09:35:59.594088",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "marsel@q3mcco35auwcstmt.onion",
+  }, "body": "Please make a crypt of the BK loader with a simple icon."
+}
+{
+  { "ts": "2020-08-14T09:36:00.147366",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "marsel@q3mcco35auwcstmt.onion",
+  { "body": "https://qaz.im/load/ZEDDyh/hTHD6D"
+}
+{
+  { "ts": "2020-08-14T09:36:01.320401",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "marsel@q3mcco35auwcstmt.onion",
+  { "body": "123"
+}
+{
+  { "ts": "2020-08-14T09:36:08.774787",
+  { "from": "marsel@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T09:36:26.497841",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  { "body": "make more ono62, ono63, yas46, po1"
+}
+{
+  { "ts": "2020-08-14T09:37:16.087986",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "talar@q3mcco35auwcstmt.onion",
+  { "body": "hello."
+}
+{
+  { "ts": "2020-08-14T09:37:29.119476",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "talar@q3mcco35auwcstmt.onion",
+  { "body": "admin https://scrytnuuszglaugg.onion/login doesn't work"
+}
+{
+  }, "ts": "2020-08-14T09:37:33.332085",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "talar@q3mcco35auwcstmt.onion",
+  { "body": "can you help?"
+}
+{
+  { "ts": "2020-08-14T09:43:56.308899",
+  { "from": "salamandra@q3mcco35auwcstmt.onion",
+  { "to": "defender@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-08-14T09:44:01.581226",
+  { "from": "salamandra@q3mcco35auwcstmt.onion",
+  { "to": "defender@q3mcco35auwcstmt.onion",
+  { "body": "get another coder"
+}
+{
+  { "ts": "2020-08-14T09:44:15.739366",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "kagas@q3mcco35auwcstmt.onion",
+  { "body": "there floor hosting is coming to an end"
+}
+{
+  { "ts": "2020-08-14T09:44:15.740668",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "kagas@q3mcco35auwcstmt.onion",
+  { "body": "until August 31 paid"
+}
+{
+  { "ts": "2020-08-14T09:44:43.913670",
+  { "from": "kagas@q3mcco35auwcstmt.onion",
+  { "to": "kerasid@q3mcco35auwcstmt.onion",
+  { "body": "is this which one?"
+}
+{
+  { "ts": "2020-08-14T09:44:45.509425",
+  { "from": "hof@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T09:44:47.352411",
+  { "from": "kagas@q3mcco35auwcstmt.onion",
+  { "to": "kerasid@q3mcco35auwcstmt.onion",
+  { "body": "send it to me"
+}
+{
+  { "ts": "2020-08-14T09:45:57.580916",
+  { "from": "salamandra@q3mcco35auwcstmt.onion",
+  { "to": "defender@q3mcco35auwcstmt.onion",
+  { "body": "for example Xoc"
+}
+{
+  { "ts": "2020-08-14T09:46:47.885417",
+  { "from": "kagas@q3mcco35auwcstmt.onion",
+  { "to": "kerasid@q3mcco35auwcstmt.onion",
+  { "body": "46.249.62.195 - this one?"
+}
+{
+  { "ts": "2020-08-14T09:48:09.254301",
+  { "from": "kagas@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  { "body": "hello, will you throw in the jim lib one?"
+}
+{
+  { "ts": "2020-08-14T09:48:30.249807",
+  { "from": "hof@q3mcco35auwcstmt.onion",
+  { "to": "kagas@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-08-14T09:48:32.632794",
+  { "from": "hof@q3mcco35auwcstmt.onion",
+  { "to": "kagas@q3mcco35auwcstmt.onion",
+  { "body": "coming soon."
+}
+{
+  { "ts": "2020-08-14T09:52:33.473603",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "baget@q3mcco35auwcstmt.onion",
+  { "body": "hello, bro!"
+}
+{
+  { "ts": "2020-08-14T09:53:03.393543",
+  { "from": "baget@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "hello!"
+}
+{
+  { "ts": "2020-08-14T09:53:21.037527",
+  { "from": "hof@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "poured"
+}
+{
+  { "ts": "2020-08-14T09:53:31.104007",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  { "body": "sps ))"
+}
+{
+  }, "ts": "2020-08-14T09:53:36.218999",
+  { "from": "baget@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "just finishing up your locker."
+}
+{
+  { "ts": "2020-08-14T09:55:30.230788",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "baget@q3mcco35auwcstmt.onion",
+  { "body": "excellent)"
+}
+{
+  { "ts": "2020-08-14T10:02:15.592043",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "marsel@q3mcco35auwcstmt.onion",
+  { "body": "please make crypto loader uk with pdf icon"
+}
+{
+  { "ts": "2020-08-14T10:02:16.079236",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "marsel@q3mcco35auwcstmt.onion",
+  { "body": "https://qaz.im/load/4DFy4b/se9yEZ"
+}
+{
+  { "ts": "2020-08-14T10:02:17.326380",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "marsel@q3mcco35auwcstmt.onion",
+  { "body": "123"
+}
+{
+  { "ts": "2020-08-14T10:02:22.303675",
+  { "from": "hof@q3mcco35auwcstmt.onion",
+  { "to": "kagas@q3mcco35auwcstmt.onion",
+  { "body": "poured"
+}
+{
+  { "ts": "2020-08-14T10:02:46.053417",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "make 1 yas46 crypt with pdf icon, please."
+}
+{
+  { "ts": "2020-08-14T10:02:51.259879",
+  { "from": "marsel@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T10:02:58.912508",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T10:04:47.818687",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "tell me, buri@q3mcco35auwcstmt.onion says you sent to me. What file does he need?"
+}
+{
+  { "ts": "2020-08-14T10:05:20.020385",
+  { "from": "hof@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "I don't know who he is at all."
+}
+{
+  { "ts": "2020-08-14T10:05:21.449135",
+  { "from": "hof@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  "body": "[12:40:13] <buri> Hi! Sprashivaet spammer naschet nashego file exe\n\pfud 0?\pfud file?"\n[12:47:42] <hof> hi\n[12:48:17] <hof> ask bentley"
+}
+{
+  { "ts": "2020-08-14T10:05:57.405727",
+  { "from": "hof@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "send to stern if he didn't tell you anything"
+}
+{
+  { "ts": "2020-08-14T10:06:14.198086",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T10:19:24.854425",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "uploaded by chil96, yas46"
+}
+{
+  { "ts": "2020-08-14T10:28:32.683719",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "ok watching"
+}
+{
+  }, "ts": "2020-08-14T10:29:45.202183",
+  { "from": "shell@q3mcco35auwcstmt.onion",
+  { "to": "noman@q3mcco35auwcstmt.onion",
+  { "body": "hi man \n\nzakin' plz na prozvon\n\nhttps://privnote.com/LKZcIcN8#YH0BKxQHl"
+}
+{
+  { "ts": "2020-08-14T11:06:41.398768",
+  { "from": "marsel@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "posted both lowers"
+}
+{
+  { "ts": "2020-08-14T11:06:49.515007",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "marsel@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T11:13:34.205301",
+  { "from": "marsel@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-08-14T11:13:38.341762",
+  { "from": "marsel@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  "body": "ewrddsfSAQWEdt564SQDFASDWFSDxADehSQ"
+}
+{
+  { "ts": "2020-08-14T11:13:45.796196",
+  { "from": "marsel@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  { "body": "troika jima"
+}
+{
+  { "ts": "2020-08-14T11:13:51.417847",
+  { "from": "hof@q3mcco35auwcstmt.onion",
+  { "to": "marsel@q3mcco35auwcstmt.onion",
+  { "body": "hello, accepted, sps"
+}
+{
+  { "ts": "2020-08-14T11:14:48.337007",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  "body": "https://92.38.184.220:12000/admin"
+}
+{
+  { "ts": "2020-08-14T11:14:48.338663",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "admin"
+}
+{
+  { "ts": "2020-08-14T11:14:48.340248",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "^n2u3aSCTZL&kPMzxJ_9"
+}
+{
+  { "ts": "2020-08-14T11:14:48.341215",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "this is the admin login"
+}
+{
+  { "ts": "2020-08-14T11:14:48.341962",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "next, we'll get to the bottom of it."
+}
+{
+  { "ts": "2020-08-14T11:14:48.342673",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "you can't test directly from the links, because as soon as we open a port on the server, the ISP immediately fixes it."
+}
+{
+  { "ts": "2020-08-14T11:14:48.343435",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "and the bitches get to check what's on the port and there's a bank."
+}
+{
+  { "ts": "2020-08-14T11:14:48.344177",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "we've had a couple of servers crash like that, so we're going to make a bot."
+}
+{
+  { "ts": "2020-08-14T11:14:48.344981",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "you're going to need a virtual machine with a Windows."
+}
+{
+  { "ts": "2020-08-14T11:14:48.345696",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "you will put a bot on it and open the desired bank there"
+}
+{
+  { "ts": "2020-08-14T11:14:48.346474",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "and I need to order a bot and generate a config for it"
+}
+{
+  }, "ts": "2020-08-14T11:14:48.347293",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "ah, also need a gasket"
+}
+{
+  { "ts": "2020-08-14T11:14:48.348390",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  "body": "and the country is fucked up, it's been a fucking war for days."
+}
+{
+  { "ts": "2020-08-14T11:14:48.349215",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "especially in minsk"
+}
+{
+  { "ts": "2020-08-14T11:14:48.350331",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  "body": "take the pad, it doesn't give a fuck about the server, it'll just work as a proxy"
+}
+{
+  { "ts": "2020-08-14T11:14:48.351564",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "to which the bot is directed."
+}
+{
+  { "ts": "2020-08-14T11:14:48.352287",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "the pads when used as intended were drying out every couple of days)"
+}
+{
+  { "ts": "2020-08-14T11:14:48.353085",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "dick@q3mcco35auwcstmt.onion",
+  { "body": "so it would be an expendable"
+}
+{
+  { "ts": "2020-08-14T11:15:42.470803",
+  { "from": "logan@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  "body": " -- 771253828028\n -- 771253977864\n -- 771254049351"
+}
+{
+  { "ts": "2020-08-14T11:15:45.416837",
+  { "from": "logan@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "your columns"
+}
+{
+  { "ts": "2020-08-14T11:17:48.957942",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "please make 1 crypt po2.dll"
+}
+{
+  { "ts": "2020-08-14T11:18:32.762337",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T11:19:41.859329",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  "body": "CHIL96.exe and YAS46.exe - ok"
+}
+{
+  { "ts": "2020-08-14T11:19:59.693791",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "okay"
+}
+{
+  { "ts": "2020-08-14T11:19:59.903382",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  { "body": "CHIL96.exe for Paul at Deploy."
+}
+{
+  { "ts": "2020-08-14T11:20:08.561200",
+  { "from": "hof@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T11:25:53.606255",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body":">Make 1 crypto po2.dll\nPosted"
+}
+{
+  { "ts": "2020-08-14T11:26:32.637691",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T11:28:19.206971",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  { "body": "make please ono63"
+}
+{
+  { "ts": "2020-08-14T11:28:38.702289",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  { "body": "did a stop do"
+}
+{
+  { "ts": "2020-08-14T11:28:53.727517",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "please make 1 crypt ono63"
+}
+{
+  { "ts": "2020-08-14T11:29:07.394293",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T11:34:00.921368",
+  { "from": "defender@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  "body": "hello, skip to work address 38bk2V37ZJvHfh9i4gzGC3S9uFeYhZwRHz\we need to prolong servers with carder"
+}
+{
+  { "ts": "2020-08-14T11:36:06.245547",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "defender@q3mcco35auwcstmt.onion",
+  { "body": "hello."
+}
+{
+  { "ts": "2020-08-14T11:36:12.843619",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "defender@q3mcco35auwcstmt.onion",
+  { "body": "please make po2 status."
+}
+{
+  }, "ts": "2020-08-14T11:37:53.200602",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "mavemat@q3mcco35auwcstmt.onion",
+  { "body": "hello. The cryptopanel is now swearing at another proxy."
+}
+{
+  { "ts": "2020-08-14T11:37:54.450059",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "mavemat@q3mcco35auwcstmt.onion",
+  "body": "New BK tests are disabled because BK proxy https://185.189.151.142 is down.\nPlease call system administrator."
+}
+{
+  { "ts": "2020-08-14T11:37:59.665096",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "mavemat@q3mcco35auwcstmt.onion",
+  { "body": "help, please."
+}
+{
+  { "ts": "2020-08-14T11:39:28.562059",
+  { "from": "mavemat@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "hello, described the defu7 Now we're going to do it."
+}
+{
+  { "ts": "2020-08-14T11:39:39.699093",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "mavemat@q3mcco35auwcstmt.onion",
+  { "body": "cps )"
+}
+{
+  }, "ts": "2020-08-14T11:45:58.240216",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "baget@q3mcco35auwcstmt.onion",
+  { "body": "will you drop the build?"
+}
+{
+  { "ts": "2020-08-14T11:46:45.763537",
+  { "from": "baget@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "yes, of course."
+}
+{
+  { "ts": "2020-08-14T11:47:03.152386",
+  { "from": "baget@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "I'll post it as soon as I'm done."
+}
+{
+  { "ts": "2020-08-14T11:49:41.687060",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "baget@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T11:52:57.680703",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "kagas@q3mcco35auwcstmt.onion",
+  { "body": "yes".
+}
+{
+  { "ts": "2020-08-14T11:53:05.178898",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "kagas@q3mcco35auwcstmt.onion",
+  { "body": "which is on ipserver.su/"
+}
+{
+  { "ts": "2020-08-14T11:53:16.488186",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "kagas@q3mcco35auwcstmt.onion",
+  { "body": "I was up all night looking at the hosting."
+}
+{
+  { "ts": "2020-08-14T11:53:23.891247",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "kagas@q3mcco35auwcstmt.onion",
+  { "body": "and suddenly found the floor of the server."
+}
+{
+  { "ts": "2020-08-14T11:53:30.960223",
+  { "from": "kagas@q3mcco35auwcstmt.onion",
+  { "to": "kerasid@q3mcco35auwcstmt.onion",
+  { "body": "got it, I know it's up to 31"
+}
+{
+  { "ts": "2020-08-14T11:54:21.617459",
+  { "from": "mushroom@q3mcco35auwcstmt.onion",
+  { "to": "frog@q3mcco35auwcstmt.onion",
+  { "body": "hello. Do a dyncheck test on your last bootloader (which Bentley tested) and send me the link."
+}
+{
+  { "ts": "2020-08-14T11:54:53.385350",
+  { "from": "kerasid@q3mcco35auwcstmt.onion",
+  { "to": "defender@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-08-14T11:55:14.493615",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "PO2.dll - ok"
+}
+{
+  }, "ts": "2020-08-14T12:04:41.615436",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "okay"
+}
+{
+  { "ts": "2020-08-14T12:09:41.139196",
+  { "from": "hof@q3mcco35auwcstmt.onion",
+  { "to": "kagas@q3mcco35auwcstmt.onion",
+  { "body": "replaced the triplet from marcel"
+}
+{
+  { "ts": "2020-08-14T12:09:50.550388",
+  { "from": "kagas@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T12:09:56.023203",
+  { "from": "kagas@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  { "body": "he lib just posted there"
+}
+{
+  }, "ts": "2020-08-14T12:10:00.004911",
+  { "from": "kagas@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  { "body": "other"
+}
+{
+  { "ts": "2020-08-14T12:10:02.841452",
+  { "from": "kagas@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  { "body": "strayed"
+}
+{
+  { "ts": "2020-08-14T12:10:07.886142",
+  { "from": "hof@q3mcco35auwcstmt.onion",
+  { "to": "kagas@q3mcco35auwcstmt.onion",
+  { "body": "ok, I'll change it."
+}
+{
+  { "ts": "2020-08-14T12:19:47.523077",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "poured"
+}
+{
+  { "ts": "2020-08-14T12:20:04.721465",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "watching"
+}
+{
+  { "ts": "2020-08-14T12:22:02.942008",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  "body": "Well by https://46.249.32.16:447/chat/b3e3cea9cfb8e31bf7882ea054236ac1 everything seems to be fine. For the onion domain, the network/ws tab is still blank."
+}
+{
+  { "ts": "2020-08-14T12:25:13.585396",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  "body": "https://3hikhkjb4y4tq5r7.onion/chat/b3e3cea9cfb8e31bf7882ea054236ac1 ?"
+}
+{
+  { "ts": "2020-08-14T12:25:23.770148",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "I've got something there."
+}
+{
+  { "ts": "2020-08-14T12:29:39.382104",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "I don't know, I got nothing."
+}
+{
+  { "ts": "2020-08-14T12:29:54.761949",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "and now?"
+}
+{
+  { "ts": "2020-08-14T12:30:32.019228",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "also http://prntscr.com/tzk64h"
+}
+{
+  }, "ts": "2020-08-14T12:46:33.892801",
+  { "from": "fast@q3mcco35auwcstmt.onion",
+  { "to": "bonen@q3mcco35auwcstmt.onion",
+  { "body": "hello!"
+}
+{
+  { "ts": "2020-08-14T12:52:02.737200",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "ONO63.exe - ok"
+}
+{
+  }, "ts": "2020-08-14T12:52:17.669910",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "please make 1 crypt BC with a regular icon."
+}
+{
+  { "ts": "2020-08-14T12:52:19.279939",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T12:52:47.336774",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "https://qaz.im/load/hEZSzN/2kSHFS"
+}
+{
+  { "ts": "2020-08-14T12:52:48.585329",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "123"
+}
+{
+  { "ts": "2020-08-14T12:53:01.320809",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T12:53:53.037009",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "mavemat@q3mcco35auwcstmt.onion",
+  { "body": "everything works. SPC."
+}
+{
+  { "ts": "2020-08-14T12:57:28.469934",
+  { "from": "kagas@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  { "body": "you can replace the libs at EXP in the panel"
+}
+{
+  { "ts": "2020-08-14T12:58:53.501285",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "carter@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-08-14T12:58:59.742882",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "carter@q3mcco35auwcstmt.onion",
+  { "body": "here ?"
+}
+{
+  { "ts": "2020-08-14T12:59:54.636720",
+  { "from": "carter@q3mcco35auwcstmt.onion",
+  { "to": "revers@q3mcco35auwcstmt.onion",
+  { "body": "yes, hello"
+}
+{
+  { "ts": "2020-08-14T13:00:11.554405",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "carter@q3mcco35auwcstmt.onion",
+  { "body": "156.96.59.27 look up vpc"
+}
+{
+  }, "ts": "2020-08-14T13:00:15.403705",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "carter@q3mcco35auwcstmt.onion",
+  { "body": "?"
+}
+{
+  { "ts": "2020-08-14T13:00:20.608964",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "carter@q3mcco35auwcstmt.onion",
+  { "body": "this one"
+}
+{
+  { "ts": "2020-08-14T13:04:18.344161",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "carter@q3mcco35auwcstmt.onion",
+  { "body": "because I'm on vacation."
+}
+{
+  { "ts": "2020-08-14T13:04:27.318205",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "carter@q3mcco35auwcstmt.onion",
+  { "body": "and has rarely been here."
+}
+{
+  { "ts": "2020-08-14T13:04:51.093049",
+  { "from": "carter@q3mcco35auwcstmt.onion",
+  { "to": "revers@q3mcco35auwcstmt.onion",
+  "body": "suspended on payment, I sent the defender, I'll text you when they activate."
+}
+{
+  { "ts": "2020-08-14T13:05:15.088568",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "carter@q3mcco35auwcstmt.onion",
+  { "body": "ok I won't be long as long as it's activated"
+}
+{
+  }, "ts": "2020-08-14T13:05:17.339544",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "carter@q3mcco35auwcstmt.onion",
+  { "body": ")"
+}
+{
+  }, "ts": "2020-08-14T13:05:39.098508",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "carter@q3mcco35auwcstmt.onion",
+  { "body": "I'll already be at a full time Sunday."
+}
+{
+  { "ts": "2020-08-14T13:05:39.260907",
+  { "from": "carter@q3mcco35auwcstmt.onion",
+  { "to": "revers@q3mcco35auwcstmt.onion",
+  { "body": "I'll follow up,"
+}
+{
+  }, "ts": "2020-08-14T13:05:44.263132",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "carter@q3mcco35auwcstmt.onion",
+  { "body": "aha cps"
+}
+{
+  { "ts": "2020-08-14T13:13:46.485492",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "poured"
+}
+{
+  { "ts": "2020-08-14T13:15:14.979644",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "poured"
+}
+{
+  { "ts": "2020-08-14T13:23:04.373678",
+  { "from": "hof@q3mcco35auwcstmt.onion",
+  { "to": "kagas@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T13:30:12.931897",
+  { "from": "hof@q3mcco35auwcstmt.onion",
+  { "to": "kagas@q3mcco35auwcstmt.onion",
+  { "body": "replaced"
+}
+{
+  { "ts": "2020-08-14T13:30:20.449730",
+  { "from": "kagas@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T13:34:13.921406",
+  { "from": "shell@q3mcco35auwcstmt.onion",
+  { "to": "noman@q3mcco35auwcstmt.onion",
+  { "body": "hi man \n\nzakin' plz na prozvon\n\nhttps://privnote.com/LKZcIcN8#YH0BKxQHl"
+}
+{
+  { "ts": "2020-08-14T13:35:39.037574",
+  { "from": "noman@q3mcco35auwcstmt.onion",
+  { "to": "shell@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-08-14T13:35:40.579088",
+  { "from": "noman@q3mcco35auwcstmt.onion",
+  { "to": "shell@q3mcco35auwcstmt.onion",
+  { "body": "+"
+}
+{
+  { "ts": "2020-08-14T13:35:48.841434",
+  { "from": "shell@q3mcco35auwcstmt.onion",
+  { "to": "noman@q3mcco35auwcstmt.onion",
+  { "body": "hi man"
+}
+{
+  }, "ts": "2020-08-14T13:42:44.611454",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  "body": "https://3hikhkjb4y4tq5r7.onion/chat/b3e3cea9cfb8e31bf7882ea054236ac1"
+}
+{
+  { "ts": "2020-08-14T13:43:18.137057",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "this is what it says:"
+}
+{
+  { "ts": "2020-08-14T13:43:27.036302",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  "body": "Loading failed for the <script> with source \\u201chttps://3hikhkjb4y4tq5r7.onion/js/app.js\\u201d. b3e3cea9cfb8e31bf7882ea054236ac1:93:1"
+}
+{
+  { "ts": "2020-08-14T13:43:52.690510",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "ReferenceError: $ is not defined"
+}
+{
+  }, "ts": "2020-08-14T13:44:39.824205",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "This is after I changed the site URL in the .env file from Windows to Linux."
+}
+{
+  { "ts": "2020-08-14T13:45:01.920615",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "app.js file in place of course"
+}
+{
+  { "ts": "2020-08-14T13:45:12.860194",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "xnj tve yfljjjj. xnj tve yfljjjjj"
+}
+{
+  }, "ts": "2020-08-14T13:45:22.626979",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "who knows what he wants."
+}
+{
+  { "ts": "2020-08-14T13:46:19.101162",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "don't see it \" Loading failed for the <script> with source \u201chttps://3hikhkjb4y4tq5r7.onion/js/app.js\\u201d. b3e3cea9cfb8e31bf7882ea054236ac1:93:1\" where does it go?"
+}
+{
+  { "ts": "2020-08-14T13:48:23.259870",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "to the browser console"
+}
+{
+  { "ts": "2020-08-14T13:50:25.242113",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "welcome."
+}
+{
+  { "ts": "2020-08-14T13:50:28.642909",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "how are you doing?")
+}
+{
+  { "ts": "2020-08-14T13:50:48.126722",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "try again"
+}
+{
+  { "ts": "2020-08-14T13:51:46.185966",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "I don't have one. It says there's a request to set a cookie, which it disallows. Also cross-orogin request is forbidden."
+}
+{
+  { "ts": "2020-08-14T13:52:13.927462",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "don't see that."
+}
+{
+  { "ts": "2020-08-14T13:54:06.684669",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "http://prntscr.com/tzltrh"
+}
+{
+  { "ts": "2020-08-14T13:54:40.902249",
+  { "from": "poll@conference.q3mcco35auwcstmt.onion",
+  { "to": "clickclack@q3mcco35auwcstmt.onion",
+  { "body": "This room is not anonymous"
+}
+{
+  }, "ts": "2020-08-14T13:55:06.226547",
+  { "from": "frog@q3mcco35auwcstmt.onion",
+  { "to": "mushroom@q3mcco35auwcstmt.onion",
+  { "body": "hello. This is the 64-bit version:\nhttps://dyncheck.com/scan/id/d5c95e14a38de0b433faf026dfb29ad6"
+}
+{
+  { "ts": "2020-08-14T13:55:54.545202",
+  { "from": "electronic@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "re"
+}
+{
+  }, "ts": "2020-08-14T13:55:55.643615",
+  { "from": "electronic@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "here ?"
+}
+{
+  { "ts": "2020-08-14T13:55:56.404830",
+  { "from": "electronic@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "ping"
+}
+{
+  { "ts": "2020-08-14T13:56:02.818975",
+  { "from": "electronic@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "plz let me know when you're online"
+}
+{
+  }, "ts": "2020-08-14T13:58:47.234110",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "I don't have anything close to that."
+}
+{
+  }, "ts": "2020-08-14T13:59:44.261179",
+  { "from": "mushroom@q3mcco35auwcstmt.onion",
+  { "to": "frog@q3mcco35auwcstmt.onion",
+  { "body": "OK. Are there more of them than there used to be?"
+}
+{
+  { "ts": "2020-08-14T14:03:29.144927",
+  { "from": "mors@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "crypto plz, new files on links"
+}
+{
+  { "ts": "2020-08-14T14:03:38.610940",
+  { "from": "mors@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "at once plz if you can"
+}
+{
+  { "ts": "2020-08-14T14:03:59.313478",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  { "body": "doing"
+}
+{
+  { "ts": "2020-08-14T14:04:35.400501",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "marsel@q3mcco35auwcstmt.onion",
+  { "body": "bro, I gave you the wrong source for the BK with the pdf icon."
+}
+{
+  { "ts": "2020-08-14T14:04:36.534495",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "marsel@q3mcco35auwcstmt.onion",
+  { "body": "https://qaz.im/load/KsD4rd/aQ35QH"
+}
+{
+  { "ts": "2020-08-14T14:04:37.919362",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "marsel@q3mcco35auwcstmt.onion",
+  { "body": "123"
+}
+{
+  { "ts": "2020-08-14T14:04:51.078333",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "marsel@q3mcco35auwcstmt.onion",
+  { "body": "that one. Redo it, please."
+}
+{
+  { "ts": "2020-08-14T14:04:55.692403",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "marsel@q3mcco35auwcstmt.onion",
+  { "body": "but it's not knocking."
+}
+{
+  { "ts": "2020-08-14T14:05:31.368249",
+  { "from": "marsel@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T14:05:46.482238",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  "{ "body": "this \\\u201chttps://3hikhkjb4y4tq5r7.onion/js/app.js\\u201d. b3e3cea9cfb8e31bf7882ea054236ac1:93:1\" is your quote marks being converted to unicode for some reason. Your server takes the string \"https://3hikhkjb4y4tq5r7.onion/js/app.js\" and replaces the double quotes with \\u201c and \u201d. I don't know where this problem comes from and I don't know how to solve it. Something with the server settings, I think."
+}
+{
+  { "ts": "2020-08-14T14:06:28.186802",
+  { "from": "kagas@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  { "body": "nworm replaced by 787 yes?"
+}
+{
+  { "ts": "2020-08-14T14:06:39.601345",
+  { "from": "hof@q3mcco35auwcstmt.onion",
+  { "to": "kagas@q3mcco35auwcstmt.onion",
+  { "body": "lf"
+}
+{
+  { "ts": "2020-08-14T14:06:40.351203",
+  { "from": "mushroom@q3mcco35auwcstmt.onion",
+  { "to": "frog@q3mcco35auwcstmt.onion",
+  { "body": "32 bit make it 32 bit too."
+}
+{
+  { "ts": "2020-08-14T14:06:40.804061",
+  { "from": "hof@q3mcco35auwcstmt.onion",
+  { "to": "kagas@q3mcco35auwcstmt.onion",
+  { "body": "yes"
+}
+{
+  { "ts": "2020-08-14T14:06:45.148037",
+  { "from": "kagas@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  { "body": "haven't checked out the spread just yet)"
+}
+{
+  { "ts": "2020-08-14T14:06:46.236197",
+  { "from": "kagas@q3mcco35auwcstmt.onion",
+  { "to": "hof@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T14:06:50.531146",
+  { "from": "kagas@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "Hi, Marcel files uploaded, today's 787 count, link hasn't changed\nhttp://107.174.192.219/images/imgpaper.png (lib)\nhttp://107.174.192.219/images/cursor.png (tot)\nhttp://107.174.192.219/images/redcar.png (jim)"
+}
+{
+  { "ts": "2020-08-14T14:06:51.976265",
+  { "from": "rand@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "Hi, for balzac 5 docs - 750\n\n3DcrBz6zEatPr4Cg9FePLi1axqzErk1aYb"
+}
+{
+  { "ts": "2020-08-14T14:07:03.994042",
+  { "from": "hof@q3mcco35auwcstmt.onion",
+  { "to": "kagas@q3mcco35auwcstmt.onion",
+  { "body": "yes, ask, I often forget )"
+}
+{
+  { "ts": "2020-08-14T14:07:21.919892",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "no quotation marks there"
+}
+{
+  { "ts": "2020-08-14T14:08:33.592738",
+  { "from": "electronic@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "ping"
+}
+{
+  { "ts": "2020-08-14T14:11:19.536567",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "well, how do you write attributes in the script tag? <scrupt src=\"https://3hikhkjb4y4tq5r7.onion/js/app.js\"> that's how they're written. And why the server is trying to replace the quotes with unicode is a non-salary question :)"
+}
+{
+  { "ts": "2020-08-14T14:13:32.389462",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "moved the site to linux"
+}
+{
+  { "ts": "2020-08-14T14:13:48.591060",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "to a new server?"
+}
+{
+  { "ts": "2020-08-14T14:14:44.300062",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "That server I gave you didn't use it?"
+}
+{
+  { "ts": "2020-08-14T14:15:54.067028",
+  { "from": "frog@q3mcco35auwcstmt.onion",
+  { "to": "mushroom@q3mcco35auwcstmt.onion",
+  { "body": "yes, at some point they noticed the registry registration."
+}
+{
+  { "ts": "2020-08-14T14:16:18.192991",
+  { "from": "mushroom@q3mcco35auwcstmt.onion",
+  { "to": "frog@q3mcco35auwcstmt.onion",
+  { "body": "cleanse."
+}
+{
+  { "ts": "2020-08-14T14:16:35.118256",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  { "body": "Download: https://qaz.im/load/Ktb3bD/8eNybY\nDelete: https://qaz.im/index.php?a=delete&q=460762815\nPass: DFSAADFSAFAASADFASDFDF"
+}
+{
+  { "ts": "2020-08-14T14:16:45.313283",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  { "body": "chekni"
+}
+{
+  { "ts": "2020-08-14T14:16:48.442965",
+  { "from": "mors@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "aha"
+}
+{
+  { "ts": "2020-08-14T14:17:12.474415",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "poured"
+}
+{
+  { "ts": "2020-08-14T14:17:22.031366",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "quotation marks are replaced by escapes when inserted into jabber"
+}
+{
+  { "ts": "2020-08-14T14:17:29.409927",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "server does not change anything"
+}
+{
+  { "ts": "2020-08-14T14:17:35.446289",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "does not change"
+}
+{
+  { "ts": "2020-08-14T14:18:32.280894",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "https://3hikhkjb4y4tq5r7.onion/js/app.js in place and showing in browser"
+}
+{
+  { "ts": "2020-08-14T14:18:49.508224",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "why it's writing an error, I don't know."
+}
+{
+  { "ts": "2020-08-14T14:20:27.274862",
+  { "from": "contisupport@q3mcco35auwcstmt.onion",
+  { "to": "reshaev@q3mcco35auwcstmt.onion",
+  { "body": "here?"
+}
+{
+  { "ts": "2020-08-14T14:21:35.435635",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  "body": "What is the setting in .env? What does it say in the APP?"
+}
+{
+  { "ts": "2020-08-14T14:21:49.674226",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "I have this right now:"
+}
+{
+  { "ts": "2020-08-14T14:21:53.318296",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  "body": "window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo__[\"a\"/* default */](\n broadcaster: 'socket.io', \n //host: window.location.hostname + ':447'                                   \n<------>host: window.location.hostname \n});"
+}
+{
+  { "ts": "2020-08-14T14:22:07.186436",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "a shows with :447"
+}
+{
+  { "ts": "2020-08-14T14:22:14.311757",
+  { "from": "frog@q3mcco35auwcstmt.onion",
+  { "to": "mushroom@q3mcco35auwcstmt.onion",
+  { "body": "This test is for 32-bit:\nhttps://dyncheck.com/scan/id/b726d93392c6a2b6cc301ef71f7f1a5e"
+}
+{
+  { "ts": "2020-08-14T14:22:40.610160",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  "body": "i.e. it loads the file from the vend server even though I changed the url in the .env file"
+}
+{
+  { "ts": "2020-08-14T14:23:16.302558",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "APP_URL=http://3hikhkjb4y4tq5r7.onion"
+}
+{
+  { "ts": "2020-08-14T14:23:54.932928",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  "body": "You got me confused. Where is http://3hikhkjb4y4tq5r7.onion 's' missing?"
+}
+{
+  { "ts": "2020-08-14T14:25:45.958228",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "yes, there was http"
+}
+{
+  { "ts": "2020-08-14T14:26:09.899842",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "now changed to https, but nothing has changed"
+}
+{
+  { "ts": "2020-08-14T14:27:04.304132",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "which one did you give? I don't know"
+}
+{
+  { "ts": "2020-08-14T14:27:10.755272",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "def new ordered"
+}
+{
+  { "ts": "2020-08-14T14:28:51.724881",
+  { "from": "mors@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "all ok"
+}
+{
+  { "ts": "2020-08-14T14:28:59.664218",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  { "body": "okay"
+}
+{
+  { "ts": "2020-08-14T14:34:08.816537",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  "body": "I don't see your error, it's not playing for me. I've already cleaned the cache in my browser, and reloaded - I don't see it. I'm using tor, I can't use any other way to watch onion domains".
+}
+{
+  { "ts": "2020-08-14T14:37:29.533279",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "https://3hikhkjb4y4tq5r7.onion/js/app.js in both browsers is loaded from a vend server"
+}
+{
+  { "ts": "2020-08-14T14:38:06.510885",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "i.e., somewhere other than .env there is a link to a vend domain name"
+}
+{
+  { "ts": "2020-08-14T14:38:16.896980",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "where else would it be?"
+}
+{
+  { "ts": "2020-08-14T14:39:13.860527",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "maybe in the database?"
+}
+{
+  { "ts": "2020-08-14T14:41:55.229393",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "watching"
+}
+{
+  { "ts": "2020-08-14T14:44:17.750326",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "where do you have the windup domain name? And where with linux?"
+}
+{
+  { "ts": "2020-08-14T14:45:42.912267",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "here's a3ggjhcskbjg36bx.onion"
+}
+{
+  { "ts": "2020-08-14T14:46:10.542851",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "and here's linux 3hikhkjb4y4tq5r7.onion"
+}
+{
+  { "ts": "2020-08-14T14:46:51.003769",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "open https://3hikhkjb4y4tq5r7.onion/js/app.js on linux and get app.js from windserver"
+}
+{
+  { "ts": "2020-08-14T14:47:31.384684",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "output: somewhere in the configs or in the database there is a vend name"
+}
+{
+  { "ts": "2020-08-14T14:47:59.184920",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "I can assume this is a cache. Now."
+}
+{
+  { "ts": "2020-08-14T14:48:11.567369",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "in wend app.js the 447 port is spelled out:"
+}
+{
+  { "ts": "2020-08-14T14:49:04.771621",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  "body": "window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo__[\"a\"/* default */](\n broadcaster: 'socket.io', \n host: window.location.hostname + ':447'                                   \n<------>//host: window.location.hostname \n});"
+}
+{
+  { "ts": "2020-08-14T14:49:12.380232",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "try:\nsudo php artisan cache:clear\n\nsudo php artisan view:clear\n\nsudo php artisan config:cache"
+}
+{
+  { "ts": "2020-08-14T14:49:24.618696",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": " but in linux vice versa"
+}
+{
+  { "ts": "2020-08-14T14:49:36.048404",
+  { "from": "marsel@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "Rldr sent"
+}
+{
+  { "ts": "2020-08-14T14:49:36.120894",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "here's the windup version"
+}
+{
+  { "ts": "2020-08-14T14:49:41.291665",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "I'll try"
+}
+{
+  { "ts": "2020-08-14T14:49:54.092672",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "is this a cache of what?"
+}
+{
+  { "ts": "2020-08-14T14:49:59.419641",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "marsel@q3mcco35auwcstmt.onion",
+  { "body": "watching"
+}
+{
+  { "ts": "2020-08-14T14:50:52.640045",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  "body": "well the frame does cache pages so it doesn't have to collect them every time the browser reloads. And who the hell knows how long it's all stored."
+}
+{
+  { "ts": "2020-08-14T14:52:29.035855",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "clearly not helpful."
+}
+{
+  { "ts": "2020-08-14T14:52:56.423547",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "still the variant with the added port :447 loads"
+}
+{
+  { "ts": "2020-08-14T14:55:41.047975",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "ah, got it. npm run dev"
+}
+{
+  { "ts": "2020-08-14T14:57:31.458959",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "bpack.config.js`\nnpm ERR! Exit status 126\nnpm ERR! \nnpm ERR! Failed at the @ development script.\nnpm ERR! This is probably not a problem with npm. There is probably additional logging output above. A complete log of this run can be found in:\nnpm ERR!     /root/.npm/_logs/2020-08-14T14_57_02_228Z-debug.log\nnpm ERR! code ELIFECYCLE\nnpm ERR! errno 126\nnpm ERR! @ dev: `npm run development\nnpm ERR! Exit status 126\nnpm ERR! \nnpm ERR! Failed at the @ dev script.\nnpm ERR! This is probably not a problem with npm. There is probably additional logging output above. A complete log of this run can be found in:\nnpm ERR!     /root/.npm/_logs/2020-08-14T14_57_02_269Z-debug.log"
+}
+{
+  { "ts": "2020-08-14T14:57:38.930159",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "and what does it do?"
+}
+{
+  { "ts": "2020-08-14T15:01:44.687377",
+  { "from": "rozetka@q3mcco35auwcstmt.onion",
+  { "to": "defender@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-08-14T15:11:01.952841",
+  { "from": "defender@q3mcco35auwcstmt.onion",
+  { "to": "dandis@q3mcco35auwcstmt.onion",
+  { "body": "fixed"
+}
+{
+  { "ts": "2020-08-14T15:13:24.539604",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "rebuilds just this file where you have :447 added"
+}
+{
+  { "ts": "2020-08-14T15:13:36.862995",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "make npm install"
+}
+{
+  { "ts": "2020-08-14T15:13:37.692355",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "npm install --save-dev cross-env"
+}
+{
+  { "ts": "2020-08-14T15:21:41.702720",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "did"
+}
+{
+  { "ts": "2020-08-14T15:21:48.072069",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "failed again"
+}
+{
+  { "ts": "2020-08-14T15:22:01.572614",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "still the venda version is loaded"
+}
+{
+  { "ts": "2020-08-14T15:24:54.366169",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "npm run dev - did you do it too?"
+}
+{
+  { "ts": "2020-08-14T15:27:00.207395",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "npm run dev gives out a bunch of errors"
+}
+{
+  }, "ts": "2020-08-14T15:27:36.190473",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "now which ones?"
+}
+{
+  { "ts": "2020-08-14T15:27:57.869032",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "A npm install done at all?"
+}
+{
+  { "ts": "2020-08-14T15:28:25.043494",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "did of course"
+}
+{
+  { "ts": "2020-08-14T15:29:02.826465",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  "body": "without npm run dev you won't have those old settings gone. What are the errors?"
+}
+{
+  { "ts": "2020-08-14T15:29:37.409879",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "bpack.config.js`\nnpm ERR! Exit status 1\nnpm ERR! \nnpm ERR! Failed at the @ development script.\nnpm ERR! This is probably not a problem with npm. There is probably additional logging output above. A complete log of this run can be found in:\nnpm ERR!     /root/.npm/_logs/2020-08-14T15_29_23_686Z-debug.log\nnpm ERR! code ELIFECYCLE\nnpm ERR! errno 1\nnpm ERR! @ dev: `npm run development\nnpm ERR! Exit status 1\nnpm ERR! \{nnpm ERR! Failed at the @ dev script.\nnpm ERR! This is probably not a problem with npm. There is probably additional logging output above. A complete log of this run can be found in:\nnpm ERR!     /root/.npm/_logs/2020-08-14T15_29_23_711Z-debug.log"
+}
+{
+  { "ts": "2020-08-14T15:31:42.271767",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  "body": "0 info it worked if it ends with ok\n1 verbose cli ['/usr/bin/node', '/usr/bin/npm', 'run', 'dev' ]\n2 info using npm@6.13.4\n3 info using node@v8.17.0\n4 verbose run-script ['predev', 'dev', 'postdev' ]\n5 info lifecycle @~predev: @\n6 info lifecycle @~dev: @\n7 verbose lifecycle @~dev: unsafe-perm in lifecycle true \n8 verbose lifecycle @~dev: PATH: /usr/lib/node_modules/npm/node_modules/npm-lif$\n9 verbose lifecycle @~dev: CWD: /var/www/html/crypto\n10 silly lifecycle @~dev: Args: ['-c', 'npm run development' ]\n11 silly lifecycle @~dev: Returned: code: 1 signal: null\n12 info lifecycle @~dev: Failed to execute dev script\n13 verbose stack Error: @ dev: `npm run development`\n13 verbose stack Exit status 1\n13 verbose stack at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/nod$\n13 verbose stack at emitTwo (events.js:126:13)\n13 verbose stack at EventEmitter.emit (events.js:214:7)\n13 verbose stack at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/nod$\n13 verbose stack at emitTwo (events.js:126:13)\n13 verbose stack at ChildProcess.emit (events.js:214:7)\n13 verbose stack at maybeClose (internal/child_process.js:915:16)\n13 verbose stack at Process.ChildProcess._handle.onexit (internal/child_pro$\n14 verbose pkgid @\n15 verbose cwd /var/www/html/crypto\n16 verbose Linux 4.9.0-8-amd64\n17 verbose argv \"/usr/bin/node\" /"/usr/bin/npm\" \"run\" \verbose node v8.17.0\n19 verbose npm v6.13.4\n20 error code ELIFECYCLE\n21 error errno 1\n22 error @ dev: `npm run development\n22 error Exit status 1\n23 error Failed at the @ dev script.\n23 error This is probably not a problem with npm. There is probably additional lo$\n24 verbose exit [ 1, true ]"
+}
+{
+  { "ts": "2020-08-14T15:33:20.686625",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "dev-script is where?"
+}
+{
+  { "ts": "2020-08-14T15:33:47.233861",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T15:34:04.078293",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "and the one I gave you for the node did you set up?"
+}
+{
+  { "ts": "2020-08-14T15:34:23.308831",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  "body": "In short, you'll never copy node_modules to another server again :) I think you got that\nrm -rf node_modules\nrm package-lock.json yarn.lock\nnpm cache clear --force\nnpm install"
+}
+{
+  { "ts": "2020-08-14T15:36:01.191580",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "ok I'll try putting them in from scratch"
+}
+{
+  }, "ts": "2020-08-14T15:39:36.469100",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "npm ERR! code ELIFECYCLE\nnpm ERR! errno 1\nnpm ERR! pngquant-bin@4.0.0 postinstall: `node lib/install.js`\nnpm ERR! Exit status 1\nnpm ERR! \nnpm ERR! Failed at the pngquant-bin@4.0.0 postinstall script.\nnpm ERR! This is probably not a problem with npm. There is probably additional logging output above. A complete log of this run can be found in:\nnpm ERR!     /root/.npm/_logs/2020-08-14T15_39_14_108Z-debug.log"
+}
+{
+  { "ts": "2020-08-14T15:44:18.561576",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  "body": "Error: pngquant failed to build, make sure that libpng-dev is installed"
+}
+{
+  { "ts": "2020-08-14T15:44:29.559651",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "ok put liibpng-dev"
+}
+{
+  { "ts": "2020-08-14T15:47:53.490678",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  "body": "so what, I did npm innstall -- it still loads from the windup server"
+}
+{
+  { "ts": "2020-08-14T15:48:41.377816",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "which one did you give?"
+}
+{
+  { "ts": "2020-08-14T15:48:52.613468",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "you didn't give me anything."
+}
+{
+  { "ts": "2020-08-14T15:50:09.195685",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  "body": "[14.08.2020 02:39:44] <Braun> root 216.244.85.15 01236vi@sky viasky.co ericmeric@protonmail.com popo00-- (2020-07-14 #Bought) \n\this needs a bitcoin node."
+}
+{
+  { "ts": "2020-08-14T15:50:26.500504",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "the same)"
+}
+{
+  }, "ts": "2020-08-14T15:50:40.473345",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "a bitcoin node"
+}
+{
+  { "ts": "2020-08-14T15:50:45.041623",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "+"
+}
+{
+  { "ts": "2020-08-14T15:50:46.630873",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "I thought nodejs"
+}
+{
+  { "ts": "2020-08-14T15:50:51.984690",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "not)"
+}
+{
+  }, "ts": "2020-08-14T15:51:05.717882",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "haven't gotten around to it yet."
+}
+{
+  { "ts": "2020-08-14T15:56:49.893167",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T15:57:08.850449",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "and can web socks be set up here or have you already done everything?"
+}
+{
+  { "ts": "2020-08-14T15:57:31.948926",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "give me access later, I need to check my scripts to see how they will work!"
+}
+{
+  { "ts": "2020-08-14T15:58:03.429293",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "from": "js/app.js is loading"
+}
+{
+  { "ts": "2020-08-14T15:58:27.611483",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "somewhere the hostname of the vend server is registered"
+}
+{
+  { "ts": "2020-08-14T15:58:38.498680",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "well, it's repairable"
+}
+{
+  { "ts": "2020-08-14T15:58:45.129726",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "this is the joint I can't get to yet."
+}
+{
+  { "ts": "2020-08-14T15:59:38.495769",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  "body": "did you hello write? She seems to know where those paths are spelled out."
+}
+{
+  { "ts": "2020-08-14T16:01:04.908359",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "please make a fresh crypt of po2.dll That one is already burned"
+}
+{
+  { "ts": "2020-08-14T16:01:32.017173",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T16:01:54.253777",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "who burned?"
+}
+{
+  { "ts": "2020-08-14T16:02:59.937993",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "that's what I asked her about."
+}
+{
+  { "ts": "2020-08-14T16:03:05.502910",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "so far, it hasn't worked."
+}
+{
+  { "ts": "2020-08-14T16:03:21.811249",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "strange"
+}
+{
+  { "ts": "2020-08-14T16:04:01.490832",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "I'll take a look at it now."
+}
+{
+  { "ts": "2020-08-14T16:05:07.315038",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "give me a link to the site"
+}
+{
+  { "ts": "2020-08-14T16:11:17.133779",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "https://3hikhkjb4y4tq5r7.onion"
+}
+{
+  { "ts": "2020-08-14T16:12:39.434744",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "if you open https://3hikhkjb4y4tq5r7.onion/js/app.js it will be inside"
+}
+{
+  { "ts": "2020-08-14T16:12:41.763131",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  "body": "window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo__[\"a\"/* default */]({\n broadcaster: 'socket.io,\n host: window.location.hostname + ':447'\n\t//host: window.location.hostname\n});"
+}
+{
+  { "ts": "2020-08-14T16:12:55.277495",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "although mine is just like this:"
+}
+{
+  { "ts": "2020-08-14T16:13:11.229696",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  "body": "window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo__[\"a\"/* default */]({\n broadcaster: 'socket.io',\n //host: window.location.hostname + ':447'\n\thost: window.location.hostname\n});"
+}
+{
+  { "ts": "2020-08-14T16:13:20.772376",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "i.e., without port 447"
+}
+{
+  }, "ts": "2020-08-14T16:13:38.658521",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "the first option is on the windup server"
+}
+{
+  { "ts": "2020-08-14T16:13:54.528242",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "second on linux"
+}
+{
+  { "ts": "2020-08-14T16:14:10.031970",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "understood"
+}
+{
+  { "ts": "2020-08-14T16:14:35.102523",
+  { "from": "taker@q3mcco35auwcstmt.onion",
+  { "to": "stern@q3mcco35auwcstmt.onion",
+  { "body": "privet!"
+}
+{
+  { "ts": "2020-08-14T16:14:50.056178",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "link to vend server somewhere"
+}
+{
+  { "ts": "2020-08-14T16:14:52.996004",
+  { "from": "taker@q3mcco35auwcstmt.onion",
+  { "to": "revers@q3mcco35auwcstmt.onion",
+  { "body": "privet!"
+}
+{
+  { "ts": "2020-08-14T16:15:36.246700",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "in the .env file I corrected the hostname, I reinstalled the nodejs packages"
+}
+{
+  { "ts": "2020-08-14T16:15:37.929783",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "not talking."
+}
+{
+  { "ts": "2020-08-14T16:15:44.691509",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "who knows where else it might be."
+}
+{
+  }, "ts": "2020-08-14T16:15:46.417783",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "make it easy on the reserve"
+}
+{
+  { "ts": "2020-08-14T16:15:57.299353",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "maybe in a MySQL database?"
+}
+{
+  { "ts": "2020-08-14T16:16:19.688378",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "there doesn't seem to be any such data"
+}
+{
+  { "ts": "2020-08-14T16:16:51.385588",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "I'll see in a moment."
+}
+{
+  { "ts": "2020-08-14T16:20:50.386704",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "look in this file\nwww/resources/assets/js/bootstrap.js"
+}
+{
+  { "ts": "2020-08-14T16:21:38.087642",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "nmp run dev"
+}
+{
+  }, "ts": "2020-08-14T16:24:19.118144",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "there eset and def. started scorching"
+}
+{
+  { "ts": "2020-08-14T16:26:11.029347",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "I have everything working locally."
+}
+{
+  { "ts": "2020-08-14T16:26:37.203049",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "And do you want to comment out the string or replace it with other parameters?"
+}
+{
+  { "ts": "2020-08-14T16:36:17.844604",
+  { "from": "defender@q3mcco35auwcstmt.onion",
+  { "to": "dandis@q3mcco35auwcstmt.onion",
+  { "body": "fixed"
+}
+{
+  { "ts": "2020-08-14T16:36:38.857061",
+  { "from": "dandis@q3mcco35auwcstmt.onion",
+  { "to": "defender@q3mcco35auwcstmt.onion",
+  { "body": "thank you".
+}
+{
+  { "ts": "2020-08-14T16:39:03.250141",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "poured"
+}
+{
+  { "ts": "2020-08-14T16:39:20.512231",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "watching"
+}
+{
+  { "ts": "2020-08-14T16:43:45.837587",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "I want all hostnames to point to the linux server and not the left one"
+}
+{
+  { "ts": "2020-08-14T16:46:15.958969",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "give access to the server"
+}
+{
+  { "ts": "2020-08-14T16:47:35.541494",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "root 46.249.32.16 01236vi@sky"
+}
+{
+  { "ts": "2020-08-14T16:48:04.278295",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  "body": "I don't see that file www/resources/assets/js/bootstrap.js"
+}
+{
+  { "ts": "2020-08-14T16:49:04.155227",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "ah, no -- there is one."
+}
+{
+  { "ts": "2020-08-14T16:49:09.580618",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body":"=)"
+}
+{
+  }, "ts": "2020-08-14T16:49:11.190930",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "but it doesn't have a hostname."
+}
+{
+  { "ts": "2020-08-14T16:50:48.098137",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "made"
+}
+{
+  { "ts": "2020-08-14T16:51:03.578833",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "now should echo server restart?"
+}
+{
+  { "ts": "2020-08-14T16:53:11.238284",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "does not help."
+}
+{
+  { "ts": "2020-08-14T16:53:21.425802",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "it's still loading from the windup server"
+}
+{
+  }, "ts": "2020-08-14T16:56:36.868975",
+  { "from": "taker@q3mcco35auwcstmt.onion",
+  { "to": "revers@q3mcco35auwcstmt.onion",
+  { "body": "privet!"
+}
+{
+  { "ts": "2020-08-14T16:56:57.246367",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "taker@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-08-14T16:57:26.301906",
+  { "from": "taker@q3mcco35auwcstmt.onion",
+  { "to": "revers@q3mcco35auwcstmt.onion",
+  "body": "da prosto pishu privet :) kak otpusk?"
+}
+{
+  { "ts": "2020-08-14T16:58:32.579056",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "taker@q3mcco35auwcstmt.onion",
+  { "body": "norms": "I'll be in full force tomorrow night."
+}
+{
+  { "ts": "2020-08-14T16:58:34.250185",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "taker@q3mcco35auwcstmt.onion",
+  { "body": ")"
+}
+{
+  }, "ts": "2020-08-14T17:11:15.010943",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "carter@q3mcco35auwcstmt.onion",
+  { "body": "bro"
+}
+{
+  { "ts": "2020-08-14T17:11:16.858686",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "carter@q3mcco35auwcstmt.onion",
+  { "body": "here ?"
+}
+{
+  { "ts": "2020-08-14T17:11:18.821563",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "does not work."
+}
+{
+  { "ts": "2020-08-14T17:11:27.898217",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "carter@q3mcco35auwcstmt.onion",
+  { "body": "what's up with the vpc ?"
+}
+{
+  { "ts": "2020-08-14T17:11:36.146135",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "carter@q3mcco35auwcstmt.onion",
+  { "body": "or he can't get on it"
+}
+{
+  { "ts": "2020-08-14T17:11:41.064021",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "carter@q3mcco35auwcstmt.onion",
+  { "body": "reboot it poj"
+}
+{
+  { "ts": "2020-08-14T17:11:43.032832",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "I'm going to download the project for myself now and look at it in detail."
+}
+{
+  }, "ts": "2020-08-14T17:12:04.508420",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "locally everything works for me too"
+}
+{
+  { "ts": "2020-08-14T17:13:35.031124",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  "body": "Go into public/js, delete app.js there and do npm run dev again."
+}
+{
+  { "ts": "2020-08-14T17:14:12.172847",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "And don't forget to clear the cache in your browser after npm run dev"
+}
+{
+  { "ts": "2020-08-14T17:14:21.865792",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "I copied the project from wind to linux as is"
+}
+{
+  { "ts": "2020-08-14T17:14:54.757567",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "true, nodejs pacaji re-downloaded"
+}
+{
+  { "ts": "2020-08-14T17:15:06.338172",
+  { "from": "carter@q3mcco35auwcstmt.onion",
+  { "to": "revers@q3mcco35auwcstmt.onion",
+  { "body": "should work, reboot pressed"
+}
+{
+  { "ts": "2020-08-14T17:15:12.365691",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "carter@q3mcco35auwcstmt.onion",
+  { "body": "aha cps"
+}
+{
+  { "ts": "2020-08-14T17:15:20.809739",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "no hostnames in mysql database dump either"
+}
+{
+  { "ts": "2020-08-14T17:15:25.869840",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "carter@q3mcco35auwcstmt.onion",
+  { "body": "if that doesn't work then you'll have to reset"
+}
+{
+  { "ts": "2020-08-14T17:15:40.740975",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "the only place it exists is in the .env file"
+}
+{
+  { "ts": "2020-08-14T17:22:59.852742",
+  { "from": "taker@q3mcco35auwcstmt.onion",
+  { "to": "revers@q3mcco35auwcstmt.onion",
+  { "body": "kruto!"
+}
+{
+  { "ts": "2020-08-14T17:23:15.000415",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "taker@q3mcco35auwcstmt.onion",
+  { "body": "aha"
+}
+{
+  { "ts": "2020-08-14T17:23:17.372812",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "yes it recreated"
+}
+{
+  { "ts": "2020-08-14T17:24:14.154879",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "it doesn't even have the \":447\" line anymore, but despite that, the vend server loads js/app.js, which has that line."
+}
+{
+  { "ts": "2020-08-14T17:25:17.539835",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  "body": "window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo__[\"a\"/* default */]({\n broadcaster: 'socket.io,\n host: window.location.hostname + ':447'\n\t//host: window.location.hostname\n});"
+}
+{
+  { "ts": "2020-08-14T17:25:26.049508",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "whatever"
+}
+{
+  { "ts": "2020-08-14T17:25:30.625715",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "\\\"
+}
+{
+  { "ts": "2020-08-14T17:25:37.564421",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "cache cleaned"
+}
+{
+  { "ts": "2020-08-14T17:26:25.458478",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "open https://3hikhkjb4y4tq5r7.onion/js/app.js and look for the line \":447\""
+}
+{
+  { "ts": "2020-08-14T17:27:42.359076",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "PO2NW.dll - ok"
+}
+{
+  }, "ts": "2020-08-14T17:28:12.889722",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "okay"
+}
+{
+  { "ts": "2020-08-14T17:28:18.595370",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "seems to be redirecting."
+}
+{
+  { "ts": "2020-08-14T17:28:37.646826",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "and where it's prescribed is a mystery so far."
+}
+{
+  { "ts": "2020-08-14T17:29:50.918943",
+  { "from": "taker@q3mcco35auwcstmt.onion",
+  { "to": "revers@q3mcco35auwcstmt.onion",
+  "body": "sluh a chto ti dumaesh pro targety kak bolshie orgi"
+}
+{
+  { "ts": "2020-08-14T17:29:54.518359",
+  { "from": "taker@q3mcco35auwcstmt.onion",
+  { "to": "revers@q3mcco35auwcstmt.onion",
+  { "body": "tipa salesforce"
+}
+{
+  }, "ts": "2020-08-14T17:30:07.587940",
+  { "from": "taker@q3mcco35auwcstmt.onion",
+  { "to": "revers@q3mcco35auwcstmt.onion",
+  { "body": "realno?"
+}
+{
+  { "ts": "2020-08-14T17:30:42.887469",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "hmm strange"
+}
+{
+  { "ts": "2020-08-14T17:31:08.366279",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "looks like the cache isn't cleaned properly in Firefox"
+}
+{
+  { "ts": "2020-08-14T17:31:24.575292",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "taker@q3mcco35auwcstmt.onion",
+  { "body": "laptop dies"
+}
+{
+  { "ts": "2020-08-14T17:31:30.007272",
+  { "from": "taker@q3mcco35auwcstmt.onion",
+  { "to": "revers@q3mcco35auwcstmt.onion",
+  { "body": "F"
+}
+{
+  { "ts": "2020-08-14T17:31:34.599704",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "taker@q3mcco35auwcstmt.onion",
+  { "body": "let's talk tomorrow I'll be full by then"
+}
+{
+  { "ts": "2020-08-14T17:31:36.220956",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "another browser loads the app.js version without the \"447\" line"
+}
+{
+  { "ts": "2020-08-14T17:31:40.606135",
+  { "from": "taker@q3mcco35auwcstmt.onion",
+  { "to": "revers@q3mcco35auwcstmt.onion",
+  { "body": "nu davai"
+}
+{
+  { "ts": "2020-08-14T17:31:46.103982",
+  { "from": "taker@q3mcco35auwcstmt.onion",
+  { "to": "revers@q3mcco35auwcstmt.onion",
+  { "body": "s.n."
+}
+{
+  }, "ts": "2020-08-14T17:32:30.970423",
+  { "from": "revers@q3mcco35auwcstmt.onion",
+  { "to": "carter@q3mcco35auwcstmt.onion",
+  { "body": "it's ok cps"
+}
+{
+  }, "ts": "2020-08-14T17:32:36.331742",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "it looks like my browser is glitching -- the cache isn't clearing."
+}
+{
+  }, "ts": "2020-08-14T17:33:02.917865",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "works?"
+}
+{
+  { "ts": "2020-08-14T17:33:09.891450",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "just checked with a different browser -- the app.js version without the \":447\" line is loaded."
+}
+{
+  { "ts": "2020-08-14T17:33:33.200053",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "so apparently the cache is saved for you"
+}
+{
+  { "ts": "2020-08-14T17:33:41.934766",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "shit, but I need exactly Firefox to web inspector check"
+}
+{
+  { "ts": "2020-08-14T17:33:56.113557",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "yes it's getting cached"
+}
+{
+  { "ts": "2020-08-14T17:34:20.013618",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "disable caching need"
+}
+{
+  { "ts": "2020-08-14T17:35:16.925126",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "it doesn't turn off like this. I'm cleaning the cache and cookies, I press Ctrl-R to refresh the page and it won't refresh."
+}
+{
+  { "ts": "2020-08-14T17:36:35.476951",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "you have a Firefox web console showing web sockets to this page: https://3hikhkjb4y4tq5r7.onion/chat/b3e3cea9cfb8e31bf7882ea054236ac1 ?"
+}
+{
+  { "ts": "2020-08-14T17:36:56.668645",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "You have to click on the Network tab and then \"WS\""
+}
+{
+  { "ts": "2020-08-14T17:44:21.287621",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "doesn't work("
+}
+{
+  { "ts": "2020-08-14T17:44:29.316783",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "via tor Firefox"
+}
+{
+  }, "ts": "2020-08-14T17:45:33.554451",
+  { "from": "mors@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "cryptany plz"
+}
+{
+  { "ts": "2020-08-14T17:48:11.356084",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "why isn't it working?"
+}
+{
+  { "ts": "2020-08-14T17:48:41.176261",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "specify 127.0.0.1:9050 as a proxy"
+}
+{
+  { "ts": "2020-08-14T17:49:07.967966",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  "body": "well, or you can use the Tor browser --- that's also Firefox."
+}
+{
+  { "ts": "2020-08-14T17:52:44.225242",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "on torus https://prnt.sc/tzpwf1"
+}
+{
+  }, "ts": "2020-08-14T17:56:26.991535",
+  { "from": "mors@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "ku"
+}
+{
+  { "ts": "2020-08-14T17:56:30.176234",
+  { "from": "mors@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "cryptany plz"
+}
+{
+  { "ts": "2020-08-14T17:58:24.304634",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T18:00:56.476556",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  "body": "Download: https://qaz.im/load/2RhTZE/DE2D5r\nDelete: https://qaz.im/index.php?a=delete&q=2113751397\nPass: FDSAADFASQERSFADASFD"
+}
+{
+  { "ts": "2020-08-14T18:02:09.182538",
+  { "from": "mors@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "aha"
+}
+{
+  { "ts": "2020-08-14T18:07:32.073351",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "turned off cache from php and it's still the same("
+}
+{
+  { "ts": "2020-08-14T18:09:57.634952",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  "body": "Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://3hikhkjb4y4tq5r7.onion:447/socket.io/?EIO=3&transport=polling&t=NFkAJ39. (Reason: CORS request did not succeed.)"
+}
+{
+  { "ts": "2020-08-14T18:10:05.148873",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "don't understand shit."
+}
+{
+  { "ts": "2020-08-14T18:10:20.063432",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "this is from another machine -- same shit"
+}
+{
+  { "ts": "2020-08-14T18:11:16.265958",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  "body": "window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo__[\"a\"/* default */]({\n broadcaster: 'socket.io,\n host: window.location.hostname + ':447'\n\t//host: window.location.hostname\n});"
+}
+{
+  { "ts": "2020-08-14T18:11:25.862925",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "don't understand shit."
+}
+{
+  }, "ts": "2020-08-14T18:11:36.302809",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "is this a proider caching?"
+}
+{
+  { "ts": "2020-08-14T18:12:09.743714",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "popped out 447 again"
+}
+{
+  { "ts": "2020-08-14T18:16:12.473150",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "Did you happen to write links to the old site anywhere in apache?"
+}
+{
+  { "ts": "2020-08-14T18:16:23.991573",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "no".
+}
+{
+  { "ts": "2020-08-14T18:17:44.689029",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "it's not the cache problem."
+}
+{
+  { "ts": "2020-08-14T18:18:13.622741",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "I make any changes and they don't work."
+}
+{
+  { "ts": "2020-08-14T18:19:14.185046",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "the site lies here? /var/www/html"
+}
+{
+  { "ts": "2020-08-14T18:19:42.591754",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "correct?"
+}
+{
+  { "ts": "2020-08-14T18:20:56.833225",
+  { "from": "mors@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "it's ok. let's get ready for the weekend 7 stubs plz"
+}
+{
+  { "ts": "2020-08-14T18:21:12.449662",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  { "body": "good"
+}
+{
+  { "ts": "2020-08-14T18:22:29.788149",
+  { "from": "mentos@q3mcco35auwcstmt.onion",
+  { "to": "price@q3mcco35auwcstmt.onion",
+  { "body": "hello"
+}
+{
+  { "ts": "2020-08-14T18:23:33.808813",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  "body": "And how? My ws tab is still blank."
+}
+{
+  { "ts": "2020-08-14T18:24:27.918106",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "here?"
+}
+{
+  { "ts": "2020-08-14T18:27:46.595788",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "the server does not work on this path: http://46.249.32.16:8090/"
+}
+{
+  { "ts": "2020-08-14T18:28:07.300421",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "are you sure you have tor configured for this server?"
+}
+{
+  { "ts": "2020-08-14T18:28:13.397267",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body":"=)"
+}
+{
+  }, "ts": "2020-08-14T18:29:58.344330",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "you have old server settings\nBridgeRelay 1\nControlPort 9051\nDataDirector /var/lib/tor\nDirPort 0\nDirReqStatistics 0\nExitPolicy reject *:*\nHashedControlPassword 16:DE5CBDF6EE97995D600E7ECC501F850B515C0894DED50491E8CB44AC95\nHiddenServiceDir /var/lib/tor/hidden_service\nHiddenServicePort 80 212.129.41.246:8090\nHiddenServicePort 443 212.129.41.246:447\nHiddenServiceVersion 2\nLog notice stdout\nNickname Unnamed\nORPort 9001\nRelayBandwidthBurst 10485760\nRelayBandwidthRate 5242880\nSocksPort 9050" }
+}
+{
+  { "ts": "2020-08-14T18:30:10.850445",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  "body": "the server runs at /var/www/html/crypto/public is ServerRoot"
+}
+{
+  { "ts": "2020-08-14T18:31:39.382378",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  "body": "right, I copied the settings from the old server. Of course I edited it for linux".
+}
+{
+  { "ts": "2020-08-14T18:32:07.472845",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "beach exact IP I didn't correct"
+}
+{
+  }, "ts": "2020-08-14T18:32:15.014478",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": ":D"
+}
+{
+  }, "ts": "2020-08-14T18:32:50.270470",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "you made me boil over a bit, there shouldn't be this kind of problem) And there is))"
+}
+{
+  { "ts": "2020-08-14T18:33:03.428653",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  "body": "what the fuck is the IP even worth? It should be 127.0.0.1."
+}
+{
+  { "ts": "2020-08-14T18:33:13.118160",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "I dunno"
+}
+{
+  { "ts": "2020-08-14T18:33:17.255411",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "I didn't set it up)"
+}
+{
+  { "ts": "2020-08-14T18:33:25.773606",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "got what was)"
+}
+{
+  }, "ts": "2020-08-14T18:33:55.148557",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "can you take it from here?")
+}
+{
+  { "ts": "2020-08-14T18:37:03.688275",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "oh, shit."
+}
+{
+  }, "ts": "2020-08-14T18:38:08.424919",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "braun@q3mcco35auwcstmt.onion",
+  { "body": "yeah, I'll figure it out, sure."
+}
+{
+  { "ts": "2020-08-14T18:38:18.237889",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T18:38:23.822086",
+  { "from": "braun@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "write if anything" }
+}
+{
+  }, "ts": "2020-08-14T18:58:49.413284",
+  { "from": "buri@q3mcco35auwcstmt.onion",
+  { "to": "shell@q3mcco35auwcstmt.onion",
+  { "body": "https://logdog.pw/?h9B3vq"
+}
+{
+  { "ts": "2020-08-14T19:00:30.597933",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "See you Monday. Have a good weekend ))"
+}
+{
+  { "ts": "2020-08-14T19:00:34.798330",
+  { "from": "bentley@q3mcco35auwcstmt.onion",
+  { "to": "marsel@q3mcco35auwcstmt.onion",
+  { "body": "See you Monday. Have a good weekend ))"
+}
+{
+  { "ts": "2020-08-14T19:00:44.480573",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "check again"
+}
+{
+  { "ts": "2020-08-14T19:00:50.867004",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "problem solved"
+}
+{
+  { "ts": "2020-08-14T19:00:52.484138",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "Likewise, see you Monday))"
+}
+{
+  }, "ts": "2020-08-14T19:01:17.771514",
+  { "from": "marsel@q3mcco35auwcstmt.onion",
+  { "to": "bentley@q3mcco35auwcstmt.onion",
+  { "body": "until monday))"
+}
+{
+  { "ts": "2020-08-14T19:02:19.209962",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  "body": "I copied Tor's config from a vend machine, mostly corrected it, but the IP of the previous machine is still there :)"
+}
+{
+  { "ts": "2020-08-14T19:03:05.526262",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "as a result, Thor was accessing the IP of the vend machine and not his"
+}
+{
+  { "ts": "2020-08-14T19:03:13.667783",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "in general. corrected"
+}
+{
+  { "ts": "2020-08-14T19:04:20.033543",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "it should be 127.0.0.1"
+}
+{
+  }, "ts": "2020-08-14T19:04:31.175766",
+  { "from": "clickclack@q3mcco35auwcstmt.onion",
+  { "to": "nik-da@q3mcco35auwcstmt.onion ",
+  { "body": "here?"
+}
+{
+  { "ts": "2020-08-14T19:04:31.177017",
+  { "from": "nik-da@q3mcco35auwcstmt.onion ",
+  { "to": "clickclack@q3mcco35auwcstmt.onion",
+  { "body": "here?"
+}
+{
+  { "ts": "2020-08-14T19:04:58.060131",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "that's why I thought it was standing there and didn't look."
+}
+{
+  { "ts": "2020-08-14T19:05:49.996288",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "and I never looked there\\"
+}
+{
+  { "ts": "2020-08-14T19:06:07.588128",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "happened to look up Braun :)"
+}
+{
+  }, "ts": "2020-08-14T19:11:37.437733",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  "body": "Hallelujah! You're awesome!!!!!!!!!!!!"
+}
+{
+  }, "ts": "2020-08-14T19:12:16.809693",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "did it work for you?"
+}
+{
+  { "ts": "2020-08-14T19:13:19.484675",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "I still haven't checked, but I can see the websockets in the ws tab."
+}
+{
+  { "ts": "2020-08-14T19:13:37.857011",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "aha, there is."
+}
+{
+  }, "ts": "2020-08-14T19:13:56.601014",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  { "body": "I have to send chats back and forth to be sure."
+}
+{
+  { "ts": "2020-08-14T19:25:46.009322",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  "body": "Download: https://qaz.im/load/EH6TNS/i6E2hz\nDelete: https://qaz.im/index.php?a=delete&q=1825360620\nPass: DFSADFQWQAFDSAFDASFD"
+}
+{
+  { "ts": "2020-08-14T19:25:54.724186",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  { "body": "chekni"
+}
+{
+  { "ts": "2020-08-14T19:26:16.928353",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  "body": "yes!!!!! They're working!!!!!!! Hooraaaaaaa!!!!!"
+}
+{
+  }, "ts": "2020-08-14T19:31:03.186408",
+  { "from": "mors@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T19:31:10.225459",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "cool ;)"
+}
+{
+  }, "ts": "2020-08-14T19:48:58.222126",
+  { "from": "mors@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "all ok"
+}
+{
+  { "ts": "2020-08-14T19:49:13.536368",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  { "body": "good"
+}
+{
+  { "ts": "2020-08-14T19:50:26.129649",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  "body": "Download: https://qaz.im/load/sF895D/Qsfn8G\nDelete: https://qaz.im/index.php?a=delete&q=1403871025\nPass: FDSQREWSAFDSQDFSDF"
+}
+{
+  { "ts": "2020-08-14T19:50:33.554786",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  { "body": "chekni"
+}
+{
+  { "ts": "2020-08-14T19:52:11.336199",
+  { "from": "mors@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T19:56:35.025301",
+  { "from": "buri@q3mcco35auwcstmt.onion",
+  { "to": "shell@q3mcco35auwcstmt.onion",
+  { "body": "https://logdog.pw/?h9B3vq"
+}
+{
+  { "ts": "2020-08-14T19:59:54.631868",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  { "body": "Download: https://qaz.im/load/ysT475/R54nd7\nDelete: https://qaz.im/index.php?a=delete&q=1292636222\nPass: QAXQWQEADASAXAS"
+}
+{
+  { "ts": "2020-08-14T20:00:00.747006",
+  { "from": "deploy@q3mcco35auwcstmt.onion",
+  { "to": "mors@q3mcco35auwcstmt.onion",
+  { "body": "chekni"
+}
+{
+  { "ts": "2020-08-14T20:01:22.176307",
+  { "from": "mors@q3mcco35auwcstmt.onion",
+  { "to": "deploy@q3mcco35auwcstmt.onion",
+  { "body": "ok"
+}
+{
+  { "ts": "2020-08-14T20:05:49.131470",
+  { "from": "strix@q3mcco35auwcstmt.onion",
+  { "to": "max@q3mcco35auwcstmt.onion",
+  { "body": "and what kind of files are there to distribute/share between wenda and linux?"
+}
+{
+  { "ts": "2020-08-14T21:42:44.522124",
+  { "from": "urbanone@q3mcco35auwcstmt.onion",
+  { "to": "many@q3mcco35auwcstmt.onion",
+  { "body": "handsome"
+}
+{
+  { "ts": "2020-08-14T22:27:39.342762",
+  { "from": "max@q3mcco35auwcstmt.onion",
+  { "to": "strix@q3mcco35auwcstmt.onion",
+  "body": "If you know, there's this .exe that creates a locker for the files on your computer,an unlocker and 2 more keys. For each task a different collection is created. There could be a lot of tasks. I don't think it needs such a big server as it is now under wind. The way I see it, when a task is created, a curl request will be sent to the windowserver, the .exe will create the collection and pass the contents of these 2 files. And 2 of them are binary"
+}
