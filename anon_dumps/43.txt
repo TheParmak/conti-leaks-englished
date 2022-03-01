@@ -1,0 +1,65 @@
+
+
+    Vampir
+    Новые темы
+    Новые ответы
+
+    Начало
+    Помощь
+    Поиск
+    Профиль
+    Личные сообщения
+    Пользователи
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club »
+    Software and Technologies »
+    AV/EDR Systems »
+    Cylance Protect
+
+Cylance Protect
+Rozetka · 1 · 25
+« предыдущая тема следующая тема »
+
+Страницы: 1
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+: Февраля 14, 2021, 07:28:36 pm
+Записан
+
+Сложно поднять сессию
+Крепаюсь AnyDesk / Onion backdoor
+Не крепается Anchor DLL
+Дамп LSASS не помогает( на выходе пустота )
+Палит advanced ip scanner
+Удаляется через GUI + reboot
+
+Работа происходит так - тащим данные через RDP (fiezilla/rclone/mega/etc), потом за час до лока на неск серверах удаляем циланс и с них пользуемся ЕХЕшником локера и на др машинах включаем батник который выключает все БДшные сервисы и их локаем через сеть. Profit.
+
+Если не снёсся Cylance, то создаём виртуальную машину на vSphere/Hyper-V/VmWare, подключаем её в домен, авторизуемся от ДА и локаем...
+
+Также может сработать подключение вашей впски в впн НО скорости на впнах как правило очень маленькие(Не рекомендую)
+« Последнее редактирование: Февраля 14, 2021, 07:31:40 pm от Rozetka »
+
+Страницы: 1
+
+    Monica Bellucci Fan Club »
+    Software and Technologies »
+    AV/EDR Systems »
+    Cylance Protect
+
+Перейти в:
+ 
++ Быстрый ответ
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Разработанно с от SychO
+
+

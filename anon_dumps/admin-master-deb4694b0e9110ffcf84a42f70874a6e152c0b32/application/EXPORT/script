@@ -1,0 +1,2 @@
+psql -U postgres -d srv2 -c "DELETE FROM datapost WHERE datetime < '2014/10/10';"
+psql -U postgres -d srv2 -c "Copy (SELECT c.ip FROM clients AS c JOIN datapost AS d ON d.client = c.client WHERE (EXTRACT(MONTH FROM d.datetime)) BETWEEN 10 AND 11) TO '/var/www/application/EXPORT/ip.scv' With CSV;"

@@ -1,0 +1,310 @@
+
+
+
+/1/group1/asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDDAABBCCDD/Hello_token/25/
+This is content of extcfg
+
+--
+
+wget --progress=dot --server-response -O - http://localhost:8083/group1/asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDDAABBCCDD/1/Hello_token
+
+HTTP-запрос отправлен. Ожидание ответа...
+  HTTP/1.1 200 OK
+  server: Cowboy
+  date: Tue, 26 Jan 2016 18:59:27 GMT
+  content-length: 94
+  Content-Type: text/plain
+Длина: 94 [text/plain]
+Сохранение в: «STDOUT»
+/1/group1/asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDDAABBCCDD/Hello_token/asd/
+sdf
+1234567890
+
+00112233445566778899AABBCCDDEEFF00112233445566778899AABBCCDDEEFF
+--
+
+wget --progress=dot --server-response -O - http://localhost:8083/group1/asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDDAABBCCDD/10/1/asd/hello
+
+
+HTTP-запрос отправлен. Ожидание ответа...
+  HTTP/1.1 200 OK
+  server: Cowboy
+  date: Tue, 26 Jan 2016 19:23:40 GMT
+  content-length: 3
+  Content-Type: text/plain
+Длина: 3 [text/plain]
+Сохранение в: «STDOUT»
+/1/
+
+
+---
+
+wget --progress=dot --server-response -O - http://localhost:8083/group1/asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDDAABBCCDD/5/extcfg
+
+HTTP-запрос отправлен. Ожидание ответа...
+  HTTP/1.1 200 OK
+  server: Cowboy
+  date: Tue, 26 Jan 2016 19:37:43 GMT
+  content-length: 41
+  Content-Type: binary
+Длина: 41 [binary]
+Сохранение в: «STDOUT»
+Hello world FILE. THIS IS CONTENT OF FILE
+
+
+----
+
+wget --progress=dot --server-response -O - http://localhost:8083/group1/asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDDAABBCCDD/5/extcfg1
+
+HTTP-запрос отправлен. Ожидание ответа...
+  HTTP/1.1 404 Not Found
+  server: Cowboy
+  date: Tue, 26 Jan 2016 19:40:28 GMT
+  content-length: 9
+2016-01-26 22:40:28 ОШИБКА 404: Not Found.
+
+----
+
+wget --progress=dot --server-response -O - http://localhost:8083/group1/asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDDAABBCCDD/14/key_name/value_value/0
+
+HTTP-запрос отправлен. Ожидание ответа...
+  HTTP/1.1 200 OK
+  server: Cowboy
+  date: Tue, 26 Jan 2016 19:54:14 GMT
+  content-length: 3
+  Content-Type: text/plain
+Длина: 3 [text/plain]
+Сохранение в: «STDOUT»
+/1/
+
+wget --progress=dot --server-response -O - http://localhost:8083/group1/asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDDAABBCCDD/23/0
+
+HTTP-запрос отправлен. Ожидание ответа...
+  HTTP/1.1 200 OK
+  server: Cowboy
+  date: Fri, 26 Feb 2016 16:08:56 GMT
+  content-length: 80
+  Content-Type: text/plain
+Длина: 80 [text/plain]
+Сохранение в: «STDOUT»
+/23/group1/asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDDAABBCCDD/1/3/
+asd1234567890
+
+wget --progress=dot --server-response -O - http://localhost:8083/group1/asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDDAABBCCDD/25/1
+
+HTTP-запрос отправлен. Ожидание ответа...
+  HTTP/1.1 200 OK
+  server: Cowboy
+  date: Fri, 26 Feb 2016 16:18:25 GMT
+  content-length: 94
+  Content-Type: text/plain
+Длина: 94 [text/plain]
+Сохранение в: «STDOUT»
+/25/group1/asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDDAABBCCDD/1/
+http://gmail.com
+1234567890
+
+wget --progress=dot --server-response -O - http://localhost:8083/qwerty/qwerty_W617600.AABBCCDDEEFF11223344556677889903/5/spk/
+
+
+wget --progress=dot --server-response -O - http://localhost:8083/test2/TRICKSOF-E5FA2F_W512600.9DE50B4F9A7211787402A39844CE7D79/0/Windows%20XP%20SP3/1001/5.139.220.204/97923686594599b400f716fa558d4d347f56c6e3230d65f752c43b3287fc3bea/9clDtgGG9/
+
+
+curl -v -X POST -H "x-forwarded-for: 1.1.1.1" -H "Content-Type: multipart/form-data; boundary=----------------------------4ebf00fbcf09" --data-binary @63_file.txt "http://localhost:8083/group1/asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDDAABBCCDD/63/module_name/ctl/Y3Rs/tag"
+
+* Hostname was NOT found in DNS cache
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 8083 (#0)
+> POST /group1/asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDDAABBCCDD/63/module_name/ctl/result/tag HTTP/1.1
+> User-Agent: curl/7.35.0
+> Host: localhost:8083
+> Accept: */*
+> x-forwarded-for: 1.1.1.1
+> Content-Type: multipart/form-data; boundary=----------------------------4ebf00fbcf09
+> Content-Length: 145
+>
+* upload completely sent off: 145 out of 145 bytes
+< HTTP/1.1 200 OK
+* Server Cowboy is not blacklisted
+< server: Cowboy
+< date: Mon, 25 Apr 2016 09:48:00 GMT
+< content-length: 3
+< Content-Type: text/plain
+<
+* Connection #0 to host localhost left intact
+/1/
+
+
+curl -k -v -X POST -H "Content-Type: multipart/form-data; boundary=----------------------------4ebf00fbcf09" --data-binary @file_form.txt "https://94.242.206.175:443/qwerty/qwerty_W617600.AABBCCDDF11223344556677888800/63/test678/createttt/coolres/none/"
+* Hostname was NOT found in DNS cache
+*   Trying 94.242.206.175...
+* Connected to 94.242.206.175 (94.242.206.175) port 443 (#0)
+* successfully set certificate verify locations:
+*   CAfile: none
+  CApath: /etc/ssl/certs
+* SSLv3, TLS handshake, Client hello (1):
+* SSLv3, TLS handshake, Server hello (2):
+* SSLv3, TLS handshake, CERT (11):
+* SSLv3, TLS handshake, Server key exchange (12):
+* SSLv3, TLS handshake, Server finished (14):
+* SSLv3, TLS handshake, Client key exchange (16):
+* SSLv3, TLS change cipher, Client hello (1):
+* SSLv3, TLS handshake, Finished (20):
+* SSLv3, TLS change cipher, Client hello (1):
+* SSLv3, TLS handshake, Finished (20):
+* SSL connection using TLSv1.0 / ECDHE-RSA-AES256-SHA
+* Server certificate:
+* 	 subject: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd
+* 	 start date: 2016-02-15 20:31:19 GMT
+* 	 expire date: 2017-02-14 20:31:19 GMT
+* 	 issuer: C=AU; ST=Some-State; O=Internet Widgits Pty Ltd
+* 	 SSL certificate verify result: self signed certificate (18), continuing anyway.
+> POST /qwerty/qwerty_W617600.AABBCCDDF11223344556677888800/63/test678/createttt/coolres/none/ HTTP/1.1
+> User-Agent: curl/7.38.0
+> Host: 94.242.206.175
+> Accept: */*
+> Content-Type: multipart/form-data; boundary=----------------------------4ebf00fbcf09
+> Content-Length: 144
+>
+* upload completely sent off: 144 out of 144 bytes
+< HTTP/1.1 200 OK
+* Server nginx/1.6.2 is not blacklisted
+< Server: nginx/1.6.2
+< Date: Wed, 27 Apr 2016 15:54:10 GMT
+< Content-Type: text/plain
+< Content-Length: 3
+< Connection: keep-alive
+<
+* Connection #0 to host 94.242.206.175 left intact
+/1/
+
+
+curl -k -v -X POST -F "data=@63_file.txt" -F "info=@63_file.txt" "http://localhost:8083/group1/asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDDAABBCCDD/64/module/event/tag"
+
+* Hostname was NOT found in DNS cache
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 8083 (#0)
+> POST /group1/asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDDAABBCCDD/64/module/event/tag HTTP/1.1
+> User-Agent: curl/7.35.0
+> Host: localhost:8083
+> Accept: */*
+> Content-Length: 622
+> Expect: 100-continue
+> Content-Type: multipart/form-data; boundary=------------------------7f1c3f05fd9076d2
+>
+< HTTP/1.1 100 Continue
+< HTTP/1.1 200 OK
+* Server Cowboy is not blacklisted
+< server: Cowboy
+< date: Wed, 16 Nov 2016 08:31:54 GMT
+< content-length: 3
+< Content-Type: text/plain
+<
+* Connection #0 to host localhost left intact
+/1/
+
+curl -k -v "http://localhost:8083/group1/asdgahjsdgajsdgjh.AABBCCDDAABBCCDDAABBCCDDAABBCCDD/64/module/event/tag"
+
+----------------------------------------------
+HTTP API
+----------------------------------------------
+
+wget --progress=dot --server-response --header="x-forwarded-for: 1.1.1.1" -O - "http://localhost:8090/1/1/GetGroupData?from=0&to=1000000000000"
+converted 'http://localhost:8090/1/1/GetGroupData?from=0&to=1000000000000' (ANSI_X3.4-1968) -> 'http://localhost:8090/1/1/GetGroupData?from=0&to=1000000000000' (UTF-8)
+--2016-04-27 16:06:40--  http://localhost:8090/1/1/GetGroupData?from=0&to=1000000000000
+Resolving localhost (localhost)... 127.0.0.1
+Connecting to localhost (localhost)|127.0.0.1|:8090... connected.
+HTTP request sent, awaiting response...
+  HTTP/1.1 200 OK
+  server: Cowboy
+  date: Wed, 27 Apr 2016 16:06:40 GMT
+  content-length: 85
+  Content-Type: text/plain
+Length: 85 [text/plain]
+Saving to: 'STDOUT'
+qwerty 9 1456769143
+newgroup 1 1457029781
+test2 2 1457030161
+group1 1 1461576550
+
+curl -k -v -X POST -H "Content-Type: multipart/form-data; boundary=----------------------------4ebf00fbcf09" --data-binary @file_form.txt "https://94.242.206.175:443/qwerty/qwerty_W617600.AABBCCDDF11223344556677888800/63/test678/createttt/coolres/none/"
+
+
+curl -v -X POST -H "x-forwarded-for: 1.1.1.1" -H "Content-Type: multipart/form-data; boundary=----------------------------4ebf00fbcf09" --data-binary @file_form.txt "http://localhost:8090/1/1/UploadFile?priority=100&filename=extcfg"
+
+* Hostname was NOT found in DNS cache
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 8090 (#0)
+> POST /1/1/UploadFile?priority=100&filename=extcfg HTTP/1.1
+> User-Agent: curl/7.35.0
+> Host: localhost:8090
+> Accept: */*
+> x-forwarded-for: 1.1.1.1
+> Content-Type: multipart/form-data; boundary=----------------------------4ebf00fbcf09
+> Content-Length: 144
+>
+* upload completely sent off: 144 out of 144 bytes
+< HTTP/1.1 200 OK
+* Server Cowboy is not blacklisted
+< server: Cowboy
+< date: Fri, 22 Apr 2016 20:25:27 GMT
+< content-length: 3
+< Content-Type: text/plain
+<
+* Connection #0 to host localhost left intact
+
+
+
+
+curl -v -X POST -H "x-forwarded-for: 1.1.1.1" -H "Content-Type: multipart/form-datboundary=----------------------------4ebf00fbcf09" --data-binary @file_form.txt "http://localhost:8090/1/1/UploadConfig?version=1"
+
+* Hostname was NOT found in DNS cache
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 8090 (#0)
+> POST /1/1/UploadConfig?version=1 HTTP/1.1
+> User-Agent: curl/7.35.0
+> Host: localhost:8090
+> Accept: */*
+> x-forwarded-for: 1.1.1.1
+> Content-Type: multipart/form-data; boundary=----------------------------4ebf00fbcf09
+> Content-Length: 144
+>
+* upload completely sent off: 144 out of 144 bytes
+< HTTP/1.1 200 OK
+* Server Cowboy is not blacklisted
+< server: Cowboy
+< date: Fri, 22 Apr 2016 20:42:46 GMT
+< content-length: 3
+< Content-Type: text/plain
+<
+* Connection #0 to host localhost left intact
+
+
+
+curl -v -X POST -H "x-forwarded-for: 1.1.1.1" -H "Content-Type: multipart/form-data; boundary=----------------------------4ebf00fbcf09" --data-binary @file_form.txt "http://localhost:8090/1/1/UploadLink?expiry_at=1461358632"
+
+* Hostname was NOT found in DNS cache
+*   Trying 127.0.0.1...
+* Connected to localhost (127.0.0.1) port 8090 (#0)
+> POST /1/1/UploadLink?expiry_at=1461358632 HTTP/1.1
+> User-Agent: curl/7.35.0
+> Host: localhost:8090
+> Accept: */*
+> x-forwarded-for: 1.1.1.1
+> Content-Type: multipart/form-data; boundary=----------------------------4ebf00fbcf09
+> Content-Length: 144
+>
+* upload completely sent off: 144 out of 144 bytes
+< HTTP/1.1 200 OK
+* Server Cowboy is not blacklisted
+< server: Cowboy
+< date: Fri, 22 Apr 2016 21:05:48 GMT
+< content-length: 3
+< Content-Type: text/plain
+<
+* Connection #0 to host localhost left intact
+
+curl -v -X POST -H "x-forwarded-for: 1.1.1.1" "http://localhost:8090/1/1/PushBack?cid=1"
+
+curl -v -X POST -H "x-forwarded-for: 1.1.1.1" "http://localhost:8090/1/1/GetOnline?period=100"
+

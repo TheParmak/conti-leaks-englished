@@ -1,0 +1,36 @@
+{
+	"name":        "kohana/image",
+	"type":        "kohana-module",
+	"description": "The official Kohana module for manipulating images",
+	"homepage":    "http://kohanaframework.org",
+	"license":     "BSD-3-Clause",
+	"keywords":    ["kohana", "framework", "image"],
+	"authors": [
+		{
+			"name":     "Kohana Team",
+			"email":    "team@kohanaframework.org",
+			"homepage": "http://kohanaframework.org/team",
+			"role":     "developer"
+		}
+	],
+	"support": {
+		"issues":   "http://dev.kohanaframework.org",
+		"forum":    "http://forum.kohanaframework.org",
+		"irc":      "irc://irc.freenode.net/kohana",
+		"source":   "http://github.com/kohana/core"
+	},
+	"require": {
+		"composer/installers": "~1.0",
+		"kohana/core":         ">=3.3",
+		"php":                 ">=5.3.3"
+	},
+	"suggest": {
+		"ext-gd":   "*"
+	},
+	"extra": {
+		"branch-alias": {
+			"dev-3.3/develop": "3.3.x-dev",
+			"dev-3.4/develop": "3.4.x-dev"
+		}
+	}
+}

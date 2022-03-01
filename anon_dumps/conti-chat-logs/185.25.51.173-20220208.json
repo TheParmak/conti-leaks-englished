@@ -1,0 +1,726 @@
+{
+  "ts": "2022-02-08T03:08:44.287656",
+  "from": "demon@q3mcco35auwcstmt.onion",
+  "to": "van@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2022-02-08T03:31:48.583040",
+  "from": "van@q3mcco35auwcstmt.onion",
+  "to": "demon@q3mcco35auwcstmt.onion",
+  "body": "Привет!\nЯ думал, не увижу тебя больше. Что-то, по-моему, идет не так.\nКоллеги выкладывают ссылки на статьи про твою переписку.\nВроде про старое совсем, но ты пропал, зарплату не выдают.\nЯ уж подумал, что работу надо искать. Всякое бывает.\nВпрочем, занимался по своему плану. Подробнее напишу позже."
+}
+{
+  "ts": "2022-02-08T04:47:50.071967",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "dino@q3mcco35auwcstmt.onion",
+  "body": "наработался?)))"
+}
+{
+  "ts": "2022-02-08T04:48:06.121572",
+  "from": "dino@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "Привет нет наместе"
+}
+{
+  "ts": "2022-02-08T04:56:31.764006",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "dino@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2022-02-08T04:56:34.118846",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "dino@q3mcco35auwcstmt.onion",
+  "body": "куда пропадаешь"
+}
+{
+  "ts": "2022-02-08T04:56:36.937765",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "dino@q3mcco35auwcstmt.onion",
+  "body": "вся работа стоит"
+}
+{
+  "ts": "2022-02-08T04:57:03.321672",
+  "from": "dino@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "да не поверишь и так, давай готов работать"
+}
+{
+  "ts": "2022-02-08T04:57:23.785339",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "dino@q3mcco35auwcstmt.onion",
+  "body": "ок, там верон оч ждет доки"
+}
+{
+  "ts": "2022-02-08T04:57:26.190595",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "dino@q3mcco35auwcstmt.onion",
+  "body": "свяжитесь"
+}
+{
+  "ts": "2022-02-08T04:57:31.030995",
+  "from": "dino@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "оке"
+}
+{
+  "ts": "2022-02-08T04:57:32.609677",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "dino@q3mcco35auwcstmt.onion",
+  "body": "а то ебем мозга не двигаемся никуда"
+}
+{
+  "ts": "2022-02-08T04:57:40.662926",
+  "from": "dino@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "хорошо"
+}
+{
+  "ts": "2022-02-08T05:58:09.071091",
+  "from": "van@q3mcco35auwcstmt.onion",
+  "to": "demon@q3mcco35auwcstmt.onion",
+  "body": "1. Подробнее других блокчейнов, изучил Byteball.\nСначала он меня заинтересовал. Но потом выяснилось, что\nих блокчейн (на DAG) держится на свидетелях, в качестве которых\nвыступают Google и другие. Двенадцать свидетелей. Не будет свидетелей,\nне будет блокчейна. Я нашел ролик с лекцией одного из разработчиков\nByteball. Очень неубедительно рассказывал он про это дело. Аудитория тоже\nбыла, по-моему, разочарована. Свидетели должны в режиме 24/7 постоянно добавлять\nсвои транзакции в DAG. Тем самым свидетельствую прошлое. Если позже добавить\nтранзакцию с повторной тратой и родителями из прошлого, то на пути к ней не будет\nсвидетелей и она будет негодной. Блокчейн написан целиком на js. БД на mysql.\nЧтобы развернуть полный клиент, надо арендовать сервер, установить на нем всё,\nполучить серт для SSL. Сетевой обмен идет по https.\nХотя у меня была идея работы клиента через анонимно полученный сервер.\nЯ об этом подумываю.\n \n2. Поскольку я так и не решил, на каком принципе блокчейна остановиться, начал смотреть\npolkadot. Этот блокчейн написан на Rust. Язык новый. Я вообще-то в языках программирования\nконсерватор, как прилип к с++, так и живу. Но разобраться с блокчейном надо, поэтому\nскачал учебник по Rust, установил у себя компилятор и третий день изучаю. Утверждается,\nчто Rust весьма подходит для разработки блокчейнов. Посмотрим. Если это действительно так,\nи этот язык повышает производительность программистов, то почему бы и нет.\n\n3. Еще всплыл NFT. Надо смотреть.\n\n4. Что я для себя определил.\nБлокчейн делать надо на DAG. Единицей записи в DAG будет не блок с кучей транзакций,\nа отдельная транзакция. В транзакции может находиться любая сущность: перевод монет,\nумный контракт, токен какой-то (NFT). В качестве БД mysql, вероятно. Пока не решил вопрос\nс двойной тратой, свидетелями. Свидетелями могут выступить разработчики (мы), в принципе.\nНа первом этапе без шардирования, думаю, делать будем. Пока так."
+}
+{
+  "ts": "2022-02-08T06:31:08.156242",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "pumba@q3mcco35auwcstmt.onion",
+  "body": "[09:31:03] <mango> привет готово!"
+}
+{
+  "ts": "2022-02-08T06:31:11.403319",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "pumba@q3mcco35auwcstmt.onion",
+  "body": "отр не забывай"
+}
+{
+  "ts": "2022-02-08T06:32:15.823586",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "sticks@q3mcco35auwcstmt.onion",
+  "body": "привет готово!"
+}
+{
+  "ts": "2022-02-08T06:32:48.104239",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "bekeeper@q3mcco35auwcstmt.onion",
+  "body": "привет готово!"
+}
+{
+  "ts": "2022-02-08T06:51:45.160910",
+  "from": "baget@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "Доброе утро, дорогой друг."
+}
+{
+  "ts": "2022-02-08T06:57:49.886368",
+  "from": "pumba@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "ок, спс"
+}
+{
+  "ts": "2022-02-08T06:57:54.096382",
+  "from": "pumba@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "отр не забываю"
+}
+{
+  "ts": "2022-02-08T07:20:37.878788",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "steller@q3mcco35auwcstmt.onion",
+  "body": "привет!"
+}
+{
+  "ts": "2022-02-08T07:20:39.489190",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "steller@q3mcco35auwcstmt.onion",
+  "body": "давай дам зп"
+}
+{
+  "ts": "2022-02-08T07:26:21.722633",
+  "from": "zolotoy@q3mcco35auwcstmt.onion",
+  "to": "bentley@q3mcco35auwcstmt.onion",
+  "body": "https://dyncheck.com/scan/id/f58d2042221cc3698abb2195c7118e1a 0 ну вот а я его не юзал к тому же"
+}
+{
+  "ts": "2022-02-08T08:16:17.463248",
+  "from": "cybergangster@q3mcco35auwcstmt.onion",
+  "to": "macallan@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2022-02-08T08:16:17.466457",
+  "from": "cybergangster@q3mcco35auwcstmt.onion",
+  "to": "macallan@q3mcco35auwcstmt.onion",
+  "body": "норм"
+}
+{
+  "ts": "2022-02-08T08:16:17.467399",
+  "from": "cybergangster@q3mcco35auwcstmt.onion",
+  "to": "macallan@q3mcco35auwcstmt.onion",
+  "body": "ты куда пропал?"
+}
+{
+  "ts": "2022-02-08T08:35:58.667261",
+  "from": "van@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "Привет! Это Dane.\nПро зп хотел узнать."
+}
+{
+  "ts": "2022-02-08T08:59:55.711020",
+  "from": "bekeeper@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "спасибо"
+}
+{
+  "ts": "2022-02-08T09:17:36.977157",
+  "from": "van@q3mcco35auwcstmt.onion",
+  "to": "demon@q3mcco35auwcstmt.onion",
+  "body": "5. Забыл. Еще изучаю консенсус Хедеры."
+}
+{
+  "ts": "2022-02-08T10:47:09.832700",
+  "from": "bonen@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "Привет. Стерн не объявился?"
+}
+{
+  "ts": "2022-02-08T10:47:39.933858",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "bonen@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2022-02-08T10:47:44.101229",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "bonen@q3mcco35auwcstmt.onion",
+  "body": "давай кош"
+}
+{
+  "ts": "2022-02-08T10:49:16.742165",
+  "from": "bonen@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "1G5LWXMN42ueD2eWvm4zMrhXGihghHDgMq\nСумма $1000"
+}
+{
+  "ts": "2022-02-08T10:49:30.445748",
+  "from": "gold@q3mcco35auwcstmt.onion",
+  "to": "kagas@q3mcco35auwcstmt.onion",
+  "body": "Привет"
+}
+{
+  "ts": "2022-02-08T10:56:13.475421",
+  "from": "modnik@q3mcco35auwcstmt.onion",
+  "to": "sepvilk@q3mcco35auwcstmt.onion",
+  "body": "https://privnote.com/Ntkgr0KE#BgZKCLOfr"
+}
+{
+  "ts": "2022-02-08T11:01:35.903247",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "bonen@q3mcco35auwcstmt.onion",
+  "body": "готово бро"
+}
+{
+  "ts": "2022-02-08T11:01:41.646060",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "bonen@q3mcco35auwcstmt.onion",
+  "body": "соряныч за задержки"
+}
+{
+  "ts": "2022-02-08T11:02:25.902182",
+  "from": "bonen@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "А в чем была проблема? Стерн не объяснил?"
+}
+{
+  "ts": "2022-02-08T11:02:31.583725",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "bonen@q3mcco35auwcstmt.onion",
+  "body": "неа"
+}
+{
+  "ts": "2022-02-08T11:02:37.884085",
+  "from": "mango@q3mcco35auwcstmt.onion",
+  "to": "bonen@q3mcco35auwcstmt.onion",
+  "body": "не в духе наверное просто)"
+}
+{
+  "ts": "2022-02-08T11:03:01.132051",
+  "from": "bonen@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "Могет быть, могет быть...."
+}
+{
+  "ts": "2022-02-08T13:04:07.030504",
+  "from": "derekson@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "Привет"
+}
+{
+  "ts": "2022-02-08T13:04:56.949356",
+  "from": "derekson@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "скинь пожалуйста впс, 20 шт"
+}
+{
+  "ts": "2022-02-08T13:28:08.054475",
+  "from": "ford@q3mcco35auwcstmt.onion",
+  "to": "chain@q3mcco35auwcstmt.onion",
+  "body": "[16:11:06] <ford> тут \n[16:11:10] <ford> отходил \n[16:11:14] <ford> напиши как будешь"
+}
+{
+  "ts": "2022-02-08T13:50:54.190724",
+  "from": "van@q3mcco35auwcstmt.onion",
+  "to": "demon@q3mcco35auwcstmt.onion",
+  "body": "Привет!\nЯ думал, не увижу тебя больше. Что-то, по-моему, идет не так.\nКоллеги выкладывают ссылки на статьи про твою переписку.\nВроде про старое совсем, но ты пропал, зарплату не выдают.\nЯ уж подумал, что работу надо искать. Всякое бывает.\nВпрочем, занимался по своему плану. Подробнее напишу позже."
+}
+{
+  "ts": "2022-02-08T13:50:54.193342",
+  "from": "van@q3mcco35auwcstmt.onion",
+  "to": "demon@q3mcco35auwcstmt.onion",
+  "body": "1. Подробнее других блокчейнов, изучил Byteball.\nСначала он меня заинтересовал. Но потом выяснилось, что\nих блокчейн (на DAG) держится на свидетелях, в качестве которых\nвыступают Google и другие. Двенадцать свидетелей. Не будет свидетелей,\nне будет блокчейна. Я нашел ролик с лекцией одного из разработчиков\nByteball. Очень неубедительно рассказывал он про это дело. Аудитория тоже\nбыла, по-моему, разочарована. Свидетели должны в режиме 24/7 постоянно добавлять\nсвои транзакции в DAG. Тем самым свидетельствую прошлое. Если позже добавить\nтранзакцию с повторной тратой и родителями из прошлого, то на пути к ней не будет\nсвидетелей и она будет негодной. Блокчейн написан целиком на js. БД на mysql.\nЧтобы развернуть полный клиент, надо арендовать сервер, установить на нем всё,\nполучить серт для SSL. Сетевой обмен идет по https.\nХотя у меня была идея работы клиента через анонимно полученный сервер.\nЯ об этом подумываю.\n \n2. Поскольку я так и не решил, на каком принципе блокчейна остановиться, начал смотреть\npolkadot. Этот блокчейн написан на Rust. Язык новый. Я вообще-то в языках программирования\nконсерватор, как прилип к с++, так и живу. Но разобраться с блокчейном надо, поэтому\nскачал учебник по Rust, установил у себя компилятор и третий день изучаю. Утверждается,\nчто Rust весьма подходит для разработки блокчейнов. Посмотрим. Если это действительно так,\nи этот язык повышает производительность программистов, то почему бы и нет.\n\n3. Еще всплыл NFT. Надо смотреть.\n\n4. Что я для себя определил.\nБлокчейн делать надо на DAG. Единицей записи в DAG будет не блок с кучей транзакций,\nа отдельная транзакция. В транзакции может находиться любая сущность: перевод монет,\nумный контракт, токен какой-то (NFT). В качестве БД mysql, вероятно. Пока не решил вопрос\nс двойной тратой, свидетелями. Свидетелями могут выступить разработчики (мы), в принципе.\nНа первом этапе без шардирования, думаю, делать будем. Пока так."
+}
+{
+  "ts": "2022-02-08T13:50:54.194019",
+  "from": "van@q3mcco35auwcstmt.onion",
+  "to": "demon@q3mcco35auwcstmt.onion",
+  "body": "5. Забыл. Еще изучаю консенсус Хедеры."
+}
+{
+  "ts": "2022-02-08T13:51:24.946640",
+  "from": "demon@q3mcco35auwcstmt.onion",
+  "to": "van@q3mcco35auwcstmt.onion",
+  "body": "У тебя какой рабочий график ?"
+}
+{
+  "ts": "2022-02-08T13:51:29.978884",
+  "from": "demon@q3mcco35auwcstmt.onion",
+  "to": "van@q3mcco35auwcstmt.onion",
+  "body": "я тебя не застаю онлайн"
+}
+{
+  "ts": "2022-02-08T13:52:39.172168",
+  "from": "demon@q3mcco35auwcstmt.onion",
+  "to": "van@q3mcco35auwcstmt.onion",
+  "body": "ага"
+}
+{
+  "ts": "2022-02-08T13:52:55.674001",
+  "from": "demon@q3mcco35auwcstmt.onion",
+  "to": "van@q3mcco35auwcstmt.onion",
+  "body": "\nВроде про старое совсем, но ты пропал, зарплату не выдают.\nЯ уж подумал, что работу надо искать. Всякое бывает."
+}
+{
+  "ts": "2022-02-08T13:52:58.465635",
+  "from": "demon@q3mcco35auwcstmt.onion",
+  "to": "van@q3mcco35auwcstmt.onion",
+  "body": "про это не переживай"
+}
+{
+  "ts": "2022-02-08T13:53:06.463487",
+  "from": "demon@q3mcco35auwcstmt.onion",
+  "to": "van@q3mcco35auwcstmt.onion",
+  "body": "мы с тобой года на два точно тут по блокчейну"
+}
+{
+  "ts": "2022-02-08T13:53:11.881623",
+  "from": "demon@q3mcco35auwcstmt.onion",
+  "to": "van@q3mcco35auwcstmt.onion",
+  "body": "поэтому ничего ненадо искать"
+}
+{
+  "ts": "2022-02-08T14:18:52.714455",
+  "from": "ford@q3mcco35auwcstmt.onion",
+  "to": "chain@q3mcco35auwcstmt.onion",
+  "body": "[16:11:06] <ford> тут \n[16:11:10] <ford> отходил \n[16:11:14] <ford> напиши как будешь"
+}
+{
+  "ts": "2022-02-08T14:19:27.376442",
+  "from": "chain@q3mcco35auwcstmt.onion",
+  "to": "ford@q3mcco35auwcstmt.onion",
+  "body": "nen"
+}
+{
+  "ts": "2022-02-08T14:48:22.644235",
+  "from": "derekson@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2022-02-08T14:48:46.360304",
+  "from": "derekson@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "говорят была зп. Можно получить?)"
+}
+{
+  "ts": "2022-02-08T15:08:21.703383",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "best@q3mcco35auwcstmt.onion",
+  "body": "Microsoft disables MSIX protocol handler abused in Emotet attacks"
+}
+{
+  "ts": "2022-02-08T15:08:50.728998",
+  "from": "best@q3mcco35auwcstmt.onion",
+  "to": "bentley@q3mcco35auwcstmt.onion",
+  "body": "привет\nможно крипт шк x64 под regsvr32&"
+}
+{
+  "ts": "2022-02-08T15:08:52.355507",
+  "from": "best@q3mcco35auwcstmt.onion",
+  "to": "bentley@q3mcco35auwcstmt.onion",
+  "body": "?"
+}
+{
+  "ts": "2022-02-08T15:12:59.297280",
+  "from": "bentley@q3mcco35auwcstmt.onion",
+  "to": "best@q3mcco35auwcstmt.onion",
+  "body": "++"
+}
+{
+  "ts": "2022-02-08T15:16:18.182411",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "dylon@q3mcco35auwcstmt.onion",
+  "body": "- маркировка просмотренных ботов\n- поиск по systemInfo \n- изменил фильтр по доменам"
+}
+{
+  "ts": "2022-02-08T15:16:28.147682",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "hors@q3mcco35auwcstmt.onion",
+  "body": "- маркировка просмотренных ботов\n- поиск по systemInfo \n- изменил фильтр по доменам"
+}
+{
+  "ts": "2022-02-08T15:16:32.644645",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "revers@q3mcco35auwcstmt.onion",
+  "body": "- маркировка просмотренных ботов\n- поиск по systemInfo \n- изменил фильтр по доменам"
+}
+{
+  "ts": "2022-02-08T15:16:36.269084",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "rozetka@q3mcco35auwcstmt.onion",
+  "body": "- маркировка просмотренных ботов\n- поиск по systemInfo \n- изменил фильтр по доменам"
+}
+{
+  "ts": "2022-02-08T15:16:41.200057",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "- маркировка просмотренных ботов\n- поиск по systemInfo \n- изменил фильтр по доменам"
+}
+{
+  "ts": "2022-02-08T15:18:10.443049",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "dylon@q3mcco35auwcstmt.onion",
+  "body": "- маркировка просмотренных ботов, рядом с ИД буква - M, что в работе, нажимаем"
+}
+{
+  "ts": "2022-02-08T15:18:13.646275",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "hors@q3mcco35auwcstmt.onion",
+  "body": "- маркировка просмотренных ботов, рядом с ИД буква - M, что в работе, нажимаем"
+}
+{
+  "ts": "2022-02-08T15:18:17.040106",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "revers@q3mcco35auwcstmt.onion",
+  "body": "- маркировка просмотренных ботов, рядом с ИД буква - M, что в работе, нажимаем"
+}
+{
+  "ts": "2022-02-08T15:18:19.644970",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "rozetka@q3mcco35auwcstmt.onion",
+  "body": "- маркировка просмотренных ботов, рядом с ИД буква - M, что в работе, нажимаем"
+}
+{
+  "ts": "2022-02-08T15:18:22.279745",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "- маркировка просмотренных ботов, рядом с ИД буква - M, что в работе, нажимаем"
+}
+{
+  "ts": "2022-02-08T15:21:15.288354",
+  "from": "best@q3mcco35auwcstmt.onion",
+  "to": "bentley@q3mcco35auwcstmt.onion",
+  "body": "4g534GW$f45HW#QF45wh^$%WHG#$debRTNTHY\nhttps://privatlab.com/s/v/W7VmaVGm72cb2DaV3w3e"
+}
+{
+  "ts": "2022-02-08T15:21:51.443143",
+  "from": "modnik@q3mcco35auwcstmt.onion",
+  "to": "sepvilk@q3mcco35auwcstmt.onion",
+  "body": "https://privnote.com/Ntkgr0KE#BgZKCLOfr"
+}
+{
+  "ts": "2022-02-08T15:22:28.398415",
+  "from": "bentley@q3mcco35auwcstmt.onion",
+  "to": "best@q3mcco35auwcstmt.onion",
+  "body": "++"
+}
+{
+  "ts": "2022-02-08T15:34:45.211228",
+  "from": "dylon@q3mcco35auwcstmt.onion",
+  "to": "veron@q3mcco35auwcstmt.onion",
+  "body": "yvidel"
+}
+{
+  "ts": "2022-02-08T15:37:34.138154",
+  "from": "derekson@q3mcco35auwcstmt.onion",
+  "to": "mango@q3mcco35auwcstmt.onion",
+  "body": "ping"
+}
+{
+  "ts": "2022-02-08T15:40:57.473954",
+  "from": "skippy@q3mcco35auwcstmt.onion",
+  "to": "tramp@q3mcco35auwcstmt.onion",
+  "body": "фгх нихрена дерзкие типы"
+}
+{
+  "ts": "2022-02-08T16:21:15.000878",
+  "from": "pumba@q3mcco35auwcstmt.onion",
+  "to": "tramp@q3mcco35auwcstmt.onion",
+  "body": "привет. в общем я сделал акк на меге и решил залить туда их sample))), только в распакованном виде. пусть получают. вроде бы как и не обманули и дали дату всю, что у нас есть)))"
+}
+{
+  "ts": "2022-02-08T16:25:38.671053",
+  "from": "best@q3mcco35auwcstmt.onion",
+  "to": "bentley@q3mcco35auwcstmt.onion",
+  "body": "ну как там?"
+}
+{
+  "ts": "2022-02-08T16:25:48.933227",
+  "from": "bentley@q3mcco35auwcstmt.onion",
+  "to": "best@q3mcco35auwcstmt.onion",
+  "body": "В процессе"
+}
+{
+  "ts": "2022-02-08T16:32:09.202698",
+  "from": "pumba@q3mcco35auwcstmt.onion",
+  "to": "tramp@q3mcco35auwcstmt.onion",
+  "body": "что скажешь?"
+}
+{
+  "ts": "2022-02-08T17:04:34.737789",
+  "from": "bentley@q3mcco35auwcstmt.onion",
+  "to": "born@q3mcco35auwcstmt.onion",
+  "body": "Привет."
+}
+{
+  "ts": "2022-02-08T17:15:03.068570",
+  "from": "strix@q3mcco35auwcstmt.onion",
+  "to": "hors@q3mcco35auwcstmt.onion",
+  "body": "hi"
+}
+{
+  "ts": "2022-02-08T17:15:14.459527",
+  "from": "strix@q3mcco35auwcstmt.onion",
+  "to": "hors@q3mcco35auwcstmt.onion",
+  "body": "ты жив?"
+}
+{
+  "ts": "2022-02-08T17:15:26.043951",
+  "from": "strix@q3mcco35auwcstmt.onion",
+  "to": "hors@q3mcco35auwcstmt.onion",
+  "body": "ответь плз"
+}
+{
+  "ts": "2022-02-08T17:59:10.097150",
+  "from": "bentley@q3mcco35auwcstmt.onion",
+  "to": "born@q3mcco35auwcstmt.onion",
+  "body": "Привет."
+}
+{
+  "ts": "2022-02-08T18:29:19.104599",
+  "from": "atlas@q3mcco35auwcstmt.onion",
+  "to": "born@q3mcco35auwcstmt.onion",
+  "body": "повтори не могу прочитать"
+}
+{
+  "ts": "2022-02-08T18:45:19.867401",
+  "from": "leo@q3mcco35auwcstmt.onion",
+  "to": "hors@q3mcco35auwcstmt.onion",
+  "body": "ку"
+}
+{
+  "ts": "2022-02-08T19:19:47.534228",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "dino@q3mcco35auwcstmt.onion",
+  "body": "тут?"
+}
+{
+  "ts": "2022-02-08T19:24:05.446216",
+  "from": "derekson@q3mcco35auwcstmt.onion",
+  "to": "elon@q3mcco35auwcstmt.onion",
+  "body": "vpnbridge сервер настроил. Теперь дело за stevie"
+}
+{
+  "ts": "2022-02-08T19:27:41.101468",
+  "from": "pumba@q3mcco35auwcstmt.onion",
+  "to": "skippy@q3mcco35auwcstmt.onion",
+  "body": "привет"
+}
+{
+  "ts": "2022-02-08T19:27:46.996594",
+  "from": "pumba@q3mcco35auwcstmt.onion",
+  "to": "skippy@q3mcco35auwcstmt.onion",
+  "body": "трамп тебе отвечает?"
+}
+{
+  "ts": "2022-02-08T19:27:58.538172",
+  "from": "pumba@q3mcco35auwcstmt.onion",
+  "to": "skippy@q3mcco35auwcstmt.onion",
+  "body": "что-то я устал ему писать за сегодня"
+}
+{
+  "ts": "2022-02-08T19:28:04.924879",
+  "from": "pumba@q3mcco35auwcstmt.onion",
+  "to": "skippy@q3mcco35auwcstmt.onion",
+  "body": "молчит как рыба об лед)"
+}
+{
+  "ts": "2022-02-08T19:31:36.471819",
+  "from": "pumba@q3mcco35auwcstmt.onion",
+  "to": "skippy@q3mcco35auwcstmt.onion",
+  "body": "аууу"
+}
+{
+  "ts": "2022-02-08T19:31:39.835070",
+  "from": "pumba@q3mcco35auwcstmt.onion",
+  "to": "skippy@q3mcco35auwcstmt.onion",
+  "body": "меня видно??"
+}
+{
+  "ts": "2022-02-08T20:13:15.985459",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "- маркировка просмотренных ботов\n- поиск по systemInfo \n- изменил фильтр по доменам"
+}
+{
+  "ts": "2022-02-08T20:13:15.992072",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "- маркировка просмотренных ботов, рядом с ИД буква - M, что в работе, нажимаем"
+}
+{
+  "ts": "2022-02-08T20:15:55.185150",
+  "from": "many@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "ку. закинешь?"
+}
+{
+  "ts": "2022-02-08T20:16:04.044730",
+  "from": "dandis@q3mcco35auwcstmt.onion",
+  "to": "many@q3mcco35auwcstmt.onion",
+  "body": "Ку"
+}
+{
+  "ts": "2022-02-08T20:16:04.879293",
+  "from": "dandis@q3mcco35auwcstmt.onion",
+  "to": "many@q3mcco35auwcstmt.onion",
+  "body": "Да"
+}
+{
+  "ts": "2022-02-08T20:16:09.137564",
+  "from": "dandis@q3mcco35auwcstmt.onion",
+  "to": "many@q3mcco35auwcstmt.onion",
+  "body": "Сколько?"
+}
+{
+  "ts": "2022-02-08T20:16:37.462453",
+  "from": "many@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "да не знаю. еще надо крипт?"
+}
+{
+  "ts": "2022-02-08T20:17:08.301012",
+  "from": "many@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "есть свежие стабы"
+}
+{
+  "ts": "2022-02-08T20:17:23.584534",
+  "from": "many@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "[04:42:13] <22> 3ESoHHu87mTrFNSNUaMVEfT3vYwRYGfSHQ \n[04:42:18] <22> кош"
+}
+{
+  "ts": "2022-02-08T20:18:34.156303",
+  "from": "many@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "на постоянку бы не хочешь)не бухаю ща"
+}
+{
+  "ts": "2022-02-08T20:18:57.068844",
+  "from": "dandis@q3mcco35auwcstmt.onion",
+  "to": "many@q3mcco35auwcstmt.onion",
+  "body": "Я это 3 раз слышу)"
+}
+{
+  "ts": "2022-02-08T20:19:39.211446",
+  "from": "many@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "не . все . ннадо за ум братся"
+}
+{
+  "ts": "2022-02-08T20:19:51.454772",
+  "from": "dandis@q3mcco35auwcstmt.onion",
+  "to": "many@q3mcco35auwcstmt.onion",
+  "body": "В общем 3 раза ты меня наебал"
+}
+{
+  "ts": "2022-02-08T20:19:55.612627",
+  "from": "dandis@q3mcco35auwcstmt.onion",
+  "to": "many@q3mcco35auwcstmt.onion",
+  "body": "Мне хватило"
+}
+{
+  "ts": "2022-02-08T20:20:02.846782",
+  "from": "many@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "просто не удобно билдер делать постоянно. сам бы криптил по запросу"
+}
+{
+  "ts": "2022-02-08T20:20:23.913484",
+  "from": "dandis@q3mcco35auwcstmt.onion",
+  "to": "many@q3mcco35auwcstmt.onion",
+  "body": "Вчера крипт за 2 мин ждал 30 мин"
+}
+{
+  "ts": "2022-02-08T20:20:58.541316",
+  "from": "many@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "ну там я с ехе протупил. щас лежат свежие стабы"
+}
+{
+  "ts": "2022-02-08T20:21:26.030372",
+  "from": "many@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "по 700 недл"
+}
+{
+  "ts": "2022-02-08T20:21:31.753828",
+  "from": "many@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "неделю бы работали."
+}
+{
+  "ts": "2022-02-08T20:22:07.348971",
+  "from": "many@q3mcco35auwcstmt.onion",
+  "to": "dandis@q3mcco35auwcstmt.onion",
+  "body": "чистые всегда будут. только с ехе 86 проблемы бывают"
+}
+{
+  "ts": "2022-02-08T21:21:02.593894",
+  "from": "pumba@q3mcco35auwcstmt.onion",
+  "to": "tramp@q3mcco35auwcstmt.onion",
+  "body": "Блин, у нас столько много компаний не выходят на общение, вот не понимаю почему? они восстанавливают из бекапов что-ли все или им похер дата, они работают дальше?"
+}
+{
+  "ts": "2022-02-08T21:29:22.401656",
+  "from": "pumba@q3mcco35auwcstmt.onion",
+  "to": "tramp@q3mcco35auwcstmt.onion",
+  "body": "смотри, https://www.lovettrealty.com  будут опубликованы через 3 часа"
+}
+{
+  "ts": "2022-02-08T21:29:27.133513",
+  "from": "pumba@q3mcco35auwcstmt.onion",
+  "to": "tramp@q3mcco35auwcstmt.onion",
+  "body": "что с ними делаем?"
+}

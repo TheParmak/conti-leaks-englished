@@ -1,0 +1,120 @@
+{
+  "ts": "2021-10-23T02:32:18.715719",
+  "from": "wind@q3mcco35auwcstmt.onion",
+  "to": "mavemat@q3mcco35auwcstmt.onion",
+  "body": "определил 17 протоколов пар ипов, с которыми работает гмыл, в конце каждой строки количество пакетов по каждому протоколу, каждый пакет надо будет расшифровать, займёт время\n\n413 12 0.774066794 208.110.64.130 61.177.172.13 TCP 76 22  >  60232 [SYN, ACK] Seq=0 Ack=1 Win=65160 Len=0 MSS=1460 SACK_PERM=1 TSval=3854754443 TSecr=3290554984 WS=128 23\n412 11 0.774040609 61.177.172.13 208.110.64.130 TCP 76 60232  >  22 [SYN] Seq=0 Win=29200 Len=0 MSS=1460 SACK_PERM=1 TSval=3290554984 TSecr=0 WS=128 18\n398 24895 3799.711332710 208.110.64.130 192.187.107.16 DNS 78 Standard query 0xa63a AAAA api.snapcraft.io 14\n399 24898 3799.746274439 192.187.107.16 208.110.64.130 DNS 174 Standard query response 0x07a7 A api.snapcraft.io A 91.189.92.20 A 91.189.92.38 A 91.189.92.39 A 91.189.92.19 A 91.189.92.40 A 91.189.92.41 14\n400 206 30.300778308 208.110.64.130 208.110.64.130 X11 100 Event: Sent-ConfigureNotify 6\n479 9479 1359.987631350 193.57.40.49 208.110.64.130 TCP 62 41067  >  31890 [SYN] Seq=0 Win=1024 Len=0 2\n421 8010 1135.871199442 185.191.34.120 208.110.64.130 TCP 62 53892  >  6172 [SYN] Seq=0 Win=1024 Len=0 2\n418 32307 4905.408936138 193.27.228.65 208.110.64.130 TCP 62 49690  >  5480 [SYN] Seq=0 Win=1024 Len=0 2\n422 8011 1135.871219118 208.110.64.130 185.191.34.120 TCP 56 6172  >  53892 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0 1\n396 46055 6967.116279904 71.168.131.157 208.110.64.130 TCP 62 20902  >  52869 [SYN] Seq=0 Win=62153 Len=0 1\n419 32308 4905.408951592 208.110.64.130 193.27.228.65 TCP 56 5480  >  49690 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0 1\n426 118798 17765.942083206 71.6.199.23 208.110.64.130 TCP 62 29011  >  23424 [SYN] Seq=0 Win=18825 Len=0 MSS=1460 1\n394 178535 26728.752860988 161.35.126.145 208.110.64.130 TCP 62 32767  >  8545 [SYN] Seq=0 Win=1024 Len=0 1\n480 9480 1359.987649076 208.110.64.130 193.57.40.49 TCP 56 31890  >  41067 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0 1\n397 46056 6967.116295393 208.110.64.130 71.168.131.157 TCP 56 52869  >  20902 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0 1\n427 118799 17765.942098468 208.110.64.130 71.6.199.23 TCP 56 23424  >  29011 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0 1\n395 178536 26728.752876338 208.110.64.130 161.35.126.145 TCP 56 8545  >  32767 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0 1"
+}
+{
+  "ts": "2021-10-23T03:32:29.522305",
+  "from": "wind@q3mcco35auwcstmt.onion",
+  "to": "mavemat@q3mcco35auwcstmt.onion",
+  "body": "ошибка, 55 протоколов пар ипов, с которыми работает гмыл, буду автоматизировать дешифрацию"
+}
+{
+  "ts": "2021-10-23T03:34:28.547165",
+  "from": "wind@q3mcco35auwcstmt.onion",
+  "to": "buza@q3mcco35auwcstmt.onion",
+  "body": "определил 17 протоколов пар ипов, с которыми работает гмыл, в конце каждой строки количество пакетов по каждому протоколу, каждый пакет надо будет расшифровать, займёт время\n\nошибка, 55 протоколов пар ипов, с которыми работает гмыл, буду автоматизировать дешифрацию"
+}
+{
+  "ts": "2021-10-23T05:21:34.133094",
+  "from": "wertu@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "все ОК"
+}
+{
+  "ts": "2021-10-23T07:02:09.541398",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "grom@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-10-23T07:03:18.318286",
+  "from": "grom@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[ERROR: This message is encrypted, and you are unable to decrypt it.]"
+}
+{
+  "ts": "2021-10-23T10:01:35.881746",
+  "from": "mont@q3mcco35auwcstmt.onion",
+  "to": "bentley@q3mcco35auwcstmt.onion",
+  "body": "привет бро, нужно в бк крипт"
+}
+{
+  "ts": "2021-10-23T11:02:06.714200",
+  "from": "derekson@q3mcco35auwcstmt.onion",
+  "to": "bentley@q3mcco35auwcstmt.onion",
+  "body": "Привет"
+}
+{
+  "ts": "2021-10-23T11:08:03.064572",
+  "from": "grom@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[ERROR: This message is encrypted, and you are unable to decrypt it.]"
+}
+{
+  "ts": "2021-10-23T11:54:09.588563",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "grom@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-10-23T13:44:29.976572",
+  "from": "defender@q3mcco35auwcstmt.onion",
+  "to": "grom@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-10-23T13:44:43.948703",
+  "from": "grom@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[ERROR: This message is encrypted, and you are unable to decrypt it.]"
+}
+{
+  "ts": "2021-10-23T16:20:25.780037",
+  "from": "bentley@q3mcco35auwcstmt.onion",
+  "to": "bloodrush@q3mcco35auwcstmt.onion",
+  "body": "Тут"
+}
+{
+  "ts": "2021-10-23T18:27:02.714926",
+  "from": "mont@q3mcco35auwcstmt.onion",
+  "to": "bentley@q3mcco35auwcstmt.onion",
+  "body": "все забрал, с инетом беда"
+}
+{
+  "ts": "2021-10-23T19:43:47.099575",
+  "from": "veron@q3mcco35auwcstmt.onion",
+  "to": "defender@q3mcco35auwcstmt.onion",
+  "body": "[Ошибка: сообщение зашифровано, и невозможно его расшифровать.]"
+}
+{
+  "ts": "2021-10-23T23:26:36.071151",
+  "from": "dollar@q3mcco35auwcstmt.onion",
+  "to": "dylon@q3mcco35auwcstmt.onion",
+  "body": "Hello, the demand is 40 btc ($2.440.000) , the answer must be received within 24 hours"
+}
+{
+  "ts": "2021-10-23T23:26:41.676132",
+  "from": "dollar@q3mcco35auwcstmt.onion",
+  "to": "dylon@q3mcco35auwcstmt.onion",
+  "body": "napsihi im soobjenie"
+}
+{
+  "ts": "2021-10-23T23:27:00.532308",
+  "from": "dollar@q3mcco35auwcstmt.onion",
+  "to": "dylon@q3mcco35auwcstmt.onion",
+  "body": "nado srocno otvetit' bro!!!!!!!!!!!!!!"
+}
+{
+  "ts": "2021-10-23T23:29:43.865376",
+  "from": "dollar@q3mcco35auwcstmt.onion",
+  "to": "paranoik@q3mcco35auwcstmt.onion",
+  "body": "bro otkroi dostyp k perepsikam na moeom akke dollar"
+}
+{
+  "ts": "2021-10-23T23:29:49.314595",
+  "from": "dollar@q3mcco35auwcstmt.onion",
+  "to": "paranoik@q3mcco35auwcstmt.onion",
+  "body": "srocno!!!!!!!!!"
+}

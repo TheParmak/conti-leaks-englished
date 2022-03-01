@@ -1,0 +1,34 @@
+/* Api browser stuff */
+
+/* api index page */
+div.class-list div.class { width: 50%; }
+div.class-list div.class.left { float: left; clear: both; }
+div.class-list div.class.right { float: right; }
+	div.class-list div.class h2 { background:none; }
+
+/* table of contents at the top of each class */
+div.toc { }
+div.toc div {float:left; width: 33%;}
+div.toc div h3 {margin-top:0; background:none; }
+
+
+/* constants */
+div.constants dl dt {font-weight:bold; margin-bottom:1.5em;}
+div.constants dl dd {margin-left:1.5em; margin-bottom:1.5em;}
+
+/* properties */
+div.properties dl dt { font-weight:bold; margin-top:1.5em; margin-bottom:1.5em;}
+div.properties dl dt small, div.properties dl dt code { font-weight:normal; font-size:0.9em; }
+div.properties dl dd {margin-left:1.5em; margin-bottom:1.5em;}
+
+/* functions */
+
+div.method { padding:0 1.5em; border:1px solid #c8cfaf; border-radius:5px; margin-bottom:1.5em; }
+div.method h3 { background:none; margin-top:0; margin-left:-1em; margin-right:-1em; padding:.75em 0 .75em 1.17em; background:#e8efcf; border-top-left-radius:5px; border-top-right-radius:5px; }
+div.method h3 .param { font-weight: normal; cursor: help; border-bottom:1px dashed #666;}
+div.method h3 abbr.param { text-transform: none; font-size: 1em; }
+
+dl.tags { overflow: auto; background: #e8efcf; padding: 1em; border: solid 6px #d8dfbf; margin-bottom:1.5em; }
+	dl.tags dt { margin: 0; clear: both; float: left; width: 25%; }
+	dl.tags dd { margin: 0; padding: 0; clear: right; float: right; }
+	

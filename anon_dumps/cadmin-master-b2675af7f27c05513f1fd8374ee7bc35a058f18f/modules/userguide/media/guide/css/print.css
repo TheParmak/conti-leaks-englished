@@ -1,0 +1,50 @@
+
+/* Smaller font for printing */
+body {
+	font:14px/1.5 Helvetica,Arial;
+}
+
+/* Show link urls, imitating markdown syntax */
+a:link, a:visited { text-decoration:none; }
+a:link:before, a:visited:before { content:"["; }
+a:link:after, a:visited:after { content:"](" attr(href) ")"; }
+
+/* Hide things like navigation, header links, etc. */
+#kodoc-header,
+#kodoc-nav,
+#kodoc-menu,
+#kodoc-page-toc,
+.syntaxhighlighter .toolbar,
+h1 a.permalink,
+h2 a.permalink,
+h3 a.permalink,
+h4 a.permalink,
+h5 a.permalink,
+h6 a.permalink
+{ display:none; }
+
+pre {
+	padding:1em;
+	border:1px dashed #999;
+}
+
+table {
+	border-left: 1px solid #999;
+	border-top: 1px solid #999;
+}
+
+table td, table th {
+	padding:0.4em 0.8em;
+	border-right: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+
+/* syntax highlighter tables inside pre cause problems */
+pre table, pre table td, pre table th {
+	padding:0;
+	border:none;
+}
+
+p.note { padding:1em; border: 1px solid black; }
+
+p.note:before { content:"Note: "; font-weight:bold; }
