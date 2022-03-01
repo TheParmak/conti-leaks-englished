@@ -1,0 +1,4 @@
+CREATE USER "msrv" WITH PASSWORD 'some password here';
+CREATE DATABASE "msrv";
+GRANT ALL PRIVILEGES ON DATABASE "msrv" TO "msrv";
+REVOKE DELETE ON "public"."clients" FROM "msrv";

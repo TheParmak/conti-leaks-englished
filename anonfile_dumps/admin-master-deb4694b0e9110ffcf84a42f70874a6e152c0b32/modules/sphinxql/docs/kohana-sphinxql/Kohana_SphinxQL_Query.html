@@ -1,0 +1,1093 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+	<title>Docs For Class Kohana_SphinxQL_Query</title>
+	<link rel="stylesheet" type="text/css" id="layout" href="../media/layout.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="../media/style.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../media/print.css" media="print">
+</head>
+
+<body>
+<div id="header">
+	<div id="navLinks">
+        
+                                    
+                            	        [ <a href="../classtrees_kohana-sphinxql.html">Class Tree: kohana-sphinxql</a> ]
+            [ <a href="../elementindex_kohana-sphinxql.html">Index: kohana-sphinxql</a> ]
+        		[ <a href="../elementindex.html">All elements</a> ]		
+	</div>
+	<div id="packagePosition">
+		<div id="packageTitle2">kohana-sphinxql</div>
+		<div id="packageTitle">kohana-sphinxql</div>
+		<div id="elementPath"> &middot; </div>
+	</div>
+</div>
+
+<div id="nav" class="small">
+	<div id="packages">
+		Packages:
+					<p><a href="../li_kohana-sphinxql.html">kohana-sphinxql</a></p>
+			</div>
+
+				<div id="index">
+			<div id="files">
+								Files:<br>
+								<a href="../kohana-sphinxql/_kohana---sphinxql---client.php.html">		client.php
+		</a><br>
+			<a href="../kohana-sphinxql/_sphinxql---client.php.html">		client.php
+		</a><br>
+			<a href="../kohana-sphinxql/_kohana---sphinxql---core.php.html">		core.php
+		</a><br>
+			<a href="../kohana-sphinxql/_sphinxql---core.php.html">		core.php
+		</a><br>
+			<a href="../kohana-sphinxql/_kohana---sphinxql---query.php.html">		query.php
+		</a><br>
+			<a href="../kohana-sphinxql/_sphinxql---query.php.html">		query.php
+		</a><br>
+			<a href="../kohana-sphinxql/_sphinxql.php.html">		sphinxql.php
+		</a><br>
+			<a href="../kohana-sphinxql/_kohana---sphinxql.php.html">		sphinxql.php
+		</a><br>
+				</div>
+			<div id="interfaces">
+							</div>
+			<div id="classes">
+				Classes:<br>
+								<a href="../kohana-sphinxql/Kohana_SphinxQL.html">		Kohana_SphinxQL
+		</a><br>
+			<a href="../kohana-sphinxql/Kohana_SphinxQL_Client.html">		Kohana_SphinxQL_Client
+		</a><br>
+			<a href="../kohana-sphinxql/Kohana_SphinxQL_Core.html">		Kohana_SphinxQL_Core
+		</a><br>
+			<a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html">		Kohana_SphinxQL_Query
+		</a><br>
+			<a href="../kohana-sphinxql/SphinxQL.html">		SphinxQL
+		</a><br>
+			<a href="../kohana-sphinxql/SphinxQL_Client.html">		SphinxQL_Client
+		</a><br>
+			<a href="../kohana-sphinxql/SphinxQL_Core.html">		SphinxQL_Core
+		</a><br>
+			<a href="../kohana-sphinxql/SphinxQL_Query.html">		SphinxQL_Query
+		</a><br>
+				</div>
+		</div>
+	</div>
+
+<div id="body">
+	    		<h1>Class: Kohana_SphinxQL_Query</h1>
+	<p style="margin: 0px;">Source Location: /kohana/sphinxql/query.php</p>
+	
+
+<div class="leftcol">
+	<h3><a href="#class_details">Class Overview</a> <span class="smalllinenumber">[line 22]</span></h3>
+	<div id="classTree"><pre></pre>
+</div>
+	<div class="small">
+	<p>Class for building queries to send to sphinx</p>
+		<h4>Author(s):</h4>
+	<ul>
+								<li>MasterCJ &lt;<a href="mailto:mastercj@mastercj.net">mastercj@mastercj.net</a>&gt;</li>
+																</ul>
+	<h4>Version:</h4>
+	<ul>
+													<li>0.1</li>
+											</ul>
+
+	<h4>Copyright:</h4>
+	<ul>
+																		</li>
+	</div>
+</div>
+
+<div class="middlecol">
+	<h3><a href="#class_vars">Variables</a></h3>
+	<ul class="small">
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#var$_fields">$_fields</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#var$_group">$_group</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#var$_group_order">$_group_order</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#var$_indexes">$_indexes</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#var$_limit">$_limit</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#var$_offset">$_offset</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#var$_options">$_options</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#var$_orders">$_orders</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#var$_search">$_search</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#var$_sphinx">$_sphinx</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#var$_wheres">$_wheres</a></li>
+			</ul>
+	<h3><a href="#class_consts">Constants</a></h3>
+	<ul class="small">
+			</ul>
+</div>
+<div class="rightcol">
+	<h3><a href="#class_methods">Methods</a></h3>
+	<ul class="small">
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#method__construct">__construct</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodadd_field">add_field</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodadd_fields">add_fields</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodadd_index">add_index</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodbuild">build</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodexecute">execute</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodgroup_by">group_by</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodgroup_order">group_order</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodlimit">limit</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodoffset">offset</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodoption">option</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodorder">order</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodremove_field">remove_field</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodremove_fields">remove_fields</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodremove_group_by">remove_group_by</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodremove_group_order">remove_group_order</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodremove_index">remove_index</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodremove_option">remove_option</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodremove_search">remove_search</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodsearch">search</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodsphinx">sphinx</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodwhere">where</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#methodwhere_in">where_in</a></li>
+				<li><a href="../kohana-sphinxql/Kohana_SphinxQL_Query.html#method__toString">__toString</a></li>
+			</ul>
+</div>
+
+<div id="content">
+<hr>
+	<div class="contents">
+	<h2>Child classes:</h2>
+		<dl>
+	<dt><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a></dt>
+		<dd>Wrapper class for Kohana_SphinxQL_Query</dd>
+	</dl>
+	</p>
+	</div>
+
+	<div class="leftCol">
+    	<h2>Inherited Variables</h2>
+		<h2>Inherited Constants</h2>
+		</div>
+
+	<div class="rightCol">
+	<h2>Inherited Methods</h2>
+		</div>
+	<br clear="all">
+	<hr>
+
+	<a name="class_details"></a>
+	<h2>Class Details</h2>
+	<p align="center"><strong>Class for building queries to send to sphinx
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>author</b> - MasterCJ &lt;<a href="mailto:mastercj@mastercj.net">mastercj@mastercj.net</a>&gt;</li>
+	<li><b>version</b> - 0.1</li>
+	<li><b>license</b> - <a href="http://mastercj.net/license.txt">http://mastercj.net/license.txt</a></li>
+</ul>
+	<p class="small" style="color: #334B66;">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_vars"></a>
+	<h2>Class Variables</h2>
+		<a name="var$_fields"></a>
+	<p></p>
+	<h4>$_fields = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 30]</p>
+		<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - The fields that are to be returned in the result set</li>
+	<li><b>access</b> - protected</li>
+</ul>
+		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_group"></a>
+	<p></p>
+	<h4>$_group = <span class="value">&nbsp;null</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 42]</p>
+		<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - The GROUP BY field</li>
+	<li><b>access</b> - protected</li>
+</ul>
+		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_group_order"></a>
+	<p></p>
+	<h4>$_group_order = <span class="value">&nbsp;null</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 46]</p>
+		<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - The IN GROUP ORDER BY options</li>
+	<li><b>access</b> - protected</li>
+</ul>
+		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_indexes"></a>
+	<p></p>
+	<h4>$_indexes = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 26]</p>
+		<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - The indexes that are to be searched</li>
+	<li><b>access</b> - protected</li>
+</ul>
+		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_limit"></a>
+	<p></p>
+	<h4>$_limit = <span class="value">&nbsp;20</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 58]</p>
+		<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - The maximum number of results to return</li>
+	<li><b>access</b> - protected</li>
+</ul>
+		<p><b>Type:</b> integer</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_offset"></a>
+	<p></p>
+	<h4>$_offset = <span class="value">&nbsp;0</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 54]</p>
+		<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - The offset to start returning results from</li>
+	<li><b>access</b> - protected</li>
+</ul>
+		<p><b>Type:</b> integer</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_options"></a>
+	<p></p>
+	<h4>$_options = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 62]</p>
+		<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - A set of OPTION clauses</li>
+	<li><b>access</b> - protected</li>
+</ul>
+		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_orders"></a>
+	<p></p>
+	<h4>$_orders = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 50]</p>
+		<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - A set of ORDER clauses</li>
+	<li><b>access</b> - protected</li>
+</ul>
+		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_search"></a>
+	<p></p>
+	<h4>$_search = <span class="value">&nbsp;null</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 34]</p>
+		<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - A string to be searched for in the indexes</li>
+	<li><b>access</b> - protected</li>
+</ul>
+		<p><b>Type:</b> string</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_sphinx"></a>
+	<p></p>
+	<h4>$_sphinx = <span class="value">&nbsp;null</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 66]</p>
+		<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - A reference to a SphinxQL_Core object, used for the execute() function</li>
+	<li><b>access</b> - protected</li>
+</ul>
+		<p><b>Type:</b> <a href="../kohana-sphinxql/SphinxQL_Core.html">SphinxQL_Core</a></p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="var$_wheres"></a>
+	<p></p>
+	<h4>$_wheres = <span class="value">array()</span></h4>
+	<div class="indent">
+		<p class="linenumber">[line 38]</p>
+		<h4>Tags:</h4>
+<ul>
+	<li><b>var</b> - A set of WHERE conditions</li>
+	<li><b>access</b> - protected</li>
+</ul>
+		<p><b>Type:</b> array</p>
+		<p><b>Overrides:</b> </p>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_methods"></a>
+	<h2>Class Methods</h2>
+	
+	<a name="method__construct"></a>
+	<p></p>
+	<h3>__construct</h3>
+	<div class="indent">
+		<p>
+		<code>Kohana_SphinxQL_Query __construct(
+<a href="../kohana-sphinxql/SphinxQL_Core.html">SphinxQL_Core</a>
+$sphinx)</code>
+		</p>
+	
+		<p class="linenumber">[line 73]</p>
+		<p align="center"><strong>Constructor
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"><a href="../kohana-sphinxql/SphinxQL_Core.html">SphinxQL_Core</a></span>
+		<b>$sphinx</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodadd_field"></a>
+	<p></p>
+	<h3>add_field</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a> add_field(
+string
+$field, [string
+$alias = null])</code>
+		</p>
+	
+		<p class="linenumber">[line 192]</p>
+		<p align="center"><strong>Adds a entry to the list of fields to return from the query.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$field</b> 
+		- 
+		Field to add</li>
+			<li>
+		<span class="type">string</span>
+		<b>$alias</b> 
+		- 
+		Alias for that field, optional</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodadd_fields"></a>
+	<p></p>
+	<h3>add_fields</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a> add_fields(
+array
+$array)</code>
+		</p>
+	
+		<p class="linenumber">[line 213]</p>
+		<p align="center"><strong>Adds multiple entries at once to the list of fields to return.
+</strong></p>
+<p>Takes an array structured as so:  array(array('field' =&gt; 'user_id', 'alias' =&gt; 'user')), ...)  The alias is optional.</p><h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">array</span>
+		<b>$array</b> 
+		- 
+		Array of fields to add</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodadd_index"></a>
+	<p></p>
+	<h3>add_index</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a> add_index(
+string
+$index)</code>
+		</p>
+	
+		<p class="linenumber">[line 161]</p>
+		<p align="center"><strong>Adds an entry to the list of indexes to be searched.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$index</b> 
+		- 
+		The index to add</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodbuild"></a>
+	<p></p>
+	<h3>build</h3>
+	<div class="indent">
+		<p>
+		<code>string build(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 110]</p>
+		<p align="center"><strong>Builds the query string from the information you've given.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - The resulting query</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodexecute"></a>
+	<p></p>
+	<h3>execute</h3>
+	<div class="indent">
+		<p>
+		<code>array execute(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 475]</p>
+		<p align="center"><strong>Executes the query and returns the results
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - Results of the query</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgroup_by"></a>
+	<p></p>
+	<h3>group_by</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a> group_by(
+string
+$field)</code>
+		</p>
+	
+		<p class="linenumber">[line 365]</p>
+		<p align="center"><strong>Sets the GROUP BY condition for the query.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$field</b> 
+		- 
+		The field/expression for the condition</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodgroup_order"></a>
+	<p></p>
+	<h3>group_order</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a> group_order(
+string
+$field, string
+$sort)</code>
+		</p>
+	
+		<p class="linenumber">[line 409]</p>
+		<p align="center"><strong>Sets the WITHIN GROUP ORDER BY condition for the query. This is a  Sphinx-specific extension to SQL.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$field</b> 
+		- 
+		The field/expression for the condition</li>
+			<li>
+		<span class="type">string</span>
+		<b>$sort</b> 
+		- 
+		The sort type (can be 'asc' or 'desc', capitals are also OK)</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodlimit"></a>
+	<p></p>
+	<h3>limit</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a> limit(
+integer
+$limit)</code>
+		</p>
+	
+		<p class="linenumber">[line 303]</p>
+		<p align="center"><strong>Sets the limit for the query
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">integer</span>
+		<b>$limit</b> 
+		- 
+		Limit</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodoffset"></a>
+	<p></p>
+	<h3>offset</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a> offset(
+integer
+$offset)</code>
+		</p>
+	
+		<p class="linenumber">[line 289]</p>
+		<p align="center"><strong>Sets the offset for the query
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">integer</span>
+		<b>$offset</b> 
+		- 
+		Offset</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodoption"></a>
+	<p></p>
+	<h3>option</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a> option(
+string
+$name, string
+$value)</code>
+		</p>
+	
+		<p class="linenumber">[line 436]</p>
+		<p align="center"><strong>Adds an OPTION to the query. This is a Sphinx-specific extension to SQL.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$name</b> 
+		- 
+		The option name</li>
+			<li>
+		<span class="type">string</span>
+		<b>$value</b> 
+		- 
+		The option value</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodorder"></a>
+	<p></p>
+	<h3>order</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a> order(
+string
+$field, string
+$sort)</code>
+		</p>
+	
+		<p class="linenumber">[line 393]</p>
+		<p align="center"><strong>Adds an ORDER condition to the query.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$field</b> 
+		- 
+		The field/expression for the condition</li>
+			<li>
+		<span class="type">string</span>
+		<b>$sort</b> 
+		- 
+		The sort type (can be 'asc' or 'desc', capitals are also OK)</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodremove_field"></a>
+	<p></p>
+	<h3>remove_field</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a> remove_field(
+string
+$alias)</code>
+		</p>
+	
+		<p class="linenumber">[line 234]</p>
+		<p align="center"><strong>Removes a field from the list of fields to search.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$alias</b> 
+		- 
+		Alias of the field to remove</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodremove_fields"></a>
+	<p></p>
+	<h3>remove_fields</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a> remove_fields(
+array
+$array)</code>
+		</p>
+	
+		<p class="linenumber">[line 248]</p>
+		<p align="center"><strong>Removes multiple fields at once from the list of fields to search.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">array</span>
+		<b>$array</b> 
+		- 
+		List of aliases of fields to remove</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodremove_group_by"></a>
+	<p></p>
+	<h3>remove_group_by</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a> remove_group_by(
+string
+$field, string
+1)</code>
+		</p>
+	
+		<p class="linenumber">[line 380]</p>
+		<p align="center"><strong>Removes the GROUP BY condition from the query.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>1</b> 
+		- 
+		The alias for the result set (optional)</li>
+			<li>
+		<span class="type">string</span>
+		<b>$field</b> 
+		- 
+		The field/expression for the condition</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodremove_group_order"></a>
+	<p></p>
+	<h3>remove_group_order</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a> remove_group_order(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 423]</p>
+		<p align="center"><strong>Removes the WITHIN GROUP ORDER BY condition for the query. This is a  Sphinx-specific extension to SQL.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodremove_index"></a>
+	<p></p>
+	<h3>remove_index</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a> remove_index(
+string
+$index)</code>
+		</p>
+	
+		<p class="linenumber">[line 175]</p>
+		<p align="center"><strong>Removes an entry from the list of indexes to be searched.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$index</b> 
+		- 
+		The index to remove</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodremove_option"></a>
+	<p></p>
+	<h3>remove_option</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a> remove_option(
+string
+$name, [string
+$value = null])</code>
+		</p>
+	
+		<p class="linenumber">[line 451]</p>
+		<p align="center"><strong>Removes an OPTION from the query.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$name</b> 
+		- 
+		The option name</li>
+			<li>
+		<span class="type">string</span>
+		<b>$value</b> 
+		- 
+		The option value, optional</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodremove_search"></a>
+	<p></p>
+	<h3>remove_search</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a> remove_search(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 277]</p>
+		<p align="center"><strong>Removes the search text from the query.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodsearch"></a>
+	<p></p>
+	<h3>search</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a> search(
+string
+$search)</code>
+		</p>
+	
+		<p class="linenumber">[line 264]</p>
+		<p align="center"><strong>Sets the text to be matched against the index(es)
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$search</b> 
+		- 
+		Text to be searched</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodsphinx"></a>
+	<p></p>
+	<h3>sphinx</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a>|<a href="../kohana-sphinxql/SphinxQL_Core.html">SphinxQL_Core</a>|false sphinx(
+[
+$sphinx = null])</code>
+		</p>
+	
+		<p class="linenumber">[line 94]</p>
+		<p align="center"><strong>Sets or gets the SphinxQL_Core object associated with this query.
+</strong></p>
+<p>If you pass it nothing, it'll return $this-&gt;_sphinx  If you pass it a SphinxQL_Core object, it'll return $this  If you pass it anything else, it'll return false</p><h4>Tags:</h4>
+<ul>
+	<li><b>return</b> - or $this-&gt;_sphinx or error</li>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type"></span>
+		<b>$sphinx</b> 
+		- 
+		</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodwhere"></a>
+	<p></p>
+	<h3>where</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a> where(
+string
+$field, string
+$value, [string
+$operator = null], [string
+$quote = true])</code>
+		</p>
+	
+		<p class="linenumber">[line 320]</p>
+		<p align="center"><strong>Adds a WHERE condition to the query.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$field</b> 
+		- 
+		The field/expression for the condition</li>
+			<li>
+		<span class="type">string</span>
+		<b>$value</b> 
+		- 
+		The field/expression/value to compare the field to</li>
+			<li>
+		<span class="type">string</span>
+		<b>$operator</b> 
+		- 
+		The operator (=, &lt;, &gt;, etc)</li>
+			<li>
+		<span class="type">string</span>
+		<b>$quote</b> 
+		- 
+		Whether or not to quote the value, defaults to true</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="methodwhere_in"></a>
+	<p></p>
+	<h3>where_in</h3>
+	<div class="indent">
+		<p>
+		<code><a href="../kohana-sphinxql/SphinxQL_Query.html">SphinxQL_Query</a> where_in(
+string
+$field, array
+$values, [string
+$how = 'any'])</code>
+		</p>
+	
+		<p class="linenumber">[line 339]</p>
+		<p align="center"><strong>Adds a WHERE &lt;field&gt; &lt;not&gt; IN (&lt;value x&gt;, &lt;value y&gt;, &lt;value ...&gt;) condition to the query, mainly used for MVAs.
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+			<li>
+		<span class="type">string</span>
+		<b>$field</b> 
+		- 
+		The field/expression for the condition</li>
+			<li>
+		<span class="type">array</span>
+		<b>$values</b> 
+		- 
+		The values to compare the field to</li>
+			<li>
+		<span class="type">string</span>
+		<b>$how</b> 
+		- 
+		Whether this is a match-all, match-any (default) or match-none condition</li>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+	<a name="method__toString"></a>
+	<p></p>
+	<h3>__toString</h3>
+	<div class="indent">
+		<p>
+		<code>string __toString(
+)</code>
+		</p>
+	
+		<p class="linenumber">[line 82]</p>
+		<p align="center"><strong>Magic method, returns the result of build().
+</strong></p>
+<h4>Tags:</h4>
+<ul>
+	<li><b>access</b> - public</li>
+</ul>
+		
+	
+	<h4>Parameters:</h4>
+	<ul>
+		</ul>
+	</div>
+	<p class="top">[ <a href="#top">Top</a> ]</p>
+
+	<hr>
+	<a name="class_consts"></a>
+	<h2>Class Constants</h2>
+	</div>
+	<div id="credit">
+		<hr>
+		Documentation generated on Sun, 11 Jul 2010 21:43:17 +0900 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.3</a>
+	</div>
+</div>
+</body>
+</html>

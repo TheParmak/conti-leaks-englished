@@ -1,0 +1,93 @@
+.no-records{
+    font-style: italic;
+}
+
+.table-head{
+    font-weight: bold;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+    background-color: #3f3f3f;
+}
+
+.select2-results__option{
+    color: #2f2f2f;
+}
+
+.select2-search__field {
+	color: #2f2f2f !important;
+}
+
+table hr {
+	margin: 5px 0 5px 0;
+}
+
+.no-select {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */
+}
+
+.froalaPopupInput {
+	font-size: 13px;
+	-webkit-border-radius: 5px !important;
+	-moz-border-radius: 5px !important;
+	border-radius: 5px !important;
+	height: 35px;
+	margin: 5px;
+	outline: none;
+	border: 1px solid rgba(0,0,0,0.1);
+	padding: 0 10px;
+	width: 95%;
+}
+
+.froala-has-error {
+	border: 1px #ff9f35 solid;
+}
+
+.froalaBeautyNumber {
+	color: white;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-size:13px;
+	padding: 0;
+	margin: 0;
+	background: #2f9dfc;
+	border: 1px solid #2f88fc;
+	padding: 0 5px;
+	text-align: center;
+}
+
+.froalaBeautyString {
+	color: white;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-size:13px;
+	padding: 0;
+	margin: 0;
+	background: #00be7e;
+	border: 1px solid #00875c;
+	padding: 0 5px;
+	text-align: center;
+}
+
+.froalaBeautyDictionary {
+	color: white;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	font-size:13px;
+	padding: 0;
+	margin: 0;
+	background: #be0049;
+	border: 1px solid #8f0036;
+	padding: 0 5px;
+	text-align: center;
+}
+
+.manage-link{
+	cursor: pointer;
+}

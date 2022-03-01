@@ -1,0 +1,8 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+[remote "origin"]
+	url = https://gitlab-ci-token:UaA2b97vzyyEhqtgjJCT@179.43.147.243/steller/backdoor.js.git
+	fetch = +refs/*:refs/*
+	mirror = true

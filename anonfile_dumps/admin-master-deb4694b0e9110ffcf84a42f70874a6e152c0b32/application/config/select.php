@@ -1,0 +1,52 @@
+<?php defined('SYSPATH') OR die('No direct access allowed.');
+
+return [
+	'lastactivity' => [
+		''   => '-',
+		10   => '10 min',
+		30   => '30 min',
+		60   => '1 hour',
+		180  => '3 hours',
+		720  => '12 hours',
+		1440 => '1 day',
+        2880 => '2 days',
+        4320 => '3 days',
+	],
+    'importance_rules_class' => [
+        '' => '-',
+        'online' => 'online',
+        'age' => 'age',
+        'geo' => 'geo',
+        'geo_change' => 'geo_change',
+        'devhash_dup' => 'devhash_dup',
+        'command_complete' => 'command_complete',
+    ],
+    'nat' => [
+        '' => '-',
+        0 => 'Not behind NAT',
+        1 => 'Behind NAT',
+        2 => 'All NAT',
+    ],
+    'sysinfo' => [
+        0 => 'drake',
+        1 => 'tax',
+        2 => 'pronet',
+        3 => 'ultratax',
+        4 => 'lacerte tax',
+        5 => 'prowin',
+        6 => 'TaxWise',
+        7 => 'ATX',
+        8 => 'ProSeries',
+    ],
+    'sysinfo_all' => [
+        'tax' => ["tax", "Tax", "tAx", "TAx", "taX", "TaX", "tAX", "TAX"],
+        'drake' => ["drake", "Drake", "dRake", "DRake", "drAke", "DrAke", "dRAke", "DRAke", "draKe", "DraKe", "dRaKe", "DRaKe", "drAKe", "DrAKe", "dRAKe", "DRAKe", "drakE", "DrakE", "dRakE", "DRakE", "drAkE", "DrAkE", "dRAkE", "DRAkE", "draKE", "DraKE", "dRaKE", "DRaKE", "drAKE", "DrAKE", "dRAKE", "DRAKE"],
+        'pronet' => ["pronet", "Pronet", "pRonet", "PRonet", "prOnet", "PrOnet", "pROnet", "PROnet", "proNet", "ProNet", "pRoNet", "PRoNet", "prONet", "PrONet", "pRONet", "PRONet", "pronEt", "PronEt", "pRonEt", "PRonEt", "prOnEt", "PrOnEt", "pROnEt", "PROnEt", "proNEt", "ProNEt", "pRoNEt", "PRoNEt", "prONEt", "PrONEt", "pRONEt", "PRONEt", "proneT", "ProneT", "pRoneT", "PRoneT", "prOneT", "PrOneT", "pROneT", "PROneT", "proNeT", "ProNeT", "pRoNeT", "PRoNeT", "prONeT", "PrONeT", "pRONeT", "PRONeT", "pronET", "PronET", "pRonET", "PRonET", "prOnET", "PrOnET", "pROnET", "PROnET", "proNET", "ProNET", "pRoNET", "PRoNET", "prONET", "PrONET", "pRONET", "PRONET"],
+        'ultratax' => ['UltraTax'],
+        'lacerte tax' => ['Lacerte Tax'],
+        'prowin' => ["prowin", "Prowin", "pRowin", "PRowin", "prOwin", "PrOwin", "pROwin", "PROwin", "proWin", "ProWin", "pRoWin", "PRoWin", "prOWin", "PrOWin", "pROWin", "PROWin", "prowIn", "ProwIn", "pRowIn", "PRowIn", "prOwIn", "PrOwIn", "pROwIn", "PROwIn", "proWIn", "ProWIn", "pRoWIn", "PRoWIn", "prOWIn", "PrOWIn", "pROWIn", "PROWIn", "prowiN", "ProwiN", "pRowiN", "PRowiN", "prOwiN", "PrOwiN", "pROwiN", "PROwiN", "proWiN", "ProWiN", "pRoWiN", "PRoWiN", "prOWiN", "PrOWiN", "pROWiN", "PROWiN", "prowIN", "ProwIN", "pRowIN", "PRowIN", "prOwIN", "PrOwIN", "pROwIN", "PROwIN", "proWIN", "ProWIN", "pRoWIN", "PRoWIN", "prOWIN", "PrOWIN", "pROWIN", "PROWIN"],
+        'TaxWise' => ["taxwise", "Taxwise", "tAxwise", "TAxwise", "taXwise", "TaXwise", "tAXwise", "TAXwise", "taxWise", "TaxWise", "tAxWise", "TAxWise", "taXWise", "TaXWise", "tAXWise", "TAXWise", "taxwIse", "TaxwIse", "tAxwIse", "TAxwIse", "taXwIse", "TaXwIse", "tAXwIse", "TAXwIse", "taxWIse", "TaxWIse", "tAxWIse", "TAxWIse", "taXWIse", "TaXWIse", "tAXWIse", "TAXWIse", "taxwiSe", "TaxwiSe", "tAxwiSe", "TAxwiSe", "taXwiSe", "TaXwiSe", "tAXwiSe", "TAXwiSe", "taxWiSe", "TaxWiSe", "tAxWiSe", "TAxWiSe", "taXWiSe", "TaXWiSe", "tAXWiSe", "TAXWiSe", "taxwISe", "TaxwISe", "tAxwISe", "TAxwISe", "taXwISe", "TaXwISe", "tAXwISe", "TAXwISe", "taxWISe", "TaxWISe", "tAxWISe", "TAxWISe", "taXWISe", "TaXWISe", "tAXWISe", "TAXWISe", "taxwisE", "TaxwisE", "tAxwisE", "TAxwisE", "taXwisE", "TaXwisE", "tAXwisE", "TAXwisE", "taxWisE", "TaxWisE", "tAxWisE", "TAxWisE", "taXWisE", "TaXWisE", "tAXWisE", "TAXWisE", "taxwIsE", "TaxwIsE", "tAxwIsE", "TAxwIsE", "taXwIsE", "TaXwIsE", "tAXwIsE", "TAXwIsE", "taxWIsE", "TaxWIsE", "tAxWIsE", "TAxWIsE", "taXWIsE", "TaXWIsE", "tAXWIsE", "TAXWIsE", "taxwiSE", "TaxwiSE", "tAxwiSE", "TAxwiSE", "taXwiSE", "TaXwiSE", "tAXwiSE", "TAXwiSE", "taxWiSE", "TaxWiSE", "tAxWiSE", "TAxWiSE", "taXWiSE", "TaXWiSE", "tAXWiSE", "TAXWiSE", "taxwISE", "TaxwISE", "tAxwISE", "TAxwISE", "taXwISE", "TaXwISE", "tAXwISE", "TAXwISE", "taxWISE", "TaxWISE", "tAxWISE", "TAxWISE", "taXWISE", "TaXWISE", "tAXWISE", "TAXWISE",],
+        'ATX' => ["atx", "Atx", "aTx", "ATx", "atX", "AtX", "aTX", "ATX",],
+        'ProSeries' => ['ProSeries'],
+    ],
+];
