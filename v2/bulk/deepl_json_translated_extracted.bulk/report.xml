@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dfxml xmloutputversion='1.0' xmlns:debug='http://afflib.org/bulk_extractor/debug'>
+  <metadata 
+  xmlns='http://afflib.org/bulk_extractor/' 
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+  xmlns:dc='http://purl.org/dc/elements/1.1/'>
+    <dc:type>Feature Extraction</dc:type>
+  </metadata>
+  <creator version='1.0'>
+    <program>BULK_EXTRACTOR</program>
+    <version>2.0.0-beta2</version>
+    <build_environment>
+      <compiler>10.3.0 (10.3.0)</compiler>
+      <CPPFLAGS>-Wdate-time -D_FORTIFY_SOURCE=2 -I/usr/local/include -DUTC_OFFSET=+0000</CPPFLAGS>
+      <CFLAGS>-g -g -O3 -ffile-prefix-map=/build/bulk-extractor-M5fnTx/bulk-extractor-2.0.0~beta2=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC</CFLAGS>
+      <CXXFLAGS>-g -g -O3 -ffile-prefix-map=/build/bulk-extractor-M5fnTx/bulk-extractor-2.0.0~beta2=. -fstack-protector-strong -Wformat -Werror=format-security -pthread -Wall -MD -Wpointer-arith -Wshadow -Wwrite-strings -Wcast-align -Wredundant-decls -Wdisabled-optimization -Wfloat-equal -Wmultichar -Wmissing-noreturn -Woverloaded-virtual -Wsign-promo -funit-at-a-time -Weffc++ -fPIC</CXXFLAGS>
+      <LDFLAGS>-Wl,-z,relro -Wl,-z,now -L/usr/local/lib</LDFLAGS>
+      <LIBS>-lewf -lstdc++ -lexpat -lz -ldl -lsqlite3 -lcrypto -lgcrypt -lgpg-error -lexpat </LIBS>
+      <compilation_date>2021-11-02T17:07:47</compilation_date>
+      <library name="boost" version="107400"/>
+      <library name="libewf" version="20140812"/>
+      <library name="sqlite" version="3.36.0" source_id="2021-06-18 18:36:39 5c9a6c06871cb9fe42814af9c039eb6da5427a6ec28f187af7ebfb62eafaalt1"/>
+    </build_environment>
+    <execution_environment>
+      <cpuid>
+        <identification>GenuineIntel</identification>
+        <family>0</family>
+        <model>1</model>
+        <stepping>11</stepping>
+        <efamily>0</efamily>
+        <emodel>0</emodel>
+        <brand>71</brand>
+        <clflush_size>808</clflush_size>
+        <nproc>110</nproc>
+        <apicid>117</apicid>
+        <L1_cache_size>262144</L1_cache_size>
+      </cpuid>
+      <os_sysname>Linux</os_sysname>
+      <os_release>5.15.15-76051515-generic</os_release>
+      <os_version>#202201160435~1642693824~20.04~97db1bb-Ubuntu SMP Fri Jan 21 14:</os_version>
+      <host>vieneal</host>
+      <arch>x86_64</arch>
+      <command_line>bulk_extractor combined.json -o out</command_line>
+      <uid>1000</uid>
+      <username>theparmak</username>
+      <start_time>2022-03-01T01:35:57Z</start_time>
+    </execution_environment>
+  </creator>
+  <configuration>
+    <threads>16</threads>
+    <pagesize>16777216</pagesize>
+    <marginsize>16777216</marginsize>
+    <scanners>
+      <scanner>aes</scanner>
+      <scanner>base64</scanner>
+      <scanner>elf</scanner>
+      <scanner>evtx</scanner>
+      <scanner>exif</scanner>
+      <scanner>facebook</scanner>
+      <scanner>find</scanner>
+      <scanner>gzip</scanner>
+      <scanner>httplogs</scanner>
+      <scanner>json</scanner>
+      <scanner>kml</scanner>
+      <scanner>msxml</scanner>
+      <scanner>net</scanner>
+      <scanner>ntfsindx</scanner>
+      <scanner>ntfslogfile</scanner>
+      <scanner>ntfsmft</scanner>
+      <scanner>ntfsusn</scanner>
+      <scanner>pdf</scanner>
+      <scanner>rar</scanner>
+      <scanner>sqlite</scanner>
+      <scanner>utmp</scanner>
+      <scanner>vcard</scanner>
+      <scanner>windirs</scanner>
+      <scanner>winlnk</scanner>
+      <scanner>winpe</scanner>
+      <scanner>winprefetch</scanner>
+      <scanner>zip</scanner>
+      <scanner>accts</scanner>
+      <scanner>email</scanner>
+      <scanner>gps</scanner>
+    </scanners>
+  </configuration>
+  <provided_filename>combined.json</provided_filename>
+  <timestamp name='phase1 start' delta='0.001777' total='0.001778'/>
+  <runtime xmlns:debug="http://www.github.com/simsong/bulk_extractor/issues">
+    <debug:work_start threadid='140132443699008' pos0='0' pagesize='17783' bufsize='17783' t='1646098557799'/>
+    <debug:work_end threadid='140132435301952' pos0='0' t='1646098557808'/>
+  </runtime>
+  <source>
+    <image_filename>combined.json</image_filename>
+    <image_size>17783</image_size>
+    <hashdigest type='SHA1'>2ea087e1a25f44d67c5922006ff301bca94ca6d2</hashdigest>
+  </source>
+  <timestamp name='phase1 end' delta='0.009826' total='0.011606'/>
+  <timestamp name='phase2 start' delta='0.000018' total='0.011625'/>
+  <timestamp name='phase2 end' delta='0.000972' total='0.012598'/>
+  <report>
+    <total_bytes>17783</total_bytes>
+    <elapsed_seconds>0.012604</elapsed_seconds>
+    <max_depth_seen>0</max_depth_seen>
+    <dup_bytes_encountered>0</dup_bytes_encountered>
+    <scanner_stats>
+      <scanner><name>aes</name><seconds>0.000447</seconds><calls>1</calls></scanner>
+      <scanner><name>base64</name><seconds>0.000056</seconds><calls>1</calls></scanner>
+      <scanner><name>elf</name><seconds>0.000027</seconds><calls>1</calls></scanner>
+      <scanner><name>evtx</name><seconds>0.000013</seconds><calls>1</calls></scanner>
+      <scanner><name>exif</name><seconds>0.000064</seconds><calls>1</calls></scanner>
+      <scanner><name>facebook</name><seconds>0.000174</seconds><calls>1</calls></scanner>
+      <scanner><name>find</name><seconds>0.000000</seconds><calls>1</calls></scanner>
+      <scanner><name>gzip</name><seconds>0.000040</seconds><calls>1</calls></scanner>
+      <scanner><name>httplogs</name><seconds>0.000109</seconds><calls>1</calls></scanner>
+      <scanner><name>json</name><seconds>0.001936</seconds><calls>1</calls></scanner>
+      <scanner><name>kml</name><seconds>0.000003</seconds><calls>1</calls></scanner>
+      <scanner><name>msxml</name><seconds>0.000001</seconds><calls>1</calls></scanner>
+      <scanner><name>net</name><seconds>0.000782</seconds><calls>1</calls></scanner>
+      <scanner><name>ntfsindx</name><seconds>0.000002</seconds><calls>1</calls></scanner>
+      <scanner><name>ntfslogfile</name><seconds>0.000001</seconds><calls>1</calls></scanner>
+      <scanner><name>ntfsmft</name><seconds>0.000001</seconds><calls>1</calls></scanner>
+      <scanner><name>ntfsusn</name><seconds>0.000011</seconds><calls>1</calls></scanner>
+      <scanner><name>pdf</name><seconds>0.000020</seconds><calls>1</calls></scanner>
+      <scanner><name>rar</name><seconds>0.000186</seconds><calls>1</calls></scanner>
+      <scanner><name>sqlite</name><seconds>0.000002</seconds><calls>1</calls></scanner>
+      <scanner><name>utmp</name><seconds>0.000013</seconds><calls>1</calls></scanner>
+      <scanner><name>vcard</name><seconds>0.000002</seconds><calls>1</calls></scanner>
+      <scanner><name>windirs</name><seconds>0.000018</seconds><calls>1</calls></scanner>
+      <scanner><name>winlnk</name><seconds>0.000055</seconds><calls>1</calls></scanner>
+      <scanner><name>winpe</name><seconds>0.000069</seconds><calls>1</calls></scanner>
+      <scanner><name>winprefetch</name><seconds>0.000028</seconds><calls>1</calls></scanner>
+      <scanner><name>zip</name><seconds>0.000038</seconds><calls>1</calls></scanner>
+      <scanner><name>accts</name><seconds>0.000615</seconds><calls>1</calls></scanner>
+      <scanner><name>email</name><seconds>0.003103</seconds><calls>1</calls></scanner>
+      <scanner><name>gps</name><seconds>0.000028</seconds><calls>1</calls></scanner>
+    </scanner_stats>
+    <feature_files>
+      <feature_file><name>aes_keys</name><count>0</count></feature_file>
+      <feature_file><name>alerts</name><count>0</count></feature_file>
+      <feature_file><name>ccn</name><count>0</count></feature_file>
+      <feature_file><name>ccn_track2</name><count>0</count></feature_file>
+      <feature_file><name>domain</name><count>8</count></feature_file>
+      <feature_file><name>elf</name><count>0</count></feature_file>
+      <feature_file><name>email</name><count>0</count></feature_file>
+      <feature_file><name>ether</name><count>0</count></feature_file>
+      <feature_file><name>evtx_carved</name><count>0</count></feature_file>
+      <feature_file><name>exif</name><count>0</count></feature_file>
+      <feature_file><name>facebook</name><count>0</count></feature_file>
+      <feature_file><name>find</name><count>0</count></feature_file>
+      <feature_file><name>gps</name><count>0</count></feature_file>
+      <feature_file><name>httplogs</name><count>0</count></feature_file>
+      <feature_file><name>ip</name><count>0</count></feature_file>
+      <feature_file><name>jpeg_carved</name><count>0</count></feature_file>
+      <feature_file><name>json</name><count>92</count></feature_file>
+      <feature_file><name>kml</name><count>0</count></feature_file>
+      <feature_file><name>ntfsindx_carved</name><count>0</count></feature_file>
+      <feature_file><name>ntfslogfile_carved</name><count>0</count></feature_file>
+      <feature_file><name>ntfsmft_carved</name><count>0</count></feature_file>
+      <feature_file><name>ntfsusn_carved</name><count>0</count></feature_file>
+      <feature_file><name>pii</name><count>0</count></feature_file>
+      <feature_file><name>rar</name><count>0</count></feature_file>
+      <feature_file><name>rfc822</name><count>0</count></feature_file>
+      <feature_file><name>sin</name><count>0</count></feature_file>
+      <feature_file><name>sqlite_carved</name><count>0</count></feature_file>
+      <feature_file><name>tcp</name><count>0</count></feature_file>
+      <feature_file><name>telephone</name><count>0</count></feature_file>
+      <feature_file><name>unrar_carved</name><count>0</count></feature_file>
+      <feature_file><name>url</name><count>8</count></feature_file>
+      <feature_file><name>utmp_carved</name><count>0</count></feature_file>
+      <feature_file><name>vcard</name><count>0</count></feature_file>
+      <feature_file><name>windirs</name><count>0</count></feature_file>
+      <feature_file><name>winlnk</name><count>0</count></feature_file>
+      <feature_file><name>winpe</name><count>0</count></feature_file>
+      <feature_file><name>winpe_carved</name><count>0</count></feature_file>
+      <feature_file><name>winprefetch</name><count>0</count></feature_file>
+      <feature_file><name>zip</name><count>0</count></feature_file>
+    </feature_files>
+  </report>
+  <rusage>
+    <utime>0.013949</utime>
+    <stime>0.009299</stime>
+    <maxrss>7348</maxrss>
+    <minflt>452</minflt>
+    <majflt>0</majflt>
+    <nswap>0</nswap>
+    <inblock>0</inblock>
+    <oublock>112</oublock>
+    <clocktime>0.013055</clocktime>
+  </rusage>
+</dfxml>
