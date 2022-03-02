@@ -34,5 +34,6 @@ Big thanks to @Nathannaelc for providing deepl translated pdf documents and json
 
 Also big thanks to @offsecginger for providing json conversions of google translated pdf documents.
 
+Yet again big thanks to @tsale for his [repo](https://github.com/tsale/translated_conti_leaked_comms) google translated rocket chat files and google translated trickbot forum files are his work.
 Discord server if you want to help or follow changes: https://discord.gg/YwzTFVMy
 
