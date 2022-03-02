@@ -1,0 +1,81 @@
+    Vampir
+    New Topics
+    New replies
+
+    Start
+    Help
+    Search
+    Profile
+    Private Messages
+    Members
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club "
+    Frameworks "
+    Other Tools "
+    Search for externally accessible subdomains (aquatone)
+
+Search for externally available subdomains (aquatone)
+Alter - 1 - 25
+" previous topic next topic "
+
+Pages: 1
+Alter
+
+    Administrator
+    Member
+    *****
+        28
+        View Profile Private Message (Offline)
+
+: February 11, 2021, 02:06:10 am
+Written by
+
+rozetka please scribble, you had a guide I can not find
+ >
+
+There is a separate VPS with Kali on board.
+We use the following tool
+It is rolled out as follows (Applied for KALI, for other OS you need to install additional software)
+
+Cite
+
+    gem install aquatone
+
+
+Use it this way:
+Cite
+
+    aquatone-discover --domain example.com
+
+or
+Cite
+
+    aquatone-discover -d example.com
+
+
+In the output we get to the folder
+Code: [Highlight]
+
+/aquatone/examples.com/hosts.txt
+
+
+Pinging hosts from the LAN for backdoors (See Exchange webshell tutorial)
+" Last edited: Feb 11, 2021, 02:18:01 pm by Rozetka "
+
+Pages: 1
+
+    Monica Bellucci Fan Club "
+    Frameworks "
+    Other Tools "
+    Search for externally accessible subdomains (aquatone)
+
+Go to:
+ 
++ Quick Reply
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Developed with SychO
+
+

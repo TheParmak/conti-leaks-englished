@@ -1,0 +1,83 @@
+    Vampir
+    New Topics
+    New replies
+
+    Start
+    Help
+    Search
+    Profile
+    Private Messages
+    Members
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club "
+    Kill Chain "
+    Initial Access "
+    SonicWall SSL-VPN
+
+SonicWall SSL-VPN
+Alter - 2 - 81
+" previous topic next topic "
+
+Pages: 1
+Alter
+
+    Administrator
+    Member
+    *****
+        28
+        View Profile Private Message (Offline)
+
+: February 05, 2021, 10:37:40 am
+Written by
+
+For those who need to work with SonicWall via browser sessions
+Using a WEB browser to access
+
+ - take the session from the script output, e.g. "47ZjFKx24Nj2h0UtZKX2OYnZLgRg05aX2SuaotVzrQg="
+ - Open the browser in incognito mode, open the developer's console (js-console)
+ - Encode ID of the session in base64
+   >> btoa ("47ZjFKx24Nj2h0UtZKX2OYnZLgRg05aX2SuaotVzrQg=") [ENTER]
+   "NDdaakZLeDI0TmoyaDBVdFpLWDJPWW5aTGdSZzA1YVgyU3Vhb3RWenJRZz0="
+ - type in URL https://target (redirects to https://target/cgi-bin/welcome)
+ - go into the application/cookies in the console, add the cookie
+   swap : NDdaakZLeDI0TmoyaDBVdFpLWDJPWW5aTGdSZzA1YVgyU3Vhb3RWenJRZz0=
+ - in your browser (where .../cgi-bin/welcome) change URL to https://target/cgi-bin/portal
+ - access the resource in the user session
+" Last edited: Feb 11, 2021, 02:11:01 am by Alter "
+
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        View Profile E-mail Private Message (Offline)
+
+Response #1 : February 22, 2021, 10:28:27 pm
+Written by
+
+Sometimes you can pick up 2fa codes from the post office
+Collect subdomains through the subdomain finder script
+Looking for mail
+Try to authorize with the same that will be logged in to the VPN, if logged in, then try to enter the VPN and take 2fa code from the mail, enter and logged in. A couple of times it worked.
+By the way
+DO NOT RECOMMEND looking through the accounts where there is the first 2fa - if there is 2fa, there are probably 2fa everywhere, and if you do so, then come to each polzaku to which a note with 2fa code, they will inform the administrator and you out.
+" Last edited: Feb 24, 2021, 09:11:08 pm by Rozetka "
+
+Pages: 1
+
+    Monica Bellucci Fan Club "
+    Kill Chain "
+    Initial Access "
+    SonicWall SSL-VPN
+
+Go to:
+ 
++ Quick Reply
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Developed with SychO
+
+
