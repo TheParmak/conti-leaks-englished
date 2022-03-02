@@ -1,0 +1,105 @@
+    Vampir
+    New Topics
+    New replies
+
+    Start
+    Help
+    Search
+    Profile
+    Private Messages
+    Members
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club "
+    Software and Technologies "
+    Virtualization Solutions "
+    vSphere
+
+vSphere
+Rozetka - 2 - 32
+" previous topic next topic "
+
+Pages: 1
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 02:56:21 pm
+Written by
+
+piu
+
+Tyr
+
+    Users
+    Member
+    *
+        2
+        View Profile E-mail Personal Message (Offline)
+
+Response #1 : May 28, 2021, 09:54:18 pm
+Written by
+
+The fresh spheres have moved away from java and clients, and are running on pure HTML5.
+The first thing we can check about the backends is to check if the SSH and Console Shell services are enabled, without them at least a backup to the synology is not possible.
+In the left Navigator menu we click on Host and see a summary. There are usually 2 warnings in the middle of the screen.
+The ESXi shell is enabled on this host. You should disable the shell unless it is necessary for administrative purposes.
+SSH is enabled on this host. You should disable SSH unless it is necessary for administrative purposes.
+Additionally, you can see the Action > Services button at the top. If it says to disable these services, it means they are definitely enabled and backups are going to a third party host.
+
+Additionally, you can go into the Host tab to its internal Manage tab and open the Licensing item there. Look at the license, if it is free
+If it's free, then backup is not done by Veem, because you need a license for the sphere itself.
+
+Next, check where the backups are poured. Also on the left side of the host open the Monitor tab, in the middle of it the Logs tab. In the logs we find /var/log/vmauthd.log
+And look from what ip who authorized, as a rule, bek made at night, respectively look from 11 am to 7 am connections.
+Here is an example of successful authorization of a beeper on the sphere
+2021-05-02T00:03:07Z vmauthd[6822812]: Connect from remote socket (tut.ip.servera.backup:48280).
+2021-05-02T00:03:07Z vmauthd[6822812]: Connect from tut.ip.servera.backup
+
+Also sphere often fucks botnet so ignore conclusions like
+2021-05-01T05:19:27Z vmauthd[6788606]: Connect from remote socket (185.165.190.17:46546).
+2021-05-01T05:19:27Z vmauthd[6788606]: Connect from 185.165.190.17
+2021-05-01-01T05:19:29Z vmauthd[6788606]: recv() FAIL: 1. <<<<<<<<< note here that FAIL means someone tried to socket but sucked the tunnel.
+
+You can see all the administrators of the sphere in the main tab Host, at the top right Actions and Permissions.
+
+In addition to backups, the sphere sometimes stores snapshots, you can easily view and delete them in the tab. On the left Virtual Machines. Select the virtual machine, in it on the top right tab Actions
+and the menu item Snapshots. If Restore snapshot tab is active, it means we have snapshots, then open Manage snapshots tab and there we can delete them, deleting the delta file also deletes
+and further recovery from the VFMS file system I dunno, I have not encountered.
+
+
+
+So we found a Synology server and have access to it.
+Backups are usually done with Active Backup for Business. It's free, flexible, and free in-house))
+
+One thing but with a probability of 99% we will catch on as admins will fly mail and fluff notifications that all gone) Therefore in advance we go to
+Control Panel > Notifications > Advanced and there in the service ABB remove all the caps on sending notifications. You can also turn off all notifications.
+
+Open ABB, in it open the Virtual Machine tab and see all the hosts and their virtual machines that are backed up.
+To delete them, open the Tasks tab at the top and delete the backup tasks, it will swear that it is dangerous and will delete the backups,
+understanding all the risks of loss agree and wait for him to delete)
+
+In general, you can delete backups, then encrypt the virtuals, and roll fresh backups with locked virtuals, and set a task that it would make a backup once an hour to clean up the disk
+
+You can also see if there is a docker, it can also virtualize.
+
+Pages: 1
+
+    Monica Bellucci Fan Club "
+    Software and Technologies "
+    Virtualization Solutions "
+    vSphere
+
+Go to:
+ 
++ Quick Reply
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Developed with SychO
+
+

@@ -1,0 +1,63 @@
+    Vampir
+    New Topics
+    New replies
+
+    Start
+    Help
+    Search
+    Profile
+    Private Messages
+    Members
+
+Monica Bellucci Fan Club
+
+    Monica Bellucci Fan Club "
+    Kill Chain "
+    Final Phase "
+    Changing the RDP Port
+
+Changing the RDP Port
+Rozetka - 1 - 39
+" previous topic next topic "
+
+Pages: 1
+Rozetka
+
+    Administrator
+    Member
+    *****
+        35
+        View Profile E-mail Private Message (Offline)
+
+: February 11, 2021, 02:57:06 pm
+Written by
+
+vzhuh atatatatat
+PSH CODE >
+Cite
+
+    # add firewall rules
+    New-NetFirewallRule -DisplayName "New RDP Port 1350" -Direction Inbound -LocalPort 1350 -Protocol TCP -Action allow
+    New-NetFirewallRule -DisplayName "New RDP Port 1350" -Direction Inbound -LocalPort 1350 -Protocol UDP -Action allow
+    # add to registry new port
+    Set-ItemProperty -Path "HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" -Name PortNumber -Value 1350
+    # powershell
+    Restart-Service termservice -force
+
+" Last edited: Feb 11, 2021, 03:03:12 pm by Rozetka "
+
+Pages: 1
+
+    Monica Bellucci Fan Club "
+    Kill Chain "
+    Final Phase "
+    Changing the RDP Port
+
+Go to:
+ 
++ Quick Reply
+
+    SMF 2.0.18 | SMF © 2020, Simple Machines
+    Developed with SychO
+
+
