@@ -1,0 +1,107 @@
+2020-07-13T14:44:28 skywalker -> strix
+Hi
+
+2020-07-13T14:44:45 skywalker -> strix
+I was sent to you by defender
+
+2020-07-13T14:45:00 skywalker -> strix
+With a question about IIS
+
+2020-07-13T14:45:40 skywalker -> strix
+On deploying the site on iis
+
+2020-07-13T14:46:32 strix -> skywalker
+On IIS? What's the question? I've never used IIS, to be honest.
+
+2020-07-13T14:47:00 skywalker -> strix
+:)
+
+2020-07-13T14:47:42 strix -> skywalker
+Why IIS? What's wrong with apache or Nginx?
+
+2020-07-13T14:51:01 skywalker -> strix
+Yes I have a project I need to put a hook on a function that sits in the httpapi library on the windows server and handles requests. Actually need to intercept these requests. One of the requirements to work with iis. I am relatively new to windows. Chel simulate a server with the site and on it to practice interception, well, and actually debug the solution.
+
+2020-07-13T14:51:21 skywalker -> strix
+I got the site discounted by Bill.
+
+2020-07-13T14:52:17 skywalker -> strix
+I thought maybe we have someone who has dealt with this. Wrote defender he redirects to you)
+
+2020-07-13T14:52:33 skywalker -> strix
+I guess I'll have to count the rake)
+
+2020-07-13T14:56:35 strix -> skywalker
+And what is unclear about the deployment of the site? What is the site even written in? Any ASPs?
+
+2020-07-13T14:58:12 skywalker -> strix
+aspx js
+
+2020-07-13T14:59:01 strix -> skywalker
+And what is the question?
+
+2020-07-13T14:59:36 skywalker -> strix
+ In general terms it's clear that it has to be some kind of a muscle database plus something else... some kind of js engine... How to do all this on a Windows server
+
+2020-07-13T15:00:32 skywalker -> strix
+No need for details, a general outline will suffice
+
+2020-07-13T15:02:00 strix -> skywalker
+No idea yet. I'll have to Google it.
+
+2020-07-13T15:03:19 skywalker -> strix
+Ok. I'll be googling)
+
+2020-07-13T15:03:43 strix -> skywalker
+Well, it's easy enough to put musculus on the windup. But about JS you need to see what kind of framework it is. How about NodeJS?
+
+2020-07-13T15:04:00 skywalker -> strix
+Yes most likely.
+
+2020-07-13T15:04:54 skywalker -> strix
+I'll look into it then, I wanted to get through this a little quicker. Apparently not)
+
+2020-07-13T15:05:17 skywalker -> strix
+Okay. Thanks for your time.
+
+2020-07-13T15:05:41 strix -> skywalker
+Here's something I googled https://dev.to/petereysermans/hosting-a-node-js-application-on-windows-with-iis-as-reverse-proxy-397b -- you can try it
+
+2020-07-13T15:07:22 strix -> skywalker
+As I understand it, NodeJS has its own webserver. You'll have to configure IIS as a reverse proxy. I can try to help with that.
+
+2020-07-13T15:08:09 skywalker -> strix
+Ok. I'll ask you when I duck into this, then.
+
+2020-07-13T15:08:23 strix -> skywalker
+ok
+
+2020-07-13T15:10:04 strix -> skywalker
+So, what's ASP there for? Is NodeJS there as a backend or frontend?
+
+2020-07-14T21:30:53 skywalker -> strix
+You have to look it up. I don't know. Most likely the front.
+
+2020-07-14T21:31:15 skywalker -> strix
+* Didn't see a message from you
+
+2020-07-15T06:07:56 skywalker -> strix
+Been digging around all day yesterday. Still do not understand how to expand. Root directory looks like this (took a picture of the screen) :
+
+
+Download: https://qaz.im/load/AYaK8a/6e8yRS
+Delete: https://qaz.im/index.php?a=delete&q=946013175
+Password: aHNktGtDiH8r
+
+2020-07-15T11:44:08 strix -> skywalker
+I don't know, the file names don't tell me anything
+
+2020-07-15T11:45:21 skywalker -> strix
+Yeah, I'm the same thing hassled. Put the muscle separately on the server, downloaded jumla and put it with demo content.
+
+2020-07-15T11:46:20 strix -> skywalker
+maybe def knows?
+
+2020-07-15T11:48:00 skywalker -> strix
+But the address of the site turns out to be /IP/SiteIIS/joomla. Maybe). I should probably be fine for debugging purposes for now. The goal was to run the server and deploy the debugging software site on it.
+

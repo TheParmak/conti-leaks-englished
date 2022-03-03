@@ -1,0 +1,125 @@
+[12.11.21 14:24:45] champ: apr
+[12.11.21 14:25:06] champ: hi
+[12.11.21 14:25:11] fire: hi)
+[12.11.21 14:25:23] champ: what's the problem with logging into toad?
+[12.11.21 14:25:44] champ: and what client?
+[12.11.21 14:26:12] fire: the problem is that at some point, about 3 days ago
+[12.11.21 14:26:19] fire: connection lost
+[12.11.21 14:26:29] fire: that's it, no connection anymore
+[12.11.21 14:26:34] fire: psi+ client
+[12.11.21 14:26:54] champ: do you know your login (skippy) and password?
+[12.11.21 14:27:00] fire: I know my login
+[12.11.21 14:27:12] fire: I'll look in my files, sec
+[12.11.21 14:27:25] champ: no need to tell me, just look
+[12.11.21 14:27:37] fire: yeah, that's what I was after
+[12.11.21 14:28:50] champ: I'll just go over the settings!
+[12.11.21 14:28:59] fire: ok
+[12.11.21 14:29:03] champ: go to account setup
+[12.11.21 14:29:08] fire: Just a minute, literally.
+[12.11.21 14:29:11] fire: Get the hash
+[12.11.21 14:31:56] fire: tcnm
+[12.11.21 14:31:58] fire: check.
+[12.11.21 14:32:03] fire: login pass got
+[12.11.21 14:32:18] champ: there in the account should be your vash_login@q3mcco35auwcstmt.onion
+in the connections tab, in the manually spec... "checkbox and address
+odw5mdwotufuxxrgw3pvqjjuze3e33e33bylkl667h4nefwiimwqsumyd.onion
+port
+5222
+[12.11.21 14:32:28] fire: it is
+[12.11.21 14:32:53] champ: the other toad is off,
+[12.11.21 14:33:00] fire: in plan?
+[12.11.21 14:33:13] champ: you only have one?
+[12.11.21 14:33:33] fire: multiple accounts
+[12.11.21 14:33:41] champ: local?
+[12.11.21 14:33:49] fire: local-2
+[12.11.21 14:33:53] fire: no one works
+[12.11.21 14:33:59] champ: is tor working?
+[12.11.21 14:34:05] fire: sure)
+[12.11.21 14:34:14] fire: proxy registered in client
+[12.11.21 14:34:45] fire: I'll try to restart it again
+[12.11.21 14:34:49] champ: in the connection tab, what's in the last two fields?
+[12.11.21 14:35:10] fire: if possible\if the connection is encrypted
+[12.11.21 14:35:29] champ: check your port and torus
+[12.11.21 14:36:06] fire: Nov 12 17:35:53.000 [warn] Your application (using socks5 to port 5222) gave Tor a malformed hostname: [scrubbed]. Rejecting the connection.
+[12.11.21 14:36:10] fire: this is what it says
+[12.11.21 14:37:13] champ: what about the connetion proxy?
+[12.11.21 14:37:25] fire: 127.0.0.1/9050
+[12.11.21 14:38:12] fire: standard for torus
+[12.11.21 14:38:31] champ: sec
+[12.11.21 14:39:06] champ: https://qna.habr.com/q/371679
+[12.11.21 14:40:15] fire: in all other cases torus works
+[12.11.21 14:40:21] fire: only with Jabber
+[12.11.21 14:40:34] fire: let me try another client
+[12.11.21 14:40:35] champ: what operating system?
+[12.11.21 14:40:39] fire: wine
+[12.11.21 14:40:55] fire: it's been working for a week now
+[12.11.21 14:41:38] champ: shit))) I understand, never met such an error myself...
+[12.11.21 14:41:57] fire: yeah, it's not clear what's what
+[12.11.21 14:41:59] fire: sec
+[12.11.21 14:42:03] fire: check myranda
+[12.11.21 14:42:32] champ: ooh, haven't heard that one for a long time))))
+[12.11.21 14:42:53] champ: give me full error log
+[12.11.21 14:42:58] champ: from psi+
+[12.11.21 14:43:30] champ: maybe your firewall is blocking, most likely in the viewer
+[12.11.21 14:43:40] champ: it won't let me go to 5222
+[12.11.21 14:43:56] champ: I'm pretty sure
+[12.11.21 14:44:27] champ: I just don't use windup, but it's very similar
+[12.11.21 14:44:41] champ: or AB
+[12.11.21 14:44:44] fire: my firewall's down
+[12.11.21 14:44:47] fire: no av
+[12.11.21 14:44:54] fire: I change laptops every 2 weeks)
+[12.11.21 14:45:09] fire: how do you get psi logs?
+[12.11.21 14:45:13] fire: this is a log from torus
+[12.11.21 14:45:16] fire: I did
+[12.11.21 14:45:22] champ: it means the torus log
+[12.11.21 14:45:58] fire: Nov 12 17:35:41.058 [notice] Tor 0.4.5.10 (git-fd74f7628eba2525) running on Windows 8 [or later] with Libevent 2.1.12-stable, OpenSSL 1.1.1l, Zlib 1.2.11, Liblzma N/A, Libzstd N/A and Unknown N/A as libc.
+Nov 12 17:35:41.058 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://www.torproject.org/download/download#warning
+Nov 12 17:35:41.081 [notice] Configuration file "C:\Users\fire\AppData\Roaming\\torrc" not present, using reasonable defaults.
+Nov 12 17:35:41.082 [warn] Path for GeoIPFile (<default>) is relative and will resolve to C:\Users\fire\Desktop\tor\Tor\<default>. Is this what you wanted?
+Nov 12 17:35:41.083 [warn] Path for GeoIPv6File (<default>) is relative and will resolve to C:\Users\fire\Desktop\tor\\Tor\<default>. Is this what you wanted?
+Nov 12 17:35:41.084 [notice] Opening Socks listener on 127.0.0.1:9050
+Nov 12 17:35:41.085 [notice] Opened Socks listener connection (ready) on 127.0.0.1:9050
+Nov 12 17:35:41.000 [notice] Bootstrapped 0% (starting): Starting
+Nov 12 17:35:41.000 [notice] Starting with guard context "default"
+Nov 12 17:35:42.000 [notice] Bootstrapped 5% (conn): Connecting to a relay
+Nov 12 17:35:43.000 [notice] Bootstrapped 10% (conn_done): Connected to a relay
+Nov 12 17:35:43.000 [notice] Bootstrapped 14% (handshake): Handshaking with a relay
+Nov 12 17:35:43.000 [notice] Bootstrapped 15% (handshake_done): Handshake with a relay done
+Nov 12 17:35:43.000 [notice] Bootstrapped 20% (onehop_create): Establishing an encrypted directory connection
+Nov 12 17:35:43.000 [notice] Bootstrapped 25% (requesting_status): Asking for networkstatus consensus
+Nov 12 17:35:44.000 [notice] Bootstrapped 30% (loading_status): Loading networkstatus consensus
+Nov 12 17:35:47.000 [notice] Bootstrapped 45% (requesting_descriptors): Asking for relay descriptors
+Nov 12 17:35:47.000 [notice] I learned some more directory information, but not enough to build a circuit: We need more microdescriptors: we have 5081/6067, and can only build 58% of likely paths. (We have 86% of guards bw, 83% of midpoint bw, and 80% of exit bw = 58% of paths bw.)
+Nov 12 17:35:47.000 [notice] Bootstrapped 73% (loading_descriptors): Loading relay descriptors
+Nov 12 17:35:48.000 [notice] Bootstrapped 75% (enough_dirinfo): Loaded enough directory info to build circuits
+Nov 12 17:35:49.000 [notice] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
+Nov 12 17:35:49.000 [notice] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
+Nov 12 17:35:51.000 [notice] Bootstrapped 100% (done): Done
+Nov 12 17:35:53.000 [warn] Your application (using socks5 to port 5222) gave Tor a malformed hostname: [scrubbed]. Rejecting the connection.
+Nov 12 17:35:53.000 [warn] Warning! You've just connected to a v2 onion address. These addresses are deprecated for security reasons, and are no longer supported in Tor. Please encourage the site operator to upgrade. For more information see https://blog.torproject.org/v2-deprecation-timeline
+Nov 12 17:36:08.000 [warn] Your application (using socks5 to port 5222) gave Tor a malformed hostname: [scrubbed]. Rejecting the connection.
+[12.11.21 14:48:50] champ: Your system clock is off: Make sure the date and time on your computer are set correctly, and restart Tor. You may need to synchronize your system clock with the server.
+[12.11.21 14:48:56] champ: it is
+[12.11.21 14:49:05] champ: I don't see any apparent reason(
+[12.11.21 14:49:13] fire: Mm-hmm.
+[12.11.21 14:49:20] fire: try miranda
+[12.11.21 14:51:06] champ: maybe your torus is old?
+[12.11.21 14:51:11] fire: no
+[12.11.21 14:51:22] fire: because it panics when you connect to v2
+[12.11.21 14:52:05] champ: odw5mdwotufufuxuxrgw3pvqjjuze3e33bylllkl667h4nefwiimwqsumyd.onion - v3
+[12.11.21 14:52:45] fire: yes, I know
+[12.11.21 14:52:56] fire: there is a jaber just on v2
+[12.11.21 14:53:02] fire: it works
+[12.11.21 14:53:10] fire: panic but it works
+[12.11.21 14:53:11] fire: wow
+[12.11.21 14:53:18] fire: Miranda's hooked up
+[12.11.21 14:53:38] champ: for odw5mdwotufufuxxrgw3pvqjjuze3e33e33bylylkl667h4nefwiimwqsumyd.onion ??
+[12.11.21 14:53:44] fire: no
+[12.11.21 14:53:45] champ: I'll be right there.
+[12.11.21 14:53:50] fire: Oh, yeah.
+[12.11.21 14:53:54] fire: logged in from miranda
+[12.11.21 14:56:20] fire: now he logs in with psi too.)
+[12.11.21 14:56:24] fire: strange
+[12.11.21 14:56:40] fire: I don't know how, but it worked)
+[12.11.21 14:56:52] champ: what's your toad login?
+[12.11.21 14:57:03] fire: skippy@q3mcco35auwcstmt.onion

@@ -1,0 +1,1707 @@
+2020-06-26T08:08:00 target -> strix
+hi
+
+2020-06-26T08:08:00 target -> strix
+I'm from boosa.
+
+2020-06-26T08:08:00 target -> strix
+About the ftp checker
+
+2020-06-26T08:08:00 target -> strix
+Who put the Bentley TZ
+
+2020-06-26T08:08:04 target -> strix
+How is the process going there?
+
+2020-06-26T12:26:05 strix -> target
+hi
+
+2020-06-26T12:26:35 strix -> target
+He has a Bentley customer -- talked to him yesterday about it.
+
+2020-06-26T12:26:54 strix -> target
+Well, I wrote a script
+
+2020-06-26T12:28:25 strix -> target
+They put Selenium at Bentley's yesterday, but haven't started it yet. They're supposed to today. Found out here that his input data file isn't what it was supposed to be, but has a pretty fancy format. Yesterday I wrote a converter.
+
+2020-06-26T12:57:37 strix -> target
+By the way, it's not ftp, but web. That's why I had to use Selenium.
+
+2020-06-26T14:07:05 target -> strix
+hi
+
+2020-06-26T14:07:21 target -> strix
+so he hasn't tested it yet
+
+2020-06-26T14:07:35 target -> strix
+or did you test it and are you already fixing something?
+
+2020-06-26T14:16:50 strix -> target
+He was already testing, but it turned out that the input data file was not what I expected. I had to write a converter. We'll test it in about half an hour.
+
+2020-06-26T14:17:43 strix -> target
+And now it's still busy.
+
+2020-06-26T14:21:59 target -> strix
+Yep
+
+2020-06-26T14:21:59 target -> strix
+Yep
+
+2020-06-26T14:22:00 target -> strix
+unsubscribe please
+
+2020-06-26T14:22:03 target -> strix
+how do you override the tetes
+
+2020-06-26T14:22:04 target -> strix
+tests
+
+2020-06-26T14:22:16 target -> strix
+To keep me up to date
+
+2020-06-26T14:22:19 target -> strix
+I was the one who said this thing.
+
+2020-06-26T14:22:21 target -> strix
+at redmayne
+
+2020-06-26T14:22:23 target -> strix
+boosa knows
+
+2020-06-26T14:56:55 strix -> target
+Okay, I'll write back.
+
+2020-06-26T14:57:45 target -> strix
+cgc
+
+2020-06-26T14:57:46 target -> strix
+cp
+
+2020-06-26T15:02:43 strix -> target
+There in the original it was about FTP for some reason, but in the end it turned out to be a list of admins working through the web.
+
+2020-06-26T20:02:09 target -> strix
+hi
+
+2020-06-26T20:02:10 target -> strix
+bentley
+
+2020-06-26T20:02:11 target -> strix
+gone
+
+2020-06-26T20:02:14 target -> strix
+on the weekend
+
+2020-06-26T20:02:15 target -> strix
+rest
+
+2020-06-26T20:02:22 target -> strix
+duplicate the script please
+
+2020-06-26T20:08:27 strix -> target
+Do you want me to upload it to bugtracker or should I give it to you?
+
+2020-06-26T20:08:40 target -> strix
+just a working script
+
+2020-06-26T20:08:43 target -> strix
+where you can put the tcht
+
+2020-06-26T20:08:45 target -> strix
+with data
+
+2020-06-26T20:08:46 target -> strix
+and it worked
+
+2020-06-26T20:08:46 target -> strix
+plz
+
+2020-06-26T20:08:59 strix -> target
+OK, right away.
+
+2020-06-26T20:10:07 strix -> target
+the script itself: https://send.firefox.com/download/0551e3d54273af69/#-MdHkWuzmQ1ZYDXQfcCscg (password "suxxXX")
+
+2020-06-26T20:11:06 target -> strix
+Yeah and for dumbasses like me - how to run it and where
+
+2020-06-26T20:11:14 strix -> target
+data converter script: https://send.firefox.com/download/aa64df334659b1d3/#HRKN66xjfNpFJTdXETxCFw (same password)
+
+2020-06-26T20:11:36 target -> strix
+Oh my god.
+
+2020-06-26T20:11:38 target -> strix
+which extensions
+
+2020-06-26T20:11:46 target -> strix
+I haven't even seen one of these in 20 years
+
+2020-06-26T20:12:18 strix -> target
+source data file
+
+2020-06-26T20:12:53 strix -> target
+server0.txt convert to servers.txt with this command:
+
+2020-06-26T20:13:12 strix -> target
+awk -f conf.awk server0.txt >servers.txt
+
+2020-06-26T20:13:28 strix -> target
+You should get a file with lines like this:
+
+2020-06-26T20:13:47 strix -> target
+https://zeus2.easy-internet.co.uk:2083/ "positiv" "3EMch2D1vd5fjO"
+https://al-muhaidb.com:2083/cpsess0442451262/frontend/paper_lantern/email_accoun
+https://www.omegasystemsuae.com:2083/ "omegasys" "cpsess8568693448"
+https://cpanel.freehosting.com:2083/ "grupposi" "T0f7uqt36R"
+
+2020-06-26T20:14:00 target -> strix
+strix say plz
+
+2020-06-26T20:14:06 target -> strix
+I understand that it's like 2x2 to you.
+
+2020-06-26T20:14:09 target -> strix
+there is a server of some kind
+
+2020-06-26T20:14:11 target -> strix
+where it just lies
+
+2020-06-26T20:14:11 strix -> target
+i.e., "url user password" -- lines like these
+
+2020-06-26T20:14:15 target -> strix
+and put the txt with the input data there
+
+2020-06-26T20:14:33 target -> strix
+and simply run
+
+2020-06-26T20:14:59 strix -> target
+Well let me put it on one server. Really. I'm going to mess around on it now...
+
+2020-06-26T20:15:10 target -> strix
+put it down please
+
+2020-06-26T20:15:13 target -> strix
+10-20 minutes
+
+2020-06-26T20:15:16 target -> strix
+and then do whatever you want.
+
+2020-06-26T20:15:24 target -> strix
+That's why I don't launch rockets into space
+
+2020-06-26T20:15:27 target -> strix
+Because I don't know a thing about it.
+
+2020-06-26T20:16:10 target -> strix
+I just know that our tester won't be here until Mon.
+
+2020-06-26T20:16:11 target -> strix
+bentley
+
+2020-06-26T20:16:13 target -> strix
+doomsday rests too
+
+2020-06-26T20:16:24 target -> strix
+Boosa is also not here until the Mon.
+
+2020-06-26T20:17:44 strix -> target
+I'll put it right now.
+
+2020-06-26T20:27:39 strix -> target
+Damn, it doesn't seem to be running. What the hell was the point of closing it?
+
+2020-06-26T20:27:58 target -> strix
+Ok for Mon, then.
+
+2020-06-26T20:28:00 target -> strix
+these are questions for bentley
+
+2020-06-26T20:28:03 target -> strix
+he caliper
+
+2020-06-26T20:28:29 target -> strix
+)) the bouza will come and rage against him after the fact )
+
+2020-06-26T20:28:43 target -> strix
+Then stand down and have a nice weekend
+
+2020-06-26T20:33:33 strix -> target
+"Error: Vm not found."
+
+2020-06-26T20:33:47 target -> strix
+strix all don't waste your time
+
+2020-06-26T20:33:53 target -> strix
+it is understood that benley left beautifully
+
+2020-06-26T20:33:54 target -> strix
+)))))))
+
+2020-06-26T20:33:55 strix -> target
+Something went down, and the admin panel gives out this
+
+2020-06-26T20:34:05 strix -> target
+is there a malfunction on the hostname or something?
+
+2020-06-26T20:34:14 target -> strix
+Maybe on Mon.
+
+2020-06-26T20:34:19 target -> strix
+I'm going to distract the defender with this
+
+2020-06-26T20:34:23 target -> strix
+also don't
+
+2020-06-26T20:34:25 strix -> target
+I was thinking of doing some digging this weekend.
+
+2020-06-26T20:34:26 target -> strix
+And your time to waste.
+
+2020-06-26T20:34:31 target -> strix
+now
+
+2020-06-26T20:34:32 target -> strix
+min
+
+2020-06-26T20:34:35 target -> strix
+give me an ip
+
+2020-06-26T20:34:57 strix -> target
+46.249.32.111
+
+2020-06-26T20:35:59 target -> strix
+ now
+
+2020-06-26T20:36:00 target -> strix
+wait
+
+2020-06-26T20:36:14 strix -> target
+Did you pick up Def?
+
+2020-06-26T20:36:19 target -> strix
+yes
+
+2020-06-26T20:41:10 strix -> target
+It looks like it needs to be paid for.
+
+2020-06-26T20:41:41 strix -> target
+There's a deadline of July 1, so there's still time, supposedly. Could it really just be a glitch?
+
+2020-06-26T20:41:48 target -> strix
+def
+
+2020-06-26T20:41:53 target -> strix
+Waiting for
+
+2020-06-26T20:42:04 strix -> target
+Def sent to the cartridge
+
+2020-06-26T20:42:10 strix -> target
+Carter is still silent
+
+2020-06-26T20:42:25 target -> strix
+Yeah great solve it then
+
+2020-06-26T20:42:36 target -> strix
+If you need a server right away very much
+
+2020-06-26T20:42:38 target -> strix
+ask def.
+
+2020-06-26T20:42:40 target -> strix
+give free
+
+2020-06-26T20:42:45 target -> strix
+for some tests
+
+2020-06-26T20:42:46 target -> strix
+whatever
+
+2020-06-26T20:43:14 strix -> target
+No, it should recover
+
+2020-06-26T20:43:25 strix -> target
+it may just need to be paid for
+
+2020-06-26T20:43:36 strix -> target
+Or maybe it's just a hosting problem.
+
+2020-06-26T20:43:55 strix -> target
+in any case, I think it should be solved by monday
+
+2020-06-26T20:44:05 target -> strix
+will solve of course)
+
+2020-06-26T20:46:28 strix -> target
+kakrter promised to open a ticket and pay
+
+2020-06-26T20:46:34 strix -> target
+*carter
+
+2020-06-26T20:50:24 target -> strix
+great
+
+2020-06-26T20:50:29 target -> strix
+So you're the web part.
+
+2020-06-26T20:50:29 target -> strix
+we have
+
+2020-06-26T20:50:34 target -> strix
+or off the web
+
+2020-06-26T20:50:37 target -> strix
+just to keep in mind
+
+2020-06-26T20:50:56 strix -> target
+I'm just an admin
+
+2020-06-26T20:51:18 strix -> target
+I don't know why I was stressed with these scripts, to be honest :)
+
+2020-06-26T20:51:23 target -> strix
+))))))))))))
+
+2020-06-26T20:51:26 target -> strix
+
+
+2020-06-26T20:51:32 target -> strix
+and who assigned the
+
+2020-06-26T20:51:33 target -> strix
+boosa?
+
+2020-06-26T20:52:16 strix -> target
+Boosa, then the professor asked me to create something on verichelle, although I had never worked with verichelle before
+
+2020-06-26T20:56:45 target -> strix
+))))))))))))))))))
+
+2020-06-26T20:56:51 target -> strix
+It's funny though
+
+2020-06-26T20:56:56 target -> strix
+well, as they say
+
+2020-06-26T20:56:58 target -> strix
+good people are asking for
+
+2020-06-26T20:57:06 target -> strix
+when asked
+
+2020-06-26T20:57:16 target -> strix
+You don't want to say no to them.
+
+2020-06-26T20:57:27 target -> strix
+))) yes prof was talking about his solutions on verchel
+
+2020-06-26T20:57:32 target -> strix
+but didn't say you were going to do them)
+
+2020-06-26T20:58:14 strix -> target
+maybe it also sculpts something of its own, in addition to what I do
+
+2020-06-26T21:00:06 target -> strix
+main
+
+2020-06-26T21:00:10 target -> strix
+to make a case from them
+
+2020-06-26T21:00:11 target -> strix
+and it will be
+
+2020-06-26T21:00:15 target -> strix
+pro
+
+2020-06-26T21:00:55 target -> strix
+and you
+
+2020-06-26T21:00:56 target -> strix
+do
+
+2020-06-26T21:00:57 target -> strix
+checker
+
+2020-06-26T21:00:59 target -> strix
+ehe on the links?
+
+2020-06-26T21:03:10 strix -> target
+Yeah, Bentley gave me a second task. Haven't done it yet, but I've googled something about it - one guy was downloading backups from Chromium server using Selenium - it's Python-based script too. -- You can use it as a base. The only thing I don't know is how to distinguish different types of alerts from chrome.
+
+2020-06-26T21:04:04 target -> strix
+there you know
+
+2020-06-26T21:04:06 target -> strix
+If the file downloaded
+
+2020-06-26T21:04:09 target -> strix
+it goes in the folder
+
+2020-06-26T21:04:12 target -> strix
+And if the alert
+
+2020-06-26T21:04:19 target -> strix
+then it does not show up in the poppy
+
+2020-06-26T21:04:23 target -> strix
+that's enough
+
+2020-06-26T21:05:21 strix -> target
+And also, you have to make the signal by sound or by pop-up message -- I don't know how to do it on Windows yet, but on Linux you can play sounds with special command, and make pop-up messages by different command too. So, under linux it is roughly clear how to do it.
+
+2020-06-26T21:06:29 strix -> target
+I mean, you can just put or not put in the folder? But a beep or pop-up message would be nice, I guess -- to get attention.
+
+2020-06-26T21:17:59 target -> strix
+would be nice.
+
+2020-06-26T21:18:07 target -> strix
+But that's just some tricky stuff you've got going on there.
+
+2020-06-26T21:18:33 target -> strix
+the main thing is to quickly understand
+
+2020-06-26T21:18:36 target -> strix
+that some kind of link
+
+2020-06-26T21:18:40 target -> strix
+blocked by chrome
+
+2020-06-26T21:18:42 strix -> target
+At least that's what Bentley wrote in the ticket
+
+2020-06-26T21:18:57 target -> strix
+If there is any
+
+2020-06-26T21:18:58 target -> strix
+solution
+
+2020-06-26T21:18:59 strix -> target
+maybe it could be simpler
+
+2020-06-26T21:19:01 target -> strix
+which quickly informs
+
+2020-06-26T21:19:06 target -> strix
+it will be super
+
+2020-06-26T21:19:11 strix -> target
+I would just write in a log, and then study it
+
+2020-06-26T21:19:23 target -> strix
+or just a page that is refreshed and there is an indication of which url went down
+
+2020-06-26T21:20:18 strix -> target
+There you can run the browser in headless mode, i.e. the browser window is hidden. The script is just a console script.
+
+2020-06-26T21:20:40 strix -> target
+By the way, that's how the first script works
+
+2020-06-26T21:34:51 target -> strix
+)) to me it's the same as you cursing right now.)
+
+2020-06-26T21:35:01 target -> strix
+I just got out of progrmming.
+
+2020-06-26T21:35:08 target -> strix
+A little insight into how we implement the lowader
+
+2020-06-26T21:35:11 target -> strix
+for self-development
+
+2020-06-26T21:35:19 target -> strix
+asked booza and coders in general terms
+
+2020-06-26T21:35:25 target -> strix
+And read 200 articles on the subject of ib
+
+2020-06-26T21:35:29 target -> strix
+To understand what it is
+
+2020-06-26T21:35:33 target -> strix
+And about cobalt strike
+
+2020-06-26T21:35:44 target -> strix
+But I still don't understand why I can't turn the scripts better than the echelons.
+
+2020-06-29T10:40:28 target -> strix
+hi
+
+2020-06-29T10:40:30 target -> strix
+brought up the server
+
+2020-06-29T10:40:33 target -> strix
+can we do a scrimmage?
+
+2020-06-29T10:40:35 target -> strix
+script
+
+2020-06-29T10:40:36 target -> strix
+I'll be back later.
+
+2020-06-29T11:47:38 strix -> target
+hi
+
+2020-06-29T11:48:19 strix -> target
+Yep, fixed the server yesterday. I put selenium and the script on it. Seems to be working.
+
+2020-06-29T14:00:53 target -> strix
+give me access there please
+
+2020-06-29T14:21:53 strix -> target
+hi
+
+2020-06-29T14:21:55 strix -> target
+Your server activated with the new ip.
+ip : 212.129.41.246
+port : 14741
+username : Administrator
+password : 3edcvgy7!@#123
+
+2020-06-29T14:22:01 strix -> target
+here are the accesses
+
+2020-06-29T14:22:21 strix -> target
+But I have to work there now.
+
+2020-06-29T15:13:16 target -> strix
+Hi
+
+2020-06-29T15:13:17 target -> strix
+ok
+
+2020-06-29T15:13:19 target -> strix
+I'm up for the night.
+
+2020-06-29T15:13:21 target -> strix
+then
+
+2020-06-29T15:13:22 target -> strix
+I'll write back
+
+2020-06-29T15:13:25 target -> strix
+I'm running back and forth in the office right now.
+
+2020-06-29T15:13:28 target -> strix
+also loaded
+
+2020-06-30T19:18:09 strix -> target
+So, are you going to watch the script today?
+
+2020-06-30T19:18:20 target -> strix
+Yes I asked for a Bentley
+
+2020-06-30T19:18:21 target -> strix
+it is busy
+
+2020-06-30T19:18:26 target -> strix
+...
+
+2020-06-30T19:18:28 target -> strix
+just say
+
+2020-06-30T19:18:31 target -> strix
+where to put the file
+
+2020-06-30T19:18:34 target -> strix
+and what to run
+
+2020-06-30T19:18:36 target -> strix
+plz
+
+2020-06-30T19:18:56 strix -> target
+and bentley already looked, we ran it on his car
+
+2020-06-30T19:19:04 strix -> target
+I think I was happy with it.
+
+2020-06-30T19:19:32 strix -> target
+If you're looking at it now, here's the car:
+
+2020-06-30T19:19:36 strix -> target
+ip : 212.129.41.246
+port : 14741
+username : Administrator
+password : 3edcvgy7!@#123
+
+2020-06-30T19:19:38 target -> strix
+Great ) I just need the report
+and he's swamped with work.
+Okay, I'll see what I can do.)
+
+2020-06-30T19:19:41 target -> strix
+so
+
+2020-06-30T19:19:42 target -> strix
+I went there.
+
+2020-06-30T19:19:44 target -> strix
+what's next
+
+2020-06-30T19:20:07 strix -> target
+Do you need to write a bugtracker report on the first task?
+
+2020-06-30T19:20:55 target -> strix
+no
+
+2020-06-30T19:21:02 target -> strix
+just close it.
+
+2020-06-30T19:21:03 target -> strix
+its
+
+2020-06-30T19:21:07 target -> strix
+Or the boosa will close
+
+2020-06-30T19:21:08 target -> strix
+I say
+
+2020-06-30T19:21:10 strix -> target
+Logged in? Then c:; cd \src\test; run the bash from \Program Files\Git\bin\bash.exe
+
+2020-06-30T19:21:43 strix -> target
+Once the bash is running, run ./col.py
+
+2020-06-30T19:22:12 strix -> target
+and wait half an hour for the servers_filtered.txt file to fill
+
+2020-06-30T19:23:44 strix -> target
+it writes fail/success for each URL as it goes along
+
+2020-06-30T19:25:29 strix -> target
+You could probably run it from cmd.exe as "python col.py" as well
+
+2020-06-30T19:28:45 target -> strix
+yes I see
+
+2020-06-30T19:28:46 target -> strix
+thanks
+
+2020-06-30T19:28:47 target -> strix
+put on
+
+2020-06-30T19:30:40 strix -> target
+does it work?
+
+2020-06-30T19:31:33 target -> strix
+Yes something is creeping in there
+
+2020-06-30T19:31:48 target -> strix
+[15:35:31] <strix> and wait half an hour -- servers_filtered.txt file to fill
+
+this is where it lies
+
+2020-06-30T19:31:50 target -> strix
+in which folder
+
+2020-06-30T19:33:05 strix -> target
+c:\src\test -- everything is there
+
+2020-06-30T19:33:21 strix -> target
+both the script and the configs
+
+2020-06-30T19:33:53 strix -> target
+server0.txt is the source data, it is converted to servers.txt by the command:
+
+2020-06-30T19:34:11 strix -> target
+awk -f conv.awk serrrver0.txt >servers.txt
+
+2020-06-30T19:34:35 strix -> target
+conv.awk is an awk-converter script, very simple by the way
+
+2020-06-30T19:34:50 target -> strix
+so I see a lot of
+
+2020-06-30T19:34:55 target -> strix
+and the result is a tht
+
+2020-06-30T19:34:56 target -> strix
+blank
+
+2020-06-30T19:35:00 target -> strix
+I must have misstarted something.
+
+2020-06-30T19:35:06 target -> strix
+Come see what I missed.
+
+2020-06-30T19:35:23 strix -> target
+it is empty until the script finishes, or you abort it with Ctrl-C
+
+2020-06-30T19:36:07 strix -> target
+Yes, the script seems to run correctly
+
+2020-06-30T19:41:17 target -> strix
+Ctrl-C
+
+won't stay
+
+2020-06-30T19:43:15 strix -> target
+seems to be unresponsive on Ctrl-C under Windows, if the current layout is Russian. -- I should have switched to English first, and everything is interrupted.
+
+2020-06-30T19:43:26 target -> strix
+thanks
+
+2020-06-30T19:44:52 target -> strix
+Yes, I can see everything is fine.
+
+2020-06-30T19:44:56 target -> strix
+thanks
+
+2020-06-30T19:44:58 target -> strix
+With echecker
+
+2020-06-30T19:45:00 target -> strix
+solved somehow
+
+2020-06-30T19:45:02 target -> strix
+thoughts
+
+2020-06-30T19:45:03 target -> strix
+time
+
+2020-06-30T19:45:04 target -> strix
+make it
+
+2020-06-30T19:46:41 strix -> target
+Yes with the checker, I'm going to mess around with it. So far it is not clear how to distinguish different types of alerts from chrome. So far, I can only understand that something went wrong during the download, but what exactly -- I don't know. I will try to google it, of course.
+
+2020-06-30T19:47:32 target -> strix
+why
+
+2020-06-30T19:47:35 target -> strix
+know what went wrong
+
+2020-06-30T19:47:37 target -> strix
+we've been discussing
+
+2020-06-30T19:47:43 target -> strix
+file appeared in the folder
+
+2020-06-30T19:47:45 target -> strix
+downloaded from
+
+2020-06-30T19:47:46 target -> strix
+so it's ok.
+
+2020-06-30T19:47:48 target -> strix
+did not appear
+
+2020-06-30T19:47:50 target -> strix
+So chrome cut
+
+2020-06-30T19:48:08 target -> strix
+script
+
+I requested a file via chrome
+If the file was in the Downloads folder in 10 seconds, then ok
+If not, then chrome cut it
+
+2020-06-30T19:48:08 target -> strix
+all
+
+2020-06-30T19:49:03 strix -> target
+So far, this is what I've Googled: https://medium.com/@moungpeter/how-to-automate-downloading-files-using-python-selenium-and-headless-chrome-9014f0cdd196
+
+2020-06-30T19:49:38 strix -> target
+Well, if so, it should be simple
+
+2020-06-30T19:51:13 strix -> target
+the dude downloads backups from a webserver using chrome via selenium
+
+2020-06-30T20:07:07 target -> strix
+well super if you can
+
+2020-06-30T20:07:09 target -> strix
+will be
+
+2020-06-30T20:07:12 target -> strix
+boosa asked for you
+
+2020-06-30T20:07:13 target -> strix
+load more
+
+2020-06-30T20:07:15 target -> strix
+by installing
+
+2020-06-30T20:07:16 target -> strix
+admins
+
+2020-06-30T20:07:17 target -> strix
+Lowaders
+
+2020-06-30T20:07:19 target -> strix
+different purchased
+
+2020-06-30T20:07:25 target -> strix
+to compare with our loader with bouza
+
+2020-06-30T20:07:26 target -> strix
+))))))))))
+
+2020-06-30T20:07:31 target -> strix
+But I don't feel like it.
+
+2020-06-30T20:07:38 target -> strix
+I understand that you will not be happy )
+
+2020-06-30T20:10:01 strix -> target
+what's the loader, what's the point?
+
+2020-06-30T20:10:14 strix -> target
+I'm not up to speed yet.
+
+2020-06-30T20:10:31 target -> strix
+just admins
+
+2020-06-30T20:10:33 target -> strix
+put on servers
+
+2020-06-30T20:10:34 target -> strix
+wpc
+
+2020-06-30T20:10:37 target -> strix
+there are pxp scpytes
+
+2020-06-30T20:10:39 target -> strix
+and database
+
+2020-06-30T20:10:41 target -> strix
+regular lowers
+
+2020-06-30T20:10:42 target -> strix
+purchased
+
+2020-06-30T20:10:44 target -> strix
+with admins
+
+2020-06-30T20:10:52 strix -> target
+you mean load want to test competing products?
+
+2020-06-30T20:11:00 target -> strix
+by installing
+
+2020-06-30T20:11:03 target -> strix
+admins them
+
+2020-06-30T20:11:09 target -> strix
+And the tests will already be on the Bentley
+
+2020-06-30T20:11:40 strix -> target
+What do these loaders loathe?
+
+2020-06-30T20:11:52 target -> strix
+what shall we say to them)
+
+2020-06-30T20:11:57 target -> strix
+Well, look at the dropout.
+
+2020-06-30T20:11:58 target -> strix
+work
+
+2020-06-30T20:12:00 target -> strix
+take ideas
+
+2020-06-30T20:12:01 target -> strix
+of which
+
+2020-06-30T20:12:02 target -> strix
+for myself
+
+2020-06-30T20:12:03 target -> strix
+with a booze
+
+2020-06-30T21:51:31 strix -> target
+Hmm, I can't seem to close the ticket myself
+
+2020-06-30T21:51:46 strix -> target
+Either I don't have the right or I wasn't looking hard enough.
+
+2020-07-01T10:31:00 strix -> target
+Hmm, I can't seem to close the ticket myself
+
+2020-07-01T10:31:00 strix -> target
+Either I don't have the right, or I didn't look hard enough.
+
+2020-07-14T19:30:00 target -> strix
+hi
+
+2020-07-14T19:30:06 target -> strix
+how we are doing
+
+2020-07-14T19:30:08 target -> strix
+how are you doing
+
+2020-07-14T19:38:01 strix -> target
+Nothing yet -- I'm trying to get the alerts to work. So far it does not work, and I do not know if it will work in the end. Already talked to buza and bentley about it today.
+
+2020-07-14T19:40:06 target -> strix
+they are from you
+
+2020-07-14T19:40:08 target -> strix
+asking for
+
+2020-07-14T19:40:09 target -> strix
+specifics?
+
+2020-07-14T19:40:12 target -> strix
+what kind of status
+
+2020-07-14T19:40:15 target -> strix
+or the file just appeared or not
+
+2020-07-14T19:40:16 target -> strix
+in the folder
+
+2020-07-14T19:40:18 target -> strix
+downloads
+
+2020-07-14T19:46:04 strix -> target
+Buza said it should be done in today or tomorrow. The day after tomorrow will be too late. They asked me for progress when it would be ready.
+
+2020-07-14T19:46:17 target -> strix
+yes bouza prv
+
+2020-07-14T19:46:18 target -> strix
+prv
+
+2020-07-14T19:46:20 target -> strix
+rights
+
+2020-07-14T19:46:21 target -> strix
+so I'm knocking
+
+2020-07-14T19:46:24 target -> strix
+so that if anything
+
+2020-07-14T19:46:29 target -> strix
+you were not overwhelmed by this task
+
+2020-07-14T19:46:32 target -> strix
+statuses
+
+2020-07-14T19:46:38 target -> strix
+and this is the number 1 task
+
+2020-07-14T19:46:52 target -> strix
+only if chrome cuts for any reason
+
+2020-07-14T19:46:57 target -> strix
+Or av defender
+
+2020-07-14T19:47:01 target -> strix
+there was an alert going off
+
+2020-07-14T19:47:37 strix -> target
+The file appears, but there is no alert. I can't get it to show up. It's possible that in Selenium the alerts are turned off completely and are only enabled in normal browser
+
+2020-07-14T19:48:03 target -> strix
+do you know how
+
+2020-07-14T19:48:09 target -> strix
+take the file
+
+2020-07-14T19:48:11 target -> strix
+which is downloaded
+
+2020-07-14T19:48:16 target -> strix
+and ask bentley for the file
+
+2020-07-14T19:48:17 target -> strix
+which cuts
+
+2020-07-14T19:48:24 target -> strix
+something to compare it to
+
+2020-07-14T19:48:51 target -> strix
+it says it has already given out
+
+2020-07-14T19:49:11 strix -> target
+I've already been given the Bentley, I've been practicing on it. it doesn't cut it in normal chrome, but it downloads fine through the selenium
+
+2020-07-14T19:49:21 target -> strix
+aah
+
+2020-07-14T19:49:23 target -> strix
+you mean this
+
+2020-07-14T19:49:44 strix -> target
+it gave me three files, no alerts at all
+
+2020-07-14T19:49:53 target -> strix
+So it means to write some kind of bat checker
+which will check the downloads folder
+if it shows up when you access the url and then the bat file
+it means everything is ok
+if not
+then it's not ok
+
+2020-07-14T19:50:01 target -> strix
+Booza has autotests for avs using a similar method
+
+2020-07-14T19:50:30 strix -> target
+they appear in the download directory
+
+2020-07-14T19:51:32 target -> strix
+I get it - you need to find a way to get it all through chrome
+
+2020-07-14T19:52:45 strix -> target
+It goes through chrome anyway. But if you use selenium for automation, the alerts don't want to work
+
+2020-07-14T19:53:15 strix -> target
+I use selenium chrome webdriver
+
+2020-07-14T19:57:12 target -> strix
+see
+
+2020-07-14T19:57:14 target -> strix
+how can
+
+2020-07-14T19:57:18 target -> strix
+bat file
+
+2020-07-14T19:57:18 target -> strix
+bat file
+
+2020-07-14T19:57:21 target -> strix
+opens a html file
+
+2020-07-14T19:57:23 target -> strix
+in the folder
+
+2020-07-14T19:57:25 target -> strix
+local
+
+2020-07-14T19:57:29 target -> strix
+clicks on the link there
+
+2020-07-14T19:57:33 target -> strix
+this link will not will
+
+2020-07-14T19:57:37 target -> strix
+It opens by default in the browser
+
+2020-07-14T19:57:42 target -> strix
+Here's where the yahroma comes in
+
+2020-07-14T19:57:46 target -> strix
+he's trying to squeeze
+
+2020-07-14T19:57:48 target -> strix
+10 seconds later
+
+2020-07-14T19:57:53 target -> strix
+bat checks dovnloads folder
+
+2020-07-14T19:57:56 target -> strix
+If the eche file does not appear there
+
+2020-07-14T19:57:59 target -> strix
+so
+
+2020-07-14T19:58:02 target -> strix
+chrome cuts it
+
+2020-07-14T19:58:52 target -> strix
+play it that way
+
+2020-07-14T19:58:55 target -> strix
+a little more complicated
+
+2020-07-14T20:01:27 strix -> target
+why a html file? what will it change?
+
+2020-07-14T20:01:40 target -> strix
+then
+
+2020-07-14T20:01:40 target -> strix
+what
+
+2020-07-14T20:01:41 target -> strix
+you call
+
+2020-07-14T20:01:50 target -> strix
+don't have to
+
+2020-07-14T20:01:50 target -> strix
+link
+
+2020-07-14T20:01:50 target -> strix
+via some file
+
+2020-07-14T20:01:52 target -> strix
+some plugin
+
+2020-07-14T20:01:58 target -> strix
+So what you are trying to do now is to trigger an echeck download.
+
+2020-07-14T20:02:02 target -> strix
+Through a plugin or module
+
+2020-07-14T20:02:09 target -> strix
+which runs everything through itself in chrome
+
+2020-07-14T20:02:11 target -> strix
+and does not give any alerts.
+
+2020-07-14T20:02:20 target -> strix
+Try just pasting the link into the html file
+
+2020-07-14T20:02:23 target -> strix
+local
+
+2020-07-14T20:02:25 target -> strix
+and click on it
+
+2020-07-14T20:02:28 target -> strix
+manually or by bat file
+
+2020-07-14T20:02:34 target -> strix
+and the system itself will open
+
+2020-07-14T20:02:36 target -> strix
+chrome browser
+
+2020-07-14T20:02:39 target -> strix
+no plugins
+
+2020-07-14T20:02:41 target -> strix
+and try to download the file
+
+2020-07-14T20:02:48 target -> strix
+Or it will give out an alert
+
+2020-07-14T20:03:01 target -> strix
+but the point is that the next bat file has to check the download folder
+
+2020-07-14T20:03:09 target -> strix
+and if it's empty, it means there was an alert and that's enough
+
+2020-07-14T20:04:08 strix -> target
+how do i click on a link without selenium?
+
+2020-07-14T20:04:48 strix -> target
+I actually have the "disable extensions" option enabled
+
+2020-07-14T20:04:48 strix -> target
+I actually have the "disable extensions" option enabled
+
+2020-07-14T20:05:02 target -> strix
+I'm not a coder.
+
+2020-07-14T20:05:04 target -> strix
+It just came to mind that
+
+2020-07-14T20:05:10 target -> strix
+What without some stuff
+
+2020-07-14T20:05:12 target -> strix
+But you're right.
+
+2020-07-14T20:05:14 target -> strix
+as a whole
+
+2020-07-14T20:05:24 target -> strix
+that you have to emulate somehow
+
+2020-07-14T20:05:27 target -> strix
+mouse click on the link
+
+2020-07-14T20:05:31 target -> strix
+by the link
+
+2020-07-14T20:05:34 target -> strix
+something or someone
+
+2020-07-14T20:07:40 strix -> target
+Isn't this smart browsing done through an extension?
+
+2020-07-14T22:00:04 target -> strix
+[15:29:25] <strix> isn't this smart browsing implemented through an extension?
+
+2020-07-14T22:00:06 target -> strix
+I don't know
+
+2020-07-16T01:00:27 target -> strix
+hi
+
+2020-07-16T01:00:30 target -> strix
+How we ended up deciding to do
+
+2020-07-16T01:00:35 target -> strix
+The bouza said it all seems to have been solved.
+
+2020-07-16T03:18:30 strix -> target
+booza suggested searching for a google service that all browsers use to check -- I googled this one https://transparencyreport.google.com/safe-browsing/search
+
+2020-07-16T03:19:39 strix -> target
+Basically, you can write a script that will open this service in your browser, insert the URL in the search bar and see the result
+
+2020-07-16T03:22:14 strix -> target
+only I had nothing to test it on today - I spent the whole day today kicking bentley to give me a working test file, but he didn't, because he was busy with something
+
+2020-07-16T03:38:03 target -> strix
+[22:43:57] <strix> only I had nothing to test today - I've spent all day today kicking bentley to give me a working test file, which has a scold, but he did not give, because he was busy with something
+
+2020-07-16T03:38:05 target -> strix
+is this a joke?
+
+2020-07-16T03:38:10 target -> strix
+send me the log
+
+2020-07-16T03:46:42 target -> strix
+familysafetyplans.com/1.exe
+this file gives out an error
+
+2020-07-16T03:47:09 target -> strix
+No unsafe content found
+ bullshit
+
+2020-07-16T12:22:34 strix -> target
+hi
+
+2020-07-16T12:24:23 target -> strix
+hey
+
+2020-07-16T12:25:00 strix -> target
+What's the joke? -- You said yesterday was the deadline, and buza went off at 6pm, and bentley was busy all day. Never gave me the test file, and I'm without it like I'm without hands.
+
+2020-07-16T12:25:16 target -> strix
+[22:59:52] <target> send me the log
+
+2020-07-16T12:25:20 strix -> target
+log of what?
+
+2020-07-16T12:25:21 target -> strix
+I'm at a loss.
+
+2020-07-16T12:25:25 target -> strix
+of your conversation
+
+2020-07-16T12:25:26 target -> strix
+with a Bentley
+
+2020-07-16T12:25:30 target -> strix
+for what reason
+
+2020-07-16T12:25:32 target -> strix
+he didn't find a minute
+
+2020-07-16T12:25:36 target -> strix
+download you file
+
+2020-07-16T12:25:42 target -> strix
+for a whole
+
+2020-07-16T12:25:42 target -> strix
+day
+
+2020-07-16T12:26:01 strix -> target
+I don't know.
+
+2020-07-16T12:28:17 target -> strix
+log
+
+2020-07-16T12:30:16 strix -> target
+It gave me two files at first, but I didn't have an error on them for some reason. Bentley says that he had chrome swearing, but not the site to check. I, for some reason, didn't get the cussing from chrome or the site.
+
+2020-07-16T12:34:42 strix -> target
+Then I asked him for a working file, but I didn't get it.
+
+2020-07-16T12:38:13 strix -> target
+here's the log:
+
+2020-07-16T12:45:08 target -> strix
+clearly
+
+2020-07-16T12:45:18 target -> strix
+let him access his system
+
+2020-07-16T12:45:25 target -> strix
+by timewave
+
+2020-07-16T12:45:26 target -> strix
+or rdp
+
+2020-07-16T12:45:29 target -> strix
+and it all works there
+
+2020-07-16T12:45:32 target -> strix
+will prepare you
+
+2020-07-16T12:45:37 target -> strix
+Where everything will "work"
+
+2020-07-16T12:45:49 target -> strix
+You can write it out yourself.
+
+2020-07-16T12:45:50 target -> strix
+Or me
+
+2020-07-16T12:50:17 strix -> target
+Well, we decided to check through the site, but it doesn't give out alerts. I.e. you just need the file on which it is issued
+
+2020-07-16T12:51:39 strix -> target
+on rdp or timeweather I think it is too much - you can just try it on another virtual machine with vinda, if you want to test it on venda
+
+2020-07-16T12:57:02 target -> strix
+win2019
+
+2020-07-16T12:57:04 target -> strix
+yours?
+
+2020-07-16T12:57:08 target -> strix
+us
+
+2020-07-16T12:58:33 strix -> target
+No, there is win2012 and win7. I also had ten, but will have to re-install after my drive died
+
+2020-07-16T12:58:49 target -> strix
+alert
+
+2020-07-16T12:58:51 target -> strix
+only on win2019
+
+2020-07-16T12:58:54 target -> strix
+and specifically the US
+
+2020-07-16T12:59:03 target -> strix
+And 50/50 in win10 us
+
+2020-07-16T12:59:14 target -> strix
+maybe somewhere else
+
+2020-07-16T12:59:16 target -> strix
+But these are the most accurate
+
+2020-07-16T12:59:19 target -> strix
+which show
+
+2020-07-16T12:59:19 target -> strix
+his
+
+2020-07-16T13:00:09 strix -> target
+It's strange -- all browsers are supposed to use that google web service, so it should be the same everywhere, by the idea. But for some reason it's not.
+
+2020-07-16T13:00:19 target -> strix
+On the service you gave
+
+2020-07-16T13:00:22 target -> strix
+to a dangerous file
+
+2020-07-16T13:00:26 target -> strix
+the service is silent there
+
+2020-07-16T13:00:31 target -> strix
+and chrome at the same time locked that file
+
+2020-07-16T13:00:45 strix -> target
+I.e., does the service check the user's OS?
+
+2020-07-16T13:00:56 target -> strix
+I don't know what service you are using
+
+2020-07-16T13:00:59 target -> strix
+it shows all ok
+
+2020-07-16T13:01:01 target -> strix
+although this is not the case
+
+2020-07-16T13:01:09 target -> strix
+from experience
+
+2020-07-16T13:01:11 target -> strix
+fastest
+
+2020-07-16T13:01:13 target -> strix
+The alert shows
+
+2020-07-16T13:01:15 target -> strix
+win2019
+
+2020-07-16T13:01:19 target -> strix
+Maybe they have an algorithm.
+
+2020-07-16T13:01:22 target -> strix
+quicker
+
+2020-07-16T13:01:24 target -> strix
+data updates
+
+2020-07-16T13:01:27 target -> strix
+then win10
+
+2020-07-16T13:01:35 target -> strix
+and win7 may be silent at all with chrome on file
+
+2020-07-16T13:01:52 strix -> target
+I used to have chrome on linux, but it suddenly stopped.
+
+2020-07-20T12:48:40 target -> strix
+hi
+
+2020-07-20T12:48:45 target -> strix
+Did you get anything from the problem?
+
+2020-07-20T12:52:12 strix -> target
+Nothing so far. Was dealing with an urgent task about backups. Only had time to download win2019 so far, will be installing it today and testing on it.
+
+2020-07-20T12:52:12 strix -> target
+Nothing so far. Was dealing with an urgent task about backups. Only had time to download win2019 so far, will be installing it today and testing on it.
+
+2020-07-20T12:59:15 target -> strix
+Yep
+
+2020-07-20T12:59:17 target -> strix
+you can remove the task
+
+2020-07-20T12:59:21 target -> strix
+close
+
+2020-07-20T13:00:35 strix -> target
+I.e., no longer needed? Is it canceled?
+
+2020-07-20T13:00:40 target -> strix
+yes
+
+2020-07-20T13:00:43 target -> strix
+so you don't waste time
+
+2020-07-20T13:01:04 strix -> target
+ok
+
+2020-07-21T21:25:39 target -> strix
+hi
+
+2020-07-21T21:25:42 target -> strix
+tell me please
+
+2020-07-21T21:25:44 target -> strix
+on which server
+
+2020-07-21T21:25:46 target -> strix
+is a ftp checker
+
+2020-07-21T21:25:48 target -> strix
+to run it
+
+2020-07-21T21:25:55 target -> strix
+Remember how plz History system was flipped
+
+2020-07-21T21:25:59 target -> strix
+Sorry for the jerking.
+
+2020-07-21T23:56:33 strix -> target
+[30.06.2020 14:18:29] <target> just tell me
+[30.06.2020 14:18:31] <target> where to put the file
+[30.06.2020 14:18:35] <target> and what to run
+[30.06.2020 14:18:37] <target> please
+[30.06.2020 14:18:55] <strix> and bentley already looked, we ran it on his machine
+[30.06.2020 14:19:03] <strix> seems to be satisfied
+[30.06.2020 14:19:32] <strix> if you look now, here's the car:
+[30.06.2020 14:19:34] <strix> ip : 212.129.41.246
+port : 14741
+username : Administrator
+password : 3edcvgy7!@#123
+[30.06.2020 14:19:38] <target> fine) but I need the report
+and he's busy with work
+ok, I'll wait what to do)
+[30.06.2020 14:19:42] <target> okay
+[30.06.2020 14:19:43] <target> I went there
+[30.06.2020 14:19:44] <target> what's next
+[30.06.2020 14:20:07] <strix> and you have to write a bugtracker report for the first task?
+[30.06.2020 14:20:56] <target> no
+[30.06.2020 14:21:02] <target> just close it
+[30.06.2020 14:21:04] <target> her
+[30.06.2020 14:21:08] <target> or close it
+[30.06.2020 14:21:09] <target> I'll say
+[30.06.2020 14:21:10] <strix> did you get in? Then c:; cd \src\test; run bash from \Program Files\Git\bin\bash.exe
+[30.06.2020 14:21:42] <strix> once the bash is running, run ./col.py
+[30.06.2020 14:22:11] <strix> and wait half an hour -- servers_filtered.txt file fills
+[06/30/2020 14:23:43] <strix> it writes fail/success for every URL along the way
+[30.06.2020 14:25:29] <strix> you can probably run it from cmd.exe as "python col.py" too
+[30.06.2020 14:28:46] <target> yes I see
+[30.06.2020 14:28:47] <target> thanks
+[30.06.2020 14:28:48] <target> put it on
+[30.06.2020 14:30:39] <strix> is it working?
+[30.06.2020 14:31:34] <target> yeah it's creeping there
+[30.06.2020 14:31:49] <target> [15:35:31] <strix> and wait a half hour -- servers_filtered.txt file until it fills
+
+it's where it's located
+[30.06.2020 14:31:51] <target> in which folder
+[30.06.2020 14:33:05] <strix> c:\src\test -- it's all there
+[30.06.2020 14:33:20] <strix> both the script and the config
+[30.06.2020 14:33:53] <strix> server0.txt is source data, it's converted to servers.txt with command:
+[30.06.2020 14:34:11] <strix> awk -f conv.awk serrrver0.txt >servers.txt
+[30.06.2020 14:34:35] <strix> conv.awk is an awk converter script, very simple by the way
+[30.06.2020 14:34:51] <target> so I see a lot of success
+[30.06.2020 14:34:56] <target> and the result is tcht
+[30.06.2020 14:34:57] <target> empty
+[30.06.2020 14:35:01] <target> it looks like I didn't start something
+[30.06.2020 14:35:07] <target> go look what I missed
+[30.06.2020 14:35:23] <strix> it's empty until the script finishes, or you break it with Ctrl-C
+[30.06.2020 14:36:07] <strix> yeah it looks like the right script ran
+[30.06.2020 14:41:17] <target> Ctrl-C
+
+won't stay
+
+[30.06.2020 14:43:15] <strix> it seems that under the Windows Ctrl-C does not respond if the current layout is Russian. -- I should have switched to English first, and it interrupts everything.
+
+2020-07-21T23:56:38 strix -> target
+here's
+
+2020-07-22T00:15:27 target -> strix
+there
+
+2020-07-22T00:15:28 target -> strix
+so
+
+2020-07-22T00:15:29 target -> strix
+I see
+
+2020-07-22T00:15:29 target -> strix
+went to
+
+2020-07-22T00:15:41 target -> strix
+Yep, I got it.
+
+2020-07-22T00:15:49 target -> strix
+brackets must be added
+
+2020-07-22T00:15:49 target -> strix
+I see
+
+2020-07-22T00:15:54 target -> strix
+Pass and login
+
+2020-07-22T00:15:54 target -> strix
+Pass and login
+
+2020-07-22T00:26:32 target -> strix
+tell me
+
+2020-07-22T00:26:34 target -> strix
+How did you set up the server like that?
+
+2020-07-22T00:26:37 target -> strix
+what is the resolution there
+
+2020-07-22T00:26:38 target -> strix
+it's important
+
+2020-07-22T00:26:41 target -> strix
+I also want to do the same
+
+2020-07-22T00:32:25 strix -> target
+I don't know -- I didn't set up the resolution.
+
+2020-07-22T00:32:30 target -> strix
+can you please check if the format is correct
+it looks like all the file so far
+
+2020-07-22T00:32:47 strix -> target
+This is a virtual machine, not a real server
+
+2020-07-22T00:33:11 strix -> target
+format of what?
+
+2020-07-22T00:33:25 target -> strix
+data inputs
+
+2020-07-22T00:33:26 target -> strix
+check out
+
+2020-07-22T00:33:28 target -> strix
+is everything so tm
+
+2020-07-22T00:33:30 target -> strix
+input data
+
+2020-07-22T00:33:30 target -> strix
+pissed off
+
+2020-07-22T00:33:32 target -> strix
+and true
+
+2020-07-22T00:33:34 target -> strix
+ran
+
+2020-07-22T00:33:36 target -> strix
+check it out please
+
+2020-07-22T00:33:41 target -> strix
+Otherwise it will work in vain
+
+2020-07-22T00:33:50 target -> strix
+[20:34:13] <strix> it's a virtual machine, not a real server
+
+Yeah, that's probably why you can adjust the resolution there
+
+2020-07-22T00:34:21 strix -> target
+The input data there must be converted by a wak script
+
+2020-07-22T00:34:25 strix -> target
+awk
+
+2020-07-22T00:34:35 target -> strix
+Everything fails.
+There seems to be some small flaw somewhere
+I told him the format was correct
+
+2020-07-22T00:34:45 target -> strix
+
+link (tab) "login" (tab) "pass"
+
+2020-07-22T00:34:59 target -> strix
+  but that's okay.
+
+2020-07-22T00:35:00 target -> strix
+I see
+
+2020-07-22T00:35:01 target -> strix
+success
+
+2020-07-22T00:35:20 strix -> target
+awk -f conv.awk servers0.txt >servers.txt
+
+2020-07-22T00:36:02 strix -> target
+> link (tab) "login" (tab) "pass"
+yes, after conversion you should get the following format
+
+2020-07-22T00:36:19 target -> strix
+thanks
+
+2020-07-22T00:36:53 target -> strix
+I'm in the background then.
+
+2020-07-22T00:36:54 target -> strix
+left
+
+2020-07-22T00:36:55 target -> strix
+there's a script
+
+2020-07-22T00:36:58 target -> strix
+running
+
+2020-07-22T00:37:02 target -> strix
+don't cut it
+
+2020-07-22T00:37:28 strix -> target
+out of about 150 urls there should be about 30 live ones
+
+2020-07-22T00:48:53 strix -> target
+Better minimize the window with the script, so no one closes it accidentally. Otherwise, there is always someone working on this machine.
+
+2020-08-15T13:42:32 target -> strix
+hi
+
+2020-08-15T13:42:35 target -> strix
+do we have a lab ready?
+
+2020-08-15T13:42:37 target -> strix
+What Prof ordered
+

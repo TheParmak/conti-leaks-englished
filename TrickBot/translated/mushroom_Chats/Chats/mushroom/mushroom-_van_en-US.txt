@@ -1,0 +1,282 @@
+2020-06-29T10:51:39 mushroom -> van
+Hi. Here is 173.232.146.199:32005, password JohnJackson21
+
+2020-06-29T10:52:17 mushroom -> van
+To check how the backdoor works if you access the internet via http\socks.
+
+2020-06-29T10:52:32 mushroom -> van
+I'm out, you can check your bot.
+
+2020-06-29T10:53:22 van -> mushroom
+Hi, thank you!
+
+2020-06-29T10:54:10 mushroom -> van
+Out.
+
+2020-06-29T10:54:14 van -> mushroom
+ok
+
+2020-06-29T10:57:12 van -> mushroom
+just run the looder and check the bounce?
+
+2020-06-29T10:57:32 mushroom -> van
+Yes. Or a bot.
+
+2020-06-29T10:57:49 van -> mushroom
+did you have a knock off?
+
+2020-06-29T10:58:06 mushroom -> van
+The proxifier window has a traffic log. Yes.
+
+2020-06-29T10:58:28 van -> mushroom
+Yep
+
+2020-06-29T10:59:17 mushroom -> van
+Booza said he gave you a setup to check out.
+
+2020-06-29T10:59:36 mushroom -> van
+What do you need to do there?
+
+2020-06-29T11:00:03 van -> mushroom
+What do you mean?
+
+2020-06-29T11:00:51 mushroom -> van
+How should the system be set up.
+
+2020-06-29T11:01:30 van -> mushroom
+Is this about proxies?
+
+2020-06-29T11:01:38 mushroom -> van
+Yes.
+
+2020-06-29T11:10:51 van -> mushroom
+It's not that he painted me, just discussed. Look.
+This proxifier is not it. Everything will work through it. It intercepts traffic not at routing level. It sets connection to proxy server and that's all. What you need is this.
+Booza: you need to configure the system so that all traffic will be intercepted, that is, you can not go outside.
+Normally, on a network, it goes like this
+you have a local network, 192.168.255.255 and no default gateway
+(rather, it exists, but it provides only routing between local segments of the network, and does not give routes to the Internet) and instead of the default gateway you have a proxy in the system.
+
+In my words: there is a PC, it has access only to local addresses, and on one of the addresses is deployed proxy. My loader, probably, will work, but the bot - definitely not, it is on a socket with the seder ugly SSL.
+And through proxifier, of course, everything works, I've already checked, deployed myself.
+
+2020-06-29T11:13:07 van -> mushroom
+all hope that this proxy is specified in the browser settings, but if the proxy with authorization, I do not know yet...
+
+2020-06-29T11:14:54 mushroom -> van
+Hasn't Green been told that?
+
+2020-06-29T11:15:48 van -> mushroom
+No, we didn't have time, it was Friday night.
+
+2020-06-29T11:15:51 mushroom -> van
+I passed on.
+
+2020-06-29T11:16:01 van -> mushroom
+Yeah, thanks
+
+2020-06-29T11:19:39 van -> mushroom
+I wonder if this is even relevant? Do they use such networks with internet access through a local proxy nowadays?
+
+2020-06-29T11:20:28 mushroom -> van
+Probably used to limit access in organizations.
+
+2020-06-29T11:21:13 van -> mushroom
+maybe...
+
+2020-06-29T11:22:16 mushroom -> van
+Through a local proxy, one department has access to the internet and the other does not. I think so.
+
+2020-06-30T10:29:19 mushroom -> van
+173.232.146.199
+Password: JohnJackson
+
+2020-06-30T10:29:41 mushroom -> van
+It's all set up there. Check it out. My bot doesn't work.
+
+2020-06-30T10:30:18 mushroom -> van
+I'm out.
+
+2020-06-30T10:30:22 van -> mushroom
+Hi, thank you.
+
+2020-06-30T10:30:48 mushroom -> van
+173.232.146.199:32015
+
+2020-06-30T10:35:24 van -> mushroom
+can't connect
+
+2020-06-30T10:37:41 van -> mushroom
+exactly this address?
+
+2020-06-30T10:55:56 mushroom -> van
+I can't connect
+
+2020-06-30T10:55:56 mushroom -> van
+Is this address for sure?
+
+2020-10-19T07:38:29 van -> mushroom
+Hi! Target asked for an early build. Admin is not working.
+
+2020-10-19T07:53:15 mushroom -> van
+Hi. There is a build. Gave it away on Friday, it wasn't used.
+
+2020-10-19T07:53:25 van -> mushroom
+ok
+
+2020-10-19T07:53:31 mushroom -> van
+You can use it.
+
+2020-10-19T07:53:38 van -> mushroom
+okay
+
+2020-10-19T07:53:48 mushroom -> van
+o26 band.
+
+2020-10-19T07:54:16 PM mushroom -> van
+Only now the admin area works that way:
+<buza> but now the bot and admin exchange is broken
+[10:52:18] <buza> after talar update
+[10:52:25] <buza> also, pads are off
+
+2020-10-19T07:54:25 mushroom -> van
+I think you're aware of it.
+
+2020-10-19T07:54:47 van -> mushroom
+yes
+
+2020-10-23T14:25:21 mushroom -> van
+Hi. What are the url parameters for hardware info you should send to command 1? And what kind of iron information do you need to get?
+
+2020-10-23T14:26:28 van -> mushroom
+Hi, now...
+
+2020-10-23T14:27:35 van -> mushroom
+I'm sending this kind of info on iron:
+
+cpu:
+0: AMD Ryzen 3 3200G with Radeon Vega Graphics (3593 MHz)
+drive:
+0: 34GB, VBOX HARDDISK ATA Device
+motherboard: Oracle Corporation (VirtualBox)
+memory: 0MB
+VM: 1
+SB: 0
+
+2020-10-23T14:28:20 van -> mushroom
+this is VM, so memory is 0 and VM = 1
+
+2020-10-23T14:28:36 mushroom -> van
+What is SB?
+
+2020-10-23T14:29:06 van -> mushroom
+if running in a sandbox, SB = 1
+
+2020-10-23T14:29:43 mushroom -> van
+Okay. Got it.
+
+2020-10-23T14:30:10 van -> mushroom
+cpu:
+0: Intel(R) Core(TM) i5-6500T CPU @ 2.50GHz (2475 MHz)
+drive:
+0: 250GB, Samsun SSD 860 EVO 250G SCSI Disk Device
+motherboard: HP (8055)
+memory: 8388MB
+VM: 0
+SB: 0
+
+2020-10-23T14:30:22 van -> mushroom
+here's the real car
+
+2020-10-23T14:31:41 van -> mushroom
+If there is more than one drive, then
+drive:
+0: ...
+1: ...
+
+so does the processor
+
+2020-10-23T14:32:42 mushroom -> van
+Okay. I'll ask how to get VM and SB later. When I'm done with the hardware.
+
+2020-10-23T14:33:07 van -> mushroom
+Yep
+
+2020-10-23T14:33:18 van -> mushroom
+working tomorrow?
+
+2020-10-23T14:34:07 mushroom -> van
+I'll be in touch. If you need anything.
+
+2020-10-23T14:34:25 van -> mushroom
+How's your dincheck?
+
+2020-10-23T14:34:31 van -> mushroom
+dynamics?
+
+2020-10-23T14:34:32 mushroom -> van
+4
+
+2020-10-23T14:34:38 van -> mushroom
+which ones?
+
+2020-10-23T14:35:17 mushroom -> van
+Comodo, Malware Bytes, 360 total security and some other one.
+
+2020-10-23T14:36:03 mushroom -> van
+Of those, 3 of them put detects always, whatever I check. Especially Comodo.
+
+2020-10-23T14:36:39 mushroom -> van
+Dynamics. Static 0.
+
+2020-10-23T14:37:11 van -> mushroom
+Yeah, like just in case, the bastard rolls out detects. And 360 also lies when he tells me what I'm supposedly doing
+
+2020-10-23T14:37:19 van -> mushroom
+I also have 0 statics.
+
+2020-10-23T14:37:36 mushroom -> van
+That's for sure.
+
+2020-10-26T10:08:58 van -> mushroom
+Hi!
+Don't use dincheck yet.
+
+2020-10-26T10:25:32 mushroom -> van
+I won't.
+
+2020-11-02T12:20:10 van -> mushroom
+Hi, can you write your spare toad?
+
+2020-11-02T12:27:49 mushroom -> van
+ivanalert@jabber.ru
+
+2020-11-02T12:28:18 van -> mushroom
+Aha, thank you!
+
+2020-11-09T12:22:46 mushroom -> van
+Here's a suggested encryption option:
+Download: https://qaz.im/load/nHk3kd/7GF8Ha
+Delete: https://qaz.im/index.php?a=delete&q=632554546
+Password: "!O[Z0>b(&&qu}v) "v>x
+
+2020-11-09T12:23:26 van -> mushroom
+Hi! Yeah, I'm looking at it. Thanks!
+
+2020-11-09T12:25:07 mushroom -> van
+You generate 4 keys:
+cryptosign --gen --bin --priv1.bin --pub pub1.bin
+cryptosign --gen --bin --priv2.bin --pub pub2.bin
+
+You encrypt what you need:
+cryptosign --encr --text "Hello World!!!" --bin priv1.bin --bin pub2.bin
+
+You decrypt:
+cryptosign --decr --ciphertext <bas64 string> --bin priv2.bin --bin pub1.bin
+
+2020-11-09T12:26:07 van -> mushroom
+Yep
+
+2020-11-09T13:30:25 van -> mushroom
+So, there will be 4 keys (two to encrypt, two to decrypt) and 4 keys on the server. Right?
+

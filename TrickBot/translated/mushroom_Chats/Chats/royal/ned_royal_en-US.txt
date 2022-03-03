@@ -1,0 +1,403 @@
+[27.09.21 08:25:09] royal: Hi.
+[27.09.21 08:25:39] ned: question about dll. When you get it fixed in the bitsadmin.
+[27.09.21 08:25:41] ned: now in bitsadmin I get this
+NOTIFICATION COMMAND LINE: 'C:\Windows\system32\regsvr32.exe' 'c:\temp\pre1_273\L_24_09_2021_pre1_v273\L_pre1_v273_x64_logged.dll'
+if I copy it to powershell. everything runs
+but if I leave it in the bitsadmin, the runsvr32 window pops up regularly
+To register a module, you must provide a binary name.
+[27.09.21 08:26:26] ned: if I add regsvr32.exe to command line before dll, it says it's not dll!
+[27.09.21 08:27:24] ned: in short, not to get into my explanations, you need command and parameters to fix it in bitsadmin
+[27.09.21 08:27:39] ned: for resvr32
+[27.09.21 08:27:48] ned: regsvr32
+[27.09.21 08:29:25] royal: It's like this. One argument is the program name. The second argument is the command line, and in the command line, the first argument should be the program name.
+[27.09.21 08:29:41] royal: NOTIFICATION COMMAND LINE: 'C:\Windows\system32\regsvr32.exe' 'C:\Windows\system32\regsvr32.exe c:\temp\pre1_273\L_24_09_2021_pre1_v273\L_pre1_v273_x64_logged.dll'
+[27.09.21 08:29:56] ned: do you program in studio?
+[27.09.21 08:30:02] royal: Yes.
+[27.09.21 08:30:12] ned: I want to please maybe.
+[27.09.21 08:30:14] royal: Add program name to command line.
+[27.09.21 08:30:35] ned: do you have any dll now?
+[27.09.21 08:30:50] ned: it doesn't matter. I'm debugging Dll as a simple executable.
+[27.09.21 08:31:02] ned: I start it with F5
+[27.09.21 08:31:56] ned: so in the project properties in Debugging there are Command & command arguments.
+[27.09.21 08:33:11] ned: I put there
+Command : regsvr32.exe
+Command Arguments: $(SolutionDir)bin\$(PlatformTarget)\$(Configuration)\$(ProjectName).dll
+[27.09.21 08:33:20] ned: and you can press F5
+[27.09.21 08:33:26] royal: I know.
+[27.09.21 08:33:37] ned: that's very good.
+[27.09.21 08:34:02] royal: But in BITS you have to NOTIFICATION COMMAND LINE: 'C:\Windows\system32\regsvr32.exe' 'C:\Windows\system32\regsvr32.exe c:\temp\pre1_273\L_24_09_2021_pre1_v273\L_pre1_v273_x64_logged.dll'
+[27.09.21 08:34:03] ned: So if you put the program name there - regsvr32 also crashes
+[27.09.21 08:34:15] ned: okay, I got it, I'll try it now
+[27.09.21 08:34:17] ned: thanks!
+[27.09.21 08:34:28] royal: Twice specify program name, if run with arguments.
+[27.09.21 08:34:37] ned: +
+[27.09.21 08:35:55] royal: And for 32 bit dll it's better to have regsvr32 or rundll32 from Wow64
+[27.09.21 08:36:12] ned: ok, thanks
+[27.09.21 08:36:38] royal: Or else rundll32 from System32 for 32 dll with code 1 will not complete and the BITS task will not restart constantly.
+[27.09.21 08:36:49] ned: +!
+[10.01.22 13:32:04] ned: hi!
+[11.01.22 13:32:16] ned: hi!
+[11.01.22 13:32:29] royal: hi.
+[11.01.22 13:32:58] ned: could you tell me how to remove defender detects on shadjudder
+[11.01.22 13:33:50] ned: i suspect it reacts not to the program text but to the fact of fixing by scheduler
+[11.01.22 13:34:08] ned: no objects in static
+[11.01.22 13:34:15] ned: only at startup
+[11.01.22 13:37:01] royal: I don't use this fixation. I think you need to have another program to do the anchoring, and not a child of yours. Like cmd through a command or PowerShell or the same task sheller will run the cmd command or powershell after some time after the end of your program for example.
+[11.01.22 13:37:33] ned: I'm a bitadmin myself
+[11.01.22 13:37:39] ned: it works fine for me
+[11.01.22 13:37:40] royal: you need to break the chain between your program and the task helmsman.
+[11.01.22 13:37:45] ned: testers don't always
+[11.01.22 13:38:13] ned: you mean to write a script and run it separately?
+[11.01.22 13:38:56] ned: will the script go through defender?
+[11.01.22 13:42:30] royal: You can try it this way. There is a command line utility for the task handler, you can run it with the right arguments, like create a process cmd or powershell, but this process has to specify the parent process not your program.
+[11.01.22 13:43:05] ned: can you start it with holoving and set PID?
+[11.01.22 13:43:30] ned: thanks
+[11.01.22 13:49:40] royal: Even more confusing option. Create a job that runs a job that runs a cmd utility that already does a job that runs a bootloader.
+[11.01.22 13:50:02] ned: to confuse traces in general
+[11.01.22 13:50:07] ned: thanks
+[11.01.22 13:50:55] royal: Well yes, I think the behavior detector is that your program gets into the task helmsman and creates an endless task to run the program.
+[11.01.22 13:51:25] ned: can the script?
+[11.01.22 13:51:33] royal: The same detection e.g. when you go to registry and create autorun.
+[11.01.22 13:52:14] royal: That way there will be no direct link between your program and the Task Controller.
+[11.01.22 13:52:45] royal: If through a third program, moreover, a system one and not started by yours.
+[11.01.22 13:53:56] ned: that is holoving?
+[11.01.22 13:54:36] ned: and shellcode
+[11.01.22 13:54:54] royal: You can start by trying to spoof the parent process.
+[11.01.22 13:55:31] royal: Via CreateProcess.
+[11.01.22 13:57:01] royal: And if your program creates a job to start a calculator for example, also a detector?
+[11.01.22 14:03:11] ned: haven't tried
+[11.01.22 14:03:18] ned: my program creates nothing
+[11.01.22 14:03:35] ned: it sends itself to restart
+[11.01.22 14:04:18] royal: The job in the scheduler to start I mean.
+[11.01.22 14:04:20] ned: try to schedule something
+[11.01.22 14:04:36] ned: that's where she puts herself
+[11.01.22 14:04:40] ned: its way
+[11.01.22 14:04:54] royal: Well, if you write a calculator there instead of yourself.
+[11.01.22 14:05:06] ned: I'll try
+[11.01.22 14:05:23] royal: Maybe he inscribes himself, such an idea.
+[11.01.22 14:05:33] ned: got it, thanks
+[11.01.22 14:05:45] ned: so you can rename yourself a hundred times
+[11.01.22 14:05:59] ned: I mean recopy
+[11.01.22 14:06:03] ned: hide
+[11.01.22 14:06:16] ned: just doing it now
+[11.01.22 14:06:24] ned: tester asked
+[11.01.22 14:06:45] ned: maybe it really helps
+[11.01.22 14:07:06] ned: it starts under one name, renames itself and goes to the scheduler under another one
+[11.01.22 14:07:16] ned: two birds with one stone
+[11.01.22 14:07:56] ned: that would be cool
+[24.01.22 08:25:57] ned: hello!
+[24.01.22 08:26:06] ned: I got a pre-defined macro
+#define _ _ FL_ _ _ _ FUNCTION__ , LINE
+FUNCTION
+there are some parameters that control it /P /EP
+but I don't understand what happened all my life it's been working
+LINE is perfectly in green, but FUNCTION is red, so it does not expand
+What can it be?
+[24.01.22 08:26:34] ned: it's about __FUNCTION
+[24.01.22 08:26:47] ned: LINE is displayed perfectly
+[24.01.22 08:27:07] ned: or how else can I get the function name in the diagnostics?
+[24.01.22 08:30:00] royal: By the way, documentation says that __FUNCTION__ is Microsoft-specific predefined macros. Other compilers may not have it.
+[24.01.22 08:30:12] ned: I'm only in studio
+[24.01.22 08:30:39] ned: it crashed there for some reason
+[24.01.22 08:30:51] ned: it never came up before
+[24.01.22 08:31:03] royal: well look what parameters are in all configurations.
+[24.01.22 08:31:04] ned: I look at the old version
+[24.01.22 08:31:17] ned: at any parameters
+[24.01.22 08:31:26] ned: I put in all configurations
+[24.01.22 08:32:31] royal: /P /PE turn it off.
+[24.01.22 08:32:46] ned: yes, thanks
+[24.01.22 08:32:54] ned: I've turned it on and off
+[24.01.22 08:32:57] ned: same thing
+[24.01.22 08:35:47] royal: all command line parameters look, for each configuration, you could specify /p or /pe.
+[24.01.22 08:37:20] ned: Dane tried it in studio and it's the same
+[24.01.22 08:37:35] royal: Everything works for me.
+[24.01.22 08:37:41] ned: he was deeply puzzled, now trying to help me
+[24.01.22 08:37:43] royal: VS 2019
+[24.01.22 08:37:51] ned: so your studio is fine?
+[24.01.22 08:38:44] royal: Yes I get __FUNCTION__ (const char[])Name
+[24.01.22 08:39:08] ned: with underscores?
+[24.01.22 08:39:15] royal: Yes.
+[24.01.22 08:39:16] ned: two on each side?
+[24.01.22 08:39:26] ned: is that why?
+[24.01.22 08:39:31] royal: Chat takes them out when I post here.
+[24.01.22 08:39:32] ned: we don't have it
+[24.01.22 08:39:45] ned: I just said it works for me too
+[24.01.22 08:40:02] royal: ``FUNCTION__``
+[24.01.22 08:40:08] ned: yeah
+[24.01.22 08:40:13] royal: It doesn't clean like that.
+[24.01.22 08:42:55] royal: Does __func__ work?
+[24.01.22 08:43:05] ned: no
+[24.01.22 08:43:05] royal: `__func__`.
+[24.01.22 08:43:09] ned: same
+[24.01.22 08:44:31] ned: it just passes funk as a literal without the extension
+[24.01.22 08:45:02] ned: the funk disappears, it replaces it with nothing
+[24.01.22 08:45:49] royal: Everything works for me and `__func__` and `__FUNCTION__`
+[24.01.22 08:46:07] ned: you are a virtuoso
+[24.01.22 08:46:21] ned: something in the parameters
+[24.01.22 08:46:24] royal: latest version 2019
+[24.01.22 08:46:44] ned: I have both 19 and 22
+[24.01.22 08:46:48] royal: Both on comptlator clang and on msvc.
+[24.01.22 08:46:50] ned: last
+[24.01.22 08:47:05] ned: fuck - i envy you
+[24.01.22 08:47:22] royal: There may be a bug in *.vcproj file
+[24.01.22 08:47:47] royal: Replace it with an older one from your gitlab project and check it.
+[24.01.22 08:48:12] ned: maybe delete .vs?
+[24.01.22 08:48:52] royal: Yes. Try to replace all these specific files.
+[24.01.22 08:49:05] ned: well, why does Dane have the same thing?
+[24.01.22 08:49:15] royal: But all settings are in *.vcproj
+[24.01.22 08:49:43] royal: Why does it work for me?
+[24.01.22 08:49:51] ned: that's nice
+[24.01.22 08:49:57] ned: and encouraging
+[24.01.22 08:50:10] ned: and anyway - this is a documented feature
+[24.01.22 08:50:15] royal: My version is 16.11.9
+[24.01.22 08:50:24] ned: it cannot not work, and... it does not work
+[24.01.22 08:50:28] ned: thanks
+[24.01.22 08:50:36] royal: Microsoft Visual Studio Community 2019
+Version 16.11.9
+[24.01.22 08:50:37] ned: got it, I'll keep sawing
+[24.01.22 08:51:43] ned: deleting .vs didn't help
+[24.01.22 08:52:45] royal: replace .vcproj with old one from old project commit.
+[24.01.22 08:52:58] royal: All settings are in it.
+[24.01.22 08:53:16] ned: okay, I'll try
+[24.01.22 08:53:32] royal: Or take old project commit and check if it works.
+[24.01.22 08:53:50] royal: It's even easier.
+[24.01.22 08:53:58] royal: There will be no errors in the build.
+[24.01.22 09:00:26] ned: strange
+[24.01.22 09:01:33] ned: I put in a project and generated a test output. So - the function doesn't extend but when debugging and issuing diagnostics it gives the function name
+[24.01.22 09:02:29] ned: so that removes the question
+it behaves strangely in the editor, but normally in work
+[24.01.22 09:23:02] royal: It's IntelliSense glitchy.
+[24.01.22 09:23:15] ned: probably
+[24.01.22 09:23:26] ned: he keeps asking for authorization
+[24.01.22 09:23:43] ned: can't shut it up
+[24.01.22 09:23:51] ned: spit
+[24.01.22 09:26:14] royal: It can glitch because of coding with a lot of macros. Stupidly can not parse, and the whole file is not highlighted as it should, I have so on one file all the time.
+[24.01.22 09:26:37] ned: I have a bunch
+[24.01.22 09:27:13] ned: but lin highlight and extend in tooltip
+[24.01.22 09:27:26] ned: but the fan only in runtime
+[24.01.22 09:28:17] royal: It's so glitchy in places.
+[24.01.22 09:28:36] royal: It highlights one, not the other.
+[24.01.22 09:29:42] ned: also in 2022 there is a thing when suddenly in the editor studio stops responding and you can remove it only by removing the entire machine. Not in the task manager and nowhere is there any way to remove it.
+quite harmless actions lead, like copying and saving.
+Even restarting VM does not help. I have to remove it from WBox.
+[24.01.22 09:40:14] ned: But studio 2022 is a beauty!
+[09.02.22 13:11:37] ned: hi!
+[09.02.22 13:14:11] ned: pRootFolder->DeleteTask(name,0);
+[09.02.22 13:19:01] royal: Hi.
+[09.02.22 13:36:09] ned: there is a problem on the fix
+[09.02.22 13:36:54] ned: if I load the studio as an administrator, this command removes from the queue, and if normally - it just flies by and does not delete
+[09.02.22 13:37:00] ned: what should I do?
+[09.02.22 13:37:12] ned: it seems to be prohibited to boost from bot
+[09.02.22 13:37:53] ned: it's about the job scheduler
+[09.02.22 13:39:02] royal: So the task was created with someone who has elevated rights.
+[09.02.22 13:39:19] ned: that's a good point
+[09.02.22 13:39:25] ned: +
+[09.02.22 13:39:30] royal: What's the problem?
+[09.02.22 13:39:44] ned: but you can create a task without authority?
+[09.02.22 13:39:50] royal: If created by admin, then admin can delete.
+[09.02.22 13:40:06] royal: If user created it, then user can delete it.
+[09.02.22 13:40:13] ned: I could create in a hooked studio and then try to remove it in a normal studio
+[09.02.22 13:40:24] royal: Yeah.
+[09.02.22 13:40:28] ned: got it, I'll try now
+[09.02.22 13:40:46] ned: I'll delete it manually and then I'll create it in normal studio and try to remove it
+[09.02.22 13:41:05] ned: thanks, at least I got the logic in my head
+[09.02.22 13:41:10] ned: and there as it happens
+[09.02.22 13:42:01] royal: The same way it works with BITS, you create a task from admin, from user will not even see the created task.
+[09.02.22 13:42:08] royal: It works with everything.
+[09.02.22 13:42:42] ned: but it's weird, I worked without any promotion and everything worked
+[09.02.22 13:42:56] ned: then the removal cut off
+[09.02.22 13:43:07] ned: then i started experimenting with uprating
+[09.02.22 13:43:15] ned: we'll see now
+[09.02.22 13:43:16] ned: everything
+[09.02.22 13:43:32] ned: created yet
+[09.02.22 13:44:20] ned: did not delete!
+[09.02.22 13:44:34] ned: here I come to point A again
+[02/09/222 13:45:39] ned: and I used to be more successful. I stood on breakpoint and immediately saw in GUI as the task flew out of the scheduler
+[09.02.22 13:46:15] royal: see error, hex value.
+[09.02.22 13:46:29] ned: most likely 183
+[09.02.22 13:46:34] ned: I looked it all up
+[09.02.22 13:46:41] ned: another file exists
+[09.02.22 13:46:47] ned: I'll take a better look
+[09.02.22 13:46:52] royal: Then this hex value can be converted into a regular error number and look at the table.
+[09.02.22 13:47:21] ned: you mean GetLastError()?
+[09.02.22 13:47:43] royal: HRESULT
+[09.02.22 13:49:47] ned: General access denied error
+[09.02.22 13:50:50] royal: That's what I needed to prove.
+[02/09/222 13:52:14] royal: Maybe some tasks are not visible there and you haven't cleaned them all up. But that's not for sure.
+[09.02.22 13:54:10] ned: what are these invisible tasks. I only have this bot as a task. I kansel it and run it a second time.
+[09.02.22 13:54:38] ned: the first time creates a task to run itself. And the second time deletes the first task to run.
+[09.02.22 13:54:47] ned: must delete.
+[09.02.22 13:55:46] ned: Maybe something in rootFoldere?
+[09.02.22 13:57:43] royal: You run job scheduler from administrator.
+[09.02.22 13:58:01] royal: And look, maybe there is something there already.
+[09.02.22 13:59:46] ned: fyfkjubxyj dc`
+[09.02.22 14:01:58] ned: it creates new, but not allows to delete (from program)
+[09.02.22 14:04:59] royal: And from scheduler lets you delete?
+[09.02.22 14:05:16] royal: Not under administrator.
+[09.02.22 14:05:30] ned: yes
+[09.02.22 14:05:45] ned: I am also trying with CLI command
+[09.02.22 14:05:54] ned: now bang
+[09.02.22 14:06:56] ned: it deleted
+[09.02.22 14:07:12] ned: but request gave Yes I had to enter
+[09.02.22 14:07:23] ned: look for Silent Mode
+[09.02.22 14:07:43] ned: that's a hell of a waste of space
+[09.02.22 14:07:53] ned: but maybe it's win7
+[09.02.22 14:08:26] ned: schtasks /Delete /tn "zzz_2015" /F
+[09.02.22 14:10:07] royal: ITaskService* pService = NULL;
+    HRESULT hr = ole32.coCreateInstance(CLSID_TaskScheduler, NULL, CLSCTX_INPROC_SERVER,
+        IID_ITaskService, (void**)&pService);
+    if (FAILED(hr))
+    {
+        debug_printf(TEXT("Failed to create an instance of ITaskService: %x\n"), hr);
+        return FALSE;
+    }
+
+    // Connect to the task service.
+    VARIANT emptyVar;
+    VariantInit(&emptyVar);
+    hr = pService->Connect(emptyVar, emptyVar, emptyVar);
+    if (FAILED(hr))
+    {
+        debug_printf(TEXT("ITaskService::Connect failed: %x\n"), hr);
+        pService->Release();
+        return FALSE;
+    }
+
+    // ------------------------------------------------------
+    // Get the pointer to the root task folder.  This folder will hold the
+    // new task that is registered.
+    ITaskFolder* pRootFolder = NULL;
+    BSTR bstr = SysAllocString(_WCS(L"\\\"));
+    if (bstr)
+    {
+        hr = pService->GetFolder(bstr, &pRootFolder);
+        SysFreeString(bstr);
+        if (FAILED(hr))
+        {
+            debug_printf(TEXT("Cannot get Root Folder pointer: %x\n"), hr);
+            pService->Release();
+            return FALSE;
+        }
+    }
+    else
+    {
+        pService->Release();
+        return FALSE;
+    }
+
+    // If the same task exists, remove it.
+    bstr = SysAllocString(name);
+    if (bstr)
+    {
+        pRootFolder->DeleteTask(bstr, 0);
+        SysFreeString(bstr);
+    }
+
+    pRootFolder->Release();
+    pService->Release();
+[09.02.22 14:10:31] royal: Error only in line pRootFolder->DeleteTask(bstr, 0); ?
+[09.02.22 14:10:47] ned: yes
+[09.02.22 14:10:57] ned: everything else is trapped
+[09.02.22 14:11:25] ned: the command line also could not remove one job for the same reason
+[09.02.22 14:11:41] ned: maybe I created it as an admin
+[09.02.22 14:11:47] ned: now I'll try to use simple ones
+[09.02.22 14:13:17] ned: it deleted! with /F switch without asking permission
+[09.02.22 14:13:26] ned: that's how you'll delete
+[09.02.22 14:13:46] ned: via jjou, i.e. via dos
+[09.02.22 14:13:58] royal: translate HRESULT into normal number by function RtlNtStatusToDosError
+[09.02.22 14:14:10] ned: okay, thanks
+[09.02.22 14:14:14] ned: you were fun.
+[09.02.22 14:14:34] ned: I got a couple more of the same shit, but I'll digest one for now
+[09.02.22 14:14:49] ned: Expensives come out of nowhere
+[09.02.22 14:14:53] ned: only on win7
+[09.02.22 14:15:00] ned: I even set up studio there
+[09.02.22 14:15:03] ned: 2022
+[09.02.22 14:15:07] ned: on vin7
+[09.02.22 14:15:46] ned: good to jump to debugger when interrupts, at least you can see where it crashes. Doesn't help much yet.
+[09.02.22 14:15:53] ned: something with memory
+[09.02.22 14:16:22] royal: About the tasks problem with rights, most likely, dig there. The creator and the one who deletes have different rights.
+[09.02.22 14:16:39] ned: but the same environment
+[09.02.22 14:16:45] ned: just different runs
+[09.02.22 14:16:50] ned: nothing changes
+[09.02.22 14:17:00] ned: it's a DLL, of course, but it's the same
+[09.02.22 14:17:22] ned: only I keep renaming it to different places, but it's the same
+[09.02.22 14:17:23] royal: Check it without studio.
+[09.02.22 14:17:28] ned: that's how I check
+[09.02.22 14:17:32] ned: it didn't work
+[09.02.22 14:17:50] ned: studio usually fixes it, substitutes something from your environment
+[09.02.22 14:17:58] ned: it happened many times
+[09.02.22 14:18:24] ned: butom will run removal-normally!
+[09.02.22 14:18:28] ned: lade more succinctly
+[09.02.22 14:18:33] ned: let the system work
+[09.02.22 14:18:39] ned: if defender allows
+[09.02.22 14:19:54] royal: There will be detects if you run your own program on cmd.
+[09.02.22 14:20:01] royal: By behavior.
+[09.02.22 14:20:30] royal: I had this on dyncheck when I checked runtime
+[09.02.22 14:20:44] royal: Detection is called.
+[09.02.22 14:21:14] ned: you mean static on dyncheck?
+[09.02.22 14:21:34] royal: dynamic
+[09.02.22 14:21:44] ned: dynamic is not allowed
+[09.02.22 14:21:58] royal: It's like your program not trusted in job scheduler.
+[09.02.22 14:22:00] ned: I'm running under live deflm
+[09.02.22 14:22:03] ned: and work
+[09.02.22 14:22:08] ned: no tripping
+[09.02.22 14:22:13] ned: bye
+[09.02.22 14:22:14] royal: I checked when I could. 2 years ago.
+[09.02.22 14:22:22] ned: ok
+[02/09/222 14:22:34] royal: Other antiviruses had detections there.
+[09.02.22 14:22:58] ned: I can't put so many AB
+[09.02.22 14:23:06] ned: for them to swarm like that
+[09.02.22 14:23:22] ned: avast is somewhere
+[09.02.22 14:23:30] ned: and the main enemy is Defender
+[09.02.22 14:24:06] ned: basically it's a normal motivation to hide lines and code
+[09.02.22 14:24:16] ned: others don't bother either
+[09.02.22 14:24:56] ned: are you on the bits?
+[09.02.22 14:25:16] royal: yes.
+[09.02.22 14:25:20] ned: I also started out on it, but then it did not immediately and sometimes did not work at all
+[09.02.22 14:25:29] ned: but the scheduler always starts
+[09.02.22 14:25:31] ned: like clockwork
+[09.02.22 14:25:41] ned: once I had two
+[09.02.22 14:25:51] ned: but then defender overclocked it
+[09.02.22 14:26:06] ned: now I'm slowly moving the scheduler around
+[09.02.22 14:26:19] royal: because BITS can start in a few hours, it is controlled by system depending on load and other factors.
+[09.02.22 14:26:34] ned: yes
+[09.02.22 14:26:47] royal: But it will start anyway.
+[09.02.22 14:26:53] ned: but by reboot it should start too
+[09.02.22 14:26:54] royal: If the file is not deleted.
+[09.02.22 14:27:02] ned: when the system prioritizes everything
+[09.02.22 14:27:21] ned: it has a 2-minute time limit
+[09.02.22 14:27:27] ned: I was digging
+[09.02.22 14:27:37] ned: if there are no dependent tasks
+[09.02.22 14:28:01] ned: and if the file gets deleted?
+[09.02.22 14:28:10] royal: Experience showed that on win 7 3 hours after system restart only started.
+[09.02.22 14:28:24] royal: On other systems almost immediately.
+[09.02.22 14:28:30] ned: in the scheduler this is the problem. I get a message on the screen that there is no file to start
+[09.02.22 14:28:39] royal: If file is deleted there will be nothing to start.
+[09.02.22 14:28:40] ned: regsvr32 gives out
+[09.02.22 14:28:53] ned: that's what I'm saying bits silent
+[09.02.22 14:28:56] ned: no so no
+[09.02.22 14:29:03] ned: and the scheduler is like this
+[09.02.22 14:29:09] ned: that's why I delete everything
+[09.02.22 14:30:03] ned: if it deletes the task from the tank, it must be something missing in my function
+[09.02.22 14:30:08] royal: regsvr32 /s seems to give me nothing.
+[09.02.22 14:30:09] ned: what is in this command
+[09.02.22 14:30:29] ned: you also told me well
+[09.02.22 14:31:02] ned: I refused /s at the start, but in this case, it will be just fine
+[09.02.22 14:31:14] ned: if someone takes file down, there will be no messages
+[09.02.22 14:34:46] ned: #pragma comment(linker, "/export:DllRegisterServer,PRIVATE")
+extern "C" __declspec (dllexport) int __stdcall DllRegisterServer(HWND hWnd, HINSTANCE hInst, LPWSTR lpszCmdLine, int nCmdShow) {
+	BllMain(hWnd, hInst, lpszCmdLine, nCmdShow);
+	pExitProcess(0); //to get rid of popup!!!!!!
+	return 0;
+}
+[09.02.22 14:34:59] ned: that's it if you write it, no popup
+[09.02.22 14:35:37] ned: there was also a requirement in ToR to run the dll without /s flag
+[09.02.22 15:25:33] ned: the mystery of three oceans was solved
+[09.02.22 15:26:05] ned: the criateprocess on the command did not help write the same thing-no access.
+[09.02.22 15:26:16] ned: But the reason for this inscription was found out.
+[09.02.22 15:26:26] ned: Tusk was running DLL
+[09.02.22 15:27:10] ned: if you delete the task then the dll, everything works fine, but if you delete dll which is referenced by the task then you can delete the task only from the scheduler shell.
+[09.02.22 15:27:18] ned: such miracles
+[09.02.22 15:27:27] ned: it would seem he doesn't care
+[09.02.22 15:29:24] royal: We'll know.
+[09.02.22 15:29:41] ned: everything in the house

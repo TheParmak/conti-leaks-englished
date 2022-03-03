@@ -1,0 +1,714 @@
+[16.08.21 07:39:48] elroy: About the builds for today
+[16.08.21 07:39:48] elroy: Greetings.
+[16.08.21 07:40:45] elroy: Can you send me a copy of Thursday and Friday collin request?
+[16.08.21 07:41:26] royal: Hi. What request?
+[16.08.21 07:41:54] elroy: Build request. I'm working on the addresses.
+[16.08.21 07:42:13] elroy: I'm replacing it for two weeks
+[16.08.21 07:45:03] royal: bot:
+141.136.0.244
+64.225.67.59
+45.89.106.80
+64.225.71.185
+
+downloader:
+161.35.147.41
+161.35.149.106
+159.65.204.222
+161.35.147.242
+
+Group g5.
+[16.08.21 07:45:17] royal: This was the last build I had on Friday.
+[16.08.21 07:46:02] elroy: I see. These are the addresses for the bot and loader, for the new admins, right? This is proto2 ?
+[16.08.21 07:46:49] royal: Yes.
+[16.08.21 07:47:16] elroy: Did you dump the domains too, for stage two?
+[16.08.21 07:49:27] royal: bot:
+blackrain15.bazar
+reddew28c.bazar
+bluehail.bazar
+
+loader:
+whitestorm9p.bazar
+bluecloud21c.bazar
+yellowdownpour81.bazar.
+[16.08.21 07:51:36] elroy: Got it, thanks.
+Need builds for today... addresses will ask
+[16.08.21 07:52:45] elroy: I see clyde has 4 groups, usually all 4 are done in one day, or he orders one?
+[16.08.21 07:52:54] elroy: How on Friday, for example, only the 5th?
+[16.08.21 07:53:21] royal: On Friday I did groups 19, 20 and g5.
+[16.08.21 07:53:39] royal: 19 and 20 had one address, g5 had another.
+[16.08.21 07:54:13] royal: They also have different launching methods, 19-20 has regsvr32, g5 has rundll32.
+[16.08.21 07:54:29] elroy: I see. Same picture now.
+[16.08.21 07:54:58] elroy: I'll go get the addresses then)
+And the tester is porfirio on both?
+[16.08.21 07:55:49] royal: 19, 20 wild.
+[16.08.21 07:56:08] royal: g5 has porfirio
+[16.08.21 07:56:22] elroy: Thank you.
+[16.08.21 09:21:11] elroy: Here's your first order.
+
+```
+Groups 19 and 20
+x64 regsvr32
+
+addresses (domains) of the first stage
+bot:
+104.248.18.107
+104.248.30.5
+165.227.131.219
+165.227.136.95
+
+LOADER:
+167.99.240.197
+207.154.229.94
+207.154.236.187
+207.154.244.115
+
+second stage domains
+bot:
+blackrain98.bazar
+bluequiz78.bazar
+xn78hunter.bazar
+
+LOADER:
+mognitr6cf.bazar
+ijnastygof.bazar
+hpfaxret141.bazar
+```
+Skip porfirio on the test, please let me know how you do it.
+[16.08.21 09:22:01] elroy: For the second build I am waiting for the addresses.
+[16.08.21 09:23:38] elroy: *wild to test
+[16.08.21 09:26:42] elroy: Confirm please)
+[16.08.21 09:28:52] royal: Copy.
+[16.08.21 11:02:13] royal: 19 passed.
+[16.08.21 11:02:24] elroy: okay.
+[16.08.21 11:18:21] royal: 20 passed.
+[16.08.21 11:19:29] elroy: okay.
+[16.08.21 12:43:36] elroy: assembly g5
+
+```
+bot:
+161.35.69.209
+161.35.69.139
+138.68.188.20
+142.93.104.141
+
+LOADER:
+159.65.18.134
+165.227.232.39
+161.35.69.139
+172.83.155.218
+
+second stage domains
+bot:
+milktown35a.bazar
+hyhonydezu.bazar
+winterday02.bazar
+
+LOADER:
+komigunt4e.bazar
+giromech8es.bazar
+gnufich5df.bazar
+```
+Pass it on to porfirio for test.
+Confirm, please.
+[16.08.21 12:43:58] royal: Got it.
+[16.08.21 12:44:40] royal: Tell me you got it too?
+[16.08.21 12:44:54] elroy: Preferably.
+[16.08.21 12:50:11] royal: Specify about g5.
+[16.08.21 12:50:12] royal: x64?
+[16.08.21 12:50:19] royal: rundll32?
+[16.08.21 12:50:44] royal: startW?
+[16.08.21 12:50:58] royal: I can have any name in crypto though.
+[16.08.21 12:54:11] royal: Friday was x64 rundll32 only.
+[16.08.21 12:54:18] royal: Without regsvr32.
+[16.08.21 13:04:25] royal: Bot's addresses are down.
+[16.08.21 13:04:31] royal: 502 on all.
+[16.08.21 13:05:33] elroy: Addresses are all 502 ? They are the freshest...
+[16.08.21 13:05:42] royal: It happens.
+[16.08.21 13:05:56] elroy: Okay, I'll go look for more addresses
+[16.08.21 13:06:10] royal: Tell Rocco, maybe he'll fix it.
+[16.08.21 13:06:11] elroy: Is admin's address normal?
+[16.08.21 13:06:21] royal: It's the gaskets that are getting slow.
+[16.08.21 13:06:44] royal: Maybe it's temporary.
+[16.08.21 13:07:42] elroy: Did you try https traffic?
+[16.08.21 13:09:59] royal: I only try it.
+[16.08.21 13:10:44] royal: It worked.
+[16.08.21 13:11:15] elroy: Thank you.
+[16.08.21 13:12:20] royal: The uploader downloaded the bot and it bounced.
+[16.08.21 13:12:35] royal: So addresses are screwed up from time to time.
+[16.08.21 13:12:51] royal: It happens often.
+[16.08.21 13:12:53] elroy: demetrius said he rebooted
+[16.08.21 13:13:02] royal: Good.
+[16.08.21 13:37:17] royal: g5 gave.
+[16.08.21 13:37:29] elroy: okay.
+[16.08.21 13:37:36] royal: Bot's addresses are slow from time to time.
+[16.08.21 13:38:18] elroy: How are you doing with the build for regsvr?
+[16.08.21 13:38:44] royal: Doing fine 19 and 20 today.
+[16.08.21 13:39:17] elroy: yes, exactly)
+[16.08.21 13:39:46] elroy: There is also a third order for rozetka
+[16.08.21 13:40:16] elroy: I'll try to distribute to other coders
+[16.08.21 13:40:33] royal: I have no one in my subordinate.
+[16.08.21 13:40:53] elroy: Too bad.)
+[17.08.21 07:33:30] elroy: Greetings. How's it going with the bot? Shall we make builds like yesterday?
+[17.08.21 07:46:30] royal: Will do.
+[17.08.21 07:58:44] elroy: group g5
+```
+bot:
+138.68.188.20
+161.35.69.139
+172.83.155.218
+142.93.104.141
+
+LOADER:
+161.35.69.139
+161.35.69.209
+159.65.18.134
+165.227.232.39
+
+second stage domains
+bot:
+milktown35a.bazar
+hyhonydezu.bazar
+winterday02.bazar
+
+LOADER:
+komigunt4e.bazar
+giromech8es.bazar
+gnufich5df.bazar
+```
+Pass the assembly to porfirio, please let me know how you pass it
+[17.08.21 07:59:09]
+[17.08.21 08:28:51] royal: g5 passed.
+[17.08.21 08:29:18] elroy: Great, now 19 and 20
+[17.08.21 08:30:19] elroy: ``
+addresses (domains) of the first stage
+bot:
+194.15.113.148
+207.154.244.115
+94.140.112.9
+207.154.229.94
+
+LOADER:
+167.99.240.197
+207.154.236.187
+194.135.33.147
+172.83.155.231
+
+second stage domains
+bot:
+blackrain99.bazar
+bluequiz79.bazar
+xn90hunter.bazar
+
+LOADER:
+mognitr8cf.bazar
+ijnastydof.bazar
+hpfaxret243.bazar
+```
+Tell wild when he shows up.
+[17.08.21 09:03:29] royal: 19 given.
+[17.08.21 09:03:36] elroy: okay.
+[17.08.21 09:20:35] royal: 20 given.
+[17.08.21 09:20:53] elroy: okay.
+[18.08.21 09:05:01] elroy: hello.
+group 20
+x64 regsvr32
+```
+first stage addresses (domains)
+bot:
+194.15.113.148
+207.154.244.115
+94.140.112.9
+207.154.229.94
+
+LOADER:
+167.99.240.197
+207.154.236.187
+207.154.244.115
+172.83.155.231
+
+second stage domains
+bot:
+blackrain15.bazar
+bluequiz11.bazar
+xn00hunter.bazar
+
+LOADER:
+mognitrpdf.bazar
+ijnastugaf.bazar
+hp1faxret00.bazar
+```
+On the test pass the wild, keep me posted.
+[18.08.21 09:22:32] royal: Addresses from yesterday.
+[18.08.21 09:22:58] elroy: I checked them, 1 replaced. Everything is clean, everything works. Except one address.
+[18.08.21 09:23:09] elroy: (which in the list is replaced)
+[18.08.21 09:47:02] royal: 20 given.
+[18.08.21 09:47:12] elroy: ok
+[18.08.21 11:01:41] elroy: do another build please
+regsvr32 x64 group 16
+```
+bot:
+172.83.155.218
+142.93.104.141
+138.68.188.20
+161.35.69.139
+
+LOADER:
+159.65.18.134
+165.227.232.39
+161.35.69.139
+161.35.69.209
+
+second stage domains
+bot:
+milktow1tst.bazar
+hyhonymotst.bazar
+winter31tst.bazar
+
+LOADER:
+komiguntst.bazar
+zaromechtst.bazar
+gnufichaftst.bazar
+```
+Pass the wild
+[18.08.21 11:11:05] royal: No access to group 16.
+[18.08.21 11:11:11] royal: My nickname is b2 in admin.
+[18.08.21 11:11:19] elroy: okay, now
+[18.08.21 11:12:16] elroy: corrected
+[18.08.21 11:12:40]
+[18.08.21 11:29:12] royal: 16 given.
+[18.08.21 13:39:21] royal: group 16 bot with last addresses started getting 500 in reply to all requests.
+[18.08.21 13:40:18] elroy: I wonder.) I have to check the addresses. I'll see what they are.
+[18.08.21 13:43:37] elroy: Checking addresses, so far the answer is 200
+[18.08.21 13:43:50] elroy: But I'm checking the test group.
+[18.08.21 13:43:59] elroy: Is it about admin?
+[18.08.21 13:44:06] royal: The tester has it working too.
+[18.08.21 13:44:12] royal: It doesn't work for me.
+[18.08.21 13:44:31] royal: Maybe they put me in the Honeypot.
+[18.08.21 13:44:58] elroy: Maybe. How do I find your address?
+[18.08.21 13:45:06] elroy: Or a bot.
+[18.08.21 13:46:13] royal: 1a25650db9674df5125d8a536245d2b4
+[18.08.21 13:46:22] royal: It's in the test ones.
+[18.08.21 13:47:35] elroy: Such a question, does the bot get any request? If you check the address checker from your side, the answer is 200?
+[18.08.21 13:48:09] royal: On command request, it happens first.
+[18.08.21 13:48:36] elroy: Drop the address checker? I just want to share the problem.
+[18.08.21 13:49:04] elroy: Figuring out if request reaches the server through the pads or gets lost on the way
+[18.08.21 13:50:58] royal: Wait. Now we'll check with alphonse.
+[18.08.21 13:51:07] elroy: ok.
+[18.08.21 13:54:09] elroy: tst2 group is not in the filter
+[18.08.21 13:54:29] elroy: unrelated?)
+[18.08.21 13:54:43] royal: In which filter?
+[18.08.21 13:54:51] elroy: Networks global rules
+[18.08.21 13:55:01] elroy: in the panel
+[18.08.21 13:55:43] royal: What does it do?
+[18.08.21 13:56:07] elroy: It's a filter by country source, probably cuts off by default
+[18.08.21 13:56:13] royal: I used to have my address not pass through filter, it was added to exceptions.
+[18.08.21 13:56:23] royal: And everything worked.
+[18.08.21 13:56:44] royal: If they took it out of exceptions again, maybe.
+[18.08.21 14:21:28] royal: There was a bug in admin area on Reset command.
+[18.08.21 14:21:54] royal: In theory, all bots who were given Reset fell off.
+[18.08.21 14:22:05] elroy: Perfect....
+[18.08.21 14:22:22] elroy: Well, it's good that it was revealed)
+[18.08.21 14:22:29] royal: Yes.
+[19.08.21 08:44:56] elroy: Greetings.
+[19.08.21 08:45:28] elroy: group 26
+x64 regsvr32
+```
+first stage addresses (domains)
+bot:
+104.248.170.50
+104.248.170.182
+127.0.0.1
+127.0.0.1
+
+LOADER:
+207.154.236.187
+207.154.244.115
+127.0.0.1
+127.0.0.1
+
+second stage domains
+bot:
+blackrain15.bazar
+bluequiz11.bazar
+xn00hunter.bazar
+
+LOADER:
+mognitrpdf.bazar
+ijnastugaf.bazar
+hp1faxret00.bazar
+```
+Pass to test wild
+[19.08.21 08:45:50] elroy: Access to group 26 must be given. What user?
+[19.08.21 08:47:01] royal: I must. User b2.
+[19.08.21 08:47:16] royal: 127.0.0.1
+127.0.0.1
+[19.08.21 08:47:25] royal: What are those addresses for?
+[19.08.21 08:47:38] royal: Send requests to yourself?
+[19.08.21 08:47:52] elroy: This is a test build, not for production
+[19.08.21 08:50:35] elroy: Added group access
+[19.08.21 08:52:17]
+[19.08.21 09:12:25] royal: 26 given.
+[19.08.21 09:12:37] elroy: okay.
+[19.08.21 09:57:52] elroy: Say, for proto1, for spam admin, can you make a build?
+[19.08.21 10:00:19] royal: I can if it is not stolen, I have not checked for a long time.
+[19.08.21 10:01:05] elroy: Check the status please
+[19.08.21 10:01:47] royal: x64?
+[19.08.21 10:02:15] elroy: x86 regsvr32
+[19.08.21 10:14:01] royal: No detects showed by dyncheck. Give me addresses, I need to check how it works.
+[19.08.21 10:15:12] elroy: I just ordered addresses
+[19.08.21 13:44:08] elroy: Spam-Admin, proto1
+x86 regsvr32
+group 16
+```
+bot:
+165.22.25.174
+165.22.29.88
+165.22.25.38
+165.22.25.74
+
+LOADER:
+165.22.29.106
+165.22.21.42
+165.22.25.200
+165.22.21.98
+
+second stage domains
+bot:
+narigosu6t.bazar
+vfepfds5ex.bazar
+soljunagava.bazar
+
+LOADER:
+pokimoto43.bazar
+jui2yong5.bazar
+gofiouts3.bazar
+```
+Addresses checked for cleanliness. Please check that it works.
+Transmit wild
+[19.08.21 13:51:10] royal: no access to group 16.
+[19.08.21 13:51:16] royal: b7
+[19.08.21 13:53:30] elroy: Corrected
+[19.08.21 13:54:22] royal: Appeared.
+[19.08.21 13:57:48] royal: It does not work. Did you update keys there?
+[19.08.21 13:57:59] royal: I need a key for every day.
+[19.08.21 13:59:22] elroy: I must have missed the key update.
+[19.08.21 14:00:32] elroy: There are keys there until August 30
+[19.08.21 14:01:56] royal: Are there any live bots there?
+[19.08.21 14:02:07] elroy: 2 thousand
+[19.08.21 14:02:08] royal: I got 404 on my requests.
+[19.08.21 14:02:52] elroy: Can you contact alphonse?
+[19.08.21 14:03:22] elroy: To split the problem, find out if it's the addresses or something else
+[19.08.21 14:10:27] royal: Contacted.
+[19.08.21 14:28:44] royal: Give someone else this build.
+[19.08.21 14:29:22] elroy: Elijah also got 404 and 502
+[19.08.21 14:29:40] royal: So there must be a bug in admin.
+[19.08.21 14:29:50] royal: I wrote it.
+[19.08.21 15:09:35] elroy: admins fixed something, please check it again
+[19.08.21 15:11:09] royal: It's still the same.
+[19.08.21 15:32:20] royal: I will not be able to do this build today. I'll be gone at 19:00.
+[19.08.21 15:33:07] elroy: Good.
+Changed addresses, check these 2 please, it's a bot
+104.248.164.94
+104.248.175.208
+[19.08.21 15:34:38] royal: Same thing.
+[19.08.21 15:34:52] elroy: Thanks
+[19.08.21 15:35:50] elroy: One more.
+5.181.80.112
+[19.08.21 15:36:30] royal: 502
+[19.08.21 15:36:41] elroy: okay
+[19.08.21 15:36:51] royal: It's most likely from my experience when 502
+[19.08.21 15:36:58] royal: And here is 404 admin.
+[19.08.21 15:38:12] royal: Or headers are cut on gasket.
+[19.08.21 15:38:36] royal: You have to make a direct request without spacers to understand.
+[19.08.21 15:42:42] royal: alphonse said it's a spacers, request doesn't reach admin.
+[19.08.21 15:42:59] royal: And maybe it also spoils there.
+[19.08.21 15:43:08] royal: Request
+[19.08.21 15:43:14] elroy: Okay. So the gaskets
+[19.08.21 15:43:52] elroy: Tell me something else.
+[19.08.21 15:44:04] elroy: I asked the morning of the 26th group
+[19.08.21 15:44:26] elroy: 104.215.148.63 - did this address happen to be in the addresses?
+[19.08.21 15:45:21] royal: Not in the bot, now look in the loader.
+[19.08.21 15:46:14] royal: Not in loader either.
+[19.08.21 15:46:22] elroy: I see.
+[19.08.21 15:46:43] elroy: I'm taking ja3 prints from the client and server on behalf of silver
+[19.08.21 15:50:18] elroy: You know what's interesting, when you start the loader, there are two requests in parallel to the address in the loader and to that address. The ja3 request fingerprints are different. Then comes the request from the bot, the thumbprint is yours, and the answer comes from him. The interesting thing is that the ja3 thumbprint in the response is the same server - 104.215.148.63. Then comes the relay session message and tcp collision. Then reconnect and our server responds again.
+[19.08.21 15:50:37] elroy: Funny, he intercepts session and traffic there
+[19.08.21 15:53:38] elroy: Demetris said he reloaded the pad, try these two addresses again
+104.248.164.94
+104.248.175.208
+[19.08.21 15:54:27] royal: 404
+[19.08.21 15:54:38] elroy: thanks
+[19.08.21 16:00:02] royal: Maybe it's a redirect that this address got snuck in.
+[19.08.21 16:00:29] royal: I don't consider it an error if there is a redirect.
+[19.08.21 16:00:40] royal: I left.
+[20.08.21 08:41:36] royal: Hi. Gotta get some stuff together. I was late today because the Chinese thunderbolt 3 cable died and my windows virtual machine wasn't working.
+[20.08.21 08:42:25] elroy: Hello. It happens. No, nothing yet.
+[20.08.21 09:47:25] elroy: Need a build for the main admin, proto2
+```
+group 16
+x64 regsvr32
+
+addresses (domains) of the first stage
+bot:
+194.15.113.148
+207.154.244.115
+94.140.112.9
+207.154.229.94
+
+LOADER:
+165.22.29.88
+207.154.236.187
+172.83.155.231
+207.154.244.115
+
+second stage domains
+bot:
+blackrain15.bazar
+bluequiz11.bazar
+xn00hunter.bazar
+
+LOADER:
+mognitrpdf.bazar
+ijnastugaf.bazar
+hp1faxret00.bazar
+```
+Pass the wild to the test.
+[20.08.21 10:22:28]
+[20.08.21 10:23:07] elroy: okay.
+[20.08.21 10:24:26] elroy: Tell me, now I start the loader, it knocks, everything is ok, does it stick? Here's if after restarting the machine there's no internet, what's the loader's behavior? When I connect the internet for a long time silence, nothing knocks...
+[20.08.21 10:24:58] royal: It is fixed as a BITS task.
+[20.08.21 10:25:11] royal: Every 3 hours the system starts.
+[20.08.21 10:25:46] royal: As the system starts the BITS service so it starts.
+[20.08.21 10:26:23] elroy: And if I run a second time on the same machine, it will fix again and there will be two of them ?
+[20.08.21 10:26:49] royal: It will stick, but only one will work.
+[20.08.21 10:27:30] royal: Only one copy can work.
+[20.08.21 10:28:58] elroy: To avoid waiting 3 hours, can I just restart the bits ?
+[20.08.21 10:29:08] royal: Yes.
+[20.08.21 10:29:17] royal: bitsadmin /list
+[20.08.21 10:29:46] royal: bitsadmin /reset delete all tasks
+[20.08.21 10:30:14] elroy: When loader starts, it doesn't initiate bits service connection, i.e. it doesn't start working on other tasks?
+[20.08.21 10:30:42] royal: It adds a task and that's it.
+[20.08.21 10:31:04] elroy: It does not trigger the bits ?
+[20.08.21 10:31:11] royal: It does.
+[20.08.21 10:31:22] elroy: Ah.
+[20.08.21 10:31:37] elroy: I.e. there may be neighboring connects
+[20.08.21 10:31:49] royal: And there tasks that are there work in their own way.
+[20.08.21 10:32:07] royal: Chrome there and others use BITS too.
+[20.08.21 10:32:38] royal: They have their own tasks, timeouts for them restart time, etc.
+[20.08.21 10:33:25] elroy: When I start loader, there are two connections, one to our server, the other to mikes server. Trying to figure out how this is connected.
+[20.08.21 10:33:44] elroy: I wrote that paradox with prints yesterday...
+[20.08.21 10:33:59] royal: And another program also two connects for example?
+[20.08.21 10:34:09] royal: Maybe it is so telemetry.
+[20.08.21 10:34:21] royal: Or it is only me?
+[20.08.21 10:34:45] elroy: I'll check it again. I only watched yours so far, tune in to the task).
+[20.08.21 10:34:53] royal: Look tasks there in BITS
+[20.08.21 10:34:59] royal: bitsadmin /list
+[20.08.21 10:35:14] royal: Maybe a system update is running there for example.
+[20.08.21 10:35:19] elroy: Thanks for the commands, I'll have a look
+[20.08.21 10:35:22] elroy: Maybe
+[20.08.21 10:51:50] royal: I got it.
+[20.08.21 10:51:56] royal: That's my trick.
+[20.08.21 10:52:38] royal: I specify in the BITS task the address to download the file https://microsoft.com/telemetry/update.exe
+[20.08.21 10:52:44] royal: It's a trick.
+[20.08.21 10:52:49] royal: Error.
+[20.08.21 10:52:59] royal: And BITS system starts the loader.
+[20.08.21 10:53:47] royal: I got first request to microsoft, then reply 404, job error, when error occurs boot loader starts.
+[20.08.21 10:53:51] royal: I think so.
+[20.08.21 10:56:34] royal: Checked.
+[20.08.21 10:57:20] royal: I got request to microsoft.com, got response code 301, redirected to 104.103.65.218:443, and from there code 404.
+[20.08.21 10:57:32] royal: In my case.
+[20.08.21 10:57:54] royal: In yours it's redirected to 104.215.148.63
+[20.08.21 10:58:44] royal: That's my screen to fix it.
+[20.08.21 11:04:10] elroy: Yeah, I'll try to reproduce it in mine
+[20.08.21 12:05:56] elroy: you need an assembly for the main admin panel
+group 6
+x64 rundll32
+```
+addresses (domains) of the first stage
+bot:
+194.15.113.148
+207.154.244.115
+94.140.112.9
+207.154.229.94
+
+LOADER:
+165.22.29.88
+172.83.155.231
+207.154.236.187
+207.154.244.115
+
+second stage domains
+bot:
+blackrain15.bazar
+bluequiz11.bazar
+xn00hunter.bazar
+
+LOADER:
+mognitrpdf.bazar
+ijnastugaf.bazar
+hp1faxret00.bazar
+```
+Pass the wild, confirm.
+[20.08.21 12:07:38]
+[20.08.21 12:13:17] royal: No access to group 6.
+[20.08.21 12:13:17] royal: b2.
+[20.08.21 12:16:57] elroy: Corrected.
+[20.08.21 12:17:55] royal: It appeared.
+[20.08.21 12:37:51] royal: 6 gave.
+[20.08.21 12:38:09] elroy: okay.
+[23.08.21 07:24:30] elroy: Greetings.
+[23.08.21 07:25:10] elroy: groups 19, 20, 16
+19,20 - x64 regsvr32
+16 - x86 regsvr32
+```
+addresses (domains) of the first stage
+bot:
+207.154.244.115
+194.15.113.148
+207.154.229.94
+94.140.112.9
+
+LOADER:
+139.28.235.249
+94.140.112.22
+207.154.236.187
+172.83.155.231
+
+second stage domains
+bot:
+blackyork39.bazar
+quizoution7.bazar
+xnx8hunter.bazar
+
+LOADER:
+kidonitsh3.bazar
+jungfudio7.bazar
+narwenquod.bazar
+```
+Pass the wild
+[23.08.21 09:08:23] royal: 19 passed.
+[23.08.21 09:56:00] royal: 16 given.
+[23.08.21 09:56:18] elroy: I don't see the message, please repeat
+[23.08.21 09:56:33] royal: 9:08 AM
+19 given.
+9:56 AM
+16 given.
+[23.08.21 09:56:43] elroy: ok, thanks.
+[23.08.21 14:31:39] royal: Do you have GitLab "Onion site not found"?
+[23.08.21 14:32:00] elroy: I don't see the message
+[23.08.21 14:32:09] royal: Do you have GitLab "Onion site not found"?
+[23.08.21 14:33:21] elroy: You should write to adam, the moment
+[23.08.21 14:33:25] elroy: Yes, not found
+[23.08.21 14:33:37] royal: I will.
+[25.08.21 08:12:37] elroy: Greetings.
+[25.08.21 08:17:52] elroy: groups 19, 20
+x64 regsvr32
+```
+first stage addresses (domains)
+bot:
+207.154.236.187
+172.83.155.231
+207.154.244.115
+194.15.113.148
+
+LOADER:
+139.28.235.249
+94.140.112.22
+207.154.229.94
+94.140.112.9
+
+second stage domains
+bot:
+blacktown2.bazar
+nigastep3.bazar
+mgrtipyset3.bazar
+
+LOADER:
+noiytaede87.bazar
+justpieces87.bazar
+numbosteephs.bazar
+```
+The priority is build 19, then 20.
+Build wild, keep me posted
+[25.08.21 08:17:53]
+[25.08.21 08:39:17] elroy: Say, did you build 23.08.21 group 29 by any chance ?
+[25.08.21 08:40:19] royal: No. I don't even have access to 29.
+[25.08.21 08:40:31] elroy: okay.
+[25.08.21 09:32:44] royal: 19.
+[25.08.21 09:32:55] elroy: ok
+[25.08.21 09:56:36] royal: 20 given.
+[25.08.21 09:56:43] elroy: okay.
+[26.08.21 08:47:51] elroy: Greetings.
+[26.08.21 08:48:06] elroy: Need assembly
+```
+groups 19, 20
+19,20 - x64 regsvr32
+
+addresses (domains) of the first stage
+bot:
+172.83.155.231
+207.154.244.115
+194.15.113.148
+207.154.236.187
+
+LOADER:
+94.140.112.22
+139.28.235.249
+207.154.229.94
+94.140.112.9
+
+second stage domains
+bot:
+blacktown5.bazar
+nigastep6.bazar
+mgrtipyset5.bazar
+
+LOADER:
+noiytaede89.bazar
+justpieces89.bazar
+numbosteeph8.bazar
+```
+[26.08.21 08:48:23] elroy: Issue wild, keep me posted.
+[26.08.21 08:49:28] royal: OK.
+[26.08.21 09:40:03] royal: 19 given.
+[26.08.21 09:40:12] elroy: okay.
+[26.08.21 09:56:34] royal: 20 given.
+[26.08.21 09:56:45] elroy: okay.
+[27.08.21 08:22:03] elroy: Greetings.
+[27.08.21 08:22:43] elroy: How's the cleanup going? Shall we do a build?
+[27.08.21 08:28:07] royal: Hi. Will do.
+[27.08.21 08:28:41] elroy: group 19
+19 - x64 regsvr32
+```
+addresses (domains) of the first stage
+bot:
+104.248.164.94
+104.248.175.208
+172.83.155.231
+194.15.113.148
+
+LOADER:
+104.248.170.50
+104.248.170.182
+207.154.229.94
+94.140.112.9
+
+second stage domains
+bot:
+blackflyangl.bazar
+nigastep9.bazar
+mgrtipyset7.bazar
+
+LOADER:
+noiytaede93.bazar
+justpieces32.bazar
+numborsteeph.bazar
+```
+Pass the wild
+[27.08.21 08:58:09] royal: ``19 gave.
+[27.08.21 09:12:19] elroy: ok
+[10.02.22 13:05:52] elroy: Greetings.
+[10.02.22 13:21:46] royal: Hi.
+[10.02.22 13:22:21] elroy: Tell me what you're up to right now
+[10.02.22 13:23:43] royal: Refining bot/loader, right now, doing a task to check brought certificate to specific ip address.
+[10.02.22 13:24:22] elroy: Thank you

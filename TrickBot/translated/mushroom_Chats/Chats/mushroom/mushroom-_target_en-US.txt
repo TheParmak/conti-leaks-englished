@@ -1,0 +1,780 @@
+2020-06-23T10:33:01 target -> mushroom
+hi
+
+2020-06-23T10:33:09 target -> mushroom
+tell me please
+
+2020-06-23T10:33:09 target -> mushroom
+What's the hardest part about cleaning the file
+
+2020-06-23T10:33:17 target -> mushroom
+Because you've been doing it a lot in the looder
+
+2020-06-23T10:33:22 target -> mushroom
+this rewrites the code
+
+2020-06-23T10:33:35 target -> mushroom
+Or the logic changes in how the loader works
+
+2020-06-23T10:33:51 target -> mushroom
+Or am I misunderstanding the concept of removing dynamic detection, which crypt over the top does not remove
+
+2020-06-23T10:33:56 target -> mushroom
+If you have time, give me an answer, please.
+
+2020-06-23T10:36:10 mushroom -> target
+To remove dynamic detection you should change behavior of program which gives this detection, for example if program looks into register and writes there it will be noticed by antivirus. To prevent it from noticing, it is necessary to change behavior, for example to make another program to look in registry and write there another program, for example BITS.
+
+2020-06-23T10:37:47 mushroom -> target
+To remove static detection, you need to find that place in program code which gives this detection and change it (e.g. add some trash code, swap lines in code, order of function calls etc.). But this does not change the behavior of the program itself.
+
+2020-06-23T10:38:30 target -> mushroom
+give me your wallet
+
+2020-06-23T10:38:32 target -> mushroom
+bts
+
+2020-06-23T10:38:32 target -> mushroom
+your
+
+2020-06-23T10:40:10 mushroom -> target
+To remove the dynamic detection you have to change the logic of the program, and to remove the static you have to change how it looks in binary form (like hash change), but the logic remains the same.
+
+2020-06-23T10:40:29 mushroom -> target
+I don't have a wallet.
+
+2020-06-23T10:41:55 target -> mushroom
+I see, wanted to send you to the steak, for stupid questions
+
+2020-06-23T10:42:00 target -> mushroom
+as a token of gratitude
+
+2020-06-23T10:42:20 target -> mushroom
+I usually do this) when I ask stupid questions
+
+2020-06-23T10:43:57 target -> mushroom
+how does the loader protect itself from an av and how does the bot (in theory) bypass an av
+the question arose from reading threads on forums about "our bot bypasses an av or a protection against av".
+such a question
+
+2020-06-23T10:43:57 target -> mushroom
+thanks
+
+2020-06-23T10:48:28 target -> mushroom
+And probably the most important question for you as a person who joined the team and is involved in the program
+I asked this question to many of the guys, I would like to hear your opinion if possible.
+
+not having any idea about programming
+don't know anything about it
+but knowing what the end goal is (an SM system with API integration into the ringcentral buzzer)
+
+How to set the right task what is needed
+where best to look for such specialists
+how to determine what kind of profile they should have (pcp, c++, python or what)
+how to interview them
+how to distribute the work between them
+how to organize the implementation process
+how to pay them
+
+to eventually get a finished product, not delayed by deadlines, so that a person or people do not overestimate themselves
+and most importantly did not waste time for nothing, well, some money
+
+find a specialist, responsible and detailed, like you and Van, who will work in the office for a long time
+but not in the specifics of malware, but legal software
+
+2020-06-23T10:49:01 target -> mushroom
+and make plz bts wallet, it takes a couple of minutes, or where do you drop $100 on a steak, from the bottom of my heart, for wasting your time and the right answers I always get, thank you
+
+2020-06-23T10:50:20 mushroom -> target
+Loider is protected by the fact that it is not known to antiviruses for a while, obfuscation strings (eg strings with server addresses, they are all encrypted), obfuscation of system functions calls (eg functions to send requests to the server), the binary file does not mention these functions, they are only at runtime and called, building by different compilers, crypto. Bot all the same, and it is not saved on disk, on this anti-viruses have nothing to scan, only on suspicious behavior can burn, for this at the beginning of the traps are removed, which set anti-viruses on suspicious function calls.
+
+2020-06-23T11:00:28 mushroom -> target
+Created a payment at the rate.
+
+2020-06-23T11:00:36 mushroom -> target
+Wallet: 3PhMXuhqrHfye1sLENdXkzZ1mFFygq6a1o
+
+2020-06-23T11:00:46 mushroom -> target
+Amount: 0.01044366
+
+2020-06-23T11:08:20 target -> mushroom
+Yeah threw it on the steak
+
+2020-06-23T11:08:30 mushroom -> target
+OK.
+
+2020-06-23T11:08:40 target -> mushroom
+what to say for hire
+
+2020-06-23T11:09:14 mushroom -> target
+What kind of hire?
+
+2020-06-23T11:09:25 target -> mushroom
+[05:40:14] <target> thank you
+[05:44:49] <target> and probably the most important question for you as a person who himself came to the team and connects with progrmrmovnii
+i asked this question to many of our guys, i want to hear your opinion if possible
+
+not having any idea about programming
+don't know anything about it
+but knowing what the end goal is (an SM system with API integration into the ringcentral buzzer)
+
+How to set the right task what is needed
+where best to look for such specialists
+how to determine what kind of profile they should have (pcp, c++, python or what)
+how to interview them
+how to distribute the work between them
+how to organize the implementation process
+how to pay them
+
+to eventually get a finished product, not delayed by deadlines, so that a person or people do not overestimate themselves
+and most importantly did not waste time, well, some money
+
+find a specialist, responsible and detailed, like you and Van, who will work in the office for a long time
+but not in the specifics of malware, but legal software
+
+2020-06-23T11:09:30 target -> mushroom
+got it?
+
+2020-06-23T11:17:43 mushroom -> target
+I didn't come on my own, they found me through an ad. To see what this ringcentral consists of (what languages and libraries are used in it), on the basis of this look for someone who worked with these libraries and knows these languages, test task to come up with based on this. How to distribute the work is not up to me, I've never done it, on payment is also not up to me, I do not do it. It's better that these people have at least some open source projects on github or other places. Even better they should be able to program on different platforms (Windows and Linux) at least.
+
+2020-06-23T11:21:35 target -> mushroom
+got it about their language profile
+i got it about testing the knowledge to write a module for cfg.
+i asked about payment in the context of paying by the month or monthly
+bring 10 people to the office and see who can do what and how long they're on probation
+
+2020-06-23T11:22:50 mushroom -> target
+Probationary period with reduced salary per month.
+
+2020-06-23T11:23:55 target -> mushroom
+got the concept
+
+2020-06-23T11:24:00 target -> mushroom
+thanks
+
+2020-06-23T11:24:14 target -> mushroom
+but here's the kk
+
+2020-06-23T11:24:17 target -> mushroom
+time
+
+2020-06-23T11:24:25 target -> mushroom
+they say it takes 30 hours
+
+2020-06-23T11:24:30 target -> mushroom
+on the crm interface
+
+2020-06-23T11:24:33 target -> mushroom
+How do you know what 30
+
+2020-06-23T11:24:34 target -> mushroom
+not 10
+
+2020-06-23T11:24:37 target -> mushroom
+or not 50
+
+2020-06-23T11:24:39 target -> mushroom
+without knowledge
+
+2020-06-23T11:24:42 target -> mushroom
+intuitively?
+
+2020-06-23T11:25:05 mushroom -> target
+What is a cc?
+
+2020-06-23T11:25:49 target -> mushroom
+I see you in redmine working on backlog hours
+you're the one who sets the time, you hand in the work.
+it's like subcontracting in a construction site - if you say he'll do it in a day, he'll do it or he won't do it and you don't understand anything
+
+2020-06-23T11:25:51 target -> mushroom
+how *
+
+2020-06-23T11:27:09 mushroom -> target
+It's with experience I think you'll only understand.
+
+2020-06-23T11:27:37 mushroom -> target
+He can say he will do it for so much, but the pitfalls will come out and he won't do it.
+
+2020-06-23T11:28:05 mushroom -> target
+Plus from how that person knows what they are doing.
+
+2020-06-23T11:29:43 target -> mushroom
+got it
+
+2020-06-23T11:29:44 target -> mushroom
+thanks
+
+2020-06-23T11:29:49 target -> mushroom
+until we bring him into the office
+
+2020-06-23T11:29:50 target -> mushroom
+can't understand
+
+2020-06-23T11:29:53 target -> mushroom
+what you're getting into)
+
+2020-06-26T14:36:05 target -> mushroom
+hi
+
+2020-06-26T14:36:06 target -> mushroom
+2 it knows how to work as a usher and as an admin and what advantage does this give us?
+
+2020-06-26T14:36:12 target -> mushroom
+[22.06.2020 06:57:19] <buza> 2 only under user. That's the way the task was set.
+
+2020-06-26T14:36:24 target -> mushroom
+So we don't have it bypassing uac.
+
+2020-06-26T14:36:26 target -> mushroom
+Lowder
+
+2020-06-26T14:36:31 target -> mushroom
+Is that why a warning will pop up on win7?
+
+2020-06-26T14:37:08 target -> mushroom
+I understand it does not upgrade to administrator privileges
+
+2020-06-26T14:37:09 target -> mushroom
+Lowder
+
+2020-06-26T14:37:12 target -> mushroom
+or boosts
+
+2020-06-26T14:37:27 target -> mushroom
+I think it is supposed to load applications and run them from the admin
+
+2020-06-26T14:37:28 target -> mushroom
+please explain
+
+2020-06-26T14:43:00 mushroom -> target
+No it doesn't raise the rights. It works from the user.
+
+2020-06-26T14:44:22 mushroom -> target
+Warning on win7 because the file was downloaded from the internet. On win 10 the same warning if the file is downloaded from the internet is not popular.
+
+2020-06-26T14:44:55 target -> mushroom
+there is no way for us to remove
+
+2020-06-26T14:44:57 target -> mushroom
+this warning
+
+2020-06-26T14:44:58 target -> mushroom
+on vin7
+
+2020-06-26T14:45:02 target -> mushroom
+I.e. bypassing the waq.
+
+2020-06-26T14:45:04 target -> mushroom
+embed
+
+2020-06-26T14:45:11 target -> mushroom
+Or not even discussed
+
+2020-06-26T14:45:14 target -> mushroom
+I was just reading.
+
+2020-06-26T14:45:16 target -> mushroom
+and the mushroom is already gone.
+
+2020-06-26T14:46:04 mushroom -> target
+Not discussed, said not to raise privileges in any way. I think the warning will be under administrator as well.
+
+2020-06-26T14:47:19 mushroom -> target
+Because the file is unknown and downloaded from the internet, this is how all files get a warning if they are downloaded from the internet. If the user clicked once to execute, no more warnings pop up.
+
+2020-06-26T14:49:43 target -> mushroom
+Yes you are absolutely right
+
+2020-06-26T14:49:48 target -> mushroom
+I remembered
+
+2020-06-26T14:49:54 target -> mushroom
+On tests on vin7 running our pc
+
+2020-06-26T14:49:59 target -> mushroom
+It used to crash when you were an admin.
+
+2020-06-26T14:50:51 target -> mushroom
+what we were stigmatized with in the first versions of loaders? was it just by the window popping up or something else?
+and question 2 - can we return the window in the box and in what form
+
+2020-06-26T14:52:08 target -> mushroom
+as I remember you changed the api calls to this detects were at the corp av on runtime or am I mistaken
+
+2020-06-26T14:52:24 target -> mushroom
+and on question 2 - it is very important that the window can return at startup we
+
+2020-06-26T14:54:36 mushroom -> target
+We can return the window. In first versions loader eventually got into antivirus databases and it was rebuilt with slight modifications, so it would not look like the one in the database. The api calls and strings were obfuscated. The bot was also straying sometimes, but I didn't do it, I don't know how it was cleaned.
+
+2020-06-26T14:58:11 target -> mushroom
+please
+
+2020-06-26T14:58:14 target -> mushroom
+put it in priority
+
+2020-06-26T14:58:17 target -> mushroom
+return the window
+
+2020-06-26T14:58:22 target -> mushroom
+and coordinate the implementation with the bouza
+
+2020-06-26T14:58:24 target -> mushroom
+I texted him back
+
+2020-06-26T14:58:31 target -> mushroom
+But just as long as it's on a rant.
+
+2020-06-26T14:58:35 target -> mushroom
+not giving us any trouble
+
+2020-06-26T14:59:03 mushroom -> target
+Good.
+
+2020-06-26T14:59:30 target -> mushroom
+now
+
+2020-06-26T14:59:32 target -> mushroom
+I began to understand
+
+2020-06-26T14:59:36 target -> mushroom
+What is getting burned in a rant
+
+2020-06-26T14:59:43 target -> mushroom
+And how do you clean it and why does it take so long?
+
+2020-06-26T14:59:45 target -> mushroom
+cool)
+
+2020-06-26T15:00:01 target -> mushroom
+essentially eo cleans not the deplude
+
+2020-06-26T15:00:04 target -> mushroom
+and you with your hands
+
+2020-06-26T15:00:39 target -> mushroom
+changing the logic of the api call
+
+2020-06-26T15:00:43 target -> mushroom
+Or am I getting it all wrong?
+
+2020-06-26T15:00:53 target -> mushroom
+Or just encrypt it
+
+2020-06-26T15:00:56 target -> mushroom
+then it's easier for you.
+
+2020-06-26T15:02:23 mushroom -> target
+If it behaves badly, change the logic where it behaves badly to get the same result, but in a different way.
+
+2020-06-26T15:04:21 mushroom -> target
+If we statically hide api calls, they look like a function call by address, not a function call by name, which will be immediately spoiled.
+
+2020-06-26T15:04:53 mushroom -> target
+There are suspicious functions their names antiviruses know.
+
+2020-06-26T15:05:23 mushroom -> target
+In what places are these functions, in what order.
+
+2020-06-26T15:07:35 target -> mushroom
+mushroom
+
+2020-06-26T15:07:44 target -> mushroom
+that still has to be found
+
+2020-06-26T15:07:46 target -> mushroom
+What's going on in there?
+
+2020-06-26T15:07:47 target -> mushroom
+and where
+
+2020-06-26T15:07:51 target -> mushroom
+runoff options
+
+2020-06-26T15:07:53 target -> mushroom
+You guys are monsters.
+
+2020-06-26T15:09:26 mushroom -> target
+Just disconnect the whole program, build it, see if it sticks, then return one piece of the program, again look, and so on to the place where it starts to stink.
+
+2020-06-26T15:10:13 mushroom -> target
+And the behavior of the antivirus itself says that it burned.
+
+2020-06-26T15:58:33 target -> mushroom
+got it
+
+2020-06-26T15:58:36 target -> mushroom
+thanks
+
+2020-06-26T15:58:39 target -> mushroom
+It's not easy work for you.
+
+2020-07-28T07:47:46 target -> mushroom
+hi
+
+2020-07-28T07:47:54 target -> mushroom
+Oh, it's a mess, I'll leave you to it.
+
+2020-07-28T07:47:55 target -> mushroom
+sorry
+
+2020-07-28T07:48:56 mushroom -> target
+Hi. OK.
+
+2020-09-16T11:42:53 mushroom -> target
+Hi. Stern wrote "you are now in charge of loader rants. knock target@ report to him".
+
+2020-09-16T11:43:11 mushroom -> target
+Explain.
+
+2020-09-16T11:43:31 target -> mushroom
+at av
+
+2020-09-16T11:43:35 target -> mushroom
+
+
+2020-09-16T11:43:37 target -> mushroom
+8 detects
+
+2020-09-16T11:43:43 target -> mushroom
+How could this be given to me to work for?
+
+2020-09-16T11:43:52 target -> mushroom
+I asked for clean software
+
+2020-09-16T11:43:58 target -> mushroom
+and I get software with 8 rantimes
+
+2020-09-16T11:43:59 mushroom -> target
+Which one?
+
+2020-09-16T11:44:11 target -> mushroom
+go to bentley
+
+2020-09-16T11:44:15 target -> mushroom
+And he will tell you everything in detail.
+
+2020-09-16T11:44:19 target -> mushroom
+no offense
+
+2020-09-16T11:44:23 target -> mushroom
+I'm loaded right now.
+
+2020-09-16T11:44:25 target -> mushroom
+can you do it?
+
+2020-09-16T11:44:33 target -> mushroom
+He will explain everything to you.
+
+2020-09-16T11:44:36 target -> mushroom
+What happened yesterday
+
+2020-09-16T11:45:20 mushroom -> target
+And I haven't given anything away in two weeks.
+
+2020-09-16T11:45:33 target -> mushroom
+I see, Stern didn't seem to know.
+
+2020-09-16T11:45:34 mushroom -> target
+That must be the group 7 one.
+
+2020-09-16T11:47:12 mushroom -> target
+It's not mine and it's not the one I have under me.
+
+2020-09-16T11:47:17 mushroom -> target
+I found out.
+
+2020-09-21T23:18:55 target -> mushroom
+Hi, I'll be there at lunchtime.
+
+2020-09-21T23:19:00 target -> mushroom
+please be here
+
+2020-09-21T23:19:23 target -> mushroom
+and text me back by 2:00 p.m.
+
+2020-09-22T07:09:44 target -> mushroom
+Hi, I'll be there at lunchtime.
+
+2020-09-22T07:09:44 target -> mushroom
+please be here
+
+2020-09-22T07:09:44 target -> mushroom
+and text me back by 2:00 p.m.
+
+2020-09-22T13:08:26 target -> mushroom
+hi
+
+2020-09-22T13:08:27 target -> mushroom
+with a van
+
+2020-09-22T13:08:29 target -> mushroom
+Chatting?
+
+2020-09-22T13:08:29 target -> mushroom
+ь
+
+2020-09-22T13:08:31 target -> mushroom
+all coordinated?
+
+2020-09-22T13:08:54 mushroom -> target
+Yes.
+
+2020-09-22T13:08:58 target -> mushroom
+great
+
+2020-09-22T13:09:02 target -> mushroom
+Would you be comfortable working with him?
+
+2020-09-22T13:09:07 target -> mushroom
+Do you know my tasks?
+
+2020-09-22T13:09:08 target -> mushroom
+what is needed
+
+2020-09-22T13:09:11 target -> mushroom
+clean working uk
+
+2020-09-22T13:09:14 target -> mushroom
+If anything you tell me directly
+
+2020-09-22T13:09:16 target -> mushroom
+What's not to like
+
+2020-09-22T13:09:18 target -> mushroom
+does not suit
+
+2020-09-22T13:09:23 target -> mushroom
+Who the fuck isn't
+
+2020-09-22T13:09:26 target -> mushroom
+let's take the niceties out of it all
+
+2020-09-22T13:09:32 target -> mushroom
+and concentrate on the case
+
+2020-09-22T13:09:34 target -> mushroom
+on the result
+
+2020-09-22T13:09:44 target -> mushroom
+Write it straight as it is.
+
+2020-09-22T13:09:45 target -> mushroom
+not sure about something
+
+2020-09-22T13:09:47 target -> mushroom
+com
+
+2020-09-22T13:09:49 target -> mushroom
+Email me directly
+
+2020-09-22T13:09:53 target -> mushroom
+questions?
+
+2020-09-22T13:09:56 target -> mushroom
+the dumbest ones to me plz
+
+2020-09-22T13:10:10 target -> mushroom
+I need a permanent infomration of what's going on
+
+2020-09-22T13:10:12 target -> mushroom
+and at what stage
+
+2020-09-22T13:10:14 target -> mushroom
+background
+
+2020-09-22T13:10:29 target -> mushroom
+I have 50 people hanging in my offices because of the software
+
+2020-09-22T13:10:30 target -> mushroom
+idly
+
+2020-09-22T13:10:33 target -> mushroom
+I'm not in the mood for pleasantries.
+
+2020-09-22T13:10:42 target -> mushroom
+I'm already aware of it.
+
+2020-09-22T13:10:44 target -> mushroom
+What you didn't know
+
+2020-09-22T13:10:46 target -> mushroom
+About the purity of the files
+
+2020-09-22T13:10:48 target -> mushroom
+testing
+
+2020-09-22T13:11:11 mushroom -> target
+Why, we knew about purity.
+
+2020-09-22T13:11:43 mushroom -> target
+That's why I've been trying to clear my bootloader for 2 weeks now.
+
+2020-09-22T13:13:38 target -> mushroom
+tell
+
+2020-09-22T13:13:41 target -> mushroom
+tell
+
+2020-09-22T13:13:43 target -> mushroom
+What's up there now
+
+2020-09-22T13:13:44 target -> mushroom
+with it
+
+2020-09-22T13:13:46 target -> mushroom
+what situation
+
+2020-09-22T13:16:47 mushroom -> target
+This is also how Win 10 stinks.
+
+2020-09-22T13:17:02 target -> mushroom
+wine def?
+
+2020-09-22T13:17:08 mushroom -> target
+Yes.
+
+2020-09-22T13:17:13 target -> mushroom
+well this can be cleaned up by a crypt
+
+2020-09-22T13:17:15 target -> mushroom
+
+
+2020-09-22T13:17:18 target -> mushroom
+What's the timing?
+
+2020-09-22T13:17:21 target -> mushroom
+with a crypt
+
+2020-09-22T13:17:24 mushroom -> target
+No.
+
+2020-09-22T13:17:32 mushroom -> target
+Not rantime.
+
+2020-09-22T13:17:53 mushroom -> target
+Static and after a computer reboot.
+
+2020-09-22T13:18:00 mushroom -> target
+Which is odd.
+
+2020-09-22T13:18:13 target -> mushroom
+got it
+
+2020-09-22T13:18:21 target -> mushroom
+remove all resdinet functions
+
+2020-09-22T13:18:26 target -> mushroom
+They're not needed.
+
+2020-09-22T13:18:47 target -> mushroom
+remember
+
+2020-09-22T13:18:49 target -> mushroom
+you were doing a looder.
+
+2020-09-22T13:18:51 target -> mushroom
+in october
+
+2020-09-22T13:18:53 target -> mushroom
+which pulled the file
+
+2020-09-22T13:19:07 target -> mushroom
+Same thing here + while the bot is online a couple more times we hook the file
+
+2020-09-22T13:19:08 target -> mushroom
+and that's it
+
+2020-09-22T13:19:12 target -> mushroom
+kill all other functions
+
+2020-09-22T13:19:14 target -> mushroom
+remove
+
+2020-09-22T13:19:17 target -> mushroom
+only exe and dll
+
+2020-09-22T13:19:19 target -> mushroom
+diaper
+
+2020-09-22T13:19:21 target -> mushroom
+on command
+
+2020-09-22T13:19:23 target -> mushroom
+as long as he's online
+
+2020-09-22T13:19:24 target -> mushroom
+again
+
+2020-09-22T13:19:25 target -> mushroom
+and ve
+
+2020-09-22T13:19:26 target -> mushroom
+all
+
+2020-09-22T13:20:06 mushroom -> target
+I checked it has no effect. Now there will be anchoring in the backdoor and optionally, there will be no anchoring in the loader. But that's not what's making it stray.
+
+2020-09-22T13:21:50 target -> mushroom
+Van
+
+2020-09-22T13:21:52 target -> mushroom
+can you help with that?
+
+2020-09-22T13:22:00 target -> mushroom
+so we'll take the win-def off with a cryptom
+
+2020-09-22T13:22:17 target -> mushroom
+But not all of the runtime is taken off by the crypt because of the logic of working on the system
+
+2020-09-22T13:22:30 target -> mushroom
+all statics are removed by the crypt
+
+2020-09-22T13:22:36 target -> mushroom
+do an assembly
+
+2020-09-22T13:22:45 target -> mushroom
+without resident module
+
+2020-09-22T13:22:51 target -> mushroom
+her on a crypt
+
+2020-09-22T13:23:00 target -> mushroom
+And then we'll see what comes out
+
+2020-09-22T13:53:46 target -> mushroom
+ok?
+
+2020-09-22T13:54:16 mushroom -> target
+Checking again.
+
+2020-09-22T14:01:40 mushroom -> target
+What to do with the window?
+
+2020-09-22T14:02:43 mushroom -> target
+"Confirmation code for RingCentral Operator #00020"
+"ERROR: Update your Adobe Reader or try on another computer."
+
+2020-09-22T14:07:52 target -> mushroom
+yes
+
+2020-09-22T14:07:53 target -> mushroom
+great
+
+2020-09-22T14:07:55 target -> mushroom
+I've already forgotten what it is.
+
+2020-09-22T14:27:17 target -> mushroom
+I haven't dealt with this window in a long time)
+
+2020-09-23T14:06:06 mushroom -> target
+Hi. This bootloader is fine: https://dyncheck.com/scan/id/7911373c7c715b5f4b1f07d479fe109b
+
+2020-09-23T14:06:46 mushroom -> target
+That's the one you said to make primitive.
+
+2020-09-23T15:19:23 target -> mushroom
+Hi
+

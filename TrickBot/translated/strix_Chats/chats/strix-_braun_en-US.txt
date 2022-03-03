@@ -1,0 +1,2350 @@
+2020-06-26T08:27:45 braun -> strix
+Hi.
+
+2020-06-26T08:27:47 braun -> strix
+Here?
+
+2020-06-26T12:25:23 strix -> braun
+hi
+
+2020-06-26T12:25:27 strix -> braun
+Yep
+
+2020-06-26T12:28:11 braun -> strix
+Hi
+
+2020-06-26T12:28:17 braun -> strix
+Did you see the message?
+
+2020-06-26T12:28:38 braun -> strix
+Port 80 is closed (
+
+2020-06-26T12:28:45 strix -> braun
+Yep
+
+2020-06-26T12:28:46 braun -> strix
+Did you get the tor domain up on the server?
+
+2020-06-26T12:30:30 strix -> braun
+I watched a little bit yesterday, but then sort of, Alla took the car and I went to bed. Haven't watched it yet today. I do not understand there, it is necessary for everything to work via Tor? Then 80/433 ports are only needed on the localhost.
+
+2020-06-26T12:31:13 strix -> braun
+Tor was up, but it doesn't work, for some reason. Under Debian it worked, but under Venda it doesn't want to, for some unknown reason.
+
+2020-06-26T12:57:20 braun -> strix
+Need it both ways
+
+2020-06-26T12:58:44 braun -> strix
+So please open ports 80,433 and set up a torus.
++ put ssl certificate
+
+2020-06-26T12:59:04 strix -> braun
+Moreover, Tor does not work even if you turn off the firewall.
+
+2020-06-26T12:59:14 strix -> braun
+ok
+
+2020-06-26T12:59:19 braun -> strix
+How so Oo
+
+2020-06-26T12:59:38 strix -> braun
+I don't know. -- I don't know.
+
+2020-06-26T12:59:39 braun -> strix
+Is it supposed to work through the port?
+
+2020-06-26T13:02:07 braun -> strix
+Do you work US time?
+
+2020-06-26T13:04:49 strix -> braun
+I did, on the american one. But I don't remember what time it is on that vpc -- I'll have to check. It also has Onion v3 enabled -- I'll have to try to turn it off.
+
+2020-06-26T13:05:11 braun -> strix
++ ssl certificate
+The admin area should only be accessible via https, and close http.
+
+2020-06-26T13:05:38 strix -> braun
+I think Tor itself did not write any special errors, but the onion name did not open in the browser.
+
+2020-06-26T13:05:50 strix -> braun
+ok
+
+2020-06-26T13:06:32 strix -> braun
+Should the web server only be accessible via Tor, or should it open via IP as well?
+
+2020-06-26T13:08:03 braun -> strix
+[17:07:40] <BUZA> only by tor
+[17:07:51] <BUZA> no one but the admin should know the real ip
+
+2020-06-26T13:09:39 braun -> strix
+Then close 80,433 as you set up the torus.
+
+2020-06-26T13:10:29 strix -> braun
+ok
+
+2020-06-26T14:31:27 braun -> strix
+Didn't port 80 go up?)
+
+2020-06-26T14:57:47 strix -> braun
+Nah, I'll be poking around right now, I went to the store before that.
+
+2020-06-26T14:58:09 braun -> strix
+ok
+
+2020-06-26T18:24:20 braun -> strix
+How's it going over there?
+
+2020-06-26T18:25:44 strix -> braun
+No luck yet, started poking around, then got interrupted with another problem. I've got a few ongoing tasks here. I'll probably have to do some more digging tomorrow.
+
+2020-06-26T18:25:57 braun -> strix
+ok
+
+2020-06-26T18:26:13 braun -> strix
+Preferably next week to work
+
+2020-06-26T18:27:39 strix -> braun
+Yeah, I'll give it a try.
+
+2020-06-26T20:49:54 strix -> braun
+There 46.249.32.111 is down, admin writes this: "Error: Vm not found.
+
+2020-06-26T20:50:15 strix -> braun
+They say it happened once before.
+
+2020-06-26T20:50:35 strix -> braun
+If data loss happens again, maybe we'll change hosting
+
+2020-06-27T14:02:13 braun -> strix
+Hi.
+
+2020-06-27T14:02:23 braun -> strix
+Is the server not available right now either?
+
+2020-06-27T14:24:20 strix -> braun
+Nope, still the same error. Looks like they won't fix it until Monday. Although I don't know.
+
+2020-06-27T14:24:29 strix -> braun
+*all
+
+2020-06-27T14:24:50 strix -> braun
+But a support ticket has already been written.
+
+2020-06-27T14:24:58 strix -> braun
+Waiting
+
+2020-06-27T16:13:32 braun -> strix
+Got it, but he wasn't blocked, was he?
+
+2020-06-27T19:28:45 strix -> braun
+Nope, the usual malfunctions.
+
+2020-06-29T13:24:56 strix -> braun
+hi
+
+2020-06-29T13:24:58 strix -> braun
+here
+
+2020-06-29T13:25:01 strix -> braun
+?
+
+2020-06-29T13:25:29 strix -> braun
+> In php in the headers of the server disable to show the installed versions on the server, to hide what system on the server.
+
+2020-06-29T13:25:42 strix -> braun
+are you talking about phpinfo() ?
+
+2020-06-29T13:25:51 strix -> braun
+I can remove, of course.
+
+2020-06-29T13:26:08 braun -> strix
+hi
+
+2020-06-29T13:26:08 braun -> strix
+here
+
+2020-06-29T13:26:08 braun -> strix
+?
+
+2020-06-29T13:26:08 braun -> strix
+> In php in the headers of the server prohibit to show the installed versions on the server, to hide what system on the server.
+
+2020-06-29T13:26:08 braun -> strix
+are you talking about phpinfo() ?
+
+2020-06-29T13:26:08 braun -> strix
+I can remove, of course.
+
+2020-06-29T13:26:30 strix -> braun
+The server was up yesterday. I configured Tor today, now it opens at the onion address.
+
+2020-06-29T13:26:43 strix -> braun
+Closed the ports. What else do you need?
+
+2020-06-29T13:26:55 strix -> braun
+Rcnfnb? The server IP has changed.
+
+2020-06-29T13:27:22 strix -> braun
+Your server activated with the new ip.
+ip : 212.129.41.246
+port : 14741
+username : Administrator
+password : 3edcvgy7!@#123
+
+2020-06-29T13:33:25 strix -> braun
+The server was up yesterday. I configured Tor today, now it opens at the onion address.
+
+2020-06-29T13:33:25 strix -> braun
+Closed the ports. What else do you need?
+
+2020-06-29T13:33:25 strix -> braun
+Rcnfnb? The server IP has changed.
+
+2020-06-29T13:33:25 strix -> braun
+Your server activated with the new ip.
+ip : 212.129.41.246
+port : 14741
+username : Administrator
+password : 3edcvgy7!@#123
+
+2020-06-29T13:34:56 braun -> strix
+Hi
+
+2020-06-29T13:35:05 braun -> strix
+What's his onion address?
+
+2020-06-29T13:39:50 braun -> strix
+In php you need to hide the demonstration of installed versions of php and libraries. Through the headers you can see the version of win and php. This should be hidden
+
+2020-06-29T13:45:34 strix -> braun
+do you mean phpinfo() ?
+
+2020-06-29T13:45:55 strix -> braun
+https://a3ggjhcskbjg36bx.onion
+
+2020-06-29T13:46:46 strix -> braun
+I put phpinfo() as a test to make sure that PHP works. I can remove it.
+
+2020-06-29T13:47:19 strix -> braun
+/me removed
+
+2020-06-29T13:47:54 strix -> braun
+Look, did I close any ports there? Does everything work?
+
+2020-06-29T13:50:07 braun -> strix
+I don't know, I'll check now)
+
+2020-06-29T13:51:13 braun -> strix
+So now the php project does not work?
+
+2020-06-29T13:51:24 braun -> strix
+brings out the IT work.
+
+2020-06-29T13:51:31 braun -> strix
+And we had an admin)
+
+2020-06-29T13:51:33 strix -> braun
+what do you mean?
+
+2020-06-29T13:51:49 strix -> braun
+https://a3ggjhcskbjg36bx.onion/crypto/public/login ?
+
+2020-06-29T13:52:18 braun -> strix
+but just the path would have to be specified.
+
+2020-06-29T13:52:22 braun -> strix
+Then it's ok.
+
+2020-06-29T13:52:42 strix -> braun
+I can redirect from the root if needed
+
+2020-06-29T13:53:00 braun -> strix
+Yes, do it right away.
+
+2020-06-29T13:53:07 strix -> braun
+phpmyadmin is also installed there
+
+2020-06-29T13:53:21 braun -> strix
+he let it go for now
+
+2020-06-29T13:53:28 strix -> braun
+https://a3ggjhcskbjg36bx.onion/phpmyadmin/
+
+2020-06-29T13:53:43 braun -> strix
+we're still testing
+
+2020-06-29T13:54:55 braun -> strix
+[16:52:42] <strix> I can redirect from the root if needed
+
+point directly to the project
+
+2020-06-29T13:56:49 braun -> strix
+See you need to hide the server data demo:
+http://prntscr.com/t8iipl
+
+2020-06-29T13:56:54 braun -> strix
+https://a3ggjhcskbjg36bx.onion/crypto/public/api/chats/get/notseen
+
+2020-06-29T13:57:07 braun -> strix
+Follow the link and you'll see.
+
+2020-06-29T14:01:36 strix -> braun
+Yeah, I can see that.
+
+2020-06-29T15:03:57 strix -> braun
+What is this http://prntscr.com/t8iipl ? PHP version?
+
+2020-06-29T15:04:08 strix -> braun
+And how do you hide it?
+
+2020-06-29T15:04:29 strix -> braun
+here https://a3ggjhcskbjg36bx.onion/crypto/public/api/chats/get/notseen I have a blank page
+
+2020-06-29T15:05:27 strix -> braun
+Is it disabled in the PHP options?
+
+2020-06-29T15:06:45 strix -> braun
+I think I already googled it.
+
+2020-06-29T15:06:59 strix -> braun
+expose_php=off
+
+2020-06-29T15:07:52 braun -> strix
+In headers click
+
+2020-06-29T15:07:56 braun -> strix
+it's all there(
+
+2020-06-29T15:08:24 strix -> braun
+ah, right
+
+2020-06-30T16:08:35 braun -> strix
+Hey, bro."
+
+2020-06-30T16:09:12 braun -> strix
+How's the server setup going?
+
+2020-06-30T16:29:10 strix -> braun
+hi
+
+2020-06-30T16:29:52 strix -> braun
+Seems to have mostly set it up -- except for redirects -- something mod_rewrite doesn't want to work at all.
+
+2020-06-30T16:30:22 strix -> braun
+I disabled the display of that header in puchapa, by the way.
+
+2020-06-30T16:30:36 braun -> strix
+Awesome
+
+2020-06-30T16:30:50 braun -> strix
+Tell me, how do you generate a tor domain?
+
+2020-06-30T16:31:05 braun -> strix
+and customize it for the project?
+
+2020-06-30T16:31:30 strix -> braun
+Thor generates it by itself, as soon as you write it in the configure Hidden Service.
+
+2020-06-30T16:31:53 braun -> strix
+Can I genirize a large number?
+
+2020-06-30T16:32:06 strix -> braun
+If you delete the hidden_service dir (hostname file and key), then generate a new one again.
+
+2020-06-30T16:32:40 braun -> strix
+Can I generate many domains per address?
+
+2020-06-30T16:32:53 strix -> braun
+Why a big one? One is enough. One name for each host -- should be enough
+
+2020-06-30T16:33:23 braun -> strix
+We have a lot of tor links for one project
+
+2020-06-30T16:33:52 braun -> strix
+Roughly every bot has its own link
+
+2020-06-30T16:33:57 strix -> braun
+Or you can generate several services, e.g. one for http, another for ssh. And the onion domain will be different for each
+
+2020-06-30T16:34:43 strix -> braun
+You can do it that way, of course. For each hidden service a different name and a different port.
+
+2020-06-30T16:35:06 braun -> strix
+I need to see how to do this
+
+2020-06-30T16:36:25 braun -> strix
+http://prntscr.com/t99t6y
+
+2020-06-30T16:37:06 strix -> braun
+This is what you write in the config:
+
+2020-06-30T16:37:10 strix -> braun
+HiddenServiceDir c:\Users\Administrator\AppData\Roaming\tor\hidden_service
+HiddenServicePort 80 127.0.0.1:80
+HiddenServicePort 443 127.0.0.1:443
+
+2020-06-30T16:38:07 braun -> strix
+Make direct access to the project so it opens immediately with login,
+Instead of https://a3ggjhcskbjg36bx.onion/crypto/public/login go straight to https://a3ggjhcskbjg36bx.onion
+
+2020-06-30T16:40:13 strix -> braun
+I'm trying to do that, but mod_rewrite doesn't work, for some unknown reason.
+
+2020-06-30T16:41:17 braun -> strix
+Maybe through .htaccess ?
+
+2020-06-30T16:41:25 braun -> strix
+Or will it not work that way?
+
+2020-06-30T16:41:33 strix -> braun
+Well, I wrote it in .htaccess:
+
+2020-06-30T16:41:51 strix -> braun
+RewriteEngine on
+RewriteBase /
+RewriteRule ^ crypto/public/login [PT]
+
+2020-06-30T16:42:01 strix -> braun
+But it doesn't work, for some reason
+
+2020-06-30T16:42:53 strix -> braun
+Apache shows by "httpd -M" that no modules are loaded, although mod_php is at least loaded (PHP works)
+
+2020-06-30T16:43:06 strix -> braun
+this is weird
+
+2020-06-30T16:43:12 braun -> strix
+What a mystique.
+
+2020-06-30T16:43:25 braun -> strix
+We have to solve the issue somehow(
+
+2020-06-30T16:43:41 braun -> strix
+Can't you change the HiddenServiceDir immediately to the project?
+
+2020-06-30T16:43:43 strix -> braun
+I don't know with Windows -- everything works with mod_rewrite under Linux
+
+2020-06-30T16:43:57 braun -> strix
+I don't like win for this purpose either
+
+2020-06-30T16:44:51 strix -> braun
+I wanted to ask greene yesterday to see if he could figure out what's wrong, but he hasn't said anything since yesterday.
+
+2020-06-30T16:45:56 strix -> braun
+HiddenServiceDir points to the dir with hostname file and keys, not the project file.
+
+2020-06-30T16:46:05 braun -> strix
+got it
+
+2020-06-30T16:46:18 braun -> strix
+I'm off for a couple of hours, if you have any questions I'll be back!
+
+2020-06-30T16:46:24 strix -> braun
+Uh-huh
+
+2020-06-30T16:46:32 strix -> braun
+Well, I'm still digging.
+
+2020-06-30T16:46:36 braun -> strix
++
+
+2020-06-30T16:46:45 braun -> strix
+We need access to the project
+
+2020-06-30T16:47:05 braun -> strix
+hide this thing:
+
+[19:36:24] <Braun> http://prntscr.com/t99t6y
+
+2020-06-30T16:47:43 strix -> braun
+We need to think about how (if at all possible)
+
+2020-06-30T16:47:49 strix -> braun
+google
+
+2020-06-30T16:48:44 braun -> strix
+In linux I did the swap, but here I dunno(
+
+2020-06-30T16:49:16 strix -> braun
+I think I already googled it:
+
+2020-06-30T16:49:26 strix -> braun
+SsserverTokens Prod.
+
+2020-06-30T16:49:40 braun -> strix
+kool
+
+2020-06-30T16:49:41 strix -> braun
+ ServerTokens Prod.
+
+2020-06-30T16:49:51 strix -> braun
+ServerSignature Off
+
+2020-06-30T16:50:03 braun -> strix
+great
+
+2020-06-30T16:50:21 braun -> strix
+now decide with the transition to the main branch of the project and it will be fire
+
+2020-06-30T16:50:24 braun -> strix
+I'm off.
+
+2020-06-30T16:50:27 braun -> strix
+Coming soon
+
+2020-06-30T16:50:35 strix -> braun
+Yeah, let's do it.
+
+2020-06-30T20:09:07 strix -> braun
+Okay, I think I've fine-tuned it. There in general ${SERVER_ROOT}/htdocs/crypto/public/ should be DocumentRoot and ${SERVER_ROOT}/htdocs/ should be above the root and inaccessible. In short, the server was wrongly configured. Now I fixed it, it should be fine.
+
+2020-06-30T20:48:21 strix -> braun
+Okay, I think I've fine-tuned it. There in general ${SERVER_ROOT}/htdocs/crypto/public/ should be DocumentRoot and ${SERVER_ROOT}/htdocs/ should be above the root and inaccessible. In short, the server was wrongly configured. Now I fixed it, it should be fine.
+
+2020-06-30T20:50:05 braun -> strix
+Well done, well done!
+
+2020-06-30T20:50:59 braun -> strix
+Thank you, now our job!
+
+2020-06-30T20:53:47 strix -> braun
+you're welcome ;)
+
+2020-06-30T20:54:48 braun -> strix
+We will need to solve the issue of generating domain onion, if it is possible on one server.
+But for now we will work with what we have!
+
+2020-06-30T21:16:29 strix -> braun
+Well, let's generate, there should be no problem there either.
+
+2020-06-30T21:17:20 braun -> strix
+Good, we'll figure it out later. That's enough for now.
+
+2020-06-30T21:17:26 braun -> strix
+Thank you!
+
+2020-06-30T21:17:35 strix -> braun
+You just need a few directives
+
+2020-06-30T21:17:38 strix -> braun
+HiddenServiceDir c:\Users\Administrator\AppData\Roaming\tor\hidden_service
+HiddenServicePort 80 127.0.0.1:80
+
+2020-06-30T21:17:59 strix -> braun
+insert, and there will be several onion addresses
+
+2020-06-30T21:18:12 braun -> strix
+One port?
+
+2020-06-30T21:18:15 braun -> strix
+Or different?
+
+2020-06-30T21:18:51 strix -> braun
+different will have to, plus several virtual hosts on different ports in apache
+
+2020-06-30T21:19:31 braun -> strix
+Complicated, well, we'll see. I thought one team could solve it!
+
+2020-06-30T21:19:49 strix -> braun
+or you can hidden service one, and make virtual hosts in apache, 3rd level domain
+
+2020-06-30T21:20:33 strix -> braun
+Like virtualhost1.somesite.onion
+
+2020-06-30T21:21:28 braun -> strix
+it turns out this part changes virtualhost1
+
+2020-06-30T21:22:02 strix -> braun
+Well, yes, in theory, on the same onion name of the 2nd level
+
+2020-06-30T21:22:41 braun -> strix
+I don't know if this will suit the bouza, I'll check it out!
+
+2020-06-30T21:23:10 strix -> braun
+but just somesite.onion/somedir/, where somedir/ will change -- that won't work, for each bot?
+
+2020-06-30T21:23:45 braun -> strix
+Yes, that's how they did it now!
+
+2020-06-30T21:24:13 braun -> strix
+But for some reason he wants the domain to change for every mailing.
+
+2020-06-30T21:34:35 braun -> strix
+You can also add resources (cores and RAM) for php. So that php could handle faster queries and pull more queries!
+
+2020-06-30T23:22:50 strix -> braun
+Kernels and RAM? Actually, memory for one PHP-script in php.ini was memory_limit=256M, I increased it to 1024M just in case. That is, it is a limit on one PHP-script. If it's in parallel, it can use more. In general, PHP is single-trade, so one script in any way use only one core. But apache can run many track-swappers in parallel and each of them can run one script.
+
+2020-06-30T23:23:27 strix -> braun
+So you can, in principle, increase the number of wrappers in apache. It's 150 now.
+
+2020-07-01T08:09:24 strix -> braun
+Cores and RAM? Actually, memory for one PHP-script in php.ini was memory_limit=256M, I increased it to 1024M just in case. That is, it is a limit on one PHP-script. If it's in parallel, it can use more. In general, PHP is single-trade, so one script in any way use only one core. But apache can run many track-swappers in parallel and each of them can run one script.
+
+2020-07-01T08:09:24 strix -> braun
+So you can, in principle, increase the number of wrappers in apache. It's 150 now.
+
+2020-07-01T16:46:42 braun -> strix
+Hi. Here?
+
+2020-07-01T16:58:20 strix -> braun
+Yep
+
+2020-07-01T20:41:18 braun -> strix
+For the project you need:
+[11.06.2020 13:57:45] <BUZA> 5. from admins order spacers, reverse-proxy, to link the locker and admin
+[11.06.2020 13:58:33] <BUZA> the locker has the bare IP address of the admin - you can't do that. It will reverse and calculate.
+That's why it works through the pads.
+The spacer just proxies all traffic to the main admin office.
+
+2020-07-01T20:41:40 braun -> strix
+How long does a gasket live if it's not used?
+
+2020-07-01T20:42:13 braun -> strix
+The locker only works by IP, so the routing needs an IP
+
+2020-07-01T20:42:39 braun -> strix
+Is that the kind of thing you do?
+
+2020-07-01T21:09:07 strix -> braun
+hi
+
+2020-07-01T21:11:13 strix -> braun
+That's probably Def's solution. I haven't tried to do the spacers yet, but I've already looked at virtualbox as an example. There is a routing with openvpn installed, server connects to it, and ports are forwarded to the routing with firewall. Or reverse proxy with Nginx is also a kind of routing.
+
+2020-07-01T21:11:33 strix -> braun
+If I'm assigned to do it, of course, I can try to do it.
+
+2020-07-01T21:13:21 strix -> braun
+Is that the same Enigma that's on that vpc? And the locker?
+
+2020-07-03T12:01:37 braun -> strix
+Hi.
+
+2020-07-03T12:03:35 braun -> strix
+Is bro here?
+
+2020-07-03T12:03:51 braun -> strix
+Gren made spacers and opened port 80.
+
+2020-07-03T12:06:28 braun -> strix
+Look, we can open in apache not the 80 port to our project, but e.g: 8090
+And in torus to open the same as usual through 80.
+Can we do it?
+
+2020-07-03T12:25:44 strix -> braun
+of course
+
+2020-07-03T12:28:57 braun -> strix
+Close port 80 and open the project on 8090.
+
+2020-07-03T12:39:24 strix -> braun
+and 443 -> 447 probably too
+
+2020-07-03T12:41:03 braun -> strix
+ok
+
+2020-07-03T13:46:34 strix -> braun
+Already reconfigured everything.
+
+2020-07-03T13:46:40 braun -> strix
+Thanks
+
+2020-07-03T13:47:26 braun -> strix
+What port did you put it on?
+
+2020-07-03T13:48:01 strix -> braun
+Now the IP 212.129.41.246 opens on ports 80->8090, 443->447, and through Tor as before
+
+2020-07-03T14:06:29 braun -> strix
+Don't go to http://212.129.41.246:8090/
+
+2020-07-03T14:06:33 braun -> strix
+Are you sure it's open?
+
+2020-07-03T14:19:25 strix -> braun
+open
+
+2020-07-03T14:19:42 strix -> braun
+You can check it on the telnet.
+
+2020-07-03T14:20:00 braun -> strix
+And the page does not appear in the browser
+
+2020-07-03T14:20:08 braun -> strix
+The admin area should show up
+
+2020-07-03T14:20:42 braun -> strix
+But it's not there(
+
+2020-07-03T14:28:16 strix -> braun
+Try again -- it should work now
+
+2020-07-03T14:28:36 strix -> braun
+I forgot to add port 447 to the rewrite rule there
+
+2020-07-03T14:29:02 braun -> strix
+chic
+
+2020-07-03T14:29:33 braun -> strix
+Thank you all works.
+
+2020-07-14T15:37:57 braun -> strix
+Hi
+
+2020-07-14T15:39:01 braun -> strix
+We need a WinDAV server for the locker test. Can you arrange it?
+
+It is possible to raise for the test on the virtual machines.
+
+2020-07-14T15:39:12 braun -> strix
+[19:37:27] <green> Bro scribe strix@ don't have time for everything, if he doesn't help then I'll figure it out, but I think someone did it recently, ask him
+
+2020-07-14T16:03:56 strix -> braun
+I have an urgent matter right now - I'm writing a script
+
+2020-07-14T16:04:06 strix -> braun
+\we'll have to do it today or tomorrow
+
+2020-07-14T16:04:21 braun -> strix
+Is there no server available?
+
+2020-07-14T16:04:27 strix -> braun
+what's the deal there? is it long?
+
+2020-07-14T16:04:41 braun -> strix
+We need a WinDAV server for the locker test. Can you arrange it?
+
+It is possible to raise for the test on the virtual
+
+2020-07-14T16:04:44 strix -> braun
+which server for what?
+
+2020-07-14T16:05:30 strix -> braun
+What is WinDAV? Isn't it WebDAV?
+
+2020-07-14T16:06:06 strix -> braun
+I'm afraid I can't make it in time - I have to write a script
+
+2020-07-14T16:06:34 braun -> strix
++WebDAV
+
+2020-07-14T16:06:38 braun -> strix
+ok
+
+2020-07-29T15:06:35 braun -> strix
+Hey bro!
+
+2020-07-29T15:06:36 braun -> strix
+Here?
+
+2020-07-29T15:14:13 strix -> braun
+hi
+
+2020-07-29T15:15:06 braun -> strix
+Didn't you configure our server 212.129.41.246?
+
+2020-07-29T15:15:53 strix -> braun
+Yep
+
+2020-07-29T15:16:00 braun -> strix
+Help me please
+
+2020-07-29T15:16:10 braun -> strix
+this is the kind of thing to set up nid
+
+2020-07-29T15:16:35 braun -> strix
+https://stackoverflow.com/questions/39310308/how-to-use-laravel-echo-on-production-server-with-https
+
+2020-07-29T15:16:46 braun -> strix
+[19:03:24] <AllaWitte> And then there's this:
+https://stackoverflow.com/questions/39310308/how-to-use-laravel-echo-on-production-server-with-https - how did you configure nginx there?
+
+2020-07-29T15:17:00 braun -> strix
+[19:00:03] <AllaWitte> There's something wrong with the server settings, here: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSDidNotSucceed
+
+2020-07-29T15:17:17 braun -> strix
+Sockets over https do not work
+
+2020-07-29T15:17:33 braun -> strix
+you can set the https certificate in the socket settings
+
+2020-07-29T15:17:56 strix -> braun
+Oh, I think it was Green who tuned it up.
+
+2020-07-29T15:18:11 strix -> braun
+There are web sockets of some kind, aren't there?
+
+2020-07-29T15:19:07 strix -> braun
+How do you know if the sockets aren't working?
+
+2020-07-29T15:19:08 braun -> strix
+Maybe
+
+2020-07-29T15:19:27 strix -> braun
+Should I go directly to Alla?
+
+2020-07-29T15:19:29 braun -> strix
+Didn't you set up the https?
+
+2020-07-29T15:19:44 strix -> braun
+https like me
+
+2020-07-29T15:19:52 strix -> braun
+didn't touch sockets
+
+2020-07-29T15:20:04 braun -> strix
+You need to specify the certificate in the socket
+
+2020-07-29T15:20:16 strix -> braun
+OK, I'll take a look.
+
+2020-07-29T15:20:23 braun -> strix
+or nginx
+
+2020-07-29T15:20:32 braun -> strix
+Is that server running nginx?
+
+2020-07-29T15:20:42 braun -> strix
+https://stackoverflow.com/questions/39310308/how-to-use-laravel-echo-on-production-server-with-https
+
+2020-07-29T15:20:44 strix -> braun
+like apachea
+
+2020-07-29T15:20:49 strix -> braun
+apache
+
+2020-07-29T15:28:18 braun -> strix
+Write where the ssl certificate is?
+
+2020-07-29T15:29:06 braun -> strix
+On the server
+
+2020-07-29T15:38:30 strix -> braun
+I can't remember where the certificate is - I need to check the server configs, but the server is busy now - I get kicked out all the time
+
+2020-07-29T15:40:13 strix -> braun
+about this one https://stackoverflow.com/questions/39310308/how-to-use-laravel-echo-on-production-server-with-https I don't understand why it's in javascript and not PCP
+
+2020-07-29T15:40:35 strix -> braun
+Isn't laravel chek written in pcp?
+
+2020-07-29T15:43:41 strix -> braun
+Man, it kicked out again.
+
+2020-07-29T15:44:10 strix -> braun
+Didn't have time to look at the configs before I got kicked out again
+
+2020-07-29T15:44:48 strix -> braun
+there is a certificate and key in the ssl director in the apache config
+
+2020-07-29T15:45:36 strix -> braun
+In c:\Program Files\Apache2.4\conf\ssl or something like that
+
+2020-07-29T15:49:26 strix -> braun
+C:\Program Files\Apache Software Foundation\Apache2.4\conf\ssl\my-server.cert
+
+2020-07-29T15:50:44 strix -> braun
+and the config is in C:\Program Files\Apache Software Foundation\Apache2.4\conf\extra\httpd-ssl.conf
+
+2020-07-29T15:50:58 strix -> braun
+the key is prescribed in it
+
+2020-07-29T16:11:12 strix -> braun
+There is this in httpd-ssl.conf:
+
+2020-07-29T16:12:06 strix -> braun
+Unfortunately, copying does not work
+
+2020-07-29T16:12:21 strix -> braun
+You can search for it yourself using the word WebSocket
+
+2020-07-29T16:12:54 strix -> braun
+There must be something else listening on port 6001
+
+2020-07-29T16:18:01 braun -> strix
+Okay, thanks, I'll take a look.
+
+2020-07-29T16:20:50 braun -> strix
+You can raise apache on this server + also torus via https
+
+2020-07-29T16:20:52 braun -> strix
+root 217.12.219.118 EyoyhTL6L39z itldc.com dsaind@tuta.io cXcx11!!!
+
+2020-07-29T16:24:41 strix -> braun
+linux?
+
+2020-07-29T16:24:47 braun -> strix
++
+
+2020-07-29T16:25:09 strix -> braun
+I don't think laravel_echo_server is running there
+
+2020-07-29T16:25:21 strix -> braun
+ok
+
+2020-07-29T16:25:36 braun -> strix
+[19:25:09] <strix -{admin}> I don't think laravel_echo_server is running there
+ Is that the one with the soxes?
+
+2020-07-29T16:30:51 braun -> strix
+[19:24:42] <strix -{admin}> linux?
+> close all external ports (except ssh), disable logging, share login via tor domain, install php at least 7.2. + mysql current version, phpmyadmin (temporarily must be available via tor)
+
+2020-07-29T16:34:04 braun -> strix
+And tell me how do you open and close ports on linux?
+Through iptables?
+
+2020-07-29T16:34:49 strix -> braun
+Yep
+
+2020-07-29T16:36:15 strix -> braun
+larvel-echo-server should have been run, it just listens to port 6001, which is redirected through sockets
+
+2020-07-29T16:36:25 strix -> braun
+Check if it's working or not
+
+2020-07-29T16:36:37 braun -> strix
+Yes apparently Alla forgot to run)
+
+2020-07-29T16:36:53 braun -> strix
+I didn't check it because I was sitting on linux)
+
+2020-07-29T16:36:58 strix -> braun
+probably
+
+2020-07-29T16:37:05 braun -> strix
+I'll take a look now, thank you.
+
+2020-07-29T16:37:26 strix -> braun
+There you go to htdocs/crypto and say laravel-echo-server start
+
+2020-07-29T16:37:49 braun -> strix
+Yes yes, I'm aware of that)
+
+2020-07-29T16:38:04 strix -> braun
+The file laravel-echo-server.json should be located there
+
+2020-07-29T16:38:17 braun -> strix
+Apparently, they are already so exhausted that they forgot to check that laravel-echo-server is running
+
+2020-07-29T16:38:59 strix -> braun
+Yeah, I'll make a linux server.
+
+2020-07-29T16:39:19 braun -> strix
+OK, let me know how you do it;)
+
+2020-07-29T16:40:33 strix -> braun
+ok
+
+2020-07-29T16:40:51 braun -> strix
+thanks, buddy!
+
+2020-07-29T16:44:44 braun -> strix
+[19:36:15] <strix -{admin}> larvel-echo-server should have been run, it just listens to port 6001, which is redirected through sockets
+> it's not working for some reason! Run it and it doesn't work!
+
+2020-07-29T16:44:58 braun -> strix
+This is the error: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSDidNotSucceed
+
+2020-07-29T16:45:08 braun -> strix
+Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://a3ggjhcskbjg36bx.onion:6001/socket.io/?EIO=3&transport=polling&t=NERTenq. (Reason: CORS request did not succeed).
+
+2020-07-29T16:45:44 braun -> strix
+I'll dig in tomorrow already. It's still off today...
+
+2020-07-29T17:06:42 strix -> braun
+port 6001 is closed on the firewall
+
+2020-07-29T17:06:59 braun -> strix
+Aah)
+
+2020-07-29T17:07:04 braun -> strix
+So that's the trouble)
+
+2020-07-29T17:07:10 braun -> strix
+Forgot about him(
+
+2020-07-29T17:07:11 strix -> braun
+I understood that it only needs to be opened on the localhost
+
+2020-07-29T17:07:34 strix -> braun
+it is not needed on the main Ip only on the localhost
+
+2020-07-29T17:07:51 braun -> strix
+ This one's a dick.
+
+2020-07-29T17:07:56 strix -> braun
+And the url https://a3ggjhcskbjg36bx.onion:6001/socket.io/?EIO=3&transport=polling&t=NERTenq will not open, of course
+
+2020-07-29T17:08:06 strix -> braun
+only on localhost
+
+2020-07-29T17:08:36 braun -> strix
+So it must be open to the outside?
+
+2020-07-29T17:09:28 braun -> strix
+to open it externally: https://a3ggjhcskbjg36bx.onion:6001
+
+2020-07-29T17:10:09 strix -> braun
+Do you really need to put it on the frontend? -- have another look at the config
+
+2020-07-29T17:10:26 braun -> strix
+Go ahead and make it internal.
+
+2020-07-29T17:10:37 braun -> strix
+See how it works
+
+2020-07-29T17:10:49 braun -> strix
+If that's all, okay, we'll leave it at that.
+
+2020-07-29T17:12:24 strix -> braun
+Yes it is redirected to 127.0.0.1:6001
+
+2020-07-29T17:12:37 strix -> braun
+only on localhost
+
+2020-07-29T17:13:05 strix -> braun
+Try opening by IP on the localhost in the browser
+
+2020-07-29T17:27:14 braun -> strix
+Doesn't work through ip
+
+2020-07-29T17:28:53 braun -> strix
+Request from third-party source blocked: One-source policy prohibits reading remote resource to https://212.129.41.246:6001/socket.io/?EIO=3&transport=polling&t=NERdZgK. (Reason: CORS request failed).
+
+2020-07-29T17:38:09 strix -> braun
+via 127.0.0.1:6001 instead of 212.129.41.246:6001
+
+2020-07-29T17:38:46 braun -> strix
+Ah ok
+
+2020-07-29T17:40:14 braun -> strix
+Did I kick you off the server?
+
+2020-07-29T17:45:41 braun -> strix
+same doesn't work(
+
+2020-07-29T17:45:57 strix -> braun
+No, I don't work there anymore.
+
+2020-07-29T17:53:04 braun -> strix
+port 127.0.0.1:6001 is not accessible
+
+2020-07-29T19:48:39 strix -> braun
+So configured your server, name uy3kaikdoos7jfbw.onion
+
+2020-07-29T19:48:46 strix -> braun
+should work
+
+2020-07-29T19:49:05 braun -> strix
+Thanks, bro)
+
+2020-07-29T19:50:08 braun -> strix
+I'll check it out tomorrow.
+
+2020-07-29T19:50:23 braun -> strix
+what is the password on mysql?
+
+2020-07-29T20:11:07 strix -> braun
+same as root
+
+2020-07-29T20:14:51 strix -> braun
+Hmm, in phpMyAdmin it says #1698 - Access denied for user 'root'@'localhost', but the console lets me in
+
+2020-07-29T20:17:10 strix -> braun
+ERROR 1146 (42S02): Table 'mysql.users' doesn't exist
+
+2020-07-29T20:17:17 strix -> braun
+fuck
+
+2020-07-29T20:17:46 braun -> strix
+?
+
+2020-07-29T20:18:04 strix -> braun
+no user table
+
+2020-07-29T20:18:15 braun -> strix
+killed?
+
+2020-07-29T20:18:41 strix -> braun
+someone managed not to create it when installing mysql
+
+2020-07-29T20:19:00 braun -> strix
+:D
+
+2020-07-29T20:21:04 strix -> braun
+I didn't
+
+2020-07-29T20:21:10 strix -> braun
+it is usually created by
+
+2020-07-29T20:21:27 strix -> braun
+This is the first time I've seen it missing.
+
+2020-07-29T20:27:08 braun -> strix
+there are exceptions
+
+2020-07-29T20:29:13 strix -> braun
+But I had to reboot the server once (because of the firewall it was unavailable) - the DB might have been broken
+
+2020-07-29T20:29:27 strix -> braun
+Rebooted from the panel
+
+2020-07-29T20:30:03 braun -> strix
+So you closed ports through the firewall and were able to restore?
+
+2020-07-29T20:31:19 braun -> strix
+Are you prescribing a script for the firewall?
+
+2020-07-29T20:31:23 strix -> braun
+Uh-huh
+
+2020-07-29T20:31:39 braun -> strix
+Can you send it to me?
+
+2020-07-29T20:31:49 strix -> braun
+Yes there is a script to restore the firewall rules after a reboot
+
+2020-07-29T20:32:33 braun -> strix
+Do you run it manually every time?
+
+2020-07-29T20:33:37 strix -> braun
+the script is in /etc/network/pre-up.d/iptables, it just does iptables-restore </etc/iptables/rules.v4
+
+2020-07-29T20:33:57 strix -> braun
+all rules are saved in the file rules.v4
+
+2020-07-29T20:34:15 braun -> strix
+cp
+
+2020-07-29T20:34:42 strix -> braun
+it starts itself before raising the network interface
+
+2020-07-29T20:35:01 braun -> strix
+got it
+
+2020-07-29T20:35:43 braun -> strix
+okay buddy I'm off
+
+2020-07-29T20:35:46 braun -> strix
+See you tomorrow.
+
+2020-07-29T20:36:03 braun -> strix
+Thanks for the work.
+
+2020-07-29T20:36:20 braun -> strix
+We still need to figure out the soxes, where they disappeared to!(
+
+2020-07-29T20:36:34 strix -> braun
+I also need to reinstall mysql
+
+2020-07-29T20:36:42 braun -> strix
+ok
+
+2020-07-29T20:36:49 braun -> strix
+Good luck
+
+2020-07-29T20:36:56 strix -> braun
+As luck would have it, the repa on yandex doesn't resolve on the server
+
+2020-07-29T20:37:08 strix -> braun
+Yeah, we'll have to wait
+
+2020-07-29T20:37:47 strix -> braun
+about the sockets - better ask Green tomorrow morning - he set it up
+
+2020-07-29T20:40:06 braun -> strix
+okay
+
+2020-07-29T21:19:58 strix -> braun
+crap, user not users table is called ;)
+
+2020-07-29T21:20:15 strix -> braun
+so everything is in place :)
+
+2020-07-30T09:41:00 strix -> braun
+damn, user not users table is called ;)
+
+2020-07-30T09:41:00 strix -> braun
+so everything is in place :)
+
+2020-07-30T09:52:27 braun -> strix
+Thank you, it works.
+
+2020-07-30T09:52:40 braun -> strix
+Where on the server is the project?
+
+2020-07-30T09:53:20 braun -> strix
+=)
+
+2020-08-04T21:30:52 braun -> strix
+Hey, bro)
+
+2020-08-04T21:31:53 braun -> strix
+Can you tell me how to deal with soks?
+
+2020-08-04T21:33:14 strix -> braun
+hi
+
+2020-08-04T21:33:35 strix -> braun
+Which ones are for mavelek?
+
+2020-08-04T21:33:47 strix -> braun
+I made him
+
+2020-08-04T21:34:01 braun -> strix
+Not
+
+2020-08-04T21:34:04 braun -> strix
+for Alla)
+
+2020-08-04T21:34:28 strix -> braun
+Or are you talking about the websockets on Alla's server?
+
+2020-08-04T21:34:50 braun -> strix
+About WebSocks
+
+2020-08-04T21:34:51 strix -> braun
+I think we worked it out today.
+
+2020-08-04T21:35:03 strix -> braun
+There was a problem with CORS
+
+2020-08-04T21:35:15 braun -> strix
+Resolved?
+
+2020-08-04T21:35:29 braun -> strix
+Well done.
+
+2020-08-04T21:35:56 strix -> braun
+I think so, but we'll check more closely
+
+2020-08-04T21:36:37 braun -> strix
+great
+
+2020-08-04T21:36:44 braun -> strix
+How did you decide?
+
+2020-08-04T21:38:57 braun -> strix
+Green is on vacation?
+
+2020-08-04T21:39:05 braun -> strix
+Or is it missing?
+
+2020-08-04T21:39:30 strix -> braun
+Said he was on vacation for a week.
+
+2020-08-04T21:40:00 braun -> strix
+ok
+
+2020-08-04T21:40:44 strix -> braun
+Inserted in one of the PHP files an http-header like this:
+
+2020-08-04T21:41:08 strix -> braun
+header('Access-Control-Allow-Origin: *');.
+header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
+
+2020-08-04T21:41:18 strix -> braun
+like
+
+2020-08-04T21:42:04 strix -> braun
+This is for CORS.
+
+2020-08-04T21:43:02 braun -> strix
+Got it.
+
+2020-08-04T21:43:23 braun -> strix
+By the way, will the servers automatically renew?
+
+2020-08-04T21:43:33 braun -> strix
+Which ones were bought?
+
+2020-08-04T21:44:11 strix -> braun
+Well, I keep an eye on it - every month I remind the carder to renew it
+
+2020-08-04T21:44:27 strix -> braun
+and the previous one expired?
+
+2020-08-04T21:44:40 braun -> strix
+Thanks
+
+2020-08-04T21:44:53 braun -> strix
+Yes, overdue!
+
+2020-08-04T21:45:21 braun -> strix
+By the way, have you ever picked up a node?
+
+2020-08-04T21:48:25 strix -> braun
+node-js?  -- haven't tried it yet
+
+2020-08-04T21:48:52 braun -> strix
+Don't node the bit.
+
+2020-08-04T21:49:06 braun -> strix
+nope, nodu bitka!
+
+2020-08-04T21:49:50 strix -> braun
+haven't tried bitcoin yet either
+
+2020-08-04T21:50:05 strix -> braun
+But it doesn't seem to be difficult.
+
+2020-08-04T21:50:12 braun -> strix
+Got it.
+
+2020-08-04T21:50:50 braun -> strix
+Yeah, I did. It's okay, there's just one thing, I thought you were good at it.
+
+2020-08-04T21:51:11 strix -> braun
+what's the nuance?
+
+2020-08-04T21:51:12 braun -> strix
+Wanted to consult.
+
+2020-08-04T21:52:49 strix -> braun
+I picked up Sia, it has a blockchain size of about 19GB, bitcoin has 300GB. I wonder how long it takes to pump out the whole base?
+
+2020-08-04T21:53:31 braun -> strix
+3 to 7 days
+
+2020-08-04T21:53:56 strix -> braun
+To SSD or to a regular screw?
+
+2020-08-04T21:55:27 braun -> strix
+There is a wallet base file wallet.dat. It's encrypted and I need to somehow withdraw the dough by entering the encrypted wallet password. I don't withdraw dough from encrypted wallet, but I can't withdraw dough from encrypted wallet!
+
+2020-08-04T21:55:54 braun -> strix
+I'm still figuring it out.
+
+2020-08-04T21:57:16 strix -> braun
+For an encrypted one, you have to enter the password every time you start a node to unlock the wallet
+
+2020-08-04T21:57:49 strix -> braun
+At least in SIa it is so. BBBBBBBBB bitcoin should be similar.
+
+2020-08-04T21:58:01 braun -> strix
+[01:54:46] <AllaWitte> No, sockets don't work, they don't catch the event. (
+
+2020-08-04T21:59:05 braun -> strix
+Thanks for the tip, I'll take a look.
+
+2020-08-04T21:59:16 braun -> strix
+But the sockets don't work.
+
+2020-08-04T21:59:46 strix -> braun
+Yeah, Alla texted me, too.
+
+2020-08-04T22:00:01 braun -> strix
+Something weird is going on with them. (
+
+2020-08-07T13:08:01 braun -> strix
+Hey there, buddy.
+
+2020-08-07T13:08:10 braun -> strix
+Sox are not amenable?
+
+2020-08-07T13:08:41 strix -> braun
+websockets? -- not yet
+
+2020-08-07T13:10:03 braun -> strix
+Yeah, websocks)
+
+2020-08-07T13:10:09 braun -> strix
+It's not clear, what's wrong?
+
+2020-08-07T13:11:05 strix -> braun
+unclear so far
+
+2020-08-07T13:11:47 strix -> braun
+I'll have to google the subject.
+
+2020-08-07T13:51:17 braun -> strix
+maybe try to configure it with nginx
+
+2020-08-07T13:53:11 strix -> braun
+What's the difference? The point is the same.
+
+2020-08-07T13:57:05 braun -> strix
+What's the difference? The point is the same.
+
+2020-08-07T19:12:58 braun -> strix
+Can you tell me how to deal with websockets*
+
+2020-08-07T19:13:07 braun -> strix
+Can you tell me how to deal with websockets?
+
+2020-08-07T20:08:17 strix -> braun
+I'll try
+
+2020-08-07T20:08:37 strix -> braun
+I just had other things to do
+
+2020-08-07T20:08:44 strix -> braun
+*cross
+
+2020-08-07T20:20:16 braun -> strix
+Okay, we'll wait.
+
+2020-08-10T20:49:38 braun -> strix
+Greetings, my friend.
+
+2020-08-10T20:50:09 braun -> strix
+It's not that simple with web sockets?
+
+2020-08-10T20:50:14 braun -> strix
+Can't solve the problem?
+
+2020-08-10T21:11:22 strix -> braun
+Haven't gotten around to it yet today
+
+2020-08-10T21:11:50 strix -> braun
+I'll do some more digging tomorrow
+
+2020-08-10T21:15:20 strix -> braun
+*will* be picking
+
+2020-08-12T17:28:39 braun -> strix
+Hey there, buddy.
+
+2020-08-12T17:56:16 strix -> braun
+Hi
+
+2020-08-12T17:56:45 braun -> strix
+I take it it's not working with websockets yet?
+
+2020-08-12T18:06:48 strix -> braun
+we're still picking on dumsday
+
+2020-08-12T18:07:03 braun -> strix
+ok
+
+2020-08-12T18:07:15 braun -> strix
+Is he good at this too?
+
+2020-08-12T18:07:53 strix -> braun
+yeah kinda
+
+2020-08-12T18:08:06 braun -> strix
+GOOD
+
+2020-08-12T18:33:23 braun -> strix
+here?
+
+2020-08-12T18:33:45 strix -> braun
+for now
+
+2020-08-12T18:34:38 braun -> strix
+you can look at the server 217.12.219.118.
+
+I can't connect to our git through the proxy
+
+2020-08-12T18:35:55 braun -> strix
+I installed privoxy
+
+2020-08-12T18:36:11 braun -> strix
+Or didn't you set up privoxy?
+
+2020-08-12T18:38:15 braun -> strix
+I texted grin, but he's out.
+
+2020-08-12T18:38:30 braun -> strix
+Before you even...
+
+2020-08-12T18:51:58 strix -> braun
+I don't know what privoxy is for
+
+2020-08-12T18:52:09 strix -> braun
+And the password to the git toe
+
+2020-08-12T18:52:12 strix -> braun
+*also
+
+2020-08-12T18:52:38 braun -> strix
+I want to merge a project from git
+
+2020-08-12T18:53:12 braun -> strix
+There is no need to save the password, I will enter it every time I update!
+
+2020-08-12T18:57:16 strix -> braun
+Anyway, it looks like they set up the websockets!
+
+2020-08-12T18:57:29 strix -> braun
+doomsday has figured out how to do
+
+2020-08-12T18:57:35 braun -> strix
+wow
+
+2020-08-12T18:57:53 braun -> strix
+I'll have to check it out.
+
+2020-08-12T18:57:58 braun -> strix
+And how did you do it?
+
+2020-08-12T18:58:13 strix -> braun
+There is one more rewrite rule to make the authorization request go via http GET-request instead of via web sockets
+
+2020-08-12T18:59:11 braun -> strix
+is this in apache?
+
+2020-08-12T18:59:15 strix -> braun
+Yep
+
+2020-08-12T18:59:22 braun -> strix
+great
+
+2020-08-12T18:59:29 braun -> strix
+we have to test
+
+2020-08-12T19:41:19 braun -> strix
+apache2 virtual page settings are at: /etc/apache/* ?
+
+2020-08-12T19:42:45 strix -> braun
+/etc/apache2 if debian
+
+2020-08-12T19:43:05 strix -> braun
+/etc/httpd if centos/fedora/redhat
+
+2020-08-12T19:43:17 braun -> strix
+When I go to this address: uy3kaikdoos7jfbw.onion
+
+The project itself is located at /var/www/
+
+The settings are: etc/apache2...
+
+2020-08-12T19:43:30 braun -> strix
+Right?
+
+2020-08-12T19:43:40 strix -> braun
+well
+
+2020-08-12T19:43:50 strix -> braun
+more precisely /var/www/html usually
+
+2020-08-12T21:25:01 braun -> strix
+Thanks, all set up)
+
+2020-08-13T14:09:35 braun -> strix
+Greetings.
+
+2020-08-13T14:10:10 strix -> braun
+hi
+
+2020-08-13T14:10:38 braun -> strix
+So are the websockets working, okay?
+
+2020-08-13T14:10:46 braun -> strix
+Alla did not respond.
+
+2020-08-13T14:14:28 strix -> braun
+Yesterday with Dooms we were poking around till 3 a.m., experimenting. We found out that for vesokets we need mod_proxy_wstunnel module for apache. It's only available since version 2.4.5 and we have 2.4.2. Anyway, just upgraded.
+
+2020-08-13T14:15:02 strix -> braun
+Up to version 2.4.46.
+
+2020-08-13T14:15:12 strix -> braun
+Ofc c ybv rjdshz.cm/
+
+2020-08-13T14:15:24 strix -> braun
+I'm still messing around with it.
+
+2020-08-13T14:15:30 braun -> strix
+got it.
+
+2020-08-13T14:16:02 braun -> strix
+Already the problem is solvable.
+
+2020-08-13T15:20:45 braun -> strix
+ Is the problem solvable already?
+
+2020-08-13T15:28:42 strix -> braun
+Looks like it's a bummer with apache and websockets under venda. So, I updated my apache and enabled load required modules in config, they even loaded, but seems that module responsible for websockets doesn't work.  -- It blames ws://... in the config and gives an Internal Server error. Replacing ws:// with http:// -- No error.
+
+2020-08-13T15:29:55 strix -> braun
+Def and I have already decided to move apache and websockets to a Linux server and leave the rest to the Windows.
+
+2020-08-13T15:30:34 braun -> strix
+Well, that's what I wanted to do in the first place.
+
+2020-08-13T15:30:40 braun -> strix
+Buse wrote
+
+2020-08-13T22:38:41 braun -> strix
+here?
+
+2020-08-13T22:39:07 strix -> braun
+Yep
+
+2020-08-13T22:39:28 strix -> braun
+migrating web part to lnux server
+
+2020-08-13T22:39:44 braun -> strix
+root 216.244.85.15 01236vi@sky viasky.co ericmeric@protonmail.com popo00-- (2020-07-14 #Bought)
+
+bitcoin node must be uploaded here.
+
+2020-08-13T22:40:34 strix -> braun
+What do you mean, copy the database from the venda to here?
+
+2020-08-13T22:40:47 braun -> strix
+nope)
+
+2020-08-13T22:40:54 braun -> strix
+Make a new server
+
+2020-08-13T22:41:10 braun -> strix
+I'll redo the scripts on it)
+
+2020-08-13T22:41:33 strix -> braun
+no well the database is better to copy all the same, otherwise it will take a long time to be synchronized
+
+2020-08-13T22:41:49 braun -> strix
+Well, you can also
+
+2020-08-13T22:41:56 braun -> strix
+if it's faster
+
+2020-08-13T22:42:00 strix -> braun
+and you don't know the mysql password on winnda?
+
+2020-08-13T22:42:11 braun -> strix
+rootxx
+
+2020-08-13T22:43:33 strix -> braun
+Thanks a lot
+
+2020-08-13T22:43:37 strix -> braun
+fits
+
+2020-08-13T22:43:48 braun -> strix
+good
+
+2020-08-14T13:50:25 braun -> strix
+Greetings.
+
+2020-08-14T13:50:28 braun -> strix
+How are you doing?)
+
+2020-08-14T14:13:32 strix -> braun
+migrated the site to linux
+
+2020-08-14T14:13:48 braun -> strix
+To a new server?
+
+2020-08-14T14:14:44 braun -> strix
+That server I gave you didn't you use it?
+
+2020-08-14T14:27:04 strix -> braun
+Which one did you give? I don't know.
+
+2020-08-14T14:27:10 strix -> braun
+def new ordered
+
+2020-08-14T15:33:47 braun -> strix
+ok
+
+2020-08-14T15:34:04 braun -> strix
+Did you set up the one I gave you for the node?
+
+2020-08-14T15:48:41 strix -> braun
+which one did you give?
+
+2020-08-14T15:48:52 strix -> braun
+You didn't give me anything.
+
+2020-08-14T15:50:09 braun -> strix
+[14.08.2020 02:39:44] <Braun> root 216.244.85.15 01236vi@sky viasky.co ericmeric@protonmail.com popo00-- (2020-07-14 #Bought)
+
+bitcoin node must be uploaded here.
+
+2020-08-14T15:50:26 braun -> strix
+the same)
+
+2020-08-14T15:50:40 strix -> braun
+and bitcoin nada
+
+2020-08-14T15:50:45 braun -> strix
++
+
+2020-08-14T15:50:46 strix -> braun
+I thought nodejs
+
+2020-08-14T15:50:51 braun -> strix
+nope)
+
+2020-08-14T15:51:05 strix -> braun
+Haven't gotten around to it yet.
+
+2020-08-14T15:56:49 braun -> strix
+ok
+
+2020-08-14T15:57:08 braun -> strix
+Can you set up web socks here or have you already done everything?
+
+2020-08-14T15:57:31 braun -> strix
+Give me access later, I need to check my scripts how they will work!
+
+2020-08-14T15:58:03 strix -> braun
+The js/app.js is loaded from the Windows server
+
+2020-08-14T15:58:27 strix -> braun
+Somewhere the hostname of a Vendian server is registered
+
+2020-08-14T15:58:38 braun -> strix
+well, it's not inexcusable
+
+2020-08-14T15:58:45 strix -> braun
+I can't finish this one yet
+
+2020-08-14T15:59:38 braun -> strix
+Did you write to Alla? She seems to know where these paths are prescribed.
+
+2020-08-14T16:02:59 strix -> braun
+That's what I asked her about
+
+2020-08-14T16:03:05 strix -> braun
+has not helped so far.
+
+2020-08-14T16:03:21 braun -> strix
+strange
+
+2020-08-14T16:04:01 braun -> strix
+I'll take a look now.
+
+2020-08-14T16:05:07 braun -> strix
+Give me a link to the site
+
+2020-08-14T16:11:17 strix -> braun
+https://3hikhkjb4y4tq5r7.onion
+
+2020-08-14T16:12:39 strix -> braun
+if you open https://3hikhkjb4y4tq5r7.onion/js/app.js there will be
+
+2020-08-14T16:12:41 strix -> braun
+window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo__["a"/* default */]({
+    broadcaster: 'socket.io',
+    host: window.location.hostname + ':447'
+	//host: window.location.hostname
+});
+
+2020-08-14T16:12:55 strix -> braun
+Although I have it just like this:
+
+2020-08-14T16:13:11 strix -> braun
+window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo__["a"/* default */]({
+    /* default: 'socket.io',
+    //host: window.location.hostname + ':447'
+	host: window.location.hostname
+});
+
+2020-08-14T16:13:20 strix -> braun
+i.e. without port 447
+
+2020-08-14T16:13:38 strix -> braun
+the first option is on a windup server
+
+2020-08-14T16:13:54 strix -> braun
+The second one is on linux
+
+2020-08-14T16:14:10 braun -> strix
+got it
+
+2020-08-14T16:14:50 strix -> braun
+somewhere a link to a wendy server
+
+2020-08-14T16:15:36 strix -> braun
+I corrected the hostname in the .env file and reinstalled the nodejs packages
+
+2020-08-14T16:15:44 strix -> braun
+I don't know where else there might be
+
+2020-08-14T16:15:57 strix -> braun
+Maybe in the MySQL database?
+
+2020-08-14T16:16:19 braun -> strix
+There doesn't seem to be any such data there.
+
+2020-08-14T16:16:51 braun -> strix
+I'll take a look now.
+
+2020-08-14T16:20:50 braun -> strix
+Look in this file
+www/resources/assets/js/bootstrap.js
+
+2020-08-14T16:26:11 braun -> strix
+Everything works for me locally
+
+2020-08-14T16:26:37 braun -> strix
+Do you want to comment out the string or replace it with other parameters?
+
+2020-08-14T16:43:45 strix -> braun
+I want all hostnames to point to the linux server, not the left one
+
+2020-08-14T16:46:15 braun -> strix
+Give me access to the server
+
+2020-08-14T16:47:35 strix -> braun
+root 46.249.32.16 01236vi@sky
+
+2020-08-14T16:48:04 strix -> braun
+I don't see such a file www/resources/assets/js/bootstrap.js
+
+2020-08-14T16:49:04 strix -> braun
+ah, no -- there is one.
+
+2020-08-14T16:49:09 braun -> strix
+=)
+
+2020-08-14T16:49:11 strix -> braun
+But it doesn't have a hostname.
+
+2020-08-14T17:11:18 braun -> strix
+doesn't work.
+
+2020-08-14T17:11:43 braun -> strix
+I'm going to download the project and look at it in detail.
+
+2020-08-14T17:12:04 braun -> strix
+locally everything works for me too
+
+2020-08-14T17:14:21 strix -> braun
+I copied the project from Windows to Linux as is
+
+2020-08-14T17:14:54 strix -> braun
+really, nodejs pacaji re-downloaded
+
+2020-08-14T17:15:20 strix -> braun
+The mysql database dump does not contain any hostnames either
+
+2020-08-14T17:15:40 strix -> braun
+The only place where it is is in the .env file
+
+2020-08-14T17:28:18 braun -> strix
+Looks like a redirect is going on
+
+2020-08-14T17:28:37 braun -> strix
+and where it's prescribed is a mystery so far
+
+2020-08-14T17:32:36 strix -> braun
+I think my browser is glitchy - the cache isn't clearing
+
+2020-08-14T17:33:02 braun -> strix
+does it work?
+
+2020-08-14T17:33:09 strix -> braun
+I checked with another browser - the app.js version without the ":447" line is loaded
+
+2020-08-14T17:33:33 braun -> strix
+so apparently the cache was saved for you
+
+2020-08-14T17:33:41 strix -> braun
+shit, but I need exactly Firefox to check the web inspector
+
+2020-08-14T17:33:56 strix -> braun
+Yes, it's cached.
+
+2020-08-14T17:34:20 braun -> strix
+disable caching
+
+2020-08-14T17:35:16 strix -> braun
+That's not how it's turned off. Clearing cache and cookies I press Ctrl-R to refresh the page and it doesn't refresh
+
+2020-08-14T17:36:35 strix -> braun
+you have this page firefox web console showing web sockets: https://3hikhkjb4y4tq5r7.onion/chat/b3e3cea9cfb8e31bf7882ea054236ac1 ?
+
+2020-08-14T17:36:56 strix -> braun
+You have to click on the Network tab and then "WS"
+
+2020-08-14T17:44:21 braun -> strix
+doesn't work(
+
+2020-08-14T17:44:29 braun -> strix
+via tor Firefox
+
+2020-08-14T17:48:11 strix -> braun
+Why isn't it working?
+
+2020-08-14T17:48:41 strix -> braun
+specify 127.0.0.1:9050 as a proxy
+
+2020-08-14T17:49:07 strix -> braun
+Well, or you can use Tor-browser --- that's also Firefox
+
+2020-08-14T17:52:44 braun -> strix
+on torus https://prnt.sc/tzpwf1
+
+2020-08-14T18:07:32 braun -> strix
+I disabled the cache from php and it's still the same(
+
+2020-08-14T18:09:57 strix -> braun
+Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://3hikhkjb4y4tq5r7.onion:447/socket.io/?EIO=3&transport=polling&t=NFkAJ39. (Reason: CORS request did not succeed).
+
+2020-08-14T18:10:05 strix -> braun
+I don't understand a fucking thing.
+
+2020-08-14T18:10:20 strix -> braun
+this is from a different machine -- same crap
+
+2020-08-14T18:11:16 strix -> braun
+window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo__["a"/* default */]({
+    broadcaster: 'socket.io',
+    host: window.location.hostname + ':447'
+	//host: window.location.hostname
+});
+
+2020-08-14T18:11:25 strix -> braun
+I don't understand a fucking thing.
+
+2020-08-14T18:11:36 strix -> braun
+Is this a proider caching?
+
+2020-08-14T18:12:09 strix -> braun
+It came up 447 again
+
+2020-08-14T18:16:12 braun -> strix
+Did you happen to write links to the old site somewhere in apache?
+
+2020-08-14T18:16:23 strix -> braun
+no
+
+2020-08-14T18:17:44 braun -> strix
+It's not the cache problem.
+
+2020-08-14T18:18:13 braun -> strix
+I make any changes and they don't work.
+
+2020-08-14T18:19:14 braun -> strix
+Is the site located here? /var/www/html
+
+2020-08-14T18:19:42 braun -> strix
+right?
+
+2020-08-14T18:24:27 braun -> strix
+here?
+
+2020-08-14T18:27:46 braun -> strix
+the server does not work on this path: http://46.249.32.16:8090/
+
+2020-08-14T18:28:07 braun -> strix
+Are you sure you configured the torus for this server?
+
+2020-08-14T18:28:13 braun -> strix
+=)
+
+2020-08-14T18:29:58 braun -> strix
+You have the settings of the old server
+BridgeRelay 1
+ControlPort 9051
+DataDirector /var/lib/tor
+DirPort 0
+DirReqStatistics 0
+ExitPolicy reject *:*
+HashedControlPassword 16:DE5CBDF6EE97995D600E7ECC501F850B515C0894DED50491E8CB44AC95
+HiddenServiceDir /var/lib/tor/hidden_service
+HiddenServicePort 80 212.129.41.246:8090
+HiddenServicePort 443 212.129.41.246:447
+HiddenServiceVersion 2
+Log notice stdout
+Nickname Unnamed
+ORPort 9001
+RelayBandwidthBurst 10485760
+RelayBandwidthRate 5242880
+SocksPort 9050
+
+2020-08-14T18:30:10 strix -> braun
+the server runs under /var/www/html/crypto/public is ServerRoot
+
+2020-08-14T18:31:39 strix -> braun
+Right, I copied the settings from the old server. Of course I edited it for linux.
+
+2020-08-14T18:32:07 strix -> braun
+I didn't get the IP right.
+
+2020-08-14T18:32:15 braun -> strix
+:D
+
+2020-08-14T18:32:50 braun -> strix
+You made me boil a little, there shouldn't be such a problem)))
+
+2020-08-14T18:33:03 strix -> braun
+What the fuck is the IP even there? It should be 127.0.0.1.
+
+2020-08-14T18:33:13 braun -> strix
+I don't know.
+
+2020-08-14T18:33:17 braun -> strix
+I didn't set it up)
+
+2020-08-14T18:33:25 braun -> strix
+Got what I had)
+
+2020-08-14T18:33:55 braun -> strix
+can you take it from here?)
+
+2020-08-14T18:37:03 strix -> braun
+Oh, man, that's a bitch.
+
+2020-08-14T18:38:08 strix -> braun
+Yeah, I'll figure it out, sure.
+
+2020-08-14T18:38:18 braun -> strix
+ok
+
+2020-08-14T18:38:23 braun -> strix
+write me if anything)
+
+2020-08-17T19:27:06 braun -> strix
+Hey, buddy)
+
+2020-08-17T19:27:15 braun -> strix
+I take it you've succeeded)
+
+2020-08-17T19:44:20 strix -> braun
+Yes, it worked (according to Alla).
+
+2020-08-17T19:45:20 strix -> braun
+You also need to copy or share some .exe from wendas to linux.
+
+2020-08-17T19:45:32 braun -> strix
+Great.
+
+2020-08-17T19:45:41 braun -> strix
+You're doing great!
+
+2020-08-25T22:05:13 braun -> strix
+Hi.
+
+2020-08-25T22:05:15 braun -> strix
+Here?
+
+2020-08-25T22:06:10 braun -> strix
+217.12.219.118 itldc.com dsaind@tuta.io cXcx11!!! <- Extend the server please.
+
+2020-08-25T22:06:25 braun -> strix
+I really need...
+
+2020-08-26T00:17:54 strix -> braun
+hi
+
+2020-08-26T00:18:12 strix -> braun
+# root 216.244.85.15 01236vi@sky
+root 212.129.41.207 01236vi@sky
+viasky.co ericmeric@protonmail.com popo00--
+
+2020-08-26T00:19:03 strix -> braun
+on this one 216.244.85.15 you asked to upload bitcoin-node
+
+2020-08-26T00:20:57 strix -> braun
+he had to be paid by the 14th. I told carter, but last week he couldn't get Stern for a long time (from Monday to Wednesday), he was off-line all the time.
+
+2020-08-26T00:22:52 strix -> braun
+That is why I could not pay on time, the server was taken away. I contacted the support and they offered to install another machine instead: 212.129.41.207. In short, I put a bitcoin-node there.
+
+2020-08-26T00:23:40 strix -> braun
+and this 217.12.219.118 itldc.com dsaind@tuta.io cXcx11!!! instead or another one already?
+
+2020-08-26T00:25:12 strix -> braun
+Oh, yeah -- the other one.
+
+2020-08-26T00:25:28 strix -> braun
+I made it for you before, I have it written down
+
+2020-08-26T00:25:37 strix -> braun
+ok, I'll extend
+
+2020-08-26T00:27:48 strix -> braun
+sorry, carter is offline
+
+2020-08-26T00:30:26 strix -> braun
+We'll have to wait until tomorrow.
+
+2020-08-26T06:42:39 braun -> strix
+You awake?)
+
+2020-08-26T07:24:58 strix -> braun
+hi
+
+2020-08-26T07:25:09 strix -> braun
+I'm going back to sleep now.
+
+2020-08-26T07:27:38 strix -> braun
+carter woke up
+
+2020-08-26T07:28:05 strix -> braun
+asked him to pay for this one: 217.12.219.118 itldc.com dsaind@tuta.io cXcx11!!!
+
+2020-08-31T13:11:03 braun -> strix
+Hey bro!
+
+2020-08-31T13:11:37 braun -> strix
+Alla texted you ? She has something with the server there. Do you know what happened?
+
+2020-08-31T13:30:30 strix -> braun
+No idea -- she hasn't said anything yet.
+
+2020-08-31T13:32:31 braun -> strix
+Windows server is down. Can you check what's wrong?
+
+2020-08-31T13:34:54 braun -> strix
+Server needs to be paid for
+
+2020-08-31T13:35:02 braun -> strix
+ Limited Offer - Canada
+212.129.41.246
+
+2020-08-31T13:35:13 strix -> braun
+Server needs to be paid for
+
+2020-08-31T13:35:13 strix -> braun
+ Limited Offer - Canada
+212.129.41.246
+
+2020-08-31T13:36:19 braun -> strix
+[17:32:30] <Braun> Windows server is down. Can you check what's wrong?
+[17:34:54] <Braun> Server needs to be paid
+[17:35:01] <Braun> Limited Offer - Canada
+212.129.41.246
+
+2020-08-31T13:38:29 strix -> braun
+It was off for some fuckin' reason. Turned it back on.
+
+2020-08-31T13:38:59 braun -> strix
+Strange, but the payment already fits
+
+2020-08-31T13:39:10 strix -> braun
+Pay, of course, need to pay, but by tomorrow and not today. I'll tell the card.
+
+2020-08-31T13:40:42 braun -> strix
+Thanks
+
+2020-08-31T13:42:19 strix -> braun
+The server is up.
+
+2020-08-31T13:42:32 braun -> strix
+thanks, buddy.
+
+2020-08-31T13:45:50 braun -> strix
+Are you getting thrown out?
+
+2020-08-31T13:46:22 strix -> braun
+Me? No.
+
+2020-08-31T13:46:37 braun -> strix
+[17:44:55] *** strix -{admin} now Disabled
+[17:45:34] *** strix -{admin} now Available [50]
+
+2020-08-31T13:46:44 strix -> braun
+It's for you. I was online and still am.
+
+2020-08-31T13:47:03 braun -> strix
+strange)
+
+2020-08-31T13:47:10 braun -> strix
+Maybe me too)
+
+2020-08-31T13:49:48 braun -> strix
+Do our web sockets run themselves or do they have to be run every time?
+
+2020-08-31T13:50:39 braun -> strix
+on this server: 46.249.32.16
+
+2020-08-31T14:14:17 strix -> braun
+laravel-echo-server naturally by hand
+
+2020-08-31T14:14:38 strix -> braun
+Not running now?
+
+2020-08-31T14:15:25 braun -> strix
+https://prnt.sc/u90gl3
+
+2020-08-31T14:15:47 braun -> strix
+has this ever happened before?
+
+2020-08-31T14:28:08 strix -> braun
+was, of course
+
+2020-08-31T14:28:22 strix -> braun
+As far as I'm concerned, that's normal.
+
+2020-08-31T14:28:49 strix -> braun
+*alright
+
+2020-08-31T14:50:58 braun -> strix
+Okay, we'll check it out later.
+
+2020-09-01T13:28:09 braun -> strix
+Hey bro!
+
+2020-09-01T13:28:18 braun -> strix
+Did you make any settings on the server yesterday?
+
+2020-09-01T13:28:33 braun -> strix
+46.249.32.16
+
+2020-09-02T11:23:10 braun -> strix
+Hey bro!
+
+2020-09-03T19:11:49 braun -> strix
+ku
+
+2020-09-03T19:11:55 braun -> strix
+Bro, here?
+
+2020-09-07T14:31:59 braun -> strix
+Hey bro!
+
+2020-09-08T20:18:22 braun -> strix
+Hey bro!
+
+2020-09-08T20:18:30 braun -> strix
+How's it going with linux?
+
+2020-09-09T18:52:02 braun -> strix
+Hey bro!
+
+2020-09-16T18:18:10 braun -> strix
+here?
+
+2020-09-16T18:25:24 braun -> strix
+Writing something?
+
+2020-09-17T11:52:37 braun -> strix
+Hey bro.
+
+2020-09-17T11:52:55 braun -> strix
+How do you disable the firewall on the server?
+
+2020-09-17T11:53:18 braun -> strix
+I take it nothing worked out with radiss?
+
+2020-09-17T11:53:56 braun -> strix
+I take it nothing worked with redis?
+
+2020-09-18T16:33:22 braun -> strix
+Hey there, dopey!
+
+2020-09-18T16:33:25 braun -> strix
+How are you ?
+
+2020-09-18T16:33:30 braun -> strix
+Did you get anything done?
+
+2020-10-09T12:09:03 braun -> strix
+Greetings
+
+2020-10-13T19:15:03 braun -> strix
+Greetings.
+
+2020-10-26T20:45:41 braun -> strix
+Greetings
+
+2020-10-26T20:46:28 braun -> strix
+Please check why the server does not log in:
+
+itldc.com nnuun@ro.ru cXcx11!
+
+2020-10-26T20:46:38 braun -> strix
+root 46.28.69.81 tnDNl9MA2j0l
+itldc.com nnuun@ro.ru cXcx11!
+
+2020-10-26T22:52:03 strix -> braun
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon Oct 26 22:47:42 2020 from 185.220.102.4
+Could not chdir to home directory /root: No such file or directory
+/bin/bash: No such file or directory
+
+2020-10-26T22:52:21 strix -> braun
+Looks like someone is hurting
+
+2020-10-26T22:53:48 strix -> braun
+someone deleted the shell and the root home dir?
+
+2020-10-27T07:29:56 braun -> strix
+Who had access to the server?
+
+2020-10-27T07:30:31 braun -> strix
+After the weekend such trouble started, problems with git and our servers.
+
+2020-10-27T11:03:02 braun -> strix
+Afternoon
+
+2020-10-29T14:31:46 braun -> strix
+Hey there, buddy.
+
+2020-10-31T03:28:01 braun -> strix
+Hi
+
+2020-10-31T03:28:05 braun -> strix
+Not sleeping again?
+
+2020-11-02T12:05:03 braun -> strix
+Hey, bro!
+
+2020-11-06T11:51:40 braun -> strix
+Greetings, my friend.
+
+2020-11-06T11:52:42 braun -> strix
+46.28.69.53 - this server is not available ? or did you change your password ?
+
+2020-11-06T11:57:54 strix -> braun
+it looks like carter still hasn't paid
+
+2020-11-06T11:57:58 strix -> braun
+kick
+
+2020-11-06T11:58:16 braun -> strix
+How-so badly needs to be restored.
+
+2020-11-06T11:58:31 braun -> strix
+Is it just carter that does the payments?
+
+2020-11-06T11:58:39 strix -> braun
+Yeah, I'll tell him when he shows up.
+
+2020-11-06T11:58:53 braun -> strix
+thanks.
+
+2020-11-06T11:59:39 braun -> strix
+Can you tell me what's wrong with the old server? We just switched it and didn't figure out what and how it was supported?
+
+2020-11-06T11:59:47 strix -> braun
+By the way, I can try it. I do have a panel. And I also nal rego pads animate.
+
+2020-11-06T12:02:04 braun -> strix
+Access to the panel? And you check what's wrong with the server.
+
+2020-11-06T12:02:13 braun -> strix
+Maybe he's dead altogether.
+
+2020-11-06T12:02:32 strix -> braun
+it was banned by the hoster for non-payment
+
+2020-11-06T12:03:00 braun -> strix
+If we pay for it, will it work?
+
+2020-11-06T12:03:15 strix -> braun
+should
+
+2020-11-06T12:03:25 braun -> strix
+Would be good to do today.
+
+2020-11-06T17:14:47 braun -> strix
+made port 8090 available for routing?
+
+2020-11-06T17:57:57 braun -> strix
+Did you change anything with the settings on the server?
+
+2020-11-06T17:58:04 braun -> strix
+Sockets are not working again
+
+2020-11-06T19:14:06 braun -> strix
+Did you get an email from me?
+
+2020-11-09T12:01:47 braun -> strix
+Hey bro.
+
+2020-11-09T16:12:47 braun -> strix
+Pravitvite.
+

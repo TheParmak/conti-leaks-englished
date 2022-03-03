@@ -1,0 +1,51 @@
+[27.07.21 11:13:26] royal:		Привет. Я по поводу загрузчика который не работает в крипте. Загрузчик dl2.
+[27.07.21 11:13:51] orval:		привет
+[27.07.21 11:14:02] royal:		Логи есть?
+[27.07.21 11:14:15] orval:		у крипта нет
+[27.07.21 11:14:21] orval:		я посмотрю сейчас
+[27.07.21 11:14:36] royal:		Закриптуй с логами версию.
+[27.07.21 11:14:55] royal:		На рабочем столе будет файл dl2.log
+[27.07.21 11:18:23] royal:		DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)
+[27.07.21 11:18:47] royal:		hinstDLL передвешь когда вызываешь загрузчика?
+[27.07.21 11:19:27] royal:		fdwReason это DLL_PROCESS_ATTACH?
+[27.07.21 11:19:55] orval:		да
+[27.07.21 11:20:24] royal:		Надо логи посмотреть.
+[27.07.21 11:44:09] orval:		твой загрузчик во вкладке бк dl2_x64_g5_329.dll?
+[27.07.21 11:54:58] royal:		Мой dl2_x86_18_330.dll
+[27.07.21 11:55:01] royal:		32 битный
+[27.07.21 11:56:42] royal:		dl2_x64_g5_329.dll тоже мой, но там способ запуска не LoadLibrary
+[27.07.21 12:10:13] orval:		первого не вижу
+[27.07.21 12:10:51] royal:		Значит ты не тот криптовал?
+[27.07.21 12:11:29] orval:		я не криптовал
+[27.07.21 12:11:53] royal:		А мне Collin сказал что твой крипт не работает.
+[27.07.21 12:13:04] orval:		крипт мой, но криптовал не я
+[27.07.21 12:13:24] royal:		Надо этот dl2_x86_18_330.dll
+[27.07.21 12:13:41] royal:		У него LoadLibrary запуск.
+[27.07.21 12:17:39] royal:		dl2 LoadLibrary:
+Download: https://qaz.im/load/rGnF5r/zNQh5n
+Delete: https://qaz.im/index.php?a=delete&q=559405222
+Пароль: SuZo,0{P=fFSeMwf(b"@
+[27.07.21 12:17:53] royal:		Версия с логами та которая без nologs.
+[27.07.21 12:18:01] royal:		Из папки GCC бери.
+[27.07.21 12:19:29] royal:		Запускать через dl2test.exe она просто загрузит через LoadLibrary
+[27.07.21 12:19:35] royal:		dl2text.exe dl2.dll
+[27.07.21 13:09:47] orval:		```27.07.2021 16:08:49 Command line: rundll32  1.dll,StartW
+27.07.2021 16:08:49 Self copying
+27.07.2021 16:08:49 Self file name is C:\Users\Professional\Desktop\1.dll
+27.07.2021 16:08:49 Self copy file name is C:\Users\PROFES~1\AppData\Local\Temp\388F.dll
+27.07.2021 16:08:49 Starting process with cmdline C:\Windows\SysWOW64\rundll32.exe C:\Users\PROFES~1\AppData\Local\Temp\388F.dll,StartW
+27.07.2021 16:08:49 Process started, pid: 11248
+27.07.2021 16:08:49 Started
+27.07.2021 16:08:50 Forbidden keyboard layout or system locale
+27.07.2021 16:08:50 Quit
+27.07.2021 16:08:51 Command line: C:\Windows\SysWOW64\rundll32.exe C:\Users\PROFES~1\AppData\Local\Temp\388F.dll,StartW
+27.07.2021 16:08:51 Started
+27.07.2021 16:08:52 Forbidden keyboard layout or system locale
+27.07.2021 16:08:52 Quit
+[27.07.21 13:09:53] orval:		можно считать что работает?
+[27.07.21 13:18:11] royal:		Да.
+[27.07.21 13:18:36] royal:		Запустился увидил раскладку запрещённую или локаль завершился.
+[27.07.21 13:19:02] orval:		ну значит работает
+[27.07.21 13:19:06] orval:		колину передал
+[27.07.21 13:20:21] royal:		Запускал через LoadLibrary?
+[27.07.21 13:34:00] orval:		через rundll
