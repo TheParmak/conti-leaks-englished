@@ -1,0 +1,2708 @@
+2020-07-30T16:12:32 max -> strix
+Hi, did Brown write to you yesterday about websockets on the Windows server?
+
+2020-07-30T16:30:01 strix -> max
+Yep
+
+2020-07-30T16:30:20 strix -> max
+it looks like laravel-echo-server is not running
+
+2020-07-30T16:30:30 strix -> max
+I ran
+
+2020-07-30T16:31:38 max -> strix
+When? I tried a couple of hours ago - same thing
+
+2020-07-30T16:31:49 strix -> max
+yesterday
+
+2020-07-30T16:32:55 strix -> max
+Didn't you ask brown green? -- he was the one who set up the websockets
+
+2020-07-30T16:32:58 max -> strix
+No, there's a snag with https. Check this out: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSDidNotSucceed
+
+2020-07-30T16:33:13 max -> strix
+https://stackoverflow.com/questions/39310308/how-to-use-laravel-echo-on-production-server-with-https
+
+2020-07-30T16:35:07 strix -> max
+Did it even work before?
+
+2020-07-30T16:35:45 max -> strix
+Absolutely, as you and I did then, on the previous server - everything was as it should be
+
+2020-07-30T16:36:19 strix -> max
+I don't remember what it was like on the previous one.
+
+2020-07-30T16:36:41 strix -> max
+and it didn't work on this one to begin with?
+
+2020-07-30T16:37:12 max -> strix
+from the start
+
+2020-07-30T16:37:46 max -> strix
+You can look at our correspondence, you wrote me something of what you did there
+
+2020-07-30T16:38:18 strix -> max
+I didn't do anything at all with the websockets at the time
+
+2020-07-30T16:39:03 max -> strix
+Well, such niggles with memory lapses start after 80, :), I guess you're a little less :)
+
+2020-07-30T16:39:31 max -> strix
+Well, then from scratch - you have to configure there to make web sockets work via https
+
+2020-07-30T16:40:12 strix -> max
+Okay, I'll watch.
+
+2020-07-30T16:40:34 max -> strix
+Come on, keep me posted. I threw you a couple of links on the subject there
+
+2020-07-30T16:40:40 strix -> max
+Do they work via http?
+
+2020-07-30T16:41:39 max -> strix
+On the previous server worked fine, on this one I do not know, there immediately put a torus domain over https
+
+2020-07-30T16:55:20 strix -> max
+http://localhost:6001 opens (writes OK) but http://localhost:6001/socket.io does not
+
+2020-07-30T16:55:45 strix -> max
+i.e. it seems to be on the laravel-echo-server side
+
+2020-07-30T17:01:46 strix -> max
+https://a3ggjhcskbjg36bx.onion/ works
+
+2020-07-30T17:02:19 strix -> max
+What's an example of sockets not working? What url are you opening?
+
+2020-07-30T17:05:59 strix -> max
+https://212.129.41.246:447 also works
+
+2020-07-30T17:07:22 strix -> max
+SSL on port 447 not 443 -- maybe you are trying 443? 443 only works onion address
+
+2020-07-30T17:07:33 strix -> max
+it's set like this
+
+2020-07-30T17:07:45 strix -> max
+port 443 is used by the torus to suit its needs
+
+2020-07-30T17:13:07 max -> strix
+This is how it appears: http://prntscr.com/trbc19
+
+2020-07-30T17:15:10 max -> strix
+this and not http://localhost:6001/socket.io should give an "ok" in the browser or open somehow.
+
+2020-07-30T17:16:12 max -> strix
+There must be redis running as well, that's what you need
+
+2020-07-30T17:18:59 strix -> max
+Of course, port 6001 is closed in the firewall - it is only available on locolost, and it is not available on a3ggjjhcskbjg36bx.onion
+
+2020-07-30T17:22:30 strix -> max
+redis is in the process list, of course
+
+2020-07-30T17:23:52 strix -> max
+and why is a3ggjhcskbjg36bx.onion:6001 trying to open? respectively CORS won't succeed
+
+2020-07-30T17:25:07 strix -> max
+in the apache configuration is
+
+2020-07-30T17:25:24 strix -> max
+beach doesn't fit
+
+2020-07-30T17:26:06 strix -> max
+127.0.0.1:6001
+
+2020-07-30T17:26:55 strix -> max
+so I don't know where a3ggjhcskbjg36bx.onion:6001 came from
+
+2020-07-30T17:30:11 strix -> max
+And there's even https://a3ggjhcskbjg36bx.onion:6001 and I have http everywhere
+
+2020-07-30T17:36:31 strix -> max
+then imho you need to look inside laravel --- why isn't it trying to open port 6001 on the hostname? 6001 shouldn't be added there at all
+
+2020-07-30T17:37:46 strix -> max
+I think you should look inside laravel --- why is it trying to open port 6001 on the hostname? 6001 shouldn't be added there at all -- it should be a standard 443 port
+
+2020-07-30T17:40:39 strix -> max
+and apache should already redirect to localhost:6001/socket.io
+
+2020-07-30T17:46:22 strix -> max
+Can you give me the username/password for this admin, to test it?
+
+2020-07-30T17:52:51 max -> strix
+Look: https://a3ggjhcskbjg36bx.onion/chat/b3e3cea9cfb8e31bf7882ea054236ac1 here chat without passwords - if there is this cross-origin request blocked thing - it does not work, if in the network/ws something like this: http://prntscr.com/trbzt4 - everything should work
+
+2020-07-30T17:53:13 max -> strix
+And most importantly - does it have node.js at all?
+
+2020-07-30T17:58:36 strix -> max
+there is node.js in the list of processes
+
+2020-07-30T18:01:02 max -> strix
+check if there is a node_modules folder in the project ?
+
+2020-07-30T18:01:37 strix -> max
+Yeah, same thing as you: Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://a3ggjhcskbjg36bx.onion:6001/socket.io/?EIO=3&transport=polling&t=NEWuXVJ. (Reason: CORS request did not succeed).
+
+2020-07-30T18:02:07 max -> strix
+Do you have node_modules?
+
+2020-07-30T18:02:26 strix -> max
+node_modules in place
+
+2020-07-30T18:03:23 max -> strix
+Did you use this one: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSDidNotSucceed ?
+
+2020-07-30T18:03:32 strix -> max
+what to do? open port 6001 to the outside?
+
+2020-07-30T18:04:18 max -> strix
+Well, yes. Look, it's not running through localhost on the server there, is it?
+
+2020-07-30T18:05:03 strix -> max
+"As of Firefox 68, https pages are not allowed to access http://localhost, although this may be changed by Bug 1488740."
+
+2020-07-30T18:05:15 strix -> max
+What kind of phyrefoch do you have?
+
+2020-07-30T18:09:11 strix -> max
+at http://localhost:6001/socket.io/?EIO=3&transport=polling&t=NEWuXVJ
+
+2020-07-30T18:09:28 strix -> max
+opens some json
+
+2020-07-30T18:09:53 strix -> max
+-- if you type on the server in chrome
+
+2020-07-30T18:11:10 strix -> max
+Is the page supposed to display a single field with a button? Or is it a glitch?
+
+2020-07-30T19:25:05 max -> strix
+I didn't understand about the single field. If you mean this: https://a3ggjhcskbjg36bx.onion/chat/b3e3cea9cfb8e31bf7882ea054236ac1 - then enter some name there and you'll get in, just any name.
+
+2020-07-30T19:27:43 max -> strix
+But look, it doesn't matter what you see in your browser, it's a chat room. So you have to have someone there with you anyway, so you can see how the chat works. You don't need that. If you don't see a clean console there, and on the contrary, all sorts of complaints about web sockets - it means that they don't work.
+Under the admin password is kgarot@gmail.com bnv8r574.#3vb793 - but there you have to go to the chat tab to see the problem.
+
+2020-07-30T21:16:49 strix -> max
+About the only field -- yes, there is a field under the nickname and the button "Enter to chat".  It successfully enters the chat room and sends a message. -- So, it even works. I think it's a toad-script in the browser trying to open the url like https://a3ggjhcskbjg36bx.onion:6001/socket.io/?EIO=3&transport=polling&t=NEWuXVJ. And so far I have no idea what to do to stop it from adding :6001/socket.io itself -- that should be done by apache. Maybe it's set by some http header?
+
+2020-07-30T21:18:09 strix -> max
+I can see the chat console, but I only see CORS errors in the Mozilla webinspector.
+
+2020-07-30T21:19:39 strix -> max
+http-header about base URL, probably
+
+2020-07-30T21:34:26 max -> strix
+If you're logging into a chat room, it doesn't mean that the websockets work. Logging into the chat room via a normal ajax request.
+https://a3ggjhcskbjg36bx.onion:6001/socket.io/?EIO=3&transport=polling&t=NEWuXVJ is a correction to the fact that the script requests connections to the websockets, and then there goes all sorts of swearing and requests again every couple of seconds - it means that it can't establish a connection due to server settings
+
+2020-07-30T21:35:54 max -> strix
+This is how it is in chrome: http://prntscr.com/trfiei
+
+2020-07-30T21:45:28 max -> strix
+Here, check out more here: https://stackoverflow.com/questions/56901401/laravel-echo-server-neterr-connection-timed-out
+
+2020-07-30T21:45:39 strix -> max
+https://a3ggjhcskbjg36bx.onion:6001 will not work anyway, because port 6001 is closed on the firewall. It is only open on the localhost.
+
+2020-07-30T21:46:11 strix -> max
+looked -- it's about jabaskrpt and Nginx, and we have Apache
+
+2020-07-30T21:47:22 max -> strix
+Well, then you need to open it up. The previous one was a mix of Apache and Nginx, I think. Talk to Green, he started there, then passed it to you.
+
+2020-07-30T21:47:23 strix -> max
+In any case only apache should go to port 6001 on localhost. The web-application itself should not break there
+
+2020-07-30T21:48:08 max -> strix
+I don't care what the port number is, give me some other port on which the web sockets will work
+
+2020-07-30T21:48:31 strix -> max
+Well, that's right -- I suggested yesterday that Braun talk to Green -- he was the one who was setting up
+
+2020-07-30T21:49:00 max -> strix
+Check it out here: https://stackoverflow.com/questions/56901401/laravel-echo-server-neterr-connection-timed-out
+
+2020-07-30T21:49:32 strix -> max
+Is it absolutely necessary to open it? Or this case mono hidden on the localhost?
+
+2020-07-30T21:50:22 strix -> max
+Is it necessary to open a port on the server for web sockets?
+
+2020-07-30T21:51:07 max -> strix
+Green passed it on to you later, if he tells me what he did - I won't repeat it anyway, and if I catch you later and try to retell it to you - it will be total nonsense. You have to make the websockets work. Well yes, they run on the port that's prescribed in the settings.
+
+2020-07-30T21:51:50 strix -> max
+Well, I can open it on farwall. I'll do it tomorrow.
+
+2020-07-30T21:52:15 max -> strix
+If you can't open a port, you have to open a proxy: https://stackoverflow.com/questions/39310308/how-to-use-laravel-echo-on-production-server-with-https
+
+2020-07-30T21:52:25 max -> strix
+I don't know if it would be easier.
+
+2020-07-30T21:52:51 strix -> max
+right now is a proxy and only works on apache
+
+2020-07-30T21:53:53 strix -> max
+But if it is a proxy, it is not clear why it is trying to go to port 6001 directly
+
+2020-07-30T21:54:00 strix -> max
+*directly
+
+2020-07-30T21:55:25 strix -> max
+Okay, I'm going to take a nap.
+
+2020-07-31T13:59:45 max -> strix
+Hi!
+
+2020-07-31T13:59:57 max -> strix
+How's it going on the western front?
+
+2020-07-31T14:43:04 strix -> max
+hi
+
+2020-07-31T14:43:30 strix -> max
+Talked to Green so far, but he didn't say anything specific.
+
+2020-07-31T14:44:12 strix -> max
+But he gave me a new assignment :)
+
+2020-07-31T14:46:28 max -> strix
+Sounds encouraging, but we have a project to turn in, and the websockets are a mess.
+
+2020-07-31T14:47:11 max -> strix
+I need to write these settings, this is an example. What should I write in our case?
+'ssl' => [
+    /*
+     * Path to local certificate file on filesystem. It must be a PEM encoded file which
+     * contains your certificate and private key. It can optionally contain the
+     * certificate chain of issuers. The private key may also be contained
+     * in a separate file specified by local_pk.
+     */
+    //'local_cert' => null,
+    'local_cert' => '/var/www/sockettest/fullchain.pem',
+
+    /*
+     * Path to local private key file on filesystem in case of separate files for
+     * certificate (local_cert) and private key.
+     */
+    //'local_pk' => null,
+    'local_pk' => '/var/www/sockettest/privkey.pem',
+
+    /*
+     * Passphrase for your local_cert file.
+     */
+    //'passphrase' => null,
+    'passphrase' => env('LARAVEL_WEBSOCKETS_SSL_PASSPHRASE', null),
+
+2020-07-31T14:48:09 strix -> max
+the path to our klch and certificate - we need to specify the path
+
+2020-07-31T14:53:15 strix -> max
+"c:/Program Files/Apache Software Foundation/Apache2.4/conf/ssl/my-server.cert" and similarly my-server.key there.
+
+2020-07-31T14:54:05 strix -> max
+passphrase to the key must be empty
+
+2020-07-31T14:56:52 max -> strix
+Yes, thank you!
+
+2020-07-31T14:58:59 strix -> max
+I'm going to take a shower, I'm sweating all over.
+
+2020-07-31T14:59:08 max -> strix
+ :)
+
+2020-07-31T15:12:11 max -> strix
+Are these the right files? It says the file must be a PEM encoded file which
+         * contains your certificate and private key
+
+2020-07-31T15:42:26 strix -> max
+in theory yes
+
+2020-07-31T15:43:19 strix -> max
+pem is the format of keys/certificates -- they should be concatenated there. And the file extension can be different
+
+2020-07-31T15:45:47 strix -> max
+I'm talking to greene right now.
+
+2020-07-31T15:46:32 strix -> max
+and you can't see where your AJAX gets :6001/socket.io/ ?
+
+2020-07-31T15:47:00 strix -> max
+Maybe he's getting them from some http-header?
+
+2020-07-31T22:28:01 max -> strix
+I won't tell you exactly. socket.io is in node_modules, but I don't know how it's wrapped up there.
+
+2020-07-31T22:47:56 strix -> max
+I won't tell you exactly. socket.io is in node_modules, but I don't know how it's wrapped up there.
+
+2020-08-03T13:57:52 max -> strix
+Hi!
+
+2020-08-03T13:59:24 strix -> max
+Hi!
+
+2020-08-03T14:07:59 max -> strix
+I made a setup for the websocket from my side. There goes such a thing as host: window.location.hostname + ':6001', and we already have an address with a port. Is it possible to put a port on top of a port? And I've put everything under the tor domain. But the domain - it's only for us, in fact the reference is still going to 212.129.41.246:447? Though all the errors are different - under tor domain goes cross orogin request blocked ... and under 212.129.41.246:447 - it fights about ssl certificate. And I can't start 212.129.41.246:447 from the remote computer, only there on the server. So with this: 212.129.41.246:447 - no need to bother to configure it
+
+2020-08-03T14:08:57 max -> strix
+I wrote https://a3ggjhcskbjg36bx.onion wherever I needed a fixed host.
+
+2020-08-03T14:17:20 max -> strix
+Did you get the message?
+
+2020-08-03T14:38:52 strix -> max
+Hi
+
+2020-08-03T14:38:56 strix -> max
+Yep
+
+2020-08-03T14:40:19 strix -> max
+Of course it complains about SSL certificate, because the certificate is self-signed
+
+2020-08-03T14:42:02 strix -> max
+Where do you put port to port? There's only one rao port.
+
+2020-08-03T14:42:54 max -> strix
+My understanding is that window.location.hostname + ':6001', is 212.129.41.246:447:6001 - isn't that bullshit?
+
+2020-08-03T14:43:01 strix -> max
+212.129.41.246:447 cannot be started from remote kkkcomp because port 447 is closed by firewall
+
+2020-08-03T14:43:42 max -> strix
+Isn't https://a3ggjhcskbjg36bx.onion the same 212.129.41.246:447? I just don't know how you did it.
+
+2020-08-03T14:44:49 max -> strix
+You are in Estonia now :) "remote kkkcomp" ? :)
+
+2020-08-03T14:44:52 strix -> max
+no, hostname is onion-name it's in the apache config field server_name, or whatever it's called
+
+2020-08-03T14:45:52 max -> strix
+Okay, then just do under https://a3ggjhcskbjg36bx.onion domain. There he tells me about cross orogin request blocked , so far everything is the same as it was
+
+2020-08-03T14:46:15 strix -> max
+no, not the same thing. With thor it will be the IP of the nearest gateway, as far as I understand
+
+2020-08-03T14:48:06 max -> strix
+Alright then, let's do it under tor
+
+2020-08-03T14:50:12 max -> strix
+doomsday worked with Laravel websockets, but here all the production domains are tor, there are no others, maybe he can tell you something about the settings
+
+2020-08-03T14:50:42 strix -> max
+well really, ask him then
+
+2020-08-03T14:52:06 max -> strix
+It's not available right now.
+
+2020-08-03T14:52:25 strix -> max
+We have https://a3ggjhcskbjg36bx.onion:6001/sockets.io... tries to open? (already forgot).
+
+2020-08-03T14:53:26 max -> strix
+See http://prntscr.com/tt9yod
+
+2020-08-03T14:53:46 strix -> max
+Maybe the host name (onion-domain) is passed to Laravel in some http-hedger, which takes it from there and assigns port 6001
+
+2020-08-03T14:53:52 max -> strix
+Do you have a tor browser? Open https://a3ggjhcskbjg36bx.onion/chat/b3e3cea9cfb8e31bf7882ea054236ac1 and enjoy it.
+
+2020-08-03T14:54:54 strix -> max
+If so, you can try modifying this header in the apache settings to change it to 127.0.0.1
+
+2020-08-03T14:55:17 strix -> max
+and then it should work
+
+2020-08-03T14:56:06 max -> strix
+Look, laravel-echo-server is a thing written in node.js, it doesn't need any server, it starts the server itself. You just need apache or whatever to let web socket requests through
+
+2020-08-03T15:01:44 strix -> max
+Apache proxies to laravel-echo-server, there might be a hedgerow bug. Otherwise how does laravel know about the oonion name? So it's passed to it by apache and most likely in the heders
+
+2020-08-03T15:02:17 strix -> max
+s/without/at/at/at/at/at/at/at/at/at/at/at/at/at/at
+
+2020-08-03T15:03:22 max -> strix
+It knows about the oonion name from the file in the root of the project laravel-echo-server.json - just look there to see what it says, so it's real for you
+
+2020-08-03T15:07:20 strix -> max
+ In my opinion it shouldn't know about it at all. It should think it's running on a localhost
+
+2020-08-03T15:07:56 strix -> max
+Try changing the onion name in the json file to 127.0.0.1
+
+2020-08-03T15:08:13 max -> strix
+Does https have to be prefixed?
+
+2020-08-03T15:09:34 strix -> max
+http in idea. -- Because Apache redirects the 447 port https to 127.0.0.1:6001/socket.io
+
+2020-08-03T15:10:19 strix -> max
+Laravel doesn't need to know anything about https, it thinks the connection is http
+
+2020-08-03T15:11:06 max -> strix
+Then I just go back to the same settings I had. Or is there a difference between localhost and 127.0.0.1?
+
+2020-08-03T15:12:18 max -> strix
+And those settings gave the same error cross origin....
+
+2020-08-03T15:12:25 strix -> max
+whatever
+
+2020-08-03T15:12:56 strix -> max
+Well, it's probably about the http headers
+
+2020-08-03T15:13:37 max -> strix
+Well, I'll change it now, but I just need to get to the server quickly. I don't know anything about http headers, I don't use them in any way in websockets
+
+2020-08-03T15:15:03 strix -> max
+You have to spin them in Apache.  And the laravel web server can silently take the hostname from them and attribute port 6001.
+
+2020-08-03T15:17:55 max -> strix
+I switched and restarted the node ws with the websockets
+
+2020-08-03T15:21:46 strix -> max
+How was it? Did it change anything?
+
+2020-08-03T15:22:25 max -> strix
+zero on the module, I already had these settings and it didn't work the same way
+
+2020-08-03T15:24:40 max -> strix
+Look, here's something on the subject: https://www.script-example.com/laravel-echo-socketio
+
+2020-08-03T15:24:59 max -> strix
+About the server settings, I do not know, you have the same?
+
+2020-08-03T15:38:08 strix -> max
+Apache settings are the same
+
+2020-08-03T15:48:59 max -> strix
+Like the link I gave you?
+
+2020-08-03T15:49:12 strix -> max
+well
+
+2020-08-03T15:52:29 max -> strix
+I changed mine, according to this, still the same: Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://a3ggjhcskbjg36bx.onion:6001/socket.io/?EIO=3&transport=polling&t=NEq_kHS.
+
+2020-08-03T15:53:18 max -> strix
+Here's what they tell us about the server settings: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSDidNotSucceed?utm_source=devtools&utm_medium=firefox-cors-errors&utm_campaign=default - is it all playable?
+
+2020-08-03T15:57:01 strix -> max
+And what does it say of value? It didn't work for me somehow.
+
+2020-08-03T15:58:10 max -> strix
+Well then I don't know, something on the server there. Wanted to help you figure it out.
+
+2020-08-03T15:58:21 strix -> max
+here's me wondering what headers to look at between apache and laravel?
+
+2020-08-03T15:59:04 strix -> max
+maybe there is a debug for this
+
+2020-08-03T16:01:06 max -> strix
+I have no idea, what are headers between apache and Laravel? Laravel is the same as php.
+
+2020-08-03T16:02:14 max -> strix
+Ask this guy, he might be able to tell you. Band <band@q3mcco35auwcstmt.onion/Psi+>
+
+2020-08-03T16:04:21 strix -> max
+Apache is a proxy it passes the http request to laravel-echo-server.  Here's a look at what http-request it receives from apache
+
+2020-08-03T16:06:18 max -> strix
+Write to Band, maybe he's run into it. I don't know, it's deep in the libraries somewhere.
+
+2020-08-03T16:06:45 strix -> max
+OK, I'll try asking him.
+
+2020-08-03T16:15:55 max -> strix
+Here, look, in node_modules lies laravel-echo, you can try to output something console.log here, but I don't know what. It's node.js, I don't know where it intersects with apache here
+
+2020-08-03T16:21:05 strix -> max
+Here, look, in node_modules lies laravel-echo, you can try to output something console.log here, but I don't know what. This is node.js, I don't know where it intersects with apache here
+
+2020-08-03T17:47:15 max -> strix
+Listen, write back about proxy settings for doomsday sockets <dandis@q3mcco35auwcstmt.onion/xpsrv>
+
+2020-08-03T17:48:29 strix -> max
+Listen, write back about proxy settings for doomsday sockets <dandis@q3mcco35auwcstmt.onion/xpsrv>
+
+2020-08-03T17:56:10 max -> strix
+Listen, write back about proxy settings for doomsday sockets <dandis@q3mcco35auwcstmt.onion/xpsrv>
+
+2020-08-03T17:58:08 strix -> max
+already wrote
+
+2020-08-03T17:58:26 strix -> max
+Band and I are dealing with
+
+2020-08-03T17:58:50 max -> strix
+And turn on the private message, nothing comes
+
+2020-08-04T14:39:47 strix -> max
+Hi
+
+2020-08-04T16:07:23 max -> strix
+Hi!
+
+2020-08-04T19:53:51 strix -> max
+hi
+
+2020-08-04T19:53:54 strix -> max
+https://a3ggjhcskbjg36bx.onion/socket.io?EIO=3&transport=websocket&sid=GyRMcMST3MYmVAHkAAAF
+
+2020-08-04T19:54:07 strix -> max
+did you not see an error like that?
+
+2020-08-04T19:54:19 strix -> max
+is that something you have?
+
+2020-08-04T19:54:24 max -> strix
+Now
+
+2020-08-04T19:55:45 strix -> max
+ ErrorException (E_ERROR)
+Trying to get property 'api_token' of non-object (View: C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\crypto\resources\views\layout.blade.php) (View: C:\Program Files\Apache Software Foundation\Apache2.4\htdocs\crypto\resources\views\layout.blade.php)
+
+2020-08-04T19:56:05 max -> strix
+Where are you catching this error?
+
+2020-08-04T19:56:24 strix -> max
+The browser gives out this
+
+2020-08-04T19:56:40 strix -> max
+left in the box
+
+2020-08-04T19:56:58 max -> strix
+What router?
+
+2020-08-04T19:57:09 strix -> max
+what do you mean?
+
+2020-08-04T19:57:24 max -> strix
+What's in the browser address bar?
+
+2020-08-04T19:57:26 strix -> max
+I wrote the url above.
+
+2020-08-04T20:00:24 max -> strix
+Why do you need to open it in a browser?
+
+2020-08-04T20:02:51 max -> strix
+You're trying to open up a landing page this way, it has nothing to do with our problem. Thanks for the error, I'll make a treatment to this
+
+2020-08-04T20:03:34 strix -> max
+someone gave me their url, either doomsday or band
+
+2020-08-04T20:04:03 strix -> max
+is this a left-handed sliver?
+
+2020-08-04T20:05:25 max -> strix
+That's our banding. I'll do the processing for it, but it doesn't solve the websocket problem. You can tell whoever sent it that.
+
+2020-08-04T20:13:55 strix -> max
+Yes, the problem with CORS is still not solved.
+
+2020-08-04T20:15:16 strix -> max
+Disabling CORS in the json file does not helpttttttttttttttttttttttttttttttttttttttttttt
+
+2020-08-04T20:15:52 strix -> max
+there were also several modules for PHP to configure CORS
+
+2020-08-04T20:16:41 strix -> max
+I think band said that starting with Laravel 7 there is built-in support but we have 5.x
+
+2020-08-04T20:18:14 strix -> max
+tried to put some of these modules using composer, but it looks like I'm doing something wrong
+
+2020-08-04T20:18:41 max -> strix
+See, I too have this (or a very similar request) coming from websockets, and the websockets work. So no need to dig there.
+
+2020-08-04T20:18:58 max -> strix
+I'm about /socket.io?EIO=3&transport=websocket&sid=GyRMcMST3MYmVAHkAAAF
+
+2020-08-04T20:19:23 max -> strix
+I don't know, isn't CORS a server setting?
+
+2020-08-04T20:21:36 strix -> max
+these are the laravel-echo-server settings
+
+2020-08-04T20:22:10 strix -> max
+And in general, something specific to Laravel
+
+2020-08-04T20:22:41 strix -> max
+as I understand it, it is separate for JS and separate for PHP
+
+2020-08-04T20:22:55 strix -> max
+this is the PHP issue
+
+2020-08-04T20:23:21 strix -> max
+you have to disable it or configure it for PHP
+
+2020-08-04T20:25:05 max -> strix
+ laravel-echo-server is server-side js, no php there
+
+2020-08-04T20:25:09 strix -> max
+https://medium.com/@petehouston/allow-cors-in-laravel-2b574c51d0c1
+
+2020-08-04T20:25:22 strix -> max
+something like this
+
+2020-08-04T20:26:01 strix -> max
+Yes need a module for php
+
+2020-08-04T20:27:26 strix -> max
+and what is php artisan (there is a line like this: $ php artisan make:middleware Cors)
+
+2020-08-04T20:27:46 strix -> max
+seems to be set like this
+
+2020-08-04T20:28:35 max -> strix
+This isn't about that at all. I don't have web sockets in my php code in any way
+
+2020-08-04T20:29:56 strix -> max
+I'm not quite sure how to put it in -- I tried composer require app/Http/Middleware/Cors, but this gives an error
+
+2020-08-04T20:30:12 strix -> max
+not websockets, but CORS
+
+2020-08-04T20:31:49 strix -> max
+band said that CORS in Laravel is configured separately for JS and for PHP
+
+2020-08-04T20:33:02 strix -> max
+You said yourself that the websockets work, didn't you?
+
+2020-08-04T20:33:15 max -> strix
+On my local
+
+2020-08-04T20:34:46 strix -> max
+> [03.08.2020 09:44:50] <AllaWitte> Are you in Estonia now :) "remote kkkcomp" ? :)
+I have VNC characters repeating, bitch
+
+2020-08-04T20:35:36 strix -> max
+Either they are not printed at all, or they are repeated many times
+
+2020-08-04T20:35:46 strix -> max
+especially with the shifter
+
+2020-08-04T20:36:14 max -> strix
+Try writing in resource/view/layout.blade.php the header with 'Access-Control-Allow-Origin', '*'
+
+2020-08-04T20:40:19 strix -> max
+The gang and I tried it in \public\index.php
+
+2020-08-04T20:40:37 strix -> max
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
+
+2020-08-04T20:40:49 strix -> max
+didn't seem to help
+
+2020-08-04T20:44:10 strix -> max
+what you suggest also seems to help
+
+2020-08-04T20:45:27 max -> strix
+So the problem is something else.
+
+2020-08-04T20:45:51 max -> strix
+It worked on the previous server, you did it yourself
+
+2020-08-04T20:46:37 strix -> max
+<?php
+  header('Access-Control-Allow-Origin: *');.
+  header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
+ ?>
+Embedded in the <body> section
+
+2020-08-04T20:47:27 strix -> max
+Or should it be at the beginning of the file?
+
+2020-08-04T20:50:53 strix -> max
+Hmm, if it's not about CORS at all, what is it about? Is the proxing a messed up setup after all?
+
+2020-08-04T20:53:31 max -> strix
+Nope, this is - [17:39:34] <strix> <?php
+ header('Access-Control-Allow-Origin: *');.
+ header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
+?> that's not how it should be
+
+2020-08-04T20:54:57 strix -> max
+How then?
+
+2020-08-04T20:55:15 strix -> max
+There's HTML with a bit of PHP in it
+
+2020-08-04T20:56:36 max -> strix
+Wait, I did it in my place, I'm going to upload it to the server
+
+2020-08-04T21:18:30 max -> strix
+It worked for me! There is no error!
+
+2020-08-04T21:19:38 max -> strix
+Only I have web-sockets setup going on http://127.0.0.1 - I don't know how it will work, I need to make a communication between clients yet. I'll check it out later.
+
+2020-08-04T21:20:15 max -> strix
+Here, take a look, as they say in Ukraine, https://a3ggjhcskbjg36bx.onion/chat/b3e3cea9cfb8e31bf7882ea054236ac1 - the console is clean
+
+2020-08-04T21:20:25 strix -> max
+Did it work on your home machine?
+
+2020-08-04T21:20:30 strix -> max
+e[ ns
+
+2020-08-04T21:20:34 strix -> max
+wow
+
+2020-08-04T21:20:47 max -> strix
+And the link from onion is on the homepage? :))
+
+2020-08-04T21:21:28 max -> strix
+Next step in the Marlesonian ballet - check on communication
+
+2020-08-04T21:21:40 max -> strix
+But I'll eat for now :)
+
+2020-08-04T21:23:03 strix -> max
+I still have Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at https://a3ggjhcskbjg36bx.onion:6001/socket.io/?EIO=3&transport=polling&t=NExMad9. (Reason: CORS request did not succeed).
+
+2020-08-04T21:25:03 strix -> max
+Um, refreshed the page by Ctrl-R -- the error is gone!
+
+2020-08-04T21:29:10 max -> strix
+Here, refresh the page more often :)
+
+2020-08-04T21:56:22 max -> strix
+No, sockets don't work, they don't catch the event.  The setup is done on localhost. Talk to the guys about what settings I need to give them based on your server settings. Should I write onion domain and certificate paths there?
+
+2020-08-04T21:58:57 strix -> max
+where to write?
+
+2020-08-04T21:59:58 max -> strix
+laravel-echo-server.json in the root. Only if you write it, you will have to restart laravel-echo-server as well
+
+2020-08-04T22:01:40 strix -> max
+Dumsday said that there is something in there that needs to be recompiled to update the resource -- we forgot to do that, he said
+
+2020-08-04T22:02:34 max -> strix
+What did you change in resourse/js/bootstrap.js ? I don't think anything.
+
+2020-08-04T22:03:15 max -> strix
+It's exactly these settings: laravel-echo-server.json - but I don't know what to write there, since I don't know how you configured the server.
+
+2020-08-04T22:05:06 strix -> max
+Laravel-echo-server is supposed to have localhost there, but I don't understand just http://127.0.0.1 or http://127.0.0.1:6001/socket.io
+
+2020-08-04T22:05:42 strix -> max
+in bootstrap.js yes nothing
+
+2020-08-04T22:06:45 strix -> max
+Apache redirects (proxies) to http://127.0.0.1:6001/socket.io
+
+2020-08-04T22:10:07 strix -> max
+Once laravel-echo-server is running on the localhost and uses port 6001 and socket.io is sticking out
+
+2020-08-04T22:11:50 max -> strix
+Something is wrong, because if you open the network ws tab - there is nothing there at all, and it should be something like: http://prntscr.com/tu43gu
+
+2020-08-04T22:14:44 strix -> max
+what is the software?
+
+2020-08-04T22:15:09 strix -> max
+is it the network tab in it?
+
+2020-08-04T22:15:55 max -> strix
+In the browser, press F12, http://prntscr.com/tu45ht
+
+2020-08-04T22:16:34 max -> strix
+It should be like this: http://prntscr.com/tu45r7
+
+2020-08-04T22:22:19 strix -> max
+Is this Chrome? I have Firefox, the Network tab is blank.
+
+2020-08-04T22:22:28 max -> strix
+See, I do the setting in the js itself, which runs in the browser
+window.Echo = new Echo({
+    broadcaster: 'socket.io',
+    host: window.location.hostname + ':6001', //a3ggjhcskbjg36bx.onion:6001
+});
+
+2020-08-04T22:23:28 max -> strix
+I can only watch all this from the Tor browser. it's blank, and there should be a query like here http://prntscr.com/tu45r7
+
+2020-08-04T22:23:44 strix -> max
+why add port 6001 to onion name?
+
+2020-08-04T22:24:17 max -> strix
+That's the standard, that's how it's spelled. Not to onion name - but in general
+
+2020-08-04T22:24:58 strix -> max
+ah, //a3ggjhcskbjg36bx.onion:6001 is that a comment?
+
+2020-08-04T22:25:36 max -> strix
+This is what is eventually put in the settings, the value window.location.hostname
+
+2020-08-04T22:26:07 max -> strix
+The comment, of course, is especially for you
+
+2020-08-04T22:27:09 strix -> max
+only it should not be a3ggjhcskbjg36bx.onion but localhost in this case
+
+2020-08-04T22:28:31 max -> strix
+So here: host: window.location.hostname + ':6001', //a3ggjhcskbjg36bx.onion:6001 Should I hardcode http://localhost:6001 ? are you serious ?
+
+2020-08-04T22:30:28 max -> strix
+Well, then it will try to connect to the localhost of the user's computer
+
+2020-08-04T22:35:33 strix -> max
+and i.e. it's on the frontend? i thought it was the other way around
+
+2020-08-04T22:37:18 strix -> max
+then you have to connect to https://a3ggjhcskbjg36bx.onion/socket.io, and no :6001 -- it does not stick out
+
+2020-08-04T22:37:44 strix -> max
+*none
+
+2020-08-04T22:38:00 max -> strix
+Well, you yourself lay it out, how it works. If you write on the front address localhost - then where the request will go? He'll search onion domain on the Internet? Is he a fortune teller in the market, to guess the address of the domain? :)
+
+2020-08-04T22:38:20 strix -> max
+I thought this was the backend.
+
+2020-08-04T22:38:24 max -> strix
+Here we go, we need to fix it somehow.
+
+2020-08-04T22:39:55 strix -> max
+is there Node.js for the frontend?
+
+2020-08-04T22:41:38 max -> strix
+noooooo! Node.js is a backend and only a backend! But the front end js files are connecting to this server, so you need to give the front end an address
+
+2020-08-04T22:42:42 strix -> max
+cause I'm totally confused.
+
+2020-08-04T22:43:38 strix -> max
+ Why do you need a JS and PHP backend then? Isn't one enough?
+
+2020-08-04T22:49:43 strix -> max
+Then the scheme is: front connects to https://a3ggjhcskbjg36bx.onion/socket.io, and apache redirects /socket.io to http://localhost:6001/socket.io
+
+2020-08-04T22:50:31 strix -> max
+and the frotte doesn't need to know anything about 6001
+
+2020-08-04T22:50:31 max -> strix
+php does not work well with websockets. Node.js is a server-side (SERVER LANGUAGE PROGRAMMING) language that solves these problems. Instead of node.js there could have been some C++, but it's a pain in the ass to write
+
+2020-08-04T22:50:58 max -> strix
+Why shouldn't the front know anything about the 6001?
+
+2020-08-04T22:52:11 strix -> max
+because it has to connect to apache on port 443 and it will redirect to port 6001 on its localhost. 6001 doesn't stick out, it's closed by firewall.
+
+2020-08-04T22:52:44 max -> strix
+So I should write in the settings: https://a3ggjhcskbjg36bx.onion/socket.io - exactly?
+
+2020-08-04T22:53:11 strix -> max
+Apache will see ^/socket.io at the beginning of the URI and will know to proxy to laravel-echo-server
+
+2020-08-04T22:53:25 strix -> max
+Yep, that's right.
+
+2020-08-04T22:53:34 max -> strix
+Do you need to restart the server?
+
+2020-08-04T22:54:02 strix -> max
+laravel-echo-server -- in theory, you should
+
+2020-08-04T22:55:41 max -> strix
+A apache&
+
+2020-08-04T22:55:45 max -> strix
+?
+
+2020-08-04T22:56:26 strix -> max
+What is the point of websockets? Is it like a socket, but not in the TCP/IP stack, but inside a webserver, and everything written into it is transmitted via HTTP?
+
+2020-08-04T22:56:52 strix -> max
+and apache is not supposed to be needed - we didn't change its config, did we?
+
+2020-08-04T22:57:05 max -> strix
+What is cymes? I've never heard such a word.
+
+2020-08-04T22:58:36 strix -> max
+tzimmes is such a Jewish dish, "what is the tzimmes of something out there" means what is the point or what is the salt
+
+2020-08-04T22:58:56 strix -> max
+Sometimes it is misspelled as cymus
+
+2020-08-04T23:01:23 max -> strix
+As far as I remember web sockets work exactly with TCP/IP
+
+2020-08-04T23:05:34 strix -> max
+they work with TCP/IP but as I understand it, they are a web server feature, not a TCP/IP stack. I don't recall such sockets in the kernel. There are local (Unix domain) sockets, DGRAM sockets, STREAM and RAW sockets. I don't remember any others in the stack. So it seems that websockets is an internal webserver feature which works at application level.
+
+2020-08-04T23:06:22 max -> strix
+I'm not going to answer you on that one yet
+
+2020-08-04T23:53:08 max -> strix
+Well did you do it? I redid my part - it's all the same
+
+2020-08-04T23:56:29 max -> strix
+I didn't notice that apache was restarting
+
+2020-08-05T14:00:39 max -> strix
+The server is down for some reason. What happened? And look, here's the weird thing: http://prntscr.com/tuid8r - so remoute address 0.0.0.0:443 - isn't that weird?
+
+2020-08-05T14:14:58 strix -> max
+Hi
+
+2020-08-05T14:15:22 strix -> max
+No idea, I didn't touch it.
+
+2020-08-05T14:16:41 strix -> max
+What's so strange about that? When the server binds to all interfaces, the address is 0.0.0.0
+
+2020-08-05T14:20:23 max -> strix
+Well the server isn't responding, I see I haven't touched it. And what you said yesterday, "then the scheme is: front connects to https://a3ggjhcskbjg36bx.onion/socket.io, and apache redirects /socket.io to http://localhost:6001/socket.io" - did you do that?
+Only you need apache to redirect just to http://localhost:6001, socket.io isn't needed there
+
+2020-08-05T14:22:41 strix -> max
+It's already supposed to be done there.
+
+2020-08-05T14:23:15 strix -> max
+Why isn't socket.io needed? But it's supposed to.
+
+2020-08-05T14:24:25 strix -> max
+Or does laravel-echo-server not expect socket.io to be passed to it by the ac prefix?
+
+2020-08-05T14:24:51 max -> strix
+Well the server hangs up, I don't know, are you controlling it with your mind already?
+Not necessary, because http://localhost:6001 is a setting for node.js, which is server-side, not in the browser.
+
+2020-08-05T14:26:17 strix -> max
+I haven't touched him at all today.
+
+2020-08-05T14:26:55 strix -> max
+did you remove socket.io?
+
+2020-08-05T14:27:14 strix -> max
+and the frontend settings are elsewhere?
+
+2020-08-05T14:27:43 max -> strix
+Well I had it hanging, long enough, neither phpmyadmin didn't load, nor my pages. That's weird.
+What do you mean "[11:19:50] <strix> did you remove socket.io?
+[11:20:09] <strix> and the frontend settings are elsewhere? " - what are you talking about anyway?
+
+2020-08-05T14:30:24 max -> strix
+How are you at all with programming? Have you ever written anything? What languages are you familiar with?
+
+2020-08-05T14:32:40 strix -> max
+I write in C, different scripting languages
+
+2020-08-05T14:33:19 max -> strix
+Did you write it for the web?
+
+2020-08-05T14:33:47 strix -> max
+So removed /socket.io/ when proxying
+
+2020-08-05T14:34:01 strix -> max
+I wrote a few CGI scripts in Perl, but I only did minor modifications to ready-made scripts in PHP.
+
+2020-08-05T14:40:16 strix -> max
+Scripting languages: REXX, some Perl, some Python, some PHP, awk, Bourne shell.
+
+2020-08-05T14:40:51 strix -> max
+> [11:20:09] <strix> and the frontend settings are elsewhere? "What are you talking about?
+
+2020-08-05T14:42:15 max -> strix
+I see. The server slows down so badly. You say that you change apache settings - but shouldn't you restart it? Nothing changes at all.
+
+2020-08-05T14:42:36 strix -> max
+In laravel-echo-server.json there used to be a URL http://lalala.onion/socket.io, as I understood for the frontend. Now I don't see it anymore.
+
+2020-08-05T14:42:48 strix -> max
+Restarted
+
+2020-08-05T14:43:27 max -> strix
+laravel-echo-server.json you told me to put everything back in localhost, which I did
+
+2020-08-05T14:43:29 strix -> max
+Changed the settings (removed /socket.io,,,,,,, as you asked) and restarted.
+
+2020-08-05T14:43:44 strix -> max
+Hello
+
+2020-08-05T14:44:30 strix -> max
+You said yourself that the frontend needs to go to the server, not the user's computer, didn't you?
+
+2020-08-05T14:48:09 max -> strix
+Who told you that js is only a front end and can't be otherwise? You're confusing the basics now and how can you configure something that's not clear at all?
+
+2020-08-05T14:49:05 strix -> max
+We were talking about the frontend.
+
+2020-08-05T14:49:25 strix -> max
+I'm not saying JS is only a front end.
+
+2020-08-05T14:51:04 strix -> max
+Where are the frontend settings then? Is laravel-echo-server only a backend?
+
+2020-08-05T14:51:14 max -> strix
+js is a universal programming language, you can write desktop applications in it, like Delphi or C++, you can make a server. That is, it doesn't use some server, it runs the server itself, it runs in the browser.
+laravel-echo-server.json is settings for SERVER
+boostrat.js - these are settings for the frontend
+
+2020-08-05T14:52:06 strix -> max
+ah, there. I wasn't aware of bootstrap.js.
+
+2020-08-05T14:52:30 strix -> max
+ok
+
+2020-08-05T14:54:10 max -> strix
+Yes, just for the browser and for the server - it can't be in the same file :). They are called and handled differently. It's just that the programming language is the same. There are server-only libraries (packages), there are front-end-only libraries, and there are shared libraries.
+
+2020-08-05T14:55:07 strix -> max
+It's just not meant for desktop applications. There are shitty electron applications that eat up huge amounts of resources and encourage bad programming practices, but they don't count. C/C++ is for desktop applications.
+
+2020-08-05T14:55:14 max -> strix
+you don't need bootstrap.js
+
+2020-08-05T14:55:33 strix -> max
+I got it
+
+2020-08-05T14:56:56 strix -> max
+I checked in my browser -- no errors, I think.
+
+2020-08-05T14:58:07 max -> strix
+I'm not talking about social networking tastes and grades right now, I'm talking about when you're as an admin setting up a servo, and you see node.js or json - so you don't get clued in that it's just frontend and browser. And as a result, you can't figure out what to configure.
+There weren't any errors yesterday when I added the headers. The problem is that the network/ws in the browser is empty :( - sockets don't respond
+
+2020-08-05T14:58:44 strix -> max
+seems to have successfully sent a message in the chat room under the name fyva
+
+2020-08-05T14:59:18 max -> strix
+Did it show up for the admin without reloading the page?
+
+2020-08-05T14:59:48 max -> strix
+Do you understand the meaning of web sockets? I send you a message and you see it without reloading the page
+
+2020-08-05T15:00:16 strix -> max
+What kind of browser do you have? -- my Firefox has no websockets on the Network tab but only POST and GET requests
+
+2020-08-05T15:00:34 strix -> max
+seems to be with reboot.
+
+2020-08-05T15:02:07 max -> strix
+So the websockets don't work. It should be like this: this is my LOCAL google chrom http://prntscr.com/tujmia
+
+2020-08-05T15:02:40 strix -> max
+No -- I'm lying -- there is a ws sub-tab, and it's empty
+
+2020-08-05T15:03:13 max -> strix
+The THOR browser has everything, the ws shouldn't be empty if the websockets work. We don't have them working yet :((((
+
+2020-08-05T15:03:33 max -> strix
+THOR is the same as Firefox
+
+2020-08-05T15:08:52 strix -> max
+It still doesn't work
+
+2020-08-05T15:09:10 strix -> max
+I'm going to take a break - I have to go to the store for half an hour
+
+2020-08-05T15:09:38 max -> strix
+Come on. There's something wrong with the proxy settings or something else on the server
+
+2020-08-05T15:09:49 strix -> max
+Man, I still have two servers to set up for Paul today
+
+2020-08-05T15:10:15 strix -> max
+Yeah, it looks right to me. Who knows what's wrong.
+
+2020-08-05T15:10:26 max -> strix
+Well, it hurts, but when you set it up - you will not be worth it :)
+
+2020-08-05T15:10:39 strix -> max
+:)
+
+2020-08-05T15:22:16 max -> strix
+I keep wondering why http is just an ip address and https is ip:443? After all, http is the default port 80? Why can't https be configured to also respond by ip, without the port prescribed?
+
+2020-08-05T16:23:41 strix -> max
+hi
+
+2020-08-05T16:23:47 max -> strix
+^)
+
+2020-08-05T16:24:25 strix -> max
+http is default port 80, https is default port 443
+
+2020-08-05T16:25:19 strix -> max
+Why not - you can, all you have to do is specify https://site.com, and you don't have to specify the port
+
+2020-08-05T16:27:43 max -> strix
+And why in our case https://212.129.41.246 gives nothing but an error?
+
+2020-08-05T16:28:39 strix -> max
+because it is configured to work only through Tor
+
+2020-08-05T16:28:52 strix -> max
+IP address access is disabled
+
+2020-08-05T16:38:55 max -> strix
+Okay, if I could set up servers - I would do it myself :). Then another question. See, in my local, where everything works, request http://cryptochat:6001... becomes a request ws://cryptochat:6001... - is how I made my settings locally. Maybe https://a3ggjhcskbjg36bx.onion/socket.io in the proxy should be redirected to wss://127.0.0.1:6001?
+
+2020-08-05T16:39:18 max -> strix
+Talk to the men, Dooms and Bund, maybe that's it?
+
+2020-08-05T16:43:29 strix -> max
+no, it redirects to ws:// in RewriteRule...
+
+2020-08-05T16:43:58 strix -> max
+We'll watch it today.
+
+2020-08-05T16:44:09 max -> strix
+What's next ws://. ?
+
+2020-08-05T16:44:11 strix -> max
+I have two servers to set up right now
+
+2020-08-05T16:44:18 max -> strix
+Alright then.
+
+2020-08-05T16:44:47 strix -> max
+I can't copy it -- it looks like \the clipboard shuffle doesn't work in Windows
+
+2020-08-05T16:45:09 max -> strix
+And in what file, let me see, I will not change anything
+
+2020-08-05T16:45:27 strix -> max
+Look in conf/extra/httpd-ssl.conf
+
+2020-08-05T16:52:12 max -> strix
+I'm not an expert, but look, isn't it commented out:
+
+   #RewriteEngine on
+   #RewriteCond %{HTTP:UPGRADE} ^WebSocket$ [NC]
+   #RewriteCond %{HTTP:CONNECTION} ^Upgrade$ [NC]
+   # RewriteRule .* ws://127.0.0.1:6001%{REQUEST_URI} [P]
+   #RewriteRule .* ws://127.0.0.1:6001/$1 [P] ?????
+
+2020-08-05T16:54:16 max -> strix
+Nah, I see it's there. But there's transport=websocket, but look how it's live: http://prntscr.com/tuli74
+
+2020-08-05T16:54:39 max -> strix
+There's a pooling transport - should we add a transport?
+
+2020-08-05T17:25:24 strix -> max
+I've tried it both ways.
+
+2020-08-05T17:26:26 max -> strix
+Well you put all modes of transport there
+
+2020-08-05T17:30:47 strix -> max
+well, you can try
+
+2020-08-05T17:37:39 strix -> max
+did not help
+
+2020-08-05T17:54:59 strix -> max
+I don't see any requests with transport=websockets
+
+2020-08-05T17:56:53 max -> strix
+But with transport=poling see?
+
+2020-08-05T17:58:39 max -> strix
+I don't know, but do wss: just in case
+
+2020-08-05T18:03:28 strix -> max
+I see
+
+2020-08-05T18:04:03 strix -> max
+what is wss:? I only see ws syntax:
+
+2020-08-05T19:01:34 max -> strix
+Well, try writing wss instead of ws - what if it helps? wss is when it goes via https
+
+2020-08-05T19:03:24 strix -> max
+you can try, but as far as I read, you need http
+
+2020-08-05T19:04:49 max -> strix
+Well, try - no so no, there's nothing to lose. It should be simple, but we do not know something :)
+
+2020-08-12T13:55:22 max -> strix
+Hi!
+
+2020-08-12T13:57:24 strix -> max
+hi
+
+2020-08-12T13:57:43 max -> strix
+Listen, did you see this one: Proxy Error
+
+The proxy server received an invalid response from an upstream server.
+The proxy server could not handle the request GET /socket.io/.
+
+Reason: DNS lookup failure for: a3ggjhcskbjg36bx.onion
+
+2020-08-12T13:57:46 max -> strix
+???
+
+2020-08-12T14:01:31 strix -> max
+The proxy settings there seem to be messed up - they've been experimenting with it
+
+2020-08-12T14:11:52 max -> strix
+Can I get a good tune-up along the way? :)
+
+2020-08-12T14:15:06 strix -> max
+Let's try it now.
+
+2020-08-12T14:35:23 strix -> max
+I corrected the proxying there
+
+2020-08-12T14:35:37 strix -> max
+Now it seems like it's okay, right?
+
+2020-08-12T14:36:01 strix -> max
+At least the webconsole no longer reports errors
+
+2020-08-12T14:42:09 strix -> max
+are you here?
+
+2020-08-12T15:02:00 max -> strix
+Do you understand where you need to look? It's all the same.
+
+2020-08-12T15:02:44 max -> strix
+You go to the network/xhr tab, there is a request like: https://a3ggjhcskbjg36bx.onion/socket.io/?EIO=3&transport=polling&t=NFYtGjW
+
+2020-08-12T15:03:12 max -> strix
+Click on it and you see this error: Proxy Error
+
+The proxy server received an invalid response from an upstream server.
+The proxy server could not handle the request GET /socket.io/.
+
+Reason: DNS lookup failure for: a3ggjhcskbjg36bx.onion
+
+2020-08-12T15:03:48 max -> strix
+I do this in a tor browser.
+
+2020-08-12T15:04:42 max -> strix
+So the problem is that the DNS server does not find the host at this address.
+
+2020-08-12T15:04:54 strix -> max
+I only see 404 Not found at this point
+
+2020-08-12T15:05:15 max -> strix
+I don't know what you're looking at.
+
+2020-08-12T15:05:26 strix -> max
+When was that? I corrected the configuration.
+
+2020-08-12T15:05:46 strix -> max
+I'm looking here https://a3ggjhcskbjg36bx.onion/socket.io/?EIO=3&transport=polling&t=NFYtGjW
+
+2020-08-12T15:09:04 strix -> max
+But the Network>WS tab is empty for some reason
+
+2020-08-12T15:09:50 max -> strix
+Look, your server passes this rota https://a3ggjhcskbjg36bx.onion/socket.io/?EIO=3&transport=polling&t=NFYtGjW to index.php. And if it sees socket.io transport=polling then it should be a websocket request
+
+2020-08-12T15:10:32 max -> strix
+Usually this is done through :6001 - but you don't want to do it that way
+
+2020-08-12T15:11:43 max -> strix
+And most importantly, make sure the ws tab is not empty
+
+2020-08-12T15:11:57 strix -> max
+and it's empty for some reason.
+
+2020-08-12T15:12:18 strix -> max
+I think there is something wrong on the laravel-echo-server side
+
+2020-08-12T15:12:29 max -> strix
+That's what needs to be fixed.
+
+2020-08-12T15:12:57 max -> strix
+Then tell me what's wrong, what settings I need there
+
+2020-08-12T15:18:16 max -> strix
+I set everything up like you said, purely for http://localhost
+
+2020-08-12T15:18:17 strix -> max
+here seems to be the person who solved the problem https://stackoverflow.com/questions/56866032/configuring-apache-reverse-proxy-for-hosting-laravel-echo-server-on-production
+
+2020-08-12T15:22:03 strix -> max
+{ "authHost": "https://domainName.com",
+   "authEndpoint": "/broadcasting/auth",
+   { "clients": [
+      {
+        "appId": "xxxxxxxx",
+        "key": "xxxxxxxxxxxx"
+      }
+   ],
+
+2020-08-12T15:22:06 max -> strix
+Well, he decided under these server settings:
+
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^/socket.io [NC]
+RewriteCond %{QUERY_STRING} transport=websocket [NC]
+RewriteRule /(.*) ws://localhost:6001/$1 [P,L]
+
+ProxyPass /socket.io http://localhost:6001/socket.io
+ProxyPassReverse /socket.io http://localhost:6001/socket.io
+  - And you don't want to do that.
+
+2020-08-12T15:22:22 strix -> max
+Why don't you want to?
+
+2020-08-12T15:22:38 max -> strix
+How about you?
+
+2020-08-12T15:22:38 strix -> max
+I tried it that way, and I put it up now.
+
+2020-08-12T15:22:47 strix -> max
+I've experimented all sorts of things.
+
+2020-08-12T15:23:21 strix -> max
+What is appId and key?
+
+2020-08-12T15:25:58 max -> strix
+This is created automatically.
+
+2020-08-12T15:26:19 max -> strix
+When creating laravel-echo-server.json
+
+2020-08-12T15:26:21 strix -> max
+We don't have these options for some reason
+
+2020-08-12T15:27:08 max -> strix
+We don't need it, it's for Pusher, we don't use it
+
+2020-08-12T15:28:06 max -> strix
+Well I'll try it now, I'll get on the server
+
+2020-08-12T15:30:03 strix -> max
+What's the pusher?
+
+2020-08-12T15:31:33 strix -> max
+it looks like we need "authHost" to point to https://a3ggjhcskbjg36bx.onion
+
+2020-08-12T15:31:39 strix -> max
+not localhost
+
+2020-08-12T15:32:12 strix -> max
+devMode: "false", but we have "true"
+
+2020-08-12T15:35:38 max -> strix
+Pusher is a third-party service that stores all correspondence on websockets. We have it on redis.
+
+2020-08-12T15:36:14 strix -> max
+like memkesh?
+
+2020-08-12T15:36:44 strix -> max
+The web sockets don't work anyway
+
+2020-08-12T15:54:11 max -> strix
+I'm not done there yet on the server.
+
+2020-08-12T15:54:58 strix -> max
+restart laravel-echo-server, please
+
+2020-08-12T15:55:04 max -> strix
++
+
+2020-08-12T15:58:17 max -> strix
+The tab with laravel-echo-server does not respond
+
+2020-08-12T15:58:27 max -> strix
+How do you turn it off?
+
+2020-08-12T15:59:20 max -> strix
+Knocked out
+
+2020-08-12T16:00:21 strix -> max
+Ctrl-C ?
+
+2020-08-12T16:12:21 max -> strix
+Already did it. Look, it's still a configuration error, what's your apache doing https://a3ggjhcskbjg36bx.onion/socket.io?EIO=3&transport=polling&t=NFZPx4W pass this request to index.php
+
+2020-08-12T16:23:52 strix -> max
+ can you see it on index.php?
+
+2020-08-12T16:23:58 strix -> max
+I get a 404
+
+2020-08-12T16:24:15 strix -> max
+* with what
+
+2020-08-12T16:24:43 max -> strix
+well
+
+2020-08-12T16:24:55 strix -> max
+Where do you see it from?
+
+2020-08-12T16:25:36 max -> strix
+Because it opens the project page
+
+2020-08-12T16:25:54 strix -> max
+Doesn't work for me
+
+2020-08-12T16:25:58 strix -> max
+error 404
+
+2020-08-12T16:26:18 max -> strix
+If you click by mistake, it will open
+
+2020-08-12T16:28:19 max -> strix
+Well you know how rest server works. All requests go to index.php, the router is connected to it. I opened my own hand-crafted 404
+
+2020-08-12T16:29:15 max -> strix
+http://prntscr.com/tyhi6g
+
+2020-08-12T16:31:46 max -> strix
+And it should go to websocket, not index.php and output something like: 96:0{"sid": "n4TEUBc9WQub-ESCAARi", "upgrades":["websocket"], "pingInterval":25000, "pingTimeout":5000}2:40
+
+2020-08-12T16:32:49 strix -> max
+Who knows?
+
+2020-08-12T16:33:02 strix -> max
+I have a redirect to a websocket
+
+2020-08-12T16:33:16 strix -> max
+Is your server busy right now?
+
+2020-08-12T16:33:25 max -> strix
+Take it away
+
+2020-08-12T16:36:51 strix -> max
+you wrote transport=polling in the request, and it should be transport=websocket
+
+2020-08-12T16:37:00 max -> strix
+Me where?
+
+2020-08-12T16:37:13 strix -> max
+https://a3ggjhcskbjg36bx.onion/socket.io?EIO=3&transport=polling&t=NFZPx4W
+
+2020-08-12T16:37:27 strix -> max
+in the query
+
+2020-08-12T16:38:40 max -> strix
+Well, it's not me who's writing it, it's the way the request is formed. When it is so formed on the production server - everything is fine. Why don't you add all transports to apache settings?
+
+2020-08-12T16:39:16 max -> strix
+Don't rewrite websocket na polling, but do both?
+
+2020-08-12T16:39:17 strix -> max
+what is polling anyway? are they not websockets?
+
+2020-08-12T16:39:42 strix -> max
+you can try, of course
+
+2020-08-12T16:50:38 max -> strix
+Here, check out https://github.com/socketio/socket.io-client/issues/883
+
+2020-08-12T22:01:47 max -> strix
+Well hello, I can already see something in the websocket tab, but still with an error: Proxy Error
+
+The proxy server received an invalid response from an upstream server.
+The proxy server could not handle the request GET /socket.io/.
+
+Reason: DNS lookup failure for: a3ggjhcskbjg36bx.onion
+
+2020-08-12T22:02:38 strix -> max
+Yes, some bug is trying to resolve onion name to IP
+
+2020-08-12T22:02:52 strix -> max
+unclear where from
+
+2020-08-12T22:04:36 max -> strix
+It's getting close, soon you will finish this outrage!!!!
+
+2020-08-12T22:05:46 strix -> max
+here dooms the main brain, not me :)
+
+2020-08-12T22:06:14 strix -> max
+does this laravel-echo-server have logs?
+
+2020-08-12T22:08:35 max -> strix
+The question is not about salary, you have to look at
+
+2020-08-12T22:09:45 strix -> max
+I had to spell it like this:
+
+2020-08-12T22:10:06 strix -> max
+   ProxyRequests Off^M
+^M
+   RewriteEngine On^M
+^M
+   RewriteCond %{REQUEST_URI} ^/socket.io/ [NC]^M
+   RewriteCond %{QUERY_STRING} transport=polling [NC]^M
+   RewriteRule /(.*) http://localhost:6001/$1 [P,L]^M
+^M
+   RewriteCond %{REQUEST_URI} ^/socket.io/ [NC]^M
+   RewriteCond %{QUERY_STRING} transport=websocket [NC]^M
+   RewriteRule /(.*) ws://localhost:6001/$1 [P]^M
+^M
+   ProxyPass /socket.io/ http://127.0.0.1:6001/socket.io/^M
+   ProxyPassReverse /socket.io/ http://127.0.0.1:6001/socket.io/^M
+
+2020-08-12T22:10:41 strix -> max
+i.e. for transport=polling redirect to http instead of ws
+
+2020-08-12T22:11:11 strix -> max
+because the authentication is not via web sockets
+
+2020-08-12T22:11:20 strix -> max
+without
+
+2020-08-12T22:11:27 strix -> max
+it didn't work without it
+
+2020-08-12T22:28:55 max -> strix
+About the log, try this: php artisan queue:work sqs --sleep=3 --tries=3
+
+2020-08-12T22:33:46 strix -> max
+will the server now write to the console?
+
+2020-08-12T22:35:58 strix -> max
+It says Class 'Aws\Sqs\SqsClient' not found
+
+2020-08-12T22:35:59 max -> strix
+Sort of, yeah, I haven't tried it.
+
+2020-08-12T22:37:21 max -> strix
+So there's something else to install there, I don't know what. Ask Banda, maybe he's encountered it?
+
+2020-08-12T22:40:17 strix -> max
+OK, I'll ask
+
+2020-08-13T20:58:49 strix -> max
+Hi
+
+2020-08-13T20:58:58 strix -> max
+Are you still awake?
+
+2020-08-13T20:59:23 strix -> max
+have you and def discussed a plan to port the web part to linux?
+
+2020-08-13T21:06:17 strix -> max
+I take it we're only migrating the web part? Does the bitcoin node stay under the windup? And what else is there besides it?
+
+2020-08-13T22:17:01 max -> strix
+Bitcoin-noda - that was Brown's doing. I wrote to him. You can write him too.
+
+2020-08-13T22:27:01 strix -> max
+Okay, I'll ask him.
+
+2020-08-13T22:27:58 strix -> max
+http://46.249.32.16/ -- what is missing? php-mysl installed, php-redis too
+
+2020-08-13T22:36:09 strix -> max
+What is the administrator access to mysql? I want to borrow the database.
+
+2020-08-13T22:48:15 strix -> max
+that's the mysql password Brown said
+
+2020-08-13T22:50:00 max -> strix
+Wait, I need mariaDb, from version 10.3 Access to phpmyadmin root, rootxx
+
+2020-08-13T22:51:00 strix -> max
+How do you recreate the database?
+
+2020-08-13T22:52:04 strix -> max
+The Wenden DB dump cannot be restored
+
+2020-08-13T22:53:28 strix -> max
+Running MariaDB 10.1
+
+2020-08-13T22:53:32 max -> strix
+What do you mean, it's not recoverable? Did phpmyadmin do it?
+
+2020-08-13T22:53:38 strix -> max
+do you have to be newer?
+
+2020-08-13T22:54:22 strix -> max
+I made a dump on the Windows and tried to restore it on the Linux -- it gives an error
+
+2020-08-13T22:54:24 max -> strix
+Yeah, I think so. I'll have to run it, see if I get any errors, then a newer one.
+
+2020-08-13T22:54:33 max -> strix
+What is the error?
+
+2020-08-13T22:55:26 strix -> max
+ERROR 1101 (42000) at line 373: BLOB/TEXT column 'landing_page' can't have a default value
+
+2020-08-13T22:56:12 strix -> max
+http://46.249.32.16/ seems to be fighting the database
+
+2020-08-13T22:56:12 max -> strix
+Bullshit. Put a newer one then. It shouldn't be like this.
+
+2020-08-14T01:03:49 strix -> max
+Still awake?
+
+2020-08-14T01:04:08 max -> strix
+Almost, why?
+
+2020-08-14T01:05:32 strix -> max
+I don't understand how to make the "laravel-echo-server start" command work? Does it have to be out of the way?
+
+2020-08-14T01:06:33 strix -> max
+installed nodejs and npm, said "npm install laravel-echo-server" but nothing starts
+
+2020-08-14T01:07:59 max -> strix
+just do an npm install for now - you'll get a bunch of stuff in there
+
+2020-08-14T01:08:46 max -> strix
+you also need to do composer install, composer dump-autoload
+
+2020-08-14T01:09:07 max -> strix
+Then you can laravel-echo-server start doing
+
+2020-08-14T01:10:31 strix -> max
+ is it necessary to do? I copied the entire htdocs dir with all the modules as is
+
+2020-08-14T01:13:03 max -> strix
+Well then just run laravel-echo-server start in the directory
+
+2020-08-14T01:13:32 max -> strix
+is the radish standing up for you?
+
+2020-08-14T01:19:16 strix -> max
+Yep put redis-server. And as I understand you need php-redis and node-node-redis?
+
+2020-08-14T01:19:39 strix -> max
+Or is it only laravel-echo-server needed?
+
+2020-08-14T01:22:37 strix -> max
+php composer.phar install
+
+2020-08-14T01:22:57 strix -> max
+"./composer.lock" does not contain valid JSON
+
+2020-08-14T01:23:23 strix -> max
+and composer.json is poison
+
+2020-08-14T01:23:59 strix -> max
+*alongside
+
+2020-08-14T01:24:18 max -> strix
+:)
+
+2020-08-14T01:24:21 strix -> max
+[20:13:03] <AllaWitte> Well then just run laravel-echo-server start in the directory
+
+2020-08-14T01:24:32 strix -> max
+well, it's not working.
+
+2020-08-14T01:25:21 strix -> max
+bash: laravel-echo-server: command not found
+
+2020-08-14T01:25:49 max -> strix
+Do you know what JSON is supposed to look like? Take a look in there and see. I don't know what you were doing there exactly. Maybe something got messed up there.
+
+2020-08-14T01:27:31 strix -> max
+[Seld\JsonLint\ParsingException]
+  "./composer.lock" does not contain valid JSON
+  Parse error on line 203:
+  ... "clue/buzz-react",<<<<<<< HEAD
+  ---------------------^
+  Expected: 'STRING' - It appears you have an extra trailing comma
+
+2020-08-14T01:28:11 max -> strix
+There, that needs to go away.
+
+2020-08-14T01:29:20 max -> strix
+And npm install -g laravel-echo-server - it must be globally installed
+
+2020-08-14T01:29:51 strix -> max
+Seems like normal JSON there, one comma
+
+2020-08-14T01:30:10 strix -> max
+but globally
+
+2020-08-14T01:30:16 strix -> max
+and I tried locally.
+
+2020-08-14T01:37:34 max -> strix
+This is not normal JSON: . "clue/buzz-react",<<<<<<< HEAD all these <<<<<<< HEAD should be removed, "clue/buzz-react", not needed
+
+2020-08-14T01:46:55 strix -> max
+http://46.249.32.16/login is already running
+
+2020-08-14T01:47:18 strix -> max
+only errors about CORS and port 447 dpzkcz are coming from somewhere
+
+2020-08-14T01:47:22 strix -> max
+taken
+
+2020-08-14T01:48:03 strix -> max
+there is no <<<<<<< HEAD
+
+2020-08-14T01:56:10 max -> strix
+I don't know anymore.
+
+2020-08-14T02:18:05 strix -> max
+https://46.249.32.16:447/chat/b3e3cea9cfb8e31bf7882ea054236ac1
+
+2020-08-14T02:18:19 strix -> max
+no errors, I think.
+
+2020-08-14T02:18:56 strix -> max
+it says code 101: Switching protocols and ffse
+
+2020-08-14T02:19:03 strix -> max
+Are you asleep yet?
+
+2020-08-14T02:31:53 strix -> max
+сделал onion-имя: http://3hikhkjb4y4tq5r7.onion/chat/b3e3cea9cfb8e31bf7882ea054236ac1/chat/b3e3cea9cfb8e31bf7882ea054236ac1
+
+2020-08-14T12:22:02 max -> strix
+Well, at https://46.249.32.16:447/chat/b3e3cea9cfb8e31bf7882ea054236ac1 everything seems to be fine. For onion domain, the network/ws tab is still blank.
+
+2020-08-14T12:25:13 strix -> max
+https://3hikhkjb4y4tq5r7.onion/chat/b3e3cea9cfb8e31bf7882ea054236ac1 ?
+
+2020-08-14T12:25:23 strix -> max
+I've got something.
+
+2020-08-14T12:29:39 max -> strix
+I don't know, I got nothing.
+
+2020-08-14T12:29:54 strix -> max
+And now?
+
+2020-08-14T12:30:32 max -> strix
+Also http://prntscr.com/tzk64h
+
+2020-08-14T13:42:44 strix -> max
+https://3hikhkjb4y4tq5r7.onion/chat/b3e3cea9cfb8e31bf7882ea054236ac1
+
+2020-08-14T13:43:18 strix -> max
+This is what it says:
+
+2020-08-14T13:43:27 strix -> max
+Loading failed for the <script> with source \u201chttps://3hikhkjb4y4tq5r7.onion/js/app.js\u201d. b3e3cea9cfb8e31bf7882ea054236ac1:93:1
+
+2020-08-14T13:43:52 strix -> max
+ReferenceError: $ is not defined
+
+2020-08-14T13:44:39 strix -> max
+This is after I changed the site URL in the .env file from Windows to Linux
+
+2020-08-14T13:45:01 strix -> max
+app.js file in place of course
+
+2020-08-14T13:45:12 strix -> max
+xnj tve yfljjjjjjjjjjjjjj xnj tve yfljjjj
+
+2020-08-14T13:45:22 strix -> max
+I don't know what he wants.
+
+2020-08-14T13:46:19 max -> strix
+I don't see "Loading failed for the <script> with source \u201chttps://3hikhkjb4y4tq5r7.onion/js/app.js\u201d. b3e3cea9cfb8e31bf7882ea054236ac1:93:1" where does it go?
+
+2020-08-14T13:48:23 strix -> max
+into the browser console
+
+2020-08-14T13:50:48 strix -> max
+try again
+
+2020-08-14T13:51:46 max -> strix
+I don't. It says there is a request to set cookies, which it disallows. Also cross-orogin request is forbidden
+
+2020-08-14T13:52:13 strix -> max
+don't see that
+
+2020-08-14T13:54:06 max -> strix
+http://prntscr.com/tzltrh
+
+2020-08-14T13:58:47 max -> strix
+I don't have anything close to that.
+
+2020-08-14T14:05:46 max -> strix
+This "\u201chttps://3hikhkjb4y4tq5r7.onion/js/app.js\u201d. b3e3cea9cfb8e31bf7882ea054236ac1:93:1" - that's your quotes converted to unicode for some reason. Your server takes the line "https://3hikhkjb4y4tq5r7.onion/js/app.js" and the double quotes are replaced by \u201c and \u201d. I don't know where this problem comes from and I don't know how to solve it. Something with the server settings, I think
+
+2020-08-14T14:07:21 strix -> max
+there are no quotation marks
+
+2020-08-14T14:11:19 max -> strix
+So how do you write the attributes in the script tag? <scrupt src="https://3hikhkjb4y4tq5r7.onion/js/app.js"> that's how they are written. And why the server is trying to replace the quotes with unicode is a non-salary question :)
+
+2020-08-14T14:17:22 strix -> max
+quotes are replaced by escapes when inserted into jabber
+
+2020-08-14T14:17:29 strix -> max
+server do not change anything
+
+2020-08-14T14:17:35 strix -> max
+does not change
+
+2020-08-14T14:18:32 strix -> max
+https://3hikhkjb4y4tq5r7.onion/js/app.js is in place and shown in the browser
+
+2020-08-14T14:18:49 strix -> max
+Why it writes an error, I don't know.
+
+2020-08-14T14:21:35 max -> strix
+What is the setting in the .env? What does it say in the APP?
+
+2020-08-14T14:21:49 strix -> max
+I have it like this:
+
+2020-08-14T14:21:53 strix -> max
+window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo__["a"/* default */](
+    /* default: 'socket.io',
+    //host: window.location.hostname + ':447'
+<------>host: window.location.hostname
+});
+
+2020-08-14T14:22:07 strix -> max
+and shows with :447
+
+2020-08-14T14:22:40 strix -> max
+i.e. it loads the file from a vendor server even though I changed the url in the .env file
+
+2020-08-14T14:23:16 strix -> max
+APP_URL=http://3hikhkjb4y4tq5r7.onion
+
+2020-08-14T14:23:54 max -> strix
+You got me confused. Where did http://3hikhkjb4y4tq5r7.onion 's' go?
+
+2020-08-14T14:25:45 strix -> max
+Yes, it was http
+
+2020-08-14T14:26:09 strix -> max
+I changed it to https, but nothing has changed.
+
+2020-08-14T14:34:08 max -> strix
+I don't see your error, it doesn't play for me. I already cleaned the cache in my browser, and reloaded - I do not see it. I watch through tor, no other way I can not watch onyon domains in my place
+
+2020-08-14T14:37:29 strix -> max
+https://3hikhkjb4y4tq5r7.onion/js/app.js in both browsers is loaded from a vendor's server
+
+2020-08-14T14:38:06 strix -> max
+i.e. somewhere besides .env there is a link to a vend domain name
+
+2020-08-14T14:38:16 strix -> max
+where else could it be?
+
+2020-08-14T14:39:13 strix -> max
+maybe in the database?
+
+2020-08-14T14:44:17 max -> strix
+Where do you have the winds domain name? And where from linux?
+
+2020-08-14T14:45:42 strix -> max
+here is a3ggjhcskbjg36bx.onion
+
+2020-08-14T14:46:10 strix -> max
+and here is the Linux 3hikhkjb4y4tq5r7.onion
+
+2020-08-14T14:46:51 strix -> max
+I open https://3hikhkjb4y4tq5r7.onion/js/app.js on the Linux and get app.js from the Windows server
+
+2020-08-14T14:47:31 strix -> max
+conclusion: somewhere in configs or in the database a Vendian name got mixed up
+
+2020-08-14T14:47:59 max -> strix
+I can assume it's a cache. Right now
+
+2020-08-14T14:48:11 strix -> max
+447 port is prescribed in the wend app.js:
+
+2020-08-14T14:49:04 strix -> max
+window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo__["a"/* default */](
+   broadcaster: 'socket.io',
+   host: window.location.hostname + ':447'
+<------>//host: window.location.hostname
+});
+
+2020-08-14T14:49:12 max -> strix
+try:
+sudo php artisan cache:clear
+
+sudo php artisan view:clear
+
+sudo php artisan config:cache
+
+2020-08-14T14:49:24 strix -> max
+ and vice versa in linux
+
+2020-08-14T14:49:36 strix -> max
+Here's the windup version
+
+2020-08-14T14:49:41 strix -> max
+I'll give it a try.
+
+2020-08-14T14:49:54 strix -> max
+Is that a cache of what?
+
+2020-08-14T14:50:52 max -> strix
+Well the frame makes a cache of pages so it doesn't have to collect them every time the browser reloads. And who the hell knows how long it's all stored
+
+2020-08-14T14:52:29 strix -> max
+didn't help at all
+
+2020-08-14T14:52:56 strix -> max
+The version with the added port :447 is still loaded
+
+2020-08-14T14:55:41 max -> strix
+Ah, got it. npm run dev
+
+2020-08-14T14:57:31 strix -> max
+bpack.config.js`.
+npm ERR! Exit status 126
+npm ERR!
+npm ERR! Failed at the @ development script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2020-08-14T14_57_02_228Z-debug.log
+npm ERR! code ELIFECYCLE
+npm ERR! errno 126
+npm ERR! @ dev: `npm run development`!
+npm ERR! Exit status 126
+npm ERR!
+npm ERR! Failed at the @ dev script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2020-08-14T14_57_02_269Z-debug.log
+
+2020-08-14T14:57:38 strix -> max
+What does it do?
+
+2020-08-14T15:13:24 max -> strix
+Rebuilds just that file, where you add :447
+
+2020-08-14T15:13:36 max -> strix
+Do an npm install
+
+2020-08-14T15:13:37 max -> strix
+npm install --save-dev cross-env
+
+2020-08-14T15:21:41 strix -> max
+made
+
+2020-08-14T15:21:48 strix -> max
+it didn't work again.
+
+2020-08-14T15:22:01 strix -> max
+still the venda version is loaded
+
+2020-08-14T15:24:54 max -> strix
+npm run dev - did you do that too?
+
+2020-08-14T15:27:00 strix -> max
+npm run dev gives out a bunch of errors
+
+2020-08-14T15:27:36 max -> strix
+what now?
+
+2020-08-14T15:27:57 max -> strix
+Did you do an npm install at all?
+
+2020-08-14T15:28:25 strix -> max
+did of course
+
+2020-08-14T15:29:02 max -> strix
+without npm run dev you won't get those old settings gone. What are the errors?
+
+2020-08-14T15:29:37 strix -> max
+bpack.config.js`.
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the @ development script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2020-08-14T15_29_23_686Z-debug.log
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! @ dev: `npm run development`!
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the @ dev script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2020-08-14T15_29_23_711Z-debug.log
+
+2020-08-14T15:31:42 strix -> max
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'run', 'dev' ]
+2 info using npm@6.13.4
+3 info using node@v8.17.0
+4 verbose run-script [ 'predev', 'dev', 'postdev' ]
+5 info lifecycle @~predev: @
+6 info lifecycle @~dev: @
+7 verbose lifecycle @~dev: unsafe-perm in lifecycle true
+8 verbose lifecycle @~dev: PATH: /usr/lib/node_modules/npm/node_modules/npm-lif$
+9 verbose lifecycle @~dev: CWD: /var/www/html/crypto
+10 silly lifecycle @~dev: Args: ['-c', 'npm run development' ]
+11 silly lifecycle @~dev: Returned: code: 1 signal: null
+12 info lifecycle @~dev: Failed to execute dev script
+13 verbose stack Error: @ dev: `npm run development
+13 verbose stack Exit status 1
+13 verbose stack at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/nod$
+13 verbose stack at emitTwo (events.js:126:13)
+13 verbose stack at EventEmitter.emit (events.js:214:7)
+13 verbose stack at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/nod$
+13 verbose stack at emitTwo (events.js:126:13)
+13 verbose stack at ChildProcess.emit (events.js:214:7)
+13 verbose stack at maybeClose (internal/child_process.js:915:16)
+13 verbose stack at Process.ChildProcess._handle.onexit (internal/child_pro$
+14 verbose pkgid @
+15 verbose cwd /var/www/html/crypto
+16 verbose Linux 4.9.0-8-amd64
+17 verbose argv "/usr/bin/node" "/usr/bin/npm" "run" "dev"
+18 verbose node v8.17.0
+19 verbose npm v6.13.4
+20 error code ELIFECYCLE
+21 error errno 1
+22 error @ dev: `npm run development
+22 error Exit status 1
+23 error Failed at the @ dev script.
+23 error This is probably not a problem with npm. There is probably additional lo$
+24 verbose exit [ 1, true ]
+
+2020-08-14T15:33:20 strix -> max
+dev-script is where?
+
+2020-08-14T15:34:23 max -> strix
+Anyway, you'll never copy node_modules to another server again :) I think you figured it out.
+rm -rf node_modules
+rm package-lock.json yarn.lock
+npm cache clear --force
+npm install
+
+2020-08-14T15:36:01 strix -> max
+Okay, I'll try to put them in from scratch.
+
+2020-08-14T15:39:36 strix -> max
+npm ERR! code ELIFECYCLE.
+npm ERR! errno 1
+npm ERR! pngquant-bin@4.0.0 postinstall: `node lib/install.js`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the pngquant-bin@4.0.0 postinstall script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2020-08-14T15_39_14_108Z-debug.log
+
+2020-08-14T15:44:18 strix -> max
+Error: pngquant failed to build, make sure that libpng-dev is installed
+
+2020-08-14T15:44:29 strix -> max
+ok put liibpng-dev
+
+2020-08-14T15:47:53 strix -> max
+So what, I did npm innstall - it still loads from a Windows server
+
+2020-08-14T16:21:38 max -> strix
+nmp run dev
+
+2020-08-14T16:50:48 strix -> max
+made
+
+2020-08-14T16:51:03 strix -> max
+Now you have to restart the echo server?
+
+2020-08-14T16:53:11 strix -> max
+does not help
+
+2020-08-14T16:53:21 strix -> max
+still booting from a wind server
+
+2020-08-14T17:13:35 max -> strix
+Go to public/js, delete app.js there and do npm run dev again
+
+2020-08-14T17:14:12 max -> strix
+And don't forget to clear the cache in your browser after npm run dev
+
+2020-08-14T17:23:17 strix -> max
+Yes he recreated.
+
+2020-08-14T17:24:14 strix -> max
+it doesn't even have the ":447" line anymore, but in spite of that the vendor loads js/app.js, which has this line
+
+2020-08-14T17:25:17 strix -> max
+window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo__["a"/* default */]({
+    broadcaster: 'socket.io',
+    host: window.location.hostname + ':447'
+	//host: window.location.hostname
+});
+
+2020-08-14T17:25:26 strix -> max
+all the same
+
+2020-08-14T17:25:30 strix -> max
+\
+
+2020-08-14T17:25:37 strix -> max
+cache cleaned
+
+2020-08-14T17:26:25 strix -> max
+open https://3hikhkjb4y4tq5r7.onion/js/app.js and look for the line ":447" there
+
+2020-08-14T17:30:42 strix -> max
+hmmm strange
+
+2020-08-14T17:31:08 strix -> max
+Looks like cache is not cleaned properly in Firefox
+
+2020-08-14T17:31:36 strix -> max
+In another browser it loads the app.js version without the "447" line
+
+2020-08-14T18:23:33 max -> strix
+And? My ws tab is still empty
+
+2020-08-14T19:00:44 strix -> max
+check again
+
+2020-08-14T19:00:50 strix -> max
+problem solved
+
+2020-08-14T19:02:19 strix -> max
+I copied Tor's config from the Venda machine, mostly corrected it, but the IP of the previous machine is still there :)
+
+2020-08-14T19:03:05 strix -> max
+as a result, Thor was accessing the IP of the Wend machine and not his
+
+2020-08-14T19:03:13 strix -> max
+Anyway. corrected
+
+2020-08-14T19:04:20 strix -> max
+It should be 127.0.0.1
+
+2020-08-14T19:04:58 strix -> max
+that's why I thought it was standing there and didn't look
+
+2020-08-14T19:05:49 strix -> max
+And I never looked in there\.
+
+2020-08-14T19:06:07 strix -> max
+happened to stop by Braun :)
+
+2020-08-14T19:11:37 max -> strix
+Hallelujah! You're awesome!!!!!!!!!!!!
+
+2020-08-14T19:12:16 strix -> max
+did it work for you?
+
+2020-08-14T19:13:19 max -> strix
+I still haven't checked, but I see websockets in the ws tab
+
+2020-08-14T19:13:37 strix -> max
+Yep, there is
+
+2020-08-14T19:13:56 max -> strix
+We need to send chats back and forth to be sure
+
+2020-08-14T19:26:16 max -> strix
+Yes!!!!! They work!!!!!!! Hurraaaaaaaa!!!!!
+
+2020-08-14T19:31:10 strix -> max
+cool ;)
+
+2020-08-14T20:05:49 strix -> max
+what kind of files do you need to distribute/share between wendas and linux?
+
+2020-08-14T22:27:39 max -> strix
+If you know, there's a .exe that creates a locker for files on the computer,anloker and 2 more keys. A different collection is created for each task. There could be a lot of tasks. I don't think it needs such a big server as it is now under wind. The way I see it, when a task is created, a curl request will be sent to the windowserver, the .exe will create the collection and pass the contents of these 2 files. And 2 of them are binary
+
+2020-08-17T17:05:37 strix -> max
+hi
+
+2020-08-17T17:06:55 strix -> max
+And what, wenda generates these two .exe files and linux has to give them by http server?
+
+2020-08-17T17:09:15 strix -> max
+Then I guess you have to copy them from venda to linux? Do I have to write some kind of script, or somehow navigate the disks? Where should these files be and what should they be called?
+
+2020-08-17T19:18:45 max -> strix
+I'll write everything myself. I need some kind of Windows server for that with apache configured
+
+2020-08-18T19:24:18 strix -> max
+Hi
+
+2020-08-18T19:24:40 strix -> max
+Will you write a copying script yourself?
+
+2020-08-18T19:25:03 strix -> max
+By the way, you could somehow try using php-curl
+
+2020-08-18T19:25:50 strix -> max
+Do you have to have a separate server with Venda? Isn't the one you already have suitable?
+
+2020-08-19T00:23:29 max -> strix
+I'll write a script, I don't know, what will happen to the old one? I can do it too. I would like to organize a subdomain there, can I?
+
+2020-08-31T13:32:08 strix -> max
+Hi
+
+2020-08-31T13:33:10 strix -> max
+Is that where Braun says there's some kind of problem with the server? Windows?
+
+2020-08-31T13:49:10 max -> strix
+Git is up and running. But it, parasite, now requires a password every time. Can I reset it without password?
+
+2020-08-31T14:12:53 strix -> max
+Didn't beat that: https://stackoverflow.com/questions/6565357/git-push-requires-username-and-password
+
+2020-08-31T14:13:12 strix -> max
+$ git config credential.helper store
+$ git push https://github.com/owner/repo.git
+
+Username for 'https://github.com': <USERNAME>
+Password for 'https://USERNAME@github.com': <PASSWORD>
+
+2020-08-31T14:13:15 strix -> max
+?
+
+2020-09-08T12:41:30 max -> strix
+Hi!
+
+2020-09-08T12:41:41 max -> strix
+Can you help?
+
+2020-09-08T12:41:43 max -> strix
+root@debian:/var/www/html/crypto# git pull
+fatal: unable to access 'https://max@n4iaacb37wmqclht.onion/max/crypto.git/': Can't complete SOCKS5 connection to 0.0.0.0:0. (6)
+root@debian:/var/www/html/crypto#
+
+2020-09-08T13:14:39 strix -> max
+Hi
+
+2020-09-08T13:15:03 strix -> max
+I must have forgotten to do this one:
+
+2020-09-08T13:15:40 strix -> max
+git config --global http.proxy 'socks5h://127.0.0.1:9050'
+git config --global http.sslverify false
+export GIT_SSL_NO_VERIFY=1
+
+2020-09-08T13:16:36 strix -> max
+In fact, I'll be moving my Linux server to new hosting today.
+
+2020-09-08T13:17:14 max -> strix
+So there will be nothing to see?
+
+2020-09-08T13:17:25 max -> strix
+Thank you, it worked!
+
+2020-09-08T13:18:17 strix -> max
+Well, I'll disable it later, of course. So if you keep working, the last changes might get lost.
+
+2020-09-08T18:56:07 strix -> max
+hi
+
+2020-09-08T18:56:14 strix -> max
+are you there?
+
+2020-09-08T18:56:41 strix -> max
+Kind of moved the data to the new server.
+
+2020-09-08T18:57:54 strix -> max
+Linux server (web part)
+3hikhkjb4y4tq5r7.onion
+#root 46.249.32.16 01236vi@sky
+#viasky.co abiroid@ro.ru popo00--
+#pay on the 13th
+root 46.28.69.81 tnDNl9MA2j0l
+itldc.com nnuun@ro.ru cXcx11!!!
+pay on the 3rd
+
+2020-09-08T18:58:11 strix -> max
+and a wind server
+
+2020-09-08-08T18:58:28 strix -> max
+#administrator 212.129.41.246:14741 3edcvgy7!@#123
+#viasky.co awalays@protonmail.com cxcx11!!!
+#pay on the 1st
+Administrator 46.28.69.53 b9ufVYY0HZTb
+itldc.net 2ram@ro.ru cXcx11!!!
+pay on the 4th
+
+2020-09-08T18:58:46 strix -> max
+What is commented is previous servacs
+
+2020-09-15T18:49:34 max -> strix
+Hi!
+
+2020-09-15T20:15:40 strix -> max
+Hi
+
+2020-09-15T20:26:53 max -> strix
+Hi!
+
+2020-09-15T20:28:32 max -> strix
+there is something with the server http://3hikhkjb4y4tq5r7.onion - here about an hour ago just did not answer, now it seems, answered, but God knows what will be another hour
+
+2020-09-15T20:29:23 max -> strix
+Yes, while writing to you - no answer again
+
+2020-09-15T20:34:11 strix -> max
+Brown complained to me just now -- I restarted Thor on the server.
+
+2020-09-15T20:34:21 strix -> max
+Everything seems to be working now.
+
+2020-09-15T20:36:00 max -> strix
+No, once it gave me a login page, I entered the data and here: Unable to connect
+
+Firefox can't establish a connection to the server at 3hikhkjb4y4tq5r7.onion.
+
+    The site could be temporarily unavailable or too busy. Try again in a few moments.
+    If you are unable to load any pages, check your computer's network connection.
+    If your computer or network is protected by a firewall or proxy, make sure that Tor Browser is permitted to access the Web.
+
+2020-09-15T20:36:07 max -> strix
+and so on all the way
+
+2020-09-16T17:18:46 strix -> max
+hi
+
+2020-09-16T17:19:51 strix -> max
+someone changed the laravel-echo-server config yesterday, now when it starts up it writes that it cannot connect to redis
+
+2020-09-16T17:20:14 strix -> max
+Can you look at the config what could be wrong there?
+
+2020-09-16T17:21:17 strix -> max
+I'm guessing this is the piece right here:
+
+2020-09-16T17:21:21 strix -> max
+{ "clients": [
+                {
+                        "appId": "c79f01522dcfb583",
+                        "key": "e4d3a09649fe27e4540cbab4dbde9ae9"
+                }
+        ],
+
+2020-09-16T17:21:38 strix -> max
+The full config is like this:
+
+2020-09-16T17:23:26 strix -> max
+{
+        { "authHost": "http://localhost",
+        { "authEndpoint": "/broadcasting/auth",
+        { "clients": [
+                {
+                        "appId": "c79f01522dcfb583",
+                        "key": "e4d3a09649fe27e4540cbab4dbde9ae9"
+                }
+        ],
+        }, "database": "redis",
+        "databaseConfig": {
+                { "redis": {
+                },
+                { "sqlite": {
+                        "databasePath":"/database/laravel-echo-server.sqlite"
+                }
+        },
+        { "devMode": true,
+        { "host": null,
+        "port": "6001",
+        "protocol": "http",
+        { "socketio": {},
+        { "secureOptions": 67108864,
+        "sslCertPath": "",
+        "sslKeyPath": "",
+        "sslCertChainPath": "",
+        "sslPassphrase": "",
+        { "subscribers": {
+                "http": true,
+                "redis": true
+        },
+        { "apiOriginAllow": {
+                { "allowCors": true,
+                "allowOrigin": { "http://localhost:80",
+                { "allowMethods": "GET, POST",
+                { "allowHeaders": "Origin, Content-Type, X-Auth-Token, X-Requeste$
+        }
+}
+
+2020-09-16T19:00:21 max -> strix
+Do you have redis installed and running there? Or what?
+
+2020-09-16T19:01:00 max -> strix
+If I write redis on the command line, it says it doesn't know the command
+
+2020-09-16T19:05:22 strix -> max
+is running but for some reason is not listening to port 6379 and hangs on restart
+
+2020-09-16T19:05:45 strix -> max
+I reinstalled it -- let's see if it cleans or not
+
+2020-09-16T19:05:52 max -> strix
+Well yes, it hangs.
+
+2020-09-16T19:14:18 strix -> max
+hangs and when I try to reinstall it hangs on startup again
+
+2020-09-16T19:14:23 strix -> max
+hmmm what is it
+
+2020-09-16T19:15:03 strix -> max
+port 6379 is not listening, only UNIX socket is open
+
+2020-09-16T19:15:04 max -> strix
+Do you have enough memory on this server?
+
+2020-09-16T19:16:47 strix -> max
+There's 16 gb of memory and only 1 gb is used
+
+2020-09-16T19:18:23 max -> strix
+it's not clear why it's hanging, I can't even check what port it's running on
+
+2020-09-16T19:20:19 max -> strix
+Check what port is on, maybe in this system 6379 is already busy with something?
+
+2020-09-16T19:22:20 strix -> max
+it is not engaged in anything -- netstat does not show it at all
+
+2020-09-16T19:22:51 strix -> max
+I also turned off the firewall, so who knows what else could be in the way
+
+2020-09-16T19:23:36 max -> strix
+Well is it some other linux, not like the previous one?
+
+2020-09-16T19:23:48 strix -> max
+same
+
+2020-09-16T19:24:17 strix -> max
+It worked before, I don't know what changed yesterday.
+
+2020-09-16T19:24:55 max -> strix
+What the hell is he missing then? Russian hackers came and broke the server, no otherwise :)
+
+2020-09-16T19:29:45 strix -> max
+probably :)
+
+2020-09-16T19:31:13 max -> strix
+At the very least, how about completely tearing down radis and everything associated with it and re-installing it? Maybe he'll swear as he goes along that he's missing something or something else?
+
+2020-09-16T19:43:09 strix -> max
+already tried
+
+2020-09-16T19:43:17 max -> strix
+So?
+
+2020-09-16T19:43:46 strix -> max
+hangs again for unknown reason
+
+2020-09-16T19:45:22 max -> strix
+https://redis.io/topics/latency
+
+2020-09-16T19:45:47 max -> strix
+But we can't even get to redis-cli, no response
+
+2020-09-16T19:48:53 max -> strix
+https://coderoad.ru/40225117/%D0%9A%D0%BE%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0-redis-cli-%D0%BD%D0%B5-%D0%BE%D1%82%D0%B2%D0%B5%D1%87%D0%B0%D0%B5%D1%82
+
+2020-09-16T20:01:14 strix -> max
+ping does not respond because the port is not listening
+
+2020-09-16T20:01:55 strix -> max
+I don't know why the fuck it's not listening -- port 6379 is prescribed in the config
+
+2020-09-16T20:05:19 max -> strix
+but it's definitely not because of laravel-echo-server.json
+
+2020-09-16T20:07:23 strix -> max
+Yes, it seems. it's the radish itself.
+
+2020-09-16T20:07:56 strix -> max
+laravel-echo-server tries to connect to it and does not find port 6379
+
+2020-09-16T20:14:51 strix -> max
+As I understand it, the systemd unit starts redis-server and then does something with redis-cli and it hangs because the port is not open
+
+2020-09-16T22:13:32 max -> strix
+Well I don't know what to say. This is only one bug, and running the project through the tor domain - the same thing, then answers, then hangs, then hangs again, then seems to answer, the next request to the server through ajax - and everything is dead. Maybe like on the wind - do format C: ? :)  And everything has to be reinstalled?
+
+2020-09-16T22:50:41 strix -> max
+Only Laravel doesn't work through the tor domain. phpMyAdmin works just fine
+
+2020-09-16T22:51:35 strix -> max
+Laravel doesn't work because laravel-echo-server is not running. And it's not running because it can't connect to redis. That is, everything is connected.
+
+2020-09-16T22:56:56 max -> strix
+Not true. Laravel can run very stable without laravel-echo-server. It will just throw an error in the console, like it did on the Windows server. So the fact that the project via tor domain hangs all the time with laravel-echo-server has nothing to do with
+
+2020-09-16T22:58:41 max -> strix
+And https://3hikhkjb4y4tq5r7.onion/phpmyadmin/ - just checked, it's just like yesterday: Unable to connect
+
+Firefox can't establish a connection to the server at 3hikhkjb4y4tq5r7.onion.
+
+2020-09-16T22:59:27 max -> strix
+Yesterday it started and phpmyadmin we could only look through the web, no tor domain
+
+2020-09-16T23:13:41 strix -> max
+Well, websockets won't work without laravel-echo-server, will they?
+
+2020-09-16T23:18:59 max -> strix
+Just so you understand - laravel-echo-server is a node.js program that catches data from websockets, since php is a scripting language, meaning the php program is not constantly in memory and it's hard to work with websockets on it. But websockets are completely irrelevant to whether or not the project runs under apache. Websockets are needed for chats, but they do not affect login page and other pages where there are no chats (90% of the project has nothing to do with chats). That is, if the project does not start or hangs on its own, not chats in it - it is a problem with the general settings Linux-server. And what exactly is there - this is hard to say.
+
+2020-09-16T23:19:49 max -> strix
+It was my idea to tear it all down and reinstall it, but you decide
+
+2020-09-16T23:24:13 strix -> max
+and every time you have a problem, you have to tear everything down and put it back? it's better to find out what's wrong right away.
+
+2020-09-17T14:04:04 max -> strix
+How's it going on the server? I get this error now on phpmyadmin Secure Connection Failed
+
+An error occurred during a connection to 3hikhkjb4y4tq5r7.onion. PR_END_OF_FILE_ERROR
+
+    The page you are trying to view cannot be shown because the authenticity of the received data could not be verified.
+    Please contact the website owners to inform them of this problem.
+
+2020-09-17T14:43:10 strix -> max
+Looks like the file came truncated in response to the request. Probably some networking issues that are unclear.
+
+2020-09-21T14:24:44 max -> strix
+Hi!
+
+2020-09-21T14:24:49 max -> strix
+How's it going?
+
+2020-09-21T14:29:34 strix -> max
+hi
+
+2020-09-21T14:30:25 strix -> max
+Redis has been defeated, but I don't know about cutting off the connection through Tor yet.
+
+2020-09-21T14:30:50 max -> strix
+Well good luck to you!
+
+2020-09-21T14:30:50 strix -> max
+By the way, if you refresh the page there, it loads.
+
+2020-09-21T14:31:06 max -> strix
+Is it downloading through torus?
+
+2020-09-21T14:31:40 strix -> max
+loads, but for some reason phpMyAdmin glitches more than Enigma
+
+2020-09-21T14:32:11 strix -> max
+And if you refresh the page with Ctrl-R after an error, the page is loaded
+
+2020-09-21T14:32:23 max -> strix
+I have a very simple question - is it possible to test? Or torus will cut everything off and I will get a list of errors - torus doesn't load once, torus doesn't load twice...? ?
+
+2020-09-21T14:32:55 strix -> max
+That is, on the contrary, phpMyAdmin glitches less, I mean
+
+2020-09-21T14:33:30 strix -> max
+Of course you can test it. I told you, all you have to do is refresh the page.
+
+2020-09-21T15:51:32 max -> strix
+Then I have another problem, I do git pool - and get fatal: unable to access - and it's been like that for the second week. What you told me to do last time - I did
+
+2020-09-21T15:55:18 strix -> max
+doing a git pull from the same server, and it doesn't work?
+
+2020-09-21T15:55:56 strix -> max
+How about trying the same thing again?
+
+2020-09-21T15:57:36 max -> strix
+Yes, everything is cool! Thanks!
+
+2020-09-21T15:59:22 strix -> max
+gut
+
+2020-09-22T15:32:40 max -> strix
+Hi! There indeed, after a few page reloads you can see the page you request, but the sockets just don't work there
+
+2020-09-22T15:56:50 strix -> max
+chat doesn't work?
+
+2020-09-22T15:56:59 max -> strix
+No
+
+2020-09-22T16:04:31 max -> strix
+It tells me that the previous server had: Cross-Origin Request Blocked: The Same Origin Policy disallows reading the remote resource at http://3hikhkjb4y4tq5r7.onion:6001/socket.io/?EIO=3&transport=polling&t=NIsXYBu. (Reason: CORS request did not succeed).
+
+2020-09-22T16:05:59 strix -> max
+um
+
+2020-09-22T16:06:06 strix -> max
+this shit again
+
+2020-09-22T16:06:36 strix -> max
+I seem to have copied all the settings as they are from the old one
+
+2020-09-22T16:06:42 max -> strix
+And there is nothing in the networks/ws tab, but there should be one entry like ws://crypto:6001/socket.io/?EIO=3&transport=websocket&sid=mr4U1SifHGma5FeGAAC6 and status 101ъ
+
+2020-09-22T16:09:23 max -> strix
+I don't remember how you finished the laravel-echo-server there anymore, it's talking now:
+L A R A V E L E C H O S E R V E R
+
+version 1.6.2
+
+Starting server...
+
+✔ Running at localhost on port 6001
+✔ Listening for http events...
+✔ Listening for redis events...
+
+2020-09-22T16:09:39 max -> strix
+Should it be listening to the 6001 port there exactly?
+
+2020-09-22T16:14:53 strix -> max
+yes 6001
+
+2020-09-22T16:16:17 strix -> max
+laravel-echo-server should already be running there (unless the server has been rebooted)
+
+2020-09-22T16:16:40 max -> strix
+I restarted it just in case - nothing changes
+
+2020-09-22T16:17:13 strix -> max
+I'll check it out.
+
+2020-09-22T16:34:11 strix -> max
+Yes, the sockets are not working.
+
+2020-09-22T16:34:17 strix -> max
+you have to look at
+
+2020-09-22T16:34:58 max -> strix
+And don't even try to tell me that it will be necessary to change the server again :)
+
+2020-09-24T15:45:15 max -> strix
+Hi! Had the same problem with websockets - node_modules can't be copied from one machine to another. It's like an operating system - each hardware has something different. It's the same here. Here you should never copy them and just do an npm install
+
+2020-09-24T15:45:29 max -> strix
+I got to the bottom of it and the sockets worked!
+
+2020-09-24T16:14:55 strix -> max
+it's gut
+
+2020-09-24T16:15:17 strix -> max
+I thought there was something wrong with the config
+
+2020-09-24T16:15:49 strix -> max
+I thought it should work from linux machine to linux machine
+
+2020-09-24T16:16:28 max -> strix
+Well you were absolutely right, only it was a config somewhere deep :)
+
+2020-10-26T20:56:51 max -> strix
+Hi!
+

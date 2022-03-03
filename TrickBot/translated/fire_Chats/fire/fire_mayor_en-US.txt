@@ -1,0 +1,1181 @@
+[22.06.21 18:46:25] fire: hi
+[22.06.21 18:46:33] fire: no solution with zuminfo there yet?
+[22.06.21 19:18:12] fire: and if there will be an option, I would also like to find an account that has a minimum - at least 100 people per month, I have not found a better search base
+[22.06.21 19:18:24] fire: mail-phones
+[06/23/221 07:58:16] mayor: hi
+[23.06.21 07:58:32] mayor: zuminfo is solved
+[23.06.21 07:58:41] mayor: everything you need for work, order from frances
+[06/23/221 10:42:39] fire: got it
+[06/23/221 10:42:43] fire: thank you)
+[23.06.21 10:42:52] mayor: hi)
+[23.06.21 10:42:59] fire: hi)
+[23.06.21 10:43:00] mayor: could you write off alter in the channel?
+[23.06.21 10:43:07] mayor: he's a smart guy and an important customer
+[06/23/221 10:43:22] fire: got it.
+[23.06.21 10:43:33] fire: Should I take one firm away from him?
+[23.06.21 10:43:44] mayor: look, let's do this.
+[23.06.21 10:43:46] fire: I wanted to finish TSYS today
+[23.06.21 10:44:00] mayor: have you already done something about the current task?
+[23.06.21 10:44:04] fire: everything goes to the parent company there as well
+[23.06.21 10:44:28] fire: yes, TSYS - only the roster is left, the leadership is available
+[23.06.21 10:44:36] fire: overkill
+[23.06.21 10:45:19] fire: it was much more difficult with big companies than with test ones)
+[23.06.21 10:46:06] mayor: add to point
+[23.06.21 10:46:09] mayor: give what you have
+[23.06.21 10:46:13] mayor: and take the alter task
+[23.06.21 10:46:27] mayor: while we have few people, and many customers, we will be forced to alternate
+[23.06.21 10:46:31] fire: got it
+[23.06.21 10:46:33] mayor: it will go further.)
+[23.06.21 10:46:48] mayor: in the alter's task, pay attention to mapping their networks, external resources
+[23.06.21 10:46:55] fire: today I'll map what's left of tsys
+[23.06.21 10:47:03] fire: and take one from Alter
+[23.06.21 10:47:22] mayor: with network mapping is still such a thing - information on AS (autonomous system) is important
+[23.06.21 10:47:43] fire: this is something you have to look into with schodan, I'll look into it on the way
+[23.06.21 10:48:23] mayor: yes, it would be nice to work out how to map autonomous systems, it's very important info
+[06/23/221 10:48:38] fire: I'll do my best.
+[06/23/221 10:48:45] mayor: thank you]
+[23.06.21 10:48:57] fire: uh-huh)
+[23.06.21 10:49:14] mayor: alter recommended this
+https://pentest-tools.com/home
+[23.06.21 10:49:30] fire: I was looking at real reports on aspen by the way.
+[23.06.21 10:49:35] fire: I have to grow and grow)
+[23.06.21 10:49:47] fire: but it's mostly nets
+[23.06.21 10:49:51] mayor: where exactly to grow - there is) and in another sense )
+[23.06.21 10:50:05] mayor: I think it will grow, and people will be added
+[23.06.21 10:50:15] mayor: and someone will have to teach, mentor them
+[23.06.21 10:50:24] mayor: because the order is very high.
+[23.06.21 10:50:37] fire: we will work, I'm picking up the list of resources and taking a look.
+[23.06.21 10:50:51] fire: it is clear that the high, the theme is popular.
+[06/23/221 10:51:01] mayor: I believe in you.)
+[23.06.21 10:51:07] mayor: that's it, I won't interrupt.)
+[06/23/221 10:51:08] fire: thank you!)
+[06/23/221 10:51:11] fire: uh-huh)
+[25.06.21 08:10:42] mayor: hi
+[25.06.21 08:11:09] fire: hi)
+[25.06.21 08:11:16] mayor: in the list that I gave the very first, which TSYS, there what company last?
+[25.06.21 08:11:20] mayor: I distribute tasks
+[25.06.21 08:11:22] fire: sec.
+[25.06.21 08:12:11] fire: Baltimore Gas & Electric
+[25.06.21 08:12:22] mayor: thank you.
+[25.06.21 08:12:33] fire: you're welcome)
+[28.06.21 20:29:35] fire: looked through the list you gave
+[28.06.21 20:30:36] fire: OSINT toolkit:
+
+* A wide range of searchers
+
+==============================================================================
+
+https://github.com/laramies/theHarvester - collecting email addresses, subdomains, virtual hosts, open ports/banners, employee names from public sources.
+
+It doesn't work for me, it doesn't install correctly
+Installation commands:
+
+git clone https://github.com/laramies/theHarvester
+cd theHarvester
+python3 -m pip install -r requirements/base.txt
+python3 theHarvester.py -h
+
+
+==============================================================================
+
+https://mor-pah.net/software/dmitry-deepmagic-information-gathering-tool/ - Dmitry - analog of the previous tool
+
+Cool tool. Pulls out the information, you can use it.
+Installation via compilation, but there is a manual - nothing complicated
+
+==============================================================================
+
+https://github.com/0xInfection/TIDoS-Framework - universal framework with network analysis capabilities (DNS, whois, emails)
+
+Installation:
+sudo apt-get install libncurses5 libxml2 nmap tcpdump libexiv2-dev build-essential python3-pip libmariadbclient18 libmysqlclient-dev tor konsole
+git clone https://github.com/0xinfection/tidos-framework.git
+cd tidos-framework
+pip3 install -r requirements.txt
+
+Running:
+python3 tidv2 #Qt5 interface
+sudo python3 tidconsole.py #console interface
+
+installed, but to disassemble and disassemble, a very massive set of aces
+
+==============================================================================
+
+https://github.com/smicallef/spiderfoot
+
+The tool is good, but it's easier to use the web version.
+Provides good mapping, like this:
+https://prnt.sc/17bpc7y
+minus that you can't export without a subscription, about 80 euros a month
+very useful tool, in fact
+if there is an option, you can get an account
+
+
+==============================================================================
+
+
+  https://osintframework.com/ - OSINT tools rubricator, general search by social networks, large set of different search tools:
+  
+you can pick, a simple osintype toolbase
+  
+==============================================================================
+
+https://hunter.io/ - gather email info by domain name
+Checked it, gives results, but not many, at raytheon gave out 41 people
+paid, 50 euros a month, gives about 10 results without payment
+I used google.
+
+==============================================================================
+
+* Company search engines
+https://www.zoominfo.com - company data search engine
+it's all clear, it's a well-known tool
+  
+https://opencorpdata.com/ - Open corporate business database
+basic data on corporations, also useful in providing insight into the consolidation of subsidiaries
+
+https://domainbigdata.com/ - big database of domains and whois records
+standard domain data
+
+https://opencorporates.com/ - largest open database of companies in the world
+https://www.sec.gov/edgar/searchedgar/cik.htm - EDGAR Company Filings | Central Index Key Lookup
+http://www.orsr.sk/search_osoba.asp?lan=en - Business register | Ministry of Justice of the Slovak Republic
+
+
+* Search by USERNAME/NICKNAME:
+https://namechk.com/
+it's more of an aggregator, showing if social network domains and nicknames are available or not.
+useful in certain situations, but by no means always
+
+https://github.com/snooppr/snoop
+We need to dig, the functionality is clear, but the console is not friendly at all
+
+
+* Network mapping
+https://crt.sh/ - search for subdomains
+it's not a search for subdomains, it's a search for certificates
+
+https://archive.org/web/ - search in the past (view sites on a certain date)
+it's all clear here)
+
+https://viewdns.info/ - data about a given website or IP address
+a large set of tools that does not give anything unique.
+useful because everything is in one place
+
+
+==========================================================================================
+==========================================================================================
+[29.06.21 07:51:48] mayor: hi
+[29.06.21 07:52:04] mayor: the harvester is in cali linux out of the box
+[29.06.21 07:53:08] mayor: thanks for the review!
+[29.06.21 07:53:21] fire: you're welcome)
+[29.06.21 07:53:40] fire: cali my system is not working, next time I'll put it
+[29.06.21 07:53:47] fire: on working device
+[29.06.21 07:54:06] mayor: you can download a virtual image and roll it up on virtualbox
+[29.06.21 07:54:22] fire: my laptop is weak)
+[29.06.21 07:54:31] fire: can't hold a normal virtualbox
+[29.06.21 07:54:42] fire: I don't want to put it on my desktop
+[29.06.21 07:54:46] mayor: okay
+[29.06.21 07:55:13] fire: soon I'll buy a real machine for work
+[06/30/21/12:10:20] mayor: hi.
+[30.06.21 12:11:36] fire: hi)
+[30.06.21 12:11:50] mayor: ok
+[01.07.21 08:04:20] mayor: hi
+did you get hooks into the new working toad yesterday?
+[01.07.21 08:06:13] fire: no
+[01.07.21 08:06:18] fire: wrong password
+[01.07.21 08:06:28] fire: ))
+[01.07.21 08:06:38] mayor: okay
+[01.07.21 08:06:41] mayor: kicking
+[01.07.21 08:06:49] fire: ok
+[01.07.21 08:14:02] fire: I'll be gone 10 minutes
+[01.07.21 08:14:34] mayor: +
+[01.07.21 08:36:13] fire: in place
+[01.07.21 14:57:20] mayor: when you copy Alter's report, please send me a copy
+[01.07.21 14:57:44] fire: ok, sure
+[01.07.21 20:42:20] fire: https://send.exploit.in/download/8da266ac9912f253/#BC_HvW8z0BfNuJBwpWWckQ
+[01.07.21 21 21:00:48] fire: account to see what else I need to pull, ordered a working account with full functionality and export from @frances
+[02.07.21 08:18:51] mayor: accepted
+[02.07.21 08:18:53] mayor: thanks
+[02.07.21 09:47:48] mayor: awesome report
+[02.07.21 09:47:48] mayor: do you have resumes of line employees on linkdin?
+[02.07.21 09:59:30] fire: line employees in the plan?
+[02.07.21 09:59:57] mayor: I mean, not top?
+[02.07.21 10:00:01] mayor: not department heads
+[02.07.21 10:00:09] mayor: junior programmer, junior something
+[02.07.21 10:00:39] mayor: janitorial manager
+[02.07.21 10:00:47] fire: lincedine see the problem
+most of the employees there have closed profiles
+[02.07.21 10:00:54] fire: I got it from signalhair
+[02.07.21 10:01:10] fire: there are a couple of pulled junior engineers there
+[02.07.21 10:01:18] fire: and a couple of simple system administrators
+[02.07.21 10:01:33] fire: the janitors didn't consider, you told me to watch IT)
+[02.07.21 10:02:02] fire: so you can certainly find it, but on the signalhair quota of 100 requests per month yet)
+[02.07.21 10:02:26] mayor: IT yes, but in addition to that, there are also low-skilled "give-and-take" employees
+[02.07.21 10:02:34] fire: Got it, got it.
+[02.07.21 10:02:39] fire: pull here?
+[02.07.21 10:02:42] mayor: but overall pretty cool.
+[02.07.21 10:02:45] mayor: you can, yes.
+[02.07.21 10:03:14] fire: I'll wait for more spiderfoot from @frances
+[02.07.21 10:03:24] fire: the coolest tool
+[02.07.21 10:03:39] fire: I will learn how to use it fully and it is a ton of information
+[02.07.21 10:03:42] mayor: yeah
+[02.07.21 10:03:49] fire: went in, looked at report there?
+[02.07.21 10:04:05] mayor: right away.
+[02.07.21 10:04:10] mayor: And you would have taken screenshots of it
+[02.07.21 10:04:18] mayor: these things like to go stale
+[02.07.21 10:04:34] fire: there is no sense to take screenshots, it goes by windows
+[02.07.21 10:04:58] mayor: there must be some export
+[02.07.21 10:05:04] mayor: because reports are viewed offline
+[02.07.21 10:06:26] mayor: yes
+[02.07.21 10:06:36] mayor: top right corner where the name of the account
+[02.07.21 10:06:44] mayor: Data Exports
+[02.07.21 10:06:50] mayor: on Raytheon I see another report rolling around
+[02.07.21 10:07:41] fire: there is no sense to take screenshots, it goes in windows
+[02.07.21 10:07:55] fire: export hangs for 24 hours, then gets deleted
+[02.07.21 10:08:17] fire: on a paid account longer, plus there is a function to monitor changes in the company
+[02.07.21 10:08:39] mayor: I understand it's a network mapping
+[02.07.21 10:09:15] fire: yes
+[02.07.21 10:09:23] fire: there is even a visual feed
+[02.07.21 10:09:55] fire: by Raytheon
+[02.07.21 10:09:58] fire: he
+[02.07.21 10:10:21] mayor: I see
+[02.07.21 10:10:35] fire: considering I didn't even request the full report
+[02.07.21 12:20:14] fire: well, I'll add junior staff today, about ten more people
+[02.07.21 12:20:22] fire: what's next, which company to take?
+[02.07.21 12:20:49] mayor: 15 minutes
+[02.07.21 12:23:58] mayor: take honeywell
+[02.07.21 12:27:16] mayor: There's something else.
+[02.07.21 12:29:29] fire: ok, I will
+her @liam shook
+[02.07.21 12:29:31] fire: took
+[02.07.21 12:31:41] mayor: I didn't like what he did
+[02.07.21 12:35:00] mayor: you become a teammate)
+[02.07.21 12:35:04] mayor: We have an addition
+[02.07.21 12:35:07] mayor: mirror
+[02.07.21 12:35:12] fire: Wow.
+[02.07.21 12:35:14] mayor: I'll introduce you to the channel now
+[02.07.21 12:35:17] fire: thank you for your trust
+[02.07.21 12:42:16] mayor: now preparing new targets
+[02.07.21 12:42:23] mayor: so far they've asked for this
+[02.07.21 12:42:28] mayor: top 30 metallurgists US EU
+[02.07.21 12:45:19] fire: so
+[02.07.21 12:45:26] fire: I'll make a list
+[02.07.21 12:45:34] fire: I'll take Honeywell
+[02.07.21 12:45:52] mayor: yeah
+[02.07.21 13:32:21] fire: @mirror wrote, do I have to learn it in full?
+[02.07.21 13:32:27] fire: or he on white sphere?
+[02.07.21 13:42:12] mayor: he is of the black hats
+[02.07.21 13:42:16] mayor: but liam isn't.
+[02.07.21 13:42:38] fire: great
+[05.07.21 09:51:34] fire: Hi.
+[05.07.21 09:51:34] fire: apr?
+[05.07.21 09:53:31] mayor: hi
+[05.07.21 09:53:32] mayor: again
+[05.07.21 16:02:01] fire: the tasks were distributed
+[05.07.21 16:02:01] fire: waiting for feedback
+[06.07.21 07:33:50] mayor: what kind of response?
+[06.07.21 12:32:22] fire: the company guys chose
+[06.07.21 12:41:37] fire: mirror took the second from the list, liam the first,
+[06.07.21 12:42:06] mayor: ocean
+[06.07.21 17:13:14] fire: wrote a little manual
+[06.07.21 17:13:15] fire: https://send.exploit.in/download/cf54a60e9e065dc8/#9iix6EPtkBq299Tt5bLy1w
+[06.07.21 17:13:22] fire: for those who come
+[06.07.21 17:13:26] fire: I gave it to mine already
+[06.07.21 17:14:13] fire: it's universal, made with allowance for sending it @liam , so it fits white hats too
+[07.07.21 07:55:17] mayor: hi
+[07.07.21 07:55:18] mayor: very cool
+[07.07.21 07:55:22] mayor: Show me his alter
+[07.07.21 09:17:28] fire: yeah, I will
+[09.07.21 08:43:19] fire: hi, one last question before your vacation)
+when approximately will appear?
+[09.07.21 08:43:32] mayor: hi
+[09.07.21 08:43:43] mayor: he's gone for a few days too... fishing
+[09.07.21 08:43:47] mayor: call him here
+[09.07.21 08:44:02] fire: yeah, I'm having trouble with my account there)
+[09.07.21 08:44:53] mayor: text him
+[09.07.21 08:45:05] fire: thanks a lot!
+[09.07.21 08:45:16] mayor: no problem
+[16.07.21 12:11:15] fire: hi)
+[16.07.21 12:11:31] fire: Mirror disappeared from me somewhere
+[16.07.21 12:11:31] mayor: hello
+[16.07.21 12:11:37] mayor: he must've gone away
+[16.07.21 12:11:43] mayor: nothing
+[16.07.21 12:11:56] fire: Too bad, he wasn't stupid
+[16.07.21 12:12:41] mayor: we'll wait a couple of days, if he doesn't show up, we'll reopen the job
+[16.07.21 12:13:15] fire: Got it.
+[16.07.21 12:14:34] fire: Salary today, right?
+[16.07.21 12:15:50] mayor: was supposed to be yesterday, waiting for boss with a bag of dough
+[16.07.21 12:15:54] mayor: No one's been paid yet
+[16.07.21 12:16:11] fire: Oh, I see
+[16.07.21 12:16:19] fire: Thought you were the boss.)
+[16.07.21 12:17:22] mayor: I'm the technical boss.
+[16.07.21 12:17:41] mayor: and the biggest boss shows up seldom, pours dough and leaves again)
+[16.07.21 12:17:58] mayor: pistols everybody in the process)
+[16.07.21 12:17:58] fire: :grin:
+[16.07.21 12:24:28] fire: The main thing is to show up today)
+[26.07.21 12:44:43] fire: hi
+[26.07.21 12:44:54] fire: wanted to ask you a couple of questions
+[26.07.21 12:45:10] mayor: hi
+[26.07.21 12:47:07] mayor: 1 - ok
+[26.07.21 12:47:14] mayor: 2 - take the firm on the list
+[28.07.21 11:00:33] mayor: hi.
+[28.07.21 11:00:50] mayor: take the storm under your wing
+[28.07.21 11:10:51] mayor: Hello!)
+[28.07.21 11:11:09] mayor: look, there's a topic on storm
+[28.07.21 11:11:16] mayor: he's our call center liaison
+[28.07.21 11:11:24] mayor: give him some files
+[28.07.21 12:12:21] fire: hi
+[28.07.21 12:12:36] fire: I've got two huge, awesome firms
+[28.07.21 12:12:43] fire: which I did for
+[28.07.21 12:12:49] mayor: which ones?
+[28.07.21 12:12:53] fire: there are two easier ones
+[28.07.21 12:12:54] fire: sec
+[28.07.21 12:13:14] fire: raytheon and honeywell
+[28.07.21 12:13:18] mayor: no
+[28.07.21 12:13:25] mayor: start with as cheesy as possible
+[28.07.21 12:13:28] fire: there are tsys
+[28.07.21 12:13:31] mayor: there's a chance we'll screw it up
+[28.07.21 12:13:35] fire: the first one
+[28.07.21 12:13:41] fire: it's the smallest
+[28.07.21 12:13:57] mayor: give him 3-4 small ones from the end of the list
+[28.07.21 12:14:43] mayor: listen, what about the metal guys?
+[28.07.21 12:14:46] mayor: I think it's better
+[28.07.21 12:15:18] fire: metal guys can quit doing thyssen
+[28.07.21 12:15:24] fire: make small ones from the list
+[28.07.21 12:15:28] fire: and give them up
+[28.07.21 12:15:42] fire: there are firms with small rhubarb
+[28.07.21 12:16:33] fire: 19) Crucible Industries - US
+24.7 million
+15) Sheffield Forgemasters - UK
+30.7 million
+[28.07.21 12:16:38] fire: Here's one.
+[28.07.21 12:16:45] mayor: is there even one ready metal player?
+[28.07.21 12:16:52] fire: yes
+[28.07.21 12:16:55] mayor: who?
+[28.07.21 12:17:35] fire: U S Steel
+liam did
+[28.07.21 12:17:48] mayor: give him and give me tcis
+[28.07.21 12:17:52] fire: and another one he has not closed, waiting for the signallhair account
+[28.07.21 12:18:01] fire: accepted\.
+[28.07.21 12:18:09] fire: and these two, right?
+[28.07.21 12:18:42] mayor: which two are those?
+[28.07.21 12:18:55] fire: I think if we take one with him, by pt-sb they'll be ready
+[28.07.21 12:19:01] fire: 19) Crucible Industries - US
+24.7 million
+15) Sheffield Forgemasters - UK
+30.7 million
+[28.07.21 12:19:15] mayor: yes, all metallers go to Storm
+[28.07.21 12:19:28] fire: And the big ones?
+[28.07.21 12:19:35] mayor: you can also use Storm for info gathering, but keep in mind he's a liaison and feedback will go through him
+[28.07.21 12:19:37] mayor: yes
+[28.07.21 12:19:41] fire: Got it
+[28.07.21 12:20:12] fire: we've already communicated with Storm, he's also the caller's team leader
+[28.07.21 12:20:13] mayor: consider him a client on the same level as alter and derek, just playing)
+[28.07.21 12:20:16] mayor: yes
+[28.07.21 12:20:33] fire: Got it.
+[28.07.21 12:21:04] fire: just give it to him?
+he said his guys know what to do with the data
+[28.07.21 12:23:10] mayor: yes, just give it to him
+[28.07.21 12:23:16] mayor: ask him for feedback
+[28.07.21 12:23:18] fire: ++
+[28.07.21 12:24:03] fire: accepted, I will give, by the end of Friday or Monday we will prepare a couple more then
+[28.07.21 12:25:56] mayor: ok
+[28.07.21 13:21:35] mayor: give me one energy
+[28.07.21 13:21:43] mayor: I'll let the man see
+[28.07.21 13:21:51] fire: energy?
+[28.07.21 13:22:09] mayor: well, yes, from the first list it is energetics
+[28.07.21 13:22:13] mayor: from the second list it's metallurgists
+[28.07.21 13:23:22] fire: pass: A8rJ-XC*V)/F(Qd-&I
+https://privatlab.com/s/v/EJJV0VL6Vjir0RLNkXyJ
+https://privatlab.com/s/d/EJJV0VL6Vjir0RLNkXyJ/A2Xlr#delete
+[28.07.21 13:26:31] mayor: +
+[30.07.21 08:24:00] mayor: Q
+[30.07.21 10:34:02] fire: koo
+[30.07.21 10:34:10] fire: I'm here, I'm listening.)
+[30.07.21 10:34:22] mayor: 5 min
+[30.07.21 10:34:25] mayor: hello
+[30.07.21 10:34:33] fire: Hello.
+[30.07.21 10:34:38] fire: yeah, no problem
+[30.07.21 10:50:04] fire: I'll leave early today, if you don't have any urgent transfers, it's my birthday)
+[30.07.21 10:50:10] fire: if it's okay)
+[30.07.21 10:50:14] mayor: happy birthday!)
+[30.07.21 10:50:15] mayor: come on!
+[30.07.21 10:50:19] fire: thank you)
+[30.07.21 10:50:22] fire: ++
+[30.07.21 10:50:23] mayor: you may, of course
+[30.07.21 10:50:29] mayor: what I wanted
+[30.07.21 10:50:33] mayor: you've got to learn how to do it
+[30.07.21 10:50:39] fire: plan?
+[30.07.21 10:51:08] fire: written, oral?
+[30.07.21 10:51:23] mayor: Well, look.
+[30.07.21 10:51:39] mayor: it turns out the callers don't do the wiring themselves and work on ready-made
+[30.07.21 10:51:46] mayor: i.e. this dossier is not enough for them
+[30.07.21 10:52:02] mayor: they need to say something in clear text, an introduction to a dialog with possible developments
+[30.07.21 10:52:10] mayor: they need both written and oral
+[30.07.21 10:52:12] fire: hmm, but they said they know what to say)
+[30.07.21 10:52:14] mayor: written is a letter
+[30.07.21 10:52:25] mayor: there are variations
+[30.07.21 10:52:29] fire: no problem with letters, that's my main occupation
+[30.07.21 10:52:36] fire: spam emails)
+[30.07.21 10:52:47] mayor: good divorce is usually multi-step
+[30.07.21 10:53:06] mayor: warm-up, then main part
+[30.07.21 10:53:10] mayor: writing can be a warm-up
+[30.07.21 10:53:24] mayor: the main part is a call, could be "there's a letter for you, you probably didn't notice, there's a link"
+[30.07.21 10:53:49] mayor: or "that link/attachment is wrong, you need this and that, download at this address/start" etc.
+[30.07.21 10:53:59] fire: do you work with links?
+[30.07.21 10:54:04] fire: Or just attachments, too?
+[30.07.21 10:54:07] mayor: we're going to find out
+[30.07.21 10:54:10] fire: ++
+[30.07.21 10:54:27] mayor: not the point yet
+[30.07.21 10:54:30] mayor: the point is in the roll
+[30.07.21 10:54:42] mayor: let's try to do a test roll on someone
+[30.07.21 10:54:56] fire: let me think about it
+[30.07.21 10:55:00] fire: what's the goal?
+[30.07.21 10:55:19] mayor: any of those we tried to give the call center
+[30.07.21 10:55:34] fire: no, I mean, what do we expect from the target
+[30.07.21 10:55:46] fire: open the file, follow the link
+[30.07.21 10:55:48] mayor: it should run the load anyway
+[30.07.21 10:55:58] mayor: either open or jump
+[30.07.21 10:56:04] fire: and where will the first email come from, from corporate mail or from bigs?
+[30.07.21 10:56:16] mayor: don't know
+[30.07.21 10:56:21] mayor: not ready to tell yet
+[30.07.21 10:56:25] mayor: what's better?
+[30.07.21 10:57:17] fire: this is quite an important point, because the wiring will be different
+if it's a corporation, it's the easiest, because you can attach a commercial offer, or a contract, or overdue payments, etc.
+[30.07.21 10:57:44] mayor: tell me what you need from me
+[30.07.21 10:57:48] fire: and if you are a big - you have to think, I can't yet formulate why a person would write to someone on the corporate e-mail
+[30.07.21 10:57:50] mayor: what mail/accounts you need to get where
+[30.07.21 10:58:10] fire: I think it should be solved with your spammers
+[30.07.21 10:58:17] fire: where they can send you emails from
+[30.07.21 10:58:28] fire: and use it as a base
+[30.07.21 10:58:55] mayor: there is a theoretical possibility of using insiders of some companies, but we have to work it out
+[30.07.21 10:59:00] mayor: we haven't tried it
+[30.07.21 10:59:12] mayor: maybe this will be the next step
+[30.07.21 10:59:33] fire: purely corporate mail is of course preferable
+there may be many intersections of interests
+[30.07.21 11:00:21] fire: if you write by the same tcis, you can make a request for purchase/order of something on behalf of corporation and send it by dock
+[30.07.21 11:01:04] mayor: can you give me a rough version?
+[30.07.21 11:01:13] mayor: we won't send/call you right away
+[30.07.21 11:01:28] mayor: while we show and find out what is missing, I will punch in the rest
+[30.07.21 11:01:53] fire: or the opposite, call, find out who to contact about this
+and already write a letter to this person
+[30.07.21 11:02:12] fire: about the ordering, for example
+[30.07.21 11:02:32] fire: the main thing is that the character has access
+[30.07.21 11:04:26] mayor: it will mostly be IT
+[30.07.21 11:04:40] mayor: although in principle, you could also target sales and customer service departments
+[30.07.21 11:05:01] mayor: well, it's not right today, I put out a fishing rod, you think over it, I'll ask around too
+[30.07.21 11:05:02] fire: yes, the main thing is to get access to the network, as I understand
+[30.07.21 11:05:07] fire: Got it.
+[30.07.21 11:05:13] fire: I'll think about it at the weekend
+[30.07.21 11:05:20] mayor: well, salespeople also have the same network, it's just IT people are closer to all sorts of DC
+[30.07.21 11:05:22] mayor: AD
+[30.07.21 11:05:32] fire: Got it.
+[30.07.21 11:05:57] fire: I'll think about IT guys, I have no idea how to get close to them yet
+[30.07.21 11:06:26] mayor: Let's go to the ones who are lousier
+[30.07.21 11:06:35] fire: Considering their data is not in the public domain, and as a rule, no one from the street will write to them
+[02.08.21 12:55:44] mayor: hi.
+[02.08.21 14:50:31] fire: hi)
+[02.08.21 14:51:01] fire: contact search
+[02.08.21 15:19:46] fire: so I take it, he also on search?
+[02.08.21 15:21:02] mayor: let's do it tomorrow
+[02.08.21 15:21:46] fire: ok, no problem
+[03.08.21 12:56:42] fire: hi
+[03.08.21 12:56:51] mayor: hi.
+[03.08.21 12:57:09] fire: you wrote yesterday, said you want to discuss something tomorrow
+[03.08.21 12:57:19] mayor: this)
+[03.08.21 12:57:25] mayor: you're already in the next chat room?
+[03.08.21 12:57:33] fire: ah, that's the chat room)
+[03.08.21 12:57:34] fire: yes
+[03.08.21 12:57:38] fire: already in place
+[03.08.21 12:57:39] mayor: this is a new direction
+[03.08.21 12:57:41] fire: tusk
+[03.08.21 12:57:45] mayor: got it.
+[03.08.21 13:00:50] fire: I'll give you a couple more
+[03.08.21 13:01:01] fire: at least watch Liam learn from me
+[03.08.21 13:01:19] mayor: come back later
+[03.08.21 13:01:32] mayor: we'll discuss it and then we'll discuss the main direction with you
+[03.08.21 13:01:36] fire: ++
+[03.08.21 13:02:04] fire: and @link wrote, asked to work in his direction
+[03.08.21 13:02:21] mayor: he's kind of a derek's assistant
+[03.08.21 13:02:25] mayor: what did he want?
+[03.08.21 13:03:45] fire: repeat that
+[03.08.21 13:03:49] fire: The detachment
+[03.08.21 13:04:31] mayor: what did he want?
+[03.08.21 13:05:01] fire: he wanted one of those companies he gave with tsys
+[03.08.21 13:10:52] fire: I could chat, but I don't have negotiation skills.
+[03.08.21 13:11:16] fire: worked for similar theme but very little, the company folded there
+[03.08.21 13:12:34] mayor: they can communicate by themselves
+[03.08.21 13:12:38] fire: ++
+[03.08.21 13:12:45] mayor: they have no topics for communication now, and you have to give them
+[03.08.21 13:12:58] mayor: you must quickly find the list of people to talk to and the list of topics
+[03.08.21 13:13:04] mayor: the firm's pain points
+[03.08.21 13:14:00] fire: Yeah, I see.
+[03.08.21 13:17:52] mayor: the way I see it:
+1) you should be told that such-and-such firm is being taken into development. At that point, they already have a date.
+2) you request a date listing AND ad_users.txt (Active Directory user dump)
+3) using the AD dump you search for contacts of your colleagues.
+4) in the date you find the list of counterparties, maybe some compromising information.
+5) You give this data to the chief of hackers and the chief of callers.
+6) you give the entire date further to the born in our chat room. He collects it.
+[03.08.21 13:18:38] fire: Okay.
+[03.08.21 13:18:39] fire: sec
+[03.08.21 13:18:44] fire: formulate questions
+[03.08.21 13:23:52] fire: so
+[03.08.21 13:23:55] fire: see
+[03.08.21 13:23:58] fire: it turns out
+[03.08.21 13:28:42] fire: 1) I get data, specifically listing and dump
+2) I extract data
+3) look for dirt
+4) give it tokyo and aqua
+5) give them to born
+
+regarding
+
+1) How do I process the data - I mean, what format will it be in?
+text docs, maybe some software is needed
+because I was going through the logs, they use software to pull the data
+
+2) On the department itself - I understand that I have liam working under the old scheme, he is not involved here?
+
+3) on coordination - it will take place in that chat room, they both have to work now?
+[03.08.21 13:31:35] mayor: half an hour
+[03.08.21 13:31:39] fire: ++
+[03.08.21 13:31:40] mayor: distracted by urgent and important
+[03.08.21 13:31:47] fire: got it, I'm on line
+[03.08.21 13:41:25] mayor: 1 - you determine. We can give you coder(s) to write your needed parsers or get/adapt them.
+[03.08.21 13:41:46] mayor: 2 - you control the people the way you want, as long as everything works in general
+[03.08.21 13:42:03] fire: he's de whitehat just)
+[03.08.21 13:42:06] mayor: 3 - it's not clear yet. Here they have access, but they most likely blew it, so apparently we to them
+[03.08.21 13:42:11] fire: ahah
+[03.08.21 13:42:13] fire: got it
+[03.08.21 13:42:38] fire: so I understand, we have first order, even 2
+[03.08.21 13:42:52] fire: ?
+[03.08.21 13:43:21] mayor: yeah
+[03.08.21 13:43:28] mayor: well, these burning orders are
+[03.08.21 13:43:40] mayor: it's uncomfortable to work there because most likely they already made mistakes
+[03.08.21 13:43:47] mayor: I don't expect much there
+[03.08.21 13:43:56] fire: yes, that's clear
+[03.08.21 13:44:01] mayor: so don't pay attention to the outcome of those cases
+[03.08.21 13:44:11] mayor: Next, new cases, and we'll test the method there.
+[03.08.21 13:45:10] fire: Got it, got it.
+[03.08.21 13:45:25] fire: at the same time I'll see how the date looks like
+[03.08.21 13:45:34] mayor: stock from this topic
+[03.08.21 13:46:24] mayor: let's get back to the topic with reconnaissance for new purposes
+[03.08.21 13:46:30] mayor: to the very first direction
+[03.08.21 13:46:34] fire: okay.
+[03.08.21 13:46:54] mayor: look.
+[03.08.21 13:46:58] mayor: we have to combine business with pleasure
+[03.08.21 13:47:04] mayor: you get the date
+[03.08.21 13:47:20] mayor: This firm works with someone
+[03.08.21 13:47:35] mayor: it has partners, suppliers, clients
+[03.08.21 13:47:47] mayor: that means there are contacts of these contractors
+[03.08.21 13:47:58] mayor: and there is a reason - correspondence, some cases, unclosed topics
+[03.08.21 13:48:06] mayor: and there is access to sending mail!
+[03.08.21 13:48:17] mayor: you're inside the firm already, hackers will do whatever you say
+[03.08.21 13:48:25] mayor: get it?
+[03.08.21 13:48:46] fire: comprehending)
+[03.08.21 13:48:47] fire: sec.
+[03.08.21 13:48:55] mayor: I want to move horizontally
+[03.08.21 13:49:15] mayor: just these firms should be filtered by turnover, choosing only the most major partners
+[03.08.21 13:49:16] fire: That's my understanding.
+[03.08.21 13:49:34] fire: you want to get access to partners
+[03.08.21 13:49:38] fire: correct?
+[03.08.21 13:49:38] mayor: yes
+[03.08.21 13:49:42] fire: gut
+[03.08.21 13:49:43] mayor: that's perfect social
+[03.08.21 13:49:44] fire: understand
+[03.08.21 13:49:57] mayor: you have a huge data set - cling to whatever you want
+[03.08.21 13:50:03] mayor: real names, real correspondence
+[03.08.21 13:50:08] fire: yeah, I get it.
+[03.08.21 13:50:11] mayor: you can do Re: to the real letter
+[03.08.21 13:50:13] fire: that's very cool
+[03.08.21 13:50:19] fire: especially with letters
+[03.08.21 13:50:23] fire: trust is trust
+[03.08.21 13:50:54] mayor: let's not try to grasp the immensity yet
+[03.08.21 13:51:03] mayor: let Liam learn and master the methodology
+[03.08.21 13:51:14] mayor: and do reconnaissance for derek and linc
+[03.08.21 13:51:24] mayor: you concentrate on escorting locs
+[03.08.21 13:51:29] fire: got it
+[03.08.21 13:51:50] mayor: Once you've handled a few cases, you'll know what's in that date, you'll get better at handling it.
+[03.08.21 13:52:09] mayor: i saw raytheon in the linoleum manufacturer's date
+[03.08.21 13:52:23] mayor: and such grunts will be many places
+[03.08.21 13:52:56] mayor: i want us to work up a methodology on horizontal walking from linoleum suppliers to raytheon and boeing
+[03.08.21 13:53:03] fire: well, yeah.
+[03.08.21 13:53:14] fire: can you also order vpns through you?
+[03.08.21 13:53:18] mayor: yes
+[03.08.21 13:53:26] fire: oh, very good
+[03.08.21 13:53:30] mayor: whatever you need, ask french and/or tokyo
+[03.08.21 13:53:34] fire: ++
+[03.08.21 13:53:47] mayor: he needs all you need.
+[03.08.21 13:53:58] mayor: For coding, come to me
+[03.08.21 13:55:50] fire: Got it.
+[03.08.21 13:56:10] mayor: share the date with born - any available
+[03.08.21 13:56:12] mayor: just about any
+[03.08.21 13:56:20] fire: got it
+[03.08.21 13:56:25] mayor: even better to ask hackers for excess dates
+[03.08.21 13:56:35] mayor: you don't need it, but you feel it's useful
+[03.08.21 13:56:46] mayor: you must throw him all the listings
+[03.08.21 13:56:52] mayor: he'll tell you what to order
+[03.08.21 13:56:53] fire: stop
+[03.08.21 13:56:58] fire: listing it?
+[03.08.21 13:57:19] mayor: > 2) you are requesting a date listing AND ad_users.txt (Active Directory user dump)
+[03.08.21 13:57:30] mayor: this is the result of running the DIR command recursively over the entire disk
+[03.08.21 14:00:16] fire: ++
+[03.08.21 14:00:19] fire: got it
+[04.08.21 12:36:19] mayor: hi
+[04.08.21 12:36:25] mayor: did you get it in the neighboring chat room?
+[04.08.21 12:54:31] fire: yeah, @frances will give me ipn, I'll go in
+[04.08.21 12:55:01] fire: Waiting for now)
+[05.08.21 09:35:59] mayor: there's a new company coming in
+[05.08.21 09:50:59] fire: yes, I saw it)
+[05.08.21 09:51:02] fire: I took it
+[05.08.21 09:51:13] fire: I'll get my ipn today
+[06.08.21 08:47:59] fire: finally everybody's here)
+[06.08.21 08:53:07] mayor: yeah
+[06.08.21 09:55:33] mayor: ``
+https://privatlab.com/m/v/ydd6rAXZL0i50V7OmAgD
+```
+[06.08.21 10:00:53] mayor: did you accept?
+[06.08.21 10:02:17] fire: ``sek
+[06.08.21 10:03:45] fire: this second rocket?
+[06.08.21 10:03:59] mayor: instead of previous
+[06.08.21 10:04:08] mayor: remember yesterday tokyo said he was changing the chat room
+[06.08.21 10:04:30] fire: accepted
+[06.08.21 10:04:33] fire: online
+[06.08.21 10:04:45] mayor: I'm enigma there
+[06.08.21 10:05:39] fire: it's hard when there are so many nicknames)
+[09.08.21 09:52:05] mayor: hi
+[09.08.21 09:52:20] mayor: what kind of script do you need?
+[09.08.21 09:52:34] fire: yeah
+[09.08.21 09:52:37] fire: look
+[09.08.21 09:52:59] fire: here I process ad_users
+[09.08.21 09:53:21] fire: and I need to pull certain blocks of strings out of it
+[09.08.21 09:53:39] fire: in particular, I would like the output to look like this:
+
+>objectClass:
+>cn:
+>sn:
+>c:
+>l:
+>st:
+>title:
+>postalCode:
+>displayName:
+VOIP:
+>co:
+>department:
+>proxyAddresses:
+>streetAddress:
+>name:
+>objectGUID:
+>homeDirectory:
+>homeDrive:
+>userPrincipalName:
+>mail:
+>mobile:
+>mailNickname:
+>msExchAuditDelegate:
+
+*********************************
+
+>objectClass:
+>cn:
+>sn:
+>c:
+>l:
+>st:
+>title:
+>postalCode:
+>displayName:
+VOIP:
+>co:
+>department:
+>proxyAddresses:
+>streetAddress:
+>name:
+>objectGUID:
+>homeDirectory:
+>homeDrive:
+>userPrincipalName:
+>mail:
+>mobile:
+>mailNickname:
+>msExchAuditDelegate:
+
+*********************************
+etc.
+[09.08.21 09:54:05] mayor: borne has a parser
+[09.08.21 09:54:13] fire: in general, all these strings are not always there, if some are missing - not critical, but the order of appearance is correct
+person block starts with >objectClass:, ends with >msExchAuditDelegate: - these two lines always exist
+that's it)
+and a separator between the blocks to show who's who
+[09.08.21 09:54:28] mayor: ask him to adjust it to your requirements
+[09.08.21 09:54:36] fire: yeah, thanks for the tip)
+[09.08.21 09:54:41] fire: apply today
+[09.08.21 09:54:46] fire: apply
+[09.08.21 09:55:02] mayor: I wrote him
+[09.08.21 09:55:28] fire: ++
+[09.08.21 15:13:21] fire: go to chat please
+[09.08.21 15:13:45] mayor: yeah I see
+[09.08.21 15:13:53] mayor: So what about me?)
+[09.08.21 15:14:06] mayor: I'll congratulate you when it's paid)
+[09.08.21 15:14:12] fire: well, you might know how to yank tokyo)
+[09.08.21 15:14:13] mayor: write to us)
+[09.08.21 15:14:17] fire: he's not online)
+[09.08.21 15:14:27] mayor: min
+[09.08.21 15:14:28] fire: obiziana off
+[09.08.21 15:15:11] mayor: beeped him in another toad, but he's on his watch, went to see
+[09.08.21 15:15:28] mayor: I'll take franc again
+[09.08.21 15:16:09] mayor: text them something like "we went to look for the wallet under the lantern, we'll be there soon, don't switch"
+[09.08.21 15:16:34] mayor: busy chatting with other clients or something, very busy.
+[09.08.21 15:17:00] fire: Okay.
+[09.08.21 15:17:40] fire: Done
+[09.08.21 15:20:37] fire: and in that chat frances is invoker?
+[09.08.21 15:20:53] mayor: yes
+[09.08.21 15:20:57] mayor: in this one
+[09.08.21 15:21:18] fire: got it, thought so
+[09.08.21 15:27:19] mayor: it's coming
+[09.08.21 15:29:53] fire: great
+[10.08.21 10:46:11] fire: everything cool!) payment from company passed
+[10.08.21 10:46:20] fire: thank you again for that)
+[10.08.21 10:46:23] mayor: I saw, hello
+[10.08.21 10:46:26] mayor: thank you]
+[10.08.21 13:58:55] fire: so there was no it, huh?
+I went away.
+[11.08.21 09:18:56] mayor: hi.
+[11.08.21 11:04:50] fire: hi)
+[16.08.21 08:30:34] mayor: koo
+[16.08.21 09:41:27] fire: hi)
+[16.08.21 09:41:52] mayor: how did it go?
+[16.08.21 09:41:53] mayor: ?
+[16.08.21 09:42:01] fire: great)
+[16.08.21 09:42:08] fire: really great)
+[16.08.21 09:42:15] mayor: did you meet tinker?
+[16.08.21 09:42:19] mayor: turn it on
+[25.08.21 15:13:01] mayor: I think eventually a template should be made for people monkey
+[25.08.21 15:13:11] mayor: since it's the closest to them
+[25.08.21 15:13:37] fire: that's also true, but we have a slightly different area of work there, this is the second part of the tutorial
+[25.08.21 15:13:52] fire: mine just report to people here
+[25.08.21 15:14:02] mayor: Everybody got lost here
+[25.08.21 15:14:09] mayor: I haven't heard from my clients for ages
+[25.08.21 15:14:24] mayor: and the first part of the tutorial will also be at monkey's
+[25.08.21 15:14:32] fire: yes, it will
+[25.08.21 15:14:34] mayor: there's a topic going on in the tactics chat room
+[25.08.21 15:14:54] fire: derek wrote recently, gave him a report
+[25.08.21 15:15:10] fire: we give him the link, I gave him 4 more today
+[25.08.21 15:15:16] fire: Liam works with him
+[25.08.21 15:15:29] fire: yes)
+[25.08.21 15:15:39] fire: Well, let's collect the wants here.
+[25.08.21 15:15:44] fire: and I'll ask there
+[25.08.21 15:15:51] fire: throw some
+[25.08.21 15:16:03] fire: and let everybody report what and how
+[25.08.21 15:16:28] mayor: jrt
+[25.08.21 15:16:30] mayor: ocean
+[25.08.21 15:16:41] fire: anyway, we all work together)
+[27.09.21 09:20:07] mayor: hi
+[27.09.21 09:20:37] fire: hi)
+[27.09.21 09:21:03] mayor: ``
+sverh@thesecure.biz
+```
+you don't know this one?
+[27.09.21 09:22:59] fire: not like that.)
+[27.09.21 09:23:29] fire: why, what field does he work in?
+[27.09.21 09:23:35] mayor: HR is trying to find out, he says he worked with you and left
+[27.09.21 09:23:36] fire: I can't tell you right away
+[27.09.21 09:23:38] fire: ah
+[27.09.21 09:23:39] mayor: maybe
+[27.09.21 09:23:45] mayor: maybe it's a search
+[27.09.21 09:24:08] fire: dhhhz
+[27.09.21 09:24:22] mayor: we're looking for more people for you
+[27.09.21 09:24:28] mayor: so get ready
+[27.09.21 09:30:18] fire: great)
+[27.09.21 20:26:46] fire: listen, you asked for toad
+[27.09.21 20:26:59] fire: I was thinking back
+[27.09.21 20:27:10] fire: the guy who worked with us and left it
+[27.09.21 20:27:22] fire: he was working with me at the very beginning
+[13.10.21 14:50:23] mayor: koo
+[13.10.21 14:52:02] fire: re)
+[13.10.21 14:52:04] fire: ku)
+[13.10.21 14:52:33] mayor: there will be an apprentice for you tomorrow
+[13.10.21 14:52:45] mayor: turn on the ctr
+[13.10.21 14:52:46] fire: yes, I know
+[15.10.21 12:05:08] fire: hi)
+[15.10.21 12:05:17] mayor: ku
+[15.10.21 12:05:22] fire: is jeronimo a whitehat?
+[15.10.21 12:05:23] mayor: otr
+[15.10.21 12:05:26] mayor: no
+[15.10.21 12:05:29] mayor: white is snow
+[15.10.21 12:05:55] fire: got it
+[15.10.21 12:06:04] fire: This is a Ford man.
+[15.10.21 12:06:07] mayor: yeah.
+[15.10.21 12:06:21] fire: he's got high hopes, he's done a hell of a report
+[15.10.21 13:01:50] fire: Hi.)
+[15.10.21 13:01:53] fire: ugh
+[10/15/21 13:02:02] fire: hello already
+[15.10.21 13:02:05] mayor: yeah
+[15.10.21 13:02:13] fire: listen, I lost my toad password
+[15.10.21 13:02:21] fire: changed laptop, can't log in
+[15.10.21 13:02:46] mayor: This won't be quick
+[15.10.21 13:02:55] fire: I understand.
+[15.10.21 13:03:05] mayor: Turn it on.
+[15.10.21 13:03:13] mayor: urls can't be transmitted over an open channel
+[18.10.21 15:18:00] mayor: koo
+[18.10.21 15:18:01] mayor: otr
+[18.10.21 15:18:57] mayor: ``
+ Hi. look please, if something is wrong, tell me, I will improve it.
+https://dropmefiles.com/eTIok
+password to the archive: qwe123QWE!@#
+
+Send him this please
+osint test from the phaser made
+```
+[18.10.21 15:20:18] fire: accepted
+[18.10.21 15:20:28] fire: who's that?
+[19.10.21 07:43:35] mayor: ku
+[19.10.21 12:59:09] fire: ku)
+[19.10.21 13:12:45] mayor: there's a newbie for you
+[19.10.21 13:12:54] mayor: snow is the one who's scared
+[19.10.21 13:13:01] mayor: bio is still coming out, haven't seen him yet
+[19.10.21 13:13:23] fire: snow took it
+[19.10.21 13:13:33] fire: bio
+[19.10.21 13:45:03] fire: made team chat here
+[19.10.21 13:45:11] fire: for more convenient placement of orders
+[21.10.21 10:47:56] mayor: ku
+[21.10.21 10:49:40] fire: ku)
+[21.10.21 10:49:43] fire: it came)
+[22.10.21 09:04:09] mayor: ku
+[22.10.21 09:04:12] mayor: let me know when you get there
+[22.10.21 15:05:48] fire: here
+[22.10.21 15:06:53] mayor: couple of minutes
+[22.10.21 15:07:25] fire: gut
+[22.10.21 15:14:14] fire: I'll be gone for half an hour
+[22.10.21 15:14:14] fire: to the kids
+[22.10.21 15:14:17] fire: I'll be right there
+[22.10.21 15:20:19] mayor: +
+[22.10.21 15:36:58] fire: in place
+[22.10.21 15:37:06] mayor: abort
+[22.10.21 15:46:17] mayor: Fucking chat
+[22.10.21 15:47:03] mayor: what I meant to say was, starting Monday, another colleague might need help
+[26.10.21 12:41:46] fire: Friend, I don't have jaber account)
+[26.10.21 12:41:47] fire: hi)
+[26.10.21 13:09:31] mayor: hi
+[26.10.21 13:09:31] mayor: remind me your nickname again
+[26.10.21 13:09:34] mayor: they sent it to me, but I forgot to give it back (
+[26.10.21 13:09:44] fire: skippy :)
+[26.10.21 13:17:34] mayor: turn it on
+[26.10.21 13:21:04] mayor: and I'll send you the password
+[28.10.21 10:42:35] fire: friend
+[29.10.21 08:25:01] mayor: repeat
+[29.10.21 16:20:26] mayor: f )
+[29.10.21 16:20:31] mayor: one more time )
+[01.11.21 07:34:19] mayor: repeat )
+[01.11.21 07:35:26] fire: sec
+[01.11.21 07:35:53] fire: snow says I have a pretty boy
+[01.11.21 07:36:01] fire: look what idea I gave you
+[01.11.21 07:36:06] fire: ``
+Hi! If the topic of Tox is still relevant, I suggest to buy an account on GitHub (500r from dude on mipped.com - https://mipped.com/f/threads/prodam-akkaunty-github.88373/ ), under it take some repositories to work on Tox.chat on GitHub and write to the main developer of Tox (it looks like irungento) and everyone who theoretically can be active in relation to the project.
+
+You can write asking to describe the main "holes" in the development of Tox.Chat like for the case. If it works, then you can ask in more detail who is now engaged in the project (ostensibly to join forces). Who, who, and the main developer may know who is interested in it now.
+
+Security related actions:
+On mipped, sign up via anonymous email (I have such a valid email at tutanota.com). You need this to email the seller of the GitHub account.
+All transitions via tor
+
+What to write approximately:
+Hey! My name is Ferréol, I am a programmer in a French IT company. I believe in the Tox project because I feel it is the future of anonymity on the Internet. Usually I work with C# and C++, so how can I help someone who is working on Tox.chat? Can you tell me someone who is actively working on the project right now? thx
+```
+[01.11.21 07:36:12] fire: shall we?
+[01.11.21 07:36:26] fire: and we need a jaber for @bio
+[01.11.21 07:36:57] mayor: I already contacted their developers
+[01.11.21 07:37:42] fire: got it, then it's irrelevant\
+[01.11.21 07:37:51] fire: then you only need jaber
+[05.11.21 14:27:14] fire: hi
+[05.11.21 14:27:17] fire: otr
+[05.11.21 14:27:20] fire: in place?
+[05.11.21 14:27:28] mayor: hi.
+[05.11.21 14:27:30] mayor: come on.
+[05.11.21 14:28:53] mayor: before the real thread
+here exactly thread
+[05.11.21 14:29:04] mayor: thread is a execution thread
+stream is a data stream
+[08.11.21 13:21:06] fire: look, where's @jack
+[08.11.21 13:21:15] fire: I can't give him any reports
+[08.11.21 13:21:22] fire: no new tickets)
+[08.11.21 13:21:28] mayor: sorry busy
+[08.11.21 13:21:34] fire: +++
+[08.11.21 13:21:40] fire: well, I'm on hold)
+[10.11.21 13:12:33] fire: hi)
+[10.11.21 13:12:37] fire: in place7
+[10.11.21 13:12:46] fire: ?
+[10.11.21 13:12:54] mayor: hi
+[10.11.21 13:12:56] mayor: yes, but busy.
+[10.11.21 13:12:58] mayor: ack and write.
+[10.11.21 13:13:52] fire: Yeah, same question.
+[10.11.21 13:14:05] fire: the department needs assignments and signalhair accounts
+[10.11.21 13:14:28] fire: nothing has changed)
+[10.11.21 13:14:29] mayor: i was told by francais that mankie doesn't like us giving tasks to the department)
+[10.11.21 13:14:40] fire: plan?
+[10.11.21 13:14:55] fire: it's not just manky
+[10.11.21 13:14:58] fire: I figured it out
+[10.11.21 13:15:09] mayor: busy at the moment
+[10.11.21 13:15:13] fire: he never gave out a firm for analysis
+[10.11.21 13:15:15] fire: got it
+[10.11.21 13:15:24] fire: beep me when you're free tonight
+[10.11.21 13:15:31] fire: I also went on business
+[10.11.21 13:15:38] mayor: tomorrow only
+[10.11.21 13:15:42] fire: ogg
+[10.11.21 13:15:45] fire: got it.
+[10.11.21 13:15:50] fire: I'll be in touch
+[10.11.21 13:15:56] fire: just don't forget about us
+[10.11.21 13:16:09] fire: I've got people waiting for taxis
+[10.11.21 13:16:15] fire: tusks
+[10.11.21 13:16:24] fire: Time to waste
+[10.11.21 13:24:22] fire: ah, another question
+[10.11.21 13:24:31] fire: for the second day I don't get into my jabber
+[10.11.21 13:24:36] fire: doesn't connect
+[10.11.21 13:24:52] fire: neither working nor second toad on the same domain
+[10.11.21 13:33:12] mayor: like this
+[10.11.21 13:36:03] mayor: about loading people, I told one customer that we have a free cash register
+[10.11.21 13:36:12] fire: got it, great.
+[10.11.21 13:36:14] mayor: you'll know in a few days if he'll find the tasks
+[10.11.21 13:36:18] fire: ++
+[10.11.21 13:36:26] mayor: does derek and his people, link and whoever, give tasks?
+[10.11.21 13:36:33] fire: no one is online
+[10.11.21 13:36:39] mayor: how long ago were there?
+[10.11.21 13:36:42] fire: yes
+[10.11.21 13:36:47] fire: jack was giving the tacos
+[10.11.21 13:36:49] mayor: I'll give it a whirl
+[10.11.21 13:36:51] fire: but also off
+[10.11.21 13:36:57] fire: ok
+[10.11.21 13:37:04] fire: I'll be gone for half an hour or so
+[10.11.21 13:37:11] fire: beep
+[10.11.21 13:37:23] mayor: go ahead
+[10.11.21 13:37:25] mayor: we'll decide about the toad tomorrow
+[10.11.21 13:37:32] mayor: I'm fuckin' jerked off, I don't have time for anything
+[10.11.21 14:37:57] fire: got it, no problem
+[10.11.21 14:38:06] fire: basically, there's the necessary connection
+[10.11.21 14:38:21] mayor: derek said there's no orders yet because he's bogged down in other stuff
+[10.11.21 14:39:13] fire: got it
+[11.11.21 09:55:30] fire: hi.)
+[11.11.21 09:55:36] fire: with jaber not solved?
+[11.11.21 09:55:41] mayor: jnh
+[12.11.21 13:26:02] fire: hi, here?
+[12.11.21 13:26:13] mayor: hi
+[12.11.21 13:26:17] mayor: let's go without the crap
+[12.11.21 13:26:40] fire: yeah
+[12.11.21 13:26:47] fire: it's been glitching lately
+[12.11.21 13:26:47] mayor: what do you got?
+[12.11.21 13:26:53] fire: work to do)
+[12.11.21 13:26:58] fire: and jabber
+[12.11.21 13:27:00] fire: ))
+[12.11.21 13:27:05] mayor: jabber domain changed
+[12.11.21 13:27:10] fire: found old shares
+[12.11.21 13:27:15] fire: check
+[12.11.21 13:27:23] mayor: let's go.
+[12.11.21 13:27:47] mayor: did you have a jabber with a domain starting with q3m?
+[12.11.21 13:27:51] fire: yes
+[12.11.21 13:29:03] mayor: the domain is now
+[12.11.21 13:29:08] mayor: ``
+odw5mdwotufuxxrgw3pvqjjuze3e33e33bylylkl667h4nef4fwiimwqsumyd.onion
+```
+[12.11.21 13:29:12] mayor: BUT!
+[12.11.21 13:29:33] fire: it must be prescribed in the connection settings
+[12.11.21 13:30:00] fire: ?
+[12.11.21 13:30:35] mayor: if you have psy+, in the Name field you change the domain to the new one, and in the XMPP address field you leave it as is
+[12.11.21 13:30:35] mayor: i.e. regardless of the client
+- the address of the server you're connecting to changes
+- your account address (name@domain) stays the same
+[12.11.21 13:30:46] fire: got it
+[12.11.21 13:30:51] fire: let me try
+[12.11.21 13:32:27] fire: I have it already registered
+[12.11.21 13:32:50] fire: from the moment when I was sending out toadstools with instructions
+[12.11.21 13:32:51] mayor: no connection?
+[12.11.21 13:32:54] fire: nope
+[12.11.21 13:32:58] mayor: which client?
+[12.11.21 13:33:15] fire: both of them, I have a skippy and another one from another team is old on this server
+[12.11.21 13:33:18] fire: psy+
+[12.11.21 13:33:31] mayor: don't know what you did from the manual
+[12.11.21 13:33:36] mayor: I think there were extra steps in the manual
+[12.11.21 13:33:44] mayor: all I did was replace the domain in the Name field:
+[12.11.21 13:33:49] mayor: without changing ports or anything else
+[12.11.21 13:33:59] mayor: but when I changed it following the instructions it didn't work
+[12.11.21 13:34:12] mayor: i.e. you have to roll back to "before instruction" settings
+[12.11.21 13:34:19] mayor: and change domain in Name field:
+[12.11.21 13:35:47] fire: Nope.
+[12.11.21 13:35:49] fire: look
+[12.11.21 13:36:27] fire: name is skippy@new domain
+xmpp-address is old
+passkey is clearly old
+[12.11.21 13:36:46] fire: in proxy connection tab - tor
+[12.11.21 13:37:05] mayor: I'll tell def
+[12.11.21 13:37:14] fire: compression, keep-alive and so on
+[12.11.21 13:37:16] mayor: i can't help you if you got it right
+[12.11.21 13:37:23] fire: Yep.
+[12.11.21 13:37:33] mayor: do you have contacts of defender, our admin?
+[12.11.21 13:37:35] mayor: personal
+[12.11.21 13:37:40] fire: no
+[12.11.21 13:37:41] mayor: somewhere else you can cross paths?
+[12.11.21 13:37:45] fire: no
+[12.11.21 13:38:02] fire: only this instruction came from him in the working toad)
+[12.11.21 13:38:16] fire: well, i have a left jabber on expa
+[12.11.21 13:38:27] fire: just there or here
+[12.11.21 13:38:29] mayor: geralemur ?
+[12.11.21 13:38:33] fire: Nope
+[12.11.21 13:38:44] mayor: okay
+[12.11.21 13:38:45] fire: I don't use it for this job at all
+[12.11.21 13:38:50] mayor: I'll get def here
+[12.11.21 13:38:54] fire: ++
+[12.11.21 13:38:54] mayor: ask for your help
+[12.11.21 13:39:00] fire: thanks a lot)
+[12.11.21 13:39:21] fire: and we need work)
+[12.11.21 13:39:32] fire: or my people will relax
+[12.11.21 13:39:47] mayor: let them analyze data
+[12.11.21 13:39:50] mayor: what tinker does
+[12.11.21 13:40:03] mayor: you do preliminary date analysis, right?
+[12.11.21 13:40:10] fire: yeah, only not by whom yet)
+[12.11.21 13:40:17] mayor: how so?
+[12.11.21 13:40:28] fire: almost no new mancs yet
+[12.11.21 13:40:45] fire: we're filling up the corpses
+[12.11.21 13:40:48] mayor: take old unsold date and use it to get something valuable
+[12.11.21 13:40:52] mayor: persdata for example
+[12.11.21 13:41:06] fire: got it
+[12.11.21 13:41:13] fire: what about people like Liam?
+[12.11.21 13:41:21] fire: who are white hats
+[12.11.21 13:41:46] fire: I can generally just find some random companies
+[12.11.21 13:41:52] fire: matching the theme
+[12.11.21 13:42:02] fire: and let them make reports beforehand
+[12.11.21 13:43:34] mayor: manca has no tags, but derek has tags, but they get screwed up
+[12.11.21 13:43:56] mayor: derek uses your info well, but then hackers just can't work with bots extracted there - I described the problem - it's in low qualification of hackers
+[12.11.21 13:44:08] mayor: you have a bell in the kit
+[12.11.21 13:44:12] fire: yes
+[12.11.21 13:44:17] mayor: then start working as a derek yourself
+[12.11.21 13:44:33] mayor: i didn't even think i'd say that - derek is just a schoolboy]
+[12.11.21 13:44:37] fire: ahah
+[12.11.21 13:44:42] mayor: never thought I'd make an example of him
+[12.11.21 13:45:02] fire: I thought he's so powerful, we used to do reports for him.)
+[12.11.21 13:45:05] mayor: you get a list of sectors you're allowed to work by, rules and limitations from manky
+[12.11.21 13:45:15] mayor: you choose your own targets for those sectors
+[12.11.21 13:45:20] mayor: You give them to people to work on
+[12.11.21 13:45:25] mayor: you make the leads
+[12.11.21 13:45:31] mayor: there's a ringer
+[12.11.21 13:45:34] mayor: for delivery, come to me
+[12.11.21 13:45:38] mayor: how to send them a file
+[12.11.21 13:45:45] mayor: that's how you start getting manky tags
+[12.11.21 13:45:49] fire: got it)
+[12.11.21 13:45:59] fire: great, it's gonna be an interesting week
+[12.11.21 13:46:05] fire: okay, one more question
+[12.11.21 13:46:16] fire: I seem to have run out of Geronimo
+[12.11.21 13:46:51] fire: venom offers to either take his tz into his work
+or he has someone who wants to work at osinta
+[12.11.21 13:47:03] fire: asked to talk
+[12.11.21 13:47:23] mayor: you're in charge here
+[12.11.21 13:47:25] mayor: I don't interfere
+[12.11.21 13:47:35] fire: wow
+[12.11.21 13:47:37] fire: got it
+[12.11.21 13:47:48] fire: make a new chat account here
+[12.11.21 13:47:57] fire: and jeronimo can be removed
+[12.11.21 13:48:04] fire: a week and a half off
+[12.11.21 13:48:04] mayor: not today
+[12.11.21 13:48:07] mayor: sorry, I'm really busy right now
+[12.11.21 13:48:11] fire: no problem
+[12.11.21 13:48:13] mayor: remind me on tuesday
+[12.11.21 13:48:20] fire: I'm just telling you what we want
+[12.11.21 13:48:22] fire: got it
+[12.11.21 13:48:30] fire: just a test one.
+[12.11.21 13:48:34] fire: thanks for the info
+[12.11.21 14:24:12] mayor: meet the cavalry
+[12.11.21 14:24:18] mayor: come help with toad
+[12.11.21 14:24:24] fire: hooray
+[15.11.21 13:52:22] mayor: ku
+[15.11.21 13:54:46] fire: ku)
+[15.11.21 13:55:08] mayor: to continue Friday's topic
+[15.11.21 13:55:18] mayor: you have tons of info there
+[15.11.21 13:55:38] mayor: remember my point about going from company to company through clients
+[15.11.21 13:55:51] mayor: Manca's out of targets, it's time to get busy
+[15.11.21 13:55:51] fire: Yeah.
+[15.11.21 13:56:01] fire: I'm busy looking for companies now
+[15.11.21 13:56:07] fire: manky gave instructions
+[15.11.21 13:56:14] mayor: develop it all together
+[15.11.21 13:56:17] mayor: you have enough people
+[15.11.21 13:56:18] fire: ++
+[15.11.21 13:56:22] fire: yes)4
+[15.11.21 13:56:33] mayor: trust who you think is right to put them on the date
+[15.11.21 13:57:37] fire: accepted
+[15.11.21 13:57:42] fire: there are two people
+[15.11.21 18:29:44] fire: while he's got the guys digging
+[15.11.21 18:29:56] fire: we'll be done by the date, I'll give you your terms of reference
+[17.11.21 13:07:57] fire: hi)
+[17.11.21 13:08:09] mayor: hi.
+[17.11.21 13:08:19] fire: I'm writing about the account here.
+[17.11.21 13:08:39] mayor: ack who?
+[17.11.21 13:08:41] mayor: Which one?
+[17.11.21 13:08:45] fire: told me at the end of that week\
+[17.11.21 13:08:56] mayor: signalhair?
+[17.11.21 13:09:02] fire: Geronimo never got in touch
+[17.11.21 13:09:08] fire: take another person
+[17.11.21 13:09:12] fire: you need an account
+[17.11.21 13:09:15] mayor: ah
+[17.11.21 13:09:18] fire: Geronimo out
+[17.11.21 13:09:24] fire: no need to pay him)
+[17.11.21 13:10:28] mayor: sin / sin
+[17.11.21 13:10:36] fire: ++++
+[17.11.21 13:10:42] fire: accepted
+[17.11.21 13:10:50] fire: wrote to French about geronimo
+[17.11.21 13:10:55] fire: payment failed
+[24.11.21 08:51:19] mayor: ku
+[24.11.21 08:52:51] fire: ku W)
+[24.11.21 08:58:04] mayor: I will not be added to the new chat room
+[24.11.21 08:58:16] fire: I got it)
+[24.11.21 08:58:26] fire: manc said yesterday he would add
+[24.11.21 08:58:37] fire: he said one week silence
+[24.11.21 08:58:39] mayor: he forgets
+[25.11.21 08:23:23] mayor: koo
+[25.11.21 08:23:33] mayor: there's a problem with snow
+[25.11.21 08:24:25] fire: koo
+[25.11.21 08:24:30] fire: plan?
+[25.11.21 08:25:00] fire: ``
+ Hi, the report is ready, but couldn't send it with login difficulties, the site went down
+9:27 AM
+hi)
+you'll send it today
+no worries
+9:31 AM
+Drop it here or in the conversation?
+9:31 AM
+inbox
+I'll pick it up tonight.
+
+```
+[25.11.21 08:25:07] fire: he wrote yesterday
+[25.11.21 08:25:19] mayor: he says he can't send his report
+[25.11.21 08:25:22] mayor: they don't give him any pay
+[25.11.21 08:25:49] fire: I just can't understand why he can't send it
+[25.11.21 08:25:56] fire: he wrote me yesterday in his personal message
+[25.11.21 08:26:06] fire: I'll text him again
+[25.11.21 08:26:19] fire: not to me)
+[25.11.21 08:27:05] fire: with @sin not solved with the ac?
+[25.11.21 08:29:04] mayor: I gave away a tank for Sinn
+[25.11.21 08:29:07] mayor: I think I gave it to you
+[25.11.21 08:29:16] mayor: or someone from HP I don't remember
+[25.11.21 08:29:27] fire: yes, me
+[25.11.21 08:29:34] mayor: but?
+[25.11.21 08:29:42] fire: he is when he communicates
+[25.11.21 08:29:49] fire: no messages for him
+[25.11.21 08:29:56] fire: nor people his phrases
+[25.11.21 08:29:56] mayor: no one wrote to me
+[25.11.21 08:29:56] mayor: now
+[25.11.21 08:30:07] fire: we can only talk
+[25.11.21 08:30:43] mayor: let him try now
+[25.11.21 08:30:48] mayor: he has no role
+[25.11.21 08:31:02] fire: Yeah, I'll let him know
+[25.11.21 08:31:08] fire: he'll go online
+[25.11.21 08:31:11] fire: thank you)
+[25.11.21 08:31:24] mayor: +
+[25.11.21 08:32:22] fire: wrote sno, waiting for answer
+[29.11.21 14:25:56] mayor: koo
+[29.11.21 14:26:00] mayor: what news?
+[29.11.21 14:42:10] fire: ku)
+[29.11.21 14:42:15] fire: what news?
+[29.11.21 14:42:21] fire: guys are working on the reports
+[29.11.21 14:42:25] fire: waiting for manky

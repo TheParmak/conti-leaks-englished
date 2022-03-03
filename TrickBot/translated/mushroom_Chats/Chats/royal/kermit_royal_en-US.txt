@@ -1,0 +1,327 @@
+[10.09.21 10:27:29] royal: Hi. What's the question?
+[10.09.21 10:27:49] kermit: give me git access to proto2 cryptosign
+[10.09.21 10:28:08] kermit: hi
+[10.09.21 10:28:09] royal: what's your nickname?
+[10.09.21 10:28:14] kermit: sec
+[10.09.21 10:28:29] kermit: jaden
+[10.09.21 10:29:57] royal: granted access.
+[10.09.21 10:30:23] kermit: sec
+[10.09.21 10:30:24] kermit: check
+[10.09.21 10:30:41] royal: master protocol 2, ec protocol 1.
+[13.09.21 12:44:04] royal: SecKeyCopyExternalRepresentation is a typo?
+[13.09.21 12:44:32] royal: This function exports the key, not imports it.
+[13.09.21 12:46:49] kermit: don't get it
+[13.09.21 12:47:14] kermit: I'm doing the operation without importing
+[13.09.21 12:47:26] royal: you wrote me a link to this function and said it returns an error.
+[13.09.21 12:47:32] kermit: yeah
+[09/13/21/12:47:36] kermit: but the function is different
+[13.09.21 12:47:59] kermit: ``
+https://developer.apple.com/documentation/security/1643701-seckeycreatewithdata?language=objc
+```
+[13.09.21 12:48:06] kermit: ``
+seckeycreatewithdata
+```
+[09/13/21 12:48:42] royal: What arguments do you use?
+[13.09.21 12:48:53] kermit: You want me to feed you the code?
+[09/13/21 12:49:32] royal: Fill it up.
+[09/13/21 12:50:05] kermit: sec.
+[09/13/21 12:54:47] royal: what language is it?
+[13.09.21 12:56:07] kermit: c++
+[13.09.21 12:56:22] royal: Okay, I was thinking about it.
+[13.09.21 12:56:32] kermit: ``
+bool_t WinCryptoVerifySignature(IN const byte_t *pubKey, IN unsigned int pubKeySize, IN const byte_t *signature, IN unsigned int signatureSize, IN const byte_t *digestData, IN unsigned int digestDataSize)
+{
+    bool_t retValue = FALSE;
+    
+    CFErrorRef error = NULL;
+    
+    CFDictionaryRef pubAttrs;
+    
+    const void* pubkeys[] = {
+        kSecAttrKeyType,
+        kSecAttrKeyClass,
+        kSecAttrKeySizeInBits
+        
+    };
+    const void* pubvalues[] = {
+        kSecAttrKeyTypeRSA,//kSecAttrKeyTypeECSECPrimeRandom,//kSecAttrKeyTypeECDSA,
+        kSecAttrKeyClassPublic,
+        CFNumberRef(2048)//CFNumberRef(384)
+        
+    };
+    
+    pubAttrs = CFDictionaryCreate(kCFAllocatorDefault, (const void **)pubkeys, (const void **)pubvalues, sizeof(pubkeys) / sizeof(pubkeys[0]), NULL, NULL);
+    
+    if (NULL != pubAttrs)
+    {
+        CFDataRef pubData;
+        
+        //pubData = WinKey2MacKey(pubKey, pubKeySize);
+        pubData = CFDataCreate(kCFAllocatorDefault, pubKey, pubKeySize);
+        if (NULL != pubData)
+        {
+            SecKeyRef publicKey = SecKeyCreateWithData(pubData, pubAttrs, &error);
+            if (NULL != publicKey)
+            {
+                size_t derSz = 0;
+                //void *der = NULL;
+                
+                //der = P_256toDERX962(signature, signatureSize, &derSz);
+                //if (NULL != der)
+                {
+                    unsigned char dateHash[HASH_SHA384_SIZE];
+                    CFDataRef digest = NULL;
+                    CFDataRef outSign = NULL;
+                    
+                    CC_SHA384(digestData, digestDataSize, dateHash);
+
+                    do
+                    {
+                        digest = CFDataCreate(kCFAllocatorDefault, (const UInt8 *)dateHash, sizeof(dateHash));
+        
+                        if (NULL == digest)
+                        {
+                            break;
+                        }
+                    
+                        outSign = CFDataCreate(kCFAllocatorDefault, (const UInt8 *)signature, signatureSize);
+                        if (NULL == outSign)
+                        {
+                            break;
+                        }
+                    
+                        retValue = SecKeyVerifySignature(publicKey, kSecKeyAlgorithmRSASignatureDigestPKCS1v15SHA384, digest, outSign, &error);
+                    } while (FALSE);
+                    
+               
+                    if (NULL != digest)
+                    {
+                        CFRelease(digest);
+                    }
+                    
+                    if (NULL != outSign)
+                    {
+                        CFRelease(outSign);
+                    }
+                    
+                    //free(der);
+                }
+                CFRelease(publicKey);
+            }
+            CFRelease(pubData);
+        }
+        CFRelease(pubAttrs);
+    }
+        
+    return retValue;
+}
+```
+[13.09.21 12:57:01] kermit: ```
+bool_t WinCryptoSignData(IN const byte_t *privKey, IN unsigned int privKeySize, IN const byte_t *data, IN unsigned int dataSize, OUT byte_t *signedDataBuf, IN OUT unsigned int *signedDataBufSize)
+{
+    bool_t retVal = FALSE;
+    
+    CFDictionaryRef privAttrs;
+    
+    const void* keys[] = {
+        kSecAttrKeyType,
+        kSecAttrIsPermanent,
+        kSecAttrKeyClass,
+        kSecAttrKeySizeInBits
+        
+    };
+    const void* values[] = {
+        kSecAttrKeyTypeRSA,//kSecAttrKeyTypeECSECPrimeRandom,//kSecAttrKeyTypeECDSA,
+        kCFBooleanFalse,
+        kSecAttrKeyClassPrivate,
+        CFNumberRef(2048)//CFNumberRef(384)
+        
+    };
+    
+    privAttrs = CFDictionaryCreate(kCFAllocatorDefault, (const void **)keys, (const void **)values, sizeof(keys) / sizeof(keys[0]), NULL, NULL);
+    if (NULL != privAttrs)
+    {
+        CFDataRef privKeyData;
+     
+        //privKeyData = WinKey2MacKey(privKey, privKeySize);
+        privKeyData = CFDataCreate(kCFAllocatorDefault, (const UInt8 *)privKey, privKeySize);
+                   
+        if (NULL != privKeyData)
+        {
+            SecKeyRef privateKey;
+            CFErrorRef error = NULL;
+            privateKey = SecKeyCreateWithData(privKeyData, privAttrs, &error);
+            if (NULL != privateKey)
+            {
+                unsigned char digest[HASH_SHA384_SIZE];
+                
+                
+                CFDataRef dat;
+                CC_SHA384(data, dataSize, digest);
+                
+                dat = CFDataCreate(kCFAllocatorDefault, (const UInt8 *) digest, sizeof(digest));
+                if (NULL != dat)
+                {
+                    
+                    
+                    CFDataRef outSign;
+                    //outSign = SecKeyCreateSignature(privateKey, kSecKeyAlgorithmECDSASignatureMessageX962SHA384, dat, &error);
+                    
+                
+                    outSign = SecKeyCreateSignature(privateKey, kSecKeyAlgorithmRSASignatureDigestPKCS1v15SHA384, dat, &error);
+                    if (NULL != outSign)
+                    {
+                        CFIndex len = CFDataGetLength(outSign);
+                        retVal = (*signedDataBufSize >= len);
+                        if (retVal)
+                        {
+                            const UInt8 *ptr = CFDataGetBytePtr(outSign);
+                            memcpy(signedDataBuf, ptr, len);
+                        }
+                        *signedDataBufSize = CFDataGetLength(outSign);
+                        //retVal = MacSignature2Win(outSign, signedDataBuf, signedDataBufSize);
+                        CFRelease(outSign);
+                    }
+                    
+                    CFRelease(dat);
+                }
+                
+                CFRelease(privateKey);
+            }
+            //printf("[~] err: %d\n", CFErrorGetCode(error));
+            CFRelease(privKeyData);
+        }
+        
+        CFRelease(privAttrs);
+    }
+    
+    return retVal;
+}
+```
+[13.09.21 12:59:24] royal: What's in include?
+[9/13/21 13:00:23] kermit: `` sec
+[9/13/21 13:01:35] kermit: ``
+#import <CoreFoundation/CFNumber.h>
+#import <Foundation/Foundation.h>
+#import <Security/SecItem.h>
+
+#import <Security/Security.h>
+#import <Security/SecKey.h>
+#import <Security/CodeSigning.h>
+#import <Security/SecBase.h>.
+
+```
+[13.09.21 13:05:03] kermit: ``ping
+[13.09.21 13:05:03] kermit: ``
+#import <CoreFoundation/CFNumber.h>
+#import <Foundation/Foundation.h>
+#import <Security/SecItem.h>
+
+#import <Security/Security.h>
+#import <Security/SecKey.h>
+#import <Security/CodeSigning.h>
+#import <Security/SecBase.h>.
+
+```
+[13.09.21 13:05:18] kermit: did you get it?
+[09/13/21 13:05:22] kermit: I'm getting laggy in the chat room
+[9/13/21 13:05:26] royal: Yeah.
+[9/13/21 13:05:30] royal: I got it.
+[9/14/21 10:18:09] royal: Hi.
+[14.09.21 10:18:16] royal: I tried it now.
+[14.09.21 10:18:51] kermit: ku
+[14.09.21 10:18:54] royal: #include <iostream>
+#include <security/Security.h>
+#include <security/SecImportExport.h>
+
+using namespace std;
+
+int main()
+{
+    // Create a private key from the DER file.
+    auto privKeyFile = fopen("priv.der", "r");
+    fseek(privKeyFile, 0, SEEK_END;)
+    size_t privKeyFileSize = ftell(privKeyFile);
+    fseek(privKeyFile, 0, SEEK_SET);
+
+    auto privKeyBuff = (unsigned char*)malloc(privKeyFileSize);
+    fread(privKeyBuff, privKeyFileSize, 1, privKeyFile);
+    fclose(privKeyFile);
+
+    auto privKeyData = CFDataCreate(kCFAllocatorDefault, privKeyBuff, privKeyFileSize);
+    free(privKeyBuff);
+
+    auto privKeyParams = CFDictionaryCreateMutable(kCFAllocatorDefault, 2, nullptr, nullptr);
+    CFDictionaryAddValue(privKeyParams, kSecAttrKeyType, kSecAttrKeyTypeRSA);
+    CFDictionaryAddValue(privKeyParams, kSecAttrKeyClass, kSecAttrKeyClassPrivate);
+
+    CFErrorRef err = nullptr;
+    auto privKey = SecKeyCreateFromData(privKeyParams, privKeyData, &err);
+
+    // Create public key from DER file.
+    auto pubKeyFile = fopen("pub.der", "r");
+    fseek(pubKeyFile, 0, SEEK_END);
+    size_t pubKeyFileSize = ftell(pubKeyFile);
+    fseek(pubKeyFile, 0, SEEK_SET);
+
+    auto pubKeyBuff = (unsigned char*)malloc(pubKeyFileSize);
+    fread(pubKeyBuff, pubKeyFileSize, 1, pubKeyFile);
+    fclose(pubKeyFile);
+
+    auto pubKeyData = CFDataCreate(kCFAllocatorDefault, pubKeyBuff, pubKeyFileSize);
+    free(pubKeyBuff);
+
+    auto pubKeyParams = CFDictionaryCreateMutable(kCFAllocatorDefault, 2, nullptr, nullptr);
+    CFDictionaryAddValue(pubKeyParams, kSecAttrKeyType, kSecAttrKeyTypeRSA);
+    CFDictionaryAddValue(pubKeyParams, kSecAttrKeyClass, kSecAttrKeyClassPublic);
+
+    auto pubKey = SecKeyCreateFromData(pubKeyParams, pubKeyData, &err);
+
+    return 0;
+}
+[14.09.21 10:19:09] royal: The keys were created without errors.
+[14.09.21 10:19:46] kermit: did you test with my key?
+[14.09.21 10:20:07] royal: I tested with key I created by cyptosign
+[14.09.21 10:20:23] royal: I created PEM, converted it to der and tested it.
+[14.09.21 10:20:39] royal: I did everything with cryptosign.
+[14.09.21 10:20:45] kermit: so my key was created by converting from pem to der with cryptosign
+[14.09.21 10:20:57] royal: Mine too.
+[14.09.21 10:21:04] kermit: try to create my key
+[14.09.21 10:21:53] royal: Which one is cryptosign_priv or priv?
+[14.09.21 10:22:08] kermit: cryptosign_priv
+[14.09.21 10:22:14] royal: Either one should work, though.
+[14.09.21 10:26:03] royal: You won't believe it, it works.
+[14.09.21 10:26:29] royal: Both priv.der and cryptosign_priv.der
+[14.09.21 10:26:47] kermit: And how do you check?
+[14.09.21 10:27:23] royal: By variable that returns the key and by variable error.
+[14.09.21 10:27:39] kermit: strange
+[14.09.21 10:27:51] kermit: try my functions
+[14.09.21 10:28:20] kermit: this is bullshit
+[14.09.21 10:28:39] royal: https://developer.apple.com/forums/thread/100601
+[14.09.21 10:28:49] royal: Have you seen this?
+[14.09.21 10:30:08] kermit: don't remember. I defeated the bug through oppressl
+[14.09.21 10:30:52] royal: You use openssl for encryption?
+[14.09.21 10:31:03] royal: Does it count as part of the system?
+[14.09.21 10:31:31] kermit: I generate keys via openssl and that's it
+[14.09.21 10:32:19] royal: They must be the same, both via openssl and cryptosign.
+[14.09.21 10:32:45] kermit: i dumped it. there's only a few bytes difference
+[14.09.21 10:32:53] kermit: you can diff
+[14.09.21 10:33:14] royal: A few bytes difference doesn't matter, it's a negative number in some numbers, 00 in ASN1 encoding.
+[14.09.21 10:33:58] kermit: it's important for apple. i fucked with it for a long time in ecdsa at previous protocol
+[14.09.21 10:33:59] royal: And the encryption doesn't use numbers but arrays of bytes, it doesn't matter if the number is negative or not.
+[14.09.21 10:34:24] royal: I created your keys now.
+[14.09.21 14:51:08] kermit: what macOS do you have?
+[14.09.21 14:51:46] royal: The latest. 11.5.2
+[14.09.21 14:52:41] kermit: hmmm, okay. but it's not my latest
+[14.09.21 14:53:20] kermit: you can get admins access to macOS virtual machines.
+[14.09.21 14:53:44] royal: So use openssl for keys. They're compatible with cryptosign.
+[14.09.21 14:54:19] royal: There's no version of cryptosign for macOS anyway.
+[14.09.21 14:54:37] royal: The server also uses openssl for encryption.
+[14.09.21 14:54:57] kermit: ok
+[14.09.21 14:55:33] kermit: why didn't you get a regular lib for der conversion?
+[14.09.21 14:56:06] royal: You should have used only native Windows libraries.
+[14.09.21 14:56:57] royal: everything converts well there, I checked with openssl, why you got the problem.
+[14.09.21 14:59:43] royal: Plus I have all the keys created from der without any problems.
+[14.09.21 14:59:52] royal: Use openssl for now.
+[14.09.21 15:00:16] royal: Just check how server will work.
+[14.09.21 15:00:52] kermit: Repeat last 5 messages

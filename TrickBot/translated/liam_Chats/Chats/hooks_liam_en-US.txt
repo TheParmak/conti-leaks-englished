@@ -1,0 +1,265 @@
+[30.07.21 18:43:41] liam: Hi, need to connect to something?
+[05.08.21 10:04:30] liam: Why go out? And how to connect then )
+[05.08.21 10:05:07] hooks: everything will work
+[05.08.21 11:42:46] liam: Thank you)
+[06.08.21 09:23:15] hooks: Hi
+[06.08.21 09:50:35] liam: Hi
+[06.08.21 09:50:53] hooks: Do you have a toad?
+[06.08.21 09:52:01] liam: I don't know what it is
+[06.08.21 09:52:28] hooks: did you get a jabber account on our server?
+[06.08.21 09:56:08] liam: yes
+[06.08.21 09:56:10] liam: yeah.
+[06.08.21 09:56:13] liam: and what is it
+[06.08.21 09:56:32] hooks: I'll show you how to configure and connect
+[06.08.21 09:57:05] liam: I got another link
+[06.08.21 09:57:05] liam: https://gkipp4muy5josquz.onion/channel/general?msg=jpbs7sgYwiqkqzY7v
+[06.08.21 09:57:08] liam: this is what
+[06.08.21 09:57:12] liam: it won't open(
+[06.08.21 09:57:15] liam: come on
+[06.08.21 10:01:28] hooks: ``
+
+
+------------------ WINDA ----------------------------
+
+Go here https://www.torproject.org/download/tor/
+
+Download the WARNING Expert Bundle
+
+Unzip it, go to the Tor directory and run tor.exe
+
+After a few seconds will come to the words 100% Done - roll down this window and move on to the manual.
+
+-----------------------------------------------------
+
+Now you can specify a socket in jabber (you can also do it in your browser if you want)
+127.0.0.1:9050
+
+
+SETTING UP PSI+ JABBER WITH THOR
+
+Go to settings-accounts, add account
+
+Any name, you can insert a login, click Add
+
+The XMMP address is the login (along with the domain)
+The password is
+
+Go to the Connection tab
+Proxy server - Change button
+
+Click Create
+Type: Socks version 5
+Specify the server 127.0.0.1
+Port 9050
+
+Press Save
+
+Choose to Shift connection - Always
+Authenticate in plain text - If the connection is encrypted
+
+The rest of the settings are optional. That's it, save it, check it.
+
+AFTER THE FIRST ENTRY
+
+In the certificate warning, click Trust
+
+Then he will say that the profile is not filled in, enter in it only one field NICK - what you have before @ in the username (for example, if the username asd@dfg.ru, then the NICK is asd), do not invent their own nicknames, otherwise you can get confused.
+```
+[06.08.21 10:02:26] hooks: try it
+I'll help you if you have any questions
+[06.08.21 10:10:30] liam: I've got tor downloaded
+[06.08.21 10:10:56] hooks: jabber client take Psi+
+[06.08.21 10:11:05] hooks: download it and follow the instructions above
+[06.08.21 10:11:14] liam: I have psi+
+[06.08.21 10:11:40] hooks: here you go. I threw the instructions for it. Try
+Go to settings, connect socks under tor
+[06.08.21 10:14:58] liam: I have a jabber account connected there
+[06.08.21 10:15:45] hooks: Working?
+[06.08.21 10:15:50] liam: yes
+[06.08.21 10:16:17] liam: that's how I find someone
+[06.08.21 10:16:28] hooks: Ah, got it.
+[06.08.21 10:16:39] liam: I'll check if it works or not.
+[06.08.21 10:16:59] hooks: well, check with the person to add, their nickname
+[06.08.21 10:17:03] hooks: like me, sec.
+[06.08.21 10:17:50] hooks: https://privnote.com/15t8QQOp#JviYSQg6e
+[06.08.21 10:18:33] liam: what should I do with this link?
+[06.08.21 10:19:15] hooks: go to it. You'll see my toad there.
+[06.08.21 10:19:24] hooks: Add it to your contacts
+[06.08.21 10:19:44] liam: doc@6ub5waskpuglkrjbz5se23xushqvr3pgpseyetxiycjmp6h5gm6jrpad.onion
+[06.08.21 10:19:51] liam: where do I put it?
+[06.08.21 10:20:28] hooks: Right key in Psi+ on your nickname, then "Add a contact"
+[06.08.21 10:21:19] hooks: Put my jabber into XMPP Address field
+[06.08.21 10:21:22] hooks: And add
+[06.08.21 10:22:26] liam: I kind of sent the request
+[06.08.21 10:22:31] liam: don't know if it's right or not
+[06.08.21 10:22:35] liam: check
+[06.08.21 10:22:51] hooks: no
+[06.08.21 10:23:10] liam: it means I need to change some settings
+[06.08.21 10:23:26] hooks: You have yellow star next to your nickname, is it active?
+[06.08.21 10:23:35] liam: yes
+[06.08.21 10:24:04] hooks: your toad at the end what domain?
+[06.08.21 10:24:20] hooks: last characters before .onion
+[06.08.21 10:25:47] liam: how do I see that?
+[06.08.21 10:26:08] hooks: point mouse over your nickname, it will show
+[06.08.21 10:26:44] liam: it don't show me shit
+[06.08.21 10:26:47] liam: i'm on macbook
+[06.08.21 10:26:55] liam: I'm just getting a new computer
+[06.08.21 10:27:00] liam: it might be different for me
+[06.08.21 10:27:06] liam: I'm improvising here as best I can
+[06.08.21 10:27:15] hooks: no, same thing
+[06.08.21 10:27:26] liam: okay.
+[06.08.21 10:27:45] liam: liamneeson@jabber.ru
+[06.08.21 10:27:48] liam: I see this
+[06.08.21 10:27:54] liam: everything
+[06.08.21 10:28:00] hooks: that's not our toad
+[06.08.21 10:28:10] hooks: I asked if you got the toad
+[06.08.21 10:28:19] liam: i don't know
+[06.08.21 10:32:25] hooks: https://privnote.com/19ljEfCC#UXahewXUL
+
+here's your username and password
+[06.08.21 10:34:25] hooks: psi+ has a key icon at the top left
+next Accounts
+then Add, write any name you like, then put your login in the XMPP Address field
+and below is your password
+and then Save
+
+Then in Psi+ on this account that you created, right-click Status - Online
+It'll ask you for a certificate, you press Trust.
+[06.08.21 10:37:14] hooks: Did it work?
+[06.08.21 10:38:55] hooks: If not, check instructions I threw above
+[06.08.21 10:39:13] hooks: Let me know if you have any problems
+[06.08.21 10:40:34] liam: it just blinks and kind of connects
+[06.08.21 10:40:39] liam: but not connecting
+[06.08.21 10:40:55] hooks: restart Psi+
+[06.08.21 10:41:22] liam: same
+[06.08.21 10:41:45] hooks: ``
+Now you can specify socket in jabber (you can also do it in your browser if you want)
+127.0.0.1:9050
+
+
+SETTING UP PSI+ JABBER WITH THOR
+
+Go to settings-accounts, add account
+
+Any name, you can insert a login, click Add
+
+The XMMP address is the login (along with the domain)
+The password is
+
+Go to the Connection tab
+Proxy server - Change button
+
+Click Create
+Type: Socks version 5
+Specify the server 127.0.0.1
+Port 9050
+
+Press Save
+
+Choose to Shift connection - Always
+Authenticate in plain text - If the connection is encrypted
+
+The rest of the settings are optional. That's it, save it, check it.
+
+AFTER THE FIRST ENTRY
+
+In the certificate warning, click Trust
+
+Then he will say that the profile is not filled in, enter in it only one field NICK - what you have before @ in the username (for example, if the username asd@dfg.ru, then the NICK is asd), do not invent their own nicknames, otherwise you can get confused.
+```
+[06.08.21 10:41:50] hooks: did you do this part with the instructions?
+[06.08.21 10:42:23] liam: where's the connection tab
+[06.08.21 10:43:26] hooks: That's when I added my account. Now right click on your nickname - Modify Account
+[06.08.21 10:43:36] hooks: And there will be a tab Connection
+[06.08.21 10:47:45] liam: I created the connection settings, okay
+[06.08.21 10:47:56] liam: but it's not connecting again
+[06.08.21 10:48:15] hooks: restart Psi+
+[06.08.21 10:48:19] hooks: it should connect
+[06.08.21 10:48:20] liam: I already did.
+[06.08.21 10:48:22] liam: no
+[06.08.21 10:49:10] liam: probably have to delete first account
+[06.08.21 10:49:19] liam: though nothing should get in the way here
+[06.08.21 10:49:22] liam: but you should try
+[06.08.21 10:51:43] liam: maybe it's this socket 127.0.0.1:9050
+[06.08.21 10:51:47] liam: that's where to tell it
+[06.08.21 10:52:07] liam: or it's specified in the jabber account and you did it
+[06.08.21 11:10:57] liam: it just won't start
+[06.08.21 11:24:37] liam: a little more help when you come back?)
+[06.08.21 11:25:16] hooks: you have to specify socket
+[06.08.21 11:25:55] liam: which section?
+[06.08.21 11:26:46] hooks: Above in the instructions. Create Proxy Server
+Socks version 5...
+[06.08.21 11:30:37] liam: ah, I indicated there, yes
+[06.08.21 11:30:47] liam: in host
+[06.08.21 11:48:09] liam: maybe not there?
+[06.08.21 11:48:42] hooks: is tor browser enabled?
+[06.08.21 12:41:29] liam: I'm both with it on and off
+[06.08.21 12:41:35] liam: try again
+[06.08.21 12:42:55] liam: yes, not connecting
+[06.08.21 12:51:17] liam: Maybe delete everything and do it all from scratch?
+[06.08.21 12:51:28] liam: Or you can fix it
+[06.08.21 12:51:57] hooks: is tor service running?
+[06.08.21 12:52:07] liam: oh
+[06.08.21 12:52:08] hooks: psi+ should let traffic through tor
+[06.08.21 12:52:12] liam: which service?
+[06.08.21 12:52:14] liam: that's it
+[06.08.21 12:52:18] hooks: now
+[06.08.21 12:52:34] hooks: do you have a mac?
+[06.08.21 12:52:41] liam: yes
+[06.08.21 12:53:43] hooks: ``
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew install tor
+```
+write these two commands in the system's terminal
+[06.08.21 12:55:58] liam: wow.
+[06.08.21 12:56:13] liam: you're hacking me now
+[06.08.21 12:56:18] liam: oh what do I do
+[06.08.21 12:56:19] liam: ahah
+[06.08.21 12:56:25] hooks: )
+[06.08.21 12:56:35] liam: hey, don't smile so suspiciously
+[06.08.21 12:56:36] liam: ))))
+[06.08.21 12:56:38] liam: ahahaha
+[06.08.21 12:57:16] liam: well done
+[06.08.21 12:57:37] hooks: ``brew services start tor
+```
+[06.08.21 12:57:39] hooks: now this
+[06.08.21 12:57:46] hooks: and restart Psi+
+[06.08.21 12:57:56] liam: downloading comand lines for xcode?
+I uninstalled xcode.
+[06.08.21 12:58:04] liam: I only have visual studio
+[06.08.21 12:58:11] liam: I don't understand anything
+[06.08.21 12:59:21] liam: the terminal doesn't respond to this line
+[06.08.21 12:59:41] liam: some kind of update
+[06.08.21 13:06:05] liam: so something happened but I don't know if I should close the terminal or not
+[06.08.21 13:07:08] liam: oh, scary
+[06.08.21 13:07:14] liam: something is downloading
+[06.08.21 13:08:52] liam: Service `tor` already started, use `brew services restart tor` to restart.
+Roman@macs-MacBook-Pro ~ %
+[06.08.21 13:08:54] liam: like this
+[06.08.21 13:08:58] liam: seems to work
+[06.08.21 13:09:02] liam: check
+[06.08.21 13:09:06] hooks: yeah
+[06.08.21 13:09:39] liam: ooh
+[06.08.21 13:09:40] liam: yes
+[06.08.21 13:09:45] liam: it worked
+[06.08.21 13:09:49] liam: but it was scary
+[06.08.21 13:09:50] hooks: did Psi+ connect?
+[06.08.21 13:09:54] liam: look at me
+[06.08.21 13:10:05] liam: I'm getting better at coding
+[06.08.21 13:10:07] liam: that's it
+[06.08.21 13:10:16] liam: you won't pump me up
+[06.08.21 13:10:31] liam: tomorrow I'll turn on my computer and it's not my computer, yeah
+[06.08.21 13:10:32] liam: yes?
+[06.08.21 13:10:34] liam: Ahhah
+[06.08.21 13:10:43] liam: Yeah, it's up and running
+[06.08.21 13:10:53] hooks: These are common commands for MacOS
+[06.08.21 13:10:58] hooks: No need to worry)
+[06.08.21 13:10:58] liam: liam@6ub5waskpuglkrjbz5se23xushqvr3pgpseyetxiycjmp6h5gm6jrpad.onion
+[06.08.21 13:11:08] hooks: great. I'll add it now.
+[06.08.21 13:11:09] liam: find me add
+[06.08.21 13:11:11] liam: check it out
+[06.08.21 13:11:27] hooks: added
+[09.12.21 09:36:20] liam: hi]
+[09.12.21 09:37:28] liam: I put a new disk on my macbook and I need to reinstall apps on it and I was looking for how to install rockchat and what else I had
+ So it was psi.

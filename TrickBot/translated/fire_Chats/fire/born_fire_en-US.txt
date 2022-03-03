@@ -1,0 +1,829 @@
+[15.07.21 15:06:46] born: hi, I'm writing a parser here. I haven't contacted you yet, but I was just told that you're my teammate) I mostly sit with the major in chat)
+[15.07.21 15:06:59] born: if anything, I'm on the line.)
+[15.07.21 15:31:20] fire: Hi.)
+[15.07.21 15:31:27] fire: you work with aspen?
+[15.07.21 15:31:53] born: roughly speaking yes) but at the moment I'm working on the database
+[15.07.21 15:32:18] fire: got it
+[15.07.21 15:32:42] fire: when you're done with parser, write and I'll give you the firm and the template
+[15.07.21 15:32:46] fire: :)
+[15.07.21 15:32:55] born: ok)
+[15.07.21 16:48:33] born: listen, do you know anything about python?
+[15.07.21 16:48:41] born: I have a bug in my code and I can't figure out where
+[15.07.21 16:48:42] fire: no
+[15.07.21 16:48:47] fire: not familiar at all)
+[15.07.21 16:48:53] born: okay.)
+[15.07.21 16:49:03] born: the problem is in line limitation)
+[15.07.21 16:49:10] born: some part is parsed
+[15.07.21 16:49:24] born: I'll look for it)
+[15.07.21 16:49:40] fire: aren't there any special checkers?
+[15.07.21 16:49:53] fire: like Dreamweaver for html
+[15.07.21 16:50:12] born: there are checkers for file size, for example, but my file size is all right
+[15.07.21 16:50:19] fire: Ah, got it.
+[15.07.21 16:50:35] born: I'll try to check your database logs.)
+[15.07.21 16:50:39] fire: you can just run html for errors, with this sign)
+[15.07.21 16:50:55] born: ah, well, xtml yes) and here dumps txt
+[15.07.21 16:51:05] fire: Mm-hmm.)
+[16.07.21 12:12:15] born: hi) Sorry, there was a little confusion, mayor said that while I work with him, and you have your own work front)
+[16.07.21 12:12:39] fire: No problem)
+[16.07.21 12:13:04] fire: If you need something in English, write to me.
+[16.07.21 12:13:11] born: ooh, cool.)
+[16.07.21 12:13:20] born: thanks.)
+[16.07.21 12:13:25] born: I have intermediate
+[16.07.21 12:13:31] born: but I want to get it up)
+[09.08.21 09:56:42] born: hi
+[09.08.21 09:56:46] born: you need a parser
+[09.08.21 09:57:04] fire: hi)
+[09.08.21 09:57:05] fire: yes
+[09.08.21 09:57:07] born: you can show me an example of dade, and tell me what you need from the parser
+[09.08.21 09:57:11] fire: I'll show you.
+[09.08.21 09:57:36] fire: look, the point is this: I'm going through the ad_users files, and I need to pull certain strings from them
+In particular, I'd like the output to look like this:
+
+>objectClass:
+>cn:
+>sn:
+>c:
+>l:
+>st:
+>title:
+>postalCode:
+>displayName:
+VOIP:
+>co:
+>department:
+>proxyAddresses:
+>streetAddress:
+>name:
+>objectGUID:
+>homeDirectory:
+>homeDrive:
+>userPrincipalName:
+>mail:
+>mobile:
+>mailNickname:
+>msExchAuditDelegate:
+
+*********************************
+
+>objectClass:
+>cn:
+>sn:
+>c:
+>l:
+>st:
+>title:
+>postalCode:
+>displayName:
+VOIP:
+>co:
+>department:
+>proxyAddresses:
+>streetAddress:
+>name:
+>objectGUID:
+>homeDirectory:
+>homeDrive:
+>userPrincipalName:
+>mail:
+>mobile:
+>mailNickname:
+>msExchAuditDelegate:
+
+*********************************
+etc.
+[09.08.21 09:58:40] born: ``
+    objectClass:
+
+    cn:
+
+    sn:
+
+    c:
+
+    l:
+
+    st:
+
+    title:
+
+    postalCode:
+
+    displayName:
+
+VOIP:
+
+    co:
+
+    department:
+
+    proxyAddresses:
+
+    streetAddress:
+
+    name:
+
+    objectGUID:
+
+    homeDirectory:
+
+    homeDrive:
+
+    userPrincipalName:
+
+    mail:
+
+    mobile:
+
+    mailNickname:
+
+    msExchAuditDelegate:
+
+*********************************
+```
+[09.08.21 09:58:45] born: this is the full output?
+[09.08.21 09:58:48] born: from parser
+[09.08.21 09:59:07] fire: >objectClass: person
+ >cn: Tim Anderson
+ >sn: Tarwud Anders
+ >c: US
+ >l: Chayenne
+ >st: WY
+ >title: IT Infrastructure Manager
+ >postalCode: 82001
+ >displayName: Tim Anderson Termed
+ >VOIP: 99957
+ >co: United States
+ >department: Information Technology
+ >proxyAddresses: SMTP:tim.anderson1@wvmb.com
+ > streetAddress: 222 E 18th St.
+ > name: Tim Anderson
+ >objectGUID: {EC086ACA-6865-44C3-AD34-DB8C82EB8A70}
+ >homeDirectory: \\WY-FS01\home\it\tanderson
+ >homeDrive: P:
+ >userPrincipalName: tanderson@wvintra.com
+ >mail: tim.anderson1@wvmb.com
+ >mobile: 307-421-1547
+ >mailNickname: tim.anderson
+ >msExchAuditDelegate: 1533t
+[09.08.21 09:59:16] fire: here is a sample output
+[09.08.21 09:59:34] fire: in general, all these lines are not always there, if some are missing - not critical, but the order of appearance is correct
+the person block starts with >objectClass:, ends with >msExchAuditDelegate: - these two lines always exist
+that's it)
+and a separator between the blocks to show who's who
+[09.08.21 10:00:04] born: so we just parse everything from ad_users in normal order, right?
+[09.08.21 10:00:23] born: do you want it exactly like this or can you use a table as an example?
+[09.08.21 10:00:28] fire: there are a lot of people in the file)
+[09.08.21 10:00:29] fire: people
+[09.08.21 10:00:32] fire: yes
+[09.08.21 10:00:44] fire: I don't really care, just cut off the unnecessary data
+[09.08.21 10:00:56] born: I have a parser in python
+[09.08.21 10:01:03] born: it pretty much cuts off all data
+[09.08.21 10:01:10] born: just writes to the database instead of output
+[09.08.21 10:01:16] fire: I was looking at it, I thought about trying to write it myself, but I don't know enough
+[09.08.21 10:01:21] fire: I can use a table
+[09.08.21 10:01:41] fire: the main thing is to keep your results in order
+[09.08.21 10:02:21] fire: and, if it's possible - to save results from one file to one table, not so that 1 person-1 file
+[09.08.21 10:02:34] fire: because that would make it even harder
+[09.08.21 10:03:03] born: tex, when do you need it?
+[09.08.21 10:04:05] fire: well, whenever it's convenient, I'm still doing it by hand
+it's just faster.
+[09.08.21 10:04:31] born: I'll try to make a table with the main data
+[09.08.21 10:04:35] born: I'll think of something
+[09.08.21 10:05:00] born: there's a whole division already there, the problem with making one table is that all users have different columns
+[09.08.21 10:05:04] born: I just worked with them already
+[09.08.21 10:05:17] born: my entry didn't depend on the number of columns
+[09.08.21 10:05:31] born: these are the columns that you have now in your example are the main ones?
+[09.08.21 10:05:48] fire: yes, but not everyone has them
+[09.08.21 10:05:55] born: yes
+[09.08.21 10:06:07] fire: some people don't have voip fields, some people have addresses
+[09.08.21 10:06:07] fire: etc.
+[09.08.21 10:06:49] fire: but in general, besides the others you don't need lines on the thread
+[09.08.21 10:07:37] born: I'll try to adapt it to your needs, and when I get something, I'll let you know
+[09.08.21 10:08:19] fire: ok
+[09.08.21 10:08:19] fire: thanks a lot!
+[09.08.21 10:08:41] born: you know what option is for you
+[09.08.21 10:08:53] born: that would work right now
+[09.08.21 10:09:14] born: and for local solution and automation will work
+[09.08.21 10:10:30] born: you can install mongodb, use my script and upload data there, it's ready to work. mongodb is easy to connect, no problem. Then, you use the script to populate the data there, the table will be created automatically
+[09.08.21 10:10:46] born: you'll have a local database with ad_users for each company
+[09.08.21 10:10:54] born: whatever you want
+[09.08.21 10:11:07] born: and you can get the table yourself
+[09.08.21 10:11:10] born: from there
+[09.08.21 10:11:22] born: for each company
+[09.08.21 10:12:09] born: it's just a working solution and there's no problem with it, it's already been run through
+[09.08.21 10:12:24] born: I can walk you through the process if you want
+[09.08.21 10:12:43] born: once you learn, it'll work all the time
+[09.08.21 10:14:24] fire: great, let's try it
+[09.08.21 10:14:38] fire: I'll set it up later
+[09.08.21 10:14:46] born: I'll send you links to put it in
+[09.08.21 10:14:54] fire: okay
+[09.08.21 10:15:26] born: you already ran any scripts on the machine7
+[09.08.21 10:15:27] born: ?
+[09.08.21 10:16:04] fire: in general or specifically on this one?
+[09.08.21 10:16:12] born: specifically this one
+[09.08.21 10:16:17] fire: this one's empty, I haven't even put python in yet
+[09.08.21 10:16:25] born: just if not, you'll need to allow scripts to run if not already allowed
+[09.08.21 10:16:30] born: ah
+[09.08.21 10:16:37] born: well, here we go.
+[09.08.21 10:16:42] fire: okay.
+[09.08.21 10:17:54] born: https://www.mongodb.com/try/download/community base, choose a platform there on the right and done
+[09.08.21 10:18:43] born: https://www.mongodb.com/try/download/compass client for nice base access
+[09.08.21 10:19:04] born: these are all local solutions, so it's safe if anything
+[09.08.21 10:21:07] born: when you're ready, let me know and we'll check it out
+[09.08.21 10:33:45] fire: good
+[09.08.21 15:21:36] fire: knock knock.)
+[09.08.21 15:21:40] fire: I'm here
+[09.08.21 15:21:58] born: great
+[09.08.21 15:22:05] born: put mongo
+[09.08.21 15:22:14] born: I'll send you the script
+[09.08.21 15:22:22] born: you can open it and see how it works
+[09.08.21 15:22:23] fire: yeah, I'm on it
+[09.08.21 15:23:08] born: what's your operating system?
+[09.08.21 15:23:15] fire: wine
+[09.08.21 15:23:24] born: ah, I wrote for ubuntu
+[09.08.21 15:23:33] born: whatever
+[09.08.21 15:23:41] born: you just set the path to python at the beginning
+[09.08.21 15:23:48] fire: well, if it's a client, then yes, it should make no difference)
+[09.08.21 15:23:56] fire: python will also
+[09.08.21 15:24:04] born: yeah, whatever)
+[09.08.21 15:25:51] born: Download: https://qaz.im/load/3F4NnG/sQeNRB
+Delete: https://qaz.im/index.php?a=delete&q=629705665
+Password: FKdARbTk64EbS9NBybtSe4fNN7fDGy9b7bBNeh399taR
+[09.08.21 15:26:14] born: parser is not complex by itself, originally planned to set everything from outside of cmd
+[09.08.21 15:26:31] born: but it went wrong, I didn't fix it, I just threw the list of directories manually
+[09.08.21 15:26:43] fire: I'll check it now)
+[09.08.21 15:28:09] born: you should have a passwordless mongo on your site, you can comment the password part there
+[09.08.21 15:28:41] born: in general, everything should be clear there, I left comments wherever
+[09.08.21 15:29:38] born: it accepts user and password if you want, you can also manually insert directory list from dump and it will parse from each directory
+[09.08.21 15:30:11] fire: wait wait wait wait)
+[09.08.21 15:30:17] born: ok)
+[09.08.21 15:30:26] born: I'm just writing for the introductory purposes)
+[09.08.21 15:31:40] born: the script parses about 97% of files, there are problematic ones, that have some more mistakes, or if the file is too big, there's a limit of 18 mb per monge file, almost all files are smaller in size
+[09.08.21 15:35:30] fire: when installing, do you select run service as a local user?
+[09.08.21 15:35:40] born: yes
+[09.08.21 15:36:01] born: did you download the parser yet?
+[09.08.21 15:36:16] fire: not yet, I'm still setting it up
+[09.08.21 15:36:27] fire: Vpn's a little slow, it downloads slowly
+[09.08.21 15:36:36] born: it's okay.)
+[09.08.21 15:40:20] fire: writes
+
+the domain, user name and/or password are icorrect
+[09.08.21 15:40:26] fire: during installation
+[09.08.21 15:40:40] born: now sec
+[09.08.21 15:42:42] born: try without local user
+[09.08.21 15:43:20] fire: ++
+[09.08.21 15:43:37] fire: it is set
+[09.08.21 15:44:03] born: okay
+[09.08.21 15:44:08] born: compass will install quickly
+[09.08.21 15:44:22] fire: it's going in right away
+[09.08.21 15:44:22] born: shouldn't be hard to do
+[09.08.21 15:44:33] born: okay
+[09.08.21 15:44:36] born: it took me a while
+[09.08.21 15:44:45] born: must have been a different version
+[09.08.21 15:44:48] fire: they must have updated the installer)
+[09.08.21 15:44:52] born: yeah
+[09.08.21 15:53:49] fire: okay, it's up
+[09.08.21 15:53:55] fire: compass is running
+[09.08.21 15:54:13] born: compass is pretty easy to set up
+[09.08.21 15:54:19] born: just type in localhost
+[09.08.21 15:54:23] born: 27017 port
+[09.08.21 15:54:25] born: and user admin
+[09.08.21 15:54:32] born: no password
+[09.08.21 15:54:39] born: put the same into the script
+[09.08.21 15:54:44] born: and pymongo will connect
+[09.08.21 15:54:46] fire: I didn't put anything in
+[09.08.21 15:54:54] born: it was already there by default
+[09.08.21 15:54:54] fire: pressed connect, it worked
+[09.08.21 15:54:59] fire: yes
+[09.08.21 15:55:06] born: have you downloaded the script yet?
+[09.08.21 15:57:30] fire: yes
+[09.08.21 15:58:05] born: is python already installed?
+[09.08.21 15:58:21] born: add libraries from the script to it
+[09.08.21 15:58:39] fire: yes
+[09.08.21 15:58:45] born: ok
+[09.08.21 16:03:58] fire: put python
+[09.08.21 16:04:17] born: install libraries from the script
+[09.08.21 16:04:22] born: then you can run it
+[09.08.21 16:05:07] born: you must know how to run it
+[09.08.21 16:05:22] fire: let's see)
+[09.08.21 16:05:30] born: I don't know how your dumps are stored, but you should check your script and you'll understand everything)
+[09.08.21 16:05:50] fire: they're just on the desktop
+[09.08.21 16:05:54] fire: XD
+[09.08.21 16:06:07] born: well, we'll just have to point the way)
+[09.08.21 16:06:12] born: see what he takes at the beginning
+[09.08.21 16:06:22] fire: now, sec
+[09.08.21 16:06:33] born: the root directory, then the directories where the files are, and refers to the file itself in the directory
+[09.08.21 16:07:16] born: so in the script you have to enter the beginning of the path, then the folders with the IPs, at least that's how it was for me, and there apply to the file name
+[09.08.21 16:07:19] born: that's all in principle
+[09.08.21 16:07:34] fire: I'll look into it
+[09.08.21 16:07:43] fire: I'll let you know if there's anything.)
+[09.08.21 16:07:48] born: okay)
+[10.08.21 06:41:41] born: Hey, what's up? Did you get the script?
+[10.08.21 08:39:14] fire: haven't figured it out yet)
+[10.08.21 08:39:18] fire: I got a lot of work to do.
+[10.08.21 08:39:23] fire: good morning)
+[10.08.21 08:39:34] born: good morning))
+[10.08.21 08:39:40] born: okay then)
+[24.01.22 18:56:41] born: hello
+[24.01.22 18:56:46] born: here?
+[24.01.22 18:57:26] fire: hi
+[24.01.22 18:57:29] fire: yes, of course
+[24.01.22 18:57:33] born: go ahead.)
+[24.01.22 18:57:58] fire: +++
+[24.01.22 18:58:14] fire: now, 5 min, go away
+[24.01.22 18:58:17] fire: sorry)
+[24.01.22 18:58:21] born: I was a development teammate at the end of December) major on vacation, did not say when it comes out?)
+[24.01.22 18:58:24] born: yeah ok
+[24.01.22 19:05:18] fire: ooh graz)
+[24.01.22 19:05:21] fire: no, he didn't
+[24.01.22 19:05:28] fire: myself three days as from vacation)
+[24.01.22 19:05:40] born: aah) thanks) and welcome back)
+[24.01.22 19:06:03] born: and do not know who he connects to the servers, if you need to extend or to buy?
+[24.01.22 19:06:17] fire: I don't know that one
+[24.01.22 19:06:29] fire: he does it in another chat
+[24.01.22 19:06:34] born: we have a bug-bubble, and we can not solve it because no one admits who's administering the server
+[24.01.22 19:06:35] fire: another rocket
+[24.01.22 19:06:50] born: lv?
+[24.01.22 19:06:54] fire: in
+[24.01.22 19:07:14] born: in another rocket it is clear, but what nickname is this guy?
+[24.01.22 19:07:25] born: he was asked back and forth, I don't know who's holding
+[24.01.22 19:07:34] fire: vaccine
+[24.01.22 19:07:40] fire: previously
+[24.01.22 19:07:41] fire: )
+[24.01.22 19:07:42] born: oh, thank you
+[24.01.22 19:08:04] fire: always a pleasure)
+[24.01.22 19:08:38] born: listen, what's your functionality?)
+[24.01.22 19:08:46] born: do you find data?
+[24.01.22 19:14:48] fire: look at the date
+[24.01.22 19:14:56] fire: compiling reports on campaigns
+[24.01.22 19:15:22] fire: well, contacts - domains/subdomains
+[24.01.22 19:15:22] fire: general info
+[24.01.22 19:15:31] fire: the date is more on me and the other guy
+[24.01.22 19:15:37] fire: nobody else
+[24.01.22 19:15:45] born: you had a company like amtechcorp?
+[24.01.22 19:15:51] fire: hmmmm
+[24.01.22 19:16:00] fire: can you tell me when?
+[24.01.22 19:16:06] born: I just got it on a server that's locked
+[24.01.22 19:16:22] born: I got it in the fall or close to winter
+[24.01.22 19:16:24] born: something like that
+[24.01.22 19:16:27] fire: ooh
+[24.01.22 19:16:31] fire: I'm not sure
+[24.01.22 19:16:34] fire: let me see
+[24.01.22 19:17:05] fire: no, there isn't one
+[24.01.22 19:17:21] fire: I don't really understand.)
+we do and we do
+[24.01.22 19:17:23] fire: ahah
+[24.01.22 19:17:31] fire: nobody needs them in particular)
+[24.01.22 19:17:34] born: ahah
+[24.01.22 19:17:38] born: you need them)
+[24.01.22 19:17:50] born: just haven't got the platform under them yet)
+[24.01.22 19:17:52] fire: at least once they were picked up:grinning:
+[24.01.22 19:17:55] fire: ahah
+[24.01.22 19:18:01] fire: there must be 60 pieces already
+[24.01.22 19:18:04] born: i think i'll take them later]
+[24.01.22 19:18:09] fire: ok)
+[24.01.22 19:18:23] born: you know what mine are working on?)
+[24.01.22 19:18:28] born: we're working on the same thing)
+[24.01.22 19:18:32] fire: well, I guess)
+[24.01.22 19:18:34] born: just different planes
+[24.01.22 19:18:34] fire: yes)
+[24.01.22 19:18:42] born: well)
+[24.01.22 19:18:56] born: we're about to test an analytical system)
+[24.01.22 19:19:04] born: but there's a bug)
+[24.01.22 19:19:10] born: the server got jammed)
+[24.01.22 19:19:12] born: by accident)
+[24.01.22 19:19:18] born: during a security upgrade)
+[24.01.22 19:19:32] fire: :grinning:
+[24.01.22 19:19:40] fire: maybe vaccine is aware, yes
+[24.01.22 19:19:43] fire: have to ask
+[24.01.22 19:19:48] fire: 75 companies
+[24.01.22 19:19:51] fire: on the list
+[24.01.22 19:19:55] fire: )))
+[24.01.22 19:19:56] born: nichosi)
+[24.01.22 19:20:00] born: cool)
+[24.01.22 19:20:04] fire: well, we're working)
+[24.01.22 19:20:29] born: what about your salary?) may I ask?)
+[24.01.22 19:20:36] born: so to speak without extra ears)
+[24.01.22 19:20:57] born: I'll tell you mine)
+[24.01.22 19:21:06] fire: 3k for the osint
+[24.01.22 19:21:27] born: do you have any other projects?)
+[24.01.22 19:21:32] fire: yes)
+[24.01.22 19:21:38] fire: there's much more of course
+[24.01.22 19:21:39] born: wow cool)
+[24.01.22 19:21:59] fire: I'm not only doing aspen here
+[24.01.22 19:22:00] fire: ))
+[24.01.22 19:22:03] born: i didn't know it happens that way) until i met teamleaders)
+[24.01.22 19:22:12] fire: ahah
+[24.01.22 19:22:20] fire: 3k is a lot?
+[24.01.22 19:22:22] born: i got 2.5k for a data engineer
+[24.01.22 19:22:26] fire: wow
+[24.01.22 19:22:28] fire: not enough
+[24.01.22 19:22:43] born: are we talking about bucks?)
+[24.01.22 19:22:48] fire: I was doing about 2.5-3 transfers a month before that
+[24.01.22 19:22:50] fire: sure
+[24.01.22 19:23:04] fire: it would be strange to work here for 3k rubles)
+[24.01.22 19:23:06] born: by transfers how?
+[24.01.22 19:23:10] fire: no
+[24.01.22 19:23:17] fire: I'm a translator
+[24.01.22 19:23:20] fire: professional
+[24.01.22 19:23:37] born: well, I understand.)
+[24.01.22 19:23:47] born: I don't know how much I can ask for a team player
+[24.01.22 19:23:59] born: I was just appointed, and I still haven't had time to talk about money
+[24.01.22 19:24:03] born: because the major is on vacation
+[24.01.22 19:24:04] fire: I get 3 as a team leader
+[24.01.22 19:24:10] fire: before that, 2 was paid
+[24.01.22 19:24:21] fire: I was just working at osint
+[24.01.22 19:24:43] born: well, I guess I can't say, you pay me 2.5 for an engineer, add another 3
+[24.01.22 19:24:46] born: xDD
+[24.01.22 19:24:48] fire: ahah!
+[24.01.22 19:24:49] fire: no
+[24.01.22 19:24:53] fire: three in general)
+[24.01.22 19:24:59] fire: a buck thrown in)
+[24.01.22 19:25:12] born: well, I was thinking to ask for 3.5 too
+[24.01.22 19:25:23] born: with a prospect to go up to 4 by the end of the year
+[24.01.22 19:25:28] fire: yeah, that's good)
+[24.01.22 19:25:29] born: with progress
+[24.01.22 19:25:41] born: ooh) better already)
+[24.01.22 19:25:52] born: you usually can't get an expert opinion about this
+[24.01.22 19:25:54] born: xDD
+[24.01.22 19:25:58] fire: ahah
+[24.01.22 19:25:59] fire: yes
+[24.01.22 19:26:07] fire: everybody gets differently)
+[24.01.22 19:26:45] born: I chat with admins, they say they pay 100k rubles to some people
+[24.01.22 19:26:54] born: well, of course, everyone has different ways)
+[24.01.22 19:27:37] born: okay, well, thanks for the nice talk)
+[24.01.22 19:27:44] fire: come on!)
+[24.01.22 19:27:49] fire: I'm always here)
+[24.01.22 19:27:57] fire: during working hours)
+[24.01.22 19:28:02] fire: Mutual!
+[24.01.22 19:28:03] born: for sure)
+[25.01.22 14:26:53] fire: hi there?
+[25.01.22 14:27:24] born: otp
+[25.01.22 14:27:26] born: hi
+[25.01.22 14:27:40] born: repeat please
+[25.01.22 14:27:48] fire: hi)
+[25.01.22 14:27:55] born: ah) hi)
+[25.01.22 14:28:00] fire: wanted to ask, by the toads' shares also to you?
+[25.01.22 14:28:12] born: on toad sticks to hooks
+[25.01.22 14:28:16] born: but he rarely visits
+[25.01.22 14:28:19] fire: got it
+[25.01.22 14:28:26] born: I call him through frans or major
+[25.01.22 14:28:28] fire: what if you register via psi?
+[25.01.22 14:28:39] born: he gives me a crietype
+[25.01.22 14:28:44] born: all toads
+[25.01.22 14:28:45] born: s
+[25.01.22 14:28:49] fire: got it!
+[25.01.22 14:28:52] fire: sorry(
+[25.01.22 14:28:55] fire: wait for)
+[25.01.22 14:28:56] born: yeah)
+[25.01.22 14:29:05] born: I'm already in line for it)
+[25.01.22 14:29:14] born: he should help me with bridges)
+[25.01.22 14:29:20] born: flew away, but promised to come back
+[25.01.22 14:29:22] born: xDD
+[25.01.22 14:29:27] born: carlson incarnate
+[25.01.22 14:29:31] fire: :grinning:
+[27.01.22 10:22:10] born: bro hi
+[27.01.22 10:22:13] born: go away
+[27.01.22 17:45:33] born: here?
+[27.01.22 18:01:55] fire: yes
+[27.01.22 18:02:34] born: go away
+[27.01.22 18:03:01] born: tell me, have you ever had a coworker that was no good at all?
+[27.01.22 18:03:08] fire: yes
+[27.01.22 18:03:16] fire: they get kicked out)
+[27.01.22 18:03:19] born: they took him, he works, but he'd better not work)
+[27.01.22 18:03:25] fire: Or he could teach.)
+[27.01.22 18:03:35] born: that's the question
+[27.01.22 18:03:39] born: I don't know what to do with it)
+[27.01.22 18:03:45] born: throw him out to the French?)
+[27.01.22 18:04:05] born: he is a complete novice, though he acted like an experienced at the interview
+[27.01.22 18:04:17] fire: so tell him
+[27.01.22 18:04:21] fire: like what the fuck
+[27.01.22 18:04:30] fire: if you're sorry give me time
+[27.01.22 18:04:39] born: he's been on his ass for three months
+[27.01.22 18:04:45] born: I think he's had enough time
+[27.01.22 18:04:49] fire: moreover
+[27.01.22 18:04:49] born: nowhere
+[27.01.22 18:04:54] fire: just inform Franz
+[27.01.22 18:05:03] fire: you don't need him
+[27.01.22 18:05:11] fire: newbies are all alike
+[27.01.22 18:05:21] fire: someone wants to learn, someone does not
+[27.01.22 18:05:23] born: yeah, I was thinking the same thing
+[27.01.22 18:05:40] born: he's just cryptic, pretending he knows something, but it's obvious he can't do anything
+[27.01.22 18:05:42] born: no results from him
+[27.01.22 18:06:11] fire: dismiss him
+[27.01.22 18:06:59] born: yeah, I get it. I just wanted to know how we deal with such situations here in general
+[27.01.22 18:07:09] born: what I can, what I can't, etc.
+[27.01.22 18:07:14] born: now I get it
+[27.01.22 18:10:28] fire: you just tell Franz first
+[27.01.22 18:10:46] born: yeah
+[27.01.22 18:10:51] born: I'm on it
+[27.01.22 18:11:06] fire: I got two gone
+[27.01.22 18:11:12] fire: one couldn't work
+[27.01.22 18:11:16] fire: the second one just disappeared
+[27.01.22 18:11:30] born: on this project?
+[27.01.22 18:11:34] born: or in general
+[27.01.22 18:11:35] fire: yes
+[27.01.22 18:11:40] fire: on this project
+[27.01.22 18:11:48] born: I've noticed there's a fuckload of people here, but only a few online
+[27.01.22 18:11:50] born: xDD
+[27.01.22 18:12:02] fire: I've kicked the crap out of projects and online
+[27.01.22 18:12:13] born: yeah, I know
+[27.01.22 18:12:27] born: sometimes you have to make such decisions
+[27.01.22 18:12:44] fire: otherwise there's no way
+[27.01.22 18:12:45] fire: yes
+[27.01.22 18:13:08] born: but I'm thinking to bring him out into the open, talk to Frans about lowering his salary if he agrees and think how to work with him if he wants to stay at all
+[27.01.22 18:13:40] fire: that's possible
+[27.01.22 18:13:50] born: if he really wants to learn and won't bullshit for nothing
+[27.01.22 18:13:53] fire: but then set specific conditions and limits
+[27.01.22 18:14:03] fire: and at the first error you're out
+[27.01.22 18:14:18] fire: this job is a fucking good chance
+[27.01.22 18:14:31] fire: better to go to a reasonable person
+[27.01.22 18:14:39] born: yes, i agree
+[27.01.22 21:00:08] born: bro
+[27.01.22 21:00:18] born: sorry, I got kicked out again
+[27.01.22 21:00:50] fire: ++
+[27.01.22 21:01:03] born: tell me, do you have no connection to vaccine ?
+[27.01.22 21:01:09] fire: yes
+[27.01.22 21:01:15] born: oh
+[27.01.22 21:01:19] fire: in the rocket)
+[27.01.22 21:01:31] born: we need to know if there are servers behind it
+[27.01.22 21:01:34] born: or not
+[27.01.22 21:01:41] born: whether he has admin
+[27.01.22 21:01:43] fire: so ask)
+[27.01.22 21:01:51] fire: or you mean what servers?
+[27.01.22 21:01:56] born: about mine
+[27.01.22 21:02:00] born: for development
+[27.01.22 21:02:04] born: for tests and stuff
+[27.01.22 21:02:08] fire: ah
+[27.01.22 21:02:18] fire: it's probably easier to write it yourself
+[27.01.22 21:02:20] fire: him
+[27.01.22 21:02:27] born: where can I get it?
+[27.01.22 21:02:28] fire: I dunno how to explain)
+[27.01.22 21:02:32] fire: in that rocket
+[27.01.22 21:02:38] fire: you asked me)
+[27.01.22 21:02:40] born: I only have this rocket
+[27.01.22 21:02:48] born: they didn't give me any more
+[27.01.22 21:02:52] fire: oh man
+[27.01.22 21:03:36] fire: I'll ask if he's here
+[27.01.22 21:03:49] born: ok
+[27.01.22 21:31:15] born: no answer?)
+[27.01.22 21:35:23] fire: nothing yet)
+[27.01.22 21:35:33] born: probably tomorrow)
+[27.01.22 21:35:40] fire: probably, yes
+[27.01.22 21:35:58] born: this guy is our obi-wan Kenobi
+[27.01.22 21:36:03] born: last hope )
+[27.01.22 21:36:08] fire: :grinning:
+[27.01.22 21:36:15] fire: don't count on it
+[27.01.22 21:36:24] fire: he owns servers for chorsa team
+[27.01.22 21:36:35] fire: major must have moved by others
+[27.01.22 21:36:49] born: we just can't find the ends
+[27.01.22 21:36:52] born: it's not clear who has the admin
+[27.01.22 21:36:56] fire: fuck
+[27.01.22 21:37:02] fire: only Major knows
+[27.01.22 21:37:06] born: yeah
+[27.01.22 21:37:07] fire: apparently)
+[27.01.22 21:37:11] fire: ok)
+[27.01.22 21:37:19] fire: go have a rest for today too
+[27.01.22 21:37:25] born: yeah, see you tomorrow)
+[27.01.22 21:37:30] fire: see you tomorrow)
+[28.01.22 12:23:03] born: hi
+[28.01.22 12:23:19] born: no news from vaccine?
+[28.01.22 12:26:09] fire: Nope.
+[28.01.22 12:26:15] fire: nothing yet
+[28.01.22 14:43:48] born: vaccine doesn't respond much, huh?)
+[28.01.22 14:44:08] fire: yeah
+[28.01.22 14:44:13] fire: once every 2 or 3 days)
+[28.01.22 14:45:16] born: I was told that someone had to update the servers, if they are still active this month
+[28.01.22 14:45:32] born: it must be someone who keeps them from the available communist comrades
+[28.01.22 14:45:48] born: comrades, so to speak
+[28.01.22 14:55:01] fire: yes, most likely)
+[28.01.22 14:55:49] born: by all available info, they already checked all admins in a regular admin chat and nobody is warned
+[28.01.22 14:55:56] born: there could be sylver
+[28.01.22 14:56:00] born: but sylver is on vacation
+[28.01.22 14:56:06] born: so he couldn't
+[28.01.22 14:56:21] born: and by all indications only the vaccinated remains
+[28.01.22 15:07:25] fire: well, he's not talking yet)
+[28.01.22 15:07:58] born: well, i'll just hope xD
+[28.01.22 19:08:23] fire: how do you think he knows?
+[28.01.22 19:08:31] fire: who has a server
+[28.01.22 19:08:52] born: no idea
+[28.01.22 19:08:57] born: you can try to ask
+[28.01.22 19:08:59] born: maybe he knows
+[28.01.22 19:09:02] fire: yfgbib djghjc
+[28.01.22 19:09:07] fire: write the question
+[28.01.22 19:09:10] fire: I will
+[28.01.22 19:09:33] born: I uz put ipi in the question?
+[28.01.22 19:09:49] fire: it takes me longer to explain
+[28.01.22 19:09:56] fire: hz, you can give me a prute
+[28.01.22 19:10:01] born: ok
+[28.01.22 19:11:44] born: who has an admin on these servers - 199.127.61.103 185.150.190.63 104.243.33.220 ? Should have been registered at the request of mayor'a.
+[28.01.22 19:11:48] born: something like this
+[28.01.22 19:11:53] born: only in that chat he's not the major
+[28.01.22 19:12:01] born: you can change it)
+[28.01.22 19:13:46] fire: so there are Horses here
+[28.01.22 19:13:51] fire: he will understand)
+[28.01.22 19:13:53] born: huh?
+[28.01.22 19:14:00] born: I didn't notice)
+[28.01.22 19:14:02] fire: hors
+[28.01.22 19:14:09] fire: he just rarely shows up
+[28.01.22 19:14:33] born: oh, I see
+[31.01.22 14:48:44] born: hi
+[31.01.22 14:48:51] born: no news there yet?)
+[01.02.22 18:51:31] fire: hi there?
+[01.02.22 18:51:44] fire: beep me when you get there
+[02.02.22 06:25:25] born: here
+[02.02.22 06:25:25] born: hello
+[02.02.22 12:29:24] fire: vaccine
+[02.02.22 12:29:29] fire: not his dedicates
+[02.02.22 12:30:11] born: got it, thanks.
+[02.02.22 12:30:13] born: sad.
+[02.02.22 12:30:17] born: probably sylver
+[02.02.22 11:50:22] born: hi)
+[03.02.22 11:50:48] born: it's been a long time lately
+[03.02.22 11:50:55] born: hope everything is normal]
+[03.02.22 11:51:38] fire: yeah, long time
+[03.02.22 11:51:41] fire: hi)
+[07.02.22 11:43:46] born: hi)
+[07.02.22 11:43:58] born: something strange happens)
+[07.02.22 11:44:00] fire: hi)
+[07.02.22 11:44:03] fire: What's up?
+[07.02.22 11:44:13] fire: you mean Franz?
+[07.02.22 11:44:15] born: well, February 7) and still no money)
+[07.02.22 11:44:17] born: yeah
+[07.02.22 11:44:22] fire: yes
+[07.02.22 11:44:32] born: very strange shit
+[07.02.22 11:44:47] born: what do you think?
+[07.02.22 11:44:55] fire: no data(
+[07.02.22 11:45:21] born: that's sad, of course(!
+[07.02.22 11:46:29] fire: Mm-hmm.
+[07.02.22 11:47:05] born: you must have a cushion in the form of savings)
+[07.02.22 11:47:11] born: I have no savings yet)
+[07.02.22 11:47:15] born: or rather it is small)
+[07.02.22 11:47:23] born: so it's painful to go through that)
+[07.02.22 11:47:32] fire: same thing
+[07.02.22 11:47:36] fire: spent
+[07.02.22 11:47:56] born: it happens xD
+[07.02.22 11:48:20] fire: ++
+[07.02.22 11:48:25] fire: did not expect)
+[07.02.22 11:49:11] born: apparently waiting position is on. )
+[07.02.22 11:51:20] fire: eue(
+[07.02.22 11:52:16] born: what do you think? won't we lose our jobs?
+[07.02.22 12:02:42] fire: yt
+[07.02.22 12:02:43] fire: no
+[07.02.22 12:02:50] fire: talk to french in toad
+[07.02.22 12:02:56] fire: says he is just delayed
+[07.02.22 12:03:05] fire: wait a couple of days, everything will be solved
+[07.02.22 12:03:21] born: oh man, thanks a lot)
+[07.02.22 12:03:29] fire: you're welcome)
+[07.02.22 12:03:30] born: listen, do you use bridges in the toad?
+[07.02.22 12:03:35] fire: no
+[07.02.22 12:03:41] born: I have no connection
+[07.02.22 12:03:44] fire: purely tor
+[07.02.22 12:03:56] fire: I still get traffic through 2vpn
+[07.02.22 12:04:01] born: ah
+[07.02.22 12:04:01] fire: that's why it doesn't cut the torus
+[07.02.22 12:04:10] born: think about it)
+[07.02.22 12:04:14] born: thank you)
+[07.02.22 12:04:23] fire: you're welcome)
+[21.02.22 12:56:31] born: hey
+[21.02.22 12:56:43] fire: hi)
+[21.02.22 12:56:47] born: do not hear anything about pay)?
+[21.02.22 12:56:51] fire: Nope.
+[21.02.22 12:56:54] born: it's the 21st)
+[21.02.22 12:56:56] fire: bad(
+[21.02.22 12:56:58] fire: yeah
+[21.02.22 12:57:06] fire: I have people waiting too
+[21.02.22 12:57:17] born: you must be red already
+[21.02.22 12:57:20] born: xD
+[21.02.22 13:01:24] fire: ahah
+[21.02.22 13:01:24] fire: yeah
+[21.02.22 13:01:33] fire: I just came back from the weekend.)
+[21.02.22 13:02:21] born: xD it's understandable, it's one payment later postponed
+[21.02.22 13:04:30] fire: Fuck!)
+[21.02.22 13:04:46] born: yeah, it's very annoying
+[21.02.22 13:05:04] born: when such delays, it's a bell)
+[21.02.22 13:05:11] fire: yes
+[21.02.22 13:05:48] born: and France online?
+[21.02.22 13:05:54] fire: on toad
+[21.02.22 13:05:56] fire: but is silent
+[21.02.22 13:06:32] born: i think he will ask if he will go back to schedule or if it will be at this shift
+[21.02.22 13:06:37] born: not 1 and 15
+[21.02.22 13:07:15] fire: 1-15 is more convenient
+[21.02.22 13:07:20] fire: than 25-5
+[21.02.22 13:07:25] fire: well, hz)
+[21.02.22 13:07:59] born: well, it is more convenient) just if now the issuance will be, say, the 24th day, and then have to pay on the 1st again
+[21.02.22 13:08:08] born: I don't know how it'll come back)
+[21.02.22 13:08:12] fire: well, yeah)
+[21.02.22 13:08:18] fire: dz in general
+[21.02.22 14:07:38] born: go away
+[21.02.22 14:16:19] fire: go
+[21.02.22 14:16:32] born: already heard all the news?
+[21.02.22 14:16:40] fire: i think not
+[21.02.22 14:16:48] fire: heard that the salary will be delayed
+[21.02.22 14:17:17] born: and you're not in general chat?
+[21.02.22 14:17:45] born: I sincerely apologize for having to ignore your questions over the past few days. Regarding the Chief, Silver, salaries and everything else.
+I was forced to because I simply had nothing to say to you. I was dragging my feet, screwing around with the salary as best I could, hoping that the Chief would show up and give us clarity on our next steps.
+But the chief is gone, and the situation around us is not getting any softer, and pulling the cat by the balls makes no sense anymore.
+
+We are in a difficult situation, with too much outside scrutiny of the firm, and the boss has apparently decided to lay low.
+There have been many leaks, post-New Year's receptions, and many other circumstances that incline us all to take some time off and wait for the situation to settle down.
+The reserve money that was set aside for emergencies and urgent team needs was not even enough to cover the last paycheck. There is no boss, no clarity or certainty about what we will do in the future, no money either.
+We hope that the boss will appear and the company will continue to work, but in the meantime, on behalf of the company I apologize to all of you and ask for patience. All outstanding payroll will be paid, the only question is when.
+[21.02.22 14:17:59] born: I will now ask all of you to write to me in person: (ideally in the toadbox:))
+- Actual backup contact for contact (preferably regenerate a fresh, nowhere fried public toadstool
+- Briefly about your duties, projects, and the Japanese language (for coders). Who did what, literally in a nutshell.
+
+In the near future, we, with those teamleaders who have remained in line - will think how to restart all work processes, where to find money for payments on wages and with new strength to run all our work projects.
+As soon as there is any news about payments, reorganization and getting back to work - I will contact everyone. In the meantime, I have to ask all of you to take 2-3 months off.
+We will try to get back to work as soon as possible. From you all, please be concerned about your personal safety! Clean up the working systems, change your accounts on the forums, VPNs, if necessary, phones and PCs.
+Your security is first and foremost your responsibility! To yourself, to your loved ones and to the team too!
+
+I ask you not to break up my personal contacts with questions about the chief - I will not tell anyone anything new, because I simply do not know.
+Once again, I apologize Friends, myself is not thrilled with all these events, we will try to somehow fix the situation.
+Those who do not want to move with us on - we naturally understand. Those who will wait - 2-3 months rest, engaged in private life and enjoy the freedom 🙂 .
+
+All working rockets and internal toadstools will soon be disconnected, further communication is only by backup toadstools. Peace be with you all!
+[21.02.22 14:18:24] born: this is france
+[21.02.22 14:21:23] fire: in the general did not see what was written
+[21.02.22 14:42:05] born: will you leave your toad contacts?
+[21.02.22 15:02:41] fire: yes, of course
+[21.02.22 15:02:49] fire: and my entire department
+[21.02.22 15:23:29] born: can I leave you my contacts in toad? or at least add each other
+[21.02.22 15:25:07] born: I have no contact with Frans in toad
+[21.02.22 15:44:40] fire: yes, of course
+[21.02.22 15:44:46] fire: I'll make the account I'll text you
+[21.02.22 15:44:56] born: ok
+[21.02.22 15:45:02] born: and how public toads usually do it
+[21.02.22 15:45:11] born: I've never had moments like this before
+[21.02.22 15:45:18] born: you have to do something over VPN?
+[21.02.22 15:45:29] fire: not in general
+[21.02.22 15:45:37] fire: just create an account in psi
+[21.02.22 15:45:45] fire: or on exploit.im
+[21.02.22 15:45:57] fire: or 1jabber
+[21.02.22 15:46:03] fire: whatever is more convenient for you
+[21.02.22 15:46:18] born: ok thanks
+[21.02.22 16:42:31] born: tell me if I take down the operating system, I will have a chat with you by account, even without messages?
+[21.02.22 16:46:15] fire: this chat seems to stay
+[21.02.22 16:46:23] fire: you enter the account
+[21.02.22 16:46:27] fire: on the server)
+[21.02.22 16:46:41] fire: and my jaber from your account will not go anywhere
+[21.02.22 16:46:46] fire: azhah
+[21.02.22 16:47:01] born: that's what I thought too)
+[21.02.22 16:47:07] born: just in case I decided to ask)
+[21.02.22 16:47:32] fire: ))
+[21.02.22 17:16:26] born: bro) how pissy is the situation from 1 to 10?)
+[21.02.22 17:42:23] fire: well, for me 4
+[21.02.22 17:42:28] fire: for you I don't know)
+[21.02.22 17:42:50] born: this is the first time for me) maybe you had long ago) dz
+[21.02.22 17:43:38] fire: not really
+[21.02.22 17:43:38] fire: honestly)
+[21.02.22 17:44:17] born: it's just so unexpected.
+[21.02.22 17:44:39] born: do you think those who went on vacation for a long time, knew something beforehand?)
+[21.02.22 17:45:18] fire: ahah
+[21.02.22 17:45:21] fire: dunno
+[21.02.22 17:45:32] fire: if they didn't know, they will be very surprised
+[21.02.22 17:45:42] born: pfft that's right)
+[21.02.22 17:51:25] born: you don't have a toad yet, I did
+[21.02.22 17:51:27] born: ?
+[21.02.22 17:52:05] fire: Nope.
+[21.02.22 17:52:12] fire: I will do all mine yet)
+[21.02.22 17:52:21] born: ah)
+[21.02.22 17:52:25] born: fun xDD
+[21.02.22 17:52:42] born: do you think they'll pay me back?
+[21.02.22 17:52:59] fire: I think maybe
+[21.02.22 17:53:03] fire: work was going on
+[21.02.22 17:55:02] born: so you think they'll pay something before the liquidation?
+[21.02.22 17:55:10] born: there is no boss, how then?
+[21.02.22 18:25:05] fire: I don't know, man
+[21.02.22 18:25:54] born: will you still be here tomorrow?
+[21.02.22 18:37:57] fire: sure)
+[21.02.22 18:38:03] fire: Work is work
+[21.02.22 18:38:15] fire: I'll be here till rocket shutdown)
+[21.02.22 18:38:40] born: okay, hope it all works out
+[21.02.22 18:38:46] fire: yeah, me too
+[21.02.22 18:39:11] born: if you go back to work in a couple of months it would be cool of course) but I do not think that everyone will go to work at once)
+[21.02.22 18:39:19] born: it's a big team after all
+[21.02.22 18:54:31] fire: not all
+[21.02.22 18:54:34] fire: but many
+[21.02.22 18:54:43] fire: the guys who work at the locker
+[21.02.22 18:54:47] fire: chats work
+[21.02.22 19:06:01] born: you think with the help of actions can resuscitate?
+[21.02.22 19:12:26] born: our project here as I was told is very promising
+[21.02.22 19:12:39] born: and in fact it is ballast in the current reality
+[21.02.22 19:19:08] fire: yes, I guess so far)
+[22.02.22 08:42:40] fire: hi, here?
+[22.02.22 08:43:57] born: I have a new project offered by France, so we still work)) a couple of weeks)
+[22.02.22 08:44:57] born: you got it)
+[22.02.22 08:44:57] fire: my jaber is new
+[22.02.22 08:45:03] born: oh, come on.
+[22.02.22 08:45:10] fire: fire@verified.pm
+[22.02.22 08:45:26] born: I'll be right there
+[22.02.22 08:45:34] fire: ++
+[22.02.22 08:45:37] born: did you see my message above?
+[22.02.22 08:45:43] fire: no
+[22.02.22 08:45:56] born: France offered a new project
+[22.02.22 08:45:59] born: in a couple of weeks
+[22.02.22 08:46:03] born: so we'll work on it
+[22.02.22 08:46:14] fire: good b)
+[22.02.22 08:46:21] born: yeah)
+[22.02.22 08:50:15] born: super

@@ -1,0 +1,257 @@
+2020-08-03T14:00:11 steller -> strix
+Hi. Do you have a working openvpn config for windows?
+
+2020-08-03T15:03:36 strix -> steller
+hi
+
+2020-08-03T15:03:53 strix -> steller
+What kind of VPN do you need?
+
+2020-08-03T15:04:01 strix -> steller
+mars?
+
+2020-08-03T15:08:20 steller -> strix
+Yes, you can mars. Just doesn't work.
+
+2020-08-03T15:11:22 strix -> steller
+Why didn't you ask before? I probably changed the config more than a month ago. I'll give you an updated one.
+
+2020-08-03T15:13:58 steller -> strix
+Yes, the configurations did not work all the time.
+
+2020-08-03T15:15:29 strix -> steller
+5 sec
+
+2020-08-03T15:19:06 strix -> steller
+https://www.sendspace.com/file/s7ls9j
+
+2020-08-03T15:19:29 strix -> steller
+Delete: https://www.sendspace.com/delete/s7ls9j/038d6ca99806165474e5c003a7a60860
+
+2020-08-03T15:20:28 strix -> steller
+Parl to the "eat_my_shorts" archive
+
+2020-08-03T15:20:48 strix -> steller
+*password
+
+2020-08-03T15:21:24 steller -> strix
+By the way, https://qaz.im/ doesn't steam captchas, so it's better to use it
+
+2020-08-03T15:30:02 steller -> strix
+It worked.
+
+2020-08-03T15:38:36 strix -> steller
+Yeah, we should try it.
+
+2020-08-03T15:38:42 strix -> steller
+it's good
+
+2020-08-03T15:38:59 steller -> strix
+Do you know why some virtual machines don't connect? Messages are popping up:
+03 18:37:08 2020 Route: Waiting for TUN/TAP interface to come up...
+Mon Aug 03 18:37:09 2020 TEST ROUTES: 0/0 succeeded len=-1 ret=0 a=0 u/d=down
+Mon Aug 03 18:37:09 2020 Route: Waiting for TUN/TAP interface to come up...
+Mon Aug 03 18:37:10 2020 TEST ROUTES: 0/0 succeeded len=-1 ret=0 a=0 u/d=down
+Mon Aug 03 18:37:10 2020 Route: Waiting for TUN/TAP interface to come up...
+Mon Aug 03 18:37:11 2020 TEST ROUTES: 0/0 succeeded len=-1 ret=0 a=0 u/d=down
+Mon Aug 03 18:37:11 2020 Route: Waiting for TUN/TAP interface to come up...
+Mon Aug 03 18:37:12 2020 TEST ROUTES: 0/0 succeeded len=-1 ret=0 a=0 u/d=down
+
+And at the end
+Mon Aug 03 18:37:30 2020 Initialization Sequence Completed With Errors ( see http://openvpn.net/faq.html#dhcpclientserv )
+Mon Aug 03 18:37:30 2020 MANAGEMENT: >STATE:1596469050,CONNECTED,ERROR,192.168.100.18,185.189.149.250,443,10.0.2.15,51253
+
+2020-08-03T15:46:48 strix -> steller
+u/d=down -- it looks like,,,, this tun interface didn't go up for some reason. Why, it is not clear from these messages. We need to look at it in more detail.
+
+2020-08-03T15:51:15 steller -> strix
+u/d=down -- it looks like,,,, this tun interface didn't go up for some reason. Why, it is not clear from these messages. We need to look at it in more detail.
+
+2020-09-30T09:42:56 steller -> strix
+Hi.
+Green said that you can set up a connection to the AD server on a virtual machine. I need to test something on it.
+Is this possible?
+I already have an AD server on the virtual machine.
+
+2020-09-30T10:24:58 strix -> steller
+hi
+
+2020-09-30T10:25:06 strix -> steller
+I'm still busy with the previous request of greene
+
+2020-09-30T10:25:25 strix -> steller
+I can't help you yet. I'll get to it when I'm done.
+
+2020-09-30T10:35:05 steller -> strix
+I see.
+Then I won't configure it locally yet.
+
+2020-09-30T10:36:51 strix -> steller
+I'll try to be quicker, of course.
+
+2020-10-05T12:26:21 steller -> strix
+Hi.
+
+2020-10-05T12:29:58 strix -> steller
+Hi
+
+2020-10-05T12:30:24 steller -> strix
+Have you watched AD yet?
+
+2020-10-05T12:31:04 strix -> steller
+Nah, there was a problem with the vpn's here -- I had 4 more set up.
+
+2020-10-05T12:31:27 strix -> steller
+What is it again?
+
+2020-10-05T12:32:24 steller -> strix
+There is a server on the virtuals. Need to connect clients or find connected clients
+
+2020-10-05T12:33:28 strix -> steller
+On the 2nd virtualbox server? Which group of virtualboxes?
+
+2020-10-05T12:33:59 steller -> strix
+173.232.146.199:32005 - here is the server
+
+2020-10-05T12:34:27 strix -> steller
+That's it and connect it to the domain?
+
+2020-10-05T12:35:24 steller -> strix
+It represents the domain itself. You also need to connect the workstations to it
+
+2020-10-05T12:39:10 strix -> steller
+What's the name of the vituulka? And which ones do you need to connect?
+
+2020-10-05T12:40:14 steller -> strix
+Virtualbox virtualbox.
+Yes, any free ones.
+
+2020-10-05T12:41:32 strix -> steller
+Yep, Server1016 KING
+
+2020-10-05T12:42:31 strix -> steller
+Well I don't really know what their free ones are. That's probably something you should ask the testers.
+
+2020-10-05T12:43:12 steller -> strix
+I'm about to find out.
+
+2020-10-05T12:50:22 strix -> steller
+What's the question?
+
+2020-10-05T12:50:50 steller -> strix
+JohnJackson1111
+
+2020-10-05T12:51:08 strix -> steller
+thank you
+
+2020-10-05T12:56:00 strix -> steller
+Why can't I get to the start menu?
+
+2020-10-05T12:56:19 strix -> steller
+are the tamaddishenzes even standing up?
+
+2020-10-05T12:56:53 strix -> steller
+The Windows screen doesn't fit in mine and the start menu is hard to reach
+
+2020-10-05T12:58:16 strix -> steller
+Holy shit 1920x950
+
+2020-10-05T12:58:35 strix -> steller
+Who put that much and what for?
+
+2020-10-05T12:58:58 strix -> steller
+My laptop is only 1366x768 and can't work
+
+2020-10-05T13:00:09 strix -> steller
+Are you coming soon? Maybe I can make it to the store in time?
+
+2020-10-05T13:14:51 strix -> steller
+okay, kingston suggested two virtuals:
+
+2020-10-05T13:14:53 strix -> steller
+173.232.146.199:32019 - 8.1
+173.232.146.199:32018 - 7х64
+
+2020-10-05T13:15:04 strix -> steller
+Okay, I'm going to go to the store for now.
+
+2020-10-05T13:21:50 steller -> strix
+I don't know who put it in. I just have the stretching turned on.
+
+2020-10-05T13:55:17 strix -> steller
+/me came home
+
+2020-10-05T13:55:35 strix -> steller
+I'll put a smaller one then.
+
+2020-10-05T13:56:24 steller -> strix
+Yes, put it however you like.
+
+2020-10-05T14:00:59 strix -> steller
+it's strange, all virtuals change the resolution to what I set in the rdp-client, but in this one for some reason not
+
+2020-10-05T14:03:30 steller -> strix
+I never install from linux at all
+
+2020-10-05T14:03:59 strix -> steller
+The two are standing, too.
+
+2020-10-06T12:21:43 steller -> strix
+Hi. How's it going there with AD?
+
+2020-10-06T12:24:34 strix -> steller
+hi
+
+2020-10-06T12:25:34 strix -> steller
+Server and one client machine made, but when I got to the second machine, it turned out that there is a non-standard password. Couldn't figure it out.
+
+2020-10-06T12:25:59 steller -> strix
+Maybe get another car?
+
+2020-10-06T12:26:20 strix -> steller
+I understand you have to ask kingston. Yesterday the question came up at the most inopportune moment, and there was no one to ask.
+
+2020-10-06T12:26:44 steller -> strix
+I think Kingston has the normal one.
+
+2020-10-06T12:27:30 steller -> strix
+Is it already possible to enter the client machine for tests?
+
+2020-10-06T12:28:19 strix -> steller
+In theory, you can do it 32018 which is
+
+2020-10-06T12:28:27 strix -> steller
+I'll ask Kingston.
+
+2020-10-06T13:22:40 strix -> steller
+[08:20:45] <strix> already finished
+[08:21:43] <strix> there domain is test-domain.local (for old Windows alias TEST)
+[08:22:12] <strix> TEST\user, JohnJackson1
+
+2020-10-06T13:22:47 strix -> steller
+otovo
+
+2020-10-06T13:22:50 strix -> steller
+ready
+
+2020-10-06T13:23:43 steller -> strix
+What's the address?
+
+2020-10-06T13:26:20 steller -> strix
+Checked in. Thanks.
+
+2020-10-06T13:26:23 strix -> steller
+Domain controller 32005 and two machines 32018 and 32019
+
+2020-10-06T13:26:44 strix -> steller
+address 173.232.146.199
+
+2020-10-06T13:27:12 steller -> strix
+Is the 2nd one ready too?
+
+2020-10-06T13:27:21 strix -> steller
+Yep, already both
+
+2020-10-06T13:27:30 steller -> strix
+Oh, that's great. Thanks
+

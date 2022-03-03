@@ -1,0 +1,106 @@
+2020-07-14T07:58:23 mentos -> mushroom
+hi
+
+2020-07-14T07:58:50 mentos -> mushroom
+Did Buza write to you?
+
+2020-07-14T08:09:42 mushroom -> mentos
+Wrote it now.
+
+2020-07-14T08:10:53 mushroom -> mentos
+You have to move the obfuscation to the new llvm he said.
+
+2020-07-14T08:11:21 mentos -> mushroom
+On 10?
+
+2020-07-14T08:11:40 mushroom -> mentos
+On the latest release. It's a 10.
+
+2020-07-14T08:12:33 mushroom -> mentos
+I started it yesterday. Just transferred files from Transforms llvm-obfuscator to llvm 10 sources.
+
+2020-07-14T08:12:44 mushroom -> mentos
+Almost everything fits.
+
+2020-07-14T08:13:12 mushroom -> mentos
+Didn't you already build clang from source?
+
+2020-07-14T08:13:23 mentos -> mushroom
+yes
+
+2020-07-14T08:13:51 mushroom -> mentos
+So you know everything.
+
+2020-07-14T08:14:21 mentos -> mushroom
+first built the project cmake, then in VS19 rjvgbkbhjdfk 'njn ghjtrn
+
+2020-07-14T08:14:31 mushroom -> mentos
+I think for now you need to build a working plugin for opt.
+
+2020-07-14T08:15:03 mushroom -> mentos
+And then if it works, integrate it into clang.
+
+2020-07-14T08:15:29 mentos -> mushroom
+Give me a link to what you did.
+
+2020-07-14T08:15:52 mentos -> mushroom
+is there any in our git or redmine?
+
+2020-07-14T08:15:58 mushroom -> mentos
+I didn't upload anything anywhere.
+
+2020-07-15T08:12:45 mentos -> mushroom
+hi
+
+2020-07-15T13:06:36 mushroom -> mentos
+How did it work out?
+
+2020-07-16T08:09:42 mentos -> mushroom
+ghbdtn
+
+2020-07-17T09:14:50 mushroom -> mentos
+Hi, do you have the assembled llvm-obfuscator 4?
+
+2020-07-17T09:25:53 mentos -> mushroom
+Yes there is - it's like an installer.
+
+2020-07-21T14:02:14 mushroom -> mentos
+Hi. Are you here?
+
+2020-07-22T07:52:49 mushroom -> mentos
+Hi. You're here.
+
+2020-07-23T09:25:39 mentos -> mushroom
+ghbdtn
+
+2020-07-23T12:34:08 mentos -> mushroom
+listen and patch -p1 < llvm-obf.patch before or after cmake -G "Visual Studio 16 2019" -A x64 -Thost=x64 -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH=... -DLLVM_ENABLE_PROJECTS=clang -DLLVM_TARGETS_TO_BUILD=X86 -DLLVM_EXPORT_SYMBOLS_FOR_PLUGINS=ON ..\llvm ???
+
+2020-07-23T12:35:06 mentos -> mushroom
+finally put
+
+2020-07-23T12:35:07 mentos -> mushroom
+Raver@DESKTOP-IDSODU6 MINGW32 /c/llvm-project
+$ patch -p1 < llvm-obf.patch
+patching file llvm/include/llvm/CryptoUtils.h
+patching file llvm/include/llvm/Transforms/Obfuscation/BogusControlFlow.h
+patching file llvm/include/llvm/Transforms/Obfuscation/Flattening.h
+
+2020-07-24T07:55:34 mentos -> mushroom
+hi
+
+2020-08-27T09:46:18 mentos -> mushroom
+Hi
+
+2020-10-08T12:55:56 mentos -> mushroom
+hi
+
+2020-10-08T14:15:29 mushroom -> mentos
+Hi.
+
+2020-10-22T14:44:01 mentos -> mushroom
+hi
+
+2020-10-26T09:14:47 mentos -> mushroom
+hi
+
