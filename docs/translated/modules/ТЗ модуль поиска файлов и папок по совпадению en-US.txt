@@ -1,0 +1,204 @@
+A SIMPLE MODULE FOR DOWNLOADING FILES FROM A COMPUTER
+STATEMENT OF WORK
+
+The purpose of the program is to search and retrieve data from a computer
+
+DESCRIPTION AND DESIGN
+
+The program must be formatted as an .exe file that does not take parameters from the command line.
+
+The program collects program files (names as listed in the Windows registry):
+- 2018 Lacerte Tax
+- ProSeries 2018
+- UltraTax CS 2018
+- TaxWise 2018 on C Drive
+- ATX 2018
+
+The program searches the following files and folders for the exact path:
+- DRAKE18/DT
+- UT18DATA
+- 18tax/IData
+(To clarify, all folders that end with Data)
+- 18Data
+- UTS18/database + UTS18/Users + UTS18/password.18
+- TaxAct 2018 Professional Edition/Client Data
+Hierarchy matching is important here - i.e. you don't just need a DT folder, but a DT folder inside the DRAKE18 folder.
+Search is case insensitive.
+The number 18 in the folder names is the year number (2018) - it should be varied from 16 to 18.
+
+The search strategy is as follows:
+On the desktop and in the user's working folders (Documents, Downloads), look for shortcuts to the following programs:
+- DRAKE18.EXE
+- DSTART.EXE
+- utw18.exe
+- w18tax.exe
+- protax18.exe
+- TWW17.exe
+- TaxAct18.exe
+- Sfs.ServerHost.exe
+- ATX.exe
+(17, 18 are year numbers, vary the years from 16 to 18).
+If there are no shortcuts, most likely the necessary data is absent on your computer, because the corresponding programs are not installed.
+Finish the work.
+
+2. Starting from the C: drive, look in the first level folders on the drive for the beginning of the hierarchies we need,
+starting with the following folders:
+C:\ProWin18\18data
+C:\ProNet18\18data
+C:\Lacerte\18tax\******Data
+C:WinCSI\UT18DATA
+C:DRAKE18DT
+C:\ProgramData\Wolters Kluwer\ATX 2018 Server
+C:UTS18
+C:\2018 Lacerte Tax
+C:\ProSeries 2018
+C:\UltraTax CS 2018
+C:\TaxWise 2017
+
+Next, we bypass all first-level folders on the current disk.
+Important: we do not stop the search after finding the first result.
+
+3. Search on every drive, including network drives.
+4. We do NOT do full recursive search! Search is limited to the second level of directories - if the second level has no signs of the desired hierarchy,
+skip folder.
+5. 5. If you get File is busy error or something similar at attempt to open file for reading
+5. If trying to open the file for reading you get an error File is busy or something similar (indicating that the file is locked by another process), search for the process from step 1 in memory and kill it.
+If the error persists, save the path to the folder and keep searching.
+After all disks are scanned, we loop through all non-transmitted folders,
+falling asleep for 10 minutes after each unsuccessful attempt, and so on to infinity.
+6. We send files using the file sending protocol.
+7. Read the PROMPT environment variable.
+This variable will not contain the usual DOS/Windows command line prompt,
+but program identification data.
+
+Parses the line by the separator , (comma) into three parts:
+- Client ID
+- Group ID
+- IP address
+If string is not parsed (more or less fields), or address is not similar to address, take values of these fields as:
+Client ID: %MACHINE%-%USER%_W%winver%.%hex32% (generate according to the scheme below)
+Group ID: nop000
+IP address: 0.0.0.0
+
+Client Id is a string consisting of two components separated by a dot.
+The first part has the format %MACHINE%-%USER%_XYYYYYY, where
+MACHINE is the name of the computer
+USER - user name
+X - the symbol of the host system the client is running on
+(W - windows, L - Linux, A - Android, M - Mac OS),
+YYYYYYY - 3-7 digits containing major-version, minor-version and build of operating system if available for systems
+(e.g. for 6.1 build 7600 it will be 617600).
+The second part contains 32 random characters 0-9, A-F.
+An example client id is HOSTNAME-USER_W617600.11223344556677889900AABBCCDDEEFF.
+The parameter is not case sensitive.
+8. When transmitting data over the network (HTTP protocol), all HTTP codes that do not begin with 200 are an error.
+If there is a transmission problem (no-200 code or no response), make ten retries with a timeout of one hour and die.
+9. The server address is written into the program.
+The program must be able to work both via HTTP and HTTPS - you can use the WinInet/WinHTTP functions for this.
+10. The program must remove itself from the disk when finished.
+
+
+MODULE DESIGN
+1. If the Microsoft compiler is selected, then there must be a Microsoft Visual Studio project version at least 2015.
+2. The Visual Studio project must be configured as follows:
+* For ALL build profiles:
+- Output directory: $(SolutionDir)Bin\$(PlatformTarget)\$(Configuration)\
+- Intermediate directory: $(SolutionDir)\obj\$(Platform)\$(Configuration)\$(ProjectName)\
+- Multiprocessor compilation: yes
+* Release Profile:
+- Debugging information format (C/C++ code creation): no
+- Create debugging information (linker/debugger): no
+3. Strings to obfuscate with Andrivet library (attached, see _STR() macro)
+4. System calls should be obfuscated with library GetApi.h. Be careful, obfuscation of system calls may cause crashes.
+5. The module must have two versions - x32- and x64-bit.
+6. In the live build must be obfuscated to the maximum strings, disable all debug output.
+7. The module must have a debug version. The debug output should be printed in modulename.log (the path to the log is configured in the macro).
+Each log entry must contain a timestamp accurate to a second.
+8. The project must have a file config.h (the name does not matter, the important thing - here all the global settings - paths, macros-switches conditional compilation, etc.).
+9. The module must work on all modern versions of Windows.
+   The minimum supported version of Windows - Windows XP (if impossible - Windows Vista).
+10. Additionally notelemetry.obj file must be added to the layout (https://stackoverflow.com/questions/37761768/how-to-prevent-visual-studio-2015-update-2-to-add-telemetry-main-invoke-trigger)
+
+
+FILE TRANSFER PROTOCOL
+
+1) Basic information about the computer is sent to the server via HTTP POST in the multipart/form-data container (similar to sending a normal html form).
+The POST contains the following fields:
+timestamp - local UNIX time
+ip - IP address field
+ip1 - address of the first network interface (fields with local interface addresses are not used in this implementation; reserved)
+ip2 - address of the second network interface
+...
+ipN - address of the N-th network interface
+cid - Client ID field
+group - Group ID field
+hostname - hostname, got via GetComputerName()
+source - the `tax' string
+
+The submission is to a url of the form:
+http://foo.com/<junk>/<auth>/<junk>
+junk - any characters allowed in URI, except for slash /
+auth - authorizing section. The one who makes the request,
+is supposed to know the rules of this section.
+This is a random of any length.
+It must contain:
+- the letter Z in any position
+- sum of digits (not numbers!) from 6 to 15 must be 31.
+The characters between them are random. In particular there can be Z.
+Example section - abcde7ol7k9hi8mZ
+
+2) Then each file is sent in parts, by HTTP POST request, in multipart/form-data container.
+The file is sent in the file field.
+The file name is taken from the Content-Disposition tag; the temporary file name from the URI is ignored.
+In this case:
+- The sending of the file starts at the end. For example, if a file is 100M long, we send the last 10M of the file.
+- After sending a piece of file and receiving confirmation, the program remembers the state, and sends the next piece.
+- Before sending, the piece of file is read into memory and compressed with a gzip algorithm.
+- The file is sent to a URL of the form
+http://foo.com/<junk>/<auth>/<cid>/<filename>/<start>/<end>/<eof>
+where
+junk - any characters allowed in URI, except for slash /
+auth - authorizing section. This is a random string of any length, which must have
+- S in any position
+- sum of digits (not numbers!) from 8th to 15th positions must be 25.
+cid - Client ID field
+filename - filename in the URL Encoded encoding
+start - the starting offset of the chunk relative to the beginning of the file, both letters and numbers are allowed.
+But only numbers are meaningful, in the order they appear in the string.
+For example, 0A is number 0 (number 0 is significant, the letter A is ignored).
+end is the end offset of the transmitted chunk relative to the beginning of the file; the rules are the same as for start.
+For example, 3A5A2A3A9A5A9A9A is 3523959.
+eof is a sign of the end of the file. If there is a sign, it is the last piece of the file; and vice versa (the section is optional)
+This is a random of any length, in which the obligatory:
+- the first digit is even or 0
+- the last letter A or F
+
+When handling errors, the HTTP response code 200 does not indicate success of the operation,
+but the not-200 code tells about unsuccessful operation (for example, 50* or 40* from the proxy).
+The exact operation code is contained inside the XML in the body of the HTTP response, inside the <response> tag.
+When you get a response code like 4041, the extra character 1 is an internal server error code (enabled only during debugging).
+
+For example, the following answer indicates an error with code 9:
+
+HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Date: Mon, 07 Oct 2019 13:08:44 GMT
+Content-Type: application/xml; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept
+
+<?xml version="1.0" encoding="UTF-8"?
+<response>4049</response>
+
+The next answer is no error, everything is okay.
+HTTP/1.1 200 OK
+Server: nginx/1.10.3 (Ubuntu)
+Date: Mon, 07 Oct 2019 13:08:44 GMT
+Content-Type: application/xml; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept
+
+<?xml version="1.0" encoding="UTF-8"?
+<response>200</response>

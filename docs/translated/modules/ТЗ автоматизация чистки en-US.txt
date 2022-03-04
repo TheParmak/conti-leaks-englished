@@ -1,0 +1,209 @@
+TERMS OF REFERENCE
+AUTOMATIC SEARCH FOR ANTI-VIRUS DETECTIONS IN THE SOURCE CODE
+
+
+PURPOSE
+
+Reduce the time for cleaning from antivirus detects by automating the process.
+
+IDEA
+
+The normal cleaning algorithm is as follows:
+Step 1
+1 take the project you want to clean up.
+2 comment all functions and global variables.
+3 assemble it in the combat profile
+4 fill the resulting binary with dyncheck and check
+5 if the number of detects is less than the specified threshold, finish step 2, otherwise
+6 uncomment one function (according to the dependencies graph)
+7 ready 3
+
+Step 2
+for each detected function, we use #ifdef to cut off parts of the function according to the same principle,
+until we get to one line or block of code.
+
+There is an optimization in step 6 - you can uncomment several functions at once, optimistically believing that the detection is not here)
+
+If you write a program that can parse the source code, build a graph of function dependencies, and insert #ifdef FUNCTION1_NEVER . #endif
+in the bodies of these functions, the process can be automated.
+
+REALIZATION
+
+The program should be designed as a console utility and written in C++.
+If possible, ensure cross-platform.
+User interface - command line keys (getopt) and output to stdout/stderr.
+
+You need to implement the algorithm described above with the following boundary conditions:
+* support for Visual Studio projects since 2010, includes:
+- specifying a build profile (Release/x64)
+- launching the compilation at each iteration and searching for the built file where the project file says
+* an extension point on the anti-virus checker function (used at step 5)
+- plugin principle - there must be a function bool avcheck(const char* path), which can easily be replaced for different scanning tools -
+both for local anti-viruses and for integration with online services
+* code analysis should exclude inadvertently complex cases, such as
+- template<>
+- recursion into library sources, including CRT/STL/WinAPI
+- everything that complicates the implementation should be stipulated and simplified.
+It is easier to make code easy to analyze than to complicate the analyzer.
+* Here is an explanation on stdout of what is going on:
+Step 1
+Iteration 1, 1801 functions commented out, number of detects 0
+Iteration 2, 900 function commented out, 18
+..
+iteration 100, 50 functions commented out, number of detects 0
+
+Step 2.
+Function foo(), lines 100...200 removed, number of detects 0
+Function foo(), lines 190...200 removed, number of detects 0
+Function foo(), lines 195...200 removed, number of detects 18
+
+Detects are found in functions:
+foo(): 195...200
+bar(): 400...402
+dumb(): 151...152
+
+It is possible to modify ready-made suitable code analyzers - there are many static analyzers with ready-made parsing module now.
+
+
+IMPLEMENTATION, OPTION 2, SIMPLIFIED
+
+We do the same without taking apart the source code, by analyzing the linker function map (/MAP linker parameter):
+- order the binary map from the linker with the /map switch
+- parse the output map, find function boundaries
+- zeros out the functions RIGHT IN THE BINARNIK
+This way you can avoid parsing the source on step 1 (step 2 unfortunately will not work)
+But the implementation at least to the extent of step 1 would greatly simplify life.
+
+
+Since in the map appears too many left characters that do not require analysis at all (functions from the CRT, all kinds of service stuff),
+you need additional tools in the program interface:
+- character exclusion masks (blacklist)
+- masks of the check list for object files (.obj) (white list)
+- symbol check list masks
+You can also cut off small symbols by size (see algorithm below)
+
+There is a similar implementation
+https://github.com/vxlabinfo/SignFinder
+based on the articles
+https://vxlab.info/%d1%87%d0%b8%d1%81%d1%82%d0%ba%d0%b0-pe32-%d1%87%d0%b0%d1%81%d1%82%d1%8c-1/
+https://vxlab.info/%d1%87%d0%b8%d1%81%d1%82%d0%ba%d0%b0-pe32-%d1%87%d0%b0%d1%81%d1%82%d1%8c-2/
+The site is now extinct, but there are still copies, e.g. here
+https://ru-sfera.org/threads/chistka-ot-signaturnogo-detekta-antivirusov.2870/
+
+From there you can take heuristics for checking individual sections, headers, and imports.
+
+
+VERIFICATION ALGORITHM
+
+The input of the algorithm is an unpainted list of symbols (functions and global data).
+The output of the algorithm is a colored list of symbols, so that each symbol is assigned a color - white or black.
+The goal of the algorithm is to color all functions in the minimum number of steps.
+
+Algorithm:
+1. The first pass through the list: mark as "white" all the characters on the exclusion list/not contained in the check lists
+2. Sort the list by the occupied character size in memory
+3. Characters with a size below some threshold (a setting or a heuristically determined value) can be colored "white" at once
+
+At this step, you should null all unpainted characters and do an AB check.
+If the check gives a detection, print a warning that the binary file has detects on the very first iteration and quit.
+Otherwise, uncolor all unpainted characters.
+
+Further in the algorithm it is necessary to remember the state:
+- the list of currently checked symbols ("current list")
+- the list of colored symbols.
+Until the end of the algorithm:
+- White characters must be zeroed
+- Black characters must be zeroed
+
+4. Culling to the current list: half (50%) of the uncolored characters of the file
+5. Uncolored symbols of the current list
+6. AV check - call the check function av_check()
+7. Is there a detected?
+- no: we mark the uncolored part of the current list as "white", continue execution (ready 8)
+- yes:
+  there is 1 character in the unfollowed part?
+  - yes: marked as black, nulled until end of check, ready 6
+  - no: nullified half (50%) of the uncolored part of the current list, ready 6
+8. If there are any uncolored characters left in the current list, goto 5
+9. If there are still unpainted characters in the file, go 4
+
+You can write a unit test on this algorithm, making av_check() produce detections only on a specific list of functions.
+
+
+USAGE
+
+-i <input exe file> file to be checked. The argument is mandatory.
+-m <input map file> linker map .map. The argument is mandatory.
+-d <workdir> working directory, where we put the intermediate files. The current one by default.
+-s <section> list of tested sections (.text, .data ...). It is possible to specify -s several times, for example -s .text -t .data.
+                                       The default is all sections.
+-z <Minimum size threshold> exclude from the test characters smaller than the specified size; size in bytes. Defaults to 0 (no threshold).
+-a defender|dyncheck check on specified antivirus. No default, the argument is mandatory.
+-f <functionmask> check only characters with the name satisfying the mask. You can specify -f several times, for example -f symb1* -f symb2*
+-M <modulename> check only symbols from specified modules. You can specify -f several times, for example -m module1* -m module2*
+
+Arguments -s, -z, -f, -M are combined by logical AND (intersection of sets), i.e. reduce the range of check.
+
+
+INTEGRATION WITH AUXILIARY ENGINES
+
+The first step is mandatory integrations with Windows Defender (Windows 10) and dyncheck.com via API.
+Next, the code in Powershell
+
+* Defender object
+$Defender = @{
+  #MALWAREPROTECTION_*
+  SCAN_STARTED = 1000
+  SCAN_COMPLETED = 1001
+  MALWARE_DETECTED = 1006
+  BEHAVIOR_DETECTED = 1015
+  STATE_MALWARE_DETECTED = 1116
+  STATE_MALWARE_ACTION_TAKEN = 1117
+  StartTime = $null
+  IsRunning = $false
+  ScanProc = $null
+  ScanId = $null
+  LastScanId = $null
+}
+
+* Launching Windows Defender
+    $Defender.ScanProc = Start-Process `
+      -FilePath "$($env:programfiles)\Windows Defender\mpcmdrun.exe" `
+      -ArgumentList '-Scan', '-ScanType 3', "-File $f" `
+      -PassThru -NoNewWindow #-Wait
+    $Defender.StartTime = (Get-Date).AddSeconds(-5)
+    $Defender.IsRunning = $true
+#Getting the scan ID, to read the log later:
+    $ScanStarted = Get-WinEvent -LogName "Microsoft-Windows-Windows Defender/Operational" |
+      Where-Object {
+      $_.TimeCreated -ge $Defender.StartTime -and
+      $_.Id -eq $Defender.SCAN_STARTED
+    }
+    if ($ScanStarted)
+    {
+      $Defender.ScanId = $ScanStarted.Properties[$ScanId].Value
+      $Defender.LastScanId = $Defender.ScanId
+    }
+* Scan completion check:
+  $ScanCompleted = Get-WinEvent -LogName "Microsoft-Windows-Windows Defender/Operational" |
+    Where-Object {
+    $_.TimeCreated -ge $Defender.StartTime -and
+    $_.Id -eq $Defender.SCAN_COMPLETED -and
+    $_.Properties[$ScanId].Value -eq $Defender.ScanId
+  }
+* Detection presence in the sample:
+  $MalwareDetected = Get-WinEvent -LogName "Microsoft-Windows-Windows Defender/Operational" |
+    Where-Object {
+    $_.TimeCreated -ge $Defender.StartTime -and
+    $_.Id -in `
+      $Defender.MALWARE_DETECTED, `
+      $Defender.BEHAVIOR_DETECTED, `
+      $Defender.STATE_MALWARE_DETECTED `
+
+In the second step, you need integration with:
+- Eset NOD32
+- Kaspersky
+- Norton Antivirus
+
+Stage 3:
+- Avast

