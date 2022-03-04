@@ -1,0 +1,166 @@
+[26.10.21 15:27:15] jefferson: test
+[26.10.21 15:27:21] manuel: So we've got regs through rocco
+[26.10.21 15:27:34] jefferson: I'll check in with him
+[26.10.21 15:27:54] manuel: Yeah.
+[10/28/221 09:07:49] manuel: Hi. I wanted to ask you about the egels. When do you need them?
+[28.10.21 09:08:35] jefferson: hi.
+[28.10.21 09:08:38] jefferson: in a few days
+[28.10.21 09:08:41] jefferson: days
+[28.10.21 09:08:48] jefferson: not today
+[28.10.21 09:08:53] manuel: Monday?
+[28.10.21 09:09:01] jefferson: yes, i think monday
+[28.10.21 09:09:12] manuel: Okay, I'll tell him.
+[28.10.21 09:09:18] jefferson: we want to include the links in the newsletter
+[28.10.21 09:09:55] jefferson: but not just any way, but watch, like some of Aversky's tweets do)
+[28.10.21 09:10:10] manuel: I see.
+[28.10.21 09:10:14] manuel: Got it.
+[12/23/221 10:04:04] jefferson: hi.
+[12/23/221 10:04:12] jefferson: your toad doesn't work either?
+[12/23/221 10:04:44] manuel: hi. it's working.
+[12/23/221 10:04:53] jefferson: weird.
+[12/23/221 10:05:39] jefferson: Well, it worked.
+[12/23/221 10:05:52] jefferson: do you have virtualbox installed?
+[12/23/221 10:06:03] manuel: I have vmvare
+[12/23/221 10:06:08] manuel: will it work?
+[23.12.21 10:06:41] jefferson: I don't use it, so I can't tell you anything about it.
+[12/23/221 10:07:10] jefferson: if you use virtualbox, it would be okay. the software is very easy to use
+[12/23/221 10:09:58] manuel: I see. I'll download it.
+[12/23/221 10:10:25] jefferson: okay, do it now. i'll tell you the rest when i get back.
+[12/23/221 10:11:57] manuel: Okay.
+[12/23/221 10:16:05] jefferson: after you put in virtualbox, put in this one from their website https://download.virtualbox.org/virtualbox/6.1.30/Oracle_VM_VirtualBox_Extension_Pack-6.1.30.vbox-extpack
+[23.12.21 10:16:21] manuel: Yeah, I know about the action pack.)
+[23.12.21 10:17:09] jefferson: in the settings you can specify the desired folder where the machines will be stored, so that you don't have to redo it later when the virtual machines will be installed
+[12/23/221 10:17:53] manuel: ok
+[12/23/221 10:20:05] manuel: Got it
+[12/23/221 10:29:15] jefferson: you downloaded the mint image yesterday, right?
+[12/23/221 10:30:03] manuel: didn't have time.
+[12/23/221 10:30:09] manuel: you got the link in toad?
+[12/23/221 10:30:14] jefferson: yeah.
+[12/23/221 10:30:25] jefferson: download it, let me know when it's done.
+[12/23/221 10:30:39] jefferson: 3 gig download
+[12/23/221 10:34:49] manuel: Done
+[12/23/221 10:36:59] jefferson: press create
+[12/23/221 10:37:16] jefferson: in virtualbox
+[12/23/221 10:37:30] manuel: like this
+[23.12.21 10:37:47] jefferson: in the window that appears, do you see an expert mode button anywhere?
+[23.12.21 10:37:56] jefferson: I have a mac, it may look different
+[12/23/221 10:38:03] manuel: yes
+[12/23/221 10:38:08] jefferson: press that.
+[12/23/221 10:38:16] manuel: yes
+[12/23/221 10:38:57] jefferson: machine name as you like, then the machine directory, you can edit the path, you can leave it as it is
+[12/23/221 10:39:07] jefferson: choose Linux type
+[12/23/221 10:39:18] jefferson: version ubuntu 64
+[12/23/221 10:39:35] jefferson: 6144 amount of RAM
+[12/23/221 10:39:41] manuel: 8 can
+[12/23/221 10:39:48] jefferson: it's convenient
+[12/23/221 10:39:53] manuel: Yeah.
+[12/23/221 10:40:11] jefferson: then create a new virtual hard drive
+[12/23/221 10:40:32] jefferson: then click create
+[12/23/221 10:40:54] manuel: Okay
+[12/23/221 10:40:58] jefferson: Allocate 20 gigs of space for the machine
+[12/23/221 10:41:20] manuel: Okay.
+[23.12.21 10:41:37] jefferson: type VDI, format Dynamic ...
+[23.12.21 10:41:49] manuel: there is
+[12/23/221 10:41:55] jefferson: soothed
+[12/23/221 10:42:15] manuel: ready
+[12/23/221 10:42:15] jefferson: click Configure
+[12/23/221 10:42:45] manuel: Okay.
+[12/23/221 10:43:12] jefferson: General/Advanced
+[12/23/221 10:43:54] jefferson: general clipboard and drag n drop feature - bi-directional everywhere
+[12/23/221 10:44:09] manuel: like this
+[12/23/221 10:44:24] jefferson: then go to System, remove the floppy disk
+[12/23/221 10:44:54] jefferson: processors - give as many cores as you want. i gave 4 of mine
+[12/23/221 10:45:08] jefferson: additional features - check both boxes
+[12/23/221 10:45:26] manuel: done
+[23.12.21 10:45:38] jefferson: go to display and give me 128 mb
+[12/23/221 10:45:42] jefferson: that's the maximum
+[12/23/221 10:46:03] manuel: give
+[12/23/221 10:46:18] jefferson: then go to the media
+[12/23/221 10:46:46] jefferson: under Controller: IDE there's a CD icon
+[12/23/221 10:47:25] jefferson: highlight it and you'll see the same icon on the right side, click on it and set the path to the mint image
+[12/23/221 10:47:36] manuel: Done
+[12/23/221 10:47:59] jefferson: okay, five minutes, i'll be back and we'll continue
+[12/23/221 10:48:11] manuel: Okay.)
+[12/23/221 11:03:12] jefferson: I'll unsubscribe soon. I have a courier coming somewhere, can't make it. meet me, then we'll continue, otherwise they will be distracted
+[12/23/221 11:06:40] manuel: okay.
+[12/23/221 11:28:38] jefferson: I'm back. Shall we continue?
+[12/23/221 11:29:02] manuel: yes
+[12/23/221 11:29:28] jefferson: press start. you might get a small screen after starting, but that should fix it after installing
+[12/23/221 11:30:03] jefferson: when you see the boot loader window, start Linux mint is at the top, hit enter
+[12/23/221 11:30:37] jefferson: text me when it boots up
+[12/23/221 11:32:41] jefferson: is it working?
+[12/23/221 11:33:27] manuel: Error, no boot disk
+[12/23/221 11:33:45] jefferson: ok
+[12/23/221 11:33:46] manuel: No boot media found
+[12/23/221 11:33:50] jefferson: turn it off
+[12/23/221 11:34:14] manuel: nfr
+[12/23/221 11:34:15] manuel: Okay
+[12/23/221 11:34:33] jefferson: press nat again and go to media
+[12/23/221 11:35:09] jefferson: controller: IDE, under it you see the CD icon and it says empty?
+[12/23/221 11:36:09] manuel: ide controller it says linux mint -20
+[12/23/221 11:36:21] manuel: image
+[12/23/221 11:36:42] jefferson: hmm, interesting
+[12/23/221 11:36:55] jefferson: timka?
+[12/23/221 11:37:37] manuel: I'm gonna get to the bottom of this.
+[12/23/221 11:38:02] jefferson: try running it again
+[12/23/221 11:39:43] jefferson: if it doesn't work, try to go to the system tab, uncheck PAE/NX and the one under it
+[12/23/221 11:39:47] jefferson: then start again
+[12/23/221 11:55:56] jefferson: any luck?
+[12/23/221 11:56:17] manuel: I did it ) UEFI was disabled there
+[12/23/221 11:56:33] manuel: Running
+[12/23/221 11:57:16] manuel: Desktop started
+[12/23/221 11:57:30] jefferson: there will be install linux mint
+[12/23/221 11:57:33] jefferson: go ahead
+[12/23/221 11:57:55] manuel: Started up
+[12/23/221 11:59:22] jefferson: the first is language selection, the second is layout, the third is to install codecs or not. by languages, whatever you like, you don't need codecs
+[12/23/221 11:59:54] manuel: ing
+[12/23/221 12:00:09] jefferson: after that there will be a window with the default Erase disk... leave it like that.
+[12/23/221 12:00:19] jefferson: install now click
+[12/23/221 12:00:40] jefferson: then you'll get a window where you have to click continue
+[12/23/221 12:01:00] jefferson: go to "time zone", you can do whatever you like
+[12/23/221 12:01:03] manuel: okay
+[12/23/221 12:02:59] jefferson: then there will be something about names and titles. in the upper window is the account name, the second is the system name. delete there anything related to virtualbox, write what you want. then in one window will be a password - enter something simple, it is often needed.
+[12/23/221 12:03:38] jefferson: put a dot above the default one
+[12/23/221 12:03:48] jefferson: don't need that password every time
+[12/23/221 12:04:03] jefferson: then press continue
+[12/23/221 12:04:06] jefferson: and wait
+[12/23/12-21 12:04:55] manuel: I'm on it.
+[12/23/12/221 12:12:12] manuel: all set
+[23.12.21 12:12:40] jefferson: reboot.
+[23.12.21 12:12:55] jefferson: and follow the instructions
+[12/23/12-21 12:13:21] manuel: okay.
+[12/23/221 12:14:11] jefferson: after rebooting you'll get a message about drivers maybe something
+[12/23/12/221 12:14:24] jefferson: open your driver manager and let it update if it finds something
+[12/23/12/21 12:14:45] jefferson: there will also be a window that says welcome...
+[12/23/12/221 12:15:06] jefferson: at the bottom right there will be a checkmark to open at system startup, uncheck it and close it. you don't need it
+[12/23/12/221 12:18:03] manuel: okay.
+[12/23/12/221 12:21:16] jefferson: well, everything will be new to you, but you'll have to do the minimum in this system
+[12/23/221/12:21:20] jefferson: so, you'll get used to it.)
+[12/23/221/12:21:39] jefferson: you'll have to get the files past the windup
+[12/23/12/221:21:40] manuel: Of course ))
+[12/23/12/221 12:22:47] jefferson: there's an icon in the right corner which looks like a shield - update manager
+[12/23/221 12:22:54] jefferson: Click it, then click ok
+[12/23/221 12:23:09] jefferson: it says something about update - update
+[12/23/12/221 12:23:22] manuel: I do
+[12/23.12.21 12:23:54] jefferson: as it will update the package, it will find a bunch of updates
+[12/23/221 12:23:56] jefferson: over 100
+[12/23/221 12:24:08] jefferson: press install updates
+[12/23/221 12:24:18] jefferson: wait for it to update the shit
+[12/23/12/221 12:24:32] manuel: Yeah it does
+[12/23/221 12:24:58] jefferson: well, when it's updated, reboot.
+[12/23/221 12:25:03] jefferson: I'll tell you what to do next
+[12/23/221 12:38:44] jefferson: every reboot, maybe the driver manager will pop up and tell you about some drivers. close it, nothing to update there
+[12/23/221 12:38:50] jefferson: at least for me
+[12/23/221 12:38:58] jefferson: but he hasn't found any drivers yet
+[12/23.12.21 12:39:27] manuel: okay, they're still pumping
+[12/23/221 12:41:42] jefferson: what about window size?
+[12/23/221 12:41:49] jefferson: normal or like a matchbox?
+[12/23/221 12:42:01] manuel: it's small.
+[23.12.21 12:42:17] jefferson: ah, well, when you reboot after the update, i'll tell you what to do next
+[12/23/221 12:42:28] jefferson: i had the same thing for some reason. although, some people don't
+[12/23/221 15:38:20] manuel: ready to continue if you have time for it.
+[12/23/221 15:38:47] jefferson: a little later, I have to leave for my business now
+[12/23/221 15:39:27] manuel: Okay.
+[24.12.21 13:11:02] manuel: are you in js_bk group?
+[24.12.21 13:11:20] jefferson: yes
+[24.12.21 13:11:34] manuel: ok, nicholas answered.

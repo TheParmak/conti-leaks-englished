@@ -1,0 +1,164 @@
+[15.09.21 10:47:29] basil: Ghbdtncnde.
+[15.09.21 10:47:33] basil: Hello.
+[15.09.21 10:53:58] manuel: Hi.
+[15.09.21 10:55:47] basil: Elroy wrote here. Said that kind of crypt doesn't work on some shellcode. Now tested on test files from cryptopanel. It worked correctly. Have you checked the shellcode itself for functionality?
+[15.09.21 11:06:02] manuel: Yes. The other stub works.
+[15.09.21 11:07:00] basil: Okay. To know which entry point to use and how to test it
+[15.09.21 11:07:02] basil: ?
+[15.09.21 11:07:37] manuel: How to send?
+[15.09.21 11:08:29] basil: well, maybe via file sharing
+[15.09.21 11:43:50] manuel: Here are the sources.
+[15.09.21 11:44:00] manuel: ``
+https://privatlab.com/s/v/Jryzjal7anC4YAZQpkWM
+pass: 111999
+```
+[15.09.21 11:44:11] manuel: I need a shk with entry point StartW
+[9/15/21 11:44:37] basil: Okay. But I'll download a little later.
+[15.09.21 11:44:50] manuel: ok.
+[16.09.21 13:33:13] manuel: prvieth.
+[16.09.21 13:33:31] manuel: I want to ask you about 2 stubs for crypt shk-eche 64 and shk-dll64
+[16.09.21 13:33:33] basil: hello
+[16.09.21 13:33:58] manuel: is there a possibility to crypt by hand at least dll?
+[16.09.21 13:35:08] basil: I can try again. But so far unfortunately falls down.
+[16.09.21 13:35:58] basil: what do you know?
+[16.09.21 13:36:44] manuel: I can send you source code to crypto.
+[16.09.21 13:36:54] basil: if you can
+[16.09.21 13:37:01] manuel: Where can I send it?
+[16.09.21 13:37:28] basil: well, it's especially important to me. Wherever is more convenient for you.
+[16.09.21 13:37:52] manuel: tab in cryptopanel
+[16.09.21 13:38:00] manuel: But let's archive it here
+[16.09.21 13:38:09] basil: entry point StartW? Isn't it right?
+[16.09.21 13:38:20] basil: password is strong
+[16.09.21 13:38:29] manuel: Yes.
+[16.09.21 13:38:41] basil: http://www.onlinepasswordgenerator.ru/
+[16.09.21 13:39:05] basil: 30 characters
+[16.09.21 13:39:51] basil: or more
+[16.09.21 13:40:40] manuel: ``
+pass: IGREMPKXR1g%NXQQ$uYS@O{VgwENsV
+https://privatlab.com/s/v/8RqBWMzYg6hl95RJBEwQ
+```
+[16.09.21 13:40:44] manuel: `` here
+[16.09.21 13:41:06] basil: ok.
+[16.09.21 13:42:29] basil: I don't understand something. And what's the difference between the source file and those files that were before?
+[16.09.21 13:44:01] basil: or by "source" you mean something else?
+[16.09.21 13:54:04] manuel: yeah, the engine builds a new one for each new server
+[16.09.21 13:54:21] manuel: content is different, but type is the same
+[16.09.21 13:55:02] basil: exe and dll as I understand previous versions?
+[16.09.21 13:55:21] basil: okay, I'll try again
+[16.09.21 13:55:55] manuel: yeah
+[16.09.21 13:56:31] basil: it's confusing, of course, that everything is correct on the test file
+[16.09.21 13:56:56] manuel: yeah
+[16.09.21 14:06:10] basil: one more question. In cryptopanel, when you crypt a file, with which profile?
+[16.09.21 14:38:25] manuel: dll_shellcode-rundll_64_crypter2 and exe_shellcode_64_crypter2
+[16.09.21 14:39:01] basil: I'll come back to this task. Right now cleaning
+[16.09.21 14:53:37] manuel: Welcome.
+[17.09.21 15:00:19] basil: welcome
+[17.09.21 15:00:36] manuel: Hi.
+[17.09.21 15:01:35] basil: there is a request. try to make a build. on the SHK, which sent me. Elroy says, it seems to work.
+[17.09.21 15:15:55] manuel: ``
+FD^ygvdhsjkfb239fu7bhsjdbfgkj2hb4gl;shdjkghb3k4jhb
+https://privatlab.com/s/v/bYmwDL5AayFApwXyB0oM
+```
+[17.09.21 15:16:04] manuel: StartW entry point
+[17.09.21 15:16:11] manuel: dll x64
+[17.09.21 15:21:12] basil: which one is dll?
+[17.09.21 15:21:43] manuel: both in dll from shk
+[17.09.21 15:21:46] manuel: both shk
+[17.09.21 15:41:22] basil: i.e. beacon.dll?
+[17.09.21 15:41:42] basil: Those are builds right?
+[17.09.21 15:42:10] manuel: Yes pyload and beacon
+[17.09.21 15:45:21] basil: but I'll tell you that exported StartW function isn't there
+[17.09.21 15:46:14] manuel: in shk?
+[17.09.21 15:47:35] basil: I disassembled beacon.dll - no such function there
+[17.09.21 15:48:43] manuel: And in another file?
+[17.09.21 15:50:42] basil: the second file is not a dll, there's even no header
+[9/20/21/221 17:02:29] manuel: Good evening. Can you help me? Crypts won't build with stub dll_rundll_crypter4. Error failed and I was biling recently
+[20.09.21 17:02:51] basil: so it's not really my crypt
+[20.09.21 17:03:10] basil: my crypt2
+[20.09.21 17:03:36] manuel: Who do I knock 4 to?
+[20.09.21 17:04:03] basil: I think we should go to caroll
+[20.09.21 17:04:16] manuel: ok
+[20.09.21 18:16:25] manuel: Can you crypto coba dll 64 bit?
+[20.09.21 18:16:51] basil: which profile?
+[20.09.21 18:17:07] manuel: rundll32
+[20.09.21 18:17:21] basil: output file?
+[20.09.21 18:17:50] manuel: where to send it?
+[20.09.21 18:17:58] basil: probably here
+[20.09.21 18:18:03] manuel: Right away.
+[20.09.21 18:19:07] manuel: ``
+pass: JHGDF8723gbfyhldkjbfjkh2b43kjugbfjkshb
+https://privatlab.com/s/v/M9o9OD460yf4Y728QVbG
+```
+[20.09.21 18:19:37] manuel: entry point: Start
+[20.09.21 18:19:52] basil: output file dll&
+[20.09.21 18:19:53] basil: ?
+[20.09.21 18:20:01] manuel: YES in dll&
+[20.09.21 18:20:16] basil: ok. now
+[20.09.21 18:20:21] basil: let's try it
+[20.09.21 18:23:29] basil: wait. in progress
+[20.09.21 18:29:04] basil: assembling
+[20.09.21 18:29:13] manuel: ok
+[20.09.21 18:31:45] basil: a little more
+[20.09.21 18:31:52] basil: should - should work
+[20.09.21 18:32:35] manuel: hopefully
+[20.09.21 18:33:48] basil: I'll send it now
+[20.09.21 18:34:30] basil: JHGDF8723gbfyhjldkjbfjkh2b43kjugfbjkshb
+[20.09.21 18:35:11] basil: https://file.io/0Um7193CSFgx
+[20.09.21 18:35:16] manuel: thanks
+[20.09.21 18:35:28] basil: it should be checked. Run in mind.
+[20.09.21 18:35:41] manuel: ok.
+[20.09.21 18:37:20] basil: if it works, please advise.
+[20.09.21 18:38:11] manuel: +
+[20.09.21 18:38:22] basil: + - it works
+[20.09.21 18:38:27] basil: or yes - answer
+[20.09.21 18:38:31] manuel: haven't tested yet
+[20.09.21 18:38:37] manuel: I'll let you know
+[20.09.21 19:32:39] basil: any feedback
+[20.09.21 19:34:56] manuel: I'll ask
+[20.09.21 19:36:01] manuel: They say it's okay
+[20.09.21 19:36:24] basil: okay. i'll send you a clean build
+[20.09.21 19:37:15] basil: https://dyncheck.com/scan/id/6e565b5e9042b2bc66f2d406b71ba3b1
+[20.09.21 19:37:55] basil: C85*i0{IJ1%xOa3IH*k@A@Jt9Ta*CF
+[9/20/19-21 19:38:20] basil: https://file.io/r8G8ymJOKG4R
+[20.09.21 19:38:55] manuel: Send password again
+[20.09.21 19:39:01] manuel: it ate
+[20.09.21 19:39:31] basil: ``
+C85*i0{IJ1%xOa3IH*k@A@Jt9Ta*CF
+```
+[20.09.21 19:40:06] manuel: good
+[20.09.21 19:40:08] manuel: thank you
+[23.09.21 12:52:58] manuel: manuel.
+[23.09.21 12:53:08] basil: hello
+[23.09.21 12:53:20] manuel: We got all the 32bit stubs are dirty
+[23.09.21 12:53:29] basil: I'm in the process of
+[9/23/221 12:53:29] manuel: I can't crypt files
+[23.09.21 12:53:35] basil: cleaning
+[23.09.21 12:53:42] basil: nick wrote
+[23.09.21 12:54:30] manuel: will you be able to do it today?
+[9/23/221 12:54:34] basil: I'm on it.
+[9/23/221 12:54:45] basil: I don't just sit around
+[23.09.21 12:54:53] basil: I'm in the process of
+[09/23/221 12:54:54] manuel: Got it. Waiting.
+[29.09.21 12:57:25] manuel: Hi. Tell me, whose stub dll_shellcode-rundll_64_crypter4?
+[29.09.21 12:57:31] manuel: It got dirty.
+[29.09.21 12:57:49] manuel: ``
+https://dyncheck.com/scan/id/22c00d69435f1b1c8e14ecc42fcb24b5
+```
+[29.09.21 13:02:20] basil: I got crypter2
+[12/30/21 10:15:26] basil: ghbdtncnde.
+[12/30/21 10:15:30] basil: hello
+[12/30/21 10:26:34] manuel: Hi.
+[12/30/21 10:26:58] basil: test
+[12/30/21 10:27:10] basil: can you hear me, can you see me?
+[12/30/21 10:27:12] manuel: Yeah.
+[12/30/21 10:27:20] manuel: Yeah.
+[12/30/21 10:27:29] manuel: Yes.
+[12/30/21 10:28:00] manuel: And so?
+[12/30/21 10:28:19] manuel: Yes.
+[12/30/21 10:28:27] manuel: there's e2e
+[12/30/21 10:37:49] manuel: Can you see?
+[12/30/21 10:38:13] basil: lf
+[12/30/21 10:38:15] basil: yes
+[12/30/21 10:38:27] basil: but I'm talking to someone else
+[12/30/21 10:38:30] basil: they're hired
+[12/30/21 10:39:03] manuel: okay.

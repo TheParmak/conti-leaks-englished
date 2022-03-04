@@ -1,0 +1,6531 @@
+2020-06-22T07:06:21 van -> bentley
+Hi! I built version 122 this morning, checked on autotest - all clear. Loider has 2 working pads left, the third one is green there, but it's not our server responding. So I'm waiting for what Buza has to say.
+
+2020-06-22T07:06:39 bentley -> van
+Ok
+
+2020-06-22T07:09:46 van -> bentley
+Bitdefender glitched in the autotest yesterday. Gave out red, even though there was a knockout. I ran it again and connected to the VM. No detects, everything works, but extremely slow. There was a knockout, the getinfo command was picked up, but didn't have time to execute... Bitdef is working today... Keep in mind.
+
+2020-06-22T07:10:05 bentley -> van
+Got it. Thanks )
+
+2020-06-22T08:03:50 van -> bentley
+Booza told me to give to crypto. Cooking.
+
+2020-06-22T08:04:01 bentley -> van
+Ok
+
+2020-06-22T08:07:33 van -> bentley
+Rseb(gcxdltnhqwW1
+Download: https://qaz.im/load/GYrY7d/QFHftF
+
+version 122, gr. 1
+
+2020-06-22T08:07:42 bentley -> van
+Ok.
+
+2020-06-22T09:05:23 van -> bentley
+I put together a backdoor with new gaskets. Pouring it in?
+
+2020-06-22T09:05:36 bentley -> van
+Yep
+
+2020-06-22T09:06:50 van -> bentley
+I'll check in the autotest?
+
+2020-06-22T09:07:01 bentley -> van
+Yep. no borrowing yet.
+
+2020-06-22T09:07:07 van -> bentley
+I'll be quick
+
+2020-06-22T09:37:21 van -> bentley
+checked - bot works, autotest released
+
+2020-06-22T09:37:32 bentley -> van
+Ok
+
+2020-06-22T09:37:36 bentley -> van
+Cryptem?
+
+2020-06-22T09:38:03 van -> bentley
+No, I checked it with the exe loafer
+
+2020-06-22T09:38:19 bentley -> van
+Do you have to crypt?
+
+2020-06-22T09:38:50 van -> bentley
+no bot, and I sent you the dll for crypting
+
+2020-06-22T09:39:04 bentley -> van
+Ok
+
+2020-06-22T12:29:42 van -> bentley
+something going on?
+
+2020-06-22T12:29:58 bentley -> van
+I'm updating the AV.
+
+2020-06-22T12:30:12 bentley -> van
+Then I will test the crypt
+
+2020-06-22T12:30:51 van -> bentley
+Yeah, will they be working today?
+
+2020-06-22T12:31:01 bentley -> van
+No
+
+2020-06-22T12:31:11 bentley -> van
+In two weeks. That's the plan for now.
+
+2020-06-22T12:31:31 van -> bentley
+What's with the crypt then?
+
+2020-06-22T12:31:53 bentley -> van
+I don't know.
+
+2020-06-22T12:32:08 van -> bentley
+oooo
+
+2020-06-22T15:22:50 van -> bentley
+did you do something with the crypt?
+
+2020-06-22T15:23:14 bentley -> van
+Just ran it on autotest
+
+2020-06-22T15:23:25 van -> bentley
+clearly
+
+2020-06-22T15:23:49 van -> bentley
+Booza said that crypto is needed for the upgrade.
+
+2020-06-22T15:24:12 bentley -> van
+For the update?
+
+2020-06-22T15:24:28 van -> bentley
+auto update lowers
+
+2020-06-22T15:24:45 bentley -> van
+А..
+
+2020-06-22T15:24:54 bentley -> van
+Now testing on autotests
+
+2020-06-22T15:25:00 bentley -> van
+testing
+
+2020-06-22T15:25:18 van -> bentley
+if the crypt goes, fill in the admin panel and put version 122
+
+2020-06-22T15:25:26 bentley -> van
+Ok
+
+2020-06-22T15:26:26 van -> bentley
+You updated the AV, now the detects will fall... Clean it tomorrow, I'll leave now, it's already the second shift )))
+
+2020-06-22T15:27:21 bentley -> van
+Let's see
+
+2020-06-22T15:41:56 bentley -> van
+With the updated DBs, all AVs are ok except for Webroot. Ran the autotest again
+
+2020-06-22T15:42:18 van -> bentley
+So...
+
+2020-06-22T15:42:26 bentley -> van
+06/22/2020 10:41:38 unarchived_static_detect: OK
+Failed to start file (possibly blocked by AV)
+System.InvalidOperationException: This command cannot be run due to the error: Access is denied.
+   at System.Management.Automation.MshCommandRuntime.ThrowTerminatingError(ErrorRecord errorRecord
+
+2020-06-22T15:42:30 bentley -> van
+Here's what it says
+
+2020-06-22T15:42:45 bentley -> van
+I'll check it with my hands.
+
+2020-06-22T15:42:57 van -> bentley
+You have to check in VM, maybe it's on autotest
+
+2020-06-22T15:43:09 van -> bentley
+yes
+
+2020-06-22T15:43:10 bentley -> van
+Yep launching )
+
+2020-06-22T15:43:23 van -> bentley
+write what you get
+
+2020-06-22T15:43:34 bentley -> van
+Yeah )
+
+2020-06-22T15:52:28 bentley -> van
+Yes, webroute crashes the loeder after saving it to disk
+
+2020-06-22T15:53:51 van -> bentley
+I.e. on crypt even. Why don't I run an autotest on an exe on it?
+
+2020-06-22T15:54:06 bentley -> van
+Yeah, let me roll it back first.
+
+2020-06-22T15:54:18 van -> bentley
+write as soon as you can
+
+2020-06-22T15:54:29 bentley -> van
+Run it )
+
+2020-06-22T15:56:15 van -> bentley
+ran
+
+2020-06-22T16:11:24 bentley -> van
+And ankritp - ok
+
+2020-06-22T16:11:30 van -> bentley
+Yep
+
+2020-06-22T16:12:40 van -> bentley
+I'm off to bed then ))) See you tomorrow!
+
+2020-06-22T16:13:04 bentley -> van
+See you tomorrow. Let's try recrypting then and if ok - upload?
+
+2020-06-22T16:13:11 van -> bentley
+Yep
+
+2020-06-22T16:40:33 bentley -> van
+Did
+
+2020-06-23T04:26:56 bentley -> van
+Did
+
+2020-06-23T07:26:11 van -> bentley
+Hi! )
+
+2020-06-23T07:26:26 bentley -> van
+Hi!
+
+2020-06-23T07:27:44 van -> bentley
+Buza said that while they will not work I am engaged in modification of the Lowder.
+
+2020-06-23T07:27:56 bentley -> van
+Got it.
+
+2020-06-23T07:28:51 bentley -> van
+Okay
+
+2020-06-23T07:29:19 van -> bentley
+If I need to test it, I'll ask you.
+
+2020-06-23T07:29:29 bentley -> van
+Good\.
+
+2020-06-26T07:46:50 van -> bentley
+Hi! ))) Still at work )))
+
+2020-07-02T06:29:38 van -> bentley
+Hi! )))
+
+2020-07-02T06:38:44 bentley -> van
+Hi
+
+2020-07-02T06:38:55 bentley -> van
+almost everything works on vm except eta
+
+2020-07-02T06:47:57 van -> bentley
+Yep
+
+2020-07-02T06:48:34 bentley -> van
+crypt the loeder today for the test
+
+2020-07-02T06:48:50 van -> bentley
+Yes, I will.
+
+2020-07-02T06:53:14 van -> bentley
+Green sent the spacers, I'll check them out and put together a lowader.
+
+2020-07-02T06:56:14 bentley -> van
+ok
+
+2020-07-02T07:35:12 van -> bentley
+Rseb(gcxdltnhqwW1
+Download: https://qaz.im/load/seh5SY/z4fHY5
+
+Loider and backdoor version 124 (backdoor has a new version now and may differ from the loider version), group 1.
+It is necessary to fill this backdoor, the old one has dead gaskets.
+
+2020-07-02T07:44:43 bentley -> van
+ok
+
+2020-07-02T08:00:58 van -> bentley
+Something about the autotest is glitchy, I think. When you test it, we'll see... Are you going to test crypt today?
+
+2020-07-02T08:01:19 bentley -> van
+yes I will
+
+2020-07-02T08:01:28 van -> bentley
+uh-huh
+
+2020-07-02T08:09:43 van -> bentley
+Listen, here's the thing. I have another backdoor, to work through a local proxy. It needs to be tested for functionality on all the commands. Let's test what I sent, and then we need to upload a new backdoor, run the loader manually and run it in a full circle. And this is urgent, Booza wants to get this new backdoor working on Monday. Can we do it?
+
+2020-07-02T08:13:49 bentley -> van
+Sure ))
+
+2020-07-02T08:14:11 van -> bentley
+great!!! )))
+
+2020-07-03T19:51:23 bentley -> van
+New BC hangs on Get_SystemInfo command 03.07.2020 19:22 waiting getinfo 60
+
+2020-07-03T19:51:31 bentley -> van
+Still no answer.
+
+2020-07-03T19:51:37 bentley -> van
+There was no detection.
+
+2020-07-03T19:51:48 bentley -> van
+https://scrytnuuszglaugg.onion/bots/command?id=2462da0d811a1325b4bb1ab816ec6e20
+
+2020-07-04T04:52:52 bentley -> van
+New BC hangs on Get_SystemInfo command 03.07.2020 19:22 waiting getinfo 60
+
+2020-07-04T04:52:52 bentley -> van
+Still no answer.
+
+2020-07-04T04:52:52 bentley -> van
+There was no detection.
+
+2020-07-04T04:52:52 bentley -> van
+https://scrytnuuszglaugg.onion/bots/command?id=2462da0d811a1325b4bb1ab816ec6e20
+
+2020-07-09T07:31:21 van -> bentley
+Question about Swift. He's my mentee too. Is he giving you anything? He has a test group of five. I don't see any life in it.
+
+2020-07-12T12:48:41 van -> bentley
+Hi!
+All the gaskets are good.
+I've built the loader-backdoor.
+Try crypting ld1.dll anyway.
+
+Dfnc(fdsw32bh.
+
+Download: https://qaz.im/load/6kzyre/r26N9a
+Delete: https://qaz.im/index.php?a=delete&q=2024875036
+
+2020-07-12T16:22:59 van -> bentley
+Hi!
+All the gaskets are good.
+I built the loader-backdoor.
+Try crypting ld1.dll anyway.
+
+Dfnc(fdsw32bh.
+
+Download: https://qaz.im/load/6kzyre/r26N9a
+Delete: https://qaz.im/index.php?a=delete&q=2024875036
+
+2020-07-12T16:24:49 bentley -> van
+Thank you!
+
+2020-07-12T16:58:10 bentley -> van
+Thank you!
+
+2020-07-13T18:10:11 bentley -> van
+Also, Target complains that the dll doesn't knock either.
+
+2020-07-13T18:10:12 bentley -> van
+Bot 43102a4d46433031ec0253c22cacc4ff
+
+2020-07-13T18:10:19 bentley -> van
+Run_DLL 13.07.2020 17:57 done rundll 0 StartW ___1__rundll32.dll
+pid: 6944
+msg: program is running
+
+2020-07-13T18:10:28 bentley -> van
+Does it matter how big the dll is?
+
+2020-07-13T18:12:57 bentley -> van
+regsvr32 dll name StartW
+
+2020-07-13T18:14:30 bentley -> van
+ <target> https://scrytnuuszglaugg.onion/bots/command?id=f2641f034afc9c30db00ca46195770f7
+[01:13:07] <target> here
+[01:13:09] <target> here's the team
+[01:13:19] <target> __-1___dll32 dll
+[01:13:27] <target> in general
+[01:13:30] <target> a week ago 1 day everything worked)
+[01:13:32] <bentley> pid: 76884
+msg: program is running
+[01:13:35] <target> guys were writing
+[01:13:44] <target> it's what
+[01:13:46] <target> that means)
+[01:13:59] <bentley> command started
+
+[01:14:12] <target> I understand
+[01:14:14] <target> but in koba 0
+
+2020-07-13T18:15:01 bentley -> van
+<target> and out of 10-15 dll commands there are 10 commands and 5 exe commands
+[01:14:25] <target> all 0
+[01:14:27] <target> in the cob
+
+2020-07-13T18:28:15 bentley -> van
+<target> after commands in uk
+[01:16:16] <target> all kinds of things fly into the coba
+[01:16:17] <target> WIN-
+[01:16:18] <target> PC-
+[01:16:20] <target> i.e. Honeypots
+[01:16:23] <target> 10 units already arrived
+
+2020-07-14T03:10:40 bentley -> van
+Also, Target complains that the dll doesn't knock either.
+
+2020-07-14T03:10:40 bentley -> van
+Bot 43102a4d46433031ec0253c22cacc4ff
+
+2020-07-14T03:10:40 bentley -> van
+Run_DLL 13.07.2020 17:57 done rundll 0 StartW ___1__rundll32.dll
+pid: 6944
+msg: program is running
+
+2020-07-14T03:10:40 bentley -> van
+Does it matter how bit-rate the dll is?
+
+2020-07-14T03:10:40 bentley -> van
+regsvr32 dll name StartW
+
+2020-07-14T03:10:40 bentley -> van
+ <target> https://scrytnuuszglaugg.onion/bots/command?id=f2641f034afc9c30db00ca46195770f7
+[01:13:07] <target> here
+[01:13:09] <target> here's the team
+[01:13:19] <target> __-1___dll32 dll
+[01:13:27] <target> in general
+[01:13:30] <target> a week ago 1 day everything worked)
+[01:13:32] <bentley> pid: 76884
+msg: program is running
+[01:13:35] <target> guys were writing
+[01:13:44] <target> it's what
+[01:13:46] <target> that means)
+[01:13:59] <bentley> command started
+
+[01:14:12] <target> I understand
+[01:14:14] <target> but in koba 0
+
+2020-07-14T03:10:40 bentley -> van
+<target> and out of 10-15 dll commands there are 10 commands and 5 exe commands
+[01:14:25] <target> all 0
+[01:14:27] <target> in the cob
+
+2020-07-14T03:10:40 bentley -> van
+<target> after commands in uk
+[01:16:16] <target> all sorts fly into the coba
+[01:16:17] <target> WIN-
+[01:16:18] <target> PC-
+[01:16:20] <target> i.e. Honeypots
+[01:16:23] <target> 10 units already arrived
+
+2020-07-15T08:14:34 bentley -> van
+Hi.
+
+2020-07-15T08:15:39 van -> bentley
+Hi! )))
+
+Dfnc(fdsw32bh.
+
+Download: https://qaz.im/load/8hDASi/ed2NnB
+
+2020-07-15T08:15:50 van -> bentley
+new assembly
+
+2020-07-15T08:16:08 bentley -> van
+Yesterday there were constant detections. Maybe it's a crypt bug or maybe it's a bug that the lowers itself can't handle. No idea.
+
+2020-07-15T08:17:19 van -> bentley
+I don't know... clean it, maybe...
+
+2020-07-15T08:34:33 van -> bentley
+were the detects on all the AVs?
+
+2020-07-15T08:34:51 bentley -> van
+What's interesting is that there were no detects on the avs except for webroute
+
+2020-07-15T08:34:58 bentley -> van
+And Target's is all screwed up.
+
+2020-07-15T08:35:31 van -> bentley
+riddle
+
+2020-07-15T08:35:37 bentley -> van
+Yes
+
+2020-07-15T08:36:08 van -> bentley
+Didn't they knock? Were they launching new bots?
+
+2020-07-15T08:36:35 bentley -> van
+Not knocked and detected when downloading from the link
+
+2020-07-15T08:37:27 van -> bentley
+How do you see the detection when you download from the link?
+
+2020-07-15T08:38:17 bentley -> van
+Just a direct link to the echetype
+
+2020-07-15T08:38:18 bentley -> van
+https://porceletta-ware.com/DocPreview.exe
+
+2020-07-15T08:38:27 bentley -> van
+When you download a file from it, it immediately detects the file
+
+2020-07-15T08:38:34 bentley -> van
+NOT saving
+
+2020-07-15T08:39:03 van -> bentley
+ahh
+
+2020-07-15T08:39:20 van -> bentley
+This is how the crypt detects in this case
+
+2020-07-15T08:39:47 van -> bentley
+our crypts are getting old, it seems (((
+
+2020-07-15T08:40:48 bentley -> van
+Got it
+
+2020-07-15T08:41:42 van -> bentley
+it was a while ago: they were running, detects, no knocking... the other day 75k knocked... mystery...
+
+2020-07-15T08:41:57 bentley -> van
+Yep
+
+2020-07-15T08:42:43 van -> bentley
+try yesterday's crypt through dincheck
+
+2020-07-15T08:43:09 van -> bentley
+in statics, of course.
+
+2020-07-15T08:44:00 bentley -> van
+Yes it is possible and dynamics
+
+2020-07-15T08:44:16 bentley -> van
++ corp av
+
+2020-07-15T08:44:36 van -> bentley
+try it, you have to do something )))
+
+2020-07-15T08:44:46 bentley -> van
+Started a full set )
+
+2020-07-15T08:45:12 van -> bentley
+where?
+
+2020-07-15T08:46:04 van -> bentley
+in the dincheck or in the autotest?
+
+2020-07-15T08:46:04 bentley -> van
+On the others tab
+
+2020-07-15T08:46:10 bentley -> van
+B nj b nj
+
+2020-07-15T08:46:13 bentley -> van
+Both
+
+2020-07-15T08:46:20 van -> bentley
+Yep
+
+2020-07-15T08:46:34 bentley -> van
+Static is clean
+
+2020-07-15T08:46:52 van -> bentley
++++
+
+2020-07-15T08:57:25 bentley -> van
+11 detects on the dynamics
+
+2020-07-15T08:57:25 bentley -> van
+https://dyncheck.com/scan/id/79094d22a4b76c1b818e352b2963c9f6
+
+2020-07-15T09:00:23 van -> bentley
+Were there any before? I haven't checked in dynamics on dincheck
+
+2020-07-15T09:00:39 van -> bentley
+like - leaks at dynamics...
+
+2020-07-15T09:00:53 van -> bentley
+What is stopping you from draining when static?
+
+2020-07-15T09:01:28 bentley -> van
+Yes it used to be, but usually 3-5
+
+2020-07-15T09:03:11 van -> bentley
+webroot autotest is red
+
+2020-07-15T09:03:27 bentley -> van
+Yeah and it says he took down the file
+
+2020-07-15T09:03:39 van -> bentley
+yes
+
+2020-07-15T09:03:46 bentley -> van
++ on the dynamometer also detects
+
+2020-07-15T09:03:56 bentley -> van
+I'll update now and check the new crypt
+
+2020-07-15T09:04:04 van -> bentley
+Yep
+
+2020-07-15T09:09:18 bentley -> van
+Detect only on webroot.
+
+2020-07-15T09:09:25 bentley -> van
+Avast did not fully work
+
+2020-07-15T09:09:43 bentley -> van
+Def didn't get the file. I'm going to update the whole farm and check more on DEF
+
+2020-07-15T09:10:06 van -> bentley
+I connected to avast, no detects, and there was no startup
+
+2020-07-15T09:10:14 bentley -> van
+Ahh
+
+2020-07-15T09:10:26 bentley -> van
+There seems to be a problem with avast scripts
+
+2020-07-15T10:34:20 bentley -> van
+Webroot tears down the loeder with the new crypt
+
+2020-07-15T10:34:58 van -> bentley
+Can I try it?
+
+2020-07-15T10:35:21 bentley -> van
+Got off the webroot. There's also an autotest spinning.
+
+2020-07-15T10:35:40 van -> bentley
+Yep
+
+2020-07-15T10:36:19 bentley -> van
+It's over.
+
+2020-07-15T10:36:32 van -> bentley
+Trying
+
+2020-07-15T10:36:34 bentley -> van
+Didn't I tell you he lives on his own car? Webroot
+
+2020-07-15T10:36:47 van -> bentley
+no
+
+2020-07-15T10:37:04 bentley -> van
+173.232.146.236:31009
+
+2020-07-15T10:37:06 bentley -> van
+password
+
+2020-07-15T10:37:10 bentley -> van
+JohnJackson
+
+2020-07-15T10:37:18 van -> bentley
+Yeah, thanks
+
+2020-07-15T10:37:38 bentley -> van
+On the virtual box server it is called Webroot win10
+
+2020-07-15T10:37:49 van -> bentley
+Yep
+
+2020-07-15T10:50:10 van -> bentley
+I got disconnected from the VM and can't connect anymore ...
+
+2020-07-15T10:50:42 van -> bentley
+I will restart the VM.
+
+2020-07-15T10:50:49 bentley -> van
+Yep
+
+2020-07-15T10:51:48 van -> bentley
+I will manually try to run the loeder
+
+2020-07-15T10:51:56 bentley -> van
+Ok
+
+2020-07-15T11:06:22 van -> bentley
+Look, I turned off the VM when the autotest wasn't over yet. Turned it on, logged in, and what I see: from the scramble loader started. Tapped the bot, the command I gave him - everything is fine.
+
+2020-07-15T11:06:56 van -> bentley
+Can you roll back the VM to check again?
+
+2020-07-15T11:07:10 bentley -> van
+Yep
+
+2020-07-15T11:07:24 van -> bentley
+I'm confused by your kickbacks )))
+
+2020-07-15T11:07:24 bentley -> van
+rolled back
+
+2020-07-15T11:07:34 van -> bentley
+how so fast!!!
+
+2020-07-15T11:08:00 bentley -> van
+Yes there is a button to press to restore the image and that's it
+
+2020-07-15T11:08:43 van -> bentley
+where is that button???
+
+2020-07-15T11:10:22 bentley -> van
+Choose a car - Top right Snapshots - Select Snapshot Number (number of minutes) highlight it and click above button restore snapshot
+
+2020-07-15T11:10:51 van -> bentley
+Ahhhh, that's it... 
+
+2020-07-15T11:41:16 van -> bentley
+All bad. From zakrepa everything was fine, i.e. the dynamics is normal, but the disk from the archive does not allow to pull - tear down. I must try to cripto pick up. If it does not work, I will try to look for what screams.
+
+2020-07-15T11:42:09 bentley -> van
+I'll write to Deploy.
+
+2020-07-15T11:46:03 van -> bentley
+are you crypting the dll?
+
+2020-07-15T11:46:31 bentley -> van
+yes gave the dll
+
+2020-07-15T11:46:39 bentley -> van
+Deploy, says redo.
+
+2020-07-15T11:46:50 van -> bentley
+OK, we'll check it out.
+
+2020-07-15T11:51:05 bentley -> van
+ran a test of the new crypt
+
+2020-07-15T11:51:34 van -> bentley
+you're fast
+
+2020-07-15T12:04:14 van -> bentley
+is the autotest broken?
+
+2020-07-15T12:10:37 bentley -> van
+strange
+
+2020-07-15T12:20:00 bentley -> van
+Ran it again
+
+2020-07-15T12:20:42 van -> bentley
+Yep
+
+2020-07-15T12:26:35 bentley -> van
+AV: Webroot Version 9.0.28.48
+File was removed by AV
+
+2020-07-15T12:26:49 bentley -> van
+Not crypted it turns out
+
+2020-07-15T12:26:53 van -> bentley
+yes, I see
+
+2020-07-15T12:27:26 van -> bentley
+it turns out - yes
+
+2020-07-15T12:27:54 bentley -> van
+Are you going to redo it?
+
+2020-07-15T12:28:53 van -> bentley
+I will, but it takes a long time, so you try something too, or use as is. Webroots don't stand for anything.
+
+2020-07-15T12:29:04 bentley -> van
+Ok
+
+2020-07-15T12:30:04 van -> bentley
+I'd like a VM with Webroot for tomorrow... can i?
+
+2020-07-15T12:30:13 bentley -> van
+Sure ))
+
+2020-07-15T12:30:23 van -> bentley
+great
+
+2020-07-15T12:39:20 van -> bentley
+How do I add Webroot to the exceptions file? I want to autoclimate the lowder tomorrow.
+
+2020-07-15T12:39:50 bentley -> van
+Didn't do it have to look
+
+2020-07-15T12:40:06 van -> bentley
+I couldn't find it (((
+
+2020-07-15T14:12:16 van -> bentley
+how are you doing?
+
+2020-07-15T14:12:47 bentley -> van
+Doing a crypt but so far not one is coming in. Cursed for a virus when saving.
+
+2020-07-15T14:13:15 van -> bentley
+Under Webroot?
+
+2020-07-15T14:13:31 bentley -> van
+No from the link when downloading
+
+2020-07-15T14:13:41 van -> bentley
+ahh
+
+2020-07-15T14:14:06 van -> bentley
+What's on the autotest?
+
+2020-07-15T14:14:27 bentley -> van
+All clear except the vbrut
+
+2020-07-15T14:14:32 van -> bentley
+clearly
+
+2020-07-15T15:11:14 van -> bentley
+Will they be working today?
+
+2020-07-15T16:03:55 van -> bentley
+Are you very busy?
+
+2020-07-15T16:05:44 bentley -> van
+There's a shipment coming in from Target.
+
+2020-07-15T16:05:48 bentley -> van
+Look in Admin
+
+2020-07-15T16:06:04 van -> bentley
+ok
+
+2020-07-16T07:38:50 van -> bentley
+Hi! )))
+Dfnc(fdsw32bh.
+
+Download: https://qaz.im/load/6tQBZA/rnED2i
+
+The VM panel is not working this morning, I could not turn on the VM with Webroot and test. Alas. What was going on yesterday?
+
+2020-07-17T06:58:52 van -> bentley
+Hi, I'm waiting for an address from Green.
+
+2020-07-17T06:59:32 bentley -> van
+Prviet ok
+
+2020-07-17T07:10:46 bentley -> van
+Testing the Swift build yesterday
+
+2020-07-17T07:10:53 bentley -> van
+everything goes on the Def.
+
+2020-07-17T07:10:58 bentley -> van
+With a clinch
+
+2020-07-17T07:11:15 van -> bentley
+great
+
+2020-07-17T07:11:42 bentley -> van
+Now we just need to figure out how the avs will work
+
+2020-07-17T07:11:49 bentley -> van
+Let's make a crypt
+
+2020-07-17T07:11:53 bentley -> van
+Yesterday's one went down the drain.
+
+2020-07-17T07:12:09 van -> bentley
+Is Swift's functionality okay?
+
+2020-07-17T07:12:17 bentley -> van
+On the def, yes.
+
+2020-07-17T07:12:24 bentley -> van
+I'll check on others.
+
+2020-07-17T07:12:24 van -> bentley
+very well
+
+2020-07-17T07:12:35 bentley -> van
+Only the domain request doesn't work correctly
+
+2020-07-17T07:12:41 bentley -> van
+Microsoft Windows [Version 10.0.19041.388] (c) 2020 Microsoft Corporation. All rights reserved. C:\Users\TST10ENG\Downloads\team9_restart_loader>net view /all /domain System error 6118 has occurred. The list of servers for this workgroup is not available C:\Users\TST10ENG\Downloads
+
+2020-07-17T07:12:46 bentley -> van
+Instead of a domain name
+
+2020-07-17T07:13:00 van -> bentley
+Yeah, I saw it, I'll tell him. Or have you already told him?
+
+2020-07-17T07:13:09 bentley -> van
+No, I'll write it now.
+
+2020-07-17T07:13:13 van -> bentley
+ok
+
+2020-07-17T07:15:46 bentley -> van
+Email
+
+2020-07-17T07:16:10 van -> bentley
+Yep
+
+2020-07-21T06:50:55 van -> bentley
+Hi! ))) One address has changed in the loader and bot. New build. )))
+Dfnc(fdsw32bh.
+Download: https://qaz.im/load/iieQKy/tBR8Nr
+
+2020-07-21T06:51:27 bentley -> van
+Hi. Okay
+
+2020-07-21T06:51:31 van -> bentley
+I have a question. Are you testing modular bots?
+
+2020-07-21T06:51:42 bentley -> van
+How's that?
+
+2020-07-21T06:51:51 bentley -> van
+Are you referring to the trike?
+
+2020-07-21T06:53:02 van -> bentley
+I have it called modular bot in my TOR). It runs dll-modules, which it downloads from the admin area of some kind.
+
+2020-07-21T06:53:50 van -> bentley
+Buza said that there is an autotest run for it - you choose Regular
+
+2020-07-21T06:54:29 bentley -> van
+Oh well, then yes. That's me.
+
+2020-07-21T06:55:48 van -> bentley
+I wrote this bot three months ago. I tested it in chunks, of course, but not as a whole. Not sure how best to approach this testing. Can you help?
+
+2020-07-21T06:56:30 bentley -> van
+Yes. Describe what this bot does
+
+2020-07-21T06:57:15 bentley -> van
+What dlls does it load? Is there a loading sequence?
+
+2020-07-21T06:57:19 van -> bentley
+Why don't I just send you the ToR? There's a lot written there.
+
+2020-07-21T06:57:26 bentley -> van
+Come on ))
+
+2020-07-21T06:57:32 van -> bentley
+Thanks!!!!!!!
+
+2020-07-21T06:57:44 bentley -> van
+Let's test it today
+
+2020-07-21T06:57:55 van -> bentley
+I'll get it ready in a minute. Great!
+
+2020-07-21T06:59:18 van -> bentley
+Buza suggested yesterday that I finish this bot while there's a lull with the hackers. So I blew the whistle. )))
+
+2020-07-21T06:59:47 bentley -> van
+Great!!! I love the movement and new assignments ))
+
+2020-07-21T07:42:40 van -> bentley
+Dfnc(fdsw32bh.
+Download: https://qaz.im/load/DQKshi/yh44nG
+
+In the folder TK and bot. In the TK, there is also a lowader, but I have not written it yet, only the bot. In general, in the TOR
+A lot is written, not everything was for me. Check it out, maybe you can check something...
+
+2020-07-21T07:50:36 bentley -> van
+ok
+
+2020-07-21T07:56:30 van -> bentley
+Also. The modular bot has a basic built-in config with addresses. Maybe they are out of date. In general, it will be seen. Better to run a logged one, I guess...
+
+2020-07-21T08:01:02 bentley -> van
+okay
+
+2020-07-21T08:41:29 van -> bentley
+You know what else. Please upload a newer crypto loader x64 to the admin area, there's an old one with dead addresses. Maybe someone will upgrade.
+
+2020-07-21T08:52:03 bentley -> van
+ok
+
+2020-07-22T14:53:08 bentley -> van
+ 0938tju90ilkfd
+ 
+  Download: https://qaz.im/load/eKh5iD/2b6ey7
+  Delete: https://qaz.im/index.php?a=delete&q=421228115
+
+2020-07-22T18:13:44 bentley -> van
+ 0938tju90ilkfd
+ 
+  Download: https://qaz.im/load/eKh5iD/2b6ey7
+  Delete: https://qaz.im/index.php?a=delete&q=421228115
+
+2020-07-23T07:14:58 van -> bentley
+Hi! ))) The addresses are all old. I will reassemble it now anyway, change the version. I'll send.
+
+2020-07-23T07:17:57 bentley -> van
+Hi. Ok
+
+2020-07-23T07:40:49 van -> bentley
+Dfnc(fdsw32bh.
+
+Download: https://qaz.im/load/yyAtE4/SbNbNs
+
+2020-07-23T07:49:00 van -> bentley
+Buza said he was told by Target that there's a new campaign Monday through Wednesday. Gotta get ready )))).
+
+2020-07-23T08:21:55 bentley -> van
+That's good ))
+
+2020-07-23T08:22:06 van -> bentley
+Yep
+
+2020-07-23T08:30:31 van -> bentley
+I took a VM with Avast today to test a bot mod. Rolled it back. Is it possible to get some VM for a couple of hours now?
+
+2020-07-23T08:31:04 bentley -> van
+Go for it. Any one. I'm not going to test it yet.
+
+2020-07-23T08:31:12 van -> bentley
+thanks
+
+2020-08-06T17:27:31 bentley -> van
+Everything worked for swift. No errors or detects. Everything is clear.)
+
+2020-08-07T01:57:38 bentley -> van
+Everything worked for swift. No errors or detects. Everything is clear.)
+
+2020-08-07T06:49:49 bentley -> van
+Hi.
+
+2020-08-07T06:49:53 bentley -> van
+Did it come?
+
+2020-08-07T06:50:40 van -> bentley
+Hi!!! ))) Aha!!! Great!!!
+
+2020-08-07T06:50:52 bentley -> van
+Okay. You can give it out to Paul )
+
+2020-08-07T06:51:05 van -> bentley
+Super duper!
+
+2020-08-07T06:52:41 van -> bentley
+I ran the autotest again today. All passed, except Yeset - this one didn't start, 30 minutes hung on, and then it was over.
+
+2020-08-07T06:52:53 bentley -> van
+Avast passed?
+
+2020-08-07T06:52:56 van -> bentley
+yes
+
+2020-08-07T06:53:13 bentley -> van
+I'll see if there's anything I can do.
+
+2020-08-07T06:53:25 van -> bentley
+wouldn't be bad... )))
+
+2020-08-07T07:41:25 van -> bentley
+Pall is all excited and wants to run it himself today. Does he have a band?
+
+2020-08-07T07:41:39 bentley -> van
+I don't know.
+
+2020-08-07T07:41:42 bentley -> van
+Now
+
+2020-08-07T07:41:57 van -> bentley
+We have to wait for Talar, it seems...
+
+2020-08-07T07:42:19 bentley -> van
+Yes.
+
+2020-08-07T07:42:23 bentley -> van
+Can't do without it.
+
+2020-08-07T07:43:22 van -> bentley
+Stern doesn't show up, is he on vacation too?
+
+2020-08-07T07:43:29 van -> bentley
+don't you know?
+
+2020-08-07T07:43:55 bentley -> van
+Didn't see it yesterday, was there the day before yesterday, and today I think it will be there, too.
+
+2020-08-07T07:44:28 van -> bentley
+He doesn't give his salary, he must have decided to kick him out...
+
+2020-08-07T07:44:39 bentley -> van
+When does he usually give it to you?
+
+2020-08-07T07:45:38 van -> bentley
+On the 1st and 15th.
+
+2020-08-07T07:45:52 bentley -> van
+1 didn't give?
+
+2020-08-07T07:45:55 van -> bentley
+no
+
+2020-08-07T07:46:03 bentley -> van
+Are you a scribbler?
+
+2020-08-07T07:46:07 van -> bentley
+no
+
+2020-08-07T07:46:16 bentley -> van
+We have to write
+
+2020-08-07T07:46:21 bentley -> van
+I write myself every time
+
+2020-08-07T07:46:22 van -> bentley
+right?
+
+2020-08-07T07:46:27 bentley -> van
+Please yes
+
+2020-08-07T07:46:32 van -> bentley
+but what do you write????
+
+2020-08-07T07:46:38 bentley -> van
+I ask for a salary.
+
+2020-08-07T07:46:51 bentley -> van
+How do you get it? did he write it himself?
+
+2020-08-07T07:47:04 van -> bentley
+he himself always
+
+2020-08-07T07:47:10 bentley -> van
+Weird.
+
+2020-08-07T07:47:16 bentley -> van
+I write myself all the time.
+
+2020-08-07T07:47:21 bentley -> van
+Write to him when he arrives.
+
+2020-08-07T07:47:36 van -> bentley
+Was that allowed?
+
+2020-08-07T07:47:42 bentley -> van
+Well, yeah
+
+2020-08-07T07:47:53 van -> bentley
+and in what words are you asking?
+
+2020-08-07T07:48:08 bentley -> van
+Just saying hello and asking for a salary.
+
+2020-08-07T07:48:31 van -> bentley
+Yeah, got it...
+
+2020-08-07T10:40:07 bentley -> van
+Have you sorted out the group for the floor?
+
+2020-08-07T10:41:09 van -> bentley
+Not yet.
+
+2020-08-07T10:42:55 van -> bentley
+I asked Talar. Poll himself didn't tell me, maybe he doesn't know. He hasn't been in the admin room, it seems.
+
+2020-08-07T10:43:10 bentley -> van
+What about Talar?
+
+2020-08-07T10:43:17 van -> bentley
+is silent for now
+
+2020-08-07T10:43:22 bentley -> van
+Ok
+
+2020-08-07T10:43:37 bentley -> van
+We should give it to Paul today )) We still have a crypt to do.
+
+2020-08-07T10:44:13 van -> bentley
+<talar> Hi. I don't know his nickname. It's encrypted.)
+
+2020-08-07T10:44:40 bentley -> van
+Whatever by nickname.
+
+2020-08-07T10:44:51 bentley -> van
+You can make a new user
+
+2020-08-07T10:45:58 bentley -> van
+The main thing is to get a free group
+
+2020-08-07T10:46:01 van -> bentley
+Write to Talar, please. How about a group of 5 to make?
+
+2020-08-07T10:46:03 bentley -> van
+And make a BC.
+
+2020-08-07T10:46:28 bentley -> van
+Written by
+
+2020-08-07T10:46:35 van -> bentley
+I can't see all the groups - what's there, what's not )))
+
+2020-08-07T10:46:52 bentley -> van
+Me too. Only Buza and Talar know.
+
+2020-08-07T10:47:11 van -> bentley
+wow what a...
+
+2020-08-07T10:47:41 van -> bentley
+There is no Buza, so Talar represents him on the planet.
+
+2020-08-07T10:47:55 bentley -> van
+))
+
+2020-08-07T10:49:16 van -> bentley
+Talar creates a group, gives Swift access to it, Swift pulls the paths from the group, loads them into a looder and builds the assembly for the group.
+
+2020-08-07T10:49:56 bentley -> van
+Ok. I'll test it and give it to krypt. Crypt to autotest and give to Paul
+
+2020-08-07T10:50:24 van -> bentley
+band 55
+
+2020-08-07T10:50:33 bentley -> van
+Okay
+
+2020-08-12T08:32:28 van -> bentley
+Hi! )))
+Target isn't asking for a four-group build?
+
+2020-08-12T08:34:44 bentley -> van
+Hi. Not yet.
+
+2020-08-12T08:35:20 van -> bentley
+I haven't heard from him yet either.
+
+2020-08-13T07:37:07 van -> bentley
+Hi! )))
+
+2020-08-13T08:07:49 bentley -> van
+Hi )
+
+2020-08-13T08:17:06 van -> bentley
+I wanted to ask this... Stern transfers my paycheck to my bank card. Won't the bank get me in trouble? Are there any other ways to get money?
+
+2020-08-13T08:34:40 bentley -> van
+I get it through bitcoin to ruble exchange services. How about you?
+
+2020-08-13T08:40:29 van -> bentley
+I'm the same way
+
+2020-08-13T08:41:04 van -> bentley
+Well, in the end, to your bank card in rubles?
+
+2020-08-13T08:56:51 bentley -> van
+yes as far as I know now such transfers are not stolen especially
+
+2020-08-13T08:58:05 van -> bentley
+it's good if they don't palaver ))))
+
+2020-08-13T08:58:16 van -> bentley
+Well, okay, that's reassuring... )))
+
+2020-08-13T09:16:24 bentley -> van
+dee))
+
+2020-08-13T09:41:45 van -> bentley
+look, poll is asking about bot something...
+<poll> smotri takoi vopros po backdoor... botov balzaka or dereka hto bi mne progryzili kogo prosit? tk sami oni neumeut
+<poll> visle progryzit poprosit mne v cobalt
+<poll> zakinyt na bota moi exe ili dll
+
+2020-08-13T09:42:04 van -> bentley
+do you know what that is? Crypto?
+
+2020-08-13T09:42:39 van -> bentley
+Does defender know?
+
+2020-08-13T09:50:11 van -> bentley
+cobalt something...
+
+2020-08-13T09:50:29 van -> bentley
+do you know what this is?
+
+2020-08-13T10:12:22 bentley -> van
+They're the ones who have to have some kind of support team to deal with this. To Booza I think.
+
+2020-08-13T10:13:14 van -> bentley
+Yes, I sent him to Booze, too...
+
+2020-08-19T07:04:44 van -> bentley
+Hi! Cleaned it up, it works under Sophos. Ran it manually in VM.
+
+2020-08-19T07:05:02 bentley -> van
+Hi ) Good
+
+2020-08-19T07:05:14 van -> bentley
+)))
+
+2020-08-19T07:20:28 van -> bentley
+And today the backdoor from the grocery section in the admin section got slipped. Re-downloaded it. That's too bad... And Talar is under siege, man.
+
+2020-08-19T07:20:42 bentley -> van
+Hmmm.
+
+2020-08-19T07:20:47 bentley -> van
+Weird
+
+2020-08-19T07:21:29 van -> bentley
+Uh-huh
+
+2020-08-19T11:39:30 van -> bentley
+and do you remember that Stern asked for a report on loader backdoors on corp AB detects? )))
+
+2020-08-19T11:39:49 bentley -> van
+Yes, I'll text him today.
+
+2020-08-19T11:39:56 bentley -> van
+I will check the latest builds
+
+2020-08-19T11:40:11 van -> bentley
+Send me mine?
+
+2020-08-19T11:40:22 van -> bentley
+I cleaned it up.
+
+2020-08-19T11:40:40 bentley -> van
+Yeah, let's go check it out.
+
+2020-08-19T11:40:50 van -> bentley
+a minute
+
+2020-08-19T11:45:01 van -> bentley
+Dfnc(fdsw32bh.
+Download: https://qaz.im/load/FfhEfH/Rdzze4
+
+2020-08-19T11:45:16 bentley -> van
+++
+
+2020-08-21T06:57:07 van -> bentley
+Hi! ))) It's Friday... )))
+
+2020-08-21T06:57:28 bentley -> van
+Yeah ))
+
+2020-08-21T06:57:31 bentley -> van
+Hi.
+
+2020-08-21T06:58:47 van -> bentley
+No matter how good and interesting work is, Friday is also good... )))
+
+2020-08-21T06:58:58 bentley -> van
+I agree ))
+
+2020-08-21T07:35:03 van -> bentley
+I'm still working for your VM. May I?
+
+2020-08-21T07:35:13 bentley -> van
+Come on.
+
+2020-08-21T07:35:22 van -> bentley
+Yeah, thanks
+
+2020-08-21T08:57:42 bentley -> van
+What car do you work in?
+
+2020-08-21T08:57:55 van -> bentley
+win10-64-bentley
+
+2020-08-21T08:58:03 van -> bentley
+173.232.146.236:31017
+
+2020-08-21T08:58:07 bentley -> van
++
+
+2020-08-21T09:01:08 bentley -> van
+Dumsday is going to roll you.
+
+2020-08-21T09:01:19 bentley -> van
+dandis@q3mcco35auwcstmt.onion
+
+2020-08-21T09:02:49 van -> bentley
+he's asking about autotests. I don't use them today. This VM of yours has nothing to do with autotests, does it?
+
+2020-08-21T09:02:59 bentley -> van
+no
+
+2020-08-21T09:03:04 bentley -> van
+This is a separate
+
+2020-08-21T09:03:42 van -> bentley
+I wrote to him, let him autotest ))))
+
+2020-08-21T10:34:37 bentley -> van
+Doomsday only took the autotests right?
+
+2020-08-21T10:34:43 bentley -> van
+Or other cars?
+
+2020-08-21T10:35:05 van -> bentley
+was only talking about the autotest
+
+2020-08-21T10:35:09 bentley -> van
+Ok
+
+2020-08-21T11:09:55 bentley -> van
+Let me give you another car.
+
+2020-08-21T11:10:04 bentley -> van
+He needs all the cars, it turns out
+
+2020-08-21T11:10:14 van -> bentley
+come on
+
+2020-08-21T11:10:26 bentley -> van
+https://173.232.146.199/phpvirtualbox-5.0-5/
+user
+greendagrey12
+
+2020-08-21T11:10:29 bentley -> van
+1 more server
+
+2020-08-21T11:10:36 bentley -> van
+Do you need a car with upgrades?
+
+2020-08-21T11:10:56 van -> bentley
+you gave access to this one already )))) Nah, any.
+
+2020-08-21T11:12:03 bentley -> van
+Take 2016-64-autotest there
+
+2020-08-21T11:12:22 bentley -> van
+173.232.146.199:31008
+
+2020-08-21T11:12:33 bentley -> van
+password: asdqwe123!
+
+2020-08-21T11:12:42 van -> bentley
+Yeah, I see, thanks!
+
+2020-08-24T06:15:54 van -> bentley
+Hi! )))
+
+2020-08-27T14:01:56 bentley -> van
+Hi.
+
+2020-08-27T14:02:22 bentley -> van
+Please make 4 builds for Target on Friday with different groups to run on tests.
+
+2020-08-28T02:48:51 bentley -> van
+Hi.
+
+2020-08-28T02:48:51 bentley -> van
+Please make 4 builds for Target on Friday with different groups to run on tests.
+
+2020-08-28T08:21:32 bentley -> van
+Hi.
+
+2020-08-28T08:21:35 bentley -> van
+Did it come?
+
+2020-08-28T08:22:27 van -> bentley
+Hi! )))
+Yes.
+Done.
+Dfnc(fdsw32bh.
+Download: https://qaz.im/load/nTzeaD/ZtDesi
+
+2020-08-28T08:22:43 bentley -> van
+Great! Let's chase away the crypts!
+
+2020-08-28T08:23:07 van -> bentley
+Yes, crypt the dll as usual. Also.
+
+2020-08-28T08:23:31 van -> bentley
+There's nothing in groups o1-o3 yet.
+
+2020-08-28T08:23:38 bentley -> van
+okay
+
+2020-08-28T08:28:48 van -> bentley
+In group 1 uploaded backdoor workable, but really change to a new one before the test too.
+There are some glitches with the uploaded files in the admin, saw more than once in gr 1.
+Gr. 1 I cleaned of junk and now there filled one file, marked grocery and test.
+I usually poured two of the same in product and test and marked one for one, the other for the other.
+After a day or two, one of the files would fly off. I would turn it in to Talar. I don't know if he fixed it.
+The last time Talar just marked one file twice - I don't know how to do that...
+Anyway, gotta watch the files in the groups... )))
+
+2020-08-28T08:29:47 bentley -> van
+Yeah had run into that too. Haven't fixed it yet, will check before I start.
+
+2020-08-28T08:30:45 van -> bentley
+OK. Talar - the poor guy is not here today, I guess he had the Internet turned off by Cockroach again.
+
+2020-08-28T08:31:13 bentley -> van
+Yeah a lot of trouble from a mustachioed despot
+
+2020-08-28T08:32:15 van -> bentley
+Holy crap. We still have all this to look forward to...
+
+2020-08-28T08:32:39 bentley -> van
+Yeah that's for sure. I hope Musk finishes his satellite internet by then ))
+
+2020-08-28T08:32:58 van -> bentley
+May he be in good health!
+
+2020-08-28T08:33:36 bentley -> van
+Yep
+
+2020-08-28T08:34:04 van -> bentley
+These self-made czars are clinging to the throne, you can't tear them off.
+
+2020-08-28T08:34:34 bentley -> van
+Yep.
+
+2020-08-28T12:31:26 bentley -> van
+<bentley> ld1_gr_1.exe detects 1 minute after launch
+    Name: PUA:Win32/Pearfoos.A!ml
+    ID: 256595
+    Severity: Low
+    Category: Potentially Unwanted Software
+    Path: file:_C:\Users\TST10ENG\Downloads\ld1_gr_1\ld1_gr_1.exe
+    Detection Origin: Local machine
+    Detection Type: Concrete
+    Detection Source: Real-Time Protection
+    User: WIN10IITST\TST10ENG
+    Process Name: C:\Program Files\VMware\VMware Tools\vmtoolsd.exe
+    Security intelligence Version: AV: 1.323.42.0, AS: 1.323.42.0, NIS: 1.323.42.0
+    Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+[19:27:46] <bentley> and
+[19:28:09] <bentley>
+    Name: PUA:Win32/Pearfoos.A!ml
+    ID: 256595
+    Severity: Low
+    Category: Potentially Unwanted Software
+    Path: file:_C:\Users\TST10ENG\AppData\Local\Temp\fbsrtufw.exe; file:_C:\Users\TST10ENG\Downloads\ld1_gr_1\ld1_gr_1.exe
+    Detection Origin: Local machine
+    Detection Type: Concrete
+    Detection Source: Real-Time Protection
+    User: WIN10IITST\TST10ENG
+    Process Name: C:{Windows\System32\svchost.exe
+    Security intelligence Version: AV: 1.323.42.0, AS: 1.323.42.0, NIS: 1.323.42.0
+    Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+
+[19:30:37] <deploy@q3mcco35auwcstmt.onion> He's loading something
+[19:30:43] <bentley> Yes
+[19:30:57] <deploy@q3mcco35auwcstmt.onion> It's not on crypt
+[19:31:09] <bentley> Ok I'll write to the coder
+[19:31:17] <deploy@q3mcco35auwcstmt.onion> There's a win32 detection
+
+2020-08-28T12:31:35 bentley -> van
+On windows 10
+
+2020-08-28T15:05:36 bentley -> van
+On windows 10
+
+2020-08-28T15:05:36 bentley -> van
+<bentley> ld1_gr_1.exe detects 1 minute after launch
+    Name: PUA:Win32/Pearfoos.A!ml
+    ID: 256595
+    Severity: Low
+    Category: Potentially Unwanted Software
+    Path: file:_C:\Users\TST10ENG\Downloads\ld1_gr_1\ld1_gr_1.exe
+    Detection Origin: Local machine
+    Detection Type: Concrete
+    Detection Source: Real-Time Protection
+    User: WIN10IITST\TST10ENG
+    Process Name: C:\Program Files\VMware\VMware Tools\vmtoolsd.exe
+    Security intelligence Version: AV: 1.323.42.0, AS: 1.323.42.0, NIS: 1.323.42.0
+    Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+[19:27:46] <bentley> and
+[19:28:09] <bentley>
+    Name: PUA:Win32/Pearfoos.A!ml
+    ID: 256595
+    Severity: Low
+    Category: Potentially Unwanted Software
+    Path: file:_C:\Users\TST10ENG\AppData\Local\Temp\fbsrtufw.exe; file:_C:\Users\TST10ENG\Downloads\ld1_gr_1\ld1_gr_1.exe
+    Detection Origin: Local machine
+    Detection Type: Concrete
+    Detection Source: Real-Time Protection
+    User: WIN10IITST\TST10ENG
+    Process Name: C:{Windows\System32\svchost.exe
+    Security intelligence Version: AV: 1.323.42.0, AS: 1.323.42.0, NIS: 1.323.42.0
+    Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+
+[19:30:37] <deploy@q3mcco35auwcstmt.onion> He's loading something
+[19:30:43] <bentley> Yes
+[19:30:57] <deploy@q3mcco35auwcstmt.onion> It's not on crypt
+[19:31:09] <bentley> Ok I'll write to the coder
+[19:31:17] <deploy@q3mcco35auwcstmt.onion> There's a win32 detection
+
+2020-08-29T06:22:44 bentley -> van
+Can you clean it up?
+
+2020-08-29T14:40:44 bentley -> van
+Can you clean it up?
+
+2020-08-31T18:55:24 bentley -> van
+Bottom line. Ran the source code ld1_gr_1.exe. Detect on static.
+Eset NOD32 Antivirus - a variant of Win64/Agent.AAP trojan
+
+2020-08-31T18:55:31 bentley -> van
+Webroot deletes the same file
+
+2020-08-31T18:57:35 bentley -> van
+Defender is clear.
+
+2020-08-31T19:09:49 bentley -> van
+ld1_gr_1.exe in the Others tab
+
+2020-09-01T03:38:08 bentley -> van
+Bottom line. Ran the source code ld1_gr_1.exe. Detect on static.
+Eset NOD32 Antivirus - a variant of Win64/Agent.AAP trojan
+
+2020-09-01T03:38:08 bentley -> van
+Webroot deletes the same file
+
+2020-09-01T03:38:08 bentley -> van
+Defender is clear.
+
+2020-09-01T03:38:08 bentley -> van
+ld1_gr_1.exe in the Others tab
+
+2020-09-01T20:26:32 bentley -> van
+So. In the source, it wasn't Sophos that detected it, but Defender, they work together.
+
+2020-09-01T20:26:38 bentley -> van
+ Tested manually on 1-0 and server 2019 detects in file
+
+2020-09-01T20:26:49 bentley -> van
+123Ckj;ysqgfhjkm
+
+2020-09-01T20:27:30 bentley -> van
+https://qaz.im/load/tDdz7Z/hydSZr
+
+2020-09-02T02:09:25 bentley -> van
+123Ckj;ysqgfhjkm
+
+2020-09-02T02:09:25 bentley -> van
+So. In the source, it wasn't Sophos that detected it, but Defender, they work together.
+
+2020-09-02T02:09:25 bentley -> van
+ Tested manually on 1-0 and server 2019 detects in the file
+
+2020-09-02T02:09:25 bentley -> van
+https://qaz.im/load/tDdz7Z/hydSZr
+
+2020-09-02T07:26:51 bentley -> van
+hi
+
+2020-09-02T07:26:54 bentley -> van
+Did it come?
+
+2020-09-02T07:27:59 van -> bentley
+Hi! )))
+Detect from Defender saw on manual startup, cleaned it up. Now doing the last check on 10-64-05_02. Don't turn it off yet. I've got about 20 more minutes.
+
+2020-09-02T07:28:13 bentley -> van
++
+
+2020-09-02T07:28:39 van -> bentley
+I don't really understand what's going on with the autotests.
+
+2020-09-02T07:28:51 van -> bentley
+is it just the defender?
+
+2020-09-02T07:29:06 bentley -> van
+Yes I tested with Sophos and def
+
+2020-09-02T07:29:38 van -> bentley
+and a bunch of claims from Target?
+
+2020-09-02T07:29:59 bentley -> van
+There it is. Didn't I send you the tests with the other AVs?
+
+2020-09-02T07:30:05 van -> bentley
+yes
+
+2020-09-02T07:30:15 van -> bentley
+Yeah, got it.
+
+2020-09-02T07:30:44 van -> bentley
+Green sent new addresses, so I'm about to give out new builds.
+
+2020-09-02T07:30:54 bentley -> van
+Okay
+
+2020-09-02T08:15:48 van -> bentley
+The test went fine, no detection. Doing the builds.
+
+2020-09-02T08:16:10 bentley -> van
+ok
+
+2020-09-02T09:28:42 van -> bentley
+Dfnc(fdsw32bh.
+Download: https://qaz.im/load/rEdtyF/Q9n6f7
+
+2020-09-02T09:28:50 van -> bentley
+compiled by
+
+2020-09-02T09:30:02 van -> bentley
+Autotests aren't working... Tried running it in the morning, some VMs don't even start. Didn't check all of them.
+
+2020-09-02T09:30:22 bentley -> van
+okay
+
+2020-09-02T10:38:56 van -> bentley
+Can I work on VM 7-64 today ?
+
+2020-09-02T10:39:06 bentley -> van
+Yes, take it.
+
+2020-09-02T10:39:11 van -> bentley
+thank you!
+
+2020-09-02T11:49:56 bentley -> van
+Detects on Defender on server 2019
+
+2020-09-02T11:50:29 bentley -> van
+Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Behavior:Win32/DefenseEvasion.UM!ml&threatid=2147738649&enterprise=0
+ 	Name: Behavior:Win32/DefenseEvasion.UM!ml
+ 	ID: 2147738649
+ 	Severity: Severe
+ 	Category: Suspicious Behavior
+ 	Path: file:_C:\Users\Administrator\AppData\Local\Temp\eeeqnkuj.exe; file:_C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\adobe.lnk; file:_C:\Windows\System32\Tasks\StartUE->(UTF-16LE); regkey:_HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks\{485902E8-1B7D-4EE0-BAF1-3748CA1C3AC8}; regkey:_HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree\StartUE; startup:_C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\adobe.lnk; taskscheduler:_C:\Windows\System32\Tasks\StartUE
+ 	Detection Origin: Local machine
+ 	Detection Type: Concrete
+ 	Detection Source: Real-Time Protection
+ 	User: SRV2019II\Administrator
+ 	Process Name: C:\Users\ADMINI~1\AppData\Local\Temp\eeeqnkuj.exe
+ 	Signature Version: AV: 1.323.369.0, AS: 1.323.369.0, NIS: 1.323.369.0
+ 	Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+2020-09-02T11:50:32 bentley -> van
+и
+
+2020-09-02T11:50:40 bentley -> van
+Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Behavior:Win32/DefenseEvasion.UM!ml&threatid=2147738649&enterprise=0
+ 	Name: Behavior:Win32/DefenseEvasion.UM!ml
+ 	ID: 2147738649
+ 	Severity: Severe
+ 	Category: Suspicious Behavior
+ 	Path: file:_C:\Users\Administrator\AppData\Local\Temp\eeeqnkuj.exe
+ 	Detection Origin: Local machine
+ 	Detection Type: Concrete
+ 	Detection Source: Real-Time Protection
+ 	User: SRV2019II\Administrator
+ 	Process Name: C:\Users\ADMINI~1\AppData\Local\Temp\eeeqnkuj.exe
+ 	Signature Version: AV: 1.323.369.0, AS: 1.323.369.0, NIS: 1.323.369.0
+ 	Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+2020-09-02T11:50:46 bentley -> van
+Source and Crypt
+
+2020-09-02T11:51:24 van -> bentley
+I get the point...
+
+2020-09-02T11:53:53 bentley -> van
+<deploy@q3mcco35auwcstmt.onion> Behavior:Win32/Persistence.DQ!ml
+file: C:\Users\Deploy\AppData\Local\Temp\jwbvrukr.exe
+process: pid:3056,ProcessStart:132435206969104639
+I got detected too, after about 7 minutes +-. The fixing seems to be scrambling.
+
+2020-09-02T11:56:05 van -> bentley
+I'm going to rebuild the loeder now.
+
+2020-09-02T12:08:13 van -> bentley
+Dfnc(fdsw32bh.
+Download: https://qaz.im/load/Bd5QeN/Z3t7di
+
+2020-09-02T12:08:20 van -> bentley
+corrected
+
+2020-09-02T12:08:28 bentley -> van
+Ok right now.
+
+2020-09-02T12:08:36 van -> bentley
+Yep
+
+2020-09-02T12:34:13 bentley -> van
+Sparked by an early 10 echo
+
+2020-09-02T12:34:33 bentley -> van
+ 	Name: Behavior:Win32/DefenseEvasion.KQ!ml
+ 	ID: 2147738383
+ 	Severity: Severe
+ 	Category: Suspicious Behavior
+ 	Path: file:_C:\Users\TST10ENG\Downloads\ld1_gr_1\ld1_gr_1.exe
+ 	Detection Origin: Local machine
+ 	Detection Type: Concrete
+ 	Detection Source: Real-Time Protection
+ 	User: WIN10\TST10ENG
+ 	Process Name: C:{Windows\explorer.exe
+ 	Security intelligence Version: AV: 1.323.370.0, AS: 1.323.370.0, NIS: 1.323.370.0
+ 	Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+2020-09-02T12:38:07 van -> bentley
+Then it's bad, you can try crypto. Going back to the cleanup.
+
+2020-09-02T13:03:26 van -> bentley
+please tell me exactly which cars have the detects
+
+2020-09-02T13:03:45 bentley -> van
+On 10 was the last one.
+
+2020-09-02T13:23:17 van -> bentley
+please write on which VMs in the autotest Defender is enabled
+
+2020-09-02T13:24:59 bentley -> van
+On 2016-64-autotest, server2016_2, 10-64-05_2, 10-64-autotest
+
+2020-09-02T13:25:18 bentley -> van
+Only they have to be updated first
+
+2020-09-02T13:25:31 van -> bentley
+how's that?
+
+2020-09-02T13:26:12 bentley -> van
+AV update came out new bases
+
+2020-09-02T13:26:32 van -> bentley
+When will you update?
+
+2020-09-02T13:26:44 bentley -> van
+20-30 minutes
+
+2020-09-02T13:27:03 van -> bentley
+Yes, I'll be testing tomorrow morning while no one is here.
+
+2020-09-02T13:27:16 bentley -> van
+hmmm.
+
+2020-09-02T13:27:29 bentley -> van
+It's easier to run a 10 bentley and a bentley server then
+
+2020-09-02T13:28:01 van -> bentley
+is it updated?
+
+2020-09-02T13:28:15 bentley -> van
+Need to update before work
+
+2020-09-02T13:28:26 bentley -> van
+The database is updated every 4-5 hours
+
+2020-09-02T13:29:02 van -> bentley
+is there an update somewhere in defender?
+
+2020-09-02T13:29:31 bentley -> van
+Yes through the service - update os you can check
+
+2020-09-02T13:29:36 bentley -> van
+update
+
+2020-09-02T13:47:12 van -> bentley
+Look, are we really in a bad place?
+
+2020-09-02T13:47:55 bentley -> van
+Yours and Mashrum's BK are straying. I got the propisdon from the Boss for not checking correctly.
+
+2020-09-02T13:48:00 bentley -> van
+We'll get through it.)
+
+2020-09-02T13:48:54 van -> bentley
+So, are our uk's in the works or are they only staring at tests?
+
+2020-09-02T13:49:43 bentley -> van
+Yeah on tests. Haven't taken it to work yet. It's still on the test.
+
+2020-09-03T07:19:20 van -> bentley
+Hi!
+
+2020-09-03T15:01:40 bentley -> van
+It didn't come to me
+
+2020-09-03T15:47:05 bentley -> van
+It didn't come to me
+
+2020-09-03T18:39:23 bentley -> van
+ So. 10 and 2019 all worked without detects, latched on and worked after reboot. 7 worked but went offline after reboot.
+
+2020-09-04T04:29:34 bentley -> van
+ So. 10 and 2019 all worked without detects, latched on and worked after reboot. 7 worked but went offline after reboot.
+
+2020-09-08T16:02:06 van -> bentley
+How are we doing? Stern is pressing a little...
+
+2020-09-08T16:03:31 van -> bentley
+Didn't Stern ask you about our fiasco?
+
+2020-09-08T16:04:40 bentley -> van
+ <Stern> what's going on with the bk?
+[23:03:12] <bentley> admin is working. There was a problem with encryption Defender stole names related to Document name. Problem solved by issuing Target 1 crypt. 3 more on the way.
+
+2020-09-08T16:04:54 bentley -> van
+On it on sofos detection I am hesitant what to do
+
+2020-09-08T16:05:00 bentley -> van
+I will give out
+
+2020-09-08T16:05:43 bentley -> van
+Give out with sofosm?
+
+2020-09-08T16:05:47 bentley -> van
+Can you fix it?
+
+2020-09-08T16:05:52 van -> bentley
+On Sophos, I think the admin doesn't always give out hetinfo and the autotest fails
+
+2020-09-08T16:06:11 van -> bentley
+I had Sophos working in the morning and in the evening, too
+
+2020-09-08T16:06:42 bentley -> van
+Ok
+
+2020-09-08T16:06:52 bentley -> van
+It's on the o1 group
+
+2020-09-08T16:07:07 van -> bentley
+in the morning on gr 1
+
+2020-09-08T16:07:16 van -> bentley
+tonight on o1
+
+2020-09-08T16:07:46 van -> bentley
+Yes they are the same code
+
+2020-09-08T16:09:13 bentley -> van
+You gave it away or else you're fucked)
+
+2020-09-08T16:09:24 bentley -> van
+Let's see what they have to say on their tests
+
+2020-09-08T16:11:40 van -> bentley
+Yeah they won't say anything good. You see I clean, no detects. Upgraded AV - there is a detection. Antivirus is easier to live with. They can overdetect, and nothing bad will happen. But we are in trouble from their steamy.
+
+2020-09-08T16:12:45 bentley -> van
+Target said that the last test build was ok in terms of cleanliness
+
+2020-09-08T16:14:00 van -> bentley
+Yes this cleanliness is for 10 minutes...
+
+2020-09-08T16:14:55 van -> bentley
+When will they test it and tell you?
+
+2020-09-08T16:15:39 bentley -> van
+Yes they will.
+
+2020-09-08T16:16:34 van -> bentley
+today?
+
+2020-09-08T16:16:58 bentley -> van
+Yeah I hope so.
+
+2020-09-08T16:17:41 van -> bentley
+I'm already off my feet, please write off if there's anything...
+
+2020-09-08T16:18:11 bentley -> van
+Yeah sure. Please tell me how to check the fix on your build to speed up my testing
+
+2020-09-08T16:18:18 bentley -> van
+Not chasing everything.
+
+2020-09-08T16:19:33 van -> bentley
+As soon as you tap the bk, you can restart the VM immediately. Zakrep gets up as soon as the bk is downloaded.
+
+2020-09-08T16:19:50 van -> bentley
+no commands need to be given at all to check the fixing
+
+2020-09-08T16:19:58 bentley -> van
+Getsinfo or just a bot showed up in the admin area?
+
+2020-09-08T16:20:03 bentley -> van
+Ah ok
+
+2020-09-08T16:20:23 van -> bentley
+as soon as it appeared, gethinfo is not needed either
+
+2020-09-08T16:20:36 bentley -> van
+Ok
+
+2020-09-08T16:21:50 van -> bentley
+the first time you bk comes out Message : VerBD 147 VerLD 148 93.189.46.41:443 uptime 4
+restart the VM and wait for the same message again - it came - there is a start from zakrepa
+
+2020-09-08T16:22:26 bentley -> van
+got it
+
+2020-09-08T16:23:37 van -> bentley
+I'm off...
+
+2020-09-08T16:24:01 bentley -> van
+Yep
+
+2020-09-09T06:43:54 bentley -> van
+Hi.
+
+2020-09-09T06:43:56 van -> bentley
+Hi there, you made it. ))) How are we in trouble? Is it universal?
+
+2020-09-09T06:44:16 bentley -> van
+Made a stable crypt in the evening
+
+2020-09-09T06:44:32 bentley -> van
+Deploy complains about the name change and the detector in doing so
+
+2020-09-09T06:45:04 bentley -> van
+I noticed that too. You change the name of the source to Documents and it's panic.
+
+2020-09-09T06:45:16 van -> bentley
+here's how
+
+2020-09-09T06:45:25 bentley -> van
+Say, can you make an assembly with 4 groups with these names:
+
+2020-09-09T06:45:27 bentley -> van
+Preview
+Print_Preview
+Review
+PreviewDoc
+Preview_Doc
+
+2020-09-09T06:46:11 van -> bentley
+I don't understand about the names... So rename manually as needed
+
+2020-09-09T06:46:47 bentley -> van
+When renaming it, that's where the panic started
+
+2020-09-09T06:47:45 van -> bentley
+What should I do with these names? I don't get it... ))) I'm dumb...
+
+2020-09-09T06:48:28 bentley -> van
+If you try to make loader builds with these names.
+
+2020-09-09T06:48:39 bentley -> van
+I want to check how it will be encrypted
+
+2020-09-09T06:50:01 van -> bentley
+Now the loader is called ld1.exe, rename it to PreviewDocs.exe and crypto. I don't get it anyway (((
+
+2020-09-09T06:50:19 bentley -> van
+When you rename it, it starts palying on the def
+
+2020-09-09T06:50:31 bentley -> van
+The source code itself is compromised.
+
+2020-09-09T06:50:37 van -> bentley
+Okay, wait, wait.
+
+2020-09-09T06:50:46 bentley -> van
+with ld1 - ok and with the document immediately detected
+
+2020-09-09T06:50:50 van -> bentley
+you crypt the dll &
+
+2020-09-09T06:50:57 van -> bentley
+?
+
+2020-09-09T06:50:58 bentley -> van
+
+
+2020-09-09T06:51:29 van -> bentley
+look, they used to think that crypto was better than dll
+
+2020-09-09T06:52:57 bentley -> van
+So then a question. Is it possible to check the dll?
+
+2020-09-09T06:53:00 bentley -> van
+Source
+
+2020-09-09T06:53:35 van -> bentley
+The dll can only be checked for statics
+
+2020-09-09T06:53:52 bentley -> van
+And for the launch?
+
+2020-09-09T06:53:58 bentley -> van
+And the blowout?
+
+2020-09-09T06:54:08 van -> bentley
+only after crypting, of course
+
+2020-09-09T06:54:22 van -> bentley
+That's what they used to do.
+
+2020-09-09T06:54:24 bentley -> van
+the dll itself - no yes?
+
+2020-09-09T06:54:43 bentley -> van
+Okay, we'll make a dll today.
+
+2020-09-09T06:54:47 van -> bentley
+the dll itself can't be run just like that
+
+2020-09-09T06:55:14 bentley -> van
+Got it
+
+2020-09-09T06:55:55 van -> bentley
+so dlls were crypting and everyone seemed to be happy in June, i haven't even asked for a long time what you're crypting. I send dlls every time.
+
+2020-09-09T06:56:10 van -> bentley
+Try it, really.
+
+2020-09-09T06:56:20 bentley -> van
+Ok
+
+2020-09-09T06:57:55 van -> bentley
+By the way, why they yell at exe when renaming is not clear. There is no line inside the exe with the name of the file itself ld1.exe, for example. Mystery.
+
+2020-09-09T06:58:31 bentley -> van
+Booza said yesterday that certain names of echoes are prescribed in the av policy
+
+2020-09-09T06:59:05 van -> bentley
+then don't use those names )))
+
+2020-09-09T06:59:12 bentley -> van
+Yep
+
+2020-09-09T06:59:17 van -> bentley
+Okay, let's check the dll.
+
+2020-09-09T06:59:18 bentley -> van
+Today we will do with dll crypta
+
+2020-09-09T06:59:40 van -> bentley
+What did Target test yesterday?
+
+2020-09-09T06:59:56 bentley -> van
+seems to be ok.
+
+2020-09-09T07:00:38 van -> bentley
+They understand there that if it's ok, then you have to get into the fight, because the lowder doesn't live clean for long, so what's the point of getting it soured?
+
+2020-09-09T07:00:57 bentley -> van
+Yes to the fight today.
+
+2020-09-09T07:01:21 van -> bentley
+good luck to us all
+
+2020-09-09T07:01:32 bentley -> van
+Yes
+
+2020-09-09T07:02:28 van -> bentley
+Stern must have said something to Booze's ass yesterday too. It hit everyone.
+
+2020-09-09T07:02:44 bentley -> van
+yes
+
+2020-09-09T07:02:47 bentley -> van
+apparently
+
+2020-09-09T07:02:58 van -> bentley
+see-through
+
+2020-09-09T07:20:36 van -> bentley
+I can't connect to autotest... do you know what is there?
+
+2020-09-09T07:21:25 bentley -> van
+krpitopanel lies
+
+2020-09-09T07:21:38 van -> bentley
+ahh
+
+2020-09-09T09:27:10 van -> bentley
+cryptopanel still doesn't work?
+
+2020-09-09T16:59:16 bentley -> van
+The boss praised Target. Very good.
+
+2020-09-09T16:59:34 bentley -> van
+We need to make a stream of clean files for him
+
+2020-09-09T16:59:49 bentley -> van
+That there was a quantum leap
+
+2020-09-09T17:01:38 bentley -> van
+To
+
+2020-09-09T18:58:43 bentley -> van
+<target> I look at life
+[01:57:57] <target> and by the tap
+[01:58:03] <target> put the 7th author on stake
+[01:58:14] <target> award author o1 and give him everything he has
+
+2020-09-09T18:58:47 bentley -> van
+Tough ))
+
+2020-09-09T19:00:46 bentley -> van
+] <target> o1
+[01:59:46] <target> everything is perfect
+[01:59:52] <target> and sucks
+[01:59:53] <target> and timing
+[01:59:55] <target> and life
+
+2020-09-10T03:32:38 bentley -> van
+The boss praised Target. Very good.
+
+2020-09-10T03:32:38 bentley -> van
+We need to make a stream of clean files for him
+
+2020-09-10T03:32:38 bentley -> van
+That there was a quantum leap
+
+2020-09-10T03:32:38 bentley -> van
+To
+
+2020-09-10T03:32:38 bentley -> van
+<target> I look at life
+[01:57:57] <target> and by the tap
+[01:58:03] <target> put the 7th author on stake
+[01:58:14] <target> award author o1 and give him everything he has
+
+2020-09-10T03:32:38 bentley -> van
+Tough ))
+
+2020-09-10T03:32:38 bentley -> van
+] <target> o1
+[01:59:46] <target> everything is perfect
+[01:59:52] <target> and sucks
+[01:59:53] <target> and timing
+[01:59:55] <target> and life
+
+2020-09-10T06:56:33 bentley -> van
+Hi
+
+2020-09-10T06:56:43 bentley -> van
+Do an assembly with the r1 group today
+
+2020-09-10T06:57:21 van -> bentley
+Hi! ))) Already did. )))
+
+2020-09-10T06:57:30 bentley -> van
+Did Target write to you?
+
+2020-09-10T06:57:45 van -> bentley
+No, just your posts.
+
+2020-09-10T06:58:03 bentley -> van
+Ok )
+
+2020-09-10T06:58:15 van -> bentley
+Did Target change his mind about praising us? )
+
+2020-09-10T06:58:31 bentley -> van
+Here he is praising
+
+2020-09-10T06:59:05 van -> bentley
+Okay, the doctor let me live... Until Stern kicks him out.
+
+2020-09-10T06:59:26 bentley -> van
+That's okay. You're doing a very good job.
+
+2020-09-10T06:59:32 van -> bentley
+Boss is who in your message?
+
+2020-09-10T06:59:43 van -> bentley
+Yes, that's what you and I are doing.
+
+2020-09-10T07:00:00 van -> bentley
+There's not much one can do about it.
+
+2020-09-10T07:00:13 van -> bentley
+Checked it this morning. Yes, under defender is flipping again. Cleaned it up. Checked it - it works.
+Builds loaders cleaned and assembled. Backdoors didn't change. Addresses in the looper and backdoor didn't change either.
+Try crypting, the product is perishable - there's a whole AV industry against me alone.
+GBRQWERasdzxc
+Download: https://qaz.im/load/fHSSy7/N8rRrb
+
+2020-09-10T07:00:44 van -> bentley
+all groups are there
+
+2020-09-10T07:00:55 bentley -> van
+Yes, that's what you and I are doing.
+
+2020-09-10T07:00:55 bentley -> van
+There's not much one can do about it.
+
+2020-09-10T07:00:55 bentley -> van
+Checked it this morning. Yes, under defender it's flipping again. Cleaned it up. Checked it - it works.
+I built my cleaned builds of loaders. Backdoors didn't change. Addresses in the looper and backdoor didn't change either.
+Try crypting, the product is perishable - there's a whole AV industry against me alone.
+GBRQWERasdzxc
+Download: https://qaz.im/load/fHSSy7/N8rRrb
+
+2020-09-10T07:00:55 bentley -> van
+all groups are there
+
+2020-09-10T17:24:24 bentley -> van
+Good work.
+
+2020-09-10T17:24:26 bentley -> van
+<target> o1 ideal
+
+2020-09-10T17:25:24 bentley -> van
+Tomorrow you need assemblies with group r2
+
+2020-09-10T17:25:47 bentley -> van
+Can you make several different builds?
+
+2020-09-10T17:30:47 bentley -> van
+<deploy@q3mcco35auwcstmt.onion> If there are files on crypt by 10, you can make it
+
+2020-09-10T17:30:51 bentley -> van
+Will we make it?
+
+2020-09-10T17:37:21 bentley -> van
+Good work.
+
+2020-09-10T17:37:21 bentley -> van
+<target> o1 ideal
+
+2020-09-10T17:37:21 bentley -> van
+Tomorrow you need assemblies with group r2
+
+2020-09-10T17:37:21 bentley -> van
+Can you make several different builds?
+
+2020-09-10T17:37:21 bentley -> van
+<deploy@q3mcco35auwcstmt.onion> If there are files on crypt by 10, you can make it
+
+2020-09-10T17:37:21 bentley -> van
+Will we make it?
+
+2020-09-11T08:49:45 bentley -> van
+Please check if the bk is knocking
+
+2020-09-14T07:13:27 van -> bentley
+Hi! ))
+
+2020-09-14T07:13:36 van -> bentley
+GBRQWERasdzxc
+Download: https://qaz.im/load/FEzkA7/n5frai
+
+2020-09-14T07:13:53 bentley -> van
+Piivet great ))
+
+2020-09-14T07:14:34 van -> bentley
+I found the shellcode in the correct format, check in r2 as you go along... ok?
+
+2020-09-14T07:15:58 van -> bentley
+By the way, the code you ran will also work now, if you upload the new backdoor r2 that I sent you
+
+2020-09-14T07:16:03 bentley -> van
+ok
+
+2020-09-14T07:16:31 van -> bentley
+Anyway, tell me if you need it, I'll send you the shellcode.
+
+2020-09-14T07:25:49 van -> bentley
+Saturday was Programmer's Day. Happy Holidays!
+
+2020-09-15T06:32:58 bentley -> van
+Good morning ))
+
+2020-09-15T06:33:32 van -> bentley
+Hi!!! Good morning!!! Good to see you!!!
+
+2020-09-15T06:33:41 van -> bentley
+I'll send it to you right away.
+
+2020-09-15T06:33:51 bentley -> van
+Ok )
+
+2020-09-15T06:34:01 bentley -> van
+Deployment is not there yet.
+
+2020-09-15T06:34:52 van -> bentley
+but you're early today )))
+
+2020-09-15T06:36:00 van -> bentley
+GBRQWERasdzxc
+Download: https://qaz.im/load/ZNfAAF/9SENNS
+
+2020-09-15T06:36:33 bentley -> van
+Yes solving the problem with the Internet in the office arrived early )
+
+2020-09-15T06:36:37 bentley -> van
+Thank you.
+
+2020-09-15T06:36:54 van -> bentley
+You don't work at home?
+
+2020-09-15T06:37:01 bentley -> van
+Sure.
+
+2020-09-15T06:37:21 bentley -> van
+Otherwise I lose the feeling of home )
+
+2020-09-15T06:37:58 van -> bentley
+interesting... clarify while Deploy is away... )))
+
+2020-09-15T06:38:35 bentley -> van
+I tried working at home in the beginning and it was always kind of loose and blurry. + My wife used to scold me.
+
+2020-09-15T06:39:10 bentley -> van
+Separately removed the office turns out to be more focused on the case and there is a sense that going to work switches the mind and takes work more seriously.
+
+2020-09-15T06:39:54 van -> bentley
+For some reason I knew that immediately, but decided to ask again... )))
+
+2020-09-15T06:40:11 bentley -> van
+))
+
+2020-09-15T06:41:08 van -> bentley
+I worked in an office too long in the old days, so I get to work at home. )))
+
+2020-09-15T06:41:46 bentley -> van
+Yeah )) I haven't worked up my office fatigue yet ))
+
+2020-09-15T06:44:48 van -> bentley
+I have to say that I've had good luck with the office. Even as a young man I had a separate office, and then for many years I had an office with a break room and a secretary and a company car. But nothing extra... )))  And still bored. Now it's good...
+
+2020-09-15T06:45:12 bentley -> van
+Yeah. The key is good.
+
+2020-09-15T06:47:26 bentley -> van
+What was your job?
+
+2020-09-15T06:49:15 van -> bentley
+director of the telecommunications division of a federal company for the last 15 years
+
+2020-09-15T06:49:36 van -> bentley
+before that as an engineer, chief engineer
+
+2020-09-15T06:49:50 bentley -> van
+Cool!
+
+2020-09-15T06:50:53 bentley -> van
+Then I have a question. Is it possible for a private telecommunications company to beat a mastadont like Rostelecom in Russia?
+
+2020-09-15T06:53:03 van -> bentley
+You know, the order that the current rulers have imposed (trading positions, contempt for people of labor) has made me completely nervous and exhausted. Bitches.
+Er-Telecom is an example of such a company.
+Headquartered in Perm. The owner is Kuzyaev, a former oilman.
+For example, in St. Petersburg, he is the leading operator.
+
+2020-09-15T06:55:34 bentley -> van
+That's what I'm talking about too, that nasty soviet parasitic bureaucracy. Because our Country has so much potential. Or rather our Russian people, but these scum have been sucking our strength for hundreds of years and we are not going anywhere, we are living on the level of survival. And we could be a leading high-tech power where our people can live well and free.
+
+2020-09-15T06:56:27 van -> bentley
+I can sign off on every word you said.
+
+2020-09-15T06:56:53 bentley -> van
+Yes.
+
+2020-09-15T07:25:13 van -> bentley
+Listen, did you check the shellcode?
+
+2020-09-15T07:25:26 bentley -> van
+no
+
+2020-09-15T07:25:32 bentley -> van
+Didn't make it yesterday, I'll check today.
+
+2020-09-15T07:25:37 van -> bentley
+Yep
+
+2020-09-15T07:29:51 van -> bentley
+Another question. What about the autotest? I don't think it's working. I got the access.
+
+2020-09-15T07:30:07 bentley -> van
+It's not working. It's being fixed.
+
+2020-09-15T07:30:16 van -> bentley
+thanks
+
+2020-09-15T08:05:26 bentley -> van
+Testing. Remind me again how the fixing works?
+
+2020-09-15T08:08:12 van -> bentley
+once knocked off, you can reboot, you already have an anchor. After starting from the zap there will be a message in the bot again
+Message : VerBD 147 VerLD 148 212.22.70.4:443 uptime 4
+
+2020-09-15T08:08:22 bentley -> van
+  ok
+
+2020-09-15T08:08:26 bentley -> van
+I remember )
+
+2020-09-15T08:08:30 van -> bentley
+Yep
+
+2020-09-15T08:09:02 van -> bentley
+you don't need to give any commands unless you're checking the clip
+
+2020-09-15T08:09:37 bentley -> van
+Yeah, I already launched Getsinfo and I'll wait for it to work out.
+
+2020-09-15T08:28:49 bentley -> van
+Weird. something doesn't work after the fix for 10 and 2019
+
+2020-09-15T08:28:53 bentley -> van
+at 7 - ok
+
+2020-09-15T08:29:28 bentley -> van
+no detects
+
+2020-09-15T08:30:09 van -> bentley
+I checked the 10_64_05_2 fix today - it was fine
+
+2020-09-15T08:30:40 van -> bentley
+Is the loeder in place in 10 and 2019 ?
+
+2020-09-15T08:30:49 van -> bentley
+Or was it blown away?
+
+2020-09-15T08:31:04 van -> bentley
+Maybe wait a little longer?
+
+2020-09-15T08:31:20 bentley -> van
+No, where I started it, it's there.
+
+2020-09-15T08:31:24 bentley -> van
+yes, I'm waiting
+
+2020-09-15T08:31:56 van -> bentley
+is it in the processes? or/and cmd.exe &
+
+2020-09-15T08:31:57 van -> bentley
+?
+
+2020-09-15T08:32:07 bentley -> van
+so
+
+2020-09-15T08:32:26 van -> bentley
+no detects - the main thing, and not demolished
+
+2020-09-15T08:33:13 bentley -> van
+Yep, we're waiting
+
+2020-09-15T08:36:00 van -> bentley
+Try another reboot if we can't wait
+
+2020-09-15T08:36:18 bentley -> van
+Yep, another 10 minutes.
+
+2020-09-15T08:36:28 van -> bentley
+What kind of car is the 10? I'd like to see
+
+2020-09-15T08:37:06 bentley -> van
+Yes, I can give it to you via timecode.
+
+2020-09-15T08:37:11 bentley -> van
+on their cars
+
+2020-09-15T08:37:23 van -> bentley
+no... I don't have a timka
+
+2020-09-15T08:37:30 bentley -> van
+Download )
+
+2020-09-15T08:37:46 van -> bentley
+Look in processes loader and cmd.exe
+
+2020-09-15T08:37:49 van -> bentley
+tcnm&
+
+2020-09-15T08:37:53 van -> bentley
+any ?
+
+2020-09-15T08:38:32 bentley -> van
+no
+
+2020-09-15T08:39:31 bentley -> van
+I'm watching crypto.
+
+2020-09-15T08:39:54 van -> bentley
+you can give the bitsadmin /list command on the command line
+
+2020-09-15T08:40:18 van -> bentley
+will there be something about Adobe in the answer ?
+
+2020-09-15T08:40:33 bentley -> van
+yes
+
+2020-09-15T08:40:51 van -> bentley
+and the crypto loader is in place?
+
+2020-09-15T08:41:38 van -> bentley
+Actually, in 3 hours there will be a re-run of the loader from the bits
+
+2020-09-15T08:41:56 van -> bentley
+But it's a long wait
+
+2020-09-15T08:42:47 bentley -> van
+https://qaz.im/load/BRQGsN/RbZAZ3
+
+2020-09-15T08:42:53 bentley -> van
+here's the request
+
+2020-09-15T08:43:32 van -> bentley
+it's okay
+
+2020-09-15T08:44:05 van -> bentley
+there are a lot of jobs in the bits that didn't make it to us
+
+2020-09-15T08:45:17 van -> bentley
+Usually 1 or 2 tasks, but there are 43
+
+2020-09-15T08:46:22 van -> bentley
+I think it's okay, no detection, the loader is in place, the job is there - it will run
+
+2020-09-15T08:47:15 van -> bentley
+Let's wait for interest, maybe you'll do something else in the meantime...
+
+2020-09-15T08:48:18 bentley -> van
+Yeah ok
+
+2020-09-15T09:06:48 van -> bentley
+I also run t1 in mine, just to control it. Maybe there's something in the admin...
+
+2020-09-15T09:06:59 bentley -> van
+Yep
+
+2020-09-15T09:24:06 van -> bentley
+It bounced and it bounced from scratch, and it's fine in the admin area.
+
+2020-09-15T09:24:15 bentley -> van
+ok
+
+2020-09-15T09:24:19 bentley -> van
+ I roll back 0
+
+2020-09-15T09:24:30 van -> bentley
+come on
+
+2020-09-15T09:24:35 bentley -> van
+))
+
+2020-09-15T09:25:18 van -> bentley
+Yes I start my morning by checking under defender on your cars ))))
+
+2020-09-15T09:25:30 bentley -> van
+Okay )
+
+2020-09-15T09:25:51 van -> bentley
+watched working bots, their main AV is defender + sometimes something else
+
+2020-09-15T09:26:02 bentley -> van
+Yep
+
+2020-09-15T09:26:24 van -> bentley
+I'm going to step back for a bit.
+
+2020-09-15T09:26:31 bentley -> van
+Yep
+
+2020-09-15T10:32:30 bentley -> van
+Please look at the crypt on the tack
+
+2020-09-15T10:32:31 bentley -> van
+https://qaz.im/load/z92S92/3zBQzh
+
+2020-09-15T10:32:33 bentley -> van
+123
+
+2020-09-15T10:32:39 bentley -> van
+I don't understand what's going on.
+
+2020-09-15T10:33:45 van -> bentley
+Yep, got it, now I'm going to try mine first
+
+2020-09-15T10:38:34 van -> bentley
+And there are r1 bots there now. Did you start it up again?
+
+2020-09-15T10:38:56 bentley -> van
+Yes also 2 crypts on 6 machines
+
+2020-09-15T10:39:13 bentley -> van
+Bots are not deleted because they take old groups
+
+2020-09-15T10:39:17 van -> bentley
+Yep
+
+2020-09-15T10:41:03 bentley -> van
+On 7, it works like clockwork, but not on 10 and 2019
+
+2020-09-15T10:41:25 van -> bentley
+check out
+
+2020-09-15T10:47:20 van -> bentley
+mine started from scratch, so there's no claims to crypto...
+can i take my car 10_64_05_2 to check?
+
+2020-09-15T10:47:36 bentley -> van
+Yep
+
+2020-09-15T10:47:46 van -> bentley
+I'll write back with the result
+
+2020-09-15T10:47:50 bentley -> van
+ok
+
+2020-09-15T11:03:31 van -> bentley
+On 10_64_05_2 the crypt blew up on manual start, no detection messages.
+Rolled it back, now I will check the uncrypted one on this machine.
+
+2020-09-15T11:04:27 bentley -> van
+also my test one only through timka
+
+2020-09-15T11:04:47 van -> bentley
+No, I did something wrong... tapped the bot.
+
+2020-09-15T11:04:58 van -> bentley
+I rolled it back, man.
+
+2020-09-15T11:05:05 van -> bentley
+Trying again
+
+2020-09-15T11:06:57 van -> bentley
+Krypt appeared in the list of processes when I started, and then disappeared, but it was in the folder, i.e. it's not AV, it turns out. Disappeared, but bot loaded later? Crypt, by any chance, does not rename itself at startup?
+
+2020-09-15T11:10:16 bentley -> van
+need to clarify
+
+2020-09-15T11:38:02 van -> bentley
+I ra
+
+2020-09-15T11:38:12 van -> bentley
+Retrieved from
+
+2020-09-15T11:38:18 van -> bentley
+what's up
+
+2020-09-15T11:38:20 bentley -> van
+??
+
+2020-09-15T11:38:22 bentley -> van
+Wow
+
+2020-09-15T11:41:50 bentley -> van
+What's up?
+
+2020-09-15T11:42:08 van -> bentley
+The logic of the crypt has changed, which is why I stopped fixing it via bits. I'll fix it, it's my flaw. Under 7th one more tack works, so it works there. I'll start fixing it now. It'll probably take me an evening, I'll try to be quicker.
+
+2020-09-15T11:42:32 bentley -> van
+You can't work?
+
+2020-09-15T11:42:39 van -> bentley
+no
+
+2020-09-15T11:42:47 van -> bentley
+Did you want to do it today?
+
+2020-09-15T11:42:51 bentley -> van
+Absolutely!
+
+2020-09-15T11:42:55 bentley -> van
+Already charged.
+
+2020-09-15T11:43:02 van -> bentley
+how much time do I have?
+
+2020-09-15T11:43:11 bentley -> van
+- hours
+
+2020-09-15T11:43:13 bentley -> van
+1-2
+
+2020-09-15T11:43:25 bentley -> van
+Isn't it possible to upload a new loader there?
+
+2020-09-15T11:43:33 bentley -> van
+Bots who stare?
+
+2020-09-15T11:43:42 van -> bentley
+yes, of course
+
+2020-09-15T11:43:51 van -> bentley
+Then get to work.
+
+2020-09-15T11:43:55 bentley -> van
+Then let's get to work and wait for your build.
+
+2020-09-15T11:44:06 van -> bentley
+Yep
+
+2020-09-15T12:32:59 van -> bentley
+Fixed it, tested it on myself. Collect group t1 5 pieces?
+
+2020-09-15T12:34:53 bentley -> van
+make it 2 pcs.
+
+2020-09-15T12:35:02 van -> bentley
+ok, now
+
+2020-09-15T12:40:28 van -> bentley
+GBRQWERasdzxc
+Download: https://qaz.im/load/DYYTtH/82faDz
+
+2020-09-15T12:42:23 bentley -> van
+ok
+
+2020-09-15T12:43:37 bentley -> van
+Is the bk the same?
+
+2020-09-15T12:47:43 van -> bentley
+ok
+
+2020-09-15T12:47:43 van -> bentley
+Is the bk the same?
+
+2020-09-15T13:27:02 van -> bentley
+Target told Booze that t1 doesn't knock... Any idea what's going on there?
+
+2020-09-15T13:27:25 bentley -> van
+Running it on my car waiting
+
+2020-09-15T13:27:30 bentley -> van
+I think he's getting excited.
+
+2020-09-15T13:27:47 van -> bentley
+[16:24:05] <target> we took a new server [16:24:08] <target> and ran on it [16:24:08] <target> so far 0
+
+2020-09-15T13:27:56 van -> bentley
+he wrote to Booze.
+
+2020-09-15T13:28:03 van -> bentley
+What kind of server?
+
+2020-09-15T13:28:11 bentley -> van
+I dunno.
+
+2020-09-15T13:28:14 bentley -> van
+I'm not aware of it.
+
+2020-09-15T13:28:16 bentley -> van
+Waiting for
+
+2020-09-15T13:28:20 bentley -> van
+ I also ran it on mine.
+
+2020-09-15T13:35:43 van -> bentley
+Well???
+
+2020-09-15T13:35:53 bentley -> van
+Mine knocked out.
+
+2020-09-15T13:36:23 van -> bentley
+not t1 either, but with the old name?
+
+2020-09-15T13:37:00 bentley -> van
+Yes with the old
+
+2020-09-15T13:37:22 van -> bentley
+Does Target have a different admin panel or something?
+
+2020-09-15T13:38:16 bentley -> van
+t1 is
+
+2020-09-15T13:38:28 van -> bentley
+where?
+
+2020-09-15T13:38:48 van -> bentley
+Ahhhhhh, yes.
+
+2020-09-15T13:40:24 bentley -> van
+<target> clearly
+[20:39:38] <target> manager of the hall
+[20:39:42] <target> got it
+[20:39:43] <bentley> the first bot t1 122.174.204.118 appeared
+[20:39:45] <target> link from trainee
+[20:39:46] <target> old
+[20:39:47] <target> morons fuck
+
+2020-09-15T13:40:53 van -> bentley
+clearly
+
+2020-09-15T13:42:41 bentley -> van
+And we're all on a roll.) Just now it was working! Now it's not! ))
+
+2020-09-15T13:42:58 van -> bentley
+Yes, I've soaped the rope already...
+
+2020-09-15T13:43:20 van -> bentley
+Not a lot so far t1
+
+2020-09-15T13:43:32 bentley -> van
+Yeah just started
+
+2020-09-15T13:43:36 bentley -> van
+Let's see how it goes
+
+2020-09-15T13:43:43 bentley -> van
+Don't need the rope.
+
+2020-09-15T13:43:44 van -> bentley
+Uh-huh
+
+2020-09-15T13:43:49 van -> bentley
+)))
+
+2020-09-15T14:11:53 van -> bentley
+What millions are they writing in the bots? Haven't seen it before.
+
+2020-09-15T14:12:31 bentley -> van
+This is an estimate of the earnings corp.
+
+2020-09-15T14:13:22 van -> bentley
+What's the profitability of the office?
+
+2020-09-15T14:13:28 bentley -> van
+Yep
+
+2020-09-15T14:13:39 van -> bentley
+How do they know?
+
+2020-09-15T14:14:22 bentley -> van
+There are services to collect info Zoominfo if I'm not mistaken
+
+2020-09-15T14:14:47 van -> bentley
+it's complicated...
+
+2020-09-15T14:14:50 bentley -> van
+Looking at the corpus on the domain
+
+2020-09-15T14:15:54 van -> bentley
+we are so... small cogs in this battle... but important cogs...
+
+2020-09-15T14:16:25 bentley -> van
+The most important ones. )
+
+2020-09-15T14:19:54 van -> bentley
+)))
+
+2020-09-15T14:20:39 van -> bentley
+we should be as praised by our bosses as we are by each other )))), and showered with golden rain )))
+
+2020-09-15T14:20:50 bentley -> van
+Money
+
+2020-09-15T14:20:52 bentley -> van
+Yep
+
+2020-09-15T15:44:09 bentley -> van
+The fixing doesn't work
+
+2020-09-15T15:44:50 van -> bentley
+Holy crap
+
+2020-09-15T15:45:09 bentley -> van
+One second
+
+2020-09-15T15:45:53 bentley -> van
+All worked out!!!!!!!!!!!!!!!!!
+
+2020-09-15T15:45:56 bentley -> van
+UFFFFFFFFFFFFFFFFFFFFFFFFFF
+
+2020-09-15T15:46:18 van -> bentley
+preinfarction state
+
+2020-09-15T15:46:27 bentley -> van
+Yep
+
+2020-09-15T15:46:30 van -> bentley
+is the fixation working?
+
+2020-09-15T15:46:56 bentley -> van
+Yes
+
+2020-09-15T15:47:02 bentley -> van
+Knocked out after a reboot
+
+2020-09-15T15:47:20 van -> bentley
+ok ))))
+
+2020-09-15T15:48:31 bentley -> van
+I'm uploading this loeder to the admin panel giveaway then
+
+2020-09-15T15:48:50 van -> bentley
+Yes, install the version.
+
+2020-09-15T15:48:59 van -> bentley
+on loader
+
+2020-09-15T15:49:05 bentley -> van
+152 yes?
+
+2020-09-15T15:49:10 van -> bentley
+153
+
+2020-09-15T15:49:28 bentley -> van
+Is a signed one better to fill in or does it matter?
+
+2020-09-15T15:50:30 van -> bentley
+encrypted, it will be written to disk
+
+2020-09-15T15:50:39 bentley -> van
+Ok
+
+2020-09-15T15:52:07 van -> bentley
+Is there anything going on with the t1? What are they saying? Or is it silent?
+
+2020-09-15T15:52:33 bentley -> van
+Yes there is a work in progress. Target already Bragged to Booze )
+
+2020-09-15T15:53:04 van -> bentley
+can I go to bed?
+
+2020-09-15T15:53:36 bentley -> van
+Yes. It's okay.)
+
+2020-09-15T15:53:45 bentley -> van
+I will write in the off which group for tomorrow
+
+2020-09-15T15:54:05 van -> bentley
+Okay. See you tomorrow! Bye-bye!
+
+2020-09-15T15:54:13 bentley -> van
+Good night )
+
+2020-09-15T20:24:52 bentley -> van
+<target> 360 Total Security, BitDefender, Comodo, DrWeb, Emsisoft, Kasper, Malwarebytes,
+[03:16:03] <target> rant
+[03:16:05] <target> demolishes
+[03:16:06]
+[03:20:09] <target> > 360, bitdefender,comodo and kasper srazu vidaut, chto kak ya schitau govorit o paleve imeno funcii inciiilisazii
+[03:20:18] <target> > a vot ostalnie uje po 100-150 secund, i rugautsya uje predpolaga. imenno na konnect
+[03:20:29] <target> > ne moe delo kanesh, but nujno menyat architekturu proekta, crypt ne zamenit logiku raboti
+[03:20:46] <bentley> I'll write to coder
+[03:23:31] <bentley> Aag right
+[03:23:33] <bentley> https://dyncheck.com/scan/id/c1fccbb6a597bf2a6680fbdaeac8b618
+
+2020-09-16T03:09:10 bentley -> van
+<target> 360 Total Security, BitDefender, Comodo, DrWeb, Emsisoft, Kasper, Malwarebytes,
+[03:16:03] <target> rant
+[03:16:05] <target> demolishes
+[03:16:06]
+[03:20:09] <target> > 360, bitdefender,comodo and kasper srazu vidaut, chto kak ya schitau govorit o paleve imeno funcii inciiilisazii
+[03:20:18] <target> > a vot ostalnie uje po 100-150 secund, i rugautsya uje predpolaga. imenno na konnect
+[03:20:29] <target> > ne moe delo kanesh, but nujno menyat architekturu proekta, crypt ne zamenit logiku raboti
+[03:20:46] <bentley> I'll write to coder
+[03:23:31] <bentley> Aag right
+[03:23:33] <bentley> https://dyncheck.com/scan/id/c1fccbb6a597bf2a6680fbdaeac8b618
+
+2020-09-16T16:35:27 van -> bentley
+How's the situation?
+
+2020-09-16T16:37:15 bentley -> van
+<Stern> are all the bk's dirty?
+[22:46:46] <Stern> not crypto
+[22:48:42] <bentley> yes van has 5 builds all dirty and 1 from mashroom
+[22:53:25] <Stern> was it always known?
+[22:53:54] <bentley> No before that everything was fine yesterday and last week
+[22:54:07] <Stern> and how so checks the targeting)
+[22:54:11] <Stern> what does it tear down
+[22:54:43] <bentley> Another nuance just the encript's runtime is clean by defender Target check by downloading from shelves through chrome
+[22:55:02] <bentley> it's not really random and not exactly corp av on which we cleaned
+[22:55:37] <bentley> There's also the reputation of the sites and google cloud avs overlaying into this situation
+[22:56:01] <Stern> and you can also clean and check how targeting does it
+[22:56:04] <Stern> since it checks so
+[22:56:08] <Stern> that's how he sends out
+
+2020-09-16T16:39:25 van -> bentley
+Who's tearing down my lowder?
+
+2020-09-16T16:40:03 bentley -> van
+?
+[20:01:30] <bentley> Log Name: Microsoft-Windows-Windows Defender/Operational
+Source: Microsoft-Windows-Windows Defender
+Date: 9/16/2020 2:59:15 PM
+Event ID: 1116
+Task Category: None
+Level: Warning
+Keywords:
+User: SYSTEM
+Computer: WIN10IITST
+Description:
+Microsoft Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:Win32/Wacatac.B!ml&threatid=2147735505&enterprise=0
+    Name: Trojan:Win32/Wacatac.B!ml
+    ID: 2147735505
+    Severity: Severe
+    Category: Trojan
+    Path: file:_C:\Users\TST10ENG\Downloads\Preview.exe; webfile:_C:\Users\TST10ENG\Downloads\Preview.exe|https://alwaslegypt.com/Preview.exe|pid:6324,ProcessStart:132447347529976047
+    Detection Origin: Internet
+    Detection Type: FastPath
+    Detection Source: Downloads and attachments
+    User: WIN10IITST\TST10ENG
+    Process Name: Unknown
+    Security intelligence Version: AV: 1.323.1271.0, AS: 1.323.1271.0, NIS: 1.323.1271.0
+    Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+2020-09-16T16:40:14 bentley -> van
+When I post a signed one on line
+
+2020-09-16T16:40:18 bentley -> van
+link
+
+2020-09-16T16:41:29 van -> bentley
+It wasn't like that yesterday...geez... but it's a crypto kind of thing
+
+2020-09-16T16:41:38 bentley -> van
+And so is the ancrypt.
+
+2020-09-16T16:41:48 bentley -> van
+I checked unencrypted all 5 pcs.
+
+2020-09-16T16:42:06 van -> bentley
+clearly
+
+2020-09-16T16:43:02 bentley -> van
+Now on top of everything else will be added to check for downloads from ftp. Most likely
+
+2020-09-16T16:57:53 van -> bentley
+So you have nothing to work with today?
+
+2020-09-16T16:58:15 van -> bentley
+Ancrypt also stinks, you say.
+
+2020-09-16T16:59:04 bentley -> van
+Yep.
+
+2020-09-16T16:59:04 bentley -> van
+Can't get a clean start
+
+2020-09-16T16:59:58 van -> bentley
+will try to clean from defender in the morning
+
+2020-09-16T17:00:36 bentley -> van
+I see
+
+2020-09-16T17:17:11 van -> bentley
+I've now run the loader in VM 10_64_05_2, knocked it out, Defender is silent. Rebooted, waiting. What's wrong with it?
+
+2020-09-16T17:17:39 bentley -> van
+ <bentley> It's not really rantime and not soavslly corp avs that we cleaned up
+[22:55:37] <bentley> There's also the reputation of the sites and google cloud avs overlaying into this situation
+
+2020-09-16T17:18:14 bentley -> van
+It downloads from the link and detects when you save it
+
+2020-09-16T17:18:24 bentley -> van
+https://alwaslegypt.com/Preview.exe
+
+2020-09-16T17:19:37 van -> bentley
+but we don't cancel the check under Defender, Defender has cloud enabled, updated...
+
+2020-09-16T17:20:03 bentley -> van
+No we don't.
+
+2020-09-16T17:38:56 van -> bentley
+knocked out of the scramble
+
+2020-09-16T17:39:09 van -> bentley
+what to do?
+
+2020-09-16T17:39:28 bentley -> van
+Yes I know that it's ok with van it's some kind of problem with the links where the bk is pouring from
+
+2020-09-16T17:40:00 van -> bentley
+Well, okay, see you tomorrow then )))
+
+2020-09-16T17:40:29 bentley -> van
+Yep
+
+2020-09-18T06:53:54 van -> bentley
+Hi! )))
+
+2020-09-18T06:54:07 van -> bentley
+What to build with the new compiler?
+
+2020-09-18T06:55:16 bentley -> van
+Yeah go ahead and do it for group 1 or One
+
+2020-09-18T06:55:25 bentley -> van
+Let's test it )
+
+2020-09-18T06:55:25 van -> bentley
+Autotest didn't work this morning. Manually wanted to start the car with def - blocked it says, the other VM panel couldn't open at all. Kind of a depressing morning for me.
+
+2020-09-18T06:55:29 bentley -> van
+one is better
+
+2020-09-18T06:55:46 bentley -> van
+The cryptoranel is working right now.
+
+2020-09-18T06:55:52 van -> bentley
+Okay, I'll put it together now.
+
+2020-09-18T06:56:06 van -> bentley
+cryptopanel has been working since this morning
+
+2020-09-18T06:56:14 van -> bentley
+autotests didn't start
+
+2020-09-18T06:56:25 bentley -> van
+What kind of cars?
+
+2020-09-18T07:02:03 van -> bentley
+first everything
+
+2020-09-18T07:02:31 van -> bentley
+Then I ran it again, it turned on and knocked out 2016, the rest did not turn on
+
+2020-09-18T07:18:51 van -> bentley
+GBRQWERasdzxc
+Download: https://qaz.im/load/eQ47Tk/3FkTZS
+
+2020-09-18T07:18:59 van -> bentley
+band one
+
+2020-09-18T07:19:26 van -> bentley
+You have to put a backdoor in one
+
+2020-09-18T07:22:24 bentley -> van
+Ok cps))
+
+2020-09-18T13:46:51 van -> bentley
+how are you doing?
+
+2020-09-18T13:47:17 bentley -> van
+I'll be backlogged for about 30 minutes to check your pc.
+
+2020-09-18T13:47:35 van -> bentley
+OK, I'll come back later.
+
+2020-09-18T15:13:55 van -> bentley
+Anything you can say?
+
+2020-09-18T15:14:31 bentley -> van
+
+
+2020-09-18T15:14:48 van -> bentley
+am I boring you? )))
+
+2020-09-18T15:14:58 bentley -> van
+No.
+
+2020-09-18T15:17:42 bentley -> van
+20 minutes to get home
+
+2020-09-18T15:18:09 van -> bentley
+come on already... rest... Friday...
+
+2020-09-18T15:18:20 van -> bentley
+have a great weekend!
+
+2020-09-18T15:33:03 bentley -> van
+Detect on Def.
+
+2020-09-18T15:35:02 bentley -> van
+Log Name: Microsoft-Windows-Windows Defender/Operational
+Source: Microsoft-Windows-Windows Defender
+Date: 9/18/2020 5:21:36 PM
+Event ID: 1116
+Task Category: None
+Level: Warning
+Keywords:
+User: SYSTEM
+Computer: WIN10IITST
+Description:
+Microsoft Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Behavior:Win32/DefenseEvasion.UM!ml&threatid=2147738649&enterprise=0
+ 	Name: Behavior:Win32/DefenseEvasion.UM!ml
+ 	ID: 2147738649
+ 	Severity: Severe
+ 	Category: Suspicious Behavior
+ 	Path: file:_C:\Users\TST10ENG\Downloads\ld1_gr_one\ld1_gr_one.exe
+ 	Detection Origin: Local machine
+ 	Detection Type: Concrete
+ 	Detection Source: Real-Time Protection
+ 	User: WIN10IITST\TST10ENG
+ 	Process Name: C:{Windows\System32\svchost.exe
+ 	Security intelligence Version: AV: 1.323.1415.0, AS: 1.323.1415.0, NIS: 1.323.1415.0
+ 	Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+2020-09-18T15:35:49 bentley -> van
+and for 2019
+
+2020-09-18T15:36:06 bentley -> van
+Log Name: Microsoft-Windows-Windows Defender/Operational
+Source: Microsoft-Windows-Windows Defender
+Date: 9/18/2020 8:21:14 AM
+Event ID: 1116
+Task Category: None
+Level: Warning
+Keywords:
+User: SYSTEM
+Computer: SRV2019II
+Description:
+Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Behavior:Win32/DefenseEvasion.UM!ml&threatid=2147738649&enterprise=0
+ 	Name: Behavior:Win32/DefenseEvasion.UM!ml
+ 	ID: 2147738649
+ 	Severity: Severe
+ 	Category: Suspicious Behavior
+ 	Path: file:_C:\Users\Administrator\Downloads\ld1_gr_one\ld1_gr_one.exe
+ 	Detection Origin: Local machine
+ 	Detection Type: Concrete
+ 	Detection Source: Real-Time Protection
+ 	User: SRV2019II\Administrator
+ 	Process Name: C:{Windows\System32\svchost.exe
+ 	Signature Version: AV: 1.323.1415.0, AS: 1.323.1415.0, NIS: 1.323.1415.0
+ 	Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+2020-09-18T15:36:14 bentley -> van
+within 1 minute of work
+
+2020-09-18T16:35:05 bentley -> van
+Detect on Def.
+
+2020-09-18T16:35:05 bentley -> van
+Log Name: Microsoft-Windows-Windows Defender/Operational
+Source: Microsoft-Windows-Windows Defender
+Date: 9/18/2020 5:21:36 PM
+Event ID: 1116
+Task Category: None
+Level: Warning
+Keywords:
+User: SYSTEM
+Computer: WIN10IITST
+Description:
+Microsoft Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Behavior:Win32/DefenseEvasion.UM!ml&threatid=2147738649&enterprise=0
+ 	Name: Behavior:Win32/DefenseEvasion.UM!ml
+ 	ID: 2147738649
+ 	Severity: Severe
+ 	Category: Suspicious Behavior
+ 	Path: file:_C:\Users\TST10ENG\Downloads\ld1_gr_one\ld1_gr_one.exe
+ 	Detection Origin: Local machine
+ 	Detection Type: Concrete
+ 	Detection Source: Real-Time Protection
+ 	User: WIN10IITST\TST10ENG
+ 	Process Name: C:{Windows\System32\svchost.exe
+ 	Security intelligence Version: AV: 1.323.1415.0, AS: 1.323.1415.0, NIS: 1.323.1415.0
+ 	Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+2020-09-18T16:35:05 bentley -> van
+and for 2019
+
+2020-09-18T16:35:05 bentley -> van
+Log Name: Microsoft-Windows-Windows Defender/Operational
+Source: Microsoft-Windows-Windows Defender
+Date: 9/18/2020 8:21:14 AM
+Event ID: 1116
+Task Category: None
+Level: Warning
+Keywords:
+User: SYSTEM
+Computer: SRV2019II
+Description:
+Windows Defender Antivirus has detected malware or other potentially unwanted software.
+ For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Behavior:Win32/DefenseEvasion.UM!ml&threatid=2147738649&enterprise=0
+ 	Name: Behavior:Win32/DefenseEvasion.UM!ml
+ 	ID: 2147738649
+ 	Severity: Severe
+ 	Category: Suspicious Behavior
+ 	Path: file:_C:\Users\Administrator\Downloads\ld1_gr_one\ld1_gr_one.exe
+ 	Detection Origin: Local machine
+ 	Detection Type: Concrete
+ 	Detection Source: Real-Time Protection
+ 	User: SRV2019II\Administrator
+ 	Process Name: C:{Windows\System32\svchost.exe
+ 	Signature Version: AV: 1.323.1415.0, AS: 1.323.1415.0, NIS: 1.323.1415.0
+ 	Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+2020-09-18T16:35:05 bentley -> van
+within 1 minute of work
+
+2020-09-18T16:35:50 van -> bentley
+fuckin'
+
+2020-09-18T16:36:59 van -> bentley
+I'll be looking for the problem this weekend.
+
+2020-09-18T16:37:26 bentley -> van
+Strange how it works for me on 10 and for my tester on 2019
+
+2020-09-18T16:37:33 bentley -> van
+And I'm off again for 2019.
+
+2020-09-18T16:40:11 van -> bentley
+Yeah, it's weird...
+
+2020-09-18T16:43:47 bentley -> van
+And the bot tapped out on all 3 cars
+
+2020-09-18T16:43:55 van -> bentley
+yes
+
+2020-09-18T16:43:58 van -> bentley
+I see
+
+2020-09-18T16:44:18 bentley -> van
+It will probably die on reboot.
+
+2020-09-18T16:44:25 bentley -> van
+Record with the logs?
+
+2020-09-18T16:45:02 van -> bentley
+No, no logging is not an option, I haven't configured the compiler yet
+
+2020-09-18T16:45:37 bentley -> van
+got it
+
+2020-09-18T16:45:42 van -> bentley
+I'll run it myself tomorrow.
+
+2020-09-18T16:45:49 bentley -> van
+Okay
+
+2020-09-18T16:46:00 van -> bentley
+Reboot.
+
+2020-09-18T16:46:22 bentley -> van
+ok
+
+2020-09-18T16:47:16 van -> bentley
+I couldn't turn on 10_64_05_2 this morning, can I use it tomorrow?
+
+2020-09-18T16:47:30 van -> bentley
+Or does it not work?
+
+2020-09-18T16:47:32 bentley -> van
+yes
+
+2020-09-18T16:47:45 van -> bentley
+working?
+
+2020-09-18T16:47:45 bentley -> van
+Better take 10 bentley on another cherver
+
+2020-09-18T16:47:50 bentley -> van
+server
+
+2020-09-18T16:47:56 bentley -> van
+It has been updated.
+
+2020-09-18T16:47:59 bentley -> van
+This one doesn't.
+
+2020-09-18T16:48:34 van -> bentley
+Is defender on it too?
+
+2020-09-18T16:48:41 bentley -> van
+yes
+
+2020-09-18T16:48:48 bentley -> van
+It works better there.
+
+2020-09-18T16:49:10 van -> bentley
+Win10-64-bentley - this one?
+
+2020-09-18T16:49:42 bentley -> van
+Yes
+
+2020-09-18T16:50:49 van -> bentley
+okay
+
+2020-09-18T16:50:58 van -> bentley
+Are you going to reboot?
+
+2020-09-18T16:51:10 bentley -> van
+doing
+
+2020-09-18T16:51:21 bentley -> van
+https://scrytnuuszglaugg.onion:4247/bots/command?id=dc7d678e5ce4cb827cc8ab9c748c18bf
+
+2020-09-18T16:51:34 bentley -> van
+Here is the helper bot and it has no detection for 2019 as it says
+
+2020-09-18T16:53:04 van -> bentley
+I don't see this bot on the list
+
+2020-09-18T16:54:16 bentley -> van
+I can see it. Weird
+
+2020-09-18T16:57:02 van -> bentley
+saw it, it's not in the test ones.
+
+2020-09-18T16:57:23 bentley -> van
+Yep
+
+2020-09-18T16:57:34 van -> bentley
+so he needs to reboot too
+
+2020-09-18T16:58:10 van -> bentley
+So he's already been rebooted, it looks like.
+
+2020-09-18T16:58:17 bentley -> van
+yes
+
+2020-09-18T16:58:51 van -> bentley
+then you need to check if defender is updated, if the cloud is enabled
+
+2020-09-18T16:59:02 bentley -> van
+yes
+
+2020-09-18T17:00:33 van -> bentley
+you had two bots from the zakrepa knocked off
+
+2020-09-18T17:01:02 van -> bentley
+And the third one seems to be dead.
+
+2020-09-18T17:16:38 van -> bentley
+what to do?
+
+2020-09-18T17:17:02 bentley -> van
+Yes 10 and 7 knocked off
+
+2020-09-18T17:18:46 van -> bentley
+а 2019?
+
+2020-09-18T17:21:24 van -> bentley
+okay, it's time for bed )))
+
+2020-09-18T17:21:51 van -> bentley
+have a great weekend to you!!! Get some rest!
+
+2020-09-18T17:22:16 bentley -> van
+Then see 2019 Bentley too
+
+2020-09-18T17:22:54 van -> bentley
+What's the password?
+
+2020-09-18T17:23:20 bentley -> van
+I'll check it out.
+
+2020-09-18T17:27:10 bentley -> van
+ 2019 JohnJackson21
+
+2020-09-18T17:27:16 bentley -> van
+or JohnJackson
+
+2020-09-18T17:27:17 van -> bentley
+ok
+
+2020-09-18T17:27:25 van -> bentley
+Yep
+
+2020-09-18T17:27:42 van -> bentley
+bye-bye!
+
+2020-09-18T17:27:51 bentley -> van
+Fuf lj gjytltkmybrf )
+
+2020-09-18T17:27:54 bentley -> van
+Jo Monday
+
+2020-09-18T17:28:01 van -> bentley
+)))))
+
+2020-09-21T06:59:58 van -> bentley
+Hi! )))
+Green addresses sent in. What to collect today?
+
+2020-09-21T07:00:11 bentley -> van
+Come on one
+
+2020-09-21T07:00:17 bentley -> van
+Hi ))
+
+2020-09-21T07:00:43 van -> bentley
+a few options?
+
+2020-09-21T07:00:49 bentley -> van
+Yes
+
+2020-09-21T07:01:22 van -> bentley
+Yep
+
+2020-09-21T07:15:30 van -> bentley
+GBRQWERasdzxc
+Download: https://qaz.im/load/hYn8yN/aGNKrK
+
+2020-09-21T07:15:38 bentley -> van
+++
+
+2020-09-21T12:49:06 van -> bentley
+How are we doing on the detects? Any new information? For Stern.
+
+2020-09-21T12:49:20 bentley -> van
+Checking Swift.
+
+2020-09-21T12:49:24 bentley -> van
+Haven't looked at yours yet.
+
+2020-09-21T12:49:39 bentley -> van
+He's about to give out 2 builds. 1 detects
+
+2020-09-21T12:49:51 van -> bentley
+defender?
+
+2020-09-21T12:50:06 bentley -> van
+Yes
+
+2020-09-21T12:51:01 van -> bentley
+I checked mine today on your VM 2019 - it was clean. I wonder how yours will be.
+
+2020-09-21T12:52:08 bentley -> van
+Yep
+
+2020-09-21T12:52:12 van -> bentley
+What about Frog and Mashroom?
+
+2020-09-21T12:52:13 bentley -> van
+Did you update the VM?
+
+2020-09-21T12:52:19 bentley -> van
+How did you check? Through a download?
+
+2020-09-21T12:52:52 van -> bentley
+Defender updated. Through a download.
+
+2020-09-21T12:53:10 bentley -> van
+What file sharing site?
+
+2020-09-21T12:54:13 van -> bentley
+qaz.im
+
+2020-09-21T12:54:25 bentley -> van
+ok
+
+2020-09-21T12:56:54 van -> bentley
+What about Frog and Mashroom?
+
+2020-09-21T12:57:09 bentley -> van
+No, they haven't given it to me for a test yet.
+
+2020-09-21T12:57:15 bentley -> van
+Let me ask them.
+
+2020-09-21T12:57:22 van -> bentley
+thanks
+
+2020-09-21T12:57:51 bentley -> van
+Mashroom's with asked. Frog off.
+
+2020-09-21T12:57:55 bentley -> van
+Cactus.
+
+2020-09-21T12:58:12 van -> bentley
+I know about Cactus.
+
+2020-09-21T12:58:20 van -> bentley
+he's mine.
+
+2020-09-21T12:58:29 bentley -> van
+Ah ok )
+
+2020-09-21T12:58:32 bentley -> van
+Not yet on the test?
+
+2020-09-21T12:59:18 van -> bentley
+Cactus wrote that he checks himself, no detects. Probably give it to the test now. I'll clarify.
+
+2020-09-21T12:59:39 van -> bentley
+They're all giving you the test now, aren't they?
+
+2020-09-21T12:59:59 bentley -> van
+Yes, while I'll distribute later as I teach the Padawans)
+
+2020-09-21T13:00:10 van -> bentley
+great
+
+2020-09-21T13:02:00 van -> bentley
+What did Mashroom say?
+
+2020-09-21T13:02:10 bentley -> van
+Silent for now.
+
+2020-09-21T13:02:16 van -> bentley
+ahh
+
+2020-09-21T13:11:04 van -> bentley
+What should I write to Stern about my Lowader? Based on Friday's results.
+
+2020-09-21T13:12:23 bentley -> van
+Detktil Def for 2019 and 2010 after 1 minute Name: Behavior:Win32/DefenseEvasion.UM!ml
+
+2020-09-21T13:12:37 bentley -> van
+Friday
+
+2020-09-21T13:13:30 van -> bentley
+was this manually when you checked it?
+
+2020-09-21T13:13:42 bentley -> van
+Yes
+
+2020-09-21T13:14:08 van -> bentley
+tested on 4 cars, 3 knocked out it seems... no?
+
+2020-09-21T13:14:23 bentley -> van
+Not according to the logs.
+
+2020-09-21T13:15:06 van -> bentley
+your assistant checked on two VMs without detects, right?
+
+2020-09-21T13:16:44 bentley -> van
+Oh right!
+
+2020-09-21T13:16:46 bentley -> van
+Yeah so
+
+2020-09-21T13:16:59 van -> bentley
+you have wrinkled 2019
+
+2020-09-21T13:17:12 van -> bentley
+And he was clean for 2019
+
+2020-09-21T13:17:19 bentley -> van
+Right
+
+2020-09-21T13:17:21 van -> bentley
+On 10 it was clear.
+
+2020-09-21T13:17:22 bentley -> van
+Yes, that's how it is.
+
+2020-09-21T13:17:34 van -> bentley
+I thought I was dreaming.
+
+2020-09-21T13:18:09 bentley -> van
+I forgot already sorry
+
+2020-09-21T13:18:18 van -> bentley
+)))
+
+2020-09-21T13:18:30 van -> bentley
+No wonder you forgot.
+
+2020-09-21T13:18:46 van -> bentley
+How much you have in the works there.
+
+2020-09-21T13:19:08 bentley -> van
+I'll be fine.
+
+2020-09-21T13:22:04 van -> bentley
+)))) I have no doubt
+
+2020-09-21T19:01:59 bentley -> van
+Bottom line for me + 2 testers - ok
+
+2020-09-21T19:02:16 bentley -> van
+one has a detection after restarting
+
+2020-09-21T19:02:55 bentley -> van
+<hlor>
+Everything worked fine before the reboot, right after the reboot:
+
+Win10
+1 warning
+    Name: Behavior:Win32/DefenseEvasion.HK!ml
+    ID: 2147738296
+    Severity: Severe
+    Category: Suspicious Behavior
+    Path: file:_C:\Users\john\Desktop\ld1.exe
+    Detection Origin: Local machine
+    Detection Type: Concrete
+    Detection Source: Real-Time Protection
+    User: DESKTOP-JIS92H6\john
+    Process Name: C:{Windows\explorer.exe
+    Security intelligence Version: AV: 1.323.1633.0, AS: 1.323.1633.0, NIS: 1.323.1633.0
+    Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+2 warning
+    Name: Behavior:Win32/DefenseEvasion.HK!ml
+    ID: 2147738296
+    Severity: Severe
+    Category: Suspicious Behavior
+    Path: file:_C:\Users\john\Desktop\ld1.exe
+    Detection Origin: Local machine
+    Detection Type: Concrete
+    Detection Source: Real-Time Protection
+    User: DESKTOP-JIS92H6\john
+    Process Name: C:{Windows\explorer.exe
+    Security intelligence Version: AV: 1.323.1633.0, AS: 1.323.1633.0, NIS: 1.323.1633.0
+    Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+3 warning
+    Name: Behavior:Win32/DefenseEvasion.HK!ml
+    ID: 2147738296
+    Severity: Severe
+    Category: Suspicious Behavior
+    Path: file:_C:\Users\john\Desktop\ld1.exe
+    Detection Origin: Local machine
+    Detection Type: Concrete
+    Detection Source: Real-Time Protection
+    User: DESKTOP-JIS92H6\john
+    Process Name: C:{Windows\System32\svchost.exe
+    Security intelligence Version: AV: 1.323.1633.0, AS: 1.323.1633.0, NIS: 1.323.1633.0
+    Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+4 warning
+    Name: Behavior:Win32/DefenseEvasion.HK!ml
+    ID: 2147738296
+    Severity: Severe
+    Category: Suspicious Behavior
+    Path: file:_C:\Users\john\Desktop\ld1.exe
+    Detection Origin: Local machine
+    Detection Type: Concrete
+    Detection Source: Real-Time Protection
+    User: DESKTOP-JIS92H6\john
+    Process Name: C:{Windows\System32\svchost.exe
+    Security intelligence Version: AV: 1.323.1633.0, AS: 1.323.1633.0, NIS: 1.323.1633.0
+    Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+Win2019
+1 warning
+    Name: Behavior:Win32/DefenseEvasion.HK!ml
+    ID: 2147738296
+    Severity: Severe
+    Category: Suspicious Behavior
+    Path: file:_C:\Users\john\Desktop\ld1.exe
+    Detection Origin: Local machine
+    Detection Type: Concrete
+    Detection Source: Real-Time Protection
+    User: WIN-3QSHVD51PS8\john
+    Process Name: C:{Windows\explorer.exe
+    Signature Version: AV: 1.323.1633.0, AS: 1.323.1633.0, NIS: 1.323.1633.0
+    Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+2 warning
+    Name: Behavior:Win32/DefenseEvasion.HK!ml
+    ID: 2147738296
+    Severity: Severe
+    Category: Suspicious Behavior
+    Path: file:_C:\Users\john\Desktop\ld1.exe
+    Detection Origin: Local machine
+    Detection Type: Concrete
+    Detection Source: Real-Time Protection
+    User: WIN-3QSHVD51PS8\john
+    Process Name: C:{Windows\System32\svchost.exe
+    Signature Version: AV: 1.323.1633.0, AS: 1.323.1633.0, NIS: 1.323.1633.0
+    Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+3 warning
+    Name: Behavior:Win32/DefenseEvasion.HK!ml
+    ID: 2147738296
+    Severity: Severe
+    Category: Suspicious Behavior
+    Path: file:_C:\Users\john\Desktop\ld1.exe
+    Detection Origin: Local machine
+    Detection Type: Concrete
+    Detection Source: Real-Time Protection
+    User: WIN-3QSHVD51PS8\john
+    Process Name: C:{Windows\System32\svchost.exe
+    Signature Version: AV: 1.323.1633.0, AS: 1.323.1633.0, NIS: 1.323.1633.0
+    Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+2020-09-21T19:03:09 bentley -> van
+I understand the launch was from the desktop. Mine is from downloads.
+
+2020-09-22T04:10:16 bentley -> van
+Bottom line for me + 2 testers - ok
+
+2020-09-22T04:10:16 bentley -> van
+one has detected after restarting
+
+2020-09-22T04:10:16 bentley -> van
+<hlor>
+Everything worked fine before the reboot, right after the reboot:
+
+Win10
+1 warning
+    Name: Behavior:Win32/DefenseEvasion.HK!ml
+    ID: 2147738296
+    Severity: Severe
+    Category: Suspicious Behavior
+    Path: file:_C:\Users\john\Desktop\ld1.exe
+    Detection Origin: Local machine
+    Detection Type: Concrete
+    Detection Source: Real-Time Protection
+    User: DESKTOP-JIS92H6\john
+    Process Name: C:{Windows\explorer.exe
+    Security intelligence Version: AV: 1.323.1633.0, AS: 1.323.1633.0, NIS: 1.323.1633.0
+    Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+2 warning
+    Name: Behavior:Win32/DefenseEvasion.HK!ml
+    ID: 2147738296
+    Severity: Severe
+    Category: Suspicious Behavior
+    Path: file:_C:\Users\john\Desktop\ld1.exe
+    Detection Origin: Local machine
+    Detection Type: Concrete
+    Detection Source: Real-Time Protection
+    User: DESKTOP-JIS92H6\john
+    Process Name: C:{Windows\explorer.exe
+    Security intelligence Version: AV: 1.323.1633.0, AS: 1.323.1633.0, NIS: 1.323.1633.0
+    Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+3 warning
+    Name: Behavior:Win32/DefenseEvasion.HK!ml
+    ID: 2147738296
+    Severity: Severe
+    Category: Suspicious Behavior
+    Path: file:_C:\Users\john\Desktop\ld1.exe
+    Detection Origin: Local machine
+    Detection Type: Concrete
+    Detection Source: Real-Time Protection
+    User: DESKTOP-JIS92H6\john
+    Process Name: C:{Windows\System32\svchost.exe
+    Security intelligence Version: AV: 1.323.1633.0, AS: 1.323.1633.0, NIS: 1.323.1633.0
+    Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+4 warning
+    Name: Behavior:Win32/DefenseEvasion.HK!ml
+    ID: 2147738296
+    Severity: Severe
+    Category: Suspicious Behavior
+    Path: file:_C:\Users\john\Desktop\ld1.exe
+    Detection Origin: Local machine
+    Detection Type: Concrete
+    Detection Source: Real-Time Protection
+    User: DESKTOP-JIS92H6\john
+    Process Name: C:{Windows\System32\svchost.exe
+    Security intelligence Version: AV: 1.323.1633.0, AS: 1.323.1633.0, NIS: 1.323.1633.0
+    Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+Win2019
+1 warning
+    Name: Behavior:Win32/DefenseEvasion.HK!ml
+    ID: 2147738296
+    Severity: Severe
+    Category: Suspicious Behavior
+    Path: file:_C:\Users\john\Desktop\ld1.exe
+    Detection Origin: Local machine
+    Detection Type: Concrete
+    Detection Source: Real-Time Protection
+    User: WIN-3QSHVD51PS8\john
+    Process Name: C:{Windows\explorer.exe
+    Signature Version: AV: 1.323.1633.0, AS: 1.323.1633.0, NIS: 1.323.1633.0
+    Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+2 warning
+    Name: Behavior:Win32/DefenseEvasion.HK!ml
+    ID: 2147738296
+    Severity: Severe
+    Category: Suspicious Behavior
+    Path: file:_C:\Users\john\Desktop\ld1.exe
+    Detection Origin: Local machine
+    Detection Type: Concrete
+    Detection Source: Real-Time Protection
+    User: WIN-3QSHVD51PS8\john
+    Process Name: C:{Windows\System32\svchost.exe
+    Signature Version: AV: 1.323.1633.0, AS: 1.323.1633.0, NIS: 1.323.1633.0
+    Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+3 warning
+    Name: Behavior:Win32/DefenseEvasion.HK!ml
+    ID: 2147738296
+    Severity: Severe
+    Category: Suspicious Behavior
+    Path: file:_C:\Users\john\Desktop\ld1.exe
+    Detection Origin: Local machine
+    Detection Type: Concrete
+    Detection Source: Real-Time Protection
+    User: WIN-3QSHVD51PS8\john
+    Process Name: C:{Windows\System32\svchost.exe
+    Signature Version: AV: 1.323.1633.0, AS: 1.323.1633.0, NIS: 1.323.1633.0
+    Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+2020-09-22T04:10:16 bentley -> van
+I understand the launch was from the desktop. Mine is from downloads.
+
+2020-09-22T14:52:07 van -> bentley
+how are you doing?
+
+2020-09-22T14:52:11 bentley -> van
+Run
+
+2020-09-22T14:52:14 bentley -> van
+Def is clear.
+
+2020-09-22T14:52:22 bentley -> van
+Рантайм 8/23 https://dyncheck.com/scan/id/9ce7a95ad2cdb5b8126677596c4643f4
+
+2020-09-22T14:53:46 van -> bentley
+I see, how is Cactus?
+
+2020-09-22T15:05:38 bentley -> van
+Ok
+
+2020-09-22T15:06:05 van -> bentley
+and the rant is all clean?
+
+2020-09-22T15:06:44 bentley -> van
+Def yes
+
+2020-09-22T15:06:57 bentley -> van
+Didn't look at the dynamics.
+
+2020-09-22T15:08:18 van -> bentley
+so that's the 8/23 part - there's just punishment for online activity
+
+2020-09-22T15:14:50 van -> bentley
+Do you send in the dincheck for crypt dynamics?
+
+2020-09-22T15:20:21 van -> bentley
+You know, I think all our troubles started with turning on the cloud and checking the dynamics on the dincheck. We leak our own code. We clean it up, we leak it again. We can't get out of this circle. We need to test without the cloud and stay away from the dynamics on the dincheck. And when we go into battle, let everyone have the cloud on, it will not be ready, the loader will at least load the bot. And so we ourselves train the cloud AV.
+
+2020-09-22T15:29:16 van -> bentley
+I've got 100500 words on Target right now... In a nutshell, me and Mashrum are going to do the least looder possible by Friday. We'll remove everything from the loeder, which isn't necessary for one-time loading of BC. I'll build one tomorrow. We'll see.
+
+2020-09-22T15:29:52 bentley -> van
+Okay
+
+2020-09-22T15:30:25 van -> bentley
+But the tests have to be dealt with. Pouring samples into the cloud and dincheck is wrong.
+
+2020-09-22T15:31:04 bentley -> van
+Let's think.
+
+2020-09-22T15:31:11 van -> bentley
+Uh-huh
+
+2020-09-22T16:33:55 bentley -> van
+Here's the crypt
+
+2020-09-22T16:33:55 bentley -> van
+<bentley> https://dyncheck.com/scan/id/41c1fccd7b5350c6872f506cb93ca2fd
+[23:33:09] <bentley> Dr web and norton in fact
+[23:33:38] <bentley> Komodo is gon
+
+2020-09-22T16:38:15 bentley -> van
+ <deploy@q3mcco35auwcstmt.onion> Norton scams traffic
+[23:36:14] <deploy@q3mcco35auwcstmt.onion> It shows in the screen alert, suspicious network activity
+[23:36:24] <bentley> pads?
+[23:36:28] <bentley> Or the algorithm itself?
+[23:36:40] <deploy@q3mcco35auwcstmt.onion> I don't know
+
+[23:37:10] <deploy@q3mcco35auwcstmt.onion> Norton spoils everything
+[23:37:17] <deploy@q3mcco35auwcstmt.onion> But it's fine
+
+2020-09-23T04:48:44 bentley -> van
+Here's the crypt.
+
+2020-09-23T04:48:44 bentley -> van
+<bentley> https://dyncheck.com/scan/id/41c1fccd7b5350c6872f506cb93ca2fd
+[23:33:09] <bentley> Dr web and norton in fact
+[23:33:38] <bentley> Komodo is gon
+
+2020-09-23T04:48:44 bentley -> van
+ <deploy@q3mcco35auwcstmt.onion> Norton scams traffic
+[23:36:14] <deploy@q3mcco35auwcstmt.onion> It shows in the screen alert, suspicious network activity
+[23:36:24] <bentley> pads?
+[23:36:28] <bentley> Or the algorithm itself?
+[23:36:40] <deploy@q3mcco35auwcstmt.onion> I don't know
+
+[23:37:10] <deploy@q3mcco35auwcstmt.onion> Norton spoils everything
+[23:37:17] <deploy@q3mcco35auwcstmt.onion> But it's fine
+
+2020-09-23T07:36:08 van -> bentley
+Hi! )))
+
+2020-09-23T07:36:29 bentley -> van
+Hi ))
+
+2020-09-23T07:36:29 van -> bentley
+I got your message.
+
+2020-09-23T07:36:56 van -> bentley
+Target wrote at night:
+
+2020-09-23T07:37:00 van -> bentley
+[04:56:03] <target> 100%
+[04:56:04] <target> clean
+[04:56:04] <target> new
+[04:56:05] <target> pads
+[04:56:07] <target> in uk
+[04:56:10] <target> and new build
+[04:56:15] <target> to domain one1
+[04:56:18] <target> deplot to krypt
+[04:56:19] <target> into work
+[04:56:21] <target> today
+[04:56:27] <target> the zayuazny prokldaks
+[04:56:28] <target> segmented
+[04:56:30] <target> and yesterday's
+[04:56:32] <target> DO NOT put
+[04:56:38] <target> at 14:00
+[04:56:41] <target> deplot should have source
+[04:56:48] <target> thanks
+[04:56:53] <target> segdonay work a little with uk
+
+2020-09-23T07:37:28 bentley -> van
+Yeah, I'm going to ask Greene now.
+
+2020-09-23T07:45:19 van -> bentley
+Green is making pads. Bunch of groups are crawling up the admin room.
+
+2020-09-23T07:45:28 bentley -> van
+Yep
+
+2020-09-23T07:45:40 van -> bentley
+Boosa will do one1 now.
+
+2020-09-23T07:45:53 bentley -> van
+Ok
+
+2020-09-23T07:46:19 van -> bentley
+How did they even work out?
+
+2020-09-23T07:47:56 bentley -> van
+Didn't say anything.
+
+2020-09-23T07:56:45 van -> bentley
+the band is there, waiting for gaskets and assembling
+
+2020-09-23T07:56:57 bentley -> van
+Ok
+
+2020-09-23T08:06:17 van -> bentley
+Green addresses issued, collecting.
+
+2020-09-23T08:06:26 bentley -> van
+Yeah good
+
+2020-09-23T08:06:30 bentley -> van
+Without a scramble, right?
+
+2020-09-23T08:06:46 van -> bentley
+yes
+
+2020-09-23T09:10:10 van -> bentley
+5 loaders to collect?
+
+2020-09-23T09:12:58 bentley -> van
+come on
+
+2020-09-23T09:13:06 van -> bentley
+Uh-huh
+
+2020-09-23T09:22:46 van -> bentley
+GBRQWERasdzxc
+Download: https://qaz.im/load/d9FdYf/dEzbzB
+
+2020-09-23T09:22:55 bentley -> van
+++
+
+2020-09-23T09:26:00 van -> bentley
+Don't drain clouds and dinchek anchorps, please, or better yet, don't drain anything at all. We only worsen the breakthrough ability of the loader with these plums. We have the right to experiment, don't we? Remember, it was much better when we did not shine anywhere, we were careful.
+
+2020-09-23T09:26:37 bentley -> van
+Okay
+
+2020-09-23T09:27:24 van -> bentley
+a fight will be successful when it is sudden, and before the fight we reveal all the cards to the enemies ))))
+
+2020-09-23T09:29:06 bentley -> van
+))
+
+2020-09-23T18:28:07 bentley -> van
+Worked your lowers today
+
+2020-09-23T18:29:15 bentley -> van
+Target ask to make tomorrow's assemblies like this: 2-3 assemblies. 1 assembly - 1 gasket. So that the gaskets don't go over. Gaskets not used only.
+
+2020-09-23T18:29:42 bentley -> van
+Says it doesn't knock after some loader and doesn't get palyed.
+
+2020-09-23T18:30:58 bentley -> van
+ <target>.
+how to do it on the principle of 1 build 1 ip pad
+to do 10 builds - 10 different ip
+not carcassel as I see it now
+
+2020-09-24T03:42:14 bentley -> van
+Worked your lowers today
+
+2020-09-24T03:42:14 bentley -> van
+Target to ask to make assemblies like this tomorrow: 2-3 assemblies. 1 assembly - 1 gasket. So that the gaskets don't go over. Gaskets not used only.
+
+2020-09-24T03:42:14 bentley -> van
+Says it doesn't knock after some loader and doesn't get palyed.
+
+2020-09-24T03:42:14 bentley -> van
+ <target>.
+how to do it on the principle of 1 build 1 ip pad
+to do 10 builds - 10 different ip
+not carcassel as I see it now
+
+2020-09-25T06:35:29 bentley -> van
+Hi ))
+
+2020-09-25T06:35:34 bentley -> van
+Will you do what Target asked?
+
+2020-09-25T06:36:16 van -> bentley
+Hi! ))) Almost got it together, Green just sent over the new addresses.
+
+2020-09-25T06:36:26 bentley -> van
+Superoble!
+
+2020-09-25T06:37:41 van -> bentley
+He also wanted a mashroom loeder, but no mashroom yet.
+
+2020-09-25T06:37:58 bentley -> van
+Yeah it wrote to me too. Checked it yesterday.
+
+2020-09-25T06:38:00 bentley -> van
+It's ok.
+
+2020-09-25T06:38:31 van -> bentley
+great!
+
+2020-09-25T06:42:15 van -> bentley
+GBRQWERasdzxc
+Download: https://qaz.im/load/Y8eAHD/8fB8si
+
+2020-09-25T06:42:36 bentley -> van
++
+
+2020-09-25T06:43:18 van -> bentley
+For the third day Green has been giving out new addresses. Target is questioning something about their newness. The addresses are new.
+
+2020-09-25T06:43:47 van -> bentley
+So Mashroom has already issued a loeder to Target?
+
+2020-09-25T06:43:50 bentley -> van
+Target is always in doubt )) For they have been cheated many times before with this
+
+2020-09-25T06:44:04 bentley -> van
+No, he gave it to me yesterday I didn't have time to give it to crypt
+
+2020-09-25T06:44:09 bentley -> van
+We'll do it today when it arrives.
+
+2020-09-25T06:44:33 van -> bentley
+I don't have to ask Mashroom for anything? Has he done everything?
+
+2020-09-25T06:45:24 bentley -> van
+Yes he did everything clearly just need to figure out how to make it have unique ipi. Which you do not repeat and new
+
+2020-09-25T06:45:59 van -> bentley
+I'll tell Greene to give him and me different ones.
+
+2020-09-25T06:46:20 bentley -> van
+Yeah good!
+
+2020-09-25T06:47:44 van -> bentley
+Target said they will be working at 1pm. Will we make it with the cryptos?
+
+2020-09-25T06:49:18 van -> bentley
+How did they do yesterday? Did Target stomp their feet or was it quiet?
+
+2020-09-25T06:49:33 bentley -> van
+I think it's okay. Didn't swear))
+
+2020-09-25T06:50:09 van -> bentley
+))
+
+2020-09-25T06:50:45 bentley -> van
+That means = ok. If it's praiseworthy = very good )
+
+2020-09-25T06:51:30 van -> bentley
+there you go ))))
+
+2020-09-25T06:54:22 bentley -> van
+Yep. communication code )
+
+2020-09-25T13:10:18 van -> bentley
+How's it going?
+
+2020-09-25T13:10:33 bentley -> van
+Your lowers are working.
+
+2020-09-25T13:11:12 van -> bentley
+Anything working out?
+
+2020-09-25T13:13:20 bentley -> van
+Yes, it's downloading.
+
+2020-09-25T13:13:33 van -> bentley
+Uh-huh
+
+2020-09-25T13:16:40 van -> bentley
+I'll be off, I'll be back later... tell me what and how... ok?
+
+2020-09-25T13:17:23 bentley -> van
+Okay
+
+2020-09-25T18:08:31 bentley -> van
+Target complained that bots die quickly. A lot.
+
+2020-09-25T18:09:18 bentley -> van
+He was cursing a lot. Said where he saw us...
+
+2020-09-25T18:16:17 bentley -> van
+I think they managed to upload most of it to the coba
+
+2020-09-25T18:16:27 bentley -> van
+We need to figure out why
+
+2020-09-26T03:17:08 bentley -> van
+Target complained that bots die quickly. A lot.
+
+2020-09-26T03:17:08 bentley -> van
+He was cursing a lot. Said where he saw us...
+
+2020-09-26T03:17:08 bentley -> van
+I think they managed to upload most of it to the coba
+
+2020-09-26T03:17:08 bentley -> van
+We need to figure out why
+
+2020-09-28T05:32:49 bentley -> van
+Hi )
+
+2020-09-28T05:33:32 van -> bentley
+Hi! ))) There's an important thing )))
+
+2020-09-28T05:33:49 van -> bentley
+Was Target yelling a lot on Friday?
+
+2020-09-28T05:33:55 bentley -> van
+No
+
+2020-09-28T05:34:20 van -> bentley
+didn't yell at me at all.
+
+2020-09-28T05:34:27 van -> bentley
+here's the thing
+
+2020-09-28T05:34:36 bentley -> van
+Well shouted at me )
+
+2020-09-28T05:35:03 van -> bentley
+We need to get everything back together by 12 Moscow time.
+
+2020-09-28T05:35:09 bentley -> van
+Yes
+
+2020-09-28T05:35:26 van -> bentley
+And two more Mashroom loaders
+
+2020-09-28T05:35:45 van -> bentley
+and he's not there yet.
+
+2020-09-28T05:35:53 van -> bentley
+And now for the main thing.
+
+2020-09-28T05:36:17 van -> bentley
+I will assemble 6 loaders, each with one address
+
+2020-09-28T05:36:38 van -> bentley
+And there are 6 backdoors, each with the same address
+
+2020-09-28T05:36:48 van -> bentley
+i.e. loeder+backdoor pair
+
+2020-09-28T05:37:17 van -> bentley
+when they change the loader in the job, you have to pour in a new backdoor as well
+
+2020-09-28T05:37:50 van -> bentley
+the addresses are supposed to live longer this way
+
+2020-09-28T05:38:07 bentley -> van
+Got it.
+
+2020-09-28T05:39:11 van -> bentley
+And, in addition to the 6 loaders and 6 backdoors, I'll send you another backdoor with yesterday's addresses, you upload it for the loader tests.
+
+2020-09-28T05:39:28 van -> bentley
+I'll mark it as a test one.
+
+2020-09-28T05:39:31 bentley -> van
+Yep
+
+2020-09-28T05:40:07 van -> bentley
+i.e. backdoors don't shine at all before work, you fill the first backdoor before you start work
+
+2020-09-28T05:41:30 van -> bentley
+well and the numbers of loaders and backdoors don't matter. You can work with the 1st loider and the 6th backdoor, as long as you change the backdoor when you change the backdoor. There is no need to synchronize looder and backdoor numbers.
+
+2020-09-28T05:42:20 bentley -> van
+So bk and loader have different addresses? Then how do they find each other?
+
+2020-09-28T05:42:43 van -> bentley
+Lowders and backdoors have a different set of addresses
+
+2020-09-28T05:44:07 van -> bentley
+the loader knows how to download the backdoor, the backdoor doesn't know anything about the loader and it sends queries to its own address to the admin. I wanted to tell you all about it, but I haven't got around to it yet...(((
+
+2020-09-28T05:45:07 van -> bentley
+What about Mashroom?
+
+2020-09-28T05:45:15 bentley -> van
+Not urgent
+
+2020-09-28T05:45:21 bentley -> van
+Waiting to see how it arrives.
+
+2020-09-28T05:45:36 van -> bentley
+I'm waiting for addresses from Greene right now and will get everything together.
+
+2020-09-28T05:46:22 bentley -> van
+Okay
+
+2020-09-28T06:32:23 van -> bentley
+By the way, there is no signature in the admin, nothing will work yet. Talar is not there yet.
+
+2020-09-28T06:32:46 bentley -> van
+Waiting for Booza.
+
+2020-09-28T06:34:15 bentley -> van
+Hmmm.
+
+2020-09-28T07:05:19 van -> bentley
+you disappear all the time )))
+
+2020-09-28T07:05:31 bentley -> van
+Yes, I'm setting up a new VPN.
+
+2020-09-28T07:05:37 van -> bentley
+ahh
+
+2020-09-28T07:06:02 bentley -> van
+I'll stick with the old one for now.
+
+2020-09-28T07:06:20 van -> bentley
+))
+
+2020-09-28T07:06:31 bentley -> van
+It's just not clear how the new psi works there
+
+2020-09-28T07:07:07 van -> bentley
+I have an assembly in progress, I'll be done soon
+
+2020-09-28T07:07:15 bentley -> van
+Okay. Waiting for
+
+2020-09-28T07:14:35 van -> bentley
+GBRQWERasdzxc
+Download: https://qaz.im/load/zZ6tzt/TS9tNY
+
+2020-09-28T07:14:43 bentley -> van
+++
+
+2020-09-28T08:54:23 van -> bentley
+Do you know what bk's Balzac uses?
+
+2020-09-28T08:54:49 bentley -> van
+I know. mashroom had a Group of 8.
+
+2020-09-28T08:55:07 van -> bentley
+Yeah, thanks
+
+2020-09-28T09:08:21 bentley -> van
+Okay. Once again I understand how to test. I pour the test uk into the admin and run any of the loaders and it should knock. Right?
+
+2020-09-28T09:09:15 van -> bentley
+yes, group one1
+
+2020-09-28T09:11:16 bentley -> van
+ok
+
+2020-09-28T11:14:41 bentley -> van
+Sparring: I will have all 7 BCs on the job at the same time today
+
+2020-09-28T11:14:49 bentley -> van
+you can't do that, can you?
+
+2020-09-28T11:15:13 bentley -> van
+6 different lowers at the same time
+
+2020-09-28T11:15:55 van -> bentley
+Not at the same time, of course. Work the first loader and the first bk, then fill the second bk and work the second loader
+
+2020-09-28T11:16:02 van -> bentley
+etc. to the sixth
+
+2020-09-28T11:16:26 van -> bentley
+less gaskets will be stained
+
+2020-09-28T11:17:59 van -> bentley
+the test bot contains 6 pads from yesterday, don't work it!!!
+
+2020-09-28T11:18:07 bentley -> van
+Yep
+
+2020-09-28T12:14:55 van -> bentley
+What's the status of Frog's uk? I'm gathering info for my bosses.
+
+2020-09-28T16:19:15 van -> bentley
+I think something sucks.
+
+2020-09-28T20:29:02 bentley -> van
+The bots didn't die, but the banging was very bad.
+
+2020-09-29T02:57:24 bentley -> van
+The bots didn't die, but the banging was really bad.
+
+2020-09-29T06:00:20 bentley -> van
+Hi
+
+2020-09-29T06:00:29 bentley -> van
+Yesterday, it wasn't knocking at all.
+
+2020-09-29T06:00:51 van -> bentley
+Hi. I see.
+
+2020-09-29T06:00:59 bentley -> van
+Targeta asks to do As it was on Friday. 1 BC Different lowers with unic ipi.
+
+2020-09-29T06:01:24 bentley -> van
+Here's
+
+2020-09-29T07:39:57 van -> bentley
+GBRQWERasdzxc
+Download: https://qaz.im/load/nRrKGN/TZRs9A
+
+2020-09-29T07:40:32 bentley -> van
+Gets 1 back and loaders with different api yes?
+
+2020-09-29T07:40:48 van -> bentley
+Yeah, like Friday.
+
+2020-09-29T07:41:06 bentley -> van
+Thanks
+
+2020-09-29T07:41:14 van -> bentley
+you're welcome )))
+
+2020-09-29T07:41:23 van -> bentley
+thank you!
+
+2020-09-29T09:32:11 bentley -> van
+<bentley> Detects after 7 minutes
+[16:24:40] <bentley> Log Name: Microsoft-Windows-Windows Defender/Operational
+Source: Microsoft-Windows-Windows Defender
+Date: 9/29/2020 11:22:54 AM
+Event ID: 1116
+Task Category: None
+Level: Warning
+Keywords:
+User: SYSTEM
+Computer: WIN10IITST
+Description:
+Microsoft Defender Antivirus has detected malware or other potentially unwanted software.
+For more information please see the following:
+https://go.microsoft.com/fwlink/?linkid=37020&name=Trojan:Script/Wacatac.B!ml&threatid=2147735503&enterprise=0
+      Name: Trojan:Script/Wacatac.B!ml
+      ID: 2147735503
+      Severity: Severe
+      Category: Trojan
+      Path: file:_C:\Users\TST10ENG\Downloads\Print_Review.exe
+      Detection Origin: Local machine
+      Detection Type: Concrete
+      Detection Source: Real-Time Protection
+      User: WIN10IITST\TST10ENG
+      Process Name: C:{Windows\System32\svchost.exe
+      Security intelligence Version: AV: 1.323.2159.0, AS: 1.323.2159.0, NIS: 1.323.2159.0
+      Engine Version: AM: 1.1.17400.5, NIS: 1.1.17400.5
+
+[16:25:58] <bentley> though knocks
+[16:30:34] <deploy@q3mcco35auwcstmt.onion> OK
+[16:31:23] <deploy@q3mcco35auwcstmt.onion> I'll try to redo it. But such a detection, most often says that it is necessary to clean the bk itself already
+
+2020-09-29T09:32:37 bentley -> van
+1 version
+
+2020-09-29T09:35:02 bentley -> van
+https://scrytnuuszglaugg.onion:4247/testbots/command?id=e6e2302a9865c6d5949b987c2a9a75a8
+
+2020-09-29T09:35:21 van -> bentley
+I think you need to check the lockdriver manually. I don't remember such a detection before. After 7 minutes??? The loader is already unloaded in that time and the backdoor is working.
+
+2020-09-29T09:35:52 bentley -> van
+Ok, I'll check it out.
+
+2020-09-29T09:36:52 van -> bentley
+and gethinfo performs?
+
+2020-09-29T09:37:13 van -> bentley
+I.e. backdoor is not detected
+
+2020-09-29T09:37:20 van -> bentley
+loader detector
+
+2020-09-29T09:37:40 bentley -> van
+YES I did
+
+2020-09-29T09:38:01 van -> bentley
+didn't have that detection yesterday?
+
+2020-09-29T09:38:27 bentley -> van
+No it wasn't.
+
+2020-09-29T09:38:31 van -> bentley
+7 minutes confuses me.
+
+2020-09-29T09:38:35 bentley -> van
+I'm going to run the source code now.
+
+2020-09-29T09:38:49 van -> bentley
+Yep
+
+2020-09-29T09:39:38 van -> bentley
+It's probably nothing to do with the crypt after 7 minutes.
+
+2020-09-29T09:40:27 bentley -> van
+Yeah, so now it will also detect
+
+2020-09-29T09:40:39 van -> bentley
+yes most likely
+
+2020-09-29T09:40:55 van -> bentley
+I'm going to clean it, what can I say...
+
+2020-09-29T10:02:04 bentley -> van
+What's the decision on group 4?
+
+2020-09-29T10:02:11 bentley -> van
+Partner asks for a BC
+
+2020-09-29T10:02:35 van -> bentley
+Does Frog have a looder ready? Wasn't there a detector?
+
+2020-09-29T10:08:16 bentley -> van
+] <frog> Hi. On first run it works fine, but on second run it is detected.
+Detect: Behavior:Win32/DefenseEvasion
+
+2020-09-29T10:08:18 bentley -> van
+Nope
+
+2020-09-29T10:09:31 van -> bentley
+Cactus will have to be assigned to Target, and Frog will have to be given to the spammers. I'll ask Mashroom when Frog gets cleaned up.
+
+2020-09-29T10:10:00 bentley -> van
+Okay And cactus is now doing Paul and Derek
+
+2020-09-29T10:10:06 bentley -> van
+Don't give them away?
+
+2020-09-29T10:10:46 van -> bentley
+Don't give it away, see, my lowader seems to be dead, Target Cactus needs to give it away.
+
+2020-09-29T10:11:09 bentley -> van
+Source knocks without detection
+
+2020-09-29T10:11:15 van -> bentley
+right?
+
+2020-09-29T10:11:19 bentley -> van
+Yes
+
+2020-09-29T10:11:27 bentley -> van
+For 10 and 2019
+
+2020-09-29T10:11:34 van -> bentley
+Already good
+
+2020-09-29T10:12:11 van -> bentley
+And did the Mashroom start up yesterday by the Targets?
+
+2020-09-29T10:13:41 bentley -> van
+Sparring
+
+2020-09-29T12:18:02 bentley -> van
+What about group 4? Shall we give it out today?
+
+2020-09-29T12:18:50 van -> bentley
+So Frog will not give out today, since the detects
+
+2020-09-29T12:20:08 bentley -> van
+Got it
+
+2020-09-29T12:20:37 van -> bentley
+Mashroom better not be touched. Should I ask for a cactus?
+
+2020-09-29T12:20:44 bentley -> van
+Come on.
+
+2020-09-29T12:20:54 van -> bentley
+I'll text him now.
+
+2020-09-29T12:21:00 bentley -> van
+He's got a normal build tested today
+
+2020-09-29T12:21:16 van -> bentley
+group 4 ?
+
+2020-09-29T12:21:25 bentley -> van
+yes
+
+2020-09-29T12:39:29 van -> bentley
+Cactus collects, 4 group opened for him
+
+2020-09-29T12:40:14 bentley -> van
+Okay
+
+2020-09-29T13:00:58 van -> bentley
+Will Target be working today?
+
+2020-09-29T13:01:51 bentley -> van
+Yes making him files
+
+2020-09-29T13:03:44 van -> bentley
+I'm screwed if it's wrong again...
+
+2020-09-30T06:47:48 bentley -> van
+Hi
+
+2020-09-30T06:48:17 van -> bentley
+Hi. Target has written a lot about our shit.
+
+2020-09-30T06:48:33 van -> bentley
+Requires testing.
+
+2020-09-30T06:48:39 bentley -> van
+Yes and I was yelling yesterday too. That's emotion. It's understandable.
+
+2020-09-30T06:49:01 van -> bentley
+[03:37:44] <target> test on win 2019 win 10 and dt CRIPTED files
+[03:37:53] <target> from 13:00 we are working
+
+2020-09-30T06:49:09 bentley -> van
+Tell me the technology where it knocks and if you can check the performance of the gaskets
+
+2020-09-30T06:49:24 bentley -> van
+For example loader knocked there then went there.
+
+2020-09-30T06:49:36 bentley -> van
+How does the lowader connect to the admin panel
+
+2020-09-30T06:49:47 bentley -> van
+About the testing. We've been testing all day.
+
+2020-09-30T06:49:48 van -> bentley
+I check the gaskets before assembly, by the way
+
+2020-09-30T06:50:05 van -> bentley
+Yes I know everyone is doing the right thing.
+
+2020-09-30T06:51:10 bentley -> van
+I know. And Green also monitor them somewhere else the hitch. Because the detects are gone at startup but no bounce somewhere inside the failure and I want to understand the sequence of work and if there is a way to check the performance at different stages
+
+2020-09-30T06:51:11 van -> bentley
+the lauder makes a request to load the backdoor and that's it, the address in the request is the padding, the path in the request is the path seen in the group
+
+2020-09-30T06:51:56 bentley -> van
+Is there no more emercoin dns?
+
+2020-09-30T06:52:03 van -> bentley
+I have some issues to discuss with Booza right now
+
+2020-09-30T06:52:17 bentley -> van
+Come on, let's get a working solution out today.
+
+2020-09-30T06:52:28 van -> bentley
+coming soon
+
+2020-09-30T06:53:31 van -> bentley
+Green gave out new gaskets. What should we build? How about like before - one lowader with 6 pads, but 5 build options for crypto?
+
+2020-09-30T06:54:46 bentley -> van
+we can do several solutions: 1 loader 6 pads a couple of assemblies and 2-3 loaders with unic pads
+
+2020-09-30T06:56:12 van -> bentley
+Ok, we wait for Buza, we consult and I will assemble
+
+2020-09-30T06:56:14 bentley -> van
+and I also need to know what loeder is knocking on what ipi to check promptly at issuance
+
+2020-09-30T06:56:24 van -> bentley
+okay
+
+2020-09-30T06:57:02 van -> bentley
+let me check yesterday's pads for interest
+
+2020-09-30T06:57:08 bentley -> van
+come on
+
+2020-09-30T06:57:28 bentley -> van
+They should also be checked from US addresses. We can do that.
+
+2020-09-30T06:57:38 bentley -> van
+Tell me, how do you check?
+
+2020-09-30T06:58:06 van -> bentley
+Yes I have a console program, I type in the address and see the answer
+
+2020-09-30T06:58:11 van -> bentley
+I can send
+
+2020-09-30T06:58:15 bentley -> van
+come on
+
+2020-09-30T06:58:23 bentley -> van
+I will run on the US hard drive
+
+2020-09-30T06:58:59 bentley -> van
+Because Target uses Boer with certain routes that they keep changing
+
+2020-09-30T06:59:21 bentley -> van
+We have a solution just as good and especially not available to everyone.
+
+2020-09-30T06:59:33 van -> bentley
+got it
+
+2020-09-30T07:00:50 van -> bentley
+yesterday's lauder pads are all good at the moment
+
+2020-09-30T07:00:57 van -> bentley
+6 pieces
+
+2020-09-30T07:01:17 van -> bentley
+I'll send you the checks now.
+
+2020-09-30T07:08:20 van -> bentley
+GBRQWERasdzxc
+Download: https://qaz.im/load/aKDbZy/ZD8t6k
+
+2020-09-30T07:08:41 van -> bentley
+I'll write the instructions now
+
+2020-09-30T07:08:48 bentley -> van
+Yep
+
+2020-09-30T07:31:52 van -> bentley
+Different programs for loader and backdoor.
+Run it, copy ip address after the cursor and enter.
+In answer, in the headers you should see the field
+Set-Cookie: SID= long value
+this is the signature. If it is not there, you have to tell Buse, and it will generate it
+and at the end of the output should be
+Correct signature
+This means that the pad is good, the signature is good too, so I've got the right one.
+
+Yesterday's loider pads
+51.89.177.16
+91.200.103.11
+45.148.10.75
+86.104.194.64
+104.161.32.105
+195.123.241.55
+
+backdoor
+45.141.103.194
+188.225.33.51
+107.174.192.162
+51.89.177.4
+45.148.10.70
+37.220.0.36
+
+2020-09-30T07:32:25 van -> bentley
+Try it from your car for now
+
+2020-09-30T07:32:32 bentley -> van
+Yep
+
+2020-09-30T07:33:55 van -> bentley
+they knock on group one
+
+2020-09-30T07:34:13 bentley -> van
+Where does BC get the address from?
+
+2020-09-30T07:34:43 bentley -> van
+The loader knocked on a specific IP in the admin panel. What's next?
+
+2020-09-30T07:35:06 van -> bentley
+what's the address? There is no download, no startup of the bk. Only a gasket check.
+
+2020-09-30T07:35:14 bentley -> van
+Admin replied he downloaded and ran beckdor right?
+
+2020-09-30T07:35:20 van -> bentley
+no
+
+2020-09-30T07:35:48 van -> bentley
+it's a test of the gasket to make sure it's going where it's supposed to go and isn't dead
+
+2020-09-30T07:36:22 bentley -> van
+I got it.
+
+2020-09-30T07:36:37 bentley -> van
+I mean the mechanism itself
+
+2020-09-30T07:37:02 van -> bentley
+about the mechanism later, I was overpowered by Target and Boosa came
+
+2020-09-30T07:37:05 bentley -> van
+I need to understand the algorithm and understand where and at what stages there may be a jam
+
+2020-09-30T07:37:11 bentley -> van
+Waiting for
+
+2020-09-30T07:37:32 bentley -> van
+Sorry for the pressure. Serious circumstances.
+
+2020-09-30T07:37:55 van -> bentley
+Why are you apologizing? )))
+
+2020-09-30T07:38:15 bentley -> van
+Yep
+
+2020-09-30T07:38:42 van -> bentley
+I'm the one promising you - I don't. I need to apologize.
+
+2020-09-30T07:42:16 van -> bentley
+Buza explained everything he wrote to you to me.
+
+2020-09-30T07:46:54 van -> bentley
+I'm building a loader with 6 pads, 5 options for crypto. That's all I can do for now. No domains yet. I'm going to be doing some redesigns for the domains. I should give Target Cactus and Mashroom. Since my Lowder's out.
+
+2020-09-30T07:47:11 van -> bentley
+How did the Mashroom Lowader work yesterday?
+
+2020-09-30T07:48:25 bentley -> van
+Deployment is not here yet.
+
+2020-09-30T07:48:43 bentley -> van
+Do you mean the domains with ssl?
+
+2020-09-30T07:48:46 bentley -> van
+in terms of
+
+2020-09-30T07:48:49 van -> bentley
+yes
+
+2020-09-30T08:07:31 van -> bentley
+Mashroom doesn't even know if his bk worked yesterday or not... I wish I lived like this...
+
+2020-09-30T08:07:46 bentley -> van
+I don't know either.
+
+2020-09-30T08:07:50 bentley -> van
+Deploy makes files
+
+2020-09-30T08:08:31 van -> bentley
+I know mine worked )))
+
+2020-09-30T08:08:57 bentley -> van
+What group will the Cactus loider have?
+
+2020-09-30T08:09:11 bentley -> van
+Mashroom - 2 it's understandable
+
+2020-09-30T08:09:39 bentley -> van
+When will he collect for the test? Cactus
+
+2020-09-30T08:17:28 van -> bentley
+Is mashroom picking up for today?
+
+2020-09-30T08:17:43 bentley -> van
+Yes, I asked.
+
+2020-09-30T08:18:45 van -> bentley
+You'd have to ask Target about the group. There's an empty one there, we can use it.
+
+2020-09-30T08:19:01 van -> bentley
+Tell Cactus?
+
+2020-09-30T08:19:23 bentley -> van
+dare
+
+2020-09-30T08:52:38 van -> bentley
+GBRQWERasdzxc
+Download: https://qaz.im/load/NbAH28/NbHD2E
+
+2020-09-30T08:53:22 van -> bentley
+it's a lowder backdoor
+
+2020-09-30T08:53:28 bentley -> van
+got it
+
+2020-09-30T08:53:34 van -> bentley
+the lowader has the following addresses
+45.89.127.38
+51.77.112.253
+194.5.249.186
+185.164.32.161
+195.123.241.51
+164.68.116.248
+
+2020-09-30T08:53:45 bentley -> van
+ok
+
+2020-09-30T08:53:55 van -> bentley
+in the backdoor these
+195.123.240.190
+194.5.249.195
+194.5.249.185
+86.104.194.48
+104.161.32.109
+37.220.0.44
+
+2020-09-30T08:54:53 bentley -> van
+ok.
+
+2020-09-30T08:55:02 van -> bentley
+Listen, I've changed something in the looder, in the organization of the queries. I'll send it to you right now. Try to test it too.
+
+2020-09-30T08:55:12 bentley -> van
+okay
+
+2020-09-30T08:55:22 van -> bentley
+It's just a "gotta do something" thing.
+
+2020-09-30T08:55:32 van -> bentley
+What if it's better...
+
+2020-09-30T19:47:52 bentley -> van
+Shall we make it to 10 bk with the new ssl gaskets?
+
+2020-09-30T19:48:10 bentley -> van
+Target is asking for an early start. Wants to start work at 1:00 p.m.
+
+2020-10-01T02:13:33 bentley -> van
+Shall we make it to 10 bk with new ssl gaskets?
+
+2020-10-01T02:13:33 bentley -> van
+Target is asking for an early start. Wants to start work at 13
+
+2020-10-01T06:44:09 bentley -> van
+Hi )
+
+2020-10-01T06:44:23 van -> bentley
+Hi! )))
+
+2020-10-01T06:44:34 van -> bentley
+They haven't given me the addresses yet.
+
+2020-10-01T06:44:51 van -> bentley
+Green is also waiting for something.
+
+2020-10-01T06:45:26 van -> bentley
+Didn't yell Target yesterday?
+
+2020-10-01T06:46:14 van -> bentley
+You asked for an assembly by 10-00, while I'm waiting...
+
+2020-10-01T06:47:19 bentley -> van
+No he's not.
+
+2020-10-01T06:47:37 van -> bentley
+ugh
+
+2020-10-01T06:58:19 bentley -> van
+Build on 1 new one for now, and as soon as the green one gives out, make an assembly with all the new ones.
+
+2020-10-01T06:58:26 bentley -> van
+want to work in the morning
+
+2020-10-01T06:58:43 van -> bentley
+I don't have a new one.
+
+2020-10-01T06:58:53 bentley -> van
+Ask Green, I think he had one.
+
+2020-10-01T06:59:38 van -> bentley
+wrote
+
+2020-10-01T07:02:09 van -> bentley
+he has one address, he will set it up now on the loeder. I will build the loeder with one new address, same as yesterday.
+And the backdoor from yesterday stays... So only
+
+2020-10-01T07:06:55 van -> bentley
+How many loader variants do you want to assemble? Is one enough?
+
+2020-10-01T07:13:26 van -> bentley
+au!!!
+
+2020-10-01T07:18:30 van -> bentley
+The address in glory76.com:443
+You can check it the same way with my gasket checker.
+You type in glory76.com:443 (or glory76.com) and you can see if the address works or not.
+
+2020-10-01T07:20:57 van -> bentley
+GBRQWERasdzxc
+Download: https://qaz.im/load/A3nZN2/nFk753
+
+2020-10-01T07:21:17 van -> bentley
+built 3 lowers with this address
+
+2020-10-01T07:21:37 bentley -> van
+Okay
+
+2020-10-01T07:36:42 bentley -> van
+So more pads later will give out yes?
+
+2020-10-01T07:36:57 bentley -> van
+I wrote him that every day you need 3 unic ssl pads to 10
+
+2020-10-01T07:37:36 van -> bentley
+Says it will give out later, and then it will be on stream. We'll have to be patient for now.
+
+2020-10-01T07:37:53 bentley -> van
+yes from 1 we will start working on europe and hopefully the u.s. will give out
+
+2020-10-01T07:45:54 bentley -> van
+Do we take yesterday's bk?
+
+2020-10-01T07:47:24 van -> bentley
+yes
+
+2020-10-01T07:47:34 van -> bentley
+there is no other one yet
+
+2020-10-01T08:50:36 van -> bentley
+Do you know when they will work?
+
+2020-10-01T08:50:48 bentley -> van
+13
+
+2020-10-01T08:50:55 van -> bentley
+Yep
+
+2020-10-01T08:51:00 bentley -> van
+Lowaders ok on the test
+
+2020-10-01T08:51:14 van -> bentley
+okay
+
+2020-10-01T10:48:28 bentley -> van
+On 2016 it was detected after 7 minutes of work
+
+2020-10-01T10:48:29 bentley -> van
+Name: Behavior:Win32/DefenseEvasion.HK!ml
+
+2020-10-01T10:48:39 bentley -> van
+We have to clean
+
+2020-10-01T10:48:59 van -> bentley
+crypt?
+
+2020-10-01T10:49:08 bentley -> van
+yes
+
+2020-10-01T10:49:20 van -> bentley
+Have you tried the ancrypt?
+
+2020-10-01T10:50:02 van -> bentley
+can you send the whole message?
+
+2020-10-01T10:50:24 bentley -> van
+Rolled back already
+
+2020-10-01T10:50:28 bentley -> van
+I'll run ankritp
+
+2020-10-01T10:50:32 van -> bentley
+Yep
+
+2020-10-01T10:51:39 van -> bentley
+And on other VMs ?
+
+2020-10-01T10:52:02 bentley -> van
+10 2019 - ok
+
+2020-10-01T10:53:25 van -> bentley
+I don't see any knockouts in the test bots
+
+2020-10-01T10:57:46 bentley -> van
+Ask Cactus and Mashroom to make 2 versions of loaders with sl padding without a tack
+
+2020-10-01T10:57:52 bentley -> van
+Marum Group 2
+
+2020-10-01T10:57:59 bentley -> van
+Cactus o3
+
+2020-10-01T10:58:06 van -> bentley
+okay
+
+2020-10-01T10:58:16 bentley -> van
+also let them disable all unnecessary things in the loeder, like van
+
+2020-10-01T10:58:19 bentley -> van
+<epf gbitn
+
+2020-10-01T10:58:24 bentley -> van
+Boosa says.
+
+2020-10-01T11:12:52 van -> bentley
+I wrote to them. Cactus started, Mashrum hasn't responded yet.
+
+2020-10-01T11:13:05 bentley -> van
+ok
+
+2020-10-01T11:13:16 bentley -> van
+let's run the source code for 2016 yet
+
+2020-10-01T11:13:45 van -> bentley
+I don't see your test knockouts for some reason. What group are they knocking in?
+
+2020-10-01T11:14:36 van -> bentley
+And when 2016 was detected, was there a knockback as well?
+
+2020-10-01T11:15:07 bentley -> van
+I'm running it right now.
+
+2020-10-01T11:15:09 bentley -> van
+Waiting for
+
+2020-10-01T11:16:01 van -> bentley
+I'm confused by the 7 minutes. Loider runs for less than 5 minutes.
+
+2020-10-01T11:16:51 bentley -> van
+Yep
+
+2020-10-01T11:17:12 van -> bentley
+I don't see any bounce at all for some reason.
+
+2020-10-01T11:17:24 van -> bentley
+what group?
+
+2020-10-01T11:18:03 bentley -> van
+one1
+
+2020-10-01T11:18:32 van -> bentley
+testbots ?
+
+2020-10-01T11:19:08 van -> bentley
+maybe they don't knock one1, but some other way?
+
+2020-10-01T11:19:18 bentley -> van
+no they are not knocking yet apparently
+
+2020-10-01T11:19:21 bentley -> van
+I'll check it out.
+
+2020-10-01T11:19:37 van -> bentley
+You checked on 10 and 2019
+
+2020-10-01T11:20:01 bentley -> van
+Yep
+
+2020-10-01T11:20:16 van -> bentley
+I don't see these bounces.
+
+2020-10-01T11:20:31 van -> bentley
+so they are knocking like another band
+
+2020-10-01T11:21:43 bentley -> van
+52.237.163.166
+
+2020-10-01T11:21:49 bentley -> van
+here's the ipi 2016 crypt
+
+2020-10-01T11:22:58 van -> bentley
+he's at Honeypots
+
+2020-10-01T11:24:56 bentley -> van
+can't see it
+
+2020-10-01T11:25:40 van -> bentley
+https://scrytnuuszglaugg.onion:4247/honeypots/command?id=7c8590f76aed6158cbbaaef9b9dc7429
+
+2020-10-01T11:26:34 bentley -> van
+I guess it was knocking then, too.
+
+2020-10-01T11:26:55 van -> bentley
+drag them into the test bots
+
+2020-10-01T11:27:08 van -> bentley
+Yes, I did.
+
+2020-10-01T11:28:24 bentley -> van
+sent
+
+2020-10-01T11:28:47 bentley -> van
+What do you hear about the new gaskets?
+
+2020-10-01T11:29:03 van -> bentley
+nothing so far
+
+2020-10-01T11:42:33 van -> bentley
+The addresses will be there, Green said.
+
+2020-10-01T11:43:57 bentley -> van
+okay
+
+2020-10-01T11:44:27 van -> bentley
+So was the work cancelled or postponed?
+
+2020-10-01T11:44:57 bentley -> van
+We haven't cancelled it yet.
+
+2020-10-01T11:45:02 bentley -> van
+And they won't.
+
+2020-10-01T11:45:34 van -> bentley
+will they wait for new backdoor addresses or will they start with the old ones?
+
+2020-10-01T11:45:46 bentley -> van
+as it happens
+
+2020-10-01T11:46:53 van -> bentley
+I'm going to take an hour off, I've been working too much, I haven't slept much... I'll have a coffee
+
+2020-10-01T11:47:20 bentley -> van
+Yep
+
+2020-10-01T11:47:24 bentley -> van
+weekend soon )
+
+2020-10-01T11:48:27 van -> bentley
+If I have detects, I won't be able to clean it up quickly anyway, it'll take me all day tomorrow. Then bet on Cactus and Mashroom.
+
+2020-10-01T11:49:07 bentley -> van
+I don't see any detects yet.
+
+2020-10-01T11:49:21 bentley -> van
+got it
+
+2020-10-02T06:52:59 bentley -> van
+Good morning ))
+
+2020-10-02T06:53:25 van -> bentley
+Hi! )) Just got the new addresses, collecting.
+
+2020-10-02T06:58:42 bentley -> van
+Okay. Waiting )
+
+2020-10-02T07:10:16 van -> bentley
+GBRQWERasdzxc
+Download: https://qaz.im/load/3Dy2dk/AGNAbB
+
+2020-10-02T07:10:21 bentley -> van
++
+
+2020-10-02T07:10:29 van -> bentley
+bots
+
+18.209.104.208 mygrd014.com
+3.88.67.132 grd013.com
+
+Lowder
+
+54.175.34.120 grd015.com
+54.185.138.96 grd016.com
+3.95.231.52 grd017.com
+
+2020-10-02T07:30:59 van -> bentley
+Did you curse a lot yesterday?
+
+2020-10-02T07:31:18 bentley -> van
+No worked as a boer.
+
+2020-10-02T07:31:26 bentley -> van
+Today we need to make the bk
+
+2020-10-02T08:25:10 bentley -> van
+Will you ask Mashroom to make a build for the 2nd group, too?
+
+2020-10-02T08:25:25 bentley -> van
+let the same domains spell out mashroom and cactus and take their uk to the tests too
+
+2020-10-02T08:25:28 bentley -> van
+Boosa says.
+
+2020-10-02T08:25:49 van -> bentley
+ok
+
+2020-10-02T08:26:42 van -> bentley
+Mashrum gr 2, Cactus gr o3 with the same addresses?
+
+2020-10-02T08:28:03 bentley -> van
+Yes with the ones you made today both to have a light version without a tack
+
+2020-10-02T08:31:43 van -> bentley
+Collecting.
+
+2020-10-02T11:38:04 van -> bentley
+Listen, I'm leaving early today, in an hour. How are you doing?
+
+2020-10-02T14:54:43 bentley -> van
+[02.10.2020 19:47:29] <bentley> Bottom line. Van doesn't knock and Mashrum and katus didn't even take the job.
+[02.10.2020 20:09:28] <buza> clearly
+[02.10.2020 20:17:12] <buza> is it already with new domains?
+[02.10.2020 20:17:30] <bentley> Yes
+[02.10.2020 20:17:59] <bentley> Looks like Target needs to write a whole new BC since it's not working for us and Buer is knocking
+[02.10.2020 20:47:46] <bentley> https://twitter.com/malwrhunterteam/status/1310843235229671424
+[02.10.2020 20:48:04] <bentley> about our loader bazaar
+[02.10.2020 20:50:48] <buza> advertising)
+[02.10.2020 20:50:55] <buza> Of those, 7 started as FUD. The other 4 started at either 1 or 2 detections.
+[02.10.2020 20:51:15] <bentley> https://twitter.com/search?q=MUSTER%20PLUS%20SP%20Z%20O%20O&src=typed_query
+[02.10.2020 20:51:24] <bentley> This is who signed the cert today
+[02.10.2020 20:52:00] <buza> well, since the food, it turns out that the quality of our testing is excellent
+[02.10.2020 20:52:02] <buza> and stealth
+[02.10.2020 20:52:06] <buza> but why the bitch is no bounce)
+[02.10.2020 20:52:13] <bentley> here's dz ))
+[02.10.2020 20:52:34] <buza> I'm talking to Boer, it's easier
+[02.10.2020 20:52:46] <buza> no special tricks with pads and protocols
+[02.10.2020 20:53:30] <buza> our favorite Vitaly Kremez is there by the way)
+[02.10.2020 20:53:39] <buza> he is our personal analyst
+[02.10.2020 20:53:46] <bentley> Aah!)
+[02.10.2020 20:53:49] <bentley> Special for us
+[02.10.2020 20:54:11] <buza> you see how fast they work
+[02.10.2020 20:54:16] <buza> in the morning in the paper, in the evening in the verse
+[02.10.2020 20:54:21] <buza> and on the boer find
+[02.10.2020 20:54:36] <bentley> I don't know how to search )
+[02.10.2020 20:54:41] <buza> and how did you find it?
+[02.10.2020 20:54:55] <bentley> I searched by the certificate firm
+[02.10.2020 20:55:10] <buza> but the certificate is the same for them
+[02.10.2020 20:55:27] <bentley> It doesn't stain, it means
+[02.10.2020 20:55:57] <bentley> or it's different
+[02.10.2020 20:56:00] <buza> according to the targeting, it sticks more
+[02.10.2020 20:59:20] <bentley> it seems we are much more dangerous and there is a big trail behind us, so they cut us down right away
+[02.10.2020 20:59:36] <buza> any idea why so
+[02.10.2020 20:59:45] <buza> just can not believe that technology reached such progress)
+[02.10.2020 20:59:49] <buza> I mean, why do they cut us down?
+[02.10.2020 21:00:08] <bentley> Why?
+[02.10.2020 21:00:16] <buza> some signatures in the protocol
+[02.10.2020 21:00:23] <buza> by uri
+[02.10.2020 21:01:08] <bentley> Can we fix it?
+[02.10.2020 21:01:34] <buza> we always have /api/vtotom in uri
+[02.10.2020 21:01:42] <buza> if only that, yes
+[02.10.2020 21:01:44] <buza> and even easy
+[02.10.2020 21:01:58] <buza> and even in principle today if at mashroom with cactus
+[02.10.2020 21:02:07] <bentley> ah about the address where the download is coming from
+[02.10.2020 21:02:20] <bentley> you can do 1 test build
+[02.10.2020 21:02:33] <buza> well the url looks like this
+https://11.22.33.44/api/version
+[02.10.2020 21:02:57] <bentley> api version
+[02.10.2020 21:03:11] <buza> I guess the firewalls might catch this url - we've been in operation for a long time, it hasn't been changed from the start, i.e. read six months
+
+[02.10.2020 21:03:18] <buza> and it could have already hit all the bases
+[02.10.2020 21:03:25] <bentley> yes
+[02.10.2020 21:03:30] <buza> but to do that, you need to spin up the ssl traffic
+[02.10.2020 21:03:42] <buza> and it's not a trivial task even for DPI-devices
+[02.10.2020 21:04:10] <bentley> I guess resources allow
+[02.10.2020 21:04:55] <buza> command mashroom with cactus
+[02.10.2020 21:05:11] <buza> go into their groups and change prefixes to something random but short
+[02.10.2020 21:05:21] <bentley> yeah
+[02.10.2020 21:05:26] <buza> change them every day
+[02.10.2020 21:05:35] <buza> try to sell it to target
+[02.10.2020 21:05:44] <bentley> Ok
+[02.10.2020 21:06:37] <bentley> so there will be no /api/version right?
+[02.10.2020 21:06:42] <buza> no
+[02.10.2020 21:06:46] <buza> these strings should be gotten rid of
+[02.10.2020 21:06:54] <buza> but they don't really affect anything, they were chosen for masking
+[02.10.2020 21:25:00] <buza> okay, everything goes to the next week
+[02.10.2020 21:25:06] <buza> it's not that easy to change that prefix there
+[02.10.2020 21:25:30] <buza> more precisely, they need to figure out how not to lose compatibility with old bots with the old prefix
+[02.10.2020 21:25:32] <buza> but I've already made it up)
+[02.10.2020 21:26:22] <bentley> Great!
+[02.10.2020 21:26:47] <bentley> Then our beloved Vitaly Kremez will not immediately track us down? ))
+[02.10.2020 21:27:02] <buza> hz
+[02.10.2020 21:27:49] <buza> well, after contacting Boer, it turns out that his software is much weaker in terms of protection against AV - he doesn't use any of our many techniques, which showed effectiveness against AV
+[02.10.2020 21:27:58] <buza> and he doesn't have a hidden load trigger
+[02.10.2020 21:28:16] <buza> i.e. from here we exclude that we're getting chopped by trivial AB by dynamics
+[02.10.2020 21:28:34] <buza> but it has a triple layer traffic encryption and no prefixes
+[02.10.2020 21:28:44] <buza> so it bypasses firewalls
+[02.10.2020 21:29:12] <bentley> I see
+
+2020-10-03T05:32:29 bentley -> van
+[02.10.2020 19:47:29] <bentley> Bottom line. Van doesn't knock and Mashrum and katus weren't even taken to work.
+[02.10.2020 20:09:28] <buza> clearly
+[02.10.2020 20:17:12] <buza> is it already with new domains?
+[02.10.2020 20:17:30] <bentley> Yes
+[02.10.2020 20:17:59] <bentley> Looks like Target needs to write a whole new BC since it's not working for us and Buer is knocking
+[02.10.2020 20:47:46] <bentley> https://twitter.com/malwrhunterteam/status/1310843235229671424
+[02.10.2020 20:48:04] <bentley> about our loader bazaar
+[02.10.2020 20:50:48] <buza> advertising)
+[02.10.2020 20:50:55] <buza> Of those, 7 started as FUD. The other 4 started at either 1 or 2 detections.
+[02.10.2020 20:51:15] <bentley> https://twitter.com/search?q=MUSTER%20PLUS%20SP%20Z%20O%20O&src=typed_query
+[02.10.2020 20:51:24] <bentley> This is who signed the cert today
+[02.10.2020 20:52:00] <buza> well, since the food, it turns out that the quality of our testing is excellent
+[02.10.2020 20:52:02] <buza> and stealth
+[02.10.2020 20:52:06] <buza> but why the bitch is no bounce)
+[02.10.2020 20:52:13] <bentley> here's dz ))
+[02.10.2020 20:52:34] <buza> I'm talking to Boer, it's easier
+[02.10.2020 20:52:46] <buza> no special tricks with pads and protocols
+[02.10.2020 20:53:30] <buza> our favorite Vitaly Kremez is there by the way)
+[02.10.2020 20:53:39] <buza> he is our personal analyst
+[02.10.2020 20:53:46] <bentley> Aah!)
+[02.10.2020 20:53:49] <bentley> Special for us
+[02.10.2020 20:54:11] <buza> you see how fast they work
+[02.10.2020 20:54:16] <buza> in the morning in the paper, in the evening in the verse
+[02.10.2020 20:54:21] <buza> and on the boer find
+[02.10.2020 20:54:36] <bentley> I don't know how to search )
+[02.10.2020 20:54:41] <buza> and how did you find it?
+[02.10.2020 20:54:55] <bentley> I searched by the certificate firm
+[02.10.2020 20:55:10] <buza> but the certificate is the same for them
+[02.10.2020 20:55:27] <bentley> It doesn't stain, it means
+[02.10.2020 20:55:57] <bentley> or it's different
+[02.10.2020 20:56:00] <buza> according to the targeting, it sticks more
+[02.10.2020 20:59:20] <bentley> it seems we are much more dangerous and there is a big trail behind us, so they cut us down right away
+[02.10.2020 20:59:36] <buza> any idea why so
+[02.10.2020 20:59:45] <buza> just can not believe that technology reached such progress)
+[02.10.2020 20:59:49] <buza> I mean, why do they cut us down?
+[02.10.2020 21:00:08] <bentley> Why?
+[02.10.2020 21:00:16] <buza> some signatures in the protocol
+[02.10.2020 21:00:23] <buza> by uri
+[02.10.2020 21:01:08] <bentley> Can we fix it?
+[02.10.2020 21:01:34] <buza> we always have /api/vtotom in uri
+[02.10.2020 21:01:42] <buza> if only that, yes
+[02.10.2020 21:01:44] <buza> and even easy
+[02.10.2020 21:01:58] <buza> and even in principle today if at mashroom with cactus
+[02.10.2020 21:02:07] <bentley> ah about the address where the download is coming from
+[02.10.2020 21:02:20] <bentley> you can do 1 test build
+[02.10.2020 21:02:33] <buza> well the url looks like this
+https://11.22.33.44/api/version
+[02.10.2020 21:02:57] <bentley> api version
+[02.10.2020 21:03:11] <buza> I guess the firewalls might catch this url - we've been in operation for a long time, it hasn't been changed from the start, i.e. read six months
+
+[02.10.2020 21:03:18] <buza> and it could have already hit all the bases
+[02.10.2020 21:03:25] <bentley> yes
+[02.10.2020 21:03:30] <buza> but to do that, you need to spin up the ssl traffic
+[02.10.2020 21:03:42] <buza> and it's not a trivial task even for DPI-devices
+[02.10.2020 21:04:10] <bentley> Probably resources allow
+[02.10.2020 21:04:55] <buza> command mashroom with cactus
+[02.10.2020 21:05:11] <buza> go into their groups and change prefixes to something random but short
+[02.10.2020 21:05:21] <bentley> yeah
+[02.10.2020 21:05:26] <buza> change them every day
+[02.10.2020 21:05:35] <buza> try to sell it to target
+[02.10.2020 21:05:44] <bentley> Ok
+[02.10.2020 21:06:37] <bentley> so there will be no /api/version right?
+[02.10.2020 21:06:42] <buza> no
+[02.10.2020 21:06:46] <buza> these strings should be gotten rid of
+[02.10.2020 21:06:54] <buza> but they don't really affect anything, they were chosen for masking
+[02.10.2020 21:25:00] <buza> okay, everything goes to the next week
+[02.10.2020 21:25:06] <buza> it's not that easy to change that prefix there
+[02.10.2020 21:25:30] <buza> more precisely, they need to figure out how not to lose compatibility with old bots with the old prefix
+[02.10.2020 21:25:32] <buza> but I've already made it up)
+[02.10.2020 21:26:22] <bentley> Great!
+[02.10.2020 21:26:47] <bentley> Then our beloved Vitaly Kremez will not immediately track us down? ))
+[02.10.2020 21:27:02] <buza> hz
+[02.10.2020 21:27:49] <buza> well, after contacting Boer, it turns out that his software is much weaker in terms of protection against AV - he doesn't use any of our many techniques, which showed effectiveness against AV
+[02.10.2020 21:27:58] <buza> and he doesn't have a hidden load trigger
+[02.10.2020 21:28:16] <buza> i.e. from here we exclude that we're getting chopped by trivial AB by dynamics
+[02.10.2020 21:28:34] <buza> but it has a triple layer traffic encryption and no prefixes
+[02.10.2020 21:28:44] <buza> so it bypasses firewalls
+[02.10.2020 21:29:12] <bentley> I see
+
+2020-10-05T06:12:13 bentley -> van
+Hi.
+
+2020-10-05T06:12:28 van -> bentley
+Hi!
+
+2020-10-05T06:12:48 van -> bentley
+I read what you sent me.
+
+2020-10-05T06:13:02 bentley -> van
+I understand the redesign is going to be big.
+
+2020-10-05T06:14:12 van -> bentley
+Can you send me that text of correspondence with Booza again? I have it in my history in another MS.
+
+2020-10-05T06:14:49 van -> bentley
+Why aren't the Mashroom and Cactus lowers used?
+
+2020-10-05T06:15:07 bentley -> van
+[02.10.2020 19:47:29] <bentley> Bottom line. Van doesn't knock and Mashrum and katus weren't even taken to work.
+[02.10.2020 20:09:28] <buza> clearly
+[02.10.2020 20:17:12] <buza> is it already with new domains?
+[02.10.2020 20:17:30] <bentley> Yes
+[02.10.2020 20:17:59] <bentley> Looks like Target needs to write a whole new BC since it's not working for us and Buer is knocking
+[02.10.2020 20:47:46] <bentley> https://twitter.com/malwrhunterteam/status/1310843235229671424
+[02.10.2020 20:48:04] <bentley> about our loader bazaar
+[02.10.2020 20:50:48] <buza> advertising)
+[02.10.2020 20:50:55] <buza> Of those, 7 started as FUD. The other 4 started at either 1 or 2 detections.
+[02.10.2020 20:51:15] <bentley> https://twitter.com/search?q=MUSTER%20PLUS%20SP%20Z%20O%20O&src=typed_query
+[02.10.2020 20:51:24] <bentley> This is who signed the cert today
+[02.10.2020 20:52:00] <buza> well, since the food, it turns out that the quality of our testing is excellent
+[02.10.2020 20:52:02] <buza> and stealth
+[02.10.2020 20:52:06] <buza> but why the bitch is no bounce)
+[02.10.2020 20:52:13] <bentley> here's dz ))
+[02.10.2020 20:52:34] <buza> I'm talking to Boer, it's easier
+[02.10.2020 20:52:46] <buza> no special tricks with pads and protocols
+[02.10.2020 20:53:30] <buza> our favorite Vitaly Kremez is there by the way)
+[02.10.2020 20:53:39] <buza> he is our personal analyst
+[02.10.2020 20:53:46] <bentley> Aah!)
+[02.10.2020 20:53:49] <bentley> Special for us
+[02.10.2020 20:54:11] <buza> you see how fast they work
+[02.10.2020 20:54:16] <buza> in the morning in the paper, in the evening in the verse
+[02.10.2020 20:54:21] <buza> and on the boer find
+[02.10.2020 20:54:36] <bentley> I don't know how to search )
+[02.10.2020 20:54:41] <buza> and how did you find it?
+[02.10.2020 20:54:55] <bentley> I searched by the certificate firm
+[02.10.2020 20:55:10] <buza> but the certificate is the same for them
+[02.10.2020 20:55:27] <bentley> It doesn't stain, it means
+[02.10.2020 20:55:57] <bentley> or it's different
+[02.10.2020 20:56:00] <buza> according to the targeting, it sticks more
+[02.10.2020 20:59:20] <bentley> it seems we are much more dangerous and there is a big trail behind us, so they cut us down right away
+[02.10.2020 20:59:36] <buza> any idea why so
+[02.10.2020 20:59:45] <buza> just can not believe that technology reached such progress)
+[02.10.2020 20:59:49] <buza> I mean, why do they cut us down?
+[02.10.2020 21:00:08] <bentley> Why?
+[02.10.2020 21:00:16] <buza> some signatures in the protocol
+[02.10.2020 21:00:23] <buza> by uri
+[02.10.2020 21:01:08] <bentley> Can we fix it?
+[02.10.2020 21:01:34] <buza> we always have /api/vtotom in uri
+[02.10.2020 21:01:42] <buza> if only that, yes
+[02.10.2020 21:01:44] <buza> and even easy
+[02.10.2020 21:01:58] <buza> and even in principle today if at mashroom with cactus
+[02.10.2020 21:02:07] <bentley> ah about the address where the download is coming from
+[02.10.2020 21:02:20] <bentley> you can do 1 test build
+[02.10.2020 21:02:33] <buza> well the url looks like this
+https://11.22.33.44/api/version
+[02.10.2020 21:02:57] <bentley> api version
+[02.10.2020 21:03:11] <buza> I guess the firewalls might catch this url - we've been in operation for a long time, it hasn't been changed from the start, i.e. read six months
+
+[02.10.2020 21:03:18] <buza> and it could have already hit all the bases
+[02.10.2020 21:03:25] <bentley> yes
+[02.10.2020 21:03:30] <buza> but to do that, you need to spin up the ssl traffic
+[02.10.2020 21:03:42] <buza> and it's not a trivial task even for DPI-devices
+[02.10.2020 21:04:10] <bentley> I guess resources allow
+[02.10.2020 21:04:55] <buza> command mashroom with cactus
+[02.10.2020 21:05:11] <buza> go into their groups and change prefixes to something random but short
+[02.10.2020 21:05:21] <bentley> yeah
+[02.10.2020 21:05:26] <buza> change them every day
+[02.10.2020 21:05:35] <buza> try to sell it to target
+[02.10.2020 21:05:44] <bentley> Ok
+[02.10.2020 21:06:37] <bentley> so there will be no /api/version right?
+[02.10.2020 21:06:42] <buza> no
+[02.10.2020 21:06:46] <buza> these strings should be gotten rid of
+[02.10.2020 21:06:54] <buza> but they don't really affect anything, they were chosen for masking
+[02.10.2020 21:25:00] <buza> okay, everything goes to the next week
+[02.10.2020 21:25:06] <buza> it's not that easy to change that prefix there
+[02.10.2020 21:25:30] <buza> more precisely, they need to figure out how not to lose compatibility with old bots with the old prefix
+[02.10.2020 21:25:32] <buza> but I've already made it up)
+[02.10.2020 21:26:22] <bentley> Great!
+[02.10.2020 21:26:47] <bentley> Then our beloved Vitaly Kremez will not immediately track us down? ))
+[02.10.2020 21:27:02] <buza> hz
+[02.10.2020 21:27:49] <buza> well, after contacting Boer, it turns out that his software is much weaker in terms of protection against AV - he doesn't use any of our many techniques, which showed effectiveness against AV
+[02.10.2020 21:27:58] <buza> and he doesn't have a hidden load trigger
+[02.10.2020 21:28:16] <buza> i.e. from here we exclude that we're getting chopped by trivial AB by dynamics
+[02.10.2020 21:28:34] <buza> but it has a triple layer traffic encryption and no prefixes
+[02.10.2020 21:28:44] <buza> so it bypasses firewalls
+[02.10.2020 21:29:12] <bentley> I see
+
+2020-10-05T06:15:24 bentley -> van
+Because Target didn't want to get involved with BK anymore and worked with Boer
+
+2020-10-05T06:16:25 van -> bentley
+Have you tried mine? You should have tried other ones.
+If you mean modifications with paths, like /api/, then it should be changed in the admin panel.
+
+2020-10-05T06:20:21 bentley -> van
+Yes
+
+2020-10-05T06:20:26 bentley -> van
+Buzu is waiting.
+
+2020-10-05T06:21:03 van -> bentley
+yes
+
+2020-10-05T06:21:55 bentley -> van
+and on encryption should be done as well. Buza said that there will be a different protocol of interaction with the admin panel.
+
+2020-10-05T06:22:13 van -> bentley
+uh-huh
+
+2020-10-05T06:22:59 bentley -> van
+Target also asked today to make simple loaders with chor encryption. He had Cactus and Mashroom do it last year.
+
+2020-10-05T06:23:34 bentley -> van
+There loadnr took an encrypted file from the link, unzipped it and ran it.
+
+2020-10-05T06:24:10 van -> bentley
+Yes, that's how we work. How do you have to do it?
+
+2020-10-05T06:24:45 bentley -> van
+That's right.
+
+2020-10-05T06:25:30 bentley -> van
+Just the last time I encrypted a file with the symbol I posted on the link and sent the link with the encryption symbol to Cactus and Mashroom.
+
+2020-10-05T06:26:34 van -> bentley
+i.e. uploading backdoor not from admin?
+
+2020-10-05T06:27:16 bentley -> van
+Yes there was another eche yet not a backdoor. Trick. And now Target wants to work with some other exe but for us to make a loader for it
+
+2020-10-05T06:27:22 bentley -> van
+In this format
+
+2020-10-05T06:27:33 van -> bentley
+got it
+
+2020-10-05T06:28:07 van -> bentley
+Tell Cactus and Mashroom?
+
+2020-10-05T06:28:14 bentley -> van
+Yes.
+
+2020-10-05T06:28:24 van -> bentley
+Cactus didn't work last year, by the way.
+
+2020-10-05T06:28:34 bentley -> van
+So in the beginning of this was
+
+2020-10-05T06:29:00 van -> bentley
+ok, let's do it
+
+2020-10-05T06:29:28 bentley -> van
+great!
+
+2020-10-05T07:16:44 van -> bentley
+Cactus started collecting, yes, he did it last year, you're right )))
+
+2020-10-05T07:17:08 bentley -> van
+He needs a link and a key
+
+2020-10-05T07:17:16 van -> bentley
+yes, of course
+
+2020-10-05T07:17:17 bentley -> van
+As soon as I get one, I'll send it to you.
+
+2020-10-05T07:17:26 van -> bentley
+Yeah, thanks
+
+2020-10-05T07:20:13 van -> bentley
+Mashroom collects, too.
+
+2020-10-05T07:20:18 bentley -> van
+Yep
+
+2020-10-05T07:20:29 van -> bentley
+I wish Booza had been in the studio...
+
+2020-10-05T07:20:48 bentley -> van
+Coming soon
+
+2020-10-05T11:12:06 bentley -> van
+Posdokahi, who do we have ?
+
+2020-10-05T11:12:06 bentley -> van
+<ramon> 4
+
+2020-10-05T11:12:43 van -> bentley
+group 4 ?
+
+2020-10-05T11:12:47 bentley -> van
+Yes
+
+2020-10-05T11:14:17 van -> bentley
+Frog did.
+
+2020-10-05T11:14:42 bentley -> van
+ok
+
+2020-10-05T11:43:55 van -> bentley
+Okay, new group made one2 with new paths. I checked everything - it works. Putting it together for you to work?
+
+2020-10-05T11:44:03 bentley -> van
+come on
+
+2020-10-05T12:11:12 van -> bentley
+GBRQWERasdzxc
+Download: https://qaz.im/load/DZz4TZ/TksnyY
+
+2020-10-05T12:11:38 bentley -> van
+Ok
+
+2020-10-05T13:03:19 van -> bentley
+What are your plans today?
+
+2020-10-05T13:14:03 bentley -> van
+I hope to see it in action.
+
+2020-10-05T13:14:56 van -> bentley
+I'll show up later, you'll see )))
+
+2020-10-05T13:15:18 van -> bentley
+Have you tested it yet?
+
+2020-10-05T13:16:38 bentley -> van
+Be right there.
+
+2020-10-05T13:19:11 van -> bentley
+I uploaded a backdoor to group one2 there, please re-post the one I sent you. The version is the same.
+
+2020-10-05T13:19:40 bentley -> van
+ok
+
+2020-10-06T07:59:21 bentley -> van
+Hi
+
+2020-10-06T07:59:30 bentley -> van
+Great job yesterday!!!
+
+2020-10-06T07:59:39 bentley -> van
+Need a new build
+
+2020-10-06T08:10:03 van -> bentley
+Hi! ))) I'll put it together now.
+
+2020-10-06T08:12:40 bentley -> van
+you got a mega cool build ))
+
+2020-10-06T09:42:40 van -> bentley
+GBRQWERasdzxc
+Download: https://qaz.im/load/5eTYeN/5SDRai
+
+2020-10-06T09:42:48 bentley -> van
+Ok
+
+2020-10-06T09:42:50 van -> bentley
+group one3
+
+2020-10-06T09:42:57 bentley -> van
+good
+
+2020-10-06T10:37:36 van -> bentley
+I got caught up today ))))
+Yesterday I waited and waited to work... Then the first bots appeared, few, not added. I got upset and went to bed.
+Thought Target ripped in the morning.
+
+2020-10-06T10:38:18 bentley -> van
+No it was very cool
+
+2020-10-06T10:38:26 bentley -> van
+Yesterday hopefully today will be the same
+
+2020-10-06T10:38:31 bentley -> van
+I sat up until 6:00 a.m. myself.
+
+2020-10-06T10:39:47 van -> bentley
+Yes it would be good...
+
+2020-10-06T10:43:17 van -> bentley
+What time are they going to work today?
+
+2020-10-06T10:43:19 bentley -> van
+Rest a few hours while we make a good crypt Loaders knock on the admin panel from the test machine
+
+2020-10-06T10:43:36 bentley -> van
+They should have started by now, but so far they are stuck with crypto
+
+2020-10-06T10:43:46 van -> bentley
+clearly
+
+2020-10-06T15:03:38 van -> bentley
+work?
+
+2020-10-06T15:10:22 bentley -> van
+Yes. Don't worry.
+
+2020-10-06T15:10:57 van -> bentley
+Here's the thing, I'll be gone for the rest of the week.
+Write me what you need tomorrow morning, I'll build it.
+I'll pass my loader backdoor to GHOST (ghost@q3mcco35auwcstmt.onion) to maintain and build daily.
+He will build it, clean it up. I'm writing him instructions now.
+
+2020-10-06T15:12:19 bentley -> van
+Yes he texted me back. Take a break for sure.
+
+2020-10-07T06:48:51 van -> bentley
+Hi! )))
+How nice to rest...
+What's up with Target's work yesterday?
+Gohost got my designs, assembly instructions. Today at 7:00 went over the assembly steps with him.
+He may be able to handle it.
+
+2020-10-07T10:21:20 van -> bentley
+Hi! )))
+How nice to rest...
+What's up with Target's work yesterday?
+Gohost got my designs, assembly instructions. Today at 7:00 went over the assembly steps with him.
+He may be able to handle it.
+
+2020-10-08T05:05:22 van -> bentley
+Hi! )))
+How are you doing, please write.
+
+2020-10-08T06:39:31 van -> bentley
+Hi! )))
+How are you doing, please write.
+
+2020-10-08T06:49:30 bentley -> van
+Hi. Psomtrie how was work today. Have a rest ))
+
+2020-10-08T07:05:07 bentley -> van
+Hi. Psomtrie how was work today. Have a rest ))
+
+2020-10-12T06:54:27 bentley -> van
+Hi )
+
+2020-10-12T20:15:29 bentley -> van
+Please assemble a new build by 10 tomorrow
+
+2020-10-12T20:15:31 bentley -> van
+ 2020-10-13
+[01:16:31] <green> that's for tomorrow
+
+bot
+
+3.137.180.197 cuprinc.com
+3.238.75.236 shophoof.com
+
+loader
+
+34.221.202.231 breezdesign.com
+54.83.253.135 hotenlighten.com
+18.191.38.26 onebulks.com
+
+2020-10-12T20:15:36 bentley -> van
+Fresh pads
+
+2020-10-13T03:08:56 bentley -> van
+Please assemble a new build by 10 tomorrow
+
+2020-10-13T03:08:56 bentley -> van
+ 2020-10-13
+[01:16:31] <green> that's for tomorrow
+
+bot
+
+3.137.180.197 cuprinc.com
+3.238.75.236 shophoof.com
+
+loader
+
+34.221.202.231 breezdesign.com
+54.83.253.135 hotenlighten.com
+18.191.38.26 onebulks.com
+
+2020-10-13T03:08:56 bentley -> van
+Fresh pads
+
+2020-10-13T04:26:13 van -> bentley
+Hi! )))
+Got it together.
+GBRQWERasdzxc
+Download: https://qaz.im/load/DbNRdy/BDQB7Y
+
+2020-10-13T07:08:01 van -> bentley
+Hi! )))
+Collected.
+GBRQWERasdzxc
+Download: https://qaz.im/load/DbNRdy/BDQB7Y
+
+2020-10-13T07:09:05 van -> bentley
+Hi!)))
+Did you get it?
+
+2020-10-13T07:09:30 bentley -> van
+Hi. Yes cps!!!
+
+2020-10-13T07:09:41 van -> bentley
+What happened yesterday?
+
+2020-10-13T07:11:32 bentley -> van
+Didn't work
+
+2020-10-13T07:15:20 van -> bentley
+oooo
+
+2020-10-14T08:04:45 bentley -> van
+Hi.
+
+2020-10-14T08:04:58 van -> bentley
+Hi!
+There were 77 bots knocking away in group 14 yesterday. Target is stomping its feet. Is that a bad thing at all?
+
+2020-10-14T08:05:44 bentley -> van
+Did a good job yesterday with the Mashroom bot. Yours didn't knock well. They started with it but then switched to Mashroom
+
+2020-10-14T08:06:23 bentley -> van
+His bot was practically never in the works. Before that, everything was done only by yours.
+
+2020-10-14T08:06:40 bentley -> van
+Apparently the aveshchiki deciphered your bot
+
+2020-10-14T08:07:59 van -> bentley
+collecting for gr 15, Buza said
+
+2020-10-14T08:08:47 van -> bentley
+Ghost was talking about the dll backdoor. I'm building it too. You can try backdoor crypting as well.
+
+2020-10-14T08:09:59 bentley -> van
+Yeah ok
+
+2020-10-14T08:43:55 van -> bentley
+GBRQWERasdzxc
+Download: https://qaz.im/load/QN8Bh9/Zkzdsz
+
+2020-10-14T08:44:30 bentley -> van
+++
+
+2020-10-14T09:49:31 van -> bentley
+Buza suggested building a lowader without a scramble in gr. 15. I'll do it now. And the one I sent, throw it away.
+
+2020-10-14T09:50:07 van -> bentley
+Defender is cutting, it seems. And the bolt on bot command isn't ready yet in the admin.
+
+2020-10-14T09:53:41 bentley -> van
+Got it ok
+
+2020-10-14T10:12:18 van -> bentley
+GBRQWERasdzxc
+ https://ru.files.fm/u/qc4v4vhk
+
+2020-10-14T10:12:25 bentley -> van
++
+
+2020-10-14T10:12:34 van -> bentley
+The usual file-sharing site is dead... write what you got )))
+
+2020-10-14T10:14:05 bentley -> van
+All received
+
+2020-10-14T10:14:40 van -> bentley
+Ok, thanks
+
+2020-10-14T10:15:08 van -> bentley
+and you're going to check out the gr 15 under def today?
+
+2020-10-14T10:16:34 bentley -> van
+Absolutely
+
+2020-10-14T10:16:47 van -> bentley
+Yep
+
+2020-10-14T10:19:33 van -> bentley
+Booza says we should try both loaders - with and without a clip... What do you think?
+
+2020-10-14T10:19:51 bentley -> van
+Yes it is possible
+
+2020-10-14T10:20:18 van -> bentley
+Then I'll put it back together again with a snap, change the version.
+
+2020-10-14T10:20:47 van -> bentley
+the backdoor is the same as the one I sent now
+
+2020-10-14T10:21:10 bentley -> van
+Okay
+
+2020-10-14T10:35:46 van -> bentley
+GBRQWERasdzxc
+ https://ru.files.fm/u/qb92dzdf
+
+2020-10-14T10:36:04 van -> bentley
+this loader with a clip
+
+2020-10-14T10:36:30 bentley -> van
+++
+
+2020-10-14T11:13:17 van -> bentley
+are you pouring an uncrypted loader into the admin?
+
+2020-10-14T11:34:59 bentley -> van
+No crypto signed and bk signed
+
+2020-10-14T11:35:24 van -> bentley
+yeah? oooh
+
+2020-10-14T11:35:48 van -> bentley
+how complicated it is
+
+2020-10-14T11:35:57 van -> bentley
+)))
+
+2020-10-14T11:37:00 bentley -> van
+Yeah ))
+
+2020-10-14T11:37:04 bentley -> van
+According to Boosa's precept ))
+
+2020-10-14T11:37:33 van -> bentley
+May he be well!
+
+2020-10-14T11:38:53 van -> bentley
+The next step will be: the encrypted and signed loader should be sprinkled.
+
+2020-10-14T11:39:19 bentley -> van
+))
+
+2020-10-14T11:39:40 bentley -> van
+Yeah and recite the cryptor's prayer )) So evil google won't turn off the cloud )))
+
+2020-10-14T11:39:57 van -> bentley
+
+
+2020-10-14T12:24:48 bentley -> van
+https://twitter.com/ffforward/status/1316098103288750081
+
+2020-10-14T12:24:54 bentley -> van
+They write about us here )
+
+2020-10-14T12:25:11 van -> bentley
+right?
+
+2020-10-14T12:25:34 bentley -> van
+Yes, they burned the internal dock of Target's employees there...
+
+2020-10-14T12:25:40 bentley -> van
+And they figure out what and how
+
+2020-10-14T12:26:48 van -> bentley
+are the russians working it out?
+
+2020-10-14T12:27:01 bentley -> van
+Not foreign all
+
+2020-10-14T12:27:46 van -> bentley
+Why are the russian texts in Latin?
+
+2020-10-14T12:28:03 bentley -> van
+These are service marks of ours
+
+2020-10-14T12:28:16 van -> bentley
+ahh
+
+2020-10-14T12:28:34 bentley -> van
+I feel like they watched me take a shower.)
+
+2020-10-14T12:28:52 van -> bentley
+bastards, that's one word...
+
+2020-10-14T12:29:12 bentley -> van
+Aag Target has seriously pissed them off.
+
+2020-10-14T12:30:02 van -> bentley
+Have you read it?
+ 
+@malwrhunterteam
+  and 4 other users
+"mash" in the first column is likely referring to "car", so they have a dozen C2 boxes. "HZ" is "HZ" meaning they're not sure, check after break. "na 2 kruge" = on second pass. "na glaz" = approximately.
+
+2020-10-14T12:30:12 bentley -> van
+That's what I mean ))
+
+2020-10-14T12:30:19 bentley -> van
+Mash = mashroom
+
+2020-10-14T12:30:57 bentley -> van
+Spilled our check technology
+
+2020-10-14T12:31:23 bentley -> van
+Functional checks
+
+2020-10-14T12:32:20 van -> bentley
+so how did the document get to them? I don't understand a fucking thing.
+
+2020-10-14T12:33:03 bentley -> van
+They just send signed crypts from google drive and the same aac probably had a working dock for internal work
+
+2020-10-14T12:33:53 van -> bentley
+man... Does Boosa know?
+
+2020-10-14T12:34:02 bentley -> van
+That's what he sent.
+
+2020-10-14T12:34:12 van -> bentley
+awesome
+
+2020-10-14T12:36:54 van -> bentley
+
+Joseph Roosen
+@malwrhunterteam
+  and 4 more users
+You found the gold mine!
+
+2020-10-14T12:39:18 van -> bentley
+Now what?
+
+2020-10-14T12:39:27 bentley -> van
+It's okay, it's still the same.
+
+2020-10-14T12:39:32 bentley -> van
+A new account every time
+
+2020-10-14T12:51:50 van -> bentley
+have you tested gr 15 yet?
+
+2020-10-14T12:51:56 bentley -> van
+Yes
+
+2020-10-14T12:52:08 bentley -> van
+Now I'm going to test the crypt
+
+2020-10-14T12:52:19 van -> bentley
+will they work?
+
+2020-10-14T12:52:28 bentley -> van
+Yes, in the evening.
+
+2020-10-14T12:52:30 bentley -> van
+в 19
+
+2020-10-14T12:53:11 van -> bentley
+Okay, I'll come back later. I'll go for now. I've been on since 6:00 a.m. Musc today.
+
+2020-10-14T12:53:18 bentley -> van
+Yep
+
+2020-10-14T13:18:29 bentley -> van
+Detect on download
+Trojan:Win32/Bazarldr.B!MSR
+Congratulations we were put into a separate group of detects!
+
+2020-10-14T13:18:38 bentley -> van
+Checked the crypt signed with yesterday's certificate
+
+2020-10-14T13:22:48 bentley -> van
+https://avcheck.net/id/iySwVaur7Aqi
+
+2020-10-14T16:44:15 bentley -> van
+Detect on download
+Trojan:Win32/Bazarldr.B!MSR
+Congratulations, we have been put into a separate group of detects!
+
+2020-10-14T16:44:15 bentley -> van
+Checked the crypt signed with yesterday's certificate
+
+2020-10-14T16:44:15 bentley -> van
+https://avcheck.net/id/iySwVaur7Aqi
+
+2020-10-15T07:17:56 bentley -> van
+Hi
+
+2020-10-15T07:18:07 bentley -> van
+Didn't work yesterday. Crypt didn't go in.
+
+2020-10-15T07:18:14 bentley -> van
+Will you do a fresh build?
+
+2020-10-15T07:18:37 van -> bentley
+Hi! Yes. I know, Target wrote.
+
+2020-10-15T07:19:07 van -> bentley
+I'll consult with Booza and put it together.
+
+2020-10-15T07:19:30 bentley -> van
+Oops ))
+
+2020-10-15T07:33:23 van -> bentley
+Are all the autotests working?
+
+2020-10-15T07:34:16 bentley -> van
+Every once in a while
+
+2020-10-15T07:34:38 van -> bentley
+Booza asks to run it through the autotest.
+
+2020-10-15T07:34:59 bentley -> van
+What car did you look at?
+
+2020-10-15T07:35:15 van -> bentley
+haven't watched it yet
+
+2020-10-15T07:35:33 bentley -> van
+worked yesterday
+
+2020-10-15T07:35:56 van -> bentley
+ok. Can I test it out?
+
+2020-10-15T07:36:07 bentley -> van
+Yes
+
+2020-10-15T09:42:37 van -> bentley
+Which VM in the autotest check on Defender? On any 10?
+
+2020-10-15T09:42:53 bentley -> van
+not that used to be
+
+2020-10-15T09:43:09 van -> bentley
+Yep
+
+2020-10-15T09:43:19 bentley -> van
+Bottom there and the very top one
+
+2020-10-15T09:43:29 van -> bentley
+Yep
+
+2020-10-15T10:23:46 van -> bentley
+Autotest ran.
+Webroot
+WitDefender
+Semantec
+Trendmicro
+- Autotest errors
+Avast - no detection, but no knockback
+
+The rest of the AVs, including Defender on two VMs, are clean.
+Do we have Green Autotest repairing?
+
+2020-10-15T10:24:13 bentley -> van
+Yes
+
+2020-10-15T10:24:22 van -> bentley
+I can take Avast VM, manually check it?
+
+2020-10-15T10:24:29 bentley -> van
+Come on
+
+2020-10-15T10:24:48 bentley -> van
+Did Buza send you the dincheck of yesterday's loader crypt?
+
+2020-10-15T10:24:52 bentley -> van
+Rantime
+
+2020-10-15T10:24:57 van -> bentley
+no
+
+2020-10-15T10:25:08 bentley -> van
+https://dyncheck.com/scan/id/204bd5793a11acd87815ee6a9f810fac
+
+2020-10-15T10:25:24 bentley -> van
+Checking more of the source. Buza said.
+
+2020-10-15T10:26:01 van -> bentley
+uh-huh
+
+2020-10-15T10:32:57 bentley -> van
+https://dyncheck.com/scan/id/553882f89d6033693937bc8981cff525
+
+2020-10-15T10:34:40 van -> bentley
+Then there's nothing to collect today, you have to clean it up. It's not fast, you know. I'll tell Booze now.
+
+2020-10-15T10:34:51 bentley -> van
+I see
+
+2020-10-15T10:36:06 van -> bentley
+I see
+
+2020-10-15T10:36:50 van -> bentley
+360 Total Security Essentia is a funny detector. It doesn't seem to be about us.
+
+2020-10-15T10:37:06 bentley -> van
+Yep
+
+2020-10-15T10:39:22 van -> bentley
+Webroot SecureAnywhere - I don't understand it either
+
+2020-10-15T10:39:48 van -> bentley
+ah, no, there's a detection.
+
+2020-10-15T10:41:29 van -> bentley
+Kaspersky Internet Security - also not a detector?
+
+2020-10-15T10:42:18 bentley -> van
+not a detector. the icon went dark, but what kind of a detector - is not clear
+
+2020-10-15T11:45:50 van -> bentley
+https://dyncheck.com/scan/id/ca918f4594c7f67c605a758fb4b874da
+https://dyncheck.com/scan/id/bc5d00a0aa32c8f8fcea668d94d15a7e
+I checked my loader.
+Booza said it would work. Gathering a group of 15.
+
+2020-10-15T11:46:08 bentley -> van
+Ok
+
+2020-10-15T11:46:10 bentley -> van
+Waiting for
+
+2020-10-15T12:12:06 van -> bentley
+GBRQWERasdzxc
+Download: https://qaz.im/load/bZe6nG/AHhAQZ
+
+2020-10-15T12:12:12 bentley -> van
+++
+
+2020-10-15T12:12:42 van -> bentley
+Are you taking Mashroom and Cactus to work today?
+
+2020-10-15T12:12:58 bentley -> van
+Mashroom yes
+
+2020-10-15T12:13:32 van -> bentley
+In my build the addresses are yesterday's, Green turned them off for now. You know, I guess.
+
+2020-10-15T12:13:52 bentley -> van
+Yes, there's a cunning plan by Boosa.
+
+2020-10-15T12:14:01 van -> bentley
+yes yes yes
+
+2020-10-15T12:19:11 bentley -> van
+Did you check the dynamics?
+
+2020-10-15T12:20:44 van -> bentley
+I sent you the result, but the addresses were different
+
+2020-10-15T12:21:00 bentley -> van
+Ok
+
+2020-10-15T12:22:19 van -> bentley
+In the dynamometer half of the detects are just in case, if you show network activity, that's it - the enemy, damn it
+
+2020-10-16T07:43:16 van -> bentley
+Hi!
+I got a Win10-64-bentley machine from you. Can I still work on it?
+What yesterday?
+
+2020-10-16T07:43:29 bentley -> van
+Hi.
+
+2020-10-16T07:43:45 bentley -> van
+Did a great job yesterday with Mashroom, yours almost didn't knock and neither did Cactus.
+
+2020-10-16T08:00:18 van -> bentley
+Tell me, on the dincheck, what were the differences between Mashroom and me?
+
+2020-10-16T08:01:56 bentley -> van
+<mushroom> Cleaned up: https://dyncheck.com/scan/id/bbda692052fd40e504f69cc638967d80
+
+2020-10-16T08:02:41 van -> bentley
+It's static, I had the same thing... And the dynamics?
+
+2020-10-16T08:03:21 bentley -> van
+https://dyncheck.com/scan/id/7b3b55f29516218c3aecae3bbefad0e7
+
+2020-10-16T08:14:25 van -> bentley
+I collect gr 16
+
+2020-10-16T08:14:36 bentley -> van
+Yeah Booza said
+
+2020-10-16T08:14:54 van -> bentley
+there is no difference in dynamics, what else then...
+
+2020-10-16T08:15:11 bentley -> van
+I do not know some algorithm of work apparently
+
+2020-10-16T08:15:36 van -> bentley
+maybe
+
+2020-10-16T10:27:28 van -> bentley
+GBRQWERasdzxc
+Download: https://qaz.im/load/QFtsah/bS2BYd
+
+2020-10-16T10:30:07 bentley -> van
+++
+
+2020-10-19T06:59:30 van -> bentley
+Hi! Target asked for mine and Mashroom's build early. And me, Gohost, Cactus can't get to the admins with loaders. There are updates in the admin. Green was stressing with the pads, but it doesn't seem to be about the pads.
+
+2020-10-19T07:01:05 bentley -> van
+Got it
+
+2020-10-19T09:16:52 van -> bentley
+With the admins we're dealing with. Should I r 16 to collect?
+
+2020-10-19T09:17:15 bentley -> van
++
+
+2020-10-19T09:18:17 van -> bentley
+I'm not collecting anything yet, it's not clear what's going on with the paths, you may need to change them again
+
+2020-10-19T09:18:45 bentley -> van
+got it
+
+2020-10-20T07:26:20 van -> bentley
+Hi! )))
+My build, group 16.
+GBRQWERasdzxc
+Download: https://qaz.im/load/R2n4nR/TiBH7i
+
+2020-10-20T07:26:51 bentley -> van
+Hi, that's great!
+
+2020-10-20T07:28:47 van -> bentley
+Check the recoil and gaskets will turn off Green.
+
+2020-10-20T07:28:59 van -> bentley
+I checked it, but I need you to check it )))
+
+2020-10-20T07:29:06 bentley -> van
+Ok
+
+2020-10-20T07:29:16 van -> bentley
+Thank you!
+
+2020-10-20T07:29:59 bentley -> van
+Has the bk been filled in yet?
+
+2020-10-20T07:30:13 van -> bentley
+There are bots in the group. Yeah, got it off my tongue )))
+
+2020-10-20T07:43:15 bentley -> van
+It's ok.
+
+2020-10-20T08:01:30 van -> bentley
+Okay, tell Greene to knock out the gaskets
+
+2020-10-20T08:01:51 bentley -> van
++
+
+2020-10-20T08:32:44 van -> bentley
+can you take Win10-64-bentley to work?
+
+2020-10-20T08:42:53 van -> bentley
+or win_2019_bently ?
+
+2020-10-23T09:45:25 bentley -> van
+Hi )
+
+2020-10-23T09:45:36 van -> bentley
+Hi!
+
+2020-10-23T09:46:04 bentley -> van
+How's the admins? Did they pick it up after the hack?
+
+2020-10-23T09:46:22 bentley -> van
+Shall we make assemblies for work today?
+
+2020-10-23T09:46:39 van -> bentley
+I think so, it's up. I do, yeah. )))
+
+2020-10-23T09:46:45 van -> bentley
+How was it yesterday?
+
+2020-10-23T09:46:53 bentley -> van
+yeah bad
+
+2020-10-23T09:47:15 bentley -> van
+Broke a couple of times in the middle of it. Moved on to the boer
+
+2020-10-23T09:47:33 bentley -> van
+And another option. The result is average.
+
+2020-10-23T09:47:52 van -> bentley
+mine didn't work?
+
+2020-10-23T09:48:17 bentley -> van
+No, I didn't knock it right.
+
+2020-10-23T12:02:10 van -> bentley
+GBRQWERasdzxc
+Download: https://qaz.im/load/554F9t/YYn6tH
+
+2020-10-23T12:02:35 van -> bentley
+took a long time today, the pads didn't all work, Green was waiting
+
+2020-10-23T12:03:10 bentley -> van
+OK
+
+2020-10-23T12:03:34 van -> bentley
+I already uploaded the bot to the group
+
+2020-10-23T12:03:47 bentley -> van
+Okay
+
+2020-10-23T13:53:17 van -> bentley
+Are they going to work today?
+
+2020-10-23T13:53:46 bentley -> van
+It's not clear yet.
+
+2020-10-23T13:53:56 van -> bentley
+You know about the weekend?
+
+2020-10-23T13:54:07 bentley -> van
+Yes
+
+2020-10-23T13:54:17 bentley -> van
+I'll be in touch for tests )
+
+2020-10-23T13:54:29 bentley -> van
+We need Target to make a result
+
+2020-10-23T13:54:29 van -> bentley
+Yeah, okay.
+
+2020-10-25T07:12:58 van -> bentley
+Hi! It worked here too.
+
+2020-10-25T07:13:57 bentley -> van
+Hi! It worked here too.
+
+2020-10-29T16:44:00 van -> bentley
+how's the preparation?
+
