@@ -1,0 +1,305 @@
+[28.07.21 16:08:40] weldon: hi.
+[28.07.21 16:22:24] frances: hi.
+[28.07.21 16:24:56] weldon: didn't you send angelo to me?)
+[28.07.21 16:38:49] frances: I sent his superbrowser to test it
+[28.07.21 16:38:55] frances: but as it turned out, there's nothing to test today
+[28.07.21 16:39:06] frances: how much time do you need to figure it out?
+[28.07.21 16:39:08] weldon: that's what I figured
+[28.07.21 16:40:54] weldon: there's a lot of pain) with sylver, we decided to go a different way
+[28.07.21 16:41:12] weldon: look - the point is this:
+1. I make a difference/patch between the SB and the FF it's built on
+2. i shorten it as much as possible
+3. I roll this patch onto the new/last FF
+4. Angelo tests it
+5. give the product
+[28.07.21 16:43:21] weldon: yesterday i made this patch, it was 700Mb, today it is 7Mb )
+[28.07.21 16:43:35] weldon: he needs more trimming
+[28.07.21 16:45:24] weldon: well, it sounds cool in theory, but when exactly - dunno
+[28.07.21 17:27:59] frances: Well, it sounds fine, but I need some terms, and it will take time to test the functionality
+[28.07.21 17:28:53] frances: there are a lot of different third-party libs? it basically pushes cookies, screen expansion and soks, but something has changed with soks, you should check with him, but it seems that any guy could roll there
+[28.07.21 17:29:11] frances: the main problem was that many detected it as an old browser
+[28.07.21 17:29:15] frances: google for example
+[28.07.21 17:33:54] weldon: that's the point - you use already built browser)
+[28.07.21 17:34:10] weldon: originally my TOR:
+silver Owner 11:34
+	you can activate an old version of the browser from adam
+	weldon now it's your turn
+	you need to
+	- learn how to build a project
+	- work it out
+	- compared the assembled binary to what adam has and confirm that it is the same source code
+	after that, we'll start to refine it and fix the problems.
+	all this is extremely important and no delays are acceptable
+[28.07.21 17:35:09] weldon: and today - correction
+[28.07.21 17:35:11] weldon: silver 2:25 PM
+	your task is to make a clean patch
+	define a base version on which the patch will be applied and you'll get the tree we have
+	when you have a clean patch, we will try to put it on a fresh FF
+	then we'll
+		1) solve the "your browser is out of date" problem and get all the latest fancy features.
+		2) you'll be able to build with modern toolchain without "there's no such a library anymore"
+[28.07.21 17:37:41] weldon: tomorrow let's discuss everything in antic group with silver, are you there?
+[28.07.21 17:42:49] frances: no tomorrow
+[28.07.21 17:42:55] frances: He basically said everything
+[28.07.21 17:43:01] frances: I have nothing to add
+[28.07.21 17:43:07] frances: except it's all "yesterday"
+[28.07.21 17:43:21] frances: so just keep me posted on how things are going there
+[28.07.21 17:43:32] weldon: ok
+[28.07.21 17:46:06] weldon: ok, see you tomorrow, I'll go, my wife is pissing boiling)
+[01.08.21 18:53:14] weldon: ghbdtn
+[01.08.21 18:53:26] weldon: Hi.
+[01.08.21 18:55:01] weldon: frances, what about salary?
+[02.08.21 05:19:33] weldon: hello
+[02.08.21 05:20:25] frances: hello in an hour
+[02.08.21 05:20:32] weldon:]
+[02.08.21 06:10:16] frances: let's get this done
+[02.08.21 06:10:27] weldon: sec
+[02.08.21 06:13:05] weldon: In order to pay an ID 4795200 order send amount 0.026 BTC on address
+397GDpPFGdXjsm1Eq7zpCfFZTNQcecSZjR
+[02.08.21 06:13:34] frances: done
+[02.08.21 06:13:44] weldon: rahmat
+[16.08.21 15:52:48] weldon: hello
+[16.08.21 15:56:10] frances: hello
+[16.08.21 15:56:13] frances: give me the kosh and the sum
+[16.08.21 15:56:19] frances: and how's it going with superbrowser?
+[16.08.21 15:56:22] weldon: ctr
+[16.08.21 15:56:26] weldon: sec
+[16.08.21 15:56:41] weldon: doing SB
+[16.08.21 15:59:51] weldon: In order to pay an ID 5038202 order send amount 0.0216 BTC on address
+3MVjTuaQyE5oUAbDNxUngNPmqVwKSVz73E
+[16.08.21 16:00:45] frances: done
+[16.08.21 16:01:04] weldon: now you're giving all the gold and all the information?
+[16.08.21 16:01:20] frances: What's more about the browser? Any progress?
+[16.08.21 16:01:31] frances: Yes, I take over for C on general issues and report for all)
+[16.08.21 16:02:21] weldon: okay, it's still at the experiment stage, I hope to make progress tomorrow
+[16.08.21 16:03:27] frances: got it, keep it up to date, because we're already asking the adverts for this browser
+[16.08.21 16:04:19] weldon: do guys work here, or are they dying of heat?) just go to the chat room, it's like beavis and batshead drink)
+[16.08.21 16:05:04] frances: all work, at night they just stiffen))
+[16.08.21 16:05:36] weldon: We got a 40+ heat wave
+[16.08.21 16:06:10] frances: Summer))
+[16.08.21 16:06:26] frances: Let's get high while it's warm
+[16.08.21 16:06:31] frances: Then it will be gray and sad.)
+[16.08.21 16:06:48] weldon: It's a hell of a summer
+[19.08.21 12:28:12] weldon: hi, I'll finish the patch soon
+[19.08.21 12:32:31] weldon: found some shit last night, I found the source code correctly by 100)
+[19.08.21 13:00:46] frances: hi, got it super
+[23.08.21 12:55:29] weldon: hi
+[23.08.21 12:55:56] weldon: all in all, the patch is COMPLETELY ready)
+[23.08.21 12:56:02] weldon: N68End_SB_Naur.patch 1.51 MB (1 593 950 bytes)
+[23.08.21 12:56:36] weldon: and N68End_SB_Naur3.patch 36.0 KB (36 887 bytes) (with already put/removed data/folders/files)
+[23.08.21 12:57:33] weldon: now I'm trying to figure out how to build locally (so I could build without Internet)
+[23.08.21 12:58:37] frances: Hi, great, we're looking forward to it.
+[02.09.21 05:49:59] weldon: hi, how's the internet?)
+[02.09.21 06:12:55] frances: Hi, yes, I have internet, Stern is waiting
+[02.09.21 06:13:35] frances: In theory, tonight, I start from Popovka to Yalta, I will be closer to the evening, I sent all the calculations to Stern, waiting for the bits
+[02.09.21 06:18:42] weldon: ok, I have to correct the patch - a few hanks there, if the new FF 91esr patch is rolled over - now I'll deal with it - and give the testers
+[02.09.21 06:20:50] frances: Great, bro, looking forward to it!
+[02.09.21 06:21:05] frances: browser is needed, it was our thing once, before it went down...
+[02.09.21 06:22:05] weldon: did you work here then? SB was abandoned over 2 years ago.
+[15.09.21 08:55:38] weldon: hi, will the payday be today, or can he load bums?)))
+[15.09.21 09:54:10] frances: Hi, we're waiting
+[15.09.21 09:54:44] weldon: Hello?
+[15.09.21 09:55:30] frances: Hi, we're waiting, bro
+[15.09.21 09:56:07] weldon: okay, is angelo on vacation?)
+[15.09.21 09:56:33] frances: I think he was last night
+[15.09.21 09:56:34] frances: Ah.
+[17.09.21 07:24:49] weldon: hi, stern online)
+[17.09.21 07:44:38] frances: hi, leave the cat
+[17.09.21 07:44:55] weldon: just a minute
+[17.09.21 07:47:48] weldon: In order to pay an ID 5600574 order send amount 0.021 BTC on address
+3QeFzsr1ymVVf6dMyRuNrDXCGtYgDVSXF5
+[17.09.21 07:56:26] weldon: haven't you added it yet? there's a timeout
+[17.09.21 07:56:28] frances: Done, bro.
+[17.09.21 07:56:43] frances: have a nice day
+[17.09.21 07:57:04] weldon: okay, I see, thanks.
+[30.09.21 14:53:20] weldon: hi.
+[30.09.21 14:53:41] weldon: do you know where dane is ?
+[30.09.21 15:52:26] weldon: ping
+[30.09.21 17:35:12] frances: hello no
+[30.09.21 17:35:15] frances: on vacation maybe
+[30.09.21 19:34:05] weldon: ping something?
+[29.10.21 11:15:33] weldon: ghbdtn
+[29.10.21 11:15:37] weldon: hello
+[29.10.21 11:16:00] frances: hi.
+[29.10.21 11:16:41] weldon: do you have salaries?
+[29.10.21 11:17:39] frances: yeah.
+[29.10.21 11:27:47] weldon: cjplfv&
+[29.10.21 11:27:50] weldon: will I?
+[29.10.21 11:30:04] frances: yes
+[29.10.21 11:37:05] weldon: transfer 0.017 BTC to 3FvBDwce94Y41ZSX8D6DsbGh78hfCF42SoQ
+[29.10.21 11:56:23] weldon: hey, did you get the message?
+[29.10.21 11:57:16] frances: yes
+[29.10.21 11:57:19] frances: I do
+[29.10.21 11:57:23] frances: The rocket's falling off.
+[29.10.21 11:57:24] frances: fuck it
+[29.10.21 11:58:01] frances: gone
+[29.10.21 12:00:05] weldon: try another exchanger - mine got weird, I got money from kiwi last time
+[16.11.21 06:20:26] weldon: hello, no pay?
+[11/17/21/221 10:12:08] weldon: healthy, recovered?
+[11/17/21/221 10:20:52] weldon: 0.0165 Bitcoin(BTC) Purse for payment: 3Hpf7w27iWjkFPMVdMySCGsdoFkkKLQ8Dk
+[17.11.21 10:24:18] frances: hi
+[17.11.21 10:24:19] frances: Ready, bro.
+[17.11.21 10:37:38]
+[01.12.21 09:34:57] weldon: ghbdtn ns jykfqy&
+[01.12.21 09:38:35] frances: hi
+[01.12.21 09:38:41] frances: let me give you a salary
+[01.12.21 09:58:59] weldon: 1. Transfer 0.04576935 BTC to 3Mhtd5inVYYodLHNmssyv9MX1hfuvqK6Uc
+[01.12.21 09:59:22] weldon: rfrjq-nj ggw c j,vtyybrfvb
+[01.12.21 09:59:47] weldon: what a mess with exchangers
+[01.12.21 10:01:24] weldon: ah
+[01.12.21 10:02:09] weldon: last time it was 0.017
+[01.12.21 10:08:38] weldon: In order to pay an ID 7021489 order send amount 0.017 BTC on address
+3FtoGEF5NQo96jh5yPMYnmNowVZh6XdCTQ
+[01.12.21 10:11:45] frances: gone
+[01.12.21 10:30:39] weldon: didn't make it
+[01.12.21 12:12:55] frances: 3FtoGEF5NQo96jh5yPMYnmNowVZh6XdCTQ left here bro
+[01.12.21 14:59:57] weldon: Yeah, they're good.
+[10.12.21 17:44:55] weldon: ping!)
+[10.12.21 19:59:37] weldon: hey Franz, are you online?
+[17.12.21 14:40:50] weldon: hi
+[17.12.21 14:41:34] weldon: hey, does s have another toad now?
+[17.12.21 15:05:02] frances: Hi, he rarely gets in touch
+[17.12.21 15:44:05] weldon: seldom but well) under the new username
+[22.12.21 12:50:16] weldon: hi
+[22.12.21 13:35:19] frances: hi
+[22.12.21 13:35:33] weldon: rfr ltk&
+[22.12.21 13:35:37] weldon: how are you?
+[22.12.21 13:36:31] weldon: is it a prank on newbies or is it real dick?
+[22.12.21 16:03:44] weldon: i started a card today (no full name) from RSHB, how do i deal with this bank for transfers?
+[23.12.21 10:39:55] frances: I am not ready to answer) I have not encountered
+[12/23/221 10:39:55] frances: hi)
+[12/23/221 10:40:15] weldon: hi
+[12/28/12/21 10:08:00] weldon: hi
+[28.12.21 10:08:34] weldon: do we know anything about salaries?)
+[28.12.21 13:55:10] weldon: 0.02 BTC Wallet for payment:
+3CdqCUdH26xaCENLyJZtsX1q8iuPfXRF37
+[12/28/221 14:07:44] frances: hi!
+[12/28/221 14:07:48] frances: ready!
+[28.12.21 14:16:34] weldon: that's weird
+[28.12.21 14:17:22] frances: 3CdqCUdH26xaCENLyJZtsX1q8iuPfXRF37 all gone, but still have confirmations
+[28.12.21 14:17:26] frances: wait
+[28.12.21 14:17:33] weldon: okay.
+[29.12.21 07:52:56] weldon: ghbdtn
+[29.12.21 07:53:01] weldon: hi.
+[30.12.21 14:15:25] weldon: ghbdtn
+[30.12.21 14:15:28] weldon: hello
+[30.12.21 14:15:47] weldon: no holiday bonuses this year?)
+[30.12.21 20:18:35] frances: hi!
+[30.12.21 20:18:42] frances: no it seems bro...
+[30.12.21 20:18:59] frances: the chief wrote that he's not satisfied with the results, and if there will be bonuses, it will be at the request of teamsters...
+[30.12.21 20:39:24] weldon: ok
+[30.12.21 20:41:17] frances: such a fucking sad story...
+[30.12.21 20:41:44] frances: Buza went on vacation a bit early, everybody writes to me about bonuses, I'm like a parrot telling the same thing to everybody...
+[30.12.21 20:41:57] frances: I thought he would take the hit himself :grin:
+[30.12.21 20:44:47] weldon: )no money, but you hang in there)
+[14.01.22 08:16:51] weldon: hey, again, did you read the news he sank the clown?
+[14.01.22 08:17:45] weldon: where is silver not aware?
+[14.01.22 08:38:27] frances: Hi.
+[14.01.22 08:38:31] frances: What's the news?
+[14.01.22 08:38:34] frances: Give me the link
+[14.01.22 08:38:50] weldon: newbie chat room
+[14.01.22 08:39:08] weldon: got a link?
+[14.01.22 08:39:23] frances: ah
+[14.01.22 08:39:27] frances: Yeah, I read that, sure.
+[14.01.22 08:39:30] frances: but all is quiet so far
+[14.01.22 08:39:33] frances: I'm monitoring
+[14.01.22 08:39:43] frances: vacation storm)
+[14.01.22 08:39:48] frances: but he's in touch with someone
+[14.01.22 08:40:01] weldon: okay
+[14.01.22 08:40:12] weldon: will be?)
+[14.01.22 08:40:17] weldon: *zp
+[14.01.22 08:41:56] frances: you will
+[14.01.22 08:47:35] weldon: "After that I'll move on to the second phase and start giving trouble to those collectives, for the benefit of which the collective, led by silver, works. "
+no easy santa masa faqa
+[14.01.22 09:35:28] frances: Well, it's quiet so far
+[24.01.22 05:48:19] weldon: hi, did slver show up?
+[24.01.22 05:50:49] weldon: any sick days? I feel like crap, but I'll try to stay online
+[24.01.22 05:53:00] frances: Hi, sometimes
+[24.01.22 05:53:03] frances: sylver's on vacation
+[24.01.22 05:53:20] frances: if you get sick, write down from what date and for how long, at least approximately
+[24.01.22 05:53:27] frances: and if there are any urgent tasks, just let me know too
+[24.01.22 05:57:47] weldon: it seems better now, last week my daughter was discharged from hospital, mother and father were put in...
+as for the tasks - still the same parsing with antic, i can clean the files later
+[24.01.22 05:58:30]
+[24.01.22 06:01:00] frances: got it
+[24.01.22 06:01:07] frances: and with antic, how it goes as a result?
+[24.01.22 06:01:10] frances: got something to show?
+[24.01.22 06:02:35] weldon: corrected DateTimeFormat.cpp and jsdate.cpp files, and put them into git
+[24.01.22 06:04:36] frances: And you set some kind of deadline for antic?
+[24.01.22 06:04:46] frances: it's just from the fall, and it was not there by the end
+[24.01.22 06:04:52] frances: there's no fucking trike anymore)))))
+[24.01.22 06:05:30] weldon: the most interesting, the assembled (ready) antique (hammer gave) seems to be different from those files that in the git (which are still tunri laid out)
+[24.01.22 06:06:46] weldon: so antique is not needed now, or what?
+[24.01.22 06:09:07] weldon: the project is huge, of course, almost 4 GB of sources weighs
+[24.01.22 06:25:16] frances: yes
+[24.01.22 06:25:22] frances: there will be new software for it
+[24.01.22 06:25:57] weldon: ok, I'm working, I'll put it into git
+[26.01.22 15:10:32] weldon: hello
+[02.02.22 09:55:23] weldon: ghbdtn
+[02.02.22 09:55:27] weldon: hello
+[02.02.22 10:03:35] weldon: At the moment, out of 33 diffs:
+	
+		The 7 difs are disabled (because they are not needed):
+			1 NIGHTLY_68_END/.gitignore
+			2 NIGHTLY_68_END/.hgtags
+			9 NIGHTLY_68_END/browser/config/version.txt
+			10 NIGHTLY_68_END/browser/config/version_display.txt
+			11 NIGHTLY_68_END/config/check_spidermonkey_style.py
+			28 NIGHTLY_68_END/moz.build can/should be uncommented later.
+			31 NIGHTLY_68_END/third_party/python/redo/redo.egg-info/SOURCES.txt
+			
+		Nineteen divisions completed:
+			3 NIGHTLY_68_END/browser/app/moz.build
+			4 NIGHTLY_68_END/browser/app/profile/firefox.js
+			5 NIGHTLY_68_END/browser/app/winlauncher/LauncherProcessWin.cpp
+			6 NIGHTLY_68_END/browser/base/content/browser.js
+			7 NIGHTLY_68_END/browser/base/content/navigator-toolbox.inc.xhtml former NIGHTLY_68_END/browser/base/content/browser.xul
+			8 NIGHTLY_68_END/browser/base/content/tabbrowser.js
+			13 NIGHTLY_68_END/dom/canvas/CanvasRenderingContext2D.cpp
+			18 NIGHTLY_68_END/js/src/builtin/intl/DateTimeFormat.cpp
+			19 NIGHTLY_68_END/js/src/jsapi-tests/moz.build
+			20 NIGHTLY_68_END/js/src/jsdate.cpp
+			21 NIGHTLY_68_END/js/src/moz.build
+			22 NIGHTLY_68_END/dom/media/webrtc/jsapi/PeerConnectionImpl.cpp former NIGHTLY_68_END/media/webrtc/signaling/src/peerconnection/PeerConnectionImpl.cpp
+			23 NIGHTLY_68_END/media/webrtc/jsapi/PeerConnectionImpl.h former NIGHTLY_68_END/media/webrtc/signaling/src/peerconnection/PeerConnectionImpl.h
+			24 NIGHTLY_68_END/modules/libpref/init/all.js
+			25 NIGHTLY_68_END/modules/libpref/moz.build
+			27 NIGHTLY_68_END/modules/libpref/Preferences.cpp
+			30 NIGHTLY_68_END/README.txt
+			32 NIGHTLY_68_END/toolkit/xre/nsAppRunner.cpp !!! 3rd hunk made *aExitFlag = false !!!
+			33 NIGHTLY_68_END/widget/windows/nsAppShell.cpp
+			
+		There are 7 diffs in operation:
+			12 NIGHTLY_68_END/dom/base/nsPluginArray.cpp
+			14 NIGHTLY_68_END/dom/plugins/base/moz.build
+			15 NIGHTLY_68_END/dom/webidl/Navigator.webidl
+			16 NIGHTLY_68_END/dom/webidl/Node.webidl
+			17 NIGHTLY_68_END/dom/webidl/Window.webidl
+			26 NIGHTLY_68_END/modules/libpref/nsIPrefBranch.idl
+			29 NIGHTLY_68_END/netwerk/protocol/http/HttpBaseChannel.cpp
+[02.02.22 10:10:03] frances: hi
+[02.02.22 10:10:05] frances: all to git :)
+[02.02.22 10:25:47] weldon: casted
+[02.02.22 10:26:55] weldon: Stern as GDP became?)
+[02.02.22 10:44:08] frances: Mm-hmm.
+[02.02.22 10:44:12] frances: paranoid
+[02.02.22 10:45:33]
+[02.02.22 20:34:34] weldon: what about salary?
+[03.02.22 10:35:22] frances: hello, not yet
+[04.02.22 14:25:11] weldon: hi.
+[04.02.22 14:25:27] weldon: any news?
+[08.02.22 09:29:13] weldon: hello
+[08.02.22 10:40:27] frances: hello
+[21.02.22 15:24:46] weldon: hey, any messages in toad?
+[21.02.22 15:41:22] frances: hello
+[21.02.22 15:41:24] frances: yes
+[21.02.22 15:41:55] weldon: ok, and when will it all be off? will it even work tomorrow?
+[21.02.22 15:42:33] frances: Yeah, in theory.
+[21.02.22 15:42:37] frances: It'll work another day
+[21.02.22 15:42:46] weldon: okay
+[21.02.22 15:43:05] weldon: you and adam did that?
+[21.02.22 15:43:46] frances: yes
+[21.02.22 15:43:59] frances: Stay in touch
+[21.02.22 15:43:59] weldon: okay.
+[21.02.22 15:44:03] frances: I think we got it.
+[21.02.22 15:44:13] weldon: okay.

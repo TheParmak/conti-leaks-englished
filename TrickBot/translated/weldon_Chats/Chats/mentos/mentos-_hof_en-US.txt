@@ -1,0 +1,163 @@
+2020-06-22T07:47:55 mentos -> hof
+ghbdtn
+
+2020-06-22T07:48:13 hof -> mentos
+hi
+
+2020-06-23T07:24:57 mentos -> hof
+hi
+
+2020-06-26T13:37:20 hof -> mentos
+Hi, I don't see you online
+
+2020-06-26T13:38:29 hof -> mentos
+bouza asks to make an option that in studio in the toolchain there is a choice - normal klang and obfuscator
+
+2020-06-26T13:38:32 hof -> mentos
+https://github.com/Farwaykorse/VS_Clang
+
+2020-06-26T13:39:02 hof -> mentos
+you can base it on that, change the clang paths
+
+2020-06-26T13:39:29 hof -> mentos
+[16:38:04] <buza> you have to adjust paths in target files there, the path is taken from the registry to the compiler
+
+2020-07-02T17:35:40 hof -> mentos
+Hi, I don't see you online
+
+2020-07-02T17:35:40 hof -> mentos
+bouza asks to make an option that in studio in the toolchain there is a choice - normal klang and obfuscator
+
+2020-07-02T17:35:40 hof -> mentos
+https://github.com/Farwaykorse/VS_Clang
+
+2020-07-02T17:35:40 hof -> mentos
+you can base it on that, change the clang paths
+
+2020-07-02T17:35:40 hof -> mentos
+[16:38:04] <buza> you have to adjust paths in target files there, the path is taken from the registry to the compiler
+
+2020-07-02T17:36:59 mentos -> hof
+hi
+
+2020-07-03T07:53:47 mentos -> hof
+hi
+
+2020-07-03T07:54:30 hof -> mentos
+hi
+
+2020-07-06T07:16:57 hof -> mentos
+hi
+
+2020-07-06T07:17:02 hof -> mentos
+how's it going?
+
+2020-07-06T07:17:27 mentos -> hof
+hi
+
+2020-07-06T07:17:33 mentos -> hof
+compiled by
+
+2020-07-06T07:17:38 mentos -> hof
+Readme.txt for installer VS_LLVM42.rar and integration of obfuscator-llvm-4.0 into Visual Studio
+	Download and unpack VS_LLVM42.rar Password dO2DdZOqT!{0b*XH*Y}*L>BbqVK<0E>*
+	Run CMD as admin
+	2. cd "the path" where the unpacked VS_LLVM42.rar installer is located
+	3. install (there are 3 keys: --full --lite --uninstall):
+			install integration into Visual Studio obfuscator-llvm-4.0 already built, which should be located in C:\llvm4 (C:\llvm4\build\Release binary)
+			install -full unpack the built obfuscator into C:\llvm4 and integrate it into Visual Studio (useful for those who want to rebuild the obfuscator themselves)
+			install --lite unpacking the built obfuscator (binary only) into C:\llvm4\build\Release and integration into Visual Studio
+			install --uninstall uninstall obfuscator-llvm-4.0 from Visual Studio (the folder C:\llvm4 remains)
+	4. customizing the obfuscator and compiling your own C/C++ code:
+		- preferably disable/minimize C/C++ optimization (O2 -> Od, this will improve efficiency of obfuscation)
+		- add "-mllvm -fla -mllvm -sub -mllvm -bcf" obfuscation keys to the C/C++ command line
+		- If during compilation the keys get swore, they must be disabled (in VS17/VS15 fpic in the "C/C++ All parameters" project properties, in VS19 permissive- and/or diagnostics:column)
+	5. That's basically it. You can do everything manually, if something went wrong, ReadmeEx.txt
+
+2020-07-07T07:38:08 mentos -> hof
+hi
+
+2020-07-07T07:38:31 hof -> mentos
+hi
+
+2020-07-10T07:38:48 hof -> mentos
+Where is the archive with the installer itself?
+
+2020-07-14T08:03:03 mentos -> hof
+hi
+
+2020-07-23T10:31:00 mentos -> hof
+hi
+
+2020-07-30T13:28:20 hof -> mentos
+hi
+
+2020-07-30T13:28:25 hof -> mentos
+how's the rush?
+
+2020-07-30T13:28:33 mentos -> hof
+hi
+
+2020-07-31T06:20:40 mentos -> hof
+Hi
+
+2020-08-12T10:46:23 mentos -> hof
+Hi
+
+2020-08-17T16:17:38 mentos -> hof
+hi
+
+2020-08-18T09:17:42 mentos -> hof
+ghbdtn
+
+2020-08-18T09:17:45 mentos -> hof
+hi
+
+2020-08-18T09:17:51 hof -> mentos
+hi
+
+2020-08-21T07:48:41 mentos -> hof
+hi
+
+2020-08-23T14:08:23 mentos -> hof
+hi
+
+2020-08-24T13:05:22 mentos -> hof
+hi
+
+2020-08-25T07:44:15 mentos -> hof
+ghbdtn
+
+2020-08-26T10:57:20 mentos -> hof
+Hello
+
+2020-08-27T09:42:58 mentos -> hof
+hi
+
+2020-08-27T09:45:26 mentos -> hof
+Hi
+
+2020-08-28T10:37:51 mentos -> hof
+hi
+
+2020-08-31T08:03:44 mentos -> hof
+hi
+
+2020-09-17T18:18:08 mentos -> hof
+ping, are the messages getting through?
+
+2020-09-17T18:33:39 hof -> mentos
+hiYes.
+
+2020-09-17T18:34:02 mentos -> hof
+ok
+
+2020-10-09T07:05:02 mentos -> hof
+hi
+
+2020-10-09T07:05:13 hof -> mentos
+hi
+
+2020-10-26T06:28:10 mentos -> hof
+hi
+

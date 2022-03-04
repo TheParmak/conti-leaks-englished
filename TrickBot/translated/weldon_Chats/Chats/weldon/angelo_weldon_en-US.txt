@@ -1,0 +1,210 @@
+[28.07.21 14:33:20] angelo: hi !
+[28.07.21 14:33:29] angelo: are you a super duper ?
+[28.07.21 14:33:30] weldon: hi
+[28.07.21 14:33:48] weldon: why?
+[28.07.21 14:34:03] angelo: superbrowser
+[28.07.21 14:34:20] weldon: Yeah.
+[28.07.21 14:34:37] weldon: silver already gave you something?)
+[28.07.21 14:34:50] angelo: no - Franz
+[28.07.21 14:34:53] angelo: and adam said
+[28.07.21 14:35:08] angelo: although I only met SB yesterday
+[28.07.21 14:37:36]
+[28.07.21 14:37:50] angelo: I don't know
+[28.07.21 14:37:59] angelo: I was told to find out what the problem was
+[28.07.21 14:38:05] weldon: not to tell about Olympics)
+[28.07.21 14:38:06] angelo: and like to test
+[28.07.21 14:38:16] angelo: no, i don't watch that
+[28.07.21 14:39:43] angelo: "find out what's the problem" - what problem? I couldn't collect - because many things are out of date...
+[28.07.21 14:40:21] angelo: bro in the shower not ipu
+[28.07.21 14:40:26] angelo: I need it to work)
+[28.07.21 14:40:29] angelo: maybe so
+[28.07.21 14:40:33] angelo: tell me how to help
+[28.07.21 14:40:37] angelo: do what
+[28.07.21 14:40:39] angelo: where to poke
+[28.07.21 14:40:52] angelo: SB of Zeus should work ideally
+[28.07.21 14:41:28] weldon: with Silver we sat around - and decided to go another way - in short, there is (just assembled) patch
+[28.07.21 14:42:07] weldon: here - it will be necessary to roll it on the new FF and test what works / does not work
+[28.07.21 14:42:37] angelo: this patch will be in further work with SB ?
+[28.07.21 14:42:45] angelo: let's test it
+[28.07.21 14:43:34] weldon: I can't right now - I'll be gone for a while
+[28.07.21 14:43:48] angelo: ok
+[28.07.21 16:07:32] weldon: ping
+[28.07.21 16:09:00] angelo: ping
+[28.07.21 16:09:20] weldon: okay, here's the deal
+[28.07.21 16:09:37] weldon: one minute
+[28.07.21 16:14:27] weldon: from silver
+
+8:55 AM
+In short, the idea is to port the developments to a fresh Mozilla
+or to the ESR version of mosilla
+1. make a diff against the mosilla version which is used to build SB
+2. patch the latest mosilla version with this diff and see what comes out
+of course this is the more painful way
+[28.07.21 16:15:08] weldon: your task is to make a clean patch
+define the base version on which the patch is applied and you get the tree we have
+when you have a clean patch, we'll try to put it on a fresh FF
+then we'll
+1) solve the "your browser is out of date" problem and get all the latest fancy features.
+2) you'll be able to build with modern toolchain without "there's no such a library anymore"
+[28.07.21 16:16:03] weldon: you have to test it)
+[28.07.21 16:17:15] angelo: wow.
+[28.07.21 16:18:01] angelo: so now for sb functionality you have to do exactly c. above, right ?
+[28.07.21 16:18:50] angelo: you were unlucky - tight tester]
+[28.07.21 16:18:54] angelo: i
+[28.07.21 16:19:03]
+[28.07.21 16:19:15] weldon: you, as I understand, have to test it)
+[28.07.21 16:19:24] angelo: yeah
+[28.07.21 16:19:28] angelo: sure
+[28.07.21 16:19:34] angelo: and you already hinted patch ?
+[28.07.21 16:19:37] angelo: or in progress
+[28.07.21 16:20:22] weldon: no - just made it minimal today, BUT it still needs to be minimized
+[28.07.21 16:20:53] weldon: yesterday it was 700 Mb, today it is 7 Mb
+[28.07.21 16:21:01] angelo: Fig
+[28.07.21 16:21:04] angelo: you cut the code
+[28.07.21 16:21:06] angelo: 100 times
+[29.07.21 08:52:44] angelo: hi.
+[29.07.21 08:52:51] angelo: can you help a fool
+[29.07.21 08:53:07] angelo: i don't get it, what should superbrowser do?
+[29.07.21 08:53:38] angelo: here it loads, loaded config browser and I see ?!
+[29.07.21 09:14:40] weldon: hi
+[29.07.21 09:15:07] angelo: everything, I got it already
+[29.07.21 09:15:17] angelo: you're not a superbrowser developer
+[29.07.21 09:15:22] angelo: I just can't understand shit
+[29.07.21 09:15:28] angelo: how it should work ideally
+[29.07.21 09:16:18] weldon: )
+[29.07.21 09:16:37] weldon: my speakers were off
+[29.07.21 09:16:46] weldon: did silver tell you?
+[29.07.21 09:18:15] angelo: he told me to go to Hammer
+[29.07.21 09:18:17] angelo: waiting for him
+[29.07.21 09:18:46] weldon: I have this task
+[29.07.21 09:18:48] weldon: silver 2:25 PM
+	your task is to make a clean patch
+	define a base version on which the patch will be applied and you'll get the tree we have
+	when you have a clean patch, we will try to put it on a fresh FF
+	then we'll
+		1) solve the "your browser is out of date" problem and get all the latest fancy features.
+		2) you'll be able to build with modern toolchain without "there's no such a library anymore"
+[29.07.21 09:20:50] angelo: yeah, i got it
+[29.07.21 09:20:52] angelo: got it bro
+[03.08.21 09:52:05] angelo: hey bro!
+[03.08.21 09:52:16] angelo: sharing what's up with the superbrowser replacement
+[03.08.21 10:05:28] weldon: hello
+[03.08.21 10:05:38] weldon: mastering the patch
+[03.08.21 10:05:53] angelo: how long do you think this process will take?
+[03.08.21 10:06:18] weldon: dunno, looks like
+[03.08.21 10:06:56] angelo: there's a guy over there pining for a superbrowser
+[03.08.21 10:07:12] weldon: they use old sb?
+[03.08.21 10:09:43] angelo: we have a problem at the import
+[03.08.21 10:09:48] angelo: grabber broke down
+[03.08.21 10:10:13] weldon: well, that's for brooks
+[03.08.21 10:12:43] angelo: i know
+[03.08.21 10:12:45] angelo: waiting
+[03.08.21 10:12:48] angelo: waiting for everyone!)
+[01.10.21 09:54:23] weldon: hello
+[01.10.21 09:54:32] angelo: hello
+[01.10.21 09:55:09] weldon: so, Silver tightened the screws, now he can't play bivis and buthead in the same chat room)))
+[01.10.21 09:55:40] angelo: ta no
+[01.10.21 09:55:55] angelo: let's finish this graber and we'll do some jokes
+[01.10.21 09:56:01] angelo: or else you'll get fucked up
+[01.10.21 09:57:04] weldon: graber, is that what you're discussing in trick?
+[01.10.21 09:57:25] angelo: yeah
+[01.10.21 09:57:28] angelo: well, not us
+[01.10.21 09:57:31] angelo: I'm just here sideways
+[01.10.21 09:57:53] weldon: I look at it from time to time, but I haven't understood - is it connected to antic somehow?
+[01.10.21 09:58:17] angelo: what is antique ?!
+[01.10.21 09:58:26] angelo: I still can't get used to all names
+[01.10.21 09:58:26] weldon: or is it an ancient antique?
+[01.10.21 09:58:45] weldon: antic is superbrowser
+[01.10.21 09:59:20] weldon: or all-vodobrowser
+[01.10.21 09:59:32] angelo: noooo
+[01.10.21 09:59:33] weldon: pseudobrowser
+[01.10.21 09:59:34] weldon: /* nsPseudoPluginTag */
+[01.10.21 09:59:48] angelo: there is a problem with robber looting
+[01.10.21 09:59:54] angelo: it has cookies and accesses or not
+[01.10.21 10:00:02] angelo: depending on how much he robbed
+[01.10.21 10:04:15] angelo: i know what you mean - i haven't read general
+[01.10.21 10:09:53] weldon: what is "general" ?
+[01.10.21 10:10:02] weldon: and you about the chat room)
+[01.10.21 10:10:02] angelo: well, main chat room
+[01.10.21 10:10:05] angelo: yeah
+[01.10.21 10:10:13] angelo: fucking hurt Silver's words in places I tell you
+[01.10.21 10:10:30] weldon: )))) paradox did not read)))
+[01.10.21 10:10:43] angelo: well, yeah]
+[01.10.21 10:10:47] angelo: missed it =)
+[01.10.21 10:11:17] weldon: but liked your message)
+[01.10.21 10:11:31] angelo: kinda checked in)
+[01.10.21 10:15:32] weldon: why - it's really loose / loose) I've read the trick before, where adam seemed to be mad that no one answers, or rather one, then another online, seem to have decided to tighten the screws to make fixers work)
+[01.10.21 10:16:31] angelo: well, adam's problem is adam himself
+[01.10.21 10:16:41] angelo: he's the one now
+[01.10.21 10:17:01] angelo: tiplid should work too, not be silent for hours when asked
+[01.10.21 10:17:34] angelo: and then after the beating he gives a shit and shows his bad mood because of the absence of people and the desire to work
+[01.10.21 10:21:36] weldon: )
+[01.10.21 10:21:56] angelo: and silver is wrong as a tylid
+[01.10.21 10:22:04] angelo: he gave the stick but forgot the carrot
+[01.10.21 10:22:11] angelo: without it this system doesn't work
+[01.10.21 10:23:20] angelo: they think for nothing that our group with our specificity works outside of business rules and regulations
+[01.10.21 11:44:31] angelo: i can hardly make myself that you don't write the continuation of Kermit's joke, and the name is bad ))
+[05.02.22 14:15:42] weldon: no zp?
+[15.02.22 13:11:22] angelo: hello
+[15.02.22 13:11:33] weldon: recovered?
+[15.02.22 13:11:53] angelo: yeah, kinda
+[15.02.22 13:12:05] angelo: just tired like an old man
+[15.02.22 13:12:05] weldon: how long is it?
+[15.02.22 13:12:08] weldon: covid?
+[15.02.22 13:12:18] angelo: mm-hmm.
+[15.02.22 13:12:22] angelo: it took him a week
+[15.02.22 13:12:28] angelo: but it's been like shit for 2 weeks
+[15.02.22 13:12:39] angelo: my head is foggy, and I'm as tired as a loader
+[02/15/222 13:13:08] weldon: well, I don't know - it's the way it is with my wife, my daughter is sick for 3 weeks already
+[02/15/222 13:13:25] angelo: uh, sorry.
+[02/15/222 13:13:31] angelo: mine seems to have recovered quickly
+[02/15/222 13:13:32] weldon: he's in a fog.
+[15.02.22 13:13:39] angelo: yeah
+[15.02.22 13:13:47] angelo: Omicron hits CNS
+[15.02.22 13:13:50] weldon: and sleep badly
+[15.02.22 13:13:55] angelo: yeah
+[15.02.22 13:14:02] angelo: the main thing is that everything's okay afterwards
+[15.02.22 13:14:14] angelo: not a few people who have strong depression or irritation
+[15.02.22 13:14:17] weldon: did you go to the hospital?
+[15.02.22 13:14:41] weldon: or at home?
+[15.02.22 13:14:57] angelo: at home
+[15.02.22 13:15:03] angelo: It was okay, I guess.
+[15.02.22 13:15:08] angelo: couple of days 40
+[15.02.22 13:15:15] angelo: and everybody had headaches all day long
+[15.02.22 13:15:18] angelo: what about you?
+[15.02.22 13:15:28] weldon: tin, all the old-timers took over Nasty
+[15.02.22 13:15:52] weldon: also at home, wife only goes to check on him sometimes
+[15.02.22 13:16:40] weldon: do you know anything about salaries?
+[15.02.22 13:16:52] angelo: do you have omicron ?
+[15.02.22 13:16:56] angelo: nothing yet
+[15.02.22 13:17:02] angelo: but I think the rule is already worked out
+[15.02.22 13:17:07] angelo: +- 5 days
+[15.02.22 13:17:30] weldon: covid, they texted the result
+[15.02.22 13:17:59] angelo: we had a new one
+[15.02.22 13:18:09] angelo: it makes your head hurt
+[15.02.22 13:19:00] weldon: there are millions of mutations, my wife and i have headaches too, and my whole body hurts as if a tractor ran over it
+[02/15/222 13:19:21] angelo: that sucks!
+[15.02.22 13:19:27] angelo: the baby is fucked up
+[15.02.22 13:20:11] weldon: no, 3 years old and not a bad temperature, he won't even go to the kindergarten
+[15.02.22 13:20:23] weldon: not taken
+[15.02.22 13:21:00] angelo: we were so sick last year
+[15.02.22 13:21:05] angelo: they took all of mine to the hospital
+[15.02.22 13:21:07] angelo: 40-41
+[15.02.22 13:21:18] angelo: still didn't tell me what was the fight
+[15.02.22 13:21:23] angelo: 10 days on IV fluids
+[15.02.22 13:21:32] weldon: yeah
+[15.02.22 13:21:51] angelo: yeah, and what the fuck are you taking blood for if you can't even diagnose
+[15.02.22 13:21:59] weldon: All right, I'll go have some arbidol and nais
+[15.02.22 13:22:47] angelo: come on!
+[15.02.22 13:22:53] angelo: get well !!!!!!!!!!!!!!!!!!
+[15.02.22 13:23:03] weldon: thank you.
+[16.02.22 12:07:05] weldon: ping
+[16.02.22 12:07:31] angelo: hey
+[16.02.22 12:07:41] weldon: we have AV server, right?
+[16.02.22 12:07:55] angelo: well, yes there are farms
+[16.02.22 12:08:05] angelo: haven't used it in a while
+[16.02.22 12:08:19] weldon: or you prefer dinchek?
+[16.02.22 12:08:34] angelo: dincheck on static
+[16.02.22 12:08:44] weldon: sure
+[16.02.22 12:08:47] angelo: and it's not like dinky is better, it's avcek
+[16.02.22 12:08:57] angelo: like they said dink is the best

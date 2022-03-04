@@ -1,0 +1,233 @@
+2020-07-06T09:16:55 buza -> naned
+hi
+
+2020-07-06T09:17:00 naned -> buza
+hi
+
+2020-07-06T09:17:10 buza -> naned
+please enable the otr plugin
+
+2020-07-06T09:17:14 buza -> naned
+off the record messaging
+
+2020-07-06T09:17:30 naned -> buza
+second
+
+2020-07-06T09:17:30 buza -> naned
+and restart the client
+
+2020-07-06T09:17:37 naned -> buza
+ok
+
+2020-07-06T09:19:04 naned -> buza
+so
+
+2020-07-06T09:19:16 naned -> buza
+something I can't find off the record messaging
+
+2020-07-06T09:19:21 buza -> naned
+what client?
+
+2020-07-06T09:19:29 naned -> buza
+psi+
+
+2020-07-06T09:19:38 buza -> naned
+it should be the default
+
+2020-07-06T09:20:37 naned -> buza
+then I turn on the plugin and restart it?
+
+2020-07-06T09:20:52 buza -> naned
+yes
+
+2020-07-06T09:21:39 naned -> buza
+ready
+
+2020-07-06T09:22:10 buza -> naned
+private correspondence doesn't start
+
+2020-07-10T08:33:51 naned -> buza
+Hey, did you get a look at the report?
+
+2020-07-13T08:42:12 naned -> buza
+Gh
+
+2020-07-13T08:42:14 naned -> buza
+Hi
+
+2020-07-15T15:19:28 naned -> buza
+Hi, there's a problem, I've been struggling with it for almost a day, maybe you can help
+
+2020-07-15T15:19:52 naned -> buza
+The point is, I want to use that driver through IOCTL
+
+2020-07-15T15:20:10 naned -> buza
+found all the codes, checked in ide, everything is ok
+
+2020-07-15T15:20:47 naned -> buza
+Trying to work through a bunch of CreateFile, DeviceIoControl
+
+2020-07-15T15:21:14 naned -> buza
+I get the handle, but when I call DeviceIoControl = false
+
+2020-07-15T15:22:56 naned -> buza
+GetLastError returns 87, msdn writes ERROR_INVALID_PARAMETER
+
+2020-07-15T15:23:18 naned -> buza
+Can you tell me what could be the problem?
+
+2020-07-15T15:34:57 naned -> buza
+I figured it out.
+
+2020-07-16T07:19:09 naned -> buza
+Hi, there's a problem, I've been struggling with it for almost a day, maybe you can help
+
+2020-07-16T07:19:09 naned -> buza
+The point is, I want to use that driver through IOCTL
+
+2020-07-16T07:19:09 naned -> buza
+found all the codes, checked in ide, everything is ok
+
+2020-07-16T07:19:09 naned -> buza
+Trying to work through a bunch of CreateFile, DeviceIoControl
+
+2020-07-16T07:19:09 naned -> buza
+I get the handle, but when I call DeviceIoControl = false
+
+2020-07-16T07:19:09 naned -> buza
+GetLastError returns 87, msdn writes ERROR_INVALID_PARAMETER
+
+2020-07-16T07:19:09 naned -> buza
+Can you tell me what could be the problem?
+
+2020-07-16T07:19:09 naned -> buza
+I figured it out.
+
+2020-07-17T08:39:12 naned -> buza
+Hi, a question arose how to output the result of the check? Send it somewhere?
+
+2020-07-30T13:48:56 naned -> buza
+Hi, I think I figured out the configs of the chipset, in fact I screwed up, there are a lot of chipsets, configs are the same, I think I nailed it, on the weekend I will check on different chipsets to run and check how the register reading works
+
+2020-07-30T13:49:13 naned -> buza
+I wanted to ask about wrapping the functionality in a dll
+
+2020-07-30T13:49:17 buza -> naned
+Yep
+
+2020-08-21T08:55:40 naned -> buza
+Hi, I already wrote to Hof, we discussed it, but since you came by again I will consult
+
+2020-09-01T09:36:54 naned -> buza
+Hi, I finished everything, debugged it, made safe write to flash, but so far it's all console application (purely for debugging convenience), plus I moved all libs to project with dll, and wrapped all functionality in static methods of class, which was in hoff example, The only thing left to figure out how it will work, how will call the functions of checking the platform, reading / writing flash, I understand the function Control, but for each function to create a new thread or some other mechanism, + all need to work from the administrator, whether checking IsUserAnAdmin of SHELL32.dll
+
+2020-09-02T12:52:56 buza -> naned
+Hi all.
+All developers, including the web, please skim me a short list of your programming language and stack skills.
+Thank you.
+
+2020-09-02T13:05:41 naned -> buza
+Hi
+Languages:
+C/C++ (QT(C++) desktop development for Windows, now chipset checker, UEFI modules for debugging (C), WinAPI(got savvy lately).
+Python (IDA Pro modules/plugins, prototyping).
+ASM (inline level, small libraries with a few functions).
+
+Skills:
+Experience reversing system software (UEFI)
+GIT
+
+2020-09-02T13:06:06 buza -> naned
+accepted
+
+2020-09-02T13:06:07 buza -> naned
+thanks
+
+2020-09-08T08:59:11 naned -> buza
+Hi, I kinda fixed it, it was a flush, I even had to unsolder the flash and reflash it, I accidentally initialized the wrong offset and wrote to the left PCI space, then a few days I just launched my libu and everything froze. the computer turned into a brick, I found out that I initialized the write protection on the stick, I initialized it wrong bytes inverted, so it was like 10 days of hell)
+
+2020-09-10T13:00:20 naned -> buza
+Hi, here's a question, what do testers test code on? On real machines or on virtual ones?
+
+2020-09-11T07:48:16 naned -> buza
+Hi, studied the most common virtuals, they all have implemented 1-2 chipsets shaggy years (which is understandable, they do not emulate hardware, so it makes no sense to update them + it's not so easy), the funny thing is that I understand there are controllers, but no emulation devices themselves (ie, I like to write to the flash, but nothing happens)
+
+2020-09-14T07:27:29 buza -> naned
+Colleagues, happy professional holiday)
+LET A = A + 1
+
+2020-09-14T08:22:26 buza -> naned
+Colleagues, happy past professional holiday)
+LET A = A + 1
+
+2020-09-14T08:23:40 naned -> buza
+Thank you, and happy holiday to you too!
+
+2020-09-15T09:15:45 naned -> buza
+Hi, a little clarification on the release, the HOWTO for the module says that 32 and 64 bit versions are needed, is it assumed that they will run ONLY on the respective OS sizes? The question came up because the x32 driver only runs on the 32-bit OS
+
+2020-09-15T09:16:26 naned -> buza
+or you need to check the bit depth and install the service with the corresponding system driver
+
+2020-09-16T08:26:48 naned -> buza
+Hi, I prepared everything, do you want me to send you the archive with the release?
+
+2020-09-18T11:12:17 naned -> buza
+Hi, a little clarification, are we just tasked with running arbitrary code, before running the antivirus, or preventing it from running at all?
+
+2020-09-24T08:17:28 naned -> buza
+Hi, has anyone worked with the registry as a file, there is no registry parser or similar project, there is a python lib on the open source, but it takes a long time to port it to C
+
+2020-09-24T08:50:04 naned -> buza
+Listen, what if we still run the code that brings up the service to rewrite the firmware, maybe we create the right registry entry at this point, and then just drop any file from under uefi
+
+2020-10-05T14:46:18 buza -> naned
+https://habr.com/ru/company/kaspersky/blog/522128/
+
+2020-10-05T16:47:07 buza -> naned
+https://habr.com/ru/company/kaspersky/blog/522128/
+
+2020-10-05T16:53:18 naned -> buza
+Hi, yes the dudes did what I am doing now, I managed to build a driver with a minimal wrapper, I have already tested it all ok
+
+2020-10-05T16:54:40 naned -> buza
+So far, I use the efi shell and my driver to get into any FS, the fact that they have built this driver themselves says the driver's guid, which almost matches their neighboring module
+
+2020-10-06T10:03:46 naned -> buza
+Hi listen, wanted to clarify an organizational question, and when will my training end in terms of salary?
+
+2020-10-09T13:09:23 naned -> buza
+Hi, wanted to clarify, there are no restrictions on using QT classes?
+
+2020-10-21T08:24:57 naned -> buza
+Hi, a little report on the results of running the module.
+All worked ok, however, it turned out that the guys did not read from the passed buffer PlatformCheckStatus - this is a variable in which the result of checking the ability to remove the protection from the flash drive, I have all this time tested on other computers and slightly reworked the algorithm checks and re-sent to Hof a new module.
+Of the fact that they have counted once was the protection that can not be removed, but again, it can be implemented incorrectly and I did a check for it, also should take into account that this is the 9th or 10th generation chipset (2018), such fresh bios from known vendors in 99% have protection against overwriting.
+Now about what information we were able to collect:
+     In fact, this chipset and processor versions.
+     Manually analyzing what's chipsets conclusions such - 30% of chipsets 6-7-8 generations, just the ones that in 80% of cases should be vulnerable to flash overwriting. By the way a sufficient number of server boards.
+
+Now Hoff should send the new version of the module for testing and also collect the result of verification of PlatformCheckStatus overwritability
+
+2020-10-28T13:34:48 naned -> buza
+there's a trivial overflow, but since the stack is not executable + canary there you need to f**k up to do something of your own, and when you don't know what's really going on there, it becomes quite a challenge
+
+2020-10-29T15:12:14 naned -> buza
+https://www.sendspace.com/file/zalrvd
+f4d$@sfGaj,m$@56!(ds$s
+
+2020-10-29T15:13:18 naned -> buza
+I've sketched it out, superficially enough, but my head is about to explode.
+I can dig deeper, but I'm not sure what's needed.
+
+2020-10-30T08:11:14 naned -> buza
+https://www.sendspace.com/file/zalrvd
+f4d$@sfGaj,m$@56!(ds$s
+
+2020-10-30T08:11:14 naned -> buza
+Sketched it out pretty superficially, but my head is about to explode.
+I can dig deeper, but I'm not sure if I'll need it.
+
+2020-11-02T12:23:49 naned -> buza
+powerdxs@jabber.ru
+

@@ -1,0 +1,106 @@
+2020-07-14T07:58:23 mentos -> mushroom
+привет
+
+2020-07-14T07:58:50 mentos -> mushroom
+тебе Буза писал?
+
+2020-07-14T08:09:42 mushroom -> mentos
+Написал сейчас.
+
+2020-07-14T08:10:53 mushroom -> mentos
+Надо перенести обфускацию на новый llvm он сказал.
+
+2020-07-14T08:11:21 mentos -> mushroom
+на 10?
+
+2020-07-14T08:11:40 mushroom -> mentos
+На последний релиз. Это 10.
+
+2020-07-14T08:12:33 mushroom -> mentos
+Я вчера начал. Просто перенёс файлы из Transforms llvm-obfuscator в исходники llvm 10.
+
+2020-07-14T08:12:44 mushroom -> mentos
+Почти всё сошлось.
+
+2020-07-14T08:13:12 mushroom -> mentos
+Ты же собирал уже clang из исходников?
+
+2020-07-14T08:13:23 mentos -> mushroom
+да
+
+2020-07-14T08:13:51 mushroom -> mentos
+Значит знаешь всё.
+
+2020-07-14T08:14:21 mentos -> mushroom
+вначале собирал проект cmake, потом в VS19 rjvgbkbhjdfk 'njn ghjtrn
+
+2020-07-14T08:14:31 mushroom -> mentos
+Я думаю пока надо чтобы получилось собрать рабочий плагин для opt.
+
+2020-07-14T08:15:03 mushroom -> mentos
+А потом если всё работает интешрировать его уже в clang.
+
+2020-07-14T08:15:29 mentos -> mushroom
+дай ссылку что ты сделал
+
+2020-07-14T08:15:52 mentos -> mushroom
+в нашем гите или редмайне есть?
+
+2020-07-14T08:15:58 mushroom -> mentos
+Я никуда ничего не загружал.
+
+2020-07-15T08:12:45 mentos -> mushroom
+hi
+
+2020-07-15T13:06:36 mushroom -> mentos
+Ну как получилось?
+
+2020-07-16T08:09:42 mentos -> mushroom
+ghbdtn
+
+2020-07-17T09:14:50 mushroom -> mentos
+Привет у тебя ест собранный llvm-obfuscator 4?
+
+2020-07-17T09:25:53 mentos -> mushroom
+да есть - он как инсталлер
+
+2020-07-21T14:02:14 mushroom -> mentos
+Привет. Ты тут?
+
+2020-07-22T07:52:49 mushroom -> mentos
+Привет. Ты тут.
+
+2020-07-23T09:25:39 mentos -> mushroom
+ghbdtn
+
+2020-07-23T12:34:08 mentos -> mushroom
+слушай а patch -p1 < llvm-obf.patch до или после cmake -G "Visual Studio 16 2019" -A x64 -Thost=x64 -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH=... -DLLVM_ENABLE_PROJECTS=clang -DLLVM_TARGETS_TO_BUILD=X86 -DLLVM_EXPORT_SYMBOLS_FOR_PLUGINS=ON ..\llvm  ???
+
+2020-07-23T12:35:06 mentos -> mushroom
+наконец-то поставил
+
+2020-07-23T12:35:07 mentos -> mushroom
+Raver@DESKTOP-IDSODU6 MINGW32 /c/llvm-project
+$ patch -p1 < llvm-obf.patch
+patching file llvm/include/llvm/CryptoUtils.h
+patching file llvm/include/llvm/Transforms/Obfuscation/BogusControlFlow.h
+patching file llvm/include/llvm/Transforms/Obfuscation/Flattening.h
+
+2020-07-24T07:55:34 mentos -> mushroom
+hi
+
+2020-08-27T09:46:18 mentos -> mushroom
+привет
+
+2020-10-08T12:55:56 mentos -> mushroom
+привет
+
+2020-10-08T14:15:29 mushroom -> mentos
+Привет.
+
+2020-10-22T14:44:01 mentos -> mushroom
+привет
+
+2020-10-26T09:14:47 mentos -> mushroom
+привет
+

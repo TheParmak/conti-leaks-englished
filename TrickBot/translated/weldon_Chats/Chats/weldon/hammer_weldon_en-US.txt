@@ -1,0 +1,530 @@
+[26.07.21 09:15:48] hammer: Hi, did you write something? It shows that there was a message, but there's nothing
+[26.07.21 09:16:25] weldon: Hi.
+[26.07.21 09:17:41] weldon: wrote on Saturday - can't remember what exactly, I'll get it together with SB...
+[26.07.21 09:17:53] hammer: ok
+[26.07.21 09:19:10] weldon: it's much harder to build on rizn 9 in time - all cores/threads are 100% loaded)
+[27.07.21 12:27:22] weldon: hi
+[27.07.21 12:27:41] weldon: hi
+[27.07.21 12:27:49] hammer: hi
+[27.07.21 12:28:14] weldon: tell me where can I get sources of FF?
+[27.07.21 12:28:27] weldon: I have 99% of sources - notfound...
+[27.07.21 12:28:31] hammer: from caesar, as far as I know
+[27.07.21 12:28:59] weldon: I just need specific release
+[27.07.21 12:29:31] hammer: specific ff version?
+[27.07.21 12:29:41] weldon: yeah
+[27.07.21 12:29:55] hammer: wait a minute, I'll look, there was a link
+[27.07.21 12:30:11] hammer: I'll write back when I find it, I thought you meant sub
+[27.07.21 12:30:34] weldon: not - puregan - I will compare
+[27.07.21 12:40:23] hammer: so far I haven't found the whole download
+[27.07.21 12:40:27] hammer: check this one https://ftp.mozilla.org/pub/firefox/releases/
+[27.07.21 12:41:25] weldon: yeah, i saw that one too) just the one that opens - but how to download it all - dunno
+[27.07.21 12:41:44] hammer: https://support.mozilla.org/en-US/kb/install-older-version-firefox?redirectslug=install-older-version-of-firefox&redirectlocale=en-US#firefox:win7:fx87
+[27.07.21 12:42:11] hammer: it seems that everything is in folders, you download one file at a time and it's a pain in the ass
+[27.07.21 12:42:26] hammer: here you can download from 78 to the last one
+[27.07.21 12:42:55] weldon: ok thanks
+[27.07.21 12:43:16] hammer: Customize this article here you need it and below will give you the download
+[27.07.21 12:43:32] weldon: that's fine
+[27.07.21 12:43:44] hammer: the link just before the ftp
+[27.07.21 12:43:53] hammer: I'll let you know if I find more
+[27.07.21 12:43:59] weldon: ok
+[27.07.21 12:44:19] hammer: you need last year's versions?
+[27.07.21 12:44:31] weldon: 2020
+[27.07.21 12:44:41] weldon: February
+[27.07.21 12:44:54] hammer: ooh.
+[27.07.21 12:45:41] hammer: so far away, still almost prehistoric, another era
+[27.07.21 12:46:56] hammer: 72.0.2 you need, about this one
+[27.07.21 12:55:12] hammer: https://www.filepuma.com/download/mozilla_firefox_64bit_72.0.2-24491/ but that's for me.
+[27.07.21 12:55:57] weldon: ) it's not pure
+[27.07.21 13:14:48] hammer: here?
+[27.07.21 13:15:25] hammer: you don't care about language on ff?)
+[27.07.21 13:15:39] weldon: gbyu
+[27.07.21 13:15:43] weldon: gblu
+[27.07.21 13:15:54] hammer: empty message came
+[27.07.21 13:16:08] weldon: did you write it yourself?
+[27.07.21 13:16:15] hammer: you don't care about language?)
+[27.07.21 13:16:52] weldon: you need the original from official mosilla
+[27.07.21 13:16:54] hammer: https://ftp.mozilla.org/pub/firefox/releases/72.0.2/win64/gu-IN/
+[27.07.21 13:17:57] weldon: oh, how cool.
+[27.07.21 13:18:21] weldon: wait a minute - these are not sources - this is an installer
+[27.07.21 13:18:22] hammer: but it's in indian
+[27.07.21 13:18:27] hammer: ah
+[27.07.21 13:18:35] hammer: well then keep looking
+[27.07.21 13:18:54] hammer: that's where in the assembly, I don't know
+[28.07.21 15:34:00] hammer: Hey, any news?
+[28.07.21 16:02:52] weldon: hi.
+[28.07.21 16:03:38] weldon: yeah, i do.
+[28.07.21 16:04:06] weldon: Silver didn't write you? But he's busy enough as it is.)
+[28.07.21 16:20:38] hammer: he didn't
+[28.07.21 16:21:06] weldon: briefly
+[28.07.21 16:21:50] weldon: from Silver 8:55 AM
+in a nutshell, the idea is to port the developments to a fresh mozilla
+or ESR version of mosilla
+1. make a diff against the mosilla version you build your SB on
+2. patch the latest mosilla version with this diff and see what comes out
+of course this is the more painful way
+[28.07.21 16:22:47] weldon: " so your task is to make a clean patch
+determine the base version on which the patch is applied and you get the tree we have
+when you have a clean patch, we'll try to put it on a fresh FF
+then we'll
+1) solve the "your browser is out of date" problem and get all the latest fancy features.
+2) you'll be able to build with the modern toolchain without the "there's no such library anymore" bump."
+[28.07.21 16:23:00] weldon: I'm making a patch now
+[28.07.21 16:23:23] weldon: yesterday I did it - it was 700 Mb, today it is 7 Mb.)
+[28.07.21 16:23:34] hammer: 0_0
+[28.07.21 16:23:49] weldon: cool?)
+[28.07.21 16:23:58] hammer: no way
+[28.07.21 16:24:20] hammer: 7kb tomorrow?
+[28.07.21 16:24:33] weldon: BUT, he still needs a haircut - Silver said
+[28.07.21 16:26:00] weldon: from silver:
+
+7M is still quite a lot
+I don't expect there to be 7M code
+we have 200k source codes for complex projects
+[28.07.21 16:26:00] hammer: ok, that's great news
+[28.07.21 16:26:36] hammer: when will we have an antic build approximately?
+[28.07.21 16:27:05] weldon: I found a file with the release version of the FF) he will not change it right? found the source code available, which is a little older than it and voila 7 MB - it is not 700
+[28.07.21 16:27:35] hammer: just from the repository and look all the configs on the sub, everything works, to make you happy with excitement like a child
+[28.07.21 16:27:53] hammer: where did you get the source code?
+[28.07.21 16:29:02] weldon: wow - definitely not fast... I still need to trim the patch to ~300Kb, then Angelo will test it (didn't you send him to me?)))
+[28.07.21 16:29:24] hammer: angelo and robin dug up an old sb somewhere and are racing him
+[28.07.21 16:29:39] hammer: i sure didn't send him
+[28.07.21 16:30:04] weldon: )clearly, the source is freely available
+[28.07.21 16:30:25] hammer: no, ask no one
+[28.07.21 16:30:42] hammer: apparently, robin left it somewhere since the dawn of time
+[28.07.21 16:31:40] hammer: Eugene sent it to me, he had it, you want it?
+[28.07.21 16:32:06] hammer: but he needs activation from adam, otherwise the browser won't start
+[28.07.21 16:32:46] weldon: look - the point is this:
+1. I make a difference/patch between the SB and the FF it's built on
+2. I shorten it as much as possible
+3. I roll this patch onto the new/last FF
+4. Angelo tests it
+5. give the product
+[28.07.21 16:32:52] weldon: that's my understanding.
+[28.07.21 16:33:21] hammer: so the launcher can work with the new browser, right?
+[28.07.21 16:33:35] weldon: yeah, cool?)
+[28.07.21 16:33:47] hammer: just great)
+[28.07.21 16:34:06] hammer: you'd better find old grabber
+[28.07.21 16:34:13] weldon: "robin left it somewhere since the dawn of time" - so he has already built it or sources?
+[28.07.21 16:34:46] hammer: most likely compiled, which was used last year
+[28.07.21 16:35:15] hammer: when I was there, there was a summer version, and then, as it turned out, the coder still managed to give out the fall version, but without me
+[28.07.21 16:35:20] hammer: and then he got lost
+[28.07.21 16:35:37] hammer: and sylver has the source code. but he kind of gave it all to you
+[28.07.21 16:36:13] weldon: mmm, I'd like to see it assembled
+[28.07.21 16:36:30] hammer: let me send you the one Eugene gave me
+[28.07.21 16:36:45] weldon: yes, I took the source code - I tried to build it myself BUT there is a lot of hassle
+[28.07.21 16:36:57] weldon: tomorrow
+[28.07.21 16:36:58] hammer: Eugene's is for December, and Robin, I asked him to look, it's for October
+[28.07.21 16:37:02] hammer: okay.
+[28.07.21 16:37:45] weldon: I'll at least clean up the folders - it's like someone played terminators on my PC)
+[28.07.21 16:38:03] hammer: i just got a message from robin saying "let's try to get such software"
+[28.07.21 16:38:07] hammer: I wrote you then
+[28.07.21 16:38:19] hammer: and he sends me a screenshot of our louncer
+[28.07.21 16:38:37] hammer: i wonder why the hell i need it if it is our louncher
+[28.07.21 16:38:49] weldon: yeah, i saved the screenshot too, it means it was assembled
+[28.07.21 16:39:10] hammer: he just. as I understand, directly from the admin panel starts the browser, bypassing the launcher, and thought it was another software
+[28.07.21 16:39:46] weldon: well, i don't know - when i see it ready, i'll at least see what kind of the beast it is
+[28.07.21 16:39:53] hammer: Mm-hmm.
+[28.07.21 16:40:21] hammer: there's conf.userchrome line
+[28.07.21 16:40:26] hammer: you'll see
+[28.07.21 16:40:42] hammer: it lets you start your browser as a chrome
+[28.07.21 16:40:51] hammer: that's convenient.
+[28.07.21 16:41:11] hammer: otherwise all configurations start on ff findli
+[28.07.21 16:41:46] hammer: does it matter?
+[28.07.21 16:42:08] weldon: dunno - can't say anything - can't see SB)
+[28.07.21 16:42:14] hammer: well, you'll see)
+[28.07.21 16:42:19] weldon: assembled - just a screenshot
+[29.07.21 09:40:03] weldon: hi
+[29.07.21 09:40:14] weldon: hello
+[29.07.21 09:40:23] weldon: what without OTR?)
+[29.07.21 09:40:32] weldon: kill the link here too
+[29.07.21 09:41:25] hammer: and so?
+[29.07.21 09:41:31] hammer: updated keys
+[29.07.21 09:41:48] hammer: NTD285jhgdhs8FVA69
+https://www.sendspace.com/file/u555gj
+https://www.sendspace.com/delete/u555gj/5d761572112ab3051c3ef2b5b6afc7e8
+[29.07.21 09:44:00] weldon: yes, I took it already
+[29.07.21 09:44:27] weldon: delete the url from here only
+[29.07.21 09:44:59] hammer: removed
+[29.07.21 09:45:31] weldon: later I'll look - different FF versions try to compare with our SB sources
+[29.07.21 10:14:11] hammer: do you need manual for SF?
+[29.07.21 10:14:55] weldon: lfdfq
+[29.07.21 10:14:57] weldon: go ahead.
+[29.07.21 10:15:16] weldon: ghzv c.lf vj;tim rbyenm&
+[29.07.21 10:15:23] weldon: can you send it here?
+[29.07.21 10:15:34] hammer: nfv vyjuj? yt dktptn
+[29.07.21 10:17:41] hammer: https://privnote.com/a5W8VY1k#g315NhQj9
+[29.07.21 10:17:52] hammer: took it?
+[29.07.21 10:18:12] weldon: sec.
+[29.07.21 10:20:19] weldon: ok
+[30.07.21 10:13:19] weldon: hello
+[30.07.21 10:13:37] weldon: I'm sorry.
+[30.07.21 10:13:54] weldon: who knows where I can take FireFox nightly sources ? I'm interested exactly from "A", as in https://archive.mozilla.org/pub/firefox/releases/ only Betas, and in https://archive.mozilla.org/pub/firefox/nightly/ - did not find...
+[30.07.21 10:23:22] hammer: Hi, I don't know, I don't know.
+[30.07.21 10:23:43] hammer: probably from the developers, if it's alpha
+[02.08.21 10:24:06] weldon: hi
+[02.08.21 10:24:13] weldon: help me find FireFox 68.0a1 release
+[02.08.21 10:24:40] weldon: more likely its sources
+https://archive.mozilla.org/pub/firefox/releases/ only betas here?
+[02.08.21 10:25:32] hammer: Hi, I'll try
+[02.08.21 10:25:43] weldon: you need alpha - it's nightly
+[02.08.21 10:26:00] weldon: https://archive.mozilla.org/pub/firefox/nightly/2019/ - do not see the source code here((((
+[02.08.21 10:26:19] weldon: maybe in a git
+[02.08.21 10:57:26] hammer: not visible, why such a very primitive version?
+[02.08.21 11:13:48] weldon: it's not that ancient, the project is 5+ years old
+[02.08.21 11:14:34] hammer: https://ftp.mozilla.org/pub/firefox/nightly/2019/03/2019-03-18-21-38-44-mozilla-central/
+[02.08.21 11:14:44] hammer: check it out
+[02.08.21 11:15:33] weldon: That's the point, I looked there and didn't see the source)
+[02.08.21 11:15:46] hammer: trouble(
+[02.08.21 11:21:51] weldon: Date_comparison FF_Release Last_Modified_FF diff_File diff_Size
+	__________________________________________________________________________________________________________________
+	27.07.21 74.0b2 12-Feb-2020 15:21 SBvsFF740b2.patch 700 MB (734 636 543 bytes)
+	28.07.21 47.0.1 28-Jun-2016 12:52 SBvsFF47.0.1.patch 1.56 GB (1,684,358,457 bytes)
+	28.07.21 68.0b3 21-May-2019 17:54 SBvsFF68.0b3.patch 7.68 MB (8,061,585 bytes)
+	
+	29.07.21 66.0 18-Mar-2019 15:33 SBvsFF66.0.patch 419 MB (440,355,477 bytes)
+	29.07.21 66.0.5 07-May-2019 19:44 SBvsFF66.0.5.patch 420 MB (440 630 512 bytes)
+	29.07.21 66.0b11 26-Feb-2019 01:35 SBvsFF66.0b11.patch 420 MB (441 147 262 bytes)
+	29.07.21 66.0b14 07-Mar-2019 21:01 SBvsFF66.0b14.patch 420 MB (440,916,614 bytes)
+	29.07.21 67.0.4 20-Jun-2019 04:48 SBvsFF67.0.4.patch 291 MB (305,254,181 bytes)
+	29.07.21 67.0 20-May-2019 12:50 SBvsFF67.0.patch 289 MB (303,729,933 bytes)
+	29.07.21 67.0b3 19-Mar-2019 06:41 SBvsFF67.0b3.patch 294 MB (308,923,234 bytes)
+	29.07.21 67.0b9 08-Apr-2019 18:09 SBvsFF67.0b9.patch 293 MB (307,446,149 bytes)
+	29.07.21 68.0 08-Jul-2019 13:23 SBvsFF68.0.patch 114 MB (120,391,948 bytes)
+	29.07.21 68.0b3 21-May-2019 17:54 SBvsFF68.0b3.patch 7.68 MB (8,061,585 bytes)
+	29.07.21 68.0b4 23-May-2019 19:46 SBvsFF68.0b4.patch 7.88 MB (8,273,021 bytes)
+	29.07.21 68.0b5 28-May-2019 06:12 SBvsFF68.0b5.patch 9.52 MB (9,992,629 bytes)
+	29.07.21 68.0b9 11-Jun-2019 01:29 SBvsFF68.0b9.patch 13.6 MB (14,329,267 bytes)
+	29.07.21 68.6.0esr 09-Mar-2020 14:01 SBvsFF68.6.0esr.patch 185 MB (194,930,998 bytes)
+
+	02.08.21 68.0.1 18-Jul-2019 09:00 SBvsFF68.0.1.patch 115 MB (120,593,669 bytes)
+[02.08.21 11:22:33] SBvsFF68.0b3 21-May-2019 17:54 SBvsFF68.0b3.patch 7.68 MB is the most similar
+[02.08.21 11:25:38] hammer: probably
+[05.08.21 09:17:48] hammer: Hey, how are you doing?
+[05.08.21 09:22:50]
+[05.08.21 09:23:42] weldon: searching for alpha version 68.0a1
+[05.08.21 09:27:46] weldon: yesterday i tried to build the latest version, downloaded from the official site - he doesn't want anything
+[05.08.21 09:28:13] hammer: did you look at what I downloaded?
+[05.08.21 09:28:58] weldon: everything is already assembled there + the instruction, that Silver gave
+[05.08.21 09:38:46] weldon: the funny thing is, that Tunri took the latest version from /mozilla-central - there always lies the latest version (alpha), then it was 68.0a1, now 92.0a1, but how to get the old version - I do not know ... it would be cool to pull 68.0a1 , make a diff and patch
+[05.08.21 09:39:14] hammer: why is he doing that?
+[05.08.21 09:39:23] hammer: ah, got it wrong
+[05.08.21 10:33:22] weldon: i think i figured out where the dog is buried)
+[05.08.21 14:41:52] hammer: what will be the result?
+[05.08.21 14:42:22] weldon: don't see the message
+[05.08.21 14:44:11] weldon: ping
+[05.08.21 14:46:04] hammer: What will be the result?
+[05.08.21 14:46:54] weldon: see correspondence in antique?
+[05.08.21 14:47:55] hammer: yes, but there it comes out that kermit connects?
+[05.08.21 14:48:17] hammer: in sqlite python script can add cookies
+what's the config for the swap
+[05.08.21 14:48:30] hammer: everything is fine with this config
+68.0b3/pseudobrowser/CanvasFake.cpp SB/pseudobrowser/CanvasFake.cpp
+etc.
+
+/pseudobrowser/CompatModeProvider.cpp SB/pseudobrowser/CompatModeProvider.cpp
+
+but sendboxing will fall off, most likely
+[05.08.21 14:49:09]
+[05.08.21 14:49:22] hammer: who is he?
+[05.08.21 14:49:41] weldon: I'll try to minimize - I have an idea
+[05.08.21 14:49:51] weldon: I don't know who he is - he hangs out here all the time
+[05.08.21 14:50:08] hammer: I wasn't told about him either, I'll ask sylver later
+[05.08.21 14:51:08] weldon: I didn't get it either... some kind of configs to the SB asked for... i did the diffs like sylver told me
+[05.08.21 15:11:10] hammer: there's a kermit in the chat room asking, check it out
+[05.08.21 15:27:54] hammer: so who diffs next? you or him?
+[05.08.21 15:28:34] weldon: I don't know, we'll find out from Silver.
+[05.08.21 15:53:56] weldon: I take two neighboring commits from our Git, make diff, and so on N times, it turns out a carload of diffs, which commits ONLY Vladimir Dunaev / tunri, then I combine all this into 1 Patch
+[05.08.21 15:55:50] weldon: roll it on FF (which I found), assemble FF - and look/test ? i got it right?
+[05.08.21 16:02:09] hammer: probably, yes
+[10.08.21 11:29:25] hammer: Hey, report back to the tric chat on antic, how's it going
+[10.08.21 11:29:33] hammer: robin's worried
+[12.08.21 09:22:46] hammer: Hey, how's it going on the antic? It's time to write a report to Frances, I need to know what's there.
+[12.08.21 09:23:34] weldon: ghbdtn ltkf.
+[12.08.21 09:23:41] weldon: hi, I'm on it.
+[12.08.21 09:29:26] weldon: I need:
+		1. understand how to download HG utility for specific version.
+		2. how to build without it and what's the directory Maybe it's possible to download the archive and somehow load this *.hg ? What's it for in general?
+[16.08.21 09:59:01] hammer: Hi, any news?
+[16.08.21 09:59:20] weldon: hi, not yet
+[16.08.21 16:23:32] hammer: no advance yet?
+[16.08.21 16:23:55] weldon: hi, I think so
+[16.08.21 16:24:07] hammer: today?
+[16.08.21 16:24:29] weldon: franc wrote in general chat
+[16.08.21 16:24:55] hammer: uh, didn't come, so I'll go
+[16.08.21 16:25:11] weldon: let me see
+[16.08.21 16:27:08] weldon: lf ghbikb? yfgbib ahfywe
+[16.08.21 16:27:22] weldon: yes, send it to french
+[19.08.21 09:47:13] weldon: hello
+[19.08.21 09:47:49] hammer: GHbdt
+[19.08.21 09:47:53] hammer: Hi.
+[19.08.21 09:48:11] weldon: I think I'll clean up the patch today/tomorrow)
+[19.08.21 09:48:41] weldon: there was such a thing - at 2 am I got it)
+[19.08.21 09:48:57] hammer: What's going on there in general? Today I'll have to send a report to Frances, so I'll have something to say.
+[19.08.21 09:49:15] hammer: Like Mendeleev?)
+[19.08.21 09:49:23] hammer: he also had a dream last night.
+[19.08.21 09:51:45] weldon: Yeah, I'll try to do that one day, the main thing is not to forget to take my daughter from kindergarten, like Mendeleev)
+[19.08.21 09:52:13] hammer: )
+[19.08.21 09:52:41] hammer: after that incident he invented vodka)
+[19.08.21 09:58:31] weldon: yeah
+[19.08.21 09:58:53] weldon: and czar's vodka:sweat_smile:
+[19.08.21 10:19:56] hammer: )
+[26.08.21 14:34:33] hammer: Hey, what's going on there on antique? Reporting information
+[26.08.21 15:11:05] hammer: Hmm?
+[26.08.21 15:30:25] hammer: Hey, what's going on with the antic? Reporting.
+[26.08.21 16:20:49] hammer: Hello?
+[26.08.21 23:00:04]
+		1. download HG Clone something from the latest stable http://hg.mozilla.org/releases/l10n/mozilla-release/ru ?
+		2. apply our patch
+		3. assemble
+	
+	1. c:\mozilla-build\start-shell.bat
+	2. cd /D/tmp/new_silver/Patch4/clone2
+	3. hg clone https://hg.mozilla.org/releases/mozilla-release/ (hg clone https://hg.mozilla.org/releases/comm-esr91/ is not the latest alpha of hg clone https://hg.mozilla.org/mozilla-central )
+	4. cd mozilla-release cd /D/tmp/new_silver/Patch4/Clone/comm-esr91
+	5. mach build
+	6. mach run ok (Nightly 91.0.2 (64-bit))
+[27.08.21 09:24:18] hammer: Hey, what's up with the antic?
+[27.08.21 18:06:36] hammer: What is bucket?
+[30.08.21 09:10:35] hammer: Hi, did you write something? It didn't come.
+[30.08.21 09:11:36] weldon: hi, dunno, no news yet
+[31.08.21 09:22:34] hammer: Hey, any news on antic?
+[31.08.21 09:24:08] weldon: Hi, except for dead SSD, got the system up - now I will try to do it on another SSD
+[31.08.21 09:24:27] weldon: i.e. roll your patch
+[31.08.21 09:24:33] hammer: ok
+[31.08.21 09:25:45] weldon: it was 40 degrees, my PC was just melting( but now it's 10 degrees - dope weather
+[31.08.21 09:26:19] hammer: i know, same shit, highs and lows
+[31.08.21 09:26:47] hammer: hypertensives must be freaking out, everybody who's sensitive to weather must be in shock
+[31.08.21 09:27:09] weldon: That's right.
+[31.08.21 15:14:30] weldon: did you make your own diffs/patches?
+[31.08.21 15:15:12] weldon: I start patch on fresh version of FF - and there wagon Hunk #1 FAILED at 23.
+[02.09.21 09:20:59] weldon: hello
+[02.09.21 09:21:04] hammer: Hi.
+[02.09.21 09:22:11] weldon: made a plan to eliminate hunk from patch when uploading it to mozilla-esr91
+[02.09.21 09:23:02] weldon: maybe next day I will get a new SB based on mozilla-esr91)
+[02.09.21 09:23:35] hammer: great news)
+[02.09.21 09:24:17] weldon: just switched to SSD with sata bus, but it's so fucking slow...
+[02.09.21 09:24:29] weldon: but cold)
+[02.09.21 09:25:03] hammer: )
+[02.09.21 09:25:22] hammer: with activation by car?
+[02.09.21 09:26:22] weldon: here hz - I can not tell these details - it already need to test ... but fresh from our old SB
+[02.09.21 09:26:34] weldon: who will test Angelo?
+[02.09.21 09:26:49] hammer: not only, I think
+[02.09.21 09:27:11] hammer: Eugene too
+[02.09.21 09:27:24] weldon: now the main thing is no obscure/unobvious hanks
+[09.09.21 16:25:01] hammer: Hey, what's new in antic?
+[09.09.21 16:25:23] weldon: hi
+[09.09.21 16:25:47] weldon: go to antik - read - cleaning cranky hanky
+[09.09.21 16:26:47] hammer: i read it, i thought maybe something else
+[09.09.21 16:27:04] weldon: not yet
+[09.09.21 16:27:47] hammer: got it, everything seems to be going well for the bright future
+[09.09.21 16:29:06] weldon: )
+[09.09.21 16:30:15] hammer: no need to cloud it, let's leave the bad news aside)
+[09.09.21 16:30:41] weldon: what are you talking about?
+[09.09.21 16:31:23] hammer: you wrote something there, I thought you wanted to respond that it's not so rosy
+[09.09.21 16:31:46]
+[09.09.21 16:33:44] weldon: alright, I'm sleeping - like a zombie)
+[09.09.21 16:34:13] hammer: good night)
+[09.09.21 16:34:27] weldon: thanks.
+[16.09.21 14:37:03] hammer: Hey, what's the word on antic?
+[16.09.21 14:37:39] weldon: hi - no - all cleaning hunks - the further into the woods - the more wood
+[16.09.21 14:38:04] weldon: I first did the simple ones - now the cpp files went...
+[16.09.21 14:38:35] hammer: got it, good luck with chopping)
+[16.09.21 14:38:46] weldon: )
+[16.09.21 14:40:20] weldon: then, when I will clean it and the patch will be evenly put on ESR91 FF, I will have to catch eros when building
+[22.09.21 11:06:07] hammer: Hey, how's the progress towards the bright future of antic?
+[22.09.21 11:21:29] weldon: It's getting better.
+[22.09.21 11:22:22] hammer: that's good, let's wish him a speedy recovery)
+[22.09.21 11:22:37] hammer: any approximate terms?
+[22.09.21 11:23:27] weldon: can't say about the time frame
+[24.09.21 11:05:19] hammer: Hey, how's the situation on the antitrust front? Smothering the hunks?
+[24.09.21 11:05:29]
+[24.09.21 11:05:37] weldon: I do.
+[24.09.21 11:05:52] hammer: That's them, the enemy.
+[24.09.21 11:07:01] weldon: I wish my teeth didn't hurt.
+[24.09.21 11:08:34] hammer: painkillers don't help?
+[24.09.21 11:09:56] weldon: I ate too much nosepa and nisa:
+[24.09.21 11:09:57] hammer: pentalgin or nise
+[24.09.21 11:10:23] hammer: so nosepa is for his stomach, not his teeth
+[24.09.21:11:06] weldon: it also helps with teeth, I just put it on a wet spot
+[24.09.21 11:11:27] hammer: well, unless
+[24.09.21 11:12:22] weldon: hope to do it tomorrow, I want to work tomorrow too
+[24.09.21 11:13:05] weldon: hope to do it tomorrow, meant to work tomorrow too
+[01.10.21 09:28:54] hammer: Hey, how's antique doing?
+[01.10.21 09:30:21] weldon: hi, did you enter anticchat?
+[01.10.21 09:30:38] hammer: it's only from yesterday
+[01.10.21 09:30:51] hammer: What do you do with constructors?
+[01.10.21 09:31:17] hammer: looking for the first error
+[01.10.21 09:31:21] hammer: *first
+[01.10.21 09:31:44] weldon: one minute
+[01.10.21 09:32:12] weldon: 0. ESR91 FF file tree is synchronized by Script+/-.bat - to add files for SB only.
+			Another 4 files which are not in ESR91, but are in pure NIGHTLY_68_END and SB, I add by hand (PeerConnectionImpl.cpp/h have moved to another branch, 2 others are not important).
+			
+	Patch N68End_SB_aur_HUNKs_0.patch (the successor of N68End_SB_aur.patch) is ready.
+			Overlay of patch N68End_SB_aur_HUNKs_0.patch on ESR91 is error-free: patch -p1 --dry-run -d esr91 < N68End_SB_aur_HUNKs_0.patch - no crooked/"FAILED at" hanks.
+			
+	2. When building SB (based on ESR91) at 16-20 minutes an error occurs, again related to the absence of files in ESR91.
+			The files are not used explicitly in SB, for example in nsPseudoPluginTag.h there is nsAutoPtr.h.
+[01.10.21 09:34:41] weldon: I'm digging classes, why they don't want to build
+[01.10.21 09:34:59] hammer: accepted
+[01.10.21 09:35:43] weldon: if there was an obvious error, then the erosion would occur immediately, but only at the end of the build...
+[22.10.21 16:14:39] hammer: Hey, what news on this wonderful Friday night on the antic?
+[10/23/221 02:13:38] weldon: hi.
+[23.10.21 02:14:12] weldon: rebuilding, nothing new yet
+[23.10.21 02:25:31] weldon: the machine is stalling hard
+[29.10.21 09:31:02] weldon: hi
+[29.10.21 09:31:09] hammer: Hey, what's new on antic?
+[29.10.21 09:32:51] weldon: rebuild for the millionth time - gathering information, what kind of diffs negatively affect the build, what I can fix - edit
+[29.10.21 09:33:10] weldon: Chad do you know if he is free or not?
+[29.10.21 09:33:44] hammer: I asked him, he's not saying anything, I just wanted to ask if it helps or not, you got it right off the tongue
+[29.10.21 09:34:17] weldon: well, the last thing from him - that he's busy)
+[29.10.21 09:35:17] hammer: Mm-hmm.
+[29.10.21 09:35:36] weldon: tomorrow and/or Sunday I plan to stay with him too (mine are all under quarantine anyway)
+[29.10.21 09:36:53] hammer: he answered, he was busy with a working project, there was a pause, but it was over.
+[29.10.21 09:38:15] weldon: well, does he also build torx?
+[29.10.21 09:39:35] hammer: I didn't get it, to be honest
+[29.10.21 09:39:37] hammer: quote.
+[29.10.21 09:39:48] hammer: Hi. I'm doing a work project. There was a pause, but it's over.
+[29.10.21 09:40:01] hammer: I checked, but he's not talking
+[29.10.21 09:40:47] weldon: ok
+[29.10.21 09:43:20] weldon: and you didn't rebuild browsers yourself?
+[29.10.21 09:44:02] weldon: I'm messing with Navigator.webidl - it's my own script-language...
+[29.10.21 09:55:33] hammer: nope
+[10/29/221 09:56:03] hammer: Can you tell me when about it?
+9:50 AM.
+I don't know - there'll be a pause for the project - I'll get to it.
+[29.10.21 09:56:07] hammer: he answered
+[29.10.21 09:57:05] weldon: okay, good to connect him
+[29.10.21 09:57:27] weldon: you communicate with him - he seems to be good at this, right?
+[29.10.21 09:58:41] hammer: we didn't talk much. but i understood from his words that he was going to build it as well. not only to debug it
+[29.10.21 09:59:15] weldon: i see
+[25.11.21 09:34:38] weldon: hello
+[25.11.21 09:34:44] hammer: hi, what's the breakthrough on antic?
+[25.11.21 09:37:04] weldon: I hooked ESR91 into hardware.cpp (with nuance)
+docked servbind.cpp/servbind.h
+[25.11.21 09:37:34] weldon: there is only dessert left - PseudoBindings.cpp
+[25.11.21 09:37:49] hammer: chad is working on his, not helping?
+[25.11.21 09:38:15] weldon: 8 errors, corrected one - i.e. now 7 eros
+[25.11.21 09:38:25] weldon: no, didn't talk to chad
+[25.11.21 09:38:26] hammer: ok
+[03.12.21 12:44:39] hammer: hey, what's the word on antic?
+[03.12.21 13:35:20] weldon: ghbdtn
+[03.12.21 13:35:26] weldon: Hi.
+[03.12.21 13:36:16] weldon: IN GENERAL there are 3 errors - ALL error: member access into incomplete type:
+		1. >GetElementsByTagName(nsString(u "meta")); error: member access into incomplete type 'mozilla::dom::Document' simply CANNOT be commented,
+			you'd better comment out the dependencies:
+				//i < clist->Length()
+				icont = clist->Item(i, false);
+		2. >httpeq->GetValue(res); error: member access into incomplete type 'mozilla::dom::Attr' you can just comment out
+		3. >GetValue(content); error: member access into incomplete type 'mozilla::dom::Attr' you can just comment out
+[06.12.21 09:39:12] weldon: hi, did you get the message on Friday?
+[06.12.21 09:39:26] weldon: *message
+[06.12.21 09:46:10] hammer: hi, about the three errors left?
+[06.12.21 09:47:30] weldon: fuf
+[06.12.21 09:47:31] weldon: Yeah.
+[06.12.21 09:47:39] hammer: yeah.
+[06.12.21 09:49:41] weldon: ok, it will be possible to inject antic tree into ESR91 and then assemble, but there is still a lot to do
+[10.12.21 14:49:30] hammer: Hi, since last time there is something new on the antic?
+[10.12.21 14:51:30] weldon: hi
+[10.12.21 14:51:54] weldon: we were just discussing with stern and silver
+[10.12.21 16:58:03] hammer: what have you decided?
+[10.12.21 17:02:53] weldon: they promised a coder on Monday
+[10.12.21 17:03:12] hammer: instead of chad?
+[10.12.21 17:03:48] weldon: ) are you kidding? I met Chad and that's it.
+[10.12.21 17:04:21] hammer: that's how I understood it) he wasn't helping at all)
+[10.12.21 17:05:10]
+[10.12.21 17:06:33] weldon: really, if he was the one who wrote - of course everything went faster, I haven't even built browsers before
+[10.12.21 17:10:03] weldon: but it's not enough to assemble it, you need a fine analysis, "what/where/when/why and why"... such a stack of flo
+[10.12.21 17:11:21] hammer: i understand, it's not always possible for the coder to understand what's going wrong
+[10.12.21 17:12:34] weldon: i can't understand HOW he did it
+[10.12.21 17:12:47] weldon: #include "hardware.h"
+#ifndef _WIN32
+#include "unistd.h"
+#else //added by Weldon 23.11.2021
+#include <windows.h> //added by Weldon 23.11.2021
+#endif
+using namespace std;
+[10.12.21 17:13:17] weldon: how did it work if Sleep in windows.h ???????
+[10.12.21 17:13:33] hammer: he can't tell you that now
+[10.12.21 17:13:54] weldon: was he taken in?
+[10.12.21 17:14:56] hammer: the way I was sent the article, yes
+[10.12.21 17:15:21] hammer: he went to south Korea, then a pandemic started and he had to stay there, then he ran out of documents
+[10.12.21 17:15:28] weldon: can you throw me a copy? Was he really that old?
+[10.12.21 17:15:43] hammer: I won't, I read it a long time ago
+[10.12.21 17:16:38] hammer: they caught him somewhere at the stage of either extending or issuing new ones
+[10.12.21 17:17:05] hammer: The moral of this fable is: they only caught those who are out of the country
+[10.12.21 17:17:17] hammer: our guys don't extradite anyone to the americans
+[10.12.21 17:17:49] weldon: And don't go to gayropa
+[10.12.21 17:18:20] hammer: just a while ago, Biden said they caught everyone they needed and they were all abroad
+[10.12.21 17:19:21] hammer: they kind of gave him a couple of years, but it's still not nice
+[10.12.21 17:20:07] weldon: again, they don't give them out, while vP is at the helm, some "anal" will come and we will swim like under the UBP, young people do not know that, they do not realize what the merry 90s are and from what sewers vP has pulled us out
+[10.12.21 17:20:52] hammer: +
+[10.12.21 17:21:18] weldon: Though I think it will be Shoigu)
+[10.12.21 17:21:44] hammer: as someone wrote that the biggest problem of today's youth is that there is foam in the milk and the phone is not the color they want
+[10.12.21 17:21:52] hammer: they're getting greedy
+[10.12.21 17:24:33] weldon: shit, my eldest even takes a shit with her phone:zany_face: i disallowed everything possible on her router - no she turned on the usual no
+[10.12.21 17:26:12] weldon: like the pindos used to say - mental warfare, like you Old Ones live long enough, and then everything will be our way (their way)
+[10.12.21 17:26:44] hammer: No way!
+[10.12.21 17:26:54] hammer: Let the Negroes kiss all the places
+[10.12.21 17:28:24] weldon: again - we banned tor, not them)
+[10.12.21 17:29:56] weldon: Who of VPN providers agreed to all our conditions?
+[10.12.21 17:32:26] hammer: well, you see, they banned it)
+[10.12.21 17:32:50] hammer: Missing the great phrase of angelo
+"have Franz call the RCN."
+
+"Roskomsvoboda: Providers and operators have stopped blocking the Tor network in Russia, only the torproject site is not accessible
+https://www.playground.ru/misc/news/roskomsvoboda_provajdery_i_operatory_prekratili_blokirovat_set_tor_v_rossii_dostupa_net_tolko_k_sajtu_torproject-1161956
+
+
+Apparently Bro got through 😅
+[10.12.21 17:33:06] weldon: it's like they switched to server stream-2:laughing:
+[10.12.21 17:33:18] hammer: the severity of the law is compensated by its non-compliance
+[10.12.21 17:33:22] hammer: Or whatever
+[10.12.21 17:33:29] hammer: nobody gives a shit
+[10.12.21 17:33:50] hammer: so the stream is already spent, you don't have to run it
+[10.12.21 17:36:00] weldon: I can't access tor without a VPN
+[10.12.21 17:37:21] hammer: ditto
+[10.12.21 17:40:36] weldon: https://тор.рф goes in - gritting his teeth :rofl:
+[10.12.21 17:45:19] hammer: have a nice weekend
+[10.12.21 17:45:43] weldon: yeah, and don't covidney with me :sunglasses:
+[14.01.22 11:59:10] weldon: ghbdtn
+[14.01.22 11:59:12] weldon: hello
+[14.01.22 12:09:37] weldon: you sent me *\MLGHT\sbrowser repack10*, did you make it?
+[14.01.22 12:42:46] hammer: Hey, I can't say, I think so, who else?
+[15.02.22 13:10:08] weldon: hi
+[15.02.22 13:45:14] hammer: I'll connect it, confirm
+[15.02.22 13:45:16] hammer: Hey.
+[15.02.22 13:45:22] hammer: you wrote?
+[15.02.22 13:45:43] weldon: yeah
+[15.02.22 13:46:14] weldon: you didn't see the franc?
+[15.02.22 13:47:49] hammer: nope, not in the rocket for the second day
+[15.02.22 13:47:53] hammer: did you get your pay?
+[15.02.22 13:48:11] weldon: no
+[15.02.22 13:48:17] hammer: neither did i
+[02/15/222 13:48:40] hammer: I asked him last week, he said he got no such transfer himself, and 20 more people haven't received it
+[15.02.22 13:49:14] hammer: I asked him if the advance is moving too? he said he wouldn't guess
+[15.02.22 13:49:29] hammer: was swearing
+[15.02.22 13:49:42] hammer: that's sad(
+[15.02.22 13:50:14] hammer: it will be funny if those who have already received their salaries will get an advance, and those who have not received their dick waved again
+[15.02.22 13:53:14] hammer: Such pies(
+[15.02.22 13:58:06] weldon: some kind of a mess with the btz is planned
+they want to hang VAT on the sites themselves, have you heard?
+[15.02.22 14:15:28] hammer: I think I heard something, but I can't lie, not for sure
+[15.02.22 14:16:37] weldon: Heard it on TV
+[15.02.22 14:17:16] weldon: It will bring 11 billion to the treasury
+[15.02.22 14:19:54] weldon: Where did Silva disappear to?
+[15.02.22 14:24:43] hammer: He probably just changed messenger and is sitting there, what should he do here?
+[15.02.22 14:25:09] hammer: well, if on TV, it obviously will not be soon and not at all
+[15.02.22 14:25:18] hammer: they'll just bullshit as usual
+[18.02.22 14:43:52] hammer: Hey.
+[18.02.22 14:43:57] weldon: Hey.
+[18.02.22 14:44:00] hammer: got your paycheck?
+[18.02.22 14:44:12] weldon: no, did you?
+[02/18/222 14:44:17] hammer: ))
+[02/18/222 14:44:19] hammer: Nope.
+[18.02.22 14:44:33] hammer: here, people are worried about the advance, and we have not even given a salary yet)
+[18.02.22 14:44:51] weldon: you didn't get paid for the 30th?
+[18.02.22 14:44:55] hammer: and I can't get through to Frances, no answer
+[18.02.22 14:44:57] hammer: no
+[18.02.22 14:45:21] weldon: yeah, no answer
+[18.02.22 14:45:42] weldon: no money - but you hang on)
+[18.02.22 14:45:57] hammer: yeah, right

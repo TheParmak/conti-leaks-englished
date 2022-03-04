@@ -1,0 +1,96 @@
+[21.02.22 14:06:44] weldon: hi
+[21.02.22 14:06:56] basil: hello
+[21.02.22 14:07:00] basil: test
+[21.02.22 14:07:09] weldon: hello, okay
+[21.02.22 14:07:40] weldon: hey, I was given a creep to clean (orval), I think you did for him?
+[21.02.22 14:08:07] basil: 2
+[21.02.22 14:08:10] basil: ?
+[21.02.22 14:08:36] weldon: project1-beta_payload_bk.zip
+[21.02.22 14:09:14] basil: wait. Just a moment. It says here.
+[21.02.22 14:19:38] basil: I'll write back - don't go away
+[21.02.22 14:24:08] basil: I'm listening
+[21.02.22 14:24:11] basil: What's wrong?
+[21.02.22 14:26:22]
+what are the nuances?
+VS19 and VS22 - should be definitely Express, judging by the build.bat batnix
+[21.02.22 14:26:45] basil: No. You need Enterprose
+[21.02.22 14:26:51] basil: Enterprise
+[21.02.22 14:27:22] basil: But here's another question
+[21.02.22 14:27:31] basil: This is tsab 2
+[21.02.22 14:27:34] basil: stub 2
+[21.02.22 14:27:34] weldon: well, yes, my mistake - interpreter...
+just wanted to script hello world
+gives out 125 eros
+[21.02.22 14:28:11] basil: Is there such a SolutionBuilder?
+[21.02.22 14:29:08] weldon: i.e. it must first be built, I got it right?
+\Bin\SolutionBuilder-vs2022\SolutionBuilderRelease\Win32\SolutionBuilder.exe should already be
+[21.02.22 14:31:41] basil: SolutionBuilder is needed only to parse binary
+[21.02.22 14:31:50] weldon: tried everything: release/debug/llmvo etc. - all over 100 eros...
+maybe a special sdk is needed?
+[21.02.22 14:31:53] basil: And run it compile
+[21.02.22 14:32:13] basil: solutionBuilder is not going at all
+[21.02.22 14:32:15] basil: ?
+[21.02.22 14:32:23]
+[21.02.22 14:32:27] weldon: no way
+[21.02.22 14:33:31] basil: Okay. VS express?
+[21.02.22 14:33:51] weldon: yes, vs22 exp
+[21.02.22 14:34:53] basil: look, first, put vs2019 professional or enterprioser
+[21.02.22 14:34:59] weldon: enterprioser (there are 3 of them: Comm, Prov and Inter)
+[21.02.22 14:35:43] weldon: vs19 comm is on the same VM
+[21.02.22 14:36:14] weldon: no match?
+[21.02.22 14:36:52] basil: Man, honestly, I don't know what to tell you.
+[21.02.22 14:37:00] basil: What else can I tell you?
+[21.02.22 14:37:27] basil: In idea if sdk version doesn't match - it doesn't build at all
+[21.02.22 14:37:46] basil: It behaves strangely
+[21.02.22 14:38:47] basil: crypter itself may produce build errors. Especially debug version
+[21.02.22 14:39:04] basil: But SolutionBuilder should build without problems
+[21.02.22 14:39:59] basil: Provided VS2019. And if you opened Crypter.sln solution
+[21.02.22 14:40:08] basil: And not Crypter-vs2022.sln
+[21.02.22 14:41:32] weldon: I tried all variants)
+[21.02.22 14:42:18] weldon: I set up a separate VM:
+1. VS19 Com
+2. VS22 Enter
+[21.02.22 14:45:22] basil: I don't know why.
+[21.02.22 14:45:25] basil: What does it say?
+[21.02.22 14:46:10] weldon: I can't tell you now, vm is off
+will you be online tomorrow?
+[21.02.22 14:47:06] basil: Okay. I will. But frances said that in the near future everything will be turned off.
+[02/21/222 14:48:21] basil: Too bad. It was an interesting job.
+[21.02.22 14:48:21] weldon: vdx17@jabber.ru
+[21.02.22 14:48:40] weldon: you think that's it? game over?
+[21.02.22 14:48:57] basil: well, you can't take any chances in our life
+[21.02.22 14:49:05] basil: Let's hope for the best
+[21.02.22 14:49:53] basil: And prepare for the worst)))
+[21.02.22 14:55:00] weldon: yeah
+my external
+vdx17@jabber.ru
+[21.02.22 14:57:30] basil: ong52458@thesecure.biz
+[21.02.22 14:57:49] weldon: ok
+[21.02.22 15:01:02] weldon: see me?
+[21.02.22 15:01:54] weldon: somehow "authenticate contact" is blocked
+[21.02.22 15:02:46] basil: but you can see me online
+[21.02.22 15:02:49] basil: ?
+[21.02.22 15:03:02] weldon: no, with red cross
+[21.02.22 15:03:29] weldon: subscription allowed and requested
+[21.02.22 15:04:09] basil: 10 min
+[21.02.22 15:04:12] basil: be right back
+[21.02.22 15:04:18] basil: try again
+[21.02.22 15:04:29]
+[21.02.22 15:19:17] basil: Anything?
+[21.02.22 15:20:19] weldon: see?
+[21.02.22 15:20:34] basil: honestly, no
+[21.02.22 15:23:42] weldon: make a request
+[21.02.22 15:24:18] basil: I'll try another client now
+[21.02.22 15:25:57] weldon: Remote server not found.
+A remote server or service specified as part or all of the JID of the intended recipient does not exist.
+[21.02.22 15:26:11] basil: yeah. same thing
+[21.02.22 15:26:34] weldon: see adam online
+[21.02.22 15:26:55] basil: maybe I should go to jabber.ru too
+[21.02.22 15:26:59] basil: do
+[21.02.22 15:27:04] basil: now
+[21.02.22 15:27:21] basil: can you give me a link to the client?
+[21.02.22 15:27:25] weldon: yeah dunno, I tried to create one on jabber.ru - no luck
+[21.02.22 15:28:18] weldon: normal psi+ client
+[21.02.22 16:37:21] basil: okay. there must be interference on the line today
+[21.02.22 16:37:27] basil: try again tomorrow
+[21.02.22 16:37:40] weldon: yeah
