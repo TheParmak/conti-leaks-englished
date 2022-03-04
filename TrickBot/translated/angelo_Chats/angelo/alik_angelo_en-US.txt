@@ -1,0 +1,81 @@
+[15.11.21 10:46:12] angelo: They wrote that yes)
+[15.11.21 10:46:25] angelo: let's go by silver's words
+[15.11.21 10:46:49] angelo: welcome to the team !
+[15.11.21 10:46:59] alik: Nice to meet you too
+[15.11.21 10:47:08] alik: Tell me please how is testing arranged
+[15.11.21 10:47:17] alik: Mb some ci/cd principles you use
+[15.11.21 10:51:05] angelo: there are two initial situations
+[15.11.21 10:51:18] angelo: 1) testing with module changes implementation
+[15.11.21 10:51:35] angelo: 2) testing the module after the client claim
+[15.11.21 10:52:14] angelo: umm, I need to get my thoughts together, because I've been working on tric for a long time, and I get pulled there from other tasks
+[15.11.21 11:01:17] angelo: well, i'm testing modules on tric rather than tric itself
+[15.11.21 11:03:24] alik: Okay, just tell me how the test goes.
+
+- do the coder give you a build or does it come automatically from the repository?
+- Tests are automatic or manually run and monitored
+- are the test machines deployed manually or vsphere templates?
+[15.11.21 11:05:36] angelo: everything is much more chaotic
+[11.11.21 11:06:36] angelo: the coder can either send the build directly to test locally or upload a test build via Caesar to the admin panel and run it on the test machine
+[15.11.21 11:06:58] angelo: both manual and automatic tests, depending on what module
+[15.11.21 11:07:16] angelo: my machines are manual
+[15.11.21 11:07:30] angelo: work on VirtualBox
+[15.11.21 11:08:26] alik: Got it.
+[15.11.21 11:09:57] angelo: sorry for being chaotic, but chaos is the predominant force here
+[15.11.21 11:10:06] alik: It's okay
+[29.11.21 12:03:21] angelo: hi
+[29.11.21 13:07:53] alik: Hi.
+[29.11.21 13:08:24] alik: I want to watch the last vnts work. can you arrange it?
+[29.11.21 13:09:23] angelo: vnts on tric?
+[29.11.21 13:09:29] angelo: 1
+[29.11.21 13:09:30] angelo: 2
+[29.11.21 13:09:37] angelo: test
+[29.11.21 13:09:41] angelo: vntz on tric ?
+[29.11.21 13:09:48] alik: yes
+[29.11.21 13:10:33] angelo: I was in a hurry to give it to adam.
+[29.11.21 13:10:46] alik: Is it based on the latest sources?
+[29.11.21 13:11:16] angelo: but here's the question, by the trick clients did not ask recently, I do not know which one is uploaded to the server now
+[29.11.21 13:11:37] angelo: cesar loads
+[29.11.21 13:11:48] angelo: grem vntz supports
+[29.11.21 13:12:13] angelo: I really wanted to go away for an hour
+[29.11.21 13:12:22] alik: Yeah, okay.
+[29.11.21 13:12:42] angelo: did you want to run or just connect ?
+[29.11.21 13:13:07] alik: Access to a test virtual machine
+[29.11.21 13:13:13] alik: Check browsers, shell, etc.
+[29.11.21 13:13:54] angelo: no problem, I'll provide and run trik, wait an hour?
+[29.11.21 13:16:07] alik: Yeah, when you do it, just write
+[29.11.21 13:16:25] angelo: ok !
+[30.11.21 09:20:22] angelo: hi
+[30.11.21 09:20:45] angelo: I'll do it like yesterday
+[30.11.21 09:32:50] alik: Hey, okay.
+[30.11.21 10:50:17] angelo: Got a car
+[01.12.21 08:17:34] alik: Hi.
+[01.12.21 08:17:41] alik: Can you explain how to test vntz?
+[01.12.21 08:17:54] angelo: apr
+[01.12.21 08:18:34] angelo: let me do it
+[01.12.21 08:18:39] angelo: and I'll tell you what I know
+[01.12.21 08:31:18] angelo: put UltraVNC Viewer
+[01.12.21 08:31:23] angelo: to connect to the machine via VNC
+[01.12.21 08:34:30] alik: Yes, there is a client
+[01.12.21 08:34:39] alik: Is there a connection through the backend server?
+[01.12.21 08:35:53] angelo: I can't tell you that
+[01.12.21 08:35:59] angelo: your server
+[01.12.21 08:37:04] angelo: waiting for vnts knock
+[01.12.21 08:37:13] angelo: http://195.123.212.155:9091/api/online/list
+[01.12.21 08:37:25] angelo: here are prescribed IPs of the bots where the module is running
+[01.12.21 08:38:04] alik: Is it always available without authorization?
+[01.12.21 08:38:17] angelo: yes
+[01.12.21 08:38:37] angelo: don't ask, I'm confused by this fact
+[01.12.21 08:38:49] alik: Okay, we'll fix it
+[01.12.21 08:39:17] angelo: while we wait for launch and make coffee after hard night
+[01.12.21 08:39:29] alik: Okay.
+[01.12.21 08:40:28] alik: does uk server put info about connections into database? or only this way data are received via link?
+[01.12.21 08:40:51] angelo: not all technical aspects are familiar to me
+[01.12.21 08:41:12] angelo: it's either Caesar/Grem
+[01.12.21 08:41:18] angelo: sorry
+[01.12.21 08:41:42] alik: It's okay.
+[01.12.21 09:08:24] angelo: VNC:195.123.212.155:9093:jegwRdCQ
+[01.12.21 09:08:36] angelo: ip
+[01.12.21 09:08:38] angelo: password
+[01.12.21 10:38:08] angelo: got it ?
+[01.12.21 10:38:25] alik: Sorry, I'll come back later
+[01.12.21 10:38:34] angelo: ok

@@ -1,0 +1,2710 @@
+[27.07.21 19:57:19] angelo: hi
+[27.07.21 19:57:22] angelo: hi
+[27.07.21 19:57:24] angelo: i need you
+[27.07.21 19:57:35] angelo: very much.
+[27.07.21 19:57:44] angelo: like booze at the prom
+[27.07.21 19:57:45] elroy: Hey. What's up?
+[27.07.21 19:58:25] elroy: Hey... What's going on in there?
+[27.07.21 19:58:26] angelo: StartW=GlobalOut
+[27.07.21 19:58:30] angelo: What the hell is that?
+[27.07.21 19:59:51] angelo: I need krypto fast
+[27.07.21 19:59:53] elroy: This is a parameter for renaming a function. It is written in the Entrypoint field.
+Means that in source code it's StartW, but in your crypto you need to make GlobalOut to be called
+[27.07.21 19:59:55] angelo: I don't understand shit
+[27.07.21 20:00:12] angelo: I wonder if it is important or not
+[27.07.21 20:00:20] angelo: I made a crypt, but I can't run it
+[27.07.21 20:00:37] angelo: rundll32 dl2_x64_g5_329_24687_1.dll,StartW
+[27.07.21 20:00:44] angelo: says wrong entry point
+[27.07.21 20:00:51] elroy: Yes, it's fundamental.
+It runs
+rundll32 file.dll,GlobalOut
+[27.07.21 20:01:34] angelo: let's check it now
+[27.07.21 20:01:39] angelo: otherwise everyone's gone and I'm alone again
+[27.07.21 20:01:43] angelo: haven't been crypting for a month
+[27.07.21 20:02:52] elroy: like a student after practice
+ )))(comparison to graduation)
+[27.07.21 20:03:27] angelo: yeah]
+[27.07.21 20:03:53] angelo: i hate it when by night something is not working
+[27.07.21 20:06:51] angelo: sometimes i wonder what they'd do without me
+[27.07.21 20:08:12] elroy: Do you still need me?
+[27.07.21 20:08:21] angelo: no
+[27.07.21 20:08:24] angelo: thank you.
+[27.07.21 20:08:25] elroy: It's just that the evening is over))
+[27.07.21 20:08:27] angelo: hope not
+[27.07.21 20:08:32] angelo: Ooh.
+[27.07.21 20:08:35] angelo: I have about three hours
+[27.07.21 20:08:59] elroy: ah... i'm 23 now.)
+[27.07.21 20:09:07] angelo: me too
+[27.07.21 20:09:09] angelo: i'm up to 2
+[27.07.21 20:09:17] angelo: I have my own schedule, 14 hours
+[27.07.21 20:09:19] angelo: )))
+[27.07.21 20:09:26] elroy: ))
+[27.07.21 20:09:41] elroy: Ok, see you tomorrow)
+[27.07.21 20:09:43] angelo: good night to you
+[27.07.21 20:09:51] elroy: You too.)
+[13.08.21 15:34:49] angelo: Hi, bro.
+[13.08.21 15:34:51] angelo: I am.
+[13.08.21 15:34:54] angelo: I wanted to ask you
+[08.13.21 15:35:01] angelo: got a minute?
+[13.08.21 16:10:49] elroy: Hi) I'm really busy these days... Talk to me
+[13.08.21 16:11:03] angelo: I'm talking about your load.)
+[13.08.21 16:11:19] angelo: i want to know how to create autotests on vm farm
+[13.08.21 16:11:25] angelo: it's a very long term
+[13.08.21 16:11:39] angelo: find out ))))
+[13.08.21 16:12:18] elroy: I see that the farm - no. There are a lot of machines...
+[13.08.21 16:12:35] elroy: Wild herd, not a farm)))
+[13.08.21 16:13:00] angelo: ahahahah))
+[13.08.21 16:13:02] angelo: well said
+[13.08.21 16:13:06] elroy: And what were you interested in from the tests?
+[13.08.21 16:13:18] angelo: no, just to have an idea
+[13.08.21 16:13:26] angelo: when is that even possible
+[13.08.21 16:13:45] angelo: just push the button and whack the result on all AB's from the farm]
+[13.08.21 16:14:50] elroy: I am interested now in scanning, scanning with rundll, search for detects and something else (slipped my mind). And what about automatic tests, you need to tell me, because I'm not aware of what's needed... I'll put it on my task list then.
+[13.08.21 16:15:46] elroy: > I pressed a button and bam, the results came back on all AVs from the farm.)
+Is this in the sense of a pure scan or is there some kind of test scenario?
+[13.08.21 16:16:01] angelo: hmm, let's postpone this conversation for now, I thought that such a direction is already going
+[13.08.21 16:16:19] angelo: well, an automatic check to run the same xls
+[13.08.21 16:16:34] angelo: sorry for interrupting, I like to chat)
+[13.08.21 16:17:04] elroy: This direction has already outlived even itself, judging by scripts on machines) There autotesting was some time in the antiquity. If you need, you just tell me what you need, what script (what to do) and I'll add a feature
+[13.08.21 16:17:33] elroy: That's right, xls is exactly what slipped my mind ))))
+[13.08.21 16:17:49] angelo: Look at me.)
+[13.08.21 16:17:51] angelo: got it.
+[13.08.21 16:17:54] angelo: and accepted
+[13.08.21 16:17:59] angelo: I'll ask
+[13.08.21 16:18:22] angelo: it's just we're stuck with the tests
+[13.08.21 16:18:22] elroy: Remind me next week about xls, please
+[13.08.21 16:18:29] angelo: they have to be checked by hand, and that's a gemmor
+[13.08.21 16:18:31] angelo: ok
+[13.08.21 16:18:36] angelo: I'll write a note to myself
+[13.08.21 16:22:10] elroy: If it's not difficult, please formulate how it should work. I mean, what do you do, just specify xls in the panel and click "check" or something else? And it's like a check copies the file to the machine and opens in excel? Maybe something else?
+[13.08.21 16:23:57] angelo: I got it, I'll try to write
+[13.08.21 16:24:19] angelo: You're so smart! You can do so many things!
+[13.08.21 16:24:31] angelo: i've been looking at the python book for 3 weeks....
+[13.08.21 16:24:31] elroy: I'm shocked myself.
+[13.08.21 16:24:41] angelo: I'm afraid to open it
+[13.08.21 16:25:01] angelo: I'm not being sarcastic.)
+[13.08.21 16:25:13] elroy: I've been looking at many things like that for years, I even download and collect them, I'm still afraid to open them to read))))
+[13.08.21 16:25:38] angelo: you already know a lot, i can't do anything )))
+[13.08.21 16:25:46] angelo: just a joke about nuance.)
+[13.08.21 16:25:52] elroy: )))
+[13.08.21 16:27:01] elroy: You've lifted my spirits, it turns out I can do something, I once did not think (really). Usually you don't look at experience....
+[13.08.21 16:27:44] angelo: I think you just get used to the skills and think it's normal
+[13.08.21 16:28:05] angelo: but you really are a smart guy
+[13.08.21 16:28:41] angelo: so there's something to be proud of and don't forget it
+[13.08.21 16:28:46] elroy: So you should not stop there))
+[13.08.21 16:29:15] elroy: What's the joke about nuance? Write in the general channel, after that)
+[13.08.21 16:29:46] angelo: that's it, I'll start studying today)
+[13.08.21 16:30:06] angelo: yeah, everybody knows him.
+[13.08.21 16:35:28] angelo: my rocket glitched
+[13.08.21 16:35:32] angelo: read it in general )
+[18.08.21 12:32:05] angelo: hi !!!
+[18.08.21 12:32:09] angelo: I'll finish the job
+[18.08.21 12:32:14] angelo: and you.
+[18.08.21 12:32:17] elroy: Okay.
+[18.08.21 12:32:21] elroy: Greetings.)
+[18.08.21 12:36:07] angelo: and what will we touch?
+[18.08.21 12:36:16] angelo: I understand that not women ((
+[18.08.21 12:37:07] elroy: Download: https://qaz.im/load/Qf4DF4/9H2y24
+Delete: https://qaz.im/index.php?a=delete&q=1655627791
+Nhhgfr4Desdx192030405060
+[18.08.21 12:38:51] angelo: got it
+[18.08.21 12:40:22] elroy: there are 2 exe, you launch it, it stands, wait for it to fall down...
+If it crashes, it says
+```
+To many tries! Total tries: .....
+Press any key to continue (or something like that)
+```
+So far it works successfully, writes to the console OK from time to time.
+It is not using the network.
+The task is to run on a couple of systems for half an hour and then see if it crashes (ie, will not write to the console message above)
+[18.08.21 12:40:52] angelo: shit
+[18.08.21 12:40:59] angelo: and for 32 need 32 axis ?
+[18.08.21 12:41:08] elroy: Nah, you can go to 64
+[18.08.21 12:41:12] angelo: okay.
+[18.08.21 12:41:16] angelo: I'll run two 10s
+[18.08.21 12:41:19] elroy: You can run both on the same machine
+[18.08.21 12:41:23] angelo: I take it AB is off
+[18.08.21 12:41:23] elroy: And both on the second
+[18.08.21 12:41:28] angelo: okay
+[18.08.21 12:41:32] elroy: No, don't cut it off.
+[18.08.21 12:41:55] elroy: If he eats it, tell him.)
+[18.08.21 12:41:55] angelo: I'll start in 5 minutes
+[18.08.21 12:42:05] elroy: Okay.
+[18.08.21 12:42:05] angelo: update av ?
+[18.08.21 12:42:07] angelo: or whatever
+[18.08.21 12:42:13] elroy: no, it doesn't care about the av
+[18.08.21 12:42:24] angelo: and the update ?
+[18.08.21 12:42:28] angelo: love the clarity ))
+[18.08.21 12:42:43] elroy: Doesn't matter.
+[18.08.21 12:42:47] elroy: don't update)
+[18.08.21 12:42:47] angelo: got it.
+[18.08.21 13:34:24] angelo: 30 minutes
+[18.08.21 13:34:24] angelo: so far so good
+[18.08.21 13:34:49] elroy: Okay, thanks, that's enough.
+[18.08.21 13:34:54] elroy: So it works.)
+[18.08.21 13:35:05] angelo: Look.
+[18.08.21 13:35:09] angelo: I have enough memory
+[18.08.21 13:35:15] angelo: so the cars would stand still
+[18.08.21 13:35:20] angelo: I have 32 Gb now
+[18.08.21 13:37:11] elroy: This is not necessary. This algorithm will work only 1-2 seconds, you tested it on two machines for 30 minutes, I also tested it on mine)
+[18.08.21 13:37:18] elroy: So thanks, turn it off)
+[18.08.21 13:37:23] elroy: It won't drop on prod
+[18.08.21 13:39:04] angelo: ok
+[18.08.21 13:39:14] angelo: what kind of software ?
+[18.08.21 15:48:09] angelo: I'm a love barbarian
+[18.08.21 15:48:14] angelo: And clingy as a leaf
+[18.08.21 15:48:48] elroy: Sorry, I didn't finish.)
+[18.08.21 15:51:25] elroy: This is an algorithm that measures the state of the environment. The idea is that in a multitasking environment, it doesn't happen that the same labor-intensive algorithm is executed in the same amount of time. Usually the variance is more than 40% in time. We make measurements and take this into account, if it is equal, then we are emulated. And we measure the time with two timers, it should never be the same, if it is - we are emulated. If the timers diverge a lot - we're emulated too...
+[18.08.21 15:51:32] elroy: Approximately like this
+[18.08.21 15:51:42] elroy: This is protection from AV emulator
+[18.08.21 15:51:53] elroy: It will hang until it passes the test
+[18.08.21 15:52:08] angelo: interesting
+[18.08.21 15:52:13] elroy: It's okay, it's been passed many times.
+[18.08.21 15:52:55] angelo: Oh, you programmers are smart guys
+[18.08.21 15:53:27] elroy: The guy in the debugger will go around in circles, too, if he'll sit and click)
+[18.08.21 15:54:13] elroy: But even that doesn't help much. This algorithm lasted only a month, guys from eset figured it out and emulated it correctly.
+[18.08.21 15:54:30] elroy: You tested a new one.)
+[18.08.21 15:54:34] elroy: We'll see)
+[18.08.21 15:54:39] angelo: cool
+[18.08.21 15:54:52] angelo: didn't think about going to work for them?)
+[18.08.21 15:54:59] angelo: at kasper
+[18.08.21 15:55:09] angelo: Dr.Web say faggots
+[18.08.21 15:55:16] elroy: No) It pays more, it does less work)))
+[18.08.21 15:55:35] angelo: I won't even ask about pay more))
+[18.08.21 15:55:41] elroy: )
+[18.08.21 15:55:51] angelo: well done
+[18.08.21 15:55:57] angelo: pie on the shelf ;)
+[18.08.21 15:56:05] elroy: thanks.)
+[18.08.21 15:56:12] elroy: Just right for your tea.)
+[18.08.21 15:56:23] angelo: I got cholodets.)
+[18.08.21 15:56:25] angelo: for tea )))
+[30.08.21 12:15:24] angelo: hello head !
+[30.08.21 12:15:27] angelo: )
+[30.08.21 12:15:46] elroy: hello. Something wrong?)
+[30.08.21 12:17:54] angelo: )))
+[30.08.21 12:18:03] angelo: I mean the farms
+[30.08.21 12:18:09] angelo: with xls
+[30.08.21 12:18:54] elroy: I already included in the ToR to the developer. I haven't forgotten)
+[30.08.21 12:19:07] elroy: And you most importantly reminded me in time, 1 or 2 weeks passed)))
+[30.08.21 12:19:23] angelo: shit
+[30.08.21 12:19:26] angelo: The client is alive
+[30.08.21 12:19:34] elroy: ah))
+[30.08.21 12:19:56] elroy: In development in general
+[30.08.21 12:21:05] angelo: how long do you think it will last ?
+[30.08.21 12:21:16] angelo: I'll check it with my hands today ((
+[30.08.21 12:21:22] elroy: I think so (honestly)
+[30.08.21 12:22:32] angelo: my hands are sweating with annoyance
+[30.08.21 12:23:00] elroy: Take a glass of cold beer in your hands, relax...
+[30.08.21 12:23:03] elroy: We will soon)
+[30.08.21 12:23:08] angelo: ahahaha )))
+[30.08.21 12:23:19] angelo: it's non-alcoholic, pens are sad
+[30.08.21 12:23:32] elroy: Take the normal.)
+[30.08.21 12:24:02] angelo: my brain says: I'm already stupid, don't pour the blue serpent in me
+[30.08.21 12:24:03] angelo: =)
+[30.08.21 12:24:55] elroy: there are many other cool things that destroy and cool down the body
+[30.08.21 12:25:03] elroy: Pepsi for instance))
+[30.08.21 12:27:13] angelo: there's a redbull standing in front of me,
+♪ and asks me softly, softly, softly ♪
+♪ Pour me another hundred grams, bro ♪
+But only vodka, and it's gonna be a bummer.
+[30.08.21 12:27:29] angelo: =))))))))
+[30.08.21 12:27:32] elroy: )))
+[26.10.21 17:15:34] angelo: questions
+[26.10.21 17:15:38] angelo: how to encrypt
+[26.10.21 17:15:53] angelo: 1) g12 - one crypt in dll, gigi and random-string
+2) g10 - one crypt in dll, gigi
+[26.10.21 17:16:49] elroy: in the cryptopanel if, in the build window you'll see an exported function (in blue usually), click on it and then add in =gigi
+[26.10.21 17:17:31] elroy: I don't know about the random string, better write to the coder, whose crypto you're going to use, he will
+[26.10.21 17:25:37] angelo: g10 - one crypt in dll, gigi
+[26.10.21 17:25:43] angelo: it's one crypt right ?
+[26.10.21 17:26:00] angelo: because I thought one crypt dll and the other dll hygi
+[26.10.21 17:26:32] elroy: it's one crypt, but it needs a gigi entry point instead of the one in the source
+[26.10.21 17:27:47] angelo: so it will be like this in entry point line - gigi=gigi ?)
+[26.10.21 17:27:53] angelo: sorry for obtuseness
+[26.10.21 17:28:23] elroy: What's the original entry point?
+[26.10.21 17:28:26] elroy: In the source
+[26.10.21 17:29:01] elroy: Which file in the panel and which tab?
+[26.10.21 17:29:02] angelo: in txt they write so
+[26.10.21 17:29:03] angelo: the mode of the BC loader (Appendix P4.2):
+dll_rundll32(gigi)
+
+ways to run the BK loeder (for any modes except generic):
+exe
+dll_rundll32 - gigi
+[26.10.21 17:29:13] angelo: l_dll_rndll_g_64_p2_g12_v109_26_10_21_logs_no.dll
+[26.10.21 17:32:26] elroy: Look, you click on build in the panel and there in the box
+```
+DLL functions:
+    acxcv
+    gigi
+    grhsdf
+    hyujy
+    qwevvcv
+    wetuiyu
+```
+There's gig among them already, you don't write anything in the field
+[26.10.21 17:32:42] elroy: They just had ElementIDs there
+[26.10.21 17:32:42] angelo: well, I do not understand this point, I think there is )
+[26.10.21 17:32:53] angelo: what is the best crypto now ?
+[26.10.21 17:33:11] elroy: I don't know, everything is dirty...
+[26.10.21 17:33:18] elroy: Try 10 crypto
+[26.10.21 17:33:18] elroy: And 7.
+[26.10.21 17:33:24] elroy: And then all the others.
+[26.10.21 17:48:21] elroy: You know, you can make a random string by renaming a function you don't need
+[26.10.21 17:48:37] elroy: There's, what, a 32 character string, right?
+[26.10.21 17:48:57] angelo: you're speaking labanese to me now
+[26.10.21 17:49:14] elroy: qwevvcv=NMDKCDFKHDJHFJDHFJDJDHFSD
+[26.10.21 17:49:21] elroy: Here's a random string
+[26.10.21 17:49:31] elroy: Only you need it for another kipt
+[26.10.21 17:49:41] elroy: I wrote this for 12
+[26.10.21 17:50:23] elroy: Look in the list of functions there except gigi, pick any. and do it like this, there's 40 characters needed
+[26.10.21 17:50:58] elroy: The customer will need to send this random string (the one after the equal sign)
+[26.10.21 17:51:51] angelo: qwevvcv=40 whatever capital letters ?
+[26.10.21 17:52:05] elroy: any yes
+[26.10.21 17:52:14] angelo: why 40 ?
+[26.10.21 17:52:54] elroy: I don't know. Not 40 at all. There must be from 64 to 128.
+[26.10.21 17:53:08] elroy: 64 whatever symbols
+[26.10.21 17:53:17] angelo: 10 Failed
+[26.10.21 17:53:19] angelo: dog
+[26.10.21 17:53:22] elroy: But only letters
+[26.10.21 17:53:22] angelo: three times already
+[26.10.21 17:53:40] elroy: I wrote bullshit there, gigi put it in the line
+[26.10.21 17:53:46] elroy: that's why failed
+[26.10.21 17:59:54] elroy: ran a random string, for 12, the tenth crypt, there's a random string after the equals symbol in the comment field, give it to the customer (for this crypt, if it is successful)
+[26.10.21 18:00:19] angelo: thanks !
+[26.10.21 18:00:26] angelo: I wrote bullshit there, gigi in the line
+[26.10.21 18:01:02] angelo: I don't get it.
+[26.10.21 18:01:04] elroy: You didn't have to write anything in the line. Well, or here for renaming function, then there must be an equal sign
+[26.10.21 18:01:16] angelo: I didn't
+[26.10.21 18:01:26] angelo: just selected the right function and it printed in the string
+[26.10.21 18:02:23] elroy: This was done for convenience, to avoid typing in a line from the screen, pressed the function and it entered the field, then after it you write an equal and a new name.
+[26.10.21 18:02:25] angelo: crypto gives me a headache.)
+[26.10.21 18:03:12] elroy: In the genre's case, the new name would be gigi
+i.e. gigi=gigi
+That makes no sense.
+That's why the field had to be empty
+[26.10.21 18:03:26] angelo: i did not write that !
+[26.10.21 18:03:28] elroy: I wrote another function for another crypt
+[26.10.21 18:03:29] angelo: slander !
+[26.10.21 18:03:44] angelo: i just clicked select GIVI !
+[26.10.21 18:03:45] angelo: =)
+[26.10.21 18:03:46] angelo: honestly
+[26.10.21 18:04:00] elroy: You shouldn't have chosen her)
+[26.10.21 18:04:25] elroy: You didn't select it, you clicked it. That action just put it in the page.
+[26.10.21 18:04:57] elroy: By the way, you're stepping on these rables for the 4th or 5th time)
+[26.10.21 18:05:11] elroy: Stick a sticky note on your monitor.)
+[26.10.21 18:05:16] angelo: bro I'm a tester
+[26.10.21 18:05:16] angelo: I got a rake in my head
+[26.10.21 18:05:26] elroy: ))))
+[26.10.21 18:05:27] angelo: I've beaten it all off already]
+[26.10.21 18:05:40] angelo: no sensitivity there
+[26.10.21 18:07:21] elroy: ↳ l_dll_rndll_g_64_p2_g12_v109_26_10_21_logs_no_79336_1.dll - you made it without random string
+[26.10.21 18:08:06] angelo: there were two needed, random and digi
+[26.10.21 18:08:19] angelo: look, i'm a fool
+[26.10.21 18:08:20] angelo: honestly
+[26.10.21 18:08:24] elroy: No........
+[26.10.21 18:08:29] angelo: i don't get it
+[26.10.21 18:08:33] angelo: chose BK
+[26.10.21 18:08:38] angelo: kryptor 10th
+[26.10.21 18:08:46] angelo: pressed digi
+[26.10.21 18:08:54] elroy: Oh, yeah, I saw, that's right, two had to be
+[26.10.21 18:09:16] angelo: two what 7)
+[26.10.21 18:09:18] angelo: ?
+[26.10.21 18:09:57] elroy: > there were two, randoms and digis.
+Both with digi, but one of them with a random line as a gift
+[26.10.21 18:10:39] angelo: got it, so you don't have to choose anything at all, it originally comes in the source and duplicates it not me
+[26.10.21 18:11:19] angelo: but how to run with random string ?
+[26.10.21 18:12:57] angelo: well, eventually he doesn't need them for today ))
+[26.10.21 18:17:15] elroy: you run as usual, in this case you run with gigi, and the random string just lies inside
+[26.10.21 18:17:32] elroy: You don't need it, because you waited a long time....
+[26.10.21 18:21:15] angelo: well, i don't know how it happened, they give it out with Kolya's permission
+[26.10.21 18:21:30] angelo: i just crypto rarely
+[26.10.21 18:21:45] angelo: that's why everything is wiped clean in my head, just formatted
+[26.10.21 18:22:43] angelo: you tell me if you know, our farm has not moved from https://162.244.82.215/phpvirtualbox/ ?
+[26.10.21 18:22:55] angelo: because boxer is silent, Dima is silent
+[26.10.21 18:27:02] elroy: No, I don't know...
+[26.10.21 18:27:17] angelo: not my day, I'm a log
+[03.11.21 16:35:26] angelo: i put hoonix
+[03.11.21 16:35:30] angelo: there's nat
+[03.11.21 16:35:33] angelo: internal network
+[03.11.21 16:35:38] angelo: also set the same for vindex
+[03.11.21 16:36:04] angelo: Hoonix uses this
+[03.11.21 16:36:05] angelo: Type: "whonix" <enter> for help.
+user@host:~$ ip address show
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00 brd 00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:5b:7f:98 brd ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global eth0
+       valid_lft forever preferred_lft forever
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:70:ce:6c brd ff:ff:ff:ff:ff:ff
+    inet 10.152.152.10/18 brd 10.152.191.255 scope global eth1
+       valid_lft forever preferred_lft forever
+[03/11/21 16:36:09] angelo: why that ?!)
+[03.11.21 16:36:21] elroy: a minute)
+[03.11.21 16:37:10] angelo: as I understand, all you have to do is configure IPv4 on the Windows
+[03.11.21 16:37:38] elroy: I don't really know what is there. Only by trial and error.
+[03.11.21 16:37:51] elroy: Both interfaces already have ip
+[03.11.21 16:37:59] elroy: That's weird.
+[03.11.21 16:38:21] elroy: It's not supposed to be on the internal
+[03.11.21 16:38:27] angelo: I have to fill in the fields
+[03.11.21 16:38:28] angelo: Ip - 10.152.152.44
+
+The mask is 255.0.0.0
+
+Gateway - 10.152.152.10
+
+Dns - 10.152.152.10
+[03.11.21 16:38:34] angelo: and where to get them here dzu)
+[03.11.21 16:39:01] elroy: inet 10.152.152.10/18 brd 10.152.191.255 scope global eth1
+[03.11.21 16:39:12] elroy: inet 10.0.2.15/24 brd 10.0.2.255 scope global eth0
+[03.11.21 16:40:03] elroy: 255.0.0.0 is not /18
+[03.11.21 16:40:31] angelo: that's right, for dumb me )
+[03.11.21 16:40:48] angelo: where is mask here ?
+[03.11.21 16:41:21] elroy: /24 is 255.255.255.0
+[03.11.21 16:41:34] angelo: ok
+[03.11.21 16:41:37] angelo: wait a minute )
+[03.11.21 16:41:45] angelo: Type: "whonix" <enter> for help.
+user@host:~$ ip address show
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+link/loopback 00:00:00:00:00 brd 00:00:00:00:00
+inet 127.0.0.1/8 scope host lo
+valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+link/ether 08:00:27:5b:7f:98 brd ff:ff:ff:ff:ff
+inet 10.0.2.15/24 brd 10.0.2.255 scope global eth0
+valid_lft forever preferred_lft forever
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+link/ether 08:00:27:70:ce:6c brd ff:ff:ff:ff:ff:ff
+inet 10.152.152.10/18 brd 10.152.191.255 scope global eth1
+valid_lft forever preferred_lft forever
+[03.11.21 16:41:51] angelo: that's where you take it from
+[03.11.21 16:42:10] angelo: where's the ip mask and gateway
+[03.11.21 16:42:31] elroy: Well look
+[03.11.21 16:45:39] elroy: Eth0 interface
+```
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+link/ether 08:00:27:5b:7f:98 brd ff:ff:ff:ff:ff
+inet 10.0.2.15/24 brd 10.0.2.255 scope global eth0
+valid_lft forever preferred_lft forever
+```
+ip 10.0.2.15 mask 24 or 255.255.255.0 brd is a broadcasting broadcast for the network. i.e. the network ends at 10.0.2.254
+Where is the default gateway here, I don't know. It's not listed here. To find out, type
+route in the console and you'll get a route entry with the default gateway.
+If you want to let the wind through Linux, the gateway for the wind is the ip of the machine, ie 10.0.2.15.
+In this case you will have to take unoccupied ip from this network.
+[03.11.21 16:46:51] elroy: This is if eth0 is internal network. If not, ip see below
+[03.11.21 16:47:45] elroy: Here's a network calculator to help
+```
+https://ipcalculator.com/
+```
+[03.11.21 16:48:14] angelo: this isn't easy
+[03.11.21 16:50:24] angelo: it's not linux yet
+[03.11.21 16:50:28] angelo: And Hunix is a dog
+[03.11.21 16:51:03] elroy: he put Hyunix and complains)))
+[03.11.21 16:51:10] angelo: ))))
+[03.11.21 16:51:14] angelo: yeah
+[03.11.21 16:51:25] angelo: yeah i thought once on google manual
+[03.11.21 16:51:26] angelo: and no
+[03.11.21 16:52:09] elroy: would put centos or gentoo or arch
+[03.11.21 16:52:31] elroy: Are you doing this for torus?
+[03.11.21 16:53:27] angelo: yeah
+[03.11.21 16:53:30] angelo: it was advised
+[03.11.21 16:53:32] angelo: amazing
+[03.11.21 16:53:44] angelo: what if you put this in
+[03.11.21 16:53:45] angelo: Ip - 10.152.152.44
+
+The mask is 255.0.0.0
+
+Gateway - 10.152.152.10
+
+Dns - 10.152.152.10
+[03.11.21 16:53:49] angelo: from description
+[03.11.21 16:53:55] angelo: will the internet work ?
+[03.11.21 16:54:03] angelo: do not understand how and how
+[03.11.21 16:56:08] elroy: the mask will only be 255.255.192.0 = 18
+[03.11.21 16:56:45] elroy: the gateway is this machine
+[03.11.21 16:56:54] elroy: for the wine
+[03.11.21 16:57:11] angelo: I inputted what I wrote above and it works with Tor Hoonx 0_0
+[03.11.21 16:57:14] angelo: shit
+[03.11.21 16:57:46] elroy: Exactly through tor? Well, then it works.
+[03.11.21 16:58:15] angelo: just didn't understand how, I thought it would be default addresses
+[03.11.21 16:58:42] angelo: but here, according to Hunix, they are set by default.
+[03.11.21 17:01:46] elroy: coLLin is spelled with two L's
+[03.11.21 17:02:23] elroy: you called the wrong Colin
+[03.11.21 17:06:36] angelo: there are two of them 0_0
+[03.11.21 17:07:17] elroy: yeah)
+[03.11.21 17:07:51] angelo: even here, humanly, it was not possible ))
+[03.11.21 17:08:03] elroy: These are not our methods)
+[03.11.21 17:08:12] elroy: This is a Colin mimicry
+[05.11.21 12:34:59] angelo: how and where to get the script
+[05.11.21 12:35:01] angelo: Webroot
+[05.11.21 12:35:11] angelo: we have vnts die on webroot noticed
+[05.11.21 12:36:04] elroy: Do you really need the script?
+[05.11.21 12:36:23] angelo: well, it's the only way to find out the detects (
+[05.11.21 12:36:42] angelo: any other suggestions ?
+[05.11.21 12:37:23] elroy: The script needs to be developed. These were developed, but on the instructions of silver. convince him that you need a script and nothing else. i'll give it to coders for development
+[05.11.21 12:38:23] angelo: Like two fingers, bro.)
+[05.11.21 12:38:41] angelo: yes
+[05.11.21 12:39:45] elroy: Define "gave."
+[05.11.21 12:40:30] angelo: if it was her, what's the meaning of the word was nice to me ) and so Silver said that the script is needed for webrtoy
+[05.11.21 12:40:35] angelo: )
+[05.11.21 12:44:08] elroy: I see, I'll give it to development then
+[05.11.21 12:44:34] angelo: thanks bro !
+[05.11.21 14:41:06] elroy: Coders figured out how to do
+[05.11.21 14:42:21] elroy: Smoked the coders how to make
+Here is a PowerShell script
+```
+Get-Content -Path 'C:\ProgramData\WRData\WRLog.log' | Select-String -Pattern 'Infection detected'
+```
+[05.11.21 14:46:58] elroy: Repeat message
+[05.11.21 14:47:16] angelo: I didn't write anything new.)
+[05.11.21 14:47:27] elroy: Did you get the script?
+[05.11.21 14:47:44] angelo: No
+[05.11.21 14:48:01] elroy: Coders figured out how to make
+Here's a PowerShell script
+```
+Get-Content -Path 'C:\ProgramData\WRData\WRLog.log' | Select-String -Pattern 'Infection detected'
+```
+[05.11.21 14:48:13] elroy: For webroot
+[05.11.21 14:48:18] angelo: thanks !
+[05.11.21 14:48:29] angelo: fire
+[05.11.21 14:48:56] elroy: Short and sweet
+[05/11/21 14:49:11] elroy: Here's another one. Same thing in general.
+```
+$path=$env:PROGRAMDATA + "\WRData\dbk.db"
+Get-Content $path -Encoding Unicode
+```
+[05.11.21 14:49:20] angelo: wrote both
+[05.11.21 14:49:23] angelo: thanks !
+[05.11.21 14:49:39] elroy: Please.)
+[05.11.21 14:50:03] angelo: I'll check it right now.
+[05.11.21 14:50:47] angelo: it's a powwow, right?
+[05.11.21 14:51:09] elroy: Yes, it is
+[05.11.21 14:54:43] angelo: it works !
+[05.11.21 14:54:52] angelo: still want to understand the answer !
+[05.11.21 14:55:37] elroy: Filter by date
+[05.11.21 14:55:46] elroy: By time
+[05.11.21 14:56:48] angelo: There's a lot of detects in a couple of days
+[05.11.21 14:57:00] elroy: Delete files for example)))
+[05.11.21 14:57:04] angelo: I don't know what dll in vntz
+[05.11.21 14:57:09] elroy: Or backup
+[05.11.21 14:57:25] elroy: Or for all time?
+[05.11.21 14:57:44] angelo: no, yesterday we ran the module and it failed
+[05.11.21 14:58:13] elroy: Take MD5 from the module you're looking for and add that MD5 to the filter here
+[05.11.21 14:58:35] elroy: Filter by yesterday's date
+[05.11.21 14:58:36] angelo: you forgot who you're talking to
+[05.11.21 14:58:44] angelo: )
+[05.11.21 14:59:02] elroy: Where the pattern is in quotes
+[05.11.21 14:59:10] elroy: That's where you put the string you're looking for
+[05.11.21 14:59:29] elroy: If there's a date there, it will be for a specific day
+[05.11.21 14:59:32] angelo: I don't know how to remove it from the module
+[05.11.21 14:59:38] angelo: MD5
+[05.11.21 14:59:44] angelo: and grem dog is silent
+[05.11.21 15:00:14] elroy: do you have a total commander?
+[05.11.21 15:00:25] angelo: Of course.
+[05.11.21 15:01:00] elroy: That's where you select the file
+then File -> Calculate ...
+[05.11.21 15:01:08] elroy: Choose MD5 there
+[05.11.21 15:01:33] elroy: There is also a third option
+```
+$path=$env:PROGRAMDATA + "\WRData\WRLog.log"
+Get-Content $path | Select-String -Pattern 'Infection detected'
+```
+[05.11.21 15:01:42] elroy: Coders crossed the first and the second))
+[05.11.21 15:04:17] angelo: calculate
+[05.11.21 15:04:25] angelo: in foreign as in total ?)
+[05.11.21 15:04:29] angelo: tell me.
+[05.11.21 15:04:41] elroy: calculate
+[05.11.21 15:04:44] elroy: it's down there
+[05.11.21 15:05:08] angelo: I'm tired of googling today.)
+[05.11.21 15:05:08] angelo: I thought it would be something different
+[05.11.21 15:05:11] elroy: It says CRC MD5 SHA
+[05.11.21 15:06:24] angelo: Nope
+[05.11.21 15:06:41] angelo: only
+[05.11.21 15:06:46] angelo: Create checksum
+[05.11.21 15:12:41] angelo: found how
+[05.11.21 15:12:41] angelo: it's easier)
+[05.11.21 15:14:48] angelo: thank you !
+[05.11.21 15:15:10] angelo: D4A631B2B4BC1FB8EA2B680103EDE06D76706627883AFDB783E1445E47C366EB] [MD5: 18B68D5E7D021663C38F1509AE4777AB] [3/00080000]
+[W32.Trojan.Gen]
+Fri 2021-11-05 07:01:35.0495 Infection detected: C:\Users\Marcus81\AppData\Local\Temp\8717.dll [SHA256:
+
+D4A631B2B4BC1FB8EA2B680103EDE06D76706627883AFDB783E1445E47C366EB] [MD5: 18B68D5E7D021663C38F1509AE4777AB] [3/00080000]
+[W32.Trojan.Gen]
+[05.11.21 15:15:29] angelo: checked hash of W32 Gen 18B68D5E7D021663C38F1509AE4777AB
+[05.11.21 15:15:39] angelo: it turns out so right ?!?
+[05.11.21 15:15:55] elroy: Yeah, looks like it
+[05.11.21 15:16:02] elroy: Since his hash is in the logs
+[05.11.21 15:16:11] angelo: well, at least i managed something ! )
+[05.11.21 15:16:19] elroy: )))
+[05.11.21 15:47:04] angelo: i understand it, but i am really glad) at least i managed to find out something, but VNC module is pure statics (
+[05.11.21 15:47:10] angelo: you have to farm it with webroot yes ?
+[05.11.21 16:02:48] elroy: I have no answer to this question)
+[05.11.21 16:03:37] angelo: eh
+[05.11.21 16:03:40] angelo: something never second day
+[05.11.21 16:03:44] angelo: where does everybody go ?!
+[05.11.21 16:03:49] angelo: are they celebrating?
+[05.11.21 16:04:02] elroy: Maybe...
+[05.11.21 16:04:20] elroy: Everybody is sick, celebrating, offices are closed,...
+[05.11.21 16:09:51] angelo: i've been asking myself for a month now why i'm stuck here from 10 to 12...)
+[05.11.21 16:17:57] elroy: Two possibilities:
+1) because it's interesting.
+2) because you're needed here
+[05.11.21 16:18:00] angelo: no, not a month, half a year then.)
+[05.11.21 16:18:18] angelo: 1) + 2) +++++
+[05.11.21 16:18:27] angelo: can't get off knowing he's needed
+[05.11.21 16:18:38] elroy: There you go.)
+[05.11.21 16:18:50] angelo: Oh man, my wife needs me))
+[05.11.21 16:19:05] angelo: She'll trade me in
+[05.11.21 16:19:08] elroy: You'll have to make a tough choice
+[05.11.21 16:19:25] angelo: yeah, add money for me :D
+[05.11.21 16:19:32] elroy: )))
+[05.11.21 16:19:36] angelo: )))
+[05.11.21 16:19:48] elroy: Talk to frances)
+[05.11.21 16:19:58] elroy: You might get lucky
+[05.11.21 16:20:29] elroy: I'll be gone for a while.
+[05.11.21 16:20:46] angelo: go ahead)
+[08.11.21 16:34:34] angelo: Hi.)
+[08.11.21 16:34:43] angelo: but on Sophos can not make a script?)
+[08.11.21 16:37:10] elroy: I don't think so today, but I'll give you the task now.
+[08.11.21 16:37:13] elroy: Hello.
+[08.11.21 16:37:18] angelo: hi
+[08.11.21 16:37:34] angelo: i don't have many options why vntz might not work (
+[08.11.21 16:37:41] angelo: there's sofos
+[08.11.21 16:39:07] elroy: remove sofos and check, if it works it was the problem))
+[08.11.21 16:39:22] angelo: damn it) really
+[08.11.21 16:39:32] angelo: any idea how to do it remotely ?)
+[08.11.21 16:39:36] angelo: without vnts
+[08.11.21 16:40:05] angelo: there is probably some script or something like #deletenacher Sofos.exe
+[08.11.21 16:45:46] angelo: do you have one for Defender ?
+[08.11.21 16:45:50] angelo: something confuses me
+[08.11.21 16:45:52] angelo: Write-Host "Powershell information: "
+$PSVersionTable.PSVersion
+Write-Host "Process information: "
+Get-Process
+[08.11.21 16:46:56] elroy: ``
+Get-WinEvent -LogName "Microsoft-Windows-Windows Defender/Operational" |
+    Where-Object {
+    $_.TimeCreated -ge '2021-10-08 00:00:00' -and
+    $_.Id -in 1006,1015,1116,1117 }
+```
+[08.11.21 16:47:04] angelo: Get-WinEvent -LogName "Microsoft-Windows-Windows Defender/Operational" | Where-Object {$_.TimeCreated -ge '2021-11-08 12:00:00' -and $_.Id -in 1005, 1006, 1015, 1116, 1117} | Format-Table TimeCreated, Id, LevelDisplayName, message -wrap
+[08.11.21 16:47:10] elroy: For def, just fix the date
+[08.11.21 16:47:30] angelo: what's this line I have
+[08.11.21 16:47:31] angelo: | Format-Table TimeCreated, Id, LevelDisplayName, message -wrap
+[08.11.21 16:48:07] elroy: If I had known
+[08.11.21 16:48:22] elroy: It's like an output format probably
+[08.11.21 16:48:52] angelo: Yeah, there's obviously something about the output
+[08.11.21 16:48:55] angelo: thanks !
+[08.11.21 16:49:34] elroy: Sophos request to do?
+[08.11.21 16:49:52] elroy: what's the full name there?
+[08.11.21 16:50:37] angelo: yeah
+[08.11.21 16:50:43] angelo: you asked
+[08.11.21 16:50:56] angelo: Sophos Anti-Virus
+[08.11.21 16:51:04] angelo: eh
+[08.11.21 16:51:08] angelo: wish we could have done it today.
+[08.11.21 16:51:11] angelo: just in case
+[08.11.21 17:14:56] elroy: No one's done the script yet
+[08.11.21 17:42:53] angelo: okay
+[08.11.21 17:47:53] elroy: Listen.
+[08.11.21 17:48:01] angelo: very
+[08.11.21 17:48:07] elroy: Do you have a car on our farm?)
+[08.11.21 17:48:11] angelo: Like your father
+[08.11.21 17:48:16] angelo: uh
+[08.11.21 17:48:17] elroy: )))
+[08.11.21 17:48:18] angelo: yes
+[08.11.21 17:48:25] angelo: but I haven't gone there yet
+[08.11.21 17:48:28] angelo: all on my own
+[08.11.21 17:48:31] elroy: can you run me a file on it?)
+[08.11.21 17:48:44] elroy: I need it on the farmer's.
+[08.11.21 17:48:52] angelo: hmm.
+[08.11.21 17:50:23] elroy: Will you run it?)
+[08.11.21 17:50:30] angelo: ok
+[08.11.21 17:50:32] angelo: hold on.
+[08.11.21 17:50:36] angelo: why not
+[08.11.21 17:50:53] elroy: where on the panel file?)
+[08.11.21 17:51:07] angelo: no
+[08.11.21 17:51:13] angelo: better put it in the cloud
+[08.11.21 17:51:22] elroy: okay.
+[08.11.21 17:54:41] elroy: Forgot2Frigatis3Defragio
+https://file.io/ouv1r6Srf7PJ
+[08.11.21 17:56:46] elroy: Run
+rundll32 file.dll,One
+[08.11.21 17:57:05] angelo: wait
+[08.11.21 17:57:07] angelo: 5 min
+[08.11.21 18:18:22] angelo: password does not work !
+[08.11.21 18:18:24] angelo: at the panel
+[08.11.21 18:18:35] angelo: https://31.14.40.143:9006/
+[08.11.21 18:18:40] angelo: this is the new address ?
+[08.11.21 18:19:00] elroy: I don't know...
+[08.11.21 18:19:28] elroy: Admin gator
+[08.11.21 18:21:24] elroy: Okay. It's not urgent, you can check it tomorrow. It's important for me to get it running specifically on the farm. It didn't work at Nick's. Very interesting to confirm or deny. The farm just seems to have an old CPU... That must be it.
+[08.11.21 18:21:45] angelo: wrote him back
+[08.11.21 18:21:47] angelo: He's watching.
+[08.11.21 18:22:04] angelo: better today
+[08.11.21 18:22:09] angelo: I'm busy
+[08.11.21 18:23:14] elroy: About the skeptic. I'll be tomorrow only in the second half of the day, or even in the evening. Write to collin tomorrow about the script, tell him that the script is written by those who wrote the script for webrout last time. He knows who to move.
+[08.11.21 18:23:30] angelo: ok
+[08.11.21 18:23:31] angelo: Thanks.
+[08.11.21 18:25:06] elroy: when you check the file, drop to the crypters channel the result, what works or not. ok?
+[08.11.21 18:26:43] elroy: I quit then. Tomorrow is a weird day))
+[08.11.21 18:30:12] angelo: how does it work ?
+[08.11.21 18:30:24] angelo: what is the result of the work ?
+[08.11.21 18:31:09] elroy: It will show a window, then press ok, it will show another window, wider (whatever it is in it). Then you press the last one - it's the same as the first one.
+[08.11.21 18:31:27] angelo: ok
+[08.11.21 18:31:30] angelo: I think I got it
+[08.11.21 18:31:42] elroy: But maybe not right away, there's a floating delay
+[08.11.21 18:31:49] elroy: About 2 minutes
+[08.11.21 18:32:05] angelo: Okay.
+[08.11.21 18:32:09] angelo: I'll wait for the gator
+[08.11.21 18:32:25] elroy: see you tomorrow]
+[08.11.21 18:32:32] angelo: bye
+[09.11.21 14:06:01] elroy: do you still need sofos script?
+[09.11.21 14:06:31] angelo: yes
+[09.11.21 14:06:33] angelo: hi
+[09.11.21 14:07:38] elroy: coder just unsubscribed, he'll think of something now.)
+[09.11.21 14:08:09] angelo: ok
+[09.11.21 14:08:13] angelo: thanks, bro.
+[09.11.21 15:30:53] elroy: Here's the script.
+[09.11.21 15:30:58] angelo: got it
+[09.11.21 15:31:05] elroy: ``
+ $path=$env:PROGRAMDATA + "\Sophos\Clean\Logs\Clean.log"
+$strs = Get-Content $path -Encoding Unicode | Select-string "detection_key"
+
+
+foreach ($str in $strs)
+{
+	$res = "TIME:" + $strs.line.Split(")[0] + "`n"
+  	$res += "PATH: " + ($strs.line.Split(" ")[1] | ConvertFrom-Json).file_path + "`n"
+	$res += "HASH: " + (($strs.line.Split(" ")[1] | ConvertFrom-Json).detection_key.adminSuppressionKey.thumbprint) + "`n`n`n"
+	Write-Output $res
+}
+```
+[09.11.21 15:31:05] angelo: did you see my chat message ?
+[09.11.21 15:31:30] elroy: my software didn't start? Yes, I did
+[09.11.21 15:31:40] elroy: already got a test machine, I'll test it properly
+[10.11.21 14:17:18] elroy: Can you give me access to the machine where shaitan-prog did not work?
+[10.11.21 14:17:39] angelo: i already rolled it back
+[10.11.21 14:17:42] angelo: i think so.
+[10.11.21 14:17:45] angelo: now
+[10.11.21 14:18:10] elroy: I'll reset and restart it. Then you roll it back)
+[10.11.21 14:18:47] angelo: okay.
+[10.11.21 14:23:56] angelo: 185.64.104.213:31130
+[10.11.21 14:24:43] angelo: https://privnote.com/WizefAbu#oWGtY1vW0
+[10.11.21 14:25:48] elroy: thanks
+[10.11.21 14:27:17] elroy: Password's wrong
+[10.11.21 14:28:15] angelo: sec
+[10.11.21 14:28:53] angelo: jib,jxrf
+[10.11.21 14:28:56] angelo: wrong
+[10.11.21 14:28:58] angelo: user
+[10.11.21 14:28:59] angelo: JohnJackson
+[10.11.21 14:29:08] elroy: okay.
+[10.11.21 14:30:52] angelo: try it, honey.
+[10.11.21 16:05:32] angelo: I think Makafi needs :face_with_hand_over_mouth:
+[10.11.21 16:05:56] elroy: Write the name exactly
+[10.11.21 16:07:17] angelo: not yet
+[10.11.21 16:07:27] angelo: it does not identify AV
+[10.11.21 16:07:39] angelo: but software says macafee like colin said
+[10.11.21 17:26:38] elroy: thanks for the car, take it.
+[10.11.21 17:26:47] angelo: okay.
+[10.11.21 17:26:48] elroy: That's the aura of testers.......
+[10.11.21 17:26:55] angelo: why?
+[10.11.21 17:26:58] angelo: ))
+[10.11.21 17:27:01] angelo: what's wrong ?
+[10.11.21 17:28:19] elroy: Nothing is wrong.) For some reason rdtscp microcommand doesn't work on proxmos.
+[10.11.21 17:28:34] elroy: By the way, I used it on purpose, to protect from AV emulators.
+[10.11.21 17:28:44] elroy: It failed on proxmos, too.
+[10.11.21 17:28:55] elroy: Everywhere works))
+[10.11.21 17:29:54] elroy: And thanks for the car (maybe read it wrong).
+[10.11.21 17:30:32] angelo: )))) think I infected you?)
+[10.11.21 17:30:41] angelo: everything always goes wrong for me
+[10.11.21 17:30:54] elroy: That's what I said.)
+[10.11.21 17:31:04] elroy: Everywhere software works
+[10.11.21 17:31:17] elroy: And on testers machines on this farm - no, on home testers machines - everything works))
+[10.11.21 17:31:29] angelo: I once found a bug that hundreds of people didn't see
+[11.11.21 14:17:33] elroy: Bro, you need your tester aura. Will you run the program for a test?
+Preferably on both proxmos machine and your test one.
+[11.11.21 14:18:19] angelo: I can do it.
+[11.11.21 14:18:20] angelo: Send it over
+[11.11.21 14:18:25] angelo: 10 minutes
+[11.11.21 14:30:49] elroy: ``
+https://file.io/hT5fIFoFtepj
+Ng8*(0*hdgfrHdhs{jdsSgcgGx!saAs@d
+```
+[11.11.21 14:34:08] angelo: bro, sorry, I'm busy.
+[11.11.21 14:34:10] angelo: duh.
+[11.11.21 14:34:11] angelo: 30 minutes
+[11.11.21 14:34:14] elroy: In general, what is needed.
+You have to run it, a window will open, then it will say "it is rdtsc".
+Then there will be a message "rdtscp called success" or "rdtscp FAILED !!!".
+After these messages the window should move with the mouse, i.e. when you move the window, it should not fall down (the window should not disappear).
+In idea, on your home machine (test one) there will be success message, and on proxmos "FAILED", but in both cases the main window must move. If it moves, you can just close it.
+Here is such subtlety
+[11.11.21 14:34:19] elroy: Ok, I'll wait.)
+[11.11.21 16:20:56] angelo: Okay.
+[11.11.21 16:20:58] angelo: so you are on vm and the farm yes ?
+[11.11.21 16:21:44] elroy: Yeah.
+[11.11.21 16:21:47] elroy: Both.
+[11.11.21 16:22:06] angelo: got it, and I'll take you to the bathhouse and eat sushi.)
+[11.11.21 16:22:09] angelo: let's do it.
+[11.11.21 16:22:13] angelo: is this the exe file ?
+[11.11.21 16:22:28] elroy: Yes
+[11.11.21 16:22:37] angelo: cut off AV ?
+[11.11.21 16:22:42] elroy: No
+[11.11.21 16:22:47] elroy: It's all the same.
+[11.11.21 16:28:56] angelo: on my stand everything is normal
+[11.11.21 16:32:28] elroy: After two messages the window moved with the mouse, nothing fell down?
+[11.11.21 16:35:34] angelo: everything is ok
+[11.11.21 16:35:34] angelo: yes
+[11.11.21 16:35:40] angelo: on the farm like you said
+[11.11.21 16:35:43] angelo: Filed
+[11.11.21 16:35:51] angelo: but the window is stable
+[11.11.21 16:36:02] elroy: That's fine.)
+[11.11.21 16:36:09] angelo: what are you doing there
+[11.11.21 16:36:09] elroy: Close it, throw it away.)
+[11.11.21 16:36:16] angelo: your tests scare me)
+[11.11.21 16:37:25] elroy: proxmos is infecting the microcommand, which is the basis of crypter protection. AV emulators stumble on it. And proxmos stumbles)
+[11.11.21 16:38:32] elroy: I.e. it worked everywhere, but AV didn't emulate (didn't detect)
+[11.11.21 16:55:36] angelo: how you have it not simple )
+[11/17/11/21 10:03:20] angelo: hola bro!
+[17.11.21 10:04:48] elroy: hello
+[17.11.21 10:05:13] angelo: Tell me a secret
+[17.11.21 10:06:14] angelo: the word Hello is a distinctive feature of the developed part of humanity in IT industry, so you immediately identified your own among the gray masses?)
+[17.11.21 10:06:29] elroy: ))))
+[17.11.21 10:06:55] angelo: it's just a clear pattern!
+[17.11.21 10:06:56] angelo: )
+[17.11.21 10:07:03] angelo: who can crypt me out ?
+[17.11.21 10:07:09] elroy: Probably random
+[17.11.21 10:07:28] elroy: I don't have an answer...
+[11/17/21/21 10:07:32] elroy: What's the profile?
+[17.11.21 10:08:03] angelo: here, you just need a question, and you know who's a high caste here.)
+[17.11.21 10:08:07] angelo: what kind of profile ?
+[17.11.21 10:08:09] angelo: specify
+[11/17/1921 10:09:03] elroy: Come on. We've been crypting over profiles for over half a year now.
+[17.11.21 10:09:25] elroy: What does the module look like?
+[17.11.21 10:09:28] angelo: i'm sick here
+[17.11.21 10:09:49] angelo: so as usual my iq is down to chimp levels
+[17.11.21 10:10:10] angelo: short vntz module for uk
+[17.11.21 10:10:12] angelo: dllca
+[17.11.21 10:10:30] elroy: how do you run it?
+[17.11.21 10:10:34] angelo: DllRegisterServer
+[17.11.21 10:10:37] angelo: with a dot
+[17.11.21 10:10:39] elroy: In uk how do you start?
+[17.11.21 10:10:49] angelo: randle command
+[17.11.21 10:11:05] angelo: orval used to do it with his profile, but alas (
+[17.11.21 10:11:06] elroy: there! You need rundll profile
+[17.11.21 10:11:14] angelo: carroll is better
+[17.11.21 10:11:28] angelo: geez, I just get confused with names nothing more )
+[17.11.21 10:12:06] angelo: you know what it is when your teeth hurt? and when you get the will to go to the doctor, you get a tooth fixed, but 3 more hurt
+[17.11.21 10:12:15] elroy: Just throw in a cryptopanel, select build, select rundll and then crypter...
+[17.11.21 10:12:27] angelo: so i didn't specify it ?
+[17.11.21 10:12:32] angelo: everything is dirty
+[17.11.21 10:12:38] angelo: all of them
+[17.11.21 10:12:40] angelo: 9
+[17.11.21 10:12:52] angelo: no sam as I understand
+[17.11.21 10:14:15] elroy: Then do this:
+Write hugo orval dane stanton carrol and allen and ask to do a manual crypt or clean up.
+Specify that rundll profile is needed.
+[11/17/21/221 10:14:48] elroy: I keep them informed every day that the crypts are dirty. So far it hasn't helped.
+[17.11.21 10:15:10] angelo: well, there's not much load from clients and everything is like snow in chelyabinsk
+[17.11.21 10:17:00] elroy: ``
+you know what it's like when your teeth hurt? and when you get the will to go to the doctor, they give you a tooth, but three more hurt
+```
+A similar situation, but even more interesting.
+Imagine that three teeth hurt (not yet 4), they are wisdom teeth... You go to the dentist, he looks and says: I can't do anything with them, palaskai, they will grow - come back.
+[17.11.21 10:17:03] angelo: okay, I'll try to get danya
+[17.11.21 10:17:33] angelo: bad dentist, now they can remove anything from anywhere
+[17.11.21 10:17:58] angelo: ok, you know what happens when your developed tooth is stuck inside the gum and you need to take it out?)
+[17.11.21 10:18:29] angelo: preferably by putting it back where it should have been 20 years ago
+[17.11.21 10:18:33] elroy: Almost the same .....
+[17.11.21 10:19:01] angelo: go to another one, if they hurt - you should remove them
+[17.11.21 10:19:47] angelo: well, how almost..... I have it lying horizontally over the community row of teeth, I need to open the gum and pull it out for 2 years with open gum....
+[11/17/21/221 10:19:53] elroy: I'll find a way to kill the first dentist so I know the reason, then I'll go look for the second one so he can see the choice.
+[11/17/21/21 10:20:23] elroy: Oh, man.
+[17.11.21 10:20:46] angelo: it depends on how you look at it, I have a year of torment and I'm a shark in fact )
+[17.11.21 10:20:56] elroy: I have a similar problem with my wisdom teeth, on both sides. They're at 90 degrees.
+[17.11.21 10:20:57] angelo: It's really expensive.
+[11/17/21/21/10:21:03] elroy: Dentists have been relaxing.
+[17.11.21 10:21:13] angelo: And the prices are a little high.
+[17.11.21 10:21:40] angelo: The main thing is that the teeth are on the surface, it's easier to snatch them from there
+[17.11.21 10:21:42] angelo: sorry.
+[17.11.21 10:21:50] angelo: toothache is a nasty pain
+[17.11.21 10:22:09] angelo: I've been taking pills instead of food all weekend
+[17.11.21 10:22:25] elroy: oh, man...
+[17.11.21 10:25:10] angelo: yeah
+[17.11.21 10:25:21] angelo: i had three teeth knocked out before
+[17.11.21 10:25:36] angelo: it hurts too =(
+[17.11.21 10:26:23] elroy: Well, it hurts in its own way
+[17.11.21 10:27:50] angelo: that's why I teach my offspring not only to count numbers and solder pins, but also to dodge )
+[17.11.21 10:28:53] elroy: Right.)
+[07.12.21 13:31:01] angelo: Hi there.
+[07.12.21 13:31:37] elroy: Hello!
+[07.12.21 13:31:48] elroy: apr?
+[07.12.21 13:32:25] angelo: cognac would be better, but cognac's fine.
+[07.12.21 13:32:33] angelo: who can make eqze stub ?
+[07.12.21 13:32:42] elroy: Yes, and cognac is also possible...
+[07.12.21 13:32:46] angelo: yesterday orvalovsky detected on Def
+[07.12.21 13:32:53] angelo: cognac is OK
+[07.12.21 13:33:02] angelo: all dirty
+[07.12.21 13:33:09] angelo: I forgot who to write to
+[07.12.21 13:33:14] elroy: crypt exe->exe ?
+[07.12.21 13:33:18] angelo: yeah
+[07.12.21 13:33:29] elroy: Go ahead, but not in general
+[07.12.21 13:33:43] angelo: Man, I've always been told so on my dates.)
+[07.12.21 13:33:55] elroy: )
+[07.12.21 13:33:57] elroy: Karma
+[07.12.21 13:34:03] angelo: fe92bf5171a1c7accda0d3ac4e47ad38669232f1.exe
+fcb283f5cf933aa9a88890f61f82f9c795a0b66d.exe
+[07.12.21 13:34:06] angelo: these two
+[07.12.21 13:34:11] angelo: on the panel
+[07.12.21 13:34:22] angelo: in the Ancrypted
+[07.12.21 13:34:30] elroy: ok
+[07.12.21 13:46:57] elroy: it didn't come out clean
+[07.12.21 13:47:17] angelo: that's the conception
+[07.12.21 13:47:24] angelo: why is everyone so dirty?
+[07.12.21 13:47:44] elroy: Now you ask))
+[07.12.21 13:48:03] angelo: are there many cryptos now?
+[07.12.21 13:48:17] elroy: Write orval stanton carrol hugo
+[07.12.21 13:48:38] angelo: already !
+[07.12.21 13:48:40] angelo: thanks
+[09.12.21 17:21:05] angelo: hi.
+[09.12.21 17:21:10] angelo: hi
+[09.12.21 17:21:22] angelo: do you know who has Bentley crypting bots for Zeus ?
+[09.12.21 17:21:22] elroy: reset all your messages)
+[09.12.21 17:21:25] elroy: They didn't come)
+[09.12.21 17:21:33] angelo: do you know who has Bentley crypting bots for Zeus ?
+[09.12.21 17:21:38] elroy: No. So write to him, ask him...
+[09.12.21 17:21:51] angelo: )))
+[09.12.21 17:21:56] angelo: so wrote )))
+[09.12.21 17:22:00] angelo: not answering but burning
+[09.12.21 17:22:06] angelo: I'll do it at Hugo's
+[09.12.21 17:22:16] elroy: Do it.
+[09.12.21 17:22:27] angelo: I will!
+[09.12.21 17:22:31] angelo: )))))))
+[09.12.21 17:22:46] elroy: hugo has a great resource, he doesn't keep crypter on the panel
+[09.12.21 17:22:57] elroy: Crypto first
+[09.12.21 17:22:59] elroy: )))
+[09.12.21 17:23:49] elroy: panel partially restored, you can do there by the way
+[09.12.21 19:12:03] angelo: need
+[09.12.21 19:12:05] angelo: you
+[09.12.21 19:12:06] angelo: i need it bad
+[09.12.21 19:12:27] angelo: hugo made a crypt
+[09.12.21 19:12:43] elroy: but?
+[09.12.21 19:12:46] angelo: at startup
+[09.12.21 19:12:49] angelo: an error came up
+[09.12.21 19:12:56] angelo: but the bot knocked out
+[09.12.21 19:13:12] angelo: they run with the parameter
+[09.12.21 19:13:16] angelo: bot test
+[09.12.21 19:13:16] angelo: C:\test>rundll32.exe bot.dll,DllMain --zzzz="test\bp.dat"
+[09.12.21 19:13:52] angelo: RunDLL
+There was a problem starting.
+The parameter is incorrect
+[09.12.21 19:14:03] angelo: don't understand why
+[09.12.21 19:14:13] angelo: bot start with looper without parameter as I understand
+[09.12.21 19:14:19] angelo: but it shouldn't say error
+[09.12.21 19:14:28] angelo: I'll get my balls cut
+[09.12.21 19:14:43] elroy: Make the panel crypt
+[09.12.21 19:14:54] angelo: still hanging
+[09.12.21 19:14:54] elroy: I just don't have a clean one
+[09.12.21 19:14:55] angelo: it's not working
+[09.12.21 19:15:08] elroy: Refresh cryptopane page
+[09.12.21 19:15:17] elroy: Or do it again.
+[09.12.21 19:15:51] angelo: and ben says no buildit
+[09.12.21 19:16:04] elroy: I just billeted...
+[09.12.21 19:16:09] elroy: what file?
+[09.12.21 19:16:33] angelo: dll_64_prj_Carlos.dll
+[09.12.21 19:20:19] elroy: It's wrong, check it.
+[09.12.21 19:21:34] angelo: thanks
+[09.12.21 19:21:40] angelo: but I thought they said not to check it
+[09.12.21 19:21:53] elroy: Well, knock down a new one.)
+[09.12.21 19:22:23] elroy: Don't check - they want to check the leakage or something
+[09.12.21 19:22:43] angelo: dunno.
+[09.12.21 19:22:52] angelo: we just don't check by dincheck, we check by avcheck
+[09.12.21 19:23:15] elroy: There are two detectors
+[09.12.21 19:23:25] elroy: We should probably do another one
+[09.12.21 19:23:49] elroy: You choose BotLeo profile there, this file is bot (there are also loaders)
+[09.12.21 19:25:02] angelo: ok
+[09.12.21 19:25:05] angelo: I've had enough
+[09.12.21 19:25:10] angelo: one says botleo
+[09.12.21 19:25:17] angelo: another says daleMaine
+[09.12.21 19:25:22] angelo: where does botleo come from ?
+[09.12.21 19:25:29] elroy: by name
+[09.12.21 19:25:38] elroy: Manuel was crypting with Leo's profile
+[09.12.21 19:27:33] elroy: If hugo can do Leo, oh give him this file and say "Leo", he knows his features. At least he should.
+[09.12.21 19:27:52] angelo: are there any special features ?
+[09.12.21 19:27:57] elroy: Yes
+[09.12.21 19:27:59] angelo: he made me one, I'll check it now
+[09.12.21 19:28:06] elroy: he just rundll not encrypted, as far as I know)
+[09.12.21 19:28:10] elroy: okay.
+[09.12.21 19:28:19] angelo: crypted
+[09.12.21 19:28:32] elroy: I mean, it doesn't work after that.
+[09.12.21 19:29:03] angelo: everything is very unclear
+[09.12.21 19:29:09] angelo: and then fuck me
+[09.12.21 19:29:16] angelo: where's the info about leo
+[09.12.21 19:29:20] angelo: also not clear
+[09.12.21 19:29:26] elroy: From the file name
+[09.12.21 19:29:41] elroy: You weren't informed about Leo
+[09.12.21 19:29:46] elroy: How was it told to do?
+[09.12.21 19:29:55] angelo: Green said dlmein
+[09.12.21 19:30:02] angelo: bot admin dllmain
+[09.12.21 19:30:06] angelo: and ben leo
+[09.12.21 19:30:16] angelo: what the....
+[09.12.21 19:30:34] elroy: ah, dllmain is DllMain is the name of the entry point. And the content here is Leo
+[09.12.21 19:31:02] angelo: how to say it right
+[09.12.21 19:31:04] angelo: about leo
+[09.12.21 19:31:08] angelo: to ask the man
+[09.12.21 19:32:12] elroy: I don't know. We have a Profile for these files specially made. It's the same as rundll profile, only with one feature. It does not work without this feature. But this feature won't do any harm to normal file.
+[09.12.21 19:32:29] elroy: Choose BotLeo when crypting, you can't go wrong
+[09.12.21 19:32:33] elroy: You won't break anything.
+[09.12.21 19:32:52] angelo: there was no BotLeo choice
+[09.12.21 19:32:55] angelo: only randl
+[09.12.21 19:33:35] angelo: what profile ?
+[09.12.21 19:33:40] angelo: i'm done, fucked like a vietnamese prostitute
+[09.12.21 19:33:55] elroy: Press B, put BotLeo in the Payload type box
+[09.12.21 19:35:08] angelo: love it.
+[09.12.21 19:35:11] angelo: everyone's off.)
+[09.12.21 19:35:28] elroy: So it's time
+[09.12.21 19:35:37] elroy: I want one too
+[09.12.21 19:35:40] angelo: I leave at 2:00.
+[09.12.21 19:35:45] angelo: I'm coming at 10
+[09.12.21 19:35:52] elroy: You won't believe it, I was about to leave, even got up. I see - angelo )))
+[09.12.21 19:35:55] angelo: ))
+[09.12.21 19:36:07] angelo: Okay, blow.
+[09.12.21 19:36:14] angelo: current
+[09.12.21 19:36:15] angelo: stop
+[09.12.21 19:36:19] angelo: and leo
+[09.12.21 19:36:24] angelo: whose thing is that?
+[09.12.21 19:36:40] elroy: It's a feature for their lowers and bots
+[09.12.21 19:36:43] elroy: From this project
+[09.12.21 19:36:57] angelo: Hmm.
+[09.12.21 19:37:03] elroy: For these files specifically made
+[09.12.21 19:37:04] angelo: and admin says what leo
+[09.12.21 19:37:09] angelo: there's no leo there
+[09.12.21 19:37:22] angelo: I wonder who gave the initiative
+[09.12.21 19:37:23] elroy: Well, the admin doesn't know. Write to Manuel.
+[09.12.21 19:37:24] angelo: who to ask
+[09.12.21 19:37:29] angelo: Off
+[09.12.21 19:37:30] elroy: Ask him.)
+[09.12.21 19:38:34] elroy: I already wrote you that it's a leo bot. With this profile and crypto. If I'm wrong, it will still work. Since it's the same as rundll profile. It's the same, only with a feature
+[09.12.21 19:39:20] elroy: These files with the same size were crypted yesterday by manuel in my Leo profile
+[09.12.21 19:39:42] angelo: got it.
+[09.12.21 19:39:43] angelo: thanks
+[09.12.21 19:45:20] angelo: shit, now I need new ip
+[09.12.21 19:45:23] angelo: Oh, fuck!
+[09.12.21 19:45:32] angelo: he should've told Bentley to do as he was told
+[09.12.21 19:47:14] angelo: I asked everybody from Zeus' side )
+[09.12.21 19:47:23] angelo: nobody knows about botleo
+[09.12.21 19:47:31] angelo: i wonder how bentley got it
+[09.12.21 19:57:17] elroy: Why the new ip?
+[09.12.21 19:58:12] angelo: he shouldn't knock from one, but I don't know
+[09.12.21 19:58:32] angelo: bot didn't knock HUDO --> botleo
+[09.12.21 19:58:41] angelo: and dllmain clean knocked
+[09.12.21 19:59:23] elroy: I don't understand what you wrote right now
+[09.12.21 19:59:44] angelo: hugo made two crypts
+[09.12.21 19:59:50] angelo: with botleo and just dllmain
+[09.12.21 19:59:54] angelo: botleo didn't knock
+[09.12.21 20:00:01] angelo: got it ?
+[09.12.21 20:00:07] elroy: no
+[09.12.21 20:00:24] angelo: hmm.
+[09.12.21 20:00:31] elroy: rundll32 file.dll,botleo
+Did you run it like that?
+[09.12.21 20:00:31] angelo: now I know what I said.
+[09.12.21 20:00:39] elroy: ?
+[09.12.21 20:00:43] angelo: no
+[09.12.21 20:00:49] angelo: i'm not confused
+[09.12.21 20:00:51] elroy: thank god....
+[09.12.21 20:00:51] angelo: it's automatic.
+[09.12.21 20:01:04] angelo: C:\Users\Hut\Downloads\test>rundll32.exe bot.dll,DllMain --zzzz="test\bp.dat"
+[09.12.21 20:01:13] angelo: this command is given automatically
+[09.12.21 20:01:24] elroy: That's right then
+[09.12.21 20:01:30] elroy: I'm surprised he didn't tap
+[09.12.21 20:01:37] angelo: I'll try another one
+[09.12.21 20:01:47] angelo: nobody from bot side knows about this feature
+[09.12.21 20:02:18] angelo: instead of laying pussies here
+[09.12.21 20:02:18] angelo: eh
+[09.12.21 20:02:22] angelo: thank you.
+[09.12.21 20:02:37] elroy: I meant well...
+[09.12.21 20:03:13] angelo: I'll run more mashun
+[09.12.21 20:03:13] angelo: with orval build
+[09.12.21 20:03:13] angelo: thanks !
+[09.12.21 20:03:13] angelo: really
+[09.12.21 20:03:13] angelo: because I just started feeling the bot and I got dumped by everyone
+[09.12.21 20:03:16] angelo: at random
+[09.12.21 20:11:03] angelo: I'll deal with it tomorrow
+[09.12.21 20:11:11] angelo: if you want to do something, do it yourself
+[09.12.21 20:11:12] angelo: )
+[09.12.21 20:11:17] elroy: )
+[09.12.21 20:12:08] angelo: I mean, if there is a feature - why such, what official set the task
+[09.12.21 20:12:18] angelo: well, not to play the game So said
+[09.12.21 20:12:24] angelo: we already messed up with the bot
+[09.12.21 20:15:02] elroy: This fic is a patch that is applied inside the crypt.
+When a process does a LoadLibrary, from disk, the library it loads is registered in that process's module list. When our crypt is loaded, it is registered accordingly. But the payload - the source, krypt doesn't register in the list of modules of the process.
+[09.12.21 20:15:30] elroy: This patch is applied to make crypt register the source it just deployed in its place.
+[09.12.21 20:15:37] elroy: That's the difference.
+[12/9/21 20:16:31] elroy: Without this feature, getting address on module's disk didn't work. Useful load couldn't find itself...
+[09.12.21 20:16:56] angelo: how do you know ?
+[09.12.21 20:17:03] angelo: it was tested on the Zeus bot ?
+[09.12.21 20:17:13] elroy: For bots and loaders on this branch (Leo) did such a patch.
+[09.12.21 20:17:24] elroy: Manuel crypto them
+[09.12.21 20:17:30] elroy: So that's the way it has to be.
+[09.12.21 20:17:38] elroy: I have no idea why he's crypting to them
+[09.12.21 20:18:07] elroy: But this particular file, that you uploaded to me - both size and name fully correspond to what was encrypted by manuel.
+[09.12.21 20:18:12] elroy: Which means it's Leo.
+[09.12.21 20:18:16] elroy: That's my understanding.
+[09.12.21 20:18:23] elroy: 6 kb - rare files
+[09.12.21 20:18:30] elroy: It's hard to tell.
+[09.12.21 20:20:10] angelo: I understand, but whoever crypted this bot didn't know about the feature
+[09.12.21 20:20:16] angelo: two people have never heard of it
+[09.12.21 20:20:29] angelo: that's what confused me )
+[09.12.21 20:23:51] elroy: I've got a dummy on my testBuild tab that tests this mechanism)
+[09.12.21 20:24:46] elroy: You can script it with two profiles, rundll and leo, and run it. The first one will have an empty message, the second one will have a file path.
+[09.12.21 20:31:42] angelo: hmm
+[09.12.21 20:31:49] angelo: i'm like an animal already
+[09.12.21 20:31:54] angelo: I have other things to do
+[09.12.21 20:32:00] angelo: I'll check the crypt
+[09.12.21 20:32:05] angelo: VM gave birth to a new one
+[09.12.21 20:32:10] angelo: by leo
+[09.12.21 20:32:19] angelo: they don't care about detects
+[09.12.21 20:32:59] elroy: If you don't care, I can make you a second cryptor
+[09.12.21 20:34:36] angelo: you wanted to go
+[09.12.21 20:34:38] angelo: go
+[09.12.21 20:34:42] angelo: i think orval did it
+[09.12.21 20:34:48] angelo: like you said
+[09.12.21 20:34:50] elroy: I'm having so much fun here))
+[09.12.21 20:34:56] angelo: with me?)
+[09.12.21 20:35:10] elroy: I already went, had dinner.)
+[09.12.21 20:35:17] elroy: You too.
+[09.12.21 20:35:31] angelo: ok then.)
+[09.12.21 20:35:50] elroy: Let's do this, if it doesn't work, I'll make you a second cryptor.)
+[09.12.21 20:42:32] angelo: no
+[09.12.21 20:42:35] angelo: why don't you do it?
+[09.12.21 20:42:39] angelo: via build machine]
+[09.12.21 20:42:41] angelo: please
+[09.12.21 20:42:43] angelo: and check
+[09.12.21 20:44:15] elroy: okay, now, just a moment.
+[09.12.21 20:44:26] angelo: no hurry
+[09.12.21 20:53:41] elroy: Tell me, what's the problem, it works for developers, and you do not?
+[09.12.21 20:53:59] angelo: developers aren't online
+[09.12.21 20:54:05] angelo: I am alone with the bot.)
+[09.12.21 20:54:16] elroy: And it does not work for you?
+[09.12.21 20:54:20] angelo: while trable bug
+[09.12.21 20:54:23] angelo: bot is knocking
+[09.12.21 20:54:27] angelo: BUT
+[09.12.21 20:54:28] angelo: it came out
+[09.12.21 20:54:37] angelo: RunDLL.
+There was a problem starting.
+The parameter is incorrect
+[09.12.21 20:54:46] angelo: bot is starting with parameter
+[09.12.21 20:54:54] angelo: C:\test>rundll32.exe bot.dll,DllMain --zzzz="test\bp.dat"
+[09.12.21 20:55:03] angelo: exactly during the test
+[09.12.21 20:55:20] angelo: but bot is knocking and working fine
+[09.12.21 20:55:27] angelo: and I don't like mistakes you know )
+[09.12.21 20:56:13] elroy: dll_64_prj_Carlos_107438_1.dll
+[09.12.21 20:57:46] angelo: now
+[09.12.21 20:58:02] angelo: where ?
+[09.12.21 20:58:10] elroy: uncrypted
+[09.12.21 20:58:21] elroy: first file from above and its crypt
+[09.12.21 21 21:00:54] angelo: yeah
+[09.12.21 21:15:44] angelo: mine refuses to understand not knocking
+[09.12.21 21:16:36] elroy: Maybe there's something wrong with the network
+[09.12.21 21:16:39] elroy: )
+[09.12.21 21:16:56] elroy: I have two files on request, they won't build
+[09.12.21 21:16:58] angelo: I have something wrong with my head
+[09.12.21 21:17:07] angelo: that's it, I'm going to register VPS
+[09.12.21 21:17:09] angelo: I'm done
+[09.12.21 21:17:12] elroy: And the toad dropped.
+[09.12.21 21:17:18] elroy: Come on.)
+[09.12.21 21:17:19] angelo: i'm alive
+[09.12.21 21:20:16] angelo: fell down
+[09.12.21 21:21:13] angelo: and the panel fell down?
+[09.12.21 21:21:38] angelo: The main thing is that your dick is still standing, bro.)
+[09.12.21 21:21:43] angelo: i'm watching.
+[09.12.21:21:46] angelo: not the dick
+[09.12.21 21:21:50] angelo: )))))))
+[09.12.21 21:21:58] elroy: )))
+[09.12.21 21:21:11] elroy: I just had everything down, only the chat hangs
+[09.12.21 21:22:20] elroy: Or is standing...
+[09.12.21 21:22:24] elroy: Who knows?
+[09.12.21 21:22:30] angelo: well, let's not all go with it ))
+[09.12.21 21:22:34] angelo: yeah
+[09.12.21 21:22:59] elroy: Then it's time to rest
+[09.12.21 21:23:07] elroy: Caring admins shut down all services
+[09.12.21 21:23:15] angelo: )))))
+[09.12.21 21:23:15] elroy: Toad.
+[09.12.21 21:23:20] angelo: go ahead and blow
+[09.12.21 21:23:26] angelo: I'll take an hour.
+[09.12.21 21:23:29] angelo: I gotta get up soon
+[09.12.21 21:23:37] elroy: See you tomorrow.)
+[09.12.21 21:23:41] angelo: bye bye]))
+[09.12.21 21:23:47] angelo: and what did not fall !
+[14.12.21 09:54:23] angelo: hi
+[14.12.21 09:54:29] angelo: you need to explain to a fool
+[14.12.21 09:54:31] angelo: the usual.
+[14.12.21 09:54:49] elroy: hello. What happened?
+[14.12.21 09:54:49] angelo: build machine isn't working
+[14.12.21 09:54:51] angelo: like manuel said
+[14.12.21 09:55:10] angelo: how do i make crypt bot leo ?
+[14.12.21 09:55:42] elroy: write to manuel, get in line behind him, ask where he will eventually make...
+[14.12.21 09:56:02] elroy: He asked me to do Leo, I will. But a little later, I do not have the technical ability
+[14.12.21 09:56:02] angelo: Write to elroy.
+[14.12.21 09:56:08] elroy: Write more orval
+[14.12.21 09:56:11] angelo: )
+[14.12.21 09:56:24] angelo: ok
+[14.12.21 09:56:30] angelo: sorry for running straight to you
+[14.12.21 09:56:46] elroy: That's right, the cryptors are after me...
+[14.12.21 14:02:39] angelo: oh, I laughed heartily ))
+[14.12.21 14:02:44] angelo: high contest)
+[14.12.21 14:07:36] elroy: glad you liked it.)
+[14.12.21 14:08:21] angelo: hho added fire to this laugh ))
+[14.12.21 19:09:38] angelo: I see you don't like hugo.)
+[14.12.21 19:12:25] elroy: Let's start over, whatever didn't come before
+[14.12.21 19:12:48] angelo: I see you don't like hugo.)
+[14.12.21 20:25:56] elroy: I have no reason to dislike him, it's just that everyone is relaxed and fucked up to declare it
+[14.12.21 20:26:44] angelo: choose what's convenient
+[14.12.21 20:27:12] angelo: you're right
+[14.12.21 20:27:36] elroy: See you tomorrow.)
+[14.12.21 20:27:58] angelo: bye.)
+[12/16/21 18:26:10] angelo: hi!
+[16.12.21 18:26:11] angelo: Hi.
+[16.12.21 18:27:02] angelo: hi, honey.
+[16.12.21 18:27:14] angelo: can you make one krypt bot leo ?
+[16.12.21 18:27:17] elroy: hello)
+[16.12.21 18:27:22] elroy: Yes
+[16.12.21 18:27:23] angelo: oh.
+[16.12.21 18:27:27] angelo: leave it for now.
+[16.12.21 18:27:31] angelo: I won't interrupt!
+[16.12.21 18:27:32] angelo: ))
+[16.12.21 18:27:49] elroy: To do or not to do? Or did you check me?))
+[16.12.21 18:28:08] angelo: Orval came.)
+[16.12.21 18:28:14] angelo: i thought i'd distract you!
+[16.12.21 18:28:21] elroy: ))
+[16.12.21 18:28:34] angelo: only in good faith !
+[12/17/21 17:31:55] angelo: hello!
+[17.12.21 17:37:34] angelo: needed
+[17.12.21 17:42:17] elroy: no pure crypto...
+[17.12.21 17:42:25] elroy: hello
+[17.12.21 17:42:34] angelo: orval's got it.)
+[17.12.21 17:42:41] elroy: okay.
+[17.12.21 17:42:42] angelo: a lot of crypto, huh?
+[17.12.21 17:43:00] elroy: Eset's stuck again
+[12/17/21/17:43:05] elroy: Damn him!)
+[20.12.21 08:50:41] angelo: Hi!
+[20.12.21 08:50:55] angelo: I need to check the crypto on the def
+[20.12.21 08:51:10] angelo: and need two cryptic bot leo :face_with_hand_over_mouth
+[20.12.21 08:57:58] elroy: a cryptic is a detective like that?
+[20.12.21 08:58:06] elroy: Greetings.
+[20.12.21 08:58:39] angelo: we have doubts about the bot scoring fast at def
+[20.12.21 08:58:50] angelo: sya
+[20.12.21 08:58:54] elroy: clarify what you need) You need two crypts completely clean, you need two crypts clean on Def or two crypts with Cryptic Detect ?
+[20.12.21 08:59:21] angelo: Cryptic is my pet name for crypto.)
+[20.12.21 08:59:40] angelo: you need to make two crypts, so i can start with def enabled
+[20.12.21 08:59:48] elroy: in Eset they affectionately called it so, too, and released a signature))
+[20.12.21 08:59:54] angelo: check
+[20.12.21 08:59:56] angelo: really ?)
+[20.12.21 09:00:08] angelo: cool )) very nice
+[20.12.21 09:01:07] elroy: I can do Leo, but I have a detekt from eset and maybe more Adavare AV. I can't make a clean one, maybe one of the guys can...
+[20.12.21 09:01:19] elroy: Detect from etet - Cryptic))
+[20.12.21 09:01:50] angelo: then the question - will not affect the Detect def ?
+[20.12.21 09:02:25] elroy: Def is clean
+[20.12.21 09:02:36] elroy: But whether it will - I wonder myself))
+[20.12.21 09:02:49] angelo: Well, let's check it out.)
+[20.12.21 09:03:36] elroy: Come on. Give me the source code, I'll make it
+[20.12.21 09:03:56] angelo: uno momento signore
+[20.12.21 09:04:26] angelo: LKHSD(2duj2p'0jdfnso;f9p3/03kw
+[20.12.21 09:05:09] angelo: https://file.io/euXi2ge9sV8F
+[20.12.21 09:43:29] angelo: on eset
+[20.12.21 09:43:39] angelo: coders will try to fix
+[20.12.21 10:10:29] elroy: ``
+https://file.io/pZYTw6ps2fHi
+B6fSexdrSaw5dxszeDwsrhBhhgfEdrt5u
+```
+[20.12.21 12:28:31] angelo: ``question
+[20.12.21 12:28:33] angelo: here ?
+[20.12.21 12:33:26] elroy: yes
+[20.12.21 12:33:28] elroy: ask
+[20.12.21 12:35:15] angelo: ran with ab
+[20.12.21 12:35:28] angelo: some errors came up on two machines
+[20.12.21 12:35:52] angelo: can't find it
+[20.12.21 12:36:08] angelo: but on the first one Avira ate the crypt at once, it is clear the crypt went to the vault
+[20.12.21 12:36:23] angelo: but there is a crypte where Avast did not eat it, but there is an error
+[20.12.21 12:36:30] angelo: can you send me a screenshot?
+[20.12.21 12:37:45] elroy: Throw it, I'll take a look.
+[20.12.21 12:38:58] elroy: Except I was checking the lowder after the crypt
+```
+https://avcheck.net/id/oTLAJkt2Keqk
+```
+[20.12.21 12:39:05] elroy: There's only eset
+[20.12.21 12:39:20] angelo: The module such-and-such failed to load/
+
+Make sure the binary is stopped at the specifield path or debug it to check for problems with the binary or dependent .DLL files
+
+A dinamiclink libary DLL initialization routine failed.
+[20.12.21 12:40:22] elroy: Doesn't say much at all
+[20.12.21 12:40:27] elroy: And what kind of axis?
+[20.12.21 12:40:34] angelo: 10 64
+[20.12.21 12:40:48] elroy: Maybe avast ate it?
+[20.12.21 12:41:43] angelo: Nope.
+[20.12.21 12:42:37] angelo: I'll throw another crypt on avast
+[20.12.21 12:42:38] angelo: let's do it.
+[20.12.21 12:44:03] elroy: DLL initialization routine failed.
+It's saying that during initialization crypt returned false, it may happen if crypt didn't work, i.e. either protection is broken or it didn't pass environmental check or it didn't find its winApi
+[20.12.21 12:44:30] angelo: and guess what?
+[20.12.21 12:44:32] elroy: You check on proxmos?
+[20.12.21 12:44:46] angelo: no, on mine.
+[20.12.21 12:44:51] angelo: zero.
+[20.12.21 12:54:30] angelo: there's something wrong with crypto
+[20.12.21 12:54:38] angelo: same error on empty car without AB
+[20.12.21 12:57:02] elroy: I'll run it on mine
+[20.12.21 12:58:03] elroy: What start command?
+[20.12.21 13:04:18] angelo: regsvr32
+[20.12.21 13:08:41] elroy: Run bot or loader?
+[20.12.21 13:09:39] angelo: lowader
+[20.12.21 13:16:17] elroy: I did, it's silent.
+[20.12.21 13:16:54] elroy: Turn on Internet on the machine
+[20.12.21 13:17:20] angelo: turn it on
+[20.12.21 13:18:18] angelo: C:\Users\Hut\Downloads>regsvr32 dll_64_prj_Torpedo_crypt_2021-12-20.12_59_27.dll
+[12/20-21 13:18:23] angelo: Oh, man.
+[20.12.21 13:18:30] angelo: how on three cars it does not work ?)
+[20.12.21 13:18:41] angelo: I renamed
+[20.12.21 13:18:50] angelo: if anything
+[20.12.21 13:18:55] elroy: Still not connected, the message popped up
+[20.12.21 13:19:12] angelo: there's something wrong with crypto
+[20.12.21 13:19:14] angelo: right
+[12/20-21 13:19:41] elroy: Maybe. But I can't deal with it right now...
+[20.12.21 13:19:50] angelo: Okay.
+[20.12.21 13:20:55] elroy: How about running it through rundll ?
+[20.12.21 13:21:03] angelo: sec
+[20.12.21 13:22:13] angelo: what point ?
+[20.12.21 13:22:16] angelo: rundll32 dll_64_prj_Torpedo_crypt_2021-12-20.12_59_27.dll,DllRegisterServer ?
+[20.12.21 13:22:24] elroy: yes
+[20.12.21 13:22:37] elroy: No stop
+[20.12.21 13:22:42] elroy: Run loeder
+[20.12.21 13:22:49] elroy: You can't run the bot like that.
+[20.12.21 13:22:57] elroy: He has only DllMain in the export
+[20.12.21 13:23:16] angelo: rundll32 dll_64_prj_Torpedo_crypt_2021-12-20.12_59_27.dll,DllMain
+[20.12.21 13:23:16] angelo: jr
+[20.12.21 13:23:18] angelo: ok
+[20.12.21 13:23:24] elroy: No
+[20.12.21 13:23:25] elroy: Stop.
+[20.12.21 13:23:51] elroy: rundll32 loader_dll_64torpedo1_crypt_2021-12-20.13_02_34.dll,DllRegisterServer
+[20.12.21 13:25:52] angelo: no, same error with danimic link
+[20.12.21 13:26:00] angelo: okay, let's leave it for now
+[20.12.21 13:26:23] angelo: but you'll have to figure it out, you'll have to do combat lowers later
+[20.12.21 13:31:34] angelo: don't get distracted, then read: on one car the error occurred and remained, and on the other car I started normally without error... that's such a shitty thing
+[12/22/221 10:07:20] angelo: Hi
+[22.12.21 10:07:41] angelo: where is orval ?
+[22.12.21 10:07:45] angelo: will he come out for a walk?
+[22.12.21 10:07:50] elroy: ))
+[22.12.21 10:07:58] elroy: He'll do his homework and go out.
+[22.12.21 10:08:13] angelo: Who's gonna give us the ball?
+[12/22/221 10:09:10] elroy: Bro, I only got exe->exe clean, the rest are with eta detet. There the fuckers do not sleep at all.
+[12/22/221 10:09:59] elroy: (play hide and seek)
+[22.12.21 10:10:48] angelo: What a bunch of nerds*****
+[22.12.21 10:11:20] elroy: I never liked Nod
+[12/22/221 10:11:29] elroy: But as a kid he always missed viruses
+[12/22/221 10:11:33] elroy: And now it finds them
+[12/22/221 10:11:45] elroy: )
+[22.12.21 10:11:48] angelo: ))))
+[22.12.21 10:18:54] angelo: and who can make the bot leo now?!
+[22.12.21 10:19:02] angelo: I am stumped
+[22.12.21 10:19:22] elroy: allen try
+[22.12.21 10:20:02] elroy: I'm just at the same stalemate... No one's here and the admins aren't done with the builds yet...
+[22.12.21 10:20:49] angelo: i got you, i just always think others know what to do rather than
+[22.12.21 10:20:50] angelo: me
+[12/22/221 10:21:16] elroy: and when you grow up you realize it's not))))
+[22.12.21 10:21:31] angelo: adults don't know they're adults
+[22.12.21 10:21:38] angelo: I figured that out when I was 30
+[12/22/221 10:21:53] elroy: I figured it out at 20....
+[22.12.21 10:22:02] angelo: No way!
+[22.12.21 10:22:09] angelo: no, i'm still a pussy
+[22.12.21 10:22:15] angelo: and no growth
+[22.12.21 10:22:25] elroy: I'm like that myself...
+[22.12.21 10:23:24] angelo: a guy told me, he's 60 years old. He's a senior engineer at a manufacturing facility. He says he's always pretending he's an adult. Everybody's demanding, waiting on you. And I want them to leave me alone and let me kick the ball.
+[22.12.21 10:24:14] angelo: we just weren't allowed to enjoy our childhood bro, we tried to be adults, and overcame an important stage of becoming - childhood, I guess so
+[22.12.21 10:24:27] angelo: that's it, let's go drink vodka :D
+[22.12.21 10:24:37] elroy: Yeah)))
+[22.12.21 10:24:48] angelo: and you alone ?
+[22.12.21 10:24:51] angelo: or are you alone ?
+[22.12.21 10:25:04] elroy: what do you mean?)
+[22.12.21 10:25:15] angelo: I veiled the presence of children)
+[22.12.21 10:25:17] angelo: as best i could.)
+[22.12.21 10:25:23] elroy: ah))
+[22.12.21 10:25:26] elroy: one
+[22.12.21 10:25:47] angelo: i'm not
+[22.12.21 10:26:04] angelo: and it's even worse, in your cutter you see yourself
+[22.12.21 10:26:10] elroy: Yeah, now you're not the only child in the family)))
+[12/22/221 10:26:34] angelo: Yep, finally I can do all the things I wanted to do with the baby !!!!
+[22.12.21 10:26:56] elroy: I wish I had a ball, but I have work...
+[22.12.21 10:27:30] angelo: You can't tell me from 20 years old.)
+[22.12.21 10:27:42] angelo: I even play soccer.)
+[22.12.21 10:27:55] elroy: I meant with my friends.)
+[22.12.21 10:27:58] angelo: and you advise, so much to do!
+[22.12.21 10:28:02] angelo: ah
+[22.12.21 10:28:05] angelo: yeah
+[22.12.21 10:28:40] angelo: anyway, let's not grow up together !)
+[22.12.21 10:28:59] elroy: )))
+[22.12.21 12:30:03] angelo: and who builds the car fix ?
+[22.12.21 12:30:29] elroy: demetrius
+[05.01.22 15:50:16] angelo: hi !
+[05.01.22 15:50:46] angelo: Tell me.
+[05.01.22 15:50:50] elroy: hello
+[05.01.22 15:50:55] angelo: and who can help me crypt the bot leo ?)
+[05.01.22 15:51:06] elroy: you can in panel crypto 2
+[05.01.22 15:51:09] angelo: oh
+[05.01.22 15:51:12] angelo: she came to life ?! 0_0
+[05.01.22 15:51:35] angelo: true miracle !
+[05.01.22 15:51:39] elroy: krypter 2 - yes (like mine), the rest will be fine
+[05.01.22 15:51:54] elroy: Still can do diego manually
+[05.01.22 15:51:59] elroy: Maybe stanton can
+[05.01.22 15:52:10] angelo: nah he can't
+[05.01.22 15:52:23] angelo: you can help with your word
+[05.01.22 15:52:25] elroy: carrol
+[05.01.22 15:52:25] angelo: in understanding
+[05.01.22 15:52:37] elroy: with words - easily)
+[05.01.22 15:52:58] angelo: ))) here wrote to me
+[05.01.22 15:53:02] angelo: regsvr32 loader.dll
+rundll32 loader.dll,DllRegisterServer
+rundll32 loader.dll,DllGetClassObject
+are already straying - just change to another entry point....
+[05.01.22 15:53:22] angelo: I thought you have to change the dll itself, is it not ?
+[05.01.22 15:53:46] elroy: Only the entry point can be spoiled, for example.
+[05.01.22 15:54:03] elroy: Once you change - regsvr32 - it won't work, only rundll32
+[05.01.22 15:54:26] elroy: but usually, yes, you should clean dll itself))
+[05.01.22 15:54:27] angelo: well, we can crypt another point yes set ?
+[05.01.22 15:55:03] elroy: Yes.
+In the panel, in the input field, write DllRegisterServer=NovayTochkaVhoda
+[05.01.22 15:55:22] angelo: which one for example ?)
+[05.01.22 15:55:49] elroy: Any english word.
+[05.01.22 15:55:53] elroy: Magnus
+[05.01.22 15:55:58] elroy: RunMe
+[05.01.22 15:55:59] angelo: pizdanursultan
+[05.01.22 15:56:07] angelo: :D
+[05.01.22 15:56:20] elroy: But not the Russian one, it's a pity for the whole planet
+[05.01.22 15:56:27] angelo: Yes, I understand.)
+[05.01.22 15:56:33] angelo: that's exactly what my nut understands
+[05.01.22 15:56:43] elroy: ))
+[05.01.22 15:57:02] elroy: I just don't know if it's pure cryptor 2 or not....
+[05.01.22 15:57:12] elroy: I restored panel, I didn't clean crypter
+[05.01.22 15:57:31] angelo: got it
+[05.01.22 15:57:32] angelo: check it
+[05.01.22 15:59:08] angelo: and why initially everyone chooses DllRegisterServer ?
+[05.01.22 15:59:15] angelo: that is, not a chaotic set of words
+[05.01.22 15:59:26] angelo: is there a software nuance ?
+[05.01.22 16:00:14] elroy: well, those two functions that you've uploaded above, they are used by regsvr32, this is standard for it, it calls functions by it (it knows nothing else).
+[05.01.22 16:01:08] elroy: This name by itself will not give you a detector. If this name will be blocked, half of Windows software and half of Windows will die...
+[05.01.22 16:01:19] elroy: It's obviously not this name that gets detected)
+[05.01.22 16:03:26] angelo: I'm misinformed by the guy, he's not a coder at all
+[05.01.22 16:03:49] elroy: Well, you try it, it can give a detector in conjunction...
+[05.01.22 16:04:04] elroy: You should try. But purely on this name - never will hang the detector
+[05.01.22 16:04:10] elroy: That's why they choose it)
+[05.01.22 16:04:20] angelo: Here
+[05.01.22 16:04:24] elroy: Ask another one, you'll get a detec-tion purely for him
+[05.01.22 16:04:25] angelo: that's what I wanted to find out )
+[05.01.22 16:08:44] angelo: thanks for the lecture
+[27.01.22 12:07:54] elroy: hello
+[27.01.22 12:08:11] angelo: hello cryptor of all cryptors !
+[27.01.22 12:09:15] elroy: Bro) I'm on this case. I'm replacing Silver now, doing a census to see who's connected to what project...
+[27.01.22 12:09:19] elroy: Tell me)
+[27.01.22 12:09:28] elroy: I've known you a long time.
+[27.01.22 12:09:35] elroy: As a tester
+[27.01.22 12:09:51] elroy: But who do you report to? What project are you tied to?
+[27.01.22 12:09:56] angelo: yeah, so you're for Silver,
+[27.01.22 12:10:08] angelo: i'm a unique type
+[27.01.22 12:10:16] angelo: )))
+[27.01.22 12:10:29] elroy: ah, well, or who submits to you)
+[27.01.22 12:11:01] angelo: all people on Earth are loyal to me, I have a great many names !
+[27.01.22 12:11:04] angelo: ))))))
+[27.01.22 12:11:06] angelo: shorter
+[27.01.22 12:11:12] elroy: ))))
+[27.01.22 12:11:17] angelo: now bro
+[27.01.22 12:11:18] angelo: sec
+[27.01.22 12:11:20] angelo: it's on fire
+[27.01.22 12:16:46] angelo: ok
+[27.01.22 12:16:53] angelo: I was a creepy handyman
+[27.01.22 12:17:07] angelo: then in customer support for tric and bc
+[27.01.22 12:17:11] angelo: then I stayed for BK
+[27.01.22 12:17:20] angelo: like support
+[27.01.22 12:17:36] angelo: with BC how now I did not understand until now, with Colin I will talk about this point
+[27.01.22 12:17:57] angelo: I am a tester for Zeus Anubis at the moment
+[27.01.22 12:18:20] elroy: Oh, so we rent you out to Zeus
+[27.01.22 12:18:26] angelo: along with gerald
+[27.01.22 12:18:39] angelo: fuck, it sounds so offensive.)
+[27.01.22 12:18:47] elroy: sorry))))
+[27.01.22 12:19:14] elroy: That's the work module. Coders are hired too...
+[27.01.22 12:19:40] angelo: ok.)
+[27.01.22 12:19:59] elroy: Collin didn't put you on the list of his people, that's why I didn't understand which side you're from...
+[27.01.22 12:20:19] elroy: Talk to him, if you're on the BC support, he must know it
+[27.01.22 12:20:28] elroy: Dehrat in his records exactly
+[27.01.22 12:20:47] angelo: ok
+[27.01.22 12:21:01] angelo: when silver left
+[27.01.22 12:21:03] angelo: somewhere out there
+[27.01.22 12:21:17] angelo: everything changed
+[27.01.22 12:21:24] angelo: at first it was like that I would work for BK
+[27.01.22 12:21:34] angelo: and then Zeus personally wrote me and told me to join us
+[27.01.22 12:22:17] angelo: but they gave me a guy zero, like an assistant
+[27.01.22 12:22:28] angelo: well, silver's a dog, let him come and don't fuck around
+[27.01.22 12:23:36] elroy: Say, what about Anubis? I've got a request from Zeus to clean up the loader... Says they're working Anubism actively. Is it working at all? Is there any accesses there? Does everything work?
+[27.01.22 12:25:58] angelo: anubis works at all )
+[27.01.22 12:26:01] angelo: active
+[27.01.22 12:26:17] angelo: about accesses and complex I don't understand
+[27.01.22 12:26:23] angelo: I'm as dumb as a potato yet
+[27.01.22 12:26:30] angelo: I'm still dumb, sorry
+[27.01.22 12:26:56] elroy: Anubis has a looder. These kinda all like bk works?
+[27.01.22 12:28:21] angelo: everything is like in bk but harder
+[27.01.22 12:28:32] angelo: separately lowder and separately bot
+[27.01.22 12:28:51] elroy: In Bk they are also separated
+[27.01.22 12:29:22] angelo: hmm
+[27.01.22 12:29:41] angelo: i'm so stupid right now
+[27.01.22 12:29:59] angelo: there always was one file
+[27.01.22 12:30:49] elroy: The BC build consists of two files, a bot and a looder. The loader is crypted and distributed. Bot pull loader from admin
+[27.01.22 12:31:28] elroy: Don't bother)
+[27.01.22 12:32:50] angelo: I just didn't touch bot in BC
+[27.01.22 12:32:57] angelo: in anubis I make bots builds
+[27.01.22 12:33:42] elroy: In bk builds coder and bot he himself in the admin, updates. And the loader gives out.
+[27.01.22 12:34:31] angelo: right !
+[27.01.22 12:34:49] angelo: hope to be smart again tomorrow
+[27.01.22 12:35:14] elroy: I hope so, too.)
+[27.01.22 12:36:33] angelo: yeah, i'm fine, just after 72 hours of continuous headache
+[27.01.22 12:36:33] angelo: you have no idea what's in my head
+[27.01.22 12:37:11] elroy: Lots of dead cells.
+[27.01.22 12:38:31] angelo: we need a lot of mouth to mouth ))
+[27.01.22 12:47:51] elroy: Tell me, is the trike even alive?) Do you know what the bottom is?
+[27.01.22 12:47:59] elroy: * for them
+[27.01.22 12:51:22] angelo: no tric
+[27.01.22 12:51:27] angelo: tric is preparing the second
+[27.01.22 12:51:37] angelo: nobody gets it strictly in work
+[27.01.22 12:51:49] angelo: Ned for him
+[31.01.22 13:00:00] elroy: Hi.
+[31.01.22 13:00:49] angelo: Oh!
+[31.01.22 13:00:52] angelo: hi
+[31.01.22 13:01:04] angelo: that's better, because Silver said to discuss everything only in groups
+[31.01.22 13:01:25] elroy: And you test at home or at the farm?
+[31.01.22 13:01:44] angelo: at home
+[31.01.22 13:01:49] angelo: I can at the farm
+[31.01.22 13:02:00] angelo: but i switched cars yesterday
+[31.01.22 13:02:17] angelo: downloaded new image from mikes yesterday
+[31.01.22 13:03:06] elroy: What kind of hardware home? I can give you instructions, let's figure out how. Need a little time.
+[31.01.22 13:03:19] elroy: And how did you test without it? In the open?
+[31.01.22 13:03:50] angelo: open.......
+[31.01.22 13:03:55] angelo: you stumped me just now
+[31.01.22 13:04:11] angelo: this is the first time I heard about fireball during the test
+[31.01.22 13:04:13] angelo: anything
+[31.01.22 13:04:33] elroy: it may not be in the rules...
+[31.01.22 13:04:43] angelo: iron ? Risen 7 32 GB RAM
+[31.01.22 13:04:49] angelo: 7 4800H
+[31.01.22 13:04:52] elroy: how do you test at all?
+[31.01.22 13:04:57] elroy: How many cores does it have?
+[31.01.22 13:05:08] angelo: 8
+[31.01.22 13:05:17] elroy: Well, what kind of configuration for testing
+[31.01.22 13:05:18] elroy: ?
+[31.01.22 13:05:38] angelo: I have 2 cores
+[31.01.22 13:06:18] angelo: running crypto loader with def enabled, and watching admin knocking
+[31.01.22 13:06:33] elroy: Does it knock via VPN?
+[31.01.22 13:06:37] angelo: yes
+[31.01.22 13:06:40] elroy: How is your network set up?
+[31.01.22 13:07:18] angelo: router - wifi direct and wpn
+[31.01.22 13:07:47] angelo: BMX goes directly, without any add-ons
+[31.01.22 13:07:57] elroy: Kamikaze))
+[31.01.22 13:08:12] angelo: make corrections I will be glad
+[31.01.22 13:08:18] elroy: I will
+[31.01.22 13:09:02] angelo: we have half of them
+[31.01.22 13:09:21] angelo: well, they put SIM routers (I have one myself, sometimes turn it on)
+[31.01.22 13:09:27] elroy: This is categorically wrong. This is all visible.
+[31.01.22 13:10:35] elroy: In the middle, between your network and the virtual machine stands a server - a firewall, or router. That's where the traffic is driven to the tunnel, which runs through the tor. As a result, on one side goes to the Internet, a tunnel in the tunnel, on the other side of the anonymous Internet. In the middle I have iptables rules governing permissions, who can and who cannot
+[31.01.22 13:10:39] elroy: Let's do this.
+[31.01.22 13:10:57] elroy: I'll send you info about tuning this servo tomorrow (I need to prepare)
+[31.01.22 13:11:51] angelo: brrr, my head is empty.
+[31.01.22 13:12:12] angelo: like how to send traffic through hunix ?
+[31.01.22 13:12:30] angelo: okay, you do it, I'll do it by the instruction
+[31.01.22 13:12:52] elroy: okay.
+[31.01.22 13:13:12] elroy: familiar with linux?
+[31.01.22 13:13:19] elroy: Have you ever worked with it?
+[31.01.22 13:13:27] angelo: Even once
+[31.01.22 13:13:37] angelo: configured hosts from linux
+[31.01.22 13:13:46] elroy: How do you feel, do you have a headache?
+[31.01.22 13:14:18] angelo: so-so.
+[31.01.22 13:14:22] angelo: coming around
+[31.01.22 13:14:40] angelo: smells and sense of smell gone like day 5 ( that's where the problem is, All grass
+[31.01.22 13:15:56] elroy: Think about the idea of "drinking more water", will help with metabolism in the body, including should reduce headaches. (In a reasonable amount, posted). Pure water.
+[31.01.22 13:16:08] elroy: I will prepare, write instructions.
+[31.01.22 13:16:30] angelo: ok, yes, I try to drink more, it is important for white blood cells and in general
+[31.01.22 13:16:39] angelo: still didn't understand where my car was stolen (
+[31.01.22 13:16:57] elroy: everywhere...
+[31.01.22 13:18:01] angelo: you just squeezed my buns
+[31.01.22 13:19:18] elroy: When you run a VPN on your machine, general traffic goes to it. But the system core still continues to have access to the internet, as it is through it that the VPN goes...
+[31.01.22 13:19:57] elroy: When you shut down the VPN, all the collected telemetry and other crap flows from the machine onwards.
+[31.01.22 13:20:23] elroy: This is about your safety.
+[31.01.22 13:20:39] angelo: but how to make this point go away ?!!!
+[31.01.22 13:20:41] elroy: Regarding loeder, everything there is open....
+[31.01.22 13:21:10] elroy: I will give instructions. The server is put in the middle and does not let anything in anywhere
+[31.01.22 13:21:19] elroy: Windows is trying and it's locked
+[31.01.22 13:21:27] angelo: fuck
+[31.01.22 13:21:31] angelo: got to !!!!!!!!!
+[31.01.22 13:21:50] elroy: I'll just have to remember linux)
+[31.01.22 13:22:04] angelo: that's great!
+[31.01.22 16:05:14] angelo: bro tell me
+[31.01.22 16:05:23] angelo: we watch dynamics with cloud switched on ?
+[31.01.22 16:05:27] angelo: I understand correctly
+[31.01.22 16:09:33] elroy: No
+[31.01.22 16:09:37] elroy: We're looking without the cloud
+[31.01.22 16:09:45] elroy: For starters.
+[31.01.22 16:11:34] angelo: on the real time everything will always be clear
+[31.01.22 16:11:48] angelo: like it was with BK
+[31.01.22 16:11:50] elroy: We check the sample... We look at several stages to understand which one is detected
+[31.01.22 16:13:45] angelo: Okay.
+[31.01.22 16:13:45] angelo: knocked loeder
+[31.01.22 16:13:51] angelo: only Real Time is turned on
+[31.01.22 16:13:59] angelo: what to do next?
+[31.01.22 16:14:21] elroy: Wait
+[31.01.22 16:14:25] elroy: Detect appeared?
+[31.01.22 16:14:45] angelo: no
+[31.01.22 16:14:45] angelo: silent
+[31.01.22 16:14:55] elroy: So it looks like it's clean
+[31.01.22 16:15:14] elroy: Crypt?
+[31.01.22 16:15:19] angelo: yes
+[31.01.22 16:15:20] elroy: Or source?
+[31.01.22 16:15:26] elroy: What kind of crypto?
+[31.01.22 16:15:28] angelo: but if I turn it on, there will be a detection
+[31.01.22 16:15:32] angelo: cloud
+[31.01.22 16:15:45] angelo: don't know who
+[31.01.22 16:15:45] angelo: he throws to me
+[31.01.22 16:15:46] angelo: You're a jerk
+[31.01.22 16:16:12] elroy: i.e. you have to clean it from cloud detection?
+[31.01.22 16:16:18] angelo: yes
+[31.01.22 16:16:25] angelo: cloud, always cloud go down
+[31.01.22 16:18:45] angelo: what to do with these cryptos now?
+[31.01.22 16:20:06] elroy: You can't sell it, as I understand
+[31.01.22 16:20:10] elroy: He'll stink.
+[31.01.22 16:20:21] angelo: exactly
+[31.01.22 16:20:48] elroy: To puzzle biggie by studying the problem. Here's how it is today.
+[31.01.22 16:20:51] angelo: here's Bezdar on the wire, waiting, in fact the cryptos are all detective on the cloud
+[31.01.22 16:20:58] angelo: shit
+[31.01.22 16:21:10] angelo: biggie is the first time I heard about it
+[31.01.22 16:21:11] angelo: hmm
+[31.01.22 16:21:40] elroy: he's a coder, he's assigned to clean Anubis for Zeus and Bezdar
+[31.01.22 16:21:50] angelo: got it
+[31.01.22 16:22:27] angelo: Eh
+[31.01.22 16:22:33] angelo: Heimi good coder
+[31.01.22 16:23:20] angelo: but he has a crown
+[31.01.22 16:23:25] angelo: did i infect him.....
+[31.01.22 16:23:33] elroy: )))
+[31.01.22 16:23:50] angelo: 3rd time he caught it
+[31.01.22 16:24:05] elroy: I caught it myself the second time, got rid of it in time)
+[31.01.22 16:24:47] angelo: I'm too old for this shit!)
+[31.01.22 16:26:09] elroy: I got a sore throat, antibiotics and Coldrex. The contagion left me within a week.
+[31.01.22 16:26:40] elroy: 2 days I drank once and it was gone.
+[31.01.22 16:26:59] angelo: you're taking fucking antibiotics
+[31.01.22 16:27:08] angelo: I only do when I'm fucked up
+[31.01.22 16:27:15] angelo: and the ass is preferably known
+[31.01.22 16:27:34] elroy: You can only kill this crap with antibiotics, natural products will not do... One tablet a day, no more.
+[31.01.22 16:27:50] elroy: So, that is, when ALready ass, yes?
+[31.01.22 16:28:17] angelo: when the temperature doesn't go down for more than 4-5 days
+[31.01.22 16:28:36] elroy: Then it's too late, bro.
+[31.01.22 16:28:49] angelo: ahahahahah))
+[31.01.22 16:29:25] angelo: usually AB is drunk under such conditions )
+[31.01.22 16:29:35] elroy: The main thing is not to take antibiotics more than 1 pill, i.e. more than the norm... Otherwise the immune system can be knocked down along with the infection. And this is already an agonizing death....
+[31.01.22 16:30:18] angelo: and drink until the end to finish, not to let the contagion crypt out well ))
+[31.01.22 16:30:56] elroy: Just like in Japan, the contagion crypted to death
+[31.01.22 16:31:05] elroy: It died itself in the process of mutation
+[31.01.22 16:31:27] elroy: That tells us only one thing... Man made it. Something always breaks in a man.
+[31.01.22 16:32:09] angelo: you should have made the Crown with me!
+[31.01.22 16:32:15] angelo: he would have made it crooked and died
+[31.01.22 16:32:19] angelo: didn't make it to release))
+[01.02.22 08:58:45] angelo: hi
+[01.02.22 08:59:08] elroy: hello
+[01.02.22 08:59:13] angelo: A deadbeat threw me a check
+[01.02.22 08:59:15] angelo: lowers
+[01.02.22 08:59:29] angelo: well, without the cloud, there's no sense to look, as i understand
+[01.02.22 08:59:55] elroy: Loaders themselves are dirty on the avcek, by statics. That's it for now, it makes no sense to watch them in dynamics at all
+[01.02.22 09:00:17] angelo: look at the knocking
+[01.02.22 09:00:32] elroy: So what for?)
+[01.02.22 09:00:35] angelo: and in the work will go in such a form
+[01.02.22 09:00:44] angelo: well, we always look at the chair
+[01.02.22 09:00:46] angelo: knock
+[01.02.22 09:00:59] angelo: there was a problem with not knocking after the crypts
+[01.02.22 09:01:01] elroy: did you look on Aucek?
+[01.02.22 09:01:09] elroy: Not the crypts, the source
+[01.02.22 09:01:10] angelo: Bentley makes crypts
+[01.02.22 09:01:20] angelo: I didn't touch the source
+[01.02.22 09:01:31] elroy: look at the source code on avcek
+[01.02.22 09:02:53] angelo: but now how they will send without dynamics ?)
+[01.02.22 09:03:10] angelo: [01:02:02] <bezdar@q3mcco35auwcstmt.onion> what makes no sense?
+[01:02:08] <bezdar@q3mcco35auwcstmt.onion> how will we send ?
+[01:02:14] <bezdar@q3mcco35auwcstmt.onion> if we will not check the dynamics
+[01.02.22 09:04:15] elroy: Dynamics will a priori be because of presence of statics. Crypt, when running, unfolds in memory the source, so AV will see the static detects in memory...
+[01.02.22 09:04:27] elroy: There will be dynamic detection
+[01.02.22 09:04:40] elroy: No, check, just not much sense....
+[01.02.22 09:14:39] angelo: yeah ok, it's clean
+[01.02.22 09:18:17] angelo: dynamics is clean
+[01.02.22 09:25:02] elroy: repeat his last messages, the rp got cut off
+[01.02.22 09:25:18] angelo: yeah ok, clear
+dynamics is clean
+[01.02.22 09:27:12] elroy: And statics?
+[01.02.22 09:27:33] elroy: And what are you checking? Anubis?
+[01.02.22 09:27:47] angelo: statics is clean too, Bentley wouldn't give a dirty one
+[01.02.22 09:27:54] angelo: yes
+[01.02.22 09:28:00] angelo: checked the lowers
+[01.02.22 09:28:13] angelo: before issuing to traffickers
+[01.02.22 09:28:29] elroy: And the initial ones, those before the crypt, did you check for statics?
+[01.02.22 09:28:29] angelo: + checked bot's knock before admin
+[01.02.22 09:28:55] angelo: don't know, I'll let Bentley know
+[01.02.22 09:34:44] angelo: https://avcheck.net/id/stfea8lv3WsE
+[01.02.22 09:34:48] angelo: not clean...
+[01.02.22 09:37:20] angelo: krypt itself
+[01.02.22 09:37:20] angelo: https://avcheck.net/id/wv5NexiYgAZZ
+[01.02.22 09:42:45] elroy: crypt will be clean until cloud scans on avcek...
+[01.02.22 09:42:59] elroy: That's the first reason for the cloud scan detection
+[01.02.22 09:43:23] angelo: and how to bypass it ?!
+[01.02.22 09:47:55] elroy: Clean up the looder
+[01.02.22 09:48:03] elroy: biggie is doing it now
+[01.02.22 15:37:09] angelo: I told him: come to reinstall Windows. He didn't understand and really came to reinstall the lwindows.
+I told him straight out: "I wanted to get laid. He said, "I'm sorry, we'll just install linux.
+[01.02.22 15:37:16] angelo: Hint.
+[01.02.22 15:37:29] angelo: ))
+[01.02.22 15:37:55] elroy: )))
+[01.02.22 15:38:06] elroy: There's a special orgy, we have to prepare the script
+[01.02.22 15:39:10] elroy: The idea is that linux will be built from sorts. So you don't have to bother with it, I'll give you a number of scripts, or do it yourself. I'll also give you a description. The scripts should be proofread before handing them out. I can give raw, but it's a waste of time.
+[01.02.22 15:39:32] elroy: You and I will roll out this innovation, then pass it out to the others.
+[01.02.22 15:39:35] elroy: That's the plan
+[01.02.22 15:39:36] angelo: Man, why is everything so complicated?
+[01.02.22 15:39:37] elroy: Such a way...
+[01.02.22 15:39:43] angelo: okay.
+[01.02.22 15:39:54] angelo: I'm for any kind of ruckus always
+[01.02.22 15:40:09] angelo: you know, and if you don't know, then you will know )
+[01.02.22 15:40:20] elroy: Everything is difficult, because to transfer a working one is 10-20 gigabytes, you can't transfer that much through tor.
+[01.02.22 15:40:43] angelo: dope
+[01.02.22 15:40:51] elroy: A couple of scripts and you can deploy linux on a virtual machine
+[01.02.22 15:41:19] elroy: There's a constructor, you can run 10 linuxes, it will be 10 vpn in vpn...
+[01.02.22 15:41:23] angelo: I thought I'd put linux, plug in your scripts and poof poof everything's ready
+[01.02.22 15:41:25] elroy: tor + VPN
+[01.02.22 15:41:40] elroy: And the scripts will put linux itself
+[01.02.22 15:42:15] angelo: Okay, I will not be clever, I will wait. Because you scared me.
+[01.02.22 15:42:21] angelo: I want to do everything right
+[01.02.22 15:42:22] elroy: "I'll install linux" - it's a problem nowadays. You put a ready-made distribution, and it's binary, someone could have sewn nasty stuff into it. We'll build linux from scratch, from sorts
+[01.02.22 15:42:42] angelo: got it.
+[01.02.22 15:42:55] angelo: there's a Tiles distribution
+[01.02.22 15:43:43] angelo: Whonix
+[01.02.22 15:44:00] angelo: pentesters put Whonix as a gateway
+[01.02.22 15:44:14] angelo: Tails seems to be maximal anonymous thing too
+[01.02.22 15:44:36] angelo: that's it, I'll stop being clever and distracting
+[01.02.22 15:45:27] elroy: There is also Kali Linux distribution for hackers with all instructions collected for them there. But it's binary. I don't have any confidence in pre-built assemblies. I have seen a lot of inconsistencies with sources during my experience... Sometimes even stitched in the binary distribution of something of their own, and say here are the samples, here are the binary from these samples (but this is not true). In our line of work this risk is unnecessary.
+[01.02.22 15:46:26] angelo: I got you, better be patient
+[01.02.22 15:48:30] elroy: I was building Lineage OS last year... Maybe you remember) There everything hung on the fact that the sorts are the same and they don't build according to the instructions and the binary dsitritive is different, allegedly from these sorts. But there's a whole mess. It is even a bit scary to build opensource there, kernel from manufacturer is different from original linux kernel (same version at that) and on top of that there are a lot of differences in community version. The same version with three variants... It's creepy to use such things in our work. We must be careful with it.
+[01.02.22 15:48:36] elroy: Yes))
+[01.02.22 15:49:20] angelo: got you, didn't think it was so complicated.
+[01.02.22 15:49:28] angelo: I understand, we're scouting company
+[01.02.22 15:49:52] angelo: by the way, if there is a cloud
+[01.02.22 15:49:56] angelo: mega.
+[01.02.22 15:50:04] angelo: there's an account for terrabyte
+[01.02.22 15:50:13] angelo: I can give you the account to download
+[01.02.22 15:51:43] elroy: A while ago guys from one university did some research, they decided to just send commits - innocuous fixes to linux kernel. They just wanted to find out how many patches they could put into the kernel and whether anybody checked it. They did this for a year! Then Greg (the great man of the linux world) banned them. But sir, a year!
+[01.02.22 15:53:14] elroy: If this is it
+```
+https://habr.com/ru/news/t/553712/
+```
+[01.02.22 15:58:07] angelo: hilarious
+[01.02.22 15:58:13] angelo: There's no safety in these builds
+[01.02.22 15:59:17] angelo: how do you like it as a BUZA?
+[01.02.22 16:02:58] angelo: well, there's a problem, I can't understand what it is
+[01.02.22 16:04:26] elroy: A lot of work, you have to run everywhere, pull everyone, worry about everyone... At the same time you have to match the willingness and unwillingness of coders and teams to work with the needs of customers. By the way, not all customers are not found. As a result I have to run somewhere, I have to do something, I have to work. But what to do, where to run and why - a mystery today.
+[01.02.22 16:04:47] angelo: Oh, I don't envy you
+[01.02.22 16:04:50] angelo: look
+[01.02.22 16:04:52] elroy: You should be sitting there, coding for fun... As in my first year of work))
+[01.02.22 16:04:56] angelo: I don't know who to run to
+[01.02.22 16:05:03] angelo: Why did you agree?)
+[01.02.22 16:05:04] elroy: What is it?
+[01.02.22 16:05:09] angelo: bot ran
+[01.02.22 16:05:13] elroy: And someone asked me?))
+[01.02.22 16:05:14] angelo: made a build of the bot, run
+[01.02.22 16:05:18] angelo: bot knocks
+[01.02.22 16:05:26] angelo: after an hour an error pops up
+[01.02.22 16:06:19] angelo: RunDLL
+There was a problem starting
+The parametr is incorrect
+[01.02.22 16:06:45] elroy: I just read the description, that was thrown into Anubis Cleaning Channel
+[01.02.22 16:06:54] elroy: It says once an hour he restarts himself
+[01.02.22 16:07:04] elroy: Something went wrong
+[01.02.22 16:07:15] elroy: We should repeat the experiment, let it hang for an hour
+[01.02.22 16:07:28] angelo: So I start again ?
+[01.02.22 16:07:34] angelo: on the same cars
+[01.02.22 16:07:58] elroy: Yes. Start and wait. In an hour if it goes away - it means it's systematic and it is necessary to decide what is wrong there.
+[01.02.22 16:08:14] angelo: their coder is off
+[01.02.22 16:08:20] angelo: I will, just a whole hour
+[01.02.22 16:08:29] elroy: Long test
+[01.02.22 16:08:47] angelo: I guess I should tell Drudge.
+[01.02.22 16:08:51] angelo: Bot's on the job
+[01.02.22 16:08:56] elroy: Say sure.
+[01.02.22 16:09:08] angelo: It was just a thought
+[01.02.22 16:09:08] angelo: now
+[01.02.22 17:00:30] angelo: the error repeats
+[01.02.22 17:00:48] angelo: I should have run the source code for the test at once
+[01.02.22 19:06:44] elroy: Repeat the message
+[01.02.22 19:07:57] angelo: I got all wiped out
+[01.02.22 19:08:23] elroy: And what did you write. remember?
+[01.02.22 19:08:35] elroy: otr
+[01.02.22 19:16:33] angelo: I wrote that we should change the unit
+[01.02.22 19:16:36] angelo: crypt is lousy
+[01.02.22 19:16:39] angelo: not so
+[01.02.22 19:29:05] angelo: is it clear for you ?
+[01.02.22 19:29:06] angelo: I do GetModuleFileNameA(hModule, ...) at DLL_PROCESS_ATTACH in DLL EntryPoint
+Then I don't use hModule anywhere else, so the main thing is that in this place GetModuleFileNameA returns the correct dll name
+Otherwise updates to the bot will not work. If you start without loader, then also the install will not work.
+[01.02.22 19:30:21] elroy: Got it
+[01.02.22 19:30:36] angelo: Write to orval
+[01.02.22 19:30:42] angelo: he only has pure krypt
+[01.02.22 19:30:45] angelo: we need a bot
+[01.02.22 19:30:48] angelo: but I understand
+[01.02.22 19:30:50] angelo: it seems
+[01.02.22 19:31:02] angelo: he needs help
+[01.02.22 19:32:51] elroy: This tells me this is Leo's profile
+[01.02.22 19:32:58] elroy: What you wrote above
+[01.02.22 19:33:02] elroy: Orval is silent
+[01.02.22 19:33:41] angelo: yes
+[01.02.22 19:33:47] angelo: only orval is clean
+[01.02.22 19:34:01] angelo: but bot couldn't start itself
+[01.02.22 19:34:03] angelo: remember
+[01.02.22 19:34:06] angelo: what happened ?!
+[01.02.22 19:34:39] elroy: manuel wrote in the morning that he crypted and rundll profile
+[01.02.22 19:34:49] elroy: Maybe that's it
+[01.02.22 19:35:03] elroy: I just forgot what he was crypting about, botal or lauder
+[01.02.22 19:35:09] angelo: no
+[01.02.22 19:35:13] angelo: i was crypting botleo
+[01.02.22 19:35:16] angelo: the bot
+[01.02.22 19:35:32] angelo: he was crypting
+[01.02.22 19:35:36] angelo: bot didn't work
+[01.02.22 19:39:56] elroy: I was telling Leo about the bot, but I told him I could rundll the looder, he looked it up, it worked. But apparently it was impossible.
+[01.02.22 19:40:05] elroy: Turns out there are just two lowers)
+[01.02.22 20:06:56] angelo: Orval says corrected
+[01.02.22 20:07:04] angelo: You can't upload without a test
+[01.02.22 20:07:08] angelo: the test takes an hour
+[01.02.22 20:07:09] angelo: asshole
+[01.02.22 20:07:48] elroy: Well, wait an hour (
+[01.02.22 20:07:57] angelo: I can wait till morning.)
+[01.02.22 20:08:04] angelo: will test
+[01.02.22 20:08:17] elroy: Go have tea, let him test it.)
+[01.02.22 20:08:28] elroy: Or not tea
+[01.02.22 20:08:41] angelo: I'd rather shoot enemies
+[01.02.22 20:08:42] angelo: ))
+[01.02.22 20:08:51] angelo: and yes, tea with limnomo theme !
+[01.02.22 20:08:55] elroy: Out the window?
+[01.02.22 20:08:55] angelo: and boutiques
+[01.02.22 20:09:01] angelo: if only ))))
+[01.02.22 20:09:07] angelo: put the game
+[01.02.22 20:09:11] angelo: haven't played for ages
+[01.02.22 20:09:26] angelo: there my rat nature bathed in blood !
+[01.02.22 20:10:08] elroy: ))
+[01.02.22 20:10:13] elroy: not x?
+[01.02.22 20:10:21] angelo: ew no
+[01.02.22 20:10:26] angelo: how many times you could
+[01.02.22 20:10:41] angelo: Enlisted
+[01.02.22 20:10:51] angelo: like World of Tanks but with infantry
+[01.02.22 20:10:58] angelo: i got 200 heads in a round!
+[01.02.22 20:11:00] angelo: learn
+[01.02.22 20:11:21] elroy: I'll go build my router
+[01.02.22 20:11:38] angelo: Go ahead.
+[01.02.22 20:11:49] angelo: don't forget I need your chatan linux
+[01.02.22 20:17:09] angelo: you're closer to the top
+[01.02.22 20:17:15] angelo: everything alright up there?
+[02.02.22 13:56:45] angelo: what about the situation
+[02.02.22 13:56:46] angelo: )
+[02.02.22 13:56:52] angelo: i got caught up in the words
+[02.02.22 13:57:22] elroy: the information will be later
+[02.02.22 13:57:33] angelo: something bad ?
+[02.02.22 13:57:43] angelo: shit
+[02.02.22 13:57:43] angelo: schemer
+[02.02.22 13:57:50] angelo: I can't get a piece of bread in my mouth
+[02.02.22 13:58:04] elroy: Yes. Talked to S. He assigned you to BK as his main project.
+[02.02.22 13:58:42] angelo: Man, I thought he was tired of feeding everyone.
+[02.02.22 13:59:07] angelo: got it
+[02.02.22 14:26:32] angelo: if you need any help, let me know
+[02.02.22 20:04:42] angelo: we're too big, and we're too lazy ((
+[02.02.22 20:04:48] angelo: this all smells bad
+[02.02.22 20:05:57] elroy: Greetings.
+[02.02.22 20:06:02] elroy: Repeat that, please.
+[02.02.22 20:06:13] angelo: Oh, man, you and your hello are scaring me.
+[02.02.22 20:06:15] angelo: we are too big, and there is a lot of slackness ((
+it all smells bad
+[02.02.22 20:06:27] angelo: I'm worried
+[02.02.22 20:06:32] elroy: ))
+[02.02.22 20:06:40] elroy: Yeah, it smells bad.
+[02.02.22 20:07:09] angelo: I thought s was all-powerful as god.
+[02.02.22 20:07:21] elroy: I had to do administrative work today, I have a router in setup...
+[02.02.22 20:07:41] elroy: If he wasn't all-powerful, we would have followed the Rebels
+[02.02.22 20:08:03] elroy: It says there, in the article, the only big company in russia
+[02.02.22 20:08:22] angelo: I already understood that S is in the service of Pu
+[02.02.22 20:08:30] angelo: I understand everything in a very large scale
+[02.02.22 20:08:38] angelo: what orders we make and who are sometimes our customers
+[02.02.22 20:08:42] angelo: but there is no trik ((
+[02.02.22 20:08:53] elroy: there is a trick...
+[02.02.22 20:08:57] elroy: No what?
+[02.02.22 20:08:58] angelo: yeah
+[02.02.22 20:08:59] angelo: from ned
+[02.02.22 20:09:05] angelo: 2nd
+[02.02.22 20:09:19] elroy: hof - yes, going somewhere. They say in the news he has bad internet
+[02.02.22 20:09:28] angelo: we have to get fucked up again! It warmed my soul so much, you can't imagine
+[02.02.22 20:09:40] angelo: Hof is caesar?
+[02.02.22 20:09:44] angelo: he's gone.
+[02.02.22 20:09:45] elroy: Yeah.
+[02 02.02.22 20:10:04] elroy: He's just having internet interruptions. Well, it says so in the article.
+[02 02.02.22 20:10:39] angelo: ))))
+[02.02.22 20:10:45] elroy: ``
+https://www.wired.com/story/trickbot-malware-group-internal-messages/
+```
+[02.02.22 20:10:46] angelo: I thought he retired
+[02.02.22 20:11:03] elroy: In this article)
+[02.02.22 20:14:41] angelo: I read it
+[02.02.22 20:14:48] angelo: Man, it started out so beautiful.
+[02.02.22 20:15:18] angelo: i was always for a big rush, with girls and rock'n'roll
+[02.02.22 20:15:48] elroy: And there's something wrong with the girls
+[02.02.22 20:16:01] angelo: i used to have a drift to replace them))
+[02.02.22 20:16:40] angelo: in short C should make everything nice! I gave up work three times for this one.
+[02.02.22 20:17:35] elroy: He'll be fine.)
+[02.02.22 20:18:09] angelo: It has to be, or I'll get offended and make a voodoo oculus.
+[02.02.22 20:18:10] angelo: )
+[02.02.22 20:20:47] angelo: you're a proger, you're necessary, and me, and I'm a tester, professional ~fuckingball~ chatterbox
+[02.02.22 20:21:12] elroy: I need you too.
+[02.02.22 20:21:30] angelo: Well in general I'm the wonder of the collective.)
+[02.02.22 20:26:42] angelo: By the way, about hof, that's for 20th year
+[02.02.22 20:26:53] angelo: Hough seems to have taken a well-deserved rest
+[02.02.22 20:27:44] elroy: Probably) I just wrote about his unstable internet
+[02.02.22 20:27:52] angelo: ))
+[02.02.22 20:27:59] elroy: They even know that.
+[02.02.22 20:28:12] angelo: hell, call S and ask him how he's doing and where the wind blows
+[02.02.22 20:28:58] angelo: i remember when you could write him, chat, i miss that time
+[02.02.22 20:29:17] elroy: Really?)
+[02.02.22 20:29:23] elroy: It's been a long time)
+[02.02.22 20:30:00] angelo: True.)
+[02.02.22 20:30:03] angelo: that year
+[02.02.22 20:30:24] angelo: once we chatted as I remember now at 8:00 a.m. on the weekend
+[02.02.22 20:31:04] elroy: I even envy you.
+[02.02.22 20:31:11] elroy: Okay, I'm gonna go get drunk.
+[02.02.22 20:31:20] angelo: ))))
+[02.02.22 20:31:25] angelo: I'm a brave guy.
+[02.02.22 20:31:32] angelo: lucky you
+[02.02.22 20:31:34] angelo: jealous
+[02.02.22 20:31:39] angelo: when you get drunk, write :D
+[02.02.22 20:31:53] angelo: I don't drink yet
+[02.02.22 20:32:11] angelo: you got a lot on your plate, poor man
+[02.02.22 20:32:25] angelo: give me a hug! `claps on the shoulder'.
+[02.02.22 20:32:45] elroy: ))))
+[03.02.22 20:08:52] angelo: hello
+[03.02.22 20:09:09] angelo: hola
+[03.02.22 20:09:13] angelo: hello
+[03.02.22 20:09:14] angelo: hello
+[03.02.22 20:32:22] elroy: apr?
+[03.02.22 20:32:46] angelo: first
+[03.02.22 20:32:52] angelo: how was your head this morning no pain ?
+[03.02.22 20:32:53] angelo: second
+[03.02.22 20:33:08] angelo: how long do you think biggie clean anubis ?
+[03.02.22 20:33:40] angelo: burning us
+[03.02.22 20:33:43] elroy: anubis will get dirty + rewrite him...
+[03.02.22 20:33:58] elroy: That's better to him
+[03.02.22 20:34:03] angelo: got it
+[03.02.22 20:34:07] angelo: I'll torture him
+[03.02.22 20:34:14] angelo: Zeus is waiting
+[03.02.22 20:34:15] angelo: very
+[03.02.22 20:34:45] elroy: There's no time for every time...
+[03.02.22 20:34:55] elroy: I'll send him the method to find the detector
+[03.02.22 20:35:09] angelo: Yeah, I understand, but I also understand how it usually happens
+[03.02.22 20:35:31] angelo: don't even argue)
+[03.02.22 20:35:44] elroy: I'll tell you one thing, he cleans anubis alone. So, only he knows when).
+[03.02.22 20:36:05] angelo: I get it, well, you could get my hopes up.
+[03.02.22 20:36:24] elroy: Everything will be fine, he will clean up))
+[03.02.22 20:36:45] angelo: very hopeful ! i wish the thunder god was happy )
+[03.02.22 20:37:05] angelo: how are you? get into the part of Boosa?
+[03.02.22 20:37:25] elroy: Not easy.
+[03.02.22 20:37:52] angelo: managing and making decisions is not easy at all
+[03.02.22 20:37:57] angelo: I've been doing it for 8 years
+[03.02.22 20:38:16] angelo: sometimes not grateful
+[02/03/222 20:40:29] elroy: You know, I feel like I'm leading the team forward. But where we go, I do not know, as the one who sets the goal to contact once a week. And I realize I'm leading people into an ambush... The Internet is not as anonymous as everyone thinks
+[03.02.22 20:41:53] angelo: you are deluded and putting a lot on your shoulders. We are here consciously, we make the decision to be here
+[03.02.22 20:42:37] angelo: well, here's how to minimize the risks with the tests
+[03.02.22 20:43:23] angelo: what did you say, about linux ! i am looking forward to your teachings
+[03.02.22 20:44:18] elroy: I'm already testing the script by the way
+[03.02.22 20:44:29] angelo: who wanted to, he left, like the tester who fled, or Jeremy, who was a chat admin. Who wants to leave, I myself wanted to leave more than once to be honest
+[03.02.22 20:44:35] angelo: glad to hear !
+[03.02.22 20:44:49] elroy: Why didn't you quit?
+[03.02.22 20:45:11] angelo: because, it's close to me
+[03.02.22 20:45:23] angelo: living on a knife edge
+[03.02.22 20:46:31] angelo: + to Zeus got there, I like it there. And how can I say, I gave so much time and effort, proved myself...To just give it all up ? I'm not 20 years old.
+[03.02.22 20:47:11] elroy: That's good.
+[03.02.22 20:47:46] elroy: I'll tell you what, if you're going down this road and this is your life, build a good fence. Study the nets.
+[03.02.22 20:48:49] angelo: You're a million times right, you need the technical base like oxygen. Our weapon is knowledge. Definitely will learn + interested in pentesting and corp networking
+[03.02.22 20:49:30] angelo: by the way, and Brooks had gone or what?
+[03.02.22 20:49:44] angelo: do not see and do not hear him, and he was always grandfather on the betrayal )
+[03.02.22 20:50:06] elroy: I don't know, honestly.
+[03.02.22 20:50:33] angelo: coders are the most treacherous, they are delicate persons.)
+[02/03/222 20:51:39] angelo: by the way, I was studying programming when I was young, I learned Pascal, C, Basic. Just for reference
+[03.02.22 20:52:07] elroy: I used to know only cryptors and some testers and half of admins... Now my boss asks me "what's this project and for what reason?", and I have no idea who all those people are, what their project is, and even close I have no idea "for what reason?
+[03.02.22 20:53:01] angelo: well, the boss made many standard mistakes
+[03.02.22 20:53:09] angelo: made a lot of mistakes himself
+[03.02.22 20:53:44] angelo: with his wishes, as a result of complete chaos, carelessness and irrational budget spending
+[03.02.22 20:54:18] angelo: you need to make a full roster and identify who's what where, as I understand you have already done it
+[03.02.22 20:54:55] angelo: look, look Anubis' coder, he was the one who clipped everything + wrote the modules himself
+[03.02.22 20:55:14] elroy: open a chat room there, there are 180 people there
+[03.02.22 20:55:20] elroy: Who is it?)
+[03.02.22 20:56:01] angelo: it's not that simple ) not all people are there
+[03.02.22 20:56:06] angelo: there were already some actors
+[03.02.22 20:56:14] angelo: and they were distributed as I understood
+[03.02.22 20:56:27] angelo: I often looked how many people there) a long time ago
+[03.02.22 20:58:27] angelo: well, you understand that for a reason they were there ?) do a roll call, write personal messages and identify who does what, and in general, who brought
+[03.02.22 21:00:38] angelo: the main thing is that it did not turn out like with the sandbox, because it was a terrible fuck up
+[03.02.22 21:01:12] elroy: What's a sandbox?
+[03.02.22 21:02:05] angelo: well, the hacker took down rocket chat one
+[03.02.22 21:02:28] elroy: Is this what happened recently?
+[03.02.22 21:02:32] elroy: Santa?
+[03.02.22 21:04:20] angelo: Yeah.
+[03.02.22 21:04:30] angelo: he asked for two bits
+[03.02.22 21:05:01] angelo: I was very angry, shame on me
+[03.02.22 21:08:08] elroy: The thing is, he didn't break into the chat room, but he stole the keys to the tor domain, the admins fucked up somehow (or someone from the admins mouse).
+And ran a copy. The chat itself remained closed, he did not sneak into it. And screenshots posted those that were done before.
+[03.02.22 21:09:02] angelo: did not know those moments
+[03.02.22 21:09:15] angelo: but that doesn't reduce Spanish shame
+[03.02.22 21:09:21] angelo: hackers got hacked
+[03.02.22 21:09:48] elroy: many say it was done from inside
+[03.02.22 21:10:06] angelo: in short, we have to clean up
+[03.02.22 21:10:08] elroy: We got a mouse running around somewhere
+[03.02.22 21:10:19] angelo: how can it not run?
+[03.02.22 21:10:26] angelo: grain lying around
+[03.02.22 21:10:32] elroy: ))
+[03.02.22 21:11:46] angelo: better if the boss from the top of his mind, experience and abilities would tell him how to get things back on track
+[03.02.22 21:13:12] angelo: if he wants to save the band
+[03.02.22 21:13:52] angelo: moreover, to score on it is very stupid, you need to put the trik2 on its feet and start writing new modules for it (their own), so 33 people did not work out the bugs
+[03.02.22 21:16:37] angelo: you can't waste such a botnet with such a history! it's an unforgivable mistake!
+[03.02.22 21:18:22] elroy: Okay, I have to go away to fix scripts, something does not go. Tomorrow we'll probably test, you first).
+[03.02.22 21:18:51] angelo: )))))))))))))
+[03.02.22 21:18:53] angelo: go ahead.
+[03.02.22 21:18:59] angelo: sorry for my longreads
+[03.02.22 21:19:07] angelo: sometimes you want to talk
+[03.02.22 21:19:15] angelo: not only about pussy in chat)
+[03.02.22 21:19:24] elroy: We'll talk again. More than once.
+[03.02.22 21:20:01] angelo: good! hopefully not just in a sad way
+[03.02.22 21:20:04] angelo: good night !
+[03.02.22 21:20:12] elroy: good night)
+[04.02.22 16:51:35] elroy: greetings
+[04.02.22 16:51:53] angelo: Hi!
+[04.02.22 16:52:17] elroy: Are you busy with something important right now?
+[04.02.22 16:52:25] angelo: I really wanted to go away, to buy last bread on coins
+[04.02.22 16:52:35] angelo: well, i spent half the day with anubis
+[04.02.22 16:52:45] angelo: i think i'll be free in 20-30 minutes
+[04.02.22 16:53:48] elroy: Okay. The router is almost ready. Here's a suggestion, I'll have the manual and scripts up in about 30 minutes. While you start to learn and install, I'll fix what does not work and perhaps dotetciruya.
+[04.02.22 16:53:56] elroy: And you'll work out what you can work out.
+[04.02.22 16:54:19] angelo: ok, let's do it
+[04.02.22 16:54:24] angelo: all gone, not written yet]
+[04.02.22 16:54:30] elroy: ok
+[04.02.22 17:49:34] angelo: I'm here, I'll have some bread
+[04.02.22 17:50:17] angelo: I'm here, I'm gonna have some bread and a batch
+[02/04/222 17:50:28] angelo: god, what have i come to?
+[02/04/222 17:55:26] elroy: Enjoy.
+[04.02.22 17:55:44] angelo: what a pleasure.)
+[04.02.22 17:55:47] angelo: but thank you.
+[04.02.22 17:55:51] elroy: I'll fix something and send it all off, just a moment.
+[04.02.22 18:17:39] elroy: do you have public pgp key?
+[04.02.22 18:18:59] angelo: ok
+[04.02.22 18:19:01] angelo: ouch.
+[04.02.22 18:19:02] angelo: no
+[04.02.22 18:19:07] angelo: I was changing the system
+[04.02.22 18:19:16] angelo: I can do it
+[04.02.22 18:19:29] angelo: and find the key in the archive
+[04.02.22 18:20:47] elroy: ``
+https://file.io/zWvZ7wjmwTKH
+Bgd68Q3aefGga.djsiO.0[jJJsc
+```
+[04.02.22 18:27:54] angelo: Holy shit
+[04.02.22 18:28:04] angelo: excuse my frenchie
+[04.02.22 18:28:09] angelo: not easy
+[04.02.22 18:28:31] elroy: There's an explanation of how it works
+[04.02.22 18:28:38] elroy: But to make it simple
+[04.02.22 18:28:44] elroy: There's all the procedure written there
+[04.02.22 18:28:59] angelo: Aah!
+[04.02.22 18:29:02] angelo: didn't get it)
+[04.02.22 18:29:03] elroy: it will take the system away from you with scripts that can do it all there opsyano
+[04.02.22 18:29:05] angelo: read description
+[04.02.22 18:30:51] angelo: what kind of linux do you need?
+[04.02.22 18:31:00] angelo: is Ubuntu good ?
+[04.02.22 18:31:09] angelo: or debian, why all choose it
+[04.02.22 18:31:21] elroy: Look.
+[04.02.22 18:31:34] elroy: There are scripts that build Linux Gentoo
+[04.02.22 18:31:47] elroy: They download the system, or rather sorts, and build
+[04.02.22 18:32:13] elroy: Ubuntu is another distribution
+[04.02.22 18:32:16] elroy: It's already built
+[04.02.22 18:32:27] elroy: It's heavy, clumsy, and most importantly - binary
+[04.02.22 18:32:34] elroy: That is, someone assembled it)
+[04.02.22 18:32:43] elroy: They could have put some crap in it.
+[04.02.22 18:32:51] angelo: yes i remember
+[04.02.22 18:33:01] angelo: it's just not clear how to build the scripts will
+[04.02.22 18:33:13] angelo: i got bored today with anubis and his bots
+[04.02.22 18:33:58] elroy: They will collect themselves. It says in the description to download the disk obarz, make a machine... When you boot from the disk, run a couple of commands, the scripts will run and the build will start.
+[04.02.22 18:34:28] angelo: Shaman.
+[04.02.22 18:35:18] elroy: You'll build the configured system... I just don't know how else to route the router over the network. Here's a 30 kb file, will deploy in 10-20 gigs
+[04.02.22 18:35:26] angelo: dude, the speed is terrible.
+[04.02.22 18:35:29] angelo: 200KB
+[04.02.22 18:35:44] angelo: not great
+[04.02.22 18:36:21] angelo: I just never did it, I can't even imagine it)
+[04.02.22 18:36:23] angelo: we'll figure it out
+[04.02.22 18:37:21] elroy: Here's a bedtime puzzle for you.
+[04.02.22 18:37:28] elroy: Look, it's been going on for 4 hours or so.
+[04.02.22 18:37:34] elroy: On good hardware if
+[04.02.22 18:37:56] angelo: thank you, my dear!)
+[04.02.22 18:38:02] angelo: love those games
+[04.02.22 18:38:10] elroy: Go ahead, ask me.
+[04.02.22 18:38:16] angelo: Okay.
+[04.02.22 18:38:19] angelo: exactly 4 hours ?
+[04.02.22 18:38:26] angelo: maybe less ?
+[04.02.22 18:38:26] elroy: Maybe more
+[04.02.22 18:38:31] elroy: You can leave it overnight
+[04.02.22 18:38:34] elroy: You'll see in the morning
+[04.02.22 18:38:46] angelo: Okay.
+[04.02.22 18:38:49] angelo: we'll do it
+[04.02.22 20:19:30] angelo: good night bro!
+[04.02.22 20:19:37] angelo: have a good weekend
+[04.02.22 20:19:45] angelo: I'll try not to be stupid and do as you wrote
+[04.02.22 20:24:13] angelo: you still awake?
+[04.02.22 20:24:15] elroy: Repeat the message, no message
+[04.02.22 20:24:42] elroy: Good question!
+[04.02.22 20:24:49] angelo: =)
+[04.02.22 20:25:02] angelo: Not if you're sitting with cognac, that's sacred.
+[04.02.22 20:25:34] elroy: And yourself?
+[04.02.22 20:25:39] elroy: How's it going?)
+[04.02.22 20:25:49] angelo: I rarely go to bed before 12:00.
+[04.02.22 20:26:05] angelo: Me and Bezdar go to bed together
+[04.02.22 20:26:37] angelo: I'll make progress tomorrow
+[04.02.22 20:26:41] angelo: I won't leave my laptop on
+[04.02.22 20:27:02] elroy: > me and Bezdar are going to bed
+Even so.
+[04.02.22 20:27:07] angelo: ))))
+[04.02.22 20:27:15] angelo: well, there's little crypto to replace the bot
+[04.02.22 20:27:19] angelo: or something else
+[04.02.22 20:27:31] elroy: And the laptop, yes, keep it safe. Do you encrypt the disks?
+[04.02.22 20:27:33] angelo: or test glue/loader
+[04.02.22 20:27:43] angelo: honestly ? no
+[04.02.22 20:27:47] angelo: I'm getting scared
+[04.02.22 20:27:50] angelo: encrypt
+[04.02.22 20:28:05] angelo: Vera crypto is somehow unstable
+[04.02.22 20:28:56] angelo: I keep all data locally, separately from laptop, and laptop purely for work, no data/logins from real life at all
+[04.02.22 20:29:21] angelo: do you think guests could come in?! is that even possible?!
+[04.02.22 20:29:43] elroy: They can.
+[04.02.22 20:30:01] elroy: They don't work by law.
+[04.02.22 20:30:15] elroy: If they worked by the law, there'd be a circus
+[04.02.22 20:30:34] elroy: I won't scare you at night...
+[04.02.22 20:30:39] angelo: I was sure that our actions were authorized
+[04.02.22 20:30:51] angelo: scare? bro, trust me, i've been scared for a long time
+[04.02.22 20:31:11] angelo: go ahead
+[04.02.22 20:33:25] angelo: i honestly expected this, but i thought it would be if P resigned and the fsb leadership changed
+[04.02.22 20:34:22] angelo: Tell me what you know.
+[04.02.22 20:34:35] elroy: I better go to bed. We'll come back to this conversation some other time.
+[04.02.22 20:34:47] angelo: Go ahead.
+[04.02.22 20:34:53] angelo: you'd better not worry yourself
+[04.02.22 20:35:00] angelo: shut down
+[04.02.22 20:35:24] angelo: come on, good luck and peace of mind !!!!!
+[04.02.22 20:37:17] angelo: may your dreams be good. bright and immensely positive
+[04.02.22 20:43:15] elroy: Thank you)
+[04.02.22 20:43:28] elroy: Good luck to you too)
+[04.02.22 20:43:51] angelo: well, here we go in featherbeds asses undead))
+[07.02.22 08:37:45] elroy: Greetings.
+[07.02.22 08:38:04] angelo: Hi.
+[07.02.22 08:38:08] angelo: Been waiting for you
+[07.02.22 08:38:15] angelo: no, he didn't
+[07.02.22 08:38:23] angelo: but I want to do it now with your guidance
+[07.02.22 08:38:34] angelo: can't do it without you
+[07.02.22 08:39:40] elroy: I would like you to do it by the attached instructions or write out what is not clear, I would correct the instructions then. Planned to distribute this to the others, advising everyone will be a long time, so first we need to work out the instructions.
+Write what is not clear in the instructions.
+[07.02.22 08:41:18] angelo: configuring adapters
+[07.02.22 08:41:36] elroy: which item is it?
+[07.02.22 08:42:13] angelo: - turn on 4 network adapters (internal network, intnet, cable not connected)
+  - the 4th adapter to select the source of the Internet and cable is connected
+[07.02.22 08:42:25] elroy: OK
+[07.02.22 08:42:41] elroy: This is in the properties of the virtual machine
+[07.02.22 08:42:45] elroy: There are only four adapters
+[07.02.22 08:42:47] angelo: Stop
+[07.02.22 08:42:59] angelo: let's start with the fact that it's all in english
+[07.02.22 08:43:02] angelo: one
+[07.02.22 08:43:19] angelo: two, there are advanced settings
+[07.02.22 08:44:36] elroy: Mine is in Russian.)
+Okay.
+internal network
+in the field write (or already written) intnet
+Advanced settings, there is nothing wrong.
+[07.02.22 08:44:54] elroy: There is a checkmark connect cable
+[07.02.22 08:44:57] elroy: Or something like this
+[07.02.22 08:45:03] elroy: and the mac address of the adapter
+[07.02.22 08:46:11] angelo: https://prnt.sc/26q1fh6
+[07.02.22 08:46:59] elroy: Yeah.
+[07.02.22 08:47:04] elroy: Just unplug the cable.
+[07.02.22 08:47:08] elroy: Uncheck
+[07.02.22 08:47:13] elroy: So set all 4
+[07.02.22 08:47:27] angelo: THIS
+[07.02.22 08:47:40] angelo: According to the description there is a certainty that all 4 are differently adjusted
+[07.02.22 08:48:10] elroy: Yes, they are.
+[07.02.22 08:48:32] elroy: But the manual says to do all 4 equally. It's necessary to deploy the system
+[07.02.22 08:48:40] elroy: The system needs to deploy first
+[07.02.22 08:48:53] elroy: And then you set it up for your destination
+[07.02.22 08:49:01] angelo: Right
+[07.02.22 08:49:09] angelo: 4th otherwise set up
+[07.02.22 08:49:15] elroy: yes!
+[07.02.22 08:49:16] angelo: check mark on the Cable
+[07.02.22 08:49:22] elroy: Yes
+[07.02.22 08:49:37] angelo: ` 4th adapter select Internet source
+[07.02.22 08:49:47] angelo: what exactly
+[07.02.22 08:49:57] angelo: sorry, I'm embarrassed to ask such stupid questions
+[07.02.22 08:50:46] elroy: Where do you get the Internet on your cars?)
+[07.02.22 08:51:08] elroy: *internet
+[07.02.22 08:51:27] angelo: from the main car
+[07.02.22 08:51:38] elroy: So do it, for starters
+[07.02.22 08:51:50] angelo: Nat ?
+[07.02.22 08:51:57] elroy: Yes, you can nat
+[07.02.22 08:53:13] angelo: everything
+[07.02.22 08:53:15] angelo: do like this
+[07.02.22 08:53:15] angelo: https://prnt.sc/26q1jm7
+[07.02.22 08:53:38] angelo: what's wrong with the sound?
+[07.02.22 08:54:17] elroy: Everything is correct with the network.
+With sound - it is not needed there. Your home router has speakers?)
+[07.02.22 08:54:37] angelo: I just thought that the sound has a different meaning.)
+[07.02.22 08:54:54] elroy: There in properties of the machine just turn off sound card
+[07.02.22 08:55:11] angelo: already )
+[07.02.22 08:55:14] angelo: I can do that
+[07.02.22 08:55:20] elroy: ))
+[07.02.22 08:57:47] angelo: so turned on
+[07.02.22 08:57:49] angelo: keep going
+[07.02.22 08:58:05] elroy: Perfect
+[07.02.22 08:58:39] angelo: just a question
+[07.02.22 08:58:52] angelo: pinging, checking
+[07.02.22 08:58:56] angelo: enter commands
+[07.02.22 08:58:58] angelo: BUT
+[07.02.22 08:59:11] angelo: at what step do I introduce the script ?
+[07.02.22 08:59:36] elroy: I uploaded a .vhd file, you must have already connected it to the machine
+[07.02.22 08:59:45] elroy: As a second drive
+[07.02.22 09:00:33] angelo: Let me put it this way.
+[07.02.22 09:00:38] angelo: nothing is clear here
+[07.02.22 09:00:38] angelo: The installation is automated by a set of scripts.
+Virtual disk .vhd can be mounted and scripts edited, openvpn.conf added
+You will also need to url refresh the stage3 openrc archive (see the same link as the minimal cd) to the
+file preinstallation.sh variable URL_TO_STAGE_FILE.
+[07.02.22 09:05:27] angelo: your file will be connected as second drive ?
+[07.02.22 09:24:22] elroy: test
+[10.02.22 13:56:29] elroy: hello
+[10.02.22 14:07:06] angelo: hi !
+[10.02.22 14:07:21] angelo: toad is alive already
+[10.02.22 14:07:45] angelo: the toad is alive
+[10.02.22 14:07:51] elroy: busy with something today on the branch uk ?
+[10.02.22 14:07:59] angelo: Nope.
+[10.02.22 14:08:07] elroy: ok
+[10.02.22 14:08:16] angelo: why?
+[10.02.22 14:08:27] angelo: speak
+[10.02.22 14:08:28] angelo: write
+[10.02.22 14:08:33] angelo: tell me
+[10.02.22 14:08:35] angelo: suggest
+[10.02.22 14:11:39] elroy: I need a report on involvement in uk
+[10.02.22 14:13:46] angelo: Your administrative tasks don't get easier by the hour
+[10.02.22 14:17:04] elroy: Tell me about it.
+[10.02.22 14:19:03] angelo: on the other hand, you must be proud!
+[10.02.22 14:19:10] angelo: for yourself
+[10.02.22 14:19:53] elroy: No, it doesn't.
+[10.02.22 14:20:11] angelo: I guess only cognac warms you up after all this.
+[10.02.22 14:20:21] angelo: sorry, bro ((
+[10.02.22 14:20:41] angelo: pass it on to somebody else
+[10.02.22 14:20:45] angelo: NOT me, I'm stupid
+[10.02.22 14:23:31] elroy: )))
+[10.02.22 14:23:38] elroy: Why not you?)
+[10.02.22 14:24:47] angelo: no, I'm not capable of it, what to me to these leading things)
+[10.02.22 14:25:44] elroy: it's all the same, when just an employee - you kick, when a teammate - you kick, when manager - you kick with teammates.....
+[10.02.22 14:26:28] angelo: yeah, i koder and kryptors kicked many many many times :D
+[10.02.22 14:26:47] angelo: hard case
+[10.02.22 14:28:02] angelo: you need someone you can trust and rely on, but with initiative)
+[10.02.22 14:31:59] angelo: will need advice, friendly support - always write! but not all of it )) honestly )
+[14.02.22 09:04:07] angelo: hello!
+[14.02.22 09:04:09] angelo: ugh!
+[14.02.22 09:04:12] angelo: hello!
+[14.02.22 09:04:24] angelo: how is it ?
+[14.02.22 09:04:39] angelo: there's a story going around the net since yesterday
+[14.02.22 09:04:52] elroy: What's the story?
+[14.02.22 09:05:40] angelo: that TRICK lost his leaders in 24 hours
+[14.02.22 09:05:56] elroy: Give me a link
+[14.02.22 09:06:03] angelo: no
+[14.02.22 09:06:04] angelo: from the cart
+[14.02.22 09:06:07] angelo: it's from twitter
+[14.02.22 09:06:13] elroy: the thing is, we announced in one team that the firm closed))
+[14.02.22 09:06:20] angelo: heh )))
+[14.02.22 09:06:26] angelo: ok
+[14.02.22 09:06:33] elroy: Give me a link from tweeter please
+[14.02.22 09:06:48] angelo: hold on
+[14.02.22 09:10:20] angelo: `https://twitter.com/HoldSecurity/status/1492197523120955394?cxt=HHwWhIC9xbjvrLUpAAAA`
+[14.02.22 09:10:51] angelo: I guarantee the news will break now
+[14.02.22 09:14:09] elroy: ``.
+Looks like Russian government actions are driving ransomware gangs to close their doors.
+```
+So the spy was there. We announced the closure of the firm because of the state of affairs on the darknet, citing the example of Revil.
+```
+Hopefully this is going to be it for one of the most unoriginal ransomware gangs of our time.
+```
+
+[14.02.22 09:14:48] angelo: i wouldn't be so sure friend
+[14.02.22 09:14:57] angelo: we got a lot of people here
+[14.02.22 09:15:04] angelo: there are people who confuse me for instance
+[14.02.22 09:15:50] elroy: There was no information that the firm closed. This company is closing all of its projects. We don't work anymore since February".
+[14.02.22 09:16:02] elroy: No, it's full of people, but the spy was there.
+[14.02.22 09:16:42] angelo: I hope so.
+[14.02.22 09:16:45] angelo: everything is stable here
+[14.02.22 09:17:01] angelo: well, that's a smart move
+[14.02.22 09:17:02] angelo: praise
+[14.02.22 09:17:26] elroy: Unfortunately, the move was forced. There were valuable coders there.
+[14.02.22 09:17:54] angelo: was it another group like ?
+[14.02.22 09:18:06] angelo: well, if it REALLY took out the rat
+[14.02.22 09:18:10] angelo: it was totally worth it
+[14.02.22 09:21:01] elroy: I guess so
+[14.02.22 09:22:38] elroy: I'll give you another beautiful link
+[14.02.22 09:22:50] elroy: In confidence
+[14.02.22 09:22:59] angelo: got it - no one
+[14.02.22 09:23:05] elroy: Only you and only because you're on the subject
+[14.02.22 09:23:23] angelo: I'm not a codger, you just have to say the magic phrase - between us and I understand at once
+[14.02.22 09:33:11] elroy: ``
+https://twitter.com/pancak3lullz/status/1488920505067483146
+```
+[14.02.22 09:34:10] elroy: This picture is very interesting, in fact) If you look closely, there at the bottom right date. The guy has Conti.news in his bookmarks, this headline appeared on a site that was hacked. but it was hacked in December, on New Year's Eve
+[02/14/222 09:34:38] angelo: Holy shit.
+[14.02.22 09:34:44] angelo: what a guy!
+[14.02.22 09:34:57] elroy: It's an employee, coder from there
+[14.02.22 09:35:08] angelo: Yeah, I got it.
+[14.02.22 09:35:14] elroy: He gave the screenshot to someone else...
+[14.02.22 09:35:34] angelo: another guy told me a long time ago
+[14.02.22 09:35:39] angelo: he used to work in GRU
+[14.02.22 09:35:54] angelo: the most potential is people when getting information
+[14.02.22 09:36:11] angelo: fuckishness or venality is the engine of information wars
+[14.02.22 09:36:38] angelo: well, yes Konti was broken so beautifully, everything is on bldt
+[14.02.22 09:36:53] elroy: Okay) I did not tell you that, kratik found himself in Twitter, and forgot))
+[14.02.22 09:37:16] angelo: of course)
+[14.02.22 09:37:33] angelo: there are freaks in the family, unfortunately this scheme always works
+[14.02.22 09:37:47] elroy: yes...
+[14.02.22 09:59:48] angelo: the question here
+[14.02.22 10:00:51] angelo: you do not know, Franz already started cleaning people ?
+[14.02.22 10:02:00] angelo: started
+[14.02.22 10:02:42] elroy: started
+[14.02.22 10:03:03] angelo: And what to say to someone who asks if he was given a salary?
+[14.02.22 10:03:12] angelo: at least pigeonhole, he knows that we all communicate
+[14.02.22 10:03:51] elroy: Tell him to tell Frans
+[14.02.22 10:04:13] angelo: yes he asked if I was given)
+[14.02.22 10:04:21] angelo: Efrain will write to everyone
+[14.02.22 10:04:25] angelo: I know this guy
+[14.02.22 10:04:28] angelo: unfortunately
+[14.02.22 10:04:30] elroy: Actually, Frans told me that the salary will be given to everyone.
+[14.02.22 10:04:45] angelo: then I was given
+[14.02.22 10:04:59] angelo: I like to play political games, but when I take part in them myself
+[14.02.22 10:05:06] elroy: Write what he was given and let him write to Frans personally
+[14.02.22 10:05:31] angelo: ok
+[14.02.22 10:05:46] angelo: I think Efrain's getting written off
+[14.02.22 10:06:17] angelo: maybe not right, I have no confidence in him.
+[14.02.22 10:33:39] elroy: Not impossible
+[14.02.22 10:34:37] elroy: In any case, the information is that the salary was and should have received all. And why someone did not get - it's to Franz
+[14.02.22 10:38:02] angelo: policy is clear - thank you !
+[14.02.22 11:51:03] angelo: there is a question
+[14.02.22 11:51:08] angelo: are we going to change the toad ?
+[14.02.22 11:53:45] elroy: No
+[02/15/222 12:18:41] angelo: hi.
+[15.02.22 12:18:43] angelo: question
+[15.02.22 12:18:52] angelo: and who from our side can make corrections to the code ?
+[15.02.22 12:19:09] elroy: to anubis?
+[15.02.22 12:19:13] angelo: yeah
+[15.02.22 12:19:28] elroy: well, biggie can
+[15.02.22 12:19:36] angelo: got it.
+[15.02.22 15:33:16] angelo: if anything biggie made it look good
+[15.02.22 15:33:18] angelo: well done guy!
+[02/15/222 15:34:43] elroy: cool
+[02/15/222 15:34:48] elroy: Tell him that.
+[02/15/222 15:34:57] elroy: Don't be shy.
+[02/15/222 15:36:20] angelo: I've never been shy
+[15.02.22 15:36:28] angelo: and always tried to praise h encoders or cryptors !
+[15.02.22 15:37:11] angelo: we all are kids, we all like to hear kind words to our adresse )
+[15.02.22 15:38:39] elroy: )
+[15.02.22 15:39:04] angelo: I was not praised as a child at all )
+[02/15/222 15:39:32] angelo: when I'm told I'm good, I jump like a 10 year old boy]
+[15.02.22 15:58:51] angelo: I'm out of here, if anything
+[02/15/222 15:58:51] angelo: 40 minutes
+[15.02.22 15:58:53] angelo: for once
+[17.02.22 09:32:27] angelo: hello
+[17.02.22 09:32:29] angelo: question
+[17.02.22 09:34:03] elroy: apr?
+[17.02.22 09:35:42] angelo: on the winder
+[17.02.22 09:36:05] angelo: 20H 2
+[17.02.22 09:36:11] angelo: or 21H
+[17.02.22 09:36:13] angelo: update
+[17.02.22 09:36:17] angelo: are they very important ?
+[17.02.22 09:36:20] angelo: you know
+[17.02.22 09:36:23] angelo: did not go through manuals
+[17.02.22 09:36:46] elroy: what do you mean "important" ?)
+[17.02.22 09:37:15] angelo: Oh, man, she has my mind right
+[17.02.22 09:37:20] angelo: from the security point of view
+[17.02.22 09:37:30] angelo: or is only def responsible for detects?
+[17.02.22 09:38:44] elroy: Updates are divided into feature updates, security updates, defender updates, driver updates. There are critical and non-critical updates.
+So, security and critical updates are definitely important. The others, I don't know. And defender goes separately, important or not - look for yourself, but usually it should be fresh, if for tests
+[17.02.22 09:39:18] angelo: security patches are also part of the update
+[17.02.22 09:39:34] elroy: Well...
+[17.02.22 09:39:34] angelo: I update Def every day
+[17.02.22 09:39:50] elroy: It depends on the mikes, what was smoking on the corp, so they did
+[17.02.22 09:39:54] angelo: + i download a new windup image every week and change it twice a week now ((
+[17.02.22 09:40:25] elroy: Good practice
+[17.02.22 09:40:28] elroy: But you keep an old windup, very old
+[17.02.22 09:40:34] elroy: And check it
+[17.02.22 09:40:42] elroy: To know if your software works or not
+[17.02.22 09:40:53] angelo: I'm making an image with every vin and storing it
+[17.02.22 09:41:39] angelo: still have to test under Mac (
+[17.02.22 09:42:05] elroy: At least not boring))
+[17.02.22 09:42:12] angelo: ha!
+[17.02.22 09:42:17] angelo: 400 krypts yesterday
+[17.02.22 09:42:20] angelo: or even more
+[17.02.22 09:42:32] angelo: last test was at 12:00
+[17.02.22 09:42:38] elroy: clean?
+[17.02.22 09:42:45] angelo: yesterday was clearly cleaner
+[17.02.22 09:42:55] angelo: it was 300+ clean
+[17.02.22 09:42:58] elroy: 400 pure krypts found during the day)
+[17.02.22 09:43:01] elroy: Wow!)
+[17.02.22 09:44:42] angelo: well, sometimes you get lucky on stubs
+[17.02.22 09:46:13] angelo: tell me, is Zeus our main ?
+[17.02.22 09:46:18] angelo: the biggest ?
+[17.02.22 09:46:22] angelo: or is there more ?
+[17.02.22 09:54:52] elroy: I have no idea
+[17.02.22 09:54:58] elroy: Money passed me by
+[17.02.22 09:55:17] elroy: And no one prioritized between them
+[17.02.22 09:55:21] elroy: In short, I do not know)
+[17.02.22 09:55:33] angelo: That's what I asked
+[17.02.22 09:55:43] angelo: we pray not at Zeus alone
+[17.02.22 09:55:50] elroy: )
+[17.02.22 09:56:06] angelo: well, BK understandably walks
+[17.02.22 09:56:20] angelo: about the locker, I don't know what the fuck it is about
+[17.02.22 09:57:55] angelo: my bad - curiosity
+[17.02.22 14:44:27] angelo: let me come to you again
+[17.02.22 14:45:04] angelo: test abt
+[17.02.22 14:47:02] angelo: knock knock
+[17.02.22 14:48:04] angelo: of course, i don't know what's in the plans there. But there are a lot of people in the tric group
+[17.02.22 14:48:08] angelo: are all needed there
+[18.02.22 11:36:12] elroy: Greetings.
+[02/18/222 11:37:13] elroy: Okay. We made some changes to the router
+[18.02.22 11:37:17] elroy: Let's try again.
+[18.02.22 11:37:30] angelo: I'll look into it
+[18.02.22 11:37:35] angelo: it's a terrible week
+[18.02.22 11:38:00] angelo: you don't think i'm a workaholic
+[18.02.22 11:38:29] elroy: You're always testing something
+[18.02.22 11:41:53] angelo: there were a lot of cryptos this week
+[18.02.22 11:41:56] angelo: 300+ yesterday
+[18.02.22 11:42:02] angelo: + cookies
+[18.02.22 11:42:07] angelo: by anubis
+[18.02.22 11:42:14] angelo: testing bootpack builds Biggie
+[18.02.22 11:42:48] angelo: but I'm needed !
+[18.02.22 11:43:23] angelo: sorry, you can't put it on your CV =(
+[18.02.22 16:16:52] elroy: I love this chat)
+Just saw the messages.
+[18.02.22 16:17:12] elroy: I'll write your resume, but they won't believe you)))
+[18.02.22 16:17:25] elroy: Are you still busy?
+[18.02.22 16:17:31] angelo: ok
+[18.02.22 16:17:32] angelo: sec.
+[18.02.22 16:17:36] elroy: When are you gonna get to the router?
+[18.02.22 16:18:40] angelo: do i need it ?
+[18.02.22 16:19:28] angelo: I thought we were in a car
+[02/18/222 16:19:31] elroy: We are. Or did you change your mind?
+[02/18/222 16:19:55] angelo: I didn't change my mind.
+[18.02.22 16:20:09] angelo: just a lot of tests
+[18.02.22 16:20:15] angelo: so what to do?
+[18.02.22 16:20:36] angelo: and i thought you were ignoring me, like you fucked me up angelo]
+[18.02.22 16:20:41] elroy: Run the build. We fixed the scripts, we just need to run it.
+[18.02.22 16:20:41] angelo: I got used to it, and I'm not even offended.
+[18.02.22 16:20:51] elroy: )))
+[18.02.22 16:21:03] elroy: Sorry, I had a lot of work + scripts to fix
+[18.02.22 16:21:15] elroy: Still testing at my place today
+[18.02.22 16:21:41] elroy: In general, let me still dostestify it, and you work... We'll try it on Monday.
+[18.02.22 16:22:31] angelo: ok
+[18.02.22 16:22:37] elroy: > I thought you were ignoring me, like you fucked me up Angelo.)
+If anything, I'm a straight man, I'll say so)))
+[18.02.22 16:22:39] angelo: shit, we gotta do something about the cryptos
+[18.02.22 16:22:48] angelo: Calgon swears
+[18.02.22 16:22:58] angelo: I'm straight too, it seems too much (
+[18.02.22 16:22:59] elroy: what is he cursing at?
+[18.02.22 16:23:03] elroy: Details, please.
+[18.02.22 16:23:08] angelo: well, 30% of crypto detects
+[18.02.22 16:23:24] elroy: So, it's a good indicator
+[18.02.22 16:23:26] angelo: even 50
+[18.02.22 16:23:37] angelo: Silver told you to say that?
+[18.02.22 16:23:43] elroy: There are also specialists sitting on the other side and writing software
+[18.02.22 16:24:13] angelo: we say prodetects in tests
+[18.02.22 16:24:18] angelo: right after crypto
+[18.02.22 16:24:18] elroy: So not to detect at all, it will be very expensive
+[18.02.22 16:24:36] elroy: What exactly are you talking about?
+[18.02.22 16:24:41] elroy: What kind of detects?
+[18.02.22 16:24:47] elroy: Crypts are dirty initially?
+[18.02.22 16:24:53] elroy: Or get dirty on tests?
+[18.02.22 16:24:59] elroy: Or do they get dirty during work?
+[18.02.22 16:25:08] angelo: vakataki
+[18.02.22 16:25:10] angelo: sabsic
+[18.02.22 16:25:16] angelo: and when tested dirty
+[18.02.22 16:25:19] angelo: and die fast
+[18.02.22 16:25:29] angelo: they just remember their past victories
+[18.02.22 16:25:34] angelo: and that's what I think they're aping
+[18.02.22 16:26:51] elroy: I'll get to the wacktac someday thoroughly. But so far it's not working, and it's more about load activity.
+[2/18/222 16:27:09] elroy: You see, if it's always breaking into one place, the autoload, a crypt can hardly stop it
+[02/18/222 16:27:27] elroy: Or it always connects to the server using the same protocol
+[18.02.22 16:27:47] elroy: Def traces general, get activity detection
+[18.02.22 16:27:49] angelo: Yeah, I get it.
+[18.02.22 16:27:54] angelo: the algorithm is the same
+[18.02.22 16:28:03] angelo: and in fact it detects the behavior itself
+[18.02.22 16:28:30] elroy: it's not about crypto...
+[18.02.22 16:29:36] elroy: Kolyan's bot with defender and cloud hung for over 30 minutes during tests, then he left it for the weekend... We'll find out on Monday.
+He doesn't have a wacatak, the crypts are still the same.
+[02/18/222 16:30:04] angelo: hmmm curious
+[18.02.22 16:30:19] angelo: but still
+[18.02.22 16:30:24] angelo: a separate crypto would be nice
+[18.02.22 16:30:32] angelo: as I think
+[18.02.22 16:30:42] angelo: if Zeus is so important
+[18.02.22 16:30:47] angelo: though where do I go
+[18.02.22 16:34:00] elroy: Recommend to the coder, whose software is crypted, to catch the vaktak himself. Just turn off various functions that palt activity. and he will see what is stolen.
+[18.02.22 16:42:55] angelo: well
+[18.02.22 16:43:01] angelo: you know them all
+[18.02.22 16:43:02] angelo: biggie.
+[18.02.22 16:43:08] angelo: and helmut
+[02/18/222 16:43:20] angelo: helmut is unlikely to do anything himself
+[21.02.22 09:26:30] elroy: hello
+[21.02.22 09:27:26] angelo: hello
+[21.02.22 09:29:54] angelo: hi
+[21.02.22 09:30:02] elroy: )))
+[21.02.22 09:30:20] elroy: Router time to deploy again
+[21.02.22 09:30:35] elroy: Put it on, let it unfold
+[21.02.22 09:30:41] elroy: I'll throw scripts again
+[21.02.22 09:30:46] angelo: Go ahead.
+[21.02.22 09:30:48] angelo: I'll try
+[21.02.22 09:30:51] elroy: fixed some things there
+[21.02.22 09:30:52] angelo: 0
+[21.02.22 09:30:56] angelo: also Thunder got sick
+[21.02.22 09:31:14] elroy: You need this stuff for tests
+[21.02.22 09:31:24] angelo: I'm dreaming about it myself
+[21.02.22 09:36:55] elroy: Do you have public pgp key?
+[21.02.22 09:40:56] angelo: I will
+[21.02.22 09:41:06] angelo: I'll put the kleo
+[21.02.22 09:46:25] angelo: you won't believe it
+[21.02.22 09:46:30] angelo: they tried to scam me
+[21.02.22 09:47:27] elroy: how?
+[21.02.22 09:47:47] angelo: tried to leak the money
+[21.02.22 09:47:51] angelo: from the account
+[21.02.22 09:48:25] angelo: you want me to throw the key here ?
+[21.02.22 09:48:27] angelo: give me yours
+[21.02.22 09:48:39] angelo: love ponies
+[21.02.22 09:51:31] elroy: Give me your key
+[21.02.22 09:51:48] angelo: -----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: User-ID: NeoAn
+Comment: Created: 2/21/2022 1:47 AM
+Comment: Expires: 2/21/2024 12:00 PM
+Comment: Type: 255-bit EdDSA (secret key available)
+Comment: Usage: Signing, Encryption, Certifying User-IDs
+Comment: Fingerprint: 78802E92C96973A3A7C9A7096F188E27DE3DBB9E
+
+
+mDMEYhNfuBYJKwYBBAHaRw8BAQdA74c/1IkO4v0VIdHavxxB7tL/pTEW6xeIZ+b0
+ffIXzky0BU5lb0FuiJoEExYKAEIWIQR4gC6SyWlzo6fJpwlvGI4n3j27ngUCYhNf
+uAIbAwUJA8L2iAULCQgHAgMiAgEGFQoJCAsCBBYCAwECHgcCF4AACgkQbxiOJ949
+u56wswEA+Cf8FSlIcXxlwVjwoKI6cYxM7/8JKt77+GGow8bny4BAPuAZQw9968S
+3eTbHjQ/BT0RaMrQnfPSSofyScoYw20FuDgEYhNfuBIKKwYBBAGXVQEFAQEHQFLT
+ja8gZ9ErsN75bPOQsf9dURByE7yuYJZqVcWKN1CAwEIB4h+BBgWCgAmFiEEeIAu
+kslpc6OnyacJbxiOJ949u54FAmITX7gCGwwFCQPC9ogACgkQbxiOJ949u55hsQEA
+9ehQsSCj8s40xzRoZg095IINF9eFUkQ1mV8WoVRzEkA/iCzHWRYWBSUkudr32Yd
+2x7J2DApvjtgxNUL9SFdHPgE
+=loaq
+-----END PGP PUBLIC KEY BLOCK-----
+[21.02.22 09:51:56] angelo: give me yours
+[21.02.22 09:52:30] elroy: Comment: Type: 255-bit EdDSA (secret key available)
+[21.02.22 09:52:34] elroy: That's not it)
+[21.02.22 09:52:39] angelo: shit
+[21.02.22 09:52:41] angelo: exactly
+[21.02.22 09:52:47] elroy: make a new one, need rsa 4096
+[21.02.22 09:54:16] angelo: -----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: User-ID: NeoAn
+Comment: Created: 2/21/2022 1:53 AM
+Comment: Expires: 2/21/2024 12:00 PM
+Comment: Type: 4,096-bit RSA (secret key available)
+Comment: Usage: Signing, Encryption, Certifying User-IDs
+Comment: Fingerprint: 03D54EFA1904D403E459B03F040A91AD80D5EA22
+
+
+mQINBGITYSEBEADE0w0Yhr+v0wOoKbYUGE+3eHRxOrZkJGwUMxUP1cg8D7vGhsMs
+igh3xeX4AKvTgwwrK15cbC+RiH57TbrjVGbXM1NDttd2o7S5Sbe9Ji4jeliozc3Lg
+1/DU76fuukzyU78MmzNoebY8befWeEkEeR3clS39XnCVL68bCnYgc0UhVeraDyNF
+6aoJf9/8yGSiRAsj3TFmkDQFySu3Mi9KMCllgiNu/dsoL1oOMVbH+apYeggjnaVv
+edodRBwseJ5PemfZ+UWHN0YHh/G8Bl1QGu77huQo87QcjR0MrVTXSjA0ZWJ+sbLK
+52BhxZROgqbj/+q+ibWB23r0Jot4jUQ3kjOJSkN9PIidQtT6VyniC9Eryy2WjDDz
+iSMsIUb9x8edwg/anCsD+ygvxsYGUGz9qcsr1AQrW9ptlPtTwA/yWWV2ulEoDnFL
+hiMCfbK8WH4L3ZfdFx5wrF993jO9SpFAPuUuofyrtNqVy+I2BYgMnmHhTyZklIRl
+fVBiIjHEc3HVfXOneCDlR8iwqjaM7LHv+mqeQx/uwMHC9YLen9Wi4VU9CgRNu6Rt
+LvNmArLz6fJ6cglHlx94hqZfs46qDJJdm/WyFiCccuBvT4lSTvNuOBPZeTLdgvRH
+XcSIf/Kftoqot089kotgOOPSYtHMpS2kirDAtYSLuzM0a0Z+iD2ZAmKfZwARAQAB
+tAVOZW9BbokCWAQTAQgAQhYhBAPVTvoZBNQD5FmwPwQKka2A1eoiBQJiE2EhAhsD
+BQkDwvUfBQsJCAcCAyICAQYVCVCgkICwIEFgIDAQIeBwIXgAAKCRAECpGtgNXqIkkS
+D/49VF/HmebdCC/Qr1MY5uJtwfxevN1/6S2rRr5uXHxOV2yq8VOeEzxqTBGfoGIa
+W6kmPZ4NO94CbjkEtX047Z5Mh9Wu2798Tvu0oYYGP38hiXd87EXWD8OODY4f2xFx
+dSla9TP8ECovqOUDYClH9JanBmwFBj5AlRkq1Q2zmcDRw1UnL879BWnv5cwCBlbm
+vhsBK7BHdDqc3Bny8nSXvg9d2dBMIUjD8OxlIUaHLgpveSZBum1MhIlllLmTN7vx
+K6Orh8rjvqTYvcnBtJ1dgKPsHDN6t7klDn+ZbNa9xoKB/vF4+b4jDE8EiJm/rmVU
+aitjGjj3DNpD2fOXDGQJqlRFbNiMQhQIleM9yv2XihnkgeQCKGGeTHK3esSTgyTC
+K0jT3Toeg5yBCdVlXfvqqgLTtwFdzpbyMAitllgPZ1PfMbPy0s18k21Yl3COgD6
+TcPc77MbaRFuNvRFJwauqRpYjH/bgZ5dI8VOlEQp0QXejmSt1VGKxPKRKDQWmeKS
+RBG0TF9ERzl95wCKTeMFKBa/PZq9tgq9zJQjz4w8uRVeCh7Qr96fBhhJfTFKdYXH
+WJq61DYdYdIkbtz702PIhaFIRncggBuSDWVa3u1n6feaqmXkmH+9/1vrkBaGaNYq7W
+U492oe94ex6ZgJG1m0JDuio/SyqW+LXkXjSbN6JJBaJHtrkCDQRiE2EhARAAvc4n
+LKPTZQvcrWm1bUUvL1XX8HgSrArm3uVInBCFxk9DZugSzSJpOn6HPWyBtRbkF441
+NytXHf+zjNCl2nILbTJ6hqDQlr4aN3wkkaaSQVs8j0AzLFmzrOeu/o4OwEbnZ0b
+RLBmB91YRJviVbFNgr9oLTPlzLEvOKumgT8/qvhbPHpkF8x7HD6BXT7He856ftH
+VdyltU0/5/MmynBTDF6aX5puGxe2rngdvGfztSmdjHixSevDByE/l7P5QXvxa9eS
+akGBHSA7NXlavv1DrYXFQHrcJmxyJm5WbeB0wDGFX9Au/YqeBWdORL1Zgj4eTV04J
+b6OZogfwWpfPWZNZKc2ZHMvyCnIdZSEtbhQFOERY5TXWK4vAgb8nDXRk7JQfUO2Y
+7jSXGNiHpVSCbxuSkokO5ATfsWHaxEJoFkJX4bho/0BNXK7QpvsMgwm6SmI7Ww4h
+1jIKdZP385963wFnY6eL2kf/8qVvYs4bMW1pTWQzOZNgftMFNjtrdrx7qmjBC6RK
+A3fkOyDGiPoMlkvGWEwor/Z2jYjnJbdFbp6mZB6anBKcpszwInB13XGC3YhXkq8p
+nG93jmqAhUVp3iSenzVOVSnbBty8OStDG8yX2lo4GDwt4JohFn8FqfIJ/94Xe3hH
+vr4h9S6SbPPPHlLpLPm/jw3j9o6Lv1VoqOQXAcAEAEAAYkCPAQYAQgAJhYhBAPV
+TvoZBNQD5FmwPwQKka2A1eoiBQJiE2EhAhsMBQkDwvUfAAoJEAQKka2A1eoiWUsQ
+AI97xy/szolmdtY72Bj2nCtw6wEOISQWmn72hPVjCqjXJO3FejJIadJgEs/X/6
+Evwgaolyww42C48870xkbPXtuItAtCa4se20gttOFRrtAlHTraVIKYYDED2GxcDs
+XJqqCemdcV5uV2tmMZoU/m8cf9WBhGBInUHO67HoA73fj1z1lAtz3Muzy/GvWc11
+YsK3AtmDhAG5+6fB9sb2VVXn6VVszj10FTlNk16XO52YyyqFblBpuIEq/ILX/4TY5
+/ICf5CBB3gWu2TnigG57UlHxJOP5VLIZi4ErSlhEM6omt3jVLqXOdkDzNn03Jez9V
+sS2SK+bAf84lsOkNa5FfNou8ulNSzOac4ULxW4UIsKM8pFQCZ/z5tfANW4jrTLLc
+SZQDbJ2cH7XpSbjONjEm8acIeAdFspELH9e8yHnN/vdicfxXdloqQwq//5IVKwnW
+k7V/gmsY4P1y+Vnku4oK64gEg5V6d//SajktxW6mRh+qR4lE/ngqiHiwc3c3Vmdme
++P2EvFjDDcFWKBXTj6IduyUn+KwIGYngcboYc6gq8nBSy3oEgUDfO5aKw84E00NB
+iD9KlAavuOWEAF6cfJQzHgmHpNHPazukHRcU3iMdl8iQ6RcKJsb22R+AlH0kOg4W
+L3NoVV1mkeFID9AQpz87wG5HyMD8J80+GfJizvQTkknR
+=t6qv
+-----END PGP PUBLIC KEY BLOCK-----
+[21.02.22 09:56:44] elroy: -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mQINBF+8/F4BEAC6fKujzW+3CwSV8TuIgGfKLSkkexu/VrVmUbX6GYTy1JwK6h7
+l1VWOCz/wYDW3H0gDPRnTjf1nOnJ2Kk8DEBrPrSWpe2p7J/6N+kQAY/IcZws62Ao
+/IXp3+GaCpfehlseQPH8rtZpKD2LNYC/NUJAFecSYG1/14n8bC0n7+T165MqesA/
+sejLExnklYlEAJp5iWFfitftt9ndR6kqPBIWiBQ7UwK4Ox9FnvRQIUkDtx68/dM4
+23uYLwqq01yTg8UV2w6NLByTCDX2BoL60F+yJIBH6BUrzVwVrMMGiz4kzPJ/vxf5
+dXX/f1oMaDdokddWo8fcOUvw6rY9g45kAwiIKN1E2UffkdzuM4UWTU6a7HpWh9X2
+L77+9J5TxivXJurOVJ5WgK8qaVp1I6HdgZ9AOQhbdHUvXCjr7B6svrMIcQvItaUL
+WFDTbu/i5ajQBBmVk0ohF+2f/K/YXO1z1l7BdrAmpzjsBPS5utcAruprRe0xEsQw
+L9/iZPECylzO5KYfOiRygMZxhDZg4e2ahEmzghrhNEQGqmQE0CqROlVHxKVU0ROn
+Yf4A9YiXoeYQhsXVYu/fz49wPyr8ecHb7Pe0ErWaZauacrFlAOHBe/IWpChaK+lQ
+GSnTf3Jj7aKjDIR/+9P9YxltK1l2qESHW/ElfzsdtBxeLV1pHDul6byLBQARAQAB
+tAVlbHJveYkCTgQTAQgAOBYhBEKA4H5vsjsEWnck2H4r0S3Tu9+FSBQJfvPxeAhsj
+BQsJCAcCBhUKCQgLAgQWAgMBAh4BAheAAoJEIr0S3Tu9+FSyYYIQAKn+D+ewUz+E
+M+vtjvZepLhwGQ27ybU67mpOm1/9rsmrECgrc+dEfvcmST1viVmlLW1MSwi77yGk
+aNUEsIoAFcZQf0AoONHFFdCHdgr6pnnu305FwFbzLWjFCcfIU59/KmmsGje0Y3Brps
+hJt/04rJMQ/bIuYm540Nnn2PlVL+FlM764pPCrvO9WRagSYsoBKnYY6vXk2VU3nR
+E3zXHjDOVFLRNQGcfQXrUJcnhGarFggspgLY2cYPr4FdLMhtmCkpipDmYajDMg8wp
+qqWk8TTRs9POkGAiXCAFu6h04rTSo0uqz4yZojb9Jtev7fTIwmfzkCMi8brfYdpi
+UqO88TYu8SUOu6jjGLEHpTcCH/5qKShPOlaa3FIxQUKh04pDPFBYWwF/hgmxXPOA
+2v8nAPxkqRFxjypx9iW5WEdfwCvt2WtCTEkJd6X+T0RfAz2q6UpXGPutL9bQ9YQ5
+bDRnFgQjHqFpW37Nfwm5Ov2HZnkmlPBn3dEXfNiXIamp3sev0KOgHeOKhqcWpdBq
+J8F02XfdxFSk/KkkJAEzQVL+QPcClXfJyu7AsO3U2vBbb3siEDmUjPc6k4yl/T57
+c1YisUIz1USIB5e9HV2kr+j6dbNqGD1hKdhzWctNG0O6nZZkGHkx9KZrMmoX2QeJ
+EV6VYJVPdK2aUcOfrj/nE7ZGd8QCNL2AuQINBF+8/F4BEADHuE8vZMetlcnnTr3b
+aRskqVDcD3xoGabpVPhVyum7MdKdQdQryavotHdqfhqbnB46pOFx0ED7+C4qjl9iy/
+UHG8B38tKUjjMAvyFyrBeX9iPq4AHZn2lGawNjPYqtBL7BpPT8PybhET6DtvjKXc
+vNiPbG0jmUtc5WnS6LsfjcgQdQT93FQgNCi50OhQI1hduZrGw/nQmU9mYtOI6T7
+bDFCaPRQI89eOUF2hOLs4UjfXVfh2pt43m4XR2atwLPL/DjS1MpnD5r0jVpG/E98
+hIOLTpAhAKDYb/SPzmmh8mvhpNISkdFBuryI8XzhM/RGqpVJOrjl4a6jy2IfKDAs
+9o4nwbpTHx1URxgbDVktYlzzFcbCSbQZnJELgOkDMhvW6tb0Tshv1XZLYoWxAN2RN
+UWwx1P+MAtTimPE4iSkxgrqbwoQjp+l+vuFof8JN68BaXpK92L6w0qi+cpXN6Jw/
+9QaP118gF8V3MaJeYSdqC1kxgPSPSZTAvrlkHNkqleftpxSXK+cxqwWcWs0JOmopZJ
+1HsHJee/FOAWBQHsh/Pyi8bKT7jol+H9wbvCvCbMohWJrDjE5m+rc3FYUDZCGctK
+opC3ZkK4UTjGKpOGr91IPf7Z48Z+gdXGuSF0iN0cVW9uy0L7UWHQgfVKo7gLDER2
+gwDoQdlTrdaaKkaY4ccy8lsaZQARAQABiQI2BBgBCAAgFiEEQoDgfm+OwRadyTYf
+ivRLdO734VIFAl+8/F4CGwwACgkQivRLdO734VLFZhAAo/5G8k+aPRxeAzznN0yb
+FfpVlvRzVO35UWGaK/2oYxdEVe+cXGCVTJ788y392IOgleHCfF/Rw7mM7ryDFncL
+6PjxCgl1GP6HS0NfvpwRlrblmFXMXMK8DyWy9yYsWG5SR4I0NqlGiMBYywmeccgI7
+mPGSTgNkaLefBeyDduZleKteiRy0ip0Vq9/mDKz8J9wEzgxYMVJ/zrZdTrsDmjE2
++nw6I8FJ/A7V6D4W91knbG2DdMyx0HrqpnEyu/b5wX8piMY4HhVxBrA83vjf4j7r
+kbjunyRVGvcj4Zmtd0rvsiGuHXIQNyXW0So9SJgDfxs5Og+JZvLzL9N1Ygppgxay
+qpfttXiDPa6kNtOO8ZF7rCJrdzN4mnK103C5I4K2n8bZi6BHv9kTrwKKLYktg3
+54TiG9jJkeInHJTzbSuXfCWP7UbF39mKPdqmxIJ3GeZcL0cYupEfw0JVdsVQ+BQJ
++ZScKCFdQ5losDqDqDkZ0oE2DZ7Tjo6YeVzbxI3EgSsQ3CXRYKFaMHXsf/SAZhYQE
+kziWSrpYADwwmOIO13tG3konLtLgmodIjH6ad+xXnje27WRCpZERJQnfsoZreq5QA
+q48P4H/Sh033ISB7N/OcRzzeB7noOR4pGCv+hZXQYc4jyLX8ExghQV9dbiLuMILh
+5GhKUPljKAofZLHZNImERjc=
+=mjaK
+-----END PGP PUBLIC KEY BLOCK-----
+[21.02.22 09:56:51] elroy: This is mine
+[21.02.22 09:57:19] angelo: it's good, you added it, otherwise I would have thought it was wrong ))
+[21.02.22 09:57:52] angelo: added
+[21.02.22 10:00:21] elroy: ``
+https://file.io/QU1XQSOJNKLo
+```
+[21.02.22 10:01:10] elroy: Any information, passwords and files, all encrypted before transferring pgp
+[21.02.22 10:02:00] angelo: got it.
+[21.02.22 10:02:54] elroy: I updated the scripts there, now the traffic is fine and updated the doc
+[21.02.22 10:03:06] elroy: It describes how to build two routers in series
+[21.02.22 10:03:31] angelo: -----BEGIN PGP MESSAGE-----
+
+hQIMA4Cy1X1oPYUOAQ//RB+BDLInZKw4NHRYH+ToTIzps66qwraTJbs+PbwqRIVu
+07kBwy3KPHtJWdacHVFtyzn0B2ZeCPt4PzysU48gaUxvrfm5r47vTg8+ZBnamYTs
+zB4mp5sM0CVqajZH9L6uRYRdwbdT8b+GmW/dofr+DUMwKLwQSt53LGqfSXZrKIVK
+2+oPmdf/r3tyulaprOUQzuKIJDsN1tPUwvYjPeNCbLK8BQ8UDtj3AB8rIDKPht2
+UAu11Gn5lAVmH1Jtjf/NE2ltkcrm73+kkkpwB8MuXZH1k+vpK3mocGNOMG8qGDAeI
+0cKpfNW+B8Pm9iwZk7nUG9/w0E/fkGQ4On8XgsHyFwuQg9GRzfIRtgXN0C8PPZUG
+pfIY3+rmwpdxq6+1qFq1I3b4s0Y3VNRQCR1yItS608Hr5rMltOmYwpWkidhMlij/
+stJEeb3+hO5wmqs+rfCj3/HhxuPFmhKiC1k8/m0UokE2hJRG7k2qLqOkODl37adL
+GLIxKyhJ9WJDJvhhuRLz+hsU74wXTE6UnjwOIMQDdFRoNzuv+G5cX24dMuAOakU5
+hHzGE9Agx5+FwL6qct4mYy69ocoPiyN+sh+4DpUYnWdIsUoXXDc4Akp9wBriDf2v
+pGeLHV1Q/5Q9yPRmiEH3pH9AA27Fab5uCzx+xplgOKSW0AuYAtLnF8xpLvWHf23S
+hwEG49O+I5vh3J7STskvUXbOaOLfuByL6FO551j08cDGP2jWNEmPns3OO+/2s4hS
+4aUihUSH7nhfTkPUBrrPB+fB0E2O2kqhXjBsY9VX4J0Dotu6+9T5WXLMhqDc0uCo
+Nepxm0Z+h3gCvHZk/XVlrCksOXiBulYHWX9lTz/KwHVkdHBeqkqlmg==
+=B0Ay
+-----END PGP MESSAGE-----
+[21.02.22 10:03:48] elroy: Yes, I also found that the machine is created without ahci controller by default.
+The IDE works fine... but slow
+[21.02.22 10:04:19] angelo: ok
+[21.02.22 10:04:23] angelo: try to
+[21.02.22 10:05:00] elroy: got your messages, all in due time)
+[21.02.22 11:28:59] elroy: I see the gentoo people released an update yesterday
+There may not have been gathering due to bugs, probably fixed
+You have to update the url in the script.
+And download iso again.
+I don't have an assembly built right now.
+I will try this update
+[21.02.22 14:54:40] angelo: question
+[21.02.22 14:54:45] angelo: I don't understand
+[21.02.22 14:54:56] angelo: test
+[21.02.22 14:55:03] elroy: test ok
+[21.02.22 14:55:03] angelo: can't understand
+[21.02.22 14:55:06] angelo: there is a detec
+[21.02.22 14:55:23] angelo: and there is what Def suggests to send the file to check
+[21.02.22 14:55:33] angelo: but no block action at all
+[21.02.22 14:55:41] angelo: anywhere pointing to malware
+[21.02.22 14:55:48] angelo: detect or normal ?
+[21.02.22 14:57:53] angelo: and when running these dlls, after knocking silence
+[21.02.22 14:58:39] elroy: Well, if he suggests it, then the activity is suspicious
+[21.02.22 14:59:43] angelo: but at the same time he let you run these files
+[21.02.22 15:17:21] elroy: File should start without user's participation
+[21.02.22 15:17:47] elroy: If Def asks or hints somehow, it's bad
+[21.02.22 15:17:57] angelo: got it.
+[21.02.22 15:18:14] angelo: so it writes in the detect and in no way work
+[21.02.22 15:19:41] elroy: did you look in general?
+[21.02.22 15:20:04] angelo: sure )
+[21.02.22 15:20:06] angelo: first
+[21.02.22 15:20:21] elroy: You just work so hard
+[21.02.22 15:20:24] elroy: This is embarrassing.
+[21.02.22 15:20:39] angelo: You got tasks to do
+[21.02.22 15:21:10] angelo: go tox
+[21.02.22 15:21:45] angelo: -----BEGIN PGP MESSAGE-----
+
+hQIMA4Cy1X1oPYUOAQ//QGm6vmX87xyIyQ7ibrIxZii4gtPOclR2lBFE3U+xGcpF
+FmY0Tp5II9n1Sb0b7y89WSNfnTcadxmEEVyhdgKZIoDFD5AQ6FMT5R3fm2d5iBP+
+YSViOR9s/j5hpMMtpdBc3Hwf+hxmkm8nP1/C6BZKIuIcPXOyXIEaFCZXuLBFBGBK
+MdP8DXEpcSnRe0kKt20548qPbYKtfdqvPmGEiivqa/flaz2NasA6rtX24dRiPYnQ
+ZuUJwZwgJdHpC9G3HLTKldoMFAXbe5g3QxP6E2gHVHLNLzkpNrIYXI5KoE9VR9T8
+2D5Nt1jsfqVPE18lz1K6TXqEMMUu4N6FSkdOWXea08wz9d7bqIm2thIwKN7hfAOn
+xQ+eS8zKPuP6yw3o8pCmf7ddwAPD9xABFgTeeEcbr5hJPeLSDgIrKbiyjeZlpYGT
+x+A8cux87ftO+8NWP26LLE/M1t0EjjwjyewhckdaSV41FNOFSA2GnE/sTDoPbagM
+KeTufgGWygxrTAcz1RPP/AdbtolJY901obwzSpvBRcDgnif6FVZ3+gvWlE+iXVxi
+06JMbqA3pOWnmOSzTyiOsjJnAVvWHglirhvNZbh/++dzOfo29vAEpYlhK+9TMTXe
+Hqc0SM3AvTqSxYimiau+elq9o6hDIApDdL7m32OhHuFn8HPAKi+Fle76eEoL5N/S
+egECK8jf5xWHrKIYvrMEly8SGZLwrFuSd1ptKNevDlS+6lp0aWJQu+zY1eDsfqrd
+PNvHmNFv7Utx3FMq1CK6fkq22kYGM2r+9PzR4o+uHPpqTpKSmbMkqRCpsWe11MGm
+s24BIdw+KFaHi1d9gmQZH8+G/ytAsyZgqrVt
+=AkyC
+-----END PGP MESSAGE-----
+[21.02.22 15:22:11] angelo: I went on vacation once, I came back in three days :D
+[21.02.22 15:22:46] elroy: I'll add later
+[21.02.22 15:23:15] angelo: I'll wait under the moon

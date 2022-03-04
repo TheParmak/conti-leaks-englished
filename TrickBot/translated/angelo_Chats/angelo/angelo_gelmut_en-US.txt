@@ -1,0 +1,1009 @@
+[01.02.22 16:40:13] angelo: hi
+[01.02.22 17:27:22] gelmut: hi
+[01.02.22 17:30:53] angelo: I'm in tox, you already texted me, I gave you the answer )
+[04.02.22 09:53:53] angelo: hi
+[04.02.22 09:53:58] angelo: need advice
+[04.02.22 09:55:12] gelmut: hi
+[04.02.22 09:55:23] angelo: go away
+[04.02.22 09:55:26] angelo: shorter
+[04.02.22 09:55:34] angelo: I was tasked with moving the bots
+[04.02.22 09:55:55] angelo: `PS: at the moment gave up on this, because not all bots are transferred, and can even die - a very fine line
+well, everything depends on the crypt, and also what's installed on your computer (whether it will transfer) `
+[04.02.22 09:56:00] angelo: you wrote ?
+[04.02.22 09:56:26] gelmut: what do you mean transfer?
+[04.02.22 09:56:34] angelo: like this
+[04.02.22 09:56:35] angelo: well, look.
+[04.02.22 09:56:36] gelmut: to another server (admin) ,
+[04.02.22 09:56:38] gelmut: ?
+[04.02.22 09:56:47] angelo: as I understand it, the bot's affiliation with a particular project changes
+[04.02.22 09:57:07] angelo: I need to transfer the bot from archived projects to a new project
+[04.02.22 09:58:30] gelmut: to change bot project, you only need to do init's update. It will only work if the cryptor allows you to normally pass the dll file name
+[04.02.22 09:59:03] angelo: sorry, how do I update init ?
+[04.02.22 09:59:10] angelo: you know, i'm not technical
+[04.02.22 09:59:40] angelo: should be done as a simple update ?
+[04.02.22 10:00:14] gelmut: in bot admin there are 2 types of updates - botpack and loader (just loader is init in the understanding of admin)
+[04.02.22 10:01:19] gelmut: I.e. you build init_dll.dll / init_exe.exe via bilder, crypt it, then put it into bilder in update folder and bild an update from it. This update fill in the admin panel and update the desired bots, or all or manually give each
+[04.02.22 10:04:16] gelmut: On the good to give bots need 3-4 pieces, and if everything is normal, then you can and others. Here's what's important:
+1) after the bot moved to another project and knocked into it, watch to file error it was not.
+2) If file error = 2 or 3 appears, crypter is not launching dll correctly.
+[04.02.22 10:04:49] angelo: oh, not easy
+[04.02.22 10:05:13] angelo: so, I'm a little dumb after the crown, let me ask you some more questions to clarify
+[04.02.22 10:06:38] angelo: look, botpack updat - this is what you get when we make bot update at detec. Bild the +1 update and here's his dll_64_prj_Astro4.dll we crypto and throw in the updat
+[04.02.22 10:06:49] angelo: but the second type of update I even did not understand (
+[04.02.22 10:06:51] gelmut: no
+[04.02.22 10:06:57] angelo: shit !
+[04.02.22 10:08:33] gelmut: botpack update is an update to the bot functionality. i.e. the botpack file itself.
+But loader update is just the loader update (init) and it is updated only in the following cases:
+1) old bot got spammed by antiviruses
+2) you need to transfer the bot to another project
+3) or if there were some serious patches in the loader
+[04.02.22 10:08:54] angelo: got it.
+[04.02.22 10:08:56] angelo: deer
+[04.02.22 10:09:08] angelo: I warned you, I'm dumb
+[04.02.22 10:09:58] gelmut: just our terminology is very lame because the project was constantly changing and something was constantly added and removed, so the parts are mixed up in a bunch and everywhere else have different names
+[04.02.22 10:10:24] angelo: well, it's not a problem, but some slight translation difficulties, so to say)
+[04.02.22 10:10:37] angelo: are you still there ?
+[04.02.22 10:10:41] angelo: not going anywhere ?
+[04.02.22 10:11:36] gelmut: yeah, for now
+[04.02.22 10:12:18] angelo: so if I need to transfer from 1 project to 2. I write project 2 when I build @set PRJ_NAME=TUT
+[04.02.22 10:12:20] angelo: is it so ?
+[04.02.22 10:13:03] gelmut: there you write the project name as it's written in the admin panel (letter-by-letter, no extra spaces)
+[04.02.22 10:13:31] angelo: i did updates, but i didn't do porting
+[04.02.22 10:14:00] angelo: that is, when building, I specify @set PRJ_NAME project name WHERE do I transfer so ?
+[04.02.22 10:14:43] gelmut: yes
+[04.02.22 10:15:10] angelo: thanks !
+[04.02.22 10:15:13] angelo: and more )
+[04.02.22 10:15:48] angelo: i need to transfer from 5 projects to one, what should i do ? can i put the same build in each project to transfer yes ?
+[04.02.22 10:17:02] gelmut: in general, purely on the terminology I have already written in another channel:
+1) botpack is bot functionality, it's not crypted, it gets right after compile. only I can create. Is updated globally in the admin panel, or for each bot with the command Update BotPack
+2) init (loader) - dll / exe which run botpack , just there and prescribed the original domains and project name, update it when the file is old or need to move to another project. You can update the entire project or just a single bot (through the command Update BOT EXE/DLL). If you want to update the whole project, it is better to test it with a few bots beforehand
+3) loader - just what is loaded and he filters the load. it builds in his own admin panel
+[04.02.22 10:19:15] gelmut: correct spelling of PRJ_NAME is important because
+- the bot knocks on the project with the fake_id for the project to hide the sequence of projects
+- fake_id = hash(PRJ_NAME)
+
+that's why it's important to specify everything exactly
+[04.02.22 10:19:43] angelo: got it
+[04.02.22 10:19:51] angelo: just tell me about the separate bot update
+[04.02.22 10:19:57] angelo: I don't understand about the command
+[04.02.22 10:20:04] angelo: `with the Update BOT EXE/DLL)` command
+[04.02.22 10:20:11] angelo: this moment is a black hole in my head
+[04.02.22 10:22:07] angelo: I always did updates via ProjectsDead Updates
+[04.02.22 10:25:44] gelmut: 1) you build the bot, crypt it, check that it works fine (there is a binary for the test run)
+2) if everything is ok, in the builder you create an update to the file and get the file ****.upd with prj_name.upd
+3) Open the admin Tools->File upload and fill in the file. Then this file is available for bots by the link
+front://files/prj_name.upd
+4) Open the desired bot, top right button with 3 bars, there in the menu select Command
+5) A window appears in the task commands, select the Update BOT exe/dll and specify the url to the file. For example front://files/prj_name.upd
+6) Give this command to the bot and wait until he gets it. If everything is ok, then wait for him in the new location.
+7) if he appeared in a new place and no file_error (it appears on the Debug tab, I think), then normal.
+[04.02.22 10:26:16] gelmut: let's buy it => let's say *
+[04.02.22 10:27:22] angelo: thanks you for the exact instruction
+[04.02.22 10:27:28] angelo: it works if bot
+[04.02.22 10:27:49] angelo: i can move all bots (projects) with this upd file
+[04.02.22 10:27:54] angelo: one
+[04.02.22 10:28:05] angelo: I don't need crypto for 5 projects 5 builds
+[04.02.22 10:28:07] angelo: right ?
+[04.02.22 10:28:33] gelmut: well, you can give this file to the whole project and then the whole project will go.
+[04.02.22 10:28:34] angelo: saved your instructions
+[04.02.22 10:28:45] gelmut: crypting or not for everyone - it's up to you.
+[04.02.22 10:29:07] angelo: so ideally i can drop it on one, two and three projects after the test drive
+[04.02.22 10:29:27] angelo: damn, now the main thing is to correctly crypt the bot (
+[04.02.22 10:29:49] gelmut: Just need to be careful, among the bots are and fakes, who bitch monitoring us. They generally is not realistic to calculate, for this usually do not transfer projects, and only the necessary bots.
+[04.02.22 10:30:12] angelo: And that's it
+[04.02.22 10:31:05] angelo: so, how to correctly write the cryptor that you need, about the nuance of crypting bot for the transfer
+[04.02.22 10:31:48] gelmut: i.e. we've already palyed a couple of times such a topic - like a bot, it seems to knock, even forms were. But as soon as you give him update domains, as soon as all the domains in the black. i.e. in fact, this is a script that emulates the work of the bot and it is designed to always have up-to-date configs of injections, domains and updates
+[04.02.22 10:32:31] gelmut: Well, and the tones are not peculiar to the bot he had and on the bk did not get in touch.
+[04.02.22 10:37:32] angelo: it is crazy to transfer by rovkami
+[04.02.22 10:37:32] angelo: the right bots
+[04.02.22 10:37:53] angelo: we want to not prolong the vps on the archive projects, and the bots will die
+[04.02.22 10:56:05] angelo: I forgot to ask
+[04.02.22 10:56:14] angelo: what is specified @set UPDATE_VER
+[04.02.22 10:56:27] angelo: 1 ?
+[04.02.22 10:59:42] angelo: we will update bots, some had version 1, some had 5 or 12
+[04.02.22 11:41:28] gelmut: UPDATE_VER it actually does not matter, it is just for ease of understanding that the bots have still updated. So put the freshest one from the whole project where you will throw
+[04.02.22 11:41:57] angelo: I just confirm my ideas
+[04.02.22 11:42:00] angelo: thanks bro !
+[04.02.22 12:22:29] gelmut: yes, exactly!
+[04.02.22 12:22:42] angelo: yeah
+[04.02.22 12:22:43] angelo: passed the bot
+[04.02.22 12:22:46] angelo: waiting for errors
+[04.02.22 12:23:13] gelmut: everywhere in bot front:// is replaced by https://current_cc_domain/
+[04.02.22 12:23:49] gelmut: this makes it very easy for bot to pass something like that, not even knowing where it's going to hit
+[04.02.22 12:23:53] angelo: it was just so clear, and now it's all messy again
+[04.02.22 12:24:12] gelmut: why?
+[04.02.22 12:24:43] angelo: so how do I give the bot the command?)
+[04.02.22 12:24:54] angelo: front://files/file.upd
+[04.02.22 12:25:18] angelo: https://current_cc_domain/ didn't get it
+[04.02.22 12:25:29] gelmut: well, if you uploaded dll_64_prj_Aharon_arhiv_137865_1.upd to the apload then front://files/dll_64_prj_Aharon_arhiv_137865_1.upd
+[04.02.22 12:25:35] angelo: sorry, I have to spell it out, I don't want to make a mistake.
+[04.02.22 12:25:46] angelo: that's it, I'll continue
+[04.02.22 12:28:22] gelmut: in short the bot has a mechanism of macros, which are replaced in the command parameters and inject code.
+among them front:// which is replaced by https://%current_cc_domain%/ where %current_cc_domain% is the current domain the bot is knocking on.
+so front://files/ is converted to https://какойто_домен/files/
+[04.02.22 12:28:42] angelo: got it
+[04.02.22 12:28:46] angelo: now it's clear
+[04.02.22 12:29:07] angelo: you have a talent for making fools understand
+[04.02.22 12:29:09] gelmut: even if you run some command, for example to start a program, you can always specify this macro to pass the path to the bot server
+[04.02.22 12:29:24] angelo: clever
+[04.02.22 12:36:02] gelmut: besides front:// there is
+#domain# - current domain for the branch.
+#pid# - fake project id
+#id# - bot id
+
+so if you give the bot the EXEC command with the SPAWN flag and the command line ping #domain#
+then the bot will ping the server where he is pinginging and will return the result to the server
+[04.02.22 12:37:35] gelmut: In general, it's a convenient mechanism when some functionality is implemented as a powershell script and thus you can pass all the parameters to the script and make it ping the server and introduce itself as a valid bot. So we just implemented the search for database files for tax authorities.
+[04.02.22 12:38:33] angelo: you are a smart guy.
+[04.02.22 14:40:38] angelo: bots were moving, and then the bots started miraculously not moving and no errors
+[04.02.22 14:41:05] angelo: I'm lying FileError: 3 First T
+[04.02.22 14:41:09] angelo: and what to do?!
+[04.02.22 15:39:08] gelmut: this is certainly not the right crypto
+[04.02.22 15:40:07] angelo: they are not, there's only one crypt
+[04.02.22 15:40:22] angelo: if 50 pcs passed, then others will pass
+[04.02.22 15:43:22] gelmut: it's possible there's something wrong with your antivirus
+[04.02.22 15:43:56] angelo: They seem to have passed
+[04.02.22 15:43:58] angelo: but with holes
+[04.02.22 15:44:01] angelo: we'll wait
+[04.02.22 15:44:07] angelo: thanks for guiding the process !
+[07.02.22 12:19:10] angelo: hello
+[07.02.22 12:21:24] angelo: Id eureux recommender
+[07.02.22 12:33:19] gelmut: Ya?
+[07.02.22 12:34:06] angelo: as always, nothing without you
+[07.02.22 12:34:15] angelo: the coder threw us
+[07.02.22 12:34:26] angelo: init_dll_64.dll
+[07.02.22 12:34:34] angelo: and loader_dll_64.dll
+[07.02.22 12:35:07] angelo: what should we do now? and how could we test the build, so that other lowers working now wouldn't break
+[07.02.22 12:41:23] gelmut: To test init_dll_64.dll - put it into dat folder in builder folder (save the previous one) and build the build. Then you can crypt it and test how it bounces.
+
+To test the loeder:
+1) tell everyone who can build loeder, in the admin you want to update, not to build.
+2) go to the server loeder in the folder /mnt/work/www/loader_v2/storage/loader/
+3) there buffet file loader_dll_64.dll it renamed into old_loader_dll_64.dll and throw the new
+4) create a new project in the loader admin area (test_xxx) then build the loader in the admin area
+5) Then loader_dll_64.dll file back to its place
+6) you can insert a new crypted init_dll_64.dll into the created project to check the whole chain
+[07.02.22 12:44:04] angelo: thanks !
+[07.02.22 12:44:05] angelo: so tell me
+[07.02.22 12:44:08] angelo: and file
+[07.02.22 12:44:17] angelo: init_dll_64.dll
+[07.02.22 12:44:26] angelo: that's it, forget it )
+[07.02.22 12:44:36] angelo: follow your instructions
+[07.02.22 12:45:37] gelmut: better to deploy somewhere locally to bild the main admin panel.
+[07.02.22 13:23:13] angelo: listen
+[07.02.22 13:23:19] angelo: we're all confused here!)
+[07.02.22 13:23:25] angelo: init_dll_64.dll what for ?
+[07.02.22 13:23:38] angelo: bill what exactly
+[07.02.22 14:02:46] angelo: init_dll_64.dll is for bot build, right ?
+[07.02.22 15:11:43] gelmut: yes
+[07.02.22 15:54:52] angelo: bro another thing
+[07.02.22 15:55:05] angelo: I took init_dll_64.dll
+[07.02.22 15:55:13] angelo: and put it into the folder dat
+[07.02.22 15:56:58] angelo: and after running the batch file nothing appears
+[07.02.22 15:57:09] angelo: so the problem is in the assembly ?
+[07.02.22 16:06:03] gelmut: well, the batnik shows what's wrong.
+[07.02.22 16:06:22] angelo: hmm
+[07.02.22 16:06:25] gelmut: run the batnick from under cmd.exe to see.
+[07.02.22 16:06:38] angelo: yeah
+[07.02.22 16:06:40] angelo: sec
+[07.02.22 16:16:43] angelo: bro
+[07.02.22 16:16:50] angelo: I'm about to get adsi shame
+[07.02.22 16:16:51] angelo: BUT
+[07.02.22 16:18:25] angelo: C:\BUILDER 0702\NEWbuilder\builder>CapreseT.bat
+C:\BUILDER' is not recognized as an internal or external command,
+operable program or batch file.
+[07.02.22 16:18:34] angelo: what the hell
+[07.02.22 16:18:59] gelmut: try to rename the folder without blank space
+[07.02.22 16:19:11] gelmut: so for example BUILDER_0702
+[07.02.22 16:19:32] gelmut: maybe that's exactly the problem
+[07.02.22 16:21:16] angelo: yes
+[07.02.22 16:21:19] angelo: thanks
+[07.02.22 16:21:29] angelo: I've been racking my brain for the space bar
+[08.02.22 17:24:30] angelo: hey bro
+[08.02.22 17:24:37] angelo: tell me please
+[08.02.22 17:40:01] gelmut: hi
+[08.02.22 17:40:27] angelo: go away
+[08.02.22 17:43:20] gelmut: how? I only have e2e light
+[08.02.22 17:43:56] angelo: test
+[08.02.22 17:44:37] angelo: question
+[08.02.22 17:44:39] angelo: tell me
+[08.02.22 17:44:51] angelo: during the test is it necessary to cut the traffic?
+[08.02.22 17:45:54] angelo: as i understand ideally only bot traffic should go out of vmka ?! yes ?
+[08.02.22 17:46:23] gelmut: ideally yes.
+[08.02.22 17:46:40] gelmut: although it's enough to disable winndef via group policies.
+[08.02.22 17:46:57] gelmut: the whole problem with windef here is that it's very seriously storing everything through the cloud.
+[08.02.22 17:48:18] angelo: but without cloud how to test dynamics ?
+[08.02.22 17:48:19] gelmut: For example, not the first time I saw this: turn off the cloud protection - all clear. When I turn on cloud protection, everything is clean. And if cloud protection is enabled and file is not spammed, it will spam in 1-2 weeks.
+[08.02.22 17:48:34] angelo: there is such a thing
+[08.02.22 17:48:37] angelo: noticed
+[08.02.22 17:48:38] gelmut: by the way, cloud stings more by hash
+[08.02.22 17:49:13] gelmut: hash of certain parts of the file.
+[08.02.22 17:49:42] gelmut: i.e. I've caught it: file gets scammed in the cloud - I randomly change 1-2 bytes in the code and data sections and it stops scamming
+[08.02.22 17:50:50] gelmut: but in dynamics windef in principle does not stain by cloud anymore, but by sequence of api calls.
+[08.02.22 17:51:14] angelo: shit
+[08.02.22 17:51:15] angelo: Bummer
+[08.02.22 17:51:15] gelmut: so stop it this way - update vindef, then block all the traffic except the servers for bouncing
+[08.02.22 17:51:31] angelo: wait
+[08.02.22 17:51:38] angelo: how to send lowers to work
+[08.02.22 17:51:47] angelo: without dynamics test
+[08.02.22 17:51:57] angelo: sometimes one of 5 lowers detects at once
+[08.02.22 17:52:08] angelo: send to work for luck ?
+[08.02.22 17:53:31] gelmut: I say - update your antivirus, lock the net and check. If normal, then you can download files.
+Ideally before downloading (literally a couple of minutes before it) just take the file and run it on the windup with the parameters:
+1) real-time protection
+2) cloud protection
+3) prohibit to send files
+4) the internet must be on.
+[08.02.22 17:53:56] gelmut: And if normal, then upload this file. If not, then look for another. Just all the same, at the time of loading, it will also go to their servers.
+[08.02.22 17:54:15] angelo: bad.
+[08.02.22 17:54:36] angelo: that's the point that kills, that in fact we can only check the purity of the crypt by Def before the very upload
+[08.02.22 17:55:20] gelmut: I noticed something else (like 3 years ago) - if you start actively testing something on the def, it fucking stops scorching. Then I take the same file, put it on another machine with different ip and it sticks.
+[08.02.22 17:55:48] angelo: huh.
+[08.02.22 17:55:54] angelo: Mine is exactly the opposite.
+[08.02.22 17:56:23] angelo: when I downloaded my car, the file is always stolen, and the other guy with the same base is clean
+[08.02.22 17:57:22] gelmut: Another important ip you use. That is why all of us who tested the files always reinstalled the virtual machine and used american vpn
+[08.02.22 17:58:16] angelo: By the way
+[08.02.22 17:58:24] angelo: I made an image of VMki
+[08.02.22 17:58:41] angelo: I was sure if I gave birth to another VM
+[08.02.22 17:58:55] angelo: that is different from the other one from the same image
+[08.02.22 17:59:01] angelo: it resets network settings
+[08.02.22 17:59:09] angelo: you are not aware of such nuances ?
+[08.02.22 18:04:08] angelo: and in general, how do you think, with disabled Def (all 4 points) / policy goes any drain?
+[08.02.22 18:04:20] angelo: sorry you have a lot of questions
+[08.02.22 18:18:53] gelmut: Here it is, I do not know, is the plum or not. I heard that the def is tied to a certain id, which is generated when installing the windup.
+[08.02.22 18:19:05] gelmut: that's why many people reinstall the test wind every week
+[08.02.22 18:20:02] angelo: i install once a week + download a new image from mikes
+[08.02.22 18:20:11] angelo: i think you know everything )
+[08.02.22 18:26:10] gelmut: okay, I'll be gone for 30 minutes
+[08.02.22 18:32:53] angelo: come on
+[08.02.22 18:32:57] angelo: thanks for the dialogues
+[08.02.22 18:43:19] gelmut: I'm here
+[08.02.22 18:50:39] angelo: are you asleep at your computer ?
+[08.02.22 18:50:48] angelo: I'm like a squirrel myself
+[08.02.22 18:53:23] gelmut: Nah, just working on my mega project
+[08.02.22 18:54:01] gelmut: that's why I usually spend a lot of time at the computer
+[08.02.22 18:54:04] angelo: I have no doubts, considering how Anubis is made
+[08.02.22 18:54:37] gelmut: well, that's a development of Anubis
+[08.02.22 18:55:14] gelmut: vntz as a separate project with a huge amount of new functionality which is not in that vntz that is in anubis
+[08.02.22 18:56:20] angelo: all by yourself ?
+[08.02.22 18:56:23] angelo: with your own hands ?
+[08.02.22 18:58:21] gelmut: yes
+[08.02.22 18:59:03] gelmut: az anubis - loader, loader and anubis itself (bot code) and vntz in it - all by myself.
+[08.02.22 19:02:06] angelo: you're cool man
+[08.02.22 19:02:09] angelo: really
+[08.02.22 19:02:29] angelo: in general, when you write everything yourself, you know how it works and what bugs you know too
+[08.02.22 19:03:04] gelmut: yeah... and if you don't touch something for a long time, no one will tell you how it works
+[08.02.22 19:03:43] angelo: you know, i've seen more than one coder digging into someone else's modules, everything goes wrong and works in one place
+[08.02.22 19:07:21] gelmut: so think about it, in the new version of vnts appears webclient (works without problems in modern browsers, including tor):
+1) vntz
+   - extended clipboard encoder added - now you can pass any text in any language, not only latin
+   - support of zooming and full screen mode
+2) console (cmd or powershell)
+3) file manager
+ - all drives in the system
+ - copy, rename, move and delete files and folders
+ - creating and browsing text files
+ - folder creation
+- upload / download files
+- everything related to files and folders - you can do it one by one, or you can apply the operation to all selected items at once
+[08.02.22 19:08:17] angelo: just like a total commander built in ))
+[08.02.22 19:08:21] gelmut: In fact, all these protocols are available in handheld mode, without web client. because console and file manager have text protocol and you can even through telnet to control the files (although not convenient)
+And of course socks5 proxy
+[08.02.22 19:09:08] angelo: you are just a fan of your business, bro, so Anuba must be like a son to you)
+[08.02.22 19:10:09] gelmut: And also the best thing about file manager - if the computer is in domain, it can show the list of computers in Active Directory with possibility to enter their balloons. If you have permission to do that, you can enter system shares of c$$ and work with files there as well as on the target computer
+[08.02.22 19:10:22] gelmut: comp*
+[08.02.22 19:12:06] gelmut: file manager supports all languages
+[08.02.22 19:12:17] angelo: cool, just like Koba
+[08.02.22 19:12:37] angelo: not too familiar with it, but still
+[08.02.22 19:16:33] gelmut: well, the coolest thing is that the code is built so that it can be embedded into any project and run however you want:
+1) you can run it as x64 shellcode at all
+2) You can integrate it into any of your software and run it as you want, because the algorithm is very simple - just save data into memory, set their config and transfer control to it.
+3) You can even download the data from the Internet and run it as in the previous paragraph.
+4) You can take a ready-made dll / exe, batch and crypto and just run anywhere
+
+And all this without sources and without reference to programming language.
+[08.02.22 19:18:00] angelo: wow
+[08.02.22 19:18:04] angelo: that's convenient
+[08.02.22 19:18:06] angelo: not really convenient
+[08.02.22 19:20:03] gelmut: Another additional feature, which is not in anubis (because it is not needed).  Ability to set an additional identifier for each vntz. If now identifier is only a project and botid - which are 4 bytes, it's not convenient on those systems where the bots are identified by some long names (as for example a tribot was), here in the new protocol, there is support for up to 222 bytes long additional identifier
+[08.02.22 19:20:53] angelo: convenient
+[08.02.22 19:20:59] angelo: trike had long ids
+[08.02.22 19:21:46] angelo: VNC is in high demand
+[08.02.22 19:22:08] gelmut: well, in trik there was up to 64 characters id
+[08.02.22 19:22:58] gelmut: although in fact only 16 bytes were important
+[08.02.22 19:24:54] gelmut: When you write one, it's very convenient to understand what and how it will connect to each other and it's immediately clear how to make it convenient.
+But it's hard to write in a lot of languages at once, brains can't rearrange itself in time.
+[08.02.22 19:25:15] gelmut: It turns out that there are 5 languages involved in this new vntz.
+[08.02.22 19:25:27] angelo: I don't understand it, but I can imagine
+[08.02.22 19:25:28] angelo: wow
+[08.02.22 19:25:31] gelmut: or rather 3, + 2 varieties
+[08.02.22 19:25:36] angelo: so others can't figure it out ?)
+[08.02.22 19:27:01] gelmut: no, the web version is JS anyway. the proxy for tunneling web browsers is node.js
+The client itself is in Winapi C.  The server in Posix C
+and all sorts of building tools in PHP as it's very easy and fast to process data.
+[08.02.22 19:27:27] gelmut: there is a bot builder, it is also made entirely in php, and the batnik just runs it
+[08.02.22 19:30:53] gelmut: I heard that they kind of handed the source code of anubis over to you, so you could clean it internally. Of course, there's a lot of code there: 132 files with code alone and that's not counting vntz (65 files).
+[08.02.22 19:31:19] gelmut: but thank goodness everything is much better written there than in loader and loader
+[08.02.22 19:34:22] angelo: I just don't get it
+[08.02.22 19:34:28] angelo: I thought you were writing a bot
+[08.02.22 19:34:36] angelo: i think so, they will
+[08.02.22 19:34:45] angelo: I really don't know who's who from where
+[08.02.22 19:35:26] gelmut: well, yes, I wrote the bot, but only me and our boss have the source code
+[08.02.22 19:35:50] gelmut: well, he decided to give you the source code so it would be more productive to clean up.
+[08.02.22 19:36:29] angelo: that's good
+[08.02.22 19:36:37] angelo: hope it helps a lot
+[08.02.22 19:36:45] angelo: but still, def is the main problem
+[08.02.22 19:37:26] gelmut: before with def was very good help recompiling bot. the output was botpack slightly different look always. That's why it helped.
+[08.02.22 19:37:51] angelo: too bad it's all in the past
+[08.02.22 19:38:03] angelo: well, let's see how you cleaned it up
+[08.02.22 19:38:54] angelo: maybe the cleaning will improve the def situation
+[08.02.22 19:38:59] gelmut: We had a very stupid rule - every 2 years to completely rewrite everything from scratch.
+[08.02.22 19:39:37] gelmut: But with each year antiviruses got meaner and this interval decreased
+[08.02.22 19:39:39] angelo: you are fucking enthusiasts
+[08.02.22 19:39:51] angelo: AI works
+[08.02.22 19:39:54] angelo: as I understand
+[08.02.22 19:43:40] gelmut: I mean, you know, they made a project and it worked great for half a year or a year. You've only been fixing bugs and adding things.
+then starts palying about half a year, which in principle can be easily cleaned up, with minimal changes.
+Then about half a year it's hell - the output is bad, it gets scorched by many antiviruses.  And no matter what you do, it still sticks in the dynamics, as there is no way to change the logic. That's when there are all sorts of crutches and cutting functionality that is very palilable (at one time we had a fully integrated pony stitler at source, but then had to remove).
+During last half of the year we had new version based on old one, but it had different data formats, names, modules and so on.
+Then the new version also worked about 2 years, until it was completely burned.
+It is noteworthy that each version of antivirus had its own unique name. For this reason such correspondence without any problems untied us from all sorts of trackers.
+[08.02.22 19:44:57] angelo: Yes, this is work.
+[08.02.22 19:45:12] angelo: almost build a bicycle every time
+[08.02.22 19:45:21] gelmut: and this is just the statistics do not lie - now ends the second year of operation of the last version of anubis.
+[08.02.22 19:45:35] gelmut: that's how everything stinks
+[08.02.22 19:45:57] angelo: it means to redo it again ?
+[08.02.22 19:46:11] angelo: maybe for you it's like end of school year]
+[08.02.22 19:46:15] angelo: exams are coming up
+[08.02.22 19:46:23] angelo: it's hard, it's not easy to run a project
+[08.02.22 19:46:25] gelmut: Nah, I don't have the strength for that anymore. So you better clean it up somehow.
+[08.02.22 19:46:57] angelo: )))) well, i really hope so
+[08.02.22 19:47:05] gelmut: Moreover, as I said before - I'm not an expert in the field of cleaning and any kind of fight with antiviruses.
+[08.02.22 19:47:21] angelo: I hope it works
+[08.02.22 19:47:28] angelo: it should
+[08.02.22 19:47:32] angelo: no choice
+[08.02.22 19:47:49] gelmut: I just see that you have people in your team who are very good at it.
+[08.02.22 19:48:09] angelo: we have many people in our team
+[08.02.22 19:48:31] angelo: and hopefully with detects we can keep anub
+[08.02.22 19:48:37] angelo: not to roll over
+[08.02.22 19:48:46] gelmut: look, there were only two people in our development team - me and the one who wrote the server part of anubis
+[08.02.22 19:49:02] angelo: you're all phenomena to me!
+[08.02.22 19:49:20] angelo: titans of labor
+[08.02.22 19:49:31] angelo: but what a result!
+[08.02.22 19:49:39] angelo: they say your bots are among the most survivable
+[08.02.22 19:51:01] gelmut: At different times, yes. I used to love reading news about our bot and how they praised it for its high tech features :-D
+[08.02.22 19:51:25] angelo: well, father )
+[08.02.22 19:52:36] angelo: even just working, I am pleasantly aware that this product with the name !
+[08.02.22 19:52:47] angelo: and as the creator, it is of course a lot of emotions
+[08.02.22 19:53:10] gelmut: The worst thing was in some year - we were in Def's list of the most dangerous trojans. And that's why they added us to a special system, a Windows update that was released every month and when you rebooted it, it was writing out malware that was in its database. And so the bots lived fine, but once a month could die 90% within a day.
+[08.02.22 19:54:08] gelmut: that was the biggest code rewrite, almost all was written from scratch, except for vntz
+[08.02.22 19:54:42] angelo: hmm, interesting point
+[08.02.22 19:54:52] angelo: didn't know about their rating and consequences
+[08.02.22 19:55:02] angelo: but you must be tired of course
+[08.02.22 19:55:07] angelo: to conduct one product for so long
+[08.02.22 19:55:10] gelmut: I'll try to remember the name of the topic
+[08.02.22 19:55:15] angelo: you get tired of everything and get bored no matter what
+[08.02.22 19:55:19] gelmut: over 10 years]
+[08.02.22 19:55:30] angelo: fuck
+[08.02.22 19:55:41] angelo: in 10 years I'll get tired of anything
+[08.02.22 19:56:28] gelmut: Well just exactly I got tired of malware. Taking into account that I've been writing it for 15 years
+[08.02.22 19:56:59] angelo: You lasted long enough.)
+[08.02.22 19:57:06] angelo: you could say veteran
+[08.02.22 19:57:12] angelo: although it's true
+[08.02.22 19:59:49] gelmut: Windows Malicious Software Removal Tool (MSRT) - that's how this topic is buried
+[08.02.22 20:00:10] angelo: xbcnj gjl fye,f &
+[08.02.22 20:00:15] angelo: pure for anub ?
+[08.02.22 20:02:39] angelo: what will you switch to ?
+[08.02.22 20:02:44] angelo: after 15 years
+[08.02.22 20:03:03] gelmut: no. anubis is not on this list. There's only his progenitor there )
+[08.02.22 20:03:34] gelmut: I wanted to do a lot of things in real life, but maximum lasts a couple weeks, then again want to code)
+[08.02.22 20:04:32] angelo: bro
+[08.02.22 20:04:35] angelo: this is
+[08.02.22 20:04:40] angelo: every man's dream
+[08.02.22 20:04:49] angelo: to find himself in life
+[08.02.22 20:04:57] angelo: I'm talking about coding now, not malware)
+[08.02.22 20:05:20] angelo: you're lucky, you caught a bird of happiness
+[08.02.22 20:07:38] gelmut: The thing is, I'm kind of tired of coding, and I'm not that age to sit for 14 hours at computer.
+[08.02.22 20:08:01] angelo: pfft
+[08.02.22 20:08:04] angelo: alternate
+[08.02.22 20:08:17] angelo: go ahead and do something!)
+[08.02.22 20:08:22] angelo: table ! )
+[08.02.22 20:08:37] angelo: you know those cool tables
+[08.02.22 20:08:41] angelo: tarred
+[08.02.22 20:08:44] angelo: with my own hands
+[08.02.22 20:08:58] gelmut: I've already made a lot - even a simulated computer table I sit at)
+[08.02.22 20:09:18] angelo: that's pretty good
+[08.02.22 20:09:22] angelo: if you also have hands
+[08.02.22 20:09:29] angelo: and I made a bed)
+[08.02.22 20:09:32] angelo: and closet
+[08.02.22 20:10:08] gelmut: already made and nightstands and pouffes and various tables.
+[08.02.22 20:10:23] angelo: damn, you sure are a prodigy)
+[08.02.22 20:10:34] angelo: i also like to create something
+[08.02.22 20:10:36] angelo: create
+[08.02.22 20:11:08] gelmut: I just like to do different things. I used to do radio electronics. But then again I coded microcontrollers. But that was just for my soul.
+[02.02.22 20:11:30] gelmut: The last idea I had was to buy a guitar and learn to play it
+[08.02.22 20:11:40] angelo: shit))) I just want to learn how to make it on the arduinka
+[08.02.22 20:11:58] angelo: eh guitar, I never learned
+[08.02.22 20:12:02] angelo: think like not my thing
+[08.02.22 20:12:18] angelo: but wanna be a positive example
+[08.02.22 20:12:35] angelo: I have a flute!
+[08.02.22 20:12:41] angelo: I've been playing it somehow.
+[08.02.22 20:13:27] angelo: no, not on the arduinka, esp32 but not the point
+[08.02.22 20:14:13] gelmut: for esp32 itself it's a bit complicated, but the arduink that will work in tandem with esp32 - there's nothing particularly complicated.
+[08.02.22 20:14:56] angelo: it's hard to design the project yourself, what exactly you want to do
+[08.02.22 20:15:06] angelo: you want this or that
+[08.02.22 20:15:44] gelmut: I succeeded to code for attiny13, msp, stm8, arduinka, reached stm 32 - but somehow I could not master it, and there was no time.
+[08.02.22 20:15:57] angelo: I actually want to upgrade my bike and ride the mountains
+[08.02.22 20:16:01] gelmut: yeah, the hardest part is the idea, not the realization
+[08.02.22 20:16:27] angelo: exactly, but I'll find something for my soul
+[08.02.22 20:16:45] angelo: you, tent, bike and ass world :)
+[08.02.22 20:16:52] angelo: peace
+[08.02.22 20:18:36] gelmut: Well, I'm waiting for the summer for these purposes, but not by bike, and by car. Backpack heavy already can not do. Although I used to climb the Caucasus for 4 days.
+[08.02.22 20:18:57] angelo: Eh, I wish I could ride
+[08.02.22 20:19:06] angelo: Well, this one.
+[08.02.22 20:19:13] angelo: a house on wheels!
+[08.02.22 20:19:23] angelo: and I've never traveled....
+[08.02.22 20:19:41] angelo: I won't climb, I feel sorry for my legs, a bike gives me more freedom
+[08.02.22 20:20:22] angelo: solitude with nature is also necessary and even necessary, to get away from the world for a while
+[08.02.22 20:20:57] angelo: you're a very versatile person, I'd say, commendable.
+[08.02.22 20:22:18] gelmut: I foolishly once walked 42 km in the mountains, while the last day 20 km with 2000 meters altitude difference. I had 14 kg backpack. I hurt my knees badly, I could not walk on steps for a week. I had a lot of impressions, especially when in the evening I found traces of a bear on the snow.
+[02/08/222 20:23:31] angelo: yes, I heard from friends - knees get killed. It's like the descent itself is against the physiology of the joint.
+[08.02.22 20:23:38] angelo: wow )) bear )
+[08.02.22 20:23:57] angelo: you took a nice walk, I couldn't have done it
+[08.02.22 20:23:59] angelo: go
+[08.02.22 20:24:02] angelo: just walk.)
+[08.02.22 20:24:09] angelo: not my thing, I either run or roll
+[08.02.22 20:24:36] angelo: ran marathons, thought I was young immortal - result is my knees hurt
+[08.02.22 20:25:39] angelo: but I recommend bicycle, it is very useful for the same joints and helps with stasis in the pelvis, and this is considered at all
+[08.02.22 20:27:59] gelmut: No, the worst thing for me in the mountains was spending the night on the ridge in a thunderstorm. So it happened that I had to spend the night right on top, next to the pass. The altitude was 3,000 meters. And at night a strong thunderstorm started. And clearly in our direction. That was like an hour of horror. When you don't hear thunder, but cracking sound almost simultaneously with lightning.  In this case, the tent with metal arcs and is located on an even place.
+[08.02.22 20:28:47] angelo: you can shit like that
+[08.02.22 20:28:53] angelo: especially at altitude
+[08.02.22 20:29:03] angelo: it must have sounded like a ramstein concert
+[08.02.22 20:29:23] angelo: risky, of course, too much
+[08.02.22 20:29:29] gelmut: Nah, it was fun at the Rumstein concert.)
+[08.02.22 20:29:38] gelmut: This is horrible
+[08.02.22 20:29:52] angelo: but still beautiful
+[08.02.22 20:30:05] angelo: love the elements of nature !
+[08.02.22 20:30:08] angelo: love even
+[08.02.22 20:30:19] angelo: you feel your worthlessness and pettiness of your problems
+[08.02.22 20:30:45] gelmut: me and my ken then pushed everything metal further away, and threw a mat on the mat to sit on the double thickness.
+[08.02.22 20:31:12] gelmut: that kind of saves me from a lightning strike
+[08.02.22 20:31:37] angelo: you must be relieved))
+[08.02.22 20:31:45] angelo: helicopters fell asleep like children ))
+[08.02.22 20:31:47] gelmut: well, i like elements too, but it's better to observe, not to participate
+[08.02.22 20:32:23] angelo: sure
+[08.02.22 20:32:35] angelo: I want to see a volcano and a tornado
+[02 08:02:22 20:33:19] gelmut: no way, closer to the morning the mountain goats started coming up. Constantly clinging to the ropes from the tent. And there dick understand goat or bear. as bears are quite brazen there.
+[08.02.22 20:34:27] angelo: creepy
+[08.02.22 20:34:28] gelmut: I wouldn't mind a volcano either.
+[08.02.22 20:34:30] angelo: I'd shit my pants
+[08.02.22 20:34:37] angelo: lying there
+[08.02.22 20:34:39] angelo: and there are horns
+[08.02.22 20:34:41] angelo: brrrr
+[08.02.22 20:34:46] angelo: and think
+[08.02.22 20:34:51] angelo: atana's coming for you
+[08.02.22 20:34:55] angelo: or a bear :D
+[08.02.22 20:35:27] angelo: or better than satan))
+[08.02.22 20:35:34] angelo: you're not dicaprio
+[08.02.22 20:37:05] gelmut: There was a news recently that in the place where we spent the night, a bear came to the tourists at night and started asking for food. And the rocks weighing 30 kilograms moved with his paws as if they were fluff.
+[08.02.22 20:37:29] angelo: Poor thing
+[08.02.22 20:37:31] angelo: starved
+[08.02.22 20:37:39] angelo: Well, the main thing is not to meet an ogre
+[08.02.22 20:37:45] angelo: everything will be decided
+[08.02.22 20:38:09] angelo: man, it'll be cool to see him on the bike
+[08.02.22 20:38:27] angelo: 40 km per hour gives you a sense of safety
+[08.02.22 20:38:36] gelmut: Not from a bear
+[08.02.22 20:38:45] angelo: I usually ride at night, you know how cool it is in the dark
+[08.02.22 20:38:53] angelo: okay, don't ruin this for me.)
+[08.02.22 20:39:00] angelo: I feel safer.
+[08.02.22 20:39:01] gelmut: brown bear runs up to 56
+[08.02.22 20:39:21] angelo: yeah
+[08.02.22 20:39:38] angelo: you have to eat a lot, it must be hard to run like that
+[08.02.22 20:40:32] gelmut: I prefer the stars in the mountains at night. Always go to Elbrus in summer to take pictures of stars.
+[08.02.22 20:40:43] angelo: Ouch.
+[08.02.22 20:40:46] gelmut: once I even wanted to buy an astrotracker, but the greed stifled me.
+[08.02.22 20:40:47] angelo: that's a separate topic
+[08.02.22 20:41:31] angelo: I'm really waiting for james webb to work
+[08.02.22 20:41:48] angelo: you can look at the stars forever
+[08.02.22 20:42:56] angelo: again, you look and realize what an interesting world there, other worlds or rather other civilizations
+[08.02.22 20:43:24] angelo: I'll take the telescope, not expensive
+[08.02.22 20:43:56] gelmut: yeah, you watch and think - I wonder if people there also give a shit about each other or they already reached something new
+[08.02.22 20:44:08] angelo: ahaha)))
+[08.02.22 20:44:14] angelo: i think it's ours
+[08.02.22 20:44:18] angelo: human
+[08.02.22 20:44:45] angelo: pray to gods and convince other nations they are better
+[08.02.22 20:45:25] angelo: no, I believe in the best, we will enter the next stage of evolution
+[08.02.22 20:45:43] gelmut: I think that shit and politics are not separate things. Politics will always and everywhere and on all planets
+[08.02.22 20:45:56] gelmut: to the other world?
+[08.02.22 20:46:10] angelo: well, maybe we'll evolve
+[08.02.22 20:46:15] gelmut: nothing has evolved during 2000 years, only methods have changed
+[08.02.22 20:46:45] angelo: yeah, we create the same shit but by the light of electric lamps)
+[08.02.22 20:47:08] angelo: let me believe in the best
+[08.02.22 20:47:17] angelo: otherwise to Mars
+[08.02.22 20:48:04] gelmut: first a fire, then a cowslip, then electric lights, now LED lights - so statistically there should just be new sources of lighting.
+[08.02.22 20:48:42] angelo: but we don't burn people on bulbs)
+[08.02.22 20:48:47] angelo: you know, it's already good
+[08.02.22 20:49:08] angelo: although someone is stoning
+[08.02.22 20:49:37] gelmut: well, they didn't burn with lamps, they connected wires directly
+[08.02.22 20:51:02] angelo: well it can't go on like this for long, maybe the common goal will lead humanity in another direction, the right one. I hope for Cosmos
+[08.02.22 20:51:21] angelo: the need for its conquest
+[08.02.22 20:52:57] gelmut: a common goal appears only in the period of danger.  That's why tribes used to unite with states, then states into alliances and alliances.  And to unite across the land you need danger from the outside. Although still find some G who wants to make money on this, or to gain power.
+[08.02.22 20:53:20] angelo: yes you are right
+[08.02.22 20:53:25] angelo: the essence of man is this
+[08.02.22 20:53:33] angelo: some are good at bowing down, others are good at governing
+[08.02.22 20:54:29] gelmut: I really like the game Metro (I've played all its parts five times) and there is a very good description in the story - that even on the brink of complete self-destruction people still want to grab power and resources instead of rallying everyone.
+[08.02.22 20:54:47] angelo: oh i went through recently
+[08.02.22 20:54:53] angelo: the essence of man is one
+[08.02.22 20:54:59] angelo: there are pathologically individuals
+[08.02.22 20:55:05] angelo: for whom power is like heroin
+[08.02.22 20:55:33] angelo: I think there were and will be such people
+[08.02.22 20:55:35] gelmut: Because power is always money
+[08.02.22 20:55:43] angelo: you know
+[08.02.22 20:55:48] angelo: I don't think it's money
+[08.02.22 20:55:55] angelo: but power over the lives of others
+[08.02.22 20:56:10] angelo: they are maniacs by nature
+[08.02.22 20:56:26] gelmut: it's like yes, money is a nice bonus, to the sense of power, impunity and being above the rest
+[08.02.22 20:56:43] angelo: remember that movie
+[08.02.22 20:56:46] angelo: not new
+[08.02.22 20:56:57] angelo: like an experiment, people were taken to jail
+[08.02.22 20:57:04] angelo: and divided into two groups
+[08.02.22 20:57:18] angelo: one kind of prisoners, and the other kind of guards. The result ?
+[08.02.22 20:57:48] angelo: the guards went head over heels, feeling power over the others
+[08.02.22 20:58:13] angelo: how does a credential change a person ?! even a security guard in a store
+[08.02.22 20:58:29] gelmut: I read about a similar article. There was a real experiment in some institute.  And there the students were randomly divided into prisoners and guards.
+[08.02.22 20:58:45] angelo: I think the result was the same
+[08.02.22 20:58:51] gelmut: yeah
+[08.02.22 20:59:03] angelo: it must be written into the human genome
+[08.02.22 20:59:19] angelo: that's how I like Zevs
+[08.02.22 20:59:30] angelo: surprisingly nice person
+[08.02.22 21:02:17] gelmut: I think it all stems from impunity in one way or another. If you have something more than the other person, you can ignore that small part of what he has in comparison with yourself. That's a bit abstruse, but I think you'll get the gist of it. You can put anything here.
+[08.02.22 21:02:52] angelo: Yes, I understand
+[08.02.22 21:04:09] angelo: inequality causes problems, but a person will always be unequal to another, in intelligence, money, strength, etc.
+[08.02.22 21:04:57] gelmut: A trivial example, even if you get $2k, then for you $50 is pennies, but for someone who gets $200 this is already quite a lot.  So to spend $50 on bullshit is nothing serious and at the same time it's just unacceptable for someone.
+It's the same with power - if you can do more, they can do less in front of you and so their voice is less meaningful to you.
+[08.02.22 21:05:49] angelo: yes, even at the level of everyday life a man does everything to show that he is "higher" than the other.
+[08.02.22 21:06:07] gelmut: And then there is self-affirmation. Having achieved one level, one will want more. As you wrote - like heroin.
+[08.02.22 21:06:08] angelo: But again, this craving is not peculiar to all nations
+[08.02.22 21:06:30] angelo: I think there is a development
+[08.02.22 21:06:39] angelo: it can be seen by the example of other peoples
+[08.02.22 21:07:06] angelo: but then again, maybe the living conditions there, neutralize these rotten feelings
+[08.02.22 21:07:48] gelmut: Again, we do not know how other nations live and why they do it. Some are held back by religion, others by finances and the poverty of the entire country. And again we will not see the whole point.
+[08.02.22 21:08:22] gelmut: People are not hobbits - they will always need power and money.
+[08.02.22 21:09:10] angelo: using the example of Ru, we can see that among the peasants such feelings are more expressed (better than the neighbor) than in the northern part of Europe
+[08.02.22 21:09:23] angelo: man, this conversation is not for tea :D
+[08.02.22 21:10:25] angelo: we should buy an island and make our own country! )
+[08.02.22 21:10:29] gelmut: And because all the old (Soviet) generation, no matter Ru, Ru, uk, think the same way, and you can describe it by one phrase - what will the neighbors think?
+[08.02.22 21:10:43] angelo: oh yes
+[08.02.22 21:10:57] angelo: the prison inside the man is the neighbors
+[08.02.22 21:11:13] angelo: running from it myself
+[08.02.22 21:11:44] gelmut: There was already such a topic, IT state. Like here they saw special projects, and live on it. Inside the city - communism in its purest form.
+[08.02.22 21:12:03] angelo: I do not believe in communism.
+[08.02.22 21:12:51] gelmut: Well, within a small society this is feasible in principle and even convenient. But there is always a restriction - the importance of profession
+[08.02.22 21:13:19] angelo: I think this society will be initially assembled according to some criteria
+[08.02.22 21:13:38] angelo: But take an IT specialist, a salesman and a locksmith
+[08.02.22 21:13:41] angelo: roughly speaking
+[08.02.22 21:14:13] angelo: russian uc people just need to understand one thing
+[08.02.22 21:14:31] angelo: you should live for yourself and not interfere with the life of OTHERS
+[08.02.22 21:15:11] gelmut: about what the neighbors will think - my relative from Kharkov region was crawling in the garden till she was 90 years old, she pulled every blade of grass and always repeated - the neighbors will look at my grass - what will they think....  what if the weeds will go to their garden and they will swear, etc.
+[08.02.22 21:15:39] angelo: this is no life
+[08.02.22 21:15:41] angelo: honestly
+[08.02.22 21:15:45] angelo: this is prison
+[08.02.22 21:16:00] angelo: live as those who don't give a shit about you say
+[08.02.22 21:16:02] angelo: absurd
+[08.02.22 21:16:29] gelmut: the other side is bad too - look how often cars park on the road - as they want - because they don't think what people think about them and that they can get in the way somehow. They think of themselves and live with it quietly, wasting effort and time, for their own pleasure.
+[08.02.22 21:16:47] angelo: exactly
+[08.02.22 21:16:53] angelo: live for yourself without disturbing others
+[08.02.22 21:17:01] angelo: golden rule
+[08.02.22 21:17:39] gelmut: The golden mean, which in principle is not realistic to keep. Unless at full stability.
+[08.02.22 21:18:19] angelo: we are working class people and peasants
+[08.02.22 21:18:23] angelo: eternally offended
+[08.02.22 21:18:24] angelo: humiliated
+[08.02.22 21:18:30] angelo: it takes time
+[08.02.22 21:20:17] gelmut: Here's another example - speeding and paying a fine - how much you get used to depends only on your financial situation.   If you can afford it - why lose the opportunity. But sooner or later, the clod builds up and the possibility of allowing yourself to go beyond the normal.
+[08.02.22 21:20:29] angelo: + class enmity + national and personal enmity
+[08.02.22 21:21:13] gelmut: But notice, it's all because of politics. If it weren't for politics and agitation - peasants would dig themselves and go on digging
+[08.02.22 21:21:40] angelo: absolutely
+[08.02.22 21:21:51] angelo: But I have many claims to the people on the whole
+[08.02.22 21:22:05] angelo: I don't want to speak well of myself
+[08.02.22 21:22:11] gelmut: An old proverb: Fighters fight, villeins tremble - nothing better describes this situation
+[08.02.22 21:22:33] angelo: Unfortunately (
+[08.02.22 21:22:35] angelo: much
+[08.02.22 21:22:52] angelo: but in general the world is sick
+[08.02.22 21:22:58] angelo: globally speaking
+[08.02.22 21:23:06] angelo: everywhere you look, everyone is different
+[08.02.22 21:24:15] angelo: some cut their clitoris, others stone them, others get down on their knees, 4 others think of themselves as the krauts in the 40s, etc.
+[08.02.22 21:24:18] angelo: but you're right
+[08.02.22 21:24:22] angelo: Again - politics
+[08.02.22 21:24:23] gelmut: Of course, there are many claims to the people, but there is already a problem of the state. If the state strictly monitors something, then it is instilled in the next generations.
+[08.02.22 21:24:30] angelo: any course brings benefits
+[08.02.22 21:25:16] gelmut: But the state watches only what is convenient to it, giving such a small mythical freedom, which covers more serious things.
+[08.02.22 21:26:44] gelmut: In principle everything can be changed, but for this it should take 2-3 generations. and all this should take place in ideal stable conditions.
+[08.02.22 21:26:46] angelo: let's go to sleep my, my positive friend )
+[08.02.22 21:26:55] angelo: you know
+[08.02.22 21:27:02] angelo: young people aren't so bad now
+[08.02.22 21:27:06] angelo: healthy
+[08.02.22 21:27:06] gelmut: What kind of stability can we talk about if you don't know what will happen tomorrow?
+[08.02.22 21:27:10] angelo: But then again, it depends where
+[08.02.22 21:27:24] gelmut: Well, we started for health, but ended for health
+[08.02.22 21:27:35] angelo: You got it right.)
+[08.02.22 21:27:47] angelo: kitchen talk is national
+[08.02.22 21:28:24] gelmut: like in the song - they were not joking, they ran to the stall three times and as usual in the morning they let the whole mtog.... down
+[08.02.22 21:28:27] gelmut: bottom line
+[08.02.22 21:28:42] angelo: huh!)
+[08.02.22 21:28:46] gelmut: ok, I'm sleeping too)
+[08.02.22 21:28:53] angelo: )))
+[08.02.22 21:28:54] angelo: come on
+[08.02.22 21:29:01] angelo: good night and thanks for talking
+[08.02.22 21:29:08] gelmut: thank you too.
+[09.02.22 10:52:38] gelmut: hi. did you write something in #anucln?  Because I see that there was a mark about new messages. I go there - and there is nothing at all
+[02/09/222 10:55:59] angelo: hi
+[09.02.22 10:56:34] angelo: Elroy:
+biggie report back when you get it.
+There are three projects in there. What do we clean first? robin
+
+Robin:
+Whatever works for you, start there.
+[09.02.22 10:57:12] angelo: here)
+[09.02.22 10:57:17] angelo: shorthand
+[09.02.22 10:57:30] gelmut: I'll write to that group
+[09.02.22 10:57:40] angelo: uh-huh, please write to the bot
+[09.02.22 11:43:37] gelmut: kinda wrote it all in the bot, if you have any questions, just leave me a message
+[09.02.22 12:05:16] angelo: thanks for the encyclopedic comments )
+[09.02.22 13:02:00] angelo: say
+[09.02.22 13:02:13] angelo: but bot will give an error directly on startup yes ?
+[09.02.22 13:02:20] angelo: directly if the dll
+[09.02.22 14:04:05] gelmut: no it won't
+[09.02.22 14:05:01] angelo: i.e. just will not start and all ?
+[09.02.22 14:05:38] gelmut: well, it depends on how you run
+[09.02.22 14:05:51] gelmut: if you use rundll with the wrong function, then rundll will give you an error
+[09.02.22 14:06:03] angelo: now
+[09.02.22 14:06:06] angelo: sec
+[09.02.22 14:06:16] gelmut: if everything is correct but you don't specify botpak, it will just close and that's it
+[09.02.22 14:07:03] gelmut: originally init_dll had a DllMain function in its export
+[09.02.22 14:07:22] gelmut: that's what you should have specified. But if your guys tweaked something there, I don't know how now
+[09.02.22 14:07:38] angelo: well, yes, after cleaning
+[09.02.22 14:07:43] angelo: okay, let's see
+[09.02.22 14:11:01] angelo: yeah, there's a missing entry: dllgetclassobject
+[09.02.22 14:11:21] angelo: if I do it without botpak
+[09.02.22 14:11:39] angelo: but I just run C:\Users\Man\Downloads>rundll32 dll_64_prj_Fullmoon_143041_4.dll,DllGetClassObject
+[09.02.22 14:15:06] gelmut: there will always be an error if the function name is not correct.
+so ask yours what they did there.
+[09.02.22 14:15:35] angelo: hmm, looks like that function
+[09.02.22 14:15:36] angelo: but I'll ask
+[09.02.22 14:15:40] angelo: thank you.
+[02/15/222 13:51:19] angelo: hello
+[15.02.22 13:51:30] angelo: there was a question about the teams
+[15.02.22 13:51:38] angelo: is there a possibility to give a command in bulk?
+[15.02.22 13:52:06] gelmut: there is a tool in admin to put the country command to the whole projects
+[15.02.22 13:53:51] angelo: got it
+[15.02.22 13:53:53] angelo: have to search
+[15.02.22 13:54:16] gelmut: Left menu Tools->Global Commands
+[15.02.22 13:54:39] angelo: thanks !
+[15.02.22 13:55:00] gelmut: I don't know how to use it.
+[15.02.22 13:55:12] angelo: dangerous moment :D
+[15.02.22 13:55:38] gelmut: I used admins only in places where you need to test something in the bot
+[15.02.22 13:56:12] gelmut: it should be described in documentation somewhere
+[15.02.22 13:56:35] angelo: got it
+[15.02.22 13:56:45] angelo: the main thing here is not to break anything
+[15.02.22 13:58:50] gelmut: Yes, maybe this mechanism does not work there. This is better to find out from those who usurped admin.  in tox's chat was hesain - he knows exactly how to do it. because it was him who usually updated something global or put commands on the project
+[15.02.22 13:59:10] gelmut: hycean
+[15.02.22 13:59:41] angelo: ok
+[15.02.22 13:59:46] angelo: all gone to him
+[15.02.22 14:03:51] angelo: maybe you know
+[15.02.22 14:03:53] angelo: just in case
+[15.02.22 14:04:07] angelo: Get Debug Log command didn't send it somehow
+[15.02.22 14:04:46] angelo: let's skip the question for now)
+[15.02.22 14:11:00] gelmut: you mean it was not sent?
+[15.02.22 14:11:17] angelo: one bot got off
+[15.02.22 14:11:22] angelo: debugger command
+[15.02.22 14:11:48] gelmut: it is added to the list. and the sended status will be after the bot picks it up.
+[15.02.22 14:12:07] gelmut: and it usually picks it up in about 5 minutes after restart
+[15.02.22 14:12:16] angelo: EMPTY
+[15.02.22 14:12:20] angelo: came back
+[15.02.22 14:12:24] angelo: from debug log
+[15.02.22 14:12:35] gelmut: so it is not updated.
+[15.02.22 14:12:54] gelmut: are you sure that it exactly updated to the version with logging enabled?
+[15.02.22 14:13:12] angelo: I'm sure botpak command
+[15.02.22 14:13:17] angelo: how to check ?
+[15.02.22 14:13:22] angelo: is it possible
+[15.02.22 14:14:18] gelmut: actually botpack should be compiled with a version a little higher than the current one. so you could see that the version has changed
+[15.02.22 14:14:39] gelmut: Another question - when you send a command to debug log - after he went offline or before?
+[15.02.22 14:14:49] gelmut: maybe he took it before he updated
+[15.02.22 14:15:14] angelo: you stumped me with that question
+[15.02.22 14:15:25] angelo: two bots were online
+[15.02.22 14:15:28] angelo: and were staying
+[15.02.22 14:15:33] angelo: one of them is off and not alive
+[15.02.22 14:15:43] angelo: so, two bots simply could not refresh
+[15.02.22 14:18:02] gelmut: wait a minute. they can go on standby for 10 minutes each.
+[15.02.22 14:18:33] gelmut: the main thing is to give a command to those who have no file error
+[15.02.22 14:19:21] angelo: no one had any errors
+[15.02.22 14:19:30] angelo: maybe they just didn't update
+[15.02.22 14:20:18] gelmut: ideally, of course, just take and increase the botpack version during the build to see that everything is normal.
+[15.02.22 14:20:47] gelmut: well, and of course when you upgrade - always check botpack on yourself.
+[15.02.22 14:21:19] gelmut: because there could be some confusion. what if a debug gets there by accident (and it always asks for permission to run).
+[15.02.22 14:21:28] gelmut: or maybe it fails to download somehow
+[15.02.22 14:21:39] angelo: yeah, well, it's possible
+[15.02.22 14:21:45] angelo: I'm sitting here thinking
+[15.02.22 14:21:58] gelmut: so you just take a tester for init dll, build it on the admin in a test project and add the botpack you're going to upload there
+[15.02.22 14:22:44] angelo: how do we make a botpack at +1 ?
+[15.02.22 14:22:58] angelo: we usually uploaded it as a new bot build
+[15.02.22 14:23:01] angelo: new version
+[15.02.22 14:23:07] angelo: this is the point I don't understand (
+[15.02.22 14:23:30] gelmut: botpack version is hardwired inside it.
+[15.02.22 14:23:54] gelmut: that's why you should change it in config.h and recompile botpack before compiling.
+[15.02.22 14:24:13] angelo: okay, I'll write to Biggie
+[15.02.22 14:24:17] angelo: that's his style
+[15.02.22 14:24:29] gelmut: upload it via botpack update (not exe/dll)
+[15.02.22 14:24:50] angelo: yeah, that's what I did
+[15.02.22 14:25:31] gelmut: you should not lose this botpack, it will be useful later for checking on different bots, where something does not work
+[15.02.22 14:25:47] angelo: yeah, i store that stuff
+[15.02.22 14:28:54] gelmut: stop.
+ front://bp_with_log.dat
+[15.02.22 14:29:00] gelmut: you gave so on update7
+[15.02.22 14:29:07] angelo: yeah
+[15.02.22 14:29:11] gelmut: files forgot
+[15.02.22 14:29:24] gelmut: front://files/bp_with_log.dat
+[15.02.22 14:29:29] angelo: ) it happens )
+[15.02.22 14:29:36] angelo: let's give it again
+[15.02.22 14:30:01] angelo: sorry for torturing you with questions, and sometimes repetitive ones
+[15.02.22 14:30:07] angelo: i'm so fucking ashamed of myself....
+[02/15/222 14:30:09] angelo: and what is the error FileError: 3 First Time: 2022-02-15 13:58:50
+[15.02.22 14:30:12] gelmut: you need
+1) in the botpack configure - src/config.h you should edit
+#define BOT_VER 109 // or whatever version
+add (or modify existing line)
+#define DEBUG_MODE
+2) compile to release
+3) rename this file (bin/release/bot_pack_64.dat) to bp_with_log.dat (to make it clear that the log file) and upload it to the admin panel in the apploads.
+4) Let the bots update it through the front
+front://files/bp_with_log.dat
+5) ponytalk on the debug tab to see if the version has changed
+[15.02.22 14:30:34] angelo: accepted
+[15.02.22 14:31:46] gelmut: FileError = 3, when not only path in init is not found, but even folder is not found.
+usually it is either because of cryptor or antivirus.
+the main thing is to watch when this error appeared - some time after the first access or right away
+if at once it's often a problem with the crypter.
+[15.02.22 14:32:13] gelmut: or not, it appears when there is no way to check access to the file.
+[15.02.22 14:32:57] angelo: yeah, I see almost all errors are visible to AV)
+[15.02.22 14:34:11] gelmut: well, sort of.
+file doesn't disappear on disk by itself, also browser access to files isn't blocked by itself either.
+[15.02.22 14:34:27] angelo: yeah, i know.
+[15.02.22 14:34:32] angelo: tell me.
+[15.02.22 14:34:33] gelmut: maybe it was a bug during installation or update, but it's hard to find out
+[15.02.22 14:34:39] gelmut: especially without logging
+[15.02.22 14:35:13] gelmut: it helps to understand the cause of filerror, but as you see it is disabled by default
+[15.02.22 14:35:30] angelo: here i made botpack update through botpackaddate let's say version 5. then we change the bot through the update (AV killed), we take into account respectively version and botpack updates right ?  And it will be 6
+[15.02.22 14:36:13] gelmut: it's up to your soul
+[15.02.22 14:36:34] angelo: i remember what you said, it's just for convenience
+[15.02.22 14:36:51] gelmut: usually botpack is updated very rarely. so its versions don't go far enough
+[15.02.22 14:37:40] angelo: thank you very much for such extended answers !
+[15.02.22 14:37:54] angelo: here's a heartfelt heartfelt thank you !
+[15.02.22 19:36:46] angelo: well, good evening
+[15.02.22 19:37:33] angelo: botpak update is not working for us (
+[16.02.22 05:51:17] gelmut: compiled in debug - no different from the release (only there is no string encryption and full logging is enabled, including debugview). So it also like resil can install into system and so on. But the message here lets you know it's running (handy for debugging runs), and you always see the bot is running.
+[16.02.22 15:53:00] gelmut: by the way, so there yesterday tests ended?
+[16.02.22 15:59:23] angelo: no way
+[16.02.22 15:59:29] angelo: sorry, I'll deal with the lowers tests
+[17.02.22 11:28:34] angelo: hi
+[17.02.22 11:47:58] gelmut: hi
+[17.02.22 11:49:57] angelo: as always I'm with a question
+[17.02.22 19:27:03] angelo: knock knock
+[17.02.22 19:27:17] gelmut: ih
+[17.02.22 19:27:19] angelo: on the test bot
+[17.02.22 19:27:23] angelo: cookies went
+[17.02.22 19:27:32] angelo: decided to test
+[17.02.22 19:27:37] angelo: and it worked
+[17.02.22 19:27:45] angelo: tomorrow i will upload botpack to the battle ones and see
+[17.02.22 19:28:09] gelmut: as practice shows - everything always works on test ones)
+[17.02.22 19:28:22] angelo: no way!)
+[17.02.22 19:28:27] angelo: it didn't work
+[17.02.22 19:28:40] angelo: he changed something and it worked the third time
+[17.02.22 19:28:44] gelmut: did logs work at least?
+[17.02.22 19:28:50] angelo: um
+[17.02.22 19:28:57] angelo: indebugview )
+[17.02.22 19:29:02] angelo: send logs )
+[17.02.22 19:29:05] angelo: into the car no
+[17.02.22 19:29:32] gelmut: well, if in debugview were, then you could try to request it from admin.
+[17.02.22 19:29:34] angelo: now gave the command
+[17.02.22 19:29:41] angelo: did
+[17.02.22 19:29:43] angelo: did not go
+[17.02.22 19:29:46] angelo: exactly
+[17.02.22 19:30:13] angelo: just couldn't spare the time, my ass is in soap
+[17.02.22 19:30:35] gelmut: that's weird, you should have seen what is written in the debugview. it is well described there what commands come etc.
+[17.02.22 19:30:47] angelo: that's how it stays
+[17.02.22 19:31:40] angelo: can I copy it ?
+[17.02.22 19:31:55] gelmut: come on, so I can tell exactly what atm came to you
+[17.02.22 19:33:06] angelo: JKSG@DdD@Pj2039hgf5dUKACF4546t4vDdfWV#Djugi
+[17.02.22 19:33:36] angelo: https://privatlab.com/s/v/06279a98m3u8qxX43OyY
+[17.02.22 19:33:51] angelo: in 5 min I have to run away
+[17.02.22 19:36:47] gelmut: muhahaha
+[17.02.22 19:37:01] gelmut: no logs, you got botpack update for some reason)
+[17.02.22 19:37:20] angelo: don't get it now
+[17.02.22 19:37:59] gelmut: Right, I totally forgot about that.  If you're snitching on the admin, she gets your botpack version.
+[17.02.22 19:38:14] gelmut: and if she sees that it doesn't match, she sends you an update
+[17.02.22 19:38:56] gelmut: I remember long ago I kicked the admin developer to check only the lower version, not the higher one. But apparently he forgot to add this.
+[17.02.22 19:39:29] gelmut: so you should have the same botpack version as that in the admin panel to avoid problems
+[17.02.22 19:39:42] gelmut: otherwise the admin panel will still update to his.
+[17.02.22 19:39:50] angelo: wait
+[17.02.22 19:39:52] angelo: wait
+[17.02.22 19:40:06] angelo: that is
+[17.02.22 19:40:12] gelmut: the get debug log command didn't show anything, because botpak already worked when you get it, the one installed in admin area
+[17.02.22 19:40:39] angelo: damn, I can't get used to this shaitan machine
+[17.02.22 19:41:03] angelo: and the version we prescribe when you build a bot (bot update)
+[17.02.22 19:41:04] angelo: yes ?
+[17.02.22 19:41:27] gelmut: wrong version
+[17.02.22 19:41:46] angelo: so bot version is running 1
+[17.02.22 19:41:56] angelo: and I put botpack in the folder with the test 18
+[17.02.22 19:42:09] angelo: so it returns botpack 1 ?
+[17.02.22 19:42:42] gelmut: when botpack is compiled, the version is included.
+then when you add this botpack to the admin panel (for bots), you should specify this version manually.
+so that the admins know what version she has and then in the case of non-responsiveness will update the bots.
+[17.02.22 19:43:08] angelo: ok
+[17.02.22 19:43:10] angelo: please clarify
+[17.02.22 19:43:31] angelo: and when we pour botpack ?
+[17.02.22 19:43:49] angelo: i got a blank fog in my head
+[17.02.22 19:44:02] angelo: are you talking about bot version update ?
+[17.02.22 19:44:26] gelmut: yes, that's it. 108 or something was the last one
+[17.02.22 19:45:04] angelo: got it, so if bot was 1 update
+[17.02.22 19:45:22] angelo: but he sees that we started with 108
+[17.02.22 19:45:30] angelo: it returns 1 again
+[17.02.22 19:45:33] angelo: got it
+[17.02.22 19:45:51] gelmut: no, update version doesn't matter at all
+[17.02.22 19:45:52] angelo: figured it out
+[17.02.22 19:45:55] gelmut: this is the bot version
+[17.02.22 19:46:09] angelo: i just can't remember what botpac uploaded to admin
+[17.02.22 19:46:19] gelmut: it is always there.
+[17.02.22 19:52:04] gelmut: when the bot knocks on the admin panel, it primarily reports
+1) bot version (aka botpack version, prescribed at compile time) - you need it to control what bot version you have
+2) version of the update (also known as init version, which is prescribed during the build) - it is necessary to control the init file update (dll/exe)
+
+Well, the version of botpack changes manually every time something is corrected in the source code of bot kernel, i.e. who makes the changes, changes it.
+It turns out that the botpack is always the same for all projects, because it is a kernel, which does not depend on the parameters (where to knock, which project).
+
+Well, as soon as the person who rules the bot, something has been corrected in it, he increases the version of the botpack, compiles it.
+Then you need to prescribe this botpack in the admin panel of the lowader and in the admin panel of the bot (indicating its version).
+
+And so when the bots are knocking with the wrong version (not the one specified on the server), the admin gives the bot a command to update the botpack.
+
+In your case, the version was newer than the one that is now in the admin panel. That's why the admin panel saw it and tried to update you to that version.
+[17.02.22 19:52:40] angelo: everything
+[17.02.22 19:52:46] angelo: I'll save your work
+[17.02.22 19:52:49] angelo: and I'll figure it out
+[17.02.22 19:52:58] angelo: I'll take a walk or I'll fuck up
+[17.02.22 19:53:22] angelo: I'm jumping from problem to problem, I can't master it
+[17.02.22 19:54:08] gelmut: in admin Settings->System->Bot Modules
+there you can change the botpack and check the bot version
+[17.02.22 19:54:21] angelo: i never went there yet
+[17.02.22 19:54:27] angelo: so I didn't understand what he was talking about
+[17.02.22 19:54:29] angelo: everything's fine
+[17.02.22 19:54:30] angelo: thank you.
+[17.02.22 19:54:32] angelo: go
+[17.02.22 19:54:38] gelmut: ok. bye.
+[17.02.22 19:54:38] angelo: really, my head is a mess
+[17.02.22 19:54:58] angelo: you know, I appreciate you spilling it out like that
+[17.02.22 19:55:22] gelmut: in Settings->System->Bot Modules you prescribe botpack, it will update on all bots with different version
+[17.02.22 19:55:43] gelmut: i.e. it is global botpack update point.
+[17.02.22 19:56:08] angelo: all saved
+[17.02.22 19:56:09] angelo: ran away
+[18.02.22 13:06:56] angelo: hello
+[18.02.22 13:54:05] gelmut: hi
+[18.02.22 13:55:31] angelo: now cookies won't work again
+[18.02.22 13:55:35] angelo: no change
+[18.02.22 13:55:42] angelo: there is 107 version in admin
+[18.02.22 13:55:50] angelo: also put version 107 in the botpack
+[18.02.22 13:56:12] angelo: but before they gave a cookie and BEFORE on the test
+[18.02.22 13:56:51] angelo: once again - inite does not affect the work of modules on the bot ?
+[18.02.22 13:57:01] gelmut: no way
+[18.02.22 13:57:06] angelo: hmm
+[18.02.22 13:57:12] angelo: then what's the difference
+[18.02.22 13:57:14] gelmut: that's why you need logs, to see why it didn't work
+[18.02.22 13:57:24] angelo: i understand as anyone else
+[18.02.22 13:57:39] angelo: let's try again with debug view
+[18.02.22 13:58:15] gelmut: you need a release with log enabled. And the debug view is purely for yourself. It's better not to load it on bots.
+[18.02.22 13:58:43] angelo: well, yes, to eliminate the error moment
+[18.02.22 16:12:05] angelo: you can upload
+[18.02.22 16:12:08] angelo: log
+[18.02.22 16:12:36] gelmut: wrote something?
+[18.02.22 16:12:42] gelmut: you had sound, but no messages
+[18.02.22 16:13:08] angelo: I want to send you the log
+[18.02.22 16:13:09] angelo: )
+[18.02.22 16:13:18] gelmut: go ahead, I'm leaving soon
+[18.02.22 16:14:13] angelo: how long before you leave?
+[18.02.22 16:15:16] gelmut: 10 minutes
+[18.02.22 16:15:50] angelo: 2 minutes
+[18.02.22 16:15:54] angelo: till Mon yes ?
+[18.02.22 16:15:58] gelmut: yeah
+[18.02.22 16:17:37] angelo: SHDGYk3i8hf4n/sm40i;f9hn3/m;sef.xgr
+[18.02.22 16:19:23] gelmut: I would have thrown the log here already and not bothered.
+[18.02.22 16:19:44] angelo: https://dropfiles.me/download/93789670a459c9e2/#GzvOb5PCZZACRc_Lfy6P3w
+[18.02.22 16:19:48] angelo: habit, bro
+[18.02.22 16:21:27] angelo: I just threw up to see the start log
+[18.02.22 16:21:33] angelo: bot don't knock
+[18.02.22 16:21:35] angelo: test
+[18.02.22 16:24:40] gelmut: you have two bots running on your computer for some reason.
+[18.02.22 16:24:51] gelmut: but I don't see any command to rob cookies
+[18.02.22 16:24:53] gelmut: or passwords
+[18.02.22 16:25:48] angelo: ok
+[18.02.22 16:25:52] angelo: let's touch and run
+[18.02.22 16:25:55] angelo: different
+[18.02.22 16:25:56] angelo: blow
+[18.02.22 16:26:05] angelo: and I'll be white-knuckle envious
+[18.02.22 16:27:14] angelo: have a nice weekend !
+[18.02.22 16:27:19] angelo: don't meet a bear
+[18.02.22 16:32:53] gelmut: Yeah, I'll take a balalaika to scare them off
+[18.02.22 16:33:07] angelo: ))))
+[21.02.22 14:58:08] angelo: hello
+[21.02.22 14:58:09] angelo: question !
+[21.02.22 14:59:49] gelmut: hi
+[21.02.22 15:00:05] angelo: ask advice
+[21.02.22 15:00:12] angelo: go away
+[21.02.22 15:01:10] gelmut: didn't have time to click
+[21.02.22 15:01:15] angelo: click
+[21.02.22 15:01:28] gelmut: too small
+[21.02.22 15:01:43] angelo: shorter
+[21.02.22 15:01:46] angelo: look
+[21.02.22 15:01:53] angelo: when copying lowers
+[21.02.22 15:01:56] angelo: there are detects
+[21.02.22 15:02:12] angelo: any suggestions for sending files
+[21.02.22 15:02:15] angelo: BUT
+[21.02.22 15:02:19] gelmut: you mean when copying?
+[21.02.22 15:02:22] angelo: no detects and does not block upload
+[21.02.22 15:02:27] angelo: you drop it on the car
+[21.02.22 15:02:28] angelo: files
+[21.02.22 15:03:31] angelo: and they catch the detection and sometimes catch just an offer to send the files to the majors, but they do not block any activity with the file
+[21.02.22 15:04:00] gelmut: i.e. even the loader file itself sticks a bit? o_O
+[21.02.22 15:04:09] gelmut: without running?
+[21.02.22 15:04:21] gelmut: the lowader itself can run a bot
+[21.02.22 15:04:32] angelo: even without starting
+[21.02.22 15:04:36] angelo: very often
+[21.02.22 15:06:04] gelmut: if without starting it means
+1) shitty crypt - try another one
+2) something spammed server domains/servers where it will bump. - Try to shoot down at all to left domain and check if it is passive.
+3) searching for the part of code which is compromised. - Here it is by gut feeling
+[21.02.22 15:09:03] angelo: no detects at startup/knock
+[21.02.22 15:09:19] angelo: but this way dogs 30% are skewed at once, when copying
+[21.02.22 15:09:26] angelo: something is strange with cryptors
+[21.02.22 15:09:45] angelo: you know what's good?
+[21.02.22 15:09:52] angelo: making babies, that's all
+[21.02.22 15:10:41] gelmut: lauder is a very small project and is completely separated from the bot, therefore, it is not difficult to gauge everything in a day.
+[21.02.22 15:11:05] angelo: I'll write back to biggie
+[21.02.22 15:11:30] gelmut: Maybe they just stupidly run in their virtualization and see that knocking somewhere. And this address (ip) can be in the blac
+[21.02.22 15:11:39] gelmut: or maybe they don't like information gathering.
+[21.02.22 15:13:11] angelo: wait
+[21.02.22 15:13:17] angelo: I don't understand the launch moment
+[21.02.22 15:13:26] angelo: we're just copying
+[21.02.22 15:13:27] angelo: to the machine
+[21.02.22 15:13:35] angelo: ddk has no activity
+[21.02.22 15:14:57] gelmut: 1) the lowder when accessing the admin panel, it gives him:
+ - init_dll or init_exe - depending on what is set
+ - botpack
+2) The init is patched and saved to the root temp.
+3) lowder starts botpack on its own process
+[21.02.22 15:15:06] gelmut: and botpack installs init
+[21.02.22 15:15:11] angelo: i understand that
+[21.02.22 15:15:13] angelo: but then again
+[21.02.22 15:15:15] angelo: look
+[21.02.22 15:15:24] angelo: I'll just dump the dll on VM
+[21.02.22 15:15:26] angelo: and detect
+[21.02.22 15:15:32] angelo: without running the dll
+[21.02.22 15:15:34] angelo: that's what (
+[21.02.22 15:17:27] gelmut: well, I say sew the left domains into the looder and crypt them.
+[21.02.22 15:18:07] gelmut: and check when you upload to virtual machine. if it stopped stealing, it means there is something wrong with the server (domain, cert, ip )
+[21.02.22 15:18:59] angelo: whew!
+[21.02.22 16:30:58] angelo: bro
+[21.02.22 16:31:03] angelo: give me more contact
+[21.02.22 16:31:22] angelo: please
+[21.02.22 16:31:32] angelo: I gotta pester somebody with stupid questions
+[21.02.22 16:32:14] gelmut: I have no additional contacts. only a worker from our team. But you can't rely on her either.
+[21.02.22 16:32:32] angelo: uh
+[21.02.22 16:32:36] angelo: tox ?
+[21.02.22 16:32:46] gelmut: there is both tox and toad
+[21.02.22 16:32:48] angelo: lucky you
+[21.02.22 16:32:54] angelo: I don't know them
+[21.02.22 16:33:16] angelo: you're an elusive vigilante
+[21.02.22 16:33:38] gelmut: better go with tox. it's not so bad, but universal
+[21.02.22 16:34:17] angelo: even an address to send pigeons
+[21.02.22 16:34:31] gelmut: C13381852D86C8835B7B0EDA665BAF0928B341DC735A753DF5C8FB1DA6A351394C0B8C536F5F here in tox
+[21.02.22 16:35:20] angelo: at least he wrote a comment, I thought he wrote his TIN
+[21.02.22 16:38:10] gelmut: I go there less often than here, but I still go there
+[21.02.22 16:42:27] angelo: well rocket will die soon

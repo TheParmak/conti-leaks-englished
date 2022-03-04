@@ -1,0 +1,233 @@
+[21.09.21 15:05:24] elijah: Hi!
+[21.09.21 15:06:08] elijah: collin said, can I ask you to run the binary on antivirus virtual machines? Can you help?
+[21.09.21 15:07:59] angelo: hi !
+[21.09.21 15:08:05] angelo: bro, do you have 15 minutes ?
+[21.09.21 15:08:15] angelo: just got up from the table
+[21.09.21 15:08:21] angelo: 20 at the most
+[21.09.21 15:08:26] angelo: step back
+[21.09.21 15:08:28] angelo: okay ?
+[21.09.21 15:09:35] elijah: Of course) If you can help with that, tell me when you have time
+[21.09.21 15:13:04] angelo: of course i will, bro!
+[21.09.21 15:13:10] angelo: I'll be there in 20 minutes and we'll do it!
+[21.09.21 15:13:50] elijah: Oh! Thanks!)
+[21.09.21 16:19:43] angelo: ask, bro!
+[21.09.21 16:19:45] angelo: where do you want it?
+[21.09.21 16:19:47] angelo: on 10 ?
+[21.09.21 16:19:51] angelo: 64 normal ?
+[21.09.21 16:20:56] elijah: yeah 10, x64
+[21.09.21 16:21:12] elijah: seems like last week my loader when running on simantec and trend micro give a detection. Some on statics, some on dynamics
+[21.09.21 16:21:54] elijah: I corrected the loader. I would like to run some binary on these two AVs in static and dynamic
+[21.09.21 16:22:21] elijah: I'll send you binary files - there will be one *.exe and two *.dlls
+[21.09.21 16:22:33] angelo: on the farm
+[21.09.21 16:22:40] angelo: :face_vomiting:
+[21.09.21 16:22:42] elijah: apparently yes
+[21.09.21 16:22:43] angelo: )))
+[21.09.21 16:23:49] elijah: farm, is it booooooo?)
+[21.09.21 16:24:16] angelo: yeah ((!
+[21.09.21 16:24:22] angelo: lag terrible
+[21.09.21 16:26:29] elijah: `Lj7562sd3$&Bdd2#&ghfjvp[asFJfaI843rFDFjsdufg
+[21.09.21 16:26:54] elijah: `https://privatlab.com/s/v/jjEEeNR85bhWDdm4e7q0`
+[21.09.21 16:28:08] elijah: you can start with l_x64_rdll, please
+[21.09.21 16:28:15] angelo: now
+[21.09.21 16:28:22] angelo: making coffee
+[21.09.21 16:28:38] elijah: thank you.)
+[21.09.21 16:28:39] angelo: on two farms
+[21.09.21 16:28:44] angelo: yes ?
+[21.09.21 16:29:11] elijah: yes, each binary on simantec and trend micro in static and dynamic. Will there be detects.
+[21.09.21 16:35:47] angelo: yes
+[21.09.21 16:35:52] angelo: sorry.
+[21.09.21 16:36:00] angelo: statics and dynamics
+[21.09.21 16:36:23] angelo: wait, damn it!
+[21.09.21 16:36:30] angelo: and on the dinchik ?!?!?
+[21.09.21 16:36:32] angelo: check
+[21.09.21 16:37:51] angelo: or do you have to run on the machine ?
+[21.09.21 16:38:04] angelo: I'm so stupid today
+[21.09.21 16:38:29] elijah: neither simantec nor trend micro
+[21.09.21 16:38:58] elijah: I've checked simantec and statics and trend, but I need to check if our AV farm also has no detects
+[21.09.21 16:39:19] elijah: in principle, just check dynamics
+[21.09.21 16:40:01] elijah: you absolutely need to run the execution, so that dynamic detects would pop up, if they are there
+[21.09.21 16:42:05] angelo: ok bro
+[21.09.21 16:42:07] angelo: it'll happen
+[21.09.21 16:42:13] angelo: I hate our farms.)
+[21.09.21 16:42:19] angelo: I once sat with them for 8 hours
+[21.09.21 16:44:25] elijah: thanks to you, bro))
+[21.09.21 16:44:34] angelo: yeah, what the fuck!)
+[21.09.21 16:52:16] angelo: what's the deadline ?
+[21.09.21 16:56:32] elijah: no deadline)
+[21.09.21 16:56:49] angelo: because it's long
+[21.09.21 16:56:54] elijah: if tomorrow will result - it will be fine)
+[21.09.21 16:57:06] angelo: tomorrow will be fine, today certainly not )))
+[21.09.21 16:57:43] elijah: Really, so long) So carefully analyzes?)
+[21.09.21 16:57:58] angelo: cars are slow
+[21.09.21 16:58:02] angelo: eeeeeeeeee
+[21.09.21 16:58:06] angelo: eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+[21.09.21 16:58:14] angelo: plus there are problems
+[21.09.21 16:58:25] angelo: like right now, Trend Micro doesn't want to update bases
+[21.09.21 16:58:46] angelo: long, I was chasing one ddla through all about 8 hours]
+[21.09.21 17:01:13] elijah: aww..... I'll wait)
+[21.09.21 17:01:33] angelo: i can check without update, but is it necessary ?
+[21.09.21 17:03:27] angelo: one update sometimes cost 40 minutes
+[21.09.21 17:03:30] elijah: Better with update. I'll wait, there is time)
+[21.09.21 17:03:45] angelo: wait with update, I'm checking with admin now)
+[21.09.21 17:03:50] angelo: does not want to update
+[21.09.21 17:04:00] elijah: And how do testers run the builds? They will wait for the result.
+[21.09.21 17:04:17] angelo: ask for something easier
+[21.09.21 17:04:22] elijah: ))))
+[21.09.21 17:04:24] angelo: static
+[21.09.21 17:04:30] angelo: sometimes on farms
+[21.09.21 17:04:42] angelo: sometimes
+[21.09.21 17:04:53] angelo: I don't believe they were raced often
+[21.09.21 17:05:07] angelo: well, here, bam, and admin went offline )))
+[21.09.21 17:05:16] elijah: ))))
+[21.09.21 17:05:31] elijah: off until tomorrow)
+[21.09.21 17:05:34] angelo: so I will try to check it on simantics if I get it to update patrons
+[21.09.21 17:05:36] angelo: hz)
+[21.09.21 17:06:03] angelo: but there is such a thing, you give a problem and the man was probably like, "eppttii me for a couple of hours, fuck it, i'll be off
+[21.09.21 17:06:03] angelo: =)
+[21.09.21 17:06:20] elijah: ahahhhhhh)))
+[21.09.21 17:07:03] elijah: some great strain on this task((( Sorry
+[21.09.21 17:07:26] angelo: I actually offered to do it as a kind of punishment ))
+[21.09.21 17:07:30] angelo: check on farms
+[21.09.21 17:07:36] angelo: ahahaha!)
+[21.09.21 17:07:43] angelo: simantik updated
+[21.09.21 17:07:46] angelo: on it yet
+[21.09.21 17:07:52] angelo: just start it ?
+[21.09.21 17:08:32] elijah: yeah
+[21.09.21 17:08:38] elijah: run it like this
+[21.09.21 17:09:06] elijah: rundll32 l_x64_rdll.dll,StartW
+[21.09.21 17:09:21] elijah: I don't know how to run it on farms though(
+[21.09.21 17:11:20] angelo: like a simple dll
+[21.09.21 17:11:25] angelo: no more, no less
+[21.09.21 17:13:13] elijah: yeah
+[21.09.21 17:51:18] elijah: bro, I'm going off too. Let me know the result, please.
+[21.09.21 17:51:29] angelo: )))
+[21.09.21 17:51:30] angelo: go ahead.
+[21.09.21 17:51:34] angelo: I'll try
+[22.09.21 10:02:49] angelo: Hi!
+[22.09.21 10:02:55] angelo: looked it up on simantica yesterday
+[22.09.21 10:02:59] angelo: with updated paternoster
+[22.09.21 10:03:05] angelo: dllki is ok
+[22.09.21 10:03:11] angelo: ran for 10-15 minutes
+[22.09.21 10:03:16] angelo: AV silent
+[22.09.21 10:03:25] angelo: eczema detected at once after startup
+[22.09.21 10:03:32] angelo: check on the micro
+[22.09.21 10:04:38] elijah: Hi!
+[22.09.21 10:04:47] elijah: Thank you)
+[22.09.21 10:05:03] angelo: need to update myctro trend (
+[22.09.21 10:05:10] angelo: can't do anything yet without update
+[22.09.21 10:05:15] elijah: `I'll see how it goes with micro` - another day?))
+[22.09.21 10:05:45] angelo: do you want me to give you this baton?)
+[22.09.21 10:05:55] angelo: we need to encourage the admin
+[22.09.21 10:05:59] angelo: update
+[22.09.21 10:06:01] elijah: no-no-no-no)))) You said yourself, it's a punishment))
+[22.09.21 10:06:16] angelo: and what am I guilty of?)
+[22.09.21 10:06:21] angelo: not me about the admins' chickenshit
+[22.09.21 10:07:03] elijah: aaaa.... So you're not the one updating the avs.... i see now.
+[22.09.21 10:07:25] angelo: don't insult me like that
+[22.09.21 10:07:40] angelo: i do everything as fast as i can
+[22.09.21 10:07:58] angelo: just there writes an error - go to the admin and shit you can do without them
+[22.09.21 10:08:21] elijah: ``Well, don't insult me like that. I'm not complaining.
+[22.09.21 10:08:50] elijah: Thank you for agreeing to help. I'm very grateful for that. And the time... I'm not in a hurry))
+[22.09.21 10:09:13] angelo: You just sit and upload a file to the farm, and VM gets stupidly knocked out and you sit like a deer trying to download for 40 minutes
+[22.09.21 10:09:37] angelo: ok, so you figured out what's not easy)
+[22.09.21 10:09:37] angelo: you're welcome bro
+[22.09.21 10:10:27] elijah: Really, it's torture(((( What made you do that) Where did you naughty)
+[22.09.21 10:10:46] angelo: now you should ask you ahahahh ))
+[22.09.21 10:11:20] angelo: i'm not a farm girl if anything ) i don't know why you poked me, i'm a tester, just a tester, modest arnishka
+[22.09.21 10:13:49] elijah: `who knows why they poked me` - I do not know either. They said he could help. Myself I would not have thought of such a thing)
+[22.09.21 10:14:32] elijah: `modest arnyshka` - and funny, firing off in general chat))
+[22.09.21 10:16:27] angelo: the world is too gray, you gotta paint it !
+[22.09.21 10:16:29] angelo: ))
+[22.09.21 10:16:44] angelo: at least tell me, what did you give yesterday ?
+[22.09.21 10:16:50] angelo: what is this module
+[22.09.21 10:19:08] elijah: it's a lowader
+[22.09.21 10:19:24] elijah: it loads the bot and runs it
+[22.09.21 10:27:50] angelo: like tric, bc and anchor - got it
+[22.09.21 10:27:59] angelo: what is it called ?
+[22.09.21 10:34:21] elijah: `like tric, bc and anchor` - sort of.
+[22.09.21 10:34:29] elijah: `what is it called ?
+[22.09.21 10:41:22] angelo: loader)
+[22.09.21 10:41:28] angelo: there is a name
+[22.09.21 10:41:41] angelo: even street cats are called muskies )
+[22.09.21 10:43:15] elijah: Nah, there's no such name. Just a lowader) clear and to the point))
+[22.09.21 10:43:37] angelo: well, you can not let the boat without a name!
+[22.09.21 10:44:02] elijah: ))))
+[22.09.21 10:44:23] elijah: we'll have to give him an underground nickname)
+[22.09.21 13:52:50] angelo: admin is silent dog
+[22.09.21 13:59:48] elijah: sad(
+[22.09.21 14:00:04] angelo: can't throw a tap (
+[22.09.21 14:00:23] angelo: I also wrote Rock, but he redirected to Dima
+[22.09.21 14:00:26] angelo: Dimetrius
+[22.09.21 14:04:46] elijah: Don't worry about it) When it works, run it please. Today, tomorrow, the day after tomorrow - in principle, whatever.
+[22.09.21 14:05:09] angelo: ok
+[22.09.21 14:05:13] angelo: I'll kick Dima
+[22.09.21 14:05:19] angelo: I got it.
+[22.09.21 14:15:12] elijah: we can kick together.)
+[22.09.21 14:15:45] angelo: not yet
+[22.09.21 14:15:59] angelo: I'll whistle if anything happens]
+[22.09.21 14:16:13] elijah: yeah)
+[23.09.21 15:19:45] elijah: hi, bro)))
+[23.09.21 15:19:55] angelo: hello!)
+[23.09.21 15:19:58] elijah: Did admins fix it?
+[23.09.21 15:20:00] angelo: no news
+[9/23/221 15:20:02] angelo: Nope.
+[23.09.21 15:20:05] angelo: Dima's gone
+[9/23/221 15:20:27] elijah: Dimaaaaa!!!! Where did he disappear to????))
+[9/23/221 15:20:37] elijah: sad((!)
+[23.09.21 15:20:53] elijah: I'll hope and hope)
+[23.09.21 15:20:55] angelo: yeah.
+[23.09.21 15:21:01] angelo: wrote again Rocco
+[23.09.21 15:21:10] angelo: hit them with a stick
+[23.09.21 15:21:17] angelo: but not too hard
+[23.09.21 15:21:25] elijah: ))))
+[24.09.21 15:34:48] angelo: hello Alesha
+[24.09.21 15:34:57] angelo: still relevant there ?)
+[24.09.21 15:35:09] angelo: Elijah = Alesha
+[24.09.21 15:35:10] angelo: =)
+[24.09.21 15:42:49] elijah: ahah, alesha)
+[24.09.21 15:42:53] elijah: Privet
+[24.09.21 15:43:09] elijah: and there are results?
+[24.09.21 15:43:33] angelo: let me check
+[24.09.21 16:00:19] angelo: you to what?
+[24.09.21 16:00:25] angelo: and in general you are not burning today as I understand ?
+[24.09.21 16:31:58] elijah: I'll be another hour, hour and a half
+[24.09.21 16:32:01] elijah: not burning)
+[24.09.21 16:32:11] angelo: no time
+[24.09.21 16:32:13] elijah: did you update?
+[24.09.21 16:32:18] angelo: Yup
+[24.09.21 16:32:22] elijah: have a nice weekend)))
+[24.09.21 16:32:25] angelo: looking at the 21st
+[24.09.21 16:32:32] angelo: you too ))
+[24.09.21 16:32:39] angelo: ran to his wife for wine]
+[24.09.21 16:33:30] angelo: everything will be ready by Mon!!!
+[24.09.21 16:33:30] angelo: will do tomorrow
+[24.09.21 16:33:30] angelo: sure
+[24.09.21 16:33:30] angelo: or maybe I'll do it now
+[24.09.21 16:37:16] elijah: I'm in no hurry. Thanks)
+[27.09.21 07:38:39] angelo: hi !
+[27.09.21 07:38:50] angelo: there is a mess with TrendMicro
+[27.09.21 07:38:56] angelo: I'll make him do it
+[27.09.21 07:39:03] angelo: no internet on the machine
+[27.09.21 07:46:34] elijah: Hi!
+[27.09.21 07:46:40] elijah: ))))) and (((((
+[27.09.21 07:46:46] elijah: one or the other.)
+[27.09.21 07:46:58] angelo: yeah
+[27.09.21 07:47:11] angelo: well, I gotta get the guys to do it
+[27.09.21 07:47:21] angelo: i don't get it, nobody uses farms (
+[27.09.21 07:47:28] angelo: you and i are the only ones who need
+[27.09.21 07:47:54] elijah: maybe micro trend is not so popular
+[27.09.21 07:48:28] angelo: maybe so
+[27.09.21 07:48:54] angelo: but it doesn't make me feel better
+[27.09.21 07:48:55] elijah: keep waiting))
+[27.09.21 07:49:08] angelo: sorry bro
+[27.09.21 07:49:38] elijah: what's your problem?) So thanks for taking all the heat))
+[27.09.21 07:49:51] elijah: now you're kicking, now you're throwing clogs.)
+[27.09.21 07:52:11] angelo: i'm used to it )) it's called - magic pussy kicking )
+[27.09.21 07:52:19] angelo: we can't do without it ))))))
+[27.09.21 07:52:45] elijah: )))
+[20.12.21 12:59:34] elijah: Hi!
+[20.12.21 12:59:42] elijah: Let's swap contacts!
+[20.12.21 13:02:36] angelo: I could've been a cfc.
+[20.12.21 13:04:07] angel: wait for angel
+[20.12.21 13:04:59] elijah: I see an angel.)
+[20.12.21 13:07:05] angelo: ))

