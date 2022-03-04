@@ -1,0 +1,1164 @@
+[17.08.21 15:47:18] manuel: Hi.
+[17.08.21 17:35:42] nick: hi.
+[17.08.21 17:36:37] manuel: Francis said you'd be an extra tester.
+[17.08.21 17:36:39] manuel: Yeah?
+[17.08.21 17:36:52] nick: yes, I'll have to train
+[17.08.21 17:37:37] manuel: Look, now you have to test the BC. Team lead, who does BC - collin is on vacation this week and next.
+[17.08.21 17:38:01] manuel: I'll give you a little introduction and then join his team.
+[17.08.21 17:38:08] nick: ok.
+[17.08.21 17:38:59] manuel: Tell me, how's your computer, resources? I need to put in a couple of vm's. Or work on office virtual machines, but they are slow...
+[17.08.21 17:39:32] nick: not so good on resources.
+[17.08.21 17:39:59] manuel: You'd need 1 core and 2 GB of memory
+[17.08.21 17:40:04] manuel: 1 vm
+[17.08.21 17:41:30] nick: my laptop is weak, sometimes lags by itself)
+[17.08.21 17:42:00] manuel: we'll make you virtual machines on our server.
+[17.08.21 17:42:48] manuel: The ideas in general are simple to test. there are certain algorithms and testing scripts.
+[17.08.21 17:43:23] manuel: You just start a file, dll or .exe, check the workflow and check the output to the admin panel.
+[17.08.21 17:43:38] manuel: In short
+[17.08.21 17:43:43] nick: i think so. is this a test for av?
+[17.08.21 17:43:46] nick: where does it stink?
+[17.08.21 17:44:11] manuel: Yes and see if and when he has a detection at startup and what kind of detection
+[17.08.21 17:44:20] manuel: There will be detailed manuals how and what to do.
+[17.08.21 17:44:29] nick: ok
+[17.08.21 17:44:46] nick: maybe something to read?
+[17.08.21 17:45:08] manuel: if you have a detec-transfer for rework, if not and all knocks fine - give to client in rocket or in toad
+[17.08.21 17:45:23] manuel: let me send you the manuals tomorrow
+[17.08.21 17:45:31] nick: ok.
+[17.08.21 17:45:35] nick: thanks.
+[18.08.21 15:09:28] manuel: hi.
+[18.08.21 15:09:41] manuel: here's a selection of docs to review, no collin yet
+[18.08.21 15:09:43] manuel: ffdFDGFEG#$%#%#TG#T3t234y24g24TG
+https://privatlab.com/s/v/R2JknGryzaiay8MBJLJQ
+[18.08.21 15:26:15] nick: got it, thanks
+[30.08.21 09:56:38] manuel: Hi.
+[30.08.21 11:08:32] manuel: Hi.
+[30.08.21 15:03:07] manuel: Answer me, please.
+[30.08.21 15:06:36] manuel: Answer me, please.
+[31.08.21 07:23:41] nick: hi.
+[31.08.21 07:23:59] nick: in position.
+[31.08.21 07:42:43] manuel: Hi.
+[31.08.21 07:55:54] nick: there were internet problems yesterday.
+[31.08.21 07:57:04] manuel: Great!
+[31.08.21 07:57:31] manuel: Please, write to collin, he is your team leader for BC testing. He will bring you up to speed. He will tell you what to check and how to do it.
+[31.08.21 07:57:44] nick: ok
+[01.09.21 16:30:40] manuel: Hi.
+[01.09.21 16:32:44] nick: hi
+[01.09.21 16:34:20] manuel: tell me, do you have an account on our toad?
+[01.09.21 16:34:28] nick: no
+[01.09.21 16:34:31] nick: only here
+[01.09.21 16:34:44] manuel: Got it.
+[01.09.21 16:34:48] nick: ok.
+[01.09.21 16:34:56] nick: I need more virtual machines
+[01.09.21 16:35:10] manuel: Yeah.
+[01.09.21 16:35:14] nick: collin:have you decided with virtual machines for tests?
+[01.09.21 16:35:15] manuel:What os?
+[01.09.21 16:35:58] nick: I don't know which ones you need for the tests
+[01.09.21 16:36:23] manuel: We'll do it.
+[02.09.21 21 08:08:58] manuel: Hi.
+[02.09.21 08:09:11] manuel: did collin tell you which axes you need?
+[02.09.21 08:55:19] nick: win10 x64 Pro,
+en,
+no cis languages in the keyboard layouts and interface locale,
+machines should be raised from clean original images (not "builds"),
+all latest updates must be installed,
+there should be an archiver (7z or winrar),
+there must be a Chrome browser,
+it must be possible to undo (snapshot back to the original state) after each test,
+Must be a correctly set system time, preferably a time synchronization over the Internet.
+[02.09.21 08:55:24] nick: hi
+[02.09.21 08:55:45] manuel: Got it. I'll write to rocco, he'll do it.
+[02.09.21 08:55:55] nick: ok thanks.
+[02.09.21 13:11:03] nick: 1:09 PM
+preferably a VPN or sops, so you don't expose your real ipi
+the service apn may be given by ruben
+prolong it for a month, then renew it at his place
+1:09 PM
+ok
+1:10 PM
+ask Manuel, maybe he will tell you something useful about VPN
+[02.09.21 13:11:41] manuel: Yes. I also use the vpn he gave me.
+[02.09.21 13:11:59] nick: okay. he's not here yet
+[02.09.21 13:12:06] manuel: Yeah.
+[07.09.21 08:10:22] nick: ``
+ text manuel - he said he'll give you some stuff on the basics of testing, work through the basics with him
+```
+[07.09.21 08:10:26] nick: hi
+[07.09.21 08:10:32] manuel: ok
+[07.09.21 08:13:32] nick: ``
+8:12 AM
+also ask him - what software on the test machines may be needed to simplify the process `
+[07.09.21 08:14:11] manuel: I'll think of a way to give you everything
+[07.09.21 08:14:20] manuel: I'll let you know within the hour
+[07.09.21 08:14:26] nick: okay
+[07.09.21 11:51:56] manuel: Bro, tell me, what's your problem?
+[07.09.21 11:52:49] manuel: Bro, tell me, what's your problem?
+[07.09.21 11:52:55] manuel: What's wrong with the BC test?
+[07.09.21 12:00:38] nick: just everything from scratch, new to me. now i downloaded the file on the test server and disabled Cloud-delivered protection and automatic sample submission and logged into BC panel.
+[07.09.21 12:01:09] manuel: Yeah, that's right
+[07.09.21 12:01:11] nick: collin said to get more tutorials from you
+[07.09.21 12:01:20] manuel: Ok I will.
+[07.09.21 12:01:33] manuel: It's really nothing complicated. You just start BC and wait for bouncing.
+[07.09.21 12:01:39] nick: this is my first time, I have no idea how to rollback my settings.
+[07.09.21 12:01:46] manuel: And check his fix - restart and check for malfunction
+[07.09.21 12:02:17] manuel: Yeah, put yourself a process explorer
+[07.09.21 12:02:33] manuel: To check your processes
+[07.09.21 12:04:36] nick: ok
+[07.09.21 12:13:05] manuel: You never used Virtualbox before?
+[07.09.21 12:13:30] nick: no
+[07.09.21 12:14:24] manuel: Did they give you access to the vm server itself?
+[07.09.21 12:14:57] nick: I have two access to the test servers
+[07.09.21 12:15:16] nick: I'm running process explorer on one of them now
+[07.09.21 12:15:29] nick: 7zip, Firefox
+[07.09.21 12:16:46] manuel: Not that for vm
+[07.09.21 12:17:17] manuel: ``
+ttps://162.244.82.215/phpvirtualbox/
+
+```
+[07.09.21 12:17:20] manuel: You gave it here?
+[07.09.21 12:17:27] nick: no
+[07.09.21 12:17:41] manuel: ``
+admin
+greendagrey12
+```
+[07.09.21 12:17:53] nick: `` 162.244.82.215:31090
+[07.09.21 12:17:58] nick: They gave me this.
+[07.09.21 12:18:46] nick: got access
+[07.09.21 12:18:49] manuel: Yeah.
+[07.09.21 12:19:03] manuel: Now you have to find your cars on the vm server
+[07.09.21 12:19:10] manuel: Most likely at the bottom of the vm list
+[07.09.21 12:19:44] nick: is it through tor?
+[07.09.21 12:22:52] nick: yeah, there are 2 machines at the bottom
+[07.09.21 12:23:27] nick: can you teach me how to snapshot?
+[07.09.21 12:24:04] manuel: Yeah, I saw 2 of yours at the bottom
+[07.09.21 12:24:09] manuel: they're called nick and something
+[07.09.21 12:24:22] nick: and nick2
+[07.09.21 12:24:48] nick: opened process exp, you can see
+[07.09.21 12:24:49] manuel: Top left, our snapshots button
+[07.09.21 12:24:53] nick: but what to do with it
+[07.09.21 12:25:24] nick: the right spapshot1 button I have
+[07.09.21 12:25:32] manuel: Ask Koljan what process is running
+[07.09.21 12:25:40] manuel: And look for him there
+[07.09.21 12:25:55] nick: ok, who's Kolyan?
+[07.09.21 12:26:07] nick: And then what to do with the process
+[07.09.21 12:26:43] manuel: collin
+[07.09.21 12:26:51] nick: okay.
+[07.09.21 12:27:21] manuel: When process appears in process explorer it means pc pfgecnbkcz
+[07.09.21 12:27:29] manuel: Started and working
+[07.09.21 12:27:39] nick: ok
+[07.09.21 12:27:48] nick: I have NEW button at the top left
+[07.09.21 12:28:35] manuel: If it's on the top left, don't use it
+[07.09.21 12:28:39] manuel: You create it
+[07.09.21 12:29:15] manuel: The key point. Snapshot should be created only on a clean machine. Before running the working files.
+[07.09.21 12:29:23] manuel: There is 1 clean snapshot
+[07.09.21 12:29:27] nick: ok
+[07.09.21 12:29:57] nick: snapping state(1)
+[07.09.21 12:30:15] manuel: In the morning, when you start work, first you update vm to the latest updates of the windup and defender. You shut it down. And only then you make a new snapshot.
+[07.09.21 12:30:23] nick: ctrl statechanged)
+[07.09.21 12:30:48] manuel: yes it means that vm is different from snapshot state
+[07.09.21 12:31:40] nick: you have to upload the last snapshot first?
+[07.09.21 12:32:20] nick: theoretically, i should just take a snapshot. then test the file. then roll back to the last snapshot
+[07.09.21 12:32:21] manuel: Yes. Load the last clean one. Update vm completely shut down and do a new snapshot
+[07.09.21 12:33:14] nick: two questions. how do i take a snapshot now. and how do i check if everything is set up and ready on the machine
+[07.09.21 12:34:28] manuel: no
+[07.09.21 12:34:36] manuel: because you are already working on vm
+[07.09.21 12:34:40] manuel: and you're running a bk
+[07.09.21 12:35:07] manuel: if you take a snap, it will be carried over in time and the snap will be dirty
+[07.09.21 12:35:18] nick: I haven't run the file yet
+[07.09.21 12:35:34] nick: I'm just setting it up now
+[07.09.21 12:36:10] manuel: Okay.
+[07.09.21 12:36:18] manuel: update to the latest
+[07.09.21 12:36:51] nick: i put programs here, configured how i understand firefox, how to snapshot?
+[07.09.21 12:37:01] manuel: you updated?
+[07.09.21 12:37:08] nick: no
+[07.09.21 12:37:12] manuel: I have to do
+[07.09.21 12:37:29] nick: Windows Defender and OS itself?
+[07.09.21 12:37:33] manuel: yes.
+[07.09.21 12:37:39] manuel: start with OS
+[07.09.21 12:37:52] manuel: it usually updates def databases automatically
+[07.09.21 13:08:09] nick: i think i rolled it, does winds defender update in virus and treat protection?
+[07.09.21 13:08:50] manuel: lf
+[07.09.21 13:08:52] manuel: Yes
+[07.09.21 13:08:57] nick: jr
+[07.09.21 13:08:59] nick: ok
+[07.09.21 13:08:59] manuel: Did he ask you to reboot?
+[07.09.21 13:09:05] nick: no
+[07.09.21 13:09:32] manuel: okay.
+[07.09.21 13:09:48] nick: how do I take a snapshot now?
+[07.09.21 13:10:41] manuel: turn off vm like any other shutdown with startup - shutdown
+[07.09.21 13:10:52] manuel: and then in the pxp virtual box
+[07.09.21 13:13:22] nick: okay, shut it down
+[07.09.21 13:13:32] nick: I don't see a snapshot button
+[07.09.21 13:13:33] manuel: on the snapshot tab
+[07.09.21 13:14:02] manuel: Left click on Courant Stage
+[07.09.21 13:14:24] manuel: And you'll see camera icon above - take a snapshot
+[07.09.21 13:14:27] manuel: Click on it
+[07.09.21 13:15:29] nick: will it overwrite the new one, or will it update the one you have?
+[07.09.21 13:16:01] manuel: the new one will
+[07.09.21 13:16:12] nick: did
+[07.09.21 13:16:36] manuel: great
+[07.09.21 13:16:54] nick: just make sure I got everything just right, nothing is missing there
+[07.09.21 13:16:56] manuel: Now when you work, you have to restore OS state from the snapshot
+[07.09.21 13:17:00] manuel: the last one
+[07.09.21 13:20:08] manuel: To do it, you choose a snapshot and the restore snapshot button appears to the right of the camera button
+[07.09.21 13:20:43] manuel: There will be a window in which you have to uncheck, otherwise when you restore the snap will create a new snap with the current state of the OS
+[07.09.21 13:21:08] manuel: and then you have to press Start button on the upper left to start it
+[07.09.21 13:21:59] nick: areyou sure you want to restore ?
+[07.09.21 13:22:15] nick: restore/cancel , no checkmark
+[07.09.21 13:24:18] manuel: it's because your OS state hasn't changed since the snapshot was made. but when you get a different OS state, it will show up
+[07.09.21 13:25:05] nick: ok, so now i start vm, and i check for a file?
+[07.09.21 13:26:30] manuel: yes.
+[07.09.21 14:05:06] nick: in admin look at the operator in the stack? and run the file just open it with left button?
+[07.09.21 14:05:24] nick: there are two files named yes and no, which one to run?
+[07.09.21 14:05:46] manuel: Sec
+[07.09.21 14:07:28] manuel: In the admin area there are tabs on the left Botsws, Honeypots Testbots and Animportant
+[07.09.21 14:07:36] manuel: that's where the bot from the test machine
+[07.09.21 14:08:43] manuel: usually tets bots
+[07.09.21 14:08:50] manuel: search by yapi
+[07.09.21 14:08:51] manuel: 162.244.82.215
+[07.09.21 14:08:57] manuel: test ipi
+[07.09.21 14:09:10] nick: ok
+[07.09.21 14:09:21] manuel: api field at the top of one of the four tabs
+[07.09.21 14:09:21] nick: that means he knocked it down?
+[07.09.21 14:09:30] manuel: you put ipi there and press inter
+[07.09.21 14:09:40] manuel: and it selects by this ipi
+[07.09.21 14:10:32] nick: and just open the file with the left button?
+[07.09.21 14:10:41] manuel: what file?
+[07.09.21 14:10:44] manuel: is it ec or dll?
+[07.09.21 14:11:39] nick: no_dll
+yes_dll
+[07.09.21 14:12:11] nick: buffer not working on test machine
+[07.09.21 14:12:23] nick: how to copy info
+[07.09.21 14:12:24] manuel: yeah it's a problem.
+[07.09.21 14:12:27] manuel: with buffer
+[07.09.21 14:12:39] manuel: we download from file sharing
+[07.09.21 14:12:48] manuel: privatlab.com
+[07.09.21 14:12:52] nick: you link manually?
+[07.09.21 14:12:55] manuel: yes
+[07.09.21 14:12:58] nick: type?
+[07.09.21 14:13:00] nick: ok.
+[07.09.21 14:13:02] manuel: you type it in manually
+[07.09.21 14:13:08] nick: so which one and how to run
+[07.09.21 14:13:28] manuel: what's the full name?
+[07.09.21 14:14:50] nick: I_dll-rgsv_64_p2_29_v67_06_09_21_logs_no.dll
+[07.09.21 14:15:14] nick: *_yes.dll
+[07.09.21 14:15:27] manuel: but logs usually check.
+[07.09.21 14:15:34] manuel: that means the build without logs
+[07.09.21 14:15:54] manuel: if something's not working or knocking, we launch with logs and pass them to coder - cryptor
+[07.09.21 14:16:27] nick: ok/ just click on it?
+[07.09.21 14:16:37] manuel: no
+[07.09.21 14:16:43] manuel: do you know how to run a dll?
+[07.09.21 14:17:13] nick: no
+[07.09.21 14:17:43] manuel: ``
+https://ru.wikihow.com/%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D1%8C-DLL%E2%80%93%D1%84%D0%B0%D0%B9%D0%BB%D1%8B
+
+```
+[07.09.21 14:17:47] manuel: Look at this.
+[07.09.21 14:17:55] nick: Okay.
+[07.09.21 14:17:56] manuel: Write me after you read it.
+[07.09.21 14:37:26] nick: win+R> cmd, then I type in the path
+[07.09.21 14:39:13] manuel: yes
+[07.09.21 14:39:27] manuel: and then file name
+[07.09.21 14:40:09] manuel: what dll entry point do you have?
+[07.09.21 14:40:44] manuel: did he tell you about entry point when he gave you for test?
+[07.09.21 14:41:10] nick: dll_regsvr-Dllmain, DllRegisterServer
+[07.09.21 14:41:20] manuel: Watch this.
+[07.09.21 14:41:51] manuel: when you copy the file to VM and unzip it
+[07.09.21 14:42:25] manuel: you can just copy the path to the folder where you unzipped the file
+[07.09.21 14:43:08] nick: i did it that way. but i tried to run it from the command line and got an error
+[07.09.21 14:43:23] manuel: what kind of error?
+[07.09.21 14:47:10] nick: this file does not have an apposiated with it for performing this action. please install
+an app or, if one is already installed, create an assosiation in the Default app setting page
+[07.09.21 14:47:19] manuel: strange
+[07.09.21 14:47:23] manuel: how do I start it?
+[07.09.21 14:47:45] nick: at the command line, enter path to unpack the file
+[07.09.21 14:47:55] nick: I don't understand about the entry point.
+[07.09.21 14:47:55] manuel: how did you enter?
+[07.09.21 14:48:09] manuel: there are 2 ways to start
+[07.09.21 14:48:26] manuel: either you have to go to the directory where you put the dll and run it from the command line
+[07.09.21 14:48:36] manuel: or you can run dll with full path
+[07.09.21 14:50:14] manuel: okay. let's try to get into the vm where you work to show what and how, if it supports concurrent operation
+[07.09.21 14:51:35] manuel: you can't.
+[07.09.21 14:53:03] nick: okay. i'm in dll_regsrv_32 derrickory now
+[07.09.21 14:53:42] nick: now run *name*?
+[07.09.21 14:54:27] manuel: nope
+[07.09.21 14:54:34] manuel: run command line
+[07.09.21 14:54:43] manuel: and then run it
+[07.09.21 14:55:12] manuel: ``
+https://www.youtube.com/watch?v=LPSY4DNrLrw
+```
+[07.09.21 14:55:16] manuel: That's more clear
+[07.09.21 14:55:52] manuel: ``The 1st and 2nd way is ours
+[07.09.21 14:56:13] manuel: Only you have to add path and file and specify entry point
+[07.09.21 14:56:43] nick: with a space?
+[07.09.21 14:56:43] manuel: rundll32 I_dll-rgsv_64_p2_29_v67_06_09_21_logs_no.dll,DllRegisterServer
+[07.09.21 14:57:11] manuel: or regsvr32 I_dll-rgsv_64_p2_29_v67_06_09_21_logs_no.dll
+[07.09.21 14:57:46] manuel: regsvr32 works only if entry point is DllRegisterServer
+[07.09.21 14:58:21] manuel: Only need full path to dll file.
+[07.09.21 14:58:36] nick: there are 6 lines with path to file
+[07.09.21 14:58:59] manuel: rundll32 c:/user/downloads/I_dll-rgsv_64_p2_29_v67_06_09_21_logs_no.dll,DllRegisterServer
+[07.09.21 14:59:04] manuel: Xnjnj nbgj nfrujuj
+[07.09.21 14:59:09] manuel: Something like that
+[07.09.21 14:59:18] manuel: it depends on the directory path where your file is stored
+[07.09.21 14:59:36] nick: without a space? I wrote with a space after the comma
+[07.09.21 14:59:47] manuel: space yes
+[07.09.21 14:59:57] manuel: no space after the comma
+[07.09.21 15:00:12] manuel: the path with rundll32 with:/ there is a space
+[07.09.21 15:03:09] nick: still an error
+[07.09.21 15:03:29] nick: you can check it, everything is open on it
+[07.09.21 15:08:38] manuel: go away for now
+[07.09.21 15:09:10] nick: 162.244.82.215:31090
+[07.09.21 15:09:15] nick: out
+[07.09.21 15:11:16] manuel: now
+[07.09.21 15:17:09] manuel: recorded you there video of how to start with regsvr32 entry point
+[07.09.21 15:17:18] manuel: Go look in your browser
+[07.09.21 15:33:06] nick: the video has such lags that I can't make out anything,
+i put in regsrvr32 the i_dll-rgsv_64_p2_29_v67_06_09_21_logs_no.dll,DllRegisterServer
+[07.09.21 15:35:34] manuel: no look again
+[07.09.21 15:35:40] manuel: everything is on the video
+[07.09.21 15:36:23] manuel: save it on your computer
+[07.09.21 15:45:00] manuel: How'd it go?
+[07.09.21 15:45:56] nick: regsrvr32 I_dll-rgsv_64_p2_29_v67_06_09_21_logs_no.dll
+[07.09.21 15:46:06] nick: I only see that in videos
+[07.09.21 15:46:37] nick: I think ip is already on in the panel
+[07.09.21 15:46:51] nick: so you already started it ?
+[07.09.21 15:47:22] manuel: lf
+[07.09.21 15:47:23] manuel: yes
+[07.09.21 15:47:23] manuel: he first went to the path where the file was and then ran it
+[07.09.21 15:49:03] nick: i don't get it, cd path - go to the directory where the file is stored. and run - enter regsrvr space space name of the file
+[07.09.21 15:49:20] nick: regsrvr32*
+[07.09.21 15:49:58] manuel: yes
+[07.09.21 15:50:01] manuel: yes
+[07.09.21 15:50:32] manuel: if another entry point you have to type rundll32 dll.dll,Njxrfd[jlf
+[07.09.21 15:50:46] manuel: rundll32 dll.dll,Entry Point
+[07.09.21 15:51:21] nick: nothing clear about the launch yet
+[07.09.21 15:52:23] manuel: what's unclear?
+[07.09.21 15:55:03] nick: prescribe entry point.
+entry point dll:
+dll_regsvr32 - DllMain, DllRegisterServer,
+we entered the path to the file
+[07.09.21 15:55:50] nick: we entered regsvr32 without anything the pathname space
+[07.09.21 15:56:23] manuel: That's right
+[07.09.21 15:56:23] manuel: that's what started the dll
+[07.09.21 15:56:31] nick: why not dll_regsvr32 pathfail
+[07.09.21 15:56:39] nick: where did dll go
+[07.09.21 15:56:46] manuel: because it's that kind of launch
+[07.09.21 15:56:57] manuel: Launch algorithm
+[07.09.21 15:57:23] manuel: 1. Start the command line
+2. Go to folder where dll is
+3. Run dll
+[07.09.21 15:57:43] nick: ok. i'll try to restart it from snapshot.
+about the other kind of launch, i don't understand it yet.
+[07.09.21 15:58:02] manuel: there are several runs
+[07.09.21 15:58:22] manuel: there are different entry points - arguments to run dll
+[07.09.21 15:58:31] manuel: with our entry point runs regsvr32 dll.dll
+[07.09.21 15:58:49] manuel: with the other entry point would be rundll32 dll.dll,Entry Point
+[07.09.21 16:00:57] nick: for example if you take this file, it will be like this ?
+путь/rundll32 I_dll-rgsv_64_p2_29_v67_06_09_21_logs_no.dll,DllRegisterServer
+[07.09.21 16:02:32] manuel: no
+[07.09.21 16:02:59] manuel: rundll32 dll path,DllRegisterServer
+[07.09.21 16:03:37] nick: what's the filename?
+[07.09.21 16:04:25] manuel: Yup dll path with filename
+[07.09.21 16:05:24] nick: don't pay attention to the fact that we are in the directory of the file? I just thought that if we are already there, then you don't have to rewrite the path
+[07.09.21 16:06:57] manuel: djn ghfdbkmyj!
+[07.09.21 16:07:00] manuel: Right!
+[07.09.21 16:07:22] manuel: When in the directory with the dll you don't need the path anymore
+[07.09.21 16:07:23] manuel: just the name of the dll
+[07.09.21 16:10:04] nick: thanks, sorry for so many questions, everything is new
+[07.09.21 16:10:48] manuel: It's ok, bro. Ask as many questions as you can. To get up to speed.
+[07.09.21 16:12:13] nick: okay.
+[07.09.21 16:12:42] nick: now, if i take a saved snapshot, will the file stop spinning?
+[07.09.21 16:12:52] nick: and then I can restart
+[07.09.21 16:13:23] manuel: Lf/
+[07.09.21 16:13:30] manuel: Yeah. Restore from snapshot
+[07.09.21 16:14:18] nick: do you have to shut down your machine now?
+[07.09.21 16:15:24] manuel: lf
+[07.09.21 16:15:24] manuel: Yes
+[07.09.21 16:18:39] nick: ok, reset snapshot. i'll check when it stops knocking out
+[07.09.21 16:20:48] manuel: jr.
+[07.09.21 16:20:50] manuel: Okay.
+[07.09.21 16:20:59] manuel: You don't have to wait for it to stop
+[07.09.21 16:21:44] nick: Well, while ip is still lit in the panel
+[07.09.21 16:54:25] nick: when you type this command, nothing happens? I just got the following input line without any notifications
+[07.09.21 16:58:01] manuel: Nothing happens
+[07.09.21 16:58:11] manuel: but sometimes you get a window that everything is done
+[07.09.21 16:58:18] manuel: but rarely
+[07.09.21 16:58:45] nick: waiting for bot to show up on line
+[07.09.21 16:59:39] manuel: ok
+[07.09.21 17:08:18] nick: online
+[07.09.21 17:08:23] nick: it's right
+[07.09.21 17:12:08] manuel: ok1
+[28.09.21 10:40:20] manuel: Hi.
+[28.09.21 10:40:28] manuel: How are you doing? Everything working out?
+[28.09.21 10:40:58] manuel: Hi.
+How you doing? How's it going?
+[28.09.21 10:41:38] nick: Hi.
+[28.09.21 10:41:42] nick: I think so.
+[28.09.21 10:42:05] nick: collin gives me all the details with the manual
+[28.09.21 10:42:57] manuel: Okay. I want to ask you to reset me every night after you've done all the statistics of the issued crypts. What group and how many issued. I report to a higher authority.
+[28.09.21 10:43:12] nick: ok
+[28.09.21 10:44:25] manuel: How's your free time?
+[28.09.21 10:45:26] nick: when I'm doing crypto, almost everything is busy) now I haven't written anything yet
+[28.09.21 10:47:12] manuel: I'll let you know about another BK project.
+[28.09.21 10:47:21] manuel: This is in addition to BC testing
+[28.09.21 10:47:35] nick: ok
+[28.09.21 11:11:10] nick: can you tell me who gave me ipn? didn't write it down, it expires in a week
+[28.09.21 11:30:18] manuel: I'm on the VPN
+[28.09.21 11:33:43] nick: thanks.
+[28.09.21 16:42:31] nick: dylon g4 crypt dll
+[28.09.21 16:43:25] manuel: how many crypts?
+[28.09.21 16:43:36] nick: 1
+[28.09.21 16:44:08] manuel: got it. send me daily info on how many crypts you got.
+[28.09.21 16:44:39] nick: ok
+[29.09.21 17:09:51] nick: hi!
+[29.09.21 17:09:59] nick: 2 crypts given out
+[29.09.21 17:10:13] manuel: Hello. Tell me what group and how did you crypt?
+[29.09.21 17:11:36] nick: group 4 , authcrypts all with detective, asked stuffy
+fat1 , the same, asked basil, he didn't have time, poured sam, but the first gave also stuffy
+[29.09.21 17:12:37] manuel: Both crypts are staphy right?
+[29.09.21 17:12:40] nick: lf
+[29.09.21 17:12:42] nick: da
+[29.09.21 17:12:47] manuel: ok thanks.)
+[29.09.21 17:12:51] nick: gj;
+[29.09.21 17:12:55] nick: poj.
+[30.09.21 09:27:35] nick: hi!
+[30.09.21 09:27:42] nick: can i have access to dincheck?
+[30.09.21 09:27:58] manuel: hi. Repeat that, please.
+[30.09.21 09:28:05] nick: hi!
+can i have access to dinchek?
+[30.09.21 09:28:15] manuel: Yes now
+[30.09.21 09:28:39] manuel: ``
+https://dyncheck.com/
+benalen@exploit.im
+DH*&HKDbs*&TGLksg87whnw40utji$
+```
+[30.09.21 09:28:49] nick: ``Thank you!
+[30.09.21 09:29:05] manuel: ``
+https://avcheck.net
+benalen
+DH*&HKDbs*&TGLksg87whnw40utji$
+```
+[30.09.21 09:29:09] manuel: ``it's avcek
+[30.09.21 09:29:29] nick: I have enough avcek for now
+[30.09.21 09:29:33] manuel: In dincek when you make a can
+[30.09.21 09:29:48] manuel: There's an autoclave in the database
+[30.09.21 09:30:09] nick: i need to run crypto now, clean or not
+[30.09.21 09:30:29] nick: i login to avcek?
+[30.09.21 09:30:42] manuel: better din check
+[30.09.21 09:30:53] manuel: you don't have a requirement to check right on the avcek?
+[30.09.21 09:30:53] nick: ok. and what settings to choose
+[30.09.21 09:31:01] nick: that's just me
+[30.09.21 09:31:15] nick: just for quick check if needed
+[30.09.21 09:31:38] manuel: Yeah, right
+[30.09.21 09:31:42] nick: just been doing static for over 10 minutes
+[30.09.21 09:32:10] manuel: So dincek - top scan- Static AV check
+[30.09.21 09:32:34] manuel: Switch to static AV check and upload a file there and check
+[30.09.21 09:32:54] nick: selected
+[30.09.21 09:33:26] manuel: browse - load the file and when it loads - scan
+[30.09.21 09:33:40] nick: thanks!
+[30.09.21 09:34:20] manuel: please])
+[30.09.21 09:34:23] nick: Detection rate: 0/36
+[30.09.21 09:34:25] nick: nice)
+[30.09.21 09:34:41] manuel: Yep.
+[30.09.21 09:35:13] nick: well better not to abuse?
+[30.09.21 09:35:34] manuel: Yes, but if it's urgent you can do it manually
+[30.09.21 09:35:41] nick: ok
+[30.09.21 16:33:30] nick: 2 crypts today:
+g4 - autocrypt dll, running GetStatus
+crypt fat1 - crypt stuffy
+[30.09.21 16:34:30] manuel: I got it. Thank you.
+[01.10.21 16:12:17] nick: hi!
+2 crypts today:
+g4 - autocrypt.
+fat1 - autocrypt
+[01.10.21 16:12:25] manuel: hi. Spc
+[22.10.21 16:07:29] nick: hi
+[22.10.21 16:08:55] manuel: Hi.
+[22.10.21 16:09:54] nick: 21.10
+g12 - one crypt in dll with random string and renaming function "ElementID=gigi" sam
+2) g10 - one crypt in dll with renaming function "ElementID=gigi" dane
+3) g11 - 20 crypts in exe, sam
+4) g5 - 2 crypts in dll dane
+
+22.10
+g10 - one crypt in dll with renaming of function "ElementID=gigi" autocrypt
+g12 - one crypt in dll with renaming of function "ElementID=gigi" and random sam string
+ g11 - 20 crypts in exe autocrypt
+ g5 - 2 crypts in dll autocrypt
+[22.10.21 16:10:31] manuel: Great! Thank you!
+[22.10.21 16:10:37] nick: please!
+[22.10.21 16:10:43] nick: have a nice weekend!
+[22.10.21 16:11:26] manuel: You too ))
+[26.10.21 16:05:12] manuel: Hi.
+[26.10.21 16:05:37] nick: Hi.
+[26.10.21 16:06:06] manuel: It's a long time since you wrote me about cryptos.
+[26.10.21 16:06:09] manuel: Another question.
+[26.10.21 16:06:17] manuel: You're issuing group 5, right?
+[26.10.21 16:06:31] nick: I'll prepare for yesterday and today
+[26.10.21 16:06:47] nick: I got it today, g5 wasn't there
+[26.10.21 16:06:59] nick: now I get a claid I need)
+[26.10.21 16:07:11] nick: I can crypt from the build I have
+[26.10.21 16:07:14] manuel: It's okay, it's just there's a customer ordering group 5
+[26.10.21 16:07:19] nick: they didn't give it out today
+[26.10.21 16:07:49] manuel: Got it.
+[26.10.21 16:25:13] nick: Failed
+	
+	
+
+↳ l_dll_rndll_ei_64_p2_g5_v105_25_10_21_logs_no_79273_1.dll
+14 minutes ago
+	
+Failed
+	
+	
+
+↳ l_dll_rndll_ei_64_p2_g5_v105_25_10_21_logs_no_79273_2.dll
+14 minutes ago
+	
+Failed
+	
+	
+
+↳ l_dll_rndll_ei_64_p2_g5_v105_25_10_21_logs_no_79272_1.dll
+16 minutes ago
+	
+Failed
+	
+	
+
+↳ l_dll_rndll_ei_64_p2_g5_v105_25_10_21_logs_no_79272_2.dll
+16 minutes ago
+	
+Failed
+[26.10.21 16:25:26] nick: Bummer.
+[26.10.21 16:25:31] manuel: What's wrong?
+[26.10.21 16:26:20] nick: auto scripts give me an error
+[26.10.21 16:27:07] manuel: What stub?
+[26.10.21 16:28:10] nick: dll_bkcrypter10
+dll_rundll_crypter10
+[26.10.21 16:28:28] manuel: yeah write in crypters group
+[26.10.21 16:28:31] nick: those wedge on my autotest
+[26.10.21 16:29:09] manuel: this error appears
+[26.10.21 16:30:09] nick: ok
+[26.10.21 17:02:47] nick: nothing works
+[26.10.21 17:02:49] nick: what do I do?
+[26.10.21 17:04:19] manuel: Wait. I've written to the admins. They're sorting it out
+[26.10.21 17:04:56] nick: ok. 2 cricketers only replied. staphie's been gone all day. so is sam)
+[26.10.21 17:05:12] manuel: yeah, they all took off!)
+[26.10.21 17:05:17] nick: carroll's filthy, orval's got to go figure out why the autocrypt isn't working
+[26.10.21 17:14:10] manuel: Tell me, did you make a cript with line change in dll?
+[26.10.21 17:14:14] manuel: on the build machine
+[26.10.21 17:18:37] nick: no
+[26.10.21 17:18:49] nick: only manual ones
+[26.10.21 17:19:49] nick: i meant the random line
+[26.10.21 17:20:07] nick: now I did it without substitution
+[26.10.21 17:21:32] manuel: got it
+[26.10.21 17:44:21] nick: g10 1 autocrypt dll
+g4 1 autoscript dll
+6 auto in exe
+[26.10.21 17:44:33] nick: g5 2 autocrypt dll
+[26.10.21 17:44:54] manuel: is this for today?
+[26.10.21 17:47:43] nick: yesterday
+g5 2 auth scripts dll
+g4 1 autoscript dll
+[26.10.21 17:47:53] nick: yes
+[26.10.21 17:49:02] nick: tomorrow i need g12 with random string. only sam and stuffy can do it
+[26.10.21 17:49:25] manuel: no build machine?
+[26.10.21 17:49:26] nick: they weren't here all day today, and it's unclear when they'll be here tomorrow
+[26.10.21 17:49:30] manuel: Also maybe dane
+[26.10.21 17:49:37] nick: no. you need a manual there.
+[26.10.21 17:49:49] manuel: He's manual.
+[26.10.21 17:49:53] nick: I texted dane. He said he doesn't do that
+[26.10.21 17:50:01] manuel: strange
+[26.10.21 17:50:03] nick: I wrote to everyone
+[26.10.21 17:50:05] manuel: Then wait for Sam
+[26.10.21 17:50:25] nick: ok
+[29.10.21 14:51:20] manuel: Hello.
+[29.10.21 14:51:29] nick: hi
+[29.10.21 14:51:35] manuel: Please send me your crypto reports
+[29.10.21 14:51:40] manuel: Don't forget.
+[29.10.21 14:52:08] nick: yes. today i'm doing two crypto builds of 25
+[29.10.21 14:52:21] nick: sam
+[29.10.21 14:52:40] manuel: at the end of the day, as you work. And for yesterday too.
+[29.10.21 14:53:54] nick: yesterday I did g10 1 crypt, g12 2 crypt, g5 two crypt, autocrypts
+[29.10.21 14:55:17] manuel: great!
+[01.11.21 17:43:04] nick: hi!
+2 crypt g15 special assembly sam
+2 crypt of special assembly g5 Sam
+2 crypt g5 , autocrypt
+[01.11.21 17:43:22] manuel: Prviet Is this for today?
+[01.11.21 17:43:26] nick: yes
+[01.11.21 17:43:27] manuel: And for Friday?
+[01.11.21 17:45:44] nick: 2 crypta build 25
+[01.11.21 17:45:55] manuel: ++
+[01.11.21 17:45:57] manuel: rnj ltkfk&
+[01.11.21 17:46:03] manuel: Who did?
+[01.11.21 17:46:32] nick: sam
+[01.11.21 17:46:41] manuel: zcyj
+[01.11.21 17:46:43] manuel: I see.
+[16.11.21 15:44:52] nick: hi
+1) group g12 - for crypt in dll, 1 crypt with random string autocrypt stub dll_bk_crypter11
+2) g13 - for crypt in exe - 1 crypt autocrypt stabom exe_generic_crypter6
+3) group g5 - for crypt in dll, 4 crypt autocrypt by dll_bk_crypter11
+4) group g9 - for crypt in exe - 1 autocrypt with stub exe_generic_crypter6
+[16.11.21 15:45:54] manuel: Hi. Thank you.
+[16.11.21 15:46:47] nick: please.
+[17.11.21 09:22:38] manuel: Hi.
+[17.11.21 09:22:50] manuel: Are you still shopping?
+[17.11.21 09:44:58] nick: hi.
+[17.11.21 09:45:01] nick: no.
+[17.11.21 16:00:38] nick: hi.
+[11/17/21 16:00:48] manuel: +
+[17.11.21 16:00:51] nick: 17.11
+eset detection on builds g5,g12 , coder notified
+1) group g12 - for crypt in dll, 1 crypt with random string, autocrypt stub dll_bk_crypter6
+2) group g5 - 2 crypts, autocrypt by dll_bk_crypter6
+3) g13 - 1 crypt, autocrypt by dll_generic_crypter6
+4) g9 - 1 crypt, autocrypt by exe_generic_crypter6
+5) group g5 - 2 crypts, autocrypt by dll_bk_crypter6, 4 crypts in total, with 2 additional ones
+6) g4 - 1 crypt, autocrypt by dll_bk_crypter6
+[17.11.21 16:00:58] manuel: Yes.
+[17.11.21 16:01:16] nick: french didn't answer you?)
+[17.11.21 16:01:38] manuel: About what?
+[17.11.21 16:01:51] nick: I asked about salary
+[11/17/21/21 16:01:59] manuel: I already did.
+[17.11.21 16:02:17] manuel: You can still tap him on the toad mango@
+[17.11.21 16:02:33] nick: I wrote you about mine, remember?
+[17.11.21 16:02:44] manuel: Yes, I told him.
+[17.11.21 16:02:45] nick: to add if possible
+[11/17/21/221 16:02:49] manuel: Remember again.
+[17.11.21 16:02:52] nick: okay.
+[11/17/21/221 16:02:54] nick: thanks!
+[11/17/21/16:03:16] manuel: Please.)
+[11/18/21 16:43:31] nick: hi!
+[18.11.21 16:43:37] nick: dll_generic_crypter11 - detect ikarus , no clean autocrypts on generic dll->exe
+authrypt with random string most of the crypts failed
+1 of 6 crypts is built
+1) g5 - 4 crypts, authcrypt with dll_bk_crypter6
+2) g9 - 1 crypt, autocrypt by exe_generic_crypter6
+3) g13 - 1 crypt, autocrypt by exe_generic_crypter6
+4) g4 - 1 crypt , autocrypt by exe_generic_crypter6
+5) 57 - for crypt in dll, autocrypt by dll_bk_crypter6
+[18.11.21 16:46:26] manuel: +
+[18.11.21 16:46:28] manuel: thanks
+[19.11.21 16:07:33] nick: hi!
+[19.11.21 16:07:36] nick: 19.11
+autocrypt with random string gives out failed, wrote the error dane: thanks. I fixed the bug in stub BC 64. the g12 crypt is already autocrypted
+1) g5 - 4 crypts, autocrypt with exe_generic_crypter6
+2) g12 - 1 crypt with random string, autocrypt by exe_generic_crypter6
+3) g4 - 1 crypt , autocrypt by exe_generic_crypter6
+4) 57 - for crypt in dll, one crypt with random string, crypt from dane
+[19.11.21 16:08:33] manuel: ++
+[22.11.21 15:45:26] nick: hi!
+[22.11.21 15:45:40] nick: 22.11
+
+1) g5- for crypt in dll, run rundll32 file.dll,yonu - 2 crypts, autocrypt by stub dll_bk_crypter11
+2) g12- for crypt in dll, run rundll32 file.dll,gigi - 1 crypt with random string, autocrypt by dll_bk_crypter11
+3) g4 - 1 crypt , autocrypt by dll_bk_crypter11
+4) group 57 for crypt in dll, run: rundll32 file.dll,gigi - - 1 crypt with random string, crypt from Orval
+[22.11.21 15:45:42] manuel: Hi.
+[22.11.21 15:45:44] manuel: okay.
+[11/23/221 15:54:00] nick: hi!
+[11/23/221 15:54:08] nick: 23.11
+autocrypt with random string on build g4 can't be done, because there is no other ddl function besides startup. asked to add if there is a way to do it
+1) g5- for crypt in dll, run rundll32 file.dll, 2 crypt, autocrypt stub dll_bk_crypter11
+2) g12- for crypt in dll, run rundll32 file.dll,gigi - 1 crypt with random string, autocrypt by dll_bk_crypter11
+3) g4 - 1 crypt , autocrypt by dll_bk_crypter11
+4) group 57 for crypt in dll, run: rundll32 file.dll,gigi - - 1 crypt with random string, crypt by dane
+[11/23/11/21 15:54:20] nick: *dll
+[11/23/221 15:54:29] manuel: Hi. Ok
+[25.11.21 08:13:46] nick: hi!
+[25.11.21 08:14:16] nick: 24.11
+1) group g12 for crypt in dll, run: rundll32 file.dll,gigi - 1 crypt with random string, autocrypt stub dll_bk_crypter5
+2) g5 group for crypt in dll, run: rundll32 file.dll,yonu - 2 crypts, autocrypt by stub dll_bk_crypter5
+3) 1 crypt with random string of group g12, also give bash@, autocrypt with stub dll_bk_crypter5
+4) get ready g4 - 1 crypt, the same assembly as yesterday, when ready give out dylon@ , autocrypt with dll_bk_crypter11
+5) 57 - 1 crypt with random string, give out bash@ in tor-toad, crypt from dane
+6) group g5 for crypt in dll, run: rundll32 file.dll,yonu - 2 crypts, autocrypt stub dll_bk_crypter5
+[25.11.21 08:31:55] manuel: Hi. Thank you!
+[25.11.21 16:20:19] nick: 25.11
+1) g5 - 2 crypts, autocrypt stub dll_bk_crypter5 - client reported that it is not required today
+2) g12 - 1 crypt with random string, autocrypt with dll_bk_crypter5
+3) 57 - 1 crypt with random string, give bash@ in tor-toad, crypt from dane
+4) g4 - for crypt in dll, start with regsvr32, autocrypt with stub dll_bk_crypter11
+[25.11.21 16:21:29] manuel: ++
+[26.11.21 16:25:50] nick: hi!
+i only crypted g4 today, and my client did not need crypt
+[26.11.21 16:26:09] manuel: ++
+[29.11.21 16:19:36] nick: hi!
+[29.11.21 16:19:43] nick: 29.11
+
+ exe_generic_crypter6 dynamics, defender
+ exe_generic_crypter8 - all crypts failed
+ vnc module test on build g11
+ 1) group g5 for crypt in dll, run: rundll32 file.dll, 2 crypts, dll_bk_crypter5
+2) group g12 for crypt in dll, run: rundll32 file.dll,gigi - 2 crypts with a random string each, , dll_bk_crypter5
+3) group 57 for crypt in dll, run: rundll32 file.dll,gigi - 1 crypt with random string each, crypt by dane
+4) group g11 for crypt in exe - 4 crypts exe_generic_crypter8
+[29.11.21 16:20:03] manuel: Hi. Thanks
+[29.11.21 16:20:10] nick: please.
+[11/30/21 21 10:16:36] nick: hi!
+[30.11.21 10:17:01] nick: ruben will be alive today, can you tell me?
+[11/30/21 10:17:46] manuel: I don't know.
+[11/30/2011 10:17:52] manuel: It should be
+[11/30/21 16:20:50] nick: hi!
+[30.11.21 16:21:03] nick: 30.11
+ 1)g12 crypt with random string, autocrypt stub dll_bk_crypter11
+2)g10, for crypt in dll, run: rundll32 file.dll,gigi - 1 crypt with random string, autocrypt stub dll_bk_crypter11
+3)g11, 10 crypts , sam
+4)g5 dll 2 pieces with yonu launch function, autocrypt by dll_bk_crypter11
+5)g14 for crypt in exe, 1 crypt exe_generic_crypter8
+6) g7, for crypt in dll, run: rundll32 file.dll,dery, autocrypt by stub dll_bk_crypter11
+7) 57 for crypt in dll, run: rundll32 file.dll,gigi - 1 crypt with random string, crypt by dane
+8) g11, 10 crypts , Stuffy
+[30.11.21 16:24:27] manuel: ++
+[01.12.21 16:29:31] nick: hi!
+[01.12.21 16:29:34] nick: 1.12
+exe_generic_crypter6 - dynamics at unpacking archive, win def
+exe_generic_crypter8 - gives one of 5 clean crypts, avcek det
+1)+g12 crypt with random string, autocrypt with stub dll_bk_crypter11
+2)+57 for crypt in dll, run: rundll32 file.dll,gigi - 1 crypt with random string, crypt by dane
+3)+ g10, for crypt in dll, run: rundll32 file.dll,gigi - 1 crypt with random string, autocrypt by dll_bk_crypter11
+4)+g11, 10 crypts , exe_generic_crypter8
+5)+g5 dll 2 pieces with startup function yonu, autocrypt with stub dll_bk_crypter11
+6)+g14 for crypt in exe, 1 crypt exe_generic_crypter8
+[01.12.21 16:30:21] manuel: ++
+[02.12.21 16:43:00] nick: hi
+[02.12.21 16:43:02] nick: 2.12
+1)g12 crypt with a random string, dane
+2)57 for crypt in dll, run: rundll32 file.dll,gigi - 1 crypt with random-string, crypt from dane
+3)g10, for crypt in dll, run: rundll32 file.dll,gigi - 1 crypt with random string,crypt by dane
+4)g11, 10 crypts , crypt from elroy
+5)g5 dll 2 pieces with yonu launch function, crypt from dane
+6)g14 for crypt in exe, crypt from elroy
+[02.12.21 16:43:34] manuel: ++
+[03.12.21 16:16:01] nick: hi!
+[03.12.21 16:16:27] nick: 3.12
+exe_generic_crypter8 gives out of a series of 10 crypts only 3 wedges
+1)group 57, for crypt in exe - 3 crypt, exe_generic_crypter8
+2)group g11 - for crypt in exe - 10 crypts, exe_generic_crypter8
+3)group g12 - for crypt in dll, run: rundll32 file.dll,gigi - 1 crypt with random string, autocrypt stub dll_bk_crypter3
+4) group g10 - for crypt in dll, run: rundll32 file.dll,gigi - 1 crypt with random string, autocrypt by dll_bk_crypter3
+5) group g5 - for crypt in dll, run: rundll32 file.dll,yonu- 2 crypts, autocrypt by dll_bk_crypter3
+6) group g14- for crypt in exe- 1 crypt, exe_generic_crypter8
+[03.12.21 16:17:11] manuel: ++
+[06.12.21 17:00:10] nick: hi
+[06.12.21 17:00:15] nick: 6.12
+panel doesn't work, the crypto is loaded with crypto
+1)g12 - for crypt in dll, run: rundll32 file.dll,gigi -1 crypt with randomstringb Orval
+2) g5 - for crypt in dll, run: rundll32 file.dll,yonu - 2 crypts, Orval
+3) g6- for crypt in exe, 5 crypts, Orval
+4)g14- for crypt in exe, 1 crypt, Orval
+5)57 for crypt in exe- 1 crypt, Orval
+6)57 for crypt in dll- 1 crypt with random string, Orval
+7)g11 - for crypt in exe, 20 manual crypts from SAM
+[06.12.21 17:05:06] manuel: ++
+[07.12.21 15:53:24] nick: hi
+[07.12.21 15:53:29] nick: 7.12
+Auto script dll_bk_crypter3 gave a startup error , dll_bk_crypter5 knocked out
+1) g12 - for crypt in dll, run: rundll32 file.dll,gigi - 1 crypt with random string, autocrypt stub dll_bk_crypter3
+2) g5- for crypt in dll, run: rundll32 file.dll,yonu - 2 crypts, autocrypt by dll_bk_crypter5
+3) g14- for crypt in exe, prepare 1 crypt, Elroy crypt
+4) 57 - for crypt in dll, run: rundll32 file.dll,gigi - 1 crypt with random string, autocrypt by stub dll_bk_crypter5
+5)+ g11 - for crypt in exe, 20 crypts , crypt Elroy
+[07.12.21 15:54:49] manuel: thanks
+[08.12.21 16:06:18] nick: hi!
+[08.12.21 16:06:24] nick: 8.12
+1) g12 - 1 crypt with a random string, dane
+2) g5 - 2 crypts, dane
+3) g14 - 1 crypt, dane
+4)57 for crypt in dll , 1 crypt with random string, dane
+5)57 for crypt in exe 1 crypt, Orval
+6)g8, for crypt in dll, run: rundll32 file.dll,tuno,Orval
+7)57 for crypt in exe 2 crypt, Orval
+[08.12.21 16:07:18] manuel: +
+[09.12.21 16:40:10] nick: hi!
+
+9.12
+1) g12 - 1 crypt with random string, autocrypt with dll_bk_crypter5
+2) g5 - 2 crypts, autocrypt with dll_bk_crypter5 stat
+3) g14- 1 crypt, autocrypt by exe_generic_crypter3
+4) g8- 5 crypts for crypt in dll, run: rundll32 file.dll, autocrypt by dll_bk_crypter5
+5) g5 - 2 crypts, autocrypt by dll_bk_crypter5
+[09.12.21 16:41:17] manuel: ok thanks
+[09.12.21 16:41:33] nick: please!
+[10.12.21 16:14:05] nick: hi!
+[10.12.21 16:14:07] nick: 10.12
+1) g12 - 1 crypt with a random string, a crypt from dane
+2) g5 - 4 crypts, autocrypt with stub dll_bk_crypter5
+3) g14- 1 crypt, a crypt from dane
+4) g8- 5 crypts for crypt in dll, run: rundll32 file.dll, crypt from dane
+5) g6- 3 crypts, crypt from dane
+[10.12.21 16:15:13] manuel: Hi .Ok. SPY
+[10.12.21 16:15:21] nick: please!
+[12/13/21 17:25:28] nick: hi!
+[12/13/21 17:25:31] nick: 12/13.
+1) g5 - 4 crypts, autocrypt stub dll_bk_crypter3
+2) g14- 1 crypt, exe_generic_crypter6
+3) g8- 5 crypts for crypt in dll, run: rundll32 file.dll, autocrypt by stub dll_bk_crypter3
+4) g6 - 3 crypts, crypt from dane exe_generic_crypter8
+[12/13/21 17:25:53] manuel: ++
+[12/14/21 16:50:44] nick: hi!
+[14.12.21 16:50:49] nick: 14.12
+1) g5 - 4 crypts, crypt from dane
+2) g14- 1 crypt, crypt from dane
+3) g8- 5 crypts for crypt in dll, run: rundll32 file.dll, crypt by orval
+[14.12.21 16:51:01] manuel: +
+[12/15/21 16:14:07] nick: hi!
+[15.12.21 16:14:11] nick: 15.12
+1) g5 - for crypto in dll, run: rundll32 file.dll,yonu - 4 crypto - crypto Hugo
+2) g8 - for crypt in dll, run: rundll32 file.dll,urny - 5 crypts - crypt Hugo
+3) g6 - for crypt in exe - 3 crypts - crypt Elroy
+[12/15/21 16:14:48] manuel: ++
+[12/16/21 16:47:36] nick: hi!
+[12/16/21 16:47:40] nick: 16.12
+1) g5 - for crypto in dll, run: rundll32 file.dll,yonu - 4 crypto - crypto dane, stanton
+2) g8 - for crypt in dll, run: rundll32 file.dll,ferte - 5 crypts - crypt Hugo
+[12/16/21 16:47:45] manuel: ++
+[12/17/21 17:20:18] nick: hi!
+[17.12.21 17:20:28] nick: 17.12
+1) g5 - for crypto in dll, run: rundll32 file.dll,yonu - 4 crypto - Orval crypto
+2) g8 - for crypt in dll, run: rundll32 file.dll,ferte - 2 crypts - Orval
+[17.12.21 17:22:27] manuel: Hi. Thanks.
+[12/20/21 16:15:26] nick: hi!
+[20.12.21 16:15:35] nick: 20.12
+1) g5 - for crypt in dll, run: rundll32 file.dll,yonu - 2 crypt - crypt Allen
+2) g8 - for crypt in dll, run: rundll32 file.dll,reyrt - 2 crypts - crypt Allen
+3) group g7 - for crypt in dll, run: rundll32 file.dll,frete - 2 crypts, - crypt Allen
+4) group g41 - for crypt in exe - prepare 10 crypts - crypt Elroy
+[20.12.21 16:23:30] manuel: ++
+[21.12.21 17:17:43] nick: hi
+[12/21/221 17:18:38] nick: g41 build krypts didn't bounce, asked wild to check krypts too - didn't bounce. ran source - didn't bounce, ran logged, sent log to coder - no response yet
+[21.12.21 17:22:23] manuel: I see...
+[21.12.21 17:22:51] nick: what to do in this situation, client is waiting
+[21.12.21 17:22:56] nick: coder elijah
+[21.12.21 17:23:46] manuel: What's the coder saying? Knock him again.
+[21.12.21 17:24:23] nick: Knock, no answer.
+[21.12.21 17:27:40] manuel: To tell the client that we are having technical works while we cannot give out the assembly.
+[21.12.21 17:27:45] manuel: If no answer within an hour.
+[12/21/12/21 17:27:54] nick: Okay.
+[21.12.21 17:30:49] nick: 21.12
+1) g5 - for crypto in dll, run: rundll32 file.dll,yonu - 2 crypto - crypto Hugo
+2) g8 - for crypt in dll, run: rundll32 file.dll,reyrt - 2 crypts - crypt Orval
+3) group g7 - for crypt in dll, run: rundll32 file.dll,frete - 2 crypts, - crypt Hugo
+4) group g41 - for crypt in exe - prepare 10 crypts - crypt Orval, crypt ELroy - did not tap, assembly did not tap, log gave coder ELijah
+[21.12.21 17:32:56] manuel: +
+[12/22/221 17:05:28] nick: hi
+
+
+22.12
+1) g5 - for crypt in dll, run: rundll32 file.dll,yonu - 2 crypts - Orval crypt
+2) g8 - for crypt in dll, run: rundll32 file.dll,EproyAklW - 10 crypts with string - crypt Orval
+3) group g7 - for crypt in dll, run: rundll32 file.dll,frete - 2 crypts, - crypt Orval
+4) group g41 - for crypt in exe - prepare 10 crypts - crypt Elroy
+5) g13 - for crypt in dll, run: rundll32 file.dll,gerot - 2 crypts, - crypt Hugo
+6) g9 - for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts, - crypt Hugo
+[22.12.21 17:05:57] manuel: ++ cps
+[12/23/221 17:24:52] nick: hi!
+[12/23/221 17:24:56] nick: 23.12
+1) g5 - for crypto in dll, run: rundll32 file.dll,yonu - 2 crypto - crypto Hugo
+2) g8 - for crypt in dll, run: rundll32 file.dll,EproyAklW - 10 crypts with string - crypt Hugo
+3) group g7 - for crypt in dll, run: rundll32 file.dll,frete - 2 crypts, - crypt Hugo
+4) group g42 - run: rundll32 file.dll,tertu - 5 crypts with random strings - Hugo crypt
+5) g13 - for crypt in dll, run: rundll32 file.dll,gerot - 2 crypts, - Hugo crypt
+6) g9 - for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts, - crypt Hugo
+[12/23/221 17:25:18] manuel: prviet. Ok.
+[12/24/21 18:02:45] nick: hi!
+[12/24/21 18:02:47] nick: 24.12
+2) g8 - for crypt in dll, run: rundll32 file.dll,EproyAklW - 10 crypt with string-crypt Orval
+3) group g7 - for crypt in dll, run: rundll32 file.dll,frete - 2 crypts, - crypt Orval
+4) group g42 - run: rundll32 file.dll,tertu - 5 crypts with random strings - crypt Orval
+5) g13 - for crypt in dll, run: rundll32 file.dll,gerot - 2 crypts, - Orval crypt
+6) g9 - for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts, - crypt orval
+[24.12.21 18:03:00] manuel: hi ok
+[27.12.21 16:26:28] nick: hi!
+[27.12.21 16:26:31] nick: 27.12
+1) g43 - for crypto in exe - prepare 10 crypto, crypto Sam
+2) g8 - for crypt in dll, run: rundll32 file.dll,EproyAklW - 10 crypt with string-crypt Hugo
+3) group g7 - for crypt in dll, run: rundll32 file.dll,frete - 2 crypts, - crypt Hugo
+4) group g42 - run: rundll32 file.dll,tertu - 5 crypts with random strings - Hugo crypt
+5) g13 - for crypt in dll, run: rundll32 file.dll,gerot - 2 crypts, - Hugo crypt
+6) g9 - for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts, - crypt Hugo
+[27.12.21 16:27:00] manuel: Hi. OK. Thank you!
+[29.12.21 16:43:44] nick: hi!
+[12/29/221 16:43:53] nick: 12/29.
+1) g43 - for crypt in exe - prepare 10 crypts, crypt Sam
+2) g8 - for crypt in dll, run: rundll32 file.dll,EproyAklW - 10 crypt with string-crypt Hugo
+3) group g7 - for crypt in dll, run: rundll32 file.dll,frete - 2 crypts, - crypt Hugo
+4) group g42 - run: rundll32 file.dll,tertu - 5 crypts with random strings - Hugo crypt
+5) g13 - for crypt in dll, run: rundll32 file.dll,gerot - 2 crypts, - Hugo crypt
+6) g9 - for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts, - crypt Hugo
+[29.12.21 16:45:23] manuel: ok thanks
+[12/30/21 15:00:25] nick: hi!
+[12/30/21 15:00:27] nick: 30.12
+1) g43 - for crypt in exe - prepare 10 crypts, crypt sam
+2) group g7 - for crypt in dll, run: rundll32 file.dll,frete - 2 crypts, - crypt Hugo
+3) group g42 - run: rundll32 file.dll,tertu - 5 crypts with random string - crypt Orval
+4) g13 - for crypt in dll, run: rundll32 file.dll,gerot - 2 crypts, - crypt Hugo
+5) g9 - for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts, - crypt Hugo
+[30.12.21 15:08:30] manuel: Got it!
+[12/30/21 15:08:47] nick: happy holidays!
+[12/30/21 15:09:19] manuel: You too!!! All the best for you in the new year!
+[12/30/21 15:10:10] nick: thank you!
+[11.01.22 10:17:37] manuel: Hi. Tell me, did you get any cryptos yesterday?
+[11.01.22 10:20:31] nick: hi!
+[11.01.22 10:20:32] nick: no
+[11.01.22 10:22:18] manuel: Got it.
+[11.01.22 16:28:13] nick: 11.01
+1) g7 - for crypt in dll, run: rundll32 file.dll,frete - 2 cryptsdll_bk_crypter2
+2) g9 - for crypt in exe - 10 crypts, crypts from stuffy
+3) g43 - for crypt in exe - 10 crypts exe_generic_crypter8
+4) g8 - for crypt in dll, run: rundll32 file.dll,EproyAklW - 10 crypts with random string dll_bk_crypter12
+5) g42 - for crypt in dll, run: rundll32 file.dll,tertu - 5 crypts dll_bk_crypter12
+6) g13 - for crypt in dll, run: rundll32 file.dll,gerot - prepare 2 crypts dll_bk_crypter12
+[11.01.22 16:28:51] manuel: thanks
+[11.01.22 16:29:07] nick: please!
+[12.01.22 16:18:51] nick: hi!
+[12.01.22 16:18:54] nick: 12.01
+1) g7 - for crypt in dll, run: rundll32 file.dll,frete - 2 crypt, dll_rundll_crypter13
+2) g9 - for crypt in exe - 10 crypts exe_generic_crypter5
+3) g43 - for crypt in exe - 10 crypts exe_generic_crypter8
+4) g8 - for crypt in dll, run: rundll32 file.dll,EproyAklW - 10 crypts with random string, Hugo
+5) g42 - for crypt in dll, run: rundll32 file.dll,tertu - 5 crypts , Hugo
+6) g13 - for crypt in dll, run: rundll32 file.dll,gerot - 2 crypts, Hugo
+7) g9, for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts, Hugo
+[12.01.22 16:19:20] manuel: + thanks
+[12.01.22 16:19:26] nick: please
+[13.01.22 16:29:29] nick: hi!
+[13.01.22 16:29:35] nick: 13.01
+1) g9 for crypt in exe - 10 crypts exe_generic_crypter5
+2) g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts dll_rundll_crypter13
+3) g43 for crypt in exe - 10 crypts exe_generic_crypter5
+4) g7 for crypt in dll, run: rundll32 file.dll,frete - 2 crypts dll_rundll_crypter13
+5) g8 for crypt in dll, run: rundll32 file.dll,EproyAklW - 10 crypts with random string dll_rundll_crypter13
+6) g42 for crypt in dll, run: rundll32 file.dll,tertu - 5 crypts dll_rundll_crypter13
+7) g13 for crypt in dll, run: rundll32 file.dll,gerot - 2 crypts dll_rundll_crypter13
+8 ) g8 for crypt in exe - 10 crypts dll_rundll_crypter13
+[13.01.22 16:32:55] manuel: ++
+[14.01.22 15:53:45] nick: hi!
+[14.01.22 15:53:48] nick: 14.01
+1) g9 for crypt in exe - 5 crypts exe_generic_crypter5
+2) g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts dll_rundll_crypter13
+3) g43 for crypt in exe - 10 crypts exe_generic_crypter5
+4) g7 for crypt in dll, run: rundll32 file.dll,frete - 2 crypts dll_rundll_crypter13
+5) g8 for crypt in dll, run: rundll32 file.dll,EproyAklW - 10 crypts with random string dll_rundll_crypter13
+6) g42 for crypt in dll, run: rundll32 file.dll,tertu - 5 crypts dll_rundll_crypter13
+7) g13 for crypt in dll, run: rundll32 file.dll,gerot - 2 crypts dll_rundll_crypter13
+8 ) g8 for crypt in exe - 10 crypts dll_rundll_crypter13
+[14.01.22 15:54:02] manuel: thanks
+[17.01.22 16:14:53] nick: hi!
+
+17.01
+g9 for crypt in exe - 10 crypts, exe_generic_crypter5
+g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts, dll_rundll_crypter12
+g43 for crypt in exe - 10 crypts, exe_generic_crypter5
+g7 for crypt in dll, run: rundll32 file.dll,frete - 2 crypts, dll_rundll_crypter6
+g5, for crypt in dll, run: rundll32 file.dll,yonu - 2 crypts by Hugo
+[17.01.22 16:15:57] manuel: +
+[18.01.22 16:14:18] nick: hi!
+[18.01.22 16:14:22] nick: 18.01
+g9 for crypt in exe - 10 crypts, exe_generic_crypter5
+g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts from Hugo
+g43 for crypt in exe - 10 crypts, exe_generic_crypter5
+g7 for crypt in dll, run: rundll32 file.dll,frete - 2 crypts, dll_rundll_crypter6
+g5, for crypt in dll, run: rundll32 file.dll,yonu - 4 crypts from Hugo
+[18.01.22 16:14:30] manuel: ++
+[19.01.22 15:46:52] nick: hi!
+[19.01.22 15:47:09] nick: 19.01
+g9 for crypt in exe - 10 crypts, exe_generic_crypter5
+g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts Hugo
+g43 for crypt in exe - 10 crypts, exe_generic_crypter5
+g7 for crypt in dll, run: rundll32 file.dll,frete - 2 crypts, dll_rundll_crypter6
+g5, for crypt in dll, run: rundll32 file.dll,yonu - 4 crypts Hugo
+[19.01.22 15:47:44] manuel: ok
+[20.01.22 16:23:47] nick: hi!
+[20.01.22 16:24:29] nick: 20.01
+1. g9 for crypt in exe - 10 crypts , exe_generic_crypter5
+2. g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts, dll_rundll_crypter11
+3. g43 for crypt in exe - 10 crypts, exe_generic_crypter5
+4. g7 for crypt in dll, run: rundll32 file.dll,frete - 2 crypts, dll_rundll_crypter11
+5. g8 for crypt in dll, run: rundll32 file.dll,EproyAklW - 10 crypts with random string, dll_rundll_crypter12
+6. g8 for crypt to exe - 5 crypts, exe_generic_crypter5
+[20.01.22 16:24:59] manuel: ++
+[21.01.22 16:01:32] nick: hi!
+[21.01.22 16:01:36] nick: 21.01
+1. g9 for crypt in exe - 5 crypts , exe_generic_crypter5
+2. g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts, dll_rundll_crypter11
+3. g7 for crypt in dll, run: rundll32 file.dll,frete - 2 crypts, dll_rundll_crypter11
+4. g8 for crypt in dll, run: rundll32 file.dll,EproyAklW - 20 crypts with random string, dll_rundll_crypter12
+5. g8 for crypt in exe - 10 crypts , exe_generic_crypter5
+6. g8 for crypt in dll, run: rundll32 file.dll,EproyAklW - 10 crypts with random string, dll_rundll_crypter12
+[21.01.22 16:01:55] manuel: +
+[24.01.22 17:38:52] nick: hi!
+[24.01.22 17:38:54] nickuel: 24.01
+g42 for crypt in dll, run: rundll32 file.dll,tertu - 5 crypts with random string dll_rundll_crypter11
+g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts dll_rundll_crypter11
+g7 for crypt in dll, run: rundll32 file.dll,frete - 2 crypts dll_rundll_crypter11
+g8 for crypt in dll, run: rundll32 file.dll,EproyAklW - 20 crypts with random string dll_rundll_crypter11
+[24.01.22 17:39:16] manuel: ++
+[25.01.22 16:18:47] nick: hi!
+[25.01.22 16:18:54] nick: 25.01
+1. g9 for crypt in exe - 5 crypts , exe_generic_crypter5
+2. g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts dll_rundll_crypter11
+3. g8 for crypt in exe - 10 crypts , exe_generic_crypter5
+4. g8 for crypt in dll, run: rundll32 file.dll,EproyAklW - 20 crypts with random string dll_rundll_crypter11
+5. g43 for crypt in exe - 10 crypts, exe_generic_crypter5
+[25.01.22 16:19:28] manuel: ++
+[25.01.22 16:31:19] nick: 6. g7 for crypt in dll, run: rundll32 file.dll,frete - 2 crypts dll_rundll_crypter11
+add this one. ordered it recently
+[25.01.22 16:37:42] manuel: ok
+[26.01.22 16:25:29] nick: 26.01
+1. g5 for crypt in dll, run: rundll32 file.dll,yonu - 4 crypt dll_rundll_crypter11
+2. g9 for crypt in exe - 5 crypts exe_generic_crypter5
+3. g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts dll_rundll_crypter11
+4. g8 for crypt in dll, run: rundll32 file.dll,EproyAklW - 20 crypts with random string dll_rundll_crypter11
+[26.01.22 16:26:18] manuel: ++
+[26.01.22 16:26:30] nick: hi
+[27.01.22 16:17:06] nick: hi
+[27.01.22 16:17:10] nick: 26.01
+1. g5 for crypt in dll, run: rundll32 file.dll,yonu - 4 crypt dll_rundll_crypter11
+2. g9 for crypt in exe - 5 orval crypts
+3. g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts dll_rundll_crypter11
+4. g8 for crypt in dll, run: rundll32 file.dll,EproyAklW - 20 crypts with random string dll_rundll_crypter11
+5. g7 for crypt in dll, run: rundll32 file.dll,frete - 2 crypts dll_rundll_crypter11
+6. 57+, for crypt in dll run: rundll32 file.dll,hgh56kd43s - 1 crypt with random string, dll_rundll_crypter11
+[27.01.22 16:31:01] manuel: ++
+[28.01.22 16:34:36] nick: hi
+[28.01.22 16:34:40] nick: 28.01
+1. g5 for crypt in dll, run: rundll32 file.dll,yonu - 4 crypt dll_rundll_crypter11
+2. g9 for crypt in exe - 5 crypts exe_generic_crypter5
+3. g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts dll_rundll_crypter11
+4. g8 for crypt in dll, run: rundll32 file.dll,EproyAklW - 20 crypts with random string dll_rundll_crypter11
+5. g7 for crypt in dll, run: rundll32 file.dll,frete - 2 crypts dll_rundll_crypter11
+[28.01.22 16:36:56] manuel: ++
+[31.01.22 15:57:14] nick: hi
+[31.01.22 15:57:19] nick: 31.01
+1. g5 for crypt in dll, run: rundll32 file.dll,yonu - 4 crypt dll_rundll_crypter11
+2. g9 for crypt in exe - 5 crypts exe_generic_crypter5
+3. g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts dll_rundll_crypter11
+4. g8 for crypt in dll, run: rundll32 file.dll,EproyAklW - 20 crypts with random string dll_rundll_crypter11
+5. g7 for crypt in dll, run: rundll32 file.dll,frete - 3 crypts dll_rundll_crypter11
+[31.01.22 16:31:10] manuel: ++
+[01.02.22 16:28:52] nick: hi
+[01.02.22 16:28:54] nick: 1.02
+1. g5 for crypt in dll, run: rundll32 file.dll,yonu - 4 crypt dll_rundll_crypter11
+2. g9 for crypt in exe - 5 crypts exe_generic_crypter5
+3. g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts dll_rundll_crypter11
+4. g8 for crypt in dll, run: rundll32 file.dll,EproyAklW - 20 crypts with random string dll_rundll_crypter11
+5. g7 for crypt in dll, run: rundll32 file.dll,frete - 3 crypts dll_rundll_crypter11
+6. g8 for crypt in exe - 5 crypts exe_generic_crypter5
+[01.02.22 16:32:44] manuel: Thank you
+[02.02.22 11:22:55] manuel: hi. tell me, what's your toad?
+[02.02.22 11:23:26] nick: hi.
+[02.02.22 11:23:49] nick: page@
+[02.02.22 11:23:51] nick: tor
+[02.02.22 11:25:08] manuel: is there an external one?
+[02.02.22 11:25:32] manuel: posi_tron@exploit.im
+[02.02.22 11:25:37] manuel: knock him out
+[02.02.22 11:26:22] nick: soulst@exploit.im
+[02.02.22 11:26:26] nick: knock him now
+[02.02.22 11:28:20] nick: my external is not connecting right now
+[02.02.22 11:28:31] nick: something with the server
+[02.02.22 11:28:37] nick: there's a rocket, and a torus toad
+[02.02.22 11:30:25] manuel: clipper@q3mcco35auwcstmt.onion
+[02.02.22 11:30:34] manuel: he'll knock you on the torus
+[02.02.22 11:36:35] nick: added it. he hasn't authorized me yet
+[02.02.22 11:42:37] manuel: ok
+[02.02.22 16:52:35] nick: 2.02
+1. g5 for crypt in dll, run: rundll32 file.dll,yonu - 4 crypt dll_rundll_crypter5
+2. g9 for crypt in exe - 5 crypts exe_generic_crypter5
+3. g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts dll_rundll_crypter5
+4. g8 for crypt in dll, run: rundll32 file.dll,EproyAklW - 5 crypts with random string dll_rundll_crypter5
+5. g7 for crypt in dll, run: rundll32 file.dll,frete - 3 crypts dll_rundll_crypter5
+[02.02.22 16:53:17] manuel: Spc
+[03.02.22 16:39:51] nick: hi
+[03.02.22 16:40:05] nick: 3.02
+1. g5 for crypt in dll, run: rundll32 file.dll,yonu - 4 crypt dll_rundll_crypter5
+2. g9 for crypt in exe - 5 crypts exe_generic_crypter14
+3. g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts dll_rundll_crypter5
+4. g8 for crypt in dll, run: rundll32 file.dll,EproyAklW - 20 crypts with random string dll_rundll_crypter5
+5. g7 for crypt in dll, run: rundll32 file.dll,frete - 3 crypts dll_rundll_crypter5
+6. g8 for crypt in exe - 10 crypts exe_generic_crypter14
+[03.02.22 16:41:32] manuel: +
+[04.02.22 16:48:33] nick: hi
+[04.02.22 16:48:36] nick: 4.02
+1. g5 for crypt in dll, run: rundll32 file.dll,yonu - 4 crypt dll_rundll_crypter5
+2. g9 for crypt in exe - 5 crypts exe_generic_crypter14
+3. g9 for crypt in dll, run: rundll32 file.dll,reteo - 3 crypts dll_rundll_crypter5
+4. g8 for crypt in exe - 5 crypts exe_generic_crypter14
+5. g7 for crypt in dll, run: rundll32 file.dll,frete - 3 crypts dll_rundll_crypter5
+[04.02.22 16:49:11] manuel: ++
+[07.02.22 16:35:37] nick: 7.02
+1. g5 for crypt in dll, run: rundll32 file.dll,yonu - 4 crypt dll_rundll_crypter5
+2. g9 for crypt in exe - 5 crypts exe_generic_crypter14
+3. g9 for crypt in dll, run: rundll32 file.dll,reteo - 3 crypts dll_rundll_crypter5
+4. g8 for crypt in exe - 5 crypts exe_generic_crypter14
+[07.02.22 16:37:34] manuel: ++
+[08.02.22 16:25:36] nick: hi
+[08.02.22 16:25:42] nick: 8.02
+1. g5 for crypt in dll, run: rundll32 file.dll,yonu - 4 crypt dll_rundll_crypter5
+2. g9 for crypt in exe - 5 crypts exe_generic_crypter14
+3. g9 for crypt in dll, run: rundll32 file.dll,reteo - 3 crypts dll_rundll_crypter5
+4. g8 for crypt in exe - 5 crypts exe_generic_crypter14
+[08.02.22 16:27:29] manuel: +
+[09.02.22 16:32:33] nick: hi
+[09.02.22 16:32:37] nick: 9.02
+1. g5 for crypt in dll, run: rundll32 file.dll,yonu - 4 crypt dll_rundll_crypter5
+2. g9 for crypt in exe - 5 crypts exe_generic_crypter14
+3. g9 for crypt in dll, run: rundll32 file.dll,reteo - 3 crypts dll_rundll_crypter5
+4. g8 for crypt in exe - 5 crypts exe_generic_crypter14
+5. g13 for crypt in exe - 10 crypts exe_generic_crypter6
+[09.02.22 16:33:23] manuel: ++
+[10.02.22 16:35:27] nick: hi
+[10.02.22 16:35:30] nick: 10.02
+1. g5 for crypt in dll, run: rundll32 file.dll,yonu - 4 crypt dll_rundll_crypter11
+2. g8 for crypt in exe - 5 crypts exe_generic_crypter6
+3. g13 for crypt in exe - 10 crypts exe_generic_crypter6
+[10.02.22 16:35:51] manuel: Prviet. Ok.
+[11.02.22 17:31:08] nick: hi
+[11.02.22 17:31:23] nick: 11.02.
+1. g5 for crypt in dll, run: rundll32 file.dll,yonu - 4 crypt dll_rundll_crypter11
+2. g8 for crypt in exe - 5 crypts exe_generic_crypter6
+3. g13 for crypt in exe - 10 crypts exe_generic_crypter6
+4. g9 for crypt in exe - 5 crypts - exe_generic_crypter6
+5. g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts dll_bk_crypter5
+[11.02.22 17:31:25] manuel: Hi.
+[11.02.22 17:31:28] manuel: Thanks
+[11.02.22 17:31:32] nick: Please.
+[11.02.22 17:31:42] manuel: ))
+[11.02.22 17:32:11] nick: have a nice weekend!
+[14.02.22 16:42:27] nick: hi
+[14.02.22 16:42:29] nick: 14.02
+1. g5 for crypt in dll, run: rundll32 file.dll,yonu - 4 crypt dll_bk_crypter6
+2. g8 for crypt in exe - 5 crypts exe_generic_crypter6
+3. g13 for crypt in exe - 10 crypts exe_generic_crypter6
+4. g9 for crypt in exe - 5 crypts - exe_generic_crypter6
+5. g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts dll_bk_crypter6
+[14.02.22 16:42:41] manuel: Hi. Okay.
+[14.02.22 16:43:19] nick: 14.02 only
+[02/16/222 16:11:40] nick: hi.
+[16.02.22 16:11:53] nick: 16.02
+1. g5 for crypt in dll, run: rundll32 file.dll,yonu - 4 crypt dll_bk_crypter11
+2. g8 for crypt in exe - 5 crypts exe_generic_crypter6
+3. g13 for crypt in exe - 10 crypts exe_generic_crypter6
+4. g9 for crypt in exe - 5 crypts - exe_generic_crypter6
+5. g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts dll_bk_crypter6
+[16.02.22 16:11:53] manuel: Hi
+[16.02.22 16:11:56] manuel: ok
+[02/16/222 16:23:08] nick: hi.
+[17.02.22 16:23:20] nick: 17.02
+1. g5 for crypt in dll, run: rundll32 file.dll,yonu - 4 crypt dll_rundll_crypter12
+2. g8 for crypt in exe - 5 crypts exe_generic_crypter6
+3. g13 for crypt in exe - 10 crypts exe_generic_crypter6
+4. g9 for crypt in exe - 5 crypts - exe_generic_crypter6
+5. g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts dll_rundll_crypter12
+[17.02.22 16:23:22] manuel: prviet
+[17.02.22 16:23:23] manuel: ok
+[18.02.22 16:09:41] nick: hi.
+[18.02.22 16:09:56] nick: 18.02
+1. g5 for crypt in dll, run: rundll32 file.dll,yonu - 4 crypt dll_rundll_crypter12
+2. g8 for crypt in exe - 5 crypts exe_generic_crypter6
+3. g13 for crypt in exe - 10 crypts exe_generic_crypter6
+4. g9 for crypt in exe - 5 crypts - exe_generic_crypter6
+5. g9 for crypt in dll, run: rundll32 file.dll,reteo - 2 crypts dll_rundll_crypter12
+6. g42 for crypt in exe - 10 crypts exe_generic_crypter6
+[18.02.22 16:10:44] manuel: Hi ok

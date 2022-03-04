@@ -1,0 +1,21 @@
+[12/13/221 15:05:12] ryan: Hi
+Test version of loader: pass https://qaz.im/load/8DeSyD/Br39ty fdsf7sdf72RR@34gt3T3t4
+This exe has download and save file enabled for now (without launching)
+After launching it should download the file from https://185.64.104.5:12233/aaa/bbb/ccc and save it in test.dat
+[12/13/221 15:05:55] manuel: Hi. Is there an admin area where the bot should knock?
+[12/13/221 15:07:57] ryan: no knocking, in the admin area there is only a form to upload the file
+[13.12.21 15:08:43] ryan: And the script to filter out pages from the list and ip addresses from the blacklist
+[12/13/221 15:09:08] manuel: Okay. So what should I test?
+[12/13/221 15:09:31] ryan: Now we need to see if the file will download or not, on different systems
+[13.12.21 15:10:32] ryan: After start test.dat should be created in the same folder as lowader
+[13.12.21 15:10:40] manuel: got it, I will check it.
+[16.12.21 10:28:34] manuel: Hi.
+[12/16/21 10:28:57] ryan: Hi.
+[16.12.21 10:29:08] manuel: can you resend me a test file?
+[16.12.21 10:29:17] manuel: Only now they are finishing the test vm
+[16.12.21 10:29:21] manuel: Not testing yet
+[16.12.21 10:29:32] ryan: I'll upload it again
+[16.12.21 10:32:46] ryan: Test version of the loader: pass https://qaz.im/load/YSiakH/khkaD2 fdsf7sdf72RR@34gt3T3t4
+This exe has the download and save file enabled for now (without launching)
+After launching, the file https://185.64.104.5:12233/aaa/bbb/ccc should be downloaded and saved in test.dat
+[16.12.21 10:33:01] manuel: Check. I will test it.

@@ -1,0 +1,583 @@
+2020-08-17T10:08:58 bentley -> revan
+Првиет.
+
+2020-08-17T10:09:00 bentley -> revan
+Машиныобновил
+
+2020-08-17T10:09:05 bentley -> revan
+почти
+
+2020-08-17T10:09:28 revan -> bentley
+privet
+
+2020-08-17T10:09:50 revan -> bentley
+ogo
+
+2020-08-17T10:09:53 revan -> bentley
+ da ya bi sam
+
+2020-08-17T10:10:00 revan -> bentley
+ ili tam uje na test est' chto?
+
+2020-08-17T10:10:22 revan -> bentley
+davay ya webroot voz'mu
+
+2020-08-17T10:10:27 bentley -> revan
+Да надо сделать тесты автотесты бк и отписать босу по результатам
+
+2020-08-17T10:10:37 revan -> bentley
+okey
+
+2020-08-17T10:11:04 revan -> bentley
+eti 2 ya sam togda obnovly
+
+2020-08-17T10:11:27 bentley -> revan
+ок
+
+2020-08-17T10:25:43 revan -> bentley
+ya chet na mashine webroot ne nablydayu samogo webroot
+
+2020-08-17T10:25:51 revan -> bentley
+posmotri plz
+
+2020-08-17T10:25:58 bentley -> revan
+ага
+
+2020-08-17T10:26:30 revan -> bentley
+glyanesh ili eto tak i doljno bit'?
+
+2020-08-17T10:28:58 bentley -> revan
+смотрю
+
+2020-08-17T10:30:30 bentley -> revan
+сканирую на вири
+
+2020-08-17T10:31:01 revan -> bentley
+tak on tam vse aki est'?
+
+2020-08-17T10:31:13 bentley -> revan
+Да он есть
+
+2020-08-17T10:32:28 revan -> bentley
+proglyadel
+
+2020-08-17T10:32:56 bentley -> revan
+В трее не было значка но в программах он есть
+
+2020-08-17T10:33:44 revan -> bentley
+bud uznat
+
+2020-08-17T10:49:17 revan -> bentley
+gotov
+
+2020-08-17T10:49:59 bentley -> revan
+Все сделал вебрут
+
+2020-08-17T10:50:09 bentley -> revan
+Ждем свежие сборки бк и прогоним тесты
+
+2020-08-17T10:50:19 revan -> bentley
+horosho
+
+2020-08-17T11:10:34 bentley -> revan
+rldr.exe смотрим автотест у МАР
+
+2020-08-17T11:10:42 revan -> bentley
++
+
+2020-08-17T12:21:01 revan -> bentley
+statc - clean
+
+2020-08-17T12:21:54 revan -> bentley
+eset - VM don't send report in 30 min
+10 -  VM dont'get file in 10 min
+2016 -  VM dont'get file in 10 min
+
+2020-08-17T12:21:58 revan -> bentley
+vse ostal'noe ok
+
+2020-08-17T12:22:15 bentley -> revan
+хорошо давай которые не прислали файл еще раз
+
+2020-08-17T12:22:23 revan -> bentley
++
+
+2020-08-17T13:19:13 revan -> bentley
+eset - VM don't send report in 30 min
+10 -  VM dont'get file in 10 min
+2016 -  VM dont'get file in 10 min
+
+2020-08-17T13:19:17 revan -> bentley
+tak je
+
+2020-08-17T13:19:34 bentley -> revan
+есет пока не работает
+
+2020-08-17T13:19:43 bentley -> revan
+попробуй снова 10 и 2016
+
+2020-08-17T13:19:52 revan -> bentley
+sha poprobuyu
+
+2020-08-17T13:43:55 revan -> bentley
+10 и 2016 - ok
+
+2020-08-17T13:43:56 revan -> bentley
+zelenie
+
+2020-08-17T13:44:24 bentley -> revan
+гуд
+
+2020-08-17T13:44:29 bentley -> revan
+скоро еще 1 бк будет
+
+2020-08-17T13:44:34 revan -> bentley
+otlichno
+
+2020-08-17T13:44:35 revan -> bentley
+ jdu
+
+2020-08-17T14:36:07 bentley -> revan
+dl2.exe проверим на автотесте во вкладке EXP
+
+2020-08-17T14:38:26 revan -> bentley
++
+
+2020-08-17T15:16:41 revan -> bentley
+static - clean
+
+2020-08-17T15:17:38 revan -> bentley
+10 - VM dont'get file in 10 min
+2016 -  VM dont'get file in 10 min
+
+2020-08-17T15:18:29 revan -> bentley
+zapushu povtorno
+
+2020-08-17T15:32:06 bentley -> revan
+ага
+
+2020-08-17T15:32:30 bentley -> revan
+а те кто отработал запусти на team9_restart_loader.exe
+
+2020-08-17T15:32:57 revan -> bentley
+10 - ok
+2016 - VM dont'get file in 10 min
+
+2020-08-17T15:33:04 revan -> bentley
+2016 perezapustit'?
+
+2020-08-17T15:34:12 bentley -> revan
+да
+
+2020-08-17T15:49:55 revan -> bentley
+sec
+
+2020-08-17T16:13:22 revan -> bentley
+po dl2 
+2016 - ok ( zeleniy )
+
+2020-08-17T16:13:38 bentley -> revan
+кул
+
+2020-08-17T16:15:20 revan -> bentley
+po team9_restart_loader.exe
+static - clean
+VM - vse ok, krome 10 - VM dont'get file in 10 min
+2016 ne zapuskal
+
+2020-08-17T16:15:27 revan -> bentley
+ seychas ih oboih zapushu
+
+2020-08-17T16:25:14 bentley -> revan
++
+
+2020-08-17T16:41:46 revan -> bentley
+10, 2016 - ok
+
+2020-08-17T16:41:59 bentley -> revan
+хорошо
+
+2020-08-17T18:13:01 revan -> bentley
+bro, segodnya eshe budut zadachi?
+
+2020-08-17T18:13:21 bentley -> revan
+Нет
+
+2020-08-17T18:13:29 bentley -> revan
+Уже только завтра
+
+2020-08-17T18:13:45 revan -> bentley
+ponyal, ya togda v off pognal
+
+2020-08-17T18:13:57 bentley -> revan
+Ага. До завтра )
+
+2020-08-17T18:14:00 revan -> bentley
+do zavtra)
+
+2020-08-18T10:45:15 bentley -> revan
+приветю софос пока не обновляй
+
+2020-08-18T10:48:31 bentley -> revan
+приветю софос пока не обновляй
+
+2020-08-21T09:20:57 bentley -> revan
+Привет. Сегодня не обновляем ВМ для автотестов. Их взяли в работу. Сегодня не будем вообще гонять автотесты.
+
+2020-08-21T09:51:25 bentley -> revan
+Привет. Сегодня не обновляем ВМ для автотестов. Их взяли в работу. Сегодня не будем вообще гонять автотесты.
+
+2020-08-24T09:50:35 bentley -> revan
+привет. пока машины не обновляй. заняты
+
+2020-08-24T10:05:23 bentley -> revan
+привет. пока машины не обновляй. заняты
+
+2020-08-25T09:20:17 bentley -> revan
+Привет. Машины пока юзают
+
+2020-08-25T09:20:21 bentley -> revan
+Не обновляем
+
+2020-08-25T10:18:51 bentley -> revan
+Привет. Машины пока юзают
+
+2020-08-25T10:18:51 bentley -> revan
+Не обновляем
+
+2020-09-04T16:06:36 bentley -> revan
+Проверь пожалуйста, dl7_x64_release_nologs.exe во вкладке мар
+
+2020-09-08T09:08:34 bentley -> revan
+Привет.
+
+2020-09-08T09:08:46 revan -> bentley
+privet bro
+
+2020-09-08T09:08:50 bentley -> revan
+Можешь закинуть еще 1 ехе в каждую машину ?
+
+2020-09-08T09:09:01 bentley -> revan
+в папку c:/temp
+
+2020-09-08T09:09:08 revan -> bentley
+)
+
+2020-09-08T09:09:19 revan -> bentley
+ chutochku bi poran'she)
+
+2020-09-08T09:09:20 revan -> bentley
+ davay
+
+2020-09-08T09:09:23 revan -> bentley
+ zakinu
+
+2020-09-08T09:09:33 revan -> bentley
+  snimor posle etogo delat'?
+
+2020-09-08T09:10:10 bentley -> revan
+Да новый снимок
+
+2020-09-08T09:10:15 bentley -> revan
+https://qaz.im/load/aGreBD/5RkQdh
+
+2020-09-08T09:10:16 bentley -> revan
+123
+
+2020-09-08T09:10:31 revan -> bentley
++
+
+2020-09-08T09:14:12 revan -> bentley
+ego s zamenoy zakidivat'?
+
+2020-09-08T09:14:41 revan -> bentley
+tam takoy fail prosto est' na mashine
+
+2020-09-08T09:14:49 bentley -> revan
+да
+
+2020-09-08T09:14:53 revan -> bentley
+ +
+
+2020-09-08T09:26:23 revan -> bentley
+eset udalyaet etot fail
+
+2020-09-08T09:26:59 bentley -> revan
+надо добавить его в исключения
+
+2020-09-08T09:27:13 revan -> bentley
+da vot ishu kak eto sdelat'
+
+2020-09-08T09:27:34 bentley -> revan
+Ща заду
+
+2020-09-08T09:27:48 revan -> bentley
+davay, ya poka na sleduyushie pognal
+
+2020-09-08T09:27:58 bentley -> revan
+Подожди
+
+2020-09-08T09:28:00 bentley -> revan
+Я тебе покажу
+
+2020-09-08T09:28:27 revan -> bentley
+ok
+
+2020-09-08T09:28:29 revan -> bentley
+ gotov
+
+2020-09-08T09:31:44 revan -> bentley
+uvidel
+
+2020-09-08T09:33:05 bentley -> revan
+Вот все
+
+2020-09-08T09:33:20 revan -> bentley
+nu tak, pochti ponyal)
+
+2020-09-08T09:33:40 revan -> bentley
+sps za demonstraciyu, no esli chto google v pomosh
+
+2020-09-08T09:33:52 bentley -> revan
+))
+
+2020-09-08T10:02:15 revan -> bentley
+vse, mashini gotovi
+
+2020-09-08T10:02:28 bentley -> revan
+Хорошо
+
+2020-09-08T10:02:32 bentley -> revan
+Скоро будем криптовать
+
+2020-09-08T10:02:38 bentley -> revan
+Ща залью исходник для теста
+
+2020-09-08T10:02:44 revan -> bentley
+okey)
+
+2020-09-08T10:10:27 bentley -> revan
+ld1_gr_1.exeпосмотри в Others
+
+2020-09-08T10:10:36 revan -> bentley
++
+
+2020-09-08T10:10:46 revan -> bentley
+servera tak i ne rabotayut
+
+2020-09-08T10:10:58 revan -> bentley
+ya k tomu, chto ih provernyat' na avtoteste ili ne trogat'?
+
+2020-09-08T10:11:23 bentley -> revan
+Ты про 10 2016?
+
+2020-09-08T10:11:27 revan -> bentley
+da
+
+2020-09-08T10:11:33 bentley -> revan
+Пока не трогай
+
+2020-09-08T10:11:39 revan -> bentley
+ok
+
+2020-09-08T10:26:26 revan -> bentley
+bro, obyasni plz
+
+2020-09-08T10:26:28 revan -> bentley
+[18:25:18] <buza> где отчет по ав и вм?
+
+2020-09-08T10:26:38 revan -> bentley
+o chem on i v kakom formate eto vse emu vidavat'?
+
+2020-09-08T10:27:07 bentley -> revan
+Напиши ему про тот файл для проверки который ты запускал
+
+2020-09-08T10:27:15 bentley -> revan
+И что каждая машина писала
+
+2020-09-08T10:46:30 bentley -> revan
+Проверь пожалуйста еще на авотесте https://qaz.im/load/9FAAh2/zSQ8Nt 123321
+
+2020-09-08T10:46:51 revan -> bentley
++
+
+2020-09-08T10:47:50 revan -> bentley
+ld1_gr_1.exe
+sophos - detect
+
+2020-09-08T10:47:59 revan -> bentley
+vse ostal'nie bez detectov
+
+2020-09-08T10:48:07 bentley -> revan
+ок
+
+2020-09-08T10:49:26 revan -> bentley
+a eto ne odin i tot je fail?
+
+2020-09-08T10:49:37 revan -> bentley
+ves odinakoviy
+
+2020-09-08T10:49:40 revan -> bentley
+ nazvanie toje
+
+2020-09-08T10:49:49 bentley -> revan
+аразмер?
+
+2020-09-08T10:50:07 revan -> bentley
+99kb
+
+2020-09-08T10:50:17 revan -> bentley
+oni oba 99kb
+
+2020-09-08T10:51:32 bentley -> revan
+Хм.. Ща
+
+2020-09-08T12:38:51 bentley -> revan
+Document.exe проверь у ЕХР
+
+2020-09-08T12:47:36 revan -> bentley
++
+
+2020-09-08T13:24:43 revan -> bentley
+Document.exe
+sophos - detect
+trend micro - detect
+
+2020-09-08T13:24:54 revan -> bentley
+ya seychas povtorno poprobuyu ih prognat'
+
+2020-09-08T13:24:56 bentley -> revan
+ок
+
+2020-09-08T13:25:00 bentley -> revan
+да давай
+
+2020-09-08T13:49:09 bentley -> revan
+Прогони Preview.exe в EXP
+
+2020-09-08T13:49:16 revan -> bentley
++
+
+2020-09-08T14:42:58 revan -> bentley
+Preview.exe
+sophos - detect
+ostal'nie bez detectov
+
+2020-09-08T14:43:13 bentley -> revan
+прогони еще раз софос откатив
+
+2020-09-08T14:43:51 revan -> bentley
++
+
+2020-09-08T15:22:06 bentley -> revan
+Прогони, пожалуйста, ld1_gr_o1.exe в others
+
+2020-09-08T15:22:19 revan -> bentley
++
+
+2020-09-08T15:22:36 revan -> bentley
+sophos tak je detect
+
+2020-09-08T15:23:12 bentley -> revan
+Надо понять на крипт или на исходник. Залил исхордник для проверки
+
+2020-09-08T15:23:32 revan -> bentley
+sha zapustim
+
+2020-09-08T16:02:12 revan -> bentley
+ld1_gr_o1.exe
+sophos - detect
+trend micro - detect
+
+2020-09-08T16:02:18 revan -> bentley
+povtorno prognat'?
+
+2020-09-08T16:16:30 bentley -> revan
+Прогони потом верхний Preview.exe во вкладке ЕХР
+
+2020-09-08T16:16:40 revan -> bentley
++
+
+2020-09-08T16:23:12 revan -> bentley
+tak je 
+sophos - detect
+trend micro - detect
+
+2020-09-08T16:23:23 bentley -> revan
+ок
+
+2020-09-08T16:52:41 bentley -> revan
+Прогони потом еще раз й Preview.exe во вкладке ЕХР его переделали
+
+2020-09-08T16:52:50 revan -> bentley
++
+
+2020-09-08T17:07:54 revan -> bentley
+tam na sophos ne ti?
+
+2020-09-08T17:11:38 bentley -> revan
+нет
+
+2020-09-08T17:12:03 revan -> bentley
+ok
+
+2020-09-08T17:41:54 bentley -> revan
+Print_Preview.exe потом во вкладке MAR
+
+2020-09-08T17:42:07 revan -> bentley
++
+
+2020-09-08T17:42:41 revan -> bentley
+Preview.exe
+bez detectov
+
+2020-09-08T17:42:57 bentley -> revan
+вообще хорошо
+
+2020-09-08T18:11:37 revan -> bentley
+Print_Preview.exe
+sophos - detect
+trend micro - detect
+
+2020-09-08T18:12:12 bentley -> revan
+ок
+
+2020-09-08T18:23:54 revan -> bentley
+eshe budut chto na test?
+
+2020-09-08T18:24:24 bentley -> revan
+Да вроде нет пока
+
+2020-09-08T18:24:45 revan -> bentley
+mogu idti ili eshe posidet' podojdat'?
+
+2020-09-08T18:25:09 bentley -> revan
+ДА все на сегодня
+
+2020-09-08T18:25:52 revan -> bentley
+horosho
+
+2020-09-08T18:25:54 revan -> bentley
+ do zavtra
+
+2020-09-08T18:26:05 bentley -> revan
+До завтра
+
+2020-09-09T08:40:00 revan -> bentley
+privet
+
+2020-09-09T08:43:22 bentley -> revan
+privet
+
+2020-09-09T09:07:47 revan -> bentley
+privet
+
+2020-09-09T09:08:13 bentley -> revan
+Привет.
+
+2020-09-09T09:08:19 bentley -> revan
+Обновил машинки?
+
+2020-09-10T09:53:45 revan -> bentley
+privet
+

@@ -1,0 +1,481 @@
+[20.09.21 17:04:47] manuel: Good evening. Can you help me? Crypts won't build with stub dll_rundll_crypter4. Error failed and I was building some time ago.
+[20.09.21 17:40:28] carrol: Good evening, I don't know, what does the author say? in Jenkins you can see the crash reason
+[20.09.21 17:40:54] manuel: Vj;tim gjcvjnhtnm&
+[20.09.21 17:41:00] manuel: can you look?
+[20.09.21 17:41:35] carrol: no, you can only access your project
+[20.09.21 17:41:50] manuel: I see.
+[20.09.21 17:43:57] carrol: maybe orval can, he's for elroy
+[20.09.21 17:44:10] manuel: okay.
+[29.09.21 16:57:13] manuel: Hello. Can you help me?
+[29.09.21 16:57:55] carrol: Hi.
+[29.09.21 16:58:06] carrol: Describe the problem
+[29.09.21 16:58:21] manuel: I can't upload new shk to buildmachine. they are detected as dll with DLL functions: ReflectiveLoader
+[29.09.21 16:58:30] carrol: shk?
+[29.09.21 16:58:40] manuel: Yes binary with vinyl code
+[29.09.21 16:59:00] carrol: give me a load
+[29.09.21 17:00:02] manuel: Put two files in Carrol's tab
+[29.09.21 17:00:03] carrol: so you must get a dll with ReflectiveLoader function?
+[29.09.21 17:00:15] manuel: No, the output should be StartW
+[29.09.21 17:00:37] manuel: dll with entry point StartW
+[29.09.21 17:00:41] carrol: ReflectiveLoader is what?
+[29.09.21 17:01:12] manuel: Not clear. It appears in the build-machine and because of that there is no way to crypto-dll
+[29.09.21 17:02:02] carrol: no you don't have shellcode
+[29.09.21 17:02:15] carrol: it's a x64 dll
+[29.09.21 17:03:36] carrol: yeah right
+[29.09.21 17:04:07] manuel: when I cry as a dll, it doesn't work either
+[29.09.21 17:04:46] carrol: let me try
+[29.09.21 17:09:07] carrol: it worked, look in my dll_rundll_crypter7
+ReflectiveLoader=StartW
+[29.09.21 17:09:09] carrol: shellcode is not that big, loads with shellcode are small
+[29.09.21 17:09:37] manuel: Yeah.
+[29.09.21 17:09:43] manuel: Then you can check it out.
+[29.09.21 17:09:47] carrol: Okay.
+[29.09.21 17:10:24] carrol: if Ikarus or WD script do it
+[29.09.21 17:10:39] carrol: I'll be gone for half an hour
+[29.09.21 17:10:41] manuel: ok
+[29.09.21 17:10:44] manuel: thank you.
+[29.09.21 17:35:02] manuel: They said (((( doesn't work
+[29.09.21 18:12:44] carrol: try other cryptors, maybe mine is the only one that doesn't work
+[29.09.21 18:12:58] manuel: Yeah
+[29.09.21 18:29:31] carrol: by the way, maybe it's leo or something, that's why it doesn't work, what profile should I use?
+[29.09.21 18:30:13] manuel: No it's a shellcode
+[29.09.21 18:30:23] manuel: So they say
+[29.09.21 18:30:30] carrol: lying
+[29.09.21 18:30:38] carrol: lying
+[29.09.21 18:30:47] carrol: what about the rocket
+[29.09.21 18:31:04] carrol: they're lying
+[29.09.21 18:32:18] carrol: aaaa I got it, shell code is built into DOS loader header, there's some code there
+[29.09.21 18:32:49] carrol: then it must be encrypted not as dll load but as exe yfuhepre
+[29.09.21 18:32:57] carrol: load
+[29.09.21 18:33:05] manuel: will you get a dll as an output?
+[29.09.21 18:33:11] manuel: Or only in ehe?
+[29.09.21 18:33:23] carrol: yeah EXE to DLL
+[29.09.21 18:33:34] carrol: well, yes EXE in DLL
+[29.09.21 18:34:07] manuel: Yeah
+[29.09.21 18:34:10] manuel: I'll try it now
+[29.09.21 18:34:49] carrol: but build machine won't let you choose the right profile, because it defines it as a dll
+[29.09.21 18:36:18] manuel: Yeah, it only gives dll_generic_crypter5
+[29.09.21 18:37:02] carrol: but my generator won't handle such situation either, there was no such a task
+[29.09.21 18:38:01] carrol: well, you have to ask people in the topic, I am not help here
+[29.09.21 18:38:35] manuel: Who to write?
+[29.09.21 18:38:48] carrol: orval
+[29.09.21 18:38:58] carrol: maybe he knows
+[29.09.21 18:45:20] carrol: no, I made a mistake, I checked it wrong
+[22.11.21 19:42:12] manuel: good evening. can you crypt the ehe trike?
+[22.11.21 19:43:06] carrol: Hi, alas everything is dirty, need to redo the stub, not clean ((
+[22.11.21 19:43:20] manuel: I see...
+[29.11.21 18:24:15] manuel: Good evening. Can you crypt the trica echo?
+[29.11.21 18:30:37] carrol: Hi. No dirty yet, alas))
+[29.11.21 18:31:15] manuel: Got it.
+[29.11.21 18:31:38] carrol: although you can try, what load?
+[29.11.21 18:32:11] manuel: cbg1.bin in uncrypted
+[29.11.21 18:32:30] carrol: ok
+[29.11.21 18:34:27] carrol: in exe?
+[29.11.21 18:34:50] manuel: yes
+[29.11.21 18:37:56] carrol: no, alas, small loads sometimes work, large - two detections
+[29.11.21 18:38:25] manuel: I see. Thanks
+[03.12.21 16:39:10] manuel: prviet. Can you krypt stab leo loaders and dll bots?
+[03.12.21 16:57:59] carrol: Hi
+[03.12.21 16:58:10] carrol: still relevant?
+[03.12.21 16:58:14] manuel: Yes
+[03.12.21 16:58:27] manuel: just need clean autocheck
+[03.12.21 16:58:29] carrol: where to get it?
+[03.12.21 16:58:48] manuel: I'll send it over
+[03.12.21 16:59:09] carrol: bookmark carrol
+[03.12.21 16:59:16] manuel: Okay.
+[03.12.21 17:03:48] manuel: fill 4 files: 2 bots 2 lowers
+[03.12.21 17:04:19] carrol: ok
+[03.12.21 17:04:38] carrol: are the panels dirty?
+[03.12.21 17:04:53] manuel: yes
+[03.12.21 17:04:58] manuel: and some of the bids don't work
+[03.12.21 17:05:14] carrol: exactly mine?
+[03.12.21 17:06:11] manuel: what's your number?
+[03.12.21 17:08:45] carrol: 7
+[03.12.21 17:09:39] manuel: I think there was a bot not working and a lauder when I was building
+[03.12.21 17:09:47] manuel: rather, bot worked, and loeder didn't
+[03.12.21 17:10:35] carrol: but they were clean?
+[03.12.21 17:10:46] manuel: don't remember
+[03.12.21 17:10:50] manuel: did it 3 days ago
+[03.12.21 17:10:59] carrol: i made one clean one on avcek
+[03.12.21 17:11:05] manuel: awesome!
+[03.12.21 17:11:13] carrol: try in the panel, they should be clean
+[03.12.21 17:11:29] carrol: I mean generate
+[03.12.21 17:11:39] manuel: yeah I'll try that
+[03.12.21 17:11:48] manuel: both lowder and bot with one stub?
+[03.12.21 17:12:02] carrol: I'll put one in carrol
+[03.12.21 17:12:52] carrol: i don't know, everything should work if not write me
+[03.12.21 17:13:53] manuel: ok
+[03.12.21 17:15:04] carrol: take one
+[03.12.21 17:17:37] carrol: listen, this lowader is soooo dirty on static, probably all ABs will detect it on dynamic
+[03.12.21 17:18:05] carrol: windef probably kills it on startup
+[03.12.21 17:18:12] manuel: yeah, they complained a lot about it, especially on node32
+[03.12.21 17:19:23] carrol: i'm not an expert in these things, but i think you should not let such a load to work, we'll work in vain, the first crypt will get in
+[03.12.21 17:20:38] carrol: I looked inside loader, it doesn't hide itself at all, even its name is loader.dll
+[03.12.21 17:20:57] manuel: do you need to clean source code?
+[03.12.21 17:21:06] carrol: sure
+[03.12.21 17:21:39] carrol: ask Elroy, I think he's still here, I could be wrong, I don't know much
+[03.12.21 17:31:10] manuel: ``
+ He says right. The load will fly in and burn the crypt afterwards.
+That's exactly the way it is on one side.
+But there's another side.
+As rozetka wrote out today in that chat
+It is not important that everything is clean, it is important that the av which is online is clean.
+It depends on how you work.
+Who cares about what.
+Did they ask you specifically for food?
+5:25 PM
+yes the question is that the outlet knows what kind of food to cook under
+I've been asked for food on avcek
+and especially node32
+5:26 PM
+Well then it is really illogical to distribute such a thing
+But maybe they need food on static just to send the file to a place where there is no AV
+For example
+5:27 PM
+quite
+5:27 PM.
+They take a handful of files and check them on the Seth machine, clean, then copy the files to somewhere where there is no AB on the machines anymore.
+This strategy could be.
+In general, just consider that if you have a grainy source on static, it is useless to run it from AV, all will be spoiled
+If you need such a thing, let's make a crypt then))
+5:28 PM
+Isn't it cleaned by krypt?
+5:28 PM
+Kryptom cleans statics
+5:28 PM
+Yes
+5:29 PM.
+As soon as it is launched somewhere, it will work with dynamics and AV will mark that this file is malicious, leak the information to the network and it won't pass through statics any more. In other words, it is for one run in this case.
+But it also happens.....
+
+```
+[03.12.21 17:32:09] manuel: And you can also crypt the bot. Bildmachine doesn't work yet, I think.
+[03.12.21 17:32:24] carrol: ok, now
+[03.12.21 17:32:27] manuel: I've been crittin' for an hour now.
+[03.12.21 17:32:39] manuel: also ramirez
+[03.12.21 17:36:50] carrol: take it, it's clean
+[03.12.21 17:37:51] carrol: in carrol
+[03.12.21 17:55:50] manuel: thanks
+[03.12.21 18:26:27] manuel: Everything works fine. Asked to make 2 more crypt loader and 2 crypt dll bots
+[03.12.21 18:26:34] manuel: Do it please.
+[03.12.21 18:26:49] manuel: ramires both
+[03.12.21 18:31:07] carrol: okay.
+[03.12.21 18:38:58] carrol: take it, all 4 are clean
+[03.12.21 18:39:25] manuel: great!
+[03.12.21 18:52:11] manuel: Asked to make 5 more lowers. Can we do it?
+[03.12.21 18:52:21] carrol: yes
+[03.12.21 18:52:47] manuel: Okay.
+[03.12.21 18:53:56] manuel: same ramirez.
+[03.12.21 18:54:04] carrol: Okay.
+[03.12.21 18:59:32] carrol: ready, avcek clear, take it.
+[12/23/221 18:59:57] manuel: beautiful!
+[07.12.21 14:13:29] manuel: hi.
+[07.12.21 14:13:36] manuel: crypto shk - dll 64?
+[07.12.21 14:28:01] carrol: hi
+[07.12.21 14:28:04] carrol: Go ahead.
+[07.12.21 14:40:28] manuel: So there's a cancellation for now.
+[07.12.21 14:40:40] carrol: Okay.
+[07.12.21 17:16:06] manuel: Let's crypt Leo's stub? dll bot
+[07.12.21 17:28:54] carrol: where do you take the load?
+[07.12.21 17:29:26] manuel: I'll send it over
+[07.12.21 17:29:42] carrol: did you try the panel?
+[07.12.21 17:30:21] carrol: carrol tab
+[07.12.21 17:30:27] carrol: ghbikb
+[07.12.21 17:30:31] carrol: came
+[07.12.21 17:32:16] manuel: dll_64_prj_Ramires.dll
+[07.12.21 17:32:20] manuel: filled
+[07.12.21 17:32:43] carrol: has it changed? since friday
+[07.12.21 17:33:48] manuel: Yeah, the source is different
+[07.12.21 17:33:51] manuel: dll_64_prj_Carlos.dll and more
+[07.12.21 17:34:00] manuel: that too
+[07.12.21 17:42:53] carrol: on autochick NOD32 detection on dinchik pure this will do?
+[07.12.21 17:43:26] carrol: probably worked well on Friday
+[07.12.21 17:43:44] manuel: nope. They're asking for a clean avcek.
+[07.12.21 17:44:09] carrol: i'll try again, but don't get your hopes up )))
+[07.12.21 17:45:03] manuel: Eh
+[07.12.21 19:09:22] manuel: Can you crypto into dll64 ?
+[07.12.21 20:06:07] carrol: we have to try
+[07.12.21 20:06:54] manuel: Yeah
+[07.12.21 20:07:03] carrol: throw it
+[07.12.21 20:07:07] manuel: dll_64_prj_Carlos.dll please make 1 crypt
+[07.12.21 20:07:30] manuel: carrol tab
+[07.12.21 20:07:35] carrol: ok
+[07.12.21 20:08:46] carrol: I don't get it, it's not a shellcode
+[07.12.21 20:09:09] manuel: no need
+[07.12.21 20:09:12] manuel: I mean Leo
+[07.12.21 20:09:47] carrol: i already tried it, it doesn't work - on acek NOD32
+[07.12.21 20:09:56] manuel: ok
+[07.12.21 20:10:00] manuel: Is it for cleaning?
+[07.12.21 20:10:07] carrol: yes
+[07.12.21 20:10:23] manuel: okay.
+[08.12.21 16:51:09] manuel: hi. can shk-dll64 do it?
+[08.12.21 17:31:30] carrol: hi. What a load.
+[08.12.21 17:32:43] manuel: poured two binary into carrol
+[08.12.21 17:32:50] manuel: DllRegisterServer
+[08.12.21 17:32:51] carrol: ok, I'll try
+[08.12.21 17:43:28] carrol: dinchek pure avcek one detect AhnLab V3 Internet Security
+[08.12.21 17:43:41] carrol: this will do?
+[08.12.21 17:43:57] manuel: +
+[08.12.21 17:46:43] carrol: take one
+[08.12.21 17:46:59] manuel: yeah
+[08.12.21 17:56:09] carrol: take the other one
+[08.12.21 17:56:15] carrol: are you testing them?
+[08.12.21 17:57:18] manuel: no
+[08.12.21 17:57:35] carrol: ok
+[08.12.21 17:57:47] manuel: thanks!
+[08.12.21 18:30:28] manuel: can you crypt the coba?
+[08.12.21 18:30:33] manuel: 32 and 64 bit
+[08.12.21 18:31:34] carrol: exe 32 is dirty
+[08.12.21 18:31:44] manuel: and dll?
+[08.12.21 18:32:26] carrol: try it
+[08.12.21 18:32:33] manuel: I'll send it over
+[08.12.21 18:33:56] manuel: ``
+https://dropfiles.me/download/e83cbcd527ffceeb/#e3WkogSCAUDqJ0XZnYWO6Q
+111999
+```
+[08.12.21 18:34:10] manuel: You need a dll with entry point DllRegisterServer
+[08.12.21 18:35:27] carrol: wait, my cbw isn't implemented, bummer ))
+[08.12.21 18:36:08] manuel: Ehhh
+[08.12.21 18:36:15] manuel: there's just a dll randll32
+[08.12.21 18:36:17] manuel: and ehe
+[08.12.21 18:37:34] carrol: no I never implemented the cobu
+[08.12.21 18:38:16] manuel: I see
+[08.12.21 18:38:19] manuel: too bad
+[12/15/221 15:11:00] manuel: Hi. Crypt the coba dll?
+[15.12.21 15:11:40] carrol: hi! my cob profile is not implemented, alas
+[15.12.21 15:12:00] manuel: and shk - dll64 ?
+[15.12.21 15:12:06] carrol: you can
+[15.12.21 15:12:20] carrol: put the load in carrol
+[15.12.21 15:13:30] manuel: uploaded wa_64.bin and ji_64.bin
+[15.12.21 15:13:42] manuel: I need in dll with DllRegisterServer point
+[12/15/221 15:14:04] carrol: ok, I'll try
+[12/15/221 15:26:45] carrol: no, yesterday it was clean, now everything is dirty
+[12/15/21 15:27:37] manuel: jr.
+[12/15/21 15:27:43] manuel: Okay, got it.
+[15.12.21 15:30:32] manuel: AstabomLeo?
+[15.12.21 15:30:46] carrol: you can try
+[12/15/21 15:32:03] manuel: ``
+https://dropfiles.me/download/24f659f36dac1d02/#H_FQMt_0xh8bUdovC2QsCw
+sdf4o5gKEL<#@$f'ASF
+```
+[12/15/221 15:32:37] manuel: ``1 file at a time.
+[12/15/221 15:34:33] carrol: can't download it, says no such link
+[12/15/221 15:36:06] carrol: maybe in carrol
+[12/15/21 15:36:07] manuel: ``
+https://dropfiles.me/download/5f8dbad377db7fc4/#Zj-Q30vphCMa4E3yIs-gVQ
+sdf4o5gKEL<#@$f'ASF
+```
+[12/15/221 15:36:13] manuel: Uploaded
+[12/15/221 15:37:43] carrol: I'm doing something wrong, the link expired
+[15.12.21 15:38:33] manuel: https://dropfiles.me/download/cfcd44680f65f9db/#_gldGlfhr2b6dPW0-f9W3Q
+[12/15/221 15:38:33] manuel: And this?
+[12/15/21 15:39:17] carrol: Check.
+[12/15/21 15:39:20] carrol: password?
+[12/15/21 15:39:47] manuel: ``
+sdf4o5gKEL<#@$f'ASF
+```
+[12/15/221 15:46:38] carrol: no, alas, same detects
+[12/15/221 15:47:09] manuel: Yeah.)
+[16.12.21 18:26:30] manuel: Hi. Can you crypt the shk-dll64?
+[16.12.21 18:27:49] carrol: Hi, let me check if it's clean.
+[16.12.21 18:41:31] carrol: I've got detects on the dink, is that okay?
+[16.12.21 18:41:44] manuel: Nope.
+[16.12.21 19:51:45] manuel: Can you stab leo?
+[16.12.21 19:52:12] carrol: i'll check it out
+[16.12.21 19:55:29] carrol: the picture is the same - aceke has detects on the dink clean
+[16.12.21 19:56:00] manuel: And what's on avcek?
+[16.12.21 19:56:12] carrol: https://avcheck.net/id/17KM6ggvsGij
+[12/16/21 19:56:32] carrol: https://dyncheck.com/scan/id/0c5819d4a9c480b62d0d18656c0c0142
+[16.12.21 19:58:35] manuel: let's do it. they're about to send me the source code
+[16.12.21 19:58:57] carrol: you can upload to carrol
+[16.12.21 19:59:25] manuel: Okay, I'll get it.
+[16.12.21 20:05:39] manuel: loader_dll_64bugati1.dll
+[16.12.21 20:05:50] carrol: ok
+[16.12.21 20:10:52] carrol: https://dyncheck.com/scan/id/67bab41dc88bdc3656da302df7841b4f
+https://avcheck.net/id/u7sdPjGKJtQF
+go get it
+[16.12.21 20:11:39] manuel: got it. Thank you,
+[12/17/221 16:42:54] manuel: Hi. Can we crypt the eche and dll lockers?
+[17.12.21 16:43:25] carrol: you can try
+[17.12.21 16:43:51] manuel: ``
+https://dropfiles.me/download/31c8cbdec105d96c/#vls3F0ICcCvVmIZC6RIG9A
+123123
+```
+[17.12.21 16:48:06] carrol: rundll?
+[12/17/21 16:50:44] manuel: Yes.
+[17.12.21 16:50:51] manuel: ´´hehe dll´´ - rundll32
+[12/17/21 16:51:00] carrol: ok
+[17.12.21 17:03:35] carrol: x86 dll is clean, the rest is dirty
+[17.12.21 17:03:59] manuel: Just give it to me.
+[17.12.21 17:04:07] carrol: and avcek is clean
+[17.12.21 17:04:14] manuel: great!
+[12/17/21 17:04:16] carrol: how much?
+[12/17/21/17:04:24] manuel: 3 crypts
+[17.12.21 17:04:30] carrol: ok.
+[17.12.21 17:18:45] carrol: US8VEsXkvj33
+[17.12.21 17:18:45] carrol: https://dropfiles.me/download/69884a12d6fd0955/#Ml2cjWgVMuIkQiqqG7-qbQ
+[17.12.21 17:19:49] manuel: thanks
+[17.12.21 18:38:10] manuel: eh crypto?
+[17.12.21 18:39:09] carrol: what
+[12/17/21/18:39:33] manuel: cobu ehe
+[12/17/21 18:40:05] carrol: x86 dll only clean
+[17.12.21 18:40:13] manuel: got it
+[20.12.21 13:42:36] manuel: Prviet. Can we crypt the shk - dll 64?
+[20.12.21 14:14:22] manuel: can we?
+[20.12.21 14:19:39] carrol: Hi, alas dirty
+[20.12.21 14:20:23] manuel: Got it, and Leo's stub?
+[20.12.21 14:21:07] carrol: i haven't cleaned it since thursday, i got a job, like it's urgent, i'm doing it
+[12/20/21/221 14:21:21] manuel: Got it.
+[12/20/21/221 14:21:22] manuel: Got it.
+[20.12.21 14:21:50] carrol: x86 dll seemed to be clean
+[20.12.21 14:22:14] manuel: At least let's do this. I'll send it to krypt.
+[20.12.21 14:22:30] carrol: let's try it
+[12/20/221 14:23:07] manuel: ``
+LKDHfkjh2093fhinkjdsnflkjn23
+https://dropfiles.me/download/e6b2ec78e105718a/#QM0qOGF3rMt9BWF3h3iKVw
+```
+[20.12.21 14:23:30] manuel: shk - dll 32 DllRegisterServer
+[20.12.21 14:29:52] carrol: on avcek clean
+[20.12.21 14:31:16] carrol: take to carrol
+[20.12.21 14:31:27] manuel: Great!
+[20.12.21 17:26:30] manuel: And what's up with your eche? I need to crypt the coba.
+[20.12.21 17:26:45] manuel: 32 and 64 ?
+[20.12.21 17:27:23] carrol: no only dllx86
+[20.12.21 17:27:49] manuel: ok. I'll send you 32bit dll then.
+[20.12.21 17:27:57] carrol: ok
+[20.12.21 17:29:24] manuel: ``
+JHDGfjshdgf273ubfhjsdbfkjhb23
+https://dropfiles.me/download/80399c3fb38b964e/#bGGoG-kW2W5DFoy2Ol0P7g
+```
+[20.12.21 17:30:41] carrol: `` rundll?
+[20.12.21 17:31:00] carrol: both one by one?
+[20.12.21 17:31:40] manuel: Both files yes
+[20.12.21 17:40:06] carrol: I don't understand the reason, I have to deal with it, my builder crashes when building this load, both of them
+[20.12.21 17:40:23] carrol: just did another load everything was ok
+[20.12.21 17:40:30] manuel: I see.
+[21.12.21 13:40:22] manuel: Hi. Can we koiptab Leo?
+[21.12.21 13:48:53] carrol: Hi. x86?
+[21.12.21 13:49:56] manuel: nope 64 they are
+[21.12.21 13:50:24] carrol: looks dirty, I'll check it now
+[21.12.21 14:22:38] carrol: sorry, elroy distracted me, checked, dirty
+[12/21/221 14:23:31] carrol: https://dyncheck.com/scan/id/1c62fb0324b61c733b4238b434f0d648
+[21.12.21 14:46:23] manuel: eh
+[21.12.21 16:58:22] manuel: Tell me, can we make shk - dll and ehe?
+[21.12.21 16:59:22] carrol: only x86 dll was clean yesterday, today I don't know, I haven't checked it
+[22.12.21 13:58:43] manuel: Hello. Will we be able to cryptoin Leo's stub?
+[22.12.21 14:03:49] carrol: Hi, not yet, haven't cleaned yet, you can try x86 dll
+[22.12.21 14:05:24] manuel: Got it... That's a pity. It's messy for everyone.
+[22.12.21 17:00:52] manuel: And shk - dll64 dll32 can we do?
+[22.12.21 17:09:12] carrol: no, I checked, only x86 dll vj;yj
+[22.12.21 17:12:35] manuel: payload32.bin please make in dll32 DllRegisterServer
+[22.12.21 17:15:57] carrol: ok, I'll try
+[22.12.21 17:20:46] carrol: avcek clean, dincek https://dyncheck.com/scan/id/5c10429dc6865f3deeebdfa672f11bc3
+[22.12.21 17:20:58] carrol: try another version
+[22.12.21 17:20:58] manuel: ok!
+[22.12.21 17:21:06] manuel: ok
+[22.12.21 17:21:13] carrol: I got carrol.
+[22.12.21 17:27:00] carrol: I threw another one, it's clean everywhere
+[22.12.21 17:27:37] manuel: ok thanks.
+[22.12.21 18:56:34] manuel: let's crypt x32.bin into dll32 too with Entrypoint
+[22.12.21 19:04:19] manuel: I really need one last thing.
+[22.12.21 19:04:23] manuel: Do it, please.
+[22.12.21 19:04:39] carrol: Okay.
+[22.12.21 19:06:20] carrol: Where is it?
+[22.12.21 19:06:45] manuel: Uncrypted tab
+[22.12.21 19:06:55] manuel: In the cryptopanel
+[22.12.21 19:07:19] carrol: no such thing
+[22.12.21 19:09:18] manuel: x32.bin is. Please update this page.
+[22.12.21 19:10:17] carrol: yes
+[22.12.21 19:13:08] manuel: Yay!
+[22.12.21 19:18:53] carrol: it's a bummer, everything got really dirty, bourgeois woke up, it's morning
+[22.12.21 19:19:25] manuel: How dirty?
+[12/22/12-21 19:19:36] carrol: https://avcheck.net/id/9WN9hnMUnfcC
+[12/22/221 19:19:43] carrol: https://dyncheck.com/scan/id/42885947e745dfcc248a6c8fa02dd49c
+[22.12.21 19:19:59] manuel: That's good.
+[22.12.21 19:20:13] manuel: Let's do it like this
+[22.12.21 19:20:45] carrol: go to carrol
+[22.12.21 19:25:46] manuel: Thank you! From the bottom of my heart!!!
+[22.12.21 19:26:11] carrol: you are welcome!)
+[22.12.21 19:29:06] carrol: by the way, for the record, there are a lot of detects because of the Entrypoint, advise to get rid of such a name
+[12/22/221 19:30:11] manuel: Okay.
+[12/23/221 14:59:26] manuel: Prviet. Shall we crypto with Leo's stub?
+[12/23/221 15:34:39] carrol: Hey, no purity
+[12/23/221 15:37:58] manuel: I see. Too bad...
+[12/23/221 16:35:49] manuel: f t[t vj;tim rhbgnfyenm&
+[23.12.21 16:35:57] manuel: Can you crypt the echo ? Loker
+[23.12.21 16:38:01] carrol: only x86 dll can try
+[12/23/221 16:38:15] manuel: I see
+[27.12.21 14:03:26] manuel: hi. crypto stab leo?
+[27.12.21 14:04:16] carrol: Hi.
+[27.12.21 14:04:21] carrol: let's give it a shot
+[27.12.21 14:04:37] manuel: I'll get it.
+[27.12.21 14:05:44] manuel: uploaded 11.7z into carrol
+[27.12.21 14:06:05] manuel: there are 2 folders. 3 crypts for each Lowder and 2 crypts for each bot
+[27.12.21 14:06:20] carrol: ok
+[27.12.21 14:44:58] carrol: dincheck is clean
+[27.12.21 14:45:04] carrol: avcek no
+[27.12.21 14:45:06] carrol: https://avcheck.net/id/VNlCRSzSNpDN
+[27.12.21 14:45:15] carrol: is this okay?
+[27.12.21 14:46:46] manuel: no
+[27.12.21 14:46:49] manuel: how long to clean?
+[27.12.21 14:47:46] carrol: it's too bad, it won't clean
+[27.12.21 14:48:15] manuel: how about another load?
+[27.12.21 14:48:22] manuel: is it just Leo?
+[27.12.21 14:48:51] carrol: i think not, but the more load the cleaner it should be
+[27.12.21 14:49:23] manuel: can you crypt the coba dll?
+[27.12.21 14:49:39] carrol: i don't have coba
+[27.12.21 14:49:53] manuel: ``
+rundll32 coba.dll,StartW
+```
+[27.12.21 14:50:00] manuel: can you make a dll like this?
+[27.12.21 14:50:08] carrol: ok go ahead
+[27.12.21 14:50:38] manuel: ``
+dsLKHJHVh4j34kkpgoioufhjv3v
+Download: https://qaz.im/load/T5dR8K/T7yYeR
+2 dll x64
+rundll32 coba.dll,StartW
+```
+[27.12.21 14:50:49] carrol: ok
+[27.12.21 14:51:51] carrol: 2 dll x64 is what
+[27.12.21 14:52:23] manuel: there are 2 dlls
+[27.12.21 14:54:42] carrol: I don't have cobalt profile, I can only rundll profile, not sure if it will work
+[27.12.21 14:55:34] manuel: i think it will. i did a rundll on a build machine
+[27.12.21 15:01:58] carrol: with this load i can't build, crashes with error at the beginning of build, i have to deal with it
+[27.12.21 15:02:51] carrol: I'll look into it today, if anything
+[27.12.21 15:29:50] manuel: ok
+[10.01.22 18:20:32] manuel: Hello. Crypto 64?
+[10.01.22 18:29:17] carrol: hi
+[10.01.22 18:29:33] carrol: dirty
+[10.01.22 18:29:58] manuel: got it
+[10.01.22 18:33:54] carrol: you know, let's try, on the test load Acek is clean, worth a try
+[10.01.22 18:34:05] manuel: come on. I'll send it right away.
+[10.01.22 18:35:28] manuel: I uploaded LIGHT_TOTAL.exe to Carrol
+[10.01.22 18:35:37] carrol: ok
+[10.01.22 18:46:24] carrol: it's 10 mb, I thought my assembler froze to death, let's see what happens
+[10.01.22 18:46:39] manuel: it's a big one
+[10.01.22 19:13:47] carrol: so far it still builds, and how long it will last I don't know, I haven't tested it under such loads, I even wonder
+[10.01.22 19:14:33] manuel: waiting
+[10.01.22 19:39:49] manuel: How is it? any news?
+[10.01.22 19:41:18] carrol: in general, I think you need to stop and redo the assembly for such large files, it may last a week
+[10.01.22 19:41:31] manuel: all right, then cancel
+[10.01.22 19:41:37] carrol: ok
+[11.01.22 17:04:45] manuel: Hi. Can we crypt the coba?
+[11.01.22 17:06:46] carrol: hi
+[11.01.22 17:07:08] carrol: I don't have cob profile, only with another dll profile
+[11.01.22 17:07:19] manuel: let's try rundle
+[11.01.22 17:07:28] carrol: go ahead
+[11.01.22 17:09:22] manuel: beacon.dll filled in carol
+[11.01.22 17:09:31] carrol: ok
+[11.01.22 17:13:27] carrol: with this load my builder crashes, we've been over this, there's something with the relocation tables, I could not understand what the problem is
+[11.01.22 17:13:48] manuel: i see.
+[20.01.22 17:54:31] manuel: Hi. Can we crypt the 32 bit eche? Locker
+[20.01.22 17:55:15] carrol: hi. Very dirty.
+[20.01.22 17:56:02] manuel: I see.
+[03.02.22 13:57:26] manuel: Hi, can you crypto stub Leo?
+[03.02.22 14:09:18] carrol: Hi, let me try
+[03.02.22 14:10:40] manuel: put loeder and bot into carrol
+[03.02.22 14:10:52] manuel: Need clean avcek
+[03.02.22 14:10:56] carrol: ok
+[03.02.22 14:43:06] carrol: I give up, dincek can make clean avcek no way
+[03.02.22 14:43:24] carrol: Eset NOD32 is stuck forever
+[03.02.22 14:43:32] manuel: yeah there is such a problem

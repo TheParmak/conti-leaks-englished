@@ -1,0 +1,2061 @@
+2020-06-22T13:31:48 strix -> bentley
+hi
+
+2020-06-22T13:32:16 bentley -> strix
+Hi
+
+2020-06-22T13:32:29 strix -> bentley
+Rolled up a little script in python. Seems to work for cPanel and another admin area, as an experiment.
+
+2020-06-22T13:33:02 bentley -> strix
+WOW!
+
+2020-06-22T13:35:03 strix -> bentley
+I autodetect there by the window header and some other controls.
+
+2020-06-22T13:37:11 strix -> bentley
+As an experiment, I installed Selenium on Venda-Seven -- it seems to work.
+
+2020-06-22T13:38:13 strix -> bentley
+By the way, the second script with downloading files in chrome can also be done on selenium.
+
+2020-06-22T13:38:27 bentley -> strix
+Alright!
+
+2020-06-22T13:44:08 strix -> bentley
+For linux, there is a program send-notify, which sends notifications to the user in the tray and popup messages. It would be nice to find a Windows analog and use it in the second script
+
+2020-06-22T14:15:56 strix -> bentley
+Do you need support for any additional admins, other than cPanel, and don't care about them?
+
+2020-06-22T14:16:20 bentley -> strix
+Ideally we should, but the spanel is the most important thing
+
+2020-06-22T14:17:07 strix -> bentley
+if you have to, can you give me some for the primer?
+
+2020-06-22T14:17:17 bentley -> strix
+Yeah, I'll look for it.
+
+2020-06-22T14:17:34 strix -> bentley
+chtoby bylo on chem testit/
+
+2020-06-22T14:17:42 bentley -> strix
+Yep
+
+2020-06-22T15:25:03 strix -> bentley
+What's up? Any examples of other admins?
+
+2020-06-22T15:25:22 strix -> bentley
+/me came from the store -- went to get milk
+
+2020-06-22T15:25:46 bentley -> strix
+So... I'll throw in 20 more minutes.
+
+2020-06-22T17:06:02 strix -> bentley
+FUCK, I dropped my laptop on the floor with my foot on the cord :(
+
+2020-06-22T17:06:34 strix -> bentley
+There was, among other things, a script I wrote 2 days ago.
+
+2020-06-22T17:07:05 strix -> bentley
+I'll have to restore everything, buy a new drive, and re-write the script. :(
+
+2020-06-22T17:07:25 bentley -> strix
+that's so bad!!!
+
+2020-06-22T17:07:50 bentley -> strix
+:-O
+
+2020-06-22T17:08:47 strix -> bentley
+It's 8 p.m., computer stores are closed, so I'll have to buy a new drive tomorrow.
+
+2020-06-22T17:10:51 strix -> bentley
+Notebook turns on, but won't boot from hard drive - the head is jerking.
+
+2020-06-22T17:22:24 bentley -> strix
+Hana to the hard
+
+2020-06-22T17:23:41 strix -> bentley
+Yeah, you have to buy a new one.
+
+2020-06-22T17:24:46 bentley -> strix
+Get the csd. It'll be faster and won't be such a problem either
+
+2020-06-22T17:26:01 strix -> bentley
+It's probably a lot more expensive.
+
+2020-06-22T17:26:11 bentley -> strix
+no.
+
+2020-06-22T17:26:25 strix -> bentley
+For 2 ter?
+
+2020-06-22T17:26:35 bentley -> strix
+Ahhh
+
+2020-06-22T17:26:38 bentley -> strix
+ Right.
+
+2020-06-22T17:27:26 strix -> bentley
+I had two drives there, the main one was 2 ter, and the other was 750 gigs.
+
+2020-06-22T17:27:46 bentley -> strix
+28000 2 tb ssd !
+
+2020-06-22T17:27:51 bentley -> strix
+Tough!
+
+2020-06-22T17:28:08 strix -> bentley
+it's more expensive than I bought the whole laptop
+
+2020-06-22T17:28:27 bentley -> strix
+Yep.
+
+2020-06-22T17:52:52 strix -> bentley
+Huh, even GRUB is still alive on the second hard drive (the 750 gig one) :)
+
+2020-06-22T17:53:06 bentley -> strix
+Cool!
+
+2020-06-22T17:53:20 strix -> bentley
+He wasn't addressed much at all, and it's possible he fell asleep and stayed alive :)
+
+2020-06-22T17:53:32 bentley -> strix
+well
+
+2020-06-22T17:58:14 strix -> bentley
+I'll make the script all over again. There, by the way, the script was only 3 and a half kilobytes long.
+
+2020-06-22T17:58:29 bentley -> strix
+Cool!
+
+2020-06-25T15:50:11 strix -> bentley
+hi
+
+2020-06-25T15:50:32 strix -> bentley
+/me wrote the script again
+
+2020-06-25T15:51:19 bentley -> strix
+great!
+
+2020-06-25T15:51:25 strix -> bentley
+Also, rebuilt my computer. Installed a new drive, by the way, with SSD caching
+
+2020-06-25T15:51:39 bentley -> strix
+Nice topic )
+
+2020-06-25T15:51:44 strix -> bentley
+also on 2tb
+
+2020-06-25T15:52:31 strix -> bentley
+Do you want to test the script?
+
+2020-06-25T15:52:41 bentley -> strix
+Of course I do!
+
+2020-06-25T15:56:08 strix -> bentley
+https://send.firefox.com/download/6611141fc10b08fd/#hXFLVcOscEydYp9smz0XcQ
+
+2020-06-25T15:56:23 strix -> bentley
+Password "suxxXX"
+
+2020-06-25T15:57:03 bentley -> strix
+How do you run it?
+
+2020-06-25T16:00:27 strix -> bentley
+you just run it without parameters. Next to it should be the file servers.txt, with the format of the lines "url user pass", and the comments, nachinayushchiesya s ";", razresheny
+
+2020-06-25T16:05:33 strix -> bentley
+Well and selenium has to be put in first.
+
+2020-06-25T16:05:44 bentley -> strix
+"n jxnj&.
+
+2020-06-25T16:05:46 bentley -> strix
+What's that?
+
+2020-06-25T16:05:54 bentley -> strix
+How do you post it?
+
+2020-06-25T16:06:13 strix -> bentley
+where?
+
+2020-06-25T16:07:25 bentley -> strix
+How do you put it in?
+
+2020-06-25T16:07:46 strix -> bentley
+you put git-bash and python first, then pip install selenium
+
+2020-06-25T16:07:59 bentley -> strix
+Will it work on Windows?
+
+2020-06-25T16:08:17 strix -> bentley
+on the windup and put it on
+
+2020-06-25T16:11:47 bentley -> strix
+https://git-scm.com/downloads
+
+2020-06-25T16:11:47 bentley -> strix
+https://git-scm.com/downloads
+
+2020-06-25T16:12:06 bentley -> strix
+From here put git-bash ?
+
+2020-06-25T16:14:11 strix -> bentley
+I think so.
+
+2020-06-25T16:14:11 strix -> bentley
+I think so.
+
+2020-06-25T16:14:38 strix -> bentley
+and then install Python from the off site
+
+2020-06-25T16:20:52 bentley -> strix
+Put a python on it.
+
+2020-06-25T16:20:52 bentley -> strix
+Put a python on it.
+
+2020-06-25T16:20:58 bentley -> strix
+How to put pip install selenium ?
+
+2020-06-25T16:24:28 strix -> bentley
+Does python run from a git-bash window?
+
+2020-06-25T16:24:28 strix -> bentley
+Does python run from a git-bash window?
+
+2020-06-25T16:25:14 bentley -> strix
+how do you get it to run?
+
+2020-06-25T16:25:34 strix -> bentley
+type python
+
+2020-06-25T16:25:57 bentley -> strix
+bash: python: command not found
+
+2020-06-25T16:26:29 strix -> bentley
+So you must put the path to the python binary in the PATH
+
+2020-06-25T16:27:44 bentley -> strix
+What file should I put it in?
+
+2020-06-25T16:29:11 strix -> bentley
+Not in the file, but where you write the paths in the Windows -- System Properties->Paths
+
+2020-06-25T16:29:11 strix -> bentley
+Not in the file, but where you write the paths in the Windows -- System Properties->Paths
+
+2020-06-25T16:30:32 bentley -> strix
+environment variables?
+
+2020-06-25T16:31:50 strix -> bentley
+Yep, and then look for the PATH, add c:\Program Files\Python (or wherever you have python.exe installed) to the end of the path, after the semicolon
+
+2020-06-25T16:31:50 strix -> bentley
+Yep, and then look for the PATH, add c:\Program Files\Python (or wherever you have python.exe installed) to the end of the path, after the semicolon
+
+2020-06-25T16:32:36 bentley -> strix
+C:\Users\Administrator\AppData\Local\Programs\Python\Python38-32
+
+2020-06-25T16:32:42 strix -> bentley
+Then restart the git-bash window and python should start
+
+2020-06-25T16:32:47 bentley -> strix
+I had it put there.
+
+2020-06-25T16:32:57 bentley -> strix
+C:\Users\Administrator\AppData\Local\Programs\Python\Python38-32; do I do that?
+
+2020-06-25T16:33:06 bentley -> strix
+You don't need to write the eche itself?
+
+2020-06-25T16:33:27 strix -> bentley
+No, it's some data from python. And pynon itself is somewhere in Program Files -- look there
+
+2020-06-25T16:33:43 strix -> bentley
+you don't need the exe itself, you need the dir where it is located
+
+2020-06-25T16:35:08 bentley -> strix
+I have an exe there and there is nothing in the program files
+
+2020-06-25T16:35:08 bentley -> strix
+I have an exe there and there is nothing in the program files
+
+2020-06-25T16:35:18 strix -> bentley
+oddly enough
+
+2020-06-25T16:35:28 strix -> bentley
+well, write this dir
+
+2020-06-25T16:35:36 bentley -> strix
+I prescribed
+
+2020-06-25T16:35:40 bentley -> strix
+It won't start
+
+2020-06-25T16:35:44 bentley -> strix
+I have a server wind.
+
+2020-06-25T16:35:52 strix -> bentley
+did you restart the window?
+
+2020-06-25T16:36:43 bentley -> strix
+Of course
+
+2020-06-25T16:37:30 strix -> bentley
+in the git-bash window, type echo $PATH -- did it say the dir you added?
+
+2020-06-25T16:38:13 strix -> bentley
+and the drive letter before \users\administrator\... added?
+
+2020-06-25T16:38:16 bentley -> strix
+no
+
+2020-06-25T16:38:21 bentley -> strix
+Reboot the windup?
+
+2020-06-25T16:38:41 strix -> bentley
+You don't need to reboot. You just spelled it wrong somewhere.
+
+2020-06-25T16:38:56 strix -> bentley
+Show the PATH/ string in its entirety.
+
+2020-06-25T16:39:33 bentley -> strix
+C:\Users\Administrator\AppData\Local\Programs\Python\Python38-32;
+
+2020-06-25T16:40:13 strix -> bentley
+No, fully PATH
+
+2020-06-25T16:40:54 strix -> bentley
+That's not the only thing you have there, is it?
+
+2020-06-25T16:42:11 bentley -> strix
+So...
+
+2020-06-25T16:42:41 bentley -> strix
+Hfpj,hfkcz
+
+2020-06-25T16:42:44 bentley -> strix
+Got it figured out.
+
+2020-06-25T16:42:50 bentley -> strix
+Python is up and running.
+
+2020-06-25T16:42:59 strix -> bentley
+What was it?
+
+2020-06-25T16:43:09 strix -> bentley
+okay
+
+2020-06-25T16:43:57 bentley -> strix
+I wrote to the wrong place.)
+
+2020-06-25T16:44:18 bentley -> strix
+Tuck. what do I do next?
+
+2020-06-25T16:44:48 strix -> bentley
+now exit python, and in the git-bash window type "pip install selenium"
+
+2020-06-25T16:45:46 bentley -> strix
+bash: pip install selenium: command not found
+
+2020-06-25T16:45:46 bentley -> strix
+bash: pip install selenium: command not found
+
+2020-06-25T16:45:48 bentley -> strix
+Heuftncz
+
+2020-06-25T16:45:51 bentley -> strix
+Scolded by
+
+2020-06-25T16:46:18 strix -> bentley
+The pip command should go with python.
+
+2020-06-25T16:46:38 strix -> bentley
+Isn't it next to python.exe?
+
+2020-06-25T16:49:33 bentley -> strix
+Tux...
+
+2020-06-25T16:49:54 bentley -> strix
+What should be lying next to it?
+
+2020-06-25T16:50:07 strix -> bentley
+pip.exe
+
+2020-06-25T16:50:19 bentley -> strix
+no
+
+2020-06-25T16:50:23 bentley -> strix
+where to get it?
+
+2020-06-25T16:50:32 strix -> bentley
+look in neighboring dirs
+
+2020-06-25T16:50:50 strix -> bentley
+bin something
+
+2020-06-25T16:52:42 bentley -> strix
+Found it, put it down.
+
+2020-06-25T16:52:54 strix -> bentley
+no need to move
+
+2020-06-25T16:52:57 bentley -> strix
+Do I spell it with quotation marks?
+
+2020-06-25T16:53:18 strix -> bentley
+it is better to add the path to the second directive to the PATH
+
+2020-06-25T16:53:33 strix -> bentley
+Are there spaces in there?
+
+2020-06-25T16:53:51 strix -> bentley
+without quotation marks, supposedly
+
+2020-06-25T16:54:15 bentley -> strix
+No gaps
+
+2020-06-25T16:54:29 strix -> bentley
+So the quotes are unnecessary.
+
+2020-06-25T16:54:44 bentley -> strix
+>>> pip install selenium
+  File "<stdin>", line 1
+    pip install selenium
+        ^
+SyntaxError: invalid syntax
+
+2020-06-25T16:54:47 bentley -> strix
+Here's what it says
+
+2020-06-25T16:55:19 strix -> bentley
+So you're typing in python, and you should be typing in bash.
+
+2020-06-25T16:55:27 strix -> bentley
+come out of the python
+
+2020-06-25T16:55:46 strix -> bentley
+exit()
+
+2020-06-25T16:56:30 bentley -> strix
+GO!
+
+2020-06-25T16:56:42 bentley -> strix
+Chet downloaded and installed
+
+2020-06-25T16:57:39 strix -> bentley
+Well, now all that's left is to download Chrome, plus selenium chromedriver, of the same version, and put it on the PATH.
+
+2020-06-25T16:58:00 strix -> bentley
+you can do version 83
+
+2020-06-25T16:58:16 strix -> bentley
+Google "selenium chromedrivvvvvvvvver"
+
+2020-06-25T16:58:32 strix -> bentley
+selenium chromedriver
+
+2020-06-25T16:58:37 bentley -> strix
+Ok
+
+2020-06-25T17:12:27 strix -> bentley
+What's up?
+
+2020-06-25T17:17:07 bentley -> strix
+Installed the chrome driver
+
+2020-06-25T17:17:15 bentley -> strix
+I ran your script.
+
+2020-06-25T17:17:26 bentley -> strix
+The output is an empty servers_filtered.txt file
+
+2020-06-25T17:18:26 strix -> bentley
+Did you add anything to the servers.txt?
+
+2020-06-25T17:18:50 bentley -> strix
+Of course it is 24kb with a list of servers
+
+2020-06-25T17:19:14 strix -> bentley
+show me an example of a line
+
+2020-06-25T17:19:37 bentley -> strix
+so. I ran it just by clicking on the script itself
+
+2020-06-25T17:19:44 bentley -> strix
+How do you run it?
+
+2020-06-25T17:20:10 strix -> bentley
+What do you mean by clicking? You have to run ./col.py from the command line
+
+2020-06-25T17:21:51 bentley -> strix
+/usr/bin/env: 'python3': No such file or directory
+
+2020-06-25T17:21:55 bentley -> strix
+Ntgthm nfrjt
+
+2020-06-25T17:22:02 bentley -> strix
+Now run this from the line
+
+2020-06-25T17:25:43 strix -> bentley
+change python3 to python
+
+2020-06-25T17:26:08 bentley -> strix
+where to change?
+
+2020-06-25T17:26:21 strix -> bentley
+in the script, of course
+
+2020-06-25T17:26:29 strix -> bentley
+early on in
+
+2020-06-25T17:26:46 bentley -> strix
+do
+
+2020-06-25T17:27:03 strix -> bentley
+Try running it again now
+
+2020-06-25T17:27:21 bentley -> strix
+c:/1/col.py
+Traceback (most recent call last):
+  File "c:/1/col.py", line 92, in <module>
+    with open(infile, "r") as fi:
+FileNotFoundError: [Errno 2] No such file or directory: 'servers.txt'
+
+2020-06-25T17:27:31 bentley -> strix
+Although there is a phalo next to it in folder 1
+
+2020-06-25T17:29:51 strix -> bentley
+strange
+
+2020-06-25T17:30:20 strix -> bentley
+What if infile is replaced by "./servers.txt", and similarly outfile?
+
+2020-06-25T17:32:32 bentley -> strix
+FileNotFoundError: [Errno 2] No such file or directory: './servers.txt'
+
+2020-06-25T17:32:34 bentley -> strix
+Likewise
+
+2020-06-25T17:33:54 strix -> bentley
+it is strange that it found the outfile but not the infile
+
+2020-06-25T17:34:11 strix -> bentley
+maybe an access rights issue?
+
+2020-06-25T17:35:47 bentley -> strix
+How do you fix it?
+
+2020-06-25T17:36:10 bentley -> strix
+Let me try to make it on a virtual machine
+
+2020-06-25T17:36:23 bentley -> strix
+On 7 or on 10 put everything?
+
+2020-06-25T17:36:40 strix -> bentley
+you can have any
+
+2020-06-25T17:36:50 bentley -> strix
+Ok
+
+2020-06-25T17:37:45 strix -> bentley
+Looks like the same thing happened with the verlhelle script. Looks like you need to find the current dir and add it to have the full path. I don't know what the fuck the windup doesn't want to open in the current directory.
+
+2020-06-25T17:38:22 bentley -> strix
+The server wind is giving me a headache.
+
+2020-06-25T17:40:48 strix -> bentley
+I'll edit the script a bit more.
+
+2020-06-25T17:45:51 strix -> bentley
+try here: https://send.firefox.com/download/bd9d99084a8614e0/#nTTMeuxTmY0Yu6rVEHbcuw (password "suxxXX")
+
+2020-06-25T17:47:27 bentley -> strix
+$ c:/1/bot.py
+c:/1/bot.py: line 1: from: command not found
+c:/1/bot.py: line 2: from: command not found
+c:/1/bot.py: line 3: from: command not found
+c:/1/bot.py: line 4: from: command not found
+c:/1/bot.py: line 5: from: command not found
+c:/1/bot.py: line 6: import: command not found
+c:/1/bot.py: line 7: import: command not found
+c:/1/bot.py: line 8: import: command not found
+c:/1/bot.py: line 9: import: command not found
+c:/1/bot.py: line 10: import: command not found
+c:/1/bot.py: line 11: from: command not found
+c:/1/bot.py: line 12: from: command not found
+c:/1/bot.py: line 13: import: command not found
+c:/1/bot.py: line 14: import: command not found
+c:/1/bot.py: line 15: import: command not found
+c:/1/bot.py: line 17: n: command not found
+c:/1/bot.py: line 20: api_id: command not found
+c:/1/bot.py: line 21: api_hash: command not found
+c:/1/bot.py: line 23: syntax error near unexpected token `('
+c:/1/bot.py: line 23: `client = TelegramClient('anon', api_id, api_hash)'
+
+2020-06-25T17:47:36 bentley -> strix
+This is what it gave out
+
+2020-06-25T17:50:52 strix -> bentley
+Oh man. I threw the wrong file. :)
+
+2020-06-25T17:51:47 strix -> bentley
+https://send.firefox.com/download/d959221d3b4b0677/#l99uvSxEJH41PXozTeXtZA
+
+2020-06-25T17:51:59 bentley -> strix
+He didn't do anything to the car? ))
+
+2020-06-25T17:52:35 strix -> bentley
+it did not execute because the path to the interpreter is missing at the beginning
+
+2020-06-25T17:53:31 bentley -> strix
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\\Administrator/servers.txt'
+
+2020-06-25T17:53:52 bentley -> strix
+I have everything in c:/1
+
+2020-06-25T17:54:15 strix -> bentley
+and in the git-bash window, what is the current dir? c:/1 ?
+
+2020-06-25T17:54:42 strix -> bentley
+or C:\\Users\\Administrator ?
+
+2020-06-25T17:55:01 bentley -> strix
+Yes c:/Users/Administrator
+
+2020-06-25T17:55:15 strix -> bentley
+cd c:/1
+
+2020-06-25T17:56:07 bentley -> strix
+Done. It ran without errors. File is empty in the output.
+
+2020-06-25T17:56:47 strix -> bentley
+Show me an example of a line in servers.txt
+
+2020-06-25T17:57:30 strix -> bentley
+Can you give me your servers.txt?
+
+2020-06-25T17:57:51 bentley -> strix
+Sec
+
+2020-06-25T17:59:04 bentley -> strix
+suxxXX
+
+2020-06-25T17:59:09 bentley -> strix
+https://send.firefox.com/download/7f5c4224b8e95676/#ekV3j1OeTWQbuyRwUoaEMw
+
+2020-06-25T18:02:21 strix -> bentley
+That's not the right format. It should be like this:
+
+2020-06-25T18:02:27 strix -> bentley
+; --
+
+; real one
+http://abcoms.co.uk:2082<------><------>xdftxktu<------>!3%!eKeq50MF
+
+; fake one
+https://github.com/bol-van/zapret/<---->asd<---><------>zxc
+
+2020-06-25T18:02:51 strix -> bentley
+Lines like "url user pass"
+
+2020-06-25T18:03:02 strix -> bentley
+you can separate with spaces or tabs
+
+2020-06-25T18:03:23 strix -> bentley
+comments like "; tralala" are allowed
+
+2020-06-25T18:04:20 bentley -> strix
+I get this one with spaces.
+
+2020-06-25T18:04:34 bentley -> strix
+Is there any way to get it into the form the scripts need?
+
+2020-06-25T18:04:47 strix -> bentley
+I don't even know how to parse one of these
+
+2020-06-25T18:05:28 bentley -> strix
+Is there any way to make a script that would make it look right?
+
+2020-06-25T18:06:25 strix -> bentley
+Well, you could try writing a converter in awk.
+
+2020-06-25T18:07:07 bentley -> strix
+That's a lot of hemorrhoids. All over the place )
+
+2020-06-25T19:12:21 strix -> bentley
+I don't know what to make of this:
+
+2020-06-25T19:12:25 strix -> bentley
+IBTESAMA-PC_W617601.E6626AEEDDEE4C882CE77AE87D7B5991 - 83.110.213.237 - AE - Sha
+<------><------><------>^M
+Chrome^M
+<------>https://dubaiserver.big-bang.ae:2083/cpsess0242924384/frontend/paper_lan
+<------>^M
+b)w&Q=gFRF;0^M
+<------>2020-01-29 09:13:39.539547^M
+
+2020-06-25T19:12:42 strix -> bentley
+this b)w&Q=gFRF;0 seems to be the password
+
+2020-06-25T19:12:48 strix -> bentley
+Where's the login?
+
+2020-06-25T19:13:03 strix -> bentley
+empty, is it?
+
+2020-06-25T19:13:18 strix -> bentley
+I don't have that option.
+
+2020-06-25T19:14:46 bentley -> strix
+https://www.omegasystemsuae.com:2083/
+omegasys - login
+	
+cpsess8568693448 - password
+
+2020-06-25T19:16:29 strix -> bentley
+Yes, but sometimes there are some irregularities in the format
+
+2020-06-25T19:16:43 strix -> bentley
+some +++++++ more after URLs
+
+2020-06-25T19:16:57 strix -> bentley
+sometimes the login is missing altogether
+
+2020-06-25T19:17:12 strix -> bentley
+My understanding is that it goes first.
+
+2020-06-25T19:17:26 strix -> bentley
+<tab>https://...
+
+2020-06-25T19:17:30 strix -> bentley
+then login
+
+2020-06-25T19:17:36 strix -> bentley
+then a blank line
+
+2020-06-25T19:17:40 strix -> bentley
+then the password
+
+2020-06-25T19:17:50 strix -> bentley
+Then the trash I skip
+
+2020-06-25T19:18:13 strix -> bentley
+But in some places the login is missing for some reason
+
+2020-06-25T19:20:17 bentley -> strix
+Yes, but sometimes there are some irregularities in the format
+
+2020-06-25T19:20:17 bentley -> strix
+some +++++++ more after URLs
+
+2020-06-25T19:20:17 bentley -> strix
+sometimes the login is missing altogether
+
+2020-06-25T19:20:17 bentley -> strix
+My understanding is that it goes first.
+
+2020-06-25T19:20:17 bentley -> strix
+<tab>https://...
+
+2020-06-25T19:20:17 bentley -> strix
+then login
+
+2020-06-25T19:20:17 bentley -> strix
+then a blank line
+
+2020-06-25T19:20:17 bentley -> strix
+then the password
+
+2020-06-25T19:20:17 bentley -> strix
+Then the trash I skip
+
+2020-06-25T19:20:17 bentley -> strix
+But in some places the login is missing for some reason
+
+2020-06-26T13:26:48 strix -> bentley
+Prestige eagain
+
+2020-06-26T13:27:06 bentley -> strix
+Hello
+
+2020-06-26T13:27:21 strix -> bentley
+Yesterday, I mapped out the source data converter, plus I tweaked the script a bit.
+
+2020-06-26T13:27:38 bentley -> strix
+great
+
+2020-06-26T13:28:10 strix -> bentley
+Shall we try it?
+
+2020-06-26T13:28:33 bentley -> strix
+Sure, but in about an hour or so
+
+2020-06-26T13:28:59 strix -> bentley
+Yeah, I'm gonna run to the store, too.
+
+2020-06-26T15:14:29 bentley -> strix
+I'm ready if you are.
+
+2020-06-26T15:42:11 strix -> bentley
+now
+
+2020-06-26T15:43:20 strix -> bentley
+script: https://send.firefox.com/download/ff77cc5c2eef655b/#DB4Ox9ojIVWZeE0Yx7CITg
+
+2020-06-26T15:43:47 bentley -> strix
+What's the password?
+
+2020-06-26T15:43:49 strix -> bentley
+sorry -- old version
+
+2020-06-26T15:43:57 strix -> bentley
+I'll give you a newer one.
+
+2020-06-26T15:46:12 strix -> bentley
+script: https://send.firefox.com/download/343ce46cd2591550/#kpUpGzv9OezhZMnA-7xj1A
+
+2020-06-26T15:46:56 strix -> bentley
+converter: https://send.firefox.com/download/08e0e3b35298f97a/#_BxM7qCTWGOCKZ0C5rDH0Q
+
+2020-06-26T15:47:13 strix -> bentley
+password "suxxXX" in both cases
+
+2020-06-26T15:47:29 bentley -> strix
+Yep
+
+2020-06-26T15:47:44 strix -> bentley
+change python3 to python in the script yet
+
+2020-06-26T15:48:21 bentley -> strix
+Tuck.
+
+2020-06-26T15:48:25 bentley -> strix
+ How is everything working?
+
+2020-06-26T15:50:50 strix -> bentley
+take the file with the source data, and convert: awk -f conv.awk server0.txt >servers.txt
+
+2020-06-26T15:51:10 strix -> bentley
+awk.exe must be bundled with git-bash
+
+2020-06-26T15:52:08 strix -> bentley
+where server0.txt is the file with the initial data
+
+2020-06-26T15:53:28 bentley -> strix
+Run it appeared servers.txt empty
+
+2020-06-26T15:53:57 strix -> bentley
+did you put server0.txt?
+
+2020-06-26T15:54:15 bentley -> strix
+yes
+
+2020-06-26T15:54:41 bentley -> strix
+$ dir
+col.py conv.awk server0.txt servers.txt
+
+2020-06-26T15:54:41 strix -> bentley
+did you change the dir to the one where all the files are located?
+
+2020-06-26T15:54:48 bentley -> strix
+lf rjytxyj
+
+2020-06-26T15:54:51 bentley -> strix
+Absolutely.
+
+2020-06-26T15:55:34 strix -> bentley
+strange
+
+2020-06-26T16:01:14 strix -> bentley
+I'll probably have to put the windup in my test tube and check it out.
+
+2020-06-26T16:01:33 bentley -> strix
+Yeah (
+
+2020-06-26T16:01:35 strix -> bentley
+I used to have it, but it got ruined along with the old screw
+
+2020-06-26T16:01:43 bentley -> strix
+Got it
+
+2020-06-26T16:02:07 strix -> bentley
+I have youn7 32-bit, but something doesn't seem to want to install it on 32-bit :(
+
+2020-06-26T16:02:22 bentley -> strix
+clearly
+
+2020-06-26T16:15:45 strix -> bentley
+/me put git-bash under youn7-32
+
+2020-06-26T16:16:18 strix -> bentley
+Indeed, conv.awk does not output anything
+
+2020-06-26T16:16:22 strix -> bentley
+wonders
+
+2020-06-26T16:17:37 strix -> bentley
+hmm, that's weird. Try to replace the line RS="\r\n" at the beginning of the script. The comment symbol is a lattice #
+
+2020-06-26T16:17:46 strix -> bentley
+# RS="\r\n"
+
+2020-06-26T16:18:53 strix -> bentley
+should work
+
+2020-06-26T16:19:19 bentley -> strix
+So.
+
+2020-06-26T16:20:13 bentley -> strix
+PFrjvtynbnm ghjcnj&
+
+2020-06-26T16:20:17 bentley -> strix
+Just comment it out?
+
+2020-06-26T16:21:09 strix -> bentley
+Yes, just put a comment character before the line RS="\r\n"
+
+2020-06-26T16:21:19 bentley -> strix
+Ok
+
+2020-06-26T16:21:32 bentley -> strix
+Same thing
+
+2020-06-26T16:21:44 strix -> bentley
+And then try awk -f conv.awk server0.txt >servers.txt again
+
+2020-06-26T16:22:26 strix -> bentley
+What's the same thing? -- It works for me.
+
+2020-06-26T16:22:27 bentley -> strix
+Also an empty dock on the way out.
+
+2020-06-26T16:22:56 strix -> bentley
+Did you put yesterday's servers.txt? Or some other file?
+
+2020-06-26T16:23:25 bentley -> strix
+Of course yesterday renamed it server0.txt
+
+2020-06-26T16:23:48 strix -> bentley
+That's weird.
+
+2020-06-26T16:23:51 bentley -> strix
+Bkb yt yflj,skj&
+
+2020-06-26T16:23:56 bentley -> strix
+Hmmm
+
+2020-06-26T16:23:59 strix -> bentley
+I have everything working under the windup
+
+2020-06-26T16:24:15 bentley -> strix
+Is it because of the server?
+
+2020-06-26T16:24:34 strix -> bentley
+What difference does it make, server or no server?
+
+2020-06-26T16:24:46 bentley -> strix
+I don't know if there's anything wrong with it.
+
+2020-06-26T16:24:48 strix -> bentley
+Do you have you take out 2012?
+
+2020-06-26T16:24:55 bentley -> strix
+2016
+
+2020-06-26T16:25:05 strix -> bentley
+I'm going to try it on another machine with wine 2012
+
+2020-06-26T16:25:17 strix -> bentley
+I don't have 2016, unfortunately
+
+2020-06-26T16:26:15 strix -> bentley
+Are you sure you type the command like this: awk -f conv.awk server0.txt >servers.txt
+
+2020-06-26T16:26:17 strix -> bentley
+,
+
+2020-06-26T16:26:18 strix -> bentley
+?
+
+2020-06-26T16:26:32 strix -> bentley
+> before servers.txt ?
+
+2020-06-26T16:27:04 bentley -> strix
+phttp://prnt.sc/t71zsp
+
+2020-06-26T16:27:09 bentley -> strix
+Screenshot
+
+2020-06-26T16:33:48 strix -> bentley
+Everything works on win 2012
+
+2020-06-26T16:34:01 bentley -> strix
+I dunno.
+
+2020-06-26T16:34:06 bentley -> strix
+Come on over to my server.
+
+2020-06-26T16:34:20 strix -> bentley
+And show me how you commented out the line in conv.awk?
+
+2020-06-26T16:34:37 strix -> bentley
+Or give me access
+
+2020-06-26T16:34:43 bentley -> strix
+BEGIN {
+    #RS="\r\n"
+}
+
+2020-06-26T16:34:46 bentley -> strix
+Like this
+
+2020-06-26T16:35:07 strix -> bentley
+Holy shit
+
+2020-06-26T16:35:34 strix -> bentley
+Would RS="\n" make any difference?
+
+2020-06-26T16:36:26 bentley -> strix
+no way
+
+2020-06-26T16:37:09 strix -> bentley
+Then give me access and I'll try your machine
+
+2020-06-26T16:37:26 bentley -> strix
+now
+
+2020-06-26T16:38:02 strix -> bentley
+Okay, 5 seconds, I'm going to get some water -- I have to go out for about 10 minutes.
+
+2020-06-26T16:38:14 bentley -> strix
+Yeah while I put the ticker
+
+2020-06-26T16:49:08 strix -> bentley
+Or maybe you have server0.txt on the wrong system? Can you show me?
+
+2020-06-26T16:49:41 bentley -> strix
+I sent it to you yesterday.
+
+2020-06-26T16:49:44 bentley -> strix
+Giving a remote?
+
+2020-06-26T16:52:04 strix -> bentley
+come on
+
+2020-06-26T16:52:15 bentley -> strix
+1 460 943 804
+
+2020-06-26T16:52:21 bentley -> strix
+g4ex87
+
+2020-06-26T16:52:34 strix -> bentley
+So the file is exactly like that? That's weird.
+
+2020-06-26T16:52:41 bentley -> strix
+YES
+
+2020-06-26T17:02:46 strix -> bentley
+What version of teamviewer do you have?
+
+2020-06-26T17:03:03 bentley -> strix
+15
+
+2020-06-26T17:03:28 strix -> bentley
+13/14 can't you get a hold of it?
+
+2020-06-26T17:03:42 bentley -> strix
+Which one?
+
+2020-06-26T17:03:50 strix -> bentley
+I have 13 and can't connect
+
+2020-06-26T17:04:10 bentley -> strix
+13
+
+2020-06-26T17:04:13 bentley -> strix
+ I'll look for it.
+
+2020-06-26T17:04:15 strix -> bentley
+You can't put a newer one on winxp
+
+2020-06-26T17:04:57 strix -> bentley
+There are different versions on the off site. By the way, you don't have to install it - you can just run it in portable mode.
+
+2020-06-26T17:05:12 bentley -> strix
+ok
+
+2020-06-26T17:07:06 bentley -> strix
+1 460 943 776
+
+2020-06-26T17:07:18 bentley -> strix
+g86iz4
+
+2020-06-26T17:08:13 strix -> bentley
+"The remote machine is running a too old version which is out of date..."
+
+2020-06-26T17:08:33 bentley -> strix
+13.2.36219
+
+2020-06-26T17:08:45 bentley -> strix
+Version
+
+2020-06-26T17:08:49 strix -> bentley
+Where did you get this version? Looks like it's even older than mine.
+
+2020-06-26T17:09:02 bentley -> strix
+on the site
+
+2020-06-26T17:09:11 strix -> bentley
+hmm, that's weird.
+
+2020-06-26T17:09:17 strix -> bentley
+I have the same
+
+2020-06-26T17:09:40 bentley -> strix
+is there an enidesk?
+
+2020-06-26T17:10:35 strix -> bentley
+Where do you get it? I've never used it.
+
+2020-06-26T17:11:03 strix -> bentley
+Okay, let's try version 14 under win7
+
+2020-06-26T17:11:10 bentley -> strix
+https://download.anydesk.com/AnyDesk.exe?_ga=2.230648092.1468802244.1593191456-382916044.1570447225
+
+2020-06-26T17:11:18 strix -> bentley
+It's a pain in the ass with these versions
+
+2020-06-26T17:11:29 bentley -> strix
+Yes they are greedy in timka
+
+2020-06-26T17:11:39 bentley -> strix
+come on anidesc.
+
+2020-06-26T17:13:05 strix -> bentley
+Where did you get the 15? I only see 14 on www.teamviewer.com
+
+2020-06-26T17:13:20 bentley -> strix
+It defaults to 15.
+
+2020-06-26T17:14:17 strix -> bentley
+Oh, I see -- that's if you select latest
+
+2020-06-26T17:17:08 strix -> bentley
+Okay, downloaded version 15 -- let's try it
+
+2020-06-26T17:17:23 bentley -> strix
+1 460 943 776
+
+2020-06-26T17:17:31 bentley -> strix
+n5r76f
+
+2020-06-26T17:23:34 strix -> bentley
+minimize Firefox, please
+
+2020-06-26T17:24:06 strix -> bentley
+How do you switch the layout to English?
+
+2020-06-26T17:27:13 strix -> bentley
+everything works
+
+2020-06-26T17:27:36 strix -> bentley
+I didn't see you RS="\r\n" commented
+
+2020-06-26T17:27:48 strix -> bentley
+it was just like the original
+
+2020-06-26T17:28:13 bentley -> strix
+I put the grille too close.
+
+2020-06-26T17:28:28 bentley -> strix
+Now what about the other script?
+
+2020-06-26T17:28:36 strix -> bentley
+What do you mean, too close?
+
+2020-06-26T17:29:33 strix -> bentley
+Well, it's all converted.
+
+2020-06-26T17:29:44 bentley -> strix
+yes I see
+
+2020-06-26T17:29:46 strix -> bentley
+Now you can run col.py
+
+2020-06-26T17:29:50 bentley -> strix
+give me the second script
+
+2020-06-26T17:30:19 strix -> bentley
+Yeah, in the second script first replace python3 with python at the beginning
+
+2020-06-26T17:30:38 strix -> bentley
+And you can run it in the same window as ./col.py
+
+2020-06-26T17:30:48 bentley -> strix
+do it already
+
+2020-06-26T17:31:52 strix -> bentley
+hmm
+
+2020-06-26T17:32:26 strix -> bentley
+Did you put chromedriver.exe on the PATH?
+
+2020-06-26T17:32:40 strix -> bentley
+Did you put chrome on?
+
+2020-06-26T17:32:43 bentley -> strix
+I have it in my downloads.
+
+2020-06-26T17:34:25 strix -> bentley
+now restart the git-bash window
+
+2020-06-26T17:35:45 strix -> bentley
+What is DevTools?
+
+2020-06-26T17:36:10 bentley -> strix
+hz
+
+2020-06-26T17:36:10 strix -> bentley
+Did you put chrome on?
+
+2020-06-26T17:36:17 bentley -> strix
+yes
+
+2020-06-26T17:36:24 bentley -> strix
+chromdrive also downloaded
+
+2020-06-26T17:37:14 strix -> bentley
+What is DevTools listening on... ?
+
+2020-06-26T17:37:24 bentley -> strix
+ht )
+
+2020-06-26T18:03:01 strix -> bentley
+strange, it doesn't work for me in vin7-32 either, for some fuckin' reason
+
+2020-06-26T18:03:05 strix -> bentley
+we should look at
+
+2020-06-26T18:03:11 strix -> bentley
+you haven't left yet?
+
+2020-06-26T18:03:15 bentley -> strix
+No
+
+2020-06-26T18:03:28 bentley -> strix
+Windows...
+
+2020-06-26T18:03:47 strix -> bentley
+I'll probably poke around some more in the evening.
+
+2020-06-26T18:03:55 bentley -> strix
+Ok )
+
+2020-06-26T18:03:56 strix -> bentley
+Till Monday.
+
+2020-06-26T18:04:10 bentley -> strix
+Yeah and you have a good rest ))
+
+2020-06-26T18:04:40 strix -> bentley
+There was a second problem, with dovnload files. -- Can't you give me examples of such files, so I could poke around?
+
+2020-06-26T18:05:15 bentley -> strix
+Tux.
+
+2020-06-26T18:05:33 bentley -> strix
+You have to upload them to one of these addresses and try to download them in chrome.
+
+2020-06-26T18:06:13 bentley -> strix
+I'll pour it on.
+
+2020-06-26T18:06:16 strix -> bentley
+Well can you download one for now, and give the URL?
+
+2020-06-26T18:06:42 strix -> bentley
+At least to see what kind of varnings chrome gives out.
+
+2020-06-26T18:06:52 bentley -> strix
+Yep
+
+2020-06-26T18:07:34 strix -> bentley
+Strange, in the wine the page opens, but the login / password are not entered, and the browser closes, for some reason.
+
+2020-06-26T18:07:46 strix -> bentley
+-- I'm talking about the first problem.
+
+2020-06-26T18:09:09 bentley -> strix
+https://copyrightlive-ksa.com/Preview_Report.exe
+
+2020-06-26T18:09:17 bentley -> strix
+In chrome alt.
+
+2020-06-26T18:09:37 bentley -> strix
+Chrome has blocked the file as dangerous .
+
+2020-06-26T18:11:09 strix -> bentley
+I get 404
+
+2020-06-26T18:11:23 bentley -> strix
+Hmmm.
+
+2020-06-26T18:11:27 bentley -> strix
+I'm downloading
+
+2020-06-26T18:12:50 strix -> bentley
+Ah, there's an underscore, I thought it was a space.
+
+2020-06-26T18:12:55 strix -> bentley
+Yes, there is an alert.
+
+2020-06-26T18:13:16 bentley -> strix
+greenmountains.ae/YAS42.exe
+
+2020-06-26T18:13:24 bentley -> strix
+That's a different alert right there.
+
+2020-06-26T18:13:32 bentley -> strix
+The file is rarely downloaded
+
+2020-06-26T18:15:45 strix -> bentley
+ERR_SSL+VERSION_OR_CIPHER_MISSMATCH came up
+
+2020-06-26T18:15:57 bentley -> strix
+no https
+
+2020-06-26T18:16:01 bentley -> strix
+simple http
+
+2020-06-26T18:16:21 strix -> bentley
+Ah, it's not .com, it's .ae.
+
+2020-06-26T18:18:55 bentley -> strix
+https://ebeautytrade.com/calc.exe
+
+2020-06-26T18:19:06 bentley -> strix
+And this one rocks without alerts.
+
+2020-06-26T18:20:02 strix -> bentley
+Yeah, I see. Would it be ok if I make a file with this URL on each line and try to download them one by one?
+
+2020-06-26T18:21:12 strix -> bentley
+"YASL42.exe file is rarely downloaded. Maybe it's malicious" - I guess that should be ignored?
+
+2020-06-26T18:21:26 bentley -> strix
+Another nuance. There will be different files and links all the time and you need to check the link, which should be somehow set in the prog. And the program must somehow report that the file stopped being downloaded. Let's go chrome alerts
+
+2020-06-26T18:21:34 strix -> bentley
+Here's how to distinguish between different alerts, I don't know yet.
+
+2020-06-26T18:22:09 bentley -> strix
+When you get alerts from an initially clean link, you need to let the user know it appeared. With a sound or a popup
+
+2020-06-26T18:22:42 strix -> bentley
+Well the input file for the script should be changed if new links appear.
+
+2020-06-26T18:24:38 strix -> bentley
+Well, I have send_notify in linux. Different programs can send alerts through it, and they are shown in a popup message or in an icon in the tray. I don't know how to do it in Windows. Maybe someone knows a similar Windows program?
+
+2020-06-26T18:25:51 bentley -> strix
+What kind of linux do you have? Maybe I should download a virtual machine with it and not fuck my brains out with the wine for the business?
+
+2020-06-26T18:26:20 strix -> bentley
+Debian 10 I have.
+
+2020-06-26T18:26:28 bentley -> strix
+Doesn't she give sounds like notifications?
+
+2020-06-26T18:26:36 bentley -> strix
+Like a siren if a file is stolen)
+
+2020-06-26T18:26:43 strix -> bentley
+You can try it, of course.
+
+2020-06-26T18:27:01 bentley -> strix
+Let's do it this weekend.
+
+2020-06-26T18:27:25 strix -> bentley
+No sounds -- a pop-up message, and the tray icon has a menu that displays a list of unviewed messages.
+
+2020-06-26T18:27:59 bentley -> strix
+I just have it minimized if there is a sound alert I will know what to open and check
+
+2020-06-26T18:28:08 bentley -> strix
+That would be awesome!
+
+2020-06-26T18:28:46 strix -> bentley
+Well, you can run some program that plays an audio file
+
+2020-06-26T18:28:54 strix -> bentley
+at alerter
+
+2020-06-26T18:37:34 strix -> bentley
+Oh man, I found the reason why it doesn't work under wendas - the header of the cPanel window is in russian, while I expected it to be in english.
+
+2020-06-26T18:37:43 strix -> bentley
+I'll fix that, I guess.
+
+2020-06-26T18:40:13 strix -> bentley
+hmmm, why does the Venda ignore LANG=en_US?
+
+2020-06-26T18:40:29 bentley -> strix
+What a bastard.
+
+2020-06-26T18:40:34 strix -> bentley
+How do I tell it to use the English locale?
+
+2020-06-26T18:40:48 bentley -> strix
+hz
+
+2020-06-26T18:46:07 strix -> bentley
+Man, it's not like that.
+
+2020-06-26T18:50:25 strix -> bentley
+There, I found a way for Chromium
+
+2020-06-26T18:50:40 strix -> bentley
+for Firefox will not work, of course
+
+2020-06-26T18:50:56 bentley -> strix
+We need Chrome.
+
+2020-06-26T18:51:49 strix -> bentley
+I wanted universally
+
+2020-06-26T18:55:16 strix -> bentley
+here is the edited script: https://send.firefox.com/download/b562b1cc96fbfbe0/#tOHn-QnBXDq8HfPXpdNbpQ (password "suxxXX")
+
+2020-06-26T18:55:25 strix -> bentley
+Try
+
+2020-06-26T18:55:33 bentley -> strix
+Yep
+
+2020-06-26T18:57:41 bentley -> strix
+I sent the python. Run
+
+2020-06-26T19:00:26 bentley -> strix
+Does it write to the file at the end ?
+
+2020-06-26T19:00:33 bentley -> strix
+There was one Saxx.
+
+2020-06-26T19:03:41 strix -> bentley
+it appears in the file after you interrupt the script, or the script completes on its own
+
+2020-06-26T19:04:04 bentley -> strix
+Ok wait )
+
+2020-06-26T19:04:23 strix -> bentley
+There are 35 successful
+
+2020-06-26T19:04:35 bentley -> strix
+Yep
+
+2020-06-26T19:04:55 strix -> bentley
+Of the 160 total.
+
+2020-06-26T19:46:10 bentley -> strix
+It all worked out!!! Task completed! THANK YOU!!!!
+
+2020-06-26T19:46:37 strix -> bentley
+gut
+
+2020-06-26T19:47:28 bentley -> strix
+I've been doing this job for hours! It's all automatic now!
+
+2020-06-26T19:47:38 strix -> bentley
+with your hands?
+
+2020-06-26T19:47:48 bentley -> strix
+Yep
+
+2020-06-26T19:49:00 strix -> bentley
+There may be a problem: if some server is temporarily down, it will show fail. So you can run the script several times, after some break, and compare the resulting output file
+
+2020-06-26T19:49:54 bentley -> strix
+Ok
+
+2020-06-26T19:50:36 strix -> bentley
+By the way, if you want to see the browser window, commit the opts.add_argument("headless") line in the browser options (there at the beginning of the script)
+
+2020-06-26T19:51:15 bentley -> strix
+I think the command line is more fucked up.)
+
+2020-06-26T19:53:09 strix -> bentley
+Yes, the browser window is an eyesore. But sometimes, if something goes wrong, you can look in the browser. For example, the last time I had the login/password fields in winnda, they wouldn't fill in. They just didn't come up. The window header was wrong, and that was it.
+
+2020-06-26T19:55:47 bentley -> strix
+Thanks again for the work!
+
+2020-06-26T19:55:50 bentley -> strix
+Till Monday
+
+2020-06-26T19:59:32 strix -> bentley
+Okay, come on -- good night!
+
+2020-06-26T20:01:59 bentley -> strix
+Okay, come on -- good night!
+
+2020-07-07T09:26:04 bentley -> strix
+Hi.
+
+2020-07-07T09:26:26 bentley -> strix
+Can you drop me the latest script that will check logins and passwords?
+
+2020-07-07T09:26:46 bentley -> strix
+Because I have a lot of stuff and I don't understand which version is the latest.
+
+2020-07-07T12:13:29 strix -> bentley
+hi
+
+2020-07-07T12:13:39 strix -> bentley
+I'll drop it right now.
+
+2020-07-07T12:18:53 strix -> bentley
+https://send.firefox.com/download/2019616f954c8316/#vfcWugEf46PF5_OlVuWL6w
+
+2020-07-07T12:19:02 strix -> bentley
+password "suxxXX"
+
+2020-07-07T12:19:20 bentley -> strix
+Spc ))
+
+2020-07-14T13:14:46 bentley -> strix
+Hi ))
+
+2020-07-14T13:15:02 bentley -> strix
+I have a question about the task: file checker in chrome.
+
+2020-07-14T13:15:09 bentley -> strix
+Anything clear on the timeline with her?
+
+2020-07-14T13:24:45 strix -> bentley
+I asked the same thing a few days ago
+
+2020-07-14T13:25:01 bentley -> strix
+Yeah Target is chomping at the bit.
+
+2020-07-14T13:27:29 strix -> bentley
+I started writing the second script last week -- at the moment it's pumping successfully and no alerts are coming out at all. No matter how I tried, they don't turn on. I'll try to google and experiment some more, but at the moment I have some more administrative tasks to deal with, so I haven't gotten around to the script yet.
+
+2020-07-14T13:28:28 bentley -> strix
+I see. Can you make it this week?
+
+2020-07-14T13:28:40 strix -> bentley
+Googling is full of answers to the question how to turn off the alerts, but the opposite, how to turn them on - there is nothing
+
+2020-07-14T13:28:53 strix -> bentley
+I'll try again this week.
+
+2020-07-14T13:29:37 bentley -> strix
+Waiting. ))
+
+2020-07-14T13:31:27 strix -> bentley
+By the way, the link to the https://greenmountains.ae/YAS42.exe file you gave for the test is already dead. The others seem to be alive.
+
+2020-07-14T13:33:00 bentley -> strix
+Yeah the links are dying out there. You tell me when you're done, I'll put in new ones.
+
+2020-07-14T13:33:22 strix -> bentley
+Okay, I'll ask you later.
+
+2020-07-14T13:33:27 bentley -> strix
+Ok
+
+2020-07-14T13:34:48 strix -> bentley
+What's that thing with the alerts in chrome called? Smart browsing? Or Safe something?
+
+2020-07-14T13:35:37 bentley -> strix
+That's when you download the file and it says it's suspicious or dangerous.
+
+2020-07-14T13:35:51 strix -> bentley
+well
+
+2020-07-14T13:36:13 strix -> bentley
+Somehow this feature is officially called
+
+2020-07-14T15:15:52 strix -> bentley
+hi again
+
+2020-07-14T15:16:06 strix -> bentley
+bouza said it's urgent
+
+2020-07-14T15:16:28 strix -> bentley
+can you upload the test files again?
+
+2020-07-14T15:16:56 strix -> bentley
+https://greenmountains.ae/YAS42.exehttps://copyrightlive-ksa.com/Preview_Report.exe
+
+2020-07-14T15:21:03 bentley -> strix
+Minuzzt in 40 hours
+
+2020-07-14T16:58:35 strix -> bentley
+What's up?
+
+2020-07-14T16:58:48 strix -> bentley
+Because I have work to do.
+
+2020-07-14T16:58:51 bentley -> strix
+Tot gjrf pfyzn
+
+2020-07-14T16:59:40 strix -> bentley
+what?
+
+2020-07-14T16:59:45 bentley -> strix
+What do you want to do with the mistakes?
+
+2020-07-14T16:59:55 bentley -> strix
+Or how should it be?
+
+2020-07-14T17:00:04 strix -> bentley
+Well, to get chrome to swear at them.
+
+2020-07-14T17:01:15 strix -> bentley
+For example, these files YAS42.exe Prew_Report.exe -- which used to be
+
+2020-07-14T17:01:22 bentley -> strix
+https://nutritionprofbob.com/DocumentPreview.exe
+
+2020-07-14T17:01:41 bentley -> strix
+This file is rarely downloaded. It may be malicious.
+
+2020-07-14T17:02:12 strix -> bentley
+The link to calc.exe (which is not being scolded) is still alive
+
+2020-07-14T17:04:23 bentley -> strix
+https://violinstop.com/DocumentPreview.exe
+
+2020-07-14T17:04:35 bentley -> strix
+This one blocks as dangerous
+
+2020-07-14T17:07:48 strix -> bentley
+Oh, thanks a lot.
+
+2020-07-14T21:26:59 strix -> bentley
+heere?
+
+2020-07-14T21:27:26 strix -> bentley
+this link https://violinstop.com/DocumentPreview.exe chrome does not give an alert
+
+2020-07-14T21:28:06 strix -> bentley
+to this one it opens the title page https://nutritionprofbob.com
+
+2020-07-14T21:28:35 strix -> bentley
+both by hand and in selenium
+
+2020-07-14T21:29:09 strix -> bentley
+i.e., the test file does not work
+
+2020-07-14T21:57:30 strix -> bentley
+Anyway, give me a working test file, I have nothing to test on.
+
+2020-07-15T08:13:24 strix -> bentley
+Anyway, give me a working test file, I have nothing to test on.
+
+2020-07-15T13:16:40 strix -> bentley
+hi
+
+2020-07-15T13:16:48 strix -> bentley
+are you here?
+
+2020-07-15T13:16:50 bentley -> strix
+Prviet
+
+2020-07-15T13:16:52 bentley -> strix
+Yep
+
+2020-07-15T13:17:17 strix -> bentley
+on https://violinstop.com/DocumentPreview.exe chrome doesn't give an alert
+
+2020-07-15T13:17:46 bentley -> strix
+Chrome has blocked this file as dangerous.
+
+2020-07-15T13:17:50 bentley -> strix
+Mine shows
+
+2020-07-15T13:17:55 bentley -> strix
+ocumentPreview (2).exe
+https://violinstop.com/DocumentPreview.exe
+Chrome has blocked this file as dangerous.
+
+2020-07-15T13:17:56 strix -> bentley
+This one https://nutritionprofbob.com/DocumentPreview.exe gives out "file not found"
+
+2020-07-15T13:18:12 bentley -> strix
+So, I'm going to upload this one or give you another link
+
+2020-07-15T13:18:25 strix -> bentley
+I don't have it blocked.
+
+2020-07-15T13:18:40 bentley -> strix
+Do you have wind?
+
+2020-07-15T13:19:51 strix -> bentley
+I have linux
+
+2020-07-15T13:20:17 bentley -> strix
+Here... And it shows up on the wind.
+
+2020-07-15T13:20:37 strix -> bentley
+Do you have "standard protection" or "enhaanced protection" in Safe browsing?
+
+2020-07-15T13:20:49 bentley -> strix
+Standard
+
+2020-07-15T13:21:14 strix -> bentley
+I had the same URLs that you gave me before
+
+2020-07-15T13:21:31 strix -> bentley
+It's not fighting now.
+
+2020-07-15T13:21:40 bentley -> strix
+It's not clear at all.
+
+2020-07-15T13:26:29 strix -> bentley
+does not even respond to http://www.eicar.org/download/eicar.com.txt (this is a test "virus")
+
+2020-07-15T14:02:47 strix -> bentley
+google has a service https://transparencyreport.google.com/safe-browsing/search to check it, that's what safe browsing uses
+
+2020-07-15T14:03:29 bentley -> strix
+Hmm. I'll take a look.
+
+2020-07-15T14:03:34 strix -> bentley
+Well, this service says that the url https://violinstop.com/DocumentPreview.exe did not find anything suspicious
+
+2020-07-15T14:04:01 strix -> bentley
+can you give me the other test files?
+
+2020-07-15T14:04:01 strix -> bentley
+can you give me the other test files?
+
+2020-07-15T15:00:49 strix -> bentley
+What's up? Will you give me the working test files? I have nothing to test on, and time is running out.
+
+2020-07-15T15:01:05 bentley -> strix
+Yeah, I'll load it up.
+
+2020-07-15T15:01:18 strix -> bentley
+and, plz, check here https://transparencyreport.google.com/safe-browsing/search
+
+2020-07-15T15:54:38 strix -> bentley
+How's it going? Any results?
+
+2020-07-15T16:44:22 strix -> bentley
+ping
+
+2020-07-15T16:44:32 strix -> bentley
+reply please
+
+2020-07-15T16:44:43 strix -> bentley
+There's not much time left.
+
+2020-07-15T16:45:21 strix -> bentley
+Besides, booza said to do it today - tomorrow it won't be necessary anymore
+
+2020-07-15T16:46:57 bentley -> strix
+Okay. Distractions. Let's get it done.
+
+2020-07-15T18:50:42 strix -> bentley
+are you jiffy?
+
+2020-07-15T18:51:39 bentley -> strix
+More dead )
+
+2020-07-15T18:52:21 strix -> bentley
+Is there any point in doing anything about it, or is it too late?
+
+2020-07-15T18:52:45 bentley -> strix
+I think Buza made new tasks in Redmayne
+
+2020-07-15T18:53:11 strix -> bentley
+buza said yesterday that "the day after tomorrow the assignment will no longer be relevant.
+
+2020-07-15T18:53:23 bentley -> strix
+https://mk6gwg6mwnn6if33.onion/issues/297
+
+2020-07-15T18:53:27 bentley -> strix
+и
+
+2020-07-15T18:54:04 bentley -> strix
+https://mk6gwg6mwnn6if33.onion/issues/298
+
+2020-07-15T18:54:11 bentley -> strix
+Do you have access to them?
+
+2020-07-15T18:57:11 strix -> bentley
+I don't see these issues in Target Tasks
+
+2020-07-15T18:57:40 strix -> bentley
+As far as I can see, everything is the same in the tickets available to me
+
+2020-07-15T18:57:57 strix -> bentley
+buza himself went offline
+
+2020-07-15T18:58:22 bentley -> strix
+And these don't open for you?
+
+2020-07-15T18:59:18 strix -> bentley
+403 forbidden
+
+2020-07-15T19:00:26 bentley -> strix
+They are just duplicating this task.
+
+2020-07-15T19:00:30 bentley -> strix
+now
+
+2020-07-15T19:01:57 bentley -> strix
+main #298
+
+2020-07-15T19:02:12 bentley -> strix
+Description
+
+1. We need to find and figure out how Chrome and IE check links on SmartScreen.
+That is, you need a service on the Internet like, "is this link OK or not OK?"
+That's what browsers do.
+
+2. In Problem 296 we will get the links from a file uploaded to FTP.
+We need to make a periodic automatic check for smartscreen links.
+If the link goes dead, we need to automatically resend the file to FTP.
+Link status should be shown with color and indicator (OK/Alert!).
+Link status should be automatically updated by AJAX.
+When the link fades, should be initiated automatically re-pouring the file on FTP, with the issuance of a link and update on AJAX.
+
+The frequency of the smartscreen file test is once every 10 minutes.
+
+2020-07-15T19:04:04 strix -> bentley
+buza suggested it to me today -- I googled and found the service https://transparencyreport.google.com/safe-browsing/search -- as I understand it, browsers use it to check
+
+2020-07-15T19:04:47 strix -> bentley
+You can open this page in selenium, fill in the form, and check the result of the query
+
+2020-07-15T19:06:40 bentley -> strix
+As I understand it, it's the site itself that checks, not directly the link to the file. This is slightly different.
+
+2020-07-15T19:07:14 strix -> bentley
+There you enter a link into the form, and the site checks it
+
+2020-07-15T19:07:40 strix -> bentley
+By the way, the files you gave the error does not show up here either
+
+2020-07-15T19:08:02 bentley -> strix
+Here. Google site said ok but on download - danger
+
+2020-07-15T19:08:33 strix -> bentley
+I don't get anything from my chrome download either
+
+2020-07-15T19:08:40 strix -> bentley
+used to give out
+
+2020-07-15T19:09:03 bentley -> strix
+It works for me. You'll have to look it up in Windows.
+
+2020-07-15T19:09:29 strix -> bentley
+I reset cache/cookies/other browser data - doesn't help
+
+2020-07-15T19:09:47 bentley -> strix
+Yep
+
+2020-07-15T19:09:59 strix -> bentley
+What version of chrome do you have?  I have an 83.
+
+2020-07-15T19:10:24 strix -> bentley
+I think it's the last one. I put it on recently.
+
+2020-07-15T19:12:20 bentley -> strix
+also
+
+2020-07-15T19:14:31 strix -> bentley
+So, are we going to do anything else today?
+
+2020-07-15T19:14:51 strix -> bentley
+I'd be one to go to bed.
+
+2020-07-15T19:18:33 bentley -> strix
+So, are we doing anything else today?
+
+2020-07-15T19:18:33 bentley -> strix
+I'd be one to go to bed.
+
+2020-08-07T10:59:29 bentley -> strix
+Hi
+
+2020-08-07T10:59:33 bentley -> strix
+Can you help?
+
+2020-08-07T13:03:39 strix -> bentley
+hi
+
+2020-08-07T13:03:51 strix -> bentley
+I'll try
+
+2020-08-07T13:05:13 bentley -> strix
+https://173.232.146.236/phpvirtualbox/
+
+2020-08-07T13:05:19 bentley -> strix
+Can't log on to the 2019 server
+
+2020-08-07T13:05:52 bentley -> strix
+Just hangs on the login screen there you have to press ctrl + alt + del
+
+2020-08-07T13:06:01 bentley -> strix
+And the rdp is not forwarded.
+
+2020-08-07T13:06:30 bentley -> strix
+Car 173.232.146.236:31018
+
+2020-08-07T13:06:43 bentley -> strix
+win-2019-bently
+
+2020-08-07T13:08:02 strix -> bentley
+hanging?
+
+2020-08-07T13:08:36 bentley -> strix
+It just won't go in, that's all.
+
+2020-08-07T13:24:04 strix -> bentley
+it was knocked out.
+
+2020-08-07T13:24:17 strix -> bentley
+I'm running it again right now.
+
+2020-08-07T13:25:14 bentley -> strix
+Yeah. Try logging into it. Last time green set up auto login so you don't have to enter your username/password
+
+2020-08-07T13:25:21 bentley -> strix
+On the other 2019
+
+2020-08-07T13:33:14 strix -> bentley
+what is her username/password?
+
+2020-08-07T13:33:37 bentley -> strix
+Administrator/JohnJackson21
+
+2020-08-07T13:33:40 bentley -> strix
+Think
+
+2020-08-07T13:37:59 strix -> bentley
+What rdp client do you have?
+
+2020-08-07T13:38:14 bentley -> strix
+The usual vinyl.
+
+2020-08-07T13:38:44 strix -> bentley
+In freerdp CAD catches, but in remmina it does not for some reason
+
+2020-08-07T13:38:59 strix -> bentley
+logged in
+
+2020-08-07T13:40:03 bentley -> strix
+I think there is a command control userpasswords2 to log in without a password
+
+2020-08-07T13:42:39 strix -> bentley
+ comstroke?
+
+2020-08-07T13:42:49 bentley -> strix
+Or in the wound.
+
+2020-08-07T13:42:49 strix -> bentley
+in the comstroke?
+
+2020-08-07T13:43:05 strix -> bentley
+In what wound?
+
+2020-08-07T13:43:12 bentley -> strix
+run
+
+2020-08-07T13:43:25 bentley -> strix
+WIN + R
+
+2020-08-07T13:43:32 strix -> bentley
+and you mean the start menu?
+
+2020-08-07T13:44:13 bentley -> strix
+Runs on the command line, too
+
+2020-08-07T13:47:30 strix -> bentley
+Yep, control userpasswords2 works
+
+2020-08-07T13:47:55 strix -> bentley
+the dialog pops up where you should have unchecked the passwords checkbox
+
+2020-08-07T13:48:23 bentley -> strix
+Yeah, so it doesn't require a username and password
+
+2020-08-07T13:49:52 strix -> bentley
+rebooted -- no password asked
+
+2020-08-07T13:50:03 bentley -> strix
+Great!
+
+2020-08-07T13:50:06 bentley -> strix
+Just what I needed!
+
+2020-09-28T20:18:31 bentley -> strix
+Hi
+
+2020-09-28T20:18:44 bentley -> strix
+Polskazka, how do you check that the gaskets work?
+
+2020-09-28T20:26:15 strix -> bentley
+which pads?
+
+2020-09-28T20:26:39 bentley -> strix
+<bentley> green> lowers
+62.108.35.194
+134.255.254.50
+23.239.84.136
+46.17.107.111
+185.68.93.33
+212.80.219.191
+
+bot
+23.239.84.132
+194.5.249.126
+51.89.177.5
+104.161.32.103
+107.155.137.7
+37.220.6.119
+[00:25:01] <green> van
+[00:25:13] <green> lowaders
+91.235.129.110
+62.108.35.194
+45.141.103.194
+
+
+bot
+51.83.172.107
+85.143.223.16
+194.156.98.215
+[00:25:16] <green> mushroom
+
+2020-09-28T20:28:52 strix -> bentley
+I don't know how these gaskets work and what these gaskets work for
+
+2020-09-28T20:29:06 strix -> bentley
+so you can't tell right away
+
+2020-09-28T20:29:18 bentley -> strix
+Green's kicking?
+
+2020-09-28T20:29:33 strix -> bentley
+Probably, if he was making them.
+
+2020-09-28T20:29:52 bentley -> strix
+Yeah, he's in the offing. Wrote to Defender, too.
+
+2020-09-28T20:30:14 strix -> bentley
+Well, knock on deender's door.
+
+2020-09-28T20:30:24 strix -> bentley
+UAH seems to be offline now.
+
+2020-09-28T20:31:05 bentley -> strix
+Yep
+
