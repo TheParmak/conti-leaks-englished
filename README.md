@@ -42,5 +42,5 @@ Also big thanks to @offsecginger for providing json conversions of google transl
 
 Yet again big thanks to @tsale for his [repo](https://github.com/tsale/translated_conti_leaked_comms) google translated rocket chat files and google translated trickbot forum files are his work.
 
-Discord server if you want to help or follow changes: https://discord.gg/YwzTFVMy
+Discord server if you want to help or follow changes: https://discord.gg/t5ZqvNcMJ3
 
