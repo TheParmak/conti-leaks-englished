@@ -1,0 +1,98 @@
+[04.08.21 11:36:55] weldon: hi, do you have sources of Firefox nightly i.e. alpha version?
+[04.08.21 11:37:46] kermit: Hi.
+[04.08.21 11:37:47] kermit: Nope.
+[04.08.21 11:37:53] kermit: you don't have it in repo or something?
+[04.08.21 11:38:20] weldon: only betas here https://archive.mozilla.org/pub/firefox/releases/
+[04.08.21 11:38:48] weldon: and I don't see sources here https://archive.mozilla.org/pub/firefox/nightly/2019/03/2019-03-18-21-38-44-mozilla-central/
+[04.08.21 12:11:19] kermit: do nytley builds have sources?
+[04.08.21 12:11:23] kermit: it's just a compilation
+[04.08.21 12:12:44] weldon: nothing, but they build them from something)
+[05.08.21 12:23:10] kermit: ku
+[05.08.21 12:23:26] kermit: ku. what do I have to do?
+[05.08.21 12:23:29] kermit: it's about the diffs
+[05.08.21 12:23:30] kermit: ku
+[05.08.21 12:25:35] weldon: briefly:
+tunri has built a FF-based Superbrowser, presumably release 68.0a1
+[05.08.21 12:26:08] weldon: I haven't found this release, I downloaded 68.0b3 - did the diff
+[05.08.21 12:26:24] kermit: how did he patch sources?
+[05.08.21 12:26:29] kermit: do you have any notes?
+[05.08.21 12:27:19] weldon: he 7 Mb, Silver says, quote:
+[05.08.21 12:27:24] weldon: silver 10:46
+!!! I'll tell you what
+	you have to be very creative here
+	it looks like there are a lot of commits related to the fact that we did not accurately guess the version
+	they should all be thrown out
+	but you can't see the names of the authors of the commits
+	so we need to check the sources of a slightly later version and see if the patch has those changes
+	if so, it means the patch is not ours
+	remove
+	no - it is ours, let's leave it
+[05.08.21 12:29:01] kermit: I meant the marks in the code
+[05.08.21 12:29:04] kermit: none at all?
+[05.08.21 12:29:26] weldon: well, let me dump the diff, you can check it out
+[05.08.21 12:30:10] kermit: fuck
+[05.08.21 12:30:24] weldon: sec
+[05.08.21 12:32:05] weldon: i'll make a fresh one
+[05.08.21 12:35:32] weldon: WWEJMSNlw*gY=<NG
+[05.08.21 12:35:37] weldon: password
+[05.08.21 12:36:35] weldon: `Download: https://qaz.im/load/R8Qtti/YzbSSf`
+`Delete: https://qaz.im/index.php?a=delete&q=701314320`
+[05.08.21 12:37:55] kermit: how did you diffal?
+[05.08.21 12:38:09] kermit: what about python files and tests?
+[05.08.21 12:38:15] weldon: diff -Naur 68.0b3 SB > FF68.0b3_vs_SB.patch
+[05.08.21 12:38:25] weldon: no
+[05.08.21 12:38:38] kermit: no what?
+[05.08.21 12:38:49] weldon: no - files and tests?
+[05.08.21 12:39:26] weldon: you downloaded SB from our git?
+[05.08.21 12:39:34] kermit: sb?
+[05.08.21 12:39:46] kermit: there in the diff and certificates
+[05.08.21 12:39:52] kermit: and pieces of repo
+[05.08.21 12:39:55] kermit: and python scripts
+[05.08.21 12:39:55] weldon: yeah, SuperBrowser sources
+[05.08.21 12:40:22] kermit: ``
+diff -Naur 68.0b3/obj-x86_64-pc-linux-gnu/_virtualenvs/init/lib/python2.7/site-packages/pip/_vendor/distlib/wheel.py SB/obj-x86_64-pc-linux-gnu/_virtualenvs/init/lib/python2.7/site-packages/pip/_vendor/distlib/wheel.py
+```
+[05.08.21 12:40:24] kermit: fuck it
+[05.08.21 12:41:45] weldon: i've diffused all the folders at once
+[05.08.21 12:42:14] kermit: bad idea
+[05.08.21 12:42:32] weldon: like slver said
+[05.08.21 12:42:51] kermit: sylver suggested a bad idea
+[05.08.21 12:43:19] kermit: I wrote in general chat
+[05.08.21 12:43:41] weldon: well, I can give you a link to 68b3 and our GIT - you can make a diff yourself - but in general, I have never made diffs before)
+[05.08.21 12:46:35] kermit: that's how to make a point diff
+[05.08.21 12:46:50] kermit: you need to look at what data the config allows you to specify, etc.
+[05.08.21 12:46:57] kermit: you can't do that for free
+[05.08.21 12:47:40] weldon: point - mei bee
+[05.08.21 12:48:18] weldon: but 100% 7Mb is the most I found at the moment
+[05.08.21 12:48:40] weldon: before that, there were 700-100 Mb divs
+[05.08.21 12:49:02] kermit: what's the config for this shit?
+[05.08.21 12:49:29] weldon: what does config mean?
+[05.08.21 12:49:44] kermit: where did sb get the parameters for the switch
+[05.08.21 12:51:11] weldon: I just downloaded from our GIT folder and unpacked it, downloaded FF from mosilla and unpacked, then compared
+[05.08.21 12:51:25] kermit: you need config
+[05.08.21 12:51:31] kermit: how do you test
+[05.08.21 12:51:50] weldon: fuckin' 46.7 gb (50,192,441,857 bytes) downloaded source code from mosilla
+[05.08.21 12:53:27] kermit: need config
+[05.08.21 12:53:39] weldon: config WHAT?
+[05.08.21 12:54:45] kermit: sb
+[05.08.21 12:55:17] weldon: do you need a link?
+[05.08.21 12:55:42] weldon: `https://mb5fbvx72fbod2hkirfecc5nh7lwq6ke7xocn7j2u7raiwbytvevpbad.onion/tunri/firefox_pseudo`
+[05.08.21 12:58:43] kermit: 404
+[05.08.21 12:59:09] weldon: hmm, I'm fine
+[05.08.21 13:00:46] kermit: I wasn't given access
+[21.02.22 16:22:21] weldon: ping, can I ping yours?
+[21.02.22 16:23:03] kermit: ku
+[21.02.22 16:23:04] kermit: Sure.
+[21.02.22 16:23:08] kermit: Turn on apr
+[21.02.22 16:23:42] kermit: battletoad@jabbim.sk
+[21.02.22 16:24:53] kermit: ping
+[21.02.22 16:25:15] weldon: authorization requested
+[21.02.22 16:26:09] weldon: apparently not
+[21.02.22 16:28:03] weldon: 1^1 what did you answer?)
+[21.02.22 16:28:20] kermit: 1
+[21.02.22 16:28:29] kermit: 0?
+[21.02.22 16:28:30] weldon: ))) well
+[21.02.22 16:28:33] weldon: 0
+[21.02.22 16:28:38] kermit: one to the power of one
+[21.02.22 16:28:41] kermit: or is it xor?
+[21.02.22 16:28:48] weldon: xore

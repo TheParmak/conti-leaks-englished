@@ -1,0 +1,212 @@
+2020-11-02T07:29:57 zulas -> taker
+I don't get it.
+
+2020-11-02T11:23:20 zulas -> taker
+I don't get it.
+
+2020-11-02T14:17:28 zulas -> taker
+write it without an apr.
+
+2020-11-02T14:56:55 zulas -> taker
+write it without an apr.
+
+2020-11-03T15:00:07 zulas -> taker
+What the hell is going on?)
+
+2020-11-03T15:00:10 zulas -> taker
+are you there ?
+
+2020-11-03T15:04:14 taker -> zulas
+ntcn
+
+2020-11-03T15:04:15 taker -> zulas
+test
+
+2020-11-03T15:05:29 zulas -> taker
+test passed
+
+2020-11-03T15:05:33 taker -> zulas
+yeee
+
+2020-11-03T15:05:38 taker -> zulas
+OTR is not friends with you at all
+
+2020-11-03T15:05:45 zulas -> taker
+I don't have it installed.
+
+2020-11-03T15:05:48 taker -> zulas
+а
+
+2020-11-03T15:05:50 zulas -> taker
+nailed it.
+
+2020-11-03T15:05:52 taker -> zulas
+well
+
+2020-11-03T15:06:05 taker -> zulas
+Are you already in the new chat room or not yet?
+
+2020-11-03T15:06:15 taker -> zulas
+def just started transferring there
+
+2020-11-03T15:06:15 zulas -> taker
+What's the new one? It's the only one I know.
+
+2020-11-03T15:06:27 zulas -> taker
+He didn't write me anything.
+
+2020-11-03T15:06:28 taker -> zulas
+I guess you haven't gotten to it yet.
+
+2020-11-03T15:06:33 taker -> zulas
+well just started
+
+2020-11-03T15:06:40 zulas -> taker
+so what's your question to me?
+
+2020-11-03T15:06:41 taker -> zulas
+What did you want to ask
+
+2020-11-03T15:06:52 taker -> zulas
+on the erlang if the epmd hangs on 0.0.0.0
+
+2020-11-03T15:07:04 taker -> zulas
+then anyone can connect to the console, right?
+
+2020-11-03T15:07:13 taker -> zulas
+Knowing yerlang cookies
+
+2020-11-03T15:07:44 zulas -> taker
+no . epmd it only manages the node names and ports between the erlang nodes which are on a given machine .
+
+2020-11-03T15:08:01 zulas -> taker
+i.e. you start one erlang a@domain
+and then a second b@domain
+
+2020-11-03T15:08:38 zulas -> taker
+all of them both went to epmd and requested the names of other nodes (or rather ports) on which they listen .
+
+2020-11-03T15:08:50 zulas -> taker
+And now they can connect with each other in spontaneous fashion.
+
+2020-11-03T15:08:52 zulas -> taker
+But here's a but
+
+2020-11-03T15:09:11 zulas -> taker
+2 nodes can connect only when they have the same cookies ... i.e. some password .
+
+2020-11-03T15:09:26 zulas -> taker
+you can run one erlang node with one cookie .
+
+2020-11-03T15:09:26 taker -> zulas
+hmm
+
+2020-11-03T15:09:32 zulas -> taker
+and the other node with the other .
+
+2020-11-03T15:09:34 taker -> zulas
+Well, here's a cadmin, for example.
+
+2020-11-03T15:09:37 zulas -> taker
+And they won't be able to connect
+
+2020-11-03-03T15:09:43 taker -> zulas
+tcp 0 0.0.0.0:4369 0.0.0.0:* LISTEN 13958/epmd
+
+2020-11-03T15:09:54 zulas -> taker
+the console part -- that's launching one node ... and connecting it to another
+
+2020-11-03T15:09:58 taker -> zulas
+anyone can ask what ports the nodes have
+
+2020-11-03-03T15:10:23 taker -> zulas
+tcp 0 0.0.0.0:40777 0.0.0.0:* LISTEN 30066/beam.smp
+tcp 0 0.0.0.0:4369 0.0.0.0:* LISTEN 13958/epmd
+tcp 0 0.0.0.0:8083 0.0.0.0:* LISTEN 30066/beam.smp
+tcp 0 0 0 127.0.0.1:5432 0.0.0.0:* LISTEN 2656/postgres
+tcp 0 0.0.0.0:8090 0.0.0.0:* LISTEN 30066/beam.smp
+
+2020-11-03T15:10:35 taker -> zulas
+But aren't the bins also on 0.0.0.0?
+
+2020-11-03T15:10:55 taker -> zulas
+it's kind of a big deal because without cookies no one will get in?
+
+2020-11-03T15:11:33 zulas -> taker
+so if you set a different cookie ... you can not connect by default
+
+2020-11-03T15:11:48 zulas -> taker
+Well, by default, the cookies used are those that are in the system.
+
+2020-11-03T15:11:53 zulas -> taker
+Well, yes ...
+
+2020-11-03T15:12:05 zulas -> taker
+Close port 4369 from the outside.
+
+2020-11-03T15:12:21 zulas -> taker
+Better yet, leave the ports you need
+
+2020-11-03T15:12:24 zulas -> taker
+I don't understand what the question is.
+
+2020-11-03T15:12:42 taker -> zulas
+Yes, just to be safe, I want to understand how it works
+
+2020-11-03T15:12:54 taker -> zulas
+i.e. if someone has a cacu they can log in to the server
+
+2020-11-03T15:12:56 taker -> zulas
+If not, then no
+
+2020-11-03T15:13:06 taker -> zulas
+yerlang is black magic for me :D
+
+2020-11-03T15:13:54 zulas -> taker
+not to the server ... but to connect to a remote erlang console . and do something inside .
+
+2020-11-03T15:14:07 zulas -> taker
+But in general, the console can be left unattended ... only nothing can be done from the inside
+
+2020-11-03T15:14:45 taker -> zulas
+The console is manual.
+
+2020-11-03T15:14:58 zulas -> taker
+I mean the console inside the erlang ...
+
+2020-11-03T15:15:01 taker -> zulas
+If you throw the files into .ssh, you can root
+
+2020-11-03T15:15:02 zulas -> taker
+Which one do you mean?
+
+2020-11-03T15:15:07 taker -> zulas
+Yeah, you can run any code there, right?
+
+2020-11-03T15:15:14 taker -> zulas
+i.e. I can open the file to disks to write
+
+2020-11-03T15:15:18 zulas -> taker
+Yes . if you go inside . then yes .
+
+2020-11-03T15:15:37 taker -> zulas
+I got it, better close the ports then
+
+2020-11-03T15:16:03 zulas -> taker
+open the ports that you need. everything else is closed. in my opinion this should be the default for True admins)
+
+2020-11-03T15:16:29 taker -> zulas
+verily so )
+
+2020-11-03T15:19:20 taker -> zulas
+thank you!
+
+2020-11-03T15:19:43 zulas -> taker
+you're welcome )
+
+2020-11-03T15:19:51 zulas -> taker
+If you need anything, ask for it.
+
+2020-11-03T15:20:06 taker -> zulas
+necessarily)
+

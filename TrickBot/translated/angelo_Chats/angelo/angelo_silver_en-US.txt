@@ -1,0 +1,520 @@
+[28.07.21 09:58:48] angelo: hi
+[28.07.21 09:58:52] angelo: I wanted to ask you
+[28.07.21 09:59:05] angelo: any problems with the trike? or just bad scripts?
+[28.07.21 10:02:06] silver: you tell me
+[28.07.21 10:02:08] silver: Hi.
+[28.07.21 10:02:28] silver: give me a dynamometer report on the dincheck
+[28.07.21 10:02:34] silver: full internet 240 seconds
+[28.07.21 10:02:52] silver: one report is the source
+the second report - the most popular crypto stub
+[28.07.21 10:08:52] angelo: I don't crypt
+[28.07.21 10:09:05] angelo: my question was caused by the client
+[28.07.21 10:09:07] angelo: Zeus
+[28.07.21 10:09:15] angelo: that their bots die fast
+[28.07.21 10:09:35] angelo: guys are frustrated, so I decided to ask if this problem is solved and what is it
+[28.07.21 10:09:52] silver: low quality of testing
+[28.07.21 10:11:53] angelo: I haven't written a report yet, today is Wednesday
+[28.07.21 10:12:29] angelo: me and Jaime discovered when we were doing nonsense with configs for the injector that vinda was blocking itself
+[28.07.21 10:12:36] angelo: don't know if you're into that or not
+[28.07.21 10:12:44] silver: don't know, tell me
+[28.07.21 10:14:00] angelo: after starting the bot on the machine, after a short period of time (maybe a couple of minutes), even with the lock disabled after the axis was idle, the windup was blocked. For modules, I can not say, Jaime said that after starting the injector, but we used not test bot, and there were a lot of modules running, that is, I can not say that there was a dependency
+[28.07.21 10:14:28] silver: > the windup was blocked
+what do you mean by that?
+[28.07.21 10:15:01] angelo: you know, you get a lock screen with pictures) where you have to enter the password to enter the windup
+[28.07.21 10:15:08] angelo: i don't know what to call it correctly
+[28.07.21 10:15:40] silver: ah
+[28.07.21 10:15:45] silver: well, it's nothing
+[28.07.21 10:15:49] silver: if you unlocked it, it works
+[28.07.21 10:16:02] angelo: that's question number 2
+[28.07.21 10:16:21] angelo: and I wouldn't say it works the way it did before the lock
+[28.07.21 10:17:08] angelo: now let tester test this point
+[28.07.21 10:17:12] angelo: who is the tric
+[28.07.21 10:17:28] angelo: I've got Fratzn telling me to test Superbrauser.....
+[29.07.21 08:57:52] angelo: hi
+[29.07.21 08:57:58] angelo: Can I borrow you for a minute?
+[29.07.21 08:58:10] angelo: I need some clarification on superbrowser
+[29.07.21 09:03:33] silver: hi
+[29.07.21 09:03:34] silver: ask
+[29.07.21 09:03:48] angelo: I'm as dumb as always
+[29.07.21 09:03:56] angelo: here we are loading the browser config
+[29.07.21 09:03:59] angelo: in SB
+[29.07.21 09:04:04] angelo: and then what should be ?
+[29.07.21 09:04:21] angelo: the story appeared
+[29.07.21 09:04:37] silver: you know what
+[29.07.21 09:04:40] silver: go to hammer
+[29.07.21 09:04:46] silver: he was testing it
+[29.07.21 09:05:02] angelo: got it, I'll wait for him
+[29.07.21 09:05:07] angelo: and Weldon is SB's developer ?
+[29.07.21 09:05:11] silver: no
+[29.07.21 09:05:17] silver: he will support it
+[29.07.21 09:05:19] silver: another one developed it
+[29.07.21 09:05:27] angelo: got it
+[29.07.21 09:15:48] angelo: there is one more question
+[29.07.21 12:52:38] angelo: which module robs configs for SB ?
+[29.07.21 12:52:47] angelo: corrupt ?
+[29.07.21 12:52:55] silver: yes
+[29.07.21 12:52:57] silver: importDll
+[29.07.21 12:53:09] angelo: so, it's to Brooks?
+[29.07.21 12:54:29] silver: lf
+[29.07.21 12:54:30] silver: yes
+[29.07.21 12:57:37] angelo: is it a problem with cookies ?
+[29.07.21 12:57:46] angelo: 2 weeks ago client had no such problems
+[29.07.21 12:57:54] angelo: what happened ?
+[29.07.21 12:58:16] silver: busy
+[03.08.21 10:41:11] angelo: Hi.
+[03.08.21 10:41:14] angelo: I'll just be a sec.
+[03.08.21 10:41:18] silver: Hi.
+[03.08.21 10:41:41] angelo: I understand you correctly (I could be wrong easily) - SuperBrowser will not work until Import
+[03.08.21 10:41:49] angelo: we have other grabbers
+[03.08.21 10:41:56] angelo: I have a puzzle in my head
+[03.08.21 10:42:04] silver: other robbers are for another
+[03.08.21 10:42:08] silver: yes, you got it right
+[03.08.21 10:42:20] silver: until import works like clockwork, there will be no deal with SB
+[03.08.21 10:42:24] silver: but SB itself is crooked too
+[03.08.21 10:42:36] silver: both components must be debugged separately
+[03.08.21 10:42:37] angelo: not ugly, but client was very happy about it
+[03.08.21 10:43:12] angelo: 3 weeks ago he could work with it at least somehow, so we are waiting for the import
+[03.08.21 10:43:14] angelo: thanks
+[05.08.21 12:01:51] angelo: hi, you wrote about Edge changing a lot. Zeus was asking if it's possible to make a ject on the Edge.
+[05.08.21 12:01:56] angelo: is it real ?!
+[05.08.21 12:02:02] angelo: heime is busy
+[05.08.21 12:20:44] silver: Hi.
+[05.08.21 12:20:48] silver: unrealistic
+[05.08.21 12:21:41] angelo: got it, I'll wait for more haime and then we'll give an answer to the client
+[05.08.21 12:23:39] silver: I'm sure it won't work
+[05.08.21 12:23:47] silver: I don't think anyone has such support right now
+[05.08.21 12:24:03] silver: they screwed in some kind of wunderwaffle for memory protection in 18 or 19
+[05.08.21 12:24:09] silver: it's unlikely they gave it up in the chrome engine
+[05.08.21 12:24:15] silver: I couldn't overcome it
+[05.08.21 12:24:43] angelo: I have a very high opinion of Jaime )
+[05.08.21 12:24:56] angelo: just a client said that on Edge a lot of clients pass by
+[05.08.21 12:25:21] silver: let the client name those who support edge
+[05.08.21 12:25:27] silver: we'll find the sample and reverse it
+[05.08.21 12:25:47] angelo: hmm, I'll suggest it )
+[05.08.21 12:26:07] silver: or have him drop a demo
+[05.08.21 12:26:11] silver: it's for real, we did it that way
+[05.08.21 12:26:27] silver: and be sure to specify supported version
+[05.08.21 12:26:31] angelo: I understand and accept
+[05.08.21 12:26:33] angelo: ok
+[05.08.21 12:26:40] angelo: got what you said
+[25.08.21 11:43:54] angelo: hi.
+[25.08.21 11:44:01] angelo: there's a catch.
+[25.08.21 11:44:15] angelo: inject works under vnts2 on vm
+[25.08.21 11:44:22] angelo: but not in battle bots
+[25.08.21 11:44:47] silver: hi
+[25.08.21 11:45:23] silver: so, what?)
+[25.08.21 11:45:27] angelo: where to dig ?
+[25.08.21 11:45:32] angelo: why can it be ?!
+[25.08.21 11:45:36] angelo: what is the difference ?!
+[25.08.21 11:45:42] silver: in module version for example
+[25.08.21 11:45:52] angelo: for example we restarted it
+[25.08.21 11:46:12] angelo: although, you know, now let's double-check exactly with group of Zeus
+[25.08.21 11:46:14] angelo: and report back
+[21.09.21 08:38:37] angelo: hi!
+[21.09.21 08:38:41] angelo: will brooks come out ?
+[21.09.21 08:39:11] silver: hi
+[21.09.21 08:39:17] silver: yeah, why, did he say something like that?
+[21.09.21 08:40:05] angelo: No, I didn't see him yesterday
+[21.09.21 08:40:11] angelo: and he's usually gone in the morning
+[21.09.21 08:40:17] angelo: about the anchor
+[21.09.21 08:40:21] silver: he often does
+[21.09.21 08:40:24] silver: you can't see it
+[21.09.21 08:40:35] angelo: got it, he's a sly ass
+[29.09.21 14:45:58] angelo: hello
+[29.09.21 14:46:05] angelo: do you know new anchor from brooks ?
+[29.09.21 14:46:32] angelo: bot knocked out, I check the commands, but they do not work ... whether he initiated you
+[22.10.21 10:56:07] angelo: otr
+[26.10.21 10:06:09] angelo: hi
+[26.10.21 10:06:19] silver: hi
+[26.10.21 10:06:24] angelo: apr
+[26.10.21 10:06:51] angelo: Mont asks about dead bots
+[26.10.21 10:06:54] angelo: which are not few
+[26.10.21 10:07:06] angelo: Cactus assures him that AB
+[26.10.21 10:07:16] angelo: can I be sure of anything ?
+[26.10.21 10:07:32] angelo: 22884d16bb7eb90ba2b25b2a93391456
+d0ec33b15888fff78435b41fa40f391d
+ef89e84825f2a88673bc981a8912c3c3
+562ed426a66750f298b4ec8b504fdd46
+22884d16bb7eb90ba2b25b2a93391456
+6b041db024df14e7921cfeff0748b69e
+[26.10.21 10:07:33] silver: I don't understand the question
+[26.10.21 10:07:51] angelo: [01:27:49] <mont> I also have a question about bot survivability
+[01:27:56] <mont> I'm tired to write the same
+[01:28:04] <mont> I feel like a parrot
+[26.10.21 10:08:03] angelo: [01:28:22] <mont> these are the bots in uk that haven't lived an hour
+[01:28:27] <mont> and there are plenty of them
+[01:28:47] <azot> and what does cactus call it ?
+[01:28:58] <mont> ah fuck
+[26.10.21 10:08:20] silver: where's the question?
+[26.10.21 10:08:36] silver: what do you want from dead bots ?
+[26.10.21 10:08:39] angelo: how can you understand the cause of death ?
+[26.10.21 10:08:54] silver: go to that machine and see
+[26.10.21 10:09:14] silver: read logs
+[26.10.21 10:09:24] silver: yeah, you can't go to that machine
+[26.10.21 10:09:46] angelo: says there are a lot of such bots
+[26.10.21 10:10:14] silver: the ones that die right away
+[26.10.21 10:11:01] silver: well, let's think logically, what else could it be?
+[26.10.21 10:11:24] silver: if the bot lived for, say, half a day or a day, and then fell away, it was not started by fixing
+[26.10.21 10:11:49] silver: if it lived for half an hour, it is AB, because first half an hour is the most dangerous time for bot, while it is going through proactivation
+[26.10.21 10:12:42] silver: and you ask sapp, and how would he himself know the reason on the machine he can't enter?
+[26.10.21 10:14:02] angelo: all dead bots have a limit of up to an hour...well, logically there can be no other options, i understand
+[26.10.21 10:14:38] silver: is that the only question? because somewhere in the air is implied dissatisfaction with their number
+[26.10.21 10:14:49] angelo: the client always expects a miracle, I understand that everything must work well, and if not - it means a fault of the performer
+[26.10.21 10:15:01] angelo: yes, the quantity also as I understand it takes place
+[26.10.21 10:15:13] angelo: I honestly did not ask what % of bot deaths
+[26.10.21 10:17:25] angelo: <mont> 80% die
+[26.10.21 10:17:46] silver: what should you use?
+[26.10.21 10:18:34] angelo: on bad cryptos
+[26.10.21 10:18:37] angelo: we have to think
+[26.10.21 10:19:04] silver: no, i mean, what percentage should it be? and who exactly has it? and some proofs would be nice
+[26.10.21 10:19:23] angelo: zeus band
+[26.10.21 10:19:33] silver: mont is zeus' sapp
+[26.10.21 10:19:33] angelo: hmm
+[26.10.21 10:20:18] angelo: is mont our guy or their guy ?
+[26.10.21 10:21:18] silver: their man, sapp zeus
+[26.10.21 10:21:23] silver: sapp = sappor, helper
+[26.10.21 10:21:28] angelo: sapp understood )
+[26.10.21 10:21:56] angelo: can we look at the stats ourselves ?
+[26.10.21 10:22:13] angelo: haven't contacted her before
+[26.10.21 10:22:21] silver: you don't understand
+[26.10.21 10:22:39] silver: well, they tell you, 80% of dead is fucked up
+[26.10.21 10:22:41] silver: let's say
+[26.10.21 10:22:44] silver: what do you want?
+[26.10.21 10:23:33] silver: he'll say not more than half
+[26.10.21 10:24:42] silver: the second question - why so much?
+answer options
+- they worked with so-and-so software and in 2015 it was like this
+- worked with so-and-so software and in 2021 it was like this
+(answer choices based on past experience)
+- it is unprofitable with the percentage higher than so-and-so (a purely commercial motive)
+[26.10.21 10:27:10] angelo: I understand what they are getting at
+[26.10.21 10:27:16] angelo: i honestly do not know how contracts are made
+[26.10.21 10:27:27] angelo: as I understand it, when you make a deal, they give you some figures
+[26.10.21 10:27:53] silver: we do not have such a direct agreement about the percentage, everything is based on the feelings
+[26.10.21 10:28:04] angelo: And you were right in his answer
+[26.10.21 10:28:08] silver: okay, there's another way
+[26.10.21 10:28:48] silver: you're testing - run it for 10 minutes, static check went clean, dynamic check went clean, bot knocked out, command accepted-executed - ok
+[26.10.21 10:28:50] angelo: [03:27:06] <mont> on that bot we ran last year, online was like this
+[03:27:27] <mont> the first day 1000 bots alive 700
+[03:28:04] <mont> then 200-300 left for the week
+[03:28:41] <mont> and in general bot was alive till we got caught
+[26.10.21 10:29:19] silver: if you want to know what's going on with bots, run them on vm farm for a day or two
+[26.10.21 10:29:21] silver: on different av
+[26.10.21 10:29:43] angelo: [03:28:50] <mont> av did not detect it in any way
+[03:29:17] <mont> I've seen with my eyes a million times when they scanned the car completely and no use
+[26.10.21 10:29:49] angelo: is it fantastic ?
+[26.10.21 10:30:01] angelo: so they used to use immortal bots ?
+[26.10.21 10:30:05] silver: it's just a top coder
+[26.10.21 10:30:19] silver: I know what bot he's talking about and it's not fantastic
+[26.10.21 10:30:59] silver: when was the last time we tested bots for survivability?
+[26.10.21 10:31:10] angelo: but how do we argue for mortality without dropping ourselves in the mud?
+[26.10.21 10:31:18] angelo: i have no idea
+[26.10.21 10:32:39] angelo: the narrow survivability of our bots is going to change the code? if it's really 80% mortality, Colin could do anything, but he always gives the answer - AB and that's the end of it
+[26.10.21 10:34:14] silver: man, you still do not understand that you personally have the ball ? )
+[26.10.21 10:34:18] silver: when was the last time we tested bots for survivability?
+[26.10.21 10:34:38] silver: > how do you test - ran for 10 minutes, static check passed - clear, dynamics check passed - clear, the bot knocked out, the command accepted-executed - ok
+[26.10.21 10:34:57] silver: still the same?
+and it's still a good option when the knockback test passes, because usually it is limited to statics
+[26.10.21 10:35:38] angelo: it is possible to run on the farm once a week, because every day it seems impossible
+[26.10.21 10:35:55] angelo: i have to do brooks walkthrough on the farm today
+[26.10.21 10:36:08] angelo: and I can pass the survivability test
+[26.10.21 10:36:34] silver: honestly, i don't understand how that coder got that result
+[26.10.21 10:37:01] silver: even just to pass all combinations of OS and AB tests is a lot of time
+[26.10.21 10:37:12] silver: and you have to give out builds every day
+[26.10.21 10:37:23] silver: be an industrial spy, find out how it was achieved
+[26.10.21 10:38:02] silver: find out any details, little things
+[26.10.21 10:38:14] silver: how often were the uploads (daily, not daily)
+[26.10.21 10:38:26] silver: how was testing, on what AB, OS
+[26.10.21 10:42:58] silver: ``
+22884d16bb7eb90ba2b25b2a93391456
+d0ec33b15888fff78435b41fa40f391d
+ef89e84825f2a88673bc981a8912c3c3
+562ed426a66750f298b4ec8b504fdd46
+22884d16bb7eb90ba2b25b2a93391456
+6b041db024df14e7921cfeff0748b69e
+```
+[26.10.21 10:43:04] silver: have you looked into these bots yourself?
+[26.10.21 10:43:14] angelo: looked at the three
+[26.10.21 10:43:22] silver: I looked at all of them.
+[26.10.21 10:43:24] silver: what did you see there?
+[26.10.21 10:44:54] angelo: launch one dll
+[26.10.21 10:44:55] angelo: and death
+[26.10.21 10:45:03] silver: Mm-hmm.
+[26.10.21 10:45:12] silver: so maybe the dllk burned them out?
+[26.10.21 10:45:25] angelo: already asked what was loaded
+[26.10.21 10:45:58] silver: the death can be not instantly by the load start, but in 10-15 min - the load is just caught on the proactive
+[26.10.21 10:46:26] silver: and bot-parent will be computed by the process tree (because it is a parent process of the load) and taken out
+[26.10.21 10:48:00] silver: so, look
+[26.10.21 10:48:11] silver: they're running loads by dlls
+[26.10.21 10:48:24] angelo: the stller was loading for a couple of days, before that the loads were dying before autoloading
+[26.10.21 10:48:24] silver: dll start is weak point
+[26.10.21 10:49:02] silver: yup, let's go complex, I'll spell out the following points
+- load cleanliness
+- ways to run loads
+[26.10.21 10:49:48] silver: here they run a styler, it's a third party styler as far as I know, it's called racoon
+[26.10.21 10:50:11] silver: who ensures the purity of the load? who crypts it, who tests it?
+[26.10.21 10:51:19] angelo: now he requested bots where there was no load, but bots are dead
+[26.10.21 10:52:06] angelo: interesting confrontation turns out, everyone defends his rightness and there must be a truth/first cause between them
+[26.10.21 10:52:48] silver: this is not a confrontation, this is a helpdesk job
+[26.10.21 10:52:59] silver: we have it so badly set up
+[26.10.21 10:55:35] angelo: now I'll watch bots without load
+[26.10.21 10:55:47] silver: we haven't talked it through
+[26.10.21 10:56:17] angelo: listening very carefully and not even trying to escape from you
+[26.10.21 10:56:20] silver: you see, for everything to work perfectly, all heterogeneous programs must be tested as a system, not as a set of dice
+[26.10.21 10:56:34] silver: people run some loads, it echoes me
+[26.10.21 10:56:48] silver: they run cobalt, sliver, something else
+[26.10.21 10:57:48] silver: for AV, there is no difference, AV takes the following chain as a system:
+- letter in the mailbox
+- document with macro or other type of delivery
+- the dropper in the document that launches the bot
+- bot
+- loads triggered by bot
+[26.10.21 10:58:07] silver: of the whole chain we have full control only over the bot, and also over the crypts that cover the bot
+[26.10.21 10:58:27] silver: also our crypts cover the workloads and we have some control there too - we have at least an approximate idea of the purity of the workloads
+[26.10.21 10:58:52] silver: over everything else we have no control and mostly we don't even understand normality
+[26.10.21 10:59:11] silver: non-normality we get only in the form of negative from the client, and when everything is fine we know nothing about how the system works
+[26.10.21 10:59:53] silver: I repeat, in order to make it work as a clockwork mechanism - you need to control everything, and test everything, all possible combinations
+[26.10.21 10:59:59] silver: of course, it is impossible
+[26.10.21 11:00:10] silver: even physically, with all the desire
+[26.10.21 11:00:40] silver: it's for understanding the big picture
+[26.10.21 11:00:48] silver: now point 2 on methods of starting loads
+[26.10.21 11:01:18] silver: there will be point 3 on the operator manual, which nobody reads
+[26.10.21 11:02:58] silver: in terms of resistance from AB, the methods of launching the loads are as follows (and they have a reflection in the builder of the commands of admin bk)
+1) reflexive dll startup (made only in bk royal, there is no startup option in main admin)
+2) reflective launch of exe (process hollowing, available in admin and in all bots)
+3) launching dll via regsvr with a drop to disk (not available in bots and add-in)
+4) launch dll via rundll with drop to disk (found in all bots and addin)
+[26.10.21 11:03:24] silver: 5) launching exe with drop to disk (everybody has it, it is a "last wish" option)
+[26.10.21 11:03:38] silver: all use point 4 now
+[26.10.21 11:03:43] silver: point 1 is ignored
+[26.10.21 11:03:55] silver: point 2 is ignored
+[26.10.21 11:04:05] silver: point 1 needs to be tested and implemented
+[26.10.21 11:04:52] angelo: well, again, that's if we talk about pure load, here's to understand % of death with and without load for pure statistics figures
+[26.10.21 11:05:49] silver: somebody must do it, so keep such records
+[26.10.21 11:05:52] angelo: so they use only one launch method, it's no good
+[26.10.21 11:06:09] silver: these stereotypes are because it was good once
+[26.10.21 11:06:22] silver: also maybe because dlls always show better results on tests than exe
+[26.10.21 11:06:33] silver: on tests *without* considering the launching method
+[26.10.21 11:06:48] silver: your priority now
+[26.10.21 11:08:10] silver: you try to run with exe injection (p1) on your clients, find out the background why they don't want to
+this will require load redesigning, because for more than a year already all give out dll - exe may not assemble at once at our coders
+implement reflexive dll startup - go to collin, demand it from him
+[26.10.21 11:08:19] silver: test it
+[26.10.21 11:08:40] silver: already this alone will improve survivability. Not by much, but rubles are taken from pennies.
+[26.10.21 11:11:23] silver: p3 operator manual
+[26.10.21 11:11:25] silver: do you have it?
+[26.10.21 11:11:48] angelo: Colin threw it to me
+[26.10.21 11:12:04] silver: it covers it
+[26.10.21 11:12:17] silver: about launching methods
+[26.10.21 11:13:06] angelo: looking for
+[26.10.21 11:13:48] silver: well, why did we write it if they don't even know about it?
+[26.10.21 11:14:08] silver: bot is a precision tool, you can't swing it like a hammer
+[26.10.21 11:14:43] angelo: i understand, bots launched 10K and started throwing everything at anyone
+[26.10.21 11:14:58] silver: yes
+[26.10.21 11:15:08] silver: burned a bunch of bots, then yelled oh everything
+[26.10.21 11:15:24] silver: any bot's activity is a death knell
+[10/26/221 11:15:45] angelo: I'll go through the bots from the 23/24th. Monk assures that there were no load and die like rabbits
+[26.10.21 11:15:50] silver: so any command should be given with the understanding that it is done in the best way, load checked for compatibility
+[26.10.21 11:16:06] silver: > die like rabbits
+yeah i'm not arguing, that's the way it is
+[26.10.21 11:16:12] silver: i'm dealing with other things
+[26.10.21 11:16:30] silver: > rubles are taken from pennies
+[26.10.21 11:18:11] angelo: if only there were Ramon guys
+[26.10.21 11:18:18] angelo: there's a rabble to be honest
+[26.10.21 11:18:24] angelo: sloppy and chaotic
+[26.10.21 11:18:43] angelo: but zeus' staff as a whole is savvy
+[26.10.21 11:32:16] angelo: well, for 23-24 numbers on the 39 group I see about 120 bots, 100 of them dead. Of the 100, 20% were with any load.
+[26.10.21 11:32:38] angelo: 80 bots out of 120 died within 30 minutes without load
+[26.10.21 11:33:07] angelo: he can do the math himself and give that result with the argument that guys didn't even load them
+[26.10.21 11:33:58] angelo: again, what counter argument can we have here ?
+[26.10.21 11:37:11] silver: none, we have a fuck up here
+[26.10.21 11:37:20] silver: what to do about it i said
+[26.10.21 11:37:32] silver: where the bots are extinct, collect data on AV
+[26.10.21 11:37:43] silver: also see if the machine was hanic or exploratory
+[26.10.21 11:39:31] angelo: accepted
+[26.10.21 11:40:16] silver: you can pull the alphonse on the stats you want
+[26.10.21 11:40:25] silver: he'll query the database
+[26.10.21 11:40:38] silver: like "what were the avs in bots that lived less than an hour, on such and such date"
+[26.10.21 11:40:54] silver: and number of bots with each type of av
+[26.10.21 11:41:04] silver: "what was the os in the bots"...
+[26.10.21 11:41:29] silver: i.e. find out information for tests - on whom to test, in order to reproduce not survivability
+[26.10.21 11:50:13] angelo: so, make a list of AVs and OSes where bots die fast by themselves and let them test in longtime mode
+[26.10.21 11:50:29] silver: yeah
+[26.10.21 11:50:53] silver: only there are win10 and vindef everywhere anyway because it's the most common combo
+[26.10.21 11:51:03] silver: so you don't have to waste your time and check it right away )
+[26.10.21 11:51:48] angelo: and tell me, is there any difference in this test, in this case, VM mine or our farm ?
+[26.10.21 11:52:06] angelo: exactly speaking now about Def +10 vinda
+[26.10.21 11:52:11] silver: no, the main difference will bring you geo
+[26.10.21 11:52:24] silver: it depends what kind of vpn/geo you use to cover virtual machines
+[26.10.21 11:52:33] angelo: got it, I'll make a clean OS and run
+[26.10.21 14:03:21] angelo: I'll be gone for a while for the little guy
+[27.10.21 09:49:50] angelo: hi
+[27.10.21 09:53:47] silver: hi.
+[08.11.21 15:09:08] silver: yeah.
+[08.11.21 15:09:15] angelo: i found the webroute detects on friday
+[08.11.21 15:09:19] angelo: i don't know if you saw it or not
+[08.11.21 15:09:28] silver: no
+[08.11.21 15:09:28] silver: detects for what?
+[08.11.21 15:09:33] angelo: matched hash to module, it's definitely detected
+[08.11.21 15:09:35] angelo: VNC
+[08.11.21 15:09:47] silver: ok
+[08.11.21 15:09:58] silver: good that you found it, I mean, learned to localize it
+[08.11.21 15:10:02] silver: very good
+[08.11.21 15:10:49] angelo: well, not everything
+[08.11.21 15:10:51] angelo: what to do next?
+[08.11.21 15:11:08] angelo: webroot doesn't give any static detects
+[08.11.21 15:11:18] angelo: where to write/who to
+[08.11.21 15:12:09] silver: write grem as a module developer
+[08.11.21 15:12:18] silver: dear grem, clean the module from webroot
+[08.11.21 15:12:22] silver: here is the proof
+[08.11.21 15:14:08] angelo: got it
+[08.11.21 15:14:17] angelo: another question
+[08.11.21 15:14:25] angelo: sometimes i don't understand adam
+[08.11.21 15:14:29] angelo: his tasks
+[08.11.21 15:14:53] angelo: if you watched the group Tricky Pr. There was a discussion about running shel on bots in uk
+[08.11.21 15:15:28] angelo: Def is silent so far, I did not understand what is the shellcode and what is it for if Robin launches the trike from uk with a simple dll.
+[10.11.21 14:23:49] silver: otr)
+[10.11.21 14:24:39] silver: what admins do you have access to?
+[10.11.21 14:24:54] angelo: new and old
+[10.11.21 14:25:05] angelo: x6rci
+[10.11.21 14:25:11] angelo: lch5n
+[10.11.21 14:25:31] silver: if you see a bot marked "free" or "azot" or "problems couldn't raise the session" or any other notes, this is for you
+[10.11.21 14:25:44] silver: also you may be written to the toad by the people who put these marks
+[10.11.21 14:26:40] silver: you need to catch such bots regularly and
+- if you have time, watch the logs of AV at the time of commands
+- tell me the ID of these bots
+[10.11.21 14:27:25] angelo: that's what I try to do
+[10.11.21 14:27:41] angelo: monitoring admins is very productive =/
+[10.11.21 14:27:45] silver: the point is it's important to catch these bots in time
+[10.11.21 14:27:51] silver: bots are very valuable
+[10.11.21 14:28:10] silver: where the hackers tried to enter and failed - and the bot is still alive - for example, this bot can be sold
+[10.11.21 14:28:25] silver: but if it's dead, you can't sell it
+[10.11.21 14:29:49] angelo: ah, so it's outside of Robin or Derek
+[10.11.21 14:30:09] silver: you have access to all groups ?
+[10.11.21 14:30:31] silver: you need access to all the groups
+[10.11.21 14:30:32] angelo: by the way, i was crypting the damn VNC till 3:30 last night and was testing brooks' program ((
+[10.11.21 14:30:36] angelo: no of course
+[10.11.21 14:30:44] angelo: let me see what kind
+[10.11.21 14:34:37] angelo: old
+g10
+g11
+39
+19
+30
+g5
+29
+New
+39
+g5
+g12
+20
+19
+g10
+g11
+[10.11.21 14:35:22] silver: let them add you to all groups
+[10.11.21 14:38:04] angelo: unsubscribe
+[10.11.21 14:40:13] angelo: you know, I usually do not start such conversations, but it seems to me that I have grown attached to the laptop and it is unreasonable, even mine is beginning to think that I am a fool
+[10.11.21 14:40:43] silver: take it and train an assistant
+[10.11.21 14:40:59] silver: and I'll give you a bonus
+[10.11.21 14:44:05] angelo: i have no place to take an assistant, i'd probably do it myself, but i'm really bored with 1300 to be honest, and 300 was added after i asked for it
+[10.11.21 14:44:13] angelo: i'm basically on call 14-16 hours a day
+[10.11.21 14:44:27] angelo: always coming to help like that damn chip and dale
+[10.11.21 14:45:01] silver: i passed your words on to frans]
+[10.11.21 14:45:37] angelo: I was gonna tell Stern, we had a discussion about it
+[10.11.21 14:45:46] silver: Write!
+[10.11.21 14:45:49] silver: I'll support it
+[10.11.21 14:46:05] angelo: I don't want to give a fuck about my job.
+[10.11.21 14:46:36] silver: and about assistants, why not?
+[10.11.21 14:46:36] silver: let's look for them]
+[10.11.21 14:49:35] silver: don't worry
+[10.11.21 14:49:45] silver: beat it out of Manuel
+[10.11.21 14:50:01] silver: if we can't get and train someone, we'll hire from the outside
+[10.11.21 14:50:38] silver: if you have such a load, then let's share it and make you the head of your tech support team
+[10.11.21 14:50:48] silver: and if you're gonna be a support teammate, then there's more money for that
+[10.11.21 14:50:51] silver: something like this
+[10.11.21 14:51:35] silver: I wrote him
+[10.11.21 14:52:00] angelo: I don't have a tech base like that (
+[10.11.21 14:53:05] silver: you have persistence
+[10.11.21 14:53:14] silver: that's a basic quality
+[10.11.21 14:53:53] silver: okay, you got it.
+[10.11.21 14:53:56] silver: about hiring
+[10.11.21 14:54:50] angelo: didn't think it was crucial
+[10.11.21 14:54:52] angelo: okay
+[10.11.21 14:55:01] angelo: see where it takes us
+[10.11.21 14:55:12] silver: it's crucial, trust me.
+[11.11.21 07:58:44] angelo: hi
+[11.11.21 07:58:50] angelo: talked to robin yesterday
+[11.11.21 07:59:17] angelo: they were using IcedID
+[11.11.21 07:59:45] silver: I know
+[11.11.21 07:59:52] silver: and he told me how fucking great it was
+[11.11.21 08:00:02] angelo: not like that
+[11.11.21 08:00:05] angelo: it was
+[11.11.21 08:00:12] angelo: it wasn't great afterwards
+[11.11.21 08:00:18] angelo: what would help us?
+[11.11.21 08:00:21] angelo: there are screenshots
+[11.11.21 08:00:29] angelo: just them for now
+[11.11.21 08:00:36] silver: help with what?
+[11.11.21 08:00:55] angelo: well, you said to find out anything from the last bot
+[11.11.21 08:01:03] angelo: I was wondering if you needed any codecs
+[11.11.21 08:01:19] silver: nobody except bot author has sources
+[11.11.21 08:01:41] silver: screenshots will not help. Is it interesting to assess the actual statistics on the bounces and survivability
+[11.11.21 08:04:03] angelo: no matter how fucked up, you know the outcome
+[11.11.21 08:04:18] silver: never mind
+[11.11.21 08:04:22] silver: we have nothing to reproach ourselves with
+[11.11.21 08:04:36] angelo: but there is a little residue
+[11.11.21 08:04:44] angelo: agree
+[11.11.21 08:04:54] silver: Nope.)
+[11.11.21 08:05:03] silver: I disagree]
+[11.11.21 08:05:05] silver: I have no residue
+[11.11.21 08:05:21] silver: you know, it's like oil
+[11.11.21 08:05:28] silver: Go to the market and look for a cheaper, thicker one.
+[11.11.21 08:06:31] angelo: I just don't know the market and I don't know my competitors, and my conclusion is local, for us, more information - more understanding of market conditions
+[11.11.21 08:15:07] angelo: Can Hymie give the VNC code ? There are problems with it, we can not understand.
+[11.11.21 08:15:44] silver: Yes
+[11.11.21 08:15:47] silver: and grem does not pull?
+[11.11.21 08:16:06] angelo: honestly, he doesn't want to get into the code
+[11.11.21 08:16:40] angelo: Hymie otherwise
+[11.11.21 08:16:55] silver: i give permission, but i dont have access to code myself) so grem should share in git
+[11.11.21 08:16:56] angelo: he's always willing to dive in to figure it out
+[11.11.21 08:17:06] angelo: ok, thanks
+[11.11.21 09:50:12] angelo: i have two questions
+[11.11.21 09:50:25] angelo: when will the bot trades start
+[11.11.21 09:50:30] angelo: and second, who will you sell to? )
+[11.11.21 09:51:10] silver: i don't know
+I still need to assess the scale of trouble
+[11.11.21 09:51:15] silver: how many bots are going down
+[11.11.21 09:59:27] angelo: sorry there's trouble at all
+[11/17/11/21 10:22:23] angelo: hi
+[17.11.21 10:22:47] angelo: i know you're very busy there and i even think i know what
+[17.11.21 10:22:47] silver: koo
+[17.11.21 10:22:56] angelo: two questions
+[17.11.21 10:23:00] silver: go ahead
+[17.11.21 10:23:04] angelo: should the herald be paid?
+[17.11.21 10:23:06] angelo: second
+[17.11.21 10:23:10] angelo: me what ?
+[17.11.21 10:23:13] angelo: same 650 ?
+[17.11.21 10:23:19] angelo: sadness sadness and pain
+[17.11.21 10:23:29] silver: don't know anything about herald
+[17.11.21 10:23:40] angelo: ok, I took it off
+[17.11.21 10:23:43] silver: I asked you for a bonus both now and at the end of the month, they haven't given you one yet?
+[17.11.21 10:23:50] silver: and a raise from December
+[17.11.21 10:24:15] angelo: no, they haven't, but i honestly need it
+[17.11.21 10:24:41] silver: told the French
+[17.11.21 10:24:47] angelo: ok, thanks
+[17.11.21 10:24:59] angelo: should have been a dentist, they rip you off.
+[17.11.21 10:29:34] silver: everything will be fine
+[17.11.21 10:29:41] silver: the franchise approves
+[17.11.21 10:29:57] silver: don't talk about dentists
+[17.11.21 10:30:05] angelo: great, yesterday I gave 30K through the pain
+[17.11.21 10:39:08] silver: france said he got you up to 1800
+[17.11.21 10:39:26] silver: are you satisfied? )
+[17.11.21 10:42:03] angelo: i appreciate it!
+[17.11.21 10:42:13] silver: and me to you
+[17.11.21 10:42:23] angelo: now my visits to these thieves in robes will be less painless
+[17.11.21 10:42:40] silver: crooks
+[17.11.21 10:42:47] silver: I hate them because they lie
+[17.11.21 10:42:58] angelo: really, thanks, it'll be easier to breathe
+[17.11.21 10:43:08] silver: come on!)
+[17.11.21 10:43:08] angelo: I hate that they take advantage of our weakness
+[17.11.21 10:45:07] angelo: I don't pry, but by any chance your question about Perl/Scala/Go/Lua in general chat is not related to Zeus ?
+[17.11.21 10:45:40] silver: no

@@ -1,0 +1,89 @@
+BREEDING AUTOTESTS
+
+PURPOSE
+
+Automate bot reproduction testing. This testing takes place on a group of virtual machines, simultaneously.
+
+
+MANUAL TESTING SCENARIO
+1. bot is running on the main machine
+2. the tester calculates the bot's ID by the IP-address of the machine
+3. modules are launched in the admin panel
+tabDll infect
+wormDll infect
+shareDll infect
+4. the bot is expected to spawn from two other machines, connected to the first machine by domain/network.
+
+Autotest task:
+- To trace back the pullback from the other two machines.
+
+
+SOLUTION OPTIONS
+
+1. Autotest script is linked to the cryptopane only on the master machine
+- on the primary machine, the autotest script works
+- The secondary machine runs an autotest script which reports back to the primary machine, not to the cryptopanel
+The primary machine just waits for the reports from the slaves to appear, and parses them
+Slaves work as usual autotests, but without connecting to cryptopanel
+
+Disadvantages:
+- You have to make either public balloons to copy files between machines,
+  or cached, or something in-between like FTP.
+In all variants you get problems:
+- either the cleanliness of the tests is compromised
+- Or we get hard to figure out problems with SMB authentication
+- or it's no better than pinging into the admin area.
+
+2. Autotest scripts are linked to the cryptopanel on the master and slave machines
+- A full-fledged autotest script runs on each machine.
+Disadvantage:
+- You need to link machines in a group with cryptopanel concepts.
+
+
+REWORK OF THE CRYPTOPANEL
+
+1. You need to combine virtual machines into groups.
+In this case in the group one machine is the master (master), all the other slaves (slave)
+
+2. In the tasking interface on a VM, only the master machine is displayed.
+
+3. When setting a task for a group master VM, the following happens:
+- all VMs of the group are started, according to the same logic as for usual VMs
+- logic of work with the task for the group master is the same as for usual VMs, with one exception (see below).
+  We mean issuing a task (file for check) and getting status and report from VMs.
+- task logic for slaves is different:
+  - slaves do NOT request a file for checking
+  - nevertheless, the slave sends you the completion report after a certain amount of time.
+  - The ID of a task in report will be arbitrary. Admin itself must determine the ID of the task, based on what task is assigned to a VM group.
+- A task is considered completed when ALL machines in the group (both master and slaves) have issued task statuses and reports on it.
+- if a task interruption by timeout is provided for a standard VM outside the group, this logic must be executed for the group as well
+- the task report must be glued together from the reports from each machine in the group. Each log must be preceded by the name of the machine from which the log is received.
+- The result of a task is considered successful if ALL the machines in the group report successfully (it will take one machine that fails,
+  is enough for the result to be FAILED).
+- the logic of shutting down and rolling back all VMs in the group repeats the logic for working with VMs outside the group.
+
+
+REFINEMENT OF THE DARK ADMIN PANEL
+
+We need an API call:
+HTTP GET /some_hidden_path/runmodules/ID
+This call executes the commands
+  tabDll infect
+  wormDll infect
+  shareDll infect
+for the bot with the specified ID.
+
+Answers:
+200 - fulfilled
+404 - bot with this ID was not found
+
+
+FINALIZING AUTOTEST SCRIPTS
+
+On the wizard:
+- we need to add a call to the dark admin API after the test is completed
+
+On slaves:
+- you don't need to download the file
+- generate task ID arbitrarily (e.g. always 1).
+- increase client_installed timeout

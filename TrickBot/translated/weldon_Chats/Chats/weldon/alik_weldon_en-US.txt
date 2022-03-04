@@ -1,0 +1,40 @@
+[18.11.21 13:32:28] alik: Hi, please add me to the antic repository, nickname mnm40
+[18.11.21 13:33:58] weldon: hi, you mean in antic channel ?
+[18.11.21 13:34:24] alik: is your antic on gitlab?
+[18.11.21 13:35:12] weldon: no, there's an original (old) antic
+[18.11.21 13:35:31] alik: Add it please, I want to see the structure
+[18.11.21 13:35:58] weldon: that to admins, or silver can add
+[18.11.21 13:37:04] alik: Are you a maintainer in your project in git?
+[18.11.21 13:37:34] weldon: I don't upload mine - my work folder weighs 13.1 GB
+[18.11.21 13:37:50] weldon: wait a minute, go to the git
+[18.11.21 13:38:06] alik: What's so heavy there? Besides sorts.
+[18.11.21 13:38:18] alik: You got it set up?
+[18.11.21 13:47:06] weldon: I can't add to it - I'm not Maintainers or Owners
+[18.11.21 13:48:48] weldon: darien @darien
+rafael @rafael (maintainers)
+or
+noname @noname
+- tunri - ovner (who disappeared)
+[11/18/21 13:51:51] weldon: my folder after cleanup/clobber - 3.80 GB (ESR91 itself in 750 MB archive)
+[19.11.21 09:47:36] weldon: `https://hg.mozilla.org/releases/mozilla-esr91/` is ESR91
+[19.11.21 09:54:27] weldon: I'll find link to alpha
+[19.11.21 09:58:26] weldon: `https://hg.mozilla.org/mozilla-central/rev/94e78aba14ddf00cf15091d07833c651bb1369cd`
+[19.11.21 10:01:47] weldon: no I'm not
+[19.11.21 10:03:53] weldon: `https://hg.mozilla.org/mozilla-central/rev/FIREFOX_NIGHTLY_68_END` - this alpha
+[19.11.21 10:04:49] weldon: this is the last one
+[19.11.21 10:12:58] weldon: got it?
+[19.11.21 12:11:26] alik: yes
+[19.11.21 12:12:25] weldon: I'll send you the patch
+[19.11.21 12:12:40] alik: Patch - sorts?
+[19.11.21 12:13:07] weldon: for ESR91
+[19.11.21 12:13:58] weldon: you can make a diff (between FIREFOX_NIGHTLY_68_END and antic) 1.5 MB
+[19.11.21 12:14:42] alik: Wait, your patch does what? patches the source code or binary?
+[19.11.21 12:15:59] weldon: it rolls on ESR91, but there is no assembly
+[19.11.21 12:16:07] weldon: sources
+[19.11.21 12:16:20] alik: Make a branch and run the patch there
+[19.11.21 12:16:31] alik: On the current sorts
+[19.11.21 12:19:05] weldon: I'm busy with my daughter later
+[24.11.21 13:48:39] weldon: hi
+[24.11.21 13:50:23] weldon: created repo yesterday (https:/ *** /patch_antic) for antic, added mnm40
+[24.11.21 13:50:48] weldon: I'll add description later
+[24.11.21 15:12:47] alik: Hi, great

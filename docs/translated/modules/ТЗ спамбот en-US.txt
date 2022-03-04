@@ -1,0 +1,271 @@
+TERMS OF REFERENCE
+SPAM BOT
+
+PURPOSE
+To develop a spam bot that uses the resources of the host computer to send spam.
+
+OPERATION MODES
+There are two main modes:
+- collection of contacts: only collect addresses and contacts from local mailboxes and send to the server.
+- gathering and sending: the same + spamming.
+
+The input data for the bot is
+- message body
+- attachments
+- list of addresses to be sent
+- sending vectors (lists of SMTP servers, local mail client)
+
+The first two items (email and attachments) are received by the bot from the server.
+The mailing list and sending vectors can be internal or external:
+- internal - these are obtained from the local computer resources
+- External - these are received from the server.
+
+Additional modes:
+- working by a locally obtained mailing list, or by one received from the server;
+- sending via local mail clients, or via SMTP servers specified by the server.
+
+EMAIL RANDOMIZATION
+The bot must support randomization of emails and attachments by using macros in the body of the email and attachment names.
+Macros are:
+- dictionaries (selecting a random word from the dictionary);
+- random number generation;
+- random string generation.
+
+(Thoughts aloud) there are two ways:
+- randomization on the server: pluses in simplifying the client, minuses in increasing the load on the server
+- randomization on the client: the opposite is true.
+
+REQUIREMENTS
+- Link to a command server to receive emails, attachments, list of addresses to send, and list of SMTP servers
+- Appearance as a statically linked .exe
+- Comply with the "code and assembly design" requirements for security against analysis and detects.
+- the program should not try to get its own path
+- the program should not restart itself
+- the program must work with any rights - including SYSTEM rights!
+- the program must work in any session - both interactive (>0) and system (session 0)
+Check psexec -d -s program.exe
+- The default implementation of HTTP exchange is WinInet/WinHTTP. However, you need to make simple wrappers for HTTP requests,
+so that it is easy and simple to replace the implementation
+
+STAGES OF DEVELOPMENT
+1. only collecting addresses from Microsoft Outlook
+2. sending out the addresses collected during stage 1 via Microsoft Outlook
+3. getting addresses to be sent from server, sending via Microsoft Outlook
+4. in addition, mailing to the list of SMTP servers received from the server
+5. pulling from GMail web mail
+6. mailing via GMail web mail
+7, 8. + Yahoo Mail
+
+
+PROTOCOL
+The protocol is regular HTTPS.
+The HTTP server MUST provide a Content-Length header for each response.
+The bodies of requests and responses must be encrypted with a simple XOR using the URI as the gamma (encryption key).
+That is, for GET /1/2/sv request body the encryption key will be the string /1/2/sv
+
+-Butted out-
+Communication with the command and control server takes place via .bazar domains (or another Emercoin DNS domain).
+There can be multiple domains; for the initial connection to the server, the domains are enumerated randomly
+until the first successful response. The programmer must assume that all domains lead to the same server.
+
+After resolving the IP address from the Emercoin domain, you should do a trial of TWO addresses:
+- directly obtained from the DNS response
+- convert the IP address by XOR 254 operation for each octet. For example,
+  124.245.101.251 (obtained from DNS response) -> 130.11.155.5
+
+Since the DNS information is available to everyone, this protects against abuses from addresses taken from the DNS record.
+
+Script code ipxor.ps1 in PowerShell:
+$ip = read-host -prompt "Enter IP";
+write-host $ip;
+$newip = ';
+($ip.split('.') | foreach {
+    $octet = [byte] ( $_)
+    $octet = $octet -bxor 254;
+    $newip = -join($newip,'.',$octet);
+}
+)
+write-host $newip;
+-end of crossed-out-.
+
+Communication with the command server is through a hard-coded list of IP addresses.
+The first address responding to port 443 via HTTPS is selected by brute force.
+Further work is done with it.
+
+When a connection is established, in case of a timeout or connection failure, you should retry once.
+Then go on to the address search until the first successful response.
+
+-Blocked-
+When bouncing, you should be aware that the duplicity of the addresses due to XOR encryption can lead to
+You may get a reply from a server that knows nothing about it.
+-End of strikethrough-
+
+
+The request URI has the form
+
+/id_mailout/id_bot/request
+
+where
+- id_mailout - mailing ID - uint64_t
+- id_bot - bot ID - string; by default it is GUID in format CBD27893-F9EB-465C-AAF6-D620ED24C8C9,
+but it can also be an arbitrary string with valid characters a-zA-Z0-9_-.
+
+Both parameters can be passed to the bot externally, via command line arguments or environment variables.
+The default response format is plain text with line separator [\r]\n
+
+By default, any response codes other than HTTP 200 or HTTP 102 are errors (including codes 204, 30*).
+HTTP code 102 "Processing" means that the server can not give a response right now, and should repeat the request after some time.
+In this case the bot should do a cyclic polling at intervals of 30 seconds, until it receives a not-102 code.
+In the case of an error code (not 200 or 102), the bot should retry five times at 5-second intervals, until the first success.
+If no success, the bot registers an error and exits.
+If the bot fails to parse and interpret significant fields from the server response, the bot commits an error and terminates.
+
+1. Give the parameters: interval between emails, mailing list type, sending type, number of attachments, checkbox
+GET /<idm>/<idb>/st
+
+Response:
+<interval>[\r]\n // number of seconds between sending two consecutive letters. 0 means no interval. The default is 0.
+<mailout_type>[\r]\n // bitmask: 1 - all addresses from local desktop client;
+                               // 2 - all addresses from local webmail accounts;
+                               // 4 - get mailing list from the server;
+                               // all other values (bits) - error
+<send_type>[\r]\n // bit mask: 1 - sending through desktop local mail client;
+                               // 2 - sending through local webmail accounts;
+                               // 4 - sending through the list of SMTP-servers received from the server
+                               // no bit is set - only the contacts collection
+                               // all other values (bits) are an error
+<attach_num>[\r]\n // number of attachments to the message: 0 to 10 (other values are an error)
+<rcpt_every>[\r]\n // one letter for the specified number of recipients; additional recipients are specified in Bcc:
+<random_every>[\r]\n // randomize every H email
+<control_mailbox>[\r]\n // control mailbox
+<validate_emails>[\r]\n // whether to validate email addresses after collection: 0 - no, 1 - yes
+
+2. give the subject
+GET /<idm>/<idb>/sb/<number>
+
+In response - the subject of the email, one per line (you can get many topics at once).
+<number> - the requested number of topics.
+In this request and in request #3, the <number> parameter is used to minimize the number of requests to the server.
+To get, for example, 1000 emails at a time.
+
+3. give the email
+GET /<idm>/<idb>/m/<number>
+
+<number> - the requested number of emails.
+In response - the text of the letter as it should be sent.
+A clarification is possible here - since the email can be in a multipart container.
+If all mail clients allow you to send a message in raw form (with all separators, etc.),
+then in response to this request we will get a fully formatted raw body.
+Otherwise we need subrequests to get all parts of the multipart message.
+
+4. give attachment no.
+GET /<idm>/<idb>/a/<¹>
+
+Here # is the number of the attachment from 1 to 10.
+The response should contain a Content-Disposition header that uniquely identifies the attachment name and MIME type.
+Lack of this header is an error.
+Response content is interpreted by HTTP response headers (container, compression headers, etc.).
+
+5. give the mailing list
+GET /<idm>/<idb>/l
+
+The reply contains a simple listing of the email addresses to which the email should be sent.
+One address per line.
+
+6. give the sending servers
+GET /<idm>/<idb>/sv
+
+The response contains a simple listing of SMTP servers through which the mail should be sent, one per line.
+The format of the string is:
+[<proto>:]<IP-address>:<port>:<user>:<password>[:field=value[:field=value...]]
+The content of the proto field indicates the need to work over an SSL channel.
+Specify.
+
+Field=value parameters are used to send additional fields, such as DNS records, RSA keys, selectors, etc.
+The number and purpose of fields is interpreted by the specific server and bot implementation.
+
+
+7. take the contacts.
+POST /<idm>/<idb>/c
+
+The content of the request body is plain text (WITHOUT multipart or form-urlencoded CONTAINER!)
+one contact record per line, UTF-8 encoded.
+The contact record has the following format:
+field=value;field=value;...;field=value\r\n
+All values are urlencoded.
+The following values are supported for field:
+
+email
+firstname
+midname
+lastname
+country
+state
+city
+zip
+street
+phone
+url
+
+Any unknown values must be stored by the server in the database! A mechanism must be provided for this,
+that allows you to save the extended contact fields.
+At the same time it is necessary to exclude denials of service by sending gigantic queries.
+
+If the volume of sending exceeds the threshold (set by the compilation constant), the bot must split the sending
+into a corresponding number of requests. The default request limit is 2M.
+
+8. take the information
+POST /<idm>/<idb>/info
+
+The content of the request body is plain text (WITHOUT multipart or form-urlencoded CONTAINER!)
+of the following form:
+
+os: <operating system name and version>
+arch: <architecture x86/x64> machine
+hostname: <computer name>
+username: <user name>
+domain: <domain or workgroup>
+tz: <temporary zone>
+locale: <local>
+ip: <external IP address>
+client: <name and version of local mail client, if found. There can be many such strings>
+webmail: <URL and account of the mail client, if found. There can be many of these strings>
+me: <email and local mail account contacts. There can be many such strings>
+
+The bot can send more information in the field:value format - this request may be subject to expansion.
+The server implementation must take this into account and be ready to store unknown data.
+
+9. take statistics
+
+POST /<idm>/<idb>/info
+
+The content of the request body is plain text (WITHOUT multipart or form-urlencoded CONTAINER!)
+of the following form:
+
+sent: <total letters sent, pcs.
+addresses: <total addressees>
+
+The bot can send many such requests during one session, to reflect the progress of the mailing.
+The server is guided by the last request received from the bot.
+
+
+WORKING PROCEDURE
+
+The principles of establishing a connection with the server are described in the PROTOCOL section.
+
+After starting the bot must:
+1. establish a connection to the server - find a live domain, give a GET / HTTP/1.1 request and make sure
+that the response code is 200.
+2. gather information about the system and send it to the server. From the response of the server make sure,
+that it is "our" server, otherwise terminate.
+3. Request the modes of operation from the server
+4. if it's specified in the modes, collect addresses from local mail clients, validate them and send to the server.
+5. if specified in modes, send letters.
+5.1. when mailing, display progress by periodically sending statistics (every 1000 addresses or 1 minute, whichever comes first)
+6. self-delete from disk (if specified in the build options).
+
+ADDITIONAL
+There is ready-made source code for:
+- Collecting addresses and sending emails via Microsoft Outlook
+- Collecting addresses and sending emails via Gmail and Yahoo!
+ 

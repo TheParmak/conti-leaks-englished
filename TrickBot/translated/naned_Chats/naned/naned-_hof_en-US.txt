@@ -1,0 +1,678 @@
+2020-07-17T09:14:02 hof -> naned
+hi
+
+2020-07-30T14:00:17 naned -> hof
+Hi, Buza wrote to me that you have a template of module dll, api which is described in module_HOWTO, can you please send me
+
+2020-07-30T14:00:36 hof -> naned
+hi
+
+2020-07-30T14:00:50 hof -> naned
+In about 15-20 minutes I'll send you
+
+2020-07-30T14:01:09 naned -> hof
+ok, ok
+
+2020-08-12T10:45:25 naned -> hof
+Hi, listen, there's a little problem with the module
+
+2020-08-12T10:47:07 naned -> hof
+Bottom line: I load it with LoadLibrary, x86 is fine, then I go to the 64-bit version and get an Error code - 126 (The module could not be found)
+
+2020-08-12T10:47:23 hof -> naned
+Hi
+
+2020-08-12T10:47:41 naned -> hof
+have you encountered these problems? I've just never compiled libs
+
+2020-08-12T10:47:48 hof -> naned
+64 version from a 32 bit program?
+
+2020-08-12T10:47:53 naned -> hof
+no
+
+2020-08-12T10:47:58 naned -> hof
+64 of 64
+
+2020-08-12T10:48:40 hof -> naned
+strange of course, I think there is a small bug somewhere
+
+2020-08-12T10:48:51 hof -> naned
+Maybe the name of the dll is wrong?
+
+2020-08-12T10:49:22 naned -> hof
+well I just change the platform of the builder and the lib itself
+
+2020-08-12T10:49:39 naned -> hof
+compile and replace the lib
+
+2020-08-12T10:49:54 naned -> hof
+the names are the same in the 32nd as in the 64th bit version
+
+2020-08-12T10:50:40 hof -> naned
+make sure the dll is in the same folder, and that the bits are the same
+
+2020-08-12T10:50:51 hof -> naned
+should work
+
+2020-08-12T10:51:04 naned -> hof
+ah lol
+
+2020-08-12T10:51:27 naned -> hof
+everything yes, I dumbly stuck it in the 32-bit version and ran it through the 64 debugger
+
+2020-08-12T10:51:47 naned -> hof
+it's epic, sorry for the distraction.
+
+2020-08-12T10:51:56 hof -> naned
+happens )
+
+2020-08-19T07:23:03 naned -> hof
+Hi, I was wondering when buza will be back?
+
+2020-08-19T07:42:30 hof -> naned
+hi
+
+2020-08-19T07:42:39 hof -> naned
+The booze will be at the end of the month.
+
+2020-08-19T07:43:08 hof -> naned
+how are you doing with the module?
+
+2020-08-19T07:48:11 naned -> hof
+Seems ok, I have long time ago, but I have questions about the functionality
+
+2020-08-19T07:48:40 hof -> naned
+was there a tz?
+
+2020-08-19T07:48:54 naned -> hof
+well in fact there is no specific one
+
+2020-08-19T07:49:41 hof -> naned
+ask, maybe I'll give you a hint.
+
+2020-08-19T07:50:10 naned -> hof
+before he left I was given the task to make a light version of the tool that I wrote, I made it quickly enough, then integrated it into a dll, but now the question is about the full version
+
+2020-08-19T07:50:50 naned -> hof
+The question is whether to make a separate dll version of the module or to shove everything into 1
+
+2020-08-19T07:51:18 naned -> hof
+what was the problem in the beginning in two words
+
+2020-08-19T07:51:52 hof -> naned
+I think you should make a separate one.
+
+2020-08-19T07:52:42 naned -> hof
+I wrote a tool which reads chipset VID DID through IO and then works depending on the generation, buta asked to write platform checker without driver
+
+2020-08-19T07:53:36 hof -> naned
+and send the information to the server?
+
+2020-08-19T07:55:06 naned -> hof
+Well, yes, it makes sense that there is a separate one, I just wanted to clarify
+
+2020-08-19T07:55:19 naned -> hof
+I don't know what to do with the info next
+
+2020-08-19T07:56:06 naned -> hof
+this booza didn't tell me, I just send it as messages via lpEventCallback for now
+
+2020-08-19T07:56:18 hof -> naned
+That's good enough for now
+
+2020-08-19T07:56:29 hof -> naned
+The messages will reach the command server
+
+2020-08-19T07:57:20 hof -> naned
+so feel free to do the full version of the module
+
+2020-08-19T07:58:28 naned -> hof
+But also, you can't obfuscate andrivet strings when calling lpEventCallback, do they need to be obfuscated with something?
+
+2020-08-19T07:59:56 hof -> naned
+we obfuscate strings so that it is not so easy for antiviruses to set detections
+
+2020-08-19T08:00:19 hof -> naned
+i.e. as little statics as possible in the body of dll or exe
+
+2020-08-19T08:00:57 hof -> naned
+the meaning so that the string is decrypted (or generated) just before use
+
+2020-08-19T08:01:14 naned -> hof
+yes I understand that
+
+2020-08-19T08:01:22 hof -> naned
+then immediately nulled
+
+2020-08-19T08:01:54 hof -> naned
+and why andrivet when calling lpEventCallback won't work?
+
+2020-08-19T08:04:49 naned -> hof
+I don't remember anymore, I'll look it up and report back then.
+
+2020-08-19T08:05:14 hof -> naned
+ok
+
+2020-08-19T08:05:24 naned -> hof
+ I think they only obfuscate strings on the stack
+
+2020-08-19T08:05:32 naned -> hof
+but it's not exact
+
+2020-08-19T08:05:48 hof -> naned
+so got the string on the stack, copied it anywhere
+
+2020-08-19T08:06:09 hof -> naned
+sent, nulled, released memory
+
+2020-08-19T08:07:31 naned -> hof
+I'll try it now, I remember I had some problems with it, maybe I made some light error again.
+
+2020-08-19T08:30:55 naned -> hof
+hmm, everything works without any tambourine at all
+
+2020-08-19T08:31:18 hof -> naned
+great
+
+2020-08-19T08:31:41 naned -> hof
+strange, it looks like I messed up somewhere again then(
+
+2020-08-19T08:32:05 hof -> naned
+A lot depends on compiler optimization
+
+2020-08-19T08:32:17 hof -> naned
+should always be checked after changing settings
+
+2020-08-19T08:32:18 naned -> hof
+а
+
+2020-08-19T08:32:35 naned -> hof
+maybe yes, I configured the options after that
+
+2020-08-19T08:33:04 naned -> hof
+Got it, thanks for the info!
+
+2020-08-19T08:33:14 hof -> naned
+you're welcome
+
+2020-09-16T08:34:03 naned -> hof
+Hi, I finalized my module, booza told you to reset it, here is the release itself, I'm also about to add rights to the git
+
+2020-09-16T08:34:08 naned -> hof
+Download: https://qaz.im/load/S36GNA/EQy6Ke
+Delete: https://qaz.im/index.php?a=delete&q=514565449
+
+2020-09-16T08:34:27 naned -> hof
+sldMSTIAXd?o$F~bW1C5
+
+2020-09-16T09:22:46 hof -> naned
+hi, ok
+
+2020-09-16T09:26:48 hof -> naned
+in the resources of the driver?
+
+2020-09-16T09:26:56 naned -> hof
+yes
+
+2020-09-16T09:27:21 hof -> naned
+encryption would be desirable.
+
+2020-09-16T09:27:24 hof -> naned
+d:\src\rw\rwxe3\rw\driver\objfre_win7_x86\i386\RwDrv.pdb
+
+2020-09-16T09:27:30 naned -> hof
+ok
+
+2020-09-16T09:27:44 hof -> naned
+remove debug info from the driver
+
+2020-09-16T09:27:48 naned -> hof
+Yes, I was thinking about that, I forgot to ask the booz
+
+2020-09-16T09:27:54 naned -> hof
+it is signed
+
+2020-09-16T09:28:04 naned -> hof
+it's easier to encrypt
+
+2020-09-16T09:28:59 hof -> naned
+and maybe not in the resources, but in the code or data section to hide it
+
+2020-09-16T09:29:01 naned -> hof
+The driver is not mine, it is the driver of a tool to work with all sorts of registers, memory ports, etc.
+
+2020-09-16T09:29:08 hof -> naned
+I understand
+
+2020-09-16T09:29:21 hof -> naned
+\rwdrv.sys - encrypt into .rdata
+
+2020-09-16T09:29:27 hof -> naned
+line
+
+2020-09-16T09:30:46 naned -> hof
+Yes, I missed something.
+
+2020-09-16T09:31:07 hof -> naned
+check it, look through the binary in a hex editor
+
+2020-09-16T09:31:54 naned -> hof
+i think i checked it, maybe i put the wrong IDA in the release, i'll fix it
+so what about the driver, where to shove it and how?
+
+2020-09-16T09:32:16 naned -> hof
+is there any means of automating this kind of thing?
+
+2020-09-16T09:32:50 naned -> hof
+Or just put it in with your own hands?
+
+2020-09-16T09:32:57 hof -> naned
+You have to make a utility program yourself.
+
+2020-09-16T09:33:15 naned -> hof
+well and better encrypted?
+
+2020-09-16T09:33:34 hof -> naned
+Yes, encrypt it.
+
+2020-09-16T09:34:10 hof -> naned
+if in the data section, then maybe some simple xor encryption, and then let's say convert to base64
+
+2020-09-16T09:34:36 hof -> naned
+if in a code section, I think xor will be enough
+
+2020-09-16T09:35:00 naned -> hof
+Well critically with the data section
+
+2020-09-16T09:35:05 hof -> naned
+You can also use resources, but I think that's more likely to scorch avs
+
+2020-09-16T09:35:33 hof -> naned
+Make it as easy as you want it to be.
+
+2020-09-16T09:35:44 hof -> naned
+If they start to fire, you'll redo it.
+
+2020-09-16T09:35:50 naned -> hof
+ok
+
+2020-09-16T09:37:52 hof -> naned
+I think that's how it used to work before, I haven't checked with the new version vs
+
+2020-09-16T09:37:54 hof -> naned
+
+#pragma code_seg(push, ".text")
+char const __declspec(allocate(".text")) _read64ptr[] = {
+    0x48, 0x8b, 0x44, 0x24, 0x08, /* mov rax, [rsp + 8] */
+    0x8b, 0x00, /* mov eax. [rax] */
+    0x8b, 0x50, 0x04, /* mov edx, [rax + 4] */
+    0xcb /* retf */
+};
+#pragma code_seg(pop)
+
+2020-09-16T09:39:25 naned -> hof
+I'm going to try it now.
+
+2020-09-16T09:59:18 naned -> hof
+Yes works like this:
+#pragma code_seg(push, ".text")
+__declspec(allocate(".text"))
+const char _read64ptr[] =
+{
+	0x48, 0x8b, 0x44, 0x24, 0x08, /* mov rax, [rsp + 8] */
+	0x8b, 0x00, /* mov eax. [rax] */
+	0x8b, 0x50, 0x04, /* mov edx, [rax + 4] */
+	0xcb /* retf */
+};
+#pragma code_seg(pop)
+
+2020-09-16T09:59:51 hof -> naned
+great
+
+2020-09-16T10:00:55 naned -> hof
+I'll redo it now.
+
+2020-09-16T10:01:11 hof -> naned
+ok
+
+2020-09-16T10:49:31 naned -> hof
+it worked, it's ok, I'll check it now, prepare versions and send it to you
+
+2020-09-16T10:49:51 naned -> hof
+did the usual xor but in the code
+
+2020-09-16T10:50:30 hof -> naned
+ok
+
+2020-09-16T10:54:30 naned -> hof
+is it okay if the linker puts this code at the very beginning of the segment?
+
+2020-09-16T10:58:12 hof -> naned
+I think it's OK for now, although you can add 500 bytes of garbage
+
+2020-09-16T10:58:54 naned -> hof
+ok
+
+2020-09-16T12:15:11 naned -> hof
+Corrected
+Download: https://qaz.im/load/byd3HG/zSNdrh
+Delete: https://qaz.im/index.php?a=delete&q=117077848
+
+2020-09-16T12:15:17 naned -> hof
+eAGS~gx~ICEz5$95Y$ib
+
+2020-09-16T14:05:35 hof -> naned
+ok, accepted
+
+2020-09-16T19:18:46 naned -> hof
+I forgot to do a freemium in the driver unpacking function, I thought about it, checked it, I really forgot, I will reset the corrected version tomorrow
+
+2020-09-16T19:19:21 hof -> naned
+ok
+
+2020-09-17T08:09:41 naned -> hof
+Hi, here is the corrected version
+Download: https://qaz.im/load/nZY4KH/ektTA4
+Delete: https://qaz.im/index.php?a=delete&q=1582727175
+b~r9tRnaWG#||bxTOIZ#W
+
+2020-09-17T08:09:53 hof -> naned
+hi, ok
+
+2020-09-17T08:11:21 hof -> naned
+Does the module send information via events?
+
+2020-09-17T08:11:35 naned -> hof
+yes
+
+2020-09-17T08:11:40 hof -> naned
+ok
+
+2020-09-17T08:11:42 naned -> hof
+bouza said to leave it that way for now
+
+2020-09-17T08:11:49 hof -> naned
+yeah, ok
+
+2020-09-17T14:49:26 hof -> naned
+how do you send the message? please send the code in the place where you send ErrorInitPlatform
+
+2020-09-17T15:33:23 naned -> hof
+	//If the platform is not intel, then exit
+	if (InitPlatform() != SUCCESS)
+	{
+
+		lpEventCallback(hModuleHandle, OBFUSCATED("ErrorInitPlatform"), OBFUSCATED("NoIntelPlatform"), NULL, 0, OBFUSCATED("Tag"), lpEventContext);
+		goto Finish;
+	}
+
+2020-09-17T15:34:20 hof -> naned
+How do you check the platform?
+
+2020-09-17T15:34:34 naned -> hof
+and InitPlatform returns non-SUCCESS only if
+	if (PlatformInfo.PCHPlatformInfo.vid != 0x8086)
+		return ERROR_VID;
+
+2020-09-17T15:34:53 hof -> naned
+So it doesn't work on x64?
+
+2020-09-17T15:35:02 naned -> hof
+no it does not work on amd
+
+2020-09-17T15:35:42 hof -> naned
+then the 64 bit module is useless?
+
+2020-09-17T15:35:47 naned -> hof
+they somehow didn't want to make their specs available to the public
+
+2020-09-17T15:36:08 naned -> hof
+no works only on Intell chipsets
+
+2020-09-17T15:36:16 hof -> naned
+trouble
+
+2020-09-17T15:36:38 naned -> hof
+What chipset do you have, maybe I can find one specifically for it
+
+2020-09-17T15:37:31 hof -> naned
+It is just that there are very few x86 machines, most of them are amd64.
+
+2020-09-17T15:39:39 naned -> hof
+stop
+
+2020-09-17T15:39:54 naned -> hof
+amd64 is a bit rate, a set of instructions
+
+2020-09-17T15:40:55 naned -> hof
+it's just called amd, I don't know if it's because it might have appeared on amd printers first
+
+2020-09-17T15:43:32 hof -> naned
+So, what do you mean by platform then?
+
+2020-09-17T15:43:34 naned -> hof
+a chipset is a set of controllers in the motherboard, just Intell have specs on them, and I quickly figured out what and where to write, with amd process did not go so easily and I told Boose that so far it is only Intell chipsets, he said okay, need to generally understand if it will work and on how many machines
+
+2020-09-17T15:43:53 naned -> hof
+Well I have the hardware part.
+
+2020-09-17T15:44:01 hof -> naned
+i.e. the bit rate doesn't matter?
+
+2020-09-17T15:44:04 naned -> hof
+no
+
+2020-09-17T15:44:20 naned -> hof
+I made two versions, x64 and x86
+
+2020-09-17T15:44:34 hof -> naned
+Okay, I see now.
+
+2020-09-17T15:45:15 naned -> hof
+they both work, only 32 only works on a 32 bit system, 64 only on 64 bit, I was told by the booza to do without flexibility
+
+2020-09-17T15:45:40 naned -> hof
+In fact, here if (PlatformInfo.PCHPlatformInfo.vid != 0x8086)
+		return ERROR_VID;
+
+2020-09-17T15:45:55 naned -> hof
+chipset vendor ID
+
+2020-09-17T15:46:05 naned -> hof
+it is always x8086 at Intel
+
+2020-09-17T15:46:46 hof -> naned
+ok
+
+2020-09-17T15:46:46 naned -> hof
+You probably don't have an Intell matenrene
+
+2020-09-17T15:46:56 hof -> naned
+I tested it on a virtual machine.
+
+2020-09-17T15:47:00 naned -> hof
+а
+
+2020-09-17T15:47:02 naned -> hof
+see
+
+2020-09-17T15:47:12 naned -> hof
+that's a separate song.
+
+2020-09-17T15:47:21 naned -> hof
+Virtualbox?
+
+2020-09-17T15:48:26 hof -> naned
+yes
+
+2020-09-17T15:48:40 naned -> hof
+there is a post on gitlab about testing, so virtualbox and vmvare have chipset emulation, but they are old (2006, vmvare, so '97)
+
+2020-09-17T15:48:59 naned -> hof
+in virtualbox there are 2 chipsets, one amd the other intel
+
+2020-09-17T15:49:09 hof -> naned
+clearly
+
+2020-09-17T15:49:22 naned -> hof
+Intel is ICH9
+
+2020-09-17T15:49:59 hof -> naned
+there is a small error in the data transfer, please redo it like this
+
+CHAR buf[1024];
+lstrcpyA(buf,OBFUSCATED("NoIntelPlatform"));
+lpEventCallback(hModuleHandle, OBFUSCATED("ErrorInitPlatform"), buf, NULL, 0, OBFUSCATED("Tag"), lpEventContext);
+
+2020-09-17T15:50:15 hof -> naned
+just copied from the process 1024 bytes
+
+2020-09-17T15:50:52 naned -> hof
+got it
+
+2020-09-17T15:52:16 naned -> hof
+I'll drop it off tomorrow, okay?
+
+2020-09-17T15:52:41 hof -> naned
+Yes, not urgent.
+
+2020-09-17T15:53:50 naned -> hof
+I already wrote booze, to debug exactly the useful part of this tool does not work very well on a virtual machine
+
+2020-09-17T15:54:31 hof -> naned
+Yes, I understand now.
+
+2020-09-18T08:28:27 naned -> hof
+Hi, did I understand correctly, everywhere in lpEventCallback parameter pszEventInfo to pass 1024 bytes?
+
+2020-09-18T08:28:52 naned -> hof
+pointer to a stack with an array of 1024 bytes
+
+2020-09-18T08:34:14 hof -> naned
+hi, yes, not necessarily on the stack, but the buffer size is 1024 bytes
+
+2020-09-18T08:34:30 naned -> hof
+got it
+
+2020-09-18T08:40:11 naned -> hof
+and the rest of the LPCSTR pointer parameters don't need to be expanded to 1024 bytes?
+
+2020-09-18T08:40:55 naned -> hof
+there is a list of parameters:
+ typedef VOID (__stdcall *RemoteEventCallback)(PVOID hModuleHandle, LPCSTR pszEventName, LPCSTR pszEventInfo,
+  PVOID pvOutData, DWORD dwOutDataSize, LPCSTR pszOutDataTag, PVOID pvContext);
+
+2020-09-18T08:41:05 hof -> naned
+you can extend there as well, but so far there have been no problems
+
+2020-09-18T08:41:17 naned -> hof
+ok
+
+2020-09-18T08:53:53 naned -> hof
+Corrected
+Download: https://qaz.im/load/rZBR3Z/irD3ff
+Delete: https://qaz.im/index.php?a=delete&q=957833796
+
+Ui}hvvT%Hbsv7p*ACNS~
+
+2020-09-18T08:58:00 hof -> naned
+ok, thanks
+
+2020-10-06T10:07:42 naned -> hof
+Hi, I'm about to start a module, booza asked me to remind you about running it
+
+2020-10-06T11:10:34 hof -> naned
+Hi, I wrote to the admin about the launch, let me remind you again
+
+2020-10-06T11:10:38 hof -> naned
+sorry
+
+2020-10-06T11:40:35 naned -> hof
+ok
+
+2020-10-09T09:15:07 naned -> hof
+Hi, any news on the launch or haven't launched yet?
+
+2020-10-09T09:15:45 hof -> naned
+Hi, let me check.
+
+2020-10-09T09:33:08 hof -> naned
+it's about to upload.
+
+2020-10-09T09:33:16 naned -> hof
+ok
+
+2020-10-09T09:33:22 hof -> naned
+They had a problem with the beck there.
+
+2020-10-09T09:33:31 hof -> naned
+couldn't upload at the time.
+
+2020-10-09T09:33:40 naned -> hof
+got it
+
+2020-10-09T09:33:47 naned -> hof
+thanks
+
+2020-10-12T10:14:57 naned -> hof
+Hi, any results?
+
+2020-10-12T10:16:30 hof -> naned
+hi
+
+2020-10-19T10:54:07:07 naned -> hof
+Hi, listen, is a run with the "PlatformCheckResult" collection planned?
+
+2020-10-19T10:54:28 hof -> naned
+hi
+
+2020-10-19T10:54:39 hof -> naned
+can't you do it without it?
+
+2020-10-19T10:55:21 naned -> hof
+in fact, all the information collected is just a list of chipsets, you can see how they are protected by PlatformCheckResult
+
+2020-10-19T10:56:07 hof -> naned
+ok, let's try to build
+
+2020-10-19T10:56:54 naned -> hof
+The only thing, I also tested a little on my machines and changed the approach, I'll prepare new versions and drop them to you now
+
+2020-10-19T10:57:53 hof -> naned
+i.e. you need to run a new version?
+
+2020-10-19T10:58:02 naned -> hof
+well better her
+
+2020-10-19T10:58:14 naned -> hof
+If it's not too much of a hassle
+
+2020-10-19T10:59:10 hof -> naned
+Then instead of tag PlatformInfo write P0 or P1 or P3 directly in the tag
+
+2020-10-19T10:59:18 naned -> hof
+ok
+
+2020-10-19T10:59:27 hof -> naned
+it will be easier to sample
+
+2020-10-19T11:00:56 naned -> hof
+I see, but there was still an "InitError" error on 10?
+
+2020-10-19T11:01:42 hof -> naned
+I don't remember anymore.
+
+2020-10-19T11:01:42 hof -> naned
+I don't remember anymore.
+
+2020-10-19T11:29:29 naned -> hof
+https://www.sendspace.com/file/0ysvqv
+O@{Nmrl3yaQmThASz5%P
+
+2020-10-19T11:29:41 hof -> naned
+ok
+
+2020-10-19T11:29:43 naned -> hof
+ready
+

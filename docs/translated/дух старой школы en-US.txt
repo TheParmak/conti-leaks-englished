@@ -1,0 +1,59 @@
+YOUR ATMOSPHERE
+
+Our work is highly complex. Rarely will anyone give you a ready-made recipe, at best they will tell you the direction of your search.
+That's why you have to rely only on your own sharpness of mind, your cunning and ingenuity, your ability to make unconventional moves.
+That is your evolutionary advantages.
+
+Magic practices from the IT world don't work - scrums, standups, rallies, ticketing, code reviews
+and other silver bullet kargo cults.
+It's not enough to just "do it right" and expect to get results.
+Think critically and apply only what succeeds.
+
+We don't have frameworks and we don't have people-functions. Intelligence and resourcefulness are valued.
+No one stands over our souls. Only the result is evaluated.
+
+The goto operator is allowed and widely used. Any hacks leading to the goal are used.
+The goal always justifies the means. There are no forbidden tricks, only ineffective ones.
+A good code is the one which solves the task. It is good if it is not too crooked and clear enough,
+but we will manage it anyway.
+You don't need stylistically nice but not problem-solving code.
+You need problem-solving code because the problem solved is money, yours and mine.
+
+While we're on the subject of code, here's what we think is good:
+* simplicity as for a dumbass. Fuck eight-story constructs and fancy features for the sake of fancy features (if you can't do without them, of course).
+Keep your writing as simple as possible.
+* Always explain _intentions_ other than _methods_.
+We use a lot of magic. Explain everything to the best of your ability, with extended comments.
+You must write not only "what I'm doing," but primarily "why I'm doing it.
+
+bad
+// allocate memory in a remote process and run shell code
+good
+// we need to unhook so-and-so function in the remote process, because otherwise this and that won't work
+// so we allocate memory in the remote process and run the shellcode, which is taken from here on the githab https://...
+// the shellcode finds such-and-such bytes in the prologue of such-and-such function and patches them to what we need.
+// there were also variants one (link) and two (link), but they don't fit, because they don't work well on such-and-such systems
+
+* the best code is the one that isn't (don't write too much)
+Don't make groundwork for years to come.
+"Tomorrow" may not come, and no one will need the groundwork.
+"Tomorrow" will turn out to be a bad guess.
+Brevity, minimalism is our everything.
+Occam's razor cuts out everything, even the PLO.
+
+* there is no point in writing code if it has already been written by someone else. Before you write it, look it up on the Web.
+If you took someone else's code, make sure you put a link to where it was taken in the source code.
+
+As a consequence, we have a simple licensing policy - there is none. Ask for someone else's demo and reverse it,
+to find out how it works. Half of the time on the characteristic calls and patterns you can find an article or source code on the subject.
+But keep in mind that they can do the same to your code - how to protect yourself from this is described in another text.
+
+* tolerance.
+Your opinion of other people's code and working methods is not needed without a special request.
+Everyone has their own style and handwriting. He either has achieved or is not with us.
+
+
+***
+We have freedom, as far as it's even attainable.
+If you give a result, you can do anything. You can hire someone to write for you, buy it or steal it.
+The most important thing is to see it through to the end.

@@ -1,0 +1,288 @@
+[27.07.21 08:39:38] weldon: hi
+[27.07.21 08:39:44] silver: hi
+[27.07.21 08:40:25] weldon: listen, I'm talking about sub-browser and that source code in our git
+[27.07.21 08:41:48] weldon: do you know which python you need? 2.7 in fact and what it was built - MozillaBuildSetup-1.9.0 ?
+[27.07.21 08:42:20] silver: no, I don't know anything
+[27.07.21 08:42:28] silver: you got to get tunri
+[27.07.21 08:42:33] weldon: another mosilla-based build - it'll take 1.5 hours to build, of course
+[27.07.21 08:43:03] weldon: now I'm comparing with it what might be faults
+[27.07.21 08:43:43] silver: so there are two sources, right?
+[27.07.21 08:44:31] weldon: there's one huge folder - about 600 Mb
+[27.07.21 08:44:51] weldon: we have
+[27.07.21 08:45:29] weldon: I was just training "how to build" on the post FireFox
+[27.07.21 08:45:54] silver: and what kind of bugs? you said "now comparing with it what could be bugs"
+[27.07.21 08:47:17] weldon: one version of python, then pip, then rustc, then MozillaBuildSetup
+[27.07.21 08:47:55] silver: dependencies hell?
+[27.07.21 08:47:59] silver: all versions are gone?
+[27.07.21 08:49:54] weldon: in ours even with what should be (it's python 2.7 and MozillaBuildSetup 1.9) - mach help doesn't work, so I use mach help in parallel to look for other - what commands exist at all
+[27.07.21 08:51:10] weldon: is tunry the author?
+[27.07.21 08:51:29] silver: yes, in the old toad our nickname is tunri@
+[27.07.21 08:51:33] silver: he doesn't appear for a long time
+[27.07.21 08:52:04] silver: what minor version of python is it?
+[27.07.21 08:52:12] silver: try this
+[27.07.21 08:52:35] silver: look at the dates and versions - what version of the original phyrefox matches the source tree
+[27.07.21 08:52:51] silver: then look at the release date of the version in the FF repository
+[27.07.21 08:53:11] silver: then just put those versions of python and all the bindings, that were relevant on that date
+[27.07.21 08:53:17] silver: I understand the problem
+[27.07.21 08:53:36] silver: there is another way to do it
+[27.07.21 08:53:49] silver: can you make diffs?
+[27.07.21 08:55:17] weldon: no, I can't
+[27.07.21 08:55:40] silver: briefly, the idea is to transfer my experience to fresh Mozilla
+[27.07.21 08:55:49] silver: or ESR version of mosilla
+[27.07.21 08:56:22] silver: 1. we make a diff against the mosilla version on which sb is built
+2. patch a newer version of mosilla with this diff and see what comes out
+[27.07.21 08:56:33] silver: of course this is a more painful way
+[27.07.21 08:56:43] weldon: i.e. take FF and mix it into ours?
+[27.07.21 08:56:50] silver: many things could have gone off there, up to not even some files
+[27.07.21 08:56:55] silver: well, sort of.
+[27.07.21 08:57:03] silver: you understood that SB is a Mozilla fork
+[27.07.21 08:57:10] silver: well, you can make a re-fork
+[27.07.21 08:57:13] weldon: got it
+[27.07.21 08:57:32] silver: but this is an extreme variant, it will be a complicated adaptation
+[27.07.21 08:57:39] silver: listen
+[27.07.21 08:57:49] silver: you still do point 1 - do the diff
+[27.07.21 08:57:49] weldon: SB - of course based on FF
+[27.07.21 08:58:00] silver: so you'll understand what tunry was changing
+[27.07.21 08:58:04] silver: what was the point of his changes
+[27.07.21 08:58:10] silver: and show it to me
+[27.07.21 08:58:21] weldon: got it
+[27.07.21 08:58:37] silver: download diff and patch from gnuwin32 package
+[27.07.21 08:58:56] silver: put nearby directories
+mozilla-orig
+superbrowser
+[27.07.21 08:59:16] silver: command
+diff -Naur mozilla-orig superbrowser > superbrowser.patch
+[27.07.21 08:59:50] silver: directory must be clean from build artifacts - obj suo ipch .vs and other studio stuff
+[27.07.21 09:00:08] weldon: one more thing I noticed - some (old) tools are not supported anymore, like up to 1.1.2020 or 1.1.2021 - maybe it affects it too
+[27.07.21 09:00:18] silver: of course it does
+[27.07.21 09:00:22] silver: start with the patch
+[27.07.21 09:00:33] silver: let's see what kind of changes and how hard it will be to roll them on ESR
+[27.07.21 09:00:41] silver: and the Mozilla version you diverged from
+[27.07.21 09:01:44] weldon: okay, I'll go on, tunri@ means
+[27.07.21 09:02:07] silver: you can't catch it
+[27.07.21 09:02:33] weldon: did he quit?
+[27.07.21 09:02:42] silver: he was on piecework
+[27.07.21 09:02:45] silver: on the job
+[27.07.21 09:02:48] weldon: okay.
+[27.07.21 09:03:01] silver: before the end of the day roll me the patch and version
+[27.07.21 12:23:16] weldon: where better to get sources of FF? I have 99% of links Page not found...
+[27.07.21 12:23:30] weldon: https://archive.mozilla.org/pub/firefox/nightly/2020/02/2020-02-12-09-32-01-mozilla-central-l10n/ it's not clear what to download
+[27.07.21 12:23:53] silver: they changed repositories several times
+[27.07.21 12:23:55] silver: can't remember at a glance, search
+[27.07.21 12:24:04] weldon: ok
+[27.07.21 17:20:18] weldon: silver: I created superbrowser.patch, it's 700 MB (734 636 543 bytes) - I'll post it tomorrow morning, okay?
+[27.07.21 17:20:29] silver: fuck
+[27.07.21 17:20:33] silver: What's in it?
+[27.07.21 17:20:56] weldon: ) I dunno - it's just created, is it an archive?
+[27.07.21 17:21:30] weldon: here's two bra-ras;
+		D:\tmp\NS\Patch\firefox-74.0b2.source 1.74 GB (1,870,080,593 bytes) Files: 291343 Folders: 18670 Date modified: 12.02.2020 13:13
+		D:\tmp\NS\Patch\superbrowser 1.61 GB (1 735 921 930 bytes) Files: 277136 Folders: 21402 Date modified: 02/12/202020 20:37 PM
+[27.07.21 17:21:41] silver: tomorrow
+[27.07.21 17:21:43] silver: I gotta go
+[27.07.21 17:21:50] weldon: okay, bye
+[27.07.21 17:22:12] silver: go ahead
+[27.07.21 17:22:14] silver: thanks
+[28.07.21 09:24:34] weldon: hello
+[28.07.21 09:24:45] weldon: send pach?
+[28.07.21 09:25:09] silver: hi
+[28.07.21 09:25:22] silver: before you send it, look it up in the editor
+[28.07.21 09:25:32] silver: to make sure no assembly garbage leaked into it
+[28.07.21 09:25:58] weldon: ok, I also thought last night before I went to bed that it's huge)
+[28.07.21 10:25:17] silver: what's your FF base version?
+[28.07.21 11:21:26] weldon: firefox-74.0b2
+[28.07.21 11:23:20] weldon: based on date
+[28.07.21 11:23:26] silver: what date is it?
+[28.07.21 11:23:46] weldon: 12.02.2020
+[28.07.21 11:24:10] silver: how did you get this date?
+[28.07.21 11:26:34] weldon: it's the date of changing all the files in the Hub, again, maybe something was changed massively and the date was changed to a later one... i.e. the date could be till 12.02.2020
+[28.07.21 11:26:41] silver: wrong
+[28.07.21 11:26:52] silver: rewind to the very first commit
+[28.07.21 11:27:04] silver: that's why your diff is so big
+[28.07.21 11:27:14] silver: it's more like 40-50
+[28.07.21 11:27:20] silver: this project is about 5 years old, maybe more
+[28.07.21 11:27:31] silver: so you need to look for the place where it was forked from the main tree
+[28.07.21 11:28:16] silver: which repo do we have?
+[28.07.21 11:28:29] weldon: ok
+[28.07.21 11:28:31] weldon: sec
+[28.07.21 11:29:25] weldon: https://mb5fbvx72fbod2hkirfecc5nh7lwq6ke7xocn7j2u7raiwbytvevpbad.onion/tunri/firefox_pseudo
+[28.07.21 11:30:14] silver: ``
+/tunri/firefox_pseudo/-/commits/master/GNUmakefile
+```
+[28.07.21 11:30:35] silver: `` 13 Jul, 2016 1 commit
+[28.07.21 11:30:39] silver: this is the upload date
+[28.07.21 11:30:53] silver: so look for the FF version for this date +- and do with it
+[28.07.21 11:31:03] weldon: 5 years...
+[28.07.21 11:31:10] weldon: ok, I will
+[28.07.21 11:31:12] silver: that's why you can't build
+[28.07.21 11:31:19] silver: because you need the toolchain for that date
+[28.07.21 11:31:38] silver: take into account that most likely it started even earlier
+[28.07.21 11:31:39] weldon: maybe there is a file where you can write the date? i searched, but i couldn't find it
+[28.07.21 14:08:35] weldon: if you follow that logic, then the file turns out to be 1.5 GB) BUT I found a suitable FF release - it is from 2019)
+[28.07.21 14:11:01] silver: and how can it be suitable?
+[28.07.21 14:11:55] weldon: RESULTS:
+	Date_comparison FF_Release Last_Modified_FF diff_File diff_Size
+	__________________________________________________________________________________________________________________
+	27.07.21 74.0b2 12-Feb-2020 15:21 SBvsFF740b2.patch 700 MB (734 636 543 bytes)
+	28.07.21 47.0.1 28-Jun-2016 12:52 SBvsFF47.0.1.patch 1.56 GB (1,684,358,457 bytes)
+	28.07.21 68.0b3 21-May-2019 17:54 SBvsFF68.0b3.patch 7.68 MB (8,061,585 bytes)
+[28.07.21 14:12:05] weldon: 68.0b3
+[28.07.21 14:12:19] weldon: 7.68 MB (8 061 585 bytes)
+[28.07.21 14:12:49] weldon: okay?)
+[28.07.21 14:12:55] silver: don't know
+[28.07.21 14:13:08] silver: you need to look for similar sources
+[28.07.21 14:13:21] silver: don't write and listen
+[28.07.21 14:14:37] silver: you need to use git blame
+[28.07.21 14:14:42] silver: file history
+[28.07.21 14:14:54] silver: you take some source code
+[28.07.21 14:15:01] silver: how to choose it is a separate question
+[28.07.21 14:15:21] silver: and you look at the log of its changes
+[28.07.21 14:15:36] silver: you need to find the point when the superbrowser broke away from it
+[28.07.21 14:15:54] silver: maybe get hold of changelog, news or whatever file you have
+[28.07.21 14:16:33] silver: where in the official tree the last change is the start of our sb, that's where you found the right date and version
+[28.07.21 14:16:44] silver: there are files that don't change for a long time, ten years for example
+[28.07.21 14:16:49] silver: there are files that change very quickly
+[28.07.21 14:16:57] silver: look at those that change a lot
+[28.07.21 14:17:10] silver: to control, check for multiple files
+[28.07.21 14:17:14] silver: do you get the idea?
+[28.07.21 14:17:31] weldon: not quite yet
+[28.07.21 14:17:32] weldon: he compiled on 68.0a1 - this is 100%, I took a little older (which even have sources available) 68.0b3
+[28.07.21 14:18:03] silver: how did you know it was 68*
+[28.07.21 14:18:04] silver: ?
+[28.07.21 14:19:29] weldon: i found file with FF release version) he won't change it right? i found available source, which is a bit older than he is and voila 7 Mb - it's not 700
+[28.07.21 14:19:41] silver: well, yes.
+[28.07.21 14:19:51] silver: 68 is 2019?
+[28.07.21 14:20:20] weldon: 18 Maot 2019 - no sources for it
+[28.07.21 14:20:35] silver: why not?
+[28.07.21 14:21:08] silver: no for this release date or what?
+[28.07.21 14:22:02] weldon: hz, like alpha version, there are sources for *b* versions
+[28.07.21 14:22:27] silver: that's not the point
+[28.07.21 14:22:53] weldon: and 68.0b3 is the latest 21-May-2019 17:54
+[28.07.21 14:22:56] silver: then it turns out that tunri merged periodically
+[28.07.21 14:23:01] weldon: yeah
+[28.07.21 14:23:10] silver: ok let's say we found a base
+[28.07.21 14:23:18] silver: open the patch yourself
+[28.07.21 14:23:22] silver: in a text editor
+[28.07.21 14:23:47] silver: and find what was changed by tunri and what leaked from trash and version differences (there's probably some there)
+[28.07.21 14:24:02] silver: 7M is still quite a lot
+[28.07.21 14:24:07] silver: I don't expect 7M code there
+[28.07.21 14:24:19] silver: we have 200k source codes for complex projects
+[28.07.21 14:24:32] silver: but I believe in 200-500k code of tunri
+[28.07.21 14:24:37] weldon: ok, I'll dig, you can open 7Mb with Notpad++
+[28.07.21 14:24:37] silver: without pictures and blobs
+[28.07.21 14:25:22] weldon: okay, I'll see what I can remove.
+[28.07.21 14:25:45] silver: your task is to make a clean patch
+[28.07.21 14:26:00] silver: define the base version on which the patch is applied and you get the tree we have
+[28.07.21 14:26:13] silver: when you have a clean patch, we'll try to put it on a fresh FF
+[28.07.21 14:27:24] silver: then we
+1) we'll solve the "your browser is out of date" problem and get all the latest fancy features
+2) you'll be able to build with modern toolchain without "there's no such library anymore"
+[28.07.21 14:28:09] weldon: ) ok, I'll leave for a while, ok?
+[28.07.21 14:29:13] silver: yes
+[29.07.21 13:32:18] weldon: hi.
+[29.07.21 13:32:44] silver: hi.
+[29.07.21 13:33:05] weldon: you said, there are some more repos, should I check them?
+[29.07.21 13:34:54] silver: who are you in git?
+[29.07.21 13:35:17] weldon: jon, git now 502)
+[29.07.21 13:37:32] weldon: 68.0a1 - it's the very first alpha and there are no sources for it ( , and version 68.0b3 - really the closest, all below 67 *** there are diffs > 100Mb, all above: 68.0b4 and 68.0b5 - there diffs start to grow too
+[29.07.21 13:37:56] silver: I gave you access to all his repos
+[29.07.21 13:37:59] silver: I got the git open
+[29.07.21 13:38:08] silver: so you found the version
+[29.07.21 13:38:56] weldon: ok, got the git, I'll take a look
+[30.07.21 10:26:38] weldon: hi
+[30.07.21 10:27:32] silver: hi
+[30.07.21 10:27:56] weldon: what do you recommend to clean SBvsFF68.0b3.patch ?
+throw out all sorts of stuff:
++8bf181f9b1c3daa66390ab03b6bc9f27c049f770 - Daniel Holbert - Bug 1513387: Add braces & newlines to re-wrap some return statements that clang-format unwrapped, in layout/svg. r=heycam
++2f227a365a670735df7bdee68488ea54c5d9f0ae - Jan-Ivar Bruaroey - Bug 1512280 - Make LOG macros clang-format friendlier. r=padenot
++1cd2c6c217949d0b1d06f15046eba45ff4517044 - Emilio Cobos Álvarez - Bug 1515707 - Use NS_INTERFACE_MAP_END_INHERITING in some CSSStyleDeclaration implementations. r=Ehsan.
+[30.07.21 10:28:16] silver: send me the patch
+[30.07.21 10:28:18] silver: I'll take a look
+[30.07.21 10:28:24] weldon: +{"configpaths": [".clang-format", ".clang-format-ignore"], "pattern": "glob:uriloader/**", "tool": "clang-format"}
++{"configpaths": [".clang-format", ".clang-format-ignore"], "pattern": "glob:media/**", "tool": "clang-format"}
++{"configpaths": [".clang-format", ".clang-format-ignore"], "pattern": "glob:docshell/**", "tool": "clang-format"}
++{"configpaths": [".clang-format", ".clang-format-ignore"], "pattern": "glob:netwerk/**", "tool": "clang-format"}
++{"configpaths": [".clang-format", ".clang-format-ignore"], "pattern": "glob:ipc/**", "tool": "clang-format"}
+[30.07.21 10:28:32]
+[30.07.21 10:28:47] silver: the patch should contain only tunri commits
+[30.07.21 10:28:50] silver: nothing more
+[30.07.21 10:33:10] weldon: GR6SZr(wZo~4S)TE
+it's a pass
+[30.07.21 10:33:31] weldon: `Download: https://qaz.im/load/kFs7bH/kGtai2
+`Delete: https://qaz.im/index.php?a=delete&q=1712895860`
+[30.07.21 10:35:54] weldon: there are 2 diffs - difference with our SB and 2 (from different sources) firefox-68.0b3sd.source
+[30.07.21 10:46:31] silver: well, what can I tell you
+[30.07.21 10:46:36] silver: you have to get very creative here
+[30.07.21 10:46:55] silver: it looks like there are a lot of commits, connected exactly with the fact that we didn't guess the right version
+[30.07.21 10:46:58] silver: we should throw them all out
+[30.07.21 10:47:09] silver: but we can't see the authors' names there
+[30.07.21 10:47:36] silver: that's why you should check the sources of a slightly later version and see, if it has these changes from the patch
+[30.07.21 10:47:41] silver: if there are, then the commit is not ours
+[30.07.21 10:47:45] silver: remove
+[30.07.21 10:47:49] silver: if we don't have it, it's ours.
+[30.07.21 11:21:05] weldon: by the way, he (tunri) changed versions by hand
+[30.07.21 11:21:09] weldon: browser/config/version_display.txt
+	- 68.0a1_psd0.7_merge
+	+ 68.0a1_psd0.71
+[05.08.21 13:04:13] weldon: shit... me too
+[05.08.21 13:04:16] weldon: silver, give Kermit access to https://mb5fbvx72fbod2hkirfecc5nh7lwq6ke7xocn7j2u7raiwbytvevpbad.onion/tunri/firefox_pseudo
+[05.08.21 13:04:29] weldon: got out by accident
+[05.08.21 13:13:03] weldon: I found one repo, I think 90% can be much closer to find diff, dig? (I've already downloaded 50Gb from mazilla... kermit says 7Mb - space, some configs required...)
+[05.08.21 13:14:20] silver: all this just to avoid reading patch, right?
+[05.08.21 13:14:51] weldon: no, not that, to read less
+[05.08.21 13:15:10] silver: you have to do it anyway
+[05.08.21 13:15:19] weldon: sure
+[05.08.21 13:17:26] weldon: you did:
+	but you can't see the authors' names there
+	that's why you should check the source code of a slightly later version and see if it has these changes from the patch
+	if so, it means the patch isn't ours
+	remove
+	no - it's ours, leave it
+i.e. patch in 7Mb compare/diff with later source FF, I got it right?
+[05.08.21 13:18:27] silver: are you diffing with what? versions, or individual commits?
+[05.08.21 13:18:55] weldon: with versions
+[05.08.21 13:19:07] silver: you know there're a lot of intermediate commits between versions?
+[05.08.21 13:19:27] weldon: yes
+[05.08.21 13:19:38] silver: Does that ring any bells?
+[05.08.21 13:19:40] silver: that fact
+[05.08.21 13:25:56] weldon: that there's an impersonal commits, that in the diff I got 7Mb, there's like tunri commits + another 100500 people
+[05.08.21 13:26:36] silver: you didn't get it hence
+[05.08.21 13:27:01] silver: diffs should be done between specific commits
+[05.08.21 13:27:13] silver: since you want minimal diff
+[05.08.21 13:29:03] weldon: that's what I'm working on right now, I need more details/dates and time.
+[28.08.21 05:36:03] weldon: wstp
+[01.10.21 09:28:12] weldon: hi, if i take my daughter from kindergarten 2 in 2 days (takes 30-60 min) - should i warn her?
+[01.10.21 09:28:55] silver: hi, I should know that you're absent with such a regularity, but instead you work half an hour longer
+[01.10.21 09:29:11] silver: and also people in the channels you work in should know about it
+[01.10.21 09:30:03] weldon: okay, i work 8-10 hours a day at the computer
+[01.10.21 09:30:38] silver: left on business - wrote to the channel
+came back from work - wrote in the channel
+[01.10.21 09:30:48] weldon: ok
+[19.11.21 09:36:29] weldon: hello
+[19.11.21 09:37:00] silver: hi
+[19.11.21 09:37:16] weldon: alik wants rights to antik in git
+[19.11.21 09:37:19] silver: you just send him the current patch version
+[19.11.21 09:37:21] silver: yes, give him the rights
+[19.11.21 09:37:39] silver: send me the patch and link to official repo+mozilla branch
+[19.11.21 09:37:48] weldon: can't add to it - I'm not Maintainers or Owners
+[19.11.21 09:38:02] silver: what's the project name?
+[19.11.21 09:38:06] silver: only uri without a domain
+[19.11.21 09:40:07] weldon: /tunri/firefox_pseudo
+[19.11.21 09:41:29] silver: +
+[19.11.21 09:41:31] silver: send him the patch and the branch
+[19.11.21 09:41:40] weldon: ok
+[21.12.21 10:03:20] weldon: hi,
+I added the source code to the git, I'll update it tomorrow/saturday,
+i can't remember if i gave you rights or not, what's your nickname on the git? darian or nooname?
+[21.12.21 10:03:41] silver: hi
+[12/21/12/21 10:03:43] silver: Darien.
+[12/21/12/21 10:04:12]
+[24.12.21 08:52:30] weldon: hi,
+updated `*** onion/jon/patch_antic.git` yesterday
+will update more today/tomorrow
+[24.12.21 08:52:45] silver: hi
+[24.12.21 08:52:46] silver: ok
+[24.12.21 08:54:18] weldon: in git only through WPN (slow, though) or only through tor-brr with bridge possible?
+[24.12.21 08:54:32] silver: I don't know, it works for now
+[24.12.21 08:55:04] weldon: you know, saintly santas are out there. I was shocked.
+[24.12.21 08:55:23] weldon: found it ?
+[24.12.21 09:01:09] silver: Nope.

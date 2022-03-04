@@ -1,0 +1,102 @@
+Regulations for the daily preparation of crypts
+
+1. The developer prepares the morning build as follows:
+- the versions of all the files are incremented so that they are different from the versions of yesterday's files
+- make sure the pads are working.
+Bild is not issued only if there is no live pads at all. This is considered an exceptional situation, put everyone on their ears.
+If some of the pads died, let the admins and me know.
+- For crypto you need to give out both .dll and .exe. For crypt, .dll is better, but you can't check it dynamically.
+The .exe serves both for checking for AB, and in case of problems with crypting .dll.
+- if possible make several versions of files with different hash sums.
+
+2. The developer must independently test the morning build and give an opinion on its suitability no later than 11 a.m. Moscow time.
+3. Suitable assembly must go to the crypt no later than 12 pm.
+4. the tester should ask the client and prepare a list of working file names (under which the file will be used) for verification,
+As on the name can be AV detected.
+The tester notifies the developer and the cryptor about the list of names so that they can run their tests using those names.
+4.1 If it turns out that all names on the list have AB detections, everyone (client, developer, crypter) is notified.
+While a backup list of names is being prepared, simple "temporary" names which don't say anything are used. For example 1.exe, hello.exe, a.exe, etc.
+If the preparation is urgent (for a campaign), the file is given as such, with a note about the importance of the name.
+5. 5. At least two crypts of each build must be prepared. It is better to have several. With different hash sums.
+6. No later than 14 hours a crypt must be ready and submitted for testing.
+6.1 The crypto developer must independently test his crypto for top AB, including using a cryptopanel.
+A crypt with a number of detects in runtime > 3 is accepted only in emergency cases.
+In the normal case, there should not be any detects in runtime on corporate AVs.
+7. For testing, the tester:
+- signs the crypt with a digital signature (if any)
+- Pour the files into the admin panel under Groups -> (group name), adding a new version number
+- mark files as Staging
+- running on autotests.
+8. When tests are successful, tester in section Groups -> (group name) marked the tested files as Actual.
+9. The final check involves
+- renaming a file into a working name
+- uploading the file to the website
+- downloading it through a browser
+- launching.
+As this is the scenario of launching the file by the user.
+At this stage, the detection can appear
+- file name
+- may not miss the OS smartscreen.
+10. In case of divergence of test results on AV - internal and customer, check the following points:
+- the performance of the autotest and the antivirus on the respective VM (checked manually)
+- file name
+- Whether the cloud protection of AV is enabled
+- other AV settings
+- AV and database version
+
+11. THE CRYPT GIVEN TO THE CLIENT MUST BE COVERED BY THE PRUPHS:
+The folder with the crypt must contain the following reports (only if a particular test was applied):
+11.1. auto subdirectory with text logs of autotests from our VMs (copy logs)
+11.2. manual subdirectory with screenshots of each stage of manual test:
+- "About" window with the information about the operating system
+- the browser with entry of the download link
+- The browser and log window after downloading
+- Log AB window immediately after the file starts
+- AB log window after the time interval
+- Same for reloading
+- the same on reload
+11.3. dyncheck.txt file with links to testing on dyncheck
+Test settings on dyncheck:
+- test time - maximal (240 sec)
+- internet - full access
+
+In the case of a crypt returned for re-clearing, a full report is not needed, a report directly reflecting the detection is sufficient.
+
+12. The tester should check the builds removed from work weekly for dynchecks.
+This is needed to detect detections on missing antiviruses in time.
+Testing parameters:
+- static, looder and bot x64
+- dynamic, looder only x64.
+Testing with the Internet enabled on the test can be done only in the morning, when the bounces from the sandboxes do not interfere with the combat work of the operators.
+The rest of the time the test on the dynamics do only with the Internet turned off in the test!
+
+
+*** FAQ
+Q: What should be the kit given out in the crypt?
+О:
+Complete:
+32 exe loader
+loader 32 dll
+64 exe
+lowder 64 dll
+32 exe bot
+bot 32 dll
+bot 64 exe
+bot 64 dll
+
+Reduced: only 64-bit files from the full set
+
+Q: Why make both a .dll and an .exe?
+A: The cryptor uses whichever file is more convenient.
+Usually, for crypting, a .dll is more convenient, but sometimes, an .exe.
+Besides, the .exe is a test sample - just in case something doesn't work, you can run the .exe and check if the functionality works.
+
+
+Q: What is the composition of the kit after the crypt?
+Complete:
+LOADER 32 exe
+loader 64 exe
+bot 32 exe
+bot 64 exe
+
+Reduced: only 64-bit files from the full set

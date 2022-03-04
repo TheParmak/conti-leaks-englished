@@ -1,0 +1,239 @@
+PROJECT PURPOSE
+
+Automation of testing files for antivirus detections (AV in the future), and the correctness of the client.
+It is supposed to work in the following environment:
+* OS: Windows 10 with the latest updates
+* AV: Windows Defender (built-in AV 10). Only this AV is of interest!
+* there is a cryptopanel - a site where samples for testing are lying. It communicates with it via normal web queries.
+* there is an admin panel - a site that the client communicates with at startup, and writes logs of his work there.
+
+
+MANUAL TESTING SCENARIO
+
+1.  Preparing the virtual machine
+2.  Loading the archive with the file from the cryptopane on the desktop of the virtual machine
+3.  Checking whether the AB works on the archive
+4.  Unpacking the archive
+5.  Checking the alarm of the AB for the unpacked file(s)
+6.  Launching the unpacked file
+7.  Checking the triggering of AV for the file(s) launched
+8.  Waiting for the specified time
+9.  Checking the creation of any of the directories (hereinafter referred to as %dir%):
+    %appdata%\\vcmsd\
+    default user\%appdata%\vcmcsd
+    (see parameter 8 in section OPTIONS FOR REALIZATION - the check goes on this list)
+10. Get client ID from %dir%\FAQ file
+11. Connecting to the admin panel
+Waiting for the specified time
+13. Search for a program bounce on received client ID
+    The response is represented by several events:
+13.1. occurrence of a NEW record with the client ID in the admin area
+      (the fact of a non-empty response from the admin API, and the presence in it of a record of the form
+      2018-08-30 10:45:58.323278 1 3 online
+      )
+13.2. record about the start of the system info module (the API response from the admin area contains the following record
+      2018-08-30 10:47:59.642231 systeminfo start 0 63
+      )
+13.3. record about module injectDll start (the API response from the admin area contains the following record
+      injectDll 2018-08-30 11:20:26.490341 start Success
+      )
+14. Checking for AB triggering after bouncing
+
+At ANY DETECT further tests must stop. All subsequent tests must get SKIPPED status.
+SKIPPED actually means test failure, but we make a separate status to distinguish it from simple failure.
+A failure notification must be sent to the cryptopanel (sample name, list of tests with results).
+
+
+AUTOTESTS
+
+The Autotest is a subroutine that checks one simple condition and returns TRUE/FALSE when that condition is met.
+
+The list of autotests for this scenario:
+1. archive_static_detect - whether there was an AB detection at step 3
+2. unarchived_static_detect - was the AB detection at step 5?
+3. proactive_detect - if AB detection was performed at step 7.
+4. client_installed - if the client was installed (step 10)
+5. client_knocked - whether the client is knocked to the admin panel (step 13.1)
+6. client_sysinfo_loaded - has the client knocked into the admin area (step 13.2)
+7. client_inject_loaded - has the client knocked into the admin area (step 13.3)
+8. client_modules_detect - whether AB detection was performed at step 14
+
+
+IMPLEMENTATION OPTIONS
+
+It is proposed to implement autotests in Powershell if possible v2.0. The choice of version is due to the fact that v2.0 is available on all operating systems starting with Windows 7.
+
+Access to the cryptopanel is supposed to be via API (not ready yet). The obligatory parameter when working through the API
+will be the network name of the computer.
+
+
+API ADMINICS
+
+https://185.64.105.33/du8ASnIODJjksdb89fsibndg7s6giosulDSGsdgsyb78s87dgdsgszklj8zgh8dsgisgsdg/clientID_suffix
+Here clientID_suffix is part of the line from the FAQ file after the dot.
+For example, if the file C:/users/user/AppData/Roaming/vsmcd/FAQ contains the line DESKTOP-4KGAGIP_W10014393.701EBF802F2CB023A6C24D34D9F31071
+then clientID_suffix is the string 701EBF802F2CB023A6C24D34D9F31071
+The request should be sent via HTTP POST
+
+The query may contain the following fields:
+- pass: password. Value is always fixed - string f779f60d4868063d462c3f99656a8a6d
+- timeout: search time depth, in minutes. The parameter is optional, the default value on the server is 15 minutes.
+  It is recommended to set the time equal to "now" - "start of timeout check".
+For example
+- the test has begun at 13:02
+- ...
+- at 13:07 we do the test and calculate the timeout value you want to specify in the request: 13:07-13:02 == 5.
+  The server answers that there is no data (no echo)
+- at 13:08 we check the response again, and then we calculate the timeout value to put in the request: 13:08-13:02 == 6.
+  The server answers that there's no data (no echo)
+- at 13:09 we check the response again, and then we calculate the timeout value to put in the request: 13:09-13:02 == 7.
+  The server sends back data saying that the answer is "yes". We finish the test with a status of "success".
+
+The presence of the timeout parameter is due to the fact that autotests on the same machine can run frequently (every 15-20 minutes).
+The machine may have the same clientID. If there is no timeout filtering, the server may return
+the rebound data from previous test (for example, we tested 20 minutes ago on the same machine and the server gave us the
+about the rebound from the previous test -- this is wrong; we expect the result -- there was no rebound for the current test).
+
+
+API CRYPTOPANELS
+
+The cryptopanel provides an API with the following operations:
+
+1. give me the next highest priority file in the queue to check on the machine named %MACHINE%
+
+HTTP POST /some-random-and-long-api-prefix/getfile
+
+parameters:
+
+pass: hardcoded password - common for all API. String.
+machine: domain name of the computer. String. This name is taken directly from the properties of the computer in the OS.
+
+Answer: a json of the following form:
+{
+"file_id": 32, // file ID in the database
+"file": "TVqQAAMAAAAAAAAAAA//8AA" // base64 encoded file body
+}
+
+Starting from the moment the file is given, this machine is marked in the database as checking this file.
+Repeated requests from the same machine for output are considered valid -
+this means a network failure when receiving the file on the previous request.
+
+2. get the results of the file check on the %MACHINE% machine
+
+HTTP POST /some-random-and-long-api-prefix/setresult
+
+parameters:
+
+pass: hardcoded password - common for all API. String.
+machine: domain name of the computer. String.
+status: 0|1. number. Only two values are possible - indicating "ok" and "failed" respectively. Means the overall test result.
+log: test log. Long string (let's assume up to 64k, but in theory it can be more) in base64 encoding.
+file_id: number. Identifier of file obtained in previous request.
+
+The system looks to see which file has been checked on that machine and gives it the appropriate status.
+IF a file has NOT been checked on that machine, or the start time of the check is too old (more than 24 hours), the request should be ignored
+as invalid.
+
+
+SCRIPT SETUP
+
+The script should be easily configurable by someone who does not know PowerShell. To do this in the header of the script
+The following parameters should be put in the header of the script (the list is not exclusive - you can put there also other parameters, if necessary):
+1. URL of the cryptopane for downloading the archive
+2. cryptopanel login
+3.  Password of the cryptopanel
+4. URL of the admin panel
+5.  Login of admin panel
+6.  Admin password
+7.  Frequency of test result checking, in seconds (sleep_every)
+8.  List of folder names to check installation success
+    OR URL in cryptopanel, where to get their list
+9.  Timeout from the end of the archive download to the static detection result 1 (in seconds) (1 minute)
+10. 10. timeout of waiting from unpacking the archive to the result of static detection 2 (in seconds) (1 minute)
+Timeout from launching the client to the result of proactive detection (in seconds) (5 minutes)
+Timeout from launching the client to checking creation of the client working directories (in seconds) (5 minutes)
+13. Timeout from launching the client to check the client's access to the admin panel (in seconds) (15 minutes)
+    (probably there will be several timeouts, the number of sub-steps 13.1, 13.2 etc - at the discretion of the programmer)
+    sysInfo module - 10 minutes
+    injectDll module - 5 minutes
+14. Timeout from client's response in admin area, to result of proactive detection (steps 13-14) (in seconds) (2 minutes).
+About timeouts - the point is that each event we wait for a certain amount of time. If we don't wait for the event (minutes)
+didn't wait, then we make a decision about the result of the test.
+So for each event we must have a timeout, even if it is not mentioned in the ToR.
+
+
+The algorithm for all tests is as follows (C-style pseudocode):
+
+bool result = false;
+time_t started = time(NULL);
+
+while(time(NULL) - started < test_timeout) {
+    if(test condition) {
+        result = true;
+        break;
+    }
+    sleep(sleep_every);
+}
+
+time_t end = time(NULL);
+
+That is, we loop around, waking up every sleep_every second until the expected condition (e.g., detective, or knockout) occurs.
+If no condition arrives during test_timeout, we terminate the test and publish the test result.
+For detects, the logic is reversed
+ true is a test FAIL (the detected thing happened :-(
+ false is test success (no detection)
+
+Windows Defender detections are suggested to check logs in Event Viewer\Applications and Services Logs\Microsoft\Windows\Windows Defender
+You can do this with a commandlet (see https://letitknow.wordpress.com/2012/09/02/powershell-and-the-applications-and-services-logs/):
+
+Get-WinEvent "Microsoft-Windows-Windows Defender/Operational"
+
+
+
+TEST RESULTS
+
+1. Display the test results on the screen with time stamps for the start and end of the test:
+
+2018-08-14 00:01:02 archive_static_detect started
+2018-08-14 00:01:12 archive_static_detect: OK
+2018-08-14 00:01:22 unarchived_static_detect started
+2018-08-14 00:01:32 unarchived_static_detect: OK
+2018-08-14 00:01:42 proactive_detect started
+2018-08-14 00:01:52 proactive_detect: FAILED!
+2018-08-14 00:02:02 client_installed started
+2018-08-14 00:01:12 client_installed: SKIPPED
+2018-08-14 00:01:22 client_knocked started
+2018-08-14 00:01:32 client_knocked: SKIPPED
+2018-08-14 00:01:32 client_sysinfo_loaded started
+2018-08-14 00:01:32 client_sysinfo_loaded: SKIPPED
+2018-08-14 00:01:32 client_inject_loaded started
+2018-08-14 00:01:32 client_inject_loaded: SKIPPED
+2018-08-14 00:01:32 client_modules_detect started
+2018-08-14 00:01:32 client_modules_detect: SKIPPED
+
+2. The script should return to the OS a value equal to the number of failed tests.
+3. The script must output to the cryptopanel the result of the tests (full log and overall success/failure status)
+
+
+SCRIPT AUTO-UPDATE
+
+Full automation of tests is only possible with the automation of the preparation of the virtual machine for the test.
+
+Preparing for the test includes:
+- updating Windows with all the latest changes (this is done once a day from the start, and it cannot be automated)
+- Autotest script auto-updating. The script will be constantly updated, as the working directories of the binary under test will change.
+
+The autotest script is suggested to be updated through the GitLab API.
+This requires 2 HTTP requests:
+- for authorization in GitLab
+- To download the script.
+
+A detailed Unix shell login script can be found here:
+https://stackoverflow.com/questions/47948887/login-to-gitlab-using-curl
+
+
+Accordingly, the following script configuration parameters must be added:
+- GitLab web interface URL
+- GitLab credentials
+- URI to the source of the script on GitLab.
+

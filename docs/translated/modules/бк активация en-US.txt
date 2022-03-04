@@ -1,0 +1,63 @@
+Purposes of refinement:
+1. Reliably cut off ABs and researchers from receiving the load
+2. Remove behavioral detects by interacting with users
+The idea of refinement is manual activation of each bot by an operator.
+
+Implementation
+
+0. The "Manual payload confirmation" switch is added to the group settings.
+If it is off, everything works as before.
+If it's on, it works as described below.
+The switch belongs to the core, i.e. it is common for all protocols.
+
+An appropriate macro switch is added to the loader/bot assembly.
+
+1. Show the loaders that have not yet been given a load in the list of bots in the admin panel.
+In the identifier field show the key passed by the loider in the admin panel (see below).
+2. Add button "allow payload" - in English "Confirm payload" (you may use icons).
+Without pressing this button the operator load is not given to the loader.
+3. Add the "Deny payload" button. On pressing this button, the IP-address will fly to the list of Khanipots, the load is not given.
+4. The loider must interact with the user on startup and draw a window asking for a serial number.
+The length of the serial number - 8 characters, letters and numbers (if there are no objections from the clients and developers on the length and format).
+The class of the window, the text of the window should either be regenerated from assembly to assembly (so as not to hang the detector on the strings),
+or be as indistinguishable as possible (a lot of service windows in the OS must have such a class).
+The key value is validated by character class and length.
+The loeder does nothing until it gets the key.
+5. The looder should also be able to accept this key from the command line. In this case the prompt window is not displayed.
+6. The key is transmitted by the looder in the Cookie field in the open form, the cookie name is arbitrary.
+Accordingly, the looper:
+- server validation is re-entered for proto2; the server encrypts with the group key either the load or arbitrary text in any Set-Cookie.
+The loader considers the server valid if the cryptoAPI decryption function gave the correct status.
+- Finds the first validated server;
+- Knocks on it in an endless loop with random intervals between 3 and 15 minutes, ignoring all replies from 400, 404, 500, etc.
+If the server stops responding (no connection/response), it goes into server search.
+
+Backend:
+- All incomprehensible load requests from UNKNOWN IP addresses say 404 Not Found.
+If a bot(s) outside of the Honeypots subnet already resides at that address, the load is given up.
+- looks for a Cookie in the output with a value equal to the length of the key (8)
+- considers the value of this Cookie as a Loider ID, and draws the request in the list of bots
+- after the operator confirms it and issues a load, the backend pins the bot with the loader.
+To do this:
+- The bot at *first bounce* must send the md5 key in any Fake Cookie.
+Accordingly, the loader must pass the key to the bot's process (via command line or any interprocess communication other than writing to a file).
+- The backend looks for a loeder with the same IP address, whose hash of the key matches the value of any Fake Cookie.
+If for some reason the match does not happen, the bot is considered a hani, with all the consequences.
+- The bot does not change its current master ID generation scheme.
+The key transmitted by the loader is used once at the time of the first bounce to validate the prograde and to match the loader and bot.
+
+
+At the time of the first bounces, we already have the real IP address of the loafer/bot fixed.
+We introduce additional protection:
+- The bot's ID is tied to the address.
+If the pad does not give the real IP, the answer is 404.
+If you tap the ID in the database from the left IP - the answer is 404.
+- Hani now get a 404 Not found response to any request.
+
+Operator work
+
+The operators themselves generate a one-time list of serial numbers for each upload.
+If you need, we can help you write a small script-generator.
+From this list
+- the dj on the phone dictates the number and crosses it off the list
+- On this list the admin operator validates all incoming calls.

