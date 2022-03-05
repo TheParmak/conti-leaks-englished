@@ -1,0 +1,41 @@
+[22.09.21 17:52:39] basil: Hello.
+[22.09.21 17:55:14] stuffy: Hi)
+[22.09.21 17:56:12] basil: I got a message from wild, that I could crypto load dl2_x64_20_415.dll
+[9/22/221 18:00:45] basil: I have a question. When can you catch me online? Maybe now is not the right time
+[22.09.21 18:03:44] basil: ?
+[22.09.21 18:04:53] stuffy: I'm here.
+[22.09.21 18:06:31] basil: Can you tell me more about how you did it?
+[22.09.21 18:07:26] basil: ?
+[22.09.21 18:09:19] stuffy: Yes, I will, just a few minutes
+[22.09.21 18:09:34] basil: okay. okay.
+[22.09.21 18:30:46] stuffy: What parameters are you calling DllMain with? You need to pass the first parameter a pointer to the current assembly, i.e. to the crypt file:
+EXTERN_C IMAGE_DOS_HEADER __ImageBase; //global variable
+((HINSTANCE)&__ImageBase, DLL_PROCESS_ATTACH, 0);
+[9/23/221 13:19:15] stuffy: Hi)
+[9/23/221 13:21:18] basil: Hello.
+[9/23/221 13:22:16] stuffy: What parameters are you using when calling DllMain? You need to pass a pointer to the current assembly, i.e. to the crypt. file itself:
+EXTERN_C IMAGE_DOS_HEADER __ImageBase;//Global variable
+((HINSTANCE)&__ImageBase, DLL_PROCESS_ATTACH, 0);
+[23.09.21 13:23:00] basil: is it when calling DllMain?
+[23.09.21 13:24:36] stuffy: Yes, first we load Entry Point - DllMain into it and pass the pointer
+[9/23/221 13:25:20] basil: Listen, how did you manage to figure it out? Well, you didn't just brute-force your way to that conclusion
+[9/23/221 13:25:23] basil: ?
+[9/23/221 13:29:13] stuffy: On the error, that error indicates that the specified wrong path to the file, as I understand the pc calls itself again, but with a different function exp, if you do not pass a pointer to the current assembly will not a valid path and as a consequence the error
+[23.09.21 13:35:11] basil: Copy and paste the correspondence. I've got a little bit of a mess here.
+[9/23/221 13:35:19] basil: Please.
+[9/23/221 13:39:41] stuffy: What parameters do you use to call DllMain? You need to pass a pointer to the current assembly, i.e. to the crypt. file itself:
+EXTERN_C IMAGE_DOS_HEADER __ImageBase;//Global variable
+((HINSTANCE)&__ImageBase, DLL_PROCESS_ATTACH, 0);
+1:22 PM
+Is this when you call DllMain?
+1:24 PM.
+Yes, first we load Entry Point - DllMain in which we pass this pointer
+1:25 PM
+Look, how did you figure that out. Well, you didn't just go through the variants and come to that conclusion.
+?
+1:29 PM.
+The error indicates that you typed a wrong path to the file, as I understand it, the pc calls itself again, but with a different function exp, if you do not pass a pointer to the current assembly, the path is wrong and the error will follow
+1:35 PM
+Copy and paste your correspondence. I'm getting a little bit rubbish here.
+Please
+[9/23/221 13:40:27] basil: Thanks

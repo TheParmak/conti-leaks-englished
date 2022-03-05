@@ -1,0 +1,191 @@
+[28.07.21 15:07:46] silver: koo
+[28.07.21 15:08:04] silver: jeff says you have questions about cleaning
+[28.07.21 15:08:09] silver: you clean)
+[28.07.21 15:08:14] basil: ok
+[28.07.21 15:08:22] silver: you have a very good guru at your side - comrade Elroy
+[28.07.21 15:08:31] silver: he can show you and teach you anything
+[28.07.21 15:08:36] basil: i know))))
+[28.07.21 15:08:45] basil: already showed me - told me)))
+[28.07.21 15:08:54] silver: how are you? )
+[28.07.21 15:09:11] basil: working. The sun is still high)))
+[28.07.21 15:09:18] basil: cotton field is big
+[28.07.21 15:09:22] silver: okay.)
+[03.08.21 08:06:17] silver: ku
+[03.08.21 09:31:45] basil: hello
+[03.08.21 09:31:56] basil: test
+[03.08.21 09:32:01] basil: that's better
+[03.08.21 09:32:03] silver: test
+[03.08.21 09:32:06] silver: hello
+[03.08.21 09:32:12] basil: hello
+[03.08.21 09:32:13] silver: there's a complaint
+[03.08.21 09:32:18] silver: you're out of contact, that's bad
+[03.08.21 09:32:25] silver: they were looking for you and couldn't find you
+[03.08.21 09:32:42] silver: you're doing a good job, but the connection is bad
+[03.08.21 09:33:48] basil: I agree. There is that. I'm trying to redo the schedule now. But unfortunately I can be online in the evening now. Contacted the customer.
+[03.08.21 09:34:00] basil: He gave me access to the machines
+[03.08.21 09:34:06] basil: looking for an error
+[03.08.21 09:34:46] silver: At least tell me your schedule.
+[03.08.21 09:34:58] silver: tell everyone you work with - guys, I'm online then and there
+[03.08.21 09:35:09] silver: also, no one knows you can be online in the evening
+[03.08.21 09:36:27] basil: ok. I understand the essence of claims. I agree with the claims. I'm about a week now, maybe two. I'll be online from 12,20-13,00 MSK. And in the evening from 17,20 and until the end.
+[03.08.21 09:36:48] silver: Okay, thanks.
+[03.08.21 09:36:52] silver: Tell everyone your schedule.
+[03.08.21 09:37:02] basil: okay. I got it.
+[24.08.21 14:45:16] basil: hello
+[20.09.21 12:10:03] basil: Hello.
+[20.09.21 12:10:17] silver: hello
+[20.09.21 12:18:30] basil: I have a political request. A customer wrote last week. On the spam bot. Asked to make IP pads and control server. It seems (as I understood) in the second half of the week he will start using it. I contacted rocco. Kind of said he would do it. The server should be apache or kafka or something else. I do not really know what software should be on the server. I asked martina to contact rocco to come to a consensus.     I do not know their current workload. Maybe people can somehow free up from not particularly urgent matters. Time is as good as I'm afraid there would be no embarrassment.
+[20.09.21 12:44:10] silver: spam bot control server?
+[20.09.21 12:44:38] silver: I'll talk to him myself.
+[20.09.21 12:52:28] basil: yeah.
+[20.09.21 12:52:30] basil: exactly
+[20.09.21 12:52:55] silver: it's supposed to be a martin server
+[20.09.21 12:53:18] basil: I do not know. Does he have it ?
+[21.09.21 12:20:38] basil: hello
+[21.09.21 12:29:12] silver: repeat
+[21.09.21 12:29:56] basil: Hello.
+[21.09.21 12:30:29] silver: hi
+[21.09.21 12:30:41] basil: there's no encryption
+[21.09.21 12:30:48] basil: can I turn on OTP?
+[21.09.21 12:30:52] silver: yes
+[21.09.21 12:30:57] silver: you had e2e turned on
+[21.09.21 12:31:10] basil: Test
+[21.09.21 12:31:16] basil: Can you see?
+[21.09.21 12:33:00] silver: yes
+[21.09.21 12:35:03] basil: Okay. There's a bit of a hitch with the spam bot. Yesterday I checked spam bot with angero. Everything seems to be fine. I.e. 32 bit exe works with both 32 and 64 bit versions of Outlook. Everything seems to be fine.
+[21.09.21 12:36:05] basil: I made another version for dll for the same reasons
+[21.09.21 12:36:22] silver: Write to the channel
+[21.09.21 12:36:35] basil: ok
+[24.09.21 12:47:27] basil: test
+[24.09.21 12:47:33] basil: hello!
+I'm doing some cleaning here. There's a little problem with generic profile.
+
+Вот линк. https://dyncheck.com/scan/id/5fdd64266a97f9c5755915c24895abf2.
+
+I'm trying to find the detector. But I can't figure out what's wrong. I tried to erase data blocks in each individual section one by one. But all modified files are dirty for some reason. None of them are clean. I suspect that based on the signature name (Norton Security : Heur.AdvML.B) the detection goes to entropy and not to a certain code or data fragment. In the analyzed file the entropy is as follows:
+text:6.807
+data:2.681
+rdata:6.4219
+
+Maybe, on the fly, any thoughts on this?
+[24.09.21 12:48:19] silver: hi
+[24.09.21 12:48:25] silver: if it's a dll, look at the export
+[24.09.21 12:48:36] basil: no. unfortunately it's an exe
+[24.09.21 12:48:48] silver: name?
+[24.09.21 12:48:51] silver: pdb ?
+[24.09.21 12:49:02] silver: import ?
+[24.09.21 12:49:11] silver: just null everything until the detection goes away
+[24.09.21 12:50:15] basil: load is simple. Normal MessageBox("hello world"). Ok. Let's try rougher methods
+[27.09.21 13:43:03] basil: hello again!
+[27.09.21 13:43:13] silver: Hello again.
+[27.09.21 13:44:16] basil: please tell martin to contact me. No answer. There's kind of a customer on the line. I have to set up a server for him.
+[27.09.21 13:44:25] silver: He's not answering.
+[27.09.21 13:44:45] basil: well..... Then it's like this
+[27.09.21 13:44:49] basil: Okay.
+[27.09.21 13:44:52] silver: wrote again
+[27.09.21 14:23:01] basil: https://avcheck.net/id/QI02fErT6xNp
+[27.09.21 14:23:25] basil: https://dyncheck.com/scan/id/01546ed0e17f431cbfc90f465b241627
+[27.09.21 14:23:25] basil: who can you trust?
+[27.09.21 14:23:37] silver: believe the worst result always
+[27.09.21 14:24:01] silver: is it the same crypt?
+[27.09.21 14:24:08] silver: I'm just betting that the crypt stub is spun
+[27.09.21 14:24:11] silver: judging by the type of detection
+[27.09.21 14:24:44] basil: well with dyncheck detec at trustPort. I put it on virtual machine - no response.
+[27.09.21 14:25:12] silver: is it a crypt or ancrypt?
+[27.09.21 14:25:12] basil: for crypt2 stub is generated anew each time
+[27.09.21 14:25:36] basil: it's crypt. Combat load inside dll.
+[27.09.21 14:25:42] silver: change crypt
+[27.09.21 14:25:47] silver: we have a lot of crypt stubs
+[27.09.21 14:25:51] silver: it's the crypt
+[27.09.21 14:26:08] silver: if your krypt is clean and krypt is dirty, it's krypt who is dirty, not you
+[27.09.21 14:26:19] silver: it's normal, we have very active crypts that get dirty several times a day
+[27.09.21 14:43:08] basil: Look, I have it all. What we talked about in the group. It's okay, no problem.
+The only thing I'm asking is for you to influence martin in some way.
+[27.09.21 14:43:21] basil: Everyone has his own schedule
+[27.09.21 14:43:32] basil: I've got a snout
+[27.09.21 14:45:31] silver: I did what I could)
+[27.09.21 14:45:38] silver: that's the cost of this format
+[27.09.21 14:45:50] silver: sometimes you have to wait
+[27.09.21 14:46:06] silver: not everything is done as fast as you want, I know it myself
+[27.09.21 14:46:35] basil: Okay. Here's the situation... A little personal...
+[27.09.21 14:47:07] basil: Of course, our TOR are occasionally changed to meet the demands of the customer
+[27.09.21 14:47:15] basil: This is the format of work
+[27.09.21 14:47:25] basil: I agree. What to do...
+[27.09.21 14:53:51] basil: Anyway, here's the situation. I would like to go on vacation (I'm in the organization for over a year), with elroy I agreed to our vacations. he needed me to clean the crypto, I now periodically carry it out. With the customer (on spam bot), I also talked. He seemed to agree. Well, if it suits him. I have a functional (the one that was discussed in the group).   If everything works out - can I take some time off in about 2 weeks?
+[27.09.21 14:54:23] silver: Take it.
+[27.09.21 14:54:40] basil: thank you.
+[29.09.21 11:53:11] basil: Hello.
+[29.09.21 11:53:30] silver: hi
+[29.09.21 11:54:01] basil: safety advice
+[29.09.21 11:54:24] basil: I'm creating a password protected archive. Password is strong, big
+[29.09.21 11:54:46] basil: Here is a check at avcheck
+[29.09.21 11:54:48] basil: https://avcheck.net/id/rvyVaVmjvcnD
+[29.09.21 11:56:28] basil: if file is transferred from virtual machine to host, defender marks it as Trojan:Script/Sabsik.FL.A!ml
+[29.09.21 11:57:11] basil: Today at my client I've slammed a file with binary files (also password-protected archive)
+[29.09.21 11:57:20] basil: but he has nod32
+[29.09.21 11:57:36] silver: so how come?
+[29.09.21 11:57:47] basil: well, yeah
+[29.09.21 11:57:53] basil: actually
+[29.09.21 11:58:06] silver: I was telling my hypothesis
+[29.09.21 11:58:17] silver: mike, google has bigdata
+[29.09.21 11:58:32] silver: the bigdata is of a kind that allows you to search for connections
+[29.09.21 11:58:44] silver: neural networks are very good at it
+[29.09.21 12:03:58] basil: Tell me when you're online
+[29.09.21 12:04:49] basil: Maybe I didn't see or read something
+[29.09.21 12:09:42] silver: data for link graphs are taken from
+- browser telemetry
+- Windows 10 telemetry
+- logs belonging to
+[29.09.21 12:11:20] silver: owned by transit hosts
+[29.09.21 12:11:24] silver: go to the toad
+[29.09.21 12:11:27] silver: rocket glitch
+[29.09.21 12:11:47] silver: so, they look not WHAT the file is, but WHERE it came from
+[29.09.21 12:12:25] silver: both chrome and ff submit file hashes to safe browsing - it's a real cloud av from google
+[29.09.21 12:12:29] silver: unless you switched it off
+[29.09.21 12:13:14] silver: plus the wind constantly beats the center of what's going on on your computer - on normal wind10 (not ameliorated) about 40 channels of information leakage
+[29.09.21 12:13:36] basil: so I have win7
+[29.09.21 12:13:44] silver: it also has telemetry
+[29.09.21 12:13:56] silver: in any case, such detections are detections on the file source
+[29.09.21 12:14:07] silver: change machine
+[29.09.21 12:14:23] silver: do a clean reinstall at least and redeploy all vm
+[29.09.21 12:14:45] silver: better yet, change hardware id
+[29.09.21 12:15:20] silver: IT giants' tracking capabilities are huge
+[29.09.21 12:16:26] basil: yeah
+[29.09.21 12:16:37] silver: what's your browser?
+[29.09.21 12:16:44] basil: tor
+[29.09.21 12:16:52] silver: you use chrome?
+[29.09.21 12:17:00] basil: no
+[29.09.21 12:17:08] silver: regular Mozilla?
+[29.09.21 12:17:11] basil: firefox via vpn
+[29.09.21 12:17:37] silver: as far as I remember, ff puts into hidden file streams the url from where it was downloaded
+[29.09.21 12:18:00] silver: with normal browsers the leak chain is as follows
+[29.09.21 12:18:12] silver: - someone uploaded the file to an exchange site
+[29.09.21 12:18:34] silver: - the source of the file is already marked as malicious
+[29.09.21 12:18:39] silver: - you leaked the file to yourself
+[29.09.21 12:18:52] silver: - the browser wrote the url into the hidden file stream
+[29.09.21 12:19:12] silver: - you read that stream, went to the cloud, found out what the url was
+[29.09.21 12:19:24] silver: - got the answer that url is in the ban, have a detection
+[29.09.21 12:19:45] silver: don't remember how torus did it, maybe the same
+[29.09.21 12:20:24] silver: anyway, go to the settings and turn off fucking safe browsing and any telemetry settings - in thor you have it too, although on minimal settings
+[29.09.21 13:05:42] basil: yeah by the way
+[29.09.21 13:06:02] basil: just took down mozilla
+[29.09.21 13:06:38] basil: set safe mode in tor browser (not safest)
+[29.09.21 13:07:16] basil: built project, archive with password and defender on the host has shut down
+[30.09.21 08:08:06] silver: koo
+[30.09.21 09:51:05] basil: hello
+[30.09.21 09:56:26] silver: hello
+[30.09.21 09:56:34] silver: has bullet contacted you?
+[30.09.21 09:56:47] basil: yes. we're talking
+[30.09.21 09:56:54] silver: he'll be your project assistant
+[30.09.21 09:57:02] silver: bring him up to speed before vacation, teach him how to assemble and clean
+[30.09.21 09:57:06] basil: whatever you say. okay.
+[30.09.21 09:57:15] silver: bring it here, it's not in the rocket yet, we'll add it to the channel
+[30.09.21 09:57:24] basil: ok. ok.
+[30.09.21 09:57:56] basil: question. Does he have to be given a git?
+[30.09.21 09:58:00] silver: yes
+[30.09.21 09:58:30] basil: okay. I'll contact the admin then. I'll let him know. Rocco. right?
+[30.09.21 09:58:46] silver: yes
+[30.09.21 09:58:57] silver: only he's not here right now)
+[30.09.21 09:58:57] basil: all right, then.
+[30.09.21 09:59:51] basil: well, I think in a pinch I'll send the project. to the archive. Okay. Copy
+[30.09.21 10:00:55] silver: thank you

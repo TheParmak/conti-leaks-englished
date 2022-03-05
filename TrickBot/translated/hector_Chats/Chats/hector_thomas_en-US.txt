@@ -1,0 +1,826 @@
+[02.12.21 08:27:48] thomas: hi.
+[02.12.21 08:27:59] hector: hi.
+[02.12.21 08:28:53] thomas: tell me what you know, how many years you been writing, etc.
+[02.12.21 08:29:27] hector: 10 years
+[02.12.21 08:29:42] hector: you got the standard php js
+[02.12.21 08:29:58] hector: databases
+[02.12.21 08:30:14] thomas: okay, you installed the framework?
+[02.12.21 08:30:19] hector: yii2 laravel a little
+[02.12.21 08:30:43] hector: angular , vue, nestjs
+[02.12.21 08:30:44] thomas: material-ui for example
+[02.12.21 08:30:48] thomas: familiar?
+[02.12.21 08:31:02] hector: with css only bootstrap 3
+[02.12.21 08:31:45] thomas: okay, let's pick the framework and get started.
+[02.12.21 08:32:32] hector: well, the material is a set of components, so to speak.
+[02.12.21 08:33:19] thomas: Yeah.
+[02.12.21 08:33:25] thomas: it's a whole framework
+[02.12.21 08:33:31] thomas: but it's not a pp framework
+[02.12.21 08:33:53] hector: I got it, css html
+[02.12.21 08:34:19] thomas: yes
+[02.12.21 08:36:53] thomas: add me in toad specter
+[02.12.21 08:37:15] hector: specter and then how ?
+[02.12.21 08:37:55] thomas: well, tor domain like yours
+[02.12.21 08:38:51] hector: I don't have a toad there.
+[02.12.21 08:40:20] thomas: Okay.
+[08.12.21 07:11:25] hector: hi.
+[08.12.21 07:11:31] hector: I have Ubuntu
+[08.12.21 07:11:32] thomas: Hi.
+[08.12.21 07:11:49] thomas: do you have a clean work machine or just a home one?
+[08.12.21 07:12:00] hector: torsocks set, but it crashes with timeout
+[08.12.21 07:12:05] hector: home
+[08.12.21 07:12:29] thomas: give me a command
+[08.12.21 07:12:33] thomas: is tor standing?
+[08.12.21 07:12:34] hector: I don't want to let all the traffic through torus, it'll be slow
+[08.12.21 07:13:12] hector: for example, even this won't work
+[08.12.21 07:13:13] hector: torify wget https://mb5fbvx72fbod2hkirfecc5nh7lwq6ke7xocn7j2u7raiwbytvevpbad.onion
+[08.12.21 07:14:07] thomas: look
+[08.12.21 07:14:12] thomas: tor is banned in russia now
+[08.12.21 07:14:23] thomas: You need to get a VPN or something
+[08.12.21 07:14:28] thomas: buy the cheapest one not in ru
+[08.12.21 07:15:05] hector: what if you specify bridges in torus?
+[08.12.21 07:15:13] thomas: about bridges I don't know
+[08.12.21 07:15:24] thomas: read how to override torus locks
+[08.12.21 07:15:26] thomas: there are articles
+[08.12.21 07:15:31] thomas: You'll be fine with the commands
+[08.12.21 07:15:34] hector: it worked in the browser, but I'm still looking for ways to do it in the console tool
+[08.12.21 07:15:55] hector: but you sure that vpn will help ?
+[08.12.21 07:17:13] thomas: yes
+[08.12.21 07:17:23] thomas: i'll tell you how to set it up in the console
+[08.12.21 07:17:26] thomas: try it
+[08.12.21 07:18:49] thomas: https://bridges.torproject.org/
+[08.12.21 07:18:56] thomas: https://askubuntu.com/questions/1183145/how-can-i-configure-tor-with-bridge-and-privoxy-to-proxy-entire-system
+[08.12.21 07:34:18] hector: with bridges started, thanks )
+[13.12.21 09:10:16] hector: hi
+[13.12.21 09:10:58] hector: tasks in redmayne made, sent for testing
+[13.12.21 09:20:47] thomas: hi
+[13.12.21 09:21:03] thomas: great
+[13.12.21 09:21:35] thomas: make a repository
+[13.12.21 09:21:47] thomas: zakomit
+[13.12.21 09:21:52] thomas: I'll take a look
+[13.12.21 09:22:09] hector: already in repo, client folder
+[13.12.21 09:22:14] thomas: okay.
+[13.12.21 09:22:37] hector: branch feature/781
+[13.12.21 09:22:49] hector: client
+[13.12.21 09:22:50] thomas: okay, I'll take a look and set the goals
+[13.12.21 12:02:06] thomas: I'll write within the hour on the tasks
+[13.12.21 12:02:28] hector: okay.
+[13.12.21 14:38:00] thomas: there will be tasks later, i'm waiting for the wps to deploy it all, and i'll give you access so you can do it too
+[13.12.21 14:38:16] thomas: is there a manual in the git?
+[13.12.21 14:38:32] hector: yes, in the same folder
+[13.12.21 14:38:43] hector: you need 17+ noda
+[13.12.21 14:39:21] thomas: yeah, i'll set it up when they give out the cps
+[13.12.21 14:39:32] thomas: you got it all figured out?
+[12/13/21 14:39:49] hector: yes.
+[12/13/21 14:39:57] thomas: great.
+[14.12.21 09:33:23] hector: hi.
+[14.12.21 09:33:34] hector: haven't set a goal yet ?
+[14.12.21 11:49:01] thomas: hi, here I am writing, the server is not given yet
+[14.12.21 11:49:01] thomas: 20 minutes
+[14.12.21 11:50:53] thomas: just pull the comit, I've deployed laravel there, put it in the neighboring folder, put it in the master and the task to write the authorization and registration api. the postgres database, tamblice as in the git lies.
+
+the next tasks will be done in parallel. on the data processing api
+[14.12.21 11:52:06] hector: I see
+[14.12.21 11:52:17] thomas: I'm setting up the server now.
+[14.12.21 11:53:08] thomas: look, you worked with docker, right?
+[14.12.21 11:53:44] hector: a little
+[14.12.21 11:54:21] thomas: okay docker then i'll do it
+[14.12.21 11:54:23] thomas: I'll show you later
+[14.12.21 11:55:16] hector: okay.
+[14.12.21 11:55:16] thomas: I'll throw it in redline.
+[14.12.21 11:55:22] thomas: how long will it take?
+[14.12.21 11:55:54] hector: on the api? today, tomorrow maybe
+[14.12.21 11:55:58] thomas: look, in laravel, we only do controllers api. it won't give out any other
+[14.12.21 11:56:14] thomas: well, logic plus
+[14.12.21 11:56:23] thomas: that is purely for rest
+[14.12.21 11:57:00] hector: no admins for admin ?)
+[14.12.21 11:57:20] thomas: well, the admins logic is also in rest
+[14.12.21 11:57:36] thomas: i mean, there's nothing but api, like ui and so on
+[14.12.21 11:57:44] thomas: all graphics are react
+[14.12.21 11:57:50] hector: that's clear
+[14.12.21 12:07:51] thomas: I'm throwing it at you.
+[14.12.21 15:52:29] hector: which order to run the dumps
+[14.12.21 15:52:41] hector: I'm getting errors
+[14.12.21 20:06:53] thomas: just a table of users for now
+[14.12.21 20:10:23] thomas: I'll do an import script
+[14.12.21 20:10:36] thomas: I'll make a check and fix the sql
+[14.12.21 20:11:05] hector: there will be no migrations i.e. ?
+[14.12.21 20:11:26] thomas: i don't know, do they have engine support?
+[14.12.21 20:11:33] thomas: that would be cool
+[14.12.21 20:11:43] hector: of course it does
+[14.12.21 20:11:59] thomas: go with migration
+[14.12.21 20:12:11] hector: ok
+[14.12.21 20:12:52] thomas: just users.sql for now
+[14.12.21 20:13:21] thomas: i think i checked it, it should work
+[14.12.21 20:14:26] hector: he was swearing at something, now I can't find it
+[14.12.21 20:15:34] thomas: Don't touch the other files yet, we'll go step by step.
+[14.12.21 20:16:08] hector: okay.
+[14.12.21 21 21:03:15] hector: You didn't adjust anything in the application skeleton ?
+[15.12.21 01:11:28] thomas: yeah, everything is standard so far
+[15.12.21 01:11:40] thomas: 8.x version
+[15.12.21 10:58:10] thomas: hi, how are you doing?
+[15.12.21 11:02:39] hector: hi
+[15.12.21 11:02:52] hector: in progress, should be finished today
+[16.12.21 07:12:21] thomas: hi, no problems? how's it going?
+[16.12.21 08:15:05] hector: hi
+[16.12.21 08:15:18] hector: I made it yesterday, but it's incomplete.
+[16.12.21 08:15:24] thomas: okay.
+[16.12.21 08:15:38] hector: dealing with redux and router
+[16.12.21 08:19:00] thomas: okay
+[12/17/21 08:55:29] hector: hi.
+[17.12.21 08:55:37] hector: submitted for test task
+[17.12.21 10:00:25] thomas: jrtq
+[17.12.21 10:00:27] thomas: okay.
+[12/20/21 07:56:53] thomas: hi, how are you?
+[20.12.21 07:57:15] hector: hi.
+[20.12.21 07:57:22] hector: okay.
+[20.12.21 07:57:42] hector: sent quest a long time ago
+[20.12.21 07:58:11] thomas: let me see
+[20.12.21 07:58:22] thomas: need to check today, schedule tasks for the week and move on
+[12/20/221 08:05:05] thomas: dead
+[20.12.21 08:28:11] hector: what's next on the plan ?
+[20.12.21 08:28:35] thomas: I'll roll it out now, on vpc. we'll test it, and then we'll go saw the modules
+[20.12.21 08:28:38] thomas: cards and so on
+[20.12.21 08:28:48] hector: ok
+[20.12.21 09:58:04] thomas: you need some nginx config for resta?
+[20.12.21 09:58:32] hector: no
+[20.12.21 09:58:55] hector: maybe, yeah, let me check it out
+[20.12.21 09:59:10] thomas: anyway, there's a redirect there
+[20.12.21 09:59:45] thomas: make a config for port 80 which redirects both api by path and node
+[20.12.21 09:59:54] thomas: for services to talk only on one port
+[20.12.21 10:00:03] thomas: otherwise there will be bugs and browser will scream
+[20.12.21 10:00:37] hector: where on 80 ?
+[20.12.21 10:00:46] hector: the res will be at 80 anyway ?
+[20.12.21 10:00:48] thomas: let me give you an example
+[20.12.21 10:01:03] thomas: how do you access the rest? on another port?
+[20.12.21 10:01:49] thomas: server {
+  listen 0.0.0.0:80;
+server_tokens off;
+
+
+  location / {
+    proxy_pass http://127.0.0.1:3000;
+  }
+
+  location /api {
+     proxy_pass http://127.0.0.1:8000/api;
+  }
+
+}
+[20.12.21 10:02:01] thomas: there must be something like this
+[20.12.21 10:02:28] hector: that's only for local development
+[20.12.21 10:02:48] hector: if you deploy it, it will be on 80
+[20.12.21 10:03:21] thomas: rest api on what path?
+[20.12.21 10:03:34] thomas: location /api
+[20.12.21 10:03:40] thomas: how do i catch it from all requests
+[20.12.21 10:04:55] hector: yes , /api/...
+[20.12.21 10:05:03] thomas: that's what I was looking for, thanks
+[20.12.21 10:05:13] thomas: your nginx config on the rest
+[20.12.21 10:05:21] thomas: there because rewrite
+[20.12.21 10:05:25] thomas: and what other parameters
+[20.12.21 10:05:52] hector: I'll look for it, I have apache
+[20.12.21 10:05:59] thomas: give me apache
+[20.12.21 10:06:01] thomas: I'll pass it on
+[20.12.21 10:06:15] hector: <IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>.
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+[20.12.21 10:07:05] thomas: is it really him?
+[20.12.21 10:08:21] hector: yes, from laravel, which comes by default
+[20.12.21 10:08:45] thomas: okay.
+[20.12.21 10:10:47] hector: there's one more thing on the client, you should add .env.local
+[20.12.21 10:11:05] hector: updated rdmi, send quest
+[20.12.21 10:11:25] hector: the api url is specified there now
+[20.12.21 10:11:38] thomas: ok
+[20.12.21 16:04:13] thomas: are you on windup or linux?
+[20.12.21 16:04:20] thomas: it's linux
+[12/20/21 16:10:27] thomas: here?
+[20.12.21 16:16:02] thomas: threw the challenge
+[20.12.21 16:37:43] hector: here
+[20.12.21 16:41:48] thomas: questions?
+[20.12.21 16:42:55] hector: connect any library for visualization?
+[20.12.21 16:43:16] hector: will there be many graphs? complex, simple ?
+[20.12.21 16:44:12] hector: colors, fonts of course not to match one to one ?
+[20.12.21 16:44:45] thomas: not one-to-one
+[20.12.21 16:44:52] thomas: just look for modules at least similar
+[20.12.21 16:44:59] thomas: no complicated charts
+[20.12.21 16:45:14] thomas: either circles or XU axis
+[20.12.21 16:45:36] hector: I see
+[22.12.21 10:52:31] hector: hi
+[22.12.21 10:52:49] thomas: hi.
+[12/22/221 10:53:28] hector: put in forms, graphs, buttons, menu on the left. Send the requester or will there be something further in this task ?
+[22.12.21 10:54:14] thomas: yes, send the quest
+[22.12.21 10:54:37] thomas: we were sent a page of bots, but better wait for the final version)
+[22.12.21 10:54:41] thomas: it's horrible.)
+[22.12.21 10:54:49] hector: why ?
+[22.12.21 10:54:51] thomas: I will look and write the problem
+[22.12.21 10:55:48] thomas:
+[22.12.21 10:55:49] thomas: I'll show you
+[22.12.21 10:56:46] hector: great, rich.)
+[22.12.21 10:57:24] thomas: i think it's overloaded
+[22.12.21 10:57:28] thomas: and everything in a bunch
+[22.12.21 10:57:33] thomas: it could be much more elegant
+[22.12.21 10:58:12] hector: tab or page
+[22.12.21 11:00:10] thomas: Yeah, we should
+[22.12.21 12:32:00] hector: sent the quest
+[22.12.21 12:33:54] thomas: jrtq
+[22.12.21 12:33:56] thomas: okay
+[23.12.21 06:42:10] thomas: I'll give you tasks in an hour
+[12/23/221 06:42:59] hector: okay.
+[23.12.21 06:57:34] thomas: threw the problem to you
+[12/23/221 06:57:37] thomas: architecture question
+[23.12.21 06:57:47] thomas: better to put such a function into user model
+[23.12.21 06:57:50] thomas: or separately?
+[23.12.21 07:01:16] hector: the task does not open yet
+[23.12.21 07:01:31] hector: what function ?
+[23.12.21 07:15:58] thomas: logging user actions
+[23.12.21 07:16:10] thomas: there is a table audit_action
+[12/23/221 07:16:22] thomas: oops.
+[12/23/221 07:16:23] thomas: CREATE TABLE public.audit (
+    id integer NOT NULL,
+    session_id integer NOT NULL,
+    action_id integer NOT NULL,
+    created_at timestamp without time zone DEFAULT now() NOT NULL,
+    place varchar(255) not null, -- action page
+    content varchar(255) not null, -- additional data about the action
+    PRIMARY KEY (id),
+    CONSTRAINT fk_audit_session FOREIGN KEY(session_id) REFERENCES sessions(id) ON DELETE RESTRICT ON UPDATE CASCADE,
+    CONSTRAINT fk_audit_actions FOREIGN KEY(action_id) REFERENCES actions(id) ON DELETE RESTRICT ON UPDATE RESTRICT
+);
+[12/23/221 07:16:32] thomas: now you need to write a wrapper for it
+[23.12.21 07:16:42] thomas: so you can use it everywhere
+[23.12.21 07:21:16] hector: you should look, maybe there is a plugin ready to use
+[23.12.21 07:21:41] hector: logging actions in admin ?
+[23.12.21 07:22:55] thomas: look, but we need exactly the session and the user took part and all fields
+[23.12.21 07:23:10] thomas: if you find it, then show me.
+[23.12.21 07:23:58] thomas: I'll throw in the second task
+[23.12.21 07:25:25] hector: any user's access to url admin should be logged?
+[23.12.21 07:25:40] hector: post get request
+[23.12.21 07:29:20] thomas: no
+[23.12.21 07:29:28] thomas: exactly logging his actions
+[23.12.21 07:29:32] thomas: that's why we just need a function with parameters
+[23.12.21 07:29:37] thomas: that will be used in controllers
+[23.12.21 07:29:53] thomas: like logged in, clicked so-and-so button, deleted the record
+[12/23/221 07:29:57] thomas: and so on
+[23.12.21 07:30:44] hector: you can log manually
+[12/23/221 07:31:09] thomas: yes
+[12/23/221 07:31:23] hector: action_id - should be a set of actions somewhere ? or just any number ?
+[12/23/221 07:32:20] thomas: no see
+[12/23/221 07:32:24] thomas: those are actions
+[23.12.21 07:32:33] thomas: so we have roles for users
+[12/23/221 07:32:41] thomas: roles have actions they are allowed to do
+[23.12.21 07:32:49] thomas: here action_id is an action
+[12/23/221 07:32:51] hector: session_id is what ? The user authorized, he gets a token. So at each authorization, I need to keep a log of authorizations and take the id from it
+[12/23/221 07:33:03] thomas: yes, there can be many sessions
+[12/23/221 07:33:07] thomas: exactly by session
+[23.12.21 07:33:31] thomas: and the session is already tied to the user
+[23.12.21 07:35:04] hector: i.e. different people can log in under one user from different browsers?
+[23.12.21 07:35:16] thomas: yes
+[12/23/221 07:40:30] hector: then we should first redo authorization a bit, then do the logging. All then in the same task.
+[12/23/221 07:40:50] thomas: okay, do it now, I'll upload another one later
+[23.12.21 07:40:59] thomas: waiting for reply from sylver
+[23.12.21 07:41:24] hector: no roles yet, haven't gotten to it
+[23.12.21 07:41:44] thomas: that's just the task of the trail
+[23.12.21 07:41:47] thomas: I want to take a look at the admin
+[23.12.21 07:41:50] thomas: how they did
+[12/23/221 13:30:09] hector: are the revs still immortalized ?
+[23.12.21 13:30:33] hector: just then there might be conflicts when merging
+[23.12.21 13:34:01] thomas: the git doesn't work
+[12/23/221 13:34:03] thomas: I haven't looked yet
+[27.12.21 10:50:19] hector: hi
+[27.12.21 10:50:33] hector: sent a reqest on 799 task
+[27.12.21 12:45:28] hector: [ ](https://xflemdsxjrjilw34dsxpvrxp5whnaut7hc5xejwuqs6eqrkt77bxkwid.onion/direct/NKrXj9edAPWNrYv5rovrpoRKmbgFTpPvGr?msg=cKKnYNoBZfRDSENGA) maybe the message didn't get through
+[27.12.21 14:40:44] thomas: hi
+[27.12.21 14:40:44] thomas: okay.
+[28.12.21 07:01:20] thomas: gave out the task
+[28.12.21 07:01:23] thomas: I'll show you screenshots
+[28.12.21 07:01:56] thomas:
+[28.12.21 07:02:48] thomas:
+[28.12.21 07:03:03] hector: Hi.
+[28.12.21 07:03:44] thomas: by just
+[28.12.21 07:03:47] thomas: didn't find that one
+[28.12.21 07:04:09] thomas:
+[28.12.21 07:04:15] thomas: well, the columns are like fields in the database
+[28.12.21 07:04:22] thomas: That was just an example
+[28.12.21 07:04:45] thomas: It's exactly the same
+[28.12.21 07:04:45] thomas: don't, just roughly sketch it
+[28.12.21 07:06:06] thomas: take a screenshot of what it looks like now
+[28.12.21 07:06:09] hector: about right
+[28.12.21 07:08:49] thomas: will you?
+[28.12.21 07:08:58] hector: yes
+[28.12.21 07:09:47] thomas: I mean the screen.)
+[12/28/12/21 07:11:43] hector:
+[28.12.21 07:11:44] hector:
+[28.12.21 07:11:46] hector:
+[12/28/21 07:11:46] hector:
+[28.12.21 07:12:45] thomas: that's where the top of the login, make the username and under the menu to drop down, and in it already exit and here are the links to these pages.
+[28.12.21 07:13:46] hector: there is an exit with the user, just did not log in
+[28.12.21 07:14:12] thomas: okay.
+[28.12.21 07:14:40] hector: and a superuser should probably be added by migration with default password, who will have rights to edit users
+[28.12.21 07:24:17] thomas: I think it's better to do, first user who logs in
+[28.12.21 07:24:21] thomas: that admin
+[28.12.21 07:24:45] thomas: but I'll check and do it
+[10.01.22 09:34:27] thomas: hello
+[10.01.22 09:34:37] thomas: what stage are we at now?
+[10.01.22 09:34:49] hector: hi
+[10.01.22 09:35:03] hector: working on the task
+[10.01.22 09:35:13] hector: 50 percent done
+[12.01.22 09:59:31] thomas: hi, time estimate
+[12.01.22 10:00:32] hector: hi
+[12.01.22 10:00:47] hector: i think i should finish the task today
+[12.01.22 17:12:04] hector: I sent the quest again
+[12.01.22 17:12:13] hector: no messages are coming in
+[12.01.22 17:12:24] thomas: jrtq
+[12.01.22 17:12:25] thomas: ok
+[12.01.22 17:12:38] thomas: let's turn it all around tomorrow?
+[12.01.22 17:12:54] hector: ok
+[12.01.22 17:13:06] thomas: let's see how it's going and further tasks
+[12.01.22 17:13:17] hector: ok
+[13.01.22 12:41:43] hector: hi
+[13.01.22 12:41:51] hector: haven't looked at the problem yet ?
+[13.01.22 12:47:00] thomas: hi
+[13.01.22 12:47:00] thomas: about 30 minutes
+[13.01.22 13:11:25] thomas: died
+[13.01.22 13:11:50] thomas: let's turn everything around
+[13.01.22 13:54:48] hector: in the docker ?
+[13.01.22 13:56:10] hector: not much of a requirement there, php8 node17 postgree, I have 10
+[13.01.22 14:53:15] thomas: did we deploy the first version?
+[13.01.22 14:53:15] thomas: or like what?
+[13.01.22 17:19:38] hector: i don't know, i think you did it
+[13.01.22 17:19:54] hector: you have the task... I have no access to VPN
+[13.01.22 17:21:26] hector: so, i think it's better to make two dockers images and run them, and proxy ports to dockers in ngnx
+[13.01.22 17:22:11] hector: only one is needed at all, on the client is pure statics
+[14.01.22 08:57:25] thomas: this rocket is working through one place
+[14.01.22 08:58:03] hector: exactly!)
+[14.01.22 08:59:08] thomas: not done yet
+[14.01.22 08:59:30] hector: what kind of error ?
+[14.01.22 08:59:43] thomas: just sort of in progress, that's all
+[14.01.22 08:59:48] thomas: both yesterday and now
+[14.01.22 09:00:33] hector: well, locally vmerzhi and start in master
+[14.01.22 09:01:32] thomas: have to
+[14.01.22 09:27:28] hector: well, did you succeed ?
+[15.01.22 05:43:59] hector: hello
+[15.01.22 05:44:19] hector: did it turn ?
+[17.01.22 11:08:01] thomas: hey, I had some problems with connection
+[17.01.22 11:13:56] hector: hello
+[17.01.22 11:14:20] hector: no surprise here.)
+[17.01.22 11:16:30] thomas: :)
+[17.01.22 11:17:20] hector: you can write in Redmayne comments to the task, what concerns the task. Perhaps this way it will be more reliable.
+[17.01.22 11:24:29] thomas: you can.
+[17.01.22 11:33:43] hector: did it work?
+[17.01.22 11:42:15] thomas: our server is not paid for
+[17.01.22 11:42:21] thomas: trying to catch someone
+[18.01.22 08:37:28] thomas: got the server
+[18.01.22 08:37:35] thomas: gonna bet
+[18.01.22 10:31:23] hector: well, did it work ?
+[18.01.22 16:02:43] hector: any luck ?
+[18.01.22 16:02:59] hector: do messages reach at all ?
+[18.01.22 16:35:14] thomas: went away, I'm on it now.
+[18.01.22 16:35:26] thomas: there is how to unfold in readm?
+[18.01.22 16:49:26] hector: I think so, I'll look
+[18.01.22 16:49:48] hector: rest api as a normal laravel application
+[18.01.22 16:51:16] hector: there is in ./client
+[19.01.22 12:36:29] thomas: about an hour or so I'll send you access
+[19.01.22 14:28:26] hector: how is it ?
+[19.01.22 17:44:10] thomas: I'm working, I had some stuff to do during the day
+[20.01.22 07:32:11] thomas: http://5spmqmfqh67blvce67s3gaiplsmzawjlpadbh7wc2wfwcnelaanq7yqd.onion/
+[20.01.22 07:33:43] thomas: 1. remove menu for unauthorized users on the left
+[20.01.22 07:34:40] thomas: 2. check login password when login, check forms to have the same password
+[20.01.22 07:35:27] thomas: 3. if not authorized show login form at once
+[20.01.22 07:39:02] thomas: 4. move src folder to the root of rest-api
+[20.01.22 07:39:53] thomas: 5. readme write how to deploy, pxp rest-api in the rest-api folder
+[20.01.22 07:42:23] thomas: task in redmine
+[20.01.22 07:54:37] hector: hi
+[20.01.22 07:54:40] hector: ok
+[20.01.22 07:54:49] hector: 2 already has
+[20.01.22 07:54:57] thomas: no
+[20.01.22 07:56:50] hector: restapi not deployed ?
+[20.01.22 07:57:20] hector: there request to api goes to 127.0.0.1
+[20.01.22 07:58:31] hector: 2 check that password and confirmation were the same ?
+[20.01.22 08:14:45] thomas: both should be there)
+[20.01.22 08:14:53] thomas: like on the form
+[24.01.22 19:16:47] hector: hi
+[24.01.22 19:18:41] hector: branch is the same, 800, git was lying, sent the rebound just now
+[24.01.22 21:40:40] thomas: okay, hi
+[25.01.22 08:18:48] thomas: hi, I'm dying now
+[25.01.22 08:45:14] thomas: strode
+[25.01.22 08:45:24] thomas: I'll give you a new task
+[25.01.22 09:08:47] hector: hi, ok
+[25.01.22 09:49:17] thomas: and you were in old admin?
+[25.01.22 09:50:05] hector: no
+[25.01.22 09:57:51] thomas:
+[25.01.22 09:58:01] thomas: this is what the old version looked like when searching for bots
+[25.01.22 09:58:19] thomas: ClientID is BotID
+[25.01.22 09:59:03] thomas:
+[25.01.22 09:59:39] thomas:
+[25.01.22 10:00:06] thomas:
+[25.01.22 10:00:46] thomas:
+[25.01.22 10:02:09] thomas: tab /issues/808
+[25.01.22 10:02:28] thomas: there's one page, then this form on top and a list of bots at the bottom
+[25.01.22 10:02:35] thomas: and when you click, a separate page with the bot opens
+[25.01.22 10:02:45] thomas: make a form, make a base. i'll bring up the admin
+[25.01.22 10:02:51] thomas: it crashed and 501
+[25.01.22 10:02:57] thomas: and i'll add screenshots of the bot and list
+[25.01.22 10:03:17] hector: and the bot will have what parameters?
+[25.01.22 10:03:34] thomas: in the database enter as in the scheme we designed
+[25.01.22 10:03:39] thomas: in the form as in the form above 1 to 1
+[25.01.22 10:03:45] thomas: if anything doesn't fit
+[25.01.22 10:03:47] thomas: Write and let us think
+[25.01.22 10:04:39] hector: got it
+[25.01.22 10:06:12] thomas: issues/809 one more
+[25.01.22 10:06:50] thomas: keep screenshots
+[25.01.22 10:06:54] thomas: they'll rub off here
+[25.01.22 10:07:01] hector: yeah
+[25.01.22 11:13:08] thomas: prefix api
+[25.01.22 11:13:20] thomas: where does the path start after the domain
+[25.01.22 11:16:52] thomas: so another important fix
+[25.01.22 11:17:03] thomas: look, your face is bumping ipi on port 8000
+[25.01.22 11:17:07] thomas: it should be on port 80
+[25.01.22 11:17:33] thomas: server {
+  listen 127.0.0.1:80;
+server_tokens off;
+
+
+  location / {
+    proxy_pass http://127.0.0.1:3000;
+  }
+
+  location /api {
+     proxy_pass http://127.0.0.1:8088/api;
+  }
+
+}
+[25.01.22 11:17:44] thomas: but here is the config to redirect
+[25.01.22 11:55:50] hector: in ./client/.env.local the path to the api host is written ?
+[25.01.22 11:56:07] hector: in redmi kind of wrote about it
+[25.01.22 11:56:45] hector: local settings in
+`.env.local `
+which override the settings in `.env` , add manually
+[25.01.22 11:57:35] hector: that's where you write REACT_APP_API_URL=https://<api server>
+[25.01.22 11:57:52] hector: and then `npm run build`
+[25.01.22 11:58:48] hector: which url to look up admin ?
+[25.01.22 16:25:17] thomas: let me see
+[26.01.22 06:49:33] thomas: add it to the replay
+[26.01.22 08:11:51] hector: hi
+[26.01.22 08:11:57] hector: sent the req
+[26.01.22 08:14:17] thomas: hi
+[26.01.22 08:14:20] thomas: so there's a question
+[26.01.22 08:14:28] thomas: http://5spmqmfqh67blvce67s3gaiplsmzawjlpadbh7wc2wfwcnelaanq7yqd.onion/
+[26.01.22 08:16:46] hector: which one ?
+[26.01.22 08:17:14] thomas: click on reg
+[26.01.22 08:17:17] thomas: There's an error
+[26.01.22 08:17:20] thomas: like note foundation
+[26.01.22 08:17:24] thomas: why so?
+[26.01.22 08:18:27] hector: there's an error there too, something with the server settings
+[26.01.22 08:18:36] hector: what's the config?
+[26.01.22 08:22:52] thomas: which one?
+[26.01.22 08:23:01] hector: ngnix
+[26.01.22 08:26:20] thomas: server {
+    listen 8088;
+    #server_name server_domain_or_IP;
+    root /root/src/backend-generation-v2/rest-app/public/;
+
+    add_header X-Frame-Options "SAMEORIGIN";
+    add_header X-XSS-Protection "1; mode=block";
+    add_header X-Content-Type-Options "nosniff";
+
+    index index.html index.htm index.php;
+
+    charset utf-8;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location = /robots.txt { access_log off; log_not_found off; }
+
+    error_page 404 /index.php;
+
+    location ~ \.php$ {
+        fastcgi_pass unix:/var/run/php/php8.1-fpm.sock;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    location ~ /\.(?!well-known).* {
+        deny all;
+    }
+}
+[26.01.22 08:28:01] hector: and domain is the same as for client ?
+[26.01.22 08:29:53] hector: why listen 8088; 80 is the same
+[26.01.22 08:30:02] hector: or 443
+[26.01.22 08:30:41] thomas: server {
+  listen 127.0.0.1:80;
+server_tokens off;
+
+
+  location / {
+    proxy_pass http://127.0.0.1:3000;
+  }
+
+  location /api {
+     proxy_pass http://127.0.0.1:8088/api;
+  }
+
+}
+[26.01.22 08:30:48] thomas: I then do this
+[26.01.22 08:31:17] hector: and restapi server how do you start?
+[26.01.22 08:32:34] hector: I just do not understand why these ports, files are just in folders, ngnix accesses them
+[26.01.22 08:33:06] thomas: just in the folder ngnix in public
+[26.01.22 08:33:22] hector: set /api to /rest-app/public path
+[26.01.22 08:33:29] thomas: yeah
+[26.01.22 08:33:37] thomas: root /root/src/backend-generation-v2/rest-app/public/;
+[26.01.22 08:33:38] thomas: here
+[26.01.22 08:35:59] hector: it's like pxp doesn't work at all
+[26.01.22 08:35:59] thomas: let's make some /api/status get request
+[26.01.22 08:36:10] thomas: to just return zhson that everything is ok
+[26.01.22 08:36:10] hector: http://5spmqmfqh67blvce67s3gaiplsmzawjlpadbh7wc2wfwcnelaanq7yqd.onion/api/test
+[26.01.22 08:37:04] thomas: is this a test request?
+[26.01.22 08:37:09] hector: yes
+[26.01.22 08:37:15] thomas: I'll check locally then
+[26.01.22 08:39:20] thomas: uh, locally went to http://127.0.0.1:8088/api/test
+[26.01.22 08:39:28] thomas: also 404
+[26.01.22 08:39:35] thomas: show me what to return
+[26.01.22 08:39:48] hector: just 200 and 1
+[26.01.22 08:40:05] hector: why 8088, default is 8000
+[26.01.22 08:40:48] thomas: okay
+[26.01.22 08:40:59] thomas: port is specified in ngixn?
+[26.01.22 08:41:08] hector: yes
+[26.01.22 08:41:14] thomas: server {
+listen 8088;
+[26.01.22 08:41:21] thomas: see I pointed
+[26.01.22 08:41:55] hector: what does http://127.0.0.1:8088/ show ?
+[26.01.22 08:42:05] thomas: found the bug
+[26.01.22 08:42:08] thomas: there are permissions
+[26.01.22 08:48:20] thomas: it seems to work
+[26.01.22 08:49:54] hector: yeah, everything seems to work
+[26.01.22 08:50:03] thomas: I'm gonna get a commit
+[26.01.22 08:50:08] thomas: and we'll go on
+[26.01.22 08:54:47] thomas: did you do the form and the base?
+[26.01.22 08:55:09] hector: only 809
+[26.01.22 08:55:19] thomas: okay
+[26.01.22 08:55:20] hector: working on bots
+[26.01.22 08:55:28] thomas: I'll give the admin an old one
+[26.01.22 08:55:31] thomas: And I'll finish the screenshots
+[26.01.22 08:55:35] thomas: to complete the task
+[26.01.22 08:55:39] thomas: think one hour or two
+[26.01.22 08:55:43] hector: ok
+[28.01.22 12:24:33] hector: hi
+[28.01.22 12:25:07] hector: and what fields there will be bots? in the documentation only id and ip but that's probably yalo
+[28.01.22 12:25:15] hector: more on screenshots
+[28.01.22 12:26:52] hector: based on dokumentation I made a table. but have not run it yet
+[28.01.22 12:46:48] thomas: as is
+[31.01.22 08:05:53] thomas: how is your second task?
+[31.01.22 08:34:30] hector: hi
+[31.01.22 08:34:38] hector: almost done
+[31.01.22 08:34:53] hector: you can't start it
+[31.01.22 08:35:06] hector: will do it today
+[31.01.22 08:46:35] thomas: okay
+[31.01.22 08:46:42] thomas: I'm still working on my old admin
+[31.01.22 08:46:44] thomas: It's fucked up
+[31.01.22 08:47:08] hector: What's up ?
+[31.01.22 08:48:28] thomas: yeah need to take screenshots of the next tasks. and there all crashed
+[31.01.22 12:15:18] hector: sent the quest
+[31.01.22 12:15:29] thomas: okay
+[01.02.22 08:25:26] hector: hi
+[01.02.22 08:25:36] hector: didn't check it yet ?
+[01.02.22 10:05:51] thomas: hi within the hour
+[01.02.22 11:24:35] thomas: here ?
+[01.02.22 11:25:25] hector: I'll be there in 15 20 minutes. why ?
+[01.02.22 11:26:21] thomas: okay, I'll just deplane
+[01.02.22 11:26:24] thomas: I will
+[01.02.22 11:40:20] thomas: let me know
+[01.02.22 12:12:46] hector: here
+[01.02.22 12:13:29] thomas: otr
+[01.02.22 12:14:28] thomas: so, the first thing we did now is to rename the logpost in the menu
+[01.02.22 12:14:39] thomas: second, we need to make a method that gives the server time and put it in the menu
+[01.02.22 12:15:07] thomas:
+[01.02.22 12:16:24] hector: logpost is what ?
+[01.02.22 12:16:50] thomas: it's a search for links in logs
+[01.02.22 12:16:54] thomas: I'll show you with screenshots
+[01.02.22 12:17:32] thomas:
+[01.02.22 12:17:44] thomas: the fucking pictures aren't loading?
+[01.02.22 12:18:39] hector: upload in redmayne
+[01.02.22 12:19:52] thomas: it fucking loads without a fake.
+[01.02.22 12:21:36] thomas:
+[01.02.22 12:21:41] thomas: see?
+[01.02.22 12:23:55] thomas: at least what I write)
+[01.02.22 12:30:40] hector: +
+[01.02.22 12:31:32] thomas: turn off ctr
+[01.02.22 12:32:04] thomas: test
+[01.02.22 12:33:20] hector: no pictures
+[01.02.22 12:37:36] thomas:
+[01.02.22 12:37:39] thomas: can you see it now?
+[01.02.22 12:39:39] hector: is there one ?
+[01.02.22 12:39:58] thomas: this section what you just did is a log post
+[01.02.22 12:40:08] thomas: there are links at the bottom when you click search
+[01.02.22 12:40:51] hector:		eyJhbGciOiJBT4epc58tdfRVSPavf/Ut++tunnt+Hi3+wIL5gL7O0w/iAGbEFTXSfdywy/ufpSGhC9i3qu0QTXbr5CXW3aV3ZhsXSIZRJkh/zziltsRHsz5xM7SgkXSYZ0np5gSC4jqQanoWP2OJs/ypcbu8GZY1j4hB5/3ifIDhoh26D3G1QSiuaPV3X5emMR5lMZhQceh3xHl6AuRNzau5JEVVr5k9xlphe2g9ocjKrRhBT9CQKl2mXtcgo3shg7YRlB/MutnjwSfCTYzJj48gM4NgzZD8Lg==  - where to put it ?
+[01.02.22 12:42:44] thomas: what is it?
+[01.02.22 12:42:54] thomas: got it.
+[01.02.22 12:43:01] thomas: fuck this encryption all the same
+[01.02.22 12:43:11] thomas: Did one picture arrive?
+[01.02.22 12:43:44] hector: one, first
+[01.02.22 12:44:12] thomas: here erase, this is logpost section not bot
+[01.02.22 12:44:17] thomas: there is a search for data coming from bots
+[01.02.22 12:44:21] thomas: by links
+[01.02.22 12:44:28] thomas: At the bottom there is a list of links and when they were received
+[01.02.22 12:45:20] thomas: ok
+[01.02.22 12:46:41] hector: there is this table in the database schema
+[01.02.22 12:46:44] hector: ?
+[01.02.22 12:46:52] thomas: let me see
+[01.02.22 12:47:09] hector: or what will be there ? bot_id, link, date
+[01.02.22 12:47:19] thomas:
+[01.02.22 12:47:23] thomas: this is what the bot search form looks like
+[01.02.22 12:47:36] thomas: so now we have two links in the menu, it will be logpost and these bots
+[01.02.22 12:48:00] thomas: [ ](https://xflemdsxjrjilw34dsxpvrxp5whnaut7hc5xejwuqs6eqrkt77bxkwid.onion/direct/NKrXj9edAPWNrYv5rovrpoRKmbgFTpPvGr?msg=r4k83k9WR8E2zmpdH) there are more options
+[01.02.22 12:48:07] thomas: I'll find the table
+[01.02.22 12:48:29] thomas: also we need to display the time, in the menu, preferably right up, and only when we are logged in
+[01.02.22 12:48:35] thomas: but not browser time but server time
+[01.02.22 12:48:44] thomas: query for local time, returns to unikstamp
+[01.02.22 12:49:00] thomas: when the page loads, you convert it and run the timer, so it won't batch constantly
+[01.02.22 12:49:31] thomas:
+[01.02.22 12:49:32] thomas: this is what the bot output looks like at the bottom
+[01.02.22 12:49:44] thomas: the forms inside when you click on the link or bot I will give a little later
+[01.02.22 12:49:47] thomas: I'll start the tasks
+[01.02.22 12:49:51] thomas: okay, and the table
+[01.02.22 12:52:44] thomas: I'll give you the data schema in about an hour or two
+[01.02.22 12:52:46] thomas: it's not there
+[01.02.22 12:53:30] hector: about clear
+[01.02.22 12:54:15] thomas: you do the whole vertska
+[01.02.22 12:54:25] thomas: because the search will be done by the search engine
+[01.02.22 12:54:29] thomas: I'll set it up
+[01.02.22 12:54:33] thomas: how much time do you need?
+[01.02.22 12:55:09] hector: I'll do it tomorrow
+[01.02.22 12:55:23] hector: layout logpost ?
+[01.02.22 12:55:29] thomas: okay, I'll make the layout in a couple hours
+[01.02.22 12:55:35] hector: and server time
+[01.02.22 12:55:38] thomas: well, the layout logpost and bots
+[01.02.22 12:55:46] thomas: remove unnecessary links from the menu
+[01.02.22 12:55:57] thomas: where are the empty and garbage
+[01.02.22 12:56:02] hector: so there are bots in the 808 task
+[01.02.22 12:56:14] thomas: at the bottom the output is compared
+[01.02.22 12:56:47] hector: ah, add all these fields to the database schema then
+[01.02.22 12:57:05] thomas: wait, don't add them to the schema yet
+[01.02.22 12:57:07] thomas: just layout
+[01.02.22 12:57:10] thomas: I'll finish drawing it
+[01.02.22 12:57:15] thomas: and then we'll update
+[01.02.22 12:57:33] hector: okay
+[01.02.22 12:57:45] thomas: make it up
+[01.02.22 12:57:49] thomas: let's see how it looks
+[01.02.22 13:01:16] thomas: the server time will be displayed in the top right menu and only for authorized users
+[01.02.22 13:07:02] hector: ok
+[01.02.22 13:07:35] thomas: tasks in redline
+[02.02.22 08:55:45] hector: hello
+[02.02.22 08:55:51] thomas: hi
+[02.02.22 08:56:11] hector: haven't encountered this, but have you tried deleting the folder with the modules and installing again
+[02.02.22 08:56:22] thomas: it's not in the homa
+[02.02.22 08:56:22] thomas: I don't know what the hell
+[02.02.22 08:56:53] hector: where in the chrome npm
+[02.02.22 08:57:16] thomas: in /home
+[02.02.22 08:57:32] thomas: there is no folder node_modules
+[02.02.22 08:58:57] hector: maybe add -g : npm install -g --legacy-peer-deps
+[02.02.22 08:59:12] thomas: -g is what?
+[02.02.22 08:59:25] hector: global
+[02.02.22 08:59:48] thomas: well, is it under root?
+[02.02.22 09:00:05] hector: maybe you just put global dependencies into home
+[02.02.22 09:00:26] thomas: hmm.
+[02.02.22 09:00:38] hector: not under root
+[02.02.22 09:15:04] thomas: added table in the git
+[02.02.22 09:15:07] thomas: under logpost
+[02.02.22 09:15:25] hector: ok
+[03.02.22 13:21:33] hector: hello
+[03.02.22 13:21:40] hector: sent 2 quests
+[03.02.22 13:52:22] thomas: hi, great
+[03.02.22 13:52:36] thomas: all tasks there?
+[03.02.22 13:52:57] hector: yes
+[03.02.22 15:22:55] thomas: dead
+[03.02.22 15:23:05] thomas: now I will put on the server and watch
+[04.02.22 14:31:59] thomas: I'm putting everything on the stand
+[04.02.22 14:32:04] thomas: Tasks will come later
+[04.02.22 14:32:20] thomas: how do I update the database?
+[04.02.22 15:50:53] hector: standard for Laravel: php artisan migrate
+[04.02.22 15:51:56] thomas: if I update from git, I don't have to rebuild anything?
+[04.02.22 15:52:36] hector: no rest api, only migration to run
+[04.02.22 15:52:48] hector: and client rebuild
+[07.02.22 08:12:39] thomas: hi, did you write?
+[07.02.22 08:12:42] thomas: I was out of touch
+[07.02.22 08:14:55] hector: hi
+[07.02.22 08:14:59] hector: no
+[07.02.22 08:15:15] hector: haven't set any tasks yet ?
+[07.02.22 08:15:19] thomas: because my indicator is hanging
+[07.02.22 08:15:23] thomas: about 30 minutes I'll throw you a task
+[07.02.22 09:07:52] thomas: add card list to general menu
+[07.02.22 09:08:01] thomas:
+[07.02.22 09:08:06] thomas: the form looks like this
+[07.02.22 09:08:36] thomas:
+[07.02.22 09:09:06] thomas:
+[07.02.22 09:09:33] thomas:
+[07.02.22 09:11:41] thomas: task thrown in redmine
+[07.02.22 09:14:19] hector: what is card list ?
+[07.02.22 09:14:55] thomas: card list, plastic
+[07.02.22 09:15:25] hector: will there be a DB scheme ?
+[07.02.22 09:16:03] hector: not to do list of cards yet ?
+[07.02.22 09:29:25] thomas: I'll give you the scheme today
+[07.02.22 09:29:28] thomas: and list also by tonight
+[07.02.22 09:29:34] thomas: admin is old all the time
+[07.02.22 09:29:40] thomas: I can't get a screenshot right
+[09.02.22 08:03:10] thomas: Write me back on the france
+[09.02.22 08:03:32] thomas: hey
+[09.02.22 08:05:03] hector: hi, ok
+[09.02.22 08:05:19] thomas: yesterday
+[09.02.22 08:05:38] hector: did I miss anything
+[09.02.22 08:05:44] thomas: he didn't chat
+[09.02.22 08:05:50] thomas: I accidentally texted him myself
+[09.02.22 08:06:01] hector: I see
+[10.02.22 09:55:31] hector: hello
+[10.02.22 09:56:16] hector: git is still lying, I can't start it, task is ready long ago. You can in general move on the task
+[10.02.22 10:59:57] thomas: okay.
+[10.02.22 10:59:59] thomas: hi
+[10.02.22 11:00:02] thomas: 30 minutes
+[10.02.22 11:32:47] thomas:
+[10.02.22 11:32:58] thomas: Process List page
+[10.02.22 11:34:26] thomas: there is also in the menu
+[10.02.22 11:44:03] hector: ok
+[11.02.22 12:48:49] hector: hi
+[11.02.22 12:48:52] hector: ready
+[11.02.22 12:49:01] hector: can't start
+[11.02.22 12:49:17] hector: you can keep on trying
+[11.02.22 14:14:33] thomas: 30 minutes
+[11.02.22 14:38:22] thomas: zip me the qaz.im sorts with password to the whole repository directory
+[11.02.22 14:51:59] hector: not uploaded there, .js file format in archive is not supported.
+[11.02.22 14:53:18] hector: I'll send you the file
+[11.02.22 14:53:59] thomas: are you in jabber?
+[11.02.22 14:54:29] hector: no
+[11.02.22 14:54:53] hector:
+[11.02.22 14:54:59] hector: https://qaz.im/zaq/HH4BYTf3#anenKSRD
+[11.02.22 14:56:52] thomas: yeah thanks
+[11.02.22 14:57:04] hector: although there is a toad
+[11.02.22 14:57:08] thomas: )))
+[11.02.22 15:27:50] thomas: zipped with password
+[11.02.22 15:27:53] thomas: file won't open
+[11.02.22 17:09:26] hector:
+[11.02.22 17:09:40] hector: password is the same
+[11.02.22 17:10:02] thomas: thanks
+[11.02.22 17:10:08] thomas: I'll put it in redmine today
+[11.02.22 17:10:10] thomas: no time yet
+[11.02.22 17:14:48] hector: or rather another password, https://qaz.im/zaq/RKrkE8iy#Q2fAaHAZ
+[11.02.22 17:19:10] thomas: ok
+[14.02.22 09:46:15] thomas: the task is to figure out how to do a search for all the forms we have. what do we need and so on. search based on sphinx. if you need to write some interfaces, then do
+[14.02.22 13:42:16] hector: hi
+[14.02.22 13:42:32] hector: there is a task in redmine ?
+[14.02.22 15:17:53] thomas: I'll throw it in.
+[19.02.22 11:32:13] thomas: not given yet, on pdn maybe
+[19.02.22 11:32:21] thomas: did you succeed there? at what stage?
+[19.02.22 11:32:43] hector: hi, okay
+[19.02.22 11:33:14] hector: yes it works, added search to the bots and prose
+[19.02.22 11:33:48] hector: i will document and send you the quest, either today or tomorrow
+[19.02.22 11:33:55] thomas: okay.
+[19.02.22 11:34:20] thomas: and write me a list of what's not on the forms now, there's somewhere we just layout without functionality
+[19.02.22 11:37:11] thomas: okay.
+[20.02.22 19:19:41] hector: hi, I sent the quest
+[20.02.22 19:21:09] hector: if there's a console utility for copying the config
+[20.02.22 19:21:52] hector: what is not clear, I will add the rdmi
+[20.02.22 20:29:09] thomas: hi, okay, I'll take a look
+[21.02.22 15:43:57] hector: is there a jabber channel common ?
+[21.02.22 15:44:22] hector: I have a toad, but where to report it ?)
+[21.02.22 20:11:30] thomas: no
+[21.02.22 20:11:35] thomas: toads gave out
+[21.02.22 20:11:41] thomas: renee tox, I'll add you
+[21.02.22 20:12:28] hector: tomorrow night only
+[21.02.22 20:12:38] thomas: ok
+[21.02.22 20:12:50] hector: mailto:hector@jabb.im
+[21.02.22 20:13:00] thomas: okay, I wrote it down if anything
+[21.02.22 20:13:05] hector: here's the public
+[21.02.22 20:13:18] hector: Beep me then
+[21.02.22 20:14:24] thomas: accept apr
+[21.02.22 20:14:46] thomas: B94BFE78AAE1F2BF557CE0D35811A659DE0E26BD3B8E7D05F74391B58DD9B130813CDAF1EB60
+[21.02.22 20:14:55] thomas: here's my tox id, when you're done, give me a call
+[21.02.22 20:16:41] thomas: is mobile client connected?
+[21.02.22 20:17:00] thomas: ok, later
+[21.02.22 20:17:02] thomas: I need to register
+[21.02.22 20:18:18] thomas: well, I'll bang on the toad if anything
+[21.02.22 20:19:36] thomas: I need to register
+[21.02.22 20:19:41] thomas: I don't have a toad on hand
+[21.02.22 20:20:14] thomas: It won't get through from working one
+[21.02.22 20:20:21] thomas: it's purely internal jabber
+[21.02.22 20:21:55] thomas: I'm not afraid)
+[21.02.22 20:21:57] thomas: Just need to regen
+[21.02.22 20:22:02] thomas: I just got to the computer)

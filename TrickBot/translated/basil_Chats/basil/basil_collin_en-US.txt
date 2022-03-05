@@ -1,0 +1,61 @@
+[16.09.21 16:05:23] basil: Hello.
+[16.09.21 16:05:45] collin: hi!
+[16.09.21 16:06:17] basil: wild wrote about work with cryptopanel?
+[16.09.21 16:08:06] collin: wrote
+[16.09.21 16:08:46] collin: only Elroy can update this stub, it turns out?
+[16.09.21 16:08:50] collin: or what's the problem
+[16.09.21 16:15:19] basil: I can update it. I have access rights to the repository. But there it worked somewhat on its own symteme with specialized branches customized for one or another load. I can of course make changes if it is important and critical. But it's better to make local builds.
+[16.09.21 16:15:52] basil: The problem is only in collaboration with git repository
+[16.09.21 16:16:40] basil: When we made this crypter there was a collaborative decision to make changes to branches.
+[16.09.21 16:17:21] basil: But if I really need to, I'll certainly make changes. I think he should support me on this issue.
+[16.09.21 16:19:21] collin: not critical for me, testers will manually order crypts from you then, if they can't get clean ones from autobuild
+[16.09.21 16:19:44] collin: what's your schedule when you're online?
+[16.09.21 16:20:56] basil: I'm from 12.20-12.30 and, somewhere, up to 19.00 MSK. But if something is serious somewhere, then until the end. When elroy comes back from vacation. There will be a slightly different schedule.
+[16.09.21 16:21:23] basil: Anyway, he left me on crypter2 duty during his absence
+[16.09.21 16:21:29] collin: ok
+[24.09.21 13:36:42] basil: Greetings.
+[24.09.21 13:36:49] basil: I'm from wild
+[24.09.21 13:37:04] basil: There's a little problem with the cleanup
+[24.09.21 13:37:18] collin: hi!
+[24.09.21 13:37:24] basil: Describing what I did. I take a crypt (515 kb). Then I split the file into 15 blocks. Then I "zero out" each block. I create 15 files and in each separate file only one of these blocks is "zeroed". Then I check the AB. And what I see. All are dirty except the very first one. But most likely the header was scratched and AV "does not perceive" it as an exe. There is an assumption that Norton employees "pointed their finger somewhere" and exactly in the wrong place. It is possible that this signature will be removed soon after the update. It is possible that it was a mistake of the antivirus company. I can hardly understand what is a signature there and how they created it, if I drop so much data, but AV still thinks that the file is dirty.
+[24.09.21 13:38:10] basil: here is the link: https://dyncheck.com/scan/id/5fdd64266a97f9c5755915c24895abf2
+[24.09.21 13:39:15] collin: detection may be for header, some parameters are in it
+[24.09.21 13:39:36] collin: we've often experienced that x86 Norton gives false positive detection
+[24.09.21 13:40:01] collin: didn't you look at how it reacts to pacifiers?
+[24.09.21 13:40:16] collin: if you don't zero code but commit pieces of code before building, what's the reaction?
+[24.09.21 13:40:28] basil: that's a blank
+[24.09.21 13:40:58] collin: not a full-fledged crypto
+[24.09.21 13:41:14] collin: but its version where functional code is partially/fully removed
+[24.09.21 13:41:18] collin: trash too
+[24.09.21 13:42:07] collin: i.e. dichotomy method for purges gives you something?
+[24.09.21 13:42:11] collin: you comment out half of the code, reassemble it, see what's changed
+[24.09.21 13:43:14] basil: it's a bit hard to comment out some code fragments there. One thing clings to another. But we'll give it a try. Thanks
+[24.09.21 13:44:14] basil: So far, here goes. I'm still at a loss.
+[30.09.21 10:57:05] collin: hi!
+[30.09.21 10:57:13] basil: Ghbdtncnde.
+[30.09.21 10:57:16] basil: hello
+[30.09.21 10:57:18] collin: tell me 2 stub on build-machine is not updated yet
+[30.09.21 10:57:28] collin: still manually order it?
+[30.09.21 10:57:46] basil: well, for now, unfortunately, yes.
+[30.09.21 10:58:15] basil: I can't clean it up. I'm now transferred to work directly with the customer.
+[30.09.21 10:58:51] basil: Now a little later I'll try to write in the group. You'll probably need your participation there.
+[30.09.21 10:59:26] collin: what kind of job, on cryptor?
+[30.09.21 11:00:24] basil: no. There's another project. The client stepped up at the end of last week, but was quiet before that. Now we're working under the "feed all night and slaughter in the morning" scheme.
+[04.11.21 16:23:47] basil: test
+[04.11.21 16:23:52] basil: hello
+[04/11/21 16:24:00] basil: yeah. great.
+[04.11.21 16:24:43] basil: well, yes. There's a string that needs to be there. Maybe I sent him the wrong string.
+[04.11.21 16:25:19] basil: I was told by elroy to open received crypt in IDA and send the longest string
+[04.11.21 16:25:27] basil: that's what I did
+[11/16-21 16:26:18] basil: no. Exactly.
+[04.11.21 16:26:21] basil: the string
+[04.11.21 16:26:56] basil: stop
+[04.11.21 16:27:14] basil: should I get the string from krypt or from load?
+[04.11.21 16:29:11] basil: yeah. i've been dealing with this crypto all day long
+[04.11.21 16:29:20] basil: it doesn't listen to me
+[04.11.21 16:29:34] basil: I don't know. My aura is bad today.
+[04.11.21 16:30:35] basil: the string I sent refers to some garbage function.
+[04.11.21 16:32:46] basil: it's being cleaned very hard right now. Trying to get rid of CRT. Partially done of course. Some of the detects are gone. But there's a very uneconomical format for storing data in TEXT section.
+[04.11.21 16:33:25] basil: Listen, I've got another 30 minutes today. I can't go on like a squirrel in a wheel with this cryptor all day long.
+[04.11.21 16:40:19] basil: We'll make it less, of course. Today we managed to localize the cause of crypter's incorrect operation. We'll continue tomorrow. But today I'm exhausted. Please understand and forgive me.
+[04.11.21 16:40:40] basil: I really hope for your understanding

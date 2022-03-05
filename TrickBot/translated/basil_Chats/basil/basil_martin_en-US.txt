@@ -1,0 +1,494 @@
+[03.08.21 18:51:42] basil: Hello!
+[03.08.21 19:15:54] basil: Did you develop a control server for spamming? Got it right?
+[03.08.21 19:17:09] basil: allow work button
+[03.08.21 19:20:12] basil: listen, where is it located?
+[03.08.21 19:20:22] basil: can't find it
+[03.08.21 19:20:36] basil: green?
+[03.08.21 19:21:04] basil: okay. thanks.
+[03.08.21 19:23:53] basil: ok. got it.
+[25.08.21 14:25:46] basil: hello
+[25.08.21 14:29:25] basil: And here.
+[25.08.21 14:30:07] basil: I was chatting with jefferson today. He says some logging should be done. Do you know about it?
+[25.08.21 14:30:24] basil: with jefferson
+[25.08.21 14:31:28] basil: Could you elaborate on this? I don't understand.
+[25.08.21 14:33:00] basil: ``You need to
+ the software needs to be fixed. most likely, the logging needs to be improved.
+yes, of course
+there is a broken node in the software, we can not catch the cause, because initially there is no logging
+So far, all attempts are like a finger in the sky.
+well, there are also the terms of reference for new software and analysis of the same software, what we need to fix
+but the Boosa will explain it to you if you're responsible for it.
+I've been explaining it to him for days. It's impossible to do it in 30 minutes.
+```
+[25.08.21 14:35:30] basil: Well, to make it short, it turns out you need to send the server the current state of the bot. What's actually happening to it. Did I get it right?
+[25.08.21 14:37:32] basil: you can. If you wish.
+[25.08.21 14:37:38] basil: I have a desire
+[25.08.21 14:38:26] basil: How well. It's a tricky question. Here's elroy saying that my code shouldn't work. But it works.
+[25.08.21 14:38:46] basil: Well, he didn't say that out of spite, more out of amazement
+[25.08.21 14:39:45] basil: Well, okay. Maybe we should make a separate chat room? To discuss everything together?
+[25.08.21 14:39:54] basil: Or is it not urgent now?
+[25.08.21 14:44:15] basil: Okay. The political situation is clear. Approximately..... I'll probably write to him again. Let's try to get to the bottom of the problem.
+[25.08.21 14:44:26] basil: I mean, I'll write to jefferson.
+[25.08.21 14:46:40] basil: Got it
+[30.08.21 14:36:37] basil: Hello.
+[30.08.21 15:09:13] basil: There's an urgent matter, as I see it. Can you at least roughly name the time when email sending can be checked?
+[30.08.21 15:14:44] basil: ok. when something will be ready. let me know. And server address too
+[30.08.21 15:15:40] basil: I did not quite understand the question. Maybe which one is free?
+[30.08.21 15:15:54] basil: which one is free?
+[30.08.21 15:16:30] basil: I honestly don't know
+[30.08.21 15:16:45] basil: maybe try to ask the channel
+[30.08.21 15:16:46] basil: now
+[30.08.21 15:17:51] basil: field? I don't get it . Paraphrase
+[30.08.21 15:18:26] basil: there aren't any fields there at all
+[30.08.21 15:19:22] basil: maybe call it localEmails?
+[30.08.21 15:26:02] basil: okay. how late are you today?
+[08.30.21 15:40:26] basil: Sorry, my mistake.
+[30.08.21 15:40:29] basil: Here's the list of fields
+[30.08.21 15:40:30] basil: email
+firstname
+midname
+lastname
+country
+state
+city
+zip
+street
+phone
+url
+[30.08.21 15:56:01] basil: I think we should do it the same way we did for "get info"
+```
+8. take information
+POST /<idm>/<idb>/info
+```
+[30.08.21 15:56:17] basil: seemed to work before
+[30.08.21 15:56:52] basil: I mean, "get the information.
+[30.08.21 15:58:19] basil: it's not a soapbox based on the chat. There's a list of fields in their address book
+[30.08.21 15:58:34] basil: ``
+7. get the contacts
+POST /<idm>/<idb>/c
+
+The content of the request body is plain text (WITHOUT multipart or form-urlencoded CONTAINER!)
+one contact record per line, UTF-8 encoded.
+The contact record has the following format:
+field=value;field=value;...;field=value\r\n
+All values are urlencoded.
+The following values are supported for field:
+
+email
+firstname
+midname
+lastname
+country
+state
+city
+zip
+street
+phone
+url
+```
+[30.08.21 16:06:27] basil: Okay. How about sending a json? Would that be easier for you?
+[30.08.21 16:08:03] basil: ok. I think we'll be forgiven. We fulfill this condition.
+```
+NO CONTAINER multipart or form-urlencoded!
+```
+[30.08.21 16:08:18] basil: If we use Json?
+[30.08.21 16:08:30] basil: I'm just not really good at it.
+[30.08.21 16:08:47] basil: I think we're doing it.
+[30.08.21 16:08:53] basil: one more question
+[30.08.21 16:09:57] basil: if I try to send not a fixed set of fields, but all the fields that were filled in. Would you be able to parse them later?
+[30.08.21 16:11:45] basil: well, I will skip them. If they are empty . But the set of fields in json will be different
+[30.08.21 16:12:59] basil: okay.
+[30.08.21 16:53:55] basil: I think I have it ready. As soon as we can test it, please let me know.
+[30.08.21 16:59:56] basil: ip what? I'll rebuild project
+[30.08.21 17:01:27] basil: ok.
+[30.08.21 17:05:22] basil: 4 more minutes
+[30.08.21 17:07:55] basil: are you running?
+[30.08.21 17:12:22] basil: can we start? Or wait some more?
+[30.08.21 17:13:09] basil: okay. go ahead.
+[30.08.21 17:14:24] basil: no response. ip is correct?
+[30.08.21 17:16:21] basil: start again
+[30.08.21 17:17:52] basil: is this the right server? is this a spamming control server?
+[30.08.21 17:18:04] basil: here's the answer
+[30.08.21 17:18:34] basil: sent system properties. any?
+[30.08.21 17:18:59] basil: yes
+[30.08.21 17:19:05] basil: moving on
+[30.08.21 17:19:44] basil: so something fell off
+[30.08.21 17:19:54] basil: restart the task
+[30.08.21 17:20:05] basil: command. As soon as it is ready.
+[30.08.21 17:20:42] basil: start
+[30.08.21 17:21:32] basil: I have a crash.
+[30.08.21 17:22:01] basil: okay. You can give me access to admin. So I don't have to pull you yet?
+[30.08.21 17:23:36] basil: yes. i see. press
+[30.08.21 17:23:39] basil: wait
+[30.08.21 17:40:36] basil: okay. seems to be working.
+[30.08.21 17:40:49] basil: see what the client sends
+[30.08.21 17:40:54] basil: report read
+[30.08.21 17:41:23] basil: nothing else?
+[30.08.21 17:42:18] basil: ok. i'll restart the task now. Look again.
+[30.08.21 17:52:25] basil: see what came in
+[30.08.21 17:52:44] basil: okay
+[30.08.21 17:52:54] basil: it should come again
+[30.08.21 17:53:26] basil: anything?
+[30.08.21 17:55:01] basil: okay. now.
+[30.08.21 17:55:03] basil: a moment
+[30.08.21 17:59:18] basil: got anything?
+[30.08.21 17:59:41] basil: try the next one
+[30.08.21 17:59:57] basil: any?
+[30.08.21 18:00:20] basil: what's up?
+[30.08.21 18:00:29] basil: yes it did
+[30.08.21 18:01:45] basil: i.e. still in square brackets?
+[30.08.21 18:01:57] basil: so it would be in the array?
+[30.08.21 18:03:45] basil: how to arrange array, I just send string
+[30.08.21 18:06:08] basil: in place?
+[30.08.21 18:10:15] basil: I don't quite understand. I'm sending the string .
+```
+"[{
+email: 'test@example.com ',
+businessHomePage: 'webpage ',
+companyName: 'organization ',
+givenName: 'name ',
+originalDisplayName: 'test@example.com ',
+title: 'dolgnost',
+transmitableDisplayName: 'test@example. com (test@example.com) '
+},
+{
+email: 'test2@example.com ',
+businessHomePage: 'webpage_2 ',
+companyName: 'organization_2 ',
+givenName: 'test2 ',
+originalDisplayName: 'test2@example.com ',
+title: 'dolgnost_3 ',
+transmitableDisplayName: 'test2 (test2@example.com) '
+}]"
+```
+[30.08.21 18:10:24] basil: this will be the output string
+[30.08.21 18:10:35] basil: i understand i can only send a string
+[30.08.21 18:10:41] basil: or am I wrong?
+[30.08.21 18:12:07] basil: if you need more square brackets, I can add them. To do?
+[30.08.21 18:12:54] basil: ok.
+[30.08.21 18:15:11] basil: you can, of course, do it this way. But then you'll have to wait. Will you wait or leave it as it is?
+[30.08.21 18:15:46] basil: okay.
+[30.08.21 18:22:27] basil: look. It's not it.
+[30.08.21 18:25:59] basil: [jhjij
+[30.08.21 18:26:05] basil: okay
+[30.08.21 18:31:25] basil: look
+[30.08.21 18:31:48] basil: is it?
+[30.08.21 18:31:59] basil: okay
+[30.08.21 18:32:10] basil: they need to be rendered as I understand
+[30.08.21 18:32:15] basil: and more
+[30.08.21 18:32:26] basil: take into account that the set of fields may change
+[30.08.21 18:33:17] basil: all possible field names I'll send you
+[30.08.21 18:37:43] basil: ``
+"emailAddress"
+"account"
+"callbackTelephoneNumber"
+"generation"
+"givenName"
+"governmentIdNumber"
+"businessTelephoneNumber"
+"officeTelephoneNumber"
+"homeTelephoneNumber"
+"initials"
+"keyword"
+"language"
+"location"
+"mhsCommonName"
+"organizationIdNUmber"
+"surname"
+"originalDisplayName"
+"postAddress"
+"companyName"
+"title"
+"departmentName"
+"officeLocation"
+"primaryTelephoneNumber"
+"business2TelephoneNumber"
+"office2TelephoneNumber"
+"mobileTelephoneNumber"
+"celluarTelephoneNumber"
+"radioTelephoneNumber"
+"carTelephoneNumber"
+"otherTelephoneNumber"
+"transmitableDisplayName"
+"pagerTelephoneNumber"
+"beeperTelephoneNumber"
+"primaryFaxNumber"
+"businessFaxNumber"
+"homeFaxNumber"
+"country"
+"businessAddressCountry"
+"localit"
+"businessAddressCity".
+"stateOrProvince"
+"businessAddressStateOrProvince"
+"streetAddress"
+"businessAddressStreet"
+"postalCode"
+"businessAddressPostalCode"
+"postOfficeBox"
+"businessAddressPostOfficeBox"
+"telexNumber"
+"isdnNumber"
+"assistantTelephoneNumber"
+"home2TelephoneNumber"
+"assistant"
+"birthDay"
+"hobbies"
+"middleName"
+"displayNamePrefix"
+"profession"
+"preferedByName"
+"spouseName"
+"computerNetWorkName"
+"customerId"
+"ttytddPhoneNumber"
+"ftrpSite"
+"managerName"
+"nickName"
+"personalHomePage"
+"businessHomePage"
+"contactEntryIds"
+"contactAddtypes"
+"contactDefaultAddressIndex"
+"contactEmailAddress"
+"companyMainPhoneNumber"
+"childrenNames"
+"homeAddressCity"
+"homeAddressCountry"
+"homeAddressPostalCode"
+"homeAddressStateOrProvince"
+"homeAddressStreet"
+"addressPostOfficeBox"
+"otherAddressCity"
+"otherAddressCountry"
+"otherAddressPostalCode"
+```
+[30.08.21 18:38:06] basil: and also "email"
+[30.08.21 18:38:11] basil: forgot
+[08/30/21 18:38:59] basil: Okay. I think you'll take care of that for now. I'm freeing up the server. I've got a local yourian cut down
+[17.09.21 14:22:30] basil: Greetings.
+[17.09.21 14:44:34] basil: Listen, they're building a new management server for the spam bot. I should contact rocco (I already wrote him, he's waiting) and tell him the requirements for a manger. Maybe need apache, kafka or something else
+[20.09.21 09:38:50] basil: Greetings.
+[20.09.21 12:07:10] basil: Any luck with rocco?
+[20.09.21 13:04:35] basil: Well, so did I
+[20.09.21 13:06:04] basil: Chat with me. Don't be sceptical. I've been trying to reach an agreement with him (rocco) since last week. Constantly disappears somewhere. Well, at least he would have answered, in what state the process.
+[20.09.21 13:06:22] basil: That's not quite right either.
+[20.09.21 15:31:45] basil: How can we organize access to the master server?
+[20.09.21 15:38:43] basil: thanks
+[21.09.21 12:16:37] basil: hello
+[21.09.21 12:28:36] basil: listen. Where can I see on the server what is sent from the address book
+[21.09.21 12:28:40] basil: ?
+[21.09.21 12:36:14] basil: okay.
+[27.09.21 13:19:21] basil: Hello.
+[27.09.21 13:19:39] basil: ``
+ in general, here's a dopilization: toggle Collection/Replacement mode
+in Gathering mode, all fields on editing emails are inactive
+and the way I see it in the current form - there is no switch, and the fields should all be filled in / not filled in, but as I understand it, they will send something anyway
+if i understand correctly, how it's all implemented
+in general, it would be more logical to do as I described
+for the future, when you create a task in the config tab make a switch Send/Grabbing contact list
+```
+[27.09.21 13:19:50] basil: This is from the customer
+[27.09.21 13:40:58] basil: In place?
+[27.09.21 13:41:12] basil: There's an urgent matter
+[27.09.21 16:30:34] basil: On site?
+[27.09.21 16:31:40] basil: Let's see what happened
+[27.09.21 16:31:48] basil: No admin on the server?
+[27.09.21 16:32:12] basil: /185.163.46.68
+[27.09.21 16:34:16] basil: The only request, try not to pull much. I hope for your understanding.
+[27.09.21 16:34:37] basil: Let me know if anything changes
+[27.09.21 16:55:12] basil: wait. I don't get it. rephrase.
+[27.09.21 16:58:42] basil: the question is why some bots are not checked
+[27.09.21 16:58:47] basil: ?
+[27.09.21 17:19:04] basil: is it a server bug or bot?
+[27.09.21 17:19:16] basil: bot seems to have knocked
+[27.09.21 17:19:49] basil: do i have to fake something?
+[27.09.21 17:21:09] basil: so it's been 20 minutes of me checking in there. Or is it normal?
+[27.09.21 17:25:00] basil: okay. whatever you say. Well there are 2 bugs visible at the moment. In my opinion. 1 - the server is down, with a large simultaneous load. 2 - Some bots are not checked.
+[27.09.21 17:25:50] basil: I ask you to correct this in a convenient way and unsubscribe jefferson. I'll probably have it for another 10 minutes today.
+[27.09.21 17:26:44] basil: Or if these are not mistakes - then somehow it is necessary to explain what is what.
+[27.09.21 17:26:56] basil: people want to understand
+[28.09.21 10:09:43] basil: hello
+[28.09.21 10:47:04] basil: On the spot?
+[28.09.21 10:47:42] basil: can we check now?
+[28.09.21 10:49:01] basil: started
+[28.09.21 10:49:07] basil: just now
+[28.09.21 10:52:31] basil: NgkxCQk0N0E2NTZENTBFODUzREY3
+[28.09.21 10:53:42] basil: anything?
+[28.09.21 11:01:28] basil: returns 503
+[28.09.21 11:04:23] basil: "HTTP/1.1 503 Service Unavailable\r\nConnection: keep-alive\r\nDate: Tue, 28 Sep 2021 11:03:41 GMT\r\nContent-Length: 1\r\nContent-Type: text/html; charset=utf-8\r\nETag: W/\"1-O8Fciq4+QSTdQJA18y6i/Wg178k\"\r\nServe...
+[28.09.21 11:07:53] basil: the same thing
+[28.09.21 11:08:25] basil: WinHttpQueryHeaders
+[28.09.21 11:12:47] basil: req = L"/0/NgkxCQk3ODA4NTQ2RDc3OTI0RjMw/st"
+[28.09.21 11:26:41] basil: yeah
+[28.09.21 11:26:57] basil: ``
+Give parameters: mail interval, mailing list type, send type, number of attachments, checkbox
+GET /<idm>/<idb>/st
+
+```
+[28.09.21 11:28:47] basil: trying
+[28.09.21 11:35:22] basil: sozranilist?
+[28.09.21 11:35:25] basil: didn't get it
+[28.09.21 11:35:40] basil: a moment
+[28.09.21 11:36:37] basil: sent
+[28.09.21 11:37:51] basil: presend_op = L"/0/NgkxCQkxODBDNjQ1QzJFQjY2MjI1"
+[28.09.21 11:39:04] basil: and in localEmails where should I send it?
+[28.09.21 11:39:31] basil: send received data to the group
+[28.09.21 11:39:47] basil: you must at least show it to the customer somehow
+[28.09.21 11:40:43] basil: sent
+[28.09.21 11:42:45] basil: great. now tell me where to send the email and what form to use
+[28.09.21 11:42:47] basil: ?
+[28.09.21 11:43:12] basil: and display?
+[28.09.21 11:45:11] basil: okay.
+[28.09.21 11:45:38] basil: what about emails?
+[28.09.21 11:48:30] basil: well, they need to be grabbed and sent. I can also make a POST request and send it as a string. Separate with a space character (" "). For example on "/el"
+[28.09.21 11:48:49] basil: can we?
+[28.09.21 11:51:41] basil: and the delimiter character? Carriage rollover?
+[28.09.21 11:52:22] basil: what delimiter character and where to send it?
+[28.09.21 12:04:26] basil: okay. send to "/el". The separator is "\r\n."
+[28.09.21 13:34:49] basil: Is there any way to check if emails are sent?
+[28.09.21 13:35:30] basil: I'm good.
+[28.09.21 14:08:28] basil: ready?
+[28.09.21 14:09:04] basil: starting
+[28.09.21 14:10:24] basil: sent
+[28.09.21 14:10:28] basil: you got it?
+[28.09.21 14:15:26] basil: check again
+[28.09.21 14:20:54] basil: How about Content-Type: application/text?
+[28.09.21 14:21:04] basil: because so far
+[28.09.21 14:22:13] basil: what's it like?
+[28.09.21 14:22:20] basil: anything?
+[28.09.21 14:23:59] basil: now
+[28.09.21 14:27:50] basil: no. redoing.
+[28.09.21 14:32:19] basil: ready?
+[28.09.21 14:33:45] basil: okay.
+[28.09.21 14:33:48] basil: I have an error
+[28.09.21 14:35:05] basil: got it?
+[28.09.21 14:37:02] basil: check again?
+[28.09.21 14:39:51] basil: success?
+[28.09.21 14:41:08] basil: great. I would also like to somehow make these data display
+[28.09.21 14:41:21] basil: You could probably start by displaying it as a file
+[28.09.21 14:41:58] basil: and the group, send me a message.  Or you want - I'll write.
+[28.09.21 14:42:06] basil: and to the group
+[28.09.21 14:43:23] basil: okay. one more question
+[28.09.21 14:43:47] basil: if there's a message like that.
+[28.09.21 14:44:07] basil: ``
+'[ ]'
+```
+[28.09.21 14:44:19] basil: this won't cause an error?
+[28.09.21 14:44:34] basil: okay.
+[28.09.21 16:29:50] basil: Write Jefferson
+[28.09.21 16:31:01] basil: It's about the address book
+[28.09.21 16:36:00] basil: don't go far
+[28.09.21 16:36:00] basil: Testing the server for load
+[28.09.21 16:40:22] basil: the server is still "Not checked"
+[28.09.21 16:42:59] basil: admin is down
+[30.09.21 14:49:06] basil: don't go far jefferson machines uploaded
+[30.09.21 14:57:15] basil: there loaded cars
+[30.09.21 14:57:22] basil: look what came in
+[30.09.21 16:30:56] basil: ``
+" в \"
+\ in \ (Consider that the order of substitution, to avoid when `` is screened in \'' and then screened in \\'', thus screened once `` )
+
+character codes also escape (or delete?)
+10 or 0x0A in \n
+13 or 0x0D in \r
+and so for \b\f\n\r\t
+```
+[30.09.21 16:31:12] basil: about the character codes is not quite clear
+[30.09.21 16:31:20] basil: could you be more specific?
+[30.09.21 16:31:21] basil: ?
+[30.09.21 16:33:59] basil: well, in theory there shouldn't be such symbols "0x0A" in strings from address book
+[30.09.21 16:35:32] basil: is there carriage advance?
+[30.09.21 16:36:07] basil: ok. and how do you escape it?
+[30.09.21 16:36:17] basil: \\n
+[30.09.21 16:36:21] basil: &
+[30.09.21 16:36:22] basil: ?
+[30.09.21 16:39:36] basil: i.e. if I got it right in the string carriage roll is 0x0A, and should be replaced by \n
+[30.09.21 16:39:39] basil: ?
+[30.09.21 16:42:51] basil: ``
+and so for \b\f\n\r\t
+```
+[30.09.21 16:43:02] basil: What's that about?
+[30.09.21 16:44:08] basil: I just don't understand the point?
+[09/30/21 16:44:22] basil: no. That's it. I just don't get the idea!
+[30.09.21 16:51:01] basil: ``no.
+and so for \b\f\n\r\t
+```
+[30.09.21 16:51:32] basil: what do you replace it with?
+[30.09.21 16:52:19] basil: or not. And 'what'(what data) to replace it with?
+[30.09.21 16:53:17] basil: yes
+[30.09.21 16:55:10] basil: ok. got it.
+[30.09.21 16:58:48] basil: yes. looks like it
+[30.09.21 16:58:59] basil: thanks
+[01.10.21 09:38:56] basil: Ghbdtncnde.
+[01.10.21 09:38:59] basil: hello
+[01.10.21 09:39:21] basil: Will there be another run today?
+[01.10.21 09:39:24] basil: Do you know?
+[01.10.21 12:30:36] basil: in place?
+[01.10.21 12:31:18] basil: wonderful
+[01.10.21 12:31:39] basil: jefferson will start the machines now. See what state the json is in.
+[01.10.21 13:19:08] basil: @martin start the machines. See data
+[01.10.21 13:34:40] basil: can we restart? All bots finished?
+[01.10.21 14:40:44] basil: did not understand last question
+[01.10.21 14:40:48] basil: rephrase
+[01.10.21 14:42:46] basil: you can. Only it is necessary to define in what volume
+[01.10.21 14:43:02] basil: how much?
+[01.10.21 14:43:09] basil: That's the first question
+[01.10.21 14:43:12] basil: and another
+[01.10.21 14:43:37] basil: Maybe some way to validate the data before sending
+[01.10.21 14:43:47] basil: Otherwise we'll be like this for a long time
+[01.10.21 14:44:17] basil: Find something on GitHub ready to validate
+[01.10.21 14:48:53] basil: well, you can calculate the string length
+[01.10.21 14:49:12] basil: that's possible
+[01.10.21 14:49:46] basil: Another question. I propose to reconcile permissible (or invalid) json characters
+[01.10.21 14:53:45] basil: well, for json there must be a list of characters that are allowed and those that are not allowed. right?
+[01.10.21 14:53:52] basil: or not?
+[01.10.21 14:54:54] basil: or already a discussion till monday?
+[01.10.21 14:59:30] basil: honestly no
+[01.10.21 15:02:54] basil: that I got it. ok. I suggest adding data validation then. Listen, what if the resulting json didn't pass validation. Maybe to send this string to some other address. For example /jer
+[01.10.21 15:05:20] basil: already better
+[01.10.21 15:05:33] basil: log is good
+[01.10.21 15:06:18] basil: ok
+[01.10.21 15:06:24] basil: I will
+[01.10.21 15:06:54] basil: we'll have to run it again, probably on Monday
+[01.10.21 15:08:14] basil: if you have any suggestions, just let me know. I'll be online another hour.
+[01.10.21 15:08:32] basil: just in case
+[26.10.21 11:47:09] basil: hello
+[26.10.21 11:47:54] basil: I understand that the first json element is missing a curly bracket. Is that correct?
+[26.10.21 11:54:54] basil: here's the problem
+[26.10.21 11:55:33] basil: ``
+currenSendJson += _STR("{") + jsonStr + _STR("}");
+```
+[26.10.21 11:55:40] basil: that's what I mean
+[26.10.21 11:55:55] basil: if you have at least one. There must be a second one.
+[26.10.21 11:57:26] basil: it can be a data transmission error or something else...
+[26.10.21 11:57:47] basil: ``
+'[\n' +
+    '    \n' +
+    '
+```
+[26.10.21 11:58:03] basil: I didn't add this one. Where did it come from?
+[26.10.21 12:29:09] basil: I certainly can't vouch for all the details
+[26.10.21 12:29:28] basil: if there is at least one, there must also be a second. Either there is something wrong on the server or there were errors during data transfer
+[26.10.21 12:29:41] basil: I find no other explanation. Or I have to do another upload. Will the error repeat
+[27.10.21 13:54:12] basil: test
+[27.10.21 13:54:17] basil: hello
+[27.10.21 13:54:30] basil: did you do an upload yesterday?
+[27.10.21 13:59:55] basil: ok. ok.
+[10/28/221 12:51:03] basil: hello. Turn on OTP.
+[12/13/21 10:26:41] basil: Hello.
+[12/13/21 10:58:55] martin: hi
+[21.12.21 15:35:55] basil: test
+[21.12.21 15:36:04] martin: ++
+[21.12.21 15:37:30] basil: great
+[21.12.21 15:37:35] basil: a moment
+[21.12.21 15:39:01] basil: tTwMGdE61%}V6~b4ymR4y{r?XmPa~e
+[21.12.21 15:39:09] basil: ``
+tTwMGdE61%}V6~b4ymR4y{r?XmPa~e
+```
+[21.12.21 15:39:48] basil: or better here?
+[21.12.21 15:39:58] martin: Whatever.)
+[21.12.21 15:42:17] basil: https://file.io/M0iGs0Dok5tQ
+[21.12.21 15:42:39] basil: report on receipt
+[21.12.21 15:43:17] martin: got it, thanks
+[21.12.21 15:43:42] basil: ok

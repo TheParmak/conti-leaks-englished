@@ -1,0 +1,53 @@
+[23.08.21 16:42:17] basil: Hello.
+[23.08.21 16:47:03] carrol: Hi!
+[23.08.21 16:47:57] basil: Are you familiar with leo-bot crypto load? Have you ever crypted such a thing?
+[23.08.21 16:48:14] carrol: yes it was
+[23.08.21 16:50:02] basil: the testBuild panel has, as I understand it, a test file, namely LeoDllTest_x64.dll. Can you suggest , after crypt, how can you check its functionality?
+[23.08.21 16:51:00] carrol: let me remember, let me see
+[23.08.21 16:51:23] basil: okay.
+[23.08.21 16:52:47] carrol: I got it from elroy once, I wrote it down
+[23.08.21 16:53:05] carrol: ``
+It's simple, you crypt x64, then call rundll32 crypted.dll, PluginInit will appear two MessageBox, first from dllmain - there should be path='<library address>', if address - it works, if empty - does not work.
+And the second message from PluginInit, there are three dots, which will be the message
+```
+[23.08.21 16:53:58] basil: So it's called like this
+```
+rundll32 crypted.dll,PluginInit
+```
+[23.08.21 16:54:05] basil: And nothing else
+[23.08.21 16:54:05] carrol: yes
+[23.08.21 16:54:23] basil: thank you. Much obliged.
+[23.08.21 16:54:32] carrol: please
+[23.08.21 16:55:12] carrol: listen, was it you Elroy wanted to connect to my project? he asked, and after that, silence
+[23.08.21 16:55:52] basil: Frankly speaking, I haven't heard anything specific about you. But if I have to, of course I'll join you.
+[23.08.21 16:56:20] carrol: no, he wasn't talking about you )))
+[23.08.21 16:58:17] basil: I was just "at the origins" of crypter, which creates its own stub. But now a lot of it is somehow outdated. elroy asked to test crypter with different load, but now I don't know how to test it. That's why I asked
+[23.08.21 16:59:04] basil: I asked him, he wrote twice. But I didn't understand anything anyway. And it's not nice to talk for a third time.
+[23.08.21 16:59:05] carrol: I see
+[23.08.21 16:59:33] carrol: well, ask me what I know, I'll answer
+[23.08.21 16:59:44] basil: ok. thanks.
+[22.09.21 18:08:35] basil: hello
+[22.09.21 18:13:45] carrol: Hi.
+[22.09.21 18:14:31] basil: Listen, there's a little problem with crypt2. crypt2, for which I am on duty.
+[22.09.21 18:15:50] basil: crypt works. I.e. splits the file, detects clean. But here's the problem - it doesn't work. Wild wrote there, that someone from crypto managed to localize the problem
+[22.09.21 18:16:04] basil: dl2_x64_20_415.dll - this file
+[22.09.21 18:16:16] basil: Have you heard anything about it?
+[22.09.21 18:17:37] carrol: but I think the problem was purely mine, it didn't work with gcc compiler built load, the second krypt didn't seem to have that problem
+[22.09.21 18:17:57] carrol: isn't that a Yelroy crypt?
+[22.09.21 18:18:30] basil: yes it is. the thing is that the test load works correctly.
+[22.09.21 18:19:56] carrol: I had a problem that gcc compiler created a zero section .bss and it didn't work correctly, look in the load if there is no such section, this is not the problem
+[22.09.21 18:21:17] basil: a moment
+[22.09.21 18:21:26] carrol: was elroy aware of this problem and wrote nothing about it? levf. ctqxfc yt 'nf ghj,ktvf
+[22.09.21 18:21:41] carrol: i think the problem is not that now
+[22.09.21 18:22:05] basil: you kinda wrote the load
+[22.09.21 18:22:11] carrol: yes
+[22.09.21 18:23:07] basil: wild also said that I think stuffy solved it somehow. Yeah, I think he did. But I can't catch him.
+[22.09.21 18:23:27] basil: did stuffy say anything?
+[22.09.21 18:23:32] carrol: no
+[22.09.21 18:23:52] basil: okay. okay. thanks.
+[22.09.21 18:24:02] carrol: look in the load is there a .bss section?
+[22.09.21 18:24:10] basil: a moment
+[22.09.21 18:25:45] basil: but no. By the way.
+[22.09.21 18:26:13] carrol: so it's some other problem, not the one I had
+[22.09.21 18:26:35] basil: Okay. Okay.
+[22.09.21 18:26:38] basil: Thank you

