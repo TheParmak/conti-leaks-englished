@@ -1,0 +1,74 @@
+[18.02.22 14:30:01] elijah: Hi!
+[18.02.22 14:30:39] basil: test
+[18.02.22 14:30:50] basil: accept cp
+[18.02.22 14:31:31] basil: test
+[18.02.22 14:31:38] elijah: There is a r
+[18.02.22 14:31:38] basil: hello
+[18.02.22 14:31:42] basil: yes
+[18.02.22 14:31:53] elijah: I was told that you are the author of stub 2
+[18.02.22 14:31:55] elijah: Is this true?
+[18.02.22 14:32:28] basil: Well, I took part in its creation. It was made with elroy
+[18.02.22 14:32:44] elijah: Great)
+[18.02.22 14:32:46] basil: it's not entirely my work
+[18.02.22 14:32:53] elijah: There's just a problem with my builds
+[18.02.22 14:33:06] elijah: And it does not work very strange
+[18.02.22 14:33:17] elijah: I produce two builds with and without logs
+[18.02.22 14:33:37] elijah: There is a crypt with this stub for both sources
+[18.02.22 14:33:48] elijah: And the interesting thing is that logged crypt works
+[18.02.22 14:33:55] elijah: And not logged one doesn't work
+[18.02.22 14:34:02] elijah: Both sources work
+[18.02.22 14:34:13] elijah: This is in generic mode
+[18.02.22 14:34:20] elijah: about other modes I don't know
+[18.02.22 14:35:09] elijah: When I start a non-logic crypt, I see that it appears in task manager. Hanging for a few seconds (apparently while decrypting the load), and then disappearing from processes, crashing
+[18.02.22 14:35:23] elijah: And logged crypt works fine
+[18.02.22 14:35:38] elijah: I tried to figure out what's wrong. But I failed.
+[18.02.22 14:36:13] elijah: I can't figure out whether it crashes at the stage of decrypting the load. Or is it already after starting the entrypoint load
+[18.02.22 14:36:38] elijah: Maybe you have a chance to see where it crashes?
+[18.02.22 14:37:22] elijah: Tried crypting 2 versions of sources. Both behave the same way
+[18.02.22 14:40:22] basil: There are two nuances. First, I'm away from crypto now. I'm off the list of active ones, so to speak. And the second is a question. This situation constantly repeats. I.e., logged load always works after crypto, but unlogged never works?
+[18.02.22 14:41:32] basil: because krypt 2 has a peculiarity. there's a new stub every time - randomly generated
+[18.02.22 14:42:00] elijah: tested 2 sources in generic mode - and in both of them logged works, and not logged - no
+[18.02.22 14:42:12] elijah: as far as I understand, in this mode the dll-crypted
+[18.02.22 14:43:41] basil: in idea, crypto doesn't care if it's ligged or not. It works with binary data. Question - is the set of sections in dll the same?
+[18.02.22 14:44:00] basil: there's no .debug section?
+[18.02.22 14:44:29] basil: because it looks like loader somehow work incorrectly
+[18.02.22 14:44:45] basil: I'm talking about load
+[18.02.22 14:48:33] elijah: the sections are the same
+[18.02.22 14:49:10] elijah: now look, in logged one - import is there, but in unlogged one - no import
+[18.02.22 14:49:24] elijah: that is, not at all. There is no such directory.
+[18.02.22 14:50:20] elijah: `no debug section there?
+[18.02.22 14:51:41] basil: Okay. And the functionality itself is run from the DllMain?
+[18.02.22 14:52:26] elijah: yes.
+[18.02.22 14:52:45] elijah: Am I distracting you too much now? Can we postpone this conversation
+[18.02.22 14:55:18] basil: let's do this. As I understand you have 2 project configurations. Try copying the project, remove all the current functionality. Make function 1 HelloWorld. And make MessageBox from it. And assemble 2 projects. There is a feeling that just the configuration of the projects somehow have peculiarities.
+[18.02.22 14:55:28] basil: there are some peculiarities
+[18.02.22 14:55:42] basil: Why it does not create import?
+[18.02.22 14:56:35] elijah: Because in the import only functions that are associated with logging. Version without logs, I purposely scrubbed to import was empty, but AV are fed up with detects on it
+[18.02.22 14:57:28] basil: I just had a version of crypto with logs somewhere
+[18.02.22 14:57:31] elijah: I'll build that version now
+[18.02.22 15:16:49] elijah: `https://privatlab.com/s/v/BAlwRNaQdzibyg4ALWdO`
+[18.02.22 15:16:54] elijah: `https://privatlab.com/s/d/BAlwRNaQdzibyg4ALWdO/bXGNw#delete`
+[18.02.22 15:17:13] elijah: `DFH7823MbaJ72SDbNhuydi7623SDHhy823bfh`
+[18.02.22 15:17:32] elijah: two dlls in generic mode. One with logs, one without logs
+[18.02.22 15:20:44] basil: got it
+[18.02.22 15:22:41] basil: question. What do they do? Is it a combat load?
+[18.02.22 15:23:34] elijah: Nah, like you said, the DllMain just calls MessageBox and that's it, that's the end of the job
+[18.02.22 15:24:33] basil: I don't see MessageBox in the import. Or everything is obfuscated there?
+[18.02.22 15:25:06] elijah: Yes, the MessageBox call is obfuscated
+[18.02.22 15:25:21] elijah: In import only what is used for logging
+[18.02.22 15:25:26] basil: ok
+[18.02.22 16:37:10] basil: found the mistake.
+[21.02.22 12:01:25] basil: test
+[21.02.22 12:34:20] elijah: +
+[21.02.22 12:34:30] elijah: otr?
+[21.02.22 12:34:39] elijah: hi!
+[21.02.22 12:34:39] basil: test
+[21.02.22 12:34:45] basil: hello
+[21.02.22 12:35:58] basil: the error was in the loader. In the combat file was missing import section, and the loader tried to load it, dereferenced a null pointer. And, of course, after that it crashed.
+[21.02.22 12:36:37] basil: I fixed it (the loader). Combat file (without logging) worked correctly
+[21.02.22 12:36:47] basil: Today we'll try to make changes
+[21.02.22 12:37:30] elijah: Great! Thanks
+[21.02.22 12:37:43] elijah: Is there still an old version in cryptopanel?
+[21.02.22 12:38:09] basil: I haven't made any changes yet
+[21.02.22 12:38:17] basil: I'll contact orval later
+[21.02.22 12:38:40] elijah: I see

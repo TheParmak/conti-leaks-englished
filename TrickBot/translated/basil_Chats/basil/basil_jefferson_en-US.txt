@@ -1,0 +1,2304 @@
+[26.07.21 08:14:28] jefferson: hi
+[26.07.21 08:14:36] jefferson: how are you doing on your tests?
+[26.07.21 08:16:23] basil: Greetings. As it should be, we found several bugs. We fixed them. What about the deadline? I think, that this week it will be possible to pass it on.
+[26.07.21 08:16:44] jefferson: got it, waiting
+[28.07.21 14:43:34] basil: Greetings!
+[28.07.21 14:43:44] basil: test
+[28.07.21 14:43:49] jefferson: +
+[28.07.21 14:44:25] basil: Ok. Need IP addresses of control server.
+[28.07.21 14:44:56] jefferson: server with admin or spacers?
+[28.07.21 14:45:18] basil: better the pads
+[28.07.21 14:45:26] basil: I need to put them into binary
+[28.07.21 14:45:44] jefferson: okay, I'll set it up today
+[28.07.21 14:46:09] basil: ok.
+[28.07.21 14:47:38] basil: https://dyncheck.com/scan/id/cd0232ba9760a90903dc2dc4b4a8d52c
+[28.07.21 14:48:43] jefferson: yeah, great.
+[28.07.21 14:51:19] jefferson: just make sure you clean the binary well
+[28.07.21 14:51:30] jefferson: because a crypt file is not a good measure
+[28.07.21 14:51:47] jefferson: there comes a moment when even a cryptease is not enough
+[28.07.21 14:53:14] basil: Well, I personally don't really deal with organizational questions. It's probably better to the management. I'm not excusing myself, if I have to do it, of course. But you have to go to them first.
+[28.07.21 14:54:53] jefferson: yes, it's understandable, we'll solve it. it's just that we already had such a mailer. it was made from some guy's product that was nearly dumped. the code was not his own, buggy, but it worked. but once there came a moment when crypting it was senseless, and there were no choices for purging too. it was handled by sylver
+[28.07.21 14:55:38] jefferson: another thing to remember. maybe we can come up with something in the form of a dll in the future. as an option...
+[28.07.21 14:55:38] basil: ok. got it.
+[28.07.21 14:56:15] basil: you mean build it as a dll?
+[28.07.21 14:56:31] jefferson: no, not yet.
+[28.07.21 14:56:53] jefferson: I mean, maybe a dll is just one of the possible difficulties
+[28.07.21 14:57:06] jefferson: in terms of cleaning detects
+[28.07.21 14:57:54] basil: maybe, but I didn't notice any difference....
+[28.07.21 14:58:03] jefferson: oh, okay.
+[29.07.21 10:05:06] jefferson: hi.
+[29.07.21 10:05:16] jefferson: hi.
+[29.07.21 10:05:21] jefferson: 198.244.135.252
+ 23.160.192.139
+ 194.36.189.13
+ 192.119.171.165
+ 141.136.0.54
+45.90.58.61
+ 194.15.113.245
+ 37.59.144.22 34
+[29.07.21 10:05:27] basil: Hello.
+[29.07.21 10:05:32] basil: Good. Picked up
+[29.07.21 10:14:04] basil: 37.59.144.22 34 - is that right address?
+[29.07.21 10:14:23] jefferson: I'm on it.
+[29.07.21 10:14:31] basil: okay.
+[29.07.21 10:14:37] jefferson: just exclude him
+[29.07.21 10:14:43] jefferson: the one who made the pads is out
+[29.07.21 10:15:17] basil: okay.
+[29.07.21 10:54:54] basil: Fe6l$MED~~fUl0qKMH31a3~UYm4*K
+[29.07.21 10:55:06] basil: ``
+Fe6l$MED~*~fUl0qKMH31a3~UYm4*K
+```
+[29.07.21 10:55:14] basil: https://file.io/qSMmLle1kTcS
+[29.07.21 10:55:19] basil: https://dyncheck.com/scan/id/8d35e78c59e96318491cb8a44041a13f
+[29.07.21 10:55:23] jefferson: accepted
+[29.07.21 10:55:44] jefferson: this week I'll do it at my place, next week I'll try it in combat conditions
+[29.07.21 10:56:35] basil: ok. If you have any difficulties, tell me. Before the release, I've tested it up and down, but just in case.
+[29.07.21 10:57:24] jefferson: ok.
+[02.08.21 09:32:13] basil: Greetings!
+Did you manage to test the bot? If you have any questions, any complaints, any suggestions?
+[02.08.21 10:20:06] jefferson: hi
+[02.08.21 15:10:08] basil: Hello!
+[02.08.21 15:10:24] jefferson: hi.
+[02.08.21 15:10:33] basil: Got it.
+[02.08.21 15:10:42] jefferson: need to get a handle on this.
+[02.08.21 15:10:59] jefferson: otherwise there will be a problem on botnet upload
+[02.08.21 15:11:10] jefferson: who tested it?
+[02.08.21 15:11:25] basil: I did.
+[02.08.21 15:11:36] basil: But I had no such situations
+[02.08.21 15:11:42] basil: I'll read it now.
+[02.08.21 15:11:53] jefferson: I'll give you access to the server in 30 minutes
+[02.08.21 15:11:57] jefferson: spin it there
+[02.08.21 15:12:12] basil: wait. now.
+[02.08.21 15:12:22] basil: I need to figure out what went wrong
+[02.08.21 15:12:34] jefferson: okay, well, I can describe it in about 30 minutes too.
+[02.08.21 15:12:44] jefferson: I'll get out of here and describe it.
+[02.08.21 15:12:56] basil: okay.
+[02.08.21 15:15:39] basil: I can guess what the problem might be...
+[02.08.21 15:15:55] basil: is it server OS?
+[02.08.21 16:59:31] basil: Will you show up again today?
+[02.08.21 16:59:52] jefferson: yes
+[02.08.21 17:00:14] jefferson: I had sapps from my wallet paying for a large volume of servers, just finished
+[02.08.21 17:00:19] jefferson: there were about 100 of them
+[02.08.21 17:00:36] jefferson: released
+[02.08.21 17:00:55] jefferson: The axis is not a server
+[02.08.21 17:01:02] jefferson: ten x64
+[02.08.21 17:01:33] basil: okay. I can go in the machine. just a few seconds, take a look.
+[02.08.21 17:02:28] jefferson: Main IP: 104.237.196.226
+Username: administrator
+Password: Nf#c892bh#54
+[02.08.21 17:02:40] jefferson: both machines are on
+[02.08.21 17:02:53] jefferson: the one he didn't tap in the name has mail
+[02.08.21 17:03:14] jefferson: the one that did work has the same name but without the word mail, oddly enough))
+[02.08.21 17:03:24] basil: now
+[02.08.21 17:03:44] jefferson: you can use it as much as you want
+[02.08.21 17:04:00] jefferson: i just needed to get the info, and my car was under the timeline
+[02.08.21 17:04:20] basil: we'll try to connect it now.
+[02.08.21 17:05:30] basil: normal rdp?
+[02.08.21 17:09:00] jefferson: yes
+[02.08.21 17:09:19] basil: gjlrk.xbkcz
+[02.08.21 17:09:23] basil: connected
+[02.08.21 17:10:43] basil: in general, should work))) Everything you need to run in OS is there.
+[02.08.21 17:10:57] basil: but it doesn't work
+[02.08.21 17:11:26] basil: okay. Okay. Is my time with the server somehow limited?
+[02.08.21 17:11:42] basil: or you can use it with tail and mane?
+[02.08.21 17:12:51] jefferson: you can use it.
+[02.08.21 17:13:05] jefferson: I've got it for that purpose and to check the stub before going online
+[02.08.21 17:13:36] jefferson: just use virtual machines, roll them back to a previous state
+[02.08.21 17:13:45] jefferson: no saves
+[02.08.21 17:14:56] basil: okay. one more question. I'm getting a few distractions here. I may be disconnected now. The error will of course be localized and corrected.... Well, the situation in the real world is as follows
+[02.08.21 17:15:13] jefferson: okay.
+[02.08.21 17:15:21] jefferson: just do your best, as soon as possible.
+[02.08.21 17:15:28] jefferson: you want to let him out
+[02.08.21 17:15:31] jefferson: Into battle
+[02.08.21 17:15:40] basil: okay. thanks.
+[03.08.21 09:37:31] jefferson: hi.
+[03.08.21 09:37:38] basil: hello
+[03.08.21 09:38:00] jefferson: fox@ at toad - ask him for rollbacks and virtualization preparations
+[03.08.21 09:38:04] jefferson: this is my sapp
+[03.08.21 09:38:09] jefferson: he's in charge there
+[03.08.21 09:38:12] jefferson: so you don't get distracted
+[03.08.21 09:38:43] jefferson: just, after you do a test, tell him "roll back" or turn on that machine. he will make everything clean and up to date
+[03.08.21 09:40:53] basil: ok. thanks. There are some nuances in the way mine work. They have to do with the schedule. I'll be online for a week to two weeks now from about 12.20-13.00 MSC and in the evening from 17.20 until the end. Just so you know.
+[03.08.21 09:41:34] jefferson: okay.
+[03.08.21 09:41:49] jefferson: I think that's enough time to fix what I found
+[03.08.21 09:42:01] jefferson: detected
+[03.08.21 09:42:11] basil: I think it should be faster
+[03.08.21 09:42:15] jefferson: Mm-hmm.
+[03.08.21 09:42:28] jefferson: logged version should run there
+[03.08.21 09:42:38] jefferson: I don't have one, only nonlogged
+[03.08.21 09:42:49] basil: ok
+[03.08.21 17:30:22] basil: Who can I contact about the master server?
+[03.08.21 17:40:59] basil: @fox says he's out of the loop
+[03.08.21 17:48:50] jefferson: in toad?
+[03.08.21 17:49:04] basil: yes
+[03.08.21 17:49:22] jefferson: he's gonna get his ass kicked
+[03.08.21 17:49:45] basil: don't hurry
+[03.08.21 17:49:57] basil: maybe I phrased it wrong
+[03.08.21 17:50:10] basil: can he do it at all?
+[03.08.21 17:50:19] jefferson: what exactly?
+[03.08.21 17:51:14] basil: connect to the control server. Run the task. And somehow to determine if the bot is knocked out - authorized.
+[03.08.21 17:51:42] jefferson: look, there are several virtual machines. the bot can be run on any of them
+[03.08.21 17:51:49] jefferson: with or without outlook
+[03.08.21 17:52:02] basil: I know that. Was running
+[03.08.21 17:52:26] jefferson: and the control server, what in this case?
+[03.08.21 17:53:01] basil: well, the addresses of the pads (IP addresses)
+[03.08.21 17:53:17] basil: server the bot connects to
+[03.08.21 17:53:50] jefferson: i can give you admin. i don't have access to the server.
+[03.08.21 17:54:07] basil: if you can
+[03.08.21 17:54:10] jefferson: https://173.208.146.34/
+user:#AtK4Dan>{_DM4fU
+[03.08.21 17:54:16] basil: a moment
+[03.08.21 17:55:26] basil: yes.
+[03.08.21 17:55:42] basil: found the mistake .
+[03.08.21 17:55:55] basil: check now
+[03.08.21 17:56:12] jefferson: ok
+[03.08.21 17:56:14] jefferson: I'll be right back.
+[03.08.21 17:56:19] jefferson: I'll read it when I get back
+[03.08.21 17:56:49] basil: okay.
+[03.08.21 18:04:48] basil: yes, both logged and unlogged. SMTP worked.
+[03.08.21 18:04:54] basil: version*.
+[03.08.21 19:35:09] basil: Outlook seems to work too, according to logs
+[04.08.21 09:29:29] basil: hello
+[04.08.21 09:29:37] basil: 0wWBi*9o|it~FXApQi7pdPmTbHoz35
+[04.08.21 09:29:45] basil: https://file.io/Njge3xutq7Eu
+[04.08.21 16:11:57] jefferson: hi.
+[04.08.21 16:11:58] jefferson: received
+[04.08.21 16:12:16] jefferson: hi
+[04.08.21 16:12:20] jefferson: received
+[04.08.21 16:13:35] basil: Okay. If you want, we can test it together.
+[04.08.21 16:22:08] jefferson: I'll get to it later
+[04.08.21 16:22:16] basil: ok.
+[04.08.21 16:22:24] jefferson: can you give me a link to toad?
+[04.08.21 16:22:28] jefferson: I could lose it
+[04.08.21 16:22:38] jefferson: hash
+[04.08.21 16:22:46] basil: okay.
+[04.08.21 16:22:48] basil: now
+[05.08.21 09:31:51] basil: test
+[05.08.21 09:32:00] basil: hello!
+[05.08.21 09:43:47] jefferson: hello
+[05.08.21 09:44:25] basil: yesterday some did not wait.
+[05.08.21 09:44:49] basil: Do you need to tweak anything? Did you manage to run the bot? Or never got around to it?
+[05.08.21 09:44:50] basil: ?
+[05.08.21 09:53:40] jefferson: I haven't looked yet
+[05.08.21 09:54:03] jefferson: I'll deal with ongoing emails and be ready to run spam bot by evening
+[05.08.21 09:54:15] basil: ok. got it.
+[06.08.21 15:00:35] jefferson: hi.
+[06.08.21 15:00:55] jefferson: hi.
+[06.08.21 15:01:22] jefferson: please make me a Mailer logged and nonlogged version again
+[06.08.21 15:01:34] jefferson: I'll run it tonight
+[06.08.21 15:02:16] basil: ok
+[06.08.21 15:09:53] jefferson: toadstool please
+[06.08.21 15:09:56] jefferson: as you do
+[06.08.21 15:10:08] basil: ok.
+[06.08.21 15:13:32] basil: sent
+[06.08.21 15:13:55] basil: beep me when you get started
+[06.08.21 15:32:10] jefferson: received
+[06.08.21 15:32:19] jefferson: well, I'll have a couple of hours to start
+[06.08.21 15:32:23] jefferson: I'll run it
+[06.08.21 15:33:36] basil: I'm up to about 11 AMT today. I'd like to try it together anyway. So it wouldn't turn out like last time. Or you tell me when I need to be available
+[06.08.21 15:34:17] jefferson: ok. i'll get my stuff done soon and start
+[06.08.21 15:34:22] basil: ok.
+[06.08.21 16:28:56] basil: duplicate message in toad
+[06.08.21 16:51:13] jefferson: okay.
+[06.08.21 19:55:15] jefferson: don't wait for today. i'm not done yet
+[06.08.21 19:55:59] basil: okay.
+[11.08.21 16:07:47] jefferson: hi
+[11.08.21 16:07:56] basil: Hello.
+[11.08.21 16:08:17] jefferson: I'm sorry - I haven't got to the Mailer file yet.
+[11.08.21 16:08:33] jefferson: can you re-download it again? i tried to download it - it's already deleted
+[11.08.21 16:08:45] jefferson: I'll download it right away.
+[11.08.21 16:08:52] basil: okay. but you'll have to wait a bit
+[11.08.21 16:08:57] jefferson: no problem
+[11.08.21 16:09:02] jefferson: my bad
+[11.08.21 16:09:03] basil: now, I have to install the office
+[11.08.21 16:09:07] basil: rebuild
+[11.08.21 16:09:30] basil: maybe upload to a server. You mean
+[11.08.21 16:09:52] jefferson: leave a passkey archive on the host desktop
+[11.08.21 16:09:59] jefferson: passport 123321
+[11.08.21 16:10:05] basil: okay.
+[11.08.21 16:10:27] jefferson: and scratch the names
+[11.08.21 16:10:30] jefferson: also
+[11.08.21 16:10:39] basil: okay.
+[12.08.21 09:40:08] jefferson: hi.
+[12.08.21 09:40:22] basil: hello
+[12.08.21 09:40:22] jefferson: running, tapping bot
+[12.08.21 09:40:35] basil: everything okay?
+[12.08.21 09:40:42] jefferson: at this point yes
+[12.08.21 09:40:42] basil: any comments?
+[12.08.21 09:40:53] jefferson: no notes yet
+[12.08.21 09:41:01] jefferson: I'll let you know when I'm done testing
+[12.08.21 09:41:09] basil: ok.
+[24.08.21 17:25:17] basil: hello
+[25.08.21 09:26:16] jefferson: hi
+[25.08.21 09:26:26] basil: Hello.
+[25.08.21 09:26:30] jefferson: noticed your message late yesterday
+[25.08.21 09:27:34] basil: There was activity in spambot bot chat yesterday. Maybe something happened? Any comments?
+[25.08.21 09:29:17] jefferson: no, nothing
+[25.08.21 09:29:32] jefferson: I haven't even run my mailer yet. my main one is totally screwed up
+[25.08.21 09:29:45] jefferson: what's your nickname in toad?
+[25.08.21 09:29:50] jefferson: working
+[25.08.21 09:31:05] basil: fast
+[25.08.21 09:31:10] jefferson: f
+[25.08.21 09:31:15] jefferson: sec
+[25.08.21 09:31:30] jefferson: there will be 2 tz's now, bouza is looking for a performer for me
+[25.08.21 09:31:39] jefferson: maybe it will be you just)
+[25.08.21 09:31:46] basil: I'll be right in.
+[25.08.21 09:32:07] jefferson: you're good with B, right?
+[25.08.21 09:32:27] basil: well, you could, in principle.
+[25.08.21 09:32:30] basil: let's see
+[25.08.21 09:33:09] jefferson: you'll have to ask Booza what he has decided on this matter. we were talking about you before, if I'm not mistaken
+[25.08.21 09:33:25] basil: ok
+[25.08.21 09:33:30] jefferson: there's one thing that Martin needs help with
+[25.08.21 09:33:36] jefferson: just for my broken mylar
+[25.08.21 09:33:40] jefferson: broken
+[25.08.21 09:33:58] jefferson: and it's just Martin asking for a C programmer
+[25.08.21 09:34:07] basil: ok
+[25.08.21 09:34:16] basil: maybe I'll contact him myself?
+[25.08.21 09:34:19] jefferson: software needs to be fixed.
+[25.08.21 09:34:27] jefferson: yes, of course.
+[25.08.21 09:34:58] jefferson: there is a broken node in software, we can't find the cause, because initially there is no logging
+[25.08.21 09:35:20] jefferson: all attempts so far, like a finger in the sky
+[25.08.21 09:36:00] jefferson: there are also terms of reference for new software and analytics for the same software to fix
+[25.08.21 09:36:16] jefferson: but the bouza will explain it if you get it assigned to you
+[25.08.21 09:36:39] jefferson: I've been explaining it to him for days. there's no time in 30 minutes
+[25.08.21 09:37:18] basil: okay.
+[14.09.21 11:21:43] jefferson: hi.
+[14.09.21 11:22:22] jefferson: by the second half of next week I need to prepare mylar (pads, builds). I'll try to upload it, if the online will be fine
+[14.09.21 11:24:54] basil: Ok.
+[14.09.21 11:25:26] basil: And about the pads to whom to contact?
+[14.09.21 11:25:38] basil: Please tell me.
+[14.09.21 11:45:28] jefferson: I think rocco
+[14.09.21 11:45:42] basil: ok. ok. i'll text him. Thanks
+[14.09.21 11:47:52] jefferson: check with elroy.
+[14.09.21 11:47:55] jefferson: he knows.
+[14.09.21 11:48:00] jefferson: you can.
+[14.09.21 11:48:14] basil: okay.
+[20.09.21 13:43:05] basil: hello
+[20.09.21 13:46:14] jefferson: it's not decoded
+[20.09.21 13:46:23] basil: test
+[20.09.21 13:46:28] basil: You see?
+[20.09.21 13:47:07] jefferson: yes
+[20.09.21 13:49:07] basil: Okay. There's a request, personally. For my part, I responded to your message (last week) instantly. Immediately notified the admins. There tried to speed them up somehow, but whether they were busy, or something else
+[20.09.21 13:49:18] basil: *or something else
+[20.09.21 13:51:09] basil: So I decided to spit it out to my boss today. It seems to have moved.
+[20.09.21 13:51:17] basil: what about my part worked. On the server with martin checked. From bot was cut off, data from address book were transferred and e-mails were sent out
+[20.09.21 13:53:10] basil: Actually the question is this. If it's all tip-top, on the test runs and there are no remarks - nagging. I'd like to go on vacation sometime around October 8. Is it okay to let me go? I'm coming to you as a customer.
+[20.09.21 13:53:46] jefferson: yeah, sure.
+[9/20-21 13:53:56] jefferson: Just make sure everything works.
+[20.09.21 13:54:01] basil: Thank you.
+[20.09.21 13:54:08] jefferson: no problem.)
+[20.09.21 13:54:08] basil: I got it. Okay.
+[27.09.21 10:39:06] basil: Test
+[27.09.21 10:39:27] basil: Test
+[27.09.21 10:39:40] basil: Test
+[27.09.21 10:39:44] basil: Hello
+[27.09.21 10:39:45] basil: B2w%RlDYB~964sMqqH0In~8jdXyEyc
+[27.09.21 10:40:35] basil: https://file.io/wnkEMrRYOfSg
+[27.09.21 10:41:15] basil: I just ran it. The bot logged into the server. Emails are gone.
+[27.09.21 10:43:13] basil: the server address?
+[27.09.21 11:10:58] jefferson: hi
+[27.09.21 11:11:02] jefferson: I think I have it
+[27.09.21 21:11:12] jefferson: if you didn't change anything with your logins, you don't need to
+[27.09.21 11:11:29] basil: https://185.163.46.68 ?
+[27.09.21 11:11:29] jefferson: https://173.208.146.34/
+[27.09.21 11:11:46] jefferson: it turns out that it is necessary)
+[27.09.21 11:11:52] basil: a moment
+[27.09.21 11:13:22] basil: d3@akVq:J{WB/\=g
+[27.09.21 11:13:22] basil: user
+[27.09.21 11:13:51] jefferson: accepted
+[27.09.21 11:13:54] jefferson: I'll report back soon
+[27.09.21 11:14:03] jefferson: I'll get it done
+[27.09.21 11:14:28] basil: okay.
+[27.09.21 12:08:21] jefferson: I'm gonna need a tutorial on how to load mylar not for the mailing list, but for contact collection
+[27.09.21 12:08:21] jefferson: setting up a task force exactly
+[27.09.21 12:08:43] jefferson: we'll just do a test run like this
+[27.09.21 12:09:14] jefferson: be back in 15 minutes
+[27.09.21 12:10:03] basil: well, actually we discussed it. And at the time of the discussion we came to the conclusion that trying to collect data from the address book always happens. That is, you don't need to configure it on the server. But here there is one nuance
+[27.09.21 12:12:36] basil: Collection of contacts.  More precisely, this service (let's call it that), works by functionality. I did it with martin. He showed me in the chat that the data comes all right. I saw exactly what I had to see. I asked him if it can be seen on the server, so to speak in graphical mode. He told me that I do. But at the moment I did not see this panel or bookmark on the server
+[27.09.21 12:12:59] basil: Maybe he just did not turn it on
+[27.09.21 12:13:11] basil: he
+[27.09.21 12:13:57] jefferson: okay, wait a minute.
+[27.09.21 12:14:12] jefferson: so we're setting up a newsletter with just blank text?
+[27.09.21 12:14:19] jefferson: so there's nothing to send out
+[27.09.21 12:14:24] jefferson: how do you do that?
+[27.09.21 12:16:07] basil: see what the bot does automatically. As of now. Collecting system data and collecting information from the outlook address book. You don't have to set it up. Not at all. But...
+[27.09.21 12:17:41] jefferson: could you make me a task so that I could just run this part today and tell me what to press while loading mylar?
+[27.09.21 12:18:03] jefferson: just, I'm confused about something
+[27.09.21 12:18:31] basil: okay. let's try it. Can you go to the server now?
+[27.09.21 12:18:54] basil: there is one tasker there. I set it up myself.
+[27.09.21 12:19:24] jefferson: yeah, i'm there.
+[27.09.21 12:19:43] basil: bot_task [ B ] . See that one?
+[27.09.21 12:19:55] jefferson: yeah.
+[27.09.21 12:20:24] basil: Okay. Is there a test machine we will test it on?
+[27.09.21 12:21:47] jefferson: yes.
+[27.09.21 12:22:26] basil: Okay. Is Outlook installed there? Does it have at least 1 account?
+[27.09.21 12:23:01] jefferson: I'll check it soon
+[27.09.21 12:24:10] jefferson: Nope.
+[27.09.21 12:24:11] jefferson: no accounts
+[27.09.21 12:24:21] jefferson: but I want to do a test run on live machines
+[27.09.21 12:24:37] jefferson: upload it to ondine
+[27.09.21 12:25:20] basil: I somewhat did not understand what test run on live machines means?
+[27.09.21 12:25:33] jefferson: not on test, but test
+[27.09.21 12:25:42] jefferson: test run on live machines
+[27.09.21 12:26:05] jefferson: let's see how many working outlooks we have
+[27.09.21 12:26:36] jefferson: I just don't want them to send anything back
+[27.09.21 12:27:14] basil: So you have to do it now, just so they collect the information. But not to send them letters?
+[27.09.21 12:27:22] jefferson: yes
+[27.09.21 12:27:28] jefferson: That's the way it is for today
+[27.09.21 12:27:41] basil: I think so.
+[27.09.21 12:27:44] jefferson: at the same time we will compare the number of uploads with the number of taps
+[27.09.21 12:28:06] jefferson: well, I need to figure out how to do it
+[27.09.21 12:28:07] basil: but now I need to look again how to configure the server
+[27.09.21 12:28:16] jefferson: check it out please
+[27.09.21 12:28:17] basil: now I get it
+[27.09.21 12:28:21] jefferson: it's not clear to me yet
+[27.09.21 12:28:28] basil: ok.
+[27.09.21 12:28:29] basil: watching
+[27.09.21 12:28:56] jefferson: in general, here's the upgrade: toggle Collection/Distribution mode
+[27.09.21 12:29:19] jefferson: when in Gather mode, all the letter editing fields are inactive
+[27.09.21 12:30:05] jefferson: The way I see it now - there is no toggle, and you have to fill in/not to fill in all the fields, but as I understand, they will still send you something
+[27.09.21 12:30:14] jefferson: if I understand correctly, how it all is implemented
+[27.09.21 12:30:46] jefferson: and in general, it would be more logical to do as I described
+[27.09.21 12:30:46] basil: The bot itself says that if it doesn't receive emails, it won't send anything. But how do I make it work on the server?
+[27.09.21 12:30:53] basil: okay.
+[27.09.21 12:31:59] jefferson: in the future, when creating a task on the config tab, make a switch Send/Grabbing contact list
+[27.09.21 12:54:57] jefferson: will there be a new file?
+[27.09.21 12:55:31] basil: yes. i'm building the project now
+[27.09.21 12:55:34] basil: not fast unfortunately. Already fixed the code.
+[27.09.21 12:55:36] jefferson: ok
+[27.09.21 13:03:01] basil: I'll send you binary codes now.
+[27.09.21 13:03:14] jefferson: ok
+[27.09.21 13:03:59] basil: qTAfc}MdKC}PM~JS6briX?zByCCs1T
+[27.09.21 13:06:38] basil: https://file.io/zKUV04rb4K5S
+[27.09.21 13:06:48] jefferson: yes
+[27.09.21 13:08:13] basil: I've commented out there, sending emails. Only collecting system information and collecting address book data
+[27.09.21 13:08:24] jefferson: okay.
+[27.09.21 13:09:51] jefferson: success false
+status 429
+code "TOO_MANY_REQUESTS"
+message "Too many requests"
+help "https://file.io/help/api/errors/TOO_MANY_REQUESTS"
+key null
+[27.09.21 13:09:54] jefferson: can't download
+[27.09.21 13:10:10] jefferson: both from torus and regular browser on iphone
+[27.09.21 13:10:37] basil: what a day.... I don't know about you, but for me it's like this in the morning)))
+[27.09.21 13:10:44] basil: really trying to be optimistic
+[27.09.21 13:10:53] basil: I'll try again
+[27.09.21 13:11:21] jefferson: yeah, it happens, when by lunchtime you already say "fuck it all, I've seen it all". ))
+[27.09.21 13:11:35] basil: that's it)))
+[27.09.21 13:13:55] basil: I'll do it now. It's not going anywhere.
+[27.09.21 13:14:37] basil: how about this?
+[27.09.21 13:14:38] basil: https://privatty.com/en/n/tWE4ITBU1#FYlwYYIz7Y
+[27.09.21 13:17:00] basil: did it work? no?
+[27.09.21 13:17:17] jefferson: yes
+[27.09.21 13:18:19] basil: Good.
+[27.09.21 13:26:09] jefferson: so, I take it you don't need to create a new task and turn something on?
+[27.09.21 13:26:12] jefferson: just load and all?
+[27.09.21 13:27:42] basil: You just start it and that's it.
+[27.09.21 13:27:54] basil: stopped and restarted
+[27.09.21 13:28:15] jefferson: Avast Internet Security Sf:ShellCode-DZ [Trj]
+	AVG AntiVirus Sf:ShellCode-DZ [Trj]
+[27.09.21 13:28:25] jefferson: https://avcheck.net/id/MBCqfMAoteQq
+[27.09.21 13:28:51] basil: now the moment
+[27.09.21 13:30:53] basil: I don't know
+[27.09.21 13:31:01] basil: but here's the new files
+[27.09.21 13:31:07] basil: I have this:
+https://dyncheck.com/scan/id/99621c8491b826b61b70c770df496f91
+[27.09.21 13:31:39] jefferson: dincek often pulls such stunts
+[27.09.21 13:32:06] basil: I can of course install Avast Internet Security
+[27.09.21 13:32:22] basil: if you need . confirm rebuttal
+[27.09.21 13:32:38] jefferson: well, it's better to do it in the future
+[27.09.21 13:34:15] jefferson: I'll upload it now, as it is - with these detects
+[27.09.21 13:34:21] jefferson: but you'll have to fix it when we load it in combat mode
+[27.09.21 13:34:56] jefferson: so it's better to check on avcek - there were always better results
+[27.09.21 13:34:58] jefferson: faster
+[27.09.21 13:35:31] basil: ok
+[27.09.21 13:37:05] jefferson: you can upload, then? is everything done in admin?
+[27.09.21 13:37:36] basil: yes. One at a time.
+[27.09.21 13:37:46] jefferson: you mean one at a time?
+[27.09.21 13:37:57] jefferson: 300 cars one at a time?)
+[27.09.21 13:38:07] basil: uh...
+[27.09.21 13:38:20] basil: no, of course you can do 300
+[27.09.21 13:38:24] jefferson: well, he's kind of a mass-tasker
+[27.09.21 13:38:26] basil: not a problem for bot
+[27.09.21 13:38:32] basil: I don't mind
+[27.09.21 13:38:34] basil: I remember
+[27.09.21 13:38:55] basil: but the thing is, in this task, which is now done to the server
+[27.09.21 13:39:10] basil: there's only one email entered
+[27.09.21 13:40:11] jefferson: I don't quite understand about 1 email
+[27.09.21 13:40:14] basil: i.e. bot connects server will give 1 email address and disconnect. Now I will try to ask martina
+[27.09.21 13:40:49] basil: now I need to talk to martinom
+[27.09.21 13:40:51] basil: momento
+[27.09.21 13:40:59] jefferson: ok
+[27.09.21 13:45:49] basil: martin is not answering.  There server scheme is
+[27.09.21 13:47:44] jefferson: are there any limits?
+[27.09.21 13:47:52] jefferson: or what's the problem?
+[27.09.21 13:47:55] basil: wait
+[27.09.21 13:48:01] basil: I'll tell you
+[27.09.21 13:50:02] basil: I create a task, and then I create a mailing list (email addresses) for that task, and then each bot gets its own "portion" of email addresses; as soon as the list expires, the task gets disabled. Well, this server is working (I didn't write it). So now there (in the task) is only 1 email. The task was created (by me) to test the performance of the bot. If you now run 300 machines, the first bot will connect and the task will be over
+[27.09.21 13:50:59] basil: martin seemed to have a big list, which you can add to this task and then, you can test the work of the bot on 300 machines
+[27.09.21 13:51:50] basil: I wrote to him and I wrote . But he hasn't answered yet.
+[27.09.21 13:51:52] jefferson: no, that's not the way to work for us. we don't need any lits at all. a mailer should find something to work with and finish it
+[27.09.21 13:52:24] jefferson: we can't predict how many bots you have in your outlook
+[27.09.21 13:52:33] basil: I agree
+[27.09.21 13:52:37] jefferson: there could be 2, maybe 100, maybe 2k
+[27.09.21 13:52:51] basil: I totally agree
+[27.09.21 13:53:29] basil: Binary (bot itself) will support such a scheme. I think everything will be fine there. But the server works in this way now
+[27.09.21 13:55:26] jefferson: That means we won't check it to the end
+[27.09.21 13:55:27] basil: Look, I did everything I needed to do. Well, I think so, the bot and I angelo tested. Here is still last Wednesday. worked. "Made" the admins make the pads, new server
+[27.09.21 13:55:56] jefferson: we need to understand how he will perform the current task
+[27.09.21 13:55:57] basil: I was talking about the task of displaying the data from the address book -
+[27.09.21 13:56:03] jefferson: and will it do it
+[27.09.21 14:04:52] basil: And here's another question
+[27.09.21 14:04:53] basil: Speaking of which
+[27.09.21 14:39:53] basil: Look, I've got it all. What was talked about in the group. It's okay, no problem.
+[27.09.21 14:40:29] basil: The only thing I ask is to influence martin somehow, I would also like to go on vacation
+[27.09.21 14:40:49] basil: Please understand correctly
+[27.09.21 14:44:51] jefferson: okay
+[27.09.21 14:44:54] jefferson: i'll try
+[27.09.21 16:15:53] jefferson: there's a boot
+[27.09.21 16:15:56] jefferson: 100 cars
+[27.09.21 16:15:59] jefferson: let's see what happens
+[27.09.21 16:16:21] basil: So ..... And the server?
+[27.09.21 16:16:31] jefferson: what server?
+[27.09.21 16:17:08] basil: well, he will finish the task immediately. Or did he adjust there too?
+[27.09.21 16:17:30] jefferson: so he wrote that in theory everything should work
+[27.09.21 16:17:36] basil: okay.
+[27.09.21 16:17:41] basil: let's try it
+[27.09.21 16:17:45] basil: I'm all for it
+[27.09.21 16:22:05] jefferson: step aside
+[27.09.21 16:22:09] basil: Oh, yeah, I'm the one who requested the letters...
+[27.09.21 16:22:15] basil: It should work
+[27.09.21 16:22:27] jefferson: If they don't show up, it means something is going wrong
+[27.09.21 16:22:41] jefferson: there's a man
+[27.09.21 16:22:45] jefferson: doesn't respond often
+[27.09.21 16:22:54] basil: okay. I got it. online. Waiting
+[27.09.21 16:25:02] jefferson: that's it.
+[27.09.21 16:25:04] jefferson: it's gone.
+[27.09.21 16:25:12] jefferson: look what's happening on the server now
+[27.09.21 16:25:24] basil: ok.
+[27.09.21 16:26:08] basil: Uh....
+[27.09.21 16:26:23] basil: It's right there at all
+[27.09.21 16:26:23] basil: Full house
+[27.09.21 16:26:57] jefferson: Well, it's not enough.
+[27.09.21 16:27:02] jefferson: maybe they'll knock out some more
+[27.09.21 16:27:15] jefferson: so, out of 100, I counted 65 taps
+[27.09.21 16:27:24] jefferson: not including the two that were already there
+[27.09.21 16:27:44] jefferson: Not checked some
+[27.09.21 16:27:47] jefferson: why is that?
+[27.09.21 16:27:47] basil: yeah. looks like it
+[27.09.21 16:28:21] basil: let me think. I'll think about it.
+[27.09.21 16:28:30] jefferson: okay.
+[27.09.21 16:28:34] jefferson: I quit.
+[27.09.21 16:28:43] jefferson: Let me know what happens.
+[27.09.21 16:31:02] jefferson: admin seems to be down
+[27.09.21 16:31:32] jefferson: nothing visible from web
+[27.09.21 16:32:00] basil: same situation
+[27.09.21 16:32:38] basil: now look what happened there. But it seems to be right.
+[27.09.21 16:32:51] jefferson: okay.
+[27.09.21 16:33:05] basil: That's right.
+[27.09.21 16:33:49] basil: more precisely, it seems there is a bug in the data processing from the bots
+[27.09.21 16:34:11] jefferson: ok
+[27.09.21 16:34:32] jefferson: well, now we see the first bugs
+[27.09.21 16:34:38] jefferson: all gone.
+[27.09.21 16:34:40] jefferson: I'll be back later
+[27.09.21 16:35:01] basil: will you be back today?
+[27.09.21 16:35:08] basil: or is it over?
+[27.09.21 16:35:29] basil: but I saw "will be later"
+[28.09.21 10:03:52] basil: Hello.
+[28.09.21 10:04:00] jefferson: hello
+[28.09.21 10:04:14] jefferson: tell me, what did we end up with?
+[28.09.21 10:05:52] basil: Well yesterday we tried to run updates on the server. martin did something there. But I never waited for him yesterday. About Not Checked as he told me - it is like ip address blacklisted
+[28.09.21 10:05:58] basil: That's how I understood it
+[28.09.21 10:07:00] basil: The bot gives me information about the system
+[28.09.21 10:07:35] basil: I was not able to check how it collects data from address book. I don't see this data.
+[28.09.21 10:07:50] basil: I can't see exactly
+[28.09.21 10:08:26] jefferson: who can look? martin?
+[28.09.21 10:08:35] jefferson: if so, please find out
+[28.09.21 10:09:25] basil: yes. last time he was chatting with me. It's in a json-like form.  Okay. I'll see what I can find out.
+[28.09.21 10:09:53] jefferson: in chat please
+[28.09.21 10:09:59] basil: okay.
+[28.09.21 10:10:03] jefferson: let's try to get more people
+[28.09.21 10:10:09] jefferson: keep an eye on things for now
+[28.09.21 10:13:21] jefferson: build another binary based on yesterday's one
+[28.09.21 10:13:26] jefferson: try another upload
+[28.09.21 10:13:29] jefferson: in 3 hours
+[28.09.21 10:13:42] basil: okay. no problem.
+[28.09.21 10:13:53] basil: i think 15 minutes
+[28.09.21 10:14:01] basil: we gotta get the office up and running
+[28.09.21 10:14:02] jefferson: try to fix the problem with yesterday's detects
+[28.09.21 10:14:17] basil: detecting now
+[28.09.21 10:14:25] jefferson: not before 3 hours
+[28.09.21 10:14:35] basil: Whatever you say
+[28.09.21 10:14:36] jefferson: I'll be gone for a couple of hours
+[28.09.21 10:14:43] basil: okay.
+[28.09.21 10:14:53] jefferson: and the admins need to be reined in
+[28.09.21 10:15:04] basil: Right.
+[28.09.21 10:15:05] basil: !
+[28.09.21 10:15:07] basil: )))
+[28.09.21 10:18:55] basil: Here's another question. There were given access to the machines
+[28.09.21 10:19:09] basil: I think the admin Fox in the toad
+[28.09.21 10:19:20] basil: Is he here?
+[28.09.21 10:19:28] jefferson: I disbanded them for now
+[28.09.21 10:19:40] jefferson: they got nothing to do anyway
+[28.09.21 10:19:55] jefferson: i can give you the servant later
+[28.09.21 10:20:02] basil: ok.
+[28.09.21 10:24:13] jefferson: do you have the avcek?
+[28.09.21 10:24:20] basil: yes
+[28.09.21 10:24:35] jefferson: ok. do your checkups there
+[28.09.21 10:24:41] basil: okay.
+[28.09.21 10:24:50] jefferson: dinchek is smoking on many critical avs
+[28.09.21 10:24:59] jefferson: i've been finding that out for years
+[28.09.21 10:25:04] basil: that sounds about right
+[28.09.21 10:25:18] basil: I have this situation with my crypto
+[28.09.21 10:25:27] jefferson: well, at least the windup there is nothing at all
+[28.09.21 10:25:38] jefferson: that's more critical than critical
+[28.09.21 10:25:50] basil: yes.
+[28.09.21 14:10:52] jefferson: assemble the file, I'll be back soon to run it
+[28.09.21 14:11:02] jefferson: 1.5 hours
+[28.09.21 14:11:10] jefferson: a little late
+[28.09.21 14:11:28] basil: okay. I'm on it.
+[28.09.21 14:24:50] basil: toP06SK8ob@8?Ziw@@unBMqq~ir~Gon
+[28.09.21 14:25:49] basil: https://file.io/BuHUID3KzJju
+[28.09.21 15:26:54] jefferson: accepted
+[28.09.21 16:09:20] jefferson: now bugs started appearing.)
+[28.09.21 16:09:20] jefferson: the main thing is to make it clear if the bots worked or just tapped
+[28.09.21 16:09:50] basil: Say that again.
+[28.09.21 16:09:56] basil: again
+[28.09.21 16:21:39] jefferson: ran 10
+[28.09.21 16:22:24] jefferson: run 10
+[28.09.21 16:22:33] jefferson: check to see if everything's okay
+[28.09.21 16:22:36] jefferson: there's a bounce
+[28.09.21 16:22:39] jefferson: 8 came in
+[28.09.21 16:22:47] jefferson: and if it's okay I'll do 100 right away
+[28.09.21 16:22:50] basil: any data from the address book? Or you did not look?
+[28.09.21 16:23:01] jefferson: remind me how to look
+[28.09.21 16:23:25] jefferson: but their status stopped changing immediately
+[28.09.21 16:23:28] jefferson: 11 minutes ago
+[28.09.21 16:23:32] jefferson: is this correct or not?
+[28.09.21 16:24:08] basil: didn't get it. "The status stopped changing." Paraphrase
+[28.09.21 16:24:27] jefferson: 13 minutes ago
+[28.09.21 16:24:50] basil: yes.
+[28.09.21 16:24:51] basil: he only sends data
+[28.09.21 16:24:54] basil: and off
+[28.09.21 16:24:58] basil: it shuts down
+[28.09.21 16:25:11] basil: like I asked you to do
+[28.09.21 16:25:22] jefferson: yeah
+[28.09.21 16:25:32] jefferson: just so I don't miss anything
+[28.09.21 16:25:56] jefferson: remind me about the address book.
+[28.09.21 16:26:59] basil: martin wrote me this
+```
+ Пока https://185.163.46.68/#/Addresses/25
+and through the download button
+https://185.163.46.68/#/addressList here a new list is created each time the task is started
+
+```
+[28.09.21 16:26:59] basil: if you can't download the file better go to him
+[28.09.21 16:27:26] basil: but today I downloaded this file. On a server it is accessible
+[28.09.21 16:29:17] jefferson: last entry on 2021-09-28 14:40:48
+[28.09.21 16:29:27] jefferson: but there are 31 addresses
+[28.09.21 16:29:36] jefferson: can't figure out how
+[28.09.21 16:29:56] jefferson: judging by the time in the admin, there's nothing from those 8 taps
+[28.09.21 16:31:16] basil: and the data is in the book? Did you check it?
+[28.09.21 16:31:31] jefferson: in the book on the bot?
+[28.09.21 16:32:15] basil: in the outlook address book
+[28.09.21 16:32:34] jefferson: well, i don't know if they're in bots
+[28.09.21 16:32:42] jefferson: maybe there's nothing on them
+[28.09.21 16:33:52] basil: if there is no data, no single record, then of course the bot will not send anything
+[28.09.21 16:34:04] jefferson: okay, I get it
+[28.09.21 16:34:27] jefferson: load 100?
+[28.09.21 16:34:50] basil: yes
+[28.09.21 16:34:50] basil: sure
+[29.09.21 10:57:06] jefferson: hi.
+[29.09.21 10:57:26] jefferson: in 3 or 4 hours, I need to do another upload
+[29.09.21 10:57:32] jefferson: be right back.
+[29.09.21 10:57:36] basil: okay.
+[29.09.21 10:57:43] basil: taken
+[29.09.21 10:57:51] basil: need binary?
+[29.09.21 10:57:57] jefferson: yes, of course
+[29.09.21 10:58:05] basil: okay
+[29.09.21 10:58:10] jefferson: and give me the login info again
+[29.09.21 10:58:19] jefferson: forgot to write it down, and the messages went away
+[29.09.21 10:58:45] basil: for the server?
+[29.09.21 10:58:53] jefferson: yes, admin
+[29.09.21 10:59:04] basil: https://185.163.46.68/#/TaskList
+user
+d3@akVq:J{WB/\=g
+[29.09.21 10:59:09] jefferson: accepted
+[29.09.21 11:16:09] basil: yjgukt78969fhgfddd4
+[29.09.21 11:16:32] jefferson: try again
+[29.09.21 11:16:41] basil: yjgukt78969fhgfddd4
+[29.09.21 11:17:08] basil: https://file.io/vs5Em26FmxZd
+[29.09.21 11:17:59] jefferson: accepted
+[29.09.21 11:21:58] jefferson: need to clean up
+[29.09.21 11:22:06] jefferson: his node slams when copied
+[29.09.21 11:22:46] jefferson: Node is on my host and copying is on virtual machine
+[29.09.21 11:22:54] jefferson: i x how to disable it
+[29.09.21 11:23:42] basil: you should turn off real-time scanning
+[29.09.21 11:24:03] jefferson: already
+[29.09.21 11:24:08] jefferson: but still
+[29.09.21 11:24:11] basil: yeah?
+[29.09.21 11:24:18] jefferson: and there's no detection
+[29.09.21 11:24:20] basil: interesting
+[29.09.21 11:24:22] jefferson: but node sees it
+[29.09.21 11:24:46] jefferson: no, after I disabled it, it stopped slamming it
+[29.09.21 11:24:46] basil: that's very strange
+[29.09.21 11:24:58] basil: does it clap the archive?
+[29.09.21 11:25:05] basil: or already unpacked
+[29.09.21 11:25:17] basil: ?
+[29.09.21 11:25:38] basil: and what does node write?
+[29.09.21 11:26:01] jefferson: ok, but it writes it in suspicious
+[29.09.21 11:26:09] jefferson: no detection
+[29.09.21 11:26:15] jefferson: as such
+[29.09.21 11:26:45] basil: let me reset the virtual machine
+[29.09.21 11:26:54] basil: something old
+[29.09.21 11:39:49] basil: Just a moment.
+[29.09.21 11:48:17] jefferson: yes it might be my host settings
+[29.09.21 11:48:23] jefferson: or maybe not
+[29.09.21 11:48:37] basil: I'll do the archive now
+[29.09.21 11:48:52] jefferson: I don't remember, but when installing av suggested something about potentially unwanted and potentially dangerous checkboxes
+[29.09.21 11:49:00] basil: check with avclech and syncheck
+[29.09.21 11:49:01] jefferson: I might have put it on
+[29.09.21 11:49:14] basil: check it
+[29.09.21 11:49:18] jefferson: okay.
+[29.09.21 11:49:21] basil: critical in our line of work
+[29.09.21 11:51:25] basil: https://avcheck.net/id/rvyVaVmjvcnD
+[29.09.21 11:53:24] jefferson: which file is it?
+[29.09.21 11:53:27] jefferson: extension
+[29.09.21 11:53:35] basil: rar
+[29.09.21 11:53:35] jefferson: it says hidden
+[29.09.21 11:53:40] jefferson: ah
+[29.09.21 12:01:22] basil: Now a little later silver will clarify the situation
+[29.09.21 12:01:44] basil: I texted him a question, why it happens
+[29.09.21 12:02:16] basil: He did not respond vigorously from the category "you are under the hood"
+[29.09.21 12:02:40] basil: He'll be back now
+[29.09.21 12:02:51] basil: passed out in the middle of conversation
+[29.09.21 12:03:06] basil: I think it's some kind of false alarm
+[29.09.21 13:02:31] jefferson: giving the file to upload?
+[29.09.21 13:02:45] basil: repeat
+[29.09.21 13:02:54] basil: test
+[29.09.21 13:03:01] jefferson: test
+[29.09.21 13:03:08] basil: yes I see
+[29.09.21 13:03:12] jefferson: upload file?
+[29.09.21 13:03:35] basil: yes you can. theoretically
+[29.09.21 13:03:45] basil: the file itself
+[29.09.21 13:03:49] basil: not the archive
+[29.09.21 13:03:52] jefferson: ok
+[29.09.21 13:20:30] jefferson: do you know if NgkxCQk3RDDFNzYzODFBMDgyNjAw records like this about old bots, is there any way to delete them?
+[29.09.21 13:20:45] jefferson: just to stop bugging your eyes and make it count properly
+[29.09.21 13:20:53] jefferson: I'm interested in bouncing too
+[29.09.21 13:21:31] basil: Well, as Martin told me, you can't do it "manually". After 24 hours the record is erased
+[29.09.21 13:21:43] basil: automatically
+[29.09.21 13:21:58] basil: if you want to erase everything now - tell Martin
+[29.09.21 13:22:11] basil: I'll send binary again. 8 min.
+[29.09.21 13:22:21] basil: wait a little
+[29.09.21 13:22:29] basil: I had a cleanup
+[29.09.21 13:22:36] jefferson: ok
+[29.09.21 13:24:28] basil: question
+[29.09.21 13:24:49] basil: can you send me binary with soap collection?
+[29.09.21 13:27:40] jefferson: yes, of course
+[29.09.21 13:27:52] jefferson: this is one of the mainstream software
+[29.09.21 13:28:01] jefferson: that's why I want to see the work
+[29.09.21 13:28:19] jefferson: and at the same time be able to get a picture of what I'm going to encounter in my work
+[29.09.21 13:30:32] basil: then wait a bit. Collecting mails for 32 bit is still there
+[29.09.21 13:30:43] basil: now I'll add 64 bit project
+[29.09.21 13:30:51] jefferson: ok
+[29.09.21 13:30:58] basil: it's the same. Just need to add files
+[29.09.21 13:31:10] basil: Oh, and there's more
+[29.09.21 13:31:22] basil: silver consulted
+[29.09.21 13:31:41] basil: about today's detective
+[29.09.21 13:31:46] basil: to the archive
+[29.09.21 13:31:49] jefferson: you misunderstood me. it's not about the archive, it's about what was decompressed from it
+[29.09.21 13:31:58] jefferson: it's about the exe itself
+[29.09.21 13:32:16] basil: oh, I see. I'll fix that detector
+[29.09.21 13:32:28] basil: but now I understand you're more robotic
+[29.09.21 13:32:32] basil: I'm interested
+[29.09.21 13:32:40] jefferson: yes
+[29.09.21 13:32:43] basil: can we run with detec?
+[29.09.21 13:33:17] jefferson: that's the funny thing, I looked in the quarantine - no detection. it slammed it as a file that is potentially dangerous because it accesses data
+[29.09.21 13:33:25] jefferson: we can, yes
+[29.09.21 13:33:44] jefferson: that is, node doesn't see it as a specific malware
+[29.09.21 13:34:03] jefferson: it sees that the file is requesting access to data, network and that's it)
+[29.09.21 13:34:28] basil: okay. i'll make one for 64 bit outlook and send it to you
+[29.09.21 13:34:35] basil: well, i think about 20 minutes
+[29.09.21 13:34:41] basil: I think so
+[29.09.21 13:35:28] jefferson: suspicious object
+[29.09.21 13:35:43] jefferson: here is his classification by node
+[29.09.21 13:35:58] jefferson: well, if something can be done about it, you'd better do it
+[29.09.21 13:36:01] jefferson: it wouldn't hurt
+[29.09.21 13:36:22] basil: already did it.
+[29.09.21 13:36:27] jefferson: ah
+[29.09.21 13:36:28] jefferson: got it
+[29.09.21 14:04:06] basil: sdjkfnsj4359843897ysdfsdhjf
+[29.09.21 14:04:55] basil: https://file.io/VuLieSM1UGwM
+[29.09.21 14:09:46] jefferson: accepted
+[29.09.21 14:12:09] basil: Stop
+[29.09.21 14:12:12] basil: Momentum
+[29.09.21 14:12:14] basil: now
+[29.09.21 14:12:25] basil: Sorry.
+[29.09.21 14:12:28] basil: a little off
+[29.09.21 14:12:30] basil: now
+[29.09.21 14:12:35] jefferson: okay.
+[29.09.21 14:18:52] basil: R}QS6M5Bggs0e58uB}rK
+[29.09.21 14:19:17] basil: https://file.io/6rNXbkB7UINz
+[29.09.21 14:19:21] basil: Here
+[29.09.21 14:20:03] jefferson: ok
+[29.09.21 14:21:06] jefferson: node appeared a variant of Win32/Kryptik.HMQW trojan
+[29.09.21 14:21:17] jefferson: let's upload it today
+[29.09.21 14:21:23] jefferson: and then it will have to be removed
+[29.09.21 14:21:25] basil: okay
+[29.09.21 14:21:31] basil: we will
+[29.09.21 15:22:44] basil: can we run a logged version on the machines?
+[29.09.21 15:23:18] jefferson: yes
+[29.09.21 15:23:39] jefferson: and the log from those machines will go where?
+[29.09.21 15:24:26] basil: the machine will stay
+[29.09.21 15:25:46] jefferson: what's the point? We won't be able to read it
+[29.09.21 15:28:14] basil: you can try to release the sending logs to the server. I do not know if it is right.
+[29.09.21 15:28:20] basil: But it is possible to organize
+[29.09.21 15:29:21] jefferson: check with @silver
+[29.09.21 15:48:57] basil: jlbgsdfpoklf98435349857JHHJlfdesjhkbfppdm
+[29.09.21 15:49:16] basil: https://file.io/XYFtqVGFCjEK
+[29.09.21 15:49:22] jefferson: taken
+[29.09.21 16:22:13] basil: my presence is still needed today or can I be free?
+[29.09.21 16:22:59] jefferson: no more tasks for me today
+[29.09.21 16:23:06] basil: ok
+[29.09.21 16:23:16] jefferson: tomorrow we'll get a corrected version and continue
+[29.09.21 16:23:24] basil: ok
+[30.09.21 14:17:03] basil: On the spot?
+[30.09.21 14:21:00] jefferson: yes
+[30.09.21 14:21:16] basil: I have a request
+[30.09.21 14:21:56] basil: More specifically, a question.
+[30.09.21 14:21:57] basil: Can I turn off for 40 minutes today at 6:40 p.m.? And we can start now?
+[30.09.21 14:22:55] jefferson: yes
+[30.09.21 14:23:00] jefferson: throw the binary
+[30.09.21 14:23:17] basil: a moment
+[30.09.21 14:26:42] basil: collecting
+[30.09.21 14:30:33] basil: utY8I}04$C9fK~MIvBca#cBzCcIChG
+[30.09.21 14:30:54] basil: https://file.io/M3Gwtonun2Ej
+[30.09.21 14:30:58] jefferson: taken
+[30.09.21 14:50:50] basil: well, martin is not responding yet
+[30.09.21 14:53:01] basil: admin is not down yet
+[30.09.21 14:53:05] basil: good for you
+[01.10.21 09:40:19] basil: hello
+[01.10.21 09:48:56] jefferson: hello
+[01.10.21 09:49:00] jefferson: repeat
+[01.10.21 09:49:07] jefferson: don't see the message
+[01.10.21 09:49:32] basil: hello
+[01.10.21 09:49:45] basil: there will be a test run today and when?
+[01.10.21 09:49:49] basil: If there is
+[01.10.21 09:50:10] jefferson: let's start in 2.5-3
+[01.10.21 09:50:15] jefferson: hours
+[01.10.21 09:50:28] basil: ok. ok.
+[01.10.21 12:27:05] basil: j2U%2nQYFkZG*PxneBjD
+[01.10.21 12:29:12] basil: https://file.io/IuqZo7c1ldHg
+[01.10.21 12:29:25] jefferson: ok
+[01.10.21 12:33:27] basil: may I ask you a question?
+[01.10.21 12:33:54] jefferson: sure.
+[01.10.21 12:35:13] basil: there is a rationalization suggestion. Is there any way to connect me or matrin to the administrator of the machines? Maybe this way it will go faster? Or is there no way at all?
+[01.10.21 12:36:23] jefferson: you could, in theory.
+[01.10.21 12:36:26] jefferson: Let me get this straight.
+[01.10.21 12:36:35] basil: ok. ok.
+[01.10.21 12:36:43] jefferson: and what's the rationalization. i seem to be always here))
+[01.10.21 12:37:56] basil: well, distractions ... Then you have to transfer these files...
+[01.10.21 12:38:35] basil: nothing personal, but I think that in this scheme jefferson is probably a bit redundant
+[01.10.21 12:38:45] basil: no offense
+[01.10.21 12:38:53] basil: I only want the best
+[01.10.21 12:38:57] basil: wanted
+[01.10.21 12:39:06] jefferson: no problem)
+[01.10.21 12:39:19] jefferson: well how extra. i'm a customer and i want to observe too
+[01.10.21 12:39:37] basil: well, yes. The master is the master)))
+[01.10.21 12:41:03] jefferson: well, sort of. I don't consider myself redundant in this scheme.
+[01.10.21 12:42:13] basil: ok. waiting for download
+[01.10.21 12:43:35] jefferson: 192.119.163.115
+
+root:34fhjdg34fhjdg
+[01.10.21 12:44:00] jefferson: /var/www/html
+[01.10.21 12:44:31] jefferson: you upload a binary with the extension changed to png
+[01.10.21 12:44:58] jefferson: give me a link like this http://192.119.163.115/30_1.png
+[01.10.21 12:45:10] jefferson: name the file whatever you like, just give it the extension
+[01.10.21 12:45:23] jefferson: in toad it is defender
+[01.10.21 12:45:32] jefferson: but please invite me to the tests
+[01.10.21 12:45:45] jefferson: now waiting for him to upload
+[01.10.21 12:45:55] basil: ok. ok.
+[01.10.21 12:46:18] basil: access to 192.119.163.115
+[01.10.21 12:46:24] basil: via ssh?
+[01.10.21 12:46:31] jefferson: yes
+[01.10.21 12:46:44] basil: okay. okay. wait.
+[01.10.21 12:57:40] jefferson: today, if you decide to do more runs after 18:00, write to defender in toad. i'll be gone till monday from that time. i have to go to the other side of the world on business
+[01.10.21 12:57:59] jefferson: I'm still here
+[01.10.21 12:58:02] basil: ok. ok.
+[01.10.21 13:00:20] basil: just a little while longer. I have to run the bot through debugging
+[01.10.21 13:00:32] jefferson: okay.
+[01.10.21 13:00:36] jefferson: I'm here for two more hours
+[01.10.21 13:08:16] basil: I'll try to go to the server to upload the file. And the community defender, and you check it out. I did everything right.
+[01.10.21 13:11:41] jefferson: Well, write him
+[01.10.21 13:11:54] jefferson: he knows.
+[01.10.21 13:11:55] basil: yes.
+[01.10.21 13:12:45] jefferson: restarted the task, so the addresses would go to the new ones
+[01.10.21 13:13:14] basil: i mean, clear bot list
+[01.10.21 13:13:15] basil: ?
+[01.10.21 13:13:34] jefferson: no no
+[01.10.21 13:13:48] basil: why? I just didn't get it.
+[01.10.21 13:14:04] basil: just restart the task?
+[01.10.21 13:16:36] jefferson: yes, I did it already
+[01.10.21 13:16:50] jefferson: you load 50-100 machines
+[01.10.21 13:17:04] basil: okay. whatever you say.
+[01.10.21 13:17:13] basil: uploading a file?
+[01.10.21 13:17:17] jefferson: yes
+[01.10.21 13:17:29] jefferson: 1_2.png
+[01.10.21 13:17:37] jefferson: give me a link
+[01.10.21 13:17:51] basil: ok. ok.
+[01.10.21 13:18:01] jefferson: 1_1.png is already there
+[01.10.21 13:18:40] basil: ready waiting
+[25.10.21 09:51:32] jefferson: hi
+[25.10.21 09:51:36] jefferson: back?
+[25.10.21 14:33:37] basil: Accept OTP
+[25.10.21 16:12:06] basil: turn on otp
+[25.10.21 16:13:29] basil: test
+[25.10.21 16:13:36] basil: s~}GIZk0eDl5H{s@5jcB
+[25.10.21 16:14:27] basil: s~}GIZk0eDl5H{s@5jcB
+[25.10.21 16:16:48] basil: https://file.io/0HeMmBtJJwMs
+[25.10.21 16:32:39] basil: great
+[25.10.21 16:33:26] basil: write in band. or you already wrote to martin?
+[25.10.21 16:35:42] basil: if you haven't read it, we'll remind you tomorrow
+[25.10.21 16:36:00] basil: it won't go anywhere
+[26.10.21 11:13:30] basil: Confirm OTP
+[26.10.21 11:17:49] basil: Is there anything I can do with "still need a scratch analysis of the regular cards to see if their contents are the same as the addresses section?" to help ?
+[26.10.21 11:18:14] jefferson: yes, I need intersections on 2 sections to reveal
+[26.10.21 11:18:29] jefferson: you can't do it by hand, russian speaking.
+[26.10.21 11:18:49] jefferson: addresses and books
+[26.10.21 11:18:57] jefferson: email intersections exactly
+[26.10.21 11:20:29] jefferson: just want to understand where we end up with what. as I understand it: addresses just contains addresses from folders in the mail program, and books is contacts, there's a slightly different section
+[26.10.21 11:22:43] basil: yes the understanding is certainly correct. But first you should make a database with tables out of it all. Manually of course problematic.
+[26.10.21 11:23:46] jefferson: I'll be gone an hour.
+[26.10.21 12:04:14] basil: test
+[26.10.21 12:04:29] basil: test
+[26.10.21 12:04:49] basil: another test
+[26.10.21 12:23:58] jefferson: test
+[26.10.21 12:24:21] basil: so good
+[26.10.21 12:24:47] basil: test
+[27.10.21 15:34:54] jefferson: are we gonna test anything today?
+[27.10.21 15:35:30] basil: repeat
+[27.10.21 15:35:51] jefferson: no messages
+[27.10.21 15:35:52] basil: one more time
+[27.10.21 15:36:01] basil: yes. read it.
+[27.10.21 15:36:10] jefferson: everything is glitchy, toad as well
+[27.10.21 15:36:17] basil: test
+[27.10.21 15:48:24] basil: test
+[27.10.21 15:48:47] basil: test
+[27.10.21 15:48:49] jefferson: dunno about toad and stuff
+[27.10.21 15:49:05] basil: test
+[27.10.21 15:49:09] jefferson: gonna test something today?
+[27.10.21 15:49:46] basil: I talked to martin today. Yesterday I never waited def
+[27.10.21 15:50:02] basil: martin said no errors
+[27.10.21 15:50:20] basil: honestly, I can't say what it was
+[27.10.21 15:50:32] jefferson: I'm confused by the contents
+[27.10.21 15:50:40] jefferson: books
+[27.10.21 15:52:13] basil: what's wrong?
+[27.10.21 15:52:17] basil: tell me more
+[27.10.21 15:52:40] jefferson: Email /o=ExchangeLabs/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=4f026304a8274651afdb4c953b604ae0-zygmunt.klu
+[27.10.21 15:52:45] jefferson: it should be an email
+[27.10.21 15:52:55] jefferson: it's not clear what's there at all
+[27.10.21 15:53:36] basil: ok. I'll take a closer look at what it is. Maybe the name of the field does not reflect its essence
+[27.10.21 15:53:53] jefferson: moreover, somewhere normal, somewhere like this
+[27.10.21 15:54:01] jefferson: you have access to admin?
+[27.10.21 15:54:07] jefferson: look around
+[27.10.21 15:54:10] jefferson: take a look
+[27.10.21 15:54:11] basil: yeah. now.
+[27.10.21 15:56:10] basil: is it here?
+[27.10.21 15:56:33] basil: https://185.163.46.68/#/ContactList
+[27.10.21 15:59:00] basil: yes. found it.
+[27.10.21 16:01:14] basil: ok. I got it. I'll see what's wrong with this field
+[01.11.21 11:38:15] basil: test
+[01.11.21 11:38:26] basil: test
+[01.11.21 11:38:28] jefferson: test
+[01.11.21 11:38:29] basil: better
+[01.11.21 11:38:38] basil: turn on e2e
+[01.11.21 11:38:46] basil: test
+[01.11.21 11:38:49] jefferson: test
+[01.11.21 11:38:56] basil: great
+[01.11.21 11:40:34] jefferson: repeat again if you wrote something
+[01.11.21 11:40:44] jefferson: first encrypted messages came
+[01.11.21 11:40:59] jefferson: or rather, not decrypted
+[01.11.21 11:41:11] basil: well, first messages just "test")))
+[01.11.21 11:41:17] jefferson: aah
+[01.11.21 11:41:19] jefferson: got it
+[01.11.21 11:41:27] basil: I looked into this field. email. The situation is as follows. Actually this field is called in MAPI-outlook "PR_EMAIL_ADDRESS_A". Which is supposed to say about its contents
+[01.11.21 11:41:54] basil: But for some reason outlook adds everything there. Except.
+[01.11.21 11:42:27] jefferson: yeah, got it
+[01.11.21 11:42:35] jefferson: you should define the following steps
+[01.11.21 11:42:45] jefferson: what to do next and which way to go
+[01.11.21 11:42:56] jefferson: also, I'll be gone tomorrow or the day after tomorrow
+[01.11.21 11:43:05] basil: Wait. not all yet
+[01.11.21 11:43:18] basil: Tell me more?
+[01.11.21 11:43:26] jefferson: yes
+[11.11.21 11:43:30] basil: Or then tomorrow, the day after tomorrow?
+[01.11.21 11:43:42] basil: Let's do a flyer.
+[11.11.21 11:44:01] jefferson: well, i'll probably be there by Thursday
+[01.11.21 11:44:09] jefferson: we can also do it on Thursday
+[01.11.21 11:44:22] jefferson: or you can do it today
+[01.11.21 11:44:47] basil: okay. let me describe what I understand and what I think.
+[01.11.21 11:45:11] jefferson: ok
+[01.11.21 11:45:24] jefferson: write it in the chat room, so you don't have to tell me everything later
+[01.11.21 11:45:40] jefferson: for the rest of you to understand what to do and what we have now
+[01.11.21 11:46:20] basil: ok. i'll write a txt file with my thoughts and post it in the chatroom later. Ok
+[01.11.21 11:46:33] jefferson: jr.
+[01.11.21 11:46:35] jefferson: ok
+[08.11.21 13:09:52] jefferson: test
+[08.11.21 13:10:19] jefferson: I'm sick of this request
+[08.11.21 13:10:41] basil: sorry. But the safety precautions
+[08.11.21 13:10:47] jefferson: used to turn on automatically
+[08.11.21 13:10:55] jefferson: then something went wrong
+[08.11.21 13:11:24] basil: Well, it is. There were better times
+[08.11.21 13:11:30] jefferson: :)
+[08.11.21 13:12:23] basil: okay. Should I do with mailing or should I recommend mailing (data collection only)?
+[08.11.21 13:12:35] jefferson: no, with the newsletter
+[08.11.21 13:13:03] jefferson: let's test the mailer, make conclusions, and if anything, let's start working
+[08.11.21 13:13:14] jefferson: for the intended purpose
+[08.11.21 13:14:37] basil: ok. ok.
+[08.11.21 15:09:27] jefferson: we'll reschedule the test for tomorrow
+[08.11.21 15:09:37] jefferson: something's up with the servers
+[08.11.21 15:09:46] basil: test
+[08.11.21 15:10:01] basil: test
+[08.11.21 15:10:05] jefferson: no messages
+[08.11.21 15:10:10] basil: test
+[08.11.21 15:10:14] jefferson: test
+[08.11.21 15:10:20] jefferson: we'll reschedule the test for tomorrow
+there's something wrong with the servers
+[08.11.21 15:10:33] basil: ok. ok.
+[10.11.21 13:43:42] basil: test
+[10.11.21 13:43:57] basil: test
+[10.11.21 13:44:00] basil: ok
+[10.11.21 13:44:01] jefferson: test
+[10.11.21 13:44:03] basil: listening
+[10.11.21 13:44:10] basil: well read
+[10.11.21 13:44:11] jefferson: hi
+the test is delayed, i just got a vm for the tests
+now i will build a test bench and will be able to test the mailer
+[10.11.21 13:44:21] basil: ok.
+[10.11.21 13:44:30] jefferson: they're fucking around as much as they can
+[10.11.21 13:44:38] jefferson: I could barely get it out of them.
+[10.11.21 13:44:53] basil: unfortunately, that's the specifics
+[10.11.21 13:45:03] basil: but I'm all yours
+[10.11.21 13:45:29] jefferson: there's no specifics. just far-fetched reasons, like someone is not online, no key to the ms office
+[10.11.21 13:45:39] jefferson: i already said today: give me vm, i'll install it myself.
+[10.11.21 13:46:00] basil: not about technical specifics)))
+[10.11.21 13:46:10] jefferson: well, if so, yes.
+[10.11.21 13:46:12] basil: I'll set it up myself, if you want. Only
+[10.11.21 13:46:18] jefferson: Yeah, it's all set up.
+[10.11.21 13:46:20] basil: Just give me access to VM.
+[10.11.21 13:46:24] jefferson: soaps left.
+[10.11.21 13:46:35] basil: okay. okay.
+[11.11.21 10:42:26] jefferson: hi.
+[11.11.21 11:04:08] jefferson: test
+[11.11.21 11:04:18] jefferson: setting up account
+[11.11.21 11:04:21] jefferson: and we can test
+[11.11.21 11:04:37] jefferson: I'll get it, I can't set it up in outlook
+[11.11.21 11:05:04] basil: okay. Now ? In the evening?
+[11.11.21 11:05:22] jefferson: Well, in a couple of hours, I think it'll be okay.
+[11.11.21 11:05:25] basil: What time to be at the start? Or you don't know?
+[11.11.21 11:05:38] basil: Okay. Okay
+[11.11.21 11:11:29] jefferson: figured it out. something just glitched with the mailer.
+[11.11.21 11:11:33] jefferson: we can build and test
+[11.11.21 11:11:55] basil: okay. It's about 12 minutes now, I think.
+[11.11.21 11:15:46] jefferson: take your time, let's get the text right in the new task
+[11.11.21 11:15:57] jefferson: with all the goodies. like sections
+[11.11.21 11:16:33] basil: okay. as soon as it's ready. I'll send you the link.
+[11.11.21 11:24:14] basil: Wed#pJc9e~If6zqw#*3h
+[11.11.21 11:25:56] basil: https://file.io/y6XvdP0cAYY2
+[11.11.21 11:30:58] jefferson: accepted
+[11.11.21 13:08:18] jefferson: re-download file please
+[11.11.21 13:09:48] basil: https://file.io/btrZoww2zdlf
+[11.11.21 13:15:43] jefferson: probably have to re-download again
+[11.11.21 13:16:18] basil: a moment
+[11.11.21 13:16:42] basil: https://file.io/xSHfV9A8wt7T
+[11.11.21 14:02:26] basil: test
+[11.11.21 14:02:29] jefferson: test
+[11.11.21 14:02:30] basil: Wed#pJc9e~If6zqw#*3h
+[11.11.21 14:05:21] jefferson: where does the log go?
+[11.11.21 14:05:38] jefferson: and you don't see any output in admin area when you run a logged version
+[11.11.21 14:06:07] basil: C:\\\Temp\\mailbot.log
+[11.11.21 14:06:54] jefferson: there is no such directory
+[11.11.21 14:07:08] basil: you have to create it
+[11.11.21 14:07:13] basil: C:\Temp
+[11/11/2021 14:11:37] jefferson: 11/11/2021 6:08:27 AM mailbot build Nov 11 2021 started
+11/11/2021 6:09:23 AM id_mailout=0, id_bot=NgkyCQk1ODYwMTkxRTcwNzk0NTRE
+[11.11.21 14:11:39] jefferson: everything in the log
+[11.11.21 14:11:53] jefferson: i don't see this bot in the bots section
+[11.11.21 14:12:06] basil: a moment
+[11.11.21 14:17:47] jefferson: see another moment
+[11.11.21 14:19:13] jefferson: running the nonlogged version, I see an outlook icon in the system tray for a split second. running the logged version I see nothing. now I ran it twice and after the first run, not seeing any icon in the tray, I decided to start the outlook - it hovered
+[11.11.21 14:19:51] jefferson: after a while I could run it by hand but it suggested to run me in safe mode because there was a crash before that
+[11.11.21 14:20:41] basil: well when the bot starts it checks the bit size of outlook. That's why it flickers
+[11.11.21 14:20:51] jefferson: yeah
+[11.11.21 14:20:58] jefferson: but it doesn't flicker when you run logged
+[11.11.21 14:20:59] basil: It runs it and checks the process size
+[11.11.21 14:21:37] jefferson: I mean, maybe logged doesn't work correctly somehow?
+[11.11.21 14:21:49] basil: you can reset or reload vm. And then run a logged version immediately?
+[11.11.21 14:21:59] jefferson: I'll try it now.
+[11.11.21 14:22:16] basil: about folder C;?
+[11.11.21 14:22:26] basil: C:/Temp don't forget
+[11.11.21 14:24:14] basil: one more thing. There are registered mailboxes in outlook
+[11.11.21 14:24:29] basil: be right back
+[11.11.21 14:24:35] jefferson: is that a question?
+[11.11.21 14:24:40] basil: yes
+[11.11.21 14:25:01] jefferson: yes, there's a working account, inbox has 51 recipients
+[11.11.21 14:25:52] jefferson: that is, 51 addresses where we should send the text and see them in the address section of the bot admin
+[11.11.21 14:26:12] basil: okay. be right back.
+[11.11.21 14:32:33] jefferson: https://privatlab.com/m/v/5MrD9JlpndUGO6Vz5B39
+[11.11.21 14:33:03] jefferson: no bounce in the admin area from this launch
+[11.11.21 14:34:54] basil: at the moment I understand only that 64-bit version is started correctly
+[11.11.21 14:35:32] basil: now try again
+[11.11.21 14:41:09] basil: now I'll try under debugging
+[11.11.21 14:41:10] jefferson: and in the log the bot should not specify the addresses it works with, for example?
+[11.11.21 14:41:23] jefferson: in our old software it was like this
+[11.11.21 14:41:33] jefferson: at least it was clear what was going on
+[11.11.21 14:42:41] basil: at the moment there is no such a thing. But you can of course add
+[11.11.21 14:42:41] basil: now I'll try under debugging
+[11.11.21 14:42:52] jefferson: ok
+[11.11.21 14:43:12] jefferson: i think i'll add it, it'll make everything clear
+[11.11.21 14:43:30] jefferson: we'll know what he's doing, what he's not doing, what he's trying to do
+[11.11.21 14:43:32] jefferson: and so on
+[11.11.21 14:48:11] basil: personally, for me at the moment - the server just isn't responding
+[11.11.21 14:48:33] jefferson: let's go to public chat
+[11.11.21 14:48:40] basil: ok
+[11.11.21 15:04:22] jefferson: test
+[11.11.21 15:04:29] jefferson: wrote something now?
+[11.11.21 15:04:35] basil: i think there's something wrong on the server side
+[11.11.21 15:04:42] basil: I think so
+[11.11.21 15:04:43] jefferson: ok
+[11.11.21 15:04:53] jefferson: let's look into it
+[11.11.21 15:08:34] jefferson: describe the problem in general chat, so that people responsible for some parts of the software got busy
+[11.11.21 15:09:00] jefferson: you describe it. I think you can do it better.
+[11.11.21 15:09:01] basil: I wrote it down
+[11.11.21 15:09:18] jefferson: okay.
+[11.11.21 15:09:27] basil: this kind of error already happened
+[11.11.21 15:09:57] basil: last time martin said, "the server got hung up on a task"
+[11.11.21 15:10:05] basil: restarted and everything worked
+[11.11.21 15:10:20] basil: that's why I left a message in his name
+[11.11.21 15:11:02] jefferson: yeah, okay.
+[12.11.21 10:17:59] basil: test
+[12.11.21 10:18:04] jefferson: test
+[12.11.21 10:18:08] basil: hello
+[12.11.21 10:18:14] jefferson: hi. there's a problem here
+[12.11.21 10:18:22] basil: yes. listening
+[12.11.21 10:18:32] jefferson: yesterday no matter how many times I tried to run it, only this pulls in addresses
+
+"aselepov26@gmail.com"
+"mauilkoper@msgsafe.io"
+"mauilkoper@protonmail.com"
+
+and there should be 54 addresses: 1 on the ro.ru domain and 50 on 14740-27223.bacloud.info. that is, 51 addresses are going somewhere
+[12.11.21 10:19:11] jefferson: this is what Silver writes:
+
+ the bot has a function for validating emails
+at least it was in the old bot, and it should be in this one too
+maybe soaps are cut by these rules
+get basil to run these addresses through this function
+[12.11.21 10:20:03] basil: I'll take a look now. Validation was kind of a thing. But the validation function itself was disabled.
+[12.11.21 10:20:08] basil: Sort of.
+[12.11.21 10:20:11] basil: Now
+[12.11.21 10:20:12] jefferson: Okay.
+[12.11.21 10:20:19] jefferson: I'll come back later
+[12.11.21 10:20:24] basil: Okay.
+[12.11.21 10:35:22] basil: As soon as you can, send me the email address that comes up.
+[12.11.21 12:52:40] jefferson: test
+[12.11.21 12:52:46] jefferson: https://privatlab.com/m/v/wE2z0awbYmUErM7WzMpL
+[12.11.21 12:52:55] jefferson: these are lost somewhere.
+[12.11.21 12:53:20] basil: looking
+[12.11.21 12:54:29] basil: got it
+[12.11.21 12:55:13] basil: question. After the colon is what?
+[12.11.21 12:56:13] jefferson: and these are passes
+[12.11.21 12:56:28] basil: okay.
+[12.11.21 12:56:29] jefferson: forgot to remove
+[12.11.21 12:57:38] jefferson: i'll try to create another account there with different emails. like, protons, yandex, etc.
+[12.11.21 12:58:11] jefferson: it just turns into a big fuckin' thing because freshly created emails get blocked right away, they ask for verification and stuff like that
+[12.11.21 15:03:47] basil: starting? Is the task started?
+[12.11.21 15:04:38] jefferson: Go ahead.
+[12.11.21 15:36:34] basil: I can access the machine
+[12.11.21 15:37:15] jefferson: i'll turn it on, give you access
+[12.11.21 15:38:46] jefferson: 185.64.104.213:31141 -RDP
+User JohnJackson21.
+[12.11.21 15:45:01] basil: yes. there are obviously more addresses
+[12.11.21 16:02:12] jefferson: we have to find out what exactly is the bug and fix it. the conclusion is: either we made a step backward somewhere and got what we have now, or we originally had this bug, but didn't notice it
+[12.11.21 16:02:50] basil: I think I found it. There's a validation in there after all.
+[12.11.21 16:02:57] basil: I'll rebuild it
+[12.11.21 16:06:56] jefferson: could you tell me please, what is validation mechanism?
+[12.11.21 16:07:18] jefferson: validation
+[12.11.21 16:08:21] basil: can you send me the code?
+[12.11.21 16:09:49] basil: there's a lot
+[12.11.21 16:09:59] basil: I'll send you the binary
+[12.11.21 16:10:12] jefferson: yes, I need a description of the algorithm
+[12.11.21 16:10:17] jefferson: code won't tell me anything
+[12.11.21 16:10:49] jefferson: just the fact that something isn't working right
+[12.11.21 16:11:08] basil: there's a set of parameters. Length, allowed characters, and so on.
+[12.11.21 16:11:17] jefferson: yeah, got it.
+[12.11.21 16:11:20] basil: That validation was enabled after all
+[12.11.21 16:11:25] basil: I'll send you a new one
+[12.11.21 16:11:38] jefferson: yes, I assumed it was connected with the long record
+[12.11.21 16:13:35] basil: a5tQhna2*rUEJjXfOavs
+[12.11.21 16:15:08] basil: https://file.io/ULdDxae148Ot
+[12.11.21 16:15:33] jefferson: accepted
+[12.11.21 16:19:14] jefferson: started
+[12.11.21 16:20:41] jefferson: the result has changed
+[12.11.21 16:20:47] jefferson: 58 addresses
+[12.11.21 16:20:57] basil: and what is it?
+[12.11.21 16:21:08] jefferson: closer to right
+[12.11.21 16:21:17] jefferson: 58 addresses came in
+[12.11.21 16:21:37] jefferson: but I still don't see my machine record in the bots section and I don't see the newsletter yet
+[12.11.21 16:23:48] basil: what should be in the bots section? Its id&.
+[12.11.21 16:23:49] basil: ?
+[12.11.21 16:24:02] jefferson: yes
+[12.11.21 16:24:07] jefferson: but it looks like something came up
+[12.11.21 16:26:38] jefferson: go to virtual machine, look @basil
+[12.11.21 16:28:34] jefferson: 1 account has 59 outgoing mails
+[12.11.21 16:28:46] jefferson: I don't see anything on second account
+[12.11.21 16:28:55] jefferson: neither in sent nor outgoing
+[12.11.21 16:29:03] jefferson: check addresses
+[12.11.21 16:29:49] basil: that's not how emails stay. They are deleted.
+[12.11.21 16:31:53] jefferson: Well, the fact is that I don't see any messages from 2 accounts anywhere at the addresses where they could be sent
+[12.11.21 16:33:09] basil: it is not in the bot. Sending goes to the default account.
+[12.11.21 16:33:20] basil: That's how it was originally
+[12.11.21 16:33:32] jefferson: I get it.
+[12.11.21 16:33:41] jefferson: well, now I see
+[12.11.21 16:33:46] basil: I asked Silver about it too
+[12.11.21 16:33:55] jefferson: something has to be done about sending
+[12.11.21 16:33:58] basil: I mean how to do
+[12.11.21 16:34:25] jefferson: I think all accounts should participate
+[12.11.21 16:34:34] jefferson: the default one is not an option
+[12.11.21 16:34:43] jefferson: what if there are 10 accounts and they all work?
+[12.11.21 16:35:00] basil: i remember some problems with account switching
+[12.11.21 16:35:34] basil: I agree. That's probably more correct. But I was talking to sylver about it. He answered me so
+[12.11.21 16:35:48] basil: it would be more correct
+[12.11.21 16:35:51] jefferson: we'll talk again on monday
+[12.11.21 16:37:58] basil: okay. I'm not excusing myself, but I remember that there was such a conversation. I appealed to him because he could not change the default account, and he told me that he had to send it from the account by default
+[12.11.21 16:39:15] basil: and in the initial spam bot was sending out from all accounts?
+[12.11.21 16:39:15] jefferson: no, i'm not saying you're excusing yourself. i just might not have been paying attention at the time
+[12.11.21 16:39:31] jefferson: it's time to pay attention. i think i need to change my approach.
+[12.11.21 16:44:48] basil: okay. But if it's really necessary and as a customer you're inclined to do it, I'd like to warn you right away that it will take time. I do not know at the moment how to do it. If it can be done at all.
+[12.11.21 16:44:58] basil: this might not be possible in MAPI
+[12.11.21 16:45:05] basil: in principle
+[16.11.21 14:50:07] jefferson: ping
+[16.11.21 14:50:21] basil: test
+[16.11.21 14:50:40] jefferson: now I will reproduce what I was talking about
+[16.11.21 14:50:46] jefferson: 20 minutes
+[16.11.21 15:02:36] jefferson: do you have access to the admin area?
+[16.11.21 15:02:59] basil: let me check.
+[16.11.21 15:03:06] jefferson: see task TEST 15112021
+[16.11.21 15:03:16] jefferson: when you see it, press stop
+[16.11.21 15:03:30] jefferson: we don't need it running anymore
+[16.11.21 15:06:18] basil: okay. pressed.
+[16.11.21 15:06:56] jefferson: now go here
+
+185.64.104.213:31141 -RDP
+User JohnJackson21
+[16.11.21 15:07:10] jefferson: look in the outgoing folder
+[16.11.21 15:08:20] jefferson: that's what I was talking about today. we generated them, put them in the outbox, couldn't send them, but we counted them as successful
+[16.11.21 15:08:46] jefferson: we need to tie it in differently
+[16.11.21 15:08:53] basil: wait.
+[16.11.21 15:09:04] jefferson: when they are sent, they will move to the sent folder
+[16.11.21 15:09:10] basil: we can run the task and bot again
+[16.11.21 15:09:15] basil: ?
+[16.11.21 15:09:23] jefferson: yes, no problem
+[16.11.21 15:09:31] jefferson: roll back and do it all over again?
+[16.11.21 15:10:36] jefferson: [ ](https://xflemdsxjrjilw34dsxpvrxp5whnaut7hc5xejwuqs6eqrkt77bxkwid.onion/direct/EJQkNyvZiknnByYGSGiBbj4bzxSsNe5iL5?msg=N3JnX6xNm5QJrJ3b4) and on successful submission our bot will already clean the sent folder from the traces of our activity.
+[16.11.21 15:10:40] basil: yes. Remote computer rollback. Let me know when it's ready. I'll restart the task now so that the number sent would be reset to zero
+[16.11.21 15:10:53] jefferson: ok.
+[16.11.21 15:16:34] jefferson: I'm on it.
+[16.11.21 15:16:59] jefferson: or you didn't need to run the bot?
+[16.11.21 15:17:08] basil: no. ok.
+[16.11.21 15:17:18] basil: waiting for connection
+[16.11.21 15:17:21] jefferson: ok, waiting for it to work
+[16.11.21 15:17:27] basil: I restarted the task
+[16.11.21 15:18:39] basil: is the bot running? I don't see any new connections
+[16.11.21 15:21:37] jefferson: running
+[16.11.21 15:21:39] jefferson: it doesn't show up right away for some reason
+[16.11.21 15:21:48] jefferson: about 5-10 minutes pass
+[16.11.21 15:21:56] jefferson: I also don't know what this is about
+[16.11.21 15:22:02] jefferson: it wasn't, but it was
+[16.11.21 15:22:41] jefferson: that too, by the way, should be taken into account
+[16.11.21 15:22:56] basil: it is. I see.
+[16.11.21 15:24:35] basil: I'll use RDP&
+[16.11.21 15:24:36] basil: ?
+[16.11.21 15:24:40] jefferson: yes
+[16.11.21 15:28:34] basil: yes. Something's wrong. Although it used to work, at least for the life of me. In Addresses was the number of mails created and in Sended was the number of mails sent. It used to be so that Addresses =3 and Sended =2. But now this whole system lies.
+[16.11.21 15:28:38] basil: Something is wrong
+[16.11.21 15:29:20] jefferson: Yes, the system needs a new reference point, where to look for it, where to count from
+[16.11.21 15:29:30] basil: today e-mails started to go from different accounts (or rather they are created in outgoing of different accounts). But here is the problem again, sender address is the same
+[16.11.21 15:29:50] jefferson: I'll set up a test bench and see what happens.
+[16.11.21 15:30:01] jefferson: i have 2 accounts in this outlook. i just delete one
+[16.11.21 15:30:13] basil: well, it doesn't matter
+[16.11.21 15:30:17] jefferson: it sends, but the server itself deploys everything and daemons come
+[16.11.21 15:30:46] jefferson: like so-and-so wasn't sent
+[16.11.21 15:30:52] jefferson: And so on and so on.
+[16.11.21 15:30:59] jefferson: one
+[16.11.21 15:31:22] jefferson: that's what you have to work with
+[16.11.21 15:31:53] jefferson: we need to figure out what kind of toy buoy the system is now counting and lying + where did this delay come from
+[16.11.21 15:32:17] jefferson: before the bounce was going straight to the bots tab
+[16.11.21 15:32:25] jefferson: not anymore.
+[16.11.21 15:32:39] jefferson: sometimes even 20 minutes empty, and then it just appeared
+[16.11.21 15:34:03] basil: I have a hunch why he's sending out invalid stats. I'll check it out and let you know.
+[16.11.21 15:34:39] basil: I have no suggestions about the delay. But I think we can also fix it.
+[16.11.21 15:34:53] jefferson: I wrote it down in the general chat
+[16.11.21 15:35:00] basil: okay.
+[16.11.21 15:35:03] jefferson: i don't think you're the only one who needs to dig it
+[16.11.21 15:35:17] jefferson: there is a server as well as a binary. so, flag Blake in your hands
+[16.11.21 15:35:28] basil: I think we can fix all this satistics and delays
+[16.11.21 15:35:52] jefferson: yes, I'm sure of it. that's what tests are for, to detect all the nonsense going on
+[16.11.21 15:36:34] basil: But here's working with many accounts. That's a real headache for me.
+[16.11.21 15:36:48] basil: but in principle I think everything can be solved
+[16.11.21 15:37:19] jefferson: sure
+[16.11.21 15:37:28] jefferson: it's all solvable
+[16.11.21 15:37:34] jefferson: someone decided earlier
+[16.11.21 15:38:02] jefferson: there soft was created by dendro-fecal method, but it worked nevertheless
+[11/16/21 15:38:11] basil: wait. And earlier the mailing was from many accounts?
+[16.11.21 15:38:15] basil: Was there?
+[16.11.21 15:38:25] jefferson: i think so
+[16.11.21 15:38:32] basil: better already.
+[16.11.21 15:38:35] jefferson: but I was too young and inexperienced then.)
+[16.11.21 15:38:45] jefferson: but that's kind of how it was.
+[11/16/21 15:39:12] basil: okay. Then let's see what was in the last bot.
+[16.11.21 15:39:17] basil: Okay.
+[22.11.21 12:28:31] basil: test
+[22.11.21 12:29:43] jefferson: ping
+[22.11.21 12:30:23] basil: test
+[22.11.21 12:30:32] basil: https://file.io/UymWjpWGWqNH
+[22.11.21 12:30:38] basil: NTIdZH}pOznzJ$m7|l?
+[22.11.21 12:30:39] jefferson: accepted
+[22.11.21 13:33:48] basil: test
+[22.11.21 13:34:01] basil: VXZ4{GBxeB~|{$nHkesZ
+[22.11.21 13:34:32] basil: https://file.io/LuvZxJQDmAdU
+[22.11.21 13:39:16] jefferson: accepted
+[22.11.21 13:49:53] jefferson: started
+[24.11.21 15:34:15] basil: greetings
+[03.12.21 09:48:04] basil: Hello
+[03.12.21 09:49:01] jefferson: hi
+[03.12.21 09:50:05] basil: So it seems to be working to send emails from multiple accounts
+[03.12.21 09:50:10] basil: I checked it yesterday
+[03.12.21 09:50:37] jefferson: Yeah, great
+[03.12.21 09:50:47] basil: Target mailbox received mails with different sender address
+[12/23/221 09:50:53] basil: That's the first one
+[03.12.21 09:50:56] basil: first
+[03.12.21 09:51:03] basil: Now the second
+[12/03/21 09:51:28] basil: That's the first one. And there are several sender's addresses.
+[03.12.21 09:51:50] basil: What should I do? I mean how to keep statistics
+[03.12.21 09:51:51] basil: ?
+[03.12.21 09:52:40] jefferson: i don't quite understand the question.
+[03.12.21 09:53:08] jefferson: there are usually different recipients from each sender
+[03.12.21 09:54:10] jefferson: if the bot stumbles on a machine with multiple accounts, it works by recipients on each account
+[03.12.21 09:54:28] jefferson: well, that's what we do with the status
+[03/12/221 09:55:36] basil: And each account has its own separate emails. Just at the moment we collect emails from all accounts into one cgbcjr
+[03.12.21 09:55:39] basil: cgbcjr
+[03.12.21 09:55:43] basil: list
+[03.12.21 09:56:15] jefferson: ah, well, that needs to be broken down somehow. martin has it covered in spamex
+[03.12.21 09:56:42] basil: Okay. And if addresses are set from server?
+[03.12.21 09:57:02] jefferson: rephrase that.
+[03.12.21 09:57:20] jefferson: we are interested in local desktop scheme
+[03.12.21 09:57:44] basil: shall we continue here? Or to general chat?
+[03.12.21 09:58:05] jefferson: general
+[03.12.21 09:58:11] basil: okay.
+[03.12.21 09:58:12] jefferson: I'll be back in 15 minutes
+[03.12.21 09:58:16] jefferson: write for now
+[03.12.21 10:16:19] jefferson: what do you mean "addresses are coming from the server"? is this about another type of mailing list, not a local desktop?
+[03.12.21 10:17:43] basil: well, we can get the addresses from the server and send them out via Outlook
+[03.12.21 10:17:53] basil: or we don't need it?
+[03.12.21 10:18:42] jefferson: this is a different kind of mailing, there's no sense to do the separation.
+[03.12.21 10:19:02] basil: Yes.
+[03.12.21 10:19:17] jefferson: I don't see the difference yet.
+[03.12.21 10:19:51] jefferson: what interests me now is the outlook and what was in it already. well, and order, so to speak, in that
+[12/21/221 10:21:10] basil: okay. Then now we're doing this first task with address separation by account.  Do I understand it correctly?
+[12/23/221 10:22:14] jefferson: yes.
+[03 12/21 21 10:22:18] basil: ok.
+[12/23/221 10:23:03] jefferson: I never used method of sending dummy email addresses via accounts in the user's outlook. it was an idea I proposed back in the day of previous software
+[03.12.21 10:23:19] jefferson: so, this part is just theoretical.
+[03.12.21 10:23:56] jefferson: It's theoretical because it has never been implemented anywhere before (us, I don't know about others).
+[03.12.21 10:24:31] basil: well, we already have it
+[03.12.21 10:24:35] basil: it already is
+[03.12.21 10:24:48] basil: but there's no separation
+[03/12/221 10:25:29] jefferson: well, yes, but still. first, they propose to make order where it's really needed. we'll sort out the rest as we go along. there are no such rigid restrictions
+[03/12/21 10:26:22] basil: Okay.
+[03.12.21 10:30:30] jefferson: I'll write some more to finalize the idea.
+[08.12.21 10:20:42] basil: Hello.
+[08.12.21 11:15:39] jefferson: hi. i'm not here all the time yet. my wife had surgery this morning. i have a lot to do. i'll check back in a few hours
+[08.12.21 11:16:10] basil: okay.
+[08.12.21 11:16:18] basil: That's more important.
+[08.12.21 11:16:25] basil: only one request
+[08.12.21 11:16:32] basil: don't forget the encryption
+[08.12.21 11:16:41] jefferson: yes, I won't forget
+[08.12.21 11:16:44] basil: if it doesn't install. Write somewhere else.
+[08.12.21 11:16:48] jefferson: it's not so secret info))
+[08.12.21 11:16:54] jefferson: ok
+[08.12.21 11:16:59] jefferson: left. be back later.
+[08.12.21 11:17:03] basil: okay.
+[08.12.21 15:26:45] jefferson: I'm here
+[08.12.21 15:26:50] jefferson: ping
+[08.12.21 15:27:09] basil: hello again
+[08.12.21 15:27:15] jefferson: hi
+[08.12.21 15:27:30] basil: Is there any way I can connect to the test machine
+[08.12.21 15:27:57] jefferson: yes, I'll run it now
+[08.12.21 15:32:07] jefferson: I'm about to update, snap it on, and give you access
+[08.12.21 15:32:39] basil: okay. I actually need it for testing. Here is another question
+[08.12.21 15:32:49] basil: Can I put any software on it?
+[08.12.21 15:33:04] basil: there is a local server
+[08.12.21 15:33:10] basil: under java
+[08.12.21 15:33:13] jefferson: no problem
+[08.12.21 15:33:20] basil: ok
+[08.12.21 16:04:00] jefferson: https://privnote.com/OTiZlkJ9#uTQ8gjHBR
+[08.12.21 16:04:06] jefferson: here's the data
+[08.12.21 16:04:18] jefferson: your car is 141 and no other
+[08.12.21 16:04:25] jefferson: you can do this
+[08.12.21 16:05:15] jefferson: there is a snapshot section for that machine. the last snapshot of work snap3 is a clean machine with all the test updates, all the software is there (except the one you were planning to put)
+[08.12.21 16:05:37] jefferson: you can create a separate snapshot of yourself with what you need and work with it
+[08.12.21 16:06:18] basil: a moment. I'll be right in. If something isn't clear, I'll ask questions.
+[08.12.21 16:06:20] jefferson: and then we can roll it back to the right image and do our thing
+[08.12.21 16:06:24] jefferson: okay.
+[08.12.21 16:10:02] basil: I don't understand anything at all. Question. the first address is what?
+[08.12.21 16:10:22] jefferson: that's the machine control panel
+[08.12.21 16:10:26] jefferson: there's a server with them
+[08.12.21 16:10:30] jefferson: go there
+[08.12.21 16:10:57] basil: login password right after the first address?
+[08.12.21 16:11:06] jefferson: yes
+[08.12.21 16:11:59] jefferson: there might be a choice of where you log in to on the first login
+[08.12.21 16:12:02] jefferson: I don't remember anymore
+[08.12.21 16:12:08] jefferson: let me know what options you have
+[08.12.21 16:12:15] jefferson: I'll point you in the right direction.
+[08.12.21 16:12:35] basil: great.
+[08.12.21 16:12:36] basil: a moment
+[08.12.21 16:13:01] jefferson: if you got it right, there's a big list of virtuals on your left
+[08.12.21 16:13:05] jefferson: there are dozens of them
+[08.12.21 16:13:30] jefferson: or on the top left look for the dropdown box, there select view pools or English equivalent
+[08.12.21 16:13:38] jefferson: then you will see a list of virtuals
+[08.12.21 16:14:53] basil: okay. I take it that the 141 machine needs to be started. And then login via rdp
+[08.12.21 16:15:10] jefferson: yeah, that's right.
+[08.12.21 16:15:23] jefferson: and deal with the snapshot partition
+[08.12.21 16:15:30] jefferson: take a snapshot with the software you need
+[08.12.21 16:15:45] basil: ok.
+[08.12.21 16:16:11] jefferson: when you select the virtual machine you need, a window will pop up on the right with different partitions
+[08.12.21 16:16:14] jefferson: you'll see everything
+[08.12.21 16:16:19] jefferson: It's really quite simple
+[08.12.21 16:17:02] jefferson: well, you started it, then you'll figure it out.)
+[08.12.21 16:17:17] jefferson: i'm gonna go grab some dinner. it's been a fucked up day. i'll be back later
+[08.12.21 16:17:25] basil: okay.
+[10.12.21 11:01:20] jefferson: hi.
+[10.12.21 11:01:40] basil: hi.
+[10.12.21 11:01:57] jefferson: test
+[10.12.21 11:02:17] jefferson: how's it going?
+[10.12.21 11:02:25] jefferson: how are the tests going?
+[10.12.21 11:06:05] basil: The tests are going on with varying success. On my machine I see that piems are created and gone. Tried it on both 2013 and 2016. But as soon as I try to do something on the virual you gave me. It just doesn't work. Maybe there is some kind of office that is not standard. I tried uninstalling the one I have. Put in 2013. I did, but it didn't pick up the accounts I had already connected to the outlook I had. Is it the standard office? Nothing unusual there?
+[10.12.21 11:06:48] basil: I saw the office installation package lying there. Where does it come from?
+[10.12.21 11:06:59] basil: I saw it.
+[10.12.21 11:07:15] jefferson: can't answer - admins installed it
+[10.12.21 11:07:28] jefferson: we can try another office
+[10.12.21 11:07:48] basil: I can upload my 2016 there
+[10.12.21 11:07:50] basil: sure
+[10.12.21 11:07:57] jefferson: I have 3-4 distros somewhere in the cloud
+[10.12.21 11:08:08] basil: just like I uploaded 2013
+[10.12.21 11:08:20] basil: I want to use it
+[10.12.21 11:08:22] jefferson: maybe it's the office
+[10.12.21 11:08:30] jefferson: I don't rule it out
+[10.12.21 11:08:38] basil: there are a lot of different letters and different addresses
+[10.12.21 11:08:43] jefferson: dunno, what kind of slashed build could have been put there
+[10.12.21 11:09:10] basil: it's very good for tests
+[10.12.21 11:12:00] basil: here if in words I can tell you what I did. And what I've got in terms of sending out from different accounts. I ran it under debugging. It worked. And I see how letters were created in separate accounts, before they were created I stopped the debugging and looked under which user they are created (respectively, with how to the address of the sender.). To the mail (test) they came. But here while on your virtual machine repeat it is not possible
+[10.12.21 11:12:46] jefferson: ok. I have no preferences as to what kind of office will stand. the only condition is that it is as close to the original as possible. it just happens sometimes that warezniks make such assemblies, cutting out everything they can, that later it's hard to understand it.
+[10.12.21 11:13:15] jefferson: try changing the office package
+[10.12.21 11:13:43] jefferson: or i can ask you to install another vm so nothing is installed and you can install it clean
+[10.12.21 11:16:54] basil: clean is bad. There on that virtual machine (which is yours) what's good. A lot of emails from different addresses and different representation of those addresses. For tests it is the best. Ok. I will try my office 2016 today then. Maybe there really is a problem with the build
+[10.12.21 11:17:05] basil: Everything works on the clean one.
+[10.12.21 11:17:17] basil: But it's not so good on yours
+[10.12.21 11:17:33] jefferson: ok
+[10.12.21 11:17:38] jefferson: report back.
+[10.12.21 11:17:50] jefferson: we'll be guided by the situation then.
+[12/13/21 10:26:02] basil: Hello.
+[12/13/21 10:30:58] jefferson: hi.
+[12/13/21 10:32:00] basil: Hello again. Please tell me how I can contact the administrator of that virtual. The one you gave me for the tests
+[12/13/221 10:32:15] basil: Which I was allocated
+[12/13/221 10:32:26] basil: I have some questions for him
+[12/13/221 10:32:53] jefferson: he's off-line. tell me what you need to know. i'll ask him when it comes out
+[12/13/221 10:33:39] basil: Actually, I need an account for outlook
+[12/13/21 10:34:06] basil: Maybe you have them in stock now. I don't have to wait
+[12/13/21 21 10:34:17] basil: And the second thing
+[12/13/221 10:34:22] jefferson: I'll look for them now.
+[12/13/21 10:34:29] jefferson: I have them
+[12/13/21 10:36:18] basil: There's an external firewall. Or antivirus on the host running the virtuals. In short, the certificate there comes invalid (self-signed). Do you know anything about it?
+[12/13/221 10:39:33] basil: When I start outlook, it says certificate is invalid
+[12/13/21 10:40:35] jefferson: it's most likely because of the server it's on
+[13.12.21 10:40:46] jefferson: because it doesn't happen on the second one
+[13.12.21 10:41:05] jefferson: and I think it's the outlook itself
+[12/13/21 10:41:34] jefferson: mail@14740-27223.bacloud.info:1q2wAZSX
+[12/13/21 10:41:42] jefferson: this is the first post
+[12/13/21 10:42:14] jefferson: Lukas_Watson14740@ro.ru:qwerfv55QQx
+[12/13/21 10:42:21] jefferson: that's the second one, I think.
+[12/13/21 10:42:23] jefferson: check it out.
+[12/13/21 10:42:42] basil: a moment
+[12/13/21 10:42:57] jefferson: I'll be back in about 20 minutes.
+[12/13/21 10:54:04] basil: no. Something's not working.
+[12/13/21 21 10:54:22] jefferson: which one?
+[12/13/21 10:54:40] basil: both addresses
+[12/13/21 10:54:46] jefferson: strange
+[12/13/221 10:54:48] basil: I never authorized outlook
+[13.12.21 10:57:30] jefferson: went to roo ru with web interface
+[13.12.21 10:57:55] jefferson: you have to check all settings on the virtual machine
+[13.12.21 10:58:06] jefferson: already successfully authorized
+[12/13/221 10:58:21] jefferson: I didn't deploy it the first time either, but I did it anyway
+[13.12.21 10:58:38] jefferson: you can google settings for outlook on rambler
+[12/13/221 10:58:42] jefferson: it's got all the fringes.
+[12/13/221 10:59:05] basil: okay. we'll see.
+[12/15/21 09:52:15] basil: hello
+[12/15/21 09:52:20] jefferson: hi.
+[15.12.21 09:55:18] basil: Here's a question. When we set the bot to work with a list of emails from the server we initially know how many emails it should send out. And we send statistics to the server on this basis. But when the mailing is done from emails obtained from OUtlook we don't know initially how many emails we are going to send.
+[15.12.21 09:55:49] basil: so here's the question. What should we do? We don't know initially how many addresses
+[15.12.21 09:58:27] jefferson: And we don't need to ask them.
+[15.12.21 09:58:46] jefferson: we should try to send the same amount as on the user's account and that's it
+[12/15/221 09:58:57] jefferson: and get a status of what was sent
+[15.12.21 10:02:25] basil: Ok. I think it is possible to do the number of sent emails. And by recipients what to do if we send from separate accounts
+[15.12.21 10:02:45] basil: that's how it originally was
+[15.12.21 10:02:56] basil: ``
+9. take the stats
+
+POST /<idm>/<idb>/info
+
+The content of the request body is plain text (WITHOUT multipart or form-urlencoded CONTAINER!)
+of the following form:
+
+sent: <total letters sent, pcs.
+addresses: <total addressees>
+
+The bot can send many such requests during one session, to reflect the progress of the mailing.
+The server is guided by the last request received from the bot.
+```
+[15.12.21 10:03:21] basil: sent is the number of mails sent. This can
+[15.12.21 10:03:34] basil: but what to do with it?
+[15.12.21 10:04:11] jefferson: I'll think about it, I didn't write your terms of reference in details.
+[15.12.21 10:04:40] jefferson: we'll figure it out anyway.
+[15.12.21 10:04:53] jefferson: just need to clarify
+[12/15/21 10:05:04] basil: Okay.
+[12/17/21 11:10:07] jefferson: hi.
+[12/17/21 11:10:25] basil: Hi.
+[17.12.21 11:11:01] jefferson: i couldn't talk to sylver about your question yesterday - there was no light all day yesterday
+[17.12.21 11:11:03] jefferson: let's do this
+[17.12.21 11:11:12] jefferson: in the channel throw a question on cent and address
+[17.12.21 11:11:20] jefferson: we'll figure it out when sylver gets free
+[17.12.21 11:11:22] jefferson: he wrote the terms of reference
+[12/17/21/11:11:31] basil: okay. Okay
+[12/17/21/221 11:11:33] basil: now
+[21.12.21 15:03:27] jefferson: hi.
+[21.12.21 15:03:45] basil: Hello.
+[21.12.21 15:03:55] jefferson: hi. how are you doing?
+[21.12.21 15:05:14] basil: I dubbed satire. Letters (as I see) go away. They go from different accounts. The only thing was tested with local mailserver and local control server.
+[21.12.21 15:05:21] basil: The only thing is this.
+[21.12.21 15:05:45] basil: checked final binary on dyncheck and avcheck.
+[21.12.21 15:06:06] basil: They give completely different results
+[21.12.21 15:06:19] basil: I tested on some avchecks
+[21.12.21 15:06:23] jefferson: dincheck gives false readings
+[21.12.21 15:06:46] basil: I was quiet. On field experiment, so to speak.
+[21.12.21 15:07:21] jefferson: for example windef, on dincek I personally never gave a detec-tion, although in fact on my own virtual machine it took down the necessary file at once
+[21.12.21 15:08:21] basil: well, the same file under defender stays in place. Defender is silent
+[21.12.21 15:08:45] basil: both on the sites it's clean (on defender) and on the field experiment
+[21.12.21 15:09:05] jefferson: ok, let's leave it as it is
+[21.12.21 15:09:18] basil: ok
+[21.12.21 15:58:54] jefferson: when do you think we can start testing?
+[21.12.21 15:59:36] basil: in principle, you can even try today. From the server side everything is ready?
+[21.12.21 15:59:52] jefferson: tomorrow
+[21.12.21 16:00:01] jefferson: We'll figure it out today.
+[21.12.21 16:00:31] basil: Okay. Okay.
+[12/23/221 13:35:06] jefferson: hi.
+[12/23/221 13:35:21] basil: Hi.
+[12/23/221 13:36:01] jefferson: I have a question. quite global. it's about preparation for the upcoming job
+[23.12.21 13:36:13] jefferson: look, you make me a mylar binary
+[12/23/221 13:36:47] jefferson: what metadata does the file uniquely receive that you can clearly identify that file by?
+[12/23/221 13:36:54] jefferson: system info, user something else
+[12/23/221 13:38:31] basil: I'm honestly not ready to answer the question right now. I'm afraid to lie. The only thing I can say for sure, that in the file there is a compiler label
+[12/23/221 13:39:08] basil: that's what Microsoft does. To catch guys like you here
+[12/23/221 13:39:14] basil: I have several machines
+[12/23/221 13:39:20] basil: I change them all the time
+[12/23/221 13:39:36] jefferson: the thing is, for example office documents have so much metha that you don't need detects there
+[12/23/221 13:39:50] jefferson: i think it's the same with everything else
+[12/23/221 13:40:08] jefferson: vindef works with the cloud and almost everything becomes clear there
+[12/23/221 13:40:15] jefferson: so I'm looking for ways around it
+[12/23/221 13:40:27] jefferson: so to speak, uniqueness
+[12/23/221 13:40:41] jefferson: that would definitely confuse them
+[12/23/221 13:41:02] jefferson: can you experiment?
+[12/23/221 13:41:07] jefferson: with your files
+[12/23/221 13:41:53] jefferson: the thing is, in the whole chain I have 3 main links where it can be burned
+
+1. mailer
+2. loader
+3. the maiload itself
+[23.12.21 13:42:03] jefferson: with the loader, for example, I understand what to change
+[12/23/221 13:42:11] jefferson: but what to do with binary - still wondering
+[12/23/221 13:42:24] basil: well, look.
+[12/23/221 13:42:27] basil: wait
+[12/23/221 13:43:33] basil: we have an obfuscator that can complicate detections, it can be built into mailer, and there are cryptos (i'm working on them from time to time, but now they were transferred to this project)
+[23.12.21 13:43:49] jefferson: look, I'll show you the bootloader
+
+Title
+Subject
+Author
+Keywords
+Comments
+Template
+Last author
+Revision number
+Application name
+Last print date
+Creation date
+Last save time
+Total editing time
+Number of pages
+Number of words
+Number of characters
+Security
+Category
+Format
+Manager
+Company
+Number of bytes
+Number of lines
+Number of paragraphs
+Number of slides
+Number of notes
+Number of hidden slides
+Number of multimedia clips
+Hyperlink base
+Number of characters (with spaces)
+
+https://devblogs.microsoft.com/scripting/how-can-i-get-a-list-of-available-metadata-for-microsoft-office-documents/
+
+
+Old doc files have paths to office, username, system guid
+In some versions the mac address of the computer where the doc was created was encrypted in the guid, this was removed later
+In docx files this meta-information remained in file vbaproject.bin inside of archive, because its format didn't change since old office
+[12/23/221 13:44:12] jefferson: as for the binary - it's clear that it's not such a set, but there's something there. here we need uniqueness too
+[12/23/221 13:44:45] basil: stop.
+[12/23/221 13:45:44] basil: When you talk about metadata, do you mean that the names of these metadata fields are present in the binary and they can be defined?
+[12/23/221 13:45:55] basil: Is that what you mean?
+[12/23/221 13:47:51] jefferson: yes
+[12/23/221 13:49:00] basil: they are, but for each assembly they are obfuscated differently
+[23.12.21 13:49:08] basil: I mean string literals
+[12/23/221 13:49:41] jefferson: so, look how it happens. vindef has a cloud. for example, we're not even building a binary, we've already built it, passed it to me - I unpacked it on my Windows, transferred it to a machine for testing - launched it there. there's also the wind and also the windef, then I started downloading it in bulk. def checks with the cloud and it doesn't need to detect anything anymore. it already knows what it is, where it came from, where it's been and so on.
+[12/23/221 13:50:22] jefferson: I'm trying to figure out how to get around this
+[12/23/221 13:50:48] jefferson: Well, in theory, there's nothing too complicated here, you just need to create the whole algorithm one by one and that's it
+[23.12.21 13:51:07] basil: I consulted with my colleagues about it
+[12/23/221 13:51:20] basil: they told me the problem is in my machine
+[12/23/221 13:51:23] basil: car
+[12/23/221 13:51:47] basil: you should have disabled safebrowse
+[12/23/221 13:52:02] basil: I did that. Kinda got quieter
+[12/23/221 13:52:05] basil: quieter
+[12/23/221 13:52:10] jefferson: got it.
+[12/23/221 13:52:18] jefferson: okay, let's see what we get
+[12/23/221 13:52:28] jefferson: I'm making a list of measures for two links.
+[12/23/221 13:52:44] jefferson: these are for the office files and for the binary you need to run with these files
+[23.12.21 13:53:05] jefferson: you need to keep the files on the wind machines clean+mass files with different meta
+[12/23/221 13:53:46] jefferson: for example, we're planning to send 150k attachments and 50 thousand binary with different hashes
+[12/23/221 13:53:55] jefferson: where the binary will be carousel generated
+[12/23/221 13:54:03] jefferson: each time next in the list
+[12/23/221 13:54:25] jefferson: we did all this before, just the amount was smaller
+[23.12.21 13:54:43] jefferson: 3k office files+200-300 binaries
+[23.12.21 13:54:54] jefferson: but we didn't count metha in the offsi docs
+[23.12.21 13:55:17] jefferson: actually, it's very easy to understand that this is a fake. the files are different, but the meta is always the same
+[12/23/221 13:55:32] jefferson: you saw the list of meta
+[12/23/221 13:56:31] jefferson: i'll be talking to crypto about binary
+[23.12.21 13:56:39] jefferson: the doc makes more sense
+[12/23/221 13:58:40] basil: don't even worry about string literals. They will be unique.
+[12/23/221 13:58:59] basil: they won't even be in the string section
+[12/23/221 13:59:30] basil: but what about hashes..... Especially with fuzzy hashes
+[12/23/221 14:01:20] basil: there's a cryptor I'm working on periodically.  It gives very good results.
+[12/23/221 14:01:27] jefferson: what does fuzzy hashes mean?
+[12/23/221 14:01:29] basil: Performance is acceptable
+[12/23/221 14:02:35] basil: well, it's a specific parameter that shows by how much one file is different from another.
+[12/23/221 14:03:02] basil: it's not a hash in its original sense
+[12/23/221 14:03:37] jefferson: got it. i'll start with the dock and the originator of the docks
+[12/23/221 14:03:44] jefferson: then i'll move on to the binary crypto
+[12/23/221 14:03:55] jefferson: you'll need mass
+[12/23/221 14:04:07] jefferson: I'm in the process, if anything, I'll contact you for advice
+[12/23/221 14:04:53] basil: I talked to elroy about it - he suggested wrapping with an obfuscator, which we have. So we have one of the releases and working variants
+[23.12.21 14:05:14] basil: you can do a crypt of course. But the size won't be the smallest.
+[23.12.21 14:05:27] basil: minimum x3
+[23.12.21 14:05:31] jefferson: okay
+[12/23/221 14:05:32] jefferson: got it.
+[12/23/221 14:05:42] jefferson: well, let's think, make a decision in the process
+[12/23/221 14:05:48] basil: jr.
+[12/23/221 14:05:49] basil: Okay.
+[12/23/221 14:24:50] jefferson: found this on the subject
+[12/23/221 14:24:52] jefferson: https://autoit-script.ru/threads/kak-udalit-vse-metadannye-exe-fajla.24104/
+[12/23/221 14:25:07] jefferson: https://question-it.com/questions/1607138/poluchit-metadannye-dll-v-srede-linux
+[12/23/221 14:25:26] jefferson: I don't know if this information is correct, but I think there is something in it.
+[12/23/221 14:26:49] basil: it seems to me that it's more like c#. But this is c++ all the same.
+[12/23/221 14:27:15] basil: basically, there's only a label - the compiler fingerprint
+[23.12.21 14:27:45] jefferson: well, i'm a connoisseur in these matters)
+[23.12.21 14:27:59] basil: but that can be solved simply by making a new vm
+[23.12.21 14:27:59] basil: and reinstall studio
+[23.12.21 14:28:18] basil: we've been fighting this problem for a long time
+[12/23/221 14:28:23] jefferson: got it
+[12/23/221 14:30:32] basil: there was even a link somewhere
+[12/23/221 14:31:22] basil: but if I find it, I'll send it to you.
+[12/23/221 14:31:22] basil: no.
+[27.12.21 11:14:44] jefferson: hi.
+[27.12.21 11:15:24] basil: hello
+[27.12.21 11:15:37] jefferson: are we ready for the tests, as I understand?
+[27.12.21 11:16:01] basil: well, from my side yes
+[27.12.21 11:16:16] jefferson: multi-count + count, right?
+[27.12.21 11:16:23] basil: yes
+[27.12.21 11:16:27] basil: It was.
+[27.12.21 11:16:41] jefferson: I'll check with the admins when they're ready and we'll start
+[27.12.21 11:16:50] jefferson: I think we can start building the binary and spacers
+[27.12.21 11:17:03] jefferson: if the admins are in working mode, we'll test it today
+[27.12.21 11:38:46] basil: I have another question
+[27.12.21 11:39:18] basil: For tests could I hide the outlook window so that I could see from which account mails are sent?
+[27.12.21 11:39:22] basil: they are leaving
+[27.12.21 11:41:04] jefferson: And we won't see anything on the machine where it will be downloaded anyway
+[27.12.21 11:41:23] jefferson: and we still won't see anything on the machines where it will be downloaded to
+[27.12.21 11:42:50] basil: Listen, maybe we should try it in non-combat mode for now. I just wanted to make sure, I did it with local mail client and local control server.
+[27.12.21 11:43:34] basil: should I go straight into battle?
+[27.12.21 11:43:42] basil: should I?
+[27.12.21 11:57:20] jefferson: let's give it a shot
+[27.12.21 11:57:24] jefferson: what would it take?
+[27.12.21 11:58:53] basil: yes. basically, that virtual machine will be enough
+[27.12.21 11:59:06] basil: we'll just reset it and you can use it
+[27.12.21 12:06:02] jefferson: ok
+[27.12.21 12:25:37] basil: Well, I'm on the phone. In the general chat, I wrote about the pads. As soon as I will have at least one ip address - I will make a binary. And run it and see how it works.
+[27.12.21 12:29:20] jefferson: Okay.
+[27.12.21 12:29:31] jefferson: I'm here then, I'll step off/on occasionally
+[27.12.21 12:29:42] jefferson: a lot of pre-holiday stuff going on
+[27.12.21 15:31:32] basil: There are 2 news. The good news is defender is silent and I see emails in different folders. The bad news is the emails that are registered on test OutLook don't work. I can't even send the mail manually
+[12/28/221 11:11:48] jefferson: hi
+[12/28/12/21 11:11:57] basil: test
+[28.12.21 11:12:07] jefferson: test
+[28.12.21 11:12:15] basil: hello
+[28.12.21 11:12:23] jefferson: hi. did you manage to do any tests with other soaps yesterday?
+[28.12.21 11:12:36] jefferson: I got here late.
+[12/28/221 11:12:55] basil: It happens.
+[28.12.21 11:13:05] basil: Anyway, I put mine
+[12/28/221 11:13:13] basil: It worked for me.
+[12/28/221 11:13:26] jefferson: Okay.
+[12/28/221 11:13:29] basil: But there was a little bit of a problem
+[28.12.21 11:13:52] basil: first of all
+[28.12.21 11:14:05] basil: There are service emails
+[28.12.21 11:14:35] jefferson: what do you mean?
+[12/28/221 11:15:13] basil: all kinds of test emails that outlook sends when you create a new account
+[12/28/221 11:15:40] basil: and then they come back with an error and a message body
+[28.12.21 11:15:52] basil: and not deleted
+[28.12.21 11:16:19] jefferson: is it just for account setup?
+[28.12.21 11:16:30] jefferson: if I understand correctly
+[12/28/221 11:16:33] basil: yes. I agree. So it is.
+[12/28/221 11:16:45] basil: But there's an address in that letter
+[12/28/221 11:16:46] jefferson: there's a checkmark to prevent it
+[28.12.21 11:16:58] basil: and bot thinks it's a working email too
+[28.12.21 11:17:13] jefferson: well, it doesn't matter. it's not that important
+[28.12.21 11:17:29] jefferson: moreover, you can always add it to the blacklist
+[12/28/221 11:17:39] basil: okay. one more question
+[28.12.21 11:18:53] basil: look, the bot can have a "combined" mode of operation, when it sends messages to addresses received from the control server and to addresses the bot found in the Outlook database
+[28.12.21 11:19:36] jefferson: yes, maybe. but i never thought about modes different from outlook mailing
+[28.12.21 11:19:57] jefferson: because my main idea was to work in that mode
+[28.12.21 11:20:16] jefferson: but now there's another unofficial task. unofficial for now
+[28.12.21 11:20:33] basil: it's when the mailing goes to addresses from the outlook database? yes, what kind of job?
+[28.12.21 11:20:45] jefferson: there is a lot of information about emotet on twitter and google
+[12/28/221 11:20:57] jefferson: I want to become one, if I may say so.
+[28.12.21 11:21:06] basil: yeah, we talked to sylver once
+[28.12.21 11:21:14] basil: but that was probably a year ago
+[28.12.21 11:21:17] jefferson: and what did sylver say?
+[28.12.21 11:21:40] basil: well, we were looking for information on emotet-based botnets
+[12/28/21 11:21:52] basil: but it's evolved monstrously now
+[12/28/221 11:22:01] jefferson: yeah.
+[28.12.21 11:22:27] jefferson: can you give me your thoughts on it in detail? what can it do, what technology do you think, functionality
+[12/28/221 11:22:37] jefferson: not right now, but later in the day.
+[12/28/221 11:22:43] jefferson: I'm gonna have to step away.
+[12/28/221 11:22:57] jefferson: I want an essay from you on him as you understand him
+[12/28/221 11:23:28] basil: I can look it up of course. But no guarantees. Directly (let's say "densely") I have not dealt with such questions
+[28.12.21 11:23:35] basil: but it's worth a try
+[28.12.21 11:23:37] basil: Of course
+[28.12.21 11:23:46] jefferson: yes, I need a subjective opinion
+[12/28/221 11:23:50] basil: let's see if I can get something to drink
+[12/28/221 11:23:54] basil: There's more
+[12/28/221 11:24:16] jefferson: i want to become him or something like him. i think we have the base
+[12/28/221 11:24:19] jefferson: just need to develop
+[12/28/221 11:24:58] basil: Time is running out. I'd like to show you some results on this spam bot. I want you to see them and it would make me feel better.
+[28.12.21 11:25:10] basil: I just ordered a VM
+[28.12.21 11:25:23] jefferson: we will be able to do it in operational mode after january. there is no sense now - the holidays
+[28.12.21 11:25:46] jefferson: locally - we can run it here at least all the holidays, no problem
+[28.12.21 11:25:51] jefferson: I'm not going anywhere yet
+[28.12.21 11:25:59] basil: That's exactly what I want to do
+[28.12.21 11:26:10] basil: there will be a local mail server
+[28.12.21 11:26:22] jefferson: ok, no problem
+[28.12.21 11:26:23] basil: so you can create a bunch of accounts without any problems
+[28.12.21 11:26:28] jefferson: I'm more here than not
+[28.12.21 11:26:35] jefferson: so let's do it
+[12/28/221 11:27:10] basil: okay. Okay. As soon as the VM is ready I'll post it so you can take a look at it and make sure
+[12/28/221 11:27:21] jefferson: Okay.
+[12/28/221 11:27:36] jefferson: And you take care of my request, please.
+[12/28/21 11:27:47] jefferson: i think we can get there soon
+[12/28/21 11:27:58] jefferson: https://twitter.com/ESETresearch/status/1469283546980392962
+[12/28/21 11:28:00] basil: okay. One more question. It's rather political.
+[12/28/21 11:28:37] basil: Do you have gpg?
+[28.12.21 11:28:52] basil: I would like to send an encrypted message
+[28.12.21 11:28:58] jefferson: https://twitter.com/VirITeXplorer/status/1474325193539698715
+[28.12.21 11:29:04] jefferson: no, unfortunately
+[28.12.21 11:29:08] jefferson: send it via password zapscu
+[28.12.21 11:29:18] jefferson: if you think it's insecure
+[28.12.21 11:29:29] basil: yes. the question is political.
+[12/28/221 11:29:43] jefferson: https://privatlab.com/note
+[28.12.21 11:29:52] jefferson: under password, destroy at 1 read
+[28.12.21 11:32:37] basil: H1WyxdRM
+[12/28/221 11:32:45] basil: https://privnote.com/AH2RLzsA
+[28.12.21 11:34:22] jefferson: no, it won't be a secret
+[28.12.21 11:34:30] basil: okay. I got it.
+[28.12.21 11:34:47] jefferson: but we have a base for that? so why not become "it"?
+[28.12.21 11:35:09] jefferson: it's not about playing games behind the scenes, it's about results.
+[12/28/221 11:35:16] jefferson: so we're good.
+[12/28/221 11:35:24] basil: Okay. Okay.
+[28.12.21 11:35:28] jefferson: i'll talk to sylvester when he gets back.
+[28.12.21 11:35:32] jefferson: he won't mind, I'm sure.
+[28.12.21 11:35:42] basil: this corporate ruckus is wearing me out too
+[28.12.21 11:35:54] jefferson: And the others hardly care about these details, they need the result
+[28.12.21 11:35:54] basil: Angry and infuriating
+[28.12.21 11:36:16] jefferson: it's okay.
+[28.12.21 11:36:29] jefferson: take care of the essay and the details you see
+[12/29/221 10:50:02] basil: hello
+[29.12.21 11:42:42] jefferson: hi
+[29.12.21 11:43:46] basil: I did an "unofficial assignment" yesterday
+[29.12.21 11:44:19] basil: This emotet has a modular structure. That's the most important thing in my opinion
+[29.12.21 11:44:28] jefferson: How's it going?
+[29.12.21 11:45:00] jefferson: yes, it's just like a tric
+[12/29/221 11:45:02] jefferson: modular.
+[12/29/221 11:45:15] basil: That's right.
+[12/29/221 11:45:24] basil: So there's a downloader that gets into the victim's computer through the playmo
+[29.12.21 11:45:25] basil: The letter
+[29.12.21 11:45:53] basil: communicates with shell server and depending on server settings downloads the module via https
+[29.12.21 11:46:05] jefferson: but emote is entirely a spam bot as I estimate it
+[29.12.21 11:46:15] basil: No
+[29.12.21 11:46:20] basil: not really
+[29.12.21 11:46:45] basil: as I understood from the information I could find
+[29.12.21 11:46:54] basil: It has a module
+[29.12.21 11:46:59] basil: Two modules to be exact
+[29.12.21 11:47:28] basil: responsible for collecting data from Outloook
+[29.12.21 11:47:39] basil: he also does the mailing
+[29.12.21 11:47:52] jefferson: yeah, he's looting and mailing
+[29.12.21 11:48:01] basil: This is all about emotet's work with Outlook
+[29.12.21 11:48:05] basil: we have
+[29.12.21 11:48:09] basil: in my opinion
+[29.12.21 11:48:10] jefferson: he has both outlook and sanderbird
+[29.12.21 11:48:30] jefferson: we do, yes. now we need to think about working with sanderbird
+[29.12.21 11:48:41] basil: sanderberd I think we can glue
+[29.12.21 11:48:56] jefferson: and i also have a suggestion. i know that emomte is watching the processes
+[29.12.21 11:49:07] basil: yes
+[29.12.21 11:49:08] basil: but this
+[29.12.21 11:49:13] basil: as I understood
+[29.12.21 11:49:15] jefferson: or installed software
+[29.12.21 11:49:23] basil: Yes
+[29.12.21 11:49:52] basil: there are 3 tasks that are global for it
+[29.12.21 11:51:13] basil: It's a presence check on the computer, then it can modify the https traffic (with JS code injection) and another one checks if it's running in the virtual machine
+[29.12.21 11:51:17] basil: machine
+[29.12.21 11:51:51] basil: detecting VMs is a prpter task
+[29.12.21 11:51:55] basil: cryptors
+[29.12.21 11:51:56] basil: *
+[29.12.21 11:52:27] basil: here's how to do https traffic modification not really
+[29.12.21 11:52:29] basil: got it
+[29.12.21 11:52:30] jefferson: sorry. write all what you think. i'll be back in 15 minutes. i have a friend coming over for a word, standing by the door
+[29.12.21 11:52:56] basil: I'm here - I'm not going anywhere
+[12/29/221 11:53:23] basil: As soon as you show up, let me know - we'll continue. It's better to have a dialogue after all. In my opinion.
+[29.12.21 11:56:55] basil: test
+[29.12.21 12:09:56] jefferson: I'm here
+[29.12.21 12:10:03] basil: okay.
+[29.12.21 12:10:25] basil: So basically (if at all) globally
+[29.12.21 12:10:34] basil: it's a trick
+[29.12.21 12:10:58] basil: I have a version as a dll which has already been run with a trike
+[29.12.21 12:11:45] basil: the only thing is that outlook functionality is entirely contained within a single module
+[29.12.21 12:11:56] basil: that's not very good in my opinion
+[29.12.21 12:12:05] basil: it should be split up
+[29.12.21 12:12:37] jefferson: well, we understand each other. i also studied and in future iterations i want to get something similar
+[29.12.21 12:12:51] jefferson: I just wanted to make sure I wasn't wrong
+[29.12.21 12:13:06] jefferson: that's why I wanted a non-delta opinion
+[29.12.21 12:13:11] basil: so our views coincided?
+[29.12.21 12:13:15] jefferson: yes
+[29.12.21 12:13:22] basil: Okay.
+[29.12.21 12:13:41] basil: if you want to change something else, I suggest to start from the loader
+[29.12.21 12:13:48] jefferson: I'll tell you my vision of the situation today
+[29.12.21 12:13:51] jefferson: yes, exactly.
+[29.12.21 12:14:14] jefferson: at boot level I want the bot to be able to determine what is in the system and what modules will be relevant in it
+[29.12.21 12:14:51] jefferson: and the main models will be outlook with all its features and sanderbird with all the possible actions
+[29.12.21 12:15:01] jefferson: whether it's grabbing or grabbing+distribution
+[29.12.21 12:15:38] jefferson: well, in general, we go to modularity
+[29.12.21 12:15:49] jefferson: we don't have a modular system now.
+[29.12.21 12:15:59] basil: No . everything in one file
+[29.12.21 12:16:11] basil: but breaking it down into modules is realistic
+[29.12.21 12:16:14] basil: I think so
+[29.12.21 12:16:17] jefferson: but with this base we can split up
+[29.12.21 12:16:28] jefferson: exactly
+[29.12.21 12:16:58] basil: the only thing . I'd like to make some remarks about the download.
+[29.12.21 12:17:14] basil: bootloader should be brought to perfection
+[29.12.21 12:17:28] jefferson: yes
+[29.12.21 12:17:36] jefferson: do you have any ideas about that?
+[29.12.21 12:17:45] basil: i.e. leave the dll loader and the primary initialization of the server connection in it
+[29.12.21 12:17:57] basil: Not exactly ideas
+[29.12.21 12:18:04] basil: there are some concerns rather
+[29.12.21 12:18:12] basil: concerns of this kind
+[12/29/12/21 12:19:08] basil: At the moment the cross-digit implementation is implemented by creating a different digit capacity process and injecting code into that process. That's not very good.
+[29.12.21 12:19:21] basil: better not to create unnecessary processes
+[12/29/12/21 12:19:58] basil: there is a heavens gate technique. It seems to work. But I could not run it.
+[29.12.21 12:20:43] basil: the rest is a question of code debugging
+[29.12.21 12:20:47] basil: it can be done
+[29.12.21 12:21:14] jefferson: let's create a text point by point, and when sylver comes out, we'll ask him what and where to get it
+[29.12.21 12:21:50] jefferson: that is:
+
+1. loader
+1) the question is
+2) the question is
+[29.12.21 12:21:51] jefferson: etc.
+[29.12.21 12:22:03] jefferson: by the way, when will it be?
+[29.12.21 12:22:34] basil: I can't answer the question. Probably went somewhere for the New Year holidays. He does not report to me.
+[29.12.21 12:22:41] basil: I do.)
+[29.12.21 12:22:56] jefferson: You just fill out some notes for yourself, and then we'll start moving.
+[29.12.21 12:23:14] jefferson: yes, and the loaders are also there in fact.
+[29.12.21 12:23:29] jefferson: you can borrow something from somewhere
+[29.12.21 12:23:33] basil: there's a loader for crypto
+[29.12.21 12:23:44] basil: already ready and working
+[29.12.21 12:23:58] jefferson: okay
+[29.12.21 12:24:01] jefferson: all the more
+[29.12.21 12:24:32] jefferson: well, the main thing is that the idea is clear, what I want to transform into in the near future)
+[29.12.21 12:24:52] basil: ok
+[29.12.21 12:25:28] jefferson: you can do it, right? I don't set unattainable goals, do I?
+[29.12.21 12:25:48] jefferson: i haven't worked for a year, i'm hungry. i want to work for the next year
+[29.12.21 12:25:52] basil: I think not. I don't see any fundamental problems.
+[29.12.21 12:26:09] basil: I don't see any
+[29.12.21 12:26:40] jefferson: well, others won't either
+[29.12.21 12:26:54] jefferson: little by little we'll start working, and then we'll roll everything out as a finished project
+[29.12.21 12:27:17] basil: ok
+[29.12.21 12:28:57] jefferson: meanwhile, write notes on each item
+[29.12.21 12:29:02] jefferson: we'll take it from here.
+[29.12.21 12:30:01] basil: you can try. the supervisor will come back - then we'll let him know, and he will correct what you can do, what is better to do
+[29.12.21 12:30:13] jefferson: yes
+[29.12.21 12:30:21] jefferson: we just need to create an infobase
+[29.12.21 12:31:04] jefferson: I'll give you my initial thoughts today
+[29.12.21 12:31:08] jefferson: later
+[29.12.21 12:31:22] jefferson: I need a nap, I slept for two hours, my head is not thinking straight
+[29.12.21 12:31:51] basil: ok. as you say. sleep is the best debugger)))
+[29.12.21 12:32:02] jefferson: that's right.
+[12/29/12/221 12:32:05] jefferson: on line
+[29.12.21 16:31:29] basil: test
+[29.12.21 16:31:33] jefferson: check.
+[29.12.21 16:32:23] jefferson: i'll tell you an idea. i think that idea perfectly describes what i want from the software and today's conversation. it's not the beginning, not the end of your mission statement, but just a description of the algorithm
+[29.12.21 16:40:00] basil: don't write too much. better in parts. it might fail
+[29.12.21 16:40:17] jefferson: imagine 2 tasks in the admin panel. each of the tasks is a mailing (the original task)
+
+Tusk 1: it is assigned its own personal binary with its own identifier, which allows this binary to communicate strictly with its tusk (stats, progress, etc...not important yet). this tusk has its own text and a set of its attachments (Word documents). We upload our binary to the online trike, the bot begins to find the necessary machines and send them our text with our attachments. the attachment, in turn, runs again a binary of our similar to the emote, only it already has a binary from Task 2
+
+Tusk 2: everything is the same as in tusk 1, except that we also have the ability to use our spam bot as a loider, and the loider has its own nuances of configuration. we can set a timer for starting a secondary load. that is, for example, 30 seconds after starting the spam bot our software runs the same trike on this machine
+[29.12.21 16:41:49] jefferson: it's rambling, but I think it's a pretty good option. i.e. it's self-replicating of sorts
+[29.12.21 16:42:06] basil: now. moment.
+[29.12.21 16:42:08] jefferson: we sent the text with the attachment and we've run what we eventually need to run
+[29.12.21 16:42:11] basil: I'll read it.
+[29.12.21 16:43:07] jefferson: there may be more than 2 such tasks
+[29.12.21 16:43:21] jefferson: but 5, 10 and so on
+[29.12.21 16:43:49] jefferson: that is, a kind of conveyor
+[29.12.21 16:47:02] basil: I understand that the task comes down to transferring software that already exists to the trike platform. And the use of the functional, which is already working as a tricks module. Including downloading modules of our bot as a separate trk module?
+[29.12.21 16:47:06] basil: I understand correctly
+[29.12.21 16:47:08] basil: ?
+[29.12.21 16:47:29] jefferson: no, not quite
+[12/29/221 16:48:51] jefferson: tricks appear here in two cases. 1. we need to get the online machines from where we give life to our bot online. 2. trk is our main payload. we're multiplying trk this way. well, trk can be replaced with anything. i didn't call it payload for nothing
+[29.12.21 16:49:44] jefferson: that means, for example, by taking 1000 online cars on a trike, we brought some new cars to the same trike, which it didn't have yet
+[29.12.21 16:50:54] basil: i.e. use the tric network to reproduce our software and our downloader as the basis for the reproduction of the tric
+[29.12.21 16:51:00] basil: Something like this
+[29.12.21 16:51:10] jefferson: well, basically yes
+[29.12.21 16:52:10] basil: I think the trike loader is already there. Basically the module for it was also created
+[29.12.21 16:52:15] basil: And even tested
+[29.12.21 16:52:23] jefferson: a mailing list module?
+[29.12.21 16:52:28] basil: yes
+[29.12.21 16:52:33] basil: But there's a problem
+[29.12.21 16:52:34] jefferson: how long ago was it?
+[29.12.21 16:52:53] basil: we have cross-digit use of outllok
+[29.12.21 16:53:04] jefferson: yes
+[29.12.21 16:53:06] basil: i.e. it doesn't matter what digit capacity
+[29.12.21 16:53:44] basil: but, as I remember, on 64 bit machines can run only 64 bit binary
+[29.12.21 16:53:52] basil: we have 32 binary
+[29.12.21 16:54:08] jefferson: we need our own loader
+[29.12.21 16:54:14] jefferson: different from tric
+[29.12.21 16:54:23] jefferson: cross-platform
+[29.12.21 16:54:24] basil: here
+[29.12.21 16:54:35] basil: that's the problem
+[29.12.21 16:54:39] jefferson: that's my point
+[29.12.21 16:54:40] basil: Maybe
+[29.12.21 16:54:53] basil: cross-platform or cross-digit
+[29.12.21 16:54:55] basil: ?
+[29.12.21 16:55:12] jefferson: cross-bit, doesn't matter. the one that gets around the problem you described
+[29.12.21 16:55:38] jefferson: plus the trick is so common, including its loader, that it will die quickly
+[29.12.21 16:55:47] jefferson: so we need a unique product
+[29.12.21 16:55:52] jefferson: that's where we start
+[29.12.21 16:56:14] basil: I think you can even implement it yourself
+[29.12.21 16:56:43] jefferson: let's do it. if it works, I'll share my fee with you
+[29.12.21 16:56:53] basil: I think so. Maybe my elders have a different opinion.
+[29.12.21 16:57:01] basil: ooh....
+[29.12.21 16:57:07] basil: I was intrigued)))
+[29.12.21 16:57:11] jefferson: well, we'll find out in the process
+[29.12.21 16:57:13] basil: you are intrigued)))
+[29.12.21 16:57:51] jefferson: well, let's take a project for two. if its implementation will not have any pgerad, we'll split the duties. you take care of it, i'll take care of the development, ideas and stuff like that
+[29.12.21 16:58:11] jefferson: if it will yield results, then why not share them if everyone did something for it?)
+[29.12.21 16:58:26] basil: That sounds fascinating, of course... I should try it.
+[29.12.21 16:58:31] basil: let's try it
+[12/29/221 16:58:34] jefferson: Mm-hmm.
+[29.12.21 16:58:44] basil: If it gets any better
+[29.12.21 16:58:50] basil: from the starting point
+[29.12.21 16:59:20] jefferson: how long ago was this module for Trick tested? I understood that everything was stalled there. because it seems to have been discussed long ago
+[29.12.21 16:59:37] jefferson: And I don't see such a feature in the avs
+[29.12.21 16:59:43] jefferson: they're all over the tricks
+[12/29/221 17:00:53] basil: well, it happened. I think we tested it with eugene. I think back in the summer. I think it worked. At least my current implementation provides for building dll
+[29.12.21 17:00:53] jefferson: emote+trick - you can see
+[29.12.21 17:01:06] basil: assembly as dll
+[29.12.21 17:01:20] basil: I told you the problem is in the cross-digit capacity
+[29.12.21 17:01:59] basil: the trick works by this principle on 64 bit systems only 64 bit binary. On 32 bit systems only 32 binary binaries
+[29.12.21 17:02:47] basil: as soon as we were told that there is no way to run a 32 bit system from a 64 bit system
+[29.12.21 17:02:54] basil: so it became quiet at once
+[12/29/221 17:03:21] basil: even a dll was sent to some third-party organization for tests
+[29.12.21 17:03:38] basil: but there are very peculiar people there
+[29.12.21 17:04:19] basil: Well, never mind
+[29.12.21 17:04:29] basil: In short it was all triggered by the trick
+[29.12.21 17:05:01] basil: I see one way to solve this problem
+[29.12.21 17:05:05] jefferson: yes, I see it. but judging by the fact that the information is minimal - nothing is used
+[29.12.21 17:05:21] basil: with crosspollination
+[29.12.21 17:05:21] jefferson: otherwise there would be a lot of information
+[29.12.21 17:06:00] basil: well, you see, apparently, the management here didn't agree with the other management or they scored or I don't know
+[29.12.21 17:06:09] basil: what else could have happened there
+[12/29/221 17:09:15] basil: Okay. Let me try to do something with this bootloader.  So that it's at a minimum.
+[29.12.21 17:11:11] jefferson: well, at least google gives the minimum of information on this subject
+[29.12.21 17:11:27] jefferson: just take the initiative and give it a try.
+[29.12.21 17:11:50] jefferson: there are separate mentions of these chips. some are a year old, others as old as 19
+[29.12.21 17:12:05] jefferson: here i found such a dll model mlcDll32
+[29.12.21 17:12:11] jefferson: it's just like the outlook
+[29.12.21 17:12:30] jefferson: but google me as of January 8 this year indicates that it was caught
+[29.12.21 17:12:54] jefferson: if you search, you might be able to find it, but with mass use, I think, it would be mentioned often
+[29.12.21 17:13:11] basil: yes. most likely it would
+[12/29/221 17:16:05] basil: ok. i'll try to make this loader. maybe something will come out of it
+[29.12.21 17:16:18] jefferson: yes, try it
+[29.12.21 17:16:28] jefferson: maybe I can develop this kind of software
+[29.12.21 17:16:41] jefferson: moreover, we already have some experience
+[29.12.21 17:16:50] jefferson: by the mailer
+[29.12.21 17:16:54] basil: Okay.
+[29.12.21 17:17:03] jefferson: I'll have to gather my thoughts over the holidays and make up my terms of reference.
+[29.12.21 17:17:16] jefferson: you'll have to write an admin panel and protect it somehow
+[29.12.21 17:20:37] jefferson: you'll have to think about the admin area
+[29.12.21 17:21:20] jefferson: I'll think about it too, I'll write my thoughts
+[05.01.22 13:27:43] basil: I have several questions. Among them is this. I should run our bot. There is a test machine (mine). It has outlook installed. There is a local mail server. Accounts have been set up. The run will take 10-13 minutes. Can we do it?
+[05.01.22 13:28:18] jefferson: In theory, we can.
+[05.01.22 13:28:21] jefferson: Why not?
+[05.01.22 13:30:01] basil: okay. I'll start the car now. I'll give you access. See how it all works. Now in "greenhouse" conditions. If everything is as it should be. Then it would be desirable for you to see how it will work on your car. In principle, I have already done all this. But I would like the customer to make sure
+[05.01.22 13:30:26] jefferson: ok
+[05.01.22 13:35:06] basil: the test machine has the same ip as yours. only the port must be changed to 31153
+[05.01.22 13:35:10] basil: user:malte
+[05.01.22 13:35:26] basil: how will you connect?
+[05.01.22 13:35:32] jefferson: ok
+[05.01.22 13:35:39] basil: I'll tell you how it's arranged
+[05.01.22 13:37:19] jefferson: connected
+[05.01.22 13:39:18] basil: open outlook. You will see there 3 accounts. These are the local mail server accounts. In these accounts there are 2 mails sent. To each mail address. Do not delete anything. Just look at them and make sure everything is as I said.
+[05.01.22 13:39:34] basil: if everything is as I told you - report
+[05.01.22 13:41:21] jefferson: yes, I see two emails in the inbox
+[05.01.22 13:42:28] basil: great. Now, go into the admin area of the control server. I ran a test task there. It's already working. When you get there, let me know if it's ready.
+[05.01.22 13:43:13] jefferson: in the task running
+[05.01.22 13:44:33] basil: great. Now go back to the test machine and run the bot. Preferably through the context menu (right button). And run. That 2 bots would not run at the same time. File on the desktop
+[05.01.22 13:44:58] jefferson: I close outlook while doing this?
+[05.01.22 13:45:06] jefferson: or leave it open?
+[05.01.22 13:45:29] basil: close
+[05.01.22 13:46:02] jefferson: close/start
+[05.01.22 13:46:13] basil: ok. See what's in admin.
+[05.01.22 13:46:38] basil: here. it says in the log it's connected
+[05.01.22 13:46:52] basil: fine. Now we wait 5 min.
+[05.01.22 13:47:09] basil: In 5 min Outlook will start and mailing will start
+[05.01.22 13:47:34] jefferson: Got it.
+[05.01.22 13:47:42] jefferson: waiting
+[05.01.22 13:48:49] jefferson: how was the new year?
+[05.01.22 13:49:08] basil: in labors)))
+[05.01.22 13:49:37] jefferson: good too)
+[05.01.22 13:51:33] jefferson: we have 5 minutes for a reason, right? is there timing in binar?
+[05.01.22 13:51:39] basil: yes
+[05.01.22 13:51:43] basil: exactly 5 minutes
+[05.01.22 13:52:12] basil: here's the mailing
+[05.01.22 13:52:22] basil: one minute per e-mail on average
+[05.01.22 13:52:30] jefferson: Mm-hmm.
+[05.01.22 13:53:01] jefferson: will it always be like this or is this a test mode?
+[05.01.22 13:53:09] jefferson: 1 minute per email
+[05.01.22 13:53:46] basil: it depends on the specific outlook, mail, internet speed
+[05.01.22 13:53:54] basil: internet
+[05.01.22 13:54:13] basil: there are no artificial delays in sending
+[05.01.22 13:54:35] basil: artificial
+[05.01.22 13:55:53] jefferson: got it. it'll be faster in combat, right? just if we assume there're 100/200/1000 emails on each machine, then we need to speed it up
+[05.01.22 13:55:53] jefferson: previous version somehow handled it
+[05.01.22 13:56:03] jefferson: that's the one you have the sorts for
+[05.01.22 13:56:36] basil: you can try to put several recipients into one email
+[05.01.22 13:56:55] basil: but the exact time of sending is very variable
+[05.01.22 13:56:58] jefferson: that's what we did.
+[05.01.22 13:57:05] basil: ok. ok.
+[05.01.22 13:57:21] jefferson: an average of 9-12 addresses per group
+[05.01.22 13:57:48] jefferson: I'll be right back.
+[05.01.22 13:57:49] basil: you can specify in the server settings how many emails should be in one email. In bot it is provided
+[05.01.22 13:59:04] basil: let me know when you come back
+[05.01.22 14:05:15] jefferson: I'm here
+[05.01.22 14:06:43] basil: well, I think the bot's done
+[05.01.22 14:07:32] basil: go back to the machine. Open outlook. Make sure the e-mails came in. Look at the sender address.
+[05.01.22 14:07:46] basil: Let me know when you're sure.
+[05.01.22 14:09:04] jefferson: yes, I did
+[05.01.22 14:09:06] jefferson: in principle, I think we have made progress
+[05.01.22 14:09:19] jefferson: then I'll think about how to test it and move on
+[05.01.22 14:09:29] basil: one more thing
+[05.01.22 14:10:22] basil: go to admin. you can see there in the stats sent - 6, and addressees - 3
+[05.01.22 14:10:39] jefferson: yes, I already looked at that point
+[05.01.22 14:10:59] jefferson: we have 3 unique addresses, distributed across 3 accounts
+[05.01.22 14:11:05] jefferson: 2 for each
+[05.01.22 14:11:12] basil: yes. exactly so
+[05.01.22 14:11:47] basil: Sending to multiple recipients in one email - no problem
+[05.01.22 14:11:52] basil: it's possible
+[05.01.22 14:12:23] jefferson: that's how it should be
+[05.01.22 14:12:34] jefferson: otherwise we'll be sent to the end of the century
+[05.01.22 14:12:47] jefferson: sylver will come, we'll see what he has to say.
+[05.01.22 14:12:56] jefferson: or maybe there's nothing to tell
+[05.01.22 14:13:38] jefferson: another question. we will have a bot running simultaneously on hundreds of machines - parallel tasks will be running, right?
+[05.01.22 14:14:06] basil: I can't say for sure
+[05.01.22 14:14:18] basil: I personally tested all this on one task
+[05.01.22 14:14:20] jefferson: does it depend on the server?
+[05.01.22 14:14:33] jefferson: in bianr there are no limitations, right?
+[05.01.22 14:14:46] basil: no.
+[05.01.22 14:15:04] jefferson: well, then we'll talk about it with those who made the server
+[05.01.22 14:15:12] basil: Okay.
+[05.01.22 14:15:27] jefferson: the most important thing is that it would work in parallel
+[05.01.22 14:15:31] jefferson: otherwise there's no point
+[05.01.22 14:16:35] basil: Now for a project like emotet. I'm still in the process. In the next day I will let you know what exactly the results have been achieved and how I see it all
+[05.01.22 14:16:52] jefferson: fine, I'm waiting.
+[05.01.22 14:16:56] basil: ok.
+[06.01.22 10:16:08] jefferson: hi
+[06.01.22 10:16:24] basil: hello
+[06.01.22 10:16:39] jefferson: I wrote to martin about the speed of the servant
+[06.01.22 10:16:47] jefferson: let's find out now, how to reply
+[06.01.22 10:16:54] basil: ok
+[06.01.22 10:17:37] jefferson: I asked him that
+
+We have a question about spam-bot speed. is there any limitation on this from the server side? for example, if the bot will be run on 500 machines simultaneously - will the tasks be executed on them in parallel?
+[06.01.22 10:17:42] jefferson: do you have any questions?
+[06.01.22 10:17:49] jefferson: just to find out everything at once
+[06.01.22 10:17:54] jefferson: I may have overlooked something
+[06.01.22 10:20:11] jefferson: sylver will be after 10.01
+[06.01.22 10:20:39] jefferson: by that time he also should have a bunch of questions about intended transformation of spam-bot into a more serious software
+[06.01.22 10:23:56] basil: a moment
+[06.01.22 10:24:53] basil: Yes, in principle, I have no special questions at the moment. I just don't understand one thing.
+[06.01.22 10:25:53] basil: There are several tasks running on the server. How should the bot know which task it should connect to?
+[06.01.22 10:25:55] basil: ?
+[06.01.22 10:26:00] basil: this is what I don't understand
+[06.01.22 10:26:31] basil: parallel operation of the tasks I think is not a problem
+[06.01.22 10:26:48] jefferson: I wrote it to Martin
+[06.01.22 10:26:55] jefferson: I'll let you know when he responds
+[06.01.22 10:27:06] basil: ok. ok.
+[06.01.22 10:29:13] basil: There is one more organizational issue here. I have alerts working in this place right now. If I do not answer for a long time, please let me know in the toad. I am not on purpose, so long do not respond
+[06.01.22 10:29:47] jefferson: okay.
+[06.01.22 10:42:13] jefferson: Hi. Tasks are sequential, it's necessary to put a task blake tasks to parallele. Hence the answer to blaze, there is always 1 task running on the server, the others are in the queue
+[06.01.22 10:42:30] jefferson: that's my answer)
+[06.01.22 10:42:45] jefferson: it was not for nothing that I wondered how the servant is organized
+[06.01.22 10:43:17] jefferson: now we would send letters, as they say "from fence to sunset"
+[06.01.22 10:44:50] basil: in principle, you can try to run a bot with an argument. It will pass this argument to the server. And then let the server figure out what task to apply this bot to
+[06.01.22 10:45:02] basil: You can try it that way
+[06.01.22 10:45:08] jefferson: you can, yes.
+[06.01.22 10:45:31] jefferson: can you discuss it with Martin?
+[06.01.22 10:45:47] basil: Okay. I'll try now.
+[06.01.22 10:46:14] basil: There's just one question. Should the tasks be configured with different mailing parameters? Why this paralleling is necessary?
+[06.01.22 10:46:47] basil: In fact it's necessary if different tasks have different settings
+[06.01.22 10:47:12] jefferson: ah, we all misunderstood each other
+[06.01.22 10:47:17] jefferson: 1 task on many machines
+[06.01.22 10:47:39] jefferson: so we have 1 text, 1 attachment array and a bunch of simultaneous runs
+[06.01.22 10:48:15] basil: well, what a problem then
+[06.01.22 10:48:18] basil: ?
+[06.01.22 10:48:24] jefferson: then there are none
+[06.01.22 10:48:31] basil: Or are you afraid that server won't hold?
+[06.01.22 10:48:40] jefferson: there was just a misunderstanding :)
+[06.01.22 10:48:52] jefferson: it can handle it, I guess.
+[06.01.22 10:48:54] basil: okay then
+[06.01.22 10:49:00] basil: okay.
+[06.01.22 10:49:12] jefferson: but it's not definite. you have to test it.
+[06.01.22 10:49:23] jefferson: we caught a lot of hang-ups on the grabbing mode
+[06.01.22 10:49:43] jefferson: something always mismatched in the process
+[06.01.22 10:50:03] basil: then the next question
+[06.01.22 10:50:35] basil: why there hangs goes the data incorrectly or there are too many of them?
+[06.01.22 10:50:52] basil: nginx is supposed to be an asynchronous server
+[06.01.22 10:51:03] basil: it's heavily loaded
+[06.01.22 10:51:05] jefferson: i can't tell you that. i only saw how admin was up, and martin fixed something there
+[06.01.22 10:51:25] basil: okay, let me try to write it myself
+[06.01.22 10:51:28] basil: now
+[06.01.22 10:51:38] basil: or better to chat?
+[06.01.22 10:51:58] jefferson: I think it's better for him now
+[06.01.22 10:52:04] jefferson: just watch, I have an idea
+[06.01.22 10:52:57] jefferson: if we're going to make this software the way we want it to be, we should make it so that several tasks can run simultaneously. and each task should get its own binary. but the binary should be a laader
+[06.01.22 10:54:03] basil: theoretically, it could be solved by using different ip addresses in the binary than the current binary
+[06.01.22 10:54:24] jefferson: ip addresses of what?
+[06.01.22 10:54:46] basil: ip addresses of pads
+[06.01.22 10:55:09] basil: through which we connect to the server
+[06.01.22 10:55:20] basil: that's supposed to work
+[06.01.22 10:56:03] jefferson: on the one hand yes, but better to look for solution on the server
+[06.01.22 10:56:09] jefferson: well, I think so
+[06.01.22 10:56:19] jefferson: that's subjective
+[06.01.22 10:56:49] jefferson: so we should wait for sylver and ask him all our questions
+[06.01.22 10:56:58] jefferson: he will evaluate from the outside
+[06.01.22 10:57:55] basil: if you need a sylver as a technical expert, and not as an executive (from whom you should expect "approvals"), then you can go to elroy now
+[06.01.22 10:58:10] basil: I was initially involved in this project with him
+[06.01.22 10:58:43] basil: he is not weaker than sylver in technical matters. I think so.
+[06.01.22 11:00:00] jefferson: no problem, you can go to him
+[06.01.22 11:00:01] jefferson: I'm just less familiar with him
+[06.01.22 11:00:21] jefferson: you can text him for advice
+[06.01.22 11:00:40] jefferson: I'll put the mess in my head into a single picture and write him back
+[13.01.22 11:38:07] jefferson: hi.
+[13.01.22 11:38:39] basil: hello
+[13.01.22 11:39:02] jefferson: hello! Now they are building virtual machines to run in parallel on multiple machines
+[13.01.22 11:39:18] jefferson: I think tomorrow or Monday we'll test the spambot tasks in parallel
+[13.01.22 11:39:28] jefferson: and we'll try to run it on live machines
+[13.01.22 11:39:35] jefferson: I'm getting the database ready to go
+[01/13/22 11:40:24] basil: Good. Perfect, in fact. Do I owe you a binary? And I don't think gaskets work there anymore. Can I write to the group about the gaskets?
+[I don't know what kind of vpc they give them, today they work, tomorrow they don't.
+[13.01.22 11:41:18] jefferson: well, i'll write in advance
+[13.01.22 11:41:27] jefferson: there are testers registering emails
+[13.01.22 11:41:56] jefferson: if they don't do it today, then it will be ready on Monday. i plan to leave tomorrow at noon. i want to change the region for a while
+[13.01.22 11:42:25] basil: ok. ok.
+[13.01.22 11:42:28] basil: accepted
+[13.01.22 11:43:08] jefferson: let's get back to work, I have a plan to get a small team together here and work as a team. if anything, you are invited)
+[13.01.22 11:43:16] jefferson: I'm too tired to work by myself already
+[13.01.22 11:43:43] basil: ok. Thanks for the invitation. Always glad)))
+[13.01.22 11:43:45] jefferson: there's one more person who does mailings
+[13.01.22 11:44:20] basil: Should I contact him? Or already when you come back ?
+[13.01.22 11:44:32] jefferson: that's later
+[13.01.22 11:44:52] jefferson: these are just hypothetical plans.
+[13.01.22 11:45:22] basil: ok. Let's put it this way.
+[13.01.22 11:45:24] basil: Ok.
+[13.01.22 11:47:13] basil: anything else?
+[13.01.22 11:47:38] jefferson: no, that's all for now.)
+[13.01.22 11:48:07] jefferson: blake is also fixing some stuff for me now
+[13.01.22 11:48:13] jefferson: issuance rotator, for example
+[13.01.22 11:48:27] jefferson: still to talk to the person who does the docs
+[13.01.22 11:48:31] jefferson: can't get a hold of it
+[13.01.22 11:48:40] jefferson: need clarity on metadata in the docs
+[13.01.22 11:48:48] jefferson: there's a huge list
+[13.01.22 11:49:50] basil: okay. When you need my presence, beep me. I'm usually in touch every day.
+[13.01.22 11:50:01] jefferson: okay.
+[13.01.22 11:50:08] jefferson: do you know hta?
+[13.01.22 11:57:43] basil: a moment
+[13.01.22 11:58:53] basil: well specifically hta most likely not. But I used to write in javascript
+[13.01.22 11:59:09] basil: you have to do something specific?
+[13.01.22 12:04:22] basil: I'll have to see. Maybe scripts are supported in the body of the email. It supports Html.
+[13.01.22 12:04:31] basil: That would be perfect.
+[13.01.22 12:04:54] jefferson: I'll give you a sample of what I have and use it as an example to explain what I want.
+[13.01.22 12:05:21] basil: ok. OK
+[13.01.22 12:05:24] basil: no problem
+[13.01.22 12:06:29] basil: Can I ask you one little question?
+[13.01.22 12:12:56] jefferson: yes
+[13.01.22 12:15:39] basil: No. Not anymore. I figured it out. It's okay. Anyway, I'm waiting for you to be there.
+[18.01.22 17:14:55] basil: Hello.
+[19.01.22 14:35:28] jefferson: hi.
+[19.01.22 14:35:42] jefferson: I showed up late yesterday
+[19.01.22 14:35:47] basil: hello
+[19.01.22 14:36:30] basil: The news is not very good. But definitely not bad.
+[19.01.22 14:37:21] basil: I did a mailing by putting several recipients into one email. As a result 56 e-mails were sent in about 7 minutes.
+[19.01.22 14:37:29] basil: I think it's better still
+[19.01.22 14:37:59] jefferson: yeah, not bad in principle
+[19.01.22 14:38:30] jefferson: Well, you see, until you run hundreds of cars - all this stuff is more like guesswork
+[19.01.22 14:39:31] basil: Okay. I wanted to brag. Anyway, I seem to be doing okay. As soon as you say, we can start in "stress" mode.
+[19.01.22 14:41:34] jefferson: yes, I got it) I just have a second line on this bot
+[19.01.22 14:41:42] jefferson: I explain to people the meaning of their tests
+[19.01.22 14:41:58] jefferson: synchronicity/parallelism
+[19.01.22 14:42:09] basil: okay then
+[19.01.22 14:43:27] jefferson: by the way
+[19.01.22 14:43:45] jefferson: we have a timing of 300 seconds
+[19.01.22 14:43:55] jefferson: if we reduce it, what do we lose?
+[19.01.22 14:45:45] basil: There was a story about this timing. Something was discussed about the fact that when the bot starts, Outlook (its window) can be open. But if you want, you can reduce timing.
+[19.01.22 14:46:00] jefferson: it's better to reduce
+[19.01.22 14:46:15] jefferson: do not make it shorter, but make it many times shorter
+[19.01.22 14:46:24] jefferson: 5 minutes makes no sense
+[19.01.22 14:46:25] basil: okay. a minute or less
+[19.01.22 14:46:31] basil: 30 sec
+[19.01.22 14:46:32] basil: ?
+[19.01.22 14:46:38] jefferson: i think a minute
+[19.01.22 14:46:45] basil: ok.
+[19.01.22 14:47:55] jefferson: try to test tomorrow or friday finally
+[19.01.22 14:48:13] jefferson: otherwise, I just smelled the whole story and took off the day before
+[19.01.22 14:48:23] jefferson: reville story
+[19.01.22 14:48:45] basil: Well, safety must be paramount in our business.
+[19.01.22 14:49:01] basil: you don't want any money
+[19.01.22 14:49:06] jefferson: i don't know if it's a performance or not, but i could have had something to do with some of their adventures
+[19.01.22 14:49:16] basil: performance
+[19.01.22 14:49:19] basil: sure
+[19.01.22 14:49:35] basil: you must report to your overseas partners
+[19.01.22 14:49:44] jefferson: well, you see, nobody really knows anything, but your nerves do it all
+[19.01.22 14:51:30] basil: I'm a little out of it. And sylver doesn't show up online. But Franz says it's okay. We have to wait a little.
+[19.01.22 14:51:49] jefferson: you don't know? there's no more sylver
+[19.01.22 14:52:10] basil: That's what I don't know
+[19.01.22 14:52:24] basil: I don't like it myself
+[19.01.22 14:52:26] jefferson: no, that statement was
+[19.01.22 14:52:38] basil: That's a statement
+[19.01.22 14:52:42] basil: ahrinet!
+[19.01.22 14:53:00] jefferson: well, leave it all in this chat for now. later, everyone will report
+[19.01.22 14:53:11] basil: as you wish
+[19.01.22 14:53:12] jefferson: nothing should change globally
+[19.01.22 14:53:36] jefferson: instead of sylver it will be elroy. he hasn't been officially appointed yet
+[19.01.22 14:53:45] basil: silence is the basis for local activity
+[19.01.22 14:53:47] jefferson: something like that
+[19.01.22 14:54:01] basil: i've known elroy for a long time.
+[19.01.22 14:54:12] basil: I knew him better
+[19.01.22 14:54:18] basil: simpler or something
+[19.01.22 14:54:29] jefferson: you wrote about him that he's not worse as a technician
+[19.01.22 14:54:37] jefferson: than sylver
+[19.01.22 14:54:58] basil: yes. to be honest I can't remember exactly.
+[19.01.22 14:55:09] basil: but it's true about the technician
+[19.01.22 14:55:29] jefferson: well, we'll do business with him
+[19.01.22 14:55:40] jefferson: I just did business with sylver for many years
+[19.01.22 14:55:53] jefferson: got used to it, so to speak.
+[19.01.22 14:56:04] basil: I'm not asking for details. But he's fine.
+[19.01.22 14:56:05] basil: ?
+[19.01.22 14:56:08] basil: sylver
+[19.01.22 14:56:17] jefferson: yeah, I guess his nerves got the better of him.
+[19.01.22 14:56:28] jefferson: but even if it's not normal, who will tell me about it?)
+[19.01.22 14:56:44] basil: well, yes. What is true is true.
+[19.01.22 14:57:12] jefferson: but it all adds up to that, he just decided to leave, because the news frightened many
+[19.01.22 14:57:25] jefferson: he wrote me back in December about his concerns
+[19.01.22 14:57:42] jefferson: they were conspiracy theories
+[19.01.22 14:57:50] jefferson: similar to the events that took place
+[19.01.22 14:57:58] jefferson: so, everything is understandable
+[19.01.22 14:58:33] basil: of course there's not much to like in this whole story.
+[19.01.22 14:58:59] jefferson: but that's not the end of life
+[19.01.22 15:01:04] basil: Well, if life isn't over. Let me ask you - here's your proposal to organize "some" joint business. Is it still relevant? If I understand you correctly, of course.
+[19.01.22 15:01:23] jefferson: yes, it is.
+[19.01.22 15:02:10] jefferson: the most important thing is that the whole thing doesn't get in the way.
+[19.01.22 15:02:17] jefferson: but there seems to be no prerequisites for this
+[19.01.22 15:02:23] jefferson: everything is going on
+[19.01.22 15:02:35] jefferson: we just have a topic - one is not the man in the field
+[19.01.22 15:04:04] basil: ok. Then let me know when we can discuss it in more detail.
+[19.01.22 15:05:13] jefferson: okay.
+[02.02.22 08:35:37] basil: Test
+[02.02.22 08:35:41] jefferson: +
+[02.02.22 08:35:48] basil: You were sick too?
+[02.02.22 08:35:53] jefferson: yes
+[02.02.22 08:35:58] basil: How's it going in your area
+[02.02.22 08:36:13] basil: I just got better, they kicked me out of my bunk
+[02.02.22 08:36:24] jefferson: And you were in the hospital?
+[02.02.22 08:36:26] jefferson: ?
+[02.02.22 08:37:03] basil: yes. everything is tight. I could have done it at home - but they don't give antibiotics at home. Only in the hospital.
+[02.02.22 08:37:13] basil: It's like a bathhouse there now.
+[02.02.22 08:37:18] jefferson: I stayed home
+[02.02.22 08:37:23] jefferson: couple of days 38+
+[02.02.22 08:37:25] jefferson: then on the decline
+[02.02.22 08:37:29] basil: woo-hoo-hoo
+[02.02.22 08:37:43] basil: about the same picture
+[02.02.22 08:37:55] jefferson: everybody's got it now. omicron strain
+[02.02.22 08:38:01] basil: yeah?
+[02.02.22 08:38:05] jefferson: yeah
+[02.02.22 08:38:32] basil: this virus is weird
+[02.02.22 08:38:48] jefferson: omicron is very contagious, but easier
+[02.02.22 08:39:01] basil: wouldn't say..... Oh, come on.
+[02.02.22 08:39:09] basil: not pleasant
+[02.02.22 08:39:17] jefferson: yeah, nothing nice
+[02.02.22 08:39:21] basil: of course it's very exhausting
+[02.02.22 08:39:37] basil: okay. What's our program now?
+[02.02.22 08:39:59] jefferson: I'll find the testers today, let's test the synchronization of the work
+[02.02.22 08:40:06] basil: Okay.
+[02.02.22 08:40:12] jefferson: they're supposed to prepare the base
+[02.02.22 08:40:31] basil: okay. what should I do? wait for command?
+[02.02.22 08:40:36] jefferson: yes
+[02.02.22 08:40:40] basil: okay.
+[02.02.22 08:40:43] jefferson: The important thing is that you're on line.
+[02/18/222 13:37:44] basil: test
+[18.02.22 13:38:04] basil: great
+[18.02.22 13:43:13] basil: 84C21B2391603BE30CE0D27F6F40C5501C7A916BEA7E2C5E40A461FF5CDB233F1A1E2C16626B
+[18.02.22 13:52:24] jefferson: are you online?
+[18.02.22 13:52:26] jefferson: i texted you
+[18.02.22 13:53:04] basil: yes. try again. maybe you pressed the wrong button. it's the first time I've seen this messenger
+[18.02.22 13:53:29] basil: I did

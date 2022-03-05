@@ -1,0 +1,101 @@
+[21.09.21 10:31:43] basil: Hello
+[21.09.21 10:32:43] basil: There's a question about trike. Let me know how you can talk.
+[21.09.21 10:33:29] cesar: hi
+[21.09.21 10:33:42] cesar: what question?
+[21.09.21 10:34:32] basil: the question is this. What should be the prototype of the exported dll function, so that a trick could call it correctly?
+[21.09.21 10:35:35] cesar: should the dll be run from disk?
+[21.09.21 10:35:41] cesar: or from memory?
+[21.09.21 10:35:52] basil: from memory, as I understand
+[21.09.21 10:36:09] cesar: if from memory, then the start should be in DllMain
+[21.09.21 10:36:32] cesar: and you have to make 2 bits of dll 32 and 64
+[21.09.21 10:36:45] basil: it is possible.
+[21.09.21 10:37:54] cesar: startup will be in a separate process - finish the dll by ExitProcess
+[21.09.21 11:45:38] cesar: you uploaded for testing dll Angelo, there's start in the DllMain function, not in Start
+[21.09.21 11:45:52] cesar: and it's 32 bit
+[9/21/221 11:46:19] basil: Okay. I did it wrong. Well, how should you do it? Can I give you an example?
+[21.09.21 11:48:09] cesar: I don't understand, example of what?
+[21.09.21 11:48:22] cesar: there is a DllMain function
+[21.09.21 11:48:31] cesar: dll initialization
+[21.09.21 11:48:35] basil: there is.
+[21.09.21 11:48:36] cesar: function example?
+[21.09.21 11:48:37] basil: I know
+[21.09.21 11:48:54] basil: That's how it runs
+[21.09.21 11:49:07] basil: Remove Start?
+[9/21/221 11:50:40] cesar: `BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
+{
+	UNREFERENCED_PARAMETER(hinstDLL);
+	UNFERENCED_PARAMETER(lpvReserved);
+
+	if (fdwReason == DLL_PROCESS_ATTACH) {
+		//LOGA("Start\n");
+
+		DoWork();
+
+	}
+	return TRUE;
+}
+`
+[21.09.21 11:50:50] cesar: you can leave Start
+[21.09.21 11:51:28] cesar: and 64 bit version for the test at once throw in
+[21.09.21 11:51:47] basil: That's the thing
+[21.09.21 11:52:15] basil: I was told to make the bot 32bit and cross-bit
+[21.09.21 11:52:26] basil: That's why the dll is 32-bit
+[21.09.21 11:52:47] cesar: okay
+[21.09.21 11:53:23] cesar: cross-digit? i.e. you determine the version of the windup and inject it into the required 32 or 64 bit process?
+[21.09.21 11:55:15] basil: yes. More precisely, I determine the bit depth of the installed mail agents. If there's a 64-bit agent, you create a 64 process and an injection goes there. That's what I call it.
+[21.09.21 11:57:51] cesar: and this loader, let's call it so, works only on 32 bits?
+[21.09.21 11:58:47] basil: Well, in theory it should work in 64 bit systems as well. More precisely, it works that way. But the process it is launched from is 32 bit anyway
+[21.09.21 11:59:29] cesar: you need to make a 64-bit version of this loader
+[21.09.21 11:59:41] cesar: for the dll to be 64 bit
+[21.09.21 12:00:04] cesar: it will be injected into 64 bit process
+[21.09.21 12:01:52] basil: okay. now let's see what we can do
+[21.09.21 12:20:59] cesar: can you check 32 bit process, that was uploaded by Angelo, it starts in DllMain ?
+[21.09.21 12:22:47] basil: let's try it
+[21.09.21 12:23:17] basil: well, if you want to be sure, I can build it again
+[21.09.21 12:23:22] basil: do?
+[21.09.21 12:23:28] basil: Just in case
+[21.09.21 12:23:39] cesar: yes
+[21.09.21 12:23:53] cesar: let's check 32 bit version for now
+[21.09.21 12:24:36] cesar: as far as I understand, you have to run 32 bit version from 64 bit one if the agent is 32 bit
+[21.09.21 12:25:04] basil: no
+[21.09.21 12:26:16] basil: I run the 32 bit version. Then I check the bit depth of the mail client. And if it is 64 bit - I start 64 bit process and make injection into it.
+[21.09.21 12:26:42] cesar: I understand, but in 64-bit version of the dll, you have to do the opposite
+[21.09.21 12:26:49] basil: yes
+[21.09.21 12:26:59] basil: and how to do it now
+[21.09.21 12:27:37] cesar: you can make a variant to work with 64-bit client only for testing, if 32 is on the way out
+[21.09.21 12:28:05] basil: "if 32 on exit" I didn't understand this phrase
+[21.09.21 12:28:10] basil: rephrase it
+[21.09.21 12:29:08] basil: 64 bit client
+[21.09.21 12:29:10] cesar: if client is 32 bit, exit by ExitProcess
+[21.09.21 12:29:19] cesar: don't do anything yet
+[21.09.21 12:29:30] cesar: but you'll finish it later
+[21.09.21 12:29:46] basil: ok. i'll send you 64 bit dll
+[21.09.21 12:33:06] basil: https://file.io/XCLRzaZzqhXv
+[21.09.21 12:33:12] basil: V}zK~Oc%?vz*prHmlYyr@7O3e15%a7
+[21.09.21 12:34:01] cesar: ok
+[21.09.21 12:34:51] cesar: 32bit still don't understand
+[21.09.21 12:35:06] cesar: does it start from DllMain or Start ?
+[21.09.21 12:35:15] basil: From dll
+[21.09.21 12:35:20] basil: DLLMain
+[21.09.21 12:35:57] cesar: ok
+[21.09.21 12:48:12] basil: Question. One more time. Does Trick only support 64 bit dlls when working with 64 bit systems?
+[21.09.21 12:54:42] cesar: yes
+[21.09.21 12:55:36] basil: okay. I have to check 64 bit dlls first. There is no special trick there.
+[21.09.21 12:56:57] cesar: you mean exactly running from memory
+[21.09.21 12:57:09] cesar: you can run any bit rate from disk
+[21.09.21 12:57:26] basil: yeah, from memory
+[21.09.21 13:14:06] basil: the dll is run in the same process?
+[21.09.21 13:17:20] cesar: no, it creates a new process
+[21.09.21 13:17:31] cesar: that's why I wrote about ExitProcess(0)
+[21.09.21 13:24:20] basil: 1SYBv|EE$tGM6w}~SYD4H#tmx|ueul
+[21.09.21 13:24:35] basil: https://file.io/NcpjtV8C1ci1
+[21.09.21 13:25:17] basil: There was a small problem. The file for logs was not created. I should reload the dll.
+[21.09.21 13:25:26] cesar: ok
+[21.09.21 13:25:46] cesar: you test dll before issuing it?
+[21.09.21 13:26:01] cesar: at least via rundll32
+[21.09.21 13:27:18] cesar: or with LoadLibrary
+[21.09.21 13:28:40] basil: okay. let me check again
+[21.09.21 13:37:41] basil: it's running through the trick
+[21.09.21 15:12:18] cesar: great
+[9/23/221 18:17:51] basil: hello!
+[9/23/221 18:18:15] basil: hello!

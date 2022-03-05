@@ -1,0 +1,626 @@
+2020-06-22T12:00:15 buza -> fast
+Dear developers!
+I thank all who mastered the bug tracker and actively working in it, you are good)
+I encourage those of you who do not work with bugtracker at all, to get actively involved in working with it.
+The transition period is not so great, and it's already ending.
+I would not like to apply sanctions (
+
+2020-06-22T13:50:50 buza -> fast
+Dear developers!
+I thank all who mastered the bug tracker and actively works in it, you are good)
+I urge those of you who do not work with bugtracker at all, to get actively involved in working with it.
+The transition period is not so great, and it's already ending.
+I would not like to apply sanctions (
+
+2020-06-23T10:55:12 fast -> buza
+Hi.
+
+2020-06-26T10:10:26 fast -> buza
+hi
+
+2020-06-26T10:11:14 fast -> buza
+I'm for throwing a project in the repository.
+
+2020-06-26T10:11:19 fast -> buza
+https://n4iaacb37wmqclht.onion/fast/graber
+
+2020-06-26T10:11:43 fast -> buza
+I'd like you to appreciate
+
+2020-06-26T10:11:44 fast -> buza
+made comments
+
+2020-06-29T14:16:31 buza -> fast
+write me when you do.
+
+2020-06-29T14:53:22 buza -> fast
+write me when you do.
+
+2020-06-29T14:55:11 fast -> buza
+can we talk?
+
+2020-06-29T14:56:05 buza -> fast
+Not anymore, I'm out.
+
+2020-06-30T08:14:22 fast -> buza
+Hi.
+
+2020-06-30T08:14:28 fast -> buza
+can we continue?
+
+2020-06-30T14:01:16 fast -> buza
+can we talk?
+
+2020-07-02T12:44:55 fast -> buza
+hi
+
+2020-07-06T10:30:23 fast -> buza
+hi
+
+2020-07-10T09:09:20 fast -> buza
+Hi. I've made a few merge requests. Check it out when you get a chance.
+
+2020-07-10T09:09:31 fast -> buza
+https://n4iaacb37wmqclht.onion/fast/graber/merge_requests/8
+
+2020-07-10T09:09:37 fast -> buza
+https://n4iaacb37wmqclht.onion/fast/graber/merge_requests/7
+
+2020-07-10T09:11:47 buza -> fast
+hi
+
+2020-07-13T12:28:03 fast -> buza
+I made a commit - I added a single OLB file. Made a commit - Added one single OLB file. Made merge requests on the master branch.
+
+2020-07-13T12:28:09 fast -> buza
+https://n4iaacb37wmqclht.onion/fast/graber/merge_requests/9
+
+2020-07-16T07:54:47 fast -> buza
+Hi.
+
+2020-07-16T11:42:32 fast -> buza
+made the requester. When you get a chance, take a look.
+
+2020-07-16T11:42:42 fast -> buza
+https://n4iaacb37wmqclht.onion/fast/graber/merge_requests/14
+
+2020-07-17T11:11:49 fast -> buza
+made the requester. When you get a chance, take a look.
+
+2020-07-17T11:11:58 fast -> buza
+https://n4iaacb37wmqclht.onion/fast/graber/merge_requests/15
+
+2020-07-17T11:36:27 buza -> fast
+see comment
+
+2020-07-17T12:25:42 buza -> fast
+see comment
+
+2020-07-20T19:51:26 fast -> buza
+Hi
+
+2020-07-20T19:51:32 fast -> buza
+ made the requester. When you get a chance, take a look.
+
+2020-07-20T19:51:40 fast -> buza
+https://n4iaacb37wmqclht.onion/fast/graber/merge_requests/17
+
+2020-07-20T19:54:59 fast -> buza
+obfuscation using std:string
+
+2020-07-20T20:03:03 fast -> buza
+
+
+I, of course, did as I was told, but still please familiarize yourself with it.
+Continuing to talk about the work of the _STR macro. Did a little research.
+
+In my opinion _STR is expanded into a function call, but it does not work with a read-only segment,
+but with a stack frame. At least, that's how it works for me. Below is a small example.
+
+
+source code:
+
+int main()
+{
+	const char* not_obfuscated = "not_obfuscated\n";
+	printf(not_obfuscated);
+	const char* obfuscated = _STR("obfuscated\n");
+	printf(obfuscated);
+	const char* not_obfuscated_2 = "not_obfuscated_2\n";
+	printf(not_obfuscated_2);
+    return 0;
+}
+
+
+
+disassembled function main:
+
+.text:00401000 sub_401000 proc near ; CODE XREF: start-83p
+.text:00401000
+.text:00401000 var_14 = dword ptr -14h
+.text:00401000 var_10 = dword ptr -10h
+.text:00401000 var_C = byte ptr -0Ch
+.text:00401000 var_B = byte ptr -0Bh
+.text:00401000 var_A = byte ptr -0Ah
+.text:00401000 var_9 = byte ptr -9
+.text:00401000 var_8 = byte ptr -8
+.text:00401000 var_7 = byte ptr -7
+.text:00401000 var_6 = byte ptr -6
+.text:00401000 var_5 = byte ptr -5
+.text:00401000 var_4 = byte ptr -4
+.text:00401000 var_3 = byte ptr -3
+.text:00401000 var_2 = byte ptr -2
+.text:00401000 var_1 = byte ptr -1
+.text:00401000
+.text:00401000 push ebp
+.text:00401000 push ebp
+.text:00401001 mov ebp, esp
+.text:00401003 sub esp, 10h
+//
+//the value of the "not_obfuscated\n" variable is actually in .rdata
+//
+.text:00401006 push offset aNot_obfuscated ; "not_obfuscated\n"
+.text:0040100B call sub_4010D6
+//
+//theoretically, the compiler should put the "obfuscated\n" string into the .rdata section. Since const char* obfuscated.
+//And then decrypt it in the runtime. But instead, at compile time, it creates a set of local variables in the main function.
+//Each variable is one byte in size.
+//
+.text:00401010 mov [ebp+var_10], 2Ch
+.text:00401017 mov eax, [ebp+var_10]
+.text:0040101A xor eax, 6Fh
+.text:0040101D mov [ebp+var_C], al
+.text:00401020 mov eax, [ebp+var_10]
+.text:00401023 inc al
+.text:00401025 xor eax, 62h
+.text:00401028 mov [ebp+var_B], al
+.text:0040102B mov eax, [ebp+var_10]
+.text:0040102E add al, 2
+.text:00401030 xor eax, 66h
+.text:00401033 mov [ebp+var_A], al
+.text:00401036 mov eax, [ebp+var_10]
+.text:00401039 add al, 3
+.text:0040103B xor eax, 75h
+.text:0040103E mov [ebp+var_9], al
+.text:00401041 mov eax, [ebp+var_10]
+.text:00401044 add al, 4
+.text:00401046 xor eax, 73h
+.text:00401049 mov [ebp+var_8], al
+.text:0040104C mov eax, [ebp+var_10]
+.text:0040104F add al, 5
+.text:00401051 xor eax, 63h
+.text:00401054 mov [ebp+var_7], al
+.text:00401057 mov eax, [ebp+var_10]
+.text:0040105A add al, 6
+.text:0040105C xor eax, 61h
+.text:0040105F mov [ebp+var_6], al
+.text:00401062 mov eax, [ebp+var_10]
+.text:00401065 add al, 7
+.text:00401067 xor eax, 74h
+.text:0040106A mov [ebp+var_5], al
+.text:0040106D mov eax, [ebp+var_10]
+.text:00401070 add al, 8
+.text:00401072 xor eax, 65h
+.text:00401075 mov [ebp+var_4], al
+.text:00401078 mov eax, [ebp+var_10]
+.text:0040107B add al, 9
+.text:0040107D xor eax, 64h
+.text:00401080 mov [ebp+var_3], al
+.text:00401083 mov eax, [ebp+var_10]
+.text:00401086 add al, 0Ah
+.text:0040108F xor edx, edx
+.text:00401091 mov [ebp+var_2], al
+.text:00401094 mov al, [ebp+var_C]
+.text:00401097 pop ecx
+//
+//decryption cycle BEGINNING:
+//the decryption process goes in the stack frame
+//
+.text:00401098
+.text:00401098 loc_401098: ; CODE XREF: sub_401000+AEj
+.text:00401098 mov al, [ebp+edx+var_C]
+.text:0040109C mov ecx, [ebp+var_10]
+.text:0040109F add cl, dl
+.text:004010A1 movsx eax, al
+.text:004010A4 xor ecx, eax
+.text:004010A6 mov [ebp+edx+var_C], cl
+.text:004010AA inc edx
+.text:004010AB cmp edx, 0Bh
+.text:004010AE jb short loc_401098
+//
+//decode loop END:
+//
+.text:004010B0 lea eax, [ebp+var_C]
+.text:004010B3 mov [ebp+var_1], 0
+.text:004010B7 push eax
+.text:004010B8 call sub_4010D6
+//
+//the value of the "not_obfuscated_2\n" variable is also really in .rdata
+//
+.text:004010BD mov [esp+14h+var_14], offset aNot_obfuscat_0 ; "not_obfuscated_2\n"
+.text:004010C4 call sub_4010D6
+.text:004010C9 pop ecx
+.text:004010CA xor eax, eax
+.text:004010CC mov esp, ebp
+.text:004010CE pop ebp
+.text:004010CF retn
+.text:004010CF sub_401000 endp
+
+
+Decompiled code
+
+int sub_401000()
+{
+  unsigned int v0; // edx@1
+  char v2; // [sp+8h] [bp-Ch]@1
+  char v3; // [sp+9h] [bp-Bh]@1
+  char v4; // [sp+Ah] [bp-Ah]@1
+  char v5; // [sp+Bh] [bp-9h]@1
+  char v6; // [sp+Ch] [bp-8h]@1
+  char v7; // [sp+Dh] [bp-7h]@1
+  char v8; // [sp+Eh] [bp-6h]@1
+  char v9; // [sp+Fh] [bp-5h]@1
+  char v10; // [sp+10h] [bp-4h]@1
+  char v11; // [sp+11h] [bp-3h]@1
+  char v12; // [sp+12h] [bp-2h]@1
+  char v13; // [sp+13h] [bp-1h]@1
+
+  sub_4010D6("not_obfuscated\n");
+  v2 = 67;
+  v3 = 79;
+  v4 = 72;
+  v5 = 90;
+  v6 = 67;
+  v7 = 82;
+  v8 = 83;
+  v9 = 71;
+  v10 = 81;
+  v11 = 81;
+  v13 = 0;
+  v0 = 0;
+  v12 = 60;
+  do
+  {
+    *(&v2 + v0) ^= (_BYTE)v0 + 44;
+    ++v0;
+  }
+  while ( v0 < 0xB );
+  v13 = 0;
+  sub_4010D6(&v2);
+  sub_4010D6("not_obfuscated_2\n");
+  return 0;
+}
+
+2020-07-21T08:02:20 fast -> buza
+Hi
+
+2020-07-21T08:02:20 fast -> buza
+ made the requester. When you get a chance, take a look.
+
+2020-07-21T08:02:20 fast -> buza
+https://n4iaacb37wmqclht.onion/fast/graber/merge_requests/17
+
+2020-07-21T08:02:20 fast -> buza
+obfuscation using std:string
+
+2020-07-21T08:02:20 fast -> buza
+
+
+I, of course, did as I was told, but still please familiarize yourself with it.
+Continuing to talk about the work of the _STR macro. Did a little research.
+
+In my opinion _STR is expanded into a function call, but it does not work with a read-only segment,
+but with a stack frame. At least, that's how it works for me. Below is a small example.
+
+
+source code:
+
+int main()
+{
+	const char* not_obfuscated = "not_obfuscated\n";
+	printf(not_obfuscated);
+	const char* obfuscated = _STR("obfuscated\n");
+	printf(obfuscated);
+	const char* not_obfuscated_2 = "not_obfuscated_2\n";
+	printf(not_obfuscated_2);
+    return 0;
+}
+
+
+
+disassembled function main:
+
+.text:00401000 sub_401000 proc near ; CODE XREF: start-83p
+.text:00401000
+.text:00401000 var_14 = dword ptr -14h
+.text:00401000 var_10 = dword ptr -10h
+.text:00401000 var_C = byte ptr -0Ch
+.text:00401000 var_B = byte ptr -0Bh
+.text:00401000 var_A = byte ptr -0Ah
+.text:00401000 var_9 = byte ptr -9
+.text:00401000 var_8 = byte ptr -8
+.text:00401000 var_7 = byte ptr -7
+.text:00401000 var_6 = byte ptr -6
+.text:00401000 var_5 = byte ptr -5
+.text:00401000 var_4 = byte ptr -4
+.text:00401000 var_3 = byte ptr -3
+.text:00401000 var_2 = byte ptr -2
+.text:00401000 var_1 = byte ptr -1
+.text:00401000
+.text:00401000 push ebp
+.text:00401000 push ebp
+.text:00401001 mov ebp, esp
+.text:00401003 sub esp, 10h
+//
+//the value of the "not_obfuscated\n" variable is actually in .rdata
+//
+.text:00401006 push offset aNot_obfuscated ; "not_obfuscated\n"
+.text:0040100B call sub_4010D6
+//
+//theoretically, the compiler should put the "obfuscated\n" string into the .rdata section. Since const char* obfuscated.
+//And then decrypt it in the runtime. But instead, at compile time, it creates a set of local variables in the main function.
+//Each variable is one byte in size.
+//
+.text:00401010 mov [ebp+var_10], 2Ch
+.text:00401017 mov eax, [ebp+var_10]
+.text:0040101A xor eax, 6Fh
+.text:0040101D mov [ebp+var_C], al
+.text:00401020 mov eax, [ebp+var_10]
+.text:00401023 inc al
+.text:00401025 xor eax, 62h
+.text:00401028 mov [ebp+var_B], al
+.text:0040102B mov eax, [ebp+var_10]
+.text:0040102E add al, 2
+.text:00401030 xor eax, 66h
+.text:00401033 mov [ebp+var_A], al
+.text:00401036 mov eax, [ebp+var_10]
+.text:00401039 add al, 3
+.text:0040103B xor eax, 75h
+.text:0040103E mov [ebp+var_9], al
+.text:00401041 mov eax, [ebp+var_10]
+.text:00401044 add al, 4
+.text:00401046 xor eax, 73h
+.text:00401049 mov [ebp+var_8], al
+.text:0040104C mov eax, [ebp+var_10]
+.text:0040104F add al, 5
+.text:00401051 xor eax, 63h
+.text:00401054 mov [ebp+var_7], al
+.text:00401057 mov eax, [ebp+var_10]
+.text:0040105A add al, 6
+.text:0040105C xor eax, 61h
+.text:0040105F mov [ebp+var_6], al
+.text:00401062 mov eax, [ebp+var_10]
+.text:00401065 add al, 7
+.text:00401067 xor eax, 74h
+.text:0040106A mov [ebp+var_5], al
+.text:0040106D mov eax, [ebp+var_10]
+.text:00401070 add al, 8
+.text:00401072 xor eax, 65h
+.text:00401075 mov [ebp+var_4], al
+.text:00401078 mov eax, [ebp+var_10]
+.text:0040107B add al, 9
+.text:0040107D xor eax, 64h
+.text:00401080 mov [ebp+var_3], al
+.text:00401083 mov eax, [ebp+var_10]
+.text:00401086 add al, 0Ah
+.text:0040108F xor edx, edx
+.text:00401091 mov [ebp+var_2], al
+.text:00401094 mov al, [ebp+var_C]
+.text:00401097 pop ecx
+//
+//decryption cycle BEGINNING:
+//the decryption process goes in the stack frame
+//
+.text:00401098
+.text:00401098 loc_401098: ; CODE XREF: sub_401000+AEj
+.text:00401098 mov al, [ebp+edx+var_C]
+.text:0040109C mov ecx, [ebp+var_10]
+.text:0040109F add cl, dl
+.text:004010A1 movsx eax, al
+.text:004010A4 xor ecx, eax
+.text:004010A6 mov [ebp+edx+var_C], cl
+.text:004010AA inc edx
+.text:004010AB cmp edx, 0Bh
+.text:004010AE jb short loc_401098
+//
+//decode loop END:
+//
+.text:004010B0 lea eax, [ebp+var_C]
+.text:004010B3 mov [ebp+var_1], 0
+.text:004010B7 push eax
+.text:004010B8 call sub_4010D6
+//
+//the value of the "not_obfuscated_2\n" variable is also really in .rdata
+//
+.text:004010BD mov [esp+14h+var_14], offset aNot_obfuscat_0 ; "not_obfuscated_2\n"
+.text:004010C4 call sub_4010D6
+.text:004010C9 pop ecx
+.text:004010CA xor eax, eax
+.text:004010CC mov esp, ebp
+.text:004010CE pop ebp
+.text:004010CF retn
+.text:004010CF sub_401000 endp
+
+
+Decompiled code
+
+int sub_401000()
+{
+  unsigned int v0; // edx@1
+  char v2; // [sp+8h] [bp-Ch]@1
+  char v3; // [sp+9h] [bp-Bh]@1
+  char v4; // [sp+Ah] [bp-Ah]@1
+  char v5; // [sp+Bh] [bp-9h]@1
+  char v6; // [sp+Ch] [bp-8h]@1
+  char v7; // [sp+Dh] [bp-7h]@1
+  char v8; // [sp+Eh] [bp-6h]@1
+  char v9; // [sp+Fh] [bp-5h]@1
+  char v10; // [sp+10h] [bp-4h]@1
+  char v11; // [sp+11h] [bp-3h]@1
+  char v12; // [sp+12h] [bp-2h]@1
+  char v13; // [sp+13h] [bp-1h]@1
+
+  sub_4010D6("not_obfuscated\n");
+  v2 = 67;
+  v3 = 79;
+  v4 = 72;
+  v5 = 90;
+  v6 = 67;
+  v7 = 82;
+  v8 = 83;
+  v9 = 71;
+  v10 = 81;
+  v11 = 81;
+  v13 = 0;
+  v0 = 0;
+  v12 = 60;
+  do
+  {
+    *(&v2 + v0) ^= (_BYTE)v0 + 44;
+    ++v0;
+  }
+  while ( v0 < 0xB );
+  v13 = 0;
+  sub_4010D6(&v2);
+  sub_4010D6("not_obfuscated_2\n");
+  return 0;
+}
+
+2020-07-21T10:55:32 fast -> buza
+https://n4iaacb37wmqclht.onion/fast/graber/merge_requests/19
+
+2020-07-21T10:55:41 fast -> buza
+https://n4iaacb37wmqclht.onion/fast/graber/merge_requests/20
+
+2020-07-21T14:30:24 fast -> buza
+Check it out please. The compilation was successful, I didn't find any lines in the binary (neither ida nor notePad++), the smoke test is also positive. The initialization of the profileFields array goes by index.
+
+2020-07-22T08:27:42 fast -> buza
+Hello.
+
+2020-07-22T10:36:36 fast -> buza
+excuse me, but someone bonen has been added here
+
+2020-07-22T10:36:42 fast -> buza
+Is it supposed to be like this?
+
+2020-07-22T10:36:49 fast -> buza
+be?
+
+2020-07-23T08:19:31 fast -> buza
+Hi. How can I contact the management?
+
+2020-07-27T20:50:16 fast -> buza
+Greetings.
+Made an obfuscation. Created several branches, separately for each task. Then merged them (in local repo) into master. Did a smoke test, checked for strings (ida, notepad++). Uploaded the resulting project to https://n4iaacb37wmqclht.onion/fast/grabber_obfuscation.
+
+
+In addition, before merging branches in the master (in the local repo), I downloaded local branches at https://n4iaacb37wmqclht.onion/fast/graber, it originally worked. In the same remote repo made 4 merge requests.
+
+https://n4iaacb37wmqclht.onion/fast/graber/merge_requests/24
+https://n4iaacb37wmqclht.onion/fast/graber/merge_requests/23
+https://n4iaacb37wmqclht.onion/fast/graber/merge_requests/22
+https://n4iaacb37wmqclht.onion/fast/graber/merge_requests/21
+
+2020-07-28T07:34:43 fast -> buza
+Greetings.
+Made an obfuscation. Created several branches, separately for each task. Then merged them (in local repo) into master. Did a smoke test, checked for strings (ida, notepad++). Uploaded the resulting project to https://n4iaacb37wmqclht.onion/fast/grabber_obfuscation.
+
+
+In addition, before merging branches in the master (in the local repo), I downloaded local branches at https://n4iaacb37wmqclht.onion/fast/graber, it originally worked. In the same remote repo made 4 merge requests.
+
+https://n4iaacb37wmqclht.onion/fast/graber/merge_requests/24
+https://n4iaacb37wmqclht.onion/fast/graber/merge_requests/23
+https://n4iaacb37wmqclht.onion/fast/graber/merge_requests/22
+https://n4iaacb37wmqclht.onion/fast/graber/merge_requests/21
+
+2020-07-28T08:04:48 fast -> buza
+and the program hangs
+
+2020-07-28T08:05:03 fast -> buza
+for the time being
+
+2020-07-28T08:07:52 fast -> buza
+and ip is still not detected
+
+2020-07-28T10:04:42 fast -> buza
+I rolled back my commits in the stun_developing branch. Did what you said.
+
+2020-07-28T12:22:07 fast -> buza
+on the phone?
+
+2020-07-29T13:11:13 fast -> buza
+Hi.
+
+I checked if obfuscation (compilation, line check, and smoke test) works for cases:
+fprintf(stderr, _STR("Local profiles:\r\n"));
+fprintf(stderr, string(_STR("Local profiles:\r\n").c_str());
+
+Unfortunately, no.
+
+The working options are:
+1)
+const char* hello2 = _STR("Hello world!");
+fprintf(stderr, hello2);
+
+2)
+char emailCol[20];
+strcpy(emailCol, _STR("Emails collected:\r\n"));
+fprintf(stderr, emailCol);
+
+Note that for the first variant, the decrypted data is stored in the stack. When disassembling it is clearly visible. Whichever variant is more acceptable, we'll leave it that way.
+
+
+Notes about pointers in methods:
+bool collectEmailsFromStore(ULONG folderTag, set<string>* emails);
+set<string>* collectEmailOutLook();
+list<contact>* getProfilesInfo();
+list<string>* getLocalEmails();
+
+Corrected that, too.
+
+2020-07-29T13:11:31 fast -> buza
+When you get a chance, reply
+
+2020-07-30T11:06:06 fast -> buza
+Greetings!
+
+2020-07-30T11:34:36 buza -> fast
+comments written
+
+2020-07-30T13:01:32 buza -> fast
+comments written
+
+2020-07-30T13:02:14 fast -> buza
+in place?
+
+2020-07-30T13:06:24 buza -> fast
+yes
+
+2020-07-31T12:54:06 fast -> buza
+hi
+
+2020-09-02T12:52:48 buza -> fast
+Hi all.
+All developers, including web, please skim me a short list of your programming languages and stacks skills.
+Thanks.
+
+2020-09-02T13:52:51 buza -> fast
+Hi all.
+All developers, including web, please skim me a short list of your programming languages and stacks skills.
+Thanks.
+
+2020-09-07T10:28:16 fast -> buza
+Hi
+
+2020-09-11T09:02:20 fast -> buza
+Hi
+
+2020-09-14T07:27:29 buza -> fast
+Colleagues, happy professional holiday)
+LET A = A + 1
+
+2020-09-14T10:27:43 buza -> fast
+Colleagues, happy past professional holiday)
+LET A = A + 1
+

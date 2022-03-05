@@ -1,0 +1,96 @@
+[14.12.21 10:21:09] mitzi: hi
+[14.12.21 10:21:33] basil: Hello
+[14.12.21 10:21:54] mitzi: which office 2016 do you have?
+[14.12.21 10:22:06] basil: yes. you need it now
+[14.12.21 10:22:44] mitzi: I only have the key for the version
+SW_DVD5_Office_Professional_Plus_2016_64Bit_Russian_MLF_X20-42453
+[14.12.21 10:23:16] basil: question. Does 2016 only work under win10?
+[14.12.21 10:23:55] mitzi: no, on 7-8 also
+here download the key will work
+https://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/en-US/ProPlusRetail.img
+[14.12.21 10:49:08] mitzi: downloaded?
+[14.12.21 10:49:23] basil: downloading
+[14.12.21 10:49:39] basil: I suggest we do this
+[12/14/21 10:49:44] mitzi: ``
+K4XFM-NMBK3-X3QHV-FQ37D-977BB
+```
+[14.12.21 10:49:52] basil: all taken
+[14.12.21 10:50:31] mitzi: activate in file-account-activate
+[14.12.21 10:50:48] basil: ok
+[14.12.21 10:51:13] mitzi: don't give key to anybody
+[14.12.21 10:51:42] mitzi: it's on there for some activations, it will end badly
+[14.12.21 10:52:09] mitzi: you can do 5 activations
+[14.12.21 11:03:12] basil: I only need 1
+[14.12.21 11:03:26] mitzi: +
+[14.12.21 11:03:28] mitzi: okay.
+[14.12.21 12:20:39] basil: On the spot?
+[14.12.21 12:20:45] basil: there's a little question
+[14.12.21 12:21:22] mitzi: Go ahead.
+[14.12.21 12:24:27] basil: there is such a task. I need to somehow set up a mail server on a virtual machine so it would work on localhost is it possible? Are there any ready-made solutions?
+[14.12.21 12:24:49] basil: Can you suggest something?
+[14.12.21 12:27:46] mitzi: check out https://ospanel.io/
+[14.12.21 14:24:08] mitzi: I'll add,
+https://ospanel.io/ there sendmail, I do not know more out of the box options, but most likely it is because the situation is widespread, maybe and Denver picks up mail dunno for a long time did not use
+[28.12.21 10:51:18] mitzi: Hi, gator asked me to contact you
+[12/28/221 10:51:44] basil: don't forget!
+[12/28/221 10:53:08] basil: I have a question. Do we have a free vm with win10 ame. I need to show the customer the results of my work, I can not install one or the other software. Is there anything I can do?
+[28.12.21 10:53:52] basil: How to contribute?
+[12/28/221 10:54:18] mitzi: win10 ame?
+[28.12.21 10:54:23] basil: yes
+[28.12.21 10:54:33] basil: or maybe that solution
+[28.12.21 10:54:45] basil: local mail inclinet needs to be installed on vm
+[28.12.21 10:54:47] mitzi: and what version is this,
+[28.12.21 10:54:57] basil: sorry
+[28.12.21 10:55:02] basil: mail server
+[28.12.21 10:55:46] basil: so as not to create fake accounts at mail.ru or yandex.ru
+[28.12.21 10:56:29] mitzi: I used to set a mail server but for hosting, I never set it for VM
+[28.12.21 10:57:01] mitzi: I even do not know where to start.
+[28.12.21 10:57:10] basil: I managed to install hMailServer
+[28.12.21 10:57:25] basil: but only under win10 AME
+[28.12.21 10:58:06] basil: that's why I ask for win10 ame
+[12/28/221 10:58:20] mitzi: https://ameliorated.info/ is it?
+[28.12.21 10:58:45] basil: that's it
+[28.12.21 10:59:17] mitzi: Let me put it on proxmox
+[28.12.21 11:01:36] basil: ok. please do it now and I'll leave you alone
+[28.12.21 11:01:57] basil: office 2016 64 bit
+[28.12.21 11:02:27] mitzi: I'll install it now, I have office 16
+[28.12.21 11:02:56] basil: Please let me know. As soon as it will be in use.
+[28.12.21 11:03:47] mitzi: ok
+[12/30/21 08:31:31] basil: Hello.
+[12/30/21 08:31:47] mitzi: Hi.
+[30.12.21 08:32:35] basil: Take OTR
+[30.12.21 08:32:47] basil: A question has arisen. The VM I use for some reason does not have the "shutdown" and "restart" sub-items in the "start" button. Did not change anything during installation?
+[12/30/221 08:34:26] mitzi: No, I noticed it when I was setting it up too,
+I see two options, stop the proxmox from the admin panel, or with the batch
+shutdown /s /t 60
+[30.12.21 08:35:33] mitzi: Very strange OS seemed, just to work with it you need to read faq
+[30.12.21 08:36:16] basil: ok
+[30.12.21 08:36:37] basil: I used to run it on vmware though - everything was fine
+[30.12.21 08:37:59] mitzi: maybe in proxmox the settings were not adjusted on this version of the vin
+acpi power settings
+[30.12.21 08:39:01] mitzi: you work with it now? i have to reboot it, change power drivers
+[30.12.21 08:39:24] basil: can you wait 10 min?
+[12/30/21 08:39:30] basil: there's software to install
+[30.12.21 08:39:46] mitzi: okay, beep me then
+[30.12.21 08:41:07] mitzi: make a fresh snapshot and change acpi drivers on proxmox, maybe it will work
+[12/30/221 08:45:33] basil: free. Just don't forget to take a status shot. Preferably in disabled state.
+[12/30/21 08:45:33] basil: snapshot
+[12/30/21 08:45:34] basil: )))
+[30.12.21 08:46:01] basil: off
+[30.12.21 08:46:12] mitzi: i see, i'll read more doc,
+https://wiki.ameliorated.info/doku.php?id=documentation_20h2
+[30.12.21 08:48:11] basil: ok
+[12/30/21 08:53:33] mitzi: i changed acpi support,
+shut down button at startup, reboot is also there, at the very bottom
+[30.12.21 08:54:35] mitzi: check it, I use proxmox console not RDP
+[12/30/21 08:56:11] basil: no. unfortunately the button is missing. And how do you enter through the console? Maybe it will be enough for me. But now for this button will kill a lot of time
+[30.12.21 08:58:19] mitzi: in the proxmox admin area
+where the button turn off
+_Console-noVNC
+or by the Exhibit
+_Console-noVNC
+[12/30/221 08:59:47] mitzi: now I read 100% by RDP, something is blocked on the shutdown
+[12/30/21 09:00:41] basil: ok. no problem. Then I'll use the console to shut it down. Otherwise it feels like a long time. That's it. Thank you. Okay
+[30.12.21 09:00:49] mitzi: +
+[30.12.21 09:01:45] mitzi: Anyway, in the admin panel, turned off VM, made a new snapshot
+[12/30/21 09:01:58] basil: ok
