@@ -1,0 +1,51 @@
+[28.09.21 09:39:02] elijah: Hi!
+[28.09.21 09:39:14] elijah: collin recommended to consult with you
+[28.09.21 09:42:48] elijah: some time ago, to bypass AB detects, I (kind of following your recommendation) made a self-launch of loider before downloading and running the load
+[28.09.21 10:11:19] geraldo: Hi!
+[28.09.21 10:13:13] elijah: collin recommended to consult with you
+[28.09.21 10:13:17] elijah: some time ago to bypass AB detects I (kind of following your recommendation) made a self-launch of loider before downloading and starting the load
+[28.09.21 10:13:55] elijah: and I have problems with new stubs every once in a while. One works fine, and the other does not work and have to waste time and figure out what's wrong
+[28.09.21 10:14:07] elijah: collin says there's no such problem with your loaders
+[28.09.21 10:14:30] elijah: Maybe there is some secret when self restarting via holoving to make it work consistently in all stubs?
+[28.09.21 10:15:33] geraldo: And what exactly does not work, is not clear?
+[28.09.21 10:15:56] geraldo: Or process hollowing itself does not always work?
+[28.09.21 10:20:17] geraldo: What other "symptoms"? Does the original one work, but the encrypted one doesn't? Is it so?
+Or doesn't it work in regsvr32 mode? Or does the crypted one work some times?
+Or doesn't work at all?
+[28.09.21 10:21:02] elijah: holoving itself works
+[28.09.21 10:21:11] elijah: it doesn't always work in crypts
+[28.09.21 10:21:49] elijah: i.e. new crypt comes out, they crypt my loader, but it comes to restart via holoving and won't restart
+[28.09.21 10:22:13] elijah: If crypto works, it always works
+[28.09.21 10:23:00] elijah: last week there was some new crypt that didn't work. It turned out to be one of those crypts with a fixed base address. I always deploy to an arbitrary base address.
+[28.09.21 10:23:43] elijah: but they say that your loaders are stable in all crypts. Mine doesn't work in one crypt
+[28.09.21 10:25:49] elijah: are you in holoving an image to an arbitrary address? Any way to analyze it, an image with a fixed base address?
+[28.09.21 10:25:57] geraldo: No.
+[28.09.21 10:28:57] geraldo: I deploy it where memory will be allocated. So, you've got an arbitrary base address? What's your module based on? Mine is based on `https://github.com/m0n0ph1/Process-Hollowing`.
+[28.09.21 10:31:00] elijah: ``I have it based on https://github.com/m0n0ph1/Process-Hollowing`` - yes, about that algorithm
+[28.09.21 10:32:48] geraldo: And what mode is this problem in? Generic?
+[28.09.21 10:33:01] geraldo: Or regsvr32?
+[28.09.21 10:34:57] elijah: rundll32 and regsvr32
+[28.09.21 10:35:20] elijah: yes, and generic too
+[28.09.21 10:37:09] geraldo: Have you tried to create some exe-file with fixed base address and restart it with process hollowing technique?
+[28.09.21 10:37:20] elijah: yes, that works
+[28.09.21 10:40:54] geraldo: And what about x64 mode?
+[28.09.21 10:49:17] geraldo: Do you always restart the Lauder with this technique? Regardless of AV?
+[28.09.21 10:54:56] geraldo: And how have you solved this problem for previous crypts?
+[28.09.21 13:57:48] geraldo: Do you always restart the Lauder? There you can do such restart only for Avast AV, and for others to work in normal mode.
+[28.09.21 14:03:10] elijah: I do such restart irrespective of AB installed
+[28.09.21 14:04:06] geraldo: I have only for AV Avast
+[28.09.21 14:09:34] geraldo: Probably, crypto programmers do not provide their own exe-files restarting by process hollowing technique to avoid detects.
+[28.09.21 14:11:16] geraldo: But here you can do the following: not the crypt's exe-file should be restarted, but the exe-file of load itself, already deployed by crypt.
+[28.09.21 14:13:59] geraldo: We can find it in memory. It starts with line "MZ". Copy it into another process, tweak addresses, like in Process Hollowing technique. That's all. Then the loeder's functionality won't depend on the crypt.
+[28.09.21 14:16:00] geraldo: I.e. it will be the same as Process Hollowing, only there will be no loop:
+```
+for (DWORD x = 0; x < pSourceImage->NumberOfSections; x++)
+{
+...
+```
+[28.09.21 14:16:05] elijah: Thanks, as an option
+[28.09.21 14:16:52] geraldo: The main thing is to find the beginning of module (string "MZ").
+[28.09.21 14:17:16] geraldo: So, how did you solve this problem for previous crypts?
+[28.09.21 14:20:22] elijah: my problem was only 1 time when crypt didn't have reloc directory, but relocs were. Added setting relocs not based on reloc directory
+[28.09.21 14:20:37] elijah: the other two times I had crypto problems
+[28.09.21 14:21:10] elijah: But the bosses aren't happy that my loader crypts are constantly having problems. A new stub comes out and every once in a while my loader refuses to work

