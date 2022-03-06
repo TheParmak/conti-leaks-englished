@@ -1,0 +1,35 @@
+[17.09.21 12:11:52] hugo: Hi.
+[17.09.21 12:11:58] rocco: hi
+[17.09.21 12:11:59] hugo: who is author of file bec_http_222_x64.dll?
+[17.09.21 12:12:06] rocco: me
+[17.09.21 12:12:31] hugo: do they inject somewhere?
+[17.09.21 12:12:44] hugo: Or are they acting suspiciously?
+[17.09.21 12:13:13] rocco: well, they are pailodes from coba
+[17.09.21 12:13:27] rocco: what exactly is suspicious?
+[17.09.21 12:13:54] hugo: Nah, I just wonder why everyone's cryptos last only 1 day
+[17.09.21 12:14:55] rocco: it's most likely not the crypto, but coba traffic, it's burned, we're working on it now
+[17.09.21 12:15:20] rocco: this file is from recent coba, it hasn't even worked properly yet
+[17.09.21 12:16:06] hugo: x86 is fast with detects, especially because of exports
+[17.09.21 12:16:16] hugo: hang*
+[17.09.21 12:16:54] rocco: yes, but they ask to do 86, some bots are like that
+[17.09.21 12:17:43] hugo: I mean, you should change input point name DllRegisterServer -->StartW more often
+[17.09.21 12:18:11] hugo: I've already started to get dumb to DllRegisterServer))
+[17.09.21 12:18:17] rocco: ah, you can change it, I'll do the next batch with another one
+[17.09.21 12:18:39] rocco: i have shellcodes with startv, and beks with register
+[17.09.21 12:18:40] hugo: Yeah, thanks, I got tired of diluting with imports))
+[17.09.21 12:19:18] rocco: was at one time was asked to do exactly with a register point, so left it
+[22.09.21 17:56:01] hugo: Hi
+[22.09.21 17:56:31] hugo: And you compile dll via gcc with some parameters?
+[22.09.21 17:56:57] hugo: And does gcc compile?
+[22.09.21 17:57:09] hugo: I just haven't used it, I think to try it
+[22.09.21 18:13:58] rocco: hi
+[22.09.21 18:14:15] rocco: yes gcc
+[22.09.21 18:18:42] hugo: swallow?
+[22.09.21 18:21:44] rocco: they write Mingwindow-w64 gcc compile better
+[22.09.21 18:21:49] rocco: ps dbyljdjq
+[22.09.21 18:21:59] rocco: gcc by vindu
+[22.09.21 18:22:04] rocco: Mingw-w64
+[22.09.21 18:22:17] hugo: and x86?
+[22.09.21 18:22:21] rocco: detects drops many times
+[22.09.21 18:22:57] rocco: mingw32-gcc-
+[22.09.21 18:23:49] rocco: I don't remember the exact name of the package, mingw-gcc I think, I want to use too

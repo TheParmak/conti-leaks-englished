@@ -1,0 +1,70 @@
+2020-07-31T12:58:26 green -> strix
+hello strix I'm going on vacation for a week, I want you to do one thing, configure servers for cobalt
+
+2020-07-31T12:58:46 green -> strix
+their poll will be asked to do
+
+2020-07-31T12:59:08 green -> strix
+Nothing complicated in principle, I'll explain everything in a minute
+
+2020-07-31T18:39:41 strix -> green
+I'm having internet problems - the switch port seems to be burnt out
+
+2020-09-15T15:29:51 strix -> green
+hi
+
+2020-09-15T15:30:07 strix -> green
+Here?
+
+2020-09-15T15:30:56 strix -> green
+torify ssh vbox@173.232.146.236 -p 2022
+
+2020-09-15T15:31:12 strix -> green
+-- what is the password for the second virtualbox?
+
+2020-09-15T15:31:33 strix -> green
+It doesn't fit -- has it changed or something?
+
+2020-10-16T15:42:51 strix -> green
+Hi
+
+2020-10-16T15:43:12 strix -> green
+they say something needs to be done with the routers
+
+2020-10-20T12:40:48 green -> strix
+hello strix, I need help with autotests
+
+2020-10-21T15:57:16 strix -> green
+here is the check-rout.sh script: https://privnote.com/BPv8Irld#YGPiqvS4Q
+
+2020-10-21T15:58:04 strix -> green
+run it like this:
+./check-rout.sh servers.txt [redirs.txt [port]
+
+2020-10-21T15:58:50 strix -> green
+servers.txt -- router file format:
+IP user password port
+
+2020-10-21T15:59:16 strix -> green
+comments starting with # and blank lines are possible
+
+2020-10-21T16:00:05 strix -> green
+redirs.txt -- file with lines like:
+46.28.69.153:443
+31.14.40.68:443
+
+2020-10-21T16:00:41 strix -> green
+comments and blank lines are also possible, i.e. servers can be commited to ignore
+
+2020-10-21T16:00:54 strix -> green
+default port 449
+
+2020-10-21T16:01:17 strix -> green
+If you want to change it to 443, for example, you can specify it in the comstring
+
+2020-10-26T13:15:50 strix -> green
+Hi
+
+2020-10-27T10:52:20 strix -> green
+hi
+

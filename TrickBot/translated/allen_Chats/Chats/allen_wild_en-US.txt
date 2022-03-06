@@ -1,0 +1,354 @@
+[19.08.21 14:50:28] allen: Hi. Give me the name of the load with which you crypted dll_rundll_crypter3.
+[19.08.21 14:55:40] wild: hi
+[19.08.21 14:55:44] wild: uno momento
+[19.08.21 14:57:29] wild: dl6_release_nologs_group_6_ver_1_34_x64_rundll32.dll
+[19.08.21 14:57:56] wild: only I made a bunch of 3 crypts, they all folded and I deleted them
+[20.08.21 09:58:20] allen: Hi. What parameters did you set when crypting dll_rundll_crypter3? And where do you get dl6_release_nologs_group_6_ver_1_34_x64_rundll32.dll? It's not in the cryptopanel.
+[20.08.21 09:58:40] wild: hi
+[20.08.21 09:58:48] wild: no parameters set
+[20.08.21 09:58:54] wild: I'll get it
+[20.08.21 10:00:00] wild: can you see the wild tab?
+[20.08.21 10:00:11] wild: if not, tell me where to upload the source
+[20.08.21 10:05:41] allen: wild is not visible to me. there are folders uncrypted, bk and testBuild.
+[20.08.21 10:05:57] wild: let's put it into BK
+[20.08.21 10:06:36] wild: done
+[20.08.21 10:07:01] allen: go ahead
+[20.08.21 12:00:43] allen: you can try. I fixed everything in Jenkins. It wasn't configured correctly...
+[20.08.21 12:01:33] wild: I'll try new build
+[20.08.21 12:01:41] wild: or just for the test to tell you how it works or not?
+[20.08.21 12:02:11] allen: try it for the test.
+[20.08.21 12:02:15] wild: +
+[20.08.21 12:17:24] wild: tested, no detects
+[20.08.21 12:17:25] wild: great
+[20.08.21 13:00:05] wild: okay
+[20.08.21 13:00:11] wild: it looks like crypt 3 assembled
+[20.08.21 13:00:30] wild: made 3 different ones, first two knocked down at once, this one is gone for a long time
+[20.08.21 13:00:43] wild: now I'll wait 20 minutes if it doesn't knock - tell me if you check it out please
+[20.08.21 13:01:26] allen: Try running it again. Here, I think the problem is with rundll32.exe.
+[20.08.21 13:02:01] wild: I will try, now I will wait 20 min. Well actually the rest of them knocked it out at once
+[20.08.21 13:02:13] wild: and before that today I did other ones too, there was a knock and a grip at once
+[20.08.21 13:02:31] wild: there are assemblies that take a long time to knock, but the one I'm looking at now is fast
+[20.08.21 13:04:11] allen: My algorithm is as follows: 1) A named MUTEX is created. If it's created, restart everything on the command line + wait 500 ms. If not, we check its PARENT...
+[20.08.21 13:16:05] wild: doesn't work
+[20.08.21 13:16:10] wild: make a logical version
+[20.08.21 13:16:11] wild: ?
+[20.08.21 13:16:35] allen: yes
+[20.08.21 13:50:50] wild: yes, but I made 3 crypto logged source 3 stub, the log is not created
+[20.08.21 13:51:03] wild: tested with test source - stub works
+[20.08.21 13:51:10] wild: why it doesn't work and makes no log I don't know
+[20.08.21 13:51:24] wild: I'll give you a logged source, please check what's the problem
+[20.08.21 13:51:35] wild: don't run it on a working machine!
+[20.08.21 13:51:46] allen: Okay.
+[20.08.21 13:52:54] wild: ``
+fbb4r4y#$%$YHFDHBNFNNSRHSHJ$#Efndfn445
+https://privatlab.com/s/v/dbDMeLXbadckLlYGobw2
+```
+[20.08.21 13:53:02] wild: the log is being processed right on the desktop
+[20.08.21 13:53:34] wild: run rundll32 file.dll,StartW
+[20.08.21 14:05:57] allen: I won't look right now, but tomorrow or the day after tomorrow for sure.
+[20.08.21 14:06:21] wild: ok
+[20.08.21 14:06:55] allen: Did you crypt without parameters?
+[20.08.21 14:07:02] wild: yeah.
+[20.08.21 14:07:16] allen: Okay.
+[20.08.21 14:07:23] wild: Thank you.
+[23.08.21 09:00:52] allen: Hi. What command line parameters did you pass to rundll32?
+[23.08.21 09:01:04] wild: hi
+[23.08.21 09:01:24] wild: I didn't pass any parameters
+[23.08.21 09:01:27] wild: or did you run
+[23.08.21 09:02:02] allen: startup.
+[23.08.21 09:02:24] wild: launch usually rundll32 file.dll,StartW
+but recently it was C:\dll path.dll",GetRangeList
+[23.08.21 09:02:42] wild: that's what they tell me I use)
+[23.08.21 09:03:19] allen: what was the launch without bouncing?
+[23.08.21 09:03:49] wild: I'll restart the timeline
+[23.08.21 09:03:53] wild: 5 minutes)
+[23.08.21 09:10:17] wild: okay
+[23.08.21 09:10:40] wild: can't remember anything, I remember 3 krypt didn't work, I was testing it as I could, and I didn't create a logical log
+[23.08.21 09:10:48] wild: go StartW
+[23.08.21 09:11:01] wild: but GetRangeList is possible
+[08.23.21 09:17:17] allen: GetRangeList is absent in original DLL of paleoad. Since the build was run without parameters, the crypter repeated the export table of the original paiload DLL. Which means that the GetRangeList call couldn't happen.
+[23.08.21 10:30:14] allen: I'm getting everything executed.....
+[23.08.21 10:32:09] wild: fine, i'll call cryptan
+[23.08.21 10:32:32] allen: Really, machine without internet...
+[23.08.21 10:33:18] wild: well, i need bk crypto now, so no check
+[24.08.21 09:34:32] allen: Hi.
+[24.08.21 09:35:01] wild: hi
+[24.08.21 09:39:10] allen: I made a logging of crypto start via DebugView. Stub value for the cryptopail: dll_rundll_crypter3_logged, Try your DLL with the logged function and DebugView.
+[24.08.21 09:43:50] wild: accepted, I'll get a new build and test
+[24.08.21 10:12:33] wild: okay, now I'll test it on the old build, no new ones available yet
+[24.08.21 10:12:35] wild: unsubscribe
+[24.08.21 10:39:22] wild: log file is not created in the same place where usually (by crypting out with another stub or running the source code, everything works), in the admin area it also does not work
+[24.08.21 11:02:31] wild: I downloaded DebugView and run it with it.
+[24.08.21 11:20:53] allen: Write a command line to start it.
+[24.08.21 11:21:26] wild: how do you run it?
+[24.08.21 11:21:29] wild: ``
+dfdfdd45456y45$#^T$YYRGHRFGwerhg53yh
+https://privatlab.com/s/v/8Rqd6zO6zrHNEp7go47M
+```
+[24.08.21 11:21:36] allen: Yes
+[24.08.21 11:21:38] wild: ran debugview, then ran a logged crypt and waited 20 minutes
+[24.08.21 11:21:51] wild: started rundl32 file,StartW
+[24.08.21 11:22:37] allen: Sorry, the file doesn't exist or deleted
+[24.08.21 11:22:50] wild: gonna reload
+[24.08.21 11:23:01] allen: This is the answer from https://privatlab.com/s/v/8Rqd6zO6zrHNEp7go47M
+[24.08.21 11:23:09] wild: ``
+https://privatlab.com/s/v/3Qn07Jg0jkUNxw2J3k25
+```
+[24.08.21 11:23:17] wild: the pass is the same
+[24.08.21 11:27:12] allen: My log ends with the line 00000008 Starting StartW. After that comes the paiload function log.
+[24.08.21 11:28:41] allen: I don't know what it does. Send the log to the paiload developer. We have to deal with him.
+[24.08.21 11:29:35] allen: And give him my contact.
+[24.08.21 11:31:40] wild: Copy that.
+[31.08.21 14:07:19] allen: Hi. Oof. Finished. Now it works. You can check it.
+[31.08.21 14:07:31] wild: Hi.
+[31.08.21 14:07:39] wild: which stub?
+[31.08.21 14:07:58] allen: RunDLL
+[31.08.21 14:08:13] allen: Crypter3
+[31.08.21 14:08:42] wild: wow, cool, I only have bk today, I'll give it to Colin
+[31.08.21 14:12:27] wild: I'll get it
+[31.08.21 14:37:14] wild: great
+[31.08.21 14:37:16] wild: everything works
+[31.08.21 14:37:18] wild: and clean!
+[31.08.21 14:37:38] wild: great
+it all works!
+and clean!
+[08.09.21 12:44:20] allen: hi. What load did you use? Its principle of operation?
+[08.09.21 12:44:34] wild: hi, I'm sorry.
+[08.09.21 12:44:43] wild: I can send it to you, tell me where.
+[08.09.21 12:45:23] allen: How does it work?
+[08.09.21 12:45:33] wild: beck dor I guess
+[08.09.21 12:45:34] wild: clarify
+[08.09.21 12:45:48] wild: I was told to send it to the coder
+[08.09.21 12:45:54] wild: royal
+[08.09.21 12:46:22] allen: Well, how does it work? Not HollowProcess by any chance?
+[08.09.21 12:46:57] wild: all questions to royal
+[08.09.21 12:46:57] allen: What's it even called?
+[08.09.21 12:47:44] allen: Give me her name.
+[08.09.21 12:51:14] wild: dl2_x64_32_395.dll
+[08.09.21 14:03:56] allen: Try again.
+[08.09.21 14:04:11] wild: what's your stub?
+[08.09.21 14:04:36] wild: 3 ?
+[08.09.21 14:04:42] allen: exe_generic_crypter3
+[08.09.21 14:04:47] wild: +
+[08.09.21 14:12:59] wild: ``
+https://dyncheck.com/scan/id/d5873865d449cc68fb0d7e30f2da5d40
+```
+[08.09.21 14:13:02] wild: detects are there, I'm checking if it works
+[08.09.21 14:13:19] wild: the wind didn't scold me
+[09.08.21 14:17:20] allen: I see. Entropy detections. We have to decrease it still.
+[08.09.21 14:18:35] allen: Or shift it.
+[08.09.21 14:19:00] allen: I already got it.
+[08.09.21 14:19:09] allen: I will do it tomorrow.
+[08.09.21 14:19:16] wild: no knocking
+[08.09.21 14:19:26] wild: ask for logged version
+[08.09.21 14:19:29] wild: log will help ?
+[08.09.21 14:19:38] allen: this is weird.
+[08.09.21 14:19:52] allen: log should help.
+[08.09.21 14:20:38] wild: I'll run the log
+[08.09.21 14:22:15] allen: Elijah and I only figured out the reason after my log. Now I'll ask Elroy to make a logged version of stub.
+[08.09.21 14:22:35] wild: I already have one
+[08.09.21 14:22:38] wild: and it's not his build
+[08.09.21 14:22:47] wild: I'm already bashing krypt)
+[08.09.21 14:23:22] wild: it's the royal build, logged it already
+[08.09.21 14:26:03] wild: built a crypt, got the same detects
+```
+https://dyncheck.com/scan/id/9a31f40f647c9ac46cc6a5f3338f9913
+```
+[08.09.21 14:26:07] wild: running
+[08.09.21 14:27:46] wild: no log created
+[08.09.21 14:27:52] wild: the cmd line just opened
+[08.09.21 14:28:16] wild: if I start it without logging, it opens cmd promptly and closes, then immediately logs to txt
+[08.09.21 14:28:50] allen: I told you. I need MY log. Elroy should add.
+[08.09.21 14:30:23] wild: yes, your log is in others, but for generic no
+[08.09.21 14:30:37] wild: for crypt from dll to exe
+[09.09.21 09:18:45] allen: hi. Check it now. Don't look at detects yet.
+[09.09.21 09:20:00] wild: hi, I have a big task on rundll, I can only check dll_rundll_crypter3 now
+[09.09.21 09:20:14] wild: I'm already trying to make a bunch of them
+[09.09.21 09:21:14] allen: Do it
+[22.10.21 11:31:39] wild: greetings!
+[22.10.21 11:32:04] wild: apr?
+[22.10.21 12:40:41] allen: Aotr
+[09.11.21 10:12:58] wild: hello!
+[09.11.21 10:13:03] wild: 3 stub phaled all the time
+[09.11.21 10:13:41] allen: stub? What do you mean, it's not going to?
+[09.11.21 10:13:56] wild: uh-huh(
+[09.11.21 10:15:26] allen: let me see.
+[09.11.21 10:15:54] wild: thank you.
+[09.11.21 10:58:36] allen: Try it. I forgot to declare PUBLIC function.
+[09.11.21 10:58:54] wild: +
+[09.11.21 11:12:12] wild: gathered!
+[09.11.21 11:12:12] wild: checking statics
+[09.11.21 11:24:14] wild: ``
+https://dyncheck.com/scan/id/9865b836d772aff0d95e3dc501475557
+```
+[09.11.21 11:24:19] wild: detects
+[09.11.21 11:39:17] allen: try it now.
+[09.11.21 11:40:30] wild: +
+[09.11.21 11:49:23] wild: ``
+https://dyncheck.com/scan/id/05a08e53fa994ab6929c2840a445a25a
+```
+[09.11.21 11:49:24] wild: detects(
+[09.11.21 12:41:05] allen: what source in cryptopanel?
+[09.11.21 12:41:20] wild: ``
+l_dll_rndll_ll_64_p2_25_v138_09_11_21_logs_no.dll
+```
+[09.11.21 12:43:18] allen: In which folder?
+[09.11.21 12:43:39] wild: wild
+[09.11.21 12:43:45] allen: I can't see it. Can you send it to me?
+[09.11.21 12:43:59] wild: yeah, sure.
+[09.11.21 12:44:07] wild: what's your tab?
+[09.11.21 12:44:43] allen: I can see: uncrypted, bk, mar
+[09.11.21 12:45:03] wild: I'll put it in VK
+[09.11.21 12:45:05] allen: mar is my tab
+[09.11.21 12:45:18] allen: go to BK.
+[09.11.21 12:46:06] wild: cast
+[09.11.21 13:13:55] allen: I already did.
+[09.11.21 13:14:19] wild: hope to wait for your stub, very dirty
+[09.11.21 13:17:44] allen: Not really - only 2 detects.
+[09.11.21 13:30:25] allen: I think it got clean.
+[09.11.21 13:30:50] wild: starting build)
+[09.11.21 13:42:32] wild: the same
+[09.11.21 13:42:38] wild: and dll_bk_crypter3
+and dll_rundll_crypter3
+[09.11.21 13:50:48] allen: https://dyncheck.com/scan/id/f6b09245334c81b62124b7fa167be5d8
+[09.11.21 13:51:05] allen: I'm clean. That's weird!
+[09.11.21 13:51:43] allen: your file is assembled.
+[09.11.21 13:51:55] wild: ``
+https://dyncheck.com/scan/id/106afb86626bd54ab9c11c3b54efabad
+```
+[09.11.21 13:51:59] wild: I have both stubs like this
+[09.11.21 13:57:20] allen: Maybe it's an old one... I did git push though.
+[09.11.21 13:57:37] allen: Try again.
+[09.11.21 13:59:34] wild: I'll try again.
+[09.11.21 14:07:57] allen: I'll think about it.
+[09.11.21 14:08:36] wild: run both stubs builds 10 pcs
+[09.11.21 14:10:43] wild: ``
+https://dyncheck.com/scan/id/02f7f07c789af36416dda3cf77018bc8
+```
+[09.11.21 14:10:49] wild: bk the same
+[09.11.21 14:11:12] wild: ``
+https://dyncheck.com/scan/id/7701689aa76504572a977e00146e7437
+```
+[09.11.21 14:11:15] wild: rundll too
+[09.11.21 14:15:16] allen: I'll think about it.
+[10.11.21 07:52:29] wild: greetings
+[10.11.21 07:54:24] allen: I researched the question. It's in the GIT. GIT is somehow reading the wrong version. I've self-crypted a fresh copy 6 times and 0 detects everywhere:
+https://dyncheck.com/scan/id/f189e6de0cf8bdb18fc7c6858730037c
+[10.11.21 07:55:11] allen: Just did git clone and build.bat
+[10.11.21 07:57:46] allen: Or the problem is in Visual Studio version. I have professional, on the build machine it's Enterprise. But I don't believe in that. CL.exe is the same in all versions.
+[10.11.21 07:59:19] wild: it turns out there will be detections from the panel for now(
+[10.11.21 08:01:52] wild: i think everything should be described to admins, and further in the panel to deal with them. right?
+[10.11.21 08:02:10] allen: Yes. Download the git clone https://95.179.129.40/fed/cryptor3.git and build it yourself.
+build.bat --type dll --payload_type dll --profile rundll --payload INPUT_FILE --outPUT_FILE --log build.log --entrypoint
+Only you need to put FASM.
+[10.11.21 08:03:04] wild: ah, interesting, got it
+[10.11.21 08:03:26] allen: I'll write to Elroy. Let him deal with admins.
+[10.11.21 08:03:43] wild: accepted. thank you!
+[11/10/21/12 08:04:52] allen: I just got it off the panel. 2 detects again. Something wrong in build system...
+[02.12.21 09:29:27] wild: hi!
+[02.12.21 09:30:35] wild: need hash changer, I think you had
+[02.12.21 10:00:04] allen: Hi. I don't have that utility. My hash changes automatically with every build.
+[02.12.21 10:00:23] wild: got it.
+[02.12.21 12:17:02] wild: is there any way to make a batch of 10 crypts?
+[02.12.21 12:17:12] wild: dll rundll or bk profile
+run: rundll32 file.dll,SplitListW
+[02.12.21 12:33:16] allen: Sure
+[02.12.21 12:33:39] wild: remind me which tab you have
+[02.12.21 12:33:40] wild: in the panel
+[02.12.21 12:34:09] allen: MAR
+[02.12.21 12:34:25] wild: hmm, I don't have it, I'll upload it to VK
+[02.12.21 12:34:37] allen: Go ahead.
+[02.12.21 12:34:50] wild: ``
+l_dll_rndll_slw_64_p2_25_v170_02_12_21_logs_no.dll
+```
+[02.12.21 12:34:57] allen: Just tell me what they are called.
+[02.12.21 12:42:10] allen: 10 This one?
+[02.12.21 12:42:21] wild: yeah, that's right.
+[02.12.21 12:42:35] wild: by batch at once, and please give out a batch too
+[02.12.21 13:18:01] allen: `ASDdfslfkofkofaeoe0ijvxl9210923;lk.`
+https://file.io/ysniALKFGbw5
+[02.12.21 13:18:37] wild: thank you!
+[02.12.21 13:43:38] wild: ``
+https://dyncheck.com/scan/id/ba5252232f7fa6d3ae5053e25db7dd3c
+```
+[02.12.21 13:44:23] wild: something very red)
+[02.12.21 14:17:26] allen: I do not know. I'm all clear! https://dyncheck.com/scan/id/abbb6653306e974f57490bfb0d0e1a1e.
+[02.12.21 14:20:20] wild: it's the 5th check from the pack, all 10 detects
+[02.12.21 14:20:22] wild: how come
+[02.12.21 14:21:11] wild: the 5th one by the way +-
+[02.12.21 14:21:13] wild: ``
+https://dyncheck.com/scan/id/07788165f7657a0fa6359e5591ede34a
+```
+[02.12.21 14:24:26] allen: I will redo it now with checks after each build.
+[02.12.21 14:25:20] wild: thanks, not so hard, 1 check per stack is enough, but it's just really messy here
+[02.12.21 14:33:23] wild: the panel also went with crypto 3 stub detections
+[02.12.21 14:33:40] wild: ``
+https://dyncheck.com/scan/id/5f1973396f2d1d090057996364c860ad
+```
+[02.12.21 14:34:30] wild: moreover one pack had detects (I checked 2 from the pack)
+and the second one is clean (checked 1)
+[02.12.21 15:24:10] allen: I have to crypt the files several times. Till complete cleanliness. It has to do with random number generator. We'll have to revise it.
+[02.12.21 15:24:40] wild: let's wrap it up then.
+[02.12.21 15:24:55] wild: I'm almost done with the panel.
+[02.12.21 15:25:03] wild: thanks
+[02.12.21 15:25:47] allen: I have 6 pieces ready. Do you want it?
+[02.12.21 15:26:35] wild: no thanks, it's ok, I'm already checking the last pack of 100
+[12/15/221 09:34:04] wild: hello!
+[15.12.21 09:34:29] wild: need some cryptos, can you do it?
+[12/15/221 09:57:54] allen: Hi. Come on, but only 64 bits.
+[15.12.21 09:58:40] allen: I have them clean. And 32 bits are still on the cleanup.
+[12/15/221 09:59:03] wild: uploaded to VK
+[12/15/21 09:59:05] wild: ``
+dl_g15_release_nologs_group_g15_ver_1_71_x64_rundll32.dll
+```
+[15.12.21 10:00:00] wild: 20 crypts with rename entry point ```
+LoadDeviceA=ClearNotifyList
+`` so that the startup becomes rundll32 file.dll,ClearNotifyList
+[15.12.21 10:00:19] wild: just a bunch please
+[12/15/221 10:02:17] allen: This will take a long time. I need to test for dyncheck after every crypt.
+[12/15/221 10:02:31] wild: 10 is enough then.
+[15.12.21 10:02:43] wild: usually 1 out of 10 checks
+[15.12.21 10:03:17] wild: guys who do 50 grand at once are not online yet(
+[12/15/221 10:05:05] allen: Okay. I'll be gone for an hour. I'll be back. I have a problem with the random generator of intermediate codes. I have to check every crypt because of it. Bye. I think I'll fix it soon. When I make 32 bit crypts without detects.
+[12/15/21 10:06:26] wild: got it, good, thanks!
+[12/15/221 11:22:52] wild: haven't done it yet? Probably retired then, I'll do it in a batch now
+[12/15/21 13:26:23] allen: Okay. I was crypting for manuel.
+[12/20/21 14:47:00] wild: hi!
+[20.12.21 14:47:17] wild: need two crypts, can you do it?
+[12/20/221 14:54:39] allen: Hi. 64 bits only.
+[20.12.21 14:55:04] wild: yes!
+[20.12.21 14:55:24] allen: Come on.
+[20.12.21 14:55:42] wild: I'm pouring it in.
+[20.12.21 14:56:15] allen: 1. dl_g4_release_nologs_group_g4_ver_1_73_x64_regsvr32.dll?
+[20.12.21 14:56:29] wild: yes
+[20.12.21 14:56:42] wild: for crypt in dll, run through regsvr32
+[20.12.21 14:57:32] wild: and dl2_x64_57_484.dll
+[20.12.21 14:58:02] allen: both crypt as BK?
+[20.12.21 14:58:04] wild: to crypt in dll, run: bkstart.exe file.dll
+it's a special build mode, bkstart.exe is a file to run the module, it will be in the build kit
+only crypt with BK profiles
+[20.12.21 14:58:08] wild: yes
+[20.12.21 14:59:59] allen: Do you have access to MAR folder?
+[20.12.21 15:00:13] wild: no
+[20.12.21 15:00:31] allen: So I'll send it through file.ip
+[20.12.21 15:01:06] wild: got it, I'll correct the second file
+[20.12.21 15:01:12] wild: they write to me...
+[20.12.21 15:01:43] wild: dl2test.exe instead of bkstart.exe
+[20.12.21 15:11:27] allen: `EibOiYyjfdhs0987268#`
+https://file.io/XybOT0YVu0qQ
+[20.12.21 15:12:33] wild: thank you!
+[20.12.21 15:48:08] wild: can you please make 1 more of dl_g4_release_nologs_group_g4_ver_1_73_x64_regsvr32.dll ?
+[12/20/221 16:00:24] wild: ``
+[18:34:16] <> def palit pryam srazy posle raspakovki
+```
+[20.12.21 16:00:43] wild: talk to colin, says it happens, make a new one
+[20.12.21 16:12:25] wild: here?
+[20.12.21 18:37:38] wild: knock knock
+[12/23/221 11:36:23] wild: hello!
+[12/23/221 12:04:57] allen: I think not today.
+[12/23/221 12:05:00] allen: ((.
+[12/23/12/221 12:05:14] wild: Got it.
+[12/27/221 10:51:31] wild: hello!
+[27.12.21 10:51:43] wild: need crypto, can you help me?
+[24.01.22 14:05:34] wild: greetings!
+[24.01.22 14:05:46] wild: you need generic exe crypto, can you help me?

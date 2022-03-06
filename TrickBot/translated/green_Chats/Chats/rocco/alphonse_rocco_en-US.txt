@@ -1,0 +1,107 @@
+[14.09.21 14:41:39] alphonse: hi
+[14.09.21 14:41:44] alphonse: Can't execute "/usr/bin/ldd": Operation not allowed at /usr/bin/psql line 137.
+[14.09.21 14:41:49] alphonse: on 65
+[14.09.21 14:41:54] rocco: hi
+[14.09.21 14:42:00] alphonse: can't dump
+[14.09.21 14:42:32] alphonse: this is test 65
+[14.09.21 14:43:26] rocco: dz nothing was prohibited there
+[14.09.21 14:44:05] alphonse: so it must be broken or broken(!
+[23.09.21 14:33:07] rocco: alpha hi, you have the test also works as on the main, all on the same port knocking?
+[23.09.21 14:36:00] alphonse: yes
+[23.09.21 14:36:11] rocco: at 12233
+[09/23/221 14:36:18] alphonse: yes
+[09/23/221 14:36:23] rocco: ok
+[27.10.21 12:54:44] alphonse: hi. let's access
+[27.10.21 12:56:25] rocco: sec
+[27.10.21 12:56:32] rocco: 185.64.104.141
+[27.10.21 12:56:52] rocco: https://privnote.com/ccvX6rg1#ETZbBKbbp
+[12/29/221 17:43:40] rocco: https://privatlab.com/s/v/m2zQYQALg4hrE6mG9oq6
+boo9ovu4uaquib5Miedecheiyee6aishee2eekei
+[29.12.21 17:43:46] rocco: these are the keys
+[29.12.21 17:43:53] rocco: I'll tell you how to connect
+[29.12.21 17:45:09] rocco: http://pj3n6aix4l5lqoorwu5qbolmhwpqyabwpifdvn2w5qiznlqqayzmegid.onion/note/1fYsWj2sDWPU5dog1CLzkOHySCASP4TGUZ8tv7BIz4bdvk9shI2v6f3gX7QfPWtMT19ZVeyTGqKfwo4laibF0Xq#b9d4281df97c4be5b70ed4c3b291461a301ef03409c70ad0bea0f6651d0512f8
+[29.12.21 17:47:01] alphonse: archive cannot be extracted. an error writes
+[29.12.21 18:06:45] rocco: https://privatlab.com/s/v/wEjyGr0xdmFErM7Wzqm0
+[29.12.21 18:06:54] rocco: try this one
+[29.12.21 18:07:06] rocco: Pass is the same
+[12/29/221 18:10:43] alphonse: this is bullshit. it extracts and doesn't ask for pass, but the files can't be read
+[29.12.21 18:12:10] alphonse: opened without password
+[29.12.21 18:21:38] rocco: try to connect
+[27.01.22 12:59:55] alphonse: hi
+[27.01.22 13:00:13] alphonse: $ torify ssh -i ~/issues/keys/proto.pem proto@185.64.104.141
+1643288323 ERROR torsocks[72989]: General SOCKS server failure (in socks5_recv_connect_reply() at socks5.c:527)
+ssh: connect to host 185.64.104.141 port 22: Connection refused
+[27.01.22 13:00:40] What to do?
+[27.01.22 13:12:05] rocco: -p 5353 at the end
+[27.01.22 13:12:20] rocco: torify ssh -i ~/issues/keys/proto.pem proto@185.64.104.141 -p 5353
+[27.01.22 13:12:30] rocco: torify ssh -i ~/issues/keys/proto.pem proto@185.64.104.141 -p 5353
+[27.01.22 13:14:57] alphonse: $ torify ssh -i ~/issues/keys/proto.pem proto@185.64.104.141 -p 5353
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@ WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0777 for '/home/user/issues/keys/proto.pem' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+Load key "/home/user/issues/keys/proto.pem": bad permissions
+proto@185.64.104.141's password:
+Permission denied, please try again.
+proto@185.64.104.141's password:
+[27.01.22 13:15:48] rocco: chmod 400 ~/issues/keys/proto.pem
+[28.01.22 10:33:42] alphonse: hi. how do i get mc now?
+[28.01.22 11:07:44] alphonse: hi. how do you checkout mc now?
+[28.01.22 11:08:10] rocco: hi
+[28.01.22 11:08:19] rocco: how to start?
+[28.01.22 11:08:27] alphonse: yeah
+[28.01.22 11:08:36] rocco: do sudo -s
+[28.01.22 11:09:16] alphonse: sudo -s
+[28.01.22 11:09:35] alphonse: next)
+[28.01.22 11:09:40] rocco: mc
+[28.01.22 11:10:02] alphonse: there was a link, right?
+[28.01.22 11:10:21] rocco: yes no
+[28.01.22 11:10:33] rocco: just after the key login
+[28.01.22 11:10:41] rocco: do sudo -s
+[28.01.22 11:12:12] alphonse: no. you don't understand. i want for example to copy something big. i used to do shell link enter ipi with user and pass and that's it. on one side i have hosting and on the other local. and now how to do?
+[28.01.22 11:13:12] rocco: via scp?
+[28.01.22 11:16:03] alphonse: how?
+[28.01.22 11:19:45] rocco: make an entry in your local .ssh/config file
+```
+ host ip
+  user proto
+  port 5353
+  identityfile path where the key lies/proto.pem
+```
+[28.01.22 11:23:49] alphonse: ./etc/ssh/ssh_config in this?
+[28.01.22 11:24:23] rocco: no
+[28.01.22 11:24:44] rocco: in ~.ssh/config
+[28.01.22 11:24:57] rocco: create it if you want
+[28.01.22 11:25:02] rocco: config
+[28.01.22 11:25:25] rocco: there is .ssh/ directory in root or home folder
+[28.01.22 11:25:33] rocco: create config file there
+[28.01.22 11:27:24] alphonse: did.
+[28.01.22 11:27:32] alphonse: now restart?
+[28.01.22 11:27:58] rocco: now connect via mc
+[28.01.22 11:31:01] alphonse: password is asking for and the old password doesn't work
+[28.01.22 11:31:46] rocco: how do you connect root@?
+[28.01.22 11:32:21] alphonse: proto@
+[28.01.22 11:46:16] rocco: shit
+[28.01.22 11:46:49] rocco: so now
+[28.01.22 11:59:44] rocco: connect with root
+[28.01.22 11:59:54] rocco: I opened root access
+[28.01.22 11:59:58] rocco: close it later
+[28.01.22 12:04:02] alphonse: the old way?
+[28.01.22 12:05:01] rocco: yeah
+[28.01.22 12:05:16] alphonse: password not accepted
+[28.01.22 12:05:20] alphonse: old
+[28.01.22 12:06:52] rocco: I gave you a new one
+[28.01.22 12:07:37] rocco: https://privnote.com/gVHejPIS#GAfAwxTkG
+[28.01.22 12:07:56] alphonse: all in
+[28.01.22 12:08:03] alphonse: I forgot about new one
+[02.02.22 07:10:53] alphonse: hi. napn is in. who is it to?
+[02.02.22 07:11:19] rocco: hi, morph4?
+[02.02.22 07:11:29] alphonse: dunno 144.202
+[02.02.22 07:11:40] rocco: it's for ruben, I already wrote him
+[02.02.22 07:13:28] rocco: now ruben will write
+[02.02.22 07:20:57] alphonse: he keeps quiet
+[02.02.22 07:11:06] alphonse: hi. who runs redman?
+[04.02.22 07:13:29] rocco: hi
+[04.02.22 07:13:34] rocco: ruben

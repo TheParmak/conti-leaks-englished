@@ -1,0 +1,1060 @@
+[27.07.21 09:10:21] ruben: Hi.
+[27.07.21 09:10:27] ruben: here?
+[27.07.21 09:11:29] ruben: have you done any backup yet?
+[27.07.21 09:12:27] ruben: Somebody uploads backups to the wrong dir, not once an hour, but once a minute. They poured 17 gigs in 24 hours.
+[27.07.21 09:13:22] ruben: I disabled uploading on my 3 servers, but someone continues to upload.
+[27.07.21 09:24:44] ruben: look plz, because of it all is worth
+[27.07.21 09:25:28] ruben: you have to add login/password from your user into scripts
+[27.07.21 09:25:51] ruben: and who else could it be? I don't give anyone else access
+[27.07.21 09:26:10] ruben: you haven't set it up at all?
+[27.07.21 09:40:06] ruben: shit, I deleted yesterday's upload - no more uploads
+[27.07.21 09:40:39] ruben: it looks like it was from my servers, it was loading in background -- didn't stop till everything was loading
+[06.09.21 12:52:07] ruben: hi
+[06.09.21 12:52:45] ruben: server root 82.117.252.142 e1CwYIn9kqvN US my.itldc.com marlbor@inbox.lv bxydoBEv9S6whDMG $49.90
+[06.09.21 12:53:41] ruben: domain tdh-best.com
+[06.09.21 12:53:50] ruben: https://namecheap.com
+[06.09.21 12:54:28] ruben: marlbor@inbox.lv/FzeYcwUx29jW2Cbx
+[06.09.21 12:54:54] rocco: aggood cps
+[06.09.21 12:55:08] ruben: check DNS-server there -- something name in old IP is still allowed
+[06.09.21 12:55:15] rocco: is the domain already bound?
+[06.09.21 12:55:24] rocco: ah, let me check
+[06.09.21 12:55:30] ruben: no, not bound yet
+[06.09.21 12:55:53] ruben: got to mess with settings on DNS-server to point it to server
+[06.09.21 12:56:59] rocco: can you verify the mail?
+[06.09.21 12:57:16] ruben: so it's verified
+[06.09.21 12:57:23] ruben: I can give you access to the mail
+[06.09.21 12:57:25] rocco: they're asking again
+[06.09.21 12:57:31] rocco: go ahead
+[06.09.21 12:57:37] rocco: for the future
+[06.09.21 12:57:55] ruben: he asks for e-mail every time he logs in
+[06.09.21 12:58:29] rocco: yes
+[06.09.21 12:58:55] ruben: mail https://login.inbox.lv/login marlbor@inbox.lv/kiFBV6mb8uAWQvYy
+[06.09.21 13:03:09] rocco: logged in
+[06.09.21 13:03:23] rocco: domains no need, 2 servers register please
+[06.09.21 13:04:41] ruben: ok, ok
+[06.09.21 16:12:37] ruben: one server is ready
+[06.09.21 16:12:42] ruben: root 162.244.81.132 43rdpktv US serverroom.net/login marlbor@inbox.lv MFhrZwhX2QkkiE5r $48.59
+[06.09.21 16:12:45] rocco: Yeah, come on.
+[06.09.21 16:12:50] rocco: got it.
+[06.09.21 16:13:05] ruben: second order, waiting for delivery
+[06.09.21 16:21:38] rocco: no match
+[06.09.21 16:24:43] ruben: yeah, I'll kick the support
+[06.09.21 16:25:48] rocco: it's strange, in private, in pending yet, did they send you the data by email?
+[06.09.21 16:27:33] ruben: they were sent from where I gave them to you
+[06.09.21 16:27:56] ruben: are you already talking to them?
+[06.09.21 16:28:03] ruben: me too
+[06.09.21 16:30:24] rocco: it's on.
+[06.09.21 16:30:33] rocco: active
+[06.09.21 16:30:42] ruben: shit, they said it's Custom configurastion, I have to wait 24-48 48 hours
+[06.09.21 16:30:51] ruben: already connected?
+[06.09.21 16:30:58] rocco: yeah
+[06.09.21 16:31:09] ruben: ok then.
+[06.09.21 16:33:14] ruben: about 24-48 hours, support mixed up with another client
+[06.09.21 16:35:33] rocco: yes, there are some things when you make a custov, you can wait up to 2 days
+[06.09.21 16:35:43] rocco: or reinstall
+[06.09.21 16:36:02] ruben: got away
+[06.09.21 16:36:38] rocco: itldc is the most normal in this respect, but it's already fucked up to bits
+[06.09.21 16:37:03] rocco: I get ip from there 3 times already
+[06.09.21 16:37:10] rocco: the same ones
+[06.09.21 16:47:59] ruben: second server is on activation, it says it takes usually 1-24 hours (2 hours on average)
+[06.09.21 16:48:10] ruben: probably within an hour
+[06.09.21 16:51:16] rocco: yeah
+[06.09.21 18:44:03] rocco: ruben: how it was not activated?
+[06.09.21 18:46:25] ruben: activated
+[06.09.21 18:46:28] ruben: root 148.251.137.68 np3NmJf7mMpgyQ DE 4dedic.su marlbor@inbox.lv x8khFhm4f3iZ6ZMT 3750RUB
+[06.09.21 18:48:46] rocco: yeah thanks
+[13.09.21 13:39:19] rocco: ruben hi
+[13.09.21 13:42:58] ruben: Hi.
+[13.09.21 13:43:21] rocco: beni gave me a script to generate ssl
+[13.09.21 13:43:49] rocco: and why the certificates themselves are empty, the faker does not give values in the subj for openssl
+[13.09.21 13:44:05] rocco: beni referred to you
+[13.09.21 13:44:11] rocco: can you look?
+[9/13/21 13:44:50] rocco: ``
+198.244.180.69 ansible_user=root ansible_password=34fhjdgEN3rE5ff
+```
+[9/13/21 13:44:55] rocco: right here
+[13.09.21 13:45:00] rocco: the faker is installed
+[13.09.21 13:45:05] rocco: it works
+[13.09.21 13:45:21] rocco: https://198.244.180.69
+[13.09.21 13:45:30] rocco: certificate is blank
+[13.09.21 13:45:48] ruben: you can put echo before openssl command and see what's in the subject
+[13.09.21 13:46:40] rocco: ``
+openssl req -x509 -new -nodes -days 365 -newkey rsa:2048 -md5 -subj /C=/ST=none/L=/O=/CN=/emailAddress= -keyout /etc/nginx/cert.key -out /etc/nginx/cert.crt
+```
+[13.09.21 13:46:48] rocco: I already put the blank
+[13.09.21 13:46:59] rocco: tried to output each line separately
+[13.09.21 13:47:03] rocco: also nothing
+[13.09.21 13:47:13] rocco: i don't know what the problem is
+[13.09.21 13:47:15] ruben: let me see
+[13.09.21 13:47:22] rocco: check it out please
+[13.09.21 13:47:31] rocco: you can do it faster
+[13.09.21 13:47:42] rocco: it's in /root/ssl.sh
+[13.09.21 13:48:32] ruben: and you give me login/password to 198.244.180.69?
+[9/13/21 13:48:47] rocco: ``
+34fhjdgEN3rE5ff
+```
+[9/13/21 13:48:49] rocco: root
+[13.09.21 13:54:28] ruben: faker -l de_AT country-code
+<...>
+ValueError: No faker found for "country-code([])"
+[13.09.21 13:54:54] ruben: looks like faker wrongly installed - some modules are missing
+[13.09.21 13:58:15] rocco: seems to work
+[13.09.21 13:58:19] rocco: ``
+faker -l de_AT country_code
+HN
+
+
+```
+[13.09.21 13:59:19] ruben: ah, sorry, I have country-code
+[13.09.21 13:59:56] rocco: it works from the string, but it won't pass to the script for some reason
+[13.09.21 14:12:16] rocco: it works, right?
+[9/13/21/14:14:41] ruben: there were a couple of bugs:
+1) CN=`faker -l $locale domain_name 2>/dev/null` had $locale in a couple of places, and the other 2 had de_AT
+I needed locale="de_AT" and then used $locale everywhere else, otherwise $locale wasn't initialized
+2) I should have additionally made export PYTHONIOENCODING=UTF-8, otherwise it seemed to output in C locale, and as a result an empty string was somehow output
+[13.09.21 14:14:53] ruben: now fixed it -- it works
+[13.09.21 14:15:13] rocco: ok thanks
+[13.09.21 14:15:36] ruben: this export PYTHONIOENCODING=UTF-8 crap is significant, but on my machine it worked even without it
+[13.09.21 14:16:53] rocco: well, yeah, because it will be generated on different procs every time
+[13.09.21 14:17:15] ruben: yes, better to set the locale explicitly
+[13.09.21 14:17:35] ruben: the C locale won't work, because Germans have different umlauts
+[13.09.21 14:18:07] ruben: i don't get why it was output as an empty string and not in red ink
+[13.09.21 14:18:23] ruben: maybe ink cartridges are filtered
+[15.09.21 05:40:28] rocco: hey Ruben, did you activate servers?
+[15.09.21 05:40:54] ruben: hi
+[15.09.21 05:41:32] ruben: they only gave out servers yet -- I haven't set them up yet
+[15.09.21 05:41:55] rocco: will you set it up yourself?
+[15.09.21 05:42:04] ruben: I will try
+[15.09.21 05:42:06] rocco: just run it now
+[15.09.21 05:42:15] rocco: or okay, give it to me
+[15.09.21 05:42:20] rocco: I'll set it up
+[15.09.21 05:42:27] ruben: okay, I'll send it off
+[15.09.21 05:42:38] ruben: I haven't slept yet :(
+[15.09.21 05:42:56] rocco: yeah, I'll do it quickly
+[15.09.21 05:43:05] rocco: no problem
+[9/15/221 05:43:15] ruben: root 91.132.3.226 6QwjnQKV4X US portal.dedipath.com marlbor@inbox.lv VUpmq2Bpi9fzx7aL $84
+[15.09.21 05:43:25] rocco: the main thing with the cobs, it's the purchase of servers, the most laborious
+[15.09.21 05:43:41] ruben: root 23.160.194.201 3W3h%!PdaZ%8 US crm.crenspec.com marlbor@inbox.lv xEaF42cJB7pSLKe5 $65
+[15.09.21 05:44:02] ruben: I still haven't mastered the scripts for the ensemble
+[15.09.21 05:44:10] rocco: thanks
+[15.09.21 05:44:19] ruben: will there be any more this week to practice?
+[15.09.21 05:44:30] rocco: it's easy, just fill in the data and run
+[15.09.21 05:44:36] rocco: yes there will be
+[15.09.21 05:44:40] rocco: they will all the time
+[15.09.21 05:44:54] rocco: I just don't have time to keep track of everything
+[15.09.21 05:44:57] ruben: okay
+[15.09.21 05:45:09] rocco: I'll write when I have to
+[15.09.21 05:45:27] ruben: yeah
+[17.09.21 13:07:11] rocco: ruben: hi, can you make out from the ansible script what's put in?
+[17.09.21 13:09:15] ruben: for rpm package?
+[17.09.21 13:09:40] ruben: yes, in principle, I'll probably figure it out. If I don't understand it, I'll ask you.
+[17.09.21 13:09:56] ruben: I mean, deb-package
+[17.09.21 13:11:51] rocco: yeah, I'll send it over
+[17.09.21 13:11:52] ruben: you'll have to add it depending on
+[17.09.21 13:12:02] ruben: do you need it urgently?
+[17.09.21 13:12:51] rocco: yes, in principle, the sooner the better
+[17.09.21 13:13:26] ruben: before Monday or today?
+[17.09.21 13:14:15] rocco: no, you can't make it today anyway
+[17.09.21 13:14:56] ruben: you have to build from sorts, or you can build from binary?
+[17.09.21 13:16:03] rocco: I'll send it here right now, I have two scenarios
+```
+- zakrep
+- rvm
+```
+[17.09.21 13:16:17] rocco: I'll send you zakrep
+[17.09.21 13:16:36] rocco: ``
+    
+    
+    - name: killall httpd
+      shell: "killall httpd --wait"
+      ignore_errors: true
+    - name: Remove "apache2" package
+      apt:
+       name: apache2
+       state: absent
+      ignore_errors: true
+    
+    - name: Install package
+  
+      apt: pkg={{{item }} update_cache=yes cache_valid_time=3600
+      become: True
+      with_items:
+        - tor
+        - nginx
+        - screen
+        - postgresql
+        - postgresql-client
+        - puma
+        - gem
+        - erlang
+        
+        - python-psycopg2
+        - libpq-dev
+        - curl
+        - sudo
+        - git
+
+      
+    - name: create directory
+      file: name=/root/lero state=directory
+    - name: Create lero
+      copy:
+        src: templates/lero.tar.bz2
+        dest: /root/lero.tar.bz2
+        mode: "777"
+    - name: Unarchive lero
+      unarchive:
+        src: /root/lero.tar.bz2
+        dest: /root/lero
+        remote_src: yes
+
+    - name: 'Create panel'
+      copy:
+        src: templates/panel.tar.gz
+        dest: /var/www/panel.tar.gz
+        mode: "777"
+    - name: Unarchive panel
+      unarchive:
+        src: /var/www/panel.tar.gz
+        dest: /var/www/
+        remote_src: yes
+    - name: Start the Postgresql service
+      
+      service:
+       name: postgresql
+       state: started
+       enabled: true
+    - name: Copy wl.sql
+      copy:
+        src: templates/wl.sql
+        dest: /var/lib/postgresql/wl.sql
+
+
+    - name: Create a new database
+      become: true
+      shell: su -s /bin/bash postgres -c "createdb wlero -l 'en_US.UTF-8' -E 'UTF8';"
+       
+    - name: pd reset database user
+      become: yes
+      become_method: sudo
+      become_user: postgres
+      postgresql_user:
+       db: wlero
+       name: postgres
+       password: "nsThBs4utdE0i7NzeX13"
+    
+   
+    - name: Importing wlero data
+      become: true
+      become_user: postgres
+      shell: psql wlero < /var/lib/postgresql/wl.sql
+    
+```
+[17.09.21 13:19:11] rocco: the second rvm, I downloaded it, it builds ruby and rvm
+[17.09.21 13:19:42] rocco: you don't really need it, just build ruby and rvm
+[17.09.21 13:20:24] rocco: and the last one is running
+```
+- name: bundle update
+  shell: cd /var/www/panel && bundle update mimemagic
+- name: bundle install
+  shell: cd /var/www/panel && bundle install
+- name: Make erlang
+  shell: cd /root/lero && make all
+- name: Copy
+  copy:
+        src: templates/cmd_server.app
+        dest: /root/lero/ebin/cmd_server.app
+- name: Start erlang
+  shell: cd /root/lero && make daemon
+- name: Start puma
+  shell: cd /var/www/panel && source /etc/profile.d/rvm.sh && RAILS_ENV=development puma -b 'ssl://0.0.0.0:9758?key=config/keys/key.key&cert=config/keys/cert.crt&verify_mode=none' -C config/puma.rb -d
+
+```
+[17.09.21 13:22:25] rocco: i.e. all these packages are installed, listed in the script, ruby and rvm are assembled, and two archives are installed, one is a panel of the admin panel itself, and the second lero is a yerlang
+[17.09.21 13:22:55] rocco: admin starts
+```
+cd /var/www/panel && source /etc/profile.d/rvm.sh && RAILS_ENV=development puma -b 'ssl://0.0.0.0:9758?key=config/keys/key.key&cert=config/keys/cert.crt&verify_mode=none' -C config/puma.rb -d
+```
+[17.09.21 13:23:05] rocco: ``
+source /etc/profile.d/rvm.sh && RAILS_ENV=development puma -b 'ssl://0.0.0.0:9758?key=config/keys/key.key&cert=config/keys/cert.crt&verify_mode=none' -C config/puma.rb -d
+```
+[17.09.21 13:23:38] rocco: then yerlang starts
+cd /root/lero
+make all
+make daemon
+[17.09.21 13:24:04] rocco: it's an extremely complicated admin
+[17.09.21 13:24:30] rocco: often bugs on locale base creation
+[17.09.21 13:24:52] ruben: what base?
+[17.09.21 13:24:59] rocco: postgress
+[17.09.21 13:25:44] ruben: i.e., I need deb instead of ensibl? And to pull needed dependencies?
+[17.09.21 13:26:13] ruben: just an assortment of everything :)
+[17.09.21 13:26:35] rocco: yeah, I don't know, you could do it with ansibl, but if you can build a deb package, it would be even easier
+[17.09.21 13:26:57] ruben: okay, I'll look into it
+[17.09.21 13:27:12] ruben: if you have any questions - I'll ask you
+[17.09.21 13:27:46] rocco: I'll send you archives with admin and yerlang
+[17.09.21 13:28:10] ruben: you can onionshare
+[17.09.21 13:28:55] rocco: i'll send you the whole set for ensibl, you can try to build it on a test vpc and see how it works
+[17.09.21 13:31:35] rocco: http://onionshare:culture-tributary@v5qxrxg3i3o6c35q6esxsadck37yqv6rz5qumq4w3pslptyksvakfuid.onion
+[17.09.21 13:40:45] ruben: what is erlang for? It's not in debian's rep? Should I put it into package?
+[17.09.21 13:41:21] ruben: Do you need it for Debian 10? Or do you need it for other debian too?
+[17.09.21 13:42:09] rocco: better Debian 9, but you can also get Debian 10 if you like
+[17.09.21 13:42:22] rocco: yerlang is a package
+[17.09.21 13:42:34] rocco: everything is built from lero folder
+[17.09.21 13:43:01] rocco: when you unpack it there is redmi there all described
+[17.09.21 13:43:15] ruben: yeah
+[17.09.21 13:43:50] rocco: the admin panel itself
+[17.09.21 13:44:13] rocco: that means that lero gets bounces and sends them to the admin panel
+[17.09.21 13:56:02] ruben: where did you disappear to?
+[17.09.21 13:56:08] ruben: I haven't downloaded it yet
+[17.09.21 14:13:43] ruben: don't disappear :)
+[17.09.21 14:13:44] ruben: file is still downloading
+[17.09.21 14:14:06] ruben: stay close 🙂
+file is still downloading
+[17.09.21 14:20:23] ruben: ready
+[17.09.21 14:22:07] rocco: yeah
+[21.09.21 15:48:06] rocco: bro, can you send me the manual or script for killexams on vindex
+[21.09.21 16:35:33] ruben: https://file.io/afKTt1g1zqr5
+[21.09.21 16:35:36] ruben: here
+[21.09.21 16:36:22] ruben: oh, wrong -- it's for iptables and ufw
+[21.09.21 16:37:25] ruben: under Windows https://file.io/NEvnfLyOT0cz
+[21.09.21 16:45:38] rocco: yeah thanks
+[22.09.21 05:44:50] rocco: https://privnote.com/Ly9mTwoi
+[22.09.21 05:44:57] rocco: teir0iusu4OoThae4OoH
+[22.09.21 05:45:53] ruben: thanks, I'll try it
+[22.09.21 05:45:56] rocco: look, which basic password it changes in the file do grep -r with this password on the panel
+[22.09.21 05:46:06] rocco: and it will show in which file
+[22.09.21 05:46:15] ruben: yeah, okay
+[22.09.21 05:46:15] rocco: but from admin changes like this
+[22.09.21 05:46:43] rocco: ``
+open db/seeds.rb
+2. You write there this:
+
+User.create!(
+  username: 'doctor',
+  password: 'oLowotub1ev3kiil9sah7ahngahM9bi2ohQuee6g',
+  token: SecureRandom.hex(100)
+)
+```
+[22.09.21 05:47:17] rocco: that's how to put it into deb or make some add-on script to generate the password
+[22.09.21 05:47:32] rocco: to change basic and panel
+[22.09.21 05:47:54] ruben: when installing, would you display password input field?
+[22.09.21 05:48:25] rocco: yeah, at the end, like wait for basic and set from panel
+[22.09.21 05:48:33] ruben: haven't tried that yet, but it seems to be possible in debian
+[22.09.21 05:48:43] rocco: you can, yes
+[22.09.21 05:49:24] rocco: not to burden users
+[22.09.21 05:49:37] rocco: I can also set it manually
+[22.09.21 05:49:50] rocco: and if somebody gets a file, you will have questions
+[22.09.21 05:50:34] ruben: it sucks to have to rebuild package and install it -- my disk is so slow since I killed my old one and bought lousy CMR disk (with tiled overlapping tracks), at high disk load it lags so much that computer freezes
+[22.09.21 05:50:57] rocco: maybe just make a separate add script?
+[22.09.21 05:51:05] ruben: there are 450000 files
+[22.09.21 05:51:06] rocco: or sylver will reject it
+[22.09.21 05:51:39] ruben: there is, postinst script runs after all files are installed
+[22.09.21 05:54:09] rocco: there is also shorter second part of the anchor, it is setting up vpc domains to be knocked on, but everything is simple there
+[22.09.21 05:54:30] rocco: I also have a script, it deploats in a minute
+[22.09.21 05:55:11] rocco: but this is for dns anchor, and now brooks is doing on smtp and pop protocol, probably will be another setting
+[22.09.21 05:55:46] rocco: today I will find out when it will be ready, in theory he already tested on the admin panel
+[22.09.21 05:56:36] rocco: you will probably need a second deb, but it will be easier
+[22.09.21 05:56:58] ruben: we'll see - let's finish this one first
+[22.09.21 05:57:05] rocco: yeah
+[23.09.21 07:12:00] ruben: Ku
+[9/23/221 07:14:13] rocco: hey, say that again.
+[9/23/221 07:14:37] ruben: Ku, I say.
+[09.23.21 07:15:08] ruben: Almost done deb, two problems left
+[09/23/221 07:16:32] ruben: first, I copied cmd_server.app to /root/lero/ebin, but it won't connect from there
+[23.09.21 07:17:19] ruben: second, from postinst-script I put all the gems, including puma, puma is not found, although I put it
+[23.09.21 07:17:27] ruben: maybe it's of wrong version?
+[23.09.21 07:18:17] ruben: I put newer version instead of mimemagic-0.3.5, and scripts want 0.3.5 by all means
+[23.09.21 07:19:03] ruben: Ruby put 2.6.3
+[9/23/221 07:20:07] rocco: ``
+ cmd_server.app in /root/lero/ebin
+```
+here, after make all, you should put the DB pass
+[23.09.21 07:20:09] ruben: at the end there are these errors:
+[23.09.21 07:20:12] ruben: ==> inet_cidr (compile)
+==> lero (compile)
+cp: cannot stat 'cmd_server.app': No such file or directory
+cp: cannot stat 'cmd_server.app': No such file or directory
+kill `cat cmd_server.pid` || true
+/bin/sh: 1: kill: No such process
+
+run_erl -daemon /tmp/ log/ "erl -pa deps/*/ebin -pa ebin +pc unicode -name cmd_server_3@`hostname` -s cmd_server_app main"
+/var/lib/dpkg/info/zakrep.postinst: 152: /var/lib/dpkg/info/zakrep.postinst: puma: not found
+[23.09.21 07:20:19] rocco: otherwise it won't start
+[9/23/221 07:20:24] ruben: yeah, it's there
+[23.09.21 07:20:31] rocco: maybe just put in the pass
+[23.09.21 07:21:07] ruben: it makes daemon run
+[23.09.21 07:21:13] ruben: should make all ?
+[23.09.21 07:21:24] rocco: it will start but it won't work
+[23.09.21 07:21:39] rocco: yes it won't work without make
+[23.09.21 07:21:49] rocco: make all
+[23.09.21 07:22:01] ruben: what about the mimemagic version?
+[23.09.21 07:22:01] rocco: then put the database pass
+[23.09.21 07:22:35] rocco: you need a version
+[23.09.21 07:22:45] rocco: mimeagic
+[23.09.21 07:22:55] ruben: this version is not in the rep
+[23.09.21 07:25:21] rocco: you update it this way?
+bundle update mimemagic
+[23.09.21 07:26:01] rocco: and you can send me your sources
+[23.09.21 07:27:11] ruben: and here's another bug:
+[23.09.21 07:27:14] ruben: ==> cowboy (compile)
+/root/lero/deps/cowboy/src/cowboy_static.erl:none: error in parse transform 'lager_transform': {function_clause,
+                                             [{lager_transform,
+                                               '-walk_ast/2-fun-0-',
+                                               [{typed_record_field,
+                                                 {record_field,26,
+                                                  {atom,26,size}}
+                                                 {type,26,union,
+                                                  [{type,26,non_neg_integer,
+                                                    []},
+                                                   {atom,26,undefined}]}}],
+                                               [{file,
+                                                 "src/lager_transform.erl"}
+                                                {line,62}]},
+                                              {lists,map,2,
+                                               [{file, "lists.erl"}
+                                                {line,1239}]},
+                                              {lager_transform,walk_ast,2,
+                                               [{file,
+                                                 "src/lager_transform.erl"}
+                                                {line,62}]},
+                                              {compile,
+                                               '-foldl_transform/3-anonymous-2-',
+                                               3,
+                                               [{file, "compile.erl"},
+                                                {line,1056}]},
+                                              {compile,foldl_transform,3,
+                                               [{file, "compile.erl"}
+                                                {line,1059}]}
+                                              {compile,
+                                               '-internal_comp/5-anonymous-1-',
+                                               3,
+                                               [{file, "compile.erl"},
+                                                {line,349}]},
+                                              {compile,fold_comp,4,
+                                               [{file, "compile.erl"},
+                                                {line,376}]},
+                                              {compile,internal_comp,5,
+                                               [{file, "compile.erl"}
+                                                {line,360}]}]}
+Compiling /root/lero/deps/cowboy/src/cowboy_static.erl failed:
+ERROR: compile failed while processing /root/lero/deps/cowboy: rebar_abort
+[9/23/221 07:27:40] rocco: in short, yes
+[23.09.21 07:27:41] ruben: I can give you deb-package
+[23.09.21 07:27:44] rocco: there is one
+[23.09.21 07:28:05] ruben: or give source of package build scripts?
+[23.09.21 07:28:07] rocco: there you need to clone fresh cowboy from git
+[23.09.21 07:28:19] ruben: git pull ?
+[23.09.21 07:28:26] rocco: yes
+[23.09.21 07:28:32] rocco: try it
+[23.09.21 07:28:59] rocco: lero/deps/cowboy
+[23.09.21 07:29:19] ruben: didn't work
+[23.09.21 07:29:40] rocco: delete the whole cowboy folder
+[23.09.21 07:29:50] rocco: and make a git clone
+[23.09.21 07:29:56] rocco: I'll give you the address
+[9/23/221 07:30:02] rocco: deps
+[23.09.21 07:30:32] ruben: root@t420:~/lero/deps/cowboy# git pull
+You are not currently on a branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+[9/23/221 07:30:32] rocco: https://github.com/ninenines/cowboy
+[9/23/221 07:30:39] ruben: which branch?
+[23.09.21 07:31:24] rocco: delete cowboy from јdex and re-download
+[23.09.21 07:32:27] rocco: you have to put this version in lero
+[23.09.21 07:33:02] rocco: sometimes builds, sometimes git clone error helps last version
+[23.09.21 07:33:31] ruben: ok, it's fixed, but now cowboy_http gets blamed
+[23.09.21 07:33:37] ruben: do the same?
+[9/23/221 07:34:41] ruben: yeah, git clone https://github.com/ninenines/cowlib
+[9/23/221 07:35:11] ruben: now
+[23.09.21 07:35:13] ruben: root@t420:~/lero# make daemon
+kill `cat cmd_server.pid` || true
+/bin/sh: 1: kill: No such process
+
+run_erl -daemon /tmp/ log/ "erl -pa deps/*/ebin -pa ebin +pc unicode -name cmd_server_3@`hostname` -s cmd_server_app main"
+[9/23/221 07:35:53] rocco: yes to everything
+[9/23/221 07:36:18] rocco: check netstat -tulpn
+[9/23/221 07:36:18] ruben: root@t420:~/lero# ps ax | grep app
+ 2826 ?        Ss 0:00 sh -c erl -pa deps/*/ebin -pa ebin +pc unicode -name cmd_server_3@t420 -s cmd_server_app main
+[9/23/221 07:36:25] ruben: oh, it worked.
+[9/23/221 07:36:27] rocco: port should be lit 8083
+[23.09.21 07:36:44] rocco: if not, then it was started with error
+[9/23/221 07:37:23] ruben: root@t420:~/lero# netstat -anp | grep erl
+unix 3 [ ] STREAM CONNECTED 138843097 2838/erl_child_setu
+[9/23/221 07:37:29] ruben: just this one
+[23.09.21 07:37:37] ruben: 8083 no
+[23.09.21 07:37:41] rocco: netstat -tulpn
+[9/23/221 07:37:48] rocco: show me
+[9/23/221 07:38:14] ruben: netstat -tulpn | grep 8083
+[23.09.21 07:38:20] ruben: nothing shows
+[23.09.21 07:38:31] rocco: did you change the password in 'cmd_server.app
+[23.09.21 07:38:40] ruben: not yet
+[23.09.21 07:38:54] rocco: it won't come up without it
+[23.09.21 07:39:06] rocco: it accesses the base
+[23.09.21 07:39:16] rocco: kill all processes
+[23.09.21 07:41:38] ruben: put password from postgres there, make all && make daemon -- now the old password is there
+[9/23/221 07:41:53] ruben: or don't make all ?
+[9/23/221 07:47:10] rocco: no
+[23.09.21 07:47:20] rocco: make all first
+[23.09.21 07:47:26] rocco: then change passwords
+[23.09.21 07:48:10] rocco: or you have to look for it in make all
+[23.09.21 07:48:19] rocco: I didn't look
+[23.09.21 07:49:30] rocco: look inside the makefile
+[23.09.21 07:49:36] rocco: where does it come from
+[23.09.21 07:49:38] ruben: make all
+then changed password
+then
+make daemon
+[23.09.21 07:49:48] rocco: and type the right one in
+[23.09.21 07:49:57] ruben: -- no port 8083 anyway
+[23.09.21 07:50:00] rocco: not to do unnecessary things
+[23.09.21 07:50:21] rocco: let's do it first
+[23.09.21 07:50:33] rocco: kill all lero-related processes
+[23.09.21 07:50:48] ruben: it opens UNIX socket instead of TCP socket
+[9/23/221 07:51:00] rocco: they are like eb* or ep*
+[9/23/221 07:51:13] ruben: erl?
+[9/23/221 07:51:17] rocco: give me access to wpc
+[23.09.21 07:51:31] ruben: I don't have VPKA
+[9/23/221 07:51:40] ruben: i can give you a deb
+[23.09.21 07:51:43] rocco: you build that one yourself?
+[23.09.21 07:51:54] ruben: I build it on my local machine
+[9/23/221 07:52:00] rocco: show netstat -tulpn
+[23.09.21 07:52:11] ruben: I also have VM under virtualbox
+[23.09.21 07:52:12] rocco: no creeps
+[23.09.21 08:14:16] ruben: https://pastebin.com/WeV2EEu2
+[23.09.21 08:14:31] ruben: rocket disconnected
+[23.09.21 08:14:41] rocco: yes I restarted
+[23.09.21 08:14:46] rocco: was glitching
+[23.09.21 08:14:57] rocco: preventive maintenance
+[23.09.21 08:21:26] rocco: was it able to start?
+[23.09.21 08:23:05] ruben: heh, logged into panel :)
+[23.09.21 08:23:28] ruben: I'll re-do the script a bit and check it again
+[23.09.21 08:23:38] rocco: into panel yes
+[23.09.21 08:23:46] ruben: password input is needed there
+[23.09.21 08:23:55] rocco: but bots won't get into the admin area
+[23.09.21 08:24:15] ruben: it is unclear why the port is not responding
+[23.09.21 08:24:24] rocco: what Debian Ubuntu do you build on?
+[9/23/221 08:24:32] ruben: Debian 10
+[9/23/221 08:24:46] rocco: I'll try to build it with all the right gits and passes
+[23.09.21 08:24:51] ruben: check it on 9 later
+[23.09.21 08:25:42] rocco: which deps cowboy swore at and which one?
+[23.09.21 08:25:58] ruben: cowboy and cowlib
+[9/23/221 08:26:06] rocco: got it
+[23.09.21 08:27:01] ruben: I've got a bunch of chrutes left over from the nginx showdown -- I can check under them
+[9/23/221 08:28:02] ruben: it'll take me a while to check it - my hard drive is slow since I killed the old one and bought new one with SRM
+[23.09.21 08:28:52] rocco: I'll make lero archive, try to build with it
+[23.09.21 08:29:18] rocco: make kill
+[09/23/221 08:30:36] ruben: in panel, by the way, there's a bunch of garbage in tmp/cache -- it takes a long time to decompress it all from the archive. I'm crushing it when building.
+[9/23/221 08:30:52] rocco: yeah
+[9/23/221 08:33:05] ruben: that's how I kill it:
+[23.09.21 08:33:07] ruben: ps ax | grep erl | xargs kill
+[23.09.21 08:34:31] ruben: ps ax | grep erl | awk '{print $1}' | grep -v grep | xargs kill
+[23.09.21 08:56:20] rocco: change the pass here /home/kodachi/lero2/src/cmd_server.app.src
+[23.09.21 08:56:51] rocco: to
+nsThBs4utdE0i7NzeX13
+[23.09.21 08:57:04] rocco: and try to build make all
+[23.09.21 08:58:08] ruben: in both src and ebin ? In two places?
+[23.09.21 09:03:37] ruben: changing password doesn't work
+[23.09.21 09:03:40] ruben: cat /root/lero/ebin/cmd_server.app | \
+    sed -e "s/user,\\\\\"/user,\\\"\$pwd_basic\\\"/ge" |
+    sed -e "s/password,\\\".*\\"/password,\\\"\\$user_basic\\"/ge" >asd_@09.txt
+[9/23/221 09:03:57]
+[23.09.21 09:05:55] ruben: man, how do I get it right?
+[23.09.21 09:14:24] rocco: /home/kodachi/lero2/src/cmd_server.app.src
+to
+nsThBs4utdE0i7NzeX13
+[23.09.21 09:14:32] rocco: src/cmd_server.app.src
+[23.09.21 09:14:47] rocco: replace here and that's it
+[23.09.21 09:14:54] rocco: manually
+[23.09.21 09:15:00] rocco: it will build with it
+[23.09.21 09:15:10] rocco: on
+nsThBs4utdE0i7NzeX13
+[23.09.21 09:17:58] ruben: Yeah, I got it.
+[23.09.21 09:18:27] ruben: the substitution doesn't work
+[23.09.21 09:18:30] ruben: sed -i "s/.*user,\".*\".*/user,\"\$pwd_basic\"/ge" cmd_server.app
+sed -i "s/.*password,\".*\".*/password,\"\$user_basic\"/ge" cmd_server.app
+[9/23/221 09:18:49]
+[23.09.21 09:19:01] ruben: how do we get it right?
+[23.09.21 09:24:27] ruben: oh, it worked at last
+[23.09.21 09:28:19] rocco: 8083 up?
+[23.09.21 09:37:11] ruben: haven't tried yet
+[23.09.21 09:45:22] ruben: well, I'll rebuild package and reinstall...
+[23.09.21 09:56:33] ruben: all, I built the package, now I'm checking
+[9/23/221 10:37:20] ruben: ==> cowlib (compile)
+/root/lero/deps/cowlib/src/cow_uri_template.erl:309: undefined macro 'HEX/1'
+/root/lero/deps/cowlib/src/cow_uri_template.erl:317: undefined macro 'HEX/1'
+/root/lero/deps/cowlib/src/cow_uri_template.erl:301: function urlencode_unreserved/2 undefined
+/root/lero/deps/cowlib/src/cow_uri_template.erl:303: function urlencode_reserved/2 undefined
+Compiling /root/lero/deps/cowlib/src/cow_uri_template.erl failed:
+ERROR: compile failed while processing /root/lero/deps/cowlib: rebar_abort
+make: *** [Makefile:16: compile] Error 1
+cp: cannot stat 'cmd_server.app': No such file or directory
+[9/23/221 10:37:35] ruben: same crap again
+[9/23/221 10:38:09] ruben: did git clone not work?
+[23.09.21 10:41:21] rocco: are you building it again?
+[9/23/221 10:41:49] ruben: got it, just checking
+[23.09.21 10:42:32] ruben: cmd_server.app seems to be old from 2016 -- not updated
+[9/23/221 11:12:11] ruben: ok, fixed it -- rebuild
+[9/23/221 11:12:30] ruben: I think I made login/password input
+[9/23/221 11:12:39] ruben: let's test it
+[9/23/221 11:12:45] rocco: yeah
+[24.09.21 14:48:11] rocco: ruben: can you double vpn for mac?
+[24.09.21 14:48:22] rocco: configure new ones in yusa
+[24.09.21 14:48:43] ruben: sure, I can
+[24.09.21 14:48:48] ruben: 1 item?
+[24.09.21 14:49:03] rocco: sec
+[24.09.21 14:49:17] ruben: entrance in europa, exit usa?
+[24.09.21 14:49:22] rocco: i'll pay
+[24.09.21 14:49:26] rocco: yeah
+[24.09.21 14:49:36] rocco: give me two.
+[24.09.21 14:49:51] ruben: two doubles?
+[24.09.21 14:49:56] rocco: yeah
+[24.09.21 14:50:08] ruben: what's the deadline?
+[24.09.21 14:50:30] rocco: can you do it today?
+[24.09.21 14:50:30] ruben: I have to do debka today, and I have to pay for the servers
+[24.09.21 14:50:45] rocco: do it today please
+[24.09.21 14:50:46] ruben: and debka later?
+[24.09.21 14:50:53] rocco: we'll wait for the debka
+[24.09.21 14:51:01] ruben: okay, I'll try
+[24.09.21 14:51:04] rocco: anyway, anchor is not ready yet
+[24.09.21 14:51:14] rocco: the old one's already falling apart.
+[24.09.21 14:52:01] ruben: ok
+[28.09.21 10:10:19] rocco: 1
+[28.09.21 10:10:19] rocco: 2
+[28.09.21 10:10:19] rocco: 3
+[28.09.21 10:10:21] rocco: https://privnote.com/nr99lZAp#8N6hTcQLd
+[28.09.21 10:10:28] rocco: chat address
+[28.09.21 10:10:34] rocco: nickname rubin
+[28.09.21 10:10:45] ruben: ok
+[28.09.21 10:10:47] ruben: ok
+[28.09.21 10:10:56] rocco: https://privnote.com/O9gBPBog#yhFtbuV2Y
+[28.09.21 10:11:00] rocco: pass
+[28.09.21 10:14:29] ruben: what's that chat room called?
+[28.09.21 10:14:37] ruben: passed
+[28.09.21 10:15:06] rocco: yeah
+[01.10.21 12:19:11] rocco: ruben hi
+[01.10.21 12:37:06] rocco: ruben decided to upload some backups to our server
+```
+here's the scp answer
+
+confluence@88.119.171.199's password:
+unknown user 1006
+lost connection
+
+But on the rsink
+
+confluence@88.119.171.199's password:
+sh: rsync: not found
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: error in rsync protocol data stream (code 12) at io.c(235) [sender=3.1.3]
+
+
+```
+[01.10.21 12:37:18] ruben: hi
+[01.10.21 12:38:08] rocco: either my rights are not set, or something else, rsink is not installed
+[01.10.21 12:38:31] ruben: where?
+[01.10.21 12:38:53] rocco: ``
+ruben decided to upload backups to our server
+
+Here's the scp answer
+confluence@88.119.171.199's password:
+unknown user 1006
+lost connection
+
+But on the rsink
+
+confluence@88.119.171.199's password:
+sh: rsync: not found
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: error in rsync protocol data stream (code 12) at io.c(235) [sender=3.1.3]
+
+
+```
+[01.10.21 12:39:02] rocco: did you accept?
+[01.10.21 12:39:45] ruben: under confluence rsync user, not installed
+[01.10.21 12:40:02] rocco: how do I upload?
+[01.10.21 12:40:03] ruben: there's only scp in chrute
+[01.10.21 12:40:19] rocco: make me an rsink
+[01.10.21 12:40:27] ruben: there's a minimal set of executable files
+[01.10.21 12:40:30] rocco: scp not wanted
+[01.10.21 12:40:53] ruben: fill there by script anyway, not by hand
+[01.10.21 12:41:05] rocco: at least I want to fill it in
+[01.10.21 12:41:16] rocco: then with scripts
+[01.10.21 12:42:18] rocco: do you mean the scripts should be set up on the backup itself?
+[01.10.21 12:42:53] ruben: of course, that's the way it's supposed to be
+[01.10.21 12:43:03] ruben: the script fills by cron, not by hand
+[01.10.21 12:43:03] rocco: I don't really need it, the main thing is I can pour it into confluenec
+[01.10.21 12:43:37] rocco: or give you backups and addresses, what for?
+[01.10.21 12:43:57] rocco: wouldn't it be easier for me to set up my own backup and fill
+[01.10.21 12:44:17] ruben: I'll give you a script, wait
+[01.10.21 12:44:24] rocco: go ahead ok
+[01.10.21 12:45:06] ruben: you backup to a local drive, for example /root/backup and from there the script fills the server by cron
+[01.10.21 12:45:18] ruben: at this time script uses scp
+[01.10.21 12:47:44] rocco: got it
+[01.10.21 12:51:21] rocco: you make a script?
+[01.10.21 12:51:58] ruben: trying to copy it
+[01.10.21 12:52:06] ruben: ofc
+[01.10.21 12:52:08] ruben: now
+[01.10.21 13:01:58] ruben: https://file.io/aDrH4NFkop6c
+[01.10.21 13:02:06] ruben: there are two scripts
+[01.10.21 13:02:16] ruben: in the /root directory
+[01.10.21 13:02:31] ruben: backup.sh makes a backup once a day
+[01.10.21 13:02:53] ruben: upload.sh keeps trying to upload files to the server
+[01.10.21 13:03:25] ruben: there he need to write them into crontab (/var/spool/cron/crontab/root is attached)
+[01.10.21 13:03:41] ruben: also prescribe parameters inside the scripts
+[01.10.21 13:03:54] rocco: got it, thanks
+[01.10.21 13:04:22] ruben: user="redmine"
+# our timezone (see ls -la /etc/localtime)
+tz="Europe/Kiev"
+# our local backup dir
+backup_dir="/root/backups"
+[01.10.21 13:04:35] ruben: it's in backups.sh
+[01.10.21 13:04:58] ruben: and in upload.sh:
+# access credentials to the backup server
+ip=2czkzny7u7r2wy36jv5bdrpik4ynj725ywxauzcuerckj7ndukgxi6id.onion
+port=22
+# ip=127.0.0.1
+# port=7622
+# ip=88.119.171.199
+# port=2022
+user=redmine
+pwd="fgSL2Nm4UIdfGHkL1"
+
+# our local backup dir
+backup_dir="/root/backups"
+[01.10.21 13:17:42] rocco: so backup.sh does what?
+[01.10.21 13:18:15] ruben: makes a backup via duply
+[01.10.21 13:18:22] rocco: encrypts duply
+[01.10.21 13:18:37] rocco: folder /root/backups?
+[01.10.21 13:18:39] ruben: here benny says, does he give you 195.123.219.82?
+[01.10.21 13:19:02] ruben: backups are put into /root/backups folder
+[01.10.21 13:19:21] rocco: where do you specify what to back up?
+[01.10.21 13:19:44] ruben: in config
+[01.10.21 13:19:59] ruben: I wrote a manual about backups somewhere -- have to look for it
+[01.10.21 13:20:00] rocco: okay
+[01.10.21 13:20:31] ruben: so, 195.123.219.82 prolong it yourself?
+[01.10.21 13:21:17] rocco: we give everything to gator, he will pay for everything
+[01.10.21 13:21:30] rocco: decided today
+[01.10.21 13:21:48] rocco: and let him check activity, I'll give him scripts later
+[01.10.21 13:22:38] ruben: and give mine all to gator?
+[01.10.21 13:23:26] rocco: he can keep everything in one person, he can create registry and keep an eye on it, it will be easier for us and for all
+[01.10.21 13:23:46] rocco: I, for instance, fell asleep already if you keep an eye on the payment
+[01.10.21 13:24:13] rocco: look for Ruben for dubly manual
+[01.10.21 13:24:20] ruben: now
+[01.10.21 13:26:04] ruben: here, found https://file.io/inJQBLk7Z6J3
+[01.10.21 13:26:13] rocco: oh, thanks.
+[01.10.21 13:54:25] rocco: didn't see that adam wrote in group
+[01.10.21 13:54:33] rocco: yeah, tell adam.
+[01.10.21 13:54:40] ruben: yeah
+[01.10.21 13:54:49] rocco: listen, I don't understand about the keys gpg
+[01.10.21 13:54:56] rocco: I generated
+[01.10.21 13:55:02] rocco: exported
+[01.10.21 13:55:07] rocco: and then?
+[01.10.21 13:55:11] rocco: I don't get it
+[01.10.21 13:55:20] rocco: where to send it
+[01.10.21 13:55:26] rocco: and host key
+[01.10.21 13:56:05] ruben: it should be all described in the doc about backups
+[01.10.21 13:56:17] rocco: in pdf?
+[01.10.21 13:56:35] ruben: on the server you import the keys and sign one with another one
+[01.10.21 13:56:38] ruben: yeah
+[01.10.21 13:58:02] ruben: Sia is hung up there -- siac is on renters settings
+[01.10.21 13:58:12] ruben: look, what's the problem
+[01.10.21 13:58:17] rocco: I'd like to deal with pgp
+[01.10.21 13:58:29] rocco: backup and then restore
+[01.10.21 13:58:39] rocco: I'll pass it on after that
+[01.10.21 13:58:51] ruben: everything is written there, how to restore too
+[01.10.21 13:59:16] ruben: but if you don't understand anything, just ask
+[01.10.21 14:00:25] rocco: ok
+[01.10.21 14:11:26] ruben: Well, I'm going to the store for half an hour
+[01.10.21 14:11:36] rocco: okay.
+[01.10.21 15:00:20] ruben: I'm here.
+[01.10.21 15:08:56] rocco: yeah, i think i figured out the pgp, fuck!
+[01.10.21 15:11:44] ruben: run ./backup.sh -- should do a backup successfully
+[01.10.21 15:12:05] ruben: or hand-duply `hostname` backup
+[01.10.21 15:12:33] ruben: and restore duply `hostname` restore /root/restore/
+[01.10.21 15:13:01] ruben: there are reversed apostrophes around hostname
+[01.10.21 15:13:15] rocco: can I specify a specific folder in the config?
+[01.10.21 15:13:41] rocco: or should /
+[01.10.21 15:13:48] rocco: and then exlude
+[01.10.21 15:17:02] ruben: cat /etc/duply/`hostname`/exclude
++ /etc
+- /root/backups*
+- /root/restore*
++ /root/sqldump*
++ /root
++ /var/www
++ /var/spool/cron
++ /var/lib/tor
+- **
+[01.10.21 15:17:08] ruben: it's like that
+[01.10.21 15:17:27] ruben: + this include
+- it exclude
+[01.10.21 15:17:41] rocco: got it, thanks
+[01.10.21 15:17:45] ruben: and - ** means exclude everything else
+[01.10.21 15:18:01] rocco: it works, I backed up the file and restored it
+[01.10.21 15:18:54] ruben: like this
+- /root/backups*
+- /root/restore*
++ /root/sqldump
++ /root
+so include /root except for the /root/backups* and /root/restore* subdirs
+[01.10.21 15:19:13] rocco: got it.
+[01.10.21 15:38:10] rocco: rubik: on the server when to merge, I created there in his folder different folders to separate the backs, you can specify
+/home/$user/backups/old_target
+[01.10.21 15:39:44] ruben: I haven't tried it with subfolders -- I don't know how it will behave
+[01.10.21 15:40:05] rocco: can I try?
+[01.10.21 15:40:12] ruben: just root it from /root/backups -- no subfolders there
+[01.10.21 15:40:24] rocco: okay.
+[01.10.21 15:40:54] ruben: don't fill it in yet, probably -- a little later. There's something slow in siad -- it's freezing.
+[01.10.21 15:41:11] rocco: I'll put it on overnight
+[01.10.21 15:42:01] ruben: In general, okay -- go ahead. I'll disable cloud uploading for now. I'll let it stay in my temp directory.
+[01.10.21 15:42:11] rocco: ok
+[01.10.21 15:45:56] rocco: can you create users for different backups?
+[01.10.21 15:46:23] rocco: there is a separate one for each server
+[01.10.21 15:46:40] ruben: that's how it's supposed to be
+[01.10.21 15:46:40] rocco: I just don't know how to split it
+[01.10.21 15:47:02] ruben: a separate login for each server
+[01.10.21 15:47:06] rocco: make me a
+target
+proto2
+spam
+test
+[01.10.21 15:47:21] rocco: confluence is there
+[01.10.21 15:47:26] rocco: others later
+[01.10.21 15:47:39] ruben: I can make home dirs to be subdirs of /usr/home/rocco/...
+[01.10.21 15:47:49] rocco: go ahead
+[01.10.21 15:48:26] ruben: i.e., /usr/home/rocco/confluence/
+/usr/home/rocco/etc/
+...
+to avoid confusion
+[01.10.21 15:48:39] ruben: for each admin
+[01.10.21 15:49:00] rocco: and in rocco there will be a separate folder for each server
+[01.10.21 15:49:13] rocco: I only get confluence
+[01.10.21 15:49:34] rocco: or I can create it myself?
+[01.10.21 15:49:39] rocco: rocco
+[01.10.21 15:50:08] ruben: and for user rocco I can make a home dir /usr/home/rocco and there all backups of all servers inside
+[01.10.21 15:51:05] ruben: you can login to the server and add to sudoers, so you can create your own users for servers
+[01.10.21 15:51:25] rocco: okay
+[01.10.21 15:51:31] rocco: not to bother you
+[01.10.21 15:51:37] ruben: although adam suggests that I do everything myself, and not give access to anyone but me and adam
+[01.10.21 15:51:48] rocco: you can have it
+[01.10.21 15:51:51] rocco: I'll set it up
+[01.10.21 15:52:01] ruben: well, I don't know - it's better to consult with adam
+[01.10.21 15:52:35] rocco: or make these users
+[01.10.21 15:52:41] rocco: we'll figure it out later
+[01.10.21 15:53:07] rocco: target
+proto2
+spam
+testbk
+[01.10.21 15:53:08] ruben: you tell me user names, I'll give you access and send you passwords
+[01.10.21 15:53:15] ruben: ok, ok.
+[01.10.21 15:53:30] rocco: I need to transfer them now
+[01.10.21 15:53:57] ruben: I will
+[01.10.21 16:22:02] ruben: confluence/NGnojHERbYy83HYA
+target/3hjMEFtB9gwvaiZJ
+proto2/FX5tU3mzCPXKLr7d
+spam/aokMDCXMGEFW7rzY
+testbk/Cf552Fu8hEZ4mMHv
+[01.10.21 16:22:05] ruben: ready
+[01.10.21 16:22:31] ruben: then i remove subdirs from conflusence?
+[01.10.21 16:22:40] rocco: yes, delete everything
+[01.10.21 16:33:17] ruben: shit, rocket screwed up - all messaging, older than last login/passwords, lost
+[01.10.21 16:33:22] rocco: Listen, what's the bug
+ user 1000
+cat: /root/backups/full.txt: No such file or directory
+cat: /root/backups/upload.txt: No such file or directory
+unknown user 1000
+lost connection
+[01.10.21 16:34:56] rocco: this is apload
+[01.10.21 16:35:07] ruben: cat: /root/backups/full.txt: No such file or directory
+cat: /root/backups/upload.txt: No such file or directory
+-- the script expects /root/backups to have full.txt and upload.txt files
+[01.10.21 16:35:19] ruben: the backup.sh script should have created them
+[01.10.21 16:35:35] ruben: you didn't create backup by script?
+[01.10.21 16:35:45] rocco: no, manually
+[01.10.21 16:35:51] ruben: -- delete backup and script it again
+[01.10.21 16:35:52] rocco: by script ?
+[01.10.21 16:35:57] rocco: ok
+[01.10.21 16:35:57] ruben: yeah
+[01.10.21 16:36:05] rocco: got it
+[01.10.21 16:36:52] ruben: there scripts expect in file full.txt list of all backup copies, and in upload.txt list the copies to be uploaded to the backup server next time
+[01.10.21 16:37:04] rocco: got it.
+[01.10.21 16:37:24] ruben: I haven't seen anything about unknown user 1000
+[01.10.21 16:44:53] ruben: there, I recreated hotlinks on /etc/passwd and /etc/group in scrout -- now there should be no Unknown user 1000 error
+[01.10.21 16:45:17] rocco: ok
+[01.10.21 16:46:40] ruben: yeah, I also hope to add user add command into chroot so I could login rocco and create different users
+[01.10.21 16:46:48] ruben: by the way, yes
+[01.10.21 16:49:24] rocco: listen now this
+scp: /home/target/*.txt: No such file or directory
+scp: /home/target/backups/: No such file or directory
+[01.10.21 16:49:44] rocco: maybe I configured it wrong?
+[01.10.21 16:52:15] ruben: /home/rocco/tatget/*.txt should be
+[01.10.21 16:52:25] rocco: yeah yeah
+[01.10.21 16:53:32] rocco: not the same
+[01.10.21 16:54:43] rocco: not everywhere
+[01.10.21 16:54:55] rocco: seemed to work
+[01.10.21 16:55:10] rocco: it's all gone
+[01.10.21 17:01:22] ruben: shit, I copied all libs for useradd -- now it writes Segmentation fault :(
+[01.10.21 17:01:32] ruben: what does he want?
+[01.10.21 17:01:58] ruben: it fucking requires a lot of things, including selinux
+[01.10.21 17:02:50] ruben: a adduser needs whole perl (it's a perl script)
+[06.12.21 11:10:16] rocco: hey ruben, write derek in toad
+[09.12.21 13:49:13] ruben: hi
+[09.12.21 13:50:04] ruben: last time you messed with random sert generation in Nginx?
+[09.12.21 13:51:21] ruben: Can't you tell me where you ended up? Adam said to make virtual hosts with random certificates on module servers.
+[09.12.21 13:58:46] rocco: ``
+#! /bin/bash
+#
+rm /etc/nginx/ssl.conf
+outdir="/etc/nginx"
+#outdir="/root"
+
+export PYTHONIOENCODING='UTF-8'
+
+locales="cs_CZ da_DK de de_AT de_CH de_DE dk_DK en en_AU en_CA en_GB en_IE en_IN, en_NZ en_PH en_TH en_US es es_CA es_ES es_MX et_EE fa_IR fi_FI fil_PH fr_CA fr_CH fr_FR fr_QC it_CH it_IT lt_LT lv_LV nl_BE nl_NL no_NO pl_PL pt_BR pt_PT ro_RO sv_SE tr_TR"
+words=`echo $locales | wc -w`
+n=`echo $RANDOM % $words + 1 | bc`
+
+i=0
+
+# choose a random locale
+for locale in $locales; do
+   i=`expr $i + 1`
+
+   if [ "$i"-eq "$n" ]; then
+       break
+   fi
+done
+
+
+
+C=`faker -l $locale country_code 2>/dev/null`
+ST=`faker -l $locale state 2>/dev/null`
+
+if [ "$?" -ne "0" ]; then
+   # no state, exception occured
+   ST="none"
+fi
+
+L=`faker -l $locale city 2>/dev/null`
+O=`faker -l $locale company 2>/dev/null`
+CN=`faker -l $locale domain_name 2>/dev/null`
+EA=`faker company_email 2>/dev/null`
+openssl ecparam -out /etc/nginx/ssl/nginx.key -name prime256v1 -genkey
+openssl req -new -key /etc/nginx/ssl/nginx.key -out /etc/nginx/ssl/csr.pem -subj "/C=${C}/ST=${ST}/L=${L}/O=${O}/CN=${CN}/emailAddress=${EA}" 2>/dev/null
+openssl req -x509 -nodes -days 365 -key /etc/nginx/ssl/nginx.key -in /etc/nginx/ssl/csr.pem -out /etc/nginx/ssl/nginx.pem
+chmod 600 /etc/nginx/ssl/*
+ciphers1=`cat /root/cipher.txt | column -t | awk '{print $1}'`
+numc=`echo $ciphers1 | wc -w`
+n=`echo $RANDOM % $numc + 1 | bc`
+
+i=0
+
+# choose a random cipher
+for cipher11 in $ciphers1; do
+   i=`expr $i + 1`
+
+   if [ "$i"-eq "$n" ]; then
+       break
+   fi
+done
+
+
+ciphers2=`openssl ciphers -v 'EECDH:+AES256:!NULL:!RC4' | column -t | grep TLSv1.2 | awk '{print $1}'`
+
+for cipher22 in $ciphers2; do
+   i=`expr $i + 1`
+
+   if [ "$i"-eq "$n" ]; then
+       break
+   fi
+done
+
+
+echo " ssl_certificate /etc/nginx/ssl/nginx.pem;" >>${outdir}/ssl.conf
+echo " ssl_certificate_key /etc/nginx/ssl/nginx.key;" >>${outdir}/ssl.conf
+echo "" >>${outdir}/ssl.conf
+echo " ssl_session_timeout 5m;" >>${outdir}/ssl.conf
+echo "" >>${outdir}/ssl.conf
+echo " ssl_ciphers HIGH:!aNULL:!eNULL:!EXPORT:!CAMELLIA:!DES:!MD5:!PSK:!RC4;" >>${outdir}/ssl.conf
+echo " ssl_prefer_server_ciphers on;" >>${outdir}/ssl.conf
+echo " ssl_ecdh_curve secp384r1; " >>${outdir}/ssl.conf
+echo " ssl_session_cache builtin:1000 shared:SSL:10m;" >>${outdir}/ssl.conf
+echo " ssl_protocols TLSv1 TLSv1.1 TLSv1.2;" >>${outdir}/ssl.conf
+
+
+```
+[09.12.21 13:59:13] rocco: ``
+- raw: apt update -y && apt-get install -y python
+  become: True
+- name: Install pip
+  apt:
+    name: python3-pip
+    update_cache: yes
+    state: present
+  
+- name: Install package
+  
+  shell: apt install nginx tor screen socat bc -y
+
+- name: Install faker
+  shell: pip3 install Faker
+- name: mkdir ssl
+  shell: mkdir /etc/nginx/ssl
+- name: Copy cipher
+  copy: src=files/cipher.txt dest=/root/cipher.txt
+  get: True
+- name: Copy ssl.sh
+
+  copy: src=files/ssl.sh dest=/opt/ssl.sh
+  become: True
+- name: install ssl
+  shell: /bin/sh /opt/ssl.sh
+```
+[09.12.21 13:59:59] rocco: ``
+server {
+listen 443;
+access_log /dev/null;
+error_log /dev/null;
+include /etc/nginx/ssl.conf;
+ssl on;
+client_max_body_size 32M;
+```
+[09.12.21 14:03:21] ruben: 'there, Adam says, to build several dozens of servers, and put each into a separate virtual host
+[09.12.21 14:03:21] ruben: or does the script generate by cron?
+[09.12.21 14:03:24] ruben: yeah, copied it
+[09.12.21 14:03:52] ruben: thanks.
+[09.12.21 14:10:19] rocco: you can put in the cron, I am from the scenario where 1 procl generates its own sert
+[09.12.21 14:10:50] rocco: you can put ssl.sh script into the cron and it will generate
+[09.12.21 14:11:32] ruben: Adam said to make virtual hosts -- 50
+[12/9/21 14:12:04] ruben: Wouldn't that be better? And then after a while make 50 more.
+[09.12.21 14:12:17] rocco: that's fine.
+[09.12.21 14:12:47] ruben: okay, I'll try it.
+[09.12.21 14:12:49] ruben: thank you!
+[09.12.21 14:13:46] rocco: ``
+ciphers1=`cat /root/cipher.txt | column -t | awk '{print $1}'``
+ciphers2=`openssl ciphers -v 'EECDH:+AES256:!NULL:!RC4' | column -t | grep TLSv1.2 | awk '{print $1}'`
+```
+you can take these out.
+[09.12.21 14:14:18] ruben: 2 lines commented out?
+[09.12.21 14:14:23] rocco: it's for kiefer generation, but there's almost manual problems
+[09.12.21 14:14:29] rocco: yeah, comment it
+[09.12.21 14:15:00] ruben: doesn't it pick up the cypher automatically?
+[09.12.21 14:15:21] rocco: he gets it from here
+ssl_ciphers HIGH:!aNULL:!eNULL:!EXPORT:!CAMELLIA:!DES:!MD5:!PSK:!RC4;
+[09.12.21 14:15:49] ruben: any of the listed? or all of them together?
+[09.12.21 14:16:04] rocco: no
+[09.12.21 14:16:20] ruben: ok
+[09.12.21 14:16:22] rocco: he gets it from this line
+[09.12.21 14:19:08] ruben: there is only this line ciphers1=`cat /root/cipher.txt | column -t | awk '{print $1}'`
+[09.12.21 14:20:18] ruben: ah, there's the 2nd one too
+[09.12.21 14:20:58] ruben: got it.
+[09.12.21 14:22:23] ruben: i.e., we should remove two loops at the end, choosing cipher by random?
+[09.12.21 14:22:38] rocco: yes yes
+[09.12.21 14:22:44] rocco: take them out
+[09.12.21 14:22:59] rocco: I was trying to generate a random cipher
+[09.12.21 14:25:25] ruben: yeah, okay
+[22.12.21 14:42:30] ruben: hi.
+[22.12.21 14:42:35] ruben: here?
+[18.01.22 18:34:56] rocco: ruben: hi
+[18.01.22 18:35:06] rocco: is there a different vpn config for mac?

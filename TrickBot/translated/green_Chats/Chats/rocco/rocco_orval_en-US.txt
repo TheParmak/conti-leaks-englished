@@ -1,0 +1,105 @@
+[14.09.21 17:15:39] orval: hi
+[14.09.21 17:16:46] rocco: again
+[14.09.21 17:16:58] rocco: no ec2
+[14.09.21 17:17:03] rocco: with jnh
+[14.09.21 17:17:12] rocco: jnh drk.xbk
+[14.09.21 21 17:17:17] rocco: rtr included
+[14.09.21 17:17:24] orval: hi
+[14.09.21 17:17:35] orval: you admin Jenkins?
+[14.09.21 17:17:48] rocco: yes
+[14.09.21 17:18:10] rocco: didn't solve the problem?
+[14.09.21 17:18:24] orval: with build 4 cryptor
+[14.09.21 17:18:27] orval: ``Building in workspace c:\jenkins\workspace\crypter4_shellcode_64_dll
+The recommended git tool is: NONE
+using credential 52950982-558b-4395-a732-0f49fdc48a6b
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://95.179.129.40/stanton/crypter4 # timeout=10
+Fetching upstream changes from https://95.179.129.40/stanton/crypter4
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.31.1.windows.1'
+using GIT_ASKPASS to set credentials
+ > git.exe fetch --tags --force --progress -- https://95.179.129.40/stanton/crypter4 +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+Checking out Revision dd6b47a9d2f667b807246cebf7eaa821424b33b6 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f dd6b47a9d2f667b807246cebf7eaa821424b33b6 # timeout=10
+Commit message: "remove 3 ballast"
+ > git.exe rev-list --no-walk 83d24861685c8bc51a4377fdda28bb83af02650a # timeout=10
+Copying file to test
+FATAL: c:\jenkins\workspace\crypter4_shellcode_64_dll\test (Access is denied)
+java.io.FileNotFoundException: c:\jenkins\workspace\crypter4_shellcode_64_dll\test (Access is denied)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:298)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:237)
+[14.09.21 17:19:24] rocco: yeah saw that, I'll try to solve it, haven't dealt with it yet
+[14.09.21 17:19:57] orval: I think the easiest thing now is to copy from the working profile of another cryptor
+[14.09.21 17:20:10] orval: can do
+[14.09.21 17:20:23] orval: if the problem is here on jenkins itself
+[14.09.21 17:20:40] orval: can't be related to git?
+[14.09.21 17:21:47] rocco: no, not likely, it can't copy a temporary file
+[14.09.21 17:21:57] rocco: it goes to krypt
+[14.09.21 17:22:04] orval: I noticed that the order of the git.exe command is different than others
+[14.09.21 17:22:29] rocco: i'll see if your profile is configured incorrectly\
+[14.09.21 17:37:21] orval: copied from work profile, same error
+[14.09.21 17:38:02] rocco: let me check on the admin
+[16.09.21 10:36:34] orval: hi
+[16.09.21 12:00:12] orval: 123
+[16.09.21 12:14:34] rocco: hi.
+[16.09.21 12:17:21] orval: you haven't figured out the 4 cryptor?
+[16.09.21 12:17:37] rocco: yes we did
+[16.09.21 12:17:50] orval: great
+[16.09.21 12:17:54] orval: what was the problem?
+[16.09.21 12:18:41] rocco: the problem was in the folder test, and the intermediate file in Jenkins also test, because of that there was a hitch
+[16.09.21 12:19:01] rocco: the folder was in the shield
+[16.09.21 12:19:03] rocco: git
+[16.09.21 12:19:11] rocco: in that assembly
+[16.09.21 12:20:12] rocco: I named test file when I was making settings and it stayed that way
+[16.09.21 12:20:44] rocco: now to rename it you have to redo everything
+[16.09.21 12:21:13] orval: I see
+[16.09.21 14:22:30] orval: thanks for the help)
+[20.09.21 15:40:54] orval: hi
+[20.09.21 15:51:52] rocco: hi
+[20.09.21 15:53:15] orval: I wanted to put studio tools on Jenkins
+[20.09.21 15:53:29] orval: you can do it with official installer?
+[20.09.21 16:01:54] rocco: i think we deleted all the images
+[20.09.21 16:02:04] rocco: you have to upload them again from torrents
+[20.09.21 16:02:21] rocco: but you can upload them again on biterrent
+[20.09.21 16:02:28] rocco: let me give you access
+[20.09.21 16:02:30] orval: and from official?
+[20.09.21 16:02:32] orval: I have
+[20.09.21 16:02:41] rocco: I think you can
+[20.09.21 16:03:08] rocco: don't break anything, put it on
+[20.09.21 16:03:45] orval: okay
+[20.09.21 16:19:03] orval: and there's some adate in there too
+[20.09.21 16:19:07] orval: on the system
+[20.09.21 16:19:18] rocco: update?
+[20.09.21 16:19:27] rocco: reboot request?
+[20.09.21 16:19:38] rocco: cancel it for now, then reboot
+[20.09.21 16:19:39] orval: when I came in yes
+[20.09.21 16:19:58] orval: webcompanion updater
+[20.09.21 16:20:12] orval: canceled
+[20.09.21 16:20:22] orval: I think they are still different processes
+[20.09.21 16:20:38] orval: updater just want to update
+[20.09.21 16:20:43] orval: the system wanted to reboot
+[20.09.21 16:21:19] rocco: aah, what the hell, I'll check it later
+[20.09.21 16:21:37] rocco: I turned off all telemetry there
+[24.09.21 11:11:49] orval: hi.
+[24.09.21 13:21:35] rocco: hi
+[24.09.21 13:24:26] orval: do you administer the git you upload cryptos to?
+[24.09.21 13:24:40] rocco: yes
+[24.09.21 13:25:12] orval: do you know if stuffy has an account there?
+[24.09.21 13:27:15] rocco: no such account for stuffy, maybe he uses another one
+[24.09.21 13:27:27] rocco: check with elroy
+[24.09.21 13:27:41] orval: yeah
+[24.09.21 13:28:04] orval: and the repository needs to be configured somehow to make it work on Jenkins?
+[24.09.21 13:28:29] rocco: no, it's already configured in Jenkins profile
+[24.09.21 13:28:44] rocco: nothing on the git itself
+[24.09.21 13:29:08] orval: just elroy always asked for read rights, i thought maybe he set something up
+[24.09.21 13:30:29] rocco: i don't remember exactly about rights, in jenkins only takes and under what account
+[24.09.21 13:31:33] orval: got it, thanks
+[26.10.21 16:46:01] orval: hi.
+[26.10.21 17:06:42] rocco: hi.
+[26.10.21 17:07:09] orval: the git with crypts is down, is it for you?
+[26.10.21 17:07:20] rocco: I texted adam
+[26.10.21 17:07:32] orval: ok

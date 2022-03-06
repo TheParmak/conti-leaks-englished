@@ -1,0 +1,520 @@
+[28.07.21 09:49:41] benny: Mens, as soon as - so immediately... I'll let you know!
+[28.07.21 11:38:36] benny: P: 2807__NewwwWaVE__
+[28.07.21 11:39:05] benny: https://qaz.im/zaq/Ae4ZFTGy#yD88AQan
+[28.07.21 11:57:25] benny: P: 2807__NewwwwwWaVE__
+https://qaz.im/zaq/Ae4ZFTGy#yD88AQan
+[28.07.21 11:57:39] benny: right, the key didn't work...
+[28.07.21 12:01:32] benny: ))) nz, I'm tearing my hair out here, all is well, and routers don't proxy, hurray
+[28.07.21 12:01:46] benny: not yours, but the ones I wrote, in principle
+[29.07.21 17:40:43] rocco: Beni, hi, can you check the routers I gave you yesterday, they're dead
+[29.07.21 17:41:24] benny: I'll try
+[29.07.21 17:41:26] benny: Hi.
+[29.07.21 17:43:00] benny: double-check with your side, everything is cooing!
+[29.07.21 17:44:23] benny: 4 routers, like clockwork, and I choked up, so far the routers are a trable, but you saw my nerves in the group yourself... Anyway, I'm stocking up.
+[29.07.21 17:45:01] benny: is our toad cooing?
+[29.07.21 17:47:59] benny: You see the text?
+[29.07.21 17:49:49] benny: okay...
+[30.07.21 09:58:18] benny: Hi, man!
+[30.07.21 09:58:37] benny: I checked your routers for fun, everything is ok!
+[30.07.21 09:59:27] benny: i understand)))
+[03.08.21 09:00:59] benny: hi man
+[03.08.21 09:01:09] benny: need a quick consultation
+[03.08.21 09:01:18] benny: on routers, on iptables
+[03.08.21 09:01:56] benny: I had a bad experience with proxying on my hardware
+[03.08.21 09:02:13] benny: can you give me a brief instruction, please
+[03.08.21 09:02:26] benny: exactly for IPTABLES
+[03.08.21 09:02:58] benny: maybe I'm missing something... ((((
+[03.08.21 09:03:52] benny: just tell me what you would do if you went to a router... (point by point, please)
+[03.08.21 09:04:07] benny: just tell me the commands...
+[03.08.21 09:19:10] benny: yes, I'm looking at it that way, I'm at a hardware where iptables doesn't work(((
+[03.08.21 09:20:32] benny: yeah, i'm trying another one
+[03.08.21 09:21:50] benny: Ubiquiti Networks, Inc - Edge OS
+[03.08.21 09:21:58] benny: the same(!
+[03.08.21 10:42:28] benny: what about after iptables -L
+[03.08.21 10:42:55] benny: the second time writes that the command is not found - i.e. it does not work, and the bash does not know it?
+[03.08.21 10:43:01] benny: have you met?
+[03.08.21 10:44:32] benny: or such a variant, that after entering iptables -L
+the second time writes that the command is not found - i.e. it does not work, and the bash does not know it?
+ever met?
+[03.08.21 10:52:37] benny: yes, it was rhetorical.
+[05.08.21 10:22:49] benny: hi man
+[05.08.21 10:23:23] benny: cobalt 4.4 come up yet?)
+[05.08.21 10:36:26] rocco: hi, haven't seen it yet
+[31.08.21 10:20:11] benny: hi, men!!! were my messages in toad visible?!
+[31.08.21 10:31:29] rocco: hi yes
+[31.08.21 10:32:50] benny: ok, it was a stupid white screen, no errors or anything... I'm talking about the rocket... then 5 minutes and everything is ok...
+[02.09.21 09:57:45] benny: Rocco, HI
+[02.09.21 09:57:54] rocco: hi
+[02.09.21 09:58:43] benny: what's the plan with this "anchor" project?
+[02.09.21 09:59:01] rocco: I'll post today
+[02.09.21 09:59:20] benny: okay.
+[02.09.21 09:59:47] rocco: I have to prepare the scripts
+[02.09.21 10:00:37] benny: I won't interrupt... I'm waiting for Adam's decision on another project...
+[02.09.21 14:34:05] rocco: Ohre0IebueceiquoNam0
+[02.09.21 14:37:15] benny: I did not understand what cps, what admins? like to sit and register admins...
+[02.09.21 15:07:16] benny: Rocco, I'll be back later, I may not have internet((((
+[02.09.21 15:09:00] rocco: ok
+[02.09.21 15:09:46] benny: I'll run these points by myself later and ask you questions...
+[02.09.21 15:09:59] rocco: sure.
+[08.09.21 12:57:24] rocco: is benny here?
+[08.09.21 12:58:37] benny: lf
+[08.09.21 12:58:55] rocco: tell me about the ssl script
+[08.09.21 12:59:24] rocco: just run it? I see the certificates are generated
+[08.09.21 13:00:01] rocco: got it.
+[08.09.21 13:00:14] rocco: you have to specify outdir
+[08.09.21 13:00:51] benny: we use random data from faker for -subj
+[08.09.21 13:01:17] rocco: but does it generate kifer value too?
+[08.09.21 13:01:45] rocco: ``
+echo " ssl_ciphers $cipher;" >>${outdir}/ssl.conf
+```
+[08.09.21 13:02:52] benny: that's what you try with, it's off now, Adam decided so
+[08.09.21 13:03:01] benny: Last time
+[08.09.21 13:03:17] rocco: turned it off where, on the aprocles?
+[08.09.21 13:03:51] rocco: okay, i'll experiment
+[08.09.21 13:04:37] benny: you have it in front of you
+[08.09.21 13:05:42] benny: the script ends at exit 0
+[08.09.21 13:06:00] benny: what do you have on line 45?
+[08.09.21 13:06:14] rocco: aaah all right
+[08.09.21 13:06:24] rocco: I don't think it's going all the way
+[08.09.21 13:06:30] rocco: Got it. Okay.
+[08.09.21 13:06:42] benny: ughhhh, I thought I gave you the wrong draft)))))
+[08.09.21 13:07:03] rocco: yeah I missed it
+[08.09.21 13:07:19] benny: that's the piece to test
+[08.09.21 13:07:27] rocco: got it. Okay. Thanks.
+[08.09.21 13:07:41] rocco: and adam decided to exclude kiefer at all?
+[08.09.21 13:08:01] benny: no, but he hasn't said anything yet
+[08.09.21 13:08:07] rocco: on the contrary, I think the fingerprint should change
+[08.09.21 13:08:11] benny: our nginx tsl settings
+[08.09.21 13:08:13] benny: ssl_protocols SSLv3 TLSv1;
+ssl_ciphers EECDH+AESGCM:EDH+AESGCM:ECDHE-RSA-AES128-GCM-SHA256:AES256+EECDH:DHE-RSA-AES128-GCM-SHA256:AES256+EDH:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA:ECDHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES128-SHA256:DHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA:ECDHE-RSA-DES-CBC3-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:DES-CBC3-SHA:HIGH:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4:@SECLEVEL=0;
+[08.09.21 13:08:29] benny: of course i need it!!!
+[08.09.21 13:08:42] benny: he thinks yet
+[08.09.21 13:08:44] rocco: well, if you change this line, then they will not steal
+[08.09.21 13:08:56] rocco: at least not right away
+[08.09.21 13:09:24] rocco: but you have to check it, of course, I don't really understand this alphabet
+[08.09.21 13:09:25] benny: that's what I say too... but the chief has his own opinion
+[13.09.21 13:03:19] rocco: Beni.
+[13.09.21 13:03:30] rocco: can you look your script for ssl
+[13.09.21 13:03:53] rocco: faker fails to generate names, he gets an empty certificate
+[13.09.21 13:04:44] rocco: for some reason blank names are passed to openssl
+[13.09.21 13:07:17] benny: hi, the rocket is lagging
+[13.09.21 13:07:50] rocco: z c ibahfvb cltkf
+[13.09.21 13:07:57] benny: the faker should output the data that is substituted in -subj
+[13.09.21 13:08:06] rocco: I did it with ciphers, but I checked the certificate and it was blank
+[13.09.21 13:08:27] rocco: that's where the blank is subdivided
+[13.09.21 13:08:27] benny: does the faker work correctly?
+[13.09.21 13:08:41] rocco: yeah, I think I checked, it works
+[13.09.21 13:08:54] rocco: but it does not work in the script
+[13.09.21 13:09:11] rocco: subj is empty
+[13.09.21 13:09:41] benny: gosh, I did not put it locally, and on the server that gave under Anchor ... need to ask Ruben, he put the faker locally at his place
+[13.09.21 13:10:10] benny: no, but it worked correctly and prescribed data from the faker
+[13.09.21 13:10:24] benny: that's 100%, he was like that for Adam too
+[13.09.21 13:10:40] benny: and they generated certificates for the hosts
+[13.09.21 13:10:55] rocco: ``
+198.244.180.69 ansible_user=root ansible_password=34fhjdgEN3rE5ff
+```
+[9/13/21 13:11:02] rocco: Look here.
+[13.09.21 13:11:07] rocco: I'm testing there
+[13.09.21 13:11:40] rocco: ssl.sh
+[13.09.21 13:11:44] rocco: v /root
+[13.09.21 13:11:59] rocco: just don't touch line for sslcifera
+[13.09.21 13:12:48] benny: I'll look at it later... let Ruben take a look
+[14.09.21 10:49:42] benny: hi man! got the faker solved?
+[14.09.21 11:05:43] rocco: hi yes
+[14.09.21 11:15:56] benny: what happened to him?
+[14.09.21 11:16:19] rocco: yeah, you gotta write the locale in there
+[9/15/21 14:11:42] benny: Hey.
+[15.09.21 14:11:49] benny: 69.30.213.82 - did you get it?
+[15.09.21 14:11:56] benny: under anchor
+[15.09.21 14:13:26] rocco: i think i did, but i didn't do it
+[15.09.21 14:13:36] rocco: can you raise anchor there?
+[15.09.21 14:13:58] benny: yeah me and rubik are checking servers, what's on renewal and what's not...
+[15.09.21 14:14:15] benny: can i? - dunno.
+[15.09.21 14:14:32] rocco: I thought you did it.
+[15.09.21 14:14:43] benny: But not on this ip.
+[15.09.21 14:14:58] rocco: try to fill it in
+[15.09.21 14:15:26] benny: let's finish with the servers and the check, and in an hour will try to install
+[15.09.21 14:15:41] rocco: yeah, go ahead, just don't forget
+[15.09.21 14:15:55] benny: i won't forget, i'll just ask and tell you how it is
+[15.09.21 14:16:43] benny: is it zeroed out of the panel?
+[15.09.21 14:19:43] benny: Rock, I'll put it in the panel to reinstall the OS, that's about 60 minutes
+[15.09.21 14:19:58] benny: then after the sapp letter - I'll try to roll abcibl
+[15.09.21 14:20:05] benny: ansible
+[15.09.21 14:20:06] rocco: yeah
+[15.09.21 14:20:36] benny: sorry there's no 9(!
+[15.09.21 14:21:14] benny: stop!
+[15.09.21 14:21:23] benny: Debian Stretch is deb9?
+[15.09.21 14:21:29] rocco: yes
+[15.09.21 14:21:30] rocco: 9
+[15.09.21 14:21:43] benny: so it's in the panel... what didn't you get there?
+[15.09.21 14:21:57] benny: did you change the ansible notes?
+[15.09.21 14:22:15] rocco: no, i just haven't had time yet
+[15.09.21 14:22:30] rocco: now look, i haven't put it there yet
+[15.09.21 14:22:35] rocco: there's no need to re-install
+[15.09.21 14:22:41] rocco: you can run it
+[15.09.21 14:23:17] benny: I can not yet, in my server console, where the ensemble is, there is a checkout of routers, it is better to wait
+[15.09.21 14:23:24] benny: it lags, it happens
+[15.09.21 14:23:40] benny: both can be screwed up, no need to rush
+[15.09.21 14:23:43] rocco: Wait for it
+[15.09.21 14:24:43] benny: there's one more server, but it's at my.itldc.com
+[15.09.21 14:24:50] benny: and it sure works there
+[15.09.21 14:25:07] benny: I think I deployed admin there that time
+[15.09.21 14:28:58] rocco: yeah? why didn't we put it down next?
+[15.09.21 14:29:12] rocco: is it a normal server, or a test one?
+[15.09.21 14:29:38] rocco: I need two admins on my order
+[15.09.21 14:29:41] benny: our test one
+[15.09.21 14:29:54] rocco: how do you like it?
+[15.09.21 14:29:58] benny: it also needs to be zeroed and you can put
+[15.09.21 14:30:06] benny: 16
+[15.09.21 14:30:28] rocco: yeah, let's reset
+[15.09.21 14:30:36] rocco: I'll give you the demeter
+[15.09.21 14:30:45] benny: what exactly?
+[15.09.21 14:31:07] benny: what exactly demeter?
+[15.09.21 14:32:19] rocco: your server I asked now gave demeter anchor
+[15.09.21 14:32:41] benny: everything, 69.30.213.82 is doing demeter
+[15.09.21 14:32:57] rocco: just tell him how to root pass there, I don't understand
+[15.09.21 14:33:11] rocco: so he wouldn't bother
+[15.09.21 14:33:39] benny: prescribe root login in ssh
+[15.09.21 14:33:51] benny: where exactly - I don't remember
+[15.09.21 14:33:57] rocco: and after connecting?
+[15.09.21 14:34:07] rocco: via console or in panelYa?
+[15.09.21 14:34:31] benny: after connecting via ccp, you need to enable root login in ccp and reboot ccp daemon
+[15.09.21 14:34:57] benny: google ssh root login
+[15.09.21 14:35:41] benny: somewhere in /etc/sshd like
+[15.09.21 14:36:04] rocco: yeah got it right I think I did it there, but I gotta check
+[15.09.21 14:36:16] benny: if you didn't change anything, I changed it that time
+[15.09.21 14:36:32] benny: when I gave it access
+[15.09.21 14:45:04] benny: okay, come on, I ordered deb9 to be reinstalled, what do we do next?
+[15.09.21 14:45:21] benny: i just deployed that ensibl you gave me? that assembly
+[15.09.21 14:45:57] benny: and I'll give you the data on the server, you'll prolong it yourself, or who's there? from the panel, mail and passwords
+[15.09.21 14:46:02] benny: right?
+[15.09.21 14:46:42] rocco: yes
+[15.09.21 14:47:40] benny: ok, I'm waiting for the new debian to roll in and I'll put in a screenshot of ansible, i.e. admins...
+[15.09.21 15:11:53] benny: okay, I'll put on the Ansible install! waiting now, I'll go out for coffee myself
+[15.09.21 15:12:09] rocco: ok
+[15.09.21 15:14:22] benny: well, it's all in the screenshot, I'll report the results later
+[15.09.21 16:26:41] benny: good news
+[15.09.21 16:26:45] benny: TASK [rvm : Start puma] ************************************************************************************************************************************************************************
+fatal: [195.123.219.82]: FAILED! => "changed": true, "cmd": "cd /var/www/panel && source /etc/profile.d/rvm.sh && RAILS_ENV=development puma -b 'ssl://0.0.0.0:9758?key=config/keys/key.key&cert=config/keys/cert.crt&verify_mode=none' -C config/puma.rb -d", "delta": "0:00:00.002549", "end": "2021-09-15 17:18:56.135900", "msg": "non-zero return code", "rc": 127, "start": "2021-09-15 17:18:56.133351", "stderr":"/bin/sh: 1: source: not found", "stderr_lines": ["/bin/sh: 1: source: not found"], "stdout": "", "stdout_lines": []}
+        to retry, use: --limit @/root/ansible/lero.retry
+
+PLAY RECAP *************************************************************************************************************************************************************************************
+195.123.219.82 : ok=32 changed=25 unreachable=0 failed=1
+[15.09.21 16:27:08] benny: I'm going to toad the whole date
+[15.09.21 16:27:31] benny: good news
+TASK [rvm : Start puma] ************************************************************************************************************************************************************************
+fatal: [195.123.219.82]: FAILED! => "changed": true, "cmd": "cd /var/www/panel && source /etc/profile.d/rvm.sh && RAILS_ENV=development puma -b 'ssl://0.0.0.0:9758?key=config/keys/key.key&cert=config/keys/cert.crt&verify_mode=none' -C config/puma.rb -d", "delta": "0:00:00.002549", "end": "2021-09-15 17:18:56.135900", "msg": "non-zero return code", "rc": 127, "start": "2021-09-15 17:18:56.133351", "stderr":"/bin/sh: 1: source: not found", "stderr_lines": ["/bin/sh: 1: source: not found"], "stdout": "", "stdout_lines": []}
+to retry, use: --limit @/root/ansible/lero.retry
+
+PLAY RECAP *************************************************************************************************************************************************************************************
+195.123.219.82 : ok=32 changed=25 unreachable=0 failed=1
+I'll prepare the whole date into the toad.
+[15.09.21 16:28:00] benny: can you make these items yourself?
+[15.09.21 16:28:01] benny: 1.
+
+cd /var/www/panel && source /etc/profile.d/rvm.sh && RAILS_ENV=development puma -b 'ssl://0.0.0.0:9758?key=config/keys/key.key&cert=config/keys/cert.crt&verify_mode=none' -C config/puma.rb -d
+
+in one line.
+2.
+
+cd /root/lero && make daemon
+[15.09.21 16:28:14] benny: waiting for an answer!
+[15.09.21 16:29:39] rocco: yeah, by myself
+[15.09.21 16:29:46] rocco: check
+[15.09.21 16:33:47] benny: everything must be ok...
+[15.09.21 16:36:23] rocco: all good
+[15.09.21 16:40:41] benny: so i was sure everything was ok!
+[15.09.21 16:40:55] benny: what do we do next?
+[15.09.21 16:41:34] rocco: I'll do it myself, you have to bind the domain, check the connection and unbind it
+[15.09.21 16:41:49] rocco: I'll pass it on
+[15.09.21 16:42:26] benny: +
+[28.09.21 10:06:15] rocco: ping
+[28.09.21 10:06:23] benny: yo!
+[28.09.21 10:06:25] rocco: https://privnote.com/VZwmerYQ#c66j809QF
+[28.09.21 10:06:30] rocco: pass
+[28.09.21 10:06:33] rocco: champ
+[28.09.21 10:06:41] rocco: I'll give you address
+[28.09.21 10:07:07] rocco: https://privnote.com/2Kmncges#fFqSp8xIP
+[28.09.21 10:07:22] benny: +
+[28.09.21 10:07:55] rocco: 2
+[28.09.21 10:08:38] rocco: 3
+[28.09.21 10:10:55] rocco: 1
+[28.09.21 10:11:01] rocco: 2
+[28.09.21 10:11:10] rocco: 3
+[28.09.21 10:11:20] benny: I don't get it, what are these numbers?
+[28.09.21 10:12:58] rocco: yeah, i checked the connection
+[28.09.21 10:13:09] rocco: but it doesn't come through
+[28.09.21 10:19:56] benny: @rocco , give me your and Demeter's methodology for porting to onion3...
+[28.09.21 10:20:29] rocco: oh man, I probably don't have one, I have to wait for demetrus
+[28.09.21 10:20:40] benny: is it coming?
+[28.09.21 10:20:47] rocco: well, it's probably just
+[28.09.21 10:21:14] rocco: ``
+HiddenServiceVersion 3
+```
+[28.09.21 10:21:27] rocco: You add a line like this to the section
+[28.09.21 10:21:38] rocco: ``
+HiddenServiceDir /var/lib/tor/hidden_service/
+```
+[28.09.21 10:21:47] rocco: where the port is prescribed
+[28.09.21 10:22:24] rocco: demetrus was supposed to pick up
+[28.09.21 10:26:04] benny: nothing is done. silver says
+[28.09.21 14:44:41] rocco: beni: you register my server at portal.dedipath.com? I do not understand where they have the password from the root, and the server is not pinged
+[28.09.21 14:46:18] benny: can't see
+[01.10.21 09:35:31] benny: ping
+[01.10.21 09:35:41] benny: give a date on routers
+[01.10.21 09:37:32] rocco: is there a reserve?
+[01.10.21 09:39:23] benny: yes, a little bit
+[01.10.21 09:39:51] rocco: okay, a little later, one is enough for now
+[01.10.21 09:40:04] rocco: I just want to test it
+[01.10.21 09:40:26] benny: got it)
+[01.10.21 09:56:13] benny: give me your public key, for toad, like in some privet
+[01.10.21 12:26:53] rocco: benny: did you set up the backup server outside?
+[01.10.21 12:27:46] benny: again
+[01.10.21 12:27:49] benny: please
+[01.10.21 12:27:59] rocco: did you set up the backup server outside?
+[01.10.21 12:28:36] benny: no,
+[01.10.21 12:28:45] benny: busy analyzing review for adam
+[01.10.21 12:29:05] benny: on blacklisting spamhaus and co.
+[01.10.21 12:29:21] rocco: shit, decided to back up, no rsank or scep doesn't want it there
+[01.10.21 12:29:43] benny: we did it with ruben via rsync
+[01.10.21 12:29:47] rocco: rsanc says not installed
+[01.10.21 12:29:57] rocco: how did you do?
+[01.10.21 12:30:12] rocco: I can not go neither there nor from there, says not installed
+[01.10.21 12:30:34] benny: you mean our backup keeper?
+[01.10.21 12:30:38] benny: or in general
+[01.10.21 12:30:41] rocco: yes
+[01.10.21 12:30:45] rocco: about ours
+[01.10.21 12:31:12] benny: it's Rubik, he's a specialist there
+[01.10.21 12:31:26] rocco: he got to backups
+[01.10.21 12:31:47] rocco: where to fill in now
+[01.10.21 12:32:05] benny: but man, scp & rsync have to be and coo
+[01.10.21 12:32:47] rocco: here's the scp answer
+```
+confluence@88.119.171.199's password:
+unknown user 1006
+lost connection
+```
+[01.10.21 12:33:11] rocco: but on the rsink
+```
+confluence@88.119.171.199's password:
+sh: rsync: not found
+rsync: connection unexpectedly closed (0 bytes received so far) [sender]
+rsync error: error in rsync protocol data stream (code 12) at io.c(235) [sender=3.1.3]
+
+```
+[01.10.21 12:33:46] benny: I don't even want to make up versions, it's better to wait for him, too important system...
+[01.10.21 12:34:01] rocco: ok ok, wait for him
+[01.10.21 12:34:13] rocco: I don't want to run it over 5 times per server
+[01.10.21 12:35:34] benny: men, I understand, just messing with someone else's settings with your samovar...
+[01.11.21 15:07:04] rocco:
+[01.11.21 15:07:11] rocco:
+[01.11.21 15:07:18] rocco:
+[01.11.21 15:07:26] rocco:
+[01.11.21 15:07:52] rocco: run this
+ansible-playbook vps_proto2.yml
+[01.11.21 15:08:39] rocco: in hosts addresses are taken from
+```
+[bot_vps_target]
+```
+[01.11.21 15:08:55] rocco: example
+```
+[bot_vps_target]
+31.13.195.13 ansible_password=6ozy0sJBIvHh
+```
+[01.11.21 15:09:06] benny: ?OTRv23?
+**benny|xflemdsxjrjilw34dsxpvrxp5whnaut7hc5xejwuqs6eqrkt77bxkwid.onion** has requested an [Off-the-Record private conversation](https://otr.cypherpunks.ca/).  However, you do not have a plugin to support that.
+If you are using Pidgin in Debian or Ubuntu,install the pidgin-otr package.
+See [https://otr.cypherpunks.ca/](https://otr.cypherpunks.ca/) for more information.
+[01.11.21 15:09:31] rocco: ping
+[01.11.21 15:09:46] benny: oo pong
+[01.11.21 15:10:03] rocco: see above what you sent?
+[01.11.21 15:10:09] benny: again
+[01.11.21 15:10:12] benny: first
+[01.11.21 15:10:28] rocco: did you get the archives?
+[01.11.21 15:10:45] benny: yes, there are links
+[01.11.21 15:10:58] rocco: ``
+ run it with this
+ansible-playbook vps_proto2.yml
+in the hosts addresses are taken from
+
+[bot_vps_target]
+
+example
+
+[bot_vps_target]
+31.13.195.13 ansible_password=6ozy0sJBIvHh
+
+```
+[01.11.21 15:11:44] rocco: in principle Gator will do it, but just in case you can also
+[01.11.21 15:11:52] rocco: you know the ansible
+[01.11.21 15:12:47] benny: ok, the main thing for me is scripts...)
+[01.11.21 15:12:55] benny: saved
+[01.11.21 15:13:06] rocco: take it from gator, squeeze it for test too
+[01.11.21 15:13:15] rocco: and try to run it
+[01.11.21 15:13:26] rocco: to eliminate errors
+[01.11.21 15:13:42] benny: so what to run?
+[01.11.21 15:14:00] rocco: the script
+[01.11.21 15:14:58] rocco: ask Gator
+[01.11.21 15:15:20] benny: I'll leave for an hour and run it,
+[01.11.21 15:15:29] rocco: okay, no problem.
+[01.11.21 15:15:41] rocco: the main thing is to make me sure everything works
+[01.11.21 15:16:48] benny: yes I think there will be no questions, what does script vps_proto2 do - completely configures remote padding?
+[01.11.21 18:00:47] rocco: aga
+[01.11.21 18:02:06] benny: what are we doing, i already hand updated vps and rebooted, trying vps_proto2
+[01.11.21 18:02:10] benny: here's the result
+[01.11.21 18:02:14] benny: `TASK [proto2_jas3 : Install faker] *************************************************************************************************************************************
+fatal: [170.130.55.98]: FAILED! => "changed": true, "cmd": "pip install faker", "delta": "0:00:00.002916", "end": "2021-11-01 18:00:43.817372", "msg": "non-zero return code", "rc": 127, "start": "2021-11-01 18:00:43.814456", "stderr":"/bin/sh: 1: pip: not found", "stderr_lines": ["/bin/sh: 1: pip: not found"], "stdout": "", "stdout_lines": []}
+	to retry, use: --limit @/root/ansible/vps_proto2.retry
+
+PLAY RECAP *************************************************************************************************************************************************************
+170.130.55.98 : ok=2 changed=2 unreachable=0 failed=1 `
+[01.11.21 18:02:46] rocco: you have to put pip3 in this step
+[01.11.21 18:03:01] rocco: pip3 install Faker
+[01.11.21 18:03:04] benny: where in the script itself?
+[01.11.21 18:03:17] benny: i understand that pip3 install Faker)))
+[01.11.21 18:03:22] rocco: in task/mailn.yml
+[01.11.21 18:03:28] rocco: in asm
+[01.11.21 18:03:33] rocco: proto2_jas3
+[01.11.21 18:03:36] rocco: role
+[01.11.21 18:03:45] benny: ok
+[01.11.21 18:10:26] benny: what did we convert vpska into, that it became a pad, we didn't set up any proxying!!!?
+[01.11.21 18:10:57] rocco: if everything went through, we installed
+[01.11.21 18:11:11] rocco: but there are dirty wpc, just for the test
+[01.11.21 18:11:47] benny: do not see the route in the script, i.e. looking for more...
+[01.11.21 18:12:46] benny: where to look?
+[01.11.21 18:13:05] benny: nginx settings - see with all the ciphers, etc.
+[01.11.21 18:14:08] benny: i only gave you ip - [bot_vps_target]
+[01.11.21 18:14:15] benny: this is the ip of the vps,
+[01.11.21 18:14:38] benny: then you need another script?
+[01.11.21 18:14:49] rocco: bro it's all in there already, through ngjinx
+[01.11.21 18:15:07] rocco: if you ran it without errors, everything is up
+[01.11.21 18:15:17] rocco: go to https://ip
+[01.11.21 18:15:26] rocco: there should be a white list
+[01.11.21 18:15:54] benny: resalt ensibl, after manually updating vpski
+[01.11.21 18:15:58] benny: PLAY RECAP *************************************************************************************************************************************************************
+170.130.55.98 : ok=32 changed=28 unreachable=0 failed=0
+[01.11.21 18:17:19] benny: yes, white list
+[01.11.21 18:19:43] benny: i got it from Gator, it didn't seem to be dirty, i don't know ip, but it was new!
+[01.11.21 18:26:14] rocco: so, everything is okay
+[01.11.21 18:26:35] rocco: if you need, you can make gaskets for the BC
+[01.11.21 18:27:04] rocco: there's a complicated socat setup in tor, njinx to socat
+[01.11.21 18:27:18] rocco: plus the sert is generated by the faker
+[01.11.21 18:27:37] rocco: and jas3
+[01.11.21 18:27:43] benny: you can put many ips after [bot_vps_target]?
+[01.11.21 18:27:53] rocco: yes, as many as you want
+[01.11.21 18:27:58] rocco: that's convenient
+[01.11.21 18:28:00] benny: I saw it all, but I didn't see the redirect
+[01.11.21 18:28:07] rocco: 5 min and 20 procdocs done
+[01.11.21 18:28:23] rocco: in files bot.conf
+[01.11.21 18:28:36] rocco: this is the main nginx config
+[01.11.21 18:30:26] benny: I don't see where this pad proxies the traffic, that's what I mean...
+[01.11.21 18:30:51] rocco: so I'm telling you, to sokat, and sokat to onion
+[01.11.21 18:31:20] rocco: in tempaltes socat1
+[01.11.21 18:31:39] benny: x6r....onion?
+[01.11.21 18:31:46] rocco: yes
+[01.11.21 18:32:02] benny: ewwwtybly, there's))))))))
+[01.11.21 18:32:11] benny: i must have missed it
+[01.11.21 18:32:25] rocco: now you're in the zone
+[01.11.21 18:33:40] benny: I looked these files in /files many times, but somehow missed it... this is the reason of my confusion and my dumb question about proxying traffic
+[01.11.21 18:34:50] benny: you need to tighten elastic and redelink ready too
+[05.11.21 15:04:22] rocco: aga
+[08.11.21 08:53:03] rocco: ``
+162.33.178.248
+```
+[08.11.21 08:53:43] rocco: https://privnote.com/femeNwbF#WwTF8Ut1f
+[10.11.21 12:35:10] rocco: beni.
+[10.11.21 12:35:22] benny: he texted me.
+[10.11.21 12:35:30] benny: gator
+[10.11.21 12:35:36] rocco: give router to gator, he has a job to forward ip client to come
+[10.11.21 12:36:01] benny: I will flash it, no problem, but how long it will live - I don't know, this router
+[10.11.21 12:36:29] benny: or can he do it himself?
+[10.11.21 12:36:30] rocco: no need to flash, let it do it by itself, there may be other rules to do
+[10.11.21 12:36:47] rocco: you show him how to flash
+[10.11.21 12:36:52] rocco: rules
+[10.11.21 12:37:06] rocco: ssh access
+[10.11.21 12:37:30] benny: let me find ubik to him...
+[10.11.21 12:37:31] rocco: or it is not via iptables?
+[10.11.21 12:37:38] benny: iptables there
+[10.11.21 12:37:43] rocco: are there any kills in stock?
+[10.11.21 12:38:15] benny: not much, but there is
+[10.11.21 12:38:27] rocco: what do you mostly have?
+[10.11.21 12:38:30] rocco: microtic
+[10.11.21 12:38:38] rocco: show me the rules there
+[10.11.21 12:38:52] rocco: maybe you should just give him the microtic
+[10.11.21 12:38:55] benny: mostly microts, rules for what?
+[10.11.21 12:39:07] rocco: microts how do you flash?
+[10.11.21 12:39:35] rocco: they also have ssh access?
+[10.11.21 12:39:48] benny: yeah
+[10.11.21 12:40:26] rocco: Okay.
+```
+/ip firewall nat add chain=dstnat proto=tcp dst-port=$port to-port=$to_port action=dst-nat to-addresses=$to_ip dst-address=$ip
+/ip firewall nat add chain=dstnat proto=tcp dst-port=443 to-port=$to_port action=dst-nat to-addresses=$to_ip dst-address=$ip
+```
+[10.11.21 12:40:38] benny: maybe just Ubik is better, there's iptables, it should be more familiar
+[10.11.21 12:40:52] benny: and these are from microtunks rules
+[10.11.21 12:40:57] rocco: it would be better to have microtables too
+[10.11.21 12:41:16] benny: so he needs one?
+[10.11.21 12:41:35] rocco: give him a ubic and a microtic
+[10.11.21 12:41:43] benny: Yeah, I'll give it to him.
+[10.11.21 12:41:52] rocco: just show me the commands you use
+[10.11.21 12:41:55] benny: check first
+[23.11.21 08:49:27] benny: hey, can you see the text?
+[11/23/221 08:50:36] benny: Login: Administrator
+Password: 9XXxjrVAyhS5
+[11/23/221 08:57:23] rocco: Yeah, I got it.
+[30.11.21 14:32:30] rocco: beni hi
+[30.11.21 14:32:45] benny: hey
+[30.11.21 14:32:55] rocco: I'll put you on a project, you'll administer it
+[30.11.21 14:33:02] benny: what kind of project?
+[30.11.21 14:33:09] rocco: make gaskets and stuff
+[30.11.21 14:33:19] rocco: botnet admin
+[30.11.21 14:33:26] benny: whose?
+[30.11.21 14:33:38] rocco: ours
+[30.11.21 14:33:45] rocco: not tric or bcc
+[30.11.21 14:33:58] benny: who did it before?
+[30.11.21 14:34:08] rocco: I'll have to explain it to you.
+[30.11.21 14:34:27] rocco: I got it up now, but you gotta administer it next
+[30.11.21 14:34:46] rocco: nothing complicated there
+[30.11.21 14:35:30] benny: rocco, if so, I propose to postpone this conversation, like details to the day after tomorrow, I want to solve the Internet problem tomorrow, I run out of sim today
+[30.11.21 14:35:45] rocco: Well, not today
+[30.11.21 14:35:47] benny: i mean, i'm not aware of my connection yet((
+[30.11.21 14:35:54] rocco: I have to prepare everything for you
+[30.11.21 14:36:01] benny: I'm very much on alert myself
+[30.11.21 14:36:14] rocco: I just need a man there
+[30.11.21 14:36:23] rocco: I just can't do it all by myself
+[30.11.21 14:36:35] benny: I'm in favor, you know, I just don't know how to promise
+[30.11.21 14:36:36] rocco: I don't see the point of taking a new one
+[30.11.21 14:36:55] rocco: moreover, you already know all the kitchen
+[30.11.21 14:37:06] rocco: okay, tomorrow we start
+[30.11.21 14:37:13] rocco: or the day after tomorrow
+[30.11.21 14:37:14] benny: no need for a new one, I'm not against pay raise
+[30.11.21 14:37:26] benny: only FOR!)
+[30.11.21 14:37:33] rocco: well, it's negotiable I think
+[30.11.21 14:37:41] rocco: adam said to take you
+[30.11.21 14:37:52] benny: I'm just looking for my salesman, and he's gone((((
+[30.11.21 14:37:56] rocco: Zeus is in charge there, you know
+[30.11.21 14:38:06] rocco: he's the client
+[30.11.21 14:38:27] benny: is it zeus in toad?
+[30.11.21 14:38:43] rocco: yes
+[30.11.21 14:38:56] benny: no, I don't know, I'll find out.
+[30.11.21 14:39:56] rocco: yeah, he wanted to make a team, we'll talk about it later
+[30.11.21 14:40:59] benny: I'm on the subject, I wanted to warn you and Adam in the evening that I might be absent in the morning... I'll tell Adam later then...
+[30.11.21 14:41:16] rocco: ok
+[30.11.21 14:41:19] benny: +
+[30.11.21 14:43:01] benny: I wonder what our chat looks like from the side... it's encrypted, but without an apr... need to see...
+[30.11.21 14:44:01] benny: ok, it's encrypted))
+[30.11.21 14:44:03] benny: (11/30/2021 09:40:59 AM) benny: eyJhbGciOiJBTnYD+RALWcrnJhr/xl+4b7SY33Uu0+kw2QbuWolTqQFQvZ40Udzii56bjpYjzFCOtjsjF14jOWFx+Du81gdqU4SLxJfyyEXRgUmb7wwt0FjxuiTHlHird4c/l2e0jC5/ScjwxBcclADzgX2Z5tDWZ0jl8q+G9pE+Sa59iQpKcog/7UXQ+HlsDpV3O+k0438AjTJz54AfzHThv/hUULLwlN19xpTNLH2kVSR3jHjp3B1gPBfRUQCVFTtYnbHXoXg1lCiyaCdb+UJtf2v+8TMa1nFSFZhZwwmQHhKHSXudAANhHstJA5vPf006WnXBEyUfTQBLvc1CPcC2SUckyIgWoEyRvdbig2DYTFsoH32MIn0YhoDz8VqxlDt74Q57luRgLd233V7TCfWa2VazAhnl5VQ2dbiV+1NLpplgUFgSrYpIyCALyr78klMoqHG7Ywq+
+(11/30/2021 09:41:16 AM) rocco: eyJhbGciOiJBubs7os0o9Gkal1i3bn7cvWquFdWjuoNj0ziPNL4N1CavmBDr2n6JSMLRVXdbPdnNNGR6UvALrS0m1nPPRi2r7LVRWhBP/KwSKTmPXR2LKx6Ebqr+NYi4tEa0OSbefb6jYFLQ8ai6HckUADDwN/UumrodA/3wKTbxK6/cpTJe4c=
+(11/30/2021 09:41:19 AM) benny: eyJhbGciOiJBOxNUR1vjZ1L+bBmvtP8qTrVPZSN2pRKMrLm8BBZddwbfL/zx6m4fbkCoIo+OmaWl2e0WnRjRlLeIN7OCCK9qC5Rdsu1FhiAgd4F6pwbtOeyR+1AIiVHl7eECWOBTGbVM2KVBuGS+V4CJRXOYCjkywEb+QumeKS88srkcehXmc=
+(11/30/2021 09:43:01 AM) benny: eyJhbGciOiJBSOtmBGyS7PShBVpX71c6WXNnXVy0j93srOkSyGU6c8NmbaZsgHHonmAc04gxMXKHrGTjJJL1/I6hNpX66SvwkGabRr9fMYglDTJjL/2hZPpO+Z5n8Kjz9knYh2dArhLLFCMiU3TcHBIGgtbx5pQH/iK6bbAahllmyWsLeX0Me/Sly/CSr0fdEagszwzL4Yxhp1+Ag3wBXPSLrRaBBaCnzwV7cuJkvQ2zrd/ucO82zQlAKKJFenmanVnroiVvpK1XPikm0xTDDraGTVeX0sG8J/Rb3ypmNAzoUrKIyAUzf+D1SzOGkb1VSZ9KtCATjSt5D7hgGjK3EVogwH/DVMHAEL2PGw2pjdLOp3HnWAR6kpCVCwTEtdaIKhjvtHg21lzb
+[30.11.21 14:46:10] rocco: so we're on e2e
+[30.11.21 14:46:35] benny: yeah, I just wasn't looking at the insides
+[30.11.21 18:16:56] benny: rock, see you tomorrow! I will solve my problem in the morning, defu beeped! hope everything will be ok)
+[01.12.21 17:02:55] benny: Rocco, let's exchange keys, you can't put it off any longer, like this - divide the key into 2 parts and put it on 2 different fileservices...
+[01.12.21 17:04:16] benny: psy+ is normally cooing with gpg-keys and paranoia will subside a bit...
+[03.12.21 09:59:40] rocco: beni hi
+[03.12.21 09:59:53] rocco: monitoring domains?
+[03.12.21 10:00:00] rocco: got the checker on?
+[03.12.21 10:07:15] benny: hi, i'm answering toad
+[03.12.21 10:07:44] benny: I can't physically look in the browser and do the other tasks
+[03.12.21 10:54:02] benny: men, can you see the messages in the toad? because I feel uncomfortable in such monologues...

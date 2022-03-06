@@ -1,0 +1,2660 @@
+[04.08.21 07:33:53] rocco: it seems that they refused at the level of pads, decided through the admin
+[04.08.21 07:34:20] rocco: or just block the janipots
+[04.08.21 07:34:46] rocco: ok, we need to raise scripts
+[04.08.21 07:34:57] rocco: send me the list, I'll do it today
+[04.08.21 07:35:04] rocco: I'll tell demetrus later
+[04.08.21 07:35:25] rocco: Yeah, all of it.
+[04.08.21 07:37:43] rocco: no at the end
+[04.08.21 07:37:54] rocco: It's going over the torus
+[04.08.21 07:38:04] rocco: it might not work at intermediate
+[04.08.21 07:44:58] rocco: Copy
+[04.08.21 15:21:33] collin: BRo problem with today's addresses that demetrius gave for the new one
+[04.08.21 15:22:01] collin: they are getting stormy every now and then with error ERROR_INTERNET_TIMEOUT 12002, then ERROR_INTERNET_EXTENDED_ERROR 12003
+[04.08.21 15:22:09] collin: see what's wrong, try to fix it plz
+[04.08.21 15:22:24] collin: these
+[04.08.21 15:22:27] collin: ``
+159.65.204.222
+161.35.147.41
+161.35.147.242
+161.35.149.106
+```
+[04.08.21 15:30:38] rocco: i'll check it out
+[04.08.21 15:47:49] collin: now 502 on all of them
+[04.08.21 15:51:28] collin: and the second batch of addresses for today also responded 502 at all
+[04.08.21 15:51:31] collin: bro help!
+[04.08.21 15:51:38] collin: `64.227.73.32 64.227.73.80 64.227.77.160 64.227.77.21` - these ones
+[04.08.21 15:53:09] rocco: now
+[04.08.21 15:53:47] collin: all online is gone, now they'll praise us)
+[04.08.21 15:56:04] rocco: where, at all?
+[04.08.21 15:56:14] rocco: n aspam on target where?
+[04.08.21 15:56:49] collin: new main online zero
+[04.08.21 15:56:53] collin: last bot knocked 20 minutes ago
+[04.08.21 16:00:11] rocco: and spam? demetrus about spam
+[04.08.21 16:00:19] rocco: so which one doesn't work?
+[04.08.21 16:00:24] rocco: We'll fix it.
+[04.08.21 16:00:34] collin: He spammed the addresses, they don't work either.
+[04.08.21 16:00:41] collin: but that's for later, the new main one first
+[04.08.21 16:00:49] collin: spam is for tests only
+[04.08.21 16:00:58] collin: on the new main - work
+[04.08.21 16:01:13] rocco: okay, I'm on it.
+[04.08.21 16:02:19] collin: what's the prognosis?
+[04.08.21 16:02:37] collin: Zeus is asking
+[04.08.21 16:03:03] rocco: i'm working on it, i think it's fucking 15-20 minutes
+[04.08.21 16:19:09] rocco: check
+[04.08.21 16:21:54] rocco: torus got cut off and won't rise, i don't know what's wrong, i did it directly, but i guess i have to change the proclu to another hoster and tomorrow i will have new proclu to flash it
+[04.08.21 16:22:28] rocco: What's up? Online is up?
+[04.08.21 16:24:46] rocco: maybe they blocked torus, vps2day blocked 2 chats for me, I had to get them back on
+[04.08.21 16:25:24] collin: 159.65.204.222 161.35.147.41 161.35.147.242 161.35.149.106 - these addresses are 502 all
+[04.08.21 16:25:44] rocco: is this a new one?
+[04.08.21 16:25:49] collin: 64.227.73.32 64.227.73.80 64.227.77.160 64.227.77.21 and these
+[04.08.21 16:25:51] collin: yes, a new one
+[04.08.21 16:25:57] collin: these two sets went live today
+[04.08.21 16:26:18] collin: they need to go up first
+[04.08.21 16:26:35] rocco: Mm-hmm.
+[04.08.21 16:26:54] collin: 161.35.147.110 161.35.155.92 64.227.65.60 64.227.69.92 - that's yesterday's 502 answers, it's better to raise it too
+[04.08.21 16:27:48] collin: now only old ones are up
+[04.08.21 16:27:49] rocco: It's fucking clear
+[04.08.21 16:28:02] rocco: it's through the torus
+[04.08.21 16:28:15] rocco: because they cut off torus, so they don't go
+[04.08.21 16:28:22] rocco: I'll write it manually everywhere
+[04.08.21 16:30:18] rocco: I'll reset them
+[04.08.21 16:39:05] rocco: all should work
+[04.08.21 16:43:23] rocco: I let them through torus too, but without padding
+[04.08.21 16:46:07] collin: but only these three sets I wrote
+[04.08.21 16:46:11] collin: or all of them?
+[04.08.21 16:46:33] rocco: I don't know, what demetrus gave me for basic
+[04.08.21 16:46:39] rocco: check everything
+[04.08.21 16:46:50] rocco: probably everything
+[04.08.21 16:46:53] collin: ah see partially work from 30.07
+[04.08.21 16:50:42] collin: can you make new procles now to new main?
+[04.08.21 16:50:58] collin: demetrius writes some problem, I don't fully understand
+[04.08.21 16:51:12] collin: You have to register bazaars, get online
+[04.08.21 16:51:54] rocco: Yes, you can.
+[04.08.21 16:52:00] rocco: I told him
+[04.08.21 16:52:10] rocco: let it go for now without procreations
+[04.08.21 16:52:14] rocco: let go
+[04.08.21 16:56:18] rocco: is everything up?
+[04.08.21 16:57:36] collin: yes.
+[04.08.21 16:58:07] collin: so what finally happened, not clear yet?
+[04.08.21 16:58:19] rocco: I wrote.
+[04.08.21 16:58:44] rocco: they shut down the torus
+[04.08.21 16:58:56] rocco: and it won't go up
+[04.08.21 16:59:10] collin: who disabled it, why?
+[04.08.21 16:59:26] rocco: I don't know, it just shut down and won't come up
+[04.08.21 16:59:33] rocco: I'm looking into it now
+[04.08.21 16:59:36] collin: okay.
+[04.08.21 17:18:18] rocco: I raised the torus
+[04.08.21 17:18:22] rocco: something systemic
+[04.08.21 17:18:28] rocco: but I still gotta change it
+[04.08.21 17:18:47] rocco: check old bazaars should work
+[04.08.21 17:23:29] collin: from 02.08 there are 3 ERROR_INTERNET_CANNOT_CONNECT, 1 - 502
+[04.08.21 17:42:52] rocco: yes, we need new ones, I deleted them all
+[04.08.21 17:45:07] collin: I already registered new ones
+[04.08.21 17:45:20] rocco: Let the new ones
+[05.08.21 08:56:12] collin: hi!
+[05.08.21 08:57:09] collin: about router addresses - we got a problem there, that client's ip-addresses aren't passed to the admin
+[05.08.21 08:57:32] collin: this can be solved somehow, we can think of alternatives
+[05.08.21 08:57:53] collin: or there's no way, routers as destination addresses won't work?
+[05.08.21 09:06:05] rocco: hi, I don't know, if only routers directly connect ip
+[05.08.21 09:06:09] rocco: not through tor
+[05.08.21 09:06:28] collin: directly to the server or is there an intermediate procracker anyway?
+[05.08.21 09:15:03] rocco: even if you put in between, still open ip direct to the server
+[05.08.21 15:26:42] collin: Bro didn't find out the reason why torus crashed on the interstitials yesterday
+[05.08.21 15:26:52] collin: is it possible to repeat the situation?
+[05.08.21 15:27:07] collin: especially while you're on vacation
+[05.08.21 15:27:19] collin: can demetrius handle a problem of this magnitude?
+[05.08.21 15:27:27] collin: in case
+[05.08.21 15:29:37] rocco: yes there is something systemic just shut down and all, writes errors, and what they mean I did not understand, I ran it in the screen manually, about the fall off or not, now at demetrius scripts there is sewn directly to onion admin, this is proto2, new vpska is under the bridge, I will adjust it, demetrius will explain, how to switch if something
+[05.08.21 15:30:25] rocco: there should be no repetition, you can always switch directly
+[05.08.21 15:30:33] rocco: until we know
+[05.08.21 15:31:22] collin: about requests logging on server by URI-prefixes - not ready, shall we postpone?
+[05.08.21 15:31:40] collin: on the server and on the procs
+[05.08.21 15:31:42] rocco: on pads?
+[05.08.21 15:32:22] collin: we have two tasks already waiting for this opportunity, it's not urgent yet
+[05.08.21 15:33:34] rocco: I will, look here
+http://ahl2635xpv4usnedpqtu35qojrk2kfnk3erneuaipyxghasxsmxzrxid.onion:3000/d/-0HiUFWnz/analytics-nginx-loki-v2-data-source-promtail-v2-tool?orgId=1
+[05.08.21 15:33:49] rocco: it's grafana plus njinx log collection
+[05.08.21 15:35:03] rocco: https://privnote.com/hyn5y1Rw#IjSXVsCCK
+[05.08.21 15:35:07] rocco: that's a pass
+[05.08.21 15:35:10] rocco: admin
+[05.08.21 15:36:07] rocco: it's based on access.log
+[05.08.21 15:36:30] rocco: wait a while, it'll load
+[05.08.21 15:37:14] rocco: you can also connect grafana-worldmap-panel
+that's a geoip map
+[05.08.21 15:37:33] collin: now what can I see there7
+[05.08.21 15:38:06] rocco: it's work between the spacers on proto2
+[05.08.21 15:38:24] rocco: so you can't see it?
+[05.08.21 15:44:07] collin: here we made some prefixes in admin for example "/api/v1" and "/api/v2" and GET or POST requests go to them. And we need to collect log on these requests - date-time, prefix, client ipi, request details (all headers) - response details (all headers, response code)
+[05.08.21 15:44:23] collin: you probably need separate addresses for them, without any filtering and blacklists
+[05.08.21 15:44:38] collin: do you have any of these?
+[05.08.21 15:45:16] collin: `And you need to collect a log from these passwords` - a log for some time interval from... to
+[05.08.21 15:45:38] rocco: I think so, you can collect it all, I'll set it up later
+[05.08.21 15:46:07] collin: okay.
+[31.08.21 08:09:59] collin: hi!
+[31.08.21 08:11:01] collin: 1) how do you do with logging queries, grafana?
+[31.08.21 08:11:28] collin: 2) is there a solution for using router addresses as end (client) proclets?
+[31.08.21 08:11:41] rocco: hi, I just got out yesterday, haven't made it yet
+[31.08.21 08:11:50] rocco: before logging
+[31.08.21 08:12:09] collin: got it, I'll wait
+[31.08.21 08:12:19] collin: I took 1 day off yesterday myself, I thought you went out earlier)
+[31.08.21 08:12:40] rocco: ah, not me too yesterday
+[31.08.21 08:13:44] collin: still need instructions on how to flash addresses in BC pads - understandable to such an admin who never flash these pads before
+[31.08.21 08:13:51] collin: and its update if needed
+[31.08.21 08:13:53] rocco: and about routers, i don't know, probably not possible, because in routers there is proxying not through nginx, but through iptables, and i don't know how they pass headers
+[31.08.21 08:14:36] collin: I need to have the manual handy with me and Elroy
+[31.08.21 08:15:10] collin: in case there's no one who knows how to flash it - it happened in early August
+[31.08.21 08:15:23] rocco: I will
+[31.08.21 08:16:06] collin: about the routers - you wrote that you can do if they go directly to the server?
+[31.08.21 08:16:18] rocco: maybe
+[31.08.21 08:16:23] rocco: I didn't check it
+[31.08.21 08:16:28] collin: but if it is possible, you can probably make an intermediate procco to receive data, convert it properly and pass it on
+[31.08.21 08:16:30] rocco: I assumed
+[31.08.21 08:16:51] rocco: I'll try to test it
+[31.08.21 08:16:53] collin: see what you can do with it plz, together with Alphonse
+[31.08.21 08:17:24] collin: Silver still wants to use such procles in BC
+[31.08.21 08:18:47] rocco: okay, I'll try to test directly, and router-pavement-server
+[31.08.21 08:19:09] rocco: I just have to clean up my mess
+[01.09.21 06:27:14] collin: hi!
+[01.09.21 06:27:30] collin: about blacklists on BC addresses
+[01.09.21 06:27:44] collin: this rule doesn't work: ` 185.220.100.240 - 185.220.102.255`
+[01.09.21 06:28:04] collin: I wrote to Demetrius the other day, today these addresses kicked me off again
+[01.09.21 06:28:18] collin: fix it?
+[01.09.21 06:30:10] rocco: hi, okay
+[01.09.21 08:29:45] collin: ``
+write to admins, they should have randomized SSLCipherSuite on the pads
+```
+[01.09.21 08:29:50] collin: do we have that on the pads now?
+[01.09.21 08:31:15] rocco: I'll find out
+[01.09.21 08:37:22] rocco: yes it does
+[01.09.21 11:53:08] rocco: bro what do you mean by randomization, I thought you were asking about cert?
+[01.09.21 11:54:59] collin: ``
+ looking at the addresses for 3 days since monday - the same print everywhere
+
+    ja3s full: 771,49200,65281-11-35-23
+    ja3s hash: ec74a5c51106f0419184d0dd08fb05bc
+
+Does it really work? Check it out, please.
+
+```
+[01.09.21 11:55:22] collin: protocol randomization for TLS handshake
+[01.09.21 11:55:39] collin: which affects ja3s fingerprints (maybe ja3) - they should be different
+[01.09.21 11:56:26] rocco: i don't know if it's enabled in config, but never changed it
+[01.09.21 11:57:37] collin: you have to set it, ask Silver - he discussed it with someone from admins
+[01.09.21 11:57:43] collin: apparently, while we were away
+[02.09.21 06:16:14] collin: Hey bro!
+[02.09.21 06:16:43] collin: you need 2 vm for tests, new tester
+[02.09.21 06:16:50] collin: maybe he already wrote you - nick
+[02.09.21 06:17:10] collin: manuel said to you about it - didn't lie?
+[02.09.21 06:17:19] rocco: hi, this is demetrus
+[02.09.21 06:17:32] collin: ok.
+[02.09.21 14:59:07] collin: what about changing ja3s signature, will it work?
+[02.09.21 14:59:15] collin: at least once a day, now it's all the same
+[02.09.21 14:59:45] rocco: I'm working on it now.
+[03.09.21 08:17:00] rocco: bro you wrote me a log, and something else
+[03.09.21 08:17:36] rocco: n aproclays need to track where it comes from, ip, etc.?
+[03.09.21 08:17:45] rocco: countries?
+[03.09.21 08:20:35] collin: about countries, filters are on admin level
+[03.09.21 08:21:54] collin: we discussed all this about a month ago, you wrote - do it in grafana, so I'm waiting
+[03.09.21 08:22:01] collin: about logs
+[03.09.21 08:22:11] collin: i think i saved it
+[03.09.21 08:22:45] rocco: search yes
+[03.09.21 08:46:48] collin: didn't find the correspondence, I wrote it separately:
+[03.09.21 08:46:52] collin: ``
+you need to get a status on the BC's taps, for a pre-planned test
+that is to say in advance: you will need a stat from date-time(later than the present) to date-time
+it is a one-time tests will be conducted as needed, now on the turn 2 such tasks
+the stata is needed selective:
+- specify the proc addresses (end addresses on the client) - one or more
+- specify prefixes (URI) in backend: one or several.
+For each of them we need to collect statistics of the following format:
+- ipv4-address of the client, date and time of the request - required
+- request type (GET/POST), server reply code - preferably
+- request contents (which headers and their values) - optional, if possible
+```
+[08.09.21 10:18:44] rocco: Bro hello, I need to make a guy account in bk, def asks, with his group, so that only his bots were, can you do?
+[08.09.21 10:20:36] collin: hi!
+[08.09.21 10:20:48] collin: what group?
+[08.09.21 10:21:02] rocco: I don't know.
+[08.09.21 10:21:09] collin: for who, existing partner or new
+[08.09.21 10:21:12] collin: for work or for tests?
+[08.09.21 10:21:30] rocco: ``
+give him an account in bl
+[13:16:58] <p> with his band
+[13:17:05] <p> so no one would see it but him
+[13:17:12] <p> so he can be sad there too
+```
+[08.09.21 10:21:37] rocco: it tom
+[08.09.21 10:21:43] rocco: new client
+[08.09.21 10:21:56] rocco: St is asking for it
+[08.09.21 10:22:14] collin: he should probably do BK first?
+[08.09.21 10:22:21] collin: or just reserve his account and group
+[08.09.21 10:23:46] rocco: yes, account and group
+[08.09.21 10:24:00] rocco: you mean files?
+[08.09.21 10:24:07] rocco: under his group
+[08.09.21 10:24:12] rocco: yes
+[08.09.21 10:24:42] rocco: I just don't know how to do it, def asked
+[08.09.21 10:25:11] collin: Tell him to tell me
+[08.09.21 10:25:18] collin: I need to know what parameters of the group and assembly
+[08.09.21 10:25:28] collin: I'll ask him then
+[08.09.21 10:25:51] rocco: ask him yes
+[09.09.21 08:36:44] collin: hey bro!
+[09.09.21 08:37:31] rocco: hi!
+[09.09.21 08:37:32] collin: Cipher Suite randomization works - yesterday it had different ja3s fingerprint value
+[09.09.21 08:38:13] collin: now there should be a new value for every day?
+[09.09.21 08:38:19] rocco: i did it manually only on one prokle
+[09.09.21 08:38:31] rocco: trying to automate it all
+[09.09.21 08:38:38] collin: yeah I see
+[09.09.21 08:38:42] rocco: not to prescribe it manually
+[09.09.21 08:38:54] rocco: how did you imprint snfl?
+[09.09.21 08:38:57] collin: just checked yesterday and today
+[09.09.21 08:38:57] rocco: took it off
+[09.09.21 08:39:00] collin: ``
+08.09
+    ja3s full: 771,49200,65281-23
+    ja3s hash: fd4bc6cea4877646ccd62f0792ec0b62
+
+09.09
+    ja3s full: 771.49200,65281-11-35-23
+    ja3s hash: ec74a5c51106f0419184d0dd08fb05bc
+```
+[09.09.21 08:39:09] collin: today is the old one
+[09.09.21 08:39:19] rocco: I didn't change everywhere
+[09.09.21 08:39:24] rocco: only one
+[09.09.21 08:39:28] rocco: I'll finish it today
+[09.09.21 08:39:38] rocco: and start assembly line
+[09.09.21 08:39:41] collin: okay.
+[09.09.21 08:40:07] collin: there was also a suggestion - to change certificates on the procards in the machine
+[09.09.21 08:40:37] collin: the keys at least - for each client's ipi / at certain intervals once per hour for example
+[09.09.21 08:40:47] collin: is it possible?
+[09.09.21 08:41:32] rocco: yes yes, and the certificates will be random
+[09.09.21 08:41:40] rocco: everything will be random
+[09.09.21 08:41:50] collin: great! looking forward to it
+[14.09.21 09:19:36] collin: hey bro!
+[14.09.21 09:19:46] rocco: hi
+[14.09.21 09:19:58] collin: no addresses reserve for uk pads?
+[14.09.21 09:20:16] collin: and also now amazon addresses can not do?
+[14.09.21 09:20:32] rocco: no we can do
+[14.09.21 09:20:59] collin: any addresses will do
+[14.09.21 09:21:21] collin: demetrius says "no reserves, I don't know when they'll come", that answer doesn't suit Zeus)
+[14.09.21 09:21:52] rocco: I'll give him amazons
+[14.09.21 09:21:52] collin: you can do it in an hour at least, 4 addresses for the new main needs?
+[14.09.21 09:22:03] rocco: proto2?
+[14.09.21 09:22:11] collin: yes
+[14.09.21 09:22:20] rocco: okay, I'm on it.
+[14.09.21 10:24:47] collin: how are you doing on the addresses?
+[14.09.21 10:27:04] rocco: I'm already doing it with ssl script
+[14.09.21 10:27:12] rocco: amazon
+[14.09.21 11:20:43] rocco: fuck, on 16 ubunta, does not work the script for the ssl, trying to do on the others, sorry for the brakes, but need to do it on the new ssl
+[14.09.21 11:23:24] collin: got it.
+[14.09.21 11:23:51] collin: take your time, for today I've made clean addresses from old ones.
+[14.09.21 12:12:51] rocco: ``
+[bot_amaz]
+54.183.0.212
+54.151.54.192
+13.57.25.3
+54.215.190.110
+[load_amaz]
+34.220.214.186
+34.209.220.252
+54.245.130.143
+54.202.165.132
+```
+[14.09.21 12:13:08] rocco: I got it.
+[14.09.21 12:13:17] rocco: he should have rolled up Ubuntu 20
+[14.09.21 12:16:00] collin: none of them work
+[14.09.21 12:16:50] rocco: okay
+[14.09.21 12:17:05] rocco: maybe I sent it to the wrong port
+[14.09.21 12:17:16] rocco: which port is it?
+[14.09.21 12:17:20] rocco: 12233
+[14.09.21 12:17:46] rocco: I think it connects
+[14.09.21 12:17:50] collin: port is always the same
+[14.09.21 12:17:54] collin: check with alfonse which one
+[14.09.21 12:20:48] collin: stand down for now, postman works
+[14.09.21 12:20:55] collin: my checker won't work, I'll look into it
+[14.09.21 12:21:21] rocco: yeah, I see the port is right
+[14.09.21 12:21:35] rocco: server hangs up
+[14.09.21 12:21:50] rocco: check everything
+[14.09.21 13:36:21] rocco: n
+[14.09.21 13:36:28] rocco: did you check it?
+[14.09.21 13:43:56] collin: it doesn't work in my code
+[14.09.21 13:44:05] collin: what's TLS1.2 only?
+[14.09.21 13:45:06] collin: connects to 1.2 - some kind of error, to 1.0 address says "protocol not supported"
+[14.09.21 13:46:59] rocco: yes
+[14.09.21 13:47:22] rocco: okay
+[14.09.21 13:48:12] rocco: probably because of the ciphers
+[14.09.21 13:48:30] rocco: tried them all?
+[14.09.21 13:48:49] collin: and he writes another error in the browser
+[14.09.21 13:49:11] collin: before it was "self-signed certificate" on the addresses, now it's SEC_ERROR_UNKNOWN_ISSUER
+[14.09.21 13:50:27] rocco: okay, leave them for now
+[14.09.21 13:50:37] rocco: let me think about what
+[14.09.21 14:17:26] collin: all the same ja3s print didn't change
+[14.09.21 14:17:34] collin: the first handshake, it's the same as it always was
+[14.09.21 14:17:40] collin: ``
+ja3s full: 771,49200,65281-11-35-23
+ja3s hash: ec74a5c51106f0419184d0dd08fb05bc
+```
+[14.09.21 14:18:21] rocco: strange, ok I'll test it
+[14.09.21 14:18:24] collin: the only time 08.09 was a different print and everything worked correctly then
+[14.09.21 14:18:26] collin: that was it
+[14.09.21 14:18:28] collin: ``
+08.09
+    ja3s full: 771,49200,65281-23
+    ja3s hash: fd4bc6cea4877646ccd62f0792ec0b62
+```
+[14.09.21 14:19:11] rocco: i got it, i'll do manual settings and check
+[14.09.21 14:20:11] collin: something was changed with the certificate, there should be different cipher settings
+[14.09.21 14:20:24] collin: i.e. elliptic curves used are 65281-11-35-23 65281-23 this should be changed
+[14.09.21 14:28:14] rocco: look at this one
+https://54.183.0.212/
+[14.09.21 14:41:02] collin: the same and ja3s the same
+[14.09.21 14:42:37] rocco: I'll try another one
+[15.09.21 08:07:25] collin: hi!
+[15.09.21 08:07:42] collin: can you make addresses for new main? Need 4 of them.
+[15.09.21 08:07:44] rocco: Hi.
+[15.09.21 08:07:48] collin: demetrius sent you
+[15.09.21 08:07:50] collin: ``
+I gave them to rocco. The generation seems to be working, he should reflash it already to get it right
+```
+[15.09.21 08:07:58] rocco: Yes, I have them, I'm trying to figure out the cipher
+[15.09.21 08:08:20] collin: if they do not work so far, you need the old scheme, because you need addresses in an hour functional
+[15.09.21 08:08:27] rocco: I'll do it manually, 5 min.
+[15.09.21 08:08:27] collin: not like yesterday, can't wait till tonight
+[15.09.21 08:17:53] rocco: ``
+ok: [185.163.45.140]
+ok: [64.227.72.83]
+ok: [64.225.67.166]
+ok: [107.173.192.166]
+```
+[15.09.21 08:17:56] rocco: Come on.
+[15.09.21 08:17:59] rocco: check
+[15.09.21 08:33:05] rocco: how's the print?
+[15.09.21 08:36:47] collin: 64.227.72.83 64.225.67.166 - not working
+[15.09.21 08:37:49] rocco: It works for me
+[15.09.21 08:45:47] collin: Bro, you gotta get the BC algorithm to work
+[15.09.21 08:46:01] collin: Same thing as yesterday, certificate error
+[15.09.21 08:46:26] collin: You can do the addresses by the old scheme, I have no time to experiment now
+[15.09.21 08:47:01] rocco: okay, I'll reset it
+[15.09.21 08:52:56] rocco: check it
+[15.09.21 08:55:56] collin: 185.163.45.140 - this address is very messy, you can change it
+[15.09.21 08:56:11] collin: 5 detects https://www.virustotal.com/gui/ip-address/185.163.45.140
+[15.09.21 08:56:40] rocco: ok
+[15.09.21 09:18:21] collin: can you change?
+[15.09.21 09:23:40] rocco: yes, I had to register a new one, no one has any stock
+[15.09.21 09:23:46] rocco: I'll flash it.
+[15.09.21 09:56:08] rocco: sorry, forgot
+[15.09.21 09:56:09] rocco: 194.76.227.21
+[15.09.21 09:56:14] rocco: ready
+[15.09.21 09:59:36] collin: https://www.virustotal.com/gui/ip-address/194.76.227.21
+[15.09.21 09:59:43] collin: this one's even dirtier
+[15.09.21 09:59:56] collin: we need clean addresses, no more than 1 red sign, ideally no red signs
+[15.09.21 10:04:46] rocco: shit, ok, we have to register with another hoster again
+[9/15/21 10:06:29] rocco: Check this one, 195.149.87.46.
+[15.09.21 10:06:39] rocco: I'll upload it to him if anything
+[15.09.21 10:24:59] collin: I already gave out the addresses for today
+[15.09.21 10:25:17] rocco: 195.149.87.46
+[15.09.21 10:25:19] collin: you can provide reserve for BC, so there would be at least 8 of them in stock always?
+[15.09.21 10:25:22] collin: pure
+[15.09.21 10:25:27] rocco: you can give me that one too
+[15.09.21 10:25:52] collin: I also take reserve from Franz, but it's not smooth there either - half dirty, half not working after a week...
+[15.09.21 10:26:29] collin: about the problem with randomization of the ciphers - looks like the problem is that standard wind's library (used in BC) supports not all variants of the ciphers
+[15.09.21 10:26:40] collin: only compatible ones can be used
+[15.09.21 10:26:55] collin: this is the list in the windows designation:
+[15.09.21 10:27:06] collin: ``
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P384
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P256
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P384
+TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_RSA_WITH_AES_256_GCM_SHA384
+TLS_RSA_WITH_AES_128_GCM_SHA256
+TLS_RSA_WITH_AES_256_CBC_SHA256
+TLS_RSA_WITH_AES_128_CBC_SHA256
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256_P384
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256_P384
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P256
+TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA_P384
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P256
+TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA_P384
+TLS_DHE_DSS_WITH_AES_256_CBC_SHA256
+TLS_DHE_DSS_WITH_AES_128_CBC_SHA256
+TLS_DHE_DSS_WITH_AES_256_CBC_SHA
+TLS_DHE_DSS_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+
+
+```
+[15.09.21 10:27:20] rocco: okay, I'll try to put these together in the fall
+[15.09.21 10:28:11] rocco: but the oceans were used, were they clean?
+[15.09.21 10:32:03] collin: yes, the oceans were the cleanest
+[15.09.21 10:32:11] collin: except for the one time re-caught
+[15.09.21 10:35:11] rocco: no oceans yet
+[15.09.21 10:35:20] rocco: try to pick up on azura
+[16.09.21 08:52:31] collin: tell me, do you pay for cryptopanel servers, autotests?
+[16.09.21 08:53:45] rocco: i gave everything to the demeter
+[16.09.21 08:53:58] collin: jenkins server, git for cryptopanel - on it?
+[16.09.21 08:54:18] rocco: demeter has all the data
+[17.09.21 06:11:07] collin: hi!
+[17.09.21 06:11:32] collin: newbie git doesn't work
+[17.09.21 06:11:34] rocco: hi
+[17.09.21 06:11:35] collin: https://ww4gpecf7 which
+[17.09.21 06:11:53] collin: don't you support it?
+[17.09.21 12:09:17] rocco: bro did they raise the git you asked for?
+[17.09.21 12:10:36] collin: it worked
+[17.09.21 12:10:51] rocco: who lifted it?
+[17.09.21 12:11:18] rocco: or you raised it yourself?
+[17.09.21 12:11:28] rocco: just can't find the end
+[17.09.21 12:12:10] collin: i wrote adam,
+[17.09.21 12:12:26] collin: he asked who raised it originally, said I don't know
+[17.09.21 12:12:52] collin: I thought he picked up or found admin
+[17.09.21 12:13:37] collin: it was up recently, I looked half an hour ago - it wasn't up yet
+[17.09.21 12:19:57] rocco: maybe i'll ask demetrus
+[17.09.21 12:25:45] rocco: bro, send me the address
+[17.09.21 12:26:10] rocco: found it
+[20.09.21 06:59:38] collin: hey bro!
+[20.09.21 06:59:46] collin: what about addresses for uk, new main admin?
+[20.09.21 06:59:58] collin: absolutely all bots offline are gone
+[20.09.21 07:01:31] collin: error on all: ERROR_WINHTTP_INVALID_SERVER_RESPONSE - The server response cannot be parsed.
+[20.09.21 07:01:34] collin: can you restore?
+[20.09.21 08:23:50] rocco: hey, yeah, zeus wrote, demetrus made procles, I don't even know what kind of procles there
+[20.09.21 08:24:47] collin: ``waiting for rocco'' Demetrius wrote
+[20.09.21 08:25:06] collin: bro need to resolve the addresses urgently...
+[20.09.21 08:25:42] rocco: yeah yeah, I'll try to figure it out
+[20.09.21 08:43:26] rocco: check it out, bro.
+[20.09.21 08:44:14] rocco: bro and send me credit for admin, so I can keep track of it
+[20.09.21 08:50:05] collin: only from 17.09 came back, and the previous ones?
+[20.09.21 08:50:28] collin: 134.255.254.76 45.14.226.182 94.140.115.104 178.23.190.206
+[20.09.21 08:50:29] collin: 45.89.106.210 139.28.235.92
+[20.09.21 08:50:31] collin: these for example
+[20.09.21 08:50:59] collin: 195.149.87.46 64.227.72.83 194.15.112.159 107.173.192.166
+[20.09.21 09:02:37] collin: Bro, what about the rest of the addresses, will you get them up or not?
+[20.09.21 09:04:19] collin: 194.15.112.71 172.83.155.173 45.42.201.123 194.135.33.179
+[20.09.21 09:04:20] collin: 89.41.182.139 194.15.112.159 172.83.155.173 194.135.33.179
+[20.09.21 09:04:24] collin: these are also from 09/13
+[20.09.21 09:04:29] rocco: well that's what demetrus gave me
+```
+165.22.203.149
+165.22.203.213
+167.71.8.178 J
+167.71.15.206
+165.22.199.77 ansible_user=root ansible_password=zLXGz7cKZh8J14jGBdACctu+nT0oVTqJ
+165.22.199.17
+```
+[20.09.21 09:04:39] rocco: these are up, right?
+[20.09.21 09:04:50] rocco: Let me ask you about the others.
+[20.09.21 09:05:23] rocco: are the bots back?
+[20.09.21 09:05:57] rocco: if it's a torus, I'll make it reboot automatically if the torus is gone
+[20.09.21 09:06:06] collin: yeah, these 5 are up, but we need the rest
+[20.09.21 09:06:16] rocco: yeah, he will
+[20.09.21 09:06:17] collin: bots started to appear
+[20.09.21 09:31:31] rocco: check bro
+[20.09.21 09:31:46] rocco: ``
+194.15.112.71 ansible_user=root ansible_password=34fhjdgEN3rE5ff
+172.83.155.173 ansible_user=root ansible_password=34fhjdgEN3rE5ff
+45.42.201.123 ansible_user=root ansible_password=W3tbgiM3R0K2Lh39cM
+194.135.33.179 ansible_user=root ansible_password=34fhjdgEN3rE5ff
+172.83.155.173 ansible_user=root ansible_password=34fhjdgEN3rE5ff
+194.135.33.179 ansible_user=root ansible_password=34fhjdgEN3rE5ff
+89.41.182.139, 194.15.112.159.
+```
+[20.09.21 09:38:37] collin: 89.41.182.139, 194.15.112.159 - don't work
+[20.09.21 09:38:47] collin: The other 6 are up
+[20.09.21 09:40:24] rocco: he doesn't have it
+[20.09.21 09:40:24] collin: these 6 more: 134.255.254.76 45.14.226.182 94.140.115.104 178.23.190.206
+[20.09.21 09:40:25] collin: 45.89.106.210 139.28.235.92
+[20.09.21 09:40:27] collin: can we raise it?
+[20.09.21 09:40:30] rocco: me too
+[20.09.21 09:40:39] rocco: now if the data is left
+[20.09.21 09:40:45] collin: `he doesn't have that data` that's weird, he was making addresses
+[20.09.21 09:40:55] collin: addresses from my pps reserve
+[20.09.21 09:41:40] rocco: i don't know, bro, so he said, maybe look somewhere in your history
+[20.09.21 09:41:56] collin: `89.41.182.139, 194.15.112.159` - exactly from the reserve 13.09 I gave him
+[20.09.21 09:42:09] rocco: he should probably just write in the script to change the password, in case the data is lost
+[20.09.21 09:42:40] collin: root 89.41.182.139 62tVlAh7Qi3e0TUHx1 RO
+[20.09.21 09:42:41] collin: root 194.15.112.159 34fhjdgEN3rE5ff EU
+[20.09.21 09:42:51] collin: I have it written like this
+[20.09.21 09:42:59] rocco: try it now
+[20.09.21 09:44:18] rocco: check these two
+[20.09.21 09:45:54] collin: worked
+[20.09.21 09:46:04] collin: the last two
+[20.09.21 11:02:49] rocco: bro, you got no vpski, I want to experiment with kiefer on it
+[20.09.21 11:03:47] collin: take these vpski:
+[20.09.21 11:03:49] collin: ``
+root 85.204.116.125 pz76lj0GM1 US my.hostmaze.com dobber@keemail.me KVhvgh6VfGkTBWSa 6EU
+root 104.161.32.112 85uZBOKjgMapCoz US billing.indovirtue.com dobber@keemail.me vC3thYX2LQw3pnvG $5
+root 37.72.168.165 vtQ4@6jxjX US monovm.com hekko@nibblefish.net 88sVFxNhVpb7oZqs $12.99
+root 82.117.252.32 Y4YR57DDyukv US my.itldc.com hekko@nibblefish.net j7DHBkFYPspqCnNN $3.49
+```
+[20.09.21 11:04:01] collin: they're dirty, not good for work for us
+[20.09.21 11:04:06] collin: Use them for tests
+[20.09.21 11:56:04] rocco: bro, check the last one I gave you rebooted
+[09/20/21/221 12:00:26] collin: 194.180.174.49 139.28.235.130 - these two are not up. All the rest are working.
+[20.09.21 12:51:34] rocco: I'll check now.
+[21.09.21 06:36:15] collin: hi!
+[21.09.21 06:36:46] collin: ``
+https://lch5nnzyb5aof43pitcrzkmnvlr4xkrestpj4cpwstvgej34kqq6wqyd.onion/sOIDFhsAIUfhu42332uygt27634ft7yuaFGyaugkJFsayjegf--_-GBASfdvt23fv/
+b56
+sN7kDN4mDBzM9LEh73BSjt
+```
+[21.09.21 06:37:00] collin: admin BC new main - address and your account for monitoring
+[21.09.21 06:37:19] rocco: Hey, yeah. Thanks.
+[21.09.21 06:37:25] rocco: bro, check the gasket
+[21.09.21 06:37:29] rocco: after the script
+[21.09.21 06:37:36] rocco: I think I found a mistake
+[21.09.21 06:37:37] rocco: https://194.135.33.207/
+[21.09.21 06:37:41] collin: and check how blacklists work please - it skips addresses from rules
+[21.09.21 06:37:45] rocco: it's for proto2
+[21.09.21 06:37:48] collin: in the last 24 hours these ones:
+[21.09.21 06:37:49] collin: 5.187.21.98, 185.220.100.240 to 185.220.102.255, 204.101.161.14 to 204.101.161.19, 167.114.209.103
+[21.09.21 06:37:56] rocco: okay.
+[21.09.21 06:37:59] rocco: Check.
+[21.09.21 06:38:07] rocco: check gasket
+[21.09.21 06:38:15] rocco: it's after the kiefer generation
+[21.09.21 06:38:27] rocco: took the ciphers from your table
+[21.09.21 06:38:31] rocco: takes
+[21.09.21 06:38:40] collin: okay, let me check
+[21.09.21 06:42:04] collin: padding works, but the cipher set is the same as before
+[21.09.21 06:42:16] collin: i.e. ja3s didn't change
+[21.09.21 06:42:49] rocco: now sec, the bug was not in the ciphers, but in the certificate generation, now I'll play with the ciphers
+[21.09.21 06:49:27] collin: Bro, I need new addresses today - 2 packs of 4
+[21.09.21 06:49:39] collin: no demetrius, and we gotta get ready
+[21.09.21 06:49:49] collin: is it coming soon, or will you do it?
+[21.09.21 06:50:41] rocco: yeah, i think it'll come out, if it doesn't, i'll do it
+[21.09.21 06:50:49] collin: okay, I'll wait another half hour
+[21.09.21 06:58:50] rocco: check
+https://194.135.33.207/
+[21.09.21 07:09:53] collin: same
+[21.09.21 07:10:33] rocco: ok
+[21.09.21 07:20:27] rocco: check it changed?
+[21.09.21 07:20:46] rocco: demeter does?
+[21.09.21 07:21:02] collin: yes, I ordered working addresses from him
+[21.09.21 07:21:38] collin: no change
+[21.09.21 07:21:57] rocco: ja3?
+[21.09.21 07:22:08] collin: ja3s the same
+[21.09.21 07:22:15] rocco: okay
+[21.09.21 07:23:55] collin: he always sends the same thing with this signature:
+[21.09.21 07:23:59] collin: ``
+TLSv1.2 Record Layer: Handshake Protocol: Server Hello
+    Content Type: Handshake (22)
+    Version: TLS 1.2 (0x0303)
+    Length: 65
+    Handshake Protocol: Server Hello
+        Handshake Type: Server Hello (2)
+        Length: 61
+        Version: TLS 1.2 (0x0303)
+        Random: 02a179fde9b8ac913dd4d1089e59efc4a732d97439378e7247fc02611cc431bb
+        Session ID Length: 0
+        Cipher Suite: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (0xc030)
+        Compression Method: null (0)
+        Extensions Length: 21
+        Extension: renegotiation_info (len=1)
+        Extension: ec_point_formats (len=4)
+            Type: ec_point_formats (11)
+            Length: 4
+            EC point formats Length: 3
+            Elliptic curves point formats (3)
+                EC point format: uncompressed (0)
+                EC point format: ansiX962_compressed_prime (1)
+                EC point format: ansiX962_compressed_char2 (2)
+        Extension: session_ticket (len=0)
+            Type: session_ticket (35)
+            Length: 0
+            Data (0 bytes)
+        Extension: extended_master_secret (len=0)
+            Type: extended_master_secret (23)
+            Length: 0
+ja3/ja3s TLS/SSL fingerprint
+    ja3s full: 771,49200,65281-11-35-23
+    ja3s hash: ec74a5c51106f0419184d0dd08fb05bc
+```
+[21.09.21 07:29:15] rocco: yes, yes, there was no change in the certificate again, I'm looking into it
+[21.09.21 07:37:23] rocco: What are you looking at?
+[21.09.21 07:37:36] rocco: not to bother you
+[21.09.21 07:39:09] collin: wireshark + plugin to format ja3/ja3s
+[21.09.21 07:40:43] collin: https://github.com/salesforce/ja3 this one
+[21.09.21 07:40:43] rocco: got it, got it.
+[21.09.21 07:40:51] rocco: thanks
+[22.09.21 06:14:25] collin: hey bro!
+[22.09.21 06:15:05] collin: what's up with the blacklists at pad level, did you check?
+[22.09.21 06:15:27] collin: 5.187.21.98 167.114.209.103 104.237.193.26 - these are the addresses he knocked from last night
+[22.09.21 06:16:07] collin: 5.187.21.98 - wrote about it yesterday, 167.114.209.103 - been writing about it since last week
+[22.09.21 06:28:11] rocco: Hey bro, I'll get to it, but in principle demeter has all the scripts, you can also write to him, if he fails then I will connect, I just may not have time to do
+[22.09.21 06:28:55] rocco: you always write him all the problems first, it's like the first line, if he does not work he tells me
+[22.09.21 06:30:10] rocco: Listen, I do not understand how to connect ja3 into shark, there is a plugin for shark, and I'm looking for in my lin, vashe no folder even for plugins, what the hell
+[22.09.21 06:30:23] rocco: you have everything on the wind?
+[22.09.21 06:30:36] rocco: maybe it's better to have a winder on the deck
+[22.09.21 06:30:44] rocco: I'll try it on wine
+[22.09.21 06:31:13] rocco: do you have any manual how to connect all this stuff
+[22.09.21 06:31:13] collin: `may I write him too` - I also write him and duplicate it for you (because the question is not solved)
+[22.09.21 06:31:40] collin: I only set it up on Windows, I'll look for correspondence now
+[22.09.21 06:32:05] rocco: yeah bro I'd appreciate it, I just don't want to spend a lot of time on the setup
+[22.09.21 06:32:33] rocco: Demeter's coming out, I'll find out what's wrong with his filter
+[22.09.21 06:32:41] rocco: I'll do it myself
+[22.09.21 06:39:59] collin: didn't save the info, I'll write it from memory:
+[22.09.21 06:40:04] collin: 1) I put wireshark
+[22.09.21 06:40:33] collin: 2) I put plugin from here https://github.com/salesforce/ja3 - in folder C:\Program Files\Wireshark\plugins
+[22.09.21 06:40:48] collin: there is one file to put there ja3.lua
+[22.09.21 06:41:19] rocco: yeah thanks
+[22.09.21 06:41:24] collin: 2) put the plugin from here https://github.com/kikito/md5.lua/blob/master/md5.lua
+[22.09.21 06:41:33] rocco: I'll put it on the windup
+[22.09.21 06:41:47] collin: into the folder C:\Program Files\Wireshark one file md5.lua
+[22.09.21 06:42:32] collin: after that it works, on interception in Client Hello package appears ja3 section, in Server Hello - ja3s section
+[22.09.21 07:09:48] collin: tell me, do you chat with the newbies now?
+[22.09.21 07:09:57] collin: ojdglzhrquash4... which one?
+[22.09.21 07:42:28] collin: ?
+[22.09.21 07:42:33] collin: Tell me you're doing a pledge chat now.
+ojdglzhrquash4... which one?
+[22.09.21 07:42:44] rocco: demeter
+[22.09.21 11:14:28] collin: bro help with the pad addresses
+[22.09.21 11:14:45] collin: ``
+167.71.8.117 167.71.15.157 don't work
+from yesterday some of the addresses are lying: 167.71.8.93 167.71.8.4 - you can restore them, if not - make new ones
+
+```
+[22.09.21 11:14:51] collin: We need to make new ones or fix these
+[22.09.21 11:14:59] collin: I've been writing to demetrius since this morning, he's not answering
+[22.09.21 11:17:17] rocco: now
+[22.09.21 13:41:12] rocco: have you solved the procals?
+[22.09.21 13:41:53] rocco: anyways, all day with these ciphers, change j3, but I do not know how to combine them, then it works, then not
+[22.09.21 13:42:07] collin: Yeah, I got the procs
+[22.09.21 13:42:47] rocco: probably have to manually pick up working sets
+[22.09.21 13:42:52] rocco: try it by hand
+[22.09.21 13:43:06] rocco: trying to understand algorithm
+[22.09.21 13:48:15] rocco: check it out.
+[22.09.21 13:48:15] rocco: https://194.135.33.207/
+[22.09.21 13:51:11] rocco: ja3 d5c579fb00ac796767470596b15adabc9e
+[22.09.21 14:03:15] collin: ``
+ja3/ja3s TLS/SSL fingerprint
+    ja3s full: 771,49200,65281-11-35-23
+    ja3s hash: ec74a5c51106f0419184d0dd08fb05bc
+
+```
+[22.09.21 14:03:21] collin: the same ja3s
+[22.09.21 14:07:20] rocco: but mine shows
+Frame 713: 569 bytes on wire (4552 bits), 569 bytes captured (4552 bits) on interface 0
+Raw packet data
+Internet Protocol Version 4, Src: 192.168.100.10, Dst: 194.135.33.207
+Transmission Control Protocol, Src Port: 56718, Dst Port: 443, Seq: 1, Ack: 1, Len: 517
+    Source Port: 56718
+    Destination Port: 443
+    [Stream index: 35]
+    [TCP Segment Len: 517]
+    Sequence number: 1 (relative sequence number)
+    [Next sequence number: 518 (relative sequence number)
+    Acknowledgment number: 1 (relative ack number)
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x018 (PSH, ACK)
+    Window size value: 502
+    [Calculated window size: 64256]
+    [Window size scaling factor: 128]
+    Checksum: 0xa678 [unverified]
+    [Checksum Status: Unverified]
+    Urgent pointer: 0
+    Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps
+        TCP Option - No-Operation (NOP)
+        TCP Option - No-Operation (NOP)
+        TCP Option - Timestamps: TSval 3792057040, TSecr 1419519836
+    [SEQ/ACK analysis]
+        [iRTT: 0.316369517 seconds]
+        [Bytes in flight: 517]
+        [Bytes sent since last PSH flag: 517]
+    [Timestamps]
+        [Time since first frame in this TCP stream: 0.321017565 seconds]
+        [Time since previous frame in this TCP stream: 0.004648048 seconds]
+    TCP payload (517 bytes)
+Secure Sockets Layer
+    TLSv1.2 Record Layer: Handshake Protocol: Client Hello
+        Content Type: Handshake (22)
+        Version: TLS 1.0 (0x0301)
+        Length: 512
+        Handshake Protocol: Client Hello
+            Handshake Type: Client Hello (1)
+            Length: 508
+            Version: TLS 1.2 (0x0303)
+            Random: 41883e64f2abff55198c1726e994a3232046e02f83eb47e6...
+            Session ID Length: 32
+            Session ID: 9b2361c5b76261b6cf5b72988115b8dbfb412150d3be05eb...
+            Cipher Suites Length: 36
+            Cipher Suites (18 suites)
+            Compression Methods Length: 1
+            Compression Methods (1 method)
+            Extensions Length: 399
+            Extension: extended_master_secret (len=0)
+            Extension: renegotiation_info (len=1)
+            Extension: supported_groups (len=14)
+            Extension: ec_point_formats (len=2)
+            Extension: application_layer_protocol_negotiation (len=14)
+            Extension: status_request (len=5)
+            Extension: Unknown type 34 (len=10)
+            Extension: key_share (len=107)
+            Extension: supported_versions (len=5)
+            Extension: signature_algorithms (len=24)
+            Extension: psk_key_exchange_modes (len=2)
+            Extension: Unknown type 28 (len=2)
+            Extension: padding (len=161)
+ja3/ja3s TLS/SSL fingerprint
+    ja3 full: 771,4865-4867-4866-49195-49199-52393-52392-49196-49200-49162-49161-49171-49172-156-157-47-53-10,23-65281-10-11-16-5-34-51-43-13-45-28-21,29-23-24-25-256-257,0
+    ja3 hash: d5c579fb00ac7967470596b15adabc9e
+    ja3 hash_ignored_padding: 96284eff1f35151566503821f89a9cc203
+    ja3 full_ignored_padding: 771,4865-4867-4866-49195-49199-52393-52392-49196-49200-49162-49161-49171-49172-156-157-47-53-10,23-65281-10-11-16-5-34-51-43-13-45-28,29-23-24-25-256-257,0
+[22.09.21 14:09:51] collin: `ja3 d5c579fb00ac796767470596b15adabc9e` is ja3 and the goal is to change ja3s
+[22.09.21 14:10:44] rocco: got it
+[22.09.21 14:10:49] rocco: got it wrong
+[23.09.21 06:48:19] rocco: hey bro, what ja3s light?
+[9/23/221 06:48:39] collin: hi!
+[23.09.21 06:49:01] collin: ``
+    ja3s full: 771,49200,65281-11-35-23
+    ja3s hash: ec74a5c51106f0419184d0dd08fb05bc
+```
+[9/23/221 06:49:03] collin: that's usually it
+[23.09.21 06:49:48] rocco: this is what shark shows
+```
+895252f3ce80cebf7a8837be83ec8e16
+```
+[9/23/221 06:50:12] rocco: https://194.135.33.207/
+[23.09.21 06:50:17] rocco: ja3s
+[23.09.21 06:50:38] rocco: ``
+ja3/ja3s TLS/SSL fingerprint
+    ja3s full: 771,49200,65281-11-35-16-23
+    ja3s hash: 895252f3ce80cebf7a8837be83ec8e16
+
+```
+[23.09.21 06:50:52] rocco: ```
+44103 38.005357581 194.135.33.207 192.168.100.6 TLSv1.2 1500 Server Hello
+```
+[9/23/221 06:51:02] collin: I'll check now.
+[9/23/221 07:00:59] collin: I got the same ec74a5c51106f0419184d0dd08fb05bc
+[23.09.21 07:01:05] collin: how do you check with the stock?
+[23.09.21 07:06:01] rocco: and you check the uk's certificate? our gasket certificate is lit, that's what we change
+[23.09.21 07:06:20] rocco: I check through shark
+[23.09.21 07:06:31] rocco: with ja3 plugin
+[23.09.21 07:06:34] collin: and the client, who sends the request?
+[23.09.21 07:06:53] rocco: he sends a request for a pad
+[23.09.21 07:06:58] collin: who
+[23.09.21 07:07:25] collin: I check it this way: I start address checker for BK, it has the same algorithm as BK bots
+[9/23/221 07:07:32] collin: it probably won't show otherwise
+[23.09.21 07:08:17] rocco: yesterday you showed me how to catch ja3s with wireshark
+[23.09.21 07:08:33] collin: you put in a plugin, enabled packet capturing
+[23.09.21 07:08:36] collin: next you have to send the packet
+[23.09.21 07:08:41] collin: what do you send the packet with?
+[23.09.21 07:08:46] rocco: aah!
+[23.09.21 07:09:16] collin: different result if you use your browser
+[23.09.21 07:09:24] collin: because the client part is different
+[23.09.21 07:09:33] collin: address checker for workplace
+[23.09.21 07:09:35] collin: I'll send it to you
+[23.09.21 07:09:51] rocco: go ahead
+[23.09.21 07:12:05] collin: so I must have given you a redundant list of ciphers
+[23.09.21 07:12:16] collin: all of them are supported by Windows from 7 to 10
+[23.09.21 07:12:32] rocco: it's not clear what kind of fingerprint it shows
+[23.09.21 07:12:37] rocco: you
+[23.09.21 07:12:39] collin: but the wininet liba used in the client part of the backend - there's less list
+[23.09.21 07:12:50] rocco: maybe it's an admins print
+[23.09.21 07:13:02] rocco: you have to change it in admin
+[9/23/221 07:53:08] collin: ``
+bdN7kENdj8KDbwn6JSBk0leBS2bSJt4nD
+https://privatlab.com/s/v/DB2O7qRQqqS49obl7Gj6
+https://privatlab.com/s/d/DB2O7qRQqqS49obl7Gj6/aY7RO#delete
+```
+[9/23/221 07:53:29] collin: this is an address checker, run with the parameter - the address of the spacer:
+[23.09.21 07:53:45] collin: bdchk.exe 194.135.33.207
+[9/23/221 09:27:36] collin: Bro need 4 addresses
+[23.09.21 09:27:40] collin: Demetrius didn't show up
+[23.09.21 09:27:55] rocco: Yeah, I'm on it.
+[23.09.21 09:57:56] rocco: ``
+ok: [3.15.217.84]
+ok: [13.58.242.166]
+ok: [18.217.68.134]
+ok: [3.141.20.115]
+```
+[23.09.21 10:15:23] collin: bro, can you change the certificate details
+[23.09.21 10:15:28] collin: hironasama.es - already flagged
+[9/23/221 10:23:21] rocco: okay
+[9/23/221 10:26:04] rocco: ready
+[9/23/221 10:58:38] collin: +
+[23.09.21 13:19:39] rocco: bro, I can't get a shark to check
+```
+C:\Users\Administrator\Documents>bdchk.exe 194.135.33.207
+[=] BD general address checked build Sep 2 2021 08:42:55 started
+[+] Backdoor ID generated: 0174844644607706969360476075157359241501
+[+] Step 1: import 1 servers
+[-] call BCryptGetProperty failed, result code: -1073741637
+[-] Error crypting server commands
+[-] Error getting cookies with crypted command
+[-] Error crypting command to server!
+[+] 194.135.33.207 - OK!
+
+```
+[23.09.21 13:19:46] rocco: does it work correctly?
+[23.09.21 13:21:24] rocco: how do you do it? I already tried it on 3 systems, I can't catch anything
+[23.09.21 13:26:35] collin: he sends a request and gets an answer, so it's possible to intercept the packet
+[23.09.21 13:26:54] collin: wait though
+[23.09.21 13:27:00] collin: what kind of OS do you have?
+[23.09.21 13:27:42] rocco: yeah i've tried it on everything 7 10 serv 2016
+[23.09.21 13:27:59] rocco: already tried everything
+[23.09.21 13:28:04] collin: 10 should definitely work, 7 seems to have problems
+[9/23/221 13:28:36] collin: ``
+[=] BD general address checked build Sep 2 2021 08:42:55 started
+[+] Backdoor ID generated: 0027452035081899433090131410821545662346
+[+] Step 1: import 1 servers
+[=] Try connect to server. Domain: 194.135.33.207, port: 443, prefix: /australia/addrtest1/tst0421
+[+] Received response status code: 200
+[=] Received command: 0 60
+[+] 194.135.33.207 - OK!
+```
+[23.09.21 13:28:44] collin: I need this report without errors
+[23.09.21 13:28:53] rocco: I don't have it
+[23.09.21 13:28:56] collin: you got error, it could happen on win7
+[23.09.21 13:29:03] rocco: is it bdchk?
+[23.09.21 13:29:18] collin: yes
+[23.09.21 13:29:18] rocco: I'll check again at 10
+[23.09.21 13:29:28] collin: I think I fixed it, I'll check it too
+[23.09.21 13:29:37] rocco: do you need more parameters or something?
+[23.09.21 13:29:42] collin: on 10 it should definitely work, on 7 you might have some problems
+[23.09.21 13:29:48] collin: nothing else
+[23.09.21 13:30:00] rocco: okay, I'll keep trying
+[23.09.21 13:30:24] rocco: I just need to figure out whose print
+[23.09.21 13:30:49] rocco: I figured out how to change it
+[23.09.21 14:00:44] rocco: it worked, I was racking my brain all day
+[23.09.21 14:16:04] rocco: does test bro work like proto2?
+[23.09.21 14:16:27] rocco: change ciphers on the admin and the same set on the pad
+[23.09.21 14:16:42] rocco: it just doesn't work in battle
+[23.09.21 14:20:02] collin: yeah proto2 is there
+[23.09.21 14:20:16] collin: alphonse recently made a cast of the main new
+[23.09.21 14:20:19] collin: to the test one
+[23.09.21 14:21:02] rocco: yes then I will try on it, most likely it is a print of the admin comes, you need to do the same on the admin and on the pad most likely
+[24.09.21 06:39:03] collin: Hey bro!
+[24.09.21 06:39:10] collin: Demetrius will be, do not know?
+[24.09.21 06:39:52] rocco: Hi, I don't know where he is, he didn't tell me anything, he didn't show up yesterday
+[24.09.21 06:40:29] collin: still blacklisted on the proc, since yesterday evening:
+[24.09.21 06:40:40] collin: 167.114.209.103, from these ranges: 185.220.100.240 - 185.220.102.255, 154.61.71.51 - 154.61.71.54
+[24.09.21 06:40:56] rocco: Yeah, I'll get right on it.
+[24.09.21 06:41:00] rocco: since he's not here
+[24.09.21 06:41:11] collin: we'll need addresses for bazaars, but it's not urgent
+[24.09.21 06:41:29] collin: I'll write after lunch if he doesn't show up
+[24.09.21 06:41:37] rocco: ok I will
+[24.09.21 09:06:30] rocco: bro can check 172.83.155.186, my checker generates error
+[24.09.21 09:08:32] rocco: made new test procco
+[24.09.21 09:14:07] rocco: ``
+>bdchk.exe 172.83.155.186
+[=] BD general address checked build Sep 2 2021 08:42:55 started
+[+] Backdoor ID generated: 0048518952822122621287774641222589380110
+[+] Step 1: import 1 servers
+[=] Try connect to server. Domain: 172.83.155.186, port: 443, prefix: /australia/addrtest1/tst0421
+[-] Error calling WinHttpQueryHeaders, code 12150
+[!] Error querying header Set-Cookie
+[+] Received response status code: 500
+[-] HTTP sending request error, response status code: 500
+[-] 172.83.155.186 - Error!
+```
+[24.09.21 09:14:47] collin: the seal works, let me see the print
+[24.09.21 09:15:11] collin: code 500 maybe if ip is filtered into Honeypot
+[24.09.21 09:15:12] rocco: yeah, the fingerprint probably hasn't changed
+[24.09.21 09:15:21] rocco: ah
+[24.09.21 09:15:39] collin: although I don't see it there
+[24.09.21 09:15:40] rocco: i just got since yesterday i500 yes 500
+[24.09.21 09:15:47] rocco: I can't really sweat
+[24.09.21 09:15:54] collin: what ip should be off?
+[24.09.21 09:15:56] rocco: I already set up a new one
+[24.09.21 09:16:00] rocco: sec
+[24.09.21 09:16:15] rocco: 144.76.86.85
+[24.09.21 09:16:24] rocco: take him out of the Honeypot, please
+[24.09.21 09:16:29] rocco: this is my dedicata
+[24.09.21 09:16:49] rocco: yesterday I can't understand anything, 500 and 500
+[24.09.21 09:17:02] rocco: and I thought my ciphers didn't work properly
+[24.09.21 09:17:15] rocco: I've been going over everything
+[24.09.21 09:20:46] collin: put it into Test Bot - try it now
+[24.09.21 09:21:19] rocco: yeah, I got it.
+[24.09.21 09:21:39] rocco: shit, I couldn't figure it out yesterday
+[24.09.21 09:22:02] rocco: rebuilt Procla 200 times
+[24.09.21 09:22:12] collin: well, request still passes, ja3s fingerprint is fixed
+[24.09.21 09:23:16] collin: look, now it's the old one
+[24.09.21 09:23:31] rocco: that's the thing, it didn't take it off
+[24.09.21 09:23:46] rocco: just wasn't in the dump
+[24.09.21 09:44:04] rocco: and check now 194.135.33.207
+[24.09.21 09:44:15] rocco: I think jas3 changed
+[24.09.21 09:44:23] rocco: I think I figured out how to change
+[24.09.21 09:48:41] collin: yeah another
+[24.09.21 09:48:51] collin: only then it switches to TLSv1 for some reason
+[24.09.21 09:49:13] rocco: need to tune it up
+[24.09.21 09:49:24] rocco: so I figured out that jas3 admins
+[24.09.21 09:49:40] rocco: I put a spacer between them, and now jas gets it
+[24.09.21 09:49:48] collin: but the seal itself establishes connection, first with the client, then with the admin?
+[24.09.21 09:49:53] rocco: we'll just change everything on the pad
+[24.09.21 09:50:01] rocco: I dunno bro
+[24.09.21 09:50:01] collin: encrypts data, adds header with ipi
+[24.09.21 09:50:13] rocco: got it like this
+[24.09.21 09:50:27] rocco: if to do it with intermediate, it changes
+[24.09.21 09:50:53] rocco: didn't want to touch admin
+[24.09.21 09:51:11] rocco: because there might be errors with those ciphers
+[24.09.21 09:52:30] rocco: I do not know how the connection, but whatever you did not aprocle jas not changed, but I remembered that you once said that you had changed somehow, and remembered that I had a couple of procreated through the intermediate
+[24.09.21 09:52:47] rocco: here
+[24.09.21 09:53:11] rocco: gonna play with cyphers and certificates on the crotch, and see how it changes
+[24.09.21 11:11:59] collin: need addresses for new main 4
+[24.09.21 11:12:24] collin: any oceans or other vps?
+[24.09.21 11:12:40] collin: preferably not all amazon
+[24.09.21 12:49:37] rocco: yes, I will
+[24.09.21 13:04:42] rocco: oceans
+[24.09.21 13:04:42] rocco: ``
+ok: [161.35.18.18]
+ok: [161.35.19.72]
+ok: [68.183.67.197]
+ok: [159.65.127.51]
+
+```
+[24.09.21 13:20:11] collin: +
+[28.09.21 07:16:06] collin: hi!
+[28.09.21 07:16:23] collin: need a tor-bag account for newbies
+[28.09.21 07:16:42] collin: need a tor-jab account for newbies
+[28.09.21 07:17:17] collin: do you use it?
+[28.09.21 07:18:01] rocco: hi, not demetrus
+[28.09.21 09:37:04] collin: Bro need addresses for new main
+[28.09.21 09:37:14] rocco: I will
+[28.09.21 09:37:15] collin: Demetrius ordered, and he's been off for 2 hours
+[28.09.21 09:37:23] rocco: how much?
+[28.09.21 09:37:31] collin: 2 sets of 4 vps, 8 total
+[28.09.21 09:37:35] rocco: do you have vps?
+[28.09.21 09:37:39] collin: each set has different certificate details
+[28.09.21 09:37:43] collin: I can give you
+[28.09.21 09:39:19] collin: ``
+root 172.83.155.164 34fhjdgEN3rE5ff USA
+root 5.183.78.108 mUslO4r9W8n2Qi05FL USA
+root 185.163.45.51 co#a4Eez4Foh MD
+root 94.140.112.47 2a02:7aa0:4000::264 LV
+root 213.59.119.200 34fhjdgEN3rE5ff USA
+root 195.133.192.89 34fhjdgEN3rE5ff USA
+root 5.181.80.115 34fhjdgEN3rE5ff USA
+root 185.99.133.149 2n;RKlZ8w.T9o2 New Zealand
+root 89.41.182.64 f73JtQK07zNaj5O9Xn RO
+```
+[28.09.21 09:39:59] rocco: ok
+[28.09.21 10:25:34] collin: when about ready?
+[28.09.21 10:28:54] collin: when about ready?
+[28.09.21 10:35:45] rocco: I'm on it.
+[28.09.21 11:01:12] collin: bro?
+[28.09.21 11:14:47] collin: need addresses already, write when to wait
+[28.09.21 13:44:06] rocco: sorry, demeter didn't make the procles?
+[28.09.21 14:24:59] collin: he did
+[29.09.21 07:28:59] rocco: bro we only have TLSv2?
+[29.09.21 07:29:11] rocco: to generate string easier
+[29.09.21 07:29:14] rocco: hi
+[29.09.21 07:29:51] collin: hi!
+[29.09.21 07:30:12] collin: yes, we have no such restrictions
+[29.09.21 07:30:20] collin: on client, if only from server/admin side
+[29.09.21 07:30:38] rocco: just if you choose all three versions, it's harder to build kiefer
+[29.09.21 07:30:52] rocco: if only second will be ok?
+[29.09.21 07:32:39] collin: check compatibility with win7
+[29.09.21 07:33:03] collin: it seems it didn't work in some builds
+[29.09.21 07:34:04] rocco: okay, I figured out how to do it
+[29.09.21 07:35:51] rocco: I figured it out with the ciphers, I'll put it all into a script today, and tomorrow I think it will be possible to run it in bulk
+[29.09.21 07:36:42] collin: great!
+[30.09.21 07:34:34] rocco: Bro hello, give me the vpc to do a test procles, you look at them 4pc will do
+[30.09.21 07:34:52] collin: hi!
+[30.09.21 07:34:58] collin: I don't have any more yet
+[30.09.21 07:35:05] collin: only the ones you gave last time
+[30.09.21 07:35:07] collin: are there any left?
+[30.09.21 07:35:14] rocco: okay, I'll take oceans
+[30.09.21 07:35:21] rocco: ah yes
+[30.09.21 07:35:28] collin: take from them
+[30.09.21 07:35:39] collin: also oceans got dirty before startup
+[30.09.21 07:35:42] collin: second time I noticed
+[30.09.21 07:36:03] collin: https://www.virustotal.com/gui/ip-address/164.90.226.31
+[30.09.21 07:36:07] rocco: you can also try to take vps from azura
+[30.09.21 07:36:14] collin: it's detected without any reasons, just addresses date
+[30.09.21 07:36:34] collin: they can't be stolen before issuance - are they made on stolen accounts, from stolen addresses, etc.?
+[30.09.21 07:42:52] rocco: they can, if ip is free they can give it, and it was lit up somewhere before
+[30.09.21 07:43:12] collin: that's the point, not before, the first relay is on the day of issuing the pad
+[30.09.21 07:43:18] rocco: you have to pick different locations
+[30.09.21 07:43:19] collin: I gave you the link above
+[30.09.21 08:09:26] rocco: ``
+138.124.183.132
+213.59.119.200
+195.133.192.89
+5.181.80.115
+```
+[30.09.21 08:12:18] rocco: wait a minute, that's not it
+[30.09.21 08:12:27] collin: 5.181.80.115 - not working
+[30.09.21 08:12:49] rocco: 138.124.183.132 is not an end badge
+[30.09.21 08:12:58] rocco: accidentally added
+[30.09.21 08:19:27] rocco: ``
+5.183.78.108
+213.59.119.200
+195.133.192.89
+5.181.80.115
+```
+[30.09.21 08:19:41] rocco: check and jas each please
+[30.09.21 08:21:52] collin: 5.183.78.108 - not working
+[30.09.21 08:22:15] rocco: right now
+[30.09.21 08:24:18] rocco: they'll probably have the same jazz, but different
+[30.09.21 08:28:09] rocco: check 5.183.78.108
+[30.09.21 08:40:14] collin: everything works
+[30.09.21 08:40:24] collin: try them today, thanks!
+[30.09.21 08:41:24] rocco: ok
+[30.09.21 11:42:27] rocco: bro here?
+[30.09.21 11:42:35] rocco: I'll send the script to ssl
+[30.09.21 11:43:05] collin: I looked at today's procs
+[30.09.21 11:43:12] collin: they have the same ja3s as before
+[30.09.21 11:43:22] collin: or is it expected?
+[30.09.21 11:43:45] collin: yes, the scheme there is different after TLS1.2 it goes to TLS1, but the first print hasn't changed...
+[30.09.21 11:43:57] rocco: before which one?
+[30.09.21 11:44:11] rocco: the very first one?
+[30.09.21 11:44:15] collin: ``
+    ja3s full: 771,49200,65281-11-35-23
+    ja3s hash: ec74a5c51106f0419184d0dd08fb05bc
+```
+[30.09.21 11:44:38] collin: yes which is almost always
+[30.09.21 11:44:41] collin: looked at all 4 pads
+[30.09.21 11:44:46] rocco: hmm strange
+[30.09.21 11:45:02] rocco: okay, let me check
+[30.09.21 11:45:20] collin: not on these
+[30.09.21 11:45:27] collin: these are in the works
+[30.09.21 11:45:41] rocco: yes yes
+[30.09.21 11:47:04] rocco: I got it, bro, I sent them to the wrong address
+[30.09.21 11:47:10] rocco: that's why it didn't change
+[30.09.21 11:47:27] rocco: I'll make 4 new ones not to touch them
+[30.09.21 12:51:40] rocco: ``
+5.181.80.141
+89.41.182.64
+45.80.184.53
+194.135.33.142
+```
+[30.09.21 12:51:58] rocco: here bro, check it out
+[30.09.21 13:02:55] collin: none of them work
+[30.09.21 13:04:15] rocco: yeah
+[30.09.21 13:04:22] rocco: I'll give you this one
+[30.09.21 13:04:35] rocco: 138.124.183.132
+[30.09.21 13:05:11] collin: doesn't work
+[30.09.21 13:05:30] rocco: hmm now ok
+[30.09.21 13:55:23] rocco: 138.124.183.132
+check
+[30.09.21 14:10:30] collin: it works, print changed
+[30.09.21 14:10:35] collin: ``
+ja3/ja3s TLS/SSL fingerprint
+    ja3s full: 771,49195,65281-11-35-23
+    ja3s hash: 10b29985cd0ecd878ac083f059c42d51
+
+```
+[30.09.21 14:20:50] rocco: Check you
+[30.09.21 14:20:59] rocco: ``
+5.181.80.141
+89.41.182.64
+45.80.184.53
+194.135.33.142
+```
+[30.09.21 14:21:17] rocco: I added poly to the set there so it didn't work
+[30.09.21 14:21:31] rocco: it's some kind of new cipher
+[30.09.21 14:21:43] rocco: but probably doesn't work in atls2
+[30.09.21 14:24:42] rocco: I'll send you my script, but the cipher table needs more work, in short, do the sets manually, and then randomly fit them in
+[30.09.21 14:25:17] rocco: I need someone to do it for me, but I'm already up to my neck in it, I guess I'll have to
+[30.09.21 14:26:43] collin: client side script?
+[30.09.21 14:26:47] collin: Or to admins who are preparing procs
+[30.09.21 14:27:16] rocco: admins
+[30.09.21 14:27:30] rocco: sylver told me to show you
+[30.09.21 14:27:53] collin: okay.
+[30.09.21 14:28:27] rocco: iaHeph4oow1ahthoh4wu
+https://privatlab.com/s/v/Xy39E3wZR2iZd4lRNgb3
+[30.09.21 14:28:58] rocco: you need to install
+pip install Faker
+apt install bc
+[30.09.21 14:33:01] collin: the same at the addresses, first ostuk with old ja3s
+[30.09.21 14:33:24] collin: on all four
+[30.09.21 14:33:29] collin: 138.124.183.132 - only that one was correct
+[30.09.21 14:33:52] rocco: hmm, strange now
+[30.09.21 14:35:24] rocco: interesting
+[30.09.21 14:35:32] rocco: okay now
+[30.09.21 14:59:53] rocco: check it out bro
+45.80.184.53
+[30.09.21 15:02:08] collin: it's okay here
+[30.09.21 15:02:11] collin: ``
+ja3/ja3s TLS/SSL fingerprint
+    ja3s full: 771,49161,65281-11-35-23
+    ja3s hash: 3f48aac872b1dbe54fa3547535ec9d43
+
+```
+[30.09.21 15:22:40] rocco: all right, I'll make you procs tomorrow, I need to tighten the script
+[30.09.21 15:22:53] rocco: Don't use those yet
+[30.09.21 15:23:01] rocco: I'll make you new ones
+[30.09.21 15:32:25] collin: okay
+[30.09.21 15:35:46] rocco: I'll send you some more, though
+[30.09.21 15:38:48] rocco: check bro these
+```
+ok: [5.181.80.141]
+ok: [194.135.33.142]
+```
+[30.09.21 15:43:55] collin: work, hash is different
+[30.09.21 15:43:57] collin: this ja3s hash: 3f48aac872b1dbe54fa3547535ec9d43
+[30.09.21 15:44:43] rocco: great, need new ones tomorrow?
+[30.09.21 15:45:06] collin: yes, at least 2 addresses for bazaars
+[30.09.21 15:45:16] collin: the rest is unknown, how orders will be
+[30.09.21 15:45:18] rocco: n aocean?
+[30.09.21 15:45:33] rocco: okay, I'll do it tomorrow
+[30.09.21 15:45:53] collin: well, these two vps are fine
+[30.09.21 15:46:11] collin: or leave them for tests?
+[30.09.21 16:04:58] collin: Bro, Manuel gave me the "coba shk" files, says you did
+[30.09.21 16:05:11] collin: sc_http_111_x64_dll.bin and sc_http_111_x64_exe.bin
+[30.09.21 16:05:41] collin: a couple of questions - why are they "shellcode" - are they dll libraries, PE format?
+[30.09.21 16:06:07] collin: and if dll can be done without IMAGE_FILE_RELOCS_STRIPPED feature, because our cryptors can't handle it?
+[30.09.21 16:08:45] rocco: bro, i've been making these cheeks for a long time, and they're crypting fine, i just changed profile on kobe yesterday, and it stopped crying for some reason, i returned the old profile and it was fine
+[30.09.21 16:09:12] rocco: it's easier to pick up a profile than to mess with cryptors
+[30.09.21 16:11:22] collin: is there a parameter responsible for format?
+[30.09.21 16:11:43] collin: those are different things, dll library and raw shellcode
+[30.09.21 16:11:51] rocco: I don't know bro there's a lot to take apart
+[30.09.21 16:12:00] collin: in the profile that Manuel showed - there is nothing like that, maybe by default dll and you need to add a parameter
+[30.09.21 16:12:06] rocco: no 1 shellcode for dll, another for eqe
+[30.09.21 16:12:19] rocco: I specialize in what to do
+[30.09.21 16:12:42] rocco: no, that's the thing, I didn't change anything, I set it up and put it down
+[30.09.21 16:12:50] collin: that's weird
+[30.09.21 16:12:51] rocco: only changed cob profile yesterday
+[30.09.21 16:13:07] rocco: that's just the profile
+[30.09.21 16:13:40] collin: build-panel recognizes them by format, if it's a DLL - stubs for shellcode become inaccessible
+[30.09.21 16:13:45] rocco: i think it's because of that, because they were crypting like hotcakes
+[30.09.21 16:14:15] rocco: okay, let's see what I don't like about that profile
+[30.09.21 16:15:01] collin: maybe they can be crypted as shellcode, but there's no such mode in the panel yet...
+[30.09.21 16:15:19] collin: let's try it manually
+[30.09.21 16:51:32] rocco: yeah, like bro, they've been crypting like shellcodes for a month now
+[30.09.21 16:55:13] collin: in short, the shellcode is camouflaged to a PE file, the panel doesn't allow it: it recognizes the file as a dll and hides stubs with shellcodes
+[30.09.21 16:55:26] collin: now let's try it manually, if everything is ok - we'll fix it in the panel, you can crypto
+[30.09.21 16:56:56] rocco: ok
+[30.09.21 17:13:09] rocco: all the bros work, thanks!
+[30.09.21 17:13:30] rocco: maybe there will be other profiles, but they will probably work too
+[01.10.21 07:30:43] collin: hi!
+[01.10.21 07:31:01] collin: will you do procs today?
+[01.10.21 07:31:18] collin: need 4
+[01.10.21 07:31:43] collin: we can use 2 from yesterday - these: 5.181.80.141 194.135.33.142
+[01.10.21 07:31:49] collin: two more to them then
+[01.10.21 07:43:32] rocco: hello yes
+[01.10.21 07:44:31] rocco: these are already changed, right?
+[01.10.21 07:44:51] collin: yes, I checked them yesterday - they are fine, they work now
+[01.10.21 07:45:16] rocco: okay, I'll do two more
+[01.10.21 07:45:29] rocco: location makes no difference?
+[01.10.21 07:46:08] collin: whatever
+[01.10.21 07:46:14] collin: as long as they were clean on virustotal
+[01.10.21 07:46:29] rocco: ok, I'll check and do it now.
+[01.10.21 08:00:31] rocco: the oceans are already dirty
+[01.10.21 08:00:57] rocco: ``
+root 213.59.119.200 34fhjdgEN3rE5ff USA
+`` root 195.133.192.89 34fhjdgEN3rE5ff USA
+```
+have I given you these yet?
+[01.10.21 08:02:08] collin: these two went into work yesterday
+[01.10.21 08:02:49] rocco: ok, I'll look for more
+[01.10.21 09:13:06] rocco: bro you might have some vps left, the oceans are all dirty
+[01.10.21 09:13:20] rocco: fuck, amazon can't do anything
+[01.10.21 09:13:22] collin: not yet, waiting myself
+[01.10.21 09:13:38] rocco: okay, i'll try to cheat amazon
+[01.10.21 10:22:01] collin: Bro no luck?
+[01.10.21 10:22:12] collin: maybe demetrius will do it the old way
+[01.10.21 10:22:28] rocco: again
+[01.10.21 10:22:31] collin: bro not working?
+maybe demetrius will do it by the old scheme
+[01.10.21 10:22:58] rocco: it's not ok, I can't find vpsk, they will do it now
+[01.10.21 10:23:14] rocco: amazon doesn't give me a fuck
+[01.10.21 10:23:40] collin: what happened to amazon?
+[01.10.21 10:24:55] rocco: it does not let me create
+[01.10.21 10:25:00] rocco: vpski
+[01.10.21 10:25:31] rocco: try 3 accounts
+[01.10.21 10:43:49] rocco: ok: [207.154.241.38]
+ok: [167.99.243.36]
+[01.10.21 12:38:34] rocco: bro and have you decided with the dynamics dll run n aferms?
+[01.10.21 12:39:18] collin: don't know yet, waiting from rags to be ready
+[01.10.21 12:39:31] rocco: got it, not ready yet, ok
+[04.10.21 08:31:42] rocco: bro I gave demetrus the script, he's making procs now
+[04.10.21 10:08:21] rocco: bro did you get the pads?
+[25.10.21 08:12:22] rocco: hi!
+[25.10.21 08:12:32] rocco: he's here, he'll do it.
+[25.10.21 15:10:16] rocco: what is dga2?
+[25.10.21 15:15:02] rocco: ok
+[26.10.21 07:34:41] rocco: bro, hi, I'll take care of the domains, I think there is no problem to pick up
+[26.10.21 07:35:08] rocco: I upgraded the system, it didn't work well, I hope it won't get worse
+[26.10.21 07:35:18] rocco: connection was constantly interrupted
+[26.10.21 07:35:30] rocco: already annoyed, almost threw the laptop away
+[26.10.21 07:36:52] rocco: so sec
+[26.10.21 08:02:22] rocco: listen, can you make procles for all names?
+[26.10.21 08:02:34] rocco: you write 1 set 4 pcs
+[26.10.21 08:02:50] rocco: 4 pcs of these names?
+[26.10.21 08:03:36] rocco: yeah got it\
+[26.10.21 11:16:06] rocco: one more, or do we move this one?
+[26.10.21 11:16:38] rocco: got it.
+[26.10.21 11:17:48] rocco: Yeah, got it.
+[26.10.21 11:36:17] rocco: ``
+fuuhwyyw.com
+   aqacidom.com
+ biekekyw.com
+exomidem.com
+```
+[26.10.21 12:04:09] rocco: Send me the whole black list please
+[26.10.21 12:06:41] rocco: okay, is it knocking on the main one?
+[27.10.21 08:46:49] rocco: hi, I will
+[27.10.21 08:47:06] rocco: just on ip, on any vpc?
+[27.10.21 10:09:32] rocco: http://172.83.155.144/
+[27.10.21 10:09:46] rocco: could not pick up ip
+[27.10.21 10:29:43] rocco: is it all in that log topic I promised?
+[27.10.21 10:30:35] rocco: let me make spacers just for that, so that they status bang in the graphan
+[27.10.21 10:35:34] rocco: because you can't redo those already in work, you need to manually assemble jinx
+[27.10.21 10:40:20] rocco: okay, I'll take care of one thing now.
+[28.10.21 10:39:17] rocco: bro reset ip procels which are active now, I'll check if I have them all?
+[28.10.21 10:39:32] rocco: I'll redirect to the new server
+[28.10.21 10:45:41] rocco: new procles to do?
+[28.10.21 10:46:04] rocco: I already sent the old ones
+[28.10.21 10:46:41] rocco: well, still sent, cut off
+[28.10.21 10:46:48] rocco: didn't send
+[28.10.21 10:46:58] rocco: okay.
+[28.10.21 12:28:08] rocco: sec yes, already configured
+[28.10.21 12:28:41] rocco: ``
+x6rciduomtjt25xigz7onkgxmusuwwuxqvidjkcramwg3lb5vpsm7ad.onion
+```
+[28.10.21 12:29:03] rocco: and tell me what's wrong with your torus? are you globbing admin or rocket too
+[28.10.21 12:29:28] rocco: i was getting fuckin' reconnects until i upgraded my linux to 20 ubuntas the day before yesterday
+[28.10.21 12:29:36] rocco: works like clockwork now
+[28.10.21 12:30:08] rocco: and rocket?
+[28.10.21 12:30:19] rocco: maybe your torus is glitchy?
+[28.10.21 12:30:46] rocco: i think i'm checking the admin, the response is good, well, within the speed of torus
+[28.10.21 12:31:01] rocco: that's a long time
+[28.10.21 12:31:34] rocco: something's wrong with Tore, you need to upgrade to the latest version
+[28.10.21 12:31:50] rocco: it looks like they're breaking it
+[28.10.21 12:32:16] rocco: last 2 weeks hectic
+[28.10.21 13:22:36] rocco: okay
+[28.10.21 13:23:13] rocco: got it.
+[28.10.21 13:35:17] rocco: maybe back to the old torus
+[28.10.21 13:35:33] rocco: or don't pull it now?
+[28.10.21 13:36:06] rocco: let me see
+[28.10.21 13:36:58] rocco: there are two versions of torus
+[28.10.21 13:37:07] rocco: last of the sources
+[28.10.21 13:37:13] rocco: and old from reps
+[28.10.21 13:37:23] rocco: now I'll reboot torus
+[28.10.21 13:39:56] rocco: should fix it now
+[28.10.21 13:41:05] rocco: it's running fine
+[28.10.21 13:41:14] rocco: at least by sections
+[28.10.21 15:05:27] rocco: waiting, bought
+[28.10.21 15:15:28] rocco: see, shit
+[28.10.21 15:15:32] rocco: torus speed is down
+[28.10.21 15:16:20] rocco: now
+[28.10.21 15:16:31] rocco: run better in screenshot
+[28.10.21 15:16:47] rocco: it worked like that for several days and the speed did not drop
+[28.10.21 15:26:42] rocco: yeah, I was trying to optimize
+[28.10.21 15:27:02] rocco: speed seems to be improved
+[28.10.21 16:17:43] rocco: got it, doing it now
+[28.10.21 16:27:45] rocco: ``
+ok: [91.92.109.14]
+ok: [87.120.254.178]
+ok: [31.13.195.129]
+ok: [87.120.37.183]
+ok: [87.120.254.6]
+ok: [87.120.254.51]
+ok: [87.121.52.230]
+ok: [87.120.37.77]
+ok: [87.120.8.245]
+ok: [87.120.254.234]
+ok: [87.121.52.247]
+ok: [87.120.254.158]
+```
+[28.10.21 17:06] rocco: okay, I'll redo it.
+[28.10.21 21 17:17:26] rocco: only in the morning, I have an hour of work to finish
+[28.10.21 17:17:41] rocco: I'll do each one with a different certificate
+[28.10.21 17:17:48] rocco: maybe I'll make it today
+[28.10.21 17:17:58] rocco: but those addresses will
+[28.10.21 17:18:05] rocco: or today?
+[28.10.21 17:18:51] rocco: okay, I'll run it in the morning.
+[28.10.21 17:31:23] rocco: it's the admin bro
+https://x6rciduomtjt25xigz7onkgxmusuwwuxqvidjkcramwg3lb5vvpsm7ad.onion:12233/
+[28.10.21 17:31:46] rocco: file won't find it, or no rights set for this port
+[28.10.21 17:32:02] rocco: pinging eliot
+[28.10.21 17:32:10] rocco: no, not yet
+[28.10.21 17:32:59] rocco: ``
+185.64.104.141
+```
+[28.10.21 17:45:58] rocco: yes
+[28.10.21 17:46:31] rocco: there is a location in the newjinks under that port, and a certain directory which is referenced
+[28.10.21 17:47:13] rocco: this error occurs when there is no referenced file or directory, or when directory is closed without rights
+[28.10.21 17:47:40] rocco: you have to ping alpha or eliot
+[28.10.21 17:55:41] rocco: sorry, it must be closed, I'll open it now
+[28.10.21 17:55:49] rocco: it's coming through procla via tor
+[28.10.21 17:57:52] rocco: it's open
+443
+80
+12233
+[28.10.21 17:59:13] rocco: well, I wrote the reason above
+[28.10.21 17:59:20] rocco: not fine tuned
+[28.10.21 17:59:37] rocco: ``
+ there is a location in the nginx under the port and a specific directory to which you are referring
+this error occurs when there is no referenced file or directory or when the directory is closed without rights
+it's alpha or eliot ping
+
+```
+[28.10.21 18:06:03] rocco: of course I will
+[28.10.21 18:06:19] rocco: and server access will be by lockdown, not by password
+[28.10.21 18:06:24] rocco: ssh
+[28.10.21 18:06:41] rocco: no 10 sec close
+[29.10.21 07:26:59] rocco: hi, the ssh certificates have been changed
+[29.10.21 07:27:45] rocco: yes
+[29.10.21 07:27:57] rocco: I checked the pair, everything works
+[29.10.21 07:29:40] rocco: I'll check it now.
+[29.10.21 07:30:25] rocco: right, didn't change onion, sec, I'll fix it
+[29.10.21 07:33:29] rocco: check
+[29.10.21 08:20:30] rocco: check
+[29.10.21 09:01:34] rocco: everything okay, bro?
+[29.10.21 09:01:42] rocco: before I forget
+[29.10.21 09:02:34] rocco: shut down ports?
+[29.10.21 14:53:38] rocco: which ones did you give today?
+[29.10.21 14:55:02] rocco: I don't put a monitor on the procs
+[29.10.21 14:55:08] rocco: but I can certainly
+[29.10.21 14:55:28] rocco: it won't take long
+[29.10.21 14:56:15] rocco: I have scripts for aprometheus and zabix, I just never bet on them, because they change often, but if you need to search you can roll them all
+[29.10.21 14:56:41] rocco: let me do it, I'll send you a report at the weekend
+[29.10.21 14:57:32] rocco: okay, with logs, I'm getting everything set up, I think, on Monday
+[29.10.21 15:13:11] rocco: just like he said, everything's done
+[29.10.21 15:13:19] rocco: text him now, he's here
+[01.11.21 08:02:28] rocco: hi!
+[01.11.21 08:02:35] rocco: how much?
+[01.11.21 08:02:57] rocco: do you get it from hosters or from windows too?
+[01.11.21 08:03:35] rocco: yeah yeah
+[01.11.21 09:26:16] rocco: get it up
+[01.11.21 10:35:37] rocco: ``
+ok: [91.92.109.138]
+ok: [87.120.8.109]
+ok: [91.92.109.136]
+ok: [31.13.195.108]
+ok: [31.13.195.32]
+ok: [31.13.195.13]
+ok: [31.13.195.152]
+ok: [87.120.254.111]
+```
+[01.11.21 11:29:39] rocco: I have to leave urgently tomorrow, but I'll be in touch yesterday
+[01.11.21 11:30:00] rocco: Gator will do anything
+[01.11.21 11:30:00] rocco: I'll explain everything to him
+[01.11.21 11:30:06] rocco: but he already did
+[01.11.21 14:38:05] rocco: no bro, I'll run the block
+[01.11.21 14:38:08] rocco: forgot
+[01.11.21 14:39:19] rocco: tor is fucking working today
+[01.11.21 14:39:28] rocco: I already restarted everything 20 times
+[01.11.21 14:39:36] rocco: I'll check the torus again
+[01.11.21 14:40:05] rocco: what other addresses did I give you not today?
+[01.11.21 14:40:09] rocco: send me the
+[01.11.21 14:40:20] rocco: I got confused
+[01.11.21 14:40:37] rocco: for new
+[01.11.21 14:40:55] rocco: found it
+[01.11.21 14:44:32] rocco: yes yes, found it
+[01.11.21 14:44:41] rocco: running it now
+[01.11.21 16:07:15] rocco: gave scripts to Gator
+[01.11.21 16:07:27] rocco: if anything he will pick up
+[01.11.21 16:07:29] rocco: well, he will
+[01.11.21 16:08:02] rocco: there's everything and filter and tor check in the script
+[01.11.21 16:09:31] rocco: he ran those too
+[01.11.21 16:09:57] rocco: I just upgraded scripts, and forgot to turn on filter with tor check
+[03.11.21 09:24:14] rocco: hi, yeah
+[03.11.21 09:26:00] rocco: check
+[03.11.21 09:28:01] rocco: probably, but last check was 2 min ago and it showed good
+[03.11.21 09:28:44] rocco: yeah it's for ed?
+[03.11.21 09:29:13] rocco: ok
+[03.11.21 11:01:27] rocco: and old white domains work, you can't use them?
+[03.11.21 11:02:28] rocco: I think all addresses work
+[03.11.21 11:02:54] rocco: we haven't used them yet
+[03.11.21 11:03:04] rocco: check everything, let's leave it
+[03.11.21 11:03:54] rocco: ah just trade them in, got it
+[03.11.21 11:04:10] rocco: I'm on it.
+[03.11.21 12:41:04] rocco: I'm on it.
+[03.11.21 12:41:10] rocco: register domains
+[03.11.21 12:41:18] rocco: I'll fix bazaars now
+[03.11.21 12:57:30] rocco: ok: [87.120.8.61]
+ok: [87.120.37.37]
+ok: [87.121.52.187]
+ok: [87.121.52.190]
+[03.11.21 12:57:35] rocco: bazarbai
+[03.11.21 13:15:26] rocco: ``
+sherekol.com
+swapdos.com
+```
+[03.11.21 13:53:56] rocco: ah yes I forgot that for the yusa edit
+[03.11.21 13:54:07] rocco: So it's for him too?
+[03.11.21 13:54:14] rocco: 16 pcs.
+[03.11.21 13:54:22] rocco: all with white?
+[03.11.21 13:58:38] rocco: maybe today
+[03.11.21 14:25:40] rocco: give it to me
+[03.11.21 14:29:07] rocco: everything is due
+[03.11.21 14:29:52] rocco: I'll run it through
+[03.11.21 16:11:36] rocco: Yeah, I'll check it out
+[03.11.21 16:12:57] rocco: yeah it's good to go today
+[03.11.21 16:16:47] rocco: yeah
+[04.11.21 11:23:31] rocco: bro hello!
+[04.11.21 11:23:39] rocco: did gator make you pads?
+[04.11.21 11:24:38] rocco: I'll check everything.
+[04.11.21 11:28:34] rocco: bro give me the link with the codes to the main admin
+[04.11.21 11:34:18] rocco: x6 no online?
+[04.11.21 11:36:58] rocco: Nope
+[04.11.21 11:49:04] rocco: what's the link?
+[04.11.21 11:49:45] rocco: And throw all the procs to the new one
+[04.11.21 11:56:23] rocco: okay, that's fine.
+[04.11.21 11:56:42] rocco: I'll make sure it doesn't happen
+[04.11.21 11:56:52] rocco: the torus isn't working right.
+[04.11.21 12:01:20] rocco: did redo not work again?
+[04.11.21 15:38:54] rocco: till 26.11
+[05.11.21 06:44:43] rocco: bro hello! i made a graphan njinx logs, made on the center pad, it collects info from all pads, but you can also pick up on specific pads
+[05.11.21 06:44:59] rocco: to see, connect via sox
+[05.11.21 06:45:42] rocco: ``
+45.144.30.62
+7081
+khan
+moe7kooBoh
+```
+[05.11.21 06:45:59] rocco: ``
+http://195.123.219.41:3000/d/Nz6kKgtGj/grafana-loki-dashboard-for-nginx-service-mesh?orgId=1&var-datasource=Loki&var-label_name=job&var-label_value=nginxlogs&var-job=nginxlogs&var-instance=All&from=now-15m&to=now&var-Filters=geoip_country_code%7C%3D%7CNL
+```
+[05.11.21 06:46:44] rocco: ``
+admin
+Ieh3oovoihi5iteivofaiWuv3ShirieCeich9Elu
+```
+[05.11.21 06:48:36] rocco: ``this prefix goes to status 500
+[05.11.21 06:48:45] rocco: ``
+/public/static/handler
+```
+[05.11.21 06:49:44] rocco: but no, you'll see
+[05.11.21 06:55:09] rocco: yes, I will, because I now put all caps on the new main one through the center gasket, there should be less glitches and any admin can if what reboot the center gasket, or make a new one and put caps through it
+[05.11.21 06:55:57] rocco: our end caps go ip to the center of the pad, only the center of the pad already broadcasts to the server via tor
+[05.11.21 06:56:43] rocco: and I'll set up a backup
+[05.11.21 07:49:54] rocco: what do you mean, backup?
+[05.11.21 07:52:07] rocco: no I'll set up a dedication, I'll take backups from all my services and it will back up to our centralized backup, just in case I'll double transfer it to two places and then it won't backup at all like last time, I'll divert backups
+[05.11.21 07:52:37] rocco: what's in the git let it be in the git
+[05.11.21 07:54:47] rocco: ah
+[05.11.21 07:54:56] rocco: okay
+[05.11.21 07:55:24] rocco: i wanted to make a book on protections today, how to get it up and running quickly
+[05.11.21 07:55:29] rocco: if I have time
+[05.11.21 07:56:14] rocco: I need to configure backups, all the rockets, gits, admins, and I can not sleep peacefully when the backups are not configured)
+[05.11.21 07:56:43] rocco: do instructions
+[05.11.21 09:12:37] rocco: bro check, ip pass now?
+[05.11.21 09:24:27] rocco: yeah, I sent it through head procco, headers have to be set up differently
+[05.11.21 12:46:12] rocco: Yeah.
+[05.11.21 12:46:34] rocco: by the way, you can ask Gator to do it
+[05.11.21 13:03:12] rocco: about the profiles, I use several there
+[05.11.21 13:07:31] rocco: two kinds of server for cobalt, and each with a different profile
+1. it's a build with a sert on a white domain, the https listener gets a sert on a letse with a site.com address
+2. it is also an assembly with a server on a white domain, but on the https listener gets a CDN domain of amazon or azur, that is https goes under the name of the CDN domain
+[05.11.21 13:08:00] rocco: so there is a redirect from CDN to cobalt listener
+[05.11.21 13:12:38] rocco: to the server where you bring up timeserver
+[05.11.21 13:13:17] rocco: you set up on the server, do all manipulations, write the listener and it will connect to the server
+[05.11.21 13:13:36] rocco: you can connect to it from any place
+[05.11.21 13:13:58] rocco: bro, come on next week, I'll tell you everything in details
+[05.11.21 13:14:17] rocco: I got stuff to do
+[05.11.21 13:14:27] rocco: just can't get it done
+[05.11.21 13:14:56] rocco: what do you want to optimize?
+[05.11.21 13:15:15] rocco: or just understand the process itself?
+[05.11.21 13:15:29] rocco: hide cobalt traffic?
+[05.11.21 13:15:39] rocco: its weak point
+[05.11.21 13:23:13] rocco: how?
+[05.11.21 13:23:50] rocco: yeah
+[05.11.21 13:24:13] rocco: well, for the bots to run the cob pailodes properly
+[05.11.21 13:24:23] rocco: and the coba didn't stalk
+[05.11.21 13:24:34] rocco: good deal
+[05.11.21 13:25:28] rocco: that's the problem, you should analyze coba traffic, and see what's scamming, and take it out of the original load generation
+[05.11.21 14:27:28] rocco: begemot
+[05.11.21 14:28:51] rocco: Geez, he's a little more responsible, I guess.
+[05.11.21 14:30:14] rocco: how much did you order?
+[05.11.21 14:30:17] rocco: regular?
+[05.11.21 14:31:49] rocco: Oh, man.
+[05.11.21 14:32:22] rocco: okay, we'll wait.
+[08.11.21 08:12:25] rocco: hey, which one?
+[08.11.21 08:14:56] rocco: Oh, man, I was watching the old one.
+[08.11.21 08:14:59] rocco: now sec
+[08.11.21 08:20:05] rocco: checked the old one this morning, thought everything was online
+[08.11.21 08:20:12] rocco: mixed up
+[09.11.21 07:44:19] rocco: Hey bro, send me the proc address for Target Admin
+[09.11.21 07:45:06] rocco: yeah, I got it
+[09.11.21 07:45:21] rocco: gator does
+[09.11.21 07:51:29] rocco: they are on white domains, right?
+[09.11.21 07:51:49] rocco: we should also do it via central procco
+[09.11.21 07:55:37] rocco: they are all on domains?
+[09.11.21 07:57:52] rocco: got it
+[09.11.21 07:58:10] rocco: give me the domains
+[09.11.21 08:00:01] rocco: just a list
+[09.11.21 08:00:33] rocco: yes, I do, I want to check
+[09.11.21 08:00:52] rocco: I want to switch everyone through the center procco
+[09.11.21 08:31:14] rocco: yeah sec
+[09.11.21 08:35:19] rocco: check all addresses
+[09.11.21 08:59:19] rocco: yeah gator says abuses
+[09.11.21 09:50:40] rocco: here bro, who's online, who got busted
+```
+FAIL targ_proto2_prokls kartyabm.com
+FAIL targ_proto2_prokls jorpaf.com
+FAIL targ_proto2_prokls gahsdagf.com
+FAIL targ_proto2_prokls toyboaramn.com
+FAIL targ_proto2_prokls dfgerta.com
+FAIL targ_proto2_prokls hastrama.com
+FAIL targ_proto2_prokls afjdsasd.com
+FAIL targ_proto2_prokls jasdefag.com
+FAIL targ_proto2_prokls holygomar.com
+FAIL targ_proto2_prokls jasdfoa.com
+sherekol.com:443
+FAIL targ_proto2_prokls karatyvac.com
+FAIL targ_proto2_prokls hadfra.com
+swapdos.com:443
+FAIL targ_proto2_prokls jorast.com
+FAIL targ_proto2_prokls kortynab.com
+holydolyna.com:443
+jhabv.com:443
+koratyma.com:443
+korayaba.com:443
+kormala.com:443
+nanbaora.com:443
+romotara.com:443
+zxonazxc.com:443
+FAIL targ_proto2_prokls gakosafd.com
+FAIL targ_proto2_prokls gasdfasdf.com
+falomana.com:443
+FAIL targ_proto2_prokls holarty.com
+jaratymanr.com:443
+jptymana.com:443
+lolalvatan.com:443
+naratymena.com:443
+asdlfkasklf.com:443
+aslflasf.com:443
+hansdfps.com:443
+jaortamnana.com:443
+jarghan.com:443
+joramanmnb.com:443
+joramanmnbman.com:443
+kartynab.com:443
+kjraeiba.com:443
+koralaba.com:443
+koratanaba.com:443
+maratanab.com:443
+olagamanas.com:443
+qwasdfp.com:443
+tyuionma.com:443
+
+```
+[09.11.21 09:56:49] rocco: can the domains that are locked, switch to a direct ip without a domain?
+[09.11.21 09:59:16] rocco: now gator will bring up new ones
+[09.11.21 09:59:28] rocco: that's what I figured
+[09.11.21 09:59:51] rocco: same way it works for me, if domain gets busted, nothing comes
+[09.11.21 11:39:38] rocco: ok
+[09.11.21 13:48:35] rocco: there was a problem with the purchase, mitzi disappeared yesterday with the purchase, had to buy everything today
+[10.11.21 07:50:09] rocco: bro hi, can you send me a list of all the pads on the main
+[10.11.21 07:50:24] rocco: I want to check and check in
+[10.11.21 07:52:18] rocco: ah
+[10.11.21 07:52:42] rocco: so there are a lot of them and you just add them and not kick them out?
+[10.11.21 07:53:19] rocco: let's bazaar the main one
+[10.11.21 07:53:44] rocco: I don't know the last 15 pads to have a check
+[10.11.21 07:54:34] rocco: yeah
+[10.11.21 07:54:37] rocco: the target has
+[11.11.21 13:43:16] rocco: okay.
+[11.11.21 13:43:22] rocco: hi.
+[11.11.21 13:47:22] rocco: added
+[12.11.21 09:00:34] rocco: hi, I don't own farms anymore gator and mitzi to them better
+[12.11.21 09:47:22] rocco: bugtracker rules
+[12.11.21 13:57:41] rocco: give it to gator
+[12.11.21 13:57:51] rocco: he will make it fast
+[12.11.21 13:58:30] rocco: how much?
+[12.11.21 13:58:53] rocco: okay.
+[12.11.21 14:01:03] rocco: translate nano addresses?
+[12.11.21 14:01:23] rocco: yes
+[12.11.21 14:01:36] rocco: give me the ip
+[12.11.21 14:15:08] rocco: i think so, gator does it, i gave him a account where domains are more alive, it takes 5 minutes to flash the ansiblom
+[12.11.21 14:25:17] rocco: those domains were registered at bitcoinsdomain, they put an abuse there for the slightest suspicion, I left there
+[12.11.21 14:25:49] rocco: now gator will registrate on another one where I register kobas while everyone is alive
+[12.11.21 14:26:41] rocco: Still fighting us on all fronts, it looks like the americans got them all
+[12.11.21 14:27:02] rocco: kobos are pounding, abuses are hanging up
+[12.11.21 14:27:21] rocco: Same with everything else
+[11/15/21/12:41:17] rocco: Hey, yeah.
+[11/16/21 08:29:05] rocco: Hi!
+[16.11.21 08:32:04] rocco: It's probably easier for you to look
+[16.11.21 08:32:06] rocco: https://www.cobaltstrike.com/training
+[16.11.21 08:34:18] rocco:
+[16.11.21 08:34:51] rocco: here is the manual in russian
+[22.11.21 08:16:13] rocco: Hey, okay.
+[22.11.21 10:14:25] rocco: 45.61.136.243
+[11/23/221 08:34:02] rocco: hi, let me see.
+[11/23/221 10:05:22] rocco: I'm on my way, bro.
+[11/23/221 10:09:47] rocco: I fixed it, but there's something wrong with the output
+[25.11.21 15:44:16] collin: Hi!
+[25.11.21 15:44:24] collin: deadlines to pay for admins uk
+[25.11.21 15:44:25] collin: BK new main - 26.11
+BK test - 28.11
+[25.11.21 15:44:41] collin: Will you pay or Gator can?
+[25.11.21 15:58:39] rocco: Hi, there's Gator, tell him
+[25.11.21 15:58:57] collin: I did, he said Demetrius will pay
+[26.11.21 07:31:40] collin: Hi!
+[26.11.21 07:31:51] collin: gaskets on the main new one:
+[26.11.21 07:31:58] collin: ``
+162.33.177.90 162.33.179.144 162.33.179.16 162.33.179.213
+162.33.178.228 162.33.178.12 162.33.179.245 162.33.178.129
+162.33.179.171 162.33.177.53
+162.33.179.53 162.33.177.88 162.33.178.147 45.61.136.128
+162.33.177.219 162.33.178.139 162.33.178.243 162.33.179.71
+162.33.178.153 162.33.179.240 162.33.179.96 162.33.179.99
+192.155.90.240 162.33.179.111 162.33.179.217 45.61.136.110
+162.33.177.123 162.33.178.65 162.33.179.12 162.33.179.253
+162.33.177.119 162.33.179.11 162.33.179.176 162.33.179.85
+162.33.177.120 162.33.178.128 162.33.179.201 162.33.179.206
+162.33.177.25 162.33.178.119 162.33.178.121 162.33.178.246
+162.33.177.74 162.33.178.137 162.33.178.34 162.33.179.46
+87.120.37.122 87.120.8.170 87.120.8.171 87.120.8.177
+87.120.254.96 87.120.8.101 87.120.8.112 87.120.8.241
+31.13.195.32 31.13.195.13 31.13.195.152 87.120.254.111
+87.120.254.252 87.121.52.173 91.92.109.185 91.92.109.189
+91.92.109.14 87.120.254.178 31.13.195.129 87.120.37.183
+87.120.254.6 87.120.254.51 87.121.52.230 87.120.37.77
+```
+[11/26/221 07:48:23] rocco: Yeah. Okay.
+[26.11.21 08:07:07] rocco: I did, but half the pads are dead
+[26.11.21 08:09:32] rocco: those are the live ones.
+```
+changed: [162.33.178.228]
+changed: [162.33.178.129]
+changed: [162.33.178.12]
+changed: [87.120.254.96]
+changed: [162.33.179.111]
+changed: [45.61.136.110]
+changed: [87.120.37.122]
+changed: [87.120.8.112]
+changed: [162.33.179.245]
+changed: [31.13.195.152]
+changed: [87.120.8.241]
+changed: [87.120.8.170]
+changed: [87.120.8.177]
+changed: [31.13.195.13]
+changed: [192.155.90.240]
+changed: [87.120.8.101]
+changed: [31.13.195.32]
+changed: [162.33.179.217]
+changed: [87.121.52.173]
+changed: [87.120.254.252]
+changed: [87.120.8.171]
+changed: [91.92.109.185]
+changed: [87.120.37.183]
+changed: [87.120.254.111]
+changed: [91.92.109.189]
+changed: [87.120.37.77]
+changed: [31.13.195.129]
+changed: [87.120.254.6]
+changed: [87.120.254.178]
+changed: [87.120.254.51]
+changed: [91.92.109.14]
+changed: [87.121.52.230]
+```
+[26.11.21 08:10:01] rocco: those are the dead ones
+```
+162.33.177.119 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.177.120 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.177.123 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.177.219 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.177.25 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.177.53 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.177.74 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.177.88 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.177.90 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.178.119 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+```
+[11/26/221 08:10:24] rocco: ```
+162.33.178.121 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.178.128 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.178.137 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.178.139 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.178.147 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.178.153 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored
+```
+[11/26/221 08:10:40] rocco: ``
+162.33.179.253 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.179.46 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.179.53 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.179.71 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.179.85 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.179.96 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.179.99 : ok=0 changed=0 unreachable=1
+```
+[11/26/221 08:10:59] rocco: ``
+162.33.179.12 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.179.144 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.179.16 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.179.171 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.179.176 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.179.201 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.179.206 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+162.33.179.213 : ok=0 changed=0 unreachable=1 failed=0 skipped=0 rescued=0 ignored=0
+```
+[26.11.21 08:27:48] collin: for target-admins now give a list?
+[26.11.21 08:28:25] rocco: yes
+[26.11.21 08:33:41] collin: for targeting:
+[26.11.21 08:33:44] collin: ``
+bartholaraka.com.
+45.32.131.223
+karanabaz.com
+45.32.132.182
+lertyqa.com
+140.82.50.50
+nataraman.com
+192.153.57.105
+
+portymara.com
+162.33.177.212
+ramanra.com
+45.77.189.106
+koltygo.com
+45.61.136.221
+koralmana.com
+162.33.178.105
+
+87.121.52.190
+87.121.52.187
+87.120.37.37
+87.120.8.61
+```
+[26.11.21 09:06:18] collin: bro there gator can do procles to the new main, given today's changes nothing has changed in his script?
+[26.11.21 09:06:54] rocco: I'll tell him what to change
+[26.11.21 09:09:40] collin: need a set for bazaars urgently 4 pieces, because the bazaars have not raised addresses
+[26.11.21 09:09:43] collin: he made a package and not working
+[26.11.21 09:09:53] collin: maybe you do it yourself
+[26.11.21 09:13:53] rocco: he will redo it now
+[26.11.21 09:25:50] collin: what about Target?
+[26.11.21 09:26:14] rocco: transferred
+[26.11.21 09:28:05] collin: I see the bazaars are alive
+[29.11.21 09:58:46] rocco: hey bro
+[29.11.21 09:58:57] rocco: what's your address for 65?
+[29.11.21 09:59:49] collin: hi!
+[29.11.21 09:59:58] collin: need proc for 65 admins for tests
+[29.11.21 10:00:06] collin: the one that was lying
+[29.11.21 12:21:12] collin: Bro new admin core is down, web interface can't open through onion "Server not found"
+[29.11.21 12:21:23] collin: all addresses are 502 response code, today's and previous (those were working in the morning)
+[29.11.21 12:21:27] collin: fix it please
+[29.11.21 12:21:34] rocco: ok
+[29.11.21 12:22:19] rocco: everything opens without brakes
+[29.11.21 12:22:31] rocco: no
+[29.11.21 12:22:33] rocco: not
+[29.11.21 12:28:58] rocco: try it
+[29.11.21 12:32:43] collin: it worked
+[01.12.21 07:23:56] collin: hi!
+[01.12.21 07:24:12] collin: Bro I need a procracker for 65th admin
+[01.12.21 07:24:19] collin: who will do it?
+[01.12.21 07:24:24] collin: I wrote to you and Gator, 3 days waiting
+[01.12.21 07:28:22] rocco: Oh bro, I forgot, sorry
+[01.12.21 07:28:25] rocco: hi
+[01.12.21 07:28:28] rocco: maybe I did.
+[01.12.21 07:28:34] rocco: I'll make a new one.
+[01.12.21 07:29:48] collin: target-admins payment deadline approaches 04.12
+[01.12.21 07:29:56] collin: do you pay, or who to write it to?
+[01.12.21 07:30:33] rocco: i paid there
+[01.12.21 07:30:43] rocco: it will automatically last another month
+[01.12.21 07:30:50] collin: till 04.01.22?
+[01.12.21 07:30:59] rocco: well, it's like this
+[01.12.21 07:31:02] collin: okay.
+[01.12.21 07:46:13] rocco: https://91.228.218.199/
+[01.12.21 08:24:27] collin: +
+[02.12.21 08:25:10] collin: hi!
+[02.12.21 08:25:37] collin: the last proc for 65th admin does not work already(
+[02.12.21 08:25:42] collin: can you fix it or make a new one?
+[02.12.21 08:25:59] collin: and if possible make it last longer, it's for tests
+[02.12.21 08:26:17] rocco: Hey ok
+[02.12.21 08:51:36] collin: Bro about the anubis
+[02.12.21 08:52:27] collin: Silver wrote about some database, said you have it
+[02.12.21 08:52:37] collin: ``
+dudes just have a huge stop-list of ip-addresses and mac-addresses of AV-machines )))
+```
+[02.12.21 08:52:55] collin: You can give it to me
+[02.12.21 09:04:39] rocco: yeah, I gotta get it together now
+[02.12.21 09:38:48] rocco:
+[02.12.21 09:39:00] rocco: I'll do another poppy.
+[02.12.21 09:39:45] rocco: ``
+003048 Super Micro Computer
+002590 Super Micro Computer
+000c29 VMware
+005056 VMware
+080027 VBOX
+001c42 Parallells
+000f4b Virtual Iron 4
+00163e Xen
+0007e9e4ce4d adm_dup
+1866da123456 adm_dup
+004f497e8134 adm_dup
+00065b66666 adm_dup
+00059a3c7a00 By Admin
+02004c4f4f50 By Admin
+00e04c13861b By Admin
+0492267c8af8 By Admin
+b02628dd51b3 By Admin
+00b052465c67 By Admin
+00037f1e69a6 By Admin
+bc97e1695361 By Admin
+0005b53fbed7 By Admin
+00037f6a3ecb By Admin
+b026288f3097 By Admin
+00037f31d7fa By Admin
+00e04c24f0f1 By Admin
+004f497cd36a By Admin
+002345678902 By Admin
+```
+[02.12.21 09:41:47] rocco:
+[02.12.21 09:45:22] collin: these are hashes of what, how are they calculated?
+[02.12.21 09:55:54] rocco: I don't know, I got it from admin
+[02.12.21 09:56:47] collin: and mac-addresses only these 28 values?
+[02.12.21 13:26:49] collin: Bro, we got 8 addresses dropped off at once, from different packets
+[02.12.21 13:27:14] collin: how do you make packets for each individual account or are there changes?
+[02.12.21 13:27:26] collin: one package (for one upload) from one ac?
+[02.12.21 13:29:25] rocco: yes, he wrote a gator, all abuzz in a terrible way, demeter will redo
+[02.12.21 13:32:01] collin: if you do one batch from two different aces, two pieces per ac, will it improve the situation as you think?
+[02.12.21 13:32:19] collin: or go back to the scheme with two different providers to pack
+[02.12.21 15:41:06] collin: Bro need a new main admin, urgently on the bazaars to change
+[02.12.21 15:41:17] collin: assist Gator or do it yourself
+[02.12.21 15:41:32] collin: he wrote after 10 minutes - it was almost an hour ago, now he says some problems
+[02.12.21 15:41:50] collin: you need to raise bots if there are any left
+[02.12.21 15:41:53] collin: we lost online over 2 hours ago
+[02.12.21 15:42:01] collin: we need addresses
+[02.12.21 15:42:39] rocco: do you have vpski?
+[02.12.21 15:42:47] collin: no
+[02.12.21 15:43:08] rocco: I'll find out.
+[02.12.21 15:43:18] collin: I haven't ordered recently because they wanted to take from different providers in different regions
+[02.12.21 15:43:34] collin: those were half dirty all the time they gave me
+[02.12.21 15:43:44] rocco: how much do you need?
+[02.12.21 15:43:47] rocco: 4?
+[02.12.21 15:43:58] collin: 4
+[02.12.21 15:44:03] rocco: okay.
+[02.12.21 15:44:11] collin: At least two to start with.
+[02.12.21 15:44:25] rocco: okay.
+[02.12.21 15:44:57] rocco: this is x6, right?
+[02.12.21 15:45:07] rocco: I'm on it.
+[02.12.21 15:45:16] rocco: just don't know how long they'll last
+[02.12.21 15:46:12] collin: yeah, for her
+[02.12.21 15:51:43] rocco: ``
+ok: [23.160.193.91]
+ok: [212.8.251.19]
+
+```
+[02.12.21 15:51:48] rocco: I'll do two more
+[02.12.21 15:51:55] rocco: two dead
+[02.12.21 16:02:47] collin: 23.160.193.91 very dirty, it's no good((
+[02.12.21 16:03:53] collin: 212.8.251.19 - that's ok, I'm registering it now
+[02.12.21 16:06:54] rocco: maybe gator will throw some more
+[02.12.21 16:06:54] rocco: ``
+ok: [85.237.217.241]
+ok: [45.138.51.223]
+```
+[02.12.21 16:08:14] collin: 85.237.217.241 - 502 not working
+[02.12.21 16:09:11] collin: 45.138.51.223 - okay, got it.
+[02.12.21 16:11:15] collin: Gator says he gave you the baton
+[02.12.21 16:11:29] collin: `well I bought and gave it to demet. and said he had to give it to you by 10 tomorrow. and on the bazaar rocco said he was making you
+[03.12.21 10:02:02] collin: Hi!
+[03.12.21 10:02:23] rocco: Hey.
+[03.12.21 10:02:27] collin: ``
+[18:49:33] <green> there is also ban ip there 500 pages
+```
+[03.12.21 10:02:33] collin: send me this list too
+[03.12.21 10:02:56] rocco: it's his every page to copy, I'll do it in a day
+[03.12.21 10:03:16] collin: manually each of 500?
+[03.12.21 10:03:32] collin: you probably need to query the whole database
+[03.12.21 10:03:33] rocco: yes
+[03.12.21 10:03:50] rocco: i think so, but i have no access, and i don't think they will give it to me
+[03.12.21 10:04:16] collin: is their admin panel, not ours with a copy?
+[03.12.21 10:04:25] collin: Can you ask their admins?
+[03.12.21 10:07:27] collin: are hashes also from table, from web interface?
+[03.12.21 10:07:53] collin: there are bare hashes, no descriptions and additional fields to them - what attributes what hash?
+[03.12.21 10:37:39] rocco: https://198.252.108.68/
+[03.12.21 10:37:48] rocco: this is a proc to the test one
+[03.12.21 11:14:57] collin: +
+[06.12.21 15:27:13] collin: hi bro!
+[06.12.21 15:27:30] collin: is it possible to make abusive addresses for BC proclets?
+[06.12.21 15:27:47] collin: lately BLNWX procs mostly, they block only so
+[06.12.21 15:28:04] rocco: Hi.
+[06.12.21 15:28:19] rocco: I'll have to look
+[06.12.21 15:28:35] rocco: They've uploaded one hoster from Atipa, they don't block coba there
+[06.12.21 15:28:43] rocco: maybe try there
+[06.12.21 15:35:29] rocco: demeter will take it there
+[07.12.21 09:49:11] collin: hi!
+[07.12.21 09:49:32] collin: Bro there's a hitch with the addresses, Demeter is doing from the new wire - says times slower flashing
+[07.12.21 09:49:54] collin: Any way to optimize the process, at this rate we will not have time to work all orders
+[07.12.21 09:57:33] rocco: hi
+[07.12.21 10:03:10] rocco: he's flashing them through torus, so it's slow
+[07.12.21 10:04:48] collin: How else can you, directly? Or through torus better?
+[07.12.21 10:05:27] rocco: better through tor, but you can use vpn
+[08.12.21 09:17:35] rocco: bro hello, what do you use for emercoin?
+[08.12.21 09:37:00] collin: hi!
+[08.12.21 09:37:12] collin: it's been a while since I last funded via some crypto-market
+[08.12.21 10:09:24] rocco: and how do you register domains?
+[08.12.21 10:11:29] collin: via Emercoin Core
+[08.12.21 10:11:34] collin: I once sent you instructions
+[08.12.21 10:11:36] collin: no left?
+[08.12.21 10:12:05] rocco: I still have it.
+[08.12.21 10:12:13] rocco: that's how to fill up your wallet
+[08.12.21 10:12:17] rocco: emc
+[08.12.21 10:12:26] rocco: how do you register?
+[08.12.21 10:12:29] collin: I did it once a year and a half ago
+[08.12.21 10:12:39] rocco: aah!
+[08.12.21 10:12:42] collin: one mint lasts over a year
+[08.12.21 10:12:51] collin: there was a binance exchange if I'm not mistaken
+[08.12.21 10:13:01] collin: then they changed the rules and kicked me out
+[08.12.21 10:16:03] rocco: maybe you can get me 4 domains
+[08.12.21 10:16:11] rocco: or I'll fill up
+[08.12.21 10:16:25] rocco: at least find out if it works
+[08.12.21 11:02:28] rocco: or you can send me emc from yours?
+[08.12.21 11:06:43] collin: yeah go ahead
+[08.12.21 11:07:12] collin: give me your emc wallet, or the domains/addresses you need
+[08.12.21 11:18:09] rocco: give me a purse
+[08.12.21 11:18:10] rocco: sec
+[08.12.21 11:18:28] rocco: ``
+EVi3MRXyxkTa7PZfkguELiD5gTVn5JUWsV
+```
+[08.12.21 11:18:34] rocco: I have to look into it
+[08.12.21 11:18:49] rocco: I want to run the coba through these domains
+[08.12.21 11:22:48] collin: sent
+[08.12.21 11:22:56] rocco: thanks bro!
+[08.12.21 13:52:08] collin: Bro, about the admin BK Spam
+[08.12.21 13:52:21] collin: Demeter says - you gave the command not to pay anymore
+[08.12.21 13:52:41] collin: is it coordinated with alphonse? they're doing test work on it
+[08.12.21 13:54:41] rocco: i understood that he skipped the payment and it was deleted
+[08.12.21 13:55:36] collin: they are working with ryan on it as far as I know
+[08.12.21 13:56:07] collin: I was reminding Demeter all last week that it's time to pay, and today he says he's taken the payment off
+[08.12.21 13:56:30] collin: if everything is agreed with people - ok of course, if not - need to correct
+[08.12.21 13:56:39] rocco: I have to back it up
+[12/13/21 08:33:58] collin: hi!
+[12/13/21 08:34:13] collin: make an address for the main admin panel
+[13.12.21 08:34:31] collin: 2 sets of 4, total 8 pcs.
+[13.12.21 08:34:39] collin: no Demeter and Gator
+[12/13/21 08:50:09] rocco: hi ok
+[12/13/21 08:50:21] rocco: 15 minutes to go
+[12/13/21 08:51:33] collin: Bro, I need three sets.
+[13.12.21 08:51:45] collin: 3 sets of 4.  - 12 addresses in all
+[13.12.21 09:21:06] rocco: okay.
+[13.12.21 09:21:42] rocco: Where the hell did they go, I thought I paid them for the pads
+[13.12.21 09:25:38] collin: I have in reserve VPS, but only 6 units
+[13.12.21 09:25:40] collin: I can give you
+[13.12.21 09:25:58] rocco: go ahead
+[12/13/21 09:28:01] collin: ``
+root 194.29.101.118 H9MG3z195apuc5RhLK USA D10
+root 94.140.113.0 IJsqJr7lADzF43F LV D10
+root 103.124.106.174 34fhjd$gEN3rE5ff USA D10
+root 5.196.196.251 34fhjd$gEN3rE5ff FR D10
+root 5.181.80.210 34fhjd$gEN3rE5ff USA D10
+root 5.181.80.211 34fhjd$gEN3rE5ff USA D10
+```
+[12/13/21 09:37:44] rocco: ok
+[12/13/21 10:39:56] collin: How's it going?
+[12/13/21 10:40:02] collin: when's the first set approximately?
+[12/13/21 10:52:49] rocco: some fucked-up vpbs
+[12/13/21 11:10:01] collin: Which ones are mine?
+[13.12.21 11:10:18] collin: What should be changed in them, I'll specify in the future when ordering
+[13.12.21 11:13:01] rocco: yeah dunno, kakiete problems with updates and with the installation of software
+[12/13/221 11:13:09] rocco: sometimes it happens.
+[12/13/221 11:13:30] rocco: have to manually tester each one
+[13.12.21 11:14:01] rocco: I'll get the bros together, pick up the good ones
+[13.12.21 11:14:20] rocco: where the fuck did gator and demetrus go?
+[13.12.21 11:14:44] rocco: they're needed for another project too
+[12/13/221 11:16:39] collin: don't take BLNWX, they get abused faster than we can put them to work
+[13.12.21 11:28:04] rocco: ``
+ok: [94.140.113.0]
+ok: [194.29.101.118]
+ok: [103.124.106.174]
+```
+[13.12.21 11:28:21] rocco: three are fine so far, I'll build more
+[12/13/21/12/21 12:19:25] collin: Bro, any movement?
+[13.12.21 12:19:32] collin: at least 3 more, second set to go
+[12/13/21/221 12:26:58] rocco: All dead, looking for
+[12/13/21/12/221 12:38:23] rocco: ``
+ok: [185.183.98.39]
+ok: [194.15.112.35]
+ok: [94.140.112.185]
+ok: [147.189.143.13]
+```
+[12/13/21 12:55:59] collin: +.
+[12/13/21 13:02:01] rocco: ok: [45.148.123.47]
+[12/13/21 15:13:00] collin: Bro very unstable today's procs
+[12/13/21 15:13:08] collin: torus hangs regularly
+[12/13/21 15:13:13] collin: anything you can do to improve it?
+[12/13/221 15:39:20] collin: BK main (lch5nnzy) admin fee deadline - 12/15/2012
+[12/13/221 15:39:37] collin: will demetrius renew it?
+[12/13/221 15:47:58] rocco: is it a target?
+[12/13/21 15:48:30] collin: basic old
+[12/13/21 15:49:16] collin: `185.25.49.159` - that's probably it
+[12/13/221 15:49:20] collin: but not sure about the address
+[12/13/21 15:49:59] rocco: let him pay of course
+[12/14/21 08:19:35] collin: hi!
+[14.12.21 08:19:51] collin: since yesterday multiple bot bounces from addresses `40.94.*.*`
+[14.12.21 08:20:02] collin: in yesterday's addresses, what did you do with blacklists all right?
+[14.12.21 08:35:44] rocco: most likely, I did not run a blacklist, now I will run
+[12/15/221 07:57:18] rocco: hey bro, I ran 185.25.49.159
+[15.12.21 08:00:20] collin: Hello!"
+[15.12.21 08:00:26] collin: saw it thanks!
+[12/16/21 08:00:45] collin: hi!
+[12/16/21 08:01:13] rocco: Hi.
+[12/16/21 08:01:14] collin: About the coba
+[16.12.21 08:01:34] collin: read manual you downloaded, all in all I understand
+[16.12.21 08:03:29] collin: about shellcodes - is it HTTPS Beacon?
+[16.12.21 08:04:10] collin: And do you prepare C2 for them yourself, or customers provide?
+[16.12.21 08:04:45] collin: And another question - do you prepare them for Horse's team?
+[16.12.21 08:06:45] rocco: I do everything.
+[16.12.21 08:06:54] rocco: for horus too
+[16.12.21 08:07:33] rocco: now, server in torus, listener through gasket
+[16.12.21 08:08:04] rocco: like our gaskets for bk
+[16.12.21 08:10:24] collin: c2 are universal, they can be used by any customer, or a specific master server can be flashed there
+[16.12.21 08:10:26] collin: its address?
+[16.12.21 08:10:58] rocco: c2 unique universal is made for the customer
+[16.12.21 08:11:20] rocco: can be used by anyone knowing ip port pass
+[16.12.21 08:11:36] collin: we don't have our own master server?
+[16.12.21 08:12:06] collin: or c2 is connected by a client at once
+[16.12.21 08:12:18] rocco: no bro, they get banned and it's a pity to have such a server for a long time
+[16.12.21 08:12:30] collin: what does listener do?
+[16.12.21 08:12:38] rocco: it's maxed out for a month
+[16.12.21 08:12:56] rocco: listener makes a connection between pailode and server
+[16.12.21 08:13:24] collin: does pyload connect to listener on startup, takes actual c2 address from it?
+[16.12.21 08:13:55] rocco: i.e. it creates a load that knocks on the server, the system sees it as a connection via https protocol with the domain and with the data that you prescribed in the profile
+[16.12.21 08:14:25] rocco: pailod yes it connects with either server ip or domain name
+[16.12.21 08:15:11] collin: in paiload is one address/domain or several?
+[16.12.21 08:15:15] rocco: now it's a pad address, not a server address
+[16.12.21 08:16:08] rocco: you can have multiple listener http https dns, you can create many with only a unique port
+[16.12.21 08:16:33] rocco: and when you create load you specify on which port listener it will knock
+[16.12.21 08:16:55] collin: on https does the paiload knock directly to the server without a proxy, or using a system proxy?
+[16.12.21 08:17:35] collin: or it can be configured when creating a paiload
+[16.12.21 08:18:50] rocco: you can do it when you create a pailode
+[16.12.21 08:19:38] collin: `there can be several listener http https dns` - do you do all of them at once, or some specific one, what customer asks?
+[16.12.21 08:21:04] rocco: no, I do the standard 80 and 443
+[16.12.21 08:41:28] collin: how can you see what paiload knocked on C2 - only with Koba client/main server software?
+[16.12.21 08:41:37] collin: no way to see console command on c2, for example?
+[16.12.21 08:45:07] rocco: there are logs
+[12/16/21 08:45:17] rocco: weblog_443.log
+[16.12.21 08:45:24] rocco: weblog_80.log
+[16.12.21 08:45:43] rocco: you can see there what your test came for
+[16.12.21 09:41:49] collin: Bro make me a x64 paiload coba and c2 test for it
+[16.12.21 09:41:59] collin: with standard settings, like you usually do for Horse
+[16.12.21 09:42:08] collin: not urgent, if possible
+[16.12.21 09:56:46] rocco: ok
+[16.12.21 10:19:15] collin: about procles for BK admins - I have a problem with them
+[16.12.21 10:19:28] collin: during last week I've been waiting very long, at least 3 hours set
+[16.12.21 10:20:04] collin: can you optimize the speed of preparation?
+[16.12.21 10:20:09] collin: no more than one hour to prepare a set
+[16.12.21 10:20:48] rocco: we need more registrations
+[16.12.21 10:20:52] rocco: in advance
+[16.12.21 10:20:54] collin: I order from Demeter - he pays, activates, waits every time
+[16.12.21 10:21:02] rocco: I don't know why they wait
+[16.12.21 10:21:03] collin: that's what I mean.
+[16.12.21 10:21:13] collin: and by order to flash only and give out
+[16.12.21 10:21:25] rocco: Yes, I'll write him.
+[16.12.21 10:27:38] rocco: well, the problem is he's sitting and waiting to activate
+[16.12.21 10:27:56] rocco: I wrote to make 10pcs every day.
+[16.12.21 10:28:06] rocco: will be activated in the morning
+[12/20/221 12:08:44] collin: hey bro!
+[20.12.21 12:08:52] collin: need procs for new main admin BC
+[20.12.21 12:08:55] collin: need another 4 pack addresses
+urgently, at the bazaars are lied
+[20.12.21 12:09:05] collin: something urgent, Demetrius and Gator are not answering
+[22.12.21 14:47:26] collin: Hi!
+[12/22/221 14:47:34] collin: Bro what's up with the addresses, why do they crash so often?
+[22.12.21 14:47:50] collin: can we go back to the old scheme - do the sets in half from two different hosts?
+[22.12.21 14:51:18] rocco: hi, this is not a question for me bro, but for the hosts
+[22.12.21 14:51:29] rocco: also lie on cobs
+[22.12.21 14:53:42] collin: no abusive ones in mind, maybe some new ones?
+[22.12.21 14:54:03] rocco: I'll try some now.
+[22.12.21 14:54:07] rocco: tell me
+[22.12.21 16:54:01] collin: why did it take so long to flash your punches?
+[22.12.21 16:54:08] collin: 4 procs, waiting 2 hours and not ready yet
+[22.12.21 16:54:27] collin: it was faster before, can you optimize the process?
+[22.12.21 17:34:38] collin: Bro here's the situation - I order reserve vps for uk, if necessary give them out for flashing
+[22.12.21 17:34:48] collin: second time I can not flash these vps
+[22.12.21 17:34:57] collin: `Permission denied, please try again. : unreachable"`
+[22.12.21 17:35:03] collin: this is what demetrius has when setting up
+[12/22/221 17:35:23] collin: can you figure out what's wrong - with the setup scripts or with the vpsc?
+[22.12.21 17:35:51] collin: if there is something wrong with cps, you need to specify it, I will specify it when ordering
+[22.12.21 17:35:59] collin: now only for the order I say you need debian 10
+[22.12.21 17:37:19] collin: i just have working vpc-cards, i connect via SSH all ok, here is the picture in the console
+[22.12.21 17:37:23] collin: ``
+login as: root
+root@192.119.93.26's password:
+Linux hwsrv-928570.hostwindsdns.com 4.19.0-17-amd64 #1 SMP Debian 4.19.194-2 (2021-06-21) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+root@hwsrv-928570:~# ^C
+root@hwsrv-928570:~#
+```
+[12/22/221 17:37:53] collin: I need to figure out what's wrong, or I'm ordering them for nothing then
+[22.12.21 17:45:14] rocco: sec
+[22.12.21 17:45:33] rocco: there's a pass on them
+[22.12.21 17:45:47] rocco: flashing
+[22.12.21 17:45:59] collin: does demeter know about it?
+[23.12.21 06:26:48] collin: hi!
+[12/23/221 06:26:56] collin: Make a proclu for 65-admins
+[12/23/221 06:27:07] rocco: Hey.
+[12/23/221 06:27:11] collin: Try my wpc
+[23.12.21 06:27:18] collin: it's dirty, not good for work, for tests it's fine
+[12/23/221 06:27:30] rocco: Go ahead.
+[12/23/221 06:27:45] collin: `root 5.181.80.16 34fhjd$gEN3rE5ff`
+[12/23/221 06:28:00] collin: also check what's wrong with vpc and why they can't flash
+[12/23/221 06:28:35] rocco: about flashing speed, you have to tell Demeter to take some ports and flash them, it takes too long to flash through torus
+[23.12.21 06:28:46] rocco: and change them
+[23.12.21 06:28:59] collin: yesterday it turned out he had another problem - they just wouldn't flash, the process was crashing
+[23.12.21 06:29:06] collin: and not only my reserves too, I guess
+[12/23/221 06:30:01] collin: and how's it going with the test cob for me?
+[12/23/221 06:30:04] rocco: it's just a manual action, you can run everything manually and find the mistake
+[23.12.21 06:30:16] collin: I think this year she will have no time, let's postpone until the beginning of January
+[23.12.21 06:30:33] rocco: you mean the test coba?
+[23.12.21 06:30:49] collin: Yeah, I ordered from you about a week ago
+[12/23/221 06:31:06] collin: now I'm just busy with other tasks, I have no time to look
+[23.12.21 06:31:08] rocco: how do you make it with the certificate without, as I do for all through the gasket?
+[23.12.21 06:31:25] rocco: okay, I'll bring it up when I need it
+[12/23/221 06:31:42] collin: Don't do it yet, I'll write about it when I'm ready
+[23.12.21 06:31:56] collin: and the main git ain't working
+[23.12.21 06:32:04] collin: can you bring it up, or is it for adam?
+[12/23/221 06:34:53] rocco: that's for adam
+[12/23/221 06:35:53] rocco: I need to do a gasket and see what's wrong
+[12/23/221 06:36:14] rocco: You could have figured it out by yourself a long time ago
+[12/23/221 06:36:55] rocco: Did he make your gaskets?
+[12/23/221 06:37:45] collin: I did, but again on that hoster
+[12/23/221 06:37:52] collin: which we left a couple of days ago due to constant abuses
+[12/23/221 06:38:01] collin: So I think for half a day again
+[23.12.21 06:38:26] rocco: let them take from adam and make them
+[12/23/221 06:38:42] collin: bro see what's wrong with those procals then, here's the whole list duplicating it for you
+[12/23/221 06:38:44] collin: ``
+root 94.140.114.201 UHkHhxEM7ag1sVZ
+root 103.124.107.109 34fhjd$gEN3rE5ff
+root 5.135.255.247 123qweASDzxc
+root 192.119.93.26 BHZwxsGpc7tYZqmZF
+root 185.117.73.184 123qweASDzxc
+root 45.41.204.148 2jzOpa78T3&Z
+root 176.103.58.142 gJ=e2Gy=
+root 5.181.156.16 ecu=Phoo*g7h
+root 91.201.202.216 JW4bIuA4
+```
+[12/23/221 06:39:10] collin: I asked Demetr what's the problem, vpsks or scripts - he says nothing
+[23.12.21 06:39:42] rocco: so he wanted to flash them? where on proto2
+[23.12.21 06:40:01] collin: he tried it and said it failed
+[23.12.21 06:40:05] collin: to main proto2
+[12/23/221 06:40:25] collin: `Permission denied, please try again. : unreachable"`this is the error he wrote
+[23.12.21 06:40:54] collin: his password hasn't changed, I logged on via SSH after he tried
+[12/23/221 06:49:06] rocco: I flashed the test one
+[12/23/221 07:08:15] rocco: ok: [185.117.73.184]
+ok: [91.201.202.216]
+ok: [5.181.156.16]
+ok: [103.124.107.109]
+ok: [94.140.114.201]
+[12/23/221 07:08:22] rocco: I'll do the rest.
+[12/23/221 07:08:39] collin: test one not working, looks like a tor
+[12/23/221 07:08:40] rocco: there are errors, but they are errors on the system, not in the script
+[12/23/221 07:08:53] rocco: It's fucking solvable
+[12/23/221 07:08:54] collin: it won't go up for over 10 minutes
+[12/23/221 07:09:04] rocco: let me see
+[12/23/221 07:13:16] rocco: i forgot to change the ports in the script, sec
+[12/23/221 07:13:41] collin: the main one works, great!
+[12/23/221 07:15:36] rocco: testova works
+[12/23/221 07:24:09] collin: +
+[12/23/221 07:43:08] rocco: changed: [176.103.58.142]
+changed: [5.135.255.247]
+changed: [192.119.93.26]
+changed: [45.41.204.148]
+changed: [192.119.93.26]
+[12/23/221 07:45:06] rocco: other procs
+[12/23/221 07:50:20] collin: all work fine!
+[12/23/221 07:51:00] collin: so I'll ask you next time for backup firmware, or demeter can?
+[12/23/221 07:51:09] rocco: come to me for now
+[24.12.21 13:03:20] collin: hi!
+[24.12.21 13:03:29] collin: deadline for admins is approaching
+[12/24/21 13:03:34] collin: `BK new main (185.64.104.141) - 26.12` - must pay today
+[12/24/21 13:03:36] rocco: hi
+[24.12.21 13:03:40] collin: I wrote to Demeter, I'll duplicate it for you just in case
+[24.12.21 13:03:41] rocco: demeter
+[24.12.21 13:03:45] rocco: yeah
+[24.12.21 13:04:03] rocco: let adam terrorize
+[12/27/221 07:18:23] collin: hi!
+[27.12.21 07:18:38] collin: bro see what's up with the BC addresses for the main
+[27.12.21 07:18:46] collin: all of them have response code 502, it usually wasn't like that
+[12/27/221 07:19:07] collin: 91.201.202.216 5.181.156.16 103.124.107.109 185.117.73.184 185.158.251.49 185.158.251.73 45.11.183.129 45.11.183.194
+[12/27/221 07:19:10] collin: these, for example.
+[12/27/221 07:19:43] rocco: Hey.
+[27.12.21 07:19:57] collin: demeter didn't confirm that he paid the admin fee on Friday, maybe he hasn't paid it yet
+[27.12.21 07:19:57] rocco: I just paid for the pads there
+[27.12.21 07:20:54] collin: what about these addresses, should they go up?
+[27.12.21 07:23:07] collin: they are up
+[12/27/221 07:23:08] rocco: check them as a result
+[12/27/221 07:23:13] rocco: yes
+[12/27/221 07:23:20] rocco: the gasket is not up
+[27.12.21 07:23:29] rocco: I'll check the target one more time
+[27.12.21 07:24:40] rocco: the tagged one is up too
+[27.12.21 07:28:30] collin: need one set of new procs 4 addresses, for new main
+[27.12.21 07:28:35] collin: will you do it, or wait for demetrius?
+[27.12.21 07:35:28] collin: bro about anubis, do you patch init module through "builder"?
+[27.12.21 07:35:39] collin: this:
+[12/27/221 07:35:43] collin: ``
+To create builds (bot init file)
+
+1) Go to the \builder\ folder
+2) edit \builder\config.bat file
+
+PRJ_NAME - project name as in the admin panel
+UPDATE_VER - version of the update
+URL_PATH - path to push to
+HOST_LIST - list of domains which will be triggered
+
+ZIP_PASS is a optional parameter that sets the password for the archive to be created
+```
+[27.12.21 07:43:29] rocco: no, nitrous does the builds
+[27.12.21 08:04:32] collin: do you pay for targeting admin or go to demetrius too?
+[12/27/221 08:04:35] collin: `BK targeting - 04.01.2022
+[27.12.21 08:13:08] rocco: I put money there
+[27.12.21 08:13:11] rocco: in advance
+[27.12.21 08:13:21] collin: till 04.02 now?
+[27.12.21 08:14:44] rocco: yes.
+[27.12.21 08:14:53] collin: okay.
+[27.12.21 09:18:56] collin: bro can't you with the procs on bc?
+[27.12.21 09:19:31] collin: can you help?
+[27.12.21 09:19:34] collin: Demetrius says I don't know when he will, no inventory(
+[27.12.21 10:12:04] collin: Bro, I need a solution on the pads.
+[27.12.21 10:12:22] collin: ``
+same situation
+no money
+```
+[27.12.21 10:12:23] rocco: Now
+[27.12.21 10:12:29] collin: Do you want me to answer that?
+[27.12.21 10:12:33] rocco: I'll see what's in stock
+[27.12.21 10:17:05] rocco: he'll take it.
+[12/30/21 15:04:30] collin: hey bro!
+[12.30.21 15:04:38] collin: tomorrow and next week we have no problems
+[12.30.21 15:05:18] collin: but it will be necessary to go out one day January 5 or 6, to check and update, if necessary, addresses on the bazaars
+[12/30/21/15:05:28] collin: that means we'll need procs
+[12/30/21 15:05:40] collin: will this work?
+[12/31/221 07:31:26] collin: hey bro!
+[31.12.21 07:31:27] collin: but it will be necessary to go out one day January 5 or 6, to check and update addresses on the bazaars if necessary
+i.e. procs will be needed
+[31.12.21 07:31:32] collin: will it work?
+[31.12.21 07:31:44] collin: shall we?
+[31.12.21 07:52:45] rocco: Hey, yeah, I'll be in touch.
+[31.12.21 07:53:04] rocco: I just need a vpc.
+[31.12.21 07:54:01] collin: I got 10 grand in reserve
+[31.12.21 07:55:48] rocco: you got it, on the 5th or 6th, when you need it
+[31.12.21 07:56:05] rocco: I'll get some more from adam just in case
+[31.12.21 07:56:17] rocco: so I'll be in touch
+[31.12.21 07:56:25] rocco: let's do it.
+[31.12.21 07:57:20] rocco: so demeter and other admins from the fifth must
+[31.12.21 07:57:28] rocco: But I'll cover it
+[31.12.21 07:58:05] collin: Okay.
+[10.01.22 10:15:36] collin: hi.
+[10.01.22 10:15:39] collin: happy holidays bro!
+[10.01.22 10:15:48] collin: can you flash your procs, my VPS reserves?
+[10.01.22 10:16:15] collin: demeter said to try, but something does not go, for 1.5 hours only one flash
+[10.01.22 10:20:10] collin: ``
+root 94.140.115.3 4g6iW3COrcpIiKg
+root 45.15.131.126 123qweASDzxc
+root 5.181.80.108 123qweASDzxc
+root 103.208.86.239 g)lsYDU8lC220.
+root 23.254.217.230 Ssva5yWkdSKd6Rq4
+root 185.183.96.36 123qweASDzxc
+root 45.41.204.150 JZdVcEhBsrwG
+root 148.163.42.203 y8rxg7iQ6Ym49Ln
+root 193.169.86.84 65QVdQDz
+root 185.163.45.132 ua@y$i9ouTh9
+
+```
+[10.01.22 10:20:16] collin: Flash the procs on the main pc pc
+[10.01.22 10:20:29] collin: check with Demetrius, he said he flash one
+[10.01.22 10:21:03] collin: and disappeared, connection with him is bad
+[10.01.22 10:34:43] rocco: hi, yeah
+[10.01.22 10:52:47] rocco: ``
+ok: [148.163.42.203]
+ok: [45.15.131.126]
+ok: [193.169.86.84]
+ok: [45.41.204.150]
+ok: [185.163.45.132]
+ok: [94.140.115.3]
+ok: [5.181.80.108]
+```
+[10.01.22 10:53:00] collin: are the others dead?
+[10.01.22 10:53:39] rocco: yeah, 3 didn't make it
+[10.01.22 11:02:48] collin: 7 works fine!
+[10.01.22 11:03:09] collin: do you have any stock? need + 5 more procs
+[10.01.22 11:03:20] rocco: I have no bro
+[10.01.22 12:25:26] collin: is there any way to solve the issue of paying for vps?
+[10.01.22 12:25:56] collin: 4 hours waiting for Demeter, no one pays
+[10.01.22 12:26:12] collin: I need 6 more procs now
+[10.01.22 12:28:02] collin: or at least give me a deadline, because it's not clear at all
+[10.01.22 12:28:08] collin: ``
+When will pay for the servers. I have nothing. And no one pays.
+I'm writing to everyone, they're all ignoring me.
+```
+[10.01.22 12:28:55] collin: something to answer partners on the delay
+[10.01.22 12:39:07] rocco: I have no bits too
+[10.01.22 15:17:39] collin: bro need to solve the proc order issue, quickly and completely
+[10.01.22 15:17:48] collin: during last months this "chip" was added to the general list of BC drawbacks
+[10.01.22 15:17:54] collin: regularly, we wait half a day and more for an address
+[10.01.22 15:17:58] collin: "maybe they will be soon, maybe not".
+[10.01.22 15:18:08] collin: today I haven't waited for one set, partners are idle
+[10.01.22 15:18:26] rocco: so there is nothing to buy vpski for
+[10.01.22 15:18:40] rocco: I told demeter to take from adam
+[17.01.22 08:38:55] collin: hi!
+[17.01.22 08:39:04] collin: flash my backups
+[17.01.22 08:39:07] collin: on BC main admin
+[17.01.22 08:39:27] collin: ``
+root 94.140.113.53 0WcNDr7my3eaaQ2
+root 5.181.80.177 123qweASDzxc
+root 5.39.63.103 123qweASDzxc
+root 144.217.50.242 123qweASDzxc
+root 142.11.237.178 MWZyqhZjhBc3
+root 185.183.96.244 123qweASDzxc
+root 185.163.45.95 zee7aig-oh*Y
+root 213.59.119.198 123qweASDzxc
+```
+[17.01.22 08:41:49] collin: will you do it?
+[17.01.22 08:42:35] rocco: hi, yeah, I will
+[17.01.22 08:57:51] rocco: ``
+142.11.237.178
+ok: [185.183.96.244]
+ok: [94.140.113.53]
+ok: [185.163.45.95]
+ok: [144.217.50.242]
+ok: [5.39.63.103]
+ok: [5.181.80.177]
+```
+[17.01.22 08:58:11] rocco: 213.59.119.198 does not work
+[17.01.22 10:08:25] collin: +
+[20.01.22 07:35:37] collin: hello!
+[20.01.22 07:35:46] collin: make procles for uk?
+[20.01.22 07:35:49] collin: no demetrius
+[20.01.22 07:36:09] rocco: hi, I don't have vpc
+[20.01.22 07:36:15] rocco: he's coming
+[20.01.22 07:36:23] rocco: if there's a reserve
+[20.01.22 07:36:27] rocco: let's do it
+[20.01.22 07:36:30] collin: there's a reserve yes
+[20.01.22 07:36:48] collin: let's wait till 11:00, if it doesn't come - let it out
+[20.01.22 07:36:54] rocco: ok
+[20.01.22 07:37:02] rocco: I'm here
+[20.01.22 08:06:25] collin: Bro, just one set of procs, please
+[20.01.22 08:06:28] collin: ``
+root 104.143.94.101 123qweASDzxc
+`` root 194.15.113.155 123qweASDzxc
+root 162.55.32.153 KLwhVjkixqXvwcvvfwNx
+root 80.71.158.106 Gk602noP4Mkc
+```
+[20.01.22 08:06:32] collin: for main admin bk
+[20.01.22 08:06:44] rocco: ok
+[20.01.22 08:06:49] collin: x6rcid...
+[20.01.22 08:06:56] rocco: yeah
+[20.01.22 08:46:02] rocco: ``
+ok: [104.143.94.101]
+ok: [162.55.32.153]
+ok: [80.71.158.106]
+ok: [194.15.113.155]
+```
+[20.01.22 09:33:10] collin: everything is working fine
+[20.01.22 09:33:12] collin: flash one more
+[20.01.22 09:33:14] collin: one
+[20.01.22 09:33:17] collin: ``
+root 148.163.42.213 ejqXPk9nxfwi6Cy
+```
+[20.01.22 09:38:13] rocco: ``
+ok: [148.163.42.213]
+```
+[20.01.22 09:40:49] collin: ``
+[24.01.22 09:41:46] collin: hello bro!
+[24.01.22 09:41:55] collin: you need addresses for BC, 3 sets of 4, total 12 procs
+[24.01.22 09:41:59] collin: can you do it?
+[24.01.22 09:42:05] collin: demeter is gone
+[24.01.22 09:42:12] collin: I've ordered two already since friday...
+[24.01.22 09:42:26] rocco: hi, he was asking about vpski this morning
+[24.01.22 09:42:33] rocco: never made it?
+[24.01.22 09:42:41] rocco: he showed up
+[24.01.22 09:42:51] collin: yeah wrote 20 minutes, waiting
+[24.01.22 09:43:04] rocco: now I'll ask him
+[24.01.22 09:43:59] rocco: he will do everything
+[24.01.22 09:44:14] rocco: he ordered vpski
+[24.01.22 10:19:08] collin: Bro I need one set of 4 addresses urgently
+[24.01.22 10:19:10] collin: demeter disappeared again
+[24.01.22 10:27:45] rocco: now he gave me
+[24.01.22 10:36:17] rocco: ``
+ok: [87.120.8.179]
+ok: [87.120.254.33]
+ok: [87.120.37.114]
+ok: [87.120.8.198]
+ok: [91.92.109.65]
+ok: [87.120.254.21]
+ok: [87.120.8.248]
+ok: [87.120.8.202]
+```
+[24.01.22 12:53:48] collin: and you can flash VPS under BC main admin
+[24.01.22 12:53:52] collin: `` 185.16.40.99
+[24.01.22 12:53:53] collin: this one
+[24.01.22 12:54:01] collin: `root 185.16.40.99 123qweASDzxc`
+[24.01.22 12:54:47] rocco: yeah yeah
+[24.01.22 12:54:59] collin: two more addresses on bazaars need to be updated, if this one works, is there one more in reserve?
+[24.01.22 12:55:07] collin: if not, then two)
+[24.01.22 12:55:23] rocco: I have no reserve
+[24.01.22 12:55:31] rocco: I'll ask adam
+[24.01.22 12:56:32] rocco: by the way, about the question about the socket for the admin, I do not remember this conversation, maybe not with me discussed?
+[24.01.22 12:56:58] collin: alphonse discussed with you, I do not have saved apparently
+[24.01.22 12:57:04] collin: it's about server side implementation
+[24.01.22 12:57:10] collin: raw socket protocol
+[24.01.22 12:57:21] rocco: I don't remember
+[24.01.22 12:57:28] rocco: okay, ask him
+[24.01.22 12:57:34] collin: so we have to discuss again
+[24.01.22 12:58:55] rocco: dead vpc
+[24.01.22 12:59:01] rocco: waiting for adam then
+[24.01.22 12:59:09] rocco: I'll flash him when he returns
+[25.01.22 06:42:09] collin: hello!
+[25.01.22 06:42:14] collin: any luck with vpsc?
+[25.01.22 06:49:04] rocco: Hi.
+[25.01.22 06:49:12] rocco: yeah, adam gave it to me tonight.
+[25.01.22 06:49:17] rocco: do you want me to flash it?
+[25.01.22 06:49:22] rocco: how much?
+[25.01.22 06:49:36] rocco: I don't know how long they will live
+[25.01.22 06:50:09] collin: 2 so far
+[25.01.22 06:50:59] collin: yeah, make it 2
+[25.01.22 06:51:03] collin: we'll see
+[25.01.22 06:59:16] rocco: ``
+ok: [103.114.163.175]
+ok: [94.140.115.130]
+```
+[25.01.22 07:00:18] collin: +
+[25.01.22 10:23:59] collin: Bro check BK online is down, all procs answer like hung torus
+[25.01.22 10:24:16] rocco: yeah yeah
+[25.01.22 10:24:51] collin: some 502 responses
+[25.01.22 10:26:56] collin: rising
+[25.01.22 10:27:38] rocco: torus rebooted
+[25.01.22 10:28:08] collin: how long does it reboot, I thought we said not more than 10 minutes
+[25.01.22 10:28:18] collin: crash online says longer
+[28.01.22 07:26:31] collin: Hi!
+[28.01.22 07:26:45] collin: rush vpski for basic admin bk plz
+[28.01.22 07:26:54] collin: ``
+root 194.180.191.128 di4fa+X7thie MD
+root 45.41.204.142 gZI79aU8C5R# NL
+root 144.217.50.254 123qweASDzxc UK
+root 5.39.63.98 123qweASDzxc FR
+```
+[28.01.22 07:26:57] collin: under procs
+[28.01.22 07:33:25] collin: can you do that?
+[28.01.22 07:42:03] rocco: hi yeah
+[28.01.22 07:56:11] rocco: done
+[28.01.22 08:00:55] collin: +
+[28.01.22 08:01:12] collin: the deadline for payment of admins BK target - 04.02.2022
+[28.01.22 08:01:24] collin: prolong it
+[28.01.22 08:01:30] rocco: yeah, I threw money in there
+[28.01.22 08:01:38] collin: now till 04.03?
+[28.01.22 08:01:38] rocco: it's automatic till March
+[31.01.22 10:33:29] collin: Hi!
+[31.01.22 10:33:52] collin: advise me if you are not in charge of anubis training
+[31.01.22 10:34:11] collin: procles and stuff on the server side?
+[31.01.22 10:38:26] rocco: Hi
+[31.01.22 10:39:06] rocco: on the server and admins yes, benny's procs
+[01.02.22 11:28:52] collin: hi!
+[01.02.22 11:29:15] collin: and you can add Garfield to the channel crypters
+[01.02.22 11:29:23] collin: or tell me who can add it?
+[01.02.22 11:46:36] rocco: hi, you click on the channel, then in the left corner people and add user
+[01.02.22 11:46:58] collin: I have no rights
+[01.02.22 11:47:05] collin: you have one in the channel you created yourself - but not in crypthers
+[01.02.22 11:47:22] rocco: I don't have this channel
+[02.02.22 08:45:36] collin: Hi!
+[02.02.22 08:45:47] collin: Bro bro broshy vpski under proklky bk (main admin) plz
+[02.02.22 08:45:56] collin: ``
+root 94.140.114.254 H4CHf5jVM2gDqSp LV
+root 139.28.235.26 123qweASDzxc USA
+root 104.200.67.231 J9w2uh4f9Y USA
+root 45.41.204.140 8W*2LnN7%iDJ NL
+```
+[02.02.22 08:46:33] rocco: Hey, yeah, I'm sewing.
+[02.02.22 09:20:39] rocco: ok: [104.200.67.231]
+ok: [45.41.204.140]
+ok: [94.140.114.254]
+[02.02.22 09:20:46] rocco: #4 hangs up now
+[02.02.22 09:20:53] rocco: take these 3
+[02.02.22 09:27:47] collin: +
+[02.02.22 09:28:01] collin: did you add user gelmut to rocco yesterday?
+[02.02.22 09:29:10] collin: tell me who asked to add him
+[02.02.22 09:29:27] collin: and to anucln channel who told him to
+[02.02.22 09:30:48] rocco: in toad bezdar is one of anubis operators
+[02.02.22 09:31:10] collin: +
+[02.02.22 09:42:06] rocco: ok: [139.28.235.26]
+[03.02.22 09:53:18] collin: hi!
+[03.02.22 09:53:24] collin: no backups?
+[03.02.22 09:53:36] collin: we are idle on BK!
+[03.02.22 09:53:51] rocco: hi
+[03.02.22 09:54:55] rocco: no, there is 4 demeter let me check yesterday
+```
+root 45.41.204.156 zLvfuVRSi#UY NL
+root 23.160.193.85 xekzqukgmfml USA
+root 45.86.74.14 123qweASDzxc USA
+root 5.181.80.156 123qweASDzxc USA
+```
+[03.02.22 09:56:52] rocco: you do not have them yet?
+[03.02.22 09:57:40] collin: none
+[03.02.22 09:57:44] collin: can you flash them for BC?
+[03.02.22 09:57:51] rocco: let me try
+[02.03.22 10:05:58] rocco: only one alive
+ok: [45.41.204.156]
+[03.02.22 10:08:14] collin: +
+[03.02.22 10:08:45] rocco: demeter will try to buy
+[03.02.22 14:07:37] collin: Bro make a proclu for the test admin BK plz
+[03.02.22 14:07:39] collin: one pc.
+[03.02.22 14:08:07] rocco: I'll find the vpcu
+[04.02.22 09:00:03] collin: hello!
+[04.02.22 09:00:06] collin: how's your procal progress?
+[04.02.22 09:06:22] rocco: hi, sorry, I was waiting for vpscu
+[04.02.22 09:06:25] rocco: I'm on it.
+[04.02.22 09:12:56] rocco: ok: [103.124.107.111]
+[04.02.22 09:13:50] collin: code 502 is not working
+[04.02.22 09:14:19] rocco: sec
+[04.02.22 09:16:16] rocco: corrected
+[04.02.22 09:17:48] collin: +
+[07.02.22 08:08:19] collin: hi!
+[07.02.22 08:08:32] collin: let's make contact in tox
+[07.02.22 08:10:16] rocco: Hi.
+[07.02.22 08:10:25] rocco: 2E9B3D6D33A6B133160F38632C3E8C25DFB484D2557A92C08162470F0937782FF0FD2C57E817
+[07.02.22 08:11:25] collin: +
+[07.02.22 08:14:44] collin: ``
+V4N$Jd8l5nD^Nd8ktNS8kB#Bd7jnd8Nr
+https://privatlab.com/s/v/ZVAblwgwZMuxnByV2Zl2
+```
+[07.02.22 08:14:58] collin: my id is there, save it just in case too
+[07.02.22 08:15:05] rocco: Yeah okay
+[09.02.22 07:24:35] collin: hello!
+[09.02.22 07:24:48] collin: about procs on routers
+[09.02.22 07:25:16] collin: they cannot pass the ip of the client, and their ip is correct?
+[09.02.22 07:25:54] collin: i.e. server accepts ip procles as before, if there is no ip client - extracts it from the data that bot will transfer
+[09.02.22 07:26:19] collin: or approach will be different and the server part should be adjusted to them?
+[09.02.22 08:51:53] collin: Bro, what about the routers?
+[09.02.22 08:52:19] collin: except for the ip client transfer, everything else is the same as in the PPS or there are other differences?
+[09.02.22 09:18:00] rocco: hi
+[09.02.22 09:18:13] rocco: yeah
+[09.02.22 09:18:24] rocco: router at the end, then the spacer
+[09.02.22 09:18:49] rocco: no everything else is not working, we checked with you
+[09.02.22 09:24:25] collin: we only checked one router
+[09.02.22 09:24:33] collin: they have different hardware and OS
+[09.02.22 09:24:43] collin: maybe something else will pop up on some of them
+[09.02.22 09:24:46] collin: still have to test it
+[09.02.22 09:25:09] rocco: no
+[09.02.22 09:25:13] collin: we just stopped at this IP is not transmitted and that's it
+[09.02.22 09:25:16] collin: we didn't check it further
+[09.02.22 09:25:16] rocco: the rules are the same
+[09.02.22 09:25:47] rocco: so there were even at work
+[09.02.22 09:26:04] collin: yes there was a start
+[09.02.22 09:26:05] rocco: the problem was only in ip
+[09.02.22 09:26:55] collin: how to get external ipv4 address from the machine, advise me what methods you know
+[09.02.22 09:27:19] rocco: okay, I'll take a look
+[09.02.22 09:27:24] collin: except for HTTP requests like http://ifconfig.me/ip
+[09.02.22 09:27:31] collin: preferably non-standard ways
+[09.02.22 11:21:57] rocco: this bro won't do?
+```
+wget -q -O - ifconfig.io
+```
+[09.02.22 12:32:28] collin: advise about backups on admins, how is it organized now?
+[09.02.22 12:32:31] collin: on the main one to start with
+[09.02.22 12:33:05] collin: how often backups of database and software are made and checked, how automated is this process?
+[09.02.22 12:33:38] rocco: I back up my database every day
+[10.02.22 08:17:05] collin: Hi!
+[10.02.22 08:17:21] collin: online lagged on the BC, on the procs tor lies like on all
+need to pick it up quickly
+[10.02.22 08:50:28] rocco: hi, I'll check it out
+[10.02.22 08:51:04] collin: partially restored
+[10.02.22 08:54:20] rocco: send me the link to enter proto2
+[10.02.22 08:56:04] rocco: got it
+[11.02.22 07:16:29] collin: hello!
+[11.02.22 07:16:58] collin: can you give me a comprehensive list of answer codes,
+[11.02.22 07:17:39] collin: which may not be from admin
+[11.02.22 07:18:26] collin: that is either procles of any kind, in some abnormal situations, or the server before the transfer of control to the server part of the BC
+[11.02.22 07:19:00] rocco: hi
+[11.02.22 07:19:24] rocco: i dunno, didn't pedal such a topic
+[11.02.22 07:19:40] rocco: you did something like that
+[11.02.22 07:21:17] collin: okay, then
+[11.02.22 07:21:34] collin: there could be response codes 500 or 404 from procles or from server (before BC backend)?
+[11.02.22 07:22:26] collin: the answer is not needed right now, in principle
+[11.02.22 07:22:43] collin: can you do the necessary research checks or delegate them to someone else?
+[11.02.22 07:46:57] rocco: there was 404
+[11.02.22 07:47:20] rocco: 500 is when proc isn't responding, bad request
+[11.02.22 07:47:52] rocco: I'll take care of it
+[11.02.22 07:50:39] collin: you need new clear machine on our proxmox, who can you order from?
+[11.02.22 07:51:46] rocco: mizti
+[11.02.22 07:52:13] rocco: did you put proksla on routers?
+[11.02.22 07:53:04] collin: they kicked me the procs yesterday
+[11.02.22 07:53:13] collin: only some strange, addresses and port, no credits
+[11.02.22 07:53:28] rocco: what do you mean?
+[11.02.22 07:53:29] collin: rather, the routers themselves aren't proksla
+[11.02.22 07:53:34] rocco: it's all https
+[11.02.22 07:53:42] rocco: yes
+[11.02.22 07:53:46] collin: it's too early for them anyway, you should develop software first)
+[11.02.22 07:53:51] rocco: just like normal stevans
+[11.02.22 07:54:11] rocco: no need creeds, I already made them
+[11.02.22 07:54:35] collin: aha, they are already made, just checked
+[11.02.22 07:54:47] rocco: yeah
+[11.02.22 07:55:01] collin: there are 20 pcs, did you flash the same amount?
+[11.02.22 07:55:06] rocco: yes
+[18.02.22 08:40:28] collin: Hi!
+[18.02.22 08:40:49] rocco: Hi.
+[18.02.22 08:40:56] collin: tell me, do we use or have we used gaskets for BC on cloudflare services?
+[18.02.22 08:41:05] rocco: no
+[21.02.22 08:32:43] collin: hi!
+[21.02.22 08:33:10] collin: I need procles at least 1 set 4 pcs.
+[21.02.22 08:33:21] collin: Will you make, or Demetrius wait?
+[21.02.22 08:47:28] rocco: Hi.
+[21.02.22 08:47:38] rocco: Yeah, he was here this morning.
+[21.02.22 08:48:21] rocco: listen to the distribution of bots connects to the end, for example one knocked 27, the other 1 or 2
+[21.02.22 08:48:36] rocco: how are the connections distributed?
+[21.02.22 08:48:39] rocco: bots
+[21.02.22 08:48:54] rocco: maybe that's why bad bounce
+[21.02.22 08:49:19] collin: yes, there is no randomization in client when selecting an address
+[21.02.22 08:49:32] collin: there is a task for coders, set it as a priority for all
+[21.02.22 08:50:17] rocco: def suggested a couple more procles, and between them to distribute the end, but I do not know whether it helps
+[21.02.22 08:50:36] rocco: the speed of the procles is good
+[21.02.22 08:50:43] rocco: torus has good speed
+[21.02.22 08:52:50] rocco: and ip via router, have you decided yet?
+[21.02.22 08:54:32] collin: by the middle of March we are going to improve the router speed
+[21.02.22 08:54:45] rocco: great
+[21.02.22 08:54:57] rocco: things are not so good with vpc
+[21.02.22 08:55:19] rocco: either dirty, or banned at once
+[21.02.22 08:55:37] rocco: it goes bad through them
+[22.02.22 11:25:44] collin: Hi!
+[22.02.22 11:26:13] rocco: Hi
+[22.02.22 11:26:21] collin: tell me what do you need to backup from BC servers when you completely shut them down and clean them up?
+[22.02.22 11:26:39] collin: what you need and maybe some notes from alpha
+[22.02.22 11:26:54] collin: in case there was a restart in the plan
+[22.02.22 11:27:33] rocco: i think /etc /var/www and postgres dump
+[22.02.22 11:28:11] collin: what server logs do you keep?
+[22.02.22 11:30:11] rocco: yeah you can clean up the entire /var/log folder
+[22.02.22 11:30:25] collin: you don't need them?
+[22.02.22 11:30:48] collin: and DBMS in `/etc /var/www` too?
+[22.02.22 11:31:33] rocco: the subd system is in /var/lib/postgresql
+[22.02.22 11:31:42] collin: ok
+[22.02.22 11:32:14] rocco: in /etc settings in /var/www admin in /var/lib/postgresql base

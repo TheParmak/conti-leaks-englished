@@ -1,0 +1,107 @@
+[14.09.21 14:41:39] alphonse:		привет
+[14.09.21 14:41:44] alphonse:		Can't exec "/usr/bin/ldd": Operation not permitted at /usr/bin/psql line 137.
+[14.09.21 14:41:49] alphonse:		на 65-й
+[14.09.21 14:41:54] rocco:		привет
+[14.09.21 14:42:00] alphonse:		не могу дамп залить
+[14.09.21 14:42:32] alphonse:		это тестовая 65 которая
+[14.09.21 14:43:26] rocco:		хз ничего там не запрещал
+[14.09.21 14:44:05] alphonse:		знач сломалось или поломали((
+[23.09.21 14:33:07] rocco:		альф привет, у тебя на тестовой также работает как на основной, все на один порт стучат?
+[23.09.21 14:36:00] alphonse:		да
+[23.09.21 14:36:11] rocco:		на 12233
+[23.09.21 14:36:18] alphonse:		да
+[23.09.21 14:36:23] rocco:		ок
+[27.10.21 12:54:44] alphonse:		привет. давай доступ
+[27.10.21 12:56:25] rocco:		сек
+[27.10.21 12:56:32] rocco:		185.64.104.141
+[27.10.21 12:56:52] rocco:		https://privnote.com/ccvX6rg1#ETZbBKbbp
+[29.12.21 17:43:40] rocco:		https://privatlab.com/s/v/m2zQYQALg4hrE6mG9oq6
+boo9ovu4uaquib5Miedecheiyee6aishee2eekei
+[29.12.21 17:43:46] rocco:		это ключи
+[29.12.21 17:43:53] rocco:		щас напишу как подключатся
+[29.12.21 17:45:09] rocco:		http://pj3n6aix4l5lqoorwu5qbolmhwpqyabwpifdvn2w5qiznlqqayzmegid.onion/note/1fYsWj2sDWPU5dog1CLzkOHySCASP4TGUZ8tv7BIz4bdvk9shI2v6f3gX7QfPWtMT19ZVeyTGqKfwo4laibF0Xq#b9d4281df97c4be5b70ed4c3b291461a301ef03409c70ad0bea0f6651d0512f8
+[29.12.21 17:47:01] alphonse:		архив не экстрактится. ошибка пишет
+[29.12.21 18:06:45] rocco:		https://privatlab.com/s/v/wEjyGr0xdmFErM7Wzqm0
+[29.12.21 18:06:54] rocco:		попробуй этот
+[29.12.21 18:07:06] rocco:		пасс тот же
+[29.12.21 18:10:43] alphonse:		хрень какая-то. экстрактит и пасс не спрашивает, но файлы не читаются
+[29.12.21 18:12:10] alphonse:		открыл без пароля короче
+[29.12.21 18:21:38] rocco:		попробуй подключится
+[27.01.22 12:59:55] alphonse:		привет
+[27.01.22 13:00:13] alphonse:		$ torify ssh -i ~/issues/keys/proto.pem proto@185.64.104.141
+1643288323 ERROR torsocks[72989]: General SOCKS server failure (in socks5_recv_connect_reply() at socks5.c:527)
+ssh: connect to host 185.64.104.141 port 22: Connection refused
+[27.01.22 13:00:40] alphonse:		что делать?
+[27.01.22 13:12:05] rocco:		-p 5353 в конце
+[27.01.22 13:12:20] rocco:		torify ssh -i ~/issues/keys/proto.pem proto@185.64.104.141 -з 5353
+[27.01.22 13:12:30] rocco:		torify ssh -i ~/issues/keys/proto.pem proto@185.64.104.141 -p 5353
+[27.01.22 13:14:57] alphonse:		$ torify ssh -i ~/issues/keys/proto.pem proto@185.64.104.141  -p 5353
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@         WARNING: UNPROTECTED PRIVATE KEY FILE!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Permissions 0777 for '/home/user/issues/keys/proto.pem' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+Load key "/home/user/issues/keys/proto.pem": bad permissions
+proto@185.64.104.141's password: 
+Permission denied, please try again.
+proto@185.64.104.141's password:
+[27.01.22 13:15:48] rocco:		chmod 400 ~/issues/keys/proto.pem
+[28.01.22 10:33:42] alphonse:		привет. как зачепиться теперь mc?
+[28.01.22 11:07:44] alphonse:		привет. как зачепиться теперь mc?
+[28.01.22 11:08:10] rocco:		привет
+[28.01.22 11:08:19] rocco:		как зпуститьт?
+[28.01.22 11:08:27] alphonse:		ага
+[28.01.22 11:08:36] rocco:		сделай sudo -s
+[28.01.22 11:09:16] alphonse:		ыгвщ -ы
+[28.01.22 11:09:35] alphonse:		дальше)
+[28.01.22 11:09:40] rocco:		mc
+[28.01.22 11:10:02] alphonse:		шел линк, да?
+[28.01.22 11:10:21] rocco:		да не
+[28.01.22 11:10:33] rocco:		просто после входа по ключу
+[28.01.22 11:10:41] rocco:		надо sudo -s сдеслать
+[28.01.22 11:12:12] alphonse:		не. ты не понял. я хочу например что-то скопировать большое. я раньше делал shell link вводил айпи с юзером и пасс и всё. с одной стороны у меня хостинг а с другой локалка. а теперь как быть?
+[28.01.22 11:13:12] rocco:		через scp?
+[28.01.22 11:16:03] alphonse:		это как?
+[28.01.22 11:19:45] rocco:		короче у себя в локалке в файле .ssh/config сделай запись
+```
+ host ip
+  user proto
+  port 5353
+  identityfile  путь где ключ лежит/proto.pem
+```
+[28.01.22 11:23:49] alphonse:		./etc/ssh/ssh_config в этом?
+[28.01.22 11:24:23] rocco:		нет
+[28.01.22 11:24:44] rocco:		в ~.ssh/config
+[28.01.22 11:24:57] rocco:		если что создай его
+[28.01.22 11:25:02] rocco:		config
+[28.01.22 11:25:25] rocco:		в руте или в домашней папке есть .ssh/ каталог
+[28.01.22 11:25:33] rocco:		там создай файл config
+[28.01.22 11:27:24] alphonse:		сделал.
+[28.01.22 11:27:32] alphonse:		тепрь рестарт надо?
+[28.01.22 11:27:58] rocco:		теперь подключайся через mc
+[28.01.22 11:31:01] alphonse:		пароль просит а старый не подхолит
+[28.01.22 11:31:46] rocco:		ты как подключаешь root@?
+[28.01.22 11:32:21] alphonse:		proto@
+[28.01.22 11:46:16] rocco:		блин
+[28.01.22 11:46:49] rocco:		так ща
+[28.01.22 11:59:44] rocco:		короче подключайся через root
+[28.01.22 11:59:54] rocco:		я открыл рут доступ
+[28.01.22 11:59:58] rocco:		потом закрою
+[28.01.22 12:04:02] alphonse:		по-старому?
+[28.01.22 12:05:01] rocco:		ага
+[28.01.22 12:05:16] alphonse:		пароль не принимает
+[28.01.22 12:05:20] alphonse:		старый
+[28.01.22 12:06:52] rocco:		я ж новый дал
+[28.01.22 12:07:37] rocco:		https://privnote.com/gVHejPIS#GAfAwxTkG
+[28.01.22 12:07:56] alphonse:		всё вошёл
+[28.01.22 12:08:03] alphonse:		я забыл про новый
+[02.02.22 07:10:53] alphonse:		привет. впн лежит. это к кому?
+[02.02.22 07:11:19] rocco:		привет, морф4?
+[02.02.22 07:11:29] alphonse:		хз 144.202
+[02.02.22 07:11:40] rocco:		это к рубену, я ему написал уже
+[02.02.22 07:13:28] rocco:		ща рубен напишет
+[02.02.22 07:20:57] alphonse:		чёт молчит
+[04.02.22 07:11:06] alphonse:		привет. кто рулит редманом?
+[04.02.22 07:13:29] rocco:		привет
+[04.02.22 07:13:34] rocco:		ruben
