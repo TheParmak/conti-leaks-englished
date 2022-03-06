@@ -1,0 +1,1549 @@
+[29.07.21 10:55:16] elroy: Hello
+[29.07.21 13:26:35] allen: Hi.
+[29.07.21 13:27:22] allen: I do. Tomorrow I should finish with rundll profile.
+[29.07.21 13:27:27] elroy: You have in your cryptopanel login allen ?
+[29.07.21 13:27:59] allen: Yes.
+[29.07.21 13:28:49] elroy: I corrected rights there, now you can crypt from panel, dincheck there and morning builds, shows stub status (crypting in the morning and let it to test)
+[29.07.21 13:29:06] allen: Got it.
+[02.08.21 08:25:16] elroy: Greetings
+[02.08.21 08:26:18] allen: Hi. Finishing up. Fighting with SEH exception.
+[02.08.21 08:26:57] allen: Then I'll ask you to help me with Jenkins.
+[02.08.21 08:27:28] elroy: With Jenkins no problem, any advice. I've helped everyone with him)
+[02.08.21 08:27:48] elroy: Are there profiles that are ready and can be posted?
+[02.08.21 08:28:34] allen: So far only Default completely.
+[02.08.21 08:29:01] allen: In an hour or two rundll will be ready.
+[02.08.21 08:29:45] elroy: Yeah, okay. Let's attach what we have tomorrow, and finish the rest later...
+[02.08.21 08:31:04] allen: Hook it up.
+[06.08.21 10:52:37] elroy: Greetings. How's it going?
+[06.08.21 12:54:23] allen: Hi. I'm redoing the generator because I used my library functions to collect exported functions. And I need to be able to collect 64-bit functions from a 32-bit application. And vice versa.
+[06.08.21 12:54:37] allen: Debugging code.
+[06.08.21 12:55:05] elroy: I see.
+[06.08.21 12:55:13] elroy: What's the readiness forecast?
+[06.08.21 12:55:30] allen: By Monday, I think.
+[06.08.21 12:55:37] elroy: Good.
+[09.08.21 11:14:14] allen: Hi. Just yesterday I uploaded it to the test thread. I should check it out. Additional keys to the build system:
+--profile rundll : profile name,
+--entrypoint old_entry=new_entry,...
+[09.08.21 11:15:50] elroy: hello. Need to check if it's crypting or not?
+Jenkins has an option to specify a branch to build... Let's check there.
+[09.08.21 11:16:12] allen: Ok.
+[09.08.21 11:16:45] allen: I wonder, I haven't checked ShelCode. It should work...
+[09.08.21 11:16:56] elroy: I'll describe what to do)
+[09.08.21 11:17:11] allen: Go ahead. Write.
+[09.08.21 11:21:51] elroy: Go to Jenkins and select New item. Then write "crypter3_test_stub" in the box and crypter3_generic_exe in the box below. Click on "ok".
+This will open a page with the parameters for a new crypter3_generic_exe based project.
+[09.08.21 11:21:51] elroy: There you have to correct the Authentication Token field in Build Triggers, it must be crypter3_test_stub (same as the project name).
+[09.08.21 11:23:09] elroy: Then scroll down, there is "Execute windows batch command", it's a command to call the script on the build, fix it as needed
+[09.08.21 11:23:43] elroy: Branches to build and Branch Specifier (blank for 'any') - here specifies the branch where to get the project for the build
+[09.08.21 11:23:48] elroy: That's it)
+[09.08.21 11:24:06] elroy: Continue "Save"
+[09.08.21 11:24:31] elroy: And you can do crypt from panel, I'll add crypter3_test_stub name to panel
+[09.08.21 11:26:19] allen: And a question. We're not testing generic, we're testing rundll.
+[09.08.21 11:27:24] allen: And not only exe, but dll as well?
+[09.08.21 11:29:07] elroy: You can test just by changing the settings inside the test stack. When you have tested desired profile, just create it by copying it in the same way. Specify new profile name (this is names I give you, they must be exactly the same) and at the bottom specify crypter3_test_stub
+[09.08.21 11:29:26] elroy: rundll has an entrypoint parameter
+[09.08.21 11:29:33] elroy: I'll write how to add it
+[09.08.21 11:36:14] elroy: This project is parameterized
+there are 3 parameters below, then there is Add parameter button, select String Parameter, type in Name "entrypoint". Then at the bottom where you want to substitute the name of this entrypoint, in the script call parameters add
+```
+%entrypoint%
+```
+[09.08.21 11:51:03] allen: And how do I add a parameter like:
+--32 : use 32-bit build
+--64 : use 64 bit build
+?
+[09.08.21 11:51:42] elroy: You can add. Doesn't the script itself detect it? Do you only have to specify it?
+[09.08.21 11:52:54] allen: And how can the script determine this? And even more so for shellcode, where it's just a binary function.
+[09.08.21 11:53:37] elroy: Well, the script - probably, no way) I mean the builder itself determines when a crypt is preparing?
+[09.08.21 11:54:12] allen: And how will the collector pass this to the script?
+[09.08.21 11:55:35] elroy: Your current project is auto-detecting
+[09.08.21 11:55:40] allen: And shellcode again...
+[09.08.21 11:55:46] elroy: payloadgen detects
+[09.08.21 11:55:57] elroy: And for shellcode you only need to specify
+[09.08.21 11:56:34] allen: so how do you prescribe Genkins parameters?
+[09.08.21 11:57:27] elroy: So in the call parameters, where the script is called, that's where you specify 32 or 64. And in the project name you just add the digit capacity, for example:
+crypter2_rundll-shellcode_32_dll
+crypter2_rundll-shellcode_64_dll
+crypter2_shellcode_32_exe
+...
+[09.08.21 11:57:43] elroy: I wrote above)
+[09.08.21 11:58:13] elroy: > Then scroll down, there's "Execute windows batch command", it's a script call command to build, correct as needed
+[09.08.21 11:58:18] allen: Okay. I'll digest....
+[09.08.21 11:58:59] elroy: Digest, I'll tell you everything.)
+[11.08.21 09:42:45] allen: Hi. I'm wondering, how do I test new Genkins config from cryptopanel?
+[11.08.21 11:11:00] elroy: Hello. To make a build with test profile from panel, you need to open panels, select tab (for example testBuild - it's our test for testing crypto, it has test load) and select file, on its right side press B (wrench icon), menu will appear on build, select which profile and stubs profile to make a build, for test payload type - TestStub, and in stubs profile - testing_crypter3
+[11.08.21 11:11:56] elroy: On the right side in column Reports press key - you will get the list of builds of this file
+[11.08.21 11:12:29] elroy: For each of them you can ask to check for statics, spider icon (the first one), reports in Reports column
+[11.08.21 11:32:10] allen: Now I'm preparing a test ShellCode....
+[11.08.21 11:32:51] allen: Then I'll run test loads on mine, and then I'll move on to cryptopanel.
+[11.08.21 11:37:18] elroy: Shellcodes are written, they are on testBuild tab, you can use them.
+[11.08.21 11:37:23] elroy: All the cryptos were tested on the bottom
+[11.08.21 12:21:37] allen: I don't have this tab.
+[11.08.21 12:22:03] elroy: There is. Do ctr+f5.
+[11.08.21 12:22:06] allen: No. Yes.
+[13.08.21 08:08:17] allen: Hi. There is a problem with the script:
+
+I pass it the parameter: --entrypoint DllRegisterServer=StartW
+And it tells me: entrypoint DllRegisterServer
+
+Apparently, he thinks that the "=" sign is a separator for parameters. What to do, don't you know?
+[13.08.21 08:09:39] elroy: It works for me, very strange. Just a moment, I'll show you how my entrypoint processing is done.
+[13.08.21 08:15:04] elroy: ``
+IF ["%entrypoint%"] == [""] (exit /B -1) ELSE (build.bat --type exe ---payload %input_file% --out %output_file% --entrypoint %entrypoint%)
+```
+This way everything comes as a line along with =
+The entry on the bottom line should be
+[13.08.21 08:21:15] allen: So you use %entrypoint% and I use !entrypoint! as a variable.
+[13.08.21:21:27] allen: Maybe that's it?
+[13.08.21:21:41] elroy: Maybe.
+[13.08.21 08:22:57] elroy: %entrypoint% is passed to Jenkins just like %input_file% and %output_file% parameter, string parameter is set there on top
+[13.08.21 08:24:56] allen: That's understandable:
+for %%a in (%*) do (
+*****
+if ! == 1 (
+								if !entrypointisset! == 1 (
+									set errormessage="Entry Point is repeated"
+									goto error_invalid_argument
+								)
+								set entrypointisnext=0
+								set entrypointisset=1
+								set entrypoint=%%a
+								echo entrypoint %%a
+							) else
+[13.08.21 08:26:16] elroy: I get it, it's inside the script is corrupted
+[13.08.21 08:26:29] allen: And so echo entrypoint %%a gives out "entrypoint DllRegisterServer". And the same argument is passed on.
+[13.08.21 08:30:14] elroy: Got it. It's got to be wrapped into a string, by quotes, something like
+--entrypoint "%entrypoint%"
+Or maybe
+set entrypoint="%%a"
+[13.08.21 08:32:26] allen: I set entrypoint="%%a", it still gives out "DllRegisterServer"
+[13.08.21 09:47:40] elroy: And you tried first option?
+[13.08.21 09:48:14] elroy: Maybe delete this loop?
+[13.08.21 09:48:22] elroy: It will not be repeated
+[16.08.21 07:32:56] allen: Hi. Please take a look at Jenkins. I've done a bunch of projects there. But all of them have a gray icon. How to make it blue?
+[16.08.21 07:39:47] elroy: It will become so itself when the first build passes.
+[16.08.21 07:39:48] elroy: Projects are good, it's very important to have the right names there. Ian didn't ask, may have to copied with new names.
+[16.08.21 07:39:48] elroy: I'll post later
+[16.08.21 07:40:19] allen: Okay.
+[16.08.21 07:40:44] allen: How do I get her to build?
+[18.08.21 04:12:45] elroy: Greetings. Let's deal with Jenkins.
+[18.08.21 07:51:30] allen: Hi. Come on.
+[18.08.21 07:52:57] elroy: crypter3_generic_exe_dll_to_exe and crypter3_generic_exe_dll_to_dll differ in what way?
+[18.08.21 07:53:59] allen: They differ in assembly type: the first one has an exe result, the second one has a dll.
+[18.08.21 07:54:39] elroy: Yeah, okay. And both can have both exe and dll as input, right?
+[18.08.21 07:54:45] allen: Yes.
+[18.08.21 07:55:09] elroy: The script doesn't need to tell what's in the input, it will figure it out itself?
+[18.08.21 07:55:18] allen: Yes.
+[18.08.21 07:55:28] allen: Except ShellCode
+[18.08.21 07:55:38] elroy: Will it understand by file type or by extension, i.e. by name?
+[18.08.21 07:55:52] allen: By title.
+[18.08.21 07:55:59] elroy: Perfect.
+[18.08.21 07:58:17] elroy: Regarding names, I once wrote that I give them out for each profile. This is done because there are a lot of profiles, and it's easy to make chaos. That's why I stick to order with names. As for these, it should be:
+crypter3_generic_exe
+crypter3_generic_dll
+The extension on the right usually means output format.
+[18.08.21 07:58:35] elroy: Please fix them by copying them with the right name
+[18.08.21 08:00:30] allen: Corrected.
+[18.08.21 08:01:12] allen: By renaming.
+[18.08.21 08:02:23] elroy: Yes, if renaming worked. I searched once, didn't find it right away)
+Okay
+[18.08.21 08:02:37] elroy: I'll send you three documents.
+[18.08.21 08:05:35] elroy: Download: https://qaz.im/load/rD3ka3/hY8d92
+Delete: https://qaz.im/index.php?a=delete&q=1464089050
+[18.08.21 08:07:59] elroy: SAIC contains profiles description in Jenkins and additional information, it's maximum-complete instruction on parameters which should be set when creating profiles. The update for SAIC is to do this for all your profiles.
+"entry points" - this is the most recent version, if I discounted earlier - update yours.
+[18.08.21 08:09:29] elroy: Build Triggers -> Authentication Token - this field should match your profile name. It is necessary for the panel.
+[18.08.21 08:10:52] elroy: Name to shellcode 32 bits in exe output should be
+crypter2_shellcode_32_exe
+[18.08.21 08:15:11] allen: Done
+[18.08.21 08:15:43] elroy: Great. Now I'll add two profiles to the panel.
+[18.08.21 08:16:03] elroy: Figured out how to make a crypt from the panel?
+[18.08.21 08:16:28] allen: Without specifying which profile? (crypter3_shellcode_32_exe)
+[18.08.21 08:16:54] elroy: Clarify the question.
+[18.08.21 08:17:56] allen: Maybe crypter3_generic_shellcode_32_exe for GENERIC? And crypter3_rundll_shellcode_32_exe for RUNDLL?
+[18.08.21 08:19:46] elroy: crypter3_shellcode_32_exe - yes, without specifying profile for generic (just saved name length).
+[18.08.21 08:20:02] elroy: crypter7_rundll-shellcode_64_dll
+[18.08.21 08:20:11] elroy: This name for example for rundll
+[18.08.21 08:21:49] elroy: And exe is crypted into dll?
+[18.08.21 08:22:21] elroy: Does it work through hollowing eventually?
+[18.08.21 08:24:12] allen: The exe is not encrypted in dll for rundll. For Generic it does.
+[18.08.21 08:24:42] elroy: I see.
+[18.08.21 08:27:05] elroy: I added profiles to the panel. Check how it works from the panel.
+[18.08.21 08:38:15] allen: I see you added dll_generic_crypter3, but not exe_generic_crypter3. Why?
+[18.08.21 08:39:43] elroy: That's the format. It's easier to watch for those who crypt and name in Jenkins can be several different for the same name in the panel (filter works, it selects the right one, but user with the same name is shown)
+[18.08.21 08:40:26] elroy: I added both profiles
+[18.08.21 08:40:29] elroy: And shellcode
+[18.08.21 08:40:35] elroy: Three in all
+[19.08.21 07:13:36] allen: Hi. 2 questions:
+1) How do I run cryptopanel from the cryptopanel?
+2) You didn't add the RUNDLL crypto to me. Only Generic.
+[19.08.21 07:18:32] elroy: Go to cryptopane, select file on the tab, press B in Actions column, a window will open, choose profile and stub
+[19.08.21 07:18:36] allen: Projects are renamed.
+[19.08.21 07:20:53] allen: On my Actions tab, only download file and delete file ((
+[19.08.21 07:21:37] elroy: Sorry, not Actions, but Check
+[19.08.21 07:22:50] elroy: In Jenkins was not set filter on the rest of your profiles, only 3, I did not see. Now updated filter, saw profiles, will add, maybe today.
+[19.08.21 07:24:03] elroy: I think I'll be able to add it after lunch, now I'm busy on the other side
+[19.08.21 07:24:17] allen: I see.
+[19.08.21 11:00:21] elroy: Added crypto, check it out
+[19.08.21 11:01:34] allen: I see.
+[19.08.21 11:01:58] elroy: Check, I mean, build every profile
+[20.08.21 10:17:14] allen: Hi.
+1) Please delete file dl6_release_nologs_group_6_ver_1_34_x64_rundll32.dll from the Uncrypted tab (it's not deleted by me).
+2) Why don't I have any rundll profiles in action selection? Only generic ones.
+[20.08.21 10:17:36] elroy: Greetings. I can't see the message
+[20.08.21 10:17:39] allen: Hi.
+1) Please delete the file dl6_release_nologs_group_6_ver_1_34_x64_rundll32.dll from the Uncrypted tab (it won't delete from me).
+2) Why don't I have any rundll profiles in action selection? Only generic ones.
+[20.08.21 10:18:21] allen: There are rundlls in Stubs though...
+[20.08.21 10:18:44] elroy: It depends on the file you choose. Choosing dll ?
+[20.08.21 10:19:04] allen: Yes
+[20.08.21 10:19:26] elroy: dl6_release_nologs_group_6_ver_1_34_x64_rundll32.dll
+[20.08.21 10:19:33] elroy: is this your file?
+[20.08.21 10:19:47] allen: Yes.
+[20.08.21 10:19:58] allen: Delete it.
+[20.08.21 10:20:44] allen: Wild gave it to me. He said during the build he didn't set any parameters.
+[20.08.21 10:22:05] elroy: See, for example, rob125.dll
+[20.08.21 10:22:21] allen: This is also rundll,
+[20.08.21 10:22:29] elroy: Payload type - choose rundll there
+[20.08.21 10:22:33] elroy: No
+[20.08.21 10:22:47] elroy: We can select any file for crypt
+[20.08.21 10:22:55] elroy: That's an example
+[20.08.21 10:23:44] allen: In my rundll profile, if no function is exported, an error is generated.
+[20.08.21 10:25:11] elroy: Right
+[20.08.21 10:25:53] allen: I have command --entrypoint (empty) not processed by script
+[20.08.21 10:27:38] allen: I think I figured out how to do it.... Momentum...
+[20.08.21 10:27:51] elroy: I was throwing out how to do it
+[20.08.21 10:29:06] allen: No. It's about the order of commands. If --entrypoint is last, its value won't make much sense...
+[20.08.21 10:35:18] allen: For rob125.dll the choice is also only from generic...
+[20.08.21 10:36:08] elroy: Payload type - is it generic ?
+[20.08.21 10:36:54] elroy: Choose Payload type - rundll32
+There will be list of only rundll
+[20.08.21 10:37:11] allen: That's it. Got it.
+[20.08.21 10:38:02] elroy: On testBuild tab there are libraries rundll_32 and 64, they are test ones, hello world
+[20.08.21 10:38:12] elroy: You can crypt there and watch...
+[20.08.21 10:38:29] allen: I see.
+[20.08.21 10:53:26] allen: And where can I see result log of build?
+[20.08.21 10:54:28] allen: And what's the criterion for judging if the build is feld?
+[20.08.21 11:07:11] elroy: If the script returned 0 - success, not 0 - failed
+[20.08.21 11:07:33] elroy: exit /B 0 for bat
+[20.08.21 11:10:23] elroy: You can look in Jenkins output to console of build commands. To do it, you need to open the profile, in the list at the bottom left select the build you need, move your mouse to the arrow and select Console output.
+Look at the build logs can be in the workspace, if it is maintained, or in the artifacts. Artifacts - the same, select the desired build in the profile, open it and there is a list of files - artifacts
+[20.08.21 11:16:51] allen: I have no list of builds...
+[20.08.21 11:17:33] elroy: If not, you didn't call profile
+[20.08.21 11:17:45] elroy: What profile?
+[20.08.21 11:17:55] allen: Like not called????
+[20.08.21 11:19:06] allen: Look at the profile name: crypter3_rudll_dll. It matches the one in stubs,
+[20.08.21 11:19:29] elroy: Now, just a moment.
+[20.08.21 11:21:43] elroy: https://43oxsnqlub6aydymkwpn3agaaj7u2qexx4vwybgrwug46c6yldhuheid.onion/crpanel/#/stubList
+[20.08.21 11:22:03] elroy: Find crypter3_rundll_dll there
+[20.08.21 11:22:26] elroy: It reads zero for me
+[20.08.21 11:24:52] elroy: dll_rundll_crypter3 corresponds to dll_rundll_crypter3
+[20.08.21 11:25:33] allen: I see. I still have BIULD.... spinning in my icon
+[20.08.21 11:26:09] allen: Although there are 4 fails in the reports
+[20.08.21 11:26:20] elroy: Told you!
+Build Triggers -> Authentication Token.
+The name must match the profile. That's where generic_exe comes in.
+[20.08.21 11:27:15] elroy: Check all profiles. Otherwise it won't work...
+[20.08.21 11:42:17] allen: Problem. In Console output:
+
+*****
+[20.08.21 11:42:19] allen: 1 file(s) copied.
+Archiving artifacts
+Finished: SUCCESS
+[20.08.21 11:43:01] allen: That means the build was successful! And in cryptopanel: FAILED.
+[20.08.21 11:43:58] allen: Ah, no it's fine. I didn't see it. Sight, man....
+[20.08.21 11:45:11] elroy: ok, i.e. is the first one there?
+[20.08.21 11:45:27] allen: Yes.
+[20.08.21 11:45:36] elroy: Great)
+[20.08.21 11:46:15] elroy: There's a scan in the panel, there's an S button first in the column
+[20.08.21 11:46:22] elroy: Same place as B
+[20.08.21 11:46:38] allen: I got it.
+[20.08.21 11:57:51] allen: I have one problem with static:
+Webroot SecureAnywhere ......................... Detected [ Malware ]
+[20.08.21 11:58:25] elroy: It's not a problem
+[20.08.21 11:58:36] elroy: This AV is usually excluded from scan
+[20.08.21 11:58:52] elroy: panel is set to exclude too, but there's a bug and it appeared again
+[20.08.21 11:59:02] elroy: If there are no others, fine
+[20.08.21 11:59:12] allen: Yes
+[20.08.21 11:59:42] allen: I will continue to make other 2 profiles: BK and LEO.
+[20.08.21 12:01:46] elroy: And files themselves work scripted?
+[20.08.21 12:02:39] allen: I crypted my files - everything worked.
+[20.08.21 12:03:43] allen: I don't try to work load, because I don't know what they must do (
+[20.08.21 12:04:19] allen: Let authors try it.
+[20.08.21 12:04:36] elroy: Right)
+[20.08.21 12:05:32] allen: Shellcode took from testBuild. Everything worked - it displayed MessageBox Hello world.
+[20.08.21 12:05:43] allen: For 32 and 64.
+[20.08.21 12:06:53] elroy: Everything is fine then.
+[20.08.21 13:41:45] elroy: Wild will write to you, his scripted bot didn't work. The bot is logged, but even the log is not created, i.e. file is not running. Figure out why, on the local machine does not run, only on the test
+[20.08.21 13:42:42] allen: I got it. He already contacted me.
+[24.08.21 08:17:18] allen: Hi. I don't know what Wild is doing, but it shows me that everything is being called.
+[24.08.21 08:18:08] elroy: You should know what he's doing. There is no problem with the build, the version of /MT or /MD
+[24.08.21 08:18:19] elroy: Greetings)
+[24.08.21 08:22:36] allen: The /MT version. I asked him, he said he didn't remember the command line he was calling. If he was calling a function that didn't exist, then naturally it didn't get called. I'm about to make builds with logging (OutputDebugStringA). You plug them into the cryptopanel (_log suffix). And let Wild try again, but with DebugView.
+[24.08.21 08:23:20] elroy: Ok, let's do that with
+[24.08.21 08:41:04] allen: Done.
+[24.08.21 08:45:08] elroy: Added
+[24.08.21 08:49:17] allen: When Wild shows up, crack him up. Me too.
+[24.08.21 08:49:52] elroy: Okay.
+[31.08.21 14:09:28] allen: Hey. It worked. There was a mistake, as always. But it took a long time to find it.
+[31.08.21 14:10:53] allen: I got a task from Orval to calculate hash. So the other 2 profiles are postponed.
+[31.08.21 14:11:01] elroy: What kind of error?)
+[31.08.21 14:11:01] elroy: Greetings.
+[31.08.21 14:11:31] elroy: The priority is yes, count the hashes. Then go back to two profiles.
+[31.08.21 14:12:00] allen: Error in source generator: jmp in wrong place.
+[31.08.21 14:12:09] elroy: hashes can be counted in half a day, he must have skimmed a script in python.
+[31.08.21 14:12:20] elroy: Aah!)
+[31.08.21 14:12:21] elroy: It happens)
+[31.08.21 14:13:29] allen: I lost, if he skimmed. I don't remember. It was last Thursday, I think.
+[31.08.21 14:14:56] elroy: ``
+Link to download the archive with the binary
+https://github.com/ssdeep-project/ssdeep/releases/download/release-2.14.1/ssdeep-2.14.1-win32-binary.zip
+
+1. Unpack the archive
+2. Build n (10) crypts with the same assembly
+3. Put them all into one folder (samples)
+4. Generate file with crypts' signatures:
+ssdeep\ssdeep.exe -b ssdeep\samples\* > ssdeep\signatures.txt
+
+5. Compare each signature with each crypt:
+ssdeep\ssdeep.exe -m ssdeep\signatures.txt -b -a -s ssdeep\samples\*
+
+Python script for automation
+
+import os
+import sys
+
+cryptors_count = 10
+cryptor_parameters = 'main.py --profile generic --type exe --payload payloads\\\hello86.exe --out ssdeep\\\samples\\'
+generate_hashes_cmd = 'ssdeep\\\ssdeep.exe -b ssdeep\\\samples\* > ssdeep\\signatures.txt'
+compare_hashes_cmd = 'ssdeep\\\ssdeep.exe -m ssdeep\\\signatures.txt -b -a -s ssdeep\\samples\*'
+
+
+def remove_samples():
+    for f in os.listdir('ssdeep\\\samples'):
+        os.remove(os.path.join('ssdeep\\\samples', f))
+
+
+def generate_crypts():
+    For i in range(0, cryptors_count):
+        os.system(sys.executable + ' ' + cryptor_parameters + str(i) + '.exe')
+
+
+def compare_hashes():
+    os.system(generate_hashes_cmd)
+    os.system(compare_hashes_cmd)
+
+
+def main():
+    remove_samples()
+    generate_crypts()
+    compare_hashes()
+
+
+if __name__ == "__main__":
+    main()
+
+But it will have to be rebuilt for you
+```
+[31.08.21 14:18:14] allen: *Build n (10) crypts with the same assembly
+Which cryptos? My crypts? With what profile?
+[31.08.21 14:18:50] elroy: Each profile is 10 crypts
+[31.08.21 14:19:30] elroy: Also by architecture, x86 - 10, x64 - 10
+[31.08.21 14:19:55] allen: My crypts?
+[31.08.21 14:19:59] elroy: dll->exe and exe->exe are basically the same thing, it's probably redundant there...
+[31.08.21 14:20:01] elroy: Yes
+[31.08.21 14:20:12] elroy: Take any load and script it
+[31.08.21 14:20:29] elroy: Make crypto sets, compare them, like by the instruction
+[31.08.21 14:20:50] allen: I see.
+[02.09.21 07:47:06] elroy: hello
+[02.09.21 09:21:38] allen: Hi.
+[02.09.21 09:22:21] elroy: Need clean crypter for porfil x64 shellcode exe today
+[02.09.21 09:22:49] allen: I have one.
+[02.09.21 09:23:06] elroy: Do you have it on buildmachine?
+[02.09.21 09:23:08] allen: Profile default/.
+[02.09.21 09:23:32] allen: On the build machine.
+[02.09.21 09:24:25] elroy: Ok, thanks, I got it.
+[02.09.21 09:29:38] elroy: I built file, it did not build.
+exe_shellcode_64_crypter3
+Check logs to see what's wrong.
+[02.09.21 09:38:15] allen: How do I access logs again?
+[02.09.21 09:43:05] allen: Not found devenv.exe
+[02.09.21 09:46:08] elroy: Correct address in the script
+[02.09.21 09:46:17] elroy: What is it now?
+[02.09.21 09:46:49] allen: set msbuild="C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe"
+[02.09.21 09:48:56] elroy: Strange, the address is correct. I'll look it up.
+[02.09.21 09:49:29] elroy: Can you do it manually?
+[02.09.21 09:49:37] elroy: crypt
+[02.09.21 09:50:17] allen: I have Professional
+[03.09.21 08:48:19] elroy: Hello again
+[03.09.21 08:48:33] elroy: There is a requirement new for rundll and for all dependent profiles, to skip when generating a function named DllMain from the load export table.
+I.e. so that this name doesn't overlap with a real function with the same name in the code
+[03.09.21 08:49:05] elroy: (usually everyone has a compile ishbug)
+[03.09.21 08:50:44] allen: What's that? The DllMain function in the export table? Who invented it?
+[03.09.21 08:50:57] elroy: Somebody invented it))
+[03.09.21 08:51:07] elroy: And now we're not going to have cryptors))
+[03.09.21 08:51:49] allen: I see. I'll correct...)
+[03.09.21 08:52:09] allen: By the way, when's the pay? Don't you know?
+[03.09.21 08:53:28] elroy: frances promised before friday.
+[03.09.21 08:53:35] elroy: I'm waiting myself.
+[03.09.21 08:54:10] allen: He only promised. Where is he himself? Not on vacation?
+[03.09.21 08:54:19] elroy: No, not on vacation.
+[03.09.21 08:54:41] elroy: He shows up at night.
+[03.09.21 08:54:55] elroy: Probably busy with something...
+[03.09.21 08:55:07] allen: Probably...
+[03.09.21 09:02:49] allen: Done
+[03.09.21 10:59:00] elroy: In place?
+[07.09.21 06:50:21] allen: Hi. Again, describe my vulnerability problem.
+[07.09.21 06:51:05] allen: I'm working with elijah today and yesterday on his problem.
+[07.09.21 06:53:51] elroy: Hi. What problem exactly? I faintly remember something...
+[07.09.21 07:22:10] allen: problems with his load, that my stub is not working well with his ProcessHolowing.
+[07.09.21 07:28:16] elroy: will be wild, about 12:00 Moscow time, will build again will check, will say what's wrong
+[07.09.21 07:28:58] elroy: From past problems
+```
+elijah wrote that in the 3 stub some checks are done, because of them does not work when he restarts crypt fileless
+```
+[08.09.21 07:01:18] elroy: Greetings. If you wrote something, it didn't come
+[08.09.21 07:03:43] allen: Hi. I didn't write anything. What did you tell me about the detects? Sort of that you've encountered them, they're due to an empty DllMain in the load. What does that mean and how to deal with it?
+[08.09.21 07:05:21] elroy: Ah, these two detects we've been seeing are exactly with the standard DllMain. To fight it is simple, to stuff it with some garbage.
+[08.09.21 07:07:49] allen: In the load? How do I fill it up?
+[08.09.21 07:08:38] elroy: You can't) Not in load, but in crypter's stub
+[08.09.21 07:09:07] elroy: If on exe, then there, too, you have to extend main()
+[08.09.21 07:12:36] allen: Only in my DllMain all magic is done...
+[08.09.21 07:13:33] allen: I need to scratch my head...
+[08.09.21 14:23:07] allen: You've turned on log for rundll only for me. Include more for generic exe/
+[14.09.21 14:36:01] elroy: Greetings.
+[15.09.21 09:10:00] allen: Hi
+[15.09.21 09:10:27] elroy: Hello
+[15.09.21 09:10:44] allen: Hello
+[15.09.21 09:11:20] elroy: I'm on vacation from 16 to 30, instead of me collin and orval
+(don't remember if I wrote or not)
+[15.09.21 09:12:22] allen: Good. I'm redoing the cryptor normally right now. It's going to be CR3. In asm. There will be no C code.
+[15.09.21 09:13:18] elroy: Does C code cause problems?
+[15.09.21 09:13:35] allen: Too big.
+[15.09.21 09:13:49] allen: And fat.
+[15.09.21 09:13:59] elroy: I'm more concerned about cleanliness from detects.
+[15.09.21 09:14:11] elroy: It will take a long time to do, but will it be effective...
+[15.09.21 09:14:11] allen: Already clean.
+[15.09.21 09:14:31] allen: No. Not long...
+[15.09.21 09:14:39] elroy: What about shellcode profile rundll, will it be clean too?
+[15.09.21 09:14:49] allen: Yes
+[15.09.21 09:15:51] elroy: Ok, thanks, let's try it. Ok, do cr3 )
+[22.10.21 08:09:17] allen: Hi. OTR?
+[25.10.21 14:59:25] elroy: Greetings. I got a blank message.
+[10/25/21 14:59:59] elroy: Hello. I got an empty message.
+[25.10.21 15:02:21] elroy: Try it.
+[10/25/21/15:03:14] elroy: But you have to dilute it all the time. Cryptors have to be rewritten.
+Look for assembly code obfuscators.
+[10/25/1921 15:03:45] elroy: So he can see what the code's doing
+[25.10.21 15:06:21] elroy: Try all the ideas
+[28.10.21 12:22:43] elroy: Greetings.
+[28.10.21 14:20:38] elroy: Greetings.
+[28.10.21 14:21:52] elroy: Profile bk, cranked the load, ran it, got this:
+```
+after starting through the batik, cmd did not close, hangs two rundll32.exe apparently the primary process has not finished, so the window hangs. But the function is fully executed
+```
+[28.10.21 14:22:43] elroy: What can it be, look?
+[28.10.21 14:34:17] elroy: It's possible that an ExitProcess was called, most likely. Would you be able to fix this place?
+[28.10.21 14:37:37] elroy: I can send you the file
+[28.10.21 14:40:23] elroy: Probably does this
+[28.10.21 14:40:27] elroy: ``
+case DLL_PROCESS_ATTACH:
+
+
+aaa = hinstDLL;
+cmdl = GetCommandLine();
+
+
+if (cmdl) {
+if (StrStrA(cmdl, _STR("rundll32"))) {
+
+
+if (!StrStrA(cmdl, _STR(",#1"))) {
+
+char fname[MAX_PATH] = "";
+
+GetModuleFileNameA((HMODULE)hinstDLL, fname, sizeof(fname));
+
+debug_printf("%s(): fname = %s", __FUNCTION__, fname);
+
+char cmd_path[1024];
+char cmd_arg[1024];
+
+lstrcpyA(cmd_path, _STR("C:\\\Windows\\\SysWOW64\\\rundll32.exe"));
+lstrcpyA(cmd_arg, cmd_path);
+lstrcatA(cmd_arg, " ");
+lstrcatA(cmd_arg, fname);
+lstrcatA(cmd_arg, _STR(",#1"));
+
+
+STARTUPINFO si;
+PROCESS_INFORMATION pi;
+
+ZeroMemory(&si, sizeof(si));
+si.cb = sizeof(si);
+ZeroMemory(&pi, sizeof(pi));
+CreateProcess(cmd_path, cmd_arg, NULL, NULL, FALSE, 0, NULL, NULL, &si, &pi);
+ExitProcess(0);
+}
+
+}
+}
+break;
+```
+[28.10.21 14:46:16] elroy: Make a close handler.
+[29.10.21 07:55:48] allen: Hi. OTR?
+[29.10.21 07:58:24] elroy: Priority is to re-sit profile of uk and redo deadlock, then x86
+[29.10.21 08:04:42] elroy: Yeah, 32 bit load
+[29.10.21 08:04:57] elroy: Yes, I agree, so all the above is a priority))
+[29.10.21 09:54:36] elroy: Say, do you handle errors in asm, say, calling a non-existent opcode where will lead?
+[29.10.21 11:02:29] elroy: Let's say there's an rdrand instruction, it's implemented on some CPUs and not on others.
+The thought is, check its support via cpuid and call it if it's not there. Where do we end up? Do you have a handler?
+This kind of technique allows to fight with AV emulators. For example, it could be that on a CPU where the instruction is not supported it will work correctly on the emulator, it will be possible to understand that we are in emulation.
+[29.10.21 11:03:27] elroy: Well exactly this one no... I mean the idea itself.
+[29.10.21 11:03:36] elroy: We have to fight the emulators
+[29.10.21 11:14:40] elroy: And mutex is random?
+[29.10.21 11:14:57] elroy: Name you mean
+[02.11.21 08:07:49] allen: Hi. At the request of orval made a profile of ET. Create a stub, please.
+[02.11.21 08:08:21] elroy: Greetings. Ok, now)
+[02.11.21 08:08:35] elroy: How's the cleanup going?
+[02.11.21 08:09:31] allen: 32-bit is not yet. I can't beat AhnLab V3 Light. Even with empty cryptor gives out: Malware/Win32.Generic. ((
+[02.11.21 08:09:55] allen: I'm scratching my head what to do...
+[02.11.21 08:11:06] elroy: And did you solve your mutex problem?
+[02.11.21 08:11:46] allen: Not solved yet.
+[02.11.21 08:12:14] elroy: In ET profile it is critical
+[02.11.21 08:22:31] allen: So, go ahead and decide. But it's my birthday today. I'll probably work off Saturday for today. Although, maybe I will. By the way, what to do the hook to close the application? On ExitProcess?
+[02.11.21 08:23:21] elroy: Maybe.
+[02.11.21 08:23:32] elroy: Good. Congratulations!)
+[02.11.21 08:23:52] allen: Thank you.
+[02.11.21 10:49:44] elroy: Let me know when you do.
+[02.11.21 10:51:36] allen: I'm here. Studying. question.
+[02.11.21 10:52:24] elroy: New task from silver.
+Need to store made crypts for at least two weeks.
+Need to keep records of builds and loads.
+What load, from whom received + date and time, what was crypted with, hashes.
+Need to be able to give such information on request (for last two weeks).
+This is for manual crypts, for panel we'll think of something
+[02.11.21 10:52:32] elroy: hashes count sha1
+[02.11.21 10:53:05] allen: Got it.
+[02.11.21 10:53:45] allen: I have a linux server at home. I can collect all this information on it.
+[02.11.21 10:54:32] elroy: Encrypt it well.)
+[03.11.21 10:32:30] elroy: Here.
+[03.11.21 10:32:33] elroy: That's good.
+[03.11.21 10:32:51] elroy: Problem with building crypto profile et - not building
+[03.11.21 10:33:01] elroy: Correct
+[03 11.11.21 10:33:19] allen: I'll take a look.
+[03 11.11.21 11:57:40] allen: I think I did.
+[03.11.21 12:16:25] elroy: Now I need to clean up
+[03.11.21 12:16:40] elroy: ``
+https://dyncheck.com/scan/id/1b577d0ecd5da4691de8a0362403d2e6
+https://dyncheck.com/scan/id/da1b3e5f6bf686695c2542dca48b298c
+```
+[03.11.21 12:18:15] elroy: In ET-Loader-x86 autocrypts
+[03.11.21 12:32:16] allen: I told you it's not ready for x86 yet.
+[10.11.21 08:19:32] allen: Hi. OTR?
+[10.11.21 08:20:12] elroy: Hello.
+[10.11.21 08:22:47] allen: I was working with Wild yesterday and found out that if I build on build machine stably 2 detects go, if I build manually no detects:
+
+На билд-машине: https://dyncheck.com/scan/id/fd0544d05a9e3417c9410395503b6e29
+Manually: https://dyncheck.com/scan/id/f189e6de0cf8bdb18fc7c6858730037c
+[10.11.21 08:23:27] allen: There seems to be a problem with GIT. It's pumping out the wrong version.
+[10.11.21 08:24:18] elroy: Repeat messages please, not all seem to come
+[10.11.21 08:24:34] allen: I was working with Wild yesterday and found out that if I build on build machine stably go 2 detects, if manually, no detects:
+
+На билд-машине: https://dyncheck.com/scan/id/fd0544d05a9e3417c9410395503b6e29
+Manually: https://dyncheck.com/scan/id/f189e6de0cf8bdb18fc7c6858730037c
+There seems to be a problem with the GIT. It's pumping out the wrong version.
+[10.11.21 08:26:52] allen: And the manual build is:
+git clone.
+Changing the build.bat to VS Professional
+build.bat
+
+And that's it.
+[10.11.21 08:27:40] allen: build.bat with parameters from log on Jenkins
+[10.11.21 08:29:02] elroy: There is a problem that the detects are different. This is because of the trace that the machine leaves. These two in particular have been on almost all of our crypto machines, and under these exact circumstances. And that's interesting.
+But about the git, I don't think it's the problem. Are you sure it's the git that's the problem? As an alternative, create a new profile, specify a branch and make a build. Will it be the same?
+[10.11.21 08:30:56] elroy: And compare the two files. You might see a difference somewhere.
+[10.11.21 08:32:57] elroy: Not only that, silver set a bonus for those who will definitely find the trail of the car and describe how it hooks
+[10.11.21 08:35:41] elroy: Of the traces found so far, this is the linker` version, here presumably the character linking order and exactly the version in the PE header. Also Rich hiter.
+[10.11.21 08:40:17] allen: There is no machine trace. The following commands are running there:
+git.exe rev-parse --is-inside-work-tree
+git.exe config remote.origin.url https://95.179.129.40/fed/cryptor3
+git.exe rev-parse --verify HEAD
+git.exe reset --hard
+git.exe clean -fdx
+git.exe --version
+git --version
+git.exe fetch --tags --force --progress -- https://95.179.129.40/fed/cryptor3 +refs/heads/*:refs/remotes/origin/*
+git.exe rev-parse "refs/remotes/origin/master^{commit}"
+git.exe config core.sparsecheckout
+git.exe checkout -f REQUIRED_VERSION NUMBER
+git.exe rev-list --no-walk REQUIRED_VERSION NUMBER
+[10.11.21 08:41:39] allen: This is instead of just commands
+git clone https://95.179.129.40/fed/cryptor3
+git checkout master/master
+[10.11.21 08:42:53] elroy: So the other content ends up being extracted from git?
+[10.11.21 08:43:19] allen: Yeah, it's very similar.
+[10.11.21 08:43:32] elroy: git.exe checkout -f -wipes out anything not in the commit
+[10.11.21 08:44:47] allen: It does. But the result is that I didn't get any files, but what's interesting is that the commands keep running.
+[10.11.21 08:45:11] elroy: Interesting. I'll have a look.
+[10.11.21 08:45:21] allen: Have a look.
+[10.11.21 08:46:38] allen: Then it calls the batcnik that copies the source and the batcnik that calls build.bat
+[10.11.21 09:20:08] elroy: Jenkins's address was updated
+```
+https://abhfcascgppcauw3sbrszzqivkuwqrqfqxlsmjalzmcm37zom2soipyd.onion
+```
+[10.11.21 09:52:41] elroy: Say, what profile?
+[10.11.21 10:46:50] allen: RUNDLL
+[10.11.21 10:50:05] allen: I think all profiles.
+[10.11.21 13:21:01] elroy: I did a file check that extracts the git
+[10.11.21 13:21:42] elroy: Write and we'll discuss.
+[10.11.21 13:22:04] elroy: The files are identical, but I changed the profile settings slightly before that
+[10.11.21 14:47:04] allen: Write what?
+[10.11.21 14:47:41] elroy: Check for yourself that the git is extracted correctly
+[10.11.21 14:47:46] elroy: Let me write the instructions
+[10.11.21 14:49:31] elroy: Choose any profile and fix it, in profile settings add Execute bath before calling build... and in the field write this
+```
+fciv -add %cd% -r -bp %cd% -sha1 -xml fciv_db.xml
+exit /B 0
+```
+Then bring down the file from the panel and download fciv_db.xml from the artifacts
+Extract the same vector on your machine, put the file there and run the command from the console in the directory
+```
+fciv -v -bp %cd% -sha1 -xml fciv_db.xml
+```
+It will check the files (hash sums in the database)
+fciv can either download or on the microsoft site if you can (the server is already installed)
+[10.11.21 15:17:22] allen: File Windows-KB841290-x86-ENU.exe with fciv not available anymore...
+[10.11.21 15:19:35] elroy: drop?
+[10.11.21 15:23:41] allen: Go ahead.
+[10.11.21 15:25:14] elroy: ``
+https://file.io/hxAsxNfq6Dk0
+DyGc6djJjshdgG
+```
+[10.11.21 15:27:45] allen: thank you.
+[10.11.21 15:43:58] allen: ``The result:
+
+//
+// File Checksum Integrity Verifier version 2.05.
+//
+Starting checksums verification : 11/10/2021 at 18h42'35
+
+
+
+List of modified files:
+
+-----------------------
+
+.git\config
+
+	Hash is : 3d0ecc4279865748a4bb86c4dcad99780522d2ad
+
+	It should be : 45a11039237e6e5042483c9ed80fcf3f47892602
+
+
+Unable to Hash file .git\FETCH_HEAD
+
+
+
+	Error msg : Cannot find specified file.
+
+	Error code : 2
+
+
+
+.git\HEAD
+
+	Hash is : 92c132ba61359c0257c7339bc0d89bdbc0f5f22e
+
+	It should be : acbaef275e46a7f14c1ef456ff2c8bbe8c84724
+
+
+Unable to Hash file .git\hooks\push-to-checkout.sample
+
+
+
+	Error msg : Cannot find specified file.
+
+	Error code : 2
+
+
+
+.git\index
+
+	Hash is : 4666395eba8ca8c43c79fc8cdb50eed4b11b536b0b
+
+	It should be : 74cd96971427206d853155db1f0f1fc765b5c9f2
+
+
+.git\logs\HEAD
+
+	Hash is : 7882a21d65a07ca535aa65777c3895fd1d100fe8
+
+	It should be : 01f1014f95a77c93d57c3833f8362ac8fcdb9008
+
+
+Unable to Hash file .git\logs\refs\remotes\origin\develop
+
+
+
+	Error msg : Cannot find specified file.
+
+	Error code : 2
+
+
+
+Unable to Hash file .git\logs\refs\remotes\origin\master
+
+
+
+	Error msg : Cannot find specified file.
+
+	Error code : 2
+
+
+
+Unable to Hash file .git\logs\refs\remotes\origin\test
+
+
+
+	Error msg : Cannot find specified file.
+
+	Error code : 2
+
+
+
+Unable to Hash file .git\refs\remotes\origin\develop
+
+
+
+	Error msg : Cannot find specified file.
+
+	Error code : 2
+
+
+
+Unable to Hash file .git\refs\remotes\origin\master
+
+
+
+	Error msg : Cannot find specified file.
+
+	Error code : 2
+
+
+
+Unable to Hash file .git\refs\remotes\origin\test
+
+
+
+	Error msg : Cannot find specified file.
+
+	Error code : 2
+
+
+
+Unable to Hash file 88221_47537_crp_input.dll
+
+
+
+	Error msg : Cannot find specified file.
+
+	Error code : 2
+
+
+
+Unable to Hash file fciv_db.xml
+
+
+
+	Error msg : Cannot find specified file.
+
+	Error code : 2
+
+
+
+
+
+End Verification : 11/10/2021 at 18h42'37
+[10.11.21 15:44:53] elroy: This is a .git folder
+[10.11.21 15:44:58] elroy: It may be different
+[10.11.21 15:45:59] allen: I gave the command D:\Work\HackerWork\Cryptor__\payloads\detect\cryptor3>fciv -v -bp %cd% -sha1 -xml ..\fciv_db.xml >> my.txt
+[10.11.21 15:46:43] elroy: All project files are in place. The only differences are in the .git/ folder and that there is no 88221_47537_crp_input.dll and fciv_db.xml
+[10.11.21 15:49:15] allen: Started scanning the project for static....
+[10.11.21 15:49:41] allen: what i knocked down in cryptopanel.
+[10.11.21 15:50:15] elroy: You use studio for statics, right?
+[10.11.21 15:51:20] allen: Yes. I have Professional...
+[10.11.21 15:51:25] allen: https://dyncheck.com/scan/id/b06208dd383099787984724d0f554b90
+[10.11.21 15:51:35] allen: 2 Detects.
+[10.11.21 15:53:33] allen: I have an idea to check compiler. I'm about to insert additional commands into build.bat to save the payloadgen result. And we'll check it.
+[10.11.21 15:59:48] allen: Can you put on Jenkins PSCP.EXE from PUTTY package?
+[10.11.21 16:03:15] allen: Or rather, on Jenkins+Cryptopanel.
+[10.11.21 16:03:33] elroy: Which scenario do you need it in?
+[10.11.21 16:04:37] allen: Let it be. This program allows to copy via SSH. Analogue to linux scp
+[10.11.21 16:05:07] elroy: I don't know what it is for.
+[10.11.21 16:08:33] elroy: These two detections are most likely related to the linker version. The studio version that you have on your machine and the one you have at work are different. I can send you linkers you use on Jenkins, copy them to yourself (take back the original ones). It will be the same two detects
+[10.11.21 16:08:41] allen: I need for experiment: I modify build.bat, so that after using payloadgen, it will transfer the generated payloadgen files to my server. I'll fiddle with these files here as well. Then fc /b with the file knocked down from cryptopanel. And see the result. The difference should be at most 2 chunks of 183 bytes each.
+[10.11.21 16:10:35] elroy: You don't have to worry about crypto. Files can be downloaded from Jenkins, the same ones that were used for the build
+[10.11.21 16:10:46] elroy: *with the script
+[10.11.21 16:11:02] elroy: There among the artifacts
+[10.11.21 16:11:11] elroy: still need scp ?
+[10.11.21 16:14:08] allen: they are deleted by my script.(
+[10.11.21 16:14:38] elroy: So fix the script, don't delete
+[10.11.21 16:14:47] allen: You can comment out delete....
+[10.11.21 16:14:57] allen: One second.
+[10.11.21 17:00:27] allen: Well, we caught the problem:
+В криптопанели: https://dyncheck.com/scan/id/2f3155e6fa09007d2b7bf3c2e7526167
+У меня: https://dyncheck.com/scan/id/5accf00038dc33d5a9c82201d6384893
+
+Difference: https://file.io/zusyBaHsbkfD
+[10.11.21 17:01:09] allen: While file sizes are the same.
+[10.11.21 17:03:13] allen: The difference shows that the difference is already in NT header....
+[10.11.21 17:03:55] allen: I can send you map file.
+[10.11.21 17:04:19] elroy: Can you find what is different and gives a detector?
+[10.11.21 17:04:28] elroy: Last bytes are also interesting
+[10.11.21 17:04:54] allen: I'll try. But tomorrow.
+[10.11.21 17:05:27] elroy: Ok.
+[11/15/1921 06:47:56] elroy: I wrote on Friday about the comparison of two files. I got distracted, I never understood what was there. Sorry. Can you tell me again what you got?
+[15.11.21 06:49:03] allen: I'm quoting myself:
+
+ Explain it to me please:
+Here is the DOS Header of the DLL:
+
+<DOS Header>
+Magic number: 5A4D (MZ)
+Bytes on last page of file: 0090 (144)
+Pages in file: 0003 (3)
+Relocations: 0000 (0)
+Size of header in paragraphs: 0004 (4)
+Minimum extra paragraphs needed: 0000 (0)
+Maximum extra paragraphs needed: FFFF (65535)
+Initial (relative) SS value: 0000 (0)
+Initial SP value: 00B8 (184)
+Checksum: 0000 (0)
+Initial IP value: 0000 (0)
+Initial (relative) CS value: 0000 (0)
+File address of relocation table: 0040 (64)
+Overlay number: 0000 (0)
+Reserved words (4): x0000,x0000,x0000,x0000
+OEM identifier: 0000 (0)
+OEM information: 0000 (0)
+File address of new exe header: 0118 (280)
+Reserved words (10): x0000,x0000,x0000,x0000,x0000,x0000,x0000,x0000,x0000,x0000
+
+It says here:
+Bytes on last page of file: 0090 (144)
+Pages in file: 0003 (3)
+
+So the module size is 512 * (3 - 1) + 144 = 1168 bytes. The PE header is offset 280 bytes from the beginning. What's that supposed to mean?
+5:56 AM.
+[11/15/1921 06:52:53] elroy: Well, the order of headers isn't fixed. File address of new exe header - that's why it's used. But what's in between, I wonder
+[11/15/21/221 06:56:32] allen: That's right. But if I'm writing a program to compare 2 files, it's reasonable to write a DOS EXE comparison as well. Our first difference starts with RVA 0x003C. And this is the DOS part.
+[15.11.21 06:58:25] elroy: The PE file itself is built by the linker. Depending on the rejection, it may assemble the file differently. Find the difference, such as version
+[16.11.21 09:35:31] allen: Hi. OTR?
+[16.11.21 09:36:21] allen: I have finished analysis.
+[16.11.21 09:37:18] elroy: Hello.
+[16.11.21 09:45:41] elroy: Hello again.
+[16.11.21 09:45:44] elroy: Connection was lost...
+[16.11.21 09:56:18] allen: I finished the analysis.
+[16.11.21 10:04:03] elroy: Send it better in parts. You can't send a big text in this chat.
+[16.11.21 10:04:26] elroy: Or save it before you send it, otherwise it will collapse in the input field
+[16.11.21 10:04:33] elroy: It'll get scrambled and won't send
+[16.11.21 10:07:23] allen: The differences are as follows:
+
+1. DOS section. The PE header offset is different by 8 bytes. The contents are different. (Seems to me MS is storing bits of uninitialized memory area as usual).
+2. Section .flat - the section is created by fasm. The difference is 2*177 bytes. This is normal, because I generate random numbers of 177 bytes in 2 places.
+2. Section .text:
+00011E7C: 0E 29
+00011E85: 23 04
+00011E8C: 7D 5A
+00011E90: 6F 48
+00011E94: 78 5F
+00011E98: 6B 4C
+00011E9C: 51 76
+00011EA0: 7E 59
+00011EA4: 6F 48
+00011EA8: 77 50
+00011EAC: 62 45
+00011EB0: 61 46
+00011EB4: 6F 48
+00011EB8: 6A 4D
+
+Here the offsets (1st number) are relative to the beginning of the section. Since the size of the resulting file is the same, the 8 bytes of difference in the DOS section must be caught up somewhere.
+
+So in our case there are 2 places that can serve as an AB signal:
+1. the DOS section.
+2. 14 bytes in the .text section
+
+How do I work with the map file? Section 11E7C in IDA points to the left data.
+[16.11.21 10:17:17] elroy: In map file is table with addresses, virtual and rva + base, by these and look addresses (by rva+base).
+[16.11.21 10:18:02] allen: Example?
+[11/16/21 10:18:46] allen: 0002:00013df0 myLoadLibrary 0000000180016df0 f myloadlibrary.obj
+[11/16/21 10:19:26] allen: 0002:00000000 00011db0H .text CODE
+[11/16/21 10:19:52] elroy: The idea is different from the map.
+Sometimes it's missed an offset.
+Can be due to ida/linker bugs.
+I've run into this myself.
+Need to figure out what you see, in this case I take it it's offset addresses. Ida shows it correctly, in ide you have to go to File Offset.
+After the switch, it will say Virtual next to it.
+[16.11.21 10:19:57] elroy: Just a moment, I will look
+[16.11.21 10:23:18] allen: Will the WP be today? Franz didn't answer me anything yesterday or today.
+[16.11.21 10:23:34] elroy: That only he knows
+[16.11.21 10:23:40] elroy: I didn't get either.
+[16.11.21 10:27:33] elroy: there's a table in the map file
+```
+ Address Publics by Value Rva+Base Lib:Object
+
+ 0000:00000000 ___guard_fids_count 00000000 <absolute>
+...
+```
+
+Address is the offset in the file
+Rva + base - this is address, where will be deployed, taking into account the base
+[16.11.21 10:28:14] elroy: Are the map files the same?
+[16.11.21 10:28:54] allen: I don't know. I didn't save it on the build machine.
+[16.11.21 10:30:29] elroy: ``
+So in our case there are 2 places that could serve as an AB signal:
+1. the DOS section.
+2. 14 bytes in the .text section
+```
+Replace the 14 bytes from the clean one on the dirty one. Will the detector go away? Then it's about them.
+If not, it's the first one.
+(the easiest check)
+[16.11.21 10:30:51] elroy: But most likely it works together as a signature
+[16.11.21 10:31:08] elroy: Do a test, save both map files to compare
+[17.11.21 08:14:43] elroy: Greetings
+[17.11.21 11:15:52] allen: Hi.
+[11/18/21 09:11:51] allen: Hi. Turns out the AV is affected by the DOS section. That's all. Now I will try to kill it with zeros.
+[18.11.21 09:12:36] elroy: Exactly dos section, maybe some specific fields?
+[11/18/21 09:14:39] allen: No. There is empty space between caption This program cannot run in DOS mode! and PE header.
+[11/18/21 09:15:43] allen: there are some bytes there
+[18.11.21 09:15:48] elroy: 0x80 - 0xEF ?
+[18.11.21 09:17:16] allen: PE header is shifted in Cryptopanel case by 8 bytes back.
+[18.11.21 09:17:42] elroy: You're the one who found the Rich header
+[18.11.21 09:18:10] allen: I guess.
+[18.11.21 09:18:21] elroy: Just a minute, I'll give you an article on it
+[18.11.21 09:19:12] elroy: ``
+https://bytepointer.com/articles/the_microsoft_rich_header.htm
+https://www.ntcore.com/files/richsign.htm
+```
+[18.11.21 09:19:19] elroy: For your review
+[18.11.21 09:19:24] elroy: Yes, it has to be corrected
+[18.11.21 09:19:35] elroy: But it is not coded with zeros, otherwise the detector
+[18.11.21 09:20:07] elroy: The easiest way is to take it from any Microsoft file, from explorer.exe or somewhere else.
+[18.11.21 09:20:18] elroy: I do that. The detects go away.
+[18.11.21 09:20:50] elroy: It's usually at an offset
+```
+0x80 - 0xEF
+```
+[19.11.21 13:25:16] elroy: Greetings
+[19.11.21 13:31:42] allen: Hi. I'm writing a riddance to the Rich header.
+[19.11.21 13:33:38] allen: I looked, files made with fasm, without this header. The size is 0x80 bytes. Exactly.
+[19.11.21 13:34:54] elroy: Say, how do you plan to clean modules where the code is in asm?
+[19.11.21 13:35:04] elroy: There's a holoving loader
+[19.11.21 13:35:59] allen: They clean up fine. By injecting lefty code with macros.
+[19.11.21 13:36:34] elroy: When compiling code in asm, is left-handed code wedged into it?
+[19.11.21 13:36:50] allen: Yes.
+[19.11.21 13:37:14] elroy: And the dll loader is also in asm?
+[19.11.21 13:37:51] allen: No. I haven't got time to remake it into asm (
+[19.11.21 13:38:11] elroy: I see.
+[19.11.21 13:38:52] elroy: How much time would it take to convert it to asm as well, including adding code obfuscation (macros embedding) ?
+[19.11.21 13:39:33] allen: A week or two.
+[19.11.21 13:41:19] allen: I don't need macros to wedge it in. A couple of hours. Basically it's a C to asm conversion. For 2 architectures.
+[19.11.21 13:42:32] allen: It's different in asm and calls happen for 32 and 64 bits.
+[19.11.21 13:43:22] elroy: I need shellcodes for encryption, running dll and exe that can be put into another project, but they need to be protected. While I'm considering options.
+[19.11.21 13:44:31] allen: You can implement them in asm.
+[11/22/221 08:02:54] allen: Hi. OTR?
+[11/22/221 08:04:24] allen: I'm done with StripRichHeader. Everybody can use it. In my directory, crypter3 is called that.
+[22.11.21 08:05:55] allen: To not bother with transferring RVA ALL data I put an offset (filled with zeros) the missing area immediately after the section headers.
+[22.11.21 08:06:48] allen: Seems to be clean: https://dyncheck.com/scan/id/1d3264a5e83b742a8f453ba316a500ca
+[11/22/221 08:07:08] allen: Checked my DLL - everything works.
+[11/22/221 08:07:45] elroy: Okay. Thanks, I'll look at StripRichHeader.
+[22.11.21 08:08:07] elroy: There in crypters write that profile is not working correctly
+[22.11.21 08:08:12] elroy: ET profile
+[11/22/221 08:09:19] allen: Why @dolran gets angry? What kind of dll_et_crypter3 gives error No entry point: AnyString? What kind of function is AnyString?
+[22.11.21 08:11:18] allen: From orval it was not in the task.
+[22.11.21 08:12:13] elroy: Let me explain, a moment
+[11/22/221 08:17:28] elroy: ET profile has this interesting trick, when you call the library (payload), it looks with what parameters rundll32.exe was called
+In doing so, rundll32.exe first calls the library's DllMain and then the function that was specified. It does not check if such a function exists before calling the DllMain.
+So the crypt has to deploy the payload in its DllMain, call its DllMain, and punch in the result of the function.
+This profile is made based on the BK profile, which in turn is made based on the rundll profile. The rundll profile takes into account load export to crypt export. ET profile additionally takes into account ordinal number when throwing (numbers from payload exports must match crypt numbers).
+
+Then the guys summon the crypto like this
+```
+rundll32 file.dll,#1
+```
+Which means calling it by ordinal. The payload logic will check the parameters itself, restart itself with the right name, and terminate the current process.
+[22.11.21 08:19:02] elroy: And AnyString means it called this
+```
+rundll32 file.dll,AnyString
+```
+In this case, it turns out that the crypt didn't deploy the payload and didn't pass control to its DllMain.
+[22.11.21 08:20:15] allen: I had a bug in x64. If the load was x64, it would terminate before everything was done. I fixed it.
+[22.11.21 08:20:33] allen: Have him double-check it.
+[22.11.21 08:20:38] elroy: x86 load
+[11/22/221 08:21:09] allen: That's weird. I'll take a look.
+[22.11.21 08:21:23] elroy: Write to crypters chat, write "recheck ...", agree, it should work. Everyone works)
+[22.11.21 08:22:10] allen: Question, what should I do in case of `rundll32 file.dll,AnyString`?
+[22.11.21 08:23:05] allen: Export the AnyString function? And what to do in it?
+[11/22/221 08:23:08] elroy: This call will call Entrypoint of your crypt, in it you need to deploy the load and call Entrypoint of it, return the result of its execution.
+[22.11.21 08:23:21] elroy: You don't need to export anything
+[22.11.21 08:23:54] elroy: You need to route export from source to yourself, just like you do in rundll profile
+[22.11.21 08:25:42] allen: This is done. In the sense of exporting... I'll look into calling Entrypoint loads from EntryPoint crypt.
+[23.11.21 08:45:36] allen: Hi. OTR,
+[11/23/11/21 08:46:48] allen: Hi. OTR?
+[11/23/221 08:47:07] elroy: Hello.
+[11/23/11/21 08:48:55] allen: Hi. I don't understand how dolran built the project. I have the last build log from 22.11 of 11:03 PM.
+[23.11.21 08:54:35] elroy: Better check with him...
+[11/23/221 08:54:51] elroy: Or build it yourself, take his source code
+[11/23/11/21 09:00:48] allen: I just assembled my latest build and ran it on av. Everything is fine. I do not know what he wants.
+[11/23/11/21 09:01:18] allen: https://dyncheck.com/scan/id/6bf7d40e658d3dc8b4add4dd6ccb314a
+[11/23/221 09:02:05] elroy: Trojan:Win32/Wacatac.B!ml
+This detection appears on defender, on Windows10, it is necessary to get rid of it.
+[11/23/11/21 09:02:25] elroy: Dinchek incorrectly detects defender
+[11/23/11/21 09:02:59] elroy: To reproduce it on your own you need to install on vishnu vin10, update it to the latest state
+[11/23/221 09:03:09] elroy: Drop a file on it. If it gets deleted, you will have a statik detec-tion.
+[11/23/221 09:03:31] elroy: If by statics - you need to clean stack, improve algorithm of its generation.
+[11/23/221 09:03:46] elroy: If detection by dynamics, i.e. after launch, that question is moot.
+[23.11.21 09:04:07] elroy: Whether the dynamics of the cryptor, or the dynamics of the payload, or in the aggregate
+[23.11.21 09:04:33] elroy: In any case, if there's a detection in the dynamics, then the crypter should only clean up its own (dynamics of its algorithms)
+[23.11.21 09:05:43] allen: That's understandable. I have the latest 10 ka standing. At the same time defender does not say a word. I haven't even turned it off. On the load - yes. It responds. But to Krypt, no.
+[11.23.21 09:06:40] elroy: Then write to him and send him the crypt, let him check himself
+[11/23/221 09:06:58] allen: Okay.
+[25.11.21 08:40:14] elroy: Greetings.
+[11/25/21/21 09:01:59] allen: Hi.
+[25.11.21 09:02:24] elroy: Profile rundll assembly started crashing
+[25.11.21 09:02:41] elroy: ``
+ Hi. I can't close dll_rundll_crypter3.
+It says failed.
+Even though I was doing the crypts an hour ago. Help me please
+```
+[25.11.21 09:02:57] elroy: Please see why it crashes
+[25.11.21 09:03:10] allen: Let me see...
+[25.11.21 09:19:56] allen: It exports the DllGetClassObject function in the source. That's why it's not built. Such function already exists in #include <windows.h>.
+[25.11.21 09:26:23] elroy: Not long ago there was a requirement to fix a problem like this, when standard functions in export come in. Should throw its name as it is, even if it's standard. Fix please.
+[25.11.21 09:59:01] allen: And how do I do it?
+[25.11.21 10:00:08] elroy: You build stub with tudie, you must use lib.def file there
+[25.11.21 10:00:45] elroy: In it you write what function is mapped to what, ie as seen in the export
+[25.11.21 10:01:41] elroy: You take the function name in your sources and add to it a prefix, for example, or an ending
+DllGetClassObject_hfjdhfjdhsjf
+[25.11.21 10:01:52] elroy: And through lib.def you map
+[25.11.21 10:03:34] elroy: Please remind me how to deploy the assembler for the cryptor? Setting up a new server. Is the assembler just put in the root of the drive or do you need something else?
+[29.11.21 08:20:58] elroy: Hello
+[29.11.21 08:27:15] allen: Hi
+[11/29/221 08:28:21] elroy: Tell me, but if you call the buildscrypt crypt, do the crypt, then repeat without doing the cleanup. Would it work?
+[29.11.21 08:28:54] allen: It should.
+[11/29/221 08:29:52] allen: It deletes all internal files by itself. Why?
+[29.11.21 08:30:17] elroy: I want to write a script for the series.
+[29.11.21 08:30:33] elroy: How much roughly will it take to make 1k?
+[29.11.21 08:31:03] allen: Write it. Hash amounts will be different each time.
+[29.11.21 08:31:23] elroy: Well, yes, we checked fuzzy one too.
+[11/29/221 08:31:29] elroy: Checked, right?)
+[29.11.21 08:32:20] elroy: There's just an order for 1k a couple times a week. They need different ones...
+[29.11.21 08:33:15] allen: Just copy the output file.
+[29.11.21 08:33:44] elroy: That's what I wanted, then the sets into the archive and for output to the panel
+[29.11.21 11:47:21] elroy: Tell me, can I run crypto in parallel, if it's in different folders?
+[29.11.21 11:47:31] elroy: *there's a crypto
+[29.11.21 13:47:03] allen: unlikely.
+[29.11.21 13:47:24] allen: Not provided.
+[29.11.21 13:47:48] elroy: Write again.
+[11/29/221 13:48:01] allen: Unlikely.
+Not provided for.
+[29.11.21 13:48:41] elroy: What's not provided for? What is the situation there?
+[29.11.21 13:48:48] elroy: *not provided
+[29.11.21 13:50:14] allen: In the command sequence. Generator build. Code generation. Crypter build. Postfix crypt.
+[29.11.21 13:50:42] elroy: So if this is done in different folders
+[29.11.21 13:51:19] allen: If cryptor is in different folders, then it's probably possible.
+[29.11.21 13:53:01] elroy: I must be silly to ask, it works in parallel by profiles
+[12/17/21/221 07:44:08] allen: Hi. I had no connection yesterday. Not at all. Something happened to the tower.
+[12/17/221 07:46:00] elroy: Yeah, I saw in the chat room you wrote.
+[12/17-21 07:46:10] elroy: It's a good thing you showed up.
+[12/17/221 07:46:32] elroy: Did you move or did they fix the tower?
+[12/17/21 07:46:32] allen: Yeah. I had no phone yesterday.
+[12/17/21 07:46:53] allen: Tower must have been fixed.
+[12/17/21 07:47:08] elroy: There's more on the crypto
+[12/17/21/07:47:20] allen: Which ones?
+[12/17/21 07:47:31] elroy: ``.
+The "sieve" function.
+
+The functionality of stub placement of data fragments which can be
+The functionality of the external utility to place data fragments that can be patched by the stub without affecting the stub functionality.
+The external utility is oriented to the macros placed in the stub.
+
+This feature is enabled as an option for the crypter's build system.
+
+It is expected that the created sieve will be filled randomly by an
+external utility. That is, a series of crypts will be created based on a single crypt.
+In doing so, the sieve should be sized and shaped to provide
+maximum-possible or complete difference of samples by fuzzy
+hashes in the created series. And this is a mandatory condition.
+
+The sieve should be placed in all sections of the stack.
+
+If this feature is active, the build system prepares a file with fragments
+for filling and puts beacons of the following contents in each fragment:
+struct beacon
+{
+  DWORD64 signature; // Usually 0x11223344FFEDA5D0
+  DWORD size; // Fragment size (the beacon is in the fragment,
+                     // it means taking into account the size of the beacon)
+  DWORD crc; // checksum of the signature and size fields
+}
+The checksum is calculated in the following way:
+DWORD ComputeBeaconCRC(beacon* bcn)
+{
+  DWORD crc = 0;
+  BYTE *p = (BYTE*)bcn;
+  for (int i = 0; i < sizeof(beacon) - sizeof(DWORD); i++)
+    crc += *p++;
+  return crc;
+}
+
+If this feature is not active, the build system still prepares a file with
+fragments, but fills the fragments with random data.
+The random data has to be generated with a hardware
+randomization, e.g., the rdrand microcommand.
+(Source code of random generator is available in C++, you may ask).
+In this case beacons are not created, or they are created and overwritten by the build system
+during filling.
+
+It is worth considering that when generating crypts, randomization is important,
+so it is advisable to prepare a sieve of different sized fragments for each
+new build.
+```
+[12/17/221 07:47:44] elroy: This applies to all profiles
+[17.12.21 07:50:39] allen: I see. Is it for 64 bits and 32 bits?
+[12/17/21 07:50:49] elroy: Yes.
+[21.12.21 07:00:09] elroy: Greetings.
+[21.12.21 07:27:38] allen: Hi.
+[21.12.21 07:31:19] elroy: Need some advice on asm. (Tell me one thing, please)
+[21.12.21 07:31:35] allen: Go ahead.
+[21.12.21 07:33:44] elroy: There is a 32 bit code
+```
+proc FUNC uses ebx edx, dwTicks,dwHasInterface
+...
+  mov edx,[dwHasInterface]
+  mov DWORD [edx],eax
+...
+endp
+```
+This is nothing but working with passing parameters by reference.
+How to do the same for x64 ?
+[21.12.21 07:34:38] elroy: ```
+mov rdx,[dwHasInterface]
+mov DWORD [rdx],eax
+```
+This code builds, but crashes)
+[21.12.21 07:43:41] allen: The first 4 parameters in registers are passed in 64 bit, respectively:
+rcx
+rdx
+r8
+r9
+And we have to save them when we call the function. Moreover, there is 0x20 bytes reserved on the stack for them.
+There are no uses.
+
+The function looks like:
+
+proc FUNC dwTicks, dwHasInterface
+        mov [dwTicks], ecx
+        mov [dwInterface], edx
+****
+        mov edx, [dwHasInterface]
+        mov [edx], eax ; You don't need to specify DWORD here because EAX is responsible for the size
+*****
+endp
+[21.12.21 07:46:10] elroy: Thanks, I'll try it
+[12/21/221 07:54:09] allen: save on stack all used registers except rax, rcx, rdx, r8, r9
+[21.12.21 07:54:47] elroy: something does not work...
+[21.12.21 07:54:54] elroy: complains about operand size
+[21.12.21 07:55:21] allen: Which compiler?
+[21.12.21 07:55:30] elroy: fasm
+[21.12.21 07:56:18] allen: In fasm you don't have to specify the size when passing from registers. Send the code.
+[21.12.21 07:58:30] allen: You should probably declare in parameters proc FUNC, DWORD dwTicks, DWORD dwHasInterface.
+[21.12.21 07:59:50] allen: I don't remember exactly. Look at the documentation. Either that, maybe dwTicks:DWORD is needed.
+[21.12.21 08:00:07] elroy: Here is the full code
+[21.12.21 08:00:12] elroy: ``
+format PE64 GUI 5.0
+entry start
+
+include 'win64a.inc'
+
+section '.text' code readable executable
+
+	  start:
+		sub rsp,8 ; Make stack dqword aligned
+  
+        fastcall CheckAV,ticks,hyps
+		
+        mov eax, DWORD [hyps]
+        cmp eax,1234
+        je one
+        invoke MessageBoxA,NULL,_no,_title_msghyp,MB_OK
+        invoke ExitProcess,0
+		jmp two
+one:
+        invoke MessageBoxA,NULL,_yes,_title_msghyp,MB_OK
+        invoke ExitProcess,0
+		;jmp two
+two:
+		
+		invoke ExitProcess,0
+    
+proc CheckAV dwOne,dwTwo
+	mov [dwOne], 0
+	mov [dwTwo], 1234
+	ret
+endp
+
+section '.data' data readable writeable
+  _title TCHAR ': Win64 program',0
+  _class TCHAR 'Hello from ASM',0
+  
+  _title_msghyp db 'HYP',0
+  _yes db 'YES',0
+  _no db 'NO',0
+  
+  ticks dd 0
+  hyps dd 0
+  
+section '.idata' import data readable writeable
+
+  library kernel32,'KERNEL32.DLL',\
+          user32,'USER32.DLL'.
+
+  include 'api\kernel32.inc'
+  include 'api\user32.inc'
+```
+[21.12.21 08:00:53] allen: Okay. I'll send you a working variant.
+[12/21/221 08:01:32] elroy: This code got it together, it just doesn't work. I guess 1234 didn't pass to hyps
+[21.12.21 08:08:06] allen: Working version of the function:
+
+`proc CheckAV dwOne,dwTwo
+	mov DWORD [rcx], 0
+	mov DWORD [rdx], 1234
+	ret
+endp`
+[21.12.21 08:08:37] elroy: thanks.
+[21.12.21 08:08:48] elroy: So rcx and rdx are busy...
+[21.12.21 08:09:35] elroy: And what is used instead of them? r0-r8
+[21.12.21 08:13:09] allen: I wrote that in 64 bits first 4 parameters are passed through registers: rcx, rdx, r8, r9. You store them on the stack to work with them:
+proc FUNC, param1, param2, param3,param4,param5, param6
+mov [param1], rcx
+mov [param2], rdx
+mov [param3], r8
+mov [param4], r9
+****
+mov rax, [param5]
+mov [param6], rax
+****
+[21.12.21 08:15:34] elroy: Thank you
+[21.12.21 11:18:44] elroy: Checking connection
+[21.12.21 11:22:16] elroy: There is an addition to the crypter.
+```
+Download: https://qaz.im/load/YfAFDh/dNb49e
+XdS6d8!hDw@hdiW1!kwpW0-W-doW2
+```
+Need to add. But the default functionality should not be applied. Apply only on demand.
+Improvement is important, please add soon.
+The description is inside, plus for you there is additionally code in asm (C or yourself, which is convenient).
+[21.12.21 11:23:20] elroy: Confirm receipt, please
+[12/21/221 11:34:59] allen: I see.
+[12/23/221 09:54:10] elroy: Greetings.
+[12/23/221 09:54:38] allen: Hi.
+[12/23/221 09:55:12] elroy: Tell me, how are things going with cryptos? What does manuel ask and what are you getting done?
+[12/23/221 09:58:52] allen: I'm making crypts for manuel right now. Yesterday I was making crypts for nick and manuel. Long. Can't figure out what's wrong with my crypt: all AV piling up, then a few, then clear. Just sick of crypting: one crypt takes up to an hour because I need to check it clean. And if not clean, crypt again.
+[12/23/221 09:59:33] elroy: Do you have access to avcek?
+[12/23/221 09:59:48] allen: No.
+[12/23/221 10:00:23] elroy: I can drop it in pgp, ready to take it?
+[12/23/221 10:00:30] allen: Yes.
+[12/23/221 10:00:51] allen: Not pgp, gpg.
+[12/23/221 10:01:43] elroy: -----BEGIN PGP MESSAGE-----
+
+hQIMAzK4/v3JrWW+AQ/9FiuHpIMLQ0Ph/KpZPLXgqxoi+JluvVFgEdOaDyV+HYfi
+7Qflvs5LKZPoQHOGPFRT198etf8RHTofZ1qZQZwYjfHBsWTvKjqBOgQdjM1yCuEvN
+OOq42b/3R3nHKgxymAQZ4u6TCdxnBIvzagU1Xa4OdZkXcbWkkybcAiQl1GsBLJFq
+HfNwe6CoXyBZCbujgH0AZZES7ddkZfrqXMSLTgxgDpjbz+ssUhqCNUCkyr7+fGfi
+l5iFc1sfSrdmwDkuYJHH72R/VMFeH631Sjk6QfmeVBN2A5WOV1rT57DorePM0plU
+9nuP/pdQtJeJK7d3bTIMV+fWkUbqmD41JNgpN1mVqfXzIwWfyTicu4OH7pWP+tWU
+bdMZZy1kgpW6HitvBf8C1siXGSVMXAiQnN7nNiqBX+1cf0HZxMDIR52gsGett0sI
+weKJco4FcNjuSEdE7jfuQauosOhl3uCAABiZz2bTbdDlZIMXUmbKcdtHZ33rg6/C
+8a25+pYPSZ891q0e55mALnJkFZPOMpSQLCb8zIVMSX4xGPc4LGoERtbwQiRMxfEf
+Sipe5grhpRL8mscjsPLE+DCqirzXs1YiRcni6SaR0kdyzCfmjdzqc/iCbNkPpO3G
+LEe7qD/qsj1+DWczMI5QVCI1Q64M8ISTtaodnsBvUaYQJVHUNthAujWvcTbNvJjS
+6QHHrUdad/rK+WPkNvgHpxcJlt5v15RivCP6n8V+PvzWDYJSECLsvkJchulf5MYX
+WnqTqZ7LO4pVSpX1GH4SmV8CV0sYoYiIKw2fxqj0v/Sv8QeRjkCZyT6UwJXh5fR
+pAML8roYcs7LnBTNYQT2FtqWOtvGftNHgIwIurNuQenxa2y6CdtlxIwZCn8sEmB2o
+cJOV+VmGJqKXeme/PTx6KMvfMiK1sprlmwCjVtSOnPNG3E3gayUHptg4IO3fFJiN
+wTI4E9BlkEHJ67ZIwuPE0+aeUjy8yYtss9GBS/6iqiOoxboKN6c0b2lT0aHAAJQA
+4LNxERUiWomL9dJEG7Er10wMQp7chylCNdiDrSuROZhYoK4ic1ldVNGzuxfb33P5
+hcyIpNquo0WYdqdAgeEx6ic0zxYnK/YlQOWpoLsIwdW/5Ap0dRZ89jWA5WJ6uNm1
++QyZRL3He26SNy2rsoqG3DzklpQM/QIMtilIvco4NLu/D/yyyfMRln9c2CfALeb0
+w+l1yva+JBFnhcx7LCD2OSML/SNlMt7NB5byJpKVZr/hKgj6Fcz5f3W+Mw8saU2f
+Aeb5J7iD5mspB2LQfYfnpEl7QaGPJpnq1TQWltNQUHVepbw34tsTlndRbPOjjZX5
+WvZOUW8cyahUryIA+NcexwqK7sTcYIiHS/T39a4tDMn3qYEPoPispHep2Owlzwu4
+Vj8e+dBwTAu+Eo5S1D53GIs1r0RVMULQX07X1/FyFkBbwJ0PaU/XAXgoRWqPRVr6
+AEEPr50FqdLIQpE/yesgqvyLQ0WD2G2KwAWAtRuzFwFQW/xRNM2tuQxB4XP2YdOy
+ntFwwc5FllZfGdMmPwM6jHmcXBWV/no+dTgdFzuKmFuzsp2tZfiaTWwdDFy7pq9Z
+X7r23Zzi0tM6njo=
+=bbnV
+-----END PGP MESSAGE-----
+[12/23/221 10:03:36] elroy: Write me a list of profiles you are asked to crypt and which are your cleanest. I'll try to divide the load between the cryptors. I understand. drop everything and everyone, and whoever is the best at it gets to choose.
+[12/23/221 10:03:41] elroy: This is a bad option...
+[12/23/221 10:04:02] elroy: So you need a list of what's being asked of you and what you can do.
+[12/23/221 10:07:35] allen: And what should I do with the username/password I was sent?
+[12/23/221 10:08:46] elroy: This is access to
+```
+avcheck.net
+```
+[12/23/221 10:08:59] elroy: Use it when you're feeling dinged
+[12/23/221 10:09:17] elroy: It just doesn't work
+[12/23/221 10:09:56] allen: Dinchek doesn't screw up. And, by the way, how does the cryptopanel scan for AB?
+[12/23/221 10:10:08] elroy: On dinchek
+[12/23/221 10:10:13] elroy: Via api
+[12/23/221 10:10:29] allen: What's his API?
+[12/23/221 10:11:29] allen: Maybe it's easier for me to write a script where I collect, check, if it didn't go through, re-assemble?
+[12/23/221 10:11:35] elroy: panel communicates with dincheck via http requests (web api), checks files and gets results
+[12/23/221 10:11:45] elroy: Maybe
+[12/23/221 10:11:52] elroy: But it's not cheap
+[12/23/221 10:11:59] elroy: There's a paid api...
+[12/23/221 10:12:09] allen: I see.
+[12/23/221 10:12:31] elroy: I downloaded the api account.
+[12/23/221 10:12:43] elroy: You can write....
+[12/23/221 10:13:36] elroy: > So you need a list of what you are asked to do and what you can chsitomo do.
+Please make it easy for all of us.
+[12/23/221 10:14:35] allen: I have requests, mostly manuel for LEO, nick for rundll.
+[12/23/221 10:15:05] elroy: Are these profiles clean or as you say, you have to look at each one?
+[12/23/221 10:15:16] allen: I don't accept 32-bit yet. So far not a single build is clean (
+[12/23/221 10:15:39] allen: I have to check after each build.
+[12/23/221 10:18:17] allen: I do not understand what is wrong. But on assembly different files come out every time: by random keys I encrypt paiload, plus I'm running a random generator to generate code. I blame the second. But replaced random by nop, and I got a lot of AV.
+[12/23/221 10:19:06] elroy: What about riche? I didn't like the one you're using.)
+[12/23/221 10:19:13] elroy: There's a project that reaches
+[12/23/221 10:19:16] elroy: I can send you
+[12/23/221 10:19:25] elroy: (if you haven't skimmed it yet)
+[12/23/221 10:19:33] elroy: You just use exe as input
+[12/23/221 10:19:45] allen: I did not. Download.
+[12/23/221 10:21:16] elroy: moment.
+[12/23/221 10:31:35] elroy: ``
+https://file.io/ONVLaXVCLaaN
+Nd6DFSRxffSfxrSxgchShwhSHg.Jhsgfrd
+```
+[12/23/221 13:25:22] allen: Let's reconnect via OTR.
+[12/23/221 13:29:01] allen: I had a conversation with Manuel now. AVCHECK seems to be mixing a static test with a dynamic test.
+```
+12:58 PM
+aha
+
+https://avcheck.net/id/rFnYuyVLtKmU
+
+They say dirty files
+1:03 PM
+I checked with dyncheck. All were clean.
+1:03 PM
+ugh.
+1:04 PM
+What file was the link sent from?
+1:04 PM
+ephe
+and dll say the same
+1:05 PM
+File name.
+1:06 PM
+they say all files with the same detects
+124 & 1499
+loader_exe_64_audi.exe.crypted_1.exe (172 kb)
+https://avcheck.net/id/rLadnV8zo4Sz
+Can you get it cleaned or is it a long time coming?
+1:15 PM
+This is strange. All clear on dyncheck https://dyncheck.com/scan/id/e96ed4d26dae7c69f9c8de6d41f06c46 The same file. Maybe avcheck uses dynamic scanning?
+On dyncheck the detects on dynamic scan are popping up too. https://dyncheck.com/scan/id/893b98e63cbef59ec76c42542a8176e8
+But I'm only supposed to check static.
+
+```
+[12/23/221 13:30:23] elroy: Do you think avcek runs the dynamics?
+[12/23/221 13:33:54] allen: Yes. In the mix with static. There's no separate selection there.
+[12/23/221 13:41:36] elroy: It doesn't say anywhere tp scan
+[12/23/221 13:41:52] elroy: Actually, I was somehow sitting there
+[12/23/221 13:43:00] allen: It doesn't look like it. Because dyncheck and avcheck show the same results in dynamics...
+[12/23/221 13:58:09] allen: I don't see.
+[12/23/221 13:58:34] allen: Messages
+[12/23/221 14:04:04] elroy: That's weird, I didn't write anything.
+[12/23/221 14:04:39] elroy: I see my empty messages, but I don't remember writing anything.....
+[12/23/221 14:05:05] elroy: I have nothing to say on the matter. Considered that avcek watches statics...
+[24.12.21 14:09:19] elroy: hello
+[12/24/21 14:18:21] elroy: Write it up.
+[24.12.21 14:20:33] allen: Write what?
+[24.12.21 14:20:56] elroy: Nothing in the git
+[12/24/221 14:21:08] elroy: Commits locally, but do not push to git!
+[24.12.21 14:21:20] allen: Got it.
+[06.01.22 09:54:48] elroy: Greetings.
+[06.01.22 09:55:29] allen: Hi. I'm on a cleanse.
+[06.01.22 09:55:39] elroy: That's good)
+[06.01.22 09:55:46] elroy: restored build-server
+[06.01.22 09:56:02] elroy: Please add profiles
+[06.01.22 09:56:20] elroy: In Jenkins I made a template, based on it is added.
+[06.01.22 09:56:36] elroy: Did orval throw away access?
+[06.01.22 09:56:40] allen: Got it. Will do.
+[06.01.22 09:56:47] allen: Yes.
+[06.01.22 09:56:54] elroy: Okay.
+[06.01.22 09:57:16] allen: And how would I put my code there?
+[06.01.22 09:57:44] elroy: If you add profiles today, as it is, you can have a free schedule tomorrow the last day of the week
+[06.01.22 09:58:17] allen: That's understandable.
+[06.01.22 09:58:23] elroy: ok
+[10.01.22 11:16:20] allen: Hi.
+[10.01.22 11:16:37] elroy: Hello.
+[10.01.22 11:16:44] allen: happy holidays.
+[10.01.22 11:16:50] elroy: You too.)
+[10.01.22 11:17:07] allen: I can't log into Jenkins....
+[10.01.22 11:17:36] allen: None of the passwords Orval sent me work.
+[10.01.22 11:18:11] elroy: Exactly does not fit or something else happens?
+[10.01.22 11:18:52] allen: Doesn't seem to fit.
+[10.01.22 11:19:56] elroy: Okay, I'll take a look
+[10.01.22 12:51:14] elroy: Change password?
+[10.01.22 12:51:37] elroy: Or just after authorization page is inaccessible?
+[10.01.22 12:57:57] allen: After authorization page is inaccessible.
+[10.01.22 12:58:30] allen: Connection attempt failed. It says.
+[10.01.22 13:32:25] elroy: That's right. It's just Jenkins opens http instead of https, that's why it crashes. Only https is available there. The solution is, when it crashes like that, just add https:// in the address and enter
+[10.01.22 13:32:46] elroy: I told admins about it, so far nothing happened.
+[11.01.22 08:09:46] allen: Hi.
+[11.01.22 08:10:16] allen: Hi
+[11.01.22 08:10:28] elroy: Hello
+[11.01.22 08:11:39] allen: Jenkins is still breaking down. There's a problem with the git. It gives out:
+```
+Failed to connect to repository : Command "git ls-remote -h -- http://xwn22msnqp22pjyez6a4y5w5p4lbhlwvi6c3bd3g42ai4qke6ikmtdyd.onion/user3/project3.git HEAD" returned status code 128:
+stdout:
+stderr: fatal: unable to access 'http://xwn22msnqp22pjyez6a4y5w5p4lbhlwvi6c3bd3g42ai4qke6ikmtdyd.onion/user3/project3.git/': Could not resolve host: xwn22msnqp22pjyez6a4y5w5p4p4lbhlwvi6c3bd3g42ai4qke6ikmtdyd.onion
+```
+[11.01.22 08:11:57] allen: What should I put there?
+[11.01.22 08:13:03] elroy: 1) Asked not to write any links in this chat. We were recently hacked, this information in the chat helps those who hack us.
+[11.01.22 08:13:16] elroy: 2). Said it was the right thing to do.
+[11.01.22 08:13:28] allen: We're on OTR...
+[11.01.22 08:14:12] elroy: I'll copy the profile again, it's correct. And the address will be spelled out there correctly, even though it will show an error.
+[11.01.22 08:14:34] allen: Got it.
+[11.01.22 08:19:16] elroy: Done. Put the address you prescribed doesn't bother you, it will work during the build.
+[11.01.22 08:21:30] allen: Got it
+[11.01.22 09:41:17] allen: Profiles are ready. Continuing to clean cryptor for x86 and x64.
+[11.01.22 09:41:44] allen: Profiles are ready. Continuing cryptor cleanup for x86 and x64.
+[11.01.22 09:43:49] elroy: Okay, I'll take a look.
+[11.01.22 09:45:24] elroy: There was a test parameter
+[11.01.22 09:45:30] elroy: Type of parameter - file
+[11.01.22 09:45:48] elroy: Looks like you removed it. This is the file itself.
+[11.01.22 09:45:53] elroy: That's why it won't build
+[11.01.22 09:46:31] allen: Got it. Should I take it back?
+[11.01.22 09:46:46] elroy: Yes, parameter type File
+[11.01.22 10:16:08] allen: I did.
+[11.01.22 10:16:39] elroy: thanks)
+[13.01.22 09:58:36] allen: Hi. My utility doesn't just edit the RICH - it wipes it completely. And the empty space instead of the RICH header is re-saved in the intersection space.
+[13.01.22 10:02:29] elroy: I remember. The only trouble is that it gives a detection...
+[13.01.22 10:02:38] elroy: Or doesn't it?
+[13.01.22 10:02:44] elroy: Greetings.
+[13.01.22 10:18:26] allen: My purge does not.
+[13.01.22 10:22:08] elroy: If you are sure, use your variant.
+[13.01.22 10:25:17] allen: I use it. I have a problem with detects because the only protection against AV is: I create a named mutex. And if it's successfully created, I restart crypt. But before that I need to test for the presence of AB. And not old versions of tests (they don't work anymore), but new ones. The question is what kind.
+[13.01.22 10:37:12] elroy: Do you mean to get rid of emulation detection?
+[13.01.22 10:37:36] allen: Yes.
+[13.01.22 10:38:54] elroy: The easiest way is to ask for some value that you know for sure (that it will return). Then substitute it into the pointer and call it. Since you know exactly what value will be returned - the call will go correctly. But emulator will make incorrect call, because it doesn't emulate all responses from system.
+[13.01.22 10:40:17] elroy: There shouldn't be a condition check like "if this is the answer, then go here, if not - here". Advanced emulators, including et, they go by two tags at once...
+[13.01.22 10:47:58] allen: I have it done with mutex. I assemble call CreateMutex, then immediately GetLastError. I know that GetLastError in this case returns either 0 or 187. I add this number to the value on the stack and exit. But the return is to one of the predefined addresses.
+[13.01.22 10:49:08] elroy: Try just replacing this point with something else. Just compare.
+[24.01.22 14:49:28] allen: Looks like build machine doesn't have FASM or it has wrong version.
+[24.01.22 14:50:02] allen: I can't see the build log. There is no file.
+[24.01.22 14:50:15] elroy: It is there... Write to Orval please, he's in charge of crypters now.
+[31.01.22 09:39:45] allen: Hi. I'm rewriting a crypt right now. It will be almost without imports.
+[31.01.22 09:41:16] elroy: Write to Manuel, I need to crypt something there
+[31.01.22 09:42:02] allen: already.
+[02.02.22 16:14:58] elroy: Greetings.
+[02.02.22 16:29:22] allen: Hi.
+[02.02.22 16:31:06] elroy: otr?
+[02.02.22 16:31:25] allen: Go ahead.
+[02.02.22 16:31:57] elroy: Looks like you have a poor performance on crypto.
+[02.02.22 16:32:13] elroy: That's not very effective.
+[02.02.22 16:32:33] elroy: Write me a list of your skills (skills), I'll try to allocate to another project.
+[02.02.22 16:33:09] allen: I wrote it, it was effective. Now it's time to change my strategy.
+[02.02.22 16:33:44] allen: Skills = ASM + C/C++.
+[02.02.22 16:36:25] elroy: ok, I'll try.
+[02.02.22 16:36:35] elroy: Do you agree to change your project?
+[02.02.22 16:37:39] allen: I agree. Cryptors are fed up, frankly.
+[02/23/222 07:47:31] allen: Hi.
+[02.03.22 07:47:55] elroy: Hello.
+[02/03/222 07:47:58] allen: so what project will you offer me?
+[03.02.22 07:48:44] elroy: So far on the list for distribution. Now all the projects are being coordinated, after that I will distribute them.
+[03.02.22 07:49:11] allen: Okay. Waiting.
+[03.02.22 07:49:38] elroy: Work on crypto, as soon as I can distribute - I'll let you know
+[02/03/222 07:49:50] allen: Got it.
+[14.02.22 13:01:24] allen: Hi. Yesterday I flooded my computer with tea. While I installed everything on the other one, time passed.
+[14.02.22 13:01:50] elroy: Hello. Too bad...
+[14.02.22 13:01:56] elroy: Question is.
+[14.02.22 13:02:09] elroy: does cpuid command return CPU serial number?
+[14.02.22 13:02:23] allen: I'll take it to repair tonight.
+[14.02.22 13:02:40] allen: Yeah, I guess.
+[14.02.22 13:03:48] elroy: Doodle a program, which via this command will get and show (any way) the serial number of the CPU.
+[14.02.22 14:35:12] allen: I did. Here is my CPUID:
+CPUID: on input eax=000000000000 on output eax=00000016, ebx=756E6547, ecx=6C65746E, edx=49656E69
+CPUID: on input eax=00000001 on output eax=000806EC, ebx=00100800, ecx=7FFAFBFF, edx=BFEBFBFF
+CPUID: on input eax=00000002 on output eax=76036301, ebx=00F0B5FF, ecx=000000000000, edx=00C30000
+CPUID: on input eax=00000003 on output eax=00000000, ebx=00000000, ecx=000000000000, edx=000000000000
+CPUID: on input eax=000000004 on output eax=00000000, ebx=00000000, ecx=000000000000, edx=000000000000
+CPUID: on input eax=00000005 on output eax=00000040, ebx=00000040, ecx=00000003, edx=11142120
+CPUID: on input eax=00000006 on output eax=000027F7, ebx=00000002, ecx=00000009, edx=000000000000
+CPUID: on input eax=00000007 on output eax=00000000, ebx=000000000000, ecx=000000000000, edx=000000000000
+CPUID: on input eax=00000008 on output eax=00000000, ebx=00000000, ecx=000000000000, edx=000000000000
+CPUID: on input eax=00000009 on output eax=00000000, ebx=00000000, ecx=000000000000, edx=000000000000
+CPUID: on input eax=0000000A on output eax=07300404, ebx=00000000, ecx=00000000, edx=00000603
+CPUID: on input eax=0000000B on output eax=00000000, ebx=00000000, ecx=00000058, edx=000000000000
+CPUID: on input eax=0000000C on output eax=00000000, ebx=00000000, ecx=000000000000, edx=000000000000
+CPUID: on input eax=0000000D on output eax=00000000, ebx=00000000, ecx=000000000000, edx=000000000000
+CPUID: on input eax=0000000E on output eax=00000000, ebx=00000000, ecx=000000000000, edx=000000000000
+CPUID: on input eax=0000000F on output eax=00000000, ebx=00000000, ecx=000000000000, edx=000000000000
+CPUID: on input eax=00000010 on output eax=00000000, ebx=00000000, ecx=000000000000, edx=000000000000
+CPUID: on input eax=00000011 on output eax=00000000, ebx=00000000, ecx=000000000000, edx=000000000000
+CPUID: on input eax=00000012 on output eax=00000000, ebx=00000000, ecx=000000000000, edx=000000000000
+CPUID: on input eax=00000013 on output eax=00000000, ebx=00000000, ecx=000000000000, edx=000000000000
+CPUID: on input eax=00000014 on output eax=00000000, ebx=00000000, ecx=000000000000, edx=000000000000
+CPUID: on input eax=00000015 on output eax=00000002, ebx=000000B8, ecx=000000000000, edx=000000000000
+[14.02.22 14:54:55] elroy: otr?
+[14.02.22 15:03:40] elroy: You must have run cpuid instruction with parameters in eax from 0 to 0x15
+[14.02.22 15:03:46] elroy: This is certainly interesting...
+[14.02.22 15:04:44] elroy: I am interested in CPU number, its serial number. Just please do not post publicly here.
+[14.02.22 15:05:00] allen: On first start with eax==0 in eax returns value of maximum for eax.
+[14.02.22 15:05:00] elroy: You can either find it in bios or use software
+[14.02.22 15:06:10] allen: So what's the problem with cpuid?
+[14.02.22 15:08:02] elroy: That's not right
+[14.02.22 15:08:02] elroy: cpuid has a big purpose
+[14.02.22 15:08:02] elroy: The name comes back there too
+[14.02.22 15:08:03] elroy: And chips
+[14.02.22 15:08:03] elroy: And I need just the serial number
+[14.02.22 15:10:23] allen: No cpuid this:
+
+```
+2.1 EAX=0: Highest Function Parameter and Manufacturer ID
+2.2 EAX=1: Processor Info and Feature Bits
+2.3 EAX=2: Cache and TLB Descriptor information
+2.4 EAX=3: Processor Serial Number
+2.5 EAX=4 and EAX=Bh: Intel thread/core and cache topology
+2.6 EAX=6: Thermal and power management
+2.7 EAX=7, ECX=0: Extended Features
+2.8 EAX=7, ECX=1: Extended Features
+2.9 EAX=80000000h: Get Highest Extended Function Implemented
+2.10 EAX=80000001h: Extended Processor Info and Feature Bits
+2.11 EAX=80000002h,80000003h,80000004h: Processor Brand String
+2.12 EAX=80000005h: L1 Cache and TLB Identifiers
+2.13 EAX=80000006h: Extended L2 Cache Features
+2.14 EAX=80000007h: Advanced Power Management Information
+2.15 EAX=80000008h: Virtual and Physical address Sizes.
+2.16 EAX=8FFFFFFFFh: AMD Easter Egg
+```
+[14.02.22 15:11:37] elroy: EAX=3: Processor Serial Number
+[14.02.22 15:11:47] allen: According to this data serial number is returned when eax == 3
+[14.02.22 15:12:16] allen: But not always. As you can see in this case I have all zeros.
+[14.02.22 15:13:08] elroy: Could you run the program as an administrator and see if the ID will return, and also, do the same on the virtual
+[14.02.22 15:13:29] elroy: ?
+[14.02.22 15:14:02] allen: EAX=3: Processor Serial Number
+See also: Pentium III § Controversy about privacy issues
+This returns the processor's serial number. The processor serial number was introduced on Intel Pentium III, but due to privacy concerns, this feature is no longer implemented on later models (the PSN feature bit is always cleared). Transmeta's Efficeon and Crusoe processors also provide this feature. AMD CPUs however, do not implement this feature in any CPU models.
+
+For Intel Pentium III CPUs, the serial number is returned in the EDX:ECX registers. For Transmeta Efficeon CPUs, it is returned in the EBX:EAX registers. And for Transmeta Crusoe CPUs, it is returned in the EBX register only.
+
+Note that the processor serial number feature must be enabled in the BIOS setting in order to function.
+[14.02.22 15:15:00] allen: It must be enabled in the bios. I have it disabled.
+[14.02.22 15:15:22] elroy: I see.
+[14.02.22 15:16:12] elroy: I got it, thanks. It says here that versions younger than pentium 3 already don't have this feature
+[14.02.22 15:16:48] allen: That too.

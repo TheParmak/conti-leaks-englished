@@ -1,0 +1,40 @@
+[18.02.22 09:46:28] ned: hi
+[18.02.22 14:41:56] allen: Hi
+[18.02.22 14:42:18] ned: hi.
+[18.02.22 14:42:30] ned: have you lost TOR?
+[18.02.22 14:42:33] ned: on Ubuntu
+[18.02.22 14:43:02] allen: Not lost, trying to do on Ubuntu bridge.
+[18.02.22 14:43:44] allen: And it either does not start or hangs on 5%
+[18.02.22 14:43:55] ned: I have the same thing myself.
+[18.02.22 14:44:05] ned: we got tor banned
+[18.02.22 14:44:27] ned: the same under both Ubuntu and Windows
+[18.02.22 14:44:33] ned: but under the windup just did it
+[18.02.22 14:44:43] ned: started the VPN and I'm writing you now
+[18.02.22 14:45:06] ned: but under Ubuntu not able to run the VPN as under the winnas
+[18.02.22 14:45:22] ned: it stops on the first relay
+[18.02.22 14:48:30] allen: Can you give me the cofigure of your VPN?
+[18.02.22 14:52:09] ned: Feb 18 17:51:30 al-desktop Tor[29418]: Opening Socks listener on /run/tor/socks
+Feb 18 17:51:30 al-desktop Tor[29418]: Opened Socks listener on /run/tor/socks
+Feb 18 17:51:30 al-desktop Tor[29418]: Opening Control listener on /run/tor/control
+Feb 18 17:51:30 al-desktop Tor[29418]: Opened Control listener on /run/tor/control
+Feb 18 17:51:30 al-desktop Tor[29418]: Bootstrapped 5% (conn): Connecting to a relay
+Feb 18 17:51:33 al-desktop Tor[29418]: Bootstrapped 10% (conn_done): Connected to a relay
+[18.02.22 14:52:24] ned: that's how I got stalled
+[18.02.22 14:52:33] ned: I have default config
+[18.02.22 14:52:55] ned: ugh!
+[18.02.22 14:52:59] ned: you need a VPN
+[18.02.22 14:53:05] ned: I have a office daimos
+[18.02.22 14:54:38] ned: you need one?
+[18.02.22 14:55:20] allen: No. Okay, so far it seems to work out, then we'll see.
+[18.02.22 14:55:44] ned: they gave me a scheme, I'll try at the weekend
+[18.02.22 14:56:03] ned: there's a vvm under the bridge on the computer and through it to the torus
+[18.02.22 14:56:07] allen: When you try it, tell me.
+[18.02.22 14:56:11] ned: ok.
+[18.02.22 14:56:23] ned: it's a nice workaround.
+[18.02.22 14:56:43] ned: so all the bridges have learned to block
+[18.02.22 14:56:53] ned: and snowflake works, but very slow
+[18.02.22 14:57:10] allen: Well new ones appear.
+[18.02.22 14:57:18] ned: except I only tried snowflake under tor browser
+[18.02.22 14:57:41] allen: So everyone is crashing through it, so it fails.
+[18.02.22 14:57:58] ned: there is some other meat, but it did not go
+[18.02.22 14:58:29] ned: and you'll have a hard time going through bridges manually to find unbroken one

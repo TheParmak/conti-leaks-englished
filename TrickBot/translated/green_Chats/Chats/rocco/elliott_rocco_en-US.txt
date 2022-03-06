@@ -1,0 +1,280 @@
+[02.08.21 13:07:27] elliott: would you check on the gaskets?
+[02.08.21 13:11:44] elliott: see what's up with the pads?
+[02.08.21 13:13:19] elliott: in the band sylver wrote, old proto2
+[02.08.21 13:13:28] elliott: says it's dead
+[02.08.21 13:40:39] elliott: what's up? all dead?
+[02.08.21 13:41:13] elliott: please tell sylver in the group
+[03.08.21 16:48:16] elliott: tell me what they mean by basic new admin, 159?
+[03.08.21 17:00:46] elliott: do you know how to make a connection in ms via shell link so that you can connect via tor?
+[03.08.21 17:00:56] elliott: i'd upload the fucking clock, but i don't want to go there directly
+[03.08.21 17:03:00] elliott: Or maybe there's some other way to upload files?
+[03.08.21 17:06:33] elliott: what do you use?
+[17.09.21 11:01:36] elliott: Hello.
+[17.09.21 11:03:06] elliott: there's a little problem on the 65 server
+[17.09.21 11:03:17] elliott: can't write a folder
+[17.09.21 11:03:18] rocco: hi
+[17.09.21 11:03:34] elliott: /var/www/html/advanced-project/filesStorage
+[17.09.21 11:03:46] elliott: there's alf apparently installed a root admin and pxp is fucked up as a result
+[17.09.21 11:03:51] elliott: I was just poking and poking and fucking swimming
+[17.09.21 11:03:58] elliott: i can only go in every single folder
+[17.09.21 11:04:11] elliott: could you put 777 on it all together?
+[17.09.21 11:04:30] elliott: it's so fucking annoying that the files aren't uploaded
+[17.09.21 11:05:16] rocco: this one?
+/var/www/html/advanced-project/filesStorage
+[17.09.21 11:05:24] elliott: yes
+[17.09.21 11:05:36] elliott: so everyone inside has rights, and new folders are created with rights too
+[17.09.21 11:05:56] elliott: every new user gets all rights except "write to all" and that's the one that's missing the checkbox
+[17.09.21 11:06:12] elliott: the user in the admin I mean. everyone has his own folder
+[17.09.21 11:07:07] rocco: sec
+[17.09.21 11:08:15] rocco: try it
+[17.09.21 11:08:24] elliott: I won't try, I only have my account
+[17.09.21 11:08:35] elliott: no rights
+[17.09.21 11:08:40] elliott: viewer
+[17.09.21 11:08:43] elliott: hold on, I'll update
+[17.09.21 11:09:08] elliott: no, no, I clicked on random folder and it's not checked anyway
+[17.09.21 11:09:19] elliott: inside where the number folders are
+[17.09.21 11:09:27] elliott: all must have 777
+[17.09.21 11:09:54] rocco: ``
+ls -lah /var/www/html/advanced-project/filesStorage
+total 264K
+drwxrwxrwx 2 root 72K Sep 15 20:25 1
+drwxrwxrwx 2 root 4.0K Sep 8 2020 11
+drwxrwxrwx 2 root 4.0K Mar 17 2020 12
+drwxrwxrwx 2 root 4.0K Sep 8 2020 13
+drwxrwxrwx 2 root 4.0K Sep 8 2020 16
+drwxrwxrwx 2 root 4.0K Sep 1 21:00 19
+drwxrwxrwx 2 root 4.0K Sep 17 10:55 2
+drwxrwxrwx 2 root 4.0K Aug 17 21:00 20
+drwxrwxrwx 2 root 4.0K Jul 29 21:00 21
+drwxrwxrwx 2 root 20K Sep 12 21:00 22
+drwxrwxrwx 2 root 4.0K Sep 15 22:00 24
+drwxrwxrwx 2 root 4.0K Aug 31 21:00 33
+drwxrwxrwx 2 root 12K Sep 13 12:56 37
+drwxrwxrwx 2 root 4.0K Mar 10 2020 4
+drwxrwxrwx 2 root 4.0K Aug 28 21:00 40
+drwxrwxrwx 2 root 4.0K Sep 15 22:00 42
+drwxrwxrwx 2 root 4.0K Aug 11 21:00 45
+drwxrwxrwx 2 root 4.0K Sep 14 09:09 5
+drwxrwxrwx 2 root 4.0K Sep 14 22:00 51
+drwxrwxrwx 2 root 4.0K Sep 14 22:00 52
+drwxrwxrwx 2 root 4.0K Aug 12 21:00 57
+drwxrwxrwx 2 root 4.0K Sep 3 21:00 58
+drwxrwxrwx 2 root 4.0K Sep 14 22:00 59
+drwxrwxrwx 2 root 4.0K Sep 17 11:03 6
+drwxrwxrwx 2 root 4.0K Sep 15 22:00 60
+drwxrwxrwx 2 root 4.0K Aug 25 21:00 61
+drwxrwxrwx 2 root 4.0K Sep 3 21:00 62
+drwxrwxrwx 2 root 4.0K Sep 2 21:00 64
+drwxrwxrwx 2 root 4.0K Sep 3 21:00 68
+drwxrwxrwx 2 root 4.0K Sep 11 17:22 69
+drwxrwxrwx 2 root 4.0K Aug 6 21:00 7
+drwxrwxrwx 2 root 4.0K Aug 5 11:22 70
+drwxrwxrwx 2 root 4.0K Sep 14 22:00 74
+drwxrwxrwx 2 root 4.0K Sep 11 21:00 78
+drwxrwxrwx 2 root 16K Sep 8 2020 8
+drwxrwxrwx 2 root 4.0K Sep 10 07:55 81
+drwxrwxrwx 2 root 4.0K Sep 9 21:00
+-rwxrwxrwx 1 root 152 Oct 12 2020 priv.key
+-rwxrwxrwx 1 root 5 Jun 16 2020 test.txt
+drwxrwxrwx 2 root 4.0K Feb 13 2020 tmp
+
+```
+[17.09.21 11:10:21] rocco: all 777
+[17.09.21 11:10:31] elliott: It's not showing me the Wright Buy Azers
+[17.09.21 11:10:51] elliott: 775 and fuck it
+[17.09.21 11:10:57] elliott: and yesterday i couldn't do anything either
+[17.09.21 11:11:06] elliott: I had to poke everyone
+[17.09.21 11:11:15] elliott: here's 21 folder check rights
+[17.09.21 11:11:34] elliott: and then check my 2
+[17.09.21 11:11:38] elliott: and kolyan's 6
+[17.09.21 11:17:42] elliott: oh.
+[17.09.21 11:17:44] elliott: Now it's okay.
+[17.09.21 11:17:57] elliott: thank you!
+[22.10.21 08:05:17] rocco: hey, bro.
+[22.10.21 08:06:28] rocco: send deb packet for unlock to sylver
+[25.10.21 09:52:39] elliott: koo
+[25.10.21 09:52:53] elliott: advise how to download archive?
+[25.10.21 09:53:02] elliott: can't remember any site
+[25.10.21 09:54:10] rocco: privatlab.com
+[27.10.21 13:18:42] elliott: ps
+[27.10.21 13:22:35] elliott: gc
+[27.10.21 13:33:47] rocco: ku
+[27.10.21 13:34:36] elliott: 185.64.104.141
+[27.10.21 13:34:44] elliott: root password doesn't work!
+[27.10.21 13:34:45] elliott: )
+[27.10.21 13:35:00] elliott: root@185.64.104.141 iS96W84w8mHqZN
+[27.10.21 13:35:03] elliott: this is what alf gave me
+[27.10.21 13:35:46] rocco: now sec
+[27.10.21 13:40:05] rocco: ``
+iS96W84w8mHqZNt
+```
+[27.10.21 13:40:15] rocco: there was a letter missing at the end
+[27.10.21 13:44:20] elliott: thank you!
+[27.10.21 13:50:00] elliott: Check it up.
+[27.10.21 13:51:59] elliott: There's another problem.
+[27.10.21 13:52:12] elliott: I installed it under root, which, as you remember, you can't do
+[27.10.21 13:52:20] elliott: that's why i'm gonna take it down and need a user
+[27.10.21 13:53:25] elliott: there will be problems under root and in addition there is no crontab
+[27.10.21 13:53:50] elliott: plus ports are not open, no access, my installer doesn't manage ports
+[27.10.21 13:54:06] elliott: let's create a user, open port 443 and try to install from courts
+[27.10.21 13:54:08] elliott: ok?
+[27.10.21 13:54:39] elliott: well, or give me a command, I'll put it in to open the ports myself
+[27.10.21 13:55:13] elliott: koo?
+[27.10.21 13:58:35] rocco: yeah yeah
+[27.10.21 13:59:07] elliott: will sudo ufw allow 443/tcp work?
+[27.10.21 14:00:11] rocco: let me check it
+[27.10.21 14:00:21] elliott: it's always the same on the new ones
+[27.10.21 14:00:29] elliott: You set it up and you can't fucking get through
+[27.10.21 14:00:32] rocco: try it
+[27.10.21 14:00:37] elliott: i took it down
+[27.10.21 14:00:43] elliott: you must install from sudo user
+[27.10.21 14:00:54] rocco: it fucking froze!
+[27.10.21 14:00:58] elliott: I tried just to test the new package after all modifications not to crash
+[27.10.21 14:01:10] elliott: but it shouldn't install from root, there is no crontab
+[27.10.21 14:01:19] elliott: you need a crontab there
+[27.10.21 14:02:34] rocco: can you reboot?
+[27.10.21 14:02:49] elliott: how?
+[27.10.21 14:02:52] elliott: I only have ssx
+[27.10.21 14:02:54] rocco: I erased all the rules there for some fucking reason
+[27.10.21 14:02:59] elliott: )))
+[27.10.21 14:02:59] rocco: reboot
+[27.10.21 14:03:04] elliott: you had no fucking business
+[27.10.21 14:03:18] rocco: they're fucking with the rules
+[27.10.21 14:03:20] elliott: i understand the reboot, but i can't access it either
+[27.10.21 14:03:41] rocco: now reboot from the panel
+[27.10.21 14:03:46] elliott: yeah
+[27.10.21 14:04:37] elliott: this is a common problem, that's why I would like to make a rule in the installer, so that every time, especially a new person, didn't sit half a day cramming why the fuck everything is installed, but nothing opens
+[27.10.21 14:05:09] rocco: i rushed to erase, maybe ufw was there by default
+[27.10.21 14:05:18] rocco: you could have just turned it off
+[27.10.21 14:05:35] elliott: well, for me it was always enough something like sudo ufw allow 443/tcp
+[27.10.21 14:06:13] elliott: iptables -I INPUT -p tcp --dport 443 -j ACCEPT
+[27.10.21 14:06:16] elliott: Or this
+[27.10.21 14:06:38] elliott: I can fuck them both up, let them run
+[27.10.21 14:06:42] rocco: yeah.
+[27.10.21 14:06:43] elliott: It can't hurt.
+[27.10.21 14:06:54] rocco: all rebooted
+[27.10.21 14:07:02] elliott: I just don't understand, why the fuck to close port 80 or 443?
+[27.10.21 14:07:04] rocco: turn on iptablesom
+[27.10.21 14:07:07] elliott: what do they think servers are for?
+[27.10.21 14:07:25] rocco: so there would be no input through the tarnet, U only from torus
+[27.10.21 14:07:38] elliott: is it such a hosting, directly under tor?
+[27.10.21 14:07:39] rocco: ah you mean hoster
+[27.10.21 14:08:01] elliott: very often such a fuck-up on new servers
+[27.10.21 14:08:02] rocco: no, this hoster shuts everything down, i don't know why
+[27.10.21 14:08:20] elliott: ditto. i added iptables -I INPUT -p tcp --dport 443 -j ACCEPT
+[27.10.21 14:08:24] elliott: make the user
+[27.10.21 14:08:32] rocco: ok
+[27.10.21 14:08:38] rocco: with sudo?
+[27.10.21 14:08:44] elliott: yeah, sure.
+[27.10.21 14:08:48] elliott: without sudo, he's fucking useless.
+[27.10.21 14:10:30] elliott: i got the package in the tmp
+[27.10.21 14:10:51] elliott: you want to try it yourself, but from a user with sudo, not from any root
+[27.10.21 14:11:30] rocco: ``
+password: eoBohkohP4choh9oghuG
+user: vano
+```
+[27.10.21 14:14:18] elliott: https://185.64.104.141/sOIDFhsAIUfhu42332uygt27634ft7yuaFGyaugkJFsayjegf--_-GBASfdvt23fv
+[27.10.21 14:14:50] elliott: check it, tell sylver, everything
+[27.10.21 14:15:00] rocco: okay.
+[27.10.21 14:15:29] elliott: ``
+*****************************************
+YOUR DATABASE PASSWORD:
+9jLyesndjjj
+*****************************************
+
+```
+[27.10.21 14:15:49] elliott: the password to the base on yesterday's requirements is now random, it's written in the console during installation
+[12/24/21 08:22:58] elliott: good morning
+[12/24/21 08:35:43] rocco: hi
+[12/24/21 08:50:27] elliott: There's a problem at 65.
+[24.12.21 08:50:56] elliott: we have a httpapi module on port 12244
+[24.12.21 08:51:01] elliott: but on all requests gives 403
+[24.12.21 08:51:15] elliott: i guess it's the server itself
+[24.12.21 09:32:00] elliott: psst
+[24.12.21 09:39:40] rocco: duh.
+[24.12.21 09:39:46] rocco: busy at the moment.
+[24.12.21 14:20:13] elliott: busy?
+[24.12.21 14:40:28] rocco: for now yes bro
+[27.12.21 11:31:32] elliott: bro.
+[27.12.21 11:31:36] elliott: Still busy?
+[29.12.21 04:58:22] rocco: hi.
+[29.12.21 12:25:15] elliott: hi.
+[29.12.21 12:30:32] rocco: hi.
+[29.12.21 12:31:00] elliott: are you available yet?)
+[29.12.21 12:31:28] rocco: I don't know yet, tell me how to help
+[29.12.21 12:31:43] elliott: 65 has a httpapi module
+[29.12.21 12:31:47] elliott: it's not available
+[29.12.21 12:31:49] elliott: 403 in reply
+[29.12.21 12:31:55] elliott: there's a section for it in the config
+[29.12.21 12:32:02] elliott: I'm sick of it
+[29.12.21 12:34:15] rocco: found it
+[29.12.21 12:34:34] rocco: it refers to an empty directory
+[29.12.21 12:34:41] elliott: How the fuck?
+[29.12.21 12:34:46] elliott: it worked once upon a time.
+[12/29/221 12:34:50] rocco: ``
+var/www/html/advanced-project/apihttp/web
+```
+[29.12.21 12:35:03] elliott: is there a httpapi directory itself?
+[29.12.21 12:35:05] rocco: ``
+root@dedic-onzo09-645281:~# ls /var/www/html/advanced-project/apihttp/web
+root@dedic-onzo09-645281:~# ls /var/www/html/advanced-project/apihttp
+components config controllers models runtime web
+
+```
+[29.12.21 12:35:08] elliott: just the web folder empty?
+[29.12.21 12:35:18] elliott: I don't know who the fuck
+[29.12.21 12:35:40] rocco: fucked up the contents?
+[29.12.21 12:35:50] elliott: fuck, I guess, I don't know.
+[29.12.21 12:35:54] elliott: i'm gonna try to hand-fill...
+[29.12.21 12:36:17] elliott: Fucking geese
+[29.12.21 12:36:29] rocco: christmas.
+[29.12.21 12:36:32] elliott: five folders too.
+[29.12.21 12:36:39] elliott: which one do we even need?
+[29.12.21 12:36:52] rocco: only alf and kolyan know that
+[29.12.21 12:36:57] rocco: I don't need it
+[29.12.21 12:37:34] elliott: fuck it, now 500
+[29.12.21 12:38:26] elliott: no logs
+[29.12.21 12:41:57] elliott: how do i know what's wrong?
+[29.12.21 12:43:24] elliott: Failed to create directory "/var/www/html/advanced-project/apihttp/runtime/cache": mkdir(): Permission denied
+[29.12.21 12:46:41] elliott: whatever, I fixed the rights
+[29.12.21 12:46:42] elliott: now the class is not found
+[29.12.21 12:46:44] elliott: what the hell
+[29.12.21 12:47:17] rocco: I can't remember here, you and alpha are the php masters
+[29.12.21 16:16:46] rocco: bro solved your problem?
+[29.12.21 17:11:39] elliott: yes, I solved it, thank you)
+[18.02.22 13:48:20] elliott: ps.
+[18.02.22 13:48:32] elliott: I have a deal.
+[18.02.22 13:48:32] rocco: hi.
+[18.02.22 13:48:44] elliott: Elroy's asking for an amine distribution
+[18.02.22 13:49:07] elliott: can you find gca some last stable deb deb varic, maybe the one you put on combat?
+[18.02.22 13:49:12] elliott: i just don't know what we'll give him
+[18.02.22 13:49:29] rocco: let me see
+[18.02.22 13:49:38] elliott: theoretically, they're always on the servers
+[18.02.22 13:49:41] elliott: Or maybe you
+[18.02.22 13:50:16] elliott: haven't been installed for a very long time, and I'm not sure if the code is stable
+[18.02.22 13:50:30] elliott: for what? for we still haven't started a stable branch in git, no matter how much Silver would yell)
+[18.02.22 13:50:41] rocco: if I can find it, on the last one
+[18.02.22 13:50:56] elliott: and what's your admin mark?
+[18.02.22 13:51:34] rocco: admin of all Russia
+[18.02.22 13:51:44] elliott: Heads up admins?
+[18.02.22 13:51:57] elliott: Adam's admins?)
+[18.02.22 13:52:40] rocco: everyone has his own sandbox, I can just administer here in rocco
+[18.02.22 13:52:51] rocco: admin access
+[18.02.22 13:57:29] rocco: haven't found
+[18.02.22 13:58:26] rocco: no in gita?
+[18.02.22 13:59:40] elliott: there is a file, but I do not remember what it is about and when
+[18.02.22 13:59:52] elliott: December 20.
+[18.02.22 13:59:58] elliott: in theory it should fit
+[18.02.22 14:01:03] elliott: do you have access to the git?
+[18.02.22 14:01:12] elliott: to the site, to the pool-requests and all that
+[18.02.22 14:01:25] rocco: Nope.
+[18.02.22 14:01:26] elliott: if I'm gonna fuck up a branch so someone can die
+[18.02.22 14:01:30] elliott: fuck, i don't have either
+[18.02.22 14:01:35] rocco: better go to adam
+[02/18/222 14:01:39] rocco: help
+[18.02.22 14:01:44] rocco: he runs the git
+[18.02.22 14:01:52] elliott: i went to him three times with it, he says fuck it, it works
+[18.02.22 14:01:54] rocco: if anything, he'll pull it out
+[18.02.22 14:02:13] rocco: so alf colin elroy
+[18.02.22 14:02:32] elliott: I'll take longer to explain.
+[18.02.22 14:02:35] elliott: Oh, come on.

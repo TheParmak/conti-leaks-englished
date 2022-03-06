@@ -1,0 +1,1010 @@
+|2018-10-01T11:38:33|1||to|N---|- I'm from another computer, can you see me?
+|2018-10-01T11:38:58||1|from|N---|- Yes, it's okay.
+|2018-10-01T11:39:13|1|to|N---|супер!
+|2018-10-04T10:11:37|1|to|N--|Hi! I've been struggling with backend setup for the 3rd day now - nothing works, even though "everything should work".\n I changed configuration files for my machine - and can't get them into the new branch on the server. http://joxi.ru/KAxV5zyfM3yeqm - what to do here?
+|2018-10-04T10:14:13||1|from|N---| maybe this will help https://habr.com/post/244869/
+|2018-10-04T10:17:41|1|to|N---|Спасибо! It worked! I have this beauty: http://joxi.ru/L21vj0Mf8eEkaA
+|2018-10-04T10:19:37||1|from||N---|you on coding ask hof, hof@q3mcco35auwcstmt.onion
+|2018-10-04T10:26:50||1|to|N-||He says the question is definitely not for him. It's not my backend, they gave it to me to put in and he doesn't want it. That's the problem.
+|2018-10-04T10:29:40||1|from|N--- I don't remember much about php, but it asks for the auth class, try apt search auth-php, most likely a module is missing
+|2018-10-04T10:30:35||1|from|N---apt search php-auth
+|2018-10-04T10:30:47||1|from|N--- that's the name of the package
+|2018-10-04T10:31:04||1|from|N--||even install php-auth-http
+|2018-10-04T10:32:42||1|to|N--|-so install it now, what did it find? http://joxi.ru/brRL8l7hJ0KWd2
+|2018-10-04T10:33:40||1|from||N-|-|just try apt install php-auth php-auth-http
+|2018-10-04T10:33:47|1|to|N---|- And then there's the twist that the system only runs on the old rnr, 5.6 How to write sudo apt-get install php5.6-auth-http then?
+|2018-10-04T10:34:08|1|from|N---|попробуй
+|2018-10-04T10:36:57||from|N---|- what kind of Ubuntu do you have ?
+|2018-10-04T10:37:16|1|to|N---|последняя, 18ю04
+|2018-10-04T10:37:37||1|from|N---|- you need to connect the repository sec
+|2018-10-04T10:37:56||1|to|N---|- what is this?
+|2018-10-04T10:38:48|1|from|N---|try this
+|2018-10-04T10:38:51||from||N---|sudo apt install php-pear
+|2018-10-04T10:39:04||1|from|N---||sudo pear install Auth
+|2018-10-04T10:39:18||1|from||N---||sudo pear install Auth_HTTP
+|2018-10-04T10:41:46||1|from|N---|-|-|-|-so how did it work?
+|2018-10-04T10:42:23|1|to|N---|- no, still the same
+|2018-10-04T10:43:58|1|to|N---|- How do I use my browser to see what's on https://n4iaacb37wmqclht.onion/untouch/cadmin.git/ ?
+|2018-10-04T10:44:49|1|from|N---|- through a tor browser, .onion doyens only through a tor browser
+|2018-10-04T10:51:35||1|to|N---|It's better, but something is missing http://joxi.ru/gmv3eqktL5kon2
+|2018-10-04T10:52:13|1|from|N---|нажимай advanced
+|2018-10-04T10:53:02|1|to|N---|Чудеса http://joxi.ru/Q2KVxpOf4NYl8m
+|2018-10-04T10:53:26||1|from|N--|- press add ex
+|2018-10-04T10:54:31||to|N--- OK, now http://joxi.ru/1A5y9zjHn9VjdA
+|2018-10-04T10:56:13||1|from|N---|try to authorize https://n4iaacb37wmqclht.onion/users/sign_in
+|2018-10-04T10:59:51|1|from|N---|try php 7
+|2018-10-04T11:00:01|from||N---||sudo apt-get install python-software-properties\nsudo add-apt-repository ppa:ondrej/php\nsudo apt-get update\nsudo apt-get install -y php7.2
+|2018-10-04T11:00:49||1|to|N-||- About authorization - I have this data there? http://joxi.ru/YmE8knLF0g8Oar
+|2018-10-04T11:01:10|1|from|N---|да
+|2018-10-04T11:01:38|1|from|N---|авторизует?
+|2018-10-04T11:02:07|1|to|N---|нет http://joxi.ru/J2b951vCX3PKRm
+|2018-10-04T11:02:45|1|to|N---|- And about the 7 rnr Mavel claims that there is only on 5.6, otherwise there is no way
+|2018-10-04T11:03:29||1|from||N---|there you see what the fuck on 18.04 these php-auth packages don't exist anymore
+|2018-10-04T11:04:16||1|from|N---|try php-sasl at least put it there
+|2018-10-04T11:04:46||1|from|N--- I have it in 16.04 and it's not in 18.04
+|2018-10-04T11:05:34||1|to|N-||- I already have 5.6 along with 7.
+|2018-10-04T11:06:10|1|to|N-||- What's wrong with authorization? Maybe it needs to be entered differently?
+|2018-10-04T11:08:33||1|from|N---|-|- you ask whoever gave you this, tell them the accounts don't pass
+|2018-10-04T11:17:00|1|to|N---|Да, нашла. Thank you!
+|2018-10-04T11:17:26||1|from||N---|-you put use Auth in the php code;
+|2018-10-04T11:18:20||1|to|N---|- In the file that complains?
+|2018-10-04T11:18:34||1|from|N--|-|yes at the beginning
+|2018-10-04T11:18:42|1|to|N---|Хорошо
+|2018-10-04T11:27:41|1|to|N-|- No. There's something wrong with this project. As usual with programmers - how can a program go down when I'm doing fine!!!! :))
+|2018-10-04T11:29:12||1|from||N---|-| how does it crash? what errors does it give out?
+|2018-10-23T11:16:40||1|to|N---|- Good day! I inexperiencedly uploaded an author with my name and email to the repository. I changed it now, but how do I change my name and email in all commits on gitlab?
+|2018-10-23T11:17:35||1|from||N---| I can't remember now I have to leave.
+|2018-10-23T11:18:01|1|to|N--|you can do it another time :))
+|2018-10-23T11:18:09|1|from|N---|ок
+|2018-10-24T10:43:00|1|to|N-||- Good day! Is this a good time? :)
+|2018-10-24T10:44:05||1|from|N-|| Hi, yes you can.
+|2018-10-24T10:49:16||to|N-- Well, here's an unsolvable problem. I inexperiencedly uploaded an author to the repository with my name and email address. Now I changed it, but how do I change the name and email in all commits on gitlab? I have my name and emails everywhere except for the last photo. It's just horrible, horrible.
+|2018-10-24T10:52:53||from||N---|git change-commits GIT_AUTHOR_NAME "old name" "new name"
+|2018-10-24T10:53:18|1|from|N---|git change-commits GIT_AUTHOR_EMAIL "old@email.com" "new@email.com"
+|2018-10-24T10:53:29|1|from|N---|попробуй это
+|2018-10-24T10:54:11||1|from|N---|git change-commits GIT_AUTHOR_EMAIL "old@email.com" "new@email.com" HEAD~10..HEAD
+|2018-10-24T10:54:21||1|from|N---|these are the last 10 commits
+|2018-10-24T10:54:37||from|N---i.e., you set it to which commit you want to edit.
+|2018-10-24T10:56:03||1|to|N---|- Don't want to: change-commits' is not a git command
+|2018-10-24T10:57:34||1|from|N---|git config --global alias.change-commits "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\\\\"$`echo $VAR`\\\\\\" = '$OLD' ]]; then export $VAR='$NEW'; f\" $@; }; f "
+|2018-10-24T10:57:51||1|from|N--|-|that's the command you do first, then try it
+|2018-10-24T10:59:09||1|to|N---|| It says : event not found , but I changed the name locally, only in the project. Does that affect it?
+|2018-10-24T11:00:14||1|from|N---|- it's after what command?
+|2018-10-24T11:00:54|1|to|N---|- after this: git config --global alias.change-commits "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\\\\"$`echo $VAR`\\\\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\\$@; }; f "
+|2018-10-24T11:05:57|1|from|N---|git filter-branch
+|2018-10-24T11:06:13||1|from|N--|-|and type this one
+|2018-10-24T11:06:57|1|from|N---|-don't know what event it won't find
+|2018-10-24T11:08:53|1|to|N-|-|-|It brings up a bunch and at the end: WARNING: Ref 'refs/heads/master' is unchanged\n
+|2018-10-24T11:09:58||1|from||N---|git config --global alias.cha-comm
+|2018-10-24T11:10:07||1|from|N---|a to this
+|2018-10-24T11:10:49|1|to|N---|Ничего. No errors, nothing at all.
+|2018-10-24T11:12:32|1|from|N---|git config --global alias.change-commits "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\\\\"$`echo $VAR`\\\\\\" = '$OLD' ]]; then export $VAR='$NEW'; f\" $@; }; f "
+|2018-10-24T11:12:51||1|from|N---|-weird why it won't create an alias
+|2018-10-24T11:13:28||1|to|N-|-| event not found\popular damn!
+|2018-10-24T11:15:33||1|from|N---|git config alias.change-commits "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \\"if [[ \\\\\\"$`echo $VAR`\\\\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f "\ngit change-commits GIT_AUTHOR_NAME"<Old Name>"<New Name>" -f
+|2018-10-24T11:15:51|1|from|n---|git config alias.change-commits "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\\\\"$`echo $VAR`\\\\\\" = '$OLD' ]]; then export $VAR='$NEW'; f\" $@; }; f "
+|2018-10-24T11:15:56||1|from||N--|try this
+|2018-10-24T11:16:08|1|to|N---|3 подряд?
+|2018-10-24T11:16:21|1|from|N---|- no, just the last one.
+|2018-10-24T11:16:27|1|from|N---|git config alias.change-commits "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\\\\"$`echo $VAR`\\\\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\\$@; }; f "
+|2018-10-24T11:17:09|1|from|N---|прошла?
+|2018-10-24T11:17:17||1|to|N--|-||Bash: !f: event not found\n
+|2018-10-24T11:19:24||1|from|N---||shopt -s extglob; set +H
+|2018-10-24T11:19:32|1|from|N---|do this command
+|2018-10-24T11:19:50|1|from|N---|а потом
+|2018-10-24T11:20:02|1|from|N---|| git config --global alias.change-commits "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\\\\"$`echo $VAR`\\\\\\" = '$OLD' ]]; then export $VAR='$NEW'; f\" $@; }; f "
+|2018-10-24T11:20:45||1|to|N-||All quiet on both commands, nothing at all
+|2018-10-24T11:20:56||1|from|N--|-
+|2018-10-24T11:21:00|1|from|N---|а теперь
+|2018-10-24T11:21:21|1|from|N---|git change-commits GIT_AUTHOR_EMAIL "old@email.com" "new@email.com" HEAD~10..HEAD
+|2018-10-24T11:21:33||1|from|N---|git change-commits GIT_AUTHOR_NAME "old name" "new name"
+|2018-10-24T11:21:46|1|from|N---|commits only from which to which specify
+|2018-10-24T11:22:06|1|from|N--|- I have to leave in an hour.
+|2018-10-24T11:22:19|1|from|N---|ну получается?
+|2018-10-24T11:24:00|1|to|N-||There's like, 3 commits back 7 commits with unnecessary data, then 8 more that aren't mine, then 7 more with unnecessary data. How do I write it all?
+|2018-10-24T12:09:27|1|from|N---|HEAD~3..HEAD~10
+|2018-10-24T12:09:40|1|from|N---|высчитай
+|2018-10-24T12:12:40||1|to|N---|-|-something he's not finding :\nRewrite d2975ebefbd249ff671a31ea18e321ec4d8c6388 (47/76) (1 seconds passed, remaining 0 predicted) /usr/lib/git-core/git-filter-branch: 1: eval: [[: not found\nRewrite c8df2476d1b629f16fbdf691e73db5c53b1d68a5 (47/76) (1 seconds passed, remaining 0 predicted) /usr/lib/git-core/git-filter-branch: 1: eval: [[: not found\n\n
+|2018-10-24T12:16:14||1|from|N--|-|-|what do you get?
+|2018-10-24T12:21:20||1|to|N---|-|It's not finding something there :\nRewrite d2975ebefbd249ff671a31ea18e321ec4d8c6388 (47/76) (1 seconds passed, remaining 0 predicted) /usr/lib/git-core/git-filter-branch: 1: eval: [[: not found\nRewrite c8df2476d1b629f16fbdf691e73db5c53b1d68a5 (47/76) (1 seconds passed, remaining 0 predicted) /usr/lib/git-core/git-filter-branch: 1: eval: [[: not found
+|2018-10-24T13:22:15||1|to|N---|| Are you there yet? :))
+|2018-10-24T13:22:37|1|from|N---|нет пока
+|2018-10-24T14:10:55|1|from|N---|and are you doing the git change-commits GIT_AUTHOR_NAME "old name" "new name" right?
+|2018-10-24T14:16:02||1|from|N---|- let's go tomorrow morning with a clear head and figure something out
+|2018-10-25T09:16:22|1|to|N---|День добрый!
+|2018-10-25T09:16:49|1|from|N---|привет
+|2018-10-25T09:18:09|1|to|N---| I did the command like this: git change-commits GIT_AUTHOR_EMAIL "all_88@inbox.lv" "max@maxmax.rr" HEAD~5..HEAD~12 - and it finds nothing there
+|2018-10-25T09:19:28|1|from||N---|and it doesn't give you any errors?
+|2018-10-25T09:19:58|1|to|N---|- This is what it says: Rewrite d2975ebefbd249ff671a31ea18e321ec4d8c6388 (47/76) (1 seconds passed, remaining 0 predicted) /usr/lib/git-core/git-filter-branch: 1: eval: [[: not found\nRewrite c8df2476d1b629f16fbdf691e73db5c53b1d68a5 (47/76) (1 seconds passed, remaining 0 predicted) /usr/lib/git-core/git-filter-branch: 1: eval: [[: not found
+|2018-10-25T09:20:10||1|from||N---|and no errors?
+|2018-10-25T09:20:26||1|to|N---|- Only this
+|2018-10-25T09:25:50||1|from|N---|git config --global alias.change-commits "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter "if [\\"$ echo $VAR \\" = \"$OLD\\" ]; then export $VAR=\"$NEW\"; fi" $@; }; f "
+|2018-10-25T09:26:09||1|from|N--|do this command
+|2018-10-25T09:26:42|1|to|N---|Сейчас, минутку. I need to find an error, commit, and then I can do it.
+|2018-10-25T09:47:52||to|N--|- I did, it says event not found\n
+|2018-10-25T09:51:22||1|from|N--|shopt -s extglob; set +H
+|2018-10-25T09:51:27|1|from|N---|а потом
+|2018-10-25T09:51:35||1|from|N---|git config --global alias.change-commits "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter "if [\\"$ echo $VAR \\" = \"$OLD\\" ]; then export $VAR=\"$NEW\"; fi" $@; }; f "
+|2018-10-25T09:52:32||1|to|N--|-|The second one's getting a syntax error near unexpected token `then'\n
+|2018-10-25T10:01:06||1|from|N---|git config --global alias.change-commits "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [ \"$\"echo $VAR\\" = \"$OLD\" ]]; then export $VAR='$NEW'; fi\" $@; }; f "
+|2018-10-25T10:02:01||1|to|N-|-| Everything went quiet, no errors, nothing
+|2018-10-25T10:02:19||1|from|N---|| git change-commits GIT_AUTHOR_EMAIL "all_88@inbox.lv" "max@maxmax.rr" HEAD~5..HEAD~12
+|2018-10-25T10:03:05||1|to|N---||- Scared: fatal: ambiguous argument 'echo': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n
+|2018-10-25T10:04:13||1|from|N---|| git config --global alias.change-commits "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [ \"$ `echo $VAR `\\" = \"$OLD\" ]]; then export $VAR='$NEW'; fi\\$@; }; f "
+|2018-10-25T10:04:25|1|from|N---|а потом
+|2018-10-25T10:04:36||1|from|N---|| git change-commits GIT_AUTHOR_EMAIL "all_88@inbox.lv" "max@maxmax.rr" HEAD~5..HEAD~12
+|2018-10-25T10:08:04|1|to|N---|Не хочет!  fatal: ambiguous argument ' = ]]; then export ='; fi': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'\n
+|2018-10-25T10:08:47||1|from|N---|- I don't know what to do anymore
+|2018-10-25T10:10:02|1|to|N---|- I was trying to do some research on the internet before I contacted you, and I did a rebase -i, which was successful. Could that have an effect?
+|2018-10-25T10:10:49||1|from||N---|yes no, it's in the alias that we create, it doesn't like this design
+|2018-10-25T10:11:25||1|from|N--|git config --global alias.change-commits "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [ \"$ `echo $VAR `\\" = \"$OLD\" ]; then export $VAR='$NEW'; fi\" $@; }; f "
+|2018-10-25T10:11:35||1|from|N--|the error was an extra parenthesis
+|2018-10-25T10:11:52||1|from|N--|-do this command
+|2018-10-25T10:12:04||1|from|N---|git config --global alias.change-commits "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [ \"$ `echo $VAR `\\" = \"$OLD\" ]; then export $VAR='$NEW'; fi\\$@; }; f "
+|2018-10-25T10:12:04||1|to|N--|Yes, all quiet.
+|2018-10-25T10:12:14||1|from|N---|git change-commits GIT_AUTHOR_EMAIL "all_88@inbox.lv" "max@maxmax.rr" HEAD~5..HEAD~12
+|2018-10-25T10:13:24||1|to|N--|- Don't want to: fatal: ambiguous argument ' = ]; then export ='; fi': unknown revision or path not in the working tree.\nUse '--' to separate paths from revisions, like this:\n'git <command> [<revision>...] -- [<file>...]'\n
+|2018-10-25T10:15:28||1|from|N---|| git config --global alias.change-commits "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter "if [ \\"$echo $VAR\\" = \"$OLD\\" ]; then export $VAR=\"$NEW\"; fi" $@; }; f"
+|2018-10-25T10:15:51||from||n---|git change-commits GIT_AUTHOR_EMAIL "all_88@inbox.lv" "max@maxmax.rr" HEAD~5..HEAD~12
+|2018-10-25T10:16:31||1|to|N--|- on 1: syntax error near unexpected token `then'
+|2018-10-30T16:52:47|1|to|N-|-|Hello! The turnip here has changed settings and I can no longer pool or fluff because I don't have the ssh key. What to do?
+|2018-10-30T17:19:15|4|from|N---||Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTRv23? *max@q3mcco35auwcstmt.onion* has requested an Off-the-Record private conversation.  However, you do not have a plugin to support that. See https://otr.cypherpunks.ca/ for more information.
+|2018-10-30T17:19:15|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\nHello! My turnip changed its settings and I can no longer push or pull because I do not have the ssh key. What to do?
+|2018-10-31T06:29:03|1|to||N---||Hello! My rapa's settings have changed and I can't push or pull anymore because I don't have the ssh key. What to do?
+|2018-10-31T06:34:23|1|from|N---|привет
+|2018-10-31T06:35:16|1|to|N---|привет
+|2018-10-31T06:37:23|1|from|N---|попробуй
+|2018-10-31T06:37:25|1|from|N---|gitlab-rake gitlab:check
+|2018-10-31T06:39:19||from|N---|- so there's a ssh key setting in the gitlab web interface
+|2018-10-31T06:40:20||1|from|N---|-|we just need to copy ours from ~/.ssh/id_rsa.pub there
+|2018-10-31T06:40:31||1|to|N---|- They're there. BUT I didn't set it, so someone has to give me that key
+|2018-10-31T06:42:12|1|to|N---|- I haven't created my ssh key on Ubuntu yet
+|2018-10-31T06:42:58||1|from||N---|ssh-keygen -o -t rsa -C "your.email@example.com" -b 4096
+|2018-10-31T06:43:45|1|to|N---|-|- Is that what your.email@example.com is ?
+|2018-10-31T06:43:47|1|from|N---|cat ~/.ssh/id_rsa.pub\n
+|2018-10-31T06:44:01|1|from|N---|свой email
+|2018-10-31T06:45:55||1|to|N---|-My email, what's like a PSI+ login with the onion domain?
+|2018-10-31T06:47:50|1|from|N---|- You login to gitlab by email login?
+|2018-10-31T06:48:23||1|to|N---|- no, just max login
+|2018-10-31T06:48:44|1|from|N---|max@maxmax.rr
+|2018-10-31T06:48:54||1|from|N---|-can you use this one
+|2018-10-31T06:49:42|1|from|N---|- whatever, as long as the key is created and then you add it to gitlab
+|2018-10-31T06:50:41|1|from||N---| cat ~/.ssh/id_rsa.pub
+|2018-10-31T06:50:52|1|to||N---||What to write here: Enter file in which to save the key (/home/alla/.ssh/id_rsa)
+|2018-10-31T06:51:15|1|from|N---|yes
+|2018-10-31T06:51:48||1|to||N---|| And here Enter passphrase (empty for no passphrase):
+|2018-10-31T06:52:01|1|from|N---|ghjcnj утеукщь
+|2018-10-31T06:52:09|1|from|N---|просто enterom
+|2018-10-31T07:01:01|1|from|N-|-|-|-|what did you add to gitlab?
+|2018-10-31T07:02:02|1|to|N---|Да блин! I don't know where I created this file\nssh-keygen -o -t rsa -C "max@maxmax.rr" -b 4096 \nGenerating public/private rsa key pair.\nEnter file in which to save the key (/home/alla/.ssh/id_rsa): yes \nEnter passphrase (empty for no passphrase): \nEnter the same passphrase again: \Your identification has been saved in yes.Your public key has been saved in yes.pub.\nThe key fingerprint is:\nSHA256:cfaHEKjIDzAfQMZpFtEJIL5z/UA4CcSkY9QZdH1ouU4 max@maxmax.rr\nThe key's randomart image is:\n+---[RSA 4096]----+\n\p*OXXoo. o..      \p\n\p=oOoB =...     \p\n\po= O + ...+ \p\n\p... O .E + o .   \p\n\p o . =o S o .  \p\n\p o +. .   \p\n\p .         \p\n\p\p\n\p \p\n+----[SHA256]-----+\nalla@aw:/var/www/mykeys/checkkeys_update$ cat ~/.ssh/id_rsa.pub\ncat: /home/alla/.ssh/id_rsa.pub: No such file or directory\nalla@aw:/var/www/mykeys/checkkeys_update$ cat ~/.ssh/yes.pub\ncat: /home/alla/.ssh/yes.pub: No such file or directory\n
+|2018-10-31T07:03:14||1|from||N---||show the command ls ~/.ssh/
+|2018-10-31T07:04:10||1|from|N---|ssh-keygen -o -t rsa -C "max@maxmax.rr" -b 4096
+|2018-10-31T07:04:32|1|from|N---|-|re-create everywhere press enter
+|2018-10-31T07:04:43|1|to|N---|Все, нашла. I saved it in the project. Should I copy it into .ssh?
+|2018-10-31T07:05:38|1|to|N--|- All right, it's all there now.
+|2018-10-31T07:06:15|1|to|N-||- So I just copy and paste the public key on gitlab?
+|2018-10-31T07:06:52|1|from|N---|ага
+|2018-10-31T07:07:04|1|from|N---|- and try the connection
+|2018-10-31T07:08:26|1|to|N---|There are two fields, key and title. Does it matter what to write in the title?
+|2018-10-31T07:09:15||1|from|N--|you just write max.
+|2018-10-31T07:09:44|1|from|N---|-it's automatically filled in when you put in the key
+|2018-10-31T07:10:02|1|to|N---|да, сохранила. Now what?
+|2018-10-31T07:10:13||1|to|N--|- Just a git pool?
+|2018-10-31T07:10:28|1|from|N---|да
+|2018-10-31T07:13:33|1|to|N-||- no\ngit pull\nfatal: unable to access 'https://n4iaacb37wmqclht.onion/dyd/checkkeys_update.git/': Could not resolve host: n4iaacb37wmqclht.onion\I solved this problem through torsocks before, but my login and password are encoded there
+|2018-10-31T07:14:52|1|from|N---|- so it has to be through torsocks, it's a onion domain
+|2018-10-31T07:15:21|1|from|N---|- it doesn't see it
+|2018-10-31T07:16:10|1|to|N--- I already tried it, it throws the same error.  sudo torsocks git pull\n1540980830 WARNING torsocks[4762]: [connect] Connection to a local address are denied since it might be a TCP DNS query to a local DNS server. Rejecting it for safety reasons. (in tsocks_connect() at connect.c:192)\nfatal: unable to access 'https://n4iaacb37wmqclht.onion/dyd/checkkeys_update.git/': Couldn't connect to server\nI have torsocks set up to give out login and password
+|2018-10-31T07:24:23|1|from|N---|and try torify git pull
+|2018-10-31T07:25:05||1|to|N---|- Same thing
+|2018-10-31T07:25:47:1|to|N---|- Me and Mav wrote a special file where we put my login and password, but there was nothing about the key
+|2018-10-31T07:26:52||1|from|N---|there's no mistake about the key.
+|2018-10-31T07:27:17|1|from|N-|-|he can't connect to the server
+|2018-10-31T07:27:33|1|from|N---|/etc/init.d/tor restart
+|2018-10-31T07:27:40|1|from|N---|сделай
+|2018-10-31T07:27:53|1|from|N---|- and try git pull again
+|2018-10-31T07:30:31||1|to|N---|-did. same thing
+|2018-10-31T07:32:23|1|from|N--- I don't know honestly, try asking Mav if he's encountered this error
+|2018-10-31T07:35:33||1|to|N-||- I haven't seen him online in three weeks.
+|2018-10-31T07:42:50||1|from||N-|-|- Let's start with why you thought it was the ssh key?
+|2018-10-31T07:44:43|1|to|N---|When I went to the gitlab page, there was a warning that since I don't have the key, I can't bullet or fluff. That never happened before. And I didn't have a problem with the git before.
+|2018-10-31T08:26:12|1|to||N-|| What should I do?
+|2018-10-31T08:26:45||1|from|N-|-|- I'm just finishing up a case.
+|2018-10-31T09:37:39||1|from|N--- I don't even know what the problem is.
+|2018-10-31T09:38:12||1|from|N---|- try torsocks git clone
+|2018-10-31T09:41:09||1|to|N-|-|- It's the same.
+|2018-10-31T09:41:58||1|from|N---|the problem is the torsoksa interaction with git
+|2018-10-31T09:42:14||1|from|N---|- but I don't know how to solve it yet
+|2018-10-31T09:43:15|1|to|N---||What could be the drastic solution? If you take something down and put it back up again?
+|2018-10-31T10:25:05||1|to|N---|Thank you for your help. Everything's working now.
+|2018-11-07T11:26:49||to|N-||-|Hello, how do I post checkkeys_update project on another port for tests
+|2018-11-07T11:27:47||1|from|N---|Hello, I don't know
+|2018-12-04T15:04:08||1|to|N---|Hi! I really need help! \n[10:21:55] <AllaWitte> There's a vpc running centos 7, I need to do an event log from a php file to some kind of log.txt\nI try to write to that file, nothing happens. And there are no errors.\nDoing the same thing locally or on a cheap hoster - everything works.\nThe structure is: http://joxi.ru/1A5y9zjHDKeKeA in the folder date and lies log.txt\n[10:27:18] <defender@q3mcco35auwcstmt.onion> hi \n[10:27:27] <defender@q3mcco35auwcstmt.onion> need to understand which user runs the web server \n[10:27:31] <defender@q3mcco35auwcstmt.onion> and give him rights \n[10:27:40] <defender@q3mcco35auwcstmt.onion> es what kind of server? \n[10:30:56] <AllaWitte> It's a server of some Inoventica Services\they have LAMP installed\nThe root login is standard \n[10:37:39] <defender@q3mcco35auwcstmt.onion> drop ssh access \n[10:38:52] <AllaWitte> We go there via putty \nIP address 46.173.213.90\nLogin: root\nPassword: GWxEVcw7CK \n[14:47:37] <AllaWitte> Hi! Had a chance to watch? I can't get these comrades to answer the question from whom the web server works. Like - configure it yourself.\n I looked and it turns out like this:\nhttp://joxi.ru/Q2KVxpOfL9DDGm\nI looked in the error log - there is a problem that "permissions denied" when writing.\nI change and the entire folder html rights 777, and put the owner apache - no matter \n[14:50:44] <defender@q3mcco35auwcstmt.onion> now look \n[14:57:12] <defender@q3mcco35auwcstmt.onion> which script writes in the log? \n[14:57:44] <defender@q3mcco35auwcstmt.onion> got it \n[14:58:14] <defender@q3mcco35auwcstmt.onion> how do you run it? \n[14:58:16] <defender@q3mcco35auwcstmt.onion> in the console? \n[15:00:46] <AllaWitte> Like this http://46.173.213.90/log.php\n And if it recorded something, that after RES: there will be some significant figure \n[15:02:28] <defender@q3mcco35auwcstmt.onion> write green@ \n[15:02:30] <defender@q3mcco35auwcstmt.onion> he will decide \n[15:02:36] <defender@q3mcco35auwcstmt.onion> I am very busy now \n[15:02:54] <defender@q3mcco35auwcstmt.onion> correspond with him directly with access
+|2018-12-04T15:05:09|1|from|N---|щас посмотрю
+|2018-12-04T15:47:46|1|from|N---|- I don't know what the problem is yet, I think everything is set correctly
+|2018-12-04T15:48:05||1|from|N---|- I'll check again in the morning.
+|2018-12-04T15:48:19|1|to|N---|Ладно
+|2018-12-04T15:53:16||4|from|N---||Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMDzFt4hKPIyRAAAAAABAAAAAQAAADAoAuk1OXL1YJC6O3+vpby3/pViwufHBTAMB/RIzJGw6wr3h6K05n3y3NMDOIOXlZUkhSDuZsa5PM8Kqemq2o3saf3jsExuzaBR3VfSaz46/JOWPOW6CGvMwU3f75rKfHXOhjZ+KDmWJTjH4spudqWOecFgqC4P8eeHULo84vk0z0NJ9+RN7T+DydfOjn4bINiNnlb8dPxaAvkkVBbS8G0DSEKFdACjonj6fDFkUyyFaKlRUBXkRFj3oWEMqLvJ29hAAAAAAAAAAEAAAAL8Ut5V90CwNo1R/8wqm5Q/V+X9gKL2jgEWPgejRPdkgAAABQV9+l1Pfr19id/nDi0g8sFvLQ3kg==.
+|2018-12-05T03:45:17|1|from||N---||Hi I fixed you, the script works
+|2018-12-05T08:31:59|1|to|N---|Спасибо! Where was the dog buried?
+|2018-12-05T08:32:22|1|to|N-||- Oh, I see you rewrote everything to apache :)
+|2018-12-05T08:48:57||1|from||N---|-|you had to do the command chcon -Rv --type=httpd_sys_rw_content_t /var/www/html
+|2018-12-05T08:49:10||1|from||N---|-|the solution is not mine
+|2018-12-05T11:46:46|1|to|N---|Всеравно, спасибо!
+|2018-12-05T11:46:57|1|to|N--|There's another problem, how do I check that I have a torus proxy up on port localhost:9050? There's been a problem with that.
+|2018-12-05T13:52:41||1|to|N---|Hi! Need help! Did you see the message?
+|2018-12-05T16:28:09|1|to|N---|Привет!
+|2018-12-06T11:02:34|1|to|N---|Привет!
+|2018-12-06T11:14:25|1|from|N---|привет!
+|2018-12-06T11:51:58|1|to|N-||Listen, I don't seem to have tor service working on linux. I can only do things if the Tor browser is on. Can you help me?
+|2018-12-06T13:05:58||1|from||N---|-try running these commands in the terminal as root
+|2018-12-06T13:06:10|1|from|N---|/etc/init.d/tor restart
+|2018-12-06T13:06:21|1|from|N---|/etc/init.d/privoxy restart
+|2018-12-06T13:07:11||1|to|N---|| I'm not sure if I have root on my linux. How do I check?
+|2018-12-18T11:06:19||to|N---|Hi! I need your help
+|2018-12-18T11:06:37|1|from|N---|привет спрашивай
+|2018-12-18T11:08:58||1|to|N---|- I run your magic commands and get this:\nchanging security context of '/var/www/html/log.php'\nchcon: can't apply partial context to unlabeled file 'log.php'
+|2018-12-18T11:09:05|1|to|N---|Что делать?
+|2018-12-18T11:10:24||1|from|N---|a script check works?
+|2018-12-18T11:10:48|1|to|N---|Какой скрипт?
+|2018-12-18T11:11:07|1|from|N---|log.php
+|2018-12-18-18T11:11:30||1|from|N---|-maybe the last command is unnecessary
+|2018-12-18T11:11:44|1|from|N---|- only chown and chmod
+|2018-12-18T11:11:49|1|to|N---|Да, косяк
+|2018-12-18T11:14:58|1|to|N---|Спасибо!
+|2018-12-18T11:15:10||1|from|N---|you're welcome.
+|2018-12-18T11:15:15|1|to|N---|должно работать
+|2018-12-18T11:15:36|1|to|N---|:) Hush wrote :)
+|2018-12-21T09:50:22|1|to|N-|| Hi, we're struggling with Debian on the wps here. How do you make it possible to write everything in the html folder?
+|2018-12-21T09:50:59|1|to|N-||The commands are chown -R www-data:www-data /var/www\nchmod -R 777 /var/www - but no effect.\n
+|2018-12-21T09:52:04|1|to|N---|192.243.100.70\nroot:yv377vYD6a\n\n107.172.60.71\nroot:4eea74a94d\n
+|2018-12-21T09:52:10||1|to|N---|| Hi, we're struggling with Debian on the wpc here. How do you make it possible to write everything in the html folder? \n[09:50:59] <AllaWitte> These commands go chown -R www-data:www-data /var/www\nchmod -R 777 /var/www - but no effect.
+|2018-12-21T09:52:42|1|to|N---|| And that's 2 Debian servers [09:52:04] <AllaWitte> 192.243.100.70\nroot:yv377vYD6a\n107.172.60.71\nroot:4eea74a94d
+|2018-12-21T09:56:27||from|N---|- I had them set up. Let me check.
+|2018-12-21T10:00:06|1|from|N---|-so what, the scripts don't work?
+|2018-12-21T10:00:34|from|N--|- Put what should work
+|2018-12-21T10:00:45||from|N---|- I'll check the logs to see what kind of bends
+|2018-12-21T10:01:14||1|to|N---||The scripts should write to the data/blockedip.txt file, but they don't write anything. I uploaded to 192.243.100.70
+|2018-12-21T10:03:01||1|from||N---|a seems to be stuffed with data/blockedip.txt,
+|2018-12-21T10:03:01||1|to|N---|- The second one is also filled
+|2018-12-21T10:07:20||1|to|N--|- It's filled in from my tests on the local. But I can't add a new one through the admin
+|2018-12-21T10:10:50|1|to|N---|- I try to write something down from me through the admin - nothing
+|2018-12-21T10:16:13||1|from|N---|do you have everything on 192.243.100.70?
+|2018-12-21T10:16:48||1|to|N-|Yes, so you can motest
+|2018-12-21T10:16:54|1|to|N---|потестить
+|2018-12-21T10:17:02|1|from|N---|ок
+|2018-12-21T10:21:23|1|from|N---| I don't know if it works, check
+|2018-12-21T10:26:25|1|to|N---|Да, работает. Thank you! What do I have to do?
+|2018-12-21T10:27:17|1|from|N---|when you pour everything to another or the next one, you do two commands again after pouring
+|2018-12-21T10:27:20|1|from|N---|chmod -R 777 /var/www
+|2018-12-21T10:27:29|1|from||N---| chown -R www-data:www-data /var/www
+|2018-12-21T10:27:45||1|from|N---|-|this on Debian vpsks
+|2018-12-21T10:27:55|1|to|N---|+
+|2018-12-21T11:42:37|1|to|N---|Hi! Here's a lamp to put here:  51.75.232.127\nroot:7Vd5Mxc8w4 \n And do all the magic passes.
+|2018-12-21T11:43:06|1|from|N---|ок
+|2018-12-21T11:59:02|1|from|N-|-|-all you can pour, after pouring you do the commands
+|2018-12-21T11:59:16|1|from|N---|chmod -R /var/www
+|2018-12-21T11:59:29|1|from|N---|| chmod -R 777 /var/www
+|2018-12-21T11:59:41||1|from|N---||chown -R www-data:www-dat /var/www
+|2018-12-21T11:59:49|1|from|N---|нета
+|2018-12-21T12:00:02|1|from|N---|там apache:apache
+|2018-12-21T12:00:18|1|from|N---||chown -R apache:apache /var/www
+|2018-12-21T12:40:56|1|to|N---|Спасибочки!
+|2018-12-21T12:57:05|1|to|N---|There's another thing now - MLHttpRequest cannot load http://192.243.100.70/get-block.php. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://51.75.232.127' is therefore not allowed access. - how to set it here?
+|2018-12-21T13:09:22||1|to|N---||I searched the internet and they suggest to upload a .htaccess file - it won't upload, the upload is blocked
+|2018-12-21T13:32:03|1|from|N---|touch /var/www/html/.htaccess
+|2018-12-21T13:51:31|1||to|N---|No, it is not created
+|2018-12-24T11:35:45|1|to|N---|Привет!
+|2018-12-24T11:41:40|1|to|N---|Ты тут?
+|2018-12-24T12:48:04|1|from|N---|привет тут
+|2018-12-24T12:50:07|1|to|N-|- I can't get anything to allow 51.75.232.127 to this cross domain origin server. It's been sitting like this since Friday :((
+|2018-12-24T12:51:06||1|to|N---|- This is centos 7.
+|2018-12-24T12:53:43||1|from|N--|-|- so what was that about htaaccess, it's kind of created
+|2018-12-24T12:54:18|1|to|N---|Не виделаю. I'm looking at .
+|2018-12-24T12:58:51||1|to|N-|A, it's created, but it's hidden. I see.
+|2018-12-24T13:00:09||1|to|N--|- But that didn't help. It's still the same. Then I don't know anymore.
+|2018-12-24T13:02:22|1|from|N---|погугли
+|2018-12-24T13:07:17||1|to|N---|| Look, it's suggested everywhere like here https://www.digitalocean.com/community/questions/cors-apache-linux-access-control-allow-origin - change something in /etc/apache2/apache2.conf - but where is that directory there? There's something different there.
+|2018-12-24T13:39:10||1|from||N---|try it, I think I did
+|2018-12-24T13:39:21||1|from|N--- like the link.
+|2018-12-24T13:41:33|1|to|N-|-| doesn't want to, parasite. Here's the link http://51.75.232.127/admin.html#!/blockedip, try adding ip's and deleting stuff there. So far, all I've achieved is that it's not blaming me when I ask for all ip, it was blaming me before.
+|2018-12-24T14:02:54|1|from||N---|Geez I don't understand it yet, no errors
+|2018-12-24T14:19:12|1|to|N---|- He's great at writing errors in the console
+|2018-12-24T14:31:28|1|to|N---|It looks like it should all be written on Debian 192.243.100.70
+|2018-12-24T14:36:05||1|from|N--|-|can you spell apache there
+|2018-12-24T14:37:04|1|from|N---|там есть /etc/apache2/apache2.conf
+|2018-12-24T14:38:05||1|to|N---|Yes, I already got into it. It's just not quite clear exactly where to write it all. There's several sections of directory
+|2018-12-24T14:39:06||1|from|N---|- which is /var/www/html
+|2018-12-24T14:42:13||1|to|N--|-|There isn't one. So create it?  I already shoved it into the directory /var/www - and it got really bad. Now it won't even give me all the ip.
+|2018-12-24T14:43:01||1|from||N---| yes, create it.
+|2018-12-24T14:43:13|1|to|N---|+
+|2018-12-24T14:58:55|1|to|N-|-| I did, but nothing works. Did the same a2enmod headers\n service apache2 reload - and nothing works at all
+|2019-01-08T10:52:03||1|to|N---||Hi! Do you know what the miracle is? See http://joxi.ru/eAOl47kI99aYNr
+|2019-01-08T12:06:51|1|to|N---||How do you even put rnr on debian? I've been dancing around for two hours and I can't do it.
+|2019-01-09T10:04:09|1|to|N-||Hi! Tell me the big secret, how do you put php on debian? I had a lot of fun with it yesterday - kept getting the error that there was no php package
+|2019-01-09T10:09:19||1|from||N---|Hi what php? 7
+|2019-01-09T10:10:52|1|from|N---|https://tecadmin.net/install-php7-on-debian/
+|2019-01-09T10:11:37|1|from|N---|there's no php-gd module, I installed it without it.
+|2019-01-09T10:12:01|1|from|N---|дебиан 8?
+|2019-01-09T10:14:39||1|from|N---|- when you add the repositories and do apt update, check with apt search php to see what's available to install, I pulled in php7.0 today with no problems
+|2019-01-09T10:23:57||1|to|N-|| I did apt-get -y install php - unable to locate package php What's wrong?
+|2019-01-09T10:27:06||1|from|N---|connect the repository like in the article
+|2019-01-09T10:27:26|1|from||N---||sudo apt install ca-certificates apt-transport-https \nwget -q https://packages.sury.org/php/apt.gpg -O- \p sudo apt-key add -\nsudo echo "deb https://packages.sury.org/php/ jessie main" \p tee /etc/apt/sources.list.d/php.list
+|2019-01-09T10:27:55|1|to|N---|Спасибо!
+|2019-01-09T10:28:30||1|from|N--|- but specifically choose something like php7.0
+|2019-01-09T10:28:48|1|to|N---|А, хорошо
+|2019-01-16T11:19:31||to|N--|Hello! Knock me when you show up!
+|2019-01-16T11:19:54||1|from|N--|- Hey, I'm here.
+|2019-01-16T11:21:24|1|to|N-||- Listen, I still have the same old problem with the tor service. I can only work with git if the tor browser works, and there's another project where I need the tor itself - and I don't know what to do with it
+|2019-01-16T11:22:20||1|from|N---||you have ubunta7
+|2019-01-16T11:22:24|1|from|N---|7
+|2019-01-16T11:22:27|1|to|N---|да
+|2019-01-16T11:22:31|1|from|N---|?
+|2019-01-16T11:22:42|1|to|N---|убунта 18
+|2019-01-16T11:22:50||1|from|N---||sudo /etc/init.d/tor start
+|2019-01-16T11:23:14|1|from|N---|sudo /etc/init.d/tor restart
+|2019-01-16T11:28:00||1|to|N--|-|Did it, it says okay. But in fact, it doesn't work. I run a project where socksList = ["127.0.0.1:9050"]; - and it says no "166.157.107.112 no good sock". If I change it to 127.0.0.1:9150 and start the tor browser, I can work. But I can't get very far with my browser. \What do I do?
+|2019-01-16T11:33:23|1|from|N---|sudo /etc/init.d/privoxy restart
+|2019-01-16T11:39:19||to|N---||-not a damn thing wants to listen.
+|2019-01-16T11:40:01||1|to|N---|- If you want, I can give you access via team viewer to see what my mess is
+|2019-01-16T11:40:16|1|from|N---|давай
+|2019-01-16T11:41:06||to|N---|id 705,044,374 pass 5q45ui
+|2019-01-16T11:41:32|1|to|N---|and I have Ubuntu in my drawer
+|2019-01-16T11:44:49:1|to|N-|-|- I don't want it yet.
+|2019-01-16T11:50:40||1|from|N--- I don't know, I don't have time right now, maybe we'll try it later
+|2019-01-16T11:52:16||to|N-|- Okay, then knock me on my way.
+|2019-01-16T11:52:25|1|from|N---|ок
+|2019-01-31T15:40:18|1|to|N---|Привет!
+|2019-01-31T15:40:43|1|to|N-||- Do you have the passwords to this 198.12.71.15?
+|2019-02-11T10:15:09||to|N-|Hi! Can you put mysql here?  192.243.100.70\nroot:yv377vYD6a
+|2019-02-11T10:23:48||1|from|N-|- Hey. Yeah, I'll do it right now.
+|2019-02-11T10:28:10||1|from|N---|it's right there.
+|2019-02-11T10:28:27|1|from|N---|mysql -p
+|2019-02-11T10:28:33|1|from|N---|yv377vYD6a
+|2019-02-11T10:49:41|1|to|N---|you mean the root yv377vYD6a passwords to the database?
+|2019-02-11T10:50:01|1|from|N---|да
+|2019-02-11T10:50:08|1|to|N---|Спасибо!
+|2019-02-22T16:18:25|1|to|N--- Happy February 23rd!\nWish you lots of creative ideas and courage in achieving them!
+|2019-02-23T05:24:40|1|from|N---|Spasibo!
+|2019-02-28T11:06:55|1|to|N---|Присет! Have you ever dealt with a canter?
+|2019-05-20T16:51:42|1|to|N-||Hi, found this problem that OpenVpn is slowing my internet performance down to almost zero. what to do? \On both computers at the same time - Windows 8 which is almost no update and Windows 10 which was recently updated several times in a row. I'm still working without it.
+|2019-05-22T10:03:55||1|to|N-||Hi, I found this problem that OpenVpn is slowing down my internet connection to almost zero. what to do? \I'm on both machines at the same time - Windows 8 which is almost no update and Windows 10 which has recently had several updates in a row. I'm working without it at the moment.
+|2019-05-27T09:23:56|1|to|N---|Привет!
+|2019-05-27T09:24:56|1|from|N---|Привет
+|2019-05-27T09:25:20||1|to|N-||Listen, 2 questions
+|2019-05-27T09:25:40||to|N---|- I'm having trouble with OpenVpn
+|2019-05-27T09:26:23|1|from|N---|Какая?
+|2019-05-27T09:26:49|1|to|N---|- I have it slowing my internet down 10-15 times and sometimes to zero
+|2019-05-27T09:27:41|1|from|N---|-|and which one are you on?
+|2019-05-27T09:28:22|1|to|N--|- I don't know which one I'm on. What I'm given is what I use. How do I look?
+|2019-05-27T09:28:46||1|from|N---|- look up ip on whoer.net.
+|2019-05-27T09:29:39||1|to|N--|- I have it turned off now. Should I turn it on and see?
+|2019-05-27T09:30:04|1|from|N-|-|you look, and when did the thromosomes start?
+|2019-05-27T09:31:04|1|to|N-||- Here's the one without VPN: ISP:\nDigicel Suriname NV\nHostname:\nrevzone.200.7.150.248.digicelsr.net
+|2019-05-27T09:32:26|1|to|N---|А вот с ним:\nISP:\n\nrevzone.200.7.150.248.digicelsr.net\n\nDNS\nN/A \nProxy:\nNo\nAnonymizer:\n
+|2019-05-27T09:33:15||1|to|N---|And the slowdown started a couple of months ago. I didn't know what was wrong until I ended up checking OpenVpn
+|2019-05-27T09:34:37||1|from|N---|- are there any lags now? have you turned on your VPN? what whoer.net ip is it giving out?
+|2019-05-27T09:35:15||from|N---|- I need to figure out what kind of VPN you're using.
+|2019-05-27T09:35:16|1|to|N---|Так вот, только отправила:\nISP:\n\nrevzone.200.7.150.248.digicelsr.net\n\nDNS\nN/A \nProxy:\nNo\nAnonymizer:
+|2019-05-27T09:35:51||1|from|N--|-|200.7.150.248?
+|2019-05-27T09:36:00|1|to|N---|+
+|2019-05-27T09:36:47||1|from|N---|- those aren't my VPN servers, I don't have one, let me give you our common one, see how it works
+|2019-05-27T09:36:56||to|N---|- And it's slowing down right away, now it's 440 kbps.
+|2019-05-27T09:37:17||to|N--- And it should be about 4.5 mbps
+|2019-05-27T09:37:39||1|from|N---|- but the speed of the VPN is still lower than with a normal connection
+|2019-05-27T09:38:01|from|N-|- I'll give you another configuration
+|2019-05-27T09:38:11|1|to|N---|Давай, выдавай. But not by a factor of 10 or 15. It's not supposed to drop to zero.
+|2019-05-27T09:43:48|1|from|N---|https://send.firefox.com/download/2d05d1fc06ce9ac3/#hHmtGZiFq316_NveFnI7RQ
+|2019-05-27T09:43:57|1|from|N---|meuxeeCh2ohr
+|2019-05-27T09:46:09|1|to|N---|- I have this stuff not working for some reason, starts downloading, then after a split second says the link is no longer good. Can I use something else?
+|2019-05-27T09:46:28|1|from|N---|sek
+|2019-05-27T09:50:05||1|from|N---|https://www.sendspace.com/file/jtxglm
+|2019-05-27T09:50:13|1|from|N---|- password is the same
+|2019-05-27T09:56:08||1|to|N---||Remind me how to set it so that you can choose the exact setting? Because I set it up and I only get the old ones displayed.
+|2019-05-27T09:56:35||1|from|N---|you have openvpn gui7
+|2019-05-27T09:56:43|1|to|N---|да
+|2019-05-27T09:57:03||1|from|N---|there's a right-click import configuration
+|2019-05-27T09:57:19|1|from|N---|- and you import that file
+|2019-05-27T10:00:58|1|to|N---|Да, поствила. And it's still 10 times slower. It's 4.5, but with mars it's 450.
+|2019-05-27T10:41:08|1|to|N---|Ты тут?
+|2019-05-27T10:41:18|1|from|N---|да
+|2019-05-27T10:41:52|1|to|N---|- I put Mars in, but nothing's changed. Is there anything else you can do about it?
+|2019-05-27T10:42:30||1|from|N---|- I think that's the most a double VPN can do.
+|2019-05-27T10:42:56|1|to|N---|Ладно.
+|2019-05-27T10:44:31|1|to|N-|-| Then another question, I was included in the chat shop and this is what it tells me:\nNot acceptable.\nThe recipient or server understands the request but is refusing to process it because it does not meet criteria defined by the recipient or server (e.g., a local policy regarding acceptable words in messages).\nOnly occupants are allowed to send messages to the conference\n------\n?OTRv23? *max@q3mcco35auwcstmt.onion* has requested an Off-the-Record private conversation.  However, you do not have a plugin to support that. See https://otr.cypherpunks.ca/ for more information.
+|2019-05-27T10:49:43||1|to|N-|| Did you see the message?
+|2019-05-27T11:13:34|1|to|N--|Hey, can you communicate?
+|2019-05-29T11:05:46|1|to|N---|Привет!
+|2019-05-29T11:06:03|1|to|N-|| Can you help with access rights in linux?
+|2019-05-29T11:06:45|1|from|N---|Привет давай
+|2019-05-29T11:07:11|1|to|N--|-|What am I doing wrong?\n\nsudo chown -R alla:alla ./\n[sudo] password for alla: \nalla@aw:/media/sf_Projects/shop$ ls -l\ntotal 1\n-rwxrwx--- 1 root vboxsf 160 May 29 10:10 index.html\nalla@aw:/media/sf_Projects/shop$ \n
+|2019-05-29T11:08:29|1|from||N---|- so I must have spelled the path wrong
+|2019-05-29T11:08:55||1|from|N---||chown -R alla:alla /media/sf_Projects/
+|2019-05-29T11:09:34||1|to|N---||No, what if I'm in that folder and I want to change the rights to that folder?
+|2019-05-29T11:10:03||1|from|N---|- it's always better to write the full path
+|2019-05-29T11:10:28||1|from|N---|try writing the full path
+|2019-05-29T11:12:29|1|to|N-----all right, he went to the whole root directory to change the rights, it's a long time :))
+|2019-05-29T11:14:04|1|from|N---|-|- why the root directory?
+|2019-05-29T11:14:15||1|from|N---|-you asked /
+|2019-05-29T11:15:28|1|from|N---|or did you mean .uvshf,
+|2019-05-29T11:15:38|1|from|N---|/media
+|2019-05-29T11:19:321||to|N-|| Look, something's wrong. I need to change the shop from root to alla, I'm typing everything right, but still shop under root http://prntscr.com/nuyekv
+|2019-05-29T11:21:29|1|to|N-|-|- I get an error from apache when I try to open a page :\nForbidden\nYou don't have permission to access / on this server.\n
+|2019-05-29T11:23:12||1|from|N---|-|without shop chown -R alla:alla /media/sf_Projects/
+|2019-05-29T11:24:41|1|to|N---|- I have a shitload of stuff there, I gave this command and it's been running for about 15 minutes :))
+|2019-05-29T11:25:59||1|from|N---|-|- are you running a shared folder on virtualbox?
+|2019-05-29T11:26:13|1|to|N---|она самая
+|2019-05-29T11:27:46||1|from|N---i.e. are the main documents under the windup? or on Ubuntu virtual?
+|2019-05-29T11:28:21|1|from|N-|-|- should I try disabling it and prescribing the owner
+|2019-05-29T11:28:39:1|from|N---|-maybe that's why it won't let
+|2019-05-29T11:28:59||1|to|N---|-|The main system is the wind. The virtual host and apache are all on Ubuntu in a virtual machine.
+|2019-05-29T11:29:22||1|from|N---|disconnect it from the windup, and write the owner
+|2019-05-29T11:29:25|1|to|N-||-|And how do you disconnect it and prescribe an owner?
+|2019-05-29T11:30:00|1|from|N---|sudo umount /media/sf_Projects
+|2019-05-29T11:33:09|1|to|N-||-|I disabled it and now it says no such directory /media/sf_Projects/
+|2019-05-29T11:33:48|1|to|N---|-|- And how do I change the owner there?
+|2019-05-29T11:34:09|1|from|N---|- so I see, you have a project on the wind?
+|2019-05-29T11:36:13||1|to|N-|| Look, I have the whole system on linux in a virtual machine. I want to edit a project from the windup in php storm and run it under Ubuntu. Because I have phpstorm on the windup and it's not realistic to put it on linux.
+|2019-05-29T11:38:34|1|from|N--- I got it, I don't know if it will change the rights, maybe it's easier to copy somewhere and change the rights for a specific project there
+|2019-05-29T11:40:53||1|to|N-|- I don't quite understand. Copy shop to home directory under linux, set yourself as owner there, then reverse it to a shared folder?
+|2019-05-29T11:41:14||1|from|N-|-|yeah,you should try that.
+|2019-05-29T11:41:57:1|from|N--- I think the virtualbox autoconnected folder didn't let me change permissions either, only root
+|2019-05-29T11:42:50|1|to|N---|- How do I reconnect this folder?
+|2019-05-29T11:43:08||1|from|N---|- I'll be out in about 40 minutes.
+|2019-05-29T11:43:18|1|from|N--|and you're in the virtual machine properties
+|2019-05-29T11:43:29|from|N-|- disconnect and reconnect.
+|2019-05-29T11:44:52||from|N---|-try again on the whole sf_Project chown, if that doesn't work move it from there to /home change the rights and the owner and move it back
+|2019-05-29T11:45:23|1|to|N---|ладно
+|2019-05-29T12:08:38||to|N-||- Look, I found something here, but it's for Debian. https://demon.of.by/blog/linux-admin/how-to-mount-shared-folder-virtualbox-as-from-user/\nYou can rewrite the commands for Ubuntu?
+|2019-05-29T12:48:06|1|from|N---|sek pochitayu
+|2019-05-29T12:48:57||1|to|N---|- And I also found this https://askubuntu.ru/questions/2895/ubuntu-dez-ktop-18-virtualbox-ne-mozhet-izmenyat-prava-dostupa-k-obshhej-papke
+|2019-05-29T12:49:08||1|from|N---||ubunta tot je debian
+|2019-05-29T12:49:23||from|N--|tak chto vse komandi poydut
+|2019-05-29T12:49:59|1|to|N---|пробую
+|2019-05-29T12:51:14|1|from|N---|davay ya pro eto i govoril, chto ne dast, nado kakieto kostili
+|2019-05-29T12:59:34|1|to|N--||Listen, something's slowing me down here:\n. Create a .sh file with the following bash script: sleep 1 echo '[your password]' \p sudo -S mount -t vboxsf -o rw,uid=1000,gid=1000 [share name] [path to the directory created in the previous step] - where to create it? And which one do I name?
+|2019-05-29T13:03:45|1|from|N---|nano mount.sh
+|2019-05-29T13:03:57|1|from|N---|!#/bin/bash
+|2019-05-29T13:05:03||1|from|N---| sleep 1 echo '[your password]' \p sudo -S mount -t vboxsf -o rw,uid=1000,gid=1000 sf_Project kuda montirovat
+|2019-05-29T13:05:19|1|from|N---|sozdaesh gde ugodno
+|2019-05-29T13:05:29|1|from|N---|v /home/alla
+|2019-05-29T13:05:44|1|from|N---|chmod +x mount.sh
+|2019-05-29T13:07:25|1|to|N---||- What does "mount where" mean?
+|2019-05-29T13:08:32|1|from|N---|papka pustaya
+|2019-05-29T13:08:58||from|N--|nu-|nuili otkuda u tebya apach budet schitivat
+|2019-05-29T13:09:18|1|from|N---|mkdir /mnt/project
+|2019-05-29T13:09:23|1|from|N---|sozday
+|2019-05-29T13:09:42|1|from|N---|i montiruy /mnt/project
+|2019-05-29T13:15:07||1|to|N---||- Okay, that's clear. Now I don't understand a thing here:\nGo to the "application launcher" and create a new launch using the command: xterm -e "/path/to/script/in/previous/step" Set the file permission for the executable: chmod +x [file name]. Install xterm sudo apt-get install xterm.
+|2019-05-29T13:15:26||1|to||N-||What is the application launcher?
+|2019-05-29T13:16:25|1|from|N---|da mojesh bez etogo
+|2019-05-29T13:16:39|from|N---|prosto zapusti script mount.sh
+|2019-05-29T13:16:46|1|from|N---|./mount.sh
+|2019-05-29T13:20:05|1|to|N---|-|- Going to throw errors\n./mount.sh: line 1: !#/bin/bash: No such file or directory\n- what's wrong?
+|2019-05-29T13:34:41||from|N---|poprobuy uberi etu strochku
+|2019-05-29T13:35:24|1|to|N--|- Look, it looks like it worked. Look: http://prntscr.com/nv0j3w
+|2019-05-29T13:35:55|1|to|N-||Thank you for your patience in answering my idiotic questions!!!!
+|2019-05-29T13:36:28||1|from||N--|da ladno vse norm!
+|2019-05-30T13:05:28|1|to|N---|Привет!
+|2019-06-14T11:43:22|||from|N1--| Vacation|Hi all, I'm going on vacation from 17.06-30.06, any questions please contact defender@.  
+|2019-06-28T14:25:07|||from||N---| Hi everyone, I'm off from Monday, so questions and problems to me.
+|2019-07-15T11:00:43||1|to|N-|-|Hi! I need help!
+|2019-07-15T11:02:10|1|from|N---|привет, какая?
+|2019-07-15T11:06:31|1|to|N-|| Look, I have this thing - my main OS is win 10, it has Linux Ubuntu 18 on it in a virtual box. On the win, I have a php storm, on Linux, it can not put - it eats too much and no key. Next - I have a project in a shared folder, which is available from the Linux and the Windows. I edit it in the Windows in php storm, and run it on the Linux. I must somehow manage to assign a symbolic link to one of the subfolders of the project on linux. I have been struggling for 3 days - zero on the module. Can you help me?
+|2019-07-15T11:08:08||1|from||N---|-|- So in linux what won't let you create a link?
+|2019-07-15T11:08:46|1|to|N--- In the virtual box it doesn't, it says there is no such folder
+|2019-07-15T11:09:01|1|to|N-||- Let me give you a ticker, try it
+|2019-07-15T11:09:19|1|from|N---|давай
+|2019-07-15T11:10:11||1|to|N--||1,316,769,124 pass: acx515
+|2019-07-15T11:11:41|1|to|N---|box/shop/backendend/web/ обюзвать admin
+|2019-07-15T11:15:00||1|from|N---|- I can't get it to print
+|2019-07-15T11:15:09||1|from|N---|-do sudo -s
+|2019-07-15T11:16:30|1|from|N---|do you have box/shop/backendend/web/ on a shared drive?
+|2019-07-15T11:17:05||1|to|N---||Yes, only there is a full media/box/shop/backendend/web/ path
+|2019-07-15T11:17:28||1|from||N---||and admin where?
+|2019-07-15T11:17:58||1|from|N---|where should the link be?
+|2019-07-15T11:18:11|1|from|N---|- where should it be?
+|2019-07-15T11:18:21|1|to|N---|Во media/box/shop/frontend/web/admin
+|2019-07-15T11:18:51||1|from||N---||ln -s /media/box/shop/backend/web/ /media/box/shop/frontend/web/admin
+|2019-07-15T11:19:53|1|from|N---|я вижу
+|2019-07-15T11:19:58|1|to|N---|+
+|2019-07-15T11:20:22|1|from|N---|mount вбей
+|2019-07-15T11:21:22|1|to|N--|-|That's how it's connected - see?
+|2019-07-15T11:21:49|1|from|N---|- but why readonly?
+|2019-07-15T11:22:08||1|from|N---|-so switch to a virtual machine, main window
+|2019-07-15T11:23:31||1|from|N---|-|-be sure to look at the machine properties to see how the shared drive is connected
+|2019-07-15T11:24:14||1|to|N-|-|- Here, look.
+|2019-07-15T11:27:19|1|to|N-||- What's the knock :))
+|2019-07-15T11:27:55|1|from||N--|hz I don't have one.)
+|2019-07-15T11:28:19||to|N-||- What about it? What should I do?
+|2019-07-15T11:28:46|1|from|N--|- I don't know why it's mounted read only
+|2019-07-15T11:29:04|1|from|N---|- get out of this directory, cd ~
+|2019-07-15T11:29:18|1|from|N---|- and run ln again
+|2019-07-15T11:30:01|1|from|N---|shift ё
+|2019-07-15T11:30:20||1|from|N---|| ln -s /media/box/shop/backendend/web/ /media/box/shop/frontend/web/admin
+|2019-07-15T11:30:35||1|from||N---|there is no -2
+|2019-07-15T11:30:54||1|to|N---|Yes, it's the same
+|2019-07-15T11:42:43|1|to|N-||-https://ahtik.com/fixing-your-virtualbox-shared-folder-symlink-error/ - I think I've done all that, but maybe I'm missing something
+|2019-07-15T11:44:01||1|from|N---|- Let's do it again, I'll be watching.
+|2019-07-15T11:46:23|1|to|N---|- I can't remember where to write this command? I don't see it in cmd.
+|2019-07-15T11:47:21||1|from|N-|-|- It's all written on the winder.
+|2019-07-15T11:52:28||1|to|N--|- Well, yeah, but it doesn't see it.
+|2019-07-15T11:52:49||1|from|N---|alla I need to go away for 40 minutes when I get there, I'll take another look.
+|2019-07-15T11:52:56|1|to|N---|давай
+|2019-07-15T11:57:28||1|to|N---||- I figured out where to write it all:\nC:\\PROGRA~1\\Oracle\\\\\VirtualBox>VBoxManage getextradata Ubuntu18 enumerate\nKey: GUI/InformationWindowGeometry, Value: 457,256,451,240\nKey: GUI/LastCloseAction, Value: PowerOff\nKey: GUI/LastGuestSizeHint, Value: 1920,975\nKey: GUI/LastNormalWindowPosition, Value: 0,23,640,480,max\nKey: VBoxInternal2/SharedFoldersEnableSymlinksCreate/D:/box, Value: 1\nKey: VBoxInternal2/SharedFoldersEnableSymlinksCreate/D:/box/shop, Value: 1\nKey: VBoxInternal2/SharedFoldersEnableSymlinksCreate/D:/box/shop/frontend, Value: 1\nKey: VBoxInternal2/SharedFoldersEnableSymlinksCreate/D:/box/shop/frontend/web, Value: 1\nKey: VBoxInternal2/SharedFoldersEnableSymlinksCreate/YOURSHAREFOLDERNAME, Value: 1
+|2019-07-15T11:57:50|1|from|N---|ну да
+|2019-07-15T13:35:36||1|to|N-||- Well hello! What do we do now?
+|2019-07-15T13:36:45|1|from|N---|щас сек
+|2019-07-15T13:44:01||from|N---||C:\\PROGRA~1\\Oracle\\\VirtualBox> VBoxManage setextradata YOURVMNAME VBoxInternal2/SharedFoldersEnableSymlinksCreate/YOURSHAREFOLDERNAME 1
+|2019-07-15T13:45:51||1|to|N-||- I already created it - here is the report C:\\PROGRA~1\\Oracle\\\VirtualBox>VBoxManage getextradata Ubuntu18 enumerate\nKey: GUI/InformationWindowGeometry, Value: 457,256,451,240\nKey: GUI/LastCloseAction, Value: PowerOff\nKey: GUI/LastGuestSizeHint, Value: 1920,975\nKey: GUI/LastNormalWindowPosition, Value: 0,23,640,480,max\nKey: VBoxInternal2/SharedFoldersEnableSymlinksCreate/D:/box, Value: 1\nKey: VBoxInternal2/SharedFoldersEnableSymlinksCreate/D:/box/shop, Value: 1\nKey: VBoxInternal2/SharedFoldersEnableSymlinksCreate/D:/box/shop/frontend, Value: 1\nKey: VBoxInternal2/SharedFoldersEnableSymlinksCreate/D:/box/shop/frontend/web, Value: 1\nKey: VBoxInternal2/SharedFoldersEnableSymlinksCreate/YOURSHAREFOLDERNAME, Value: 1
+|2019-07-15T13:46:00||1|to||N---|Or is something crooked?
+|2019-07-15T13:46:27||1|from||N---||VBoxInternal2/SharedFoldersEnableSymlinksCreate/YOURSHAREFOLDERNAME 1 \n/box/shop/backend/web/SharedFoldersEnableSymlinksCreate//box/shop/frontend/web/admin 1
+|2019-07-15T13:46:42||1|from|N---|-maybe it should be like this
+|2019-07-15T13:47:16||from|N---||| C:\\PROGRA~1\\Oracle\\\VirtualBox>/box/shop/backendend/web/SharedFoldersEnableSymlinksCreate//box/shop/frontend/web/admin 1
+|2019-07-15T13:47:33|1|to|N---|Давай попробую
+|2019-07-15T13:50:53||to|N-|-|- What is this? /SharedFoldersEnableSymlinksCreate
+|2019-07-15T13:52:53|1|from|N---|/box/shop/frontend/web/admin
+|2019-07-15T13:57:02||1|to|N---||Wait, I don't get it at all right now. Here VM_NAME VBoxInternal2/SharedFoldersEnableSymlinksCreate/SHARED_NAME 1 - what path should be after the virtual machine name? Lino or Windows?
+|2019-07-15T14:05:34|1|from|N---|/box/shop/frontend/web/admin
+|2019-07-15T14:07:29|1|to|N---|http://prntscr.com/ofdi3d
+|2019-07-15T14:07:54||1|to|N-|-| doesn't go, or I don't understand
+|2019-07-15T14:13:20||1|to|N-||- Look at the error now ln -s /media/box/shop/backend/web/ /media/box/shop/frontend/web/admin\nln: failed to access '/media/box/shop/frontend/web/admin': Protocol
+|2019-07-15T14:27:05||1|from||N---||you put it in the windup
+|2019-07-15T14:29:19||from||N---||VM_NAME VBoxInternal2///box/shop/frontend/web/admin/box/shop/backend/web/ 1
+|2019-07-15T14:30:23|1|from|N---|может так
+|2019-07-15T14:45:33||1|to|N--|-| Look, I'm already looking for the 5th corner. I restarted the Virtual Box to log in as an admin. And it's still the same.
+|2019-07-15T14:47:04||1|from||N---||[20:29:54] <green> VM_NAME VBoxInternal2///box/shop/frontend/web/admin/box/shop/backend/web/ 1 [20:30:11] <green> maybe so
+|2019-07-15T14:47:24|1||to|N---| And it did!
+|2019-07-15T14:47:47||1|from|N---||a potom v linuxe ln sdelat
+|2019-07-15T14:48:09||1|to|N--|-|Well look through timka
+|2019-07-15T14:50:26|1|to|N---|Видел?
+|2019-07-15T14:52:38||1|from|N--|shas sek podkluchus
+|2019-07-15T14:52:52||from|N---|skin dannie timki
+|2019-07-15T14:53:11|1|to|N---||1,316,769,124
+|2019-07-15T14:56:02|1|to|N---|acx515
+|2019-07-15T14:56:24|1|to|N---|Держи! It's all frozen.
+|2019-07-15T14:57:42||1|from|N--|alla davay zavtra s utreca, I shas na rzriv, ya na svejuyu golovu pochitayu esho
+|2019-07-15T14:58:46||1|to|N-||Do you want to do it in the morning, 16:00 Moscow time?
+|2019-07-15T15:21:25||1|from|N--||oh niche se, ladno kak viydesh, ya na svyazi
+|2019-07-15T15:21:56|1|to|N---|- I have -6 to Moscow, you have 10am - I have 4am :))
+|2019-07-15T15:22:50||1|from|N--|yasno ) togda jdu
+|2019-07-15T15:23:10||from|N--|a to ya sednya uje bes sil
+|2019-07-15T15:49:49||1|to|N-|-|- Let's knock tomorrow at 4:00 :))
+|2019-07-15T15:50:48|1|from|N---|ok
+|2019-07-15T15:51:11||from|N---|ya k etomu vremeni poprobuy smodelirovat
+|2019-07-15T16:59:00|1|to|N---||Thank you so much for your help. Dooms and I got this thing done and it worked!
+|2019-07-15T17:01:21|1|from||N--|ok a kak sdelali?
+|2019-07-15T17:01:46|1|to|N-||C:\\PROGRA~1\Oracle\\\VirtualBox>VBoxManage setextradata Ubuntu18 VBoxInternal2/SharedFoldersEnableSymlinksCreate/box 1\n\nC:\\VBoxManage setextradata Ubuntu18 VBoxInternal2/SharedFoldersEnableSymlinksCreate 1
+|2019-07-15T17:02:12||1|to|N---|| And then reboot the virtual box
+|2019-07-15T17:02:47||1|from||N---|yasno, ya dumal puti propisovat nado
+|2019-07-15T17:03:31|1|to||N--|shared_folder turns out to be the name of the folder that is in the virtual machine's netting, not the path - just the name :))
+|2019-07-15T17:04:21|1|from|N---|ponyatno, ya govoryu tormozil )
+|2019-07-15T17:07:41|1|to|N-|-|- Yes, me too, like a sheep :))
+|2019-07-22T15:52:25|1|to|N-||Hi! How are you? Very busy?
+|2019-07-22T15:53:10||1|from||N---|hey, what's up?
+|2019-07-22T15:58:18|1|to|N---| I had tor service down for a long time, remember? I solved it by launching the Tor browser and then I could work with git. And then this browser started loading for about an hour. And I don't know what to do.
+|2019-07-22T16:01:12||from||N---|- Is this on linux?
+|2019-07-22T16:18:40|1|to|N---|да
+|2019-07-22T16:19:30|1|from|N---|sudo /etc/init.d/tor restart
+|2019-07-22T16:19:47|1|from|N---|sudo /etc/init.d/privoxy restart
+|2019-07-22T16:21:24||1|to|N---|- I'll try that when I reload. I'm afraid to restart it so I don't have to wait forever again :))
+|2019-07-22T16:47:11||1|to|N--|- Look, this doesn't make any sense. Here's something for Thor to set up more http://prntscr.com/oim0dq
+|2019-08-19T14:31:08||1|to|N--|Hi! How's life after your vacation? :)
+|2019-08-19T14:38:29||1|from|N-|-|Hi. I forgot about my vacation.
+|2019-08-19T14:40:13||1|to|N-|- I need some proxies for my experiments, can you give me some?
+|2019-08-19T14:40:54||1|from|N--- not yet, it'll be late today, it's 0, I'll give it to you in the morning.
+|2019-08-19T14:41:12|1|from|N-|-|Do you want it today?
+|2019-08-19T14:41:39|1|from|N---|поздно дадут
+|2019-08-19T14:41:45|1|to|N-|- If you can, yes, because I still have baby time and the project is urgent
+|2019-08-19T14:41:57|1|from|N---|оке
+|2019-08-19T14:42:41|1|from|N---|root 85.204.116.240 ymmeF7J13O0aQPG2q3
+|2019-08-19T14:42:56||from|N--|- just rub the njinx configs on it
+|2019-08-19T14:43:15||1|from|N---|- I tried to put a gasket on his nge
+|2019-08-19T14:43:51|1|to|N-|- I don't get it, I can't just put it in curl as 85.204.116.240 ?
+|2019-08-19T14:44:15|1|from|N---|можешь
+|2019-08-19T14:45:30||1|to|N--|-|- This is what it says Error:Failed to connect to 85.204.116.240 port 1080: Connection refused
+|2019-08-19T14:59:58||1|from|N---|-so I have to throw port where?
+|2019-08-19T15:00:40|1|from|N---|root 194.36.189.146 iZncq0KN1ZkvPpj
+|2019-08-19T15:00:52|1|from|N---|еще одна
+|2019-08-19T15:02:56|1|to|N---| I write a parser to check logins for one service, you can't drum from under the same IP there, so I need to disguise that I came from another. That's what proxies are for. Or do you have something else in mind?
+|2019-08-19T15:03:35||1|to|N---|| I see you're giving me inputs for vps
+|2019-08-19T15:04:06||1|from|N--|- Yeah, and you probably want the socks.
+|2019-08-19T15:04:52||1|to|N-||- Oh, I guess so. It's just called proxies in php. :))
+|2019-08-19T15:05:01||1|from||N--|-|I'll give you a working
+|2019-08-19T15:05:27|1|from|N---|then I'll take the vpc, don't use it anywhere
+|2019-08-19T15:06:10||1|to|N-|No, I have a long way to go yet, there if anything, I'll request it later
+|2019-08-19T15:06:35|1|from|N---|сокс 5
+|2019-08-19T15:07:20||1|to|N---|Yes, I have sox5 set up
+|2019-08-19T15:09:12||1|from|N---||there's no sext.
+|2019-08-20T10:15:38||to|N-- Hey! What's up? You got any juices?
+|2019-08-20T10:26:21||1|from|N--|Hi, sec.
+|2019-08-20T10:31:53||from|N-|-|there's something in my script. Wait a few more seconds.
+|2019-08-20T10:34:13|1|from|N---|https://privnote.com/nSRMuDre#CXQ5ROTBq
+|2019-08-20T10:34:34||1|from|N-|- excuse the unprocessed form, the script never worked
+|2019-08-20T10:34:56|1|from|N---|46.249.62.234:10701
+|2019-08-20T10:35:03||1|from|N---|you choose these
+|2019-08-20T10:35:10||1|from|N--|- just change the port.
+|2019-08-20T10:35:45||1|from|N---|the same IP address, but the output will be different
+|2019-08-20T10:35:56|1|from|N---|как поняла?
+|2019-08-20T11:15:58|1|from|N---|46.249.62.234:60513
+|2019-08-20T11:16:04|1|to|N---|Прости, отходила. How do you change the port? arbitrarily within 5 digits?  46.249.62.234:10701
+|2019-08-20T11:16:17|1|from|N---|46.249.62.234:60204
+|2019-08-20T11:16:23|1|from||N---|two workers
+|2019-08-20T11:16:30||1|from|N---|- my script worked.
+|2019-08-20T11:16:47|1|to|N---|Супер! So what's up with the script?
+|2019-08-20T11:17:18||1|from|N---|da I got def my ipi to work with socks
+|2019-08-21T10:28:49||1|to|N-|| Hi! Something is sending me far and wide with this address 46.249.62.234 with all ports, 46.249.62.234 refused to connect.
+|2019-08-21T10:31:29|1||to|N--|Or does my IP have to be included somewhere to make it work?
+|2019-08-27T07:30:06|0|from|N---|марс заработал
+|2019-08-30T09:36:25|1|to|N-|| Hi! I have Mars installed, go to whoer - and it gives out all my ip, location and so on. What to do?
+|2019-08-30T09:55:20|1|to|N---|Привет!!
+|2019-08-30T10:04:05|1|to|N---|Привет!
+|2019-08-30T10:56:05|1|to|N---|Ауууу!!!!!
+|2019-08-30T11:03:43|1|to|N---|Привет!!!
+|2019-08-30T11:26:32|1|to|N---|Привет!!!
+|2019-08-30T13:01:36|1|to|N---|Привет!!!!!!!
+|2019-09-02T11:44:09|1|to|N---|Привет!!!!!
+|2019-09-02T11:45:30||1|from|N---|Hi, I'm busy right now, I'll help you later, what's the problem?
+|2019-09-02T11:45:31|1|to|N---|Ты здесь?
+|2019-09-02T11:45:38|1|from|N---|да
+|2019-09-02T11:47:12|1|to|N-||- Help me, for God's sake. I have Mars, standing the very first client I was given about a year ago - but all my guts are visible on whoer.net. It's such a project now, there's no way that can be allowed to happen.
+|2019-09-02T11:47:55|1|from||N---| I'll give you the new config, I fixed mars today
+|2019-09-02T11:48:32||to|N-||- Come on, I'm waiting.
+|2019-09-02T11:48:52||1|from|N---||https://privnote.com/monmiLtS#PjAkedrsQ
+|2019-09-02T11:49:03|1|from|N---|scope in mars.ovpn
+|2019-09-02T12:26:03|1|to|N---|Аллилуйя! It's all working! Thank you so much!
+|2019-09-06T17:00:06||to|N--|Hi! Are you still up?
+|2019-09-06T17:00:40||1|from|N--|privet, poka rabotayu
+|2019-09-06T17:02:08||1|to|N---| I'm having a disaster here-- sudo is not working on the virtual box, says sudo: /usr/bin/sudo must be owned by uid 0 and have the setuid bit set\n
+|2019-09-06T17:02:40||1|from|N---|apt install sudo
+|2019-09-06T17:03:23||1|to|N--|-|Did the same thing: sudo: /usr/bin/sudo must be owned by uid 0 and have the setuid bit set
+|2019-09-06T17:05:03||1|to|N--|Then it did nothing because sudo
+|2019-09-09-06T17:06:58|1|from|N---|shas ya ochtn zanyat, kak osvojus posmotryu
+|2019-09-09T15:29:40||1|to|N--||Hi! did you find what to do with sudo: /usr/bin/sudo must be owned by uid 0 and have the setuid bit set?\n
+|2019-09-09T15:39:42||1|from||N---|poka no, prosto zagrujen, zavtra posmotryu
+|2019-09-09T15:46:28|1|to|N---|Давай
+|2019-09-17T10:44:39|1|to|N---|Hi! I'm gonna need some kind of pps that I can strap a domain name to, like pegason.net
+|2019-09-17T10:45:21||1|from|N---|I'm still doing it, about 30 minutes.
+|2019-09-17T10:46:05||1|to|N-||- Sorry, name http://pegasun.net or whatever will be available from extensions
+|2019-09-17T11:23:42|1|from|N---|new mars https://www.sendspace.com/file/h3tde6
+|2019-09-18T11:29:06||1|to|N---||Hello, thanks for Mars! What's up with the wps?
+|2019-09-18T11:46:29|1|to|N---|Привет!!!!
+|2019-09-18T11:56:59|1|to|N---|Привет!!!!
+|2019-09-19T08:55:06|1|to|N---|Привет!!!!
+|2019-09-19T10:18:45|1|to|N---|Аууууууу!!!!!!
+|2019-09-19T12:14:17|1|to|N---|Привет!
+|2019-09-19T12:24:45|1|to|N---|Привет!!!!!
+|2019-09-30T13:23:54|1|to|N---|Привет!
+|2019-12-23T13:56:55|1|to|N-||Hi! Really need help!!!
+|2020-01-17T10:22:07||to|N-||Hi! I need to put a server on the windup. Can you help?
+|2020-01-17T10:23:28||1|from||N---|Hi, do you have the windup to the server?
+|2020-01-17T10:23:59||1|to|N-|-|- Well remote access to the windu server when I was doing the newsletter for you, what kind of program?
+|2020-01-17T10:24:47||1|from|N---|- You didn't do the mailing for me? I don't think so, you're confused.
+|2020-01-17T10:25:04|1|from|N---|remmina
+|2020-01-17T10:28:15||1|to|N-|-|- I'm confused. I wrote to Balzac. I need to put the server here to: administrator 173.232.146.12 s2rM#ZsS+s8 put apache, latest php, mysql, git
+|2020-01-17T10:29:17||1|from|N---|ok I'll do it.
+|2020-01-17T10:30:35|1|to|N---|tor is also needed to upload files from our repa. I need a tor domain, too. Just tell me, there is a tor domain set, but the ip address will be able to address? Or what?
+|2020-01-17T10:31:16|1|from|N---|да можно
+|2020-01-17T10:35:36||from|N-|-|all right,do you have an emergency? I'm just in the middle of something.
+|2020-01-17T10:36:46||1|from|N--- I don't know if I can make it tonight, if anything strix will be out tonight
+|2020-01-17T10:37:07||1|from|N---|- there's his contact, he's the night admin
+|2020-01-17T10:49:16||1|to|N-||- Well, that's pretty brisk. I still need mbstring, curl in there.
+|2020-01-17T10:50:23||1|from|N---|-|take it to strix@ tonight, he'll do it, I'm afraid I won't make it, I'll be gone even later
+|2020-01-17T11:02:37||1|to|N--|- Well, at least get started.
+|2020-01-17T11:20:17||4|from|N---||Service unavailable.|nThe server or recipient does not currently provide the requested service.|n------\n
+|2020-01-17T11:20:18|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMDzFt4hHazlFIAAAAACAAAAAgAAADAM4FUD07a3f6OHEvHH7AX0Xsl0/pk0ggPB2w39cXnYyGVh3dy8eIEc3UzmNW2dq5zhi+TAPfzDBdLq4ZjOwbKf8xnbOWdMti/mchml2hzJjXJ/5OoI7Cq9YKzUo8Enp/UrskF52qW9D1wevwS8J+fp8BXOWWvHJD1wohPEYgsrZvxSpaUr+JBpDJrKswTTa4zo7zcOW6U/9885pmD9jB55TG5DvDlIZmvVi8OXCfoy9aPcPF/apKwGy58+2SocVGzAAAAAAAAAAIAAAAephrna7FV+HCwyLwLkPAPx9dRZP6nJ4ce/XM95YwgrXVtaw0tJ05yBsjycu+71WGXiLAAAAAA.
+|2020-02-19T08:29:13|1|to|N---|Привет!
+|2020-02-19T08:31:06|1|from|N---|Привет
+|2020-02-19T08:36:40||to|N-||- Look, there's a Windows server 173.232.146.12 s2rM#ZsS+s8 we need to run tor to download data from our git
+|2020-02-19T08:37:58||1|to|N-||There's already got everything installed, everything worked, but the server went down, and once it was put up, I can't find where this tor is running on the windu
+|2020-02-19T08:38:13|1|from|N---|ща гляну
+|2020-02-19T08:40:09|1|to|N---||You can check if everything is okay if you go to Program Files/apache/htdocs/crypto -- and do a git pull
+|2020-02-19T09:55:59|1|from|N---|все сделал
+|2020-02-19T10:25:50|1|to|N---|Спасибо!
+|2020-02-19T10:26:15|1|to|N---|- How do I do it myself, if anything again?
+|2020-02-19T10:27:30||1|from|N--|-|- We need to download vidalia+tor
+|2020-02-19T10:27:56||1|from|N---|and run vidalia, it's just a torrent of traffic.
+|2020-02-19T10:28:22|1|from|N--- I just installed it, if it fails again, run it
+|2020-02-19T10:28:45|1|to|N---|Хорошо. How long have you been talking to Styx?
+|2020-02-19T10:28:58||1|from|N-|-|- Not long ago, why?
+|2020-02-19T10:30:35||1|to|N-|- I haven't been able to get in touch with him for three days. It seems to be online, I write, sometimes it comes back something like Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMDzFt4hHazlFIAAAAACAAA on a separate page. And that's the end of it.
+|2020-02-19T10:31:23||1|from|N---|-|the phone must be off.
+|2020-02-19T10:31:29||from|N--- I'll call him tonight if I remember to call you.
+|2020-02-19T10:31:37|1|to|N---|Спасибо!
+|2020-03-19T07:46:14||1|from||N---||Hi, knock baget@ urgently.
+|2020-03-30T09:40:37|1|to|N---|Привет!
+|2020-03-30T09:41:24|1|to|N---|And how do you set up Vidalia on our git?
+|2020-03-30T09:42:26||1|from|N-||- Hi, it's so easy to run Vidalia
+|2020-03-30T09:49:18|1|to|N-||- Well the git tells me unable to access 'https://n4iaacb37wmqclht.onion/max/crypto.git/': Couldn't resolve host 'n4iaacb37wmqclht.onion' and hello
+|2020-03-30T09:49:44||1|to|N--|The host is up and so is Vidalia.
+|2020-03-30T09:58:29|1|to|N-||A, here's the question - I'm trying to run tor from vidalia - and http://prntscr.com/rpga32 I have the version of tor running now that I was given at the beginning. It's got the jabber chat hanging on it. What to do here?
+|2020-03-30T10:03:25||1|from||N---|| I don't understand anything, give me teamviewer.
+|2020-03-30T10:10:06||1|to|N-|-| I can't get anything to work. I have to reboot.
+|2020-03-30T10:44:40||1|to|N---|Hi! timviewer on 10 winnda after some updates no longer works, says I have proxies when there are none. Have you encountered this?
+|2020-03-31T08:47:30|1|to|N---|Привет!
+|2020-03-31T08:47:56|1|from||N---||Hi, has strex solved the problem?
+|2020-03-31T08:48:21|1|to|N-||- On the windup server, you have to increase the memory. There's a bitcoin window open - you can see how much you need
+|2020-03-31T08:49:12|1|from||N---| I don't understand, what RAM? and how do I increase it?
+|2020-03-31T08:49:29|1|to|N---|Момент
+|2020-03-31T08:50:58||to|N-|-|- On this 173.232.146.12
+|2020-03-31T08:51:47|1|to|N---|s2rM#ZsS+s8
+|2020-03-31T08:52:08|to||N--|Defender sent to you
+|2020-03-31T08:57:41|1|from||N---|-Who issued the server?
+|2020-03-31T08:58:28|1|from|N-|-|How do I add?
+|2020-03-31T09:52:11|1|to|N---|Дефендер выдавал. I texted him and he sent it to you.
+|2020-03-31T11:45:40||1|from|N---|- in short Alla, you can't enlarge the disk, I wrote to saport, he also said no
+|2020-03-31T13:23:42|1|from|N---alla short, you have to order a new server with more disk space
+|2020-03-31T13:24:19||to|N-|| Can you order one? Or do I have to ask Defender?
+|2020-03-31T13:24:55|4|from|N---|Service unavailable.|nThe server or recipient does not currently provide the requested service.|n------\n
+|2020-03-31T13:24:55|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMDzFt4hHazlFIAAAAAAgAAAAMAAADA1QO/GblagWu639otsKnaQXaQUcrThFqERciQZcZT07miqPEEBAWa1fX16ZpP6RLYCfqBaC9duXsFvOaeBzv10OEXFZ4VRksj7UwqAUdWyemfullmlSvGfSsI1Cp1j07iweTWY6QwurgpdSsayY/GFd1PVwIjMz0MUsTJXCPvhxdX+8FT+MEqaHUyXZ7JyoAixe+0b59jmnbuCn/dpg+HO4J0RoHS6DGGX8P8c1zMHpGedCSnKw2ywkT8Az016HoPAAAAAAAAAAIAAABZQcnAm3f4e3uTKzfsUxvy4Sk3J4nGamg15H0kUHIajr37pncnlELCna62jnuENz+d6gPWDlfx03R2KjOGprj3PLdaeU4oRy59vNlXZ6GTtPPskOVrBmiqe7l1Kv7vZBdActufnge4z3itX/ztUwAAAAA=.
+|2020-03-31T13:27:35|1|from||N---| I'm ordering a server, do you only need bitcoin space there or do you need to order with stock?
+|2020-03-31T13:29:05|1|from|N---|?
+|2020-03-31T13:29:22|1||to|N---||Bitcoin, the project itself and the base. The project weighs 300 MB. The base is still small - but I have no idea how it will grow. Let's go with extra.
+|2020-03-31T13:29:35|1|from|N---|Ок
+|2020-03-31T13:30:481||to|N---|- And then you have to put apache, php7 with all the modules on it and MariaDB 10.3
+|2020-03-31T13:31:29||1|from|N-|- okay, if anything strex will put it up at night
+|2020-03-31T13:31:36|1|to|N---|Хорошо
+|2020-04-01T07:52:28||to|N---|Hi! How's the server?
+|2020-04-01T07:53:56||1|from||N---|Hi, waiting, not ready yet, should give it out
+|2020-04-01T12:32:49||from|N-|-|- I got the server to install
+|2020-04-01T12:32:52|1|from|N---|?
+|2020-04-01T12:36:05|1|to|N---|apache, php latest with all modules, MariaDB 10.3, phpMyAdmin, git, tor - to connect to our git. It should have tor domains, that is, after all the tests access will not through ip, as it is now on the old one, but through the tor domain
+|2020-04-01T12:36:29|1|from|N---|ok
+|2020-04-01T12:40:19|1|from|N---|blin not available yet, waiting
+|2020-04-01T12:40:43||1|to|N-||Waiting :)) Fasten your seat belts :)
+|2020-04-02T04:58:13|1|from||N---||Hi, here's the server 46.249.32.111:14741 3edcvgy7!@#123, make sure everything is up and running
+|2020-04-02T08:00:45||1|from|N---||Hi, here's server administrator 46.249.32.111:14741 3edcvgy7!@#123, make sure everything is up and running
+|2020-04-02T08:01:53||1|to|N-|| Hi! I've only just started this morning. I'll have to get the whole project together there to answer your question. A little bit later. Thanks!!!
+|2020-04-02T08:02:24|1|from|N---|ок
+|2020-04-02T10:06:25||1|to|N---||And what is the username and password for Maria DB? And is there a phpMyAdmin?
+|2020-04-02T10:10:43||1|from|N---|-| There is a phpMyAdmin
+|2020-04-02-02T10:11:17|1|from|N---|a login and password I don't know, I put strex at night, most likely without a password
+|2020-04-02T11:31:30||1|to|N--|- well, the very first thing is that git doesn't want to work with our domain, what to do?
+|2020-04-02T11:33:20||1|from|N--|-|- so what does it say?
+|2020-04-02T11:34:11|1|to|N-||$ git pull\nfatal: unable to access 'https://n4iaacb37wmqclht.onion/max/crypto.git/': Could not resolve host: n4iaacb37wmqclht.onion\n
+|2020-04-02T11:34:40||1|from|N---|- I'll connect
+|2020-04-02T11:35:02|1|to|N---|+
+|2020-04-02-02T11:36:43||from|N---|-it worked, I put the options in the config, go in there asking for the password
+|2020-04-02T11:38:13|1|from|N---|ну как?
+|2020-04-02T11:38:22|1|to|N---|Да, спасибо!
+|2020-04-02T11:42:51|1|to|N---|And how do you open phpmyadmin? http://46.249.32.111:14741/phpmyadmin - and I have a server error
+|2020-04-02T11:43:32|1|from|N---|http://localhost/phpmyadmin
+|2020-04-02T11:44:46|1|from|N---|или http://46.249.32.111/phpmyadmin
+|2020-04-02T11:45:38|1|from|N---||http://localhost/phpmyadmin it's on the server itself
+|2020-04-02T11:55:19|1|to|N---|Yes, but there's obviously a password. It doesn't let you in without a password.
+|2020-04-02T12:04:28||1|from|N---|- I connected, I have to wait for Strix, maybe he put the password
+|2020-04-02T12:06:50||1|to|N---|He left the old rootxx password, everything is fine. I just see that it doesn't show file extensions. I don't know how to do it on this system. I can't find php.ini.
+|2020-04-02T12:07:15|1|from|N---|c:\\program files\\apache
+|2020-04-02T12:07:20|1|from|N---|там
+|2020-04-02T12:07:27|1|from|N---|а нет
+|2020-04-02T12:07:35|1|from|N---|это phpmyadmin
+|2020-04-02T12:24:42|1|to|N---|- What about the old server? I don't see the sql file with the base, and I can't get in there either
+|2020-04-02T12:25:41||1|from|N--|- give me the data from it.
+|2020-04-02-02T12:25:59||1|to|N--|- From the old server?
+|2020-04-02T12:26:04|1|from|N---|да
+|2020-04-02-02T12:26:52|1|to|N---|173.232.146.12 administrator s2rM#ZsS+s8 phpmyadmin root rootxx
+|2020-04-02T12:29:16|1|from||N---|- it works, rdp is in
+|2020-04-02T13:14:57||1|to|N---|- Well everything seems to be thank goodness, thank you!
+|2020-04-02T13:15:22|1|from|N---|(Y)
+|2020-04-02-02T13:15:32||from|N---|- if there's anything, knock.
+|2020-04-02T13:15:45|1|to|N---|Спасибо!
+|2020-04-03T11:26:14|1|to|N-|-|Hi! Can we not tear down the old server yet? I'll have to see how the back end gets along with the same software. If it doesn't, we'll have to go back to it.
+|2020-04-06T15:33:01||1|to||N-||Hi! How do you put ssl on a domain?
+|2020-04-06T15:51:17||4|from|N---||Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMDzFt4hHazlFIAAAAAEAAAABEAAADA2ZQo/i6ZKe4AjtxCxfjX9hYzUs9NtKkxje9k1cCq3d+OnzqLxBqPeI5Y/BWuXVHchBehExlU3XdowBhVIDR421VgUnyxrltXwtpQpnoOyzRO1LCovhRt8bxYHXv8quDNAubPq/w3ReIaYZuJR6Si+KTvYq1lsoKqnRJ9N5GNMAF5zUCPedeIGcxbE6JV/0glqoFwAE+qlSkd/cLiuIJEwahcJe80VmSPew0duQQBvAQvW5R1f+sbkBPTQhp4qXgHAAAAAAAAAAMAAAA9vPf8Z00+nj7zVlmpODZNzxirg5H9FSlJvseoZZx/cVH2iZjo8unmbID5rAVGK141H6inTZPr4COQKr8hydjFPKWi5oW9Dd0192iVwFcybTGiAAAAAA==.
+|2020-04-07T09:46:39|1||to|N-|| Hi! I have an Apache Software something folder on my server for the server. Because of this problem, I have to he C write the path to run the exe from the command line and because of these spaces nothing works. Quotation marks are not an option either. You can get rid of the verbosity
+|2020-04-07T09:48:26||1|to|N-|| Hi! Did you see the dispatch?
+|2020-04-07T11:48:22|1|to|N---|Привет!
+|2020-04-07T11:50:00||4|from|N---||Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:00|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:00|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:00|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:00|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:00|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:00|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:00|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:00|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:00|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:01|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:02|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:02|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:02|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:02|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:02|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:02|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:02|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:02|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:02|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:02|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:02|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:02|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:02|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:02|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:02|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:02|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:02|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:02|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:02|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:02|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:03|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:04|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:05|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:05|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:05|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:05|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:05|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:05|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:05|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:05|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:05|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:05|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:05|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:05|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:05|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:05|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:05|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:05|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:05|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:05|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:05|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:06|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:06|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:06|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:06|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:06|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:06|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:06|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:06|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:06|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:06|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:06|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:06|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:06|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:06|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-07T11:50:06|4|from|N---|Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMKzFt4hHazlFIAAADA3insQqv0L5g9uS3WQ4ywm9p//Rn4p4V0ubUAPpul3KuqHujUaBdrr9por2SBVeBc1NjLjQR7nOm3kQljdDVoWXSpa08yOAf7QK+wdMGvSnRRlaRoGm0aqj1InnsDcYZoCDf8VxcR6OcUbbvxC/mgIAR9tvHBkNB56jYEr83JZMbc7AHmFnApS59sj/A4aFr0e+5Kz4eeYevr+KEWm4gJCxKiIpsQ2fM3d4qmngLHQ9ToaqRDeYaPbKAFseodXf2A.
+|2020-04-09T12:13:57|1||to|N---||Hi! I have a chat done on regular js requests in 3 seconds. I get server error 429 after a while - too many requests. I'm trying to figure out how to fix it - some settings need to be changed on the server. Can you help?
+|2020-04-09T12:21:14|4|from|N---||Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTRv23? *max@q3mcco35auwcstmt.onion* has requested an Off-the-Record private conversation.  However, you do not have a plugin to support that. See https://otr.cypherpunks.ca/ for more information.
+|2020-04-09T12:21:14|4|from|N---||Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMDzFt4hHazlFIAAAAAAQAAAAEAAADAEiVMzcVS70+yXh6HP4XPZ2gA+7f1EdZJRW2PP4MsT0euGkAC0FlKNvcxS8DFo4GLAQQqp2onxY4BbRvHfe1dLRlBdRFfj+AFIlqWTAr016rR81gcOKAfzIMr/sBThcDBMzMaixIh/m7/mcq6kBrlL6A6GmaeNN8ZONAKqe0uHXLeKE+VBGPHcSlSPzk/sWFUlgi2gVLttp/KNkKUG/giCtPSMKvwEm+TtrRmZX2PaOmQaozeHVMTtUqY9BE28MDgAAAAAAAAAAEAAAGKSUNRQOSW1IL4OLtrVvso4/SAY6d77Fm3IN13WdyJ0FHZ2Bbh8PWQJhuYrE07AWE+gn9hWiOVVMVH+s0ZqKqGqjNZskxHsbPOHMbgsu8G5y8bJx+scchHTE5i6GgH08aXplCuobo4Vvieiusn9BC0ymnsi5blrYlb+IGbnz+hDL+uYiHsmkyE+boiFFzEHYGHbs30JSUPfQUqW0+rCUW/Hs1rVNHeAC89G+CvN0N+liFbYsgXRt9uFT6krQT0Ro1A+7+QOYkZ35oxmwKW7YQ2B+NkJq29n+FVSuVut0bwUoqJv3XCn3fEuNNl6XooWLhBnQ4bGyClNpaz/ICBcBypPr3u+5mtHso81tcCbF5bkeBzM/ZYjuGmMKoxHp4ADAE+KPotbsSUe/BfAp+7v/JbZImmAaoicnB9NUE/RbLO1J48ez/HCZFIuBCkYwJ9vwPbItawGzl+ipijIgLJqJYQQ43wrSnWXEurnXwJAWy/TIzImoWwMHVb7WmIZh5PPILPdWPg4io9r2Tc9Z3ePSON/hFxsCiUCbBgFm5wKMfrAAAAAA==.
+|2020-04-23T11:57:07|1|to|N---|Привет!
+|2020-04-23T11:57:20|1|from|N---|Привт
+|2020-04-23T11:58:44|1|to|N---|Аллилйя! That I wrote to you - just some evens with swear words :). Listen, how can you put a benchmark on our server? Or maybe it's already there? And ssl certificate?
+|2020-04-23T12:00:17||1|from||N---| What kind of server?
+|2020-04-23T12:02:35|1|to|N--||46.249.32.111:14741-- you know, the Windows one.
+|2020-04-23T12:05:34||1|from||N---|CPU-Z you can download, and openssl windows
+|2020-04-23T12:08:01|1|from|N---|http://downloads.sourceforge.net/gnuwin32/openssl-0.9.8h-1-setup.exe
+|2020-04-23T12:09:15|1|from|N---|Поставишь?
+|2020-04-23T12:19:06|1|to|N---|Попробую. Is there a benchmark there?
+|2020-04-23T12:20:21|1|from|N---|я установил
+|2020-04-23T12:20:36|1|from|N---|cpu-z
+|2020-04-23T12:20:42|1|from|N---|и щpenssl
+|2020-04-23T12:28:54|1|to|N---|Спасибо!
+|2020-04-23T12:29:31|1|to|N-||-|What folder is the ssl - key in?
+|2020-04-23T12:38:10|1|from|N---|- they need to be generated, please look at https://www.leaderssl.ru/articles/207-vse-pro-openssl-za-5-minut
+|2020-04-23T12:38:33|1|from|N---|- I'm just a little busy, if you can't make it, I'll help later.
+|2020-04-24T11:14:06||1|to|N---||Hi, I'm sitting here stumped on SSL : openssl req -key -new cert.key -out cert.csr\nThe name of the domain to which the request is made is specified in Common Name. Fields "A challenge password" and "An optional company name" don't need to be filled in (just hit enter). Then how do we do it?
+|2020-04-24T11:26:45||1|from|N---|hey, have Carter register the domain and register it for our server.
+|2020-04-24T11:27:12|1|to|N---|Картер? Who's that?
+|2020-04-24T11:27:40|1|to|N--|- We actually need an onion-domain there.
+|2020-04-24T11:39:48||1|from||N---|Hello, ask Carter to register the domain, and spell it out for our server
+|2020-04-24T11:40:30|1|to|N---|- Give me a link to carter, I don't know that one yet
+|2020-04-24T12:48:29|1|to|N-|-| Hi, I have a question. How can you set the maximum number of accesses to the apache server per second from one ip? I mean set it to.
+|2020-04-24T13:00:58||1|from||N---||Hi\nPlease connect the mod_limitipconn module, go about this.\n\n<IfModule mod_limitipconn.c>\n<Location /public_html/>\nMaxConnPerIP 15\n</Location>\n</IfModule>
+|2020-04-24T13:01:27||1|from||N---|-about the domain
+|2020-04-24T13:01:51|1|from|N---|- you can ask Carter to register the domain and link your server to it
+|2020-04-24T13:02:01|1|from|N-|-|then you can register it
+|2020-04-24T13:02:18|1|to|N--- I knocked on his door and it's still quiet.
+|2020-04-24T13:02:37||1|from|N--|- yeah, I've been waiting all day, too.
+|2020-04-24T13:02:53|1|from|N---|he owes me one too.
+|2020-04-24T13:07:01|1|to|N-||- Listen, here's a question. I made a chat room on ajax requests. I have an interval of about 3 seconds between requests. And if suddenly 2 or more scripts are working from my computer with such requests - then in 5-10 minutes I get error too many requests on server from IP address into console. Despite the error all this stuff continues to work for some time, but after a day or two hangs finally have to refresh the page. Will it solve this problem?
+|2020-04-24T13:08:08||1|from||N---|-not helpful, better google it, or try to torture Strix
+|2020-04-24T13:10:23|1|to|N-|Googled it already, no constructive. Buza claimed yesterday that it could be solved with a benchmark. But I see that it doesn't detect anything, only allows you to do tests. I'm gonna go catch Stricks.
+|2020-05-04T10:20:03||1|to||N-- Hey! Server's down: 46.249.32.111:14741
+|2020-05-04T10:30:08|1|to|N---|Привет!
+|2020-05-04T10:37:49|4|from|N---||Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTRv23? *max@q3mcco35auwcstmt.onion* has requested an Off-the-Record private conversation.  However, you do not have a plugin to support that. See https://otr.cypherpunks.ca/ for more information.
+|2020-05-04T10:37:49|4|from|N---||Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMDzFt4hHazlFIAAAAABgAAAAcAAADAz6oEWS4tyazsYAT2dsR4e+wWYawXjYGZgC0xMuzcrG9NAwoghAfbZ+Fm5p82xg1bmoalLKJj1AIozzKLjfG1cfCHH2z3Jf6/Hi9ouSzevBZYuUVHgcGfiligNvYAe1WwjF7K2YnPzkxRAEqCe+7B6bKwSRr4nhJi65UTGZVgVnu/TCUUqDDGnP6VnSWTlk/xJ2eDrt2ucBMhKyGop2LgRiBGTQpH9O2Jef/su8VFePTn9AWUgwr7fUzpnLaHeY3lAAAAAAAAAAEAAABHso9hLJN9+rVzeBNQJv4h/ctImGGkk04UIWIZuDTciWglZ0NMJ/vTuI6AROvQAKl13ODt+dTSaNwv8thjv0GljJ0Km8YDROZLrfLeCq/V5QWpdDBNoAlyKIE9ggAAABQOlFXyWAtYl0hzWkkp5drlZxWm5g==.
+|2020-05-04T10:37:49|4|from|N---||Service unavailable.\nThe server or recipient does not currently provide the requested service.\n------\n?OTR:AAMDzFt4hHazlFIAAAAABgAAAAcAAADAz6oEWS4tyazsYAT2dsR4e+wWYawXjYGZgC0xMuzcrG9NAwoghAfbZ+Fm5p82xg1bmoalLKJj1AIozzKLjfG1cfCHH2z3Jf6/Hi9ouSzevBZYuUVHgcGfiligNvYAe1WwjF7K2YnPzkxRAEqCe+7B6bKwSRr4nhJi65UTGZVgVnu/TCUUqDDGnP6VnSWTlk/xJ2eDrt2ucBMhKyGop2LgRiBGTQpH9O2Jef/su8VFePTn9AWUgwr7fUzpnLaHeY3lAAAAAAAAAAIAAAAO1usbHtZBtV8H62ff443QS5jJ5nHAelbAQUkdzli0RZxCPgAAAAA=.
+|2020-05-11T13:09:52|1|to|N---|Привет!
+|2020-05-11T13:11:22|1|from|N---|Привет
+|2020-05-11T13:15:46|1|to|N-||- I put myself a node w/o a server 46.249.32.111 - and git bash can't see it at all. And also, bullet out of git, there's some merge needed, some sort of console editor appears and I can't get out of it in any way. No ctrl/x work. I'm so sick of this Windows server :)
+|2020-05-11T13:18:38||1|to|N---||Yes, and I put redis, run redis-server.exe, try to access redis from the console and the system knows nothing about it. What do I do?
+|2020-05-11T13:22:22||1|to||N-||- I put redis, but running redis-server.exe doesn't do anything.
+|2020-05-11T13:24:38|1|from|N---|Ща посмотрю
+|2020-05-12T07:43:45|1|to|N---|привет!
+|2020-05-12T07:43:48|1|to|N---|- How do you do this on the wind?  https://stackoverflow.com/questions/56901401/laravel-echo-server-neterr-connection-timed-out
+|2020-05-12T07:44:22|1|to|N-||- On this server http://46.249.32.111/
+|2020-05-12T07:58:35||1|from||N---|hey, did strex help you yesterday?
+|2020-05-12T08:03:08|1|from|N---|- this is the script you should try https://github.com/enderandpeter/win-a2enmod
+|2020-05-12T08:04:21|1|to|N---|Да, помог. Thank you!
+|2020-05-12T11:47:45||1|to|N-|| Look, I put it in, setup.bat worked, Set-Executionpolicy Unrestricted -Scope Process -Force did too, but nothing else works for me.
+|2020-05-12T11:48:36|1|from||N---|a2enmod doesn't work?
+|2020-05-12T11:49:33||1|to|N---|- It's throwing red errors. You can check it out. I put it in C:\Program Files\\Apache Software Foundation\win-a2enmod.
+|2020-05-12T11:49:56||from|N-|- I have to go away for an hour, I'll take a look when I get there.
+|2020-05-12T11:50:15|1|to|N-||- I'm most interested in this:\nSSLEngine on\n SSLProxyEngine On\n ProxyRequests Off\n ProxyPass /socket.io http://dev.DOMAIN.com:6001/socket.io\n ProxyPassReverse /socket.io http://dev.DOMAIN.com:6001/socket.io\n\n RewriteEngine on\n RewriteCond %{HTTP:UPGRADE} ^WebSocket$ [NC]\n RewriteCond %{HTTP:CONNECTION} ^Upgrade$ [NC]\n RewriteRule .* ws://dev.DOMAIN.com:6001%{REQUEST_URI} [P]
+|2020-05-12T11:50:52|1||to|N-|-| into project conf and restart apache. Come on, good luck!
+|2020-05-12T11:51:50|1|to|N-||- Only instead of \n http://dev.DOMAIN.com our server
+|2020-05-12T13:23:19||to|N-||Hi! Did you get here yet?
+|2020-05-12T14:05:21|1|to|N---|привет!
+|2020-05-12T14:11:59|1|from|N---|yeah I'm trying to do that, I haven't set it up on the wind, but I'll try
+|2020-05-12T14:13:18||1|to|N---|- Well I certainly didn't set it up. I've got an openserver on the Windows - it's elementary there, or on Linux. But here...
+|2020-05-12T14:13:57||1|from||N---|- it's like another planet.
+|2020-05-12T14:18:49|1|to|N---| I'm about to roar, I need to do a chat service on this project. So I tried one local version of chats in websocket - everything is great, but on the server - no way. Now I've tried one more, which is easier - and so far the same result. Web sockets does not want to work. I have apache with ngix locally. There was something on the net that just on apache is not very good. Maybe ngix can help?
+|2020-05-12T14:22:49|1|from|N---|nginx is better, but I don't even know how it will work on vinx
+|2020-05-12T14:24:27|1|to|N---|Удачи тебе! You'll do great!
+|2020-05-13T05:08:40||1|from|N--- Hi, anyway port 443 is not coming up, says it's busy, what is busy I don't know, I made https on port 447, like this https://46.249.32.111:447/phpmyadmin/\n\the main ssl settings in config httpd-ssl.conf, there your settings, check
+|2020-05-13T08:51:30||1|to|N-||- Damn, I got the same thing http://46.249.32.111:6001/socket.io/?EIO=3&transport=polling&t=N8Dtf_i net::ERR_CONNECTION_TIMED_OUT
+|2020-05-13T08:51:47||1|to|N---|Are the apache restarted?
+|2020-05-13T08:52:01|1|from|N---|да
+|2020-05-13T09:12:59|1|to|N-|| Look, I run this thing locally, you can look on the server on localhost and everything is super working. And if remotely - ERR_CONNECTION_TIMED_OUT. Is there any way to increase server response time?
+|2020-05-13T09:13:48||1|from||N---||couplet with Strix, I'm just a little busy right now, I texted him to help
+|2020-07-31T11:40:50|1|to|N---|Привет!
+|2020-07-31T11:41:43|1|from|N---|Привет
+|2020-07-31T11:53:441||to|N-|| Listen, there's a problem with the websockets on the new Vidnova server. They put https right there, tor domain, nobody set them up with http even to get them up and running. And sockets don't work at all, Strix got bored, last time you did more than half of it, he already connected at the end. He doesn't know what you were doing there. So the project's due and the websockets aren't working.
+|2020-07-31T11:54:48||1|from||N---|Don't remember anything, he asked me today, I'll try something.
+|2020-07-31T11:57:51||1|from|N---|- What was the problem again?
+|2020-07-31T12:00:28||1|to|N---|The problem is that I can't connect to the websockets, and the script every couple of seconds asks: http://prntscr.com/truw6t{n Last time it worked very well, everything worked perfectly. And here's a new server, I don't even remember, did you put ngingx on the old one? Or did you do all the settings directly on apache? Then https - it's a bit tricky there. And then tor domain - I don't know, but I can assume that there is something else needed. I have an idea for garbage - maybe try to put sockets in steps? First just on http - make sure it works, then on https and so on?
+|2020-08-11T09:14:22|1||to||N---||Hi! Are you at work or on vacation?
+|2020-08-11T12:26:27|1|to|N---|Привет!
+|2020-08-27T10:30:14|1|to|N-|Hi! Check out the windserver 212.129.41.246:14741.

@@ -1,0 +1,1267 @@
+[03.08.21 07:29:37] elroy: Hello!
+[03.08.21 07:34:28] elroy: There used to be a component called "System Resource Manager". It was used to evenly (or by a set policy) allocate system resources. For example, if there are a lot of processes, and server has less cores and there is guaranteed resource allocation, then each process would get its guaranteed percentage without one process getting 99% of core while the rest would get 0.1%.
+I can't find this component on the Jenkins server.
+Do you know if it's been removed? Is it obsolete? How is it solved now?
+[03.08.21 07:37:55] elroy: It's not there....
+[03.08.21 07:39:28] elroy: I want to enable parallel builds, it turns out Jenkins can do it. But without dispatcher we can't reach him if he's busy with builds... Somehow, without resource guarantees, it's creepy to include
+[03.08.21 07:42:07] elroy: It turns out there are 4 dispatchers, they parse different profiles, but if the profile is one, it goes in a queue. It turns out it's possible not to queue
+[03.08.21 07:44:48] elroy: I'll switch it on in test mode, 4 executors so far, no problems with them. Just thought to add more, but if more - already need a dispatcher.
+Ok, look if possible, maybe third party solutions are already used there
+[03.08.21 13:45:25] elroy: Here is the thing, on Jenkins server occasionally linker and a couple of processes hangs. Do you think rebooting will help?
+[03.08.21 13:45:51] elroy: There's an update coming, maybe he'll install it. Any access to the server in case something goes wrong with the updates?
+[03.08.21 13:56:52] elroy: Here's the thing, the linker and a couple of other processes hang periodically on the jenkins server. Do you think a reboot would help?
+There's an update coming in, maybe he'll install it. Any access to the server in case something goes wrong with the updates?
+[03.08.21 14:00:26] elroy: Ok, there are no specifics there?
+[18.08.21 06:11:03] elroy: Greetings. Still on vacation?)
+[18.08.21 06:12:38] rocco: hi again, empty came
+[18.08.21 06:12:51] elroy: Greetings. Still on vacation?)
+[18.08.21 06:13:04] rocco: yeah, just came by to check
+[18.08.21 06:13:32] elroy: Say, who can raise/pay admin uk?
+[18.08.21 06:14:00] rocco: so demetrus, he's watching
+[18.08.21 06:14:17] elroy: Got it)
+[18.08.21 06:14:18] rocco: what's unavailable?
+[18.08.21 06:14:36] elroy: Onionsite Has Disconnected
+[18.08.21 06:14:42] rocco: he basically paid for everything at the beginning of the month
+[18.08.21 06:14:56] rocco: he'll be out in a minute.
+[18.08.21 06:15:03] elroy: okay.
+[18.08.21 06:15:26] rocco: which one, send me the first letters of the onion address
+[18.08.21 06:15:37] elroy: https://lch5nnzyb
+[18.08.21 06:18:53] rocco: Yeah, we're out of money
+[18.08.21 06:19:02] rocco: write to demetrus
+[31.08.21 09:38:03] elroy: Hello.
+[31.08.21 09:38:15] elroy: We have a problem with jenkins
+[31.08.21 09:38:17] rocco: Hi.
+[31.08.21 09:38:33] elroy: Two weeks ago we ran out of space, down to zero
+[31.08.21 09:38:50] elroy: I deleted iso with the studio, 40 gigs freed up
+[31.08.21 09:39:02] elroy: A week later I deleted it again, 40 more free
+[31.08.21 09:39:07] elroy: 5 left today
+[31.08.21 09:39:14] rocco: let me see
+[31.08.21 09:39:19] elroy: That never happened before....
+[31.08.21 09:39:49] elroy: There were 240 gigs of assemblies. I don't remember such growth...
+[31.08.21 10:32:31] rocco: Yes, it's filling up, lots of deplots, I'll make a cleaner, make it clean all builds at night
+[31.08.21 10:33:30] elroy: At 3 o'clock (Moscow time) starts the morning builds. Then you have to clean up before 3 am.
+[31.08.21 10:33:39] rocco: crypter4_generic_32.exe is 70 gigs full
+[31.08.21 10:34:09] rocco: you can't clean it in Jenkins itself, you have to use Windows tools
+[31.08.21 10:34:45] rocco: those are intermediate files, I remember I stopped at cleaning them
+[31.08.21 10:34:54] elroy: Maybe there is a parameter for artifact storage time or something like that
+[31.08.21 10:34:58] rocco: I just didn't think it would be this long
+[31.08.21 10:35:19] rocco: I'll look, I'll think about it
+[31.08.21 10:35:19] elroy: I delete intermediates, Jenkins has a removal after build
+[31.08.21 10:35:33] elroy: There in the artifacts maybe they add up
+[31.08.21 10:36:07] rocco: dz don't delete
+[31.08.21 10:36:47] elroy: The verex is deleted, well, at least it should be
+[31.08.21 10:37:00] rocco: just delete everything older than 1-2 days from builds, it will not accumulate
+[31.08.21 10:37:30] elroy: builds are just artifacts
+[31.08.21 10:37:34] elroy: Yes, they should be cleaned
+[31.08.21 10:37:47] elroy: See if he has a shelf life for artifacts
+[31.08.21 10:37:56] elroy: Could not miss such a thing)
+[31.08.21 10:38:08] rocco: I already forgot how to do it, but now I remember
+[01.09.21 10:33:55] elroy: Tell me, do you have access to beginner chat, or only demetrius wait?
+[01.09.21 10:34:53] rocco: and demetrius is here
+[01.09.21 10:35:00] elroy: He's not talking.
+[01.09.21 10:35:03] elroy: And the case is string
+[01.09.21 10:35:14] rocco: what's the chat?
+[01.09.21 10:35:24] elroy: https://ojdglzhrquash4igbx6e6wlthe3si4biabcpfopiw33uohvaufjgipad.onion/direct/iNK9NEAR6t3bmyNNywEjTJSSSixtabmS69
+[01.09.21 10:36:26] rocco: I'll start it
+[01.09.21 10:36:38] elroy: start what?)
+[01.09.21 10:36:53] elroy: I need to block a user there
+[01.09.21 10:40:13] rocco: ah, come on who?
+[01.09.21 10:40:32] elroy: zanzi, lock or change password to some very long one.
+[01.09.21 10:40:41] elroy: But don't delete
+[01.09.21 10:40:44] rocco: Yes, I'll lock it
+[01.09.21 10:40:49] elroy: Okay.
+[01.09.21 10:41:42] rocco: all
+[01.09.21 10:42:09] elroy: There's also a backup toad for this chat
+[01.09.21 10:42:14] elroy: zanzi there too
+[01.09.21 10:42:29] rocco: okay, I'll delete it there
+[01.09.21 10:42:38] elroy: ok
+[02.09.21 10:42:30] elroy: Greetings.
+[02.09.21 11:38:00] rocco: Hi.
+[02.09.21 11:50:43] elroy: you're not working on a jenkins machine right now?
+[02.09.21 11:50:59] rocco: Nope.
+[02.09.21 11:52:10] elroy: There's something wrong with it, I'm always breaking connections on the rdp and since yesterday there's no studio 2017 working.
+[02.09.21 11:52:16] elroy: Maybe overload it...
+[02.09.21 11:52:31] rocco: let's reboot
+[02.09.21 11:52:38] elroy: go ahead
+[02.09.21 11:52:48] elroy: you didn't delete studio?)
+[02.09.21 11:53:25] rocco: shit, maybe I deleted by accident, but I kinda deleted isoshnik
+[02.09.21 11:58:21] elroy: Isoshnik - not studio
+[02.09.21 11:58:36] elroy: It just stopped working for some reason. Fig knows why)
+[02.09.21 11:58:44] elroy: Maybe rebooting helped.
+[02.09.21 11:58:50] rocco: rebooted
+[02.09.21 11:59:11] elroy: thanks
+[02.09.21 13:33:04] elroy: Resetting helped) Studio is working!
+[06.09.21 17:00:27] elroy: This is it.
+[06.09.21 17:01:05] elroy: Forbid studios on Jenkins to go online. More like everything that isn't explicitly allowed.
+[06.09.21 17:01:41] elroy: There are options in project settings at coders "error reports".
+[06.09.21 17:01:50] elroy: Everything goes to the majors (
+[06.09.21 17:01:59] rocco: again
+[06.09.21 17:02:06] elroy: Here's the deal.
+Ban studios on jenkins from going online. Rather, even everything that is not explicitly allowed.
+There are options in the projects settings for coders "error reports".
+Everything goes to the majors (
+[06.09.21 17:02:43] rocco: i thought i shut down microsoft servers, but i'll see
+[06.09.21 17:02:51] elroy: Check it out.
+[06.09.21 17:03:00] elroy: Studios get updates
+[06.09.21 17:04:14] elroy: There is an option in project properties "Allow internal compiler error data (ICE) . "
+[06.09.21 17:04:19] elroy: That's why it knocks
+[08.09.21 10:05:48] elroy: Greetings.
+Tell me, can you make an account in the dataitx chat room?
+[08.09.21 10:12:14] rocco: Hi, to demetrus
+[08.09.21 10:12:24] elroy: okay.
+[14.09.21 13:55:47] elroy: Hello.
+[14.09.21 13:55:54] rocco: Hi.
+[14.09.21 13:56:03] elroy: Here's the problem on jenkins
+[14.09.21 13:56:09] elroy: ``
+Copying file to test
+FATAL: c:\jenkins\workspace\crypter4_generic_32_dll-exe\test (Access is denied)
+java.io.FileNotFoundException: c:\jenkins\workspace\crypter4_generic_32_dll-exe\test (Access is denied)
+```
+[14.09.21 13:56:40] elroy: Check if there's something wrong with the rights or space
+[14.09.21 13:57:15] rocco: yeah sec
+[14.09.21 14:12:53] rocco: check
+[14.09.21 14:18:08] elroy: check the rest
+```
+Copying file to test
+FATAL: c:\jenkins\workspace\crypter4_shellcode_64_exe\test (Access is denied)
+java.io.FileNotFoundException: c:\jenkins\workspace\crypter4_shellcode_64_exe\test (Access is denied)
+```
+[14.09.21 14:18:17] elroy: Let's take a look at the one
+[14.09.21 14:19:46] elroy: 4th crypter all
+[14.09.21 14:27:48] elroy: Sent Stanton to set up profiles
+[14.09.21 14:27:55] elroy: It's not set up right
+[14.09.21 14:28:04] elroy: On the rights later then
+[14.09.21 14:28:27] rocco: Okay.
+[9/15/21 10:17:18] elroy: Greetings.
+[9/15/21 10:17:59] elroy: I now created a new profile based on mine, crypter 11, but corrected it to git crypter 4. Got the same access denied
+[15.09.21 10:21:13] rocco: hi, yes I'm figuring it out, I can't figure it out yet
+[15.09.21 12:42:55] elroy: I found the problem
+[15.09.21 12:43:18] elroy: Test folder inside the crypter, name conflict
+[9/15/221 12:46:59] rocco: and this is a folder, I thought it was test, which is a temporary file created during transmission and they don't let it go anywhere
+[15.09.21 12:47:08] rocco: so you solved it?
+[9/15/21/12:49:34] elroy: There just have to create test, but he can not, there is already a folder with that name.
+[15.09.21 12:49:48] elroy: I haven't tested it yet, but it can't be otherwise)
+[15.09.21 12:50:01] elroy: Already told stenton, he will remove the folder)
+[15.09.21 12:50:07] elroy: Standby for now. Everything works)
+[15.09.21 12:51:06] rocco: Great, I was in a daze yesterday.)
+[9/15/21/12:51:23] rocco: everything was working and bam
+[9/15/21 12:51:28] rocco: it's not working
+[15.09.21 12:51:37] elroy: yeah)
+[29.10.21 09:13:07] elroy: Greetings.
+[29.10.21 09:13:28] rocco: hi
+[29.10.21 09:13:44] elroy: I'll try to demetrius first)
+[01.11.21 09:22:32] elroy: hello
+[01.11.21 09:26:26] rocco: hi
+[01.11.21 09:27:15] elroy: can you tell me, will demetrius be there today?
+[01.11.21 09:27:37] rocco: no he's on vacation, what do you want?
+[01.11.21 09:28:15] elroy: Rookie hit 502 shows from last week. We have work to do...
+[11.11.21 09:28:37] elroy: He promised he'd pick it up and then he left...
+[01.11.21 09:33:38] rocco: now if you find it through the gator
+[01.11.21 09:34:08] elroy: Okay.
+Pick it up, really need it.
+[01.11.21 09:34:28] elroy: gitlab there too, and also 502 as on the main git.
+[01.11.21 09:34:37] elroy: Maybe adam can suggest something
+[01.11.21 09:40:43] rocco: What's the address?
+[01.11.21 09:49:09] elroy: I only have a tor address
+```
+https://ww4gpecf7cpxft3ycdrdxr5fdtwojb5hysmvhx77dljhq2g4p2xcvcid.onion/
+```
+[01.11.21 09:49:25] rocco: there's a gator there
+[01.11.21 09:50:05] elroy: ok
+[01.11.21 16:21:13] elroy: Jenkins here writes
+```
+Your Jenkins data directory c:\jenkins (AKA JENKINS_HOME) is almost full. You should act on it before it gets completely full.
+```
+[05.11.21 14:11:16] elroy: silver says you need help with reversing cobalt, asked a man to allocate you
+[05.11.21 14:11:49] elroy: We have one of those newbies, he does different reverses
+[05.11.21 14:11:55] rocco: hi yes
+[05.11.21 14:12:53] rocco: you need to analyze cobalt pailode traffic, and understand what the ave is storing and the protection is blocking the pailode
+[05.11.21 14:13:26] rocco: and based on that disassemble the cobalt, and try to fix it
+[05.11.21 14:13:33] elroy: Let me put you two together, you tell him everything he needs to know
+[05.11.21 14:13:39] elroy: It'll be easier that way...
+[05.11.21 14:13:43] rocco: Come on.
+[05.11.21 14:13:56] rocco: I'll explain everything to him.
+[05.11.21 14:13:58] elroy: In gary's pledge chat
+[05.11.21 14:14:08] elroy: I'll let him know
+[05.11.21 14:14:16] rocco: He's not here?
+[05.11.21 14:14:20] rocco: new guy for now
+[05.11.21 14:14:31] elroy: No, he's new, not allowed in here yet
+[05.11.21 14:14:42] rocco: Yeah, okay, that's better.
+[05.11.21 14:14:42] elroy: And don't tell him too much
+[05.11.21 14:14:52] rocco: Nope.)
+[05.11.21 14:15:10] elroy: Create yourself an account there not to write from admin
+[05.11.21 14:15:17] rocco: pure technical hack no more
+[05.11.21 14:15:33] rocco: shit, what's the address?
+[05.11.21 14:15:38] rocco: first letters
+[05.11.21 14:16:06] elroy: ``
+https://ojdglzh
+```
+[05.11.21 14:16:23] rocco: Yeah, got it.
+[05.11.21 14:16:35] rocco: knock on his door.
+[05.11.21 14:16:45] elroy: Okay.
+[05.11.21 14:22:11] rocco: tell aza to knock
+[05.11.21 14:22:18] elroy: okay.
+[05.11.21 14:22:22] elroy: no answer yet
+[05.11.21 15:13:44] elroy: I got him, text him.
+[05.11.21 15:22:20] rocco: Yeah, I did
+[11/18/21 08:54:30] elroy: I can't get into the newbie chat. Page refreshes, is displayed, but then hangs on top and that's it... I've changed pads, refreshed the page. I do not understand what's wrong with it.
+[08.11.21 08:54:51] rocco: hi, let me check
+[08.11.21 08:54:52] elroy: *chain changed
+[08.11.21 08:56:03] rocco: this one - > ojd
+[08.11.21 08:56:08] rocco: seems normal
+[08.11.21 08:56:16] rocco: torus works very bad
+[10.11.21 09:11:21] elroy: I once asked you to put utilities to count file hash sums from console on Jenkins server. I remember you did. Do you remember the commands?
+[10.11.21 09:11:51] rocco: i don't remember.
+[10.11.21 09:12:05] rocco: I'll look it up later
+[10.11.21 09:12:13] elroy: okay)
+[10.11.21 09:14:01] rocco: after upgrading tor browser, can not go to that address, I have to put a new v3
+[10.11.21 09:14:11] rocco: on Jenkins
+[10.11.21 09:14:28] rocco: I'll set up a new address, can you distribute it?
+[10.11.21 09:14:50] elroy: Yes, I will. Strange, I came in yesterday.
+[10.11.21 09:15:17] rocco: Yes, just updated, tried to enter, does not come in by ip
+[10.11.21 09:15:27] elroy: 11 browser?
+[10.11.21 09:15:46] rocco: yeah
+[10.11.21 09:16:00] elroy: on wind?)
+[10.11.21 09:16:21] rocco: no on alina, just tried to go in
+[10.11.21 09:16:54] elroy: ok
+[10.11.21 09:17:45] rocco: ``
+abhfcascgppcauw3sbrszzqqivwqrqqfqxlsmjalzmcm37zom2soipyd.onion
+```
+[10.11.21 09:46:57] elroy: ``
+fciv -md5
+fciv -sha5
+```
+that must be it
+[10.11.21 09:47:47] rocco: yeah right
+[11/15/21 08:54:46] elroy: We need a new server for jenkins
+[15.11.21 08:55:04] elroy: Talked to silver, he approved, said he'd pay
+[15.11.21 08:55:14] rocco: Why a new one?
+[15.11.21 08:55:23] elroy: Not enough room
+[11/15/21 08:55:31] elroy: And this server is slowing down terribly for some reason
+[11/15/21 08:55:41] rocco: Yeah, yeah, yeah.
+[11/15/21 08:55:59] rocco: I've got everything all set up.
+[11/15/21/221 08:56:37] elroy: you need new one with 2TB ssd or nvme, it needs system and installed drivers ok. This one either has something wrong with the drivers, or with the hardware.
+[15.11.21 08:56:53] elroy: Find a good server...
+[11/15/21 08:57:15] rocco: yeah, on bacloud then.
+[15.11.21 08:57:19] rocco: then
+[15.11.21 08:57:29] rocco: how much RAM 64?
+[11/15/21 08:57:34] elroy: Set up just Jenkins and utilities to work there. I'll install studio and other compilers myself.
+[15.11.21 08:57:42] rocco: enough I think
+[11/15/21 08:58:01] rocco: or 32 but a faster CPU is better
+[11/15/21 08:58:15] rocco: faster CPU
+[15.11.21 08:58:21] rocco: for this purpose
+[15.11.21 08:58:22] elroy: 32 is enough, it does not consume. Or the system doesn't let it consume because of activation or something else... Ffft knows why, but this server had enough for 32. It could be 64, we're growing up. Look at the price)
+[15.11.21 08:59:02] rocco: okay, I'll see if you can somehow export Jenkins, I'll read, I have to configure everything
+[15.11.21 08:59:35] elroy: This CPU is fast, it has 3.3 declared, but 4 real cores, 8 threads, i.e. cores 4 - not enough... But it's always hovering at 0.7 instead of 3.3. Either it's too hot, or the motherboard's resors policy...
+[15.11.21 09:00:10] elroy: Tell me more, what's the problem with the channel, do you know?
+[11/15/21/221 09:01:08] elroy: Updating the studio, the channel is 1-5 megabits to Microsoft servers. Maybe this DC has problems with external channels? If so, if BC is also there, in this DC, then the problem is clear) The channel does not pull out)
+[15.11.21 09:01:16] elroy: Maybe he can change the country...
+[15.11.21 09:01:28] rocco: uk is there, right?
+[15.11.21 09:01:45] rocco: no
+[15.11.21 09:01:48] elroy: Last night it got ridiculous
+[15.11.21 09:01:52] rocco: bk on the bacloud
+[11/15/21/29:01:56] elroy: 49 kbytes/sec
+[15.11.21 09:02:23] rocco: okay, let's change the server, let's see
+[15.11.21 09:02:29] elroy: ok)
+[15.11.21 09:03:02] elroy: About channels, look, maybe in those dts similar problems... You can measure in the right country, where our bots work)
+[15.11.21 09:04:14] rocco: they write a gigabit channel
+[15.11.21 09:05:19] elroy: Yes it is gigabit, yes, I also checked. It works on gigabit in their dc. And that's what channels by country at dc, maybe just busy, maybe under ddos some external channel...
+[15.11.21 09:05:37] elroy: It usually goes out of the dc by more than one channel
+[15.11.21 09:18:47] rocco: got it all
+[15.11.21 09:19:12] rocco: 2 tera 6 cores 2.4 hz 64 RAM
+[15.11.21 09:20:00] rocco: I think it's enough
+[15.11.21 09:20:19] elroy: It should be enough
+[15.11.21 09:20:26] elroy: Let's try it in practice)
+[15.11.21 09:20:44] rocco: You can change CPU there
+[15.11.21 09:20:52] elroy: I need a system and Jenkins. And those scripts on cleaning) Let me know later)
+[15.11.21 09:21:13] rocco: okay.
+[15.11.21 09:21:30] elroy: The main thing is to have two teres on the hard drive, namely csd or nvm
+[15.11.21 09:21:42] elroy: *not on
+[15.11.21 09:21:43] rocco: there ssd 2 ter
+[15.11.21 09:21:49] elroy: Great)
+[15.11.21 09:22:17] elroy: It's mostly the drive that's going to be the problem
+[15.11.21 09:22:37] rocco: Yeah, there were some problems with the disk
+[15.11.21 09:22:42] rocco: saw it on the monitor
+[15.11.21 09:22:52] rocco: well, there's a hoster there too
+[11/15/21/29:23:00] rocco: It's more serious
+[16.11.21 08:55:36] elroy: Greetings. When can you give access to the new server (approximately) ?
+[16.11.21 08:56:25] rocco: Hi, I bought it, but I haven't set it up yet, I will do it today
+[16.11.21 08:57:09] elroy: Okay. When to wait?) I'm making plans for when to do what.
+[16.11.21 08:57:48] elroy: What kind of wasp is it?
+[16.11.21 09:00:32] rocco: 2012
+[16.11.21 09:00:43] rocco: i think i'll have it done by tonight
+[16.11.21 09:01:23] elroy: Ok, when you do it, send me access.
+[16.11.21 09:01:42] elroy: It makes sense to create a separate user for Jenkins
+[16.11.21 09:02:06] elroy: For me too... And myself. I'll do the rest.
+[16.11.21 09:02:27] elroy: (system user)
+[11/18/21 21 07:49:09] rocco: Hi.
+[18.11.21 07:49:30] rocco: I'm just transferring Jenkins settings to the new server
+[18.11.21 07:49:50] rocco: you can go in while you put all the software
+[18.11.21 07:53:18] elroy: reschedule, I'll put everything later
+[18.11.21 07:53:24] elroy: Greetings
+[11/18/21 07:54:02] elroy: Tell me, is gary from that chat still on that task?
+[18.11.21 07:54:42] rocco: what task?
+[18.11.21 07:54:51] rocco: what's gary I don't know
+[18.11.21 07:56:09] elroy: well, silver asked me to give you a man to reverse the cobalt
+[18.11.21 07:56:20] elroy: gary from pledge chat
+[18.11.21 07:56:25] elroy: You wrote him from aza
+[18.11.21 07:56:29] rocco: ah
+[18.11.21 07:56:43] rocco: I haven't gotten to him yet, I corresponded with him
+[18.11.21 07:57:00] rocco: I got a new anchor to set up, then I'll do the coba
+[18.11.21 07:57:08] rocco: also jenkins
+[11/18/21 07:57:37] elroy: Ok, get to him, control him, so he doesn't get bored, the work is worth, the money goes to him...))
+[18.11.21 07:58:14] rocco: Sure, but I can't get to him myself yet
+[18.11.21 07:58:20] elroy: ok.)
+[18.11.21 07:58:25] rocco: I'll try today.
+[18.11.21 08:42:01] elroy: Make this chat account please for gibby from beginner's chat
+[18.11.21 08:42:16] elroy: Let's get him in here...
+[18.11.21 08:45:33] rocco: diego
+https://privnote.com/ZOuu57yl#eJ3secb59
+[18.11.21 11:03:41] elroy: Lock robert's account in rookie chat
+[18.11.21 11:16:42] rocco: ok
+[18.11.21 11:18:04] rocco: block or drop?
+[11/18/21 11:18:33] elroy: I don't know. What do they do with the quitters?)
+[11/18/21 13:30:57] elroy: Also bullet and fish left.
+Remove their accounts from the rookie rocket.
+[11/18/21 21 13:32:02] rocco: okay.
+[11/23/221 08:34:12] elroy: Greetings.
+[23.11.21 08:35:10] elroy: tell me, when can you make the new jenkins server transfer?
+[11/23/221 08:35:39] rocco: hi, busy with other urgent stuff, I think this week I'll get it up
+[11/23/221 08:36:18] elroy: Maybe one of the admins can unload it?
+[11/23/221 08:37:06] rocco: I wonder if they can handle it.
+[11/23/221 08:37:19] rocco: Right away.
+[11/23/221 08:39:18] elroy: That's why I'm asking, frances is bugging me, I need pure crypto. And there detection is related to the software on the server (with the peculiarities of the build apparently). We have crap with crypts, need this update...
+[23.11.21 08:39:55] rocco: I transferred all configs and profiles to a new one, you can roll vs and everything else in the meantime
+[23.11.21 08:40:11] elroy: give me access)
+[23.11.21 08:40:21] rocco: ``
+Username administrator
+Password NR5c81i4yD4YkjT
+85.206.161.21
+```
+[11/23/221 08:40:31] elroy: Okay.
+[11/23/221 08:40:57] rocco: Drink it all up.
+[11/23/221 08:41:18] rocco: I'll try to set it up today, it won't take long in principle
+[11/23/11/21 09:03:53] rocco: bro what onion address on jenkins?
+[11/23/11/21 09:04:03] rocco: I didn't write it down
+[11/23/11/21 09:05:25] elroy: ``
+https://abhfcascgppcauw3sbrszzqivkuwqrqfqxlsmjalzmcm37zom2soipyd.onion
+```
+[11/23/11/21 09:06:25] rocco: yeah
+[23.11.21 09:06:32] rocco: he's got Gator in charge
+[11/23/221 09:06:38] rocco: check with him
+[23.11.21 09:06:45] rocco: let him set it up
+[23.11.21 09:06:54] rocco: then you can roll studio and stuff
+[24.11.21 10:53:46] elroy: hello. Putting studio on new jenkins server, everything is fine. Traffic is up to 700 megabits.
+[24.11.21 10:54:22] elroy: There is something wrong with the old (current) server, or rather something wrong with channels at hoster
+[24.11.21 10:54:59] rocco: that itldc always fails
+[24.11.21 10:55:14] rocco: better serious bacloud
+[24.11.21 10:55:26] rocco: More expensive, but more stable
+[24.11.21 10:55:33] elroy: Yes)
+[24.11.21 10:55:53] rocco: i don't remember, did we have cryptopanel with jenkins through procla?
+[24.11.21 10:56:01] elroy: yes
+[24.11.21 10:56:14] rocco: if anything ip procla 162.33.178.190
+[24.11.21 10:57:10] elroy: I was wondering how to switch. After all, it must be tested before, or everything will fail.
+[24.11.21 11:02:30] rocco: so let martin ip perkeinet to a new proclu and see
+[24.11.21 11:03:34] elroy: And for that time the panel will lay down for everyone else))
+[24.11.21 11:03:48] elroy: Okay, let's schedule tests then
+[24.11.21 11:03:59] elroy: I'm just used to working transparently from my last job.
+[24.11.21 11:04:10] elroy: If you can make a stop, then fine)
+[29.11.21 07:13:09] elroy: Greetings.
+[29.11.21 07:14:06] rocco: Hi.
+[29.11.21 07:17:41] elroy: tried the new jenkins, there is a problem. It didn't have git, we put it in, but we couldn't solve the certificate error problem in any way. Git can't clone project because of self-signed certificate on git server, couldn't add it to exceptions... Can you fix it or ship the gator? On the current jenkins, isn't it in exceptions or something else fixed, git works there.
+[29.11.21 07:19:40] elroy: We added certificate to repositories, computer account and Jenkins services, didn't help. We changed encryption provider for git to both Windows and Openssl, just new error there)
+[29.11.21 07:31:13] rocco: I wrote to gator
+[29.11.21 07:31:13] rocco: let him decide
+[29.11.21 07:32:04] elroy: okay
+[11/30/21/21 10:38:26] elroy: Greetings.
+[11/30/21 10:39:15] rocco: hi
+[30.11.21 10:39:45] elroy: About the cobalt, did you do it?
+[30.11.21 10:40:00] rocco: No, not yet.
+[11/30/21 21 10:40:13] rocco: I'm just finishing a new prototype.
+[30.11.21 10:40:55] elroy: ``
+man described me in a nutshell the terms of reference, said he would later give the material and he needs to deploy the server.
+In the end, he disappeared without a trace.
+I started poking around the coba myself, but still no answer from him.
+```
+[30.11.21 10:41:33] elroy: Either give him a clear task, or I'll move him to another task. Sits bored, and the work stands...
+[30.11.21 10:42:16] rocco: all right, I forgot about him, I have a lot of tasks, I'll try to figure them out today
+[30.11.21 10:42:32] elroy: he got it figured out, he doesn't know what to do...
+[03.12.21 07:07:26] elroy: Greetings.
+[03.12.21 09:36:10] rocco: Hi.
+[03.12.21 09:51:10] elroy: So far the question's gone.
+[10.12.21 18:24:44] rocco: hi.
+[10.12.21 18:26:05] elroy: Hello
+[10.12.21 18:29:21] rocco: What's wrong with the metrics?
+[12/10/21 18:29:52] elroy: Yes. The files are 68 bytes each. What is it and what is it supposed to do?
+[10.12.21 18:30:29] elroy: Manuel says it should knock on servers...
+[10.12.21 18:30:57] elroy: 68 bytes code can knock somewhere?) Can it do something?)
+[10.12.21 18:34:16] rocco: i dunno so oy generate metha
+[10.12.21 18:34:30] elroy: Is it shellcode?
+[10.12.21 18:34:55] elroy: Is there a description of the raw format of this? Or just the bare code?
+[10.12.21 18:34:58] rocco: yes
+[10.12.21 18:35:23] elroy: 68 bytes won't knock the servers, no way...
+[10.12.21 18:36:16] elroy: algorithm doesn't fit into 10-20 commands in asm
+[10.12.21 18:36:27] rocco: I don't know, maybe it's generating something wrong.
+[10.12.21 18:36:36] elroy: okay.
+[12/13/21 10:15:26] elroy: Hello.
+[12/13/21 11:05:49] rocco: Hi.
+[12/13/21 11:08:10] elroy: ok ?
+[12/13/21 11:08:55] elroy: Need advice on AV farm, silver referred to you.
+The machines there use git to retrieve the script that does the scanning. What kind of git is it? How do you get into it?
+[12/13/221 11:11:44] rocco: ah so the git that's crypto
+[12/13/21 11:12:30] rocco: https://95.179.129.40/port/auto
+[13.12.21 11:16:06] elroy: yay)
+[12/13/21 11:16:12] elroy: I found it)))
+[12/13/21 11:17:12] elroy: There's an update for resources, script, etc. Is this scheme still alive, does the script work on machines?
+[12/13/21 11:17:44] rocco: yeah
+[12/13/221 11:17:58] rocco: the only thing you gotta fine-tune is to make the dll dynamic
+[13.12.21 11:18:14] elroy: That's what it is.
+[13.12.21 11:18:28] elroy: And a fix for cars to be identified
+[13.12.21 11:18:44] rocco: you got a rags-to-riches there
+[12/13/221 11:19:07] elroy: Yeah, he just rolled the update, need to test it
+[12/13/221 11:19:17] elroy: But I don't understand who's administering the machines
+[13.12.21 11:19:44] rocco: i don't like that gator and demetrus disappeared
+[13.12.21 11:19:56] rocco: about cars, go to mitzi
+[13.12.21 11:20:11] elroy: I don't like it either...
+[12/13/221 11:20:21] elroy: Is there a backup link to them?
+[12/13/21 11:20:57] elroy: Franz must have backup toads, right?
+[12/13/21 11:21:24] rocco: I think so.
+[13.12.21 11:21:52] elroy: mitzi says demetrius decides anyway, sets tasks
+[12/13/221 11:23:26] elroy: can you challenge mitzi ? I'll advise him what to do with the machine. I need at least one test run.
+[12/13/21 11:23:36] elroy: With the new update.
+[12/13/21 11:27:34] rocco: Write down what you need to do?
+[12/13/21 11:27:36] rocco: I'll text him.
+[12/13/221 11:38:41] elroy: You need to clone a machine with any AV.
+Give it a name.
+Add it to the cryptopanel.
+On the machine, find a script that extracts the git.
+Create a repo and throw the scripts I have there.
+Set up Perl on the machine (the script is written in Perl).
+Save the script that retrieves the git.
+Take a snapshot of the machine.
+Send any test file from the panel to the scanner.
+Check the result in the panel.
+Make scans of statics and scans in dynamics, including for dll (all from the panel).
+[13.12.21 11:39:17] elroy: Or prepare 10ku, put AhnLab v3, set up script, take a snapshot...
+[22.12.21 15:39:47] rocco: bro hi
+[22.12.21 15:40:28] elroy: Hello.
+[22.12.21 15:41:46] elroy: apr?
+[22.12.21 16:48:04] rocco: gary wrote that.
+that's the guy on xss who wanted to sell a public cryptor for 25k? stout said it was a former employee. there was something else on the exp
+[22.12.21 16:48:17] rocco: isn't that him?
+[12/22/221 16:49:08] elroy: Sounds like him. I don't have an account for these forums, ford said.
+[22.12.21 16:49:31] rocco: who, not zanzi?
+[22.12.21 16:50:34] rocco: and there were cryptors who had access to the git and then fired?
+[12/22/221 16:50:54] elroy: zanzi took a cryptor from us to refine, started refining it, and then ford said he was crypting left and right. I talked to him, he quit and opened a dispute. In fact, he was written to you, not the salary, because he took our crypto took it for himself ...
+And then there was a thread on the forum, ford wrote that the dude is selling the cryptor
+[22.12.21 16:51:18] elroy: No one from that project had access to the build machine
+[22.12.21 16:51:29] rocco: and the crypto git?
+[22.12.21 16:51:49] elroy: now the first crypto was just taken from there, diego is in this chat, and even he doesn't have that access yet
+[22.12.21 16:51:55] rocco: it feels like he leaked everything from git
+[22.12.21 16:52:03] elroy: nobody had access to the build machine git from that chat
+[22.12.21 16:52:12] elroy: And no one was told about the panel or anything
+[22.12.21 16:52:35] rocco: he came out to me in the toad I use for soba
+[22.12.21 16:52:45] rocco: no other way
+[22.12.21 16:52:57] rocco: only if ford flashed it somewhere
+[12/22/221 16:53:00] elroy: You can see from the screenshots that the new Jenkins folders + leaked git. It's a leak on the Jenkins server. But what does it have to do with that chat I can't figure out....
+[22.12.21 16:53:25] rocco: i'm telling you it was one of ours
+[22.12.21 16:53:38] rocco: because he knocked on the toad that's for soba
+[22.12.21 16:53:41] rocco: it's new
+[22.12.21 16:53:47] rocco: I haven't shown it anywhere
+[22.12.21 16:54:00] rocco: so the guy knew where to knock
+[22.12.21 16:55:06] elroy: Either he was just lucky enough to stumble upon a jenkins scan by ip, or a git and further match
+[22.12.21 16:55:20] elroy: That said, not many people know about that project
+[22.12.21 16:55:24] rocco: And the chat room?
+[22.12.21 16:55:38] rocco: and why did he tell zanzi and you
+[22.12.21 16:55:41] elroy: matched the chat and the crypto
+[22.12.21 16:55:59] rocco: Somebody leaked
+[22.12.21 16:56:09] rocco: too many hits
+[22.12.21 16:56:28] elroy: I don't know... A coincidence, I guess. And there were thoughts that this is zanzi, just on the last screen, there is our dialogue last
+[22.12.21 16:56:52] rocco: well, yeah, I just did not understand why he attached it
+[22.12.21 16:57:11] rocco: it's a bunch of names and letters that say nothing
+[22.12.21 16:57:38] elroy: Only a few knew about the chat room
+[22.12.21 16:58:00] rocco: maybe he hacked into the server with the chat by accident, because the password was changed
+[22.12.21 16:58:18] rocco: and then he saw it through the history
+[22.12.21 16:58:20] rocco: dunno
+[22.12.21 16:58:29] rocco: but it's blank information
+[22.12.21 16:58:35] rocco: it makes sense
+[22.12.21 16:58:49] rocco: as if a schoolboy was a fool
+[22.12.21 16:59:08] elroy: maybe he got offended...
+[22.12.21 16:59:21] rocco: There's a lot of them now.
+[22.12.21 16:59:35] rocco: there's a rat who blew it all in the summer
+[22.12.21 16:59:43] rocco: also offended
+[22.12.21 17:00:38] elroy: There on the screenshots if you look at the text, there are 2 teammates me and silver, as in the chat...
+[22.12.21 17:00:48] elroy: For some reason he attached them...
+[22.12.21 17:01:29] elroy: There was also collin, he could also skim))
+[22.12.21 17:04:32] rocco: it's pretty straightforward, I sent him away
+[22.12.21 17:04:38] rocco: not serious
+[22.12.21 17:04:50] rocco: he wants to get rid of
+[22.12.21 17:05:06] rocco: well, crypto-codes, they change all the time
+[22.12.21 17:05:46] rocco: it's a shame some grown guys got cheated by a schoolboy)
+[22.12.21 17:06:00] rocco: He should be punished.
+[22.12.21 17:13:23] elroy: Are you sure nothing but cryptors got hurt?
+[22.12.21 17:13:43] elroy: It's not the cryptors that bother me...
+[22.12.21 17:13:46] rocco: i think
+[22.12.21 17:13:48] rocco: yes
+[22.12.21 17:14:01] rocco: he wouldn't have offered such bullshit then
+[22.12.21 17:14:21] rocco: these are not serious trumps
+[22.12.21 17:14:25] rocco: they're nothing
+[22.12.21 17:14:30] elroy: I still can't connect Jenkins and that chat, neither those cricketers know about that chat, nor those about bildmachine, much less about addresses
+[22.12.21 17:15:03] rocco: i think he went to the server with the chat
+[22.12.21 17:15:29] rocco: I saw some crypters history this morning
+[22.12.21 17:15:46] rocco: Or he was requesting a list
+[22.12.21 17:15:53] rocco: or the history
+[22.12.21 17:16:02] rocco: worked in the morning, by the logs
+[22.12.21 17:16:15] rocco: then someone pulled the list of crypto group
+[22.12.21 17:17:11] rocco: I don't understand why he tapped me on the jabber
+[22.12.21 17:17:25] rocco: so he obviously knew
+[22.12.21 17:17:38] rocco: so it's someone who took a job
+[22.12.21 17:17:52] rocco: nobody else knows about him, just a couple of people
+[22.12.21 17:17:54] rocco: To.
+[22.12.21 17:18:30] elroy: To me too...
+[22.12.21 17:18:52] elroy: Did you give this toad to gary?
+[22.12.21 17:19:58] rocco: oh, did he knock on your door too?
+[22.12.21 17:19:58] rocco: who else?
+[22.12.21 17:19:58] rocco: no gary didn't give him only tox
+[22.12.21 17:20:20] rocco: well, he's still on the phone
+[22.12.21 17:20:32] rocco: he wants to know when he can chat again
+[22.12.21 17:21:56] elroy: Yes, I asked him today too...
+[22.12.21 17:22:01] elroy: Maybe he's just asking))
+[22.12.21 17:22:26] elroy: silver also sent you a list of my contacts, 7
+[22.12.21 17:22:34] elroy: In that toad
+[22.12.21 17:22:37] rocco: I saw it.
+[22.12.21 17:22:43] rocco: I don't have any.
+[22.12.21 17:22:46] elroy: Also purely for job interviews
+[22.12.21 17:22:48] elroy: Okay.
+[12/22/221 17:22:54] elroy: Even more interesting.
+[22.12.21 17:23:36] rocco: Ask ford who he gave my toad to
+[22.12.21 17:23:52] rocco: and then it will become clear where to look
+[12/22/221 17:24:48] elroy: Still gotta figure it out. Maybe it's still in the system.
+[12/23/221 07:08:09] elroy: Greetings. Any news?)
+[12/23/221 07:09:18] rocco: Hi, what about?
+[12/23/221 07:09:27] rocco: from the hacker.)
+[12/23/221 07:09:41] elroy: newbie chat is not available. What's decided with it?
+[23.12.21 07:09:56] rocco: I will, I have the domain
+[12/23/221 07:10:11] rocco: Yesterday I was waiting for Demetrus to make a new one
+[23.12.21 07:10:27] rocco: shit, everything is so slow
+[12/23/221 07:21:47] elroy: Maybe it makes sense to change the domain? I'll check with the backup toads today
+[12/23/221 07:24:17] rocco: Of course we should change it.
+[12/23/221 07:24:58] rocco: but you have to give it to everybody, I will do it to the old one, and then I will add the new one
+[12/23/221 07:30:42] elroy: > Fuck, everything is so slow
+The complexity of the task increases every year, and in recent years even the complexity of administrative tasks exceeds reasonable limits.
+[12/23/221 07:31:33] elroy: Remember dos, it takes half a megabyte anyway.) And the operating system...
+[12/23/221 07:32:53] rocco: Yes everything is developing fast, but you have to adjust, no one makes you to study the system thoroughly, but you should quickly learn to analyze and understand how it works
+[23.12.21 07:33:12] rocco: there are logs everywhere
+[23.12.21 07:33:18] rocco: there are all errors in logs
+[12/23/221 07:33:23] rocco: google
+[12/23/221 07:33:27] rocco: there are books
+[12/23/221 11:45:25] elroy: Look.
+[12/23/221 11:45:27] elroy: Tell me.
+[12/23/221 11:46:10] elroy: We have a coder project missing in the newbie git. The other day it was there, and now it's gone.
+[12/23/221 11:46:29] elroy: Did any of the admins touch their git? Did they move anything?
+[12/23/221 11:46:52] elroy: It says that project 22 was removed from the git
+[12/23/221 11:52:50] elroy: False alarm, they deleted it themselves
+[12/24/21 14:40:05] elroy: Greetings.
+[12/24/21 14:40:20] rocco: hi.
+[12/24/21 14:40:50] elroy: Bro, extinguish the build machine git. Asked demetrius 20 minutes ago, git is still running.
+[24.12.21 14:41:31] rocco: i also told him 15 minutes ago
+[24.12.21 14:41:35] rocco: I'll do it now.
+[24.12.21 14:42:24] rocco: i explained to demeter how to shut down the whole jenkins build machine system
+[12/24/221 14:42:52] elroy: thanks. A few seconds)) What's wrong with it.
+[24.12.21 14:43:00] rocco: said he would
+[24.12.21 14:43:03] rocco: can do
+[24.12.21 14:43:10] rocco: I'll check later
+[24.12.21 14:43:20] rocco: web only through onion on the pad
+[24.12.21 14:43:28] rocco: everything else is closed
+[24.12.21 14:43:35] rocco: rdp only with our mars
+[24.12.21 14:43:46] elroy: Great.
+[24.12.21 14:44:23] rocco: he had to do it fast, otherwise he was already hacked
+[24.12.21 14:44:38] elroy: both funny and sad
+[24.12.21 14:44:44] rocco: yeah
+[24.12.21 14:45:04] rocco: but i bro, i don't know how to pull their skil, let them do it
+[24.12.21 14:45:14] rocco: long time yes
+[24.12.21 14:45:23] rocco: but they can't learn any other way
+[12/27/221 07:09:07] elroy: Hello.
+[12/27/221 07:13:15] rocco: Hi.
+[12/31/221 13:41:12] rocco: Okay.
+[31.12.21 13:41:22] rocco: I shut down Jenkins server
+[31.12.21 13:41:45] rocco: access to admin only from onyon, and build machine
+[31.12.21 13:42:14] rocco: had to open everything from Jenkins to Bild machine, otherwise agent was glitching
+[31.12.21 13:42:47] rocco: well, basically, only Jenkins-Proclay Jenkins-Build-Machine
+[31.12.21 13:43:09] rocco: tried agent via https no errors
+[31.12.21 13:43:30] rocco: still gotta test though
+[31.12.21 13:44:37] elroy: I see. In Jenkins settings in the settings is set on which address it hangs, http and https is prescribed there. Maybe it's there.
+[31.12.21 13:44:46] rocco: yes yes
+[31.12.21 13:44:50] elroy: There is a string generated for the agent based on this string
+[31.12.21 13:45:10] rocco: I'll experiment with it some more
+[31.12.21 13:45:16] elroy: ok.
+[31.12.21 13:45:31] rocco: I'll basically close the build machine
+[31.12.21 13:45:42] rocco: and there will be a closed loop
+[31.12.21 13:45:52] elroy: That's good
+[31.12.21 13:48:03] rocco: I kinda tried to do the line with https, java itself was rebelling to ssl connection, I'll figure it out after holidays
+[31.12.21 13:49:02] rocco: they communicate with each other by http, I think it is not a problem, because only they are in this bunch, others do not have access
+[31.12.21 13:49:38] elroy: Well, yes, it's critical, but tolerable
+[31.12.21 13:49:52] elroy: The main thing is not in open duostup
+[31.12.21 13:56:49] rocco: I'm telling you, they only communicate with each other by http
+[31.12.21 13:57:06] rocco: jenkins and build machine
+[31.12.21 14:05:23] elroy: The agent is down
+[31.12.21 14:38:50] rocco: shit bro hang up build machine
+[31.12.21 14:39:04] rocco: closed and reclosed
+[31.12.21 14:39:20] elroy: rp is not available?
+[31.12.21 14:39:29] rocco: yeah, reset
+[31.12.21 14:39:34] rocco: from panel
+[31.12.21 14:39:38] rocco: waiting for demeter
+[31.12.21 14:39:46] elroy: ok
+[05.01.22 08:16:52] elroy: greetings
+[05.01.22 08:20:38] rocco: hi
+[05.01.22 08:20:54] elroy: ok?
+[05.01.22 08:21:29] rocco: e2e
+[05.01.22 08:21:40] elroy: test
+[05.01.22 08:21:47] elroy: wow
+[05.01.22 08:21:49] rocco: test passed
+[05.01.22 08:21:55] elroy: otr via e2e
+[05.01.22 08:21:58] elroy: strongly))
+[05.01.22 08:22:27] elroy: Say, that server that was fixed, that's our previous one, the one they lost control of, right?
+[05.01.22 08:22:29] rocco: in short everything works, jenkins build machine
+[05.01.22 08:22:44] rocco: yeah, I hooked up an agent, everything works
+[05.01.22 08:22:53] elroy: 28 cores there?
+[05.01.22 08:23:00] rocco: i dunno
+[05.01.22 08:23:01] elroy: they replaced the server?)
+[05.01.22 08:23:07] rocco: but the one that wasn't working
+[05.01.22 08:23:14] rocco: I restored access yesterday
+[05.01.22 08:23:26] rocco: it works
+[05.01.22 08:24:06] elroy: I see. I'm looking at the script, it says:
+```
+Intel(R) Xeon(R) CPU E5-2650L v4 @ 1.70GHz
+```
+[05.01.22 08:24:15] elroy: It has 28 cores.
+[05.01.22 08:24:24] elroy: 14, or rather, full-fledged
+[05.01.22 08:24:42] elroy: Is this a dedicator or a vpc with 6 cores? Just used to be 6.
+[05.01.22 08:25:42] elroy: Is there an rdp dsotup to it?
+[05.01.22 08:26:00] rocco: Yes, there's an rdp
+[05.01.22 08:26:12] rocco: i instructed demeter to protect rdp access
+[05.01.22 08:26:17] rocco: gave him an article
+[05.01.22 08:26:23] rocco: he's going to take it apart
+[05.01.22 08:26:49] rocco: will be like a virtual network
+[05.01.22 08:26:57] elroy: I see. Thank you. He also has in his tasks the configuration of the second server, that was bought yesterday...
+[05.01.22 08:27:01] rocco: where only we will have access
+[05.01.22 08:27:11] rocco: I think you don't need the second one yet
+[05.01.22 08:27:17] rocco: no time to waste
+[05.01.22 08:27:28] rocco: leave it as a reserve
+[05.01.22 08:27:38] elroy: The second is needed, for sure. Besides, it was paid for...
+[05.01.22 08:28:05] rocco: on Jenkins, access via proclu
+https://195.123.228.5/
+[05.01.22 08:28:09] elroy: just in case which one of them will fail...
+[05.01.22 08:28:16] rocco: the cryptopanel refers to it
+[05.01.22 08:28:31] rocco: I'll shut it down later, it'll only be through onion
+[05.01.22 08:29:04] elroy: Close it, i.e. for public access, but leave it for the panel. Yes?
+[05.01.22 08:29:17] rocco: Yes, for the panel.
+[05.01.22 08:29:30] rocco: I have some work to do now, I'll finish it later
+[05.01.22 08:29:39] elroy: ok
+[05.01.22 08:29:50] rocco: Basically, the whole bunch is working now
+[05.01.22 08:30:00] rocco: Jenkins is closed from outside
+[05.01.22 08:30:09] rocco: just a key to lock and all
+[05.01.22 08:30:22] rocco: there will be only onion to admin
+[05.01.22 08:30:39] rocco: protect rdp and disable dick metrics and stuff
+[05.01.22 08:31:28] rocco: and studios don't knock
+[05.01.22 08:31:32] elroy: You just prohibit extra traffic out there. You can't disable telemetry, then all the fake switches, it still sends what it sees fit...
+[05.01.22 08:31:35] rocco: but it's probably better for you
+[05.01.22 08:31:45] rocco: yeah or so
+[05.01.22 08:31:53] rocco: just be careful
+[05.01.22 08:32:04] rocco: otherwise I blocked everything drunkenly)
+[05.01.22 08:32:16] elroy: It happens))
+[05.01.22 08:32:20] rocco: I had to bow to the court
+[05.01.22 08:32:43] rocco: Write to demeter
+[05.01.22 08:32:50] rocco: so he could do it
+[05.01.22 08:33:02] rocco: he's doing it right now
+[05.01.22 08:33:02] elroy: Okay.
+[05.01.22 08:33:27] rocco: We gotta get this rdp private
+[05.01.22 08:57:36] elroy: Tell me, how does the agent work there? It's prescribed in jenkins.bat on the desktop, right? And when you restart the server from autorun, does that file start?
+[05.01.22 08:59:24] rocco: I don't know, I didn't understand it
+[05.01.22 08:59:30] rocco: ask demeter
+[05.01.22 08:59:36] elroy: okay.
+[14.01.22 08:28:48] elroy: Text me when you show up, it's urgent
+[14.01.22 08:57:21] rocco: koo
+[14.01.22 08:59:36] elroy: Already told you everything. But I'll ask a question)
+[14.01.22 09:00:48] rocco: go ahead
+[14.01.22 09:04:12] elroy: -----BEGIN PGP MESSAGE-----
+
+hQIMA+geBzK0wioaAQ//UbRRqU2UGdCglgLyikrq4VhzvR4D8EGmAD8y+RuBW8Ei
+mNak1ElxQA5/zJ1ds0pa2ntbqqjD0gV2PrPYopucyhZdFmxPb9FWtVm/l2tH5kiv
+ydLvqnMGLWoGjiQyDliIfjYwXM/DSZqR65Pn7B/zzbDlCfl5o8669siygVLe3c1O
+76TRhMpi29eX5efYOLfg+flezfJ0qMPeCEw4CBjeX/Y+kp+a14gRdirWv5/bi7eX
+itnnrrQkQVBn+8Fm9pk8UVy90Zgos+m9qOTmCZXJa8PGaxjqlDbh5LQBWigpQAJX
+yqno4NGK3sKjBq6hyMJTLOl1kwGyb4/GrChU+DxsNsyfoJWxiM/zQ1zi3LwldRoC
+/wk6mqRTM1IbYBRbnFaRXrYXcx2jMFFTXtAshSycgFWR/ezXq7y5msJR4Tfn1zLO
+0dg5A8qEfCiWFe75Da15BB3y2eTcBAfWYKxmZj/qPxEvkugZQ1jOj0RYVljgIRH
+cVkmVSfBsmmVe7uSiSexHETCsbgmLgBlHFTsIhvrJ03S8RO0S8jxWFvaTAozbiZ9
+E5GExAc1YzcNAmkAs3k7BB+Ojxn35JRc9zmVSfohyqZMgBwVhmvt9f+vo5tDzUCw
+EZG9zRlogdnsq/sm+05gFmCPAECFWFwwuXm/t6EHYNTIFBr1LdP1qXySQo6CZKfS
+6gF0jGqAoMCJ2BShCg3etZQt7hmsfD0ng2Gseiqio6Q5P/+316o6PsFgmFyXaSYP
+M6RMRYHdHLufEKst/SYhG7qrqJ/VkFygl9qumRMd6q1bQIi9nvDeeOswjOR2fno
+7Qfz1XPLf0y8Hrov2KAlrOwXKZ/phHIKdZKl/0R7U/SyQjCsdn3C7WjdjL0xJn3d
+vC0Za9aUk53DWk25zTlKC8j0ZWsvQHJBchAO5tLwAsCvC0bbxQAQFcxrgnBAJF9q
+olWo/qMFVgxjlPrjRbepuey6SHR8bDpcdNGsYZWsKCJovunQRTcoS+DpCkH4kLT
+3tWQG0yuU2Lyds0bR2I/5cRyptiYEkLPfedsEzxDLys526pKd/BKwzs+RCCH8VJx
+kU8ZSMz2xu1GrbYaL3SYLBVRvmHZ0W/TdauRsHE/wRzbzdpYDXFUzyAaxWuSc5CS
+fqp7sTs71RLpfvHTmou/3jB1kIMLyPIRHBOO2CDK6YCTBPv59bJRdwbxjrKuGrCT
+Jy3839PDDpAgBz6+4M0QoTCrTGIRh/D7wZO+vFLdMGsJz73lM21mwVa6aG/F3um5O
+7iz2OvVxhBh04cc2xsVvd5OAyllODPozaz/d7SP9FGJr8drkit+/86c05bDvj7WZA
+83Ce9OefJLCdXQ71q8lIYPyYIjiG9OXAU+KuDgSn4u0RJQ5niwUyJhNSiZmxckb2
+1XKIJAWkGa9AOAOjzHKPOIrEwc6Xiv/7xuewUY5pyJNe+1aWQindfhyCFz9cLeVX
+LO1TNEb5a1IngT1SmsqyKZU3C8qOOKo0vKAvq3lwKX8jHCDPpPqyn7fPBgB1+SxA
+wSo71sKbAkjK9lHbSoJHmfapOTnoTwUnhSJUXbXVjOtMgigIZbc/oJ8QHpOaPp9x
+yBWLOx/htw04A+bKHk3yAxFMKsAYAfIeSp735lsX2PS7oblZiLKrjr7Xt1qJlwma
+3NUBgcqH9CBRjdjnhWiJldPyZ5iWpIDuJeLc/FGnaogrqKxXn3cs9XbC0h6f46F+
+wauAkOof0lShT2vM/K8q4D05IQWH43t6L5t1xBEn0bJolTNpxE3QavwD5RlSlenf
+fmknZPyyY+PPQo5v3WLs2a9OQIrePFYKbmQFir04yjnuZzWymYFKVehrgXUrX/IB
+2JxrF02gtc2K6xi86BtaRg2E7CLjs7G3cNRoVpp5u5Bp7eNHMRkGnNtm8C0NW72i
+Y1O1C+fIR7W/lzUJ7ZKVSiYavoQgy+IwWiGEnFJQ9GzBIzpTxQ/HzUnQs8+ZEWZM
+y8U0H9Z0bC8QaL1qoCdRSIKW2SkZPb9WNkLmy40ZIZyIgRX9Q/uooLbyObYGpKCS
+ub87in9GgRJp8J7lMHjngf9YefLmliBUZ7HkiPg4y23Xd6099uAlYlSTpnQDJ4Dx
+tU3VGqKA/X2I34ScWqwQwIxCWDz+A8zxQWABntIWEFFK86EGyOJJKI+137gzizuAP
++CQaA103JtCJaQ==
+=JeKt
+-----END PGP MESSAGE-----
+[14.01.22 09:13:36] rocco: can you tell he is who he says he is?
+[14.01.22 09:31:20] elroy: Yes
+[14.01.22 09:32:45] elroy: I see no reason not to trust him yet. Anyway, we just won't make any dangerous moves.
+[14.01.22 09:38:39] rocco: well, he said to listen to you.
+[14.01.22 09:38:54] rocco: sounds like a bouza to me.
+[14.01.22 09:39:28] rocco: I just don't know how he figured it out
+[14.01.22 09:39:51] rocco: and what kind of mole he was able to spin information through the chat room
+[14.01.22 09:49:41] rocco: I don't like that he was able to sdeanon someone, maybe he was hunting for sylver
+[14.01.22 09:50:09] rocco: how much information does he have about everything
+[14.01.22 09:51:16] elroy: He's silent here. In working toad is silent too. In other rockets it's silent too. Whether he possesses it is the question. But whose resume is it?)
+[14.01.22 09:54:41] elroy: He didn't get to Silver, since he answers. One thing I don't understand is why he took all the keys down. Was he careless or something.
+Said he didn't backup.
+[14.01.22 09:55:04] elroy: So his main machine's operation was disrupted. By himself or by someone, that's the question too.
+[14.01.22 09:56:46] rocco: maybe booza formatted his whole machine
+[14.01.22 09:57:04] rocco: afraid his car was tampered with
+[14.01.22 10:01:04] rocco: whose resume is unclear
+[14.01.22 10:01:29] rocco: that guy is really strange, why exactly chat newbies
+[14.01.22 10:06:18] elroy: tell me, were you able to fix OTR in the newbie chat?
+[14.01.22 10:07:21] rocco: I sent demtra there, looking for a solution
+[14.01.22 10:12:55] elroy: There's a WP coming soon, probably next week, and Franz gives out through that chat, of course without otr.
+I'm worried about this point, because I'm not sure about that chat, especially without otr...
+[14.01.22 10:13:13] rocco: now I will find out
+[14.01.22 10:14:04] elroy: If Demetrius doesn't find a solution by the time of giving the WP to newbies, we'll have to extinguish the chat.
+[14.01.22 10:14:34] elroy: And Demetrius slowly remove from the main objects.
+[14.01.22 10:19:06] rocco: Why so?
+[14.01.22 10:19:28] rocco: do you think the drain went through him somehow?
+[14.01.22 10:20:01] rocco: if it does not work, you have to reinstall
+[14.01.22 10:20:11] rocco: only solution
+[14.01.22 10:24:16] elroy: According to my observations he has problems with understanding security. At the same time I do not see the results of the work. Everything somehow drags, then the output is bullshit.
+I don't want you to think like it's about hacking or personal anything...
+It's just that where he is, there's trouble. And he does it, or he doesn't do it, or it happens, or he's reckless... The big picture is this.
+[14.01.22 10:24:35] elroy: You know what he does. His tasks. Is everything all right there?
+[14.01.22 10:24:48] elroy: Someone accidentally turned on the registration on my ppl
+[14.01.22 10:24:55] elroy: Chat is under his control too
+[14.01.22 10:25:14] elroy: Registered yuessr there admin
+[14.01.22 10:25:16] elroy: Was
+[14.01.22 10:25:21] rocco: yes he has a problem
+[14.01.22 10:25:35] rocco: okay, I'll pull it over myself
+[14.01.22 10:25:49] rocco: by jenkins and build machine did he finish?
+[14.01.22 10:26:40] elroy: There's a http to the git, security I didn't look. He hasn't written me anything new. it's been a week. He is tasked with setting up a copy, second server. There is silence on it too.
+[14.01.22 10:27:00] elroy: There is also silence on the farm.
+[14.01.22 10:27:10] elroy: Maybe he's busy with something.
+[14.01.22 10:27:14] elroy: Or he's sick.
+[14.01.22 10:27:19] elroy: Maybe other tasks
+[14.01.22 10:27:51] rocco: Ok bro, I'll make it clear, but for safety I'll take everything, both git and jenkins
+[14.01.22 10:28:06] rocco: what about the farm?
+[14.01.22 10:28:50] rocco: I've been a little busy here, but I'll get to work tomorrow
+[14.01.22 10:29:00] elroy: And the chats. And suspend him slowly from the main accesses. Abruptly do not need. You don't have to fire him either. Let's just move him, see what it boils down to.
+[14.01.22 10:29:16] rocco: I'll have to take it all back again
+[14.01.22 10:29:26] rocco: Yeah, I get it.
+[14.01.22 10:29:34] rocco: let him make punctures
+[14.01.22 10:29:51] elroy: How tough are they?
+[14.01.22 10:33:15] elroy: > and on the farm what?
+There the task was to take a machine, set it up, run a new development script on it. The script there pulls a static file, scans, sends the results to the panel. Nothing complicated, throw it on the machine or in the git, pull from the git, run the script on the machine. Put the AV before that. Demetrius shipped mitzi half a month or a month ago, promised something there to help him... Silence
+[14.01.22 10:33:48] rocco: well that's what used to autotest?
+[14.01.22 10:34:20] elroy: Yes. Only a new script was written, it works differently and is written in Perl. Well, the essence is the same, scanning for av
+[14.01.22 10:35:00] elroy: I've sent them all the instructions, both from the new one and from the one that's now, to understand how it works...
+[14.01.22 10:35:16] rocco: they don't understand shit, maybe
+[14.01.22 10:35:27] rocco: they're not doing anything
+[14.01.22 10:36:13] rocco: send me everything, instructions, inputs, outputs, accesses, in pgp
+[14.01.22 10:36:38] rocco: they don't want to deal
+[14.01.22 10:36:41] rocco: they
+[14.01.22 10:36:44] elroy: Okay, I'll throw it all off. I do not have access. In git need to do a project there. I can do)
+[14.01.22 10:36:47] rocco: demetrus too
+[14.01.22 10:36:58] rocco: how many times did he ask you to do something
+[14.01.22 10:42:16] rocco: don't like that our security is compromised
+[14.01.22 10:42:22] rocco: we lost the booze
+[14.01.22 10:42:42] rocco: A lot of people, but no use, they even made holes
+[18.01.22 10:33:16] elroy: Greetings.
+[18.01.22 10:38:18] rocco: hi
+[18.01.22 10:42:29] elroy: Here?
+[18.01.22 10:42:29] elroy: Communication check
+[18.01.22 10:42:29] elroy: Shall we turn it on?
+[18.01.22 10:42:41] rocco: e2e enabled
+[18.01.22 10:42:53] elroy: It keeps history on the server
+[18.01.22 10:42:59] rocco: yes
+[18.01.22 10:43:01] elroy: This is a bit confusing
+[18.01.22 10:43:03] rocco: encrypted
+[18.01.22 10:43:21] rocco: has to clean via suki
+[18.01.22 10:43:41] elroy: And transmits via ssl encrypted or open? Is the conversation itself encrypted in the browser or on the server?
+[18.01.22 10:44:16] elroy: Ok
+[18.01.22 10:44:31] elroy: ``
+Download: https://qaz.im/load/f8nr9E/aK76Tf
+Delete: https://qaz.im/index.php?a=delete&q=543425130
+```
+[18.01.22 10:44:46] elroy: I'm the one who promised to throw in the scripts for av farm
+[18.01.22 10:44:49] elroy: Old and new
+[18.01.22 10:44:55] elroy: Deploy new)
+[18.01.22 10:44:58] elroy: There are instructions
+[18.01.22 10:45:01] elroy: In general, what is
+[18.01.22 10:45:11] elroy: Give it to mitzi or mb to someone else
+[18.01.22 10:45:24] elroy: You promised to take a look
+[18.01.22 10:46:09] elroy: If something there is not clear, you can ask him all the questions.
+[18.01.22 10:47:05] elroy: There's another problem
+[18.01.22 10:47:12] elroy: Crypts are down
+[18.01.22 10:47:28] elroy: No connection between build-server and Jenkins
+[18.01.22 10:47:43] elroy: Or rather, no, git and build-server
+[18.01.22 10:47:49] elroy: jenkins has a link to build-server
+[18.01.22 10:49:29] rocco: yeah i know, demeter messed up there again
+[18.01.22 10:49:33] rocco: and disappeared somewhere
+[18.01.22 10:50:04] elroy: how does he manage it...
+[18.01.22 10:50:14] elroy: could you correct it?
+[18.01.22 10:50:24] rocco: I'm trying.
+[18.01.22 10:50:28] elroy: manuel is waiting, crypts are standing by, customers are waiting....
+[18.01.22 10:50:30] elroy: ok
+[18.01.22 10:50:36] elroy: I'll let it go.
+[18.01.22 10:54:29] rocco: check now, git see the build machine
+[18.01.22 10:54:30] rocco: ?
+[18.01.22 10:55:08] elroy: moment
+[18.01.22 10:59:34] elroy: Nope, connection refused
+[18.01.22 10:59:55] rocco: ok
+[18.01.22 11:00:06] rocco: where are you checking?
+[18.01.22 11:00:44] elroy: I run the build, I look at the build output log. Basically runs on the build server (agent picks up the task from jenikns)
+[18.01.22 11:03:44] elroy: Is it http or https ?
+[18.01.22 11:24:45] rocco: check it
+[18.01.22 11:24:59] rocco: I've disabled all firewall on the build machine
+[18.01.22 11:25:03] elroy: checking
+[18.01.22 11:26:20] elroy: no agent from bildserver
+[18.01.22 11:26:28] rocco: yeah sec
+[18.01.22 11:27:13] rocco: run
+[18.01.22 11:27:24] elroy: already
+[18.01.22 11:27:31] elroy: agent came
+[18.01.22 11:27:52] elroy: same error
+[18.01.22 11:28:09] rocco: so now
+[18.01.22 11:28:16] rocco: where the fuck he messed up
+[18.01.22 11:28:31] elroy: ip didn't change?
+[18.01.22 11:28:40] elroy: hostname check is not done anywhere?
+[18.01.22 11:28:57] rocco: I told him to close git, procla access
+[18.01.22 11:29:06] elroy: I made an entry in the hosts there, to change ip quickly...
+[18.01.22 11:29:15] rocco: git only on the build machine to access
+[18.01.22 11:30:04] elroy: Check semes on the buildserver... Maybe you'll see something. From tor-domain git answers.
+[18.01.22 11:30:14] elroy: *am
+[18.01.22 11:31:10] rocco: why the fuck from tor domain
+[18.01.22 11:31:22] elroy: coders use tor domain
+[18.01.22 11:31:43] elroy: And without tor domain - the buildserver
+[18.01.22 11:31:59] rocco: no git and jenkins build machine have to work by ip
+[18.01.22 11:32:20] elroy: yes, but there is no way by ip...
+[18.01.22 11:32:41] rocco: let me find the settings
+[18.01.22 11:32:50] elroy: did you change http to https?
+[18.01.22 11:34:32] rocco: git now via https
+[18.01.22 11:34:56] elroy: Okay. Then we should fix all the profiles in Jenk to https.
+[18.01.22 11:35:05] elroy: Let me check one with https
+[18.01.22 11:35:14] rocco: wait
+[18.01.22 11:35:27] rocco: ``
+https://195.123.228.6
+```
+[18.01.22 11:35:32] rocco: this one
+[18.01.22 11:36:37] elroy: Look in hosts on build-server, is this ip registered there?
+[18.01.22 11:37:55] rocco: yes
+[18.01.22 11:39:55] elroy: Looks like https works
+[18.01.22 11:40:47] elroy: I change all profiles to https then. Close unnecessary then)
+[18.01.22 11:41:05] rocco: all closed yes
+[18.01.22 11:41:17] elroy: Perfect.
+[18.01.22 11:41:17] rocco: only the build machine is open
+[18.01.22 11:41:34] elroy: And on the build server, what about outgoing?
+[18.01.22 11:42:52] rocco: I'll do it myself
+[18.01.22 11:43:01] rocco: reset firewall there
+[18.01.22 11:43:09] elroy: Okay
+[18.01.22 11:44:03] elroy: One more small request
+[18.01.22 11:44:45] elroy: Maybe you should make the same entry in the hosts on the Jenkins itself? There's always red git, scares coders)
+[18.01.22 11:44:52] elroy: But then allow access...
+[18.01.22 11:44:58] elroy: I don't even know the best way
+[18.01.22 11:49:39] elroy: Don't worry, it's even better, because Jenkins git can't see it, only build-servers can)
+[18.01.22 13:19:02] elroy: Are you setting something up? There's an agent gone.
+[18.01.22 13:19:19] rocco: yeah sec
+[18.01.22 13:19:28] rocco: firewall blocked again
+[19.01.22 14:15:48] elroy: hello
+[19.01.22 14:16:01] rocco: Hi
+[19.01.22 14:17:21] elroy: Listen. Here's a thought. Nobody stole our jaber's house keys from us? It can't be alternating between us and him?
+[19.01.22 14:17:42] rocco: From the main toad?
+[19.01.22 14:17:47] elroy: Yeah.
+[19.01.22 14:18:18] rocco: look, it's the defa, i dunno, back in the day there was a suspicion that the nifa leaked from there
+[19.01.22 14:18:25] rocco: info
+[19.01.22 14:18:40] rocco: that's why they went to the rocket from there
+[19.01.22 14:18:53] elroy: I see
+[19.01.22 14:19:21] rocco: Something more protective has to be invented
+[19.01.22 14:19:46] elroy: Two coders came out to check our tox
+[19.01.22 14:19:54] elroy: There will be something based on it later
+[19.01.22 14:21:03] elroy: As I see it, if tox works, it can be used as a transport if we can build it (not yet, which is unfortunate), just add encryption on top of it
+[19.01.22 14:34:04] elroy: Tell me, does demetrius know where the firewall on the git is set up?
+[19.01.22 14:34:12] elroy: We gotta skip the second server
+[19.01.22 15:19:55] rocco: I keyed the git
+[19.01.22 15:20:04] rocco: Tell me the ip of the new one, I'll add it
+[19.01.22 15:29:25] elroy: -----BEGIN PGP MESSAGE-----
+
+hQIMA+geBzK0wioaARAAtAHvg8ppxvMLoCHp5r+HKXHujZ7m5SM6FbEq2ZcspDpk
+HfQOIaqehwbieS7+JJblJfnLFA4v5ih5kI2vCS8HN4gZBLRRaztIl23U3f2J763VY
+9HGZSHpT8XXrF3ivd9jQTKNR70bASSKVmfIzOhX/+7EMYjOGf6Y5jdXu/02QkcAd
+8T1t6TZ4Ez82bftJ4DnBoyrnHB4XK2Dm1qyNp7pFpPKxxySWLXx1dnVOeI+3nVc+
+ZiGbqkbk8cEvH2eylAH+UreETKVsZ+mvAEzrJ8hpFpyCHOiUwzS9NTmvV7g4jQ5u
+dwiFTqpP10NETZFvWsceiGJGDmrD+nJwTSyu8kEmnd53URHRBOQiQNK3TzzakKXkx
+rYAtS45filZgObaeDXd5HRJGA9FWAj/4jGDTM7EZb3kNiI2NsIRG9+IpxAL8NUUf
+eLKSSnLwbcbj20xYfhnDaNdmyFB00p6LURkEIbY9lX2ALPKr0RVWgfC27pMLliYk
+QslLbbItRbGBkDk79VFzdeotQFzu8+6O05PvWYX3edVc2A38FPS19jsfvU1MHqhpXH
+gvM2vrn5Dp8eF2VdmyuMqwhLLymZHFKmiQRjwqs9+Z9J0Q6Kjg6wEn+CkIyufLoS
+AFeJFIl6HAY+GGBAsvnWEv8cLR1A+/KdyeC3NLrHfYtNA8ux5A7kNSbrF4UvA7HS
+6QF2pX2kzzoFdu1zKjjeYrT2r3QZsEG3jwfW4kcFk6CIO/EJ1tKMi4JoeFa8iZP8
+zHK79bhnn0rgjQERXywAeKeObUTu6NIBDkYv3FL5y2szhJqEoJIXDybM0i6m+icW
+ojaTDB/WLR8FXXKS+ekQk2BR9IoqE0PTDWNBFWEPPWch3VqKsEye5jVKYT2gPIp
+J9aZcFSrqNrszgw1P2Y2Y2jKptw1omoRUzpwXPYiAVhI/0+xNmFH+SPFHQFF4IUr
+bGPNMIwLNEqKN47YvbA19ND1MuOGmFT7Eoc0SpdgXKYzRM4aKAubJoFNyQFapZ62
+YPCq/hziyj1aVRhtK2HpyLLA6slLg/5yZrqQGBIKebvru6+4ygRB/l7+8RNFPy3E
+VhLuQfYcoAnXlACkYTYgmzV6dUGw1p1WbkLQv7DMsc9XXAMad1YLdI8tOdGZe6d3
+5gqyOjR7SJr1RNof0MvoOf+uQhNvlK3nz/4q7GLsSKxa/8TLNlqYp0Lzdk6LMHL
+l019Q3DuxUAjPiqS5G0hjgDUHi0L/VlV68KQWczm180KrbdDr+u6gEr5imNYqmUU
+IikAq3E/ndPrb1770E8pKpK7RK6mnj1kGvwTHbX8am8bQG24ATJSPrCN2AAl74ue
+44pjwSBQKsIioHSUY7Jnz+bMl/7M/Q6wYNffUly9vzREkFc0Az/DN1pubK+ZMLvx
+wqGV6dUBPgWwwu41hEBaW74PTjDoYm6T+bm807siaMDpoTeEgCE7Y1EyGkZfrzO7X
+9W0Sv1DPSIZ2oo43OiC5CGQr15AKwXPacdscC6Tg4h+WzWIGXmtggM4FiJnwoOL
+6QyWV5g0wTelPhIwDuR6CeFoUzpBl+c8OmIc2SzvLahkkg==
+=nG12
+-----END PGP MESSAGE-----
+[19.01.22 15:31:06] rocco: demeter will open now
+[19.01.22 15:31:32] elroy: ok
+[19.01.22 15:32:32] elroy: can you tell me what about bill servers?
+[19.01.22 15:32:58] elroy: Can't miss? There's the first build-server these days I think.
+[19.01.22 15:33:45] rocco: throw it to adam
+[19.01.22 15:33:49] rocco: now
+[24.01.22 10:39:42] elroy: hello
+[24.01.22 10:40:17] elroy: make me a chat account to asynths, throw me access to GPG
+[24.01.22 10:56:28] rocco: Hi
+[24.01.22 10:56:30] rocco: -----BEGIN PGP MESSAGE-----
+
+hQIMA4Cy1X1oPYUOAQ/+Lt3nInIIBQth/TEiuKADHhrWzKhZRbEbtp1a8G2lDjxX
+gg37aZdTBZjTs+1Vxw2Qn04c5fgE4rc7NGMK8eiZKr4XvMTeyl6CCPB01Xp+jfNF
+yLiD5g2yw0F7u46R35tGX2U97A2DrPqJIZk08V4hX1Cghw768vFfNwQUlbFclqZi
+pzZpDYL9fmA5UlT73tQrep7ekczApZHV+15W/BDKU59F2lyZBlq/SgATLEfyVT1o
+lXSnnvPC0ytb8nLF/c3m+zsrjEaN/TswnDyEgQ1mtTnsdUR7h0cCVh1Lr6cHfJsm
+X4K7JzOptpym3LCIjyMcwPlz8IqVLrBXM7pfLZoSknwS626FwBmxl/2ZQ6EJrASo
+la5Dvpl4djJ5MH8ZZx0popr79/fC0FqfsFzrwoWeW4A87ecq8xncg6jL6nnn8hHw
+wPo1iG/jgCQ5lmloCWLbBYL8Yq8P1dje3LP3PFdrwIV7AUXtD4xL0dSZ7xhxvmxo
+Pg5zbrI6qP80UEL4601D8tjYjI4fsq/nNMtUiKQ5ce8KiktuxKckt5kSt2ws+NWN
+SvpAznZEZV1OOTBDOWMg6Ryb38+HsrdgU4HFBrIaslc6h/43/4cQUEvoY9XXG8em
+Hd4c60xes1YEHvFvMnG89M98YhsuPSWHmywiF7Cw/VVyh+dMGAI0iQV7XudqINjS
+VgGbHZhdh2/J7vWHL3bTif7/fSp5hkYGgoXT950+C565rSsByl5pYTTnPHaEDemR
+jG9SogCpSUvWXHfzhT9nH6VyeARufgf9FMtMsOSGgy1/FfzHrqRE
+=05Mi
+-----END PGP MESSAGE-----
+[24.01.22 11:01:11] elroy: PGP address, please send it to me.
+[24.01.22 11:46:11] elroy: Bro, I need address, send address to pgp
+[24.01.22 12:03:15] rocco: sec
+[24.01.22 12:03:43] rocco: -----BEGIN PGP MESSAGE-----
+
+hQIMA4Cy1X1oPYUOAQ/+I1uel4NhHT6XYM3B2pb4c3ViqwcLzGSUO78fD5Xryy+y
+KUQUrYFqbBmQSedqAUvpFc1LYjarX4zpufJtxtzkt6FQgLyPN0JgofFDl5E5uEFb
+SejeLlSjKEFhvdeYu5TX3YKOEjsqDkL89jq2I++kv0Kc4Z8Gv+1vhKVk8rNDt2nL
+exm/42AQR4HdQuOYdnyMUJvFlDcz9n7kuW9NYRD54/L5ETZ+LEt8HJw6dyCAKYCX
+UdIppdTRR6GBhzn/62mkMNrwWKbLZ8FEfpko0OOfugKxVfy7SWCFYApJHNrSsHdf
+pKZ7UGCdXnDyqx71BrmIwUrLW12cPqHaZ5wK/KUO/EMNRg1f66E5/eus5duQi0+b
+WiSDWM9fqPMeVxI4cm+xNhkSw6hzNghZMW9c2RJfy0Z1Q6lxOlQmoQjooF+hlWA
+Cz5EIqd34KPVwi473lR4SxBwrlRZbsCbsCZKTTZnSYWhEkvkyNizfUkoJzN84xGa4V
+d2+UMAEp5+j6hgS/drHYP6n6v7CSrFIb31sH1XxuRurXU6TOFG9d1RP4S/WhQX/7
+AhP4uPYdIquq2/4jViUl7E94KlFVR3CdyAZAMFKf3/jYCfQR/Z4Q3SxgKcKkoQu2
+0laH83zzzLE8+bKqvtU2PBqYR5ULl3KZ/uYqfAjjIuuhz0HhJaDXU3yzjGHA/mnS
+eQHhsdQhqmQU0oVmLcbdgB+zGkvEe3KWa3TWmCzNdSSJv1UlhBXUqH340NMI9J7U
+RW1K7Z9Uh1IIwF8YHhJsxIf3fR5P9qMIhgVuh5P1bAhiM+/zJlbjCfvlmx+1s9/O
+gC0AJpBM7re55XXJj3eyfClVY7RPJ6pT6Uk=
+=wZif
+-----END PGP MESSAGE-----
+[24.01.22 12:05:53] elroy: Thanks, I'm looking
+[24.01.22 12:06:26] elroy: Tell me, how do new admins get recruited? Is there a training course or straight into battle to sensitive data?
+[24.01.22 12:07:18] rocco: well, we give them a test.
+[24.01.22 12:07:57] elroy: And then a person immediately works with all the infrastructure entrusted to him, or there is an elimination process?
+[24.01.22 12:08:27] elroy: Just taking into account our specifics, recruit admins from the street - it's suicide))
+[24.01.22 12:09:52] rocco: exactly where do they get them dunno, I know that right from HH, sent a resume
+[24.01.22 12:10:30] rocco: sometimes through friends
+[24.01.22 12:10:41] rocco: like demetrus gator pulled
+[24.01.22 12:10:56] rocco: sometimes from forums
+[24.01.22 12:11:10] rocco: it is better to ask Ford
+[24.01.22 12:11:16] rocco: well, yeah
+[24.01.22 12:11:39] rocco: so we take from the street
+[24.01.22 12:12:34] elroy: Look, for example, coders of C++ and others are taken to the school, they drop them out. For example, one coder left after working for a few months for ethical reasons. Not everyone is admitted to all the projects at once, either...
+[24.01.22 12:13:30] elroy: Of the coders in the school, only a couple got into work here as normal guys.
+[24.01.22 12:13:36] elroy: The rest are waiting...
+[24.01.22 12:13:41] elroy: Until they mature
+[24.01.22 12:13:49] elroy: What about the admins?
+[24.01.22 12:16:23] rocco: Well, they do not get access to everything at once
+[24.01.22 12:19:39] rocco: I do not know, I would not take admins at all, they are enough, and if you need new ones, you have to think, they do not know everything immediately, while one the second the third perform
+[24.01.22 12:24:36] elroy: It is necessary to think in advance... In case you have any thoughts, share them. And I'm not sure that you have enough staff, you need more, I think.
+[24.01.22 12:26:59] rocco: maybe.
+[24.01.22 12:27:17] rocco: I will think about it.
+[24.01.22 12:40:26] elroy: Tell me.
+[24.01.22 12:41:00] elroy: do we have somewhere sticking something both in the world and in tor, with the same ssl ?
+[24.01.22 12:41:24] elroy: To both white net and tor?
+[24.01.22 12:41:41] rocco: it must not
+[24.01.22 17:55:46] elroy: Tell me.
+[24.01.22 17:56:18] elroy: They can't access the server in that chat room, they say Silver bought it... Any information?
+[24.01.22 18:07:19] rocco: which osinto?
+[24.01.22 18:07:28] rocco: he didn't buy it
+[24.01.22 18:07:39] rocco: it was transferred there twice
+[24.01.22 18:07:55] rocco: the last time Gator raised it
+[24.01.22 18:07:59] rocco: new
+[24.01.22 18:09:04] rocco: do you think somebody stole the sylver?
+[24.01.22 18:09:13] elroy: No
+[24.01.22 18:09:34] elroy: There's a bigdata guys lost access to the server
+[24.01.22 18:09:46] elroy: I'll send you the ip, tell me if it is ours or not, is it accessible or not
+[24.01.22 18:12:12] elroy: -----BEGIN PGP MESSAGE-----
+
+hQIMA+geBzK0wioaAQ//WuVkl4M5CNeyo1KheLgD0vYhRqNMW4+25Gxr3ro5Juh+
+Zgl1DGZ0VfOxvoQj9C+2X7FtJX/Y8sE8XoJbH9ssGzF2iItZOnrXTwvFpKQvVoE
+fGwbFHyH4VyVlxQiXFXmDJbGWoHc7DGfdfKWatn+n2Uq/egAc7IgRdS1meQWECVE
+FHHIKwA/LcCRwh9vEvh0ADtO7TZiSxi2/wkV9A/uQ/OZGFH9gkLLuRnq5/WkfpLw
+qIr5WCNFdClhUev0+KZcuJbRHAPfKjPkB3T6jnfJ8jNRz5nFfbb66XpV6Ql3o+Q
+/XFUSZ9oMtvx+pDM2eF0gzdmLgkTSahNdxG7cgwH1zxDd4apXATwQtueFAvSj1Bz
+x2dISvvk0E6I2l9o/9jmBH7KcBpKQ1qqxZlwpgwHNRCv8vdSSmwLnyGWTc8igktf
+dxTNB0i/t5L544CmBMN7hV+CmtaMi/QQSjmRMC1w6xJRowyqEOkbqRMfTyDQL+fd
+2TaICuWZbqXg5+TqfSdnArAr02JRbw0LRpxdrOlmix4MMyW6nk/TS17x42zf8PYRo
+XsWjcuv/6qC2N5sGrfjIo5+lJqzV8IBlvm0GvpQLcQ2UZCdeA1Z8TeGeqCkqZpBO
+etnD0KQAPTKKeWK72kZn1TdMrGkGqsJWGXvFsf17Euw1A2cVwHXpMpisof4OSpqDS
+6QHzwy9x79UnDqGkehmb9AgqWw9FW59bgE5jM/j/67PFsagfd42ljTZXLMPrUsXv
+mG0aSYm/KiAXGllbjRjsb1XHPYCIad0elB7sBXmKrt7LVHRaIMRz269u+WF9OMBq
+drKAS9PrsmGQPXL78JIuIzFk4wnL6VmisnDM6pzJKr56h2uRW7J6RPiUAOdPoGP1
+nS+ZMdQ8Yqlgb6YOhZGPY8QeSy31b7wNDRqODJZ/oK+RMSPb7r5uxRzG4xXFIbOl
+fndUpVfxex6M+6E96MkQh8s5Y1cDIipVFCpj5X4amNW/k3P3cKnjPJw7fxnKpNmN
+JhR90bdIGfvzjdnk1jjy3NaDcNPj13U8LBD+NC8xu74bQsU3KbCE5/7tzGGy0GWW
+h46EI2j3tZx4yQ8VCArhBT4eSo10eXD87BqMb1eoWar3STqcVeJ3GvPOH0zuKE0I
+0SJzTWjIGmN4rYsZ5hrxNigEMx1xqrG6WqkGwau0VICVmlVLCIdGQ2/n5QqqqcLR
+3GhNJC5RXT7C5vbO1TsdrgZFlq05nhABKIr0aU0DLwwh8S5TyR/a+u/YVTtoakuR
+y3fZ/1WfzSsXrnMnFzJgvTT1oqTZp0pZO0DB0dr1yfEtmDp6C7QCEQPaUbTd86dt
+VLLuHHHx2Wac1h4TXJuTa5KzQ2Uj/BWWBTk6Bby76m09RkU/kVGbMlC2R4eQX5wt8
+8e8yaWXEOvRA/ssnT8MneLH3ORbfueI613z0Lrz3i+7JPPfis5A23XJCrlik0Cf2
+YG0nsPAF2mjSfG7sZSR9YvQcXGWPPqhDPFMWq4P/U2R5XB1IIkiu+RNuqVWt3e
+mRBdAbG/5Y9gKHItCUYIQwRBRVbiPnLy7cvynjDbMJM+jro=
+=a7BP
+-----END PGP MESSAGE-----
+[24.01.22 18:12:39] elroy: Sorry for the inconvenience with pgp, but caution is important here. Something around here is not calm.
+[24.01.22 18:12:53] rocco: all right.
+[24.01.22 18:13:24] elroy: Actually, the question is, do we have access to it?
+[24.01.22 18:13:33] elroy: The guys there have blocked their firewall...
+[24.01.22 18:13:42] rocco: not mine
+[24.01.22 18:15:38] elroy: sorry
+[24.01.22 18:16:01] rocco: try admins
+[24.01.22 18:16:11] rocco: maybe ruben benny
+[24.01.22 18:16:30] elroy: Guys said Silver bought it
+[24.01.22 18:16:45] rocco: i don't think silver himself would
+[24.01.22 18:16:46] elroy: Only he probably still has access
+[24.01.22 18:16:59] rocco: Most likely someone bought it for him
+[24.01.22 18:19:38] elroy: Is Rubin in that chat too Rubin?
+[24.01.22 18:20:04] elroy: ruben and rubin
+[24.01.22 18:20:09] elroy: they are similar))
+[24.01.22 18:22:57] rocco: Nope.
+[24.01.22 18:23:05] rocco: they are different
+[25.01.22 14:21:10] rocco: bro hello, zeus ask do we have any .net experts?
+[25.01.22 14:51:04] elroy: hello. I'll ask
+[26.01.22 12:24:27] elroy: Hello.
+[26.01.22 12:33:27] rocco: Hi.
+[26.01.22 12:39:24] elroy: Please add me to group vpnbridge in this chat
+[26.01.22 12:46:04] rocco: +
+[26.01.22 12:48:56] elroy: Say, do we have redmine deployed?
+[26.01.22 12:49:09] elroy: Or did Silver deploy it somewhere?
+[26.01.22 12:49:12] rocco: yes
+[26.01.22 12:49:20] rocco: ask ruben
+[26.01.22 12:49:27] elroy: okay.
+[27.01.22 08:54:16] elroy: greetings
+[27.01.22 08:54:47] rocco: Hi.
+[27.01.22 08:55:01] elroy: Remember I was looking for Silver's server?
+[27.01.22 08:55:22] rocco: Yeah.
+[27.01.22 08:57:04] elroy: We need to sum it up. Do we have this server or is it definitely nowhere to be found and none of our people have purchased it.
+Need to make a recount of all servers, which have dsotup through the panel from the management, go in and make sure that the interface is not this ip, to exclude the option that just did not notice ...
+[27.01.22 08:57:14] elroy: It is necessary to make such a check
+[27.01.22 08:57:28] elroy: We need to confirm that we definitely do not have a server.
+[27.01.22 08:57:35] elroy: Please find this server
+[27.01.22 08:57:51] elroy: If not, we have lost a very serious and large project.
+[27.01.22 08:58:29] rocco: remind me again what server
+[27.01.22 08:58:51] rocco: maybe ask him through tox
+[27.01.22 08:59:02] rocco: when he contacts you
+[27.01.22 08:59:23] elroy: I guess he won't get in touch...
+[27.01.22 08:59:32] elroy: I.e. to freeze the project and wait.
+[27.01.22 08:59:39] elroy: Server still gotta pay for it.
+[27.01.22 08:59:43] elroy: We just lose it then
+[27.01.22 08:59:46] rocco: Remind me again about the server
+[27.01.22 08:59:49] elroy: With the development team
+[27.01.22 08:59:54] elroy: Just a minute.
+[27.01.22 09:00:36] elroy: 199.127.61.103
+[27.01.22 09:01:47] elroy: ruben and rubin are the same person, by the way. I asked before, you said no.
+[27.01.22 09:02:29] elroy: From him info
+```
+I looked it up on whois -- it's ReliableSite.Net.
+email support@reliablesite.net
+```
+If it tells us anything
+[28.01.22 08:00:03] elroy: Hello
+[28.01.22 08:00:20] rocco: Hi.
+[28.01.22 08:00:34] elroy: Tell me, what about the server, managed to find? Or do you know for sure that it does not exist?
+[28.01.22 08:00:46] rocco: I searched, did not find it there
+[28.01.22 08:01:21] rocco: maybe sylver made it himself
+[28.01.22 11:47:13] elroy: Tell me, who makes gaskets for a trike?
+[28.01.22 11:47:43] rocco: adam
+[28.01.22 11:48:07] elroy: thanks.
+[01.02.22 09:34:33] elroy: Greetings.
+[01.02.22 09:34:51] rocco: Hi.
+[01.02.22 09:35:26] elroy: Gator went on vacation, do you know for how long?
+[01.02.22 09:36:24] rocco: so 2 weeks
+[01.02.22 09:37:00] rocco: is there something about him?
+[01.02.22 09:37:25] elroy: Project vpnbridge, vpnbridge group here.
+[01.02.22 09:37:45] rocco: there's like a ruben
+[01.02.22 09:38:25] elroy: I've been waiting for a month for coders. I reminded Gator, he said "yes, ok, we'll do it" and left after a couple of days... He would've been assigned to this task by Silver a long time ago.
+[01.02.22 09:39:29] elroy: Let's do this. If everyone's really busy, find a way to at least allocate a server, let them set it up themselves then.
+[01.02.22 09:40:33] rocco: what server? OS resources
+[01.02.22 09:41:00] rocco: yeah, they're not busy
+[01.02.22 09:41:10] rocco: give demetrus or beny
+[01.02.22 09:41:37] rocco: I'll post it in the group, someone will write it back
+[01.02.22 09:41:39] elroy: add demetrius to vpnbridge group
+[04.02.22 08:40:37] rocco: Bro hello
+[04.02.22 08:40:53] rocco: we have like 1 jenkins and 2 build machines now?
+[04.02.22 08:41:24] elroy: Hi. That's right.
+[04.02.22 08:41:29] rocco: yeah, don't turn it on.
+[04.02.22 08:41:35] rocco: e2e is on
+[04.02.22 08:41:48] elroy: It works!)
+[04.02.22 08:41:57] rocco: you decided to distribute by 2? and how?
+[04.02.22 08:42:34] elroy: Fault tolerance has increased. Everything builds quickly. Everything is fine. But the dincheck scan is a problem, it's unbelievable.
+[04.02.22 08:42:48] rocco: ok
+[04.02.22 08:42:56] rocco: what about the autotest script?
+[04.02.22 08:43:03] rocco: any progress?
+[04.02.22 08:44:18] elroy: Last time the demeter wrote that they ran a test, i.e. were able to repeat that there coder tested. That's good. Next had to add a machine to scan the real file (from the panel gave one and the same at the same address). At this stalled.
+[04.02.22 08:44:56] rocco: got it, okay, I'll check with him today.
+[09.02.22 14:51:26] elroy: Greetings.
+[09.02.22 14:58:48] rocco: Hi.
+[09.02.22 15:09:20] elroy: I need information as now for the pads BC, on the first pad, is defined and forwarded ip ?
+[09.02.22 15:09:49] elroy: I mean external ip of logger/bot
+[09.02.22 15:21:34] rocco: via header
+[09.02.22 15:22:03] rocco: ``
+proxy_set_header realip $remote_addr;
+```
+[09.02.22 15:22:23] rocco: realip admin receives
+[09.02.22 15:23:19] elroy: Can you send me scripts and instructions how to do all this?
+[09.02.22 15:24:36] rocco: there is a scheme so the end gasket - between the gasket - the server admin
+[09.02.22 15:24:54] rocco: everything is transferred via jinx
+[09.02.22 15:25:27] rocco: ``
+server {
+listen 80;
+access_log /dev/null;
+error_log /dev/null;
+client_max_body_size 32M;
+location / {
+     
+     
+proxy_pass https://195.123.233.35;
+proxy_next_upstream error timeout invalid_header http_500 http_502 http_503 http_504;
+proxy_redirect off;
+proxy_buffering off;
+proxy_pass_request_headers on;
+proxy_pass_header Date;
+proxy_set_header Host $http_host;
+     proxy_set_header X-Real-IP $remote_addr;
+     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+     proxy_set_header realip $remote_addr;
+     proxy_set_header via $host;
+chunked_transfer_encoding off;
+}
+}
+server {
+listen 443;
+access_log /dev/null;
+error_log /dev/null;
+include /etc/nginx/ssl.conf;
+ssl on;
+client_max_body_size 32M;
+location / {
+
+
+proxy_pass https://195.123.233.35;
+proxy_next_upstream error timeout invalid_header http_500 http_502 http_503 http_504;
+proxy_redirect off;
+proxy_buffering off;
+proxy_pass_request_headers on;
+proxy_pass_header Date;
+proxy_set_header Host $http_host;
+     proxy_set_header X-Real-IP $remote_addr;
+     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+     proxy_set_header realip $remote_addr;
+     proxy_set_header via $host;
+chunked_transfer_encoding off;
+
+
+
+}
+}
+
+```
+[09.02.22 15:25:50] rocco: this is the config of the newjinks end proxy
+[09.02.22 15:27:25] rocco: the proxy config is like that, only proxy_pass https://127.0.0.1:1233, it proxies into torus to onion server address
+[09.02.22 15:28:06] rocco: everything is done through the ensemble script
+[10.02.22 14:54:20] rocco: Bro hello
+[10.02.22 14:54:33] elroy: hello
+[10.02.22 14:54:35] rocco: I'm about to get 20 routers
+[10.02.22 14:54:53] rocco: I'll give it to you.
+[10.02.22 14:55:06] rocco: it's for Prokla-routers
+[10.02.22 14:55:14] elroy: got it
+[10.02.22 14:55:23] rocco: waiting for now
+[10.02.22 15:24:04] rocco: ready
+[10.02.22 15:24:05] rocco: https://privnote.com/T1qWlvNl#W2BmdkPHq
+[10.02.22 15:26:11] rocco: ``
+ ready
+https://privnote.com/T1qWlvNl#W2BmdkPHq
+
+```
+[10.02.22 15:26:29] elroy: ok
+[10.02.22 15:27:04] rocco: port 443, this is https://ip without 443
+[11.02.22 15:37:36] rocco: hello
+[11.02.22 15:37:47] rocco: what about procmox?
+[11.02.22 15:37:57] rocco: with detection
+[11.02.22 15:38:37] rocco: ``
+ Crypto on virtualbox or vmvar, everything works, on proxmox it doesn't.
+```
+[11.02.22 15:50:48] elroy: Crypto uses protection from sandboxes
+[11.02.22 15:50:54] elroy: ``
+There's some feature it has, it doesn't show the processor name on the system and client software doesn't have the right to execute the rdtscp instruction.
+We have cryptos honed to protect against such environments.
+Run it in a virtualbox or vmvar, everything is open there, and cryptos will work there.
+Gator somehow solved this problem, he changed something in the settings vm, and it starts to show the real name of the CPU, it appears access to the instruction rdtscp
+```
+[11.02.22 16:02:00] rocco: there's something in the bios of the machine itself to enable or disable
+[11.02.22 16:06:15] elroy: I asked Gator what he did, the answer was "firm secret"
+So I do not know, do not know)
+[11.02.22 16:12:43] rocco: they say they did
+[11.02.22 16:16:19] elroy: I'll tell colin
+[02/18/222 08:31:50] elroy: Greetings.
+[02/18/222 08:37:52] rocco: Hi.
+[18.02.22 08:39:28] elroy: Have you tried using cloudflare services for pads?
+[18.02.22 08:40:54] rocco: Nope.
+[18.02.22 08:41:09] elroy: I should try it
+[18.02.22 08:42:41] rocco: is it a cloud hoster? like amazon google azure?
+[18.02.22 08:43:42] elroy: it's like a reverse proxy
+[18.02.22 08:43:58] elroy: They provide a service to protect the site from a ddos
+[18.02.22 08:44:12] elroy: Hiding VPS behind their servers
+[18.02.22 08:44:29] elroy: Never seen before?)
+[18.02.22 08:45:02] rocco: Nope, but I heard about them
+[18.02.22 08:45:02] elroy: ``
+Cloudflare, Inc. is an American web infrastructure and website security company that provides content delivery network and DDoS mitigation services. Its services occur between a website's visitor and the Cloudflare customer's hosting provider, acting as a reverse proxy for websites. Its headquarters are in San Francisco.
+```
+[18.02.22 08:45:16] elroy: I should try it
+[18.02.22 08:45:18] elroy: Explore
+[18.02.22 08:48:08] rocco: ok, I will
+[18.02.22 08:48:25] rocco: no ip?
+[18.02.22 08:48:38] elroy: in routers?
+[18.02.22 08:48:49] elroy: there's a dharka forming in uk
+[18.02.22 08:49:10] rocco: hole
+[18.02.22 08:49:41] elroy: In bk the filter is used by ip, this ip is not reported by the bot, and the procracker looks ip. So, if ip is not checked, you get a hole, requests can come from anywhere...
+[18.02.22 08:49:53] elroy: It turns out to make an improvement in proctacle
+[18.02.22 08:50:12] elroy: But coders won't do it until a month later
+[18.02.22 08:50:47] rocco: Okay, I'll look into the service

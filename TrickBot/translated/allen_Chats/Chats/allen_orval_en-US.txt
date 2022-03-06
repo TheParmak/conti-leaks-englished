@@ -1,0 +1,524 @@
+[24.08.21 11:53:40] orval: hi
+[24.08.21 11:53:52] orval: hi
+[24.08.21 11:54:29] allen: what orval?
+[24.08.21 11:54:58] orval: 123
+[24.08.21 11:55:01] orval: can't see
+[24.08.21 11:55:28] allen: I don't see it, do it again.
+[24.08.21 11:55:33] orval: hi
+[24.08.21 11:55:48] allen: Hi.
+[24.08.21 11:56:45] orval: a new crypt task has arrived, I need to check a series of crypts for fuzzy hash ssdeep
+[24.08.21 11:57:07] orval: here are instructions
+[24.08.21 11:57:16] orval: ``Official site
+https://ssdeep-project.github.io/ssdeep/index.html
+
+Link to download the archive with the binary
+https://github.com/ssdeep-project/ssdeep/releases/download/release-2.14.1/ssdeep-2.14.1-win32-binary.zip
+
+1. Unpack the archive
+2. Build n (10) crypts with the same assembly
+3. Put them all into one folder (samples)
+4. Generate file with crypts' signatures:
+ssdeep\ssdeep.exe -b ssdeep\samples\* > ssdeep\signatures.txt
+
+5. Compare each signature with each crypt:
+ssdeep\ssdeep.exe -m ssdeep\signatures.txt -b -a -s ssdeep\samples\*
+[24.08.21 11:58:14] orval: download ssdeep tool, crypt the same load 10 times and compare hash matches
+[24.08.21 11:58:46] orval: and try to get a minimum match
+[08/24/1921 11:58:59] allen: Okay. Not now. In about 20 minutes.
+[24.08.21 11:59:24] orval: ok, it's no rush
+[24.08.21 12:01:02] orval: according to my feeling the coincidence can be reduced by shoving the following dereq:
+unsigned int __declspec(allocate(".text")) array1[] = {...}
+[24.08.21 12:01:18] orval: but that's if there's a problem
+[31.08.21 08:44:04] orval: hi
+[31.08.21 08:44:16] orval: any luck with ssdeep hashes?
+[31.08.21 08:45:41] allen: Hi. Haven't done it yet - I have another task. For some reason crypter gives wrong DLL function address. I'm figuring it out.
+[31.08.21 09:11:07] orval: got it
+[01.09.21 10:49:57] orval: hi
+[01.09.21 10:50:12] allen: hi
+[01.09.21 10:50:34] orval: change your BK profile
+[01.09.21 10:50:46] orval: ``// Example of func
+__declspec(dllexport) int __stdcall func(HWND hWnd, HINSTANCE hInst, LPWSTR lpszCmdLine, int nCmdShow)
+{
+    // callback pseudocode
+    return payload->func(hWnd, hInst, (LPWSTR)_STR("func"), nCmdShow);
+}
+[01.09.21 10:50:52] orval: the callback passes the function name as it is called in the crypt export table.
+i.e. when renaming, a new name is passed
+[01.09.21 10:51:14] allen: to documentation?
+[01.09.21 10:51:50] orval: into code
+[01.09.21 10:52:07] allen: I don't have it ready yet
+[01.09.21 10:53:22] orval: okay
+[01.09.21 10:53:32] orval: when you do this change
+[01.09.21 10:53:41] allen: ok
+[02.09.21 14:49:55] orval: hi
+[10.09.21 16:05:01] orval: hi
+[10.09.21 16:05:28] allen: Hi.
+[10.09.21 16:06:46] orval: in profile dll_shellcode_64_crypter3 in DllMain what are you returning?
+[10.09.21 16:07:08] allen: True
+[10.09.21 16:07:18] orval: always?
+[10.09.21 16:07:25] allen: Yes.
+[10.09.21 16:15:12] orval: generic exe->dll is not running
+[10.09.21 16:17:20] allen: I asked Elroy to make a logged version. He kept silent for some reason...
+[10.09.21 16:17:41] orval: you already knew the problem?
+[10.09.21 16:18:01] allen: No. Each time it's new...
+[10.09.21 16:18:23] orval: logged version of what?
+[10.09.21 16:19:07] allen: My cryptor. For RUNDLL he did.
+[10.09.21 16:28:22] orval: generic dll -> dll works fine
+[10.09.21 16:28:28] orval: there are almost no differences
+[10.09.21 16:30:41] allen: Yes. Only in exe->dll HollowProcess works from under DllMain.
+[22.09.21 10:46:56] orval: hi
+[22.09.21 10:59:03] orval: here?
+[22.09.21 12:19:08] allen: hi. Where should I be? Working.
+[22.09.21 12:19:40] allen: Hi. Where should I be? Working.
+[22.09.21 12:20:57] orval: hi.
+[22.09.21 12:21:07] orval: just wanted to write about the malfunction
+[22.09.21 12:21:37] allen: I know. I just updated it.
+[22.09.21 12:21:47] orval: thanks
+[22.09.21 12:21:54] allen: Should be ready.
+[22.09.21 12:22:58] allen: I'm writing a krypt in asm in parallel. How's that in asm? There's a C-functional, too. In libraries.
+[22.09.21 12:23:38] orval: that's good, but dangerous
+[22.09.21 12:23:53] allen: But not completely. More asm code.
+[22.09.21 12:24:41] orval: I wrote a crypt with no import or runtime at all and it's detected by windef and it takes a lot more man-hours to fix something
+[22.09.21 12:24:43] allen: It's not dangerous. Do you know how many minimal EXEs there are in asm? 2048 bytes...
+[22.09.21 12:25:05] orval: that's what I wrote
+[22.09.21 12:25:13] orval: 5 kb or so
+[22.09.21 12:25:44] orval: hard to edit
+[22.09.21 12:26:01] orval: hide something too
+[22.09.21 12:29:20] orval: av how to stick to the signature
+[22.09.21 12:29:30] orval: and peep
+[22.09.21 12:31:53] allen: it won't stick. Here:
+1) Modifiable code from build to build.
+2) Full AB protection with mutex and interprocess data exchange.
+[22.09.21 12:35:22] orval: ok, if so)
+[22.09.21 12:35:35] orval: I'm all for it
+[22.09.21 16:41:55] orval: and how do you encrypt load?
+[24.09.21 12:20:59] orval: hi
+[30.09.21 11:49:37] orval: hi
+[30.09.21 13:38:54] allen: hi
+[30.09.21 13:42:39] orval: can you clean rundll_dll profile?
+[30.09.21 13:44:19] allen: That's what I'm doing. I had to make sure it was going at all. It's an asm cryptor.
+[30.09.21 13:44:50] orval: okay, is there a load?
+[30.09.21 13:45:20] allen: I'll take it in cryptopanel.
+[29.10.21 14:10:23] orval: hi
+[29.10.21 16:02:24] orval: here?
+[01.11.21 10:56:50] orval: hi
+[01.11.21 12:14:57] allen: hi.
+[01.11.21 12:27:42] allen: I'm struggling with 32-bit cryptor. I can't beat AhnLab V3 Light. Even with empty cryptor it gives out: Malware/Win32.Generic. ((
+[01.11.21 12:47:18] orval: there's a new one, it's more important
+[01.11.21 12:47:31] orval: I need to create a new profile
+[01.11.21 12:47:38] orval: ``1.8 ET profile
+Profile based on BK, but need to roll through exported functions so that their ordinals coincide with the ordinals of the export load
+Call by ordinal:
+rundll32 file.dll,#1
+
+Example of setting ordinals of exported functions via .def file:
+LIBRARY
+EXPORTS
+	Test1=Test1 @2
+	Test2=Test2 @3
+	Test3=Test3 @1
+	
+In this case rundll32 file.dll,#1 is equivalent to rundll32 file.dll,Test3
+
+You also need to have the line 04D996FE94D3442EB1544EF742938E70 in the ready crypto
+
+The order of the load start is the same as the BK profile
+[01.11.21 12:50:51] orval: it's straight on fire
+[01.11.21 12:53:51] allen: And it doesn't matter that there is a problem with detects?
+[01.11.21 12:54:45] allen: And with an open load there are plenty of detects.
+[01.11.21 12:56:42] orval: yes make a profile first, it takes a couple of hours to do, and then it turns out clean on that profile should be
+[01.11.21 12:57:10] allen: Really, not WinDef.
+[01.11.21 12:57:15] orval: and these exe_x86 constantly problems
+[01.11.21 12:57:40] orval: plus if you sit on an empty project you might have to change the code a lot
+[01.11.21 13:00:33] allen: String in HEX?
+[01.11.21 13:02:16] orval: should check today, I'll let you know right away
+[01.11.21 13:02:21] orval: you can do both for now
+[01.11.21 13:02:27] orval: also
+[01.11.21 13:02:34] orval: ``Each profile must support setting a text string.
+For example
+build.bat --string somestringthatusercanuse
+
+Arbitrary length not affecting the execution (i.e. the string can eventually be patched by the customer).
+[02.11.21 14:17:38] orval: hi
+[02.11.21 14:24:57] allen: Hi.
+[02.11.21 14:25:18] orval: new input
+[02.11.21 14:25:24] orval: ``We need to keep the cryptos made for at least two weeks.
+Need to keep records of builds and loads.
+What load, from whom received + date and time, what crypted, hashes.
+Need to be able to give such information on request (for last two weeks).
+Hashes count as sha1
+[02.11.21 14:25:51] allen: Elroy already told me.
+[02.11.21 14:26:05] orval: ok
+[15.11.21 17:48:38] orval: hi
+[15.11.21 17:48:44] orval: profile et doesn't build
+[15.11.21 17:53:50] allen: Hi. I'll have to take a look at it. I'm currently busy researching the crypts I'm getting. The thing is that the crypts made on the build machine have 2 detects. But the crypts made on my machine have no detects. The question is why. So far I found the only difference in DOS header DLL: they differ by 8 bytes in length and data offset 0x3C is different. NT headers are the same. I'm writing a prog to compare 2 exe files.
+[11/15/21 17:55:37] orval: winmerge compares files
+[15.11.21 17:56:20] orval: my crypts matched hashes with my manual ones
+[15.11.21 17:56:38] orval: and this task is urgent
+[15.11.21 17:58:11] orval: maybe the studio needs to be updated
+[15.11.21 17:59:15] allen: Win merge compares binaries. That's what fc /b does as well. I'm interested in something deeper. Right down to the disassembler. I'll look at the ET problem tomorrow morning.
+[11/15/21 21 17:59:49] orval: How much deeper? It compares every byte
+[11/15/21/18:00:04] allen: not structurally.
+[11/15/21/18:00:45] orval: look, we still need to take the file and make it clean, not do research
+[15.11.21 18:00:57] orval: does your version of linker match the one on jenkins?
+[11/15/21/18:01:18] allen: I have it clean. It matches.
+[11/15/21/18:01:35] allen: But code does not.
+[15.11.21 18:02:28] orval: but I can't make crypt your stub
+[11/15/21/18:33:03] allen: Try it.
+[15.11.21 18:33:16] allen: I corrected it.
+[15.11.21 18:45:48] orval: it works, but there is a vatakat
+[25.11.21 11:50:44] orval: hi
+[25.11.21 11:51:44] allen: Hi.
+[25.11.21 11:52:18] orval: jenkins is moving to a new server, which one is required for your crypt?
+[25.11.21 11:52:44] orval: and can i get installation instructions?
+[25.11.21 11:52:52] allen: VS2017 + fasm
+[25.11.21 11:53:10] allen: The instruction is elroy.
+[25.11.21 11:53:32] orval: can you dump fasm folder to C?
+[25.11.21 11:53:55] allen: Yes. And, I think, that's all.
+[25.11.21 11:54:27] orval: studios will now be from 15 to 22, but only Enterprise
+[12/14/21/221 11:51:37] orval: hi.
+[14.12.21 12:20:37] allen: Hi.
+[12/15/21/18:51:27] orval: hi
+[12/17/21 11:26:26] orval: hi
+[12/17/21 11:28:01] allen: hi
+[17.12.21 11:28:15] orval: We have a new addition to the crypto
+[17.12.21 11:28:24] orval: ``The sieve function''.
+Function to place data fragments in stub that can be
+The external utility can patch it without damaging stub functionality.
+The external utility is oriented to the macros placed in the stub.
+
+This feature is enabled as an option for the crypter's build system.
+
+It is expected that the created sieve will be filled randomly by an
+external utility. That is, a series of crypts will be created based on a single crypt.
+In doing so, the sieve should be sized and shaped to provide
+maximum-possible or complete difference of samples by fuzzy
+hashes in the created series. And this is a mandatory condition.
+
+The sieve should be placed in all sections of the stack.
+
+If this feature is active, the build system prepares a file with fragments
+for filling and puts beacons of the following contents in each fragment:
+struct beacon
+{
+  DWORD64 signature; // Usually 0x11223344FFEDA5D0
+  DWORD size; // Fragment size (the beacon is in the fragment,
+                     // it means taking into account the size of the beacon)
+  DWORD crc; // checksum of the signature and size fields
+}
+The checksum is calculated in the following way:
+DWORD ComputeBeaconCRC(beacon* bcn)
+{
+  DWORD crc = 0;
+  BYTE *p = (BYTE*)bcn;
+  for (int i = 0; i < sizeof(beacon) - sizeof(DWORD); i++)
+    crc += *p++;
+  return crc;
+}
+
+If this feature is not active, the build system still prepares a file with
+fragments, but fills the fragments with random data.
+The random data has to be generated with a hardware
+randomization, e.g., the rdrand microcommand.
+(Source code of random generator is available in C++, you may ask).
+In this case beacons are not created, or they are created and overwritten by the build system
+during filling.
+
+It is worth considering that when generating crypts, randomization is important,
+so it is advisable to prepare a sieve of different sized fragments for each
+new build.
+[17.12.21 11:28:48] allen: I'm aware of that. Elroy skimmed it to me.
+[17.12.21 11:29:01] orval: ok
+[17.12.21 11:29:19] orval: do you know how to do it?
+[12/17/221 11:29:35] allen: Yes on asm.
+[12/24/21 09:54:34] orval: hi
+[24.12.21 09:57:42] allen: Hi.
+[24.12.21 09:57:51] orval: what's your progress on beacons?
+[12/24/21 09:58:36] allen: I haven't done that yet. They give a lot to crypto.
+[24.12.21 09:59:35] orval: on cleaning or giving away?
+[24.12.21 10:00:15] allen: I do.
+[12/24/221 10:04:24] orval: do you profile leo?
+[12/24/21 10:05:11] allen: Yes.
+[12/24/21 10:05:45] orval: manuel needs a clean stub for monday
+[12/24/21 10:05:48] orval: you got it?
+[12/24/21 10:09:01] allen: I know. He checked with AVCheck, AVCheck gives out DYNAMICS, not static. His sources are all dirty. I managed to make absolutely clean crypts by statics yesterday
+[24.12.21 10:09:25] orval: what makes you think it's for dynamics?
+[24.12.21 10:10:37] allen: Check it yourself. Static on dyncheck is clear, dynamic - 3 detects. AVCcheck always has 3 detections.
+[12/24/221 10:12:26] orval: I have them clean when I clean them
+[24.12.21 10:12:45] orval: Maybe AVCheck updates them faster
+[24.12.21 10:13:29] orval: moreover, how he will check the libraries
+[12/24/21 10:14:04] orval: I have a delay of about a minute, but the results are almost immediate
+[12/24/21 10:16:26] allen: I had a conversation with Elroy yesterday on this subject. His closing words:
+`There's nothing to say to me about the case. Thought the avcek was watching the statics...`
+[12/24/221 10:18:15] allen: I gave him the links to the check from dyncheck and avcheck. On avcheck you can't select the check mode: static or dyncheck. So it checks everything.
+[24.12.21 10:18:56] orval: one does not follow from the other
+[24.12.21 10:20:18] allen: Conclusion: you have to put your car with all the avs. And check there. And give admins the task to constantly update the databases.
+[24.12.21 10:20:39] orval: Yes
+[24.12.21 10:23:07] allen: I, until it is not set, where to check (setting should go from Buza (Silver)), I'll slow down with crypto. I'll make those changes, which are required.
+[24.12.21 10:28:49] orval: check on dincheck
+[12/24/21 10:28:59] orval: static
+[24.12.21 10:29:19] allen: I was clean on dincheck yesterday.
+[24.12.21 10:29:38] orval: let's do crypto
+[12/24/21 10:29:52] orval: I'll redirect it to you now
+[24.12.21 10:30:57] orval: text manuel
+[12/28/12/21 12:21:55] orval: hi.
+[28.12.21 12:58:48] allen: Hi.
+[28.12.21 12:59:27] orval: do you have generic exe clean?
+[28.12.21 12:59:55] allen: I don't know about 32 bits.
+[12/28/221 13:00:38] orval: how about the beacons?
+[12/28/221 13:01:05] allen: Nothing yet - yesterday I cleaned 64 bits.
+[12/28/21 13:02:30] orval: got it
+[12/30/21 10:31:44] orval: hi
+[12/30/21 12:10:25] allen: hi.
+[30.12.21 12:11:23] orval: can you make your gpg key?
+[12/30/21 12:11:28] orval:
+[12/30/21/12:12:37] allen: ``
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+L6DZhvMAHzSqKBZ2XpkNa1Q=
+=fgEX
+-----END PGP PUBLIC KEY BLOCK-----
+```
+[30.12.21 12:14:10] orval: I'll send you the addresses and the credits from jenkins and git
+there will be a repo project already created in git
+you need to put your cryptor in there
+but keep it impersonal
+[30.12.21 12:16:51] orval: -----BEGIN PGP MESSAGE-----
+
+hQIMAzK4/v3JrWW+ARAAmsxyb+wZRV10N+l5MSIibIklOEuVVjFNbIxIlC39Bm9H
++AeaL+UGeUhQVKfUwJkP/FbcjiAEiXA6mx47fcan1HeKR7VmIvA9algAoGuxQwDr
+edcl/5Fxs26LyHeSt78K14Y6MhLPM4HsAAktFHauOk6RrguDnFqStshoGHMwj+JM
+t8zsIkbswCWel0D8r4auFBQBdbIkOfYyOC2JXQP+OPXNYRJMe/RAOTqb/0bGf7dmt
+Htm7WlGo4p6gD2so2bgxZ63ZNYRMgIMUzE/nbz6HS9nCBz0Jc8/Mng6+bziNkhma
+1JJsixrlPhbiW/CZ8wIsEzgNLlbW0KIGzCRYeqllQLLHDPm0QgRRMXlRzLRud1ld6
+UKNntUTDXd/pTKcdmpgYpcsjEEGOaolgMEPnuyhG6GUDqGnqiOKbvPnnHJn4em
+KC3LoZBknv9yIzryX0+Iqb0xxnepfgxLMHwzoDnFTRKMZAs5NbiFU1IuTztEMtfF
+QvHnaDUYM902nA5pBSVUEumCx7PBNjBOHWh75fk43PRMwUPDYf7eoXykgDNCANUo
+xJVT43dMXbkP3130meJARE5KyNTswsgGjwKEmQ0i2e15EB3d/9X+SWG+DHwXeS9D
+C/yrxLd+fAQ/Gz0+h6yCuwwwGxj56GawGK/zpEBS4qcQCqlDAcA9LdheTjMQB1jS
+wDsBQwPkhpBYOws2qoR9gbxh9dnbxzm/58nDcv4fBqwDnbGK67Uqtoau5GaNFLL3
+78ilyvmoh9xfYvoMbBfi8iZdQm8LMVZNQLUZNTMNA/mzjRJOIKOOJNas6PqUz+l4
+cXTIKTMR7mtsffBzaj9Zshq5NpX38qRGUHj0bEpaTE/VYmyrWt/uCUmwYu9OqIk9
+URFBIPeC6PR8aw5b2pKHC9lt22tTxxKMxOfs1BPbhQq92tDAxrxuKWJqhiMyMuY
+OfNtWRvCAZWzAY1VHEtHeqkO403U851wlsiechVtUP1Qxp84GTECxardyZ1Z3Afq
+3CbEmLG3/ceMUizX+Q==
+=sRGq
+-----END PGP MESSAGE-----
+[12/30/221 12:17:06] orval: addresses are still working on http
+[12/30/221 12:21:09] allen: The "" file contains artifacts and cannot be decrypted or verified.
+[30.12.21 12:21:37] orval: the message is not decrypted?
+[12/30/221/12:22:06] allen: Yes. Let me try again.
+[12/30/221/12:22:21] orval: it's not a file
+[12/30/221/12:23:22] allen: That's it. I decoded it.
+[12/30/221 12:23:39] allen: And then, how will Git work?
+[12/30/221 12:24:35] allen: And how do I pour now?
+[12/30/221 12:25:05] orval: I used to.
+[12/30/221 12:25:12] orval: like before
+[30.12.21 12:30:25] allen: I need a project url.
+[30.12.21 12:32:06] orval: you already created a project there
+[30.12.21 12:32:10] orval: just go by the credentials
+[12/30/221/12:34:38] allen: I go in.
+It gives out:
+
+Failed to establish a secure connection
+
+An error occurred while connecting to `host_name`. SSL has received an entry that exceeds the maximum allowed length.
+
+Error code: SSL_ERROR_RX_RECORD_TOO_LONG
+[12/30/221 12:35:01] orval: I told you, http is working now
+[12/30/221 12:40:14] orval: did it work?
+[30.12.21 12:58:21] allen: I submitted the commands:
+git remote add origin http://localhost:3000/user3/project3.git
+git push -u origin master
+[30.12.21 12:59:08] allen: I got a response:
+fatal: unable to access 'http://localhost:3000/user3/project3.git/': Failed to connect to localhost port 3000: Connection refused
+[12/30/221 12:59:18] orval: address because localhost
+[30.12.21 12:59:47] allen: put git address?
+[30.12.21 12:59:53] orval: sure
+[12/30/221 13:10:04] allen: How do I add a proxy to git? To support .onion?
+[12/30/21 13:10:35] orval: how did it work before that?
+[12/30/21 13:10:47] allen: By IP
+[12/30/21 13:11:22] orval: without tor wrap?
+[12/30/21 13:11:28] allen: Yes.
+[12/30/21 13:14:43] orval: https://file.io/dwWAOyN5jfrD
+[30.12.21 13:15:23] orval: they didn't give you any tuning materials?
+[30.12.21 13:15:43] orval: any your traffic should always be wrapped
+[30.12.21 13:15:52] orval: for the git
+[30.12.21 13:15:56] orval: everything only for the project
+no marks especially in russian
+much less terms of reference
+link names logins passwords
+[30.12.21 13:17:32] allen: They did, I think.
+
+`No marks especially in Russian
+``not to mention the tz''.
+`names links logins passwords
+
+This is mandatory.
+[30.12.21 13:17:42] orval: but there was this
+[12/30/21 13:17:54] orval: that's why I repeat
+[12/30/21 13:19:01] allen: I see. What about the git? It still sets up a host<->host connection eventually.
+[12/30/221 13:19:52] allen: I somehow got the IP from the last git host.
+[30.12.21 13:20:24] orval: the former domain didn't seem to have one at all
+[12/30/221 13:24:04] allen: fatal: unable to access 'http://xxxxxxxxxxxx.onion:3000/cryptor3.git/': Can't complete SOCKS5 connection to xxxxxxxxxx.onion. (5)
+[12/30/21 13:24:18] orval: remove port
+[30.12.21 13:25:51] allen: git remote add origin http://xxxxxxxxxxxxxxxx.onion/user3/project3.git
+fatal: remote origin already exists.
+[12/30/221 13:27:45] allen: fatal: repository 'http://xxxxxxxxxxxxxxxxx.onion/cryptor3.git/' not found
+[12/30/221 13:37:03] allen: fatal: unable to access 'http://xxxxxxxxxxxxx.onion/cryptor3.git/': Can't complete SOCKS5 connection to xxxxxxxxxxxxxx.onion. (6)
+[12/30/21 14:02:59] orval: is proxy enabled?
+[12/30/21 14:03:29] allen: Yes
+[12/30/21 14:05:09] orval: http://localhost:9050/
+[12/30/21 14:06:21] allen: ``.
+This is a SOCKs proxy, not an HTTP proxy.
+It appears you have configured your web browser to use this Tor port as an HTTP proxy.
+
+This is not correct: This port is configured as a SOCKS proxy, not an HTTP proxy. If you need an HTTP proxy tunnel, use the HTTPTunnelPort configuration option in place of, or in addition to, SOCKSPort. Please configure your client accordingly.
+
+See https://www.torproject.org/documentation.html for more information.
+```
+[30.12.21 14:07:12] orval: http://xxxxxxxxxxxxxxxx.onion/user3/project3.git
+[30.12.21 14:08:34] orval: do you have a proxy in gitconfig?
+[30.12.21 14:40:29] orval: you need asm, right?
+[12/30/21 15:13:39] allen: Of course!
+
+Launched.
+[30.12.21 15:13:53] orval: which one?
+[30.12.21 15:14:34] allen: fasm
+[30.12.21 15:18:55] orval: there was an error with Djankis creeds, I'll send you new ones
+[30.12.21 15:19:34] orval: did you have 3 creeper?
+[30.12.21 15:19:52] allen: Lf
+[12/30/21 15:19:55] allen: Yes
+[12/30/221 15:26:03] orval: -----BEGIN PGP MESSAGE-----
+
+hQIMAzK4/v3JrWW+AQ/8D3uRblMaUBA6iybVWsxkw5gnjuI1Isr91N0rKgIP6098
+ckOjN+OOBKh4btISZn2zJp6/SZ7IEe4LaKpSGApmEUw1OmbXQRB/z1V6lZ/CdoZl
+bsto31AloCoEz/mdDtogsY8ZenJYqnUV9Hb6jk/+WWZkSc9d3iE8vkI5dj/wDV0
+ww1ggUU6ZYOYOIHx5CACxku5nPgKrwCfqjAM9h4mjsr0ImFxB87cyIAbqF18s42lX
+voTRIliqb++yqxP+NLY+RK+s4DoLmprVmyCuSsVtrNVWEXsxq18Csv2ISVWC4Agz
+ob3yidSDbcvW6kaLHOeicpH2Ix/nQvidOs74Tv0iBGa8AqBa1gOrF6+whCSlIo
+nX125QHZ+cWKgg3P/IhP1KvI6hbmqqbrjSir1xcni2THtWT/E/Cz6q04P/xZ+GqUH
+tLsCtRmbCih7iMZ1SOL0M3F40pWjj4dMluWkAWfmcZVt1E6ErlSpjsiB8GbIUw85I
+MXG3UcJ7zVuUxm+0qRcfn9diKqXza3TskqVAXs744d9P+RBR9xENRPZOmrGQ3bkO
+pm8EFvayp/KQP+LQPpYPeKkrEzczc/VY4qKJwg5ZskarMJDpWtJ2pxAsag/lbdG1
+t4YLdr0ooFymvXmsqLIcDRfkMLiUXiWLePv8YZTtT9jSNDtmm2l+FArovKad5qvS
+XwEpj1bc728/QsQ6GSC/EEQWC3nzPt/ma6v/BdT/fGMjCfvfnfi9CvCistkHe09S
+FL+o49XFFObC+mlBZbkw6Fgo4dmKrFx9m2Jv05e24qvxdXn32u/427h80ug1lXQM
+=307z
+-----END PGP MESSAGE-----
+[12/30/21 15:29:23] allen: Ok
+[12.30.21 15:33:33] orval: can you send me the fasm manual, where to download and where to put
+[30.12.21 15:35:36] allen: Download it from here:
+https://flatassembler.net/fasmw17329.zip
+
+Install (unzip to C:\ : C:\FASM_
+[24.01.22 12:37:03] orval: Hi.
+[24.01.22 14:50:38] allen: Hi.
+[24.01.22 14:53:03] orval: rundll profile doesn't build either
+[24.01.22 14:53:07] allen: Yelroy said that you do cryptors. Seems to be a problem with fasm. Either it's not standing or it's the wrong version. I can't see the build log. Am I running it correctly? %msbuild% !sln! /Build !buildprofileSolutionDeb! /Project cr2 /Out %~dp0\!buildlog!
+[24.01.22 14:53:48] orval: look at Jenkins log itself
+[24.01.22 14:54:34] allen: there is nothing from the build. I need the error that the studio itself shows.
+[24.01.22 14:55:40] orval: ```14:24:13 c:\Jenkins\workspace\crypter3_generic_exe\\payloadgen\Release\payloadgen.exe -string us -profile default -host_is_exe -multiple_segments -sequential_division -output_path c:\Jenkins\workspace\crypter3_generic_exe\\\cr2\cr2 127933_67_crp_input.dll
+14:24:14 cr2 build started Mon 01/24/2022 6:23:35.07
+14:24:14 The system cannot find the path specified.
+14:24:30 Could Not Find c:\Jenkins\workspace\crypter3_generic_exe\cr2\cr2\w32_payload_data.h
+14:24:30 Could Not Find c:\Jenkins\workspace\crypter3_generic_exe\cr2\cr2\w32_payload_rdata.h
+14:24:30 Could Not Find c:\Jenkins\workspace\crypter3_generic_exe\cr2\cr2\w32_payload_text.h
+14:24:30 Could Not Find c:\Jenkins\workspace\crypter3_generic_exe\cr2\cr2\dllmain32.inc
+14:24:30 The system cannot find the file specified.
+14:24:30 Could Not Find c:\Jenkins\workspace\crypter3_generic_exe\cr2\cr2\main32.obj
+14:24:30 The system cannot find the file specified.
+[24.01.22 14:56:28] allen: That's all wrong. That's the DOS output. And I need studio output!!!
+[24.01.22 15:05:42] orval: let me see
+[24.01.22 15:06:00] orval: do you have a log generated on your computer?
+[24.01.22 15:13:38] orval: what is it ``/Out %~dp0\!buildlog!
+[24.01.22 15:13:59] orval: here is my command ```C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\devenv.exe" Stub\Stub_LLVMO.sln /Rebuild "Release|x64" /Project MFC_Stub\MFC_Stub.vcxproj /Out build.log
+[24.01.22 15:36:20] allen: Done. Forgot to include beacon.c file in the project.
+[24.01.22 15:37:18] orval: did generic and rundll work?
+[24.01.22 15:41:49] allen: Yes.
+[24.01.22 15:42:20] orval: great
+[24.01.22 15:42:29] orval: write it up in conf.
+[27.01.22 13:12:29] orval: hi
+[27.01.22 13:46:36] allen: hi.
+[27.01.22 13:55:50] orval: how's the cleanup going?
+[27.01.22 14:01:33] allen: I'm reading about antiviruses for now. I need to do an AV detection. I have a problem. I use the creation of a named mutex to protect against viruses. It is the only one in the system. If it is created, I study to restart myself. If there is an error with code 187, I can work. After that I check on the parent. If not myself, then exit. All protection. I need to think about a more complex one. Maybe you can advise something?
+[27.01.22 14:08:35] orval: I didn't take it apart
+[27.01.22 14:08:43] orval: how would that help with static?
+[27.01.22 14:10:20] allen: it helps.
+[27.01.22 14:11:17] orval: maybe because you just added new code and the whole structure changed, I did that
+[27.01.22 14:11:41] orval: import changed, file looked different
+[27.01.22 14:12:39] orval: I understand that
+[27.01.22 14:12:59] orval: but such code fragments will just quickly start giving you detections
+[27.01.22 14:13:52] allen: And parsing by status is like this.
+invoke GetLastError
+add [esp], eax
+ret
+
+There is no direct comparison.
+
+The import has not changed. As it was ExitProcesss() GetProcAddress() GetModuleHandle() remains
+[27.01.22 14:15:02] orval: but how should it help with static?
+[27.01.22 14:15:57] orval: if detected a number of attributes such as import table, compiler version, and already burned pieces of code
+[27.01.22 14:18:49] allen: Import table. Maybe. I'm working on reading it from the TEB process now. Or I'll remove import at all.
+[27.01.22 14:19:49] orval: I think it's not worth that time
+[27.01.22 14:19:56] orval: there are very few pure cryptos
+[27.01.22 14:20:03] orval: nothing to crypt
+[09.02.22 11:34:15] orval: hi
+[09.02.22 11:49:54] allen: hi
+[09.02.22 11:50:16] allen: I'm rewriting my cryptor completely.
+[09.02.22 11:50:48] allen: problem with 64-bit... Solving it.
+[09.02.22 11:52:31] orval: what problem?
+[09.02.22 11:53:23] orval: go ahead
+[09.02.22 11:54:05] allen: failure inside API function.
+[09.02.22 11:54:31] orval: but why, if it worked before?
+[09.02.22 11:55:08] allen: I say Rewrite the whole thing.
+[02/09/222 11:56:12] allen: From scratch. To eliminate importing. To leave only a few functions.
+[09.02.22 11:56:20] orval: you just wrote something before, and now you're writing again
+[09.02.22 11:59:36] allen: I don't know how to clean what is already written. AVs literally swear at everything... Even on an empty project...
+[09.02.22 12:05:04] orval: all these changes don't change the code
