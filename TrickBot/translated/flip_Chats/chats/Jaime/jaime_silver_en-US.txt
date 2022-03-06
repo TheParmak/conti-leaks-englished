@@ -1,0 +1,325 @@
+[29.07.21 12:48:06] silver: Hi.
+[29.07.21 12:48:09] silver: your password leaked
+[29.07.21 12:48:12] silver: from gitlab
+[29.07.21 12:48:14] silver: change it
+[29.07.21 12:54:41] silver: frank says it's in the source
+[29.07.21 12:54:44] silver: or in a script
+[29.07.21 12:59:38] silver: aah
+[30.07.21 13:51:03] silver: hi
+[30.07.21 13:51:16] silver: come on.
+[30.07.21 13:52:01] silver: we spoke yesterday
+[30.07.21 13:53:36] silver: if these are injections in the format of zeus, then all servers are not ours
+[30.07.21 13:54:18] silver: well look, usually an inject is some <script src="https://какой-тотам server">
+[30.07.21 13:54:27] silver: that's where the script comes from and runs and does something
+[30.07.21 13:54:32] silver: is it?
+[30.07.21 13:55:28] silver: well, there can't be anything else
+[30.07.21 13:55:32] silver: there's a script
+[30.07.21 13:55:44] silver: okay, let's think what could go wrong
+[30.07.21 13:55:58] silver: 1) the script won't work properly until you've fully rendered the page
+[30.07.21 13:56:09] silver: it may rely on some of its children
+[30.07.21 13:56:29] silver: I don't know about that, but before scripts didn't run until the last byte of the page arrived and</body> wasn't formed
+[30.07.21 13:56:46] silver: 2) maybe there is a ban for cross-site scripts
+[30.07.21 13:56:49] silver: let me find the header
+[30.07.21 13:57:44] silver: Content-Security-Policy
+[30.07.21 13:57:56] silver: and similar
+[30.07.21 13:57:59] silver: there are several
+[30.07.21 13:58:03] silver: I don't remember them all
+[30.07.21 13:58:34] silver: what chats is this rabbi in?
+[30.07.21 13:58:58] silver: what nickname?
+[30.07.21 14:00:59] silver: what did he say to the offer to podebate in the browser console ?
+[30.07.21 14:01:06] silver: "it worked for me"?
+[30.07.21 14:03:15] silver: now who is solving this problem, him or you?
+[30.07.21 14:03:46] silver: I mean, you have an injector that doesn't work - is it breaking or what?
+[30.07.21 14:03:52] silver: doesn't want to deal with it?
+[30.07.21 14:04:48] silver: you have no way to check these injections
+[30.07.21 14:04:54] silver: listen to me
+[30.07.21 14:05:15] silver: first of all you won't go to the bank
+[30.07.21 14:05:23] silver: you need the right sox to test the bank
+[30.07.21 14:05:36] silver: only then this script will render properly
+[30.07.21 14:05:55] silver: otherwise both the script and the bank page will be blocked
+[30.07.21 14:06:20] silver: secondly, for the test you need test injections
+[30.07.21 14:06:48] silver: not obfuscated, debugged, working from any IP
+[30.07.21 14:09:32] silver: well, the problem sounds like this:
+- Angelo wants to test and can't, for known reasons
+- the injector developer has no remarks to us, according to his data everything works
+[30.07.21 14:10:01] silver: got it
+[30.07.21 14:10:08] silver: Any complaints from the client?
+[30.07.21 14:13:13] silver: did you read frank's comment?
+[30.07.21 14:13:21] silver: or is it irrelevant?
+[30.07.21 14:14:47] silver: let me just stick to the channel
+[30.07.21 14:41:29] silver: you can't do that
+[13.08.21 09:32:00] jaime: hi!
+[13.08.21 09:32:08] silver: Hi.
+[13.08.21 09:32:18] jaime: There's an injection and vnc problem
+[13.08.21 09:32:40] jaime: Trying to understand, I think it's because of desktops
+[13.08.21 09:34:00] silver: what if there are two monitors in the system, they have different desktops?
+[13.08.21 09:35:37] jaime: And here's a question
+[13.08.21 09:36:32] jaime: I'll check it now
+[13.08.21 09:37:22] silver: just if there was only one desktop by default you could disable injections on any desktop except him
+[13.08.21 09:37:43] silver: but in multi-headed systems, you need to somehow determine if it's a real desktop from a real moniker or a hidden desktop for vntz/import
+[13.08.21 09:37:58] silver: the poke should be the same as the poke to importdll
+[13.08.21 09:38:08] silver: "sbox_alternative_desktop2" or whatever
+[13.08.21 09:51:29] jaime: Two desktops are fine
+[16.08.21 09:14:48] jaime: Hi.
+[16.08.21 09:14:53] silver: Hi.
+[16.08.21 09:15:01] jaime: Do you think it's realistic to get into edge?
+[16.08.21 09:15:28] silver: find a competitor who's already doing it
+[16.08.21 09:15:35] silver: I don't think so
+[16.08.21 09:15:46] jaime: found this article http://www.sekoia.fr/blog/microsoft-edge-binary-injection-mitigation-overview/
+[16.08.21 09:15:52] silver: but if you find someone who does it, you can
+[16.08.21 09:15:56] silver: it's a very old article, I read it
+[16.08.21 09:16:09] silver: I told you, the edge has changed radically many times since then
+[16.08.21 09:16:43] jaime: That's right, you can see it even from the article.
+[16.08.21 09:17:02] silver: I'll tell you what I know
+[16.08.21 09:17:15] silver: I was able to infiltrate edge
+[16.08.21 09:17:50] silver: the main trick was that edge works in app integrity level = appcontainer
+[16.08.21 09:17:54] silver: it is lower than low
+[16.08.21 09:18:18] silver: that means that process's rights are severely cut - it can do almost nothing, it's locked in a sandbox
+[16.08.21 09:18:33] silver: it couldn't write to files properly, for example, so there was no log and I thought the injection failed
+[16.08.21 09:18:56] silver: when I created the file by myself and gave appcontainer rights to it, it was writing and I could debug it
+[16.08.21 09:19:11] silver: then I found out that OutputDebugString let me debug the file without logging)
+[16.08.21 09:19:26] silver: appcontainer only has network and nothing else
+[16.08.21 09:19:31] silver: and it's cut too
+[16.08.21 09:19:55] silver: the usual reflexive injection bypassed the mitigation from that article you gave
+[16.08.21 09:20:09] silver: and then it stopped bypassing - they applied some other protection, and what kind of protection I don't know
+[16.08.21 09:20:31] silver: I read reports that the injection in edge stopped working for everyone, so I decided not to support it
+[16.08.21 09:20:34] silver: such things)
+[16.08.21 09:20:57] jaime: got it. :(
+[16.08.21 09:21:24] silver: plus he was a hoverer
+[16.08.21 09:21:25] jaime: Time is running out, I'll see if anything new
+[16.08.21 09:21:37] silver: it's very unstable itself, it crashes on heavy sites
+[16.08.21 09:21:45] silver: and it's a real bummer with injection
+[16.08.21 09:22:40] silver: plus there was a complicated injection scheme, I was injecting into runtimebroker.exe for some reason (I don't remember why), then I stopped injecting there and invented the way without it
+[16.08.21 09:23:31] jaime: I read about it
+[16.08.21 09:24:34] jaime: thanks for the info. :)
+[16.08.21 09:24:52] silver: you're welcome
+[27.08.21 08:10:24] jaime: Hi.
+[27.08.21 08:11:51] jaime: May I ask you a stupid question. On watcher.cpp file :)
+[27.08.21 08:12:04] jaime: I am at war with vnc.
+[27.08.21 08:13:02] silver: hi
+[27.08.21 08:13:19] jaime: I removed vnc checks, it all worked, but I found out one problem. If chrome is running on the main desktop then the injection is not done on the hidden desktop and vice versa.
+[27.08.21 08:13:31] silver: I wrote yesterday in the channel about it
+[27.08.21 08:13:51] silver: Found a problem, if user is running a browser (chrome), then chrome does not work on vnc, if running on vnc, then does not work for user. Why it does not understand.
+
+I can guess why. Because there is a circumvention from two instances of the browser to files of the same profile. I used to notice that when chrome runs, it locks files, particularly Login Data
+this can and should be expected because of blocking
+possible solution is to try to copy profile before you start and start with a copy of profile
+[27.08.21 08:14:19] silver: or what do you mean?
+[27.08.21 08:14:31] jaime: Apparently everything was crashing yesterday and I didn't get the message.
+[27.08.21 08:15:20] silver: specify the problem
+1) only one instance of chrome starts
+2) two chrome instances start, but inject only into one of them
+[27.08.21 08:15:56] jaime: There is a chrome_infected counter in the code, it counts up to 10 and goes to chrome running state and injection is stopped.
+[27.08.21 08:16:07] silver: that's what I thought you meant
+[27.08.21 08:16:24] jaime: Where did the number 10 come from? :)
+[27.08.21 08:16:42] silver: ``
+    DWORD chrome_infected = 0;
+
+    const int chrome_zombie_threshold = 3; // how many chrome processes must hang for us to consider it dead
+    bool chrome_is_zombie = false;
+    int zombie_ensure_time = 4; // if the number of chrome.exe processes
+                                                                // during this time is below the chrome_zombie_threshold,
+                                                                // it means that chrome is hung up and we'll kill it
+    time_t chrome_watchdog_zombie = 0; // time when we suspect that the chrome is hung up
+    const int chrome_zombie_release_time = 5; // if we couldn't kill a zombie in this time, fuck it
+
+    HANDLE chromeToken = NULL; // chrome process token
+    HANDLE chromeToken0 = NULL; // auxiliary
+
+```
+[27.08.21 08:17:00] silver: most of these variables should be arrays
+[27.08.21 08:17:08] silver: look
+[27.08.21 08:17:17] jaime: Oh, I had the idea to do desktops
+[27.08.21 08:17:24] silver: the injector was written with the expectation that you will run one instance of chrome
+[27.08.21 08:17:42] silver: 2 or more - won't work, it will be like yours
+[27.08.21 08:17:48] silver: I was redesigning and adding support
+[27.08.21 08:18:09] silver: but it either stayed in some branch or in another project, I'll look for it
+[27.08.21 08:19:02] jaime: Yes, I basically thought about redoing it.
+[27.08.21 08:19:08] silver: found it
+[27.08.21 08:19:09] silver: min
+[27.08.21 08:20:04] silver: ``
+idiR}-([3X8)4XS-Hc
+Download: https://qaz.im/load/ay27fb/zi6Ztn
+Delete: https://qaz.im/index.php?a=delete&q=621017906
+```
+[27.08.21 08:20:07] jaime: I'm more afraid of breaking something, I will release a build and leave something out
+[27.08.21 08:20:49] silver: Look, it's arrayed, and it supports multiple chromes - you need support there mostly because all those chrome clones were also called chrome.exe
+[27.08.21:21:06] silver: it's dumb, you can die as is or do it your own way
+[27.08.21 08:21:33] silver: there's amigo and yandex
+[27.08.21:21:37] silver: I remember
+[27.08.21 08:21:55] silver: well, you still have to keep track of the processes' relations with each other
+[27.08.21 08:22:29] silver: you need to detect that this chrome process is a new instance and not just a child of already started process
+[27.08.21 08:22:41] silver: you need to get a parent for each process
+[27.08.21 08:22:50] silver: if the parent is not chrome.exe, it's a new top process
+[27.08.21 08:23:04] silver: if the parent is chrome.exe, then it is a child process and you skip it
+[27.08.21 08:23:06] silver: something like this
+[27.08.21 08:25:06] jaime: Got it, thanks. I was actually thinking of leaving it as is and unscaling by dextops. :)
+[30.08.21 14:48:50] silver: ku
+[30.08.21 14:55:58] jaime: here!
+[30.08.21 14:56:00] jaime: hi!
+[30.08.21 14:56:20] silver: hi, I wrote you in toad
+[30.08.21 14:59:18] jaime: I made some chrome. It turned out well.
+[30.08.21 14:59:55] silver: good )
+[30.08.21 15:00:52] jaime: It also turns out, that it's not necessary to infect all descendants, it's enough to infect parent and --type=utility and --utility-subtype=network.mojom.NetworkService in command line
+[08.30.21 15:01:31] silver: well done )
+[30.08.21 15:01:47] silver: there's a problem now
+[30.08.21 15:02:00] silver: with data transfer from modules
+[30.08.21 15:02:09] silver: dpost
+[30.08.21 15:02:48] silver: it means that some data is not recognized by the backend and doesn't get into the database
+[30.08.21 15:02:58] silver: we're working on it now, it's not just yours, but also pvgrab's
+[30.08.21 15:03:10] jaime: I checked with Frank, he says it's not about the module
+[30.08.21 15:03:15] silver: you need to go to the toad confab, because there's a backend developer there
+[30.08.21 15:03:20] silver: you never know
+[30.08.21 15:03:25] silver: don't know what's wrong yet
+[30.08.21 15:04:01] jaime: We'll see, we'll figure it out. If you need anything from me, we'll take a look :)
+[09.09.21 13:04:53] jaime: Hi.
+[09.09.21 13:05:10] jaime: Pages don't open, but our insert is there.
+[09.09.21 13:07:25] silver: how?
+[09.09.21 13:07:26] silver: hi.
+[09.09.21 13:08:43] jaime: The page crashed when I inserted the code. Either the script didn't pull something or something else.
+[09.09.21 13:09:15] silver: this is not SSL bug, but another one?
+[09.09.21 13:09:23] jaime: We put in what we need and where we need it
+[09.09.21 13:09:32] jaime: It's all in the pile
+[09.09.21 13:09:35] silver: I got it.
+[09.09.21 13:09:39] silver: but it's not enough
+[09.09.21 13:09:51] silver: I mean it's not our problem
+[09.09.21 13:09:53] jaime: Error with sslu is the same
+[09.09.21 13:10:09] silver: you put in a script. The script is pulling something from somewhere. It's getting an ssl error.
+[09.09.21 13:10:11] silver: the script didn't work
+[09.09.21 13:10:14] silver: paste broke the page
+[09.09.21 13:10:20] silver: look that way
+[09.09.21 13:10:26] silver: i.e. ssl has to be defeated anyway
+[09.09.21 13:10:48] jaime: some sites work there.
+[09.09.21 13:10:57] jaime: Actually they all worked
+[09.09.21 13:11:12] jaime: We checked almost the whole list
+[09.09.21 13:11:52] silver: We have to deal with
+[09.09.21 13:12:12] silver: without fixing this bug, you'll never know what the client's problem is
+[09.09.21 14:21:25] jaime: Connection not provate on some sites because of ERR_CERT_VALIDITY_TOO_LONG, very strange that I don't have this error on the same sites
+[09.09.21 14:21:56] silver: it's all about localstate
+[09.09.21 14:22:30] silver: more exactly - it's because their chromes *updated* and they have a lot of certificates, and all sorts of add-ons which you don't have
+[09.09.21 14:22:36] silver: And you have a fresh bare chrome
+[09.09.21 14:22:46] silver: and they already have caches
+[09.09.21 14:23:44] jaime: you need to pull their state?
+[09.09.21 14:23:47] silver: exactly
+[09.09.21 14:23:53] silver: and maybe that won't help either
+[09.09.21 14:24:00] silver: try to reproduce the error locally
+[09.09.21 14:24:21] silver: you might have to drag their certificate storages along
+[09.09.21 14:24:45] silver: and by pulling chrome profile, you have a chance not to open it - there is an encrypted part of data there, so it's not so easy to decrypt
+[09.09.21 14:25:03] silver: that Nicolas can tell you about that) he is just screwing with DPAPI decrypt there )
+[09.09.21 14:26:05] jaime: I supposed I logged into the site without our module, I have to keep all the keys in the cache, then I logged in with the module and voila, there is an error.
+[09.09.21 14:26:21] jaime: But there is no such a thing.
+[09.09.21 14:27:00] silver: well, chrome is smart. they take into account MITM attack, and make additional protection from it, that's what you're stumbling over
+[10.09.21 08:08:13] jaime: Hi.
+[10.09.21 08:09:20] jaime: Hi.
+[10.09.21 08:09:36] silver: Hi.
+[10.09.21 08:10:24] jaime: I'm here about yesterday's problem. I'll describe it now.
+[10.09.21 08:10:32] silver: Go ahead.
+[9/10/21 08:15:05] jaime: Chromium is caching the certificates somewhere (not in Local State, but in the system). and it does not update them if they are still good. This is the reason why ERR_CERT_VALIDITY_TOO_LONG gets scolded, because we are correcting the date. If we don't correct the date, the Certificate Transparency mechanism kicks in. Found a site that leads to the same error in my case. Tore down Local State, problem stays.
+[10.09.21 08:15:31] jaime: Moment when certificate stays in system is not clear.
+[10.09.21 08:16:20] jaime: I tried it with and without module on clean system, same site, problem did not repeat
+[10.09.21 08:16:27] silver: Mm-hmm.
+[10.09.21 08:16:28] silver: I suffered a lot with this error too
+[10.09.21 08:16:39] silver: a minute
+[10.09.21 08:17:28] silver: CertFindCertificateInStore
+[10.09.21 08:17:30] silver: can you find a cert with this function?
+[10.09.21 08:18:01] jaime: It sucks that only now it was stepped on, it's very frustrating. How long have you been chasing.
+[10.09.21 08:19:28] silver: i remember you fixed a bunch of bugs, and i thought you fixed that one too
+[10.09.21 08:19:32] silver: don't be upset.)
+[10.09.21 08:19:49] silver: look, the question is how to find and tweak this cert through the api
+[10.09.21 08:20:27] silver: it turns out, that either CertFindCertificateInStore fails to find this cached certificate, or we are searching in wrong storage, or there is a more global storage
+[10.09.21 08:20:30] silver: because in theory the code based on this function, it should find and delete this cert
+[10.09.21 08:23:46] jaime: CertFindCertificateInStore yes it finds it
+[10.09.21 08:26:26] silver: can i remove it?
+[10.09.21 08:26:38] silver: I guess the error is
+[10.09.21 08:26:48] silver: we're looking for this cert right now, and if we find it, we think it was created by us
+[10.09.21 08:26:54] silver: but we should check if it's true
+[10.09.21 08:27:07] silver: the certificate has almost all the details
+[10.09.21 08:27:26] silver: so we have to check either the print or the pieces we can't forge
+[10.09.21 08:27:38] silver: the second option is to delete and recreate always
+[10.09.21 08:27:55] silver: you just write in the channel that you've reproduced the bug in yourself and you're working on a solution
+[10.09.21 08:28:35] jaime: I'll look into it, thanks
+[14.09.21 09:50:00] jaime: Hi.
+[14.09.21 09:50:06] silver: hi
+[14.09.21 09:52:14] jaime: Strange thing with this certificate, I can't understand it. I had the problem go away at my bench in the course of the experiments. The idea is that there's some crap in the certificate storage that's interfering. If I use certmgr.msc to remove the certificate (I can not understand, any or any particular one) everything starts to work.
+[14.09.21 09:55:58] silver: that's the weird one
+[14.09.21 21:56:09] silver: look - we are adding certificate to temporary storage
+[14.09.21 09:56:13] silver: right7
+[14.09.21 09:56:39] jaime: yes
+[14.09.21 09:57:13] silver: so a cert from permanent storage has priority over a cert from temporary storage?
+[14.09.21 09:57:58] jaime: yes
+[14.09.21 09:58:08] silver: then you have to look for sert in two vaults
+[14.09.21 09:58:14] silver: and delete it from the main one
+[14.09.21 09:58:15] jaime: But that's how our logic is built, we first search in the permanent
+[14.09.21 09:58:29] silver: and we find it there?
+[14.09.21 09:58:30] jaime: And then in the temporary
+[14.09.21 09:58:38] silver: in the permanent?
+[14.09.21 09:58:57] silver: because I just didn't find it
+[14.09.21 09:59:22] jaime: there is a suspicion that you have to look not only there, there are probably more N repositories where you can look
+[14.09.21 09:59:30] silver: yeah
+[14.09.21 09:59:34] jaime: No, I found it mostly
+[14.09.21 09:59:44] jaime: My test bench fixed the problem
+[14.09.21 09:59:45] silver: so can we remove it from the main?
+[14.09.21 09:59:50] silver: programmatically
+[14.09.21 09:59:58] jaime: delete from main page only under Admin
+[14.09.21 10:00:12] silver: we are under Admin
+[14.09.21 10:00:15] silver: see how
+[14.09.21 10:00:19] jaime: There's a Personal repository there we can add and delete
+[14.09.21 10:00:36] silver: we try to remove a cert from all storages we find
+[14.09.21 10:00:44] jaime: But the client has us as a user
+[14.09.21 10:00:48] silver: if it fails to delete, we do NOT intercept the session
+[14.09.21 10:01:03] silver: return old cert and proxy as is
+[14.09.21 10:01:33] silver: > But on the client we are just a user
+bot is always trying to raise privileges to itself
+[14.09.21 10:04:01] jaime: I remove the cert from Intermediante Certification Authorities section in client's cert manager under his rights and it starts working.
+[14.09.21 10:04:26] jaime: Another option is to place them in Personal and clean there
+[14.09.21 10:04:36] jaime: But who knows how priorities are
+[14.09.21 10:05:13] jaime: I prepared this variant, but error is rare
+[9/17/21 07:54:16] jaime: Hi.
+[17.09.21 07:55:55] jaime: Yesterday it turned out we made a mistake with the Inject. :) Robin wrote that he would like the inject to work only via vnc and in HDESK BOT. As I understood from his words.
+[17.09.21 07:57:27] jaime: If it's not difficult, can you clarify this point and should it be done? In theory, it is not difficult, you only need a criterion for HDESK BOT
+[17.09.21 07:57:49] silver: hi
+[17.09.21 07:57:58] silver: hmm
+[17.09.21 07:58:08] silver: I'll check with him myself
+[17.09.21 07:58:17] silver: you need to separate the inject mode and form-grabber mode
+[17.09.21 07:58:26] jaime: We just go into all browsers
+[17.09.21 07:58:34] silver: does he mean there's only formgrabber on main desktop?
+[17.09.21 07:58:48] jaime: And the log post as I understand it does not need
+[17.09.21 08:28:40] silver: Look
+[17.09.21 08:29:05] silver: Writing to our channel
+[30.09.21 08:06:56] silver: koo
+[30.09.21 08:07:21] jaime: hi!
+[30.09.21 08:07:44] silver: tell me please what projects except injector you have active now
+[30.09.21 08:07:54] silver: don't tell me what's done and in archive
+[30.09.21 08:08:33] jaime: I'm doing Ciska as much as I can
+[30.09.21 08:08:44] silver: Any luck?
+[30.09.21 08:09:04] jaime: And I'm doing some tests for Norbert here
+[30.09.21 08:09:10] silver: Which ones?
+[30.09.21 08:09:46] jaime: In Ciska dumb debugging in assembler, I do what manager asks to see, it takes too long of course
+[30.09.21 08:10:54] jaime: By the tetas, how to explain, for example I was making a program which received a command from the server and executed it via HTTP. Watching detects on it, by implementations from different developers
+[30.09.21 08:11:12] silver: okay
+[30.09.21 08:11:18] jaime: Then he came up with an idea to communicate via ICMP
+[30.09.21 08:12:27] jaime: Now I make a small server for http cli communication
+[30.09.21 08:12:53] jaime: Norbert might be looking to make something similar to Pupy
+[30.09.21 08:13:06] silver: got it, thanks
+[30.09.21 08:13:19] jaime: Anything you need help with?
+[30.09.21 12:31:28] jaime: There are some things you should do as subprojects
+[30.09.21 12:31:51] silver: nicholas will come, tell him.)
+[30.09.21 12:31:55] jaime: I'm making libbot, something about import
+[30.09.21 12:32:05] silver: once this module was part of yours
+[30.09.21 12:32:18] silver: then it was split into two - all about password grabbing went to pvgrab
+[30.09.21 12:32:22] silver: but the common places remained
+[30.09.21 12:33:17] jaime: well, even the project structure is similar :)
+[30.09.21 12:38:43] silver: you can make these parts as submodules if you know how
+[30.09.21 12:38:46] silver: but you can't do it without nicholas
+[30.09.21 12:38:59] silver: and plus, submodules and common sub-projects have the same problem
+[30.09.21 12:39:04] silver: that errors become shared )
+[30.09.21 12:39:21] silver: you corrected something for yourself, you are ok, but your friend isn't ok - he needs the opposite
+[29.10.21 08:45:21] silver: koo
+[29.10.21 10:27:29] jaime: Hi!
+[29.10.21 10:27:46] silver: otp
+[29.10.21 10:28:10] silver: lnk delivery is it yours?
+[29.10.21 10:28:39] jaime: Yes, it is.
+[29.10.21 10:28:45] jaime: I'm working with Rayan now.
+[29.10.21 10:28:50] silver: Then go to the new group
+[29.10.21 10:28:55] silver: there's a discussion about new deliveries
+[29.10.21 10:28:56] jaime: Adding hta

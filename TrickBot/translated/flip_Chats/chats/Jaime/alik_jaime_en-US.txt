@@ -1,0 +1,210 @@
+[15.11.21 10:11:48] alik: Okay.
+[15.11.21 10:11:53] jaime: Okay! :)
+[15.11.21 10:11:58] jaime: I'm on the webinject
+[11/15/21 10:12:13] jaime: I'm working on my notes now.
+[15.11.21 10:12:18] alik: All browsers are on chrome, ie, etc.?
+[15.11.21 10:12:22] jaime: Observations
+[15.11.21 10:12:46] jaime: chrome, ff, ie work
+[15.11.21 10:13:05] alik: Capture ssl fnuctions or mithim with proxies and certificates?
+[15.11.21 10:13:36] jaime: mithm with proxies and certificates :)
+[15.11.21 10:13:55] alik: Great.
+[15.11.21 10:14:06] alik: got tired of searching for functions in chrome
+[15.11.21 10:14:57] jaime: There are two main modes: formgrabber - loot POST requests, and inject - insert code into page
+[15.11.21 10:15:18] jaime: Insertion config in zeus format
+[15.11.21 10:15:47] alik: Are certificates created on the fly or is there a root certificate in the system?
+[15.11.21 10:17:39] jaime: on the fly + hooks on CertGetCertificateChain and CertVerifyCertificateChainPolicy
+[11/15/21 10:17:56] alik: That's good
+[15.11.21 10:19:13] alik: I forgot, in the interceptor you modify CERT_CHAIN_POLICY_STATUS to make the cert pass the check?
+[15.11.21 10:22:57] jaime: Both functions always return true. There is an easy modification of PCERT_CHAIN_CONTEXT flags in CertGetCertificateChain
+[15.11.21 10:23:12] alik: Yeah.
+[15.11.21 10:23:40] alik: And http2 content comes to you how? Already unpacked or what?
+[11/15/21 10:24:54] jaime: http2 is prohibited, watch the processes when you start a new one, restart it with the right checkboxes, including prohibit http2
+[15.11.21 10:25:23] alik: Okay. I was doing http2 support in zeus, if anything we'll add it.
+[11/15/21 21 10:25:53] jaime: Oh great. Not a task yet.
+[15.11.21 10:26:11] alik: Yeah, if anything I'll give you sorts, it's pretty simple.
+[11/15/21/221 10:28:04] jaime: :) good.
+[11/15/21 21 10:28:18] jaime: So if anything, you know who to kick!
+[11/15/21 21 10:28:30] alik: Nice to meet you)
+[11/15/21 21 10:29:24] jaime: Likewise! :)
+[15.11.21 10:33:32] jaime: Do you have our toad? Will you add it for the backup channel? flip@q3mcco35auwcstmt.onion
+[15.11.21 10:33:59] alik: I'm fine tuning Jabber, I'll add it
+[15.11.21 11:12:53] jaime: I'm looking at vnc client and server code
+[15.11.21 13:35:24] jaime: https://mb5fbvx72fbod2hkirfecc5nh7lwq6ke7xocn7j2u7raiwbytvevpbad.onion/soft/WebInject.git added you to the project
+[15.11.21 13:36:26] alik: Please forward the last message, it's rebooted
+[15.11.21 13:36:40] jaime: https://mb5fbvx72fbod2hkirfecc5nh7lwq6ke7xocn7j2u7raiwbytvevpbad.onion/soft/WebInject.git added you to the project
+[15.11.21 13:36:49] alik: Okay, thanks
+[01.12.21 07:58:51] alik: Hey, knock me when you're done
+[01.12.21 08:58:34] jaime: Hi!
+[01.12.21 08:58:36] jaime: Here!
+[01.12.21 09:16:00] alik: Hi, in the webinjects module you need to redo the network model at the proxy
+Move away from 1 thread - 1 connection
+[01.12.21 09:16:49] alik: I still understand the sources, I will help you to do
+[01.12.21 09:18:49] jaime: Change to select?
+[01.12.21 09:19:19] jaime: It was already so historically, I did not break it
+[01.12.21 09:20:57] alik: Probably, let's finish asynchronous model
+[01.12.21 09:23:03] jaime: You think I can't do it myself? :) It's good there now, but resource-intensive, of course.
+[01.12.21 09:23:19] alik: You can do it, I'll just help you.
+[01.12.21 09:26:52] jaime: I put all the discriptors in an array, select them, and there's a sort of state machine. Is that a general way to do it? Or different?
+[01.12.21 09:27:53] alik: No, it won't add performance in any way
+[01.12.21 09:28:40] jaime: We'll save memory on trids.
+[01.12.21 09:28:53] alik: what is your current branch in git for development?
+[01.12.21 09:29:30] jaime: jaime_research
+[01.12.21 09:36:21] jaime: nothing changed there
+[01.12.21 09:39:02] alik: I think I wrote the very first version of webinjects in this module
+[01.12.21 09:39:17] alik: Callbacks On_Create, On_Data, On_Form
+[01.12.21 09:39:25] jaime: Does this code look familiar? :)
+[01.12.21 09:39:26] alik: Parser is also mine.
+[01.12.21 09:39:43] jaime: Silver gave me this code!
+[01.12.21 09:40:04] alik: Yes, I did it through 3-4 intermediaries five years ago)
+[01.12.21 09:41:55] jaime: That's powerful! :)
+[01.12.21 09:44:01] alik: please explain about these files
+
+webinject_data_x64.h
+webinject_data_x86.h
+webinject_rdata_x64.h
+webinject_rdata_x86.h
+webinject_text_x64.h
+webinject_text_x86.h
+
+payload_x86.h
+payload_x64.h
+loader_x64.h
+[01.12.21 09:50:26] jaime: payload_xx - this is code that is injected into the browser itself, there are hooks
+[01.12.21 09:54:05] jaime: webinject_ in sections, for project when we have one exe file or dll, loader + webinject in one. Without trike, haven't needed it yet, I think for BC
+[01.12.21 09:56:09] jaime: loader_x64.h doesn't need it at all, I must have added it by accident. In studio. those .hniks don't need it either, they are generated during the build.
+[01.12.21 09:57:07] alik: Okay.
+[01.12.21 09:58:47] jaime: So what should I look in which direction?
+[01.12.21 10:02:49] alik: I will formulate in the evening, while I deal with the sources
+[01.12.21 10:09:36] jaime: And the module is used now? Now there is a lull
+[01.12.21 10:11:26] alik: Alas, I don't know.
+[06.12.21 07:47:34] alik: Hey, knock me when you do
+[06.12.21 07:58:51] jaime: Hi!
+[06.12.21 07:58:53] jaime: Here
+[06.12.21 08:09:55] jaime: Hi, I'm here if you need me.
+[06.12.21 08:57:39] jaime: Hi! Do you get any messages from me?
+[06.12.21 09:37:34] alik: Hi, yes. I'm building an injector module.
+[06.12.21 09:39:43] jaime: Is it building? Maybe I haven't coded everything.
+[06.12.21 09:40:41] jaime: Can I ask you a silly question? :)
+[06.12.21 09:42:00] jaime: I got crash on memmove, looked through all arguments, everything is ok.
+[06.12.21 09:42:10] jaime: ``
+03.12.2021 20:29:12 7: KiUserExceptionDispatcher (:0) - 0x49190BD0
+03.12.2021 20:29:12 6: MoveSmall (d:\agent\_work\3\src\vctools\crt\vcruntime\src\string\amd64\memcpy.asm:521) - 0xB5E0197
+
+```
+[06.12.21 09:42:34] jaime: I can't understand, replaced by memmove_s, everything is ok
+[06.12.21 09:51:47] alik: in memcpy - is dst initialized?
+[06.12.21 09:52:05] jaime: yes it's copying with overlap
+[06.12.21 09:52:28] alik: is the size ok too?
+[06.12.21 09:52:48] alik: don't cast types when copying
+[06.12.21 09:53:20] jaime: yeah, figuratively speaking, 200 bytes less buffer, no cast at all
+[06.12.21 09:54:07] jaime: I was thinking maybe on some alignments? Or optimization
+[06.12.21 09:57:15] alik: If not the structure, it's hardly related to alignment
+[06.12.21 10:03:09] jaime: radish, it stopped falling. :(
+[06.12.21 12:01:45] jaime: didn't text me? I was in offa, power cut.
+[06.12.21 12:09:30] alik: Nope.
+[15.12.21 10:06:55] alik: Hey, I found some old mittm sorts at my place. There more or less working model of proxies, look them please, maybe you will find something useful for yourself
+[15.12.21 10:09:11] alik:
+[15.12.21 10:12:06] jaime: Hi!
+[15.12.21 10:12:17] jaime: Yeah, I'll take a look! :)
+[15.12.21 10:12:54] alik: Classical interception is used there, but getting of configuration goes by ipc
+[15.12.21 10:14:06] alik: ipc - network model
+[15.12.21 10:16:11] jaime: isn't there a proxy in a separate thread for each request?
+[15.12.21 10:16:30] alik: I think not, I have to look
+[15.12.21 10:16:41] jaime: yes, I'll see.
+[16.12.21 07:35:41] jaime: hi.
+[16.12.21 07:35:52] jaime: there is a question about assembly!
+[12/16/21 07:35:57] alik: Hi.
+[16.12.21 07:36:16] jaime: dumpbin_Release.aplib.h how to build this h?
+[16.12.21 07:36:50] alik: This is a dll dump, in assembly events the packer is run and then converted to hex
+[16.12.21 07:37:50] jaime: I found it! The dll has this event.
+[16.12.21 07:38:08] alik: REACTOR_USE_APLIB set to 0, if you don't want to bother with compression
+[16.12.21 07:38:31] alik: in ReactorMain.cpp
+[12/16/21 07:42:00] jaime: In studio all the time some strange errors appear! :)
+[16.12.21 07:42:15] alik: This project is old, there will probably be errors
+[12/16/21 07:43:44] jaime: 'Cannot open include file: 'xdebug': No such file or directory' while this one
+[16.12.21 07:43:58] jaime: And you wrote that you have http2.0 implementation?
+[16.12.21 07:44:06] alik: yes
+[16.12.21 07:44:50] jaime: Will you drop it off sometime? :)
+[12/16/21 07:44:56] alik: Yeah, sure.
+[16.12.21 07:51:31] jaime: I can't google about xdebug is it part of portable_stl? There's a path to it in the inludes path
+[16.12.21 07:52:08] alik: And remove those inludes altogether
+[16.12.21 07:52:30] alik: it's stlport
+only 2013 studio supports it
+[16.12.21 10:04:16] alik: How are the inputs? Need any help?
+[16.12.21 10:12:52] jaime: Not yet.
+[16.12.21 10:13:00] jaime: Not linking :)
+[16.12.21 10:13:33] alik: What is it swearing at?
+[16.12.21 10:16:54] jaime: ``
+>NSPRInjects.obj : error LNK2001: unresolved external symbol "void __cdecl operator delete(void *,unsigned int)" (??3@YAXPAXI@Z)
+1>WinSockHook.obj : error LNK2001: unresolved external symbol "void __cdecl operator delete(void *,unsigned int)" (??3@YAXPAXI@Z)
+```
+[16.12.21 10:16:56] jaime: Sort of.
+[12/16/21 10:17:06]
+[16.12.21 10:18:21] jaime: Yeah, this could be my 2019
+[12/16/21 10:23:16] alik:
+[16.12.21 10:23:45] alik:
+[16.12.21 10:24:01] alik:
+[12/16/21 10:24:39] alik:
+[16.12.21 10:24:47] alik: Damn, the file won't load here
+[12/16/21 10:26:15] alik: https://www.sendspace.com/file/iqriep
+https://www.sendspace.com/delete/iqriep/667d52e18227a610f0016bf4b7412897
+
+pass 1
+
+is going to release, 2019
+[16.12.21 10:30:25] jaime: And please post it again.
+[16.12.21 11:04:21] alik: sec
+[16.12.21 11:04:32] alik: https://www.sendspace.com/file/0yzfo8
+https://www.sendspace.com/delete/0yzfo8/a3e2574e65615c5023cc9012b7e75bbb
+[16.12.21 11:37:09] jaime: I got it all. Thanks.
+[21.12.21 14:22:35] alik: Hi, how did you do with the problem?
+[21.12.21 14:23:05] jaime: Hi!
+[21.12.21 14:23:10] jaime: Did you text me?
+[21.12.21 14:23:35] alik: Here? Otr is glitching.
+[21.12.21 14:23:46] jaime: Here.
+[21.12.21 14:23:48] alik: Was you able to get the proxy from the source?
+[21.12.21 14:24:05] jaime: I got it all
+[21.12.21 14:24:05] alik: Or it did not fit?
+[21.12.21 14:24:22] jaime: There were some files missing, I took them from first archive.
+[21.12.21 14:24:37] jaime: I have looked, I was going to
+[21.12.21 14:25:10] jaime: I looked there reading zeus config
+[21.12.21 14:32:59] jaime: You went off
+[21.12.21 14:53:19] alik: Yeah, torus is down.
+There's a zeus parser, but it supports nested injections.
+[21.12.21 14:53:32] alik: It doesn't
+[12.01.22 20:42:50] alik: Hi, how's the progress with translating webins to asynchronous model?
+[13.01.22 10:02:54] jaime: Hi.
+[13.01.22 10:09:47] alik: Hi
+[13.01.22 10:18:43] jaime: I'm still dealing with asynchronous model, your example didn't work for me for some reason. Everything runs, but that's about it. Before new year I was finalizing some fixes of existing module, I was adding log posting to base64 (Frank asked for it, he suspected that binary data was getting lost), then I was adding separate log post dump to separate file for Hummer, and ours could not remove configuration, zeus (for injecting into page), it was sending every time. Had to add a small http server, which intercepts the request and allows you to configure the module a bit, but this is only in log mode.
+[13.01.22 14:45:31] jaime: ReactorDemo has a proxy server on port 32767, can I connect to it directly by browser?
+[13.01.22 14:52:28] alik: Hi, I think so. About operability - it doesn't work with new browsers, only for 32 bit, put browsers of 2013 versions, so you can check operability. Ff, ie.
+[13.01.22 15:02:15] jaime: I get that. That's what I was looking at on ff 32. It says it's okay, but there's no connection to the port. I specify the port as a proxy, then there is a connection, but the browser does not work.
+[13.01.22 15:02:35] jaime: You tell me what to read at MS on this topic. :)
+[13.01.22 15:03:27] alik: Wait a minute, the port that the reactor allocates - only the dll connects to it.
+It doesn't handle connections as a socket
+[13.01.22 15:03:55] jaime: Got it.
+[13.01.22 15:05:41] jaime: ``Reactor: Loading ...
+REACTOR: OK, config compiled: 1 blocks
+GzDecompSrv started on port 32769
+REACTOR: Unpacking ApLib'ed DLL image ...
+We are injected to firefox.exe (00001F6C)
+We are injected to firefox.exe (00000F0C)
+We are injected to firefox.exe (00002FC4)
+We are injected to firefox.exe (00002FF4)
+We are injected to firefox.exe (00002AFC)
+We are injected to firefox.exe (00002E74)
+We are injected to firefox.exe (00000BF8)
+We are injected to firefox.exe (000004F8)
+
+```
+[13.01.22 15:09:29] alik: better test on ff which has not switched to cartoon model
+[13.01.22 15:12:16] jaime: Yeah, got it. I'll find it.
+[14.01.22 13:54:08] jaime: Hi.
+[14.01.22 13:54:26] jaime: It worked fine with old FF. Thank you.
+[14.01.22 13:59:13] jaime: I really don't understand what's the point? There is a separate thread for each connection.
+[14.01.22 14:04:54] alik: not asynchronous in multiple threads?
+[14.01.22 14:09:05] jaime: Well, yes the ServerClientThread thread is created in common.cpp
+[14.01.22 14:13:25] jaime: came connection on proxy port, it creates thread for Common.cpp:640
+[14.01.22 14:13:49] jaime: there are really eVents passed through
+[14.01.22 14:14:05] jaime: but they are more for termination
+[14.01.22 14:15:50] jaime: you make the socket non-blockable and work through select, and you check its death through the event

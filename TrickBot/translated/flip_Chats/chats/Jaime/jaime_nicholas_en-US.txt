@@ -1,0 +1,45 @@
+[26.07.21 13:42:48] nicholas: Hi.
+Your module collects credit cards, right?
+[26.07.21 13:44:42] nicholas: I redirected Frank to you about it)
+[01.10.21 10:15:59] jaime: Hi. :)
+[01.10.21 10:16:55] nicholas: Hi. Here)
+[01.10.21 10:17:49] jaime: Silver asked me to watch pwgrabber while you were gone. :)
+[01.10.21 10:18:08] jaime: Yesterday. but I got nothing
+[01.10.21 10:18:18] jaime: :)
+[01 10.10.21 10:19:22] nicholas: Yeah, I just came back from vacation.
+Now, as I understand, you do not need to collect?
+[01.10.21 10:19:56] jaime: I might do it for general education :)
+[01.10.21 10:20:19] jaime: I also have studio 19
+[01.10.21 10:20:25] nicholas: Do it, for general education. Just switch to slim branch.
+[01.10.21 10:20:49] jaime: I want to ask you to put some libs into repo
+[01.10.21 10:21:08] nicholas: Only I haven't built it in studio for a long time, it's built from under cmake.
+[01.10.21 10:22:28] nicholas: And what libs?
+[01.10.21 10:22:47] nicholas: Are you on master branch?
+[01.10.21 10:24:21] jaime: yes on the master
+[01.10.21 10:25:02] jaime: sqlite3, libbot, wolfssl
+[01.10.21 10:25:07] jaime: libinject
+[01.10.21 10:25:33] jaime: I've got ѕqlxcol, wolf was
+[01.10.21 10:25:40] nicholas: This is already very old version with libs and other stuff. Need to switch to slim.
+[01.10.21 10:26:14] jaime: mutant deal bot, and I'm pulling the injector piece by piece! :)
+[01.10.21 10:26:22] jaime: Got it! :)
+[01.10.21 10:32:44] nicholas: Yes, in the past he was a great Frankenstein. )
+There's layering, judging by the code, from >3 developers )
+[01.10.21 10:34:15] nicholas: anyway, you duplicate pwgrab just in case?
+[01.10.21 10:35:06] jaime: I will build it. If anything, I'll try to help.
+[01.10.21 10:35:15] jaime: I'll take it apart there :)
+[01.10.21 10:36:59] jaime: Add plz ../libbot/reflective/AntiHooks.h to the repo I am in slim branch
+[01.10.21 10:46:34] nicholas: Sec.
+[01.10.21 10:49:20] jaime: There is also a dependency on ;D:\Project\winapiproxies\WinApiProxies don't know what it is.
+[01.10.21 10:49:44] jaime: Don't get mad at me, I'm last in line :)
+[01.10.21 10:50:51] nicholas: winapiproxies just changed its location, look in the folder.
+[01.10.21 10:51:47] jaime: Oh, it's ok, I found it.
+[01.10.21 10:51:50] nicholas: In antihooks.h only
+```
+#pragma once
+DWORD RemoveHooksFromDll(const char* dllName);
+void RemoveHooks();
+```
+[01.10.21 10:58:39] jaime: Almost ok. GetAPI needs in libbot added his
+[01.10.21 10:58:39] jaime: winppi.h I don't have
+[01.10.21 11:00:33] nicholas: That's from WinSdk.
+Try without it

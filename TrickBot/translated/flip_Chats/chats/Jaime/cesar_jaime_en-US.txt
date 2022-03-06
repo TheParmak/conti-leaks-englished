@@ -1,0 +1,491 @@
+[29.07.21 09:40:04] cesar: hi
+[29.07.21 09:42:22] cesar: sure
+[29.07.21 09:48:17] cesar: ok, you tested it, right?
+[29.07.21 09:48:26] cesar: I'm going straight to production?
+[29.07.21 10:01:44] cesar: it's done
+[29.07.21 13:22:52] cesar: should be live
+[29.07.21 13:23:08] cesar: I'll write to admin, he'll check
+[12.08.21 18:14:09] jaime: Hi.
+[12.08.21 18:16:30] cesar: hi.
+[08.13.21 08:30:49] jaime: Hi.
+[13.08.21 08:31:11] jaime: yesterday you didn't hurry to find out what's the problem with vnc?
+[13.08.21 08:31:44] jaime: Is there some environment variable you need to use?
+[13.08.21 08:51:44] cesar: hi
+[13.08.21 08:52:14] cesar: I understand vntz creates a hidden desktop
+[13.08.21 08:52:31] cesar: and it somehow affects the work of injectDll
+[13.08.21 08:57:29] jaime: Yesterday Grem wrote me that there is an environment variable which is set when you create a process
+[13.08.21 08:57:53] jaime: How do you check it? Run vnc and then inject?
+[13.08.21 08:58:18] cesar: can the environment variable affect the injectdll?
+[13.08.21 08:59:33] jaime: no it can't, but you can disable desktop name checking on it if that's the case.
+[13.08.21 09:03:48] cesar: last night they wrote about a problem with these modules
+[13.08.21 09:04:15] cesar: it was late, I didn't get the specifics of the problem imprinted in my head
+[13.08.21 09:04:40] cesar: there seems to be a problem when vnts start
+[13.08.21 09:04:54] cesar: browser injections stop working
+[13.08.21 09:05:07] cesar: but need to be more specific
+[13.08.21 09:30:17] jaime: who to contact?  :)
+[13.08.21 09:32:43] cesar: clarify
+[13.08.21 09:48:41] cesar: look, finally they put the vnts module in, there are modes, bot mode, user mode (as Timka works, the Holder sees what you're doing).
+Bot mode is just right for the injections test or the user mode when he's not at the computer. Injects don't work when you're starting to climb,
+and supposedly they should work because you're sitting as a user
+[13.08.21 09:48:53] cesar: here's hammer's description of the problem
+[13.08.21 09:49:42] cesar: i.e. they run the browser on a hidden desktop and test the injections
+[13.08.21 09:49:59] jaime: how can I replicate this?
+[13.08.21 09:50:25] jaime: I guess the desktop name is not the one I have allowed
+[13.08.21 09:50:41] cesar: on the test machine run vnc2Dll module
+[13.08.21 09:50:53] jaime: You have to pick up the name and add it to exceptions
+[13.08.21 09:51:07] cesar: right now it looks like the name "test"
+[13.08.21 09:51:31] cesar: which ones are you allowed?
+[13.08.21 09:51:38] cesar: let's try to change it
+[13.08.21 09:52:03] jaime: default, sbox_alternate_desktop, sbox_alternate_desktop2
+[13.08.21 09:52:29] jaime: don't let me test add it no problem
+[13.08.21 09:53:03] jaime: So after running vnc2dll, I connect to this machine via vnc?
+[13.08.21 09:53:24] cesar: I haven't used vnc, I can't tell you
+[13.08.21 09:53:49] cesar: we'll replace module soon, make sbox_alternate_desktop
+[13.08.21 09:53:59] cesar: I'll have Hammer check it out
+[13.08.21 09:54:51] jaime: thanks. :) now I think we'll figure it out
+[13.08.21 10:07:54] cesar: no, I looked at the code, it generates the name of the product
+[13.08.21 10:08:29] cesar: Sid = SessionId;
+	Rand_ObjectNameA(&Sid, HDESK_PREF_DESKNAME, Info->Global->DesktopNameA);
+[13.08.21 10:08:51] cesar: hDesk = Tramp_OpenDesktopA(g_HDesk.GlobalInfo.Global->DesktopNameA, dwFlags, fInherit, dwDesiredAccess);
+[13.08.21 10:11:24] cesar: this must be for avs not to put detects
+[13.08.21 10:11:48] cesar: what if you remove check of desktops from injectDll ?
+[13.08.21 10:13:31] jaime: It was a lock on the module that launches browsers, so it wouldn't inject into them
+[13.08.21 10:13:42] jaime: Should I pass this name at startup?
+[13.08.21 10:14:30] jaime: Or really through an environment variable?
+[08/13/21 10:14:49] cesar: okay, stop.
+[13.08.21 10:15:15] cesar: so injectDll gets injected into everything except default, sbox_alternate_desktop, sbox_alternate_desktop2
+[13.08.21 10:15:48] jaime: It won't inject into default, sbox_alternate_desktop, sbox_alternate_desktop2 only
+[13.08.21 10:15:51] jaime: only
+[13.08.21 10:16:21] cesar: then why are we having problems?
+[08.13.21 10:16:38] jaime: Well, I was thinking different name
+[13.08.21 10:17:18] jaime: That's the only thing I thought would be different on vnc
+[13.08.21 10:17:42] cesar: i.e. the desktop name is random in vnc, and injectdll should be injected into these browsers too
+[13.08.21 10:18:17] jaime: Yeah
+[13.08.21 10:18:38] jaime: Maybe make some kind of constant part? Before random?
+[13.08.21 10:18:56] jaime: I will be guided by it?
+[13.08.21 10:19:28] cesar: So our problem is that there is no injector in these browsers
+[13.08.21 10:19:37] cesar: But it should be
+[13.08.21 10:19:51] cesar: the module cannot be injected only into default, sbox_alternate_desktop, sbox_alternate_desktop2
+[13.08.21 10:20:09] jaime: that's right
+[13.08.21 10:20:24] cesar: then you need to understand why there's no injection
+[13.08.21 10:20:30] jaime: It's not injected into those names
+[13.08.21 10:20:39] jaime: Sorry.
+[13.08.21 10:20:50] jaime: It should be default, sbox_alternate_desktop, sbox_alternate_desktop2
+[13.08.21 10:20:57] cesar: then I don't get it
+[13.08.21 10:21:04] jaime: Our name is random, so it's not injected
+[13.08.21 10:21:31] cesar: importdll just creates names sbox_alternate_desktop, sbox_alternate_desktop2
+[13.08.21 10:22:17] jaime: Need wall methodology, run vnc2dll, vnc, inject
+[13.08.21 10:22:21] jaime: bench
+[13.08.21 10:22:36] jaime: than we'll guess here :)
+[13.08.21 10:22:51] cesar: you can take any test machine and run these modules
+[13.08.21 10:23:19] jaime: I don't really understand how to work with vnc
+[13.08.21 10:23:19] cesar: talk to your tester
+[13.08.21 10:23:57] cesar: he'll tell you how to run or ask you to run everything through vnc
+[17.08.21 10:49:33] jaime: hi!
+[17.08.21 10:49:45] jaime: you can update via vnc
+[17.08.21 10:49:46] jaime: https://privatlab.com/s/v/OjA9OajN7MiqRj9EVp8Y
+[17.08.21 10:49:47] cesar: hi
+[17.08.21 10:49:52] cesar: ok
+[17.08.21 10:49:56] jaime: 28cc82d612c6898ca588abda4b017595
+[17.08.21 10:49:59] cesar: did you check?
+[17.08.21 10:50:10] jaime: for group tst31 can you?
+[17.08.21 10:50:21] jaime: I did, but not in battle mode
+[17.08.21 10:50:26] cesar: ok, I'll upload it as a test one
+[17.08.21 10:50:29] jaime: We want to give it a full run
+[17.08.21 10:50:34] jaime: Thank you.
+[17.08.21 11:17:14] cesar: filled
+[17.08.21 11:17:17] cesar: tinjectDll
+[17.08.21 11:17:22] cesar: tinjectlogDll
+[17.08.21 11:18:37] jaime: yeah thanks a lot!
+[17.08.21 13:31:34] jaime: All ok checked.
+[17.08.21 13:31:57] jaime: Can you transfer to main version?
+[17.08.21 14:15:31] cesar: ok, I will.
+[17.08.21 14:17:51] cesar: 32 bit version without changes?
+[17.08.21 15:27:10] jaime: I haven't checked 32 yet. I will check it tomorrow.
+[17.08.21 15:40:21] cesar: ok.
+[18.08.21 16:56:02] jaime: Hi.
+[18.08.21 16:56:10] jaime: Can you download the update?
+[18.08.21 16:56:12] cesar: hi
+[18.08.21 16:57:08] jaime: It turned out in the config all url are case sensitive, lacking the ignore option
+[18.08.21 16:57:24] jaime: I made a version without distinction, I think it's not necessary at all
+[18.08.21 16:58:07] jaime: GP is in url settings and GPI is needed
+[18.08.21 16:58:43] cesar: i.e. wrong config?
+[18.08.21 16:59:13] jaime: i think they just got used to it differently
+[18.08.21 16:59:35] jaime: I noticed that in one url
+[18.08.21 17:00:03] jaime: But who knows how many there really can be
+[18.08.21 17:01:41] jaime: Maybe format descriptions are different I have written `I - compare url parameter case insensitive (for English alphabet only)
+[18.08.21 17:03:10] cesar: who did you write to about this?
+[18.08.21 17:03:16] cesar: did you text adam?
+[18.08.21 17:03:27] cesar: i honestly don't know who makes configs
+[18.08.21 17:03:43] cesar: did you write to sylver?
+[18.08.21 17:04:34] jaime: I'll write to rasarb when he's online
+[18.08.21 17:05:05] cesar: update you mean config?
+[18.08.21 17:05:13] cesar: or replace module?
+[18.08.21 17:05:41] jaime: I am now suggesting to replace the module
+[18.08.21 17:06:30] jaime: And when the developer comes back we'll decide if this feature is needed at all or not
+[18.08.21 17:06:48] cesar: ok, drop it off, should I go straight to production?
+[18.08.21 17:06:55] jaime: I think it's bullshit.
+[18.08.21 17:07:04] jaime: Yeah, right away.
+[18.08.21 17:07:09] cesar: maybe the other way around?
+[18.08.21 17:07:31] jaime: Do it like a test
+[18.08.21 17:07:39] cesar: I - compare case-sensitive
+[18.08.21 17:08:09] jaime: I don't care, I just had a doc, it was written so, I did it that way :)
+[18.08.21 17:08:35] jaime: Let's upload it as a test and show it to the client
+[18.08.21 17:09:24] jaime: https://privatlab.com/s/v/4jnx7JAXdyHNQ5EkBmle
+[18.08.21 17:09:33] jaime: 3c653d4cdaa46ecd73432e7d578b24bc
+[18.08.21 17:09:54] jaime: Thanks in advance :)
+[18.08.21 17:10:29] cesar: ok, I'll upload it soon
+[18.08.21 17:10:48] jaime: There's some reason our version with the log didn't start, we wanted to check it, I suspected the config was not loading. There again a new config even more :)
+[18.08.21 17:11:06] jaime: Instead of log version we launched a normal one
+[18.08.21 17:11:18] cesar: you need good pads
+[18.08.21 17:11:38] cesar: is there still a log version of the config?
+[18.08.21 17:11:52] cesar: it has another name?
+[18.08.21 17:11:59] cesar: I don't know
+[18.08.21 17:12:38] jaime: not config one for one client, another for another
+[18.08.21 17:13:17] cesar: instead of logging, you started a normal one - what do you mean?
+[18.08.21 17:13:35] cesar: was the normal module launched instead of the log module?
+[18.08.21 17:13:58] jaime: That's right
+[18.08.21 17:14:40] cesar: maybe the tester screwed up something there
+[18.08.21 17:15:08] jaime: Anything is possible :)
+[18.08.21 17:15:26] cesar: v1.rar
+File is in process, temporarily unavailable.
+[18.08.21 17:15:36] cesar: is there more archive being uploaded?
+[18.08.21 17:15:45] jaime: no it's small
+[18.08.21 17:15:53] jaime: I'm uploading it again.
+[18.08.21 17:16:11] jaime: https://privatlab.com/s/v/72n7VooMLotNm35lBYJn
+[18.08.21 17:16:27] jaime: 3c653d4cdaa46ecd73432e7d578b24bc
+[18.08.21 17:17:32] cesar: ok, 10 min
+[18.08.21 17:19:21] jaime: Working through vpn check, everything is ok with me.
+[18.08.21 17:20:03] jaime: Client tried it and complained about some sites, I found this problem
+[18.08.21 17:21:13] cesar: we put only tinjectDll to test, right?
+[18.08.21 17:21:20] cesar: don't touch injectDll yet
+[18.08.21 17:25:25] cesar: test one is filled in
+[18.08.21 17:26:09] jaime: how to run with log?
+[18.08.21 17:30:24] cesar: tinjectDll
+[18.08.21 17:33:29] jaime: Thanks :)
+[19.08.21 10:25:32] cesar: hi
+[19.08.21 10:25:49] cesar: modules are uploaded into production on Angelo's request
+[19.08.21 10:26:00] cesar: reminding you about 32-bit modules
+[19.08.21 10:26:09] cesar: they are already some outdated
+[19.08.21 10:32:50] jaime: hi,
+[19.08.21 10:32:59] jaime: Yeah, I'm working on it soon.
+[20.08.21 08:16:38] jaime: Hi.
+[20.08.21 08:16:55] jaime: assembled and checked 32 modules
+[20.08.21 08:17:08] cesar: hi.
+[20.08.21 08:17:14] cesar: Repeat message
+[20.08.21 08:17:14] jaime: https://privatlab.com/s/v/Xy35J5nOErUOxEGgN4j6
+[20.08.21 08:17:21] jaime: hi.
+I assembled and tested 32 modules
+[20.08.21 08:17:27] jaime: https://privatlab.com/s/v/Xy35J5nOErUOxEGgN4j6
+[20.08.21 08:17:32] cesar: ok, perfect.
+[20.08.21 08:17:40] jaime: b65265619b87f6197dd9a8e94df4ed67
+[20.08.21 08:19:36] cesar: did you test it?
+[20.08.21 08:19:43] cesar: straight to production?
+[20.08.21 08:19:44] jaime: yes of course
+[20.08.21 08:20:16] jaime: go ahead :)
+[20.08.21 08:20:23] cesar: okay.
+[20.08.21 08:20:33] jaime: 32 Axis still left?
+[20.08.21 08:20:52] cesar: not many
+[26.08.21 10:34:24] jaime: Hi.
+[26.08.21 10:35:17] jaime: Can I send you an update for injecta? Can you put it not as a test version? Let's give it a whirl.
+[26.08.21 10:42:44] jaime: https://privatlab.com/s/v/nRJ4BN9OLOS6kAQ5gVQV
+[26.08.21 10:42:56] jaime: 9c54f41fdf64333b98f173a86e667c8d
+[26.08.21 10:43:09] jaime: I'll send you anything! Need to run away.
+[26.08.21 16:05:22] cesar: Repeat message
+[26.08.21 16:21:38] jaime: Hi!
+[26.08.21 16:21:38] jaime: It's already green!
+[26.08.21 16:21:38] jaime: I wanted you to upload it as a test version
+[26.08.21 16:21:49] jaime: Oh, finally :)
+[26.08.21 16:23:29] cesar: send me the link
+[26.08.21 16:24:45] jaime: https://privatlab.com/s/v/6GemkanrgdFWGwdBk0Am
+[26.08.21 16:24:45] jaime: a5e52b088e175098d13eae3f0354c5d1
+[26.08.21 16:24:55] jaime: It's not working like it should today
+[26.08.21 16:25:11] jaime: You can only use it as a test one.
+[26.08.21 16:25:31] cesar: File is in process, temporarily unavailable.
+[26.08.21 16:25:55] cesar: what are they processing there?
+[26.08.21 16:26:05] cesar: are they decrypting the archive?
+[26.08.21 16:27:09] jaime: I don't know.
+[26.08.21 16:27:14] jaime: I'll throw it again.
+[26.08.21 16:27:38] jaime: https://file.io/awcnm6KrdoIX
+[26.08.21 16:27:43] jaime: a5e52b088e175098d13eae3f0354c5d1
+[26.08.21 16:28:14] cesar: okay
+[26.08.21 16:31:08] cesar: tinjectDll is filled
+[26.08.21 16:42:57] jaime: thanks :)
+[30.08.21 13:25:46] jaime: Hi!
+[30.08.21 13:26:04] jaime: Can you drop the update as a test? :)
+[30.08.21 13:26:56] cesar: hi.
+[30.08.21 13:26:57] cesar: yes
+[30.08.21 13:28:10] jaime: https://file.io/prfSQOkpcLEj
+[30.08.21 13:28:24] jaime: 790592b51457fb0934ec9630d34ba123
+[30.08.21 13:28:32] jaime: Thanks :)
+[30.08.21 13:35:50] cesar: filled
+[30.08.21 13:35:50] cesar: tinjectDll
+[31.08.21 09:00:28] jaime: Hi. Such a question don't you have an example of a self-delete dll? :)
+[31.08.21 09:06:43] cesar: hi
+[31.08.21 09:06:58] cesar: nope
+[31.08.21 09:08:54] jaime: Too bad :)
+[31.08.21 09:09:20] jaime: will you put our test build into release?
+[31.08.21 09:09:57] cesar: already did, but not a test, but release one
+[31.08.21 09:21:45] jaime: thanks. I mean the one which was tinjectDll :)
+[31.08.21 09:22:34] cesar: yeah yeah, okay
+[31.08.21 10:53:03] jaime: I found code to remove https://github.com/LloydLabs/delete-self-poc but it's not working, no need to post it.)
+[31.08.21 10:53:34] cesar: okay, thanks.
+[02.09.21 08:40:00] jaime: Hi.
+[02.09.21 08:40:11] jaime: could you tell me when you update vnc? :)
+[02.09.21 08:40:40] cesar: hi, we updated
+[02.09.21 08:41:33] jaime: thanks. :)
+[03.09.21 10:24:10] jaime: hi.
+[03.09.21 10:24:19] jaime: Can you upload new build for testing?
+[03.09.21 10:24:47] jaime: https://file.io/IODAXjaNbzmF
+[03.09.21 10:24:57] jaime: 0c029096637ae85c650e564c63b20253
+[03.09.21 10:25:03] jaime: Thanks in advance :)
+[03.09.21 10:33:34] cesar: hi
+[03.09.21 10:33:36] cesar: ok
+[03.09.21 10:49:45] cesar: filled
+[03.09.21 10:55:50] jaime: how's tinject?
+[03.09.21 10:55:58] cesar: yes
+[03.09.21 10:57:27] cesar: test on the 2nd admin, on the 3rd could not fill
+[03.09.21 10:57:42] cesar: wrote to admin, waiting for them to fix the problem
+[03.09.21 10:57:46] cesar: I'll write back then
+[09.09.21 15:10:18] jaime: hi.
+[09.09.21 15:10:48] jaime: Can I ask you to implement test module?
+[09.09.21 15:13:46] jaime: https://file.io/JE8kisqDdPP9
+[09.09.21 15:13:56] jaime: 7ab249f681c332240b7c91bb24836bd9
+[09.09.21 17:15:20] cesar: hi, I'll upload it soon
+[09.09.21 17:16:48] jaime: Thanks :)
+[09.09.21 17:28:17] cesar: it's done
+[09.09.21 17:28:19] cesar: tinjectDll
+[09.09.21 18:02:13] jaime: Thank you. Let's load it now :)
+[10.09.21 12:18:03] jaime: Hi.
+[10.09.21 12:18:30] jaime: Load the module like yesterday, under test.
+[10.09.21 12:18:36] jaime: Thanks in advance.
+[10.09.21 12:18:59] jaime: https://file.io/Zc3jQFsMO4mr
+[10.09.21 12:19:12] jaime: 36cf84bb7ee551080ce3420e86907b8c
+[10.09.21 12:23:52] cesar: hi
+[10.09.21 12:25:41] jaime: hi.
+[10.09.21 12:27:08] jaime: Studying the problem, please introduce me the module. :)
+[10.09.21 12:31:52] cesar: it is filled.
+[10.09.21 12:32:44] jaime: Thank you.
+[10.09.21 12:32:52] jaime: Thank you
+[13.09.21 16:41:26] jaime: And you can upload like last time. You must have uploaded under tinject worker.
+[13.09.21 18:03:01] cesar: What do you mean, like last time?
+[13.09.21 18:03:52] cesar: the larger one, 808kb
+[9/13/21/18:06:42] jaime: That's weird. There were no logs. It looks like there was a battle one under tinject.
+[9/13/21/18:13:37] jaime: Got it. I'll do it a little differently tomorrow.
+[14.09.21 13:45:16] jaime: Hi.
+[14.09.21 13:45:44] jaime: Please install me the module as a test.
+[14.09.21 13:45:46] jaime: https://file.io/qHHl5uCeKDli
+[14.09.21 13:45:53] jaime: 5f59b9d041e6959fdc3dc2f55a2a2a45b8
+[14.09.21 13:46:05] jaime: There is only one tseta in the archive
+[14.09.21 13:46:09] jaime: thanks.
+[14.09.21 13:46:16] jaime: Thank you.
+[14.09.21 13:46:42] cesar: hi.
+[14.09.21 13:47:47] cesar: is this a test one?
+[14.09.21 13:47:51] cesar: like combat.
+[14.09.21 13:48:07] jaime: Well it's combat, we'll just see it on the client.
+[14.09.21 13:48:13] jaime: There's no debugging
+[14.09.21 13:48:24] jaime: Experimental version
+[14.09.21 13:48:26] cesar: okay
+[14.09.21 13:50:20] cesar: done
+[14.09.21 13:50:45] jaime: thanks. :)
+[15.09.21 07:25:47] jaime: hi.
+[15.09.21 07:26:09] cesar: hi.
+[15.09.21 07:26:11] jaime: tested yesterday, got better.
+[15.09.21 07:26:26] jaime: Please update combat
+[15.09.21 07:26:40] cesar: last one? the one you uploaded to tinject?
+[15.09.21 07:26:59] jaime: I'll send you the build from today's date
+[15.09.21 07:27:18] cesar: ok
+[15.09.21 07:27:21] cesar: and 32 bit
+[15.09.21 07:27:33] jaime: https://file.io/JW3m6fIgQs1x
+[15.09.21 07:27:50] jaime: e2b22a436fb93b5238a5db93db9717fa
+[15.09.21 07:28:01] jaime: 32 now checking
+[15.09.21 07:28:11] cesar: ok
+[15.09.21 07:29:19] cesar: you want me to upload test one too?
+[15.09.21 07:30:04] jaime: Yes. There was a release one yesterday instead of test one
+[15.09.21 07:30:21] cesar: I'll change the test one's name
+[15.09.21 07:30:42] cesar: I'm afraid we have test ones uploading avers
+[15.09.21 07:31:25] jaime: there are debugs and other stuff?
+[15.09.21 07:31:37] cesar: That's it.
+[15.09.21 07:31:49] cesar: if you need it for tests, just give it to me.
+[15.09.21 07:31:56] cesar: I'm not uploading yet
+[15.09.21 07:32:05] jaime: they'll come for me soon :)
+[15.09.21 07:32:10] cesar: we'll upload with different names
+[15.09.21 07:32:23] cesar: do you write your phone number there?
+[15.09.21 07:32:30] cesar: or address?
+[15.09.21 07:32:51] jaime: Of course, if you have any questions call and write :)
+[15.09.21 07:33:09] cesar: )
+[15.09.21 07:33:42] cesar: but in general, it's a serious matter
+[15.09.21 07:34:00] cesar: don't even compile on your machine, better on a virtual machine
+[15.09.21 07:34:18] jaime: not me only on virtual machine
+[15.09.21 07:34:18] cesar: new versions of compilers and linkers have a lot to add
+[15.09.21 07:35:40] jaime: I clean Rich-Header in build
+[15.09.21 07:36:35] cesar: it's basically the library versions
+[15.09.21 07:37:04] cesar: but the file itself may have a lot to add
+[15.09.21 07:37:19] cesar: studio serial number
+[15.09.21 07:37:35] cesar: a lot of things, it's better to be ready
+[15.09.21 07:45:36] jaime: I'm certainly ready, but I don't want to. :)
+[15.09.21 07:45:50] jaime: Didn't you hear anyone in Korea?
+[15.09.21 07:46:13] cesar: heard something
+[9/15/21 08:08:25] jaime: https://file.io/7FtA45nt1eQS
+[15.09.21 08:08:41] jaime: db72a1d907d16c1b0b2f926a74894cfd
+[15.09.21 08:08:44] jaime: 32 build
+[15.09.21 08:08:48] cesar: ok
+[20.09.21 10:04:39] jaime: hi.
+[20.09.21 10:04:57] jaime: Will you update module please
+[20.09.21 10:04:59] jaime: https://file.io/EryoaM2k66Jh
+[20.09.21 10:05:10] jaime: 2f9e75adb7a2ae6975064b62da8343e1
+[20.09.21 10:05:53] jaime: By client's request not all variants of vnc shell startup are implemented
+[20.09.21 10:06:40] jaime: Fix environment variable hold=true, set vnc on HDESK and HDESK tmp start
+[20.09.21 10:06:51] cesar: hi
+[20.09.21 10:06:53] cesar: I'll upload it soon
+[20.09.21 10:07:09] jaime: thanks :)
+[20.09.21 10:07:12] cesar: got it, read in the channel about the problem
+[20.09.21 10:08:03] jaime: Only for 64 so far
+[20.09.21 10:08:09] jaime: 32 will check now
+[20.09.21 10:08:26] cesar: how do you upload test?
+[20.09.21 10:09:03] cesar: or already tested?
+[20.09.21 10:10:14] jaime: Pour as combat, there are minimal changes. Just get the environment variable
+[20.09.21 10:10:26] cesar: okay.
+[20.09.21 10:11:59] cesar: Filled
+[20.09.21 10:12:10] jaime: great thanks :)
+[20.09.21 17:49:30] jaime: Busy? Can I send you an assembly? Checked it on 32 bit, optimized it a bit.
+[20.09.21 17:53:13] cesar: I will.
+[9/20/1921 17:56:43] jaime: https://file.io/WiSkkTJjkRRS
+[20.09.21 17:56:53] jaime: 050f040d5833636323038a1d4f324c63
+[20.09.21 17:57:01] jaime: Both for 32 and 64
+[20.09.21 17:57:07] jaime: Thank you.
+[20.09.21 17:57:11] cesar: ok, for test only?
+[20.09.21 17:57:21] jaime: no, you can work.
+[20.09.21 17:57:28] cesar: okay.
+[20.09.21 17:58:16] jaime: Thank you. Will you tell me when you update?
+[20.09.21 17:58:26] cesar: yeah, about 10 minutes.
+[20.09.21 18:01:22] cesar: done
+[9/20/19-21 18:04:54] jaime: Perfect. Thanks :)
+[21.09.21 11:55:08] jaime: Hi.
+[21.09.21 11:55:34] jaime: can you give a command to reload the module in combat bots? :)
+[21.09.21 11:55:54] cesar: hi
+[21.09.21 11:56:03] cesar: 62 injectDll start
+[21.09.21 11:56:17] cesar: unload the old one, download and start a new one
+[21.09.21 11:56:30] jaime: Not that module will reload where it already works?
+[21.09.21 11:56:42] jaime: Or what am I missing? :)
+[21.09.21 11:57:37] jaime: And on all how to restart?
+[21.09.21 11:58:23] cesar: at all you have to write to adam
+[21.09.21 11:58:38] cesar: he will give that command to all online bots
+[21.09.21 12:06:26] jaime: Ok, got it :) Thanks.
+[9/23/221 07:40:37] jaime: Hi.
+[23.09.21 07:41:00] jaime: Please update WebInject
+[9/23/221 07:41:40] jaime: https://privatlab.com/s/v/VDWQ0YNAVYhpJj8LDeEO
+[23.09.21 07:41:51] jaime: 3d9e0c87754c7d158762114235c0d24f
+[23.09.21 07:41:59] jaime: Thanks :)
+[23.09.21 07:45:59] cesar: hi
+[23.09.21 07:46:02] cesar: I'll throw it in.
+[23.09.21 07:50:40] jaime: Thank you.
+[23.09.21 07:50:48] cesar: it's on.
+[23.09.21 07:51:01] cesar: both test and production
+[9/23/221 07:51:19] jaime: Perfect. :)
+[09/23/221 08:44:21] jaime: And how do I overload the module with working bots? Is it for Adam?
+[23.09.21 08:46:11] cesar: repeat
+[9/23/221 09:19:33] jaime: How do you reload the module by working bots? Is that for Adam?
+[23.09.21 09:23:21] cesar: yes
+[27.09.21 20:00:00] cesar: you want me to dump the machine logs?
+[27.09.21 20:01:16] cesar: v2z51sb3VVwu4rHvc3rdd5
+Download: https://qaz.im/load/A2D823/9zY2GS
+Delete: https://qaz.im/index.php?a=delete&q=494689754
+[27.09.21 20:08:45] jaime: And by the way, bill is not the last one :)
+[27.09.21 20:09:11] cesar: ff?
+[27.09.21 20:09:18] jaime: No injection
+[27.09.21 20:09:18] cesar: yeah, haven't updated for ages
+[27.09.21 20:09:32] cesar: how not latest?
+[27.09.21 20:09:52] jaime: It's not ok
+[27.09.21 20:09:56] cesar: must be the last one
+[27.09.21 20:09:56] jaime: You looked in the wrong place!
+[27.09.21 20:10:01] cesar: okay.
+[27.09.21 20:16:05] jaime: I don't see FF in my logs, only chrome
+[27.09.21 20:18:19] cesar: I did, and times
+[27.09.21 20:18:22] cesar: and 2 times
+[27.09.21 20:18:48] jaime: FF not 32?
+[27.09.21 20:18:58] cesar: sec
+[27.09.21 20:19:18] cesar: yes, 32
+[27.09.21 20:20:14] jaime: 32 on 64 bits is not injectable. There is a problem with 32 bit FF libs
+[27.09.21 20:21:22] cesar: ok, sorry.
+[03.11.21 08:56:10] jaime: hi.
+[03.11.21 08:56:31] jaime: shall we redo the hdesk definition mechanism then?
+[03.11.21 08:57:03] cesar: hi
+[03.11.21 08:57:14] cesar: I'll change it to hold
+[03.11.21 08:57:22] cesar: we'll think of a better way later
+[03.11.21 08:59:30] jaime: Sure. Maybe when competing to pass something, or create a variable by the name of the desktop
+[11/15/21 10:05:45] jaime: Hi!
+[11/15/21 10:34:10] cesar: hi
+[11/15/21 10:40:03] jaime: Robin sent me a new injector config, can you update it? :)
+[15.11.21 10:40:18] jaime: https://logdog.pw/?yjzsCz
+pw:g1LempcZcFCb94TdS84g1LempcZccFCb94TdS8
+[15.11.21 10:44:03] cesar: throw the config to adam
+[15.11.21 10:44:16] cesar: I can't upload them, no access
+[15.11.21 10:44:50] jaime: Of course, it would be better if Robin threw it to him right away! Not through his head. Got it.
+[15.11.21 10:47:34] cesar: just check the config
+[15.11.21 10:50:09] jaime: I can only check the syntax, and that will boot! :)
+[15.11.21 10:50:28] jaime: That's okay.
+[15.11.21 10:52:21] cesar: well, make sure you check syntax.
+[06.12.21 09:12:50] jaime: Hi!
+[06.12.21 09:13:16] cesar: hi.
+[06.12.21 09:17:34] jaime: can you update debug version of injector?
+[06.12.21 09:17:56] cesar: yes
+[06.12.21 09:20:39] jaime: https://file.io/4LbPcUU7JKQw
+[06.12.21 09:20:51] jaime: 26b701e5974d685fe52435bee01d69bf
+[06.12.21 09:20:59] jaime: Log version. Thank you.
+[06.12.21 09:26:54] cesar: ok.
+[06.12.21 09:39:48] cesar: done
+[06.12.21 09:39:59] jaime: Thank you. :)
+[06.12.21 09:39:59] cesar: tinjectDll, 64 bits only
+[06.12.21 09:40:16] jaime: Yeah. Run tinjectDll ?
+[06.12.21 09:44:16] cesar: yes
+[08.12.21 15:35:08] jaime: Hi!
+[08.12.21 15:35:38] jaime: Can we have another logged inject update? :)
+[08.12.21 15:37:02] jaime: https://file.io/gbh7U6JL5vX1
+[08.12.21 15:37:13] jaime: efd8a69ea5d3c31c10feba6ed3566271
+[08.12.21 15:37:18] jaime: thanks! :)
+[08.12.21 15:37:32] cesar: hi, ok
+[08.12.21 15:44:59] cesar: filled
+[08.12.21 15:45:08] cesar: tinjectDll, only 64
+[08.12.21 15:45:45] jaime: Yep.
+[09.12.21 09:10:33] jaime: Hi! You can update again only on auction.
+[09.12.21 09:10:37] jaime: https://file.io/Sf2sHkLSxmy9
+[09.12.21 09:10:47] jaime: b0c077157f48290429ddeace438ab172
+[09.12.21 09:11:05] jaime: This is test 64. Thank you.
+[09.12.21 09:13:07] cesar: hi, ok.
+[09.12.21 09:50:18] cesar: filled
+[09.12.21 09:50:23] cesar: tinjectDll 64 only
+[09.12.21 10:02:23] jaime: yeah thanks! :)
+[12/20/21 10:00:45] jaime: Hi!
+[12/20/21 10:01:03] cesar: hi.
+[20.12.21 10:01:25] jaime: we missed you! :)
+[20.12.21 10:01:44] cesar: me too )
+[20.12.21 10:02:02] jaime: Where have you been? Been sick?
+[20.12.21 10:02:26] cesar: Yeah, temp's over 40, haven't had that in a while.
+[20.12.21 10:03:18] cesar: admin couldn't upload the module?
+[20.12.21 10:05:03] jaime: for some reason it would not start.
+[20.12.21 10:05:14] jaime: Is it ok now?
+[20.12.21 10:05:24] cesar: maybe you mixed up admins?
+[20.12.21 10:05:40] cesar: drop the module
+[20.12.21 10:05:42] jaime: I'll send you the module, update? As soon as possible?
+[20.12.21 10:06:39] jaime: https://file.io/5Oe9HLSLQYfD
+[12/20/1921 10:06:59] jaime: 6aa0cea037a3012d78f74638f10ea7a9
+[20.12.21 10:07:16] jaime: As far as I remember only for auction
+[20.12.21 10:07:29] jaime: There is only 64 version
+[20.12.21 10:08:02] cesar: ok
+[20.12.21 10:11:52] cesar: uploaded to both admins
+[20.12.21 10:11:56] cesar: tinjectDll
+[20.12.21 10:13:06] jaime: Thank you!
+[12/23/221 12:05:12] cesar: hi
+[12/23/12/21 12:05:18] cesar: drop a new one in.
+[12/23/12/221 12:14:18] jaime: hi!
+[12/23/221 12:14:27] jaime: 5 sec coming up! :)
+[12/23/221 12:16:40] jaime: https://file.io/WyHijn3OPne4
+[12/23/12/221 12:16:49] jaime: 8b238289b399fcf0fab167c22a261d41
+[12/23/12/221 12:16:52] jaime: Thank you!
+[12/23/12/21 12:17:02] cesar: ok.
+[12/23/12/221 12:17:03] jaime: How are you feeling?
+[12/23/12/21 12:17:14] cesar: i'm fine now.
+[12/23/221 12:17:45] jaime: :) you don't feel so good on New Year's Eve with a virus! :) Great!
+[12/23/12/21 12:19:49] cesar: It's done.
+[12/23/221 12:21:18] jaime: Thanks!

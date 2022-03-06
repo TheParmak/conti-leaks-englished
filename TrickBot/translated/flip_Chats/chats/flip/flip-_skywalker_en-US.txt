@@ -1,0 +1,106 @@
+2020-10-07T12:21:20 skywalker -> flip
+Hi. Didn't you work with shellcode?
+
+2020-10-07T12:22:09 flip -> skywalker
+Hi. Been working for a while. Forgot a little, need to remember. :)
+
+2020-10-07T12:22:49 skywalker -> flip
+I'll describe the problem, if you know what to do.
+
+2020-10-07T12:23:19 skywalker -> flip
+In a nutshell, I use msfvenom to generate a set of commands, when I save and run as an elf file, everything is ok, when I do through point to array, through console application, there is an error when called for some reason.
+
+I use https://github.com/DimopoulosElias/SimpleShellcodeInjector
+
+2020-10-07T12:23:51 skywalker -> flip
+Here is the version for win, I am using the array on linux
+
+2020-10-07T12:25:25 flip -> skywalker
+Let me check it out.
+
+2020-10-07T12:26:19 skywalker -> flip
+Ok
+
+2020-10-07T12:35:50 flip -> skywalker
+1. you created an elf with some code.
+
+2020-10-07T12:36:09 flip -> skywalker
+2.  How did you pull the code you stuck in the array?
+
+2020-10-07T12:45:06 flip -> skywalker
+https://github.com/UserExistsError/DllLoaderShellcode.git
+
+2020-10-07T12:45:33 flip -> skywalker
+This is where it was all step by step.
+
+2020-10-07T12:47:00 flip -> skywalker
+The dll loader as a shellcode, the extactor of this shellcode, the test libuha and the actual test for injection.
+
+2020-10-07T12:49:32 skywalker -> flip
+1.yes
+
+2020-10-07T12:49:50 skywalker -> flip
+2.msfvenom outputs to an array of c
+
+2020-10-07T12:53:06 flip -> skywalker
+He's not just converting this elf into an array? Maybe he doesn't want an elf, but a bin with a pure text segment?
+
+2020-10-07T12:53:39 flip -> skywalker
+Look at the first bytes match the elf header
+
+2020-10-07T13:00:40 flip -> skywalker
+There was such a format in dos as com. It was just a piece of code, with relative transitions. Without any headers whatsoever. Here's a shellcode something similar. You need to rip out the right piece of text segment from elf with, objdump and that's what you need to run through the array.
+
+2020-10-07T13:02:02 flip -> skywalker
+More precisely objcopy
+
+2020-10-07T13:45:35 skywalker -> flip
+> He's not just converting this elf into an array? Maybe he doesn't want an elf, but a bin with a pure text segment?
+I don't know. Everywhere on the web where I looked purely assembler not bytes were
+
+> Check the first bytes match the elf header
+Yes, they do.
+
+> More precisely objcopy
+I'll have to see how. I don't remember.
+
+2020-10-07T13:51:25 flip -> skywalker
+objcopy --output-format=binary --only-section=.text a.elfcode.bin like this
+
+2020-10-07T13:51:58 skywalker -> flip
+Ok. I'll try
+
+2020-10-08T10:00:24 flip -> skywalker
+Hi. How was it?
+
+2020-10-08T10:03:37 skywalker -> flip
+Hi. How did it work out?
+
+2020-10-08T15:05:45 flip -> skywalker
+
+" [13:00:23] <flip> Hi. How was it?
+
+2020-10-08T15:19:42 skywalker -> flip
+Hi
+
+2020-10-08T15:19:51 skywalker -> flip
+Something's broken.
+
+2020-10-08T15:20:42 skywalker -> flip
+Yes. It worked, only in a very different way.... I couldn't find the text objump section.
+
+2020-10-08T15:21:39 flip -> skywalker
+Yeah I see. :)
+
+2020-10-08T15:21:49 flip -> skywalker
+How did you do it?
+
+2020-10-08T15:24:35 skywalker -> flip
+msfvenom -p windows/messagebox -f exe
+
+2020-10-08T15:25:00 flip -> skywalker
+msfvenom - I'm not familiar with it. :)
+
+2020-10-08T15:25:38 skywalker -> flip
+Yeah, me too. Part of some big framework for IS testers
+

@@ -1,0 +1,183 @@
+[27.07.21 12:15:59] angelo: Write @dane
+[27.07.21 12:16:10] angelo: our best coder )
+[27.07.21 12:16:21] angelo: I warned him a friend will write )))
+[27.07.21 12:19:08] angelo: he is a good dude
+[25.08.21 13:06:00] angelo: To access the daemon you use HTTP API at
+http://127.0.0.1:8081/
+
+Since there is no authorization, it is obligatory to use --local_admin=1, so no one from the Internet can access the API
+If you need access from the Internet, it is better to use proxying via nginx (to http://127.0.0.1:8081/) with added authorization (basic or cert).
+
+
+In case of error JSON is returned
+{"status": false, "error": "error information"}
+
+If successful, JSON is returned:
+{"status": true, ....}
+
+When requesting logs, if successful, the text of the log is returned immediately (without JSON)
+
+The following queries are supported:
+
+1) Restart the daemon
+POST /api/reboot
+reboot=1
+
+2) Getting statistics
+GET /api/stat/get
+
+3) Cleaning statistics
+POST /api/stat/clear
+clear=1
+
+4) Getting the config
+GET /api/config/get
+
+5) Installing the config
+POST /api/config/set
+ping=Sec - how often to send ping to the bot
+ping_limit=Sec - bot idle timeout (how many seconds to turn it off if there is no data from it). Preferably it should be = ping * 2 + 2
+wait_bot=Sec - how long to wait for the connection of the bot after the client
+established=Sec - timeout idle session between client and bot.
+wait_client=Sec - timeout between client connection and receiving data from it
+
+6) Enable connection logging on socks and vnc
+POST /api/log/start
+start=1
+
+7) Disable connection logging on socks and vnc
+POST /api/log/stop
+stop=1
+
+😎 Get the connection log on socks and vnc (if it was previously enabled)
+GET /api/log/get
+
+
+9) Get the system log (data in it will depend on the value of --loglevel)
+GET /api/syslog/get
+
+10) Get the online list
+GET /api/online/list
+[02.12.21 12:09:50] angelo: hi
+[02.12.21 12:10:04] angelo: You'll have a folder builder, there's a subfolder bat_Stannum in it, make a copy of the last one, the last one was audi.bat, rewind it to the name of the new protec, and edit it
+change the lines there
+@set PRJ_NAME=Audi where you put the name of your project
+@set UPDATE_VER=15 change the value up, you need 16
+@set HOST_LIST=upperdown.eu*upperdown.in where you put your domain names
+save everything and run the batch file
+before that, create a folder in the root of c:\files, there will be ready to build, archive prj_*.zip, check the dllku from there, run
+check the build, another batnick, you will have another folder test, I will download too, in this folder copy the build dll, and rename it to bot.dll
+and run Run.bat
+if everything is fine, in your dashboard will appear your project with your bot's online
+[02.12.21 12:10:08] angelo: test
+[02.12.21 12:10:09] angelo: 1233
+[02.12.21 12:10:13] angelo: 1
+[02.12.21 12:10:41] angelo: 1
+[02.12.21 12:10:47] angelo: test
+[02.12.21 12:10:52] jaime: 2
+[02.12.21 12:10:57] angelo: You'll have a folder builder, there's a subfolder bat_Stannum in it, make a copy of the last one, the last one was audi.bat, rewind it to the name of the new protek, and edit it
+change the lines there
+@set PRJ_NAME=Audi where you put the name of your project
+@set UPDATE_VER=15 change the value up, you need 16
+@set HOST_LIST=upperdown.eu*upperdown.in where you put your domain names
+save everything and run the batch file
+before that, create a folder in the root of c:\files, there will be ready to build, archive prj_*.zip, check the dllku from there, run
+check the build, another batnick, you will have another folder test, I will download too, in this folder copy the build dll, and rename it to bot.dll
+and run Run.bat
+if everything is fine, in your dashboard will appear your project with your bot's online
+[02.12.21 12:11:12] angelo: I'm racking my brain.
+[02.12.21 12:12:42] jaime: What's not clear?
+[02.12.21 12:13:33] angelo: made a copy of the binary and changed it into Bugati
+[02.12.21 12:13:41] angelo: but how to edit a batcher ?
+[02.12.21 12:14:02] jaime: put far
+[02.12.21 12:14:21] angelo: total will not work ?
+[02.12.21 12:14:30] jaime: okay
+[02.12.21 12:14:38] angelo: ok
+[02.12.21 12:14:53] jaime: F4 on baonic and correct
+[02.12.21 12:15:11] angelo: pfft!)
+[02.12.21 12:15:12] angelo: got it
+[02.12.21 12:15:36] angelo: after running the batch file in c:\files the build crashes
+[02.12.21 12:16:04] angelo: before that, create a folder in the root of c:\files, there will be a ready-made build, prj_*.zip archive, check the dllku from there, run
+check the build, another batnick, you will have another folder test, I will download too, in this folder copy the build dll, and rename it to bot.dll
+and run Run.bat
+if everything is fine, in your dashboard will appear your project with your bot's online
+[02.12.21 12:16:15] angelo: i don't understand it
+[02.12.21 12:16:53] angelo: do you think i can build on the main car ?
+[02.12.21 12:17:44] jaime: you can do
+[02.12.21 12:17:48] jaime: but not run
+[02.12.21 12:22:13] jaime: does our toad work for you?
+[02.12.21 12:22:21] angelo: yes
+[02.12.21 12:22:24] angelo: it works.
+[02.12.21 12:23:18] jaime: it's weird, tor proxy works, I checked, but no connection
+[02.12.21 12:23:34] angelo: not without bugs
+[02.12.21 12:23:39] angelo: but toad usually doesn't glitch
+[02.12.21 12:24:36] angelo: 1.
+2. Fill there the vps_proxy.run script with the following command
+scp vps_proxy.run root@ip_vps:/root
+3. Go to your VPPS and do 2 commands
+cd && chmod +x vps_proxy.run
+./vps_proxy.run -- --special-cert --backend=217.12.219.12
+[02.12.21 12:24:45] angelo: how do i upload a script ?
+[02.12.21 12:24:52] angelo: I have a file
+[02.12.21 12:25:01] angelo: Benny is doing it but I want to understand
+[02.12.21 12:25:19] jaime: scp is part of the putty package, file transfer via ssh
+[02.12.21 12:25:44] jaime: far has a built in module
+[02.12.21 12:26:03] angelo: thought it was possible to get in through my Ubuntu
+[02.12.21 12:26:07] angelo: don't like putty
+[02.12.21 12:26:11] angelo: there's tons of settings
+[02.12.21 12:26:19] jaime: you can use Ubuntu
+[02.12.21 12:26:25] jaime: there's scp
+[02.12.21 12:27:04] angelo: where to put the file itself ?
+[02.12.21 12:27:15] angelo: I don't understand it
+[02.12.21 12:27:41] angelo: this script from vps_proxy.run description
+[02.12.21 12:27:55] jaime: https://success.tanaza.com/s/article/How-to-use-SCP-command-on-Windows
+[02.12.21 12:28:13] jaime: is vps_proxy.run this one?
+[02.12.21 12:28:20] angelo: yeah
+[02.12.21 12:29:18] jaime: scp vps_proxy.run root@ip_vps:/root run in the folder with this script, the command will copy this script to the vps folder root
+[02.12.21 12:30:49] jaime: from putty take the file pscp.exe put in the folder of the script and give pscp -scp vps_proxy.run root@ip_vps:/root
+[02.12.21 12:32:16] angelo: you have to run in the folder with this script
+[02.12.21 12:32:22] angelo: sorry for stupidity my friend
+[02.12.21 12:32:49] angelo: i.e. I go to the path where the script is and from there in the terminal run the command ?
+[02.12.21 12:33:32] angelo: but how it will work, I'm in a folder on my local machine, not on the VPS
+[02.12.21 12:33:33] jaime: yes
+[02.12.21 12:33:59] jaime: so you copy the file from your machine to the vpska
+[02.12.21 12:34:45] jaime: scp is secure copy
+[02.12.21 12:35:03] angelo: ip(here I write ip)_vps:/root
+[02.12.21 12:35:17] angelo: yes ?
+[02.12.21 12:35:24] angelo: got it
+[02.12.21 12:35:26] angelo: i think i got it
+[02.12.21 12:35:34] jaime: ip_vps - replace this with ip
+[02.12.21 12:35:42] angelo: that's it
+[02.12.21 12:35:49] angelo: now I have clarity in my head
+[02.12.21 12:35:53] jaime: :)
+[02.12.21 12:36:07] angelo: 37.5 ((
+[02.12.21 12:36:12] angelo: not too bright as it is
+[02.12.21 12:36:19] jaime: not nice.
+[02.12.21 12:36:27] jaime: the temperature
+[02.12.21 12:36:42] jaime: do it once now and you'll understand
+[02.12.21 12:37:00] angelo: i'm like that, all i care is to do something once, no matter what
+[02.12.21 12:37:10] angelo: i remember the first time i changed a headlight..... it was horrible
+[02.12.21 12:37:14] jaime: it's cool to put msys on the machine, it's basically linux on the windup, all these commands are there
+[02.12.21 12:37:27] angelo: or rather a headlight bulb
+[02.12.21 12:38:07] angelo: it's still complicated for me
+[02.12.21 12:38:11] jaime: I once could not change the bulb, it was too much to remove. :)
+[02.12.21 12:38:21] jaime: That's why I advise far
+[02.12.21 12:38:45] angelo: yeah, i had a tough car, everything was fucked up
+[02.12.21 12:38:55] angelo: i did it on youtube
+[02.12.21 12:39:19] angelo: when I do something, it doesn't matter what, then everything goes like clockwork
+[02.12.21 12:39:41] jaime: well, it will be so now!  :)
+[02.12.21 12:39:52] jaime: I'm going to get some coffee! :)
+[02.12.21 12:41:28] angelo: Come on.
+[02.12.21 12:41:33] angelo: I gotta eat too
+[02.12.21 12:41:37] angelo: somehow
+[02.12.21 13:02:42] angelo: did you talk to benny?
+[02.12.21 13:14:52] jaime: no, I haven't.
+[02.12.21 13:15:16] angelo: I think he's a very mature guy.
+[02.12.21 13:15:19] angelo: You and you
+[02.12.21 13:15:22] angelo: I'm already embarrassed
+[02.12.21 13:15:45] jaime: :) and what are you talking about?
+[02.12.21 13:16:03] angelo: well, we are trying to do a task
+[02.12.21 13:48:00] angelo: nitrogen, when you get here - let me know! did you get all points starting from point 5?
+[02.12.21 13:48:07] angelo: this makes me uncomfortable
+[02.12.21 13:49:29] jaime: Why?
+[02.12.21 13:50:50] angelo: I don't know, you and you
