@@ -1,0 +1,232 @@
+[16.06.21 10:01:23] dash: Hi
+[16.06.21 10:01:47] dash: Silver told you to show the source code)
+[16.06.21 10:01:48] dash: https://mega.nz/file/rU4UTAiC#ifsIzZepiw4vn3E75izDLg-1mCKyV6IfvkT8ivw4YjA
+[16.06.21 10:01:57] dash: Password: "w^kDfSx~+r#AmK6v" - without quotes
+[16.06.21 10:02:37] dash: Stubs are generated normally only in msvc2010
+[16.06.21 10:02:57] stout: Ok, I'll take a look.
+[16.06.21 10:03:52] dash: I made only for .exe and x32 so far, without substitution of the parent process and without obfuscation of strings
+[16.06.21 10:04:09] stout: Which revision of studio? (professional or ...)
+[16.06.21 10:04:28] dash: The project itself in msvc2019 enterprise
+[16.06.21 10:04:48] dash: The stubs themselves are compiled in msvc2010 ultimate
+[16.06.21 10:05:30] stout: Yeah, that's it. I see
+[16.06.21 10:07:16] dash: I've already generated several stubs, ESET doesn't see them) I can send them if you need)
+[16.06.21 10:07:50] stout: When I look in detail, I'll write then)
+[16.06.21 10:07:58] dash: Okay)
+[16.06.21 13:10:13] stout: I looked through the code. Didn't read it thoroughly. I compared it to the original one and noticed a number of changes. What's the difference, what have you added? Please, tell me in few words.
+[16.06.21 13:25:56] dash: I removed the second shellcode layer. I added GetApi with generating hashes for each compilation with different seed, payload is loaded into svchost using Process Hollowing and small fixes for crypter, because after adding CreateProcessHollowing function it started just dumping invalid addresses or operations or failing by itself)
+[16.06.21 13:27:25] dash: I still have to make line obfuscation, x64 and .dll support and parent process spoofing)
+[16.06.21 13:31:39] dash: I don't have access to dyncheck yet, so I use ESET NOD32 to check samples, because according to my statistics it is the most plunderous and often quite picky
+[16.06.21 13:33:16] stout: Yes. I see. Well, this is just the beginning, probably a simple crypto. Further probably have to make it by profiles - they're such add-ons for a certain type of load.
+[16.06.21 13:34:20] dash: And who will define these profiles?
+[16.06.21 13:35:43] stout: This is coordinated with silver`. I'll clarify, I'll let you know. Profiles are related to the fact that not all of the load just deploys and works. There are some tricks.
+[16.06.21 13:36:52] dash: I see, okay. I'll continue to do the TOR then)
+[16.06.21 13:37:32] stout: Do you have any questions about the intricacies of the crypter?
+[16.06.21 13:38:32] dash: I had them at first)) but as time passed I began to understand how everything works there, maybe not completely, but no questions yet) if anything, I'll ask)
+[16.06.21 13:48:34] stout: Okay. The main thing is to understand what happens there)
+[09.07.21 09:25:12] dash: https://mega.nz/file/nJ42TIoS#V5Pz3YsQrefZd7OtV2LdNloYoXqQkiHV4AEHgQ3vilo
+```
+r#c2]~]RnA4%?kvq
+```
+[09.07.21 09:26:06] dash: All the functionality of what I do is in StubFunctions .cpp/.h
+[09.07.21 09:26:26] stout: Ok, thanks, I'll take a look)
+[09.07.21 09:26:39] dash: Last days I was trying to optimize it all so I could obfuscate
+[09.07.21 09:26:54] dash: But too many problems came up, I decided to finish the functional and then switch to defumigation)
+[09.07.21 09:27:56] dash: And another question, does it make sense to make stub functions generated with garbage? Or you can just plug them in separately and use?
+[09.07.21 09:28:45] stout: It makes sense) But ask me, what do you mean exactly?
+[09.07.21 09:28:51] stout: What password?
+[09.07.21 09:28:56] dash: r#c2]~]RnA4%?kvq
+[09.07.21 09:29:36] dash: In StubFunctions - functions to create process, to replace parent, to find needed parent and other functions
+[09.07.21 09:29:40] dash: I mean them)
+[09.07.21 09:34:56] stout: I can't answer that yet... I'll take a closer look.
+In general, I myself use two approaches:
+1) functions are generated and plugged in as two files (.cpp and .h) - this is garbage, execution is never passed to this code, lies to confuse, has links to real code.
+2) A file with the working code is taken, but it is tagged with the comment areas that are there. This file is wrapped in code. From it, the blocks indicated by tags are selected, they are then wrapped in code, which divides the entire execution into two branches - live and non-live code.
+This practice is a good way to fend off detects, every time new code is generated...
+[07.09.21 09:43:41] dash: 1) But won't static analysis kick them out of the challenge and analysis branch?
+2) This way looks more promising in my opinion)
+[07.09.21 09:46:05] stout: These methods work together)
+[09.07.21 09:46:12] stout: I don't understand the first question.
+[09.07.21 09:58:11] dash: Now everything is clear) no questions))
+[09.07.21 10:03:56] stout: That's for fighting with emulation detects. According to my observations, AV executes code on all possible branches, as much as he can get. With this scheme it goes to garbage code too, and I've got really total crap there, cyclic function calls among themselves, division by zero there (judging by varnings at compile time). In short, it goes on these branches in the woods, there and stays, it comes out the time to check)))
+[09.07.21 10:04:11] stout: I got such a bugfix with garbage code...
+[09.07.21 10:30:32] dash: Got it) I should probably do something like that in time)
+[13.07.21 10:20:48] stout: Hi
+[13.07.21 10:23:04] stout: I should start a rev session.
+[22.07.21 07:36:12] dash: Hi.
+[22.07.21 07:36:14] dash: dashbyte@jabber.ru
+[22.07.21 07:36:40] stout: Hi.
+[22.07.21 07:36:44] stout: thanks
+[22.07.21 12:34:05] dash: Hi, can you tell me if there is a way to measure the length of an assembly instruction without screwing in third-party libraries?
+[09.08.21 09:18:30] stout: In place?
+[09.08.21 09:27:26] dash: hi, yes
+[09.08.21 09:28:17] stout: Tell me, what's your overall crypto readiness?
+[09.08.21 09:31:24] dash: so far only done for exe + Process Hollowing + parent substitution, now doing for dll
+[09.08.21 09:33:44] dash: By the way, programs we'll put into stub - will they always be of release build?
+[09.08.21 09:35:37] stout: Yes, mostly always
+[09.08.21 09:36:00] stout: Can you give me a rough estimate of when the release is ready?
+[09.08.21 09:45:13] dash: Up to two weeks approximately)
+[09.08.21 09:50:34] dash: Are there any deadlines or requirements for finishing the project?
+[09.08.21 09:52:38] stout: If this task requires 2 weeks, will the deadline of 1 week speed up the process?))
+[09.08.21 09:53:25] stout: No deadline yet, I just need to know the readiness time...
+[09.08.21 09:55:10] dash: [ ](https://ojdglzhrquash4igbx6e6wlthe3si4biabcpfopiw33uohvaufjgipad.onion/direct/iNK9NEAR6t3bmyNNyunDszmNmuyEcYiJCZ?msg=Cdsino6nEGkK7dqgz) 2 weeks - this is with a small margin, just in case) and in general, if you need faster, of course, it can be done, evening and weekend time still exist)
+[09.08.21 09:56:13] stout: Nah, don't touch weekends, there's no point in working on weekends
+[09.08.21 09:57:32] stout: It would be if the deadline was overturned and the deadline would be burning, well, then yes... But it's just a matter of knowing.
+Please make a working version with exe first, then build the dll.
+[09.08.21 09:57:41] stout: I.e. to release the exe version
+[09.08.21 09:58:18] stout: When can you release the exe version?
+[09.08.21 10:01:26] dash: Within 2 days
+[09.08.21 10:02:26] stout: Ok, then release exe version and description of how to crypt (without water, preferably), then deal with dll.
+[09.08.21 10:02:51] stout: I have an exe deadline of 12
+[09.08.21 10:03:49] stout: This is not an official deadline, this is a date when I'm waiting for an exe crypto, if something goes wrong - not fatal. But we will be guided by this date
+[09.08.21 10:04:22] stout: Tell me, what did you used to do before working here?
+[09.08.21 10:04:56] stout: I'm interested in skills, not in jobs
+[09.08.21 10:06:31] dash: 10 years I wrote an anticheat system.)
+[09.08.21 10:07:48] stout: Did you work alone?
+[09.08.21 10:10:20] dash: Yes, it was my product. I wanted to develop it with someone, because sometimes I didn't have enough time, but I never dared to share my code I've been writing for years)
+[09.08.21 10:10:46] stout: I understand)
+[09.08.21 10:11:21] stout: You mostly worked with system and splits, you never worked with web?
+[09.08.21 10:11:46] stout: Do you know any scripts?
+[09.08.21 10:14:12] dash: Yes, most of the client part is in C, the server part is in Qt. I know about web - php, not too much, but enough to understand it)
+[09.08.21 10:14:28] dash: I never worked with scripts
+[09.08.21 10:15:35] stout: You never worked with scrum?
+[09.08.21 10:17:32] dash: Nope) I was alone, but I know about it)
+[09.08.21 10:17:48] stout: I see.)
+[09.08.21 10:17:59] stout: Okay. I'm waiting for crypter on Thu.
+[09.08.21 10:18:28] dash: :handshake:
+[10.08.21 15:16:00] dash: Hi, that's probably why you were asking about scripts yesterday)
+[10.08.21 15:16:08] dash: Is this script running in PowerShell?
+[10.08.21 15:21:03] stout: I don't see the message, please repeat it
+[10.08.21 15:21:14] dash: Hi, that's probably why you asked about scripts yesterday)
+[10.08.21 15:21:17] dash: Is this script running in PowerShell?
+[10.08.21 15:21:54] stout: Asked for another reason. It's a coincidence, the task came from silver.
+[10.08.21 15:22:05] stout: Yeah, it looks like powershell
+[10.08.21 15:23:00] stout: any but a script, something from system scripts, powershell, cmd (bat), maybe js
+[10.08.21 15:23:26] dash: I see, thank you)
+[11.08.21 14:09:16] dash: Hi, I probably won't have time to redo for PowerShell before tonight, I hope it's not critical?
+[11.08.21 14:10:41] stout: No, not critical. Hi. Send it tomorrow then.
+[11.08.21 14:10:42] dash: Eset's log file is not complicated, but because I don't really know this scripting language, trivial things get complicated.
+[12.08.21 00:15:20] dash: Hi, I finally finished it) I read and looked at the code in PowerShell - it became easier and clear what to do)
+[12.08.21 00:15:45] dash:
+[12.08.21 00:18:00] dash: ``
+An example of the result of the script:
+0;2021-08-11T01:07:13.243;C:\1.txt;@Teststring.Eicar;DESKTOP-AQB43FA\Test;D:\Notepad\Notepad2.exe
+1;2021-08-11T01:08:18.512;C:\2.txt;@Teststring.Eicar;DESKTOP-AQB43FA\Test;D:\Notepad\Notepad2.exe
+2;2021-08-11T01:08:30.754;C:\3.txt;@Teststring.Eicar;DESKTOP-AQB43FA\Test;D:\Notepad\Notepad2.exe
+
+Supported output fields:
+  Record number
+  Time of detection
+  Object detected
+  Type of virus
+  User name
+  Name of program (or process) in which the virus was detected
+```
+[12.08.21 00:19:21] dash: If you need to change or modify anything, just let me know)
+[12.08.21 09:15:57] stout: Hi, thanks
+[16.08.21 09:33:40] dash: Hi, I need a few more days, in some cases relocation is not done correctly at crt loads
+[16.08.21 09:34:30] dash: I seem to have fixed everything, but I want to check everything
+[16.08.21 09:37:26] stout: Ok, check it.
+[16.08.21 09:37:30] stout: Hi)
+[25.08.21 16:30:26] stout: Hi.
+[26.08.21 08:02:44] dash: Hi, sorry for delaying the release, I remember, I'm a little worried about the release and constantly testing + want to reduce the number of marriage, today I will throw)
+[26.08.21 09:01:30] stout: Hi. Tell me if zanzi contacted you about crypter? Did you send him something of your developments?
+[26.08.21 09:04:56] dash: Nope, zanzi never contacted me, fish only occasionally asks for advice)
+[26.08.21 09:05:22] stout: Can you send me code as it is now?
+[26.08.21 09:05:28] stout: Or is there a fresh version in git?
+[26.08.21 09:06:22] dash: I haven't uploaded fresh version to git yet, yes, I'll do it)
+[26.08.21 13:21:06] stout: You're taking too long to copy))
+[26.08.21 14:53:42] dash: Oh, started cooking and forgot).
+[26.08.21 14:53:53] dash: I uploaded to the git, but I can also skip, as would be more convenient?
+[26.08.21 14:54:39] stout: Let it be in the git
+[26.08.21 14:54:43] stout: Thanks, I'll take a look.
+[26.08.21 14:54:49] stout: He can't crypto yet?
+[26.08.21 14:56:13] dash: x32 is good at crypting, x64 still has bugs)
+[26.08.21 14:56:32] dash: I also wanted to ask about readme, should it be written in English?
+[26.08.21 14:57:14] stout: Yes, but the basics. I.e. what's required to build, instructions on how to build, on crypto.
+[26.08.21 14:57:29] stout: Write more
+[26.08.21 14:57:37] stout: Nothing extra, just the basics.
+[26.08.21 14:57:57] dash: I see, and these cryptors that we make, will they be used somewhere or is it training?
+[26.08.21 14:58:18] stout: I can't answer unequivocally
+[26.08.21 14:58:51] stout: That the training, that's for sure, it is. But whether they will or not - that's the question.
+[26.08.21 14:59:29] dash: Do you know what everyone needs to make their own cryptor?
+[26.08.21 14:59:34] dash: Or only Silver knows that?
+[26.08.21 15:00:03] stout: This is such a test assignment, I guess.
+[26.08.21 15:00:25] stout: See who works
+[26.08.21 15:01:23] dash: Okay, good.)
+[26.08.21 15:06:29] stout: + training
+[26.08.21 15:07:30] dash: Well, that's for sure) here is a little different experience than the one I had when developing anticheat, but in general, everything is very similar)
+[26.08.21 15:10:09] stout: I was answering when you asked. It just came))
+[26.08.21 15:10:15] stout: Another message didn't come at all
+[26.08.21 15:11:12] stout: I wrote.
+ It's such a test assignment, I guess.
++ training.
+Let's see how it works.
+See how this one works.
+[02.09.21 12:49:04] dash: By the way, what about the crypto?
+[02.09.21 12:51:00] stout: Yes, for now the locker is a priority. If you suddenly get any ideas on cryptr, don't discard them, write them down...
+After a while you'll need to go back to ripter, maybe. Everything about it will be forgotten. That's why it should be canned, make some notes, a description, so you can go back to it easier later
+[02.09.21 12:51:41] stout: Or you can pass it on to another coder, for example.
+[02.09.21 12:55:28] dash: Okay)
+[02.09.21 13:35:26] dash: `- Compliance with requirements in "code design and builds"
+This includes the design of the program as a dll, as well as having an entry point for Cobalt Strike
+[02.09.21 13:35:52] dash: So the locker-anlocker is an .exe with a test launcher?
+[02.09.21 13:36:13] dash: And it needs Start entry point from Cobalt Strike` right?
+[02.09.21 13:37:29] stout: it looks like this is the dll for starting cobalt strike. Are you familiar with it?
+[02.09.21 13:38:13] dash: Nope, just learned what entry point to make)
+[02.09.21 13:38:56] stout: I myself do not know exactly. I need to clarify what is done there...
+[02.09.21 13:39:10] stout: I will try to ask another coder about it one day
+[02.09.21 13:44:17] dash: Maybe sylver knows, what it must be an exe or dll?
+[02.09.21 13:45:11] stout: Our projects mostly all have both exe and dll assembly
+[02.09.21 13:45:16] stout: Usually, it's not a problem.)
+[02.09.21 13:46:45] stout: Just everybody who start our software, usually each of them do it in his own way, so there are many configurations for one project
+[02.09.21 13:46:50] stout: There are different dlls even
+[02.09.21 13:49:08] dash: I see) I will make the locker as an .exe, then I will redo it if anything, I will have to work with Fish, I have never worked in a team before, it's hard to imagine how two different programmers with different code styles and stuff, will work on one project)
+[02.09.21 13:49:53] stout: I am for that)))
+[02.09.21 13:50:10] stout: And in general, a common skeleton with stubs is made, the project is broken into parts
+[02.09.21 13:50:50] stout: Every coder writes a module and makes it compatible by interface with the developed architecture
+[02.09.21 13:51:10] stout: The interface is sometimes tweaked, but not by the coder himself, but by agreement
+[02.09.21 13:52:07] stout: But there are different style requirements. Large companies introduce strict style rules for each of them.
+[02.09.21 13:52:25] stout: Then the programmer submits the code to the technical controller
+[02.09.21 13:52:26] stout: Then to the project
+[02.09.21 13:52:41] stout: Teamwork is basically all up to the git
+[02.09.21 13:52:47] stout: No guitar - no work)
+[02.09.21 13:52:58] stout: Skeleton fits into branch
+[02.09.21 13:53:41] stout: You make a module - you make a branch from the development branch, you finish the module, the teammate puts the branch into the development branch.
+[02.09.21 13:53:55] stout: While you write, other coder uses stout
+[02.09.21 13:54:15] stout: So 7 or 100 coders can work on one project
+[02.09.21 13:55:19] dash: I see, but I will have to do it in practice, I will see everything better)
+[02.09.21 13:55:43] dash: I already created a project on our repository, will I need to add a Fish there?
+[02.09.21 13:56:02] stout: I agree. But the skeleton should be common, everyone, relevant) That's why it's done first, by common agreement)
+[02.09.21 13:56:15] stout: Yes, add, and me too.
+[09.09.21 12:21:38] dash: Hey, Fish doesn't develop cryptolocker with me anymore?
+[09.09.21 12:30:23] stout: Hi. Yeah, he nervously declined.
+[09.09.21 12:30:55] stout: We need to think about architecture.
+[09.09.21 12:31:04] stout: Let's add another coder.
+[09.09.21 12:31:26] dash: Okay.)
+[09.09.21 12:33:19] stout: Sketch the architecture, I'll add more.
+[09.09.21 12:34:49] dash: I'll try.)
+[11.10.21 09:51:38] dash: Hi) welcome back!)
+[11.10.21 09:53:11] stout: Hi. Thanks.
+[11.10.21 09:53:26] stout: Sorry, that the architecture was not assembled (skeleton). Somehow did not have time.
+[11.10.21 09:55:02] dash: It's alright) I'm working on network search and file handling)
+[11.10.21 09:55:50] stout: I read that you tried bits and pieces. That's good. Let's put them together on a skeleton.
+[11.10.21 09:56:05] stout: Just a bit later)
+[11.10.21 09:57:31] dash: Good)
+[10/26/221 08:06:39] stout: Hi. How are you doing?
+[26.10.21 10:59:36] dash: Hi) everything is good) figured out the network search for computers and balls, I think this is one of the most important, the rest is easier and faster to do, I and sylver talked and came to the fact that on Halloween, I will try to make the first beta)
+[26.10.21 11:19:35] stout: Okay.)
+[28.10.21 10:14:06] dash: Hi.
+[28.10.21 10:21:01] dash: Will you please report back when you get here?
+[03.11.21 07:16:38] stout: Hi.
+[03.11.21 07:17:03] stout: I told him you were on sick leave, he didn't know...
+[03/11/21 07:18:06] stout: Yeah, he said he didn't know.
+[03.11.21 07:18:19] stout: A lot of coders are sick, unfortunately... Almost in turn...
+[03.11.21 07:18:34] stout: No problem.
+[03.11.21 07:18:37] stout: Get well)
+[03.11.21 07:19:25] stout: Don't go to hospital with work...
+[03.11.21 07:19:30] stout: Go have a rest)
+[09.11.21 03:21:08] dash: Hi, I'm still alive)) but not completely healthy, CT revealed 60% lung damage, I'm hospitalized, hope to be back on duty soon, beware, this corona is really scary thing, at such moments, I realize that you can only die so...
+[18.11.21 15:26:27] stout: Hi
+[11/18/21/17:26:03] dash: Hi.)
+[11/18/21 17:26:24] stout: Welcome back.
+[11/18/21 17:26:35] dash: Thank you.)
