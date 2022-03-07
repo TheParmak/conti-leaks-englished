@@ -1,0 +1,135 @@
+[28.09.21 06:43:54] gabr: ping
+[28.09.21 08:29:20] alexander.r: ping
+[28.09.21 08:48:31] gabr: hi
+[28.09.21 08:51:43] alexander.r: koo
+[28.09.21 08:58:11] gabr: Negative result by audio so far
+1) injections into the process with higher primes do not work (via COM too)
+2) between the audio process and COM no interaction via LPC/ALPC/PIPE etc., that is, the operation of "server" in this case is not possible, plus ALPC is filtered by SID
+3) there is no sense to load RPC in your process because we have a bent user
+In particular, here are all the RPC servers on the test machine
+[+] Exe starting RPC Server: C:{Windows\System32\AppVShNotify.exe
+[+] Exe starting RPC Server: C:\Windows\System32\BioIso.exe
+[+] Exe starting RPC Server: C:Windows\\System32\ByteCodeGenerator.exe
+[+] Exe starting RPC Server: C:{Windows\System32\FsIso.exe
+[+] Exe starting RPC Server: C:Windows\System32\FXSSVC.exe
+[+] Exe starting RPC Server: C:{Windows\System32\LsaIso.exe
+[+] Exe starting RPC Server: C:Windows\System32\lsass.exe
+[+] Exe starting RPC Server: C:{Windows\System32\mpnotify.exe
+[+] Exe starting RPC Server: C:{Windows\System32\NetEvtFwdr.exe
+[+] Exe starting RPC Server: C:{Windows\System32\NgcIso.exe
+[+] Exe starting RPC Server: C:Windows\System32\rdpclip.exe
+[+] Exe starting RPC Server: C:\Windows\System32\rdpinit.exe
+[+] Exe starting RPC Server: C:\Windows\System32\rdpshell.exe
+[+] Exe starting RPC Server: C:\Windows\System32\services.exe
+[+] Exe starting RPC Server: C:Windows\\System32\SgrmLpac.exe
+[+] Exe starting RPC Server: C:{Windows\System32\svchost.exe
+[+] Exe starting RPC Server: C:Windows\\System32\TCPSVCS.EXE
+[+] Exe starting RPC Server: C:{Windows\System32\WaaSMedicAgent.exe
+[+] Exe starting RPC Server: C:\Windows\System32\wimserv.exe
+[+] Exe starting RPC Server: C:\Windows\System32\wininit.exe
+[+] Exe starting RPC Server: C:\Windows\System32\winlogon.exe
+[+] Exe starting RPC Server: C:\Windows\System32\wlanext.exe
+[+] Exe starting RPC Server: C:{Windows\System32\IME\IMJP\IMJPDCT.EXE
+
+On the bright side, there is one more point of autostart via COM
+[28.09.21 08:58:46] gabr: No audio among RPC servers
+[28.09.21 09:00:38] alexander.r: what kind of Autostart?
+[28.09.21 09:03:54] gabr: via sihost.exe but there are also rights of the current user
+[28.09.21 09:04:12] alexander.r: that's normal
+[28.09.21 09:04:20] alexander.r: and about audio processing
+[28.09.21 09:04:35] alexander.r: how it is done in the winder
+[28.09.21 09:04:57] alexander.r: there must be a single process, responsible for it and the transmission to devices
+[28.09.21 09:06:29] gabr: but here there are also some nuances, audiodg.exe on the real hardware starts only if there is an audio stream, for example, if you open YouTube in the browser, on the virtual machine it is always running, I do not understand what is the reason
+[28.09.21 09:07:44] gabr: audiodg->audioses.dll + audioeng.dll so audio session and audioengine start
+[28.09.21 09:08:19] alexander.r: then you have to explore audio formats, right?
+[28.09.21 09:08:26] alexander.r: and look for bugs in their processing?
+[28.09.21 09:08:48] alexander.r: or processing is performed inside the process at first, and then it goes to audiodg?
+[28.09.21 09:09:51] alexander.r: there is a note about autorun in the confl
+[28.09.21 09:09:52] alexander.r: ?
+[28.09.21 09:10:11] gabr: no decoder must be in the system
+[28.09.21 09:10:23] gabr: about autorun
+[28.09.21 09:11:12] gabr: by the way, don't you have IO ninja tool there? Free version only takes FS sniffer but full version takes off Pipes and other IPC
+[28.09.21 09:11:27] alexander.r: I'll ask
+[28.09.21 09:12:12] gabr: https://ioninja.com/
+[28.09.21 09:12:20] alexander.r: ok
+[28.09.21 09:12:51] gabr: it's like whirshark, but more advanced in terms of local protocols
+[28.09.21 09:13:43] alexander.r: and where is the price7
+[28.09.21:09:09] gabr: I'll have a look
+[28.09.21 09:17:29] gabr: they have a subscription https://ioninja.com/account/subscription.html
+[28.09.21 09:18:05] alexander.r: is it enough for you for a year?
+[28.09.21 09:18:16] gabr: )))
+[28.09.21 09:18:32] alexander.r: choose a subscription, I'll give it to my accountant, and he'll send it to you together with my salary
+[28.09.21 09:18:43] gabr: I think I'm not the only one
+[28.09.21 09:18:50] gabr: 1 for the team
+[28.09.21 09:19:06] gabr: $60 a year
+[28.09.21 09:22:06] alexander.r: okay
+[28.09.21 09:22:53] gabr: you can subscribe offline there and just get the key and give it away
+[28.09.21 09:23:21] gabr: what if it checks host ID or something else
+[28.09.21 09:31:01] alexander.r: same price?
+[28.09.21 09:31:34] gabr: yes
+[29.09.21 15:37:54] gabr: I have 1 question, how much is it worth to write about persistence in public thread?
+[29.09.21 15:39:56] gabr: I mean, everyone reads everything, I think it's not the best solution in terms of information loss
+[29.09.21 21 21:22:14] alexander.r: so people read the confluence too
+[29.09.21 21:22:34] alexander.r: this is a chat room and a conflagration for those experts
+[01.10.21 09:58:55] gabr: looked at media file formats, the most interesting is ASF, there was a bug in 2019 but Microsoft did not break the details, i.e. it is necessary to put an old version of the Windows and diff see what the patch does. The form of the file itself is also not heavily documented, it is quite complex, it turns out a container in which may lie and mpeg and avi and so on, plus all that he supports the execution of scripts integrated into the file
+[01.10.21 10:58:19] alexander.r: does it have compression?
+[01.10.21 10:58:21] alexander.r: hi
+[01.10.21 10:58:35] alexander.r: and what about the authoran?
+[01.10.21 11:10:20] gabr: autorun added
+[01.10.21 11:10:27] gabr: well, yes there is compression
+[01.10.21 11:48:15] alexander.r: I have a request to you - tell us OS version (up to build number), on which you tested and found autorun
+[01.10.21 11:51:47] gabr: ok, well, not so critical I checked on VM and on the host, different builds (win10), but let's say on 7-8 also need to check
+[01.10.21 11:53:07] alexander.r: it is important for further use
+[01.10.21 11:53:17] alexander.r: to let people know in advance where it works
+[01.10.21 11:53:20] alexander.r: And where else you should test
+[01.10.21 11:57:06] gabr: yeah ok
+[01.10.21 13:35:02] alexander.r: Listen, are these branches in the winder, or should I create them?
+[01.10.21 13:42:15] gabr: yes
+[01.10.21 13:42:43] gabr: these are registered dlls
+[01.10.21 13:43:03] gabr: only change path to dll
+[01.10.21 13:44:04] alexander.r: and if there is no and add?
+[01.10.21 13:45:18] alexander.r: and what will fall off? if the old dll will not load sychost?
+[01.10.21 13:46:43] gabr: it is by default, sychost will not fail
+[01.10.21 13:47:10] alexander.r: what axis did you test on?
+[01.10.21 13:47:13] alexander.r: and sp
+[01.10.21 13:48:24] gabr: on 10, and if I'm not mistaken
+[01.10.21 13:48:51] gabr: not wrong on 7 sychost was with system rights
+[01.10.21 13:54:15] gabr: windows pro for workstation 10 build 19041 release 191206-1406
+[01.10.21 13:58:55] gabr: on VM 21H1 build 19043-1237
+[01.10.21 14:06:55] alexander.r: and os are clean?
+[01.10.21 14:10:28] gabr: yes, even without any activators
+[01.10.21 14:23:15] gabr: look, the point is, there is a dll in the system, it is called COM object, it is prescribed in the registry, all programs access it by number (clsid), that is, if it even during the update will change the name, etc., everything will work as before
+[01.10.21 14:58:20] alexander.r: yes, people are interested. they seem to have no such com objects
+[01.10.21 15:03:56] gabr: HKEY_CLASSES_ROOT\CLSID\{27F71832-6815-48CB-902A-7A1D891BA962} - 0 cmd
+HKEY_CLASSES_ROOT\CLSID\{294935CE-F637-4E7C-A41B-AB255460B862} - 0 cmd
+HKEY_CLASSES_ROOT\CLSID\{41FCCC3A-1FA1-4949-953A-6EE61C46A4D1} Microsoft.Audio.AudioClient Binder - 0 cmd
+HKEY_CLASSES_ROOT\CLSID\{444F7305-1D7D-4BE9-8C29-CC3F1D220C40} - 0 cmd
+HKEY_CLASSES_ROOT\CLSID\{562462DD-4F9A-4110-9D6A-C3CA0407FF76} psfactorybuffer - 0 cmd
+HKEY_CLASSES_ROOT\CLSID\{69A95A38-C637-46A0-9FB2-1C939AEBF2E8} psfactorybuffer - 0 cmd
+HKEY_CLASSES_ROOT\CLSID\{6EC153C1-371E-47E1-A896-2F7F80EB7842} psfactorybuffer - 0 cmd
+HKEY_CLASSES_ROOT\CLSID\{73843B93-848F-453B-953D-2E5B911429DC} - 0 cmd
+HKEY_CLASSES_ROOT\CLSID\{870AF99C-171D-4f9e-AF0D-E63DF40C2BC9} - 9 cmd
+HKEY_CLASSES_ROOT\CLSID\{8D9945C3-A621-4F52-8641-6D8B755F42E2} - 12 cmd system blocked
+HKEY_CLASSES_ROOT\CLSID\{ede7f087-890f-491c-b906-9abb31896960} CLSID_EuVolumeNotificationCallback - 0 cmd
+HKEY_CLASSES_ROOT\CLSID\{FD7F2B29-24D0-4B5C-B177-592C39F9CA10} psfactorybuffer - 2 cmd
+
+have them check it out.
+[01.10.21 15:06:23] alexander.r: what is it?
+[01.10.21 15:06:48] alexander.r: and check for what?
+[01.10.21 15:07:51] gabr: for example FD7F2B29-24D0-4B5C-B177-592C39F9CA10 (last in the list) if you prescribe in your dll it will load
+[01.10.21 15:10:35] alexander.r: if there is one?
+[01.10.21 15:25:18] gabr: it doesn't matter
+[08.10.21 11:02:06] gabr: Ping
+Short report
+1) ASF format is parsed
+2) wrote hiders with structures
+3) in the process of writing a generator of custom ASF files
+Next I will watch in the debugger how player reacts to invalid fields, skips or what exactly does
+[08.10.21 11:17:55] alexander.r: koo
+[08.10.21 11:17:57] alexander.r: accepted
+[08.10.21 11:22:02] gabr: there data headers - linked list, one refers to another
+[08.10.21 11:23:04] gabr: the player process itself (Windows media) pulls java script dll, so it must interpret java script
+[08.10.21 11:54:11] alexander.r: and references in the form of an offset relative to what?
+[08.10.21 11:54:16] alexander.r: wow, zhs
+[13.10.21 08:51:48] gabr: pong
+[02.11.21 05:37:21] gabr: I have to finish DRM, I took apart scripts
