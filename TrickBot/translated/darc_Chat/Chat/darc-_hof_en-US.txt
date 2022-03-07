@@ -1,0 +1,297 @@
+2020-08-24T14:27:19 darc -> hof
+Hi. I'm the new programmer. they sent me to you for an assignment
+
+2020-09-07T10:03:09 darc -> hof
+hi. shall we continue?
+
+2020-09-07T10:05:12 hof -> darc
+hi
+
+2020-09-07T10:05:48 hof -> darc
+Have you been given an assignment yet?
+
+2020-09-07T10:05:55 darc -> hof
+no
+
+2020-09-07T10:06:19 hof -> darc
+couple of minutes
+
+2020-09-07T10:09:35 hof -> darc
+any experience with winapi?
+
+2020-09-07T10:09:44 darc -> hof
+yes
+
+2020-09-07T10:10:37 hof -> darc
+is winhttp familiar?
+
+2020-09-07T10:11:14 darc -> hof
+never used
+
+2020-09-07T10:12:02 hof -> darc
+What did you use to access the internet?
+
+2020-09-07T10:12:57 darc -> hof
+qt libraries. winapi I have gui and sync
+
+2020-09-07T10:13:18 darc -> hof
+there was no need for a network in my designs
+
+2020-09-07T10:14:32 darc -> hof
+But I don't think there's anything too complicated for me. I've worked with sockets.
+
+2020-09-07T10:14:52 hof -> darc
+and scripting languages - cmd, jscript, vbs, powershell? which ones do you know well?
+
+2020-09-07T10:15:55 darc -> hof
+first two middles, the second two on june.
+
+2020-09-07T10:16:19 darc -> hof
+I'm more of a heavy language guy, c++, rust
+
+2020-09-07T10:16:30 darc -> hof
+heavy*
+
+2020-09-07T10:16:48 hof -> darc
+Do you know the PE file format well?
+
+2020-09-07T10:17:49 darc -> hof
+I don't know
+
+2020-09-07T10:19:16 hof -> darc
+Have you ever had to reverse?
+
+2020-09-07T10:20:04 darc -> hof
+by reversing what? the code from the executable?
+
+2020-09-07T10:20:59 hof -> darc
+yes, by restoring the c++ source code from an exe file
+
+2020-09-07T10:21:26 hof -> darc
+Do you know assembler well?
+
+2020-09-07T10:22:04 darc -> hof
+used to know it well, at the level of a 386 processor.
+
+2020-09-07T10:22:24 darc -> hof
+I haven't done code reversal, but I've seen it done with IDA
+
+2020-09-07T10:22:45 hof -> darc
+How much experience do you have as a programmer?
+
+2020-09-07T10:23:23 darc -> hof
+20 years
+
+2020-09-07T10:27:29 hof -> darc
+I don't know, have they warned you that we're not exactly doing legal work?
+
+2020-09-07T10:27:39 darc -> hof
+yes
+
+2020-09-07T10:28:03 darc -> hof
+so I have a question, should I read what precautions should be taken
+
+2020-09-07T10:28:16 darc -> hof
+But no one wants to give me an answer
+
+2020-09-07T10:28:32 hof -> darc
+precautions are at least a VPN
+
+2020-09-07T10:28:51 hof -> darc
+online through a VPN right now?
+
+2020-09-07T10:29:10 hof -> darc
+This is to hide your real ip
+
+2020-09-07T10:29:41 darc -> hof
+Now without WAPN
+
+2020-09-07T10:29:49 darc -> hof
+What kind of VPN do you need?
+
+2020-09-07T10:30:27 hof -> darc
+I will ask, you will be issued, but it's not all that fast, in a day or two
+
+2020-09-07T10:30:46 hof -> darc
+Have you ever worked with virtual machines?
+
+2020-09-07T10:31:40 darc -> hof
+Like vmware and virtualbox?
+
+2020-09-07T10:31:55 darc -> hof
+only as a user. i have not written anything under them
+
+2020-09-07T10:32:12 darc -> hof
+hadn't even considered such a possibility
+
+2020-09-07T10:32:59 hof -> darc
+here it is desirable to install the vmrtool, in it vs, or other ide you work on
+
+2020-09-07T10:33:18 hof -> darc
+disconnect the virtual machine from the network, and do all development work there
+
+2020-09-07T10:34:12 darc -> hof
+I'll put
+
+2020-09-07T10:53:51 hof -> darc
+once set, figure out winhttp, how to download data or file from the network GET requests, how to send data via POST request
+
+2020-09-07T10:54:37 hof -> darc
+first via http, then via https
+
+2020-09-07T10:55:14 hof -> darc
+have you ever done a backend?
+
+2020-09-07T10:55:24 darc -> hof
+Is there any list of contradictions in which I shouldn't start doing this?
+
+2020-09-07T10:55:39 darc -> hof
+backend had to do a lot of backend
+
+2020-09-07T10:55:51 hof -> darc
+What language is it in?
+
+2020-09-07T10:56:06 hof -> darc
+I mean really c++ &
+
+2020-09-07T10:56:08 hof -> darc
+?
+
+2020-09-07T10:56:09 darc -> hof
+C++, rust
+
+2020-09-07T10:56:20 hof -> darc
+Ah, okay.
+
+2020-09-07T10:56:28 darc -> hof
+You mean the web backend?
+
+2020-09-07T10:56:33 hof -> darc
+yes
+
+2020-09-07T10:57:03 darc -> hof
+I didn't do the web backend. I played around with PHP and javascript a bit.
+
+2020-09-07T10:58:19 hof -> darc
+localhost (127.0.0.1) is the easiest way to test network applications, like winhttp
+
+2020-09-07T10:58:42 darc -> hof
+create server and client clear
+
+2020-09-07T10:59:06 darc -> hof
+I used to do this when I was learning winsock a long time ago.
+
+2020-09-07T10:59:18 hof -> darc
+Write a small server in rust that will output a text file when requested to 127.0.0.1/test.txt
+
+2020-09-07T10:59:57 hof -> darc
+try to download through the browser, and then through winhttp in c++
+
+2020-09-07T11:00:35 darc -> hof
+Is there some list of contradictions where I shouldn't start doing this?
+
+2020-09-07T11:00:36 hof -> darc
+and use winapi only
+
+2020-09-07T11:01:32 hof -> darc
+the programs you are going to make are not exactly legal - loaders, backdoors, trojans
+
+2020-09-07T11:02:18 hof -> darc
+You don't get a pat on the head for that, you have to be very careful.
+
+2020-09-07T11:02:49 hof -> darc
+work via VPN, less yada yada about work
+
+2020-09-07T11:03:02 hof -> darc
+no social networking through wpn
+
+2020-09-07T11:03:10 darc -> hof
+And if I live outside of Russia, for example
+
+2020-09-07T11:03:23 darc -> hof
+I don't have any social media at all.
+
+2020-09-07T11:04:02 hof -> darc
+I have been working for a long time, no problems so far
+
+2020-09-07T11:04:16 darc -> hof
+ok
+
+2020-09-07T11:04:20 hof -> darc
+Work is remote, not too stressful.
+
+2020-09-07T11:04:29 hof -> darc
+But if you're curious about it yourself
+
+2020-09-07T11:04:50 darc -> hof
+I used to be very interested. let's see how it is now.
+
+2020-09-07T11:04:57 hof -> darc
+I mean interesting work
+
+2020-09-07T11:05:34 hof -> darc
+Then deal with winhttp, and read about PE file format
+
+2020-09-07T11:06:07 darc -> hof
+ok
+
+2020-09-07T11:06:09 hof -> darc
+you need to understand what happens in the system when you start an exe or dll file
+
+2020-09-07T11:06:31 hof -> darc
+what is the entry point, file sections, etc.
+
+2020-09-07T11:07:44 hof -> darc
+put a virtual machine, configure it, make a server to test a GET request in rust or c++, and write
+
+2020-09-07T11:08:14 hof -> darc
+Ordered a vpn, I'll send you the info in a few days.
+
+2020-09-07T11:08:21 hof -> darc
+Read about VPNs by the way.
+
+2020-09-07T11:08:35 darc -> hof
+What exactly do you want to read about VPN?
+
+2020-09-07T11:09:51 hof -> darc
+how to use correctly, how to disable webrtc in the browser
+
+2020-09-07T11:21:42 darc -> hof
+Is there a whole list of things you need to do to get your computer ready?
+
+2020-09-07T11:22:38 hof -> darc
+You mean like a virtual machine?
+
+2020-09-07T11:23:14 darc -> hof
+Well here's webRTC, VPN, VirtualBox without a network
+
+2020-09-07T11:25:29 hof -> darc
+1) install VirtualBox, create a virtual machine in it, win7 is enough
+
+2020-09-07T11:25:50 darc -> hof
+that's by assignment, I get it.
+
+2020-09-07T11:26:03 hof -> darc
+install in virtual machine vs, the necessary programs
+
+2020-09-07T11:26:50 hof -> darc
+and for now just read what it is, what it's for
+
+2020-09-07T11:27:17 hof -> darc
+and when I download the config, it will be possible to install a VPN
+
+2020-09-07T11:27:54 hof -> darc
+Then we'll talk about how to do it better.
+
+2020-09-07T11:28:45 hof -> darc
+webrtc is something you should disable in your browser so that you won't be spotted when you use the Vpn
+
+2020-09-07T11:29:21 darc -> hof
+OK
+
+2020-09-08T05:53:31 darc -> hof
+Hi. I did everything we agreed on yesterday.
+
+2020-09-08T05:53:50 hof -> darc
+hi
+
