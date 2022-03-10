@@ -1,0 +1,784 @@
+[28.07.21 08:59:54] elroy: Greetings.
+[28.07.21 09:00:19] elroy: I'm looking at the glue
+[28.07.21 09:02:06] elroy: It's done like this in the git: the master branch contains the original file infection project, the branch contains my improvements on glue. Looks like you used the original infector instead of glue
+[28.07.21 09:03:08] elroy: Compare your branch and total commander branch for example
+[28.07.21 09:04:47] elroy: I just see that in your branch there is no glue, there is some of it
+[28.07.21 09:04:58] elroy: That must not work right)
+[28.07.21 09:05:22] elroy: True, check file comparisons
+[28.07.21 09:06:38] elroy: Did you work with git? Tell you commands how to do it right?
+[28.07.21 09:07:38] elroy: The point is, you need to extract a branch, and then create your branch on its basis (you need to specify base)
+[28.07.21 09:07:41] elroy: Okay.
+[28.07.21 09:08:03] elroy: A couple more things
+[28.07.21 09:08:09] elroy: You said the glue works)
+[28.07.21 09:08:26] elroy: So it works?
+[28.07.21 09:08:36] elroy: Or push did not make...
+[28.07.21 09:08:42] elroy: It shouldn't work simply))
+[28.07.21 09:08:47] elroy: There's no load there
+[28.07.21 09:09:39] elroy: And how to glue the load?
+[28.07.21 09:11:02] elroy: Compare peinjector.c in your branch
+[28.07.21 09:11:30] elroy: There is an implementation of parameter --clue in the develop branch
+[28.07.21 09:11:43] elroy: Where specifies the carrier and payload
+[28.07.21 09:12:05] elroy: Then you get all this stuff gluing and shellcodes
+[28.07.21 09:12:20] elroy: Strange, I don't see in git...
+[28.07.21 09:14:17] elroy: shellcodes are prescribed in the ini file below, it's not in your branch either.
+Ok, let me know later please, I'll look again.
+[28.07.21 11:16:22] elroy: Okay, I'll look.)
+[29.07.21 08:45:34] elroy: Hi.
+[29.07.21 08:45:43] elroy: No messages
+[29.07.21 08:45:50] elroy: Repeat that, please.
+[29.07.21 08:47:05] elroy: Hi.
+I can't see the messages
+Repeat it, please.
+[29.07.21 08:47:24] elroy: Yes
+[29.07.21 08:47:53] elroy: Can you add it to the project?
+[29.07.21 08:48:07] elroy: Yes.
+[29.07.21 08:48:41] elroy: Shellcode sorts preferably too.
+[29.07.21 08:50:08] elroy: Yes, put it all next to the project. Write the build rdmi, how to connect/assemble
+[29.07.21 09:45:32] elroy: ok.
+[29.07.21 11:35:48] elroy: tell me, did you assemble the glue, does it work?
+[29.07.21 11:38:37] elroy: Say, did you assemble the glue, does it work?
+[30.07.21 14:59:12] elroy: Greetings.
+[30.07.21 14:59:58] elroy: I'm building shellcodes, the console has this info:
+```
+
+The process cannot access the file because the file is occupied by another process.
+A subfolder or build file already exists.
+A subfolder or compiled file already exists.
+A subfolder or compiled/Release file already exists.
+CMake Warning (dev) in CMakeLists.txt:
+  No project() command is present.  The top-level CMakeLists.txt file must
+  contain a literal, direct call to the project() command.  Add a line of
+  code such as as
+
+    project(ProjectName)
+
+  near the top of the file, but after cmake_minimum_required().
+
+  CMake is pretending there is a "project(Project)" command on the first
+  line.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+The process cannot access the file because the file is occupied by another process.
+CMake Warning (dev) in CMakeLists.txt:
+  No project() command is present.  The top-level CMakeLists.txt file must
+  contain a literal, direct call to the project() command.  Add a line of
+  code such as as
+
+    project(ProjectName)
+
+  near the top of the file, but after cmake_minimum_required().
+
+  CMake is pretending there is a "project(Project)" command on the first
+  line.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+The process cannot access the file because the file is occupied by another process.
+```
+[30.07.21 15:00:36] elroy: Tell me, is there a cure for this?)
+[30.07.21 15:04:17] elroy: I'll commit to develop, there's a build.bat script, it builds everything
+[30.07.21 15:04:23] elroy: And that's why it doesn't work
+[30.07.21 15:04:25] elroy: Check it out)
+[02.08.21 06:55:59] elroy: Greetings. If something I wrote didn't get it.
+[03.08.21 10:25:39] elroy: Greetings.
+[03.08.21 10:26:05] elroy: Did you look at problem with build-script?
+[03 08.08.21 10:27:04] elroy: Okay. Thank you. I'll take a look.
+[03.08.21 10:27:11] elroy: Do you work on Saturdays?
+[03.08.21 10:27:53] elroy: I envy you.)
+[03.08.21 10:28:23] elroy: Say, what else do you do? Crypter or some other project?
+[03.08.21 10:29:02] elroy: Unfree or free?)
+[03.08.21 10:29:55] elroy: Okay. There's just some more glue tasks.
+[03.08.21 10:32:50] elroy: Can you be trusted with the release and its preparation?)
+[03.08.21 10:42:20] elroy: Okay. I'll just tell you how it's done. First the refinements, then the release.
+Pour in your branch. Test the build script. Work further in develop.
+1) You need to add to the .ini in the glue section hugo shellcode, you will get 4 shellcodes.
+Which one you glue should depend on the parameter, you need to think up and add an argument. Correspondingly, fix the gluing algorithm to select the desired shellcode.
+2) Since version 32 and 64 glue only glues with media and load of the same size, it should be checked by pe headers, i.e. you should write a check function or find it in glue (open file, read header, check digit capacity, close file). Must match so it doesn't glue 32 to 64 and vice versa...
+32 glue only 32 files, 64 only 64
+3) You need a parameter which prohibits starting the main thread in the media. It is necessary to set the name of this parameter when gluing.
+I.e. a string to write into config structure, for example, if glue was called with this parameter
+```
+superclue <there media> <there paiload> -skeep-start jafa
+```
+Then when the media is called like this
+```
+<carrier> /jafa
+```
+main-shellcode should not call the main carrier logic, only run the pyload
+[03.08.21 10:48:20] elroy: We also have this task in our terms of reference
+```
+The load can be either .exe or .dll.
+For a load in dll format, the following ways of running it are possible (to be stipulated beforehand when preparing the glue):
+- rundll32 file.ext,Entry (here Entry is an export-function with a preknown name);
+- regsvr32 file.ext;
+- regsvr32 -s file.ext.
+```
+If the load is in dll format, and the parameters are not start, but drop to disk and start from disk, then it should run this way (above). These three ways are user selectable, i.e. you have to arrange all three, also with command line parameters
+[03.08.21 10:48:34] elroy: 4) ^^
+[03.08.21 10:49:33] elroy: I'll send you more shellcode from hugo, he sent me an update, check it out. There's probably a way to run the dll without dropping it on the disk
+[03.08.21 10:50:49] elroy: Yeah, right. That's in the case if the glue with drop. And if without dropping, but just running, should be called shellcode hugo (I'll send it to you now, look if it's there...)
+[03.08.21 10:54:21] elroy: Download: https://qaz.im/load/DQ79GE/Qbk2Sd
+Delete: https://qaz.im/index.php?a=delete&q=1528272216
+[03.08.21 10:54:37] elroy: Any TK on glue?
+[03.08.21 10:56:20] elroy: I'll send it over.
+[03.08.21 10:58:27] elroy: Download: https://qaz.im/load/ADfRAa/2rnarQ
+Delete: https://qaz.im/index.php?a=delete&q=223897616
+[03.08.21 10:59:14] elroy: Just need to check whether it corresponds to the ToR before the release
+[03.08.21 10:59:45] elroy: With those edits, everything should fit) But maybe I've missed something...
+[03.08.21 11:00:58] elroy: That's probably not it
+```
+The thread writes the load file to the disk in the specified directory. The directory is created if necessary. A delay is provided - so that the directory is not created immediately when the program starts.
+```
+[03.08.21 11:01:06] elroy: I should also add
+[03.08.21 11:02:10] elroy: It should be set as optional parameter when calling the glue. Default is 60 seconds.
+[04.08.21 09:55:36] elroy: Greetings. Can't see first message
+[04.08.21 09:55:53] elroy: a)
+[04.08.21 09:56:02] elroy: merge like what?
+[04.08.21 09:56:24] elroy: ``
+--method 1
+```
+?
+[04.08.21 09:56:56] elroy: Yes, that's possible, but then you have to check function name with another argument
+[04.08.21 09:57:09] elroy: ``
+ rundll32 file.ext,Entry
+```
+[04.08.21 09:57:17] elroy: ``this Entry
+[04.08.21 09:59:45] elroy: That's not usually done in console interfaces)
+[04.08.21 10:01:40] elroy: Here's an example:
+```
+  --stub <value> - stub number from a list of available stubs
+                                     default: 1
+ --help -h - show this help message
+
+ The list of available stubs:
+  1 standard_old_vs2019
+  2 uni_vs2019
+  3 uni_llvmo_vs2017
+```
+[04.08.21 10:02:04] elroy: I.e. you do it like that, there's a list at the bottom of the help message
+[04.08.21 10:02:44] elroy: And then wait for parameter --entrypoint. if the user chose 2 (for example)
+[05.08.21 13:09:04] elroy: Hi. Repeat the message, it didn't come
+[05.08.21 13:12:38] elroy: Make correct example in help message
+[05.08.21 13:12:57] elroy: About the path, it's the full path to the file
+[05.08.21 13:13:08] elroy: Intermediate directories need to be created
+[05.08.21 13:13:16] elroy: The path includes the file name
+[05.08.21 13:13:39] elroy: Do it as wchar_t path for now
+[05.08.21 13:13:47] elroy: 2 bytes per character
+[05.08.21 13:13:58] elroy: There'll be Cyrillic and everything else.
+[05.08.21 13:14:46] elroy: And the path would be removed from the config, also an argument
+[05.08.21 13:15:34] elroy: It should not be stored explicitly, it should be encrypted with the same key. I think so. Or at least a xor or something.
+[05.08.21 13:15:48] elroy: Just don't store it explicitly, it will sting.
+[06.08.21 09:59:35] elroy: Greetings. Any news?
+[06.08.21 10:00:23] elroy: Okay.
+[06.08.21 10:23:08] elroy: Yes, it depends on whether the drop path is specified
+[06.08.21 10:24:16] elroy: And how did you make the drop path, an argument?
+[06.08.21 10:24:30] elroy: How are the whites in that case?
+[06.08.21 10:25:13] elroy: How?)
+[06.08.21 10:27:32] elroy: No.
+[06.08.21 10:28:08] elroy: Try this code
+```
+//Input point for the application
+int __stdcall mainCRTStartup()
+{
+    LPWSTR* szArglist;
+    int nArgs;
+    int i;
+    int result = -1;
+    szArglist = pCommandLineToArgvW(pGetCommandLineW(), &nArgs);
+    if (szArglist != NULL)
+    {
+        result = main(nArgs, szArglist);
+    }
+    else
+    {
+        result = main(0, NULL);
+    }
+
+    pLocalFree(szArglist);
+    return result;
+}
+[06.08.21 10:28:34] elroy: I remember that it normally takes arguments passed in quotes as one
+[06.08.21 10:28:58] elroy: i.e.
+```
+--file "path to file"
+```
+will come as two arguments
+[06.08.21 10:29:09] elroy: But I should check it, I don't remember exactly...
+[06.08.21 10:30:59] elroy: Try just putting in main arguments function, without replacing
+[06.08.21 10:31:05] elroy: Or the crt will fall off.
+[06.08.21 10:31:42] elroy: I.e. just take this
+```
+szArglist = pCommandLineToArgvW(pGetCommandLineW(), &nArgs);
+```
+and take the arguments
+[06.08.21 11:55:14] elroy: Yes, glue should glue 3 shellcodes.
+In the glue section in the .ini, you have to prescribe 4 shellcodes
+And the startup shellcode selection is determined by the presence of the path, if the file drops, one shellcode is glued, if not 0, then the second shellcode.
+If regsvr for dll is selected, but there is no path, glue returns an error
+[09.08.21 06:40:57] biggie: hi.
+[09.08.21 06:41:22] elroy: hello
+[09.08.21 06:41:24] biggie: made
+[09.08.21 06:41:47] elroy: Did you check? Is the script building everything? Does it all work by script?
+[09.08.21 06:42:54] biggie: haven't tested the script yet
+[09.08.21 06:43:00] biggie: now
+[09.08.21 06:43:03] elroy: Check it.)
+[09.08.21 10:12:59] biggie: corrected
+[09.08.21 10:17:35] elroy: ok, I'm looking
+[09.08.21 13:04:08] elroy: make the release work)
+[09.08.21 13:06:40] elroy: make the release work)
+[09.08.21 13:06:51] elroy: I would like you to make a release
+[09.08.21 13:07:28] elroy: A release is a bunch of binary in one package... That's what's built by crypto, then copied somewhere and works in full functionality
+[09.08.21 13:07:33] elroy: Can you?
+[09.08.21 13:10:21] elroy: I got 1 glue built instead of two in release (I need two, because one is x86. the other is x64).
+The shellcodes copied
+In config.ini the names of the shellcodes are different, so it won't find them and won't work
+[09.08.21 13:10:59] elroy: Also noticed by accident, you have where the encryption is.
+[09.08.21 13:11:07] elroy: Cleaning functions appeared there
+[09.08.21 13:11:15] elroy: That's good)
+[09.08.21 13:12:04] elroy: That's where you destroy the context first, and then the key. But the key is usually tied to the context, usually that order causes memory leaks. So first you destroy everything you don't need, then you destroy the context)
+[09.08.21 13:12:19] elroy: I messed up on it once... I couldn't figure out what was wrong for a long time))
+[09.08.21 16:58:39] biggie: the release package is msi&
+[09.08.21 17:07:52] elroy: Repeat message, can't see
+[09.08.21 17:08:05] biggie: release package is msi?
+[09.08.21 17:08:13] elroy: Nope)
+[09.08.21 17:08:16] elroy: Just a folder
+[09.08.21 17:08:48] elroy: It's important to make folder and copy it somewhere and make it work
+[09.08.21 17:09:07] elroy: ini was spelled correctly
+[09.08.21 17:09:25] elroy: there was 64 and 32 exe glue
+[09.08.21 17:09:41] biggie: aah
+[09.08.21 18:32:55] biggie: did
+[09.08.21 18:33:57] elroy: okay, I'm looking
+[09.08.21 18:43:37] elroy: Got it. Great) Now I'll run it, test it.
+There are still three things to consider.
+1) I need a description of the modes and keys, what to glue, it needs to be in the rdmi.
+2) you need a file RELEASE_NOTES. in it the build date (aka build version) and a description of changes. Usually "First release" is written for starters.
+3) The two files RELEASE_NOTES and README are placed in the folder to the release (in the release)
+[09.08.21 18:43:48] elroy: That's basically it.
+[09.08.21 18:45:17] biggie: ok
+[09.08.21 18:50:45] elroy: And replace peinjector in help message with superclue
+[09.08.21 19:11:06] elroy: gluing doesn't work
+[09.08.21 19:11:54] elroy: ``
+supercluex64.exe --clue depends.exe HelloWorld_64.exe
+```
+crashes
+[09.08.21 19:12:19] elroy: ``
+supercluex64.exe --clue depends.exe HelloWorld_64.exe --method create_process
+```
+Original process window doesn't appear
+[09.08.21 19:13:33] biggie: ``til now
+[09.08.21 19:18:41] biggie: did you set `--drop-path`?
+[09.08.21 19:18:52] elroy: No
+[09.08.21 19:18:59] biggie: yes
+[09.08.21 19:18:59] elroy: I did it like I wrote it
+[09.08.21 19:19:25] elroy: You have to throw a warning message into console and tell user "specify drop path"
+[09.08.21 19:27:25] elroy: This applies to all parameters by the way. There should be examples in the help post (I wrote about it).
+There's also a test for x86 glue that it only glues x86, for x64 too...
+[09.08.21 19:28:36] biggie: in help sample calls for each script?
+[09.08.21 19:29:21] elroy: There are a lot of scripts... At least the main one...
+[09.08.21 19:29:33] biggie: ok
+[09.08.21 19:38:47] elroy: I'll be there in the morning. If anything, don't hurry, you can fix it tomorrow...
+[09.08.21 19:39:02] biggie: Yeah.
+[10.08.21 11:13:33] biggie: Hey, I did it.
+[10.08.21 11:13:51] elroy: No message
+[10.08.21 11:13:57] elroy: Hi.)
+[10.08.21 11:14:03] biggie: done)
+[10.08.21 11:14:18] elroy: Okay, I'll see.)
+[10.08.21 11:38:06] elroy: ``
+supercluex64 --clue depends.exe HelloWorld_64.exe
+```
+The glue is going down. What I wrote about yesterday...
+[10.08.21 11:39:14] elroy: Strange
+[10.08.21 11:39:20] elroy: And the second problem is in place)
+[10.08.21 11:39:36] biggie: now
+[10.08.21 11:41:42] elroy: You test before releasing, right?
+If you stick the file with a line like this
+```
+supercluex64 --clue depends.exe HelloWorld_64.exe --method create_process --drop-path c:\temp\start.exe
+```
+Drops the file and launches it. The file launches, but I can't see the depends.exe window itself
+[10.08.21 11:42:15] biggie: testing
+[10.08.21 11:50:20] biggie: I'm fine like this
+``./supercluex64 --clue D:\soft\xdbg64\release\x64\calc.exe D:\soft\xdbg64\release\x64\1.exe --method create_process --drop-path D:\soft\xdbg64\release\x64\2.exe
+[10.08.21 11:50:54] elroy: It sticks, but the medium doesn't work
+[10.08.21 11:51:03] elroy: Maybe the medium is terminated earlier?
+[10.08.21 11:51:25] elroy: Or rather, I don't see the media window. The load crashes and starts.
+[10.08.21 11:52:29] biggie: can you send me HelloWorld_64.exe ?
+[10.08.21 11:52:37] elroy: Yes, of course)
+[10.08.21 11:58:38] elroy: Download: https://qaz.im/load/tdaeBb/fGGy8H
+Delete: https://qaz.im/index.php?a=delete&q=721667974
+888Hdtcs%S:ds7sd@jsdj{ds]F
+[10.08.21 12:00:05] biggie: wrong password
+[10.08.21 12:03:35] elroy: strange, opened with this password
+[10.08.21 12:04:05] elroy: Try without space after F (at the end of password)
+[10.08.21 12:04:39] biggie: It worked.
+[10.08.21 12:15:29] biggie: if infected file with double click, it won't start, if run from console it's ok
+[10.08.21 12:16:04] elroy: Well, the end user will launch double-click...
+[10.08.21 12:16:08] elroy: What's the problem?
+[10.08.21 12:16:29] biggie: I see.
+[10.08.21 12:16:50] elroy: Can you fix it?)
+[10.08.21 12:17:04] biggie: are your dlls glued?
+[10.08.21 12:17:23] elroy: I haven't tried it yet, but in the old edition it was glued.
+[10.08.21 12:17:26] elroy: I'll check it now.)
+[10.08.21 12:20:47] elroy: ``
+supercluex64 --clue depends.exe LeoDllTest_x64.dll
+```
+this is how the glue fell while gluing
+[10.08.21 12:21:21] biggie: bummer!
+[10.08.21 12:22:12] elroy: Find the bug
+```
+C:\temp\release>supercluex64 --clue depends.exe LeoDllTest_x64.dll --method rundll32 --entry_point PluginInit
+ << Clue >>>>
+Error: set --entry-point
+```
+[10.08.21 12:22:31] elroy: ``
+--entry_point
+```
+[10.08.21 12:22:47] biggie: ``--entry-point ``
+[10.08.21 12:22:50] elroy: He tricked the user in help
+[10.08.21 12:24:37] elroy: the dll started, I didn't see the depends window
+[10.08.21 12:25:07] biggie: I'll fix it now.
+[10.08.21 12:26:27] elroy: Go ahead. Don't rush, just go through the functionality slowly and carefully. Keep in mind, the user is always a barbarian. Since there's no exact ops and the way the user wants to do his own thing, he will not specify the keys correctly....
+[11.08.21 07:41:31] biggie: Hi.
+[11.08.21 07:41:42] biggie: corrected.)
+[11.08.21 07:42:12] elroy: Hi. I'll take a look)
+[08.11.21 09:56:47] elroy: how's it going with your cryptor?
+[08.11.21 09:58:05] biggie: with the one done, but infected files don't pass the dinch check?
+[08.11.21 09:58:25] elroy: Is there more?)
+[08.11.21 09:58:32] elroy: Or is it about glue?
+[08.11.21 09:58:41] biggie: about glue
+[08.11.21 09:59:02] elroy: I thought the glue had already been delivered...
+[08.11.21 09:59:39] biggie: no, I only make plugins for the other one
+[08.11.21 10:03:23] elroy: What about the third one?
+[08.11.21 10:04:28] biggie: the third cryptor?
+[08.11.21 10:05:12] elroy: I've had your tz for a cryptor since before they started making glue
+[08.11.21 10:05:55] biggie: can you send me the specs again?
+[08.11.21 10:06:07] elroy: I can...
+[08.11.21 10:06:36] elroy: You mean check and remember or something else?)
+[08.11.21 10:06:46] biggie: don't get it)
+[08.11.21 10:07:22] elroy: orval did not discount before the plugins began to write?
+[08.11.21 10:07:53] biggie: no, he only skipped tasks for plugins\.
+[08.11.21 10:08:09] elroy: Before plugins, he was asking about crypter.
+[08.11.21 10:08:30] elroy: Okay. Are you working on any TK now ?
+[08.11.21 10:08:45] biggie: no T.O.
+[08.11.21 10:09:06] elroy: Are you doing anything lately?
+[08.11.21 10:09:12] elroy: Except for plugins
+[08.11.21 10:09:18] elroy: Except for glue.
+[08.11.21 10:10:03] biggie: I'm just finishing up the interprocess communication for the bridge.
+[08.11.21 10:10:27] biggie: almost free
+[08.11.21 10:11:01] elroy: I have an urgent request from silver, looking for someone to give it to.
+[08.11.21 10:11:10] biggie: go ahead.
+[08.11.21 10:12:41] elroy: ``
+TK Keylogger.
+Requirements:
+- standalone build (work regardless of bot type) - exe/dll
+- when working under a SYSTEM, log the interactive session with the number 1
+- when running under an interactive user, log the active online session
+- Default startup with a drop on the disk. Provide for the launch via process hollowing/reflexive injection in the second version.
+- The log is an encrypted text file. The encryption password is hardcoded for each build. The encryption is a simple XOR-gamming or RC4.
+- Linux log decryption utility
+- Log file format: hostname, username in the header, then for each line
+timestamp [YYYY-MM-dd HH:mm:ss.msec], process pid and name, header, class, window coordinates, entered text
+- file name and path: by default in %TEMP%, contains user name, host name, date.
+When specifying file name and path from the command line, then this takes precedence
+- Input is buffered line by line. Loss of window focus causes current buffer to be dumped to a file.
+Receiving focus by a new window is shown in the log accordingly.
+- AV is active, making an exception for the process is impossible
+- it is possible to create a service with SYSTEM permissions only if it will reduce detects.
+- Minimal OS Windows 7; server OS if possible
+```
+[08.11.21 10:13:11] elroy: Create a project in git, give me a link to it.
+[08.11.21 10:13:57] elroy: Quoting silver
+```
+ it is very urgent
+should be yesterday and FUD.
+```
+[08.11.21 10:14:13] elroy: Don't write plugins orval yet, make it a TK priority
+[08.11.21 10:14:40] elroy: (don't lose TK.......)
+[08.11.21 10:30:16] elroy: Will you confirm that you took the TOR ?
+[08.11.21 10:30:27] biggie: yes.
+[08.11.21 10:30:32] elroy: okay.
+[08.11.21 10:30:46] biggie: https://mb5fbvx72fbod2hkirfecc5nh7lwq6ke7xocn7j2u7raiwbytvevpbad.onion/tanner/keylogger
+[08.11.21 10:31:01] elroy: ok
+[08.11.21 10:31:08] elroy: how do you estimate the time?)
+[08.11.21 10:32:19] biggie: couple of days.
+[08.11.21 10:32:32] elroy: okay.
+[08.11.21 10:32:53] biggie: that keylogger's gonna be dumped by someone else, right?
+[08.11.21 10:33:19] elroy: Clarify the question.
+[08.11.21 10:33:23] biggie: i.e. do not reset cuda, am I right?
+[08.11.21 10:33:57] biggie: `run by default with drop to disk. Provide to run via process hollowing/reflective injection in second version.`
+[08.11.21 10:34:20] biggie: someone has to run it right?
+[08.11.21 10:34:43] elroy: Nah, it doesn't say anything about the reset walk. Yes, someone or something will run it.
+[08.11.21 10:34:56] biggie: okay.
+[09.11.21 11:17:36] biggie: hi.
+[09.11.21 11:21:19] biggie: what's the best way to do it?
+[09.11.21 11:21:25] biggie: ` when working under the SYSTEM, log the interactive session with the number 1
+[09.11.21 11:21:52] biggie: it won't work without creating a process?
+[09.11.21 11:23:08] elroy: I can't tell you, I'm not familiar with it.
+[09.11.21 11:23:46] biggie: okay.
+[11/15/21/14:04:10] elroy: Greetings.
+[11/15/21 14:04:20] biggie: keylogger ready
+[15.11.21 14:04:54] elroy: Great)
+[19.11.21 09:58:44] elroy: Greetings.
+[19.11.21 09:58:56] biggie: hi.
+[19.11.21 09:59:02] elroy: I need a fresh version of the glue
+[19.11.21 09:59:40] elroy: In the git is the latest?
+[19.11.21 10:00:03] biggie: there's a basic and a test version
+[19.11.21 10:00:36] biggie: test with delays to reduce detects
+[19.11.21 10:01:13] biggie: can do 1 more branch like final
+[19.11.21 10:01:42] elroy: make final.
+[19.11.21 10:01:59] elroy: And I tried to glue the library together yesterday, no luck
+[19.11.21 10:02:04] elroy: Glue did not accept parameters
+[19.11.21 10:03:18] elroy: The parameters are
+```
+--clue <there media> <there library> --skeep-start <there string
+[19.11.21 10:03:46] elroy: The dll should be glued and run fileless
+[19.11.21 10:03:54] elroy: Did I make a mistake somewhere?
+[19.11.21 10:04:37] biggie: sec
+[19.11.21 11:43:46] elroy: accept cp
+[19.11.21 11:44:08] elroy: I thought "sec" meant a short period of time.))
+Say, so what's with the glue?
+[19.11.21 11:44:47] biggie: glue.
+[19.11.21 11:44:54] biggie: Try that.
+[19.11.21 11:44:57] biggie: `./supercluex64 --clue bin\hello86.exe bin\rundll86.dll --method rundll32 --timeout 100 --skip-start aa --method-args "/i"--entry-point Test1`
+[19.11.21 11:45:27] biggie: I'll add a branch, git settings are messed up
+[19.11.21 11:45:50] elroy: What will happen if no function is found?
+[19.11.21 11:45:55] elroy: Nothing will drop?
+[19.11.21 11:46:37] biggie: The medium will work, the load won't start
+[19.11.21 11:46:44] biggie: is it working?
+[19.11.21 11:47:03] elroy: That's how you get the load to start
+[19.11.21 11:47:20] elroy: Let me check.
+[19.11.21 11:51:56] biggie: [ ](https://xflemdsxjrjilw34dsxpvrxp5whnaut7hc5xejwuqs6eqrkt77bxkwid.onion/direct/LcSmTknPEhLY3pJkzMaxoWszg2rQSb7dep?msg=Ayk88cvsigZN9gEbH) but how will it know which entry point to call?
+[19.11.21 11:53:07] elroy: DllMain should be called first anyway. And then the entry point. But since there's no entry point in the dll itself, there's no need to call anything. The DllMain must be called anyway. That's where everything is done...
+[19.11.21 11:55:47] biggie: does your git work via tor?
+[19.11.21 11:56:22] elroy: Yes
+[19.11.21 11:56:45] biggie: can you send me the gitconfig, mine got deleted
+[19.11.21 11:57:47] elroy: git config --global http.sslVerify false
+git config --global http.proxy socks5h://<ip>:9050
+[19.11.21 11:58:10] elroy: socks5*h*
+[19.11.21 11:58:48] elroy: ip 127.0.0.1 if tor on local machine
+[19.11.21 12:04:16] biggie: is it in RunDll32 to pass dllmain name?
+[19.11.21 12:04:28] elroy: No
+[19.11.21 12:04:49] elroy: DllMain is an entry point that is written in the header of the PE library
+[19.11.21 12:05:02] elroy: Entrypoint is the same
+[19.11.21 12:05:09] elroy: It must be called by the shellcode
+[19.11.21 12:05:28] biggie: without resetting to disk?
+[19.11.21 12:05:35] elroy: Yes.
+[19.11.21 12:06:16] elroy: That line you sent, is there a file reset or not?
+[19.11.21 12:07:34] biggie: if the reset path is not spelled out and the rundll32 start method, it is not reset
+[19.11.21 12:08:09] biggie: in that line it runs without resetting
+[19.11.21 12:09:11] elroy: I see
+[19.11.21 12:09:31] elroy: It worked, yeah.
+[19.11.21 12:09:45] elroy: DllMain is called properly
+[19.11.21 12:10:05] elroy: It must be the arguments...
+[19.11.21 12:10:19] elroy: Usually only necessary arguments are specified
+[22.11.21 13:27:04] elroy: otr?
+[22.11.21 13:28:31] elroy: ``
+https://file.io/eVDTwVbU5AjO
+NhhhsSED44$DSrA^gxSGAGS!@mX
+```
+[22.11.21 18:11:55] biggie: kZT@b7a#0t!N*6P4cEAMwMTY
+[22.11.21 18:12:00] biggie: https://privatlab.com/s/v/06lajxZnA3F8qxX4L7yr
+[22.11.21 18:12:05] biggie: https://privatlab.com/s/d/06lajxZnA3F8qxX4L7yr/YNXAJ#delete
+[22.11.21 18:15:30] elroy: got it, can't delete it, wrong link
+[11/22/221 18:17:02] biggie: Something with the service
+[11/23/221 09:17:54] biggie: 123
+[11/23/221 09:18:09] biggie: 6pIE^c%a@9Ex$CPm@#oF$qht
+[11/23/221 09:18:26] biggie: https://privatlab.com/s/v/06lajxZnA3F8qxX4L7yr
+[11/23/221 09:18:31] biggie: https://privatlab.com/s/d/06lajxZnA3F8qxX4L7yr/YNXAJ#delete
+[11/23/221 09:18:40] elroy: okay, I'm looking.
+[23.11.21 09:19:01] elroy: Sorry, the file doesn't exist or deleted
+[11/23/11/21 09:21:24] biggie: oops, wrong link
+[11/23/11/21 09:21:43] biggie: https://privatlab.com/s/v/g8Bj9X7rWQhx4JO627Dq
+[23.11.21 09:21:51] biggie: https://privatlab.com/s/d/g8Bj9X7rWQhx4JO627Dq/Qrmzb#delete
+[23.11.21 09:24:29] elroy: could you send me samples?
+[11/23.21 09:24:51] elroy: File changed on 11/22 at 19:45, binary
+[11/23/221 09:25:07] elroy: We kind of talked about streams later
+[11/23/221 09:26:13] elroy: I'm looking at binary
+[11/23/221 09:29:59] biggie: no changes for binary
+[23.11.21 09:30:12] biggie: changes in silk codes
+[23.11.21 09:30:29] elroy: Yes, I thought so then)
+[30.11.21 07:42:25] elroy: greetings
+[30.11.21 07:42:43] biggie: hi
+[30.11.21 07:43:23] elroy: Tell me, that version of glue where you did the refinement with threads, is it in the git? Just then the git didn't work, you sent me binary
+[30.11.21 07:43:42] biggie: Yeah.
+[30.11.21 07:43:48] elroy: Okay.
+[30.11.21 16:08:56] elroy: You haven't left yet?
+[30.11.21 16:09:21] elroy: Need bacfix on the glue
+[11/30/21 16:10:22] elroy: If the payload is empty in the export, the carrier goes down. Gotta fix shellcode somewhere.
+[30.11.21 16:11:30] biggie: can you upload dll without export?
+[30.11.21 16:11:51] elroy: Build it in studio...
+[30.11.21 16:11:55] elroy: No export there.
+[30.11.21 16:12:06] elroy: Create a clean project
+[30.11.21 16:12:23] elroy: There'll only be a main
+[30.11.21 16:12:48] biggie: just create and assemble dll project yes?
+[30.11.21 16:12:55] elroy: Yes
+[30.11.21 16:13:12] elroy: You can add Hello world as a messagebx
+[30.11.21 16:13:28] elroy: It shows a window and then crashes.
+[30.11.21 16:13:44] elroy: And if I export just one function, it won't find it and crashes
+[30.11.21 16:14:04] elroy: It does not find it, because the name is wrong in the parameters
+[30.11.21 20:11:17] biggie: did
+[01.12.21 07:08:07] elroy: Greetings. I wrote something yesterday, it didn't come
+[01.12.21 07:08:26] biggie: Hi.
+[01.12.21 07:08:40] biggie: made bugfix
+[01.12.21 07:08:51] elroy: ok, thanks, I'll take a look
+[26.01.22 09:58:42] elroy: greetings
+[26.01.22 09:58:54] elroy: apr?
+[26.01.22 11:03:17] biggie: hi
+[26.01.22 11:31:27] elroy: apr?
+[26.01.22 11:50:10] biggie: yeah.
+[26.01.22 11:50:51] biggie: 123
+[26.01.22 11:51:09] elroy: And so)
+[26.01.22 11:51:31] elroy: Say, there's a project with a VPN, how's it going?
+[26.01.22 11:51:48] biggie: wpn bridge?
+[26.01.22 11:52:00] elroy: Looks like it
+[26.01.22 11:52:31] elroy: "Module and Bridge VPN"
+[26.01.22 11:52:54] biggie: sylver assigned devops, he put it somewhere and that's all for now
+[26.01.22 11:53:14] biggie: server with bridge not pinged
+[26.01.22 11:53:42] elroy: Who's Devops?
+[26.01.22 11:53:56] biggie: gator
+[26.01.22 11:54:01] elroy: Yep.)
+[26.01.22 11:54:03] biggie: if I'm not confused.
+[26.01.22 11:54:17] elroy: And by development is everything ready there?
+[26.01.22 11:54:29] biggie: yes
+[26.01.22 11:54:44] elroy: Okay, thanks, I'll give Gator a shake.
+[26.01.22 11:54:56] elroy: Get a load of Collin?
+[26.01.22 11:55:15] elroy: For the glue.
+[26.01.22 11:55:26] biggie: don't ask geraldo
+[27.01.22 09:42:15] elroy: Hello
+[27.01.22 09:42:27] biggie: hi
+[27.01.22 09:42:43] elroy: Tell me, who else worked on vpn?
+[27.01.22 09:43:20] biggie: stevie, alexis (admin) and all
+[27.01.22 09:43:43] biggie: also admins were advising us
+[27.01.22 09:43:57] elroy: I see
+[27.01.22 09:44:10] elroy: And who is the customer do not know? Who did it?
+[27.01.22 09:44:55] biggie: sylver gave the job and said that the chief demanded a bridge from him
+[27.01.22 09:45:18] biggie: what kind of boss - I don't know
+[27.01.22 09:45:35] elroy: Yeah, I don't know who the boss is))
+[27.01.22 09:45:49] elroy: I see...
+[27.01.22 09:45:55] elroy: They did it, but who to give it to...
+[27.01.22 09:46:01] elroy: Are you busy now?
+[27.01.22 09:46:10] biggie: free
+[27.01.22 09:46:24] biggie: this bridge has been under construction for over a year.
+[27.01.22 09:46:42] elroy: did it work with glue cleaning?
+[27.01.22 09:47:19] biggie: with the load, that was given by avira and avast, there were no detects
+[31.01.22 11:57:42] elroy: Greetings.
+[31.01.22 12:01:17] biggie: hi
+[31.01.22 12:08:23] elroy: apr?
+[31.01.22 12:22:01] elroy: Thaks
+[31.01.22 12:22:29] elroy: You got a working axe? Or start a new one.
+[31.01.22 12:22:31] biggie: Yeah.
+[31.01.22.22 12:22:49] biggie: tox?
+[31.01.22 12:22:53] elroy: Yes
+[31.01.22.22 12:22:57] elroy: qTox
+[31.01.22 12:23:05] elroy: like
+[31.01.22 12:23:10] biggie: now
+[31.01.22 12:34:13] biggie: put
+[31.01.22 12:35:33] biggie: do you configure proxy in it?
+[31.01.22 12:38:24] elroy: See
+[31.01.22 12:38:39] elroy: You set proxy settings at first
+[31.01.22 12:38:46] elroy: Then just register and let it online
+[31.01.22 12:38:53] elroy: Tor as a proxy
+[31.01.22 12:39:12] elroy: Toks should not be able to connect to network otherwise, not through torus
+[31.01.22 12:39:19] elroy: He can bury his ip
+[31.01.22 12:39:25] elroy: That's why only torus
+[31.01.22 12:39:38] elroy: And you gotta turn off udp and ipv6 in settings
+[31.01.22 12:39:53] elroy: If he already registered his account, do it again with tor
+[31.01.22 12:40:21] biggie: Okay.
+[31.01.22 12:42:08] biggie: [ ](https://xflemdsxjrjilw34dsxpvrxp5whnaut7hc5xejwuqs6eqrkt77bxkwid.onion/direct/LcSmTknPEhLY3pJkzMaxoWszg2rQSb7dep?msg=EYjXsA9qGAobN345X) is it in config?
+[31.01.22 12:42:26] biggie: `Actually, you have to configure the proxy first
+[31.01.22 12:50:06] elroy: No, in his GUI it's configured
+[31.01.22 12:50:28] elroy: Advanced tab
+[31.01.22 13:01:40] biggie: did
+[31.01.22 13:03:16] biggie: only if I choose proxy, then udp is not selected
+[31.01.22 13:03:57] elroy: udp disabled still gotta be
+[31.01.22 13:10:03] biggie: all set
+[31.01.22 13:12:07] elroy: Great
+[31.01.22 13:12:38] elroy: Is your pgp key up to date?
+[31.01.22 13:13:54] biggie: yes
+[31.01.22 13:14:08] elroy: just a minute
+[31.01.22 13:26:17] elroy: -----BEGIN PGP MESSAGE-----
+
+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
+=yVAt
+-----END PGP MESSAGE-----
+[31.01.22 13:27:04] elroy: Remember, no addresses, credentials, etc. in the group, do not write in the chat
+[02/03/222 11:24:31] elroy: Greetings.
+[03.02.22 11:25:01] elroy: You can also look for the detector itself in the code or data by using signfinder script. Do you know this search method?
+[03.02.22 11:25:08] elroy: otr?
+[03.02.22 11:27:14] biggie: hi.
+[03.02.22 11:27:36] elroy: do you use signfinder in your work?
+[03.02.22 11:27:51] biggie: not the first time I hear
+[03.02.22 11:28:01] biggie: where do you get it?
+[03.02.22 11:28:09] elroy: I'll send it right up
+[03.02.22 11:34:56] elroy: ``
+https://file.io/pqnpDli6rYIH
+```
+[03.02.22 11:36:56] elroy: ``Description
+[03.02.22 11:37:01] elroy: There are dynamic and static detections. There are by emulation, this is a static detection, which is detected by the pattern of code execution on an av emulator (it either evpolnit or parses commands in asm (parses the code).
+Static detects:
+In theory, signatures are pieces of a file, links in a chain + conditions by which they are found, (by which links are linked and/or placed in their place in the file.
+We need to find these places.
+The strategy is this: take the file and null a piece in it. Check on AV, if the file is not detected, then the signature is missing, which means it was in that nulled fragment
+In order to match what is in the file to what it is in the code, debug information (.pdb file) and IDA is used
+That's why it's first necessary to make it possible to build the release version project, but with enabled debugging information creation. And compile the crypt this way. Get crypt and its .pdb
+Then find shifts using script and substitute them in ID (goto offset), go to it and see function where we've gone
+Then you need to be clever and think how to change the function
+In this case, it may be that it was a detective on emulation
+
+How to use the script now I will tell you
+[03.02.22 11:37:32] elroy: As for working with the script
+```
+sf.new.py file.exe info
+```
+Outputs information about the sections in the file
+```
+sf.new.py file.exe sect 0
+```
+It will create 100 files with nulled fragments. It will write the offset and size of the zeroing in the file name.
+These files should be fed to AV (sent for checking).
+As a result of checking, as practice shows, will remain 1 or 2 files
+These are the files with missing signature locations
+The offset and size of the nulled fragment can be found in the filename
+But this fragment is very big.
+You have to specify it, usually I recommend to break the files into fragments of 64 bytes. (That's 40 in the 16-bit system).
+Therefore, we make this specification.
+```
+sf.new.py file.exe man <slice> <size chunk> <size chunk
+```
+The file names from the previous step just consist of these three values
+Actually, we feed it to AB and see what's left.
+In the remaining files we look at the mix and size.
+This is the signature
+We put it into the IDA.
+Then we think about what to do with it.
+[03.02.22 11:38:39] elroy: We need python 2.7 and pefile for the script.
+[03.02.22 11:40:51] biggie: Thanks.
+[03.02.22 11:41:09] elroy: No problem, try it.
+[03.02.22 16:23:54] elroy: Check link
+[03.02.22 16:24:07] biggie: 123
+[03.02.22 16:24:13] elroy: ok
+[03.02.22 16:24:19] elroy: There's a patch from the development team
+[03.02.22 16:24:26] elroy: For the loeder, what are you cleaning
+[03.02.22 16:24:44] elroy: ``
+8kjkjlk45rgfdgfg5675
+Download: https://qaz.im/load/Ktt2SB/h5dBeh
+Delete: https://qaz.im/index.php?a=delete&q=1492564332
+```
+[03.02.22 16:25:22] elroy: ``
+so have your developers merge these files with the one he already changed in the loeder, merge, check and upload to the server.
+```
+[03.02.22 16:25:53] elroy: About "uploaded to the server", probably not for you
+[03.02.22 16:27:33] biggie: downloaded
+[09.02.22 08:36:40] elroy: Greetings.
+[09.02.22 08:56:00] biggie: hi
+[09.02.22 09:22:42] elroy: otp?
+[09.02.22 09:23:52] biggie: yes
+[09.02.22 09:24:35] elroy: dropped the anubis bot sots, also need to clean up. Good work on the looder, by the way.
+[09.02.22 09:24:58] biggie: Okay, I'll clean it up.
+[09.02.22 09:27:28] elroy: just a minute, I'll upload the files
+[09.02.22 09:43:03] elroy: Developers really care about the sorts, keep them from leaking
+[09.02.22 09:43:09] elroy: ``
+https://file.io/OnVnPzWaEXLy
+```
+[09.02.22 09:48:59] biggie: received
+[11.02.22 10:32:46] elroy: Greetings
+[11.02.22 10:32:58] biggie: hi.
+[11.02.22 10:35:18] elroy: Will you throw part of your ToV? In pgp just so it doesn't float away.
+[11.02.22 10:35:49] biggie: yeah. send me your key.
+[11.02.22 10:36:08] elroy: I thought you had...
+[11.02.22 10:36:21] elroy: -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mQINBF+8/F4BEAC6fKujzW+3CwSV8TuIgGfKLSkkexu/VrVmUbX6GYTy1JwK6h7
+l1VWOCz/wYDW3H0gDPRnTjf1nOnJ2Kk8DEBrPrSWpe2p7J/6N+kQAY/IcZws62Ao
+/IXp3+GaCpfehlseQPH8rtZpKD2LNYC/NUJAFecSYG1/14n8bC0n7+T165MqesA/
+sejLExnklYlEAJp5iWFfitftt9ndR6kqPBIWiBQ7UwK4Ox9FnvRQIUkDtx68/dM4
+23uYLwqq01yTg8UV2w6NLByTCDX2BoL60F+yJIBH6BUrzVwVrMMGiz4kzPJ/vxf5
+dXX/f1oMaDdokddWo8fcOUvw6rY9g45kAwiIKN1E2UffkdzuM4UWTU6a7HpWh9X2
+L77+9J5TxivXJurOVJ5WgK8qaVp1I6HdgZ9AOQhbdHUvXCjr7B6svrMIcQvItaUL
+WFDTbu/i5ajQBBmVk0ohF+2f/K/YXO1z1l7BdrAmpzjsBPS5utcAruprRe0xEsQw
+L9/iZPECylzO5KYfOiRygMZxhDZg4e2ahEmzghrhNEQGqmQE0CqROlVHxKVU0ROn
+Yf4A9YiXoeYQhsXVYu/fz49wPyr8ecHb7Pe0ErWaZauacrFlAOHBe/IWpChaK+lQ
+GSnTf3Jj7aKjDIR/+9P9YxltK1l2qESHW/ElfzsdtBxeLV1pHDul6byLBQARAQAB
+tAVlbHJveYkCTgQTAQgAOBYhBEKA4H5vsjsEWnck2H4r0S3Tu9+FSBQJfvPxeAhsj
+BQsJCAcCBhUKCQgLAgQWAgMBAh4BAheAAoJEIr0S3Tu9+FSyYYIQAKn+D+ewUz+E
+M+vtjvZepLhwGQ27ybU67mpOm1/9rsmrECgrc+dEfvcmST1viVmlLW1MSwi77yGk
+aNUEsIoAFcZQf0AoONHFCHdgr6pnnu305FwFbzLWjFCcfIU59/KmmsGje0Y3Brps
+hJt/04rJMQ/bIuYm540Nnn2PlVL+FlM764pPCrvO9WRagSYsoBKnYY6vXk2VU3nR
+E3zXHjDOVFLRNQGcfQXrUJcnhGarFggspgLY2cYPr4FdLMhtmCkpipDmYajDMg8wp
+qqWk8TTRs9POkGAiXCAFu6h04rTSo0uqz4yZojb9Jtev7fTIwmfzkCMi8brfYdpi
+UqO88TYu8SUOu6jjGLEHpTcCH/5qKShPOlaa3FIxQUKh04pDPFBYWwF/hgmxXPOA
+2v8nAPxkqRFxjypx9iW5WEdfwCvt2WtCTEkJd6X+T0RfAz2q6UpXGPutL9bQ9YQ5
+bDRnFgQjHqFpW37Nfwm5Ov2HZnkmlPBn3dEXfNiXIamp3sev0KOgHeOKhqcWpdBq
+J8F02XfdxFSk/KkkJAEzQVL+QPcClXfJyu7AsO3U2vBbb3siEDmUjPc6k4yl/T57
+c1YisUIz1USIB5e9HV2kr+j6dbNqGD1hKdhzWctNG0O6nZZkGHkx9KZrMmoX2QeJ
+EV6VYJVPdK2aUcOfrj/nE7ZGd8QCNL2AuQINBF+8/F4BEADHuE8vZMetlcnnTr3b
+aRskqVDcD3xoGabpVPhVyum7MdKdQdQryavotHdqfhqbnB46pOFx0ED7+C4qjl9iy/
+UHG8B38tKUjjMAvyFyrBeX9iPq4AHZn2lGawNjPYqtBL7BpPT8PybhET6DtvjKXc
+vNiPbG0jmUtc5WnS6LsfjcgQdQT93FQgNCi50OhQI1hduZrGw/nQmU9mYtOI6T7
+bDFCaPRQI89eOUF2hOLs4UjfXVfh2pt43m4XR2atwLPL/DjS1MpnD5r0jVpG/E98
+hIOLTpAhAKDYb/SPzmmh8mvhpNISkdFBuryI8XzhM/RGqpVJOrjl4a6jy2IfKDAs
+9o4nwbpTHx1URxgbDVktYlzzFcbCSbQZnJELgOkDMkhWv6tb0Tshv1XZLYoWxAN2RN
+UWwx1P+MAtTimPE4iSkxgrqbwoQjp+l+vuFof8JN68BaXpK92L6w0qi+cpXN6Jw/
+9QaP118gF8V3MaJeYSdqC1kxgPSPSZTAvrlkHNkqleftpxSXK+cxqwWcWs0JOmopZJ
+1HsHJee/FOAWBQHsh/Pyi8bKT7jol+H9wbvCvCbMohWJrDjE5m+rc3FYUDZCGctK
+opC3ZkK4UTjGKpOGr91IPf7Z48Z+gdXGuSF0iN0cVW9uy0L7UWHQgfVKo7gLDER2
+gwDoQdlTrdaaKkaY4ccy8lsaZQARAQABiQI2BBgBCAAgFiEEQoDgfm+OwRadyTYf
+ivRLdO734VIFAl+8/F4CGwwACgkQivRLdO734VLFZhAAo/5G8k+aPRxeAzznN0yb
+FfpVlvRzVO35UWGaK/2oYxdEVe+cXGCVTJ788y392IOgleHCfF/Rw7mM7ryDFncL
+6PjxCgl1GP6HS0NfvpwRlrblmFXMXMK8DyWy9yYsWG5SR4I0NqlGiMBYywmeccgI7
+mPGSTgNkaLefBeyDduZleKteiRy0ip0Vq9/mDKz8J9wEzgxYMVJ/zrZdTrsDmjE2
++nw6I8FJ/A7V6D4W91knbG2DdMyx0HrqpnEyu/b5wX8piMY4HhVxBrA83vjf4j7r
+kbjunyRVGvcj4Zmtd0rvsiGuHXIQNyXW0So9SJgDfxs5Og+JZvLzL9N1Ygppgxay
+qpfttXiDPa6kNtOO8ZF7rCJrdzN4mnK103C5I4K2n8bZi6BHv9kTrwKKLYktg3
+54TiG9jJkeInHJTzbSuXfCWP7UbF39mKPdqmxIJ3GeZcL0cYupEfw0JVdsVQ+BQJ
++ZScKCFdQ5losDqDqDkZ0oE2DZ7Tjo6YeVzbxI3EgSsQ3CXRYKFaMHXsf/SAZhYQE
+kziWSrpYADwwmOIO13tG3konLtLgmodIjH6ad+xXnje27WRCpZERJQnfsoZreq5QA
+q48P4H/Sh033ISB7N/OcRzzeB7noOR4pGCv+hZXQYc4jyLX8ExghQV9dbiLuMILh
+5GhKUPljKAofZLHZNImERjc=
+=mjaK
+-----END PGP PUBLIC KEY BLOCK-----
+[11.02.22 10:40:49] biggie: https://privatlab.com/s/v/aqlgxeErOWtRWVEy6rzo
+[11.02.22 10:40:57] biggie: https://privatlab.com/s/d/aqlgxeErOWtRWVEy6rzo/JoY6a#delete
+[02/15/222 12:43:56] biggie: hello
+[15.02.22 12:44:12] elroy: send me sorts and compilation of ipn-bridge client part for vindu
+[15.02.22 12:44:50] elroy: Encrypt it all with pgp using my key
+[02/15/222 12:45:14] biggie: Okay.
+[15.02.22 12:52:14] biggie: https://privatlab.com/s/v/5M7QrLrGyZiGO6Vzk7pk
+[15.02.22 12:52:14] biggie: https://privatlab.com/s/d/5M7QrLrGyZiGO6Vzk7pk/9bWj8#delete
+[15.02.22 12:58:37] elroy: Got it, thanks.
+But it won't delete
+```
+Not Found
+
+The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+```
+[02/15/222 13:02:24] biggie: same thing

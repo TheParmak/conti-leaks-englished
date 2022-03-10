@@ -1,0 +1,151 @@
+[07.09.21 13:16:04] biggie: Hi.
+[07.09.21 13:16:20] biggie: access?
+[07.09.21 13:17:02] ruben: yes, preferably
+[07.09.21 13:17:08] biggie: root 94.158.246.171 LY72vEiyebN2
+[07.09.21 13:17:22] biggie: it's from the server
+[07.09.21 13:17:35] ruben: is it a VPN server?
+[07.09.21 13:17:52] biggie: yes, the bridge server
+[07.09.21 13:18:40] biggie: http://94.158.246.171 develop iicPEFudVtx2jXw
+[07.09.21 13:18:47] biggie: this is admin
+[07.09.21 13:19:44] ruben: what network is the monitoring server?
+[07.09.21 13:21:03] biggie: 10.8.0.0/24
+[07.09.21 13:21:35] ruben: what about 192.168.0.0/16 ?
+[07.09.21 13:22:03] biggie: not at ipn 10.8.0.0/24
+[07.09.21 13:22:36] ruben: how come? they can't be the same
+[07.09.21 13:23:45] biggie: not different server 94.158.246.171/
+[07.09.21 13:25:30] ruben: didn't get it
+[07.09.21 13:26:07] ruben: i understand, what i need to prescribe routing on monitoring server to its network from ipn
+[07.09.21 13:26:34] ruben: it cannot be the same as ipn network
+[07.09.21 13:28:54] biggie: there is a VPN server, agents connect to it, they have addresses 10.0.1.x
+[07.09.21 13:29:42] biggie: client gets ipn config, he needs to connect to the agent
+[07.09.21 13:30:28] biggie: i.e. client gets the openvpn config and has to connect to the agent
+[07.09.21 13:31:18] ruben: i understood that agents have their own LAN, not VPN, and it must be connected to VPN
+[07.09.21 13:31:38] biggie: okay
+[07.09.21 13:31:40] ruben: do client and agents connect to the same VPN?
+[07.09.21 13:31:55] biggie: yes
+[07.09.21 13:32:09] ruben: is it LAN or VPN for agents?
+[07.09.21 13:32:19] biggie: agents set l2tp connection
+[07.09.21 13:32:46] ruben: and client by openvpn?
+[07.09.21 13:32:49] biggie: the bridge creates these routes
+[07.09.21 13:32:52] biggie: -A PREROUTING -s 10.8.0.11/32 -j DNAT --to-destination 10.0.1.2
+-A POSTROUTING -j MASQUERADE
+-A POSTROUTING -s 10.8.0.0/24 ! -d 10.8.0.0.0/24 -j SNAT --to-source 94.158.246.171
+[07.09.21 13:33:00] biggie: oppa client
+[07.09.21 13:33:14] biggie: 10.0.1.2 agent
+[07.09.21 13:35:29] ruben: and this is 94.158.246.171 monitoring server?
+[07.09.21 13:35:49] biggie: yes
+[07.09.21 13:37:15] biggie: with these settings ping to 1 agent can not reach, to the other one can reach, but the ball does not work
+[07.09.21 13:39:39] ruben: you should prescribe routing on the openvpn server to enable pinging
+[07.09.21 13:39:49] ruben: where do you have them prescribed?
+[07.09.21 13:40:50] biggie: only in iptables
+[07.09.21 13:41:14] ruben: iptables is not routing, it's portmapping
+[07.09.21 13:41:34] ruben: you have only ifconfig-push registered in ccd
+[07.09.21 13:41:54] ruben: and you also need iroute/route/push route
+[07.09.21 13:43:02] ruben: um, I thought it was different -- remote LAN is connected to one of your agents and I needed to connect it to VPN
+[07.09.21 13:43:27] ruben: ah, glitchy.
+[07.09.21 13:43:41] biggie: the client needs to see the agent's LAN
+[07.09.21 13:44:00] ruben: so you have a network of agents connected to the server via l2tp
+[07.09.21 13:45:51] ruben: so, what IP does the monitoring server have in oppenvpn?
+[07.09.21 13:46:09] ruben: in l2tp 10.0.1.2, yes?
+[07.09.21 13:46:17] biggie: yes
+[07.09.21 13:46:40] ruben: and in oppenvp?
+[07.09.21 13:47:01] biggie: 10.8.0.10
+[07.09.21 13:47:07] ruben: what config corresponds to it in ccd?
+[07.09.21 13:47:28] biggie: now
+[07.09.21 13:49:55] biggie: 492wozv4hiudfetc
+[07.09.21 13:50:51] ruben: you trashed all configs except one
+[07.09.21 13:51:08] biggie: they're old
+[07.09.21 13:51:10] ruben: there IP 10.8.0.13
+[07.09.21 13:52:01] biggie: it generates agent address when you create a new config
+[07.09.21 13:52:18] biggie: it has 10,8,0,13
+[07.09.21 13:52:28] biggie: the next one will be 14
+[07.09.21 13:52:42] biggie: and a rule is added
+[07.09.21 13:53:03] biggie: -A PREROUTING -s 10.8.0.13/32 -j DNAT --to-destination 10.0.1.2
+[07.09.21 13:54:27] ruben: and why are you sure the next IP will be after 10.8.0.13? More likely, it will just be in a random way.
+[07.09.21 13:54:58] biggie: not there in ascending order. That's what bridge does.
+[07.09.21 13:55:19] biggie: what should be in ccd&
+[07.09.21 13:55:21] biggie: ?
+[07.09.21 13:56:26] ruben: add line iroute 10.0.1.0 255.255.255.0 to 492wozv4hiudfetc
+[07.09.21 13:57:10] biggie: 10.0.1.0 or 10.0.1.2 ?
+[07.09.21 13:58:11] ruben: and also route 10.0.1.0 255.255.255.0 10.0.1.2
+[07.09.21 13:58:13] ruben: and
+[07.09.21 13:58:31] ruben: push "route 10.0.1.0 255.255.255.0 10.0.1.2"
+[07.09.21 13:58:42] ruben: in server.conf (both lines)
+[07.09.21 13:59:45] biggie: right?
+[07.09.21 14:00:06] ruben: iroute 10.0.1.0 255.255.255.0
+adds route to network 10.0.1.0/24 via current client 10.0.1.2
+to the internal openvpn routing table
+[07.09.21 14:00:35] ruben: push "route ..." flushes route to the same network to every openvpn client
+[07.09.21 14:01:16] ruben: route lines .... add the same route to the OS routing table on the openvpn server
+[07.09.21 14:03:42] ruben: and they forgot to add client-to-client line to server.conf
+[07.09.21 14:04:05] ruben: to route between all clients of ipn through the server
+[07.09.21 14:04:43] ruben: then everything should be locked
+[07.09.21 14:05:45] ruben: it's necessary to understand what is routing between clients by the oppenvpn server
+[07.09.21 14:06:13] ruben: and every client needs the same route
+[07.09.21 14:06:20] ruben: push i.e.
+[07.09.21 14:06:45] biggie: server.conf is empty
+[07.09.21 14:06:49] biggie: what's in it?
+[07.09.21 14:07:20] ruben: not empty as far as I see it
+[07.09.21 14:07:45] ruben: add client-to-client line into it and restart the server
+[07.09.21 14:08:28] biggie: right ?
+[07.09.21 14:08:46] biggie: and ccd is correct ?
+[07.09.21 14:09:06] ruben: now 10.0.1.1 and 10.0.1.2 are pinged
+[07.09.21 14:09:21] biggie: they were pinging
+[07.09.21 14:09:53] ruben: seemed to be right, though I had added absolute path to ccd
+[07.09.21 14:09:53] biggie: now client can't connect over openvpn
+[07.09.21 14:10:08] ruben: should something else from the same network be pinging?
+[07.09.21 14:10:41] biggie: `MANAGEMENT: >STATE:1631023805,CONNECTED,ERROR,10.8.0.14,94.158.246.171,1194,,`
+[07.09.21 14:10:42] ruben: give me the client config -- I'll check it out
+[07.09.21 14:10:48] biggie: it's the openvpn thing
+[07.09.21 14:10:57] biggie: ok
+[07.09.21 14:12:48] biggie: password
+[07.09.21 14:12:50] biggie: 0SBfooFa0Hw1X2gA
+[07.09.21 14:12:59] biggie: Download: https://qaz.im/load/Nt3Eii/69fSk9
+Delete: https://qaz.im/index.php?a=delete&q=1976661833
+[07.09.21 14:15:30] biggie: I need you to open his balloon
+[07.09.21 14:16:10] ruben: ERR_CONNECTION_TIMED_OUT
+[07.09.21 14:16:32] ruben: can't open qaz.im
+[07.09.21 14:17:45] biggie:
+[07.09.21 14:18:11] ruben: can't see the message
+[07.09.21 14:18:16] biggie: uploaded to general
+[07.09.21 14:24:47] ruben: yeah, I got it -- downloaded it
+[07.09.21 14:38:47] ruben: it says TLS handshake failed -- weird
+[07.09.21 14:40:05] biggie: also no connection
+[07.09.21 14:40:30] ruben: he uses SHA256 instead of SHA512 for some reason
+[07.09.21 14:40:54] ruben: even if it was the latter in both configurations
+[07.09.21 14:41:38] biggie:
+[07.09.21 14:42:04] biggie:
+[07.09.21 14:42:26] ruben: empty message from you
+[07.09.21 14:42:55] biggie: in general chat see
+[07.09.21 14:45:08] ruben: yeah, I saw
+[07.09.21 14:45:15] ruben: indistinct error
+[07.09.21 14:45:29] ruben: I got TLS error after one minute of connection
+[07.09.21 14:45:59] ruben: tls-crypt seems to be the same...
+[07.09.21 15:13:15] biggie: develop iicPEFudVtx2jXw
+[07.09.21 15:14:16] ruben: Users->Create user ?
+[07.09.21 15:14:33] ruben: create there ?
+[07.09.21 15:14:49] biggie: not there
+[07.09.21 15:15:05] biggie: there's a download button in the sessions list
+[07.09.21 15:15:56] biggie: see chat
+[07.09.21 15:21:23] ruben: now it works
+пингуются 10.0.1.1...10.0.1.4...
+what kind of balls are they supposed to open?
+[07.09.21 15:21:50] ruben: ping
+[07.09.21 15:21:56] biggie: Yeah.
+[07.09.21 15:22:31] biggie: there's a screenshot in the chat room
+[07.09.21 15:23:38] ruben: yeah, I downloaded it from there and everything is just right
+[07.09.21 15:23:59] biggie: magic
+[07.09.21 15:24:24] biggie: connected?
+[07.09.21 15:27:03] ruben: ping
+[07.09.21 15:27:07] ruben: yeah
+there was something wrong with the servers
+two configs had different certificates
+[07.09.21 15:28:00] ruben: so, I'll go to the store for half an hour?
+[07.09.21 15:28:07] ruben: Before it closes
+[07.09.21 15:28:13] biggie: Okay.
+[07.09.21 18:55:06] biggie: @ruben does your client connect to the ovpn normally?
+[07.09.21 23:03:19] ruben: yeah
+[07.09.21 23:03:19] ruben: something was wrong with the certificates
+[07.09.21 23:03:20] ruben: two configs had different certificates
+[08.09.21 07:39:50] biggie: hi.
+[08.09.21 07:40:03] biggie: no messages
