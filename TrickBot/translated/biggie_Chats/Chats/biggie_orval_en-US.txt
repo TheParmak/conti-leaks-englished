@@ -1,0 +1,1326 @@
+[27.08.21 11:40:48] orval: hi.
+[27.08.21 11:41:19] biggie: hi.
+[27.08.21 11:41:32] orval: they asked me to test the glue
+[27.08.21 11:41:55] orval: knocked down, trying to assemble like this:
+```superclue.exe --infect hello86.exe sh86.bin
+[27.08.21 11:42:39] orval: gives an error
+[27.08.21 11:42:57] biggie: `sh86.bin` - pe file?
+[27.08.21 11:43:17] biggie: error, i.e. glue drops?
+[27.08.21 11:44:25] orval: not pe, shellcode
+[27.08.21 11:44:41] orval: such a conclusion:
+`` << Infect >>>
+Error
+[27.08.21 11:45:14] orval: I must have gotten it from the wrong branch
+[27.08.21 11:46:55] biggie: should be pe
+[27.08.21 11:47:16] biggie: glue has a check pe or not
+[27.08.21 11:47:37] biggie: do you also have to glue the silk codes?
+[27.08.21 11:48:00] orval: I was just asked to test the work
+[27.08.21 11:48:47] biggie: we made it for exe or dll
+[27.08.21 11:48:58] orval: got it
+[27.08.21 11:49:06] orval: there's your branch
+[27.08.21 11:49:12] orval: which one is working?
+[27.08.21 11:49:28] orval: elroy said you made some rules
+[27.08.21 11:49:44] orval: which one's working?
+[27.08.21 11:50:16] biggie: develop
+[27.08.21 11:56:28] orval: Is it run through ``build.bat`` ?
+[27.08.21 11:57:00] biggie: yeah
+[27.08.21 11:57:49] orval: ``build.bat 123.exe hello64.exe
+Build started 27.08.2021 13:55:59,77
+System fails to find defined path.
+Build failed 27.08.2021 13:55:59,78
+[27.08.21 11:59:28] biggie: it's not `build.bat` that's the build, it's 'superclue\release\supercluex64.exe'
+[27.08.21 11:59:53] biggie: or 'superclue\release\supercluex86.exe'
+[27.08.21 12:00:41] orval: the bit capacities of glue and files must match?
+[27.08.21 12:00:58] biggie: no
+[27.08.21 12:01:25] biggie: the loads and media files yes
+[27.08.21 12:07:59] orval: ``bin\ReleaseNoLogs\superclue_x64\superclue.exe --clue 123.exe hello64.exe --method create_process --drop-path C:\Temp
+ << Clue >>>
+Error
+[27.08.21 12:08:39] biggie: `--drop-path C:\Temp\file.exe`
+[27.08.21 12:09:07] biggie: the path with the file name must be
+[27.08.21 12:11:41] orval: added it, same error
+[27.08.21 12:14:49] biggie: can you send me the files you paste?
+[27.08.21 12:15:52] orval: yes, now
+[27.08.21 12:17:15] orval: ``Download: https://qaz.im/load/D3n79z/6fE5BZ
+Delete: https://qaz.im/index.php?a=delete&q=1509202315
+[27.08.21 12:18:14] orval: the messagebox load and the other processhacker
+[27.08.21 12:18:35] biggie: try running glue from here `superclue\release\supercluex64.exe'
+[27.08.21 12:19:20] biggie: try running glue from here `superclue\release\supercluex64.exe'
+[27.08.21 12:20:17] orval: did your files stick together?
+[27.08.21 12:20:34] biggie: haven't tried
+[27.08.21 12:20:40] orval: tried it, didn't work
+[27.08.21 12:21:18] biggie: try again
+[27.08.21 12:21:22] orval: only I built with 141 tools and sdk 10.0.14393.0
+[27.08.21 12:25:04] biggie: glued
+[27.08.21 12:25:22] biggie: `./supercluex64.exe --clue bin\123.exe bin\hello64.exe --method create_process --drop-path C:\Temp
+ << Clue >>>
+Success`
+[27.08.21 12:29:42] biggie: do you have a folder with `supercluex64.exe` with shellcodes and config?
+[27.08.21 12:33:11] biggie: do you see any messages?
+[27.08.21 15:06:38] orval: 123
+[27.08.21 15:06:46] orval: 123
+[27.08.21 15:06:47] orval: I understood that glue binary must be assembled with the help of batman?
+[27.08.21 15:13:52] biggie: yes
+[27.08.21 15:14:23] biggie: with the binary there should be a config and a folder with shellcodes
+[27.08.21 15:18:37] orval: and with what parameters should you run it?
+[27.08.21 15:21:47] biggie: batnick without parameters
+[02.09.21 13:45:28] orval: hi
+[02.09.21 13:45:42] biggie: hi.
+[02.09.21 13:45:51] orval: it's about the glue.
+[02.09.21 13:46:30] orval: I can glue it, the load drops when you run it, but the original file won't run
+[02.09.21 13:46:38] orval: I was sending you the files
+[02.09.21 13:46:58] orval: ProcessHacker won't start and the messagebox crashes
+[02.09.21 13:47:07] orval: did it start for you?
+[02.09.21 13:47:31] biggie: try to run it from the console
+[02.09.21 13:47:51] orval: yeah, it worked
+[02.09.21 13:47:56] orval: is that how it's supposed to work?
+[02.09.21 13:48:09] biggie: no.
+[02.09.21 13:48:34] biggie: it should work both ways, I'll check later
+[02.09.21 13:54:31] orval: which file types can you use with which startup methods?
+[02.09.21 13:55:10] biggie: exe with creat process
+[02.09.21 13:55:31] biggie: dll with regsvr32 and rundll32
+[02.09.21 13:55:52] orval: it's a load, and it's only glued to the exe?
+[02.09.21 13:56:01] biggie: yes
+[02.09.21 14:03:49] orval: can --drop-path not be specified only with rundll32?
+[02.09.21 14:04:23] biggie: yes
+[06.09.21 10:55:00] biggie:
+[06.09.21 11:00:39] orval: https://file.io/V6CpGxRjS1hW
+[06.09.21 11:09:39] biggie: what's the entry point for randl?
+[06.09.21 11:28:46] orval: Test1,Test2
+[06.09.21 11:28:59] biggie: okay.
+[06.09.21 18:19:12] biggie: corrected
+[06.09.21 18:20:25] orval: ok, I'll take a look
+[06.09.21 18:20:51] orval: the help gives examples:
+``regsvr32 --method-args <agrs> --skeep-start <skeep_start> --timeout 2000 --drop-path <drop_path>
+[06.09.21 18:21:07] orval: is it possible to pass arguments in this method?
+[06.09.21 18:21:27] biggie: yes
+[06.09.21 18:21:35] biggie: must be passed
+[06.09.21 18:22:24] orval: ``Regsvr32 [/u] [/n] [/i[:string_commands]] DLL file
+
+/u - cancels server registration
+
+/i - calls DllInstall, passing in its parameter an optional string_commands; when used with the /u switch, it calls DllUnInstall.
+/n - does not call DllRegisterServer; this can be used with the /i switch
+
+/s - "silent" mode; message windows are not displayed
+[06.09.21 18:23:06] orval: it's in offa
+[06.09.21 18:23:21] biggie: `/u /n /s ` are arguments
+[06.09.21 18:23:59] biggie: or do they count as commands?
+[06.09.21 18:24:51] orval: yeah, I guess so
+[06.09.21 18:24:55] orval: like you said
+[06.09.21 18:25:01] orval: okay, I'll take a look
+[08.09.21 11:47:12] orval: hi
+[08.09.21 11:47:23] biggie: hi
+[08.09.21 11:47:44] orval: x86 failed to glue anything together
+[08.09.21 11:48:31] orval: and regsvr arguments aren't passed the right way somehow
+[08.09.21 11:48:40] orval: if you mean the way we discussed
+[08.09.21 11:48:56] biggie: okay
+[08.09.21 11:49:17] biggie: I'll fix it.
+[08.09.21 11:52:53] biggie: send me the x86 that didn't stick together
+[08.09.21 11:55:49] orval: sec
+[08.09.21 11:58:27] orval: and another question
+[08.09.21 11:58:39] orval: does the load run from memory?
+[08.09.21 11:59:23] biggie: if rundll32 method and no reset path, then from memory - otherwise from dis
+[08.09.21 12:00:00] orval: and create_process?
+[08.09.21 12:00:07] biggie: from disk
+[08.09.21 12:00:24] orval: got it, it's just not in the terms of reference
+[08.09.21 12:01:20] biggie: you can't run everything from memory
+[08.09.21 12:01:36] biggie: rundll only works
+[08.09.21 12:03:36] orval: and also --skeep-start parameter doesn't work
+[08.09.21 12:04:21] biggie: sure it doesn't work?
+[08.09.21 12:05:29] biggie: okay, I'll test it again
+[08.09.21 12:06:17] orval: should only the load start?
+[08.09.21 12:06:47] biggie: yes
+[08.09.21 12:07:43] orval: it didn't work for me
+[08.09.21 12:08:17] orval: https://file.io/YjvHZTJ96Kc3
+[08.09.21 12:08:37] orval: I was testing x86 on calc.exe
+[08.09.21 12:08:49] orval: threw autorun.exe in just in case
+[08.09.21 14:44:46] biggie: in rundll86 is your test entry point?
+[08.09.21 14:50:09] orval: Test1
+[10.09.21 09:27:12] biggie: hi. corrected.
+[10.09.21 09:41:35] orval: hello
+[10.09.21 09:41:46] orval: great, I'll take a look.
+[13.09.21 12:23:44] orval: well, skeep is spelled differently)
+[13.09.21 12:24:36] biggie: skip)
+[13.09.21 12:24:48] orval: yeah
+[13.09.21 12:25:30] orval: add python and cmake and how to build and where the binary files are found
+[13.09.21 12:26:14] orval: well, the file should have the full instruction from 0, like the git projects
+[13.09.21 12:26:50] biggie: yeah
+[13.09.21 13:00:09] orval: does regsvr start it?
+[13.09.21 13:00:36] orval: I pass /i in --method-args
+[13.09.21 13:00:43] orval: and it doesn't start
+[13.09.21 13:01:56] orval: and carrier-file in all cases exe?
+[13.09.21 13:02:35] biggie: not only in create_process
+[13.09.21 13:03:51] biggie: try `"/i"`
+[13.09.21 13:04:00] biggie: in quotes
+[13.09.21 13:04:18] orval: the regsvr32 method I glue dll and dll only?
+[13.09.21 13:04:39] biggie: not exe and dll
+[13.09.21 13:05:55] orval: it doesn't start with regsvr32 method load
+[13.09.21 13:06:13] orval: how did you do?
+[13.09.21 13:07:55] biggie: `./supercluex64 --clue bin/hello86.exe bin/regsvr86.dll --method regsvr32 --drop-path d:\1.exe --timeout 1000 --skeep-start aa --method-args "/i"`
+[9/13/21 13:09:20] biggie: is it running?
+[13.09.21 13:10:42] orval: no
+[13.09.21 13:14:14] biggie: there should be a message at the end ` Successful execution of DllRegisterserver and Dllinstall in 1.exe` ?
+[13.09.21 13:15:12] orval: yes, and also my messageboxes
+[13.09.21 13:15:25] orval: of those functions
+[13.09.21 13:15:46] orval: well, at least that's how startup works from cmd
+[13.09.21 13:16:03] biggie: messageboxes before this message?
+[13.09.21 13:16:09] orval: yes
+[13.09.21 13:16:21] biggie: well, they were
+[13.09.21 13:16:28] biggie: what about you?
+[13.09.21 13:17:17] biggie: maybe it's not your first time in this .exe?
+[13.09.21 13:21:28] orval: no it's different every time
+[13.09.21 13:21:38] orval: writes that module was not found
+[13.09.21 13:24:00] biggie: `--drop-path d:\1.dll`
+[13.09.21 13:24:21] biggie: I already had 1.dll on this path, so it didn't complain
+[13.09.21 13:25:43] orval: and in the end?
+[13.09.21 13:26:24] biggie: `./supercluex64 --clue bin/hello86.exe bin/regsvr86.dll --method regsvr32 --drop-path d:\1.dll --timeout 1000 --skeep-start aa --method-args "/i"`
+[13.09.21 13:27:52] orval: did it start for you?
+[13.09.21 13:28:17] biggie: yeah
+[13.09.21 13:29:52] orval: I got an error
+[13.09.21 13:30:13] biggie: when gluing?
+[13.09.21 13:30:24] orval: no
+[13.09.21 13:30:29] orval: when you run the file
+[13.09.21 13:30:33] orval: writes that module not found
+[13.09.21 13:31:18] biggie: which module didn't it say?
+[13.09.21 13:31:59] biggie: is `d:\1.dll` 1.dll there?
+[13.09.21 13:32:54] biggie: `--drop-path` what is it?
+[13.09.21 13:39:23] orval: C:\Temp\1.dll
+[13.09.21 13:41:21] biggie: yeah, it's a path error
+[13.09.21 13:44:24] biggie: I'll try to fix it
+[13.09.21 14:02:50] biggie: fixed
+[13.09.21 14:03:04] orval: everything?
+[09/13/21 14:03:19] biggie: stop
+[13.09.21 14:03:19] biggie: not yet
+[09/13/21 14:03:19] biggie: sec.
+[16.09.21 10:36:18] orval: hi.
+[16.09.21 10:36:34] biggie: hi.
+[16.09.21 10:36:44] orval: any luck with the glue?
+[16.09.21 10:36:54] biggie: yeah, i'm testing.
+[16.09.21 10:37:06] orval: good
+[16.09.21 11:21:03] biggie: everything should be working now.
+[16.09.21 11:21:15] biggie: updated git
+[16.09.21 11:39:51] orval: check it out
+[16.09.21 11:40:05] orval: regsvr32 started too?
+[16.09.21 11:40:30] biggie: yes
+[17.09.21 13:21:52] orval: hello
+[17.09.21 13:22:06] biggie: hi
+[17.09.21 13:22:23] orval: glue x86 should glue x64 files?
+[17.09.21 13:22:33] biggie: yes
+[17.09.21 13:23:19] biggie: no glue?
+[17.09.21 13:24:02] orval: it does, but skeep-start doesn't work
+[17.09.21 13:24:27] biggie: there's --skip-start
+[17.09.21 13:25:44] orval: should I keep timeout while skipping?
+[17.09.21 13:26:40] biggie: it wasn't written in the quest, I did it without timeout
+[17.09.21 13:26:57] orval: ok
+[17.09.21 13:27:07] biggie: I can redo it
+[17.09.21 13:28:05] orval: I don't know the right way
+[17.09.21 13:28:23] orval: skip start works
+[17.09.21 13:28:35] orval: the flag name in the help file is old
+[17.09.21 13:28:53] orval: no
+[17.09.21 13:28:55] orval: all clear
+[17.09.21 14:13:47] orval: method regsvr32 parameter method-args is mandatory?
+[17.09.21 14:14:26] biggie: no
+[17.09.21 14:18:50] orval: when regsvr without --method-args there is no Success and the load doesn't start
+[17.09.21 14:18:56] orval: x86 glue
+[17.09.21 14:19:13] orval: ```supercluex86.exe --clue Autoruns.exe payloads\regsvr86.dll --method regsvr32 --timeout 2000 --drop-path C:\Temp\13.exe
+ << Clue >>>
+[17.09.21 14:19:43] biggie: ok
+[17.09.21 14:25:29] biggie: corrected
+[20.09.21 12:02:58] biggie: hi.
+[20.09.21 12:03:05] orval: hi.
+[20.09.21 12:03:08] biggie: I fixed it.
+[20.09.21 12:03:22] orval: with regsvr without parameters?
+[20.09.21 12:03:28] biggie: yes
+[20.09.21 12:03:39] orval: okay, I'll take a look today
+[22.09.21 10:22:55] orval: hi.
+[22.09.21 10:23:24] biggie: fwafa
+[22.09.21 10:23:27] biggie: hi.
+[22.09.21 10:24:14] orval: in the regsvr32 method with the skip-start parameter the process just hangs after the load is processed
+[22.09.21 10:24:39] orval: you don't terminate the normal process after the load is processed
+[22.09.21 10:24:54] orval: in create_process it was finished
+[22.09.21 10:25:27] biggie: regsvr32 with or without drop?
+[22.09.21 10:25:43] biggie: and this is rundll
+[22.09.21 10:27:54] orval: everywhere with drop, only in rundll maybe without?
+[22.09.21 10:28:10] biggie: yeah, I mixed them up
+[22.09.21 10:29:18] orval: fix it fast?
+[22.09.21 10:31:02] biggie: just tried hello86, closed the hello86 window and the process disappeared
+[22.09.21 10:31:22] orval: yes, I wrote that all is ok in create_process
+[22.09.21 10:31:37] orval: regsvr32 has that
+[22.09.21 10:31:48] biggie: I glued regsvr32
+[22.09.21 10:32:34] biggie: what files do you glue?
+[22.09.21 10:34:59] orval: in create_process Autoruns.exe and hello86, after hello86 finishes as load Autoruns also finishes or never started
+[22.09.21 10:35:32] orval: in regsvr32 Autoruns.exe and regsvr86.dll after regsvr86.dll finishes as a load Autoruns hangs in processes
+[22.09.21 10:45:41] orval: everything like this?
+[22.09.21 10:46:07] biggie: now
+[22.09.21 10:46:13] biggie: sec
+[22.09.21 10:52:55] biggie: what are your reset paths?
+[22.09.21 10:53:02] biggie: --drop-path
+[22.09.21 10:53:23] orval: 123
+[22.09.21 10:53:40] biggie: Yeah.
+[22.09.21 10:53:45] orval: ```supercluex86.exe --clue Autoruns.exe payloads\regsvr86.dll --method regsvr32 --skip-start s --timeout 3000 --drop-path C:\Temp\reg\1.dll
+[9/22/221 11:07:07] biggie: I added messagebox to shellcode, then rebuilt it - it worked with messagebox, then I removed it, rebuilt it and it worked. Perhaps some of the shellcode did not re-copied after reassembly.
+[22.09.21 11:09:05] orval: should I redownload the project or just rebuild it?
+[22.09.21 11:09:28] biggie: I'll try to download and rebuild
+[22.09.21 11:17:10] biggie: try to download and rebuild, it should work
+[22.09.21 11:21:39] orval: try again
+[22.09.21 11:22:57] biggie: try to re-download and rebuild, it should work
+[22.09.21 11:23:10] orval: okay
+[22.09.21 11:49:01] biggie: did it work?
+[22.09.21 11:52:12] orval: no
+[22.09.21 11:52:33] orval: autoruns.exe hangs in process after load
+[22.09.21 11:53:05] biggie: that's how it should hang
+[22.09.21 11:53:13] biggie: if you don't touch it
+[22.09.21 11:53:26] biggie: after closing it hangs?
+[22.09.21 11:53:46] biggie: or interface does not respond?
+[22.09.21 11:54:02] orval: I started with --skip-start
+[22.09.21 11:54:09] orval: the load worked
+[22.09.21 11:54:14] orval: the process stayed
+[22.09.21 11:56:56] orval: it shouldn't hang, right?
+[22.09.21 11:57:56] biggie: it shouldn't
+[22.09.21 11:58:43] biggie: does it work without the flag?
+[22.09.21 11:59:18] orval: maybe control is wrong somehow
+[22.09.21 12:00:01] orval: it works
+[22.09.21 12:00:06] orval: but I haven't tested everything
+[22.09.21 12:04:54] biggie: yes it is. I'll fix it.
+[22.09.21 12:13:24] orval: when regsvr32 load is run, it creates a separate process regsvr32.exe
+and when rundll32 with dump, no separate process is created
+[22.09.21 12:14:40] orval: don't know how
+[22.09.21 12:15:17] biggie: loadlibrary and getprocaddress are called with rundll32
+[22.09.21 12:16:06] orval: got it
+[22.09.21 12:16:42] biggie: and in case of regsvr32 ShellExecuteA is called
+[22.09.21 12:17:58] orval: and in case of create_process ?
+[22.09.21 12:18:16] biggie: CreateProcessW
+[22.09.21 12:20:34] orval: and it turns out that if I use create_process then in case of death of the parent process, the child process works
+but in case of rundll32 all will die
+[22.09.21 12:20:56] biggie: yeah
+[22.09.21 12:21:38] orval: I just don't know how it was intended, if so, okay
+[22.09.21 12:22:35] biggie: load lifetime was not specified
+[22.09.21 12:22:52] orval: okay
+[22.09.21 12:23:16] orval: who should accept the project?
+[22.09.21 12:23:42] biggie: dunno, sylver wrote the assignment, hello's teammate
+[22.09.21 12:26:30] orval: got it
+[22.09.21 13:09:05] biggie: corrected
+[22.09.21 13:09:15] biggie: added exitprocess
+[22.09.21 13:13:35] orval: let me see
+[22.09.21 14:41:28] orval: did you check for av detects?
+[22.09.21 14:41:41] biggie: no
+[22.09.21 15:36:39] orval: everything works
+[22.09.21 15:37:00] biggie: fuckin' great.
+[22.09.21 15:37:12] orval: but we gotta check for detects
+[22.09.21 15:37:34] biggie: should there be viruses in the load?
+[22.09.21 15:37:53] orval: yes
+[22.09.21 15:38:30] biggie: can you download it?
+[22.09.21 15:39:07] orval: dincek has access
+[22.09.21 15:39:10] orval: ?
+[22.09.21 15:40:10] biggie: Nope.
+[22.09.21 15:43:04] orval: I'll test it then
+[22.09.21 15:43:12] orval: if there are any detects then we'll think
+[22.09.21 15:43:21] biggie: ok
+[22.09.21 16:11:53] biggie: how long have you been working here?
+[22.09.21 16:13:18] orval: a year
+[22.09.21 16:14:26] biggie: are there any of those that comrade major came to see?
+[22.09.21 16:14:44] biggie: and they were locked up
+[22.09.21 16:15:29] orval: haven't heard)
+[22.09.21 16:15:42] biggie: that's good.)
+[22.09.21 16:17:08] orval: the main thing is to follow safety rules and everything will be fine
+[22.09.21 16:17:31] biggie: okay.)
+[22.09.21 16:18:06] orval: detect for x86 create_process
+[22.09.21 16:18:11] orval: by statics
+[22.09.21 16:18:28] orval: were actions to eliminate detects discussed?
+[22.09.21 16:19:33] biggie: not discussed
+[22.09.21 16:20:02] biggie: are there detects by rundll32 without resetting
+[22.09.21 16:20:17] biggie: loads?
+[22.09.21 16:20:47] biggie: create_process stupidly resets to disk and runs...
+[22.09.21 16:21:11] orval: check now
+[22.09.21 16:27:10] orval: also there is
+[22.09.21 16:27:14] orval: it's static
+[22.09.21 16:28:06] orval: I can only talk to sylver on Friday
+[22.09.21 16:28:23] orval: will it be hard to load?
+[22.09.21 16:28:49] biggie: the load is encrypted by aes
+[22.09.21 16:28:58] orval: even so)
+[22.09.21 16:29:54] biggie: shellcodes obfuscated
+[22.09.21 16:30:01] orval: will you be much longer today?
+[22.09.21 16:30:11] biggie: till 10
+[22.09.21 16:31:29] biggie: are the detects bad?
+[22.09.21 16:33:01] orval: haven't checked everything yet
+[22.09.21 16:33:10] orval: not so bad
+[22.09.21 16:37:14] orval: detect for normal load too
+[22.09.21 16:37:26] orval: x86 is shitty shit as always
+[22.09.21 16:38:17] orval: you call crypto functions explicitly?
+[22.09.21 16:38:25] biggie: yes
+[22.09.21 16:38:27] orval: or in general
+[22.09.21 16:38:35] orval: but it could be a detective
+[22.09.21 16:39:00] orval: who said aes encryption?
+[22.09.21 16:39:05] biggie: redo the encryption without calling winapi?
+[22.09.21 16:39:28] biggie: it was my choice because elroy said any way
+[22.09.21 16:39:45] orval: how long to redo?
+[22.09.21 16:40:12] biggie: today or tomorrow
+[22.09.21 16:40:18] biggie: can do
+[22.09.21 16:40:50] biggie: what's the best way to do it?
+[22.09.21 16:41:28] orval: how do you explicitly call them if there are none in the source?
+[22.09.21 16:42:09] biggie: there is, I search their addresses by hash and call them
+[22.09.21 16:42:28] orval: and in what dll are they?
+[22.09.21 16:43:20] biggie: ADVAPI32.dll
+[22.09.21 16:43:59] orval: and you do LoadLibrary beforehand?
+[22.09.21 16:44:14] biggie: not for them
+[22.09.21 16:44:28] orval: it just might not load automatically
+[22.09.21 16:45:14] biggie: will hog be enough for encryption?
+[22.09.21 16:45:24] orval: yeah I think xor is better
+[22.09.21 16:45:50] biggie: for reset path will xor work too?
+[22.09.21 16:46:20] orval: yes
+[22.09.21 16:47:11] orval: what do you think this is about?
+[22.09.21 16:48:26] biggie: hmm, you can check
+[22.09.21 16:49:27] orval: just so it's not a waste of time
+[22.09.21 16:50:06] biggie: I'll write it down
+[22.09.21 17:02:24] orval: just don't remove option with previous encryption far away
+[22.09.21 17:03:35] orval: it may depend on the source file
+[22.09.21 17:03:39] orval: probably
+[22.09.21 17:05:19] orval: yes, depending on the source file the detects change
+[22.09.21 17:05:25] orval: but still there(
+[22.09.21 17:06:44] orval: but in general, of course, you need to check with sylver yet
+[22.09.21 17:12:38] orval: I will be gone for 2 hours, if you fix it I will check today, tomorrow I will be late, so on Friday only be able to finish it
+[22.09.21 18:15:33] biggie: Done
+[22.09.21 18:33:59] biggie: does it detect on startup?
+[22.09.21 19:54:06] orval: just looking at static
+[22.09.21 19:54:13] orval: it doesn't start
+[22.09.21 19:54:55] orval: the dynamics is still to come
+[22.09.21 19:55:52] biggie: any difference with xor?
+[22.09.21 19:57:53] orval: now
+[22.09.21 20:05:36] orval: it still does
+[22.09.21 20:08:00] orval: is the load executed in a separate thread?
+[22.09.21 20:08:13] biggie: yes
+[22.09.21 20:08:44] orval: the fork goes straight to the beginning of main file execution?
+[22.09.21 20:10:19] orval: if anything here https://dyncheck.com/scan/id/bba42c92a66f9f8756b08839bfa672bf
+[22.09.21 20:11:13] orval: you can't put everything into .text section?
+[22.09.21 20:11:26] biggie: first you find function addresses, then you structure with addresses of shellcodes by signature, then you check arguments of com string and create stream
+[22.09.21 20:12:00] biggie: a new section is created for each shellcode
+[22.09.21 20:12:55] orval: in the course of code execution after an input point call, does the fork go right away?
+[22.09.21 20:13:15] biggie: no
+[22.09.21 20:13:47] biggie: does it go right away?
+[22.09.21 20:14:17] orval: no, on the contrary, you need to delay decrypting the load as far as possible.
+[22.09.21 20:14:49] biggie: decryption in flow happens
+[22.09.21 20:15:22] orval: right after thread start?
+[22.09.21 20:16:10] biggie: no
+[22.09.21 20:16:23] orval: what happens before start?
+[22.09.21 20:16:29] orval: right after
+[22.09.21 20:16:46] biggie: first you find addresses of winapi functions, then you structure with addresses of shellcodes by signature, then arguments of the com line are checked
+[22.09.21 20:17:04] biggie: then decrypt
+[22.09.21 20:20:43] orval: and what do the shellcodes do?
+[22.09.21 20:21:32] biggie: 1 creates thread, 2 decrypts the load, 3 starts the load
+[22.09.21 20:22:27] orval: where does sleep stand?
+[22.09.21 20:22:48] biggie: in shellcodes search unused functions by address and by name, can this affect it?
+[22.09.21 20:23:03] biggie: sleep in 2 shellcode
+[22.09.21 20:23:12] orval: it shouldn't affect it
+[22.09.21 20:23:51] orval: wait
+[22.09.21 20:24:08] orval: code in what order is it executed
+[22.09.21 20:24:27] biggie: first 1 then 2 then 3
+[22.09.21 20:24:48] orval: sleep in the thread function?
+[22.09.21 20:24:55] biggie: yes
+[22.09.21 20:25:28] orval: do you find addresses of all shelcodes before creating a thread?
+[22.09.21 20:25:36] biggie: yes
+[22.09.21 20:25:52] biggie: also inside the thread
+[22.09.21 20:26:17] orval: you find inside the thread 2 shellcode?
+[22.09.21 20:26:59] biggie: yes
+[22.09.21 20:27:26] orval: you can try to add garbage code at the very beginning of the thread function
+[22.09.21 20:28:09] orval: and to have a natural delay
+[22.09.21 20:28:16] biggie: loop?
+[22.09.21 20:29:09] biggie: what if you write shellcodes in c++?
+[22.09.21 20:29:22] orval: wm?
+[22.09.21 20:29:52] biggie: well, they're now written in c
+[22.09.21 20:32:10] biggie: the size of the shellcode written in c and c++ are different
+[22.09.21 20:33:50] orval: for example, this code:
+look through all files in the system directory, pick one randomly by size or whatever
+read it into the buffer, then modify the buffer randomly
+choose a random big chunk from this buffer.
+pick a random registry key so it's wrong beforehand (just garbage)
+in the loop go through the buffer, pick a subclip from it and compare the registry value with this chunk
+if it matches, then flag = true
+in the loop, if false, decrypt it and go to load
+[22.09.21 20:33:59] orval: something like that)
+[22.09.21 20:34:22] orval: av can scroll through your code when analyzing and decrypt the load in advance
+[22.09.21 20:34:28] orval: while omitting slips
+[22.09.21 20:35:03] biggie: okay, I'll try it tomorrow
+[22.09.21 20:35:40] orval: some of the detects that you have now coincide by name with the detects of the load itself, it's not exact, but you can't tell anything for sure here
+[22.09.21 20:35:53] orval: we have to try
+[22.09.21 20:36:12] orval: but in general it's exactly one of recommendations
+[22.09.21 20:36:27] orval: add delay first and make it natural
+[22.09.21 20:36:49] orval: I just gave you an example how I did it
+[22.09.21 20:37:16] orval: I remember it helped at some point
+[22.09.21 20:37:28] orval: not sure if it's the same now
+[22.09.21 20:41:50] orval: although I'm thinking now, for normal load also detects
+[22.09.21 20:41:59] orval: so maybe the trigger mechanism itself gives
+[22.09.21 20:41:59] biggie: so the load will not always start?
+[22.09.21 20:42:17] orval: why?
+[22.09.21 20:43:22] biggie: `oknow if false flag, then decrypt and start the load` and if true then the load will not start or if false flag, then it will start 2 times?
+[22.09.21 20:44:11] orval: no, it starts only if false
+[22.09.21 20:44:42] orval: or if false then exitthread
+[22.09.21 20:45:01] orval: more exactly if true
+[22.09.21 20:45:07] orval: otherwise decrypt
+[22.09.21 20:45:16] orval: you can make up your own code
+[22.09.21 20:45:20] biggie: could it be because of creating new sections in pe file?
+[22.09.21 20:45:49] orval: maybe that, but unlikely
+[22.09.21 20:46:00] orval: I only saw one new section
+[22.09.21 20:46:49] orval: but it's creepy that she has execute rights
+[22.09.21 20:47:10] orval: you need dincheck access
+[22.09.21 20:47:24] biggie: what would changing obfuscation algorithm do?
+[22.09.21 20:47:53] orval: that's probably not it
+[22.09.21 20:49:14] orval: let me send it to you, I'll be late tomorrow
+[22.09.21 20:49:27] orval: load and dincheck access
+[22.09.21 20:49:37] biggie: come on
+[22.09.21 20:54:27] orval: https://privatlab.com/s/v/er7A0eV8A8uAeo49Q298
+[22.09.21 20:54:41] orval: it's better to go to dincek via torus
+[22.09.21 20:54:57] orval: use only static scan
+[22.09.21 20:55:05] orval: because the dynamics can leak everything
+[22.09.21 20:55:11] orval: even now you don't need
+[22.09.21 20:55:30] orval: but in general on the dynamics is checked only on their cars without access to the internet
+[22.09.21 20:55:45] orval: with snapshot rollback
+[22.09.21 20:56:17] orval: via torus because if you upload a file, the sample might also leak
+[22.09.21 20:56:49] biggie: okay
+[22.09.21 20:56:55] biggie: Okay, I'm going to bed.
+[22.09.21 20:57:04] orval: ok
+[22.09.21 20:57:34] orval: you can try to kick some of the stuff out to see what's wrong
+[22.09.21 20:57:48] orval: e.g. make your section read only
+[22.09.21 20:57:58] orval: and see what the scan says
+[22.09.21 20:58:16] orval: throw out parts of silk codes
+[22.09.21 20:58:34] orval: in general, there is a systematic way to search for a place which gives a detector
+[22.09.21 20:58:57] orval: I didn't use it because it was easier to throw away some of the code
+[22.09.21 20:58:59] orval: here
+[22.09.21 20:58:59] orval: everything
+[22.09.21 20:59:48] orval: good night)\
+[22.09.21 21 21:00:02] biggie: yeah, thanks.)
+[22.09.21 21:01:10] orval: but in general, if the detector gives and with a normal load, it seems that the problem is in your shellcodes
+[22.09.21 21:01:25] orval: so don't hurry to write code on delay
+[24.09.21 15:16:03] orval: hi
+[24.09.21 15:16:20] biggie: hi
+[24.09.21 15:16:31] orval: any progress?
+[24.09.21 15:17:17] biggie: found shellcode, which causes antiviruses to agitate
+[24.09.21 15:17:44] biggie: 1 antivirus reacts without silks
+[24.09.21 15:17:52] orval: which one?
+[24.09.21 15:17:57] biggie: without 1 - 2
+[24.09.21 15:18:32] biggie: Webroot SecureAnywhere
+[24.09.21 15:18:45] biggie: norton responds often
+[24.09.21 15:19:03] orval: webroot - malware is bullshit, never mind
+[24.09.21 15:19:41] biggie: should nobody react?
+[24.09.21 15:20:31] orval: except webroot
+[24.09.21 15:20:53] orval: it constantly gives out detects
+[24.09.21 15:21:15] biggie: thought they responded because of high enotropy - I encrypted base64 over xor - got worse
+[24.09.21 15:21:44] orval: entropy of what?
+[24.09.21 15:22:04] biggie: the section that crypter adds
+[24.09.21 15:23:23] biggie: putting section characteristic in read did nothing
+[24.09.21 15:23:43] orval: I guess I have to do something with shelves
+[24.09.21 15:25:20] biggie: at the weekend I'll try to add the code to the beginning of the shellcode
+[24.09.21 15:25:36] orval: which one is the first shell?
+[24.09.21 15:25:49] orval: file name
+[24.09.21 15:26:18] biggie: mainx86.bin
+[24.09.21 15:35:57] orval: do you need the code of the functions I described?
+[24.09.21 15:36:12] biggie: go ahead
+[24.09.21 15:37:27] orval: ``
+char* GetRandomBuf()
+{
+	char tempFileName[MAX_PATH];
+	char targetFileName[MAX_PATH];
+	// random
+	size_t randomNum = 8;
+	WIN32_FIND_DATAA ffd;
+
+	DWORD size = 0;
+
+	GetSystemDirectoryA((LPSTR)tempFileName, (UINT)MAX_PATH);
+	GetSystemDirectoryA((LPSTR)targetFileName, (UINT)MAX_PATH);
+	StringCchCatA(tempFileName, MAX_PATH, "\\\*");
+
+	HANDLE f = FindFirstFileA(tempFileName, &ffd);
+
+	size_t count = 0;
+	char** fileNamesArr = new char*[5000];
+	DWORD rbRead;
+
+	for (size_t i = 0; i < 5000; ++i)
+		fileNamesArr[i] = new char[MAX_PATH];
+
+	// set randomly
+	size_t fileSize = 150000;
+	do
+	{
+		if (!(ffd.dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY))
+		{
+			if (ffd.nFileSizeLow > fileSize)
+			{
+				int a = 1;
+				int b = 2;
+				StringCchCopyA(fileNamesArr[count], MAX_PATH, ffd.cFileName;)
+				++count;
+
+				a += b + count;
+			}
+		}
+	} while (FindNextFileA(f, &ffd) && count < 5000);
+
+	FindClose((HANDLE)f);
+
+	randomNum %= count;
+
+	StringCchCatA(targetFileName, MAX_PATH, "\\\");
+
+	StringCchCatA(targetFileName, MAX_PATH, fileNamesArr[randomNum]);
+
+	HANDLE hFile = CreateFileA(targetFileName, GENERIC_READ, NULL, NULL, OPEN_EXISTING, NULL, NULL);
+
+	size = (DWORD)GetFileSize((HANDLE)hFile, nullptr);
+
+	char* buf = new char[size];
+	
+	ReadFile((HANDLE)hFile, buf, size, &rbRead, nullptr);
+
+	for (DWORD i = 0; i < fileSize; ++i)
+	{
+		if (buf[i] == 0)
+		{
+			size_t z = i;
+			size_t t = i * 32;
+			size_t y = i * 123 - 44 + i;
+			z = t * y % 255;
+
+			if (z != 0)
+				buf[i] = z;
+			else
+				buf[i] = z + 23;
+
+			i = 0;
+		}
+	}
+
+	/*delete[] fileNamesArr;
+	pCloseHandle(hFile);
+	*/
+	buf[fileSize - 1] = 0;
+
+	return buf;
+}
+[24.09.21 15:37:40] orval: ``
+bool QueryReg(char* buf, DWORD startTime)
+{
+	size_t result = 0;
+	LSTATUS errCode = 0;
+	HKEY hKey;
+	size_t step = 0;
+	//do random
+	char* parameterName = (char*) "zsadsgjea";
+	//do random
+	char* parameterValue = (char*) "svogfiifotuz";
+	DWORD dataSize = 12;
+
+	while (step < StrLen(buf) - 18)
+	{
+		char* temp = (char*)MyHeapAlloc(12);// new char[12];
+		temp[11] = 0;
+
+		m_memcpy(temp, buf + step, 11);
+
+		errCode = (LSTATUS)RegOpenKeyExA((HKEY)HKEY_CURRENT_USER, temp, (DWORD)0, (REGSAM)KEY_READ, &hKey);
+
+		if (errCode != ERROR_FILE_NOT_FOUND && hKey)
+		{
+			errCode = (LSTATUS)RegQueryValueExA(hKey, (LPCSTR)parameterName, nullptr, nullptr, (LPBYTE)parameterValue, &dataSize);
+
+			if (errCode != ERROR_SUCCESS && hKey)
+				++result;
+		}
+
+		//step += 18;
+		step += 40;
+		
+		free(temp);
+
+		if ((DWORD)GetTickCount() - startTime > 1000 * 20)
+			break;
+	}
+
+	return result > 10;
+}
+[24.09.21 15:37:54] orval: ``char* buf = GetRandomBuf();
+	bool flag = QueryReg(buf, GetTickCount64());
+[24.09.21 15:38:49] orval: the delay is controlled by the parameters there
+[24.09.21 15:39:11] orval: step exactly and fileSize like
+[24.09.21 15:53:17] biggie: thanks
+[24.09.21 17:11:28] orval: do you write shel at once, or C code first ?
+[24.09.21 17:12:50] biggie: if I know for sure it will work, then right away, if in doubt, I first write in a normal project
+[24.09.21 17:13:45] orval: no mainx86.bin in C?)
+[24.09.21 17:14:23] biggie: it's a binary)
+[24.09.21 17:14:35] biggie: MainShellCode
+[24.09.21 17:14:39] biggie: in c
+[24.09.21 17:14:59] biggie: and you write shellcodes in c or c++?
+[24.09.21 17:15:10] orval: I don't
+[24.09.21 17:16:08] biggie: does it make sense to try rust for shellcodes?
+[24.09.21 17:16:46] biggie: it kinda gives out more asembler
+[24.09.21 17:17:12] biggie: compared to C
+[24.09.21 17:17:34] orval: do you write in C first, then you take a binary?
+[24.09.21 17:18:36] biggie: I write and assemble a python script, it pulls out a shellcode from the binary, then I glue it
+[24.09.21 17:18:56] orval: it certainly generates more code
+[24.09.21 17:19:55] orval: but it's hard to write what you need on it
+[24.09.21 17:20:34] orval: I'm not very good at rast, but I've got a project using it
+[24.09.21 17:21:16] orval: I still can't allocate memory with runtime permissions on pure rast
+[24.09.21 17:22:12] orval: all these languages are good in such white products
+[24.09.21 17:22:53] orval: so there's a service running 24/7 and it won't crash because of memory leaks and so on
+[24.09.21 17:23:04] biggie: I see
+[24.09.21 17:23:33] orval: didn't you skip separate chunks in your shellcode to localize as much as possible
+[24.09.21 17:23:47] orval: up to library call
+[24.09.21 17:25:10] orval: and you removed the first one, but in terms of checking you probably removed all the other shelves as well, because they were called from it
+[24.09.21 17:25:28] biggie: I left in the shellcode searching for winapi functions addresses and searching for a structure with signature addresses and they still react
+[24.09.21 17:28:23] orval: if I commit a string in sors and rebuild it, will the gluing work the same way but without a piece of shellcode?
+[24.09.21 17:29:15] biggie: yes, the glue doesn't care what's in the shellcode
+[24.09.21 17:51:07] orval: somehow it is possible to re-build only one silkcode quickly?
+[24.09.21 17:54:55] biggie: `superclue\shellcode\recompile.bat` put `exit 0` in it after line 47 and run it, then only mainshellcode will be built and it will be in `superclue\shellcode\shellcodes`
+[24.09.21 18:48:14] orval: what does this call do?
+``((tfunc1)getEntryPtr(clueInfo->va_decryption_sc))();
+[24.09.21 18:48:16] orval: line 49
+[24.09.21 18:49:06] biggie: the decryption shellcode starts
+[24.09.21 18:49:16] biggie: this is the second shellcode
+[24.09.21 19:02:26] orval: DecryptShellCode?
+[24.09.21 19:03:13] biggie: yes
+[24.09.21 19:19:17] orval: __wide_to_ansi is your function?
+[24.09.21 19:19:22] orval: ``__wide_to_ansi
+[24.09.21 19:19:33] orval: and ``int szArgs = mwcslen(args);
+[24.09.21 19:37:45] biggie: yes.
+[27.09.21 19:12:06] orval: hello
+[27.09.21 19:12:24] biggie: hi
+[27.09.21 19:12:42] orval: any luck?
+[27.09.21 19:15:09] biggie: no. 2-3 detections, if glue is not a virus, with a virus 5-6. Adding your features gives 1-2 detects less. no detects when gluing x64 non-viruses.
+[27.09.21 19:16:14] biggie: x64 always has less detects?
+[27.09.21 19:16:25] orval: yes
+[27.09.21 19:17:16] orval: and you couldn't localize the location?
+[27.09.21 19:17:59] biggie: any of the silkcodes detects about the same
+[27.09.21 19:18:23] biggie: maybe you should redo obfuscation?
+[27.09.21 19:18:59] biggie: making your code more compact means less detecting
+[27.09.21 19:19:48] orval: you need to find a specific place with detections
+[27.09.21 19:20:22] orval: call a function or loop to decrypt the load
+[27.09.21 19:20:54] orval: __wide_to_ansi is your function?
+[27.09.21 19:21:02] biggie: yes
+[27.09.21 19:21:47] biggie: is there something wrong with it?
+[27.09.21 19:22:16] orval: no.
+[27.09.21 19:22:41] orval: just tried to take the pieces out and see what the detector was on
+[27.09.21 19:24:03] orval: delay functions where did you put them in?
+[27.09.21 19:24:41] biggie: at the beginning of 1 shellcode
+[27.09.21 19:27:55] orval: how much delay did it give?
+[27.09.21 19:28:10] biggie: 2-3 seconds
+[27.09.21 19:28:50] orval: can you increase it?
+[27.09.21 19:29:09] biggie: I'll try
+[27.09.21 19:29:20] orval: well, you need to find a specific piece of shellcode
+[27.09.21 19:29:27] orval: or several
+[27.09.21 19:29:35] orval: that give detects
+[27.09.21 19:32:52] orval: is NtFlushInstructionCache called?
+[27.09.21 19:33:04] biggie: no
+[27.09.21 19:33:30] orval: hugo is in the shell
+[27.09.21 19:34:44] biggie: well, it's a separate shellcode, it's glued in case of rundll32 without reset to disk, in other cases runpe shellcode is glued
+[27.09.21 19:35:43] orval: and crypto functions from Advapi32 or any other nt functions?
+[27.09.21 19:37:44] biggie: no crypto, nt also none
+[27.09.21 19:38:00] orval: decrypt function is pasted?
+[27.09.21 19:38:14] orval: all those calls are there
+[27.09.21 19:38:42] biggie: it's not called, decrypt2 is called
+[27.09.21 19:39:05] orval: but in the end there is such a code
+[27.09.21 19:39:20] orval: ?
+[27.09.21 19:39:24] orval: in the final file
+[27.09.21 19:39:40] biggie: I'll clean it up
+[27.09.21 19:45:10] biggie: 2 detections
+[27.09.21 19:46:53] biggie: I call your code like this
+[27.09.21 19:47:17] biggie: ` tGetTickCount pGetTickCount = (tGetTickCount)pGetProcAddressWithHash(hGetTickCount);`
+` char *bbuff = GetRandomBuf();`
+` while (1)`
+` {`
+` if (!QueryReg(bbuff, pGetTickCount()))`
+` break;`
+` }`
+[27.09.21 19:51:06] orval: what detects?
+[27.09.21 19:51:26] orval: and they became less after adding code or now after removing crypto functions?
+[27.09.21 19:51:40] biggie: after returning it became 3
+[27.09.21 19:52:02] biggie: detects in 1 case nano and webroot
+[27.09.21 19:52:22] biggie: in 2 nano, webroot and norton
+[27.09.21 19:52:32] orval: after returning what?
+[27.09.21 19:52:43] orval: webroot skip
+[27.09.21 19:53:13] biggie: decrypt f-function with Advapi32 calls
+[27.09.21 19:53:38] orval: leave it off)
+[27.09.21 19:53:46] orval: even more, it is not used
+[27.09.21 19:53:56] biggie: Yeah
+[27.09.21 19:54:11] orval: and there was also xcrypt something there, did they go away after adding garbage code?
+[27.09.21 19:54:25] orval: and try to remove NtFlushInstructionCache just in case
+[27.09.21 19:54:31] orval: if nothing happens you can take it back
+[27.09.21 19:54:36] orval: but it doesn't seem to matter
+[27.09.21 19:54:59] orval: and you end up with one nano detector?
+[27.09.21 19:55:08] biggie: yeah
+[27.09.21 19:55:16] orval: that's much better
+[28.09.21 16:22:49] orval: hi
+[28.09.21 16:23:09] biggie: hi.
+[28.09.21 16:23:24] orval: is it up to date in git?
+[28.09.21 16:24:07] biggie: not the old one that works, but it's detectable
+[28.09.21 16:24:52] orval: what you have now may not work?
+[28.09.21 16:26:03] biggie: it still works
+[28.09.21 16:26:28] biggie: everything should work
+[28.09.21 16:26:36] orval: I just thought I'd see for myself.
+[28.09.21 16:27:08] orval: can you fill in a new branch, and then when we're done, just freeze it?
+[28.09.21 16:27:21] orval: *in develop
+[28.09.21 16:27:38] biggie: I can.
+[28.09.21 16:27:50] biggie: now
+[28.09.21 16:51:05] biggie: added a testing branch
+[28.09.21 16:54:00] biggie: on the same file first 2, then 3 detections
+antiviruses are learning?
+[28.09.21 16:54:57] biggie: Bleep!
+[28.09.21 16:56:22] orval: yeah
+[28.09.21 16:56:54] orval: but they shouldn't be on yours
+[28.09.21 16:56:57] orval: because they are not going anywhere
+[28.09.21 16:57:07] orval: are you uploading to dincek via tor?
+[28.09.21 16:57:29] biggie: yes, with regular Mozilla and tor proxy
+[28.09.21 16:57:41] orval: 123
+[28.09.21 16:57:53] biggie: yeah, regular Mozilla and tor proxy
+[28.09.21 16:58:19] orval: shit.)
+[28.09.21 16:58:38] orval: safebrowsing has to be turned off
+[28.09.21 16:58:53] orval: in about:config
+[28.09.21 16:59:17] orval: samples may merge during upload
+[28.09.21 16:59:46] orval: except for safebrowsing you should disable everything in your config
+[28.09.21 17:00:04] orval: everything is turned off by default in torus
+[28.09.21 17:04:38] orval: well, you don't have any avs on it?
+[28.09.21 17:05:09] biggie: default vin is off
+[28.09.21 17:05:19] biggie: no other
+[28.09.21 17:05:28] orval: safebrowsing - we've got to cut everything out
+[28.09.21 17:06:08] biggie: disabled
+[28.09.21 17:08:26] orval: okay
+[28.09.21 17:08:44] orval: why don't you use torus?
+[28.09.21 17:08:59] biggie: fafaef
+[28.09.21 17:09:49] biggie: 123
+[28.09.21 17:11:57] orval: haven't you seen it?
+[28.09.21 17:12:19] biggie: don't repeat it please
+[28.09.21 17:12:23] orval: why don't you use torus?
+[28.09.21 17:12:54] biggie: Mozilla is more comfortable
+[28.09.21 17:13:01] biggie: better than torus?
+[28.09.21 17:13:49] orval: probably better, you can only use it for a couple of sites, everything else is in Mozilla
+[28.09.21 17:15:31] orval: https://wiki.mozilla.org/Security/Features/Application_Reputation_Design_Doc
+https://wiki.mozilla.org/Security/Safe_Browsing
+https://wiki.mozilla.org/Security/Download_Protection
+[28.09.21 17:15:47] orval: the fact of availability of such functions makes me nervous
+[28.09.21 17:16:01] biggie: put torus)
+[28.09.21 17:16:16] orval: check safebrowsing there too
+[28.09.21 17:17:19] biggie: some items are enabled there
+[28.09.21 17:17:53] orval: turn them off too
+[29.09.21 11:41:10] orval: hi
+[29.09.21 11:52:10] orval: no shells are generated in testing main branch
+[29.09.21 12:00:08] biggie: hi, I'll update
+[29.09.21 12:01:24] biggie: updated
+[29.09.21 13:31:44] biggie: 3 detections, including webroot
+[29.09.21 13:46:08] biggie: updated git
+[29.09.21 13:46:25] orval: ok, I'll take a look
+[01.10.21 22:06:21] biggie: hi
+[01.10.21 22:07:01] biggie: successfully reduced number of detects to 2
+[01.10.21 22:07:29] biggie: webroot and nano detects
+[01.10.21 22:07:41] biggie: updated git
+[04.10.21 10:50:55] biggie: hi reduced to 2 detects
+[04.10.21 10:51:19] orval: hi
+[04.10.21 10:51:29] biggie: nano and webroot detects
+[04.10.21 10:51:45] orval: you can't remove nano?
+[04.10.21 10:51:57] biggie: no
+[04.10.21 10:52:16] orval: okay, I'll see when I have time
+[04.10.21 10:52:34] orval: maybe it'll only be when elroy comes out
+[04.10.21 10:53:20] orval: you need to check all the other profiles for statics now
+[04.10.21 10:53:54] orval: if you maxed out the statics, check for functionality
+[04.10.21 10:54:17] orval: after that you can check the dynamics
+[04.10.21 10:54:24] biggie: do you have a dll with viruses for tests?
+[04.10.21 10:54:40] orval: yes, I'll get it
+[25.10.21 13:06:00] orval: hi
+[25.10.21 13:06:28] biggie: hi.
+[25.10.21 13:06:45] orval: 123
+[25.10.21 13:06:59] orval: is this the last mission?
+[25.10.21 13:07:58] orval: didn't put into repository?
+[25.10.21 13:08:58] orval: I'm about to find out
+[25.10.21 13:11:16] orval: send it to me
+[25.10.21 13:16:54] orval: do you have my key?
+[25.10.21 13:18:05] orval: ``-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+=AWko
+-----END PGP PUBLIC KEY BLOCK-----
+[25.10.21 13:18:29] orval: there should be an indent after the first line
+[25.10.21 13:18:45] orval: -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+=AWko
+-----END PGP PUBLIC KEY BLOCK-----
+[25.10.21 13:26:24] orval: pdf?
+[25.10.21 13:27:32] orval: the pdf file itself decrypted
+[25.10.21 13:37:20] orval: please send it via qaz.im
+[25.10.21 13:38:25] orval: or https://privatlab.com/
+[25.10.21 13:48:37] orval: encryption
+[25.10.21 13:50:07] orval: and one more task
+[25.10.21 13:51:01] orval: ``2. Data plugin.
+Plugin function prototype: def set_payload(payload), type(payload) = binary string, payload.py file;
+The prototype of the plugin function: BYTE* GetPayload(HINSTANCE hInst), where hInst - the base address of the load module,
+		where this code is executed, the files GetPayload.hpp, GetPayload.cpp;
+[25.10.21 13:52:52] orval: plugin function generates code that will store payload
+[25.10.21 13:53:14] orval: plugin function returns this string
+[25.10.21 13:54:17] orval: store, in the sense that at compile time, this string will be stored in the binary file in some way
+[25.10.21 14:01:14] orval: file resulting from exe/dll compilation
+[28.10.21 10:38:05] orval: hi
+[28.10.21 10:38:22] biggie: hi
+[28.10.21 10:39:57] orval: the encryption plugin work incorrectly, in the terms of reference it is specified that the input string is in binary form, and if passed, the script crashes
+[28.10.21 10:41:32] orval: any other new plugins?
+[28.10.21 10:42:07] orval: but it works with plain string too?
+[28.10.21 10:42:37] orval: send it over
+[28.10.21 11:12:35] orval: is 3.8 version enough for cryptography?
+[28.10.21 11:13:45] orval: after installing via pip install I get an error in the script
+[28.10.21 11:22:23] orval: no, there is nothing wrong with that
+[28.10.21 11:27:58] orval: and old_size is what?
+[28.10.21 11:30:06] orval: size of what?
+[28.10.21 11:31:16] orval: yeah got it
+[28.10.21 11:31:27] orval: can't you randomize the key?
+[28.10.21 11:32:09] orval: it is
+[28.10.21 12:38:14] orval: it works
+[28.10.21 12:38:33] orval: did the data plugin start making?
+[28.10.21 12:39:14] orval: yes, preferably in the next days
+[28.10.21 12:39:59] orval: for starters, yes)
+[28.10.21 12:40:09] orval: but you need more of course
+[28.10.21 12:40:43] orval: yes
+[28.10.21 12:40:55] orval: but you can implement the same idea in different ways
+[28.10.21 12:41:01] orval: the main thing is that the code must be different
+[28.10.21 12:41:13] orval: and as polymorphic as possible
+[28.10.21 12:41:32] orval: any ideas?
+[28.10.21 12:42:26] orval: as a string?
+[28.10.21 12:43:02] orval: that will do for starters)
+[28.10.21 12:44:27] orval: you can also deregister into sections
+[28.10.21 12:44:41] orval: and then find in them and collect
+[28.10.21 12:46:09] orval: tell the compiler to stack the data in the section, at compile time
+[28.10.21 12:46:21] orval: like this
+[28.10.21 12:46:23] orval: ``#pragma section(".text", read, execute)
+			unsigned int __declspec(allocate(".text")) array1[] = { 201, ... , };
+[28.10.21 12:47:09] orval: just don't put everything into .text, at least divide it with .data
+[01.11.21 13:28:01] orval: hi
+[01.11.21 13:28:15] biggie: hi
+[01.11.21 13:28:48] orval: any new plugins?
+[01.11.21 13:29:29] biggie: yes, 2 storage plugin variants and encryption tweaked
+[01.11.21 13:29:37] biggie: discount?
+[01.11.21 13:30:06] orval: go ahead
+[01.11.21 13:47:57] biggie: what's the best service to transfer ?
+[01.11.21 14:17:19] biggie: found it
+[01.11.21 14:17:21] biggie: https://privatlab.com/s/v/pw6rXD4oe2T0dAgXwg03
+[01.11.21 14:17:28] biggie: https://privatlab.com/s/d/pw6rXD4oe2T0dAgXwg03/q775z#delete
+[01.11.21 15:16:28] orval: accepted
+[01.11.21 18:05:28] orval: when you do base64 coding
+[01.11.21 18:05:38] orval: got this error when compiling
+[01.11.21 18:05:42] orval: ``GetPayload.cpp(8,20): error C2026: string too big, trailing characters truncated
+[01.11.21 18:06:26] orval: you shouldn't have any problems if you make an array
+[01.11.21 18:06:51] biggie: ok
+[01.11.21 18:10:34] orval: either move to a new line, but I'm not sure
+[01.11.21 18:11:10] orval: you can test if string > 200kb
+[01.11.21 18:13:53] biggie: does the other save work?
+[01.11.21 18:15:02] orval: yes, you have arrays there and no problems
+[01.11.21 18:39:15] biggie: corrected
+[01.11.21 18:39:15] biggie: https://privatlab.com/s/v/4jbQo6Eb93SqZkVdYVeq
+[01.11.21 18:39:19] biggie: https://privatlab.com/s/d/4jbQo6Eb93SqZkVdYVeq/2onoy#delete
+[01.11.21 19:15:56] orval: thanks
+[01.11.21 19:16:27] biggie: :slight_smile:
+[02.11.21 11:49:06] orval: hi
+[02.11.21 11:56:31] biggie: hi
+[02.11.21 12:15:39] orval: you didn't fix xor encryption?
+[02.11.21 12:15:58] biggie: corrected
+[02.11.21 12:16:13] biggie: doesn't work?
+[02.11.21 12:17:11] orval: you sent it to me, right?)
+[02.11.21 12:17:30] biggie: yeah
+[02.11.21 12:17:39] orval: I'll check it out.
+[02.11.21 12:17:47] orval: aes isn't working
+[02.11.21 12:18:21] orval: after taking out and decoding load
+[02.11.21 12:18:29] orval: a few bytes are not accurate
+[02.11.21 12:18:41] orval: very strange
+[02.11.21 12:19:09] orval: and the bytes where should be 0x01 others
+[02.11.21 12:19:20] orval: in several places literally
+[02.11.21 12:19:55] biggie: okay, I'll fix it
+[02.11.21 12:20:11] orval: but I don't even know what the problem is
+[02.11.21 12:20:36] orval: can you test on binary files < 100kb?
+[02.11.21 12:20:54] biggie: yeah
+[02.11.21 12:23:20] orval: hashes didn't match and I looked in what places they were different
+[02.11.21 12:42:19] orval: and xor doesn't work either
+[02.11.21 14:45:16] orval: did you check?
+[02.11.21 14:45:52] biggie: yes, I did.
+[02.11.21 18:16:21] biggie: corrected.
+[02.11.21 18:16:22] biggie: https://privatlab.com/s/v/qD86gkYaGyC0qagMOgLk
+[02.11.21 18:16:27] biggie: https://privatlab.com/s/d/qD86gkYaGyC0qagMOgLk/E06bD#delete
+[02.11.21 18:18:16] orval: accepted
+[02.11.21 18:18:20] orval: check later
+[02.11.21 18:48:18] orval: everything works
+[03.11.21 10:02:01] orval: hi
+[03.11.21 10:02:16] biggie: hi.
+[03.11.21 10:02:33] orval: do you know how to obfuscate system calls?
+[03.11.21 10:03:00] biggie: no, but I can try
+[03.11.21 10:03:23] orval: they didn't send you any code for it?
+[03.11.21 10:03:45] biggie: no
+[03.11.21 10:04:30] orval: I'll send it to you
+[03.11.21 10:04:52] orval: this technique allows you to remove winapi calls from the import
+[03.11.21 10:17:29] biggie: I'll be gone an hour
+[03.11.21 10:18:09] orval: okay
+[03.11.21 10:48:50] orval: Download: https://qaz.im/load/k93DBb/9ieQSF
+Delete: https://qaz.im/index.php?a=delete&q=685640793
+[03.11.21 10:49:14] orval: I'll probably send you the full package later, there should be instructions somewhere
+[03.11.21 10:49:45] orval: but for now, due to lack of time, I downloaded the kit, which I adapted for myself
+[03.11.21 10:50:43] orval: to obfuscate the system call - you need to include the file
+[03.11.21 10:53:45] orval: - you need to include the file #include "GetApi.hpp"
+- at the beginning of the program call DecryptDLLNames();
+- use the prefix p (pMessageBoxA(0, 0, 0, 0) when calling winapi functions;
+- explicitly cast all types - return types and argument types :
+``(PVOID)pVirtualAlloc(NULL, (SIZE_T)size, (DWORD)(MEM_RESERVE | MEM_COMMIT), (DWORD)(PAGE_READWRITE));
+[03.11.21 10:54:31] orval: in this case the system call should leave the import table
+[03.11.21 10:55:12] orval: you need to change code now so that calls in modules are obfuscated
+[03.11.21 10:56:05] orval: you also need to use nullptr instead of NULL, but sometimes works without it
+[03.11.21 11:50:09] orval: first of all, obfuscate in aes now
+[03.11.21 11:52:17] biggie: yeah
+[03.11.21 12:09:37] biggie: aes did
+[03.11.21 12:10:31] orval: great
+[03.11.21 12:10:55] orval: send
+[03.11.21 12:13:07] biggie: https://privatlab.com/s/v/dbEo36qaz2T7DGWQVWaE
+[03.11.21 12:13:14] biggie: https://privatlab.com/s/d/dbEo36qaz2T7DGWQVWaE/Opkqj#delete
+[03.11.21 12:30:19] orval: do an explicit castoff of all variables when you call functions, castoff return value if you use (for example here if (!pCryptAcquireContextA) and considering that DecryptDLLNames() has already been called
+[03.11.21 12:40:54] biggie: did it, but it works worse without csto?
+[03.11.21 12:48:00] orval: sometimes it returns the wrong value
+[03.11.21 12:48:43] orval: or rather not in that form
+[03.11.21 12:49:45] orval: something like you expect a bool, but the compiler thinks it returns an int
+[03.11.21 12:50:06] orval: well, you might get some unexpected behavior
+[03.11.21 12:50:57] biggie: got it
+[03.11.21 13:49:12] orval: well, for now, if you don't have any urgent tasks, make new plugins
+[03.11.21 13:52:39] orval: and now I'll give you another new plugin
+[03.11.21 14:24:20] biggie: give me a plugin
+[03.11.21 14:27:55] orval: tomorrow I'll probably define it more strictly, right now just in general terms
+[03/11/21 14:31:21] orval: python function takes array of pairs {function_name, name_dll} - names are related by function exported by this dll, you need to generate function in c++ which will create global array that will contain addresses of these functions, type ULONG_PTR. If needed, you need to load missing dll into address space
+[03.11.21 14:34:03] biggie: okay, I'll just finish the compression + encryption
+[03.11.21 14:37:23] orval: ok
+[08.11.21 19:55:20] orval: any new plugins?
+[08.11.21 19:55:52] biggie: yes compression + aes and compression + xor
+[08.11.21 19:56:37] orval: compression only affects encryption plugin?
+[08.11.21 19:56:47] biggie: yes
+[08.11.21 19:57:00] orval: can you download it?
+[08.11.21 19:57:08] biggie: right away.
+[08.11.21 19:59:57] biggie: https://privatlab.com/s/v/YOGn6JdaXoC3pqMDg2pw
+[08.11.21 20:00:04] biggie: https://privatlab.com/s/d/YOGn6JdaXoC3pqMDg2pw/lB469#delete
+[08.11.21 20:30:01] orval: seems to be working
+[08.11.21 20:30:51] orval: only I told to take into account that DecryptDLLNames was already called earlier in the code
+[08.11.21 20:31:03] orval: your code goes to production almost immediately
+[08.11.21 20:31:59] orval: did you make plugin with address finding functions?
+[08.11.21 20:32:24] biggie: no
+[08.11.21 20:32:48] biggie: write function prototypes again
+[08.11.21 20:37:28] biggie: the plugin with finding function addresses can start in 2 days, because elroy gave me another job with a higher priority
+[08.11.21 20:38:29] orval: on glue or plugins?
+[08.11.21 20:38:35] orval: or something else?
+[08.11.21 20:39:37] biggie: I need to make a keylogger urgently
+[08.11.21 20:40:03] orval: okay, I'll write prototypes later
+[08.11.21 20:40:17] biggie: ok
+[08.11.21 20:41:22] orval: thanks anyway for doing that
+[08.11.21 20:41:39] biggie: please
+[12.11.21 20:36:07] orval: how's your free time now?
+[12.11.21 20:36:30] biggie: I do now.
+[12.11.21 20:36:54] orval: there are changes in the terms of reference for plugins
+[12.11.21 20:37:16] orval: you need to tweak your code to meet those requirements
+[12.11.21 20:37:37] orval: any time?
+[12.11.21 20:37:50] biggie: yeah
+[12.11.21 20:38:14] biggie: I can do it this weekend.
+[12.11.21 20:38:32] orval: I'll send it over.
+[12.11.21 20:38:51] orval: ``2. Requirement for c++ code:
+- It is necessary that the code compiles for 2 digits (x86/x64);
+- Use only winapi functions. Make calls using the provided api;
+- Do not use stl or runtime functions. If necessary, rewrite them yourself or use the ones provided;
+- Use line obfuscation (code provided).
+
+
+3. winapi calls api
+Calls to winapi functions should not be made directly, but through the provided api.
+The developer is provided with the addresses of all the functions he needs. The required address will contain an identifier (declared with the #define derequisite).
+The name of the required identifier is the function name + prefix f (the address of the MessageBoxA function contains the identifier fMessageBoxA, etc.).
+To use the identifier you need to include the header file "LoadFunctionsApi.hpp".
+
+Example usage:
+
+#include "LoadFunctionsApi.hpp"
+...
+typedef int(WINAPI* MESSAGEBOXA)(HWND, LPCSTR, LPCSTR, UINT);
+...
+MESSAGEBOXA msgBoxA = (MESSAGEBOXA)fMessageBoxA;
+msgBoxA(0, 0, 0, 0);
+
+
+4. All plugins except the api plugin must contain in its file a function that returns an array consisting of value pairs "function name" - "library name".
+The values are compiled based on the functions that the plugin uses and, respectively, the name of the library that provides that function.
+The required format of the array is presented in the example. The names of the functions for each plugin will be given below.
+
+Example function:
+
+def foo():
+	arr = [ {'MessageBoxA': 'user32.dll'}, {'TraceMessage': 'Advapi32.dll'}, {'ConnectNamedPipe': 'kernel32.dll'} ]
+	return arr
+[12.11.21 20:42:42] orval: ``Delay plugin - get_delay_api()
+Data plugin - get_data_api()
+Encryption plugin - get_encryption_api()
+[12.11.21 20:42:55] orval: that's for point 4
+[12.11.21 20:43:28] orval: and for the last plugin I said I'll send you the requirements
+[12.11.21 20:43:31] orval: ``8. Plugin api.
+Plugin function prototype: def generate_api(arr), file generate_api.py
+Module function prototype: void LoadFunctionsApi(), files LoadFunctionsApi.cpp, LoadFunctionsApi.hpp
+
+The module's code must not contain direct function calls (if you need to find the addresses yourself).
+The plugin accepts the array described in section 4. The LoadFunctionsApi.hpp file contains the code for the void LoadFunctionsApi() function definition, as well as
+#define dereqs, which will contain the addresses of the functions. The name of the identifier of the dereq = f + function name, the value of the identifier = function address. An example of how it will be used is in the paragraph 3.
+The LoadFunctionsApi.cpp file contains the void LoadFunctionsApi() function. In it you need to load all the necessary libraries, and initialize the addresses of the functions.
+[12.11.21 20:43:43] biggie: `memcpy memcmp` can be used?
+[12.11.21 20:43:50] orval: no
+[12.11.21 20:44:09] orval: they are rewritten in the file Memory.cpp
+[12.11.21 20:44:21] orval: so use them
+[12.11.21 20:44:35] orval: or you can write it yourself
+[12.11.21 20:44:51] orval: that's what the TK says
+[12.11.21 20:46:16] biggie: `"LoadFunctionsApi.hpp"` can you download it?
+[12.11.21 20:46:47] orval: that's your point 8
+[12.11.21 20:47:08] orval: when you write other plugins - do everything as usual
+[12.11.21 20:47:20] orval: then you edit code with this feature
+[12.11.21 20:47:39] orval: just add prefix f and make an inlude
+[12.11.21 20:48:15] biggie: got it.
+[12.11.21 20:48:40] orval: you can either plug in your own, just to test it
+[12.11.21 20:55:46] biggie: on 8 point, the addresses of the functions from `PEB` take ?
+[12.11.21 20:56:47] biggie: i.e. these addresses for all processes are the same?
+[12.11.21 20:57:13] orval: they are always different
+[12.11.21 20:57:19] orval: you can use PEB
+[12.11.21 20:58:20] biggie: what's not in PEB via loadlibrary getprocaddress?
+[12.11.21 21:00:33] orval: you can do it that way
+[12.11.21 21:01:16] orval: only at the beginning you don't have these functions)
+[12.11.21 21:01:36] biggie: Peb has them
+[12.11.21 21:01:58] orval: I mean from the code writing point of view
+[12.11.21 21:02:10] orval: any way to achieve
+[12.11.21 21:02:32] orval: only without direct calls
+[12.11.21 21:02:44] biggie: why #define ?
+[12.11.21 21:03:19] orval: provide function addresses to the rest of the code
+[12.11.21 21:05:04] biggie: does #define with addresses fill python code?
+[12.11.21 21:06:16] orval: python makes blanks, and the value is inserted into define on the fly
+[12.11.21 21:06:36] orval: you can't specify the address directly
+[12.11.21 21:07:05] orval: you can substitute the function call there
+[12.11.21 21:07:11] orval: for example
+[12.11.21 21:08:38] biggie: i.e. you have to change #define value in runtime
+[12.11.21 21:08:55] biggie: but this way?
+[12.11.21 21:11:50] orval: well, for example define equals the value of the function
+``#define SOMEVALUE1 Foo(0)
+#define SOMEVALUE2 Foo(1000)
+
+int Foo(int x) {
+ return x + 5;
+}
+[12.11.21 21:11:55] orval: there's lag
+[12.11.21 21:12:23] orval: are you in toad?
+[12.11.21 21:12:38] biggie: yeah, i'm the count there
+[12.11.21 21:12:53] orval: graph?
+[12.11.21 21:13:10] biggie: graph
+[12.11.21 21:13:35] biggie: I got it.
+[12.11.21 21:13:56] biggie: I'll try to do it over the weekend
+[12.11.21 21:14:10] orval: you got it with string obfuscation too?
+[12.11.21 21:14:37] biggie: yeah
+[12.11.21 21:14:53] orval: okay
+[12.11.21 21:15:59] orval: obfuscation via _STR macro
+[12.11.21 21:17:02] biggie: is it in `Obfuscation.hpp` ?
+[12.11.21 21:18:03] orval: yes
+[15.11.21 14:32:07] orval: hi
+[15.11.21 14:32:16] biggie: hi.
+[15.11.21 14:32:29] orval: anything on plugins?
+[15.11.21 14:33:07] biggie: not yet, I spent too much time on the keylogger
+[15.11.21 14:34:00] orval: got it
+[19.11.21 09:46:42] biggie: hi
+[19.11.21 09:47:02] orval: hi.
+[19.11.21 09:47:20] biggie: plugins ready
+[19.11.21 09:47:37] orval: let me see
+[19.11.21 09:51:58] biggie: https://privatlab.com/s/v/JrBBd4aQrwF6bmqzYddR
+[19.11.21 09:52:01] biggie: https://privatlab.com/s/d/JrBBd4aQrwF6bmqzYddR/4YpEx#delete
+[19.11.21 09:59:03] orval: can you tell me which plugin is which?
+[19.11.21 09:59:18] biggie: ok
+[19.11.21 10:03:58] biggie: delay1 delay2 delay, delay3 delay with file comparison
+[19.11.21 10:05:11] biggie: encryptpayload1 xor encryption
+[19.11.21 10:06:01] biggie: encryptpayload2 aes encryptpayload3 xor and compression encryptpayload4 aes and compression
+[19.11.21 10:22:11] biggie: listen, you sent me rundll86.dll for the glue test. Do you remember what the entry point was called there?
+[19.11.21 10:26:24] orval: Test1 can
+[19.11.21 10:36:53] orval: ``
+def dump_export(file_path):
+    pe = pefile.PE(file_path)
+    print("export:\n")
+    for exp in pe.DIRECTORY_ENTRY_EXPORT.symbols:
+        print(hex(pe.OPTIONAL_HEADER.ImageBase + exp.address), exp.name.decode('utf-8') + ' @' + str(exp.ordinal))
+[19.11.21 10:36:57] orval: export dump
+[19.11.21 10:44:34] orval: first delay
+[19.11.21 10:44:41] orval: ``
+def make_delay():
+	path = "../Plugins_14_11/"
+	my_file = open(path + "Delay.hpp", "w")
+...
+[19.11.21 10:45:32] biggie: so for all plugins
+[19.11.21 10:45:33] orval: well, it's in every file, I guess
+[19.11.21 10:45:42] orval: is that how it's meant to be?
+[19.11.21 10:45:57] orval: with path
+[19.11.21 10:45:58] biggie: yeah
+[19.11.21 10:46:09] biggie: change?
+[19.11.21 10:46:39] orval: yes, it's not in the TK
+[19.11.21 10:46:47] orval: the files must be created side by side
+[19.11.21 10:46:58] orval: I'll add it to tz
+[19.11.21 10:49:03] biggie: corrected
+[19.11.21 10:49:08] orval: yeah, me too
+[19.11.21 10:49:14] orval: don't throw that
+[19.11.21 10:58:41] orval: I thought I wrote that prefix f must be, and you got l
+[19.11.21 11:01:16] biggie: I'll redo it, what other problems?
+[19.11.21 11:01:58] biggie: yes f
+[19.11.21 11:03:28] orval: in api plugin module dll name is it case sensitive?
+[19.11.21 11:03:47] biggie: yes
+[19.11.21 11:04:37] orval: make it case insensitive
+[19.11.21 11:22:42] biggie: is obfuscation done correctly?
+[19.11.21 11:24:50] orval: did you check it yourself?
+[19.11.21 11:25:09] orval: along with some module
+[19.11.21 11:26:10] biggie: the binary seems to be missing names
+[19.11.21 11:27:47] orval: I'll check it, I was just looking with my obfuscation
+[19.11.21 11:27:57] orval: the first delay lasted 8 minutes and I shut it down
+[19.11.21 11:30:54] orval: in LoadFunctionsApi.cpp you export ntdll.h
+[19.11.21 11:30:57] orval: there is no such file
+[19.11.21 11:31:49] biggie: you can't add it?
+[19.11.21 11:32:02] orval: what's in it?
+[19.11.21 11:33:05] orval: ppeb etc.
+[19.11.21 11:33:19] orval: ntos.hpp file is used
+[19.11.21 11:33:22] orval: I'll send it off
+[19.11.21 11:33:31] orval: there are slightly different structure names
+[19.11.21 11:34:32] orval: I already threw it to you
+[19.11.21 11:36:59] orval: you need to change the PEB name and Ldr field to pLdr
+[19.11.21 11:39:58] orval: i also gave you the file memory with rewritten crt functions. you can consider that it exists and you can connect it
+[19.11.21 11:53:00] orval: can you do it today?
+[19.11.21 11:54:48] biggie: today or tomorrow, there's a problem with the glue
+[19.11.21 11:57:06] orval: there's not much to fix, I need it urgently too. Let's do it on Saturday, I'll be there in the evening or maybe during the day
+[19.11.21 11:57:36] biggie: I'll try
+[19.11.21 12:30:37] orval: in encryptpayload2 wrong file LoadFunctionsApi.hpp is connected
+[19.11.21 12:35:17] orval: but no, it's ok
+[19.11.21 13:23:26] biggie: fixed
+[19.11.21 13:25:21] biggie: https://privatlab.com/s/v/BA7aGrlGlYUbyg4AqD6m
+[19.11.21 13:25:26] biggie: https://privatlab.com/s/d/BA7aGrlGlYUbyg4AqD6m/rkMr0#delete
+[20.11.21 13:21:43] orval: hi.
+[20.11.21 13:24:14] biggie: hi.
+[20.11.21 13:29:45] orval: you have the MemAllocAndClear function from Memory.cpp in one of your modules, which is hooked on the old way of obfuscation. It's no longer in use now. But now I thought I'll just rewrite the calls for the new obfuscation so it's ok
+[20.11.21 13:31:20] biggie: ok, about the delay plugins. They're going to show different delay times on different hardware. Is that ok?
+[20.11.21 13:33:20] orval: yes, but there's one thing, I'm going to double-check now. One thing you have is using GetTickCount on every iteration. Under new obfuscation it's calculating the function address every time, accordingly the process hung around for 8 min and I just killed it
+[20.11.21 13:33:51] orval: that's how I understood it
+[20.11.21 13:34:10] orval: you just need to get some value in that case, right?
+[20.11.21 13:35:27] biggie: random value
+[20.11.21 13:35:46] orval: you can use a processor function
+[20.11.21 13:35:53] orval: and rand was somewhere else
+[20.11.21 13:36:19] orval: the processor function won't pull the crt and it won't be in the import
+[20.11.21 13:36:19] biggie: can rand be used?
+[20.11.21 13:36:34] orval: there seems to be an analogue of cpu too
+[20.11.21 13:36:47] orval: I'll find it now
+[20.11.21 13:37:49] orval: __rdtscp - get time
+[20.11.21 13:40:40] orval: but with randomo I think it was recently written in general chat
+[20.11.21 13:40:46] orval: don't know now
+[20.11.21 13:41:02] biggie: okay, I'll look
+[20.11.21 14:00:23] biggie: corrected
+[20.11.21 14:00:23] biggie: https://privatlab.com/s/v/ydmGxoOOMwTE8Z9rMQ9p
+[20.11.21 14:00:29] biggie: https://privatlab.com/s/d/ydmGxoOOMwTE8Z9rMQ9p/6V0BX#delete
+[20.11.21 14:10:51] orval: and rand?
+[20.11.21 14:11:38] biggie: no rand
+[20.11.21 14:11:38] biggie: __rdtscp was enough
+[20.11.21 14:20:47] orval: you need to call LoadFunctionsApi to make obfuscation work?
+[20.11.21 14:21:15] biggie: yes i do
+[20.11.21 15:55:41] orval: one more thing
+[20.11.21 15:56:18] orval: your code expects to have Windows.h plugged into LoadFunctionsApi.hpp
+[20.11.21 15:56:46] orval: those other modules won't compile without it
+[20.11.21 15:57:55] biggie: yeah
+[20.11.21 15:58:07] biggie: is it bad?
+[20.11.21 15:58:52] orval: what if the obfuscation module will not be yours?
+[11/20/21/221 15:59:57] orval: the point is you write the modules separately, they together don't make a single code, each must not depend on the other
+[20.11.21 16:00:30] orval: your modules intermingle with other modules in one program
+[20.11.21 16:01:23] biggie: in each module connect windows.h ?
+[20.11.21 16:01:42] orval: yes, they must be autonomous
+[20.11.21 16:02:56] biggie: connected
+[20.11.21 16:03:12] orval: you have it in every module?
+[20.11.21 16:03:16] biggie: no
+[20.11.21 16:03:23] orval: tell me where to add
+[20.11.21 16:03:36] biggie: yeah, let me see.
+[20.11.21 16:03:53] orval: come on
+[20.11.21 16:07:02] biggie: https://privatlab.com/s/v/8R9a8GMAR5FmGnOr98O9
+[20.11.21 16:07:09] biggie: https://privatlab.com/s/d/8R9a8GMAR5FmGnOr98O9/GpWxN#delete
+[26.11.21 13:18:23] orval: hi
+[26.11.21 13:18:58] biggie: hi.
+[26.11.21 13:19:31] orval: can you increase delay on 3 plugin?
+[26.11.21 13:19:52] biggie: yes, how much do you need?
+[26.11.21 13:20:17] orval: the order was the same as on the others
+[26.11.21 13:22:59] orval: that's probably 3 times
+[26.11.21 13:24:15] orval: with files that
+[26.11.21 13:44:10] biggie: https://privatlab.com/s/v/EJVA8Rq2wnIwxd2AzNnp
+[26.11.21 13:44:17] biggie: https://privatlab.com/s/d/EJVA8Rq2wnIwxd2AzNnp/9b3Np#delete
+[24.12.21 09:51:03] orval: hi.
+[24.12.21 09:51:19] biggie: hi.
+[24.12.21 09:51:45] orval: tell me, did you write a utility for beacons?
+[24.12.21 09:52:04] biggie: Nope.
+[24.12.21 09:52:27] orval: got it.

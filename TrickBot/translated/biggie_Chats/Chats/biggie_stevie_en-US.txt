@@ -1,0 +1,50 @@
+[15.11.21 14:41:48] biggie: 123
+[16.11.21 08:09:02] biggie: 123
+[16.11.21 08:09:20] stevie: 123
+[16.11.21 08:09:23] biggie: let's do it.
+[16.11.21 08:09:27] stevie: Yeah.)
+[16.11.21 08:09:54] stevie: ask @rocco, he will reset E2e password for you.
+[16.11.21 08:11:21] stevie: Shulman sent you to me yesterday. It's all about the bridge.  The situation in brief:
+```
+ when the agaric connects to the bridge, the name-password he uses to login to the bridge can be any
+they are only needed to identify the bot
+and they need to be passed through the chain to the database
+this isn't easy to do
+PAM is a piece of the Linux authentication subsystem.
+ppp is a point-to-point connection daemon.
+It comes from the modem era and is still in use today.
+only now it serves l2tp VPN connections
+The chain is
+agaric brings up an l2tp connection on a bridge
+ppp daemon starts on the bridge
+ppp daemon gets username-password from the connecting side (agaric) and then it needs to find out if it is a valid user
+to do this it pulls PAM
+we've embedded into PAM our own module which always answers "yes this is a valid user", takes that username and password and sends them to the repository via the UNIX interprocess connection mechanism (specifically, it's a UNIX socket)
+PAM answers PPP - yes, it's a valid user
+PPP terminates the connection
+The problem is the race condition
+timeouts are taken from somewhere at exactly 20 seconds, and during this time the side initiating the connection gets tired of waiting
+so the connection is not established
+localized so far to the point that if you disable authentication, then everything works
+```
+[16.11.21 08:13:00] biggie: and the goose version has authentication disabled?
+[16.11.21 08:13:41] biggie: it's just that agarics seems to connect there...
+[16.11.21 08:15:39] stevie: do you have a skill with pppd? I would like to ask you to find a legal way to solve this problem through pppd settings while I dig into its(pppd) code.  The goose version doesn't have it. It goes through pppd the same way. There is an artifact on the master, you can look at it.  Yes. There is a connection, after it goes there is a PAM authentication, it goes, then there are some delays and ... that's it.... that's it...the connection is broken
+[16.11.21 08:16:30] stevie: If you also fail, we'll invent something to bypass this problem
+[16.11.21 08:17:08] biggie: Okay, did you change the password on the server?
+[11/16/21 08:17:20] stevie: I did. Yeah. Sec.
+[16.11.21 08:17:55] stevie: ``
+194.62.42.137
+Linux login: root
+
+Password: 34fhjdgEN3rE5ff
+```
+[16.11.21 08:18:30] stevie: How do you set what up?
+[16.11.21 08:18:53] stevie: Or ask me as you go along.
+[16.11.21 08:19:19] biggie: I'll ask around
+[16.11.21 08:58:08] biggie: what psk to write to agaric?
+[16.11.21 08:58:27] stevie: 123
+[12/20/21/221 08:37:08] stevie: The letter z in the password
+[20.12.21 08:37:15] stevie: At the end
+[20.12.21 08:37:28] stevie: It's added
+[20.12.21 08:37:31] biggie: Yeah, I get it.
