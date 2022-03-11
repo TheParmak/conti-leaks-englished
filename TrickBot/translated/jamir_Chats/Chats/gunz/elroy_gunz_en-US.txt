@@ -1,0 +1,29 @@
+[09.08.21 14:08:26] gunz: Hi, are you comfortable?
+[09.08.21 14:17:37] elroy: Yeah.
+[09.08.21 14:17:44] elroy: Hi.
+[09.08.21 14:22:56] gunz: I heard you with AV on you. I was given a project and asked to use din imports and string functions implementations, so we have an empty import table, it is very bad for the confidence in the file. I wanted to ask you how to solve a detailed question, because I can not take with me default libs (need minimum file size), but also such a table does not make sense to keep.
+[09.08.21 14:26:58] elroy: I solve this problem in the following way: for every build I generate trash code, which is not executed, it just lies in dead branches... When generating this code the generator inserts a set of functions. As a result, the table is built up and there are calls to it
+[09.08.21 14:29:24] gunz: but functions should be called consistently, it's logical, otherwise av will not accept this import
+[09.08.21 14:31:32] elroy: In the import table, the order of functions doesn't matter. It has nothing to do with the order in which the functions are called.
+On the contrary, if AB molds a detection on a table with a certain order of functions, it gives a detection. That's why they have to be mixed up. An easy way to do this is random code generation, with random calls
+[09.08.21 14:31:59] elroy: We're talking about static detects now, right?
+[09.08.21 14:32:35] elroy: In dynamics it makes sense for the order for the application to work. It should be simple functions that don't make much sense, like GetLastError()
+[09.08.21 14:33:07] elroy: Call order, but not order in import table.
+[09.08.21 14:37:04] gunz: Not in import table, but directly during dynamic analysis. my goal is to provide import table with necessary functions and, during dynamic analysis, to observe logic of their call. can your crashgen can handle it? and me, based on your answer, will estimate labor-intensiveness of such method
+[09.08.21 14:41:03] gunz: if I use "simple" functions in my code, does it make sense not to call them dynamically? Or did you mean to use these functions, but not to relate them to main code?
+[09.08.21 14:41:19] elroy: Tresgen generates code that is not executed. It's molding the calls into the non-executable code, and as a consequence a table is generated, i.e. there's a function call, there's a table with names, but the function is never called.
+I don't have a solution for the dynamics yet.
+This is solved in two ways, a function is randomly called in the loop.
+The second way is to parallelize the call of different functions in threads. For example, you know exactly, that you have to allocate memory in three places and you know the size of it. If one of them doesn't depend on the other, you can do it in parallel, i.e. write such a call handler. It will noise up the dynamics.
+[09.08.21 14:43:01] elroy: > if I use "simple" functions in my code, does it make sense not to call them dynamically?
+No, those are functions for visibility. Use your working ones without calling them directly. as you do. The difference here is whether there is a reference to the table or not. For your workers, there shouldn't be. But for those that create visibility - should be
+[09.08.21 14:44:18] gunz: ok, thanks
+[09.08.21 14:44:34] elroy: Ok, go ahead.)
+[25.08.21 18:42:35] elroy: Hi.
+[27.08.21 07:36:42] gunz: hi, couldn't log on all day yesterday for some reason, did you want something?
+[27.08.21 07:37:35] elroy: Hello. Yes, there were technical problems yesterday.
+You wrote 3 messages in that chat room yesterday and disappeared, they didn't come.
+I stout
+[27.08.21 07:38:31] gunz: wow, you're also a coder))
+[27.08.21 07:38:47] gunz: I'll send it now, I saved the text
+[27.08.21 07:39:24] gunz: I want to make clear the situation in which I got. I have not rested this summer, mostly worked, now wanted to ask for a vacation, but I was not released. The body itself, somehow or other will get this rest (I will lie down a lot, will not have the strength to work).At the moment came what I told you above - apathy. This is my fault, I should have clarified the terms in advance, do not leave leave leave for the last days of summer. I do not want to set up a person, but against the body can not go, I am not a robot)

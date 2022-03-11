@@ -1,0 +1,111 @@
+[12.07.21 09:33:38] stout: I wrote in jabber
+[12.07.21 10:57:21] jade: on the spot?
+[12.07.21 13:12:49] stout: Please repeat the message, there was a reconnect
+[12.07.21 13:16:31] jade: start otr, I have an error
+[13.07.21 09:21:44] jade: hello, are you there?
+[13.07.21 09:22:00] stout: good, yes.
+[14.07.21 10:56:20] jade: Good afternoon.
+[14.07.21 10:58:06] stout: Good.
+[14.07.21 12:44:08] jade: can you start otr?
+[16.07.21 09:50:12] jade: hi.
+[16.07.21 09:50:22] jade: about the requirement of one question
+[16.07.21 10:54:31] stout: hi. Write down what the question is.
+[19.07.21 07:51:04] stout: Hi. If I wrote something, the messages did not come.
+[22.07.21 11:33:33] jade: Hi, I've been working 2 weeks without days off, I want to take 2 days off
+[22.07.21 11:34:35] stout: Hi. Write to frances about it, what he says... I don't mind.
+[22.07.21 13:47:56] stout: Drop the backup jabber
+[22.07.21 14:05:36] stout: Okay.
+[24.07.21 07:55:47] jade: Hi, I did not specified 1 point and did not find in ToR. My project should be written for what architecture?
+[26.07.21 06:25:19] stout: Hi. If it is not specified in terms of reference, it means that the default is Win 32 and 64 (i686 and amd64). The implication is that it should work starting with Win7, if it's not specified in the terms of reference, which means you should use the processor chips that are on Win7's compatibility list. You can use fresh processor features, but in case earlier versions of architectures are not supported by Win7, the program must work.
+[26.07.21 07:04:48] jade: I need to figure out if I can use assembler (Win32) inserts or not
+[26.07.21 07:05:42] stout: They are not built in studio for x64, they are built for 32.
+[26.07.21 07:05:53] stout: I use in my projects for 32x if needed
+[26.07.21 07:07:08] stout: We usually have 4 output builds for any project, 2 logged, 2 unlogged, 32 and 64.
+[26.07.21 07:07:33] jade: got it, then I'm discarding them or I'll use inline
+[26.07.21 07:08:19] stout: or just __forceinline
+[26.07.21 07:08:41] jade: [ ](https://xzu6o2ni3hplvpmx.onion/direct/iNK9NEAR6t3bmyNNyogWBCMdqpDeeJyk9o?msg=WHn3FGTWKGNCjtz5G) that's why I asked about x64)
+[26.07.21 07:09:34] stout: Maybe in 2021 studio something like this appeared. It finally got 64x linker
+[26.07.21 07:10:41] jade: have you already used it?
+[26.07.21 07:10:51] jade: there was a beta
+[26.07.21 07:11:06] stout: I haven't used it yet
+[26.07.21 07:11:15] stout: It's time to master it))
+[28.07.21 09:41:21] jade: hi, question about devID generation
+[28.07.21 09:41:48] jade: in the terms of reference it says `-it is always generated the same way on the same computer.`
+[28.07.21 09:42:35] jade: at the same time there is a line in the example, which calls to include in the devID the date of creation...
+[28.07.21 09:44:01] stout: I don't have your tzip at hand...
+[28.07.21 09:44:18] stout: there is probably a line about date and time when Windows folder was created or something like that
+[28.07.21 09:44:33] jade: no, just the date of creation)
+[28.07.21 09:44:33] stout: Hi)
+[28.07.21 09:45:36] stout: Here's a quote from another ToR
+```
+The suggestion is to use the md5 hash from the string "date_creation%windir%.name_computer.date_creation%windir\system32%.name_domain_or_workgroup"
+```
+[28.07.21 09:45:49] stout: date_create%windir%
+[28.07.21 09:48:31] jade: got it wrong, now I understand it
+[28.07.21 09:48:54] stout: ok, go ahead.)
+[28.07.21 10:56:08] jade: can I make my own processor-based implementation?
+[28.07.21 10:56:45] jade: it seems to me, this is a more effective way
+[28.07.21 10:56:58] stout: I don't have terms of reference at hand) If in terms of reference it is recommended, you can, but not if required.
+[30.07.21 11:30:48] jade: hi, start otr
+[30.07.21 11:31:34] stout: go again)
+[30.07.21 11:31:37] stout: Hi.
+[30.07.21 11:48:45] jade: no way.
+[30.07.21 11:49:22] stout: Do it again.
+[30.07.21 11:53:06] jade: I'm interested in what a fingerprint would look like
+[30.07.21 11:55:29] stout: DD:11:22:33
+[30.07.21 11:55:32] stout: ....
+[30.07.21 11:55:37] stout: And so on
+[30.07.21 11:55:41] stout: It usually looks like this
+[30.07.21 11:56:38] jade: DD - date?
+[30.07.21 11:56:45] stout: No)
+[30.07.21 11:56:49] stout: hex
+[30.07.21 11:57:07] stout: are you in tor browser now?
+[30.07.21 11:57:12] jade: yes
+[30.07.21 11:57:16] jade: I can't help it.
+[30.07.21 11:57:30] stout: Otherwise you can too.)
+[30.07.21 11:57:45] stout: There's an exclamation mark at the top left of the planet.
+[30.07.21 11:57:53] stout: there is connection not secure
+[30.07.21 11:58:01] stout: More info
+[30.07.21 11:58:08] stout: And there's a certificate
+[30.07.21 11:58:15] stout: His fingerprint is written there
+[30.07.21 11:58:26] stout: It's for example
+[30.07.21 12:02:16] jade: Let's go again otr
+[30.07.21 12:03:35] jade: there is sha-256 and sha-1, right?
+[30.07.21 12:03:59] stout: yes, it is a vidiom hash of the key
+[30.07.21 12:04:05] stout: I don't know exactly what it is.
+[30.07.21 12:04:25] stout: If you can't figure it out, ask silver what he wants to see.
+[02.08.21 09:42:37] jade: hi.
+[02.08.21 09:42:56] jade: I'd like some advice.
+[02.08.21 09:43:04] stout: Go ahead.
+[02.08.21 09:46:24] jade: I was told : 'Builder is a console program that
+- takes two files as input, a locker and an unlocker
+- generates a pair of crypto-keys
+- flushes those keys into the locker and the locker
+- and flash them with other settings, given from the command line (see point 9 in the ALGORITHM section)
+- The output is a flashing of the locker and the locker, with the names changed. I understand that you can create a config file which will contain all the text from the command line and then read it and generate an exe with the parameters I received.I am now very confused about the key fingerprint generation, because I need to get it from somewhere first
+[02.08.21 09:48:27] jade: in general there are a lot of parameters that I have to get from the command line, so "flashing" the program is not an option. we need another approach to get them
+[02.08.21 09:50:29] stout: I read it, but did not see the problem
+[02.08.21 09:51:23] stout: It takes two files - a locker and an unlocker.
+So you don't have x source code and you don't build them in any way?
+[02.08.21 09:57:33] jade: wait, the problem is how to implement it better
+[02.08.21 10:02:18] stout: I don't see the difference) No, really)
+It's a question of "what's the best key to copy a file?" and there aren't even any answer choices.
+[02.08.21 10:05:00] stout: There's a builder, it builds a couple. The builder is a console program, it gets a set of command line parameters that mean something, including getting the names of the file pair. Reads more string parameters and generates some information, saves it into files (if you have no source) or generates .h with arrays of constants which then goes into build (if you have source code).
+[02.08.21 10:06:05] jade: yes, that's what I wanted to hear, generation of .h file and the subsequent building of projects using it
+[02.08.21 10:07:27] stout: It depends on the implementation, if there is a possibility to build and it is necessary to build, the builder prepares the .h, it's the best way. If there's no sources, i.e. you have two carriers from hell and you need to infect them, then it's like there's no need to .h, you just need to infect them.
+[25.08.21 18:38:53] stout: Hi.
+[25.08.21 18:44:28] stout: Long time no see... How are you doing?
+[26.08.21 13:01:44] jade: Hey, let's go over the OTP.
+[26.08.21 13:02:28] stout: Come on.
+[26.08.21 13:21:27] jade: Anyway, about the locker.
+[26.08.21 13:22:22] jade: it's kind of hard, not really my thing, but I'm trying to do it right
+[26.08.21 13:24:37] jade: However, as I have already realized, the timing is very important, which was negotiated in passing at the beginning. so I'll change my approach a little, to have time to release the beta, because now (about 3-4 days to spare) feel bad, and no one canceled the deadline.
+[26.08.21 13:25:34] stout: Deadlines are negotiable, if he insists on them, then yes, it's a problem.
+[26.08.21 13:26:04] jade: I should have stressed it more at the beginning of the project
+[26.08.21 13:26:37] stout: But as for your well-being, try to get yourself cleaned up, get some sleep, lie down... We have sick leave provided for such a case.
+[26.08.21 13:41:01] jade: It's gone.
+[26.08.21 13:41:08] jade: Let's do it again.
+[26.08.21 13:44:45] jade: or shall we go to the toad, j***@jabber?
+[03.09.21 10:37:47] stout: hi
+[03.09.21 11:07:04] jade: hi.
+[03.09.21 11:07:20] stout: How are you?

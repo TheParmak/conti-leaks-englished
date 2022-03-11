@@ -1,0 +1,158 @@
+[30.07.21 09:32:37] gunz: Hi. @silver told me about your skills and suggested me to look at the implementation of hook removal, so that I would consider crossplatform and, if necessary, make changes to my existing project.)
+[30.07.21 10:20:23] gunz: yes, I even answered you
+[30.07.21 10:20:31] gunz: nickname jade
+[30.07.21 10:21:14] gunz: are there many of them?
+[30.07.21 10:22:52] gunz: should i use web or git console?
+[30.07.21 10:29:18] gunz: now check if there is such an account in git, because my work in gitlab
+[30.07.21 10:30:58] gunz: yes, you're right, let's fix it
+[30.07.21 10:36:33] gunz: mazeqq
+[30.07.21 10:42:03] gunz: https://github.com/search?q=mazeqq&type=users
+[30.07.21 10:43:20] gunz: So I thought it was weird
+[30.07.21 10:43:27] gunz: I got gitlab, there's jade
+[30.07.21 10:45:03] gunz: let me text you this afternoon
+[30.07.21 10:45:21] gunz: I'll figure it out by then
+[30.07.21 10:46:46] gunz: what a polite coder, thank you)
+[30.07.21 11:02:35] gunz: and who said I'm against politeness?)
+[30.07.21 12:19:44] gunz: worked with events under api?
+[30.07.21 12:30:47] gunz: CreateEvent,OpenEvent...
+[30.07.21 12:36:41] gunz: can you tell, I want to open event and pass in lpName *const *PCHAR, but after the execution of the function string changes beyond recognition and the function does not care, that I need it further in the original form. about the nick - I had another git for the project. already wrote to the person about access to the new git, waiting for a reply.
+[30.07.21 12:39:27] gunz: ` const PCHAR DevID = GenerateDevID();
+    HANDLE hEvent = OpenEventA(EVENT_ALL_ACCESS, FALSE, DevID);`
+[30.07.21 12:44:44] gunz: I set it, it doesn't work.
+[30.07.21 12:58:17] gunz: Yeah yeah, I'm here
+[30.07.21 12:58:44] gunz: Why the binary?
+[30.07.21 13:07:36] gunz: a moment, I'll look
+[30.07.21 13:08:15] gunz: Yes, I see
+[30.07.21 13:09:29] gunz: here's the funny thing, I change the line, which is not used at all.
+[30.07.21 13:09:42] gunz: I could even make a .gif, funny
+[30.07.21 13:11:01] gunz: I'll let you know when I figure it out.)
+[30.07.21 13:11:07] gunz: got curious myself
+[01.08.21 14:09:52] gunz: hey, remember my mistake?
+[01.08.21 14:16:48] gunz: I figured out it's because of md5 generation, because if you don't hash DevID, everything works fine
+[01.08.21 19:30:45] kermit: I don't get it
+[01.08.21 19:30:50] kermit: what does it have to do with md5?
+[02.08.21 21:43:32] gunz: if i don't use md5 and just return devID as it is, everything works fine
+[02.08.21 09:05:24] gunz: solved the problem, the typo was in the loop, when I redid the hex string.
+[02.08.21 10:09:28] kermit: ah
+[02.08.21 10:09:29] kermit: got it
+[03.08.21 08:05:52] gunz: hi.
+[03.08.21 08:06:10] gunz: solving the issue with the git, the man does not respond simply.
+[03.08.21 08:07:03] gunz: I'll finish today, won't leave until he gives me access
+[03.08.21 08:21:10] kermit: Aah!
+[03.08.21 08:21:12] kermit: okay
+[03.08.21 10:33:18] gunz: they dropped the git
+[03.08.21 10:34:12] kermit: write your nickname
+[03.08.21 10:36:33] gunz: jamir
+[03.08.21 10:37:19] kermit: added
+[03.08.21 10:40:07] gunz: saw
+[03.08.21 10:40:18] gunz: whose projects are those in the explore?
+[03.08.21 10:40:52] kermit: don't know
+[04.08.21 09:45:00] gunz: hi, I saw your implementation of anhook
+[04.08.21 09:45:46] gunz: I recommend to replace your memory-related api (VirtualProtect...) with siskolls
+[04.08.21 09:55:57] kermit: ku
+[04.08.21 09:56:12] kermit: don't see any messages
+[04.08.21 09:57:38] kermit: test
+[04.08.21 09:57:47] kermit: koo
+[04.08.21 10:01:11] kermit: ping
+[04.08.21 10:01:13] kermit: what did you write
+[04.08.21 10:10:20] gunz: why don't you use siskolls in Unhook project?
+[04.08.21 10:11:09] kermit: why?
+[04.08.21 10:11:47] gunz: If you study these methods carefully, you will notice the use of API calls such as VirtualProtectEx and WriteProcessMemory to unhook Native API functions. But what if the first API calls are hooked and monitored already somewhere in the call stack? Inception, get it? Direct system calls to the rescue!
+
+In the PoC code we created we basically use the same unhooking technique by restoring the first 5 bytes with the original assembly instructions, including the system call number. The only difference is that the API calls we use to unhook the APIs are direct systems call functions (ZwProtectVirtualMemory and ZwWriteVirtualMemory).
+[04.08.21 10:12:20] kermit: did you look through my code at all?
+[04.08.21 10:35:39] gunz: I see Zw functions, I mean `VirtualProtect(zwFunc, sizeof(hookBuf), PAGE_EXECUTE_READWRITE, &oldProt);`
+[04.08.21 10:44:05] kermit: the syscalls probably didn't make sense
+[04.08.21 10:44:45] kermit: or you were too lazy to look for your idi
+[04.08.21 10:50:45] gunz: I sent it to you, think for yourself)
+[04.08.21 11:03:21] kermit: sent what?
+[04.08.21 11:03:31] kermit: there's a dll with hooks
+[04.08.21 13:28:10] kermit: koo
+[04.08.21 13:28:15] kermit: ``
+ what did you send?
+there's a dll with hooks in it
+
+```
+[04.08.21 13:32:23] gunz: ?
+[04.08.21 13:33:32] kermit: ``
+I sent it to you, think for yourself)
+```
+[04.08.21 13:33:35] kermit: I mean it
+[04.08.21 13:35:43] gunz: See, I meant notify
+[04.08.21 13:36:17] kermit: about what?
+[04.08.21 13:36:26] kermit: I need an example where my code doesn't work
+[04.08.21 13:36:28] kermit: preferably av
+[04.08.21 13:37:36] kermit: if anything here ``
+NativeUnhookerInitWithTrampoline
+```
+[04.08.21 13:37:51] kermit: there are many functions inside, including experimental ones
+[04.08.21 13:38:00] kermit: you can pick up what you like
+[04.08.21 13:38:58] kermit: stop
+[04.08.21 13:39:02] kermit: I didn't fill up
+[04.08.21 13:39:54] kermit: not
+[04.08.21 13:39:57] kermit: everything's there
+[04.08.21 13:41:33] gunz: here it is `funcPtr = (PBYTE)((ULONG_PTR)ntdllFile + LoaderUtilsRVA2FileOffset(ntdllMod, LoaderUtilsGetExportFunctionRVA(ntdllMod, "NtProtectVirtualMemory"));`
+[04.08.21 13:42:01] kermit: you asked why no syscalls
+[04.08.21 13:42:03] kermit: they are
+[04.08.21 13:42:26] gunz: is it a pointer to NtProtectMem ?
+[04.08.21 13:42:27] kermit: just not used
+[04.08.21 13:42:35] gunz: yes, I agree
+[04.08.21 13:43:17] kermit: >is it a pointer to NtProtectMem ?
+you have a function copied into memory from the ntdl file
+[04.08.21 13:43:31] kermit: but it's strictly for x64
+[04.08.21 13:43:35] kermit: builds
+[04.08.21 13:45:50] gunz: you put the address by hand
+[04.08.21 13:46:20] kermit: get the offset in the file to the function
+[04.08.21 13:46:51] gunz: I'll try your dlls on my way
+[04.08.21 13:47:50] gunz: they put hooks, but how do I know if it works?
+[04.08.21 13:48:30] kermit: protection of what?
+[04.08.21 13:48:54] kermit: the hook just won't come off
+[04.08.21 13:50:18] gunz: my hook defense, I need to trace somehow in case my way won't work (which is unlikely)
+[04.08.21 13:50:55] kermit: depends on what method
+[04.08.21 13:53:57] gunz: ok. What should happen to determine if the dllka works? My check on the first 5 bytes will scream that it's a hook, but trying to remove it will fail or how do I check them at all?
+[04.08.21 13:55:13] kermit: >What needs to happen to determine if the dllk works?
+the hooks will
+>but attempts to remove it won't succeed or how do you check them at all?
+compare bytes in memory with bytes in file on disk
+[04.08.21 14:03:09] gunz: `hooks will' obviously ;/
+[04.08.21 14:04:04] gunz: let's go to the other side.
+[04.08.21 14:04:44] gunz: will these hooks somehow change program behavior?
+[04.08.21 14:07:30] kermit: no
+[05.08.21 09:20:36] gunz: good day
+[05.08.21 10:52:20] kermit: ku
+[05.08.21 10:52:31] kermit: koo
+[05.08.21 10:52:32] kermit: what did you write?
+[05.08.21 11:31:06] gunz: tried the methods of protection against injections, which were specified in the tutorial? I with mitigation crashes just
+[05.08.21 11:33:52] gunz: And another question about hooks. Is there any sense to put antihook not on the siskolnye calls?
+[05.08.21 11:39:55] kermit: ping
+[05.08.21 11:40:10] kermit: what's protection from injections?
+[05.08.21 11:44:39] kermit: >Is there any point in putting antihook on non-sisk calls?
+there is no sense in antihook at all
+[05.08.21 11:47:40] gunz: I don't get it.
+[05.08.21 11:48:05] gunz: from the injection
+[05.08.21 11:48:31] kermit: it depends on how you protect yourself and what software you have
+[05.08.21 11:48:45] kermit: And who injects into you
+[05.08.21 11:49:03] gunz: you mean rights?
+[05.08.21 11:49:18] kermit: what do you mean rights
+[05.08.21 11:49:20] kermit: in general
+[05.08.21 11:49:24] kermit: what's your process
+[05.08.21 11:49:28] kermit: why does he need protection, etc.
+[05.08.21 11:50:08] kermit: >do not understand
+there is no sense in antihook. av vendors put at the beginning of the process by loading dll
+[05.08.21 11:50:52] kermit: if you just want to add some engineering insanity to your software, then there's a point to all this
+[05.08.21 11:52:22] kermit: I mean, you never answered what all these mechanisms are for. are there any examples where they would be useful?
+[05.08.21 12:16:26] gunz: so what, that they put hooks. I take them off, but I do it not from siskol, so I'm not sure about the effectiveness of this method. against userhooks they work it exactly. And about protection from injections - to TK
+[05.08.21 12:17:30] kermit: so check whether they work or not
+[05.08.21 12:19:46] kermit: > I take them off, but I don't do it from the scopes
+why are you so bothered by siskols?
+[05.08.21 12:24:27] gunz: if they put a hook on a siskol, then by calling a check on the first 5 bytes of a normal function, the protection will not work, because this call is checked on ring 3, and siskols below.
+[05.08.21 12:27:22] kermit: what do you mean lower?
+[05.08.21 12:27:28] kermit: you already have no hooks on ssdt
+[05.08.21 12:27:37] kermit: there's a patch guard covered everything
+[05.08.21 12:28:31] kermit: you still have vov64
+[19.09.21 08:29:36] gunz: hey, you didn't send me the link to the APT yesterday, can you check it out today?
+[19.09.21 09:48:31] kermit: ku
+[19.09.21 13:34:00] gunz: didn't see it, can you duplicate it?
+[19.09.21 14:30:48] kermit: https://securelist.com/the-leap-of-a-cycldek-related-threat-actor/101243/
+[19.09.21 14:30:53] kermit: ping
+[19.09.21 14:34:39] gunz: got it

