@@ -1,0 +1,796 @@
+[05.08.21 17:43:24] elliott: listen, how do you open admin from ff?
+[05.08.21 17:44:37] collin: hi!"
+[05.08.21 17:44:43] collin: duplicate what you wrote
+[05.08.21 20:59:43] elliott: hey, listen, how do you open admin from ff?
+[06.08.21 11:21:06] elliott: psst
+[06.08.21 11:21:17] elliott: psst.
+[06.08.21 11:21:25] elliott: I'm all about the watch,
+[06.08.21 11:21:34] elliott: how do you open admin in ff?
+[06.08.21 11:21:44] elliott: it's only accessible from a tor browser
+[06.08.21 11:21:47] collin: hi!
+[06.08.21 11:21:55] elliott: hi!)
+[06.08.21 11:23:40] collin: settings - network settings - manual proxy configuration - in "SOCKS node" the address of the tor service is 127.0.0.1:9050 and at the bottom there is a checkmark "Send DNS queries via proxy when using SOCKS 5"
+[06.08.21 16:59:17] elliott: fixed the clock
+[06.08.21 16:59:25] elliott: it was a different time in FF
+[09.08.21 11:48:46] collin: hi!
+[09.08.21 11:49:04] collin: https://cfw2rkgw5vtfehbpxguvjwh3o7t7we2hsgtnxglwvhlnem6hktjlrdid.onion/
+[09.08.21 11:49:22] collin: ``
+kerasid
+N$|uOL8sTG}TKpXk-3
+```
+[09.08.21 11:49:56] collin: our redmine and your account to it. Check it and tell me if it's working.
+[09.08.21 11:54:59] elliott: cool.
+[09.08.21 11:55:03] elliott: I haven't had it in years.
+[09.08.21 11:55:14] elliott: no, five.
+[09.08.21 11:55:25] elliott: five years ago was probably the last time
+[09.08.21 11:56:37] collin: I'm afraid the history wouldn't repeat itself: last time it collapsed as soon as norms were properly organized in it)
+[09.08.21 11:58:18] collin: I'm afraid the history wouldn't repeat itself: last time it crashed as soon as normal work was arranged there)
+[09.08.21 11:59:50] elliott: no, it was raised already after the collapse
+[09.08.21 12:31:22] elliott: it didn't, I took the torus off in FF and it no longer sees the network
+[09.08.21 12:31:23] elliott: whatever you set there
+[09.08.21 12:32:22] elliott: ?
+[09.08.21 12:33:30] collin: set "no proxy" in network settings
+[07.09.21 08:55:18] collin: hello!
+[07.09.21 08:55:32] collin: Alphonse wrote - you're doing some tweaks to the admin panel
+[07.09.21 08:55:42] collin: `p4, 8, 11
+[07.09.21 08:56:10] collin: any progress on them, is there something you can look at to test?
+[07.09.21 09:01:09] elliott: I'm making something and giving it to him, so it's not up to me to watch it
+[07.09.21 09:02:16] elliott: he also has the first version without authorization
+[07.09.21 09:02:36] elliott: 11 I can't remember, I think he did a part
+[07.09.21 09:02:46] elliott: he also has 4
+[07.09.21 09:03:18] elliott: 11 part of it, I think he did, but it should be with him too, I just think he hasn't put it all out there yet
+[07.09.21 09:04:50] collin: okay.
+[17.09.21 08:49:15] elliott: hi.
+[17.09.21 08:50:10] elliott: I understand about the cookies update field, but not so much about the prefixes. Maybe I do not understand what you want there?
+[17.09.21 09:05:50] collin: hi!
+[17.09.21 09:06:16] collin: i'm adding new prefix to group card - it should appear in Files attached to group, now it doesn't
+[17.09.21 09:06:42] elliott: https://217.12.204.65/sOIDFhsAIUfhu42332uygt27634ft7yuaFGyaugkJFsayjegf--_-GBASfdvt23fv/index.php?r=groups%2Floadertool&id=28
+[17.09.21 09:06:47] elliott: I added it
+[17.09.21 09:07:18] collin: for example, I go to group g3 - fill in the prefix for "Bot x64" - load the file, fill in all the fields, press Go
+[17.09.21 09:07:21] collin: no prefix
+[17.09.21 10:41:04] elliott: I added it to group g3
+[17.09.21 10:50:58] collin: I add another one and it doesn't show up as a separate option
+[17.09.21 10:51:15] elliott: maybe you have a cache in your browser?
+[17.09.21 10:51:16] collin: old file stays, version and prefix change
+[17.09.21 10:51:26] elliott: Or I don't understand what you're doing
+[17.09.21 10:52:39] elliott: you uploaded a file with filled in fields for bot64
+[17.09.21 10:52:42] collin: can the cache affect the correctness of the admin?
+[17.09.21 10:52:46] elliott: did it appear in the list?
+[17.09.21 10:53:00] collin: `you uploaded a file with filled in fields for bot64` - yes
+[17.09.21 10:53:05] elliott: great.
+[17.09.21 10:53:24] collin: there is one prefix left in the list: with old file and new version and prefix values
+[17.09.21 10:53:28] elliott: now you fixed the fields from 111 to 222 and saved with my file
+[17.09.21 10:53:33] collin: no
+[17.09.21 10:53:35] collin: I uploaded a new file
+[17.09.21 10:53:48] elliott: but the file is mine
+[17.09.21 10:53:53] collin: that's the problem
+[17.09.21 10:54:06] elliott: open browser inspector
+[17.09.21 10:54:14] elliott: network
+[17.09.21 10:54:17] elliott: delete all logs there
+[17.09.21 10:54:38] elliott: on the right side of the inspector console, click the gear and select persist logs
+[17.09.21 10:55:27] elliott: Go to the networks tab in the inspector and try to select another file. The inspector will show a request for its upload and status
+[17.09.21 10:56:17] elliott: There is a separate part of the panel on the right side where you can check what the server returned
+[17.09.21 10:58:45] collin: query:
+[17.09.21 10:58:47] collin: ``
+POST /sOIDFhsAIUfhu42332uygt27634ft7yuaFGyaugkJFsayjegf--_-GBASfdvt23fv/index.php?r=uploadtools&group=g3&dest=11 HTTP/1.1
+Host: 217.12.204.65
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+X-CSRF-Token: op2oS5bCmzGfFkEDraeKrTwSC3TnK9BO0A4YBZaQnPxeN-p4vzBu4nr11e1N9M27UnXpLtnC8NFW1V0yBEYQ==
+X-Requested-With: XMLHttpRequest
+Content-Type: multipart/form-data; boundary=---------------------------249952132411156625061993774509
+Content-Length: 4326
+Origin: https://217.12.204.65
+Connection: keep-alive
+Referer: https://217.12.204.65/sOIDFhsAIUfhu42332uygt27634ft7yuaFGyaugkJFsayjegf--_-GBASfdvt23fv/index.php?r=groups%2Floadertool&id=35
+Cookie: advanced-backend=u4u3mc51vohplt86961i9anj9m; _csrf-backend=d8b76036d9074286bcb7ddef04aea58e93b854c742212a62b9decce9deb2ad8fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mXK51Ih7q2VYPbAfoEosAq3n6UU4Sy-h%22%3B%7D; groupfilestask=Delete; _identity-backend=6a8ab8993d081617ed67e0c352323d28fb6714cec6e67ae87ad5cbaba0b97ba4a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A16%3A%22%5B6%2Cnull%2C2592000%5D%22%3B%7D
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+```
+[17.09.21 10:58:56] collin: reply:
+[17.09.21 10:58:59] collin: ``
+HTTP/1.1 500 Internal Server Error
+Server: nginx/1.18.0 (Ubuntu)
+Date: Fri, 17 Sep 2021 10:57:59 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: _identity-backend=6a8ab8993d081617ed67e0c352323d28fb6714cec6e67ae87ad5cbaba0b97ba4a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A16%3A%22%5B6%2Cnull%2C2592000%5D%22%3B%7D; expires=Sun, 17-Oct-2021 10:57:59 GMT; Max-Age=2592000; path=/; HttpOnly; SameSite=Lax
+```
+[17.09.21 10:59:00] elliott: this is the query itself
+[17.09.21 10:59:09] elliott: oooh, you're not uploading the file at all
+[17.09.21 10:59:17] elliott: open the response, what's the mistake
+[17.09.21 10:59:28] elliott: I got it working.
+[17.09.21 10:59:34] elliott: alfonsio too
+[17.09.21 10:59:40] collin: ``
+PHP Warning 'yii\base\ErrorException' with message 'move_uploaded_file(/var/www/html/advanced-project/filesStorage/6/4Yp-n85PtofsCUyJBmxF.exe): failed to open stream: Permission denied'
+
+in /var/www/html/advanced-project/backend/models/Attachmentstools.php:53
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError()
+#1 /var/www/html/advanced-project/backend/models/Attachmentstools.php(53): move_uploaded_file()
+#2 /var/www/html/advanced-project/backend/controllers/UploadtoolsController.php(30): backend\models\Attachmentstools::SaveTempAttachments()
+#3 [internal function]: backend\controllers\UploadtoolsController->actionIndex()
+#4 /var/www/html/advanced-project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#5 /var/www/html/advanced-project/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#6 /var/www/html/advanced-project/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#7 /var/www/html/advanced-project/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#8 /var/www/html/advanced-project/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#9 /var/www/html/advanced-project/backend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+```
+[17.09.21 10:59:55] elliott: yeah, he already had that shit, he messed up something with rights
+[17.09.21 11:00:05] elliott: 6 folder
+[17.09.21 11:00:48] elliott: i got 2 folder, i got write access to it, you got 6, no access there. I'll give you the rights and check. But in general, the problem is not in the rights, but that we can not give them globally to the entire parent directory
+[17.09.21 11:00:57] elliott: maybe ask rocco to fuck off this server...
+[17.09.21 11:01:19] elliott: try it out
+[17.09.21 11:01:21] elliott: try it
+[17.09.21 11:01:48] elliott: I updated behavior for updat field at the same time
+[17.09.21 11:04:28] collin: now it works
+[17.09.21 11:04:30] collin: great!
+[17.09.21 11:04:51] elliott: now i asked rocco to fix the rights, because change the account and there will be a new folder
+[17.09.21 11:04:55] elliott: and again no write access
+[17.09.21 11:05:20] elliott: I can't understand why it doesn't work, if it works.)
+[11/23/221 08:23:24] collin: Hi!
+[11/23/221 10:46:24] elliott: hi
+[23.11.21 10:46:47] elliott: I poured everything into the git, and whether you can test it dunno, if at 65 alpha deplored you can
+[23.11.21 10:46:56] elliott: he should ask him about it
+[11/23/11/21 10:47:08] collin: okay.
+[11/23/11/21 10:47:22] collin: any sample queries?
+[23.11.21 10:47:46] elliott: in postman, but you can't import them from there
+[23.11.21 10:48:05] collin: you can copy history from the console
+[23.11.21 10:48:09] elliott: i gave the parameters in the taskbar, just a post request, the group must be already created, authorization by BASIC
+[23.11.21 10:48:11] elliott: I'll try now.
+[11/23/11/21 10:49:19] elliott: ``
+Request Headers
+Authorization: Basic YjE3OjI2NjI1Mg==
+User-Agent: PostmanRuntime/7.28.4
+Accept: */*
+Postman-Token: 31fb5dc0-1066-480f-9cb1-e9e677b63a47
+Host: localhost:12231
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Type: multipart/form-data; boundary=--------------------------052137436725388830942217
+Cookie: _csrf=704f9e8acc2ab5bd80c1b7cebec51fd762b304edee98742184b4dc08a2b2a617a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ncJCh2uEIii36dgg1blUzLLiuZTpd6yj%22%3B%7D
+Content-Length: 76819
+Request Body
+file_l86: undefined
+file_l64: undefined
+file_b86: undefined
+file_b64: undefined
+version_l86: "loader 86 version 1"
+version_b86: "bot 86 version 1"
+version_b64: "bot 64 version 1"
+version_l64: "2222"
+prefix_l86: "loader 86 prefix 1"
+prefix_l64: "loader 64 prefix 1"
+prefix_b86: "bot 86 prefix 1"
+prefix_b64: "bot 64 prefix 1"
+key_prv_l86: "loader 86 private key "
+key_pub_l86: "loader 86 public key"
+key_prv_l64: "loader 64 private key"
+key_pub_l64: "loader 64 public key"
+key_prv_b86: "bot 86 private key"
+key_pub_b86: "bot 86 public key"
+key_prv_b64: "bot 64 private key"
+key_pub_b64: "bot 64 public key"
+cookies: "222222"
+sys: "3333333"
+group: "tst5"
+Response Headers
+Server: nginx/1.18.0 (Ubuntu)
+Date: Wed, 17 Nov 2021 17:39:05 GMT
+Content-Type: application/json; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept
+Set-Cookie: _csrf=983d0ac840131d47c55eb62932069965b902f6242d9215e3f8b938c67c9ccbf8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uCW3Ebriff3Z7Q_OHqp0M-aWmWkm72at%22%3B%7D; path=/; HttpOnly; SameSite=Lax
+Response Body
+{
+    { "status": true,
+    { "messages": [
+        "Group has been updated".
+    ]
+}
+```
+[11/23/221 10:49:44] elliott: he hasn't done it yet, he'll do it soon
+[11/23/221 10:52:27] elliott: No.
+[23.11.21 10:52:38] elliott: I just added the files to the body in postman
+[11/23/11/21 10:53:00] elliott: I chose the form-date there in the pips
+[11/23/11/21 10:53:06] elliott: and the exes are kind of random
+[11/23/221 10:53:10] elliott: alpha
+[23.11.21 10:53:30] elliott: you can't see the files in the query, they are separate
+[23.11.21 10:53:55] elliott: he didn't write it in the console
+[23.11.21 10:54:08] elliott: it's separate for this thing
+[23.11.21 10:54:14] elliott: good question if he made him a port
+[11/23/11/21 11:16:37] elliott: 12244
+[07.12.21 14:13:53] collin: hi!
+[07.12.21 14:14:10] collin: need info urgently - who and when created account a77 in new main admin
+[07.12.21 19:17:52] elliott: this isn't logged in
+[07.12.21 19:18:05] elliott: alf's been asking for logs for years
+[07.12.21 19:20:03] elliott: the full base logging is not allowed by Silver\
+[24.12.21 08:10:21] collin: Hi!
+[24.12.21 08:11:02] collin: trying api for group update, no luck
+[12/24/21 08:11:05] collin: Tell me.
+[24.12.21 08:11:27] elliott: what fails?
+[24.12.21 08:11:29] elliott: ?
+[12/24/21 08:11:56] collin: 403
+[12/24/21 08:11:59] collin: in what cases can it be?
+[12/24/21 08:12:16] collin: ``
+GET / HTTP/1.1
+Authorization: Basic YjEwOkhlbHAkVGVzdDFeQg==
+group: g4
+sys: 3333344444
+cookies: 5555666666777
+file_l86: undefined
+file_l64: undefined
+file_b86: undefined
+file_b64: undefined
+version_l86: ver_l86_1
+version_b86: ver_b86_1
+version_l64: ver_l64_1
+version_b64: ver_b64_1
+prefix_l86: /new/test1/l86
+prefix_l64: /new/test1/l64
+prefix_b86: /new/test1/b86
+prefix_b64: /new/test1/64b
+key_prv_l86: key_prv_l86_1
+key_pub_l86: key_pub_l86_2
+key_prv_l64: key_prv_l64_3
+key_pub_l64: key_pub_l64_4
+key_prv_b86: key_prv_b86_5
+key_pub_b86: key_pub_b86_6
+key_prv_b64: key_prv_b64_7
+key_pub_b64: key_pub_b64_8
+User-Agent: PostmanRuntime/7.28.4
+Accept: */*
+Host: 217.12.204.65:12244
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 3584
+Content-Type: application/x-msdos-program
+ 
+HTTP/1.1 403 Forbidden
+Server: nginx/1.18.0 (Ubuntu)
+Date: Fri, 24 Dec 2021 08:11:42 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+ 
+<html>.
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>.
+<hr><center>nginx/1.18.0 (Ubuntu)</center>
+</body>
+</html>
+```
+[24.12.21 08:12:20] collin: here's my whole query
+[24.12.21 08:16:36] elliott: maybe the server config is wrong
+[24.12.21 08:16:53] elliott: Or the request
+[24.12.21 08:16:55] elliott: you're sending a get
+[24.12.21 08:17:14] elliott: you have a postman, not a getman.)
+[24.12.21 08:17:21] collin: right
+[12/24/21 08:17:49] collin: ``
+POST / HTTP/1.1
+Authorization: Basic YjEwOkhlbHAkVGVzdDFeQg==
+group: g4
+sys: 3333344444
+cookies: 5555666666777
+file_l86: undefined
+file_l64: undefined
+file_b86: undefined
+file_b64: undefined
+version_l86: ver_l86_1
+version_b86: ver_b86_1
+version_l64: ver_l64_1
+version_b64: ver_b64_1
+prefix_l86: /new/test1/l86
+prefix_l64: /new/test1/l64
+prefix_b86: /new/test1/b86
+prefix_b64: /new/test1/64b
+key_prv_l86: key_prv_l86_1
+key_pub_l86: key_pub_l86_2
+key_prv_l64: key_prv_l64_3
+key_pub_l64: key_pub_l64_4
+key_prv_b86: key_prv_b86_5
+key_pub_b86: key_pub_b86_6
+key_prv_b64: key_prv_b64_7
+key_pub_b64: key_pub_b64_8
+User-Agent: PostmanRuntime/7.28.4
+Accept: */*
+Host: 217.12.204.65:12244
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 3584
+Content-Type: application/x-msdos-program
+ 
+HTTP/1.1 403 Forbidden
+Server: nginx/1.18.0 (Ubuntu)
+Date: Fri, 24 Dec 2021 08:17:31 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+ 
+<html>.
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>.
+<hr><center>nginx/1.18.0 (Ubuntu)</center>
+</body>
+</html>
+```
+[12/24/221 08:17:58] collin: now what's wrong?
+[24.12.21 08:18:21] elliott: what server?
+[12/24/21 08:18:48] collin: 65 test
+[12/24/21 08:20:40] elliott: what port did you assign there?
+[12/24/21 08:20:49] elliott: Oh, I see.
+[24.12.21 08:22:06] elliott: it's not getting to the module
+[24.12.21 08:22:29] elliott: I'm going to my friend's house to fuck with the server configs...
+[24.12.21 10:17:37] elliott: rocco's busy, i'll let you know when i figure it out
+[12/24/21 10:19:07] collin: okay.
+[12/29/12-21 12:55:23] elliott: Corky.
+[29.12.21 12:55:32] elliott: I finally got the truth, the module is running
+[29.12.21 12:57:58] collin: hi!
+[29.12.21 12:58:07] collin: can i try?
+[29.12.21 13:42:18] collin: now error 500
+[29.12.21 13:44:27] collin: let's turn it on, I'll send you a request
+[29.12.21 15:21:35] elliott: like 500
+[29.12.21 15:22:23] collin: it worked, but there are nuances
+[29.12.21 15:23:17] elliott: 1) there is no division of command into "add new prefix" and "update existing prefix"
+[29.12.21 15:23:20] elliott: did not order
+[29.12.21 15:23:50] elliott: you and I discussed, no adding new anything
+[29.12.21 15:23:57] elliott: only updating an existing group
+[29.12.21 15:24:38] elliott: or am I wrong?
+[29.12.21 15:25:18] collin: what do you mean no additions, you need api to add new prefixes
+[29.12.21 15:25:52] collin: `- rejection due to "prefix already exists" - for prefix creation command.
+[29.12.21 15:27:11] collin: that is, if the prefix exists, it should give an error, now it doesn't
+[29.12.21 15:27:56] collin: but if you have update - then you need to differentiate commands, to pass update or creation mode by separate header/parameter
+[29.12.21 15:28:51] elliott: that is, add a mode flag to everything, and for the mode of creating new records check for availability
+[29.12.21 15:29:19] collin: yes
+[29.12.21 15:29:29] elliott: only the prefix field needs to be checked?
+[29.12.21 15:29:52] collin: check for availability in both modes, when creating - error if prefix exists, when updating - error if there is no prefix
+[29.12.21 15:30:01] collin: yes about URI prefix field
+[29.12.21 15:32:24] collin: or did I write different before?
+[29.12.21 15:33:04] collin: our discussion was not saved, the idea is the same but maybe from the other side...
+[29.12.21 15:34:00] elliott: It's easier to do than find out what someone said a month ago
+[12/29/221 15:34:20] collin: +
+[12/30/21 09:38:49] collin: hi!
+[30.12.21 09:39:27] collin: look, I create a prefix via admin, then make the same one via request with mode=create
+[30.12.21 09:39:47] collin: and the first such request - it is created (doubled)
+[30.12.21 09:39:53] collin: the second one writes "prefix exists"
+[30.12.21 09:40:14] elliott: how could it be
+[30.12.21 09:40:15] collin: check the prefixes created from admin
+[12/30/221 10:31:58] elliott: refactoring is in full swing there, all done today, waiting for 11
+[12/30/21 10:32:08] elliott: the whole admin area is in pieces
+[12/30/21 10:33:06] collin: Repeat it if you wrote it, it didn't show up
+[12/30/21 10:33:17] elliott: refactoring is in full swing there, it's over today, waiting for the 11th
+the whole admin area is in pieces
+[12/30/1921 10:34:37] collin: okay.
+[11.01.22 11:31:11] elliott: hi.
+[11.01.22 11:31:47] elliott: remind me please what was wrong at the moment when everything was broken for refactoring, and as always I hoped on my memory, and now I sit, painfully remember that something was not working as you wanted, but what you can't see now
+[11.01.22 11:36:55] collin: hi!
+[11.01.22 11:38:01] collin: I've added a message to the taskbar so it wouldn't get lost
+[11.01.22 11:38:22] collin: wait, there was something else, I remember
+[11.01.22 11:43:46] collin: this: when creating prefix should be checked for duplicates - it does not work correctly: if such prefix was created through admin and not api - then it as a duplicate is not seen
+[02.02.22 11:31:06] collin: hi!
+[02.02.22 11:31:25] collin: let's turn it on
+[02.02.22 11:38:26] collin: ping
+[02.02.22 11:54:49] elliott: Come on.
+[02.02.22 11:55:57] collin: tell me, what else do you do with our team except for BC development?
+[02.02.22 11:56:06] elliott: no
+[02.02.22 11:56:30] elliott: they occasionally ask me for something, but it's the little things
+[02.02.22 11:57:20] elliott: What's up there, are we clearing ranks or do you want to load?
+[02.02.22 11:59:02] elliott: before before kurt disappeared on me still had his admin, but I do not see him for two months
+[02.02.22 12:05:36] elliott: we had him with my first teammate a thousand years ago
+[02.02.22 12:06:04] elliott: he was making us a card game as a test case))
+[02.02.22 12:06:51] collin: ok
+[02.02.22 12:07:03] collin: about that project, you still don't know where we're headed next
+[02.02.22 12:07:10] collin: waiting for more info from Elroy
+[02.02.22 12:07:34] elliott: I read the channel, but he still has a lot of enthusiasm, he should channel it somewhere useful.
+[02.02.22 12:07:56] elliott: I'm talking about Ryan
+[02.02.22 09:08:11] collin: hi!
+[08.02.22 09:08:26] elliott: hi.
+[08.02.22 09:08:36] collin: ``
+V4N$Jd8l5nD^Nd8ktNS8kB#Bd7jnd8Nr
+https://privatlab.com/s/v/ZVAblwgwZMuxnByV2Zl2
+```
+[08.02.22 09:08:48] collin: accept the assignment
+[08.02.22 09:12:23] elliott: this is fucked up, not only is it a rar, but it's unreadable inside
+[08.02.22 09:12:39] elliott: Where do you get these encodings with archivers?
+[08.02.22 09:12:48] collin: ansi encoding is normal
+[08.02.22 09:13:04] elliott: tell linux it's regular, then figure out how to read it
+[08.02.22 09:13:17] collin: which one do you want it in?
+[08.02.22 09:14:03] elliott: i don't know
+[08.02.22 09:14:08] elliott: Unicode
+[08.02.22 09:14:52] collin: -----BEGIN PGP MESSAGE-----
+
+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
+=0zJI
+-----END PGP MESSAGE-----
+[08.02.22 09:14:58] collin: is this okay?
+[08.02.22 09:15:26] elliott: what's the decryption?
+[08.02.22 09:15:48] collin: with your pgp private key
+[08.02.22 09:15:52] collin: I encrypted it with your public key...
+[08.02.22 09:16:24] elliott: I don't know, I guess it's a different machine, I can't find anything
+[08.02.22 09:16:48] collin: you have to contact tox
+[08.02.22 09:16:53] collin: 8201462924F7963A54ABADC532504AED61F6D60DFFF2BE2FC63DD2D41A3FF73C1C6136DFD244
+[08.02.22 09:17:04] collin: join me and write your token id
+[08.02.22 09:17:24] elliott: delete
+[14.02.22 18:26:30] collin: hi!
+[14.02.22 18:29:03] collin: -----BEGIN PGP MESSAGE-----
+
+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
+=sbjz
+-----END PGP MESSAGE-----
+[14.02.22 18:29:20] collin: try to decrypt with the last key
+[14.02.22 18:29:23] collin: seems to work
+[02/15/222 09:16:40] collin: hi!
+[15.02.22 09:16:57] collin: come on!
+[15.02.22 11:11:44] collin: ping
+[15.02.22 11:11:45] collin: here?
+[15.02.22 12:38:57] elliott: no
+[15.02.22 12:39:07] elliott: Why do we need a key I can't decipher myself?
+[15.02.22 12:39:29] elliott: I just generated a new one, two Rs, I'll figure out how to send it over
+[15.02.22 12:39:35] elliott: it won't fit here
+[15.02.22 12:39:53] collin: strange, mine left in one message
+[15.02.22 12:41:33] elliott: it's not coming in here
+[15.02.22 12:41:41] collin: via prvnote
+[15.02.22 12:42:34] elliott: https://privnote.com/hZ7CR4l3#ojbdOzCmP
+[15.02.22 12:44:18] collin: it won't import!
+[15.02.22 12:44:25] collin: certificate without user ID
+[15.02.22 12:44:39] collin: you have Cleopatra software?
+[15.02.22 12:45:25] elliott: no, kpg is a shitty one that won't start and a built-in keyserver that can't do anything. Which is better to use?
+[15.02.22 12:45:45] elliott: I take it this software is useless
+[15.02.22 12:47:07] elliott: And when the system crashes, all these keys will go fucked up again
+[15.02.22 12:48:02] collin: `https://gnupg.org/software/index.html` this recommended
+[15.02.22 12:48:19] collin: save your keys on an external flash drive/disk/print them out)
+[15.02.22 12:48:46] elliott: you don't want to keep something on a flash drive
+[15.02.22 12:48:48] elliott: It's so obvious
+[15.02.22 12:49:18] collin: will masked men with machine guns find it during the search?)
+[15.02.22 12:49:27] elliott: they fucking will
+[15.02.22 12:51:00] elliott: gnupg2 is installed anyway, how do you manage the keys?
+[15.02.22 12:52:39] collin: Kleopatra
+[15.02.22 12:56:45] elliott: Come on.
+[02/15/222 12:56:46] elliott: https://privnote.com/xFgOQX5g#cwmwHn9LN
+[15.02.22 12:56:51] elliott: this was generated by Kleopatra
+[15.02.22 13:02:36] elliott: also a strange program
+[15.02.22 13:23:59] collin: doesn't want the same
+[15.02.22 13:24:07] collin: certificate without user ID
+[15.02.22 13:52:05] elliott: try this one
+[15.02.22 13:52:05] elliott: https://privnote.com/BPyOkDQu#lHhwhkbtb
+[15.02.22 14:11:15] collin: no way!
+[15.02.22 14:11:27] collin: wait maybe it's just me, it took a while to work that time too
+[15.02.22 14:11:42] elliott: that's fantastic!
+[15.02.22 14:12:04] elliott: I imported your key without problems from the buffer, and found the old file
+[17.02.22 10:30:41] collin: hi!
+[17.02.22 11:36:36] collin: ping
+[17.02.22 13:25:25] elliott: ping
+[17.02.22 13:25:48] collin: hi!
+[17.02.22 13:25:58] elliott: hi
+[17.02.22 13:26:00] collin: well, your key worked last
+[17.02.22 13:26:04] collin: So there was something on my end
+[17.02.22 13:26:10] collin: you hope you still have it?
+[17.02.22 13:26:36] elliott: from the 15th
+[17.02.22 13:26:41] elliott: didn't touch anything
+[17.02.22 13:27:12] collin: -----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: User-ID: elliot <elliot@mail.com>
+Comment: Created: 2/15/22 4:50 PM
+Comment: Expires: 2/15/24 12:00 PM
+Comment: Type: 4,096-bit RSA (secret key available)
+Comment: Usage: Signing, Encryption, Certifying User-IDs
+Comment: Fingerprint: 6762C34E2EC518951FD933C34F665B735114D26A
+
+mQINBGIL2b8BEAC2mcCkcAE7U5E0tyH9JBqnQwQycG8tjb73zj0uV9Q1ZDPgqI9a
+bsi3hWowKGvdckJVdEEix/yXx00JnTWWWw13cq7LdaKp1jpQ0nFJ0MzJp4vfPz/d
+U/sBy6g2KWzjYSV/qzptoOgwjhQrHIgAwDXfm6Gt7HLfMRylHki1Y0PLdtGRUjI
+LM8ytAyWTpgaW+A7WsPOYxDX0wxbwWcDxQAbEd/74Y2JXZkQm8nPZP5Pm1D8k249
+Vs2S3Cgd6AMLayWHiwLfhY/REtMW0UoggQ5WE5mxaTBT+E0BRxoTZWvy3fkvLEZN
+Uc5DRrHnCy+P4zFJjUoc7jygqjf6cakOgTyJX6Izkz10Sqp8DWRj39/1yr0gHlJ
+bGbqACr2Zb8XeRkZGmJZJQcnE1uLKMV0JbKiKctWRZW3Pu14mS9A+sx/D2uo1Yyk
+7qChUkR49RV+Q9/RgRt9xFj5V5crErAcykjGYbeKnuASTiiCyU2wnGEeWlus0KK8
+9YstFGpFrtb9Mehx3FA7IK4wdhYzkuno8CC9rXtdljk1G4J7kFs3JGAEVfv52ZkU
+Bi8eCRmU/Igv4vm+nWtwwX7KOzhZGhFCBhocJu5wbtHsfY4ioQ+8k02FjhTbN/3O
+GRFLMIG9AN0A7dvj1FEBq6VCSxZHCGX0WqVAgXvM6DVMYob3ewAYmBExpwARAQAB
+tBhlbGxpb3QgPGVsbGlvdEBtYWlsLmNvbT6JAlQEEwEKAD4WIQRnYsNOLsUYlR/Z
+M8NPZltzURTSagUCYgvZvwIbAwUJA8IjAQULCQgHAgYVCgkICwIEFgIDAQIeAQIX
+gAAKCRBPZltzURTSah85EACuymdkuO1JbqjaHUGuUbGbxq347/JLl1EzPf596+i
++cueCAiOK8A0MEJaYBFzZ48u908N52t6szt0Jh1DnVEPhWpLqRfwyF6eEzotXHVU
+vabvVE7liG4sQjjemPo5a0B++uAwbPXyfo7BUIVSmmvNFvTTgdCijmRO6Zp0LxUz
+GulTpDS1YVHujbfWti +ympU2yrXlIjVbL5EvgSlCf6Ta +pdQ6MMoCVS1Kn/wk3Vv
+SHyfrdYUS5mkeTtNDwkZwTA8GompwBa94NiH+wt4BSx4j1d0a+v0sUjDwuaRsyZ
+8Z1GoYoqz65I6f3zKuFd89BtOL1y27qSzg03QCx+Jd9l1aUWaktTIAR9mbeftsn
+zu07Hsm3QcDB0YZCKNBeayYcq2l9q1af7T4/V4S5TsjN7YMdnoADIJfhXkup8BsL
++WsppVjhPYbE174wN0pd9tRzIacrP2H2Jr/n6sdEYTSD8f4GzOJntsRTVLexK5mL
+SN5soQwo/83HsD3JN1ubE8Aabm3n8r0cckNxVPq2kaX595aCFIlAkxmXeYMXAuSX
+b94ONrz7TOh1o2o2uiiGphd/W4PsV6BP70QWN6bVE88v6qTUPlwPPDmo2EByd+
+M8+hhQ2equ97GzYqDeTS/U9WDCC9JgeyFePTCVPcB7kLrjYQhfCuG0/UthrVti2s
+ULkCDQRiC9m/ARAA0Hr2veZn3bY+Aea5I6hIQHgw6C1/A+Fw927E4vIIGBea5k
+QAY/vlyYY5XiQdvDcU1CR7KAtu5BvXIKwuWa5O/SxHyFLLza6dX5nisuQ+XevG5N
+r2CQefV4kPFGdEPG9ybneSRkO3pP0A4wo0Z3HtWodqtoA9coBfi6Ec87k4OWq2p9
+NkmXYrb9nMdRdeslhQuOw53lN9yFHPS1g6iLI/4N1n5mRFzkhaKd7xqP7T4iXAMQ
+ZLyCGWWOHGP/ZISLgrgMvSUECKIfliXmbvITEz5teLPrRSgDGC/mM99CPJyZALP
+8xdmLMi5Ex0mct2j8V79DJcRCCpxmU9csI2+XutxsPoI4Tc3t43KgjQYQA+Ktgl
+jaWjHCbmI0DK/S8iifIDoNMuozM1YtsX6Hb9HzLF5sTFzXECOdCpHAeDVnZLrCMB
+mM0qoKtASa6ebxQJNW/vR9Sm707BpzwtUW2exHBl9l9xinObjQHEAVFHfTL/hiKX
+okFMwMOru4VRmhQVEKVAtYtYwGXtbg7SY530ZCRHXqlFuA8LcI110k/BLpkflUxZc
+JqD3jtWPSekHeSRWLDzBcEvFofZToZccD9kMoPAf8Q5TdolaVg9KDfHHQPhfLWS9
+uKSfM1FAnUcbQC7yK8p+7G2FmdG0hC2JtvB9ysKkv+ys05SIMamVS65ygY8AEQEA
+AYkCPAQYAQoAJhYhBGdiw04uxRiVH9kzw09mW3NRFNJqBQJiC9m/AhsMBQkDwiMB
+AAoJEE9mW3NRFNJq4i8P/2x1nd1YSH48l1J77Sl6XSHzN+NLeAjNC9dRf/+G6rPp
+ZTHfx2f4etqJWE7peH+IE54/Wb3qJU4Xuwv8/SZaI+dCJySbzq01RRJNZqLN4a3
+M6vVD9u8gW/DqWhn4lECZAbCC6w1xhFgr0Pn743mvXW86Y/bPqDX5l8/M9DID3Pq
+pidENNGJIvXE79nsomrtBPh0BwcMbVFmbU5//7bAFiwGNN9SxaPzMvc//eAgpC5i
+/mgzk/EP+rzl+bOEjGCKhISheHz9GY8/446HcDDel28zlEkATD7XEeh++xfshfJ
+vrLoXDD3KaYEksD3k30uMZKTi0kF7elgB+5OZ5FNpifkqEZEPZDDfuY/lqK5a98O
+IDzElutZeS7sI5noK0OSEba68qeoP2bVHa/Y3PWXkNxJK3mBjULHxA+WYcJgMcNU
+KUTNJAJb3vgvCHoruqp+lGEbVLbQxO9yotzuiJmqHX3T3GVELDb0RrtyNAGO9iQ/
+Hc6k0CeJXs8k4RVvI5j4KmZdT8CTxgLPpVGdFVoZxDxDfIzH3i6aRAbo3pwtXeAUe
+F9DEoQkB5idHvxK3hbBg8b40XjwGM1JcuPTrpKv9xAoqoyVZ63jycwUiEZ9DWVN+
+U4HmXvlJg7MD6xkv1hUEdVE3jGtElWNgFTTRJQCt4WMusN0mH6M1G4aqp4bsVtur
+=NV9S
+-----END PGP PUBLIC KEY BLOCK-----
+[17.02.22 13:27:15] collin: this one?
+[17.02.22 13:27:42] elliott: yes
+[17.02.22 13:27:49] collin: great.
+[17.02.22 13:27:56] collin: now I need your backup contacts
+[17.02.22 13:28:54] elliott: you have tox
+[17.02.22 13:28:57] elliott: and i don't know the toad
+[17.02.22 13:29:05] elliott: i haven't opened it in years, i'm probably not there
+[17.02.22 13:29:55] collin: I don't have your tox id
+[17.02.22 13:30:00] collin: send it separately
+[17.02.22 13:30:09] collin: no full contact in tox
+[17.02.22 13:31:31] elliott: -----BEGIN PGP MESSAGE-----
+
+hQIMA2FEFllHqkgUARAAzahxN2LEyx+ZYb8CdXTx/rf2DmBSO4RA8RszwBljHVc/
+pVX5prI/d1ZDqeCIzWDMIvAiWS/31YKsjcFYFpeM3wM8PrFhHZiYLlt7EfbmvX4X
+FBsaWDQGwo9sjDSwq7FmSzx8O3v9CIrFCUhACFJ6U3q4dD7dJHTbbSfrtQ1mlO
+AwJh9zG51TrODu3IZ4WToJXR32Z8gtFa1RCEZvDAVEDGCx5rzfF7Hm51ayWs26qm
+v95YzeyJ4NwPHAnx0noU3Koc1spEWKBpxEHVDCfzIUB5dySsWfMPGTsdTHAMHSZ
+9uKFKH/B5Ia0GZeYfQBgINbulo24SjEl7GRzV7M1VC06tfsKJ0V/q89NClpUOsQ4
+gOVO/gOFz/n21vF1wsInz07GnRYhGwCSm2irODKxvUXTAKx4+dEHNdjzZ/teQkhH
+c8o3gDhWRWRWCICNfIvQr82vXdZQGvMDjyIoaFKdOwaV4L/bfIvNLfPiUOHUVjV1d
+1sAIEZZXB9satODW5iyxWrWeYy4LF3ahZHcDua7TBbFRuRcv/p4xbbEEYHy/XeEV
+oTP7y3+ebohorfQH/u1FaZoMx6dksXa2tfvVh+BYU4WxJFnNWkBaPvSKI1453QE
+MVVnzm7G3GiY1iHLSzo5rk3NYXRp702v16lh5fetGERROHx33rrIMPuEmmj8N1rS
+6QHuvQ7Wjbyb/OfJx1CopNux/Gfqa16KGvcbUm+nMSv0neplwIKpOf0wji/xWtuo
+l78hYP8HtgdGuLpKBZH/Oe/QpTKCuV7W6pwzWh2ZN3+zv1Esh7LO6ooWqC2WGXBN
+GBdLms3k2A/7EgocvgtnJH1hvP+J1mucaiovfsN//bJR227rLnQ9sZlzYuJ3LJV
+rbalGIGzWExb1d1uOBQ5QWy4ijO39RgsbN4srlWLpIKse76oN7Lr+5w3DlRwvHQG
+AuJjf7puelaR9IEYynOqSJyEHk19E4Gg2q8F1VRklIW5x1ppBC13cQ9DVLYWQvpk
+MiCynMZxJA2f4TlTPrJV5oDWMoOY/syUpjebGXuMYudFpbxvbFjjS9VuEkcIDNrW
++74z1pdhi4OrSstn4BnR7huFeYZNJNJByXmffhmpKcc1ueNxV8rXlBtVQye2lnaT4
+D15drCisnQtRU32HrP59J5Vtb8bHZmQtiReW9MdZKqSZVu4/uo/jVyeEcrjRYwI0
+dJy8DKGVw0Cb+HoYIn3ocfNkXPiAwPPBGcvcuWbEJDEk4GyMYq4ojA70MOgRHtGo
+lMLVIqIZw1mNZS2nxMjsut8GTfZ8M+WAWWbTUrZHyMhA0Xl2ri0q2XPybCqjy77K
+PBzcrDZq4bTzGaiCOmknBen563+UNFQuKtH8iC4FkxgdwA9REwxWzlCbLmvo7EZ5
+bCSQL1B8EL5zaBxvqvaNOnW45S2Hhe/fM0iLoBabXeHEV1WlJ1ak5/w4ZnbwiHVE
+/Imyot2u7Xerxn3n8yLhscJu+lAFNrdU6I7YIC1pzqw1whSzJULBVk28nwZte4a8
+d6keD2BepjFePpA7ZFimyOiNRwfCMhurHS4eWf2wiHQuUF5Qu35kFzN72xhq0byS
+lpPn71anDoikYFmch8k8kPGQR3viY1ovF0QTB39Ok9qxyFe+5qf39Pyn3O1HLelA
+Lgw=
+=qi8X
+-----END PGP MESSAGE-----
+[17.02.22 13:32:28] collin: so you encrypt with my key
+[17.02.22 13:32:31] collin: otherwise I won't decrypt it)
+[17.02.22 13:32:36] elliott: sorry
+[17.02.22 13:34:31] elliott: https://privnote.com/NvQQYATT#O1dEi6Qee
+[17.02.22 13:46:21] collin: encrypt with my public key
+[17.02.22 13:46:26] collin: I can't decrypt it
+[17.02.22 13:46:43] elliott: you can select the recipient there
+[17.02.22 13:46:45] elliott: I chose you
+[17.02.22 13:47:08] collin: or rather I transcribed two times with mine, and at the end I got another message and already with yours
+[17.02.22 13:47:11] collin: what a nesting doll)
+[2/17/222 13:47:18] elliott: 7EA3 C00A D4EA 1CF5 D422 D123 D123 38C4 EE0A 3331 0AD0
+[17.02.22 13:47:18] elliott: yours?
+[17.02.22 13:48:03] collin: no
+[17.02.22 13:48:09] elliott: great))))
+[17.02.22 13:48:41] collin: -----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+boNakQ==
+=rmZx
+-----END PGP PUBLIC KEY BLOCK-----
+[17.02.22 13:48:47] collin: here's mine
+[17.02.22 13:49:48] elliott: should it be saved to a file and then imported?
+[17.02.22 13:50:08] collin: in cleopatra yes, I import it that way
+[17.02.22 13:50:53] elliott: this is so fucking inconvenient...
+[17.02.22 13:52:18] elliott: -----BEGIN PGP MESSAGE-----
+
+hQIMA/SQT1otRH73AQ/+JgCMDoHk3VE/nVUZfwWPwLAce29fRrNlzoCXkCfMtVD
+PbcBQXQlqqjTHdU21xbXNfoxe1h0n+mTJd+c+KbitXthr4BP6BBCw1Qh1FGCq7Ec+
+6VJK5tbsNfFUOmrjvpjm05x/XORbO2oHgASQ+oymhu8d6LB564zxS+XlWI0d8qtc
+TQop5fY22MKzdq2ozE7cZ5Q5gM6ZVRbpdqQmTdw+4ckFXet8j/2B2zT+cm01eZ0N
+MDXZcjm68DpNrS3hgpjvcQgbDyufjbLGuyzHyzKhsznk88JY74oPMeKGJ26nPzskS
+0kMlChbplxYnmMLPlCb3JlwNRzRAegAfzBJl+S6uq5ODd2qa04S2G2Xh+nZXRL9y
+csheJgYvgg92buI1ezAWqM7EDqmyY/CDXjv9UBfzWAcoyHjt5EDb4hL9fziyPBL
++NKGMldBUUvTFL1jN21Vw2GfRFURTAltLJ5mh9TU+FgJn/TmyejY/NIzqwNUIN+z
+LKIHCmxvNaNj6iFQM0RNksaFhROh2bn+l3MiAzK591dyJuPm5LI8IBBKTWF58zlG
+dxhs+0JjHGG2gcto0bqpKG4+Sn7IBflC4Y84TGiEA4Rb8MzED3GpYYkUe8ReKDed
+zYa2cVYhaA9YNYp1J/GMfs44VTh5y2v3vu9zxn4vL3cnmjI0/jm40CS7BazDvLS
+6QGQi2NUxPP33TQVGUWwEzoptBMijQTIaRQumc8FA/sPNQPhBJJBfgEotAmBtOec
+mS41VR1d7jkgecBIu4rWRlS05L+pIo4ZFdXGsZfE5l3VPwAqh3nPo8WxQpyCKXtK
+XkgfkJmb/Wizn8FwzJKXEQxvQMAbTpMHDg5goVCGKPsTKo3suql6otNBCYtYoFZd
+oCcC9Wln0ReIUoIwc3ZoFijibTvtufbg8bPb1x9Zj+oCGNwTjcKwzX7h7gW0AjJb
+6N783zfH6d58dr+fnljJgaRsf1sm2HzKi4KwvcnbQJIRLZmf6epohcW672VRJV4
+JsdLY0NTp0cEifafsqnieKbZ9I4RAiPHBaGgQ8izB9J6Q9kCuvE1RJSETeZknn
+HNOtLzBphXgqezU3bT8IYoSh84byfIzvVjthT2zKe9inJ5xl0rjuBzc6gEG7aLWj
+Qg55ALLvAXvQc802gqjUxwQdB2akWcaWcaDyUmTdS17YlNA1iT50WEGyfqnPiVhYu5I
+Hrq7sY7mdNwejApGd8SnOfmFrawfXu3kmmI3YBAN9DuYeDlerPrfgc/2KihB3D+
+G79/4q47mKN/yB1ZvS+MIj4NfOWo8lVt2rhQeVi9+/86EEAtZt4K7YfaCaRqPwdO
+QrJI7d1cIMr5mRm9gnWHTIJOlMhKTBDODAPsVyFcDSqwA467Rw/8YN43KbXsb4u
+B1WUpxIbyV0BMKMd0GQSU2Tmejff9lPl4Ss/2BqfKpCcmK5/OeS8f9b8aWPq3nUqs
+2E6Ij9fOII5cRs+l6cERHkUb7TWccWm0m8mWBIUjj9XkF+MIjrzoU+IDLhVm6EFVm
+B20q7Hfuxi0/xxs3k2ygWmf+HwGxR5570oX++NOEzep1O4YexqG8qhbICxn2SW8Q
+Y9Wam4iEu7kmHL8Fk4oDXnh5zH3196PJn9TUEKWBH6KGkNzibSUHdl3eRJj7OSry
+nQ==
+=Gvx2
+-----END PGP MESSAGE-----
+[17.02.22 13:52:45] elliott: -----BEGIN PGP MESSAGE-----
+
+hQIMA/SQT1otRH73AQ//ViU+skUnKE5JI93rzBQFfUmcE2MJRHoqw5BMd/0QDQO7
+0noZqy9dyFSN+02KWGpluBEEDIipHG9qaNANAliLZk95wxWLnJliS2pHIuLxqeUghO
+w8vaBy4vKBhbna4VgzrHgXPP543TrCR9qlOuYfxxRrUuoL4zy77/43N3L+R7E5H
+vhODJiZEx+itSbhJO1o4+GcBptC6KBCBCalAGssZBGNuH/PVcNUhKA/KZVLIRGBV2O
+bwX3Pft8xHVMxU4aUnxj7XKloWHxuOhnjr9T0BBj3gVuvX+a6icaYXAKAP6K1QoN
+8AqibW2sGcRl/b0gtU5IKMYqY4JCXpq/Icmvomw9XbQwZR00qQdAe1rj9PFCuMBu
+DiwgXRAGEK0xYp71Mo+QCz1J/LxM5zZt1Y+bJtlFws3ZwVyGVgFquZ2WuwenNu8
+cvCTTWjUeg/4kXZd6WsJr0tiolcZMBlD4HPYvDFfprvtejJFtrTLWu38JFy/wyd
+VmygZDDmia1sAbja50L323CmtY3YPO76aQ+AHeb7AvAEgmif+OEAh0afS8UMDFR9P
+BqG4zlBIgYyv4eRNX3zL3R/ytgWbcwMJO/kRGIOk5TCSt+kjHOlA6MFnqm0LAVsq
+K9DpzoGQRMVy5LLI5NevrjRhwCt7RCjwzGWTU99UtAqXHxFwsqOjXzqRBXWz4SHS
+6QFvFnE1meMkkRvzLAHyRxtBDaOv2dUBdwZAZiit45+Ork41BHw7oXOyhI0dV34Y
+oPsptc+LTKBA5fXugXuRhKqn5aE+4XuXEv4vo4FPsbpoIKG7CdjIRyHSpC7oxmgg
+7Jn+GTFhclwI+tjTHLasLOtbiirBY3WuyBuyGi7GhSOIjdAclww8Du+8KwcTCpob5s
+YmzljxSEcGUnhW/flTSrSIdemG1I1MwVRSC50kqgfmPE4TY3tkslSo3R2ZhRLMy/
+A97jFiGfp9kf5egcGQjCkhee3vAwzVxhVqj9QHJnnLllKGKO68uFqlW74/kVXHWI
+YSVxZ9JVxpc5uBUPSfhMiP2o20Dc1vllE6rnuvQmKhfxe/OzPceAus3f5CNvl+Tc
+8hN+LkRkNNReyhalWq3VpLl1LRdJjm3XEBWTDTKvv0g3qWf3XIkKgV3IsVcYtsTH
+BWErLkkfKz9r3u6vTWRa7d8xgK8qVaZ3EztVwrVzfIInwgFRNRHYr3cIZ7q5Zx+AB
+RgEVeymRUjyF9hh5Y4GdPD3XS+jPhUvETPCFxua1WmujD2oDcQSlpsVKOwmBtQwT
+T6t5omnFAJMC17YoGqHhe2tPT7Jb9bn1/kK4rNUJJDhA9LMkxk+9Cbsq6mSI/27C
+yK48ACo7u9fIcFmaoUOF+m8FJhX9pjIqlinXQS865ACYlGY3if4Wi7CXshPI9eRY
+D07mr68kkQQyFqTh8z57yFj68MNG1VbdNVdBeszveKllTycOmj6G6YZOa9U6G6gW
+uTY2wJIp4xVJQecpMJJwPj4zXILAXdtp0DHnUuGB/eKJ5WBnLKmDzqcEHi7Tv6+y
+526rENeyR/PXQCSF3hLwtuZWomasZ1tU/HN6XShS7bRP1p2lbq0=
+=xSdn
+-----END PGP MESSAGE-----
+[17.02.22 13:53:52] collin: + hurray
+[17.02.22 13:54:07] elliott: finally)
+[17.02.22 13:55:00] elliott: wrote down your key and mine on a piece of paper
