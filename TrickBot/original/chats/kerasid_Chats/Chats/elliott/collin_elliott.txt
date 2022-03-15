@@ -1,0 +1,796 @@
+[05.08.21 17:43:24] elliott:		слушай, а каким образом  ты админку из фф открываешь?
+[05.08.21 17:44:37] collin:		привет!"
+[05.08.21 17:44:43] collin:		продублируй если что писал
+[05.08.21 20:59:43] elliott:		Привет, слушай, а каким образом ты админку из фф открываешь?
+[06.08.21 11:21:06] elliott:		псс
+[06.08.21 11:21:17] elliott:		псс
+[06.08.21 11:21:25] elliott:		я все про часы,
+[06.08.21 11:21:34] elliott:		как ты в фф админку открываешь?
+[06.08.21 11:21:44] elliott:		она же только из торбраузера доступна
+[06.08.21 11:21:47] collin:		привет!
+[06.08.21 11:21:55] elliott:		привет!)
+[06.08.21 11:23:40] collin:		настройки - параметры сети - ручная настройка прокси - в "узел SOCKS" адрес тор-службы 127.0.0.1:9050 и внизу галочка еще "Отправлять DNS-запросы через прокси при использовании SOCKS 5"
+[06.08.21 16:59:17] elliott:		часы починил
+[06.08.21 16:59:25] elliott:		реально в фф другое время давали
+[09.08.21 11:48:46] collin:		привет!
+[09.08.21 11:49:04] collin:		https://cfw2rkgw5vtfehbpxguvjwh3o7t7we2hsgtnxglwvhlnem6hktjlrdid.onion/
+[09.08.21 11:49:22] collin:		```
+kerasid
+N$|uOL8sTG}TKpXk-3
+```
+[09.08.21 11:49:56] collin:		наш редмайн и твоя учетка к нему. Проверь, напиши все ли работает
+[09.08.21 11:54:59] elliott:		прикольно
+[09.08.21 11:55:03] elliott:		лет щесть его не было
+[09.08.21 11:55:14] elliott:		не, пять
+[09.08.21 11:55:25] elliott:		пять лет назад он был последний раз наверное
+[09.08.21 11:56:37] collin:		боюсь не повторилась бы история: в прошлый раз как только нормально организовали в нем работу норм - так и схлопнулось)
+[09.08.21 11:58:18] collin:		боюсь не повторилась бы история: в прошлый раз как только нормально организовали в нем работу норм - так и схлопнулось)
+[09.08.21 11:59:50] elliott:		не, его поднимали уже после схлопыывания
+[09.08.21 12:31:22] elliott:		не сталикивался, я в фф назад убрал тор и больше она сети не видит
+[09.08.21 12:31:23] elliott:		че не ставь там в настройках
+[09.08.21 12:32:22] elliott:		?
+[09.08.21 12:33:30] collin:		в параметрах сети - настройка прокси - поставь "Без прокси"
+[07.09.21 08:55:18] collin:		привет!
+[07.09.21 08:55:32] collin:		Альфонс писал - часть доработок по админке ты делаешь
+[07.09.21 08:55:42] collin:		`п4, 8, 11 `
+[07.09.21 08:56:10] collin:		как успехи по ним,  есть что уже можно посмотреть потестить?
+[07.09.21 09:01:09] elliott:		я делаю что-то и ему заливаю, так что посмотреть это точно не ко мне
+[07.09.21 09:02:16] elliott:		8 первая версия без авторизации тоже у него
+[07.09.21 09:02:36] elliott:		11 не поомню, кажется он делал часть
+[07.09.21 09:02:46] elliott:		4 тоже у него
+[07.09.21 09:03:18] elliott:		по 11 врроде часть он часть я делал, но тоже все доолжно быть у него, я просто думаю, он никуда не выкладвал пока что это все
+[07.09.21 09:04:50] collin:		ок
+[17.09.21 08:49:15] elliott:		привет
+[17.09.21 08:50:10] elliott:		про поле обновления куков понятно, а вот про префиксы чето не очень. МОжет я не так понимаю что ты хочешь чтобы там было?
+[17.09.21 09:05:50] collin:		привет!
+[17.09.21 09:06:16] collin:		в карточку группы добавляю новый префикс - он должен появляться в области Files attached to group, сейчас не появляется
+[17.09.21 09:06:42] elliott:		https://217.12.204.65/sOIDFhsAIUfhu42332uygt27634ft7yuaFGyaugkJFsayjegf--_-GBASfdvt23fv/index.php?r=groups%2Floadertool&id=28
+[17.09.21 09:06:47] elliott:		ну вот я добавил
+[17.09.21 09:07:18] collin:		например, в группу g3 захожу - заполняю префикс для "Bot x64" - загружаю файл, заполняю все поля, жму Go
+[17.09.21 09:07:21] collin:		и префикса нет
+[17.09.21 10:41:04] elliott:		ну вот я в группу г3 добавил
+[17.09.21 10:50:58] collin:		я заливаю другой и он не появляется отдельной опзицией
+[17.09.21 10:51:15] elliott:		у тебя может какой кэш в браузере?
+[17.09.21 10:51:16] collin:		остается старый файл, меняются версия и префикс
+[17.09.21 10:51:26] elliott:		или  яне понимаю что ты делаешь
+[17.09.21 10:52:39] elliott:		ты залил файл с заполненными полями для бот64
+[17.09.21 10:52:42] collin:		кеш может влиять на корректность работы админки?
+[17.09.21 10:52:46] elliott:		он появился в списке?
+[17.09.21 10:53:00] collin:		`ты залил файл с заполненными полями для бот64` - да
+[17.09.21 10:53:05] elliott:		отлично
+[17.09.21 10:53:24] collin:		в списке остался один префикс: со старым файлом и новыми значениями версии и префикса
+[17.09.21 10:53:28] elliott:		сейчас ты исправил поля с 111 на 222 и сохранил с моим файлом
+[17.09.21 10:53:33] collin:		нет
+[17.09.21 10:53:35] collin:		я залил новый файл
+[17.09.21 10:53:48] elliott:		но файл там мой
+[17.09.21 10:53:53] collin:		в этом и проблема
+[17.09.21 10:54:06] elliott:		тогда открой в браузере инспектор
+[17.09.21 10:54:14] elliott:		нетворк
+[17.09.21 10:54:17] elliott:		удали там все логи
+[17.09.21 10:54:38] elliott:		справа в консоли инспектора шестеренку нажми и выбери персист логс
+[17.09.21 10:55:27] elliott:		перейди в инспекторе на вкладку нетворкс и попробуй выбери другой файл. В инспекторе покажет запрос на его аплоадинг и статус
+[17.09.21 10:56:17] elliott:		а справа будет такая отдельная типа часть панели, там респонс можно посмотреть, что сервер вернул
+[17.09.21 10:58:45] collin:		запрос:
+[17.09.21 10:58:47] collin:		```
+POST /sOIDFhsAIUfhu42332uygt27634ft7yuaFGyaugkJFsayjegf--_-GBASfdvt23fv/index.php?r=uploadtools&group=g3&dest=11 HTTP/1.1
+Host: 217.12.204.65
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:92.0) Gecko/20100101 Firefox/92.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate, br
+X-CSRF-Token: op2oS5bCmzGfFfkEDraeKrTwSC3TnK9BO0A4YYBZaQnPxeN-p4vzBu4nr11e1N9M27UnXpLtnC8NFW1V0yBEYQ==
+X-Requested-With: XMLHttpRequest
+Content-Type: multipart/form-data; boundary=---------------------------249952132411156625061993774509
+Content-Length: 4326
+Origin: https://217.12.204.65
+Connection: keep-alive
+Referer: https://217.12.204.65/sOIDFhsAIUfhu42332uygt27634ft7yuaFGyaugkJFsayjegf--_-GBASfdvt23fv/index.php?r=groups%2Floadertool&id=35
+Cookie: advanced-backend=u4u3mc51vohplt86961i9anj9m; _csrf-backend=d8b76036d9074286bcb7ddef04aea58e93b854c742212a62b9decce9deb2ad8fa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mXK51Ih7q2VYPbAfoEosAq3n6UU4Sy-h%22%3B%7D; groupfilestask=Delete; _identity-backend=6a8ab8993d081617ed67e0c352323d28fb6714cec6e67ae87ad5cbaba0b97ba4a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A16%3A%22%5B6%2Cnull%2C2592000%5D%22%3B%7D
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+```
+[17.09.21 10:58:56] collin:		ответ:
+[17.09.21 10:58:59] collin:		```
+HTTP/1.1 500 Internal Server Error
+Server: nginx/1.18.0 (Ubuntu)
+Date: Fri, 17 Sep 2021 10:57:59 GMT
+Content-Type: text/html; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: _identity-backend=6a8ab8993d081617ed67e0c352323d28fb6714cec6e67ae87ad5cbaba0b97ba4a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A16%3A%22%5B6%2Cnull%2C2592000%5D%22%3B%7D; expires=Sun, 17-Oct-2021 10:57:59 GMT; Max-Age=2592000; path=/; HttpOnly; SameSite=Lax
+```
+[17.09.21 10:59:00] elliott:		это сам запрос
+[17.09.21 10:59:09] elliott:		вооо, у тебя файл нифига не выгружается
+[17.09.21 10:59:17] elliott:		открой респонс, что там за ошика
+[17.09.21 10:59:28] elliott:		а у меня почему-то все работает
+[17.09.21 10:59:34] elliott:		и у альфонсио тоже
+[17.09.21 10:59:40] collin:		```
+PHP Warning 'yii\base\ErrorException' with message 'move_uploaded_file(/var/www/html/advanced-project/filesStorage/6/4Yp-n85PtofsCUyJBmxF.exe): failed to open stream: Permission denied' 
+
+in /var/www/html/advanced-project/backend/models/Attachmentstools.php:53
+
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError()
+#1 /var/www/html/advanced-project/backend/models/Attachmentstools.php(53): move_uploaded_file()
+#2 /var/www/html/advanced-project/backend/controllers/UploadtoolsController.php(30): backend\models\Attachmentstools::SaveTempAttachments()
+#3 [internal function]: backend\controllers\UploadtoolsController->actionIndex()
+#4 /var/www/html/advanced-project/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#5 /var/www/html/advanced-project/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#6 /var/www/html/advanced-project/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#7 /var/www/html/advanced-project/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#8 /var/www/html/advanced-project/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#9 /var/www/html/advanced-project/backend/web/index.php(17): yii\base\Application->run()
+#10 {main}
+```
+[17.09.21 10:59:55] elliott:		ага, такая хуйня уже была, чето с правами он там недопилил
+[17.09.21 11:00:05] elliott:		6 папка
+[17.09.21 11:00:48] elliott:		у меня 2 папка, на нее права на запись я имею, у тебя 6, там прав нет. щас я права дам и проверь. Но вообще проблема не в правах, а в том, что мы не можем их глобально дать на всю родительскую директорию
+[17.09.21 11:00:57] elliott:		мож рокко попросить отпиздить этот сервак...
+[17.09.21 11:01:19] elliott:		пробу
+[17.09.21 11:01:21] elliott:		пробуй
+[17.09.21 11:01:48] elliott:		я там заодно обновил поведение для поля апдейтед
+[17.09.21 11:04:28] collin:		теперь работает
+[17.09.21 11:04:30] collin:		отлично!
+[17.09.21 11:04:51] elliott:		ща я рокко попросил права поправить, потмоу что смени акк и будет новая папка
+[17.09.21 11:04:55] elliott:		и опять не будет прав на запись
+[17.09.21 11:05:20] elliott:		то-то я нихрена понять не могу, как не работает, если работает)
+[23.11.21 08:23:24] collin:		Привет!
+[23.11.21 10:46:24] elliott:		привет
+[23.11.21 10:46:47] elliott:		я все в гит залил, а можно ли тестить это хз, если на 65 альф заддеплоил то можно
+[23.11.21 10:46:56] elliott:		надо у него щас спросить как там что
+[23.11.21 10:47:08] collin:		ок
+[23.11.21 10:47:22] collin:		а примеры запросов есть?
+[23.11.21 10:47:46] elliott:		в постмане, но оттуда не импортнешь
+[23.11.21 10:48:05] collin:		ну из консоли историю можно же копирнуть
+[23.11.21 10:48:09] elliott:		я в таске параметры привел, просто пост запрос, группа должна быть уже создана, авторизация бейсиком
+[23.11.21 10:48:11] elliott:		ща попробу.
+[23.11.21 10:49:19] elliott:		```
+Request Headers
+Authorization: Basic YjE3OjI2NjI1Mg==
+User-Agent: PostmanRuntime/7.28.4
+Accept: */*
+Postman-Token: 31fb5dc0-1066-480f-9cb1-e9e677b63a47
+Host: localhost:12231
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Type: multipart/form-data; boundary=--------------------------052137436725388830942217
+Cookie: _csrf=704f9e8acc2ab5bd80c1b7cebec51fd762b304edee98742184b4dc08a2b2a617a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ncJCh2uEIii36dgg1blUzLLiuZTpd6yj%22%3B%7D
+Content-Length: 76819
+Request Body
+file_l86: undefined
+file_l64: undefined
+file_b86: undefined
+file_b64: undefined
+version_l86: "loader 86 version 1"
+version_b86: "bot 86 version 1"
+version_b64: "bot 64 version 1"
+version_l64: "2222"
+prefix_l86: "loader 86 prefix 1"
+prefix_l64: "loader 64 prefix 1"
+prefix_b86: "bot 86 prefix 1"
+prefix_b64: "bot 64 prefix 1"
+key_prv_l86: "loader 86 private key "
+key_pub_l86: "loader 86 public key"
+key_prv_l64: "loader 64 private key"
+key_pub_l64: "loader 64 public key"
+key_prv_b86: "bot 86 private key"
+key_pub_b86: "bot 86 public key"
+key_prv_b64: "bot 64 private key"
+key_pub_b64: "bot 64 public key"
+cookies: "222222"
+sys: "3333333"
+group: "tst5"
+Response Headers
+Server: nginx/1.18.0 (Ubuntu)
+Date: Wed, 17 Nov 2021 17:39:05 GMT
+Content-Type: application/json; charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept
+Set-Cookie: _csrf=983d0ac840131d47c55eb62932069965b902f6242d9215e3f8b938c67c9ccbf8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22uCW3Ebriff3Z7Q_OHqp0M-aWmWkm72at%22%3B%7D; path=/; HttpOnly; SameSite=Lax
+Response Body
+{
+    "status": true,
+    "messages": [
+        "Group has been updated"
+    ]
+}
+```
+[23.11.21 10:49:44] elliott:		он еще не заливал, скоро сделает
+[23.11.21 10:52:27] elliott:		да нет
+[23.11.21 10:52:38] elliott:		я просто в постмане в боди файлы добавил
+[23.11.21 10:53:00] elliott:		форм-дату выбрал там в пипках
+[23.11.21 10:53:06] elliott:		и экзешники какие-то рандомные
+[23.11.21 10:53:10] elliott:		альф залил
+[23.11.21 10:53:30] elliott:		файлов тут не видно в запросе, они идут отдельно
+[23.11.21 10:53:55] elliott:		в консоли не пишет
+[23.11.21 10:54:08] elliott:		для этой штуки он отдельный
+[23.11.21 10:54:14] elliott:		ктстаи хороший вопрос, сделал ли он ему порт
+[23.11.21 11:16:37] elliott:		12244
+[07.12.21 14:13:53] collin:		Привет!
+[07.12.21 14:14:10] collin:		нужна инфа срочно - кто и когда создал учетку a77 в новой основной админке
+[07.12.21 19:17:52] elliott:		так не логируется это
+[07.12.21 19:18:05] elliott:		альф же тз просит на логи уже который год
+[07.12.21 19:20:03] elliott:		включить полный лог базы силвер не разрешает\
+[24.12.21 08:10:21] collin:		Привет!
+[24.12.21 08:11:02] collin:		пробую апи для апдейта групп, что-то не выходит
+[24.12.21 08:11:05] collin:		подскажи
+[24.12.21 08:11:27] elliott:		что не получается7
+[24.12.21 08:11:29] elliott:		?
+[24.12.21 08:11:56] collin:		403 ответ
+[24.12.21 08:11:59] collin:		в каких случаях может быть?
+[24.12.21 08:12:16] collin:		```
+GET / HTTP/1.1
+Authorization: Basic YjEwOkhlbHAkVGVzdDFeQg==
+group: g4
+sys: 3333344444
+cookies: 555566666667777
+file_l86: undefined
+file_l64: undefined
+file_b86: undefined
+file_b64: undefined
+version_l86: ver_l86_1
+version_b86: ver_b86_1
+version_l64: ver_l64_1
+version_b64: ver_b64_1
+prefix_l86: /new/test1/l86
+prefix_l64: /new/test1/l64
+prefix_b86: /new/test1/b86
+prefix_b64: /new/test1/64b
+key_prv_l86: key_prv_l86_1
+key_pub_l86: key_pub_l86_2
+key_prv_l64: key_prv_l64_3
+key_pub_l64: key_pub_l64_4
+key_prv_b86: key_prv_b86_5
+key_pub_b86: key_pub_b86_6
+key_prv_b64: key_prv_b64_7
+key_pub_b64: key_pub_b64_8
+User-Agent: PostmanRuntime/7.28.4
+Accept: */*
+Host: 217.12.204.65:12244
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 3584
+Content-Type: application/x-msdos-program
+ 
+HTTP/1.1 403 Forbidden
+Server: nginx/1.18.0 (Ubuntu)
+Date: Fri, 24 Dec 2021 08:11:42 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+ 
+<html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+<hr><center>nginx/1.18.0 (Ubuntu)</center>
+</body>
+</html>
+```
+[24.12.21 08:12:20] collin:		вот мой запрос целиком
+[24.12.21 08:16:36] elliott:		может быть конфиг сервера не правильный
+[24.12.21 08:16:53] elliott:		или запрос
+[24.12.21 08:16:55] elliott:		ты ж гет шлешь
+[24.12.21 08:17:14] elliott:		у тебя же постман, а не гетман)
+[24.12.21 08:17:21] collin:		а точно
+[24.12.21 08:17:49] collin:		```
+POST / HTTP/1.1
+Authorization: Basic YjEwOkhlbHAkVGVzdDFeQg==
+group: g4
+sys: 3333344444
+cookies: 555566666667777
+file_l86: undefined
+file_l64: undefined
+file_b86: undefined
+file_b64: undefined
+version_l86: ver_l86_1
+version_b86: ver_b86_1
+version_l64: ver_l64_1
+version_b64: ver_b64_1
+prefix_l86: /new/test1/l86
+prefix_l64: /new/test1/l64
+prefix_b86: /new/test1/b86
+prefix_b64: /new/test1/64b
+key_prv_l86: key_prv_l86_1
+key_pub_l86: key_pub_l86_2
+key_prv_l64: key_prv_l64_3
+key_pub_l64: key_pub_l64_4
+key_prv_b86: key_prv_b86_5
+key_pub_b86: key_pub_b86_6
+key_prv_b64: key_prv_b64_7
+key_pub_b64: key_pub_b64_8
+User-Agent: PostmanRuntime/7.28.4
+Accept: */*
+Host: 217.12.204.65:12244
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 3584
+Content-Type: application/x-msdos-program
+ 
+HTTP/1.1 403 Forbidden
+Server: nginx/1.18.0 (Ubuntu)
+Date: Fri, 24 Dec 2021 08:17:31 GMT
+Content-Type: text/html
+Transfer-Encoding: chunked
+Connection: keep-alive
+Content-Encoding: gzip
+ 
+<html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+<hr><center>nginx/1.18.0 (Ubuntu)</center>
+</body>
+</html>
+```
+[24.12.21 08:17:58] collin:		а теперь что не так?
+[24.12.21 08:18:21] elliott:		какой сервер?
+[24.12.21 08:18:48] collin:		65 тестовый
+[24.12.21 08:20:40] elliott:		а порт какой там назначили?
+[24.12.21 08:20:49] elliott:		а, вижу
+[24.12.21 08:22:06] elliott:		оно до модуля не доходит
+[24.12.21 08:22:29] elliott:		пойду к другу ебать мозги за конфиги сервера..
+[24.12.21 10:17:37] elliott:		рокко пока занят, я как что выясню, отпишусь
+[24.12.21 10:19:07] collin:		ок
+[29.12.21 12:55:23] elliott:		пробкй
+[29.12.21 12:55:32] elliott:		я добился наконец правды, модуль запущен
+[29.12.21 12:57:58] collin:		привет!
+[29.12.21 12:58:07] collin:		можно пробывать?
+[29.12.21 13:42:18] collin:		теперь ошибка 500
+[29.12.21 13:44:27] collin:		давай отр включим, запрос пришлю
+[29.12.21 15:21:35] elliott:		как 500
+[29.12.21 15:22:23] collin:		заработало, но есть ньюансы
+[29.12.21 15:23:17] elliott:		1) нет разделения команды на "добавление нового префикса" и "обновление существующего префикса"
+[29.12.21 15:23:20] elliott:		не заказывали
+[29.12.21 15:23:50] elliott:		мы с тобой обсуждали, никаких добавлений новых ничего
+[29.12.21 15:23:57] elliott:		только обновление существующей группы
+[29.12.21 15:24:38] elliott:		или я не про то?
+[29.12.21 15:25:18] collin:		как понять никаких добавлений, апи нужны чтоб новые префиксы вносить
+[29.12.21 15:25:52] collin:		`- отказ по причине "префикс уже существует" - для команды создания префикса.` - из ТЗ же
+[29.12.21 15:27:11] collin:		т.е. если префикс существует - должен давать ошибку, сейчас этого нет
+[29.12.21 15:27:56] collin:		а если есть обновление - то тогда команды разграничить нужно, отдельным хедером/параметром режим передавать обновление или создание
+[29.12.21 15:28:51] elliott:		то есть к этому всему добавить флаг режима, и для режима создания новых записей проверку на наличий
+[29.12.21 15:29:19] collin:		да
+[29.12.21 15:29:29] elliott:		проверять нужно только поле префикс?
+[29.12.21 15:29:52] collin:		проверка на наличие в обоих режимах должна быть, при создании - ошибка если префикс существует, при обновлении - ошибка если префикса нет
+[29.12.21 15:30:01] collin:		да по полю URI prefix
+[29.12.21 15:32:24] collin:		или я раньше другое писал?
+[29.12.21 15:33:04] collin:		не сохранилось обсуждение наше, идея одна но может с другой стороны подходил..
+[29.12.21 15:34:00] elliott:		да проще сделать чем выяснять что там кто говорил месяц назад
+[29.12.21 15:34:20] collin:		+
+[30.12.21 09:38:49] collin:		привет!
+[30.12.21 09:39:27] collin:		смотри создаю префикс через админку, потом делаю такой же через запрос с mode=create
+[30.12.21 09:39:47] collin:		и первый такой запрос - он создается (задваивается)
+[30.12.21 09:39:53] collin:		второй уже пишет "префикс существует"
+[30.12.21 09:40:14] elliott:		как такое может быть
+[30.12.21 09:40:15] collin:		то есть почему-то при проверке наличия префиксов не видит те, что с админки созданы
+[30.12.21 10:31:58] elliott:		там короче рефакторинг полным ходом, сегодня уже все, ждем 11 чисоа
+[30.12.21 10:32:08] elliott:		вся админка развалена на запчасти
+[30.12.21 10:33:06] collin:		повтори если писал, не отобразилось
+[30.12.21 10:33:17] elliott:		там короче рефакторинг полным ходом, сегодня уже все, ждем 11 чисоа
+вся админка развалена на запчасти
+[30.12.21 10:34:37] collin:		ок
+[11.01.22 11:31:11] elliott:		привет
+[11.01.22 11:31:47] elliott:		напомни плиз что там у нас было не так на момент когда все сломали на рефакторинг, а то как всегда понадеялся на память, а теперь сижу, мучительно впоминаю, что что-то не работало как ты хотел, но что уже не посмотришь
+[11.01.22 11:36:55] collin:		привет!
+[11.01.22 11:38:01] collin:		я в таске дописал сообщением чтобы не потерялось
+[11.01.22 11:38:22] collin:		подожди, что-то еще было вроде, вспоминаю
+[11.01.22 11:43:46] collin:		вот это: при создании префикса должен проверяться на наличие дубликатов - это работает некорректно: если такой префикс был создан через админку а не api - то он как дубликат не видится
+[02.02.22 11:31:06] collin:		привет!
+[02.02.22 11:31:25] collin:		давай отр включим
+[02.02.22 11:38:26] collin:		пинг
+[02.02.22 11:54:49] elliott:		давай
+[02.02.22 11:55:57] collin:		скажи ты кроме разработки по БК сейчас чем-то еще занимаешься в нашей команде?
+[02.02.22 11:56:06] elliott:		нет
+[02.02.22 11:56:30] elliott:		периодически что-то просят, но по мелочам
+[02.02.22 11:57:20] elliott:		а че там, чистим ряды или нагрузить хочешь?
+[02.02.22 11:59:02] elliott:		раньше пока курт не исчез на мне еще была его админка, но я его не вижу уже месяца два
+[02.02.22 12:05:36] elliott:		мы его брали еще с моим первым тимлидом, тыщу лет назад
+[02.02.22 12:06:04] elliott:		он нам карточную игру в качестве тестового заданрия делал))
+[02.02.22 12:06:51] collin:		ок учту
+[02.02.22 12:07:03] collin:		по тому проекту пока не понятно, куда дальше двигаемся
+[02.02.22 12:07:10] collin:		сам жду уточнений от Элроя
+[02.02.22 12:07:34] elliott:		я так читаю канал, но пока у пацана энтузиазма много, куда-то бы направить в полезное русло
+[02.02.22 12:07:56] elliott:		я про райна
+[08.02.22 09:08:11] collin:		привет!
+[08.02.22 09:08:26] elliott:		привет
+[08.02.22 09:08:36] collin:		```
+V4N$Jd8l5nD^Nd8ktNS8kB#Bd7jnd8Nr
+https://privatlab.com/s/v/ZVAblwgwZMuxnByV2Zl2
+```
+[08.02.22 09:08:48] collin:		прими задание
+[08.02.22 09:12:23] elliott:		это пиздец какой-то, мало того что рар, так еще и нечитаемо внутри
+[08.02.22 09:12:39] elliott:		где вы эти кодировки берете с архиваторами, есть же юникод и зип
+[08.02.22 09:12:48] collin:		ansi кодировка обычная же
+[08.02.22 09:13:04] elliott:		линуксу это скажи, что она обычная, щас гадай, как ее прочесть
+[08.02.22 09:13:17] collin:		в какой сделать?
+[08.02.22 09:14:03] elliott:		я хз
+[08.02.22 09:14:08] elliott:		в юникоде
+[08.02.22 09:14:52] collin:		-----BEGIN PGP MESSAGE-----
+
+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
+=0zJI
+-----END PGP MESSAGE-----
+[08.02.22 09:14:58] collin:		так пойдет?
+[08.02.22 09:15:26] elliott:		а чем это расшифровать
+[08.02.22 09:15:48] collin:		своим приватным ключем pgp
+[08.02.22 09:15:52] collin:		я твоим открытым зашифровал..
+[08.02.22 09:16:24] elliott:		хз хз, навреное, машина уже другая, не нахожу ничего
+[08.02.22 09:16:48] collin:		короче нужно сконтачиться в токсе
+[08.02.22 09:16:53] collin:		8201462924F7963A54ABADC532504AED61F6D60DFFF2BE2FC63DD2D41A3FF73C1C6136DFD244
+[08.02.22 09:17:04] collin:		добавляйся ко мне и свой токс айди напиши
+[08.02.22 09:17:24] elliott:		удаляй
+[14.02.22 18:26:30] collin:		привет!
+[14.02.22 18:29:03] collin:		-----BEGIN PGP MESSAGE-----
+
+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
+=sbjz
+-----END PGP MESSAGE-----
+[14.02.22 18:29:20] collin:		пробуй расшифровать последним ключем
+[14.02.22 18:29:23] collin:		походу заработало
+[15.02.22 09:16:40] collin:		привет!
+[15.02.22 09:16:57] collin:		давай отр
+[15.02.22 11:11:44] collin:		пинг
+[15.02.22 11:11:45] collin:		здесь?
+[15.02.22 12:38:57] elliott:		нет
+[15.02.22 12:39:07] elliott:		на кой нам ключ, который я сам не могу расшифровать
+[15.02.22 12:39:29] elliott:		ща я новый сгенерил, два раза рса, придумаю, как выслать
+[15.02.22 12:39:35] elliott:		сюда он не лезет
+[15.02.22 12:39:53] collin:		странно, мой ушел одним сообщением
+[15.02.22 12:41:33] elliott:		не шлется он тут
+[15.02.22 12:41:41] collin:		через привнот
+[15.02.22 12:42:34] elliott:		https://privnote.com/hZ7CR4l3#ojbdOzCmP
+[15.02.22 12:44:18] collin:		не импортируется(
+[15.02.22 12:44:25] collin:		сертификат без идентификатора пользователя
+[15.02.22 12:44:39] collin:		у тебя ПО не Клеопатра? и Плагин там к ней
+[15.02.22 12:45:25] elliott:		нет, кпг сраный, который не запускается и встроенный кейсервер, который ничего не может. Что лучше использовать?
+[15.02.22 12:45:45] elliott:		я толку так понимаю от этого софта не будет
+[15.02.22 12:47:07] elliott:		и когда система рухнет, все эти ключи пойдут опять по пизде
+[15.02.22 12:48:02] collin:		`https://gnupg.org/software/index.html` вот этот рекомендованный
+[15.02.22 12:48:19] collin:		ключи сохраняй на внешней флешке/дискете/на бумаге распечатай)
+[15.02.22 12:48:46] elliott:		ну не хотелось бы прямо хранить что-то на флешке
+[15.02.22 12:48:48] elliott:		так-то оно очевидно
+[15.02.22 12:49:18] collin:		люди в масках с автоматами при обыске найдут?)
+[15.02.22 12:49:27] elliott:		как нехуй найдут
+[15.02.22 12:51:00] elliott:		gnupg2 установлен и так, а чем ключи менеджить?
+[15.02.22 12:52:39] collin:		Kleopatra
+[15.02.22 12:56:45] elliott:		нука
+[15.02.22 12:56:46] elliott:		https://privnote.com/xFgOQX5g#cwmwHn9LN
+[15.02.22 12:56:51] elliott:		это клеопатрой сгенерил
+[15.02.22 13:02:36] elliott:		тоже странная программа
+[15.02.22 13:23:59] collin:		не хочет тоже самое
+[15.02.22 13:24:07] collin:		сертификат без идентификатора пользователя
+[15.02.22 13:52:05] elliott:		пробуй этот
+[15.02.22 13:52:05] elliott:		https://privnote.com/BPyOkDQu#lHhwhkbtb
+[15.02.22 14:11:15] collin:		никак увы(
+[15.02.22 14:11:27] collin:		подожди может у меня тупит, в тот раз тоже не сразу заработало почемуто
+[15.02.22 14:11:42] elliott:		ну это уже фантастика какая-то просто
+[15.02.22 14:12:04] elliott:		я твой ключ без проблем импортнул и из буфера, и файл нашел старый
+[17.02.22 10:30:41] collin:		привет!
+[17.02.22 11:36:36] collin:		пинг
+[17.02.22 13:25:25] elliott:		пинг
+[17.02.22 13:25:48] collin:		привет!
+[17.02.22 13:25:58] elliott:		привет
+[17.02.22 13:26:00] collin:		вообщем ключ твой заработал последний
+[17.02.22 13:26:04] collin:		значит что-то с моей стороны было
+[17.02.22 13:26:10] collin:		у тебя он остался надеюсь?
+[17.02.22 13:26:36] elliott:		от 15 числа
+[17.02.22 13:26:41] elliott:		не трогал вроде ничего
+[17.02.22 13:27:12] collin:		-----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: User-ID:	elliot <elliot@mail.com>
+Comment: Created:	2/15/22 4:50 PM
+Comment: Expires:	2/15/24 12:00 PM
+Comment: Type:	4,096-bit RSA (secret key available)
+Comment: Usage:	Signing, Encryption, Certifying User-IDs
+Comment: Fingerprint:	6762C34E2EC518951FD933C34F665B735114D26A
+
+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
+=NV9S
+-----END PGP PUBLIC KEY BLOCK-----
+[17.02.22 13:27:15] collin:		вот этот?
+[17.02.22 13:27:42] elliott:		да
+[17.02.22 13:27:49] collin:		отлично
+[17.02.22 13:27:56] collin:		теперь нужны твои резервные контакты
+[17.02.22 13:28:54] elliott:		токс у тебя есть
+[17.02.22 13:28:57] elliott:		а жабу я сам хз
+[17.02.22 13:29:05] elliott:		сто лет ее не открывал, меня там и нет наверное
+[17.02.22 13:29:55] collin:		у меня нет токс айди твой
+[17.02.22 13:30:00] collin:		скинь отдельно
+[17.02.22 13:30:09] collin:		при контакте в токсе полный не переадется
+[17.02.22 13:31:31] elliott:		-----BEGIN PGP MESSAGE-----
+
+hQIMA2FEFllHqkgUARAAzahxN2LEyx+ZYb8CdXTx/rf2DmBSO4RA8RszwBljHVc/
+pVX5prI/d1ZDqeCIzWDMIvAiWS/31YKsjcFYFpeM3wM8PrFhHZiYLlt7EfbmvX4X
+FBsaWDQGwo9sjDSwq7FmSzx8O3v9CIrFCUhACFJ6U3q4dD7dJHTbbbbSfrtQ1mlO
+AwJh9zG51TrODu3IZ4WToJXR32Z8gtFa1RCEZvDAVEDGCx5rzfF7Hm51ayWs26qm
+v95YzeyJ4NwPHAnx0noU3Koc1spEWKBpxEHVDCfzIUB5dySsSWfMPGTsdTHAMHSZ
+9uKFKH/B5Ia0GZeYfQBgINbulo24SjEl7GRzV7M1VC06tfsKJ0V/q89NClpUOsQ4
+gOVO/gOFz/n21vF1wsInz07GnRYhGwCSm2irODKxvUXTAKx4+dEHNdjzZ/teQkhH
+c8o3gDhWRWCICNfIvQr82vSXdZQGvMDjyIoaFKdOwaV4L/bfIvNLfPiUOHUVjV1d
+1sAIEZZXB9satODW5iyxWrWeYy4LF3ahZHcDua7TBbFRuRcv/p4xbbEEYHy/XeEV
+oTP7y3+ebohorfQH/u1FaZoMx6dksXa2tfvVh+BYU4WxJFnNWkBaPvQskI1453QE
+MVVnzm7G3GiY1iHLSzo5rk3NYXRp702v16lh5fetGERROHx33rrIMPuEmmj8N1rS
+6QHuvQ7Wjbyb/OfJx1CopNux/Gfqa16KGvcbUm+nMSv0neplwIKpOf0wji/xWtuo
+l78hYP8HtgdGuLpKBZH/Oe/QpTKCuV7W6pwzWh2ZN3+zv1Esh7LO6ooWqC2WGXBN
+GBdLms3k2A/7EgocvgtnJH1hvP+J1mucaiovfsN//bJR227rLnQ9sZlzYuJJ3LJV
+rbalGIGzWExb1d1uOBQ5QWy4ijO39RgsbN4srlWLpIKse76oN7Lr+5w3DlRwvHQG
+AuJjf7puelaR9IEYynOqSJyEHk19E4Gg2q8F1VRklIW5x1ppBC13cQ9DVLYWQvpk
+MiCynMZxJA2f4TlTPrJV5oDWMoOY/syUpjebGXuMYudFpbxvbjFjS9VuEkcIDNrW
++74z1pdhi4OrSstn4BnR7huFeYZNJByXxmffhmpKcc1ueNxV8rXlBtVQye2lnaT4
+D15drCisnQtRU32HrP59J5Vtb8bHZmQtiReW9MdZKqSZVu4/uo/jVyeEcrjRYwI0
+dJy8DKGVw0Cb+HoYIn3ocfNkXPiAwPPBGcvcuWbEJDEk4GyMYq4ojA70MOgRHtGo
+lMLVIqIZw1mNZS2nxMjsut8GTfZ8M+WAWWbTUrZHyMhA0Xl2ri0q2XPybCqjy77K
+PBzcrDZq4bTzGaiCOmknBen563+UNFQuKtH8iC4FkxgdwA9REwxWzlCbLmvo7EZ5
+bCSQL1B8EL5zaBxvqvaNOnW45S2Hhe/fM0iLoBabXeHEV1WlJ1ak5/w4ZnbwiHVE
+/Imyot2u7Xerxn3n8yLhscJu+lAFNrdU6I7YIC1pzqw1whSzJULBVk28nwZte4a8
+d6keD2BepjFePpA7ZFimyOiNRwfCMhurHS4eWf2wiHQuUF5Qu35kFzN72xhq0byS
+lpPn71anDoikYFmch8k8kPGQR3viY1ovF0QTB39Ok9qxyFe+5qf39Pyn3O1HLelA
+Lgw=
+=qi8X
+-----END PGP MESSAGE-----
+[17.02.22 13:32:28] collin:		так ты зашифруй моим ключем
+[17.02.22 13:32:31] collin:		иначе я не расшифрую)
+[17.02.22 13:32:36] elliott:		сорян
+[17.02.22 13:34:31] elliott:		https://privnote.com/NvQQYATT#O1dEi6Qee
+[17.02.22 13:46:21] collin:		зашифруй моим открытым ключем
+[17.02.22 13:46:26] collin:		я не могу это расшифровать
+[17.02.22 13:46:43] elliott:		там можно выбрать реципиента
+[17.02.22 13:46:45] elliott:		я тебя и выбрал
+[17.02.22 13:47:08] collin:		вернее я расшифровал два раза своим, а в конце опять сообщение и уже твоим
+[17.02.22 13:47:11] collin:		матрешка какаято)
+[17.02.22 13:47:18] elliott:		7EA3 C00A D4EA 1CF5 D422  D123 38C4 EE0A 3331 0AD0
+[17.02.22 13:47:18] elliott:		твой?
+[17.02.22 13:48:03] collin:		нет
+[17.02.22 13:48:09] elliott:		отлично))))
+[17.02.22 13:48:41] collin:		-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+boNakQ==
+=rmZx
+-----END PGP PUBLIC KEY BLOCK-----
+[17.02.22 13:48:47] collin:		вот мой
+[17.02.22 13:49:48] elliott:		его надо в файл сохранить и потом импортить?
+[17.02.22 13:50:08] collin:		в клеопатре да, так импортирую
+[17.02.22 13:50:53] elliott:		пиздецкак все неудобно..
+[17.02.22 13:52:18] elliott:		-----BEGIN PGP MESSAGE-----
+
+hQIMA/SQT1otRH73AQ/+JgCMDoHk3VE/nVUUZfwWPwLAce29fRrNlzoCXkCfMtVD
+PbcBQXQlqjTHdU21xbXNfoxe1h0n+mTJd+c+KbitXthr4BP6BBCw1Qh1FGCq7Ec+
+6VJK5tbsNfFUOmrjvpjm05x/XORbO2oHgASQ+oymhu8d6LB564zxS+XlWI0d8qtc
+TQop5fY22MKzdq2ozE7cZ5Q5gM6ZVRbpdqQmTdw+4ckFXet8j/2B2zT+cm01eZ0N
+MDXZcjm68DpNrS3hgpjvcQgbDyufjbLGuHyzHKhsznk88JY74oPMeKGJ26nPzskS
+0kMlChbplxYnmMLPlCb3JlwNRzRAegAfzBJl+S6uq5ODd2qa04S2G2Xh+nZXRL9y
+csheJgYvgg92buI1ezAWqM7EDqmyY/CDXjv9UBfzWAcoyHjt5EDb4hbL9fziyPBL
++NKGMldBUUvTFL1jN21Vw2GfRFURTAltLJ5mh9TU+FgJn/TmyejY/NIzqwNUIN+z
+LKIHCmxvNaNj6iFQM0RNksaFhROh2bn+l3MiAzK591dyJuPm5LI8IBBKTWF58zlG
+dxhs+0JjHGG2gcto0bqpKG4+Sn7IBflC4Y84TGiEA4Rb8MzED3GpYYkUe8ReKDed
+zYa2cVYhaA9YNYp1J/GMfs44VTh5y2v3vu9zxn4vWL3cnmjI0/jm40CS7BazDvLS
+6QGQi2NUxP33TQVGUWwEzoptBMijQTIaRQumc8FA/sPNQPhBJjJBfgEotAmBtOec
+mS41VR1d7jkgecBIu4rWRlS05L+pIo4ZFdXGsZfE5l3VPwAqh3nPo8WxQpyCKXtK
+XkgfkJmb/Wizn8FwzJKXEQxvQMAbTpMHDg5goVCGKPsTKo3suql6otNBCYtYoFZd
+oCcC9Wln0ReIUoIwc3ZoFijibTvtufbg8bPb1x9Zj+oCGNwTjcKwzX7h7gW0AjJb
+6N783zfH6d58dr+fnljJgaRsf1sm2HzKi4KwvcnbQJIRLZDmf6epohcW672VRJV4
+JsdLY0NTp0cEifafsqnieKbZ9I4RAiPHBaGgQ8izozB9J6Q9kCuvE1RJSETeZknn
+HNOtLzBphXgqezU3bT8IYoSh84byfIzvVjthT2zKe9inJ5xl0rjuBzc6gEG7aLWj
+Qg55ALLvAXvQc802gqjUxwQdB2akWcaDyUmTdS17YlNA1iT50WEGyfqnPiVhYu5I
+Hrq7sY7mdNwejApGd8SnOfmFrawfXu3kmmI3YBAN9DuYeDlerrPrfgc/2KihB3D+
+G79/4q47mKN/yB1ZvS+MIj4NfOWo8lVt2rhQeVi9+/86EEAtZt4K7YfaCaRqPwdO
+QrJI7d1cIMr5mRm9gnWHTIJOlMhKTBDodAPsVyFfcDSqwA467Rw/8YN43KbXsb4u
+B1WUpxIbyV0BMKMd0GQSU2Tmejf9lPl4Ss/2BqfKpCcmK5/OeS8f9b8aWPq3nUqs
+2E6Ij9fOII5cRs+l6cERHkUb7TWccWm0m8WBIUjj9XkF+MIjrzoU+IDLhVm6EFVm
+B20q7Hfuxi0/xxs3k2ygWmf+HwGxR5570oX++NOEzep1O4YexqG8qhbICxn2SW8Q
+Y9Wam4iEu7kmHL8Fk4oDXnh5zH3196PJn9TUEKWBH6KGkNzibSUHdl3eRJj7OSry
+nQ==
+=Gvx2
+-----END PGP MESSAGE-----
+[17.02.22 13:52:45] elliott:		-----BEGIN PGP MESSAGE-----
+
+hQIMA/SQT1otRH73AQ//ViU+skUnKE5JI93rzBQFfUmcE2MJRHoqw5BMd/0QDQO7
+0noZqy9dyFSN+02KWGpluBEEDIipHG9qaNAliLZk95wxWLnJliS2pHIuLxqeUghO
+w8vaBy4vKBhbna4VgzrHgXPP543TrCR9qlOuYfxxxRrUuoL4zy77/43N3L+R7E5H
+vhODJiZEx+itSbhJO1o4+GcBptC6KBCalAGssZBGNuH/PVcNUhKA/KZVLIRGBV2O
+bwX3Pft8xHVMxU4aUnxj7XKloWHxuOhnjr9T0BBj3gVuvX+a6icaYXAKAP6K1QoN
+8AqibW2sGcRl/b0gtU5IKMYqY4JCXpq/Icmvomw9XbQwZR00qQdAe1rj9PFCuMBu
+DiwgXRGEAGK0xYp71Mo+QCz1J/LxM5zZt1Y+bJtlFws3ZwVyGVgFquZ2WuwenNu8
+cvCTTWjUeg/4kXZd6WsJr0tiolcZMBlD4HHPYvDFfprvtejJFtrTLWu38JFy/wyd
+VmygZDmia1sAbja50L323CmtY3YPO76aQ+AHeb7AvAEgmif+OEAh0afS8UMDFR9P
+BqG4zlBIgYyv4eRNX3zL3R/ytgWbcwMJO/kRGIOk5TCSt+kjHOlA6MFnqm0LAVsq
+K9DpzoGQRMVy5LLI5NevrjRhwCt7RCjwzGWTU99UtAqXxHFwsqOjXzqRBXWz4SHS
+6QFvFnE1meMkkRvzLAHyRxtBDaOv2dUBdwZAZiit45+Ork41BHw7oXOyhI0dV34Y
+oPsptc+LTKBA5fXugXuRhKqn5aE+4XuXEv4vo4FPsbpoIKG7CdjIRyHSpC7oxmgg
+7Jn+GTFhclwI+tjTHLasLOtbiirBY3WuyBGi7GhSOIjdAclww8Du+8KwcTCpob5s
+YmzljxSEcGUnhW/flTSrSIdemG1I1MwVRSC50kqgfmPE4TY3tkslSo3R2ZhRLMy/
+A97jFiGfp9kf5egcGQjCkhee3vAwzVxhVqj9QHJnnLllKGKO68uFqlW74/kVXHWI
+YSVxZ9JVxpc5uBUPSfhMiP2o20Dc1vllE6rnuvQmKhfxe/OzPceAus3f5CNvl+Tc
+8hN+LkRkNNReyhalWq3VpLl1LRdJjm3XEBWTDTKvv0g3qWf3XIkKgV3IsVcYtsTH
+BWErLkfKz9r3u6vTWRa7d8xgK8qVaZ3EztVwrVzfIInwgFRNRHYr3cIZ7q5Zx+AB
+RgEVeymRUjyF9hh5Y4GdPD3XS+jPhUvETPCFxua1WmujD2oDcQSlpsVKOwmBtQwT
+T6t5omnFAJMC17YoGqHhe2tPT7Jb9bn1/kK4rNUJJDhA9LMkxk+9Cbsq6mSI/27C
+yK48ACo7u9fIcFmaoUOF+m8FJhX9pjIqlinXQS865ACYlGY3if4Wi7CXshPI9eRY
+D07mr68kkQyFqTh8z57yFj68MNG1VbdNVdvBeszveKllTycOmj6G6YZOa9U6G6gW
+uTY2wJIp4xVJQecpMJJwPj4zXILAXdtp0DHnUuGB/eKJ5WBnLKmDzqcEHi7Tv6+y
+526rENeyR/PXQCSF3hLwtuZWomasZ1tU/HN6XShS7bRP1p2lbq0=
+=xSdn
+-----END PGP MESSAGE-----
+[17.02.22 13:53:52] collin:		+ ура
+[17.02.22 13:54:07] elliott:		наконец-то)
+[17.02.22 13:55:00] elliott:		твой и свой ключи записал на бумажкке
